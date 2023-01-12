@@ -28,7 +28,8 @@ object CreateTrafficPolicyVersionRequest {
     __obj.asInstanceOf[CreateTrafficPolicyVersionRequest]
   }
   
-  extension [Self <: CreateTrafficPolicyVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTrafficPolicyVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setComment(value: TrafficPolicyComment): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

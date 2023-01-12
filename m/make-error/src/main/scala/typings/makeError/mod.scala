@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[SpecializedConstructor[T]]
     }
     
-    extension [Self <: SpecializedConstructor[?], T](x: Self & SpecializedConstructor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpecializedConstructor[?], T] (val x: Self & SpecializedConstructor[T]) extends AnyVal {
       
       inline def setSuper_(value: Any): Self = StObject.set(x, "super_", value.asInstanceOf[js.Any])
     }

@@ -20,7 +20,8 @@ object ITestCasePreparedStep {
     __obj.asInstanceOf[ITestCasePreparedStep]
   }
   
-  extension [Self <: ITestCasePreparedStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITestCasePreparedStep] (val x: Self) extends AnyVal {
     
     inline def setActionLocation(value: ISourceReference): Self = StObject.set(x, "actionLocation", value.asInstanceOf[js.Any])
     

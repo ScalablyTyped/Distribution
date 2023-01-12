@@ -41,7 +41,8 @@ object SjclCodecs {
     __obj.asInstanceOf[SjclCodecs]
   }
   
-  extension [Self <: SjclCodecs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclCodecs] (val x: Self) extends AnyVal {
     
     inline def setArrayBuffer(value: SjclArrayBufferCodec): Self = StObject.set(x, "arrayBuffer", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UpdateReplicationSetAction {
     __obj.asInstanceOf[UpdateReplicationSetAction]
   }
   
-  extension [Self <: UpdateReplicationSetAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateReplicationSetAction] (val x: Self) extends AnyVal {
     
     inline def setAddRegionAction(value: AddRegionAction): Self = StObject.set(x, "addRegionAction", value.asInstanceOf[js.Any])
     

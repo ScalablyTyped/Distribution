@@ -18,7 +18,8 @@ object GetDataProtectionPolicyInput {
     __obj.asInstanceOf[GetDataProtectionPolicyInput]
   }
   
-  extension [Self <: GetDataProtectionPolicyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataProtectionPolicyInput] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: topicARN): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object ChartStrokeOpacity {
     __obj.asInstanceOf[ChartStrokeOpacity]
   }
   
-  extension [Self <: ChartStrokeOpacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartStrokeOpacity] (val x: Self) extends AnyVal {
     
     inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     

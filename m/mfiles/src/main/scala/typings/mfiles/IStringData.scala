@@ -20,7 +20,8 @@ object IStringData {
     __obj.asInstanceOf[IStringData]
   }
   
-  extension [Self <: IStringData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStringData] (val x: Self) extends AnyVal {
     
     inline def setAsString(value: String): Self = StObject.set(x, "AsString", value.asInstanceOf[js.Any])
     

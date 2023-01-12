@@ -50,7 +50,8 @@ object SocialFeed {
     __obj.asInstanceOf[SocialFeed]
   }
   
-  extension [Self <: SocialFeed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialFeed] (val x: Self) extends AnyVal {
     
     inline def setGet_attributes(value: () => SocialFeedAttributes): Self = StObject.set(x, "get_attributes", js.Any.fromFunction0(value))
     

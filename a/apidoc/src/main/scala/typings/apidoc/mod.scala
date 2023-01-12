@@ -74,7 +74,8 @@ object mod {
       __obj.asInstanceOf[DocOptions]
     }
     
-    extension [Self <: DocOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocOptions] (val x: Self) extends AnyVal {
       
       inline def setApiprivate(value: Boolean): Self = StObject.set(x, "apiprivate", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object mod {
       __obj.asInstanceOf[ParsedFile]
     }
     
-    extension [Self <: ParsedFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedFile] (val x: Self) extends AnyVal {
       
       inline def setBlocks(value: js.Array[Global]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       

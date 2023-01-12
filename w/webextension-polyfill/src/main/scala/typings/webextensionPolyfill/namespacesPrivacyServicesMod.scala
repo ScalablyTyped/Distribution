@@ -24,7 +24,8 @@ object namespacesPrivacyServicesMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setPasswordSavingEnabled(value: Setting): Self = StObject.set(x, "passwordSavingEnabled", value.asInstanceOf[js.Any])
       }

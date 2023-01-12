@@ -19,7 +19,8 @@ object StartPageToken {
     __obj.asInstanceOf[StartPageToken]
   }
   
-  extension [Self <: StartPageToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartPageToken] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

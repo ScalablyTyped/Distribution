@@ -42,7 +42,8 @@ object AnnotationsVerticalLineTypeOptions {
     __obj.asInstanceOf[AnnotationsVerticalLineTypeOptions]
   }
   
-  extension [Self <: AnnotationsVerticalLineTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsVerticalLineTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setConnector(value: AnnotationsVerticalLineTypeConnectorOptions): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
     

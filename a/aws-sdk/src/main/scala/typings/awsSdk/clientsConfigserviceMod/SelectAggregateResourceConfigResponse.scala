@@ -25,7 +25,8 @@ object SelectAggregateResourceConfigResponse {
     __obj.asInstanceOf[SelectAggregateResourceConfigResponse]
   }
   
-  extension [Self <: SelectAggregateResourceConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectAggregateResourceConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

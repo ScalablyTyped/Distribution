@@ -18,7 +18,8 @@ object DeletePolicyRequest {
     __obj.asInstanceOf[DeletePolicyRequest]
   }
   
-  extension [Self <: DeletePolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setPolicyArn(value: arnType): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object UnderlyingSource {
     __obj.asInstanceOf[UnderlyingSource[R]]
   }
   
-  extension [Self <: UnderlyingSource[?], R](x: Self & UnderlyingSource[R]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnderlyingSource[?], R] (val x: Self & UnderlyingSource[R]) extends AnyVal {
     
     inline def setAutoAllocateChunkSize(value: Double): Self = StObject.set(x, "autoAllocateChunkSize", value.asInstanceOf[js.Any])
     

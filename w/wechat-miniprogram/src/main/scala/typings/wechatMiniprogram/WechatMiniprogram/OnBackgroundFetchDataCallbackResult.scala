@@ -22,7 +22,8 @@ object OnBackgroundFetchDataCallbackResult {
     __obj.asInstanceOf[OnBackgroundFetchDataCallbackResult]
   }
   
-  extension [Self <: OnBackgroundFetchDataCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBackgroundFetchDataCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setFetchType(value: String): Self = StObject.set(x, "fetchType", value.asInstanceOf[js.Any])
     

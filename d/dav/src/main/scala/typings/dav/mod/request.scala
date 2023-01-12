@@ -80,7 +80,8 @@ object request {
       __obj.asInstanceOf[AddressBookQueryOptions]
     }
     
-    extension [Self <: AddressBookQueryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddressBookQueryOptions] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: String): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object request {
       __obj.asInstanceOf[BasicOptions]
     }
     
-    extension [Self <: BasicOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,8 @@ object request {
       __obj.asInstanceOf[CalendarQueryOptions]
     }
     
-    extension [Self <: CalendarQueryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarQueryOptions] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: String): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object request {
       __obj.asInstanceOf[PropfindOptions]
     }
     
-    extension [Self <: PropfindOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropfindOptions] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: String): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
@@ -237,7 +241,8 @@ object request {
       __obj.asInstanceOf[SetRequestHeadersOptions]
     }
     
-    extension [Self <: SetRequestHeadersOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetRequestHeadersOptions] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -282,7 +287,8 @@ object request {
       __obj.asInstanceOf[SyncCollectionOptions]
     }
     
-    extension [Self <: SyncCollectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncCollectionOptions] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: String): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       

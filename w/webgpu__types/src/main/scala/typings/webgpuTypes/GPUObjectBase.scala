@@ -15,7 +15,8 @@ object GPUObjectBase {
     __obj.asInstanceOf[GPUObjectBase]
   }
   
-  extension [Self <: GPUObjectBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUObjectBase] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }

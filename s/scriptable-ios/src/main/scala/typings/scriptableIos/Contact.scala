@@ -390,7 +390,8 @@ object Contact {
       __obj.asInstanceOf[EmailAddresses]
     }
     
-    extension [Self <: EmailAddresses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailAddresses] (val x: Self) extends AnyVal {
       
       inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
@@ -408,7 +409,8 @@ object Contact {
     }
   }
   
-  extension [Self <: Contact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
     
     inline def setBirthday(value: js.Date): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
     
@@ -510,7 +512,8 @@ object Contact {
       __obj.asInstanceOf[PhoneNumbers]
     }
     
-    extension [Self <: PhoneNumbers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhoneNumbers] (val x: Self) extends AnyVal {
       
       inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
@@ -561,7 +564,8 @@ object Contact {
       __obj.asInstanceOf[PostalAddresses]
     }
     
-    extension [Self <: PostalAddresses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostalAddresses] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
@@ -613,7 +617,8 @@ object Contact {
       __obj.asInstanceOf[SocialProfiles]
     }
     
-    extension [Self <: SocialProfiles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocialProfiles] (val x: Self) extends AnyVal {
       
       inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       

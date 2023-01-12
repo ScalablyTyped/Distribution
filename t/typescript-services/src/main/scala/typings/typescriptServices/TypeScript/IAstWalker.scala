@@ -17,7 +17,8 @@ object IAstWalker {
     __obj.asInstanceOf[IAstWalker]
   }
   
-  extension [Self <: IAstWalker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAstWalker] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: AstWalkOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

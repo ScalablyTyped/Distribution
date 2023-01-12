@@ -22,7 +22,8 @@ object PartialHeaders {
     __obj.asInstanceOf[PartialHeaders]
   }
   
-  extension [Self <: PartialHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialHeaders] (val x: Self) extends AnyVal {
     
     inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object srcNgtscIndexerSrcContextMod {
       __obj.asInstanceOf[ComponentInfo]
     }
     
-    extension [Self <: ComponentInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentInfo] (val x: Self) extends AnyVal {
       
       inline def setBoundTemplate(value: BoundTarget[ComponentMeta]): Self = StObject.set(x, "boundTemplate", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object srcNgtscIndexerSrcContextMod {
       __obj.asInstanceOf[ComponentMeta]
     }
     
-    extension [Self <: ComponentMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentMeta] (val x: Self) extends AnyVal {
       
       inline def setRef(value: Reference[ClassDeclaration[DeclarationNode]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }

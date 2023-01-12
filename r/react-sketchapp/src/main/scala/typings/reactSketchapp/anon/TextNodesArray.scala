@@ -16,7 +16,8 @@ object TextNodesArray {
     __obj.asInstanceOf[TextNodesArray]
   }
   
-  extension [Self <: TextNodesArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextNodesArray] (val x: Self) extends AnyVal {
     
     inline def setTextNodes(value: js.Array[TextNode]): Self = StObject.set(x, "textNodes", value.asInstanceOf[js.Any])
     

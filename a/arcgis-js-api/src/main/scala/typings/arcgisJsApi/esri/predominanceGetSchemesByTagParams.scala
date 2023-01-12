@@ -87,7 +87,8 @@ object predominanceGetSchemesByTagParams {
     __obj.asInstanceOf[predominanceGetSchemesByTagParams]
   }
   
-  extension [Self <: predominanceGetSchemesByTagParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: predominanceGetSchemesByTagParams] (val x: Self) extends AnyVal {
     
     inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     

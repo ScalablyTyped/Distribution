@@ -55,7 +55,8 @@ object Column {
     __obj.asInstanceOf[Column]
   }
   
-  extension [Self <: Column](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
     
     inline def setADOXDotColumn_typekey(value: Column): Self = StObject.set(x, "ADOX.Column_typekey", value.asInstanceOf[js.Any])
     

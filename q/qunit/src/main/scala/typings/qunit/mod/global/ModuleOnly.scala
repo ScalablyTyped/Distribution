@@ -21,7 +21,8 @@ object ModuleOnly {
     __obj.asInstanceOf[ModuleOnly]
   }
   
-  extension [Self <: ModuleOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleOnly] (val x: Self) extends AnyVal {
     
     inline def setOnly(value: moduleFunc1 & moduleFunc2): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
   }

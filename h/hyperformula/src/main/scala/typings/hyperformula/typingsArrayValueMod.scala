@@ -136,7 +136,8 @@ object typingsArrayValueMod {
       __obj.asInstanceOf[IArray]
     }
     
-    extension [Self <: IArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IArray] (val x: Self) extends AnyVal {
       
       inline def setGet(value: (Double, Double) => InternalScalarValue): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       

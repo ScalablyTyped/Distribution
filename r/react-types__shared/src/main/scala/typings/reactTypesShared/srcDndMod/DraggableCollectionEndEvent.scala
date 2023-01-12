@@ -24,7 +24,8 @@ object DraggableCollectionEndEvent {
     __obj.asInstanceOf[DraggableCollectionEndEvent]
   }
   
-  extension [Self <: DraggableCollectionEndEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableCollectionEndEvent] (val x: Self) extends AnyVal {
     
     inline def setIsInternal(value: Boolean): Self = StObject.set(x, "isInternal", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object GoogleCloudRecommendationengineV1beta1ProductCatalogItem {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ProductCatalogItem]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1ProductCatalogItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ProductCatalogItem] (val x: Self) extends AnyVal {
     
     inline def setAvailableQuantity(value: String): Self = StObject.set(x, "availableQuantity", value.asInstanceOf[js.Any])
     

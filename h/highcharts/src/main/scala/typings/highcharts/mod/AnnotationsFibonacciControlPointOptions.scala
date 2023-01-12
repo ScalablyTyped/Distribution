@@ -15,7 +15,8 @@ object AnnotationsFibonacciControlPointOptions {
     __obj.asInstanceOf[AnnotationsFibonacciControlPointOptions]
   }
   
-  extension [Self <: AnnotationsFibonacciControlPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsFibonacciControlPointOptions] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

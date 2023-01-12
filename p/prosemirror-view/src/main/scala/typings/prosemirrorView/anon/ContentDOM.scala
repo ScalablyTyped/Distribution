@@ -18,7 +18,8 @@ object ContentDOM {
     __obj.asInstanceOf[ContentDOM]
   }
   
-  extension [Self <: ContentDOM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentDOM] (val x: Self) extends AnyVal {
     
     inline def setContentDOM(value: HTMLElement): Self = StObject.set(x, "contentDOM", value.asInstanceOf[js.Any])
     

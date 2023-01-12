@@ -34,7 +34,8 @@ object XMessageBoxFactory {
     __obj.asInstanceOf[XMessageBoxFactory]
   }
   
-  extension [Self <: XMessageBoxFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMessageBoxFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateMessageBox(value: (XWindowPeer, MessageBoxType, Double, String, String) => XMessageBox): Self = StObject.set(x, "createMessageBox", js.Any.fromFunction5(value))
   }

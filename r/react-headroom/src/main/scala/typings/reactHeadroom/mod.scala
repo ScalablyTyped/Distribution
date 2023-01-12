@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[ReactHeadroomProps]
     }
     
-    extension [Self <: ReactHeadroomProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactHeadroomProps] (val x: Self) extends AnyVal {
       
       inline def setCalcHeightOnResize(value: Boolean): Self = StObject.set(x, "calcHeightOnResize", value.asInstanceOf[js.Any])
       

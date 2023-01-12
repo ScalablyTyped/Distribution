@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: js.Object): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object anon {
       __obj.asInstanceOf[Selected]
     }
     
-    extension [Self <: Selected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selected] (val x: Self) extends AnyVal {
       
       inline def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }

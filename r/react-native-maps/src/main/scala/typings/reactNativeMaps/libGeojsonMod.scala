@@ -48,7 +48,8 @@ object libGeojsonMod {
       __obj.asInstanceOf[AnyLineStringOverlay]
     }
     
-    extension [Self <: AnyLineStringOverlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnyLineStringOverlay] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Array[LatLng]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object libGeojsonMod {
       __obj.asInstanceOf[AnyPointOverlay]
     }
     
-    extension [Self <: AnyPointOverlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnyPointOverlay] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: LatLng): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object libGeojsonMod {
       __obj.asInstanceOf[AnyPolygonOverlay]
     }
     
-    extension [Self <: AnyPolygonOverlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnyPolygonOverlay] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Array[LatLng]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -293,7 +296,8 @@ object libGeojsonMod {
       __obj.asInstanceOf[GeojsonProps]
     }
     
-    extension [Self <: GeojsonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeojsonProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -393,7 +397,8 @@ object libGeojsonMod {
       __obj.asInstanceOf[OverlayPressEvent]
     }
     
-    extension [Self <: OverlayPressEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayPressEvent] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: LatLng | js.Array[LatLng]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       

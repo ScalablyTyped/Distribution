@@ -31,7 +31,8 @@ object DraggableViewProps {
     __obj.asInstanceOf[DraggableViewProps]
   }
   
-  extension [Self <: DraggableViewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableViewProps] (val x: Self) extends AnyVal {
     
     inline def setOnMove(value: /* event */ DragEvent => Unit): Self = StObject.set(x, "onMove", js.Any.fromFunction1(value))
     

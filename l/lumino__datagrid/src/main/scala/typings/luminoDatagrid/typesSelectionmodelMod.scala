@@ -240,7 +240,8 @@ object typesSelectionmodelMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setDataModel(value: DataModel): Self = StObject.set(x, "dataModel", value.asInstanceOf[js.Any])
         
@@ -317,7 +318,8 @@ object typesSelectionmodelMod {
         __obj.asInstanceOf[SelectArgs]
       }
       
-      extension [Self <: SelectArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SelectArgs] (val x: Self) extends AnyVal {
         
         inline def setC1(value: Double): Self = StObject.set(x, "c1", value.asInstanceOf[js.Any])
         
@@ -375,7 +377,8 @@ object typesSelectionmodelMod {
         __obj.asInstanceOf[Selection]
       }
       
-      extension [Self <: Selection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
         
         inline def setC1(value: Double): Self = StObject.set(x, "c1", value.asInstanceOf[js.Any])
         

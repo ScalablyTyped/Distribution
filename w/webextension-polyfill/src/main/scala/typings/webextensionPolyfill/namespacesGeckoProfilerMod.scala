@@ -130,7 +130,8 @@ object namespacesGeckoProfilerMod {
         __obj.asInstanceOf[StartSettingsType]
       }
       
-      extension [Self <: StartSettingsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StartSettingsType] (val x: Self) extends AnyVal {
         
         inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
         
@@ -234,7 +235,8 @@ object namespacesGeckoProfilerMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setDumpProfileToFile(value: String => Unit): Self = StObject.set(x, "dumpProfileToFile", js.Any.fromFunction1(value))
         

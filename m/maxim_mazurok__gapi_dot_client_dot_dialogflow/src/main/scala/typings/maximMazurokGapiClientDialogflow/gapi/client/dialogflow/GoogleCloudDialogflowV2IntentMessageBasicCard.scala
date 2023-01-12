@@ -28,7 +28,8 @@ object GoogleCloudDialogflowV2IntentMessageBasicCard {
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageBasicCard]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2IntentMessageBasicCard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2IntentMessageBasicCard] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[GoogleCloudDialogflowV2IntentMessageBasicCardButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

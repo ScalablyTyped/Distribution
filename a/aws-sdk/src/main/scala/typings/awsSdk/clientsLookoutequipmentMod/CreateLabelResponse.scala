@@ -18,7 +18,8 @@ object CreateLabelResponse {
     __obj.asInstanceOf[CreateLabelResponse]
   }
   
-  extension [Self <: CreateLabelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLabelResponse] (val x: Self) extends AnyVal {
     
     inline def setLabelId(value: LabelId): Self = StObject.set(x, "LabelId", value.asInstanceOf[js.Any])
     

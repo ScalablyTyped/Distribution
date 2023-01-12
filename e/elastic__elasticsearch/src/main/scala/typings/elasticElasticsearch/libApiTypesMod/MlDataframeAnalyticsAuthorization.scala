@@ -19,7 +19,8 @@ object MlDataframeAnalyticsAuthorization {
     __obj.asInstanceOf[MlDataframeAnalyticsAuthorization]
   }
   
-  extension [Self <: MlDataframeAnalyticsAuthorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalyticsAuthorization] (val x: Self) extends AnyVal {
     
     inline def setApi_key(value: MlApiKeyAuthorization): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
     

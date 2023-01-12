@@ -18,7 +18,8 @@ object CreateCodeRepositoryOutput {
     __obj.asInstanceOf[CreateCodeRepositoryOutput]
   }
   
-  extension [Self <: CreateCodeRepositoryOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCodeRepositoryOutput] (val x: Self) extends AnyVal {
     
     inline def setCodeRepositoryArn(value: CodeRepositoryArn): Self = StObject.set(x, "CodeRepositoryArn", value.asInstanceOf[js.Any])
   }

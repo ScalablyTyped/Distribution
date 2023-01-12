@@ -23,7 +23,8 @@ object BucketLevel {
     __obj.asInstanceOf[BucketLevel]
   }
   
-  extension [Self <: BucketLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketLevel] (val x: Self) extends AnyVal {
     
     inline def setActivityMetrics(value: ActivityMetrics): Self = StObject.set(x, "ActivityMetrics", value.asInstanceOf[js.Any])
     

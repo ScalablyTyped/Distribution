@@ -23,7 +23,8 @@ object ListBulkDeploymentsResponse {
     __obj.asInstanceOf[ListBulkDeploymentsResponse]
   }
   
-  extension [Self <: ListBulkDeploymentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBulkDeploymentsResponse] (val x: Self) extends AnyVal {
     
     inline def setBulkDeployments(value: BulkDeployments): Self = StObject.set(x, "BulkDeployments", value.asInstanceOf[js.Any])
     

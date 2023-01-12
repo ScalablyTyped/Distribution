@@ -35,7 +35,8 @@ object VisualElementsRequest {
     __obj.asInstanceOf[VisualElementsRequest]
   }
   
-  extension [Self <: VisualElementsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualElementsRequest] (val x: Self) extends AnyVal {
     
     inline def setAlternateVisualElements(value: IVectorView[SecondaryTileVisualElements]): Self = StObject.set(x, "alternateVisualElements", value.asInstanceOf[js.Any])
     

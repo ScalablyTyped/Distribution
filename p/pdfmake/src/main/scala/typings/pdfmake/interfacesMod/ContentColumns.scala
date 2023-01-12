@@ -334,7 +334,8 @@ object ContentColumns {
     __obj.asInstanceOf[ContentColumns]
   }
   
-  extension [Self <: ContentColumns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentColumns] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
     

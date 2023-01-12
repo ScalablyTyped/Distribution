@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Estree]
     }
     
-    extension [Self <: Estree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Estree] (val x: Self) extends AnyVal {
       
       inline def setEstree(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Program */ Any

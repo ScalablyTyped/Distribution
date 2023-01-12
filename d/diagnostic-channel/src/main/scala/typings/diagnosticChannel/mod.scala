@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[IPatchedModule]
     }
     
-    extension [Self <: IPatchedModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPatchedModule] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object mod {
       __obj.asInstanceOf[ISpanContext]
     }
     
-    extension [Self <: ISpanContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpanContext] (val x: Self) extends AnyVal {
       
       inline def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object mod {
       __obj.asInstanceOf[IStandardEvent[T]]
     }
     
-    extension [Self <: IStandardEvent[?], T](x: Self & IStandardEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStandardEvent[?], T] (val x: Self & IStandardEvent[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

@@ -179,7 +179,8 @@ object PartialRadioProps {
     __obj.asInstanceOf[PartialRadioProps]
   }
   
-  extension [Self <: PartialRadioProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRadioProps] (val x: Self) extends AnyVal {
     
     inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
     

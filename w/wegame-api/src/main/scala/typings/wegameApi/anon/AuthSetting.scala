@@ -15,7 +15,8 @@ object AuthSetting {
     __obj.asInstanceOf[AuthSetting]
   }
   
-  extension [Self <: AuthSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthSetting] (val x: Self) extends AnyVal {
     
     inline def setAuthSetting(value: typings.wegameApi.wx.types.AuthSetting): Self = StObject.set(x, "authSetting", value.asInstanceOf[js.Any])
   }

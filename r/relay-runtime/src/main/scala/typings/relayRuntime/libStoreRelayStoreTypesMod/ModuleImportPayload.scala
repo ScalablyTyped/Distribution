@@ -35,7 +35,8 @@ object ModuleImportPayload {
     __obj.asInstanceOf[ModuleImportPayload]
   }
   
-  extension [Self <: ModuleImportPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleImportPayload] (val x: Self) extends AnyVal {
     
     inline def setData(value: PayloadData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

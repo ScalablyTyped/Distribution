@@ -206,7 +206,8 @@ object ClassMap {
     __obj.asInstanceOf[ClassMap]
   }
   
-  extension [Self <: ClassMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassMap] (val x: Self) extends AnyVal {
     
     inline def setArtboard(value: Artboard): Self = StObject.set(x, "artboard", value.asInstanceOf[js.Any])
     

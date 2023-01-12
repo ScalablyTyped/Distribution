@@ -25,7 +25,8 @@ object KeyDerivationAlgorithmProvider {
     __obj.asInstanceOf[KeyDerivationAlgorithmProvider]
   }
   
-  extension [Self <: KeyDerivationAlgorithmProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyDerivationAlgorithmProvider] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmName(value: String): Self = StObject.set(x, "algorithmName", value.asInstanceOf[js.Any])
     

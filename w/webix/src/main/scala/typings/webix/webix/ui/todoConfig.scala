@@ -66,7 +66,8 @@ object todoConfig {
     __obj.asInstanceOf[todoConfig]
   }
   
-  extension [Self <: todoConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: todoConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

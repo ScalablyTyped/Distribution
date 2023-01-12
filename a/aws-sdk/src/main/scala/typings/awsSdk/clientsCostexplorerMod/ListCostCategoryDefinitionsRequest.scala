@@ -28,7 +28,8 @@ object ListCostCategoryDefinitionsRequest {
     __obj.asInstanceOf[ListCostCategoryDefinitionsRequest]
   }
   
-  extension [Self <: ListCostCategoryDefinitionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCostCategoryDefinitionsRequest] (val x: Self) extends AnyVal {
     
     inline def setEffectiveOn(value: ZonedDateTime): Self = StObject.set(x, "EffectiveOn", value.asInstanceOf[js.Any])
     

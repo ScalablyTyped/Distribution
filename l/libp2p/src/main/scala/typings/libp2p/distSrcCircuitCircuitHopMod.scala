@@ -43,7 +43,8 @@ object distSrcCircuitCircuitHopMod {
       __obj.asInstanceOf[CanHopOptions]
     }
     
-    extension [Self <: CanHopOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanHopOptions] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     }
@@ -64,7 +65,8 @@ object distSrcCircuitCircuitHopMod {
       __obj.asInstanceOf[HandleCanHopOptions]
     }
     
-    extension [Self <: HandleCanHopOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleCanHopOptions] (val x: Self) extends AnyVal {
       
       inline def setCircuit(value: Circuit): Self = StObject.set(x, "circuit", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object distSrcCircuitCircuitHopMod {
       __obj.asInstanceOf[HopConfig]
     }
     
-    extension [Self <: HopConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HopConfig] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -122,7 +125,8 @@ object distSrcCircuitCircuitHopMod {
       __obj.asInstanceOf[HopRequest]
     }
     
-    extension [Self <: HopRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HopRequest] (val x: Self) extends AnyVal {
       
       inline def setCircuit(value: Circuit): Self = StObject.set(x, "circuit", value.asInstanceOf[js.Any])
       

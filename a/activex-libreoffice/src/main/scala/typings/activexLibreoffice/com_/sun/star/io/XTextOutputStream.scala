@@ -49,7 +49,8 @@ object XTextOutputStream {
     __obj.asInstanceOf[XTextOutputStream]
   }
   
-  extension [Self <: XTextOutputStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextOutputStream] (val x: Self) extends AnyVal {
     
     inline def setSetEncoding(value: String => Unit): Self = StObject.set(x, "setEncoding", js.Any.fromFunction1(value))
     

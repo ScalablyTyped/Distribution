@@ -48,7 +48,8 @@ object MappingTypeMapping {
     __obj.asInstanceOf[MappingTypeMapping]
   }
   
-  extension [Self <: MappingTypeMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingTypeMapping] (val x: Self) extends AnyVal {
     
     inline def setAll_field(value: MappingAllField): Self = StObject.set(x, "all_field", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object distTypingsNewFormatSpec0Dot8BodiesMod {
       __obj.asInstanceOf[BodyLike08]
     }
     
-    extension [Self <: BodyLike08](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyLike08] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object distTypingsNewFormatSpec0Dot8BodiesMod {
       __obj.asInstanceOf[Response08]
     }
     
-    extension [Self <: Response08](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response08] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.Array[BodyLike08]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

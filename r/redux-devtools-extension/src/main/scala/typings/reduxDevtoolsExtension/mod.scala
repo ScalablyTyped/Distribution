@@ -162,7 +162,8 @@ object mod {
       __obj.asInstanceOf[EnhancerOptions]
     }
     
-    extension [Self <: EnhancerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnhancerOptions] (val x: Self) extends AnyVal {
       
       inline def setActionCreators(value: js.Array[ActionCreator[Any]] | StringDictionary[ActionCreator[Any]]): Self = StObject.set(x, "actionCreators", value.asInstanceOf[js.Any])
       

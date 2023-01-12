@@ -34,7 +34,8 @@ object TopFilterProperties {
     __obj.asInstanceOf[TopFilterProperties]
   }
   
-  extension [Self <: TopFilterProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopFilterProperties] (val x: Self) extends AnyVal {
     
     inline def setGroupByFields(value: js.Array[String]): Self = StObject.set(x, "groupByFields", value.asInstanceOf[js.Any])
     

@@ -116,7 +116,8 @@ object ReverbEffectDefinition {
     __obj.asInstanceOf[ReverbEffectDefinition]
   }
   
-  extension [Self <: ReverbEffectDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReverbEffectDefinition] (val x: Self) extends AnyVal {
     
     inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     

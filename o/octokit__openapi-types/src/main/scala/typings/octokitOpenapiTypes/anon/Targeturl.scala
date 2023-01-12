@@ -39,7 +39,8 @@ object Targeturl {
     __obj.asInstanceOf[Targeturl]
   }
   
-  extension [Self <: Targeturl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Targeturl] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

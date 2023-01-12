@@ -103,7 +103,8 @@ object MessageBoxOptions {
     __obj.asInstanceOf[MessageBoxOptions]
   }
   
-  extension [Self <: MessageBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

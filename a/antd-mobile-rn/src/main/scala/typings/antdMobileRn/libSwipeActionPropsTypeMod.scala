@@ -31,7 +31,8 @@ object libSwipeActionPropsTypeMod {
       __obj.asInstanceOf[SwipeActionPropsType[T]]
     }
     
-    extension [Self <: SwipeActionPropsType[?], T](x: Self & SwipeActionPropsType[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeActionPropsType[?], T] (val x: Self & SwipeActionPropsType[T]) extends AnyVal {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       

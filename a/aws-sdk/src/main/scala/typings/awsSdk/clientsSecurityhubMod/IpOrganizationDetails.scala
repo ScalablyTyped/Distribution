@@ -33,7 +33,8 @@ object IpOrganizationDetails {
     __obj.asInstanceOf[IpOrganizationDetails]
   }
   
-  extension [Self <: IpOrganizationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpOrganizationDetails] (val x: Self) extends AnyVal {
     
     inline def setAsn(value: Integer): Self = StObject.set(x, "Asn", value.asInstanceOf[js.Any])
     

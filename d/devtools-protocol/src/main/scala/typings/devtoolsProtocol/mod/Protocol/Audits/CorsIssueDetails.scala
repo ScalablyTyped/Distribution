@@ -30,7 +30,8 @@ object CorsIssueDetails {
     __obj.asInstanceOf[CorsIssueDetails]
   }
   
-  extension [Self <: CorsIssueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CorsIssueDetails] (val x: Self) extends AnyVal {
     
     inline def setClientSecurityState(value: ClientSecurityState): Self = StObject.set(x, "clientSecurityState", value.asInstanceOf[js.Any])
     

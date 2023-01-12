@@ -28,7 +28,8 @@ object UpdateCrlRequest {
     __obj.asInstanceOf[UpdateCrlRequest]
   }
   
-  extension [Self <: UpdateCrlRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCrlRequest] (val x: Self) extends AnyVal {
     
     inline def setCrlData(value: UpdateCrlRequestCrlDataBlob): Self = StObject.set(x, "crlData", value.asInstanceOf[js.Any])
     

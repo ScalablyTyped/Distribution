@@ -23,7 +23,8 @@ object ContentStatement {
     __obj.asInstanceOf[ContentStatement]
   }
   
-  extension [Self <: ContentStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentStatement] (val x: Self) extends AnyVal {
     
     inline def setOriginal(value: StripFlags): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object RoutingProfileSearchCriteria {
     __obj.asInstanceOf[RoutingProfileSearchCriteria]
   }
   
-  extension [Self <: RoutingProfileSearchCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutingProfileSearchCriteria] (val x: Self) extends AnyVal {
     
     inline def setAndConditions(value: RoutingProfileSearchConditionList): Self = StObject.set(x, "AndConditions", value.asInstanceOf[js.Any])
     

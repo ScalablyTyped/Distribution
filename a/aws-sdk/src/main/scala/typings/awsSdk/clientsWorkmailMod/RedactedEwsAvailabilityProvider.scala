@@ -23,7 +23,8 @@ object RedactedEwsAvailabilityProvider {
     __obj.asInstanceOf[RedactedEwsAvailabilityProvider]
   }
   
-  extension [Self <: RedactedEwsAvailabilityProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedactedEwsAvailabilityProvider] (val x: Self) extends AnyVal {
     
     inline def setEwsEndpoint(value: Url): Self = StObject.set(x, "EwsEndpoint", value.asInstanceOf[js.Any])
     

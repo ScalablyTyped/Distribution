@@ -19,7 +19,8 @@ object AppsDynamiteBabelPlaceholderMetadata {
     __obj.asInstanceOf[AppsDynamiteBabelPlaceholderMetadata]
   }
   
-  extension [Self <: AppsDynamiteBabelPlaceholderMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteBabelPlaceholderMetadata] (val x: Self) extends AnyVal {
     
     inline def setDeleteMetadata(value: Any): Self = StObject.set(x, "deleteMetadata", value.asInstanceOf[js.Any])
     

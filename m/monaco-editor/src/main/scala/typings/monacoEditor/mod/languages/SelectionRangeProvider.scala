@@ -23,7 +23,8 @@ object SelectionRangeProvider {
     __obj.asInstanceOf[SelectionRangeProvider]
   }
   
-  extension [Self <: SelectionRangeProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionRangeProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideSelectionRanges(
       value: (ITextModel, js.Array[Position], CancellationToken) => ProviderResult[js.Array[js.Array[SelectionRange]]]

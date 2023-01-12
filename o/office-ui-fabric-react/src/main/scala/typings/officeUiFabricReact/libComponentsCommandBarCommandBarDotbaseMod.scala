@@ -103,7 +103,8 @@ object libComponentsCommandBarCommandBarDotbaseMod {
       __obj.asInstanceOf[ICommandBarData]
     }
     
-    extension [Self <: ICommandBarData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommandBarData] (val x: Self) extends AnyVal {
       
       inline def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       

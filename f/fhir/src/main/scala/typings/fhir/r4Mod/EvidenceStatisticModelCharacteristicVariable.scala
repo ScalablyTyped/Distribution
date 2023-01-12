@@ -46,7 +46,8 @@ object EvidenceStatisticModelCharacteristicVariable {
     __obj.asInstanceOf[EvidenceStatisticModelCharacteristicVariable]
   }
   
-  extension [Self <: EvidenceStatisticModelCharacteristicVariable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvidenceStatisticModelCharacteristicVariable] (val x: Self) extends AnyVal {
     
     inline def setHandling(value: continuous | dichotomous | ordinal | polychotomous): Self = StObject.set(x, "handling", value.asInstanceOf[js.Any])
     

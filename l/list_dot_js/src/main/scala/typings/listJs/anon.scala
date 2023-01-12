@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Attr]
     }
     
-    extension [Self <: Attr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attr] (val x: Self) extends AnyVal {
       
       inline def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[InnerWindow]
     }
     
-    extension [Self <: InnerWindow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerWindow] (val x: Self) extends AnyVal {
       
       inline def setInnerWindow(value: Double): Self = StObject.set(x, "innerWindow", value.asInstanceOf[js.Any])
       

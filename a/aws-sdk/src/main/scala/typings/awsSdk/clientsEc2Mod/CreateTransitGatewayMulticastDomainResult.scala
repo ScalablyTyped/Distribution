@@ -18,7 +18,8 @@ object CreateTransitGatewayMulticastDomainResult {
     __obj.asInstanceOf[CreateTransitGatewayMulticastDomainResult]
   }
   
-  extension [Self <: CreateTransitGatewayMulticastDomainResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTransitGatewayMulticastDomainResult] (val x: Self) extends AnyVal {
     
     inline def setTransitGatewayMulticastDomain(value: TransitGatewayMulticastDomain): Self = StObject.set(x, "TransitGatewayMulticastDomain", value.asInstanceOf[js.Any])
     

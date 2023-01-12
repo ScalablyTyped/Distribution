@@ -17,7 +17,8 @@ object PageScrollEvent {
     __obj.asInstanceOf[PageScrollEvent]
   }
   
-  extension [Self <: PageScrollEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageScrollEvent] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

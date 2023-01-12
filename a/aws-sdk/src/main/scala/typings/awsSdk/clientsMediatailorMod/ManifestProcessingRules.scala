@@ -18,7 +18,8 @@ object ManifestProcessingRules {
     __obj.asInstanceOf[ManifestProcessingRules]
   }
   
-  extension [Self <: ManifestProcessingRules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestProcessingRules] (val x: Self) extends AnyVal {
     
     inline def setAdMarkerPassthrough(value: AdMarkerPassthrough): Self = StObject.set(x, "AdMarkerPassthrough", value.asInstanceOf[js.Any])
     

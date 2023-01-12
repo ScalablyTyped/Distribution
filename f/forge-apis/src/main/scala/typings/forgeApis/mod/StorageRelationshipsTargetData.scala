@@ -18,7 +18,8 @@ object StorageRelationshipsTargetData {
     __obj.asInstanceOf[StorageRelationshipsTargetData]
   }
   
-  extension [Self <: StorageRelationshipsTargetData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageRelationshipsTargetData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object NewLeadSelectedIndex {
     __obj.asInstanceOf[NewLeadSelectedIndex]
   }
   
-  extension [Self <: NewLeadSelectedIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewLeadSelectedIndex] (val x: Self) extends AnyVal {
     
     inline def setNewLeadSelectedIndex(value: int): Self = StObject.set(x, "newLeadSelectedIndex", value.asInstanceOf[js.Any])
     

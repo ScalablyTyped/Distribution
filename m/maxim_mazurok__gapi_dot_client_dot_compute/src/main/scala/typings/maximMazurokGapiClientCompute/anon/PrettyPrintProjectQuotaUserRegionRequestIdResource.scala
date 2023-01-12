@@ -71,7 +71,8 @@ object PrettyPrintProjectQuotaUserRegionRequestIdResource {
     __obj.asInstanceOf[PrettyPrintProjectQuotaUserRegionRequestIdResource]
   }
   
-  extension [Self <: PrettyPrintProjectQuotaUserRegionRequestIdResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrettyPrintProjectQuotaUserRegionRequestIdResource] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

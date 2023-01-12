@@ -21,7 +21,8 @@ object DynamicColorIOSTuple {
     __obj.asInstanceOf[DynamicColorIOSTuple]
   }
   
-  extension [Self <: DynamicColorIOSTuple](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicColorIOSTuple] (val x: Self) extends AnyVal {
     
     inline def setDark(value: ColorValue): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     

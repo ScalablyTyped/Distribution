@@ -17,7 +17,8 @@ object RepeatKey {
     __obj.asInstanceOf[RepeatKey]
   }
   
-  extension [Self <: RepeatKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepeatKey] (val x: Self) extends AnyVal {
     
     inline def setRepeatKey(value: String): Self = StObject.set(x, "repeatKey", value.asInstanceOf[js.Any])
     

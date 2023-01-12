@@ -22,7 +22,8 @@ object ListSqlTokenType {
     __obj.asInstanceOf[ListSqlTokenType]
   }
   
-  extension [Self <: ListSqlTokenType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSqlTokenType] (val x: Self) extends AnyVal {
     
     inline def setGlue(value: SqlTokenType): Self = StObject.set(x, "glue", value.asInstanceOf[js.Any])
     

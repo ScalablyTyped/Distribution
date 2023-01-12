@@ -17,7 +17,8 @@ object ConceptsOptions {
     __obj.asInstanceOf[ConceptsOptions]
   }
   
-  extension [Self <: ConceptsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConceptsOptions] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

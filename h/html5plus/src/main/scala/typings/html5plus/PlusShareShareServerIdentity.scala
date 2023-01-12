@@ -39,7 +39,8 @@ object PlusShareShareServerIdentity {
     __obj.asInstanceOf[PlusShareShareServerIdentity]
   }
   
-  extension [Self <: PlusShareShareServerIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusShareShareServerIdentity] (val x: Self) extends AnyVal {
     
     inline def setSinaweibo(value: String): Self = StObject.set(x, "sinaweibo", value.asInstanceOf[js.Any])
     

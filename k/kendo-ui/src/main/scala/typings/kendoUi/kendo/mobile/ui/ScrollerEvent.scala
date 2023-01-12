@@ -19,7 +19,8 @@ object ScrollerEvent {
     __obj.asInstanceOf[ScrollerEvent]
   }
   
-  extension [Self <: ScrollerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollerEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

@@ -25,7 +25,8 @@ object RetryPolicyType {
     __obj.asInstanceOf[RetryPolicyType]
   }
   
-  extension [Self <: RetryPolicyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryPolicyType] (val x: Self) extends AnyVal {
     
     inline def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     

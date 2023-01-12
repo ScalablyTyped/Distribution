@@ -24,7 +24,8 @@ object InterpolationNode {
     __obj.asInstanceOf[InterpolationNode]
   }
   
-  extension [Self <: InterpolationNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpolationNode] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ExpressionNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

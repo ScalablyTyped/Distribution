@@ -80,7 +80,8 @@ object PlotDependencywheelAccessibilityPointOptions {
     __obj.asInstanceOf[PlotDependencywheelAccessibilityPointOptions]
   }
   
-  extension [Self <: PlotDependencywheelAccessibilityPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotDependencywheelAccessibilityPointOptions] (val x: Self) extends AnyVal {
     
     inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     

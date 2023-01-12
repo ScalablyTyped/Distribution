@@ -23,7 +23,8 @@ object ReadMemoryArguments {
     __obj.asInstanceOf[ReadMemoryArguments]
   }
   
-  extension [Self <: ReadMemoryArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadMemoryArguments] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

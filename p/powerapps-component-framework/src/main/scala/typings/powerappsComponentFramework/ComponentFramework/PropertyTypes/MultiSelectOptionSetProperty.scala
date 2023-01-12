@@ -26,7 +26,8 @@ object MultiSelectOptionSetProperty {
     __obj.asInstanceOf[MultiSelectOptionSetProperty]
   }
   
-  extension [Self <: MultiSelectOptionSetProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiSelectOptionSetProperty] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: OptionSetMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

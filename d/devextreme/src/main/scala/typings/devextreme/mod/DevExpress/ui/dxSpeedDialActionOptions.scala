@@ -43,7 +43,8 @@ object dxSpeedDialActionOptions {
     __obj.asInstanceOf[dxSpeedDialActionOptions]
   }
   
-  extension [Self <: dxSpeedDialActionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxSpeedDialActionOptions] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

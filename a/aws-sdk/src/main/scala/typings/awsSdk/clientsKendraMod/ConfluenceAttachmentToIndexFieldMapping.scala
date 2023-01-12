@@ -28,7 +28,8 @@ object ConfluenceAttachmentToIndexFieldMapping {
     __obj.asInstanceOf[ConfluenceAttachmentToIndexFieldMapping]
   }
   
-  extension [Self <: ConfluenceAttachmentToIndexFieldMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfluenceAttachmentToIndexFieldMapping] (val x: Self) extends AnyVal {
     
     inline def setDataSourceFieldName(value: ConfluenceAttachmentFieldName): Self = StObject.set(x, "DataSourceFieldName", value.asInstanceOf[js.Any])
     

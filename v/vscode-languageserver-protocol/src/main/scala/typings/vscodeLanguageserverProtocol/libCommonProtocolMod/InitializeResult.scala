@@ -33,7 +33,8 @@ object InitializeResult {
     __obj.asInstanceOf[InitializeResult[T]]
   }
   
-  extension [Self <: InitializeResult[?], T](x: Self & InitializeResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitializeResult[?], T] (val x: Self & InitializeResult[T]) extends AnyVal {
     
     inline def setCapabilities(value: ServerCapabilities[T]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

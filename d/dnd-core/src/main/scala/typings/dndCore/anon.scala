@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setHandlerIds(value: js.Array[Identifier]): Self = StObject.set(x, "handlerIds", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[ClientOffset]
     }
     
-    extension [Self <: ClientOffset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOffset] (val x: Self) extends AnyVal {
       
       inline def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
       
@@ -100,7 +103,8 @@ object anon {
       __obj.asInstanceOf[DropResult]
     }
     
-    extension [Self <: DropResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropResult] (val x: Self) extends AnyVal {
       
       inline def setDropResult(value: Any): Self = StObject.set(x, "dropResult", value.asInstanceOf[js.Any])
       
@@ -133,7 +137,8 @@ object anon {
       __obj.asInstanceOf[HandlerIds]
     }
     
-    extension [Self <: HandlerIds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandlerIds] (val x: Self) extends AnyVal {
       
       inline def setHandlerIds(value: js.Array[String]): Self = StObject.set(x, "handlerIds", value.asInstanceOf[js.Any])
       
@@ -154,7 +159,8 @@ object anon {
       __obj.asInstanceOf[Shallow]
     }
     
-    extension [Self <: Shallow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shallow] (val x: Self) extends AnyVal {
       
       inline def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
     }

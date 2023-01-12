@@ -125,7 +125,8 @@ object OlkTextBox {
     __obj.asInstanceOf[OlkTextBox]
   }
   
-  extension [Self <: OlkTextBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlkTextBox] (val x: Self) extends AnyVal {
     
     inline def setAutoSize(value: Boolean): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object DriveRoute {
     __obj.asInstanceOf[DriveRoute]
   }
   
-  extension [Self <: DriveRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriveRoute] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

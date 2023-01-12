@@ -22,7 +22,8 @@ object AndroidDeviceCatalog {
     __obj.asInstanceOf[AndroidDeviceCatalog]
   }
   
-  extension [Self <: AndroidDeviceCatalog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidDeviceCatalog] (val x: Self) extends AnyVal {
     
     inline def setModels(value: js.Array[AndroidModel]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     

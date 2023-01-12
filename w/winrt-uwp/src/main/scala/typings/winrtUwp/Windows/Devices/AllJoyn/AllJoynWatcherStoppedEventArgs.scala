@@ -17,7 +17,8 @@ object AllJoynWatcherStoppedEventArgs {
     __obj.asInstanceOf[AllJoynWatcherStoppedEventArgs]
   }
   
-  extension [Self <: AllJoynWatcherStoppedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllJoynWatcherStoppedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

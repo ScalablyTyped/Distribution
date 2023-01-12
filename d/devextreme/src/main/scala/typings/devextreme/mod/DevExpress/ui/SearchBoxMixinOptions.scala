@@ -45,7 +45,8 @@ object SearchBoxMixinOptions {
     __obj.asInstanceOf[SearchBoxMixinOptions]
   }
   
-  extension [Self <: SearchBoxMixinOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchBoxMixinOptions] (val x: Self) extends AnyVal {
     
     inline def setSearchEditorOptions(value: Properties): Self = StObject.set(x, "searchEditorOptions", value.asInstanceOf[js.Any])
     

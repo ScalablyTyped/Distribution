@@ -17,7 +17,8 @@ object NetworkAddress {
     __obj.asInstanceOf[NetworkAddress]
   }
   
-  extension [Self <: NetworkAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkAddress] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

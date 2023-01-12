@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[StarRatingProps]
     }
     
-    extension [Self <: StarRatingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StarRatingProps] (val x: Self) extends AnyVal {
       
       inline def setChangeRating(value: /* rating */ Double => Unit): Self = StObject.set(x, "changeRating", js.Any.fromFunction1(value))
       

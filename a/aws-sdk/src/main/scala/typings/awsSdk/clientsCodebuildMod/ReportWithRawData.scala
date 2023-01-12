@@ -23,7 +23,8 @@ object ReportWithRawData {
     __obj.asInstanceOf[ReportWithRawData]
   }
   
-  extension [Self <: ReportWithRawData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportWithRawData] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

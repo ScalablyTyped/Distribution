@@ -107,7 +107,8 @@ object geom {
       __obj.asInstanceOf[Coordinate]
     }
     
-    extension [Self <: Coordinate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coordinate] (val x: Self) extends AnyVal {
       
       inline def setCompareTo(value: Coordinate => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
       
@@ -156,7 +157,8 @@ object geom {
       __obj.asInstanceOf[CoordinateFilter]
     }
     
-    extension [Self <: CoordinateFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoordinateFilter] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: Coordinate => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     }
@@ -255,7 +257,8 @@ object geom {
       __obj.asInstanceOf[CoordinateSequenceFilter]
     }
     
-    extension [Self <: CoordinateSequenceFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoordinateSequenceFilter] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: (CoordinateSequence, Double) => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
@@ -1610,7 +1613,8 @@ object geom {
       __obj.asInstanceOf[GeometryComponentFilter]
     }
     
-    extension [Self <: GeometryComponentFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeometryComponentFilter] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: Geometry => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     }
@@ -1901,7 +1905,8 @@ object geom {
       __obj.asInstanceOf[GeometryFilter]
     }
     
-    extension [Self <: GeometryFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeometryFilter] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: Geometry => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     }

@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[Country]
     }
     
-    extension [Self <: Country](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
       
       inline def setAlpha2(value: String): Self = StObject.set(x, "alpha2", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
       

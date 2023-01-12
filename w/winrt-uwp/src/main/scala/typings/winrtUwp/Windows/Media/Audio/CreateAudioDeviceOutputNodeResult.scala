@@ -20,7 +20,8 @@ object CreateAudioDeviceOutputNodeResult {
     __obj.asInstanceOf[CreateAudioDeviceOutputNodeResult]
   }
   
-  extension [Self <: CreateAudioDeviceOutputNodeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAudioDeviceOutputNodeResult] (val x: Self) extends AnyVal {
     
     inline def setDeviceOutputNode(value: AudioDeviceOutputNode): Self = StObject.set(x, "deviceOutputNode", value.asInstanceOf[js.Any])
     

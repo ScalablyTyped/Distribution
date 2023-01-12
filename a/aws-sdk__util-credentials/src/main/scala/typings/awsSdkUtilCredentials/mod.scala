@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[SourceProfileInit]
     }
     
-    extension [Self <: SourceProfileInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceProfileInit] (val x: Self) extends AnyVal {
       
       inline def setLoadedConfig(value: js.Promise[SharedConfigFiles]): Self = StObject.set(x, "loadedConfig", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object IControllerLocals {
     __obj.asInstanceOf[IControllerLocals]
   }
   
-  extension [Self <: IControllerLocals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IControllerLocals] (val x: Self) extends AnyVal {
     
     inline def set$element(value: JQuery): Self = StObject.set(x, "$element", value.asInstanceOf[js.Any])
     

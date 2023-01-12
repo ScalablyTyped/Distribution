@@ -24,7 +24,8 @@ object PartialContentSwitcherOpt {
     __obj.asInstanceOf[PartialContentSwitcherOpt]
   }
   
-  extension [Self <: PartialContentSwitcherOpt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialContentSwitcherOpt] (val x: Self) extends AnyVal {
     
     inline def setClassActive(value: String): Self = StObject.set(x, "classActive", value.asInstanceOf[js.Any])
     

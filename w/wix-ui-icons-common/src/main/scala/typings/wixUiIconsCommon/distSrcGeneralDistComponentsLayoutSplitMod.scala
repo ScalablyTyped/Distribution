@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsLayoutSplitMod extends Shortcut {
       __obj.asInstanceOf[LayoutSplitProps]
     }
     
-    extension [Self <: LayoutSplitProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutSplitProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

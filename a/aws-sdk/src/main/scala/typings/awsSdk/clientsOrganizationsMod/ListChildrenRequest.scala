@@ -33,7 +33,8 @@ object ListChildrenRequest {
     __obj.asInstanceOf[ListChildrenRequest]
   }
   
-  extension [Self <: ListChildrenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListChildrenRequest] (val x: Self) extends AnyVal {
     
     inline def setChildType(value: ChildType): Self = StObject.set(x, "ChildType", value.asInstanceOf[js.Any])
     

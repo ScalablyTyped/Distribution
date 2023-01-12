@@ -28,7 +28,8 @@ object ProductInformationFilter {
     __obj.asInstanceOf[ProductInformationFilter]
   }
   
-  extension [Self <: ProductInformationFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductInformationFilter] (val x: Self) extends AnyVal {
     
     inline def setProductInformationFilterComparator(value: String): Self = StObject.set(x, "ProductInformationFilterComparator", value.asInstanceOf[js.Any])
     

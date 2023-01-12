@@ -53,7 +53,8 @@ object gapi {
           __obj.asInstanceOf[AchievementConfiguration]
         }
         
-        extension [Self <: AchievementConfiguration](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: AchievementConfiguration] (val x: Self) extends AnyVal {
           
           inline def setAchievementType(value: String): Self = StObject.set(x, "achievementType", value.asInstanceOf[js.Any])
           
@@ -116,7 +117,8 @@ object gapi {
           __obj.asInstanceOf[AchievementConfigurationDetail]
         }
         
-        extension [Self <: AchievementConfigurationDetail](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: AchievementConfigurationDetail] (val x: Self) extends AnyVal {
           
           inline def setDescription(value: LocalizedStringBundle): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
@@ -162,7 +164,8 @@ object gapi {
           __obj.asInstanceOf[AchievementConfigurationListResponse]
         }
         
-        extension [Self <: AchievementConfigurationListResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: AchievementConfigurationListResponse] (val x: Self) extends AnyVal {
           
           inline def setItems(value: js.Array[AchievementConfiguration]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
           
@@ -234,7 +237,8 @@ object gapi {
           __obj.asInstanceOf[GamesNumberAffixConfiguration]
         }
         
-        extension [Self <: GamesNumberAffixConfiguration](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GamesNumberAffixConfiguration] (val x: Self) extends AnyVal {
           
           inline def setFew(value: LocalizedStringBundle): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
           
@@ -283,7 +287,8 @@ object gapi {
           __obj.asInstanceOf[GamesNumberFormatConfiguration]
         }
         
-        extension [Self <: GamesNumberFormatConfiguration](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GamesNumberFormatConfiguration] (val x: Self) extends AnyVal {
           
           inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
           
@@ -324,7 +329,8 @@ object gapi {
           __obj.asInstanceOf[ImageConfiguration]
         }
         
-        extension [Self <: ImageConfiguration](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ImageConfiguration] (val x: Self) extends AnyVal {
           
           inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
           
@@ -384,7 +390,8 @@ object gapi {
           __obj.asInstanceOf[LeaderboardConfiguration]
         }
         
-        extension [Self <: LeaderboardConfiguration](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LeaderboardConfiguration] (val x: Self) extends AnyVal {
           
           inline def setDraft(value: LeaderboardConfigurationDetail): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
           
@@ -444,7 +451,8 @@ object gapi {
           __obj.asInstanceOf[LeaderboardConfigurationDetail]
         }
         
-        extension [Self <: LeaderboardConfigurationDetail](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LeaderboardConfigurationDetail] (val x: Self) extends AnyVal {
           
           inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
           
@@ -486,7 +494,8 @@ object gapi {
           __obj.asInstanceOf[LeaderboardConfigurationListResponse]
         }
         
-        extension [Self <: LeaderboardConfigurationListResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LeaderboardConfigurationListResponse] (val x: Self) extends AnyVal {
           
           inline def setItems(value: js.Array[LeaderboardConfiguration]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
           
@@ -546,7 +555,8 @@ object gapi {
           __obj.asInstanceOf[LocalizedString]
         }
         
-        extension [Self <: LocalizedString](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LocalizedString] (val x: Self) extends AnyVal {
           
           inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
@@ -577,7 +587,8 @@ object gapi {
           __obj.asInstanceOf[LocalizedStringBundle]
         }
         
-        extension [Self <: LocalizedStringBundle](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LocalizedStringBundle] (val x: Self) extends AnyVal {
           
           inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           

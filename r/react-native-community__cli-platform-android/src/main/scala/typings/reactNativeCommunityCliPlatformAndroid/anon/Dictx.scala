@@ -20,7 +20,8 @@ object Dictx {
     __obj.asInstanceOf[Dictx]
   }
   
-  extension [Self <: Dictx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictx] (val x: Self) extends AnyVal {
     
     inline def setMainDotjava(value: Any): Self = StObject.set(x, "Main.java", value.asInstanceOf[js.Any])
   }

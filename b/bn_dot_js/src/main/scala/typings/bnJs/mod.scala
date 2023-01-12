@@ -686,7 +686,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MPrime]
     }
     
-    extension [Self <: MPrime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MPrime] (val x: Self) extends AnyVal {
       
       inline def setK(value: BN): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
@@ -792,7 +793,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReductionContext]
     }
     
-    extension [Self <: ReductionContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReductionContext] (val x: Self) extends AnyVal {
       
       inline def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       

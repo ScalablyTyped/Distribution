@@ -23,7 +23,8 @@ object RandomUUIDOptions {
     __obj.asInstanceOf[RandomUUIDOptions]
   }
   
-  extension [Self <: RandomUUIDOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RandomUUIDOptions] (val x: Self) extends AnyVal {
     
     inline def setDisableEntropyCache(value: Boolean): Self = StObject.set(x, "disableEntropyCache", value.asInstanceOf[js.Any])
     

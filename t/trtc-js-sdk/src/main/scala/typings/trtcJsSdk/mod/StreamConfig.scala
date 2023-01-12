@@ -60,7 +60,8 @@ object StreamConfig {
     __obj.asInstanceOf[StreamConfig]
   }
   
-  extension [Self <: StreamConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamConfig] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

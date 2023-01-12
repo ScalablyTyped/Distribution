@@ -19,7 +19,8 @@ object PolylineEvent {
     __obj.asInstanceOf[PolylineEvent]
   }
   
-  extension [Self <: PolylineEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolylineEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

@@ -49,7 +49,8 @@ object libPlotsBubbleChartMod extends Shortcut {
       __obj.asInstanceOf[BubbleOptions]
     }
     
-    extension [Self <: BubbleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BubbleOptions] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: LabelAPIOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

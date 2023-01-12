@@ -89,7 +89,8 @@ object libPlotsRadarTypesMod {
       __obj.asInstanceOf[RadarOptions]
     }
     
-    extension [Self <: RadarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadarOptions] (val x: Self) extends AnyVal {
       
       inline def setArea(value: MappingOptions): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       

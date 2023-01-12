@@ -24,7 +24,8 @@ object GetResourceRequestStatusI {
     __obj.asInstanceOf[GetResourceRequestStatusI]
   }
   
-  extension [Self <: GetResourceRequestStatusI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourceRequestStatusI] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

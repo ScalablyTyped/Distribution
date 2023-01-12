@@ -54,7 +54,8 @@ object CommonUserstate {
     __obj.asInstanceOf[CommonUserstate]
   }
   
-  extension [Self <: CommonUserstate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonUserstate] (val x: Self) extends AnyVal {
     
     inline def `setBadge-info`(value: BadgeInfo): Self = StObject.set(x, "badge-info", value.asInstanceOf[js.Any])
     

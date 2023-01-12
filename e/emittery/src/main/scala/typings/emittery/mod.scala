@@ -218,7 +218,8 @@ object mod {
       __obj.asInstanceOf[DebugOptions[EventData]]
     }
     
-    extension [Self <: DebugOptions[?], EventData](x: Self & DebugOptions[EventData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebugOptions[?], EventData] (val x: Self & DebugOptions[EventData]) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -562,7 +563,8 @@ object mod {
       __obj.asInstanceOf[Options[EventData]]
     }
     
-    extension [Self <: Options[?], EventData](x: Self & Options[EventData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], EventData] (val x: Self & Options[EventData]) extends AnyVal {
       
       inline def setDebug(value: DebugOptions[EventData]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       

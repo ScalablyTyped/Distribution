@@ -50,7 +50,8 @@ object libServicesMod {
         __obj.asInstanceOf[UIRouter]
       }
       
-      extension [Self <: UIRouter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UIRouter] (val x: Self) extends AnyVal {
         
         inline def setStateProvider(value: StateProvider): Self = StObject.set(x, "stateProvider", value.asInstanceOf[js.Any])
         

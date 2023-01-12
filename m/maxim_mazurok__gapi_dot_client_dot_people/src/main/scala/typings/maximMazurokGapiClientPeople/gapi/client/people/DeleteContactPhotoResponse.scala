@@ -16,7 +16,8 @@ object DeleteContactPhotoResponse {
     __obj.asInstanceOf[DeleteContactPhotoResponse]
   }
   
-  extension [Self <: DeleteContactPhotoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteContactPhotoResponse] (val x: Self) extends AnyVal {
     
     inline def setPerson(value: Person): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
     

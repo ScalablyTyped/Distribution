@@ -26,7 +26,8 @@ object SearchStatus {
     __obj.asInstanceOf[SearchStatus]
   }
   
-  extension [Self <: SearchStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchStatus] (val x: Self) extends AnyVal {
     
     inline def setLast_trained(value: String): Self = StObject.set(x, "last_trained", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object XConsolidatable {
     __obj.asInstanceOf[XConsolidatable]
   }
   
-  extension [Self <: XConsolidatable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConsolidatable] (val x: Self) extends AnyVal {
     
     inline def setConsolidate(value: XConsolidationDescriptor => Unit): Self = StObject.set(x, "consolidate", js.Any.fromFunction1(value))
     

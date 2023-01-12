@@ -32,7 +32,8 @@ object EntityUserLink {
     __obj.asInstanceOf[EntityUserLink]
   }
   
-  extension [Self <: EntityUserLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityUserLink] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: typings.maximMazurokGapiClientAnalytics.anon.AccountRef): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

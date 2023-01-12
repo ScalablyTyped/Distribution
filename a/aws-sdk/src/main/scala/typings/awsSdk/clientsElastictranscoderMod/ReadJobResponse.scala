@@ -18,7 +18,8 @@ object ReadJobResponse {
     __obj.asInstanceOf[ReadJobResponse]
   }
   
-  extension [Self <: ReadJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadJobResponse] (val x: Self) extends AnyVal {
     
     inline def setJob(value: Job): Self = StObject.set(x, "Job", value.asInstanceOf[js.Any])
     

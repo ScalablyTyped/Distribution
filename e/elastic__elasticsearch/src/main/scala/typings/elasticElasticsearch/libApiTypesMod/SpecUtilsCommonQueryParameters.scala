@@ -21,7 +21,8 @@ object SpecUtilsCommonQueryParameters {
     __obj.asInstanceOf[SpecUtilsCommonQueryParameters]
   }
   
-  extension [Self <: SpecUtilsCommonQueryParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecUtilsCommonQueryParameters] (val x: Self) extends AnyVal {
     
     inline def setError_trace(value: Boolean): Self = StObject.set(x, "error_trace", value.asInstanceOf[js.Any])
     

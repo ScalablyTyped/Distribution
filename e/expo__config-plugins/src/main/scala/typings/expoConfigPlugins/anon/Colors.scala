@@ -56,7 +56,8 @@ object Colors {
     __obj.asInstanceOf[Colors]
   }
   
-  extension [Self <: Colors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
     
     inline def setAppBuildGradle(value: BaseModProviderMethods[GradleProjectFile, PartialPickBaseModOptions]): Self = StObject.set(x, "appBuildGradle", value.asInstanceOf[js.Any])
     

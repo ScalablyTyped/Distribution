@@ -149,7 +149,8 @@ object pinpointConfigurationMod {
       __obj.asInstanceOf[PinpointConfiguration]
     }
     
-    extension [Self <: PinpointConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinpointConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
@@ -296,7 +297,8 @@ object pinpointConfigurationMod {
       __obj.asInstanceOf[PinpointResolvableConfiguration]
     }
     
-    extension [Self <: PinpointResolvableConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinpointResolvableConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBodyLengthChecker(value: Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
@@ -428,7 +430,8 @@ object pinpointConfigurationMod {
       __obj.asInstanceOf[PinpointResolvedConfiguration]
     }
     
-    extension [Self <: PinpointResolvedConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinpointResolvedConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       

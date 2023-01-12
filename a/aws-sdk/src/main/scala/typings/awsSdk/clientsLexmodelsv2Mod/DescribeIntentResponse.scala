@@ -108,7 +108,8 @@ object DescribeIntentResponse {
     __obj.asInstanceOf[DescribeIntentResponse]
   }
   
-  extension [Self <: DescribeIntentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeIntentResponse] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     

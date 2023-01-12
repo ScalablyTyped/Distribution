@@ -26,7 +26,8 @@ object RuntimeBrokerErrorSettings {
     __obj.asInstanceOf[RuntimeBrokerErrorSettings]
   }
   
-  extension [Self <: RuntimeBrokerErrorSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeBrokerErrorSettings] (val x: Self) extends AnyVal {
     
     inline def setGetErrorOptions(value: () => ErrorOptions): Self = StObject.set(x, "getErrorOptions", js.Any.fromFunction0(value))
     

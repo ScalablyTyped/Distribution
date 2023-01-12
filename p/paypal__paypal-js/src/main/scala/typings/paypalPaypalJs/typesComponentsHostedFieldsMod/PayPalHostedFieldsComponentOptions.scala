@@ -24,7 +24,8 @@ object PayPalHostedFieldsComponentOptions {
     __obj.asInstanceOf[PayPalHostedFieldsComponentOptions]
   }
   
-  extension [Self <: PayPalHostedFieldsComponentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayPalHostedFieldsComponentOptions] (val x: Self) extends AnyVal {
     
     inline def setCreateOrder(value: () => js.Promise[String]): Self = StObject.set(x, "createOrder", js.Any.fromFunction0(value))
     

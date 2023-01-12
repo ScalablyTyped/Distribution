@@ -23,7 +23,8 @@ object ParticleEmitterRandomZoneConfig {
     __obj.asInstanceOf[ParticleEmitterRandomZoneConfig]
   }
   
-  extension [Self <: ParticleEmitterRandomZoneConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticleEmitterRandomZoneConfig] (val x: Self) extends AnyVal {
     
     inline def setSource(value: RandomZoneSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

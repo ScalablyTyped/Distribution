@@ -51,7 +51,8 @@ object PartialProgressBarPropsRe {
     __obj.asInstanceOf[PartialProgressBarPropsRe]
   }
   
-  extension [Self <: PartialProgressBarPropsRe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialProgressBarPropsRe] (val x: Self) extends AnyVal {
     
     inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
     

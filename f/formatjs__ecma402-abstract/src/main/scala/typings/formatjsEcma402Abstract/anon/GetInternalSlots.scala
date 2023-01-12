@@ -17,7 +17,8 @@ object GetInternalSlots {
     __obj.asInstanceOf[GetInternalSlots]
   }
   
-  extension [Self <: GetInternalSlots](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInternalSlots] (val x: Self) extends AnyVal {
     
     inline def setGetInternalSlots(value: NumberFormat => NumberFormatInternal): Self = StObject.set(x, "getInternalSlots", js.Any.fromFunction1(value))
   }

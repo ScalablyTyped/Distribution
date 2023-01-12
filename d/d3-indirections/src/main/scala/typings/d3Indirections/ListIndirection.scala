@@ -22,7 +22,8 @@ object ListIndirection {
     __obj.asInstanceOf[ListIndirection]
   }
   
-  extension [Self <: ListIndirection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIndirection] (val x: Self) extends AnyVal {
     
     inline def setListIndirection(value: ResourceIndex): Self = StObject.set(x, "listIndirection", value.asInstanceOf[js.Any])
   }

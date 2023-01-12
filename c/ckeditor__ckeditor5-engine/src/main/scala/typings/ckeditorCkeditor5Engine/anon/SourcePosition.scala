@@ -26,7 +26,8 @@ object SourcePosition {
     __obj.asInstanceOf[SourcePosition]
   }
   
-  extension [Self <: SourcePosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourcePosition] (val x: Self) extends AnyVal {
     
     inline def setBaseVersion(value: Double): Self = StObject.set(x, "baseVersion", value.asInstanceOf[js.Any])
     

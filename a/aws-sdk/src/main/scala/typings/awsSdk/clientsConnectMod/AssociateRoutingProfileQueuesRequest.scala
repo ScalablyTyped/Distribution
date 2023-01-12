@@ -32,7 +32,8 @@ object AssociateRoutingProfileQueuesRequest {
     __obj.asInstanceOf[AssociateRoutingProfileQueuesRequest]
   }
   
-  extension [Self <: AssociateRoutingProfileQueuesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateRoutingProfileQueuesRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

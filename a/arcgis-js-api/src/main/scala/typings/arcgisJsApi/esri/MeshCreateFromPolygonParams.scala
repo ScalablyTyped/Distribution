@@ -20,7 +20,8 @@ object MeshCreateFromPolygonParams {
     __obj.asInstanceOf[MeshCreateFromPolygonParams]
   }
   
-  extension [Self <: MeshCreateFromPolygonParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshCreateFromPolygonParams] (val x: Self) extends AnyVal {
     
     inline def setMaterial(value: MeshMaterial): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     

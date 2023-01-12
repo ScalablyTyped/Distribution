@@ -19,7 +19,8 @@ object Ack {
     __obj.asInstanceOf[Ack]
   }
   
-  extension [Self <: Ack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ack] (val x: Self) extends AnyVal {
     
     inline def setAck(value: String): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
     

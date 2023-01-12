@@ -23,7 +23,8 @@ object CloudWatchMetricsDimension {
     __obj.asInstanceOf[CloudWatchMetricsDimension]
   }
   
-  extension [Self <: CloudWatchMetricsDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudWatchMetricsDimension] (val x: Self) extends AnyVal {
     
     inline def setName(value: CloudWatchMetricsDimensionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

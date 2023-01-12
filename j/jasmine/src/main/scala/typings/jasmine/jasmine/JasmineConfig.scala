@@ -66,7 +66,8 @@ object JasmineConfig {
     __obj.asInstanceOf[JasmineConfig]
   }
   
-  extension [Self <: JasmineConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JasmineConfig] (val x: Self) extends AnyVal {
     
     inline def setFailSpecWithNoExpectations(value: Boolean): Self = StObject.set(x, "failSpecWithNoExpectations", value.asInstanceOf[js.Any])
     

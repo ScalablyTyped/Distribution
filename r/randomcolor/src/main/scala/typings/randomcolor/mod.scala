@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[RandomColorOptionsMultiple]
     }
     
-    extension [Self <: RandomColorOptionsMultiple](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomColorOptionsMultiple] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     }
@@ -64,7 +65,8 @@ object mod {
       __obj.asInstanceOf[RandomColorOptionsSingle]
     }
     
-    extension [Self <: RandomColorOptionsSingle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomColorOptionsSingle] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

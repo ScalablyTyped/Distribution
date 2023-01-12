@@ -26,7 +26,8 @@ object TranscodeResult {
     __obj.asInstanceOf[TranscodeResult]
   }
   
-  extension [Self <: TranscodeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranscodeResult] (val x: Self) extends AnyVal {
     
     inline def setFileInfo(value: BasisFileInfo): Self = StObject.set(x, "fileInfo", value.asInstanceOf[js.Any])
     

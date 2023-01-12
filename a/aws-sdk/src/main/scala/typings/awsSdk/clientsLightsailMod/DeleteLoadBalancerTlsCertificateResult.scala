@@ -18,7 +18,8 @@ object DeleteLoadBalancerTlsCertificateResult {
     __obj.asInstanceOf[DeleteLoadBalancerTlsCertificateResult]
   }
   
-  extension [Self <: DeleteLoadBalancerTlsCertificateResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLoadBalancerTlsCertificateResult] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

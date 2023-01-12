@@ -54,7 +54,8 @@ object LocalContextMapView {
     __obj.asInstanceOf[LocalContextMapView]
   }
   
-  extension [Self <: LocalContextMapView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalContextMapView] (val x: Self) extends AnyVal {
     
     inline def setAddListener(value: (String, js.Function) => MapsEventListener): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
     

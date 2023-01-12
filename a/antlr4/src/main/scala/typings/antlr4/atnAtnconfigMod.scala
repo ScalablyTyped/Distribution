@@ -140,7 +140,8 @@ object atnAtnconfigMod {
       __obj.asInstanceOf[ATNConfig]
     }
     
-    extension [Self <: ATNConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ATNConfig] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: Double): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -195,7 +196,8 @@ object atnAtnconfigMod {
       __obj.asInstanceOf[ATNConfigConfig]
     }
     
-    extension [Self <: ATNConfigConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ATNConfigConfig] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: Double): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

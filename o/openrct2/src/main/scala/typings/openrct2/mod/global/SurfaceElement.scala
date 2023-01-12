@@ -52,7 +52,8 @@ object SurfaceElement {
     __obj.asInstanceOf[SurfaceElement]
   }
   
-  extension [Self <: SurfaceElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurfaceElement] (val x: Self) extends AnyVal {
     
     inline def setEdgeStyle(value: Double): Self = StObject.set(x, "edgeStyle", value.asInstanceOf[js.Any])
     

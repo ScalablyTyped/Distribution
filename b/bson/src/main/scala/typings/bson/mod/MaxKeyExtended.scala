@@ -17,7 +17,8 @@ object MaxKeyExtended {
     __obj.asInstanceOf[MaxKeyExtended]
   }
   
-  extension [Self <: MaxKeyExtended](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxKeyExtended] (val x: Self) extends AnyVal {
     
     inline def set$maxKey(value: `1`): Self = StObject.set(x, "$maxKey", value.asInstanceOf[js.Any])
   }

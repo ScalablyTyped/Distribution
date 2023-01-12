@@ -30,7 +30,8 @@ object FitBoundsOptions {
     __obj.asInstanceOf[FitBoundsOptions]
   }
   
-  extension [Self <: FitBoundsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FitBoundsOptions] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

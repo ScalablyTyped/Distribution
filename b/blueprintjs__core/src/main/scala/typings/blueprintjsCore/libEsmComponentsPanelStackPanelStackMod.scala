@@ -83,7 +83,8 @@ object libEsmComponentsPanelStackPanelStackMod {
       __obj.asInstanceOf[IPanelStackProps]
     }
     
-    extension [Self <: IPanelStackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPanelStackProps] (val x: Self) extends AnyVal {
       
       inline def setInitialPanel(value: IPanel[Any]): Self = StObject.set(x, "initialPanel", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object libEsmComponentsPanelStackPanelStackMod {
       __obj.asInstanceOf[IPanelStackState]
     }
     
-    extension [Self <: IPanelStackState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPanelStackState] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: push | pop): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       

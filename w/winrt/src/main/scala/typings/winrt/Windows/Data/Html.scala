@@ -19,7 +19,8 @@ object Html {
       __obj.asInstanceOf[IHtmlUtilities]
     }
     
-    extension [Self <: IHtmlUtilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHtmlUtilities] (val x: Self) extends AnyVal {
       
       inline def setConvertToText(value: String => String): Self = StObject.set(x, "convertToText", js.Any.fromFunction1(value))
     }

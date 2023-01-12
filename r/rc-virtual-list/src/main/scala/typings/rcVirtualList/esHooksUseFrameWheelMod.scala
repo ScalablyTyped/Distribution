@@ -37,7 +37,8 @@ object esHooksUseFrameWheelMod {
       __obj.asInstanceOf[FireFoxDOMMouseScrollEvent]
     }
     
-    extension [Self <: FireFoxDOMMouseScrollEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FireFoxDOMMouseScrollEvent] (val x: Self) extends AnyVal {
       
       inline def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       

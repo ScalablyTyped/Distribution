@@ -83,7 +83,8 @@ object CellBorderCollection {
     __obj.asInstanceOf[CellBorderCollection]
   }
   
-  extension [Self <: CellBorderCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellBorderCollection] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: CellBorder): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

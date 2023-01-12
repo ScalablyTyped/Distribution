@@ -17,7 +17,8 @@ object PickContentsJsonimages {
     __obj.asInstanceOf[PickContentsJsonimages]
   }
   
-  extension [Self <: PickContentsJsonimages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickContentsJsonimages] (val x: Self) extends AnyVal {
     
     inline def setImages(value: js.Array[ContentsJsonImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     

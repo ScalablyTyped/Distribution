@@ -21,7 +21,8 @@ object AggrFunc {
     __obj.asInstanceOf[AggrFunc]
   }
   
-  extension [Self <: AggrFunc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggrFunc] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: ColumnRef | AggrFunc | Star): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

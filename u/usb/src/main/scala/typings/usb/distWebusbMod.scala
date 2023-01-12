@@ -83,7 +83,8 @@ object distWebusbMod {
       __obj.asInstanceOf[USBOptions]
     }
     
-    extension [Self <: USBOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: USBOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowAllDevices(value: Boolean): Self = StObject.set(x, "allowAllDevices", value.asInstanceOf[js.Any])
       

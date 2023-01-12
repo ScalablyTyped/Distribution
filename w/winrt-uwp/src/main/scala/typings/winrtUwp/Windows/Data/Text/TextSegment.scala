@@ -20,7 +20,8 @@ object TextSegment {
     __obj.asInstanceOf[TextSegment]
   }
   
-  extension [Self <: TextSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextSegment] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

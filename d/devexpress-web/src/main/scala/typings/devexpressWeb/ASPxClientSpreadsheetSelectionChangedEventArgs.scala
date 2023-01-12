@@ -23,7 +23,8 @@ object ASPxClientSpreadsheetSelectionChangedEventArgs {
     __obj.asInstanceOf[ASPxClientSpreadsheetSelectionChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientSpreadsheetSelectionChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSpreadsheetSelectionChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setSelection(value: ASPxClientSpreadsheetSelection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }

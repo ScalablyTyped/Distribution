@@ -21,7 +21,8 @@ object VerifyInvoiceAPIResult {
     __obj.asInstanceOf[VerifyInvoiceAPIResult]
   }
   
-  extension [Self <: VerifyInvoiceAPIResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyInvoiceAPIResult] (val x: Self) extends AnyVal {
     
     inline def setAppID(value: String): Self = StObject.set(x, "AppID", value.asInstanceOf[js.Any])
     

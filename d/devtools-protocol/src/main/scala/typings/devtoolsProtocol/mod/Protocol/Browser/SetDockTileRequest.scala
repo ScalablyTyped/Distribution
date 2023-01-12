@@ -20,7 +20,8 @@ object SetDockTileRequest {
     __obj.asInstanceOf[SetDockTileRequest]
   }
   
-  extension [Self <: SetDockTileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetDockTileRequest] (val x: Self) extends AnyVal {
     
     inline def setBadgeLabel(value: String): Self = StObject.set(x, "badgeLabel", value.asInstanceOf[js.Any])
     

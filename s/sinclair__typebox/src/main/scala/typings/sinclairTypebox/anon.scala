@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[`2`]
     }
     
-    extension [Self <: `2`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
       
       inline def setConst(value: typings.sinclairTypebox.sinclairTypeboxInts.`1`): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
     }
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Const]
     }
     
-    extension [Self <: Const](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Const] (val x: Self) extends AnyVal {
       
       inline def setConst(value: typings.sinclairTypebox.sinclairTypeboxInts.`0`): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
     }
@@ -62,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Params[P]]
     }
     
-    extension [Self <: Params[?], P /* <: js.Array[Any] */](x: Self & Params[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params[?], P /* <: js.Array[Any] */] (val x: Self & Params[P]) extends AnyVal {
       
       inline def setParams(value: P): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }

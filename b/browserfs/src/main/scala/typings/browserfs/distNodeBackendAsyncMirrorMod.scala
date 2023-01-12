@@ -223,7 +223,8 @@ object distNodeBackendAsyncMirrorMod {
       __obj.asInstanceOf[AsyncMirrorOptions]
     }
     
-    extension [Self <: AsyncMirrorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncMirrorOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: FileSystem): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

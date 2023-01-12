@@ -85,7 +85,8 @@ object componentsModalModalMod {
       __obj.asInstanceOf[Modal]
     }
     
-    extension [Self <: Modal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Modal] (val x: Self) extends AnyVal {
       
       inline def setCreatedByLauncher(value: Event => Unit): Self = StObject.set(x, "createdByLauncher", js.Any.fromFunction1(value))
       
@@ -152,7 +153,8 @@ object componentsModalModalMod {
       __obj.asInstanceOf[ModalOptions]
     }
     
-    extension [Self <: ModalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalOptions] (val x: Self) extends AnyVal {
       
       inline def setAttribInitTarget(value: String): Self = StObject.set(x, "attribInitTarget", value.asInstanceOf[js.Any])
       

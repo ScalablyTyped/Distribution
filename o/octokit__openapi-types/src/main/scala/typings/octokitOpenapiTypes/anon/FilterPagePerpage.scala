@@ -28,7 +28,8 @@ object FilterPagePerpage {
     __obj.asInstanceOf[FilterPagePerpage]
   }
   
-  extension [Self <: FilterPagePerpage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterPagePerpage] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: latest | all): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

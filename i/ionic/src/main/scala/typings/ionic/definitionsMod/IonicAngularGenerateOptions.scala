@@ -20,7 +20,8 @@ object IonicAngularGenerateOptions {
     __obj.asInstanceOf[IonicAngularGenerateOptions]
   }
   
-  extension [Self <: IonicAngularGenerateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IonicAngularGenerateOptions] (val x: Self) extends AnyVal {
     
     inline def setConstants(value: Boolean): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
     

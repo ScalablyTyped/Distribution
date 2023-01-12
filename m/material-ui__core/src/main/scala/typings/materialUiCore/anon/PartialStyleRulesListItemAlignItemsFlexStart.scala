@@ -25,7 +25,8 @@ object PartialStyleRulesListItemAlignItemsFlexStart {
     __obj.asInstanceOf[PartialStyleRulesListItemAlignItemsFlexStart]
   }
   
-  extension [Self <: PartialStyleRulesListItemAlignItemsFlexStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesListItemAlignItemsFlexStart] (val x: Self) extends AnyVal {
     
     inline def setAlignItemsFlexStart(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

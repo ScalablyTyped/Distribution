@@ -15,7 +15,8 @@ object PinMatrixAck {
     __obj.asInstanceOf[PinMatrixAck]
   }
   
-  extension [Self <: PinMatrixAck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinMatrixAck] (val x: Self) extends AnyVal {
     
     inline def setPin(value: String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
   }

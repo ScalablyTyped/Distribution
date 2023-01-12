@@ -17,7 +17,8 @@ object LinkInnerProps {
     __obj.asInstanceOf[LinkInnerProps]
   }
   
-  extension [Self <: LinkInnerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkInnerProps] (val x: Self) extends AnyVal {
     
     inline def setContainsIcon(value: Boolean): Self = StObject.set(x, "containsIcon", value.asInstanceOf[js.Any])
     

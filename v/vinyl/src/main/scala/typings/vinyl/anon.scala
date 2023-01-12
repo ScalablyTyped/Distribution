@@ -59,7 +59,8 @@ object anon {
       __obj.asInstanceOf[ConstructorOptionscontent]
     }
     
-    extension [Self <: ConstructorOptionscontent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptionscontent] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object anon {
       __obj.asInstanceOf[ConstructorOptionscontentBase]
     }
     
-    extension [Self <: ConstructorOptionscontentBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptionscontentBase] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -221,7 +223,8 @@ object anon {
       __obj.asInstanceOf[ConstructorOptionscontentDictcustomOption]
     }
     
-    extension [Self <: ConstructorOptionscontentDictcustomOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptionscontentDictcustomOption] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -266,7 +269,8 @@ object anon {
       __obj.asInstanceOf[Contents]
     }
     
-    extension [Self <: Contents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contents] (val x: Self) extends AnyVal {
       
       inline def setContents(value: Boolean): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
@@ -292,7 +296,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

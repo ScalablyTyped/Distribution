@@ -43,7 +43,8 @@ object InvocationRequest {
     __obj.asInstanceOf[InvocationRequest]
   }
   
-  extension [Self <: InvocationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvocationRequest] (val x: Self) extends AnyVal {
     
     inline def setClientContext(value: String): Self = StObject.set(x, "ClientContext", value.asInstanceOf[js.Any])
     

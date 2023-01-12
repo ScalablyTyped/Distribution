@@ -23,7 +23,8 @@ object GrpcTimeout {
     __obj.asInstanceOf[GrpcTimeout]
   }
   
-  extension [Self <: GrpcTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrpcTimeout] (val x: Self) extends AnyVal {
     
     inline def setIdle(value: Duration): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ITemporarySearchView {
     __obj.asInstanceOf[ITemporarySearchView]
   }
   
-  extension [Self <: ITemporarySearchView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITemporarySearchView] (val x: Self) extends AnyVal {
     
     inline def setBaseSearchConditions(value: ISearchConditions): Self = StObject.set(x, "BaseSearchConditions", value.asInstanceOf[js.Any])
     

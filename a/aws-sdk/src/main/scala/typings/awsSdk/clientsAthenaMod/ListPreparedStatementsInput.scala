@@ -28,7 +28,8 @@ object ListPreparedStatementsInput {
     __obj.asInstanceOf[ListPreparedStatementsInput]
   }
   
-  extension [Self <: ListPreparedStatementsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPreparedStatementsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxPreparedStatementsCount): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

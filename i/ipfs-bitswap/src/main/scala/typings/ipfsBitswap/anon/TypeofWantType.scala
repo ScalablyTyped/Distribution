@@ -20,7 +20,8 @@ object TypeofWantType {
     __obj.asInstanceOf[TypeofWantType]
   }
   
-  extension [Self <: TypeofWantType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofWantType] (val x: Self) extends AnyVal {
     
     inline def setBlock(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Message.Wantlist.WantType */ Any

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[ModifyPdfDocument]
     }
     
-    extension [Self <: ModifyPdfDocument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModifyPdfDocument] (val x: Self) extends AnyVal {
       
       inline def setModifyPdfDocument(value: /* pdfDocument */ Any => Unit): Self = StObject.set(x, "modifyPdfDocument", js.Any.fromFunction1(value))
       

@@ -19,7 +19,8 @@ object ListRepricingRuleReportsResponse {
     __obj.asInstanceOf[ListRepricingRuleReportsResponse]
   }
   
-  extension [Self <: ListRepricingRuleReportsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRepricingRuleReportsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object DataChange {
     __obj.asInstanceOf[DataChange[TRowData, TKey]]
   }
   
-  extension [Self <: DataChange[?, ?], TRowData, TKey](x: Self & (DataChange[TRowData, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataChange[?, ?], TRowData, TKey] (val x: Self & (DataChange[TRowData, TKey])) extends AnyVal {
     
     inline def setData(value: DeepPartial[TRowData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

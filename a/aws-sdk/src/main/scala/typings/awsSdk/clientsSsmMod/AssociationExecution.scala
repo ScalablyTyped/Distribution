@@ -60,7 +60,8 @@ object AssociationExecution {
     __obj.asInstanceOf[AssociationExecution]
   }
   
-  extension [Self <: AssociationExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociationExecution] (val x: Self) extends AnyVal {
     
     inline def setAlarmConfiguration(value: AlarmConfiguration): Self = StObject.set(x, "AlarmConfiguration", value.asInstanceOf[js.Any])
     

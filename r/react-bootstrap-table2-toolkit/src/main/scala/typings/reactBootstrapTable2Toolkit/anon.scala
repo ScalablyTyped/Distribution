@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Bootstrap4]
     }
     
-    extension [Self <: Bootstrap4](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bootstrap4] (val x: Self) extends AnyVal {
       
       inline def setBootstrap4(value: Boolean): Self = StObject.set(x, "bootstrap4", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Columns]
     }
     
-    extension [Self <: Columns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[ColumnDescription[Any, Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object anon {
       __obj.asInstanceOf[OnExport]
     }
     
-    extension [Self <: OnExport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnExport] (val x: Self) extends AnyVal {
       
       inline def setOnExport(value: () => Unit): Self = StObject.set(x, "onExport", js.Any.fromFunction0(value))
     }

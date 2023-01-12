@@ -35,7 +35,8 @@ object CIMMarkerPlacementOnVertices {
     __obj.asInstanceOf[CIMMarkerPlacementOnVertices]
   }
   
-  extension [Self <: CIMMarkerPlacementOnVertices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMarkerPlacementOnVertices] (val x: Self) extends AnyVal {
     
     inline def setPlaceOnControlPoints(value: Boolean): Self = StObject.set(x, "placeOnControlPoints", value.asInstanceOf[js.Any])
     

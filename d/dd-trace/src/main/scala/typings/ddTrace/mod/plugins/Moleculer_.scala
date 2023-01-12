@@ -23,7 +23,8 @@ object Moleculer_ {
     __obj.asInstanceOf[Moleculer_]
   }
   
-  extension [Self <: Moleculer_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Moleculer_] (val x: Self) extends AnyVal {
     
     inline def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

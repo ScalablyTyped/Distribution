@@ -49,7 +49,8 @@ object TemplateSyncConfig {
     __obj.asInstanceOf[TemplateSyncConfig]
   }
   
-  extension [Self <: TemplateSyncConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateSyncConfig] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: GitBranchName): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

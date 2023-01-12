@@ -93,7 +93,8 @@ object libModelsCreateRoomMod {
       __obj.asInstanceOf[RoomCreateOptions]
     }
     
-    extension [Self <: RoomCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setCreation_content(value: Omit[CreateEventContent, creator]): Self = StObject.set(x, "creation_content", value.asInstanceOf[js.Any])
       

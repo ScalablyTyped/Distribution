@@ -60,7 +60,8 @@ object KnownStatsPrinterContext {
     __obj.asInstanceOf[KnownStatsPrinterContext]
   }
   
-  extension [Self <: KnownStatsPrinterContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnownStatsPrinterContext] (val x: Self) extends AnyVal {
     
     inline def setAsset(value: StatsAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object TooltipProps {
     __obj.asInstanceOf[TooltipProps]
   }
   
-  extension [Self <: TooltipProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

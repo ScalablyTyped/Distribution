@@ -268,7 +268,8 @@ object segmentsMshDotsegmentMod {
       __obj.asInstanceOf[MSH]
     }
     
-    extension [Self <: MSH](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MSH] (val x: Self) extends AnyVal {
       
       inline def setMSHDot1(value: String): Self = StObject.set(x, "MSH.1", value.asInstanceOf[js.Any])
       

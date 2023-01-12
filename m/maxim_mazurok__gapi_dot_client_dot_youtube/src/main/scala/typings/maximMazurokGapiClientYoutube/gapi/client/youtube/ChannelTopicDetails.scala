@@ -19,7 +19,8 @@ object ChannelTopicDetails {
     __obj.asInstanceOf[ChannelTopicDetails]
   }
   
-  extension [Self <: ChannelTopicDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelTopicDetails] (val x: Self) extends AnyVal {
     
     inline def setTopicCategories(value: js.Array[String]): Self = StObject.set(x, "topicCategories", value.asInstanceOf[js.Any])
     

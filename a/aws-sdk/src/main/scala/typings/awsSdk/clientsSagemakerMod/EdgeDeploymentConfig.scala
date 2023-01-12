@@ -18,7 +18,8 @@ object EdgeDeploymentConfig {
     __obj.asInstanceOf[EdgeDeploymentConfig]
   }
   
-  extension [Self <: EdgeDeploymentConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeDeploymentConfig] (val x: Self) extends AnyVal {
     
     inline def setFailureHandlingPolicy(value: FailureHandlingPolicy): Self = StObject.set(x, "FailureHandlingPolicy", value.asInstanceOf[js.Any])
   }

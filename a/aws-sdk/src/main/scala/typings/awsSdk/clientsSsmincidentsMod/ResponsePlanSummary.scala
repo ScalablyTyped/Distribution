@@ -28,7 +28,8 @@ object ResponsePlanSummary {
     __obj.asInstanceOf[ResponsePlanSummary]
   }
   
-  extension [Self <: ResponsePlanSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsePlanSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

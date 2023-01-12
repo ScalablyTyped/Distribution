@@ -21,7 +21,8 @@ object distTs3Dot9ClientPreviewTypes60Mod {
       __obj.asInstanceOf[HtmlFramework]
     }
     
-    extension [Self <: HtmlFramework](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlFramework] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: HTMLElement): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

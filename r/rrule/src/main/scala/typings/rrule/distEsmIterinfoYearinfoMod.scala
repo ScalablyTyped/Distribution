@@ -54,7 +54,8 @@ object distEsmIterinfoYearinfoMod {
       __obj.asInstanceOf[YearInfo]
     }
     
-    extension [Self <: YearInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YearInfo] (val x: Self) extends AnyVal {
       
       inline def setMdaymask(value: js.Array[Double]): Self = StObject.set(x, "mdaymask", value.asInstanceOf[js.Any])
       

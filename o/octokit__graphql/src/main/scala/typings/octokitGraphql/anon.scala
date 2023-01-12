@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Extensions]
     }
     
-    extension [Self <: Extensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extensions] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: StringDictionary[Any]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       

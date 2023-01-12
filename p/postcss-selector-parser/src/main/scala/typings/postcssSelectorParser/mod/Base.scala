@@ -98,7 +98,8 @@ object Base {
     __obj.asInstanceOf[Base[Value, ParentType]]
   }
   
-  extension [Self <: Base[?, ?], Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */](x: Self & (Base[Value, ParentType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Base[?, ?], Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */] (val x: Self & (Base[Value, ParentType])) extends AnyVal {
     
     inline def setAppendToPropertyAndEscape(value: (String, Any, String) => Unit): Self = StObject.set(x, "appendToPropertyAndEscape", js.Any.fromFunction3(value))
     

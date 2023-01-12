@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Inject]
     }
     
-    extension [Self <: Inject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inject] (val x: Self) extends AnyVal {
       
       inline def setInject(value: StringDictionary[Any]): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Pathname]
     }
     
-    extension [Self <: Pathname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pathname] (val x: Self) extends AnyVal {
       
       inline def setPathname(value: typings.history.mod.Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
     }

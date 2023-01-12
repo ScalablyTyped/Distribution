@@ -50,7 +50,8 @@ object Mail {
       __obj.asInstanceOf[MailAdvancedParameters]
     }
     
-    extension [Self <: MailAdvancedParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailAdvancedParameters] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: js.Array[BlobSource]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       

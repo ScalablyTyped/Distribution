@@ -40,7 +40,8 @@ object Population {
     __obj.asInstanceOf[Population]
   }
   
-  extension [Self <: Population](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Population] (val x: Self) extends AnyVal {
     
     inline def setAgeCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "ageCodeableConcept", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object RequestGroupActionRelatedAction {
     __obj.asInstanceOf[RequestGroupActionRelatedAction]
   }
   
-  extension [Self <: RequestGroupActionRelatedAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestGroupActionRelatedAction] (val x: Self) extends AnyVal {
     
     inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     

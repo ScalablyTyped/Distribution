@@ -18,7 +18,8 @@ object GetExtConfigSyncRes {
     __obj.asInstanceOf[GetExtConfigSyncRes]
   }
   
-  extension [Self <: GetExtConfigSyncRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetExtConfigSyncRes] (val x: Self) extends AnyVal {
     
     inline def setExtConfig(value: Any): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
     

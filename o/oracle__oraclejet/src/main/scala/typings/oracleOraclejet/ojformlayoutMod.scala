@@ -1278,7 +1278,8 @@ object ojformlayoutMod {
       __obj.asInstanceOf[ojFormLayoutEventMap]
     }
     
-    extension [Self <: ojFormLayoutEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojFormLayoutEventMap] (val x: Self) extends AnyVal {
       
       inline def setDirectionChanged(value: JetElementCustomEvent[column | row]): Self = StObject.set(x, "directionChanged", value.asInstanceOf[js.Any])
       
@@ -1319,7 +1320,8 @@ object ojformlayoutMod {
       __obj.asInstanceOf[ojFormLayoutSettableProperties]
     }
     
-    extension [Self <: ojFormLayoutSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojFormLayoutSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: column | row): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -1355,7 +1357,8 @@ object ojformlayoutMod {
       __obj.asInstanceOf[ojFormLayoutSettablePropertiesLenient]
     }
     
-    extension [Self <: ojFormLayoutSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojFormLayoutSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: column | row): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       

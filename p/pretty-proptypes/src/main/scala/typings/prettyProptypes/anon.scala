@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Component]
     }
     
-    extension [Self <: Component](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: Obj | Inter): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[PartialComponents]
     }
     
-    extension [Self <: PartialComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialComponents] (val x: Self) extends AnyVal {
       
       inline def setButton(value: ComponentType[Any]): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
       

@@ -106,7 +106,8 @@ object Modifier {
          with Position
   }
   
-  extension [Self <: Modifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Modifier] (val x: Self) extends AnyVal {
     
     inline def setAlignSubNotesWithNote(value: (js.Array[Note], Note) => Unit): Self = StObject.set(x, "alignSubNotesWithNote", js.Any.fromFunction2(value))
     

@@ -888,7 +888,8 @@ object sapMFeedInputMod {
       __obj.asInstanceOf[FeedInputSettings]
     }
     
-    extension [Self <: FeedInputSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedInputSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelForPicture(value: String | PropertyBindingInfo): Self = StObject.set(x, "ariaLabelForPicture", value.asInstanceOf[js.Any])
       

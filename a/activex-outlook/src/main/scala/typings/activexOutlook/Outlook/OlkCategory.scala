@@ -42,7 +42,8 @@ object OlkCategory {
     __obj.asInstanceOf[OlkCategory]
   }
   
-  extension [Self <: OlkCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlkCategory] (val x: Self) extends AnyVal {
     
     inline def setAutoSize(value: Boolean): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
     

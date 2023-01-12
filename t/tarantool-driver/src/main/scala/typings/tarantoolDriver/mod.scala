@@ -111,7 +111,8 @@ object mod {
       __obj.asInstanceOf[TarantoolOptions]
     }
     
-    extension [Self <: TarantoolOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TarantoolOptions] (val x: Self) extends AnyVal {
       
       inline def setBeforeReserve(value: Double): Self = StObject.set(x, "beforeReserve", value.asInstanceOf[js.Any])
       

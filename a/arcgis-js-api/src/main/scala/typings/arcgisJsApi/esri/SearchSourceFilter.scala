@@ -27,7 +27,8 @@ object SearchSourceFilter {
     __obj.asInstanceOf[SearchSourceFilter]
   }
   
-  extension [Self <: SearchSourceFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSourceFilter] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: Geometry_): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

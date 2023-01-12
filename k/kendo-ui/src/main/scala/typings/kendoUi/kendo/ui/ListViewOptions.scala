@@ -48,7 +48,8 @@ object ListViewOptions {
     __obj.asInstanceOf[ListViewOptions]
   }
   
-  extension [Self <: ListViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListViewOptions] (val x: Self) extends AnyVal {
     
     inline def setAltTemplate(value: js.Function): Self = StObject.set(x, "altTemplate", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object typesJobParametersMod {
       __obj.asInstanceOf[JobParameters]
     }
     
-    extension [Self <: JobParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JobParameters] (val x: Self) extends AnyVal {
       
       inline def setArchiveId(value: String): Self = StObject.set(x, "ArchiveId", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object typesJobParametersMod {
       __obj.asInstanceOf[UnmarshalledJobParameters]
     }
     
-    extension [Self <: UnmarshalledJobParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledJobParameters] (val x: Self) extends AnyVal {
       
       inline def setInventoryRetrievalParameters(value: UnmarshalledInventoryRetrievalJobInput): Self = StObject.set(x, "InventoryRetrievalParameters", value.asInstanceOf[js.Any])
       

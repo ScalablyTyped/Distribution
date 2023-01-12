@@ -38,7 +38,8 @@ object ListTaskTemplatesRequest {
     __obj.asInstanceOf[ListTaskTemplatesRequest]
   }
   
-  extension [Self <: ListTaskTemplatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTaskTemplatesRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

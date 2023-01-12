@@ -21,7 +21,8 @@ object PeerMultiaddrsChangeData {
     __obj.asInstanceOf[PeerMultiaddrsChangeData]
   }
   
-  extension [Self <: PeerMultiaddrsChangeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerMultiaddrsChangeData] (val x: Self) extends AnyVal {
     
     inline def setMultiaddrs(value: js.Array[Multiaddr_]): Self = StObject.set(x, "multiaddrs", value.asInstanceOf[js.Any])
     

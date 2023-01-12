@@ -18,7 +18,8 @@ object PartnerWatermarking {
     __obj.asInstanceOf[PartnerWatermarking]
   }
   
-  extension [Self <: PartnerWatermarking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartnerWatermarking] (val x: Self) extends AnyVal {
     
     inline def setNexguardFileMarkerSettings(value: NexGuardFileMarkerSettings): Self = StObject.set(x, "NexguardFileMarkerSettings", value.asInstanceOf[js.Any])
     

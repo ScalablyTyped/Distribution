@@ -18,7 +18,8 @@ object ExportingLocation {
     __obj.asInstanceOf[ExportingLocation]
   }
   
-  extension [Self <: ExportingLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportingLocation] (val x: Self) extends AnyVal {
     
     inline def setS3Exporting(value: S3ExportingLocation): Self = StObject.set(x, "S3Exporting", value.asInstanceOf[js.Any])
     

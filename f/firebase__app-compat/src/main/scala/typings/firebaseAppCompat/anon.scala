@@ -46,7 +46,8 @@ object anon {
       __obj.asInstanceOf[AppName]
     }
     
-    extension [Self <: AppName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppName] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     }
@@ -156,7 +157,8 @@ object anon {
       __obj.asInstanceOf[Dictindex]
     }
     
-    extension [Self <: Dictindex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictindex] (val x: Self) extends AnyVal {
       
       inline def setRegisterComponent(value: Component[Any] => FirebaseServiceNamespace[FirebaseService] | Null): Self = StObject.set(x, "registerComponent", js.Any.fromFunction1(value))
       
@@ -204,7 +206,8 @@ object anon {
       __obj.asInstanceOf[RegisterComponent]
     }
     
-    extension [Self <: RegisterComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterComponent] (val x: Self) extends AnyVal {
       
       inline def setRegisterComponent(
         value: Component[Any] => typings.firebaseAppCompat.distAppCompatMod.FirebaseServiceNamespace[typings.firebaseAppCompat.distAppCompatMod.FirebaseService] | Null
@@ -254,7 +257,8 @@ object anon {
       __obj.asInstanceOf[RemoveApp]
     }
     
-    extension [Self <: RemoveApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveApp] (val x: Self) extends AnyVal {
       
       inline def setRegisterComponent(
         value: Component[Any] => typings.firebaseAppCompat.distEsmSrcTypesMod.FirebaseServiceNamespace[typings.firebaseAppCompat.distEsmSrcTypesMod.FirebaseService] | Null
@@ -304,7 +308,8 @@ object anon {
       __obj.asInstanceOf[UseAsService]
     }
     
-    extension [Self <: UseAsService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseAsService] (val x: Self) extends AnyVal {
       
       inline def setRegisterComponent(
         value: Component[Any] => typings.firebaseAppCompat.distSrcTypesMod.FirebaseServiceNamespace[typings.firebaseAppCompat.distSrcTypesMod.FirebaseService] | Null

@@ -31,7 +31,8 @@ object MerchantAuthenticationTypeConstructor {
     __obj.asInstanceOf[MerchantAuthenticationTypeConstructor]
   }
   
-  extension [Self <: MerchantAuthenticationTypeConstructor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MerchantAuthenticationTypeConstructor] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

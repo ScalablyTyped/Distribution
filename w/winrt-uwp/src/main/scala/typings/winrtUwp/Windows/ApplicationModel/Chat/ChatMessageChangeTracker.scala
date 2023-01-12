@@ -26,7 +26,8 @@ object ChatMessageChangeTracker {
     __obj.asInstanceOf[ChatMessageChangeTracker]
   }
   
-  extension [Self <: ChatMessageChangeTracker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMessageChangeTracker] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     

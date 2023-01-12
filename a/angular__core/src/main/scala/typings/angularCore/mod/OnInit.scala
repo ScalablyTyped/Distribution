@@ -22,7 +22,8 @@ object OnInit {
     __obj.asInstanceOf[OnInit]
   }
   
-  extension [Self <: OnInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnInit] (val x: Self) extends AnyVal {
     
     inline def setNgOnInit(value: () => Unit): Self = StObject.set(x, "ngOnInit", js.Any.fromFunction0(value))
   }

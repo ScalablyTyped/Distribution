@@ -31,7 +31,8 @@ object GoogleCloudRecommendationengineV1beta1ImportMetadata {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ImportMetadata]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1ImportMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ImportMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

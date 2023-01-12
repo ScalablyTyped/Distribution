@@ -443,7 +443,8 @@ object typesDockpanelMod {
         __obj.asInstanceOf[IEdges]
       }
       
-      extension [Self <: IEdges](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IEdges] (val x: Self) extends AnyVal {
         
         inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         
@@ -541,7 +542,8 @@ object typesDockpanelMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setAddButtonEnabled(value: Boolean): Self = StObject.set(x, "addButtonEnabled", value.asInstanceOf[js.Any])
         
@@ -627,7 +629,8 @@ object typesDockpanelMod {
         __obj.asInstanceOf[IOverlay]
       }
       
-      extension [Self <: IOverlay](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOverlay] (val x: Self) extends AnyVal {
         
         inline def setHide(value: Double => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
         
@@ -669,7 +672,8 @@ object typesDockpanelMod {
         __obj.asInstanceOf[IOverlayGeometry]
       }
       
-      extension [Self <: IOverlayGeometry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOverlayGeometry] (val x: Self) extends AnyVal {
         
         inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         

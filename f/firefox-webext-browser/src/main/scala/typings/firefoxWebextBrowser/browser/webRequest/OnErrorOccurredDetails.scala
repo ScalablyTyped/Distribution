@@ -84,7 +84,8 @@ object OnErrorOccurredDetails {
     __obj.asInstanceOf[OnErrorOccurredDetails]
   }
   
-  extension [Self <: OnErrorOccurredDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnErrorOccurredDetails] (val x: Self) extends AnyVal {
     
     inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
     

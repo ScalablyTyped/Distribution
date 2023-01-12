@@ -23,7 +23,8 @@ object DynamicPartitioningConfiguration {
     __obj.asInstanceOf[DynamicPartitioningConfiguration]
   }
   
-  extension [Self <: DynamicPartitioningConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicPartitioningConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: BooleanObject): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

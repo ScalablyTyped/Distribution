@@ -43,7 +43,8 @@ object ShoppingAdsProgramStatusRegionStatus {
     __obj.asInstanceOf[ShoppingAdsProgramStatusRegionStatus]
   }
   
-  extension [Self <: ShoppingAdsProgramStatusRegionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShoppingAdsProgramStatusRegionStatus] (val x: Self) extends AnyVal {
     
     inline def setDisapprovalDate(value: String): Self = StObject.set(x, "disapprovalDate", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object MapFilter {
     __obj.asInstanceOf[MapFilter]
   }
   
-  extension [Self <: MapFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapFilter] (val x: Self) extends AnyVal {
     
     inline def setComparison(value: MapFilterComparison): Self = StObject.set(x, "Comparison", value.asInstanceOf[js.Any])
     

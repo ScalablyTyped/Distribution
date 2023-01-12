@@ -56,7 +56,8 @@ object anon {
       __obj.asInstanceOf[PartialFormatsInit]
     }
     
-    extension [Self <: PartialFormatsInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFormatsInit] (val x: Self) extends AnyVal {
       
       inline def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

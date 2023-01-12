@@ -155,7 +155,8 @@ object NutritionIntake {
     __obj.asInstanceOf[NutritionIntake]
   }
   
-  extension [Self <: NutritionIntake](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NutritionIntake] (val x: Self) extends AnyVal {
     
     inline def setBasedOn(value: js.Array[Reference]): Self = StObject.set(x, "basedOn", value.asInstanceOf[js.Any])
     

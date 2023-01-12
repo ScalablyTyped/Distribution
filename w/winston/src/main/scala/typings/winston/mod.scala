@@ -694,7 +694,8 @@ object mod {
       __obj.asInstanceOf[LogEntry]
     }
     
-    extension [Self <: LogEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogEntry] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -743,7 +744,8 @@ object mod {
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    extension [Self <: LoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultMeta(value: Any): Self = StObject.set(x, "defaultMeta", value.asInstanceOf[js.Any])
       
@@ -816,7 +818,8 @@ object mod {
       __obj.asInstanceOf[QueryOptions]
     }
     
-    extension [Self <: QueryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
       
       inline def setFields(value: Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object VmCreationConfig {
     __obj.asInstanceOf[VmCreationConfig]
   }
   
-  extension [Self <: VmCreationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VmCreationConfig] (val x: Self) extends AnyVal {
     
     inline def setSubnet(value: String): Self = StObject.set(x, "subnet", value.asInstanceOf[js.Any])
     

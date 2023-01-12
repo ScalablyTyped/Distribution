@@ -23,7 +23,8 @@ object DeleteCustomPluginResponse {
     __obj.asInstanceOf[DeleteCustomPluginResponse]
   }
   
-  extension [Self <: DeleteCustomPluginResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCustomPluginResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomPluginArn(value: string): Self = StObject.set(x, "customPluginArn", value.asInstanceOf[js.Any])
     

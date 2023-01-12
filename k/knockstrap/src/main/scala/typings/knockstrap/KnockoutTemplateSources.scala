@@ -16,7 +16,8 @@ object KnockoutTemplateSources {
     __obj.asInstanceOf[KnockoutTemplateSources]
   }
   
-  extension [Self <: KnockoutTemplateSources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutTemplateSources] (val x: Self) extends AnyVal {
     
     inline def setStringTemplate(value: Instantiable): Self = StObject.set(x, "stringTemplate", value.asInstanceOf[js.Any])
   }

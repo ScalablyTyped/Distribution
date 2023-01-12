@@ -28,7 +28,8 @@ object ASPxClientReportDesignerComponentAddedEventArgs {
     __obj.asInstanceOf[ASPxClientReportDesignerComponentAddedEventArgs]
   }
   
-  extension [Self <: ASPxClientReportDesignerComponentAddedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientReportDesignerComponentAddedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setModel(value: Any): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     

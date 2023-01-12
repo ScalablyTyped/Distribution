@@ -120,7 +120,8 @@ object PercentFormatter {
     __obj.asInstanceOf[PercentFormatter]
   }
   
-  extension [Self <: PercentFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PercentFormatter] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     

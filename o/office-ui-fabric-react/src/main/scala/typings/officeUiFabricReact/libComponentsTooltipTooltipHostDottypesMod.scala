@@ -65,7 +65,8 @@ object libComponentsTooltipTooltipHostDottypesMod {
       __obj.asInstanceOf[ITooltipHost]
     }
     
-    extension [Self <: ITooltipHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipHost] (val x: Self) extends AnyVal {
       
       inline def setDismiss(value: () => Unit): Self = StObject.set(x, "dismiss", js.Any.fromFunction0(value))
       
@@ -168,7 +169,8 @@ object libComponentsTooltipTooltipHostDottypesMod {
       __obj.asInstanceOf[ITooltipHostProps]
     }
     
-    extension [Self <: ITooltipHostProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipHostProps] (val x: Self) extends AnyVal {
       
       inline def setCalloutProps(value: ICalloutProps): Self = StObject.set(x, "calloutProps", value.asInstanceOf[js.Any])
       
@@ -247,7 +249,8 @@ object libComponentsTooltipTooltipHostDottypesMod {
       __obj.asInstanceOf[ITooltipHostStyleProps]
     }
     
-    extension [Self <: ITooltipHostStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipHostStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -271,7 +274,8 @@ object libComponentsTooltipTooltipHostDottypesMod {
       __obj.asInstanceOf[ITooltipHostStyles]
     }
     
-    extension [Self <: ITooltipHostStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipHostStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

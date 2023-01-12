@@ -20,7 +20,8 @@ object ContentView {
     __obj.asInstanceOf[ContentView]
   }
   
-  extension [Self <: ContentView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentView] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: JSXChildren[Widget[Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -126,7 +126,8 @@ object mod {
       __obj.asInstanceOf[RandomOptions]
     }
     
-    extension [Self <: RandomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomOptions] (val x: Self) extends AnyVal {
       
       inline def setRandom(value: InputBuffer): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object mod {
       __obj.asInstanceOf[RngOptions]
     }
     
-    extension [Self <: RngOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RngOptions] (val x: Self) extends AnyVal {
       
       inline def setRng(value: () => InputBuffer): Self = StObject.set(x, "rng", js.Any.fromFunction0(value))
       
@@ -172,7 +174,8 @@ object mod {
       __obj.asInstanceOf[V1BaseOptions]
     }
     
-    extension [Self <: V1BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V1BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setClockseq(value: Double): Self = StObject.set(x, "clockseq", value.asInstanceOf[js.Any])
       
@@ -286,7 +289,8 @@ object mod {
       __obj.asInstanceOf[v3Static]
     }
     
-    extension [Self <: v3Static](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: v3Static] (val x: Self) extends AnyVal {
       
       inline def setDNS(value: String): Self = StObject.set(x, "DNS", value.asInstanceOf[js.Any])
       
@@ -328,7 +332,8 @@ object mod {
       __obj.asInstanceOf[v5Static]
     }
     
-    extension [Self <: v5Static](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: v5Static] (val x: Self) extends AnyVal {
       
       inline def setDNS(value: String): Self = StObject.set(x, "DNS", value.asInstanceOf[js.Any])
       

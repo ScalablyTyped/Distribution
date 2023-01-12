@@ -33,7 +33,8 @@ object libComponentsSkeletonTextSkeletonTextMod extends Shortcut {
       __obj.asInstanceOf[SkeletonTextProps]
     }
     
-    extension [Self <: SkeletonTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonTextProps] (val x: Self) extends AnyVal {
       
       inline def setHeading(value: Boolean): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
       

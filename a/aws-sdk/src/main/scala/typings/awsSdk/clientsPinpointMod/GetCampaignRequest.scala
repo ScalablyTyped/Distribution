@@ -23,7 +23,8 @@ object GetCampaignRequest {
     __obj.asInstanceOf[GetCampaignRequest]
   }
   
-  extension [Self <: GetCampaignRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCampaignRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

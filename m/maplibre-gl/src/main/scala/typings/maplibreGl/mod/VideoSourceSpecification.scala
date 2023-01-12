@@ -36,7 +36,8 @@ object VideoSourceSpecification {
     __obj.asInstanceOf[VideoSourceSpecification]
   }
   
-  extension [Self <: VideoSourceSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoSourceSpecification] (val x: Self) extends AnyVal {
     
     inline def setCoordinates(
       value: js.Tuple4[

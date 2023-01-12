@@ -16,7 +16,8 @@ object GoogleCloudMlV1SampledShapleyAttribution {
     __obj.asInstanceOf[GoogleCloudMlV1SampledShapleyAttribution]
   }
   
-  extension [Self <: GoogleCloudMlV1SampledShapleyAttribution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1SampledShapleyAttribution] (val x: Self) extends AnyVal {
     
     inline def setNumPaths(value: Double): Self = StObject.set(x, "numPaths", value.asInstanceOf[js.Any])
     

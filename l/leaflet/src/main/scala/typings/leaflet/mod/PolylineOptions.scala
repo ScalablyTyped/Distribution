@@ -19,7 +19,8 @@ object PolylineOptions {
     __obj.asInstanceOf[PolylineOptions]
   }
   
-  extension [Self <: PolylineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolylineOptions] (val x: Self) extends AnyVal {
     
     inline def setNoClip(value: Boolean): Self = StObject.set(x, "noClip", value.asInstanceOf[js.Any])
     

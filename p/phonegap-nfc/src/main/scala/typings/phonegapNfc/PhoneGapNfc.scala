@@ -233,7 +233,8 @@ object PhoneGapNfc {
       __obj.asInstanceOf[Ndef]
     }
     
-    extension [Self <: Ndef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ndef] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteUriRecord(value: (String, js.Array[Double], js.Array[Double]) => NdefRecord): Self = StObject.set(x, "absoluteUriRecord", js.Any.fromFunction3(value))
       
@@ -341,7 +342,8 @@ object PhoneGapNfc {
       __obj.asInstanceOf[NdefRecord]
     }
     
-    extension [Self <: NdefRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NdefRecord] (val x: Self) extends AnyVal {
       
       inline def setId(value: js.Array[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -388,7 +390,8 @@ object PhoneGapNfc {
       __obj.asInstanceOf[NdefTag]
     }
     
-    extension [Self <: NdefTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NdefTag] (val x: Self) extends AnyVal {
       
       inline def setCanMakeReadOnly(value: Boolean): Self = StObject.set(x, "canMakeReadOnly", value.asInstanceOf[js.Any])
       
@@ -672,7 +675,8 @@ object PhoneGapNfc {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -719,7 +723,8 @@ object PhoneGapNfc {
       __obj.asInstanceOf[TextHelper]
     }
     
-    extension [Self <: TextHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextHelper] (val x: Self) extends AnyVal {
       
       inline def setDecodePayload(value: Any => String): Self = StObject.set(x, "decodePayload", js.Any.fromFunction1(value))
       
@@ -758,7 +763,8 @@ object PhoneGapNfc {
       __obj.asInstanceOf[UriHelper]
     }
     
-    extension [Self <: UriHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UriHelper] (val x: Self) extends AnyVal {
       
       inline def setDecodePayload(value: Any => String): Self = StObject.set(x, "decodePayload", js.Any.fromFunction1(value))
       
@@ -801,7 +807,8 @@ object PhoneGapNfc {
       __obj.asInstanceOf[Util]
     }
     
-    extension [Self <: Util](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Util] (val x: Self) extends AnyVal {
       
       inline def setBytesToHexString(value: js.Array[Double] => String): Self = StObject.set(x, "bytesToHexString", js.Any.fromFunction1(value))
       
@@ -831,7 +838,8 @@ object PhoneGapNfc {
       __obj.asInstanceOf[Window]
     }
     
-    extension [Self <: Window](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
       
       inline def setFireNfcTagEvent(value: (TagEvent, String) => Unit): Self = StObject.set(x, "fireNfcTagEvent", js.Any.fromFunction2(value))
       

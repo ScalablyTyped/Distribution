@@ -26,7 +26,8 @@ object SocialSharingOptions {
     __obj.asInstanceOf[SocialSharingOptions]
   }
   
-  extension [Self <: SocialSharingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialSharingOptions] (val x: Self) extends AnyVal {
     
     inline def setAppPackageName(value: String): Self = StObject.set(x, "appPackageName", value.asInstanceOf[js.Any])
     

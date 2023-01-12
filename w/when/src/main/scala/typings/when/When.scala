@@ -69,7 +69,8 @@ object When {
       __obj.asInstanceOf[FulfilledDescriptor[T]]
     }
     
-    extension [Self <: FulfilledDescriptor[?], T](x: Self & FulfilledDescriptor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FulfilledDescriptor[?], T] (val x: Self & FulfilledDescriptor[T]) extends AnyVal {
       
       inline def setState(value: fulfilled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object When {
       __obj.asInstanceOf[PendingDescriptor]
     }
     
-    extension [Self <: PendingDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PendingDescriptor] (val x: Self) extends AnyVal {
       
       inline def setState(value: pending): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
@@ -267,7 +269,8 @@ object When {
       __obj.asInstanceOf[RejectedDescriptor]
     }
     
-    extension [Self <: RejectedDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RejectedDescriptor] (val x: Self) extends AnyVal {
       
       inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       

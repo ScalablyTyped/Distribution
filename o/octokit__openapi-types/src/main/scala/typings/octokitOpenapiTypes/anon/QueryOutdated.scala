@@ -15,7 +15,8 @@ object QueryOutdated {
     __obj.asInstanceOf[QueryOutdated]
   }
   
-  extension [Self <: QueryOutdated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryOutdated] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: Outdated): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

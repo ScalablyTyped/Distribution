@@ -123,7 +123,8 @@ object TableDescription {
     __obj.asInstanceOf[TableDescription]
   }
   
-  extension [Self <: TableDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableDescription] (val x: Self) extends AnyVal {
     
     inline def setArchivalSummary(value: ArchivalSummary): Self = StObject.set(x, "ArchivalSummary", value.asInstanceOf[js.Any])
     

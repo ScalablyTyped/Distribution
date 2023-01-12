@@ -58,7 +58,8 @@ object DepthStencilAttachmentOps {
     __obj.asInstanceOf[DepthStencilAttachmentOps]
   }
   
-  extension [Self <: DepthStencilAttachmentOps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepthStencilAttachmentOps] (val x: Self) extends AnyVal {
     
     inline def setClearDepth(value: Boolean): Self = StObject.set(x, "clearDepth", value.asInstanceOf[js.Any])
     

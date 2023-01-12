@@ -18,7 +18,8 @@ object DescribeTrustedAdvisorChecksRequest {
     __obj.asInstanceOf[DescribeTrustedAdvisorChecksRequest]
   }
   
-  extension [Self <: DescribeTrustedAdvisorChecksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTrustedAdvisorChecksRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
   }

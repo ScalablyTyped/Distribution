@@ -40,7 +40,8 @@ object CanvasRect {
     __obj.asInstanceOf[CanvasRect]
   }
   
-  extension [Self <: CanvasRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasRect] (val x: Self) extends AnyVal {
     
     inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     

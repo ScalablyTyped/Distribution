@@ -15,7 +15,8 @@ object DisassociateIdentityProviderConfigResponse {
     __obj.asInstanceOf[DisassociateIdentityProviderConfigResponse]
   }
   
-  extension [Self <: DisassociateIdentityProviderConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateIdentityProviderConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setUpdate(value: Update): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     

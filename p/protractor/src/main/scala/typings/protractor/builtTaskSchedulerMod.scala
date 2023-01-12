@@ -92,7 +92,8 @@ object builtTaskSchedulerMod {
       __obj.asInstanceOf[Task]
     }
     
-    extension [Self <: Task](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
       
       inline def setCapabilities(value: Any): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Force]
     }
     
-    extension [Self <: Force](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Force] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     }
@@ -114,7 +116,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def set_id(value: ObjectId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
       
@@ -133,7 +136,8 @@ object anon {
       __obj.asInstanceOf[InsertOnly]
     }
     
-    extension [Self <: InsertOnly](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InsertOnly] (val x: Self) extends AnyVal {
       
       inline def setInsertOnly(value: Boolean): Self = StObject.set(x, "insertOnly", value.asInstanceOf[js.Any])
     }
@@ -199,7 +203,8 @@ object anon {
       __obj.asInstanceOf[PartialJobAttributesJobAt]
     }
     
-    extension [Self <: PartialJobAttributesJobAt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialJobAttributesJobAt] (val x: Self) extends AnyVal {
       
       inline def setAgenda(value: Agenda): Self = StObject.set(x, "agenda", value.asInstanceOf[js.Any])
       

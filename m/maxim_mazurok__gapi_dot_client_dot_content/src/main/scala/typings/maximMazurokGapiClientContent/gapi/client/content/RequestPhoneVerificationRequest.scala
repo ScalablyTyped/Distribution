@@ -31,7 +31,8 @@ object RequestPhoneVerificationRequest {
     __obj.asInstanceOf[RequestPhoneVerificationRequest]
   }
   
-  extension [Self <: RequestPhoneVerificationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestPhoneVerificationRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

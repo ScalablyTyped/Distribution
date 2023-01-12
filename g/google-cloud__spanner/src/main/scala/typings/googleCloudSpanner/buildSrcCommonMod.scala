@@ -48,7 +48,8 @@ object buildSrcCommonMod {
       __obj.asInstanceOf[PagedOptions]
     }
     
-    extension [Self <: PagedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagedOptions] (val x: Self) extends AnyVal {
       
       inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object buildSrcCommonMod {
       __obj.asInstanceOf[PagedOptionsWithFilter]
     }
     
-    extension [Self <: PagedOptionsWithFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagedOptionsWithFilter] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       

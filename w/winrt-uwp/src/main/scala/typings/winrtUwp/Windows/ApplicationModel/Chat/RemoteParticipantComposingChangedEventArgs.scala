@@ -23,7 +23,8 @@ object RemoteParticipantComposingChangedEventArgs {
     __obj.asInstanceOf[RemoteParticipantComposingChangedEventArgs]
   }
   
-  extension [Self <: RemoteParticipantComposingChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteParticipantComposingChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIsComposing(value: Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
     

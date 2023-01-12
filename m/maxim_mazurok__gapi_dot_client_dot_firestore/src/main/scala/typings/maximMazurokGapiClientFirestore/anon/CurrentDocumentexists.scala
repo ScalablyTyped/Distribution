@@ -58,7 +58,8 @@ object CurrentDocumentexists {
     __obj.asInstanceOf[CurrentDocumentexists]
   }
   
-  extension [Self <: CurrentDocumentexists](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentDocumentexists] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

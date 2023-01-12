@@ -82,7 +82,8 @@ object mod {
         __obj.asInstanceOf[JQueryStatic]
       }
       
-      extension [Self <: JQueryStatic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
         
         inline def setBrowser(value: Matchs): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       }
@@ -99,7 +100,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setJQBrowser(value: Matchs): Self = StObject.set(x, "jQBrowser", value.asInstanceOf[js.Any])
       }

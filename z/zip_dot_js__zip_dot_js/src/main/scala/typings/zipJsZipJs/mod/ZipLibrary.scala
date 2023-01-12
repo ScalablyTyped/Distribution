@@ -31,7 +31,8 @@ object ZipLibrary {
     __obj.asInstanceOf[ZipLibrary]
   }
   
-  extension [Self <: ZipLibrary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipLibrary] (val x: Self) extends AnyVal {
     
     inline def setDeflate(value: Instantiable0[ZipDeflate]): Self = StObject.set(x, "Deflate", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object builtConnectorsAbstractConnectorMod {
       __obj.asInstanceOf[AbstractConnector]
     }
     
-    extension [Self <: AbstractConnector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractConnector] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: Any => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
       

@@ -21,7 +21,8 @@ object adapterMod {
       __obj.asInstanceOf[MDCRadioAdapter]
     }
     
-    extension [Self <: MDCRadioAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCRadioAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

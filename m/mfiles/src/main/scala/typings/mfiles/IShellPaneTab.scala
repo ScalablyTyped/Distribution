@@ -59,7 +59,8 @@ object IShellPaneTab {
     __obj.asInstanceOf[IShellPaneTab]
   }
   
-  extension [Self <: IShellPaneTab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShellPaneTab] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: IShellPaneTabEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

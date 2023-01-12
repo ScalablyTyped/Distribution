@@ -27,7 +27,8 @@ object PrometheusInfo {
     __obj.asInstanceOf[PrometheusInfo]
   }
   
-  extension [Self <: PrometheusInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrometheusInfo] (val x: Self) extends AnyVal {
     
     inline def setJmxExporter(value: JmxExporterInfo): Self = StObject.set(x, "JmxExporter", value.asInstanceOf[js.Any])
     

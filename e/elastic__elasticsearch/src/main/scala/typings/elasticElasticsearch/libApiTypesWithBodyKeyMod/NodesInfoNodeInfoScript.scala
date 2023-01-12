@@ -17,7 +17,8 @@ object NodesInfoNodeInfoScript {
     __obj.asInstanceOf[NodesInfoNodeInfoScript]
   }
   
-  extension [Self <: NodesInfoNodeInfoScript](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoScript] (val x: Self) extends AnyVal {
     
     inline def setAllowed_types(value: String): Self = StObject.set(x, "allowed_types", value.asInstanceOf[js.Any])
     

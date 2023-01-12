@@ -20,7 +20,8 @@ object JobOutboundMessageOnReady {
     __obj.asInstanceOf[JobOutboundMessageOnReady]
   }
   
-  extension [Self <: JobOutboundMessageOnReady](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobOutboundMessageOnReady] (val x: Self) extends AnyVal {
     
     inline def setKind(value: OnReady): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

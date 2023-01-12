@@ -18,7 +18,8 @@ object GetSiteInput {
     __obj.asInstanceOf[GetSiteInput]
   }
   
-  extension [Self <: GetSiteInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSiteInput] (val x: Self) extends AnyVal {
     
     inline def setSiteId(value: SiteId): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
   }

@@ -16,7 +16,8 @@ object IsPromise {
     __obj.asInstanceOf[IsPromise]
   }
   
-  extension [Self <: IsPromise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsPromise] (val x: Self) extends AnyVal {
     
     inline def setIsPromise(value: `true`): Self = StObject.set(x, "isPromise", value.asInstanceOf[js.Any])
   }

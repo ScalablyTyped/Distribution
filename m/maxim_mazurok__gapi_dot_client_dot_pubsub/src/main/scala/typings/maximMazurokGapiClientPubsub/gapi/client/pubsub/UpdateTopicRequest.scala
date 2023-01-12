@@ -22,7 +22,8 @@ object UpdateTopicRequest {
     __obj.asInstanceOf[UpdateTopicRequest]
   }
   
-  extension [Self <: UpdateTopicRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTopicRequest] (val x: Self) extends AnyVal {
     
     inline def setTopic(value: Topic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     

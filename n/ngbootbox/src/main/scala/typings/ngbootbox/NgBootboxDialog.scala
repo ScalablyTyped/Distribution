@@ -40,7 +40,8 @@ object NgBootboxDialog {
     __obj.asInstanceOf[NgBootboxDialog]
   }
   
-  extension [Self <: NgBootboxDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NgBootboxDialog] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -540,7 +540,8 @@ object sapUiCoreUtilMockServerMod {
       __obj.asInstanceOf[MockServerSettings]
     }
     
-    extension [Self <: MockServerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockServerSettings] (val x: Self) extends AnyVal {
       
       inline def setRecordRequests(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "recordRequests", value.asInstanceOf[js.Any])
       
@@ -593,7 +594,8 @@ object sapUiCoreUtilMockServerMod {
       __obj.asInstanceOf[RequestHandler]
     }
     
-    extension [Self <: RequestHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestHandler] (val x: Self) extends AnyVal {
       
       inline def setMethod(
         value: HTTPMETHOD | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HTTPMETHOD * / any */ String)

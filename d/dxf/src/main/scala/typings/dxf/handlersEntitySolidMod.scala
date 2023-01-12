@@ -58,7 +58,8 @@ object handlersEntitySolidMod {
       __obj.asInstanceOf[SolidEntityData]
     }
     
-    extension [Self <: SolidEntityData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SolidEntityData] (val x: Self) extends AnyVal {
       
       inline def set$INSUNITS(value: UnitTypes): Self = StObject.set(x, "$INSUNITS", value.asInstanceOf[js.Any])
       

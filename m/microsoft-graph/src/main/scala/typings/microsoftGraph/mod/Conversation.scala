@@ -39,7 +39,8 @@ object Conversation {
     __obj.asInstanceOf[Conversation]
   }
   
-  extension [Self <: Conversation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conversation] (val x: Self) extends AnyVal {
     
     inline def setHasAttachments(value: Boolean): Self = StObject.set(x, "hasAttachments", value.asInstanceOf[js.Any])
     

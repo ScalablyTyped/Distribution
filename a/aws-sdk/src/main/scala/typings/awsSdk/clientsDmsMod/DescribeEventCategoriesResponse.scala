@@ -18,7 +18,8 @@ object DescribeEventCategoriesResponse {
     __obj.asInstanceOf[DescribeEventCategoriesResponse]
   }
   
-  extension [Self <: DescribeEventCategoriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEventCategoriesResponse] (val x: Self) extends AnyVal {
     
     inline def setEventCategoryGroupList(value: EventCategoryGroupList): Self = StObject.set(x, "EventCategoryGroupList", value.asInstanceOf[js.Any])
     

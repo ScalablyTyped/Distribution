@@ -32,7 +32,8 @@ object ContentToAccumulate {
     __obj.asInstanceOf[ContentToAccumulate]
   }
   
-  extension [Self <: ContentToAccumulate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentToAccumulate] (val x: Self) extends AnyVal {
     
     inline def setContentToAccumulate(value: Double): Self = StObject.set(x, "contentToAccumulate", value.asInstanceOf[js.Any])
     

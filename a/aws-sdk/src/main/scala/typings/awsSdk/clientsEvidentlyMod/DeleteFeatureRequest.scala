@@ -23,7 +23,8 @@ object DeleteFeatureRequest {
     __obj.asInstanceOf[DeleteFeatureRequest]
   }
   
-  extension [Self <: DeleteFeatureRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFeatureRequest] (val x: Self) extends AnyVal {
     
     inline def setFeature(value: FeatureName): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     

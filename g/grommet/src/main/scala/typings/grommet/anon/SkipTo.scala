@@ -15,7 +15,8 @@ object SkipTo {
     __obj.asInstanceOf[SkipTo]
   }
   
-  extension [Self <: SkipTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkipTo] (val x: Self) extends AnyVal {
     
     inline def setSkipTo(value: String): Self = StObject.set(x, "skipTo", value.asInstanceOf[js.Any])
     

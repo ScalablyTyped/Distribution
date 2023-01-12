@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Framerate]
     }
     
-    extension [Self <: Framerate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Framerate] (val x: Self) extends AnyVal {
       
       inline def setFramerate(value: Double): Self = StObject.set(x, "framerate", value.asInstanceOf[js.Any])
     }

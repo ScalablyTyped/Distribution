@@ -26,7 +26,8 @@ object ASPxDesignerDialogModel {
     __obj.asInstanceOf[ASPxDesignerDialogModel]
   }
   
-  extension [Self <: ASPxDesignerDialogModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxDesignerDialogModel] (val x: Self) extends AnyVal {
     
     inline def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
     

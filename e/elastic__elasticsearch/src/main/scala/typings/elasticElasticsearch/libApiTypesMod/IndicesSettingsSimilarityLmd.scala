@@ -19,7 +19,8 @@ object IndicesSettingsSimilarityLmd {
     __obj.asInstanceOf[IndicesSettingsSimilarityLmd]
   }
   
-  extension [Self <: IndicesSettingsSimilarityLmd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSettingsSimilarityLmd] (val x: Self) extends AnyVal {
     
     inline def setMu(value: integer): Self = StObject.set(x, "mu", value.asInstanceOf[js.Any])
     

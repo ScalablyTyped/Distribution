@@ -40,7 +40,8 @@ object Grocery {
     __obj.asInstanceOf[Grocery]
   }
   
-  extension [Self <: Grocery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Grocery] (val x: Self) extends AnyVal {
     
     inline def setActiveIngredients(value: String): Self = StObject.set(x, "activeIngredients", value.asInstanceOf[js.Any])
     

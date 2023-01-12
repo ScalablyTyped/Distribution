@@ -31,7 +31,8 @@ object distTypingsNewFormatSpec0Dot8ParametersMod {
       __obj.asInstanceOf[NumberTypeDeclaration08]
     }
     
-    extension [Self <: NumberTypeDeclaration08](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberTypeDeclaration08] (val x: Self) extends AnyVal {
       
       inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object distTypingsNewFormatSpec0Dot8ParametersMod {
       __obj.asInstanceOf[Parameter08]
     }
     
-    extension [Self <: Parameter08](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parameter08] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object distTypingsNewFormatSpec0Dot8ParametersMod {
       __obj.asInstanceOf[StringTypeDeclaration08]
     }
     
-    extension [Self <: StringTypeDeclaration08](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringTypeDeclaration08] (val x: Self) extends AnyVal {
       
       inline def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       

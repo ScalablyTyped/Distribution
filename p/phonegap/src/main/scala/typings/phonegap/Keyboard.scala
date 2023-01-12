@@ -41,7 +41,8 @@ object Keyboard {
     __obj.asInstanceOf[Keyboard]
   }
   
-  extension [Self <: Keyboard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Keyboard] (val x: Self) extends AnyVal {
     
     inline def setAutomaticScrollToTopOnHiding(value: Boolean): Self = StObject.set(x, "automaticScrollToTopOnHiding", value.asInstanceOf[js.Any])
     

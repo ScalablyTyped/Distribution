@@ -63,7 +63,8 @@ object UpdateDataSetResponse {
     __obj.asInstanceOf[UpdateDataSetResponse]
   }
   
-  extension [Self <: UpdateDataSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDataSetResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

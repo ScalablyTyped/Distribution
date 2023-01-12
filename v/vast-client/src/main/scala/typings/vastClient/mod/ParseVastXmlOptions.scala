@@ -23,7 +23,8 @@ object ParseVastXmlOptions {
     __obj.asInstanceOf[ParseVastXmlOptions]
   }
   
-  extension [Self <: ParseVastXmlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseVastXmlOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowMultipleAds(value: Boolean): Self = StObject.set(x, "allowMultipleAds", value.asInstanceOf[js.Any])
     

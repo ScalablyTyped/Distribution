@@ -18,7 +18,8 @@ object IInputPaneVisibilityEventArgs {
     __obj.asInstanceOf[IInputPaneVisibilityEventArgs]
   }
   
-  extension [Self <: IInputPaneVisibilityEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInputPaneVisibilityEventArgs] (val x: Self) extends AnyVal {
     
     inline def setEnsuredFocusedElementInView(value: Boolean): Self = StObject.set(x, "ensuredFocusedElementInView", value.asInstanceOf[js.Any])
     

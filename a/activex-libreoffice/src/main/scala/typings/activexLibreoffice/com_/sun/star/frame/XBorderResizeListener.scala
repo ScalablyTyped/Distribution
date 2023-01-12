@@ -33,7 +33,8 @@ object XBorderResizeListener {
     __obj.asInstanceOf[XBorderResizeListener]
   }
   
-  extension [Self <: XBorderResizeListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBorderResizeListener] (val x: Self) extends AnyVal {
     
     inline def setBorderWidthsChanged(value: (XInterface, BorderWidths) => Unit): Self = StObject.set(x, "borderWidthsChanged", js.Any.fromFunction2(value))
   }

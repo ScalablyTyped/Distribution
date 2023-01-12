@@ -27,7 +27,8 @@ object distTypesOnStageGeneralDistComponentsLockMod extends Shortcut {
       __obj.asInstanceOf[LockProps]
     }
     
-    extension [Self <: LockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LockProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

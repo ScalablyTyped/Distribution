@@ -31,7 +31,8 @@ object Grid {
     __obj.asInstanceOf[Grid]
   }
   
-  extension [Self <: Grid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Grid] (val x: Self) extends AnyVal {
     
     inline def setBorderStyle(value: BorderStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     

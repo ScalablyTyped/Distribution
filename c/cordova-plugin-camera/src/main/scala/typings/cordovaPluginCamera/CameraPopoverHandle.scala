@@ -22,7 +22,8 @@ object CameraPopoverHandle {
     __obj.asInstanceOf[CameraPopoverHandle]
   }
   
-  extension [Self <: CameraPopoverHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraPopoverHandle] (val x: Self) extends AnyVal {
     
     inline def setSetPosition(value: CameraPopoverOptions => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
   }

@@ -23,7 +23,8 @@ object SMSMfaSettingsType {
     __obj.asInstanceOf[SMSMfaSettingsType]
   }
   
-  extension [Self <: SMSMfaSettingsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SMSMfaSettingsType] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: BooleanType): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object TermsEnumResponse {
     __obj.asInstanceOf[TermsEnumResponse]
   }
   
-  extension [Self <: TermsEnumResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TermsEnumResponse] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     

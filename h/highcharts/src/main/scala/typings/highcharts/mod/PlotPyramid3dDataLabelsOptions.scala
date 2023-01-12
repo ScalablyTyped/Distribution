@@ -273,7 +273,8 @@ object PlotPyramid3dDataLabelsOptions {
     __obj.asInstanceOf[PlotPyramid3dDataLabelsOptions]
   }
   
-  extension [Self <: PlotPyramid3dDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPyramid3dDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

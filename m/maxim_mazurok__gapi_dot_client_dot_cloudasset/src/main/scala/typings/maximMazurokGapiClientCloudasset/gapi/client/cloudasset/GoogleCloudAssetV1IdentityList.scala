@@ -26,7 +26,8 @@ object GoogleCloudAssetV1IdentityList {
     __obj.asInstanceOf[GoogleCloudAssetV1IdentityList]
   }
   
-  extension [Self <: GoogleCloudAssetV1IdentityList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssetV1IdentityList] (val x: Self) extends AnyVal {
     
     inline def setGroupEdges(value: js.Array[GoogleCloudAssetV1Edge]): Self = StObject.set(x, "groupEdges", value.asInstanceOf[js.Any])
     

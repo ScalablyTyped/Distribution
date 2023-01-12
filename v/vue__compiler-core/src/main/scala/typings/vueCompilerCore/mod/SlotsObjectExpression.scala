@@ -20,7 +20,8 @@ object SlotsObjectExpression {
     __obj.asInstanceOf[SlotsObjectExpression]
   }
   
-  extension [Self <: SlotsObjectExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotsObjectExpression] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: js.Array[SlotsObjectProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

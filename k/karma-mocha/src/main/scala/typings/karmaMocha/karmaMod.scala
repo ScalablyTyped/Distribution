@@ -20,7 +20,8 @@ object karmaMod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setMocha(value: MochaClientOptions): Self = StObject.set(x, "mocha", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object karmaMod {
       __obj.asInstanceOf[MochaClientOptions]
     }
     
-    extension [Self <: MochaClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MochaClientOptions] (val x: Self) extends AnyVal {
       
       inline def setExport(value: js.Array[String]): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
       

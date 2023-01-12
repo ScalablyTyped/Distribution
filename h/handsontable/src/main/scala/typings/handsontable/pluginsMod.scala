@@ -504,7 +504,8 @@ object pluginsMod {
       __obj.asInstanceOf[Plugins]
     }
     
-    extension [Self <: Plugins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
       
       inline def setAutoColumnSize(value: typings.handsontable.pluginsAutoColumnSizeMod.AutoColumnSize): Self = StObject.set(x, "autoColumnSize", value.asInstanceOf[js.Any])
       

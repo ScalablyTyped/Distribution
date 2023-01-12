@@ -48,7 +48,8 @@ object Artwork {
     __obj.asInstanceOf[Artwork]
   }
   
-  extension [Self <: Artwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Artwork] (val x: Self) extends AnyVal {
     
     inline def setAlbumArtFormat(value: JpgOrPng): Self = StObject.set(x, "AlbumArtFormat", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object OptimizeRestoredDatabaseMetadata {
     __obj.asInstanceOf[OptimizeRestoredDatabaseMetadata]
   }
   
-  extension [Self <: OptimizeRestoredDatabaseMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptimizeRestoredDatabaseMetadata] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object EtaRequestOptions {
     __obj.asInstanceOf[EtaRequestOptions]
   }
   
-  extension [Self <: EtaRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EtaRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setDepartureDate(value: js.Date): Self = StObject.set(x, "departureDate", value.asInstanceOf[js.Any])
     

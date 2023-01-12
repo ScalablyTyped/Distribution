@@ -43,7 +43,8 @@ object IncidentTemplate {
     __obj.asInstanceOf[IncidentTemplate]
   }
   
-  extension [Self <: IncidentTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncidentTemplate] (val x: Self) extends AnyVal {
     
     inline def setDedupeString(value: DedupeString): Self = StObject.set(x, "dedupeString", value.asInstanceOf[js.Any])
     

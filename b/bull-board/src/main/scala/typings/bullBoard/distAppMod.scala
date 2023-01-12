@@ -57,7 +57,8 @@ object distAppMod {
       __obj.asInstanceOf[AppJob]
     }
     
-    extension [Self <: AppJob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppJob] (val x: Self) extends AnyVal {
       
       inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object distAppMod {
       __obj.asInstanceOf[AppQueue]
     }
     
-    extension [Self <: AppQueue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppQueue] (val x: Self) extends AnyVal {
       
       inline def setCounts(value: RecordStatusnumber): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object distAppMod {
       __obj.asInstanceOf[JobCounts]
     }
     
-    extension [Self <: JobCounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JobCounts] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -247,7 +250,8 @@ object distAppMod {
       __obj.asInstanceOf[QueueActions]
     }
     
-    extension [Self <: QueueActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueActions] (val x: Self) extends AnyVal {
       
       inline def setCleanAllCompleted(value: String => js.Function0[js.Promise[Unit]]): Self = StObject.set(x, "cleanAllCompleted", js.Any.fromFunction1(value))
       
@@ -278,7 +282,8 @@ object distAppMod {
       __obj.asInstanceOf[QueueAdapterOptions]
     }
     
-    extension [Self <: QueueAdapterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueAdapterOptions] (val x: Self) extends AnyVal {
       
       inline def setReadOnlyMode(value: Boolean): Self = StObject.set(x, "readOnlyMode", value.asInstanceOf[js.Any])
     }
@@ -309,7 +314,8 @@ object distAppMod {
       __obj.asInstanceOf[QueueJob]
     }
     
-    extension [Self <: QueueJob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueJob] (val x: Self) extends AnyVal {
       
       inline def setOpts(value: Delay): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
@@ -367,7 +373,8 @@ object distAppMod {
       __obj.asInstanceOf[QueueJobJson]
     }
     
-    extension [Self <: QueueJobJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueJobJson] (val x: Self) extends AnyVal {
       
       inline def setAttemptsMade(value: Double): Self = StObject.set(x, "attemptsMade", value.asInstanceOf[js.Any])
       
@@ -445,7 +452,8 @@ object distAppMod {
       __obj.asInstanceOf[ValidMetrics]
     }
     
-    extension [Self <: ValidMetrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidMetrics] (val x: Self) extends AnyVal {
       
       inline def setBlocked_clients(value: String): Self = StObject.set(x, "blocked_clients", value.asInstanceOf[js.Any])
       

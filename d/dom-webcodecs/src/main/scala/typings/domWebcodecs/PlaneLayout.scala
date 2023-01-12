@@ -17,7 +17,8 @@ object PlaneLayout {
     __obj.asInstanceOf[PlaneLayout]
   }
   
-  extension [Self <: PlaneLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaneLayout] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

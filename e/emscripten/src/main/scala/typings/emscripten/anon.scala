@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -63,7 +65,8 @@ object anon {
       __obj.asInstanceOf[Flags]
     }
     
-    extension [Self <: Flags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: utf8): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -86,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Kind]
     }
     
-    extension [Self <: Kind](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Kind] (val x: Self) extends AnyVal {
       
       inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -109,7 +113,8 @@ object anon {
       __obj.asInstanceOf[Module]
     }
     
-    extension [Self <: Module](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
       
       inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       

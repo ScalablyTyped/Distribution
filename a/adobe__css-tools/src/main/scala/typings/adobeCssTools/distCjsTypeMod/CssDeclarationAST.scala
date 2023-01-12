@@ -25,7 +25,8 @@ object CssDeclarationAST {
     __obj.asInstanceOf[CssDeclarationAST]
   }
   
-  extension [Self <: CssDeclarationAST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssDeclarationAST] (val x: Self) extends AnyVal {
     
     inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     

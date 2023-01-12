@@ -28,7 +28,8 @@ object ListS3ResourcesRequest {
     __obj.asInstanceOf[ListS3ResourcesRequest]
   }
   
-  extension [Self <: ListS3ResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListS3ResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

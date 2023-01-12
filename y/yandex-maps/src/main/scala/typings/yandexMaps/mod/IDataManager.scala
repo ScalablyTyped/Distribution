@@ -17,7 +17,8 @@ object IDataManager {
     __obj.asInstanceOf[IDataManager]
   }
   
-  extension [Self <: IDataManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataManager] (val x: Self) extends AnyVal {
     
     inline def setGet(value: (String, js.Object) => js.Object): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
   }

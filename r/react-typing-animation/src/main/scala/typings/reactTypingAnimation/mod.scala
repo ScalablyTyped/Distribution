@@ -58,7 +58,8 @@ object mod {
         __obj.asInstanceOf[BackspaceProperties]
       }
       
-      extension [Self <: BackspaceProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BackspaceProperties] (val x: Self) extends AnyVal {
         
         inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
@@ -87,7 +88,8 @@ object mod {
         __obj.asInstanceOf[DelayProperties]
       }
       
-      extension [Self <: DelayProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DelayProperties] (val x: Self) extends AnyVal {
         
         inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
       }
@@ -110,7 +112,8 @@ object mod {
         __obj.asInstanceOf[ResetProperties]
       }
       
-      extension [Self <: ResetProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResetProperties] (val x: Self) extends AnyVal {
         
         inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
@@ -139,7 +142,8 @@ object mod {
         __obj.asInstanceOf[SpeedProperties]
       }
       
-      extension [Self <: SpeedProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SpeedProperties] (val x: Self) extends AnyVal {
         
         inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
       }
@@ -180,7 +184,8 @@ object mod {
       __obj.asInstanceOf[TypingProps]
     }
     
-    extension [Self <: TypingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypingProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

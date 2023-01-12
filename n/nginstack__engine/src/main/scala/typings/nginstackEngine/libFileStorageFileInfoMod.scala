@@ -57,7 +57,8 @@ object libFileStorageFileInfoMod {
       __obj.asInstanceOf[FileInfo]
     }
     
-    extension [Self <: FileInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileInfo] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

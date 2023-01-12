@@ -23,7 +23,8 @@ object Flight {
     __obj.asInstanceOf[Flight]
   }
   
-  extension [Self <: Flight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Flight] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     

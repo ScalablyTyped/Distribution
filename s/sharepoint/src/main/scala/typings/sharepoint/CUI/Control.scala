@@ -34,7 +34,8 @@ object Control {
     __obj.asInstanceOf[Control]
   }
   
-  extension [Self <: Control](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
     
     inline def setCreateComponentForDisplayMode(value: String => Any): Self = StObject.set(x, "createComponentForDisplayMode", js.Any.fromFunction1(value))
     

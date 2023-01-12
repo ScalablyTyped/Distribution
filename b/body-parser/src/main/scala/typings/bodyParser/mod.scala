@@ -91,7 +91,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setInflate(value: Boolean): Self = StObject.set(x, "inflate", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OptionsJson]
     }
     
-    extension [Self <: OptionsJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsJson] (val x: Self) extends AnyVal {
       
       inline def setReviver(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
       
@@ -170,7 +172,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OptionsText]
     }
     
-    extension [Self <: OptionsText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsText] (val x: Self) extends AnyVal {
       
       inline def setDefaultCharset(value: String): Self = StObject.set(x, "defaultCharset", value.asInstanceOf[js.Any])
       
@@ -202,7 +205,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OptionsUrlencoded]
     }
     
-    extension [Self <: OptionsUrlencoded](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsUrlencoded] (val x: Self) extends AnyVal {
       
       inline def setExtended(value: Boolean): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object CustomizeSeries {
     __obj.asInstanceOf[CustomizeSeries]
   }
   
-  extension [Self <: CustomizeSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomizeSeries] (val x: Self) extends AnyVal {
     
     inline def setCustomizeSeries(value: /* seriesName */ Any => ChartSeries): Self = StObject.set(x, "customizeSeries", js.Any.fromFunction1(value))
     

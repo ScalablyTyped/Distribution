@@ -28,7 +28,8 @@ object DetectMitigationActionsTaskTarget {
     __obj.asInstanceOf[DetectMitigationActionsTaskTarget]
   }
   
-  extension [Self <: DetectMitigationActionsTaskTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectMitigationActionsTaskTarget] (val x: Self) extends AnyVal {
     
     inline def setBehaviorName(value: BehaviorName): Self = StObject.set(x, "behaviorName", value.asInstanceOf[js.Any])
     

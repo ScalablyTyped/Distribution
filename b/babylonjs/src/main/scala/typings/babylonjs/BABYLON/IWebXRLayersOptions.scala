@@ -19,7 +19,8 @@ object IWebXRLayersOptions {
     __obj.asInstanceOf[IWebXRLayersOptions]
   }
   
-  extension [Self <: IWebXRLayersOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRLayersOptions] (val x: Self) extends AnyVal {
     
     inline def setPreferMultiviewOnInit(value: Boolean): Self = StObject.set(x, "preferMultiviewOnInit", value.asInstanceOf[js.Any])
     

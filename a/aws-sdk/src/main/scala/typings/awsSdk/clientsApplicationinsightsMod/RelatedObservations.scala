@@ -18,7 +18,8 @@ object RelatedObservations {
     __obj.asInstanceOf[RelatedObservations]
   }
   
-  extension [Self <: RelatedObservations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedObservations] (val x: Self) extends AnyVal {
     
     inline def setObservationList(value: ObservationList): Self = StObject.set(x, "ObservationList", value.asInstanceOf[js.Any])
     

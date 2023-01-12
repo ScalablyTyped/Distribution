@@ -16,7 +16,8 @@ object PickComponentsPropsListMu {
     __obj.asInstanceOf[PickComponentsPropsListMu]
   }
   
-  extension [Self <: PickComponentsPropsListMu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickComponentsPropsListMu] (val x: Self) extends AnyVal {
     
     inline def setExpandText(value: Any): Self = StObject.set(x, "expandText", value.asInstanceOf[js.Any])
     

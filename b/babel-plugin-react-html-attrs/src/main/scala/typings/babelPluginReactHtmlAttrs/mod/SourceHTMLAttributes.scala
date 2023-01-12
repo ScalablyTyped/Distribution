@@ -31,7 +31,8 @@ object SourceHTMLAttributes {
     __obj.asInstanceOf[SourceHTMLAttributes[T]]
   }
   
-  extension [Self <: SourceHTMLAttributes[?], T](x: Self & SourceHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceHTMLAttributes[?], T] (val x: Self & SourceHTMLAttributes[T]) extends AnyVal {
     
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object NxStateCounts {
     __obj.asInstanceOf[NxStateCounts]
   }
   
-  extension [Self <: NxStateCounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NxStateCounts] (val x: Self) extends AnyVal {
     
     inline def setQAlternative(value: Double): Self = StObject.set(x, "qAlternative", value.asInstanceOf[js.Any])
     

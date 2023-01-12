@@ -20,7 +20,8 @@ object FeatureLayerSaveAsOptionsValidationOptions {
     __obj.asInstanceOf[FeatureLayerSaveAsOptionsValidationOptions]
   }
   
-  extension [Self <: FeatureLayerSaveAsOptionsValidationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerSaveAsOptionsValidationOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreUnsupported(value: Boolean): Self = StObject.set(x, "ignoreUnsupported", value.asInstanceOf[js.Any])
     

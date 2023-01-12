@@ -25,7 +25,8 @@ object BaseRadius {
     __obj.asInstanceOf[BaseRadius]
   }
   
-  extension [Self <: BaseRadius](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseRadius] (val x: Self) extends AnyVal {
     
     inline def setBaseRadius(value: Double): Self = StObject.set(x, "baseRadius", value.asInstanceOf[js.Any])
     

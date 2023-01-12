@@ -38,7 +38,8 @@ object FTInitDownload {
     __obj.asInstanceOf[FTInitDownload]
   }
   
-  extension [Self <: FTInitDownload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FTInitDownload] (val x: Self) extends AnyVal {
     
     inline def setClientftfid(value: Double): Self = StObject.set(x, "clientftfid", value.asInstanceOf[js.Any])
     

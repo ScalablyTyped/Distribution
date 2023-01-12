@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[Detection]
     }
     
-    extension [Self <: Detection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Detection] (val x: Self) extends AnyVal {
       
       inline def setBoundingBox(value: NormalizedRect): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[FaceDetectionConfig]
     }
     
-    extension [Self <: FaceDetectionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaceDetectionConfig] (val x: Self) extends AnyVal {
       
       inline def setLocateFile(value: (/* path */ String, /* prefix */ js.UndefOr[String]) => String): Self = StObject.set(x, "locateFile", js.Any.fromFunction2(value))
       
@@ -114,7 +116,8 @@ object mod {
       __obj.asInstanceOf[FaceDetectionInterface]
     }
     
-    extension [Self <: FaceDetectionInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaceDetectionInterface] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -146,7 +149,8 @@ object mod {
       __obj.asInstanceOf[InputMap]
     }
     
-    extension [Self <: InputMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputMap] (val x: Self) extends AnyVal {
       
       inline def setImage(value: InputImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     }
@@ -171,7 +175,8 @@ object mod {
       __obj.asInstanceOf[NormalizedLandmark]
     }
     
-    extension [Self <: NormalizedLandmark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizedLandmark] (val x: Self) extends AnyVal {
       
       inline def setVisibility(value: Double): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
       
@@ -210,7 +215,8 @@ object mod {
       __obj.asInstanceOf[NormalizedRect]
     }
     
-    extension [Self <: NormalizedRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizedRect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -241,7 +247,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setMinDetectionConfidence(value: Double): Self = StObject.set(x, "minDetectionConfidence", value.asInstanceOf[js.Any])
       
@@ -270,7 +277,8 @@ object mod {
       __obj.asInstanceOf[Results]
     }
     
-    extension [Self <: Results](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
       
       inline def setDetections(value: DetectionList): Self = StObject.set(x, "detections", value.asInstanceOf[js.Any])
       

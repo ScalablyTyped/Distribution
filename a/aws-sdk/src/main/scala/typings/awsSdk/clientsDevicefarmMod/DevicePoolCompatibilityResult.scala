@@ -28,7 +28,8 @@ object DevicePoolCompatibilityResult {
     __obj.asInstanceOf[DevicePoolCompatibilityResult]
   }
   
-  extension [Self <: DevicePoolCompatibilityResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevicePoolCompatibilityResult] (val x: Self) extends AnyVal {
     
     inline def setCompatible(value: Boolean): Self = StObject.set(x, "compatible", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object libSemigroupoidMod {
       __obj.asInstanceOf[Semigroupoid[F]]
     }
     
-    extension [Self <: Semigroupoid[?], F](x: Self & Semigroupoid[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Semigroupoid[?], F] (val x: Self & Semigroupoid[F]) extends AnyVal {
       
       inline def setCompose(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, B, C> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, A, B> */ Any) => Any
@@ -54,7 +55,8 @@ object libSemigroupoidMod {
       __obj.asInstanceOf[Semigroupoid2[F]]
     }
     
-    extension [Self <: Semigroupoid2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Semigroupoid2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Semigroupoid2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Semigroupoid2[F]) extends AnyVal {
       
       inline def setCompose(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, B, C> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, B> */ Any) => Any
@@ -86,7 +88,8 @@ object libSemigroupoidMod {
       __obj.asInstanceOf[Semigroupoid2C[F, A]]
     }
     
-    extension [Self <: Semigroupoid2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, A](x: Self & (Semigroupoid2C[F, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Semigroupoid2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, A] (val x: Self & (Semigroupoid2C[F, A])) extends AnyVal {
       
       inline def setCompose(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, B, C> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, B> */ Any) => Any
@@ -117,7 +120,8 @@ object libSemigroupoidMod {
       __obj.asInstanceOf[Semigroupoid3[F]]
     }
     
-    extension [Self <: Semigroupoid3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Semigroupoid3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Semigroupoid3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Semigroupoid3[F]) extends AnyVal {
       
       inline def setCompose(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, B, C> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, B> */ Any) => Any
@@ -149,7 +153,8 @@ object libSemigroupoidMod {
       __obj.asInstanceOf[Semigroupoid3C[F, A]]
     }
     
-    extension [Self <: Semigroupoid3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, A](x: Self & (Semigroupoid3C[F, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Semigroupoid3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, A] (val x: Self & (Semigroupoid3C[F, A])) extends AnyVal {
       
       inline def setCompose(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, B, C> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, B> */ Any) => Any
@@ -180,7 +185,8 @@ object libSemigroupoidMod {
       __obj.asInstanceOf[Semigroupoid4[F]]
     }
     
-    extension [Self <: Semigroupoid4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Semigroupoid4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Semigroupoid4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Semigroupoid4[F]) extends AnyVal {
       
       inline def setCompose(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, B, C> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, A, B> */ Any) => Any

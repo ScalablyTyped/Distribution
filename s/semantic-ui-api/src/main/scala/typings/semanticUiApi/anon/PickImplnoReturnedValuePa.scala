@@ -43,7 +43,8 @@ object PickImplnoReturnedValuePa {
     __obj.asInstanceOf[PickImplnoReturnedValuePa]
   }
   
-  extension [Self <: PickImplnoReturnedValuePa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplnoReturnedValuePa] (val x: Self) extends AnyVal {
     
     inline def setBeforeSend(value: String): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
     

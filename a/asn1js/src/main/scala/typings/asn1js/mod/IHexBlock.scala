@@ -18,7 +18,8 @@ object IHexBlock {
     __obj.asInstanceOf[IHexBlock]
   }
   
-  extension [Self <: IHexBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHexBlock] (val x: Self) extends AnyVal {
     
     inline def setIsHexOnly(value: scala.Boolean): Self = StObject.set(x, "isHexOnly", value.asInstanceOf[js.Any])
     

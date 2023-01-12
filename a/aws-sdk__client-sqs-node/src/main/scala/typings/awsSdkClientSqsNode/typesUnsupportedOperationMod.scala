@@ -23,7 +23,8 @@ object typesUnsupportedOperationMod {
       __obj.asInstanceOf[UnsupportedOperation]
     }
     
-    extension [Self <: UnsupportedOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnsupportedOperation] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.UnsupportedOperation): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -271,7 +271,8 @@ object generateSwMod {
       __obj.asInstanceOf[GenerateSWConfig]
     }
     
-    extension [Self <: GenerateSWConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateSWConfig] (val x: Self) extends AnyVal {
       
       inline def setAdditionalManifestEntries(value: js.Array[ManifestEntry]): Self = StObject.set(x, "additionalManifestEntries", value.asInstanceOf[js.Any])
       

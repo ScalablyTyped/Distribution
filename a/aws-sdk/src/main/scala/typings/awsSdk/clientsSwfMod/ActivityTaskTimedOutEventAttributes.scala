@@ -33,7 +33,8 @@ object ActivityTaskTimedOutEventAttributes {
     __obj.asInstanceOf[ActivityTaskTimedOutEventAttributes]
   }
   
-  extension [Self <: ActivityTaskTimedOutEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityTaskTimedOutEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: LimitedData): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

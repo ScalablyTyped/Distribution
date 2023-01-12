@@ -15,7 +15,8 @@ object PruneNetworksInfo {
     __obj.asInstanceOf[PruneNetworksInfo]
   }
   
-  extension [Self <: PruneNetworksInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PruneNetworksInfo] (val x: Self) extends AnyVal {
     
     inline def setNetworksDeleted(value: js.Array[String]): Self = StObject.set(x, "NetworksDeleted", value.asInstanceOf[js.Any])
     

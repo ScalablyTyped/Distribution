@@ -25,7 +25,8 @@ object CSSDataV1 {
     __obj.asInstanceOf[CSSDataV1]
   }
   
-  extension [Self <: CSSDataV1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSDataV1] (val x: Self) extends AnyVal {
     
     inline def setAtDirectives(value: js.Array[IAtDirectiveData]): Self = StObject.set(x, "atDirectives", value.asInstanceOf[js.Any])
     

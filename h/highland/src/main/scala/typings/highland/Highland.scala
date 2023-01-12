@@ -29,7 +29,8 @@ object Highland {
       __obj.asInstanceOf[CleanupObject]
     }
     
-    extension [Self <: CleanupObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CleanupObject] (val x: Self) extends AnyVal {
       
       inline def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object Highland {
       __obj.asInstanceOf[Nil]
     }
     
-    extension [Self <: Nil](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nil] (val x: Self) extends AnyVal {
       
       inline def setHighland_NIL(value: Nil): Self = StObject.set(x, "Highland_NIL", value.asInstanceOf[js.Any])
     }
@@ -79,7 +81,8 @@ object Highland {
       __obj.asInstanceOf[PipeOptions]
     }
     
-    extension [Self <: PipeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PipeOptions] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     }
@@ -1269,7 +1272,8 @@ object Highland {
       __obj.asInstanceOf[StreamError]
     }
     
-    extension [Self <: StreamError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamError] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -1290,7 +1294,8 @@ object Highland {
       __obj.asInstanceOf[StreamRedirect[R]]
     }
     
-    extension [Self <: StreamRedirect[?], R](x: Self & StreamRedirect[R]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamRedirect[?], R] (val x: Self & StreamRedirect[R]) extends AnyVal {
       
       inline def setTo(value: Stream[R]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }

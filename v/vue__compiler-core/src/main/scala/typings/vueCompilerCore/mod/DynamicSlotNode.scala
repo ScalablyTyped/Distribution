@@ -19,7 +19,8 @@ object DynamicSlotNode {
     __obj.asInstanceOf[DynamicSlotNode]
   }
   
-  extension [Self <: DynamicSlotNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicSlotNode] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: js.Tuple2[Property, DynamicSlotFnProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }

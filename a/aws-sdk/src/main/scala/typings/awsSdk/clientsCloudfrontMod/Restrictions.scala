@@ -18,7 +18,8 @@ object Restrictions {
     __obj.asInstanceOf[Restrictions]
   }
   
-  extension [Self <: Restrictions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Restrictions] (val x: Self) extends AnyVal {
     
     inline def setGeoRestriction(value: GeoRestriction): Self = StObject.set(x, "GeoRestriction", value.asInstanceOf[js.Any])
   }

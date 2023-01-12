@@ -22,7 +22,8 @@ object ContactUsOptions {
     __obj.asInstanceOf[ContactUsOptions]
   }
   
-  extension [Self <: ContactUsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactUsOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: `18` | `20` | `22` | `24` | `30`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

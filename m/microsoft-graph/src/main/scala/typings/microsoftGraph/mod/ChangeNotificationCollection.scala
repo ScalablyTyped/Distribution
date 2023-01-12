@@ -24,7 +24,8 @@ object ChangeNotificationCollection {
     __obj.asInstanceOf[ChangeNotificationCollection]
   }
   
-  extension [Self <: ChangeNotificationCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeNotificationCollection] (val x: Self) extends AnyVal {
     
     inline def setValidationTokens(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "validationTokens", value.asInstanceOf[js.Any])
     

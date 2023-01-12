@@ -33,7 +33,8 @@ object distDeclarationsSrcSchedulePropsMod {
       __obj.asInstanceOf[DefaultProps[T]]
     }
     
-    extension [Self <: DefaultProps[?], T](x: Self & DefaultProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultProps[?], T] (val x: Self & DefaultProps[T]) extends AnyVal {
       
       inline def setCancel(value: MatchProp[T]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object distDeclarationsSrcSchedulePropsMod {
       __obj.asInstanceOf[ScheduledProps[T]]
     }
     
-    extension [Self <: ScheduledProps[?], T /* <: AnimationTarget[Any] */](x: Self & ScheduledProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScheduledProps[?], T /* <: AnimationTarget[Any] */] (val x: Self & ScheduledProps[T]) extends AnyVal {
       
       inline def setActions(value: Pause[T]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

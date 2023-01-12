@@ -28,7 +28,8 @@ object CreateSnapshotRequest {
     __obj.asInstanceOf[CreateSnapshotRequest]
   }
   
-  extension [Self <: CreateSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setNamespaceName(value: String): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
     

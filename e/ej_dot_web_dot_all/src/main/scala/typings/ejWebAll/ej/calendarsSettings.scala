@@ -15,7 +15,8 @@ object calendarsSettings {
     __obj.asInstanceOf[calendarsSettings]
   }
   
-  extension [Self <: calendarsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: calendarsSettings] (val x: Self) extends AnyVal {
     
     inline def setStandard(value: standardSettings): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,8 @@ object Rows {
     __obj.asInstanceOf[Rows[K, D]]
   }
   
-  extension [Self <: Rows[?, ?], K, D](x: Self & (Rows[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rows[?, ?], K, D] (val x: Self & (Rows[K, D])) extends AnyVal {
     
     inline def setRows(value: DataTypesDrag[K, D]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
   }

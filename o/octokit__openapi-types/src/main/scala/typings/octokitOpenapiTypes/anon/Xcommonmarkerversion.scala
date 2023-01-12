@@ -27,7 +27,8 @@ object Xcommonmarkerversion {
     __obj.asInstanceOf[Xcommonmarkerversion]
   }
   
-  extension [Self <: Xcommonmarkerversion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Xcommonmarkerversion] (val x: Self) extends AnyVal {
     
     inline def `setContent-type`(value: String): Self = StObject.set(x, "content-type", value.asInstanceOf[js.Any])
     

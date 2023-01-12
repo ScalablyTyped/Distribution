@@ -27,7 +27,8 @@ object Rx {
       __obj.asInstanceOf[IDisposable]
     }
     
-    extension [Self <: IDisposable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDisposable] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
@@ -65,7 +66,8 @@ object Rx {
       __obj.asInstanceOf[IScheduler]
     }
     
-    extension [Self <: IScheduler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScheduler] (val x: Self) extends AnyVal {
       
       inline def setCatch(value: js.Function1[/* exception */ Any, Boolean] => IScheduler): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
       
@@ -177,7 +179,8 @@ object Rx {
       __obj.asInstanceOf[Observer[T]]
     }
     
-    extension [Self <: Observer[?], T](x: Self & Observer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
       
       inline def setChecked(value: () => Observer[Any]): Self = StObject.set(x, "checked", js.Any.fromFunction0(value))
     }
@@ -199,7 +202,8 @@ object Rx {
       __obj.asInstanceOf[ObserverStatic]
     }
     
-    extension [Self <: ObserverStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObserverStatic] (val x: Self) extends AnyVal {
       
       inline def setNotifyOn(value: IScheduler => Observer[Any]): Self = StObject.set(x, "notifyOn", js.Any.fromFunction1(value))
     }

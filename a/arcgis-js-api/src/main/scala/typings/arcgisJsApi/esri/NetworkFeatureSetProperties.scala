@@ -22,7 +22,8 @@ object NetworkFeatureSetProperties {
     __obj.asInstanceOf[NetworkFeatureSetProperties]
   }
   
-  extension [Self <: NetworkFeatureSetProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkFeatureSetProperties] (val x: Self) extends AnyVal {
     
     inline def setDoNotLocateOnRestrictedElements(value: Boolean): Self = StObject.set(x, "doNotLocateOnRestrictedElements", value.asInstanceOf[js.Any])
     

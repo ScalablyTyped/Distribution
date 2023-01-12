@@ -18,7 +18,8 @@ object LastRunErrorStatus {
     __obj.asInstanceOf[LastRunErrorStatus]
   }
   
-  extension [Self <: LastRunErrorStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastRunErrorStatus] (val x: Self) extends AnyVal {
     
     inline def setCode(value: LastRunErrorStatusCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object RadioControlRegistry {
     __obj.asInstanceOf[RadioControlRegistry]
   }
   
-  extension [Self <: RadioControlRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioControlRegistry] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (NgControl, RadioControlValueAccessor) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

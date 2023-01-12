@@ -24,7 +24,8 @@ object TSBooleanKeyword_ {
     __obj.asInstanceOf[TSBooleanKeyword_]
   }
   
-  extension [Self <: TSBooleanKeyword_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSBooleanKeyword_] (val x: Self) extends AnyVal {
     
     inline def setType(value: TSBooleanKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

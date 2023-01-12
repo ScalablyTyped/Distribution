@@ -26,7 +26,8 @@ object PlusOrientationOrientationOption {
     __obj.asInstanceOf[PlusOrientationOrientationOption]
   }
   
-  extension [Self <: PlusOrientationOrientationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusOrientationOrientationOption] (val x: Self) extends AnyVal {
     
     inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     

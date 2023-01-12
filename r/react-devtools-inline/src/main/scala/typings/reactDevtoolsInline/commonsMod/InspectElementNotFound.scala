@@ -23,7 +23,8 @@ object InspectElementNotFound {
     __obj.asInstanceOf[InspectElementNotFound]
   }
   
-  extension [Self <: InspectElementNotFound](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectElementNotFound] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

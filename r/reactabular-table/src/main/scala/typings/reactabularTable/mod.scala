@@ -74,7 +74,8 @@ object mod {
       __obj.asInstanceOf[BodyProps]
     }
     
-    extension [Self <: BodyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object mod {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setCell(value: Formatters): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
@@ -162,7 +164,8 @@ object mod {
       __obj.asInstanceOf[HeaderProps]
     }
     
-    extension [Self <: HeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -199,7 +202,8 @@ object mod {
       __obj.asInstanceOf[ProviderProps]
     }
     
-    extension [Self <: ProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -238,7 +242,8 @@ object mod {
       __obj.asInstanceOf[Renderers]
     }
     
-    extension [Self <: Renderers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Renderers] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Row): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

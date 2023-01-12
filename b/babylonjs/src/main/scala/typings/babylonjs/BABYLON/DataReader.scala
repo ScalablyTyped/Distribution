@@ -70,7 +70,8 @@ object DataReader {
     __obj.asInstanceOf[DataReader]
   }
   
-  extension [Self <: DataReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataReader] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: IDataBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

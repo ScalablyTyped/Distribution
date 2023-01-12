@@ -487,7 +487,8 @@ object tabPanelTabPanelMod {
       __obj.asInstanceOf[TabPanelProps]
     }
     
-    extension [Self <: TabPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabPanelProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

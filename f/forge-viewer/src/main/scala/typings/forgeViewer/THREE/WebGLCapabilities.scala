@@ -59,7 +59,8 @@ object WebGLCapabilities {
     __obj.asInstanceOf[WebGLCapabilities]
   }
   
-  extension [Self <: WebGLCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLCapabilities] (val x: Self) extends AnyVal {
     
     inline def setFloatFragmentTextures(value: Any): Self = StObject.set(x, "floatFragmentTextures", value.asInstanceOf[js.Any])
     

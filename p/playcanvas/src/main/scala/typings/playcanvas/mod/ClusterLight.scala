@@ -19,7 +19,8 @@ object ClusterLight {
     __obj.asInstanceOf[ClusterLight]
   }
   
-  extension [Self <: ClusterLight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterLight] (val x: Self) extends AnyVal {
     
     inline def setLight(value: Any): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     

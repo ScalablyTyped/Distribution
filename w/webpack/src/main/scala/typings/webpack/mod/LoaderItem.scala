@@ -22,7 +22,8 @@ object LoaderItem {
     __obj.asInstanceOf[LoaderItem]
   }
   
-  extension [Self <: LoaderItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoaderItem] (val x: Self) extends AnyVal {
     
     inline def setIdent(value: String): Self = StObject.set(x, "ident", value.asInstanceOf[js.Any])
     

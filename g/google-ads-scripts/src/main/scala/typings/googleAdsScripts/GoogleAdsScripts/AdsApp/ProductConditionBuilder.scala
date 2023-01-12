@@ -31,7 +31,8 @@ object ProductConditionBuilder {
     __obj.asInstanceOf[ProductConditionBuilder]
   }
   
-  extension [Self <: ProductConditionBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductConditionBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithBid(value: Double => ProductConditionBuilder): Self = StObject.set(x, "withBid", js.Any.fromFunction1(value))
     

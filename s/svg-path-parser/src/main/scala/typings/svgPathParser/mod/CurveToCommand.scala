@@ -37,7 +37,8 @@ object CurveToCommand {
     __obj.asInstanceOf[CurveToCommand]
   }
   
-  extension [Self <: CurveToCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurveToCommand] (val x: Self) extends AnyVal {
     
     inline def setCode(value: c_ | C): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

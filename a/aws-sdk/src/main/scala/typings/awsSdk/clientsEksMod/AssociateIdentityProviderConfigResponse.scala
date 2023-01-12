@@ -20,7 +20,8 @@ object AssociateIdentityProviderConfigResponse {
     __obj.asInstanceOf[AssociateIdentityProviderConfigResponse]
   }
   
-  extension [Self <: AssociateIdentityProviderConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateIdentityProviderConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

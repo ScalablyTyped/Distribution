@@ -191,7 +191,8 @@ object Mergecommitsha {
     __obj.asInstanceOf[Mergecommitsha]
   }
   
-  extension [Self <: Mergecommitsha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mergecommitsha] (val x: Self) extends AnyVal {
     
     inline def setActive_lock_reason(value: String): Self = StObject.set(x, "active_lock_reason", value.asInstanceOf[js.Any])
     

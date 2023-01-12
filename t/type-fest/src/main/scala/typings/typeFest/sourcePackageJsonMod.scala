@@ -127,7 +127,8 @@ object sourcePackageJsonMod {
         __obj.asInstanceOf[DirectoryLocations]
       }
       
-      extension [Self <: DirectoryLocations](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DirectoryLocations] (val x: Self) extends AnyVal {
         
         inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
         
@@ -199,7 +200,8 @@ object sourcePackageJsonMod {
         __obj.asInstanceOf[JSPMConfiguration]
       }
       
-      extension [Self <: JSPMConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JSPMConfiguration] (val x: Self) extends AnyVal {
         
         inline def setJspm(value: PackageJson): Self = StObject.set(x, "jspm", value.asInstanceOf[js.Any])
         
@@ -228,7 +230,8 @@ object sourcePackageJsonMod {
         __obj.asInstanceOf[NodeJsStandard]
       }
       
-      extension [Self <: NodeJsStandard](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NodeJsStandard] (val x: Self) extends AnyVal {
         
         inline def setPackageManager(value: String): Self = StObject.set(x, "packageManager", value.asInstanceOf[js.Any])
         
@@ -266,7 +269,8 @@ object sourcePackageJsonMod {
         __obj.asInstanceOf[NonStandardEntryPoints]
       }
       
-      extension [Self <: NonStandardEntryPoints](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NonStandardEntryPoints] (val x: Self) extends AnyVal {
         
         inline def setBrowser(value: String | (Partial[Record[String, String | `false`]])): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
         
@@ -500,7 +504,8 @@ object sourcePackageJsonMod {
         __obj.asInstanceOf[PackageJsonStandard]
       }
       
-      extension [Self <: PackageJsonStandard](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PackageJsonStandard] (val x: Self) extends AnyVal {
         
         inline def setAuthor(value: Person): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
         
@@ -735,7 +740,8 @@ object sourcePackageJsonMod {
         __obj.asInstanceOf[PublishConfig]
       }
       
-      extension [Self <: PublishConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PublishConfig] (val x: Self) extends AnyVal {
         
         inline def setAccess(value: public | restricted): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
         
@@ -778,7 +784,8 @@ object sourcePackageJsonMod {
         __obj.asInstanceOf[TypeScriptConfiguration]
       }
       
-      extension [Self <: TypeScriptConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TypeScriptConfiguration] (val x: Self) extends AnyVal {
         
         inline def setTypes(value: String): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
         
@@ -814,7 +821,8 @@ object sourcePackageJsonMod {
         __obj.asInstanceOf[WorkspaceConfig]
       }
       
-      extension [Self <: WorkspaceConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WorkspaceConfig] (val x: Self) extends AnyVal {
         
         inline def setNohoist(value: js.Array[WorkspacePattern]): Self = StObject.set(x, "nohoist", value.asInstanceOf[js.Any])
         
@@ -866,7 +874,8 @@ object sourcePackageJsonMod {
         __obj.asInstanceOf[YarnConfiguration]
       }
       
-      extension [Self <: YarnConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: YarnConfiguration] (val x: Self) extends AnyVal {
         
         inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
         

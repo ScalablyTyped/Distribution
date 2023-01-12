@@ -34,7 +34,8 @@ object Criterion {
     __obj.asInstanceOf[Criterion]
   }
   
-  extension [Self <: Criterion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Criterion] (val x: Self) extends AnyVal {
     
     inline def setContains(value: ValueList): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     

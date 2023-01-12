@@ -25,7 +25,8 @@ object PolygonOptions {
     __obj.asInstanceOf[PolygonOptions]
   }
   
-  extension [Self <: PolygonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String | js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

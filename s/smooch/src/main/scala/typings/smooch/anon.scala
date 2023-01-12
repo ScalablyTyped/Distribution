@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[ConversationDataavatarUrl]
     }
     
-    extension [Self <: ConversationDataavatarUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConversationDataavatarUrl] (val x: Self) extends AnyVal {
       
       inline def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[PartialConversation]
     }
     
-    extension [Self <: PartialConversation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialConversation] (val x: Self) extends AnyVal {
       
       inline def setBusinessLastRead(value: Double): Self = StObject.set(x, "businessLastRead", value.asInstanceOf[js.Any])
       
@@ -141,7 +143,8 @@ object anon {
       __obj.asInstanceOf[PartialNullableConversati]
     }
     
-    extension [Self <: PartialNullableConversati](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialNullableConversati] (val x: Self) extends AnyVal {
       
       inline def setBusinessLastRead(value: Double): Self = StObject.set(x, "businessLastRead", value.asInstanceOf[js.Any])
       
@@ -239,7 +242,8 @@ object anon {
       __obj.asInstanceOf[PartialUser]
     }
     
-    extension [Self <: PartialUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialUser] (val x: Self) extends AnyVal {
       
       inline def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
       

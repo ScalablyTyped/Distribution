@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String | Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object anon {
       __obj.asInstanceOf[PartialChrome]
     }
     
-    extension [Self <: PartialChrome](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialChrome] (val x: Self) extends AnyVal {
       
       inline def setDisplayHeaderFooter(value: Boolean): Self = StObject.set(x, "displayHeaderFooter", value.asInstanceOf[js.Any])
       
@@ -266,7 +269,8 @@ object anon {
       __obj.asInstanceOf[PartialChromeImage]
     }
     
-    extension [Self <: PartialChromeImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialChromeImage] (val x: Self) extends AnyVal {
       
       inline def setClip(value: Height): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
       
@@ -344,7 +348,8 @@ object anon {
       __obj.asInstanceOf[PartialLaunchOptions]
     }
     
-    extension [Self <: PartialLaunchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLaunchOptions] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -452,7 +457,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowLocalFilesAccess(value: Boolean): Self = StObject.set(x, "allowLocalFilesAccess", value.asInstanceOf[js.Any])
       
@@ -516,7 +522,8 @@ object anon {
       __obj.asInstanceOf[Partialwidthstringheights]
     }
     
-    extension [Self <: Partialwidthstringheights](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Partialwidthstringheights] (val x: Self) extends AnyVal {
       
       inline def setDeviceScaleFactor(value: String): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
       

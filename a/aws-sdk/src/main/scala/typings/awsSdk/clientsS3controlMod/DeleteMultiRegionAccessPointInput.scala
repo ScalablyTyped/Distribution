@@ -18,7 +18,8 @@ object DeleteMultiRegionAccessPointInput {
     __obj.asInstanceOf[DeleteMultiRegionAccessPointInput]
   }
   
-  extension [Self <: DeleteMultiRegionAccessPointInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMultiRegionAccessPointInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: MultiRegionAccessPointName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

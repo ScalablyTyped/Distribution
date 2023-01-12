@@ -439,7 +439,8 @@ object sapTntInfoLabelMod {
       __obj.asInstanceOf[InfoLabelSettings]
     }
     
-    extension [Self <: InfoLabelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfoLabelSettings] (val x: Self) extends AnyVal {
       
       inline def setColorScheme(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
       

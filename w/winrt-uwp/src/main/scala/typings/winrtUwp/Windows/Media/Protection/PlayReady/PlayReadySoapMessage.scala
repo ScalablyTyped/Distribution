@@ -28,7 +28,8 @@ object PlayReadySoapMessage {
     __obj.asInstanceOf[PlayReadySoapMessage]
   }
   
-  extension [Self <: PlayReadySoapMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayReadySoapMessage] (val x: Self) extends AnyVal {
     
     inline def setGetMessageBody(value: () => js.Array[Double]): Self = StObject.set(x, "getMessageBody", js.Any.fromFunction0(value))
     

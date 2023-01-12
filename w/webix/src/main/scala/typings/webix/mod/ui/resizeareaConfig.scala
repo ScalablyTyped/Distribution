@@ -37,7 +37,8 @@ object resizeareaConfig {
     __obj.asInstanceOf[resizeareaConfig]
   }
   
-  extension [Self <: resizeareaConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: resizeareaConfig] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

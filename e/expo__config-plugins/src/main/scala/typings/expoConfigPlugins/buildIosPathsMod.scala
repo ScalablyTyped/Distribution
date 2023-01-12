@@ -79,7 +79,8 @@ object buildIosPathsMod {
       __obj.asInstanceOf[ProjectFile[L]]
     }
     
-    extension [Self <: ProjectFile[?], L /* <: String */](x: Self & ProjectFile[L]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectFile[?], L /* <: String */] (val x: Self & ProjectFile[L]) extends AnyVal {
       
       inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       

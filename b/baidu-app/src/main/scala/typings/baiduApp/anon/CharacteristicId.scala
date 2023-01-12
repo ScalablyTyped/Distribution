@@ -28,7 +28,8 @@ object CharacteristicId {
     __obj.asInstanceOf[CharacteristicId]
   }
   
-  extension [Self <: CharacteristicId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharacteristicId] (val x: Self) extends AnyVal {
     
     inline def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
     

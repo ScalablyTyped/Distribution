@@ -28,7 +28,8 @@ object CancelMLTaskRunResponse {
     __obj.asInstanceOf[CancelMLTaskRunResponse]
   }
   
-  extension [Self <: CancelMLTaskRunResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelMLTaskRunResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: TaskStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

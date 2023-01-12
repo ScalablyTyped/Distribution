@@ -82,7 +82,8 @@ object focusTargetMod {
       __obj.asInstanceOf[FocusTarget]
     }
     
-    extension [Self <: FocusTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusTarget] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
@@ -112,7 +113,8 @@ object focusTargetMod {
       __obj.asInstanceOf[FocusTargetOptions]
     }
     
-    extension [Self <: FocusTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       

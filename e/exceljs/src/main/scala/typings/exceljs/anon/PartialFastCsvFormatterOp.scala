@@ -40,7 +40,8 @@ object PartialFastCsvFormatterOp {
     __obj.asInstanceOf[PartialFastCsvFormatterOp]
   }
   
-  extension [Self <: PartialFastCsvFormatterOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFastCsvFormatterOp] (val x: Self) extends AnyVal {
     
     inline def setAlwaysWriteHeaders(value: Boolean): Self = StObject.set(x, "alwaysWriteHeaders", value.asInstanceOf[js.Any])
     

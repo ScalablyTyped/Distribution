@@ -19,7 +19,8 @@ object Anonymous {
     __obj.asInstanceOf[Anonymous]
   }
   
-  extension [Self <: Anonymous](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Anonymous] (val x: Self) extends AnyVal {
     
     inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     

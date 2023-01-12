@@ -61,7 +61,8 @@ object Printing3DModel {
     __obj.asInstanceOf[Printing3DModel]
   }
   
-  extension [Self <: Printing3DModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printing3DModel] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: Printing3DComponent): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object NodeRendererProps {
     __obj.asInstanceOf[NodeRendererProps[T]]
   }
   
-  extension [Self <: NodeRendererProps[?], T](x: Self & NodeRendererProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeRendererProps[?], T] (val x: Self & NodeRendererProps[T]) extends AnyVal {
     
     inline def setButtons(value: js.Array[Element]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

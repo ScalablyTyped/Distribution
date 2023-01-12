@@ -39,7 +39,8 @@ object libChartsBarMod {
       __obj.asInstanceOf[IBarProps]
     }
     
-    extension [Self <: IBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBarProps] (val x: Self) extends AnyVal {
       
       inline def setAutoLabel(value: Boolean): Self = StObject.set(x, "autoLabel", value.asInstanceOf[js.Any])
       

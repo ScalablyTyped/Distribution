@@ -22,7 +22,8 @@ object Scale {
     __obj.asInstanceOf[Scale]
   }
   
-  extension [Self <: Scale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scale] (val x: Self) extends AnyVal {
     
     inline def setRotation(value: Property | Quaternion): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     

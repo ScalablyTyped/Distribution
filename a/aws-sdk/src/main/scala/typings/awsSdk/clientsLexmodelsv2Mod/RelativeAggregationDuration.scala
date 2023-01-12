@@ -23,7 +23,8 @@ object RelativeAggregationDuration {
     __obj.asInstanceOf[RelativeAggregationDuration]
   }
   
-  extension [Self <: RelativeAggregationDuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeAggregationDuration] (val x: Self) extends AnyVal {
     
     inline def setTimeDimension(value: TimeDimension): Self = StObject.set(x, "timeDimension", value.asInstanceOf[js.Any])
     

@@ -77,7 +77,8 @@ object mod {
       __obj.asInstanceOf[ProtectionConfig]
     }
     
-    extension [Self <: ProtectionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtectionConfig] (val x: Self) extends AnyVal {
       
       inline def setClientRetrySecs(value: Double): Self = StObject.set(x, "clientRetrySecs", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object mod {
       __obj.asInstanceOf[ProtectionInstance]
     }
     
-    extension [Self <: ProtectionInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtectionInstance] (val x: Self) extends AnyVal {
       
       inline def setEventLoopDelay(value: Double): Self = StObject.set(x, "eventLoopDelay", value.asInstanceOf[js.Any])
       

@@ -41,7 +41,8 @@ object distTypesInternalSchedulerTimeoutProviderMod {
       __obj.asInstanceOf[TimeoutProvider_]
     }
     
-    extension [Self <: TimeoutProvider_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeoutProvider_] (val x: Self) extends AnyVal {
       
       inline def setClearTimeout(value: /* handle */ TimerHandle => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
       

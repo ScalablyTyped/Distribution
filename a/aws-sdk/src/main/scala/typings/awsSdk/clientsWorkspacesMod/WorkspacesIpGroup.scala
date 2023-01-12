@@ -33,7 +33,8 @@ object WorkspacesIpGroup {
     __obj.asInstanceOf[WorkspacesIpGroup]
   }
   
-  extension [Self <: WorkspacesIpGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspacesIpGroup] (val x: Self) extends AnyVal {
     
     inline def setGroupDesc(value: IpGroupDesc): Self = StObject.set(x, "groupDesc", value.asInstanceOf[js.Any])
     

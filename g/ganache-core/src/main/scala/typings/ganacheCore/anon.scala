@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Log]
     }
     
-    extension [Self <: Log](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
       
       inline def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     }

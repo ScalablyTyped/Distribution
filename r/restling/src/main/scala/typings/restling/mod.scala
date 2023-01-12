@@ -162,7 +162,8 @@ object mod {
       __obj.asInstanceOf[RestlingOptions]
     }
     
-    extension [Self <: RestlingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestlingOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -247,7 +248,8 @@ object mod {
       __obj.asInstanceOf[RestlingResult]
     }
     
-    extension [Self <: RestlingResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestlingResult] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

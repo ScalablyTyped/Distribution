@@ -35,7 +35,8 @@ object baseThemeMod {
       __obj.asInstanceOf[ThemeContextValue[TTransformProps, TNewProps]]
     }
     
-    extension [Self <: ThemeContextValue[?, ?], TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */](x: Self & (ThemeContextValue[TTransformProps, TNewProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeContextValue[?, ?], TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */] (val x: Self & (ThemeContextValue[TTransformProps, TNewProps])) extends AnyVal {
       
       inline def setTransform(
         value: (/* props */ ClassName & Partial[TTransformProps], /* componentName */ String, /* location */ js.UndefOr[String]) => ReturnType[TransformFunction[TTransformProps, TNewProps]]

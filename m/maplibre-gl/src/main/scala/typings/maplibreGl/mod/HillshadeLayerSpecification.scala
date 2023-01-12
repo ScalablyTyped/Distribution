@@ -39,7 +39,8 @@ object HillshadeLayerSpecification {
     __obj.asInstanceOf[HillshadeLayerSpecification]
   }
   
-  extension [Self <: HillshadeLayerSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HillshadeLayerSpecification] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: FilterSpecification): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

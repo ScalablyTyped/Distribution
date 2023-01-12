@@ -35,7 +35,8 @@ object LayoutDataLikeObject {
     __obj.asInstanceOf[LayoutDataLikeObject]
   }
   
-  extension [Self <: LayoutDataLikeObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutDataLikeObject] (val x: Self) extends AnyVal {
     
     inline def setBaseline(value: auto | SiblingReferenceValue | `true`): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     

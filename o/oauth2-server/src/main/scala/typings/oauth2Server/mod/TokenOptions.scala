@@ -45,7 +45,8 @@ object TokenOptions {
     __obj.asInstanceOf[TokenOptions]
   }
   
-  extension [Self <: TokenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessTokenLifetime(value: Double): Self = StObject.set(x, "accessTokenLifetime", value.asInstanceOf[js.Any])
     

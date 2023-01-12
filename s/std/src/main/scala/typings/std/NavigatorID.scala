@@ -58,7 +58,8 @@ object NavigatorID {
     __obj.asInstanceOf[NavigatorID]
   }
   
-  extension [Self <: NavigatorID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorID] (val x: Self) extends AnyVal {
     
     inline def setAppCodeName(value: java.lang.String): Self = StObject.set(x, "appCodeName", value.asInstanceOf[js.Any])
     

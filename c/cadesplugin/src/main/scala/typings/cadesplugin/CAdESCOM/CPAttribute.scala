@@ -21,7 +21,8 @@ object CPAttribute {
     __obj.asInstanceOf[CPAttribute]
   }
   
-  extension [Self <: CPAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CPAttribute] (val x: Self) extends AnyVal {
     
     inline def setName(value: ValuesOf[CADESCOM_ATTRIBUTE]): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

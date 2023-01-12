@@ -48,7 +48,8 @@ object UpdateNodegroupVersionRequest {
     __obj.asInstanceOf[UpdateNodegroupVersionRequest]
   }
   
-  extension [Self <: UpdateNodegroupVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateNodegroupVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object Reporter {
     __obj.asInstanceOf[Reporter]
   }
   
-  extension [Self <: Reporter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reporter] (val x: Self) extends AnyVal {
     
     inline def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     

@@ -105,7 +105,8 @@ object mod {
       __obj.asInstanceOf[JustifiedLayoutOptions]
     }
     
-    extension [Self <: JustifiedLayoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JustifiedLayoutOptions] (val x: Self) extends AnyVal {
       
       inline def setBoxSpacing(value: Double | Horizontal): Self = StObject.set(x, "boxSpacing", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object mod {
       __obj.asInstanceOf[JustifiedLayoutResult]
     }
     
-    extension [Self <: JustifiedLayoutResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JustifiedLayoutResult] (val x: Self) extends AnyVal {
       
       inline def setBoxes(value: js.Array[LayoutBox]): Self = StObject.set(x, "boxes", value.asInstanceOf[js.Any])
       
@@ -230,7 +232,8 @@ object mod {
       __obj.asInstanceOf[LayoutBox]
     }
     
-    extension [Self <: LayoutBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutBox] (val x: Self) extends AnyVal {
       
       inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       

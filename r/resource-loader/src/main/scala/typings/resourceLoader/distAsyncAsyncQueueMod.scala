@@ -87,7 +87,8 @@ object distAsyncAsyncQueueMod {
       __obj.asInstanceOf[ITask[T]]
     }
     
-    extension [Self <: ITask[?], T](x: Self & ITask[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITask[?], T] (val x: Self & ITask[T]) extends AnyVal {
       
       inline def setCallback(value: IItemCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       

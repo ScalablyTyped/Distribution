@@ -34,7 +34,8 @@ object Dueon {
     __obj.asInstanceOf[Dueon]
   }
   
-  extension [Self <: Dueon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dueon] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

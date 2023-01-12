@@ -620,7 +620,8 @@ object distDeclarationsSrcAnimatedMod {
   }
   object AnimatedPrimitives {
     
-    extension [Self <: AnimatedPrimitives](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedPrimitives] (val x: Self) extends AnyVal {
       
       inline def setA(
         value: AnimatedComponent[

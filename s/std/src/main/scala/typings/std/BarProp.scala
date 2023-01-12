@@ -16,7 +16,8 @@ object BarProp {
     __obj.asInstanceOf[BarProp]
   }
   
-  extension [Self <: BarProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarProp] (val x: Self) extends AnyVal {
     
     inline def setVisible(value: scala.Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object NodeRangeProperty {
     __obj.asInstanceOf[NodeRangeProperty]
   }
   
-  extension [Self <: NodeRangeProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeRangeProperty] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: ContainerProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

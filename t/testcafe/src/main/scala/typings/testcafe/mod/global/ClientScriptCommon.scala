@@ -15,7 +15,8 @@ object ClientScriptCommon {
     __obj.asInstanceOf[ClientScriptCommon]
   }
   
-  extension [Self <: ClientScriptCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientScriptCommon] (val x: Self) extends AnyVal {
     
     inline def setPage(value: Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

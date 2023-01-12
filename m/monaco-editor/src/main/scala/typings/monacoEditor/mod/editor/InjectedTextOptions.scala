@@ -40,7 +40,8 @@ object InjectedTextOptions {
     __obj.asInstanceOf[InjectedTextOptions]
   }
   
-  extension [Self <: InjectedTextOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InjectedTextOptions] (val x: Self) extends AnyVal {
     
     inline def setAttachedData(value: Any): Self = StObject.set(x, "attachedData", value.asInstanceOf[js.Any])
     

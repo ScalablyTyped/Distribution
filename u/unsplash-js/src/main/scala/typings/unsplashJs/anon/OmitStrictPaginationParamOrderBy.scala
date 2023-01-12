@@ -26,7 +26,8 @@ object OmitStrictPaginationParamOrderBy {
     __obj.asInstanceOf[OmitStrictPaginationParamOrderBy]
   }
   
-  extension [Self <: OmitStrictPaginationParamOrderBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitStrictPaginationParamOrderBy] (val x: Self) extends AnyVal {
     
     inline def setOrderBy(value: TopicOrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     

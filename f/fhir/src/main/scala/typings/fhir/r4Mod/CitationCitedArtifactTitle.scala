@@ -32,7 +32,8 @@ object CitationCitedArtifactTitle {
     __obj.asInstanceOf[CitationCitedArtifactTitle]
   }
   
-  extension [Self <: CitationCitedArtifactTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitationCitedArtifactTitle] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: CodeableConcept): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

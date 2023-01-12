@@ -28,7 +28,8 @@ object DescribeCrossAccountAccessRoleResponse {
     __obj.asInstanceOf[DescribeCrossAccountAccessRoleResponse]
   }
   
-  extension [Self <: DescribeCrossAccountAccessRoleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCrossAccountAccessRoleResponse] (val x: Self) extends AnyVal {
     
     inline def setRegisteredAt(value: js.Date): Self = StObject.set(x, "registeredAt", value.asInstanceOf[js.Any])
     

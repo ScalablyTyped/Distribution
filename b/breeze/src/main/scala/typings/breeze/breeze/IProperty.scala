@@ -38,7 +38,8 @@ object IProperty {
     __obj.asInstanceOf[IProperty]
   }
   
-  extension [Self <: IProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProperty] (val x: Self) extends AnyVal {
     
     inline def setCustom(value: Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

@@ -184,7 +184,8 @@ object TargetedKeyboardEvent {
     __obj.asInstanceOf[TargetedKeyboardEvent[Target]]
   }
   
-  extension [Self <: TargetedKeyboardEvent[?], Target /* <: EventTarget */](x: Self & TargetedKeyboardEvent[Target]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedKeyboardEvent[?], Target /* <: EventTarget */] (val x: Self & TargetedKeyboardEvent[Target]) extends AnyVal {
     
     inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
     

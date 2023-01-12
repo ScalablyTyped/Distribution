@@ -18,7 +18,8 @@ object StartDocumentTextDetectionResponse {
     __obj.asInstanceOf[StartDocumentTextDetectionResponse]
   }
   
-  extension [Self <: StartDocumentTextDetectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartDocumentTextDetectionResponse] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

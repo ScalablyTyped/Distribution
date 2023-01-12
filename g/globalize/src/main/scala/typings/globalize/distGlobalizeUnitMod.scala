@@ -90,7 +90,8 @@ object distGlobalizeUnitMod extends Shortcut {
         __obj.asInstanceOf[UnitFormatterOptions]
       }
       
-      extension [Self <: UnitFormatterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UnitFormatterOptions] (val x: Self) extends AnyVal {
         
         inline def setForm(value: long | short | narrow): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
         

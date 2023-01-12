@@ -67,7 +67,8 @@ object ViewportHyphenFallback {
     __obj.asInstanceOf[ViewportHyphenFallback[TLength]]
   }
   
-  extension [Self <: ViewportHyphenFallback[?], TLength](x: Self & ViewportHyphenFallback[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewportHyphenFallback[?], TLength] (val x: Self & ViewportHyphenFallback[TLength]) extends AnyVal {
     
     inline def `set-ms-height`(value: ViewportHeightProperty[TLength] | js.Array[ViewportHeightProperty[TLength]]): Self = StObject.set(x, "-ms-height", value.asInstanceOf[js.Any])
     

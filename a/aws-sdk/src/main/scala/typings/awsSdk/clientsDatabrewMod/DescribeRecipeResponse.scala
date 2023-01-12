@@ -78,7 +78,8 @@ object DescribeRecipeResponse {
     __obj.asInstanceOf[DescribeRecipeResponse]
   }
   
-  extension [Self <: DescribeRecipeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRecipeResponse] (val x: Self) extends AnyVal {
     
     inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     

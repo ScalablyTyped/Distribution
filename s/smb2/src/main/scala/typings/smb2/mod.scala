@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[SMB2Options]
     }
     
-    extension [Self <: SMB2Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SMB2Options] (val x: Self) extends AnyVal {
       
       inline def setAutoCloseTimeout(value: Double): Self = StObject.set(x, "autoCloseTimeout", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object mod {
       __obj.asInstanceOf[SMB2ReadFileOptions]
     }
     
-    extension [Self <: SMB2ReadFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SMB2ReadFileOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

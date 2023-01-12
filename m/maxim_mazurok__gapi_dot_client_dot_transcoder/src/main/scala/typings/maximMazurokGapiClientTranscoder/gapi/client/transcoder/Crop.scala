@@ -25,7 +25,8 @@ object Crop {
     __obj.asInstanceOf[Crop]
   }
   
-  extension [Self <: Crop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Crop] (val x: Self) extends AnyVal {
     
     inline def setBottomPixels(value: Double): Self = StObject.set(x, "bottomPixels", value.asInstanceOf[js.Any])
     

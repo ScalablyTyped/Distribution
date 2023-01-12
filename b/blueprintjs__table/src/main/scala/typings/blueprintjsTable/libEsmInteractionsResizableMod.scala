@@ -132,7 +132,8 @@ object libEsmInteractionsResizableMod {
       __obj.asInstanceOf[IResizeableState]
     }
     
-    extension [Self <: IResizeableState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResizeableState] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

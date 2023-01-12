@@ -19,7 +19,8 @@ object Replication {
     __obj.asInstanceOf[Replication]
   }
   
-  extension [Self <: Replication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Replication] (val x: Self) extends AnyVal {
     
     inline def setAutomatic(value: Automatic): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
     

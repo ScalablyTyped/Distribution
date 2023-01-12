@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[RavenMiddlewareOptions[T]]
     }
     
-    extension [Self <: RavenMiddlewareOptions[?], T](x: Self & RavenMiddlewareOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RavenMiddlewareOptions[?], T] (val x: Self & RavenMiddlewareOptions[T]) extends AnyVal {
       
       inline def setActionTransformer(value: /* action */ Action[Any] => Action[Any]): Self = StObject.set(x, "actionTransformer", js.Any.fromFunction1(value))
       
@@ -82,7 +83,8 @@ object mod {
       __obj.asInstanceOf[RavenUserContext]
     }
     
-    extension [Self <: RavenUserContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RavenUserContext] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

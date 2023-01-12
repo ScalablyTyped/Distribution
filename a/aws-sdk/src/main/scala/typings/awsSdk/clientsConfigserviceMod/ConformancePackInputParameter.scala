@@ -23,7 +23,8 @@ object ConformancePackInputParameter {
     __obj.asInstanceOf[ConformancePackInputParameter]
   }
   
-  extension [Self <: ConformancePackInputParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConformancePackInputParameter] (val x: Self) extends AnyVal {
     
     inline def setParameterName(value: ParameterName): Self = StObject.set(x, "ParameterName", value.asInstanceOf[js.Any])
     

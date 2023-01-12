@@ -33,7 +33,8 @@ object ConfigStreamDeliveryInfo {
     __obj.asInstanceOf[ConfigStreamDeliveryInfo]
   }
   
-  extension [Self <: ConfigStreamDeliveryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigStreamDeliveryInfo] (val x: Self) extends AnyVal {
     
     inline def setLastErrorCode(value: String): Self = StObject.set(x, "lastErrorCode", value.asInstanceOf[js.Any])
     

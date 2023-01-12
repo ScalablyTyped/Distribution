@@ -391,7 +391,8 @@ object anon {
       __obj.asInstanceOf[FileName]
     }
     
-    extension [Self <: FileName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileName] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -412,7 +413,8 @@ object anon {
       __obj.asInstanceOf[TypeofScriptSnapshot]
     }
     
-    extension [Self <: TypeofScriptSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofScriptSnapshot] (val x: Self) extends AnyVal {
       
       inline def setFromString(value: String => IScriptSnapshot): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
     }

@@ -49,7 +49,8 @@ object libDataSourceExecutorMod {
       __obj.asInstanceOf[DataSourceExecutor]
     }
     
-    extension [Self <: DataSourceExecutor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceExecutor] (val x: Self) extends AnyVal {
       
       inline def setAddDataSource(value: Any): Self = StObject.set(x, "addDataSource", value.asInstanceOf[js.Any])
       

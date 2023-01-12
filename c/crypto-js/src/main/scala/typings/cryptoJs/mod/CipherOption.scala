@@ -26,7 +26,8 @@ object CipherOption {
     __obj.asInstanceOf[CipherOption]
   }
   
-  extension [Self <: CipherOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CipherOption] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: Format_): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

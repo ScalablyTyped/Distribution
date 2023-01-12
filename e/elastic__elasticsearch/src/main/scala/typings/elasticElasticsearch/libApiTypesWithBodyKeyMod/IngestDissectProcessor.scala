@@ -23,7 +23,8 @@ object IngestDissectProcessor {
     __obj.asInstanceOf[IngestDissectProcessor]
   }
   
-  extension [Self <: IngestDissectProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestDissectProcessor] (val x: Self) extends AnyVal {
     
     inline def setAppend_separator(value: String): Self = StObject.set(x, "append_separator", value.asInstanceOf[js.Any])
     

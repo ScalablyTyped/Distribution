@@ -170,7 +170,8 @@ object mod {
       __obj.asInstanceOf[Group]
     }
     
-    extension [Self <: Group](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
       
       inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object mod {
       __obj.asInstanceOf[Limit]
     }
     
-    extension [Self <: Limit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
       
       inline def setHard(value: Double): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
       
@@ -243,7 +245,8 @@ object mod {
       __obj.asInstanceOf[LogMask]
     }
     
-    extension [Self <: LogMask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogMask] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: Boolean): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
@@ -282,7 +285,8 @@ object mod {
       __obj.asInstanceOf[LogOption]
     }
     
-    extension [Self <: LogOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogOption] (val x: Self) extends AnyVal {
       
       inline def setCons(value: PosixMask): Self = StObject.set(x, "cons", value.asInstanceOf[js.Any])
       
@@ -329,7 +333,8 @@ object mod {
       __obj.asInstanceOf[Passwd]
     }
     
-    extension [Self <: Passwd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Passwd] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -411,7 +416,8 @@ object mod {
       __obj.asInstanceOf[PriorityMask]
     }
     
-    extension [Self <: PriorityMask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PriorityMask] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: PosixMask): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
@@ -490,7 +496,8 @@ object mod {
       __obj.asInstanceOf[SwapFlags]
     }
     
-    extension [Self <: SwapFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwapFlags] (val x: Self) extends AnyVal {
       
       inline def setDiscard(value: PosixMask): Self = StObject.set(x, "discard", value.asInstanceOf[js.Any])
       

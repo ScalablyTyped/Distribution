@@ -23,7 +23,8 @@ object CommentRule {
     __obj.asInstanceOf[CommentRule]
   }
   
-  extension [Self <: CommentRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentRule] (val x: Self) extends AnyVal {
     
     inline def setBlockComment(value: CharacterPair): Self = StObject.set(x, "blockComment", value.asInstanceOf[js.Any])
     

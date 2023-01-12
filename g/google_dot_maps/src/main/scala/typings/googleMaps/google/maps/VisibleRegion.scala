@@ -31,7 +31,8 @@ object VisibleRegion {
     __obj.asInstanceOf[VisibleRegion]
   }
   
-  extension [Self <: VisibleRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisibleRegion] (val x: Self) extends AnyVal {
     
     inline def setFarLeft(value: LatLng): Self = StObject.set(x, "farLeft", value.asInstanceOf[js.Any])
     

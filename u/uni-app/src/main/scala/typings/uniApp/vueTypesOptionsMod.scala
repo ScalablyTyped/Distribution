@@ -31,7 +31,8 @@ object vueTypesOptionsMod {
       __obj.asInstanceOf[ComponentOptions[V]]
     }
     
-    extension [Self <: ComponentOptions[?], V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */](x: Self & ComponentOptions[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentOptions[?], V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */] (val x: Self & ComponentOptions[V]) extends AnyVal {
       
       inline def setMpType(value: String): Self = StObject.set(x, "mpType", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object vueTypesOptionsMod {
       __obj.asInstanceOf[Hooks]
     }
     
-    extension [Self <: Hooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hooks] (val x: Self) extends AnyVal {
       
       inline def setOnBackPress(value: /* options */ BackPressOption => Any): Self = StObject.set(x, "onBackPress", js.Any.fromFunction1(value))
       

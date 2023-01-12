@@ -23,7 +23,8 @@ object ShaderDefineOrOperator {
     __obj.asInstanceOf[ShaderDefineOrOperator]
   }
   
-  extension [Self <: ShaderDefineOrOperator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShaderDefineOrOperator] (val x: Self) extends AnyVal {
     
     inline def setLeftOperand(value: ShaderDefineExpression): Self = StObject.set(x, "leftOperand", value.asInstanceOf[js.Any])
     

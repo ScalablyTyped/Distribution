@@ -107,7 +107,8 @@ object libCommonFileOperationsMod {
       __obj.asInstanceOf[Event[I]]
     }
     
-    extension [Self <: Event[?], I](x: Self & Event[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event[?], I] (val x: Self & Event[I]) extends AnyVal {
       
       inline def setFiles(value: js.Array[I]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -167,7 +168,8 @@ object libCommonFileOperationsMod {
       __obj.asInstanceOf[FileOperationsMiddleware]
     }
     
-    extension [Self <: FileOperationsMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOperationsMiddleware] (val x: Self) extends AnyVal {
       
       inline def setDidCreateFiles(value: NextSignature[FileCreateEvent, js.Promise[Unit]]): Self = StObject.set(x, "didCreateFiles", value.asInstanceOf[js.Any])
       
@@ -206,7 +208,8 @@ object libCommonFileOperationsMod {
       __obj.asInstanceOf[FileOperationsWorkspaceMiddleware]
     }
     
-    extension [Self <: FileOperationsWorkspaceMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOperationsWorkspaceMiddleware] (val x: Self) extends AnyVal {
       
       inline def setWorkspace(value: FileOperationsMiddleware): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
       

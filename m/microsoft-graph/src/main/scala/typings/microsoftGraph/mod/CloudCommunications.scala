@@ -24,7 +24,8 @@ object CloudCommunications {
     __obj.asInstanceOf[CloudCommunications]
   }
   
-  extension [Self <: CloudCommunications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudCommunications] (val x: Self) extends AnyVal {
     
     inline def setCallRecords(value: NullableOption[js.Array[CallRecord]]): Self = StObject.set(x, "callRecords", value.asInstanceOf[js.Any])
     

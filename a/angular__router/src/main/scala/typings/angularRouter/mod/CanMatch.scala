@@ -18,7 +18,8 @@ object CanMatch {
     __obj.asInstanceOf[CanMatch]
   }
   
-  extension [Self <: CanMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanMatch] (val x: Self) extends AnyVal {
     
     inline def setCanMatch(
       value: (Route, js.Array[UrlSegment]) => (Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree

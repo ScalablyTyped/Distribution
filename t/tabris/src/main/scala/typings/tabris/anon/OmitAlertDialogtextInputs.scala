@@ -343,7 +343,8 @@ object OmitAlertDialogtextInputs {
     __obj.asInstanceOf[OmitAlertDialogtextInputs]
   }
   
-  extension [Self <: OmitAlertDialogtextInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitAlertDialogtextInputs] (val x: Self) extends AnyVal {
     
     inline def set$getProperty(value: /* name */ String => Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
     

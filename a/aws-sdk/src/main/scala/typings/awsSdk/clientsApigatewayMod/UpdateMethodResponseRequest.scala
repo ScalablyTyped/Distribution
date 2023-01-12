@@ -38,7 +38,8 @@ object UpdateMethodResponseRequest {
     __obj.asInstanceOf[UpdateMethodResponseRequest]
   }
   
-  extension [Self <: UpdateMethodResponseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMethodResponseRequest] (val x: Self) extends AnyVal {
     
     inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     

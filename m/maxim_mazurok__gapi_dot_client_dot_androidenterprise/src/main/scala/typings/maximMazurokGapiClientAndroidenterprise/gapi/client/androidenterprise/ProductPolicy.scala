@@ -38,7 +38,8 @@ object ProductPolicy {
     __obj.asInstanceOf[ProductPolicy]
   }
   
-  extension [Self <: ProductPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductPolicy] (val x: Self) extends AnyVal {
     
     inline def setAutoInstallPolicy(value: AutoInstallPolicy): Self = StObject.set(x, "autoInstallPolicy", value.asInstanceOf[js.Any])
     

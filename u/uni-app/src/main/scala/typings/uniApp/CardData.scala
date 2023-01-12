@@ -33,7 +33,8 @@ object CardData {
     __obj.asInstanceOf[CardData]
   }
   
-  extension [Self <: CardData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardData] (val x: Self) extends AnyVal {
     
     inline def setCardExt(value: String): Self = StObject.set(x, "cardExt", value.asInstanceOf[js.Any])
     

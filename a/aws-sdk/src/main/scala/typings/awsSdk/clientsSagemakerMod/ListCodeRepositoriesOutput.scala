@@ -23,7 +23,8 @@ object ListCodeRepositoriesOutput {
     __obj.asInstanceOf[ListCodeRepositoriesOutput]
   }
   
-  extension [Self <: ListCodeRepositoriesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCodeRepositoriesOutput] (val x: Self) extends AnyVal {
     
     inline def setCodeRepositorySummaryList(value: CodeRepositorySummaryList): Self = StObject.set(x, "CodeRepositorySummaryList", value.asInstanceOf[js.Any])
     

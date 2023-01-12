@@ -19,7 +19,8 @@ object MlTokenizationConfigContainer {
     __obj.asInstanceOf[MlTokenizationConfigContainer]
   }
   
-  extension [Self <: MlTokenizationConfigContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTokenizationConfigContainer] (val x: Self) extends AnyVal {
     
     inline def setBert(value: MlNlpBertTokenizationConfig): Self = StObject.set(x, "bert", value.asInstanceOf[js.Any])
     

@@ -627,7 +627,8 @@ object PasswordPropsmessageProps {
     __obj.asInstanceOf[PasswordPropsmessageProps]
   }
   
-  extension [Self <: PasswordPropsmessageProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordPropsmessageProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

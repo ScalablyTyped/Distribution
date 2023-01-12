@@ -63,7 +63,8 @@ object IActionSheet {
     __obj.asInstanceOf[IActionSheet]
   }
   
-  extension [Self <: IActionSheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IActionSheet] (val x: Self) extends AnyVal {
     
     inline def setGetBottom(value: () => Double): Self = StObject.set(x, "getBottom", js.Any.fromFunction0(value))
     

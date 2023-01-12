@@ -63,7 +63,8 @@ object SpecimenDefinitionTypeTested {
     __obj.asInstanceOf[SpecimenDefinitionTypeTested]
   }
   
-  extension [Self <: SpecimenDefinitionTypeTested](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecimenDefinitionTypeTested] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: SpecimenDefinitionTypeTestedContainer): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

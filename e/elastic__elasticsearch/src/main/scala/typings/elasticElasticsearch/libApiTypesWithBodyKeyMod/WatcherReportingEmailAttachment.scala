@@ -23,7 +23,8 @@ object WatcherReportingEmailAttachment {
     __obj.asInstanceOf[WatcherReportingEmailAttachment]
   }
   
-  extension [Self <: WatcherReportingEmailAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherReportingEmailAttachment] (val x: Self) extends AnyVal {
     
     inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     

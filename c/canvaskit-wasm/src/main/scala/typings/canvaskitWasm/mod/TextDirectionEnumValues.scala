@@ -19,7 +19,8 @@ object TextDirectionEnumValues {
     __obj.asInstanceOf[TextDirectionEnumValues]
   }
   
-  extension [Self <: TextDirectionEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDirectionEnumValues] (val x: Self) extends AnyVal {
     
     inline def setLTR(value: TextDirection): Self = StObject.set(x, "LTR", value.asInstanceOf[js.Any])
     

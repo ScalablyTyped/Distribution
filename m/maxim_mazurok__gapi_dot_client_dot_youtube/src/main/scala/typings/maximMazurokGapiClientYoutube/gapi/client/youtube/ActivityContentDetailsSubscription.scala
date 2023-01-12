@@ -16,7 +16,8 @@ object ActivityContentDetailsSubscription {
     __obj.asInstanceOf[ActivityContentDetailsSubscription]
   }
   
-  extension [Self <: ActivityContentDetailsSubscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityContentDetailsSubscription] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     

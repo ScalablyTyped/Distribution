@@ -54,7 +54,8 @@ object TypeofTransformConstraint {
     __obj.asInstanceOf[TypeofTransformConstraint]
   }
   
-  extension [Self <: TypeofTransformConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTransformConstraint] (val x: Self) extends AnyVal {
     
     inline def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
     

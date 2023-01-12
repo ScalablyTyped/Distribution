@@ -38,7 +38,8 @@ object Relevance {
     __obj.asInstanceOf[Relevance]
   }
   
-  extension [Self <: Relevance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Relevance] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Duration): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     

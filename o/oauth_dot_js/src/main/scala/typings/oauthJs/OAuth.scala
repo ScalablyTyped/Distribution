@@ -32,7 +32,8 @@ object OAuth {
       __obj.asInstanceOf[Accessor]
     }
     
-    extension [Self <: Accessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accessor] (val x: Self) extends AnyVal {
       
       inline def setAccessorSecret(value: String): Self = StObject.set(x, "accessorSecret", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object OAuth {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -111,7 +113,8 @@ object OAuth {
       __obj.asInstanceOf[SignatureMethod]
     }
     
-    extension [Self <: SignatureMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureMethod] (val x: Self) extends AnyVal {
       
       inline def setGetSignature(value: String => String): Self = StObject.set(x, "getSignature", js.Any.fromFunction1(value))
       
@@ -177,7 +180,8 @@ object OAuth {
       __obj.asInstanceOf[SignatureMethodStatic]
     }
     
-    extension [Self <: SignatureMethodStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureMethodStatic] (val x: Self) extends AnyVal {
       
       inline def setGetBaseString(value: Message => String): Self = StObject.set(x, "getBaseString", js.Any.fromFunction1(value))
       
@@ -251,7 +255,8 @@ object OAuth {
       __obj.asInstanceOf[Uri]
     }
     
-    extension [Self <: Uri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Uri] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       

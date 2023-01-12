@@ -97,7 +97,8 @@ object stream {
         __obj.asInstanceOf[ArchiverZipOptions]
       }
       
-      extension [Self <: ArchiverZipOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ArchiverZipOptions] (val x: Self) extends AnyVal {
         
         inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
         
@@ -145,7 +146,8 @@ object stream {
         __obj.asInstanceOf[WorkbookStreamReaderOptions]
       }
       
-      extension [Self <: WorkbookStreamReaderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WorkbookStreamReaderOptions] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: emit | ignore): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -192,7 +194,8 @@ object stream {
         __obj.asInstanceOf[WorkbookStreamWriterOptions]
       }
       
-      extension [Self <: WorkbookStreamWriterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WorkbookStreamWriterOptions] (val x: Self) extends AnyVal {
         
         inline def setZip(value: PartialArchiverZipOptions): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
       }
@@ -228,7 +231,8 @@ object stream {
         __obj.asInstanceOf[WorkbookWriterOptions]
       }
       
-      extension [Self <: WorkbookWriterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WorkbookWriterOptions] (val x: Self) extends AnyVal {
         
         inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
         
@@ -257,7 +261,8 @@ object stream {
         __obj.asInstanceOf[WorksheetReaderOptions]
       }
       
-      extension [Self <: WorksheetReaderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WorksheetReaderOptions] (val x: Self) extends AnyVal {
         
         inline def setEntry(value: Stream): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
         
@@ -315,7 +320,8 @@ object stream {
         __obj.asInstanceOf[ZlibOptions]
       }
       
-      extension [Self <: ZlibOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ZlibOptions] (val x: Self) extends AnyVal {
         
         inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
         

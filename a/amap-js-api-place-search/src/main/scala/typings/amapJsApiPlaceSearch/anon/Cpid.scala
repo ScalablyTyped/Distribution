@@ -19,7 +19,8 @@ object Cpid {
     __obj.asInstanceOf[Cpid]
   }
   
-  extension [Self <: Cpid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cpid] (val x: Self) extends AnyVal {
     
     inline def setCpid(value: String): Self = StObject.set(x, "cpid", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object AudioDataCopyToOptions {
     __obj.asInstanceOf[AudioDataCopyToOptions]
   }
   
-  extension [Self <: AudioDataCopyToOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioDataCopyToOptions] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: AudioSampleFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

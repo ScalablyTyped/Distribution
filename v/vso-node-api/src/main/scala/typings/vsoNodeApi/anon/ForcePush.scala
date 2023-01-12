@@ -29,7 +29,8 @@ object ForcePush {
     __obj.asInstanceOf[ForcePush]
   }
   
-  extension [Self <: ForcePush](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForcePush] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: scala.Double): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

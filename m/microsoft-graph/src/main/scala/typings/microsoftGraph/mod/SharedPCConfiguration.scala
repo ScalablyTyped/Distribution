@@ -60,7 +60,8 @@ object SharedPCConfiguration {
     __obj.asInstanceOf[SharedPCConfiguration]
   }
   
-  extension [Self <: SharedPCConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedPCConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAccountManagerPolicy(value: NullableOption[SharedPCAccountManagerPolicy]): Self = StObject.set(x, "accountManagerPolicy", value.asInstanceOf[js.Any])
     

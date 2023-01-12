@@ -18,7 +18,8 @@ object StatefulPolicyPreservedState {
     __obj.asInstanceOf[StatefulPolicyPreservedState]
   }
   
-  extension [Self <: StatefulPolicyPreservedState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatefulPolicyPreservedState] (val x: Self) extends AnyVal {
     
     inline def setDisks(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.StatefulPolicyPreservedStateDiskDevice} */ js.Any

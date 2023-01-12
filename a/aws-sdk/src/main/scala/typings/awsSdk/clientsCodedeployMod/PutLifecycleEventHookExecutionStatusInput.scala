@@ -28,7 +28,8 @@ object PutLifecycleEventHookExecutionStatusInput {
     __obj.asInstanceOf[PutLifecycleEventHookExecutionStatusInput]
   }
   
-  extension [Self <: PutLifecycleEventHookExecutionStatusInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutLifecycleEventHookExecutionStatusInput] (val x: Self) extends AnyVal {
     
     inline def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     

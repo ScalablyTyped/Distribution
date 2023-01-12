@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[NormalizeWhitespace]
     }
     
-    extension [Self <: NormalizeWhitespace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizeWhitespace] (val x: Self) extends AnyVal {
       
       inline def setNormalizeWhitespace(value: Boolean): Self = StObject.set(x, "normalizeWhitespace", value.asInstanceOf[js.Any])
     }

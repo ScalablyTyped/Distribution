@@ -24,7 +24,8 @@ object CodeDescription {
   
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeDescription */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeDescription */ Boolean]
   
-  extension [Self <: CodeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeDescription] (val x: Self) extends AnyVal {
     
     inline def setHref(value: URI): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
   }

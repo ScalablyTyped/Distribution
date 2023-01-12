@@ -33,7 +33,8 @@ object SyntaxHighlighterBaseProps {
     __obj.asInstanceOf[SyntaxHighlighterBaseProps]
   }
   
-  extension [Self <: SyntaxHighlighterBaseProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxHighlighterBaseProps] (val x: Self) extends AnyVal {
     
     inline def setCodeTagProps(value: HTMLProps[HTMLElement]): Self = StObject.set(x, "codeTagProps", value.asInstanceOf[js.Any])
     

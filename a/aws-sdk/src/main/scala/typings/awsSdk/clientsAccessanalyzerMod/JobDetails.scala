@@ -38,7 +38,8 @@ object JobDetails {
     __obj.asInstanceOf[JobDetails]
   }
   
-  extension [Self <: JobDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobDetails] (val x: Self) extends AnyVal {
     
     inline def setCompletedOn(value: js.Date): Self = StObject.set(x, "completedOn", value.asInstanceOf[js.Any])
     

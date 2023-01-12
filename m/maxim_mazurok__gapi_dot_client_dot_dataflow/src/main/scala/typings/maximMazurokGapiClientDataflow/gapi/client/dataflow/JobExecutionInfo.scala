@@ -18,7 +18,8 @@ object JobExecutionInfo {
     __obj.asInstanceOf[JobExecutionInfo]
   }
   
-  extension [Self <: JobExecutionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobExecutionInfo] (val x: Self) extends AnyVal {
     
     inline def setStages(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.JobExecutionStageInfo} */ js.Any

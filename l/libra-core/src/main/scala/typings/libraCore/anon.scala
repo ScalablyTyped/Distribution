@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[PartialCallOptions]
     }
     
-    extension [Self <: PartialCallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCallOptions] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: CallCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       

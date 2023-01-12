@@ -32,7 +32,8 @@ object DeleteLogPatternRequest {
     __obj.asInstanceOf[DeleteLogPatternRequest]
   }
   
-  extension [Self <: DeleteLogPatternRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLogPatternRequest] (val x: Self) extends AnyVal {
     
     inline def setPatternName(value: LogPatternName): Self = StObject.set(x, "PatternName", value.asInstanceOf[js.Any])
     

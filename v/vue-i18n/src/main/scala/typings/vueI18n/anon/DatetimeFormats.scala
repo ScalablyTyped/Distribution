@@ -19,7 +19,8 @@ object DatetimeFormats {
     __obj.asInstanceOf[DatetimeFormats]
   }
   
-  extension [Self <: DatetimeFormats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatetimeFormats] (val x: Self) extends AnyVal {
     
     inline def setDatetimeFormats(value: Any): Self = StObject.set(x, "datetimeFormats", value.asInstanceOf[js.Any])
     

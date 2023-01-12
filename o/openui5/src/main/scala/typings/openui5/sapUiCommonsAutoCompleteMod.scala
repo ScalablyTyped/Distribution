@@ -290,7 +290,8 @@ object sapUiCommonsAutoCompleteMod {
       __obj.asInstanceOf[AutoCompleteSettings]
     }
     
-    extension [Self <: AutoCompleteSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoCompleteSettings] (val x: Self) extends AnyVal {
       
       inline def setEnableScrolling(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "enableScrolling", value.asInstanceOf[js.Any])
       

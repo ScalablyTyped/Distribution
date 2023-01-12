@@ -33,7 +33,8 @@ object srcShiftentercommandMod {
       __obj.asInstanceOf[ShiftEnterCommand]
     }
     
-    extension [Self <: ShiftEnterCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShiftEnterCommand] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: () => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       
@@ -55,7 +56,8 @@ object srcShiftentercommandMod {
         __obj.asInstanceOf[Commands]
       }
       
-      extension [Self <: Commands](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Commands] (val x: Self) extends AnyVal {
         
         inline def setShiftEnterCommand(value: ShiftEnterCommand): Self = StObject.set(x, "ShiftEnterCommand", value.asInstanceOf[js.Any])
       }

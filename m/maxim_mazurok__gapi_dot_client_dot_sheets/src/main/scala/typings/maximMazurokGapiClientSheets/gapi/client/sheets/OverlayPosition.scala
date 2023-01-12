@@ -28,7 +28,8 @@ object OverlayPosition {
     __obj.asInstanceOf[OverlayPosition]
   }
   
-  extension [Self <: OverlayPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverlayPosition] (val x: Self) extends AnyVal {
     
     inline def setAnchorCell(value: GridCoordinate): Self = StObject.set(x, "anchorCell", value.asInstanceOf[js.Any])
     

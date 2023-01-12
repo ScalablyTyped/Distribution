@@ -20,7 +20,8 @@ object TransformProcessingConfig {
     __obj.asInstanceOf[TransformProcessingConfig]
   }
   
-  extension [Self <: TransformProcessingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformProcessingConfig] (val x: Self) extends AnyVal {
     
     inline def setComputeLocation(value: ComputeLocation): Self = StObject.set(x, "computeLocation", value.asInstanceOf[js.Any])
     

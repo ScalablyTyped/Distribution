@@ -70,7 +70,8 @@ object CalloutFormat {
     __obj.asInstanceOf[CalloutFormat]
   }
   
-  extension [Self <: CalloutFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalloutFormat] (val x: Self) extends AnyVal {
     
     inline def setAccent(value: MsoTriState): Self = StObject.set(x, "Accent", value.asInstanceOf[js.Any])
     

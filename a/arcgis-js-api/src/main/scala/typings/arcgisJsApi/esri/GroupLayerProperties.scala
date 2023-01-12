@@ -47,7 +47,8 @@ object GroupLayerProperties {
     __obj.asInstanceOf[GroupLayerProperties]
   }
   
-  extension [Self <: GroupLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     

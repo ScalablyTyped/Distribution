@@ -22,7 +22,8 @@ object PosDataProvidersPosDataProvider {
     __obj.asInstanceOf[PosDataProvidersPosDataProvider]
   }
   
-  extension [Self <: PosDataProvidersPosDataProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PosDataProvidersPosDataProvider] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

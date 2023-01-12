@@ -338,7 +338,8 @@ object Actionsheetitemfontsize {
     __obj.asInstanceOf[Actionsheetitemfontsize]
   }
   
-  extension [Self <: Actionsheetitemfontsize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Actionsheetitemfontsize] (val x: Self) extends AnyVal {
     
     inline def setAction_sheet_zindex(value: Double): Self = StObject.set(x, "action_sheet_zindex", value.asInstanceOf[js.Any])
     

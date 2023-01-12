@@ -23,7 +23,8 @@ object TranslationSettings {
     __obj.asInstanceOf[TranslationSettings]
   }
   
-  extension [Self <: TranslationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslationSettings] (val x: Self) extends AnyVal {
     
     inline def setFormality(value: Formality): Self = StObject.set(x, "Formality", value.asInstanceOf[js.Any])
     

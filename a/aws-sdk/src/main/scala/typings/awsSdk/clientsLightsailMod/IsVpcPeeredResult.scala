@@ -18,7 +18,8 @@ object IsVpcPeeredResult {
     __obj.asInstanceOf[IsVpcPeeredResult]
   }
   
-  extension [Self <: IsVpcPeeredResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsVpcPeeredResult] (val x: Self) extends AnyVal {
     
     inline def setIsPeered(value: Boolean): Self = StObject.set(x, "isPeered", value.asInstanceOf[js.Any])
     

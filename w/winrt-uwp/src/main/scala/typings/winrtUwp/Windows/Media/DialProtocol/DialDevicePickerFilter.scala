@@ -18,7 +18,8 @@ object DialDevicePickerFilter {
     __obj.asInstanceOf[DialDevicePickerFilter]
   }
   
-  extension [Self <: DialDevicePickerFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialDevicePickerFilter] (val x: Self) extends AnyVal {
     
     inline def setSupportedAppNames(value: IVector[String]): Self = StObject.set(x, "supportedAppNames", value.asInstanceOf[js.Any])
   }

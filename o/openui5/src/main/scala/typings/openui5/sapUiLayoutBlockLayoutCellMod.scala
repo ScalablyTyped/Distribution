@@ -525,7 +525,8 @@ object sapUiLayoutBlockLayoutCellMod {
       __obj.asInstanceOf[BlockLayoutCellSettings]
     }
     
-    extension [Self <: BlockLayoutCellSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockLayoutCellSettings] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColorSet(
         value: BlockLayoutCellColorSet | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BlockLayoutCellColorSet * / any */ String) | PropertyBindingInfo

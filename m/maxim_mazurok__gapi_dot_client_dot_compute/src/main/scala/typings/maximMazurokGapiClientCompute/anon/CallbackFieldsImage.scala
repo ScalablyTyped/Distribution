@@ -71,7 +71,8 @@ object CallbackFieldsImage {
     __obj.asInstanceOf[CallbackFieldsImage]
   }
   
-  extension [Self <: CallbackFieldsImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackFieldsImage] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object Edge {
     __obj.asInstanceOf[Edge]
   }
   
-  extension [Self <: Edge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: CbCallback => Unit): Self = StObject.set(x, "columns", js.Any.fromFunction1(value))
     

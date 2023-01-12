@@ -226,7 +226,8 @@ object mod {
       __obj.asInstanceOf[FlowChunk]
     }
     
-    extension [Self <: FlowChunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowChunk] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
@@ -308,7 +309,8 @@ object mod {
       __obj.asInstanceOf[FlowChunkParams]
     }
     
-    extension [Self <: FlowChunkParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowChunkParams] (val x: Self) extends AnyVal {
       
       inline def setFlowChunkNumber(value: Double): Self = StObject.set(x, "flowChunkNumber", value.asInstanceOf[js.Any])
       
@@ -381,7 +383,8 @@ object mod {
       __obj.asInstanceOf[FlowEventMap]
     }
     
-    extension [Self <: FlowEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowEventMap] (val x: Self) extends AnyVal {
       
       inline def setCatchAll(value: CatchAllCallbackArguments): Self = StObject.set(x, "catchAll", value.asInstanceOf[js.Any])
       
@@ -510,7 +513,8 @@ object mod {
       __obj.asInstanceOf[FlowFile]
     }
     
-    extension [Self <: FlowFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowFile] (val x: Self) extends AnyVal {
       
       inline def setAverageSpeed(value: Double): Self = StObject.set(x, "averageSpeed", value.asInstanceOf[js.Any])
       
@@ -630,7 +634,8 @@ object mod {
       __obj.asInstanceOf[FlowOptions]
     }
     
-    extension [Self <: FlowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowDuplicateUploads(value: Boolean): Self = StObject.set(x, "allowDuplicateUploads", value.asInstanceOf[js.Any])
       

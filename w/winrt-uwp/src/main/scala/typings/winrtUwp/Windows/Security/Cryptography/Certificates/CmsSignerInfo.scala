@@ -23,7 +23,8 @@ object CmsSignerInfo {
     __obj.asInstanceOf[CmsSignerInfo]
   }
   
-  extension [Self <: CmsSignerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CmsSignerInfo] (val x: Self) extends AnyVal {
     
     inline def setCertificate(value: Certificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     

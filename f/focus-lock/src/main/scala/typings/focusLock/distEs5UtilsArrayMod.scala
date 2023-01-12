@@ -30,7 +30,8 @@ object distEs5UtilsArrayMod {
       __obj.asInstanceOf[ListOf[TNode]]
     }
     
-    extension [Self <: ListOf[?], TNode](x: Self & ListOf[TNode]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListOf[?], TNode] (val x: Self & ListOf[TNode]) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }

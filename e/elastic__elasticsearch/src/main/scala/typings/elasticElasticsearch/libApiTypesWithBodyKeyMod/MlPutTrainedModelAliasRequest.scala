@@ -21,7 +21,8 @@ object MlPutTrainedModelAliasRequest {
     __obj.asInstanceOf[MlPutTrainedModelAliasRequest]
   }
   
-  extension [Self <: MlPutTrainedModelAliasRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPutTrainedModelAliasRequest] (val x: Self) extends AnyVal {
     
     inline def setModel_alias(value: Name): Self = StObject.set(x, "model_alias", value.asInstanceOf[js.Any])
     

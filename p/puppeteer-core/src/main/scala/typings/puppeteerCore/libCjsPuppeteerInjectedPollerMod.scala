@@ -79,7 +79,8 @@ object libCjsPuppeteerInjectedPollerMod {
       __obj.asInstanceOf[Poller[T]]
     }
     
-    extension [Self <: Poller[?], T](x: Self & Poller[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Poller[?], T] (val x: Self & Poller[T]) extends AnyVal {
       
       inline def setResult(value: () => js.Promise[T]): Self = StObject.set(x, "result", js.Any.fromFunction0(value))
       

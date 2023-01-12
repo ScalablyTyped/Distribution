@@ -43,7 +43,8 @@ object TypeQuery {
     __obj.asInstanceOf[TypeQuery]
   }
   
-  extension [Self <: TypeQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeQuery] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

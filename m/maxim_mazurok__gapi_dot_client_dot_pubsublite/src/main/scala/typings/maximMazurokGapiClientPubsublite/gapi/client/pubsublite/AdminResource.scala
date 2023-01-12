@@ -15,7 +15,8 @@ object AdminResource {
     __obj.asInstanceOf[AdminResource]
   }
   
-  extension [Self <: AdminResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminResource] (val x: Self) extends AnyVal {
     
     inline def setProjects(value: ProjectsResource): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
   }

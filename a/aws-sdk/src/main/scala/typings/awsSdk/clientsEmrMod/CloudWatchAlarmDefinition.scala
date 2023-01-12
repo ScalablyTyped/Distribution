@@ -63,7 +63,8 @@ object CloudWatchAlarmDefinition {
     __obj.asInstanceOf[CloudWatchAlarmDefinition]
   }
   
-  extension [Self <: CloudWatchAlarmDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudWatchAlarmDefinition] (val x: Self) extends AnyVal {
     
     inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     

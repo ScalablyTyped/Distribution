@@ -26,7 +26,8 @@ object TimeStampReqJson {
     __obj.asInstanceOf[TimeStampReqJson]
   }
   
-  extension [Self <: TimeStampReqJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeStampReqJson] (val x: Self) extends AnyVal {
     
     inline def setCertReq(value: Boolean): Self = StObject.set(x, "certReq", value.asInstanceOf[js.Any])
     

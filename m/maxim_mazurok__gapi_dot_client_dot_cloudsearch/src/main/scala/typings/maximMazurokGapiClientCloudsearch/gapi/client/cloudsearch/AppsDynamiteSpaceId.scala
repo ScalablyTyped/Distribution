@@ -16,7 +16,8 @@ object AppsDynamiteSpaceId {
     __obj.asInstanceOf[AppsDynamiteSpaceId]
   }
   
-  extension [Self <: AppsDynamiteSpaceId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSpaceId] (val x: Self) extends AnyVal {
     
     inline def setSpaceId(value: String): Self = StObject.set(x, "spaceId", value.asInstanceOf[js.Any])
     

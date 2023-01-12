@@ -16,7 +16,8 @@ object SocketBindInfo {
     __obj.asInstanceOf[SocketBindInfo]
   }
   
-  extension [Self <: SocketBindInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocketBindInfo] (val x: Self) extends AnyVal {
     
     inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object BrokerMetadata {
     __obj.asInstanceOf[BrokerMetadata]
   }
   
-  extension [Self <: BrokerMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrokerMetadata] (val x: Self) extends AnyVal {
     
     inline def setBrokers(value: js.Array[Rack]): Self = StObject.set(x, "brokers", value.asInstanceOf[js.Any])
     

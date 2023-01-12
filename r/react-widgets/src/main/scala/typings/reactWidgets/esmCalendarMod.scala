@@ -350,7 +350,8 @@ object esmCalendarMod {
       __obj.asInstanceOf[CalendarProps[TLocalizer]]
     }
     
-    extension [Self <: CalendarProps[?], TLocalizer](x: Self & CalendarProps[TLocalizer]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarProps[?], TLocalizer] (val x: Self & CalendarProps[TLocalizer]) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object ContinuousDeploymentTriggerIssue {
     __obj.asInstanceOf[ContinuousDeploymentTriggerIssue]
   }
   
-  extension [Self <: ContinuousDeploymentTriggerIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuousDeploymentTriggerIssue] (val x: Self) extends AnyVal {
     
     inline def setArtifactType(value: String): Self = StObject.set(x, "artifactType", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal] (val x: Self) extends AnyVal {
     
     inline def setAdsPersonalizationEnabled(value: Boolean): Self = StObject.set(x, "adsPersonalizationEnabled", value.asInstanceOf[js.Any])
     

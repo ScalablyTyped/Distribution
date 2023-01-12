@@ -18,7 +18,8 @@ object FontResourceData {
     __obj.asInstanceOf[FontResourceData[Resources]]
   }
   
-  extension [Self <: FontResourceData[?], Resources /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof Resources ]: tabris.tabris.Font} */ js.Any */](x: Self & FontResourceData[Resources]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontResourceData[?], Resources /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof Resources ]: tabris.tabris.Font} */ js.Any */] (val x: Self & FontResourceData[Resources]) extends AnyVal {
     
     inline def setBuild(value: Selectable[FontValue]): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

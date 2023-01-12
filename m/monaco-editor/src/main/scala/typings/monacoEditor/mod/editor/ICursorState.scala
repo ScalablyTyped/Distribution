@@ -20,7 +20,8 @@ object ICursorState {
     __obj.asInstanceOf[ICursorState]
   }
   
-  extension [Self <: ICursorState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICursorState] (val x: Self) extends AnyVal {
     
     inline def setInSelectionMode(value: Boolean): Self = StObject.set(x, "inSelectionMode", value.asInstanceOf[js.Any])
     

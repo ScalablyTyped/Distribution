@@ -18,7 +18,8 @@ object JQueryUI {
       __obj.asInstanceOf[UI]
     }
     
-    extension [Self <: UI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UI] (val x: Self) extends AnyVal {
       
       inline def setFancytree(value: FancytreeStatic): Self = StObject.set(x, "fancytree", value.asInstanceOf[js.Any])
     }

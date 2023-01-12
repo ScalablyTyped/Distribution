@@ -27,7 +27,8 @@ object HttpDownloadProgressEvent {
     __obj.asInstanceOf[HttpDownloadProgressEvent]
   }
   
-  extension [Self <: HttpDownloadProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpDownloadProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setPartialText(value: String): Self = StObject.set(x, "partialText", value.asInstanceOf[js.Any])
     

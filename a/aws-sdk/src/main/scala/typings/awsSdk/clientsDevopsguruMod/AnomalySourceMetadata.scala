@@ -28,7 +28,8 @@ object AnomalySourceMetadata {
     __obj.asInstanceOf[AnomalySourceMetadata]
   }
   
-  extension [Self <: AnomalySourceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnomalySourceMetadata] (val x: Self) extends AnyVal {
     
     inline def setSource(value: AnomalySource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     

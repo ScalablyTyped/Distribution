@@ -36,7 +36,8 @@ object ManagedDeviceMobileAppConfigurationDeviceSummary {
     __obj.asInstanceOf[ManagedDeviceMobileAppConfigurationDeviceSummary]
   }
   
-  extension [Self <: ManagedDeviceMobileAppConfigurationDeviceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedDeviceMobileAppConfigurationDeviceSummary] (val x: Self) extends AnyVal {
     
     inline def setConfigurationVersion(value: Double): Self = StObject.set(x, "configurationVersion", value.asInstanceOf[js.Any])
     

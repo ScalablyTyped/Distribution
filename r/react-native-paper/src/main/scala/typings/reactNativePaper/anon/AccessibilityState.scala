@@ -100,7 +100,8 @@ object AccessibilityState {
     __obj.asInstanceOf[AccessibilityState]
   }
   
-  extension [Self <: AccessibilityState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibilityState] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

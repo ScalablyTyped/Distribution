@@ -17,7 +17,8 @@ object ParametersQueryToolguid {
     __obj.asInstanceOf[ParametersQueryToolguid]
   }
   
-  extension [Self <: ParametersQueryToolguid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryToolguid] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryToolguid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

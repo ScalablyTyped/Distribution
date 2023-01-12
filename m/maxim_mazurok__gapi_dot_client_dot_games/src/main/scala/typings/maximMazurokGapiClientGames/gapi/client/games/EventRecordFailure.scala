@@ -22,7 +22,8 @@ object EventRecordFailure {
     __obj.asInstanceOf[EventRecordFailure]
   }
   
-  extension [Self <: EventRecordFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventRecordFailure] (val x: Self) extends AnyVal {
     
     inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     

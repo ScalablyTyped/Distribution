@@ -33,7 +33,8 @@ object Jurisdiction {
     __obj.asInstanceOf[Jurisdiction]
   }
   
-  extension [Self <: Jurisdiction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Jurisdiction] (val x: Self) extends AnyVal {
     
     inline def setAllowSystemCreatedSeal(value: String): Self = StObject.set(x, "allowSystemCreatedSeal", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object WorkspaceDiagnosticParams {
     __obj.asInstanceOf[WorkspaceDiagnosticParams]
   }
   
-  extension [Self <: WorkspaceDiagnosticParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceDiagnosticParams] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

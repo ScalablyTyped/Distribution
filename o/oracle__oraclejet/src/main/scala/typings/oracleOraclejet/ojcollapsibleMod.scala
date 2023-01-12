@@ -346,7 +346,8 @@ object ojcollapsibleMod {
       __obj.asInstanceOf[ojCollapsibleEventMap]
     }
     
-    extension [Self <: ojCollapsibleEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojCollapsibleEventMap] (val x: Self) extends AnyVal {
       
       inline def setDisabledChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "disabledChanged", value.asInstanceOf[js.Any])
       
@@ -381,7 +382,8 @@ object ojcollapsibleMod {
       __obj.asInstanceOf[ojCollapsibleSettableProperties]
     }
     
-    extension [Self <: ojCollapsibleSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojCollapsibleSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -411,7 +413,8 @@ object ojcollapsibleMod {
       __obj.asInstanceOf[ojCollapsibleSettablePropertiesLenient]
     }
     
-    extension [Self <: ojCollapsibleSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojCollapsibleSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

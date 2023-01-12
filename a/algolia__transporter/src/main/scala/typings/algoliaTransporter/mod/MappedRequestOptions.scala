@@ -39,7 +39,8 @@ object MappedRequestOptions {
     __obj.asInstanceOf[MappedRequestOptions]
   }
   
-  extension [Self <: MappedRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappedRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
     

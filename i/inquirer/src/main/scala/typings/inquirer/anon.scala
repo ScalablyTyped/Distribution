@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Choices]
     }
     
-    extension [Self <: Choices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Choices] (val x: Self) extends AnyVal {
       
       inline def setChoices(value: default[Answers]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
     }
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Default[T]]
     }
     
-    extension [Self <: Default[?], T /* <: Answers */](x: Self & Default[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Default[?], T /* <: Answers */] (val x: Self & Default[T]) extends AnyVal {
       
       inline def setChoices(value: ChoiceCollection[T]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object anon {
       __obj.asInstanceOf[IsFinal]
     }
     
-    extension [Self <: IsFinal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsFinal] (val x: Self) extends AnyVal {
       
       inline def setIsFinal(value: Boolean): Self = StObject.set(x, "isFinal", value.asInstanceOf[js.Any])
       
@@ -108,7 +111,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: separator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -125,7 +129,8 @@ object anon {
       __obj.asInstanceOf[Ui[T]]
     }
     
-    extension [Self <: Ui[?], T /* <: Answers */](x: Self & Ui[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ui[?], T /* <: Answers */] (val x: Self & Ui[T]) extends AnyVal {
       
       inline def setUi(value: Prompt[T]): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     }

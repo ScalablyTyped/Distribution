@@ -15,7 +15,8 @@ object SecurityDeletePrivilegesFoundStatus {
     __obj.asInstanceOf[SecurityDeletePrivilegesFoundStatus]
   }
   
-  extension [Self <: SecurityDeletePrivilegesFoundStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityDeletePrivilegesFoundStatus] (val x: Self) extends AnyVal {
     
     inline def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
   }

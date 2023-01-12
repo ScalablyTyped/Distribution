@@ -468,7 +468,8 @@ object libComponentsDataTableTableContainerMod extends Shortcut {
       __obj.asInstanceOf[TableContainerProps]
     }
     
-    extension [Self <: TableContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableContainerProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object FilterDropDownOpenedEventUIParam {
     __obj.asInstanceOf[FilterDropDownOpenedEventUIParam]
   }
   
-  extension [Self <: FilterDropDownOpenedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterDropDownOpenedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setDropDownElement(value: String): Self = StObject.set(x, "dropDownElement", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object RadioButtonChangeEvent {
     __obj.asInstanceOf[RadioButtonChangeEvent]
   }
   
-  extension [Self <: RadioButtonChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioButtonChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Any): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

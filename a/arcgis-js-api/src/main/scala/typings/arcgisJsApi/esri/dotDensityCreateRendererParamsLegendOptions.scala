@@ -20,7 +20,8 @@ object dotDensityCreateRendererParamsLegendOptions {
     __obj.asInstanceOf[dotDensityCreateRendererParamsLegendOptions]
   }
   
-  extension [Self <: dotDensityCreateRendererParamsLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dotDensityCreateRendererParamsLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     

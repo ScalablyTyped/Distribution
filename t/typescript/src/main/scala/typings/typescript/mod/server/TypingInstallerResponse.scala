@@ -17,7 +17,8 @@ object TypingInstallerResponse {
     __obj.asInstanceOf[TypingInstallerResponse]
   }
   
-  extension [Self <: TypingInstallerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypingInstallerResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(
       value: ActionSet | ActionInvalidate | EventTypesRegistry | ActionPackageInstalled | EventBeginInstallTypes | EventEndInstallTypes | EventInitializationFailed

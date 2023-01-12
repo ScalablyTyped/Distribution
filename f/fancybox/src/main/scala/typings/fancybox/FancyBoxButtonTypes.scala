@@ -35,7 +35,8 @@ object FancyBoxButtonTypes {
     __obj.asInstanceOf[FancyBoxButtonTypes]
   }
   
-  extension [Self <: FancyBoxButtonTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxButtonTypes] (val x: Self) extends AnyVal {
     
     inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

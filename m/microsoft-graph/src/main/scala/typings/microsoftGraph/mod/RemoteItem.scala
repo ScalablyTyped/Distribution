@@ -80,7 +80,8 @@ object RemoteItem {
     __obj.asInstanceOf[RemoteItem]
   }
   
-  extension [Self <: RemoteItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteItem] (val x: Self) extends AnyVal {
     
     inline def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     

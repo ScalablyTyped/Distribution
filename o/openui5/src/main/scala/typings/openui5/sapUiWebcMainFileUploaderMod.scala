@@ -755,7 +755,8 @@ object sapUiWebcMainFileUploaderMod {
       __obj.asInstanceOf[FileUploaderSettings]
     }
     
-    extension [Self <: FileUploaderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploaderSettings] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String | PropertyBindingInfo): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       

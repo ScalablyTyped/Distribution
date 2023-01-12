@@ -37,7 +37,8 @@ object clientsMigrationhubconfigMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object clientsMigrationhubconfigMod {
       __obj.asInstanceOf[CreateHomeRegionControlRequest]
     }
     
-    extension [Self <: CreateHomeRegionControlRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateHomeRegionControlRequest] (val x: Self) extends AnyVal {
       
       inline def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object clientsMigrationhubconfigMod {
       __obj.asInstanceOf[CreateHomeRegionControlResult]
     }
     
-    extension [Self <: CreateHomeRegionControlResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateHomeRegionControlResult] (val x: Self) extends AnyVal {
       
       inline def setHomeRegionControl(value: HomeRegionControl): Self = StObject.set(x, "HomeRegionControl", value.asInstanceOf[js.Any])
       
@@ -146,7 +149,8 @@ object clientsMigrationhubconfigMod {
       __obj.asInstanceOf[DescribeHomeRegionControlsRequest]
     }
     
-    extension [Self <: DescribeHomeRegionControlsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeHomeRegionControlsRequest] (val x: Self) extends AnyVal {
       
       inline def setControlId(value: ControlId): Self = StObject.set(x, "ControlId", value.asInstanceOf[js.Any])
       
@@ -189,7 +193,8 @@ object clientsMigrationhubconfigMod {
       __obj.asInstanceOf[DescribeHomeRegionControlsResult]
     }
     
-    extension [Self <: DescribeHomeRegionControlsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeHomeRegionControlsResult] (val x: Self) extends AnyVal {
       
       inline def setHomeRegionControls(value: HomeRegionControls): Self = StObject.set(x, "HomeRegionControls", value.asInstanceOf[js.Any])
       
@@ -221,7 +226,8 @@ object clientsMigrationhubconfigMod {
       __obj.asInstanceOf[GetHomeRegionResult]
     }
     
-    extension [Self <: GetHomeRegionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetHomeRegionResult] (val x: Self) extends AnyVal {
       
       inline def setHomeRegion(value: HomeRegion): Self = StObject.set(x, "HomeRegion", value.asInstanceOf[js.Any])
       
@@ -260,7 +266,8 @@ object clientsMigrationhubconfigMod {
       __obj.asInstanceOf[HomeRegionControl]
     }
     
-    extension [Self <: HomeRegionControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HomeRegionControl] (val x: Self) extends AnyVal {
       
       inline def setControlId(value: ControlId): Self = StObject.set(x, "ControlId", value.asInstanceOf[js.Any])
       
@@ -352,7 +359,8 @@ object clientsMigrationhubconfigMod {
       __obj.asInstanceOf[Target]
     }
     
-    extension [Self <: Target](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
       
       inline def setId(value: TargetId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       

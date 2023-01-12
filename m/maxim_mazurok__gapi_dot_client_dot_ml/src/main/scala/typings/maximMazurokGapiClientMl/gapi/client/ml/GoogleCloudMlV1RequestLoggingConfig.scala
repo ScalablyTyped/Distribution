@@ -26,7 +26,8 @@ object GoogleCloudMlV1RequestLoggingConfig {
     __obj.asInstanceOf[GoogleCloudMlV1RequestLoggingConfig]
   }
   
-  extension [Self <: GoogleCloudMlV1RequestLoggingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1RequestLoggingConfig] (val x: Self) extends AnyVal {
     
     inline def setBigqueryTableName(value: String): Self = StObject.set(x, "bigqueryTableName", value.asInstanceOf[js.Any])
     

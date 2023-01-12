@@ -17,7 +17,8 @@ object PubSubRPCSubscription {
     __obj.asInstanceOf[PubSubRPCSubscription]
   }
   
-  extension [Self <: PubSubRPCSubscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PubSubRPCSubscription] (val x: Self) extends AnyVal {
     
     inline def setSubscribe(value: Boolean): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
     

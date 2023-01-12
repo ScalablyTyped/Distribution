@@ -43,7 +43,8 @@ object GroupProps {
     __obj.asInstanceOf[GroupProps]
   }
   
-  extension [Self <: GroupProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

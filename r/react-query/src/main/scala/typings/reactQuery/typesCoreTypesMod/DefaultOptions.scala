@@ -17,7 +17,8 @@ object DefaultOptions {
     __obj.asInstanceOf[DefaultOptions[TError]]
   }
   
-  extension [Self <: DefaultOptions[?], TError](x: Self & DefaultOptions[TError]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultOptions[?], TError] (val x: Self & DefaultOptions[TError]) extends AnyVal {
     
     inline def setMutations(value: MutationObserverOptions[Any, TError, Any, Any]): Self = StObject.set(x, "mutations", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object sharedAddressMod {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setApartment(value: String): Self = StObject.set(x, "apartment", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object sharedAddressMod {
       __obj.asInstanceOf[CompleteAddress]
     }
     
-    extension [Self <: CompleteAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompleteAddress] (val x: Self) extends AnyVal {
       
       inline def setCity_name(value: String): Self = StObject.set(x, "city_name", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object sharedAddressMod {
       __obj.asInstanceOf[SimpleAddress]
     }
     
-    extension [Self <: SimpleAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleAddress] (val x: Self) extends AnyVal {
       
       inline def setStreet_name(value: String): Self = StObject.set(x, "street_name", value.asInstanceOf[js.Any])
       
@@ -101,7 +104,8 @@ object sharedAddressMod {
       __obj.asInstanceOf[SimpleAddressId]
     }
     
-    extension [Self <: SimpleAddressId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleAddressId] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

@@ -64,7 +64,8 @@ object libObservablejsonMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setValues(value: JSONObject): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
         
@@ -111,7 +112,8 @@ object libObservablejsonMod {
       */
     type IChangedArgs = typings.jupyterlabObservables.libObservablemapMod.IObservableMap.IChangedArgs[ReadonlyPartialJSONValue]
     
-    extension [Self <: IObservableJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObservableJSON] (val x: Self) extends AnyVal {
       
       inline def setToJSON(value: () => PartialJSONObject): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }

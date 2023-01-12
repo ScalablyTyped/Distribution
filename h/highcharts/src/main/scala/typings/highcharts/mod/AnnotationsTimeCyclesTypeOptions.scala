@@ -32,7 +32,8 @@ object AnnotationsTimeCyclesTypeOptions {
     __obj.asInstanceOf[AnnotationsTimeCyclesTypeOptions]
   }
   
-  extension [Self <: AnnotationsTimeCyclesTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsTimeCyclesTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setLine(value: AnnotationsTimeCyclesTypeLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

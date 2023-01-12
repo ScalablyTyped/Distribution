@@ -31,7 +31,8 @@ object srcComponentsNavbarMod extends Shortcut {
       __obj.asInstanceOf[NavbarBurgerProps]
     }
     
-    extension [Self <: NavbarBurgerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarBurgerProps] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
@@ -50,7 +51,8 @@ object srcComponentsNavbarMod extends Shortcut {
       __obj.asInstanceOf[NavbarContainerProps]
     }
     
-    extension [Self <: NavbarContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarContainerProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object srcComponentsNavbarMod extends Shortcut {
       __obj.asInstanceOf[NavbarDropdownProps]
     }
     
-    extension [Self <: NavbarDropdownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarDropdownProps] (val x: Self) extends AnyVal {
       
       inline def setBoxed(value: Boolean): Self = StObject.set(x, "boxed", value.asInstanceOf[js.Any])
       
@@ -102,7 +105,8 @@ object srcComponentsNavbarMod extends Shortcut {
       __obj.asInstanceOf[NavbarItemProps]
     }
     
-    extension [Self <: NavbarItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarItemProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -125,7 +129,8 @@ object srcComponentsNavbarMod extends Shortcut {
       __obj.asInstanceOf[NavbarLinkProps]
     }
     
-    extension [Self <: NavbarLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarLinkProps] (val x: Self) extends AnyVal {
       
       inline def setArrowless(value: Boolean): Self = StObject.set(x, "arrowless", value.asInstanceOf[js.Any])
       
@@ -152,7 +157,8 @@ object srcComponentsNavbarMod extends Shortcut {
       __obj.asInstanceOf[NavbarProps]
     }
     
-    extension [Self <: NavbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

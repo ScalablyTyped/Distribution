@@ -117,7 +117,8 @@ object ReadonlyextractHookMapSyn {
     __obj.asInstanceOf[ReadonlyextractHookMapSyn]
   }
   
-  extension [Self <: ReadonlyextractHookMapSyn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyextractHookMapSyn] (val x: Self) extends AnyVal {
     
     inline def setExtract(
       value: HookMap[

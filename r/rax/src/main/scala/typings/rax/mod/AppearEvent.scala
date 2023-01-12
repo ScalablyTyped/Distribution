@@ -39,7 +39,8 @@ object AppearEvent {
     __obj.asInstanceOf[AppearEvent[T]]
   }
   
-  extension [Self <: AppearEvent[?], T](x: Self & AppearEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppearEvent[?], T] (val x: Self & AppearEvent[T]) extends AnyVal {
     
     inline def setDirection(value: up | down): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
   }

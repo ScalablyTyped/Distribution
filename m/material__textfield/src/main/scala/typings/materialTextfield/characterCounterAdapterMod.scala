@@ -20,7 +20,8 @@ object characterCounterAdapterMod {
       __obj.asInstanceOf[MDCTextFieldCharacterCounterAdapter]
     }
     
-    extension [Self <: MDCTextFieldCharacterCounterAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTextFieldCharacterCounterAdapter] (val x: Self) extends AnyVal {
       
       inline def setSetContent(value: String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
     }

@@ -45,7 +45,8 @@ object XDragGestureRecognizer {
     __obj.asInstanceOf[XDragGestureRecognizer]
   }
   
-  extension [Self <: XDragGestureRecognizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDragGestureRecognizer] (val x: Self) extends AnyVal {
     
     inline def setAddDragGestureListener(value: XDragGestureListener => Unit): Self = StObject.set(x, "addDragGestureListener", js.Any.fromFunction1(value))
     

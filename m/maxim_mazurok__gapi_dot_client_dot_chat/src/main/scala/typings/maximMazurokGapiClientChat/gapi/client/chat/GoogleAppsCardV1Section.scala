@@ -28,7 +28,8 @@ object GoogleAppsCardV1Section {
     __obj.asInstanceOf[GoogleAppsCardV1Section]
   }
   
-  extension [Self <: GoogleAppsCardV1Section](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCardV1Section] (val x: Self) extends AnyVal {
     
     inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     

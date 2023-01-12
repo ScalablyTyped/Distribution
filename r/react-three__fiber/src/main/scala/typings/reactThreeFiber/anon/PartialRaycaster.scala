@@ -49,7 +49,8 @@ object PartialRaycaster {
     __obj.asInstanceOf[PartialRaycaster]
   }
   
-  extension [Self <: PartialRaycaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRaycaster] (val x: Self) extends AnyVal {
     
     inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListActiveViolationsResponse {
     __obj.asInstanceOf[ListActiveViolationsResponse]
   }
   
-  extension [Self <: ListActiveViolationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListActiveViolationsResponse] (val x: Self) extends AnyVal {
     
     inline def setActiveViolations(value: ActiveViolations): Self = StObject.set(x, "activeViolations", value.asInstanceOf[js.Any])
     

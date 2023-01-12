@@ -25,7 +25,8 @@ object AdverseEventPreventiveAction {
     __obj.asInstanceOf[AdverseEventPreventiveAction]
   }
   
-  extension [Self <: AdverseEventPreventiveAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdverseEventPreventiveAction] (val x: Self) extends AnyVal {
     
     inline def setItemCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "itemCodeableConcept", value.asInstanceOf[js.Any])
     

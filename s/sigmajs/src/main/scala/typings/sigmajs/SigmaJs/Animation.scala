@@ -16,7 +16,8 @@ object Animation {
     __obj.asInstanceOf[Animation]
   }
   
-  extension [Self <: Animation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
     
     inline def setCamera(value: (Camera, StringDictionary[Any], StringDictionary[Any]) => Double): Self = StObject.set(x, "camera", js.Any.fromFunction3(value))
   }

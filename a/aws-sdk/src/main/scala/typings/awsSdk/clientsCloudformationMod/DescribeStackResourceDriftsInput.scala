@@ -33,7 +33,8 @@ object DescribeStackResourceDriftsInput {
     __obj.asInstanceOf[DescribeStackResourceDriftsInput]
   }
   
-  extension [Self <: DescribeStackResourceDriftsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStackResourceDriftsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: BoxedMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

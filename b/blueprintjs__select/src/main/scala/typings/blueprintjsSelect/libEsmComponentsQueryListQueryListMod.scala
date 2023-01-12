@@ -304,7 +304,8 @@ object libEsmComponentsQueryListQueryListMod {
       __obj.asInstanceOf[IQueryListState[T]]
     }
     
-    extension [Self <: IQueryListState[?], T](x: Self & IQueryListState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IQueryListState[?], T] (val x: Self & IQueryListState[T]) extends AnyVal {
       
       inline def setActiveItem(value: T | CreateNewItem): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
       

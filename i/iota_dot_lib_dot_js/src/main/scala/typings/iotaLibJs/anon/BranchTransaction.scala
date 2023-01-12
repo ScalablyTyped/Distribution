@@ -19,7 +19,8 @@ object BranchTransaction {
     __obj.asInstanceOf[BranchTransaction]
   }
   
-  extension [Self <: BranchTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BranchTransaction] (val x: Self) extends AnyVal {
     
     inline def setBranchTransaction(value: String): Self = StObject.set(x, "branchTransaction", value.asInstanceOf[js.Any])
     

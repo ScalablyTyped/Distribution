@@ -44,7 +44,8 @@ object PlusWebviewWebviewReplaceWebApiOptions {
     __obj.asInstanceOf[PlusWebviewWebviewReplaceWebApiOptions]
   }
   
-  extension [Self <: PlusWebviewWebviewReplaceWebApiOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewReplaceWebApiOptions] (val x: Self) extends AnyVal {
     
     inline def setGeolocation(value: alldevice | auto | none): Self = StObject.set(x, "geolocation", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object SavingsStepEnabled {
     __obj.asInstanceOf[SavingsStepEnabled]
   }
   
-  extension [Self <: SavingsStepEnabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsStepEnabled] (val x: Self) extends AnyVal {
     
     inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
   }

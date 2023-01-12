@@ -33,7 +33,8 @@ object AcknowledgeAlarmActionRequest {
     __obj.asInstanceOf[AcknowledgeAlarmActionRequest]
   }
   
-  extension [Self <: AcknowledgeAlarmActionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcknowledgeAlarmActionRequest] (val x: Self) extends AnyVal {
     
     inline def setAlarmModelName(value: AlarmModelName): Self = StObject.set(x, "alarmModelName", value.asInstanceOf[js.Any])
     

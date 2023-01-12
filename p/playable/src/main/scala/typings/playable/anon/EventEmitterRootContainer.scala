@@ -22,7 +22,8 @@ object EventEmitterRootContainer {
     __obj.asInstanceOf[EventEmitterRootContainer]
   }
   
-  extension [Self <: EventEmitterRootContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventEmitterRootContainer] (val x: Self) extends AnyVal {
     
     inline def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object XpackUsageMachineLearning {
     __obj.asInstanceOf[XpackUsageMachineLearning]
   }
   
-  extension [Self <: XpackUsageMachineLearning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageMachineLearning] (val x: Self) extends AnyVal {
     
     inline def setData_frame_analytics_jobs(value: XpackUsageMlDataFrameAnalyticsJobs): Self = StObject.set(x, "data_frame_analytics_jobs", value.asInstanceOf[js.Any])
     

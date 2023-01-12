@@ -25,7 +25,8 @@ object MediaPlayerMessages {
     __obj.asInstanceOf[MediaPlayerMessages]
   }
   
-  extension [Self <: MediaPlayerMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaPlayerMessages] (val x: Self) extends AnyVal {
     
     inline def setFullscreen(value: String): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     

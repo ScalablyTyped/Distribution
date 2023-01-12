@@ -26,7 +26,8 @@ object DataTableExportFunctionParams {
     __obj.asInstanceOf[DataTableExportFunctionParams]
   }
   
-  extension [Self <: DataTableExportFunctionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableExportFunctionParams] (val x: Self) extends AnyVal {
     
     inline def setColumn(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Column */ Any

@@ -19,7 +19,8 @@ object Datafeedconfig {
     __obj.asInstanceOf[Datafeedconfig]
   }
   
-  extension [Self <: Datafeedconfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Datafeedconfig] (val x: Self) extends AnyVal {
     
     inline def setDatafeed_config(value: MlDatafeedConfig): Self = StObject.set(x, "datafeed_config", value.asInstanceOf[js.Any])
     

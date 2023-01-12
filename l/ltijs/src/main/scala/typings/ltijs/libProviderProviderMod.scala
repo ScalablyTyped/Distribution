@@ -93,7 +93,8 @@ object libProviderProviderMod {
       __obj.asInstanceOf[DeploymentOptions]
     }
     
-    extension [Self <: DeploymentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeploymentOptions] (val x: Self) extends AnyVal {
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object libProviderProviderMod {
       __obj.asInstanceOf[OnConnectOptions]
     }
     
-    extension [Self <: OnConnectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnConnectOptions] (val x: Self) extends AnyVal {
       
       inline def setInvalidToken(
         value: (/* request */ Request_[
@@ -221,7 +223,8 @@ object libProviderProviderMod {
       __obj.asInstanceOf[ProviderOptions]
     }
     
-    extension [Self <: ProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
       
@@ -286,7 +289,8 @@ object libProviderProviderMod {
       __obj.asInstanceOf[RedirectOptions]
     }
     
-    extension [Self <: RedirectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreRoot(value: Boolean): Self = StObject.set(x, "ignoreRoot", value.asInstanceOf[js.Any])
       

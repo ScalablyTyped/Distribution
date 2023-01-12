@@ -173,7 +173,8 @@ object ZipWriterConstructorOptions {
     __obj.asInstanceOf[ZipWriterConstructorOptions]
   }
   
-  extension [Self <: ZipWriterConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipWriterConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setBufferedWrite(value: Boolean): Self = StObject.set(x, "bufferedWrite", value.asInstanceOf[js.Any])
     

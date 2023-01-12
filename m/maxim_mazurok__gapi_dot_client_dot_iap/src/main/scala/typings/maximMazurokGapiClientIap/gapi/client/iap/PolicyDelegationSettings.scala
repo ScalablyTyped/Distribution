@@ -28,7 +28,8 @@ object PolicyDelegationSettings {
     __obj.asInstanceOf[PolicyDelegationSettings]
   }
   
-  extension [Self <: PolicyDelegationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyDelegationSettings] (val x: Self) extends AnyVal {
     
     inline def setIamPermission(value: String): Self = StObject.set(x, "iamPermission", value.asInstanceOf[js.Any])
     

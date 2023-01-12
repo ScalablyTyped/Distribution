@@ -261,7 +261,8 @@ object LineProps {
     __obj.asInstanceOf[LineProps]
   }
   
-  extension [Self <: LineProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineProps] (val x: Self) extends AnyVal {
     
     inline def setActiveDot(value: js.Object | ReactElement | ContentRenderer[Any] | Boolean): Self = StObject.set(x, "activeDot", value.asInstanceOf[js.Any])
     

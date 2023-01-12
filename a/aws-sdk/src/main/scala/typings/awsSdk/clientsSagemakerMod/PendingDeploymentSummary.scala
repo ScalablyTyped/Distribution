@@ -28,7 +28,8 @@ object PendingDeploymentSummary {
     __obj.asInstanceOf[PendingDeploymentSummary]
   }
   
-  extension [Self <: PendingDeploymentSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingDeploymentSummary] (val x: Self) extends AnyVal {
     
     inline def setEndpointConfigName(value: EndpointConfigName): Self = StObject.set(x, "EndpointConfigName", value.asInstanceOf[js.Any])
     

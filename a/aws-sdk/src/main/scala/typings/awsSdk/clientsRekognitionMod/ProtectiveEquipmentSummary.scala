@@ -28,7 +28,8 @@ object ProtectiveEquipmentSummary {
     __obj.asInstanceOf[ProtectiveEquipmentSummary]
   }
   
-  extension [Self <: ProtectiveEquipmentSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectiveEquipmentSummary] (val x: Self) extends AnyVal {
     
     inline def setPersonsIndeterminate(value: ProtectiveEquipmentPersonIds): Self = StObject.set(x, "PersonsIndeterminate", value.asInstanceOf[js.Any])
     

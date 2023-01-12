@@ -20,7 +20,8 @@ object PlotBubbleClusterStatesHoverOptions {
     __obj.asInstanceOf[PlotBubbleClusterStatesHoverOptions]
   }
   
-  extension [Self <: PlotBubbleClusterStatesHoverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotBubbleClusterStatesHoverOptions] (val x: Self) extends AnyVal {
     
     inline def setFillColor(value: ColorType): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     

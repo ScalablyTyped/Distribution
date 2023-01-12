@@ -40,7 +40,8 @@ object UIkitSortableOptions {
     __obj.asInstanceOf[UIkitSortableOptions]
   }
   
-  extension [Self <: UIkitSortableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitSortableOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Double): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

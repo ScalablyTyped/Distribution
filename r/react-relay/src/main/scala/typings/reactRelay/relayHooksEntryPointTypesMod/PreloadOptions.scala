@@ -21,7 +21,8 @@ object PreloadOptions {
     __obj.asInstanceOf[PreloadOptions]
   }
   
-  extension [Self <: PreloadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreloadOptions] (val x: Self) extends AnyVal {
     
     inline def setFetchKey(value: String | Double): Self = StObject.set(x, "fetchKey", value.asInstanceOf[js.Any])
     

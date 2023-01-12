@@ -23,7 +23,8 @@ object Timeslice {
     __obj.asInstanceOf[Timeslice]
   }
   
-  extension [Self <: Timeslice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timeslice] (val x: Self) extends AnyVal {
     
     inline def setAnomaly(value: Boolean): Self = StObject.set(x, "anomaly", value.asInstanceOf[js.Any])
     

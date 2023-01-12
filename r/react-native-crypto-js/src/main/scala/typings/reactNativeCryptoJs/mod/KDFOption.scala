@@ -31,7 +31,8 @@ object KDFOption {
     __obj.asInstanceOf[KDFOption]
   }
   
-  extension [Self <: KDFOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KDFOption] (val x: Self) extends AnyVal {
     
     inline def setHasher(value: HasherStatic): Self = StObject.set(x, "hasher", value.asInstanceOf[js.Any])
     

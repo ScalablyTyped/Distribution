@@ -67,7 +67,8 @@ object typesExpansionPanelHeaderMod {
       __obj.asInstanceOf[ExpansionPanelHeaderProps]
     }
     
-    extension [Self <: ExpansionPanelHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpansionPanelHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

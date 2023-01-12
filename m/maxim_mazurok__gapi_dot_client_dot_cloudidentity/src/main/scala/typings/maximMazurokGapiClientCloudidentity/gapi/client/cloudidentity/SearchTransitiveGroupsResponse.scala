@@ -19,7 +19,8 @@ object SearchTransitiveGroupsResponse {
     __obj.asInstanceOf[SearchTransitiveGroupsResponse]
   }
   
-  extension [Self <: SearchTransitiveGroupsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchTransitiveGroupsResponse] (val x: Self) extends AnyVal {
     
     inline def setMemberships(value: js.Array[GroupRelation]): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
     

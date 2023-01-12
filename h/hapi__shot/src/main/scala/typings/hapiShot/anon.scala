@@ -47,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Close]
     }
     
-    extension [Self <: Close](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
       
       inline def setClose(value: Boolean): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -203,7 +204,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyIncomingHttpHeade]
     }
     
-    extension [Self <: ReadonlyIncomingHttpHeade](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyIncomingHttpHeade] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -480,7 +482,8 @@ object anon {
       __obj.asInstanceOf[Req]
     }
     
-    extension [Self <: Req](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Req] (val x: Self) extends AnyVal {
       
       inline def setReq(value: InjectedRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       

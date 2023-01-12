@@ -23,7 +23,8 @@ object AsClassName {
     __obj.asInstanceOf[AsClassName[T]]
   }
   
-  extension [Self <: AsClassName[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.wordpressComponents.wordpressComponentsStrings.a, typings.wordpressComponents.wordpressComponentsStrings.abbr, typings.wordpressComponents.wordpressComponentsStrings.address */ Any */](x: Self & AsClassName[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsClassName[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.wordpressComponents.wordpressComponentsStrings.a, typings.wordpressComponents.wordpressComponentsStrings.abbr, typings.wordpressComponents.wordpressComponentsStrings.address */ Any */] (val x: Self & AsClassName[T]) extends AnyVal {
     
     inline def setAs(value: T): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

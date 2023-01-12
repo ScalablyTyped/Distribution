@@ -31,7 +31,8 @@ object ReadonlyRequiredIEditorIn {
     __obj.asInstanceOf[ReadonlyRequiredIEditorIn]
   }
   
-  extension [Self <: ReadonlyRequiredIEditorIn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyRequiredIEditorIn] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: on | off | offUnlessPressed | onUnlessPressed): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

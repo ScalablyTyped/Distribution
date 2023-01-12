@@ -33,7 +33,8 @@ object ImportBackendStorageRequest {
     __obj.asInstanceOf[ImportBackendStorageRequest]
   }
   
-  extension [Self <: ImportBackendStorageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportBackendStorageRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: string): Self = StObject.set(x, "AppId", value.asInstanceOf[js.Any])
     

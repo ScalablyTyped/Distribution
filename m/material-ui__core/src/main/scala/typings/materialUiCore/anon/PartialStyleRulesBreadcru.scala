@@ -33,7 +33,8 @@ object PartialStyleRulesBreadcru {
     __obj.asInstanceOf[PartialStyleRulesBreadcru]
   }
   
-  extension [Self <: PartialStyleRulesBreadcru](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesBreadcru] (val x: Self) extends AnyVal {
     
     inline def setLi(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

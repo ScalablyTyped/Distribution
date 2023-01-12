@@ -88,7 +88,8 @@ object AwsCloudFormationStackDetails {
     __obj.asInstanceOf[AwsCloudFormationStackDetails]
   }
   
-  extension [Self <: AwsCloudFormationStackDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCloudFormationStackDetails] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: NonEmptyStringList): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     

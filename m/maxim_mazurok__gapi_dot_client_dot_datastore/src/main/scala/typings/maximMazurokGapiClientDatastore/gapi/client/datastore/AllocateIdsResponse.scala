@@ -16,7 +16,8 @@ object AllocateIdsResponse {
     __obj.asInstanceOf[AllocateIdsResponse]
   }
   
-  extension [Self <: AllocateIdsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllocateIdsResponse] (val x: Self) extends AnyVal {
     
     inline def setKeys(value: js.Array[Key]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     

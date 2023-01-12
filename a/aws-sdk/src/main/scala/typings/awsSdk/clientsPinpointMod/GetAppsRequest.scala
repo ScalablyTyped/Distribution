@@ -23,7 +23,8 @@ object GetAppsRequest {
     __obj.asInstanceOf[GetAppsRequest]
   }
   
-  extension [Self <: GetAppsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAppsRequest] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: string): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     

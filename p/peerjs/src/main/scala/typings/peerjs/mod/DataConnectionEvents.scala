@@ -23,7 +23,8 @@ object DataConnectionEvents {
     __obj.asInstanceOf[DataConnectionEvents]
   }
   
-  extension [Self <: DataConnectionEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataConnectionEvents] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any => Unit): Self = StObject.set(x, "data", js.Any.fromFunction1(value))
     

@@ -57,7 +57,8 @@ object PrePassConfiguration {
     __obj.asInstanceOf[PrePassConfiguration]
   }
   
-  extension [Self <: PrePassConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrePassConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBindForSubMesh(value: (Effect, Scene, Mesh, Matrix, Boolean) => Unit): Self = StObject.set(x, "bindForSubMesh", js.Any.fromFunction5(value))
     

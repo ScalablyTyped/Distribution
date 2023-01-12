@@ -44,7 +44,8 @@ object RegularExpressionLiteral {
     __obj.asInstanceOf[RegularExpressionLiteral]
   }
   
-  extension [Self <: RegularExpressionLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegularExpressionLiteral] (val x: Self) extends AnyVal {
     
     inline def set_text(value: Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     

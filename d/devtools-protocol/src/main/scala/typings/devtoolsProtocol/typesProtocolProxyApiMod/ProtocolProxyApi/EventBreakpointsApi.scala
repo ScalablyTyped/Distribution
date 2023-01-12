@@ -28,7 +28,8 @@ object EventBreakpointsApi {
     __obj.asInstanceOf[EventBreakpointsApi]
   }
   
-  extension [Self <: EventBreakpointsApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventBreakpointsApi] (val x: Self) extends AnyVal {
     
     inline def setRemoveInstrumentationBreakpoint(value: RemoveInstrumentationBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "removeInstrumentationBreakpoint", js.Any.fromFunction1(value))
     

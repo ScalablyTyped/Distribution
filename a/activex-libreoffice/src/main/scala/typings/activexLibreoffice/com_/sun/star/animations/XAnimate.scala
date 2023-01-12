@@ -136,7 +136,8 @@ object XAnimate {
     __obj.asInstanceOf[XAnimate]
   }
   
-  extension [Self <: XAnimate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAnimate] (val x: Self) extends AnyVal {
     
     inline def setAccumulate(value: Boolean): Self = StObject.set(x, "Accumulate", value.asInstanceOf[js.Any])
     

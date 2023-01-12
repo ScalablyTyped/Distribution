@@ -26,7 +26,8 @@ object GPUBindGroupEntry {
     __obj.asInstanceOf[GPUBindGroupEntry]
   }
   
-  extension [Self <: GPUBindGroupEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUBindGroupEntry] (val x: Self) extends AnyVal {
     
     inline def setBinding(value: GPUIndex32): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     

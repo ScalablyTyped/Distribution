@@ -19,7 +19,8 @@ object Dictattachment {
     __obj.asInstanceOf[Dictattachment]
   }
   
-  extension [Self <: Dictattachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictattachment] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object typesEndpointBatchRequestMod {
       __obj.asInstanceOf[EndpointBatchRequest]
     }
     
-    extension [Self <: EndpointBatchRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointBatchRequest] (val x: Self) extends AnyVal {
       
       inline def setItem(value: js.Array[EndpointBatchItem] | js.Iterable[EndpointBatchItem]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object typesEndpointBatchRequestMod {
       __obj.asInstanceOf[UnmarshalledEndpointBatchRequest]
     }
     
-    extension [Self <: UnmarshalledEndpointBatchRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledEndpointBatchRequest] (val x: Self) extends AnyVal {
       
       inline def setItem(value: js.Array[UnmarshalledEndpointBatchItem]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object ParticleEmitterBounds {
     __obj.asInstanceOf[ParticleEmitterBounds]
   }
   
-  extension [Self <: ParticleEmitterBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticleEmitterBounds] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

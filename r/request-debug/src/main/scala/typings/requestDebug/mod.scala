@@ -99,7 +99,8 @@ object mod {
       __obj.asInstanceOf[RedirectData]
     }
     
-    extension [Self <: RedirectData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectData] (val x: Self) extends AnyVal {
       
       inline def setDebugId(value: Double): Self = StObject.set(x, "debugId", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object mod {
       __obj.asInstanceOf[RequestData]
     }
     
-    extension [Self <: RequestData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestData] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object mod {
       __obj.asInstanceOf[ResponseData]
     }
     
-    extension [Self <: ResponseData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseData] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

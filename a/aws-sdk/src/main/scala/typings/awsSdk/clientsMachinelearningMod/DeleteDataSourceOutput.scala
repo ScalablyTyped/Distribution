@@ -18,7 +18,8 @@ object DeleteDataSourceOutput {
     __obj.asInstanceOf[DeleteDataSourceOutput]
   }
   
-  extension [Self <: DeleteDataSourceOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDataSourceOutput] (val x: Self) extends AnyVal {
     
     inline def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PartialPickExpoConfigsche {
     __obj.asInstanceOf[PartialPickExpoConfigsche]
   }
   
-  extension [Self <: PartialPickExpoConfigsche](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPickExpoConfigsche] (val x: Self) extends AnyVal {
     
     inline def setIos(value: IOS): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     

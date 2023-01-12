@@ -764,7 +764,8 @@ object sapUiWebcMainPanelMod {
       __obj.asInstanceOf[PanelSettings]
     }
     
-    extension [Self <: PanelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

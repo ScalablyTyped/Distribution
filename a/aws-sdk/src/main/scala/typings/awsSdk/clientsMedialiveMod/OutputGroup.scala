@@ -25,7 +25,8 @@ object OutputGroup {
     __obj.asInstanceOf[OutputGroup]
   }
   
-  extension [Self <: OutputGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputGroup] (val x: Self) extends AnyVal {
     
     inline def setName(value: stringMax32): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

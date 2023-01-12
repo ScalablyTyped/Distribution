@@ -26,7 +26,8 @@ object CalendarLegendProps {
     __obj.asInstanceOf[CalendarLegendProps]
   }
   
-  extension [Self <: CalendarLegendProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarLegendProps] (val x: Self) extends AnyVal {
     
     inline def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
   }

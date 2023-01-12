@@ -19,7 +19,8 @@ object VolumePanelOptions {
     __obj.asInstanceOf[VolumePanelOptions]
   }
   
-  extension [Self <: VolumePanelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumePanelOptions] (val x: Self) extends AnyVal {
     
     inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     

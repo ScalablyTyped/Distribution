@@ -27,7 +27,8 @@ object esDialogContentMemoChildrenMod extends Shortcut {
       __obj.asInstanceOf[MemoChildrenProps]
     }
     
-    extension [Self <: MemoChildrenProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoChildrenProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

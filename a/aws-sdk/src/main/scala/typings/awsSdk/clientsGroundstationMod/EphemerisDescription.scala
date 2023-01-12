@@ -23,7 +23,8 @@ object EphemerisDescription {
     __obj.asInstanceOf[EphemerisDescription]
   }
   
-  extension [Self <: EphemerisDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EphemerisDescription] (val x: Self) extends AnyVal {
     
     inline def setEphemerisData(value: UnboundedString): Self = StObject.set(x, "ephemerisData", value.asInstanceOf[js.Any])
     

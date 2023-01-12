@@ -16,7 +16,8 @@ object BackendServiceCdnPolicyBypassCacheOnRequestHeader {
     __obj.asInstanceOf[BackendServiceCdnPolicyBypassCacheOnRequestHeader]
   }
   
-  extension [Self <: BackendServiceCdnPolicyBypassCacheOnRequestHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendServiceCdnPolicyBypassCacheOnRequestHeader] (val x: Self) extends AnyVal {
     
     inline def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UnionOptions {
     __obj.asInstanceOf[UnionOptions]
   }
   
-  extension [Self <: UnionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnionOptions] (val x: Self) extends AnyVal {
     
     inline def setConjunction(value: or | none): Self = StObject.set(x, "conjunction", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[typings.quixote.mod.Quixote]
     }
     
-    extension [Self <: typings.quixote.mod.Quixote](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.quixote.mod.Quixote] (val x: Self) extends AnyVal {
       
       inline def setCreateFrame(
         value: (QuixoteFrameOptions, js.Function2[/* err */ js.Error, /* loadedFrame */ QFrame, Unit]) => QFrame

@@ -18,7 +18,8 @@ object JsonLogicNone {
     __obj.asInstanceOf[JsonLogicNone[AddOps]]
   }
   
-  extension [Self <: JsonLogicNone[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicNone[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicNone[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicNone[AddOps]) extends AnyVal {
     
     inline def setNone(value: js.Tuple2[js.Array[RulesLogic[AddOps]] | RulesLogic[AddOps], RulesLogic[AddOps]]): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }

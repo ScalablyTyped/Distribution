@@ -98,7 +98,8 @@ object drawing {
       __obj.asInstanceOf[DrawingControlOptions]
     }
     
-    extension [Self <: DrawingControlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawingControlOptions] (val x: Self) extends AnyVal {
       
       inline def setDrawingModes(value: js.Array[OverlayType]): Self = StObject.set(x, "drawingModes", value.asInstanceOf[js.Any])
       
@@ -245,7 +246,8 @@ object drawing {
       __obj.asInstanceOf[DrawingManagerOptions]
     }
     
-    extension [Self <: DrawingManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawingManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setCircleOptions(value: CircleOptions): Self = StObject.set(x, "circleOptions", value.asInstanceOf[js.Any])
       
@@ -327,7 +329,8 @@ object drawing {
       __obj.asInstanceOf[OverlayCompleteEvent]
     }
     
-    extension [Self <: OverlayCompleteEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayCompleteEvent] (val x: Self) extends AnyVal {
       
       inline def setOverlay(value: Marker_ | Polygon | Polyline | Rectangle | Circle): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       

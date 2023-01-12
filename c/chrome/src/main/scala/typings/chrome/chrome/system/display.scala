@@ -47,7 +47,8 @@ object display {
       __obj.asInstanceOf[Bounds]
     }
     
-    extension [Self <: Bounds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -163,7 +164,8 @@ object display {
       __obj.asInstanceOf[DisplayInfo]
     }
     
-    extension [Self <: DisplayInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayInfo] (val x: Self) extends AnyVal {
       
       inline def setAvailableDisplayZoomFactors(value: js.Array[Double]): Self = StObject.set(x, "availableDisplayZoomFactors", value.asInstanceOf[js.Any])
       
@@ -227,7 +229,8 @@ object display {
       __obj.asInstanceOf[DisplayInfoFlags]
     }
     
-    extension [Self <: DisplayInfoFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayInfoFlags] (val x: Self) extends AnyVal {
       
       inline def setSingleUnified(value: Boolean): Self = StObject.set(x, "singleUnified", value.asInstanceOf[js.Any])
       
@@ -260,7 +263,8 @@ object display {
       __obj.asInstanceOf[DisplayLayout]
     }
     
-    extension [Self <: DisplayLayout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayLayout] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -324,7 +328,8 @@ object display {
       __obj.asInstanceOf[DisplayMode]
     }
     
-    extension [Self <: DisplayMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayMode] (val x: Self) extends AnyVal {
       
       inline def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
       
@@ -436,7 +441,8 @@ object display {
       __obj.asInstanceOf[DisplayPropertiesInfo]
     }
     
-    extension [Self <: DisplayPropertiesInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayPropertiesInfo] (val x: Self) extends AnyVal {
       
       inline def setBoundsOriginX(value: Double): Self = StObject.set(x, "boundsOriginX", value.asInstanceOf[js.Any])
       
@@ -497,7 +503,8 @@ object display {
       __obj.asInstanceOf[Insets]
     }
     
-    extension [Self <: Insets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Insets] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -529,7 +536,8 @@ object display {
       __obj.asInstanceOf[MirrorModeInfo]
     }
     
-    extension [Self <: MirrorModeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MirrorModeInfo] (val x: Self) extends AnyVal {
       
       inline def setMode(value: off | normal | mixed): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -556,7 +564,8 @@ object display {
       __obj.asInstanceOf[MirrorModeInfoMixed]
     }
     
-    extension [Self <: MirrorModeInfoMixed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MirrorModeInfoMixed] (val x: Self) extends AnyVal {
       
       inline def setMirroringDestinationIds(value: js.Array[String]): Self = StObject.set(x, "mirroringDestinationIds", value.asInstanceOf[js.Any])
       
@@ -587,7 +596,8 @@ object display {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -610,7 +620,8 @@ object display {
       __obj.asInstanceOf[TouchCalibrationPair]
     }
     
-    extension [Self <: TouchCalibrationPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchCalibrationPair] (val x: Self) extends AnyVal {
       
       inline def setDisplayPoint(value: Point): Self = StObject.set(x, "displayPoint", value.asInstanceOf[js.Any])
       
@@ -644,7 +655,8 @@ object display {
       __obj.asInstanceOf[TouchCalibrationPairs]
     }
     
-    extension [Self <: TouchCalibrationPairs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchCalibrationPairs] (val x: Self) extends AnyVal {
       
       inline def setPair1(value: TouchCalibrationPair): Self = StObject.set(x, "pair1", value.asInstanceOf[js.Any])
       

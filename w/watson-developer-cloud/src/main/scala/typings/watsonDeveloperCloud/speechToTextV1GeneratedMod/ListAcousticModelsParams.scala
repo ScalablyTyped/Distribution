@@ -21,7 +21,8 @@ object ListAcousticModelsParams {
     __obj.asInstanceOf[ListAcousticModelsParams]
   }
   
-  extension [Self <: ListAcousticModelsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAcousticModelsParams] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

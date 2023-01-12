@@ -44,7 +44,8 @@ object ParameterRuleBase {
     __obj.asInstanceOf[ParameterRuleBase]
   }
   
-  extension [Self <: ParameterRuleBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterRuleBase] (val x: Self) extends AnyVal {
     
     inline def setConvertType(value: ParameterConvertType): Self = StObject.set(x, "convertType", value.asInstanceOf[js.Any])
     

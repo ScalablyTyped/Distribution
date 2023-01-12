@@ -43,7 +43,8 @@ object ListSynonymsParams {
     __obj.asInstanceOf[ListSynonymsParams]
   }
   
-  extension [Self <: ListSynonymsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSynonymsParams] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

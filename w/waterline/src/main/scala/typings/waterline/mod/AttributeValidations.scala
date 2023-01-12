@@ -55,7 +55,8 @@ object AttributeValidations {
     __obj.asInstanceOf[AttributeValidations]
   }
   
-  extension [Self <: AttributeValidations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeValidations] (val x: Self) extends AnyVal {
     
     inline def setCustom(value: AttributeValidation[js.Function]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

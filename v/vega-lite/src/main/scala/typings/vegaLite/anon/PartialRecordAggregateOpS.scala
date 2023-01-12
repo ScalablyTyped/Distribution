@@ -61,7 +61,8 @@ object PartialRecordAggregateOpS {
     __obj.asInstanceOf[PartialRecordAggregateOpS]
   }
   
-  extension [Self <: PartialRecordAggregateOpS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordAggregateOpS] (val x: Self) extends AnyVal {
     
     inline def setArgmax(value: Set[String]): Self = StObject.set(x, "argmax", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SearchViewModelSearchCompleteEventResults {
     __obj.asInstanceOf[SearchViewModelSearchCompleteEventResults]
   }
   
-  extension [Self <: SearchViewModelSearchCompleteEventResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchViewModelSearchCompleteEventResults] (val x: Self) extends AnyVal {
     
     inline def setResults(value: js.Array[SearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     

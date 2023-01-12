@@ -15,7 +15,8 @@ object RaggedTensorToTensorAttrs {
     __obj.asInstanceOf[RaggedTensorToTensorAttrs]
   }
   
-  extension [Self <: RaggedTensorToTensorAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaggedTensorToTensorAttrs] (val x: Self) extends AnyVal {
     
     inline def setRowPartitionTypes(value: js.Array[String]): Self = StObject.set(x, "rowPartitionTypes", value.asInstanceOf[js.Any])
     

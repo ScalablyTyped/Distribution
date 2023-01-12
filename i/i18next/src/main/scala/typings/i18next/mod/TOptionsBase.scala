@@ -89,7 +89,8 @@ object TOptionsBase {
     __obj.asInstanceOf[TOptionsBase]
   }
   
-  extension [Self <: TOptionsBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TOptionsBase] (val x: Self) extends AnyVal {
     
     inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

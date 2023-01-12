@@ -43,7 +43,8 @@ object RedshiftDataParameters {
     __obj.asInstanceOf[RedshiftDataParameters]
   }
   
-  extension [Self <: RedshiftDataParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedshiftDataParameters] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object location {
     __obj.asInstanceOf[location]
   }
   
-  extension [Self <: location](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: location] (val x: Self) extends AnyVal {
     
     inline def setCreateRenderer(value: locationCreateRendererParams => js.Promise[locationRendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
   }

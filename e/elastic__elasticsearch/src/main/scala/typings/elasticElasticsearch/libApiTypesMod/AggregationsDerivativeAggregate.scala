@@ -20,7 +20,8 @@ object AggregationsDerivativeAggregate {
     __obj.asInstanceOf[AggregationsDerivativeAggregate]
   }
   
-  extension [Self <: AggregationsDerivativeAggregate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsDerivativeAggregate] (val x: Self) extends AnyVal {
     
     inline def setNormalized_value(value: double): Self = StObject.set(x, "normalized_value", value.asInstanceOf[js.Any])
     

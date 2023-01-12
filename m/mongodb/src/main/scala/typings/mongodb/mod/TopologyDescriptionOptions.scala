@@ -17,7 +17,8 @@ object TopologyDescriptionOptions {
     __obj.asInstanceOf[TopologyDescriptionOptions]
   }
   
-  extension [Self <: TopologyDescriptionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopologyDescriptionOptions] (val x: Self) extends AnyVal {
     
     inline def setHeartbeatFrequencyMS(value: scala.Double): Self = StObject.set(x, "heartbeatFrequencyMS", value.asInstanceOf[js.Any])
     

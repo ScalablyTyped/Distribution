@@ -16,7 +16,8 @@ object RegexEitherOptions {
     __obj.asInstanceOf[RegexEitherOptions]
   }
   
-  extension [Self <: RegexEitherOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegexEitherOptions] (val x: Self) extends AnyVal {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     

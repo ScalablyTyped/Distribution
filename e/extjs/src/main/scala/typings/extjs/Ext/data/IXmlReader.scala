@@ -30,7 +30,8 @@ object IXmlReader {
     __obj.asInstanceOf[IXmlReader]
   }
   
-  extension [Self <: IXmlReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXmlReader] (val x: Self) extends AnyVal {
     
     inline def setGetData(value: /* data */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     

@@ -25,7 +25,8 @@ object UsageDetails {
     __obj.asInstanceOf[UsageDetails]
   }
   
-  extension [Self <: UsageDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageDetails] (val x: Self) extends AnyVal {
     
     inline def setLastAccessedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastAccessedDateTime", value.asInstanceOf[js.Any])
     

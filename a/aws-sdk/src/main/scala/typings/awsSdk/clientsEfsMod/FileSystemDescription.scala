@@ -108,7 +108,8 @@ object FileSystemDescription {
     __obj.asInstanceOf[FileSystemDescription]
   }
   
-  extension [Self <: FileSystemDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemDescription] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZoneId(value: AvailabilityZoneId): Self = StObject.set(x, "AvailabilityZoneId", value.asInstanceOf[js.Any])
     

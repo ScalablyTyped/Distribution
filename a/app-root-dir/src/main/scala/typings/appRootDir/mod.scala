@@ -31,7 +31,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AppRootDir]
     }
     
-    extension [Self <: AppRootDir](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppRootDir] (val x: Self) extends AnyVal {
       
       inline def setGet(value: () => String): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       

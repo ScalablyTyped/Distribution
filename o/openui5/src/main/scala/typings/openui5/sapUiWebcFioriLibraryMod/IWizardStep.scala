@@ -15,7 +15,8 @@ object IWizardStep {
     __obj.asInstanceOf[IWizardStep]
   }
   
-  extension [Self <: IWizardStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWizardStep] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_fiori_IWizardStep(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_fiori_IWizardStep", value.asInstanceOf[js.Any])
   }

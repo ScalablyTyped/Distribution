@@ -25,7 +25,8 @@ object BatchListObjectParents {
     __obj.asInstanceOf[BatchListObjectParents]
   }
   
-  extension [Self <: BatchListObjectParents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchListObjectParents] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: NumberResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

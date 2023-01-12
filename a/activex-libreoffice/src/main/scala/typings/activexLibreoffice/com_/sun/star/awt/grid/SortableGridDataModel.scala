@@ -90,7 +90,8 @@ object SortableGridDataModel {
     __obj.asInstanceOf[SortableGridDataModel]
   }
   
-  extension [Self <: SortableGridDataModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortableGridDataModel] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: XMutableGridDataModel => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

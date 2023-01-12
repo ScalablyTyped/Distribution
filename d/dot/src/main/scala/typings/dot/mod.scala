@@ -82,7 +82,8 @@ object mod {
       __obj.asInstanceOf[TemplateSettings_]
     }
     
-    extension [Self <: TemplateSettings_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateSettings_] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object mod {
         __obj.asInstanceOf[typings.dot.mod.global.String]
       }
       
-      extension [Self <: typings.dot.mod.global.String](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.dot.mod.global.String] (val x: Self) extends AnyVal {
         
         inline def setEncodeHTML(value: () => java.lang.String): Self = StObject.set(x, "encodeHTML", js.Any.fromFunction0(value))
       }

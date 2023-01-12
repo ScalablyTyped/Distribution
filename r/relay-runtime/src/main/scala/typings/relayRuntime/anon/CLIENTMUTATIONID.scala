@@ -45,7 +45,8 @@ object CLIENTMUTATIONID {
     __obj.asInstanceOf[CLIENTMUTATIONID]
   }
   
-  extension [Self <: CLIENTMUTATIONID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CLIENTMUTATIONID] (val x: Self) extends AnyVal {
     
     inline def setCLIENT_MUTATION_ID(value: clientMutationId): Self = StObject.set(x, "CLIENT_MUTATION_ID", value.asInstanceOf[js.Any])
     

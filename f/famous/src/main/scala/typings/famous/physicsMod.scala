@@ -332,7 +332,8 @@ object physicsMod {
       __obj.asInstanceOf[IDragOptions]
     }
     
-    extension [Self <: IDragOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDragOptions] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -359,7 +360,8 @@ object physicsMod {
       __obj.asInstanceOf[IForceOptions]
     }
     
-    extension [Self <: IForceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IForceOptions] (val x: Self) extends AnyVal {
       
       inline def setTargets(value: js.Array[Any]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
@@ -398,7 +400,8 @@ object physicsMod {
       __obj.asInstanceOf[IParticleOptions]
     }
     
-    extension [Self <: IParticleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParticleOptions] (val x: Self) extends AnyVal {
       
       inline def setCollisionGroup(value: Double): Self = StObject.set(x, "collisionGroup", value.asInstanceOf[js.Any])
       
@@ -457,7 +460,8 @@ object physicsMod {
       __obj.asInstanceOf[IPhysicsTransform]
     }
     
-    extension [Self <: IPhysicsTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPhysicsTransform] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: js.Array[Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -494,7 +498,8 @@ object physicsMod {
       __obj.asInstanceOf[IRotationalSpringOptions]
     }
     
-    extension [Self <: IRotationalSpringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRotationalSpringOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Quaternion): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -553,7 +558,8 @@ object physicsMod {
       __obj.asInstanceOf[ISpringOptions]
     }
     
-    extension [Self <: ISpringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpringOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Vec3): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -602,7 +608,8 @@ object physicsMod {
       __obj.asInstanceOf[IWallOptions]
     }
     
-    extension [Self <: IWallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWallOptions] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       

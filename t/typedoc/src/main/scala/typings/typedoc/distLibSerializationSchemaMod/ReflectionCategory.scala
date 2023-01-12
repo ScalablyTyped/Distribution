@@ -22,7 +22,8 @@ object ReflectionCategory {
     __obj.asInstanceOf[ReflectionCategory]
   }
   
-  extension [Self <: ReflectionCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReflectionCategory] (val x: Self) extends AnyVal {
     
     inline def setChildren(
       value: js.Array[

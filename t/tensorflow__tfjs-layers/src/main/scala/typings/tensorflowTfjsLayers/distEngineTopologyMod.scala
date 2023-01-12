@@ -721,7 +721,8 @@ object distEngineTopologyMod {
       __obj.asInstanceOf[DisposeResult]
     }
     
-    extension [Self <: DisposeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisposeResult] (val x: Self) extends AnyVal {
       
       inline def setNumDisposedVariables(value: Double): Self = StObject.set(x, "numDisposedVariables", value.asInstanceOf[js.Any])
       
@@ -756,7 +757,8 @@ object distEngineTopologyMod {
       __obj.asInstanceOf[InputSpecArgs]
     }
     
-    extension [Self <: InputSpecArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputSpecArgs] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: NumberDictionary[Double]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
@@ -842,7 +844,8 @@ object distEngineTopologyMod {
       __obj.asInstanceOf[LayerArgs]
     }
     
-    extension [Self <: LayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerArgs] (val x: Self) extends AnyVal {
       
       inline def setBatchInputShape(value: Shape): Self = StObject.set(x, "batchInputShape", value.asInstanceOf[js.Any])
       
@@ -950,7 +953,8 @@ object distEngineTopologyMod {
       __obj.asInstanceOf[NodeArgs]
     }
     
-    extension [Self <: NodeArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeArgs] (val x: Self) extends AnyVal {
       
       inline def setInboundLayers(value: js.Array[Layer]): Self = StObject.set(x, "inboundLayers", value.asInstanceOf[js.Any])
       

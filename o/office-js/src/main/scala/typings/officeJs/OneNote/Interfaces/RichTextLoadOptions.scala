@@ -65,7 +65,8 @@ object RichTextLoadOptions {
     __obj.asInstanceOf[RichTextLoadOptions]
   }
   
-  extension [Self <: RichTextLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RichTextLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

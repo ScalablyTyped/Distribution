@@ -125,7 +125,8 @@ object distLayersWrappersMod {
       __obj.asInstanceOf[BidirectionalLayerArgs]
     }
     
-    extension [Self <: BidirectionalLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BidirectionalLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setLayer(value: RNN_): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
@@ -151,7 +152,8 @@ object distLayersWrappersMod {
       __obj.asInstanceOf[WrapperLayerArgs]
     }
     
-    extension [Self <: WrapperLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapperLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     }

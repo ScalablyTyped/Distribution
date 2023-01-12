@@ -23,7 +23,8 @@ object BackendAPIAuthType {
     __obj.asInstanceOf[BackendAPIAuthType]
   }
   
-  extension [Self <: BackendAPIAuthType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendAPIAuthType] (val x: Self) extends AnyVal {
     
     inline def setMode(value: Mode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     

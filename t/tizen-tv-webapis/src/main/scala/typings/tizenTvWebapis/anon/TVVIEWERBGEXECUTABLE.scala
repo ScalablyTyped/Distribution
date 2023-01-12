@@ -23,7 +23,8 @@ object TVVIEWERBGEXECUTABLE {
     __obj.asInstanceOf[TVVIEWERBGEXECUTABLE]
   }
   
-  extension [Self <: TVVIEWERBGEXECUTABLE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TVVIEWERBGEXECUTABLE] (val x: Self) extends AnyVal {
     
     inline def setTV_VIEWER_BG_EXECUTABLE(value: `0`): Self = StObject.set(x, "TV_VIEWER_BG_EXECUTABLE", value.asInstanceOf[js.Any])
   }

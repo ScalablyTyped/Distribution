@@ -48,7 +48,8 @@ object distTypesSerdePluginMod {
       __obj.asInstanceOf[V1OrV2Endpoint]
     }
     
-    extension [Self <: V1OrV2Endpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V1OrV2Endpoint] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: () => js.Promise[Endpoint]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
       

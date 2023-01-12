@@ -34,7 +34,8 @@ object StoryPointInfo {
     __obj.asInstanceOf[StoryPointInfo]
   }
   
-  extension [Self <: StoryPointInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoryPointInfo] (val x: Self) extends AnyVal {
     
     inline def setGetCaption(value: () => String): Self = StObject.set(x, "getCaption", js.Any.fromFunction0(value))
     

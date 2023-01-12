@@ -18,7 +18,8 @@ object PlotMouseEvent {
     __obj.asInstanceOf[PlotMouseEvent]
   }
   
-  extension [Self <: PlotMouseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotMouseEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

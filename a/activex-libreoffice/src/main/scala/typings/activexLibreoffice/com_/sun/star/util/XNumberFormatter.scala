@@ -75,7 +75,8 @@ object XNumberFormatter {
     __obj.asInstanceOf[XNumberFormatter]
   }
   
-  extension [Self <: XNumberFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNumberFormatter] (val x: Self) extends AnyVal {
     
     inline def setAttachNumberFormatsSupplier(value: XNumberFormatsSupplier => Unit): Self = StObject.set(x, "attachNumberFormatsSupplier", js.Any.fromFunction1(value))
     

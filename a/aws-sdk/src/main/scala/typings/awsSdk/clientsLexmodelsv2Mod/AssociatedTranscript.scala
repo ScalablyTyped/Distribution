@@ -18,7 +18,8 @@ object AssociatedTranscript {
     __obj.asInstanceOf[AssociatedTranscript]
   }
   
-  extension [Self <: AssociatedTranscript](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociatedTranscript] (val x: Self) extends AnyVal {
     
     inline def setTranscript(value: Transcript): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
     

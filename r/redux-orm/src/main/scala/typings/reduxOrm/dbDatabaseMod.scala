@@ -116,13 +116,14 @@ object dbDatabaseMod {
       __obj.asInstanceOf[Database[I, Tables]]
     }
     
-    extension [Self <: Database[?, ?], I /* <: IndexedModelClasses[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Database[?, ?], I /* <: IndexedModelClasses[
         Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
         ]
-      ] */, Tables](x: Self & (Database[I, Tables])) {
+      ] */, Tables] (val x: Self & (Database[I, Tables])) extends AnyVal {
       
       inline def setDescribe(
         value: Any => /* import warning: importer.ImportType#apply Failed type conversion: Tables[K] */ js.Any
@@ -164,7 +165,8 @@ object dbDatabaseMod {
       __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Query](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       inline def setClauses(value: js.Array[QueryClause[js.Object]]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
       
@@ -188,7 +190,8 @@ object dbDatabaseMod {
       __obj.asInstanceOf[QueryClause[Payload]]
     }
     
-    extension [Self <: QueryClause[?], Payload /* <: js.Object */](x: Self & QueryClause[Payload]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryClause[?], Payload /* <: js.Object */] (val x: Self & QueryClause[Payload]) extends AnyVal {
       
       inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -207,7 +210,8 @@ object dbDatabaseMod {
       __obj.asInstanceOf[QueryResult[Row]]
     }
     
-    extension [Self <: QueryResult[?], Row /* <: Record[String, Serializable] */](x: Self & QueryResult[Row]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryResult[?], Row /* <: Record[String, Serializable] */] (val x: Self & QueryResult[Row]) extends AnyVal {
       
       inline def setRows(value: js.Array[Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
@@ -226,7 +230,8 @@ object dbDatabaseMod {
       __obj.asInstanceOf[QuerySpec]
     }
     
-    extension [Self <: QuerySpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuerySpec] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
@@ -259,13 +264,14 @@ object dbDatabaseMod {
       __obj.asInstanceOf[SchemaSpec[I]]
     }
     
-    extension [Self <: SchemaSpec[?], I /* <: IndexedModelClasses[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaSpec[?], I /* <: IndexedModelClasses[
         Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
         ]
-      ] */](x: Self & SchemaSpec[I]) {
+      ] */] (val x: Self & SchemaSpec[I]) extends AnyVal {
       
       inline def setTables(
         value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof I ]: redux-orm.redux-orm/db/Table.ModelTableOpts<I[K]>} */ js.Any
@@ -286,7 +292,8 @@ object dbDatabaseMod {
       __obj.asInstanceOf[Transaction]
     }
     
-    extension [Self <: Transaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
       
       inline def setBatchToken(value: BatchToken): Self = StObject.set(x, "batchToken", value.asInstanceOf[js.Any])
       
@@ -321,13 +328,14 @@ object dbDatabaseMod {
       __obj.asInstanceOf[UpdateResult[I, Payload]]
     }
     
-    extension [Self <: UpdateResult[?, ?], I /* <: IndexedModelClasses[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateResult[?, ?], I /* <: IndexedModelClasses[
         Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
         ]
-      ] */, Payload /* <: js.Object */](x: Self & (UpdateResult[I, Payload])) {
+      ] */, Payload /* <: js.Object */] (val x: Self & (UpdateResult[I, Payload])) extends AnyVal {
       
       inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -352,7 +360,8 @@ object dbDatabaseMod {
       __obj.asInstanceOf[UpdateSpec[Payload]]
     }
     
-    extension [Self <: UpdateSpec[?], Payload](x: Self & UpdateSpec[Payload]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateSpec[?], Payload] (val x: Self & UpdateSpec[Payload]) extends AnyVal {
       
       inline def setAction(value: UpdateType): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

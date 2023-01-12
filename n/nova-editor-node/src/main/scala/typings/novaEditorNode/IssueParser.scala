@@ -20,7 +20,8 @@ object IssueParser {
     __obj.asInstanceOf[IssueParser]
   }
   
-  extension [Self <: IssueParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssueParser] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

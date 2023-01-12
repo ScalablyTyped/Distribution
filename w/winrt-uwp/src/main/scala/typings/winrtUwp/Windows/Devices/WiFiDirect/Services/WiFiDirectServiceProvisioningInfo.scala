@@ -20,7 +20,8 @@ object WiFiDirectServiceProvisioningInfo {
     __obj.asInstanceOf[WiFiDirectServiceProvisioningInfo]
   }
   
-  extension [Self <: WiFiDirectServiceProvisioningInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WiFiDirectServiceProvisioningInfo] (val x: Self) extends AnyVal {
     
     inline def setIsGroupFormationNeeded(value: Boolean): Self = StObject.set(x, "isGroupFormationNeeded", value.asInstanceOf[js.Any])
     

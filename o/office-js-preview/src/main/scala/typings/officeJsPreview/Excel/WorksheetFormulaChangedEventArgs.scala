@@ -59,7 +59,8 @@ object WorksheetFormulaChangedEventArgs {
     __obj.asInstanceOf[WorksheetFormulaChangedEventArgs]
   }
   
-  extension [Self <: WorksheetFormulaChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetFormulaChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFormulaDetails(value: js.Array[FormulaChangedEventDetail]): Self = StObject.set(x, "formulaDetails", value.asInstanceOf[js.Any])
     

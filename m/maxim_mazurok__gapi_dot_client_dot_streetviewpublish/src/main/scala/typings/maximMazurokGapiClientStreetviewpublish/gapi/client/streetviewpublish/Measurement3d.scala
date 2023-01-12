@@ -25,7 +25,8 @@ object Measurement3d {
     __obj.asInstanceOf[Measurement3d]
   }
   
-  extension [Self <: Measurement3d](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Measurement3d] (val x: Self) extends AnyVal {
     
     inline def setCaptureTime(value: String): Self = StObject.set(x, "captureTime", value.asInstanceOf[js.Any])
     

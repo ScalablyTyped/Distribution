@@ -68,7 +68,8 @@ object CandlestickChartOptions {
     __obj.asInstanceOf[CandlestickChartOptions]
   }
   
-  extension [Self <: CandlestickChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CandlestickChartOptions] (val x: Self) extends AnyVal {
     
     inline def setAggregationTarget(value: String): Self = StObject.set(x, "aggregationTarget", value.asInstanceOf[js.Any])
     

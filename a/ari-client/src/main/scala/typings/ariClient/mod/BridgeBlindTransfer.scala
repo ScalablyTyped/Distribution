@@ -66,7 +66,8 @@ object BridgeBlindTransfer {
     __obj.asInstanceOf[BridgeBlindTransfer]
   }
   
-  extension [Self <: BridgeBlindTransfer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BridgeBlindTransfer] (val x: Self) extends AnyVal {
     
     inline def setBridge(value: Bridge): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
     

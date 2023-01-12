@@ -24,7 +24,8 @@ object cjsUtilitiesMod {
       __obj.asInstanceOf[CamelCaseOptions]
     }
     
-    extension [Self <: CamelCaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CamelCaseOptions] (val x: Self) extends AnyVal {
       
       inline def setReactCompat(value: Boolean): Self = StObject.set(x, "reactCompat", value.asInstanceOf[js.Any])
       

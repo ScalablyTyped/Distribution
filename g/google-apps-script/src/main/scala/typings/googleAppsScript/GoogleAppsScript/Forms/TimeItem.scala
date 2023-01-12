@@ -69,7 +69,8 @@ object TimeItem {
     __obj.asInstanceOf[TimeItem]
   }
   
-  extension [Self <: TimeItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeItem] (val x: Self) extends AnyVal {
     
     inline def setCreateResponse(value: (Integer, Integer) => ItemResponse): Self = StObject.set(x, "createResponse", js.Any.fromFunction2(value))
     

@@ -102,7 +102,8 @@ object libCommonUtilsMod extends Shortcut {
       __obj.asInstanceOf[Utils]
     }
     
-    extension [Self <: Utils](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Utils] (val x: Self) extends AnyVal {
       
       inline def setArrayReplaceAt(value: (js.Array[Any], Double, js.Array[Any]) => js.Array[Any]): Self = StObject.set(x, "arrayReplaceAt", js.Any.fromFunction3(value))
       

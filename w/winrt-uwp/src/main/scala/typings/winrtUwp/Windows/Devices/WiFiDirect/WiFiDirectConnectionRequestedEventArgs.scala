@@ -20,7 +20,8 @@ object WiFiDirectConnectionRequestedEventArgs {
     __obj.asInstanceOf[WiFiDirectConnectionRequestedEventArgs]
   }
   
-  extension [Self <: WiFiDirectConnectionRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WiFiDirectConnectionRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGetConnectionRequest(value: () => WiFiDirectConnectionRequest): Self = StObject.set(x, "getConnectionRequest", js.Any.fromFunction0(value))
   }

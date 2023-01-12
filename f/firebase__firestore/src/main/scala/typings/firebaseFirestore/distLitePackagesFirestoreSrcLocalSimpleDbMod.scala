@@ -299,7 +299,8 @@ object distLitePackagesFirestoreSrcLocalSimpleDbMod {
       __obj.asInstanceOf[IterateOptions]
     }
     
-    extension [Self <: IterateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IterateOptions] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -330,7 +331,8 @@ object distLitePackagesFirestoreSrcLocalSimpleDbMod {
       __obj.asInstanceOf[SimpleDbSchemaConverter]
     }
     
-    extension [Self <: SimpleDbSchemaConverter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleDbSchemaConverter] (val x: Self) extends AnyVal {
       
       inline def setCreateOrUpgrade(value: (IDBDatabase, IDBTransaction, Double, Double) => PersistencePromise[Unit]): Self = StObject.set(x, "createOrUpgrade", js.Any.fromFunction4(value))
     }

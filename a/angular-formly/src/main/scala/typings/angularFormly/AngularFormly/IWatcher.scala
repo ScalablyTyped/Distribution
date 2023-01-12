@@ -38,7 +38,8 @@ object IWatcher {
     __obj.asInstanceOf[IWatcher]
   }
   
-  extension [Self <: IWatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWatcher] (val x: Self) extends AnyVal {
     
     inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     

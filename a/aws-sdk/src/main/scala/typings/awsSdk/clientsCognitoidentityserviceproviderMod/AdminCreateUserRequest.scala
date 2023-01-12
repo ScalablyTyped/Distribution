@@ -58,7 +58,8 @@ object AdminCreateUserRequest {
     __obj.asInstanceOf[AdminCreateUserRequest]
   }
   
-  extension [Self <: AdminCreateUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminCreateUserRequest] (val x: Self) extends AnyVal {
     
     inline def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     

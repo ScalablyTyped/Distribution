@@ -18,7 +18,8 @@ object DeleteDashboardsInput {
     __obj.asInstanceOf[DeleteDashboardsInput]
   }
   
-  extension [Self <: DeleteDashboardsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDashboardsInput] (val x: Self) extends AnyVal {
     
     inline def setDashboardNames(value: DashboardNames): Self = StObject.set(x, "DashboardNames", value.asInstanceOf[js.Any])
     

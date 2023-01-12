@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Last]
     }
     
-    extension [Self <: Last](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Last] (val x: Self) extends AnyVal {
       
       inline def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     }

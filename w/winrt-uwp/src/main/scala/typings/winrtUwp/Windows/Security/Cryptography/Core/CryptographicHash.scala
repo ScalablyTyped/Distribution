@@ -27,7 +27,8 @@ object CryptographicHash {
     __obj.asInstanceOf[CryptographicHash]
   }
   
-  extension [Self <: CryptographicHash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptographicHash] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: IBuffer => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     

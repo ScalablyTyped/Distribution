@@ -24,7 +24,8 @@ object StorePackageUpdateResult {
     __obj.asInstanceOf[StorePackageUpdateResult]
   }
   
-  extension [Self <: StorePackageUpdateResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorePackageUpdateResult] (val x: Self) extends AnyVal {
     
     inline def setOverallState(value: StorePackageUpdateState): Self = StObject.set(x, "overallState", value.asInstanceOf[js.Any])
     

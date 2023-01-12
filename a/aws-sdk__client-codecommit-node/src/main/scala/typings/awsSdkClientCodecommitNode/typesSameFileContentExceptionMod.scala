@@ -21,7 +21,8 @@ object typesSameFileContentExceptionMod {
       __obj.asInstanceOf[SameFileContentException]
     }
     
-    extension [Self <: SameFileContentException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SameFileContentException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.SameFileContentException

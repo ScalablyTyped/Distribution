@@ -28,7 +28,8 @@ object ProposedSegmentChange {
     __obj.asInstanceOf[ProposedSegmentChange]
   }
   
-  extension [Self <: ProposedSegmentChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProposedSegmentChange] (val x: Self) extends AnyVal {
     
     inline def setAttachmentPolicyRuleNumber(value: Integer): Self = StObject.set(x, "AttachmentPolicyRuleNumber", value.asInstanceOf[js.Any])
     

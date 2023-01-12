@@ -27,7 +27,8 @@ object TimedTextErrorEvent {
     __obj.asInstanceOf[TimedTextErrorEvent]
   }
   
-  extension [Self <: TimedTextErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimedTextErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: cc): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

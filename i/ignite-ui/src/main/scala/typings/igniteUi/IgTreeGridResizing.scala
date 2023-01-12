@@ -64,7 +64,8 @@ object IgTreeGridResizing {
     __obj.asInstanceOf[IgTreeGridResizing]
   }
   
-  extension [Self <: IgTreeGridResizing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeGridResizing] (val x: Self) extends AnyVal {
     
     inline def setAllowDoubleClickToResize(value: Boolean): Self = StObject.set(x, "allowDoubleClickToResize", value.asInstanceOf[js.Any])
     

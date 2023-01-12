@@ -28,7 +28,8 @@ object ListEnvironmentsInput {
     __obj.asInstanceOf[ListEnvironmentsInput]
   }
   
-  extension [Self <: ListEnvironmentsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEnvironmentsInput] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentTemplates(value: EnvironmentTemplateFilterList): Self = StObject.set(x, "environmentTemplates", value.asInstanceOf[js.Any])
     

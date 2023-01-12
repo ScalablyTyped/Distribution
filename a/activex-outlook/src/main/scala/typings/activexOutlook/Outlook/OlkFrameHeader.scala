@@ -43,7 +43,8 @@ object OlkFrameHeader {
     __obj.asInstanceOf[OlkFrameHeader]
   }
   
-  extension [Self <: OlkFrameHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlkFrameHeader] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: OlAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     

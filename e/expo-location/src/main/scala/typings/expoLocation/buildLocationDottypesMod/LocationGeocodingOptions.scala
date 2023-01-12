@@ -19,7 +19,8 @@ object LocationGeocodingOptions {
     __obj.asInstanceOf[LocationGeocodingOptions]
   }
   
-  extension [Self <: LocationGeocodingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationGeocodingOptions] (val x: Self) extends AnyVal {
     
     inline def setUseGoogleMaps(value: Boolean): Self = StObject.set(x, "useGoogleMaps", value.asInstanceOf[js.Any])
     

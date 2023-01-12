@@ -19,7 +19,8 @@ object ShowError {
     __obj.asInstanceOf[ShowError]
   }
   
-  extension [Self <: ShowError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowError] (val x: Self) extends AnyVal {
     
     inline def setShowError(value: Description => Unit): Self = StObject.set(x, "showError", js.Any.fromFunction1(value))
     

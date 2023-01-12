@@ -31,7 +31,8 @@ object PlannerChecklistItem {
     __obj.asInstanceOf[PlannerChecklistItem]
   }
   
-  extension [Self <: PlannerChecklistItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlannerChecklistItem] (val x: Self) extends AnyVal {
     
     inline def setIsChecked(value: NullableOption[Boolean]): Self = StObject.set(x, "isChecked", value.asInstanceOf[js.Any])
     

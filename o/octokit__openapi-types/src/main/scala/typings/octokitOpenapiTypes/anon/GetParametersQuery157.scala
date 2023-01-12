@@ -23,7 +23,8 @@ object GetParametersQuery157 {
     __obj.asInstanceOf[GetParametersQuery157]
   }
   
-  extension [Self <: GetParametersQuery157](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersQuery157] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersQuery157): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object DocumentLinkClientCapabilities {
     __obj.asInstanceOf[DocumentLinkClientCapabilities]
   }
   
-  extension [Self <: DocumentLinkClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentLinkClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     

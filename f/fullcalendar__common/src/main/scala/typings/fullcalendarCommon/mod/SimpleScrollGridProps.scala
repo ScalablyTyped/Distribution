@@ -28,7 +28,8 @@ object SimpleScrollGridProps {
     __obj.asInstanceOf[SimpleScrollGridProps]
   }
   
-  extension [Self <: SimpleScrollGridProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleScrollGridProps] (val x: Self) extends AnyVal {
     
     inline def setCollapsibleWidth(value: Boolean): Self = StObject.set(x, "collapsibleWidth", value.asInstanceOf[js.Any])
     

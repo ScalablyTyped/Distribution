@@ -67,7 +67,8 @@ object Pdf {
       __obj.asInstanceOf[PdfDocument]
     }
     
-    extension [Self <: PdfDocument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PdfDocument] (val x: Self) extends AnyVal {
       
       inline def setGetPage(value: Double => PdfPage): Self = StObject.set(x, "getPage", js.Any.fromFunction1(value))
       
@@ -145,7 +146,8 @@ object Pdf {
       __obj.asInstanceOf[PdfPageDimensions]
     }
     
-    extension [Self <: PdfPageDimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PdfPageDimensions] (val x: Self) extends AnyVal {
       
       inline def setArtBox(value: Rect): Self = StObject.set(x, "artBox", value.asInstanceOf[js.Any])
       
@@ -194,7 +196,8 @@ object Pdf {
       __obj.asInstanceOf[PdfPageRenderOptions]
     }
     
-    extension [Self <: PdfPageRenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PdfPageRenderOptions] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

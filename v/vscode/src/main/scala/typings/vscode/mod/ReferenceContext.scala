@@ -18,7 +18,8 @@ object ReferenceContext {
     __obj.asInstanceOf[ReferenceContext]
   }
   
-  extension [Self <: ReferenceContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceContext] (val x: Self) extends AnyVal {
     
     inline def setIncludeDeclaration(value: Boolean): Self = StObject.set(x, "includeDeclaration", value.asInstanceOf[js.Any])
   }

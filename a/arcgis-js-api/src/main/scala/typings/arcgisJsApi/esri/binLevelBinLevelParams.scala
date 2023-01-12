@@ -20,7 +20,8 @@ object binLevelBinLevelParams {
     __obj.asInstanceOf[binLevelBinLevelParams]
   }
   
-  extension [Self <: binLevelBinLevelParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: binLevelBinLevelParams] (val x: Self) extends AnyVal {
     
     inline def setView(value: MapView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }

@@ -103,7 +103,8 @@ object ComponentCfg {
     __obj.asInstanceOf[ComponentCfg]
   }
   
-  extension [Self <: ComponentCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentCfg] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

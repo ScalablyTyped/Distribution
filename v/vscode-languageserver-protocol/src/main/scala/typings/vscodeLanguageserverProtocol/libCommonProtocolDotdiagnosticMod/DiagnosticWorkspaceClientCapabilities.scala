@@ -24,7 +24,8 @@ object DiagnosticWorkspaceClientCapabilities {
     __obj.asInstanceOf[DiagnosticWorkspaceClientCapabilities]
   }
   
-  extension [Self <: DiagnosticWorkspaceClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticWorkspaceClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setRefreshSupport(value: Boolean): Self = StObject.set(x, "refreshSupport", value.asInstanceOf[js.Any])
     

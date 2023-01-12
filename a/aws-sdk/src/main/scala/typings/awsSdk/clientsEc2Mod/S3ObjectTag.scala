@@ -23,7 +23,8 @@ object S3ObjectTag {
     __obj.asInstanceOf[S3ObjectTag]
   }
   
-  extension [Self <: S3ObjectTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3ObjectTag] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

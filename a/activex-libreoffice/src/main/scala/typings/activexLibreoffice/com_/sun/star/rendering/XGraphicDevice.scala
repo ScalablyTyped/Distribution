@@ -173,7 +173,8 @@ object XGraphicDevice {
     __obj.asInstanceOf[XGraphicDevice]
   }
   
-  extension [Self <: XGraphicDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGraphicDevice] (val x: Self) extends AnyVal {
     
     inline def setBufferController(value: XBufferController): Self = StObject.set(x, "BufferController", value.asInstanceOf[js.Any])
     

@@ -133,7 +133,8 @@ object distIoLocalStorageMod {
       __obj.asInstanceOf[LocalStorageKeys]
     }
     
-    extension [Self <: LocalStorageKeys](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalStorageKeys] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       

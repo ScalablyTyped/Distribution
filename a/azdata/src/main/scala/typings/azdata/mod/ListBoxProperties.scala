@@ -19,7 +19,8 @@ object ListBoxProperties {
     __obj.asInstanceOf[ListBoxProperties]
   }
   
-  extension [Self <: ListBoxProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBoxProperties] (val x: Self) extends AnyVal {
     
     inline def setSelectedRow(value: Double): Self = StObject.set(x, "selectedRow", value.asInstanceOf[js.Any])
     

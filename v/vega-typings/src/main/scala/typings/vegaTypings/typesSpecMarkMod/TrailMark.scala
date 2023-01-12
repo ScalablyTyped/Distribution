@@ -23,7 +23,8 @@ object TrailMark {
     __obj.asInstanceOf[TrailMark]
   }
   
-  extension [Self <: TrailMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrailMark] (val x: Self) extends AnyVal {
     
     inline def setType(value: trail): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

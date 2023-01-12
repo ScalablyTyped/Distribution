@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[PartialSpecification]
     }
     
-    extension [Self <: PartialSpecification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSpecification] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

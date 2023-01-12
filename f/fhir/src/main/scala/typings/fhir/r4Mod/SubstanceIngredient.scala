@@ -30,7 +30,8 @@ object SubstanceIngredient {
     __obj.asInstanceOf[SubstanceIngredient]
   }
   
-  extension [Self <: SubstanceIngredient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceIngredient] (val x: Self) extends AnyVal {
     
     inline def setQuantity(value: Ratio): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object CompletionEntryDataAutoImport {
     __obj.asInstanceOf[CompletionEntryDataAutoImport]
   }
   
-  extension [Self <: CompletionEntryDataAutoImport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionEntryDataAutoImport] (val x: Self) extends AnyVal {
     
     inline def setAmbientModuleName(value: java.lang.String): Self = StObject.set(x, "ambientModuleName", value.asInstanceOf[js.Any])
     

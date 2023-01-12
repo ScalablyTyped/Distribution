@@ -18,7 +18,8 @@ object ManagedZoneForwardingConfig {
     __obj.asInstanceOf[ManagedZoneForwardingConfig]
   }
   
-  extension [Self <: ManagedZoneForwardingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedZoneForwardingConfig] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

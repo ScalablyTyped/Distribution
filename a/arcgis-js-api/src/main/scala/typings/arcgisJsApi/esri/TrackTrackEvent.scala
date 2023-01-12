@@ -15,7 +15,8 @@ object TrackTrackEvent {
     __obj.asInstanceOf[TrackTrackEvent]
   }
   
-  extension [Self <: TrackTrackEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackTrackEvent] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }

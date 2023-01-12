@@ -19,7 +19,8 @@ object Privategists {
     __obj.asInstanceOf[Privategists]
   }
   
-  extension [Self <: Privategists](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Privategists] (val x: Self) extends AnyVal {
     
     inline def setPrivate_gists(value: Double): Self = StObject.set(x, "private_gists", value.asInstanceOf[js.Any])
     

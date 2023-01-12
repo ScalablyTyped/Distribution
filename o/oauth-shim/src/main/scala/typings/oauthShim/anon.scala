@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Accesstoken]
     }
     
-    extension [Self <: Accesstoken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accesstoken] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Accesstoken): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -93,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Get]
     }
     
-    extension [Self <: Get](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
       
       inline def setGet(value: (Any, js.Function1[/* success */ `false` | js.Object, Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     }

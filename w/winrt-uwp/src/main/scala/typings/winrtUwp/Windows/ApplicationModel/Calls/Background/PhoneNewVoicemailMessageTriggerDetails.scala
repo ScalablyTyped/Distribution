@@ -23,7 +23,8 @@ object PhoneNewVoicemailMessageTriggerDetails {
     __obj.asInstanceOf[PhoneNewVoicemailMessageTriggerDetails]
   }
   
-  extension [Self <: PhoneNewVoicemailMessageTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneNewVoicemailMessageTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setLineId(value: String): Self = StObject.set(x, "lineId", value.asInstanceOf[js.Any])
     

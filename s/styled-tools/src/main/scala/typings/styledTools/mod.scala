@@ -258,7 +258,8 @@ object mod {
       __obj.asInstanceOf[ThemeWithPalette]
     }
     
-    extension [Self <: ThemeWithPalette](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeWithPalette] (val x: Self) extends AnyVal {
       
       inline def setPalette(value: StringDictionary[Any]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
       

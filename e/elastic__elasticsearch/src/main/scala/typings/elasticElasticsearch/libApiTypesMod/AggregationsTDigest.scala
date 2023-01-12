@@ -15,7 +15,8 @@ object AggregationsTDigest {
     __obj.asInstanceOf[AggregationsTDigest]
   }
   
-  extension [Self <: AggregationsTDigest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsTDigest] (val x: Self) extends AnyVal {
     
     inline def setCompression(value: integer): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     

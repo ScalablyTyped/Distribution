@@ -44,7 +44,8 @@ object distSrcCommandsConfigMod extends Shortcut {
       __obj.asInstanceOf[Argv]
     }
     
-    extension [Self <: Argv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Argv] (val x: Self) extends AnyVal {
       
       inline def setBool(value: Boolean): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       

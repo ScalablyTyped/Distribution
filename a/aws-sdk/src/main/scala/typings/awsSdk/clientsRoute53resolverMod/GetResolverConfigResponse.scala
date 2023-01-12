@@ -18,7 +18,8 @@ object GetResolverConfigResponse {
     __obj.asInstanceOf[GetResolverConfigResponse]
   }
   
-  extension [Self <: GetResolverConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResolverConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setResolverConfig(value: ResolverConfig): Self = StObject.set(x, "ResolverConfig", value.asInstanceOf[js.Any])
     

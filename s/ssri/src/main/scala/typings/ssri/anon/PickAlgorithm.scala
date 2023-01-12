@@ -17,7 +17,8 @@ object PickAlgorithm {
     __obj.asInstanceOf[PickAlgorithm]
   }
   
-  extension [Self <: PickAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setPickAlgorithm(value: (/* algo1 */ String, /* algo2 */ String) => String): Self = StObject.set(x, "pickAlgorithm", js.Any.fromFunction2(value))
     

@@ -28,7 +28,8 @@ object ListFacesResponse {
     __obj.asInstanceOf[ListFacesResponse]
   }
   
-  extension [Self <: ListFacesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFacesResponse] (val x: Self) extends AnyVal {
     
     inline def setFaceModelVersion(value: String): Self = StObject.set(x, "FaceModelVersion", value.asInstanceOf[js.Any])
     

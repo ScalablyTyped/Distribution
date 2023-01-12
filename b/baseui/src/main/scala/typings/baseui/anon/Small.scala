@@ -26,7 +26,8 @@ object Small {
     __obj.asInstanceOf[Small]
   }
   
-  extension [Self <: Small](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Small] (val x: Self) extends AnyVal {
     
     inline def `setMedium-icon`(value: X): Self = StObject.set(x, "medium-icon", value.asInstanceOf[js.Any])
     

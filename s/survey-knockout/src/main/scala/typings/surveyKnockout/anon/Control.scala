@@ -83,7 +83,8 @@ object Control {
     __obj.asInstanceOf[Control]
   }
   
-  extension [Self <: Control](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
     
     inline def setCleanButton(value: String): Self = StObject.set(x, "cleanButton", value.asInstanceOf[js.Any])
     

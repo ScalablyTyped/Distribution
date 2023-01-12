@@ -69,7 +69,8 @@ object SharedTransformCodegenOptions {
     __obj.asInstanceOf[SharedTransformCodegenOptions]
   }
   
-  extension [Self <: SharedTransformCodegenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedTransformCodegenOptions] (val x: Self) extends AnyVal {
     
     inline def setBindingMetadata(value: BindingMetadata): Self = StObject.set(x, "bindingMetadata", value.asInstanceOf[js.Any])
     

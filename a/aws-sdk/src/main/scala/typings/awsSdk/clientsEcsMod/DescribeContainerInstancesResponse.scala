@@ -23,7 +23,8 @@ object DescribeContainerInstancesResponse {
     __obj.asInstanceOf[DescribeContainerInstancesResponse]
   }
   
-  extension [Self <: DescribeContainerInstancesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeContainerInstancesResponse] (val x: Self) extends AnyVal {
     
     inline def setContainerInstances(value: ContainerInstances): Self = StObject.set(x, "containerInstances", value.asInstanceOf[js.Any])
     

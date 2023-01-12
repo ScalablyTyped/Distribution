@@ -167,7 +167,8 @@ object IDatepickerConfig {
     __obj.asInstanceOf[IDatepickerConfig]
   }
   
-  extension [Self <: IDatepickerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDatepickerConfig] (val x: Self) extends AnyVal {
     
     inline def setCustomClass(value: /* args */ IDatepickerCellArgs => String): Self = StObject.set(x, "customClass", js.Any.fromFunction1(value))
     

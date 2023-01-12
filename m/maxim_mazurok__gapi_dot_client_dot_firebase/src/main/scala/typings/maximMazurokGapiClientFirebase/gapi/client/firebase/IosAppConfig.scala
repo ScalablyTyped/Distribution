@@ -19,7 +19,8 @@ object IosAppConfig {
     __obj.asInstanceOf[IosAppConfig]
   }
   
-  extension [Self <: IosAppConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosAppConfig] (val x: Self) extends AnyVal {
     
     inline def setConfigFileContents(value: String): Self = StObject.set(x, "configFileContents", value.asInstanceOf[js.Any])
     

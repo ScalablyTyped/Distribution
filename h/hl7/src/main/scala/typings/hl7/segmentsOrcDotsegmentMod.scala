@@ -105,7 +105,8 @@ object segmentsOrcDotsegmentMod {
       __obj.asInstanceOf[ORC]
     }
     
-    extension [Self <: ORC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ORC] (val x: Self) extends AnyVal {
       
       inline def setORCDot1(value: String): Self = StObject.set(x, "ORC.1", value.asInstanceOf[js.Any])
       

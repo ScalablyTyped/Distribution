@@ -28,7 +28,8 @@ object HoverStyle {
     __obj.asInstanceOf[HoverStyle]
   }
   
-  extension [Self <: HoverStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoverStyle] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: ColorVisible): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

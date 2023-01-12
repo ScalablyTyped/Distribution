@@ -17,7 +17,8 @@ object Nest {
     __obj.asInstanceOf[Nest]
   }
   
-  extension [Self <: Nest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nest] (val x: Self) extends AnyVal {
     
     inline def setBurn(value: (Any, Any) => Unit): Self = StObject.set(x, "Burn", js.Any.fromFunction2(value))
     

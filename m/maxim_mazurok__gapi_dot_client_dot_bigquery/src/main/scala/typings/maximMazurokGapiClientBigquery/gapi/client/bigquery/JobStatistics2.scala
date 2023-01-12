@@ -123,7 +123,8 @@ object JobStatistics2 {
     __obj.asInstanceOf[JobStatistics2]
   }
   
-  extension [Self <: JobStatistics2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobStatistics2] (val x: Self) extends AnyVal {
     
     inline def setBiEngineStatistics(value: BiEngineStatistics): Self = StObject.set(x, "biEngineStatistics", value.asInstanceOf[js.Any])
     

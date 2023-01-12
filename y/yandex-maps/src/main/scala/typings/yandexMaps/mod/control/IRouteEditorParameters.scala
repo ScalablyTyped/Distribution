@@ -20,7 +20,8 @@ object IRouteEditorParameters {
     __obj.asInstanceOf[IRouteEditorParameters]
   }
   
-  extension [Self <: IRouteEditorParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRouteEditorParameters] (val x: Self) extends AnyVal {
     
     inline def setData(value: Image): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

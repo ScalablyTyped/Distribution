@@ -17,7 +17,8 @@ object ResizeMode {
     __obj.asInstanceOf[ResizeMode]
   }
   
-  extension [Self <: ResizeMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeMode] (val x: Self) extends AnyVal {
     
     inline def setResizeMode(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileFormat.PatternFillType */ Any

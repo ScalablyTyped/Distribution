@@ -19,7 +19,8 @@ object SegmentSequenceStep {
     __obj.asInstanceOf[SegmentSequenceStep]
   }
   
-  extension [Self <: SegmentSequenceStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentSequenceStep] (val x: Self) extends AnyVal {
     
     inline def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
     

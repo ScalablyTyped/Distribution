@@ -23,7 +23,8 @@ object DialogDateConfig {
     __obj.asInstanceOf[DialogDateConfig]
   }
   
-  extension [Self <: DialogDateConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogDateConfig] (val x: Self) extends AnyVal {
     
     inline def setDateType(value: dateType): Self = StObject.set(x, "dateType", value.asInstanceOf[js.Any])
     

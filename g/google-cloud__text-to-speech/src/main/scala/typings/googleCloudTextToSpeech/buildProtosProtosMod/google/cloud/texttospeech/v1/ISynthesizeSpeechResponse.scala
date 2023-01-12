@@ -17,7 +17,8 @@ object ISynthesizeSpeechResponse {
     __obj.asInstanceOf[ISynthesizeSpeechResponse]
   }
   
-  extension [Self <: ISynthesizeSpeechResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISynthesizeSpeechResponse] (val x: Self) extends AnyVal {
     
     inline def setAudioContent(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "audioContent", value.asInstanceOf[js.Any])
     

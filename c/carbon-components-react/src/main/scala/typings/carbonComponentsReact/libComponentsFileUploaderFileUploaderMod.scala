@@ -512,7 +512,8 @@ object libComponentsFileUploaderFileUploaderMod {
       __obj.asInstanceOf[FileUploaderProps]
     }
     
-    extension [Self <: FileUploaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploaderProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

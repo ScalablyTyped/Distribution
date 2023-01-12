@@ -23,7 +23,8 @@ object GetMLTaskRunRequest {
     __obj.asInstanceOf[GetMLTaskRunRequest]
   }
   
-  extension [Self <: GetMLTaskRunRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMLTaskRunRequest] (val x: Self) extends AnyVal {
     
     inline def setTaskRunId(value: HashString): Self = StObject.set(x, "TaskRunId", value.asInstanceOf[js.Any])
     

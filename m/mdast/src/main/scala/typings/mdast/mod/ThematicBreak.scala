@@ -22,7 +22,8 @@ object ThematicBreak {
     __obj.asInstanceOf[ThematicBreak]
   }
   
-  extension [Self <: ThematicBreak](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThematicBreak] (val x: Self) extends AnyVal {
     
     inline def setType(value: thematicBreak): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

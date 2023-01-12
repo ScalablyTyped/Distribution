@@ -18,7 +18,8 @@ object CSSMatrixComponent {
     __obj.asInstanceOf[CSSMatrixComponent]
   }
   
-  extension [Self <: CSSMatrixComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSMatrixComponent] (val x: Self) extends AnyVal {
     
     inline def setMatrix(value: DOMMatrix): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
   }

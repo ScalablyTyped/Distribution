@@ -23,7 +23,8 @@ object IFileOpenPickerActivatedEventArgs {
     __obj.asInstanceOf[IFileOpenPickerActivatedEventArgs]
   }
   
-  extension [Self <: IFileOpenPickerActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileOpenPickerActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFileOpenPickerUI(value: FileOpenPickerUI): Self = StObject.set(x, "fileOpenPickerUI", value.asInstanceOf[js.Any])
   }

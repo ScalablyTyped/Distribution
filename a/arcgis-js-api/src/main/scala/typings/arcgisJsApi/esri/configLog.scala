@@ -31,7 +31,8 @@ object configLog {
     __obj.asInstanceOf[configLog]
   }
   
-  extension [Self <: configLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: configLog] (val x: Self) extends AnyVal {
     
     inline def setInterceptors(value: js.Array[LogInterceptor]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
     

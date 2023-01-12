@@ -31,7 +31,8 @@ object NEMSignTx {
     __obj.asInstanceOf[NEMSignTx]
   }
   
-  extension [Self <: NEMSignTx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEMSignTx] (val x: Self) extends AnyVal {
     
     inline def setAggregate_modification(value: NEMAggregateModification): Self = StObject.set(x, "aggregate_modification", value.asInstanceOf[js.Any])
     

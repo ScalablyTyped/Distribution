@@ -31,7 +31,8 @@ object PlaceAspectRating {
     __obj.asInstanceOf[PlaceAspectRating]
   }
   
-  extension [Self <: PlaceAspectRating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceAspectRating] (val x: Self) extends AnyVal {
     
     inline def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     

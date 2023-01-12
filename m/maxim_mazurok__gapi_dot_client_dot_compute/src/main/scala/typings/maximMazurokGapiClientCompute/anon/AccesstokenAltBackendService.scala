@@ -67,7 +67,8 @@ object AccesstokenAltBackendService {
     __obj.asInstanceOf[AccesstokenAltBackendService]
   }
   
-  extension [Self <: AccesstokenAltBackendService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccesstokenAltBackendService] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

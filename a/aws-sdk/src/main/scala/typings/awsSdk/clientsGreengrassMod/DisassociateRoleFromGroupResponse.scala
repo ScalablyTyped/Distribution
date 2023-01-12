@@ -18,7 +18,8 @@ object DisassociateRoleFromGroupResponse {
     __obj.asInstanceOf[DisassociateRoleFromGroupResponse]
   }
   
-  extension [Self <: DisassociateRoleFromGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateRoleFromGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setDisassociatedAt(value: string): Self = StObject.set(x, "DisassociatedAt", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object USSDChargeRequest {
     __obj.asInstanceOf[USSDChargeRequest]
   }
   
-  extension [Self <: USSDChargeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: USSDChargeRequest] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

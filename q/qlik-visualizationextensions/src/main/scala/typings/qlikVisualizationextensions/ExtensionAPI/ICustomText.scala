@@ -21,7 +21,8 @@ object ICustomText {
     __obj.asInstanceOf[ICustomText]
   }
   
-  extension [Self <: ICustomText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomText] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: text): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

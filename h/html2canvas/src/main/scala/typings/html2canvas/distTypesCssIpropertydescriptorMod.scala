@@ -73,7 +73,8 @@ object distTypesCssIpropertydescriptorMod {
       __obj.asInstanceOf[IPropertyDescriptor]
     }
     
-    extension [Self <: IPropertyDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPropertyDescriptor] (val x: Self) extends AnyVal {
       
       inline def setInitialValue(value: String): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object distTypesCssIpropertydescriptorMod {
       __obj.asInstanceOf[IPropertyIdentValueDescriptor[T]]
     }
     
-    extension [Self <: IPropertyIdentValueDescriptor[?], T](x: Self & IPropertyIdentValueDescriptor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPropertyIdentValueDescriptor[?], T] (val x: Self & IPropertyIdentValueDescriptor[T]) extends AnyVal {
       
       inline def setParse(value: (Context, String) => T): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
       
@@ -129,7 +131,8 @@ object distTypesCssIpropertydescriptorMod {
       __obj.asInstanceOf[IPropertyListDescriptor[T]]
     }
     
-    extension [Self <: IPropertyListDescriptor[?], T](x: Self & IPropertyListDescriptor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPropertyListDescriptor[?], T] (val x: Self & IPropertyListDescriptor[T]) extends AnyVal {
       
       inline def setParse(value: (Context, js.Array[CSSValue]) => T): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
       
@@ -153,7 +156,8 @@ object distTypesCssIpropertydescriptorMod {
       __obj.asInstanceOf[IPropertyTokenValueDescriptor]
     }
     
-    extension [Self <: IPropertyTokenValueDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPropertyTokenValueDescriptor] (val x: Self) extends AnyVal {
       
       inline def setType(value: `4`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -177,7 +181,8 @@ object distTypesCssIpropertydescriptorMod {
       __obj.asInstanceOf[IPropertyTypeValueDescriptor]
     }
     
-    extension [Self <: IPropertyTypeValueDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPropertyTypeValueDescriptor] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: CSSTypes): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -203,7 +208,8 @@ object distTypesCssIpropertydescriptorMod {
       __obj.asInstanceOf[IPropertyValueDescriptor[T]]
     }
     
-    extension [Self <: IPropertyValueDescriptor[?], T](x: Self & IPropertyValueDescriptor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPropertyValueDescriptor[?], T] (val x: Self & IPropertyValueDescriptor[T]) extends AnyVal {
       
       inline def setParse(value: (Context, CSSValue) => T): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
       

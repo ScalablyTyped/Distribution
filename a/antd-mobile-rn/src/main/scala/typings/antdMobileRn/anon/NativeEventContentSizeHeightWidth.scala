@@ -15,7 +15,8 @@ object NativeEventContentSizeHeightWidth {
     __obj.asInstanceOf[NativeEventContentSizeHeightWidth]
   }
   
-  extension [Self <: NativeEventContentSizeHeightWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeEventContentSizeHeightWidth] (val x: Self) extends AnyVal {
     
     inline def setNativeEvent(value: ContentSizeHeightWidth): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
   }

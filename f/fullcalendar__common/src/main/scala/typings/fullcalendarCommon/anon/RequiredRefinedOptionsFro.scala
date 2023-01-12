@@ -72,7 +72,8 @@ object RequiredRefinedOptionsFro {
     __obj.asInstanceOf[RequiredRefinedOptionsFro]
   }
   
-  extension [Self <: RequiredRefinedOptionsFro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredRefinedOptionsFro] (val x: Self) extends AnyVal {
     
     inline def setDatesSet(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @fullcalendar/common.@fullcalendar/common.Identity<(arg : @fullcalendar/common.@fullcalendar/common.DatesSetArg): void> extends (input : any): infer RefinedType ? RefinedType : never */ js.Any

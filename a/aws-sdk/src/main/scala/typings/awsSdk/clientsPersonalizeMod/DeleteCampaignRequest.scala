@@ -18,7 +18,8 @@ object DeleteCampaignRequest {
     __obj.asInstanceOf[DeleteCampaignRequest]
   }
   
-  extension [Self <: DeleteCampaignRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCampaignRequest] (val x: Self) extends AnyVal {
     
     inline def setCampaignArn(value: Arn): Self = StObject.set(x, "campaignArn", value.asInstanceOf[js.Any])
   }

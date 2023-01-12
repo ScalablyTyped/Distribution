@@ -18,7 +18,8 @@ object GetDeploymentTargetOutput {
     __obj.asInstanceOf[GetDeploymentTargetOutput]
   }
   
-  extension [Self <: GetDeploymentTargetOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDeploymentTargetOutput] (val x: Self) extends AnyVal {
     
     inline def setDeploymentTarget(value: DeploymentTarget): Self = StObject.set(x, "deploymentTarget", value.asInstanceOf[js.Any])
     

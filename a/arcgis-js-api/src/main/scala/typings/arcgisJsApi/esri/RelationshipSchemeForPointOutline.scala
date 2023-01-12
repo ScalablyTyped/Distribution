@@ -27,7 +27,8 @@ object RelationshipSchemeForPointOutline {
     __obj.asInstanceOf[RelationshipSchemeForPointOutline]
   }
   
-  extension [Self <: RelationshipSchemeForPointOutline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationshipSchemeForPointOutline] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

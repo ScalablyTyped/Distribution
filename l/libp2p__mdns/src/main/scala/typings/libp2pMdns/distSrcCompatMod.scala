@@ -45,7 +45,8 @@ object distSrcCompatMod {
       __obj.asInstanceOf[GoMulticastDNSInit]
     }
     
-    extension [Self <: GoMulticastDNSInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoMulticastDNSInit] (val x: Self) extends AnyVal {
       
       inline def setQueryInterval(value: Double): Self = StObject.set(x, "queryInterval", value.asInstanceOf[js.Any])
       

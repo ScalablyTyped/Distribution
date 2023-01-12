@@ -39,7 +39,8 @@ object FieldIndex {
     __obj.asInstanceOf[FieldIndex]
   }
   
-  extension [Self <: FieldIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldIndex] (val x: Self) extends AnyVal {
     
     inline def setCollectionGroup(value: String): Self = StObject.set(x, "collectionGroup", value.asInstanceOf[js.Any])
     

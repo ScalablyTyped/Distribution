@@ -23,7 +23,8 @@ object GetRelationalDatabaseBundlesRequest {
     __obj.asInstanceOf[GetRelationalDatabaseBundlesRequest]
   }
   
-  extension [Self <: GetRelationalDatabaseBundlesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRelationalDatabaseBundlesRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeInactive(value: Boolean): Self = StObject.set(x, "includeInactive", value.asInstanceOf[js.Any])
     

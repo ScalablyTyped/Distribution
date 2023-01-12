@@ -53,7 +53,8 @@ object XFileIdentifierConverter {
     __obj.asInstanceOf[XFileIdentifierConverter]
   }
   
-  extension [Self <: XFileIdentifierConverter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFileIdentifierConverter] (val x: Self) extends AnyVal {
     
     inline def setGetFileProviderLocality(value: String => Double): Self = StObject.set(x, "getFileProviderLocality", js.Any.fromFunction1(value))
     

@@ -124,7 +124,8 @@ object mod {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setClientEmail(value: String): Self = StObject.set(x, "clientEmail", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object mod {
       __obj.asInstanceOf[GetTokenOptions]
     }
     
-    extension [Self <: GetTokenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTokenOptions] (val x: Self) extends AnyVal {
       
       inline def setForceRefresh(value: Boolean): Self = StObject.set(x, "forceRefresh", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object mod {
       __obj.asInstanceOf[TokenData]
     }
     
-    extension [Self <: TokenData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenData] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
@@ -225,7 +228,8 @@ object mod {
       __obj.asInstanceOf[TokenOptions]
     }
     
-    extension [Self <: TokenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalClaims(value: js.Object): Self = StObject.set(x, "additionalClaims", value.asInstanceOf[js.Any])
       
@@ -278,7 +282,8 @@ object mod {
       __obj.asInstanceOf[Transporter]
     }
     
-    extension [Self <: Transporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transporter] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: GaxiosOptions => GaxiosPromise[Any]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     }

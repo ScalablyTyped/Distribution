@@ -66,7 +66,8 @@ object outAdaptersFsMod {
       __obj.asInstanceOf[FileSystemAdapter]
     }
     
-    extension [Self <: FileSystemAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSystemAdapter] (val x: Self) extends AnyVal {
       
       inline def setReaddir(value: ReaddirAsynchronousMethod): Self = StObject.set(x, "readdir", value.asInstanceOf[js.Any])
       

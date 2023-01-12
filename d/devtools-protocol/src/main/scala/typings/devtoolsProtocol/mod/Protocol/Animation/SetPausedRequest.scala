@@ -23,7 +23,8 @@ object SetPausedRequest {
     __obj.asInstanceOf[SetPausedRequest]
   }
   
-  extension [Self <: SetPausedRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetPausedRequest] (val x: Self) extends AnyVal {
     
     inline def setAnimations(value: js.Array[String]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     

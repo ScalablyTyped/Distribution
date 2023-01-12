@@ -35,7 +35,8 @@ object Checkpoint {
     __obj.asInstanceOf[Checkpoint]
   }
   
-  extension [Self <: Checkpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checkpoint] (val x: Self) extends AnyVal {
     
     inline def setDoneParts(value: js.Array[Etag]): Self = StObject.set(x, "doneParts", value.asInstanceOf[js.Any])
     

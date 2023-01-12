@@ -20,7 +20,8 @@ object GoToProperties {
     __obj.asInstanceOf[GoToProperties]
   }
   
-  extension [Self <: GoToProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoToProperties] (val x: Self) extends AnyVal {
     
     inline def setGoToOverride(value: (/* view */ MapView | SceneView, /* goToParameters */ Any) => scala.Unit): Self = StObject.set(x, "goToOverride", js.Any.fromFunction2(value))
     

@@ -28,7 +28,8 @@ object TableSummary {
     __obj.asInstanceOf[TableSummary]
   }
   
-  extension [Self <: TableSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableSummary] (val x: Self) extends AnyVal {
     
     inline def setKeyspaceName(value: KeyspaceName): Self = StObject.set(x, "keyspaceName", value.asInstanceOf[js.Any])
     

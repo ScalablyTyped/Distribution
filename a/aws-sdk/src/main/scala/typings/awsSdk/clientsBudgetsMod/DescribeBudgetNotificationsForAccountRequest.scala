@@ -22,7 +22,8 @@ object DescribeBudgetNotificationsForAccountRequest {
     __obj.asInstanceOf[DescribeBudgetNotificationsForAccountRequest]
   }
   
-  extension [Self <: DescribeBudgetNotificationsForAccountRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBudgetNotificationsForAccountRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

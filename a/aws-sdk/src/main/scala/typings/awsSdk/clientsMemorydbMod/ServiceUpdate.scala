@@ -53,7 +53,8 @@ object ServiceUpdate {
     __obj.asInstanceOf[ServiceUpdate]
   }
   
-  extension [Self <: ServiceUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceUpdate] (val x: Self) extends AnyVal {
     
     inline def setAutoUpdateStartDate(value: js.Date): Self = StObject.set(x, "AutoUpdateStartDate", value.asInstanceOf[js.Any])
     

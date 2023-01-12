@@ -32,7 +32,8 @@ object distEs5ControlMod {
       __obj.asInstanceOf[WithPrefix]
     }
     
-    extension [Self <: WithPrefix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithPrefix] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       

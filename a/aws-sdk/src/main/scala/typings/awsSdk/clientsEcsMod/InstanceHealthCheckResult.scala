@@ -33,7 +33,8 @@ object InstanceHealthCheckResult {
     __obj.asInstanceOf[InstanceHealthCheckResult]
   }
   
-  extension [Self <: InstanceHealthCheckResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceHealthCheckResult] (val x: Self) extends AnyVal {
     
     inline def setLastStatusChange(value: js.Date): Self = StObject.set(x, "lastStatusChange", value.asInstanceOf[js.Any])
     

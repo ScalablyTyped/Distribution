@@ -18,7 +18,8 @@ object ResultReuseConfiguration {
     __obj.asInstanceOf[ResultReuseConfiguration]
   }
   
-  extension [Self <: ResultReuseConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultReuseConfiguration] (val x: Self) extends AnyVal {
     
     inline def setResultReuseByAgeConfiguration(value: ResultReuseByAgeConfiguration): Self = StObject.set(x, "ResultReuseByAgeConfiguration", value.asInstanceOf[js.Any])
     

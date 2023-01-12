@@ -21,7 +21,8 @@ object SecuritySamlInvalidateRequest {
     __obj.asInstanceOf[SecuritySamlInvalidateRequest]
   }
   
-  extension [Self <: SecuritySamlInvalidateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySamlInvalidateRequest] (val x: Self) extends AnyVal {
     
     inline def setAcs(value: String): Self = StObject.set(x, "acs", value.asInstanceOf[js.Any])
     

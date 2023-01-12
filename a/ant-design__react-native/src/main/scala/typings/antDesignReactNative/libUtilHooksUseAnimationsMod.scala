@@ -29,7 +29,8 @@ object libUtilHooksUseAnimationsMod {
       __obj.asInstanceOf[ConfigureInterface]
     }
     
-    extension [Self <: ConfigureInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigureInterface] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: /* _TimingAnimationConfig */ Delay => Unit): Self = StObject.set(x, "animate", js.Any.fromFunction1(value))
       

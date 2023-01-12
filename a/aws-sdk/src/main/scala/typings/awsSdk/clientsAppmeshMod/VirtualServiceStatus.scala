@@ -18,7 +18,8 @@ object VirtualServiceStatus {
     __obj.asInstanceOf[VirtualServiceStatus]
   }
   
-  extension [Self <: VirtualServiceStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualServiceStatus] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: VirtualServiceStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

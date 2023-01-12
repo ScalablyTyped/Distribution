@@ -23,7 +23,8 @@ object DeletePushTemplateRequest {
     __obj.asInstanceOf[DeletePushTemplateRequest]
   }
   
-  extension [Self <: DeletePushTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePushTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     

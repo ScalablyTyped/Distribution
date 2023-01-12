@@ -16,7 +16,8 @@ object SourceGetMetadataRequest {
     __obj.asInstanceOf[SourceGetMetadataRequest]
   }
   
-  extension [Self <: SourceGetMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceGetMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

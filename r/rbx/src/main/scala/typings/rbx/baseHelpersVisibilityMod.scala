@@ -40,7 +40,8 @@ object baseHelpersVisibilityMod {
       __obj.asInstanceOf[VisibilityHelpersProps]
     }
     
-    extension [Self <: VisibilityHelpersProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisibilityHelpersProps] (val x: Self) extends AnyVal {
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       

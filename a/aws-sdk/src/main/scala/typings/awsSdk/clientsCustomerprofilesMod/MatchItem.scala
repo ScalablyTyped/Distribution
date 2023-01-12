@@ -28,7 +28,8 @@ object MatchItem {
     __obj.asInstanceOf[MatchItem]
   }
   
-  extension [Self <: MatchItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchItem] (val x: Self) extends AnyVal {
     
     inline def setConfidenceScore(value: Double): Self = StObject.set(x, "ConfidenceScore", value.asInstanceOf[js.Any])
     

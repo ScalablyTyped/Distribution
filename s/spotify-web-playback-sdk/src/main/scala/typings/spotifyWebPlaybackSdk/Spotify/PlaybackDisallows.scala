@@ -33,7 +33,8 @@ object PlaybackDisallows {
     __obj.asInstanceOf[PlaybackDisallows]
   }
   
-  extension [Self <: PlaybackDisallows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackDisallows] (val x: Self) extends AnyVal {
     
     inline def setPausing(value: Boolean): Self = StObject.set(x, "pausing", value.asInstanceOf[js.Any])
     

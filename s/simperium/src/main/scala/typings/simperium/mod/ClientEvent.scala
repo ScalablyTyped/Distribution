@@ -57,7 +57,8 @@ object ClientEvent {
     __obj.asInstanceOf[ClientEvent]
   }
   
-  extension [Self <: ClientEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientEvent] (val x: Self) extends AnyVal {
     
     inline def `setAccess-token`(value: String => Unit): Self = StObject.set(x, "access-token", js.Any.fromFunction1(value))
     

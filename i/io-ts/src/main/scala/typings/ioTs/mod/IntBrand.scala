@@ -15,7 +15,8 @@ object IntBrand {
     __obj.asInstanceOf[IntBrand]
   }
   
-  extension [Self <: IntBrand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntBrand] (val x: Self) extends AnyVal {
     
     inline def setInt(value: js.Symbol): Self = StObject.set(x, "Int", value.asInstanceOf[js.Any])
   }

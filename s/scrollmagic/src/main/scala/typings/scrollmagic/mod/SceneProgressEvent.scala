@@ -32,7 +32,8 @@ object SceneProgressEvent {
     __obj.asInstanceOf[SceneProgressEvent[T]]
   }
   
-  extension [Self <: SceneProgressEvent[?], T](x: Self & SceneProgressEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneProgressEvent[?], T] (val x: Self & SceneProgressEvent[T]) extends AnyVal {
     
     inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     

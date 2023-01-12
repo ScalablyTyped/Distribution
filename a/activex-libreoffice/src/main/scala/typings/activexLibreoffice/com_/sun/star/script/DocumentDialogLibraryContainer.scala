@@ -71,7 +71,8 @@ object DocumentDialogLibraryContainer {
     __obj.asInstanceOf[DocumentDialogLibraryContainer]
   }
   
-  extension [Self <: DocumentDialogLibraryContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentDialogLibraryContainer] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: XStorageBasedDocument => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

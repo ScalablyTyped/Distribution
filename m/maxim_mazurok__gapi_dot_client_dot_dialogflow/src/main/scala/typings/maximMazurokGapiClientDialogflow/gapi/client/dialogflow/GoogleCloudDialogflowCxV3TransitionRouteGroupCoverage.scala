@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage] (val x: Self) extends AnyVal {
     
     inline def setCoverageScore(value: Double): Self = StObject.set(x, "coverageScore", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object XTableCharts {
     __obj.asInstanceOf[XTableCharts]
   }
   
-  extension [Self <: XTableCharts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTableCharts] (val x: Self) extends AnyVal {
     
     inline def setAddNewByName(value: (String, Rectangle, SeqEquiv[CellRangeAddress], Boolean, Boolean) => Unit): Self = StObject.set(x, "addNewByName", js.Any.fromFunction5(value))
     

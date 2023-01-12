@@ -26,7 +26,8 @@ object GroovyCompatibility {
     __obj.asInstanceOf[GroovyCompatibility]
   }
   
-  extension [Self <: GroovyCompatibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroovyCompatibility] (val x: Self) extends AnyVal {
     
     inline def setGroovyCompatibility(value: Boolean): Self = StObject.set(x, "groovyCompatibility", value.asInstanceOf[js.Any])
     

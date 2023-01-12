@@ -25,7 +25,8 @@ object InterconnectDiagnostics {
     __obj.asInstanceOf[InterconnectDiagnostics]
   }
   
-  extension [Self <: InterconnectDiagnostics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterconnectDiagnostics] (val x: Self) extends AnyVal {
     
     inline def setArpCaches(value: js.Array[InterconnectDiagnosticsARPEntry]): Self = StObject.set(x, "arpCaches", value.asInstanceOf[js.Any])
     

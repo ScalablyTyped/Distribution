@@ -27,7 +27,8 @@ object IFrameProps {
     __obj.asInstanceOf[IFrameProps]
   }
   
-  extension [Self <: IFrameProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFrameProps] (val x: Self) extends AnyVal {
     
     inline def setAllowFullScreen(value: Boolean): Self = StObject.set(x, "allowFullScreen", value.asInstanceOf[js.Any])
     

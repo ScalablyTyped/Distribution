@@ -22,7 +22,8 @@ object PartialThresholdLine {
     __obj.asInstanceOf[PartialThresholdLine]
   }
   
-  extension [Self <: PartialThresholdLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialThresholdLine] (val x: Self) extends AnyVal {
     
     inline def setLine(value: Partial[GaugeLine]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

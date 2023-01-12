@@ -26,7 +26,8 @@ object CardanoCertificate {
     __obj.asInstanceOf[CardanoCertificate]
   }
   
-  extension [Self <: CardanoCertificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoCertificate] (val x: Self) extends AnyVal {
     
     inline def setKeyHash(value: String): Self = StObject.set(x, "keyHash", value.asInstanceOf[js.Any])
     

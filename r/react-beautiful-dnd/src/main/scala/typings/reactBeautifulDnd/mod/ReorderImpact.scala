@@ -21,7 +21,8 @@ object ReorderImpact {
     __obj.asInstanceOf[ReorderImpact]
   }
   
-  extension [Self <: ReorderImpact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReorderImpact] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: DraggableLocation): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

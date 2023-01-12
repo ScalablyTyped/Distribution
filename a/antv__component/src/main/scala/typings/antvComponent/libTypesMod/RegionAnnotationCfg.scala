@@ -36,7 +36,8 @@ object RegionAnnotationCfg {
     __obj.asInstanceOf[RegionAnnotationCfg]
   }
   
-  extension [Self <: RegionAnnotationCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionAnnotationCfg] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[HttpOptions]
     }
     
-    extension [Self <: HttpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxSockets(value: Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object mod {
       __obj.asInstanceOf[HttpOverHttpsOptions]
     }
     
-    extension [Self <: HttpOverHttpsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpOverHttpsOptions] (val x: Self) extends AnyVal {
       
       inline def setProxy(value: HttpsProxyOptions): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object mod {
       __obj.asInstanceOf[HttpsOverHttpOptions]
     }
     
-    extension [Self <: HttpsOverHttpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpsOverHttpOptions] (val x: Self) extends AnyVal {
       
       inline def setCa(value: js.Array[Buffer]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
@@ -121,7 +124,8 @@ object mod {
       __obj.asInstanceOf[HttpsOverHttpsOptions]
     }
     
-    extension [Self <: HttpsOverHttpsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpsOverHttpsOptions] (val x: Self) extends AnyVal {
       
       inline def setProxy(value: HttpsProxyOptions): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
@@ -148,7 +152,8 @@ object mod {
       __obj.asInstanceOf[HttpsProxyOptions]
     }
     
-    extension [Self <: HttpsProxyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpsProxyOptions] (val x: Self) extends AnyVal {
       
       inline def setCa(value: js.Array[Buffer]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
@@ -189,7 +194,8 @@ object mod {
       __obj.asInstanceOf[ProxyOptions]
     }
     
-    extension [Self <: ProxyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

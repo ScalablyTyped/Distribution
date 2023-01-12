@@ -20,7 +20,8 @@ object TypefaceFactory {
     __obj.asInstanceOf[TypefaceFactory]
   }
   
-  extension [Self <: TypefaceFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypefaceFactory] (val x: Self) extends AnyVal {
     
     inline def setMakeFreeTypeFaceFromData(value: js.typedarray.ArrayBuffer => Typeface | Null): Self = StObject.set(x, "MakeFreeTypeFaceFromData", js.Any.fromFunction1(value))
   }

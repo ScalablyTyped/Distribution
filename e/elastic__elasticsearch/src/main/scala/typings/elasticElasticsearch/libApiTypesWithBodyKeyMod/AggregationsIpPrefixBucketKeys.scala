@@ -23,7 +23,8 @@ object AggregationsIpPrefixBucketKeys {
     __obj.asInstanceOf[AggregationsIpPrefixBucketKeys]
   }
   
-  extension [Self <: AggregationsIpPrefixBucketKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsIpPrefixBucketKeys] (val x: Self) extends AnyVal {
     
     inline def setIs_ipv6(value: Boolean): Self = StObject.set(x, "is_ipv6", value.asInstanceOf[js.Any])
     

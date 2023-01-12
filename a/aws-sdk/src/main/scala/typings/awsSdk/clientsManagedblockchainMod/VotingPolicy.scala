@@ -18,7 +18,8 @@ object VotingPolicy {
     __obj.asInstanceOf[VotingPolicy]
   }
   
-  extension [Self <: VotingPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VotingPolicy] (val x: Self) extends AnyVal {
     
     inline def setApprovalThresholdPolicy(value: ApprovalThresholdPolicy): Self = StObject.set(x, "ApprovalThresholdPolicy", value.asInstanceOf[js.Any])
     

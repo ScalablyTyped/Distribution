@@ -33,7 +33,8 @@ object CIMMaterialProperties {
     __obj.asInstanceOf[CIMMaterialProperties]
   }
   
-  extension [Self <: CIMMaterialProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMaterialProperties] (val x: Self) extends AnyVal {
     
     inline def setExternalColorMixMode(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExternalColorMixMode * / any */ String

@@ -18,7 +18,8 @@ object RemoveAction {
     __obj.asInstanceOf[RemoveAction]
   }
   
-  extension [Self <: RemoveAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveAction] (val x: Self) extends AnyVal {
     
     inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
   }

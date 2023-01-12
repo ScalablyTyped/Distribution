@@ -48,7 +48,8 @@ object PrintMediaSizeOptionDetails {
     __obj.asInstanceOf[PrintMediaSizeOptionDetails]
   }
   
-  extension [Self <: PrintMediaSizeOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintMediaSizeOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     

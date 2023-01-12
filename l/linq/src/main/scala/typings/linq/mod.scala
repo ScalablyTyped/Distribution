@@ -136,7 +136,8 @@ object mod {
         __obj.asInstanceOf[IDictionary[TKey, TValue]]
       }
       
-      extension [Self <: IDictionary[?, ?], TKey, TValue](x: Self & (IDictionary[TKey, TValue])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDictionary[?, ?], TKey, TValue] (val x: Self & (IDictionary[TKey, TValue])) extends AnyVal {
         
         inline def setAdd(value: (TKey, TValue) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
         
@@ -638,7 +639,8 @@ object mod {
         __obj.asInstanceOf[IEnumerator[T]]
       }
       
-      extension [Self <: IEnumerator[?], T](x: Self & IEnumerator[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IEnumerator[?], T] (val x: Self & IEnumerator[T]) extends AnyVal {
         
         inline def setCurrent(value: () => T): Self = StObject.set(x, "current", js.Any.fromFunction0(value))
         
@@ -680,7 +682,8 @@ object mod {
         __obj.asInstanceOf[ILookup[TKey, TElement]]
       }
       
-      extension [Self <: ILookup[?, ?], TKey, TElement](x: Self & (ILookup[TKey, TElement])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ILookup[?, ?], TKey, TElement] (val x: Self & (ILookup[TKey, TElement])) extends AnyVal {
         
         inline def setContains(value: TKey => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
         

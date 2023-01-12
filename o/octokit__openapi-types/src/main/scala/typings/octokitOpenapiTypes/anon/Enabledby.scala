@@ -35,7 +35,8 @@ object Enabledby {
     __obj.asInstanceOf[Enabledby]
   }
   
-  extension [Self <: Enabledby](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enabledby] (val x: Self) extends AnyVal {
     
     inline def setCommit_message(value: String): Self = StObject.set(x, "commit_message", value.asInstanceOf[js.Any])
     

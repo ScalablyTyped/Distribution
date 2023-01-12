@@ -33,7 +33,8 @@ object Account {
     __obj.asInstanceOf[Account]
   }
   
-  extension [Self <: Account](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
     
     inline def setApiKeyVersion(value: String): Self = StObject.set(x, "apiKeyVersion", value.asInstanceOf[js.Any])
     

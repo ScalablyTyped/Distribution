@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     }
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Current[Result]]
     }
     
-    extension [Self <: Current[?], Result](x: Self & Current[Result]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Current[?], Result] (val x: Self & Current[Result]) extends AnyVal {
       
       inline def setCurrent(value: Result): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     }
@@ -87,7 +89,8 @@ object anon {
       __obj.asInstanceOf[OmitRenderOptionsreadonly]
     }
     
-    extension [Self <: OmitRenderOptionsreadonly](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitRenderOptionsreadonly] (val x: Self) extends AnyVal {
       
       inline def setBaseElement(value: HTMLElement): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
       
@@ -713,7 +716,8 @@ object anon {
       __obj.asInstanceOf[Typeofqueries]
     }
     
-    extension [Self <: Typeofqueries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofqueries] (val x: Self) extends AnyVal {
       
       inline def setFindAllByAltText(value: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]]): Self = StObject.set(x, "findAllByAltText", js.Any.fromFunction1(value))
       

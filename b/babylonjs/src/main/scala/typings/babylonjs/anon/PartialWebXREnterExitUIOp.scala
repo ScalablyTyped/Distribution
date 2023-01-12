@@ -35,7 +35,8 @@ object PartialWebXREnterExitUIOp {
     __obj.asInstanceOf[PartialWebXREnterExitUIOp]
   }
   
-  extension [Self <: PartialWebXREnterExitUIOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialWebXREnterExitUIOp] (val x: Self) extends AnyVal {
     
     inline def setCustomButtons(value: js.Array[WebXREnterExitUIButton]): Self = StObject.set(x, "customButtons", value.asInstanceOf[js.Any])
     

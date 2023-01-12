@@ -141,7 +141,8 @@ object libDecorateMapComponentMod {
       __obj.asInstanceOf[Providers]
     }
     
-    extension [Self <: Providers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Providers] (val x: Self) extends AnyVal {
       
       inline def setGoogle(value: Android): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
     }

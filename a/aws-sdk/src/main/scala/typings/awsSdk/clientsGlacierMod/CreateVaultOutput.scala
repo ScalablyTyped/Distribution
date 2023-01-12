@@ -18,7 +18,8 @@ object CreateVaultOutput {
     __obj.asInstanceOf[CreateVaultOutput]
   }
   
-  extension [Self <: CreateVaultOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVaultOutput] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[PingResponse]
     }
     
-    extension [Self <: PingResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PingResponse] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: Text): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

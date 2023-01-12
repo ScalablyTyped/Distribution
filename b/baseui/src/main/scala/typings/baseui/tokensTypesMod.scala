@@ -343,7 +343,8 @@ object tokensTypesMod {
       __obj.asInstanceOf[ColorTokens]
     }
     
-    extension [Self <: ColorTokens](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorTokens] (val x: Self) extends AnyVal {
       
       inline def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
       

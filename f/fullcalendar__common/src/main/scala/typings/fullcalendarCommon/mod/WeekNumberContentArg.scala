@@ -19,7 +19,8 @@ object WeekNumberContentArg {
     __obj.asInstanceOf[WeekNumberContentArg]
   }
   
-  extension [Self <: WeekNumberContentArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeekNumberContentArg] (val x: Self) extends AnyVal {
     
     inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

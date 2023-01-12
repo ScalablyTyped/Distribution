@@ -132,7 +132,8 @@ object miscBasisMod {
       __obj.asInstanceOf[BasisFileInfo]
     }
     
-    extension [Self <: BasisFileInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasisFileInfo] (val x: Self) extends AnyVal {
       
       inline def setHasAlpha(value: Boolean): Self = StObject.set(x, "hasAlpha", value.asInstanceOf[js.Any])
       
@@ -164,7 +165,8 @@ object miscBasisMod {
       __obj.asInstanceOf[TranscodeResult]
     }
     
-    extension [Self <: TranscodeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranscodeResult] (val x: Self) extends AnyVal {
       
       inline def setFileInfo(value: BasisFileInfo): Self = StObject.set(x, "fileInfo", value.asInstanceOf[js.Any])
       

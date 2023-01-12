@@ -122,7 +122,8 @@ object MapViewProperties {
     __obj.asInstanceOf[MapViewProperties]
   }
   
-  extension [Self <: MapViewProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapViewProperties] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: ColorBackgroundProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

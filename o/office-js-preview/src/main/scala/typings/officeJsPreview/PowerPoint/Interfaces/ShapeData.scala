@@ -76,7 +76,8 @@ object ShapeData {
     __obj.asInstanceOf[ShapeData]
   }
   
-  extension [Self <: ShapeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeData] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

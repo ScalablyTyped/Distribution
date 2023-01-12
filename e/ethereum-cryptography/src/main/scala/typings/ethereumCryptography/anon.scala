@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Hashfn]
     }
     
-    extension [Self <: Hashfn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hashfn] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

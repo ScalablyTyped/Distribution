@@ -24,7 +24,8 @@ object SubsystemChannelRequest {
     __obj.asInstanceOf[SubsystemChannelRequest]
   }
   
-  extension [Self <: SubsystemChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubsystemChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     

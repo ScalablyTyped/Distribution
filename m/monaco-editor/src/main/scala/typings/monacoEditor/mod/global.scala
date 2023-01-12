@@ -22,7 +22,8 @@ object global {
       __obj.asInstanceOf[typings.monacoEditor.mod.global.Window]
     }
     
-    extension [Self <: typings.monacoEditor.mod.global.Window](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.monacoEditor.mod.global.Window] (val x: Self) extends AnyVal {
       
       inline def setMonacoEnvironment(value: Environment): Self = StObject.set(x, "MonacoEnvironment", value.asInstanceOf[js.Any])
       

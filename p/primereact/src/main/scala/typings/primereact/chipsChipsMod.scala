@@ -135,7 +135,8 @@ object chipsChipsMod {
       __obj.asInstanceOf[ChipsAddParams]
     }
     
-    extension [Self <: ChipsAddParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipsAddParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object chipsChipsMod {
       __obj.asInstanceOf[ChipsChangeParams]
     }
     
-    extension [Self <: ChipsChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipsChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -199,7 +201,8 @@ object chipsChipsMod {
       __obj.asInstanceOf[ChipsChangeTargetOptions]
     }
     
-    extension [Self <: ChipsChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipsChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -667,7 +670,8 @@ object chipsChipsMod {
       __obj.asInstanceOf[ChipsProps]
     }
     
-    extension [Self <: ChipsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipsProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1586,7 +1590,8 @@ object chipsChipsMod {
       __obj.asInstanceOf[ChipsRemovableOptions]
     }
     
-    extension [Self <: ChipsRemovableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipsRemovableOptions] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

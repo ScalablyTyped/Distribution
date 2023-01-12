@@ -20,7 +20,8 @@ object ParentXml {
     __obj.asInstanceOf[ParentXml]
   }
   
-  extension [Self <: ParentXml](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParentXml] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

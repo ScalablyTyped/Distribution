@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Stickyclusterworkerindex]
     }
     
-    extension [Self <: Stickyclusterworkerindex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stickyclusterworkerindex] (val x: Self) extends AnyVal {
       
       inline def setStickycluster_worker_index(value: Double): Self = StObject.set(x, "stickycluster_worker_index", value.asInstanceOf[js.Any])
     }

@@ -87,7 +87,8 @@ object ContractTermOfferAnswer {
     __obj.asInstanceOf[ContractTermOfferAnswer]
   }
   
-  extension [Self <: ContractTermOfferAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContractTermOfferAnswer] (val x: Self) extends AnyVal {
     
     inline def setValueAttachment(value: Attachment): Self = StObject.set(x, "valueAttachment", value.asInstanceOf[js.Any])
     

@@ -97,7 +97,8 @@ object esmSlideTransitionGroupMod {
       __obj.asInstanceOf[SlideTransitionGroupState]
     }
     
-    extension [Self <: SlideTransitionGroupState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideTransitionGroupState] (val x: Self) extends AnyVal {
       
       inline def setCurrentClasses(value: String): Self = StObject.set(x, "currentClasses", value.asInstanceOf[js.Any])
       

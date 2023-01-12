@@ -18,7 +18,8 @@ object DeleteCoreDefinitionRequest {
     __obj.asInstanceOf[DeleteCoreDefinitionRequest]
   }
   
-  extension [Self <: DeleteCoreDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCoreDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setCoreDefinitionId(value: string): Self = StObject.set(x, "CoreDefinitionId", value.asInstanceOf[js.Any])
   }

@@ -71,7 +71,8 @@ object DOMSiteModeEvent {
     __obj.asInstanceOf[DOMSiteModeEvent]
   }
   
-  extension [Self <: DOMSiteModeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMSiteModeEvent] (val x: Self) extends AnyVal {
     
     inline def setActionURL(value: String): Self = StObject.set(x, "actionURL", value.asInstanceOf[js.Any])
     

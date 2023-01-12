@@ -805,7 +805,8 @@ object sapUiIntegrationHostMod {
       __obj.asInstanceOf[HostSettings]
     }
     
-    extension [Self <: HostSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostSettings] (val x: Self) extends AnyVal {
       
       inline def setAction(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       

@@ -15,7 +15,8 @@ object BulkRecipientsUpdateResponse {
     __obj.asInstanceOf[BulkRecipientsUpdateResponse]
   }
   
-  extension [Self <: BulkRecipientsUpdateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkRecipientsUpdateResponse] (val x: Self) extends AnyVal {
     
     inline def setSigner(value: Signer): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object ScrollingLegacy {
     __obj.asInstanceOf[ScrollingLegacy]
   }
   
-  extension [Self <: ScrollingLegacy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollingLegacy] (val x: Self) extends AnyVal {
     
     inline def setBAutoCss(value: Boolean): Self = StObject.set(x, "bAutoCss", value.asInstanceOf[js.Any])
     

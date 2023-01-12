@@ -29,7 +29,8 @@ object JsxThElementProps {
     __obj.asInstanceOf[JsxThElementProps]
   }
   
-  extension [Self <: JsxThElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxThElementProps] (val x: Self) extends AnyVal {
     
     inline def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
     

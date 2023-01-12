@@ -26,7 +26,8 @@ object Panel {
     __obj.asInstanceOf[Panel]
   }
   
-  extension [Self <: Panel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Panel] (val x: Self) extends AnyVal {
     
     inline def setLoadPanel(value: (String, String) => Unit): Self = StObject.set(x, "loadPanel", js.Any.fromFunction2(value))
   }

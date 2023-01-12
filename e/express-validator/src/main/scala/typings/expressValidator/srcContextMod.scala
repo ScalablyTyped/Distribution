@@ -115,7 +115,8 @@ object srcContextMod {
       __obj.asInstanceOf[ReadonlyContext]
     }
     
-    extension [Self <: ReadonlyContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyContext] (val x: Self) extends AnyVal {
       
       inline def setConstructor(
         value: (/* fields */ js.Array[String], /* locations */ js.Array[Location], /* stack */ js.Array[ContextItem], /* optional */ Optional, /* message */ js.UndefOr[Any]) => Any

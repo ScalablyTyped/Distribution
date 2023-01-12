@@ -87,7 +87,8 @@ object libPopoverMod {
       __obj.asInstanceOf[PopoverItemProps]
     }
     
-    extension [Self <: PopoverItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverItemProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object libPopoverMod {
       __obj.asInstanceOf[PopoverProps]
     }
     
-    extension [Self <: PopoverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

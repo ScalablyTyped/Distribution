@@ -19,7 +19,8 @@ object GrafeasV1SlsaProvenanceZeroTwoSlsaMaterial {
     __obj.asInstanceOf[GrafeasV1SlsaProvenanceZeroTwoSlsaMaterial]
   }
   
-  extension [Self <: GrafeasV1SlsaProvenanceZeroTwoSlsaMaterial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrafeasV1SlsaProvenanceZeroTwoSlsaMaterial] (val x: Self) extends AnyVal {
     
     inline def setDigest(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

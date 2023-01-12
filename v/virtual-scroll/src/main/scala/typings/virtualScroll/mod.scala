@@ -74,7 +74,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object mod {
       __obj.asInstanceOf[VirtualScroll]
     }
     
-    extension [Self <: VirtualScroll](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualScroll] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -150,7 +152,8 @@ object mod {
       __obj.asInstanceOf[VirtualScrollEvent]
     }
     
-    extension [Self <: VirtualScrollEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualScrollEvent] (val x: Self) extends AnyVal {
       
       inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
       

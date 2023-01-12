@@ -34,7 +34,8 @@ object KeyExpr {
     __obj.asInstanceOf[KeyExpr]
   }
   
-  extension [Self <: KeyExpr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyExpr] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: DataSourceLike[Any, Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

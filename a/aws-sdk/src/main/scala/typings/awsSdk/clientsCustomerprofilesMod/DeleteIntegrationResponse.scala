@@ -18,7 +18,8 @@ object DeleteIntegrationResponse {
     __obj.asInstanceOf[DeleteIntegrationResponse]
   }
   
-  extension [Self <: DeleteIntegrationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIntegrationResponse] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
   }

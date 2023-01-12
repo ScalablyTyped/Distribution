@@ -23,7 +23,8 @@ object ASPxClientFileManagerItemEditingEventArgs {
     __obj.asInstanceOf[ASPxClientFileManagerItemEditingEventArgs]
   }
   
-  extension [Self <: ASPxClientFileManagerItemEditingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFileManagerItemEditingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }

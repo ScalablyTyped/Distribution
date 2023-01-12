@@ -15,7 +15,8 @@ object HrefUndefined {
     __obj.asInstanceOf[HrefUndefined]
   }
   
-  extension [Self <: HrefUndefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HrefUndefined] (val x: Self) extends AnyVal {
     
     inline def setHref(value: scala.Unit): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
   }

@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsPaddingVerticalMod extends Shortcut {
       __obj.asInstanceOf[PaddingVerticalProps]
     }
     
-    extension [Self <: PaddingVerticalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaddingVerticalProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

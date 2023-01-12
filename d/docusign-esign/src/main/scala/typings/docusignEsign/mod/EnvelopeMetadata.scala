@@ -30,7 +30,8 @@ object EnvelopeMetadata {
     __obj.asInstanceOf[EnvelopeMetadata]
   }
   
-  extension [Self <: EnvelopeMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeMetadata] (val x: Self) extends AnyVal {
     
     inline def setAllowAdvancedCorrect(value: String): Self = StObject.set(x, "allowAdvancedCorrect", value.asInstanceOf[js.Any])
     

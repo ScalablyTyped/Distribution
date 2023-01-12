@@ -54,7 +54,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DefaultOptions]
     }
     
-    extension [Self <: DefaultOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultOptions] (val x: Self) extends AnyVal {
       
       inline def setNoIcon(value: Boolean): Self = StObject.set(x, "noIcon", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setClearAllMessages(value: Boolean): Self = StObject.set(x, "clearAllMessages", value.asInstanceOf[js.Any])
       

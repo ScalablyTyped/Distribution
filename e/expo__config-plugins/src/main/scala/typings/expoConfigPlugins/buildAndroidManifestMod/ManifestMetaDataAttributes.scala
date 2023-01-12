@@ -23,7 +23,8 @@ object ManifestMetaDataAttributes {
     __obj.asInstanceOf[ManifestMetaDataAttributes]
   }
   
-  extension [Self <: ManifestMetaDataAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestMetaDataAttributes] (val x: Self) extends AnyVal {
     
     inline def setAndroidColonresource(value: String): Self = StObject.set(x, "android:resource", value.asInstanceOf[js.Any])
     

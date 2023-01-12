@@ -44,7 +44,8 @@ object CustomPropertyData {
     __obj.asInstanceOf[CustomPropertyData]
   }
   
-  extension [Self <: CustomPropertyData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPropertyData] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

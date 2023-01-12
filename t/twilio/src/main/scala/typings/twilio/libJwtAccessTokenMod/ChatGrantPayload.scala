@@ -21,7 +21,8 @@ object ChatGrantPayload {
     __obj.asInstanceOf[ChatGrantPayload]
   }
   
-  extension [Self <: ChatGrantPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatGrantPayload] (val x: Self) extends AnyVal {
     
     inline def setDeployment_role_sid(value: String): Self = StObject.set(x, "deployment_role_sid", value.asInstanceOf[js.Any])
     

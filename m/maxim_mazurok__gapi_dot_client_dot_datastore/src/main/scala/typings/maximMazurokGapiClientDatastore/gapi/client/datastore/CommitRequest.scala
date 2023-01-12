@@ -29,7 +29,8 @@ object CommitRequest {
     __obj.asInstanceOf[CommitRequest]
   }
   
-  extension [Self <: CommitRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitRequest] (val x: Self) extends AnyVal {
     
     inline def setDatabaseId(value: String): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
     

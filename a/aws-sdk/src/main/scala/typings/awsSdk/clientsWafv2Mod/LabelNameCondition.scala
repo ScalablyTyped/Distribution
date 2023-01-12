@@ -18,7 +18,8 @@ object LabelNameCondition {
     __obj.asInstanceOf[LabelNameCondition]
   }
   
-  extension [Self <: LabelNameCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelNameCondition] (val x: Self) extends AnyVal {
     
     inline def setLabelName(value: LabelName): Self = StObject.set(x, "LabelName", value.asInstanceOf[js.Any])
   }

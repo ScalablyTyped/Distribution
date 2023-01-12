@@ -39,7 +39,8 @@ object PlotWordcloudOnPointPositionOptions {
     __obj.asInstanceOf[PlotWordcloudOnPointPositionOptions]
   }
   
-  extension [Self <: PlotWordcloudOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotWordcloudOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

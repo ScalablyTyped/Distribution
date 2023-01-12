@@ -102,7 +102,8 @@ object anon {
       __obj.asInstanceOf[App]
     }
     
-    extension [Self <: App](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: App] (val x: Self) extends AnyVal {
       
       inline def setApp(value: flash | html5): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object anon {
       __obj.asInstanceOf[KeySignaturealternateKeyK]
     }
     
-    extension [Self <: KeySignaturealternateKeyK](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeySignaturealternateKeyK] (val x: Self) extends AnyVal {
       
       inline def setAlternateKey(value: KeySignature): Self = StObject.set(x, "alternateKey", value.asInstanceOf[js.Any])
       
@@ -207,7 +209,8 @@ object anon {
       __obj.asInstanceOf[UsePrinter]
     }
     
-    extension [Self <: UsePrinter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsePrinter] (val x: Self) extends AnyVal {
       
       inline def setUsePrinter(value: Boolean): Self = StObject.set(x, "usePrinter", value.asInstanceOf[js.Any])
       
@@ -226,7 +229,8 @@ object anon {
       __obj.asInstanceOf[Version]
     }
     
-    extension [Self <: Version](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }

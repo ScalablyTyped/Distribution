@@ -20,7 +20,8 @@ object CheckSessionOptions {
     __obj.asInstanceOf[CheckSessionOptions]
   }
   
-  extension [Self <: CheckSessionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckSessionOptions] (val x: Self) extends AnyVal {
     
     inline def setUsePostMessage(value: Boolean): Self = StObject.set(x, "usePostMessage", value.asInstanceOf[js.Any])
     

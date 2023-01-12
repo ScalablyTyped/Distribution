@@ -28,7 +28,8 @@ object IGanttData {
     __obj.asInstanceOf[IGanttData]
   }
   
-  extension [Self <: IGanttData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGanttData] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: js.Array[Double]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

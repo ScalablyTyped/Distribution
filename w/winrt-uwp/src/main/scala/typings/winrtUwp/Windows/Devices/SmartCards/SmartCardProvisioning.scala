@@ -60,7 +60,8 @@ object SmartCardProvisioning {
     __obj.asInstanceOf[SmartCardProvisioning]
   }
   
-  extension [Self <: SmartCardProvisioning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartCardProvisioning] (val x: Self) extends AnyVal {
     
     inline def setGetAuthorityKeyContainerNameAsync(value: Any): Self = StObject.set(x, "getAuthorityKeyContainerNameAsync", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object algorithm {
       __obj.asInstanceOf[ConvexHull]
     }
     
-    extension [Self <: ConvexHull](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvexHull] (val x: Self) extends AnyVal {
       
       inline def setGetConvexHull(value: () => Geometry): Self = StObject.set(x, "getConvexHull", js.Any.fromFunction0(value))
     }
@@ -53,7 +54,8 @@ object algorithm {
       __obj.asInstanceOf[InteriorPointArea]
     }
     
-    extension [Self <: InteriorPointArea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteriorPointArea] (val x: Self) extends AnyVal {
       
       inline def setGetInteriorPoint(value: () => Coordinate | Null): Self = StObject.set(x, "getInteriorPoint", js.Any.fromFunction0(value))
     }
@@ -212,7 +214,8 @@ object algorithm {
         __obj.asInstanceOf[PointOnGeometryLocator]
       }
       
-      extension [Self <: PointOnGeometryLocator](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PointOnGeometryLocator] (val x: Self) extends AnyVal {
         
         inline def setLocate(value: Coordinate => Double): Self = StObject.set(x, "locate", js.Any.fromFunction1(value))
       }

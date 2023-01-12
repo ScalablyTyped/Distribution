@@ -41,7 +41,8 @@ object ImagePaint {
     __obj.asInstanceOf[ImagePaint]
   }
   
-  extension [Self <: ImagePaint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagePaint] (val x: Self) extends AnyVal {
     
     inline def setBlendMode(value: BlendMode): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     

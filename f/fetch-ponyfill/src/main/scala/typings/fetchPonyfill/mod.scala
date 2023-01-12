@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[BootstrapOptions]
     }
     
-    extension [Self <: BootstrapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootstrapOptions] (val x: Self) extends AnyVal {
       
       inline def setPromise(value: js.Function): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object mod {
       __obj.asInstanceOf[BootstrapRetVal]
     }
     
-    extension [Self <: BootstrapRetVal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootstrapRetVal] (val x: Self) extends AnyVal {
       
       inline def setDOMException(value: TypeofDOMException): Self = StObject.set(x, "DOMException", value.asInstanceOf[js.Any])
       

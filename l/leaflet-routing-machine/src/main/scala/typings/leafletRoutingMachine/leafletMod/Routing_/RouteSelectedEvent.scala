@@ -15,7 +15,8 @@ object RouteSelectedEvent {
     __obj.asInstanceOf[RouteSelectedEvent]
   }
   
-  extension [Self <: RouteSelectedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteSelectedEvent] (val x: Self) extends AnyVal {
     
     inline def setRoute(value: IRoute): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
   }

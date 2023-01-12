@@ -48,7 +48,8 @@ object EditCellStartedEventUIParam {
     __obj.asInstanceOf[EditCellStartedEventUIParam]
   }
   
-  extension [Self <: EditCellStartedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditCellStartedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     

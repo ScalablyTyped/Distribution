@@ -327,7 +327,8 @@ object esComponentsEllipsisEllipsisMod {
       __obj.asInstanceOf[EllipsisProps]
     }
     
-    extension [Self <: EllipsisProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EllipsisProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

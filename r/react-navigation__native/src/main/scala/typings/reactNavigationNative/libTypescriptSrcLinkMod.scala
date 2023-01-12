@@ -50,7 +50,8 @@ object libTypescriptSrcLinkMod {
       __obj.asInstanceOf[Props[ParamList]]
     }
     
-    extension [Self <: Props[?], ParamList /* <: RootParamList */](x: Self & Props[ParamList]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?], ParamList /* <: RootParamList */] (val x: Self & Props[ParamList]) extends AnyVal {
       
       inline def setAction(value: NavigationAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

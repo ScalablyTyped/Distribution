@@ -17,7 +17,8 @@ object Slide {
     __obj.asInstanceOf[Slide]
   }
   
-  extension [Self <: Slide](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Slide] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[SlideChildren]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

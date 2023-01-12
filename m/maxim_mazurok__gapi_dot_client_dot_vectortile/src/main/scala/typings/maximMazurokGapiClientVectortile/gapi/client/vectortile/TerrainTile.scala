@@ -28,7 +28,8 @@ object TerrainTile {
     __obj.asInstanceOf[TerrainTile]
   }
   
-  extension [Self <: TerrainTile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerrainTile] (val x: Self) extends AnyVal {
     
     inline def setCoordinates(value: TileCoordinates): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     

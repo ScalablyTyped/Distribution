@@ -30,7 +30,8 @@ object GroupLifecyclePolicy {
     __obj.asInstanceOf[GroupLifecyclePolicy]
   }
   
-  extension [Self <: GroupLifecyclePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupLifecyclePolicy] (val x: Self) extends AnyVal {
     
     inline def setAlternateNotificationEmails(value: NullableOption[String]): Self = StObject.set(x, "alternateNotificationEmails", value.asInstanceOf[js.Any])
     

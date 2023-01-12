@@ -48,7 +48,8 @@ object PartialTagxnumberynumber {
     __obj.asInstanceOf[PartialTagxnumberynumber]
   }
   
-  extension [Self <: PartialTagxnumberynumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTagxnumberynumber] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

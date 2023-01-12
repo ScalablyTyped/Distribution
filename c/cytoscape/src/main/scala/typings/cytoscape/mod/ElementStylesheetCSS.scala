@@ -19,7 +19,8 @@ object ElementStylesheetCSS {
     __obj.asInstanceOf[ElementStylesheetCSS]
   }
   
-  extension [Self <: ElementStylesheetCSS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementStylesheetCSS] (val x: Self) extends AnyVal {
     
     inline def setJson(value: () => Any): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
   }

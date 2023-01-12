@@ -18,7 +18,8 @@ object IAMUserIdentity {
     __obj.asInstanceOf[IAMUserIdentity]
   }
   
-  extension [Self <: IAMUserIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAMUserIdentity] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }

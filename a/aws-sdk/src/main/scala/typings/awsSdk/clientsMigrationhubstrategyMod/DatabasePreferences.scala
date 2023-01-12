@@ -23,7 +23,8 @@ object DatabasePreferences {
     __obj.asInstanceOf[DatabasePreferences]
   }
   
-  extension [Self <: DatabasePreferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabasePreferences] (val x: Self) extends AnyVal {
     
     inline def setDatabaseManagementPreference(value: DatabaseManagementPreference): Self = StObject.set(x, "databaseManagementPreference", value.asInstanceOf[js.Any])
     

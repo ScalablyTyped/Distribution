@@ -23,7 +23,8 @@ object ExecutionAbortedEventDetails {
     __obj.asInstanceOf[ExecutionAbortedEventDetails]
   }
   
-  extension [Self <: ExecutionAbortedEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionAbortedEventDetails] (val x: Self) extends AnyVal {
     
     inline def setCause(value: SensitiveCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

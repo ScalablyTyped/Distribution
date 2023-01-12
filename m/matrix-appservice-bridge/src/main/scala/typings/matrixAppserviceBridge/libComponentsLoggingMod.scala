@@ -141,7 +141,8 @@ object libComponentsLoggingMod {
       __obj.asInstanceOf[CustomLogger]
     }
     
-    extension [Self <: CustomLogger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomLogger] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
       
@@ -169,7 +170,8 @@ object libComponentsLoggingMod {
       __obj.asInstanceOf[CustomLoggingOpts]
     }
     
-    extension [Self <: CustomLoggingOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomLoggingOpts] (val x: Self) extends AnyVal {
       
       inline def setLogger(value: CustomLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     }
@@ -192,7 +194,8 @@ object libComponentsLoggingMod {
       __obj.asInstanceOf[LogEntry]
     }
     
-    extension [Self <: LogEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogEntry] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[LogEntryPart]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -241,7 +244,8 @@ object libComponentsLoggingMod {
       __obj.asInstanceOf[LoggerMetadata]
     }
     
-    extension [Self <: LoggerMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerMetadata] (val x: Self) extends AnyVal {
       
       inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
@@ -279,7 +283,8 @@ object libComponentsLoggingMod {
       __obj.asInstanceOf[LoggingOpts]
     }
     
-    extension [Self <: LoggingOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggingOpts] (val x: Self) extends AnyVal {
       
       inline def setColorize(value: Boolean): Self = StObject.set(x, "colorize", value.asInstanceOf[js.Any])
       
@@ -330,7 +335,8 @@ object libComponentsLoggingMod {
       __obj.asInstanceOf[LoggingOptsFile]
     }
     
-    extension [Self <: LoggingOptsFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggingOptsFile] (val x: Self) extends AnyVal {
       
       inline def setFileDatePattern(value: String): Self = StObject.set(x, "fileDatePattern", value.asInstanceOf[js.Any])
       

@@ -130,7 +130,8 @@ object HTMLElementDeprecatedTagNameMap {
     __obj.asInstanceOf[HTMLElementDeprecatedTagNameMap]
   }
   
-  extension [Self <: HTMLElementDeprecatedTagNameMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLElementDeprecatedTagNameMap] (val x: Self) extends AnyVal {
     
     inline def setAcronym(value: HTMLElement): Self = StObject.set(x, "acronym", value.asInstanceOf[js.Any])
     

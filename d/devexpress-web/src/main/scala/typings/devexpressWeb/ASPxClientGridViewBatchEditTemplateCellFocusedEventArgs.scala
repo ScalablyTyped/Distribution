@@ -28,7 +28,8 @@ object ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs {
     __obj.asInstanceOf[ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs]
   }
   
-  extension [Self <: ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[Ecies]
     }
     
-    extension [Self <: Ecies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ecies] (val x: Self) extends AnyVal {
       
       inline def setCiphertext(value: Buffer): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
       

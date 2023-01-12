@@ -38,7 +38,8 @@ object VoteOnProposalInput {
     __obj.asInstanceOf[VoteOnProposalInput]
   }
   
-  extension [Self <: VoteOnProposalInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoteOnProposalInput] (val x: Self) extends AnyVal {
     
     inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     

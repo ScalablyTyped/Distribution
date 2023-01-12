@@ -25,7 +25,8 @@ object EachOfToken {
     __obj.asInstanceOf[EachOfToken]
   }
   
-  extension [Self <: EachOfToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EachOfToken] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

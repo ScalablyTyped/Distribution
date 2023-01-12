@@ -46,7 +46,8 @@ object ValidationConfig {
     __obj.asInstanceOf[ValidationConfig]
   }
   
-  extension [Self <: ValidationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationConfig] (val x: Self) extends AnyVal {
     
     inline def setDisableFhirpathValidation(value: Boolean): Self = StObject.set(x, "disableFhirpathValidation", value.asInstanceOf[js.Any])
     

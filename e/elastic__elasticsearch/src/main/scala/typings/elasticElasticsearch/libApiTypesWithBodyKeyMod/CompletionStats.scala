@@ -20,7 +20,8 @@ object CompletionStats {
     __obj.asInstanceOf[CompletionStats]
   }
   
-  extension [Self <: CompletionStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionStats] (val x: Self) extends AnyVal {
     
     inline def setFields(value: Record[Field, FieldSizeUsage]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

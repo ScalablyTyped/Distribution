@@ -229,7 +229,8 @@ object distSrcParseMod {
       __obj.asInstanceOf[ParseNode]
     }
     
-    extension [Self <: ParseNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseNode] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: () => Any): Self = StObject.set(x, "anchor", js.Any.fromFunction0(value))
       

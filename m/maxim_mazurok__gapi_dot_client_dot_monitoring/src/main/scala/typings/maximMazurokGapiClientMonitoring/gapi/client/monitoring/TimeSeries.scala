@@ -54,7 +54,8 @@ object TimeSeries {
     __obj.asInstanceOf[TimeSeries]
   }
   
-  extension [Self <: TimeSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSeries] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: MonitoredResourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object DataTable {
     __obj.asInstanceOf[DataTable]
   }
   
-  extension [Self <: DataTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTable] (val x: Self) extends AnyVal {
     
     inline def setChecks(value: CheckedAll): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object RegistryScanningConfiguration {
     __obj.asInstanceOf[RegistryScanningConfiguration]
   }
   
-  extension [Self <: RegistryScanningConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegistryScanningConfiguration] (val x: Self) extends AnyVal {
     
     inline def setRules(value: RegistryScanningRuleList): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object IntentStatistics {
     __obj.asInstanceOf[IntentStatistics]
   }
   
-  extension [Self <: IntentStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntentStatistics] (val x: Self) extends AnyVal {
     
     inline def setDiscoveredIntentCount(value: Count): Self = StObject.set(x, "discoveredIntentCount", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Typeofrpc0 {
     __obj.asInstanceOf[Typeofrpc0]
   }
   
-  extension [Self <: Typeofrpc0](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofrpc0] (val x: Self) extends AnyVal {
     
     inline def setService(value: Instantiable1[/* rpcImpl */ RPCImpl, Service]): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
   }

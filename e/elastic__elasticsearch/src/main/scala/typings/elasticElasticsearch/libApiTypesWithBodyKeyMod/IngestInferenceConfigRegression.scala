@@ -17,7 +17,8 @@ object IngestInferenceConfigRegression {
     __obj.asInstanceOf[IngestInferenceConfigRegression]
   }
   
-  extension [Self <: IngestInferenceConfigRegression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestInferenceConfigRegression] (val x: Self) extends AnyVal {
     
     inline def setNum_top_feature_importance_values(value: integer): Self = StObject.set(x, "num_top_feature_importance_values", value.asInstanceOf[js.Any])
     

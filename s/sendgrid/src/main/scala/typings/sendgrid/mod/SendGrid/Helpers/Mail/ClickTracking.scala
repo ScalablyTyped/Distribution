@@ -30,7 +30,8 @@ object ClickTracking {
     __obj.asInstanceOf[ClickTracking]
   }
   
-  extension [Self <: ClickTracking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClickTracking] (val x: Self) extends AnyVal {
     
     inline def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
     

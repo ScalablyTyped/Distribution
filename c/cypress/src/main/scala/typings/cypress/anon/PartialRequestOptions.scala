@@ -47,7 +47,8 @@ object PartialRequestOptions {
     __obj.asInstanceOf[PartialRequestOptions]
   }
   
-  extension [Self <: PartialRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: js.Object): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

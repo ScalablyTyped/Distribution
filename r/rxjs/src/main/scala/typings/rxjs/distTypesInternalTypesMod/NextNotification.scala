@@ -22,7 +22,8 @@ object NextNotification {
     __obj.asInstanceOf[NextNotification[T]]
   }
   
-  extension [Self <: NextNotification[?], T](x: Self & NextNotification[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NextNotification[?], T] (val x: Self & NextNotification[T]) extends AnyVal {
     
     inline def setKind(value: N): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

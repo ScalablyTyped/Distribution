@@ -31,7 +31,8 @@ object PathPattern {
     __obj.asInstanceOf[PathPattern[Path]]
   }
   
-  extension [Self <: PathPattern[?], Path /* <: String */](x: Self & PathPattern[Path]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathPattern[?], Path /* <: String */] (val x: Self & PathPattern[Path]) extends AnyVal {
     
     inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     

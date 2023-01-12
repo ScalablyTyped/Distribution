@@ -22,7 +22,8 @@ object ArmRegOperand {
     __obj.asInstanceOf[ArmRegOperand]
   }
   
-  extension [Self <: ArmRegOperand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArmRegOperand] (val x: Self) extends AnyVal {
     
     inline def setType(value: reg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

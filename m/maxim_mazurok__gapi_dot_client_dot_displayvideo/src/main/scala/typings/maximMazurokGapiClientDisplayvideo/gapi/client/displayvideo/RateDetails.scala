@@ -25,7 +25,8 @@ object RateDetails {
     __obj.asInstanceOf[RateDetails]
   }
   
-  extension [Self <: RateDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RateDetails] (val x: Self) extends AnyVal {
     
     inline def setInventorySourceRateType(value: String): Self = StObject.set(x, "inventorySourceRateType", value.asInstanceOf[js.Any])
     

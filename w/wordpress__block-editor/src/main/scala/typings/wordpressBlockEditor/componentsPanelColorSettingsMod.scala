@@ -49,7 +49,8 @@ object componentsPanelColorSettingsMod {
         __obj.asInstanceOf[ColorSetting]
       }
       
-      extension [Self <: ColorSetting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ColorSetting] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -107,7 +108,8 @@ object componentsPanelColorSettingsMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         

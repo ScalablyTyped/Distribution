@@ -17,7 +17,8 @@ object InlayHintList {
     __obj.asInstanceOf[InlayHintList]
   }
   
-  extension [Self <: InlayHintList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlayHintList] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

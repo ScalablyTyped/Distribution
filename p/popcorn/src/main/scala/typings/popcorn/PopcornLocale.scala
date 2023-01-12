@@ -17,7 +17,8 @@ object PopcornLocale {
     __obj.asInstanceOf[PopcornLocale]
   }
   
-  extension [Self <: PopcornLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopcornLocale] (val x: Self) extends AnyVal {
     
     inline def setGet(value: () => String): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     

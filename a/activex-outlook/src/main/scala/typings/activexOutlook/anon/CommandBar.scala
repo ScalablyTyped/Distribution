@@ -20,7 +20,8 @@ object CommandBar {
     __obj.asInstanceOf[CommandBar]
   }
   
-  extension [Self <: CommandBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandBar] (val x: Self) extends AnyVal {
     
     inline def setCommandBar(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ Any

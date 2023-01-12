@@ -44,7 +44,8 @@ object AdWordsAdExtensions {
     __obj.asInstanceOf[AdWordsAdExtensions]
   }
   
-  extension [Self <: AdWordsAdExtensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdWordsAdExtensions] (val x: Self) extends AnyVal {
     
     inline def setNewCalloutBuilder(value: () => CalloutBuilder[Callout]): Self = StObject.set(x, "newCalloutBuilder", js.Any.fromFunction0(value))
     

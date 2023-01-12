@@ -23,7 +23,8 @@ object MonitoringConfiguration {
     __obj.asInstanceOf[MonitoringConfiguration]
   }
   
-  extension [Self <: MonitoringConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringConfiguration] (val x: Self) extends AnyVal {
     
     inline def setManagedPersistenceMonitoringConfiguration(value: ManagedPersistenceMonitoringConfiguration): Self = StObject.set(x, "managedPersistenceMonitoringConfiguration", value.asInstanceOf[js.Any])
     

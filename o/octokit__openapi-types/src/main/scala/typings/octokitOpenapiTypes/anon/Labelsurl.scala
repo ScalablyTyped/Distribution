@@ -108,7 +108,8 @@ object Labelsurl {
     __obj.asInstanceOf[Labelsurl]
   }
   
-  extension [Self <: Labelsurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Labelsurl] (val x: Self) extends AnyVal {
     
     inline def setClosed_at(value: String): Self = StObject.set(x, "closed_at", value.asInstanceOf[js.Any])
     

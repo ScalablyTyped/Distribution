@@ -35,7 +35,8 @@ object AbstractControlOptions {
     __obj.asInstanceOf[AbstractControlOptions]
   }
   
-  extension [Self <: AbstractControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractControlOptions] (val x: Self) extends AnyVal {
     
     inline def setAsyncValidators(value: AsyncValidatorFn | js.Array[AsyncValidatorFn]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     

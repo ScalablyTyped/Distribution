@@ -59,7 +59,8 @@ object UploadOptions {
     __obj.asInstanceOf[UploadOptions]
   }
   
-  extension [Self <: UploadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadOptions] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: UploadAsync): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

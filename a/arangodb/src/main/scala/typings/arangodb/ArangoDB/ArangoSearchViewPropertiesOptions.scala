@@ -23,7 +23,8 @@ object ArangoSearchViewPropertiesOptions {
     __obj.asInstanceOf[ArangoSearchViewPropertiesOptions]
   }
   
-  extension [Self <: ArangoSearchViewPropertiesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArangoSearchViewPropertiesOptions] (val x: Self) extends AnyVal {
     
     inline def setCleanupIntervalStep(value: Double): Self = StObject.set(x, "cleanupIntervalStep", value.asInstanceOf[js.Any])
     

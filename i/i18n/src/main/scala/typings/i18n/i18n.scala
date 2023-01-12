@@ -172,7 +172,8 @@ object i18n {
       __obj.asInstanceOf[ConfigurationOptions]
     }
     
-    extension [Self <: ConfigurationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurationOptions] (val x: Self) extends AnyVal {
       
       inline def setApi(value: StringDictionary[String]): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
@@ -359,7 +360,8 @@ object i18n {
       __obj.asInstanceOf[PluralOptions]
     }
     
-    extension [Self <: PluralOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluralOptions] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -404,7 +406,8 @@ object i18n {
       __obj.asInstanceOf[TranslateOptions]
     }
     
-    extension [Self <: TranslateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranslateOptions] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       

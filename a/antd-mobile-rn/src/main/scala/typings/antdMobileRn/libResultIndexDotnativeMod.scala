@@ -46,7 +46,8 @@ object libResultIndexDotnativeMod {
       __obj.asInstanceOf[ResultNativeProps]
     }
     
-    extension [Self <: ResultNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultNativeProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

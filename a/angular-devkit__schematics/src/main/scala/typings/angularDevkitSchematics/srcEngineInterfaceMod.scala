@@ -121,7 +121,8 @@ object srcEngineInterfaceMod {
       __obj.asInstanceOf[ExecutionOptions]
     }
     
-    extension [Self <: ExecutionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecutionOptions] (val x: Self) extends AnyVal {
       
       inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       
@@ -196,7 +197,8 @@ object srcEngineInterfaceMod {
       __obj.asInstanceOf[TaskConfiguration[T]]
     }
     
-    extension [Self <: TaskConfiguration[?], T](x: Self & TaskConfiguration[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskConfiguration[?], T] (val x: Self & TaskConfiguration[T]) extends AnyVal {
       
       inline def setDependencies(value: js.Array[TaskId]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -223,7 +225,8 @@ object srcEngineInterfaceMod {
       __obj.asInstanceOf[TaskConfigurationGenerator[T]]
     }
     
-    extension [Self <: TaskConfigurationGenerator[?], T](x: Self & TaskConfigurationGenerator[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskConfigurationGenerator[?], T] (val x: Self & TaskConfigurationGenerator[T]) extends AnyVal {
       
       inline def setToConfiguration(value: () => TaskConfiguration[T]): Self = StObject.set(x, "toConfiguration", js.Any.fromFunction0(value))
     }
@@ -255,7 +258,8 @@ object srcEngineInterfaceMod {
       __obj.asInstanceOf[TaskId]
     }
     
-    extension [Self <: TaskId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskId] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -283,7 +287,8 @@ object srcEngineInterfaceMod {
       __obj.asInstanceOf[TaskInfo]
     }
     
-    extension [Self <: TaskInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskInfo] (val x: Self) extends AnyVal {
       
       inline def setConfiguration(value: TaskConfiguration[js.Object]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       

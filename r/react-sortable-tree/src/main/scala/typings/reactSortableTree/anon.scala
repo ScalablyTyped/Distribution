@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[AddAsFirstChild[T]]
     }
     
-    extension [Self <: AddAsFirstChild[?], T](x: Self & AddAsFirstChild[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddAsFirstChild[?], T] (val x: Self & AddAsFirstChild[T]) extends AnyVal {
       
       inline def setAddAsFirstChild(value: Boolean): Self = StObject.set(x, "addAsFirstChild", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Children[T]]
     }
     
-    extension [Self <: Children[?], T](x: Self & Children[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children[?], T] (val x: Self & Children[T]) extends AnyVal {
       
       inline def setChildren(value: js.Array[TreeItem[T]] | GetTreeItemChildrenFn[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object anon {
       __obj.asInstanceOf[Depth[T]]
     }
     
-    extension [Self <: Depth[?], T](x: Self & Depth[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Depth[?], T] (val x: Self & Depth[T]) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
@@ -173,7 +176,8 @@ object anon {
       __obj.asInstanceOf[ExpandAllMatchPaths[T]]
     }
     
-    extension [Self <: ExpandAllMatchPaths[?], T](x: Self & ExpandAllMatchPaths[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandAllMatchPaths[?], T] (val x: Self & ExpandAllMatchPaths[T]) extends AnyVal {
       
       inline def setExpandAllMatchPaths(value: Boolean): Self = StObject.set(x, "expandAllMatchPaths", value.asInstanceOf[js.Any])
       
@@ -208,7 +212,8 @@ object anon {
       __obj.asInstanceOf[Expanded]
     }
     
-    extension [Self <: Expanded](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expanded] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
@@ -233,7 +238,8 @@ object anon {
       __obj.asInstanceOf[FlatData[T]]
     }
     
-    extension [Self <: FlatData[?], T](x: Self & FlatData[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlatData[?], T] (val x: Self & FlatData[T]) extends AnyVal {
       
       inline def setFlatData(value: js.Array[Omit[TreeItem[T], children]]): Self = StObject.set(x, "flatData", value.asInstanceOf[js.Any])
       
@@ -266,7 +272,8 @@ object anon {
       __obj.asInstanceOf[GetNodeKey[T]]
     }
     
-    extension [Self <: GetNodeKey[?], T](x: Self & GetNodeKey[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetNodeKey[?], T] (val x: Self & GetNodeKey[T]) extends AnyVal {
       
       inline def setGetNodeKey(value: /* data */ TreeIndex & TreeNode[T] => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
       
@@ -287,7 +294,8 @@ object anon {
       __obj.asInstanceOf[GetNodeKeyIgnoreCollapsed[T]]
     }
     
-    extension [Self <: GetNodeKeyIgnoreCollapsed[?], T](x: Self & GetNodeKeyIgnoreCollapsed[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetNodeKeyIgnoreCollapsed[?], T] (val x: Self & GetNodeKeyIgnoreCollapsed[T]) extends AnyVal {
       
       inline def setGetNodeKey(value: /* data */ TreeIndex & TreeNode[T] => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
       
@@ -308,7 +316,8 @@ object anon {
       __obj.asInstanceOf[IgnoreCollapsed]
     }
     
-    extension [Self <: IgnoreCollapsed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoreCollapsed] (val x: Self) extends AnyVal {
       
       inline def setIgnoreCollapsed(value: Boolean): Self = StObject.set(x, "ignoreCollapsed", value.asInstanceOf[js.Any])
       
@@ -327,7 +336,8 @@ object anon {
       __obj.asInstanceOf[LowerSiblingsCounts]
     }
     
-    extension [Self <: LowerSiblingsCounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LowerSiblingsCounts] (val x: Self) extends AnyVal {
       
       inline def setLowerSiblingsCounts(value: js.Array[Double]): Self = StObject.set(x, "lowerSiblingsCounts", value.asInstanceOf[js.Any])
       
@@ -346,7 +356,8 @@ object anon {
       __obj.asInstanceOf[Matches[T]]
     }
     
-    extension [Self <: Matches[?], T](x: Self & Matches[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matches[?], T] (val x: Self & Matches[T]) extends AnyVal {
       
       inline def setMatches(value: js.Array[NodeData[T]]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
@@ -369,7 +380,8 @@ object anon {
       __obj.asInstanceOf[NewNode[T]]
     }
     
-    extension [Self <: NewNode[?], T](x: Self & NewNode[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewNode[?], T] (val x: Self & NewNode[T]) extends AnyVal {
       
       inline def setGetNodeKey(value: /* data */ TreeIndex & TreeNode[T] => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
       
@@ -392,7 +404,8 @@ object anon {
       __obj.asInstanceOf[ParentNode[T]]
     }
     
-    extension [Self <: ParentNode[?], T](x: Self & ParentNode[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParentNode[?], T] (val x: Self & ParentNode[T]) extends AnyVal {
       
       inline def setParentNode(value: TreeItem[T]): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     }

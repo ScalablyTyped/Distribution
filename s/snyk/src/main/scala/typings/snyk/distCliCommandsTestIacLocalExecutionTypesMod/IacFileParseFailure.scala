@@ -33,7 +33,8 @@ object IacFileParseFailure {
     __obj.asInstanceOf[IacFileParseFailure]
   }
   
-  extension [Self <: IacFileParseFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IacFileParseFailure] (val x: Self) extends AnyVal {
     
     inline def setEngineType(value: Null): Self = StObject.set(x, "engineType", value.asInstanceOf[js.Any])
     

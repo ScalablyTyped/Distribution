@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsChecklistSmallMod extends Shortcut {
       __obj.asInstanceOf[ChecklistSmallProps]
     }
     
-    extension [Self <: ChecklistSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChecklistSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

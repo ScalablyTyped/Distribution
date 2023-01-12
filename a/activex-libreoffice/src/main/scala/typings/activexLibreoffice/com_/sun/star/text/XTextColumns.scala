@@ -76,7 +76,8 @@ object XTextColumns {
     __obj.asInstanceOf[XTextColumns]
   }
   
-  extension [Self <: XTextColumns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextColumns] (val x: Self) extends AnyVal {
     
     inline def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object PowerSaveBlocker {
     __obj.asInstanceOf[PowerSaveBlocker]
   }
   
-  extension [Self <: PowerSaveBlocker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PowerSaveBlocker] (val x: Self) extends AnyVal {
     
     inline def setIsStarted(value: Double => Boolean): Self = StObject.set(x, "isStarted", js.Any.fromFunction1(value))
     

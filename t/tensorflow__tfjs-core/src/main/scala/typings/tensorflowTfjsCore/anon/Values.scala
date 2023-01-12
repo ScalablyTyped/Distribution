@@ -20,7 +20,8 @@ object Values {
     __obj.asInstanceOf[Values[T]]
   }
   
-  extension [Self <: Values[?], T /* <: Tensor[Rank] */](x: Self & Values[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Values[?], T /* <: Tensor[Rank] */] (val x: Self & Values[T]) extends AnyVal {
     
     inline def setIndices(value: Tensor1D): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

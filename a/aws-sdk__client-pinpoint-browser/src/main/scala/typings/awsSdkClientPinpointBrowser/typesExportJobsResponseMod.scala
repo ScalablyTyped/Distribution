@@ -27,7 +27,8 @@ object typesExportJobsResponseMod {
       __obj.asInstanceOf[ExportJobsResponse]
     }
     
-    extension [Self <: ExportJobsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportJobsResponse] (val x: Self) extends AnyVal {
       
       inline def setItem(value: js.Array[ExportJobResponse] | js.Iterable[ExportJobResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object typesExportJobsResponseMod {
       __obj.asInstanceOf[UnmarshalledExportJobsResponse]
     }
     
-    extension [Self <: UnmarshalledExportJobsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledExportJobsResponse] (val x: Self) extends AnyVal {
       
       inline def setItem(value: js.Array[UnmarshalledExportJobResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       

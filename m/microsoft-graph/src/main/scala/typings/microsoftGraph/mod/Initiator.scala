@@ -18,7 +18,8 @@ object Initiator {
     __obj.asInstanceOf[Initiator]
   }
   
-  extension [Self <: Initiator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Initiator] (val x: Self) extends AnyVal {
     
     inline def setInitiatorType(value: NullableOption[InitiatorType]): Self = StObject.set(x, "initiatorType", value.asInstanceOf[js.Any])
     

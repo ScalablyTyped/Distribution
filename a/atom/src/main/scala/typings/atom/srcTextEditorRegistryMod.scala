@@ -66,7 +66,8 @@ object srcTextEditorRegistryMod {
       __obj.asInstanceOf[TextEditorRegistry]
     }
     
-    extension [Self <: TextEditorRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextEditorRegistry] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: TextEditor => Disposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

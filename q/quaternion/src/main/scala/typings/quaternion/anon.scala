@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Pitch]
     }
     
-    extension [Self <: Pitch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pitch] (val x: Self) extends AnyVal {
       
       inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[wnumberwnumberundefinedxn]
     }
     
-    extension [Self <: wnumberwnumberundefinedxn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: wnumberwnumberundefinedxn] (val x: Self) extends AnyVal {
       
       inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object anon {
       __obj.asInstanceOf[xnumberwnumberundefinedxn]
     }
     
-    extension [Self <: xnumberwnumberundefinedxn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: xnumberwnumberundefinedxn] (val x: Self) extends AnyVal {
       
       inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
@@ -128,7 +131,8 @@ object anon {
       __obj.asInstanceOf[ynumberwnumberundefinedxn]
     }
     
-    extension [Self <: ynumberwnumberundefinedxn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ynumberwnumberundefinedxn] (val x: Self) extends AnyVal {
       
       inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
@@ -166,7 +170,8 @@ object anon {
       __obj.asInstanceOf[znumberwnumberundefinedxn]
     }
     
-    extension [Self <: znumberwnumberundefinedxn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: znumberwnumberundefinedxn] (val x: Self) extends AnyVal {
       
       inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       

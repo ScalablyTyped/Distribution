@@ -150,7 +150,8 @@ object JobDetail {
     __obj.asInstanceOf[JobDetail]
   }
   
-  extension [Self <: JobDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobDetail] (val x: Self) extends AnyVal {
     
     inline def setArrayProperties(value: ArrayPropertiesDetail): Self = StObject.set(x, "arrayProperties", value.asInstanceOf[js.Any])
     

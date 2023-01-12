@@ -19,7 +19,8 @@ object ChartPlotAreaBorder {
     __obj.asInstanceOf[ChartPlotAreaBorder]
   }
   
-  extension [Self <: ChartPlotAreaBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartPlotAreaBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

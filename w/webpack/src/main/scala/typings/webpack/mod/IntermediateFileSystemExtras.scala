@@ -46,7 +46,8 @@ object IntermediateFileSystemExtras {
     __obj.asInstanceOf[IntermediateFileSystemExtras]
   }
   
-  extension [Self <: IntermediateFileSystemExtras](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntermediateFileSystemExtras] (val x: Self) extends AnyVal {
     
     inline def setClose(value: (Double, js.Function1[/* arg0 */ js.UndefOr[Null | ErrnoException], Unit]) => Unit): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
     

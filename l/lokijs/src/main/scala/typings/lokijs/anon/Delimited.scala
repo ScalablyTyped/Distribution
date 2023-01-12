@@ -25,7 +25,8 @@ object Delimited {
     __obj.asInstanceOf[Delimited]
   }
   
-  extension [Self <: Delimited](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Delimited] (val x: Self) extends AnyVal {
     
     inline def setDelimited(value: `false`): Self = StObject.set(x, "delimited", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListTagsForVaultInput {
     __obj.asInstanceOf[ListTagsForVaultInput]
   }
   
-  extension [Self <: ListTagsForVaultInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagsForVaultInput] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

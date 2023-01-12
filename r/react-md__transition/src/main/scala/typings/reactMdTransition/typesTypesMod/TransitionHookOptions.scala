@@ -25,7 +25,8 @@ object TransitionHookOptions {
     __obj.asInstanceOf[TransitionHookOptions[E]]
   }
   
-  extension [Self <: TransitionHookOptions[?], E /* <: HTMLElement */](x: Self & TransitionHookOptions[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionHookOptions[?], E /* <: HTMLElement */] (val x: Self & TransitionHookOptions[E]) extends AnyVal {
     
     inline def setReflow(value: Boolean): Self = StObject.set(x, "reflow", value.asInstanceOf[js.Any])
     

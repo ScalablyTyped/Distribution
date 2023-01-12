@@ -73,7 +73,8 @@ object libDsvVisualizationFilterMod {
       __obj.asInstanceOf[VisualizationFilter]
     }
     
-    extension [Self <: VisualizationFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisualizationFilter] (val x: Self) extends AnyVal {
       
       inline def setAssignFrom(value: StringDictionary[Any] => Unit): Self = StObject.set(x, "assignFrom", js.Any.fromFunction1(value))
       

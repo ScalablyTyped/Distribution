@@ -21,7 +21,8 @@ object IdentityResult {
     __obj.asInstanceOf[IdentityResult]
   }
   
-  extension [Self <: IdentityResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityResult] (val x: Self) extends AnyVal {
     
     inline def setBody(value: IdentityResultBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

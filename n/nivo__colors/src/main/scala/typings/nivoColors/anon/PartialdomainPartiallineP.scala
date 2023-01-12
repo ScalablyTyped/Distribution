@@ -20,7 +20,8 @@ object PartialdomainPartiallineP {
     __obj.asInstanceOf[PartialdomainPartiallineP]
   }
   
-  extension [Self <: PartialdomainPartiallineP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialdomainPartiallineP] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: PartiallinePartialPartial): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

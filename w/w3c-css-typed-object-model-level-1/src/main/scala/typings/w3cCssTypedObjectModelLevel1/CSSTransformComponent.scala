@@ -18,7 +18,8 @@ object CSSTransformComponent {
     __obj.asInstanceOf[CSSTransformComponent]
   }
   
-  extension [Self <: CSSTransformComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSTransformComponent] (val x: Self) extends AnyVal {
     
     inline def setIs2D(value: Boolean): Self = StObject.set(x, "is2D", value.asInstanceOf[js.Any])
     

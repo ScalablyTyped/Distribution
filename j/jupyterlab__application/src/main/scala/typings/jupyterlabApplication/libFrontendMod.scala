@@ -147,7 +147,8 @@ object libFrontendMod {
       @js.native
       val ^ : Token[IPaths] = js.native
       
-      extension [Self <: IPaths](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPaths] (val x: Self) extends AnyVal {
         
         inline def setDirectories(value: AppSettings): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
         
@@ -179,7 +180,8 @@ object libFrontendMod {
       @js.native
       val ^ : Token[ITreeResolver] = js.native
       
-      extension [Self <: ITreeResolver](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITreeResolver] (val x: Self) extends AnyVal {
         
         inline def setPaths(value: js.Promise[Paths]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       }
@@ -239,7 +241,8 @@ object libFrontendMod {
         __obj.asInstanceOf[IOptions[T, U]]
       }
       
-      extension [Self <: IOptions[?, ?], T /* <: IShell */, U](x: Self & (IOptions[T, U])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions[?, ?], T /* <: IShell */, U] (val x: Self & (IOptions[T, U])) extends AnyVal {
         
         inline def setCommandLinker(value: CommandLinker): Self = StObject.set(x, "commandLinker", value.asInstanceOf[js.Any])
         

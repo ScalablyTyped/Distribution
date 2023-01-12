@@ -55,7 +55,8 @@ object GridLayerProps {
     __obj.asInstanceOf[GridLayerProps]
   }
   
-  extension [Self <: GridLayerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridLayerProps] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

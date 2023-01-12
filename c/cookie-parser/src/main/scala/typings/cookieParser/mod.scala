@@ -114,7 +114,8 @@ object mod {
       __obj.asInstanceOf[CookieParseOptions]
     }
     
-    extension [Self <: CookieParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieParseOptions] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: /* val */ String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
@@ -143,7 +144,8 @@ object mod {
           __obj.asInstanceOf[Request]
         }
         
-        extension [Self <: Request](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
           
           inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
           

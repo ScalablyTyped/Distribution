@@ -38,7 +38,8 @@ object DescribeVpcEndpointServiceConfigurationsRequest {
     __obj.asInstanceOf[DescribeVpcEndpointServiceConfigurationsRequest]
   }
   
-  extension [Self <: DescribeVpcEndpointServiceConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVpcEndpointServiceConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

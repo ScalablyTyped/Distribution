@@ -33,7 +33,8 @@ object libDiffParserMod {
       __obj.asInstanceOf[DiffParserConfig]
     }
     
-    extension [Self <: DiffParserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffParserConfig] (val x: Self) extends AnyVal {
       
       inline def setDiffMaxChanges(value: Double): Self = StObject.set(x, "diffMaxChanges", value.asInstanceOf[js.Any])
       

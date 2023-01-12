@@ -131,7 +131,8 @@ object mod {
       __obj.asInstanceOf[ContainOptions]
     }
     
-    extension [Self <: ContainOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainOptions] (val x: Self) extends AnyVal {
       
       inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object mod {
       __obj.asInstanceOf[ReachOptions]
     }
     
-    extension [Self <: ReachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReachOptions] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

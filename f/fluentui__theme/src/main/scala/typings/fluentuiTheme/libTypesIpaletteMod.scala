@@ -318,7 +318,8 @@ object libTypesIpaletteMod {
       __obj.asInstanceOf[IPalette]
     }
     
-    extension [Self <: IPalette](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPalette] (val x: Self) extends AnyVal {
       
       inline def setAccent(value: String): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
       

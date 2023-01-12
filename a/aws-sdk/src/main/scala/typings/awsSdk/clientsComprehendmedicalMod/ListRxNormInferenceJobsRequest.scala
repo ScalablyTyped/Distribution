@@ -28,7 +28,8 @@ object ListRxNormInferenceJobsRequest {
     __obj.asInstanceOf[ListRxNormInferenceJobsRequest]
   }
   
-  extension [Self <: ListRxNormInferenceJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRxNormInferenceJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: ComprehendMedicalAsyncJobFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

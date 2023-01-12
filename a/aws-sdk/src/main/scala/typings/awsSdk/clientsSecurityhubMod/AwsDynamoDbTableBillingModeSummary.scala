@@ -23,7 +23,8 @@ object AwsDynamoDbTableBillingModeSummary {
     __obj.asInstanceOf[AwsDynamoDbTableBillingModeSummary]
   }
   
-  extension [Self <: AwsDynamoDbTableBillingModeSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsDynamoDbTableBillingModeSummary] (val x: Self) extends AnyVal {
     
     inline def setBillingMode(value: NonEmptyString): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
     

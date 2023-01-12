@@ -62,7 +62,8 @@ object ApiResourceLocation {
     __obj.asInstanceOf[ApiResourceLocation]
   }
   
-  extension [Self <: ApiResourceLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiResourceLocation] (val x: Self) extends AnyVal {
     
     inline def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteUserGroupMessage {
     __obj.asInstanceOf[DeleteUserGroupMessage]
   }
   
-  extension [Self <: DeleteUserGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteUserGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setUserGroupId(value: String): Self = StObject.set(x, "UserGroupId", value.asInstanceOf[js.Any])
   }

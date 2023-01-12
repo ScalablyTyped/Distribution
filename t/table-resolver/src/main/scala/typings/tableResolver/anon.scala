@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Column[T]]
     }
     
-    extension [Self <: Column[?], T](x: Self & Column[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column[?], T] (val x: Self & Column[T]) extends AnyVal {
       
       inline def setColumn(value: T): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Columns[T]]
     }
     
-    extension [Self <: Columns[?], T](x: Self & Columns[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Columns[?], T] (val x: Self & Columns[T]) extends AnyVal {
       
       inline def setColumns(value: js.Array[T]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -55,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Method[T]]
     }
     
-    extension [Self <: Method[?], T](x: Self & Method[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Method[?], T] (val x: Self & Method[T]) extends AnyVal {
       
       inline def setColumns(value: js.Array[T]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

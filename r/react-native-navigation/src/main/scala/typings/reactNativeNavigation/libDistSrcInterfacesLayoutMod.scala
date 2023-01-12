@@ -36,7 +36,8 @@ object libDistSrcInterfacesLayoutMod {
       __obj.asInstanceOf[ExternalComponent]
     }
     
-    extension [Self <: ExternalComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalComponent] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object libDistSrcInterfacesLayoutMod {
       __obj.asInstanceOf[Layout[P]]
     }
     
-    extension [Self <: Layout[?], P](x: Self & Layout[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layout[?], P] (val x: Self & Layout[P]) extends AnyVal {
       
       inline def setBottomTabs(value: LayoutBottomTabs): Self = StObject.set(x, "bottomTabs", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,8 @@ object libDistSrcInterfacesLayoutMod {
       __obj.asInstanceOf[LayoutBottomTabs]
     }
     
-    extension [Self <: LayoutBottomTabs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutBottomTabs] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[LayoutTabsChildren]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -202,7 +205,8 @@ object libDistSrcInterfacesLayoutMod {
       __obj.asInstanceOf[LayoutComponent[P]]
     }
     
-    extension [Self <: LayoutComponent[?], P](x: Self & LayoutComponent[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutComponent[?], P] (val x: Self & LayoutComponent[P]) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -238,7 +242,8 @@ object libDistSrcInterfacesLayoutMod {
       __obj.asInstanceOf[LayoutRoot]
     }
     
-    extension [Self <: LayoutRoot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutRoot] (val x: Self) extends AnyVal {
       
       inline def setModals(value: Any): Self = StObject.set(x, "modals", value.asInstanceOf[js.Any])
       
@@ -287,7 +292,8 @@ object libDistSrcInterfacesLayoutMod {
       __obj.asInstanceOf[LayoutSideMenu]
     }
     
-    extension [Self <: LayoutSideMenu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutSideMenu] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: Layout[js.Object]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -339,7 +345,8 @@ object libDistSrcInterfacesLayoutMod {
       __obj.asInstanceOf[LayoutSplitView]
     }
     
-    extension [Self <: LayoutSplitView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutSplitView] (val x: Self) extends AnyVal {
       
       inline def setDetail(value: Layout[js.Object]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
@@ -384,7 +391,8 @@ object libDistSrcInterfacesLayoutMod {
       __obj.asInstanceOf[LayoutStack]
     }
     
-    extension [Self <: LayoutStack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutStack] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[LayoutStackChildren]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -421,7 +429,8 @@ object libDistSrcInterfacesLayoutMod {
       __obj.asInstanceOf[LayoutStackChildren]
     }
     
-    extension [Self <: LayoutStackChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutStackChildren] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: LayoutComponent[js.Object]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -462,7 +471,8 @@ object libDistSrcInterfacesLayoutMod {
       __obj.asInstanceOf[LayoutTabsChildren]
     }
     
-    extension [Self <: LayoutTabsChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutTabsChildren] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: LayoutComponent[js.Object]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -506,7 +516,8 @@ object libDistSrcInterfacesLayoutMod {
       __obj.asInstanceOf[LayoutTopTabs]
     }
     
-    extension [Self <: LayoutTopTabs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutTopTabs] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[LayoutTabsChildren]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

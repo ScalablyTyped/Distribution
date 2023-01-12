@@ -18,7 +18,8 @@ object PartialClassNameMapAvatar {
     __obj.asInstanceOf[PartialClassNameMapAvatar]
   }
   
-  extension [Self <: PartialClassNameMapAvatar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapAvatar] (val x: Self) extends AnyVal {
     
     inline def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     

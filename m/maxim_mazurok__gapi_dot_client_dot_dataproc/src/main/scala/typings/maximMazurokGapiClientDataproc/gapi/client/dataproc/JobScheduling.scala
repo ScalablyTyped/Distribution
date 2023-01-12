@@ -27,7 +27,8 @@ object JobScheduling {
     __obj.asInstanceOf[JobScheduling]
   }
   
-  extension [Self <: JobScheduling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobScheduling] (val x: Self) extends AnyVal {
     
     inline def setMaxFailuresPerHour(value: Double): Self = StObject.set(x, "maxFailuresPerHour", value.asInstanceOf[js.Any])
     

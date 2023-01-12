@@ -110,7 +110,8 @@ object ViewCfg {
     __obj.asInstanceOf[ViewCfg]
   }
   
-  extension [Self <: ViewCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewCfg] (val x: Self) extends AnyVal {
     
     inline def setAppendPadding(value: ViewAppendPadding): Self = StObject.set(x, "appendPadding", value.asInstanceOf[js.Any])
     

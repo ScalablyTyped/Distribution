@@ -25,7 +25,8 @@ object LENOFFSET {
     __obj.asInstanceOf[LENOFFSET]
   }
   
-  extension [Self <: LENOFFSET](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LENOFFSET] (val x: Self) extends AnyVal {
     
     inline def setLEN_OFFSET(value: typings.escpos.escposInts.`3`): Self = StObject.set(x, "LEN_OFFSET", value.asInstanceOf[js.Any])
     

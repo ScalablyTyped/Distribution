@@ -20,7 +20,8 @@ object RTDiffuse {
     __obj.asInstanceOf[RTDiffuse]
   }
   
-  extension [Self <: RTDiffuse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTDiffuse] (val x: Self) extends AnyVal {
     
     inline def setR(value: IUniform[Any]): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object AllergyIntoleranceReaction {
     __obj.asInstanceOf[AllergyIntoleranceReaction]
   }
   
-  extension [Self <: AllergyIntoleranceReaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllergyIntoleranceReaction] (val x: Self) extends AnyVal {
     
     inline def setCertainty(value: unlikely | likely | confirmed): Self = StObject.set(x, "certainty", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object CreateOptionGroupMessage {
     __obj.asInstanceOf[CreateOptionGroupMessage]
   }
   
-  extension [Self <: CreateOptionGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOptionGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setEngineName(value: String): Self = StObject.set(x, "EngineName", value.asInstanceOf[js.Any])
     

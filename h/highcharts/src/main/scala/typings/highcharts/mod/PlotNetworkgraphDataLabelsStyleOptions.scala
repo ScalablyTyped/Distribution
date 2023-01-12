@@ -15,7 +15,8 @@ object PlotNetworkgraphDataLabelsStyleOptions {
     __obj.asInstanceOf[PlotNetworkgraphDataLabelsStyleOptions]
   }
   
-  extension [Self <: PlotNetworkgraphDataLabelsStyleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotNetworkgraphDataLabelsStyleOptions] (val x: Self) extends AnyVal {
     
     inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     

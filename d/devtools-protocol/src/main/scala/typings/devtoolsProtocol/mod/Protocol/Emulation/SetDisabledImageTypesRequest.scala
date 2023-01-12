@@ -18,7 +18,8 @@ object SetDisabledImageTypesRequest {
     __obj.asInstanceOf[SetDisabledImageTypesRequest]
   }
   
-  extension [Self <: SetDisabledImageTypesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetDisabledImageTypesRequest] (val x: Self) extends AnyVal {
     
     inline def setImageTypes(value: js.Array[DisabledImageType]): Self = StObject.set(x, "imageTypes", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object FullLong {
     __obj.asInstanceOf[FullLong]
   }
   
-  extension [Self <: FullLong](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullLong] (val x: Self) extends AnyVal {
     
     inline def setFull(value: Formats): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     

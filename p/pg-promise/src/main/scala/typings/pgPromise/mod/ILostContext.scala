@@ -22,7 +22,8 @@ object ILostContext {
     __obj.asInstanceOf[ILostContext[C]]
   }
   
-  extension [Self <: ILostContext[?], C /* <: IClient */](x: Self & ILostContext[C]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILostContext[?], C /* <: IClient */] (val x: Self & ILostContext[C]) extends AnyVal {
     
     inline def setClient(value: C): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

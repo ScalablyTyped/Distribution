@@ -15,7 +15,8 @@ object AsTDefaultComponent {
     __obj.asInstanceOf[AsTDefaultComponent[TDefaultComponent]]
   }
   
-  extension [Self <: AsTDefaultComponent[?], TDefaultComponent /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any */](x: Self & AsTDefaultComponent[TDefaultComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsTDefaultComponent[?], TDefaultComponent /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any */] (val x: Self & AsTDefaultComponent[TDefaultComponent]) extends AnyVal {
     
     inline def setAs(value: TDefaultComponent): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
   }

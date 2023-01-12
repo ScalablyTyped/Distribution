@@ -24,7 +24,8 @@ object InterpreterDirective_ {
     __obj.asInstanceOf[InterpreterDirective_]
   }
   
-  extension [Self <: InterpreterDirective_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpreterDirective_] (val x: Self) extends AnyVal {
     
     inline def setType(value: InterpreterDirective): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

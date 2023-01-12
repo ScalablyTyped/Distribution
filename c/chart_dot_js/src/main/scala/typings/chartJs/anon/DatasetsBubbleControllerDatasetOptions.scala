@@ -16,7 +16,8 @@ object DatasetsBubbleControllerDatasetOptions {
     __obj.asInstanceOf[DatasetsBubbleControllerDatasetOptions]
   }
   
-  extension [Self <: DatasetsBubbleControllerDatasetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetsBubbleControllerDatasetOptions] (val x: Self) extends AnyVal {
     
     inline def setDatasets(value: BubbleControllerDatasetOptions): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
   }

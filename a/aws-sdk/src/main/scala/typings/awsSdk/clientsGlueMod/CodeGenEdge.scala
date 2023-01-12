@@ -28,7 +28,8 @@ object CodeGenEdge {
     __obj.asInstanceOf[CodeGenEdge]
   }
   
-  extension [Self <: CodeGenEdge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeGenEdge] (val x: Self) extends AnyVal {
     
     inline def setSource(value: CodeGenIdentifier): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     

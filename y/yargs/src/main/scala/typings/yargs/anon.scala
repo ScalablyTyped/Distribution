@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[DictargName]
     }
     
-    extension [Self <: DictargName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DictargName] (val x: Self) extends AnyVal {
       
       inline def set$0(value: String): Self = StObject.set(x, "$0", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object anon {
       __obj.asInstanceOf[PartialParserConfiguratio]
     }
     
-    extension [Self <: PartialParserConfiguratio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialParserConfiguratio] (val x: Self) extends AnyVal {
       
       inline def `setBoolean-negation`(value: Boolean): Self = StObject.set(x, "boolean-negation", value.asInstanceOf[js.Any])
       

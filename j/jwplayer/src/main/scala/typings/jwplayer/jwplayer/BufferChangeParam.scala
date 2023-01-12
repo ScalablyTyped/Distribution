@@ -21,7 +21,8 @@ object BufferChangeParam {
     __obj.asInstanceOf[BufferChangeParam]
   }
   
-  extension [Self <: BufferChangeParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferChangeParam] (val x: Self) extends AnyVal {
     
     inline def setBufferPercent(value: Double): Self = StObject.set(x, "bufferPercent", value.asInstanceOf[js.Any])
     

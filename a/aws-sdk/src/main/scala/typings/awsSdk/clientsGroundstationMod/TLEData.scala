@@ -28,7 +28,8 @@ object TLEData {
     __obj.asInstanceOf[TLEData]
   }
   
-  extension [Self <: TLEData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TLEData] (val x: Self) extends AnyVal {
     
     inline def setTleLine1(value: TleLineOne): Self = StObject.set(x, "tleLine1", value.asInstanceOf[js.Any])
     

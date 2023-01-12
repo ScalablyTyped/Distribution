@@ -17,7 +17,8 @@ object IMinorTicks {
     __obj.asInstanceOf[IMinorTicks]
   }
   
-  extension [Self <: IMinorTicks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMinorTicks] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
   }

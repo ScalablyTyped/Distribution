@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[TopologicalConfig]
     }
     
-    extension [Self <: TopologicalConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopologicalConfig] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
     }

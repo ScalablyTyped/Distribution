@@ -18,7 +18,8 @@ object CreateEndpointConfigOutput {
     __obj.asInstanceOf[CreateEndpointConfigOutput]
   }
   
-  extension [Self <: CreateEndpointConfigOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEndpointConfigOutput] (val x: Self) extends AnyVal {
     
     inline def setEndpointConfigArn(value: EndpointConfigArn): Self = StObject.set(x, "EndpointConfigArn", value.asInstanceOf[js.Any])
   }

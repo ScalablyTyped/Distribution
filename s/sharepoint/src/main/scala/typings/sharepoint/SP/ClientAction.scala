@@ -19,7 +19,8 @@ object ClientAction {
     __obj.asInstanceOf[ClientAction]
   }
   
-  extension [Self <: ClientAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientAction] (val x: Self) extends AnyVal {
     
     inline def setGet_id(value: () => Double): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
     

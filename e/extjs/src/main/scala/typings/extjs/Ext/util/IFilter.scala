@@ -56,7 +56,8 @@ object IFilter {
     __obj.asInstanceOf[IFilter]
   }
   
-  extension [Self <: IFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFilter] (val x: Self) extends AnyVal {
     
     inline def setAnyMatch(value: Boolean): Self = StObject.set(x, "anyMatch", value.asInstanceOf[js.Any])
     

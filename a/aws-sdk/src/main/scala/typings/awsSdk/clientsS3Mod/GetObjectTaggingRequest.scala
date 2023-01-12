@@ -35,7 +35,8 @@ object GetObjectTaggingRequest {
     __obj.asInstanceOf[GetObjectTaggingRequest]
   }
   
-  extension [Self <: GetObjectTaggingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectTaggingRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

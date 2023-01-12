@@ -34,7 +34,8 @@ object BiologicallyDerivedProductManipulation {
     __obj.asInstanceOf[BiologicallyDerivedProductManipulation]
   }
   
-  extension [Self <: BiologicallyDerivedProductManipulation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BiologicallyDerivedProductManipulation] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

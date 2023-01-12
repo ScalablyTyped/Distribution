@@ -20,7 +20,8 @@ object TypeofButtonGroupExtend {
     __obj.asInstanceOf[TypeofButtonGroupExtend]
   }
   
-  extension [Self <: TypeofButtonGroupExtend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofButtonGroupExtend] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => ButtonGroup): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

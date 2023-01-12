@@ -19,7 +19,8 @@ object VoiceMessageContent {
     __obj.asInstanceOf[VoiceMessageContent]
   }
   
-  extension [Self <: VoiceMessageContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceMessageContent] (val x: Self) extends AnyVal {
     
     inline def setCallInstructionsMessage(value: CallInstructionsMessageType): Self = StObject.set(x, "CallInstructionsMessage", value.asInstanceOf[js.Any])
     

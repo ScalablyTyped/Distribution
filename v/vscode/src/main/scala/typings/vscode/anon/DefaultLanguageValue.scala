@@ -33,7 +33,8 @@ object DefaultLanguageValue {
     __obj.asInstanceOf[DefaultLanguageValue[T]]
   }
   
-  extension [Self <: DefaultLanguageValue[?], T](x: Self & DefaultLanguageValue[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultLanguageValue[?], T] (val x: Self & DefaultLanguageValue[T]) extends AnyVal {
     
     inline def setDefaultLanguageValue(value: T): Self = StObject.set(x, "defaultLanguageValue", value.asInstanceOf[js.Any])
     

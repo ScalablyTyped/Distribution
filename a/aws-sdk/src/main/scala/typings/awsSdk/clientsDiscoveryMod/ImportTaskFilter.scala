@@ -23,7 +23,8 @@ object ImportTaskFilter {
     __obj.asInstanceOf[ImportTaskFilter]
   }
   
-  extension [Self <: ImportTaskFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportTaskFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: ImportTaskFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

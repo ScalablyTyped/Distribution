@@ -28,7 +28,8 @@ object TrafficRoutingConfig {
     __obj.asInstanceOf[TrafficRoutingConfig]
   }
   
-  extension [Self <: TrafficRoutingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrafficRoutingConfig] (val x: Self) extends AnyVal {
     
     inline def setTimeBasedCanary(value: TimeBasedCanary): Self = StObject.set(x, "timeBasedCanary", value.asInstanceOf[js.Any])
     

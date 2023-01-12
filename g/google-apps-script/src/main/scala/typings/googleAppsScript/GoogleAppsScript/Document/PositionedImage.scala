@@ -78,7 +78,8 @@ object PositionedImage {
     __obj.asInstanceOf[PositionedImage]
   }
   
-  extension [Self <: PositionedImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionedImage] (val x: Self) extends AnyVal {
     
     inline def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
     

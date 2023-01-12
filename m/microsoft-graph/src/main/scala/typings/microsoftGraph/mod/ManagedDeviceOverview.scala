@@ -30,7 +30,8 @@ object ManagedDeviceOverview {
     __obj.asInstanceOf[ManagedDeviceOverview]
   }
   
-  extension [Self <: ManagedDeviceOverview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedDeviceOverview] (val x: Self) extends AnyVal {
     
     inline def setDeviceExchangeAccessStateSummary(value: NullableOption[DeviceExchangeAccessStateSummary]): Self = StObject.set(x, "deviceExchangeAccessStateSummary", value.asInstanceOf[js.Any])
     

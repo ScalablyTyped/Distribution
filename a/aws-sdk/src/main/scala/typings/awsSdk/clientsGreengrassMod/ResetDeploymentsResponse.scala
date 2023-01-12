@@ -23,7 +23,8 @@ object ResetDeploymentsResponse {
     __obj.asInstanceOf[ResetDeploymentsResponse]
   }
   
-  extension [Self <: ResetDeploymentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetDeploymentsResponse] (val x: Self) extends AnyVal {
     
     inline def setDeploymentArn(value: string): Self = StObject.set(x, "DeploymentArn", value.asInstanceOf[js.Any])
     

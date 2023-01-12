@@ -37,7 +37,8 @@ object UpstreamProxy {
     __obj.asInstanceOf[UpstreamProxy]
   }
   
-  extension [Self <: UpstreamProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpstreamProxy] (val x: Self) extends AnyVal {
     
     inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     

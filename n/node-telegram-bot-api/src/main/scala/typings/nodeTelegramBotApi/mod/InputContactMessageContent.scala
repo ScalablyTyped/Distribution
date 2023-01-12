@@ -20,7 +20,8 @@ object InputContactMessageContent {
     __obj.asInstanceOf[InputContactMessageContent]
   }
   
-  extension [Self <: InputContactMessageContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputContactMessageContent] (val x: Self) extends AnyVal {
     
     inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     

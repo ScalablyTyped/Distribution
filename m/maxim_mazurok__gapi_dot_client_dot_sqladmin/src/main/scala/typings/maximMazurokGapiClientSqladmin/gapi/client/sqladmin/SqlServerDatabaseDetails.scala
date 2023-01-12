@@ -19,7 +19,8 @@ object SqlServerDatabaseDetails {
     __obj.asInstanceOf[SqlServerDatabaseDetails]
   }
   
-  extension [Self <: SqlServerDatabaseDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlServerDatabaseDetails] (val x: Self) extends AnyVal {
     
     inline def setCompatibilityLevel(value: Double): Self = StObject.set(x, "compatibilityLevel", value.asInstanceOf[js.Any])
     

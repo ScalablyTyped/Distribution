@@ -22,7 +22,8 @@ object Alternative {
     __obj.asInstanceOf[Alternative]
   }
   
-  extension [Self <: Alternative](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Alternative] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.regexpToAst.regexpToAstStrings.Alternative): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

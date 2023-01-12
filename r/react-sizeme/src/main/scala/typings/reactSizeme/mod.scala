@@ -91,7 +91,8 @@ object mod {
       __obj.asInstanceOf[SizeMeOptions]
     }
     
-    extension [Self <: SizeMeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeMeOptions] (val x: Self) extends AnyVal {
       
       inline def setMonitorHeight(value: Boolean): Self = StObject.set(x, "monitorHeight", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object mod {
       __obj.asInstanceOf[SizeMeProps]
     }
     
-    extension [Self <: SizeMeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeMeProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
@@ -149,7 +151,8 @@ object mod {
       __obj.asInstanceOf[SizeMeRenderProps]
     }
     
-    extension [Self <: SizeMeRenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeMeRenderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: SizeMeProps => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
@@ -168,7 +171,8 @@ object mod {
       __obj.asInstanceOf[WithSizeProps]
     }
     
-    extension [Self <: WithSizeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithSizeProps] (val x: Self) extends AnyVal {
       
       inline def setOnSize(value: /* size */ Height => Unit): Self = StObject.set(x, "onSize", js.Any.fromFunction1(value))
       

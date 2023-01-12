@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[BackProps]
     }
     
-    extension [Self <: BackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackProps] (val x: Self) extends AnyVal {
       
       inline def setChilren(value: js.Array[Element]): Self = StObject.set(x, "chilren", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object mod {
       __obj.asInstanceOf[FaceProps]
     }
     
-    extension [Self <: FaceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaceProps] (val x: Self) extends AnyVal {
       
       inline def setChilren(value: js.Array[Element]): Self = StObject.set(x, "chilren", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object mod {
       __obj.asInstanceOf[FlipCardProps]
     }
     
-    extension [Self <: FlipCardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlipCardProps] (val x: Self) extends AnyVal {
       
       inline def setAlignHeight(value: Boolean): Self = StObject.set(x, "alignHeight", value.asInstanceOf[js.Any])
       

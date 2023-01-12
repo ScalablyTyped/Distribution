@@ -15,7 +15,8 @@ object WMSGetFeatureInfoOptions {
     __obj.asInstanceOf[WMSGetFeatureInfoOptions]
   }
   
-  extension [Self <: WMSGetFeatureInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WMSGetFeatureInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object distTs3Dot9ComponentsReportTagsMod {
       __obj.asInstanceOf[TagsProps]
     }
     
-    extension [Self <: TagsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagsProps] (val x: Self) extends AnyVal {
       
       inline def setTags(value: js.Array[TagValue]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       

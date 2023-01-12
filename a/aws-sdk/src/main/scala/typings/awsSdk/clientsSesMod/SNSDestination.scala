@@ -18,7 +18,8 @@ object SNSDestination {
     __obj.asInstanceOf[SNSDestination]
   }
   
-  extension [Self <: SNSDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SNSDestination] (val x: Self) extends AnyVal {
     
     inline def setTopicARN(value: AmazonResourceName): Self = StObject.set(x, "TopicARN", value.asInstanceOf[js.Any])
   }

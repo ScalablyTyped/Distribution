@@ -28,7 +28,8 @@ object GetUnfilteredTableMetadataRequest {
     __obj.asInstanceOf[GetUnfilteredTableMetadataRequest]
   }
   
-  extension [Self <: GetUnfilteredTableMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUnfilteredTableMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setAuditContext(value: AuditContext): Self = StObject.set(x, "AuditContext", value.asInstanceOf[js.Any])
     

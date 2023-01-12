@@ -20,7 +20,8 @@ object VgMultiFieldsRefWithSort {
     __obj.asInstanceOf[VgMultiFieldsRefWithSort]
   }
   
-  extension [Self <: VgMultiFieldsRefWithSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VgMultiFieldsRefWithSort] (val x: Self) extends AnyVal {
     
     inline def setSort(value: UnionSortField): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     

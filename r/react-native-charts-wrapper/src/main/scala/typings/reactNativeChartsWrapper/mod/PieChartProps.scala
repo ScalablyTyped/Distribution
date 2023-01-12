@@ -41,7 +41,8 @@ object PieChartProps {
     __obj.asInstanceOf[PieChartProps]
   }
   
-  extension [Self <: PieChartProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieChartProps] (val x: Self) extends AnyVal {
     
     inline def setCenterText(value: String): Self = StObject.set(x, "centerText", value.asInstanceOf[js.Any])
     

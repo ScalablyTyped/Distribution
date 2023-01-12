@@ -44,7 +44,8 @@ object SettableMetadata {
     __obj.asInstanceOf[SettableMetadata]
   }
   
-  extension [Self <: SettableMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettableMetadata] (val x: Self) extends AnyVal {
     
     inline def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
     

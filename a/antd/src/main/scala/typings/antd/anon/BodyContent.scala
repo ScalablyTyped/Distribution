@@ -18,7 +18,8 @@ object BodyContent {
     __obj.asInstanceOf[BodyContent]
   }
   
-  extension [Self <: BodyContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyContent] (val x: Self) extends AnyVal {
     
     inline def setBodyContent(value: ReactNode): Self = StObject.set(x, "bodyContent", value.asInstanceOf[js.Any])
     

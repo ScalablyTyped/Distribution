@@ -34,7 +34,8 @@ object Cover {
     __obj.asInstanceOf[Cover]
   }
   
-  extension [Self <: Cover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cover] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* obj */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

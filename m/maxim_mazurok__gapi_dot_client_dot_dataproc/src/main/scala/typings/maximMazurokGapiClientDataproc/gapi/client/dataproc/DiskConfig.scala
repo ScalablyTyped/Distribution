@@ -35,7 +35,8 @@ object DiskConfig {
     __obj.asInstanceOf[DiskConfig]
   }
   
-  extension [Self <: DiskConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskConfig] (val x: Self) extends AnyVal {
     
     inline def setBootDiskSizeGb(value: Double): Self = StObject.set(x, "bootDiskSizeGb", value.asInstanceOf[js.Any])
     

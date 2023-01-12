@@ -32,7 +32,8 @@ object Queue {
     __obj.asInstanceOf[Queue]
   }
   
-  extension [Self <: Queue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Queue] (val x: Self) extends AnyVal {
     
     inline def setAppEngineHttpQueue(value: AppEngineHttpQueue): Self = StObject.set(x, "appEngineHttpQueue", value.asInstanceOf[js.Any])
     

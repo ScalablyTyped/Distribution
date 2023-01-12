@@ -31,7 +31,8 @@ object SharedExcludedPlacement {
     __obj.asInstanceOf[SharedExcludedPlacement]
   }
   
-  extension [Self <: SharedExcludedPlacement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedExcludedPlacement] (val x: Self) extends AnyVal {
     
     inline def setGetEntityType(value: () => String): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object Dry {
     __obj.asInstanceOf[Dry]
   }
   
-  extension [Self <: Dry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dry] (val x: Self) extends AnyVal {
     
     inline def setDry(value: Boolean): Self = StObject.set(x, "dry", value.asInstanceOf[js.Any])
     

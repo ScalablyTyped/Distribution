@@ -29,7 +29,8 @@ object IncludeRequestBody {
     __obj.asInstanceOf[IncludeRequestBody]
   }
   
-  extension [Self <: IncludeRequestBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeRequestBody] (val x: Self) extends AnyVal {
     
     inline def setIncludeRequestBody(value: Boolean): Self = StObject.set(x, "includeRequestBody", value.asInstanceOf[js.Any])
     

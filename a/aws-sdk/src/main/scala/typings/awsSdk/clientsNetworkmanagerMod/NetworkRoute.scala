@@ -38,7 +38,8 @@ object NetworkRoute {
     __obj.asInstanceOf[NetworkRoute]
   }
   
-  extension [Self <: NetworkRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkRoute] (val x: Self) extends AnyVal {
     
     inline def setDestinationCidrBlock(value: ConstrainedString): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     

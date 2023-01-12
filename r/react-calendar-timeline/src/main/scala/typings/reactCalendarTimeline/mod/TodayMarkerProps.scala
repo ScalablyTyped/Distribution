@@ -17,7 +17,8 @@ object TodayMarkerProps {
     __obj.asInstanceOf[TodayMarkerProps]
   }
   
-  extension [Self <: TodayMarkerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TodayMarkerProps] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

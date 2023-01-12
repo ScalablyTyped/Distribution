@@ -28,7 +28,8 @@ object BatchGetAssetPropertyValueHistoryRequest {
     __obj.asInstanceOf[BatchGetAssetPropertyValueHistoryRequest]
   }
   
-  extension [Self <: BatchGetAssetPropertyValueHistoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetAssetPropertyValueHistoryRequest] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: BatchGetAssetPropertyValueHistoryEntries): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

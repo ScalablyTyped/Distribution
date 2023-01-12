@@ -20,7 +20,8 @@ object typesRequestProgressMod {
       __obj.asInstanceOf[RequestProgress]
     }
     
-    extension [Self <: RequestProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestProgress] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
       

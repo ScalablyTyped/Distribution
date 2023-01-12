@@ -75,7 +75,8 @@ object FirstTime {
     __obj.asInstanceOf[FirstTime]
   }
   
-  extension [Self <: FirstTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstTime] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

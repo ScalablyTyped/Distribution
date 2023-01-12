@@ -21,7 +21,8 @@ object mod {
       __obj.asInstanceOf[RemarkConfig]
     }
     
-    extension [Self <: RemarkConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemarkConfig] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: RemarkOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[RemarkOptions]
     }
     
-    extension [Self <: RemarkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemarkOptions] (val x: Self) extends AnyVal {
       
       inline def setCommonmark(value: Boolean): Self = StObject.set(x, "commonmark", value.asInstanceOf[js.Any])
       

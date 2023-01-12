@@ -150,7 +150,8 @@ object IBufferCell {
     __obj.asInstanceOf[IBufferCell]
   }
   
-  extension [Self <: IBufferCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBufferCell] (val x: Self) extends AnyVal {
     
     inline def setGetBgColor(value: () => Double): Self = StObject.set(x, "getBgColor", js.Any.fromFunction0(value))
     

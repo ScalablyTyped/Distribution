@@ -16,7 +16,8 @@ object SentinelAction {
     __obj.asInstanceOf[SentinelAction]
   }
   
-  extension [Self <: SentinelAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SentinelAction] (val x: Self) extends AnyVal {
     
     inline def setType(value: Identifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

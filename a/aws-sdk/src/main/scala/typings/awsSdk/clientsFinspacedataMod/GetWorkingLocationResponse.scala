@@ -28,7 +28,8 @@ object GetWorkingLocationResponse {
     __obj.asInstanceOf[GetWorkingLocationResponse]
   }
   
-  extension [Self <: GetWorkingLocationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWorkingLocationResponse] (val x: Self) extends AnyVal {
     
     inline def setS3Bucket(value: stringValueLength1to63): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
     

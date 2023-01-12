@@ -38,7 +38,8 @@ object esTypesMod {
       __obj.asInstanceOf[DispatchProp[A]]
     }
     
-    extension [Self <: DispatchProp[?], A /* <: Action[Any] */](x: Self & DispatchProp[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DispatchProp[?], A /* <: Action[Any] */] (val x: Self & DispatchProp[A]) extends AnyVal {
       
       inline def setDispatch(value: A => A): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
     }

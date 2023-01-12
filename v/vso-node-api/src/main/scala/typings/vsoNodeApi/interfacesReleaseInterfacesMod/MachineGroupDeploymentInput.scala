@@ -35,7 +35,8 @@ object MachineGroupDeploymentInput {
     __obj.asInstanceOf[MachineGroupDeploymentInput]
   }
   
-  extension [Self <: MachineGroupDeploymentInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MachineGroupDeploymentInput] (val x: Self) extends AnyVal {
     
     inline def setDeploymentHealthOption(value: String): Self = StObject.set(x, "deploymentHealthOption", value.asInstanceOf[js.Any])
     

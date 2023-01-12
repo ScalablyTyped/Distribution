@@ -33,7 +33,8 @@ object RenderManifestEntryTemplated {
     __obj.asInstanceOf[RenderManifestEntryTemplated]
   }
   
-  extension [Self <: RenderManifestEntryTemplated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderManifestEntryTemplated] (val x: Self) extends AnyVal {
     
     inline def setAuxiliary(value: Boolean): Self = StObject.set(x, "auxiliary", value.asInstanceOf[js.Any])
     

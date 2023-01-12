@@ -84,7 +84,8 @@ object AuditLog {
     __obj.asInstanceOf[AuditLog]
   }
   
-  extension [Self <: AuditLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditLog] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationInfo(value: AuthenticationInfo): Self = StObject.set(x, "authenticationInfo", value.asInstanceOf[js.Any])
     

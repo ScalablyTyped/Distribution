@@ -39,7 +39,8 @@ object StreamPlayError {
     __obj.asInstanceOf[StreamPlayError]
   }
   
-  extension [Self <: StreamPlayError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamPlayError] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

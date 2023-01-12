@@ -20,7 +20,8 @@ object GraphicsLayerElevationInfoFeatureExpressionInfo {
     __obj.asInstanceOf[GraphicsLayerElevationInfoFeatureExpressionInfo]
   }
   
-  extension [Self <: GraphicsLayerElevationInfoFeatureExpressionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicsLayerElevationInfoFeatureExpressionInfo] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

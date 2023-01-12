@@ -29,7 +29,8 @@ object ColorChannelEnumValues {
     __obj.asInstanceOf[ColorChannelEnumValues]
   }
   
-  extension [Self <: ColorChannelEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorChannelEnumValues] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: ColorChannel): Self = StObject.set(x, "Alpha", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object InteractiveLayerOptions {
     __obj.asInstanceOf[InteractiveLayerOptions]
   }
   
-  extension [Self <: InteractiveLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setBubblingMouseEvents(value: Boolean): Self = StObject.set(x, "bubblingMouseEvents", value.asInstanceOf[js.Any])
     

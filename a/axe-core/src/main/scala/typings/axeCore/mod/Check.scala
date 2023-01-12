@@ -25,7 +25,8 @@ object Check {
     __obj.asInstanceOf[Check]
   }
   
-  extension [Self <: Check](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Check] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: js.Function | String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

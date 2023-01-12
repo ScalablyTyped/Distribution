@@ -31,7 +31,8 @@ object PokemonEvolution {
     __obj.asInstanceOf[PokemonEvolution]
   }
   
-  extension [Self <: PokemonEvolution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PokemonEvolution] (val x: Self) extends AnyVal {
     
     inline def setConditions(value: js.Array[String]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     

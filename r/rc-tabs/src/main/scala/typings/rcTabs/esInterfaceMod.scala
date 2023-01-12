@@ -38,7 +38,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[AnimatedConfig]
     }
     
-    extension [Self <: AnimatedConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedConfig] (val x: Self) extends AnyVal {
       
       inline def setInkBar(value: Boolean): Self = StObject.set(x, "inkBar", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[EditableConfig]
     }
     
-    extension [Self <: EditableConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditableConfig] (val x: Self) extends AnyVal {
       
       inline def setAddIcon(value: ReactNode): Self = StObject.set(x, "addIcon", value.asInstanceOf[js.Any])
       
@@ -177,7 +179,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[Tab]
     }
     
-    extension [Self <: Tab](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -255,7 +258,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[TabBarExtraMap]
     }
     
-    extension [Self <: TabBarExtraMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBarExtraMap] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: ReactNode): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -298,7 +302,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[TabOffset]
     }
     
-    extension [Self <: TabOffset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabOffset] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -349,7 +354,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[TabsLocale]
     }
     
-    extension [Self <: TabsLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsLocale] (val x: Self) extends AnyVal {
       
       inline def setAddAriaLabel(value: String): Self = StObject.set(x, "addAriaLabel", value.asInstanceOf[js.Any])
       

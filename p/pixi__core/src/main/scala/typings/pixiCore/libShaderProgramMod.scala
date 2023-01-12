@@ -101,7 +101,8 @@ object libShaderProgramMod {
       __obj.asInstanceOf[IAttributeData]
     }
     
-    extension [Self <: IAttributeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAttributeData] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object libShaderProgramMod {
       __obj.asInstanceOf[IProgramExtraData]
     }
     
-    extension [Self <: IProgramExtraData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProgramExtraData] (val x: Self) extends AnyVal {
       
       inline def setTransformFeedbackVaryings(value: BufferMode): Self = StObject.set(x, "transformFeedbackVaryings", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object libShaderProgramMod {
       __obj.asInstanceOf[IUniformData]
     }
     
-    extension [Self <: IUniformData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUniformData] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

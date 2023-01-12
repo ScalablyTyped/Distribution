@@ -38,7 +38,8 @@ object Coordinate {
     __obj.asInstanceOf[Coordinate]
   }
   
-  extension [Self <: Coordinate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Coordinate] (val x: Self) extends AnyVal {
     
     inline def setAction(value: `overlay-press` | `image-overlay-press`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

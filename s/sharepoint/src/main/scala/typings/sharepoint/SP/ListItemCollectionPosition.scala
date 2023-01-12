@@ -27,7 +27,8 @@ object ListItemCollectionPosition {
     __obj.asInstanceOf[ListItemCollectionPosition]
   }
   
-  extension [Self <: ListItemCollectionPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListItemCollectionPosition] (val x: Self) extends AnyVal {
     
     inline def setGet_pagingInfo(value: () => String): Self = StObject.set(x, "get_pagingInfo", js.Any.fromFunction0(value))
     

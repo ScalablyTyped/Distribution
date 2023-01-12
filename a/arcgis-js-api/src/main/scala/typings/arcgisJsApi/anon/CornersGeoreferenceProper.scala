@@ -55,7 +55,8 @@ object CornersGeoreferenceProper {
     __obj.asInstanceOf[CornersGeoreferenceProper]
   }
   
-  extension [Self <: CornersGeoreferenceProper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CornersGeoreferenceProper] (val x: Self) extends AnyVal {
     
     inline def setBottomLeft(value: PointProperties): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
     

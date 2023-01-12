@@ -24,7 +24,8 @@ object karmaMod {
       __obj.asInstanceOf[CustomLauncher]
     }
     
-    extension [Self <: CustomLauncher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomLauncher] (val x: Self) extends AnyVal {
       
       inline def setChromeDataDir(value: String): Self = StObject.set(x, "chromeDataDir", value.asInstanceOf[js.Any])
       

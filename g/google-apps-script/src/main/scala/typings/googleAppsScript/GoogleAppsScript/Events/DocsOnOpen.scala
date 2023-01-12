@@ -20,7 +20,8 @@ object DocsOnOpen {
     __obj.asInstanceOf[DocsOnOpen]
   }
   
-  extension [Self <: DocsOnOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocsOnOpen] (val x: Self) extends AnyVal {
     
     inline def setSource(value: Document): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }

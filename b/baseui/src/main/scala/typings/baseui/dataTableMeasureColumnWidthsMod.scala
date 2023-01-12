@@ -40,7 +40,8 @@ object dataTableMeasureColumnWidthsMod {
       __obj.asInstanceOf[MeasureColumnWidthsProps]
     }
     
-    extension [Self <: MeasureColumnWidthsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeasureColumnWidthsProps] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[ColumnOptions[Any, Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

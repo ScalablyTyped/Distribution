@@ -17,7 +17,8 @@ object MappingDocValuesPropertyBase {
     __obj.asInstanceOf[MappingDocValuesPropertyBase]
   }
   
-  extension [Self <: MappingDocValuesPropertyBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingDocValuesPropertyBase] (val x: Self) extends AnyVal {
     
     inline def setDoc_values(value: Boolean): Self = StObject.set(x, "doc_values", value.asInstanceOf[js.Any])
     

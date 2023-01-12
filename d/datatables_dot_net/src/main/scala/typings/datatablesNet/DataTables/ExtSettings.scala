@@ -95,7 +95,8 @@ object ExtSettings {
     __obj.asInstanceOf[ExtSettings]
   }
   
-  extension [Self <: ExtSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtSettings] (val x: Self) extends AnyVal {
     
     inline def setATypes(value: js.Array[Any]): Self = StObject.set(x, "aTypes", value.asInstanceOf[js.Any])
     

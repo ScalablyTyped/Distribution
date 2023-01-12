@@ -45,7 +45,8 @@ object PanoramaOptions {
     __obj.asInstanceOf[PanoramaOptions]
   }
   
-  extension [Self <: PanoramaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanoramaOptions] (val x: Self) extends AnyVal {
     
     inline def setAroundControl(value: Boolean): Self = StObject.set(x, "aroundControl", value.asInstanceOf[js.Any])
     

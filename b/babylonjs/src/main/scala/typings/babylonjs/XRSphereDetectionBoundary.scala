@@ -21,7 +21,8 @@ object XRSphereDetectionBoundary {
     __obj.asInstanceOf[XRSphereDetectionBoundary]
   }
   
-  extension [Self <: XRSphereDetectionBoundary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRSphereDetectionBoundary] (val x: Self) extends AnyVal {
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     

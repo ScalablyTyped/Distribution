@@ -19,7 +19,8 @@ object Read {
     __obj.asInstanceOf[Read]
   }
   
-  extension [Self <: Read](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Read] (val x: Self) extends AnyVal {
     
     inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     

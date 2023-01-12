@@ -46,7 +46,8 @@ object MlDatafeedConfig {
     __obj.asInstanceOf[MlDatafeedConfig]
   }
   
-  extension [Self <: MlDatafeedConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDatafeedConfig] (val x: Self) extends AnyVal {
     
     inline def setAggregations(value: Record[String, AggregationsAggregationContainer]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     

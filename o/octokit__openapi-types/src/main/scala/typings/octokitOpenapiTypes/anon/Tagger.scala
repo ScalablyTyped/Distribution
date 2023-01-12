@@ -53,7 +53,8 @@ object Tagger {
     __obj.asInstanceOf[Tagger]
   }
   
-  extension [Self <: Tagger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tagger] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object X11Details {
     __obj.asInstanceOf[X11Details]
   }
   
-  extension [Self <: X11Details](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X11Details] (val x: Self) extends AnyVal {
     
     inline def setSrcIP(value: String): Self = StObject.set(x, "srcIP", value.asInstanceOf[js.Any])
     

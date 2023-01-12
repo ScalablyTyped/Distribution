@@ -18,7 +18,8 @@ object TimeoutConfig {
     __obj.asInstanceOf[TimeoutConfig]
   }
   
-  extension [Self <: TimeoutConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeoutConfig] (val x: Self) extends AnyVal {
     
     inline def setMaxLifetimeTimeoutMinutes(value: TimeoutInMin): Self = StObject.set(x, "maxLifetimeTimeoutMinutes", value.asInstanceOf[js.Any])
     

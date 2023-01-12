@@ -19,7 +19,8 @@ object ModifyThreadRequest {
     __obj.asInstanceOf[ModifyThreadRequest]
   }
   
-  extension [Self <: ModifyThreadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyThreadRequest] (val x: Self) extends AnyVal {
     
     inline def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
     

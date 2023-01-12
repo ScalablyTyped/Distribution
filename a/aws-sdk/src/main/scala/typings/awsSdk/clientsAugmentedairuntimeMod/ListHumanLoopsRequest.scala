@@ -43,7 +43,8 @@ object ListHumanLoopsRequest {
     __obj.asInstanceOf[ListHumanLoopsRequest]
   }
   
-  extension [Self <: ListHumanLoopsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHumanLoopsRequest] (val x: Self) extends AnyVal {
     
     inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     

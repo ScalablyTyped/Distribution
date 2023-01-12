@@ -18,7 +18,8 @@ object IngestedEventsDetail {
     __obj.asInstanceOf[IngestedEventsDetail]
   }
   
-  extension [Self <: IngestedEventsDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestedEventsDetail] (val x: Self) extends AnyVal {
     
     inline def setIngestedEventsTimeWindow(value: IngestedEventsTimeWindow): Self = StObject.set(x, "ingestedEventsTimeWindow", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object DataTableOperatorFilterMetaData {
     __obj.asInstanceOf[DataTableOperatorFilterMetaData]
   }
   
-  extension [Self <: DataTableOperatorFilterMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableOperatorFilterMetaData] (val x: Self) extends AnyVal {
     
     inline def setConstraints(value: js.Array[DataTableFilterMetaData]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     

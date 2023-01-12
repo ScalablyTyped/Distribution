@@ -38,7 +38,8 @@ object typedataarrayArrayDatumar {
     __obj.asInstanceOf[typedataarrayArrayDatumar]
   }
   
-  extension [Self <: typedataarrayArrayDatumar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typedataarrayArrayDatumar] (val x: Self) extends AnyVal {
     
     inline def setArray(value: js.Array[Datum]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

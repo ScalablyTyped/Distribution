@@ -33,7 +33,8 @@ object ListImportsRequest {
     __obj.asInstanceOf[ListImportsRequest]
   }
   
-  extension [Self <: ListImportsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListImportsRequest] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: EventDataStoreArn): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

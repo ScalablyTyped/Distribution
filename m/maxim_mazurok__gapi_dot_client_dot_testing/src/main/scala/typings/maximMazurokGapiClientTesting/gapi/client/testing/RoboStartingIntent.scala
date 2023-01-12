@@ -22,7 +22,8 @@ object RoboStartingIntent {
     __obj.asInstanceOf[RoboStartingIntent]
   }
   
-  extension [Self <: RoboStartingIntent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoboStartingIntent] (val x: Self) extends AnyVal {
     
     inline def setLauncherActivity(value: Any): Self = StObject.set(x, "launcherActivity", value.asInstanceOf[js.Any])
     

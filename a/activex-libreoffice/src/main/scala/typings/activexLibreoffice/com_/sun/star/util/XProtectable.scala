@@ -41,7 +41,8 @@ object XProtectable {
     __obj.asInstanceOf[XProtectable]
   }
   
-  extension [Self <: XProtectable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XProtectable] (val x: Self) extends AnyVal {
     
     inline def setIsProtected(value: () => Boolean): Self = StObject.set(x, "isProtected", js.Any.fromFunction0(value))
     

@@ -25,7 +25,8 @@ object PickImplsearchPartialPick {
     __obj.asInstanceOf[PickImplsearchPartialPick]
   }
   
-  extension [Self <: PickImplsearchPartialPick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplsearchPartialPick] (val x: Self) extends AnyVal {
     
     inline def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     

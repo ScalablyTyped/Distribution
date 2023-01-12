@@ -77,7 +77,8 @@ object SeriesKeltnerchannelsOptions {
     __obj.asInstanceOf[SeriesKeltnerchannelsOptions]
   }
   
-  extension [Self <: SeriesKeltnerchannelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesKeltnerchannelsOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

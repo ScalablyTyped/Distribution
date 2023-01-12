@@ -19,7 +19,8 @@ object SsmlProsodyAttributes {
     __obj.asInstanceOf[SsmlProsodyAttributes]
   }
   
-  extension [Self <: SsmlProsodyAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SsmlProsodyAttributes] (val x: Self) extends AnyVal {
     
     inline def setPitch(value: String): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     

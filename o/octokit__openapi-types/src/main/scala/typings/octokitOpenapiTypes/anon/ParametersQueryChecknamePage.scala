@@ -17,7 +17,8 @@ object ParametersQueryChecknamePage {
     __obj.asInstanceOf[ParametersQueryChecknamePage]
   }
   
-  extension [Self <: ParametersQueryChecknamePage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryChecknamePage] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryChecknamePage): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

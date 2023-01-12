@@ -15,7 +15,8 @@ object Toolbox {
     __obj.asInstanceOf[Toolbox]
   }
   
-  extension [Self <: Toolbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Toolbox] (val x: Self) extends AnyVal {
     
     inline def setGetElement(value: () => Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
   }

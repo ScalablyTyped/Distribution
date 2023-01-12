@@ -522,7 +522,8 @@ object NodeDEFAULTPROVIDERNodePr {
     __obj.asInstanceOf[NodeDEFAULTPROVIDERNodePr]
   }
   
-  extension [Self <: NodeDEFAULTPROVIDERNodePr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeDEFAULTPROVIDERNodePr] (val x: Self) extends AnyVal {
     
     inline def setAutoExpandRelations(value: Boolean): Self = StObject.set(x, "autoExpandRelations", value.asInstanceOf[js.Any])
     

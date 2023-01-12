@@ -16,7 +16,8 @@ object EnrichSummary {
     __obj.asInstanceOf[EnrichSummary]
   }
   
-  extension [Self <: EnrichSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrichSummary] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: PartialRecordEnrichPolicyGeomatch): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
   }

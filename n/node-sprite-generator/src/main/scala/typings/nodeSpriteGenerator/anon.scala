@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[xnumberynumberImage]
     }
     
-    extension [Self <: xnumberynumberImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: xnumberynumberImage] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

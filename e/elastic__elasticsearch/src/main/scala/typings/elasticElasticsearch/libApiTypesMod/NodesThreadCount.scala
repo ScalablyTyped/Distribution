@@ -25,7 +25,8 @@ object NodesThreadCount {
     __obj.asInstanceOf[NodesThreadCount]
   }
   
-  extension [Self <: NodesThreadCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesThreadCount] (val x: Self) extends AnyVal {
     
     inline def setActive(value: long): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

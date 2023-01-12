@@ -22,7 +22,8 @@ object distSrcTypesMetaRatesResponseMod {
       __obj.asInstanceOf[RatesResponse]
     }
     
-    extension [Self <: RatesResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatesResponse] (val x: Self) extends AnyVal {
       
       inline def setUSD(value: Double): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
       

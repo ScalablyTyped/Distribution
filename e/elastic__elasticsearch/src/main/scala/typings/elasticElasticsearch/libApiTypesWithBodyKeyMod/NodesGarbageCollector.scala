@@ -16,7 +16,8 @@ object NodesGarbageCollector {
     __obj.asInstanceOf[NodesGarbageCollector]
   }
   
-  extension [Self <: NodesGarbageCollector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesGarbageCollector] (val x: Self) extends AnyVal {
     
     inline def setCollectors(value: Record[String, NodesGarbageCollectorTotal]): Self = StObject.set(x, "collectors", value.asInstanceOf[js.Any])
     

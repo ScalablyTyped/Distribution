@@ -118,7 +118,8 @@ object WeakValidationMapAvatarPr {
     __obj.asInstanceOf[WeakValidationMapAvatarPr]
   }
   
-  extension [Self <: WeakValidationMapAvatarPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapAvatarPr] (val x: Self) extends AnyVal {
     
     inline def setActiveOpacity(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends number | undefined ? react.react.Validator<number | undefined | null | undefined> : undefined extends number | undefined ? react.react.Validator<number | undefined | null | undefined> : react.react.Validator<number | undefined> */ js.Any

@@ -78,7 +78,8 @@ object PlusWebviewWebviewBounceStyle {
     __obj.asInstanceOf[PlusWebviewWebviewBounceStyle]
   }
   
-  extension [Self <: PlusWebviewWebviewBounceStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewBounceStyle] (val x: Self) extends AnyVal {
     
     inline def setChangeoffset(value: Any): Self = StObject.set(x, "changeoffset", value.asInstanceOf[js.Any])
     

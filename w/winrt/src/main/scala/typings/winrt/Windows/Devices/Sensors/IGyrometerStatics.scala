@@ -15,7 +15,8 @@ object IGyrometerStatics {
     __obj.asInstanceOf[IGyrometerStatics]
   }
   
-  extension [Self <: IGyrometerStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGyrometerStatics] (val x: Self) extends AnyVal {
     
     inline def setGetDefault(value: () => Gyrometer): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
   }

@@ -111,7 +111,8 @@ object buildSrcCompileSelectionMod {
       __obj.asInstanceOf[SelectionCompiler[T]]
     }
     
-    extension [Self <: SelectionCompiler[?], T /* <: SelectionType */](x: Self & SelectionCompiler[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionCompiler[?], T /* <: SelectionType */] (val x: Self & SelectionCompiler[T]) extends AnyVal {
       
       inline def setDefined(value: SelectionComponent[SelectionType] => Boolean): Self = StObject.set(x, "defined", js.Any.fromFunction1(value))
       
@@ -198,7 +199,8 @@ object buildSrcCompileSelectionMod {
       __obj.asInstanceOf[SelectionComponent[T]]
     }
     
-    extension [Self <: SelectionComponent[?], T /* <: SelectionType */](x: Self & SelectionComponent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionComponent[?], T /* <: SelectionType */] (val x: Self & SelectionComponent[T]) extends AnyVal {
       
       inline def setBind(value: scales | Binding | Dict[Binding] | LegendBinding): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       

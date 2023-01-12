@@ -19,7 +19,8 @@ object CancelChartObject {
     __obj.asInstanceOf[CancelChartObject]
   }
   
-  extension [Self <: CancelChartObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelChartObject] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Any): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     

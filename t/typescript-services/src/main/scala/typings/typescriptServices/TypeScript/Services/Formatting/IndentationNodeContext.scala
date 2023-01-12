@@ -83,7 +83,8 @@ object IndentationNodeContext {
     __obj.asInstanceOf[IndentationNodeContext]
   }
   
-  extension [Self <: IndentationNodeContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndentationNodeContext] (val x: Self) extends AnyVal {
     
     inline def setChildIndentationAmountDelta(value: () => Double): Self = StObject.set(x, "childIndentationAmountDelta", js.Any.fromFunction0(value))
     

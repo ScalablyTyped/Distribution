@@ -15,7 +15,8 @@ object TocLastLevelComputed {
     __obj.asInstanceOf[TocLastLevelComputed]
   }
   
-  extension [Self <: TocLastLevelComputed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TocLastLevelComputed] (val x: Self) extends AnyVal {
     
     inline def setTocLastLevelComputed(value: scala.Any): Self = StObject.set(x, "tocLastLevelComputed", value.asInstanceOf[js.Any])
   }

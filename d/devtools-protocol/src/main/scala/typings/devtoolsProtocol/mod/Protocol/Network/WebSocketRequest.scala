@@ -18,7 +18,8 @@ object WebSocketRequest {
     __obj.asInstanceOf[WebSocketRequest]
   }
   
-  extension [Self <: WebSocketRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSocketRequest] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }

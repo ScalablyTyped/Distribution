@@ -147,7 +147,8 @@ object libComponentsCalloutCalloutContentDotbaseMod {
       __obj.asInstanceOf[ICalloutState]
     }
     
-    extension [Self <: ICalloutState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalloutState] (val x: Self) extends AnyVal {
       
       inline def setCalloutElementRect(value: ClientRect): Self = StObject.set(x, "calloutElementRect", value.asInstanceOf[js.Any])
       

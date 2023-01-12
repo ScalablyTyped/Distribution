@@ -16,7 +16,8 @@ object GoogleCloudDatacatalogV1DataplexFilesetSpec {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1DataplexFilesetSpec]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1DataplexFilesetSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1DataplexFilesetSpec] (val x: Self) extends AnyVal {
     
     inline def setDataplexSpec(value: GoogleCloudDatacatalogV1DataplexSpec): Self = StObject.set(x, "dataplexSpec", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DeathZoneSource {
     __obj.asInstanceOf[DeathZoneSource]
   }
   
-  extension [Self <: DeathZoneSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeathZoneSource] (val x: Self) extends AnyVal {
     
     inline def setContains(value: (/* x */ Double, /* y */ Double) => Unit): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
   }

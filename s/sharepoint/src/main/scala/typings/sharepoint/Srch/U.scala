@@ -46,7 +46,8 @@ object U {
       __obj.asInstanceOf[LoadScriptsState]
     }
     
-    extension [Self <: LoadScriptsState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadScriptsState] (val x: Self) extends AnyVal {
       
       inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       

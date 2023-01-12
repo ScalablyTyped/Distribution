@@ -79,7 +79,8 @@ object typesGetBucketLocationInputMod {
       __obj.asInstanceOf[GetBucketLocationInput]
     }
     
-    extension [Self <: GetBucketLocationInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetBucketLocationInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

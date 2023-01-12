@@ -30,7 +30,8 @@ object DepthOfFieldMergePostProcessOptions {
     __obj.asInstanceOf[DepthOfFieldMergePostProcessOptions]
   }
   
-  extension [Self <: DepthOfFieldMergePostProcessOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepthOfFieldMergePostProcessOptions] (val x: Self) extends AnyVal {
     
     inline def setBloom(value: Weight): Self = StObject.set(x, "bloom", value.asInstanceOf[js.Any])
     

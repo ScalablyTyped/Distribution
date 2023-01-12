@@ -15,7 +15,8 @@ object EnumValuesBase64Encoded {
     __obj.asInstanceOf[EnumValuesBase64Encoded]
   }
   
-  extension [Self <: EnumValuesBase64Encoded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesBase64Encoded] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Base64Encoded): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

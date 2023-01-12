@@ -92,7 +92,8 @@ object DocumentHtmlDisplaySettings {
     __obj.asInstanceOf[DocumentHtmlDisplaySettings]
   }
   
-  extension [Self <: DocumentHtmlDisplaySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentHtmlDisplaySettings] (val x: Self) extends AnyVal {
     
     inline def setCellStyle(value: String): Self = StObject.set(x, "cellStyle", value.asInstanceOf[js.Any])
     

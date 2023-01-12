@@ -25,7 +25,8 @@ object RetrievalOptions {
     __obj.asInstanceOf[RetrievalOptions]
   }
   
-  extension [Self <: RetrievalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetrievalOptions] (val x: Self) extends AnyVal {
     
     inline def setExprs(value: AnyObject[String]): Self = StObject.set(x, "exprs", value.asInstanceOf[js.Any])
     

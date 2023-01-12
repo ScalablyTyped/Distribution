@@ -29,7 +29,8 @@ object IVaultSharedLinkOperations {
     __obj.asInstanceOf[IVaultSharedLinkOperations]
   }
   
-  extension [Self <: IVaultSharedLinkOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultSharedLinkOperations] (val x: Self) extends AnyVal {
     
     inline def setCreateSharedLink(value: ISharedLinkInfo => ISharedLinkInfo): Self = StObject.set(x, "CreateSharedLink", js.Any.fromFunction1(value))
     

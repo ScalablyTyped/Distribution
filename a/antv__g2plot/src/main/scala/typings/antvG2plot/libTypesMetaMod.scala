@@ -28,7 +28,8 @@ object libTypesMetaMod {
       __obj.asInstanceOf[Meta]
     }
     
-    extension [Self <: Meta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
       
       inline def setSync(value: Boolean | String): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       

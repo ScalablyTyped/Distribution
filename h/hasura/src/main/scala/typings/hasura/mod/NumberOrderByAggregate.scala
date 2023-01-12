@@ -41,7 +41,8 @@ object NumberOrderByAggregate {
     __obj.asInstanceOf[NumberOrderByAggregate[T, Keys]]
   }
   
-  extension [Self <: NumberOrderByAggregate[?, ?], T, Keys /* <: /* keyof T */ String */](x: Self & (NumberOrderByAggregate[T, Keys])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberOrderByAggregate[?, ?], T, Keys /* <: /* keyof T */ String */] (val x: Self & (NumberOrderByAggregate[T, Keys])) extends AnyVal {
     
     inline def setAvg(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in Keys ]:? hasura.hasura.ScalarOrderBy} */ js.Any

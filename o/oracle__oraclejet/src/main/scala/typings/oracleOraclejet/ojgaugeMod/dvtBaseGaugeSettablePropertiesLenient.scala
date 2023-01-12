@@ -24,7 +24,8 @@ object dvtBaseGaugeSettablePropertiesLenient {
     __obj.asInstanceOf[dvtBaseGaugeSettablePropertiesLenient]
   }
   
-  extension [Self <: dvtBaseGaugeSettablePropertiesLenient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dvtBaseGaugeSettablePropertiesLenient] (val x: Self) extends AnyVal {
     
     inline def setTrackResize(value: on | off): Self = StObject.set(x, "trackResize", value.asInstanceOf[js.Any])
     

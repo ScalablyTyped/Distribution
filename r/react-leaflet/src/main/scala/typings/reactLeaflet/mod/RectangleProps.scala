@@ -27,7 +27,8 @@ object RectangleProps {
     __obj.asInstanceOf[RectangleProps]
   }
   
-  extension [Self <: RectangleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RectangleProps] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

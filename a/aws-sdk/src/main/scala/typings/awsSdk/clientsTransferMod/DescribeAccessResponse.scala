@@ -23,7 +23,8 @@ object DescribeAccessResponse {
     __obj.asInstanceOf[DescribeAccessResponse]
   }
   
-  extension [Self <: DescribeAccessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAccessResponse] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: DescribedAccess): Self = StObject.set(x, "Access", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object TreeViewOptions {
     __obj.asInstanceOf[TreeViewOptions]
   }
   
-  extension [Self <: TreeViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeViewOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Boolean | TreeViewAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

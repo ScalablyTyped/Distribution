@@ -23,7 +23,8 @@ object DeleteVpnGatewayRequest {
     __obj.asInstanceOf[DeleteVpnGatewayRequest]
   }
   
-  extension [Self <: DeleteVpnGatewayRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVpnGatewayRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

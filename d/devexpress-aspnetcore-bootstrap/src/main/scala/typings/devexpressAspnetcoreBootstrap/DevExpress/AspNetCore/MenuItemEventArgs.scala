@@ -17,7 +17,8 @@ object MenuItemEventArgs {
     __obj.asInstanceOf[MenuItemEventArgs]
   }
   
-  extension [Self <: MenuItemEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuItemEventArgs] (val x: Self) extends AnyVal {
     
     inline def setItem(value: BootstrapMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }

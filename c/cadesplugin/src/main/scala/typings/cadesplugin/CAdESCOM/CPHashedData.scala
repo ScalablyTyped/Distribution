@@ -31,7 +31,8 @@ object CPHashedData {
     __obj.asInstanceOf[CPHashedData]
   }
   
-  extension [Self <: CPHashedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CPHashedData] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: ValuesOf[CADESCOM_HASH_ALGORITHM & CAPICOM_HASH_ALGORITHM]): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     

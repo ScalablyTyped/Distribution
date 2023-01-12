@@ -25,7 +25,8 @@ object AnchorNode {
     __obj.asInstanceOf[AnchorNode]
   }
   
-  extension [Self <: AnchorNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnchorNode] (val x: Self) extends AnyVal {
     
     inline def setAnchorNode(value: typings.testingLibraryUserEvent.distTypesDocumentPrepareDocumentMod.global.Node): Self = StObject.set(x, "anchorNode", value.asInstanceOf[js.Any])
     

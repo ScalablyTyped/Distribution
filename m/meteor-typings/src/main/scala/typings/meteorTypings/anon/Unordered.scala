@@ -17,7 +17,8 @@ object Unordered {
     __obj.asInstanceOf[Unordered]
   }
   
-  extension [Self <: Unordered](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Unordered] (val x: Self) extends AnyVal {
     
     inline def setUnordered(value: Boolean): Self = StObject.set(x, "unordered", value.asInstanceOf[js.Any])
     

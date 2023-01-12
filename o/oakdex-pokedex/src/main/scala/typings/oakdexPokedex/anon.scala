@@ -71,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Bug]
     }
     
-    extension [Self <: Bug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bug] (val x: Self) extends AnyVal {
       
       inline def setBug(value: Double): Self = StObject.set(x, "Bug", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object anon {
       __obj.asInstanceOf[Female]
     }
     
-    extension [Self <: Female](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Female] (val x: Self) extends AnyVal {
       
       inline def setFemale(value: Double): Self = StObject.set(x, "female", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object anon {
       __obj.asInstanceOf[Increasedcriticalhitratio]
     }
     
-    extension [Self <: Increasedcriticalhitratio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Increasedcriticalhitratio] (val x: Self) extends AnyVal {
       
       inline def setIncreased_critical_hit_ratio(value: Boolean): Self = StObject.set(x, "increased_critical_hit_ratio", value.asInstanceOf[js.Any])
       
@@ -178,7 +181,8 @@ object anon {
       __obj.asInstanceOf[Jump]
     }
     
-    extension [Self <: Jump](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Jump] (val x: Self) extends AnyVal {
       
       inline def setJump(value: js.Array[Double]): Self = StObject.set(x, "jump", value.asInstanceOf[js.Any])
       

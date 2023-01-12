@@ -106,7 +106,8 @@ object mod {
       __obj.asInstanceOf[Nssm]
     }
     
-    extension [Self <: Nssm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nssm] (val x: Self) extends AnyVal {
       
       inline def setContinue(value: NssmCommandFn): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object mod {
       __obj.asInstanceOf[NssmOptions]
     }
     
-    extension [Self <: NssmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NssmOptions] (val x: Self) extends AnyVal {
       
       inline def setNssmExe(value: String): Self = StObject.set(x, "nssmExe", value.asInstanceOf[js.Any])
       

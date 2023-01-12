@@ -22,7 +22,8 @@ object RemoveValueActionMeta {
     __obj.asInstanceOf[RemoveValueActionMeta[Option]]
   }
   
-  extension [Self <: RemoveValueActionMeta[?], Option](x: Self & RemoveValueActionMeta[Option]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveValueActionMeta[?], Option] (val x: Self & RemoveValueActionMeta[Option]) extends AnyVal {
     
     inline def setAction(value: `remove-value`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

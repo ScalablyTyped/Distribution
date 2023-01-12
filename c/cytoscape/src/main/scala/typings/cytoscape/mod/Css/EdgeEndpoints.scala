@@ -45,7 +45,8 @@ object EdgeEndpoints {
     __obj.asInstanceOf[EdgeEndpoints[SingularType]]
   }
   
-  extension [Self <: EdgeEndpoints[?], SingularType /* <: EdgeSingular */](x: Self & EdgeEndpoints[SingularType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeEndpoints[?], SingularType /* <: EdgeSingular */] (val x: Self & EdgeEndpoints[SingularType]) extends AnyVal {
     
     inline def `setSource-endpoint`(
       value: PropertyValue[

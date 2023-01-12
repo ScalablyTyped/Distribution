@@ -20,7 +20,8 @@ object OutlineColor {
     __obj.asInstanceOf[OutlineColor]
   }
   
-  extension [Self <: OutlineColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlineColor] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Property | typings.cesium.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object XDataPilotTable2 {
     __obj.asInstanceOf[XDataPilotTable2]
   }
   
-  extension [Self <: XDataPilotTable2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataPilotTable2] (val x: Self) extends AnyVal {
     
     inline def setGetDrillDownData(value: CellAddress => SafeArray[SafeArray[Any]]): Self = StObject.set(x, "getDrillDownData", js.Any.fromFunction1(value))
     

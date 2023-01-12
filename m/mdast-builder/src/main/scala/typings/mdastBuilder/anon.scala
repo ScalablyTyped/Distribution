@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Align]
     }
     
-    extension [Self <: Align](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: js.Array[left | right | center | Null]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Alt]
     }
     
-    extension [Self <: Alt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alt] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Node[typings.unist.mod.Data]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -169,7 +172,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: typings.unist.mod.Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

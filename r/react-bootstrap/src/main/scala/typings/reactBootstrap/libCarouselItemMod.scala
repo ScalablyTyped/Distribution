@@ -39,7 +39,8 @@ object libCarouselItemMod {
       __obj.asInstanceOf[CarouselItemProps]
     }
     
-    extension [Self <: CarouselItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselItemProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

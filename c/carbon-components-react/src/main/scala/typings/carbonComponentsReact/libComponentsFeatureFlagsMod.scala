@@ -61,7 +61,8 @@ object libComponentsFeatureFlagsMod {
       __obj.asInstanceOf[FeatureFlagsProps]
     }
     
-    extension [Self <: FeatureFlagsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureFlagsProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object RequestInfo {
     __obj.asInstanceOf[RequestInfo]
   }
   
-  extension [Self <: RequestInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestInfo] (val x: Self) extends AnyVal {
     
     inline def setBinaryStringRequestBody(value: Boolean): Self = StObject.set(x, "binaryStringRequestBody", value.asInstanceOf[js.Any])
     

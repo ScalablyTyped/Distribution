@@ -17,7 +17,8 @@ object TypeofShippingRate {
     __obj.asInstanceOf[TypeofShippingRate]
   }
   
-  extension [Self <: TypeofShippingRate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofShippingRate] (val x: Self) extends AnyVal {
     
     inline def setDeliveryEstimate(value: TypeofDeliveryEstimate): Self = StObject.set(x, "DeliveryEstimate", value.asInstanceOf[js.Any])
     

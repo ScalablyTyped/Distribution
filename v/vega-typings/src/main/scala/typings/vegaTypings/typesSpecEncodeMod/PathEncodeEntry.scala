@@ -24,7 +24,8 @@ object PathEncodeEntry {
     __obj.asInstanceOf[PathEncodeEntry]
   }
   
-  extension [Self <: PathEncodeEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathEncodeEntry] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

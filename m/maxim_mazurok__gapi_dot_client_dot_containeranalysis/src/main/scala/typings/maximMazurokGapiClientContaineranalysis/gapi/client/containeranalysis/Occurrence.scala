@@ -68,7 +68,8 @@ object Occurrence {
     __obj.asInstanceOf[Occurrence]
   }
   
-  extension [Self <: Occurrence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Occurrence] (val x: Self) extends AnyVal {
     
     inline def setAttestation(value: AttestationOccurrence): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object StylesheetStyle {
     __obj.asInstanceOf[StylesheetStyle]
   }
   
-  extension [Self <: StylesheetStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StylesheetStyle] (val x: Self) extends AnyVal {
     
     inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     

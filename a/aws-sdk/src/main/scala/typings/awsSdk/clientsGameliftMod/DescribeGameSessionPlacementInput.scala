@@ -18,7 +18,8 @@ object DescribeGameSessionPlacementInput {
     __obj.asInstanceOf[DescribeGameSessionPlacementInput]
   }
   
-  extension [Self <: DescribeGameSessionPlacementInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeGameSessionPlacementInput] (val x: Self) extends AnyVal {
     
     inline def setPlacementId(value: IdStringModel): Self = StObject.set(x, "PlacementId", value.asInstanceOf[js.Any])
   }

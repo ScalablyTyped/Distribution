@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[InMemoryCacheOptions]
     }
     
-    extension [Self <: InMemoryCacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InMemoryCacheOptions] (val x: Self) extends AnyVal {
       
       inline def setSerializable(value: Boolean): Self = StObject.set(x, "serializable", value.asInstanceOf[js.Any])
       

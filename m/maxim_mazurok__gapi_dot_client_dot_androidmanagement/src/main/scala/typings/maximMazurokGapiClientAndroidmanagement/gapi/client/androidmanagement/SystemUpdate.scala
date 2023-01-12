@@ -35,7 +35,8 @@ object SystemUpdate {
     __obj.asInstanceOf[SystemUpdate]
   }
   
-  extension [Self <: SystemUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemUpdate] (val x: Self) extends AnyVal {
     
     inline def setEndMinutes(value: Double): Self = StObject.set(x, "endMinutes", value.asInstanceOf[js.Any])
     

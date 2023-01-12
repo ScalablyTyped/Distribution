@@ -21,7 +21,8 @@ object EmitModelToViewChange {
     __obj.asInstanceOf[EmitModelToViewChange]
   }
   
-  extension [Self <: EmitModelToViewChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmitModelToViewChange] (val x: Self) extends AnyVal {
     
     inline def setEmitEvent(value: Boolean): Self = StObject.set(x, "emitEvent", value.asInstanceOf[js.Any])
     

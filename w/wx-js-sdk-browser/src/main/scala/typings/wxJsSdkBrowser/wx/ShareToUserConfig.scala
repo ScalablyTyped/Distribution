@@ -41,7 +41,8 @@ object ShareToUserConfig {
     __obj.asInstanceOf[ShareToUserConfig]
   }
   
-  extension [Self <: ShareToUserConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareToUserConfig] (val x: Self) extends AnyVal {
     
     inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     

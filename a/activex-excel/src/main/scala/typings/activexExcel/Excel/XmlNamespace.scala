@@ -37,7 +37,8 @@ object XmlNamespace {
     __obj.asInstanceOf[XmlNamespace]
   }
   
-  extension [Self <: XmlNamespace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XmlNamespace] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

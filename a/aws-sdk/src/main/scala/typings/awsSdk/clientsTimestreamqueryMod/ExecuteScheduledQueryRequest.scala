@@ -28,7 +28,8 @@ object ExecuteScheduledQueryRequest {
     __obj.asInstanceOf[ExecuteScheduledQueryRequest]
   }
   
-  extension [Self <: ExecuteScheduledQueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteScheduledQueryRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

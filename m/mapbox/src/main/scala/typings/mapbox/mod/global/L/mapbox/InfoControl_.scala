@@ -28,7 +28,8 @@ object InfoControl_ {
     __obj.asInstanceOf[InfoControl_]
   }
   
-  extension [Self <: InfoControl_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfoControl_] (val x: Self) extends AnyVal {
     
     inline def setAddInfo(value: String => Any): Self = StObject.set(x, "addInfo", js.Any.fromFunction1(value))
     

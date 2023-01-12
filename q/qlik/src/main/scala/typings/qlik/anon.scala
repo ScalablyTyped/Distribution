@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setItems(value: StringDictionary[CustomProperty]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Uses): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object anon {
       __obj.asInstanceOf[GetContent]
     }
     
-    extension [Self <: GetContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetContent] (val x: Self) extends AnyVal {
       
       inline def setGetContent(value: (String, js.Function2[/* value */ Variable, GetContent, Unit]) => js.Promise[Any]): Self = StObject.set(x, "getContent", js.Any.fromFunction2(value))
       
@@ -123,7 +126,8 @@ object anon {
       __obj.asInstanceOf[Items]
     }
     
-    extension [Self <: Items](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
       
       inline def setItems(value: StringDictionary[CustomProperty]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -158,7 +162,8 @@ object anon {
       __obj.asInstanceOf[ItemsUses]
     }
     
-    extension [Self <: ItemsUses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemsUses] (val x: Self) extends AnyVal {
       
       inline def setItems(value: StringDictionary[CustomProperty]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -187,7 +192,8 @@ object anon {
       __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: Max](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
       
       inline def setItems(value: StringDictionary[CustomProperty]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -222,7 +228,8 @@ object anon {
       __obj.asInstanceOf[NoInteraction]
     }
     
-    extension [Self <: NoInteraction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoInteraction] (val x: Self) extends AnyVal {
       
       inline def setNoInteraction(value: Boolean): Self = StObject.set(x, "noInteraction", value.asInstanceOf[js.Any])
       
@@ -247,7 +254,8 @@ object anon {
       __obj.asInstanceOf[QIsNum]
     }
     
-    extension [Self <: QIsNum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QIsNum] (val x: Self) extends AnyVal {
       
       inline def setQIsNum(value: Boolean): Self = StObject.set(x, "qIsNum", value.asInstanceOf[js.Any])
       
@@ -266,7 +274,8 @@ object anon {
       __obj.asInstanceOf[Uses]
     }
     
-    extension [Self <: Uses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Uses] (val x: Self) extends AnyVal {
       
       inline def setUses(value: data): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
     }

@@ -25,7 +25,8 @@ object SwitchWidget {
     __obj.asInstanceOf[SwitchWidget]
   }
   
-  extension [Self <: SwitchWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchWidget] (val x: Self) extends AnyVal {
     
     inline def setControlType(value: String): Self = StObject.set(x, "controlType", value.asInstanceOf[js.Any])
     

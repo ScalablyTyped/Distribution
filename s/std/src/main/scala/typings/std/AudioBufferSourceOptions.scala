@@ -31,7 +31,8 @@ object AudioBufferSourceOptions {
     __obj.asInstanceOf[AudioBufferSourceOptions]
   }
   
-  extension [Self <: AudioBufferSourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioBufferSourceOptions] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: AudioBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

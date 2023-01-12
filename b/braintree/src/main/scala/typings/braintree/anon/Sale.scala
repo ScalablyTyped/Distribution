@@ -27,7 +27,8 @@ object Sale {
     __obj.asInstanceOf[Sale]
   }
   
-  extension [Self <: Sale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sale] (val x: Self) extends AnyVal {
     
     inline def setAll(
       value: () => js.Array[

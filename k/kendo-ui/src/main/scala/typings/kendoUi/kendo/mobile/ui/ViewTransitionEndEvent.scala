@@ -17,7 +17,8 @@ object ViewTransitionEndEvent {
     __obj.asInstanceOf[ViewTransitionEndEvent]
   }
   
-  extension [Self <: ViewTransitionEndEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewTransitionEndEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

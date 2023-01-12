@@ -16,7 +16,8 @@ object WorkingDir {
     __obj.asInstanceOf[WorkingDir]
   }
   
-  extension [Self <: WorkingDir](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkingDir] (val x: Self) extends AnyVal {
     
     inline def setWorkingDir(value: Path): Self = StObject.set(x, "workingDir", value.asInstanceOf[js.Any])
   }

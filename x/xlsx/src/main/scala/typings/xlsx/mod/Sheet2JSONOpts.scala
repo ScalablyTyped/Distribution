@@ -37,7 +37,8 @@ object Sheet2JSONOpts {
     __obj.asInstanceOf[Sheet2JSONOpts]
   }
   
-  extension [Self <: Sheet2JSONOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sheet2JSONOpts] (val x: Self) extends AnyVal {
     
     inline def setBlankrows(value: Boolean): Self = StObject.set(x, "blankrows", value.asInstanceOf[js.Any])
     

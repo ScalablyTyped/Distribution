@@ -18,7 +18,8 @@ object GetCaseEventConfigurationResponse {
     __obj.asInstanceOf[GetCaseEventConfigurationResponse]
   }
   
-  extension [Self <: GetCaseEventConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCaseEventConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setEventBridge(value: EventBridgeConfiguration): Self = StObject.set(x, "eventBridge", value.asInstanceOf[js.Any])
   }

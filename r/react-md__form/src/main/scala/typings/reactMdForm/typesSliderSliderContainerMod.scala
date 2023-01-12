@@ -682,7 +682,8 @@ object typesSliderSliderContainerMod {
       __obj.asInstanceOf[SliderContainerProps]
     }
     
-    extension [Self <: SliderContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderContainerProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[Face]
     }
     
-    extension [Self <: Face](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Face] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[FaceVertex]
     }
     
-    extension [Self <: FaceVertex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaceVertex] (val x: Self) extends AnyVal {
       
       inline def setTextureCoordsIndex(value: Double): Self = StObject.set(x, "textureCoordsIndex", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object mod {
       __obj.asInstanceOf[ObjFile]
     }
     
-    extension [Self <: ObjFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjFile] (val x: Self) extends AnyVal {
       
       inline def setMaterialLibraries(value: js.Array[Any]): Self = StObject.set(x, "materialLibraries", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object mod {
       __obj.asInstanceOf[ObjFileParser]
     }
     
-    extension [Self <: ObjFileParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjFileParser] (val x: Self) extends AnyVal {
       
       inline def setParse(value: () => ObjFile): Self = StObject.set(x, "parse", js.Any.fromFunction0(value))
     }
@@ -143,7 +147,8 @@ object mod {
       __obj.asInstanceOf[ObjModel]
     }
     
-    extension [Self <: ObjModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjModel] (val x: Self) extends AnyVal {
       
       inline def setFaces(value: js.Array[Face]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
       
@@ -180,7 +185,8 @@ object mod {
       __obj.asInstanceOf[Vertex]
     }
     
-    extension [Self <: Vertex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vertex] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -205,7 +211,8 @@ object mod {
       __obj.asInstanceOf[VertexTexture]
     }
     
-    extension [Self <: VertexTexture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VertexTexture] (val x: Self) extends AnyVal {
       
       inline def setU(value: Double): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
       

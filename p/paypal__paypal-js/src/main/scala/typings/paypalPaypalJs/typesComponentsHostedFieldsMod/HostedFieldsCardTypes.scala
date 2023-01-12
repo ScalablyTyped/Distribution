@@ -36,7 +36,8 @@ object HostedFieldsCardTypes {
     __obj.asInstanceOf[HostedFieldsCardTypes]
   }
   
-  extension [Self <: HostedFieldsCardTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostedFieldsCardTypes] (val x: Self) extends AnyVal {
     
     inline def setAmex(value: HostedFieldsCardTypeData): Self = StObject.set(x, "amex", value.asInstanceOf[js.Any])
     

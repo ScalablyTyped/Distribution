@@ -24,7 +24,8 @@ object KeyValuePatternProperty {
     __obj.asInstanceOf[KeyValuePatternProperty]
   }
   
-  extension [Self <: KeyValuePatternProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyValuePatternProperty] (val x: Self) extends AnyVal {
     
     inline def setKey(value: PropertyName): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

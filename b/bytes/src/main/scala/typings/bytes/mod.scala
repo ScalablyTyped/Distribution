@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[BytesOptions]
     }
     
-    extension [Self <: BytesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BytesOptions] (val x: Self) extends AnyVal {
       
       inline def setDecimalPlaces(value: Double): Self = StObject.set(x, "decimalPlaces", value.asInstanceOf[js.Any])
       

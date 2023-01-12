@@ -33,7 +33,8 @@ object MultiplexSettings {
     __obj.asInstanceOf[MultiplexSettings]
   }
   
-  extension [Self <: MultiplexSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiplexSettings] (val x: Self) extends AnyVal {
     
     inline def setMaximumVideoBufferDelayMilliseconds(value: integerMin800Max3000): Self = StObject.set(x, "MaximumVideoBufferDelayMilliseconds", value.asInstanceOf[js.Any])
     

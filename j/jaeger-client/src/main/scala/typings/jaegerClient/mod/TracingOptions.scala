@@ -25,7 +25,8 @@ object TracingOptions {
     __obj.asInstanceOf[TracingOptions]
   }
   
-  extension [Self <: TracingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TracingOptions] (val x: Self) extends AnyVal {
     
     inline def setContextKey(value: String): Self = StObject.set(x, "contextKey", value.asInstanceOf[js.Any])
     

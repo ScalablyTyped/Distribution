@@ -15,7 +15,8 @@ object XRSubImage {
     __obj.asInstanceOf[XRSubImage]
   }
   
-  extension [Self <: XRSubImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRSubImage] (val x: Self) extends AnyVal {
     
     inline def setViewport(value: XRViewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }

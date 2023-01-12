@@ -97,7 +97,8 @@ object Format {
       __obj.asInstanceOf[OpenSshSignature]
     }
     
-    extension [Self <: OpenSshSignature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenSshSignature] (val x: Self) extends AnyVal {
       
       inline def setExts(value: js.Array[OpenSshSignatureExt]): Self = StObject.set(x, "exts", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object Format {
       __obj.asInstanceOf[OpenSshSignatureExt]
     }
     
-    extension [Self <: OpenSshSignatureExt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenSshSignatureExt] (val x: Self) extends AnyVal {
       
       inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
       
@@ -196,7 +198,8 @@ object Format {
       __obj.asInstanceOf[ReadOptions]
     }
     
-    extension [Self <: ReadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadOptions] (val x: Self) extends AnyVal {
       
       inline def setCipher(value: SshPrivateCipher): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
       
@@ -336,7 +339,8 @@ object Format {
       __obj.asInstanceOf[WriteOptions]
     }
     
-    extension [Self <: WriteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteOptions] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -458,7 +462,8 @@ object Format {
       __obj.asInstanceOf[x509Signature]
     }
     
-    extension [Self <: x509Signature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: x509Signature] (val x: Self) extends AnyVal {
       
       inline def setAlgo(value: x509SignAlgorithm): Self = StObject.set(x, "algo", value.asInstanceOf[js.Any])
       
@@ -489,7 +494,8 @@ object Format {
       __obj.asInstanceOf[x509SignatureExt]
     }
     
-    extension [Self <: x509SignatureExt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: x509SignatureExt] (val x: Self) extends AnyVal {
       
       inline def setBits(value: String): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
       

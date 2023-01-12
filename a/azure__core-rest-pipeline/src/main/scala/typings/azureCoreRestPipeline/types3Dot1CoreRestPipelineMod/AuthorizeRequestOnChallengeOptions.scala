@@ -46,7 +46,8 @@ object AuthorizeRequestOnChallengeOptions {
     __obj.asInstanceOf[AuthorizeRequestOnChallengeOptions]
   }
   
-  extension [Self <: AuthorizeRequestOnChallengeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeRequestOnChallengeOptions] (val x: Self) extends AnyVal {
     
     inline def setGetAccessToken(value: (js.Array[String], GetTokenOptions) => js.Promise[AccessToken | Null]): Self = StObject.set(x, "getAccessToken", js.Any.fromFunction2(value))
     

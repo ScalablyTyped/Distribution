@@ -49,7 +49,8 @@ object TableFilteredEventArgs {
     __obj.asInstanceOf[TableFilteredEventArgs]
   }
   
-  extension [Self <: TableFilteredEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableFilteredEventArgs] (val x: Self) extends AnyVal {
     
     inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     

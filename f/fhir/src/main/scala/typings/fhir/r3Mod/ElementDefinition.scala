@@ -939,7 +939,8 @@ object ElementDefinition {
     __obj.asInstanceOf[ElementDefinition]
   }
   
-  extension [Self <: ElementDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementDefinition] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

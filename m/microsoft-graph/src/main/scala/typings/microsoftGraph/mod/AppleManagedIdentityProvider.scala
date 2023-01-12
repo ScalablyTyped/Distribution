@@ -27,7 +27,8 @@ object AppleManagedIdentityProvider {
     __obj.asInstanceOf[AppleManagedIdentityProvider]
   }
   
-  extension [Self <: AppleManagedIdentityProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppleManagedIdentityProvider] (val x: Self) extends AnyVal {
     
     inline def setCertificateData(value: NullableOption[String]): Self = StObject.set(x, "certificateData", value.asInstanceOf[js.Any])
     

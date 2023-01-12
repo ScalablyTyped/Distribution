@@ -134,7 +134,8 @@ object mod {
       __obj.asInstanceOf[CssOption]
     }
     
-    extension [Self <: CssOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssOption] (val x: Self) extends AnyVal {
       
       inline def setAsFileName(value: Boolean): Self = StObject.set(x, "asFileName", value.asInstanceOf[js.Any])
       
@@ -200,7 +201,8 @@ object mod {
       __obj.asInstanceOf[FontInfo]
     }
     
-    extension [Self <: FontInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontInfo] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -252,7 +254,8 @@ object mod {
       __obj.asInstanceOf[GlyphOption]
     }
     
-    extension [Self <: GlyphOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlyphOption] (val x: Self) extends AnyVal {
       
       inline def setBasicText(value: Boolean): Self = StObject.set(x, "basicText", value.asInstanceOf[js.Any])
       
@@ -284,7 +287,8 @@ object mod {
       __obj.asInstanceOf[PluginCloneOption]
     }
     
-    extension [Self <: PluginCloneOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginCloneOption] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       
@@ -309,7 +313,8 @@ object mod {
       __obj.asInstanceOf[PluginFromSVGOption]
     }
     
-    extension [Self <: PluginFromSVGOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginFromSVGOption] (val x: Self) extends AnyVal {
       
       inline def setAdjust(value: AjdustToEmBox): Self = StObject.set(x, "adjust", value.asInstanceOf[js.Any])
       
@@ -336,7 +341,8 @@ object mod {
       __obj.asInstanceOf[PluginHintOption]
     }
     
-    extension [Self <: PluginHintOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginHintOption] (val x: Self) extends AnyVal {
       
       inline def setHinting(value: Boolean): Self = StObject.set(x, "hinting", value.asInstanceOf[js.Any])
       

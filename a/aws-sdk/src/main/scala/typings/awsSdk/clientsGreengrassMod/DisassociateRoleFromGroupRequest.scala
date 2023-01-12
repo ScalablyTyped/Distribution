@@ -18,7 +18,8 @@ object DisassociateRoleFromGroupRequest {
     __obj.asInstanceOf[DisassociateRoleFromGroupRequest]
   }
   
-  extension [Self <: DisassociateRoleFromGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateRoleFromGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object DatasetSource {
     __obj.asInstanceOf[DatasetSource]
   }
   
-  extension [Self <: DatasetSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetSource] (val x: Self) extends AnyVal {
     
     inline def setGroundTruthManifest(value: DatasetGroundTruthManifest): Self = StObject.set(x, "GroundTruthManifest", value.asInstanceOf[js.Any])
     

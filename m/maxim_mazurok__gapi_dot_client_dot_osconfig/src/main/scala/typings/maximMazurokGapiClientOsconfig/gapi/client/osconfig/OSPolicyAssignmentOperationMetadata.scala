@@ -28,7 +28,8 @@ object OSPolicyAssignmentOperationMetadata {
     __obj.asInstanceOf[OSPolicyAssignmentOperationMetadata]
   }
   
-  extension [Self <: OSPolicyAssignmentOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyAssignmentOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setApiMethod(value: String): Self = StObject.set(x, "apiMethod", value.asInstanceOf[js.Any])
     

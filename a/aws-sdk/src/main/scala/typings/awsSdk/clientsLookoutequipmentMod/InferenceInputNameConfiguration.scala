@@ -23,7 +23,8 @@ object InferenceInputNameConfiguration {
     __obj.asInstanceOf[InferenceInputNameConfiguration]
   }
   
-  extension [Self <: InferenceInputNameConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceInputNameConfiguration] (val x: Self) extends AnyVal {
     
     inline def setComponentTimestampDelimiter(value: ComponentTimestampDelimiter): Self = StObject.set(x, "ComponentTimestampDelimiter", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object CatShardsRequest {
     __obj.asInstanceOf[CatShardsRequest]
   }
   
-  extension [Self <: CatShardsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatShardsRequest] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: Bytes): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

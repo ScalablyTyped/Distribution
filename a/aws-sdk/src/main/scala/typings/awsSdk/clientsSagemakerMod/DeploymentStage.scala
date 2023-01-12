@@ -28,7 +28,8 @@ object DeploymentStage {
     __obj.asInstanceOf[DeploymentStage]
   }
   
-  extension [Self <: DeploymentStage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentStage] (val x: Self) extends AnyVal {
     
     inline def setDeploymentConfig(value: EdgeDeploymentConfig): Self = StObject.set(x, "DeploymentConfig", value.asInstanceOf[js.Any])
     

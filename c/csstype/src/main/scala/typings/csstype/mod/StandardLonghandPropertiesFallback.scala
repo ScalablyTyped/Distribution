@@ -1265,7 +1265,8 @@ object StandardLonghandPropertiesFallback {
     __obj.asInstanceOf[StandardLonghandPropertiesFallback[TLength, TTime]]
   }
   
-  extension [Self <: StandardLonghandPropertiesFallback[?, ?], TLength, TTime](x: Self & (StandardLonghandPropertiesFallback[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardLonghandPropertiesFallback[?, ?], TLength, TTime] (val x: Self & (StandardLonghandPropertiesFallback[TLength, TTime])) extends AnyVal {
     
     inline def setAccentColor(value: AccentColor | js.Array[NonNullable[js.UndefOr[AccentColor]]]): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     

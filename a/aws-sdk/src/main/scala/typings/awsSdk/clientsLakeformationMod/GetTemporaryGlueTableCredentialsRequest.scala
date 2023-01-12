@@ -38,7 +38,8 @@ object GetTemporaryGlueTableCredentialsRequest {
     __obj.asInstanceOf[GetTemporaryGlueTableCredentialsRequest]
   }
   
-  extension [Self <: GetTemporaryGlueTableCredentialsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTemporaryGlueTableCredentialsRequest] (val x: Self) extends AnyVal {
     
     inline def setAuditContext(value: AuditContext): Self = StObject.set(x, "AuditContext", value.asInstanceOf[js.Any])
     

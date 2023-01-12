@@ -62,7 +62,8 @@ object WeakValidationMapSwitchPr {
     __obj.asInstanceOf[WeakValidationMapSwitchPr]
   }
   
-  extension [Self <: WeakValidationMapSwitchPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapSwitchPr] (val x: Self) extends AnyVal {
     
     inline def setChecked(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any

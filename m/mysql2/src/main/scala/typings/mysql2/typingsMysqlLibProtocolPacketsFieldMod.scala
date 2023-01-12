@@ -45,7 +45,8 @@ object typingsMysqlLibProtocolPacketsFieldMod {
       __obj.asInstanceOf[Field]
     }
     
-    extension [Self <: Field](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: js.Function): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

@@ -83,7 +83,8 @@ object mod {
       __obj.asInstanceOf[ComponentDefinitions]
     }
     
-    extension [Self <: ComponentDefinitions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentDefinitions] (val x: Self) extends AnyVal {
       
       inline def setCompute(value: StringDictionary[Any] => StringDictionary[Any]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
       
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[ComponentLifecycles]
     }
     
-    extension [Self <: ComponentLifecycles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentLifecycles] (val x: Self) extends AnyVal {
       
       inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
       
@@ -173,7 +175,8 @@ object mod {
       __obj.asInstanceOf[PageEvents]
     }
     
-    extension [Self <: PageEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageEvents] (val x: Self) extends AnyVal {
       
       inline def setOnPageScroll(value: Page => Unit): Self = StObject.set(x, "onPageScroll", js.Any.fromFunction1(value))
       

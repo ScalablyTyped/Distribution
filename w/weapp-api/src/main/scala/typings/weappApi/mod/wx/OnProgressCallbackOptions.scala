@@ -23,7 +23,8 @@ object OnProgressCallbackOptions {
     __obj.asInstanceOf[OnProgressCallbackOptions]
   }
   
-  extension [Self <: OnProgressCallbackOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnProgressCallbackOptions] (val x: Self) extends AnyVal {
     
     inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Item {
     __obj.asInstanceOf[Item]
   }
   
-  extension [Self <: Item](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
     
     inline def setEvent(
       value: (typings.react.mod.SyntheticEvent[HTMLInputElement, typings.std.Event]) | KeyboardEvent[HTMLInputElement]

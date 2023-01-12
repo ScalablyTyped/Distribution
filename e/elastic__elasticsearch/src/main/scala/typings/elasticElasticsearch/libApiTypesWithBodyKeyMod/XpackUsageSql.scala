@@ -25,7 +25,8 @@ object XpackUsageSql {
     __obj.asInstanceOf[XpackUsageSql]
   }
   
-  extension [Self <: XpackUsageSql](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageSql] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: Record[String, integer]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     

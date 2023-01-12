@@ -33,7 +33,8 @@ object GetCelebrityRecognitionRequest {
     __obj.asInstanceOf[GetCelebrityRecognitionRequest]
   }
   
-  extension [Self <: GetCelebrityRecognitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCelebrityRecognitionRequest] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

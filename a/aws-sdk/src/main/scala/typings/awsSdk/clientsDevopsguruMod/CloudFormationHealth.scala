@@ -28,7 +28,8 @@ object CloudFormationHealth {
     __obj.asInstanceOf[CloudFormationHealth]
   }
   
-  extension [Self <: CloudFormationHealth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudFormationHealth] (val x: Self) extends AnyVal {
     
     inline def setAnalyzedResourceCount(value: AnalyzedResourceCount): Self = StObject.set(x, "AnalyzedResourceCount", value.asInstanceOf[js.Any])
     

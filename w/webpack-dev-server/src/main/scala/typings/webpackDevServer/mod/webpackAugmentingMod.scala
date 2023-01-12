@@ -22,7 +22,8 @@ object webpackAugmentingMod {
       __obj.asInstanceOf[typings.webpackDevServer.mod.webpackAugmentingMod.Configuration]
     }
     
-    extension [Self <: typings.webpackDevServer.mod.webpackAugmentingMod.Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.webpackDevServer.mod.webpackAugmentingMod.Configuration] (val x: Self) extends AnyVal {
       
       inline def setDevServer(value: DevServerConfiguration): Self = StObject.set(x, "devServer", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object `31` {
     __obj.asInstanceOf[`31`]
   }
   
-  extension [Self <: `31`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `31`] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: PropsOf[FC[BoxExtendedProps]]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

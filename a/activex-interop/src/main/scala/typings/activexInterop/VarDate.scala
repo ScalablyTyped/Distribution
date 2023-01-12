@@ -16,7 +16,8 @@ object VarDate {
     __obj.asInstanceOf[VarDate]
   }
   
-  extension [Self <: VarDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VarDate] (val x: Self) extends AnyVal {
     
     inline def setVarDate_typekey(value: VarDate): Self = StObject.set(x, "VarDate_typekey", value.asInstanceOf[js.Any])
   }

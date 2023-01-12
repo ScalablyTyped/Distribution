@@ -243,7 +243,8 @@ object RadialBarProps {
     __obj.asInstanceOf[RadialBarProps]
   }
   
-  extension [Self <: RadialBarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialBarProps] (val x: Self) extends AnyVal {
     
     inline def setActiveShape(value: js.Object | ContentRenderer[Any] | ReactElement): Self = StObject.set(x, "activeShape", value.asInstanceOf[js.Any])
     

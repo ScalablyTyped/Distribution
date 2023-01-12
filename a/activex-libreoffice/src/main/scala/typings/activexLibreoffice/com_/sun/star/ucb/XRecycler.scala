@@ -34,7 +34,8 @@ object XRecycler {
     __obj.asInstanceOf[XRecycler]
   }
   
-  extension [Self <: XRecycler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRecycler] (val x: Self) extends AnyVal {
     
     inline def setTrashContent(value: (XCommandProcessor, XContentIdentifier) => Unit): Self = StObject.set(x, "trashContent", js.Any.fromFunction2(value))
   }

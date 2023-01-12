@@ -15,7 +15,8 @@ object CanPullDown {
     __obj.asInstanceOf[CanPullDown]
   }
   
-  extension [Self <: CanPullDown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanPullDown] (val x: Self) extends AnyVal {
     
     inline def setCanPullDown(value: Boolean): Self = StObject.set(x, "canPullDown", value.asInstanceOf[js.Any])
   }

@@ -71,7 +71,8 @@ object WindowProps {
     __obj.asInstanceOf[WindowProps]
   }
   
-  extension [Self <: WindowProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowProps] (val x: Self) extends AnyVal {
     
     inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     

@@ -376,7 +376,8 @@ object libComponentsFocusZoneFocusZoneDottypesMod {
       __obj.asInstanceOf[IFocusZoneProps]
     }
     
-    extension [Self <: IFocusZoneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFocusZoneProps] (val x: Self) extends AnyVal {
       
       inline def setAllowFocusRoot(value: Boolean): Self = StObject.set(x, "allowFocusRoot", value.asInstanceOf[js.Any])
       

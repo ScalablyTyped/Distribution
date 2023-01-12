@@ -19,7 +19,8 @@ object GoogleAnalyticsAdminV1alphaListAccountsResponse {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaListAccountsResponse]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaListAccountsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaListAccountsResponse] (val x: Self) extends AnyVal {
     
     inline def setAccounts(value: js.Array[GoogleAnalyticsAdminV1alphaAccount]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     

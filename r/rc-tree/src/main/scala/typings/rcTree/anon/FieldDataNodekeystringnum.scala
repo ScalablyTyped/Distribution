@@ -46,7 +46,8 @@ object FieldDataNodekeystringnum {
     __obj.asInstanceOf[FieldDataNodekeystringnum]
   }
   
-  extension [Self <: FieldDataNodekeystringnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldDataNodekeystringnum] (val x: Self) extends AnyVal {
     
     inline def setCheckable(value: Boolean): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
     

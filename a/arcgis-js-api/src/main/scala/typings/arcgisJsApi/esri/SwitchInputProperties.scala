@@ -27,7 +27,8 @@ object SwitchInputProperties {
     __obj.asInstanceOf[SwitchInputProperties]
   }
   
-  extension [Self <: SwitchInputProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchInputProperties] (val x: Self) extends AnyVal {
     
     inline def setOffValue(value: String | Double): Self = StObject.set(x, "offValue", value.asInstanceOf[js.Any])
     

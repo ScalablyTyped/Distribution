@@ -17,7 +17,8 @@ object MlNlpTokenizationUpdateOptions {
     __obj.asInstanceOf[MlNlpTokenizationUpdateOptions]
   }
   
-  extension [Self <: MlNlpTokenizationUpdateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlNlpTokenizationUpdateOptions] (val x: Self) extends AnyVal {
     
     inline def setSpan(value: integer): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     

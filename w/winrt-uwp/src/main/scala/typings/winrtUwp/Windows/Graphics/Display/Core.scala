@@ -158,7 +158,8 @@ object Core {
       __obj.asInstanceOf[HdmiDisplayHdr2086Metadata]
     }
     
-    extension [Self <: HdmiDisplayHdr2086Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HdmiDisplayHdr2086Metadata] (val x: Self) extends AnyVal {
       
       inline def setBluePrimaryX(value: Double): Self = StObject.set(x, "bluePrimaryX", value.asInstanceOf[js.Any])
       
@@ -268,7 +269,8 @@ object Core {
       __obj.asInstanceOf[HdmiDisplayMode]
     }
     
-    extension [Self <: HdmiDisplayMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HdmiDisplayMode] (val x: Self) extends AnyVal {
       
       inline def setBitsPerPixel(value: Double): Self = StObject.set(x, "bitsPerPixel", value.asInstanceOf[js.Any])
       

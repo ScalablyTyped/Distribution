@@ -28,7 +28,8 @@ object ListExtensibleSourceServersRequest {
     __obj.asInstanceOf[ListExtensibleSourceServersRequest]
   }
   
-  extension [Self <: ListExtensibleSourceServersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListExtensibleSourceServersRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResultsReplicatingSourceServers): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

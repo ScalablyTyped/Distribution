@@ -26,7 +26,8 @@ object InvitedUserMessageInfo {
     __obj.asInstanceOf[InvitedUserMessageInfo]
   }
   
-  extension [Self <: InvitedUserMessageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvitedUserMessageInfo] (val x: Self) extends AnyVal {
     
     inline def setCcRecipients(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "ccRecipients", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object ReportData {
     __obj.asInstanceOf[ReportData]
   }
   
-  extension [Self <: ReportData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportData] (val x: Self) extends AnyVal {
     
     inline def setDataLastRefreshed(value: String): Self = StObject.set(x, "dataLastRefreshed", value.asInstanceOf[js.Any])
     

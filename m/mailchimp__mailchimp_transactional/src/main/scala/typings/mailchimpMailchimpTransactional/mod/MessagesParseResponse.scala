@@ -48,7 +48,8 @@ object MessagesParseResponse {
     __obj.asInstanceOf[MessagesParseResponse]
   }
   
-  extension [Self <: MessagesParseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagesParseResponse] (val x: Self) extends AnyVal {
     
     inline def setAttachments(value: js.Array[MessageAttachmentParsed]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object GoogleAppsCardV1Button {
     __obj.asInstanceOf[GoogleAppsCardV1Button]
   }
   
-  extension [Self <: GoogleAppsCardV1Button](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCardV1Button] (val x: Self) extends AnyVal {
     
     inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object Outliercolor {
     __obj.asInstanceOf[Outliercolor]
   }
   
-  extension [Self <: Outliercolor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Outliercolor] (val x: Self) extends AnyVal {
     
     inline def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -80,7 +80,8 @@ object libOpendialogMod {
         __obj.asInstanceOf[IDirectoryOptions]
       }
       
-      extension [Self <: IDirectoryOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDirectoryOptions] (val x: Self) extends AnyVal {
         
         inline def setCheckbox(value: PartialICheckbox): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
         
@@ -135,7 +136,8 @@ object libOpendialogMod {
         __obj.asInstanceOf[IFileOptions]
       }
       
-      extension [Self <: IFileOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IFileOptions] (val x: Self) extends AnyVal {
         
         inline def setFilter(value: /* value */ IModel => Boolean | PartialIScore | Null): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
         

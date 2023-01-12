@@ -45,7 +45,8 @@ object IExtJSCore {
     __obj.asInstanceOf[IExtJSCore]
   }
   
-  extension [Self <: IExtJSCore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExtJSCore] (val x: Self) extends AnyVal {
     
     inline def setClickCQ(value: (String, Any, js.Function) => Any): Self = StObject.set(x, "clickCQ", js.Any.fromFunction3(value))
     

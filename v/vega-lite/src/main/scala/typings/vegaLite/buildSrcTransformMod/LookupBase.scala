@@ -25,7 +25,8 @@ object LookupBase {
     __obj.asInstanceOf[LookupBase]
   }
   
-  extension [Self <: LookupBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupBase] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[FieldName]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

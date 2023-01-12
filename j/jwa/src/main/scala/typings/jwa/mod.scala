@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[JWA]
     }
     
-    extension [Self <: JWA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JWA] (val x: Self) extends AnyVal {
       
       inline def setSign(value: (String, String) => String): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
       

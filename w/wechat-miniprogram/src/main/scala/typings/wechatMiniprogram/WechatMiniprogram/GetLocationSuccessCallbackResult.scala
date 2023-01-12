@@ -51,7 +51,8 @@ object GetLocationSuccessCallbackResult {
     __obj.asInstanceOf[GetLocationSuccessCallbackResult]
   }
   
-  extension [Self <: GetLocationSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLocationSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

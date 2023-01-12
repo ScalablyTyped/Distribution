@@ -18,7 +18,8 @@ object DescribeNFSFileSharesOutput {
     __obj.asInstanceOf[DescribeNFSFileSharesOutput]
   }
   
-  extension [Self <: DescribeNFSFileSharesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNFSFileSharesOutput] (val x: Self) extends AnyVal {
     
     inline def setNFSFileShareInfoList(value: NFSFileShareInfoList): Self = StObject.set(x, "NFSFileShareInfoList", value.asInstanceOf[js.Any])
     

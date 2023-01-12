@@ -23,7 +23,8 @@ object ProductionVariantServerlessConfig {
     __obj.asInstanceOf[ProductionVariantServerlessConfig]
   }
   
-  extension [Self <: ProductionVariantServerlessConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductionVariantServerlessConfig] (val x: Self) extends AnyVal {
     
     inline def setMaxConcurrency(value: ServerlessMaxConcurrency): Self = StObject.set(x, "MaxConcurrency", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object EndnoteOptions {
     __obj.asInstanceOf[EndnoteOptions]
   }
   
-  extension [Self <: EndnoteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndnoteOptions] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

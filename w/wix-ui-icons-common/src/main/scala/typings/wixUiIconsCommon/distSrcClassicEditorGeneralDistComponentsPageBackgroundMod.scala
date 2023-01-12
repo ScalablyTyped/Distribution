@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsPageBackgroundMod extends Shortc
       __obj.asInstanceOf[PageBackgroundProps]
     }
     
-    extension [Self <: PageBackgroundProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageBackgroundProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object NavigationSwitchRouterConfig {
     __obj.asInstanceOf[NavigationSwitchRouterConfig]
   }
   
-  extension [Self <: NavigationSwitchRouterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationSwitchRouterConfig] (val x: Self) extends AnyVal {
     
     inline def setBackBehavior(value: none | initialRoute | history | order): Self = StObject.set(x, "backBehavior", value.asInstanceOf[js.Any])
     

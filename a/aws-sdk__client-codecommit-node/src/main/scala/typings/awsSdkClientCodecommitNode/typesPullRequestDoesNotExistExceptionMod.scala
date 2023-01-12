@@ -35,7 +35,8 @@ object typesPullRequestDoesNotExistExceptionMod {
       __obj.asInstanceOf[PullRequestDoesNotExistException]
     }
     
-    extension [Self <: PullRequestDoesNotExistException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PullRequestDoesNotExistException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestDoesNotExistException

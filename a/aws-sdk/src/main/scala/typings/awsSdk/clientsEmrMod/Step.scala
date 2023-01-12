@@ -43,7 +43,8 @@ object Step {
     __obj.asInstanceOf[Step]
   }
   
-  extension [Self <: Step](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
     
     inline def setActionOnFailure(value: ActionOnFailure): Self = StObject.set(x, "ActionOnFailure", value.asInstanceOf[js.Any])
     

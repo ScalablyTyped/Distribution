@@ -65,7 +65,8 @@ object PanResponderCallbacks {
     __obj.asInstanceOf[PanResponderCallbacks]
   }
   
-  extension [Self <: PanResponderCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanResponderCallbacks] (val x: Self) extends AnyVal {
     
     inline def setOnMoveShouldSetPanResponder(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Boolean): Self = StObject.set(x, "onMoveShouldSetPanResponder", js.Any.fromFunction2(value))
     

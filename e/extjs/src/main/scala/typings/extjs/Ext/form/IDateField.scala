@@ -96,7 +96,8 @@ object IDateField {
     __obj.asInstanceOf[IDateField]
   }
   
-  extension [Self <: IDateField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDateField] (val x: Self) extends AnyVal {
     
     inline def setAltFormats(value: String): Self = StObject.set(x, "altFormats", value.asInstanceOf[js.Any])
     

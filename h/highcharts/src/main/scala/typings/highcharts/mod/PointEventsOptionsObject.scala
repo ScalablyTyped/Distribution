@@ -105,7 +105,8 @@ object PointEventsOptionsObject {
     __obj.asInstanceOf[PointEventsOptionsObject]
   }
   
-  extension [Self <: PointEventsOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointEventsOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setClick(value: PointClickCallbackFunction): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     

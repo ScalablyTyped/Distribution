@@ -18,7 +18,8 @@ object LambdaAvailabilityProvider {
     __obj.asInstanceOf[LambdaAvailabilityProvider]
   }
   
-  extension [Self <: LambdaAvailabilityProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaAvailabilityProvider] (val x: Self) extends AnyVal {
     
     inline def setLambdaArn(value: LambdaArn): Self = StObject.set(x, "LambdaArn", value.asInstanceOf[js.Any])
   }

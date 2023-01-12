@@ -18,7 +18,8 @@ object ICustomErrorMessage {
     __obj.asInstanceOf[ICustomErrorMessage]
   }
   
-  extension [Self <: ICustomErrorMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomErrorMessage] (val x: Self) extends AnyVal {
     
     inline def setCalcCond(value: String): Self = StObject.set(x, "calcCond", value.asInstanceOf[js.Any])
   }

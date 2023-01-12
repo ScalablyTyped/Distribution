@@ -17,7 +17,8 @@ object BuildDefinitionChangedEvent {
     __obj.asInstanceOf[BuildDefinitionChangedEvent]
   }
   
-  extension [Self <: BuildDefinitionChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildDefinitionChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setChangeType(value: AuditAction): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     

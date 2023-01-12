@@ -646,7 +646,8 @@ object libAuthBaseAuthMod {
       __obj.asInstanceOf[DeleteUsersResult]
     }
     
-    extension [Self <: DeleteUsersResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteUsersResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[FirebaseArrayIndexError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -677,7 +678,8 @@ object libAuthBaseAuthMod {
       __obj.asInstanceOf[GetUsersResult]
     }
     
-    extension [Self <: GetUsersResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetUsersResult] (val x: Self) extends AnyVal {
       
       inline def setNotFound(value: js.Array[UserIdentifier]): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
       
@@ -709,7 +711,8 @@ object libAuthBaseAuthMod {
       __obj.asInstanceOf[ListUsersResult]
     }
     
-    extension [Self <: ListUsersResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListUsersResult] (val x: Self) extends AnyVal {
       
       inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
       
@@ -736,7 +739,8 @@ object libAuthBaseAuthMod {
       __obj.asInstanceOf[SessionCookieOptions]
     }
     
-    extension [Self <: SessionCookieOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionCookieOptions] (val x: Self) extends AnyVal {
       
       inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
     }

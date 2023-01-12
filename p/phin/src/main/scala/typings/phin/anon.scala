@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: String | Buffer | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Form]
     }
     
-    extension [Self <: Form](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Form] (val x: Self) extends AnyVal {
       
       inline def setForm(value: StringDictionary[String]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     }
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[IWithDataIJSONResponseOpt]
     }
     
-    extension [Self <: IWithDataIJSONResponseOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWithDataIJSONResponseOpt] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object anon {
       __obj.asInstanceOf[IWithDataIOptions]
     }
     
-    extension [Self <: IWithDataIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWithDataIOptions] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
@@ -256,7 +260,8 @@ object anon {
       __obj.asInstanceOf[IWithDataIStreamResponseO]
     }
     
-    extension [Self <: IWithDataIStreamResponseO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWithDataIStreamResponseO] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
@@ -338,7 +343,8 @@ object anon {
       __obj.asInstanceOf[IWithDataIStringResponseO]
     }
     
-    extension [Self <: IWithDataIStringResponseO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWithDataIStringResponseO] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
@@ -424,7 +430,8 @@ object anon {
       __obj.asInstanceOf[IWithFormIJSONResponseOpt]
     }
     
-    extension [Self <: IWithFormIJSONResponseOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWithFormIJSONResponseOpt] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
@@ -510,7 +517,8 @@ object anon {
       __obj.asInstanceOf[IWithFormIOptions]
     }
     
-    extension [Self <: IWithFormIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWithFormIOptions] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
@@ -596,7 +604,8 @@ object anon {
       __obj.asInstanceOf[IWithFormIStreamResponseO]
     }
     
-    extension [Self <: IWithFormIStreamResponseO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWithFormIStreamResponseO] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
@@ -678,7 +687,8 @@ object anon {
       __obj.asInstanceOf[IWithFormIStringResponseO]
     }
     
-    extension [Self <: IWithFormIStringResponseO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWithFormIStringResponseO] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       

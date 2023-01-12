@@ -22,7 +22,8 @@ object OnVoIPVideoMembersChangedCallbackResult {
     __obj.asInstanceOf[OnVoIPVideoMembersChangedCallbackResult]
   }
   
-  extension [Self <: OnVoIPVideoMembersChangedCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnVoIPVideoMembersChangedCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     

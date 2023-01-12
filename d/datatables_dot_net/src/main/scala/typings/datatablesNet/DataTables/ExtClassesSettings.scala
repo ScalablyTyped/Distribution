@@ -201,7 +201,8 @@ object ExtClassesSettings {
     __obj.asInstanceOf[ExtClassesSettings]
   }
   
-  extension [Self <: ExtClassesSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtClassesSettings] (val x: Self) extends AnyVal {
     
     inline def setSFilter(value: String): Self = StObject.set(x, "sFilter", value.asInstanceOf[js.Any])
     

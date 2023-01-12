@@ -32,7 +32,8 @@ object CitationCitedArtifactContributorship {
     __obj.asInstanceOf[CitationCitedArtifactContributorship]
   }
   
-  extension [Self <: CitationCitedArtifactContributorship](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitationCitedArtifactContributorship] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     

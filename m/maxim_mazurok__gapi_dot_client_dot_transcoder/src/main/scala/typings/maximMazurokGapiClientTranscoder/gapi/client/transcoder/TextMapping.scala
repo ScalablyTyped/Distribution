@@ -22,7 +22,8 @@ object TextMapping {
     __obj.asInstanceOf[TextMapping]
   }
   
-  extension [Self <: TextMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextMapping] (val x: Self) extends AnyVal {
     
     inline def setAtomKey(value: String): Self = StObject.set(x, "atomKey", value.asInstanceOf[js.Any])
     

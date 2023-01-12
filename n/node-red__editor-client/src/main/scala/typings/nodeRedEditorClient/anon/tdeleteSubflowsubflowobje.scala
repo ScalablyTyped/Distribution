@@ -34,7 +34,8 @@ object tdeleteSubflowsubflowobje {
     __obj.asInstanceOf[tdeleteSubflowsubflowobje]
   }
   
-  extension [Self <: tdeleteSubflowsubflowobje](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: tdeleteSubflowsubflowobje] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: /* ev */ HistoryEvent => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

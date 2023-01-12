@@ -60,7 +60,8 @@ object ojvalidationDatetimeMod {
         __obj.asInstanceOf[DayFormatterInput]
       }
       
-      extension [Self <: DayFormatterInput](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DayFormatterInput] (val x: Self) extends AnyVal {
         
         inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
         
@@ -86,7 +87,8 @@ object ojvalidationDatetimeMod {
         __obj.asInstanceOf[DayFormatterOutput]
       }
       
-      extension [Self <: DayFormatterOutput](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DayFormatterOutput] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -118,7 +120,8 @@ object ojvalidationDatetimeMod {
         __obj.asInstanceOf[ValidatorOptions]
       }
       
-      extension [Self <: ValidatorOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ValidatorOptions] (val x: Self) extends AnyVal {
         
         inline def setDayFormatter(value: /* param0 */ DayFormatterInput => DayFormatterOutput | Null | all): Self = StObject.set(x, "dayFormatter", js.Any.fromFunction1(value))
         
@@ -211,7 +214,8 @@ object ojvalidationDatetimeMod {
         __obj.asInstanceOf[typings.oracleOraclejet.ojvalidationDatetimeMod.DateTimeRangeValidator.ValidatorOptions]
       }
       
-      extension [Self <: typings.oracleOraclejet.ojvalidationDatetimeMod.DateTimeRangeValidator.ValidatorOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.oracleOraclejet.ojvalidationDatetimeMod.DateTimeRangeValidator.ValidatorOptions] (val x: Self) extends AnyVal {
         
         inline def setConverter(value: DateTimeConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
         
@@ -311,7 +315,8 @@ object ojvalidationDatetimeMod {
         __obj.asInstanceOf[ConverterOptions]
       }
       
-      extension [Self <: ConverterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConverterOptions] (val x: Self) extends AnyVal {
         
         inline def setDateFormat(value: short | medium | long | full): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
         

@@ -24,7 +24,8 @@ object BufferOptions {
     __obj.asInstanceOf[BufferOptions]
   }
   
-  extension [Self <: BufferOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoPrint(value: Boolean): Self = StObject.set(x, "autoPrint", value.asInstanceOf[js.Any])
     

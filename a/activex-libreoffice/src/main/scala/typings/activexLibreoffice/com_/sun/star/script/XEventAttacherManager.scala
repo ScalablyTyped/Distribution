@@ -137,7 +137,8 @@ object XEventAttacherManager {
     __obj.asInstanceOf[XEventAttacherManager]
   }
   
-  extension [Self <: XEventAttacherManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEventAttacherManager] (val x: Self) extends AnyVal {
     
     inline def setAddScriptListener(value: XScriptListener => Unit): Self = StObject.set(x, "addScriptListener", js.Any.fromFunction1(value))
     

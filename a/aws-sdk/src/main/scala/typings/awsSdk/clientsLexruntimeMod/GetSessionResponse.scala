@@ -38,7 +38,8 @@ object GetSessionResponse {
     __obj.asInstanceOf[GetSessionResponse]
   }
   
-  extension [Self <: GetSessionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSessionResponse] (val x: Self) extends AnyVal {
     
     inline def setActiveContexts(value: ActiveContextsList): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
     

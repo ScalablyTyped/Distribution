@@ -55,7 +55,8 @@ object libServerMod {
       __obj.asInstanceOf[AuthenticateBewitOptions]
     }
     
-    extension [Self <: AuthenticateBewitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticateBewitOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object libServerMod {
       __obj.asInstanceOf[AuthenticateMessageOptions]
     }
     
-    extension [Self <: AuthenticateMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticateMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setLocaltimeOffsetMsec(value: Double): Self = StObject.set(x, "localtimeOffsetMsec", value.asInstanceOf[js.Any])
       
@@ -163,7 +165,8 @@ object libServerMod {
       __obj.asInstanceOf[AuthenticateOptions]
     }
     
-    extension [Self <: AuthenticateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticateOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -208,7 +211,8 @@ object libServerMod {
       __obj.asInstanceOf[AuthenticatedBewit]
     }
     
-    extension [Self <: AuthenticatedBewit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticatedBewit] (val x: Self) extends AnyVal {
       
       inline def setBewit(value: Bewit): Self = StObject.set(x, "bewit", value.asInstanceOf[js.Any])
     }
@@ -225,7 +229,8 @@ object libServerMod {
       __obj.asInstanceOf[AuthenticatedMessage]
     }
     
-    extension [Self <: AuthenticatedMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticatedMessage] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     }
@@ -244,7 +249,8 @@ object libServerMod {
       __obj.asInstanceOf[Authentication]
     }
     
-    extension [Self <: Authentication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Authentication] (val x: Self) extends AnyVal {
       
       inline def setArtifacts(value: Artifacts): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
       
@@ -269,7 +275,8 @@ object libServerMod {
       __obj.asInstanceOf[Bewit]
     }
     
-    extension [Self <: Bewit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bewit] (val x: Self) extends AnyVal {
       
       inline def setExp(value: String): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
       
@@ -296,7 +303,8 @@ object libServerMod {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: sha1 | sha256): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -329,7 +337,8 @@ object libServerMod {
       __obj.asInstanceOf[HeaderOptions]
     }
     
-    extension [Self <: HeaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderOptions] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       

@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[ReactTagsInputProps[Tag]]
     }
     
-    extension [Self <: ReactTagsInputProps[?], Tag](x: Self & ReactTagsInputProps[Tag]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactTagsInputProps[?], Tag] (val x: Self & ReactTagsInputProps[Tag]) extends AnyVal {
       
       inline def setAddKeys(value: js.Array[Double | String]): Self = StObject.set(x, "addKeys", value.asInstanceOf[js.Any])
       
@@ -217,7 +218,8 @@ object mod {
       __obj.asInstanceOf[RenderInputProps[Tag]]
     }
     
-    extension [Self <: RenderInputProps[?], Tag](x: Self & RenderInputProps[Tag]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderInputProps[?], Tag] (val x: Self & RenderInputProps[Tag]) extends AnyVal {
       
       inline def setAddTag(value: Tag => Unit): Self = StObject.set(x, "addTag", js.Any.fromFunction1(value))
       
@@ -254,7 +256,8 @@ object mod {
       __obj.asInstanceOf[RenderTagProps[Tag]]
     }
     
-    extension [Self <: RenderTagProps[?], Tag](x: Self & RenderTagProps[Tag]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderTagProps[?], Tag] (val x: Self & RenderTagProps[Tag]) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

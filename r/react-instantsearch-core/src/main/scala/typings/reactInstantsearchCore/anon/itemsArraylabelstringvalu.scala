@@ -41,7 +41,8 @@ object itemsArraylabelstringvalu {
     __obj.asInstanceOf[itemsArraylabelstringvalu]
   }
   
-  extension [Self <: itemsArraylabelstringvalu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: itemsArraylabelstringvalu] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

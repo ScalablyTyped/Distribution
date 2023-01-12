@@ -23,7 +23,8 @@ object DescribeDatastoreResponse {
     __obj.asInstanceOf[DescribeDatastoreResponse]
   }
   
-  extension [Self <: DescribeDatastoreResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDatastoreResponse] (val x: Self) extends AnyVal {
     
     inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
     

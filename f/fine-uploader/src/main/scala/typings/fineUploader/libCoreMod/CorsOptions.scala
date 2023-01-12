@@ -34,7 +34,8 @@ object CorsOptions {
     __obj.asInstanceOf[CorsOptions]
   }
   
-  extension [Self <: CorsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CorsOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowXdr(value: Boolean): Self = StObject.set(x, "allowXdr", value.asInstanceOf[js.Any])
     

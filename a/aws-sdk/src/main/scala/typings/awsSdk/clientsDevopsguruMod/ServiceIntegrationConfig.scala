@@ -23,7 +23,8 @@ object ServiceIntegrationConfig {
     __obj.asInstanceOf[ServiceIntegrationConfig]
   }
   
-  extension [Self <: ServiceIntegrationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceIntegrationConfig] (val x: Self) extends AnyVal {
     
     inline def setLogsAnomalyDetection(value: LogsAnomalyDetectionIntegration): Self = StObject.set(x, "LogsAnomalyDetection", value.asInstanceOf[js.Any])
     

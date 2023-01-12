@@ -35,7 +35,8 @@ object ExchangedPeeringRoutesList {
     __obj.asInstanceOf[ExchangedPeeringRoutesList]
   }
   
-  extension [Self <: ExchangedPeeringRoutesList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExchangedPeeringRoutesList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

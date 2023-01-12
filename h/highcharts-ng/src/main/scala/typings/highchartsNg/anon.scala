@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[CurrentMax]
     }
     
-    extension [Self <: CurrentMax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentMax] (val x: Self) extends AnyVal {
       
       inline def setCurrentMax(value: Double): Self = StObject.set(x, "currentMax", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

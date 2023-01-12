@@ -28,7 +28,8 @@ object RelationalDatabaseHardware {
     __obj.asInstanceOf[RelationalDatabaseHardware]
   }
   
-  extension [Self <: RelationalDatabaseHardware](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationalDatabaseHardware] (val x: Self) extends AnyVal {
     
     inline def setCpuCount(value: integer): Self = StObject.set(x, "cpuCount", value.asInstanceOf[js.Any])
     

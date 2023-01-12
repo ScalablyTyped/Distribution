@@ -34,7 +34,8 @@ object MessageRemoved {
     __obj.asInstanceOf[MessageRemoved]
   }
   
-  extension [Self <: MessageRemoved](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageRemoved] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

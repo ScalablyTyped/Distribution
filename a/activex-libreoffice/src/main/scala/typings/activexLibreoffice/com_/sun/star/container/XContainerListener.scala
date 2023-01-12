@@ -36,7 +36,8 @@ object XContainerListener {
     __obj.asInstanceOf[XContainerListener]
   }
   
-  extension [Self <: XContainerListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContainerListener] (val x: Self) extends AnyVal {
     
     inline def setElementInserted(value: ContainerEvent => Unit): Self = StObject.set(x, "elementInserted", js.Any.fromFunction1(value))
     

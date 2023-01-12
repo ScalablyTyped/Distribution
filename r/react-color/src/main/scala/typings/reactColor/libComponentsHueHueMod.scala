@@ -35,7 +35,8 @@ object libComponentsHueHueMod {
       __obj.asInstanceOf[HuePickerProps]
     }
     
-    extension [Self <: HuePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HuePickerProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object libComponentsHueHueMod {
       __obj.asInstanceOf[HuePickerStylesProps]
     }
     
-    extension [Self <: HuePickerStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HuePickerStylesProps] (val x: Self) extends AnyVal {
       
       inline def setHue(value: CSSProperties): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
       

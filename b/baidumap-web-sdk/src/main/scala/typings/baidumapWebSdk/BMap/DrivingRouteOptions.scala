@@ -28,7 +28,8 @@ object DrivingRouteOptions {
     __obj.asInstanceOf[DrivingRouteOptions]
   }
   
-  extension [Self <: DrivingRouteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrivingRouteOptions] (val x: Self) extends AnyVal {
     
     inline def setOnInfoHtmlSet(value: (/* poi */ LocalResultPoi, /* html */ HTMLElement) => Unit): Self = StObject.set(x, "onInfoHtmlSet", js.Any.fromFunction2(value))
     

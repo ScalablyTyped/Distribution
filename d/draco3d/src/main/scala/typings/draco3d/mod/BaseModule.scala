@@ -88,7 +88,8 @@ object BaseModule {
     __obj.asInstanceOf[BaseModule]
   }
   
-  extension [Self <: BaseModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseModule] (val x: Self) extends AnyVal {
     
     inline def setCOLOR(value: Double): Self = StObject.set(x, "COLOR", value.asInstanceOf[js.Any])
     

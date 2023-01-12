@@ -22,7 +22,8 @@ object ProcessFd {
     __obj.asInstanceOf[ProcessFd]
   }
   
-  extension [Self <: ProcessFd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessFd] (val x: Self) extends AnyVal {
     
     inline def setAnonInodeType(value: String): Self = StObject.set(x, "anonInodeType", value.asInstanceOf[js.Any])
     

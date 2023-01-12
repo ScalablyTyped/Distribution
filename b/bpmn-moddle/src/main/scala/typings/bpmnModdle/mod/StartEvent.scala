@@ -39,7 +39,8 @@ object StartEvent {
     __obj.asInstanceOf[StartEvent]
   }
   
-  extension [Self <: StartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartEvent] (val x: Self) extends AnyVal {
     
     inline def setIsInterrupting(value: Boolean): Self = StObject.set(x, "isInterrupting", value.asInstanceOf[js.Any])
   }

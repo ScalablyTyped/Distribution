@@ -21,7 +21,8 @@ object SnapshotMeta {
     __obj.asInstanceOf[SnapshotMeta]
   }
   
-  extension [Self <: SnapshotMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotMeta] (val x: Self) extends AnyVal {
     
     inline def setCtime(value: Double): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
     

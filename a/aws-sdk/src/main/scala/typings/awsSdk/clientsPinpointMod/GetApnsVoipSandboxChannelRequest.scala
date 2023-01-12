@@ -18,7 +18,8 @@ object GetApnsVoipSandboxChannelRequest {
     __obj.asInstanceOf[GetApnsVoipSandboxChannelRequest]
   }
   
-  extension [Self <: GetApnsVoipSandboxChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetApnsVoipSandboxChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }

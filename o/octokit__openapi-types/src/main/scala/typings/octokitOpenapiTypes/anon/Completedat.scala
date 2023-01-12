@@ -66,7 +66,8 @@ object Completedat {
     __obj.asInstanceOf[Completedat]
   }
   
-  extension [Self <: Completedat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Completedat] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[Identifier]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

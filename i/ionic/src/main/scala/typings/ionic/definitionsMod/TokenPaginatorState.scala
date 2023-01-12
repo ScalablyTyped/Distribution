@@ -17,7 +17,8 @@ object TokenPaginatorState {
     __obj.asInstanceOf[TokenPaginatorState]
   }
   
-  extension [Self <: TokenPaginatorState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenPaginatorState] (val x: Self) extends AnyVal {
     
     inline def setPage_token(value: String): Self = StObject.set(x, "page_token", value.asInstanceOf[js.Any])
     

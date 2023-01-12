@@ -19,7 +19,8 @@ object BucketByActivity {
     __obj.asInstanceOf[BucketByActivity]
   }
   
-  extension [Self <: BucketByActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketByActivity] (val x: Self) extends AnyVal {
     
     inline def setActivityDataSourceId(value: String): Self = StObject.set(x, "activityDataSourceId", value.asInstanceOf[js.Any])
     

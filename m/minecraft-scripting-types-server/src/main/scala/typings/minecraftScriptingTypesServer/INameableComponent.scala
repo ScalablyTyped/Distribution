@@ -51,7 +51,8 @@ object INameableComponent {
     __obj.asInstanceOf[INameableComponent]
   }
   
-  extension [Self <: INameableComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INameableComponent] (val x: Self) extends AnyVal {
     
     inline def setAllowNameTagRenaming(value: Boolean): Self = StObject.set(x, "allowNameTagRenaming", value.asInstanceOf[js.Any])
     

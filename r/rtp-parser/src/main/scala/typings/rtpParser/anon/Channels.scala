@@ -24,7 +24,8 @@ object Channels {
     __obj.asInstanceOf[Channels]
   }
   
-  extension [Self <: Channels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Channels] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: typings.rtpParser.rtpParserInts.`1`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

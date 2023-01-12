@@ -53,7 +53,8 @@ object libTypescriptSrcSceneViewMod {
       __obj.asInstanceOf[Props[State, ScreenOptions]]
     }
     
-    extension [Self <: Props[?, ?], State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */](x: Self & (Props[State, ScreenOptions])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?, ?], State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */] (val x: Self & (Props[State, ScreenOptions])) extends AnyVal {
       
       inline def setClearOptions(value: () => Unit): Self = StObject.set(x, "clearOptions", js.Any.fromFunction0(value))
       

@@ -28,7 +28,8 @@ object PollForJobsInput {
     __obj.asInstanceOf[PollForJobsInput]
   }
   
-  extension [Self <: PollForJobsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PollForJobsInput] (val x: Self) extends AnyVal {
     
     inline def setActionTypeId(value: ActionTypeId): Self = StObject.set(x, "actionTypeId", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object composerMod extends Shortcut {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setWarn(value: /* repeated */ Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
@@ -60,7 +61,8 @@ object composerMod extends Shortcut {
       __obj.asInstanceOf[Uglify]
     }
     
-    extension [Self <: Uglify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Uglify] (val x: Self) extends AnyVal {
       
       inline def setMinify(value: FnCall): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
     }

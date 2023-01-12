@@ -98,7 +98,8 @@ object PickRemoveChildrenComponeBackground {
     __obj.asInstanceOf[PickRemoveChildrenComponeBackground]
   }
   
-  extension [Self <: PickRemoveChildrenComponeBackground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickRemoveChildrenComponeBackground] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: Any): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

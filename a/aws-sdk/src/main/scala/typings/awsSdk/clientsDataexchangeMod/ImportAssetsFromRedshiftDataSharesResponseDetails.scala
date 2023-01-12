@@ -28,7 +28,8 @@ object ImportAssetsFromRedshiftDataSharesResponseDetails {
     __obj.asInstanceOf[ImportAssetsFromRedshiftDataSharesResponseDetails]
   }
   
-  extension [Self <: ImportAssetsFromRedshiftDataSharesResponseDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportAssetsFromRedshiftDataSharesResponseDetails] (val x: Self) extends AnyVal {
     
     inline def setAssetSources(value: ListOfRedshiftDataShareAssetSourceEntry): Self = StObject.set(x, "AssetSources", value.asInstanceOf[js.Any])
     

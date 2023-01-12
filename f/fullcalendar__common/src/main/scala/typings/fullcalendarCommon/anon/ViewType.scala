@@ -24,7 +24,8 @@ object ViewType {
     __obj.asInstanceOf[ViewType]
   }
   
-  extension [Self <: ViewType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewType] (val x: Self) extends AnyVal {
     
     inline def setDateMarker(value: js.Date): Self = StObject.set(x, "dateMarker", value.asInstanceOf[js.Any])
     

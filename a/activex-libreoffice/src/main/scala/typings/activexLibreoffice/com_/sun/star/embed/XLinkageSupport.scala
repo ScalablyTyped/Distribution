@@ -73,7 +73,8 @@ object XLinkageSupport {
     __obj.asInstanceOf[XLinkageSupport]
   }
   
-  extension [Self <: XLinkageSupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLinkageSupport] (val x: Self) extends AnyVal {
     
     inline def setBreakLink(value: (XStorage, String) => Unit): Self = StObject.set(x, "breakLink", js.Any.fromFunction2(value))
     

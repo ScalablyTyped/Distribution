@@ -31,7 +31,8 @@ object ColorScaleConditionalFormatData {
     __obj.asInstanceOf[ColorScaleConditionalFormatData]
   }
   
-  extension [Self <: ColorScaleConditionalFormatData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorScaleConditionalFormatData] (val x: Self) extends AnyVal {
     
     inline def setCriteria(value: ConditionalColorScaleCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     

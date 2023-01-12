@@ -883,7 +883,8 @@ object sapUiCoreComponentContainerMod {
       __obj.asInstanceOf[ComponentContainerSettings]
     }
     
-    extension [Self <: ComponentContainerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentContainerSettings] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

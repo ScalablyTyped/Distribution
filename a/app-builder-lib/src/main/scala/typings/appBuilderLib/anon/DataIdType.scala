@@ -15,7 +15,8 @@ object DataIdType {
     __obj.asInstanceOf[DataIdType]
   }
   
-  extension [Self <: DataIdType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataIdType] (val x: Self) extends AnyVal {
     
     inline def setData(value: IdType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

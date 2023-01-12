@@ -30,7 +30,8 @@ object WindowOpenOption {
     __obj.asInstanceOf[WindowOpenOption]
   }
   
-  extension [Self <: WindowOpenOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowOpenOption] (val x: Self) extends AnyVal {
     
     inline def setInject_js_end(value: String): Self = StObject.set(x, "inject_js_end", value.asInstanceOf[js.Any])
     

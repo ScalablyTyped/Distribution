@@ -18,7 +18,8 @@ object StreamProcessorNotificationChannel {
     __obj.asInstanceOf[StreamProcessorNotificationChannel]
   }
   
-  extension [Self <: StreamProcessorNotificationChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamProcessorNotificationChannel] (val x: Self) extends AnyVal {
     
     inline def setSNSTopicArn(value: SNSTopicArn): Self = StObject.set(x, "SNSTopicArn", value.asInstanceOf[js.Any])
   }

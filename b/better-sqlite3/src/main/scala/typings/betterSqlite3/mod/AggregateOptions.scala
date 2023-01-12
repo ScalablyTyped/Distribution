@@ -23,7 +23,8 @@ object AggregateOptions {
     __obj.asInstanceOf[AggregateOptions]
   }
   
-  extension [Self <: AggregateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateOptions] (val x: Self) extends AnyVal {
     
     inline def setInverse(value: (/* total */ Any, /* dropped */ Any) => Any): Self = StObject.set(x, "inverse", js.Any.fromFunction2(value))
     

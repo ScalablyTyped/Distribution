@@ -65,7 +65,8 @@ object rangeSliderMod {
       __obj.asInstanceOf[RangeSliderProps]
     }
     
-    extension [Self <: RangeSliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeSliderProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object CacheGroupsContext {
     __obj.asInstanceOf[CacheGroupsContext]
   }
   
-  extension [Self <: CacheGroupsContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheGroupsContext] (val x: Self) extends AnyVal {
     
     inline def setChunkGraph(value: ChunkGraph): Self = StObject.set(x, "chunkGraph", value.asInstanceOf[js.Any])
     

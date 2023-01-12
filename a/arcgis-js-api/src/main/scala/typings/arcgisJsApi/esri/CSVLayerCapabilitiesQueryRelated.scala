@@ -34,7 +34,8 @@ object CSVLayerCapabilitiesQueryRelated {
     __obj.asInstanceOf[CSVLayerCapabilitiesQueryRelated]
   }
   
-  extension [Self <: CSVLayerCapabilitiesQueryRelated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSVLayerCapabilitiesQueryRelated] (val x: Self) extends AnyVal {
     
     inline def setSupportsCount(value: Boolean): Self = StObject.set(x, "supportsCount", value.asInstanceOf[js.Any])
     

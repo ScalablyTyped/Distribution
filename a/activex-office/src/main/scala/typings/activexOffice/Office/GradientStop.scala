@@ -34,7 +34,8 @@ object GradientStop {
     __obj.asInstanceOf[GradientStop]
   }
   
-  extension [Self <: GradientStop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GradientStop] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

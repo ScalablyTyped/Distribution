@@ -16,7 +16,8 @@ object `3` {
     __obj.asInstanceOf[`3`]
   }
   
-  extension [Self <: `3`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `3`] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String | SignalRef): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

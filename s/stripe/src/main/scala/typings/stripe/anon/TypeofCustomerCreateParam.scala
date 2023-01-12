@@ -19,7 +19,8 @@ object TypeofCustomerCreateParam {
     __obj.asInstanceOf[TypeofCustomerCreateParam]
   }
   
-  extension [Self <: TypeofCustomerCreateParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCustomerCreateParam] (val x: Self) extends AnyVal {
     
     inline def setCashBalance(value: TypeofCashBalance): Self = StObject.set(x, "CashBalance", value.asInstanceOf[js.Any])
     

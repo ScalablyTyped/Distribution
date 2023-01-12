@@ -23,7 +23,8 @@ object SAT {
       __obj.asInstanceOf[Box]
     }
     
-    extension [Self <: Box](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object SAT {
       __obj.asInstanceOf[Circle]
     }
     
-    extension [Self <: Circle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Circle] (val x: Self) extends AnyVal {
       
       inline def setPos(value: Vector): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object SAT {
       __obj.asInstanceOf[Polygon]
     }
     
-    extension [Self <: Polygon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Polygon] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -182,7 +185,8 @@ object SAT {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setA(value: Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       

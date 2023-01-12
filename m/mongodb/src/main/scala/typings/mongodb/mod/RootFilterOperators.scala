@@ -35,7 +35,8 @@ object RootFilterOperators {
     __obj.asInstanceOf[RootFilterOperators[TSchema]]
   }
   
-  extension [Self <: RootFilterOperators[?], TSchema](x: Self & RootFilterOperators[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootFilterOperators[?], TSchema] (val x: Self & RootFilterOperators[TSchema]) extends AnyVal {
     
     inline def set$and(value: js.Array[Filter[TSchema]]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
     

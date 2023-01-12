@@ -23,7 +23,8 @@ object SubnetCidrBlockState {
     __obj.asInstanceOf[SubnetCidrBlockState]
   }
   
-  extension [Self <: SubnetCidrBlockState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubnetCidrBlockState] (val x: Self) extends AnyVal {
     
     inline def setState(value: SubnetCidrBlockStateCode): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

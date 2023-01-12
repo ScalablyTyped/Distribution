@@ -21,7 +21,8 @@ object ChannelOpenConfirmationInfo {
     __obj.asInstanceOf[ChannelOpenConfirmationInfo]
   }
   
-  extension [Self <: ChannelOpenConfirmationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelOpenConfirmationInfo] (val x: Self) extends AnyVal {
     
     inline def setPacketSize(value: Double): Self = StObject.set(x, "packetSize", value.asInstanceOf[js.Any])
     

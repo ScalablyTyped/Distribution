@@ -32,7 +32,8 @@ object MarkerHeight {
     __obj.asInstanceOf[MarkerHeight]
   }
   
-  extension [Self <: MarkerHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerHeight] (val x: Self) extends AnyVal {
     
     inline def setMarkerHeight(value: Double): Self = StObject.set(x, "markerHeight", value.asInstanceOf[js.Any])
     

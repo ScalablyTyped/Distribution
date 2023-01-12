@@ -27,7 +27,8 @@ object TessellatedMesh {
     __obj.asInstanceOf[TessellatedMesh]
   }
   
-  extension [Self <: TessellatedMesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TessellatedMesh] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

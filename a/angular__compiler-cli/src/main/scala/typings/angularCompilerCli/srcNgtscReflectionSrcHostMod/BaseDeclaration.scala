@@ -35,7 +35,8 @@ object BaseDeclaration {
     __obj.asInstanceOf[BaseDeclaration[T]]
   }
   
-  extension [Self <: BaseDeclaration[?], T /* <: DeclarationNode */](x: Self & BaseDeclaration[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseDeclaration[?], T /* <: DeclarationNode */] (val x: Self & BaseDeclaration[T]) extends AnyVal {
     
     inline def setKind(value: DeclarationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

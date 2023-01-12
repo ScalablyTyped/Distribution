@@ -25,7 +25,8 @@ object typesConditionMod {
       __obj.asInstanceOf[Condition]
     }
     
-    extension [Self <: Condition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
       
       inline def setHttpErrorCodeReturnedEquals(value: String): Self = StObject.set(x, "HttpErrorCodeReturnedEquals", value.asInstanceOf[js.Any])
       

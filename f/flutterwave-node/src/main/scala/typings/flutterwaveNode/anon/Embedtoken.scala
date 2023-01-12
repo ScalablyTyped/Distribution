@@ -19,7 +19,8 @@ object Embedtoken {
     __obj.asInstanceOf[Embedtoken]
   }
   
-  extension [Self <: Embedtoken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Embedtoken] (val x: Self) extends AnyVal {
     
     inline def setEmbedtoken(value: String): Self = StObject.set(x, "embedtoken", value.asInstanceOf[js.Any])
     

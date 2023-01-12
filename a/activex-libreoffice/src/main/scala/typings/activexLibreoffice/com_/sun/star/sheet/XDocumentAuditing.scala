@@ -25,7 +25,8 @@ object XDocumentAuditing {
     __obj.asInstanceOf[XDocumentAuditing]
   }
   
-  extension [Self <: XDocumentAuditing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDocumentAuditing] (val x: Self) extends AnyVal {
     
     inline def setRefreshArrows(value: () => Unit): Self = StObject.set(x, "refreshArrows", js.Any.fromFunction0(value))
   }

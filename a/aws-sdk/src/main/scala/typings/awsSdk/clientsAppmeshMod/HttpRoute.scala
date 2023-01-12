@@ -34,7 +34,8 @@ object HttpRoute {
     __obj.asInstanceOf[HttpRoute]
   }
   
-  extension [Self <: HttpRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpRoute] (val x: Self) extends AnyVal {
     
     inline def setAction(value: HttpRouteAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

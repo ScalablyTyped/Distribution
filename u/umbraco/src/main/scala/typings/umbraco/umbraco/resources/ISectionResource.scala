@@ -21,7 +21,8 @@ object ISectionResource {
     __obj.asInstanceOf[ISectionResource]
   }
   
-  extension [Self <: ISectionResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISectionResource] (val x: Self) extends AnyVal {
     
     inline def setGetSections(value: () => Unit): Self = StObject.set(x, "getSections", js.Any.fromFunction0(value))
   }

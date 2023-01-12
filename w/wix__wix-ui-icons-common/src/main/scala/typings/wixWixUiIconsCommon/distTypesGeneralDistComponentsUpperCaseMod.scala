@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsUpperCaseMod extends Shortcut {
       __obj.asInstanceOf[UpperCaseProps]
     }
     
-    extension [Self <: UpperCaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpperCaseProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

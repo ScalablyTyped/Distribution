@@ -35,7 +35,8 @@ object TfvcLabelRequestData {
     __obj.asInstanceOf[TfvcLabelRequestData]
   }
   
-  extension [Self <: TfvcLabelRequestData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcLabelRequestData] (val x: Self) extends AnyVal {
     
     inline def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
     

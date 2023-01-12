@@ -33,7 +33,8 @@ object Narrative {
     __obj.asInstanceOf[Narrative]
   }
   
-  extension [Self <: Narrative](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Narrative] (val x: Self) extends AnyVal {
     
     inline def setDiv(value: String): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
     

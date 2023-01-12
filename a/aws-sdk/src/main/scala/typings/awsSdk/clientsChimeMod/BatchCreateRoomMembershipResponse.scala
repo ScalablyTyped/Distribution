@@ -18,7 +18,8 @@ object BatchCreateRoomMembershipResponse {
     __obj.asInstanceOf[BatchCreateRoomMembershipResponse]
   }
   
-  extension [Self <: BatchCreateRoomMembershipResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateRoomMembershipResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: MemberErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object PageImages {
     __obj.asInstanceOf[PageImages]
   }
   
-  extension [Self <: PageImages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageImages] (val x: Self) extends AnyVal {
     
     inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     

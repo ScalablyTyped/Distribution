@@ -50,7 +50,8 @@ object INCRBY {
     __obj.asInstanceOf[INCRBY]
   }
   
-  extension [Self <: INCRBY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INCRBY] (val x: Self) extends AnyVal {
     
     inline def setINCRBY(value: TransformArgumentsTransformReply): Self = StObject.set(x, "INCRBY", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object typesSvgiconMod {
       __obj.asInstanceOf[SVGIconProps]
     }
     
-    extension [Self <: SVGIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SVGIconProps] (val x: Self) extends AnyVal {
       
       inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       

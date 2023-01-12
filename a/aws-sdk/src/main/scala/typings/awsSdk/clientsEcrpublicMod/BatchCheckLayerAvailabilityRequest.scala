@@ -28,7 +28,8 @@ object BatchCheckLayerAvailabilityRequest {
     __obj.asInstanceOf[BatchCheckLayerAvailabilityRequest]
   }
   
-  extension [Self <: BatchCheckLayerAvailabilityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCheckLayerAvailabilityRequest] (val x: Self) extends AnyVal {
     
     inline def setLayerDigests(value: BatchedOperationLayerDigestList): Self = StObject.set(x, "layerDigests", value.asInstanceOf[js.Any])
     

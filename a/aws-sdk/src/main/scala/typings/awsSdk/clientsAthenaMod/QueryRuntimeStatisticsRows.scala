@@ -33,7 +33,8 @@ object QueryRuntimeStatisticsRows {
     __obj.asInstanceOf[QueryRuntimeStatisticsRows]
   }
   
-  extension [Self <: QueryRuntimeStatisticsRows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRuntimeStatisticsRows] (val x: Self) extends AnyVal {
     
     inline def setInputBytes(value: Long): Self = StObject.set(x, "InputBytes", value.asInstanceOf[js.Any])
     

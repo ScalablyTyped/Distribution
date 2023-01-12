@@ -18,7 +18,8 @@ object IntlLocaleLike {
     __obj.asInstanceOf[IntlLocaleLike]
   }
   
-  extension [Self <: IntlLocaleLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntlLocaleLike] (val x: Self) extends AnyVal {
     
     inline def setHourCycle(value: LocaleHourCycleKey): Self = StObject.set(x, "hourCycle", value.asInstanceOf[js.Any])
     

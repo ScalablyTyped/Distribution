@@ -29,7 +29,8 @@ object Gradient {
     __obj.asInstanceOf[Gradient]
   }
   
-  extension [Self <: Gradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gradient] (val x: Self) extends AnyVal {
     
     inline def setAddStop(value: (Double, String, Double) => typings.kendoUi.kendo.drawing.GradientStop): Self = StObject.set(x, "addStop", js.Any.fromFunction3(value))
     

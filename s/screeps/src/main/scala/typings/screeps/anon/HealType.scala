@@ -20,7 +20,8 @@ object HealType {
     __obj.asInstanceOf[HealType]
   }
   
-  extension [Self <: HealType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HealType] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

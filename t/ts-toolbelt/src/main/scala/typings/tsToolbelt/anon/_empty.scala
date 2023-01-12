@@ -25,7 +25,8 @@ object _empty {
     __obj.asInstanceOf[_empty[L, N]]
   }
   
-  extension [Self <: _empty[?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Iteration */](x: Self & (_empty[L, N])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: _empty[?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Iteration */] (val x: Self & (_empty[L, N])) extends AnyVal {
     
     inline def `set-Greaterthansign`(value: DropForth[L, N]): Self = StObject.set(x, "->", value.asInstanceOf[js.Any])
     

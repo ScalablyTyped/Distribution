@@ -20,7 +20,8 @@ object ImagesSetDetails {
     __obj.asInstanceOf[ImagesSetDetails]
   }
   
-  extension [Self <: ImagesSetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagesSetDetails] (val x: Self) extends AnyVal {
     
     inline def setSetting(value: allow | block): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }

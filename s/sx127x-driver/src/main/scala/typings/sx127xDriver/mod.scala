@@ -223,7 +223,8 @@ object mod {
       __obj.asInstanceOf[SX127x]
     }
     
-    extension [Self <: SX127x](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SX127x] (val x: Self) extends AnyVal {
       
       inline def setAvailable(value: () => js.Promise[Boolean]): Self = StObject.set(x, "available", js.Any.fromFunction0(value))
       
@@ -362,7 +363,8 @@ object mod {
       __obj.asInstanceOf[SX127xOptions]
     }
     
-    extension [Self <: SX127xOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SX127xOptions] (val x: Self) extends AnyVal {
       
       inline def setCodingRate(value: `4Slash5` | `4Slash6` | `4Slash7` | `4Slash8`): Self = StObject.set(x, "codingRate", value.asInstanceOf[js.Any])
       

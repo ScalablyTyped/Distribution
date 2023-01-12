@@ -38,7 +38,8 @@ object HTMLStyleFontFace {
     __obj.asInstanceOf[HTMLStyleFontFace]
   }
   
-  extension [Self <: HTMLStyleFontFace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLStyleFontFace] (val x: Self) extends AnyVal {
     
     inline def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
     

@@ -97,7 +97,8 @@ object Api {
     __obj.asInstanceOf[Api]
   }
   
-  extension [Self <: Api](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
     
     inline def setApiEndpoint(value: string): Self = StObject.set(x, "ApiEndpoint", value.asInstanceOf[js.Any])
     

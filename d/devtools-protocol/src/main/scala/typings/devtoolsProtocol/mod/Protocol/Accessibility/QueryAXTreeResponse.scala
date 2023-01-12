@@ -19,7 +19,8 @@ object QueryAXTreeResponse {
     __obj.asInstanceOf[QueryAXTreeResponse]
   }
   
-  extension [Self <: QueryAXTreeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryAXTreeResponse] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: js.Array[AXNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     

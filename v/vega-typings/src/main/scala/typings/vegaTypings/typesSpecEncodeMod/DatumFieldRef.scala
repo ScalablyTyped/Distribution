@@ -17,7 +17,8 @@ object DatumFieldRef {
     __obj.asInstanceOf[DatumFieldRef]
   }
   
-  extension [Self <: DatumFieldRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatumFieldRef] (val x: Self) extends AnyVal {
     
     inline def setDatum(value: Field): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
   }

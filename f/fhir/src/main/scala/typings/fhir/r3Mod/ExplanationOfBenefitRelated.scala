@@ -30,7 +30,8 @@ object ExplanationOfBenefitRelated {
     __obj.asInstanceOf[ExplanationOfBenefitRelated]
   }
   
-  extension [Self <: ExplanationOfBenefitRelated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExplanationOfBenefitRelated] (val x: Self) extends AnyVal {
     
     inline def setClaim(value: Reference): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
     

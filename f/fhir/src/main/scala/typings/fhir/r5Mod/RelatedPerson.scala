@@ -90,7 +90,8 @@ object RelatedPerson {
     __obj.asInstanceOf[RelatedPerson]
   }
   
-  extension [Self <: RelatedPerson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedPerson] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[ControllerId]
     }
     
-    extension [Self <: ControllerId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControllerId] (val x: Self) extends AnyVal {
       
       inline def setControllerId(value: Double): Self = StObject.set(x, "controllerId", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Isr]
     }
     
-    extension [Self <: Isr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Isr] (val x: Self) extends AnyVal {
       
       inline def setIsr(value: js.Array[Double]): Self = StObject.set(x, "isr", value.asInstanceOf[js.Any])
       
@@ -104,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -125,7 +129,8 @@ object anon {
       __obj.asInstanceOf[Partition]
     }
     
-    extension [Self <: Partition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Partition] (val x: Self) extends AnyVal {
       
       inline def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
       

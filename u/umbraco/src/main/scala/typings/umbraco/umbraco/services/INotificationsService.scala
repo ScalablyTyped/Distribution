@@ -184,7 +184,8 @@ object INotificationsService {
     __obj.asInstanceOf[INotificationsService]
   }
   
-  extension [Self <: INotificationsService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INotificationsService] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: INotificationItem => INotification): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object AwsEcsTaskDefinitionContainerDefinitionsFirelensConfigurationDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionContainerDefinitionsFirelensConfigurationDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionContainerDefinitionsFirelensConfigurationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionContainerDefinitionsFirelensConfigurationDetails] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: FieldMap): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     

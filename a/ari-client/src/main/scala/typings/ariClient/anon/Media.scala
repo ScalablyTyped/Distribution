@@ -25,7 +25,8 @@ object Media {
     __obj.asInstanceOf[Media]
   }
   
-  extension [Self <: Media](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
     
     inline def setBridgeId(value: String): Self = StObject.set(x, "bridgeId", value.asInstanceOf[js.Any])
     

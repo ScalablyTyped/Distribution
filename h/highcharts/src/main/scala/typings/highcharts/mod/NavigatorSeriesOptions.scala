@@ -81,7 +81,8 @@ object NavigatorSeriesOptions {
     __obj.asInstanceOf[NavigatorSeriesOptions]
   }
   
-  extension [Self <: NavigatorSeriesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorSeriesOptions] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

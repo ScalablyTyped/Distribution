@@ -31,7 +31,8 @@ object srcRedocommandMod {
         __obj.asInstanceOf[Commands]
       }
       
-      extension [Self <: Commands](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Commands] (val x: Self) extends AnyVal {
         
         inline def setRedoCommand(value: RedoCommand): Self = StObject.set(x, "RedoCommand", value.asInstanceOf[js.Any])
       }

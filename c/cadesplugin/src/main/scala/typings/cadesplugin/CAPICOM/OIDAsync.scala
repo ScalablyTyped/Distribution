@@ -30,7 +30,8 @@ object OIDAsync {
     __obj.asInstanceOf[OIDAsync]
   }
   
-  extension [Self <: OIDAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OIDAsync] (val x: Self) extends AnyVal {
     
     inline def setFriendlyName(
       value: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types

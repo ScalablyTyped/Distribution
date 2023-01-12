@@ -32,7 +32,8 @@ object IMediaDeviceControlCapabilities {
     __obj.asInstanceOf[IMediaDeviceControlCapabilities]
   }
   
-  extension [Self <: IMediaDeviceControlCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaDeviceControlCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAutoModeSupported(value: Boolean): Self = StObject.set(x, "autoModeSupported", value.asInstanceOf[js.Any])
     

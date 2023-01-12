@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[RemoteDevConfig]
     }
     
-    extension [Self <: RemoteDevConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteDevConfig] (val x: Self) extends AnyVal {
       
       inline def setFilters(value: js.Object): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       

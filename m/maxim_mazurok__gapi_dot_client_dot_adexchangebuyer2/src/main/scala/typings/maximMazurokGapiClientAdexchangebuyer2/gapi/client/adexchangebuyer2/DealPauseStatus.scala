@@ -28,7 +28,8 @@ object DealPauseStatus {
     __obj.asInstanceOf[DealPauseStatus]
   }
   
-  extension [Self <: DealPauseStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DealPauseStatus] (val x: Self) extends AnyVal {
     
     inline def setBuyerPauseReason(value: String): Self = StObject.set(x, "buyerPauseReason", value.asInstanceOf[js.Any])
     

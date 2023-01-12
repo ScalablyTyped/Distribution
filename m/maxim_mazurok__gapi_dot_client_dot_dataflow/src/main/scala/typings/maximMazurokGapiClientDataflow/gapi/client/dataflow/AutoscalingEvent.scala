@@ -31,7 +31,8 @@ object AutoscalingEvent {
     __obj.asInstanceOf[AutoscalingEvent]
   }
   
-  extension [Self <: AutoscalingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingEvent] (val x: Self) extends AnyVal {
     
     inline def setCurrentNumWorkers(value: String): Self = StObject.set(x, "currentNumWorkers", value.asInstanceOf[js.Any])
     

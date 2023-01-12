@@ -19,7 +19,8 @@ object GPUBufferBindingLayout {
     __obj.asInstanceOf[GPUBufferBindingLayout]
   }
   
-  extension [Self <: GPUBufferBindingLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUBufferBindingLayout] (val x: Self) extends AnyVal {
     
     inline def setHasDynamicOffset(value: Boolean): Self = StObject.set(x, "hasDynamicOffset", value.asInstanceOf[js.Any])
     

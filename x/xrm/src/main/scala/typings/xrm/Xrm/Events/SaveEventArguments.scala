@@ -59,7 +59,8 @@ object SaveEventArguments {
     __obj.asInstanceOf[SaveEventArguments]
   }
   
-  extension [Self <: SaveEventArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveEventArguments] (val x: Self) extends AnyVal {
     
     inline def setGetSaveMode(value: () => SaveMode): Self = StObject.set(x, "getSaveMode", js.Any.fromFunction0(value))
     

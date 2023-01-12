@@ -41,7 +41,8 @@ object distTypesInternalObservableConnectableMod {
       __obj.asInstanceOf[ConnectableConfig[T]]
     }
     
-    extension [Self <: ConnectableConfig[?], T](x: Self & ConnectableConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectableConfig[?], T] (val x: Self & ConnectableConfig[T]) extends AnyVal {
       
       inline def setConnector(value: () => SubjectLike[T]): Self = StObject.set(x, "connector", js.Any.fromFunction0(value))
       

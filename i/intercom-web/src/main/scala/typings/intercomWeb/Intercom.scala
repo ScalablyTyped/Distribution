@@ -24,7 +24,8 @@ object Intercom {
       __obj.asInstanceOf[IntercomAvatar]
     }
     
-    extension [Self <: IntercomAvatar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntercomAvatar] (val x: Self) extends AnyVal {
       
       inline def setImage_url(value: String): Self = StObject.set(x, "image_url", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object Intercom {
       __obj.asInstanceOf[IntercomCompany]
     }
     
-    extension [Self <: IntercomCompany](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntercomCompany] (val x: Self) extends AnyVal {
       
       inline def setCompany_id(value: String | Double): Self = StObject.set(x, "company_id", value.asInstanceOf[js.Any])
       
@@ -242,7 +244,8 @@ object Intercom {
       __obj.asInstanceOf[IntercomSettings]
     }
     
-    extension [Self <: IntercomSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntercomSettings] (val x: Self) extends AnyVal {
       
       inline def setAction_color(value: String): Self = StObject.set(x, "action_color", value.asInstanceOf[js.Any])
       

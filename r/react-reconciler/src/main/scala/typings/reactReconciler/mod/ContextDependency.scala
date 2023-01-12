@@ -19,7 +19,8 @@ object ContextDependency {
     __obj.asInstanceOf[ContextDependency[T]]
   }
   
-  extension [Self <: ContextDependency[?], T](x: Self & ContextDependency[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextDependency[?], T] (val x: Self & ContextDependency[T]) extends AnyVal {
     
     inline def setContext(value: ReactContext[T]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

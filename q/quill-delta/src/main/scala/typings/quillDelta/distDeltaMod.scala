@@ -290,7 +290,8 @@ object distDeltaMod {
       __obj.asInstanceOf[EmbedHandler[T]]
     }
     
-    extension [Self <: EmbedHandler[?], T](x: Self & EmbedHandler[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmbedHandler[?], T] (val x: Self & EmbedHandler[T]) extends AnyVal {
       
       inline def setCompose(value: (T, T, Boolean) => T): Self = StObject.set(x, "compose", js.Any.fromFunction3(value))
       

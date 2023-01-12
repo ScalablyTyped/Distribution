@@ -61,7 +61,8 @@ object ISelectInfo {
     __obj.asInstanceOf[ISelectInfo]
   }
   
-  extension [Self <: ISelectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISelectInfo] (val x: Self) extends AnyVal {
     
     inline def setQContinuousRangeInfo(value: js.Array[IRange]): Self = StObject.set(x, "qContinuousRangeInfo", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object IBItemidstringkeystringsa {
     __obj.asInstanceOf[IBItemidstringkeystringsa]
   }
   
-  extension [Self <: IBItemidstringkeystringsa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBItemidstringkeystringsa] (val x: Self) extends AnyVal {
     
     inline def set$(value: IdKey): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }

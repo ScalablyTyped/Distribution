@@ -51,7 +51,8 @@ object IR {
       __obj.asInstanceOf[ArrayOption]
     }
     
-    extension [Self <: ArrayOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayOption] (val x: Self) extends AnyVal {
       
       inline def setEmitter(value: Double | String): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object IR {
       __obj.asInstanceOf[LoadCalibrationOption]
     }
     
-    extension [Self <: LoadCalibrationOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadCalibrationOption] (val x: Self) extends AnyVal {
       
       inline def setMax(value: js.Array[Double]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

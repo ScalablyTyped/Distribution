@@ -35,7 +35,8 @@ object Joined {
     __obj.asInstanceOf[Joined]
   }
   
-  extension [Self <: Joined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Joined] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: BusinessUserAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

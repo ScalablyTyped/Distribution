@@ -25,7 +25,8 @@ object `200ContentApplicationjsonRoleState403Unknown` {
     __obj.asInstanceOf[`200ContentApplicationjsonRoleState403Unknown`]
   }
   
-  extension [Self <: `200ContentApplicationjsonRoleState403Unknown`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `200ContentApplicationjsonRoleState403Unknown`] (val x: Self) extends AnyVal {
     
     inline def set200(value: ContentApplicationjsonRoleState): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     

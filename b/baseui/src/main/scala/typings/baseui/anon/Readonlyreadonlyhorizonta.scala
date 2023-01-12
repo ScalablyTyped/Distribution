@@ -20,7 +20,8 @@ object Readonlyreadonlyhorizonta {
     __obj.asInstanceOf[Readonlyreadonlyhorizonta]
   }
   
-  extension [Self <: Readonlyreadonlyhorizonta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlyreadonlyhorizonta] (val x: Self) extends AnyVal {
     
     inline def setHorizontal(value: horizontal): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     

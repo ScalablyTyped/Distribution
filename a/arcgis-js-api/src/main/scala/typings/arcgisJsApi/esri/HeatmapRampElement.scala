@@ -37,7 +37,8 @@ object HeatmapRampElement {
     __obj.asInstanceOf[HeatmapRampElement]
   }
   
-  extension [Self <: HeatmapRampElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeatmapRampElement] (val x: Self) extends AnyVal {
     
     inline def setInfos(value: js.Array[HeatmapRampStop]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     

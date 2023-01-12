@@ -21,7 +21,8 @@ object IndicesStatsShardLease {
     __obj.asInstanceOf[IndicesStatsShardLease]
   }
   
-  extension [Self <: IndicesStatsShardLease](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesStatsShardLease] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

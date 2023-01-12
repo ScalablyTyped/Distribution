@@ -19,7 +19,8 @@ object Tick {
     __obj.asInstanceOf[Tick]
   }
   
-  extension [Self <: Tick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tick] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String | js.Array[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

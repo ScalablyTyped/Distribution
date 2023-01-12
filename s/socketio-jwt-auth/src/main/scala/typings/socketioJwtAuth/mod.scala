@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[authOptions]
     }
     
-    extension [Self <: authOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: authOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

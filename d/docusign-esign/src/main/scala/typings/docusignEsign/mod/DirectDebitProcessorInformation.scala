@@ -105,7 +105,8 @@ object DirectDebitProcessorInformation {
     __obj.asInstanceOf[DirectDebitProcessorInformation]
   }
   
-  extension [Self <: DirectDebitProcessorInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectDebitProcessorInformation] (val x: Self) extends AnyVal {
     
     inline def setBankBranchCode(value: String): Self = StObject.set(x, "bankBranchCode", value.asInstanceOf[js.Any])
     

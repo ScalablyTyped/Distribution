@@ -36,7 +36,8 @@ object distSrcPuppeteerPuppeteerMod {
       __obj.asInstanceOf[DriverFactoryOptions]
     }
     
-    extension [Self <: DriverFactoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DriverFactoryOptions] (val x: Self) extends AnyVal {
       
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     }

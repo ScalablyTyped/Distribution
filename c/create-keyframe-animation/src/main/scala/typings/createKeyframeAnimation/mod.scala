@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[AnimationConfigStartAndEnd]
     }
     
-    extension [Self <: AnimationConfigStartAndEnd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationConfigStartAndEnd] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: js.Array[Double]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object mod {
       __obj.asInstanceOf[PresetsConfig]
     }
     
-    extension [Self <: PresetsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PresetsConfig] (val x: Self) extends AnyVal {
       
       inline def setClearTransformsBeforeStart(value: Boolean): Self = StObject.set(x, "clearTransformsBeforeStart", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object mod {
       __obj.asInstanceOf[RegisterAnimationConfig]
     }
     
-    extension [Self <: RegisterAnimationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterAnimationConfig] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: AnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

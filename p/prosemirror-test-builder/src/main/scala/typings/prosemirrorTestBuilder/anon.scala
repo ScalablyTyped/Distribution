@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Flat]
     }
     
-    extension [Self <: Flat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flat] (val x: Self) extends AnyVal {
       
       inline def setFlat(value: js.Array[Node]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def setSchema(value: typings.prosemirrorModel.mod.Schema[Any, Any]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     }

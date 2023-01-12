@@ -18,7 +18,8 @@ object DetectDominantLanguageRequest {
     __obj.asInstanceOf[DetectDominantLanguageRequest]
   }
   
-  extension [Self <: DetectDominantLanguageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectDominantLanguageRequest] (val x: Self) extends AnyVal {
     
     inline def setText(value: CustomerInputString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }

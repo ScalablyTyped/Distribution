@@ -15,7 +15,8 @@ object XpackUsageSecurityRolesDls {
     __obj.asInstanceOf[XpackUsageSecurityRolesDls]
   }
   
-  extension [Self <: XpackUsageSecurityRolesDls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageSecurityRolesDls] (val x: Self) extends AnyVal {
     
     inline def setBit_set_cache(value: XpackUsageSecurityRolesDlsBitSetCache): Self = StObject.set(x, "bit_set_cache", value.asInstanceOf[js.Any])
   }

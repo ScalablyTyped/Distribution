@@ -43,7 +43,8 @@ object EC2ResourceUtilization {
     __obj.asInstanceOf[EC2ResourceUtilization]
   }
   
-  extension [Self <: EC2ResourceUtilization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EC2ResourceUtilization] (val x: Self) extends AnyVal {
     
     inline def setDiskResourceUtilization(value: DiskResourceUtilization): Self = StObject.set(x, "DiskResourceUtilization", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object RestorePlanResponse {
     __obj.asInstanceOf[RestorePlanResponse]
   }
   
-  extension [Self <: RestorePlanResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestorePlanResponse] (val x: Self) extends AnyVal {
     
     inline def setBackupSetsToRestore(value: js.Array[DatabaseFileInfo]): Self = StObject.set(x, "backupSetsToRestore", value.asInstanceOf[js.Any])
     

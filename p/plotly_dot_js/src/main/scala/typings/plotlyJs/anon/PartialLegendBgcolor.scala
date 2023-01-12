@@ -74,7 +74,8 @@ object PartialLegendBgcolor {
     __obj.asInstanceOf[PartialLegendBgcolor]
   }
   
-  extension [Self <: PartialLegendBgcolor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLegendBgcolor] (val x: Self) extends AnyVal {
     
     inline def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     

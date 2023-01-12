@@ -23,7 +23,8 @@ object GeofenceGeometry {
     __obj.asInstanceOf[GeofenceGeometry]
   }
   
-  extension [Self <: GeofenceGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeofenceGeometry] (val x: Self) extends AnyVal {
     
     inline def setCircle(value: Circle): Self = StObject.set(x, "Circle", value.asInstanceOf[js.Any])
     

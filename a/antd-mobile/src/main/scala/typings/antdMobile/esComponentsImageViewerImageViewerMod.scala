@@ -45,7 +45,8 @@ object esComponentsImageViewerImageViewerMod {
       __obj.asInstanceOf[ImageViewerProps]
     }
     
-    extension [Self <: ImageViewerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageViewerProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       
@@ -109,7 +110,8 @@ object esComponentsImageViewerImageViewerMod {
       __obj.asInstanceOf[MultiImageViewerProps]
     }
     
-    extension [Self <: MultiImageViewerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiImageViewerProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

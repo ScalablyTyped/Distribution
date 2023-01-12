@@ -16,7 +16,8 @@ object PerformanceEventMap {
     __obj.asInstanceOf[PerformanceEventMap]
   }
   
-  extension [Self <: PerformanceEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceEventMap] (val x: Self) extends AnyVal {
     
     inline def setResourcetimingbufferfull(value: Event): Self = StObject.set(x, "resourcetimingbufferfull", value.asInstanceOf[js.Any])
   }

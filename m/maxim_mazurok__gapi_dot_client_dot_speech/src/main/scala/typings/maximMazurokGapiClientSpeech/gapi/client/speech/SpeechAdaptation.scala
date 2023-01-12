@@ -25,7 +25,8 @@ object SpeechAdaptation {
     __obj.asInstanceOf[SpeechAdaptation]
   }
   
-  extension [Self <: SpeechAdaptation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechAdaptation] (val x: Self) extends AnyVal {
     
     inline def setCustomClasses(value: js.Array[CustomClass]): Self = StObject.set(x, "customClasses", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object EMRStepMetadata {
     __obj.asInstanceOf[EMRStepMetadata]
   }
   
-  extension [Self <: EMRStepMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EMRStepMetadata] (val x: Self) extends AnyVal {
     
     inline def setClusterId(value: String256): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     

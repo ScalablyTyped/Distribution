@@ -21,7 +21,8 @@ object IContainChainsOptions {
     __obj.asInstanceOf[IContainChainsOptions]
   }
   
-  extension [Self <: IContainChainsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContainChainsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlternateDirection(value: Boolean): Self = StObject.set(x, "alternateDirection", value.asInstanceOf[js.Any])
     

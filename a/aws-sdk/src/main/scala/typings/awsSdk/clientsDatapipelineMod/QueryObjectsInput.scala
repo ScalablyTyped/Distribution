@@ -38,7 +38,8 @@ object QueryObjectsInput {
     __obj.asInstanceOf[QueryObjectsInput]
   }
   
-  extension [Self <: QueryObjectsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryObjectsInput] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: int): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

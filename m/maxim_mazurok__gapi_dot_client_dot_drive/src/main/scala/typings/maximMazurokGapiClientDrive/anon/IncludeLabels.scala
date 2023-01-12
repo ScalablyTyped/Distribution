@@ -71,7 +71,8 @@ object IncludeLabels {
     __obj.asInstanceOf[IncludeLabels]
   }
   
-  extension [Self <: IncludeLabels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeLabels] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

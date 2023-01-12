@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[RequestParameters]
     }
     
-    extension [Self <: RequestParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestParameters] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | FormData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

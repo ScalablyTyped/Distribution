@@ -34,7 +34,8 @@ object GridColumnFilterable {
     __obj.asInstanceOf[GridColumnFilterable]
   }
   
-  extension [Self <: GridColumnFilterable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridColumnFilterable] (val x: Self) extends AnyVal {
     
     inline def setCell(value: GridColumnFilterableCell): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     

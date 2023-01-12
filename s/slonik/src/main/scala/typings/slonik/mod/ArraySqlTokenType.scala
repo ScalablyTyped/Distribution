@@ -26,7 +26,8 @@ object ArraySqlTokenType {
     __obj.asInstanceOf[ArraySqlTokenType]
   }
   
-  extension [Self <: ArraySqlTokenType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArraySqlTokenType] (val x: Self) extends AnyVal {
     
     inline def setMemberType(value: TypeNameIdentifierType | SqlTokenType): Self = StObject.set(x, "memberType", value.asInstanceOf[js.Any])
     

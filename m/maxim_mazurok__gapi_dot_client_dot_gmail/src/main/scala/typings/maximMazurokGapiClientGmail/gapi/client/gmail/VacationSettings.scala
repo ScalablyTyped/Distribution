@@ -46,7 +46,8 @@ object VacationSettings {
     __obj.asInstanceOf[VacationSettings]
   }
   
-  extension [Self <: VacationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VacationSettings] (val x: Self) extends AnyVal {
     
     inline def setEnableAutoReply(value: Boolean): Self = StObject.set(x, "enableAutoReply", value.asInstanceOf[js.Any])
     

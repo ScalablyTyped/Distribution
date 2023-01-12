@@ -115,7 +115,8 @@ object mod {
       __obj.asInstanceOf[FsImplementation]
     }
     
-    extension [Self <: FsImplementation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FsImplementation] (val x: Self) extends AnyVal {
       
       inline def setMkdir(value: Typeofmkdir): Self = StObject.set(x, "mkdir", value.asInstanceOf[js.Any])
       
@@ -157,7 +158,8 @@ object mod {
       __obj.asInstanceOf[FsImplementationSync]
     }
     
-    extension [Self <: FsImplementationSync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FsImplementationSync] (val x: Self) extends AnyVal {
       
       inline def setMkdirSync(value: FnCall): Self = StObject.set(x, "mkdirSync", value.asInstanceOf[js.Any])
       
@@ -180,7 +182,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFs(value: FsImplementation): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
@@ -205,7 +208,8 @@ object mod {
       __obj.asInstanceOf[OptionsSync]
     }
     
-    extension [Self <: OptionsSync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsSync] (val x: Self) extends AnyVal {
       
       inline def setFs(value: FsImplementationSync): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       

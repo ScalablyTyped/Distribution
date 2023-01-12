@@ -20,7 +20,8 @@ object InterconnectAttachmentsScopedList {
     __obj.asInstanceOf[InterconnectAttachmentsScopedList]
   }
   
-  extension [Self <: InterconnectAttachmentsScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterconnectAttachmentsScopedList] (val x: Self) extends AnyVal {
     
     inline def setInterconnectAttachments(value: js.Array[InterconnectAttachment]): Self = StObject.set(x, "interconnectAttachments", value.asInstanceOf[js.Any])
     

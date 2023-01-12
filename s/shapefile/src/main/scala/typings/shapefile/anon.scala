@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Done[RecordType]]
     }
     
-    extension [Self <: Done[?], RecordType](x: Self & Done[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Done[?], RecordType] (val x: Self & Done[RecordType]) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       

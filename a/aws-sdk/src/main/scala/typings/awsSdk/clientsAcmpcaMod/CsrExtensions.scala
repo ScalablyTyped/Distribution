@@ -23,7 +23,8 @@ object CsrExtensions {
     __obj.asInstanceOf[CsrExtensions]
   }
   
-  extension [Self <: CsrExtensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CsrExtensions] (val x: Self) extends AnyVal {
     
     inline def setKeyUsage(value: KeyUsage): Self = StObject.set(x, "KeyUsage", value.asInstanceOf[js.Any])
     

@@ -76,7 +76,8 @@ object portletConfig {
     __obj.asInstanceOf[portletConfig]
   }
   
-  extension [Self <: portletConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: portletConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

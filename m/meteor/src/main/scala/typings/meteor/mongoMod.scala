@@ -588,7 +588,8 @@ object mongoMod {
       @js.native
       val ^ : ObjectIDStatic = js.native
       
-      extension [Self <: ObjectID](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ObjectID] (val x: Self) extends AnyVal {
         
         inline def setEquals_(value: ObjectID => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
         
@@ -644,7 +645,8 @@ object mongoMod {
         __obj.asInstanceOf[AllowDenyOptions]
       }
       
-      extension [Self <: AllowDenyOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AllowDenyOptions] (val x: Self) extends AnyVal {
         
         inline def setFetch(value: js.Array[String]): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
         
@@ -971,7 +973,8 @@ object mongoMod {
         __obj.asInstanceOf[FieldExpression[T]]
       }
       
-      extension [Self <: FieldExpression[?], T](x: Self & FieldExpression[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FieldExpression[?], T] (val x: Self & FieldExpression[T]) extends AnyVal {
         
         inline def set$all(value: js.Array[T]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
         
@@ -1165,7 +1168,8 @@ object mongoMod {
         __obj.asInstanceOf[ObserveCallbacks[T]]
       }
       
-      extension [Self <: ObserveCallbacks[?], T](x: Self & ObserveCallbacks[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ObserveCallbacks[?], T] (val x: Self & ObserveCallbacks[T]) extends AnyVal {
         
         inline def setAdded(value: /* document */ T => Unit): Self = StObject.set(x, "added", js.Any.fromFunction1(value))
         
@@ -1220,7 +1224,8 @@ object mongoMod {
         __obj.asInstanceOf[ObserveChangesCallbacks[T]]
       }
       
-      extension [Self <: ObserveChangesCallbacks[?], T](x: Self & ObserveChangesCallbacks[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ObserveChangesCallbacks[?], T] (val x: Self & ObserveChangesCallbacks[T]) extends AnyVal {
         
         inline def setAdded(value: (/* id */ String, /* fields */ Partial[T]) => Unit): Self = StObject.set(x, "added", js.Any.fromFunction2(value))
         
@@ -1296,7 +1301,8 @@ object mongoMod {
         __obj.asInstanceOf[Options[T]]
       }
       
-      extension [Self <: Options[?], T](x: Self & Options[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
         
         inline def setFields(value: FieldSpecifier): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -1389,7 +1395,8 @@ object mongoMod {
         __obj.asInstanceOf[QueryWithModifiers[T]]
       }
       
-      extension [Self <: QueryWithModifiers[?], T](x: Self & QueryWithModifiers[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: QueryWithModifiers[?], T] (val x: Self & QueryWithModifiers[T]) extends AnyVal {
         
         inline def set$comment(value: String): Self = StObject.set(x, "$comment", value.asInstanceOf[js.Any])
         

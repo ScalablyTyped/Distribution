@@ -17,7 +17,8 @@ object KinesisConfigMap {
     __obj.asInstanceOf[KinesisConfigMap]
   }
   
-  extension [Self <: KinesisConfigMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisConfigMap] (val x: Self) extends AnyVal {
     
     inline def setKinesisStreamName(value: String): Self = StObject.set(x, "kinesisStreamName", value.asInstanceOf[js.Any])
     

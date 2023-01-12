@@ -15,7 +15,8 @@ object ExpandedBoolean {
     __obj.asInstanceOf[ExpandedBoolean]
   }
   
-  extension [Self <: ExpandedBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandedBoolean] (val x: Self) extends AnyVal {
     
     inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
   }

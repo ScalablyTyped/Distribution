@@ -28,7 +28,8 @@ object PutIdentityPolicyRequest {
     __obj.asInstanceOf[PutIdentityPolicyRequest]
   }
   
-  extension [Self <: PutIdentityPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutIdentityPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ImagePixelLocationResultProperties {
     __obj.asInstanceOf[ImagePixelLocationResultProperties]
   }
   
-  extension [Self <: ImagePixelLocationResultProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagePixelLocationResultProperties] (val x: Self) extends AnyVal {
     
     inline def setGeometries(value: js.Array[Any]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TrackComputedStyleUpdatesRequest {
     __obj.asInstanceOf[TrackComputedStyleUpdatesRequest]
   }
   
-  extension [Self <: TrackComputedStyleUpdatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackComputedStyleUpdatesRequest] (val x: Self) extends AnyVal {
     
     inline def setPropertiesToTrack(value: js.Array[CSSComputedStyleProperty]): Self = StObject.set(x, "propertiesToTrack", value.asInstanceOf[js.Any])
     

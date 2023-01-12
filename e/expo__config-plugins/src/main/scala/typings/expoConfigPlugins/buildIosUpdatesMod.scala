@@ -148,7 +148,8 @@ object buildIosUpdatesMod {
       __obj.asInstanceOf[ShellScriptBuildPhase]
     }
     
-    extension [Self <: ShellScriptBuildPhase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellScriptBuildPhase] (val x: Self) extends AnyVal {
       
       inline def setIsa(value: PBXShellScriptBuildPhase): Self = StObject.set(x, "isa", value.asInstanceOf[js.Any])
       

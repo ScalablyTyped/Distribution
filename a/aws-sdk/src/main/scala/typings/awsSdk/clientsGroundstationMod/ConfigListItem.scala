@@ -33,7 +33,8 @@ object ConfigListItem {
     __obj.asInstanceOf[ConfigListItem]
   }
   
-  extension [Self <: ConfigListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigListItem] (val x: Self) extends AnyVal {
     
     inline def setConfigArn(value: ConfigArn): Self = StObject.set(x, "configArn", value.asInstanceOf[js.Any])
     

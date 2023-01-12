@@ -74,7 +74,8 @@ object CreateDomainRequest {
     __obj.asInstanceOf[CreateDomainRequest]
   }
   
-  extension [Self <: CreateDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setAppNetworkAccessType(value: AppNetworkAccessType): Self = StObject.set(x, "AppNetworkAccessType", value.asInstanceOf[js.Any])
     

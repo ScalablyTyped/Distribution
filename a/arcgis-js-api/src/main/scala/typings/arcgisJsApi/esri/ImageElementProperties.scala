@@ -25,7 +25,8 @@ object ImageElementProperties {
     __obj.asInstanceOf[ImageElementProperties]
   }
   
-  extension [Self <: ImageElementProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageElementProperties] (val x: Self) extends AnyVal {
     
     inline def setImage(value: String | HTMLImageElement | HTMLCanvasElement | ImageData): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

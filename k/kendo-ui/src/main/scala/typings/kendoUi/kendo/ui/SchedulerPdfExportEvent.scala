@@ -18,7 +18,8 @@ object SchedulerPdfExportEvent {
     __obj.asInstanceOf[SchedulerPdfExportEvent]
   }
   
-  extension [Self <: SchedulerPdfExportEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerPdfExportEvent] (val x: Self) extends AnyVal {
     
     inline def setPromise(value: JQueryPromise[Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     

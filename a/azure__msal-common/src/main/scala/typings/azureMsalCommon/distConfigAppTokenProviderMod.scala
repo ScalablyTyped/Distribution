@@ -23,7 +23,8 @@ object distConfigAppTokenProviderMod {
       __obj.asInstanceOf[AppTokenProviderParameters]
     }
     
-    extension [Self <: AppTokenProviderParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppTokenProviderParameters] (val x: Self) extends AnyVal {
       
       inline def setClaims(value: String): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object distConfigAppTokenProviderMod {
       __obj.asInstanceOf[AppTokenProviderResult]
     }
     
-    extension [Self <: AppTokenProviderResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppTokenProviderResult] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object PromptDetail {
     __obj.asInstanceOf[PromptDetail]
   }
   
-  extension [Self <: PromptDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromptDetail] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: UnknownObject): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

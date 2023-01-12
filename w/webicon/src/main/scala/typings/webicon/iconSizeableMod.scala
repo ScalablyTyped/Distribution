@@ -20,7 +20,8 @@ object iconSizeableMod {
       __obj.asInstanceOf[Sizeable]
     }
     
-    extension [Self <: Sizeable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sizeable] (val x: Self) extends AnyVal {
       
       inline def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
       

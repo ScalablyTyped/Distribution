@@ -22,7 +22,8 @@ object Disabled {
     __obj.asInstanceOf[Disabled[RecordType]]
   }
   
-  extension [Self <: Disabled[?], RecordType /* <: KeyWiseTransferItem */](x: Self & Disabled[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Disabled[?], RecordType /* <: KeyWiseTransferItem */] (val x: Self & Disabled[RecordType]) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

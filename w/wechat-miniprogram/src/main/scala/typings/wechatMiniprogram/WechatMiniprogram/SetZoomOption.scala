@@ -25,7 +25,8 @@ object SetZoomOption {
     __obj.asInstanceOf[SetZoomOption]
   }
   
-  extension [Self <: SetZoomOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetZoomOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

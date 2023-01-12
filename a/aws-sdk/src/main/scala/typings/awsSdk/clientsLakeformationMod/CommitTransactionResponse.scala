@@ -18,7 +18,8 @@ object CommitTransactionResponse {
     __obj.asInstanceOf[CommitTransactionResponse]
   }
   
-  extension [Self <: CommitTransactionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitTransactionResponse] (val x: Self) extends AnyVal {
     
     inline def setTransactionStatus(value: TransactionStatus): Self = StObject.set(x, "TransactionStatus", value.asInstanceOf[js.Any])
     

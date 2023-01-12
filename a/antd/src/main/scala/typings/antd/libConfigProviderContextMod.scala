@@ -43,7 +43,8 @@ object libConfigProviderContextMod {
       __obj.asInstanceOf[BasicExportProps]
     }
     
-    extension [Self <: BasicExportProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicExportProps] (val x: Self) extends AnyVal {
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object libConfigProviderContextMod {
       __obj.asInstanceOf[CSPConfig]
     }
     
-    extension [Self <: CSPConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSPConfig] (val x: Self) extends AnyVal {
       
       inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object libConfigProviderContextMod {
       __obj.asInstanceOf[ConsumerConfig]
     }
     
-    extension [Self <: ConsumerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsumerConfig] (val x: Self) extends AnyVal {
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     }
@@ -156,7 +159,8 @@ object libConfigProviderContextMod {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setErrorColor(value: String): Self = StObject.set(x, "errorColor", value.asInstanceOf[js.Any])
       

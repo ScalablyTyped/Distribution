@@ -19,7 +19,8 @@ object Map {
   @js.native
   val ^ : MapConstructor = js.native
   
-  extension [Self <: Map](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
     
     inline def setGetKey(value: Double => Value): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
     

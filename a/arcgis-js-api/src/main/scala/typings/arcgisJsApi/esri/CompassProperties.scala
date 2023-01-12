@@ -39,7 +39,8 @@ object CompassProperties {
     __obj.asInstanceOf[CompassProperties]
   }
   
-  extension [Self <: CompassProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompassProperties] (val x: Self) extends AnyVal {
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

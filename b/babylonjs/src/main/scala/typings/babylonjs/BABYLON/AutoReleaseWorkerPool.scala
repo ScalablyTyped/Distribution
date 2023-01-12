@@ -32,7 +32,8 @@ object AutoReleaseWorkerPool {
     __obj.asInstanceOf[AutoReleaseWorkerPool]
   }
   
-  extension [Self <: AutoReleaseWorkerPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoReleaseWorkerPool] (val x: Self) extends AnyVal {
     
     inline def set_createWorkerAsync(value: Any): Self = StObject.set(x, "_createWorkerAsync", value.asInstanceOf[js.Any])
     

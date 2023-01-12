@@ -17,7 +17,8 @@ object DialogNodeOutputModifiers {
     __obj.asInstanceOf[DialogNodeOutputModifiers]
   }
   
-  extension [Self <: DialogNodeOutputModifiers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogNodeOutputModifiers] (val x: Self) extends AnyVal {
     
     inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     

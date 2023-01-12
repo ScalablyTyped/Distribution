@@ -22,7 +22,8 @@ object CanvasEvent {
     __obj.asInstanceOf[CanvasEvent]
   }
   
-  extension [Self <: CanvasEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasEvent] (val x: Self) extends AnyVal {
     
     inline def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     

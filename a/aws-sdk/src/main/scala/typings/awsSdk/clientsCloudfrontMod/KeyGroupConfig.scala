@@ -28,7 +28,8 @@ object KeyGroupConfig {
     __obj.asInstanceOf[KeyGroupConfig]
   }
   
-  extension [Self <: KeyGroupConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyGroupConfig] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

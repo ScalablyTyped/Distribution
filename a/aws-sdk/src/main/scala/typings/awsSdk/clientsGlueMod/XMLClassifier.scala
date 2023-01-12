@@ -43,7 +43,8 @@ object XMLClassifier {
     __obj.asInstanceOf[XMLClassifier]
   }
   
-  extension [Self <: XMLClassifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLClassifier] (val x: Self) extends AnyVal {
     
     inline def setClassification(value: Classification): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
     

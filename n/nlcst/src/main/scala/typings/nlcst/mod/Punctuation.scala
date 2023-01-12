@@ -20,7 +20,8 @@ object Punctuation {
     __obj.asInstanceOf[Punctuation]
   }
   
-  extension [Self <: Punctuation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Punctuation] (val x: Self) extends AnyVal {
     
     inline def setType(value: PunctuationNode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

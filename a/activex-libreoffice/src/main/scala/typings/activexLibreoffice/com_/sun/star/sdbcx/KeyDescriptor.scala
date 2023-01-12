@@ -65,7 +65,8 @@ object KeyDescriptor {
     __obj.asInstanceOf[KeyDescriptor]
   }
   
-  extension [Self <: KeyDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDeleteRule(value: Double): Self = StObject.set(x, "DeleteRule", value.asInstanceOf[js.Any])
     

@@ -153,7 +153,8 @@ object mod {
       __obj.asInstanceOf[CompressOptions]
     }
     
-    extension [Self <: CompressOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressOptions] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       
@@ -220,7 +221,8 @@ object mod {
       __obj.asInstanceOf[MinifyOptions]
     }
     
-    extension [Self <: MinifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinifyOptions] (val x: Self) extends AnyVal {
       
       inline def setAfterCompress(value: AfterCompressFn | js.Array[AfterCompressFn]): Self = StObject.set(x, "afterCompress", value.asInstanceOf[js.Any])
       
@@ -275,7 +277,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
@@ -304,7 +307,8 @@ object mod {
       __obj.asInstanceOf[Usage]
     }
     
-    extension [Self <: Usage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Usage] (val x: Self) extends AnyVal {
       
       inline def setBlacklist(value: Classes): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[AutoStart_]
     }
     
-    extension [Self <: AutoStart_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoStart_] (val x: Self) extends AnyVal {
       
       inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Autostart]
     }
     
-    extension [Self <: Autostart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Autostart] (val x: Self) extends AnyVal {
       
       inline def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
     }
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       

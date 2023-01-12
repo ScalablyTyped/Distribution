@@ -67,7 +67,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setMixins(value: Record[String, Mixin]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
       

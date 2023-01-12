@@ -31,7 +31,8 @@ object FeatureIdProto {
     __obj.asInstanceOf[FeatureIdProto]
   }
   
-  extension [Self <: FeatureIdProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureIdProto] (val x: Self) extends AnyVal {
     
     inline def setCellId(value: String): Self = StObject.set(x, "cellId", value.asInstanceOf[js.Any])
     

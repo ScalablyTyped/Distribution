@@ -23,7 +23,8 @@ object DeleteSecurityProfileRequest {
     __obj.asInstanceOf[DeleteSecurityProfileRequest]
   }
   
-  extension [Self <: DeleteSecurityProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSecurityProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setExpectedVersion(value: OptionalVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
     

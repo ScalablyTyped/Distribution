@@ -23,7 +23,8 @@ object BatchListObjectChildrenResponse {
     __obj.asInstanceOf[BatchListObjectChildrenResponse]
   }
   
-  extension [Self <: BatchListObjectChildrenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchListObjectChildrenResponse] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: LinkNameToObjectIdentifierMap): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
     

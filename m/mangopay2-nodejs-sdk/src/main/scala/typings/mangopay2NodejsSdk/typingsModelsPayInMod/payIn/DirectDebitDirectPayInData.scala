@@ -60,7 +60,8 @@ object DirectDebitDirectPayInData {
     __obj.asInstanceOf[DirectDebitDirectPayInData]
   }
   
-  extension [Self <: DirectDebitDirectPayInData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectDebitDirectPayInData] (val x: Self) extends AnyVal {
     
     inline def setChargeDate(value: Timestamp): Self = StObject.set(x, "ChargeDate", value.asInstanceOf[js.Any])
     

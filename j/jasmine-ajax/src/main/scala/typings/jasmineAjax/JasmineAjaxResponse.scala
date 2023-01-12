@@ -30,7 +30,8 @@ object JasmineAjaxResponse {
     __obj.asInstanceOf[JasmineAjaxResponse]
   }
   
-  extension [Self <: JasmineAjaxResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JasmineAjaxResponse] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

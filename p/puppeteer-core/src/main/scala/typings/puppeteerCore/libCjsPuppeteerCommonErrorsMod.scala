@@ -101,7 +101,8 @@ object libCjsPuppeteerCommonErrorsMod {
       __obj.asInstanceOf[PuppeteerErrors]
     }
     
-    extension [Self <: PuppeteerErrors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PuppeteerErrors] (val x: Self) extends AnyVal {
       
       inline def setProtocolError(value: Instantiable0[ProtocolError]): Self = StObject.set(x, "ProtocolError", value.asInstanceOf[js.Any])
       

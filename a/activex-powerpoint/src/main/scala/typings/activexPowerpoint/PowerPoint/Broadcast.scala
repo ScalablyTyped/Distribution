@@ -37,7 +37,8 @@ object Broadcast {
     __obj.asInstanceOf[Broadcast]
   }
   
-  extension [Self <: Broadcast](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Broadcast] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

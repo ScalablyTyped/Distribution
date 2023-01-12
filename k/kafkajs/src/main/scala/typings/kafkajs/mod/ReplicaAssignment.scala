@@ -17,7 +17,8 @@ object ReplicaAssignment {
     __obj.asInstanceOf[ReplicaAssignment]
   }
   
-  extension [Self <: ReplicaAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicaAssignment] (val x: Self) extends AnyVal {
     
     inline def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     

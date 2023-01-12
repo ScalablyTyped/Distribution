@@ -19,7 +19,8 @@ object CanvasImageSmoothing {
     __obj.asInstanceOf[CanvasImageSmoothing]
   }
   
-  extension [Self <: CanvasImageSmoothing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasImageSmoothing] (val x: Self) extends AnyVal {
     
     inline def setImageSmoothingEnabled(value: scala.Boolean): Self = StObject.set(x, "imageSmoothingEnabled", value.asInstanceOf[js.Any])
     

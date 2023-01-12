@@ -15,7 +15,8 @@ object ContentApplicationjsonCountUniques {
     __obj.asInstanceOf[ContentApplicationjsonCountUniques]
   }
   
-  extension [Self <: ContentApplicationjsonCountUniques](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonCountUniques] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonCountUniques): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

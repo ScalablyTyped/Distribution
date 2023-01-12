@@ -25,7 +25,8 @@ object IClientBlockListRequest {
     __obj.asInstanceOf[IClientBlockListRequest]
   }
   
-  extension [Self <: IClientBlockListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientBlockListRequest] (val x: Self) extends AnyVal {
     
     inline def setBlockIds(value: js.Array[String]): Self = StObject.set(x, "blockIds", value.asInstanceOf[js.Any])
     

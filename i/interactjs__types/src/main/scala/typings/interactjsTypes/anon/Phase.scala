@@ -16,7 +16,8 @@ object Phase {
     __obj.asInstanceOf[Phase]
   }
   
-  extension [Self <: Phase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Phase] (val x: Self) extends AnyVal {
     
     inline def setPhase(value: EventPhase): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
   }

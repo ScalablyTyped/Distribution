@@ -22,7 +22,8 @@ object ImageryLayerViewProperties {
     __obj.asInstanceOf[ImageryLayerViewProperties]
   }
   
-  extension [Self <: ImageryLayerViewProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageryLayerViewProperties] (val x: Self) extends AnyVal {
     
     inline def setPixelData(value: PixelData): Self = StObject.set(x, "pixelData", value.asInstanceOf[js.Any])
     

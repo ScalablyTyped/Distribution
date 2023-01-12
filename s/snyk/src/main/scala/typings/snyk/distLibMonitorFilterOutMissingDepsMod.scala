@@ -26,7 +26,8 @@ object distLibMonitorFilterOutMissingDepsMod {
       __obj.asInstanceOf[FilteredDepTree]
     }
     
-    extension [Self <: FilteredDepTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilteredDepTree] (val x: Self) extends AnyVal {
       
       inline def setFilteredDepTree(value: DepTree): Self = StObject.set(x, "filteredDepTree", value.asInstanceOf[js.Any])
       

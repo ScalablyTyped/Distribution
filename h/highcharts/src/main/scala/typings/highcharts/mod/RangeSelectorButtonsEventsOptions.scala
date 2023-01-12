@@ -23,7 +23,8 @@ object RangeSelectorButtonsEventsOptions {
     __obj.asInstanceOf[RangeSelectorButtonsEventsOptions]
   }
   
-  extension [Self <: RangeSelectorButtonsEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeSelectorButtonsEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setClick(value: (/* e */ Event, /* Return */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
     

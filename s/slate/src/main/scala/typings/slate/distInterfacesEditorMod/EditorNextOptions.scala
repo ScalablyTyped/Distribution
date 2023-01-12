@@ -26,7 +26,8 @@ object EditorNextOptions {
     __obj.asInstanceOf[EditorNextOptions[T]]
   }
   
-  extension [Self <: EditorNextOptions[?], T /* <: Descendant */](x: Self & EditorNextOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorNextOptions[?], T /* <: Descendant */] (val x: Self & EditorNextOptions[T]) extends AnyVal {
     
     inline def setAt(value: Location): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     

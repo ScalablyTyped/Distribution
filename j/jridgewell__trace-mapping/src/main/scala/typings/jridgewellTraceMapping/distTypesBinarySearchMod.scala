@@ -47,7 +47,8 @@ object distTypesBinarySearchMod {
       __obj.asInstanceOf[MemoState]
     }
     
-    extension [Self <: MemoState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoState] (val x: Self) extends AnyVal {
       
       inline def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
       

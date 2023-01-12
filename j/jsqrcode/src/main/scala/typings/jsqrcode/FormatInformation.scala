@@ -32,7 +32,8 @@ object FormatInformation {
     __obj.asInstanceOf[FormatInformation]
   }
   
-  extension [Self <: FormatInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatInformation] (val x: Self) extends AnyVal {
     
     inline def setDataMask(value: Double): Self = StObject.set(x, "DataMask", value.asInstanceOf[js.Any])
     

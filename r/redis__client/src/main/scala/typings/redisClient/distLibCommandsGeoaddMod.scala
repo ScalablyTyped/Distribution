@@ -36,7 +36,8 @@ object distLibCommandsGeoaddMod {
       __obj.asInstanceOf[GeoAddCommonOptions]
     }
     
-    extension [Self <: GeoAddCommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoAddCommonOptions] (val x: Self) extends AnyVal {
       
       inline def setCH(value: `true`): Self = StObject.set(x, "CH", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object distLibCommandsGeoaddMod {
       __obj.asInstanceOf[GeoMember]
     }
     
-    extension [Self <: GeoMember](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoMember] (val x: Self) extends AnyVal {
       
       inline def setMember(value: RedisCommandArgument): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
     }
@@ -78,7 +80,8 @@ object distLibCommandsGeoaddMod {
       __obj.asInstanceOf[NX]
     }
     
-    extension [Self <: NX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NX] (val x: Self) extends AnyVal {
       
       inline def setNX(value: `true`): Self = StObject.set(x, "NX", value.asInstanceOf[js.Any])
       
@@ -117,7 +120,8 @@ object distLibCommandsGeoaddMod {
       __obj.asInstanceOf[XX]
     }
     
-    extension [Self <: XX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XX] (val x: Self) extends AnyVal {
       
       inline def setXX(value: `true`): Self = StObject.set(x, "XX", value.asInstanceOf[js.Any])
       

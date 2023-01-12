@@ -89,7 +89,8 @@ object TimeGridProps {
     __obj.asInstanceOf[TimeGridProps[TEvent, TResource]]
   }
   
-  extension [Self <: TimeGridProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */](x: Self & (TimeGridProps[TEvent, TResource])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeGridProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self & (TimeGridProps[TEvent, TResource])) extends AnyVal {
     
     inline def setAccessors(value: js.Object): Self = StObject.set(x, "accessors", value.asInstanceOf[js.Any])
     

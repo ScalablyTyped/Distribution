@@ -117,7 +117,8 @@ object anon {
       __obj.asInstanceOf[RecordVersionCodeAndroidV]
     }
     
-    extension [Self <: RecordVersionCodeAndroidV](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordVersionCodeAndroidV] (val x: Self) extends AnyVal {
       
       inline def setBASE(value: AndroidVersion): Self = StObject.set(x, "BASE", value.asInstanceOf[js.Any])
       

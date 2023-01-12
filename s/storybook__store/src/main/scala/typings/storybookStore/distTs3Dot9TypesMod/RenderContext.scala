@@ -37,7 +37,8 @@ object RenderContext {
     __obj.asInstanceOf[RenderContext[TFramework]]
   }
   
-  extension [Self <: RenderContext[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & RenderContext[TFramework]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderContext[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] (val x: Self & RenderContext[TFramework]) extends AnyVal {
     
     inline def setForceRemount(value: Boolean): Self = StObject.set(x, "forceRemount", value.asInstanceOf[js.Any])
     

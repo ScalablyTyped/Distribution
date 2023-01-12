@@ -45,7 +45,8 @@ object TransitionAnimation {
     __obj.asInstanceOf[TransitionAnimation]
   }
   
-  extension [Self <: TransitionAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionAnimation] (val x: Self) extends AnyVal {
     
     inline def `setTransition-delay`(value: Double): Self = StObject.set(x, "transition-delay", value.asInstanceOf[js.Any])
     

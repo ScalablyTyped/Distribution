@@ -44,7 +44,8 @@ object PolyMouseEvent {
     __obj.asInstanceOf[PolyMouseEvent]
   }
   
-  extension [Self <: PolyMouseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolyMouseEvent] (val x: Self) extends AnyVal {
     
     inline def setEdge(value: Double): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     

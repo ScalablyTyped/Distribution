@@ -29,7 +29,8 @@ object ClassName {
     __obj.asInstanceOf[ClassName[TComponent]]
   }
   
-  extension [Self <: ClassName[?], TComponent /* <: RenderAsComponent */](x: Self & ClassName[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassName[?], TComponent /* <: RenderAsComponent */] (val x: Self & ClassName[TComponent]) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

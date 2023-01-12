@@ -17,7 +17,8 @@ object MlForecastResponse {
     __obj.asInstanceOf[MlForecastResponse]
   }
   
-  extension [Self <: MlForecastResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlForecastResponse] (val x: Self) extends AnyVal {
     
     inline def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object generalGraphMod {
       __obj.asInstanceOf[BetweennessOptions]
     }
     
-    extension [Self <: BetweennessOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BetweennessOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultWeight(value: Double): Self = StObject.set(x, "defaultWeight", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object generalGraphMod {
       __obj.asInstanceOf[CommonNeighbors]
     }
     
-    extension [Self <: CommonNeighbors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonNeighbors] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object generalGraphMod {
       __obj.asInstanceOf[CommonPropertiesOptions]
     }
     
-    extension [Self <: CommonPropertiesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonPropertiesOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoredProperties(value: js.Array[String] | String): Self = StObject.set(x, "ignoredProperties", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object generalGraphMod {
       __obj.asInstanceOf[ConnectingEdgesOptions]
     }
     
-    extension [Self <: ConnectingEdgesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectingEdgesOptions] (val x: Self) extends AnyVal {
       
       inline def setEdgeCollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "edgeCollectionRestriction", value.asInstanceOf[js.Any])
       
@@ -208,7 +212,8 @@ object generalGraphMod {
       __obj.asInstanceOf[Distance]
     }
     
-    extension [Self <: Distance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Distance] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -237,7 +242,8 @@ object generalGraphMod {
       __obj.asInstanceOf[EdgeDefinition]
     }
     
-    extension [Self <: EdgeDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EdgeDefinition] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
@@ -373,7 +379,8 @@ object generalGraphMod {
       __obj.asInstanceOf[NeighborsOptions]
     }
     
-    extension [Self <: NeighborsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NeighborsOptions] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: EdgeDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -439,7 +446,8 @@ object generalGraphMod {
       __obj.asInstanceOf[Path[A, B, E, V]]
     }
     
-    extension [Self <: Path[?, ?, ?, ?], A /* <: js.Object */, B /* <: js.Object */, E /* <: js.Object */, V /* <: js.Object */](x: Self & (Path[A, B, E, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path[?, ?, ?, ?], A /* <: js.Object */, B /* <: js.Object */, E /* <: js.Object */, V /* <: js.Object */] (val x: Self & (Path[A, B, E, V])) extends AnyVal {
       
       inline def setDestination(value: Document[B]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
@@ -472,7 +480,8 @@ object generalGraphMod {
       __obj.asInstanceOf[PathsOptions]
     }
     
-    extension [Self <: PathsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathsOptions] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: EdgeDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -509,7 +518,8 @@ object generalGraphMod {
       __obj.asInstanceOf[ShortestPath[T]]
     }
     
-    extension [Self <: ShortestPath[?], T /* <: js.Object */](x: Self & ShortestPath[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShortestPath[?], T /* <: js.Object */] (val x: Self & ShortestPath[T]) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -544,7 +554,8 @@ object generalGraphMod {
       __obj.asInstanceOf[ShortestPathOptions]
     }
     
-    extension [Self <: ShortestPathOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShortestPathOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultWeight(value: Double): Self = StObject.set(x, "defaultWeight", value.asInstanceOf[js.Any])
       

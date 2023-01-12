@@ -15,7 +15,8 @@ object SecurityDeleteUserResponse {
     __obj.asInstanceOf[SecurityDeleteUserResponse]
   }
   
-  extension [Self <: SecurityDeleteUserResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityDeleteUserResponse] (val x: Self) extends AnyVal {
     
     inline def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
   }

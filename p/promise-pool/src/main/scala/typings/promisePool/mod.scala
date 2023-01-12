@@ -180,7 +180,8 @@ object mod {
       __obj.asInstanceOf[IProgress]
     }
     
-    extension [Self <: IProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProgress] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -215,7 +216,8 @@ object mod {
       __obj.asInstanceOf[IResult]
     }
     
-    extension [Self <: IResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResult] (val x: Self) extends AnyVal {
       
       inline def setFulfilled(value: Double): Self = StObject.set(x, "fulfilled", value.asInstanceOf[js.Any])
       

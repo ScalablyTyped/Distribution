@@ -67,7 +67,8 @@ object UnifiedRoleScheduleBase {
     __obj.asInstanceOf[UnifiedRoleScheduleBase]
   }
   
-  extension [Self <: UnifiedRoleScheduleBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnifiedRoleScheduleBase] (val x: Self) extends AnyVal {
     
     inline def setAppScope(value: NullableOption[AppScope]): Self = StObject.set(x, "appScope", value.asInstanceOf[js.Any])
     

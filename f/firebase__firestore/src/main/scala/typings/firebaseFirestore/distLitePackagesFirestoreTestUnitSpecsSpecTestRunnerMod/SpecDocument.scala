@@ -23,7 +23,8 @@ object SpecDocument {
     __obj.asInstanceOf[SpecDocument]
   }
   
-  extension [Self <: SpecDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecDocument] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Exclusive {
     __obj.asInstanceOf[Exclusive]
   }
   
-  extension [Self <: Exclusive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exclusive] (val x: Self) extends AnyVal {
     
     inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     

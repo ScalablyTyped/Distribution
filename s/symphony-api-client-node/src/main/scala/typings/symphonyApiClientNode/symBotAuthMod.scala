@@ -37,7 +37,8 @@ object symBotAuthMod {
       __obj.asInstanceOf[BotUser]
     }
     
-    extension [Self <: BotUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BotUser] (val x: Self) extends AnyVal {
       
       inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object symBotAuthMod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

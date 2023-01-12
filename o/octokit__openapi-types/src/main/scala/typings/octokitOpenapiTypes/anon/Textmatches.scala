@@ -50,7 +50,8 @@ object Textmatches {
     __obj.asInstanceOf[Textmatches]
   }
   
-  extension [Self <: Textmatches](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Textmatches] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

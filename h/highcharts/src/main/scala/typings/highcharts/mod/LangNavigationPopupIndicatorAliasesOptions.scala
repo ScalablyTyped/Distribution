@@ -248,7 +248,8 @@ object LangNavigationPopupIndicatorAliasesOptions {
     __obj.asInstanceOf[LangNavigationPopupIndicatorAliasesOptions]
   }
   
-  extension [Self <: LangNavigationPopupIndicatorAliasesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangNavigationPopupIndicatorAliasesOptions] (val x: Self) extends AnyVal {
     
     inline def setAbands(value: js.Array[String]): Self = StObject.set(x, "abands", value.asInstanceOf[js.Any])
     

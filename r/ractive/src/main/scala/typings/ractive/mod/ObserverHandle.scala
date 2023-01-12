@@ -33,7 +33,8 @@ object ObserverHandle {
     __obj.asInstanceOf[ObserverHandle]
   }
   
-  extension [Self <: ObserverHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObserverHandle] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     

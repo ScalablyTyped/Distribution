@@ -1173,7 +1173,8 @@ object sapUiCommonsDialogMod {
       __obj.asInstanceOf[DialogSettings]
     }
     
-    extension [Self <: DialogSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleRole(
         value: AccessibleRole | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AccessibleRole * / any */ String) | PropertyBindingInfo

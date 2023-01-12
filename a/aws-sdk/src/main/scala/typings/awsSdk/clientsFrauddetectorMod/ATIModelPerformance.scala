@@ -18,7 +18,8 @@ object ATIModelPerformance {
     __obj.asInstanceOf[ATIModelPerformance]
   }
   
-  extension [Self <: ATIModelPerformance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATIModelPerformance] (val x: Self) extends AnyVal {
     
     inline def setAsi(value: float): Self = StObject.set(x, "asi", value.asInstanceOf[js.Any])
     

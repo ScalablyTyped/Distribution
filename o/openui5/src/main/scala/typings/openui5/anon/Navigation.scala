@@ -109,7 +109,8 @@ object Navigation {
     __obj.asInstanceOf[Navigation]
   }
   
-  extension [Self <: Navigation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Navigation] (val x: Self) extends AnyVal {
     
     inline def setBatchGroupId(value: String): Self = StObject.set(x, "batchGroupId", value.asInstanceOf[js.Any])
     

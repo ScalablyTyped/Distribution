@@ -28,7 +28,8 @@ object LocalizedObjectAnnotation {
     __obj.asInstanceOf[LocalizedObjectAnnotation]
   }
   
-  extension [Self <: LocalizedObjectAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalizedObjectAnnotation] (val x: Self) extends AnyVal {
     
     inline def setBoundingPoly(value: BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     

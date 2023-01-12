@@ -23,7 +23,8 @@ object UngroupResourcesInput {
     __obj.asInstanceOf[UngroupResourcesInput]
   }
   
-  extension [Self <: UngroupResourcesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UngroupResourcesInput] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: GroupString): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object libTransportMod {
       __obj.asInstanceOf[RecoveryOptions]
     }
     
-    extension [Self <: RecoveryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecoveryOptions] (val x: Self) extends AnyVal {
       
       inline def setMax_interval(value: Double): Self = StObject.set(x, "max_interval", value.asInstanceOf[js.Any])
       

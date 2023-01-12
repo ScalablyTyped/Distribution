@@ -19,7 +19,8 @@ object PickSplashScreenConfigres {
     __obj.asInstanceOf[PickSplashScreenConfigres]
   }
   
-  extension [Self <: PickSplashScreenConfigres](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickSplashScreenConfigres] (val x: Self) extends AnyVal {
     
     inline def setResizeMode(value: contain | cover | native): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
   }

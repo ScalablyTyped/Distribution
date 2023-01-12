@@ -68,7 +68,8 @@ object DescribeDataSourcesInput {
     __obj.asInstanceOf[DescribeDataSourcesInput]
   }
   
-  extension [Self <: DescribeDataSourcesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDataSourcesInput] (val x: Self) extends AnyVal {
     
     inline def setEQ(value: ComparatorValue): Self = StObject.set(x, "EQ", value.asInstanceOf[js.Any])
     

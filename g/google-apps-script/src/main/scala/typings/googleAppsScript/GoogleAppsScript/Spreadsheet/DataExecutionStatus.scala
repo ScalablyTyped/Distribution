@@ -33,7 +33,8 @@ object DataExecutionStatus {
     __obj.asInstanceOf[DataExecutionStatus]
   }
   
-  extension [Self <: DataExecutionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataExecutionStatus] (val x: Self) extends AnyVal {
     
     inline def setGetErrorCode(value: () => DataExecutionErrorCode): Self = StObject.set(x, "getErrorCode", js.Any.fromFunction0(value))
     

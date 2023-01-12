@@ -30,7 +30,8 @@ object DataTableRowEditCompleteParams {
     __obj.asInstanceOf[DataTableRowEditCompleteParams]
   }
   
-  extension [Self <: DataTableRowEditCompleteParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableRowEditCompleteParams] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

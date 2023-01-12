@@ -33,7 +33,8 @@ object AnchoredContinuousColorsLegendProps {
     __obj.asInstanceOf[AnchoredContinuousColorsLegendProps]
   }
   
-  extension [Self <: AnchoredContinuousColorsLegendProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnchoredContinuousColorsLegendProps] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: LegendAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

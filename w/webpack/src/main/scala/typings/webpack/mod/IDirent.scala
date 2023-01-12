@@ -39,7 +39,8 @@ object IDirent {
     __obj.asInstanceOf[IDirent]
   }
   
-  extension [Self <: IDirent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDirent] (val x: Self) extends AnyVal {
     
     inline def setIsBlockDevice(value: () => Boolean): Self = StObject.set(x, "isBlockDevice", js.Any.fromFunction0(value))
     

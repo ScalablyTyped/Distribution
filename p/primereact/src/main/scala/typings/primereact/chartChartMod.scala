@@ -63,7 +63,8 @@ object chartChartMod {
       __obj.asInstanceOf[ChartProps]
     }
     
-    extension [Self <: ChartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

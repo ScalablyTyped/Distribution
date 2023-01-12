@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[MarkerProps]
     }
     
-    extension [Self <: MarkerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerProps] (val x: Self) extends AnyVal {
       
       inline def setMarkerStyle(value: ViewStyle): Self = StObject.set(x, "markerStyle", value.asInstanceOf[js.Any])
       
@@ -186,7 +187,8 @@ object mod {
       __obj.asInstanceOf[MultiSliderProps]
     }
     
-    extension [Self <: MultiSliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSliderProps] (val x: Self) extends AnyVal {
       
       inline def setContainerStyle(value: ViewStyle): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       

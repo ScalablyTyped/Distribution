@@ -15,7 +15,8 @@ object GeoSearchExposed {
     __obj.asInstanceOf[GeoSearchExposed]
   }
   
-  extension [Self <: GeoSearchExposed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoSearchExposed] (val x: Self) extends AnyVal {
     
     inline def setDefaultRefinement(value: NESW): Self = StObject.set(x, "defaultRefinement", value.asInstanceOf[js.Any])
     

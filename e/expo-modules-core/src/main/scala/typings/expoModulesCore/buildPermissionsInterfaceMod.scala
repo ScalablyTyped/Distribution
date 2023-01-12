@@ -77,7 +77,8 @@ object buildPermissionsInterfaceMod {
       __obj.asInstanceOf[PermissionResponse]
     }
     
-    extension [Self <: PermissionResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionResponse] (val x: Self) extends AnyVal {
       
       inline def setCanAskAgain(value: Boolean): Self = StObject.set(x, "canAskAgain", value.asInstanceOf[js.Any])
       

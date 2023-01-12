@@ -42,7 +42,8 @@ object IIterationStatementSyntax {
     __obj.asInstanceOf[IIterationStatementSyntax]
   }
   
-  extension [Self <: IIterationStatementSyntax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIterationStatementSyntax] (val x: Self) extends AnyVal {
     
     inline def setIsIterationStatement(value: () => Boolean): Self = StObject.set(x, "isIterationStatement", js.Any.fromFunction0(value))
   }

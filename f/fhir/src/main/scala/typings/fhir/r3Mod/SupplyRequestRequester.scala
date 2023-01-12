@@ -25,7 +25,8 @@ object SupplyRequestRequester {
     __obj.asInstanceOf[SupplyRequestRequester]
   }
   
-  extension [Self <: SupplyRequestRequester](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupplyRequestRequester] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: Reference): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

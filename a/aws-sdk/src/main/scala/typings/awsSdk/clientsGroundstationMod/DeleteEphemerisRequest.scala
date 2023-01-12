@@ -18,7 +18,8 @@ object DeleteEphemerisRequest {
     __obj.asInstanceOf[DeleteEphemerisRequest]
   }
   
-  extension [Self <: DeleteEphemerisRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEphemerisRequest] (val x: Self) extends AnyVal {
     
     inline def setEphemerisId(value: Uuid): Self = StObject.set(x, "ephemerisId", value.asInstanceOf[js.Any])
   }

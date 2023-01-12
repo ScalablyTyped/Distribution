@@ -29,7 +29,8 @@ object libDateGridDateGridDottypesMod {
       __obj.asInstanceOf[IAvailableDateOptions]
     }
     
-    extension [Self <: IAvailableDateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAvailableDateOptions] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object libDateGridDateGridDottypesMod {
       __obj.asInstanceOf[IDay]
     }
     
-    extension [Self <: IDay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDay] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -178,7 +180,8 @@ object libDateGridDateGridDottypesMod {
       __obj.asInstanceOf[IDayGridOptions]
     }
     
-    extension [Self <: IDayGridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDayGridOptions] (val x: Self) extends AnyVal {
       
       inline def setDateRangeType(value: DateRangeType): Self = StObject.set(x, "dateRangeType", value.asInstanceOf[js.Any])
       
@@ -244,7 +247,8 @@ object libDateGridDateGridDottypesMod {
       __obj.asInstanceOf[IRestrictedDatesOptions]
     }
     
-    extension [Self <: IRestrictedDatesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRestrictedDatesOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       

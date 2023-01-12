@@ -273,7 +273,8 @@ object PlotFunnel3dDataLabelsOptions {
     __obj.asInstanceOf[PlotFunnel3dDataLabelsOptions]
   }
   
-  extension [Self <: PlotFunnel3dDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotFunnel3dDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object CipherKeyValue {
     __obj.asInstanceOf[CipherKeyValue]
   }
   
-  extension [Self <: CipherKeyValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CipherKeyValue] (val x: Self) extends AnyVal {
     
     inline def setAddress_n(value: js.Array[Double]): Self = StObject.set(x, "address_n", value.asInstanceOf[js.Any])
     

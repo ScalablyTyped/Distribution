@@ -76,7 +76,8 @@ object libPopoverControllerMod {
       __obj.asInstanceOf[PopoverControllerRenderProps]
     }
     
-    extension [Self <: PopoverControllerRenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverControllerRenderProps] (val x: Self) extends AnyVal {
       
       inline def setClosePopover(value: () => Unit): Self = StObject.set(x, "closePopover", js.Any.fromFunction0(value))
       
@@ -103,7 +104,8 @@ object libPopoverControllerMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setCalculateStatusBar(value: Boolean): Self = StObject.set(x, "calculateStatusBar", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object libPopoverControllerMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setPopoverAnchor(value: Rect): Self = StObject.set(x, "popoverAnchor", value.asInstanceOf[js.Any])
       

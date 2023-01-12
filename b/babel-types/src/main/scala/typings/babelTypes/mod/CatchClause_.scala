@@ -25,7 +25,8 @@ object CatchClause_ {
     __obj.asInstanceOf[CatchClause_]
   }
   
-  extension [Self <: CatchClause_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatchClause_] (val x: Self) extends AnyVal {
     
     inline def setBody(value: BlockStatement_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object URLS {
     __obj.asInstanceOf[URLS]
   }
   
-  extension [Self <: URLS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: URLS] (val x: Self) extends AnyVal {
     
     inline def setEnrollAccount(value: String => String): Self = StObject.set(x, "enrollAccount", js.Any.fromFunction1(value))
     

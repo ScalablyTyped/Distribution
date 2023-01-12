@@ -30,7 +30,8 @@ object WindowsMobileMSI {
     __obj.asInstanceOf[WindowsMobileMSI]
   }
   
-  extension [Self <: WindowsMobileMSI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsMobileMSI] (val x: Self) extends AnyVal {
     
     inline def setCommandLine(value: NullableOption[String]): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
     

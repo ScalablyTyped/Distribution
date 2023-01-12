@@ -37,7 +37,8 @@ object RateItOptions {
     __obj.asInstanceOf[RateItOptions]
   }
   
-  extension [Self <: RateItOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RateItOptions] (val x: Self) extends AnyVal {
     
     inline def setBackingfld(value: String): Self = StObject.set(x, "backingfld", value.asInstanceOf[js.Any])
     

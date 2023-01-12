@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[BodyScrollOptions]
     }
     
-    extension [Self <: BodyScrollOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyScrollOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowTouchMove(value: /* el */ HTMLElement | Element => Boolean): Self = StObject.set(x, "allowTouchMove", js.Any.fromFunction1(value))
       

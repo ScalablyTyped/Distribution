@@ -21,7 +21,8 @@ object ConnectedOrganizationMembers {
     __obj.asInstanceOf[ConnectedOrganizationMembers]
   }
   
-  extension [Self <: ConnectedOrganizationMembers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectedOrganizationMembers] (val x: Self) extends AnyVal {
     
     inline def setConnectedOrganizationId(value: NullableOption[String]): Self = StObject.set(x, "connectedOrganizationId", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object DocumentSignatureInformation {
     __obj.asInstanceOf[DocumentSignatureInformation]
   }
   
-  extension [Self <: DocumentSignatureInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSignatureInformation] (val x: Self) extends AnyVal {
     
     inline def setCertificateStatus(value: Double): Self = StObject.set(x, "CertificateStatus", value.asInstanceOf[js.Any])
     

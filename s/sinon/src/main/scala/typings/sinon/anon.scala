@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Abort]
     }
     
-    extension [Self <: Abort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Abort] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: js.Array[Any]): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
       
@@ -202,7 +203,8 @@ object anon {
       __obj.asInstanceOf[DeepPartialOrMatcherArray]
     }
     
-    extension [Self <: DeepPartialOrMatcherArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepPartialOrMatcherArray] (val x: Self) extends AnyVal {
       
       inline def setAt(
         value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (index : number): any | undefined extends object ? sinon.sinon.DeepPartialOrMatcher<(index : number): any | undefined> : (index : number): any | undefined */ js.Any)
@@ -448,7 +450,8 @@ object anon {
       __obj.asInstanceOf[Get[T, K]]
     }
     
-    extension [Self <: Get[?, ?], T, K /* <: /* keyof T */ String */](x: Self & (Get[T, K])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Get[?, ?], T, K /* <: /* keyof T */ String */] (val x: Self & (Get[T, K])) extends AnyVal {
       
       inline def setGet(
         value: SinonSpy[
@@ -689,7 +692,8 @@ object anon {
       __obj.asInstanceOf[MatchArgumentsArrayany]
     }
     
-    extension [Self <: MatchArgumentsArrayany](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchArgumentsArrayany] (val x: Self) extends AnyVal {
       
       inline def setAt(
         value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (index : number): any | undefined extends object ? sinon.sinon.MatchArguments<(index : number): any | undefined> : never */ js.Any) | (js.Function1[/* index */ Double, js.UndefOr[Any]])
@@ -1007,7 +1011,8 @@ object anon {
       __obj.asInstanceOf[PartialFakeTimerInstallOp]
     }
     
-    extension [Self <: PartialFakeTimerInstallOp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFakeTimerInstallOp] (val x: Self) extends AnyVal {
       
       inline def setAdvanceTimeDelta(value: Double): Self = StObject.set(x, "advanceTimeDelta", value.asInstanceOf[js.Any])
       
@@ -1235,7 +1240,8 @@ object anon {
       __obj.asInstanceOf[PartialMatchArgumentsArra]
     }
     
-    extension [Self <: PartialMatchArgumentsArra](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMatchArgumentsArra] (val x: Self) extends AnyVal {
       
       inline def setAt(
         value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (index : number): any | undefined extends object ? sinon.sinon.MatchArguments<(index : number): any | undefined> : never */ js.Any) | (js.Function1[/* index */ Double, js.UndefOr[Any]])
@@ -1611,7 +1617,8 @@ object anon {
       __obj.asInstanceOf[PartialSinonExposeOptions]
     }
     
-    extension [Self <: PartialSinonExposeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSinonExposeOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeFail(value: Boolean): Self = StObject.set(x, "includeFail", value.asInstanceOf[js.Any])
       
@@ -1641,7 +1648,8 @@ object anon {
       __obj.asInstanceOf[PartialSinonFakeServerOpt]
     }
     
-    extension [Self <: PartialSinonFakeServerOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSinonFakeServerOpt] (val x: Self) extends AnyVal {
       
       inline def setAutoRespond(value: Boolean): Self = StObject.set(x, "autoRespond", value.asInstanceOf[js.Any])
       
@@ -1679,7 +1687,8 @@ object anon {
       __obj.asInstanceOf[PartialSinonSandboxConfig]
     }
     
-    extension [Self <: PartialSinonSandboxConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSinonSandboxConfig] (val x: Self) extends AnyVal {
       
       inline def setInjectInto(value: js.Object): Self = StObject.set(x, "injectInto", value.asInstanceOf[js.Any])
       
@@ -1718,7 +1727,8 @@ object anon {
       __obj.asInstanceOf[Restore]
     }
     
-    extension [Self <: Restore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Restore] (val x: Self) extends AnyVal {
       
       inline def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
     }

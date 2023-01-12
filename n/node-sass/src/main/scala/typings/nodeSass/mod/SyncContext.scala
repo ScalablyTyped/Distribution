@@ -18,7 +18,8 @@ object SyncContext {
     __obj.asInstanceOf[SyncContext]
   }
   
-  extension [Self <: SyncContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncContext] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: Unit): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
   }

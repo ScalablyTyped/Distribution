@@ -22,7 +22,8 @@ object MendelDebugInput {
     __obj.asInstanceOf[MendelDebugInput]
   }
   
-  extension [Self <: MendelDebugInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MendelDebugInput] (val x: Self) extends AnyVal {
     
     inline def setNamespacedDebugInput(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.jobs.gapi.client.jobs.NamespacedDebugInput} */ js.Any

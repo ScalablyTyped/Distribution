@@ -83,7 +83,8 @@ object FootnoteSettings {
     __obj.asInstanceOf[FootnoteSettings]
   }
   
-  extension [Self <: FootnoteSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FootnoteSettings] (val x: Self) extends AnyVal {
     
     inline def setAnchorCharStyleName(value: String): Self = StObject.set(x, "AnchorCharStyleName", value.asInstanceOf[js.Any])
     

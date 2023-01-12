@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Indefinite]
     }
     
-    extension [Self <: Indefinite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Indefinite] (val x: Self) extends AnyVal {
       
       inline def setIndefinite(value: Boolean): Self = StObject.set(x, "indefinite", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object anon {
       __obj.asInstanceOf[TypeofimportedCommented]
     }
     
-    extension [Self <: TypeofimportedCommented](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofimportedCommented] (val x: Self) extends AnyVal {
       
       inline def setComment(
         value: (String | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | js.typedarray.Uint8ClampedArray | js.typedarray.DataView | Readable, js.UndefOr[CommentOptions | commentCallback | String | Double], js.UndefOr[commentCallback]) => js.Promise[Any]
@@ -462,7 +464,8 @@ object anon {
       __obj.asInstanceOf[TypeofimportedMap]
     }
     
-    extension [Self <: TypeofimportedMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofimportedMap] (val x: Self) extends AnyVal {
       
       inline def set_decode(value: Any => Any): Self = StObject.set(x, "_decode", js.Any.fromFunction1(value))
       
@@ -520,7 +523,8 @@ object anon {
       __obj.asInstanceOf[TypeofimportedTagged]
     }
     
-    extension [Self <: TypeofimportedTagged](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofimportedTagged] (val x: Self) extends AnyVal {
       
       inline def setINTERNAL_JSON(value: js.Symbol): Self = StObject.set(x, "INTERNAL_JSON", value.asInstanceOf[js.Any])
       

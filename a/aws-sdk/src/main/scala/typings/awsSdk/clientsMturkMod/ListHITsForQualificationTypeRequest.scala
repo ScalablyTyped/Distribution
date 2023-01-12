@@ -28,7 +28,8 @@ object ListHITsForQualificationTypeRequest {
     __obj.asInstanceOf[ListHITsForQualificationTypeRequest]
   }
   
-  extension [Self <: ListHITsForQualificationTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHITsForQualificationTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ResultSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

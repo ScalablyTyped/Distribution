@@ -28,7 +28,8 @@ object ChangedBlock {
     __obj.asInstanceOf[ChangedBlock]
   }
   
-  extension [Self <: ChangedBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangedBlock] (val x: Self) extends AnyVal {
     
     inline def setBlockIndex(value: BlockIndex): Self = StObject.set(x, "BlockIndex", value.asInstanceOf[js.Any])
     

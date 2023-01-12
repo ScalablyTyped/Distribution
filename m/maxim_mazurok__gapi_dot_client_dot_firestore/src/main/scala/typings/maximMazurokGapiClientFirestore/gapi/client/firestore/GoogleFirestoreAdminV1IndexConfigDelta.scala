@@ -19,7 +19,8 @@ object GoogleFirestoreAdminV1IndexConfigDelta {
     __obj.asInstanceOf[GoogleFirestoreAdminV1IndexConfigDelta]
   }
   
-  extension [Self <: GoogleFirestoreAdminV1IndexConfigDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleFirestoreAdminV1IndexConfigDelta] (val x: Self) extends AnyVal {
     
     inline def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     

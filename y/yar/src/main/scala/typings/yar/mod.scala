@@ -27,7 +27,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ServerYar]
     }
     
-    extension [Self <: ServerYar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerYar] (val x: Self) extends AnyVal {
       
       inline def setRevoke(value: Id => js.Promise[Unit]): Self = StObject.set(x, "revoke", js.Any.fromFunction1(value))
     }
@@ -139,7 +140,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[YarOptions]
     }
     
-    extension [Self <: YarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YarOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: CachePolicyOptions[Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -184,7 +186,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setYar(value: Yar): Self = StObject.set(x, "yar", value.asInstanceOf[js.Any])
       }
@@ -201,7 +204,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Server]
       }
       
-      extension [Self <: Server](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
         
         inline def setYar(value: ServerYar): Self = StObject.set(x, "yar", value.asInstanceOf[js.Any])
       }

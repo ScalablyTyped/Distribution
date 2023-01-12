@@ -29,7 +29,8 @@ object GetRule {
     __obj.asInstanceOf[GetRule]
   }
   
-  extension [Self <: GetRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRule] (val x: Self) extends AnyVal {
     
     inline def setDeleteRule(value: Double => Unit): Self = StObject.set(x, "deleteRule", js.Any.fromFunction1(value))
     

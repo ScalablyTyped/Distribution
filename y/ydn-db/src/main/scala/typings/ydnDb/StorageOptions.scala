@@ -23,7 +23,8 @@ object StorageOptions {
     __obj.asInstanceOf[StorageOptions]
   }
   
-  extension [Self <: StorageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoSchema(value: Boolean): Self = StObject.set(x, "autoSchema", value.asInstanceOf[js.Any])
     

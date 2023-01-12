@@ -37,7 +37,8 @@ object libTestApiCompatibilityMod {
       __obj.asInstanceOf[ApiCompatibilityChecksOptions]
     }
     
-    extension [Self <: ApiCompatibilityChecksOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiCompatibilityChecksOptions] (val x: Self) extends AnyVal {
       
       inline def setSkipBaggageChecks(value: Boolean): Self = StObject.set(x, "skipBaggageChecks", value.asInstanceOf[js.Any])
       

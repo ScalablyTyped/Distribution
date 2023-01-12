@@ -23,7 +23,8 @@ object BrushDomain {
     __obj.asInstanceOf[BrushDomain]
   }
   
-  extension [Self <: BrushDomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrushDomain] (val x: Self) extends AnyVal {
     
     inline def setActiveBrushes(value: Any): Self = StObject.set(x, "activeBrushes", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object buildSrcLogicalMod {
       __obj.asInstanceOf[LogicalAnd[T]]
     }
     
-    extension [Self <: LogicalAnd[?], T](x: Self & LogicalAnd[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogicalAnd[?], T] (val x: Self & LogicalAnd[T]) extends AnyVal {
       
       inline def setAnd(value: js.Array[LogicalComposition[T]]): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object buildSrcLogicalMod {
       __obj.asInstanceOf[LogicalNot[T]]
     }
     
-    extension [Self <: LogicalNot[?], T](x: Self & LogicalNot[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogicalNot[?], T] (val x: Self & LogicalNot[T]) extends AnyVal {
       
       inline def setNot(value: LogicalComposition[T]): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     }
@@ -81,7 +83,8 @@ object buildSrcLogicalMod {
       __obj.asInstanceOf[LogicalOr[T]]
     }
     
-    extension [Self <: LogicalOr[?], T](x: Self & LogicalOr[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogicalOr[?], T] (val x: Self & LogicalOr[T]) extends AnyVal {
       
       inline def setOr(value: js.Array[LogicalComposition[T]]): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
       

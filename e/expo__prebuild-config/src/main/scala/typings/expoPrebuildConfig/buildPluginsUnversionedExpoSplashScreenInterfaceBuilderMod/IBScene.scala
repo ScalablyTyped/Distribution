@@ -23,7 +23,8 @@ object IBScene {
     __obj.asInstanceOf[IBScene]
   }
   
-  extension [Self <: IBScene](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBScene] (val x: Self) extends AnyVal {
     
     inline def set$(value: SceneID): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     

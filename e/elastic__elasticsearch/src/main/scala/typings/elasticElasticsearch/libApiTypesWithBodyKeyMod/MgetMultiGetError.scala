@@ -21,7 +21,8 @@ object MgetMultiGetError {
     __obj.asInstanceOf[MgetMultiGetError]
   }
   
-  extension [Self <: MgetMultiGetError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MgetMultiGetError] (val x: Self) extends AnyVal {
     
     inline def setError(value: ErrorCause): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

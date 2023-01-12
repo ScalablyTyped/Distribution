@@ -44,7 +44,8 @@ object CSSModulesOptions {
     __obj.asInstanceOf[CSSModulesOptions]
   }
   
-  extension [Self <: CSSModulesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSModulesOptions] (val x: Self) extends AnyVal {
     
     inline def setGenerateScopedName(value: String | (js.Function3[/* name */ String, /* filename */ String, /* css */ String, String])): Self = StObject.set(x, "generateScopedName", value.asInstanceOf[js.Any])
     

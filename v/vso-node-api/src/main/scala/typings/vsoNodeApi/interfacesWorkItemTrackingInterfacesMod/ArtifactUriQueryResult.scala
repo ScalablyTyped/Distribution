@@ -19,7 +19,8 @@ object ArtifactUriQueryResult {
     __obj.asInstanceOf[ArtifactUriQueryResult]
   }
   
-  extension [Self <: ArtifactUriQueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactUriQueryResult] (val x: Self) extends AnyVal {
     
     inline def setArtifactUrisQueryResult(value: StringDictionary[js.Array[WorkItemReference]]): Self = StObject.set(x, "artifactUrisQueryResult", value.asInstanceOf[js.Any])
   }

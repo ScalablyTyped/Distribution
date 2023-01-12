@@ -40,7 +40,8 @@ object iconOptionsCssIconSetOptionsMod {
       __obj.asInstanceOf[CssIconSetOptions]
     }
     
-    extension [Self <: CssIconSetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssIconSetOptions] (val x: Self) extends AnyVal {
       
       inline def setClass(
         value: /* import warning: importer.ImportType#apply Failed type conversion: this['className'] */ js.Any

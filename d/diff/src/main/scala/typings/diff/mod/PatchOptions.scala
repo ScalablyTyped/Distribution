@@ -21,7 +21,8 @@ object PatchOptions {
     __obj.asInstanceOf[PatchOptions]
   }
   
-  extension [Self <: PatchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchOptions] (val x: Self) extends AnyVal {
     
     inline def setContext(value: Double): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

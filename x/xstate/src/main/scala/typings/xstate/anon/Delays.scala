@@ -27,7 +27,8 @@ object Delays {
     __obj.asInstanceOf[Delays[TContext, TResolvedTypesMeta]]
   }
   
-  extension [Self <: Delays[?, ?], TContext, TResolvedTypesMeta](x: Self & (Delays[TContext, TResolvedTypesMeta])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Delays[?, ?], TContext, TResolvedTypesMeta] (val x: Self & (Delays[TContext, TResolvedTypesMeta])) extends AnyVal {
     
     inline def setDelays(
       value: MachineOptionsDelays[

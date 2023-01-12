@@ -44,7 +44,8 @@ object ABRControllerConfig {
     __obj.asInstanceOf[ABRControllerConfig]
   }
   
-  extension [Self <: ABRControllerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ABRControllerConfig] (val x: Self) extends AnyVal {
     
     inline def setAbrBandWidthFactor(value: Double): Self = StObject.set(x, "abrBandWidthFactor", value.asInstanceOf[js.Any])
     

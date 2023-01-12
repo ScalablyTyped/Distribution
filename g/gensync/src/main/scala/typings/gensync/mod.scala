@@ -93,7 +93,8 @@ object mod {
       __obj.asInstanceOf[AsyncOptions[A, R]]
     }
     
-    extension [Self <: AsyncOptions[?, ?], A /* <: js.Array[Any] */, R](x: Self & (AsyncOptions[A, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncOptions[?, ?], A /* <: js.Array[Any] */, R] (val x: Self & (AsyncOptions[A, R])) extends AnyVal {
       
       inline def setArity(value: Double): Self = StObject.set(x, "arity", value.asInstanceOf[js.Any])
       
@@ -167,7 +168,8 @@ object mod {
       __obj.asInstanceOf[ErrbackOptions[A, R, E]]
     }
     
-    extension [Self <: ErrbackOptions[?, ?, ?], A /* <: js.Array[Any] */, R, E](x: Self & (ErrbackOptions[A, R, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrbackOptions[?, ?, ?], A /* <: js.Array[Any] */, R, E] (val x: Self & (ErrbackOptions[A, R, E])) extends AnyVal {
       
       inline def setArity(value: Double): Self = StObject.set(x, "arity", value.asInstanceOf[js.Any])
       
@@ -316,7 +318,8 @@ object mod {
       __obj.asInstanceOf[SyncOptions[A, R]]
     }
     
-    extension [Self <: SyncOptions[?, ?], A /* <: js.Array[Any] */, R](x: Self & (SyncOptions[A, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncOptions[?, ?], A /* <: js.Array[Any] */, R] (val x: Self & (SyncOptions[A, R])) extends AnyVal {
       
       inline def setArity(value: Double): Self = StObject.set(x, "arity", value.asInstanceOf[js.Any])
       

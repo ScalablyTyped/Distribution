@@ -26,7 +26,8 @@ object IsLoading {
     __obj.asInstanceOf[IsLoading[T]]
   }
   
-  extension [Self <: IsLoading[?], T](x: Self & IsLoading[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsLoading[?], T] (val x: Self & IsLoading[T]) extends AnyVal {
     
     inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
     

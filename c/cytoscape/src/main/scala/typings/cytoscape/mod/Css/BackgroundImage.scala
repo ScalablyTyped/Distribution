@@ -169,7 +169,8 @@ object BackgroundImage {
     __obj.asInstanceOf[BackgroundImage]
   }
   
-  extension [Self <: BackgroundImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundImage] (val x: Self) extends AnyVal {
     
     inline def `setBackground-clip`(value: PropertyValueNode[clipped | none]): Self = StObject.set(x, "background-clip", value.asInstanceOf[js.Any])
     

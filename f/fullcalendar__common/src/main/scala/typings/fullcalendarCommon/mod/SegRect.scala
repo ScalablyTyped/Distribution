@@ -17,7 +17,8 @@ object SegRect {
     __obj.asInstanceOf[SegRect]
   }
   
-  extension [Self <: SegRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegRect] (val x: Self) extends AnyVal {
     
     inline def setLevelCoord(value: Double): Self = StObject.set(x, "levelCoord", value.asInstanceOf[js.Any])
   }

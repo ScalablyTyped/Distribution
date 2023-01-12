@@ -20,7 +20,8 @@ object Name {
     __obj.asInstanceOf[Name[State]]
   }
   
-  extension [Self <: Name[?], State /* <: NavigationState[ParamListBase] */](x: Self & Name[State]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Name[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & Name[State]) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

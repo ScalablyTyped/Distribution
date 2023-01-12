@@ -30,7 +30,8 @@ object ElementConnectionData {
     __obj.asInstanceOf[ElementConnectionData]
   }
   
-  extension [Self <: ElementConnectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementConnectionData] (val x: Self) extends AnyVal {
     
     inline def setSink(value: MediaElement): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
     

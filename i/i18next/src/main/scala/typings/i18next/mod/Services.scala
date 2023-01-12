@@ -40,7 +40,8 @@ object Services {
     __obj.asInstanceOf[Services]
   }
   
-  extension [Self <: Services](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Services] (val x: Self) extends AnyVal {
     
     inline def setBackendConnector(value: Any): Self = StObject.set(x, "backendConnector", value.asInstanceOf[js.Any])
     

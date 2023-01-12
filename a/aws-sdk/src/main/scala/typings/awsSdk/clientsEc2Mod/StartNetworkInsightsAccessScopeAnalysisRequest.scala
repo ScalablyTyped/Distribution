@@ -33,7 +33,8 @@ object StartNetworkInsightsAccessScopeAnalysisRequest {
     __obj.asInstanceOf[StartNetworkInsightsAccessScopeAnalysisRequest]
   }
   
-  extension [Self <: StartNetworkInsightsAccessScopeAnalysisRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartNetworkInsightsAccessScopeAnalysisRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

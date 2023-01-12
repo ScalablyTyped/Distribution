@@ -42,7 +42,8 @@ object distPackagesFirestoreSrcCoreListenSequenceMod {
       __obj.asInstanceOf[SequenceNumberSyncer]
     }
     
-    extension [Self <: SequenceNumberSyncer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequenceNumberSyncer] (val x: Self) extends AnyVal {
       
       inline def setSequenceNumberHandler(value: /* sequenceNumber */ ListenSequenceNumber => Unit): Self = StObject.set(x, "sequenceNumberHandler", js.Any.fromFunction1(value))
       

@@ -20,7 +20,8 @@ object WebExtensionLangpackManifestSourcesPatternType {
     __obj.asInstanceOf[WebExtensionLangpackManifestSourcesPatternType]
   }
   
-  extension [Self <: WebExtensionLangpackManifestSourcesPatternType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionLangpackManifestSourcesPatternType] (val x: Self) extends AnyVal {
     
     inline def setBase_path(value: ExtensionURL): Self = StObject.set(x, "base_path", value.asInstanceOf[js.Any])
     

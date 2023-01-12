@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[GenerateResult]
     }
     
-    extension [Self <: GenerateResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateResult] (val x: Self) extends AnyVal {
       
       inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object mod {
       __obj.asInstanceOf[SelfsignedOptions]
     }
     
-    extension [Self <: SelfsignedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelfsignedOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object LoaderHandler {
     __obj.asInstanceOf[LoaderHandler]
   }
   
-  extension [Self <: LoaderHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoaderHandler] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (js.RegExp, Loader) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

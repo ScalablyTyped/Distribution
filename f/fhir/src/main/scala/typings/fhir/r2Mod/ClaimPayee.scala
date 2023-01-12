@@ -35,7 +35,8 @@ object ClaimPayee {
     __obj.asInstanceOf[ClaimPayee]
   }
   
-  extension [Self <: ClaimPayee](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimPayee] (val x: Self) extends AnyVal {
     
     inline def setOrganization(value: Reference): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     

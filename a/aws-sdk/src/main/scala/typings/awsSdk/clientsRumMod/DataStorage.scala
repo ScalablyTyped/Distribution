@@ -18,7 +18,8 @@ object DataStorage {
     __obj.asInstanceOf[DataStorage]
   }
   
-  extension [Self <: DataStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataStorage] (val x: Self) extends AnyVal {
     
     inline def setCwLog(value: CwLog): Self = StObject.set(x, "CwLog", value.asInstanceOf[js.Any])
     

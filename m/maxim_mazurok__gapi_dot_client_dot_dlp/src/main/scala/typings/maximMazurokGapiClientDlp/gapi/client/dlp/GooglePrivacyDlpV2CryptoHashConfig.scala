@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2CryptoHashConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2CryptoHashConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2CryptoHashConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2CryptoHashConfig] (val x: Self) extends AnyVal {
     
     inline def setCryptoKey(value: GooglePrivacyDlpV2CryptoKey): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
     

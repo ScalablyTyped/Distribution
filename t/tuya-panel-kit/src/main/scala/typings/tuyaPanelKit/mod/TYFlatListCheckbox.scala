@@ -136,7 +136,8 @@ object TYFlatListCheckbox {
     __obj.asInstanceOf[TYFlatListCheckbox[ItemT]]
   }
   
-  extension [Self <: TYFlatListCheckbox[?], ItemT /* <: TYFlatListData */](x: Self & TYFlatListCheckbox[ItemT]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TYFlatListCheckbox[?], ItemT /* <: TYFlatListData */] (val x: Self & TYFlatListCheckbox[ItemT]) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

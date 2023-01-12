@@ -28,7 +28,8 @@ object UpdateUserRoutingProfileRequest {
     __obj.asInstanceOf[UpdateUserRoutingProfileRequest]
   }
   
-  extension [Self <: UpdateUserRoutingProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateUserRoutingProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

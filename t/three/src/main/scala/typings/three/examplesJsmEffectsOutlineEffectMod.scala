@@ -107,7 +107,8 @@ object examplesJsmEffectsOutlineEffectMod {
       __obj.asInstanceOf[OutlineEffectParameters]
     }
     
-    extension [Self <: OutlineEffectParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutlineEffectParameters] (val x: Self) extends AnyVal {
       
       inline def setDefaultAlpha(value: Double): Self = StObject.set(x, "defaultAlpha", value.asInstanceOf[js.Any])
       

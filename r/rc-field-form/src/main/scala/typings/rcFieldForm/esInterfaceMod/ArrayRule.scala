@@ -47,7 +47,8 @@ object ArrayRule {
     __obj.asInstanceOf[ArrayRule]
   }
   
-  extension [Self <: ArrayRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayRule] (val x: Self) extends AnyVal {
     
     inline def setDefaultField(value: RuleObject): Self = StObject.set(x, "defaultField", value.asInstanceOf[js.Any])
     

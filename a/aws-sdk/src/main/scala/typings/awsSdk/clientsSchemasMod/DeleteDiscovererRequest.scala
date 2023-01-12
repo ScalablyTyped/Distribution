@@ -18,7 +18,8 @@ object DeleteDiscovererRequest {
     __obj.asInstanceOf[DeleteDiscovererRequest]
   }
   
-  extension [Self <: DeleteDiscovererRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDiscovererRequest] (val x: Self) extends AnyVal {
     
     inline def setDiscovererId(value: string): Self = StObject.set(x, "DiscovererId", value.asInstanceOf[js.Any])
   }

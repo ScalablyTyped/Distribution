@@ -156,7 +156,8 @@ object events {
       __obj.asInstanceOf[Rule[T, K]]
     }
     
-    extension [Self <: Rule[?, ?], T /* <: js.Object */, K /* <: js.Object */](x: Self & (Rule[T, K])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rule[?, ?], T /* <: js.Object */, K /* <: js.Object */] (val x: Self & (Rule[T, K])) extends AnyVal {
       
       inline def setActions(value: js.Array[K]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -275,7 +276,8 @@ object events {
       __obj.asInstanceOf[UrlFilter]
     }
     
-    extension [Self <: UrlFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlFilter] (val x: Self) extends AnyVal {
       
       inline def setHostContains(value: String): Self = StObject.set(x, "hostContains", value.asInstanceOf[js.Any])
       

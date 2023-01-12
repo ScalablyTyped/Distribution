@@ -39,7 +39,8 @@ object PlotLollipopOnPointPositionOptions {
     __obj.asInstanceOf[PlotLollipopOnPointPositionOptions]
   }
   
-  extension [Self <: PlotLollipopOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotLollipopOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

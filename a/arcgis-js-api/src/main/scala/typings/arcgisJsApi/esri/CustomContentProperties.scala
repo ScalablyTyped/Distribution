@@ -37,7 +37,8 @@ object CustomContentProperties {
     __obj.asInstanceOf[CustomContentProperties]
   }
   
-  extension [Self <: CustomContentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomContentProperties] (val x: Self) extends AnyVal {
     
     inline def setCreator(
       value: /* event */ js.UndefOr[PopupTemplateCreatorEvent] => String | HTMLElement | Widget_ | js.Promise[Any]

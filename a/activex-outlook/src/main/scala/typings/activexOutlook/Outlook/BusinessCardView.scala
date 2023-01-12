@@ -83,7 +83,8 @@ object BusinessCardView {
     __obj.asInstanceOf[BusinessCardView]
   }
   
-  extension [Self <: BusinessCardView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessCardView] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

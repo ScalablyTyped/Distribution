@@ -24,7 +24,8 @@ object XummWebhookBody {
     __obj.asInstanceOf[XummWebhookBody]
   }
   
-  extension [Self <: XummWebhookBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XummWebhookBody] (val x: Self) extends AnyVal {
     
     inline def setCustom_meta(value: XummCustomMeta): Self = StObject.set(x, "custom_meta", value.asInstanceOf[js.Any])
     

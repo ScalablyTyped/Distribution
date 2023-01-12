@@ -19,7 +19,8 @@ object EventCallType {
     __obj.asInstanceOf[EventCallType]
   }
   
-  extension [Self <: EventCallType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventCallType] (val x: Self) extends AnyVal {
     
     inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     

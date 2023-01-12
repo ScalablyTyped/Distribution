@@ -17,7 +17,8 @@ object BoxOptions {
     __obj.asInstanceOf[BoxOptions]
   }
   
-  extension [Self <: BoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoxOptions] (val x: Self) extends AnyVal {
     
     inline def setBindings(value: Any): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     

@@ -164,7 +164,8 @@ object libTracesPieMod {
       __obj.asInstanceOf[PieData]
     }
     
-    extension [Self <: PieData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieData] (val x: Self) extends AnyVal {
       
       inline def setAutomargin(value: Boolean): Self = StObject.set(x, "automargin", value.asInstanceOf[js.Any])
       
@@ -284,7 +285,8 @@ object libTracesPieMod {
       __obj.asInstanceOf[PieDataTitle]
     }
     
-    extension [Self <: PieDataTitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieDataTitle] (val x: Self) extends AnyVal {
       
       inline def setFont(value: PartialPieFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -313,7 +315,8 @@ object libTracesPieMod {
       __obj.asInstanceOf[PieDomain]
     }
     
-    extension [Self <: PieDomain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieDomain] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -344,7 +347,8 @@ object libTracesPieMod {
       __obj.asInstanceOf[PieFont]
     }
     
-    extension [Self <: PieFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: PieColor | PieColors): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -490,7 +494,8 @@ object libTracesPieMod {
       __obj.asInstanceOf[PieHoverLabel]
     }
     
-    extension [Self <: PieHoverLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieHoverLabel] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | right | auto | (js.Array[left | right | auto])): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -543,7 +548,8 @@ object libTracesPieMod {
       __obj.asInstanceOf[PieLine]
     }
     
-    extension [Self <: PieLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieLine] (val x: Self) extends AnyVal {
       
       inline def setColor(value: PieColor | PieColors): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -568,7 +574,8 @@ object libTracesPieMod {
       __obj.asInstanceOf[PieMarker]
     }
     
-    extension [Self <: PieMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieMarker] (val x: Self) extends AnyVal {
       
       inline def setColors(value: PieColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       

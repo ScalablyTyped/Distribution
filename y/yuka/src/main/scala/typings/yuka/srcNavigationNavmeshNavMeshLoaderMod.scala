@@ -59,7 +59,8 @@ object srcNavigationNavmeshNavMeshLoaderMod {
       __obj.asInstanceOf[NavMeshLoaderOptions]
     }
     
-    extension [Self <: NavMeshLoaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavMeshLoaderOptions] (val x: Self) extends AnyVal {
       
       inline def setEpsilonContainsTest(value: Double): Self = StObject.set(x, "epsilonContainsTest", value.asInstanceOf[js.Any])
       

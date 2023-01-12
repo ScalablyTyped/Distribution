@@ -28,7 +28,8 @@ object ComponentOptions {
     __obj.asInstanceOf[ComponentOptions[TDisposingEvent, TInitializedEvent, TOptionChangedEvent]]
   }
   
-  extension [Self <: ComponentOptions[?, ?, ?], TDisposingEvent, TInitializedEvent, TOptionChangedEvent](x: Self & (ComponentOptions[TDisposingEvent, TInitializedEvent, TOptionChangedEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentOptions[?, ?, ?], TDisposingEvent, TInitializedEvent, TOptionChangedEvent] (val x: Self & (ComponentOptions[TDisposingEvent, TInitializedEvent, TOptionChangedEvent])) extends AnyVal {
     
     inline def setOnDisposing(value: /* e */ TDisposingEvent => Unit): Self = StObject.set(x, "onDisposing", js.Any.fromFunction1(value))
     

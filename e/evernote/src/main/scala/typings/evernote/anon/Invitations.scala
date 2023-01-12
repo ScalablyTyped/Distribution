@@ -22,7 +22,8 @@ object Invitations {
     __obj.asInstanceOf[Invitations]
   }
   
-  extension [Self <: Invitations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Invitations] (val x: Self) extends AnyVal {
     
     inline def setInvitationRestrictions(value: ShareRelationshipRestrictions): Self = StObject.set(x, "invitationRestrictions", value.asInstanceOf[js.Any])
     

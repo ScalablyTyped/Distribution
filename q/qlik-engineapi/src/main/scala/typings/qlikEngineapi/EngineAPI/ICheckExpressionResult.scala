@@ -22,7 +22,8 @@ object ICheckExpressionResult {
     __obj.asInstanceOf[ICheckExpressionResult]
   }
   
-  extension [Self <: ICheckExpressionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICheckExpressionResult] (val x: Self) extends AnyVal {
     
     inline def setQDangerousFieldNames(value: js.Array[INxRange]): Self = StObject.set(x, "qDangerousFieldNames", value.asInstanceOf[js.Any])
     

@@ -82,7 +82,8 @@ object TeleconferenceDeviceMediaQuality {
     __obj.asInstanceOf[TeleconferenceDeviceMediaQuality]
   }
   
-  extension [Self <: TeleconferenceDeviceMediaQuality](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeleconferenceDeviceMediaQuality] (val x: Self) extends AnyVal {
     
     inline def setAverageInboundJitter(value: NullableOption[String]): Self = StObject.set(x, "averageInboundJitter", value.asInstanceOf[js.Any])
     

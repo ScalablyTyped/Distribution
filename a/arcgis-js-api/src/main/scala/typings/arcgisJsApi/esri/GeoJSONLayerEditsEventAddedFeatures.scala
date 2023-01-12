@@ -15,7 +15,8 @@ object GeoJSONLayerEditsEventAddedFeatures {
     __obj.asInstanceOf[GeoJSONLayerEditsEventAddedFeatures]
   }
   
-  extension [Self <: GeoJSONLayerEditsEventAddedFeatures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONLayerEditsEventAddedFeatures] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: Double): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
   }

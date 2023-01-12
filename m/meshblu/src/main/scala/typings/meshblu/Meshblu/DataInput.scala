@@ -21,7 +21,8 @@ object DataInput {
     __obj.asInstanceOf[DataInput]
   }
   
-  extension [Self <: DataInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataInput] (val x: Self) extends AnyVal {
     
     inline def setOnline(value: Boolean): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
     

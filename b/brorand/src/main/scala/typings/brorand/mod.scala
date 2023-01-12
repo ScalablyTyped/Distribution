@@ -49,7 +49,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RandInstance]
     }
     
-    extension [Self <: RandInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandInstance] (val x: Self) extends AnyVal {
       
       inline def setGenerate(value: Double => Buffer | js.typedarray.Uint8Array): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
       
@@ -78,7 +79,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[rand]
     }
     
-    extension [Self <: rand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: rand] (val x: Self) extends AnyVal {
       
       inline def setGetByte(value: () => Double): Self = StObject.set(x, "getByte", js.Any.fromFunction0(value))
     }

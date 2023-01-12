@@ -28,7 +28,8 @@ object DebounceSettings {
     __obj.asInstanceOf[DebounceSettings]
   }
   
-  extension [Self <: DebounceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebounceSettings] (val x: Self) extends AnyVal {
     
     inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
     

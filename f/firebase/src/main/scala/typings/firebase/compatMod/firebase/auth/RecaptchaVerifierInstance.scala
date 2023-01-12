@@ -37,7 +37,8 @@ object RecaptchaVerifierInstance {
     __obj.asInstanceOf[RecaptchaVerifierInstance]
   }
   
-  extension [Self <: RecaptchaVerifierInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecaptchaVerifierInstance] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

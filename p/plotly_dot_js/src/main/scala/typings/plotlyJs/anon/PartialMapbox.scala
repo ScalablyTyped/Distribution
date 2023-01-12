@@ -32,7 +32,8 @@ object PartialMapbox {
     __obj.asInstanceOf[PartialMapbox]
   }
   
-  extension [Self <: PartialMapbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMapbox] (val x: Self) extends AnyVal {
     
     inline def setAccesstoken(value: String): Self = StObject.set(x, "accesstoken", value.asInstanceOf[js.Any])
     

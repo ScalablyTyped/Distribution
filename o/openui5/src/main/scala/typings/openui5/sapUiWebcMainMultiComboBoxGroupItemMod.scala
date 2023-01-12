@@ -171,7 +171,8 @@ object sapUiWebcMainMultiComboBoxGroupItemMod {
       __obj.asInstanceOf[MultiComboBoxGroupItemSettings]
     }
     
-    extension [Self <: MultiComboBoxGroupItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiComboBoxGroupItemSettings] (val x: Self) extends AnyVal {
       
       inline def setText(value: String | PropertyBindingInfo): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

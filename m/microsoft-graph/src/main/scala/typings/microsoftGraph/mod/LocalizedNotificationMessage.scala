@@ -33,7 +33,8 @@ object LocalizedNotificationMessage {
     __obj.asInstanceOf[LocalizedNotificationMessage]
   }
   
-  extension [Self <: LocalizedNotificationMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalizedNotificationMessage] (val x: Self) extends AnyVal {
     
     inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     

@@ -410,7 +410,8 @@ object Pickplatformiosandroiddef {
     __obj.asInstanceOf[Pickplatformiosandroiddef]
   }
   
-  extension [Self <: Pickplatformiosandroiddef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pickplatformiosandroiddef] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

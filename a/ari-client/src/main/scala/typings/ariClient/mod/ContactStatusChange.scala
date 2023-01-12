@@ -32,7 +32,8 @@ object ContactStatusChange {
     __obj.asInstanceOf[ContactStatusChange]
   }
   
-  extension [Self <: ContactStatusChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactStatusChange] (val x: Self) extends AnyVal {
     
     inline def setContact_info(value: ContactInfo): Self = StObject.set(x, "contact_info", value.asInstanceOf[js.Any])
     

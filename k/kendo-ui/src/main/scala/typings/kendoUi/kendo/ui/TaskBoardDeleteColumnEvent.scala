@@ -18,7 +18,8 @@ object TaskBoardDeleteColumnEvent {
     __obj.asInstanceOf[TaskBoardDeleteColumnEvent]
   }
   
-  extension [Self <: TaskBoardDeleteColumnEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskBoardDeleteColumnEvent] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Model): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ShutdownGetNodePersistentTaskStatus {
     __obj.asInstanceOf[ShutdownGetNodePersistentTaskStatus]
   }
   
-  extension [Self <: ShutdownGetNodePersistentTaskStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShutdownGetNodePersistentTaskStatus] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: ShutdownGetNodeShutdownStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

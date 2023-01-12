@@ -64,7 +64,8 @@ object libCheckboxCheckboxDotnativeMod {
       __obj.asInstanceOf[ICheckboxNativeProps]
     }
     
-    extension [Self <: ICheckboxNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckboxNativeProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

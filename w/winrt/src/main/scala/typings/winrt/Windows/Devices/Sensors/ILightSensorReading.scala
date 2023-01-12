@@ -17,7 +17,8 @@ object ILightSensorReading {
     __obj.asInstanceOf[ILightSensorReading]
   }
   
-  extension [Self <: ILightSensorReading](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILightSensorReading] (val x: Self) extends AnyVal {
     
     inline def setIlluminanceInLux(value: Double): Self = StObject.set(x, "illuminanceInLux", value.asInstanceOf[js.Any])
     

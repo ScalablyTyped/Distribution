@@ -16,7 +16,8 @@ object SignInputs {
     __obj.asInstanceOf[SignInputs]
   }
   
-  extension [Self <: SignInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

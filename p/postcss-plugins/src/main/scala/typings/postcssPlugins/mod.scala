@@ -39,7 +39,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Plugin]
     }
     
-    extension [Self <: Plugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object WebExtensionManifestTelemetryPublicKeyKey {
     __obj.asInstanceOf[WebExtensionManifestTelemetryPublicKeyKey]
   }
   
-  extension [Self <: WebExtensionManifestTelemetryPublicKeyKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestTelemetryPublicKeyKey] (val x: Self) extends AnyVal {
     
     inline def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Attributes[P, AM]]
     }
     
-    extension [Self <: Attributes[?, ?], P /* <: Provider */, AM /* <: AttributesManager */](x: Self & (Attributes[P, AM])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes[?, ?], P /* <: Provider */, AM /* <: AttributesManager */] (val x: Self & (Attributes[P, AM])) extends AnyVal {
       
       inline def setAttributes(value: AM): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

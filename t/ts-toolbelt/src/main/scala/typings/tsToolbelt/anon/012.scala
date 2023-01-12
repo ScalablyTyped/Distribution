@@ -40,7 +40,8 @@ object `012` {
     __obj.asInstanceOf[`012`[O, M, `match`, limit, I]]
   }
   
-  extension [Self <: `012`[?, ?, ?, ?, ?], O, M /* <: Any */, `match` /* <: Match */, limit /* <: Double */, I /* <: Iteration */](x: Self & (`012`[O, M, `match`, limit, I])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `012`[?, ?, ?, ?, ?], O, M /* <: Any */, `match` /* <: Match */, limit /* <: Double */, I /* <: Iteration */] (val x: Self & (`012`[O, M, `match`, limit, I])) extends AnyVal {
     
     inline def set0(
       value: _IncludesDeep[

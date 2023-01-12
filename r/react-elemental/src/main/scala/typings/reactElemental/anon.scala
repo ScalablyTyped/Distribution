@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Bold]
     }
     
-    extension [Self <: Bold](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bold] (val x: Self) extends AnyVal {
       
       inline def setBold(value: String): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Disabled]
     }
     
-    extension [Self <: Disabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -95,7 +98,8 @@ object anon {
       __obj.asInstanceOf[LabelValue]
     }
     
-    extension [Self <: LabelValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelValue] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String | ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -118,7 +122,8 @@ object anon {
       __obj.asInstanceOf[Primary]
     }
     
-    extension [Self <: Primary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Primary] (val x: Self) extends AnyVal {
       
       inline def setPrimary(value: Bold): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
@@ -145,7 +150,8 @@ object anon {
       __obj.asInstanceOf[PrimaryDark]
     }
     
-    extension [Self <: PrimaryDark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryDark] (val x: Self) extends AnyVal {
       
       inline def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
@@ -174,7 +180,8 @@ object anon {
       __obj.asInstanceOf[Regular]
     }
     
-    extension [Self <: Regular](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Regular] (val x: Self) extends AnyVal {
       
       inline def setBold(value: String): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
@@ -199,7 +206,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

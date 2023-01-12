@@ -21,7 +21,8 @@ object SaveAction {
     __obj.asInstanceOf[SaveAction]
   }
   
-  extension [Self <: SaveAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveAction] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

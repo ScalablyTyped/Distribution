@@ -46,7 +46,8 @@ object TaxonomyDEFAULTPROVIDERTa {
     __obj.asInstanceOf[TaxonomyDEFAULTPROVIDERTa]
   }
   
-  extension [Self <: TaxonomyDEFAULTPROVIDERTa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaxonomyDEFAULTPROVIDERTa] (val x: Self) extends AnyVal {
     
     inline def setDEFAULT_PROVIDER(value: Taxonomy): Self = StObject.set(x, "DEFAULT_PROVIDER", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object SSMLMessage {
     __obj.asInstanceOf[SSMLMessage]
   }
   
-  extension [Self <: SSMLMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSMLMessage] (val x: Self) extends AnyVal {
     
     inline def setValue(value: SSMLMessageValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

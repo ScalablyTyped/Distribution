@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[GeometryCollection[P]]
     }
     
-    extension [Self <: GeometryCollection[?], P /* <: Properties */](x: Self & GeometryCollection[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeometryCollection[?], P /* <: Properties */] (val x: Self & GeometryCollection[P]) extends AnyVal {
       
       inline def setGeometries(value: js.Array[GeometryObject[P]]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object mod {
       __obj.asInstanceOf[GeometryObjectA[P]]
     }
     
-    extension [Self <: GeometryObjectA[?], P /* <: Properties */](x: Self & GeometryObjectA[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeometryObjectA[?], P /* <: Properties */] (val x: Self & GeometryObjectA[P]) extends AnyVal {
       
       inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object mod {
       __obj.asInstanceOf[LineString[P]]
     }
     
-    extension [Self <: LineString[?], P /* <: Properties */](x: Self & LineString[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineString[?], P /* <: Properties */] (val x: Self & LineString[P]) extends AnyVal {
       
       inline def setArcs(value: ArcIndexes): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
       
@@ -185,7 +188,8 @@ object mod {
       __obj.asInstanceOf[MultiLineString[P]]
     }
     
-    extension [Self <: MultiLineString[?], P /* <: Properties */](x: Self & MultiLineString[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiLineString[?], P /* <: Properties */] (val x: Self & MultiLineString[P]) extends AnyVal {
       
       inline def setArcs(value: js.Array[ArcIndexes]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
       
@@ -213,7 +217,8 @@ object mod {
       __obj.asInstanceOf[MultiPoint[P]]
     }
     
-    extension [Self <: MultiPoint[?], P /* <: Properties */](x: Self & MultiPoint[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiPoint[?], P /* <: Properties */] (val x: Self & MultiPoint[P]) extends AnyVal {
       
       inline def setCoordinates(value: js.Array[Positions]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -241,7 +246,8 @@ object mod {
       __obj.asInstanceOf[MultiPolygon[P]]
     }
     
-    extension [Self <: MultiPolygon[?], P /* <: Properties */](x: Self & MultiPolygon[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiPolygon[?], P /* <: Properties */] (val x: Self & MultiPolygon[P]) extends AnyVal {
       
       inline def setArcs(value: js.Array[js.Array[ArcIndexes]]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
       
@@ -267,7 +273,8 @@ object mod {
       __obj.asInstanceOf[NullObject]
     }
     
-    extension [Self <: NullObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NullObject] (val x: Self) extends AnyVal {
       
       inline def setType(value: Null): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -303,7 +310,8 @@ object mod {
       __obj.asInstanceOf[Point[P]]
     }
     
-    extension [Self <: Point[?], P /* <: Properties */](x: Self & Point[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point[?], P /* <: Properties */] (val x: Self & Point[P]) extends AnyVal {
       
       inline def setCoordinates(value: Positions): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -331,7 +339,8 @@ object mod {
       __obj.asInstanceOf[Polygon[P]]
     }
     
-    extension [Self <: Polygon[?], P /* <: Properties */](x: Self & Polygon[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Polygon[?], P /* <: Properties */] (val x: Self & Polygon[P]) extends AnyVal {
       
       inline def setArcs(value: js.Array[ArcIndexes]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
       
@@ -359,7 +368,8 @@ object mod {
       __obj.asInstanceOf[TopoJSON]
     }
     
-    extension [Self <: TopoJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopoJSON] (val x: Self) extends AnyVal {
       
       inline def setBbox(value: BBox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
@@ -392,7 +402,8 @@ object mod {
       __obj.asInstanceOf[Topology[T]]
     }
     
-    extension [Self <: Topology[?], T /* <: Objects[Properties] */](x: Self & Topology[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Topology[?], T /* <: Objects[Properties] */] (val x: Self & Topology[T]) extends AnyVal {
       
       inline def setArcs(value: js.Array[Arc]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
       
@@ -421,7 +432,8 @@ object mod {
       __obj.asInstanceOf[Transform]
     }
     
-    extension [Self <: Transform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
       
       inline def setScale(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       

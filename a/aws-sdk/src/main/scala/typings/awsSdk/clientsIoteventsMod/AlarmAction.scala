@@ -31,7 +31,8 @@ object AlarmAction {
     __obj.asInstanceOf[AlarmAction]
   }
   
-  extension [Self <: AlarmAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlarmAction] (val x: Self) extends AnyVal {
     
     inline def setDynamoDB(value: DynamoDBAction): Self = StObject.set(x, "dynamoDB", value.asInstanceOf[js.Any])
     

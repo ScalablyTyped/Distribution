@@ -1239,7 +1239,8 @@ object mod {
       __obj.asInstanceOf[CurveGenerator]
     }
     
-    extension [Self <: CurveGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurveGenerator] (val x: Self) extends AnyVal {
       
       inline def setAreaEnd(value: () => Unit): Self = StObject.set(x, "areaEnd", js.Any.fromFunction0(value))
       
@@ -1271,7 +1272,8 @@ object mod {
       __obj.asInstanceOf[CurveGeneratorLineOnly]
     }
     
-    extension [Self <: CurveGeneratorLineOnly](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurveGeneratorLineOnly] (val x: Self) extends AnyVal {
       
       inline def setLineEnd(value: () => Unit): Self = StObject.set(x, "lineEnd", js.Any.fromFunction0(value))
       
@@ -1315,7 +1317,8 @@ object mod {
       __obj.asInstanceOf[DefaultArcObject]
     }
     
-    extension [Self <: DefaultArcObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultArcObject] (val x: Self) extends AnyVal {
       
       inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
@@ -1364,7 +1367,8 @@ object mod {
       __obj.asInstanceOf[DefaultLinkObject]
     }
     
-    extension [Self <: DefaultLinkObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultLinkObject] (val x: Self) extends AnyVal {
       
       inline def setSource(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -1848,7 +1852,8 @@ object mod {
       __obj.asInstanceOf[PieArcDatum[T]]
     }
     
-    extension [Self <: PieArcDatum[?], T](x: Self & PieArcDatum[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieArcDatum[?], T] (val x: Self & PieArcDatum[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -2198,7 +2203,8 @@ object mod {
       __obj.asInstanceOf[SymbolType]
     }
     
-    extension [Self <: SymbolType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymbolType] (val x: Self) extends AnyVal {
       
       inline def setDraw(value: (CanvasPathD3Shape, Double) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
     }

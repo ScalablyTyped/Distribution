@@ -63,7 +63,8 @@ object Actor {
     __obj.asInstanceOf[Actor]
   }
   
-  extension [Self <: Actor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Actor] (val x: Self) extends AnyVal {
     
     inline def setActor(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['actor'] */ js.Any

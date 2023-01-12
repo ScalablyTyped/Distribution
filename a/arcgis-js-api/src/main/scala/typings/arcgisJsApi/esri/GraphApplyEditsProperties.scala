@@ -64,7 +64,8 @@ object GraphApplyEditsProperties {
     __obj.asInstanceOf[GraphApplyEditsProperties]
   }
   
-  extension [Self <: GraphApplyEditsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphApplyEditsProperties] (val x: Self) extends AnyVal {
     
     inline def setEntityAdds(value: js.Array[EntityProperties]): Self = StObject.set(x, "entityAdds", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object CapabilityStatementMessagingSupportedMessage {
     __obj.asInstanceOf[CapabilityStatementMessagingSupportedMessage]
   }
   
-  extension [Self <: CapabilityStatementMessagingSupportedMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilityStatementMessagingSupportedMessage] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: Reference): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

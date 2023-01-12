@@ -19,7 +19,8 @@ object TourDefinition {
     __obj.asInstanceOf[TourDefinition]
   }
   
-  extension [Self <: TourDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TourDefinition] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ObjectExplorerContext {
     __obj.asInstanceOf[ObjectExplorerContext]
   }
   
-  extension [Self <: ObjectExplorerContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectExplorerContext] (val x: Self) extends AnyVal {
     
     inline def setIsConnectionNode(value: Boolean): Self = StObject.set(x, "isConnectionNode", value.asInstanceOf[js.Any])
     

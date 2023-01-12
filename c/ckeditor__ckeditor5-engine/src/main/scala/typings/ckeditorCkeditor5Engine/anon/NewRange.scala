@@ -26,7 +26,8 @@ object NewRange {
     __obj.asInstanceOf[NewRange]
   }
   
-  extension [Self <: NewRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewRange] (val x: Self) extends AnyVal {
     
     inline def setAffectsData(value: Boolean): Self = StObject.set(x, "affectsData", value.asInstanceOf[js.Any])
     

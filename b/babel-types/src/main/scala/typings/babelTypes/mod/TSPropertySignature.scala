@@ -39,7 +39,8 @@ object TSPropertySignature {
   @js.native
   def apply(key: Expression, typeAnnotation: TSTypeAnnotation, initializer: Expression): TSPropertySignature = js.native
   
-  extension [Self <: TSPropertySignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSPropertySignature] (val x: Self) extends AnyVal {
     
     inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     

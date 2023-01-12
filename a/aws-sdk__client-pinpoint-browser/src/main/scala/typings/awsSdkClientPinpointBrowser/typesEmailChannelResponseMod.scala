@@ -90,7 +90,8 @@ object typesEmailChannelResponseMod {
       __obj.asInstanceOf[EmailChannelResponse]
     }
     
-    extension [Self <: EmailChannelResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailChannelResponse] (val x: Self) extends AnyVal {
       
       inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       

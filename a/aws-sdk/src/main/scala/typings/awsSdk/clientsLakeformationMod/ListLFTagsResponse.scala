@@ -23,7 +23,8 @@ object ListLFTagsResponse {
     __obj.asInstanceOf[ListLFTagsResponse]
   }
   
-  extension [Self <: ListLFTagsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLFTagsResponse] (val x: Self) extends AnyVal {
     
     inline def setLFTags(value: LFTagsList): Self = StObject.set(x, "LFTags", value.asInstanceOf[js.Any])
     

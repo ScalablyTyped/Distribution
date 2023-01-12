@@ -30,7 +30,8 @@ object DelegatedPermissionClassification {
     __obj.asInstanceOf[DelegatedPermissionClassification]
   }
   
-  extension [Self <: DelegatedPermissionClassification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelegatedPermissionClassification] (val x: Self) extends AnyVal {
     
     inline def setClassification(value: NullableOption[PermissionClassificationType]): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     

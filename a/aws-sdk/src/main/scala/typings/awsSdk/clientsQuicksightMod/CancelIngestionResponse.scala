@@ -33,7 +33,8 @@ object CancelIngestionResponse {
     __obj.asInstanceOf[CancelIngestionResponse]
   }
   
-  extension [Self <: CancelIngestionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelIngestionResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

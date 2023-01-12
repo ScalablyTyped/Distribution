@@ -51,7 +51,8 @@ object GoogleCloudRecommendationengineV1beta1ProductEventDetail {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ProductEventDetail]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1ProductEventDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ProductEventDetail] (val x: Self) extends AnyVal {
     
     inline def setCartId(value: String): Self = StObject.set(x, "cartId", value.asInstanceOf[js.Any])
     

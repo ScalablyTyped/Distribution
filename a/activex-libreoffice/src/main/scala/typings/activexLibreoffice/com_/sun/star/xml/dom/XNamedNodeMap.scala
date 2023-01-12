@@ -76,7 +76,8 @@ object XNamedNodeMap {
     __obj.asInstanceOf[XNamedNodeMap]
   }
   
-  extension [Self <: XNamedNodeMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNamedNodeMap] (val x: Self) extends AnyVal {
     
     inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     

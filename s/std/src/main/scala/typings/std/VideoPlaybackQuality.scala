@@ -32,7 +32,8 @@ object VideoPlaybackQuality {
     __obj.asInstanceOf[VideoPlaybackQuality]
   }
   
-  extension [Self <: VideoPlaybackQuality](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoPlaybackQuality] (val x: Self) extends AnyVal {
     
     inline def setCorruptedVideoFrames(value: Double): Self = StObject.set(x, "corruptedVideoFrames", value.asInstanceOf[js.Any])
     

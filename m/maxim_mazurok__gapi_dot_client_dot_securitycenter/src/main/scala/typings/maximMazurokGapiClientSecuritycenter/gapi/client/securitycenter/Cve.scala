@@ -25,7 +25,8 @@ object Cve {
     __obj.asInstanceOf[Cve]
   }
   
-  extension [Self <: Cve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cve] (val x: Self) extends AnyVal {
     
     inline def setCvssv3(value: Cvssv3): Self = StObject.set(x, "cvssv3", value.asInstanceOf[js.Any])
     

@@ -245,7 +245,8 @@ object mod {
       __obj.asInstanceOf[CommandArg]
     }
     
-    extension [Self <: CommandArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandArg] (val x: Self) extends AnyVal {
       
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
@@ -268,7 +269,8 @@ object mod {
       __obj.asInstanceOf[CommandConfig]
     }
     
-    extension [Self <: CommandConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandConfig] (val x: Self) extends AnyVal {
       
       inline def setAllowUnknownOptions(value: Boolean): Self = StObject.set(x, "allowUnknownOptions", value.asInstanceOf[js.Any])
       
@@ -299,7 +301,8 @@ object mod {
       __obj.asInstanceOf[HelpSection]
     }
     
-    extension [Self <: HelpSection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelpSection] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -343,7 +346,8 @@ object mod {
       __obj.asInstanceOf[Option]
     }
     
-    extension [Self <: Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: OptionConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -382,7 +386,8 @@ object mod {
       __obj.asInstanceOf[OptionConfig]
     }
     
-    extension [Self <: OptionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionConfig] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -409,7 +414,8 @@ object mod {
       __obj.asInstanceOf[ParsedArgv]
     }
     
-    extension [Self <: ParsedArgv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedArgv] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

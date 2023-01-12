@@ -41,7 +41,8 @@ object PartialComputeStylesModif {
     __obj.asInstanceOf[PartialComputeStylesModif]
   }
   
-  extension [Self <: PartialComputeStylesModif](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialComputeStylesModif] (val x: Self) extends AnyVal {
     
     inline def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

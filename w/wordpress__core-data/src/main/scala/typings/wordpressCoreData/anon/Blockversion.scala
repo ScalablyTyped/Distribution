@@ -15,7 +15,8 @@ object Blockversion {
     __obj.asInstanceOf[Blockversion]
   }
   
-  extension [Self <: Blockversion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blockversion] (val x: Self) extends AnyVal {
     
     inline def setBlock_version(value: Double): Self = StObject.set(x, "block_version", value.asInstanceOf[js.Any])
   }

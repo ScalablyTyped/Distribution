@@ -31,7 +31,8 @@ object Distributors {
     __obj.asInstanceOf[Distributors]
   }
   
-  extension [Self <: Distributors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Distributors] (val x: Self) extends AnyVal {
     
     inline def setDistributors(value: js.Array[String]): Self = StObject.set(x, "distributors", value.asInstanceOf[js.Any])
     

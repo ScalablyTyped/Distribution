@@ -24,7 +24,8 @@ object CancelArguments {
     __obj.asInstanceOf[CancelArguments]
   }
   
-  extension [Self <: CancelArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelArguments] (val x: Self) extends AnyVal {
     
     inline def setProgressId(value: String): Self = StObject.set(x, "progressId", value.asInstanceOf[js.Any])
     

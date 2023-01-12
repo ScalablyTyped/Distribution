@@ -27,7 +27,8 @@ object PortalFeaturedGroups {
     __obj.asInstanceOf[PortalFeaturedGroups]
   }
   
-  extension [Self <: PortalFeaturedGroups](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalFeaturedGroups] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

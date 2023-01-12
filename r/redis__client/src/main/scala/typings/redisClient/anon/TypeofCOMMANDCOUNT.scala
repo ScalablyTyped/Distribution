@@ -24,7 +24,8 @@ object TypeofCOMMANDCOUNT {
     __obj.asInstanceOf[TypeofCOMMANDCOUNT]
   }
   
-  extension [Self <: TypeofCOMMANDCOUNT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCOMMANDCOUNT] (val x: Self) extends AnyVal {
     
     inline def setIS_READ_ONLY(value: /* true */ Boolean): Self = StObject.set(x, "IS_READ_ONLY", value.asInstanceOf[js.Any])
     

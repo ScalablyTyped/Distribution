@@ -68,7 +68,8 @@ object Clear {
     __obj.asInstanceOf[Clear]
   }
   
-  extension [Self <: Clear](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Clear] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, /* repeated */ String) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

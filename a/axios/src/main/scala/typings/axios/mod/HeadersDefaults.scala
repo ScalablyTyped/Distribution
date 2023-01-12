@@ -43,7 +43,8 @@ object HeadersDefaults {
     __obj.asInstanceOf[HeadersDefaults]
   }
   
-  extension [Self <: HeadersDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadersDefaults] (val x: Self) extends AnyVal {
     
     inline def setCommon(value: RawAxiosRequestHeaders): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PartitionError {
     __obj.asInstanceOf[PartitionError]
   }
   
-  extension [Self <: PartitionError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionError] (val x: Self) extends AnyVal {
     
     inline def setErrorDetail(value: ErrorDetail): Self = StObject.set(x, "ErrorDetail", value.asInstanceOf[js.Any])
     

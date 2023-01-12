@@ -28,7 +28,8 @@ object DeleteComponentRequest {
     __obj.asInstanceOf[DeleteComponentRequest]
   }
   
-  extension [Self <: DeleteComponentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteComponentRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

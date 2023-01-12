@@ -15,7 +15,8 @@ object NavigationInjectedProps {
     __obj.asInstanceOf[NavigationInjectedProps[P]]
   }
   
-  extension [Self <: NavigationInjectedProps[?], P](x: Self & NavigationInjectedProps[P]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationInjectedProps[?], P] (val x: Self & NavigationInjectedProps[P]) extends AnyVal {
     
     inline def setNavigation(value: NavigationScreenProp[NavigationRoute[P], P]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
   }

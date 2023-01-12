@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setSize(value: `32` | `64` | `128` | `256` | `512` | `1024`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

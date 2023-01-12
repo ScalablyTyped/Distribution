@@ -32,7 +32,8 @@ object CSSMathInvert {
     __obj.asInstanceOf[CSSMathInvert]
   }
   
-  extension [Self <: CSSMathInvert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSMathInvert] (val x: Self) extends AnyVal {
     
     inline def setValue(value: CSSNumericValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

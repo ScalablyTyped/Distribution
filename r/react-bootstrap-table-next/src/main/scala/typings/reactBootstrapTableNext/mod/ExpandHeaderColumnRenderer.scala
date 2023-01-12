@@ -15,7 +15,8 @@ object ExpandHeaderColumnRenderer {
     __obj.asInstanceOf[ExpandHeaderColumnRenderer]
   }
   
-  extension [Self <: ExpandHeaderColumnRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandHeaderColumnRenderer] (val x: Self) extends AnyVal {
     
     inline def setIsAnyExpands(value: Boolean): Self = StObject.set(x, "isAnyExpands", value.asInstanceOf[js.Any])
   }

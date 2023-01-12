@@ -59,7 +59,8 @@ object SlideSorter {
     __obj.asInstanceOf[SlideSorter]
   }
   
-  extension [Self <: SlideSorter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideSorter] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (XResourceId, XController, XWindow) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
   }

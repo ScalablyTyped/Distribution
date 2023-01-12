@@ -79,7 +79,8 @@ object distWebHookMod {
       __obj.asInstanceOf[IssueWebHookData]
     }
     
-    extension [Self <: IssueWebHookData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueWebHookData] (val x: Self) extends AnyVal {
       
       inline def setAction(
         value: assigned | unassigned | labeled | unlabeled | opened | edited | milestoned | demilestoned | closed | reopened
@@ -106,7 +107,8 @@ object distWebHookMod {
       __obj.asInstanceOf[WebHookData]
     }
     
-    extension [Self <: WebHookData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebHookData] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

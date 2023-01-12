@@ -23,7 +23,8 @@ object ASPxClientFloatingActionButtonActionExpandingEventArgs {
     __obj.asInstanceOf[ASPxClientFloatingActionButtonActionExpandingEventArgs]
   }
   
-  extension [Self <: ASPxClientFloatingActionButtonActionExpandingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFloatingActionButtonActionExpandingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setContextName(value: String): Self = StObject.set(x, "contextName", value.asInstanceOf[js.Any])
   }

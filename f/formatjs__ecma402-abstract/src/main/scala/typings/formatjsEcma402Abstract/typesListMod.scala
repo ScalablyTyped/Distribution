@@ -24,7 +24,8 @@ object typesListMod {
       __obj.asInstanceOf[ListPattern]
     }
     
-    extension [Self <: ListPattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListPattern] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object typesListMod {
       __obj.asInstanceOf[ListPatternData]
     }
     
-    extension [Self <: ListPatternData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListPatternData] (val x: Self) extends AnyVal {
       
       inline def setLong(value: ListPattern): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object typesListMod {
       __obj.asInstanceOf[ListPatternFieldsData]
     }
     
-    extension [Self <: ListPatternFieldsData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListPatternFieldsData] (val x: Self) extends AnyVal {
       
       inline def setConjunction(value: ListPatternData): Self = StObject.set(x, "conjunction", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object distTypesSrcHashesInterfaceMod {
       __obj.asInstanceOf[MultihashDigest[Code]]
     }
     
-    extension [Self <: MultihashDigest[?], Code /* <: Double */](x: Self & MultihashDigest[Code]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultihashDigest[?], Code /* <: Double */] (val x: Self & MultihashDigest[Code]) extends AnyVal {
       
       inline def setBytes(value: js.typedarray.Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object distTypesSrcHashesInterfaceMod {
       __obj.asInstanceOf[MultihashHasher[Code]]
     }
     
-    extension [Self <: MultihashHasher[?], Code /* <: Double */](x: Self & MultihashHasher[Code]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultihashHasher[?], Code /* <: Double */] (val x: Self & MultihashHasher[Code]) extends AnyVal {
       
       inline def setCode(value: Code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

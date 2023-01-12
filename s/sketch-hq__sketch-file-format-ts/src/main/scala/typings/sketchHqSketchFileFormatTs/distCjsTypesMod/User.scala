@@ -19,7 +19,8 @@ object User {
     __obj.asInstanceOf[User]
   }
   
-  extension [Self <: User](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: ExpandedSymbolPathsInSidebar): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
   }

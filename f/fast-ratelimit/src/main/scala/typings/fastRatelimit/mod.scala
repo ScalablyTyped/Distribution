@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[FastRateLimitOptions]
     }
     
-    extension [Self <: FastRateLimitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastRateLimitOptions] (val x: Self) extends AnyVal {
       
       inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       

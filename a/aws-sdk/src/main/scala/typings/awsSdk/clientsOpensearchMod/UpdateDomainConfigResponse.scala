@@ -23,7 +23,8 @@ object UpdateDomainConfigResponse {
     __obj.asInstanceOf[UpdateDomainConfigResponse]
   }
   
-  extension [Self <: UpdateDomainConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDomainConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setDomainConfig(value: DomainConfig): Self = StObject.set(x, "DomainConfig", value.asInstanceOf[js.Any])
     

@@ -90,7 +90,8 @@ object featuresCheckoutMod {
       __obj.asInstanceOf[CheckDiscountResponse]
     }
     
-    extension [Self <: CheckDiscountResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckDiscountResponse] (val x: Self) extends AnyVal {
       
       inline def setAmount_saved(value: Price): Self = StObject.set(x, "amount_saved", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object featuresCheckoutMod {
       __obj.asInstanceOf[CheckGiftcardResponse]
     }
     
-    extension [Self <: CheckGiftcardResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckGiftcardResponse] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object featuresCheckoutMod {
       __obj.asInstanceOf[CheckPayWhatYouWantResponse]
     }
     
-    extension [Self <: CheckPayWhatYouWantResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckPayWhatYouWantResponse] (val x: Self) extends AnyVal {
       
       inline def setCustomer_set_price(value: Price): Self = StObject.set(x, "customer_set_price", value.asInstanceOf[js.Any])
       
@@ -181,7 +184,8 @@ object featuresCheckoutMod {
       __obj.asInstanceOf[CheckQuantityResponse]
     }
     
-    extension [Self <: CheckQuantityResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckQuantityResponse] (val x: Self) extends AnyVal {
       
       inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
       
@@ -212,7 +216,8 @@ object featuresCheckoutMod {
       __obj.asInstanceOf[CheckShippingOptionResponse]
     }
     
-    extension [Self <: CheckShippingOptionResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckShippingOptionResponse] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -260,7 +265,8 @@ object featuresCheckoutMod {
       __obj.asInstanceOf[CheckVariantResponse]
     }
     
-    extension [Self <: CheckVariantResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckVariantResponse] (val x: Self) extends AnyVal {
       
       inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
       
@@ -311,7 +317,8 @@ object featuresCheckoutMod {
       __obj.asInstanceOf[GetLocationFromIPResponse]
     }
     
-    extension [Self <: GetLocationFromIPResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetLocationFromIPResponse] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
@@ -346,7 +353,8 @@ object featuresCheckoutMod {
       __obj.asInstanceOf[GetShippingOptionsResponse]
     }
     
-    extension [Self <: GetShippingOptionsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetShippingOptionsResponse] (val x: Self) extends AnyVal {
       
       inline def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       
@@ -371,7 +379,8 @@ object featuresCheckoutMod {
       __obj.asInstanceOf[HelperValidationResponse]
     }
     
-    extension [Self <: HelperValidationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelperValidationResponse] (val x: Self) extends AnyVal {
       
       inline def setRules(value: StringDictionary[Digits]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     }
@@ -405,7 +414,8 @@ object featuresCheckoutMod {
       __obj.asInstanceOf[IsFreeResponse]
     }
     
-    extension [Self <: IsFreeResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsFreeResponse] (val x: Self) extends AnyVal {
       
       inline def setIs_free(value: Boolean): Self = StObject.set(x, "is_free", value.asInstanceOf[js.Any])
       
@@ -428,7 +438,8 @@ object featuresCheckoutMod {
       __obj.asInstanceOf[SetTaxZoneResponse]
     }
     
-    extension [Self <: SetTaxZoneResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetTaxZoneResponse] (val x: Self) extends AnyVal {
       
       inline def setLive(value: Live): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
       

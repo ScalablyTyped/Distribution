@@ -28,7 +28,8 @@ object CreateGroupMembershipRequest {
     __obj.asInstanceOf[CreateGroupMembershipRequest]
   }
   
-  extension [Self <: CreateGroupMembershipRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGroupMembershipRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: ResourceId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     

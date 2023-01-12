@@ -105,7 +105,8 @@ object NamedTraceConfiguration {
     __obj.asInstanceOf[NamedTraceConfiguration]
   }
   
-  extension [Self <: NamedTraceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedTraceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

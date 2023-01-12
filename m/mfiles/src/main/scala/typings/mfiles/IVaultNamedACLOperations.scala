@@ -69,7 +69,8 @@ object IVaultNamedACLOperations {
     __obj.asInstanceOf[IVaultNamedACLOperations]
   }
   
-  extension [Self <: IVaultNamedACLOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultNamedACLOperations] (val x: Self) extends AnyVal {
     
     inline def setAddNamedACLAdmin(value: INamedACLAdmin => INamedACLAdmin): Self = StObject.set(x, "AddNamedACLAdmin", js.Any.fromFunction1(value))
     

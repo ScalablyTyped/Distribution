@@ -20,7 +20,8 @@ object TypeofMaskedTextBox {
     __obj.asInstanceOf[TypeofMaskedTextBox]
   }
   
-  extension [Self <: TypeofMaskedTextBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofMaskedTextBox] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => MaskedTextBox): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

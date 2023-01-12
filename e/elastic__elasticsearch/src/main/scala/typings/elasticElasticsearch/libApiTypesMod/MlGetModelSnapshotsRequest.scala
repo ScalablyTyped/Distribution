@@ -33,7 +33,8 @@ object MlGetModelSnapshotsRequest {
     __obj.asInstanceOf[MlGetModelSnapshotsRequest]
   }
   
-  extension [Self <: MlGetModelSnapshotsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetModelSnapshotsRequest] (val x: Self) extends AnyVal {
     
     inline def setDesc(value: Boolean): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object MailCountResult {
     __obj.asInstanceOf[MailCountResult]
   }
   
-  extension [Self <: MailCountResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailCountResult] (val x: Self) extends AnyVal {
     
     inline def setAccountCountErrors(value: js.Array[AccountCountError]): Self = StObject.set(x, "accountCountErrors", value.asInstanceOf[js.Any])
     

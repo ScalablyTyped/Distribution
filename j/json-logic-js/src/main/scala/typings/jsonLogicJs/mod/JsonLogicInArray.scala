@@ -18,7 +18,8 @@ object JsonLogicInArray {
     __obj.asInstanceOf[JsonLogicInArray[AddOps]]
   }
   
-  extension [Self <: JsonLogicInArray[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicInArray[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicInArray[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicInArray[AddOps]) extends AnyVal {
     
     inline def setInArray(value: js.Tuple2[RulesLogic[AddOps], js.Array[RulesLogic[AddOps]]]): Self = StObject.set(x, "inArray", value.asInstanceOf[js.Any])
   }

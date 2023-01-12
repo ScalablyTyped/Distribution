@@ -43,7 +43,8 @@ object IMsoDropLines {
     __obj.asInstanceOf[IMsoDropLines]
   }
   
-  extension [Self <: IMsoDropLines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMsoDropLines] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

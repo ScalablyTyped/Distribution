@@ -27,7 +27,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BoxKeyPair]
     }
     
-    extension [Self <: BoxKeyPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxKeyPair] (val x: Self) extends AnyVal {
       
       inline def setPublicKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SignKeyPair]
     }
     
-    extension [Self <: SignKeyPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignKeyPair] (val x: Self) extends AnyVal {
       
       inline def setPublicKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       
@@ -180,7 +182,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[nacl]
     }
     
-    extension [Self <: nacl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: nacl] (val x: Self) extends AnyVal {
       
       inline def setBox(value: box): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
       

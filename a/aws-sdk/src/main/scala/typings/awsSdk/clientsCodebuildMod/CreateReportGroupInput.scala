@@ -34,7 +34,8 @@ object CreateReportGroupInput {
     __obj.asInstanceOf[CreateReportGroupInput]
   }
   
-  extension [Self <: CreateReportGroupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReportGroupInput] (val x: Self) extends AnyVal {
     
     inline def setExportConfig(value: ReportExportConfig): Self = StObject.set(x, "exportConfig", value.asInstanceOf[js.Any])
     

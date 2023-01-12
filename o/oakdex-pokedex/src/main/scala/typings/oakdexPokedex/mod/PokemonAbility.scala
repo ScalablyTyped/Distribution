@@ -17,7 +17,8 @@ object PokemonAbility {
     __obj.asInstanceOf[PokemonAbility]
   }
   
-  extension [Self <: PokemonAbility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PokemonAbility] (val x: Self) extends AnyVal {
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     

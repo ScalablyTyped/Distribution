@@ -17,7 +17,8 @@ object IFieldMask {
     __obj.asInstanceOf[IFieldMask]
   }
   
-  extension [Self <: IFieldMask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldMask] (val x: Self) extends AnyVal {
     
     inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     

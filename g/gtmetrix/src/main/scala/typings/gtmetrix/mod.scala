@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[AccountStatus]
     }
     
-    extension [Self <: AccountStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccountStatus] (val x: Self) extends AnyVal {
       
       inline def setApi_credits(value: Double): Self = StObject.set(x, "api_credits", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object mod {
       __obj.asInstanceOf[ApiError]
     }
     
-    extension [Self <: ApiError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiError] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object mod {
       __obj.asInstanceOf[BrowserFeatures]
     }
     
-    extension [Self <: BrowserFeatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserFeatures] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -186,7 +189,8 @@ object mod {
       __obj.asInstanceOf[GTmetrix]
     }
     
-    extension [Self <: GTmetrix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GTmetrix] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: AccountApi): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -217,7 +221,8 @@ object mod {
       __obj.asInstanceOf[InvalidResponseError]
     }
     
-    extension [Self <: InvalidResponseError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidResponseError] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -242,7 +247,8 @@ object mod {
       __obj.asInstanceOf[LocationInfo]
     }
     
-    extension [Self <: LocationInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationInfo] (val x: Self) extends AnyVal {
       
       inline def setBrowsers(value: js.Array[Double]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
       
@@ -321,7 +327,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
       
@@ -402,7 +409,8 @@ object mod {
       __obj.asInstanceOf[TestBasicInfo]
     }
     
-    extension [Self <: TestBasicInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestBasicInfo] (val x: Self) extends AnyVal {
       
       inline def setCredits_left(value: Double): Self = StObject.set(x, "credits_left", value.asInstanceOf[js.Any])
       
@@ -429,7 +437,8 @@ object mod {
       __obj.asInstanceOf[TestDetails]
     }
     
-    extension [Self <: TestDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestDetails] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

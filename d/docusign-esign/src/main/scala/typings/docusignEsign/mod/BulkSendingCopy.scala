@@ -45,7 +45,8 @@ object BulkSendingCopy {
     __obj.asInstanceOf[BulkSendingCopy]
   }
   
-  extension [Self <: BulkSendingCopy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkSendingCopy] (val x: Self) extends AnyVal {
     
     inline def setCustomFields(
       value: js.Array[

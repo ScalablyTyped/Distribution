@@ -47,7 +47,8 @@ object Range {
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean]
   
-  extension [Self <: Range](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

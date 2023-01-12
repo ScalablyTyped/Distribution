@@ -24,7 +24,8 @@ object GoogleCloudRecommenderV1MarkRecommendationSucceededRequest {
     __obj.asInstanceOf[GoogleCloudRecommenderV1MarkRecommendationSucceededRequest]
   }
   
-  extension [Self <: GoogleCloudRecommenderV1MarkRecommendationSucceededRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommenderV1MarkRecommendationSucceededRequest] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object BatchOperationMetadata {
     __obj.asInstanceOf[BatchOperationMetadata]
   }
   
-  extension [Self <: BatchOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

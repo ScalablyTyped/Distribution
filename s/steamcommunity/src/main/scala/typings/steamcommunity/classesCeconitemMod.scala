@@ -291,7 +291,8 @@ object classesCeconitemMod {
       __obj.asInstanceOf[CEconItem]
     }
     
-    extension [Self <: CEconItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CEconItem] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[Any]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

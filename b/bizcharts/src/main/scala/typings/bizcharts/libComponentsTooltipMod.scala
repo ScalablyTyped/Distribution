@@ -83,7 +83,8 @@ object libComponentsTooltipMod {
       __obj.asInstanceOf[ITooltip]
     }
     
-    extension [Self <: ITooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltip] (val x: Self) extends AnyVal {
       
       inline def setChildren(
         value: (/* title */ js.UndefOr[String], /* items */ js.UndefOr[js.Array[Any]], /* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => js.Object
@@ -130,7 +131,8 @@ object libComponentsTooltipMod {
       __obj.asInstanceOf[ITooltipEvent]
     }
     
-    extension [Self <: ITooltipEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipEvent] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       

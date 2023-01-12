@@ -40,7 +40,8 @@ object DeclareComponentTemplateInfo {
     __obj.asInstanceOf[DeclareComponentTemplateInfo]
   }
   
-  extension [Self <: DeclareComponentTemplateInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeclareComponentTemplateInfo] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

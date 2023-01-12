@@ -28,7 +28,8 @@ object QueryStatistics {
     __obj.asInstanceOf[QueryStatistics]
   }
   
-  extension [Self <: QueryStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryStatistics] (val x: Self) extends AnyVal {
     
     inline def setBytesScanned(value: StatsValue): Self = StObject.set(x, "bytesScanned", value.asInstanceOf[js.Any])
     

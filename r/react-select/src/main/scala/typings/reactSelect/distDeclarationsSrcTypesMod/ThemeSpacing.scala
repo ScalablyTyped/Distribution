@@ -19,7 +19,8 @@ object ThemeSpacing {
     __obj.asInstanceOf[ThemeSpacing]
   }
   
-  extension [Self <: ThemeSpacing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeSpacing] (val x: Self) extends AnyVal {
     
     inline def setBaseUnit(value: Double): Self = StObject.set(x, "baseUnit", value.asInstanceOf[js.Any])
     

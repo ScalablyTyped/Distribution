@@ -27,7 +27,8 @@ object InterpolationToken {
     __obj.asInstanceOf[InterpolationToken]
   }
   
-  extension [Self <: InterpolationToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpolationToken] (val x: Self) extends AnyVal {
     
     inline def setParts(
       value: (js.Tuple3[/* startMarker */ String, /* expression */ String, /* endMarker */ String]) | (js.Tuple2[/* startMarker */ String, /* expression */ String])

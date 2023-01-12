@@ -29,7 +29,8 @@ object InlineQueryResultLocationBase {
     __obj.asInstanceOf[InlineQueryResultLocationBase]
   }
   
-  extension [Self <: InlineQueryResultLocationBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineQueryResultLocationBase] (val x: Self) extends AnyVal {
     
     inline def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
     

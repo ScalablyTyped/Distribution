@@ -29,7 +29,8 @@ object GetModule {
     __obj.asInstanceOf[GetModule]
   }
   
-  extension [Self <: GetModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetModule] (val x: Self) extends AnyVal {
     
     inline def setGetModule(value: String => Any): Self = StObject.set(x, "getModule", js.Any.fromFunction1(value))
     

@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[App]
     }
     
-    extension [Self <: App](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: App] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Archive]
     }
     
-    extension [Self <: Archive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Archive] (val x: Self) extends AnyVal {
       
       inline def set_archive(value: String): Self = StObject.set(x, "_archive", value.asInstanceOf[js.Any])
     }
@@ -83,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def set_data(value: String): Self = StObject.set(x, "_data", value.asInstanceOf[js.Any])
     }
@@ -102,7 +105,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -123,7 +127,8 @@ object anon {
       __obj.asInstanceOf[PageListCollapsed]
     }
     
-    extension [Self <: PageListCollapsed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageListCollapsed] (val x: Self) extends AnyVal {
       
       inline def setPageListCollapsed(value: Double): Self = StObject.set(x, "pageListCollapsed", value.asInstanceOf[js.Any])
       
@@ -144,7 +149,8 @@ object anon {
       __obj.asInstanceOf[ScrollOrigin]
     }
     
-    extension [Self <: ScrollOrigin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollOrigin] (val x: Self) extends AnyVal {
       
       inline def setScrollOrigin(value: SketchMSCurvePoint): Self = StObject.set(x, "scrollOrigin", value.asInstanceOf[js.Any])
       
@@ -165,7 +171,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object BINARY {
     __obj.asInstanceOf[BINARY]
   }
   
-  extension [Self <: BINARY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BINARY] (val x: Self) extends AnyVal {
     
     inline def setBINARY(value: `3`): Self = StObject.set(x, "BINARY", value.asInstanceOf[js.Any])
     

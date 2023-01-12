@@ -16,7 +16,8 @@ object AgentSetStateOptions {
     __obj.asInstanceOf[AgentSetStateOptions]
   }
   
-  extension [Self <: AgentSetStateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentSetStateOptions] (val x: Self) extends AnyVal {
     
     inline def setEnqueueNextState(value: Boolean): Self = StObject.set(x, "enqueueNextState", value.asInstanceOf[js.Any])
     

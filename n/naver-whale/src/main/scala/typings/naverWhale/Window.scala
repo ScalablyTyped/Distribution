@@ -16,7 +16,8 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  extension [Self <: Window](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
     
     inline def setWhale(value: Typeofwhale): Self = StObject.set(x, "whale", value.asInstanceOf[js.Any])
   }

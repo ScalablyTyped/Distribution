@@ -474,7 +474,8 @@ object sapMFlexItemDataMod {
       __obj.asInstanceOf[FlexItemDataSettings]
     }
     
-    extension [Self <: FlexItemDataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexItemDataSettings] (val x: Self) extends AnyVal {
       
       inline def setAlignSelf(
         value: FlexAlignSelf | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FlexAlignSelf * / any */ String) | PropertyBindingInfo

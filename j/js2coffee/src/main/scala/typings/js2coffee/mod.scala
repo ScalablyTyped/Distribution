@@ -165,7 +165,8 @@ object mod {
       __obj.asInstanceOf[AST]
     }
     
-    extension [Self <: AST](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AST] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.Array[CoffeeNode]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -227,7 +228,8 @@ object mod {
       __obj.asInstanceOf[Build_]
     }
     
-    extension [Self <: Build_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Build_] (val x: Self) extends AnyVal {
       
       inline def setAst(value: AST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       
@@ -259,7 +261,8 @@ object mod {
       __obj.asInstanceOf[CoffeeNode]
     }
     
-    extension [Self <: CoffeeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoffeeNode] (val x: Self) extends AnyVal {
       
       inline def setType(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: estree.estree.Node['type'] */ js.Any) | CoffeeNodeType
@@ -312,7 +315,8 @@ object mod {
       __obj.asInstanceOf[CompileError]
     }
     
-    extension [Self <: CompileError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompileError] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -338,7 +342,8 @@ object mod {
       __obj.asInstanceOf[CustomNode]
     }
     
-    extension [Self <: CustomNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomNode] (val x: Self) extends AnyVal {
       
       inline def setType(value: CoffeeNodeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -363,7 +368,8 @@ object mod {
       __obj.asInstanceOf[EsprimaStyleError]
     }
     
-    extension [Self <: EsprimaStyleError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EsprimaStyleError] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -598,7 +604,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBare(value: Boolean): Self = StObject.set(x, "bare", value.asInstanceOf[js.Any])
       
@@ -654,7 +661,8 @@ object mod {
       __obj.asInstanceOf[SyntaxProblem]
     }
     
-    extension [Self <: SyntaxProblem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyntaxProblem] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -683,7 +691,8 @@ object mod {
       __obj.asInstanceOf[Transform_]
     }
     
-    extension [Self <: Transform_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transform_] (val x: Self) extends AnyVal {
       
       inline def setAst(value: AST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       

@@ -51,7 +51,8 @@ object TableDefinition {
     __obj.asInstanceOf[TableDefinition]
   }
   
-  extension [Self <: TableDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableDefinition] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: AccessType): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     

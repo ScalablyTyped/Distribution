@@ -251,7 +251,8 @@ object Label {
     __obj.asInstanceOf[Label]
   }
   
-  extension [Self <: Label](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
     
     inline def setCoord(value: js.Array[Any]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
     

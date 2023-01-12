@@ -124,7 +124,8 @@ object libRulesInlineStateInlineMod {
       __obj.asInstanceOf[Delimiter]
     }
     
-    extension [Self <: Delimiter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delimiter] (val x: Self) extends AnyVal {
       
       inline def setClose(value: Boolean): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -157,7 +158,8 @@ object libRulesInlineStateInlineMod {
       __obj.asInstanceOf[Scanned]
     }
     
-    extension [Self <: Scanned](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scanned] (val x: Self) extends AnyVal {
       
       inline def setCan_close(value: Boolean): Self = StObject.set(x, "can_close", value.asInstanceOf[js.Any])
       
@@ -258,7 +260,8 @@ object libRulesInlineStateInlineMod {
       __obj.asInstanceOf[StateInline]
     }
     
-    extension [Self <: StateInline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateInline] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -318,7 +321,8 @@ object libRulesInlineStateInlineMod {
       __obj.asInstanceOf[TokenMata]
     }
     
-    extension [Self <: TokenMata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenMata] (val x: Self) extends AnyVal {
       
       inline def setDelimiters(value: js.Array[Delimiter]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       

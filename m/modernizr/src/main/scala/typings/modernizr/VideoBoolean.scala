@@ -19,7 +19,8 @@ object VideoBoolean {
     __obj.asInstanceOf[VideoBoolean]
   }
   
-  extension [Self <: VideoBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoBoolean] (val x: Self) extends AnyVal {
     
     inline def setH264(value: String): Self = StObject.set(x, "h264", value.asInstanceOf[js.Any])
     

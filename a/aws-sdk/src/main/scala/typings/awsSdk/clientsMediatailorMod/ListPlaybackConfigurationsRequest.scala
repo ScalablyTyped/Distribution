@@ -23,7 +23,8 @@ object ListPlaybackConfigurationsRequest {
     __obj.asInstanceOf[ListPlaybackConfigurationsRequest]
   }
   
-  extension [Self <: ListPlaybackConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPlaybackConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

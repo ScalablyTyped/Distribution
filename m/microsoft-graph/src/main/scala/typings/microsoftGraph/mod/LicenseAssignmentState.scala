@@ -25,7 +25,8 @@ object LicenseAssignmentState {
     __obj.asInstanceOf[LicenseAssignmentState]
   }
   
-  extension [Self <: LicenseAssignmentState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseAssignmentState] (val x: Self) extends AnyVal {
     
     inline def setAssignedByGroup(value: NullableOption[String]): Self = StObject.set(x, "assignedByGroup", value.asInstanceOf[js.Any])
     

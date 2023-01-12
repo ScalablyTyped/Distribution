@@ -28,7 +28,8 @@ object CreateStreamInput {
     __obj.asInstanceOf[CreateStreamInput]
   }
   
-  extension [Self <: CreateStreamInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStreamInput] (val x: Self) extends AnyVal {
     
     inline def setShardCount(value: PositiveIntegerObject): Self = StObject.set(x, "ShardCount", value.asInstanceOf[js.Any])
     

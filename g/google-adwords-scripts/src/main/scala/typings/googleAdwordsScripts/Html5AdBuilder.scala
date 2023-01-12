@@ -36,7 +36,8 @@ object Html5AdBuilder {
     __obj.asInstanceOf[Html5AdBuilder[Html5Ad]]
   }
   
-  extension [Self <: Html5AdBuilder[?], Html5Ad](x: Self & Html5AdBuilder[Html5Ad]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Html5AdBuilder[?], Html5Ad] (val x: Self & Html5AdBuilder[Html5Ad]) extends AnyVal {
     
     inline def setWithDimensions(value: String => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withDimensions", js.Any.fromFunction1(value))
     

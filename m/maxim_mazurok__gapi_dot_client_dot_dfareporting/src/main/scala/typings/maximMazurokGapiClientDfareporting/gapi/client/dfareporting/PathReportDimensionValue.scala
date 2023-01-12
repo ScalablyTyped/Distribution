@@ -31,7 +31,8 @@ object PathReportDimensionValue {
     __obj.asInstanceOf[PathReportDimensionValue]
   }
   
-  extension [Self <: PathReportDimensionValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathReportDimensionValue] (val x: Self) extends AnyVal {
     
     inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object IChainLink {
     __obj.asInstanceOf[IChainLink]
   }
   
-  extension [Self <: IChainLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IChainLink] (val x: Self) extends AnyVal {
     
     inline def setEndPoints(value: js.Array[IPoint]): Self = StObject.set(x, "endPoints", value.asInstanceOf[js.Any])
     

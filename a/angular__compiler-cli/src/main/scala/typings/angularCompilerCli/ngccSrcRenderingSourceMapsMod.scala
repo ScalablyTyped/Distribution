@@ -33,7 +33,8 @@ object ngccSrcRenderingSourceMapsMod {
       __obj.asInstanceOf[SourceMapInfo]
     }
     
-    extension [Self <: SourceMapInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapInfo] (val x: Self) extends AnyVal {
       
       inline def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
       

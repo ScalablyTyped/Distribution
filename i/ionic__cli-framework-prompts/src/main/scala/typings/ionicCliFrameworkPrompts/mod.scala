@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[CreatePromptModuleOptions]
     }
     
-    extension [Self <: CreatePromptModuleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreatePromptModuleOptions] (val x: Self) extends AnyVal {
       
       inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object mod {
       __obj.asInstanceOf[PromptQuestionBase]
     }
     
-    extension [Self <: PromptQuestionBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromptQuestionBase] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: PromptValue): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object mod {
       __obj.asInstanceOf[PromptQuestionCheckbox]
     }
     
-    extension [Self <: PromptQuestionCheckbox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromptQuestionCheckbox] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: PromptValueCheckbox): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -204,7 +207,8 @@ object mod {
       __obj.asInstanceOf[PromptQuestionConfirm]
     }
     
-    extension [Self <: PromptQuestionConfirm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromptQuestionConfirm] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: PromptValueConfirm): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -240,7 +244,8 @@ object mod {
       __obj.asInstanceOf[PromptQuestionOther]
     }
     
-    extension [Self <: PromptQuestionOther](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromptQuestionOther] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: PromptValueOther): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object MlInfoResponse {
     __obj.asInstanceOf[MlInfoResponse]
   }
   
-  extension [Self <: MlInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setDefaults(value: MlInfoDefaults): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     

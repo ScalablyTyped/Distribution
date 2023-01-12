@@ -24,7 +24,8 @@ object distClientModelsMessagesOutboundMessageEventsMod {
       __obj.asInstanceOf[BounceEvent]
     }
     
-    extension [Self <: BounceEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BounceEvent] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: BounceID): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     }
@@ -44,7 +45,8 @@ object distClientModelsMessagesOutboundMessageEventsMod {
       __obj.asInstanceOf[ClickEvent]
     }
     
-    extension [Self <: ClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEvent] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: ClickLocation): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     }
@@ -64,7 +66,8 @@ object distClientModelsMessagesOutboundMessageEventsMod {
       __obj.asInstanceOf[DeliveryEvent]
     }
     
-    extension [Self <: DeliveryEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeliveryEvent] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: DeliveryMessage): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     }
@@ -87,7 +90,8 @@ object distClientModelsMessagesOutboundMessageEventsMod {
       __obj.asInstanceOf[MessageEvent]
     }
     
-    extension [Self <: MessageEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageEvent] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: js.Object): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
       
@@ -113,7 +117,8 @@ object distClientModelsMessagesOutboundMessageEventsMod {
       __obj.asInstanceOf[OpenEvent]
     }
     
-    extension [Self <: OpenEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenEvent] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: Summary): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     }
@@ -133,7 +138,8 @@ object distClientModelsMessagesOutboundMessageEventsMod {
       __obj.asInstanceOf[TransientDelayEvent]
     }
     
-    extension [Self <: TransientDelayEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransientDelayEvent] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: DeliveryMessage): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     }

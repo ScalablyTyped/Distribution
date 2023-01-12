@@ -42,7 +42,8 @@ object IPolarChart {
     __obj.asInstanceOf[IPolarChart]
   }
   
-  extension [Self <: IPolarChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPolarChart] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Array): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

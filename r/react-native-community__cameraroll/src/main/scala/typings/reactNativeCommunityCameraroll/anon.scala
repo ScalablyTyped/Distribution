@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Altitude]
     }
     
-    extension [Self <: Altitude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Altitude] (val x: Self) extends AnyVal {
       
       inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object anon {
       __obj.asInstanceOf[Endcursor]
     }
     
-    extension [Self <: Endcursor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Endcursor] (val x: Self) extends AnyVal {
       
       inline def setEnd_cursor(value: String): Self = StObject.set(x, "end_cursor", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object anon {
       __obj.asInstanceOf[FileSize]
     }
     
-    extension [Self <: FileSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSize] (val x: Self) extends AnyVal {
       
       inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
@@ -151,7 +154,8 @@ object anon {
       __obj.asInstanceOf[Groupname]
     }
     
-    extension [Self <: Groupname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Groupname] (val x: Self) extends AnyVal {
       
       inline def setGroup_name(value: String): Self = StObject.set(x, "group_name", value.asInstanceOf[js.Any])
       

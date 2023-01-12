@@ -160,7 +160,8 @@ object histogramHistogramParams {
     __obj.asInstanceOf[histogramHistogramParams]
   }
   
-  extension [Self <: histogramHistogramParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: histogramHistogramParams] (val x: Self) extends AnyVal {
     
     inline def setClassificationMethod(value: `equal-interval` | `natural-breaks` | quantile | `standard-deviation`): Self = StObject.set(x, "classificationMethod", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ExportingMenuObject {
     __obj.asInstanceOf[ExportingMenuObject]
   }
   
-  extension [Self <: ExportingMenuObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportingMenuObject] (val x: Self) extends AnyVal {
     
     inline def setOnclick(value: EventCallbackFunction[Chart_]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
     

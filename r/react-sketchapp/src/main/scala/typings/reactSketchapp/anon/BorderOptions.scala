@@ -24,7 +24,8 @@ object BorderOptions {
     __obj.asInstanceOf[BorderOptions]
   }
   
-  extension [Self <: BorderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderOptions(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileFormat.BorderOptions */ Any

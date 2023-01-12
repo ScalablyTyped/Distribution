@@ -50,7 +50,8 @@ object ClosePath {
     __obj.asInstanceOf[ClosePath]
   }
   
-  extension [Self <: ClosePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClosePath] (val x: Self) extends AnyVal {
     
     inline def setAdjustFrame(value: Boolean): Self = StObject.set(x, "adjustFrame", value.asInstanceOf[js.Any])
     

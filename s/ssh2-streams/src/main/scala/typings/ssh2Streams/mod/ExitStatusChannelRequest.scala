@@ -22,7 +22,8 @@ object ExitStatusChannelRequest {
     __obj.asInstanceOf[ExitStatusChannelRequest]
   }
   
-  extension [Self <: ExitStatusChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExitStatusChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

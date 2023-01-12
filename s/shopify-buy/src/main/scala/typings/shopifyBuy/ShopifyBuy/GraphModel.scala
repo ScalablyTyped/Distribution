@@ -17,7 +17,8 @@ object GraphModel {
     __obj.asInstanceOf[GraphModel]
   }
   
-  extension [Self <: GraphModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphModel] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: Any): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

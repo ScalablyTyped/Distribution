@@ -73,7 +73,8 @@ object PlusOauthAuthOptions {
     __obj.asInstanceOf[PlusOauthAuthOptions]
   }
   
-  extension [Self <: PlusOauthAuthOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusOauthAuthOptions] (val x: Self) extends AnyVal {
     
     inline def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     

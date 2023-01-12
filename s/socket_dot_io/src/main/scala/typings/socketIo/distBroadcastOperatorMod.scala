@@ -300,7 +300,8 @@ object distBroadcastOperatorMod {
       __obj.asInstanceOf[SocketDetails[SocketData]]
     }
     
-    extension [Self <: SocketDetails[?], SocketData](x: Self & SocketDetails[SocketData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketDetails[?], SocketData] (val x: Self & SocketDetails[SocketData]) extends AnyVal {
       
       inline def setData(value: SocketData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

@@ -109,7 +109,8 @@ object PivotDateFilter {
     __obj.asInstanceOf[PivotDateFilter]
   }
   
-  extension [Self <: PivotDateFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotDateFilter] (val x: Self) extends AnyVal {
     
     inline def setComparator(value: FilterDatetime): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     

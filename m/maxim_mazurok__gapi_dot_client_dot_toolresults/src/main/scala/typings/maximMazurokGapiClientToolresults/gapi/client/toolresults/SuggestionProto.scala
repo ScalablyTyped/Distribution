@@ -49,7 +49,8 @@ object SuggestionProto {
     __obj.asInstanceOf[SuggestionProto]
   }
   
-  extension [Self <: SuggestionProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestionProto] (val x: Self) extends AnyVal {
     
     inline def setHelpUrl(value: String): Self = StObject.set(x, "helpUrl", value.asInstanceOf[js.Any])
     

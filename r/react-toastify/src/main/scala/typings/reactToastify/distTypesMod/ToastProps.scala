@@ -60,7 +60,8 @@ object ToastProps {
     __obj.asInstanceOf[ToastProps]
   }
   
-  extension [Self <: ToastProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToastProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ToastContent[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

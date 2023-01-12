@@ -164,7 +164,8 @@ object anon {
       __obj.asInstanceOf[AnalyticInfo]
     }
     
-    extension [Self <: AnalyticInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticInfo] (val x: Self) extends AnyVal {
       
       inline def setAnalyticInfo(value: Null): Self = StObject.set(x, "analyticInfo", value.asInstanceOf[js.Any])
       
@@ -355,7 +356,8 @@ object anon {
       __obj.asInstanceOf[BADGENUMBER]
     }
     
-    extension [Self <: BADGENUMBER](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BADGENUMBER] (val x: Self) extends AnyVal {
       
       inline def setBADGENUMBER(value: BadgeNumber): Self = StObject.set(x, "BADGENUMBER", value.asInstanceOf[js.Any])
       
@@ -428,7 +430,8 @@ object anon {
       __obj.asInstanceOf[DataJSON]
     }
     
-    extension [Self <: DataJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataJSON] (val x: Self) extends AnyVal {
       
       inline def setDataJSON(value: String): Self = StObject.set(x, "dataJSON", value.asInstanceOf[js.Any])
       
@@ -447,7 +450,8 @@ object anon {
       __obj.asInstanceOf[DataJSONString]
     }
     
-    extension [Self <: DataJSONString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataJSONString] (val x: Self) extends AnyVal {
       
       inline def setDataJSON(value: String): Self = StObject.set(x, "dataJSON", value.asInstanceOf[js.Any])
     }
@@ -478,7 +482,8 @@ object anon {
       __obj.asInstanceOf[Dictx]
     }
     
-    extension [Self <: Dictx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictx] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -521,7 +526,8 @@ object anon {
       __obj.asInstanceOf[MsgId]
     }
     
-    extension [Self <: MsgId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MsgId] (val x: Self) extends AnyVal {
       
       inline def setMsgId(value: String): Self = StObject.set(x, "msgId", value.asInstanceOf[js.Any])
     }
@@ -538,7 +544,8 @@ object anon {
       __obj.asInstanceOf[Notification]
     }
     
-    extension [Self <: Notification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
       
       inline def setNotification(value: Dictx): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     }
@@ -559,7 +566,8 @@ object anon {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setMsgId(value: String): Self = StObject.set(x, "msgId", value.asInstanceOf[js.Any])
       
@@ -580,7 +588,8 @@ object anon {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
@@ -668,7 +677,8 @@ object anon {
       __obj.asInstanceOf[kinkeyofLocalNotification]
     }
     
-    extension [Self <: kinkeyofLocalNotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: kinkeyofLocalNotification] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Any): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

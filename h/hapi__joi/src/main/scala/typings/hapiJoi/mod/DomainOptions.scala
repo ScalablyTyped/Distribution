@@ -35,7 +35,8 @@ object DomainOptions {
     __obj.asInstanceOf[DomainOptions]
   }
   
-  extension [Self <: DomainOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowUnicode(value: Boolean): Self = StObject.set(x, "allowUnicode", value.asInstanceOf[js.Any])
     

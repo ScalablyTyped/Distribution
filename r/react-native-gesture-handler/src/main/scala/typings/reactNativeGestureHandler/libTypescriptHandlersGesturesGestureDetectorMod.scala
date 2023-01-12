@@ -44,7 +44,8 @@ object libTypescriptHandlersGesturesGestureDetectorMod {
       __obj.asInstanceOf[GestureConfigReference]
     }
     
-    extension [Self <: GestureConfigReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GestureConfigReference] (val x: Self) extends AnyVal {
       
       inline def setAnimatedEventHandler(value: Any): Self = StObject.set(x, "animatedEventHandler", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object libTypescriptHandlersGesturesGestureDetectorMod {
       __obj.asInstanceOf[GestureDetectorProps]
     }
     
-    extension [Self <: GestureDetectorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GestureDetectorProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

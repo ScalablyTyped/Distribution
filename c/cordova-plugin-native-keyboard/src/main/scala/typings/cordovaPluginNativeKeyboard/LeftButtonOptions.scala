@@ -22,7 +22,8 @@ object LeftButtonOptions {
     __obj.asInstanceOf[LeftButtonOptions]
   }
   
-  extension [Self <: LeftButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeftButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setDisabledWhenTextEntered(value: Boolean): Self = StObject.set(x, "disabledWhenTextEntered", value.asInstanceOf[js.Any])
     

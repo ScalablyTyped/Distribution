@@ -29,7 +29,8 @@ object ComplexFillTarget {
     __obj.asInstanceOf[ComplexFillTarget]
   }
   
-  extension [Self <: ComplexFillTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplexFillTarget] (val x: Self) extends AnyVal {
     
     inline def setAbove(value: Color): Self = StObject.set(x, "above", value.asInstanceOf[js.Any])
     

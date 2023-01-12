@@ -22,7 +22,8 @@ object RecordingSessionInfo {
     __obj.asInstanceOf[RecordingSessionInfo]
   }
   
-  extension [Self <: RecordingSessionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordingSessionInfo] (val x: Self) extends AnyVal {
     
     inline def setOwnerEmail(value: String): Self = StObject.set(x, "ownerEmail", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object VideoMobileAppCategoryBuilder {
     __obj.asInstanceOf[VideoMobileAppCategoryBuilder]
   }
   
-  extension [Self <: VideoMobileAppCategoryBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoMobileAppCategoryBuilder] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: () => ExcludedVideoMobileAppCategoryOperation): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
     

@@ -24,7 +24,8 @@ object NodeSingularLayout {
     __obj.asInstanceOf[NodeSingularLayout]
   }
   
-  extension [Self <: NodeSingularLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeSingularLayout] (val x: Self) extends AnyVal {
     
     inline def setLayoutDimensions(value: LayoutDimensionOptions => W): Self = StObject.set(x, "layoutDimensions", js.Any.fromFunction1(value))
   }

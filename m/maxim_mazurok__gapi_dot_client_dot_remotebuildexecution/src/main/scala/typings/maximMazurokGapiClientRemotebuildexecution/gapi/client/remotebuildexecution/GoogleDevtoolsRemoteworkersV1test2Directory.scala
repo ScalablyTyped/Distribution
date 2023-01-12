@@ -19,7 +19,8 @@ object GoogleDevtoolsRemoteworkersV1test2Directory {
     __obj.asInstanceOf[GoogleDevtoolsRemoteworkersV1test2Directory]
   }
   
-  extension [Self <: GoogleDevtoolsRemoteworkersV1test2Directory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2Directory] (val x: Self) extends AnyVal {
     
     inline def setDirectories(value: js.Array[GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
     

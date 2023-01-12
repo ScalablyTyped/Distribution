@@ -26,7 +26,8 @@ object distLibBroadcastMod {
       __obj.asInstanceOf[BroadcastOptions]
     }
     
-    extension [Self <: BroadcastOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BroadcastOptions] (val x: Self) extends AnyVal {
       
       inline def setFrame(value: Window): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       

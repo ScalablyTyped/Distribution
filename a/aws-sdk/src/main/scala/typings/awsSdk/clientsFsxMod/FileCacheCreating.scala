@@ -82,7 +82,8 @@ object FileCacheCreating {
     __obj.asInstanceOf[FileCacheCreating]
   }
   
-  extension [Self <: FileCacheCreating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileCacheCreating] (val x: Self) extends AnyVal {
     
     inline def setCopyTagsToDataRepositoryAssociations(value: CopyTagsToDataRepositoryAssociations): Self = StObject.set(x, "CopyTagsToDataRepositoryAssociations", value.asInstanceOf[js.Any])
     

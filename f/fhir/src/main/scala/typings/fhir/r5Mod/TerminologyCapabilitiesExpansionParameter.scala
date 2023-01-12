@@ -29,7 +29,8 @@ object TerminologyCapabilitiesExpansionParameter {
     __obj.asInstanceOf[TerminologyCapabilitiesExpansionParameter]
   }
   
-  extension [Self <: TerminologyCapabilitiesExpansionParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminologyCapabilitiesExpansionParameter] (val x: Self) extends AnyVal {
     
     inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object libUtilsPaginatorMod {
       __obj.asInstanceOf[PaginatorOptions]
     }
     
-    extension [Self <: PaginatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginatorOptions] (val x: Self) extends AnyVal {
       
       inline def setIsInfinite(value: Boolean): Self = StObject.set(x, "isInfinite", value.asInstanceOf[js.Any])
     }

@@ -26,7 +26,8 @@ object InstancesBatch {
     __obj.asInstanceOf[InstancesBatch]
   }
   
-  extension [Self <: InstancesBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancesBatch] (val x: Self) extends AnyVal {
     
     inline def setHardwareInstancedRendering(value: js.Array[Boolean]): Self = StObject.set(x, "hardwareInstancedRendering", value.asInstanceOf[js.Any])
     

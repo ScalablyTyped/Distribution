@@ -33,7 +33,8 @@ object Merge {
     __obj.asInstanceOf[Merge]
   }
   
-  extension [Self <: Merge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Merge] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: TwoInputs): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     

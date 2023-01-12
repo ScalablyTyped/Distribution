@@ -19,7 +19,8 @@ object MlDeleteDatafeedRequest {
     __obj.asInstanceOf[MlDeleteDatafeedRequest]
   }
   
-  extension [Self <: MlDeleteDatafeedRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDeleteDatafeedRequest] (val x: Self) extends AnyVal {
     
     inline def setDatafeed_id(value: Id): Self = StObject.set(x, "datafeed_id", value.asInstanceOf[js.Any])
     

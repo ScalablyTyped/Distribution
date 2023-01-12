@@ -24,7 +24,8 @@ object AccountYouTubeChannelLink {
     __obj.asInstanceOf[AccountYouTubeChannelLink]
   }
   
-  extension [Self <: AccountYouTubeChannelLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountYouTubeChannelLink] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     

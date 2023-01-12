@@ -30,7 +30,8 @@ object distInterfacesLocationMod {
       __obj.asInstanceOf[LocationInterface]
     }
     
-    extension [Self <: LocationInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationInterface] (val x: Self) extends AnyVal {
       
       inline def setIsLocation(value: Any => /* is slate.slate/dist/interfaces/location.Location */ Boolean): Self = StObject.set(x, "isLocation", js.Any.fromFunction1(value))
     }
@@ -47,7 +48,8 @@ object distInterfacesLocationMod {
       __obj.asInstanceOf[SpanInterface]
     }
     
-    extension [Self <: SpanInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanInterface] (val x: Self) extends AnyVal {
       
       inline def setIsSpan(value: Any => /* is slate.slate/dist/interfaces/location.Span */ Boolean): Self = StObject.set(x, "isSpan", js.Any.fromFunction1(value))
     }

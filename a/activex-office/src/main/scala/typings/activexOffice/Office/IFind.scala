@@ -103,7 +103,8 @@ object IFind {
     __obj.asInstanceOf[IFind]
   }
   
-  extension [Self <: IFind](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFind] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     

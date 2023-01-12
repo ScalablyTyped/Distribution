@@ -57,7 +57,8 @@ object ScenarioObjective {
     __obj.asInstanceOf[ScenarioObjective]
   }
   
-  extension [Self <: ScenarioObjective](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScenarioObjective] (val x: Self) extends AnyVal {
     
     inline def setExcitement(value: Double): Self = StObject.set(x, "excitement", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ClusterPostVotingConfigExclusionsRequest {
     __obj.asInstanceOf[ClusterPostVotingConfigExclusionsRequest]
   }
   
-  extension [Self <: ClusterPostVotingConfigExclusionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterPostVotingConfigExclusionsRequest] (val x: Self) extends AnyVal {
     
     inline def setNode_ids(value: Ids): Self = StObject.set(x, "node_ids", value.asInstanceOf[js.Any])
     

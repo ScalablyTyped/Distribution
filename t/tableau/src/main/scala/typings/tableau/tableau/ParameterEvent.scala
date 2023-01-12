@@ -26,7 +26,8 @@ object ParameterEvent {
     __obj.asInstanceOf[ParameterEvent]
   }
   
-  extension [Self <: ParameterEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterEvent] (val x: Self) extends AnyVal {
     
     inline def setGetParameterAsync(value: () => js.Promise[Parameter]): Self = StObject.set(x, "getParameterAsync", js.Any.fromFunction0(value))
     

@@ -29,7 +29,8 @@ object StartStop {
     __obj.asInstanceOf[StartStop]
   }
   
-  extension [Self <: StartStop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartStop] (val x: Self) extends AnyVal {
     
     inline def setBeforeEnd(value: ModifierArg[AspectRatioState] => Unit | Point): Self = StObject.set(x, "beforeEnd", js.Any.fromFunction1(value))
     

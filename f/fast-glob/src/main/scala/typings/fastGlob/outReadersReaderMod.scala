@@ -72,7 +72,8 @@ object outReadersReaderMod {
       __obj.asInstanceOf[Reader[T]]
     }
     
-    extension [Self <: Reader[?], T](x: Self & Reader[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reader[?], T] (val x: Self & Reader[T]) extends AnyVal {
       
       inline def setDynamic(value: (String, ReaderOptions) => T): Self = StObject.set(x, "dynamic", js.Any.fromFunction2(value))
       

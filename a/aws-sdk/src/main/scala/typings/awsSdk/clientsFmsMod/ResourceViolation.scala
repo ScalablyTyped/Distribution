@@ -127,7 +127,8 @@ object ResourceViolation {
     __obj.asInstanceOf[ResourceViolation]
   }
   
-  extension [Self <: ResourceViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceViolation] (val x: Self) extends AnyVal {
     
     inline def setAwsEc2InstanceViolation(value: AwsEc2InstanceViolation): Self = StObject.set(x, "AwsEc2InstanceViolation", value.asInstanceOf[js.Any])
     

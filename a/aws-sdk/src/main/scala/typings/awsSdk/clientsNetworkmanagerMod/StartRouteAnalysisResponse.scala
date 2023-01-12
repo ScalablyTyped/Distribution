@@ -18,7 +18,8 @@ object StartRouteAnalysisResponse {
     __obj.asInstanceOf[StartRouteAnalysisResponse]
   }
   
-  extension [Self <: StartRouteAnalysisResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartRouteAnalysisResponse] (val x: Self) extends AnyVal {
     
     inline def setRouteAnalysis(value: RouteAnalysis): Self = StObject.set(x, "RouteAnalysis", value.asInstanceOf[js.Any])
     

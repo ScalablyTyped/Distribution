@@ -20,7 +20,8 @@ object OrthogonalArgs {
     __obj.asInstanceOf[OrthogonalArgs]
   }
   
-  extension [Self <: OrthogonalArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrthogonalArgs] (val x: Self) extends AnyVal {
     
     inline def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
     

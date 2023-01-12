@@ -41,7 +41,8 @@ object libDevToolsMod {
       __obj.asInstanceOf[XStateDevInterface]
     }
     
-    extension [Self <: XStateDevInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XStateDevInterface] (val x: Self) extends AnyVal {
       
       inline def setOnRegister(value: ServiceListener => Unsubscribe): Self = StObject.set(x, "onRegister", js.Any.fromFunction1(value))
       

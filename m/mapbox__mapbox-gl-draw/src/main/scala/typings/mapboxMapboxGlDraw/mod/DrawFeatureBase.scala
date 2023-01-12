@@ -57,7 +57,8 @@ object DrawFeatureBase {
     __obj.asInstanceOf[DrawFeatureBase[Coordinates]]
   }
   
-  extension [Self <: DrawFeatureBase[?], Coordinates](x: Self & DrawFeatureBase[Coordinates]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawFeatureBase[?], Coordinates] (val x: Self & DrawFeatureBase[Coordinates]) extends AnyVal {
     
     inline def setChanged(value: () => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction0(value))
     

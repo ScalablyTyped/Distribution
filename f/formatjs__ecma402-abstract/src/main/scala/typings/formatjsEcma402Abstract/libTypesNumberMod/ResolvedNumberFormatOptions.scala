@@ -84,7 +84,8 @@ object ResolvedNumberFormatOptions {
     __obj.asInstanceOf[ResolvedNumberFormatOptions]
   }
   
-  extension [Self <: ResolvedNumberFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedNumberFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setCompactDisplay(value: short | long): Self = StObject.set(x, "compactDisplay", value.asInstanceOf[js.Any])
     

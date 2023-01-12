@@ -37,7 +37,8 @@ object SharedImgixAndSourceProps {
     __obj.asInstanceOf[SharedImgixAndSourceProps]
   }
   
-  extension [Self <: SharedImgixAndSourceProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedImgixAndSourceProps] (val x: Self) extends AnyVal {
     
     inline def setAttributeConfig(value: AttributeConfig): Self = StObject.set(x, "attributeConfig", value.asInstanceOf[js.Any])
     

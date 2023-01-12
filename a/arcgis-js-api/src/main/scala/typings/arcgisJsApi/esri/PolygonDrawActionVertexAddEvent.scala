@@ -30,7 +30,8 @@ object PolygonDrawActionVertexAddEvent {
     __obj.asInstanceOf[PolygonDrawActionVertexAddEvent]
   }
   
-  extension [Self <: PolygonDrawActionVertexAddEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonDrawActionVertexAddEvent] (val x: Self) extends AnyVal {
     
     inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     

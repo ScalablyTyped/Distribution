@@ -68,7 +68,8 @@ object typingsInterpreterPluginMatrixPluginMod {
       __obj.asInstanceOf[KernelFunctionThis]
     }
     
-    extension [Self <: KernelFunctionThis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KernelFunctionThis] (val x: Self) extends AnyVal {
       
       inline def setThread(value: X): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
     }

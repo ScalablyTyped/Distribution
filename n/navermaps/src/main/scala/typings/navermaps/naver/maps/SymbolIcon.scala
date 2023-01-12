@@ -36,7 +36,8 @@ object SymbolIcon {
     __obj.asInstanceOf[SymbolIcon]
   }
   
-  extension [Self <: SymbolIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolIcon] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: Point | PointLiteral | Position): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

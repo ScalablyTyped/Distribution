@@ -18,7 +18,8 @@ object StartFileTransferResponse {
     __obj.asInstanceOf[StartFileTransferResponse]
   }
   
-  extension [Self <: StartFileTransferResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartFileTransferResponse] (val x: Self) extends AnyVal {
     
     inline def setTransferId(value: TransferId): Self = StObject.set(x, "TransferId", value.asInstanceOf[js.Any])
   }

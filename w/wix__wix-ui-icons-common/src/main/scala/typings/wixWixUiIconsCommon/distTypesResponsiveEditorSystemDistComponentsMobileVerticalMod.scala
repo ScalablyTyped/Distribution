@@ -27,7 +27,8 @@ object distTypesResponsiveEditorSystemDistComponentsMobileVerticalMod extends Sh
       __obj.asInstanceOf[MobileVerticalProps]
     }
     
-    extension [Self <: MobileVerticalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MobileVerticalProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

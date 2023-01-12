@@ -18,7 +18,8 @@ object DeviceWatcherTriggerDetails {
     __obj.asInstanceOf[DeviceWatcherTriggerDetails]
   }
   
-  extension [Self <: DeviceWatcherTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceWatcherTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setDeviceWatcherEvents(value: IVectorView[DeviceWatcherEvent]): Self = StObject.set(x, "deviceWatcherEvents", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object LambdaLinuxProcessParams {
     __obj.asInstanceOf[LambdaLinuxProcessParams]
   }
   
-  extension [Self <: LambdaLinuxProcessParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaLinuxProcessParams] (val x: Self) extends AnyVal {
     
     inline def setContainerParams(value: LambdaContainerParams): Self = StObject.set(x, "containerParams", value.asInstanceOf[js.Any])
     

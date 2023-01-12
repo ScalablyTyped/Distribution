@@ -23,7 +23,8 @@ object ASPxClientTreeViewNodeProcessingModeEventArgs {
     __obj.asInstanceOf[ASPxClientTreeViewNodeProcessingModeEventArgs]
   }
   
-  extension [Self <: ASPxClientTreeViewNodeProcessingModeEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTreeViewNodeProcessingModeEventArgs] (val x: Self) extends AnyVal {
     
     inline def setNode(value: ASPxClientTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }

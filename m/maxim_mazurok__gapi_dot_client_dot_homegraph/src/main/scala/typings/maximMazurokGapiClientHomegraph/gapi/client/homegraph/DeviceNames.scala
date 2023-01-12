@@ -22,7 +22,8 @@ object DeviceNames {
     __obj.asInstanceOf[DeviceNames]
   }
   
-  extension [Self <: DeviceNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceNames] (val x: Self) extends AnyVal {
     
     inline def setDefaultNames(value: js.Array[String]): Self = StObject.set(x, "defaultNames", value.asInstanceOf[js.Any])
     

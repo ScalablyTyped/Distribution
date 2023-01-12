@@ -21,7 +21,8 @@ object GlobalIdle {
     __obj.asInstanceOf[GlobalIdle]
   }
   
-  extension [Self <: GlobalIdle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalIdle] (val x: Self) extends AnyVal {
     
     inline def setGlobalIdle(value: Double): Self = StObject.set(x, "globalIdle", value.asInstanceOf[js.Any])
     

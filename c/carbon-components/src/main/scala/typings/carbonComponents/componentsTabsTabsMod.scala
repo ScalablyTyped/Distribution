@@ -112,7 +112,8 @@ object componentsTabsTabsMod {
       __obj.asInstanceOf[TabOptions]
     }
     
-    extension [Self <: TabOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabOptions] (val x: Self) extends AnyVal {
       
       inline def setClassButtonDisabled(value: String): Self = StObject.set(x, "classButtonDisabled", value.asInstanceOf[js.Any])
       

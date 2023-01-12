@@ -27,7 +27,8 @@ object libDataMod {
       __obj.asInstanceOf[MissingLocaleDataError]
     }
     
-    extension [Self <: MissingLocaleDataError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MissingLocaleDataError] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

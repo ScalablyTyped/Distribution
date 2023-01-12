@@ -96,7 +96,8 @@ object utilsPointerUtilsMod {
       __obj.asInstanceOf[MockCoords]
     }
     
-    extension [Self <: MockCoords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockCoords] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       

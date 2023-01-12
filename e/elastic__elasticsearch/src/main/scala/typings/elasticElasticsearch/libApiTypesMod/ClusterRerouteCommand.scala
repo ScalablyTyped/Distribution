@@ -23,7 +23,8 @@ object ClusterRerouteCommand {
     __obj.asInstanceOf[ClusterRerouteCommand]
   }
   
-  extension [Self <: ClusterRerouteCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterRerouteCommand] (val x: Self) extends AnyVal {
     
     inline def setAllocate_empty_primary(value: ClusterRerouteCommandAllocatePrimaryAction): Self = StObject.set(x, "allocate_empty_primary", value.asInstanceOf[js.Any])
     

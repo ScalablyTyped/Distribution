@@ -47,7 +47,8 @@ object BaseMenuButtonProps {
     __obj.asInstanceOf[BaseMenuButtonProps]
   }
   
-  extension [Self <: BaseMenuButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseMenuButtonProps] (val x: Self) extends AnyVal {
     
     inline def setDisableDropdownIcon(value: Boolean): Self = StObject.set(x, "disableDropdownIcon", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MlTotalFeatureImportanceStatistics {
     __obj.asInstanceOf[MlTotalFeatureImportanceStatistics]
   }
   
-  extension [Self <: MlTotalFeatureImportanceStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTotalFeatureImportanceStatistics] (val x: Self) extends AnyVal {
     
     inline def setMax(value: integer): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

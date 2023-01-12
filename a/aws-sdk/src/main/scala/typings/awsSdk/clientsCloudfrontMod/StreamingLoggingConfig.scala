@@ -28,7 +28,8 @@ object StreamingLoggingConfig {
     __obj.asInstanceOf[StreamingLoggingConfig]
   }
   
-  extension [Self <: StreamingLoggingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingLoggingConfig] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

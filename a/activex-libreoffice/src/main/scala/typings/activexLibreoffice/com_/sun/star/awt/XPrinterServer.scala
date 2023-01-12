@@ -47,7 +47,8 @@ object XPrinterServer {
     __obj.asInstanceOf[XPrinterServer]
   }
   
-  extension [Self <: XPrinterServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPrinterServer] (val x: Self) extends AnyVal {
     
     inline def setCreateInfoPrinter(value: String => XInfoPrinter): Self = StObject.set(x, "createInfoPrinter", js.Any.fromFunction1(value))
     

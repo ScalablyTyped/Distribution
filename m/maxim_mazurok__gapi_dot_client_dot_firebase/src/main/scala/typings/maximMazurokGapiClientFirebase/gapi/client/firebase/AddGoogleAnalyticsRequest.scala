@@ -22,7 +22,8 @@ object AddGoogleAnalyticsRequest {
     __obj.asInstanceOf[AddGoogleAnalyticsRequest]
   }
   
-  extension [Self <: AddGoogleAnalyticsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddGoogleAnalyticsRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalyticsAccountId(value: String): Self = StObject.set(x, "analyticsAccountId", value.asInstanceOf[js.Any])
     

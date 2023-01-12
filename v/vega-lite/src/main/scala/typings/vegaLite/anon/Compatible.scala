@@ -17,7 +17,8 @@ object Compatible {
     __obj.asInstanceOf[Compatible]
   }
   
-  extension [Self <: Compatible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Compatible] (val x: Self) extends AnyVal {
     
     inline def setCompatible(value: Boolean): Self = StObject.set(x, "compatible", value.asInstanceOf[js.Any])
     

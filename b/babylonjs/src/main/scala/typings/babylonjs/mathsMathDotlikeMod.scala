@@ -24,7 +24,8 @@ object mathsMathDotlikeMod {
       __obj.asInstanceOf[IColor3Like]
     }
     
-    extension [Self <: IColor3Like](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColor3Like] (val x: Self) extends AnyVal {
       
       inline def setB(value: float): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object mathsMathDotlikeMod {
       __obj.asInstanceOf[IColor4Like]
     }
     
-    extension [Self <: IColor4Like](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColor4Like] (val x: Self) extends AnyVal {
       
       inline def setA(value: float): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object mathsMathDotlikeMod {
       __obj.asInstanceOf[IMatrixLike]
     }
     
-    extension [Self <: IMatrixLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMatrixLike] (val x: Self) extends AnyVal {
       
       inline def setToArray(value: () => DeepImmutable[js.typedarray.Float32Array | js.Array[Double]]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       
@@ -99,7 +102,8 @@ object mathsMathDotlikeMod {
       __obj.asInstanceOf[IPlaneLike]
     }
     
-    extension [Self <: IPlaneLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlaneLike] (val x: Self) extends AnyVal {
       
       inline def setD(value: float): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
@@ -126,7 +130,8 @@ object mathsMathDotlikeMod {
       __obj.asInstanceOf[IQuaternionLike]
     }
     
-    extension [Self <: IQuaternionLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IQuaternionLike] (val x: Self) extends AnyVal {
       
       inline def setW(value: float): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
@@ -151,7 +156,8 @@ object mathsMathDotlikeMod {
       __obj.asInstanceOf[IVector2Like]
     }
     
-    extension [Self <: IVector2Like](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVector2Like] (val x: Self) extends AnyVal {
       
       inline def setX(value: float): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -174,7 +180,8 @@ object mathsMathDotlikeMod {
       __obj.asInstanceOf[IVector3Like]
     }
     
-    extension [Self <: IVector3Like](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVector3Like] (val x: Self) extends AnyVal {
       
       inline def setX(value: float): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -201,7 +208,8 @@ object mathsMathDotlikeMod {
       __obj.asInstanceOf[IVector4Like]
     }
     
-    extension [Self <: IVector4Like](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVector4Like] (val x: Self) extends AnyVal {
       
       inline def setW(value: float): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
@@ -230,7 +238,8 @@ object mathsMathDotlikeMod {
       __obj.asInstanceOf[IViewportLike]
     }
     
-    extension [Self <: IViewportLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IViewportLike] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: float): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

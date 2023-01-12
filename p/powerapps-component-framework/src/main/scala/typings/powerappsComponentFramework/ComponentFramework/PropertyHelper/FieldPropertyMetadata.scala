@@ -37,7 +37,8 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[DateTimeMetadata]
     }
     
-    extension [Self <: DateTimeMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTimeMetadata] (val x: Self) extends AnyVal {
       
       inline def setBehavior(value: DateTimeFieldBehavior): Self = StObject.set(x, "Behavior", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[DecimalNumberMetadata]
     }
     
-    extension [Self <: DecimalNumberMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecimalNumberMetadata] (val x: Self) extends AnyVal {
       
       inline def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
     }
@@ -101,7 +103,8 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[FloatingNumberMetadata]
     }
     
-    extension [Self <: FloatingNumberMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FloatingNumberMetadata] (val x: Self) extends AnyVal {
       
       inline def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
     }
@@ -128,7 +131,8 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[LookupMetadata]
     }
     
-    extension [Self <: LookupMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LookupMetadata] (val x: Self) extends AnyVal {
       
       inline def setTargets(value: js.Array[String]): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
       
@@ -164,7 +168,8 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
@@ -207,7 +212,8 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[NumberMetadata]
     }
     
-    extension [Self <: NumberMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberMetadata] (val x: Self) extends AnyVal {
       
       inline def setImeMode(value: ImeMode): Self = StObject.set(x, "ImeMode", value.asInstanceOf[js.Any])
       
@@ -241,7 +247,8 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[OptionSetMetadata]
     }
     
-    extension [Self <: OptionSetMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionSetMetadata] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: Double): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
       
@@ -278,7 +285,8 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[StringMetadata]
     }
     
-    extension [Self <: StringMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringMetadata] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
       
@@ -312,7 +320,8 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[TwoOptionMetadata]
     }
     
-    extension [Self <: TwoOptionMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwoOptionMetadata] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: Boolean): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
       
@@ -348,7 +357,8 @@ object FieldPropertyMetadata {
       __obj.asInstanceOf[WholeNumberMetadata]
     }
     
-    extension [Self <: WholeNumberMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WholeNumberMetadata] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
       

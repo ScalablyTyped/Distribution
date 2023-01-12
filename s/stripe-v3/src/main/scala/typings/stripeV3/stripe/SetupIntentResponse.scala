@@ -18,7 +18,8 @@ object SetupIntentResponse {
     __obj.asInstanceOf[SetupIntentResponse]
   }
   
-  extension [Self <: SetupIntentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetupIntentResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

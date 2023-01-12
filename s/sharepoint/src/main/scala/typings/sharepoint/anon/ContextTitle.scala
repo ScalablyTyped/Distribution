@@ -17,7 +17,8 @@ object ContextTitle {
     __obj.asInstanceOf[ContextTitle]
   }
   
-  extension [Self <: ContextTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextTitle] (val x: Self) extends AnyVal {
     
     inline def setContextTitle(value: String): Self = StObject.set(x, "contextTitle", value.asInstanceOf[js.Any])
     

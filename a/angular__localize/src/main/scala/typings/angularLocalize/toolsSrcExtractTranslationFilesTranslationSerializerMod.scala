@@ -24,7 +24,8 @@ object toolsSrcExtractTranslationFilesTranslationSerializerMod {
       __obj.asInstanceOf[TranslationSerializer]
     }
     
-    extension [Self <: TranslationSerializer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranslationSerializer] (val x: Self) extends AnyVal {
       
       inline def setSerialize(value: js.Array[ɵParsedMessage] => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
     }

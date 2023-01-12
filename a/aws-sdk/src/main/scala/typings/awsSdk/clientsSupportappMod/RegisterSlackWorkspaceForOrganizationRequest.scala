@@ -18,7 +18,8 @@ object RegisterSlackWorkspaceForOrganizationRequest {
     __obj.asInstanceOf[RegisterSlackWorkspaceForOrganizationRequest]
   }
   
-  extension [Self <: RegisterSlackWorkspaceForOrganizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterSlackWorkspaceForOrganizationRequest] (val x: Self) extends AnyVal {
     
     inline def setTeamId(value: teamId): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
   }

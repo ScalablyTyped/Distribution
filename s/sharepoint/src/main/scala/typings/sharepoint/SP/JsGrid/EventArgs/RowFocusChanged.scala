@@ -20,7 +20,8 @@ object RowFocusChanged {
     __obj.asInstanceOf[RowFocusChanged]
   }
   
-  extension [Self <: RowFocusChanged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowFocusChanged] (val x: Self) extends AnyVal {
     
     inline def setNewRecordKey(value: Double): Self = StObject.set(x, "newRecordKey", value.asInstanceOf[js.Any])
     

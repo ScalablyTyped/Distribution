@@ -31,7 +31,8 @@ object IWebXRHandTrackingOptions {
     __obj.asInstanceOf[IWebXRHandTrackingOptions]
   }
   
-  extension [Self <: IWebXRHandTrackingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRHandTrackingOptions] (val x: Self) extends AnyVal {
     
     inline def setHandMeshes(value: CustomColors): Self = StObject.set(x, "handMeshes", value.asInstanceOf[js.Any])
     

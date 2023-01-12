@@ -42,7 +42,8 @@ object SimplePropertyAssignment {
     __obj.asInstanceOf[SimplePropertyAssignment]
   }
   
-  extension [Self <: SimplePropertyAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimplePropertyAssignment] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

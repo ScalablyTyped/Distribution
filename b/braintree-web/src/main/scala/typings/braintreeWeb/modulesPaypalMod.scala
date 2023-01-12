@@ -145,7 +145,8 @@ object modulesPaypalMod {
       __obj.asInstanceOf[PayPalAccountDetails]
     }
     
-    extension [Self <: PayPalAccountDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalAccountDetails] (val x: Self) extends AnyVal {
       
       inline def setBillingAddress(value: PayPalBillingAddress): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
       
@@ -186,7 +187,8 @@ object modulesPaypalMod {
       __obj.asInstanceOf[PayPalBillingAddress]
     }
     
-    extension [Self <: PayPalBillingAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalBillingAddress] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
@@ -233,7 +235,8 @@ object modulesPaypalMod {
       __obj.asInstanceOf[PayPalShippingAddress]
     }
     
-    extension [Self <: PayPalShippingAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalShippingAddress] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
@@ -267,7 +270,8 @@ object modulesPaypalMod {
       __obj.asInstanceOf[PayPalTokenizePayload]
     }
     
-    extension [Self <: PayPalTokenizePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalTokenizePayload] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: PayPalAccountDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
@@ -288,7 +292,8 @@ object modulesPaypalMod {
       __obj.asInstanceOf[PayPalTokenizeReturn]
     }
     
-    extension [Self <: PayPalTokenizeReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalTokenizeReturn] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Any): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     }

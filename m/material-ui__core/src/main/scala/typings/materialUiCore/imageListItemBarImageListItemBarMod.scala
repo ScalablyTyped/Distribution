@@ -117,7 +117,8 @@ object imageListItemBarImageListItemBarMod {
       __obj.asInstanceOf[ImageListItemBarProps]
     }
     
-    extension [Self <: ImageListItemBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageListItemBarProps] (val x: Self) extends AnyVal {
       
       inline def setActionIcon(value: ReactNode): Self = StObject.set(x, "actionIcon", value.asInstanceOf[js.Any])
       

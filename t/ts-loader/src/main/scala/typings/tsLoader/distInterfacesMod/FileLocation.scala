@@ -19,7 +19,8 @@ object FileLocation {
     __obj.asInstanceOf[FileLocation]
   }
   
-  extension [Self <: FileLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileLocation] (val x: Self) extends AnyVal {
     
     inline def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
     

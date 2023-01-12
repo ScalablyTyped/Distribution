@@ -23,7 +23,8 @@ object Deserializer {
     __obj.asInstanceOf[Deserializer]
   }
   
-  extension [Self <: Deserializer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deserializer] (val x: Self) extends AnyVal {
     
     inline def setHiveJsonSerDe(value: HiveJsonSerDe): Self = StObject.set(x, "HiveJsonSerDe", value.asInstanceOf[js.Any])
     

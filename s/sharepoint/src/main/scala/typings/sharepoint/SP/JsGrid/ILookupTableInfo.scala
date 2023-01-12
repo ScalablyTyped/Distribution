@@ -23,7 +23,8 @@ object ILookupTableInfo {
     __obj.asInstanceOf[ILookupTableInfo]
   }
   
-  extension [Self <: ILookupTableInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILookupTableInfo] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

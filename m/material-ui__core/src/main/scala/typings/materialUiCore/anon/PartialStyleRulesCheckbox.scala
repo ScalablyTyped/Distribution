@@ -45,7 +45,8 @@ object PartialStyleRulesCheckbox {
     __obj.asInstanceOf[PartialStyleRulesCheckbox]
   }
   
-  extension [Self <: PartialStyleRulesCheckbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesCheckbox] (val x: Self) extends AnyVal {
     
     inline def setChecked(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

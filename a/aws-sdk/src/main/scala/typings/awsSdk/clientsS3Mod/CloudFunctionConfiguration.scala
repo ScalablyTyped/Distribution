@@ -32,7 +32,8 @@ object CloudFunctionConfiguration {
     __obj.asInstanceOf[CloudFunctionConfiguration]
   }
   
-  extension [Self <: CloudFunctionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudFunctionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCloudFunction(value: CloudFunction): Self = StObject.set(x, "CloudFunction", value.asInstanceOf[js.Any])
     

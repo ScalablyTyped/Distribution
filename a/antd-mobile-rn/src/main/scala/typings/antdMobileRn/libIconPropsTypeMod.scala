@@ -20,7 +20,8 @@ object libIconPropsTypeMod {
       __obj.asInstanceOf[IconPropsType]
     }
     
-    extension [Self <: IconPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconPropsType] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

@@ -81,7 +81,8 @@ object mod {
         __obj.asInstanceOf[Data]
       }
       
-      extension [Self <: Data](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
         
         inline def setBatch(value: js.Array[Message]): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
         
@@ -106,7 +107,8 @@ object mod {
         __obj.asInstanceOf[Identity]
       }
       
-      extension [Self <: Identity](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
         
         inline def setAnonymousId(value: String | Double): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
         
@@ -144,7 +146,8 @@ object mod {
         __obj.asInstanceOf[Message]
       }
       
-      extension [Self <: Message](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
         
         inline def setContext(value: Dictkey): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         

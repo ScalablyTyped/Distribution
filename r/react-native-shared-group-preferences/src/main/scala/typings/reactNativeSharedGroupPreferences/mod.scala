@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[SharedGroupPreferenceOptions]
     }
     
-    extension [Self <: SharedGroupPreferenceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedGroupPreferenceOptions] (val x: Self) extends AnyVal {
       
       inline def setUseAndroidSharedPreferences(value: Boolean): Self = StObject.set(x, "useAndroidSharedPreferences", value.asInstanceOf[js.Any])
       

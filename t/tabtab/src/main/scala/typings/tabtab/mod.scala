@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[CompletionItem_]
     }
     
-    extension [Self <: CompletionItem_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompletionItem_] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object mod {
       __obj.asInstanceOf[InstallOptions]
     }
     
-    extension [Self <: InstallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallOptions] (val x: Self) extends AnyVal {
       
       inline def setCompleter(value: String): Self = StObject.set(x, "completer", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object mod {
       __obj.asInstanceOf[TabtabEnv]
     }
     
-    extension [Self <: TabtabEnv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabtabEnv] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
@@ -167,7 +170,8 @@ object mod {
       __obj.asInstanceOf[UninstallOptions]
     }
     
-    extension [Self <: UninstallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UninstallOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

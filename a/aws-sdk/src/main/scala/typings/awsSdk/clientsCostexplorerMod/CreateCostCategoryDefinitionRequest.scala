@@ -39,7 +39,8 @@ object CreateCostCategoryDefinitionRequest {
     __obj.asInstanceOf[CreateCostCategoryDefinitionRequest]
   }
   
-  extension [Self <: CreateCostCategoryDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCostCategoryDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: CostCategoryValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     

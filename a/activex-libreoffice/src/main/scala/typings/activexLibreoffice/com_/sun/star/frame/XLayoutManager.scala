@@ -311,7 +311,8 @@ object XLayoutManager {
     __obj.asInstanceOf[XLayoutManager]
   }
   
-  extension [Self <: XLayoutManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLayoutManager] (val x: Self) extends AnyVal {
     
     inline def setAttachFrame(value: XFrame => Unit): Self = StObject.set(x, "attachFrame", js.Any.fromFunction1(value))
     

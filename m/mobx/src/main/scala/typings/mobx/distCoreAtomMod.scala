@@ -106,7 +106,8 @@ object distCoreAtomMod {
       __obj.asInstanceOf[IAtom]
     }
     
-    extension [Self <: IAtom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAtom] (val x: Self) extends AnyVal {
       
       inline def setReportChanged(value: () => Any): Self = StObject.set(x, "reportChanged", js.Any.fromFunction0(value))
       

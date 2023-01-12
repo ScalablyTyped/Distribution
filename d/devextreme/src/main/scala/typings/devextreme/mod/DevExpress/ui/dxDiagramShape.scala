@@ -58,7 +58,8 @@ object dxDiagramShape {
     __obj.asInstanceOf[dxDiagramShape]
   }
   
-  extension [Self <: dxDiagramShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDiagramShape] (val x: Self) extends AnyVal {
     
     inline def setAttachedConnectorIds(value: js.Array[String]): Self = StObject.set(x, "attachedConnectorIds", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object CompensationInfo {
     __obj.asInstanceOf[CompensationInfo]
   }
   
-  extension [Self <: CompensationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompensationInfo] (val x: Self) extends AnyVal {
     
     inline def setAnnualizedBaseCompensationRange(value: CompensationRange): Self = StObject.set(x, "annualizedBaseCompensationRange", value.asInstanceOf[js.Any])
     

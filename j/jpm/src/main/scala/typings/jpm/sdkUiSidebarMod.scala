@@ -66,7 +66,8 @@ object sdkUiSidebarMod {
       __obj.asInstanceOf[SidebarWorker]
     }
     
-    extension [Self <: SidebarWorker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarWorker] (val x: Self) extends AnyVal {
       
       inline def setPort(value: Port): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }

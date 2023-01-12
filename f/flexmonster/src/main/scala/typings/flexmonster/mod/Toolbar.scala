@@ -85,7 +85,8 @@ object Toolbar {
     __obj.asInstanceOf[Toolbar]
   }
   
-  extension [Self <: Toolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Toolbar] (val x: Self) extends AnyVal {
     
     inline def setChartsHandler(value: String => Unit): Self = StObject.set(x, "chartsHandler", js.Any.fromFunction1(value))
     

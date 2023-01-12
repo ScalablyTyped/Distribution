@@ -23,7 +23,8 @@ object PartitionObjects {
     __obj.asInstanceOf[PartitionObjects]
   }
   
-  extension [Self <: PartitionObjects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionObjects] (val x: Self) extends AnyVal {
     
     inline def setObjects(value: TableObjectList): Self = StObject.set(x, "Objects", value.asInstanceOf[js.Any])
     

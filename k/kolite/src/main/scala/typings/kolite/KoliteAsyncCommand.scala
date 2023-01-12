@@ -21,7 +21,8 @@ object KoliteAsyncCommand {
     __obj.asInstanceOf[KoliteAsyncCommand]
   }
   
-  extension [Self <: KoliteAsyncCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KoliteAsyncCommand] (val x: Self) extends AnyVal {
     
     inline def setIsExecuting(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any

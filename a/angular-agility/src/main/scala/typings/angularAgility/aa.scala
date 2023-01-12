@@ -31,7 +31,8 @@ object aa {
       __obj.asInstanceOf[IExternalFormValidationConfig]
     }
     
-    extension [Self <: IExternalFormValidationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExternalFormValidationConfig] (val x: Self) extends AnyVal {
       
       inline def setGlobals(value: Any): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object aa {
       __obj.asInstanceOf[IFormExtensionsProvider]
     }
     
-    extension [Self <: IFormExtensionsProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFormExtensionsProvider] (val x: Self) extends AnyVal {
       
       inline def setConfirmResetStrategy(value: () => Boolean): Self = StObject.set(x, "confirmResetStrategy", js.Any.fromFunction0(value))
       
@@ -182,7 +184,8 @@ object aa {
       __obj.asInstanceOf[INotifyConfig]
     }
     
-    extension [Self <: INotifyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INotifyConfig] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -228,7 +231,8 @@ object aa {
       __obj.asInstanceOf[INotifyConfigProvider]
     }
     
-    extension [Self <: INotifyConfigProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INotifyConfigProvider] (val x: Self) extends AnyVal {
       
       inline def setAddOrUpdateNotifyConfig(value: (String, INotifyConfig) => Unit): Self = StObject.set(x, "addOrUpdateNotifyConfig", js.Any.fromFunction2(value))
       
@@ -277,7 +281,8 @@ object aa {
       __obj.asInstanceOf[INotifyDefaults]
     }
     
-    extension [Self <: INotifyDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INotifyDefaults] (val x: Self) extends AnyVal {
       
       inline def setDanger(value: (/* message */ String, /* options */ Any, /* notifier */ Any) => Any): Self = StObject.set(x, "danger", js.Any.fromFunction3(value))
       
@@ -308,7 +313,8 @@ object aa {
       __obj.asInstanceOf[INotifyOptions]
     }
     
-    extension [Self <: INotifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INotifyOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowHtml(value: Boolean): Self = StObject.set(x, "allowHtml", value.asInstanceOf[js.Any])
       
@@ -359,7 +365,8 @@ object aa {
       __obj.asInstanceOf[IValidIconStrategy]
     }
     
-    extension [Self <: IValidIconStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IValidIconStrategy] (val x: Self) extends AnyVal {
       
       inline def setGetContainer(value: IAugmentedJQueryStatic => Unit): Self = StObject.set(x, "getContainer", js.Any.fromFunction1(value))
       

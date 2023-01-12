@@ -49,7 +49,8 @@ object esmUseRootCloseMod {
       __obj.asInstanceOf[RootCloseOptions]
     }
     
-    extension [Self <: RootCloseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootCloseOptions] (val x: Self) extends AnyVal {
       
       inline def setClickTrigger(value: MouseEvents): Self = StObject.set(x, "clickTrigger", value.asInstanceOf[js.Any])
       

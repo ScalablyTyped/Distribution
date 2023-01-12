@@ -51,7 +51,8 @@ object AssumeRoleWithWebIdentityRequest {
     __obj.asInstanceOf[AssumeRoleWithWebIdentityRequest]
   }
   
-  extension [Self <: AssumeRoleWithWebIdentityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssumeRoleWithWebIdentityRequest] (val x: Self) extends AnyVal {
     
     inline def setDurationSeconds(value: roleDurationSecondsType): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
     

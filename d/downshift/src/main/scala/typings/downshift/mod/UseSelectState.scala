@@ -21,7 +21,8 @@ object UseSelectState {
     __obj.asInstanceOf[UseSelectState[Item]]
   }
   
-  extension [Self <: UseSelectState[?], Item](x: Self & UseSelectState[Item]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseSelectState[?], Item] (val x: Self & UseSelectState[Item]) extends AnyVal {
     
     inline def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])
     

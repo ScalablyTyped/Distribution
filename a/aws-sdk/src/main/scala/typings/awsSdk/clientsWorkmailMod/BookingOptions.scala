@@ -28,7 +28,8 @@ object BookingOptions {
     __obj.asInstanceOf[BookingOptions]
   }
   
-  extension [Self <: BookingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookingOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoAcceptRequests(value: Boolean): Self = StObject.set(x, "AutoAcceptRequests", value.asInstanceOf[js.Any])
     

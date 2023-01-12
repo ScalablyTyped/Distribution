@@ -15,7 +15,8 @@ object TreeIndex {
     __obj.asInstanceOf[TreeIndex]
   }
   
-  extension [Self <: TreeIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeIndex] (val x: Self) extends AnyVal {
     
     inline def setTreeIndex(value: Double): Self = StObject.set(x, "treeIndex", value.asInstanceOf[js.Any])
   }

@@ -58,7 +58,8 @@ object distUtilsReactionCleanupTrackingCommonMod {
       __obj.asInstanceOf[IReactionTracking]
     }
     
-    extension [Self <: IReactionTracking](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IReactionTracking] (val x: Self) extends AnyVal {
       
       inline def setChangedBeforeMount(value: Boolean): Self = StObject.set(x, "changedBeforeMount", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object distUtilsReactionCleanupTrackingCommonMod {
       __obj.asInstanceOf[ReactionCleanupTracking]
     }
     
-    extension [Self <: ReactionCleanupTracking](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactionCleanupTracking] (val x: Self) extends AnyVal {
       
       inline def setAddReactionToTrack(value: (MutableRefObject[IReactionTracking | Null], Reaction_, js.Object) => IReactionTracking): Self = StObject.set(x, "addReactionToTrack", js.Any.fromFunction3(value))
       

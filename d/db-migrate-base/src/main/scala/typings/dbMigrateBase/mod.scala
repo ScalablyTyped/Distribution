@@ -425,7 +425,8 @@ object mod {
       __obj.asInstanceOf[ColumnDef]
     }
     
-    extension [Self <: ColumnDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnDef] (val x: Self) extends AnyVal {
       
       inline def setConstraints(value: String): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
@@ -463,7 +464,8 @@ object mod {
       __obj.asInstanceOf[ColumnSpec]
     }
     
-    extension [Self <: ColumnSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnSpec] (val x: Self) extends AnyVal {
       
       inline def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
       
@@ -514,7 +516,8 @@ object mod {
       __obj.asInstanceOf[CreateTableOptions]
     }
     
-    extension [Self <: CreateTableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateTableOptions] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[ColumnSpec]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -539,7 +542,8 @@ object mod {
       __obj.asInstanceOf[DropTableOptions]
     }
     
-    extension [Self <: DropTableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropTableOptions] (val x: Self) extends AnyVal {
       
       inline def setIfExists(value: Boolean): Self = StObject.set(x, "ifExists", value.asInstanceOf[js.Any])
       
@@ -560,7 +564,8 @@ object mod {
       __obj.asInstanceOf[ForeignKeyRules]
     }
     
-    extension [Self <: ForeignKeyRules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForeignKeyRules] (val x: Self) extends AnyVal {
       
       inline def setOnDelete(value: String): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
       
@@ -585,7 +590,8 @@ object mod {
       __obj.asInstanceOf[ForeignKeySpec]
     }
     
-    extension [Self <: ForeignKeySpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForeignKeySpec] (val x: Self) extends AnyVal {
       
       inline def setMapping(value: String | Any): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
       
@@ -613,7 +619,8 @@ object mod {
       __obj.asInstanceOf[InternalModule]
     }
     
-    extension [Self <: InternalModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalModule] (val x: Self) extends AnyVal {
       
       inline def setLog(value: Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
@@ -632,7 +639,8 @@ object mod {
       __obj.asInstanceOf[InternalOptions]
     }
     
-    extension [Self <: InternalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalOptions] (val x: Self) extends AnyVal {
       
       inline def setMod(value: InternalModule): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
     }
@@ -649,7 +657,8 @@ object mod {
       __obj.asInstanceOf[RemoveForeignKeyOptions]
     }
     
-    extension [Self <: RemoveForeignKeyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveForeignKeyOptions] (val x: Self) extends AnyVal {
       
       inline def setDropIndex(value: Boolean): Self = StObject.set(x, "dropIndex", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object Spread {
     __obj.asInstanceOf[Spread]
   }
   
-  extension [Self <: Spread](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Spread] (val x: Self) extends AnyVal {
     
     inline def setSpread(value: SpreadDescriptor): Self = StObject.set(x, "Spread", value.asInstanceOf[js.Any])
   }

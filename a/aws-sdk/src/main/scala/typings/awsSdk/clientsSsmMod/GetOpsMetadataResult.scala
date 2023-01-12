@@ -28,7 +28,8 @@ object GetOpsMetadataResult {
     __obj.asInstanceOf[GetOpsMetadataResult]
   }
   
-  extension [Self <: GetOpsMetadataResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOpsMetadataResult] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: MetadataMap): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     

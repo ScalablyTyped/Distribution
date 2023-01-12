@@ -37,7 +37,8 @@ object FormOptions {
     __obj.asInstanceOf[FormOptions]
   }
   
-  extension [Self <: FormOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoUpload(value: Boolean): Self = StObject.set(x, "autoUpload", value.asInstanceOf[js.Any])
     

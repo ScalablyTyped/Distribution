@@ -15,7 +15,8 @@ object ICONNECTION {
     __obj.asInstanceOf[ICONNECTION]
   }
   
-  extension [Self <: ICONNECTION](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICONNECTION] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }

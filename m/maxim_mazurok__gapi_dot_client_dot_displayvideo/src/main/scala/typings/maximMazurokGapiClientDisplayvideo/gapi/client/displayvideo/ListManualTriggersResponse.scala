@@ -19,7 +19,8 @@ object ListManualTriggersResponse {
     __obj.asInstanceOf[ListManualTriggersResponse]
   }
   
-  extension [Self <: ListManualTriggersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListManualTriggersResponse] (val x: Self) extends AnyVal {
     
     inline def setManualTriggers(value: js.Array[ManualTrigger]): Self = StObject.set(x, "manualTriggers", value.asInstanceOf[js.Any])
     

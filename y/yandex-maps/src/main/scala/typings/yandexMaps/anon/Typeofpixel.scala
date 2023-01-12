@@ -104,7 +104,8 @@ object Typeofpixel {
     __obj.asInstanceOf[Typeofpixel]
   }
   
-  extension [Self <: Typeofpixel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofpixel] (val x: Self) extends AnyVal {
     
     inline def setCircle(
       value: Instantiable3[

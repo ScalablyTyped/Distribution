@@ -18,7 +18,8 @@ object UpdateMLTransformResponse {
     __obj.asInstanceOf[UpdateMLTransformResponse]
   }
   
-  extension [Self <: UpdateMLTransformResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMLTransformResponse] (val x: Self) extends AnyVal {
     
     inline def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
     

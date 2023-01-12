@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[GraphEnabled]
     }
     
-    extension [Self <: GraphEnabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphEnabled] (val x: Self) extends AnyVal {
       
       inline def setGraphEnabled(value: Boolean): Self = StObject.set(x, "graphEnabled", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[HighlightTimeout]
     }
     
-    extension [Self <: HighlightTimeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighlightTimeout] (val x: Self) extends AnyVal {
       
       inline def setHighlightTimeout(value: Double): Self = StObject.set(x, "highlightTimeout", value.asInstanceOf[js.Any])
       

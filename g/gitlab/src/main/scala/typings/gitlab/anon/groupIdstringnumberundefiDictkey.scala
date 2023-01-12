@@ -21,7 +21,8 @@ object groupIdstringnumberundefiDictkey {
     __obj.asInstanceOf[groupIdstringnumberundefiDictkey]
   }
   
-  extension [Self <: groupIdstringnumberundefiDictkey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: groupIdstringnumberundefiDictkey] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: String | Double): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     

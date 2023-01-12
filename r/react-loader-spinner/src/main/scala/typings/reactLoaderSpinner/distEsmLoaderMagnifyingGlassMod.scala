@@ -27,7 +27,8 @@ object distEsmLoaderMagnifyingGlassMod {
       __obj.asInstanceOf[MagnifyingGlassProps]
     }
     
-    extension [Self <: MagnifyingGlassProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MagnifyingGlassProps] (val x: Self) extends AnyVal {
       
       inline def setGlassColor(value: String): Self = StObject.set(x, "glassColor", value.asInstanceOf[js.Any])
       

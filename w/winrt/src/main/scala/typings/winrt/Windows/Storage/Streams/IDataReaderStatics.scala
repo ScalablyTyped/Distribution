@@ -15,7 +15,8 @@ object IDataReaderStatics {
     __obj.asInstanceOf[IDataReaderStatics]
   }
   
-  extension [Self <: IDataReaderStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataReaderStatics] (val x: Self) extends AnyVal {
     
     inline def setFromBuffer(value: IBuffer => DataReader): Self = StObject.set(x, "fromBuffer", js.Any.fromFunction1(value))
   }

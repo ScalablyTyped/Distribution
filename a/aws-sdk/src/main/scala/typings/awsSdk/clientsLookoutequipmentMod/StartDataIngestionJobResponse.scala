@@ -23,7 +23,8 @@ object StartDataIngestionJobResponse {
     __obj.asInstanceOf[StartDataIngestionJobResponse]
   }
   
-  extension [Self <: StartDataIngestionJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartDataIngestionJobResponse] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: IngestionJobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

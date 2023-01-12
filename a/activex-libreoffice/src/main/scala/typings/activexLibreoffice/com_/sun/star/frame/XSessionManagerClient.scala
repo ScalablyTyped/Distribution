@@ -71,7 +71,8 @@ object XSessionManagerClient {
     __obj.asInstanceOf[XSessionManagerClient]
   }
   
-  extension [Self <: XSessionManagerClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSessionManagerClient] (val x: Self) extends AnyVal {
     
     inline def setAddSessionManagerListener(value: XSessionManagerListener => Unit): Self = StObject.set(x, "addSessionManagerListener", js.Any.fromFunction1(value))
     

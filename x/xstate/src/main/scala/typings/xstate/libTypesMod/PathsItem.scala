@@ -23,7 +23,8 @@ object PathsItem {
     __obj.asInstanceOf[PathsItem[TContext, TEvent]]
   }
   
-  extension [Self <: PathsItem[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (PathsItem[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathsItem[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (PathsItem[TContext, TEvent])) extends AnyVal {
     
     inline def setPaths(value: js.Array[js.Array[Segment[TContext, TEvent]]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     

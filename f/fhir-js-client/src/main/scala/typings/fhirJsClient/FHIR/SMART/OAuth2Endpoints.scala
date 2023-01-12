@@ -31,7 +31,8 @@ object OAuth2Endpoints {
     __obj.asInstanceOf[OAuth2Endpoints]
   }
   
-  extension [Self <: OAuth2Endpoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuth2Endpoints] (val x: Self) extends AnyVal {
     
     inline def setAuthorize_uri(value: String): Self = StObject.set(x, "authorize_uri", value.asInstanceOf[js.Any])
     

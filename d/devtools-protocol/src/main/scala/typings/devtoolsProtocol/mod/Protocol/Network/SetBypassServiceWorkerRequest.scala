@@ -18,7 +18,8 @@ object SetBypassServiceWorkerRequest {
     __obj.asInstanceOf[SetBypassServiceWorkerRequest]
   }
   
-  extension [Self <: SetBypassServiceWorkerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetBypassServiceWorkerRequest] (val x: Self) extends AnyVal {
     
     inline def setBypass(value: Boolean): Self = StObject.set(x, "bypass", value.asInstanceOf[js.Any])
   }

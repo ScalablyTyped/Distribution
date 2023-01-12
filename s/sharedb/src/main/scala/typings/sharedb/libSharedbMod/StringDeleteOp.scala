@@ -19,7 +19,8 @@ object StringDeleteOp {
     __obj.asInstanceOf[StringDeleteOp]
   }
   
-  extension [Self <: StringDeleteOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringDeleteOp] (val x: Self) extends AnyVal {
     
     inline def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     

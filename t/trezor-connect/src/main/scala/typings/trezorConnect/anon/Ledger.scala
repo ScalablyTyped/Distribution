@@ -18,7 +18,8 @@ object Ledger {
     __obj.asInstanceOf[Ledger]
   }
   
-  extension [Self <: Ledger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ledger] (val x: Self) extends AnyVal {
     
     inline def setLedger(value: Double): Self = StObject.set(x, "ledger", value.asInstanceOf[js.Any])
     

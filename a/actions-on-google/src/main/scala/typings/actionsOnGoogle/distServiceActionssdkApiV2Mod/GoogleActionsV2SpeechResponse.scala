@@ -26,7 +26,8 @@ object GoogleActionsV2SpeechResponse {
     __obj.asInstanceOf[GoogleActionsV2SpeechResponse]
   }
   
-  extension [Self <: GoogleActionsV2SpeechResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2SpeechResponse] (val x: Self) extends AnyVal {
     
     inline def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
     

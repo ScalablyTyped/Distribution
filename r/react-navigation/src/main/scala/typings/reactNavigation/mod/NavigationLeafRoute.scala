@@ -59,7 +59,8 @@ object NavigationLeafRoute {
     __obj.asInstanceOf[NavigationLeafRoute[Params]]
   }
   
-  extension [Self <: NavigationLeafRoute[?], Params](x: Self & NavigationLeafRoute[Params]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationLeafRoute[?], Params] (val x: Self & NavigationLeafRoute[Params]) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

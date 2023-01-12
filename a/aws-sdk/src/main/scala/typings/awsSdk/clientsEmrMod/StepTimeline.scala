@@ -28,7 +28,8 @@ object StepTimeline {
     __obj.asInstanceOf[StepTimeline]
   }
   
-  extension [Self <: StepTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepTimeline] (val x: Self) extends AnyVal {
     
     inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     

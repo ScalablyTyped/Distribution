@@ -23,7 +23,8 @@ object UsageStatisticsSortBy {
     __obj.asInstanceOf[UsageStatisticsSortBy]
   }
   
-  extension [Self <: UsageStatisticsSortBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageStatisticsSortBy] (val x: Self) extends AnyVal {
     
     inline def setKey(value: UsageStatisticsSortKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

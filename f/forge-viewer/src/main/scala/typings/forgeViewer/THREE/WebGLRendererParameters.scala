@@ -36,7 +36,8 @@ object WebGLRendererParameters {
     __obj.asInstanceOf[WebGLRendererParameters]
   }
   
-  extension [Self <: WebGLRendererParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLRendererParameters] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

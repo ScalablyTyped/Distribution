@@ -27,7 +27,8 @@ object keyinGestureKeyEventStore {
     __obj.asInstanceOf[keyinGestureKeyEventStore]
   }
   
-  extension [Self <: keyinGestureKeyEventStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinGestureKeyEventStore] (val x: Self) extends AnyVal {
     
     inline def setDrag(value: EventStore): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     

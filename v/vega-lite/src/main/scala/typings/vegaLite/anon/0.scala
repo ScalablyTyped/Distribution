@@ -19,7 +19,8 @@ object `0` {
     __obj.asInstanceOf[`0`[F]]
   }
   
-  extension [Self <: `0`[?], F /* <: typings.vegaLite.buildSrcChanneldefMod.Field */](x: Self & `0`[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0`[?], F /* <: typings.vegaLite.buildSrcChanneldefMod.Field */] (val x: Self & `0`[F]) extends AnyVal {
     
     inline def setCondition(value: Conditional[TypedFieldDef[F, Any, Boolean | BinParams | binned | Null]]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
   }

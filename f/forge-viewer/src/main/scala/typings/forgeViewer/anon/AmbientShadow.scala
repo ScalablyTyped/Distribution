@@ -35,7 +35,8 @@ object AmbientShadow {
     __obj.asInstanceOf[AmbientShadow]
   }
   
-  extension [Self <: AmbientShadow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmbientShadow] (val x: Self) extends AnyVal {
     
     inline def setAmbientShadow(value: Boolean): Self = StObject.set(x, "ambientShadow", value.asInstanceOf[js.Any])
     

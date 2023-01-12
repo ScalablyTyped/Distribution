@@ -21,7 +21,8 @@ object ClusterDeleteComponentTemplateRequest {
     __obj.asInstanceOf[ClusterDeleteComponentTemplateRequest]
   }
   
-  extension [Self <: ClusterDeleteComponentTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterDeleteComponentTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setMaster_timeout(value: Duration): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     

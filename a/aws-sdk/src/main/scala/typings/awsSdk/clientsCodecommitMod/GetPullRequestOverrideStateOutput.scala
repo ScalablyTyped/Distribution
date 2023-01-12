@@ -23,7 +23,8 @@ object GetPullRequestOverrideStateOutput {
     __obj.asInstanceOf[GetPullRequestOverrideStateOutput]
   }
   
-  extension [Self <: GetPullRequestOverrideStateOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPullRequestOverrideStateOutput] (val x: Self) extends AnyVal {
     
     inline def setOverridden(value: Overridden): Self = StObject.set(x, "overridden", value.asInstanceOf[js.Any])
     

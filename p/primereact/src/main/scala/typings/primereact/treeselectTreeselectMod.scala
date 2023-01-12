@@ -148,7 +148,8 @@ object treeselectTreeselectMod {
       __obj.asInstanceOf[TreeSelectChangeParams]
     }
     
-    extension [Self <: TreeSelectChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSelectChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -183,7 +184,8 @@ object treeselectTreeselectMod {
       __obj.asInstanceOf[TreeSelectChangeTargetOptions]
     }
     
-    extension [Self <: TreeSelectChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSelectChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -212,7 +214,8 @@ object treeselectTreeselectMod {
       __obj.asInstanceOf[TreeSelectCheckboxSelectionKeyType]
     }
     
-    extension [Self <: TreeSelectCheckboxSelectionKeyType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSelectCheckboxSelectionKeyType] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -252,7 +255,8 @@ object treeselectTreeselectMod {
       __obj.asInstanceOf[TreeSelectEventNodeParams]
     }
     
-    extension [Self <: TreeSelectEventNodeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSelectEventNodeParams] (val x: Self) extends AnyVal {
       
       inline def setNode(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeNode */ Any
@@ -277,7 +281,8 @@ object treeselectTreeselectMod {
       __obj.asInstanceOf[TreeSelectExpandedParams]
     }
     
-    extension [Self <: TreeSelectExpandedParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSelectExpandedParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -310,7 +315,8 @@ object treeselectTreeselectMod {
       __obj.asInstanceOf[TreeSelectFilterOptions]
     }
     
-    extension [Self <: TreeSelectFilterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSelectFilterOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: /* event */ js.UndefOr[KeyboardEvent] => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -337,7 +343,8 @@ object treeselectTreeselectMod {
       __obj.asInstanceOf[TreeSelectFilterValueChangeParams]
     }
     
-    extension [Self <: TreeSelectFilterValueChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSelectFilterValueChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: FormEvent[HTMLInputElement]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -381,7 +388,8 @@ object treeselectTreeselectMod {
       __obj.asInstanceOf[TreeSelectPanelHeaderTemplateOptions]
     }
     
-    extension [Self <: TreeSelectPanelHeaderTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSelectPanelHeaderTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -907,7 +915,8 @@ object treeselectTreeselectMod {
       __obj.asInstanceOf[TreeSelectProps]
     }
     
-    extension [Self <: TreeSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSelectProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

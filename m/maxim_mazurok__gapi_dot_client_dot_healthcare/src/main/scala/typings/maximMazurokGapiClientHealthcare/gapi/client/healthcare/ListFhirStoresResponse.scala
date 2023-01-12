@@ -19,7 +19,8 @@ object ListFhirStoresResponse {
     __obj.asInstanceOf[ListFhirStoresResponse]
   }
   
-  extension [Self <: ListFhirStoresResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFhirStoresResponse] (val x: Self) extends AnyVal {
     
     inline def setFhirStores(value: js.Array[FhirStore]): Self = StObject.set(x, "fhirStores", value.asInstanceOf[js.Any])
     

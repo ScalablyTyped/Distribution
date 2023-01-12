@@ -17,7 +17,8 @@ object QRCodeExportImageOptions {
     __obj.asInstanceOf[QRCodeExportImageOptions]
   }
   
-  extension [Self <: QRCodeExportImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRCodeExportImageOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

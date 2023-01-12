@@ -28,7 +28,8 @@ object GoogleCloudVisionV1p3beta1Page {
     __obj.asInstanceOf[GoogleCloudVisionV1p3beta1Page]
   }
   
-  extension [Self <: GoogleCloudVisionV1p3beta1Page](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p3beta1Page] (val x: Self) extends AnyVal {
     
     inline def setBlocks(value: js.Array[GoogleCloudVisionV1p3beta1Block]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     

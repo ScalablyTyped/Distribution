@@ -23,7 +23,8 @@ object LabelClickEventUIParam {
     __obj.asInstanceOf[LabelClickEventUIParam]
   }
   
-  extension [Self <: LabelClickEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelClickEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setAllowSliceClick(value: Any): Self = StObject.set(x, "allowSliceClick", value.asInstanceOf[js.Any])
     

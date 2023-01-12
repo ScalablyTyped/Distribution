@@ -42,7 +42,8 @@ object BufferList {
     __obj.asInstanceOf[BufferList[D]]
   }
   
-  extension [Self <: BufferList[?], D /* <: Buffer */](x: Self & BufferList[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferList[?], D /* <: Buffer */] (val x: Self & BufferList[D]) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

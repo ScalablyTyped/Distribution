@@ -25,7 +25,8 @@ object UpdateDocumentStyleRequest {
     __obj.asInstanceOf[UpdateDocumentStyleRequest]
   }
   
-  extension [Self <: UpdateDocumentStyleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDocumentStyleRequest] (val x: Self) extends AnyVal {
     
     inline def setDocumentStyle(value: DocumentStyle): Self = StObject.set(x, "documentStyle", value.asInstanceOf[js.Any])
     

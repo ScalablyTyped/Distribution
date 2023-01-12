@@ -24,7 +24,8 @@ object ListFieldsParams {
     __obj.asInstanceOf[ListFieldsParams]
   }
   
-  extension [Self <: ListFieldsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFieldsParams] (val x: Self) extends AnyVal {
     
     inline def setCollection_ids(value: js.Array[String]): Self = StObject.set(x, "collection_ids", value.asInstanceOf[js.Any])
     

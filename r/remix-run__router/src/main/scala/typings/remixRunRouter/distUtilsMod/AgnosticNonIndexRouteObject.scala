@@ -21,7 +21,8 @@ object AgnosticNonIndexRouteObject {
     __obj.asInstanceOf[AgnosticNonIndexRouteObject]
   }
   
-  extension [Self <: AgnosticNonIndexRouteObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgnosticNonIndexRouteObject] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[AgnosticRouteObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

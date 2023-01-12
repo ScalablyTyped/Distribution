@@ -29,7 +29,8 @@ object SecuritySettings {
     __obj.asInstanceOf[SecuritySettings]
   }
   
-  extension [Self <: SecuritySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySettings] (val x: Self) extends AnyVal {
     
     inline def setClientTlsPolicy(value: String): Self = StObject.set(x, "clientTlsPolicy", value.asInstanceOf[js.Any])
     

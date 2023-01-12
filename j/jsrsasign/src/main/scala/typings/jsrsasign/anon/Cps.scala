@@ -18,7 +18,8 @@ object Cps {
     __obj.asInstanceOf[Cps]
   }
   
-  extension [Self <: Cps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cps] (val x: Self) extends AnyVal {
     
     inline def setCps(value: String): Self = StObject.set(x, "cps", value.asInstanceOf[js.Any])
   }

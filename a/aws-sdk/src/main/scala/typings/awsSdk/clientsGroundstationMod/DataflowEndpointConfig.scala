@@ -23,7 +23,8 @@ object DataflowEndpointConfig {
     __obj.asInstanceOf[DataflowEndpointConfig]
   }
   
-  extension [Self <: DataflowEndpointConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataflowEndpointConfig] (val x: Self) extends AnyVal {
     
     inline def setDataflowEndpointName(value: String): Self = StObject.set(x, "dataflowEndpointName", value.asInstanceOf[js.Any])
     

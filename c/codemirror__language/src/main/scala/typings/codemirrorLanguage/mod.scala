@@ -1103,7 +1103,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAfterCursor(value: Boolean): Self = StObject.set(x, "afterCursor", value.asInstanceOf[js.Any])
       
@@ -1136,7 +1137,8 @@ object mod {
       __obj.asInstanceOf[DocRange]
     }
     
-    extension [Self <: DocRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocRange] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -1177,7 +1179,8 @@ object mod {
       __obj.asInstanceOf[FoldConfig]
     }
     
-    extension [Self <: FoldConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FoldConfig] (val x: Self) extends AnyVal {
       
       inline def setPlaceholderDOM(value: (/* view */ EditorView, /* onclick */ js.Function1[/* event */ Event, Unit]) => HTMLElement): Self = StObject.set(x, "placeholderDOM", js.Any.fromFunction2(value))
       
@@ -1230,7 +1233,8 @@ object mod {
       __obj.asInstanceOf[FoldGutterConfig]
     }
     
-    extension [Self <: FoldGutterConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FoldGutterConfig] (val x: Self) extends AnyVal {
       
       inline def setClosedText(value: String): Self = StObject.set(x, "closedText", value.asInstanceOf[js.Any])
       
@@ -1288,7 +1292,8 @@ object mod {
       __obj.asInstanceOf[MatchResult]
     }
     
-    extension [Self <: MatchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchResult] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: To): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -1369,7 +1374,8 @@ object mod {
       __obj.asInstanceOf[StreamParser[State]]
     }
     
-    extension [Self <: StreamParser[?], State](x: Self & StreamParser[State]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamParser[?], State] (val x: Self & StreamParser[State]) extends AnyVal {
       
       inline def setBlankLine(value: (/* state */ State, /* indentUnit */ Double) => Unit): Self = StObject.set(x, "blankLine", js.Any.fromFunction2(value))
       
@@ -1434,7 +1440,8 @@ object mod {
       __obj.asInstanceOf[TagStyle]
     }
     
-    extension [Self <: TagStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagStyle] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object GoogleCloudDialogflowCxV3ListTransitionRouteGroupsResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ListTransitionRouteGroupsResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ListTransitionRouteGroupsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ListTransitionRouteGroupsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

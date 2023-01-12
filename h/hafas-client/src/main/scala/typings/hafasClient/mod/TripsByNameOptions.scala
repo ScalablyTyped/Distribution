@@ -35,7 +35,8 @@ object TripsByNameOptions {
     __obj.asInstanceOf[TripsByNameOptions]
   }
   
-  extension [Self <: TripsByNameOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TripsByNameOptions] (val x: Self) extends AnyVal {
     
     inline def setAdditionalFilters(value: js.Array[Filter]): Self = StObject.set(x, "additionalFilters", value.asInstanceOf[js.Any])
     

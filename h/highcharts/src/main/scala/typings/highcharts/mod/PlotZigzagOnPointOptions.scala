@@ -33,7 +33,8 @@ object PlotZigzagOnPointOptions {
     __obj.asInstanceOf[PlotZigzagOnPointOptions]
   }
   
-  extension [Self <: PlotZigzagOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotZigzagOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotZigzagOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

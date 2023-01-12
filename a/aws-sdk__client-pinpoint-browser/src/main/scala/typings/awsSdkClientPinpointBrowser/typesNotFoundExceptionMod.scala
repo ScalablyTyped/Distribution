@@ -161,7 +161,8 @@ object typesNotFoundExceptionMod {
       __obj.asInstanceOf[NotFoundException]
     }
     
-    extension [Self <: NotFoundException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotFoundException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.NotFoundException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -186,7 +187,8 @@ object typesNotFoundExceptionMod {
       __obj.asInstanceOf[NotFoundExceptionDetails]
     }
     
-    extension [Self <: NotFoundExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotFoundExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

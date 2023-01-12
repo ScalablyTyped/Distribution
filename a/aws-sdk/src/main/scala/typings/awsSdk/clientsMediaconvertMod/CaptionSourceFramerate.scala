@@ -23,7 +23,8 @@ object CaptionSourceFramerate {
     __obj.asInstanceOf[CaptionSourceFramerate]
   }
   
-  extension [Self <: CaptionSourceFramerate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionSourceFramerate] (val x: Self) extends AnyVal {
     
     inline def setFramerateDenominator(value: integerMin1Max1001): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
     

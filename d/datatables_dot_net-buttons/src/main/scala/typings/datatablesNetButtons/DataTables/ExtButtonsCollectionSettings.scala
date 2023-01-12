@@ -43,7 +43,8 @@ object ExtButtonsCollectionSettings {
     __obj.asInstanceOf[ExtButtonsCollectionSettings]
   }
   
-  extension [Self <: ExtButtonsCollectionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtButtonsCollectionSettings] (val x: Self) extends AnyVal {
     
     inline def setAction(value: (/* e */ Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction4(value))
     

@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[IsAdded]
     }
     
-    extension [Self <: IsAdded](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsAdded] (val x: Self) extends AnyVal {
       
       inline def setIsAdded(value: Boolean): Self = StObject.set(x, "isAdded", value.asInstanceOf[js.Any])
       

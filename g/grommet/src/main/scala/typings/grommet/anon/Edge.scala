@@ -17,7 +17,8 @@ object Edge {
     __obj.asInstanceOf[Edge]
   }
   
-  extension [Self <: Edge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Invert): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

@@ -126,7 +126,8 @@ object anon {
       __obj.asInstanceOf[ParserOptionspluginsExtra]
     }
     
-    extension [Self <: ParserOptionspluginsExtra](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptionspluginsExtra] (val x: Self) extends AnyVal {
       
       inline def setAllowAwaitOutsideFunction(value: Boolean): Self = StObject.set(x, "allowAwaitOutsideFunction", value.asInstanceOf[js.Any])
       
@@ -210,7 +211,8 @@ object anon {
       __obj.asInstanceOf[ReactBabel]
     }
     
-    extension [Self <: ReactBabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactBabel] (val x: Self) extends AnyVal {
       
       inline def setReactBabel(
         value: (/* babelConfig */ ReactBabelOptions, /* context */ ReactBabelHookContext, /* config */ ResolvedConfig) => Unit
@@ -231,7 +233,8 @@ object anon {
       __obj.asInstanceOf[Ssr]
     }
     
-    extension [Self <: Ssr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ssr] (val x: Self) extends AnyVal {
       
       inline def setSsr(value: Boolean): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
       

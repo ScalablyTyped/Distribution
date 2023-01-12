@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Dock]
     }
     
-    extension [Self <: Dock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dock] (val x: Self) extends AnyVal {
       
       inline def setDock(value: DockPosition): Self = StObject.set(x, "dock", value.asInstanceOf[js.Any])
     }
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Rows]
     }
     
-    extension [Self <: Rows](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rows] (val x: Self) extends AnyVal {
       
       inline def setRows(value: js.Array[js.Object]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
@@ -60,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Tools]
     }
     
-    extension [Self <: Tools](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tools] (val x: Self) extends AnyVal {
       
       inline def setTools(value: Dock): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
       
@@ -79,7 +82,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

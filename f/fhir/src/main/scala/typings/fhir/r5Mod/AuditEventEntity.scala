@@ -48,7 +48,8 @@ object AuditEventEntity {
     __obj.asInstanceOf[AuditEventEntity]
   }
   
-  extension [Self <: AuditEventEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditEventEntity] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: js.Array[AuditEventAgent]): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

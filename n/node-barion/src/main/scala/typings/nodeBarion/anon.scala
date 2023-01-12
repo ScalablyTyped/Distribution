@@ -66,7 +66,8 @@ object anon {
       __obj.asInstanceOf[PartialBankTransferReques]
     }
     
-    extension [Self <: PartialBankTransferReques](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialBankTransferReques] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object anon {
       __obj.asInstanceOf[PartialCancelAuthorizatio]
     }
     
-    extension [Self <: PartialCancelAuthorizatio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCancelAuthorizatio] (val x: Self) extends AnyVal {
       
       inline def setPOSKey(value: String): Self = StObject.set(x, "POSKey", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object anon {
       __obj.asInstanceOf[PartialCapturePaymentRequ]
     }
     
-    extension [Self <: PartialCapturePaymentRequ](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCapturePaymentRequ] (val x: Self) extends AnyVal {
       
       inline def setPOSKey(value: String): Self = StObject.set(x, "POSKey", value.asInstanceOf[js.Any])
       
@@ -172,7 +175,8 @@ object anon {
       __obj.asInstanceOf[PartialCompletePaymentReq]
     }
     
-    extension [Self <: PartialCompletePaymentReq](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCompletePaymentReq] (val x: Self) extends AnyVal {
       
       inline def setPOSKey(value: String): Self = StObject.set(x, "POSKey", value.asInstanceOf[js.Any])
       
@@ -206,7 +210,8 @@ object anon {
       __obj.asInstanceOf[PartialEmailTransferReque]
     }
     
-    extension [Self <: PartialEmailTransferReque](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialEmailTransferReque] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Money): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
       
@@ -250,7 +255,8 @@ object anon {
       __obj.asInstanceOf[PartialFinishReservationR]
     }
     
-    extension [Self <: PartialFinishReservationR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFinishReservationR] (val x: Self) extends AnyVal {
       
       inline def setPOSKey(value: String): Self = StObject.set(x, "POSKey", value.asInstanceOf[js.Any])
       
@@ -282,7 +288,8 @@ object anon {
       __obj.asInstanceOf[PartialGetAccountsRequest]
     }
     
-    extension [Self <: PartialGetAccountsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialGetAccountsRequest] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
       
@@ -308,7 +315,8 @@ object anon {
       __obj.asInstanceOf[PartialGetPaymentStateReq]
     }
     
-    extension [Self <: PartialGetPaymentStateReq](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialGetPaymentStateReq] (val x: Self) extends AnyVal {
       
       inline def setPOSKey(value: String): Self = StObject.set(x, "POSKey", value.asInstanceOf[js.Any])
       
@@ -336,7 +344,8 @@ object anon {
       __obj.asInstanceOf[PartialPaymentRefundReque]
     }
     
-    extension [Self <: PartialPaymentRefundReque](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPaymentRefundReque] (val x: Self) extends AnyVal {
       
       inline def setPOSKey(value: String): Self = StObject.set(x, "POSKey", value.asInstanceOf[js.Any])
       
@@ -420,7 +429,8 @@ object anon {
       __obj.asInstanceOf[PartialStartPaymentReques]
     }
     
-    extension [Self <: PartialStartPaymentReques](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialStartPaymentReques] (val x: Self) extends AnyVal {
       
       inline def setBillingAddress(value: BillingAddress): Self = StObject.set(x, "BillingAddress", value.asInstanceOf[js.Any])
       
@@ -562,7 +572,8 @@ object anon {
       __obj.asInstanceOf[PartialStatementDownloadR]
     }
     
-    extension [Self <: PartialStatementDownloadR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialStatementDownloadR] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: CZK | EUR | HUF | USD): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
       

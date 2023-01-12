@@ -33,7 +33,8 @@ object HideTabBarOptions {
     __obj.asInstanceOf[HideTabBarOptions]
   }
   
-  extension [Self <: HideTabBarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HideTabBarOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

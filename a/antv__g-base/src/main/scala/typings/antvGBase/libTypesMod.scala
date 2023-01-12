@@ -108,7 +108,8 @@ object libTypesMod {
       __obj.asInstanceOf[AnimateCfg]
     }
     
-    extension [Self <: AnimateCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimateCfg] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
@@ -172,7 +173,8 @@ object libTypesMod {
       __obj.asInstanceOf[Animation]
     }
     
-    extension [Self <: Animation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
       
       inline def setFromAttrs(value: StringDictionary[Any]): Self = StObject.set(x, "fromAttrs", value.asInstanceOf[js.Any])
       
@@ -232,7 +234,8 @@ object libTypesMod {
       __obj.asInstanceOf[BBox]
     }
     
-    extension [Self <: BBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BBox] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -301,7 +304,8 @@ object libTypesMod {
       __obj.asInstanceOf[CanvasCfg]
     }
     
-    extension [Self <: CanvasCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasCfg] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
@@ -384,7 +388,8 @@ object libTypesMod {
       __obj.asInstanceOf[ClipCfg]
     }
     
-    extension [Self <: ClipCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClipCfg] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: ShapeAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -541,7 +546,8 @@ object libTypesMod {
       __obj.asInstanceOf[ElementCfg]
     }
     
-    extension [Self <: ElementCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementCfg] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
@@ -592,7 +598,8 @@ object libTypesMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -724,7 +731,8 @@ object libTypesMod {
       __obj.asInstanceOf[ShapeAttrs]
     }
     
-    extension [Self <: ShapeAttrs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShapeAttrs] (val x: Self) extends AnyVal {
       
       inline def setFill(value: ColorType): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -874,7 +882,8 @@ object libTypesMod {
       __obj.asInstanceOf[ShapeCfg]
     }
     
-    extension [Self <: ShapeCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShapeCfg] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: ShapeAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     }
@@ -897,7 +906,8 @@ object libTypesMod {
       __obj.asInstanceOf[SimpleBBox]
     }
     
-    extension [Self <: SimpleBBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleBBox] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

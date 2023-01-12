@@ -23,7 +23,8 @@ object EncryptionConfiguration {
     __obj.asInstanceOf[EncryptionConfiguration]
   }
   
-  extension [Self <: EncryptionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: KeyId): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     

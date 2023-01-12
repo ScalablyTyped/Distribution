@@ -49,7 +49,8 @@ object ChooseVideoOption {
     __obj.asInstanceOf[ChooseVideoOption]
   }
   
-  extension [Self <: ChooseVideoOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseVideoOption] (val x: Self) extends AnyVal {
     
     inline def setCamera(value: back | front): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     

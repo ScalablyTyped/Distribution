@@ -30,7 +30,8 @@ object Win32LobAppAssignmentSettings {
     __obj.asInstanceOf[Win32LobAppAssignmentSettings]
   }
   
-  extension [Self <: Win32LobAppAssignmentSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Win32LobAppAssignmentSettings] (val x: Self) extends AnyVal {
     
     inline def setDeliveryOptimizationPriority(value: Win32LobAppDeliveryOptimizationPriority): Self = StObject.set(x, "deliveryOptimizationPriority", value.asInstanceOf[js.Any])
     

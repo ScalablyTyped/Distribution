@@ -84,7 +84,8 @@ object cellTypesAutocompleteTypeAutocompleteTypeMod {
       __obj.asInstanceOf[AutocompleteCellType]
     }
     
-    extension [Self <: AutocompleteCellType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteCellType] (val x: Self) extends AnyVal {
       
       inline def setEditor(value: (Instantiable1[/* instance */ default, AutocompleteEditor]) & TypeofAutocompleteEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       

@@ -64,7 +64,8 @@ object KoPlus {
       __obj.asInstanceOf[CommandOptions]
     }
     
-    extension [Self <: CommandOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandOptions] (val x: Self) extends AnyVal {
       
       inline def setAction(value: js.Function): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object KoPlus {
       __obj.asInstanceOf[EditableFunctions]
     }
     
-    extension [Self <: EditableFunctions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditableFunctions] (val x: Self) extends AnyVal {
       
       inline def setBeginEdit(value: () => Unit): Self = StObject.set(x, "beginEdit", js.Any.fromFunction0(value))
       

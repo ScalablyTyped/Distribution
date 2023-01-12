@@ -19,7 +19,8 @@ object ErrorWithRange {
     __obj.asInstanceOf[ErrorWithRange]
   }
   
-  extension [Self <: ErrorWithRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorWithRange] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

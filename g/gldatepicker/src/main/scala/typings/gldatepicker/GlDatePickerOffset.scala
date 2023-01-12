@@ -17,7 +17,8 @@ object GlDatePickerOffset {
     __obj.asInstanceOf[GlDatePickerOffset]
   }
   
-  extension [Self <: GlDatePickerOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlDatePickerOffset] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

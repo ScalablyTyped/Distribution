@@ -23,7 +23,8 @@ object GoogleFirestoreAdminV1ExportDocumentsRequest {
     __obj.asInstanceOf[GoogleFirestoreAdminV1ExportDocumentsRequest]
   }
   
-  extension [Self <: GoogleFirestoreAdminV1ExportDocumentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleFirestoreAdminV1ExportDocumentsRequest] (val x: Self) extends AnyVal {
     
     inline def setCollectionIds(value: js.Array[String]): Self = StObject.set(x, "collectionIds", value.asInstanceOf[js.Any])
     

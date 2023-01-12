@@ -32,7 +32,8 @@ object NodesHotThreadsParams {
     __obj.asInstanceOf[NodesHotThreadsParams]
   }
   
-  extension [Self <: NodesHotThreadsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesHotThreadsParams] (val x: Self) extends AnyVal {
     
     inline def setIgnoreIdleThreads(value: Boolean): Self = StObject.set(x, "ignoreIdleThreads", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object SystemMemoryInfo {
     __obj.asInstanceOf[SystemMemoryInfo]
   }
   
-  extension [Self <: SystemMemoryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemMemoryInfo] (val x: Self) extends AnyVal {
     
     inline def setFree(value: Double): Self = StObject.set(x, "free", value.asInstanceOf[js.Any])
     

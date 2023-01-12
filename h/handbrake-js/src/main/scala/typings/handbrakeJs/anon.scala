@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Stderr]
     }
     
-    extension [Self <: Stderr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stderr] (val x: Self) extends AnyVal {
       
       inline def setStderr(value: String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       

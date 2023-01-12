@@ -28,7 +28,8 @@ object DBCoreAddRequest {
     __obj.asInstanceOf[DBCoreAddRequest]
   }
   
-  extension [Self <: DBCoreAddRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCoreAddRequest] (val x: Self) extends AnyVal {
     
     inline def setKeys(value: js.Array[Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     

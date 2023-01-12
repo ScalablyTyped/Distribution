@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[App]
     }
     
-    extension [Self <: App](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: App] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object mod {
       __obj.asInstanceOf[OpenAppOptions]
     }
     
-    extension [Self <: OpenAppOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAppOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowNonzeroExitCode(value: Boolean): Self = StObject.set(x, "allowNonzeroExitCode", value.asInstanceOf[js.Any])
       
@@ -215,7 +217,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowNonzeroExitCode(value: Boolean): Self = StObject.set(x, "allowNonzeroExitCode", value.asInstanceOf[js.Any])
       

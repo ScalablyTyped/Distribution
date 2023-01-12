@@ -35,7 +35,8 @@ object distKerasFormatTopologyConfigMod {
       __obj.asInstanceOf[BaseLayerSerialization[N, C]]
     }
     
-    extension [Self <: BaseLayerSerialization[?, ?], N /* <: String */, C /* <: LayerConfig */](x: Self & (BaseLayerSerialization[N, C])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseLayerSerialization[?, ?], N /* <: String */, C /* <: LayerConfig */] (val x: Self & (BaseLayerSerialization[N, C])) extends AnyVal {
       
       inline def setInbound_nodes(value: js.Array[NodeConfig]): Self = StObject.set(x, "inbound_nodes", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object distKerasFormatTopologyConfigMod {
       __obj.asInstanceOf[LayerConfig]
     }
     
-    extension [Self <: LayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerConfig] (val x: Self) extends AnyVal {
       
       inline def setBatch_input_shape(value: Shape): Self = StObject.set(x, "batch_input_shape", value.asInstanceOf[js.Any])
       

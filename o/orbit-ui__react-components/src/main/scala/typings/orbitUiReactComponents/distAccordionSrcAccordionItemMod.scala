@@ -33,7 +33,8 @@ object distAccordionSrcAccordionItemMod {
       __obj.asInstanceOf[AccordionItemProps]
     }
     
-    extension [Self <: AccordionItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionItemProps] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Header): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }

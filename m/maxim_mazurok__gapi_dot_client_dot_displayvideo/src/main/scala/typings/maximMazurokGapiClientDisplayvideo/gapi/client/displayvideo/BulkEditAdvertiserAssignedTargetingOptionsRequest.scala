@@ -25,7 +25,8 @@ object BulkEditAdvertiserAssignedTargetingOptionsRequest {
     __obj.asInstanceOf[BulkEditAdvertiserAssignedTargetingOptionsRequest]
   }
   
-  extension [Self <: BulkEditAdvertiserAssignedTargetingOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkEditAdvertiserAssignedTargetingOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setCreateRequests(value: js.Array[CreateAssignedTargetingOptionsRequest]): Self = StObject.set(x, "createRequests", value.asInstanceOf[js.Any])
     

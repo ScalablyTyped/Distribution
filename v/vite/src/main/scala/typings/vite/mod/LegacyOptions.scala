@@ -22,7 +22,8 @@ object LegacyOptions {
     __obj.asInstanceOf[LegacyOptions]
   }
   
-  extension [Self <: LegacyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegacyOptions] (val x: Self) extends AnyVal {
     
     inline def setBuildSsrCjsExternalHeuristics(value: Boolean): Self = StObject.set(x, "buildSsrCjsExternalHeuristics", value.asInstanceOf[js.Any])
     

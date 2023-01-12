@@ -56,7 +56,8 @@ object TextSpan {
     __obj.asInstanceOf[TextSpan]
   }
   
-  extension [Self <: TextSpan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextSpan] (val x: Self) extends AnyVal {
     
     inline def setContainsPosition(value: Double => Boolean): Self = StObject.set(x, "containsPosition", js.Any.fromFunction1(value))
     

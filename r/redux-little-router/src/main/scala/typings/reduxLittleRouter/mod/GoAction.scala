@@ -20,7 +20,8 @@ object GoAction {
     __obj.asInstanceOf[GoAction]
   }
   
-  extension [Self <: GoAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoAction] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Double): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

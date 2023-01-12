@@ -368,7 +368,8 @@ object sapUiUx3DataSetItemMod {
       __obj.asInstanceOf[DataSetItemSettings]
     }
     
-    extension [Self <: DataSetItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSetItemSettings] (val x: Self) extends AnyVal {
       
       inline def setCheckable(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
       

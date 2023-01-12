@@ -19,7 +19,8 @@ object ReturnTypeGetSnapshotResponse {
     __obj.asInstanceOf[ReturnTypeGetSnapshotResponse]
   }
   
-  extension [Self <: ReturnTypeGetSnapshotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetSnapshotResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetSnapshotRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

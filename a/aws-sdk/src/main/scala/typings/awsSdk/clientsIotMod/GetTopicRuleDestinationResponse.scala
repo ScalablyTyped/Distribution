@@ -18,7 +18,8 @@ object GetTopicRuleDestinationResponse {
     __obj.asInstanceOf[GetTopicRuleDestinationResponse]
   }
   
-  extension [Self <: GetTopicRuleDestinationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTopicRuleDestinationResponse] (val x: Self) extends AnyVal {
     
     inline def setTopicRuleDestination(value: TopicRuleDestination): Self = StObject.set(x, "topicRuleDestination", value.asInstanceOf[js.Any])
     

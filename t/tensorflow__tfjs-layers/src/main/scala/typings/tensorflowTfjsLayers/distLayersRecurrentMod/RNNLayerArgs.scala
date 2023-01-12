@@ -18,7 +18,8 @@ object RNNLayerArgs {
     __obj.asInstanceOf[RNNLayerArgs]
   }
   
-  extension [Self <: RNNLayerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RNNLayerArgs] (val x: Self) extends AnyVal {
     
     inline def setCell(value: RNNCell | js.Array[RNNCell]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     

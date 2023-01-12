@@ -27,7 +27,8 @@ object CommonPhysicalAddressWithPurpose {
     __obj.asInstanceOf[CommonPhysicalAddressWithPurpose]
   }
   
-  extension [Self <: CommonPhysicalAddressWithPurpose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonPhysicalAddressWithPurpose] (val x: Self) extends AnyVal {
     
     inline def setPurpose(value: MAIL | OTHER | PHYSICAL | REGISTERED | WORK): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
   }

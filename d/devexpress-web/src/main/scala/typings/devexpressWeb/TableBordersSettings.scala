@@ -59,7 +59,8 @@ object TableBordersSettings {
     __obj.asInstanceOf[TableBordersSettings]
   }
   
-  extension [Self <: TableBordersSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableBordersSettings] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

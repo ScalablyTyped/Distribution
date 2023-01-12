@@ -35,7 +35,8 @@ object PackTransform {
     __obj.asInstanceOf[PackTransform]
   }
   
-  extension [Self <: PackTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: (Vector5[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

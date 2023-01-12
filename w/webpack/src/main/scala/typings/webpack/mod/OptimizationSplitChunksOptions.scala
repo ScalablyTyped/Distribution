@@ -121,7 +121,8 @@ object OptimizationSplitChunksOptions {
     __obj.asInstanceOf[OptimizationSplitChunksOptions]
   }
   
-  extension [Self <: OptimizationSplitChunksOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptimizationSplitChunksOptions] (val x: Self) extends AnyVal {
     
     inline def setAutomaticNameDelimiter(value: String): Self = StObject.set(x, "automaticNameDelimiter", value.asInstanceOf[js.Any])
     

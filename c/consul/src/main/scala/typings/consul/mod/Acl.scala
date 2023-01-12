@@ -124,7 +124,8 @@ object Acl {
       __obj.asInstanceOf[CloneOptions]
     }
     
-    extension [Self <: CloneOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloneOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -147,7 +148,8 @@ object Acl {
       __obj.asInstanceOf[CreateOptions]
     }
     
-    extension [Self <: CreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object Acl {
       __obj.asInstanceOf[DestroyOptions]
     }
     
-    extension [Self <: DestroyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -197,7 +200,8 @@ object Acl {
       __obj.asInstanceOf[InfoOptions]
     }
     
-    extension [Self <: InfoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfoOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -224,7 +228,8 @@ object Acl {
       __obj.asInstanceOf[UpdateOptions]
     }
     
-    extension [Self <: UpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

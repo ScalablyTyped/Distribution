@@ -17,7 +17,8 @@ object EventContentTypeMessage {
     __obj.asInstanceOf[EventContentTypeMessage]
   }
   
-  extension [Self <: EventContentTypeMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventContentTypeMessage] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

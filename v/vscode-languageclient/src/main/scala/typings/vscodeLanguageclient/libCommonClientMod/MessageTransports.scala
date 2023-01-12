@@ -27,7 +27,8 @@ object MessageTransports {
   
   inline def is(value: Any): /* is vscode-languageclient.vscode-languageclient/lib/common/client.MessageTransports */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageclient.vscode-languageclient/lib/common/client.MessageTransports */ Boolean]
   
-  extension [Self <: MessageTransports](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageTransports] (val x: Self) extends AnyVal {
     
     inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
     

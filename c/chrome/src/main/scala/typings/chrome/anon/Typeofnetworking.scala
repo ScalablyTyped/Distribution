@@ -24,7 +24,8 @@ object Typeofnetworking {
     __obj.asInstanceOf[Typeofnetworking]
   }
   
-  extension [Self <: Typeofnetworking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofnetworking] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: Typeofconfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
   }

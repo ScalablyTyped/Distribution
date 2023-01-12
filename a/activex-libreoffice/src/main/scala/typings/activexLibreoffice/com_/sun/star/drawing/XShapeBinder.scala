@@ -37,7 +37,8 @@ object XShapeBinder {
     __obj.asInstanceOf[XShapeBinder]
   }
   
-  extension [Self <: XShapeBinder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XShapeBinder] (val x: Self) extends AnyVal {
     
     inline def setBind(value: XShapes => XShape): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     

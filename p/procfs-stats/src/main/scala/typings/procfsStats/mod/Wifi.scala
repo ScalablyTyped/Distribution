@@ -50,7 +50,8 @@ object Wifi {
     __obj.asInstanceOf[Wifi]
   }
   
-  extension [Self <: Wifi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Wifi] (val x: Self) extends AnyVal {
     
     inline def setBeacon(value: Missed): Self = StObject.set(x, "beacon", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object libDatabaseDbtrackerpoolMod {
       __obj.asInstanceOf[DBTrackerPool]
     }
     
-    extension [Self <: DBTrackerPool](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DBTrackerPool] (val x: Self) extends AnyVal {
       
       inline def setAcquire(value: () => Any): Self = StObject.set(x, "acquire", js.Any.fromFunction0(value))
       

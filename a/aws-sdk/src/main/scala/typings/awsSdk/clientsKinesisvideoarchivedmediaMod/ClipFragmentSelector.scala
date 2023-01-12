@@ -23,7 +23,8 @@ object ClipFragmentSelector {
     __obj.asInstanceOf[ClipFragmentSelector]
   }
   
-  extension [Self <: ClipFragmentSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClipFragmentSelector] (val x: Self) extends AnyVal {
     
     inline def setFragmentSelectorType(value: ClipFragmentSelectorType): Self = StObject.set(x, "FragmentSelectorType", value.asInstanceOf[js.Any])
     

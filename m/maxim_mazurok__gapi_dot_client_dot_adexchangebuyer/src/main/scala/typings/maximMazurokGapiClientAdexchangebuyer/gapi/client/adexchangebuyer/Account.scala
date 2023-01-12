@@ -47,7 +47,8 @@ object Account {
     __obj.asInstanceOf[Account]
   }
   
-  extension [Self <: Account](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
     
     inline def setApplyPretargetingToNonGuaranteedDeals(value: Boolean): Self = StObject.set(x, "applyPretargetingToNonGuaranteedDeals", value.asInstanceOf[js.Any])
     

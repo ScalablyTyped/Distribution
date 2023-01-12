@@ -66,7 +66,8 @@ object AccessViewStatus {
     __obj.asInstanceOf[AccessViewStatus]
   }
   
-  extension [Self <: AccessViewStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessViewStatus] (val x: Self) extends AnyVal {
     
     inline def setAccessViewStatus(value: String): Self = StObject.set(x, "accessViewStatus", value.asInstanceOf[js.Any])
     

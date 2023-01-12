@@ -20,7 +20,8 @@ object libBoundedMeetSemilatticeMod {
       __obj.asInstanceOf[BoundedMeetSemilattice[A]]
     }
     
-    extension [Self <: BoundedMeetSemilattice[?], A](x: Self & BoundedMeetSemilattice[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundedMeetSemilattice[?], A] (val x: Self & BoundedMeetSemilattice[A]) extends AnyVal {
       
       inline def setOne(value: A): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
     }

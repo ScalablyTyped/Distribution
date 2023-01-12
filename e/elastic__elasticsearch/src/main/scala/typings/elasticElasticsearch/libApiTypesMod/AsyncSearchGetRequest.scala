@@ -23,7 +23,8 @@ object AsyncSearchGetRequest {
     __obj.asInstanceOf[AsyncSearchGetRequest]
   }
   
-  extension [Self <: AsyncSearchGetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncSearchGetRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

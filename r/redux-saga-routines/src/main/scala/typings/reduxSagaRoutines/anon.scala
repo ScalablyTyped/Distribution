@@ -47,13 +47,14 @@ object anon {
       ]]
     }
     
-    extension [Self <: FAILURE_[?, ?, ?, ?, ?], TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator](x: Self & (FAILURE_[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FAILURE_[?, ?, ?, ?, ?], TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator] (val x: Self & (FAILURE_[
             TTriggerPayloadCreator, 
             TRequestPayloadCreator, 
             TSuccessPayloadCreator, 
             TFailurePayloadCreator, 
             TFulfillPayloadCreator
-          ])) {
+          ])) extends AnyVal {
       
       inline def setFAILURE(value: TFailurePayloadCreator): Self = StObject.set(x, "FAILURE", value.asInstanceOf[js.Any])
       
@@ -118,13 +119,14 @@ object anon {
       ]]
     }
     
-    extension [Self <: FULFILL[?, ?, ?, ?, ?], TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](x: Self & (FULFILL[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FULFILL[?, ?, ?, ?, ?], TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator] (val x: Self & (FULFILL[
             TTriggerMetaCreator, 
             TRequestMetaCreator, 
             TSuccessMetaCreator, 
             TFailureMetaCreator, 
             TFulfillMetaCreator
-          ])) {
+          ])) extends AnyVal {
       
       inline def setFAILURE(value: TFailureMetaCreator): Self = StObject.set(x, "FAILURE", value.asInstanceOf[js.Any])
       
@@ -185,13 +187,14 @@ object anon {
       ]]
     }
     
-    extension [Self <: Failure[?, ?, ?, ?, ?], TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator](x: Self & (Failure[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Failure[?, ?, ?, ?, ?], TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator] (val x: Self & (Failure[
             TTriggerActionCreator, 
             TRequestActionCreator, 
             TSuccessActionCreator, 
             TFailureActionCreator, 
             TFulfillActionCreator
-          ])) {
+          ])) extends AnyVal {
       
       inline def setFailure(value: TFailureActionCreator): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
       
@@ -225,7 +228,8 @@ object anon {
       __obj.asInstanceOf[keyinRoutineStagesstring]
     }
     
-    extension [Self <: keyinRoutineStagesstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: keyinRoutineStagesstring] (val x: Self) extends AnyVal {
       
       inline def setFAILURE(value: String): Self = StObject.set(x, "FAILURE", value.asInstanceOf[js.Any])
       

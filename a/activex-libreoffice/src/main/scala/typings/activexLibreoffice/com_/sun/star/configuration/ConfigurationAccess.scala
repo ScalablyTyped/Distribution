@@ -246,7 +246,8 @@ object ConfigurationAccess {
     __obj.asInstanceOf[ConfigurationAccess]
   }
   
-  extension [Self <: ConfigurationAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationAccess] (val x: Self) extends AnyVal {
     
     inline def setGetHierarchicalPropertySetInfo(value: () => XHierarchicalPropertySetInfo): Self = StObject.set(x, "getHierarchicalPropertySetInfo", js.Any.fromFunction0(value))
     

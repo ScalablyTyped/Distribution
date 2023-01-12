@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Codomain[T]]
     }
     
-    extension [Self <: Codomain[?], T](x: Self & Codomain[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Codomain[?], T] (val x: Self & Codomain[T]) extends AnyVal {
       
       inline def setCodomain(value: T): Self = StObject.set(x, "codomain", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[DefaultProps]
     }
     
-    extension [Self <: DefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultProps(value: js.Object): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -122,7 +125,8 @@ object anon {
       __obj.asInstanceOf[Identity]
     }
     
-    extension [Self <: Identity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
       
       inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
@@ -149,7 +153,8 @@ object anon {
       __obj.asInstanceOf[IdentityKind[T]]
     }
     
-    extension [Self <: IdentityKind[?], T](x: Self & IdentityKind[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentityKind[?], T] (val x: Self & IdentityKind[T]) extends AnyVal {
       
       inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
@@ -182,7 +187,8 @@ object anon {
       __obj.asInstanceOf[Kind[T]]
     }
     
-    extension [Self <: Kind[?], T](x: Self & Kind[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Kind[?], T] (val x: Self & Kind[T]) extends AnyVal {
       
       inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
@@ -211,7 +217,8 @@ object anon {
       __obj.asInstanceOf[Map]
     }
     
-    extension [Self <: Map](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
       
       inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
@@ -251,7 +258,8 @@ object anon {
       __obj.asInstanceOf[Name[T]]
     }
     
-    extension [Self <: Name[?], T](x: Self & Name[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name[?], T] (val x: Self & Name[T]) extends AnyVal {
       
       inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
@@ -284,7 +292,8 @@ object anon {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
@@ -316,7 +325,8 @@ object anon {
       __obj.asInstanceOf[Type[T]]
     }
     
-    extension [Self <: Type[?], T](x: Self & Type[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type[?], T] (val x: Self & Type[T]) extends AnyVal {
       
       inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
@@ -345,7 +355,8 @@ object anon {
       __obj.asInstanceOf[Types]
     }
     
-    extension [Self <: Types](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Types] (val x: Self) extends AnyVal {
       
       inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       

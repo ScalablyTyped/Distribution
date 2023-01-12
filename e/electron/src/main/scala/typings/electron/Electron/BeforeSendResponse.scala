@@ -21,7 +21,8 @@ object BeforeSendResponse {
     __obj.asInstanceOf[BeforeSendResponse]
   }
   
-  extension [Self <: BeforeSendResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeforeSendResponse] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object PowerFormFormDataEnvelope {
     __obj.asInstanceOf[PowerFormFormDataEnvelope]
   }
   
-  extension [Self <: PowerFormFormDataEnvelope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PowerFormFormDataEnvelope] (val x: Self) extends AnyVal {
     
     inline def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     

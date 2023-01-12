@@ -26,7 +26,8 @@ object AllowResume {
     __obj.asInstanceOf[AllowResume]
   }
   
-  extension [Self <: AllowResume](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowResume] (val x: Self) extends AnyVal {
     
     inline def setAllowResume(value: `true`): Self = StObject.set(x, "allowResume", value.asInstanceOf[js.Any])
     

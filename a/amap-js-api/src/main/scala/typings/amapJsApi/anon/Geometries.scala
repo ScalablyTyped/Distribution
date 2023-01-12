@@ -21,7 +21,8 @@ object Geometries {
     __obj.asInstanceOf[Geometries]
   }
   
-  extension [Self <: Geometries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Geometries] (val x: Self) extends AnyVal {
     
     inline def setGeometries(value: js.Array[typings.amapJsApi.AMap.GeoJSON.Geometry]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     

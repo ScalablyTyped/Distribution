@@ -66,7 +66,8 @@ object distSrcTokenFormatterBuilderMod {
       __obj.asInstanceOf[TokenFormatterBuilder]
     }
     
-    extension [Self <: TokenFormatterBuilder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenFormatterBuilder] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: typings.gherkin.distSrcTokenMod.default => Unit): Self = StObject.set(x, "build", js.Any.fromFunction1(value))
       

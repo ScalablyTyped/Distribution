@@ -26,7 +26,8 @@ object IGridPanel {
     __obj.asInstanceOf[IGridPanel]
   }
   
-  extension [Self <: IGridPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGridPanel] (val x: Self) extends AnyVal {
     
     inline def setReconfigure(value: (/* store */ js.UndefOr[IStore], /* columns */ js.UndefOr[Array]) => Unit): Self = StObject.set(x, "reconfigure", js.Any.fromFunction2(value))
     

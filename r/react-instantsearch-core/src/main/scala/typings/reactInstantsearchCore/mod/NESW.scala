@@ -18,7 +18,8 @@ object NESW {
     __obj.asInstanceOf[NESW]
   }
   
-  extension [Self <: NESW](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NESW] (val x: Self) extends AnyVal {
     
     inline def setNorthEast(value: Lat): Self = StObject.set(x, "northEast", value.asInstanceOf[js.Any])
     

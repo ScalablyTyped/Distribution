@@ -18,7 +18,8 @@ object GetTrailStatusRequest {
     __obj.asInstanceOf[GetTrailStatusRequest]
   }
   
-  extension [Self <: GetTrailStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTrailStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

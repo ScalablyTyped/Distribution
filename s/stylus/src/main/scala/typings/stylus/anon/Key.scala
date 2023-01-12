@@ -40,7 +40,8 @@ object Key {
     __obj.asInstanceOf[Key]
   }
   
-  extension [Self <: Key](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: typings.stylus.mod.Stylus.Nodes.Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

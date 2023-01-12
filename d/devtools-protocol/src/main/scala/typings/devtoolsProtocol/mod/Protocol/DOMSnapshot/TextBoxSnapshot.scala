@@ -41,7 +41,8 @@ object TextBoxSnapshot {
     __obj.asInstanceOf[TextBoxSnapshot]
   }
   
-  extension [Self <: TextBoxSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextBoxSnapshot] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: js.Array[Rectangle]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

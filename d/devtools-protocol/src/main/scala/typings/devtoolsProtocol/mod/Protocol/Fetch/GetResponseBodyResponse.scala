@@ -23,7 +23,8 @@ object GetResponseBodyResponse {
     __obj.asInstanceOf[GetResponseBodyResponse]
   }
   
-  extension [Self <: GetResponseBodyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResponseBodyResponse] (val x: Self) extends AnyVal {
     
     inline def setBase64Encoded(value: Boolean): Self = StObject.set(x, "base64Encoded", value.asInstanceOf[js.Any])
     

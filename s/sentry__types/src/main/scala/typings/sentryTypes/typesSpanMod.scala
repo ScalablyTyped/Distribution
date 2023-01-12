@@ -194,7 +194,8 @@ object typesSpanMod {
       __obj.asInstanceOf[SpanContext]
     }
     
-    extension [Self <: SpanContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanContext] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

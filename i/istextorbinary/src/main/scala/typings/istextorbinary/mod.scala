@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[EncodingOpts]
     }
     
-    extension [Self <: EncodingOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingOpts] (val x: Self) extends AnyVal {
       
       inline def setChunkBegin(value: Double): Self = StObject.set(x, "chunkBegin", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object ResultConfigurationUpdates {
     __obj.asInstanceOf[ResultConfigurationUpdates]
   }
   
-  extension [Self <: ResultConfigurationUpdates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultConfigurationUpdates] (val x: Self) extends AnyVal {
     
     inline def setAclConfiguration(value: AclConfiguration): Self = StObject.set(x, "AclConfiguration", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object PlusWebviewWebviewAnimationOptions {
     __obj.asInstanceOf[PlusWebviewWebviewAnimationOptions]
   }
   
-  extension [Self <: PlusWebviewWebviewAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setAction(value: none | hide | close): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

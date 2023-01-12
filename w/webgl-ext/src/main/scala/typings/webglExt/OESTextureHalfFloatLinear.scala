@@ -15,7 +15,8 @@ object OESTextureHalfFloatLinear {
     __obj.asInstanceOf[OESTextureHalfFloatLinear]
   }
   
-  extension [Self <: OESTextureHalfFloatLinear](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OESTextureHalfFloatLinear] (val x: Self) extends AnyVal {
     
     inline def set__OES_texture_half_float_linear(value: Unit): Self = StObject.set(x, "__OES_texture_half_float_linear", value.asInstanceOf[js.Any])
   }

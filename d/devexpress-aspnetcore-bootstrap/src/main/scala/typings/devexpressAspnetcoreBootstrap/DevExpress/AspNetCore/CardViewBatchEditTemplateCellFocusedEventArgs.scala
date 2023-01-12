@@ -19,7 +19,8 @@ object CardViewBatchEditTemplateCellFocusedEventArgs {
     __obj.asInstanceOf[CardViewBatchEditTemplateCellFocusedEventArgs]
   }
   
-  extension [Self <: CardViewBatchEditTemplateCellFocusedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardViewBatchEditTemplateCellFocusedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: BootstrapCardViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

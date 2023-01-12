@@ -28,7 +28,8 @@ object ServiceCustomizationDefinition {
     __obj.asInstanceOf[ServiceCustomizationDefinition]
   }
   
-  extension [Self <: ServiceCustomizationDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceCustomizationDefinition] (val x: Self) extends AnyVal {
     
     inline def setClient(value: js.Array[CustomizationDefinition]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

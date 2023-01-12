@@ -23,7 +23,8 @@ object SetTerminationProtectionInput {
     __obj.asInstanceOf[SetTerminationProtectionInput]
   }
   
-  extension [Self <: SetTerminationProtectionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetTerminationProtectionInput] (val x: Self) extends AnyVal {
     
     inline def setJobFlowIds(value: XmlStringList): Self = StObject.set(x, "JobFlowIds", value.asInstanceOf[js.Any])
     

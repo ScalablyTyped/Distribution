@@ -24,7 +24,8 @@ object DOMRequest {
     __obj.asInstanceOf[DOMRequest[T]]
   }
   
-  extension [Self <: DOMRequest[?], T](x: Self & DOMRequest[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMRequest[?], T] (val x: Self & DOMRequest[T]) extends AnyVal {
     
     inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

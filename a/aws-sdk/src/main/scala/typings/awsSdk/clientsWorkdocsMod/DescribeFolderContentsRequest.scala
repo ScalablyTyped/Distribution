@@ -53,7 +53,8 @@ object DescribeFolderContentsRequest {
     __obj.asInstanceOf[DescribeFolderContentsRequest]
   }
   
-  extension [Self <: DescribeFolderContentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFolderContentsRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     

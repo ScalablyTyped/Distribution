@@ -33,7 +33,8 @@ object InputAttachment {
     __obj.asInstanceOf[InputAttachment]
   }
   
-  extension [Self <: InputAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputAttachment] (val x: Self) extends AnyVal {
     
     inline def setAutomaticInputFailoverSettings(value: AutomaticInputFailoverSettings): Self = StObject.set(x, "AutomaticInputFailoverSettings", value.asInstanceOf[js.Any])
     

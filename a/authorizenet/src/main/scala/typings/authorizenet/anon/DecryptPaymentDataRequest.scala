@@ -15,7 +15,8 @@ object DecryptPaymentDataRequest {
     __obj.asInstanceOf[DecryptPaymentDataRequest]
   }
   
-  extension [Self <: DecryptPaymentDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecryptPaymentDataRequest] (val x: Self) extends AnyVal {
     
     inline def setDecryptPaymentDataRequest(value: typings.authorizenet.mod.APIContracts.DecryptPaymentDataRequest): Self = StObject.set(x, "decryptPaymentDataRequest", value.asInstanceOf[js.Any])
   }

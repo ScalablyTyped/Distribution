@@ -18,7 +18,8 @@ object CreateContentResponse {
     __obj.asInstanceOf[CreateContentResponse]
   }
   
-  extension [Self <: CreateContentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateContentResponse] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ContentData): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

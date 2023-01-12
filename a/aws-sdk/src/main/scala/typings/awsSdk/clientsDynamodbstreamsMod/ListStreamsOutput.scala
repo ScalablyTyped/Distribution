@@ -23,7 +23,8 @@ object ListStreamsOutput {
     __obj.asInstanceOf[ListStreamsOutput]
   }
   
-  extension [Self <: ListStreamsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStreamsOutput] (val x: Self) extends AnyVal {
     
     inline def setLastEvaluatedStreamArn(value: StreamArn): Self = StObject.set(x, "LastEvaluatedStreamArn", value.asInstanceOf[js.Any])
     

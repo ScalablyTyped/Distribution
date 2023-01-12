@@ -24,7 +24,8 @@ object Installations {
     __obj.asInstanceOf[Installations]
   }
   
-  extension [Self <: Installations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Installations] (val x: Self) extends AnyVal {
     
     inline def setInstallations(
       value: js.Array[

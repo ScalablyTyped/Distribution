@@ -27,7 +27,8 @@ object PDFViewerMessagesToolbarPager {
     __obj.asInstanceOf[PDFViewerMessagesToolbarPager]
   }
   
-  extension [Self <: PDFViewerMessagesToolbarPager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFViewerMessagesToolbarPager] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     

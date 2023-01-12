@@ -18,7 +18,8 @@ object Auth0LockPasswordlessConstructorOptions {
     __obj.asInstanceOf[Auth0LockPasswordlessConstructorOptions]
   }
   
-  extension [Self <: Auth0LockPasswordlessConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0LockPasswordlessConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setPasswordlessMethod(value: String): Self = StObject.set(x, "passwordlessMethod", value.asInstanceOf[js.Any])
     

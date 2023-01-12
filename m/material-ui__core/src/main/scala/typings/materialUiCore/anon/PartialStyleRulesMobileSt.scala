@@ -49,7 +49,8 @@ object PartialStyleRulesMobileSt {
     __obj.asInstanceOf[PartialStyleRulesMobileSt]
   }
   
-  extension [Self <: PartialStyleRulesMobileSt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesMobileSt] (val x: Self) extends AnyVal {
     
     inline def setDot(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

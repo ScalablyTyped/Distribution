@@ -22,7 +22,8 @@ object DontPurgeData {
     __obj.asInstanceOf[DontPurgeData]
   }
   
-  extension [Self <: DontPurgeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DontPurgeData] (val x: Self) extends AnyVal {
     
     inline def setDontPurgeData(value: Boolean): Self = StObject.set(x, "dontPurgeData", value.asInstanceOf[js.Any])
     

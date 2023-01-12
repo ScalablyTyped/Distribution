@@ -284,7 +284,8 @@ object dxTreeViewOptions {
     __obj.asInstanceOf[dxTreeViewOptions[TKey]]
   }
   
-  extension [Self <: dxTreeViewOptions[?], TKey](x: Self & dxTreeViewOptions[TKey]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTreeViewOptions[?], TKey] (val x: Self & dxTreeViewOptions[TKey]) extends AnyVal {
     
     inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
     

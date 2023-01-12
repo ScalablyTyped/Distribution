@@ -333,7 +333,8 @@ object dxTagBoxOptions {
     __obj.asInstanceOf[dxTagBoxOptions]
   }
   
-  extension [Self <: dxTagBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTagBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setAcceptCustomValue(value: Boolean): Self = StObject.set(x, "acceptCustomValue", value.asInstanceOf[js.Any])
     

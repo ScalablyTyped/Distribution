@@ -19,7 +19,8 @@ object UsesPermission {
     __obj.asInstanceOf[UsesPermission]
   }
   
-  extension [Self <: UsesPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsesPermission] (val x: Self) extends AnyVal {
     
     inline def setMaxSdkVersion(value: Double): Self = StObject.set(x, "maxSdkVersion", value.asInstanceOf[js.Any])
     

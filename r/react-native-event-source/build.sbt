@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-event-source"
-version := "1.1-dt-20211202Z-c139be"
+version := "1.1-dt-20211202Z-51e748"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

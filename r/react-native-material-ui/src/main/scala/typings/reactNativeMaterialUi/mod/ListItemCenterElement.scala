@@ -20,7 +20,8 @@ object ListItemCenterElement {
     __obj.asInstanceOf[ListItemCenterElement]
   }
   
-  extension [Self <: ListItemCenterElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListItemCenterElement] (val x: Self) extends AnyVal {
     
     inline def setPrimaryText(value: String | Element): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
     

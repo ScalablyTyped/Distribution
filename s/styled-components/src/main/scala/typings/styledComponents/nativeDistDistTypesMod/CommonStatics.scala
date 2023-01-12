@@ -21,7 +21,8 @@ object CommonStatics {
     __obj.asInstanceOf[CommonStatics[Props]]
   }
   
-  extension [Self <: CommonStatics[?], Props](x: Self & CommonStatics[Props]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonStatics[?], Props] (val x: Self & CommonStatics[Props]) extends AnyVal {
     
     inline def setAttrs(value: js.Array[Attrs[Props]]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

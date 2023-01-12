@@ -22,7 +22,8 @@ object LastKnownModification {
     __obj.asInstanceOf[LastKnownModification]
   }
   
-  extension [Self <: LastKnownModification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastKnownModification] (val x: Self) extends AnyVal {
     
     inline def setLastKnownModification(value: String | Double | js.Date): Self = StObject.set(x, "lastKnownModification", value.asInstanceOf[js.Any])
     

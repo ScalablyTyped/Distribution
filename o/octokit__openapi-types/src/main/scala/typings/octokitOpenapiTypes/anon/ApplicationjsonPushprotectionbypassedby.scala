@@ -17,7 +17,8 @@ object ApplicationjsonPushprotectionbypassedby {
     __obj.asInstanceOf[ApplicationjsonPushprotectionbypassedby]
   }
   
-  extension [Self <: ApplicationjsonPushprotectionbypassedby](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonPushprotectionbypassedby] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Pushprotectionbypassedby): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

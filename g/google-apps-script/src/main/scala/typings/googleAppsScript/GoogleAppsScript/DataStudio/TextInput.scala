@@ -46,7 +46,8 @@ object TextInput {
     __obj.asInstanceOf[TextInput]
   }
   
-  extension [Self <: TextInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInput] (val x: Self) extends AnyVal {
     
     inline def setSetAllowOverride(value: Boolean => TextInput): Self = StObject.set(x, "setAllowOverride", js.Any.fromFunction1(value))
     

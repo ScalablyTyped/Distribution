@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Clone]
     }
     
-    extension [Self <: Clone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clone] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: Any): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       

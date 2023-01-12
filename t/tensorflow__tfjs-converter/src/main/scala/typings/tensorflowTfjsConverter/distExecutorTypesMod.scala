@@ -27,7 +27,8 @@ object distExecutorTypesMod {
       __obj.asInstanceOf[FunctionExecutor]
     }
     
-    extension [Self <: FunctionExecutor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionExecutor] (val x: Self) extends AnyVal {
       
       inline def setExecuteFunctionAsync(
         value: (js.Array[Tensor[Rank]], TensorArrayMap, TensorListMap) => js.Promise[js.Array[Tensor[Rank]]]

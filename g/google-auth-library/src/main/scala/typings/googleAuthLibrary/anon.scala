@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[AccessBoundaryRules]
     }
     
-    extension [Self <: AccessBoundaryRules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessBoundaryRules] (val x: Self) extends AnyVal {
       
       inline def setAccessBoundaryRules(value: js.Array[AccessBoundaryRule]): Self = StObject.set(x, "accessBoundaryRules", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[ActorToken]
     }
     
-    extension [Self <: ActorToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActorToken] (val x: Self) extends AnyVal {
       
       inline def setActorToken(value: String): Self = StObject.set(x, "actorToken", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object anon {
       __obj.asInstanceOf[Command]
     }
     
-    extension [Self <: Command](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -117,7 +120,8 @@ object anon {
       __obj.asInstanceOf[Envelope]
     }
     
-    extension [Self <: Envelope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {
       
       inline def setEnvelope(value: String): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
       
@@ -148,7 +152,8 @@ object anon {
       __obj.asInstanceOf[Environmentid]
     }
     
-    extension [Self <: Environmentid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Environmentid] (val x: Self) extends AnyVal {
       
       inline def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
       
@@ -179,7 +184,8 @@ object anon {
       __obj.asInstanceOf[Executable]
     }
     
-    extension [Self <: Executable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Executable] (val x: Self) extends AnyVal {
       
       inline def setExecutable(value: Command): Self = StObject.set(x, "executable", value.asInstanceOf[js.Any])
     }
@@ -202,7 +208,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -237,7 +244,8 @@ object anon {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: typings.googleAuthLibrary.buildSrcAuthOauth2clientMod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -266,7 +274,8 @@ object anon {
       __obj.asInstanceOf[Res]
     }
     
-    extension [Self <: Res](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Res] (val x: Self) extends AnyVal {
       
       inline def setRes(value: GaxiosResponse[Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
@@ -296,7 +305,8 @@ object anon {
       __obj.asInstanceOf[Subjecttokenfieldname]
     }
     
-    extension [Self <: Subjecttokenfieldname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subjecttokenfieldname] (val x: Self) extends AnyVal {
       
       inline def setSubject_token_field_name(value: String): Self = StObject.set(x, "subject_token_field_name", value.asInstanceOf[js.Any])
       
@@ -317,7 +327,8 @@ object anon {
       __obj.asInstanceOf[Tokenlifetimeseconds]
     }
     
-    extension [Self <: Tokenlifetimeseconds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tokenlifetimeseconds] (val x: Self) extends AnyVal {
       
       inline def setToken_lifetime_seconds(value: Double): Self = StObject.set(x, "token_lifetime_seconds", value.asInstanceOf[js.Any])
       
@@ -351,7 +362,8 @@ object anon {
       __obj.asInstanceOf[Xgoogiamauthorityselector]
     }
     
-    extension [Self <: Xgoogiamauthorityselector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Xgoogiamauthorityselector] (val x: Self) extends AnyVal {
       
       inline def `setX-goog-iam-authority-selector`(value: String): Self = StObject.set(x, "x-goog-iam-authority-selector", value.asInstanceOf[js.Any])
       

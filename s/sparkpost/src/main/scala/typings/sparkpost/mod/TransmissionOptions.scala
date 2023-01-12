@@ -37,7 +37,8 @@ object TransmissionOptions {
     __obj.asInstanceOf[TransmissionOptions]
   }
   
-  extension [Self <: TransmissionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransmissionOptions] (val x: Self) extends AnyVal {
     
     inline def setClick_tracking(value: Boolean): Self = StObject.set(x, "click_tracking", value.asInstanceOf[js.Any])
     

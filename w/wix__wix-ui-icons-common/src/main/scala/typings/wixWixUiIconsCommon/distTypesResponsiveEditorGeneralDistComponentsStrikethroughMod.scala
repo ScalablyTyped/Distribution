@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsStrikethroughMod extends Sh
       __obj.asInstanceOf[StrikethroughProps]
     }
     
-    extension [Self <: StrikethroughProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrikethroughProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

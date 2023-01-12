@@ -23,7 +23,8 @@ object DBInstanceMessage {
     __obj.asInstanceOf[DBInstanceMessage]
   }
   
-  extension [Self <: DBInstanceMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBInstanceMessage] (val x: Self) extends AnyVal {
     
     inline def setDBInstances(value: DBInstanceList): Self = StObject.set(x, "DBInstances", value.asInstanceOf[js.Any])
     

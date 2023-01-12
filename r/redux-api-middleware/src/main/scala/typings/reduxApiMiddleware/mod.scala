@@ -145,7 +145,8 @@ object mod {
       __obj.asInstanceOf[CreateMiddlewareOptions]
     }
     
-    extension [Self <: CreateMiddlewareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateMiddlewareOptions] (val x: Self) extends AnyVal {
       
       inline def setFetch(value: FnCall): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object mod {
       __obj.asInstanceOf[InvalidAction[Payload]]
     }
     
-    extension [Self <: InvalidAction[?], Payload](x: Self & InvalidAction[Payload]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidAction[?], Payload] (val x: Self & InvalidAction[Payload]) extends AnyVal {
       
       inline def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -230,7 +232,8 @@ object mod {
       __obj.asInstanceOf[RSAACall[State, Payload, Meta]]
     }
     
-    extension [Self <: RSAACall[?, ?, ?], State, Payload, Meta](x: Self & (RSAACall[State, Payload, Meta])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RSAACall[?, ?, ?], State, Payload, Meta] (val x: Self & (RSAACall[State, Payload, Meta])) extends AnyVal {
       
       inline def setBailout(value: TypeOrResolver[State, Boolean]): Self = StObject.set(x, "bailout", value.asInstanceOf[js.Any])
       
@@ -322,7 +325,8 @@ object mod {
       __obj.asInstanceOf[RSAAFailureTypeDescriptor[State, Payload, Meta]]
     }
     
-    extension [Self <: RSAAFailureTypeDescriptor[?, ?, ?], State, Payload, Meta](x: Self & (RSAAFailureTypeDescriptor[State, Payload, Meta])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RSAAFailureTypeDescriptor[?, ?, ?], State, Payload, Meta] (val x: Self & (RSAAFailureTypeDescriptor[State, Payload, Meta])) extends AnyVal {
       
       inline def setMeta(
         value: (js.Function3[
@@ -386,7 +390,8 @@ object mod {
       __obj.asInstanceOf[RSAARequestTypeDescriptor[State, Payload, Meta]]
     }
     
-    extension [Self <: RSAARequestTypeDescriptor[?, ?, ?], State, Payload, Meta](x: Self & (RSAARequestTypeDescriptor[State, Payload, Meta])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RSAARequestTypeDescriptor[?, ?, ?], State, Payload, Meta] (val x: Self & (RSAARequestTypeDescriptor[State, Payload, Meta])) extends AnyVal {
       
       inline def setMeta(
         value: (js.Function2[/* action */ RSAAAction[Any, Any, Any], /* state */ State, Meta | js.Promise[Meta]]) | Meta
@@ -450,7 +455,8 @@ object mod {
       __obj.asInstanceOf[RSAASuccessTypeDescriptor[State, Payload, Meta]]
     }
     
-    extension [Self <: RSAASuccessTypeDescriptor[?, ?, ?], State, Payload, Meta](x: Self & (RSAASuccessTypeDescriptor[State, Payload, Meta])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RSAASuccessTypeDescriptor[?, ?, ?], State, Payload, Meta] (val x: Self & (RSAASuccessTypeDescriptor[State, Payload, Meta])) extends AnyVal {
       
       inline def setMeta(
         value: (js.Function3[

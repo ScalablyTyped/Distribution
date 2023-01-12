@@ -17,7 +17,8 @@ object ChartSeriesItemExtremesBorder {
     __obj.asInstanceOf[ChartSeriesItemExtremesBorder]
   }
   
-  extension [Self <: ChartSeriesItemExtremesBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartSeriesItemExtremesBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String | js.Function): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

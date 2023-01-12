@@ -45,7 +45,8 @@ object NavigateToItem {
     __obj.asInstanceOf[NavigateToItem]
   }
   
-  extension [Self <: NavigateToItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigateToItem] (val x: Self) extends AnyVal {
     
     inline def setContainerKind(value: ScriptElementKind): Self = StObject.set(x, "containerKind", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object ConfigurableUIElement {
     __obj.asInstanceOf[ConfigurableUIElement]
   }
   
-  extension [Self <: ConfigurableUIElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurableUIElement] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSource(value: XUIConfigurationManager): Self = StObject.set(x, "ConfigurationSource", value.asInstanceOf[js.Any])
     

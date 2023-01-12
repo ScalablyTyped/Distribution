@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3LookupEnvironmentHistoryResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3LookupEnvironmentHistoryResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3LookupEnvironmentHistoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3LookupEnvironmentHistoryResponse] (val x: Self) extends AnyVal {
     
     inline def setEnvironments(value: js.Array[GoogleCloudDialogflowCxV3Environment]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object SlowMo {
     __obj.asInstanceOf[SlowMo]
   }
   
-  extension [Self <: SlowMo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlowMo] (val x: Self) extends AnyVal {
     
     inline def setPreferredRevision(value: String): Self = StObject.set(x, "preferredRevision", value.asInstanceOf[js.Any])
     

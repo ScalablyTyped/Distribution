@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3EntityTypeExcludedPhrase {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3EntityTypeExcludedPhrase]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3EntityTypeExcludedPhrase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3EntityTypeExcludedPhrase] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

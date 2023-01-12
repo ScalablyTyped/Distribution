@@ -92,7 +92,8 @@ object ShapeOverlay {
       __obj.asInstanceOf[EventMap[I]]
     }
     
-    extension [Self <: EventMap[?], I](x: Self & EventMap[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
       
       inline def setChange(value: Event_[change, TargetI[I]]): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object ShapeOverlay {
       __obj.asInstanceOf[GetOptionsResult[ExtraData]]
     }
     
-    extension [Self <: GetOptionsResult[?], ExtraData](x: Self & GetOptionsResult[ExtraData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOptionsResult[?], ExtraData] (val x: Self & GetOptionsResult[ExtraData]) extends AnyVal {
       
       inline def setBubble(value: Boolean): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
       

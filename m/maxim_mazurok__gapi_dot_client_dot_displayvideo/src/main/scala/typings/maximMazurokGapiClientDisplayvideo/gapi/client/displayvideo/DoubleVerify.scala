@@ -37,7 +37,8 @@ object DoubleVerify {
     __obj.asInstanceOf[DoubleVerify]
   }
   
-  extension [Self <: DoubleVerify](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoubleVerify] (val x: Self) extends AnyVal {
     
     inline def setAppStarRating(value: DoubleVerifyAppStarRating): Self = StObject.set(x, "appStarRating", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object AllowByDefault {
     __obj.asInstanceOf[AllowByDefault]
   }
   
-  extension [Self <: AllowByDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowByDefault] (val x: Self) extends AnyVal {
     
     inline def setDisallowedRegions(value: js.Array[String]): Self = StObject.set(x, "disallowedRegions", value.asInstanceOf[js.Any])
     

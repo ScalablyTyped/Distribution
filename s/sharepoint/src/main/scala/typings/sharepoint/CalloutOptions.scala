@@ -71,7 +71,8 @@ object CalloutOptions {
     __obj.asInstanceOf[CalloutOptions]
   }
   
-  extension [Self <: CalloutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalloutOptions] (val x: Self) extends AnyVal {
     
     inline def setBeakOrientation(value: String): Self = StObject.set(x, "beakOrientation", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[PartialSlow]
     }
     
-    extension [Self <: PartialSlow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSlow] (val x: Self) extends AnyVal {
       
       inline def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object ImageVersion {
     __obj.asInstanceOf[ImageVersion]
   }
   
-  extension [Self <: ImageVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageVersion] (val x: Self) extends AnyVal {
     
     inline def setCreationDisabled(value: Boolean): Self = StObject.set(x, "creationDisabled", value.asInstanceOf[js.Any])
     

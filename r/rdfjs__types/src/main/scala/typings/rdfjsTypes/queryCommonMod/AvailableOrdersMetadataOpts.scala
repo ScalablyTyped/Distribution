@@ -16,7 +16,8 @@ object AvailableOrdersMetadataOpts {
     __obj.asInstanceOf[AvailableOrdersMetadataOpts]
   }
   
-  extension [Self <: AvailableOrdersMetadataOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvailableOrdersMetadataOpts] (val x: Self) extends AnyVal {
     
     inline def setAvailableOrders(value: `true`): Self = StObject.set(x, "availableOrders", value.asInstanceOf[js.Any])
   }

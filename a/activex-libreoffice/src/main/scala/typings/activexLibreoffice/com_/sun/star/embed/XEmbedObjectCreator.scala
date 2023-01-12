@@ -92,7 +92,8 @@ object XEmbedObjectCreator {
     __obj.asInstanceOf[XEmbedObjectCreator]
   }
   
-  extension [Self <: XEmbedObjectCreator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEmbedObjectCreator] (val x: Self) extends AnyVal {
     
     inline def setCreateInstanceInitFromEntry(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface): Self = StObject.set(x, "createInstanceInitFromEntry", js.Any.fromFunction4(value))
     

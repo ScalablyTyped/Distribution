@@ -22,7 +22,8 @@ object BindingCalledEvent {
     __obj.asInstanceOf[BindingCalledEvent]
   }
   
-  extension [Self <: BindingCalledEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingCalledEvent] (val x: Self) extends AnyVal {
     
     inline def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ServiceClientOptions {
     __obj.asInstanceOf[ServiceClientOptions]
   }
   
-  extension [Self <: ServiceClientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceClientOptions] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[Any]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object AwsJobAbortConfig {
     __obj.asInstanceOf[AwsJobAbortConfig]
   }
   
-  extension [Self <: AwsJobAbortConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsJobAbortConfig] (val x: Self) extends AnyVal {
     
     inline def setAbortCriteriaList(value: AwsJobAbortCriteriaList): Self = StObject.set(x, "abortCriteriaList", value.asInstanceOf[js.Any])
     

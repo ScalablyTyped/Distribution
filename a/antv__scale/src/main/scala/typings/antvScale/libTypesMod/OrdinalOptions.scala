@@ -25,7 +25,8 @@ object OrdinalOptions {
     __obj.asInstanceOf[OrdinalOptions]
   }
   
-  extension [Self <: OrdinalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrdinalOptions] (val x: Self) extends AnyVal {
     
     inline def setCompare(value: (/* a */ Any, /* b */ Any) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     

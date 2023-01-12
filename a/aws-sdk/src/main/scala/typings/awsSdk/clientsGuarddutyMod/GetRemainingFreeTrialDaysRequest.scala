@@ -23,7 +23,8 @@ object GetRemainingFreeTrialDaysRequest {
     __obj.asInstanceOf[GetRemainingFreeTrialDaysRequest]
   }
   
-  extension [Self <: GetRemainingFreeTrialDaysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRemainingFreeTrialDaysRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     

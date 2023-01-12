@@ -99,7 +99,8 @@ object MediaControllerPlaybackInfo {
     __obj.asInstanceOf[MediaControllerPlaybackInfo]
   }
   
-  extension [Self <: MediaControllerPlaybackInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaControllerPlaybackInfo] (val x: Self) extends AnyVal {
     
     inline def setAgeRating(value: MediaControllerContentAgeRating): Self = StObject.set(x, "ageRating", value.asInstanceOf[js.Any])
     

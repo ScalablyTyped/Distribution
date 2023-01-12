@@ -94,7 +94,8 @@ object PrinterCapabilities {
     __obj.asInstanceOf[PrinterCapabilities]
   }
   
-  extension [Self <: PrinterCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterCapabilities] (val x: Self) extends AnyVal {
     
     inline def setBottomMargins(value: NullableOption[js.Array[Double]]): Self = StObject.set(x, "bottomMargins", value.asInstanceOf[js.Any])
     

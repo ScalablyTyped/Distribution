@@ -18,7 +18,8 @@ object TreeViewExpansionEvent {
     __obj.asInstanceOf[TreeViewExpansionEvent[T]]
   }
   
-  extension [Self <: TreeViewExpansionEvent[?], T](x: Self & TreeViewExpansionEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeViewExpansionEvent[?], T] (val x: Self & TreeViewExpansionEvent[T]) extends AnyVal {
     
     inline def setElement(value: T): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
   }

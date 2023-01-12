@@ -19,7 +19,8 @@ object AND {
     __obj.asInstanceOf[AND]
   }
   
-  extension [Self <: AND](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AND] (val x: Self) extends AnyVal {
     
     inline def setAND(value: scala.Double): Self = StObject.set(x, "aND", value.asInstanceOf[js.Any])
     

@@ -1046,7 +1046,8 @@ object IgShapeChart {
     __obj.asInstanceOf[IgShapeChart]
   }
   
-  extension [Self <: IgShapeChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgShapeChart] (val x: Self) extends AnyVal {
     
     inline def setAlignsGridLinesToPixels(value: Boolean): Self = StObject.set(x, "alignsGridLinesToPixels", value.asInstanceOf[js.Any])
     

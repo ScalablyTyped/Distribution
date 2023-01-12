@@ -36,7 +36,8 @@ object JoinResponse {
     __obj.asInstanceOf[JoinResponse]
   }
   
-  extension [Self <: JoinResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinResponse] (val x: Self) extends AnyVal {
     
     inline def setChallenge(value: String): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object UpdateThemeData {
     __obj.asInstanceOf[UpdateThemeData]
   }
   
-  extension [Self <: UpdateThemeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateThemeData] (val x: Self) extends AnyVal {
     
     inline def setId(value: Uuid): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

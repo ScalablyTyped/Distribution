@@ -23,7 +23,8 @@ object TypeofSubscription {
     __obj.asInstanceOf[TypeofSubscription]
   }
   
-  extension [Self <: TypeofSubscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSubscription] (val x: Self) extends AnyVal {
     
     inline def setPauseCollection(value: Any): Self = StObject.set(x, "PauseCollection", value.asInstanceOf[js.Any])
     

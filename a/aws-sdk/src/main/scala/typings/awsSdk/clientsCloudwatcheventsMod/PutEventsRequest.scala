@@ -18,7 +18,8 @@ object PutEventsRequest {
     __obj.asInstanceOf[PutEventsRequest]
   }
   
-  extension [Self <: PutEventsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutEventsRequest] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: PutEventsRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     

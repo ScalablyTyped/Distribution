@@ -22,7 +22,8 @@ object INativeCamera {
     __obj.asInstanceOf[INativeCamera]
   }
   
-  extension [Self <: INativeCamera](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INativeCamera] (val x: Self) extends AnyVal {
     
     inline def setCreateVideo(value: MediaTrackConstraints => Any): Self = StObject.set(x, "createVideo", js.Any.fromFunction1(value))
     

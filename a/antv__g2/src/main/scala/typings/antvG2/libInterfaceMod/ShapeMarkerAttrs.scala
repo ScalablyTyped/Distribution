@@ -91,7 +91,8 @@ object ShapeMarkerAttrs {
     __obj.asInstanceOf[ShapeMarkerAttrs]
   }
   
-  extension [Self <: ShapeMarkerAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeMarkerAttrs] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

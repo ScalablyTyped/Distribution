@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsCancelOrderMod extends Shortcut {
       __obj.asInstanceOf[CancelOrderProps]
     }
     
-    extension [Self <: CancelOrderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CancelOrderProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

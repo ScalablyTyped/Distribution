@@ -23,7 +23,8 @@ object ListTargetsForSecurityProfileResponse {
     __obj.asInstanceOf[ListTargetsForSecurityProfileResponse]
   }
   
-  extension [Self <: ListTargetsForSecurityProfileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTargetsForSecurityProfileResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

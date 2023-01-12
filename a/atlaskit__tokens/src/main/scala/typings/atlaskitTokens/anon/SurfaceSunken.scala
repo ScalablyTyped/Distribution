@@ -15,7 +15,8 @@ object SurfaceSunken {
     __obj.asInstanceOf[SurfaceSunken]
   }
   
-  extension [Self <: SurfaceSunken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurfaceSunken] (val x: Self) extends AnyVal {
     
     inline def setSurface(value: Sunken): Self = StObject.set(x, "surface", value.asInstanceOf[js.Any])
   }

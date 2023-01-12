@@ -28,7 +28,8 @@ object ListImportJobsRequest {
     __obj.asInstanceOf[ListImportJobsRequest]
   }
   
-  extension [Self <: ListImportJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListImportJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setImportDestinationType(value: ImportDestinationType): Self = StObject.set(x, "ImportDestinationType", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object SmsConfigurationType {
     __obj.asInstanceOf[SmsConfigurationType]
   }
   
-  extension [Self <: SmsConfigurationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmsConfigurationType] (val x: Self) extends AnyVal {
     
     inline def setExternalId(value: StringType): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
     

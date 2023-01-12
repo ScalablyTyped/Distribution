@@ -53,7 +53,8 @@ object Table {
     __obj.asInstanceOf[Table]
   }
   
-  extension [Self <: Table](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetPhoneNumberOrderRequest {
     __obj.asInstanceOf[GetPhoneNumberOrderRequest]
   }
   
-  extension [Self <: GetPhoneNumberOrderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPhoneNumberOrderRequest] (val x: Self) extends AnyVal {
     
     inline def setPhoneNumberOrderId(value: GuidString): Self = StObject.set(x, "PhoneNumberOrderId", value.asInstanceOf[js.Any])
   }

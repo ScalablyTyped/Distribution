@@ -28,7 +28,8 @@ object StatefulHost {
     __obj.asInstanceOf[StatefulHost]
   }
   
-  extension [Self <: StatefulHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatefulHost] (val x: Self) extends AnyVal {
     
     inline def setLastUpdate(value: Double): Self = StObject.set(x, "lastUpdate", value.asInstanceOf[js.Any])
     

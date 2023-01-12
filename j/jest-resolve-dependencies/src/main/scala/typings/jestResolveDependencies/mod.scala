@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[ResolvedModule]
     }
     
-    extension [Self <: ResolvedModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedModule] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       

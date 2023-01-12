@@ -50,7 +50,8 @@ object StripeStatic {
     __obj.asInstanceOf[StripeStatic]
   }
   
-  extension [Self <: StripeStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StripeStatic] (val x: Self) extends AnyVal {
     
     inline def setApplePay(value: StripeApplePay): Self = StObject.set(x, "applePay", value.asInstanceOf[js.Any])
     

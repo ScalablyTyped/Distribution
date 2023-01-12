@@ -78,7 +78,8 @@ object Component {
     __obj.asInstanceOf[Component[Attrs, State]]
   }
   
-  extension [Self <: Component[?, ?], Attrs, State](x: Self & (Component[Attrs, State])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Component[?, ?], Attrs, State] (val x: Self & (Component[Attrs, State])) extends AnyVal {
     
     inline def setOnbeforeremove(
       value: js.ThisFunction1[

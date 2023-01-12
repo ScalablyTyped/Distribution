@@ -533,7 +533,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -619,7 +620,8 @@ object anon {
       __obj.asInstanceOf[PartialRaphaelAttributes]
     }
     
-    extension [Self <: PartialRaphaelAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRaphaelAttributes] (val x: Self) extends AnyVal {
       
       inline def `setArrow-end`(value: String): Self = StObject.set(x, "arrow-end", value.asInstanceOf[js.Any])
       
@@ -797,7 +799,8 @@ object anon {
       __obj.asInstanceOf[PartialRaphaelFontFace]
     }
     
-    extension [Self <: PartialRaphaelFontFace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRaphaelFontFace] (val x: Self) extends AnyVal {
       
       inline def setAscent(value: Double | String): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
       
@@ -867,7 +870,8 @@ object anon {
       __obj.asInstanceOf[PartialRaphaelFontGlyph]
     }
     
-    extension [Self <: PartialRaphaelFontGlyph](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRaphaelFontGlyph] (val x: Self) extends AnyVal {
       
       inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
@@ -901,7 +905,8 @@ object anon {
       __obj.asInstanceOf[PartialRaphaelGlowSetting]
     }
     
-    extension [Self <: PartialRaphaelGlowSetting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRaphaelGlowSetting] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -975,7 +980,8 @@ object anon {
       __obj.asInstanceOf[RaphaelPotentialFailureRa]
     }
     
-    extension [Self <: RaphaelPotentialFailureRa](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RaphaelPotentialFailureRa] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -1025,7 +1031,8 @@ object anon {
       __obj.asInstanceOf[RaphaelPotentialFailureRaB]
     }
     
-    extension [Self <: RaphaelPotentialFailureRaB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RaphaelPotentialFailureRaB] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       

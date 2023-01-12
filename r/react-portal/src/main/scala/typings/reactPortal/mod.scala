@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[PortalProps]
     }
     
-    extension [Self <: PortalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object mod {
       __obj.asInstanceOf[PortalWithStateProps]
     }
     
-    extension [Self <: PortalWithStateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalWithStateProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: PortalFunctionParams => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

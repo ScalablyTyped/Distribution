@@ -30,7 +30,8 @@ object ResetSizeEvent {
     __obj.asInstanceOf[ResetSizeEvent]
   }
   
-  extension [Self <: ResetSizeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetSizeEvent] (val x: Self) extends AnyVal {
     
     inline def setContentBounds(value: Rect): Self = StObject.set(x, "contentBounds", value.asInstanceOf[js.Any])
     

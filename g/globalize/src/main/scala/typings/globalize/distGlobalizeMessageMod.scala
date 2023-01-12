@@ -85,7 +85,8 @@ object distGlobalizeMessageMod extends Shortcut {
         __obj.asInstanceOf[typings.globalize.distGlobalizeMessageMod.globalizeDistGlobalizeAugmentingMod.Static]
       }
       
-      extension [Self <: typings.globalize.distGlobalizeMessageMod.globalizeDistGlobalizeAugmentingMod.Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.globalize.distGlobalizeMessageMod.globalizeDistGlobalizeAugmentingMod.Static] (val x: Self) extends AnyVal {
         
         inline def setLoadMessages(value: js.Object => Unit): Self = StObject.set(x, "loadMessages", js.Any.fromFunction1(value))
       }

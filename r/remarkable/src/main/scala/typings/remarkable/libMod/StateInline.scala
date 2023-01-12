@@ -70,7 +70,8 @@ object StateInline {
     __obj.asInstanceOf[StateInline]
   }
   
-  extension [Self <: StateInline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateInline] (val x: Self) extends AnyVal {
     
     inline def setEnv(value: Env): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object InforNexusConnectorProfileProperties {
     __obj.asInstanceOf[InforNexusConnectorProfileProperties]
   }
   
-  extension [Self <: InforNexusConnectorProfileProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InforNexusConnectorProfileProperties] (val x: Self) extends AnyVal {
     
     inline def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
   }

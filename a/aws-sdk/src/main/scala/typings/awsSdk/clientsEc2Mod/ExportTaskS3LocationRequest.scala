@@ -23,7 +23,8 @@ object ExportTaskS3LocationRequest {
     __obj.asInstanceOf[ExportTaskS3LocationRequest]
   }
   
-  extension [Self <: ExportTaskS3LocationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportTaskS3LocationRequest] (val x: Self) extends AnyVal {
     
     inline def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object libCredentialsEc2MetadataCredentialsMod {
       __obj.asInstanceOf[EC2MetadataCredentialsOptions]
     }
     
-    extension [Self <: EC2MetadataCredentialsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EC2MetadataCredentialsOptions] (val x: Self) extends AnyVal {
       
       inline def setHttpOptions(value: ConnectTimeout): Self = StObject.set(x, "httpOptions", value.asInstanceOf[js.Any])
       

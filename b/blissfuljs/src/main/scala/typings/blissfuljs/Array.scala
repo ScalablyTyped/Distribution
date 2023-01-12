@@ -19,7 +19,8 @@ object Array {
     __obj.asInstanceOf[Array[T]]
   }
   
-  extension [Self <: Array[?], T](x: Self & Array[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Array[?], T] (val x: Self & Array[T]) extends AnyVal {
     
     inline def set_underscore(value: BlissBindedArray[T] & BlissCollectionArray[T]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
   }

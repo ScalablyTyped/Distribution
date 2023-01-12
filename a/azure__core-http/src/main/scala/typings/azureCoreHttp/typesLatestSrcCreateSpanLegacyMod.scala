@@ -41,7 +41,8 @@ object typesLatestSrcCreateSpanLegacyMod {
       __obj.asInstanceOf[SpanConfig]
     }
     
-    extension [Self <: SpanConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanConfig] (val x: Self) extends AnyVal {
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       

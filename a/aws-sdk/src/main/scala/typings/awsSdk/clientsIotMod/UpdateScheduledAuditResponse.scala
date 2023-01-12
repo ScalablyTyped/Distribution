@@ -18,7 +18,8 @@ object UpdateScheduledAuditResponse {
     __obj.asInstanceOf[UpdateScheduledAuditResponse]
   }
   
-  extension [Self <: UpdateScheduledAuditResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateScheduledAuditResponse] (val x: Self) extends AnyVal {
     
     inline def setScheduledAuditArn(value: ScheduledAuditArn): Self = StObject.set(x, "scheduledAuditArn", value.asInstanceOf[js.Any])
     

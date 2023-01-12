@@ -60,7 +60,8 @@ object libRouterRouteSetMod {
       __obj.asInstanceOf[RouteSet]
     }
     
-    extension [Self <: RouteSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteSet] (val x: Self) extends AnyVal {
       
       inline def setAssign(value: typings.nginstackEngine.libRouterRouteSetDefMod.^ => Unit): Self = StObject.set(x, "assign", js.Any.fromFunction1(value))
       

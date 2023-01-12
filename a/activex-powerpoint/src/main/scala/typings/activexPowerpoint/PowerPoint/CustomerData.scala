@@ -38,7 +38,8 @@ object CustomerData {
     __obj.asInstanceOf[CustomerData]
   }
   
-  extension [Self <: CustomerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerData] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: () => CustomXMLPart): Self = StObject.set(x, "Add", js.Any.fromFunction0(value))
     

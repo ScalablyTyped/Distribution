@@ -29,7 +29,8 @@ object FindInPageOptions {
     __obj.asInstanceOf[FindInPageOptions]
   }
   
-  extension [Self <: FindInPageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindInPageOptions] (val x: Self) extends AnyVal {
     
     inline def setFindNext(value: Boolean): Self = StObject.set(x, "findNext", value.asInstanceOf[js.Any])
     

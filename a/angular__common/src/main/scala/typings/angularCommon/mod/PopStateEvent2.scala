@@ -22,7 +22,8 @@ object PopStateEvent2 {
     __obj.asInstanceOf[PopStateEvent2]
   }
   
-  extension [Self <: PopStateEvent2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopStateEvent2] (val x: Self) extends AnyVal {
     
     inline def setPop(value: Boolean): Self = StObject.set(x, "pop", value.asInstanceOf[js.Any])
     

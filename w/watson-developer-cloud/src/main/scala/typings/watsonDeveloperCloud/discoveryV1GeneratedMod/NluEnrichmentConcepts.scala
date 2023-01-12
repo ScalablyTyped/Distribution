@@ -17,7 +17,8 @@ object NluEnrichmentConcepts {
     __obj.asInstanceOf[NluEnrichmentConcepts]
   }
   
-  extension [Self <: NluEnrichmentConcepts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NluEnrichmentConcepts] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

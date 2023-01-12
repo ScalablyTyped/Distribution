@@ -216,7 +216,8 @@ object mod {
       __obj.asInstanceOf[BoxKnownProps]
     }
     
-    extension [Self <: BoxKnownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxKnownProps] (val x: Self) extends AnyVal {
       
       inline def setTx(value: String): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
       
@@ -924,7 +925,8 @@ object mod {
       __obj.asInstanceOf[CheckboxProps]
     }
     
-    extension [Self <: CheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2870,7 +2872,8 @@ object mod {
       __obj.asInstanceOf[InputProps]
     }
     
-    extension [Self <: InputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -4812,7 +4815,8 @@ object mod {
       __obj.asInstanceOf[LabelProps]
     }
     
-    extension [Self <: LabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -6682,7 +6686,8 @@ object mod {
       __obj.asInstanceOf[RadioProps]
     }
     
-    extension [Self <: RadioProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -8586,7 +8591,8 @@ object mod {
       __obj.asInstanceOf[SelectProps]
     }
     
-    extension [Self <: SelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -10448,7 +10454,8 @@ object mod {
       __obj.asInstanceOf[SliderProps]
     }
     
-    extension [Self <: SliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -12360,7 +12367,8 @@ object mod {
       __obj.asInstanceOf[SwitchProps]
     }
     
-    extension [Self <: SwitchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -14208,7 +14216,8 @@ object mod {
       __obj.asInstanceOf[TextareaProps]
     }
     
-    extension [Self <: TextareaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextareaProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

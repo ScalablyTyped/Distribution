@@ -50,7 +50,8 @@ object HTMLStyleSheetRule {
     __obj.asInstanceOf[HTMLStyleSheetRule]
   }
   
-  extension [Self <: HTMLStyleSheetRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLStyleSheetRule] (val x: Self) extends AnyVal {
     
     inline def setConstructor(value: Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     

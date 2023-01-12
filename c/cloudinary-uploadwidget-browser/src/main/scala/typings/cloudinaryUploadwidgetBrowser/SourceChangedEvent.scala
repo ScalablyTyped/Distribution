@@ -20,7 +20,8 @@ object SourceChangedEvent {
     __obj.asInstanceOf[SourceChangedEvent]
   }
   
-  extension [Self <: SourceChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: `source-changed`): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

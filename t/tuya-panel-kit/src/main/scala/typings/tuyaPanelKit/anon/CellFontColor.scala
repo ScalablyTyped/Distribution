@@ -15,7 +15,8 @@ object CellFontColor {
     __obj.asInstanceOf[CellFontColor]
   }
   
-  extension [Self <: CellFontColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellFontColor] (val x: Self) extends AnyVal {
     
     inline def setCellFontColor(value: String): Self = StObject.set(x, "cellFontColor", value.asInstanceOf[js.Any])
     

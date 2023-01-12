@@ -19,7 +19,8 @@ object ConfigPageGroup {
     __obj.asInstanceOf[ConfigPageGroup]
   }
   
-  extension [Self <: ConfigPageGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigPageGroup] (val x: Self) extends AnyVal {
     
     inline def setPages(value: js.Array[ConfigPage]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeEC2InstanceLimitsOutput {
     __obj.asInstanceOf[DescribeEC2InstanceLimitsOutput]
   }
   
-  extension [Self <: DescribeEC2InstanceLimitsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEC2InstanceLimitsOutput] (val x: Self) extends AnyVal {
     
     inline def setEC2InstanceLimits(value: EC2InstanceLimitList): Self = StObject.set(x, "EC2InstanceLimits", value.asInstanceOf[js.Any])
     

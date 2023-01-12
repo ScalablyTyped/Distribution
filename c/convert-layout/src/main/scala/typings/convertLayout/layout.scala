@@ -17,7 +17,8 @@ object layout {
     __obj.asInstanceOf[layout]
   }
   
-  extension [Self <: layout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: layout] (val x: Self) extends AnyVal {
     
     inline def setFromEn(value: String => String): Self = StObject.set(x, "fromEn", js.Any.fromFunction1(value))
     

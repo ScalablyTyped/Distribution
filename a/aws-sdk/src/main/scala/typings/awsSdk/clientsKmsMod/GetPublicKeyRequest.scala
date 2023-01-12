@@ -23,7 +23,8 @@ object GetPublicKeyRequest {
     __obj.asInstanceOf[GetPublicKeyRequest]
   }
   
-  extension [Self <: GetPublicKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPublicKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setGrantTokens(value: GrantTokenList): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
     

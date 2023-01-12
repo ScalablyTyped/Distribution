@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Appid]
     }
     
-    extension [Self <: Appid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Appid] (val x: Self) extends AnyVal {
       
       inline def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[CosBucket]
     }
     
-    extension [Self <: CosBucket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CosBucket] (val x: Self) extends AnyVal {
       
       inline def setCosBucket(value: Appid): Self = StObject.set(x, "cosBucket", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object anon {
       __obj.asInstanceOf[EventName]
     }
     
-    extension [Self <: EventName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventName] (val x: Self) extends AnyVal {
       
       inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
@@ -134,7 +137,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -186,7 +190,8 @@ object anon {
       __obj.asInstanceOf[MsgBody]
     }
     
-    extension [Self <: MsgBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MsgBody] (val x: Self) extends AnyVal {
       
       inline def setMsgBody(value: String): Self = StObject.set(x, "msgBody", value.asInstanceOf[js.Any])
       
@@ -227,7 +232,8 @@ object anon {
       __obj.asInstanceOf[MsgKey]
     }
     
-    extension [Self <: MsgKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MsgKey] (val x: Self) extends AnyVal {
       
       inline def setMsgBody(value: String): Self = StObject.set(x, "msgBody", value.asInstanceOf[js.Any])
       
@@ -254,7 +260,8 @@ object anon {
       __obj.asInstanceOf[RequestHeaders]
     }
     
-    extension [Self <: RequestHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestHeaders] (val x: Self) extends AnyVal {
       
       inline def setRequestHeaders(value: StringDictionary[String]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
       
@@ -273,7 +280,8 @@ object anon {
       __obj.asInstanceOf[SecretId]
     }
     
-    extension [Self <: SecretId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SecretId] (val x: Self) extends AnyVal {
       
       inline def setSecretId(value: String): Self = StObject.set(x, "secretId", value.asInstanceOf[js.Any])
       
@@ -292,7 +300,8 @@ object anon {
       __obj.asInstanceOf[Stage]
     }
     
-    extension [Self <: Stage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stage] (val x: Self) extends AnyVal {
       
       inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     }

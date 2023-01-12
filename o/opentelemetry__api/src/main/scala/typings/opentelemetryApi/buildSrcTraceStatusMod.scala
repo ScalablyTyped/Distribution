@@ -59,7 +59,8 @@ object buildSrcTraceStatusMod {
       __obj.asInstanceOf[SpanStatus]
     }
     
-    extension [Self <: SpanStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanStatus] (val x: Self) extends AnyVal {
       
       inline def setCode(value: SpanStatusCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

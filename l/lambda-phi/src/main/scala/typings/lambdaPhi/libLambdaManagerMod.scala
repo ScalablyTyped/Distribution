@@ -229,7 +229,8 @@ object libLambdaManagerMod {
       __obj.asInstanceOf[LambdaManager]
     }
     
-    extension [Self <: LambdaManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LambdaManager] (val x: Self) extends AnyVal {
       
       inline def setAddCallbackProperty(value: (Any, Any) => Unit): Self = StObject.set(x, "addCallbackProperty", js.Any.fromFunction2(value))
       

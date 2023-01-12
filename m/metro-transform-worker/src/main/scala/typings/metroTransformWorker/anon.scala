@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[ReadonlycodestringlineCou]
     }
     
-    extension [Self <: ReadonlycodestringlineCou](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlycodestringlineCou] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

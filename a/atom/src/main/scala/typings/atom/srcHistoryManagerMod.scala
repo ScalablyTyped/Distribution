@@ -34,7 +34,8 @@ object srcHistoryManagerMod {
       __obj.asInstanceOf[HistoryManager]
     }
     
-    extension [Self <: HistoryManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryManager] (val x: Self) extends AnyVal {
       
       inline def setClearProjects(value: () => Unit): Self = StObject.set(x, "clearProjects", js.Any.fromFunction0(value))
       
@@ -57,7 +58,8 @@ object srcHistoryManagerMod {
       __obj.asInstanceOf[ProjectHistory]
     }
     
-    extension [Self <: ProjectHistory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectHistory] (val x: Self) extends AnyVal {
       
       inline def setLastOpened(value: js.Date): Self = StObject.set(x, "lastOpened", value.asInstanceOf[js.Any])
       

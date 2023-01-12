@@ -37,7 +37,8 @@ object ModeBar {
     __obj.asInstanceOf[ModeBar]
   }
   
-  extension [Self <: ModeBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModeBar] (val x: Self) extends AnyVal {
     
     inline def setActivecolor(value: Color): Self = StObject.set(x, "activecolor", value.asInstanceOf[js.Any])
     

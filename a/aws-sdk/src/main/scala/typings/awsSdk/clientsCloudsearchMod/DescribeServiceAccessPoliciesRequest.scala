@@ -23,7 +23,8 @@ object DescribeServiceAccessPoliciesRequest {
     __obj.asInstanceOf[DescribeServiceAccessPoliciesRequest]
   }
   
-  extension [Self <: DescribeServiceAccessPoliciesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeServiceAccessPoliciesRequest] (val x: Self) extends AnyVal {
     
     inline def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
     

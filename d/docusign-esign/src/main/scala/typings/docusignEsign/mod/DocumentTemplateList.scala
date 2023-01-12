@@ -15,7 +15,8 @@ object DocumentTemplateList {
     __obj.asInstanceOf[DocumentTemplateList]
   }
   
-  extension [Self <: DocumentTemplateList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentTemplateList] (val x: Self) extends AnyVal {
     
     inline def setDocumentTemplates(value: js.Array[DocumentTemplate]): Self = StObject.set(x, "documentTemplates", value.asInstanceOf[js.Any])
     

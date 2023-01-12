@@ -33,7 +33,8 @@ object HTTPAuthCredentials {
     __obj.asInstanceOf[HTTPAuthCredentials]
   }
   
-  extension [Self <: HTTPAuthCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTTPAuthCredentials] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

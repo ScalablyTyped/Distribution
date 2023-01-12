@@ -17,7 +17,8 @@ object RemoveResult {
     __obj.asInstanceOf[RemoveResult[T]]
   }
   
-  extension [Self <: RemoveResult[?], T /* <: js.Object */](x: Self & RemoveResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveResult[?], T /* <: js.Object */] (val x: Self & RemoveResult[T]) extends AnyVal {
     
     inline def setOld(value: Document[T]): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
     

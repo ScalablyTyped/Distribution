@@ -127,7 +127,8 @@ object ObjectTypeFragment {
     __obj.asInstanceOf[ObjectTypeFragment]
   }
   
-  extension [Self <: ObjectTypeFragment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectTypeFragment] (val x: Self) extends AnyVal {
     
     inline def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     

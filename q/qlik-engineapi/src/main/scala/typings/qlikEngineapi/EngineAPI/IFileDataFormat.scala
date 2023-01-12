@@ -104,7 +104,8 @@ object IFileDataFormat {
     __obj.asInstanceOf[IFileDataFormat]
   }
   
-  extension [Self <: IFileDataFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileDataFormat] (val x: Self) extends AnyVal {
     
     inline def setQCodePage(value: Double): Self = StObject.set(x, "qCodePage", value.asInstanceOf[js.Any])
     

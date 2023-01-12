@@ -281,7 +281,8 @@ object libEsmTable2Mod {
       __obj.asInstanceOf[Table2Props]
     }
     
-    extension [Self <: Table2Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Table2Props] (val x: Self) extends AnyVal {
       
       inline def setCellRendererDependencies(value: DependencyList): Self = StObject.set(x, "cellRendererDependencies", value.asInstanceOf[js.Any])
       

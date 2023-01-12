@@ -23,7 +23,8 @@ object `0UnNestStrict` {
     __obj.asInstanceOf[`0UnNestStrict`[L, LN, I]]
   }
   
-  extension [Self <: `0UnNestStrict`[?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */](x: Self & (`0UnNestStrict`[L, LN, I])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0UnNestStrict`[?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */] (val x: Self & (`0UnNestStrict`[L, LN, I])) extends AnyVal {
     
     inline def set0(value: UnNestStrict[L, Flatter[L, LN, I], Next[I]]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

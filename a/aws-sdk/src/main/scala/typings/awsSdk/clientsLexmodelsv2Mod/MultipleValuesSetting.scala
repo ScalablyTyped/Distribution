@@ -18,7 +18,8 @@ object MultipleValuesSetting {
     __obj.asInstanceOf[MultipleValuesSetting]
   }
   
-  extension [Self <: MultipleValuesSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleValuesSetting] (val x: Self) extends AnyVal {
     
     inline def setAllowMultipleValues(value: Boolean): Self = StObject.set(x, "allowMultipleValues", value.asInstanceOf[js.Any])
     

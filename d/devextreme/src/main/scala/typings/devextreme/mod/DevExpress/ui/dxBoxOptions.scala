@@ -34,7 +34,8 @@ object dxBoxOptions {
     __obj.asInstanceOf[dxBoxOptions[TItem, TKey]]
   }
   
-  extension [Self <: dxBoxOptions[?, ?], TItem /* <: ItemLike[TKey] */, TKey](x: Self & (dxBoxOptions[TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxBoxOptions[?, ?], TItem /* <: ItemLike[TKey] */, TKey] (val x: Self & (dxBoxOptions[TItem, TKey])) extends AnyVal {
     
     inline def setAlign(value: Distribution): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

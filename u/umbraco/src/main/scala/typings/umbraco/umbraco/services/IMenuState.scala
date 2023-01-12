@@ -37,7 +37,8 @@ object IMenuState {
     __obj.asInstanceOf[IMenuState]
   }
   
-  extension [Self <: IMenuState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMenuState] (val x: Self) extends AnyVal {
     
     inline def setCurrentNode(value: Any): Self = StObject.set(x, "currentNode", value.asInstanceOf[js.Any])
     

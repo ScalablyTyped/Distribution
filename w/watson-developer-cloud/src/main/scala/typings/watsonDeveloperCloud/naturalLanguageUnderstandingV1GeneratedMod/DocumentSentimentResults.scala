@@ -20,7 +20,8 @@ object DocumentSentimentResults {
     __obj.asInstanceOf[DocumentSentimentResults]
   }
   
-  extension [Self <: DocumentSentimentResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSentimentResults] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

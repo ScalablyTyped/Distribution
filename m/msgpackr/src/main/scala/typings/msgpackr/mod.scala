@@ -148,7 +148,8 @@ object mod {
       __obj.asInstanceOf[Extension]
     }
     
-    extension [Self <: Extension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
       
       inline def setClass(value: js.Function): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
       
@@ -219,7 +220,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBundleStrings(value: Boolean): Self = StObject.set(x, "bundleStrings", value.asInstanceOf[js.Any])
       

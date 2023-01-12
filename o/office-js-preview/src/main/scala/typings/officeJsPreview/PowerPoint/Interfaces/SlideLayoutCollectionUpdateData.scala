@@ -16,7 +16,8 @@ object SlideLayoutCollectionUpdateData {
     __obj.asInstanceOf[SlideLayoutCollectionUpdateData]
   }
   
-  extension [Self <: SlideLayoutCollectionUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideLayoutCollectionUpdateData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[SlideLayoutData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

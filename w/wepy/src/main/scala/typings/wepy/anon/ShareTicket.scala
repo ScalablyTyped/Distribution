@@ -17,7 +17,8 @@ object ShareTicket {
     __obj.asInstanceOf[ShareTicket]
   }
   
-  extension [Self <: ShareTicket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareTicket] (val x: Self) extends AnyVal {
     
     inline def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
     

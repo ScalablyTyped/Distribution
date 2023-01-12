@@ -259,7 +259,8 @@ object libModelMod {
         __obj.asInstanceOf[IContentFactory]
       }
       
-      extension [Self <: IContentFactory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
         
         inline def setCreateOutputModel(value: typings.jupyterlabRendermime.libOutputmodelMod.IOutputModel.IOptions => IOutputModel): Self = StObject.set(x, "createOutputModel", js.Any.fromFunction1(value))
       }
@@ -294,7 +295,8 @@ object libModelMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         

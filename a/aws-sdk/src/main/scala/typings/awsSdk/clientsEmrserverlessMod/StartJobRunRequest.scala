@@ -53,7 +53,8 @@ object StartJobRunRequest {
     __obj.asInstanceOf[StartJobRunRequest]
   }
   
-  extension [Self <: StartJobRunRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartJobRunRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: ApplicationId): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object Validate {
     __obj.asInstanceOf[Validate]
   }
   
-  extension [Self <: Validate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Validate] (val x: Self) extends AnyVal {
     
     inline def setDefault(
       value: (/* response */ RequestLibResponse, /* requestOptions */ RequestLibOptions) => RequestLibResponse

@@ -47,7 +47,8 @@ object dxPopoverOptions {
     __obj.asInstanceOf[dxPopoverOptions[TComponent]]
   }
   
-  extension [Self <: dxPopoverOptions[?], TComponent](x: Self & dxPopoverOptions[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPopoverOptions[?], TComponent] (val x: Self & dxPopoverOptions[TComponent]) extends AnyVal {
     
     inline def setAnimation(value: dxPopoverAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

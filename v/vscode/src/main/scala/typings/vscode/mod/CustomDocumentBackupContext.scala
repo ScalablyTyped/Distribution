@@ -27,7 +27,8 @@ object CustomDocumentBackupContext {
     __obj.asInstanceOf[CustomDocumentBackupContext]
   }
   
-  extension [Self <: CustomDocumentBackupContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDocumentBackupContext] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: Uri): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
   }

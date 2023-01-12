@@ -45,7 +45,8 @@ object buildScrollFollowMod {
       __obj.asInstanceOf[ScrollFollowProps]
     }
     
-    extension [Self <: ScrollFollowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollFollowProps] (val x: Self) extends AnyVal {
       
       inline def setRender(value: ScrollFollowRenderProps => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
@@ -77,7 +78,8 @@ object buildScrollFollowMod {
       __obj.asInstanceOf[ScrollFollowRenderProps]
     }
     
-    extension [Self <: ScrollFollowRenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollFollowRenderProps] (val x: Self) extends AnyVal {
       
       inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
       

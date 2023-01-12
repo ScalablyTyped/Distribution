@@ -55,7 +55,8 @@ object WinPolicy {
     __obj.asInstanceOf[WinPolicy]
   }
   
-  extension [Self <: WinPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WinPolicy] (val x: Self) extends AnyVal {
     
     inline def setForceCurrent(value: () => Unit): Self = StObject.set(x, "forceCurrent", js.Any.fromFunction0(value))
     

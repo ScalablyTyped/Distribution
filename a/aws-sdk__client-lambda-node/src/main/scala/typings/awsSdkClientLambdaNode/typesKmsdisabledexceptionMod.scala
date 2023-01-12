@@ -21,7 +21,8 @@ object typesKmsdisabledexceptionMod {
       __obj.asInstanceOf[KMSDisabledException]
     }
     
-    extension [Self <: KMSDisabledException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSDisabledException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.KMSDisabledException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object typesKmsdisabledexceptionMod {
       __obj.asInstanceOf[KMSDisabledExceptionDetails]
     }
     
-    extension [Self <: KMSDisabledExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSDisabledExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

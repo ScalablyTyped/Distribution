@@ -216,7 +216,8 @@ object UseTableHooks {
     __obj.asInstanceOf[UseTableHooks[D]]
   }
   
-  extension [Self <: UseTableHooks[?], D /* <: js.Object */](x: Self & UseTableHooks[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseTableHooks[?], D /* <: js.Object */] (val x: Self & UseTableHooks[D]) extends AnyVal {
     
     inline def setAllColumns(
       value: js.Array[

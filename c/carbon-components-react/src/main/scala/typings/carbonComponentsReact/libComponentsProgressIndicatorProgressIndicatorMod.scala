@@ -487,7 +487,8 @@ object libComponentsProgressIndicatorProgressIndicatorMod {
       __obj.asInstanceOf[ProgressIndicatorProps]
     }
     
-    extension [Self <: ProgressIndicatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressIndicatorProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1625,7 +1626,8 @@ object libComponentsProgressIndicatorProgressIndicatorMod {
       __obj.asInstanceOf[ProgressStepProps]
     }
     
-    extension [Self <: ProgressStepProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressStepProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2456,7 +2458,8 @@ object libComponentsProgressIndicatorProgressIndicatorMod {
       __obj.asInstanceOf[RenderLabelProps]
     }
     
-    extension [Self <: RenderLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderLabelProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

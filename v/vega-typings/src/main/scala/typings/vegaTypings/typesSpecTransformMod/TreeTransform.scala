@@ -37,7 +37,8 @@ object TreeTransform {
     __obj.asInstanceOf[TreeTransform]
   }
   
-  extension [Self <: TreeTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: (Vector4[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

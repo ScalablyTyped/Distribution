@@ -22,7 +22,8 @@ object GoogleCloudDialogflowCxV3ExperimentResultVersionMetrics {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ExperimentResultVersionMetrics]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ExperimentResultVersionMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ExperimentResultVersionMetrics] (val x: Self) extends AnyVal {
     
     inline def setMetrics(value: js.Array[GoogleCloudDialogflowCxV3ExperimentResultMetric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     

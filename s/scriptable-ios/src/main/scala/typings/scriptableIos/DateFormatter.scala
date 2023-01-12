@@ -206,7 +206,8 @@ object DateFormatter {
     __obj.asInstanceOf[DateFormatter]
   }
   
-  extension [Self <: DateFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateFormatter] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String => js.Date): Self = StObject.set(x, "date", js.Any.fromFunction1(value))
     

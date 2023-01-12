@@ -18,7 +18,8 @@ object PackageImportJobOutputConfig {
     __obj.asInstanceOf[PackageImportJobOutputConfig]
   }
   
-  extension [Self <: PackageImportJobOutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageImportJobOutputConfig] (val x: Self) extends AnyVal {
     
     inline def setPackageVersionOutputConfig(value: PackageVersionOutputConfig): Self = StObject.set(x, "PackageVersionOutputConfig", value.asInstanceOf[js.Any])
     

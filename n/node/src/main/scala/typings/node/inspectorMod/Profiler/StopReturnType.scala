@@ -18,7 +18,8 @@ object StopReturnType {
     __obj.asInstanceOf[StopReturnType]
   }
   
-  extension [Self <: StopReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopReturnType] (val x: Self) extends AnyVal {
     
     inline def setProfile(value: Profile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
   }

@@ -39,7 +39,8 @@ object AggregateOptions {
     __obj.asInstanceOf[AggregateOptions]
   }
   
-  extension [Self <: AggregateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowDiskUse(value: Boolean): Self = StObject.set(x, "allowDiskUse", value.asInstanceOf[js.Any])
     

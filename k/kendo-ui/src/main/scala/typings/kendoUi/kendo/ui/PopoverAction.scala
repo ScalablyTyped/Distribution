@@ -19,7 +19,8 @@ object PopoverAction {
     __obj.asInstanceOf[PopoverAction]
   }
   
-  extension [Self <: PopoverAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopoverAction] (val x: Self) extends AnyVal {
     
     inline def setClick(value: js.Function): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     

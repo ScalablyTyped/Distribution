@@ -28,7 +28,8 @@ object GoogleActionsV2PermissionValueSpec {
     __obj.asInstanceOf[GoogleActionsV2PermissionValueSpec]
   }
   
-  extension [Self <: GoogleActionsV2PermissionValueSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2PermissionValueSpec] (val x: Self) extends AnyVal {
     
     inline def setOptContext(value: String): Self = StObject.set(x, "optContext", value.asInstanceOf[js.Any])
     

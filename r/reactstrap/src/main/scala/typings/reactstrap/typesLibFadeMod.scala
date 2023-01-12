@@ -60,7 +60,8 @@ object typesLibFadeMod {
       __obj.asInstanceOf[FadeProps]
     }
     
-    extension [Self <: FadeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FadeProps] (val x: Self) extends AnyVal {
       
       inline def setBaseClass(value: String): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
       

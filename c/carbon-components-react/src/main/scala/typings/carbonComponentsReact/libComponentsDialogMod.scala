@@ -644,7 +644,8 @@ object libComponentsDialogMod {
       __obj.asInstanceOf[DialogBaseProps]
     }
     
-    extension [Self <: DialogBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogBaseProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
       
@@ -1018,7 +1019,8 @@ object libComponentsDialogMod {
       __obj.asInstanceOf[DialogDefaultProps]
     }
     
-    extension [Self <: DialogDefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogDefaultProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

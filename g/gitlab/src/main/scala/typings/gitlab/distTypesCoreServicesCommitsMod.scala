@@ -120,7 +120,8 @@ object distTypesCoreServicesCommitsMod {
       __obj.asInstanceOf[CommitAction]
     }
     
-    extension [Self <: CommitAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitAction] (val x: Self) extends AnyVal {
       
       inline def setAction(value: create | delete | move | update): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -185,7 +186,8 @@ object distTypesCoreServicesCommitsMod {
       __obj.asInstanceOf[CommitSchema]
     }
     
-    extension [Self <: CommitSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitSchema] (val x: Self) extends AnyVal {
       
       inline def setAuthor_email(value: String): Self = StObject.set(x, "author_email", value.asInstanceOf[js.Any])
       

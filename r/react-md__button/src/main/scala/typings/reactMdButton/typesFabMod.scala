@@ -40,7 +40,8 @@ object typesFabMod {
       __obj.asInstanceOf[FABProps]
     }
     
-    extension [Self <: FABProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FABProps] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: FABPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       

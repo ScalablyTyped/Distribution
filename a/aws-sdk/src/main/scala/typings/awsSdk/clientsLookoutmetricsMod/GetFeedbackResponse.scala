@@ -23,7 +23,8 @@ object GetFeedbackResponse {
     __obj.asInstanceOf[GetFeedbackResponse]
   }
   
-  extension [Self <: GetFeedbackResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFeedbackResponse] (val x: Self) extends AnyVal {
     
     inline def setAnomalyGroupTimeSeriesFeedback(value: TimeSeriesFeedbackList): Self = StObject.set(x, "AnomalyGroupTimeSeriesFeedback", value.asInstanceOf[js.Any])
     

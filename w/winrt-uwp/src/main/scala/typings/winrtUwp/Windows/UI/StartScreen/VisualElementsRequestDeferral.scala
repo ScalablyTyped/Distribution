@@ -17,7 +17,8 @@ object VisualElementsRequestDeferral {
     __obj.asInstanceOf[VisualElementsRequestDeferral]
   }
   
-  extension [Self <: VisualElementsRequestDeferral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualElementsRequestDeferral] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }

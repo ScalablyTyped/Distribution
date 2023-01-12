@@ -43,7 +43,8 @@ object ResizableAdObject {
     __obj.asInstanceOf[ResizableAdObject]
   }
   
-  extension [Self <: ResizableAdObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizableAdObject] (val x: Self) extends AnyVal {
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     

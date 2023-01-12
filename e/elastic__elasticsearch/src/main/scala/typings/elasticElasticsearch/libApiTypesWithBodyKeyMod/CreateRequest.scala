@@ -36,7 +36,8 @@ object CreateRequest {
     __obj.asInstanceOf[CreateRequest[TDocument]]
   }
   
-  extension [Self <: CreateRequest[?], TDocument](x: Self & CreateRequest[TDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRequest[?], TDocument] (val x: Self & CreateRequest[TDocument]) extends AnyVal {
     
     inline def setBody(value: TDocument): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

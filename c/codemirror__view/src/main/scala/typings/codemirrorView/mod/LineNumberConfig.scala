@@ -25,7 +25,8 @@ object LineNumberConfig {
     __obj.asInstanceOf[LineNumberConfig]
   }
   
-  extension [Self <: LineNumberConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineNumberConfig] (val x: Self) extends AnyVal {
     
     inline def setDomEventHandlers(value: Handlers): Self = StObject.set(x, "domEventHandlers", value.asInstanceOf[js.Any])
     

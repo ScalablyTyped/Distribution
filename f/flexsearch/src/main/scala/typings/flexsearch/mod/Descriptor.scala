@@ -17,7 +17,8 @@ object Descriptor {
     __obj.asInstanceOf[Descriptor[T, Store]]
   }
   
-  extension [Self <: Descriptor[?, ?], T, Store /* <: StoreOption */](x: Self & (Descriptor[T, Store])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Descriptor[?, ?], T, Store /* <: StoreOption */] (val x: Self & (Descriptor[T, Store])) extends AnyVal {
     
     inline def setField(value: js.Array[(IndexOptions[T, Store]) | String]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

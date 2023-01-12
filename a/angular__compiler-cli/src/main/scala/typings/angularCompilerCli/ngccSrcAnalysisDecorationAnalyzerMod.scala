@@ -175,7 +175,8 @@ object ngccSrcAnalysisDecorationAnalyzerMod {
       __obj.asInstanceOf[NgccResourceLoader]
     }
     
-    extension [Self <: NgccResourceLoader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgccResourceLoader] (val x: Self) extends AnyVal {
       
       inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       

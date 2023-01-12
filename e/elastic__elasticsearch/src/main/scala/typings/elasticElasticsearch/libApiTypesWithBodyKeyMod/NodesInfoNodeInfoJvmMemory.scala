@@ -39,7 +39,8 @@ object NodesInfoNodeInfoJvmMemory {
     __obj.asInstanceOf[NodesInfoNodeInfoJvmMemory]
   }
   
-  extension [Self <: NodesInfoNodeInfoJvmMemory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoJvmMemory] (val x: Self) extends AnyVal {
     
     inline def setDirect_max(value: ByteSize): Self = StObject.set(x, "direct_max", value.asInstanceOf[js.Any])
     

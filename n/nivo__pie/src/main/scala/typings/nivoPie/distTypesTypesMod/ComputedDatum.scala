@@ -40,7 +40,8 @@ object ComputedDatum {
     __obj.asInstanceOf[ComputedDatum[RawDatum]]
   }
   
-  extension [Self <: ComputedDatum[?], RawDatum](x: Self & ComputedDatum[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputedDatum[?], RawDatum] (val x: Self & ComputedDatum[RawDatum]) extends AnyVal {
     
     inline def setArc(value: PieArc): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     

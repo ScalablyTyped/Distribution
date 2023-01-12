@@ -38,7 +38,8 @@ object ImportVolumeTaskDetails {
     __obj.asInstanceOf[ImportVolumeTaskDetails]
   }
   
-  extension [Self <: ImportVolumeTaskDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportVolumeTaskDetails] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

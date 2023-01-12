@@ -50,7 +50,8 @@ object IgnoreEdgeWidth {
     __obj.asInstanceOf[IgnoreEdgeWidth]
   }
   
-  extension [Self <: IgnoreEdgeWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreEdgeWidth] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: none | slide): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

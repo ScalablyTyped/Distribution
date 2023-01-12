@@ -32,7 +32,8 @@ object AxisPointBreakEventObject {
     __obj.asInstanceOf[AxisPointBreakEventObject]
   }
   
-  extension [Self <: AxisPointBreakEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisPointBreakEventObject] (val x: Self) extends AnyVal {
     
     inline def setBrk(value: Dictionary[Double]): Self = StObject.set(x, "brk", value.asInstanceOf[js.Any])
     

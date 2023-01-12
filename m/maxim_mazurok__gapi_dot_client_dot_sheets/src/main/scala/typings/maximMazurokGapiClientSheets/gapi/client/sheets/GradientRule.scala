@@ -22,7 +22,8 @@ object GradientRule {
     __obj.asInstanceOf[GradientRule]
   }
   
-  extension [Self <: GradientRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GradientRule] (val x: Self) extends AnyVal {
     
     inline def setMaxpoint(value: InterpolationPoint): Self = StObject.set(x, "maxpoint", value.asInstanceOf[js.Any])
     

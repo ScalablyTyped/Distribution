@@ -18,7 +18,8 @@ object WeakValidationMapFormGrou {
     __obj.asInstanceOf[WeakValidationMapFormGrou]
   }
   
-  extension [Self <: WeakValidationMapFormGrou](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapFormGrou] (val x: Self) extends AnyVal {
     
     inline def setDisableStyles(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any

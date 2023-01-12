@@ -36,7 +36,8 @@ object PluginBase {
     __obj.asInstanceOf[PluginBase[T]]
   }
   
-  extension [Self <: PluginBase[?], T](x: Self & PluginBase[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginBase[?], T] (val x: Self & PluginBase[T]) extends AnyVal {
     
     inline def setDependencies(value: Dependencies): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object ClipsSubviews {
     __obj.asInstanceOf[ClipsSubviews]
   }
   
-  extension [Self <: ClipsSubviews](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClipsSubviews] (val x: Self) extends AnyVal {
     
     inline def setClipsSubviews(value: IBBoolean): Self = StObject.set(x, "clipsSubviews", value.asInstanceOf[js.Any])
     

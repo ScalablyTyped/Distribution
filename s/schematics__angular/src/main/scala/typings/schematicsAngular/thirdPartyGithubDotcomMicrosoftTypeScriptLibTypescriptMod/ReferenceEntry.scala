@@ -20,7 +20,8 @@ object ReferenceEntry {
     __obj.asInstanceOf[ReferenceEntry]
   }
   
-  extension [Self <: ReferenceEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceEntry] (val x: Self) extends AnyVal {
     
     inline def setIsInString(value: `true`): Self = StObject.set(x, "isInString", value.asInstanceOf[js.Any])
     

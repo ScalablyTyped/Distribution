@@ -17,7 +17,8 @@ object SchedulerResizeStartEvent {
     __obj.asInstanceOf[SchedulerResizeStartEvent]
   }
   
-  extension [Self <: SchedulerResizeStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerResizeStartEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: typings.kendoUi.kendo.data.SchedulerEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

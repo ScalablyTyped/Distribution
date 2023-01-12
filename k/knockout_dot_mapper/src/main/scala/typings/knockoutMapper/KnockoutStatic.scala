@@ -15,7 +15,8 @@ object KnockoutStatic {
     __obj.asInstanceOf[KnockoutStatic]
   }
   
-  extension [Self <: KnockoutStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutStatic] (val x: Self) extends AnyVal {
     
     inline def setMapper(value: KnockoutMapper): Self = StObject.set(x, "mapper", value.asInstanceOf[js.Any])
   }

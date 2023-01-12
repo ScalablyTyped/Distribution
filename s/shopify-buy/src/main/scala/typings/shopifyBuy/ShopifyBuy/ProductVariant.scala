@@ -97,7 +97,8 @@ object ProductVariant {
     __obj.asInstanceOf[ProductVariant]
   }
   
-  extension [Self <: ProductVariant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductVariant] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     

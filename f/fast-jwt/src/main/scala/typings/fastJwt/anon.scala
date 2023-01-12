@@ -48,7 +48,8 @@ object anon {
       __obj.asInstanceOf[PartialDecoderOptions]
     }
     
-    extension [Self <: PartialDecoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDecoderOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckTyp(value: String): Self = StObject.set(x, "checkTyp", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object anon {
       __obj.asInstanceOf[PartialSignerOptionskeyKe]
     }
     
-    extension [Self <: PartialSignerOptionskeyKe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSignerOptionskeyKe] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -202,7 +204,8 @@ object anon {
       __obj.asInstanceOf[PartialSignerOptionskeyst]
     }
     
-    extension [Self <: PartialSignerOptionskeyst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSignerOptionskeyst] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -302,7 +305,8 @@ object anon {
       __obj.asInstanceOf[PartialVerifierOptionskey]
     }
     
-    extension [Self <: PartialVerifierOptionskey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialVerifierOptionskey] (val x: Self) extends AnyVal {
       
       inline def setAlgorithms(value: js.Array[Algorithm]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       
@@ -418,7 +422,8 @@ object anon {
       __obj.asInstanceOf[PartialVerifierOptionskeyAlgorithms]
     }
     
-    extension [Self <: PartialVerifierOptionskeyAlgorithms](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialVerifierOptionskeyAlgorithms] (val x: Self) extends AnyVal {
       
       inline def setAlgorithms(value: js.Array[Algorithm]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       

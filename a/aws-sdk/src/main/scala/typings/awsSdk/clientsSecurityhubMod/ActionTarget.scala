@@ -28,7 +28,8 @@ object ActionTarget {
     __obj.asInstanceOf[ActionTarget]
   }
   
-  extension [Self <: ActionTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionTarget] (val x: Self) extends AnyVal {
     
     inline def setActionTargetArn(value: NonEmptyString): Self = StObject.set(x, "ActionTargetArn", value.asInstanceOf[js.Any])
     

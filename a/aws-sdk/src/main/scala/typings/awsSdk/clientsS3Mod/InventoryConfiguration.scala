@@ -54,7 +54,8 @@ object InventoryConfiguration {
     __obj.asInstanceOf[InventoryConfiguration]
   }
   
-  extension [Self <: InventoryConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventoryConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: InventoryDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object PrepareQueryResponse {
     __obj.asInstanceOf[PrepareQueryResponse]
   }
   
-  extension [Self <: PrepareQueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrepareQueryResponse] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: SelectColumnList): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     

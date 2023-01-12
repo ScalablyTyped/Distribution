@@ -98,7 +98,8 @@ object UpdateAction {
     __obj.asInstanceOf[UpdateAction]
   }
   
-  extension [Self <: UpdateAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAction] (val x: Self) extends AnyVal {
     
     inline def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     

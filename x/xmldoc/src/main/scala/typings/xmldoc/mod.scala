@@ -154,7 +154,8 @@ object mod {
       __obj.asInstanceOf[XmlOptions]
     }
     
-    extension [Self <: XmlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlOptions] (val x: Self) extends AnyVal {
       
       inline def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object mod {
       __obj.asInstanceOf[XmlTag]
     }
     
-    extension [Self <: XmlTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlTag] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: XmlAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

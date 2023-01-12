@@ -17,7 +17,8 @@ object ITypeStat {
     __obj.asInstanceOf[ITypeStat]
   }
   
-  extension [Self <: ITypeStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITypeStat] (val x: Self) extends AnyVal {
     
     inline def setPerFieldStat(value: StringDictionary[IFieldStat]): Self = StObject.set(x, "perFieldStat", value.asInstanceOf[js.Any])
     

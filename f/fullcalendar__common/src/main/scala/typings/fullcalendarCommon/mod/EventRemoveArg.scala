@@ -19,7 +19,8 @@ object EventRemoveArg {
     __obj.asInstanceOf[EventRemoveArg]
   }
   
-  extension [Self <: EventRemoveArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventRemoveArg] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: EventApi): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

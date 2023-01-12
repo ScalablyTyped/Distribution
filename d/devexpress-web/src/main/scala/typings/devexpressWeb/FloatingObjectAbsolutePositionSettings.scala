@@ -41,7 +41,8 @@ object FloatingObjectAbsolutePositionSettings {
     __obj.asInstanceOf[FloatingObjectAbsolutePositionSettings]
   }
   
-  extension [Self <: FloatingObjectAbsolutePositionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingObjectAbsolutePositionSettings] (val x: Self) extends AnyVal {
     
     inline def setHorizontalAbsolutePosition(value: Double): Self = StObject.set(x, "horizontalAbsolutePosition", value.asInstanceOf[js.Any])
     

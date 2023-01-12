@@ -25,7 +25,8 @@ object LineSeriesProps {
     __obj.asInstanceOf[LineSeriesProps]
   }
   
-  extension [Self <: LineSeriesProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineSeriesProps] (val x: Self) extends AnyVal {
     
     inline def setCurve(value: String | (js.Function1[/* x */ Any, Any])): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     

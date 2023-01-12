@@ -47,7 +47,8 @@ object LiftedState {
     __obj.asInstanceOf[LiftedState[S, A, MonitorState]]
   }
   
-  extension [Self <: LiftedState[?, ?, ?], S, A /* <: Action[Any] */, MonitorState](x: Self & (LiftedState[S, A, MonitorState])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiftedState[?, ?, ?], S, A /* <: Action[Any] */, MonitorState] (val x: Self & (LiftedState[S, A, MonitorState])) extends AnyVal {
     
     inline def setActionsById(value: NumberDictionary[PerformAction[A]]): Self = StObject.set(x, "actionsById", value.asInstanceOf[js.Any])
     

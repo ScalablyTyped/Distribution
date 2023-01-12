@@ -22,7 +22,8 @@ object UiCanSetDisabledElement {
     __obj.asInstanceOf[UiCanSetDisabledElement]
   }
   
-  extension [Self <: UiCanSetDisabledElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UiCanSetDisabledElement] (val x: Self) extends AnyVal {
     
     inline def setSetDisabled(value: Boolean => Unit): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
   }

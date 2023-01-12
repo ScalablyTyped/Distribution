@@ -50,7 +50,8 @@ object tableHeadTableHeadMod extends Shortcut {
       __obj.asInstanceOf[TableHeadTypeMap[P, D]]
     }
     
-    extension [Self <: TableHeadTypeMap[?, ?], P /* <: js.Object */, D /* <: ElementType[Any] */](x: Self & (TableHeadTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableHeadTypeMap[?, ?], P /* <: js.Object */, D /* <: ElementType[Any] */] (val x: Self & (TableHeadTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: TableHeadClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

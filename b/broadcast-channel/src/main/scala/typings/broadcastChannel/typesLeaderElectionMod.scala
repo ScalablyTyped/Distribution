@@ -85,7 +85,8 @@ object typesLeaderElectionMod {
       __obj.asInstanceOf[LeaderElectionOptions]
     }
     
-    extension [Self <: LeaderElectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeaderElectionOptions] (val x: Self) extends AnyVal {
       
       inline def setFallbackInterval(value: Double): Self = StObject.set(x, "fallbackInterval", value.asInstanceOf[js.Any])
       

@@ -41,7 +41,8 @@ object modifiersBaseMod {
         __obj.asInstanceOf[InteractEvent]
       }
       
-      extension [Self <: InteractEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InteractEvent] (val x: Self) extends AnyVal {
         
         inline def setModifiers(value: js.Array[Dictkey]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
         
@@ -66,7 +67,8 @@ object modifiersBaseMod {
         __obj.asInstanceOf[Interaction]
       }
       
-      extension [Self <: Interaction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Interaction] (val x: Self) extends AnyVal {
         
         inline def setModification(value: typings.interactjsTypes.modifiersModificationMod.default): Self = StObject.set(x, "modification", value.asInstanceOf[js.Any])
         
@@ -89,7 +91,8 @@ object modifiersBaseMod {
         __obj.asInstanceOf[PerActionDefaults]
       }
       
-      extension [Self <: PerActionDefaults](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PerActionDefaults] (val x: Self) extends AnyVal {
         
         inline def setModifiers(value: js.Array[Modifier[Any, Any, Any, Any]]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
         

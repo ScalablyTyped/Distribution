@@ -26,7 +26,8 @@ object ReadonlyInjectableHandler {
     __obj.asInstanceOf[ReadonlyInjectableHandler]
   }
   
-  extension [Self <: ReadonlyInjectableHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyInjectableHandler] (val x: Self) extends AnyVal {
     
     inline def setClassMetadata(value: R3ClassMetadata): Self = StObject.set(x, "classMetadata", value.asInstanceOf[js.Any])
     

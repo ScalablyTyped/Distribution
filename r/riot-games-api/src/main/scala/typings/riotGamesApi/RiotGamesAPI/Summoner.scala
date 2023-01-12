@@ -22,7 +22,8 @@ object Summoner {
       __obj.asInstanceOf[MasteryDto]
     }
     
-    extension [Self <: MasteryDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MasteryDto] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object Summoner {
       __obj.asInstanceOf[MasteryPageDto]
     }
     
-    extension [Self <: MasteryPageDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MasteryPageDto] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object Summoner {
       __obj.asInstanceOf[MasteryPagesDto]
     }
     
-    extension [Self <: MasteryPagesDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MasteryPagesDto] (val x: Self) extends AnyVal {
       
       inline def setPages(value: js.Array[MasteryPageDto]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
@@ -101,7 +104,8 @@ object Summoner {
       __obj.asInstanceOf[RunePageDto]
     }
     
-    extension [Self <: RunePageDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunePageDto] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -128,7 +132,8 @@ object Summoner {
       __obj.asInstanceOf[RunePagesDto]
     }
     
-    extension [Self <: RunePagesDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunePagesDto] (val x: Self) extends AnyVal {
       
       inline def setPages(value: js.Array[RunePageDto]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
@@ -151,7 +156,8 @@ object Summoner {
       __obj.asInstanceOf[RuneSlotDto]
     }
     
-    extension [Self <: RuneSlotDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuneSlotDto] (val x: Self) extends AnyVal {
       
       inline def setRuneId(value: Double): Self = StObject.set(x, "runeId", value.asInstanceOf[js.Any])
       
@@ -178,7 +184,8 @@ object Summoner {
       __obj.asInstanceOf[SummonerDto]
     }
     
-    extension [Self <: SummonerDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummonerDto] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

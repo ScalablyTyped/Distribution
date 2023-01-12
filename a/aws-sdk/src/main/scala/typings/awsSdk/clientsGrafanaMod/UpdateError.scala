@@ -28,7 +28,8 @@ object UpdateError {
     __obj.asInstanceOf[UpdateError]
   }
   
-  extension [Self <: UpdateError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateError] (val x: Self) extends AnyVal {
     
     inline def setCausedBy(value: UpdateInstruction): Self = StObject.set(x, "causedBy", value.asInstanceOf[js.Any])
     

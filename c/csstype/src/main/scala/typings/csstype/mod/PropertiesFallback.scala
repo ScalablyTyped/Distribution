@@ -117,7 +117,8 @@ object PropertiesFallback {
     __obj.asInstanceOf[PropertiesFallback[TLength, TTime]]
   }
   
-  extension [Self <: PropertiesFallback[?, ?], TLength, TTime](x: Self & (PropertiesFallback[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertiesFallback[?, ?], TLength, TTime] (val x: Self & (PropertiesFallback[TLength, TTime])) extends AnyVal {
     
     inline def setAlignmentBaseline(value: AlignmentBaseline | js.Array[NonNullable[js.UndefOr[AlignmentBaseline]]]): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object BootstrapClientFloatingActionButtonContextChangingEventArgs {
     __obj.asInstanceOf[BootstrapClientFloatingActionButtonContextChangingEventArgs]
   }
   
-  extension [Self <: BootstrapClientFloatingActionButtonContextChangingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientFloatingActionButtonContextChangingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAction(value: BootstrapClientFABAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }

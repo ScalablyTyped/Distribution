@@ -18,7 +18,8 @@ object ScaleString {
     __obj.asInstanceOf[ScaleString]
   }
   
-  extension [Self <: ScaleString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleString] (val x: Self) extends AnyVal {
     
     inline def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }

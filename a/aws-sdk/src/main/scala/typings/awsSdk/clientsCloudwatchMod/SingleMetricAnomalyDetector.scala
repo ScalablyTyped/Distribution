@@ -33,7 +33,8 @@ object SingleMetricAnomalyDetector {
     __obj.asInstanceOf[SingleMetricAnomalyDetector]
   }
   
-  extension [Self <: SingleMetricAnomalyDetector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleMetricAnomalyDetector] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

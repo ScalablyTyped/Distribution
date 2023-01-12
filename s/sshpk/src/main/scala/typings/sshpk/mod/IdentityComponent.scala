@@ -22,7 +22,8 @@ object IdentityComponent {
     __obj.asInstanceOf[IdentityComponent]
   }
   
-  extension [Self <: IdentityComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityComponent] (val x: Self) extends AnyVal {
     
     inline def setAsn1type(value: Double): Self = StObject.set(x, "asn1type", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object GPUBindGroupDescriptor {
     __obj.asInstanceOf[GPUBindGroupDescriptor]
   }
   
-  extension [Self <: GPUBindGroupDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUBindGroupDescriptor] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Iterable[GPUBindGroupEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

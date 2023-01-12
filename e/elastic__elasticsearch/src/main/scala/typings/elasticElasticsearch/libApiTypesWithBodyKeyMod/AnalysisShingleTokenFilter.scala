@@ -32,7 +32,8 @@ object AnalysisShingleTokenFilter {
     __obj.asInstanceOf[AnalysisShingleTokenFilter]
   }
   
-  extension [Self <: AnalysisShingleTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisShingleTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setFiller_token(value: String): Self = StObject.set(x, "filler_token", value.asInstanceOf[js.Any])
     

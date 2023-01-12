@@ -18,7 +18,8 @@ object QueryObjectsParameterType {
     __obj.asInstanceOf[QueryObjectsParameterType]
   }
   
-  extension [Self <: QueryObjectsParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryObjectsParameterType] (val x: Self) extends AnyVal {
     
     inline def setPrototypeObjectId(value: RemoteObjectId): Self = StObject.set(x, "prototypeObjectId", value.asInstanceOf[js.Any])
   }

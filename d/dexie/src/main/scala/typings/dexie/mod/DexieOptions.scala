@@ -29,7 +29,8 @@ object DexieOptions {
     __obj.asInstanceOf[DexieOptions]
   }
   
-  extension [Self <: DexieOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DexieOptions] (val x: Self) extends AnyVal {
     
     inline def setAddons(value: js.Array[js.Function1[/* db */ Dexie, Unit]]): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
     

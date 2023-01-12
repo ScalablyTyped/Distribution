@@ -92,7 +92,8 @@ object PlotTreegraphClusterLayoutAlgorithmOptions {
     __obj.asInstanceOf[PlotTreegraphClusterLayoutAlgorithmOptions]
   }
   
-  extension [Self <: PlotTreegraphClusterLayoutAlgorithmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreegraphClusterLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double | String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object AudioTimestamp {
     __obj.asInstanceOf[AudioTimestamp]
   }
   
-  extension [Self <: AudioTimestamp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioTimestamp] (val x: Self) extends AnyVal {
     
     inline def setContextTime(value: Double): Self = StObject.set(x, "contextTime", value.asInstanceOf[js.Any])
     

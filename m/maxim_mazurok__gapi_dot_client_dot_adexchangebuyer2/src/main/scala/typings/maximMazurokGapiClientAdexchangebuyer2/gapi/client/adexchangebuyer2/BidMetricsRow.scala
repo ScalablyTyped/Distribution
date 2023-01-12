@@ -37,7 +37,8 @@ object BidMetricsRow {
     __obj.asInstanceOf[BidMetricsRow]
   }
   
-  extension [Self <: BidMetricsRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BidMetricsRow] (val x: Self) extends AnyVal {
     
     inline def setBids(value: MetricValue): Self = StObject.set(x, "bids", value.asInstanceOf[js.Any])
     

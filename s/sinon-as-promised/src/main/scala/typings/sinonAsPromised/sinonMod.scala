@@ -33,7 +33,8 @@ object sinonMod {
       __obj.asInstanceOf[SinonStub]
     }
     
-    extension [Self <: SinonStub](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinonStub] (val x: Self) extends AnyVal {
       
       inline def setRejects(value: Any => SinonStub): Self = StObject.set(x, "rejects", js.Any.fromFunction1(value))
       

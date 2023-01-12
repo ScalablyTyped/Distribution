@@ -71,7 +71,8 @@ object namespacesDeclarativeContentMod {
         __obj.asInstanceOf[PageStateMatcher]
       }
       
-      extension [Self <: PageStateMatcher](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PageStateMatcher] (val x: Self) extends AnyVal {
         
         inline def setCss(value: js.Array[String]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
         
@@ -129,7 +130,8 @@ object namespacesDeclarativeContentMod {
         __obj.asInstanceOf[RequestContentScript]
       }
       
-      extension [Self <: RequestContentScript](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RequestContentScript] (val x: Self) extends AnyVal {
         
         inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
         
@@ -172,7 +174,8 @@ object namespacesDeclarativeContentMod {
         __obj.asInstanceOf[Rule[TCondition, TAction]]
       }
       
-      extension [Self <: Rule[?, ?], TCondition, TAction](x: Self & (Rule[TCondition, TAction])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Rule[?, ?], TCondition, TAction] (val x: Self & (Rule[TCondition, TAction])) extends AnyVal {
         
         inline def setActions(value: js.Array[TAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
         
@@ -255,7 +258,8 @@ object namespacesDeclarativeContentMod {
         __obj.asInstanceOf[SetIcon]
       }
       
-      extension [Self <: SetIcon](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetIcon] (val x: Self) extends AnyVal {
         
         inline def setImageData(value: ImageDataType | SetIconImageDataC2Type): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
         
@@ -304,7 +308,8 @@ object namespacesDeclarativeContentMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setOnPageChanged(value: RuleEvent[PageStateMatcher, RequestContentScript | SetIcon | ShowPageAction | ShowAction]): Self = StObject.set(x, "onPageChanged", value.asInstanceOf[js.Any])
         

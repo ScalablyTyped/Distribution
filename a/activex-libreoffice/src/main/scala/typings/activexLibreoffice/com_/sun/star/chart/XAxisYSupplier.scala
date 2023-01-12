@@ -85,7 +85,8 @@ object XAxisYSupplier {
     __obj.asInstanceOf[XAxisYSupplier]
   }
   
-  extension [Self <: XAxisYSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAxisYSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetYAxis(value: () => XPropertySet): Self = StObject.set(x, "getYAxis", js.Any.fromFunction0(value))
     

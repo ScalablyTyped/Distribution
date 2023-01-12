@@ -17,7 +17,8 @@ object ShapeOf {
     __obj.asInstanceOf[ShapeOf]
   }
   
-  extension [Self <: ShapeOf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeOf] (val x: Self) extends AnyVal {
     
     inline def setShapeOf(value: StringDictionary[FieldOptions]): Self = StObject.set(x, "shapeOf", value.asInstanceOf[js.Any])
   }

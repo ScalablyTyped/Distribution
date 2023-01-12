@@ -20,7 +20,8 @@ object AccessDescriptionJson {
     __obj.asInstanceOf[AccessDescriptionJson]
   }
   
-  extension [Self <: AccessDescriptionJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessDescriptionJson] (val x: Self) extends AnyVal {
     
     inline def setAccessLocation(value: GeneralNameJson): Self = StObject.set(x, "accessLocation", value.asInstanceOf[js.Any])
     

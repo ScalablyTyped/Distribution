@@ -33,7 +33,8 @@ object SetPrincipalTagAttributeMapResponse {
     __obj.asInstanceOf[SetPrincipalTagAttributeMapResponse]
   }
   
-  extension [Self <: SetPrincipalTagAttributeMapResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetPrincipalTagAttributeMapResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     

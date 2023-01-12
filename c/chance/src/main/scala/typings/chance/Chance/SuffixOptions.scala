@@ -15,7 +15,8 @@ object SuffixOptions {
     __obj.asInstanceOf[SuffixOptions]
   }
   
-  extension [Self <: SuffixOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuffixOptions] (val x: Self) extends AnyVal {
     
     inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
   }

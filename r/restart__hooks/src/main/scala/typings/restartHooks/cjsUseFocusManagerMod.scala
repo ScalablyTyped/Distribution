@@ -27,7 +27,8 @@ object cjsUseFocusManagerMod {
       __obj.asInstanceOf[FocusController]
     }
     
-    extension [Self <: FocusController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusController] (val x: Self) extends AnyVal {
       
       inline def setOnBlur(value: Any => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
@@ -71,7 +72,8 @@ object cjsUseFocusManagerMod {
       __obj.asInstanceOf[FocusManagerOptions]
     }
     
-    extension [Self <: FocusManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setDidHandle(value: (/* focused */ Boolean, /* event */ FocusEvent[Element, Element]) => Unit): Self = StObject.set(x, "didHandle", js.Any.fromFunction2(value))
       

@@ -28,7 +28,8 @@ object SpinnerWidget {
     __obj.asInstanceOf[SpinnerWidget]
   }
   
-  extension [Self <: SpinnerWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpinnerWidget] (val x: Self) extends AnyVal {
     
     inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
     

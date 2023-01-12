@@ -30,7 +30,8 @@ object ASPxClientAverageTrueRange {
     __obj.asInstanceOf[ASPxClientAverageTrueRange]
   }
   
-  extension [Self <: ASPxClientAverageTrueRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientAverageTrueRange] (val x: Self) extends AnyVal {
     
     inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
   }

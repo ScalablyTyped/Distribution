@@ -23,7 +23,8 @@ object GetSearchSuggestionsRequest {
     __obj.asInstanceOf[GetSearchSuggestionsRequest]
   }
   
-  extension [Self <: GetSearchSuggestionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSearchSuggestionsRequest] (val x: Self) extends AnyVal {
     
     inline def setResource(value: ResourceType): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
     

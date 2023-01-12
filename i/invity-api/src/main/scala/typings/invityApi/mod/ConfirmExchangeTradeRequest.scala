@@ -23,7 +23,8 @@ object ConfirmExchangeTradeRequest {
     __obj.asInstanceOf[ConfirmExchangeTradeRequest]
   }
   
-  extension [Self <: ConfirmExchangeTradeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmExchangeTradeRequest] (val x: Self) extends AnyVal {
     
     inline def setExtraField(value: String): Self = StObject.set(x, "extraField", value.asInstanceOf[js.Any])
     

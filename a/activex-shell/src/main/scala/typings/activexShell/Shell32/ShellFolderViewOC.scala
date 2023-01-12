@@ -30,7 +30,8 @@ object ShellFolderViewOC {
     __obj.asInstanceOf[ShellFolderViewOC]
   }
   
-  extension [Self <: ShellFolderViewOC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShellFolderViewOC] (val x: Self) extends AnyVal {
     
     inline def setSetFolderView(value: ShellFolderView => Unit): Self = StObject.set(x, "SetFolderView", js.Any.fromFunction1(value))
     

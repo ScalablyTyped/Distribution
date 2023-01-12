@@ -100,7 +100,8 @@ object AMap {
         __obj.asInstanceOf[District]
       }
       
-      extension [Self <: District](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: District] (val x: Self) extends AnyVal {
         
         inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
         
@@ -142,7 +143,8 @@ object AMap {
         __obj.asInstanceOf[EventMap]
       }
       
-      extension [Self <: EventMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
         
         inline def setComplete(value: Event_[complete, SearchResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
         
@@ -204,7 +206,8 @@ object AMap {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setExtensions(value: base | all): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
         
@@ -243,7 +246,8 @@ object AMap {
         __obj.asInstanceOf[SearchResult]
       }
       
-      extension [Self <: SearchResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
         
         inline def setDistrictList(value: js.Array[District]): Self = StObject.set(x, "districtList", value.asInstanceOf[js.Any])
         

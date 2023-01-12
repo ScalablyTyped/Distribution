@@ -35,7 +35,8 @@ object OldCircularArc {
     __obj.asInstanceOf[OldCircularArc]
   }
   
-  extension [Self <: OldCircularArc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OldCircularArc] (val x: Self) extends AnyVal {
     
     inline def setA(
       value: js.Tuple4[

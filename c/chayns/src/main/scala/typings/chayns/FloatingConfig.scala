@@ -28,7 +28,8 @@ object FloatingConfig {
     __obj.asInstanceOf[FloatingConfig]
   }
   
-  extension [Self <: FloatingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingConfig] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object AutoscalingPolicyScaleInControl {
     __obj.asInstanceOf[AutoscalingPolicyScaleInControl]
   }
   
-  extension [Self <: AutoscalingPolicyScaleInControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingPolicyScaleInControl] (val x: Self) extends AnyVal {
     
     inline def setMaxScaledInReplicas(value: FixedOrPercent): Self = StObject.set(x, "maxScaledInReplicas", value.asInstanceOf[js.Any])
     

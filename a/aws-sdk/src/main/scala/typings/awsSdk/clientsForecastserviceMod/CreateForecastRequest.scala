@@ -38,7 +38,8 @@ object CreateForecastRequest {
     __obj.asInstanceOf[CreateForecastRequest]
   }
   
-  extension [Self <: CreateForecastRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateForecastRequest] (val x: Self) extends AnyVal {
     
     inline def setForecastName(value: Name): Self = StObject.set(x, "ForecastName", value.asInstanceOf[js.Any])
     

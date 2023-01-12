@@ -42,7 +42,8 @@ object WorkItemTypeCategory {
     __obj.asInstanceOf[WorkItemTypeCategory]
   }
   
-  extension [Self <: WorkItemTypeCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemTypeCategory] (val x: Self) extends AnyVal {
     
     inline def setDefaultWorkItemType(value: WorkItemTypeReference): Self = StObject.set(x, "defaultWorkItemType", value.asInstanceOf[js.Any])
     

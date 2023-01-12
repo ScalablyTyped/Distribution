@@ -43,7 +43,8 @@ object CreateStreamingURLRequest {
     __obj.asInstanceOf[CreateStreamingURLRequest]
   }
   
-  extension [Self <: CreateStreamingURLRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStreamingURLRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

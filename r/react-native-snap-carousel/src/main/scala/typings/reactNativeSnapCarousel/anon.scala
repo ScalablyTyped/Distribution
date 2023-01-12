@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Index[T]]
     }
     
-    extension [Self <: Index[?], T](x: Self & Index[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index[?], T] (val x: Self & Index[T]) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[InputRange]
     }
     
-    extension [Self <: InputRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputRange] (val x: Self) extends AnyVal {
       
       inline def setInputRange(value: js.Array[Double]): Self = StObject.set(x, "inputRange", value.asInstanceOf[js.Any])
       

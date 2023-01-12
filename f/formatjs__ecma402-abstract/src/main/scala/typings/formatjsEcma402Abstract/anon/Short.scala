@@ -20,7 +20,8 @@ object Short {
     __obj.asInstanceOf[Short]
   }
   
-  extension [Self <: Short](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Short] (val x: Self) extends AnyVal {
     
     inline def setLong(value: EraData): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     

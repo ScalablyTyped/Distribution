@@ -31,7 +31,8 @@ object OutlineSettings {
     __obj.asInstanceOf[OutlineSettings]
   }
   
-  extension [Self <: OutlineSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlineSettings] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

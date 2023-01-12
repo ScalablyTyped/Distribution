@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[ContainerRef]
     }
     
-    extension [Self <: ContainerRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerRef] (val x: Self) extends AnyVal {
       
       inline def setContainerRef(value: MutableRefObject[Null]): Self = StObject.set(x, "containerRef", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object anon {
       __obj.asInstanceOf[DefaultClassName]
     }
     
-    extension [Self <: DefaultClassName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultClassName] (val x: Self) extends AnyVal {
       
       inline def setDefaultClassName(value: String): Self = StObject.set(x, "defaultClassName", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object anon {
       __obj.asInstanceOf[EventHandlers]
     }
     
-    extension [Self <: EventHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventHandlers] (val x: Self) extends AnyVal {
       
       inline def setEventHandlers(value: DOMAttributes[HTMLElement]): Self = StObject.set(x, "eventHandlers", value.asInstanceOf[js.Any])
       

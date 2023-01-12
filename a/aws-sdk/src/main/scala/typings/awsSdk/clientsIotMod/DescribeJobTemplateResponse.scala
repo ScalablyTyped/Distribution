@@ -56,7 +56,8 @@ object DescribeJobTemplateResponse {
     __obj.asInstanceOf[DescribeJobTemplateResponse]
   }
   
-  extension [Self <: DescribeJobTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeJobTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setAbortConfig(value: AbortConfig): Self = StObject.set(x, "abortConfig", value.asInstanceOf[js.Any])
     

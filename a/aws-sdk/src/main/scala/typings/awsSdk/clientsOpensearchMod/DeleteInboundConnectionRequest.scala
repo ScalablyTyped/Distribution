@@ -18,7 +18,8 @@ object DeleteInboundConnectionRequest {
     __obj.asInstanceOf[DeleteInboundConnectionRequest]
   }
   
-  extension [Self <: DeleteInboundConnectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteInboundConnectionRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
   }

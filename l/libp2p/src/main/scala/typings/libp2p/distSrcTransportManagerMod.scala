@@ -97,7 +97,8 @@ object distSrcTransportManagerMod {
       __obj.asInstanceOf[DefaultTransportManagerComponents]
     }
     
-    extension [Self <: DefaultTransportManagerComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultTransportManagerComponents] (val x: Self) extends AnyVal {
       
       inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object distSrcTransportManagerMod {
       __obj.asInstanceOf[TransportManagerInit]
     }
     
-    extension [Self <: TransportManagerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportManagerInit] (val x: Self) extends AnyVal {
       
       inline def setFaultTolerance(value: FaultTolerance): Self = StObject.set(x, "faultTolerance", value.asInstanceOf[js.Any])
       

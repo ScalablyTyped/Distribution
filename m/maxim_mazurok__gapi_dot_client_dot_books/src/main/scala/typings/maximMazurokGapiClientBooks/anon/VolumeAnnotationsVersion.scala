@@ -22,7 +22,8 @@ object VolumeAnnotationsVersion {
     __obj.asInstanceOf[VolumeAnnotationsVersion]
   }
   
-  extension [Self <: VolumeAnnotationsVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeAnnotationsVersion] (val x: Self) extends AnyVal {
     
     inline def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     

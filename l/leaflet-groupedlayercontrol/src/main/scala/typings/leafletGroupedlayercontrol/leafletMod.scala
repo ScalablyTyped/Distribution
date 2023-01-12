@@ -61,7 +61,8 @@ object leafletMod {
       __obj.asInstanceOf[GroupedLayersOptions]
     }
     
-    extension [Self <: GroupedLayersOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupedLayersOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoZIndex(value: Boolean): Self = StObject.set(x, "autoZIndex", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object internalCircleRippleMod {
       __obj.asInstanceOf[CircleRippleProps]
     }
     
-    extension [Self <: CircleRippleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircleRippleProps] (val x: Self) extends AnyVal {
       
       inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
       

@@ -101,7 +101,8 @@ object ganttConfig {
     __obj.asInstanceOf[ganttConfig]
   }
   
-  extension [Self <: ganttConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ganttConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object UpdateCounterexampleParams {
     __obj.asInstanceOf[UpdateCounterexampleParams]
   }
   
-  extension [Self <: UpdateCounterexampleParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCounterexampleParams] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

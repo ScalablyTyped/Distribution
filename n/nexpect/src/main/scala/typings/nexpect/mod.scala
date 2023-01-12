@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[ISpawnOptions]
     }
     
-    extension [Self <: ISpawnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpawnOptions] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object MlDetectorRead {
     __obj.asInstanceOf[MlDetectorRead]
   }
   
-  extension [Self <: MlDetectorRead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDetectorRead] (val x: Self) extends AnyVal {
     
     inline def setBy_field_name(value: Field): Self = StObject.set(x, "by_field_name", value.asInstanceOf[js.Any])
     

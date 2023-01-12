@@ -21,7 +21,8 @@ object AvailableGenreSeedsResponse {
     __obj.asInstanceOf[AvailableGenreSeedsResponse]
   }
   
-  extension [Self <: AvailableGenreSeedsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvailableGenreSeedsResponse] (val x: Self) extends AnyVal {
     
     inline def setGenres(value: js.Array[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     

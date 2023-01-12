@@ -21,7 +21,8 @@ object ClassKeyTableSortLabelClassKeyDefaultComponent {
     __obj.asInstanceOf[ClassKeyTableSortLabelClassKeyDefaultComponent]
   }
   
-  extension [Self <: ClassKeyTableSortLabelClassKeyDefaultComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassKeyTableSortLabelClassKeyDefaultComponent] (val x: Self) extends AnyVal {
     
     inline def setClassKey(value: TableSortLabelClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object StockChartNavigatorCategoryAxis {
     __obj.asInstanceOf[StockChartNavigatorCategoryAxis]
   }
   
-  extension [Self <: StockChartNavigatorCategoryAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartNavigatorCategoryAxis] (val x: Self) extends AnyVal {
     
     inline def setAutoBaseUnitSteps(value: StockChartNavigatorCategoryAxisAutoBaseUnitSteps): Self = StObject.set(x, "autoBaseUnitSteps", value.asInstanceOf[js.Any])
     

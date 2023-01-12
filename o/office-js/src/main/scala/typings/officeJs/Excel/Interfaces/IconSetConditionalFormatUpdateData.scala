@@ -71,7 +71,8 @@ object IconSetConditionalFormatUpdateData {
     __obj.asInstanceOf[IconSetConditionalFormatUpdateData]
   }
   
-  extension [Self <: IconSetConditionalFormatUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconSetConditionalFormatUpdateData] (val x: Self) extends AnyVal {
     
     inline def setCriteria(value: js.Array[ConditionalIconCriterion]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     

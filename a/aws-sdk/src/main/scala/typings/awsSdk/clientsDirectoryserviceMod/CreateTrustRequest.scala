@@ -53,7 +53,8 @@ object CreateTrustRequest {
     __obj.asInstanceOf[CreateTrustRequest]
   }
   
-  extension [Self <: CreateTrustRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTrustRequest] (val x: Self) extends AnyVal {
     
     inline def setConditionalForwarderIpAddrs(value: DnsIpAddrs): Self = StObject.set(x, "ConditionalForwarderIpAddrs", value.asInstanceOf[js.Any])
     

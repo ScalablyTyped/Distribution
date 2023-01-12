@@ -28,7 +28,8 @@ object ResourceError {
     __obj.asInstanceOf[ResourceError]
   }
   
-  extension [Self <: ResourceError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceError] (val x: Self) extends AnyVal {
     
     inline def setLogicalResourceId(value: String255): Self = StObject.set(x, "logicalResourceId", value.asInstanceOf[js.Any])
     

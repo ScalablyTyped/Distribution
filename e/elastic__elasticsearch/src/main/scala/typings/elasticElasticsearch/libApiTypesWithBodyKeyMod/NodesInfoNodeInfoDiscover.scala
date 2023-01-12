@@ -15,7 +15,8 @@ object NodesInfoNodeInfoDiscover {
     __obj.asInstanceOf[NodesInfoNodeInfoDiscover]
   }
   
-  extension [Self <: NodesInfoNodeInfoDiscover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoDiscover] (val x: Self) extends AnyVal {
     
     inline def setSeed_hosts(value: String): Self = StObject.set(x, "seed_hosts", value.asInstanceOf[js.Any])
   }

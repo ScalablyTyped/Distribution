@@ -36,7 +36,8 @@ object libComponentsExtendedPickerBaseExtendedPickerDottypesMod {
       __obj.asInstanceOf[IBaseExtendedPicker[T]]
     }
     
-    extension [Self <: IBaseExtendedPicker[?], T](x: Self & IBaseExtendedPicker[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseExtendedPicker[?], T] (val x: Self & IBaseExtendedPicker[T]) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
@@ -180,7 +181,8 @@ object libComponentsExtendedPickerBaseExtendedPickerDottypesMod {
       __obj.asInstanceOf[IBaseExtendedPickerProps[T]]
     }
     
-    extension [Self <: IBaseExtendedPickerProps[?], T](x: Self & IBaseExtendedPickerProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseExtendedPickerProps[?], T] (val x: Self & IBaseExtendedPickerProps[T]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

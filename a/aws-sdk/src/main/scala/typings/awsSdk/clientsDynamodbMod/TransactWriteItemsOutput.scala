@@ -23,7 +23,8 @@ object TransactWriteItemsOutput {
     __obj.asInstanceOf[TransactWriteItemsOutput]
   }
   
-  extension [Self <: TransactWriteItemsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactWriteItemsOutput] (val x: Self) extends AnyVal {
     
     inline def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
     

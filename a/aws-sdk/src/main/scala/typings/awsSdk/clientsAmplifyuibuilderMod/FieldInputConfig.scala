@@ -89,7 +89,8 @@ object FieldInputConfig {
     __obj.asInstanceOf[FieldInputConfig]
   }
   
-  extension [Self <: FieldInputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldInputConfig] (val x: Self) extends AnyVal {
     
     inline def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
     

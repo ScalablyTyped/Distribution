@@ -108,7 +108,8 @@ object coreEventsMod {
         __obj.asInstanceOf[typings.interactjsTypes.coreEventsMod.interactjsCoreScopeAugmentingMod.Scope]
       }
       
-      extension [Self <: typings.interactjsTypes.coreEventsMod.interactjsCoreScopeAugmentingMod.Scope](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.interactjsTypes.coreEventsMod.interactjsCoreScopeAugmentingMod.Scope] (val x: Self) extends AnyVal {
         
         inline def setEvents(
           value: ReturnType[

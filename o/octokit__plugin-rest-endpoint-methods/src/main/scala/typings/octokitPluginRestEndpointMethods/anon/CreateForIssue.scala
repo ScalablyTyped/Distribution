@@ -77,7 +77,8 @@ object CreateForIssue {
     __obj.asInstanceOf[CreateForIssue]
   }
   
-  extension [Self <: CreateForIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateForIssue] (val x: Self) extends AnyVal {
     
     inline def setCreateForCommitComment(value: `1296`): Self = StObject.set(x, "createForCommitComment", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object VirtualGatewayAccessLog {
     __obj.asInstanceOf[VirtualGatewayAccessLog]
   }
   
-  extension [Self <: VirtualGatewayAccessLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualGatewayAccessLog] (val x: Self) extends AnyVal {
     
     inline def setFile(value: VirtualGatewayFileAccessLog): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

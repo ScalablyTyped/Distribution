@@ -27,7 +27,8 @@ object ExportResponseData {
     __obj.asInstanceOf[ExportResponseData]
   }
   
-  extension [Self <: ExportResponseData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportResponseData] (val x: Self) extends AnyVal {
     
     inline def setCreationTS(value: Double): Self = StObject.set(x, "CreationTS", value.asInstanceOf[js.Any])
     

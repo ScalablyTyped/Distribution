@@ -15,7 +15,8 @@ object NavigationBindingsEllipseAnnotationOptions {
     __obj.asInstanceOf[NavigationBindingsEllipseAnnotationOptions]
   }
   
-  extension [Self <: NavigationBindingsEllipseAnnotationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationBindingsEllipseAnnotationOptions] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

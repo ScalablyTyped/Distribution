@@ -23,7 +23,8 @@ object GetContentRequest {
     __obj.asInstanceOf[GetContentRequest]
   }
   
-  extension [Self <: GetContentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContentRequest] (val x: Self) extends AnyVal {
     
     inline def setContentId(value: UuidOrArn): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     

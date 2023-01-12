@@ -23,7 +23,8 @@ object TermvectorsTerm {
     __obj.asInstanceOf[TermvectorsTerm]
   }
   
-  extension [Self <: TermvectorsTerm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TermvectorsTerm] (val x: Self) extends AnyVal {
     
     inline def setDoc_freq(value: integer): Self = StObject.set(x, "doc_freq", value.asInstanceOf[js.Any])
     

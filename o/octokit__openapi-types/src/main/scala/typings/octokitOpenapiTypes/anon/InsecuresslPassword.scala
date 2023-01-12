@@ -27,7 +27,8 @@ object InsecuresslPassword {
     __obj.asInstanceOf[InsecuresslPassword]
   }
   
-  extension [Self <: InsecuresslPassword](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsecuresslPassword] (val x: Self) extends AnyVal {
     
     inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     

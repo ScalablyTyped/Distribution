@@ -23,7 +23,8 @@ object MobileDeviceAccessMatchedRule {
     __obj.asInstanceOf[MobileDeviceAccessMatchedRule]
   }
   
-  extension [Self <: MobileDeviceAccessMatchedRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileDeviceAccessMatchedRule] (val x: Self) extends AnyVal {
     
     inline def setMobileDeviceAccessRuleId(value: MobileDeviceAccessRuleId): Self = StObject.set(x, "MobileDeviceAccessRuleId", value.asInstanceOf[js.Any])
     

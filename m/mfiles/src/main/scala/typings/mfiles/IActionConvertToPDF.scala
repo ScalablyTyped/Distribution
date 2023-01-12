@@ -29,7 +29,8 @@ object IActionConvertToPDF {
     __obj.asInstanceOf[IActionConvertToPDF]
   }
   
-  extension [Self <: IActionConvertToPDF](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IActionConvertToPDF] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IActionConvertToPDF): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

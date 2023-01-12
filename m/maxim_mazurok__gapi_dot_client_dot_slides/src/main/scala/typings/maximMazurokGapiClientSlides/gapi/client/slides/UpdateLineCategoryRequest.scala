@@ -19,7 +19,8 @@ object UpdateLineCategoryRequest {
     __obj.asInstanceOf[UpdateLineCategoryRequest]
   }
   
-  extension [Self <: UpdateLineCategoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLineCategoryRequest] (val x: Self) extends AnyVal {
     
     inline def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
     

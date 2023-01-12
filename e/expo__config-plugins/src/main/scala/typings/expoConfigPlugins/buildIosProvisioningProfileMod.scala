@@ -29,7 +29,8 @@ object buildIosProvisioningProfileMod {
       __obj.asInstanceOf[ProvisioningProfileSettings]
     }
     
-    extension [Self <: ProvisioningProfileSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvisioningProfileSettings] (val x: Self) extends AnyVal {
       
       inline def setAppleTeamId(value: String): Self = StObject.set(x, "appleTeamId", value.asInstanceOf[js.Any])
       

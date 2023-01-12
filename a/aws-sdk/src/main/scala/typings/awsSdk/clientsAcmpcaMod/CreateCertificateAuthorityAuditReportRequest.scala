@@ -32,7 +32,8 @@ object CreateCertificateAuthorityAuditReportRequest {
     __obj.asInstanceOf[CreateCertificateAuthorityAuditReportRequest]
   }
   
-  extension [Self <: CreateCertificateAuthorityAuditReportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCertificateAuthorityAuditReportRequest] (val x: Self) extends AnyVal {
     
     inline def setAuditReportResponseFormat(value: AuditReportResponseFormat): Self = StObject.set(x, "AuditReportResponseFormat", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ComponentConfigurationUpdate {
     __obj.asInstanceOf[ComponentConfigurationUpdate]
   }
   
-  extension [Self <: ComponentConfigurationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentConfigurationUpdate] (val x: Self) extends AnyVal {
     
     inline def setMerge(value: ComponentConfigurationString): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object ChangeFloatingObjectTextWrappingCommand {
     __obj.asInstanceOf[ChangeFloatingObjectTextWrappingCommand]
   }
   
-  extension [Self <: ChangeFloatingObjectTextWrappingCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeFloatingObjectTextWrappingCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: FloatingObjectTextWrappingSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

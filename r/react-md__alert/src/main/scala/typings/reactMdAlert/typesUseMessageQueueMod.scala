@@ -57,7 +57,8 @@ object typesUseMessageQueueMod {
       __obj.asInstanceOf[AddMessageAction[M]]
     }
     
-    extension [Self <: AddMessageAction[?], M /* <: Message */](x: Self & AddMessageAction[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddMessageAction[?], M /* <: Message */] (val x: Self & AddMessageAction[M]) extends AnyVal {
       
       inline def setDuplicates(value: DuplicateBehavior): Self = StObject.set(x, "duplicates", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object typesUseMessageQueueMod {
       __obj.asInstanceOf[MessageQueueOptions[M]]
     }
     
-    extension [Self <: MessageQueueOptions[?], M /* <: Message */](x: Self & MessageQueueOptions[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageQueueOptions[?], M /* <: Message */] (val x: Self & MessageQueueOptions[M]) extends AnyVal {
       
       inline def setDefaultQueue(value: js.Array[M]): Self = StObject.set(x, "defaultQueue", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object typesUseMessageQueueMod {
       __obj.asInstanceOf[MessageQueueResult[M]]
     }
     
-    extension [Self <: MessageQueueResult[?], M /* <: Message */](x: Self & MessageQueueResult[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageQueueResult[?], M /* <: Message */] (val x: Self & MessageQueueResult[M]) extends AnyVal {
       
       inline def setAddMessage(value: M => Unit): Self = StObject.set(x, "addMessage", js.Any.fromFunction1(value))
       
@@ -180,7 +183,8 @@ object typesUseMessageQueueMod {
       __obj.asInstanceOf[PopMessageAction]
     }
     
-    extension [Self <: PopMessageAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopMessageAction] (val x: Self) extends AnyVal {
       
       inline def setType(value: /* "POP_MESSAGE" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -200,7 +204,8 @@ object typesUseMessageQueueMod {
       __obj.asInstanceOf[ResetQueueAction]
     }
     
-    extension [Self <: ResetQueueAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResetQueueAction] (val x: Self) extends AnyVal {
       
       inline def setType(value: /* "RESET_QUEUE" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

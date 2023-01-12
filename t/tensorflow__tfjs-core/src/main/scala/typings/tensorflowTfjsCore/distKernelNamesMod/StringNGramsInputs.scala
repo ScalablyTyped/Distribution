@@ -18,7 +18,8 @@ object StringNGramsInputs {
     __obj.asInstanceOf[StringNGramsInputs]
   }
   
-  extension [Self <: StringNGramsInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringNGramsInputs] (val x: Self) extends AnyVal {
     
     inline def setData(value: scala.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

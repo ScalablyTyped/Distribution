@@ -48,7 +48,8 @@ object Typeofconstants {
     __obj.asInstanceOf[Typeofconstants]
   }
   
-  extension [Self <: Typeofconstants](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofconstants] (val x: Self) extends AnyVal {
     
     inline def setAddressZero(value: /* "0x0000000000000000000000000000000000000000" */ String): Self = StObject.set(x, "AddressZero", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object libMessagingBatchRequestInternalMod {
       __obj.asInstanceOf[SubRequest]
     }
     
-    extension [Self <: SubRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubRequest] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object ListDatabasesOptions {
     __obj.asInstanceOf[ListDatabasesOptions]
   }
   
-  extension [Self <: ListDatabasesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDatabasesOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthorizedDatabases(value: Boolean): Self = StObject.set(x, "authorizedDatabases", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ExitMiniProgramOption {
     __obj.asInstanceOf[ExitMiniProgramOption]
   }
   
-  extension [Self <: ExitMiniProgramOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExitMiniProgramOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

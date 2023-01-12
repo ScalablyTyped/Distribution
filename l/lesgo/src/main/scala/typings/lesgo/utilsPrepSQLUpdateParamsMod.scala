@@ -30,7 +30,8 @@ object utilsPrepSQLUpdateParamsMod {
       __obj.asInstanceOf[SQLUpdateParams]
     }
     
-    extension [Self <: SQLUpdateParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQLUpdateParams] (val x: Self) extends AnyVal {
       
       inline def setUpdateColumnValues(value: String): Self = StObject.set(x, "updateColumnValues", value.asInstanceOf[js.Any])
       

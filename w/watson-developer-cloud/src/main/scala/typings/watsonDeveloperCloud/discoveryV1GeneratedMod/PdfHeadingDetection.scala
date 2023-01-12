@@ -16,7 +16,8 @@ object PdfHeadingDetection {
     __obj.asInstanceOf[PdfHeadingDetection]
   }
   
-  extension [Self <: PdfHeadingDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PdfHeadingDetection] (val x: Self) extends AnyVal {
     
     inline def setFonts(value: js.Array[FontSetting]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     

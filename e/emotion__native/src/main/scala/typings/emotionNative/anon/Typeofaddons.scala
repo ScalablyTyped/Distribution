@@ -16,7 +16,8 @@ object Typeofaddons {
     __obj.asInstanceOf[Typeofaddons]
   }
   
-  extension [Self <: Typeofaddons](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofaddons] (val x: Self) extends AnyVal {
     
     inline def setTestModule(value: TestModuleStatic): Self = StObject.set(x, "TestModule", value.asInstanceOf[js.Any])
   }

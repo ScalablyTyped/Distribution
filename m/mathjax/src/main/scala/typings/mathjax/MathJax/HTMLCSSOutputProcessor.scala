@@ -117,7 +117,8 @@ object HTMLCSSOutputProcessor {
     __obj.asInstanceOf[HTMLCSSOutputProcessor]
   }
   
-  extension [Self <: HTMLCSSOutputProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLCSSOutputProcessor] (val x: Self) extends AnyVal {
     
     inline def setAvailableFonts(value: js.Array[String]): Self = StObject.set(x, "availableFonts", value.asInstanceOf[js.Any])
     

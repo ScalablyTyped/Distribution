@@ -23,7 +23,8 @@ object EditorImageBrowser {
     __obj.asInstanceOf[EditorImageBrowser]
   }
   
-  extension [Self <: EditorImageBrowser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorImageBrowser] (val x: Self) extends AnyVal {
     
     inline def setFileTypes(value: String): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     

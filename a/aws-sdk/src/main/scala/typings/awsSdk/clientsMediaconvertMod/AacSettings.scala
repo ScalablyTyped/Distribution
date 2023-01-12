@@ -58,7 +58,8 @@ object AacSettings {
     __obj.asInstanceOf[AacSettings]
   }
   
-  extension [Self <: AacSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AacSettings] (val x: Self) extends AnyVal {
     
     inline def setAudioDescriptionBroadcasterMix(value: AacAudioDescriptionBroadcasterMix): Self = StObject.set(x, "AudioDescriptionBroadcasterMix", value.asInstanceOf[js.Any])
     

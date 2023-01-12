@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[ClientId]
     }
     
-    extension [Self <: ClientId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientId] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: String => Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
@@ -140,7 +143,8 @@ object anon {
       __obj.asInstanceOf[MaxReconnectAttempts]
     }
     
-    extension [Self <: MaxReconnectAttempts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxReconnectAttempts] (val x: Self) extends AnyVal {
       
       inline def setMaxReconnectAttempts(value: Double): Self = StObject.set(x, "maxReconnectAttempts", value.asInstanceOf[js.Any])
       
@@ -193,7 +197,8 @@ object anon {
       __obj.asInstanceOf[Password]
     }
     
-    extension [Self <: Password](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String | (js.Function0[String | js.Promise[String]])): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       

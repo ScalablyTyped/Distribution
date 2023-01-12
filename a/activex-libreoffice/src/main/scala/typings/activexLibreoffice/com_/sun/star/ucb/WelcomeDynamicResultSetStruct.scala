@@ -27,7 +27,8 @@ object WelcomeDynamicResultSetStruct {
     __obj.asInstanceOf[WelcomeDynamicResultSetStruct]
   }
   
-  extension [Self <: WelcomeDynamicResultSetStruct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WelcomeDynamicResultSetStruct] (val x: Self) extends AnyVal {
     
     inline def setNew(value: XResultSet): Self = StObject.set(x, "New", value.asInstanceOf[js.Any])
     

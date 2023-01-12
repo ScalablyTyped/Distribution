@@ -48,7 +48,8 @@ object CreateImpersonationRoleRequest {
     __obj.asInstanceOf[CreateImpersonationRoleRequest]
   }
   
-  extension [Self <: CreateImpersonationRoleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateImpersonationRoleRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotencyClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

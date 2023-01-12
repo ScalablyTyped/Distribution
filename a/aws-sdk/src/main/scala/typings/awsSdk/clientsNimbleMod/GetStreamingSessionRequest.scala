@@ -23,7 +23,8 @@ object GetStreamingSessionRequest {
     __obj.asInstanceOf[GetStreamingSessionRequest]
   }
   
-  extension [Self <: GetStreamingSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStreamingSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PathCommitshaOwnerQuery407 {
     __obj.asInstanceOf[PathCommitshaOwnerQuery407]
   }
   
-  extension [Self <: PathCommitshaOwnerQuery407](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathCommitshaOwnerQuery407] (val x: Self) extends AnyVal {
     
     inline def setPath(value: CommitshaOwner): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

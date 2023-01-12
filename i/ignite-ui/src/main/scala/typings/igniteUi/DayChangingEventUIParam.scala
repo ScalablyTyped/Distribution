@@ -28,7 +28,8 @@ object DayChangingEventUIParam {
     __obj.asInstanceOf[DayChangingEventUIParam]
   }
   
-  extension [Self <: DayChangingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayChangingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCurrentSelectedDate(value: Any): Self = StObject.set(x, "currentSelectedDate", value.asInstanceOf[js.Any])
     

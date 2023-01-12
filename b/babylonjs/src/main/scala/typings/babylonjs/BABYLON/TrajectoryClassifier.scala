@@ -58,7 +58,8 @@ object TrajectoryClassifier {
     __obj.asInstanceOf[TrajectoryClassifier]
   }
   
-  extension [Self <: TrajectoryClassifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrajectoryClassifier] (val x: Self) extends AnyVal {
     
     inline def setAddTrajectoryToClassification(value: (Trajectory, String) => Unit): Self = StObject.set(x, "addTrajectoryToClassification", js.Any.fromFunction2(value))
     

@@ -17,7 +17,8 @@ object InsertTableMaxSizeOptions {
     __obj.asInstanceOf[InsertTableMaxSizeOptions]
   }
   
-  extension [Self <: InsertTableMaxSizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertTableMaxSizeOptions] (val x: Self) extends AnyVal {
     
     inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object buildIosCodeModMod {
       __obj.asInstanceOf[InsertContentFunctionOptions]
     }
     
-    extension [Self <: InsertContentFunctionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InsertContentFunctionOptions] (val x: Self) extends AnyVal {
       
       inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       

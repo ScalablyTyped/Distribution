@@ -18,7 +18,8 @@ object StartStudioSSOConfigurationRepairResponse {
     __obj.asInstanceOf[StartStudioSSOConfigurationRepairResponse]
   }
   
-  extension [Self <: StartStudioSSOConfigurationRepairResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartStudioSSOConfigurationRepairResponse] (val x: Self) extends AnyVal {
     
     inline def setStudio(value: Studio): Self = StObject.set(x, "studio", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object Firehose {
     __obj.asInstanceOf[Firehose]
   }
   
-  extension [Self <: Firehose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Firehose] (val x: Self) extends AnyVal {
     
     inline def setDeliveryStream(value: string): Self = StObject.set(x, "DeliveryStream", value.asInstanceOf[js.Any])
     

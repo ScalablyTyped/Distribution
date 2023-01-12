@@ -54,7 +54,8 @@ object MinNodeName {
     __obj.asInstanceOf[MinNodeName]
   }
   
-  extension [Self <: MinNodeName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinNodeName] (val x: Self) extends AnyVal {
     
     inline def setComponentProperty(value: xAxis | yAxis | button | state): Self = StObject.set(x, "componentProperty", value.asInstanceOf[js.Any])
     

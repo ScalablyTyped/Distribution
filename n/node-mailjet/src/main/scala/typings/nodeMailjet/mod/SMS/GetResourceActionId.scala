@@ -15,7 +15,8 @@ object GetResourceActionId {
     __obj.asInstanceOf[GetResourceActionId]
   }
   
-  extension [Self <: GetResourceActionId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourceActionId] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: () => js.Promise[ExportResponse]): Self = StObject.set(x, "request", js.Any.fromFunction0(value))
   }

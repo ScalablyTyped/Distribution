@@ -28,7 +28,8 @@ object UpdateCostAllocationTagsStatusError {
     __obj.asInstanceOf[UpdateCostAllocationTagsStatusError]
   }
   
-  extension [Self <: UpdateCostAllocationTagsStatusError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCostAllocationTagsStatusError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: GenericString): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

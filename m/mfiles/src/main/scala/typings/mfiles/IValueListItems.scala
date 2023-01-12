@@ -17,7 +17,8 @@ object IValueListItems {
     __obj.asInstanceOf[IValueListItems]
   }
   
-  extension [Self <: IValueListItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IValueListItems] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListEulaAcceptancesResponse {
     __obj.asInstanceOf[ListEulaAcceptancesResponse]
   }
   
-  extension [Self <: ListEulaAcceptancesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEulaAcceptancesResponse] (val x: Self) extends AnyVal {
     
     inline def setEulaAcceptances(value: EulaAcceptanceList): Self = StObject.set(x, "eulaAcceptances", value.asInstanceOf[js.Any])
     

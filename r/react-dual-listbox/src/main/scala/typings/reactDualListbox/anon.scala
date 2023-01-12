@@ -45,7 +45,8 @@ object anon {
       __obj.asInstanceOf[kinavailableFilterHeadera]
     }
     
-    extension [Self <: kinavailableFilterHeadera](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: kinavailableFilterHeadera] (val x: Self) extends AnyVal {
       
       inline def setAvailableFilterHeader(value: String): Self = StObject.set(x, "availableFilterHeader", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object anon {
       __obj.asInstanceOf[kinmoveLeftmoveAllLeftmov]
     }
     
-    extension [Self <: kinmoveLeftmoveAllLeftmov](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: kinmoveLeftmoveAllLeftmov] (val x: Self) extends AnyVal {
       
       inline def setMoveAllLeft(value: ReactNode): Self = StObject.set(x, "moveAllLeft", value.asInstanceOf[js.Any])
       

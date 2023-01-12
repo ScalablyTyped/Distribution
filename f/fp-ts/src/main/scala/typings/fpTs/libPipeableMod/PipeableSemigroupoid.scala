@@ -25,7 +25,8 @@ object PipeableSemigroupoid {
     __obj.asInstanceOf[PipeableSemigroupoid[F]]
   }
   
-  extension [Self <: PipeableSemigroupoid[?], F](x: Self & PipeableSemigroupoid[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableSemigroupoid[?], F] (val x: Self & PipeableSemigroupoid[F]) extends AnyVal {
     
     inline def setCompose(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, E, A> */ Any => js.Function1[

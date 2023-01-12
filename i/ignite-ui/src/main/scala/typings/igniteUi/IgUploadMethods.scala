@@ -112,7 +112,8 @@ object IgUploadMethods {
     __obj.asInstanceOf[IgUploadMethods]
   }
   
-  extension [Self <: IgUploadMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgUploadMethods] (val x: Self) extends AnyVal {
     
     inline def setAddDataField(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "addDataField", js.Any.fromFunction2(value))
     

@@ -181,7 +181,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConsoleRunnerOptions]
     }
     
-    extension [Self <: ConsoleRunnerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsoleRunnerOptions] (val x: Self) extends AnyVal {
       
       inline def setApartment(value: String): Self = StObject.set(x, "apartment", value.asInstanceOf[js.Any])
       
@@ -384,7 +385,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setExecutable(value: String): Self = StObject.set(x, "executable", value.asInstanceOf[js.Any])
       

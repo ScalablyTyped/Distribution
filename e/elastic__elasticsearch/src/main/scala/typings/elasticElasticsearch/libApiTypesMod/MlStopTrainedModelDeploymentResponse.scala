@@ -15,7 +15,8 @@ object MlStopTrainedModelDeploymentResponse {
     __obj.asInstanceOf[MlStopTrainedModelDeploymentResponse]
   }
   
-  extension [Self <: MlStopTrainedModelDeploymentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlStopTrainedModelDeploymentResponse] (val x: Self) extends AnyVal {
     
     inline def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object DeregisterInstanceEventNotificationAttributesResult {
     __obj.asInstanceOf[DeregisterInstanceEventNotificationAttributesResult]
   }
   
-  extension [Self <: DeregisterInstanceEventNotificationAttributesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterInstanceEventNotificationAttributesResult] (val x: Self) extends AnyVal {
     
     inline def setInstanceTagAttribute(value: InstanceTagNotificationAttribute): Self = StObject.set(x, "InstanceTagAttribute", value.asInstanceOf[js.Any])
     

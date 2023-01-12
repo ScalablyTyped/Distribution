@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[ObjectFit]
     }
     
-    extension [Self <: ObjectFit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectFit] (val x: Self) extends AnyVal {
       
       inline def setObjectFit(value: /* template literal string: fill */ String): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[WasCached]
     }
     
-    extension [Self <: WasCached](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WasCached] (val x: Self) extends AnyVal {
       
       inline def setWasCached(value: Boolean): Self = StObject.set(x, "wasCached", value.asInstanceOf[js.Any])
     }

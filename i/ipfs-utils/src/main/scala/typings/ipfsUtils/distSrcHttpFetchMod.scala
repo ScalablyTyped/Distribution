@@ -38,7 +38,8 @@ object distSrcHttpFetchMod extends Shortcut {
       __obj.asInstanceOf[fetchImpl]
     }
     
-    extension [Self <: fetchImpl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: fetchImpl] (val x: Self) extends AnyVal {
       
       inline def setFetch(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis.fetch */ Any

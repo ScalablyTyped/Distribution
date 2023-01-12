@@ -38,7 +38,8 @@ object DictionaryVariable {
     __obj.asInstanceOf[DictionaryVariable]
   }
   
-  extension [Self <: DictionaryVariable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictionaryVariable] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

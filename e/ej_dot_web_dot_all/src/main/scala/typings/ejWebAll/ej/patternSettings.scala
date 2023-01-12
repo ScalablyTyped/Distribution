@@ -31,7 +31,8 @@ object patternSettings {
     __obj.asInstanceOf[patternSettings]
   }
   
-  extension [Self <: patternSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: patternSettings] (val x: Self) extends AnyVal {
     
     inline def setD(value: String): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
     

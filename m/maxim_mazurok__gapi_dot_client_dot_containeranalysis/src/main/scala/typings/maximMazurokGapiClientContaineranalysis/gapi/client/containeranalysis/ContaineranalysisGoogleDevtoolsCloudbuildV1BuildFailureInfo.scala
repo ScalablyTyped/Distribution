@@ -19,7 +19,8 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1BuildFailureInfo {
     __obj.asInstanceOf[ContaineranalysisGoogleDevtoolsCloudbuildV1BuildFailureInfo]
   }
   
-  extension [Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1BuildFailureInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1BuildFailureInfo] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

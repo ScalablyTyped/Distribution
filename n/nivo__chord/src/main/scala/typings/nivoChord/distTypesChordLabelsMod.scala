@@ -31,7 +31,8 @@ object distTypesChordLabelsMod {
       __obj.asInstanceOf[ChordLabelsProps]
     }
     
-    extension [Self <: ChordLabelsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChordLabelsProps] (val x: Self) extends AnyVal {
       
       inline def setArcs(value: js.Array[ArcDatum]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
       

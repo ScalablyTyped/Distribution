@@ -16,7 +16,8 @@ object NavigationNavigationHelpersCommon {
     __obj.asInstanceOf[NavigationNavigationHelpersCommon]
   }
   
-  extension [Self <: NavigationNavigationHelpersCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationNavigationHelpersCommon] (val x: Self) extends AnyVal {
     
     inline def setNavigation(value: NavigationHelpersCommon[Any, Any]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
   }

@@ -59,7 +59,8 @@ object AverageResponseMetricsV2 {
     __obj.asInstanceOf[AverageResponseMetricsV2]
   }
   
-  extension [Self <: AverageResponseMetricsV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AverageResponseMetricsV2] (val x: Self) extends AnyVal {
     
     inline def setHighPriority(value: Dictk): Self = StObject.set(x, "highPriority", value.asInstanceOf[js.Any])
     

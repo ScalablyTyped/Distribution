@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[Colors]
     }
     
-    extension [Self <: Colors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
       
       inline def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setColorValidator(value: (/* red */ Double, /* green */ Double, /* blue */ Double, /* alpha */ Double) => Boolean): Self = StObject.set(x, "colorValidator", js.Any.fromFunction4(value))
       

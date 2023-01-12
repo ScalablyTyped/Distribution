@@ -32,7 +32,8 @@ object buildSmokeTestModelMod {
       __obj.asInstanceOf[SmokeTestCase]
     }
     
-    extension [Self <: SmokeTestCase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmokeTestCase] (val x: Self) extends AnyVal {
       
       inline def setErrorExpectedFromService(value: Boolean): Self = StObject.set(x, "errorExpectedFromService", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object buildSmokeTestModelMod {
       __obj.asInstanceOf[SmokeTestModel]
     }
     
-    extension [Self <: SmokeTestModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmokeTestModel] (val x: Self) extends AnyVal {
       
       inline def setDefaultRegion(value: String): Self = StObject.set(x, "defaultRegion", value.asInstanceOf[js.Any])
       

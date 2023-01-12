@@ -18,7 +18,8 @@ object CreateRepositoryOutput {
     __obj.asInstanceOf[CreateRepositoryOutput]
   }
   
-  extension [Self <: CreateRepositoryOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRepositoryOutput] (val x: Self) extends AnyVal {
     
     inline def setRepositoryMetadata(value: RepositoryMetadata): Self = StObject.set(x, "repositoryMetadata", value.asInstanceOf[js.Any])
     

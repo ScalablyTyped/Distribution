@@ -21,7 +21,8 @@ object BuildingComponentSublayerViewQueryFeaturesOptions {
     __obj.asInstanceOf[BuildingComponentSublayerViewQueryFeaturesOptions]
   }
   
-  extension [Self <: BuildingComponentSublayerViewQueryFeaturesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingComponentSublayerViewQueryFeaturesOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

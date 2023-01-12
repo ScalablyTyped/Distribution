@@ -23,7 +23,8 @@ object TestCaseFilter {
     __obj.asInstanceOf[TestCaseFilter]
   }
   
-  extension [Self <: TestCaseFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestCaseFilter] (val x: Self) extends AnyVal {
     
     inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object XpackUsageIlm {
     __obj.asInstanceOf[XpackUsageIlm]
   }
   
-  extension [Self <: XpackUsageIlm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageIlm] (val x: Self) extends AnyVal {
     
     inline def setPolicy_count(value: integer): Self = StObject.set(x, "policy_count", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[SetOptions]
       }
       
-      extension [Self <: SetOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
         
         inline def setTTL(value: Double): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
         
@@ -156,7 +157,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[SimpleStorageError]
       }
       
-      extension [Self <: SimpleStorageError](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SimpleStorageError] (val x: Self) extends AnyVal {
         
         inline def setCode(value: StatusCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         

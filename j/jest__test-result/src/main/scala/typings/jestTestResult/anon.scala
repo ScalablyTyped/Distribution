@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Added]
     }
     
-    extension [Self <: Added](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Added] (val x: Self) extends AnyVal {
       
       inline def setAdded(value: Double): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object anon {
       __obj.asInstanceOf[CodeTransformResult]
     }
     
-    extension [Self <: CodeTransformResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeTransformResult] (val x: Self) extends AnyVal {
       
       inline def setCodeTransformResult(value: RuntimeTransformResult): Self = StObject.set(x, "codeTransformResult", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

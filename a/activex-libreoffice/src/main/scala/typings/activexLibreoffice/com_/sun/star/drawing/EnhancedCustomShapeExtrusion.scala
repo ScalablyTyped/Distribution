@@ -119,7 +119,8 @@ object EnhancedCustomShapeExtrusion {
     __obj.asInstanceOf[EnhancedCustomShapeExtrusion]
   }
   
-  extension [Self <: EnhancedCustomShapeExtrusion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedCustomShapeExtrusion] (val x: Self) extends AnyVal {
     
     inline def setBrightness(value: Double): Self = StObject.set(x, "Brightness", value.asInstanceOf[js.Any])
     

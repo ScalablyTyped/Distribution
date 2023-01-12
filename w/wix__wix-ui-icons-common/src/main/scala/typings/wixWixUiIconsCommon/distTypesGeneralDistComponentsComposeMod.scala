@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsComposeMod extends Shortcut {
       __obj.asInstanceOf[ComposeProps]
     }
     
-    extension [Self <: ComposeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComposeProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

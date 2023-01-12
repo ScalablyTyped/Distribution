@@ -37,7 +37,8 @@ object libDomNotationMod {
       __obj.asInstanceOf[Notation]
     }
     
-    extension [Self <: Notation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notation] (val x: Self) extends AnyVal {
       
       inline def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DeleteOutcomeRequest {
     __obj.asInstanceOf[DeleteOutcomeRequest]
   }
   
-  extension [Self <: DeleteOutcomeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteOutcomeRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

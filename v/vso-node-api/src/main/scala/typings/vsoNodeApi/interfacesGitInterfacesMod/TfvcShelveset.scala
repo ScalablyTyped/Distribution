@@ -37,7 +37,8 @@ object TfvcShelveset {
     __obj.asInstanceOf[TfvcShelveset]
   }
   
-  extension [Self <: TfvcShelveset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcShelveset] (val x: Self) extends AnyVal {
     
     inline def setChanges(value: js.Array[TfvcChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     

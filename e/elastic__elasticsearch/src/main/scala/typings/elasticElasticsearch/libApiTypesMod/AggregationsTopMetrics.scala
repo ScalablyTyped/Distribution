@@ -18,7 +18,8 @@ object AggregationsTopMetrics {
     __obj.asInstanceOf[AggregationsTopMetrics]
   }
   
-  extension [Self <: AggregationsTopMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsTopMetrics] (val x: Self) extends AnyVal {
     
     inline def setMetrics(value: Record[String, FieldValue | Null]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     

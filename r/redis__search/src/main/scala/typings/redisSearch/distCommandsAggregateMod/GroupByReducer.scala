@@ -18,7 +18,8 @@ object GroupByReducer {
     __obj.asInstanceOf[GroupByReducer[T]]
   }
   
-  extension [Self <: GroupByReducer[?], T /* <: AggregateGroupByReducers */](x: Self & GroupByReducer[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupByReducer[?], T /* <: AggregateGroupByReducers */] (val x: Self & GroupByReducer[T]) extends AnyVal {
     
     inline def setAS(value: String): Self = StObject.set(x, "AS", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object TimeParam {
     __obj.asInstanceOf[TimeParam]
   }
   
-  extension [Self <: TimeParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeParam] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

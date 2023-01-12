@@ -73,7 +73,8 @@ object ServiceQuota {
     __obj.asInstanceOf[ServiceQuota]
   }
   
-  extension [Self <: ServiceQuota](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceQuota] (val x: Self) extends AnyVal {
     
     inline def setAdjustable(value: QuotaAdjustable): Self = StObject.set(x, "Adjustable", value.asInstanceOf[js.Any])
     

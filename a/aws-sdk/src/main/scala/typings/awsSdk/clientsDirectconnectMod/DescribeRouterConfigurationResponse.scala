@@ -33,7 +33,8 @@ object DescribeRouterConfigurationResponse {
     __obj.asInstanceOf[DescribeRouterConfigurationResponse]
   }
   
-  extension [Self <: DescribeRouterConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRouterConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomerRouterConfig(value: RouterConfig): Self = StObject.set(x, "customerRouterConfig", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TypeofReaderSetReaderDisp {
     __obj.asInstanceOf[TypeofReaderSetReaderDisp]
   }
   
-  extension [Self <: TypeofReaderSetReaderDisp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofReaderSetReaderDisp] (val x: Self) extends AnyVal {
     
     inline def setCart(value: Any): Self = StObject.set(x, "Cart", value.asInstanceOf[js.Any])
   }

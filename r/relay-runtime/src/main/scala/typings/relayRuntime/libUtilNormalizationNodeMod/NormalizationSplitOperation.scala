@@ -31,7 +31,8 @@ object NormalizationSplitOperation {
     __obj.asInstanceOf[NormalizationSplitOperation]
   }
   
-  extension [Self <: NormalizationSplitOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationSplitOperation] (val x: Self) extends AnyVal {
     
     inline def setArgumentDefinitions(value: js.Array[NormalizationLocalArgumentDefinition]): Self = StObject.set(x, "argumentDefinitions", value.asInstanceOf[js.Any])
     

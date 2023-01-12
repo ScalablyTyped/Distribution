@@ -81,7 +81,8 @@ object renderingDepthPeelingSceneComponentMod {
         __obj.asInstanceOf[typings.babylonjs.renderingDepthPeelingSceneComponentMod.babylonjsSceneAugmentingMod.Scene]
       }
       
-      extension [Self <: typings.babylonjs.renderingDepthPeelingSceneComponentMod.babylonjsSceneAugmentingMod.Scene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.renderingDepthPeelingSceneComponentMod.babylonjsSceneAugmentingMod.Scene] (val x: Self) extends AnyVal {
         
         inline def setDepthPeelingRenderer(value: Nullable[DepthPeelingRenderer]): Self = StObject.set(x, "depthPeelingRenderer", value.asInstanceOf[js.Any])
         

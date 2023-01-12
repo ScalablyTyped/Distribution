@@ -73,7 +73,8 @@ object ASPxClientRecurrenceRangeControl {
     __obj.asInstanceOf[ASPxClientRecurrenceRangeControl]
   }
   
-  extension [Self <: ASPxClientRecurrenceRangeControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRecurrenceRangeControl] (val x: Self) extends AnyVal {
     
     inline def setGetEndDate(value: () => js.Date): Self = StObject.set(x, "GetEndDate", js.Any.fromFunction0(value))
     

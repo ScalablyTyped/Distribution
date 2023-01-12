@@ -24,7 +24,8 @@ object IEventInput {
     __obj.asInstanceOf[IEventInput]
   }
   
-  extension [Self <: IEventInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEventInput] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

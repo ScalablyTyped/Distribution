@@ -32,7 +32,8 @@ object distOperationsViewsTypesMod {
       __obj.asInstanceOf[AlterViewColumnOptions]
     }
     
-    extension [Self <: AlterViewColumnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlterViewColumnOptions] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Value): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object distOperationsViewsTypesMod {
       __obj.asInstanceOf[AlterViewOptions]
     }
     
-    extension [Self <: AlterViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlterViewOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckOption(value: CASCADED | LOCAL): Self = StObject.set(x, "checkOption", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object distOperationsViewsTypesMod {
       __obj.asInstanceOf[CreateViewOptions]
     }
     
-    extension [Self <: CreateViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateViewOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckOption(value: CASCADED | LOCAL): Self = StObject.set(x, "checkOption", value.asInstanceOf[js.Any])
       

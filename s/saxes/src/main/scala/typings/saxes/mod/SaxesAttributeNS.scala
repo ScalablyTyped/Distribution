@@ -39,7 +39,8 @@ object SaxesAttributeNS {
     __obj.asInstanceOf[SaxesAttributeNS]
   }
   
-  extension [Self <: SaxesAttributeNS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaxesAttributeNS] (val x: Self) extends AnyVal {
     
     inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     

@@ -143,7 +143,8 @@ object clientsCurMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object clientsCurMod {
       __obj.asInstanceOf[DeleteReportDefinitionRequest]
     }
     
-    extension [Self <: DeleteReportDefinitionRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteReportDefinitionRequest] (val x: Self) extends AnyVal {
       
       inline def setReportName(value: ReportName): Self = StObject.set(x, "ReportName", value.asInstanceOf[js.Any])
       
@@ -197,7 +199,8 @@ object clientsCurMod {
       __obj.asInstanceOf[DeleteReportDefinitionResponse]
     }
     
-    extension [Self <: DeleteReportDefinitionResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteReportDefinitionResponse] (val x: Self) extends AnyVal {
       
       inline def setResponseMessage(value: DeleteResponseMessage): Self = StObject.set(x, "ResponseMessage", value.asInstanceOf[js.Any])
       
@@ -220,7 +223,8 @@ object clientsCurMod {
       __obj.asInstanceOf[DescribeReportDefinitionsRequest]
     }
     
-    extension [Self <: DescribeReportDefinitionsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeReportDefinitionsRequest] (val x: Self) extends AnyVal {
       
       inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
       
@@ -248,7 +252,8 @@ object clientsCurMod {
       __obj.asInstanceOf[DescribeReportDefinitionsResponse]
     }
     
-    extension [Self <: DescribeReportDefinitionsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeReportDefinitionsResponse] (val x: Self) extends AnyVal {
       
       inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
@@ -279,7 +284,8 @@ object clientsCurMod {
       __obj.asInstanceOf[ModifyReportDefinitionRequest]
     }
     
-    extension [Self <: ModifyReportDefinitionRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModifyReportDefinitionRequest] (val x: Self) extends AnyVal {
       
       inline def setReportDefinition(value: ReportDefinition): Self = StObject.set(x, "ReportDefinition", value.asInstanceOf[js.Any])
       
@@ -303,7 +309,8 @@ object clientsCurMod {
       __obj.asInstanceOf[PutReportDefinitionRequest]
     }
     
-    extension [Self <: PutReportDefinitionRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutReportDefinitionRequest] (val x: Self) extends AnyVal {
       
       inline def setReportDefinition(value: ReportDefinition): Self = StObject.set(x, "ReportDefinition", value.asInstanceOf[js.Any])
     }
@@ -370,7 +377,8 @@ object clientsCurMod {
       __obj.asInstanceOf[ReportDefinition]
     }
     
-    extension [Self <: ReportDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportDefinition] (val x: Self) extends AnyVal {
       
       inline def setAdditionalArtifacts(value: AdditionalArtifactList): Self = StObject.set(x, "AdditionalArtifacts", value.asInstanceOf[js.Any])
       

@@ -42,7 +42,8 @@ object SignatureHelpItem {
     __obj.asInstanceOf[SignatureHelpItem]
   }
   
-  extension [Self <: SignatureHelpItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureHelpItem] (val x: Self) extends AnyVal {
     
     inline def setDocumentation(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     

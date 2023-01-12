@@ -21,7 +21,8 @@ object PageScrollToArgs {
     __obj.asInstanceOf[PageScrollToArgs]
   }
   
-  extension [Self <: PageScrollToArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageScrollToArgs] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

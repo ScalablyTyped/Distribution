@@ -18,7 +18,8 @@ object GetCoreNetworkRequest {
     __obj.asInstanceOf[GetCoreNetworkRequest]
   }
   
-  extension [Self <: GetCoreNetworkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCoreNetworkRequest] (val x: Self) extends AnyVal {
     
     inline def setCoreNetworkId(value: CoreNetworkId): Self = StObject.set(x, "CoreNetworkId", value.asInstanceOf[js.Any])
   }

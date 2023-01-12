@@ -56,7 +56,8 @@ object distSrcCircuitPbMod {
       
       inline def encode(obj: Peer): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
       
-      extension [Self <: Peer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Peer] (val x: Self) extends AnyVal {
         
         inline def setAddrs(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "addrs", value.asInstanceOf[js.Any])
         
@@ -217,7 +218,8 @@ object distSrcCircuitPbMod {
     
     inline def encode(obj: CircuitRelay): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: CircuitRelay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircuitRelay] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

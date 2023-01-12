@@ -21,7 +21,8 @@ object AssigneeOwner {
     __obj.asInstanceOf[AssigneeOwner]
   }
   
-  extension [Self <: AssigneeOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssigneeOwner] (val x: Self) extends AnyVal {
     
     inline def setAssignee(value: String): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
     

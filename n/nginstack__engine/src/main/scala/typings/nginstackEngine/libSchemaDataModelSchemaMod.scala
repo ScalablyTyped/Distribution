@@ -110,7 +110,8 @@ object libSchemaDataModelSchemaMod {
       __obj.asInstanceOf[ClassDefError]
     }
     
-    extension [Self <: ClassDefError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassDefError] (val x: Self) extends AnyVal {
       
       inline def setClassKey(value: Double): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object libSchemaDataModelSchemaMod {
       __obj.asInstanceOf[ColumnDataTypeDef]
     }
     
-    extension [Self <: ColumnDataTypeDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnDataTypeDef] (val x: Self) extends AnyVal {
       
       inline def setCharLength(value: Double): Self = StObject.set(x, "charLength", value.asInstanceOf[js.Any])
       
@@ -195,7 +197,8 @@ object libSchemaDataModelSchemaMod {
       __obj.asInstanceOf[ColumnInfo]
     }
     
-    extension [Self <: ColumnInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnInfo] (val x: Self) extends AnyVal {
       
       inline def setCharLength(value: Double): Self = StObject.set(x, "charLength", value.asInstanceOf[js.Any])
       
@@ -294,7 +297,8 @@ object libSchemaDataModelSchemaMod {
       __obj.asInstanceOf[DataModelSchema]
     }
     
-    extension [Self <: DataModelSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataModelSchema] (val x: Self) extends AnyVal {
       
       inline def setBaseClass_(value: Any): Self = StObject.set(x, "baseClass_", value.asInstanceOf[js.Any])
       
@@ -363,7 +367,8 @@ object libSchemaDataModelSchemaMod {
       __obj.asInstanceOf[DataModelSchemaInfo]
     }
     
-    extension [Self <: DataModelSchemaInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataModelSchemaInfo] (val x: Self) extends AnyVal {
       
       inline def setClassDefErrors(value: js.Array[ClassDefError]): Self = StObject.set(x, "classDefErrors", value.asInstanceOf[js.Any])
       
@@ -400,7 +405,8 @@ object libSchemaDataModelSchemaMod {
       __obj.asInstanceOf[DataModelSchemaOptions]
     }
     
-    extension [Self <: DataModelSchemaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataModelSchemaOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseClass(value: Double): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
       
@@ -465,7 +471,8 @@ object libSchemaDataModelSchemaMod {
       __obj.asInstanceOf[IndexInfo]
     }
     
-    extension [Self <: IndexInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexInfo] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -526,7 +533,8 @@ object libSchemaDataModelSchemaMod {
       __obj.asInstanceOf[ReferencedTable]
     }
     
-    extension [Self <: ReferencedTable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferencedTable] (val x: Self) extends AnyVal {
       
       inline def setBaseClass(value: Double): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
       
@@ -594,7 +602,8 @@ object libSchemaDataModelSchemaMod {
       __obj.asInstanceOf[TableInfo]
     }
     
-    extension [Self <: TableInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableInfo] (val x: Self) extends AnyVal {
       
       inline def setCacheStrategy(value: ALWAYS): Self = StObject.set(x, "cacheStrategy", value.asInstanceOf[js.Any])
       

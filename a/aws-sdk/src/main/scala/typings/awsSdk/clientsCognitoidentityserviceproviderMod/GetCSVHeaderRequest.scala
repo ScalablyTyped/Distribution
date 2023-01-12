@@ -18,7 +18,8 @@ object GetCSVHeaderRequest {
     __obj.asInstanceOf[GetCSVHeaderRequest]
   }
   
-  extension [Self <: GetCSVHeaderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCSVHeaderRequest] (val x: Self) extends AnyVal {
     
     inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }

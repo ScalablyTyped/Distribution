@@ -39,7 +39,8 @@ object AllowDuplication {
     __obj.asInstanceOf[AllowDuplication]
   }
   
-  extension [Self <: AllowDuplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowDuplication] (val x: Self) extends AnyVal {
     
     inline def setAllowDuplication(value: Boolean): Self = StObject.set(x, "allowDuplication", value.asInstanceOf[js.Any])
     

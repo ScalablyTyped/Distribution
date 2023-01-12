@@ -28,7 +28,8 @@ object PrefixNode {
     __obj.asInstanceOf[PrefixNode]
   }
   
-  extension [Self <: PrefixNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrefixNode] (val x: Self) extends AnyVal {
     
     inline def setDataSourceNode(value: Boolean): Self = StObject.set(x, "dataSourceNode", value.asInstanceOf[js.Any])
     

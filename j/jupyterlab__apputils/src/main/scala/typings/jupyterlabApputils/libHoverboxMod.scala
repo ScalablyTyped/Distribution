@@ -120,7 +120,8 @@ object libHoverboxMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setAnchor(value: ClientRect): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
         

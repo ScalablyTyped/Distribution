@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Attrs]
     }
     
-    extension [Self <: Attrs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attrs] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Attributes): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[AutoClose]
     }
     
-    extension [Self <: AutoClose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoClose] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
@@ -111,7 +113,8 @@ object anon {
       __obj.asInstanceOf[Buffer]
     }
     
-    extension [Self <: Buffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: typings.node.bufferMod.global.Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object anon {
       __obj.asInstanceOf[Echo]
     }
     
-    extension [Self <: Echo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Echo] (val x: Self) extends AnyVal {
       
       inline def setEcho(value: Boolean): Self = StObject.set(x, "echo", value.asInstanceOf[js.Any])
       
@@ -159,7 +163,8 @@ object anon {
       __obj.asInstanceOf[Group]
     }
     
-    extension [Self <: Group](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       

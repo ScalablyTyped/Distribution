@@ -39,7 +39,8 @@ object SaveEventContext {
     __obj.asInstanceOf[SaveEventContext]
   }
   
-  extension [Self <: SaveEventContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveEventContext] (val x: Self) extends AnyVal {
     
     inline def setGetEventArgs(value: () => SaveEventArguments): Self = StObject.set(x, "getEventArgs", js.Any.fromFunction0(value))
   }

@@ -27,7 +27,8 @@ object viewport {
       __obj.asInstanceOf[IAndroid]
     }
     
-    extension [Self <: IAndroid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAndroid] (val x: Self) extends AnyVal {
       
       inline def setGetTranslatable(value: () => Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
       
@@ -165,7 +166,8 @@ object viewport {
       __obj.asInstanceOf[IDefault]
     }
     
-    extension [Self <: IDefault](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDefault] (val x: Self) extends AnyVal {
       
       inline def setAutoMaximize(value: Boolean): Self = StObject.set(x, "autoMaximize", value.asInstanceOf[js.Any])
       
@@ -288,7 +290,8 @@ object viewport {
       __obj.asInstanceOf[IWP]
     }
     
-    extension [Self <: IWP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWP] (val x: Self) extends AnyVal {
       
       inline def setGetTranslatable(value: () => Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
       
@@ -321,7 +324,8 @@ object viewport {
       __obj.asInstanceOf[IWindowsPhone]
     }
     
-    extension [Self <: IWindowsPhone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWindowsPhone] (val x: Self) extends AnyVal {
       
       inline def setGetTranslatable(value: () => Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
       

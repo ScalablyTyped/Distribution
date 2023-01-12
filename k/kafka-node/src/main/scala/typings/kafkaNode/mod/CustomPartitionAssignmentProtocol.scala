@@ -23,7 +23,8 @@ object CustomPartitionAssignmentProtocol {
     __obj.asInstanceOf[CustomPartitionAssignmentProtocol]
   }
   
-  extension [Self <: CustomPartitionAssignmentProtocol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPartitionAssignmentProtocol] (val x: Self) extends AnyVal {
     
     inline def setAssign(value: (Any, Any, js.Function2[/* error */ Any, /* result */ Any, Unit]) => Unit): Self = StObject.set(x, "assign", js.Any.fromFunction3(value))
     

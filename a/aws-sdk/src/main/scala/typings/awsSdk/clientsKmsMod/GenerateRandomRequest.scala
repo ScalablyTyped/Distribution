@@ -23,7 +23,8 @@ object GenerateRandomRequest {
     __obj.asInstanceOf[GenerateRandomRequest]
   }
   
-  extension [Self <: GenerateRandomRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateRandomRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
     

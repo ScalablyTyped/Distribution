@@ -38,7 +38,8 @@ object ConnectPeerConfiguration {
     __obj.asInstanceOf[ConnectPeerConfiguration]
   }
   
-  extension [Self <: ConnectPeerConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectPeerConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBgpConfigurations(value: ConnectPeerBgpConfigurationList): Self = StObject.set(x, "BgpConfigurations", value.asInstanceOf[js.Any])
     

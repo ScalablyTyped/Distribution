@@ -19,7 +19,8 @@ object RequestBodyContentApplicationjsonDueon {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonDueon]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonDueon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonDueon] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: `135`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

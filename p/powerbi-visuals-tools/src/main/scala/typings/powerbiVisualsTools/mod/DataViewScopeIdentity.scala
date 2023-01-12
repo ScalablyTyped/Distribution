@@ -27,7 +27,8 @@ object DataViewScopeIdentity {
     __obj.asInstanceOf[DataViewScopeIdentity]
   }
   
-  extension [Self <: DataViewScopeIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewScopeIdentity] (val x: Self) extends AnyVal {
     
     inline def setExpr(value: ISQExpr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     

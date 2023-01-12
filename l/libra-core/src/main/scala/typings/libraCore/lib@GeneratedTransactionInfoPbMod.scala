@@ -95,7 +95,8 @@ object `lib@GeneratedTransactionInfoPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setEventRootHash(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "eventRootHash", value.asInstanceOf[js.Any])
         

@@ -21,7 +21,8 @@ object IngestDeletePipelineRequest {
     __obj.asInstanceOf[IngestDeletePipelineRequest]
   }
   
-  extension [Self <: IngestDeletePipelineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestDeletePipelineRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

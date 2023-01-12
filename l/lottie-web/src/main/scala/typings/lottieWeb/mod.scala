@@ -43,7 +43,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AnimationConfig[T]]
     }
     
-    extension [Self <: AnimationConfig[?], T /* <: RendererType */](x: Self & AnimationConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationConfig[?], T /* <: RendererType */] (val x: Self & AnimationConfig[T]) extends AnyVal {
       
       inline def setAssetsPath(value: String): Self = StObject.set(x, "assetsPath", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AnimationConfigWithData[T]]
     }
     
-    extension [Self <: AnimationConfigWithData[?], T /* <: RendererType */](x: Self & AnimationConfigWithData[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationConfigWithData[?], T /* <: RendererType */] (val x: Self & AnimationConfigWithData[T]) extends AnyVal {
       
       inline def setAnimationData(value: Any): Self = StObject.set(x, "animationData", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AnimationConfigWithPath[T]]
     }
     
-    extension [Self <: AnimationConfigWithPath[?], T /* <: RendererType */](x: Self & AnimationConfigWithPath[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationConfigWithPath[?], T /* <: RendererType */] (val x: Self & AnimationConfigWithPath[T]) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -305,7 +308,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BaseRendererConfig]
     }
     
-    extension [Self <: BaseRendererConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseRendererConfig] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -336,7 +340,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CanvasRendererConfig]
     }
     
-    extension [Self <: CanvasRendererConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasRendererConfig] (val x: Self) extends AnyVal {
       
       inline def setClearCanvas(value: Boolean): Self = StObject.set(x, "clearCanvas", value.asInstanceOf[js.Any])
       
@@ -373,7 +378,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FilterSizeConfig]
     }
     
-    extension [Self <: FilterSizeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterSizeConfig] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -398,7 +404,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HTMLRendererConfig]
     }
     
-    extension [Self <: HTMLRendererConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLRendererConfig] (val x: Self) extends AnyVal {
       
       inline def setHideOnTransparent(value: Boolean): Self = StObject.set(x, "hideOnTransparent", value.asInstanceOf[js.Any])
       
@@ -496,7 +503,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SVGRendererConfig]
     }
     
-    extension [Self <: SVGRendererConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SVGRendererConfig] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -563,7 +571,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TextDocumentData]
     }
     
-    extension [Self <: TextDocumentData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextDocumentData] (val x: Self) extends AnyVal {
       
       inline def setCa(value: Double): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       

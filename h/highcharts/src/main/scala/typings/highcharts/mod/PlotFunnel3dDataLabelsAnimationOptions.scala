@@ -20,7 +20,8 @@ object PlotFunnel3dDataLabelsAnimationOptions {
     __obj.asInstanceOf[PlotFunnel3dDataLabelsAnimationOptions]
   }
   
-  extension [Self <: PlotFunnel3dDataLabelsAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotFunnel3dDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     

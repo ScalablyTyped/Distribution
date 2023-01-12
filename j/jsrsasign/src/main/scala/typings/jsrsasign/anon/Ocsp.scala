@@ -15,7 +15,8 @@ object Ocsp {
     __obj.asInstanceOf[Ocsp]
   }
   
-  extension [Self <: Ocsp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ocsp] (val x: Self) extends AnyVal {
     
     inline def setOcsp(value: String): Self = StObject.set(x, "ocsp", value.asInstanceOf[js.Any])
   }

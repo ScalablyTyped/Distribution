@@ -139,7 +139,8 @@ object distSrcFirebaseAppMod {
       __obj.asInstanceOf[FirebaseApp]
     }
     
-    extension [Self <: FirebaseApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseApp] (val x: Self) extends AnyVal {
       
       inline def setAutomaticDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "automaticDataCollectionEnabled", value.asInstanceOf[js.Any])
       

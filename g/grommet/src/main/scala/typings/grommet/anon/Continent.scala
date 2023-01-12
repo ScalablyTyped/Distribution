@@ -22,7 +22,8 @@ object Continent {
     __obj.asInstanceOf[Continent]
   }
   
-  extension [Self <: Continent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Continent] (val x: Self) extends AnyVal {
     
     inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

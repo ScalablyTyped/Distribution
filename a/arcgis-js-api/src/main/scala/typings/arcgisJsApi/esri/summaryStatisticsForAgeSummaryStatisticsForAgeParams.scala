@@ -67,7 +67,8 @@ object summaryStatisticsForAgeSummaryStatisticsForAgeParams {
     __obj.asInstanceOf[summaryStatisticsForAgeSummaryStatisticsForAgeParams]
   }
   
-  extension [Self <: summaryStatisticsForAgeSummaryStatisticsForAgeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: summaryStatisticsForAgeSummaryStatisticsForAgeParams] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date | String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

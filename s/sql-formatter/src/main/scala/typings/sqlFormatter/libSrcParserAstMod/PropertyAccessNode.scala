@@ -29,7 +29,8 @@ object PropertyAccessNode {
     __obj.asInstanceOf[PropertyAccessNode]
   }
   
-  extension [Self <: PropertyAccessNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyAccessNode] (val x: Self) extends AnyVal {
     
     inline def setObject(value: AstNode): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     

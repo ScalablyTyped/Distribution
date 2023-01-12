@@ -119,7 +119,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object anon {
       __obj.asInstanceOf[Disabled]
     }
     
-    extension [Self <: Disabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Requireable[Boolean]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -233,7 +235,8 @@ object anon {
       __obj.asInstanceOf[IsRequired]
     }
     
-    extension [Self <: IsRequired](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsRequired] (val x: Self) extends AnyVal {
       
       inline def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
       
@@ -643,7 +646,8 @@ object anon {
       __obj.asInstanceOf[PartialFormsyProps]
     }
     
-    extension [Self <: PartialFormsyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFormsyProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -63,7 +63,8 @@ object XDockableWindowListener {
     __obj.asInstanceOf[XDockableWindowListener]
   }
   
-  extension [Self <: XDockableWindowListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDockableWindowListener] (val x: Self) extends AnyVal {
     
     inline def setClosed(value: EventObject => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
     

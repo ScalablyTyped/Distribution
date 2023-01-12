@@ -99,7 +99,8 @@ object notification {
         __obj.asInstanceOf[Webhook]
       }
       
-      extension [Self <: Webhook](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Webhook] (val x: Self) extends AnyVal {
         
         inline def setEvent_types(value: js.Array[NotificationEventType]): Self = StObject.set(x, "event_types", value.asInstanceOf[js.Any])
         
@@ -132,7 +133,8 @@ object notification {
         __obj.asInstanceOf[WebhookListResponse]
       }
       
-      extension [Self <: WebhookListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebhookListResponse] (val x: Self) extends AnyVal {
         
         inline def setWebhooks(value: js.Array[Webhook]): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
         
@@ -226,7 +228,8 @@ object notification {
         __obj.asInstanceOf[WebhookEvent]
       }
       
-      extension [Self <: WebhookEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebhookEvent] (val x: Self) extends AnyVal {
         
         inline def setCreate_time(value: String): Self = StObject.set(x, "create_time", value.asInstanceOf[js.Any])
         
@@ -271,7 +274,8 @@ object notification {
         __obj.asInstanceOf[WebhookEventListResponse]
       }
       
-      extension [Self <: WebhookEventListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebhookEventListResponse] (val x: Self) extends AnyVal {
         
         inline def setEvents(value: js.Array[WebhookEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
         
@@ -290,7 +294,8 @@ object notification {
         __obj.asInstanceOf[WebhookVerifyResponse]
       }
       
-      extension [Self <: WebhookVerifyResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebhookVerifyResponse] (val x: Self) extends AnyVal {
         
         inline def setVerification_status(value: String): Self = StObject.set(x, "verification_status", value.asInstanceOf[js.Any])
       }
@@ -352,7 +357,8 @@ object notification {
       __obj.asInstanceOf[EventTypesResponse]
     }
     
-    extension [Self <: EventTypesResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventTypesResponse] (val x: Self) extends AnyVal {
       
       inline def setEvent_types(value: js.Array[NotificationEventType]): Self = StObject.set(x, "event_types", value.asInstanceOf[js.Any])
       
@@ -375,7 +381,8 @@ object notification {
       __obj.asInstanceOf[NotificationEventType]
     }
     
-    extension [Self <: NotificationEventType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationEventType] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

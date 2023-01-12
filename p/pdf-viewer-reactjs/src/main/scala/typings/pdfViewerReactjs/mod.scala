@@ -191,7 +191,8 @@ object mod {
       __obj.asInstanceOf[Document]
     }
     
-    extension [Self <: Document](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -214,7 +215,8 @@ object mod {
       __obj.asInstanceOf[Err]
     }
     
-    extension [Self <: Err](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Err] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -289,7 +291,8 @@ object mod {
       __obj.asInstanceOf[PDFViewerProps]
     }
     
-    extension [Self <: PDFViewerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PDFViewerProps] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: /* err */ Err => ReactNode): Self = StObject.set(x, "alert", js.Any.fromFunction1(value))
       
@@ -426,7 +429,8 @@ object mod {
       __obj.asInstanceOf[ShowThumbnail]
     }
     
-    extension [Self <: ShowThumbnail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowThumbnail] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -475,7 +479,8 @@ object mod {
       __obj.asInstanceOf[Watermark]
     }
     
-    extension [Self <: Watermark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Watermark] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

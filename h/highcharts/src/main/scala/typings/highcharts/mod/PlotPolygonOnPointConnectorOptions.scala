@@ -30,7 +30,8 @@ object PlotPolygonOnPointConnectorOptions {
     __obj.asInstanceOf[PlotPolygonOnPointConnectorOptions]
   }
   
-  extension [Self <: PlotPolygonOnPointConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPolygonOnPointConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDashstyle(value: String): Self = StObject.set(x, "dashstyle", value.asInstanceOf[js.Any])
     

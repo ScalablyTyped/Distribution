@@ -26,7 +26,8 @@ object HostedFieldsSubmitResponse {
     __obj.asInstanceOf[HostedFieldsSubmitResponse]
   }
   
-  extension [Self <: HostedFieldsSubmitResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostedFieldsSubmitResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationReason(value: String): Self = StObject.set(x, "authenticationReason", value.asInstanceOf[js.Any])
     

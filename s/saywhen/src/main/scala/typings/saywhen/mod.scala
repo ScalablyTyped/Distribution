@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[CallHandler[T]]
     }
     
-    extension [Self <: CallHandler[?], T /* <: Func */](x: Self & CallHandler[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallHandler[?], T /* <: Func */] (val x: Self & CallHandler[T]) extends AnyVal {
       
       inline def setIsCalled(value: Proxy[T]): Self = StObject.set(x, "isCalled", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object mod {
       __obj.asInstanceOf[Proxy[T]]
     }
     
-    extension [Self <: Proxy[?], T /* <: Func */](x: Self & Proxy[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Proxy[?], T /* <: Func */] (val x: Self & Proxy[T]) extends AnyVal {
       
       inline def setThen(value: T => Proxy[T]): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
       

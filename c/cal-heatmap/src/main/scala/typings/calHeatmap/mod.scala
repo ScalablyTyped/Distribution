@@ -485,7 +485,8 @@ object mod {
           __obj.asInstanceOf[InitOptions]
         }
         
-        extension [Self <: InitOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
           
           inline def setAfterLoad(value: () => Unit): Self = StObject.set(x, "afterLoad", js.Any.fromFunction0(value))
           
@@ -750,7 +751,8 @@ object mod {
           __obj.asInstanceOf[Label]
         }
         
-        extension [Self <: Label](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
           
           inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
           
@@ -791,7 +793,8 @@ object mod {
           __obj.asInstanceOf[LabelOffset]
         }
         
-        extension [Self <: LabelOffset](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LabelOffset] (val x: Self) extends AnyVal {
           
           inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
           
@@ -823,7 +826,8 @@ object mod {
           __obj.asInstanceOf[LegendColor]
         }
         
-        extension [Self <: LegendColor](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LegendColor] (val x: Self) extends AnyVal {
           
           inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
           
@@ -861,7 +865,8 @@ object mod {
           __obj.asInstanceOf[LegendTitleTemplates]
         }
         
-        extension [Self <: LegendTitleTemplates](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LegendTitleTemplates] (val x: Self) extends AnyVal {
           
           inline def setInner(value: String): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
           
@@ -912,7 +917,8 @@ object mod {
           __obj.asInstanceOf[RuntimeOptions]
         }
         
-        extension [Self <: RuntimeOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: RuntimeOptions] (val x: Self) extends AnyVal {
           
           inline def setDomainMargin(value: js.Array[Double]): Self = StObject.set(x, "domainMargin", value.asInstanceOf[js.Any])
           
@@ -947,7 +953,8 @@ object mod {
           __obj.asInstanceOf[SubDomainFormatTemplates]
         }
         
-        extension [Self <: SubDomainFormatTemplates](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SubDomainFormatTemplates] (val x: Self) extends AnyVal {
           
           inline def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
           

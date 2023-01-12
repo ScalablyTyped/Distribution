@@ -19,7 +19,8 @@ object TrendmicroSourceProperties {
     __obj.asInstanceOf[TrendmicroSourceProperties]
   }
   
-  extension [Self <: TrendmicroSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrendmicroSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }

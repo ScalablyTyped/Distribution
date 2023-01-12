@@ -55,7 +55,8 @@ object PosPrinterCapabilities {
     __obj.asInstanceOf[PosPrinterCapabilities]
   }
   
-  extension [Self <: PosPrinterCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PosPrinterCapabilities] (val x: Self) extends AnyVal {
     
     inline def setCanMapCharacterSet(value: Boolean): Self = StObject.set(x, "canMapCharacterSet", value.asInstanceOf[js.Any])
     

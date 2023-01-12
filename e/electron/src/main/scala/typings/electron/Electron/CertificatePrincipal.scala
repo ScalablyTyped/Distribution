@@ -51,7 +51,8 @@ object CertificatePrincipal {
     __obj.asInstanceOf[CertificatePrincipal]
   }
   
-  extension [Self <: CertificatePrincipal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificatePrincipal] (val x: Self) extends AnyVal {
     
     inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     

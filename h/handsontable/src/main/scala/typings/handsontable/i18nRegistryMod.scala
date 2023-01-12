@@ -42,7 +42,8 @@ object i18nRegistryMod {
       __obj.asInstanceOf[LanguageDictionary]
     }
     
-    extension [Self <: LanguageDictionary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageDictionary] (val x: Self) extends AnyVal {
       
       inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     }

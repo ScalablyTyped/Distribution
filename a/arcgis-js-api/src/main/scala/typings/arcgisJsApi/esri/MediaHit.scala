@@ -40,7 +40,8 @@ object MediaHit {
     __obj.asInstanceOf[MediaHit]
   }
   
-  extension [Self <: MediaHit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaHit] (val x: Self) extends AnyVal {
     
     inline def setElement(value: ImageElement | VideoElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

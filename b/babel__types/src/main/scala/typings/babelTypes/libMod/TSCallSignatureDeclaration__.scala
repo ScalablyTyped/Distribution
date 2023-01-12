@@ -29,7 +29,8 @@ object TSCallSignatureDeclaration__ {
     __obj.asInstanceOf[TSCallSignatureDeclaration__]
   }
   
-  extension [Self <: TSCallSignatureDeclaration__](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSCallSignatureDeclaration__] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: js.Array[Identifier_ | RestElement_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

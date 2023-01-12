@@ -20,7 +20,8 @@ object LongIdentifier {
     __obj.asInstanceOf[LongIdentifier]
   }
   
-  extension [Self <: LongIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LongIdentifier] (val x: Self) extends AnyVal {
     
     inline def setLongIdentifier(value: Double): Self = StObject.set(x, "longIdentifier", value.asInstanceOf[js.Any])
     

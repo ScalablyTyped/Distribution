@@ -22,7 +22,8 @@ object IdentifierNode {
     __obj.asInstanceOf[IdentifierNode]
   }
   
-  extension [Self <: IdentifierNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentifierNode] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetVirtualMachineOutput {
     __obj.asInstanceOf[GetVirtualMachineOutput]
   }
   
-  extension [Self <: GetVirtualMachineOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVirtualMachineOutput] (val x: Self) extends AnyVal {
     
     inline def setVirtualMachine(value: VirtualMachineDetails): Self = StObject.set(x, "VirtualMachine", value.asInstanceOf[js.Any])
     

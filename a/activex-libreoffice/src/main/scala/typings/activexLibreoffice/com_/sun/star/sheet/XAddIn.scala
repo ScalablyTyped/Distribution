@@ -126,7 +126,8 @@ object XAddIn {
     __obj.asInstanceOf[XAddIn]
   }
   
-  extension [Self <: XAddIn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAddIn] (val x: Self) extends AnyVal {
     
     inline def setGetArgumentDescription(value: (String, Double) => String): Self = StObject.set(x, "getArgumentDescription", js.Any.fromFunction2(value))
     

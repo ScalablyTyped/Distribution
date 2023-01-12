@@ -18,7 +18,8 @@ object PublishTypeOutput {
     __obj.asInstanceOf[PublishTypeOutput]
   }
   
-  extension [Self <: PublishTypeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishTypeOutput] (val x: Self) extends AnyVal {
     
     inline def setPublicTypeArn(value: TypeArn): Self = StObject.set(x, "PublicTypeArn", value.asInstanceOf[js.Any])
     

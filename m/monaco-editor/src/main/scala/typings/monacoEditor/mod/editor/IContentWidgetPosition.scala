@@ -38,7 +38,8 @@ object IContentWidgetPosition {
     __obj.asInstanceOf[IContentWidgetPosition]
   }
   
-  extension [Self <: IContentWidgetPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContentWidgetPosition] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: IPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

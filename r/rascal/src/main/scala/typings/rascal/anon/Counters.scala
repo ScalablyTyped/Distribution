@@ -15,7 +15,8 @@ object Counters {
     __obj.asInstanceOf[Counters]
   }
   
-  extension [Self <: Counters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Counters] (val x: Self) extends AnyVal {
     
     inline def setCounters(value: InMemory): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
   }

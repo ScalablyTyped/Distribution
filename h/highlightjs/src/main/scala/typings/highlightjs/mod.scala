@@ -196,7 +196,8 @@ object mod {
       __obj.asInstanceOf[HLJSStatic]
     }
     
-    extension [Self <: HLJSStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HLJSStatic] (val x: Self) extends AnyVal {
       
       inline def setAPOS_STRING_MODE(value: IMode): Self = StObject.set(x, "APOS_STRING_MODE", value.asInstanceOf[js.Any])
       
@@ -255,7 +256,8 @@ object mod {
       __obj.asInstanceOf[IAutoHighlightResult]
     }
     
-    extension [Self <: IAutoHighlightResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAutoHighlightResult] (val x: Self) extends AnyVal {
       
       inline def setSecond_best(value: IAutoHighlightResult): Self = StObject.set(x, "second_best", value.asInstanceOf[js.Any])
       
@@ -284,7 +286,8 @@ object mod {
       __obj.asInstanceOf[ICompiledMode]
     }
     
-    extension [Self <: ICompiledMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICompiledMode] (val x: Self) extends AnyVal {
       
       inline def setCompiled(value: Boolean): Self = StObject.set(x, "compiled", value.asInstanceOf[js.Any])
       
@@ -319,7 +322,8 @@ object mod {
       __obj.asInstanceOf[IHighlightResult]
     }
     
-    extension [Self <: IHighlightResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHighlightResult] (val x: Self) extends AnyVal {
       
       inline def setTop(value: ICompiledMode): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
@@ -340,7 +344,8 @@ object mod {
       __obj.asInstanceOf[IHighlightResultBase]
     }
     
-    extension [Self <: IHighlightResultBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHighlightResultBase] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -365,7 +370,8 @@ object mod {
       __obj.asInstanceOf[IMode]
     }
     
-    extension [Self <: IMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMode] (val x: Self) extends AnyVal {
       
       inline def setContains(value: js.Array[IMode]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
       
@@ -424,7 +430,8 @@ object mod {
       __obj.asInstanceOf[IModeBase]
     }
     
-    extension [Self <: IModeBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModeBase] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -521,7 +528,8 @@ object mod {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setClassPrefix(value: String): Self = StObject.set(x, "classPrefix", value.asInstanceOf[js.Any])
       

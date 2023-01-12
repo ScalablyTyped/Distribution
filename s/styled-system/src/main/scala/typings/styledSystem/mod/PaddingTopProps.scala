@@ -28,7 +28,8 @@ object PaddingTopProps {
     __obj.asInstanceOf[PaddingTopProps[ThemeType]]
   }
   
-  extension [Self <: PaddingTopProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & PaddingTopProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaddingTopProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & PaddingTopProps[ThemeType]) extends AnyVal {
     
     inline def setPaddingTop(
       value: ResponsiveValue[

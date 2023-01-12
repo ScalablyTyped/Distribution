@@ -133,7 +133,8 @@ object SystemInfoCellularNetwork {
     __obj.asInstanceOf[SystemInfoCellularNetwork]
   }
   
-  extension [Self <: SystemInfoCellularNetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoCellularNetwork] (val x: Self) extends AnyVal {
     
     inline def setApn(value: String): Self = StObject.set(x, "apn", value.asInstanceOf[js.Any])
     

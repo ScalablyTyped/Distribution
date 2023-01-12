@@ -52,7 +52,8 @@ object IgPivotViewDataSourceOptionsFlatDataOptions {
     __obj.asInstanceOf[IgPivotViewDataSourceOptionsFlatDataOptions]
   }
   
-  extension [Self <: IgPivotViewDataSourceOptionsFlatDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPivotViewDataSourceOptionsFlatDataOptions] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

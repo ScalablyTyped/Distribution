@@ -148,7 +148,8 @@ object mod {
       __obj.asInstanceOf[EmailConfig[T]]
     }
     
-    extension [Self <: EmailConfig[?], T](x: Self & EmailConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailConfig[?], T] (val x: Self & EmailConfig[T]) extends AnyVal {
       
       inline def setCustomRender(value: Boolean): Self = StObject.set(x, "customRender", value.asInstanceOf[js.Any])
       
@@ -229,7 +230,8 @@ object mod {
       __obj.asInstanceOf[EmailMessage]
     }
     
-    extension [Self <: EmailMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailMessage] (val x: Self) extends AnyVal {
       
       inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -265,7 +267,8 @@ object mod {
       __obj.asInstanceOf[EmailOptions[T]]
     }
     
-    extension [Self <: EmailOptions[?], T](x: Self & EmailOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailOptions[?], T] (val x: Self & EmailOptions[T]) extends AnyVal {
       
       inline def setLocals(value: T): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       
@@ -317,7 +320,8 @@ object mod {
       __obj.asInstanceOf[JuiceGlobalConfig]
     }
     
-    extension [Self <: JuiceGlobalConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JuiceGlobalConfig] (val x: Self) extends AnyVal {
       
       inline def setCodeBlocks(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof juice.codeBlocks */ Any
@@ -417,7 +421,8 @@ object mod {
       __obj.asInstanceOf[PreviewEmailOpts]
     }
     
-    extension [Self <: PreviewEmailOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewEmailOpts] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -466,7 +471,8 @@ object mod {
       __obj.asInstanceOf[View]
     }
     
-    extension [Self <: View](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: View] (val x: Self) extends AnyVal {
       
       inline def setLocals(value: Dictkey): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       
@@ -507,7 +513,8 @@ object mod {
       __obj.asInstanceOf[ViewOptions]
     }
     
-    extension [Self <: ViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewOptions] (val x: Self) extends AnyVal {
       
       inline def setEngineSource(value: Any): Self = StObject.set(x, "engineSource", value.asInstanceOf[js.Any])
       

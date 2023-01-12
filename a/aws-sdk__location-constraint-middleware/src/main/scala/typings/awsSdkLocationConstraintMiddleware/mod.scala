@@ -25,7 +25,8 @@ object mod {
       __obj.asInstanceOf[LocationConstraintAwareInput]
     }
     
-    extension [Self <: LocationConstraintAwareInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationConstraintAwareInput] (val x: Self) extends AnyVal {
       
       inline def setCreateBucketConfiguration(value: LocationConstraint): Self = StObject.set(x, "CreateBucketConfiguration", value.asInstanceOf[js.Any])
       

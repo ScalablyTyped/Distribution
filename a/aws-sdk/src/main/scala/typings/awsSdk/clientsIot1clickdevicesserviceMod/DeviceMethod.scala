@@ -23,7 +23,8 @@ object DeviceMethod {
     __obj.asInstanceOf[DeviceMethod]
   }
   
-  extension [Self <: DeviceMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceMethod] (val x: Self) extends AnyVal {
     
     inline def setDeviceType(value: string): Self = StObject.set(x, "DeviceType", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object Activity {
     __obj.asInstanceOf[Activity]
   }
   
-  extension [Self <: Activity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
     
     inline def setBoundaryEventRefs(value: js.Array[BoundaryEvent]): Self = StObject.set(x, "boundaryEventRefs", value.asInstanceOf[js.Any])
     

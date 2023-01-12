@@ -126,7 +126,8 @@ object libCredentialsMod {
       __obj.asInstanceOf[CredentialsOptions]
     }
     
-    extension [Self <: CredentialsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CredentialsOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       

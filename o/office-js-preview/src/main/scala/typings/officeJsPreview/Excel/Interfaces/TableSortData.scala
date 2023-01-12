@@ -42,7 +42,8 @@ object TableSortData {
     __obj.asInstanceOf[TableSortData]
   }
   
-  extension [Self <: TableSortData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableSortData] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[SortField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object GlobInvalidation {
     __obj.asInstanceOf[GlobInvalidation]
   }
   
-  extension [Self <: GlobInvalidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobInvalidation] (val x: Self) extends AnyVal {
     
     inline def setGlob(value: Glob): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
   }

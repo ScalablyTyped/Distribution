@@ -25,7 +25,8 @@ object HttpHeaderAction {
     __obj.asInstanceOf[HttpHeaderAction]
   }
   
-  extension [Self <: HttpHeaderAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpHeaderAction] (val x: Self) extends AnyVal {
     
     inline def setRequestHeadersToAdd(value: js.Array[HttpHeaderOption]): Self = StObject.set(x, "requestHeadersToAdd", value.asInstanceOf[js.Any])
     

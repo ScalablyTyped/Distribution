@@ -23,7 +23,8 @@ object PromptAttributes {
     __obj.asInstanceOf[PromptAttributes]
   }
   
-  extension [Self <: PromptAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromptAttributes] (val x: Self) extends AnyVal {
     
     inline def setAttempt(value: js.Array[Double]): Self = StObject.set(x, "attempt", value.asInstanceOf[js.Any])
     

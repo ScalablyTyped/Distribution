@@ -46,7 +46,8 @@ object distTypesFetchHttpHandlerMod {
       __obj.asInstanceOf[FetchHttpHandlerOptions]
     }
     
-    extension [Self <: FetchHttpHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchHttpHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
       

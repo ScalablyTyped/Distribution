@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Neg]
     }
     
-    extension [Self <: Neg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Neg] (val x: Self) extends AnyVal {
       
       inline def setNeg(value: String): Self = StObject.set(x, "neg", value.asInstanceOf[js.Any])
       

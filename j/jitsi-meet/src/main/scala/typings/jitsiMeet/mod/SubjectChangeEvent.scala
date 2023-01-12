@@ -15,7 +15,8 @@ object SubjectChangeEvent {
     __obj.asInstanceOf[SubjectChangeEvent]
   }
   
-  extension [Self <: SubjectChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubjectChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object StickyProps {
     __obj.asInstanceOf[StickyProps]
   }
   
-  extension [Self <: StickyProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StickyProps] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

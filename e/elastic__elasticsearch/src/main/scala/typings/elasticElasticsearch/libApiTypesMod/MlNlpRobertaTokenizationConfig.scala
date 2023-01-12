@@ -23,7 +23,8 @@ object MlNlpRobertaTokenizationConfig {
     __obj.asInstanceOf[MlNlpRobertaTokenizationConfig]
   }
   
-  extension [Self <: MlNlpRobertaTokenizationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlNlpRobertaTokenizationConfig] (val x: Self) extends AnyVal {
     
     inline def setAdd_prefix_space(value: Boolean): Self = StObject.set(x, "add_prefix_space", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object distTypesLocaleMod {
       __obj.asInstanceOf[CustomLocale]
     }
     
-    extension [Self <: CustomLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomLocale] (val x: Self) extends AnyVal {
       
       inline def setAmPM(value: js.Tuple2[String, String]): Self = StObject.set(x, "amPM", value.asInstanceOf[js.Any])
       
@@ -166,7 +167,8 @@ object distTypesLocaleMod {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setAmPM(value: js.Tuple2[String, String]): Self = StObject.set(x, "amPM", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object PickIModelidDeepPartialOm {
     __obj.asInstanceOf[PickIModelidDeepPartialOm]
   }
   
-  extension [Self <: PickIModelidDeepPartialOm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickIModelidDeepPartialOm] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

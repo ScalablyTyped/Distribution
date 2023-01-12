@@ -19,7 +19,8 @@ object MulticastGroup {
     __obj.asInstanceOf[MulticastGroup]
   }
   
-  extension [Self <: MulticastGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MulticastGroup] (val x: Self) extends AnyVal {
     
     inline def setArn(value: MulticastGroupArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

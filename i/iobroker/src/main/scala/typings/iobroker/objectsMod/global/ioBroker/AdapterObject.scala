@@ -31,7 +31,8 @@ object AdapterObject {
     __obj.asInstanceOf[AdapterObject]
   }
   
-  extension [Self <: AdapterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdapterObject] (val x: Self) extends AnyVal {
     
     inline def setCommon(value: AdapterCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     

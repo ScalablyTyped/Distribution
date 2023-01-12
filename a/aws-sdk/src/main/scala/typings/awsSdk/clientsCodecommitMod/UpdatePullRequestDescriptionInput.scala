@@ -23,7 +23,8 @@ object UpdatePullRequestDescriptionInput {
     __obj.asInstanceOf[UpdatePullRequestDescriptionInput]
   }
   
-  extension [Self <: UpdatePullRequestDescriptionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePullRequestDescriptionInput] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

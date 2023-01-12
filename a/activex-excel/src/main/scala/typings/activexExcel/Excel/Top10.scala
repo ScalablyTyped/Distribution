@@ -88,7 +88,8 @@ object Top10 {
     __obj.asInstanceOf[Top10]
   }
   
-  extension [Self <: Top10](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Top10] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

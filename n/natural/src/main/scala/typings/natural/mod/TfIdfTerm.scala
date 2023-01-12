@@ -17,7 +17,8 @@ object TfIdfTerm {
     __obj.asInstanceOf[TfIdfTerm]
   }
   
-  extension [Self <: TfIdfTerm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfIdfTerm] (val x: Self) extends AnyVal {
     
     inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     

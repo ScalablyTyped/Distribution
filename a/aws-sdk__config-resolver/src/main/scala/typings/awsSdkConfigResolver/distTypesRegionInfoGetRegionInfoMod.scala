@@ -34,7 +34,8 @@ object distTypesRegionInfoGetRegionInfoMod {
       __obj.asInstanceOf[GetRegionInfoOptions]
     }
     
-    extension [Self <: GetRegionInfoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetRegionInfoOptions] (val x: Self) extends AnyVal {
       
       inline def setPartitionHash(value: PartitionHash): Self = StObject.set(x, "partitionHash", value.asInstanceOf[js.Any])
       

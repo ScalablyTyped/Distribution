@@ -24,7 +24,8 @@ object VersionReadParams {
     __obj.asInstanceOf[VersionReadParams]
   }
   
-  extension [Self <: VersionReadParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VersionReadParams] (val x: Self) extends AnyVal {
     
     inline def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
   }

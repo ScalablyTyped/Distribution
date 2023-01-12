@@ -40,7 +40,8 @@ object typesLibBadgeMod {
       __obj.asInstanceOf[BadgeProps]
     }
     
-    extension [Self <: BadgeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object CommandFilter {
     __obj.asInstanceOf[CommandFilter]
   }
   
-  extension [Self <: CommandFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandFilter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: CommandFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

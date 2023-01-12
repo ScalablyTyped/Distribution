@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[IGetToken[Value, Array]]
     }
     
-    extension [Self <: IGetToken[?, ?], Value, Array /* <: js.typedarray.Uint8Array */](x: Self & (IGetToken[Value, Array])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGetToken[?, ?], Value, Array /* <: js.typedarray.Uint8Array */] (val x: Self & (IGetToken[Value, Array])) extends AnyVal {
       
       inline def setGet(value: (Array, Double) => Value): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
@@ -56,7 +57,8 @@ object mod {
       __obj.asInstanceOf[IToken[Value, Array]]
     }
     
-    extension [Self <: IToken[?, ?], Value, Array /* <: js.typedarray.Uint8Array */](x: Self & (IToken[Value, Array])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToken[?, ?], Value, Array /* <: js.typedarray.Uint8Array */] (val x: Self & (IToken[Value, Array])) extends AnyVal {
       
       inline def setPut(value: (Array, Double, Value) => Double): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
     }

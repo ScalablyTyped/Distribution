@@ -23,7 +23,8 @@ object GeolocationControlOptions {
     __obj.asInstanceOf[GeolocationControlOptions]
   }
   
-  extension [Self <: GeolocationControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeolocationControlOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

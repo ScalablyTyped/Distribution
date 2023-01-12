@@ -25,7 +25,8 @@ object libTypesReanimated2LayoutReanimationAnimationBuilderCommonTypesMod {
       __obj.asInstanceOf[BaseBuilderAnimationConfig]
     }
     
-    extension [Self <: BaseBuilderAnimationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseBuilderAnimationConfig] (val x: Self) extends AnyVal {
       
       inline def setRotate(value: Double | String): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object libTypesReanimated2LayoutReanimationAnimationBuilderCommonTypesMod {
       __obj.asInstanceOf[BaseLayoutAnimationConfig]
     }
     
-    extension [Self <: BaseLayoutAnimationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseLayoutAnimationConfig] (val x: Self) extends AnyVal {
       
       inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       
@@ -128,7 +130,8 @@ object libTypesReanimated2LayoutReanimationAnimationBuilderCommonTypesMod {
       __obj.asInstanceOf[EntryAnimationsValues]
     }
     
-    extension [Self <: EntryAnimationsValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryAnimationsValues] (val x: Self) extends AnyVal {
       
       inline def setTargetGlobalOriginX(value: Double): Self = StObject.set(x, "targetGlobalOriginX", value.asInstanceOf[js.Any])
       
@@ -174,7 +177,8 @@ object libTypesReanimated2LayoutReanimationAnimationBuilderCommonTypesMod {
       __obj.asInstanceOf[ExitAnimationsValues]
     }
     
-    extension [Self <: ExitAnimationsValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExitAnimationsValues] (val x: Self) extends AnyVal {
       
       inline def setCurrentGlobalOriginX(value: Double): Self = StObject.set(x, "currentGlobalOriginX", value.asInstanceOf[js.Any])
       
@@ -201,7 +205,8 @@ object libTypesReanimated2LayoutReanimationAnimationBuilderCommonTypesMod {
       __obj.asInstanceOf[IEntryAnimationBuilder]
     }
     
-    extension [Self <: IEntryAnimationBuilder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEntryAnimationBuilder] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: () => AnimationConfigFunction[EntryAnimationsValues]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     }
@@ -218,7 +223,8 @@ object libTypesReanimated2LayoutReanimationAnimationBuilderCommonTypesMod {
       __obj.asInstanceOf[IEntryExitAnimationBuilder]
     }
     
-    extension [Self <: IEntryExitAnimationBuilder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEntryExitAnimationBuilder] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: () => EntryExitAnimationFunction): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     }
@@ -235,7 +241,8 @@ object libTypesReanimated2LayoutReanimationAnimationBuilderCommonTypesMod {
       __obj.asInstanceOf[IExitAnimationBuilder]
     }
     
-    extension [Self <: IExitAnimationBuilder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExitAnimationBuilder] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: () => AnimationConfigFunction[ExitAnimationsValues]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     }
@@ -252,7 +259,8 @@ object libTypesReanimated2LayoutReanimationAnimationBuilderCommonTypesMod {
       __obj.asInstanceOf[ILayoutAnimationBuilder]
     }
     
-    extension [Self <: ILayoutAnimationBuilder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILayoutAnimationBuilder] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: () => LayoutAnimationFunction): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     }
@@ -271,7 +279,8 @@ object libTypesReanimated2LayoutReanimationAnimationBuilderCommonTypesMod {
       __obj.asInstanceOf[KeyframeProps]
     }
     
-    extension [Self <: KeyframeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyframeProps] (val x: Self) extends AnyVal {
       
       inline def setEasing(value: /* t */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
       
@@ -294,7 +303,8 @@ object libTypesReanimated2LayoutReanimationAnimationBuilderCommonTypesMod {
       __obj.asInstanceOf[LayoutAnimation]
     }
     
-    extension [Self <: LayoutAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutAnimation] (val x: Self) extends AnyVal {
       
       inline def setAnimations(value: StyleProps): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
       
@@ -362,7 +372,8 @@ object libTypesReanimated2LayoutReanimationAnimationBuilderCommonTypesMod {
       __obj.asInstanceOf[LayoutAnimationsValues]
     }
     
-    extension [Self <: LayoutAnimationsValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutAnimationsValues] (val x: Self) extends AnyVal {
       
       inline def setCurrentGlobalOriginX(value: Double): Self = StObject.set(x, "currentGlobalOriginX", value.asInstanceOf[js.Any])
       

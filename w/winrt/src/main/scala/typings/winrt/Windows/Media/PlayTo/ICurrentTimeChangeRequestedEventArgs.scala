@@ -15,7 +15,8 @@ object ICurrentTimeChangeRequestedEventArgs {
     __obj.asInstanceOf[ICurrentTimeChangeRequestedEventArgs]
   }
   
-  extension [Self <: ICurrentTimeChangeRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICurrentTimeChangeRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }

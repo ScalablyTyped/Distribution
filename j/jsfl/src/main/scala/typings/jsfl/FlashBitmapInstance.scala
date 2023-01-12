@@ -22,7 +22,8 @@ object FlashBitmapInstance {
     __obj.asInstanceOf[FlashBitmapInstance]
   }
   
-  extension [Self <: FlashBitmapInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashBitmapInstance] (val x: Self) extends AnyVal {
     
     inline def setGetBits(value: () => FlashBitmap): Self = StObject.set(x, "getBits", js.Any.fromFunction0(value))
     

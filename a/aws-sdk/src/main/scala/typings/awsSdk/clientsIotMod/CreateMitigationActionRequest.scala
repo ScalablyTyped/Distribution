@@ -33,7 +33,8 @@ object CreateMitigationActionRequest {
     __obj.asInstanceOf[CreateMitigationActionRequest]
   }
   
-  extension [Self <: CreateMitigationActionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMitigationActionRequest] (val x: Self) extends AnyVal {
     
     inline def setActionName(value: MitigationActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     

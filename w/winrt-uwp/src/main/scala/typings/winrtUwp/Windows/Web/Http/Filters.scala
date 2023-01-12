@@ -154,7 +154,8 @@ object Filters {
       __obj.asInstanceOf[HttpBaseProtocolFilter]
     }
     
-    extension [Self <: HttpBaseProtocolFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpBaseProtocolFilter] (val x: Self) extends AnyVal {
       
       inline def setAllowAutoRedirect(value: Boolean): Self = StObject.set(x, "allowAutoRedirect", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object Filters {
       __obj.asInstanceOf[HttpCacheControl]
     }
     
-    extension [Self <: HttpCacheControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpCacheControl] (val x: Self) extends AnyVal {
       
       inline def setReadBehavior(value: HttpCacheReadBehavior): Self = StObject.set(x, "readBehavior", value.asInstanceOf[js.Any])
       
@@ -236,7 +238,8 @@ object Filters {
       __obj.asInstanceOf[IHttpFilter]
     }
     
-    extension [Self <: IHttpFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHttpFilter] (val x: Self) extends AnyVal {
       
       inline def setSendRequestAsync(
         value: HttpRequestMessage => IPromiseWithIAsyncOperationWithProgress[HttpResponseMessage, HttpProgress]

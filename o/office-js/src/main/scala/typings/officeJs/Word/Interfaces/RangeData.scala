@@ -80,7 +80,8 @@ object RangeData {
     __obj.asInstanceOf[RangeData]
   }
   
-  extension [Self <: RangeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeData] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[FieldData]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IMeshoptCompressionConfiguration {
     __obj.asInstanceOf[IMeshoptCompressionConfiguration]
   }
   
-  extension [Self <: IMeshoptCompressionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMeshoptCompressionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDecoder(value: Url): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
   }

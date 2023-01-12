@@ -41,7 +41,8 @@ object MutateOptions {
     __obj.asInstanceOf[MutateOptions[TData, TError, TVariables, TContext]]
   }
   
-  extension [Self <: MutateOptions[?, ?, ?, ?], TData, TError, TVariables, TContext](x: Self & (MutateOptions[TData, TError, TVariables, TContext])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutateOptions[?, ?, ?, ?], TData, TError, TVariables, TContext] (val x: Self & (MutateOptions[TData, TError, TVariables, TContext])) extends AnyVal {
     
     inline def setOnError(
       value: (/* error */ TError, /* variables */ TVariables, /* context */ js.UndefOr[TContext]) => js.Promise[Any] | Unit

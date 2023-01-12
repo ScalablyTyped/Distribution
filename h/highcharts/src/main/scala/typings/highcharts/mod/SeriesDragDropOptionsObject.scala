@@ -146,7 +146,8 @@ object SeriesDragDropOptionsObject {
     __obj.asInstanceOf[SeriesDragDropOptionsObject]
   }
   
-  extension [Self <: SeriesDragDropOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesDragDropOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setDragHandle(value: DragDropHandleOptionsObject): Self = StObject.set(x, "dragHandle", value.asInstanceOf[js.Any])
     

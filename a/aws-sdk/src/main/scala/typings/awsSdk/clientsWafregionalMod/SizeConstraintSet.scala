@@ -28,7 +28,8 @@ object SizeConstraintSet {
     __obj.asInstanceOf[SizeConstraintSet]
   }
   
-  extension [Self <: SizeConstraintSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeConstraintSet] (val x: Self) extends AnyVal {
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object ListPeeringsRequest {
     __obj.asInstanceOf[ListPeeringsRequest]
   }
   
-  extension [Self <: ListPeeringsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPeeringsRequest] (val x: Self) extends AnyVal {
     
     inline def setCoreNetworkId(value: CoreNetworkId): Self = StObject.set(x, "CoreNetworkId", value.asInstanceOf[js.Any])
     

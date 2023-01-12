@@ -18,7 +18,8 @@ object ReadValue {
     __obj.asInstanceOf[ReadValue]
   }
   
-  extension [Self <: ReadValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadValue] (val x: Self) extends AnyVal {
     
     inline def setReadValue(value: HTMLElement => Any): Self = StObject.set(x, "readValue", js.Any.fromFunction1(value))
     

@@ -25,7 +25,8 @@ object distBrokerNativeBrokerNativeRequestMod {
       __obj.asInstanceOf[NativeExtensionRequest]
     }
     
-    extension [Self <: NativeExtensionRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeExtensionRequest] (val x: Self) extends AnyVal {
       
       inline def setBody(value: NativeExtensionRequestBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object distBrokerNativeBrokerNativeRequestMod {
       __obj.asInstanceOf[NativeExtensionRequestBody]
     }
     
-    extension [Self <: NativeExtensionRequestBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeExtensionRequestBody] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: NativeExtensionMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -119,7 +121,8 @@ object distBrokerNativeBrokerNativeRequestMod {
       __obj.asInstanceOf[NativeTokenRequest]
     }
     
-    extension [Self <: NativeTokenRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeTokenRequest] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       

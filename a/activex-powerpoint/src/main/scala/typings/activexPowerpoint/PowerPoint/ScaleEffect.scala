@@ -43,7 +43,8 @@ object ScaleEffect {
     __obj.asInstanceOf[ScaleEffect]
   }
   
-  extension [Self <: ScaleEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleEffect] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

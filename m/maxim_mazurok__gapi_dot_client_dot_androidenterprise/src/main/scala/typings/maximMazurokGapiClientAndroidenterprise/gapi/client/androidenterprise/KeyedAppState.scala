@@ -31,7 +31,8 @@ object KeyedAppState {
     __obj.asInstanceOf[KeyedAppState]
   }
   
-  extension [Self <: KeyedAppState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyedAppState] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

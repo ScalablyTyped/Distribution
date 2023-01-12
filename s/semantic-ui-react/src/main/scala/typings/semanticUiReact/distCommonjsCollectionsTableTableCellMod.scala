@@ -83,7 +83,8 @@ object distCommonjsCollectionsTableTableCellMod extends Shortcut {
       __obj.asInstanceOf[StrictTableCellProps]
     }
     
-    extension [Self <: StrictTableCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictTableCellProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

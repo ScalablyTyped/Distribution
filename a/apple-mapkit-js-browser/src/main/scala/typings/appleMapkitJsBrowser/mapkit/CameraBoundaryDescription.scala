@@ -26,7 +26,8 @@ object CameraBoundaryDescription {
     __obj.asInstanceOf[CameraBoundaryDescription]
   }
   
-  extension [Self <: CameraBoundaryDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraBoundaryDescription] (val x: Self) extends AnyVal {
     
     inline def setMapRect(value: MapRect): Self = StObject.set(x, "mapRect", value.asInstanceOf[js.Any])
     

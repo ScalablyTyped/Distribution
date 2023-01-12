@@ -58,7 +58,8 @@ object GridAreaRectChangedEventUIParam {
     __obj.asInstanceOf[GridAreaRectChangedEventUIParam]
   }
   
-  extension [Self <: GridAreaRectChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridAreaRectChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setChart(value: Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

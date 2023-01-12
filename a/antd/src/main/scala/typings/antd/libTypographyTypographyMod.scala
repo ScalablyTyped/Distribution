@@ -34,7 +34,8 @@ object libTypographyTypographyMod extends Shortcut {
       __obj.asInstanceOf[InternalTypographyProps[C]]
     }
     
-    extension [Self <: InternalTypographyProps[?], C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */](x: Self & InternalTypographyProps[C]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalTypographyProps[?], C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */] (val x: Self & InternalTypographyProps[C]) extends AnyVal {
       
       inline def setSetContentRef(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "setContentRef", js.Any.fromFunction1(value))
       
@@ -57,7 +58,8 @@ object libTypographyTypographyMod extends Shortcut {
       __obj.asInstanceOf[TypographyProps[C]]
     }
     
-    extension [Self <: TypographyProps[?], C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */](x: Self & TypographyProps[C]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypographyProps[?], C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */] (val x: Self & TypographyProps[C]) extends AnyVal {
       
       inline def setDirection(value: DirectionType): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       

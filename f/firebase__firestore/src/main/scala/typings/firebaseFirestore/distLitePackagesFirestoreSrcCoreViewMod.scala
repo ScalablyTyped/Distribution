@@ -171,7 +171,8 @@ object distLitePackagesFirestoreSrcCoreViewMod {
       __obj.asInstanceOf[ViewChange]
     }
     
-    extension [Self <: ViewChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewChange] (val x: Self) extends AnyVal {
       
       inline def setLimboChanges(value: js.Array[LimboDocumentChange]): Self = StObject.set(x, "limboChanges", value.asInstanceOf[js.Any])
       
@@ -212,7 +213,8 @@ object distLitePackagesFirestoreSrcCoreViewMod {
       __obj.asInstanceOf[ViewDocumentChanges]
     }
     
-    extension [Self <: ViewDocumentChanges](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewDocumentChanges] (val x: Self) extends AnyVal {
       
       inline def setChangeSet(value: DocumentChangeSet): Self = StObject.set(x, "changeSet", value.asInstanceOf[js.Any])
       

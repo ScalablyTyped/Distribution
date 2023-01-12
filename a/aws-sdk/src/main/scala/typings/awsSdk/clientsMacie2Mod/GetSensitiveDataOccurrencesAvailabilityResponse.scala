@@ -23,7 +23,8 @@ object GetSensitiveDataOccurrencesAvailabilityResponse {
     __obj.asInstanceOf[GetSensitiveDataOccurrencesAvailabilityResponse]
   }
   
-  extension [Self <: GetSensitiveDataOccurrencesAvailabilityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSensitiveDataOccurrencesAvailabilityResponse] (val x: Self) extends AnyVal {
     
     inline def setCode(value: AvailabilityCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[SubscriptionModel]
     }
     
-    extension [Self <: SubscriptionModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionModel] (val x: Self) extends AnyVal {
       
       inline def setInputFormatter(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "inputFormatter", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object mod {
       __obj.asInstanceOf[SubscriptionOptions]
     }
     
-    extension [Self <: SubscriptionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionOptions] (val x: Self) extends AnyVal {
       
       inline def setRequestManager(value: Any): Self = StObject.set(x, "requestManager", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object mod {
       __obj.asInstanceOf[SubscriptionsOptions]
     }
     
-    extension [Self <: SubscriptionsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionsOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

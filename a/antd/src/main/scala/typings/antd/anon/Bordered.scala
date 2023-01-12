@@ -39,7 +39,8 @@ object Bordered {
     __obj.asInstanceOf[Bordered[DataNodeType]]
   }
   
-  extension [Self <: Bordered[?], DataNodeType](x: Self & Bordered[DataNodeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bordered[?], DataNodeType] (val x: Self & Bordered[DataNodeType]) extends AnyVal {
     
     inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
     

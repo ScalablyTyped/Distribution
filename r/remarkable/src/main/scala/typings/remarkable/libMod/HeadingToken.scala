@@ -19,7 +19,8 @@ object HeadingToken {
     __obj.asInstanceOf[HeadingToken]
   }
   
-  extension [Self <: HeadingToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadingToken] (val x: Self) extends AnyVal {
     
     inline def setHLevel(value: HeadingValue): Self = StObject.set(x, "hLevel", value.asInstanceOf[js.Any])
   }

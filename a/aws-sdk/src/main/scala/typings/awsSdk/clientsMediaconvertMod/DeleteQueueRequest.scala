@@ -18,7 +18,8 @@ object DeleteQueueRequest {
     __obj.asInstanceOf[DeleteQueueRequest]
   }
   
-  extension [Self <: DeleteQueueRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteQueueRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

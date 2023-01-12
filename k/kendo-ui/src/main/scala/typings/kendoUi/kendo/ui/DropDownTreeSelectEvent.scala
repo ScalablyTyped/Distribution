@@ -18,7 +18,8 @@ object DropDownTreeSelectEvent {
     __obj.asInstanceOf[DropDownTreeSelectEvent]
   }
   
-  extension [Self <: DropDownTreeSelectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownTreeSelectEvent] (val x: Self) extends AnyVal {
     
     inline def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

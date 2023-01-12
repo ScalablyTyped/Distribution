@@ -41,7 +41,8 @@ object Droppable {
       __obj.asInstanceOf[DropEventArgs]
     }
     
-    extension [Self <: DropEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object Droppable {
       __obj.asInstanceOf[typings.ejWebAll.ej.Droppable.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Droppable.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Droppable.Model] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: Any): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -141,7 +143,8 @@ object Droppable {
       __obj.asInstanceOf[OutEventArgs]
     }
     
-    extension [Self <: OutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -186,7 +189,8 @@ object Droppable {
       __obj.asInstanceOf[OverEventArgs]
     }
     
-    extension [Self <: OverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

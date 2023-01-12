@@ -15,7 +15,8 @@ object SentWebAppMessage {
     __obj.asInstanceOf[SentWebAppMessage]
   }
   
-  extension [Self <: SentWebAppMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SentWebAppMessage] (val x: Self) extends AnyVal {
     
     inline def setInline_message_id(value: String): Self = StObject.set(x, "inline_message_id", value.asInstanceOf[js.Any])
     

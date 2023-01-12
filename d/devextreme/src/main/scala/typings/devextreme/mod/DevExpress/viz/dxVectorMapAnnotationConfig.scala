@@ -20,7 +20,8 @@ object dxVectorMapAnnotationConfig {
     __obj.asInstanceOf[dxVectorMapAnnotationConfig]
   }
   
-  extension [Self <: dxVectorMapAnnotationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxVectorMapAnnotationConfig] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

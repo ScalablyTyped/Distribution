@@ -54,7 +54,8 @@ object UnifiedRoleAssignment {
     __obj.asInstanceOf[UnifiedRoleAssignment]
   }
   
-  extension [Self <: UnifiedRoleAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnifiedRoleAssignment] (val x: Self) extends AnyVal {
     
     inline def setAppScope(value: NullableOption[AppScope]): Self = StObject.set(x, "appScope", value.asInstanceOf[js.Any])
     

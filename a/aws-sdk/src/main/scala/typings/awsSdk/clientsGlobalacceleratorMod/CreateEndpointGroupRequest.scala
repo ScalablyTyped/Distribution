@@ -68,7 +68,8 @@ object CreateEndpointGroupRequest {
     __obj.asInstanceOf[CreateEndpointGroupRequest]
   }
   
-  extension [Self <: CreateEndpointGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEndpointGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setEndpointConfigurations(value: EndpointConfigurations): Self = StObject.set(x, "EndpointConfigurations", value.asInstanceOf[js.Any])
     

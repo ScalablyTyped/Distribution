@@ -35,7 +35,8 @@ object NavigationItem {
     __obj.asInstanceOf[NavigationItem]
   }
   
-  extension [Self <: NavigationItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationItem] (val x: Self) extends AnyVal {
     
     inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
   }

@@ -18,7 +18,8 @@ object GetAccountPasswordPolicyResponse {
     __obj.asInstanceOf[GetAccountPasswordPolicyResponse]
   }
   
-  extension [Self <: GetAccountPasswordPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccountPasswordPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setPasswordPolicy(value: PasswordPolicy): Self = StObject.set(x, "PasswordPolicy", value.asInstanceOf[js.Any])
   }

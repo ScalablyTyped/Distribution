@@ -29,7 +29,8 @@ object GetEncodedResponseResponse {
     __obj.asInstanceOf[GetEncodedResponseResponse]
   }
   
-  extension [Self <: GetEncodedResponseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEncodedResponseResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

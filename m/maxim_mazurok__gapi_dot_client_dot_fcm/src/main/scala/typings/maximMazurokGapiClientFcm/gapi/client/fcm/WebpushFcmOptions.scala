@@ -19,7 +19,8 @@ object WebpushFcmOptions {
     __obj.asInstanceOf[WebpushFcmOptions]
   }
   
-  extension [Self <: WebpushFcmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebpushFcmOptions] (val x: Self) extends AnyVal {
     
     inline def setAnalyticsLabel(value: String): Self = StObject.set(x, "analyticsLabel", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AppArgsSnoopId {
     __obj.asInstanceOf[AppArgsSnoopId]
   }
   
-  extension [Self <: AppArgsSnoopId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppArgsSnoopId] (val x: Self) extends AnyVal {
     
     inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

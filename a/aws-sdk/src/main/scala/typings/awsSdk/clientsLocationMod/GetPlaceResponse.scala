@@ -18,7 +18,8 @@ object GetPlaceResponse {
     __obj.asInstanceOf[GetPlaceResponse]
   }
   
-  extension [Self <: GetPlaceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPlaceResponse] (val x: Self) extends AnyVal {
     
     inline def setPlace(value: Place): Self = StObject.set(x, "Place", value.asInstanceOf[js.Any])
   }

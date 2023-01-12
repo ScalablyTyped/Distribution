@@ -38,7 +38,8 @@ object CSSNamespaceRule {
     __obj.asInstanceOf[CSSNamespaceRule]
   }
   
-  extension [Self <: CSSNamespaceRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSNamespaceRule] (val x: Self) extends AnyVal {
     
     inline def setNamespaceURI(value: java.lang.String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
     

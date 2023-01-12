@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[OmitStoreAnyActionSymbolo]
     }
     
-    extension [Self <: OmitStoreAnyActionSymbolo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitStoreAnyActionSymbolo] (val x: Self) extends AnyVal {
       
       inline def setDispatch(value: /* action */ AnyAction => AnyAction): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       

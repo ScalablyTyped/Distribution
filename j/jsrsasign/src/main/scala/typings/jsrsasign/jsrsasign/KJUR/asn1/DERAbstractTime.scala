@@ -70,7 +70,8 @@ object DERAbstractTime {
     __obj.asInstanceOf[DERAbstractTime]
   }
   
-  extension [Self <: DERAbstractTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DERAbstractTime] (val x: Self) extends AnyVal {
     
     inline def setFormatDate(value: (js.Date, utc | gen, Boolean) => String): Self = StObject.set(x, "formatDate", js.Any.fromFunction3(value))
     

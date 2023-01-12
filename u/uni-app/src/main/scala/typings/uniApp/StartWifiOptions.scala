@@ -28,7 +28,8 @@ object StartWifiOptions {
     __obj.asInstanceOf[StartWifiOptions]
   }
   
-  extension [Self <: StartWifiOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartWifiOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

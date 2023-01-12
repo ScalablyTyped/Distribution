@@ -19,7 +19,8 @@ object IObjectTypeTargetForBrowsing {
     __obj.asInstanceOf[IObjectTypeTargetForBrowsing]
   }
   
-  extension [Self <: IObjectTypeTargetForBrowsing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectTypeTargetForBrowsing] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IObjectTypeTargetForBrowsing): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

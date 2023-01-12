@@ -21,7 +21,8 @@ object QRCodeByteSegment {
     __obj.asInstanceOf[QRCodeByteSegment]
   }
   
-  extension [Self <: QRCodeByteSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRCodeByteSegment] (val x: Self) extends AnyVal {
     
     inline def setData(value: Buffer | js.typedarray.Uint8ClampedArray | js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

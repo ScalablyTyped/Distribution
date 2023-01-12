@@ -42,7 +42,8 @@ object typesSrcCoreTimelineTimelineSenderMod {
       __obj.asInstanceOf[TimelineSenderOptions]
     }
     
-    extension [Self <: TimelineSenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineSenderOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

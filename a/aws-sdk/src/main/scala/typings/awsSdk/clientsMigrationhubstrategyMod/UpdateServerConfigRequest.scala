@@ -23,7 +23,8 @@ object UpdateServerConfigRequest {
     __obj.asInstanceOf[UpdateServerConfigRequest]
   }
   
-  extension [Self <: UpdateServerConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateServerConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setServerId(value: ServerId): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
     

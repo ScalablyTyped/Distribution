@@ -23,7 +23,8 @@ object protractorMod {
       __obj.asInstanceOf[ProtractorBy]
     }
     
-    extension [Self <: ProtractorBy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtractorBy] (val x: Self) extends AnyVal {
       
       inline def setShadowDomCss(value: String => Any): Self = StObject.set(x, "shadowDomCss", js.Any.fromFunction1(value))
     }

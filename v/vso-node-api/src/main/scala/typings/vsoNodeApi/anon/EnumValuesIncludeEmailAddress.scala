@@ -15,7 +15,8 @@ object EnumValuesIncludeEmailAddress {
     __obj.asInstanceOf[EnumValuesIncludeEmailAddress]
   }
   
-  extension [Self <: EnumValuesIncludeEmailAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesIncludeEmailAddress] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: IncludeEmailAddress): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

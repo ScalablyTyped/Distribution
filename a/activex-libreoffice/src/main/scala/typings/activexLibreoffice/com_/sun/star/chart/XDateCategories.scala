@@ -43,7 +43,8 @@ object XDateCategories {
     __obj.asInstanceOf[XDateCategories]
   }
   
-  extension [Self <: XDateCategories](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDateCategories] (val x: Self) extends AnyVal {
     
     inline def setDateCategories(value: SafeArray[Double]): Self = StObject.set(x, "DateCategories", value.asInstanceOf[js.Any])
     

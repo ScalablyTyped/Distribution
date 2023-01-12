@@ -56,7 +56,8 @@ object QuotaUserRoute {
     __obj.asInstanceOf[QuotaUserRoute]
   }
   
-  extension [Self <: QuotaUserRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuotaUserRoute] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

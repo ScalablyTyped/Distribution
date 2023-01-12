@@ -205,7 +205,8 @@ object toolsSrcSourceFileUtilsMod {
       __obj.asInstanceOf[TranslatePluginOptions]
     }
     
-    extension [Self <: TranslatePluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranslatePluginOptions] (val x: Self) extends AnyVal {
       
       inline def setLocalizeName(value: String): Self = StObject.set(x, "localizeName", value.asInstanceOf[js.Any])
       

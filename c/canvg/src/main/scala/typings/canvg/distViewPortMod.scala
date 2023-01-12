@@ -73,7 +73,8 @@ object distViewPortMod {
       __obj.asInstanceOf[IViewPortSize]
     }
     
-    extension [Self <: IViewPortSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IViewPortSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

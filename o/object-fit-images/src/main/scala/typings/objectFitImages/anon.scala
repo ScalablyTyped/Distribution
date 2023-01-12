@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[SkipTest]
     }
     
-    extension [Self <: SkipTest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkipTest] (val x: Self) extends AnyVal {
       
       inline def setSkipTest(value: Boolean): Self = StObject.set(x, "skipTest", value.asInstanceOf[js.Any])
       

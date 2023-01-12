@@ -39,7 +39,8 @@ object CompiledCloudFormationTemplate {
     __obj.asInstanceOf[CompiledCloudFormationTemplate]
   }
   
-  extension [Self <: CompiledCloudFormationTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompiledCloudFormationTemplate] (val x: Self) extends AnyVal {
     
     inline def setCompiledCloudFormationTemplate(value: Outputs): Self = StObject.set(x, "compiledCloudFormationTemplate", value.asInstanceOf[js.Any])
     

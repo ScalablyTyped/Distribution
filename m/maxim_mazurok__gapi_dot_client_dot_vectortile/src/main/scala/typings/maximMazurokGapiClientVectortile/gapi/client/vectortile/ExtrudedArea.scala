@@ -25,7 +25,8 @@ object ExtrudedArea {
     __obj.asInstanceOf[ExtrudedArea]
   }
   
-  extension [Self <: ExtrudedArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtrudedArea] (val x: Self) extends AnyVal {
     
     inline def setArea(value: Area): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

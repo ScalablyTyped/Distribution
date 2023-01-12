@@ -29,7 +29,8 @@ object ProjectList {
     __obj.asInstanceOf[ProjectList]
   }
   
-  extension [Self <: ProjectList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectList] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

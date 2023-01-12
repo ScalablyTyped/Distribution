@@ -48,7 +48,8 @@ object IELangEditDefaults {
     __obj.asInstanceOf[IELangEditDefaults]
   }
   
-  extension [Self <: IELangEditDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IELangEditDefaults] (val x: Self) extends AnyVal {
     
     inline def setAddButtonHtml(value: String): Self = StObject.set(x, "addButtonHtml", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object EventPaused {
     __obj.asInstanceOf[EventPaused]
   }
   
-  extension [Self <: EventPaused](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventPaused] (val x: Self) extends AnyVal {
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

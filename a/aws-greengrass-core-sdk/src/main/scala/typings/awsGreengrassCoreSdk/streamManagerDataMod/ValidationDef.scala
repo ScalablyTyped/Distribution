@@ -25,7 +25,8 @@ object ValidationDef {
     __obj.asInstanceOf[ValidationDef]
   }
   
-  extension [Self <: ValidationDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationDef] (val x: Self) extends AnyVal {
     
     inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     

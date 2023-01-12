@@ -19,7 +19,8 @@ object SpawnSyncOptionsWithBufferEncoding {
     __obj.asInstanceOf[SpawnSyncOptionsWithBufferEncoding]
   }
   
-  extension [Self <: SpawnSyncOptionsWithBufferEncoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpawnSyncOptionsWithBufferEncoding] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: buffer_): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

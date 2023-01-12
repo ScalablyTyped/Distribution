@@ -15,7 +15,8 @@ object UseGroupByHooks {
     __obj.asInstanceOf[UseGroupByHooks[D]]
   }
   
-  extension [Self <: UseGroupByHooks[?], D /* <: js.Object */](x: Self & UseGroupByHooks[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseGroupByHooks[?], D /* <: js.Object */] (val x: Self & UseGroupByHooks[D]) extends AnyVal {
     
     inline def setGetGroupByToggleProps(value: js.Array[HeaderGroupPropGetter[D]]): Self = StObject.set(x, "getGroupByToggleProps", value.asInstanceOf[js.Any])
     

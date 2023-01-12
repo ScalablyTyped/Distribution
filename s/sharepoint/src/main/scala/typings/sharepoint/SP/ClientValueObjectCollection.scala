@@ -28,7 +28,8 @@ object ClientValueObjectCollection {
     __obj.asInstanceOf[ClientValueObjectCollection[T]]
   }
   
-  extension [Self <: ClientValueObjectCollection[?], T](x: Self & ClientValueObjectCollection[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientValueObjectCollection[?], T] (val x: Self & ClientValueObjectCollection[T]) extends AnyVal {
     
     inline def setGet_count(value: () => Double): Self = StObject.set(x, "get_count", js.Any.fromFunction0(value))
   }

@@ -33,7 +33,8 @@ object WebMercatorViewportOptions {
     __obj.asInstanceOf[WebMercatorViewportOptions]
   }
   
-  extension [Self <: WebMercatorViewportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebMercatorViewportOptions] (val x: Self) extends AnyVal {
     
     inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     

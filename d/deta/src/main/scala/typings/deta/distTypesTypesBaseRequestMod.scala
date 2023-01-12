@@ -19,7 +19,8 @@ object distTypesTypesBaseRequestMod {
       __obj.asInstanceOf[FetchOptions]
     }
     
-    extension [Self <: FetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchOptions] (val x: Self) extends AnyVal {
       
       inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object distTypesTypesBaseRequestMod {
       __obj.asInstanceOf[InsertOptions]
     }
     
-    extension [Self <: InsertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InsertOptions] (val x: Self) extends AnyVal {
       
       inline def setExpireAt(value: js.Date | Double): Self = StObject.set(x, "expireAt", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object distTypesTypesBaseRequestMod {
       __obj.asInstanceOf[PutManyOptions]
     }
     
-    extension [Self <: PutManyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutManyOptions] (val x: Self) extends AnyVal {
       
       inline def setExpireAt(value: js.Date | Double): Self = StObject.set(x, "expireAt", value.asInstanceOf[js.Any])
       
@@ -94,7 +97,8 @@ object distTypesTypesBaseRequestMod {
       __obj.asInstanceOf[PutOptions]
     }
     
-    extension [Self <: PutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutOptions] (val x: Self) extends AnyVal {
       
       inline def setExpireAt(value: js.Date | Double): Self = StObject.set(x, "expireAt", value.asInstanceOf[js.Any])
       
@@ -119,7 +123,8 @@ object distTypesTypesBaseRequestMod {
       __obj.asInstanceOf[UpdateOptions]
     }
     
-    extension [Self <: UpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setExpireAt(value: js.Date | Double): Self = StObject.set(x, "expireAt", value.asInstanceOf[js.Any])
       

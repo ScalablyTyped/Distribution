@@ -47,7 +47,8 @@ object EngineTranscribeMedicalSettings {
     __obj.asInstanceOf[EngineTranscribeMedicalSettings]
   }
   
-  extension [Self <: EngineTranscribeMedicalSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EngineTranscribeMedicalSettings] (val x: Self) extends AnyVal {
     
     inline def setContentIdentificationType(value: TranscribeMedicalContentIdentificationType): Self = StObject.set(x, "ContentIdentificationType", value.asInstanceOf[js.Any])
     

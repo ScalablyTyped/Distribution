@@ -58,7 +58,8 @@ object ResourceShareAssociation {
     __obj.asInstanceOf[ResourceShareAssociation]
   }
   
-  extension [Self <: ResourceShareAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceShareAssociation] (val x: Self) extends AnyVal {
     
     inline def setAssociatedEntity(value: String): Self = StObject.set(x, "associatedEntity", value.asInstanceOf[js.Any])
     

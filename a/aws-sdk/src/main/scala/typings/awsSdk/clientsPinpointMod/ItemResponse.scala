@@ -23,7 +23,8 @@ object ItemResponse {
     __obj.asInstanceOf[ItemResponse]
   }
   
-  extension [Self <: ItemResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemResponse] (val x: Self) extends AnyVal {
     
     inline def setEndpointItemResponse(value: EndpointItemResponse): Self = StObject.set(x, "EndpointItemResponse", value.asInstanceOf[js.Any])
     

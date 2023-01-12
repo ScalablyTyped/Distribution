@@ -23,7 +23,8 @@ object PutVoiceConnectorTerminationCredentialsRequest {
     __obj.asInstanceOf[PutVoiceConnectorTerminationCredentialsRequest]
   }
   
-  extension [Self <: PutVoiceConnectorTerminationCredentialsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutVoiceConnectorTerminationCredentialsRequest] (val x: Self) extends AnyVal {
     
     inline def setCredentials(value: CredentialList): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
     

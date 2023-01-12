@@ -25,7 +25,8 @@ object IDBDatabaseEventMap {
     __obj.asInstanceOf[IDBDatabaseEventMap]
   }
   
-  extension [Self <: IDBDatabaseEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDBDatabaseEventMap] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: Event): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     

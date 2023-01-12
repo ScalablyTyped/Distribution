@@ -17,7 +17,8 @@ object XAnimationNodeSupplier {
     __obj.asInstanceOf[XAnimationNodeSupplier]
   }
   
-  extension [Self <: XAnimationNodeSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAnimationNodeSupplier] (val x: Self) extends AnyVal {
     
     inline def setAnimationNode(value: XAnimationNode): Self = StObject.set(x, "AnimationNode", value.asInstanceOf[js.Any])
     

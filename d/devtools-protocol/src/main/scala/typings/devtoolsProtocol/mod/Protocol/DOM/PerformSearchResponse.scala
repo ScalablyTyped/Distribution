@@ -24,7 +24,8 @@ object PerformSearchResponse {
     __obj.asInstanceOf[PerformSearchResponse]
   }
   
-  extension [Self <: PerformSearchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformSearchResponse] (val x: Self) extends AnyVal {
     
     inline def setResultCount(value: integer): Self = StObject.set(x, "resultCount", value.asInstanceOf[js.Any])
     

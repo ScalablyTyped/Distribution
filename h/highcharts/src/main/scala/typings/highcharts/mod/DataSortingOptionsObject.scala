@@ -28,7 +28,8 @@ object DataSortingOptionsObject {
     __obj.asInstanceOf[DataSortingOptionsObject]
   }
   
-  extension [Self <: DataSortingOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSortingOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

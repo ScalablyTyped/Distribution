@@ -19,7 +19,8 @@ object InputDestinationRequest {
     __obj.asInstanceOf[InputDestinationRequest]
   }
   
-  extension [Self <: InputDestinationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputDestinationRequest] (val x: Self) extends AnyVal {
     
     inline def setStreamName(value: string): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     

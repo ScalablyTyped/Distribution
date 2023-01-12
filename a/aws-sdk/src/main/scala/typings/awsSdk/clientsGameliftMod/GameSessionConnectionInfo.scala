@@ -38,7 +38,8 @@ object GameSessionConnectionInfo {
     __obj.asInstanceOf[GameSessionConnectionInfo]
   }
   
-  extension [Self <: GameSessionConnectionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameSessionConnectionInfo] (val x: Self) extends AnyVal {
     
     inline def setDnsName(value: DnsName): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
     

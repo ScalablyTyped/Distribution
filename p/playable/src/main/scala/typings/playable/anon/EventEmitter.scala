@@ -30,7 +30,8 @@ object EventEmitter {
     __obj.asInstanceOf[EventEmitter]
   }
   
-  extension [Self <: EventEmitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventEmitter] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

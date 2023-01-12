@@ -18,7 +18,8 @@ object TrustAnchorDetailResponse {
     __obj.asInstanceOf[TrustAnchorDetailResponse]
   }
   
-  extension [Self <: TrustAnchorDetailResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustAnchorDetailResponse] (val x: Self) extends AnyVal {
     
     inline def setTrustAnchor(value: TrustAnchorDetail): Self = StObject.set(x, "trustAnchor", value.asInstanceOf[js.Any])
   }

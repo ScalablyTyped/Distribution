@@ -19,7 +19,8 @@ object ListMilestonesOutput {
     __obj.asInstanceOf[ListMilestonesOutput]
   }
   
-  extension [Self <: ListMilestonesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMilestonesOutput] (val x: Self) extends AnyVal {
     
     inline def setMilestoneSummaries(value: MilestoneSummaries): Self = StObject.set(x, "MilestoneSummaries", value.asInstanceOf[js.Any])
     

@@ -246,7 +246,8 @@ object file {
       __obj.asInstanceOf[IExpandedFilesConfig]
     }
     
-    extension [Self <: IExpandedFilesConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExpandedFilesConfig] (val x: Self) extends AnyVal {
       
       inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
@@ -276,7 +277,8 @@ object file {
       __obj.asInstanceOf[IFileEncodedOption]
     }
     
-    extension [Self <: IFileEncodedOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileEncodedOption] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
@@ -304,7 +306,8 @@ object file {
       __obj.asInstanceOf[IFileMap]
     }
     
-    extension [Self <: IFileMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileMap] (val x: Self) extends AnyVal {
       
       inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
@@ -335,7 +338,8 @@ object file {
       __obj.asInstanceOf[IFileWriteBufferOption]
     }
     
-    extension [Self <: IFileWriteBufferOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileWriteBufferOption] (val x: Self) extends AnyVal {
       
       inline def setProcess(value: /* buffer */ Buffer => Boolean): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
       
@@ -370,7 +374,8 @@ object file {
       __obj.asInstanceOf[IFileWriteOptions]
     }
     
-    extension [Self <: IFileWriteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileWriteOptions] (val x: Self) extends AnyVal {
       
       inline def setNoProcess(value: Any): Self = StObject.set(x, "noProcess", value.asInstanceOf[js.Any])
       
@@ -414,7 +419,8 @@ object file {
       __obj.asInstanceOf[IFileWriteStringOption]
     }
     
-    extension [Self <: IFileWriteStringOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileWriteStringOption] (val x: Self) extends AnyVal {
       
       inline def setProcess(value: (/* contents */ String, /* srcpath */ String, /* destpath */ String) => String | Boolean): Self = StObject.set(x, "process", js.Any.fromFunction3(value))
       
@@ -485,7 +491,8 @@ object file {
       __obj.asInstanceOf[IFilesConfig]
     }
     
-    extension [Self <: IFilesConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFilesConfig] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       

@@ -186,7 +186,8 @@ object dxPivotGridOptions {
     __obj.asInstanceOf[dxPivotGridOptions]
   }
   
-  extension [Self <: dxPivotGridOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPivotGridOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowExpandAll(value: Boolean): Self = StObject.set(x, "allowExpandAll", value.asInstanceOf[js.Any])
     

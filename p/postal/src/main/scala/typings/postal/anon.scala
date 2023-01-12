@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Binding]
     }
     
-    extension [Self <: Binding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Binding] (val x: Self) extends AnyVal {
       
       inline def setBinding(value: String): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Callback]
     }
     
-    extension [Self <: Callback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (Any, /* envelope */ IEnvelope[Any]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
@@ -81,7 +83,8 @@ object anon {
       __obj.asInstanceOf[Channel]
     }
     
-    extension [Self <: Channel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       

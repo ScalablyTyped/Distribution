@@ -22,7 +22,8 @@ object buildNativeModulesProxyDottypesMod {
       __obj.asInstanceOf[ProxyNativeModule]
     }
     
-    extension [Self <: ProxyNativeModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyNativeModule] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: String => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
       

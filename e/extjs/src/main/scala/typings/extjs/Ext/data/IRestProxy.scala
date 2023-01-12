@@ -22,7 +22,8 @@ object IRestProxy {
     __obj.asInstanceOf[IRestProxy]
   }
   
-  extension [Self <: IRestProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRestProxy] (val x: Self) extends AnyVal {
     
     inline def setAppendId(value: Boolean): Self = StObject.set(x, "appendId", value.asInstanceOf[js.Any])
     

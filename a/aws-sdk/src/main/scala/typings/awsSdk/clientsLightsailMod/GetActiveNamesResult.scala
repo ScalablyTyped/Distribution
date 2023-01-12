@@ -23,7 +23,8 @@ object GetActiveNamesResult {
     __obj.asInstanceOf[GetActiveNamesResult]
   }
   
-  extension [Self <: GetActiveNamesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetActiveNamesResult] (val x: Self) extends AnyVal {
     
     inline def setActiveNames(value: StringList): Self = StObject.set(x, "activeNames", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object PingPongDelayOptions {
     __obj.asInstanceOf[PingPongDelayOptions]
   }
   
-  extension [Self <: PingPongDelayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PingPongDelayOptions] (val x: Self) extends AnyVal {
     
     inline def setFeedback(value: Double): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     

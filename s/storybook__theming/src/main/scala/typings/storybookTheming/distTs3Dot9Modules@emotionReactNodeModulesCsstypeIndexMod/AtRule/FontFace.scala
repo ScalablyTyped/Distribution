@@ -43,7 +43,8 @@ object FontFace {
     __obj.asInstanceOf[FontFace[TLength, TTime]]
   }
   
-  extension [Self <: FontFace[?, ?], TLength, TTime](x: Self & (FontFace[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontFace[?, ?], TLength, TTime] (val x: Self & (FontFace[TLength, TTime])) extends AnyVal {
     
     inline def setAscentOverride(value: AscentOverride): Self = StObject.set(x, "ascentOverride", value.asInstanceOf[js.Any])
     

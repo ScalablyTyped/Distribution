@@ -26,7 +26,8 @@ object Default {
     __obj.asInstanceOf[Default]
   }
   
-  extension [Self <: Default](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
     
     inline def setBasePaths(value: js.Array[String]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
     

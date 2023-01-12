@@ -98,7 +98,8 @@ object Torrent {
     __obj.asInstanceOf[Torrent]
   }
   
-  extension [Self <: Torrent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Torrent] (val x: Self) extends AnyVal {
     
     inline def setAnidbid(value: Double): Self = StObject.set(x, "anidbid", value.asInstanceOf[js.Any])
     

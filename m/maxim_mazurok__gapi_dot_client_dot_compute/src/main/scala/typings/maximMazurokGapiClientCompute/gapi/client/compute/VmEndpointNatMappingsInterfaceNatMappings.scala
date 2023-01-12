@@ -37,7 +37,8 @@ object VmEndpointNatMappingsInterfaceNatMappings {
     __obj.asInstanceOf[VmEndpointNatMappingsInterfaceNatMappings]
   }
   
-  extension [Self <: VmEndpointNatMappingsInterfaceNatMappings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VmEndpointNatMappingsInterfaceNatMappings] (val x: Self) extends AnyVal {
     
     inline def setDrainNatIpPortRanges(value: js.Array[String]): Self = StObject.set(x, "drainNatIpPortRanges", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ReplicationStatusType {
     __obj.asInstanceOf[ReplicationStatusType]
   }
   
-  extension [Self <: ReplicationStatusType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationStatusType] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: KmsKeyIdType): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

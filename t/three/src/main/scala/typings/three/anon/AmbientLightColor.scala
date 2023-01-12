@@ -60,7 +60,8 @@ object AmbientLightColor {
     __obj.asInstanceOf[AmbientLightColor]
   }
   
-  extension [Self <: AmbientLightColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmbientLightColor] (val x: Self) extends AnyVal {
     
     inline def setAmbientLightColor(value: IUniform[Any]): Self = StObject.set(x, "ambientLightColor", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DescribeEffectivePatchesForPatchBaselineRequest {
     __obj.asInstanceOf[DescribeEffectivePatchesForPatchBaselineRequest]
   }
   
-  extension [Self <: DescribeEffectivePatchesForPatchBaselineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEffectivePatchesForPatchBaselineRequest] (val x: Self) extends AnyVal {
     
     inline def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
     

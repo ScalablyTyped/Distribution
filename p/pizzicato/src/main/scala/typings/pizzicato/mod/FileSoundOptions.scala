@@ -24,7 +24,8 @@ object FileSoundOptions {
     __obj.asInstanceOf[FileSoundOptions]
   }
   
-  extension [Self <: FileSoundOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSoundOptions] (val x: Self) extends AnyVal {
     
     inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     

@@ -86,7 +86,8 @@ object distSrcRoutingTableRefreshMod {
       __obj.asInstanceOf[RoutingTableRefreshInit]
     }
     
-    extension [Self <: RoutingTableRefreshInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoutingTableRefreshInit] (val x: Self) extends AnyVal {
       
       inline def setLan(value: Boolean): Self = StObject.set(x, "lan", value.asInstanceOf[js.Any])
       

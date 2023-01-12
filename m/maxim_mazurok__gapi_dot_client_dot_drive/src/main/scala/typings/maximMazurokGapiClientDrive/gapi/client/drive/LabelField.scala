@@ -44,7 +44,8 @@ object LabelField {
     __obj.asInstanceOf[LabelField]
   }
   
-  extension [Self <: LabelField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelField] (val x: Self) extends AnyVal {
     
     inline def setDateString(value: js.Array[String]): Self = StObject.set(x, "dateString", value.asInstanceOf[js.Any])
     

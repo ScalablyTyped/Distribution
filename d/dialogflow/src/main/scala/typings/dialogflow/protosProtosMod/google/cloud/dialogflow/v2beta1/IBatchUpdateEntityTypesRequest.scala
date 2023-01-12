@@ -30,7 +30,8 @@ object IBatchUpdateEntityTypesRequest {
     __obj.asInstanceOf[IBatchUpdateEntityTypesRequest]
   }
   
-  extension [Self <: IBatchUpdateEntityTypesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBatchUpdateEntityTypesRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityTypeBatchInline(value: IEntityTypeBatch): Self = StObject.set(x, "entityTypeBatchInline", value.asInstanceOf[js.Any])
     

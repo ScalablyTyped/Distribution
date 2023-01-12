@@ -28,7 +28,8 @@ object UpdateImageGenerationConfigurationInput {
     __obj.asInstanceOf[UpdateImageGenerationConfigurationInput]
   }
   
-  extension [Self <: UpdateImageGenerationConfigurationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateImageGenerationConfigurationInput] (val x: Self) extends AnyVal {
     
     inline def setImageGenerationConfiguration(value: ImageGenerationConfiguration): Self = StObject.set(x, "ImageGenerationConfiguration", value.asInstanceOf[js.Any])
     

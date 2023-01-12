@@ -17,7 +17,8 @@ object ImpliedNodeFormat {
     __obj.asInstanceOf[ImpliedNodeFormat]
   }
   
-  extension [Self <: ImpliedNodeFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImpliedNodeFormat] (val x: Self) extends AnyVal {
     
     inline def setImpliedNodeFormat(value: ESNext | CommonJS): Self = StObject.set(x, "impliedNodeFormat", value.asInstanceOf[js.Any])
     

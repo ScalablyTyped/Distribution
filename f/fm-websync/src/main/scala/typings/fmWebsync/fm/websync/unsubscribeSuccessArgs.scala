@@ -32,7 +32,8 @@ object unsubscribeSuccessArgs {
     __obj.asInstanceOf[unsubscribeSuccessArgs]
   }
   
-  extension [Self <: unsubscribeSuccessArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: unsubscribeSuccessArgs] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

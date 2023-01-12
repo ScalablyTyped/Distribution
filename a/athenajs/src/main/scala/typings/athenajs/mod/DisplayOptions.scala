@@ -24,7 +24,8 @@ object DisplayOptions {
     __obj.asInstanceOf[DisplayOptions]
   }
   
-  extension [Self <: DisplayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

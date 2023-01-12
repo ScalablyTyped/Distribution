@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[TimePickerClockProps]
     }
     
-    extension [Self <: TimePickerClockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimePickerClockProps] (val x: Self) extends AnyVal {
       
       inline def setHourHandLength(value: Double): Self = StObject.set(x, "hourHandLength", value.asInstanceOf[js.Any])
       
@@ -318,7 +319,8 @@ object mod {
       __obj.asInstanceOf[TimePickerProps[T]]
     }
     
-    extension [Self <: TimePickerProps[?], T](x: Self & TimePickerProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimePickerProps[?], T] (val x: Self & TimePickerProps[T]) extends AnyVal {
       
       inline def setAmPmAriaLabel(value: String): Self = StObject.set(x, "amPmAriaLabel", value.asInstanceOf[js.Any])
       

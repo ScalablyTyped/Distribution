@@ -29,7 +29,8 @@ object TfvcBranchMapping {
     __obj.asInstanceOf[TfvcBranchMapping]
   }
   
-  extension [Self <: TfvcBranchMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcBranchMapping] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: String): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

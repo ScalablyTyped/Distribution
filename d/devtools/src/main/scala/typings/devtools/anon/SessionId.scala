@@ -17,7 +17,8 @@ object SessionId {
     __obj.asInstanceOf[SessionId]
   }
   
-  extension [Self <: SessionId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionId] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: BrowserName): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

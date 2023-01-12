@@ -670,7 +670,8 @@ object sapFCardsHeaderMod {
       __obj.asInstanceOf[HeaderSettings]
     }
     
-    extension [Self <: HeaderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderSettings] (val x: Self) extends AnyVal {
       
       inline def setIconAlt(value: String | PropertyBindingInfo): Self = StObject.set(x, "iconAlt", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object PretargetingConfigList {
     __obj.asInstanceOf[PretargetingConfigList]
   }
   
-  extension [Self <: PretargetingConfigList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PretargetingConfigList] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[PretargetingConfig]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

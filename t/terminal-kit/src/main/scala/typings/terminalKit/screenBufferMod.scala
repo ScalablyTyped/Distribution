@@ -103,7 +103,8 @@ object screenBufferMod {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setBgColor(value: Double | String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
       
@@ -202,7 +203,8 @@ object screenBufferMod {
       __obj.asInstanceOf[DrawOptions]
     }
     
-    extension [Self <: DrawOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawOptions] (val x: Self) extends AnyVal {
       
       inline def setBlending(value: Boolean): Self = StObject.set(x, "blending", value.asInstanceOf[js.Any])
       
@@ -267,7 +269,8 @@ object screenBufferMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBlending(value: Boolean): Self = StObject.set(x, "blending", value.asInstanceOf[js.Any])
       
@@ -324,7 +327,8 @@ object screenBufferMod {
       __obj.asInstanceOf[PutOptions]
     }
     
-    extension [Self <: PutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutOptions] (val x: Self) extends AnyVal {
       
       inline def setAttr(value: Attributes | Double): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       

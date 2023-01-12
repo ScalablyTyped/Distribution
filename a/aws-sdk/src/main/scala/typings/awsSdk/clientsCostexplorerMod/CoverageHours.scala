@@ -33,7 +33,8 @@ object CoverageHours {
     __obj.asInstanceOf[CoverageHours]
   }
   
-  extension [Self <: CoverageHours](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageHours] (val x: Self) extends AnyVal {
     
     inline def setCoverageHoursPercentage(value: CoverageHoursPercentage): Self = StObject.set(x, "CoverageHoursPercentage", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AcceleratorTotalMemoryMiBRequest {
     __obj.asInstanceOf[AcceleratorTotalMemoryMiBRequest]
   }
   
-  extension [Self <: AcceleratorTotalMemoryMiBRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceleratorTotalMemoryMiBRequest] (val x: Self) extends AnyVal {
     
     inline def setMax(value: NullablePositiveInteger): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     

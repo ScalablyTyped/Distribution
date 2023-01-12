@@ -1462,7 +1462,8 @@ object animationsIndexMod {
         __obj.asInstanceOf[Bone]
       }
       
-      extension [Self <: Bone](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Bone] (val x: Self) extends AnyVal {
         
         inline def setCopyAnimationRange(
           value: (typings.babylonjs.animationsAnimatableMod.babylonjsBonesBoneAugmentingMod.Bone, String, Double, Boolean, Nullable[Vector3]) => Boolean

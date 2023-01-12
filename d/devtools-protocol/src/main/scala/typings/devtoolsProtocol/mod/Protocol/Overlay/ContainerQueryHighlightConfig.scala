@@ -24,7 +24,8 @@ object ContainerQueryHighlightConfig {
     __obj.asInstanceOf[ContainerQueryHighlightConfig]
   }
   
-  extension [Self <: ContainerQueryHighlightConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerQueryHighlightConfig] (val x: Self) extends AnyVal {
     
     inline def setContainerQueryContainerHighlightConfig(value: ContainerQueryContainerHighlightConfig): Self = StObject.set(x, "containerQueryContainerHighlightConfig", value.asInstanceOf[js.Any])
     

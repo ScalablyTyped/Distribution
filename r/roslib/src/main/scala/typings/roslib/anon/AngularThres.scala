@@ -31,7 +31,8 @@ object AngularThres {
     __obj.asInstanceOf[AngularThres]
   }
   
-  extension [Self <: AngularThres](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AngularThres] (val x: Self) extends AnyVal {
     
     inline def setAngularThres(value: Double): Self = StObject.set(x, "angularThres", value.asInstanceOf[js.Any])
     

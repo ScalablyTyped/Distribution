@@ -15,7 +15,8 @@ object ScaleXTransform {
     __obj.asInstanceOf[ScaleXTransform]
   }
   
-  extension [Self <: ScaleXTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleXTransform] (val x: Self) extends AnyVal {
     
     inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
   }

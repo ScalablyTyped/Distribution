@@ -18,7 +18,8 @@ object FrameClearedScheduledNavigationEvent {
     __obj.asInstanceOf[FrameClearedScheduledNavigationEvent]
   }
   
-  extension [Self <: FrameClearedScheduledNavigationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameClearedScheduledNavigationEvent] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
   }

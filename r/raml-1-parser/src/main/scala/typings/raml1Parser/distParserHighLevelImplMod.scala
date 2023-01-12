@@ -595,7 +595,8 @@ object distParserHighLevelImplMod {
       __obj.asInstanceOf[ParseNode]
     }
     
-    extension [Self <: ParseNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseNode] (val x: Self) extends AnyVal {
       
       inline def setAddMeta(value: (String, Any) => Any): Self = StObject.set(x, "addMeta", js.Any.fromFunction2(value))
       

@@ -44,7 +44,8 @@ object GlideSession {
     __obj.asInstanceOf[GlideSession]
   }
   
-  extension [Self <: GlideSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlideSession] (val x: Self) extends AnyVal {
     
     inline def setGetClientData(value: String => String): Self = StObject.set(x, "getClientData", js.Any.fromFunction1(value))
     

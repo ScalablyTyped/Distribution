@@ -23,7 +23,8 @@ object SyncState {
     __obj.asInstanceOf[SyncState]
   }
   
-  extension [Self <: SyncState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncState] (val x: Self) extends AnyVal {
     
     inline def setAttachment(value: Attachment): Self = StObject.set(x, "Attachment", value.asInstanceOf[js.Any])
     

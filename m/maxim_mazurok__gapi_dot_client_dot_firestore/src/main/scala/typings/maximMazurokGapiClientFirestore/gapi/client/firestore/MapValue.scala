@@ -21,7 +21,8 @@ object MapValue {
     __obj.asInstanceOf[MapValue]
   }
   
-  extension [Self <: MapValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapValue] (val x: Self) extends AnyVal {
     
     inline def setFields(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.firestore.gapi.client.firestore.Value} */ js.Any

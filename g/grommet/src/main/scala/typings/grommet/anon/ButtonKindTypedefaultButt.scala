@@ -44,7 +44,8 @@ object ButtonKindTypedefaultButt {
     __obj.asInstanceOf[ButtonKindTypedefaultButt]
   }
   
-  extension [Self <: ButtonKindTypedefaultButt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonKindTypedefaultButt] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

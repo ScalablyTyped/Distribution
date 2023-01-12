@@ -16,7 +16,8 @@ object InstancesSetMachineResourcesRequest {
     __obj.asInstanceOf[InstancesSetMachineResourcesRequest]
   }
   
-  extension [Self <: InstancesSetMachineResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancesSetMachineResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setGuestAccelerators(value: js.Array[AcceleratorConfig]): Self = StObject.set(x, "guestAccelerators", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object XUIElementFactory {
     __obj.asInstanceOf[XUIElementFactory]
   }
   
-  extension [Self <: XUIElementFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUIElementFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateUIElement(value: (String, SeqEquiv[PropertyValue]) => XUIElement): Self = StObject.set(x, "createUIElement", js.Any.fromFunction2(value))
   }

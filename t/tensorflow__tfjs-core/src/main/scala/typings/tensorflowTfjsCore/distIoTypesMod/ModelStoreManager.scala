@@ -36,7 +36,8 @@ object ModelStoreManager {
     __obj.asInstanceOf[ModelStoreManager]
   }
   
-  extension [Self <: ModelStoreManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelStoreManager] (val x: Self) extends AnyVal {
     
     inline def setListModels(value: () => js.Promise[StringDictionary[ModelArtifactsInfo]]): Self = StObject.set(x, "listModels", js.Any.fromFunction0(value))
     

@@ -44,7 +44,8 @@ object WebSocketResponse {
     __obj.asInstanceOf[WebSocketResponse]
   }
   
-  extension [Self <: WebSocketResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSocketResponse] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

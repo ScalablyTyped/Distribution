@@ -25,7 +25,8 @@ object AppsDynamiteSharedOnClick {
     __obj.asInstanceOf[AppsDynamiteSharedOnClick]
   }
   
-  extension [Self <: AppsDynamiteSharedOnClick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedOnClick] (val x: Self) extends AnyVal {
     
     inline def setAction(value: AppsDynamiteSharedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

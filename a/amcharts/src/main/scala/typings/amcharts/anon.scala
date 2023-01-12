@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Chart]
     }
     
-    extension [Self <: Chart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chart] (val x: Self) extends AnyVal {
       
       inline def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[ChartDataItem]
     }
     
-    extension [Self <: ChartDataItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartDataItem] (val x: Self) extends AnyVal {
       
       inline def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object anon {
       __obj.asInstanceOf[DD]
     }
     
-    extension [Self <: DD](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DD] (val x: Self) extends AnyVal {
       
       inline def setDD(value: String): Self = StObject.set(x, "DD", value.asInstanceOf[js.Any])
       
@@ -135,7 +139,8 @@ object anon {
       __obj.asInstanceOf[DataItem]
     }
     
-    extension [Self <: DataItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataItem] (val x: Self) extends AnyVal {
       
       inline def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
@@ -173,7 +178,8 @@ object anon {
       __obj.asInstanceOf[Date]
     }
     
-    extension [Self <: Date](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
       
       inline def setChart(value: Date): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
@@ -255,7 +261,8 @@ object anon {
       __obj.asInstanceOf[Delta2X]
     }
     
-    extension [Self <: Delta2X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delta2X] (val x: Self) extends AnyVal {
       
       inline def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
@@ -345,7 +352,8 @@ object anon {
       __obj.asInstanceOf[EndValue]
     }
     
-    extension [Self <: EndValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndValue] (val x: Self) extends AnyVal {
       
       inline def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
@@ -387,7 +395,8 @@ object anon {
       __obj.asInstanceOf[Graph]
     }
     
-    extension [Self <: Graph](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Graph] (val x: Self) extends AnyVal {
       
       inline def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
@@ -414,7 +423,8 @@ object anon {
       __obj.asInstanceOf[Number]
     }
     
-    extension [Self <: Number](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Number] (val x: Self) extends AnyVal {
       
       inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
@@ -437,7 +447,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setChart(value: Type): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       

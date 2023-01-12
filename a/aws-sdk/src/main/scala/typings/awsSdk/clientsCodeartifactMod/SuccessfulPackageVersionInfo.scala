@@ -23,7 +23,8 @@ object SuccessfulPackageVersionInfo {
     __obj.asInstanceOf[SuccessfulPackageVersionInfo]
   }
   
-  extension [Self <: SuccessfulPackageVersionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuccessfulPackageVersionInfo] (val x: Self) extends AnyVal {
     
     inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     

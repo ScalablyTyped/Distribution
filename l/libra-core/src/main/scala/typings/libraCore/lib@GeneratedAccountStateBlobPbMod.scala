@@ -63,7 +63,8 @@ object `lib@GeneratedAccountStateBlobPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setBlob(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
       }
@@ -137,7 +138,8 @@ object `lib@GeneratedAccountStateBlobPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setBlob(value: typings.libraCore.`lib@GeneratedAccountStateBlobPbMod`.AccountStateBlob.AsObject): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
         

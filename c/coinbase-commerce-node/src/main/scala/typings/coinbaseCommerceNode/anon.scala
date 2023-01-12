@@ -45,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Block]
     }
     
-    extension [Self <: Block](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Confirmationsaccumulated): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Confirmationsaccumulated]
     }
     
-    extension [Self <: Confirmationsaccumulated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Confirmationsaccumulated] (val x: Self) extends AnyVal {
       
       inline def setConfirmations_accumulated(value: Double): Self = StObject.set(x, "confirmations_accumulated", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object anon {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setContext(value: UNDERPAID | OVERPAID | DELAYED | MULTIPLE | MANUAL | OTHER): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -137,7 +140,8 @@ object anon {
       __obj.asInstanceOf[Crypto]
     }
     
-    extension [Self <: Crypto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Crypto] (val x: Self) extends AnyVal {
       
       inline def setCrypto(value: Price[CryptoCurrency]): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
       
@@ -170,7 +174,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: applicationSlashjson): Self = StObject.set(x, "Accept", value.asInstanceOf[js.Any])
       
@@ -195,7 +200,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -221,7 +227,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordCryptoNamest]
     }
     
-    extension [Self <: PartialRecordCryptoNamest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordCryptoNamest] (val x: Self) extends AnyVal {
       
       inline def setBitcoin(value: String): Self = StObject.set(x, "bitcoin", value.asInstanceOf[js.Any])
       

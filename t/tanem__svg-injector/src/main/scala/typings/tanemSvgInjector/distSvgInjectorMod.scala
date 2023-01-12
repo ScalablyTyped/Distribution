@@ -46,7 +46,8 @@ object distSvgInjectorMod {
       __obj.asInstanceOf[OptionalArgs]
     }
     
-    extension [Self <: OptionalArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalArgs] (val x: Self) extends AnyVal {
       
       inline def setAfterAll(value: /* elementsLoaded */ Double => Unit): Self = StObject.set(x, "afterAll", js.Any.fromFunction1(value))
       

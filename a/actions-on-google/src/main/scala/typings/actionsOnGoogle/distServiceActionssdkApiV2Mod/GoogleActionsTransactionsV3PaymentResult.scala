@@ -28,7 +28,8 @@ object GoogleActionsTransactionsV3PaymentResult {
     __obj.asInstanceOf[GoogleActionsTransactionsV3PaymentResult]
   }
   
-  extension [Self <: GoogleActionsTransactionsV3PaymentResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsTransactionsV3PaymentResult] (val x: Self) extends AnyVal {
     
     inline def setGooglePaymentData(value: String): Self = StObject.set(x, "googlePaymentData", value.asInstanceOf[js.Any])
     

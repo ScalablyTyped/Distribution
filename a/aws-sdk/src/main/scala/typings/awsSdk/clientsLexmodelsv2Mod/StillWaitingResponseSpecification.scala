@@ -37,7 +37,8 @@ object StillWaitingResponseSpecification {
     __obj.asInstanceOf[StillWaitingResponseSpecification]
   }
   
-  extension [Self <: StillWaitingResponseSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StillWaitingResponseSpecification] (val x: Self) extends AnyVal {
     
     inline def setAllowInterrupt(value: BoxedBoolean): Self = StObject.set(x, "allowInterrupt", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object BatchedContinuousIntegration {
     __obj.asInstanceOf[BatchedContinuousIntegration]
   }
   
-  extension [Self <: BatchedContinuousIntegration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchedContinuousIntegration] (val x: Self) extends AnyVal {
     
     inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

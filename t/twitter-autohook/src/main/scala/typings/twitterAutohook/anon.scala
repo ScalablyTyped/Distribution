@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Consumerkey]
     }
     
-    extension [Self <: Consumerkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Consumerkey] (val x: Self) extends AnyVal {
       
       inline def setConsumer_key(value: String): Self = StObject.set(x, "consumer_key", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Oauthtoken]
     }
     
-    extension [Self <: Oauthtoken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Oauthtoken] (val x: Self) extends AnyVal {
       
       inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object anon {
       __obj.asInstanceOf[Responsetoken]
     }
     
-    extension [Self <: Responsetoken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Responsetoken] (val x: Self) extends AnyVal {
       
       inline def setResponse_token(value: String): Self = StObject.set(x, "response_token", value.asInstanceOf[js.Any])
     }

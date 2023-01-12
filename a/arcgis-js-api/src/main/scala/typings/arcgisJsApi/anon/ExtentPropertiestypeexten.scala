@@ -114,7 +114,8 @@ object ExtentPropertiestypeexten {
     __obj.asInstanceOf[ExtentPropertiestypeexten]
   }
   
-  extension [Self <: ExtentPropertiestypeexten](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtentPropertiestypeexten] (val x: Self) extends AnyVal {
     
     inline def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
     

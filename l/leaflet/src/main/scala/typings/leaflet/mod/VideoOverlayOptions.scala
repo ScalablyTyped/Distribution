@@ -32,7 +32,8 @@ object VideoOverlayOptions {
     __obj.asInstanceOf[VideoOverlayOptions]
   }
   
-  extension [Self <: VideoOverlayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoOverlayOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object PlotAreasplinerangeOnPointConnectorOptions {
     __obj.asInstanceOf[PlotAreasplinerangeOnPointConnectorOptions]
   }
   
-  extension [Self <: PlotAreasplinerangeOnPointConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotAreasplinerangeOnPointConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDashstyle(value: String): Self = StObject.set(x, "dashstyle", value.asInstanceOf[js.Any])
     

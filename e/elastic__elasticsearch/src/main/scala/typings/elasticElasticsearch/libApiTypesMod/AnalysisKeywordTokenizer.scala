@@ -22,7 +22,8 @@ object AnalysisKeywordTokenizer {
     __obj.asInstanceOf[AnalysisKeywordTokenizer]
   }
   
-  extension [Self <: AnalysisKeywordTokenizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisKeywordTokenizer] (val x: Self) extends AnyVal {
     
     inline def setBuffer_size(value: integer): Self = StObject.set(x, "buffer_size", value.asInstanceOf[js.Any])
     

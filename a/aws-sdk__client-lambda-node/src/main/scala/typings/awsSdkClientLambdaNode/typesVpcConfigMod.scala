@@ -29,7 +29,8 @@ object typesVpcConfigMod {
       __obj.asInstanceOf[UnmarshalledVpcConfig]
     }
     
-    extension [Self <: UnmarshalledVpcConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledVpcConfig] (val x: Self) extends AnyVal {
       
       inline def setSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object typesVpcConfigMod {
       __obj.asInstanceOf[VpcConfig]
     }
     
-    extension [Self <: VpcConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VpcConfig] (val x: Self) extends AnyVal {
       
       inline def setSecurityGroupIds(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
       

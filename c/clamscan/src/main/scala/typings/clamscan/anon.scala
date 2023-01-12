@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Active]
     }
     
-    extension [Self <: Active](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object anon {
       __obj.asInstanceOf[BypassTest]
     }
     
-    extension [Self <: BypassTest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BypassTest] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object anon {
       __obj.asInstanceOf[Isinfected]
     }
     
-    extension [Self <: Isinfected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Isinfected] (val x: Self) extends AnyVal {
       
       inline def setIs_infected(value: String): Self = StObject.set(x, "is_infected", value.asInstanceOf[js.Any])
       
@@ -190,7 +193,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyOptions]
     }
     
-    extension [Self <: ReadonlyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyOptions] (val x: Self) extends AnyVal {
       
       inline def setClamdscan(value: BypassTest): Self = StObject.set(x, "clamdscan", value.asInstanceOf[js.Any])
       
@@ -246,7 +250,8 @@ object anon {
       __obj.asInstanceOf[ResponsefilestringisInfec]
     }
     
-    extension [Self <: ResponsefilestringisInfec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsefilestringisInfec] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -276,7 +281,8 @@ object anon {
       __obj.asInstanceOf[ResponsefilestringisInfecFile]
     }
     
-    extension [Self <: ResponsefilestringisInfecFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsefilestringisInfecFile] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -311,7 +317,8 @@ object anon {
       __obj.asInstanceOf[ResponsegoodFilesArraystr]
     }
     
-    extension [Self <: ResponsegoodFilesArraystr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsegoodFilesArraystr] (val x: Self) extends AnyVal {
       
       inline def setBadFiles(value: js.Array[String]): Self = StObject.set(x, "badFiles", value.asInstanceOf[js.Any])
       
@@ -355,7 +362,8 @@ object anon {
       __obj.asInstanceOf[ResponsepathstringisInfec]
     }
     
-    extension [Self <: ResponsepathstringisInfec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsepathstringisInfec] (val x: Self) extends AnyVal {
       
       inline def setBadFiles(value: js.Array[String]): Self = StObject.set(x, "badFiles", value.asInstanceOf[js.Any])
       
@@ -386,7 +394,8 @@ object anon {
       __obj.asInstanceOf[Viruses]
     }
     
-    extension [Self <: Viruses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Viruses] (val x: Self) extends AnyVal {
       
       inline def setViruses(value: js.Array[String]): Self = StObject.set(x, "viruses", value.asInstanceOf[js.Any])
       

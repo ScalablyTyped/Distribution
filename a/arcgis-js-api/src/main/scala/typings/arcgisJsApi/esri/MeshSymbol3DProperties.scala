@@ -23,7 +23,8 @@ object MeshSymbol3DProperties {
     __obj.asInstanceOf[MeshSymbol3DProperties]
   }
   
-  extension [Self <: MeshSymbol3DProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshSymbol3DProperties] (val x: Self) extends AnyVal {
     
     inline def setSymbolLayers(value: CollectionProperties[FillSymbol3DLayerProperties]): Self = StObject.set(x, "symbolLayers", value.asInstanceOf[js.Any])
     

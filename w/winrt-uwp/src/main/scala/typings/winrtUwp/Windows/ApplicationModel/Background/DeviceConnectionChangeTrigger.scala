@@ -23,7 +23,8 @@ object DeviceConnectionChangeTrigger {
     __obj.asInstanceOf[DeviceConnectionChangeTrigger]
   }
   
-  extension [Self <: DeviceConnectionChangeTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceConnectionChangeTrigger] (val x: Self) extends AnyVal {
     
     inline def setCanMaintainConnection(value: Boolean): Self = StObject.set(x, "canMaintainConnection", value.asInstanceOf[js.Any])
     

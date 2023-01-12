@@ -25,7 +25,8 @@ object IAnimationState {
     __obj.asInstanceOf[IAnimationState]
   }
   
-  extension [Self <: IAnimationState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAnimationState] (val x: Self) extends AnyVal {
     
     inline def setHighLimitValue(value: Any): Self = StObject.set(x, "highLimitValue", value.asInstanceOf[js.Any])
     

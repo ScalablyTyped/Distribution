@@ -23,7 +23,8 @@ object MixinToken {
     __obj.asInstanceOf[MixinToken]
   }
   
-  extension [Self <: MixinToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MixinToken] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: String): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

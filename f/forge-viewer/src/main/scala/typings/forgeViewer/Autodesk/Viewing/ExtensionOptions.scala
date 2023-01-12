@@ -29,7 +29,8 @@ object ExtensionOptions {
     __obj.asInstanceOf[ExtensionOptions]
   }
   
-  extension [Self <: ExtensionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultModelStructureTitle(value: String): Self = StObject.set(x, "defaultModelStructureTitle", value.asInstanceOf[js.Any])
     

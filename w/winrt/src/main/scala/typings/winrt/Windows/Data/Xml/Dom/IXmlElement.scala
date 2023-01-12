@@ -82,7 +82,8 @@ object IXmlElement {
     __obj.asInstanceOf[IXmlElement]
   }
   
-  extension [Self <: IXmlElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXmlElement] (val x: Self) extends AnyVal {
     
     inline def setGetAttribute(value: String => String): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
     

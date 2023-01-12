@@ -45,7 +45,8 @@ object CustomLoad {
     __obj.asInstanceOf[CustomLoad]
   }
   
-  extension [Self <: CustomLoad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLoad] (val x: Self) extends AnyVal {
     
     inline def setCustomLoad(value: () => PromiseLike[Any]): Self = StObject.set(x, "customLoad", js.Any.fromFunction0(value))
     

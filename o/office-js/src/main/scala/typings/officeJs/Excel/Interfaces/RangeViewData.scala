@@ -132,7 +132,8 @@ object RangeViewData {
     __obj.asInstanceOf[RangeViewData]
   }
   
-  extension [Self <: RangeViewData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeViewData] (val x: Self) extends AnyVal {
     
     inline def setCellAddresses(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "cellAddresses", value.asInstanceOf[js.Any])
     

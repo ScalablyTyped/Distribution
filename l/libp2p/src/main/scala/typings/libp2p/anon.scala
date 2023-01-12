@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[CodecName]
     }
     
-    extension [Self <: CodecName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodecName] (val x: Self) extends AnyVal {
       
       inline def setCodecName(value: String): Self = StObject.set(x, "codecName", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Dek]
     }
     
-    extension [Self <: Dek](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dek] (val x: Self) extends AnyVal {
       
       inline def setDek(value: Hash): Self = StObject.set(x, "dek", value.asInstanceOf[js.Any])
     }
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: PeerId): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -99,7 +102,8 @@ object anon {
       __obj.asInstanceOf[Hash]
     }
     
-    extension [Self <: Hash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -124,7 +128,8 @@ object anon {
       __obj.asInstanceOf[MuxerFactory]
     }
     
-    extension [Self <: MuxerFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MuxerFactory] (val x: Self) extends AnyVal {
       
       inline def setMuxerFactory(value: StreamMuxerFactory): Self = StObject.set(x, "muxerFactory", value.asInstanceOf[js.Any])
       
@@ -174,7 +179,8 @@ object anon {
       __obj.asInstanceOf[PartialConnectionGater]
     }
     
-    extension [Self <: PartialConnectionGater](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialConnectionGater] (val x: Self) extends AnyVal {
       
       inline def setDenyDialMultiaddr(value: (/* peerId */ PeerId, /* multiaddr */ Multiaddr_) => js.Promise[Boolean]): Self = StObject.set(x, "denyDialMultiaddr", js.Any.fromFunction2(value))
       
@@ -347,7 +353,8 @@ object anon {
       __obj.asInstanceOf[RecursivePartialLibp2pIni]
     }
     
-    extension [Self <: RecursivePartialLibp2pIni](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecursivePartialLibp2pIni] (val x: Self) extends AnyVal {
       
       inline def setAddresses(
         value: /* import warning: importer.ImportType#apply Failed type conversion: libp2p.libp2p.AddressesConfig extends std.Array<infer I> ? std.Array<@libp2p/interfaces.@libp2p/interfaces.RecursivePartial<I>> : libp2p.libp2p.AddressesConfig extends (args : ...any): any ? libp2p.libp2p.AddressesConfig : / * Inlined @libp2p/interfaces.@libp2p/interfaces.RecursivePartial<libp2p.libp2p.AddressesConfig> * /

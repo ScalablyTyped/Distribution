@@ -111,7 +111,8 @@ object mod {
       __obj.asInstanceOf[DuckOptions[TState, TAction, TActionTypes, TActionCreators, TSelectors, TSagas, TTakes, TConsts]]
     }
     
-    extension [Self <: DuckOptions[?, ?, ?, ?, ?, ?, ?, ?], TState, TAction, TActionTypes /* <: Record[String, Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ Any, Any]] */, TTakes /* <: js.Array[Any] */, TConsts /* <: Record[String, js.Array[String]] */](x: Self & (DuckOptions[TState, TAction, TActionTypes, TActionCreators, TSelectors, TSagas, TTakes, TConsts])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DuckOptions[?, ?, ?, ?, ?, ?, ?, ?], TState, TAction, TActionTypes /* <: Record[String, Any] */, TActionCreators /* <: Record[String, js.Function1[/* repeated */ Any, TAction]] */, TSelectors /* <: Record[String, js.Function1[/* s */ TState, Any]] */, TSagas /* <: Record[String, js.Function1[/* repeated */ Any, Any]] */, TTakes /* <: js.Array[Any] */, TConsts /* <: Record[String, js.Array[String]] */] (val x: Self & (DuckOptions[TState, TAction, TActionTypes, TActionCreators, TSelectors, TSagas, TTakes, TConsts])) extends AnyVal {
       
       inline def setConsts(value: TConsts): Self = StObject.set(x, "consts", value.asInstanceOf[js.Any])
       

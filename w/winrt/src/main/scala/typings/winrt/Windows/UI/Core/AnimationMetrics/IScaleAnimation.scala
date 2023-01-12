@@ -38,7 +38,8 @@ object IScaleAnimation {
     __obj.asInstanceOf[IScaleAnimation]
   }
   
-  extension [Self <: IScaleAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScaleAnimation] (val x: Self) extends AnyVal {
     
     inline def setFinalScaleX(value: Double): Self = StObject.set(x, "finalScaleX", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object VideoProcessingDetailsProcessingProgress {
     __obj.asInstanceOf[VideoProcessingDetailsProcessingProgress]
   }
   
-  extension [Self <: VideoProcessingDetailsProcessingProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoProcessingDetailsProcessingProgress] (val x: Self) extends AnyVal {
     
     inline def setPartsProcessed(value: String): Self = StObject.set(x, "partsProcessed", value.asInstanceOf[js.Any])
     

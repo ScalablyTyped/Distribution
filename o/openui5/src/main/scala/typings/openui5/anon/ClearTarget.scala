@@ -119,7 +119,8 @@ object ClearTarget {
     __obj.asInstanceOf[ClearTarget]
   }
   
-  extension [Self <: ClearTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearTarget] (val x: Self) extends AnyVal {
     
     inline def setClearTarget(value: Boolean): Self = StObject.set(x, "clearTarget", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object Attributesnaturallanguage {
     __obj.asInstanceOf[Attributesnaturallanguage]
   }
   
-  extension [Self <: Attributesnaturallanguage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attributesnaturallanguage] (val x: Self) extends AnyVal {
     
     inline def `setAttributes-charset`(value: CharacterSet): Self = StObject.set(x, "attributes-charset", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object WorkerInterface {
     __obj.asInstanceOf[WorkerInterface]
   }
   
-  extension [Self <: WorkerInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerInterface] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (message, MessageListener) => scala.Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     

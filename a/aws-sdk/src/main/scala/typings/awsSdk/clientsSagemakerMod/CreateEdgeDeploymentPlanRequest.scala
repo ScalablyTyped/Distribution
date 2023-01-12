@@ -42,7 +42,8 @@ object CreateEdgeDeploymentPlanRequest {
     __obj.asInstanceOf[CreateEdgeDeploymentPlanRequest]
   }
   
-  extension [Self <: CreateEdgeDeploymentPlanRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEdgeDeploymentPlanRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceFleetName(value: EntityName): Self = StObject.set(x, "DeviceFleetName", value.asInstanceOf[js.Any])
     

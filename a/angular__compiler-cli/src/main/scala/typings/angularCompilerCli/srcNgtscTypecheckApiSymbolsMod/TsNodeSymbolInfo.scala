@@ -23,7 +23,8 @@ object TsNodeSymbolInfo {
     __obj.asInstanceOf[TsNodeSymbolInfo]
   }
   
-  extension [Self <: TsNodeSymbolInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsNodeSymbolInfo] (val x: Self) extends AnyVal {
     
     inline def setTcbLocation(value: TcbLocation): Self = StObject.set(x, "tcbLocation", value.asInstanceOf[js.Any])
     

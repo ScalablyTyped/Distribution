@@ -22,7 +22,8 @@ object iconTypesMod {
       __obj.asInstanceOf[IconOverrides]
     }
     
-    extension [Self <: IconOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconOverrides] (val x: Self) extends AnyVal {
       
       inline def setSvg(value: Override[Any]): Self = StObject.set(x, "Svg", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object iconTypesMod {
       __obj.asInstanceOf[IconProps]
     }
     
-    extension [Self <: IconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object iconTypesMod {
       __obj.asInstanceOf[StyledComponentArgs]
     }
     
-    extension [Self <: StyledComponentArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledComponentArgs] (val x: Self) extends AnyVal {
       
       inline def set$color(value: Color): Self = StObject.set(x, "$color", value.asInstanceOf[js.Any])
       

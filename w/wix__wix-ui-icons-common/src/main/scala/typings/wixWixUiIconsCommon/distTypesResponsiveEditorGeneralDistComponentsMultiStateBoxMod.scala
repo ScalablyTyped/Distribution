@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsMultiStateBoxMod extends Sh
       __obj.asInstanceOf[MultiStateBoxProps]
     }
     
-    extension [Self <: MultiStateBoxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiStateBoxProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

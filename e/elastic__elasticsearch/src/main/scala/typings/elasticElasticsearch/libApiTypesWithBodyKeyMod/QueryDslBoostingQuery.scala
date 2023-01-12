@@ -21,7 +21,8 @@ object QueryDslBoostingQuery {
     __obj.asInstanceOf[QueryDslBoostingQuery]
   }
   
-  extension [Self <: QueryDslBoostingQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslBoostingQuery] (val x: Self) extends AnyVal {
     
     inline def setNegative(value: QueryDslQueryContainer): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ValueToken {
     __obj.asInstanceOf[ValueToken]
   }
   
-  extension [Self <: ValueToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueToken] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: CategoryValueCategory): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
   }

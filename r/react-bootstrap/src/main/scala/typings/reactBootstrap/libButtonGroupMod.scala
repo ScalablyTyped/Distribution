@@ -39,7 +39,8 @@ object libButtonGroupMod {
       __obj.asInstanceOf[ButtonGroupProps]
     }
     
-    extension [Self <: ButtonGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonGroupProps] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       

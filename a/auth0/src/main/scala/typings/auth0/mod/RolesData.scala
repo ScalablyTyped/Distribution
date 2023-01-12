@@ -15,7 +15,8 @@ object RolesData {
     __obj.asInstanceOf[RolesData]
   }
   
-  extension [Self <: RolesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RolesData] (val x: Self) extends AnyVal {
     
     inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     

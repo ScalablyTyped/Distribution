@@ -176,7 +176,8 @@ object Node {
     __obj.asInstanceOf[Node]
   }
   
-  extension [Self <: Node](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
     
     inline def setAssignedSlot(value: BackendNode): Self = StObject.set(x, "assignedSlot", value.asInstanceOf[js.Any])
     

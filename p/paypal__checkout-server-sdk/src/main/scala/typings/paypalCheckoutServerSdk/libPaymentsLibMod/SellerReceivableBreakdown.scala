@@ -27,7 +27,8 @@ object SellerReceivableBreakdown {
     __obj.asInstanceOf[SellerReceivableBreakdown]
   }
   
-  extension [Self <: SellerReceivableBreakdown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SellerReceivableBreakdown] (val x: Self) extends AnyVal {
     
     inline def setExchange_rate(value: ExchangeRate): Self = StObject.set(x, "exchange_rate", value.asInstanceOf[js.Any])
     

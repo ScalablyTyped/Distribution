@@ -22,7 +22,8 @@ object ActiveDrop {
     __obj.asInstanceOf[ActiveDrop]
   }
   
-  extension [Self <: ActiveDrop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveDrop] (val x: Self) extends AnyVal {
     
     inline def setDropzone(value: InteractableActions): Self = StObject.set(x, "dropzone", value.asInstanceOf[js.Any])
     

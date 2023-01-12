@@ -15,7 +15,8 @@ object Replacementroom {
     __obj.asInstanceOf[Replacementroom]
   }
   
-  extension [Self <: Replacementroom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Replacementroom] (val x: Self) extends AnyVal {
     
     inline def setReplacement_room(value: js.Object): Self = StObject.set(x, "replacement_room", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setIcssExports(value: Boolean): Self = StObject.set(x, "icssExports", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Resolve]
     }
     
-    extension [Self <: Resolve](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resolve] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: StringDictionary[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       

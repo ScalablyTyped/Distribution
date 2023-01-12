@@ -185,7 +185,8 @@ object b2DebugDraw {
     __obj.asInstanceOf[b2DebugDraw]
   }
   
-  extension [Self <: b2DebugDraw](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2DebugDraw] (val x: Self) extends AnyVal {
     
     inline def setAppendFlags(value: Double => Unit): Self = StObject.set(x, "AppendFlags", js.Any.fromFunction1(value))
     

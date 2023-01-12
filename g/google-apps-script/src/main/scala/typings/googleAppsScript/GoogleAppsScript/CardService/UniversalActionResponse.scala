@@ -35,7 +35,8 @@ object UniversalActionResponse {
     __obj.asInstanceOf[UniversalActionResponse]
   }
   
-  extension [Self <: UniversalActionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniversalActionResponse] (val x: Self) extends AnyVal {
     
     inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
   }

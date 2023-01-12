@@ -52,7 +52,8 @@ object AdImpressionParam {
     __obj.asInstanceOf[AdImpressionParam]
   }
   
-  extension [Self <: AdImpressionParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdImpressionParam] (val x: Self) extends AnyVal {
     
     inline def setAdposition(value: pre | mid | post): Self = StObject.set(x, "adposition", value.asInstanceOf[js.Any])
     

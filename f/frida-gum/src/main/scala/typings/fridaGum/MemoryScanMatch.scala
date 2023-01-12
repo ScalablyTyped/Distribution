@@ -23,7 +23,8 @@ object MemoryScanMatch {
     __obj.asInstanceOf[MemoryScanMatch]
   }
   
-  extension [Self <: MemoryScanMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryScanMatch] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

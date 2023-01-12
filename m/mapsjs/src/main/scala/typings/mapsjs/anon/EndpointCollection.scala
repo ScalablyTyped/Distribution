@@ -33,7 +33,8 @@ object EndpointCollection {
     __obj.asInstanceOf[EndpointCollection]
   }
   
-  extension [Self <: EndpointCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointCollection] (val x: Self) extends AnyVal {
     
     inline def setEndpointCollection(value: js.Array[String]): Self = StObject.set(x, "endpointCollection", value.asInstanceOf[js.Any])
     

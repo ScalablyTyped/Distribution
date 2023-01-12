@@ -22,7 +22,8 @@ object ReferenceParams {
     __obj.asInstanceOf[ReferenceParams]
   }
   
-  extension [Self <: ReferenceParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceParams] (val x: Self) extends AnyVal {
     
     inline def setContext(value: ReferenceContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }

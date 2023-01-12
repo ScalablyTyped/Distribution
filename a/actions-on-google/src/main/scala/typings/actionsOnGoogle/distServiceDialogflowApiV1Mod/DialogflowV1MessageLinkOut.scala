@@ -21,7 +21,8 @@ object DialogflowV1MessageLinkOut {
     __obj.asInstanceOf[DialogflowV1MessageLinkOut]
   }
   
-  extension [Self <: DialogflowV1MessageLinkOut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1MessageLinkOut] (val x: Self) extends AnyVal {
     
     inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
     

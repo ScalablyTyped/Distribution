@@ -18,7 +18,8 @@ object SendOptionsWithoutCB {
     __obj.asInstanceOf[SendOptionsWithoutCB]
   }
   
-  extension [Self <: SendOptionsWithoutCB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendOptionsWithoutCB] (val x: Self) extends AnyVal {
     
     inline def setHttp(value: HTTPOptions): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     

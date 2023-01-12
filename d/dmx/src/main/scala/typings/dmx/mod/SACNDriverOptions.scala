@@ -16,7 +16,8 @@ object SACNDriverOptions {
     __obj.asInstanceOf[SACNDriverOptions]
   }
   
-  extension [Self <: SACNDriverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SACNDriverOptions] (val x: Self) extends AnyVal {
     
     inline def setUniverse(value: Double): Self = StObject.set(x, "universe", value.asInstanceOf[js.Any])
     

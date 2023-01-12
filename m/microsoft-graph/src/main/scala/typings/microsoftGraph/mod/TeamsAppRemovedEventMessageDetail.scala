@@ -24,7 +24,8 @@ object TeamsAppRemovedEventMessageDetail {
     __obj.asInstanceOf[TeamsAppRemovedEventMessageDetail]
   }
   
-  extension [Self <: TeamsAppRemovedEventMessageDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamsAppRemovedEventMessageDetail] (val x: Self) extends AnyVal {
     
     inline def setInitiator(value: NullableOption[IdentitySet]): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
     

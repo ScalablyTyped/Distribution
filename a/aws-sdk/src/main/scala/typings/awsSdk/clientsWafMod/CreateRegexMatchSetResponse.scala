@@ -23,7 +23,8 @@ object CreateRegexMatchSetResponse {
     __obj.asInstanceOf[CreateRegexMatchSetResponse]
   }
   
-  extension [Self <: CreateRegexMatchSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRegexMatchSetResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     

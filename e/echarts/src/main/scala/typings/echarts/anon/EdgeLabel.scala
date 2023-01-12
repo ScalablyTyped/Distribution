@@ -33,7 +33,8 @@ object EdgeLabel {
     __obj.asInstanceOf[EdgeLabel]
   }
   
-  extension [Self <: EdgeLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeLabel] (val x: Self) extends AnyVal {
     
     inline def setEdgeLabel(value: FontFamily): Self = StObject.set(x, "edgeLabel", value.asInstanceOf[js.Any])
     

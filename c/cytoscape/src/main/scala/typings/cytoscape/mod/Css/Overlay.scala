@@ -41,7 +41,8 @@ object Overlay {
     __obj.asInstanceOf[Overlay]
   }
   
-  extension [Self <: Overlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Overlay] (val x: Self) extends AnyVal {
     
     inline def `setOverlay-color`(value: PropertyValueEdge[Colour]): Self = StObject.set(x, "overlay-color", value.asInstanceOf[js.Any])
     

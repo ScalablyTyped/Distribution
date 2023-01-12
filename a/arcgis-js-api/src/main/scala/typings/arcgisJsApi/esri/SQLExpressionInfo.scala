@@ -27,7 +27,8 @@ object SQLExpressionInfo {
     __obj.asInstanceOf[SQLExpressionInfo]
   }
   
-  extension [Self <: SQLExpressionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SQLExpressionInfo] (val x: Self) extends AnyVal {
     
     inline def setSqlExpression(value: String): Self = StObject.set(x, "sqlExpression", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ValueUpdateInfo {
     __obj.asInstanceOf[ValueUpdateInfo]
   }
   
-  extension [Self <: ValueUpdateInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueUpdateInfo] (val x: Self) extends AnyVal {
     
     inline def setSource(value: internal | external): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

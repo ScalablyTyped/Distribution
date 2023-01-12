@@ -23,7 +23,8 @@ object ListSharedProjectsOutput {
     __obj.asInstanceOf[ListSharedProjectsOutput]
   }
   
-  extension [Self <: ListSharedProjectsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSharedProjectsOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

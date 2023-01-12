@@ -19,7 +19,8 @@ object Hash {
     __obj.asInstanceOf[Hash]
   }
   
-  extension [Self <: Hash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

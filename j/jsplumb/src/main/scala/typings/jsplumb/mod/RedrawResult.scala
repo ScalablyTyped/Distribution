@@ -17,7 +17,8 @@ object RedrawResult {
     __obj.asInstanceOf[RedrawResult]
   }
   
-  extension [Self <: RedrawResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedrawResult] (val x: Self) extends AnyVal {
     
     inline def setC(value: js.Array[Connection]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     

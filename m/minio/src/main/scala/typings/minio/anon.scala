@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[AllowQuotedRecordDelimiter]
     }
     
-    extension [Self <: AllowQuotedRecordDelimiter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowQuotedRecordDelimiter] (val x: Self) extends AnyVal {
       
       inline def setAllowQuotedRecordDelimiter(value: Boolean): Self = StObject.set(x, "AllowQuotedRecordDelimiter", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object anon {
       __obj.asInstanceOf[Bucket]
     }
     
-    extension [Self <: Bucket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bucket] (val x: Self) extends AnyVal {
       
       inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object anon {
       __obj.asInstanceOf[Enabled]
     }
     
-    extension [Self <: Enabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     }
@@ -188,7 +191,8 @@ object anon {
       __obj.asInstanceOf[Encryption]
     }
     
-    extension [Self <: Encryption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encryption] (val x: Self) extends AnyVal {
       
       inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
       
@@ -233,7 +237,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
       
@@ -260,7 +265,8 @@ object anon {
       __obj.asInstanceOf[FieldDelimiter]
     }
     
-    extension [Self <: FieldDelimiter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldDelimiter] (val x: Self) extends AnyVal {
       
       inline def setFieldDelimiter(value: String): Self = StObject.set(x, "FieldDelimiter", value.asInstanceOf[js.Any])
       
@@ -300,7 +306,8 @@ object anon {
       __obj.asInstanceOf[KMSMasterKeyID]
     }
     
-    extension [Self <: KMSMasterKeyID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSMasterKeyID] (val x: Self) extends AnyVal {
       
       inline def setKMSMasterKeyID(value: String): Self = StObject.set(x, "KMSMasterKeyID", value.asInstanceOf[js.Any])
       
@@ -338,7 +345,8 @@ object anon {
       __obj.asInstanceOf[RecordDelimiter]
     }
     
-    extension [Self <: RecordDelimiter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordDelimiter] (val x: Self) extends AnyVal {
       
       inline def setRecordDelimiter(value: String): Self = StObject.set(x, "RecordDelimiter", value.asInstanceOf[js.Any])
       
@@ -357,7 +365,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: DOCUMENT | LINES): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     }

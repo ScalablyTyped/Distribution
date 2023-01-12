@@ -39,7 +39,8 @@ object MultipartOptions {
     __obj.asInstanceOf[MultipartOptions]
   }
   
-  extension [Self <: MultipartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipartOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoFields(value: Boolean): Self = StObject.set(x, "autoFields", value.asInstanceOf[js.Any])
     

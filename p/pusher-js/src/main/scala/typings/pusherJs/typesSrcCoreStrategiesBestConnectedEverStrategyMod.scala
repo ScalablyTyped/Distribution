@@ -42,7 +42,8 @@ object typesSrcCoreStrategiesBestConnectedEverStrategyMod {
       __obj.asInstanceOf[BestConnectedEverStrategy]
     }
     
-    extension [Self <: BestConnectedEverStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BestConnectedEverStrategy] (val x: Self) extends AnyVal {
       
       inline def setStrategies(value: js.Array[Strategy]): Self = StObject.set(x, "strategies", value.asInstanceOf[js.Any])
       

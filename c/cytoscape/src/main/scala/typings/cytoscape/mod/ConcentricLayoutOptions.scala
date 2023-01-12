@@ -52,7 +52,8 @@ object ConcentricLayoutOptions {
     __obj.asInstanceOf[ConcentricLayoutOptions]
   }
   
-  extension [Self <: ConcentricLayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConcentricLayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
     

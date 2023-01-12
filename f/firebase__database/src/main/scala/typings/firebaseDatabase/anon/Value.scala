@@ -17,7 +17,8 @@ object Value {
     __obj.asInstanceOf[Value[T]]
   }
   
-  extension [Self <: Value[?], T](x: Self & Value[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Value[?], T] (val x: Self & Value[T]) extends AnyVal {
     
     inline def setPath(value: typings.firebaseDatabase.distNodeEsmSrcCoreUtilPathMod.Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

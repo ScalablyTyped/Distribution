@@ -17,7 +17,8 @@ object MemberServices {
     __obj.asInstanceOf[MemberServices]
   }
   
-  extension [Self <: MemberServices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberServices] (val x: Self) extends AnyVal {
     
     inline def setCommandExecutor(value: CommandExecutor): Self = StObject.set(x, "commandExecutor", value.asInstanceOf[js.Any])
     

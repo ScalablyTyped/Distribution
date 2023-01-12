@@ -19,7 +19,8 @@ object InversePaintToken {
     __obj.asInstanceOf[InversePaintToken[BaseToken]]
   }
   
-  extension [Self <: InversePaintToken[?], BaseToken](x: Self & InversePaintToken[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InversePaintToken[?], BaseToken] (val x: Self & InversePaintToken[BaseToken]) extends AnyVal {
     
     inline def setInverse(value: PaintToken[BaseToken]): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     

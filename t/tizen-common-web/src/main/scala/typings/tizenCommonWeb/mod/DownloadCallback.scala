@@ -60,7 +60,8 @@ object DownloadCallback {
     __obj.asInstanceOf[DownloadCallback]
   }
   
-  extension [Self <: DownloadCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadCallback] (val x: Self) extends AnyVal {
     
     inline def setOncanceled(value: Double => Unit): Self = StObject.set(x, "oncanceled", js.Any.fromFunction1(value))
     

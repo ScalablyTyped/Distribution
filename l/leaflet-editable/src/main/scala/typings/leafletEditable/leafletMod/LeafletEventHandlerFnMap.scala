@@ -225,7 +225,8 @@ object LeafletEventHandlerFnMap {
     __obj.asInstanceOf[LeafletEventHandlerFnMap]
   }
   
-  extension [Self <: LeafletEventHandlerFnMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeafletEventHandlerFnMap] (val x: Self) extends AnyVal {
     
     inline def setEditableColoncreated(value: /* event */ LayerEvent => Unit): Self = StObject.set(x, "editable:created", js.Any.fromFunction1(value))
     

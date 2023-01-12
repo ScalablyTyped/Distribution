@@ -28,7 +28,8 @@ object ListThesauriRequest {
     __obj.asInstanceOf[ListThesauriRequest]
   }
   
-  extension [Self <: ListThesauriRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListThesauriRequest] (val x: Self) extends AnyVal {
     
     inline def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
     

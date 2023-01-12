@@ -18,7 +18,8 @@ object SignContractArgs {
     __obj.asInstanceOf[SignContractArgs]
   }
   
-  extension [Self <: SignContractArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignContractArgs] (val x: Self) extends AnyVal {
     
     inline def setSignStr(value: String): Self = StObject.set(x, "signStr", value.asInstanceOf[js.Any])
   }

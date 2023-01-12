@@ -37,7 +37,8 @@ object ShapedLayoutOptions {
     __obj.asInstanceOf[ShapedLayoutOptions]
   }
   
-  extension [Self <: ShapedLayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapedLayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setAvoidOverlap(value: Boolean): Self = StObject.set(x, "avoidOverlap", value.asInstanceOf[js.Any])
     

@@ -127,7 +127,8 @@ object InputHTMLAttributes {
     __obj.asInstanceOf[InputHTMLAttributes[T]]
   }
   
-  extension [Self <: InputHTMLAttributes[?], T](x: Self & InputHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputHTMLAttributes[?], T] (val x: Self & InputHTMLAttributes[T]) extends AnyVal {
     
     inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

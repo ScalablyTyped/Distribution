@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[TableDefinition]
     }
     
-    extension [Self <: TableDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableDefinition] (val x: Self) extends AnyVal {
       
       inline def setHashes(value: () => js.Array[StringDictionary[String]]): Self = StObject.set(x, "hashes", js.Any.fromFunction0(value))
       

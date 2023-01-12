@@ -58,7 +58,8 @@ object GetServiceLastAccessedDetailsResponse {
     __obj.asInstanceOf[GetServiceLastAccessedDetailsResponse]
   }
   
-  extension [Self <: GetServiceLastAccessedDetailsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceLastAccessedDetailsResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: ErrorDetails): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     

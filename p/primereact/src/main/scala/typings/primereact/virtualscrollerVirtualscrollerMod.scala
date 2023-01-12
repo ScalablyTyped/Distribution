@@ -56,7 +56,8 @@ object virtualscrollerVirtualscrollerMod {
       __obj.asInstanceOf[VirtualScrollerChangeParams]
     }
     
-    extension [Self <: VirtualScrollerChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualScrollerChangeParams] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: VirtualScrollerStateType): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object virtualscrollerVirtualscrollerMod {
       __obj.asInstanceOf[VirtualScrollerLoaderIconTemplateOptions]
     }
     
-    extension [Self <: VirtualScrollerLoaderIconTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualScrollerLoaderIconTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -165,7 +167,8 @@ object virtualscrollerVirtualscrollerMod {
       __obj.asInstanceOf[VirtualScrollerLoadingTemplateOptions]
     }
     
-    extension [Self <: VirtualScrollerLoadingTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualScrollerLoadingTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setNumCols(value: Double): Self = StObject.set(x, "numCols", value.asInstanceOf[js.Any])
     }
@@ -188,7 +191,8 @@ object virtualscrollerVirtualscrollerMod {
       __obj.asInstanceOf[VirtualScrollerOptionsType]
     }
     
-    extension [Self <: VirtualScrollerOptionsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualScrollerOptionsType] (val x: Self) extends AnyVal {
       
       inline def setBehavior(value: VirtualScrollerScrollBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
@@ -276,7 +280,8 @@ object virtualscrollerVirtualscrollerMod {
       __obj.asInstanceOf[VirtualScrollerProps]
     }
     
-    extension [Self <: VirtualScrollerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualScrollerProps] (val x: Self) extends AnyVal {
       
       inline def setAutoSize(value: Boolean): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
       
@@ -417,7 +422,8 @@ object virtualscrollerVirtualscrollerMod {
       __obj.asInstanceOf[VirtualScrollerRenderedRange]
     }
     
-    extension [Self <: VirtualScrollerRenderedRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualScrollerRenderedRange] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
@@ -452,7 +458,8 @@ object virtualscrollerVirtualscrollerMod {
       __obj.asInstanceOf[VirtualScrollerState]
     }
     
-    extension [Self <: VirtualScrollerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualScrollerState] (val x: Self) extends AnyVal {
       
       inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
@@ -493,7 +500,8 @@ object virtualscrollerVirtualscrollerMod {
       __obj.asInstanceOf[VirtualScrollerTemplateOptions]
     }
     
-    extension [Self <: VirtualScrollerTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualScrollerTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -538,7 +546,8 @@ object virtualscrollerVirtualscrollerMod {
       __obj.asInstanceOf[VirtualScrollerViewportRenderedRange]
     }
     
-    extension [Self <: VirtualScrollerViewportRenderedRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualScrollerViewportRenderedRange] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       

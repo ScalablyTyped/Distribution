@@ -67,7 +67,8 @@ object Navigation {
     __obj.asInstanceOf[Navigation]
   }
   
-  extension [Self <: Navigation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Navigation] (val x: Self) extends AnyVal {
     
     inline def setExtractedUrl(value: UrlTree): Self = StObject.set(x, "extractedUrl", value.asInstanceOf[js.Any])
     

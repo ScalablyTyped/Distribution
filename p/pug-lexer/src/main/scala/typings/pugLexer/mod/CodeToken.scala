@@ -25,7 +25,8 @@ object CodeToken {
     __obj.asInstanceOf[CodeToken]
   }
   
-  extension [Self <: CodeToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeToken] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

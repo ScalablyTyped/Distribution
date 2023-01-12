@@ -37,7 +37,8 @@ object PartialDeviceObject {
     __obj.asInstanceOf[PartialDeviceObject]
   }
   
-  extension [Self <: PartialDeviceObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDeviceObject] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: ObjectACL): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     

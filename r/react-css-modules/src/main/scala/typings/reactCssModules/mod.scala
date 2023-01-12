@@ -37,7 +37,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[InjectedCSSModuleProps]
     }
     
-    extension [Self <: InjectedCSSModuleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectedCSSModuleProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: StylesObject): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TypeOptions]
     }
     
-    extension [Self <: TypeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Attributes]
       }
       
-      extension [Self <: Attributes](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
         
         inline def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
         
@@ -110,7 +113,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[HTMLAttributes[T]]
       }
       
-      extension [Self <: HTMLAttributes[?], T](x: Self & HTMLAttributes[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HTMLAttributes[?], T] (val x: Self & HTMLAttributes[T]) extends AnyVal {
         
         inline def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
         
@@ -129,7 +133,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[SVGAttributes[T]]
       }
       
-      extension [Self <: SVGAttributes[?], T](x: Self & SVGAttributes[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SVGAttributes[?], T] (val x: Self & SVGAttributes[T]) extends AnyVal {
         
         inline def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
         

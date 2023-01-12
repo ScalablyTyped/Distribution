@@ -43,7 +43,8 @@ object PickImplJSONParsePartialP {
     __obj.asInstanceOf[PickImplJSONParsePartialP]
   }
   
-  extension [Self <: PickImplJSONParsePartialP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplJSONParsePartialP] (val x: Self) extends AnyVal {
     
     inline def setBeforeSend(value: String): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
     

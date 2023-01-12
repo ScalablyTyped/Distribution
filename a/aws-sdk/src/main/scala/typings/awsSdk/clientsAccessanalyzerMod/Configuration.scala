@@ -68,7 +68,8 @@ object Configuration {
     __obj.asInstanceOf[Configuration]
   }
   
-  extension [Self <: Configuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
     
     inline def setEbsSnapshot(value: EbsSnapshotConfiguration): Self = StObject.set(x, "ebsSnapshot", value.asInstanceOf[js.Any])
     

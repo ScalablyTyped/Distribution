@@ -35,7 +35,8 @@ object BootstrapTabControlEventMap {
     __obj.asInstanceOf[BootstrapTabControlEventMap]
   }
   
-  extension [Self <: BootstrapTabControlEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapTabControlEventMap] (val x: Self) extends AnyVal {
     
     inline def setActiveTabChanged(value: TabControlTabEventArgs): Self = StObject.set(x, "activeTabChanged", value.asInstanceOf[js.Any])
     

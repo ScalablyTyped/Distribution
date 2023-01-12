@@ -18,7 +18,8 @@ object PieSvgCustomComponents {
     __obj.asInstanceOf[PieSvgCustomComponents[RawDatum]]
   }
   
-  extension [Self <: PieSvgCustomComponents[?], RawDatum](x: Self & PieSvgCustomComponents[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieSvgCustomComponents[?], RawDatum] (val x: Self & PieSvgCustomComponents[RawDatum]) extends AnyVal {
     
     inline def setArcLinkLabelComponent(value: /* props */ ArcLinkLabelProps[ComputedDatum[RawDatum]] => Element): Self = StObject.set(x, "arcLinkLabelComponent", js.Any.fromFunction1(value))
     

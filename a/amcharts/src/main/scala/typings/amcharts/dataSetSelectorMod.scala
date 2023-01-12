@@ -103,7 +103,8 @@ object dataSetSelectorMod {
       __obj.asInstanceOf[DataSetSelector]
     }
     
-    extension [Self <: DataSetSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSetSelector] (val x: Self) extends AnyVal {
       
       inline def setComboBoxSelectText(value: String): Self = StObject.set(x, "comboBoxSelectText", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object PipelineMetadata {
     __obj.asInstanceOf[PipelineMetadata]
   }
   
-  extension [Self <: PipelineMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     

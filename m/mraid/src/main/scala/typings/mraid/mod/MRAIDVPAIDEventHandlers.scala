@@ -44,7 +44,8 @@ object MRAIDVPAIDEventHandlers {
     __obj.asInstanceOf[MRAIDVPAIDEventHandlers]
   }
   
-  extension [Self <: MRAIDVPAIDEventHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MRAIDVPAIDEventHandlers] (val x: Self) extends AnyVal {
     
     inline def setAdClickThru(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "AdClickThru", js.Any.fromFunction3(value))
     

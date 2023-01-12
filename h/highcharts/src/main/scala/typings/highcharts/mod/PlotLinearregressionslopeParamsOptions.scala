@@ -50,7 +50,8 @@ object PlotLinearregressionslopeParamsOptions {
     __obj.asInstanceOf[PlotLinearregressionslopeParamsOptions]
   }
   
-  extension [Self <: PlotLinearregressionslopeParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotLinearregressionslopeParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

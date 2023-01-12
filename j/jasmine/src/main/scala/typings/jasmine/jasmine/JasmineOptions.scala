@@ -20,7 +20,8 @@ object JasmineOptions {
     __obj.asInstanceOf[JasmineOptions]
   }
   
-  extension [Self <: JasmineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JasmineOptions] (val x: Self) extends AnyVal {
     
     inline def setProjectBaseDir(value: String): Self = StObject.set(x, "projectBaseDir", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Snackbar {
     __obj.asInstanceOf[Snackbar]
   }
   
-  extension [Self <: Snackbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Snackbar] (val x: Self) extends AnyVal {
     
     inline def setButton(value: js.Object): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

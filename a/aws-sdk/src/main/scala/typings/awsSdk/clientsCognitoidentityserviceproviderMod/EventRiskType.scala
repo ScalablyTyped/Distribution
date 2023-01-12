@@ -28,7 +28,8 @@ object EventRiskType {
     __obj.asInstanceOf[EventRiskType]
   }
   
-  extension [Self <: EventRiskType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventRiskType] (val x: Self) extends AnyVal {
     
     inline def setCompromisedCredentialsDetected(value: WrappedBooleanType): Self = StObject.set(x, "CompromisedCredentialsDetected", value.asInstanceOf[js.Any])
     

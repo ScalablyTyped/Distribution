@@ -16,7 +16,8 @@ object CustomXmlPartCollectionUpdateData {
     __obj.asInstanceOf[CustomXmlPartCollectionUpdateData]
   }
   
-  extension [Self <: CustomXmlPartCollectionUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomXmlPartCollectionUpdateData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[CustomXmlPartData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

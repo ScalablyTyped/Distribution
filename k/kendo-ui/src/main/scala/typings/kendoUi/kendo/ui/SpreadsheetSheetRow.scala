@@ -21,7 +21,8 @@ object SpreadsheetSheetRow {
     __obj.asInstanceOf[SpreadsheetSheetRow]
   }
   
-  extension [Self <: SpreadsheetSheetRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetSheetRow] (val x: Self) extends AnyVal {
     
     inline def setCells(value: js.Array[SpreadsheetSheetRowCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     

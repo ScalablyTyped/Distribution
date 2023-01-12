@@ -129,7 +129,8 @@ object mod {
       __obj.asInstanceOf[IncrementResponse]
     }
     
-    extension [Self <: IncrementResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncrementResponse] (val x: Self) extends AnyVal {
       
       inline def setResetTime(value: js.Date): Self = StObject.set(x, "resetTime", value.asInstanceOf[js.Any])
       
@@ -175,7 +176,8 @@ object mod {
       __obj.asInstanceOf[LegacyStore]
     }
     
-    extension [Self <: LegacyStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyStore] (val x: Self) extends AnyVal {
       
       inline def setDecrement(value: String => Unit): Self = StObject.set(x, "decrement", js.Any.fromFunction1(value))
       
@@ -426,7 +428,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDraft_polli_ratelimit_headers(value: Boolean): Self = StObject.set(x, "draft_polli_ratelimit_headers", value.asInstanceOf[js.Any])
       
@@ -559,7 +562,8 @@ object mod {
       __obj.asInstanceOf[RateLimitInfo]
     }
     
-    extension [Self <: RateLimitInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RateLimitInfo] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -651,7 +655,8 @@ object mod {
       __obj.asInstanceOf[Store]
     }
     
-    extension [Self <: Store](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
       
       inline def setDecrement(value: String => js.Promise[Unit] | Unit): Self = StObject.set(x, "decrement", js.Any.fromFunction1(value))
       

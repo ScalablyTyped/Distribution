@@ -109,7 +109,8 @@ object Finding {
     __obj.asInstanceOf[Finding]
   }
   
-  extension [Self <: Finding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Finding] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

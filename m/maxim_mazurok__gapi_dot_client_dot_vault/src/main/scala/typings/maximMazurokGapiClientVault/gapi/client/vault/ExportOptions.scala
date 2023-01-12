@@ -31,7 +31,8 @@ object ExportOptions {
     __obj.asInstanceOf[ExportOptions]
   }
   
-  extension [Self <: ExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportOptions] (val x: Self) extends AnyVal {
     
     inline def setDriveOptions(value: DriveExportOptions): Self = StObject.set(x, "driveOptions", value.asInstanceOf[js.Any])
     

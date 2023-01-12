@@ -37,7 +37,8 @@ object libTypescriptSrcUseOnRouteFocusMod {
       __obj.asInstanceOf[Options[Action]]
     }
     
-    extension [Self <: Options[?], Action /* <: NavigationAction */](x: Self & Options[Action]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], Action /* <: NavigationAction */] (val x: Self & Options[Action]) extends AnyVal {
       
       inline def setGetState(value: () => NavigationState[ParamListBase]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       

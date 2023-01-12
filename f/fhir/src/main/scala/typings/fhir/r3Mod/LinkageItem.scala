@@ -31,7 +31,8 @@ object LinkageItem {
     __obj.asInstanceOf[LinkageItem]
   }
   
-  extension [Self <: LinkageItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkageItem] (val x: Self) extends AnyVal {
     
     inline def setResource(value: Reference): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

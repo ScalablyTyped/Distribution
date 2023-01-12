@@ -29,7 +29,8 @@ object distTypesInterceptUtilsMod {
       __obj.asInstanceOf[IInterceptable[T]]
     }
     
-    extension [Self <: IInterceptable[?], T](x: Self & IInterceptable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInterceptable[?], T] (val x: Self & IInterceptable[T]) extends AnyVal {
       
       inline def setInterceptors_(value: js.Array[IInterceptor[T]]): Self = StObject.set(x, "interceptors_", value.asInstanceOf[js.Any])
       

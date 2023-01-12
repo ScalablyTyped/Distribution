@@ -147,7 +147,8 @@ object mod {
       __obj.asInstanceOf[CustomFilterProps]
     }
     
-    extension [Self <: CustomFilterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomFilterProps] (val x: Self) extends AnyVal {
       
       inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
@@ -189,7 +190,8 @@ object mod {
       __obj.asInstanceOf[DateFilterProps[T]]
     }
     
-    extension [Self <: DateFilterProps[?], T /* <: js.Object */](x: Self & DateFilterProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateFilterProps[?], T /* <: js.Object */] (val x: Self & DateFilterProps[T]) extends AnyVal {
       
       inline def setComparatorClassName(value: String): Self = StObject.set(x, "comparatorClassName", value.asInstanceOf[js.Any])
       
@@ -237,7 +239,8 @@ object mod {
       __obj.asInstanceOf[FilterFactoryProps[T]]
     }
     
-    extension [Self <: FilterFactoryProps[?], T /* <: js.Object */](x: Self & FilterFactoryProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterFactoryProps[?], T /* <: js.Object */] (val x: Self & FilterFactoryProps[T]) extends AnyVal {
       
       inline def setAfterFilter(value: (/* newResult */ js.Array[T], /* newFilters */ js.UndefOr[js.Array[Any]]) => Unit): Self = StObject.set(x, "afterFilter", js.Any.fromFunction2(value))
       
@@ -267,7 +270,8 @@ object mod {
       __obj.asInstanceOf[MultiSelectFilterProps[T]]
     }
     
-    extension [Self <: MultiSelectFilterProps[?], T /* <: js.Object */](x: Self & MultiSelectFilterProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectFilterProps[?], T /* <: js.Object */] (val x: Self & MultiSelectFilterProps[T]) extends AnyVal {
       
       inline def setComparator(value: Comparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
       
@@ -316,7 +320,8 @@ object mod {
       __obj.asInstanceOf[NumberFilterProps[T]]
     }
     
-    extension [Self <: NumberFilterProps[?], T /* <: js.Object */](x: Self & NumberFilterProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberFilterProps[?], T /* <: js.Object */] (val x: Self & NumberFilterProps[T]) extends AnyVal {
       
       inline def setComparatorClassName(value: String): Self = StObject.set(x, "comparatorClassName", value.asInstanceOf[js.Any])
       
@@ -384,7 +389,8 @@ object mod {
       __obj.asInstanceOf[SelectFilterProps[T]]
     }
     
-    extension [Self <: SelectFilterProps[?], T /* <: js.Object */](x: Self & SelectFilterProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectFilterProps[?], T /* <: js.Object */] (val x: Self & SelectFilterProps[T]) extends AnyVal {
       
       inline def setComparator(value: Comparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
       
@@ -438,7 +444,8 @@ object mod {
       __obj.asInstanceOf[TextFilterProps[T]]
     }
     
-    extension [Self <: TextFilterProps[?], T /* <: js.Object */](x: Self & TextFilterProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextFilterProps[?], T /* <: js.Object */] (val x: Self & TextFilterProps[T]) extends AnyVal {
       
       inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       

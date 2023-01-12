@@ -42,7 +42,8 @@ object ExplanationOfBenefitProcessNote {
     __obj.asInstanceOf[ExplanationOfBenefitProcessNote]
   }
   
-  extension [Self <: ExplanationOfBenefitProcessNote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExplanationOfBenefitProcessNote] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: CodeableConcept): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

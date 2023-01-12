@@ -18,7 +18,8 @@ object SetBlackboxPatternsParameterType {
     __obj.asInstanceOf[SetBlackboxPatternsParameterType]
   }
   
-  extension [Self <: SetBlackboxPatternsParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetBlackboxPatternsParameterType] (val x: Self) extends AnyVal {
     
     inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     

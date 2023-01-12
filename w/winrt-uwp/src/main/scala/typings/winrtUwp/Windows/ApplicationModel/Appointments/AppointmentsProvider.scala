@@ -48,7 +48,8 @@ object AppointmentsProvider {
       __obj.asInstanceOf[AddAppointmentOperation]
     }
     
-    extension [Self <: AddAppointmentOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddAppointmentOperation] (val x: Self) extends AnyVal {
       
       inline def setAppointmentInformation(value: Appointment): Self = StObject.set(x, "appointmentInformation", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object AppointmentsProvider {
       __obj.asInstanceOf[RemoveAppointmentOperation]
     }
     
-    extension [Self <: RemoveAppointmentOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveAppointmentOperation] (val x: Self) extends AnyVal {
       
       inline def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object AppointmentsProvider {
       __obj.asInstanceOf[ReplaceAppointmentOperation]
     }
     
-    extension [Self <: ReplaceAppointmentOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplaceAppointmentOperation] (val x: Self) extends AnyVal {
       
       inline def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
       

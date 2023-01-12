@@ -18,7 +18,8 @@ object DeleteScriptInput {
     __obj.asInstanceOf[DeleteScriptInput]
   }
   
-  extension [Self <: DeleteScriptInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteScriptInput] (val x: Self) extends AnyVal {
     
     inline def setScriptId(value: ScriptIdOrArn): Self = StObject.set(x, "ScriptId", value.asInstanceOf[js.Any])
   }

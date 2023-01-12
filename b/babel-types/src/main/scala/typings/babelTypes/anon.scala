@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Cooked]
     }
     
-    extension [Self <: Cooked](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cooked] (val x: Self) extends AnyVal {
       
       inline def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Raw]
     }
     
-    extension [Self <: Raw](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Raw] (val x: Self) extends AnyVal {
       
       inline def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
       

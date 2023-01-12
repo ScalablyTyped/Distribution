@@ -15,7 +15,8 @@ object DescribeDefaultClusterParametersResult {
     __obj.asInstanceOf[DescribeDefaultClusterParametersResult]
   }
   
-  extension [Self <: DescribeDefaultClusterParametersResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDefaultClusterParametersResult] (val x: Self) extends AnyVal {
     
     inline def setDefaultClusterParameters(value: DefaultClusterParameters): Self = StObject.set(x, "DefaultClusterParameters", value.asInstanceOf[js.Any])
     

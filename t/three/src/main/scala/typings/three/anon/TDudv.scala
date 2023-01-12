@@ -30,7 +30,8 @@ object TDudv {
     __obj.asInstanceOf[TDudv]
   }
   
-  extension [Self <: TDudv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TDudv] (val x: Self) extends AnyVal {
     
     inline def setColor(value: IUniform[Any]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

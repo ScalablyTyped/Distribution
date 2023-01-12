@@ -20,7 +20,8 @@ object ServiceVersion {
     __obj.asInstanceOf[ServiceVersion]
   }
   
-  extension [Self <: ServiceVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceVersion] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

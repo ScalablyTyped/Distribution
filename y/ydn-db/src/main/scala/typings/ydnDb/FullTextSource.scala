@@ -19,7 +19,8 @@ object FullTextSource {
     __obj.asInstanceOf[FullTextSource]
   }
   
-  extension [Self <: FullTextSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullTextSource] (val x: Self) extends AnyVal {
     
     inline def setKeyPath(value: String): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
     

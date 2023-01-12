@@ -52,7 +52,8 @@ object EnvelopeTransferRuleInformation {
     __obj.asInstanceOf[EnvelopeTransferRuleInformation]
   }
   
-  extension [Self <: EnvelopeTransferRuleInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeTransferRuleInformation] (val x: Self) extends AnyVal {
     
     inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     

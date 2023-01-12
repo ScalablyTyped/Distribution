@@ -35,7 +35,8 @@ object CloudColor {
     __obj.asInstanceOf[CloudColor]
   }
   
-  extension [Self <: CloudColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudColor] (val x: Self) extends AnyVal {
     
     inline def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     

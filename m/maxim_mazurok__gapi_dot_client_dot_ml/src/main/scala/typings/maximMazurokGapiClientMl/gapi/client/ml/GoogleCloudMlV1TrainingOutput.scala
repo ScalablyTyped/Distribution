@@ -46,7 +46,8 @@ object GoogleCloudMlV1TrainingOutput {
     __obj.asInstanceOf[GoogleCloudMlV1TrainingOutput]
   }
   
-  extension [Self <: GoogleCloudMlV1TrainingOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1TrainingOutput] (val x: Self) extends AnyVal {
     
     inline def setBuiltInAlgorithmOutput(value: GoogleCloudMlV1BuiltInAlgorithmOutput): Self = StObject.set(x, "builtInAlgorithmOutput", value.asInstanceOf[js.Any])
     

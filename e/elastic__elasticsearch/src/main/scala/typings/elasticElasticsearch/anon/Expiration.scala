@@ -23,7 +23,8 @@ object Expiration {
     __obj.asInstanceOf[Expiration]
   }
   
-  extension [Self <: Expiration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Expiration] (val x: Self) extends AnyVal {
     
     inline def setExpiration(value: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Duration): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     

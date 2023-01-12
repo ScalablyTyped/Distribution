@@ -85,7 +85,8 @@ object libComponentsProgressIndicatorProgressIndicatorDottypesMod {
       __obj.asInstanceOf[IProgressIndicatorProps]
     }
     
-    extension [Self <: IProgressIndicatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProgressIndicatorProps] (val x: Self) extends AnyVal {
       
       inline def setAriaValueText(value: String): Self = StObject.set(x, "ariaValueText", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object libComponentsProgressIndicatorProgressIndicatorDottypesMod {
       __obj.asInstanceOf[IProgressIndicatorStyleProps]
     }
     
-    extension [Self <: IProgressIndicatorStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProgressIndicatorStyleProps] (val x: Self) extends AnyVal {
       
       inline def setBarHeight(value: Double): Self = StObject.set(x, "barHeight", value.asInstanceOf[js.Any])
       
@@ -202,7 +204,8 @@ object libComponentsProgressIndicatorProgressIndicatorDottypesMod {
       __obj.asInstanceOf[IProgressIndicatorStyles]
     }
     
-    extension [Self <: IProgressIndicatorStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProgressIndicatorStyles] (val x: Self) extends AnyVal {
       
       inline def setItemDescription(value: IStyle): Self = StObject.set(x, "itemDescription", value.asInstanceOf[js.Any])
       

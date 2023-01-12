@@ -43,7 +43,8 @@ object ReservationPlan {
     __obj.asInstanceOf[ReservationPlan]
   }
   
-  extension [Self <: ReservationPlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationPlan] (val x: Self) extends AnyVal {
     
     inline def setCommitment(value: Commitment): Self = StObject.set(x, "Commitment", value.asInstanceOf[js.Any])
     

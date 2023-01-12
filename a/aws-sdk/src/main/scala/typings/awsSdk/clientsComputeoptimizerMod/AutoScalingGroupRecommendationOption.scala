@@ -43,7 +43,8 @@ object AutoScalingGroupRecommendationOption {
     __obj.asInstanceOf[AutoScalingGroupRecommendationOption]
   }
   
-  extension [Self <: AutoScalingGroupRecommendationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoScalingGroupRecommendationOption] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: AutoScalingGroupConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

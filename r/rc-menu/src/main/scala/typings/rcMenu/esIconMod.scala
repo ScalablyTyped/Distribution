@@ -32,7 +32,8 @@ object esIconMod {
       __obj.asInstanceOf[IconProps]
     }
     
-    extension [Self <: IconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

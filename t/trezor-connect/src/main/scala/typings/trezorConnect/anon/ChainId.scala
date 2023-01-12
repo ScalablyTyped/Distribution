@@ -23,7 +23,8 @@ object ChainId {
     __obj.asInstanceOf[ChainId]
   }
   
-  extension [Self <: ChainId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChainId] (val x: Self) extends AnyVal {
     
     inline def setChainId(value: Double | js.BigInt): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
     

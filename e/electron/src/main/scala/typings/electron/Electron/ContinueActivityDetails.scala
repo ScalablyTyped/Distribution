@@ -19,7 +19,8 @@ object ContinueActivityDetails {
     __obj.asInstanceOf[ContinueActivityDetails]
   }
   
-  extension [Self <: ContinueActivityDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinueActivityDetails] (val x: Self) extends AnyVal {
     
     inline def setWebpageURL(value: String): Self = StObject.set(x, "webpageURL", value.asInstanceOf[js.Any])
     

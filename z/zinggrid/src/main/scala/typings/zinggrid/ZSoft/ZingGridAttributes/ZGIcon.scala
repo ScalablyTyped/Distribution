@@ -18,7 +18,8 @@ object ZGIcon {
     __obj.asInstanceOf[ZGIcon]
   }
   
-  extension [Self <: ZGIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZGIcon] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

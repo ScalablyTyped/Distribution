@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[ContentBlocks]
     }
     
-    extension [Self <: ContentBlocks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentBlocks] (val x: Self) extends AnyVal {
       
       inline def setContentBlocks(value: js.Array[ContentBlock]): Self = StObject.set(x, "contentBlocks", value.asInstanceOf[js.Any])
       

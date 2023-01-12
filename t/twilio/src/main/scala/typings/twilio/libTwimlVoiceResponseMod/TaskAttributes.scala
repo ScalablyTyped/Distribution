@@ -17,7 +17,8 @@ object TaskAttributes {
     __obj.asInstanceOf[TaskAttributes]
   }
   
-  extension [Self <: TaskAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAttributes] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object Tokenizer {
     __obj.asInstanceOf[Tokenizer[T]]
   }
   
-  extension [Self <: Tokenizer[?], T](x: Self & Tokenizer[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tokenizer[?], T] (val x: Self & Tokenizer[T]) extends AnyVal {
     
     inline def setFormatter(value: Formatter[T]): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     

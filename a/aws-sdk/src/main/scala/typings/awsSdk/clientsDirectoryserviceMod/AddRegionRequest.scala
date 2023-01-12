@@ -25,7 +25,8 @@ object AddRegionRequest {
     __obj.asInstanceOf[AddRegionRequest]
   }
   
-  extension [Self <: AddRegionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddRegionRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     

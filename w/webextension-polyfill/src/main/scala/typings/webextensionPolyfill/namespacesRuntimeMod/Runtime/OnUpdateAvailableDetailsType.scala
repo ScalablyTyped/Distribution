@@ -21,7 +21,8 @@ object OnUpdateAvailableDetailsType {
     __obj.asInstanceOf[OnUpdateAvailableDetailsType]
   }
   
-  extension [Self <: OnUpdateAvailableDetailsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnUpdateAvailableDetailsType] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

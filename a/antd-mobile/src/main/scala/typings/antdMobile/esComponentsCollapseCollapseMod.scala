@@ -330,7 +330,8 @@ object esComponentsCollapseCollapseMod {
       __obj.asInstanceOf[CollapsePanelProps]
     }
     
-    extension [Self <: CollapsePanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapsePanelProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -607,7 +608,8 @@ object esComponentsCollapseCollapseMod {
       __obj.asInstanceOf[ValueProps[T]]
     }
     
-    extension [Self <: ValueProps[?], T](x: Self & ValueProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueProps[?], T] (val x: Self & ValueProps[T]) extends AnyVal {
       
       inline def setActiveKey(value: T): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       

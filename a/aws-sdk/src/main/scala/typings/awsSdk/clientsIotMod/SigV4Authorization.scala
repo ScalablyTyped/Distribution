@@ -28,7 +28,8 @@ object SigV4Authorization {
     __obj.asInstanceOf[SigV4Authorization]
   }
   
-  extension [Self <: SigV4Authorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SigV4Authorization] (val x: Self) extends AnyVal {
     
     inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     

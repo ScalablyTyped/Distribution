@@ -60,7 +60,8 @@ object XActiveDataControl {
     __obj.asInstanceOf[XActiveDataControl]
   }
   
-  extension [Self <: XActiveDataControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XActiveDataControl] (val x: Self) extends AnyVal {
     
     inline def setAddListener(value: XStreamListener => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     

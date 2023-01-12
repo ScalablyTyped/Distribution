@@ -22,7 +22,8 @@ object PickComponentsPropsListMuBackIconButtonText {
     __obj.asInstanceOf[PickComponentsPropsListMuBackIconButtonText]
   }
   
-  extension [Self <: PickComponentsPropsListMuBackIconButtonText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickComponentsPropsListMuBackIconButtonText] (val x: Self) extends AnyVal {
     
     inline def setBackIconButtonText(value: Any): Self = StObject.set(x, "backIconButtonText", value.asInstanceOf[js.Any])
     

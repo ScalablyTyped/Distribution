@@ -22,7 +22,8 @@ object BuildBazelRemoteExecutionV2NodeProperties {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2NodeProperties]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2NodeProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2NodeProperties] (val x: Self) extends AnyVal {
     
     inline def setMtime(value: String): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     

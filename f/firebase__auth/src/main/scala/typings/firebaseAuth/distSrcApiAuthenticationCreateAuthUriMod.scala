@@ -28,7 +28,8 @@ object distSrcApiAuthenticationCreateAuthUriMod {
       __obj.asInstanceOf[CreateAuthUriRequest]
     }
     
-    extension [Self <: CreateAuthUriRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateAuthUriRequest] (val x: Self) extends AnyVal {
       
       inline def setContinueUri(value: String): Self = StObject.set(x, "continueUri", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object distSrcApiAuthenticationCreateAuthUriMod {
       __obj.asInstanceOf[CreateAuthUriResponse]
     }
     
-    extension [Self <: CreateAuthUriResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateAuthUriResponse] (val x: Self) extends AnyVal {
       
       inline def setSigninMethods(value: js.Array[String]): Self = StObject.set(x, "signinMethods", value.asInstanceOf[js.Any])
       

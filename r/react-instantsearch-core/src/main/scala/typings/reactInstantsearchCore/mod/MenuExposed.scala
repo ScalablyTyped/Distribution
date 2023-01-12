@@ -27,7 +27,8 @@ object MenuExposed {
     __obj.asInstanceOf[MenuExposed]
   }
   
-  extension [Self <: MenuExposed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuExposed] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

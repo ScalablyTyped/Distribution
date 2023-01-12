@@ -18,7 +18,8 @@ object NewValueFileEncoding {
     __obj.asInstanceOf[NewValueFileEncoding]
   }
   
-  extension [Self <: NewValueFileEncoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewValueFileEncoding] (val x: Self) extends AnyVal {
     
     inline def setNewValue(value: FileEncoding): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     

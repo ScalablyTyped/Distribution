@@ -17,7 +17,8 @@ object ParticipantRoleChangedEvent {
     __obj.asInstanceOf[ParticipantRoleChangedEvent]
   }
   
-  extension [Self <: ParticipantRoleChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticipantRoleChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

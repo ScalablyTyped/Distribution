@@ -29,7 +29,8 @@ object libSrcTypesOauthconfigMod {
       __obj.asInstanceOf[CredentialsClientConfig]
     }
     
-    extension [Self <: CredentialsClientConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CredentialsClientConfig] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object libSrcTypesOauthconfigMod {
       __obj.asInstanceOf[CredentialsDirConfig]
     }
     
-    extension [Self <: CredentialsDirConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CredentialsDirConfig] (val x: Self) extends AnyVal {
       
       inline def setCredentialsDir(value: String): Self = StObject.set(x, "credentialsDir", value.asInstanceOf[js.Any])
     }
@@ -119,7 +121,8 @@ object libSrcTypesOauthconfigMod {
       __obj.asInstanceOf[CredentialsUserConfig]
     }
     
-    extension [Self <: CredentialsUserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CredentialsUserConfig] (val x: Self) extends AnyVal {
       
       inline def setApplicationPassword(value: String): Self = StObject.set(x, "applicationPassword", value.asInstanceOf[js.Any])
       
@@ -146,7 +149,8 @@ object libSrcTypesOauthconfigMod {
       __obj.asInstanceOf[GrantConfigBase]
     }
     
-    extension [Self <: GrantConfigBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrantConfigBase] (val x: Self) extends AnyVal {
       
       inline def setAccessTokenEndpoint(value: String): Self = StObject.set(x, "accessTokenEndpoint", value.asInstanceOf[js.Any])
       

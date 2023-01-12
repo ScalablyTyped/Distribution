@@ -38,7 +38,8 @@ object ImportSourceCredentialsInput {
     __obj.asInstanceOf[ImportSourceCredentialsInput]
   }
   
-  extension [Self <: ImportSourceCredentialsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportSourceCredentialsInput] (val x: Self) extends AnyVal {
     
     inline def setAuthType(value: AuthType): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     

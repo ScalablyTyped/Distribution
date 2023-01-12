@@ -38,7 +38,8 @@ object TreeMapOptions {
     __obj.asInstanceOf[TreeMapOptions]
   }
   
-  extension [Self <: TreeMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeMapOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     

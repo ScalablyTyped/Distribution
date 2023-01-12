@@ -19,7 +19,8 @@ object PerformanceMarkOptions {
     __obj.asInstanceOf[PerformanceMarkOptions]
   }
   
-  extension [Self <: PerformanceMarkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceMarkOptions] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: Any): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

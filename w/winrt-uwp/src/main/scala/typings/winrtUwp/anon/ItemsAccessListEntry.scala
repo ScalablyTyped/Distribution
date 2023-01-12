@@ -18,7 +18,8 @@ object ItemsAccessListEntry {
     __obj.asInstanceOf[ItemsAccessListEntry]
   }
   
-  extension [Self <: ItemsAccessListEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsAccessListEntry] (val x: Self) extends AnyVal {
     
     inline def setItems(value: AccessListEntry): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

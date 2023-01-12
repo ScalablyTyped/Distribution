@@ -20,7 +20,8 @@ object BlobsOptions {
     __obj.asInstanceOf[BlobsOptions]
   }
   
-  extension [Self <: BlobsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlobsOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultName(value: String): Self = StObject.set(x, "defaultName", value.asInstanceOf[js.Any])
     

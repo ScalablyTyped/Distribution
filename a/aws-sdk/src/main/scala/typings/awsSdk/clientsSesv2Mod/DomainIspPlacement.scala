@@ -38,7 +38,8 @@ object DomainIspPlacement {
     __obj.asInstanceOf[DomainIspPlacement]
   }
   
-  extension [Self <: DomainIspPlacement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainIspPlacement] (val x: Self) extends AnyVal {
     
     inline def setInboxPercentage(value: Percentage): Self = StObject.set(x, "InboxPercentage", value.asInstanceOf[js.Any])
     

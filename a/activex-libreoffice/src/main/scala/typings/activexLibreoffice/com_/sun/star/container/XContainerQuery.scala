@@ -50,7 +50,8 @@ object XContainerQuery {
     __obj.asInstanceOf[XContainerQuery]
   }
   
-  extension [Self <: XContainerQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContainerQuery] (val x: Self) extends AnyVal {
     
     inline def setCreateSubSetEnumerationByProperties(value: SeqEquiv[NamedValue] => XEnumeration): Self = StObject.set(x, "createSubSetEnumerationByProperties", js.Any.fromFunction1(value))
     

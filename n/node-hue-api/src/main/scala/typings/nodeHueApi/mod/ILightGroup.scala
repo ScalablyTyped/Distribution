@@ -27,7 +27,8 @@ object ILightGroup {
     __obj.asInstanceOf[ILightGroup]
   }
   
-  extension [Self <: ILightGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILightGroup] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Bri): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

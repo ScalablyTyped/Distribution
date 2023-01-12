@@ -40,7 +40,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Plugin]
       }
       
-      extension [Self <: Plugin](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
         
         inline def setAssert(value: (Any, Any) => Boolean): Self = StObject.set(x, "assert", js.Any.fromFunction2(value))
         

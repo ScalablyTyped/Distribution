@@ -27,7 +27,8 @@ object distTypesResponsiveEditorSystemDistComponentsConnectToDataMod extends Sho
       __obj.asInstanceOf[ConnectToDataProps]
     }
     
-    extension [Self <: ConnectToDataProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectToDataProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

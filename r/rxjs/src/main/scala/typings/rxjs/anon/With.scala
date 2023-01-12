@@ -18,7 +18,8 @@ object With {
     __obj.asInstanceOf[With[T, M, O]]
   }
   
-  extension [Self <: With[?, ?, ?], T, M, O /* <: ObservableInput[Any] */](x: Self & (With[T, M, O])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: With[?, ?, ?], T, M, O /* <: ObservableInput[Any] */] (val x: Self & (With[T, M, O])) extends AnyVal {
     
     inline def setWith(value: TimeoutInfo[T, M] => O): Self = StObject.set(x, "with", js.Any.fromFunction1(value))
   }

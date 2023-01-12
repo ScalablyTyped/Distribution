@@ -27,7 +27,8 @@ object IsolationLevel {
     __obj.asInstanceOf[IsolationLevel]
   }
   
-  extension [Self <: IsolationLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsolationLevel] (val x: Self) extends AnyVal {
     
     inline def setIsolationLevel(value: Double): Self = StObject.set(x, "isolationLevel", value.asInstanceOf[js.Any])
     

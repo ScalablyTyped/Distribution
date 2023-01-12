@@ -38,7 +38,8 @@ object SelectionChangeEventInfo {
     __obj.asInstanceOf[SelectionChangeEventInfo]
   }
   
-  extension [Self <: SelectionChangeEventInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionChangeEventInfo] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: js.Array[Graphic]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

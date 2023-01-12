@@ -19,7 +19,8 @@ object DatabaseSchemaJson {
     __obj.asInstanceOf[DatabaseSchemaJson]
   }
   
-  extension [Self <: DatabaseSchemaJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseSchemaJson] (val x: Self) extends AnyVal {
     
     inline def setFullTextCatalogs(value: js.Array[FullTextCatalog]): Self = StObject.set(x, "fullTextCatalogs", value.asInstanceOf[js.Any])
     

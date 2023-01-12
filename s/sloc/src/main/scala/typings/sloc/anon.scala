@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[RecordKeynumber]
     }
     
-    extension [Self <: RecordKeynumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordKeynumber] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Double): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       

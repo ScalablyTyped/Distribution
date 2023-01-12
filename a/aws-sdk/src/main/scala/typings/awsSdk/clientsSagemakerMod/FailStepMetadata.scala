@@ -18,7 +18,8 @@ object FailStepMetadata {
     __obj.asInstanceOf[FailStepMetadata]
   }
   
-  extension [Self <: FailStepMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailStepMetadata] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: String3072): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     

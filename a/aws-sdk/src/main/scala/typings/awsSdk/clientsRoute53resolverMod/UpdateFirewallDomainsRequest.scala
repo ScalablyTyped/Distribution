@@ -32,7 +32,8 @@ object UpdateFirewallDomainsRequest {
     __obj.asInstanceOf[UpdateFirewallDomainsRequest]
   }
   
-  extension [Self <: UpdateFirewallDomainsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFirewallDomainsRequest] (val x: Self) extends AnyVal {
     
     inline def setDomains(value: FirewallDomains): Self = StObject.set(x, "Domains", value.asInstanceOf[js.Any])
     

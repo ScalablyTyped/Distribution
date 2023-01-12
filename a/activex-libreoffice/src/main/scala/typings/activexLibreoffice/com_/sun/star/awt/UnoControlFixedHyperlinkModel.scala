@@ -154,7 +154,8 @@ object UnoControlFixedHyperlinkModel {
     __obj.asInstanceOf[UnoControlFixedHyperlinkModel]
   }
   
-  extension [Self <: UnoControlFixedHyperlinkModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlFixedHyperlinkModel] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Double): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     

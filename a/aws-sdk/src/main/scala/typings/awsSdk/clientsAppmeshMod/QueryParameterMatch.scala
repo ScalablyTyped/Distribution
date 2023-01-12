@@ -18,7 +18,8 @@ object QueryParameterMatch {
     __obj.asInstanceOf[QueryParameterMatch]
   }
   
-  extension [Self <: QueryParameterMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryParameterMatch] (val x: Self) extends AnyVal {
     
     inline def setExact(value: String): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

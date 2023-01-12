@@ -27,7 +27,8 @@ object libRecordMod {
       __obj.asInstanceOf[OptionalParameters]
     }
     
-    extension [Self <: OptionalParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalParameters] (val x: Self) extends AnyVal {
       
       inline def setTypecast(value: Boolean): Self = StObject.set(x, "typecast", value.asInstanceOf[js.Any])
     }

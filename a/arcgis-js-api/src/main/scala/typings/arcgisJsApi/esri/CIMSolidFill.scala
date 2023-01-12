@@ -53,7 +53,8 @@ object CIMSolidFill {
     __obj.asInstanceOf[CIMSolidFill]
   }
   
-  extension [Self <: CIMSolidFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMSolidFill] (val x: Self) extends AnyVal {
     
     inline def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

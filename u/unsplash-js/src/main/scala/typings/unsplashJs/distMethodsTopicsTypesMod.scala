@@ -66,7 +66,8 @@ object distMethodsTopicsTypesMod {
       __obj.asInstanceOf[Basic]
     }
     
-    extension [Self <: Basic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Basic] (val x: Self) extends AnyVal {
       
       inline def setCover_photo(value: typings.unsplashJs.distMethodsPhotosTypesMod.Basic): Self = StObject.set(x, "cover_photo", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object distMethodsTopicsTypesMod {
       __obj.asInstanceOf[Full]
     }
     
-    extension [Self <: Full](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
       
       inline def setTop_contributors(value: js.Array[typings.unsplashJs.distMethodsUsersTypesMod.Basic]): Self = StObject.set(x, "top_contributors", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object ITopicPartitionConfig {
     __obj.asInstanceOf[ITopicPartitionConfig]
   }
   
-  extension [Self <: ITopicPartitionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITopicPartitionConfig] (val x: Self) extends AnyVal {
     
     inline def setAssignments(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     

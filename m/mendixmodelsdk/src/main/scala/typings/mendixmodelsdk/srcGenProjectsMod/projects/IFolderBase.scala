@@ -52,7 +52,8 @@ object IFolderBase {
     __obj.asInstanceOf[IFolderBase]
   }
   
-  extension [Self <: IFolderBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFolderBase] (val x: Self) extends AnyVal {
     
     inline def setContainerAsFolderBase(value: IFolderBase): Self = StObject.set(x, "containerAsFolderBase", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object Enclose {
     __obj.asInstanceOf[Enclose]
   }
   
-  extension [Self <: Enclose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enclose] (val x: Self) extends AnyVal {
     
     inline def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     

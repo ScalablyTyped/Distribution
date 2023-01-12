@@ -17,7 +17,8 @@ object CopyActiveItem {
     __obj.asInstanceOf[CopyActiveItem]
   }
   
-  extension [Self <: CopyActiveItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyActiveItem] (val x: Self) extends AnyVal {
     
     inline def setCopyActiveItem(value: Boolean): Self = StObject.set(x, "copyActiveItem", value.asInstanceOf[js.Any])
     

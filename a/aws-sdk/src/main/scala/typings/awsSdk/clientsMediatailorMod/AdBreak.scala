@@ -38,7 +38,8 @@ object AdBreak {
     __obj.asInstanceOf[AdBreak]
   }
   
-  extension [Self <: AdBreak](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdBreak] (val x: Self) extends AnyVal {
     
     inline def setMessageType(value: MessageType): Self = StObject.set(x, "MessageType", value.asInstanceOf[js.Any])
     

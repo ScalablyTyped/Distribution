@@ -48,7 +48,8 @@ object InsertWorksheetOptions {
     __obj.asInstanceOf[InsertWorksheetOptions]
   }
   
-  extension [Self <: InsertWorksheetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertWorksheetOptions] (val x: Self) extends AnyVal {
     
     inline def setPositionType(value: WorksheetPositionType | None | Before | After | Beginning | End): Self = StObject.set(x, "positionType", value.asInstanceOf[js.Any])
     

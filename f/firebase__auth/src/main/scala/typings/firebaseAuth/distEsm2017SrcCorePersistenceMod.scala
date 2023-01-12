@@ -53,7 +53,8 @@ object distEsm2017SrcCorePersistenceMod {
       __obj.asInstanceOf[PersistenceInternal]
     }
     
-    extension [Self <: PersistenceInternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistenceInternal] (val x: Self) extends AnyVal {
       
       inline def setType(value: PersistenceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

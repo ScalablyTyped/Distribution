@@ -206,7 +206,8 @@ object mod {
       __obj.asInstanceOf[Layout]
     }
     
-    extension [Self <: Layout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: js.Array[InvertibleAxis | Null]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -365,7 +366,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

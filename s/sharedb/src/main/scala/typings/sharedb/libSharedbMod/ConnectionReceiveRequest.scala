@@ -15,7 +15,8 @@ object ConnectionReceiveRequest {
     __obj.asInstanceOf[ConnectionReceiveRequest]
   }
   
-  extension [Self <: ConnectionReceiveRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionReceiveRequest] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

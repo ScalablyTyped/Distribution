@@ -94,7 +94,8 @@ object OptionsRowGrouping {
     __obj.asInstanceOf[OptionsRowGrouping]
   }
   
-  extension [Self <: OptionsRowGrouping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsRowGrouping] (val x: Self) extends AnyVal {
     
     inline def setDataGrouped(value: () => Unit): Self = StObject.set(x, "dataGrouped", js.Any.fromFunction0(value))
     

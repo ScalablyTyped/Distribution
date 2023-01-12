@@ -36,7 +36,8 @@ object distSrcCodingMod {
       __obj.asInstanceOf[BytesReader]
     }
     
-    extension [Self <: BytesReader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BytesReader] (val x: Self) extends AnyVal {
       
       inline def setExactly(value: Double => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "exactly", js.Any.fromFunction1(value))
       
@@ -67,7 +68,8 @@ object distSrcCodingMod {
       __obj.asInstanceOf[CarDecoder]
     }
     
-    extension [Self <: CarDecoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarDecoder] (val x: Self) extends AnyVal {
       
       inline def setBlocks(value: () => AsyncGenerator[Block, Any, Any]): Self = StObject.set(x, "blocks", js.Any.fromFunction0(value))
       
@@ -96,7 +98,8 @@ object distSrcCodingMod {
       __obj.asInstanceOf[CarEncoder]
     }
     
-    extension [Self <: CarEncoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarEncoder] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -119,7 +122,8 @@ object distSrcCodingMod {
       __obj.asInstanceOf[CarHeader]
     }
     
-    extension [Self <: CarHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarHeader] (val x: Self) extends AnyVal {
       
       inline def setRoots(value: js.Array[CID[Any, Double, Double, Version]]): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
       
@@ -151,7 +155,8 @@ object distSrcCodingMod {
       __obj.asInstanceOf[CarV2FixedHeader]
     }
     
-    extension [Self <: CarV2FixedHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarV2FixedHeader] (val x: Self) extends AnyVal {
       
       inline def setCharacteristics(value: js.Tuple2[js.BigInt, js.BigInt]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
       
@@ -184,7 +189,8 @@ object distSrcCodingMod {
       __obj.asInstanceOf[CarV2Header]
     }
     
-    extension [Self <: CarV2Header](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarV2Header] (val x: Self) extends AnyVal {
       
       inline def setRoots(value: js.Array[CID[Any, Double, Double, Version]]): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
       
@@ -207,7 +213,8 @@ object distSrcCodingMod {
       __obj.asInstanceOf[IteratorChannel[T]]
     }
     
-    extension [Self <: IteratorChannel[?], T](x: Self & IteratorChannel[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IteratorChannel[?], T] (val x: Self & IteratorChannel[T]) extends AnyVal {
       
       inline def setIterator(value: AsyncIterator[T, Any, Unit]): Self = StObject.set(x, "iterator", value.asInstanceOf[js.Any])
       
@@ -228,7 +235,8 @@ object distSrcCodingMod {
       __obj.asInstanceOf[IteratorChannelWriter[T]]
     }
     
-    extension [Self <: IteratorChannelWriter[?], T](x: Self & IteratorChannelWriter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IteratorChannelWriter[?], T] (val x: Self & IteratorChannelWriter[T]) extends AnyVal {
       
       inline def setEnd(value: () => js.Promise[Unit]): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       

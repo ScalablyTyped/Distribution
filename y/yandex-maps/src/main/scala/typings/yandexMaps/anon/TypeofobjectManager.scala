@@ -29,7 +29,8 @@ object TypeofobjectManager {
     __obj.asInstanceOf[TypeofobjectManager]
   }
   
-  extension [Self <: TypeofobjectManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofobjectManager] (val x: Self) extends AnyVal {
     
     inline def setBalloon(value: Instantiable0[Balloon]): Self = StObject.set(x, "Balloon", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeploymentCommand {
     __obj.asInstanceOf[DeploymentCommand]
   }
   
-  extension [Self <: DeploymentCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentCommand] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: DeploymentCommandArgs): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     

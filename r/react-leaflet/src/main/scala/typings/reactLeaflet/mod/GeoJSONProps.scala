@@ -109,7 +109,8 @@ object GeoJSONProps {
     __obj.asInstanceOf[GeoJSONProps]
   }
   
-  extension [Self <: GeoJSONProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONProps] (val x: Self) extends AnyVal {
     
     inline def setCoordsToLatLng(value: /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) => LatLng_): Self = StObject.set(x, "coordsToLatLng", js.Any.fromFunction1(value))
     

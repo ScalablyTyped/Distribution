@@ -36,7 +36,8 @@ object PerformanceEventTiming {
     __obj.asInstanceOf[PerformanceEventTiming]
   }
   
-  extension [Self <: PerformanceEventTiming](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceEventTiming] (val x: Self) extends AnyVal {
     
     inline def setCancelable(value: scala.Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     

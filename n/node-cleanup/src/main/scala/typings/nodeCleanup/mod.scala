@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[StderrMessages]
     }
     
-    extension [Self <: StderrMessages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StderrMessages] (val x: Self) extends AnyVal {
       
       inline def setCtrl_C(value: String): Self = StObject.set(x, "ctrl_C", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object typesProjectionMod {
       __obj.asInstanceOf[Projection]
     }
     
-    extension [Self <: Projection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
       
       inline def setNonKeyAttributes(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "NonKeyAttributes", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object typesProjectionMod {
       __obj.asInstanceOf[UnmarshalledProjection]
     }
     
-    extension [Self <: UnmarshalledProjection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledProjection] (val x: Self) extends AnyVal {
       
       inline def setNonKeyAttributes(value: js.Array[String]): Self = StObject.set(x, "NonKeyAttributes", value.asInstanceOf[js.Any])
       

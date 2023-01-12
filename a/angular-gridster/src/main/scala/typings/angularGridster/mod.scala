@@ -107,7 +107,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[GridsterConfig]
         }
         
-        extension [Self <: GridsterConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GridsterConfig] (val x: Self) extends AnyVal {
           
           inline def setColWidth(value: String): Self = StObject.set(x, "colWidth", value.asInstanceOf[js.Any])
           
@@ -230,7 +231,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[StandardGridsterItem]
         }
         
-        extension [Self <: StandardGridsterItem](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: StandardGridsterItem] (val x: Self) extends AnyVal {
           
           inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
           

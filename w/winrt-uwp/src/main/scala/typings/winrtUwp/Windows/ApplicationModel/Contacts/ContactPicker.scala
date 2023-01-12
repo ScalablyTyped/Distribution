@@ -62,7 +62,8 @@ object ContactPicker {
     __obj.asInstanceOf[ContactPicker]
   }
   
-  extension [Self <: ContactPicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactPicker] (val x: Self) extends AnyVal {
     
     inline def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
     

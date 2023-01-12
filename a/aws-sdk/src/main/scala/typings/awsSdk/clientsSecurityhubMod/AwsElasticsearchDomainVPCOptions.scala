@@ -33,7 +33,8 @@ object AwsElasticsearchDomainVPCOptions {
     __obj.asInstanceOf[AwsElasticsearchDomainVPCOptions]
   }
   
-  extension [Self <: AwsElasticsearchDomainVPCOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElasticsearchDomainVPCOptions] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: NonEmptyStringList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

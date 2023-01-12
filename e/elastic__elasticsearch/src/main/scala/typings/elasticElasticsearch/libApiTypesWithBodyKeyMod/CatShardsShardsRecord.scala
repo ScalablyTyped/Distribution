@@ -501,7 +501,8 @@ object CatShardsShardsRecord {
     __obj.asInstanceOf[CatShardsShardsRecord]
   }
   
-  extension [Self <: CatShardsShardsRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatShardsShardsRecord] (val x: Self) extends AnyVal {
     
     inline def setBasi(value: String): Self = StObject.set(x, "basi", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object AudioWorkletNodeOptions {
     __obj.asInstanceOf[AudioWorkletNodeOptions]
   }
   
-  extension [Self <: AudioWorkletNodeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioWorkletNodeOptions] (val x: Self) extends AnyVal {
     
     inline def setNumberOfInputs(value: Double): Self = StObject.set(x, "numberOfInputs", value.asInstanceOf[js.Any])
     

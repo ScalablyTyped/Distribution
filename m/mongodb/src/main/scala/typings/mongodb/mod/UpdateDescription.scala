@@ -54,7 +54,8 @@ object UpdateDescription {
     __obj.asInstanceOf[UpdateDescription[TSchema]]
   }
   
-  extension [Self <: UpdateDescription[?], TSchema /* <: Document */](x: Self & UpdateDescription[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDescription[?], TSchema /* <: Document */] (val x: Self & UpdateDescription[TSchema]) extends AnyVal {
     
     inline def setDisambiguatedPaths(value: Document): Self = StObject.set(x, "disambiguatedPaths", value.asInstanceOf[js.Any])
     

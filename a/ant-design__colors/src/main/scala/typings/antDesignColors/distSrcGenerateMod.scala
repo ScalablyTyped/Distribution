@@ -28,7 +28,8 @@ object distSrcGenerateMod {
       __obj.asInstanceOf[Opts]
     }
     
-    extension [Self <: Opts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

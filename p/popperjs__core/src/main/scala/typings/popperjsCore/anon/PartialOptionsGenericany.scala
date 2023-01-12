@@ -23,7 +23,8 @@ object PartialOptionsGenericany {
     __obj.asInstanceOf[PartialOptionsGenericany]
   }
   
-  extension [Self <: PartialOptionsGenericany](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOptionsGenericany] (val x: Self) extends AnyVal {
     
     inline def setModifiers(value: js.Array[Any]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     

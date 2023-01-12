@@ -240,7 +240,8 @@ object ShapeLoadOptions {
     __obj.asInstanceOf[ShapeLoadOptions]
   }
   
-  extension [Self <: ShapeLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

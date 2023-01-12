@@ -19,7 +19,8 @@ object filters {
     __obj.asInstanceOf[filters]
   }
   
-  extension [Self <: filters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: filters] (val x: Self) extends AnyVal {
     
     inline def setDate(value: dateFilter): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

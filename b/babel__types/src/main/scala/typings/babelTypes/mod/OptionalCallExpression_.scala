@@ -37,7 +37,8 @@ object OptionalCallExpression_ {
     __obj.asInstanceOf[OptionalCallExpression_]
   }
   
-  extension [Self <: OptionalCallExpression_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionalCallExpression_] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

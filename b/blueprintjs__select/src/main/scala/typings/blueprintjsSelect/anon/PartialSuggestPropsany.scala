@@ -110,7 +110,8 @@ object PartialSuggestPropsany {
     __obj.asInstanceOf[PartialSuggestPropsany]
   }
   
-  extension [Self <: PartialSuggestPropsany](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSuggestPropsany] (val x: Self) extends AnyVal {
     
     inline def setActiveItem(value: Any | CreateNewItem): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
     

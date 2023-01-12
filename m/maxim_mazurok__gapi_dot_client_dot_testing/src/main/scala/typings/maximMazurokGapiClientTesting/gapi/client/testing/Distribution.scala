@@ -19,7 +19,8 @@ object Distribution {
     __obj.asInstanceOf[Distribution]
   }
   
-  extension [Self <: Distribution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Distribution] (val x: Self) extends AnyVal {
     
     inline def setMarketShare(value: Double): Self = StObject.set(x, "marketShare", value.asInstanceOf[js.Any])
     

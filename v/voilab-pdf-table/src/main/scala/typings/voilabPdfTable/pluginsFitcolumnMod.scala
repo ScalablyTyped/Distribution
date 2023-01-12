@@ -49,7 +49,8 @@ object pluginsFitcolumnMod extends Shortcut {
       __obj.asInstanceOf[VoilabPdfTablePluginFitColumnConf[T]]
     }
     
-    extension [Self <: VoilabPdfTablePluginFitColumnConf[?], T](x: Self & VoilabPdfTablePluginFitColumnConf[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoilabPdfTablePluginFitColumnConf[?], T] (val x: Self & VoilabPdfTablePluginFitColumnConf[T]) extends AnyVal {
       
       inline def setColumn(value: /* keyof T */ String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

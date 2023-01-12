@@ -401,7 +401,8 @@ object sapUiUnifiedContentSwitcherMod {
       __obj.asInstanceOf[ContentSwitcherSettings]
     }
     
-    extension [Self <: ContentSwitcherSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentSwitcherSettings] (val x: Self) extends AnyVal {
       
       inline def setActiveContent(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "activeContent", value.asInstanceOf[js.Any])
       

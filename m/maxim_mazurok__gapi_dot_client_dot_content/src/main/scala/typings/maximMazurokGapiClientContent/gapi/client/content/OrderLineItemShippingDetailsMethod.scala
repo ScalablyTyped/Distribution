@@ -25,7 +25,8 @@ object OrderLineItemShippingDetailsMethod {
     __obj.asInstanceOf[OrderLineItemShippingDetailsMethod]
   }
   
-  extension [Self <: OrderLineItemShippingDetailsMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderLineItemShippingDetailsMethod] (val x: Self) extends AnyVal {
     
     inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ScopeDescriptorScopeDescriptor {
     __obj.asInstanceOf[ScopeDescriptorScopeDescriptor]
   }
   
-  extension [Self <: ScopeDescriptorScopeDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScopeDescriptorScopeDescriptor] (val x: Self) extends AnyVal {
     
     inline def setScopeDescriptor(value: typings.atom.srcScopeDescriptorMod.ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
     

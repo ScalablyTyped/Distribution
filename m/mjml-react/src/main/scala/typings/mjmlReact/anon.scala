@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -58,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     }
@@ -77,7 +80,8 @@ object anon {
       __obj.asInstanceOf[ChildrenName]
     }
     
-    extension [Self <: ChildrenName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildrenName] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -100,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Condition]
     }
     
-    extension [Self <: Condition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -121,7 +126,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -142,7 +148,8 @@ object anon {
       __obj.asInstanceOf[Errors]
     }
     
-    extension [Self <: Errors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[MjmlError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -165,7 +172,8 @@ object anon {
       __obj.asInstanceOf[Html]
     }
     
-    extension [Self <: Html](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
       
       inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -188,7 +196,8 @@ object anon {
       __obj.asInstanceOf[Inline]
     }
     
-    extension [Self <: Inline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inline] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -215,7 +224,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -238,7 +248,8 @@ object anon {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -259,7 +270,8 @@ object anon {
       __obj.asInstanceOf[Src]
     }
     
-    extension [Self <: Src](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Src] (val x: Self) extends AnyVal {
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }

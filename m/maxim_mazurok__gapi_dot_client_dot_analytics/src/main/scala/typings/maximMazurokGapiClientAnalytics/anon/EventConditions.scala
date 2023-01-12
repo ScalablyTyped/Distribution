@@ -19,7 +19,8 @@ object EventConditions {
     __obj.asInstanceOf[EventConditions]
   }
   
-  extension [Self <: EventConditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventConditions] (val x: Self) extends AnyVal {
     
     inline def setEventConditions(value: js.Array[ComparisonType]): Self = StObject.set(x, "eventConditions", value.asInstanceOf[js.Any])
     

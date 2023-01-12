@@ -43,7 +43,8 @@ object PickImplmissingActionPart {
     __obj.asInstanceOf[PickImplmissingActionPart]
   }
   
-  extension [Self <: PickImplmissingActionPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplmissingActionPart] (val x: Self) extends AnyVal {
     
     inline def setBeforeSend(value: String): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
     

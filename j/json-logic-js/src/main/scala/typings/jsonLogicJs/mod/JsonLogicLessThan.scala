@@ -22,7 +22,8 @@ object JsonLogicLessThan {
     __obj.asInstanceOf[JsonLogicLessThan[AddOps]]
   }
   
-  extension [Self <: JsonLogicLessThan[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicLessThan[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicLessThan[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicLessThan[AddOps]) extends AnyVal {
     
     inline def setLessthansign(
       value: (js.Tuple2[RulesLogic[AddOps], RulesLogic[AddOps]]) | (js.Tuple3[RulesLogic[AddOps], RulesLogic[AddOps], RulesLogic[AddOps]])

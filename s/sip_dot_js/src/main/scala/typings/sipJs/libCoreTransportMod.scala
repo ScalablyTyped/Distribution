@@ -34,7 +34,8 @@ object libCoreTransportMod {
       __obj.asInstanceOf[Transport]
     }
     
-    extension [Self <: Transport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       

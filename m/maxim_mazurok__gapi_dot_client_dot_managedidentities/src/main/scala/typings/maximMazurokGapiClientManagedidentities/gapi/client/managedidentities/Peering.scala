@@ -45,7 +45,8 @@ object Peering {
     __obj.asInstanceOf[Peering]
   }
   
-  extension [Self <: Peering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Peering] (val x: Self) extends AnyVal {
     
     inline def setAuthorizedNetwork(value: String): Self = StObject.set(x, "authorizedNetwork", value.asInstanceOf[js.Any])
     

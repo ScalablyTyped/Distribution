@@ -88,7 +88,8 @@ object tileRangeMod {
       __obj.asInstanceOf[TileRange]
     }
     
-    extension [Self <: TileRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileRange] (val x: Self) extends AnyVal {
       
       inline def setContains(value: TileCoord => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       

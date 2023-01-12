@@ -27,7 +27,8 @@ object SpecUtilsCommonCatQueryParameters {
     __obj.asInstanceOf[SpecUtilsCommonCatQueryParameters]
   }
   
-  extension [Self <: SpecUtilsCommonCatQueryParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecUtilsCommonCatQueryParameters] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

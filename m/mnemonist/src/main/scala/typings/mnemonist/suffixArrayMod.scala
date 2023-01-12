@@ -81,7 +81,8 @@ object suffixArrayMod {
       __obj.asInstanceOf[SuffixArray]
     }
     
-    extension [Self <: SuffixArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuffixArray] (val x: Self) extends AnyVal {
       
       inline def setArray(value: js.Array[Double]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       

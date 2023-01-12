@@ -33,7 +33,8 @@ object ListEventSourceMappingsRequest {
     __obj.asInstanceOf[ListEventSourceMappingsRequest]
   }
   
-  extension [Self <: ListEventSourceMappingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEventSourceMappingsRequest] (val x: Self) extends AnyVal {
     
     inline def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
     

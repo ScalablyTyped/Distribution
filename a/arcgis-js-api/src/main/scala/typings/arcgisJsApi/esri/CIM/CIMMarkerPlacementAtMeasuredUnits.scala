@@ -35,7 +35,8 @@ object CIMMarkerPlacementAtMeasuredUnits {
     __obj.asInstanceOf[CIMMarkerPlacementAtMeasuredUnits]
   }
   
-  extension [Self <: CIMMarkerPlacementAtMeasuredUnits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMarkerPlacementAtMeasuredUnits] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

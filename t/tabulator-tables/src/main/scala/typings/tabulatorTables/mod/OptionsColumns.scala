@@ -154,7 +154,8 @@ object OptionsColumns {
     __obj.asInstanceOf[OptionsColumns]
   }
   
-  extension [Self <: OptionsColumns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsColumns] (val x: Self) extends AnyVal {
     
     inline def setAutoColumns(value: Boolean): Self = StObject.set(x, "autoColumns", value.asInstanceOf[js.Any])
     

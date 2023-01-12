@@ -18,7 +18,8 @@ object DataTables {
       __obj.asInstanceOf[Api]
     }
     
-    extension [Self <: Api](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
       
       inline def setColReorder(value: Move): Self = StObject.set(x, "colReorder", value.asInstanceOf[js.Any])
     }
@@ -58,7 +59,8 @@ object DataTables {
       __obj.asInstanceOf[ColReorderSettings]
     }
     
-    extension [Self <: ColReorderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColReorderSettings] (val x: Self) extends AnyVal {
       
       inline def setFixedColumnsLeft(value: Double): Self = StObject.set(x, "fixedColumnsLeft", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object DataTables {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setColReorder(value: Boolean | ColReorderSettings): Self = StObject.set(x, "colReorder", value.asInstanceOf[js.Any])
       

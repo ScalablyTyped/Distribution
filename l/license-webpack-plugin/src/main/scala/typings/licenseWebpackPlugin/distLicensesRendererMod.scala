@@ -23,7 +23,8 @@ object distLicensesRendererMod {
       __obj.asInstanceOf[LicensesRenderer]
     }
     
-    extension [Self <: LicensesRenderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LicensesRenderer] (val x: Self) extends AnyVal {
       
       inline def setRenderBanner(value: (String, js.Array[LicenseIdentifiedModule]) => String): Self = StObject.set(x, "renderBanner", js.Any.fromFunction2(value))
       

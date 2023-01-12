@@ -16,7 +16,8 @@ object FieldStatsResponseIndex {
     __obj.asInstanceOf[FieldStatsResponseIndex]
   }
   
-  extension [Self <: FieldStatsResponseIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldStatsResponseIndex] (val x: Self) extends AnyVal {
     
     inline def setFields(value: StringDictionary[FieldStatsResponseField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
   }

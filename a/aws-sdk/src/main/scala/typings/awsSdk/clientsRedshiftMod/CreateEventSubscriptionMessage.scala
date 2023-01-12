@@ -53,7 +53,8 @@ object CreateEventSubscriptionMessage {
     __obj.asInstanceOf[CreateEventSubscriptionMessage]
   }
   
-  extension [Self <: CreateEventSubscriptionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEventSubscriptionMessage] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: BooleanOptional): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

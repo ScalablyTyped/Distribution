@@ -24,7 +24,8 @@ object distTypesSignatureMod {
       __obj.asInstanceOf[EventSigner]
     }
     
-    extension [Self <: EventSigner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventSigner] (val x: Self) extends AnyVal {
       
       inline def setSign(value: (FormattedEvent, EventSigningArguments) => js.Promise[String]): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
     }
@@ -43,7 +44,8 @@ object distTypesSignatureMod {
       __obj.asInstanceOf[EventSigningArguments]
     }
     
-    extension [Self <: EventSigningArguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventSigningArguments] (val x: Self) extends AnyVal {
       
       inline def setPriorSignature(value: String): Self = StObject.set(x, "priorSignature", value.asInstanceOf[js.Any])
     }
@@ -62,7 +64,8 @@ object distTypesSignatureMod {
       __obj.asInstanceOf[FormattedEvent]
     }
     
-    extension [Self <: FormattedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormattedEvent] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.typedarray.Uint8Array): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -113,7 +116,8 @@ object distTypesSignatureMod {
       __obj.asInstanceOf[RequestPresigningArguments]
     }
     
-    extension [Self <: RequestPresigningArguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestPresigningArguments] (val x: Self) extends AnyVal {
       
       inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
@@ -163,7 +167,8 @@ object distTypesSignatureMod {
       __obj.asInstanceOf[RequestSigningArguments]
     }
     
-    extension [Self <: RequestSigningArguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestSigningArguments] (val x: Self) extends AnyVal {
       
       inline def setSignableHeaders(value: Set[String]): Self = StObject.set(x, "signableHeaders", value.asInstanceOf[js.Any])
       
@@ -204,7 +209,8 @@ object distTypesSignatureMod {
       __obj.asInstanceOf[SigningArguments]
     }
     
-    extension [Self <: SigningArguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SigningArguments] (val x: Self) extends AnyVal {
       
       inline def setSigningDate(value: DateInput): Self = StObject.set(x, "signingDate", value.asInstanceOf[js.Any])
       

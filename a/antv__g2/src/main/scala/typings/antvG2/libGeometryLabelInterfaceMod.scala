@@ -72,7 +72,8 @@ object libGeometryLabelInterfaceMod {
       __obj.asInstanceOf[LabelCfg]
     }
     
-    extension [Self <: LabelCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelCfg] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: AnimateOption | `false`): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object libGeometryLabelInterfaceMod {
       __obj.asInstanceOf[LabelItem]
     }
     
-    extension [Self <: LabelItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelItem] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -278,7 +280,8 @@ object libGeometryLabelInterfaceMod {
       __obj.asInstanceOf[LabelPointCfg]
     }
     
-    extension [Self <: LabelPointCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelPointCfg] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -343,7 +346,8 @@ object libGeometryLabelInterfaceMod {
       __obj.asInstanceOf[PolarLabelItem]
     }
     
-    extension [Self <: PolarLabelItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolarLabelItem] (val x: Self) extends AnyVal {
       
       inline def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
       

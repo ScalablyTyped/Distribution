@@ -29,7 +29,8 @@ object ChartCategoryAxisItemAutoBaseUnitSteps {
     __obj.asInstanceOf[ChartCategoryAxisItemAutoBaseUnitSteps]
   }
   
-  extension [Self <: ChartCategoryAxisItemAutoBaseUnitSteps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartCategoryAxisItemAutoBaseUnitSteps] (val x: Self) extends AnyVal {
     
     inline def setDays(value: Any): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     

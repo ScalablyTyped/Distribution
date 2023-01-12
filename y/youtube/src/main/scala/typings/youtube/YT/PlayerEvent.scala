@@ -18,7 +18,8 @@ object PlayerEvent {
     __obj.asInstanceOf[PlayerEvent]
   }
   
-  extension [Self <: PlayerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerEvent] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: Player): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

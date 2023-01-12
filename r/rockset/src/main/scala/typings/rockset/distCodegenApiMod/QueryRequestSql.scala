@@ -48,7 +48,8 @@ object QueryRequestSql {
     __obj.asInstanceOf[QueryRequestSql]
   }
   
-  extension [Self <: QueryRequestSql](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRequestSql] (val x: Self) extends AnyVal {
     
     inline def setDefault_row_limit(value: Double): Self = StObject.set(x, "default_row_limit", value.asInstanceOf[js.Any])
     

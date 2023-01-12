@@ -25,7 +25,8 @@ object IListView {
     __obj.asInstanceOf[IListView]
   }
   
-  extension [Self <: IListView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListView] (val x: Self) extends AnyVal {
     
     inline def setReconfigure(value: (/* store */ js.UndefOr[IStore], /* columns */ js.UndefOr[Array]) => Unit): Self = StObject.set(x, "reconfigure", js.Any.fromFunction2(value))
     

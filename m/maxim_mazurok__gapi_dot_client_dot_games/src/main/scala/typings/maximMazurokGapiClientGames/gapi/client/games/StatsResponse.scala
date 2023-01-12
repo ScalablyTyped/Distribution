@@ -52,7 +52,8 @@ object StatsResponse {
     __obj.asInstanceOf[StatsResponse]
   }
   
-  extension [Self <: StatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatsResponse] (val x: Self) extends AnyVal {
     
     inline def setAvg_session_length_minutes(value: Double): Self = StObject.set(x, "avg_session_length_minutes", value.asInstanceOf[js.Any])
     

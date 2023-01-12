@@ -34,7 +34,8 @@ object SearchViewModelSearchResult {
     __obj.asInstanceOf[SearchViewModelSearchResult]
   }
   
-  extension [Self <: SearchViewModelSearchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchViewModelSearchResult] (val x: Self) extends AnyVal {
     
     inline def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     

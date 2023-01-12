@@ -65,7 +65,8 @@ object libBindingsHttpReceiverStructuredMod {
       __obj.asInstanceOf[CloudEvent]
     }
     
-    extension [Self <: CloudEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudEvent] (val x: Self) extends AnyVal {
       
       inline def setCloudEvent(value: Instantiable1[/* event */ CE, typings.cloudeventsSdk.libCloudeventMod.CloudEvent]): Self = StObject.set(x, "CloudEvent", value.asInstanceOf[js.Any])
     }
@@ -113,7 +114,8 @@ object libBindingsHttpReceiverStructuredMod {
       __obj.asInstanceOf[StructuredHTTPReceiver]
     }
     
-    extension [Self <: StructuredHTTPReceiver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StructuredHTTPReceiver] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: (js.Object, js.Object) => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction2(value))
       

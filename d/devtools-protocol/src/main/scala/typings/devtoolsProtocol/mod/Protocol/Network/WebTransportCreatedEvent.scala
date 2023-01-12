@@ -33,7 +33,8 @@ object WebTransportCreatedEvent {
     __obj.asInstanceOf[WebTransportCreatedEvent]
   }
   
-  extension [Self <: WebTransportCreatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebTransportCreatedEvent] (val x: Self) extends AnyVal {
     
     inline def setInitiator(value: Initiator): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
     

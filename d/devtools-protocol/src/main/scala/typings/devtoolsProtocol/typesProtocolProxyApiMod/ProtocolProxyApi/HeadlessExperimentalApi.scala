@@ -37,7 +37,8 @@ object HeadlessExperimentalApi {
     __obj.asInstanceOf[HeadlessExperimentalApi]
   }
   
-  extension [Self <: HeadlessExperimentalApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadlessExperimentalApi] (val x: Self) extends AnyVal {
     
     inline def setBeginFrame(value: BeginFrameRequest => js.Promise[BeginFrameResponse]): Self = StObject.set(x, "beginFrame", js.Any.fromFunction1(value))
     

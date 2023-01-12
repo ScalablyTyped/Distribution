@@ -17,7 +17,8 @@ object HistoryListenerParameter {
     __obj.asInstanceOf[HistoryListenerParameter]
   }
   
-  extension [Self <: HistoryListenerParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryListenerParameter] (val x: Self) extends AnyVal {
     
     inline def setAction(value: HistoryActionType): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

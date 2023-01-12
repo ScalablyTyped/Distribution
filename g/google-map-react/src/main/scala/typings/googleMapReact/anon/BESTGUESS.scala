@@ -19,7 +19,8 @@ object BESTGUESS {
     __obj.asInstanceOf[BESTGUESS]
   }
   
-  extension [Self <: BESTGUESS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BESTGUESS] (val x: Self) extends AnyVal {
     
     inline def setBEST_GUESS(value: String): Self = StObject.set(x, "BEST_GUESS", value.asInstanceOf[js.Any])
     

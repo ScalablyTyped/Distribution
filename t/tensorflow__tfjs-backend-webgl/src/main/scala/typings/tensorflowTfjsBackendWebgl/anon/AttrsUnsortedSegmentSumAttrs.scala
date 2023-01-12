@@ -22,7 +22,8 @@ object AttrsUnsortedSegmentSumAttrs {
     __obj.asInstanceOf[AttrsUnsortedSegmentSumAttrs]
   }
   
-  extension [Self <: AttrsUnsortedSegmentSumAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsUnsortedSegmentSumAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: UnsortedSegmentSumAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

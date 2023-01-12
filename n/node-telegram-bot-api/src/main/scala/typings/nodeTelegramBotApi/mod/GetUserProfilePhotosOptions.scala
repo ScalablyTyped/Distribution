@@ -17,7 +17,8 @@ object GetUserProfilePhotosOptions {
     __obj.asInstanceOf[GetUserProfilePhotosOptions]
   }
   
-  extension [Self <: GetUserProfilePhotosOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUserProfilePhotosOptions] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

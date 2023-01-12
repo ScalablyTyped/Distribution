@@ -63,7 +63,8 @@ object libTypescriptElementsMarkerMod {
       __obj.asInstanceOf[MarkerProps]
     }
     
-    extension [Self <: MarkerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

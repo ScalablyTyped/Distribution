@@ -23,7 +23,8 @@ object LoadBalancerTlsCertificateDnsRecordCreationState {
     __obj.asInstanceOf[LoadBalancerTlsCertificateDnsRecordCreationState]
   }
   
-  extension [Self <: LoadBalancerTlsCertificateDnsRecordCreationState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadBalancerTlsCertificateDnsRecordCreationState] (val x: Self) extends AnyVal {
     
     inline def setCode(value: LoadBalancerTlsCertificateDnsRecordCreationStateCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

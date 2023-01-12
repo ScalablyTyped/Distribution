@@ -42,7 +42,8 @@ object IUserMultiFieldExpression {
     __obj.asInstanceOf[IUserMultiFieldExpression]
   }
   
-  extension [Self <: IUserMultiFieldExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUserMultiFieldExpression] (val x: Self) extends AnyVal {
     
     inline def setEqualTo(value: Any => IExpression): Self = StObject.set(x, "EqualTo", js.Any.fromFunction1(value))
     

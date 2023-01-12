@@ -17,7 +17,8 @@ object ILocalConstructedValueBlock {
     __obj.asInstanceOf[ILocalConstructedValueBlock]
   }
   
-  extension [Self <: ILocalConstructedValueBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocalConstructedValueBlock] (val x: Self) extends AnyVal {
     
     inline def setIsIndefiniteForm(value: scala.Boolean): Self = StObject.set(x, "isIndefiniteForm", value.asInstanceOf[js.Any])
     

@@ -98,7 +98,8 @@ object RenderParameters {
     __obj.asInstanceOf[RenderParameters]
   }
   
-  extension [Self <: RenderParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderParameters] (val x: Self) extends AnyVal {
     
     inline def setAnnotationCanvasMap(value: Map[String, HTMLCanvasElement]): Self = StObject.set(x, "annotationCanvasMap", value.asInstanceOf[js.Any])
     

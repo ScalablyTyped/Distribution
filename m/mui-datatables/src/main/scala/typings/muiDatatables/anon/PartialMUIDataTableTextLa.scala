@@ -22,7 +22,8 @@ object PartialMUIDataTableTextLa {
     __obj.asInstanceOf[PartialMUIDataTableTextLa]
   }
   
-  extension [Self <: PartialMUIDataTableTextLa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMUIDataTableTextLa] (val x: Self) extends AnyVal {
     
     inline def setColumnHeaderTooltip(value: /* column */ MUIDataTableColumn => String): Self = StObject.set(x, "columnHeaderTooltip", js.Any.fromFunction1(value))
     

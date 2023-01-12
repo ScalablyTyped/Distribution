@@ -62,7 +62,8 @@ object distUtilsStoreMockMod {
       __obj.asInstanceOf[MockStore[S, T]]
     }
     
-    extension [Self <: MockStore[?, ?], S, T /* <: AnyAction */](x: Self & (MockStore[S, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockStore[?, ?], S, T /* <: AnyAction */] (val x: Self & (MockStore[S, T])) extends AnyVal {
       
       inline def setDispatch(value: /* action */ Any => Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       

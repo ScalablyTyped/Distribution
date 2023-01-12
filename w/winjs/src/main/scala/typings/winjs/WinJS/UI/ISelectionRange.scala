@@ -37,7 +37,8 @@ object ISelectionRange {
     __obj.asInstanceOf[ISelectionRange]
   }
   
-  extension [Self <: ISelectionRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISelectionRange] (val x: Self) extends AnyVal {
     
     inline def setFirstIndex(value: Double): Self = StObject.set(x, "firstIndex", value.asInstanceOf[js.Any])
     

@@ -149,7 +149,8 @@ object distCoreRedirectHandlerMod {
       __obj.asInstanceOf[LocationAdapter]
     }
     
-    extension [Self <: LocationAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationAdapter] (val x: Self) extends AnyVal {
       
       inline def setAssign(value: String => Unit): Self = StObject.set(x, "assign", js.Any.fromFunction1(value))
     }
@@ -168,7 +169,8 @@ object distCoreRedirectHandlerMod {
       __obj.asInstanceOf[RedirectHandlerEventMap]
     }
     
-    extension [Self <: RedirectHandlerEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectHandlerEventMap] (val x: Self) extends AnyVal {
       
       inline def setRedirect(value: RedirectEvent): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     }
@@ -188,7 +190,8 @@ object distCoreRedirectHandlerMod {
         __obj.asInstanceOf[typings.naja.distCoreRedirectHandlerMod.najaDistNajaAugmentingMod.Options]
       }
       
-      extension [Self <: typings.naja.distCoreRedirectHandlerMod.najaDistNajaAugmentingMod.Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.naja.distCoreRedirectHandlerMod.najaDistNajaAugmentingMod.Options] (val x: Self) extends AnyVal {
         
         inline def setForceRedirect(value: Boolean): Self = StObject.set(x, "forceRedirect", value.asInstanceOf[js.Any])
         
@@ -207,7 +210,8 @@ object distCoreRedirectHandlerMod {
         __obj.asInstanceOf[Payload]
       }
       
-      extension [Self <: Payload](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
         
         inline def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
         

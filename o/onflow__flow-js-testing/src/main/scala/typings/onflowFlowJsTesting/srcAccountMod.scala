@@ -40,7 +40,8 @@ object srcAccountMod {
       __obj.asInstanceOf[KeyObject]
     }
     
-    extension [Self <: KeyObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyObject] (val x: Self) extends AnyVal {
       
       inline def setHashAlgorithm(value: ValueOf[HashAlgorithm]): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object srcAccountMod {
       __obj.asInstanceOf[SignerInfo]
     }
     
-    extension [Self <: SignerInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignerInfo] (val x: Self) extends AnyVal {
       
       inline def setAddr(value: Address): Self = StObject.set(x, "addr", value.asInstanceOf[js.Any])
       

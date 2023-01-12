@@ -19,7 +19,8 @@ object IGradientDef {
     __obj.asInstanceOf[IGradientDef]
   }
   
-  extension [Self <: IGradientDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGradientDef] (val x: Self) extends AnyVal {
     
     inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     

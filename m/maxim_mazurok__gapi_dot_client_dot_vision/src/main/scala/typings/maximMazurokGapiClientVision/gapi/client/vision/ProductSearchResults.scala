@@ -28,7 +28,8 @@ object ProductSearchResults {
     __obj.asInstanceOf[ProductSearchResults]
   }
   
-  extension [Self <: ProductSearchResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductSearchResults] (val x: Self) extends AnyVal {
     
     inline def setIndexTime(value: String): Self = StObject.set(x, "indexTime", value.asInstanceOf[js.Any])
     

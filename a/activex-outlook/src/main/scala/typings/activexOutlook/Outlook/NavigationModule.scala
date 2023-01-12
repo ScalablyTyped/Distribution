@@ -43,7 +43,8 @@ object NavigationModule {
     __obj.asInstanceOf[NavigationModule]
   }
   
-  extension [Self <: NavigationModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationModule] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

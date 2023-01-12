@@ -18,7 +18,8 @@ object GreengrassV2 {
     __obj.asInstanceOf[GreengrassV2]
   }
   
-  extension [Self <: GreengrassV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GreengrassV2] (val x: Self) extends AnyVal {
     
     inline def setCoreDeviceThingName(value: CoreDeviceThingName): Self = StObject.set(x, "coreDeviceThingName", value.asInstanceOf[js.Any])
   }

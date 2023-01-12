@@ -41,7 +41,8 @@ object UploadFileOptions {
     __obj.asInstanceOf[UploadFileOptions]
   }
   
-  extension [Self <: UploadFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadFileOptions] (val x: Self) extends AnyVal {
     
     inline def setBegin(value: /* res */ UploadBeginCallbackResult => Unit): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
     

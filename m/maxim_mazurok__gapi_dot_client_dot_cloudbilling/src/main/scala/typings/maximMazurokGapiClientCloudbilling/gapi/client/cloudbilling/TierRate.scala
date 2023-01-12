@@ -19,7 +19,8 @@ object TierRate {
     __obj.asInstanceOf[TierRate]
   }
   
-  extension [Self <: TierRate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TierRate] (val x: Self) extends AnyVal {
     
     inline def setStartUsageAmount(value: Double): Self = StObject.set(x, "startUsageAmount", value.asInstanceOf[js.Any])
     

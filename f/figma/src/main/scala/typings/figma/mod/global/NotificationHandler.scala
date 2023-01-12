@@ -15,7 +15,8 @@ object NotificationHandler {
     __obj.asInstanceOf[NotificationHandler]
   }
   
-  extension [Self <: NotificationHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationHandler] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
   }

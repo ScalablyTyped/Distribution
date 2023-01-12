@@ -23,7 +23,8 @@ object TooltipPositionerMap {
     __obj.asInstanceOf[TooltipPositionerMap]
   }
   
-  extension [Self <: TooltipPositionerMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipPositionerMap] (val x: Self) extends AnyVal {
     
     inline def setAverage(value: TooltipPositionerFunction[ChartType]): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object ApprovalStage {
     __obj.asInstanceOf[ApprovalStage]
   }
   
-  extension [Self <: ApprovalStage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApprovalStage] (val x: Self) extends AnyVal {
     
     inline def setAssignedToMe(value: NullableOption[Boolean]): Self = StObject.set(x, "assignedToMe", value.asInstanceOf[js.Any])
     

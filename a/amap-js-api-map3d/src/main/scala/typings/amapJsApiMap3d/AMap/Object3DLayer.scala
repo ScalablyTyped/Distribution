@@ -43,7 +43,8 @@ object Object3DLayer {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       

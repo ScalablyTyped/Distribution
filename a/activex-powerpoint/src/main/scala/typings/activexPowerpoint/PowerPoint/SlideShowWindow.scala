@@ -53,7 +53,8 @@ object SlideShowWindow {
     __obj.asInstanceOf[SlideShowWindow]
   }
   
-  extension [Self <: SlideShowWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideShowWindow] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     

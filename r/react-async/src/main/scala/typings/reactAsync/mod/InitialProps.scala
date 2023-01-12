@@ -18,7 +18,8 @@ object InitialProps {
     __obj.asInstanceOf[InitialProps[T]]
   }
   
-  extension [Self <: InitialProps[?], T](x: Self & InitialProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialProps[?], T] (val x: Self & InitialProps[T]) extends AnyVal {
     
     inline def setChildren(value: InitialChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

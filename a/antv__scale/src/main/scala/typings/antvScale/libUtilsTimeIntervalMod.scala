@@ -107,7 +107,8 @@ object libUtilsTimeIntervalMod {
       __obj.asInstanceOf[Interval]
     }
     
-    extension [Self <: Interval](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interval] (val x: Self) extends AnyVal {
       
       inline def setCeil(value: TimeTransform): Self = StObject.set(x, "ceil", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object libUtilsTimeIntervalMod {
       __obj.asInstanceOf[IntervalMap]
     }
     
-    extension [Self <: IntervalMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntervalMap] (val x: Self) extends AnyVal {
       
       inline def setDay(value: Interval): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object distSrcOnStageSystemDistComponentsNotificationsFillLargeMod extends Short
       __obj.asInstanceOf[NotificationsFillLargeProps]
     }
     
-    extension [Self <: NotificationsFillLargeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationsFillLargeProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

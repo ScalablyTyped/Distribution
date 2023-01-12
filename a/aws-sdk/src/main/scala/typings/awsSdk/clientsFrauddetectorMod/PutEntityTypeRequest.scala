@@ -28,7 +28,8 @@ object PutEntityTypeRequest {
     __obj.asInstanceOf[PutEntityTypeRequest]
   }
   
-  extension [Self <: PutEntityTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutEntityTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

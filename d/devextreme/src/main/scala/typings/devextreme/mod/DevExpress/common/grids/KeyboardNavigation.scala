@@ -35,7 +35,8 @@ object KeyboardNavigation {
     __obj.asInstanceOf[KeyboardNavigation]
   }
   
-  extension [Self <: KeyboardNavigation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardNavigation] (val x: Self) extends AnyVal {
     
     inline def setEditOnKeyPress(value: Boolean): Self = StObject.set(x, "editOnKeyPress", value.asInstanceOf[js.Any])
     

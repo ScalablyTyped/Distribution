@@ -86,7 +86,8 @@ object AmountConfirmed {
     __obj.asInstanceOf[AmountConfirmed]
   }
   
-  extension [Self <: AmountConfirmed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmountConfirmed] (val x: Self) extends AnyVal {
     
     inline def setAmountConfirmed(value: Double): Self = StObject.set(x, "AmountConfirmed", value.asInstanceOf[js.Any])
     

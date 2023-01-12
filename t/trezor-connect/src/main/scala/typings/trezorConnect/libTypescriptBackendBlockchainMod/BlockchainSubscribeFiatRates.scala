@@ -17,7 +17,8 @@ object BlockchainSubscribeFiatRates {
     __obj.asInstanceOf[BlockchainSubscribeFiatRates]
   }
   
-  extension [Self <: BlockchainSubscribeFiatRates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockchainSubscribeFiatRates] (val x: Self) extends AnyVal {
     
     inline def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
     

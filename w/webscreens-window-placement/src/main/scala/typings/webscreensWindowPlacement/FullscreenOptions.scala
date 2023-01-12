@@ -16,7 +16,8 @@ object FullscreenOptions {
     __obj.asInstanceOf[FullscreenOptions]
   }
   
-  extension [Self <: FullscreenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullscreenOptions] (val x: Self) extends AnyVal {
     
     inline def setScreen(value: ScreenDetailed): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     

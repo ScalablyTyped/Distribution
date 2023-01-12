@@ -15,7 +15,8 @@ object FrameCreatedDetails {
     __obj.asInstanceOf[FrameCreatedDetails]
   }
   
-  extension [Self <: FrameCreatedDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameCreatedDetails] (val x: Self) extends AnyVal {
     
     inline def setFrame(value: WebFrameMain_): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
   }

@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsTriangleLargeSmallMod extends Shortcut {
       __obj.asInstanceOf[TriangleLargeSmallProps]
     }
     
-    extension [Self <: TriangleLargeSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriangleLargeSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

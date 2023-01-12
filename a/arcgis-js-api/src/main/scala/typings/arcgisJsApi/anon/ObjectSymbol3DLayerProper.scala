@@ -115,7 +115,8 @@ object ObjectSymbol3DLayerProper {
     __obj.asInstanceOf[ObjectSymbol3DLayerProper]
   }
   
-  extension [Self <: ObjectSymbol3DLayerProper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectSymbol3DLayerProper] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: center_ | top_ | bottom_ | origin | relative_): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

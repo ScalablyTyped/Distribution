@@ -33,7 +33,8 @@ object AgnosticRouteMatch {
     __obj.asInstanceOf[AgnosticRouteMatch[ParamKey, RouteObjectType]]
   }
   
-  extension [Self <: AgnosticRouteMatch[?, ?], ParamKey /* <: String */, RouteObjectType /* <: AgnosticRouteObject */](x: Self & (AgnosticRouteMatch[ParamKey, RouteObjectType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgnosticRouteMatch[?, ?], ParamKey /* <: String */, RouteObjectType /* <: AgnosticRouteObject */] (val x: Self & (AgnosticRouteMatch[ParamKey, RouteObjectType])) extends AnyVal {
     
     inline def setParams(value: Params[ParamKey]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

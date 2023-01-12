@@ -266,7 +266,8 @@ object PieProps {
     __obj.asInstanceOf[PieProps]
   }
   
-  extension [Self <: PieProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieProps] (val x: Self) extends AnyVal {
     
     inline def setActiveIndex(value: Double | js.Array[Double]): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

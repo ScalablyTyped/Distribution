@@ -15,7 +15,8 @@ object ZIndexPopup {
     __obj.asInstanceOf[ZIndexPopup]
   }
   
-  extension [Self <: ZIndexPopup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZIndexPopup] (val x: Self) extends AnyVal {
     
     inline def setZIndexPopup(value: Double): Self = StObject.set(x, "zIndexPopup", value.asInstanceOf[js.Any])
   }

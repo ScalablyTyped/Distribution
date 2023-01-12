@@ -71,7 +71,8 @@ object PickImplnamePartialPickIm {
     __obj.asInstanceOf[PickImplnamePartialPickIm]
   }
   
-  extension [Self <: PickImplnamePartialPickIm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplnamePartialPickIm] (val x: Self) extends AnyVal {
     
     inline def setBeforeChecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeChecked", value.asInstanceOf[js.Any])
     

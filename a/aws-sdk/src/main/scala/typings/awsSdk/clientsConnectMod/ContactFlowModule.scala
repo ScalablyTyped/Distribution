@@ -53,7 +53,8 @@ object ContactFlowModule {
     __obj.asInstanceOf[ContactFlowModule]
   }
   
-  extension [Self <: ContactFlowModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactFlowModule] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

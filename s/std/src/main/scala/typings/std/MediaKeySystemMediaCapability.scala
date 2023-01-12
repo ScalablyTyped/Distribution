@@ -22,7 +22,8 @@ object MediaKeySystemMediaCapability {
     __obj.asInstanceOf[MediaKeySystemMediaCapability]
   }
   
-  extension [Self <: MediaKeySystemMediaCapability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaKeySystemMediaCapability] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: java.lang.String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

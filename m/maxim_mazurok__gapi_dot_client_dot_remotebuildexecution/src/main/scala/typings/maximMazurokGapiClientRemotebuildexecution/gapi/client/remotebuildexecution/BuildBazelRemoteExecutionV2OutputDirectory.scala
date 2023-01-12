@@ -22,7 +22,8 @@ object BuildBazelRemoteExecutionV2OutputDirectory {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2OutputDirectory]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2OutputDirectory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2OutputDirectory] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

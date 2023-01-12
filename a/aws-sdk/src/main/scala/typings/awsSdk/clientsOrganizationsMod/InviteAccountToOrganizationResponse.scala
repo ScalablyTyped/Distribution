@@ -18,7 +18,8 @@ object InviteAccountToOrganizationResponse {
     __obj.asInstanceOf[InviteAccountToOrganizationResponse]
   }
   
-  extension [Self <: InviteAccountToOrganizationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InviteAccountToOrganizationResponse] (val x: Self) extends AnyVal {
     
     inline def setHandshake(value: Handshake): Self = StObject.set(x, "Handshake", value.asInstanceOf[js.Any])
     

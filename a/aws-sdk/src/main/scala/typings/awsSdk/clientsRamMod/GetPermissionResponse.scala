@@ -18,7 +18,8 @@ object GetPermissionResponse {
     __obj.asInstanceOf[GetPermissionResponse]
   }
   
-  extension [Self <: GetPermissionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPermissionResponse] (val x: Self) extends AnyVal {
     
     inline def setPermission(value: ResourceSharePermissionDetail): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     

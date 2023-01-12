@@ -22,7 +22,8 @@ object OpenLink {
     __obj.asInstanceOf[OpenLink]
   }
   
-  extension [Self <: OpenLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenLink] (val x: Self) extends AnyVal {
     
     inline def setLoadIndicator(value: String): Self = StObject.set(x, "loadIndicator", value.asInstanceOf[js.Any])
     

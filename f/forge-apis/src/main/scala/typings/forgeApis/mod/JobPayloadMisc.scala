@@ -17,7 +17,8 @@ object JobPayloadMisc {
     __obj.asInstanceOf[JobPayloadMisc]
   }
   
-  extension [Self <: JobPayloadMisc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobPayloadMisc] (val x: Self) extends AnyVal {
     
     inline def setWorkflow(value: String): Self = StObject.set(x, "workflow", value.asInstanceOf[js.Any])
     

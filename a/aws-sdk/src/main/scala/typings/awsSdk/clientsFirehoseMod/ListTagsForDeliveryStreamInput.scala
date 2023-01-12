@@ -28,7 +28,8 @@ object ListTagsForDeliveryStreamInput {
     __obj.asInstanceOf[ListTagsForDeliveryStreamInput]
   }
   
-  extension [Self <: ListTagsForDeliveryStreamInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagsForDeliveryStreamInput] (val x: Self) extends AnyVal {
     
     inline def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
     

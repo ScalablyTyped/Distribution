@@ -33,7 +33,8 @@ object CreateRoleAliasRequest {
     __obj.asInstanceOf[CreateRoleAliasRequest]
   }
   
-  extension [Self <: CreateRoleAliasRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRoleAliasRequest] (val x: Self) extends AnyVal {
     
     inline def setCredentialDurationSeconds(value: CredentialDurationSeconds): Self = StObject.set(x, "credentialDurationSeconds", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object GenericErrorEvent {
     __obj.asInstanceOf[GenericErrorEvent]
   }
   
-  extension [Self <: GenericErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: capability | mediasource | key_session | key_message): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

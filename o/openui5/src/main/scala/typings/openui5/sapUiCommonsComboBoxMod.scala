@@ -499,7 +499,8 @@ object sapUiCommonsComboBoxMod {
       __obj.asInstanceOf[ComboBoxSettings]
     }
     
-    extension [Self <: ComboBoxSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComboBoxSettings] (val x: Self) extends AnyVal {
       
       inline def setDisplaySecondaryValues(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "displaySecondaryValues", value.asInstanceOf[js.Any])
       

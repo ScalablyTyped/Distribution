@@ -29,7 +29,8 @@ object distSrcSocketToConnMod {
       __obj.asInstanceOf[ToMultiaddrConnectionOptions]
     }
     
-    extension [Self <: ToMultiaddrConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToMultiaddrConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setRemoteAddr(value: Multiaddr_): Self = StObject.set(x, "remoteAddr", value.asInstanceOf[js.Any])
     }

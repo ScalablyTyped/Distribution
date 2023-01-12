@@ -32,7 +32,8 @@ object TerminateThreadsRequest {
     __obj.asInstanceOf[TerminateThreadsRequest]
   }
   
-  extension [Self <: TerminateThreadsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminateThreadsRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: TerminateThreadsArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

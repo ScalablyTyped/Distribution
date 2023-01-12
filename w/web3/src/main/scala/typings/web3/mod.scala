@@ -118,7 +118,8 @@ object mod {
       __obj.asInstanceOf[Modules]
     }
     
-    extension [Self <: Modules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Modules] (val x: Self) extends AnyVal {
       
       inline def setBzz(value: Instantiable1[/* provider */ provider, Bzz]): Self = StObject.set(x, "Bzz", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object mod {
       __obj.asInstanceOf[Web3]
     }
     
-    extension [Self <: Web3](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Web3] (val x: Self) extends AnyVal {
       
       inline def setBatchRequest(value: Instantiable0[BatchRequest]): Self = StObject.set(x, "BatchRequest", value.asInstanceOf[js.Any])
       

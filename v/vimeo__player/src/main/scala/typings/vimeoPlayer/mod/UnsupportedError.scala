@@ -18,7 +18,8 @@ object UnsupportedError {
     __obj.asInstanceOf[UnsupportedError]
   }
   
-  extension [Self <: UnsupportedError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsupportedError] (val x: Self) extends AnyVal {
     
     inline def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.UnsupportedError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

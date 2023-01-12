@@ -44,7 +44,8 @@ object AttachmentBlock {
     __obj.asInstanceOf[AttachmentBlock]
   }
   
-  extension [Self <: AttachmentBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentBlock] (val x: Self) extends AnyVal {
     
     inline def setClass(value: Attachment): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

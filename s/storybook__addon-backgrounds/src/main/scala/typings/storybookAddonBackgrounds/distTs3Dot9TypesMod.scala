@@ -20,7 +20,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[Background]
     }
     
-    extension [Self <: Background](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[BackgroundSelectorItem]
     }
     
-    extension [Self <: BackgroundSelectorItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundSelectorItem] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[BackgroundsConfig]
     }
     
-    extension [Self <: BackgroundsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundsConfig] (val x: Self) extends AnyVal {
       
       inline def setBackgrounds(value: js.Array[Background]): Self = StObject.set(x, "backgrounds", value.asInstanceOf[js.Any])
       
@@ -119,7 +122,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[BackgroundsParameter]
     }
     
-    extension [Self <: BackgroundsParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundsParameter] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -148,7 +152,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[GlobalState]
     }
     
-    extension [Self <: GlobalState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalState] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

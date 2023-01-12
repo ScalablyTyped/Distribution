@@ -27,7 +27,8 @@ object InfoItem {
     __obj.asInstanceOf[InfoItem]
   }
   
-  extension [Self <: InfoItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfoItem] (val x: Self) extends AnyVal {
     
     inline def setFlair(value: String): Self = StObject.set(x, "flair", value.asInstanceOf[js.Any])
     

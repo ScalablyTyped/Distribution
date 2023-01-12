@@ -254,7 +254,8 @@ object OtherTwoZero {
     __obj.asInstanceOf[OtherTwoZero]
   }
   
-  extension [Self <: OtherTwoZero](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherTwoZero] (val x: Self) extends AnyVal {
     
     inline def setFew(
       value: js.Tuple18[

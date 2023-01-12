@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Compiler]
     }
     
-    extension [Self <: Compiler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compiler] (val x: Self) extends AnyVal {
       
       inline def setCompiler(value: typings.webpack.mod.Compiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[CompilerStats]
     }
     
-    extension [Self <: CompilerStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompilerStats] (val x: Self) extends AnyVal {
       
       inline def setCompiler(value: typings.webpack.mod.Compiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
@@ -59,7 +61,8 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: InitializedOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -80,7 +83,8 @@ object anon {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setCompiler(value: typings.webpack.mod.Compiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       

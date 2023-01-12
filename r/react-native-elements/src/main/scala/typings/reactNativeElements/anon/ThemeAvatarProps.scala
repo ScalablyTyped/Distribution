@@ -168,7 +168,8 @@ object ThemeAvatarProps {
     __obj.asInstanceOf[ThemeAvatarProps]
   }
   
-  extension [Self <: ThemeAvatarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeAvatarProps] (val x: Self) extends AnyVal {
     
     inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     

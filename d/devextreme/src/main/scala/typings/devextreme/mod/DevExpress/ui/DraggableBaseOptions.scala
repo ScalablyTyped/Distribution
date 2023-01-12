@@ -70,7 +70,8 @@ object DraggableBaseOptions {
     __obj.asInstanceOf[DraggableBaseOptions[TComponent]]
   }
   
-  extension [Self <: DraggableBaseOptions[?], TComponent](x: Self & DraggableBaseOptions[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableBaseOptions[?], TComponent] (val x: Self & DraggableBaseOptions[TComponent]) extends AnyVal {
     
     inline def setAutoScroll(value: Boolean): Self = StObject.set(x, "autoScroll", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ActionSheetPopup {
     __obj.asInstanceOf[ActionSheetPopup]
   }
   
-  extension [Self <: ActionSheetPopup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionSheetPopup] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: Double | String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

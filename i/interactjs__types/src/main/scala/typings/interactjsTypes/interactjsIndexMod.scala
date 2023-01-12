@@ -62,7 +62,8 @@ object interactjsIndexMod extends Shortcut {
       __obj.asInstanceOf[internalPluginTypes]
     }
     
-    extension [Self <: internalPluginTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: internalPluginTypes] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Install): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

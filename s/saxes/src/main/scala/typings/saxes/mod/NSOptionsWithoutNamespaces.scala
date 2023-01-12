@@ -25,7 +25,8 @@ object NSOptionsWithoutNamespaces {
     __obj.asInstanceOf[NSOptionsWithoutNamespaces]
   }
   
-  extension [Self <: NSOptionsWithoutNamespaces](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NSOptionsWithoutNamespaces] (val x: Self) extends AnyVal {
     
     inline def setAdditionalNamespaces(value: Unit): Self = StObject.set(x, "additionalNamespaces", value.asInstanceOf[js.Any])
     

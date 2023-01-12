@@ -96,7 +96,8 @@ object PickRemoveChildrenComponeAccessibilityRole {
     __obj.asInstanceOf[PickRemoveChildrenComponeAccessibilityRole]
   }
   
-  extension [Self <: PickRemoveChildrenComponeAccessibilityRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickRemoveChildrenComponeAccessibilityRole] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: Any): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object GoogleDatastoreAdminV1ExportEntitiesMetadata {
     __obj.asInstanceOf[GoogleDatastoreAdminV1ExportEntitiesMetadata]
   }
   
-  extension [Self <: GoogleDatastoreAdminV1ExportEntitiesMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDatastoreAdminV1ExportEntitiesMetadata] (val x: Self) extends AnyVal {
     
     inline def setCommon(value: GoogleDatastoreAdminV1CommonMetadata): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     

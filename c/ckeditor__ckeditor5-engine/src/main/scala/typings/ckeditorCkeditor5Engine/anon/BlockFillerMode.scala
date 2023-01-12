@@ -19,7 +19,8 @@ object BlockFillerMode {
     __obj.asInstanceOf[BlockFillerMode]
   }
   
-  extension [Self <: BlockFillerMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockFillerMode] (val x: Self) extends AnyVal {
     
     inline def setBlockFillerMode(value: typings.ckeditorCkeditor5Engine.srcViewDomconverterMod.BlockFillerMode): Self = StObject.set(x, "blockFillerMode", value.asInstanceOf[js.Any])
     

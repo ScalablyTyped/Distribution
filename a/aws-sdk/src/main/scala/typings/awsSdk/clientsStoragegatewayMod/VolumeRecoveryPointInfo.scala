@@ -33,7 +33,8 @@ object VolumeRecoveryPointInfo {
     __obj.asInstanceOf[VolumeRecoveryPointInfo]
   }
   
-  extension [Self <: VolumeRecoveryPointInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeRecoveryPointInfo] (val x: Self) extends AnyVal {
     
     inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
     

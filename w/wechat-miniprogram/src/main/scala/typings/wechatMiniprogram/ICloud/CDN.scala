@@ -17,7 +17,8 @@ object CDN {
     __obj.asInstanceOf[CDN]
   }
   
-  extension [Self <: CDN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CDN] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: String | js.typedarray.ArrayBuffer | ICDNFilePathSpec): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

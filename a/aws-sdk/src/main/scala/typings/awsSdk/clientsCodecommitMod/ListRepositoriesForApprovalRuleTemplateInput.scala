@@ -28,7 +28,8 @@ object ListRepositoriesForApprovalRuleTemplateInput {
     __obj.asInstanceOf[ListRepositoriesForApprovalRuleTemplateInput]
   }
   
-  extension [Self <: ListRepositoriesForApprovalRuleTemplateInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRepositoriesForApprovalRuleTemplateInput] (val x: Self) extends AnyVal {
     
     inline def setApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = StObject.set(x, "approvalRuleTemplateName", value.asInstanceOf[js.Any])
     

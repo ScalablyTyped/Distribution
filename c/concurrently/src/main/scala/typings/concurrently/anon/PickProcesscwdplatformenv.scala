@@ -24,7 +24,8 @@ object PickProcesscwdplatformenv {
     __obj.asInstanceOf[PickProcesscwdplatformenv]
   }
   
-  extension [Self <: PickProcesscwdplatformenv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickProcesscwdplatformenv] (val x: Self) extends AnyVal {
     
     inline def setCwd(value: () => String): Self = StObject.set(x, "cwd", js.Any.fromFunction0(value))
     

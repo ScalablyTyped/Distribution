@@ -27,7 +27,8 @@ object ConnectionOperation {
     __obj.asInstanceOf[ConnectionOperation]
   }
   
-  extension [Self <: ConnectionOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionOperation] (val x: Self) extends AnyVal {
     
     inline def setError(value: NullableOption[PublicError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[ClientDefaults]
     }
     
-    extension [Self <: ClientDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientDefaults] (val x: Self) extends AnyVal {
       
       inline def setColumnSettings(value: ColumnSettings): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object mod {
       __obj.asInstanceOf[ColumnSettings]
     }
     
-    extension [Self <: ColumnSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnSettings] (val x: Self) extends AnyVal {
       
       inline def setDangerTime(value: Double): Self = StObject.set(x, "dangerTime", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object mod {
       __obj.asInstanceOf[HtmlReporter]
     }
     
-    extension [Self <: HtmlReporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlReporter] (val x: Self) extends AnyVal {
       
       inline def setGetJasmine2Reporter(value: () => CustomReporter): Self = StObject.set(x, "getJasmine2Reporter", js.Any.fromFunction0(value))
       
@@ -216,7 +219,8 @@ object mod {
       __obj.asInstanceOf[HtmlReporterConstructorOptions]
     }
     
-    extension [Self <: HtmlReporterConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlReporterConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseDirectory(value: String): Self = StObject.set(x, "baseDirectory", value.asInstanceOf[js.Any])
       
@@ -317,7 +321,8 @@ object mod {
       __obj.asInstanceOf[MetaData]
     }
     
-    extension [Self <: MetaData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetaData] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -348,7 +353,8 @@ object mod {
       __obj.asInstanceOf[SearchSettings]
     }
     
-    extension [Self <: SearchSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchSettings] (val x: Self) extends AnyVal {
       
       inline def setAllselected(value: Boolean): Self = StObject.set(x, "allselected", value.asInstanceOf[js.Any])
       
@@ -403,7 +409,8 @@ object mod {
       __obj.asInstanceOf[StubMetaData]
     }
     
-    extension [Self <: StubMetaData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StubMetaData] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: Name): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       

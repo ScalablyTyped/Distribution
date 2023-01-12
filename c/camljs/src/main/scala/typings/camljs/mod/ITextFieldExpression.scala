@@ -42,7 +42,8 @@ object ITextFieldExpression {
     __obj.asInstanceOf[ITextFieldExpression]
   }
   
-  extension [Self <: ITextFieldExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextFieldExpression] (val x: Self) extends AnyVal {
     
     inline def setBeginsWith(value: String => IExpression): Self = StObject.set(x, "BeginsWith", js.Any.fromFunction1(value))
     

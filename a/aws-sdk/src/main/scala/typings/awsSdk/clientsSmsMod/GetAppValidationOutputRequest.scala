@@ -18,7 +18,8 @@ object GetAppValidationOutputRequest {
     __obj.asInstanceOf[GetAppValidationOutputRequest]
   }
   
-  extension [Self <: GetAppValidationOutputRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAppValidationOutputRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: AppIdWithValidation): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
   }

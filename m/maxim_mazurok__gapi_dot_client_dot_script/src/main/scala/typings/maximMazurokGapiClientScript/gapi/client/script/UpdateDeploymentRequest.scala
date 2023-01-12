@@ -16,7 +16,8 @@ object UpdateDeploymentRequest {
     __obj.asInstanceOf[UpdateDeploymentRequest]
   }
   
-  extension [Self <: UpdateDeploymentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDeploymentRequest] (val x: Self) extends AnyVal {
     
     inline def setDeploymentConfig(value: DeploymentConfig): Self = StObject.set(x, "deploymentConfig", value.asInstanceOf[js.Any])
     

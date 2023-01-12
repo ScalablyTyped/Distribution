@@ -25,7 +25,8 @@ object IndicatorOptions {
     __obj.asInstanceOf[IndicatorOptions]
   }
   
-  extension [Self <: IndicatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicatorOptions] (val x: Self) extends AnyVal {
     
     inline def setColorEnd(value: String): Self = StObject.set(x, "colorEnd", value.asInstanceOf[js.Any])
     

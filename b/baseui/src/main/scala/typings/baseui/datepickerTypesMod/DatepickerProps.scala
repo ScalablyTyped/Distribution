@@ -81,7 +81,8 @@ object DatepickerProps {
     __obj.asInstanceOf[DatepickerProps[T]]
   }
   
-  extension [Self <: DatepickerProps[?], T](x: Self & DatepickerProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatepickerProps[?], T] (val x: Self & DatepickerProps[T]) extends AnyVal {
     
     inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
     

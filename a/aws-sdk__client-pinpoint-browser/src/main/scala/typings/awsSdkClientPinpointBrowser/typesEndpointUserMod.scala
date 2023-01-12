@@ -30,7 +30,8 @@ object typesEndpointUserMod {
       __obj.asInstanceOf[EndpointUser]
     }
     
-    extension [Self <: EndpointUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointUser] (val x: Self) extends AnyVal {
       
       inline def setUserAttributes(
         value: (StringDictionary[js.Array[String] | js.Iterable[String]]) | (js.Iterable[js.Tuple2[String, js.Array[String] | js.Iterable[String]]])
@@ -63,7 +64,8 @@ object typesEndpointUserMod {
       __obj.asInstanceOf[UnmarshalledEndpointUser]
     }
     
-    extension [Self <: UnmarshalledEndpointUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledEndpointUser] (val x: Self) extends AnyVal {
       
       inline def setUserAttributes(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
       

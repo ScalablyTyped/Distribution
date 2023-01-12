@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[Assertion]
     }
     
-    extension [Self <: Assertion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Assertion] (val x: Self) extends AnyVal {
       
       inline def setAssertionType(value: String): Self = StObject.set(x, "assertionType", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object mod {
       __obj.asInstanceOf[Module]
     }
     
-    extension [Self <: Module](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
       
       inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object mod {
       __obj.asInstanceOf[Test]
     }
     
-    extension [Self <: Test](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Test] (val x: Self) extends AnyVal {
       
       inline def setAssertions(value: js.Array[Assertion]): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
       
@@ -139,7 +142,8 @@ object mod {
       __obj.asInstanceOf[TrueOptions]
     }
     
-    extension [Self <: TrueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrueOptions] (val x: Self) extends AnyVal {
       
       inline def setContextLines(value: Double): Self = StObject.set(x, "contextLines", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DeregisterElasticIpRequest {
     __obj.asInstanceOf[DeregisterElasticIpRequest]
   }
   
-  extension [Self <: DeregisterElasticIpRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterElasticIpRequest] (val x: Self) extends AnyVal {
     
     inline def setElasticIp(value: String): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
   }

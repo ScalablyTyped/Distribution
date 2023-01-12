@@ -171,7 +171,8 @@ object ILabel {
     __obj.asInstanceOf[ILabel]
   }
   
-  extension [Self <: ILabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILabel] (val x: Self) extends AnyVal {
     
     inline def setGetAddressBarcodePosition(value: Double => AddressBarcodePosition): Self = StObject.set(x, "getAddressBarcodePosition", js.Any.fromFunction1(value))
     

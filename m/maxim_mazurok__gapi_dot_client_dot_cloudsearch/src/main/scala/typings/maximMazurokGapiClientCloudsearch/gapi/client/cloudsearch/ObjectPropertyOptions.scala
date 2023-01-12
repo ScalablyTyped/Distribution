@@ -19,7 +19,8 @@ object ObjectPropertyOptions {
     __obj.asInstanceOf[ObjectPropertyOptions]
   }
   
-  extension [Self <: ObjectPropertyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectPropertyOptions] (val x: Self) extends AnyVal {
     
     inline def setSubobjectProperties(value: js.Array[PropertyDefinition]): Self = StObject.set(x, "subobjectProperties", value.asInstanceOf[js.Any])
     

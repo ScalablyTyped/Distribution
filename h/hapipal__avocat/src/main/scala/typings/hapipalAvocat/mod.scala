@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setIncludeMessage(value: Boolean): Self = StObject.set(x, "includeMessage", value.asInstanceOf[js.Any])
       

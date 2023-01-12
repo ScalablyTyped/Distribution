@@ -24,7 +24,8 @@ object IHBox {
     __obj.asInstanceOf[IHBox]
   }
   
-  extension [Self <: IHBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHBox] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RenderInputComponentProps {
     __obj.asInstanceOf[RenderInputComponentProps]
   }
   
-  extension [Self <: RenderInputComponentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderInputComponentProps] (val x: Self) extends AnyVal {
     
     inline def setRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

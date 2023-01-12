@@ -16,7 +16,8 @@ object StepOptionRetry {
     __obj.asInstanceOf[StepOptionRetry]
   }
   
-  extension [Self <: StepOptionRetry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepOptionRetry] (val x: Self) extends AnyVal {
     
     inline def setText(value: Buttontitle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object ZipEntry {
     __obj.asInstanceOf[ZipEntry]
   }
   
-  extension [Self <: ZipEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipEntry] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[ZipEntry]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

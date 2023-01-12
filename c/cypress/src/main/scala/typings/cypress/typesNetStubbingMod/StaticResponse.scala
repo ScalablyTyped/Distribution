@@ -21,7 +21,8 @@ object StaticResponse {
     __obj.asInstanceOf[StaticResponse]
   }
   
-  extension [Self <: StaticResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticResponse] (val x: Self) extends AnyVal {
     
     inline def setDelayMs(value: Double): Self = StObject.set(x, "delayMs", value.asInstanceOf[js.Any])
     

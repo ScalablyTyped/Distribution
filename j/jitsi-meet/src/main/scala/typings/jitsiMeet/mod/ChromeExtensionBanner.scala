@@ -17,7 +17,8 @@ object ChromeExtensionBanner {
     __obj.asInstanceOf[ChromeExtensionBanner]
   }
   
-  extension [Self <: ChromeExtensionBanner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChromeExtensionBanner] (val x: Self) extends AnyVal {
     
     inline def setChromeExtensionsInfo(value: js.Array[ChromeExtensionInfo]): Self = StObject.set(x, "chromeExtensionsInfo", value.asInstanceOf[js.Any])
     

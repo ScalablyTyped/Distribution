@@ -35,7 +35,8 @@ object examplesJsmMathColorConverterMod {
       __obj.asInstanceOf[CMYK]
     }
     
-    extension [Self <: CMYK](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CMYK] (val x: Self) extends AnyVal {
       
       inline def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object examplesJsmMathColorConverterMod {
       __obj.asInstanceOf[HSL]
     }
     
-    extension [Self <: HSL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HSL] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object Plugin {
     __obj.asInstanceOf[Plugin[T]]
   }
   
-  extension [Self <: Plugin[?], T /* <: SlickData */](x: Self & Plugin[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Plugin[?], T /* <: SlickData */] (val x: Self & Plugin[T]) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

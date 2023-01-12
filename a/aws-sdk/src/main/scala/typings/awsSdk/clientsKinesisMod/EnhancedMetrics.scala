@@ -18,7 +18,8 @@ object EnhancedMetrics {
     __obj.asInstanceOf[EnhancedMetrics]
   }
   
-  extension [Self <: EnhancedMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedMetrics] (val x: Self) extends AnyVal {
     
     inline def setShardLevelMetrics(value: MetricsNameList): Self = StObject.set(x, "ShardLevelMetrics", value.asInstanceOf[js.Any])
     

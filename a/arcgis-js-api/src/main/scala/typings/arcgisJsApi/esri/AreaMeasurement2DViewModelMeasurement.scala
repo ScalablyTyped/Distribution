@@ -34,7 +34,8 @@ object AreaMeasurement2DViewModelMeasurement {
     __obj.asInstanceOf[AreaMeasurement2DViewModelMeasurement]
   }
   
-  extension [Self <: AreaMeasurement2DViewModelMeasurement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaMeasurement2DViewModelMeasurement] (val x: Self) extends AnyVal {
     
     inline def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

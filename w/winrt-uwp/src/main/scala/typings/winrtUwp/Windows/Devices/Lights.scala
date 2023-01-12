@@ -62,7 +62,8 @@ object Lights {
       __obj.asInstanceOf[LampAvailabilityChangedEventArgs]
     }
     
-    extension [Self <: LampAvailabilityChangedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LampAvailabilityChangedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
     }

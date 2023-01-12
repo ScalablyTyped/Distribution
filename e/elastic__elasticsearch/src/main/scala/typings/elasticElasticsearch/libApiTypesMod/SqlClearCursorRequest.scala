@@ -17,7 +17,8 @@ object SqlClearCursorRequest {
     __obj.asInstanceOf[SqlClearCursorRequest]
   }
   
-  extension [Self <: SqlClearCursorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlClearCursorRequest] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,8 @@ object FileBrowserExpandedParams {
     __obj.asInstanceOf[FileBrowserExpandedParams]
   }
   
-  extension [Self <: FileBrowserExpandedParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileBrowserExpandedParams] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[FileTreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object LocaleDataItem {
     __obj.asInstanceOf[LocaleDataItem]
   }
   
-  extension [Self <: LocaleDataItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocaleDataItem] (val x: Self) extends AnyVal {
     
     inline def setDateSeparator(value: String): Self = StObject.set(x, "dateSeparator", value.asInstanceOf[js.Any])
     

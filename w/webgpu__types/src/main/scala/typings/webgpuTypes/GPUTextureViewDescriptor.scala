@@ -53,7 +53,8 @@ object GPUTextureViewDescriptor {
     __obj.asInstanceOf[GPUTextureViewDescriptor]
   }
   
-  extension [Self <: GPUTextureViewDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUTextureViewDescriptor] (val x: Self) extends AnyVal {
     
     inline def setArrayLayerCount(value: GPUIntegerCoordinate): Self = StObject.set(x, "arrayLayerCount", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object TranscriptionSessionInfo {
     __obj.asInstanceOf[TranscriptionSessionInfo]
   }
   
-  extension [Self <: TranscriptionSessionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranscriptionSessionInfo] (val x: Self) extends AnyVal {
     
     inline def setSessionStateInfo(value: SessionStateInfo): Self = StObject.set(x, "sessionStateInfo", value.asInstanceOf[js.Any])
     

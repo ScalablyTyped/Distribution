@@ -22,7 +22,8 @@ object PartialSliderOptions {
     __obj.asInstanceOf[PartialSliderOptions]
   }
   
-  extension [Self <: PartialSliderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSliderOptions] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

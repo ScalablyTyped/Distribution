@@ -15,7 +15,8 @@ object IgnoreWhitespace {
     __obj.asInstanceOf[IgnoreWhitespace]
   }
   
-  extension [Self <: IgnoreWhitespace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreWhitespace] (val x: Self) extends AnyVal {
     
     inline def setIgnoreWhitespace(value: Boolean): Self = StObject.set(x, "ignoreWhitespace", value.asInstanceOf[js.Any])
   }

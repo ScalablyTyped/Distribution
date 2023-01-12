@@ -25,7 +25,8 @@ object NeedBuildContext {
     __obj.asInstanceOf[NeedBuildContext]
   }
   
-  extension [Self <: NeedBuildContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NeedBuildContext] (val x: Self) extends AnyVal {
     
     inline def setCompilation(value: Compilation): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
     

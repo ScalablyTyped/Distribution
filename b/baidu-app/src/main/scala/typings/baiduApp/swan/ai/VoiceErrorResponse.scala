@@ -15,7 +15,8 @@ object VoiceErrorResponse {
     __obj.asInstanceOf[VoiceErrorResponse]
   }
   
-  extension [Self <: VoiceErrorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceErrorResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }

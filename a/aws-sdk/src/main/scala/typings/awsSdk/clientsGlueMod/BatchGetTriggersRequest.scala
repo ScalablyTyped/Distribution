@@ -18,7 +18,8 @@ object BatchGetTriggersRequest {
     __obj.asInstanceOf[BatchGetTriggersRequest]
   }
   
-  extension [Self <: BatchGetTriggersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetTriggersRequest] (val x: Self) extends AnyVal {
     
     inline def setTriggerNames(value: TriggerNameList): Self = StObject.set(x, "TriggerNames", value.asInstanceOf[js.Any])
     

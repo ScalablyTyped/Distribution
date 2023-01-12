@@ -31,7 +31,8 @@ object CopyRequiresWriterPermission {
     __obj.asInstanceOf[CopyRequiresWriterPermission]
   }
   
-  extension [Self <: CopyRequiresWriterPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyRequiresWriterPermission] (val x: Self) extends AnyVal {
     
     inline def setAdminManagedRestrictions(value: Boolean): Self = StObject.set(x, "adminManagedRestrictions", value.asInstanceOf[js.Any])
     

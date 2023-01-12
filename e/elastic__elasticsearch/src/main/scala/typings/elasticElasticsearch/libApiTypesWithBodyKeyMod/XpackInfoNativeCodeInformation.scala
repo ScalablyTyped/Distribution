@@ -17,7 +17,8 @@ object XpackInfoNativeCodeInformation {
     __obj.asInstanceOf[XpackInfoNativeCodeInformation]
   }
   
-  extension [Self <: XpackInfoNativeCodeInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackInfoNativeCodeInformation] (val x: Self) extends AnyVal {
     
     inline def setBuild_hash(value: String): Self = StObject.set(x, "build_hash", value.asInstanceOf[js.Any])
     

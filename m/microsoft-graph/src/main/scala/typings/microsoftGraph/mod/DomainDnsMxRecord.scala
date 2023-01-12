@@ -21,7 +21,8 @@ object DomainDnsMxRecord {
     __obj.asInstanceOf[DomainDnsMxRecord]
   }
   
-  extension [Self <: DomainDnsMxRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainDnsMxRecord] (val x: Self) extends AnyVal {
     
     inline def setMailExchange(value: String): Self = StObject.set(x, "mailExchange", value.asInstanceOf[js.Any])
     

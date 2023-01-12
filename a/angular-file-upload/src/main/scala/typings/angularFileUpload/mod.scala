@@ -189,7 +189,8 @@ object mod {
       __obj.asInstanceOf[FileItem]
     }
     
-    extension [Self <: FileItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileItem] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -277,7 +278,8 @@ object mod {
       __obj.asInstanceOf[FileLikeObject]
     }
     
-    extension [Self <: FileLikeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileLikeObject] (val x: Self) extends AnyVal {
       
       inline def setLastModifiedDate(value: Any): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
       
@@ -544,7 +546,8 @@ object mod {
       __obj.asInstanceOf[FileUploaderOptions]
     }
     
-    extension [Self <: FileUploaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploaderOptions] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -591,7 +594,8 @@ object mod {
       __obj.asInstanceOf[Filter]
     }
     
-    extension [Self <: Filter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
       
       inline def setFn(value: SyncFilter | AsyncFilter): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
       

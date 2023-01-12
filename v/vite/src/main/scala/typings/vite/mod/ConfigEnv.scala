@@ -23,7 +23,8 @@ object ConfigEnv {
     __obj.asInstanceOf[ConfigEnv]
   }
   
-  extension [Self <: ConfigEnv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigEnv] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: typings.vite.viteStrings.build | serve): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

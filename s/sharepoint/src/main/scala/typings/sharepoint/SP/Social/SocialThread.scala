@@ -71,7 +71,8 @@ object SocialThread {
     __obj.asInstanceOf[SocialThread]
   }
   
-  extension [Self <: SocialThread](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialThread] (val x: Self) extends AnyVal {
     
     inline def setGet_actors(value: () => js.Array[SocialActor]): Self = StObject.set(x, "get_actors", js.Any.fromFunction0(value))
     

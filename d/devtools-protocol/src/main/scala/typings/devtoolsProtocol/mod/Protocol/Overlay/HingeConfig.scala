@@ -30,7 +30,8 @@ object HingeConfig {
     __obj.asInstanceOf[HingeConfig]
   }
   
-  extension [Self <: HingeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HingeConfig] (val x: Self) extends AnyVal {
     
     inline def setContentColor(value: RGBA): Self = StObject.set(x, "contentColor", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object srcScenesFogMod {
       __obj.asInstanceOf[FogBase]
     }
     
-    extension [Self <: FogBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FogBase] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

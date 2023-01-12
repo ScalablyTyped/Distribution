@@ -23,7 +23,8 @@ object OrganizationNode {
     __obj.asInstanceOf[OrganizationNode]
   }
   
-  extension [Self <: OrganizationNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationNode] (val x: Self) extends AnyVal {
     
     inline def setType(value: OrganizationNodeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

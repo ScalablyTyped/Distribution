@@ -28,7 +28,8 @@ object DeleteNamespaceRequest {
     __obj.asInstanceOf[DeleteNamespaceRequest]
   }
   
-  extension [Self <: DeleteNamespaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteNamespaceRequest] (val x: Self) extends AnyVal {
     
     inline def setFinalSnapshotName(value: String): Self = StObject.set(x, "finalSnapshotName", value.asInstanceOf[js.Any])
     

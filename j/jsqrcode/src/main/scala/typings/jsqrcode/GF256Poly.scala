@@ -50,7 +50,8 @@ object GF256Poly {
     __obj.asInstanceOf[GF256Poly]
   }
   
-  extension [Self <: GF256Poly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GF256Poly] (val x: Self) extends AnyVal {
     
     inline def setAddOrSubtract(value: GF256Poly => GF256Poly): Self = StObject.set(x, "addOrSubtract", js.Any.fromFunction1(value))
     

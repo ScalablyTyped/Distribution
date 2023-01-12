@@ -111,7 +111,8 @@ object enginesWebGPUWebgpuShaderProcessingContextMod {
       __obj.asInstanceOf[WebGPUBindGroupLayoutEntryInfo]
     }
     
-    extension [Self <: WebGPUBindGroupLayoutEntryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGPUBindGroupLayoutEntryInfo] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object enginesWebGPUWebgpuShaderProcessingContextMod {
       __obj.asInstanceOf[WebGPUBindingInfo]
     }
     
-    extension [Self <: WebGPUBindingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGPUBindingInfo] (val x: Self) extends AnyVal {
       
       inline def setBindingIndex(value: Double): Self = StObject.set(x, "bindingIndex", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,8 @@ object enginesWebGPUWebgpuShaderProcessingContextMod {
       __obj.asInstanceOf[WebGPUBufferDescription]
     }
     
-    extension [Self <: WebGPUBufferDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGPUBufferDescription] (val x: Self) extends AnyVal {
       
       inline def setBinding(value: WebGPUBindingInfo): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     }
@@ -175,7 +178,8 @@ object enginesWebGPUWebgpuShaderProcessingContextMod {
       __obj.asInstanceOf[WebGPUSamplerDescription]
     }
     
-    extension [Self <: WebGPUSamplerDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGPUSamplerDescription] (val x: Self) extends AnyVal {
       
       inline def setBinding(value: WebGPUBindingInfo): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
       
@@ -202,7 +206,8 @@ object enginesWebGPUWebgpuShaderProcessingContextMod {
       __obj.asInstanceOf[WebGPUTextureDescription]
     }
     
-    extension [Self <: WebGPUTextureDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGPUTextureDescription] (val x: Self) extends AnyVal {
       
       inline def setAutoBindSampler(value: Boolean): Self = StObject.set(x, "autoBindSampler", value.asInstanceOf[js.Any])
       

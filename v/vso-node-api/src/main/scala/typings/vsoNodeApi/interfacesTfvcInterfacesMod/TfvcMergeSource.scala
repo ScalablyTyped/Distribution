@@ -33,7 +33,8 @@ object TfvcMergeSource {
     __obj.asInstanceOf[TfvcMergeSource]
   }
   
-  extension [Self <: TfvcMergeSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcMergeSource] (val x: Self) extends AnyVal {
     
     inline def setIsRename(value: Boolean): Self = StObject.set(x, "isRename", value.asInstanceOf[js.Any])
     

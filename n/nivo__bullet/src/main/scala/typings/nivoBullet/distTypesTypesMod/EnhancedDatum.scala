@@ -18,7 +18,8 @@ object EnhancedDatum {
     __obj.asInstanceOf[EnhancedDatum]
   }
   
-  extension [Self <: EnhancedDatum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedDatum] (val x: Self) extends AnyVal {
     
     inline def setScale(value: ScaleLinear[Double]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }

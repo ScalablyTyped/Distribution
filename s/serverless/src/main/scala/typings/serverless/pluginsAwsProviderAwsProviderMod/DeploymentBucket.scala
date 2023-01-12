@@ -33,7 +33,8 @@ object DeploymentBucket {
     __obj.asInstanceOf[DeploymentBucket]
   }
   
-  extension [Self <: DeploymentBucket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentBucket] (val x: Self) extends AnyVal {
     
     inline def setBlockPublicAccess(value: Boolean): Self = StObject.set(x, "blockPublicAccess", value.asInstanceOf[js.Any])
     

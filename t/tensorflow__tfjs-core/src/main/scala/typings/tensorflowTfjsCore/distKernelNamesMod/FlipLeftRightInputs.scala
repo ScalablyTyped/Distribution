@@ -16,7 +16,8 @@ object FlipLeftRightInputs {
     __obj.asInstanceOf[FlipLeftRightInputs]
   }
   
-  extension [Self <: FlipLeftRightInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlipLeftRightInputs] (val x: Self) extends AnyVal {
     
     inline def setImage(value: scala.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

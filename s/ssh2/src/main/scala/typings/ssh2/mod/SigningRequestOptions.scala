@@ -17,7 +17,8 @@ object SigningRequestOptions {
     __obj.asInstanceOf[SigningRequestOptions]
   }
   
-  extension [Self <: SigningRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SigningRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setHash(value: sha256 | sha512): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
   }

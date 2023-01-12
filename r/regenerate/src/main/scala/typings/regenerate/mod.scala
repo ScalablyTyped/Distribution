@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[ToStringOptions]
     }
     
-    extension [Self <: ToStringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToStringOptions] (val x: Self) extends AnyVal {
       
       inline def setBmpOnly(value: Boolean): Self = StObject.set(x, "bmpOnly", value.asInstanceOf[js.Any])
       

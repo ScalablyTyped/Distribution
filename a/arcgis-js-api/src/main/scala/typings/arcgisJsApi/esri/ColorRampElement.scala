@@ -37,7 +37,8 @@ object ColorRampElement {
     __obj.asInstanceOf[ColorRampElement]
   }
   
-  extension [Self <: ColorRampElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorRampElement] (val x: Self) extends AnyVal {
     
     inline def setInfos(value: js.Array[ColorRampStop]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     

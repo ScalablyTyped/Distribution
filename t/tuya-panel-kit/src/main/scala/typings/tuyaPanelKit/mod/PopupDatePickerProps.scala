@@ -28,7 +28,8 @@ object PopupDatePickerProps {
     __obj.asInstanceOf[PopupDatePickerProps]
   }
   
-  extension [Self <: PopupDatePickerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupDatePickerProps] (val x: Self) extends AnyVal {
     
     inline def set_onDataChange(value: /* date */ js.Date => Unit): Self = StObject.set(x, "_onDataChange", js.Any.fromFunction1(value))
     

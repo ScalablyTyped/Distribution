@@ -28,7 +28,8 @@ object libTypesDrillDownMod {
       __obj.asInstanceOf[DrillDownCfg]
     }
     
-    extension [Self <: DrillDownCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrillDownCfg] (val x: Self) extends AnyVal {
       
       inline def setBreadCrumb(value: ActiveTextStyle): Self = StObject.set(x, "breadCrumb", value.asInstanceOf[js.Any])
       

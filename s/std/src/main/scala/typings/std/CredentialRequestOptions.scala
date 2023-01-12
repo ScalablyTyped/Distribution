@@ -22,7 +22,8 @@ object CredentialRequestOptions {
     __obj.asInstanceOf[CredentialRequestOptions]
   }
   
-  extension [Self <: CredentialRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredentialRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setMediation(value: CredentialMediationRequirement): Self = StObject.set(x, "mediation", value.asInstanceOf[js.Any])
     

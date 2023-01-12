@@ -19,7 +19,8 @@ object BatchNumIndices {
     __obj.asInstanceOf[BatchNumIndices]
   }
   
-  extension [Self <: BatchNumIndices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchNumIndices] (val x: Self) extends AnyVal {
     
     inline def setBatchNumIndices(value: Double): Self = StObject.set(x, "batchNumIndices", value.asInstanceOf[js.Any])
     

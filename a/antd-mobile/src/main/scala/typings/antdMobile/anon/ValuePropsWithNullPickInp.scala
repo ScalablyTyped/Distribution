@@ -327,7 +327,8 @@ object ValuePropsWithNullPickInp {
     __obj.asInstanceOf[ValuePropsWithNullPickInp]
   }
   
-  extension [Self <: ValuePropsWithNullPickInp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValuePropsWithNullPickInp] (val x: Self) extends AnyVal {
     
     inline def setAllowEmpty(value: `false`): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     

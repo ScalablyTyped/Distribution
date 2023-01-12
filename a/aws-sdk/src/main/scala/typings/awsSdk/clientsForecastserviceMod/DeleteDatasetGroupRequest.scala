@@ -18,7 +18,8 @@ object DeleteDatasetGroupRequest {
     __obj.asInstanceOf[DeleteDatasetGroupRequest]
   }
   
-  extension [Self <: DeleteDatasetGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDatasetGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "DatasetGroupArn", value.asInstanceOf[js.Any])
   }

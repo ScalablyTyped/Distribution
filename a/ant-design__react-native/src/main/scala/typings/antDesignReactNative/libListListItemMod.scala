@@ -87,7 +87,8 @@ object libListListItemMod {
       __obj.asInstanceOf[ListItemProps]
     }
     
-    extension [Self <: ListItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemProps] (val x: Self) extends AnyVal {
       
       inline def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
       

@@ -88,7 +88,8 @@ object PartialBBox {
     __obj.asInstanceOf[PartialBBox]
   }
   
-  extension [Self <: PartialBBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBBox] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: /* repeated */ BBox => BBox): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

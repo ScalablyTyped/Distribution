@@ -16,7 +16,8 @@ object ProjectsListXpnHostsRequest {
     __obj.asInstanceOf[ProjectsListXpnHostsRequest]
   }
   
-  extension [Self <: ProjectsListXpnHostsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectsListXpnHostsRequest] (val x: Self) extends AnyVal {
     
     inline def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     

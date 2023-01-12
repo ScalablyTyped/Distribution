@@ -21,7 +21,8 @@ object PacketResponse {
     __obj.asInstanceOf[PacketResponse]
   }
   
-  extension [Self <: PacketResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PacketResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Context[Record[String, Any]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

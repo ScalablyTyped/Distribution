@@ -58,7 +58,8 @@ object Tremolo {
   def speed: Double = js.native
   inline def speed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("speed")(x.asInstanceOf[js.Any])
   
-  extension [Self <: Tremolo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tremolo] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: AudioNode => Tremolo): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     

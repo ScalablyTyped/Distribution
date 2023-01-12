@@ -17,7 +17,8 @@ object buildSrcGeneratedGoogleProtobufStringValueMod {
       __obj.asInstanceOf[StringValue]
     }
     
-    extension [Self <: StringValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringValue] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -36,7 +37,8 @@ object buildSrcGeneratedGoogleProtobufStringValueMod {
       __obj.asInstanceOf[StringValueOutput]
     }
     
-    extension [Self <: StringValueOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringValueOutput] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

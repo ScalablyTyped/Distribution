@@ -15,7 +15,8 @@ object Inertia {
     __obj.asInstanceOf[Inertia]
   }
   
-  extension [Self <: Inertia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inertia] (val x: Self) extends AnyVal {
     
     inline def setInertia(value: Boolean): Self = StObject.set(x, "inertia", value.asInstanceOf[js.Any])
   }

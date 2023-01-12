@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[EncodeOptions]
     }
     
-    extension [Self <: EncodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodeOptions] (val x: Self) extends AnyVal {
       
       inline def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
       

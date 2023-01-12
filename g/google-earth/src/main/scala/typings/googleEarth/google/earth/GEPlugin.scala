@@ -648,7 +648,8 @@ object GEPlugin {
     __obj.asInstanceOf[GEPlugin]
   }
   
-  extension [Self <: GEPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GEPlugin] (val x: Self) extends AnyVal {
     
     inline def setALTITUDE_ABSOLUTE(value: KmlAltitudeModeEnum): Self = StObject.set(x, "ALTITUDE_ABSOLUTE", value.asInstanceOf[js.Any])
     

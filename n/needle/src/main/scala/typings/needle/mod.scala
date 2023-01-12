@@ -229,7 +229,8 @@ object mod {
         __obj.asInstanceOf[typings.needle.mod.core.NeedleOptions]
       }
       
-      extension [Self <: typings.needle.mod.core.NeedleOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.needle.mod.core.NeedleOptions] (val x: Self) extends AnyVal {
         
         inline def setCreateConnection(
           value: (typings.needle.mod.core.NeedleOptions, /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ Socket, Unit]) => Socket
@@ -408,7 +409,8 @@ object mod {
         __obj.asInstanceOf[RedirectOptions]
       }
       
-      extension [Self <: RedirectOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RedirectOptions] (val x: Self) extends AnyVal {
         
         inline def setFollow_if_same_host(value: Boolean): Self = StObject.set(x, "follow_if_same_host", value.asInstanceOf[js.Any])
         
@@ -589,7 +591,8 @@ object mod {
         __obj.asInstanceOf[RequestOptions]
       }
       
-      extension [Self <: RequestOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
         
         inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
         
@@ -731,7 +734,8 @@ object mod {
         __obj.asInstanceOf[ResponseOptions]
       }
       
-      extension [Self <: ResponseOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResponseOptions] (val x: Self) extends AnyVal {
         
         inline def setDecode(value: Boolean): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
         

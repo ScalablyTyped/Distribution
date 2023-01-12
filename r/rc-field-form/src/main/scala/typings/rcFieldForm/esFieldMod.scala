@@ -84,7 +84,8 @@ object esFieldMod {
       __obj.asInstanceOf[FieldProps[Values]]
     }
     
-    extension [Self <: FieldProps[?], Values](x: Self & FieldProps[Values]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldProps[?], Values] (val x: Self & FieldProps[Values]) extends AnyVal {
       
       inline def setChildren(
         value: ReactElement | (js.Function3[/* control */ ChildProps, /* meta */ Meta, /* form */ FormInstance[Values], ReactNode])
@@ -189,7 +190,8 @@ object esFieldMod {
       __obj.asInstanceOf[FieldState]
     }
     
-    extension [Self <: FieldState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldState] (val x: Self) extends AnyVal {
       
       inline def setResetCount(value: Double): Self = StObject.set(x, "resetCount", value.asInstanceOf[js.Any])
     }
@@ -257,7 +259,8 @@ object esFieldMod {
       __obj.asInstanceOf[InternalFieldProps[Values]]
     }
     
-    extension [Self <: InternalFieldProps[?], Values](x: Self & InternalFieldProps[Values]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalFieldProps[?], Values] (val x: Self & InternalFieldProps[Values]) extends AnyVal {
       
       inline def setChildren(
         value: ReactElement | (js.Function3[/* control */ ChildProps, /* meta */ Meta, /* form */ FormInstance[Values], ReactNode])

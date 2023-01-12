@@ -34,7 +34,8 @@ object BackgroundTransferContentPart {
     __obj.asInstanceOf[BackgroundTransferContentPart]
   }
   
-  extension [Self <: BackgroundTransferContentPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundTransferContentPart] (val x: Self) extends AnyVal {
     
     inline def setSetFile(value: IStorageFile => Unit): Self = StObject.set(x, "setFile", js.Any.fromFunction1(value))
     

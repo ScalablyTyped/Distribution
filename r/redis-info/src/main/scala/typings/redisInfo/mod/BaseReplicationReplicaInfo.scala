@@ -41,7 +41,8 @@ object BaseReplicationReplicaInfo {
     __obj.asInstanceOf[BaseReplicationReplicaInfo]
   }
   
-  extension [Self <: BaseReplicationReplicaInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseReplicationReplicaInfo] (val x: Self) extends AnyVal {
     
     inline def setConnected_slaves(value: String): Self = StObject.set(x, "connected_slaves", value.asInstanceOf[js.Any])
     

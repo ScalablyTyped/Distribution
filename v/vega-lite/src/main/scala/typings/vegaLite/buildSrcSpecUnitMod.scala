@@ -96,7 +96,8 @@ object buildSrcSpecUnitMod {
       __obj.asInstanceOf[GenericUnitSpec[E, M, P]]
     }
     
-    extension [Self <: GenericUnitSpec[?, ?, ?], E /* <: Encoding[Any] */, M, P](x: Self & (GenericUnitSpec[E, M, P])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericUnitSpec[?, ?, ?], E /* <: Encoding[Any] */, M, P] (val x: Self & (GenericUnitSpec[E, M, P])) extends AnyVal {
       
       inline def setEncoding(value: E): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -317,7 +318,8 @@ object buildSrcSpecUnitMod {
       __obj.asInstanceOf[TopLevelUnitSpec[F]]
     }
     
-    extension [Self <: TopLevelUnitSpec[?], F /* <: Field */](x: Self & TopLevelUnitSpec[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopLevelUnitSpec[?], F /* <: Field */] (val x: Self & TopLevelUnitSpec[F]) extends AnyVal {
       
       inline def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
       

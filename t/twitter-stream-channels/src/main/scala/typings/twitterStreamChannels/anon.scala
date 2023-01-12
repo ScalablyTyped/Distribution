@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[RemoveAllListeners]
     }
     
-    extension [Self <: RemoveAllListeners](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveAllListeners] (val x: Self) extends AnyVal {
       
       inline def setRemoveAllListeners(value: Boolean): Self = StObject.set(x, "removeAllListeners", value.asInstanceOf[js.Any])
     }

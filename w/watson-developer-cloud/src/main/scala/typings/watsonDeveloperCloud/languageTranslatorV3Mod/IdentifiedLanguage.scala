@@ -20,7 +20,8 @@ object IdentifiedLanguage {
     __obj.asInstanceOf[IdentifiedLanguage]
   }
   
-  extension [Self <: IdentifiedLanguage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentifiedLanguage] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

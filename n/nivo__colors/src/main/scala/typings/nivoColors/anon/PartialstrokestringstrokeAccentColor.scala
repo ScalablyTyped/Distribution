@@ -2134,7 +2134,8 @@ object PartialstrokestringstrokeAccentColor {
     __obj.asInstanceOf[PartialstrokestringstrokeAccentColor]
   }
   
-  extension [Self <: PartialstrokestringstrokeAccentColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialstrokestringstrokeAccentColor] (val x: Self) extends AnyVal {
     
     inline def setAccentColor(value: AccentColor): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     

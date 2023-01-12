@@ -19,7 +19,8 @@ object TopLeftBottomRightGeoBounds {
     __obj.asInstanceOf[TopLeftBottomRightGeoBounds]
   }
   
-  extension [Self <: TopLeftBottomRightGeoBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopLeftBottomRightGeoBounds] (val x: Self) extends AnyVal {
     
     inline def setBottom_right(value: GeoLocation): Self = StObject.set(x, "bottom_right", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object OTAJobConfig {
     __obj.asInstanceOf[OTAJobConfig]
   }
   
-  extension [Self <: OTAJobConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OTAJobConfig] (val x: Self) extends AnyVal {
     
     inline def setImageVersion(value: ImageVersion): Self = StObject.set(x, "ImageVersion", value.asInstanceOf[js.Any])
   }

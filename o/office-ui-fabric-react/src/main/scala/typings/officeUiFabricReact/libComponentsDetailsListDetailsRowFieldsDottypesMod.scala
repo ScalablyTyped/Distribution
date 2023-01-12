@@ -70,7 +70,8 @@ object libComponentsDetailsListDetailsRowFieldsDottypesMod {
       __obj.asInstanceOf[IDetailsRowFieldsProps]
     }
     
-    extension [Self <: IDetailsRowFieldsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsRowFieldsProps] (val x: Self) extends AnyVal {
       
       inline def setCellStyleProps(value: ICellStyleProps): Self = StObject.set(x, "cellStyleProps", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object libComponentsDetailsListDetailsRowFieldsDottypesMod {
       __obj.asInstanceOf[IOverrideColumnRenderProps]
     }
     
-    extension [Self <: IOverrideColumnRenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverrideColumnRenderProps] (val x: Self) extends AnyVal {
       
       inline def setCellsByColumn(value: StringDictionary[ReactNode]): Self = StObject.set(x, "cellsByColumn", value.asInstanceOf[js.Any])
       

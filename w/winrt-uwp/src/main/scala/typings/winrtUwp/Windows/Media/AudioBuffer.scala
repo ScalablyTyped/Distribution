@@ -30,7 +30,8 @@ object AudioBuffer {
     __obj.asInstanceOf[AudioBuffer]
   }
   
-  extension [Self <: AudioBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioBuffer] (val x: Self) extends AnyVal {
     
     inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     

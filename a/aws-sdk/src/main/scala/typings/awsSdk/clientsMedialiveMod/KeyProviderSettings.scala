@@ -15,7 +15,8 @@ object KeyProviderSettings {
     __obj.asInstanceOf[KeyProviderSettings]
   }
   
-  extension [Self <: KeyProviderSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyProviderSettings] (val x: Self) extends AnyVal {
     
     inline def setStaticKeySettings(value: StaticKeySettings): Self = StObject.set(x, "StaticKeySettings", value.asInstanceOf[js.Any])
     

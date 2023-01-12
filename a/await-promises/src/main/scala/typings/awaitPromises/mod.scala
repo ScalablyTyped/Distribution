@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[AwaitPromises]
     }
     
-    extension [Self <: AwaitPromises](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwaitPromises] (val x: Self) extends AnyVal {
       
       inline def setCollect(value: () => Unit): Self = StObject.set(x, "collect", js.Any.fromFunction0(value))
       

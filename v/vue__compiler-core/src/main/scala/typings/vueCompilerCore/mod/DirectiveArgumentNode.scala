@@ -22,7 +22,8 @@ object DirectiveArgumentNode {
     __obj.asInstanceOf[DirectiveArgumentNode]
   }
   
-  extension [Self <: DirectiveArgumentNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectiveArgumentNode] (val x: Self) extends AnyVal {
     
     inline def setElements(
       value: js.Array[String] | (js.Tuple2[String, ExpressionNode]) | (js.Tuple3[String, ExpressionNode, ExpressionNode]) | (js.Tuple4[String, ExpressionNode, ExpressionNode, ObjectExpression])

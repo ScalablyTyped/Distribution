@@ -18,7 +18,8 @@ object AudioWatermarkSettings {
     __obj.asInstanceOf[AudioWatermarkSettings]
   }
   
-  extension [Self <: AudioWatermarkSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioWatermarkSettings] (val x: Self) extends AnyVal {
     
     inline def setNielsenWatermarksSettings(value: NielsenWatermarksSettings): Self = StObject.set(x, "NielsenWatermarksSettings", value.asInstanceOf[js.Any])
     

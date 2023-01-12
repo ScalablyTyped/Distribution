@@ -25,7 +25,8 @@ object SetCenterOffsetOption {
     __obj.asInstanceOf[SetCenterOffsetOption]
   }
   
-  extension [Self <: SetCenterOffsetOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetCenterOffsetOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

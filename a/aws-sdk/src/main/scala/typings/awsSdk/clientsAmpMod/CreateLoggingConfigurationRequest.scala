@@ -28,7 +28,8 @@ object CreateLoggingConfigurationRequest {
     __obj.asInstanceOf[CreateLoggingConfigurationRequest]
   }
   
-  extension [Self <: CreateLoggingConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLoggingConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotencyToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

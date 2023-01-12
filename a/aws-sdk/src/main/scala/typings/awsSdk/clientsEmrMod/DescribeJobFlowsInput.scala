@@ -33,7 +33,8 @@ object DescribeJobFlowsInput {
     __obj.asInstanceOf[DescribeJobFlowsInput]
   }
   
-  extension [Self <: DescribeJobFlowsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeJobFlowsInput] (val x: Self) extends AnyVal {
     
     inline def setCreatedAfter(value: js.Date): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
     

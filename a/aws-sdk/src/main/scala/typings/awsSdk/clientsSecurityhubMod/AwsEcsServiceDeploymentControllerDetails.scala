@@ -18,7 +18,8 @@ object AwsEcsServiceDeploymentControllerDetails {
     __obj.asInstanceOf[AwsEcsServiceDeploymentControllerDetails]
   }
   
-  extension [Self <: AwsEcsServiceDeploymentControllerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsServiceDeploymentControllerDetails] (val x: Self) extends AnyVal {
     
     inline def setType(value: NonEmptyString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

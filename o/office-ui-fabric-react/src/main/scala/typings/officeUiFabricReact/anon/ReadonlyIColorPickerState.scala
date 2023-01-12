@@ -19,7 +19,8 @@ object ReadonlyIColorPickerState {
     __obj.asInstanceOf[ReadonlyIColorPickerState]
   }
   
-  extension [Self <: ReadonlyIColorPickerState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyIColorPickerState] (val x: Self) extends AnyVal {
     
     inline def setColor(value: IColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

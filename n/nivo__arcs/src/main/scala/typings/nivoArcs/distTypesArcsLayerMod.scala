@@ -62,7 +62,8 @@ object distTypesArcsLayerMod {
       __obj.asInstanceOf[ArcsLayerProps[Datum]]
     }
     
-    extension [Self <: ArcsLayerProps[?], Datum /* <: DatumWithArcAndColor */](x: Self & ArcsLayerProps[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcsLayerProps[?], Datum /* <: DatumWithArcAndColor */] (val x: Self & ArcsLayerProps[Datum]) extends AnyVal {
       
       inline def setArcGenerator(value: ArcGenerator): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
       

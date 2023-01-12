@@ -655,7 +655,8 @@ object binding {
       __obj.asInstanceOf[ListEntryEvent]
     }
     
-    extension [Self <: ListEntryEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListEntryEvent] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
       
@@ -759,7 +760,8 @@ object binding {
       __obj.asInstanceOf[ValueBinding]
     }
     
-    extension [Self <: ValueBinding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueBinding] (val x: Self) extends AnyVal {
       
       inline def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
       
@@ -804,7 +806,8 @@ object binding {
       __obj.asInstanceOf[XBindableValue]
     }
     
-    extension [Self <: XBindableValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XBindableValue] (val x: Self) extends AnyVal {
       
       inline def setGetValueBinding(value: () => XValueBinding): Self = StObject.set(x, "getValueBinding", js.Any.fromFunction0(value))
       
@@ -861,7 +864,8 @@ object binding {
       __obj.asInstanceOf[XListEntryListener]
     }
     
-    extension [Self <: XListEntryListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XListEntryListener] (val x: Self) extends AnyVal {
       
       inline def setAllEntriesChanged(value: EventObject => Unit): Self = StObject.set(x, "allEntriesChanged", js.Any.fromFunction1(value))
       
@@ -906,7 +910,8 @@ object binding {
       __obj.asInstanceOf[XListEntrySink]
     }
     
-    extension [Self <: XListEntrySink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XListEntrySink] (val x: Self) extends AnyVal {
       
       inline def setGetListEntrySource(value: () => XListEntrySource): Self = StObject.set(x, "getListEntrySource", js.Any.fromFunction0(value))
       
@@ -976,7 +981,8 @@ object binding {
       __obj.asInstanceOf[XListEntrySource]
     }
     
-    extension [Self <: XListEntrySource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XListEntrySource] (val x: Self) extends AnyVal {
       
       inline def setAddListEntryListener(value: XListEntryListener => Unit): Self = StObject.set(x, "addListEntryListener", js.Any.fromFunction1(value))
       
@@ -1054,7 +1060,8 @@ object binding {
       __obj.asInstanceOf[XValueBinding]
     }
     
-    extension [Self <: XValueBinding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XValueBinding] (val x: Self) extends AnyVal {
       
       inline def setGetSupportedValueTypes(value: () => SafeArray[`type`]): Self = StObject.set(x, "getSupportedValueTypes", js.Any.fromFunction0(value))
       

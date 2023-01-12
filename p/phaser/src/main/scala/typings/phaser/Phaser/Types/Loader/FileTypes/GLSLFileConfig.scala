@@ -39,7 +39,8 @@ object GLSLFileConfig {
     __obj.asInstanceOf[GLSLFileConfig]
   }
   
-  extension [Self <: GLSLFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GLSLFileConfig] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

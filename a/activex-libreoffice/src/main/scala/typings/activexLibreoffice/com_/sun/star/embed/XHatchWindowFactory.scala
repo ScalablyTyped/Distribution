@@ -36,7 +36,8 @@ object XHatchWindowFactory {
     __obj.asInstanceOf[XHatchWindowFactory]
   }
   
-  extension [Self <: XHatchWindowFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHatchWindowFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateHatchWindowInstance(value: (XWindowPeer, Rectangle, Size) => XHatchWindow): Self = StObject.set(x, "createHatchWindowInstance", js.Any.fromFunction3(value))
   }

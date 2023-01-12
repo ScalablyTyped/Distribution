@@ -48,7 +48,8 @@ object FontFamilies {
     __obj.asInstanceOf[FontFamilies]
   }
   
-  extension [Self <: FontFamilies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontFamilies] (val x: Self) extends AnyVal {
     
     inline def setCursive(value: String): Self = StObject.set(x, "cursive", value.asInstanceOf[js.Any])
     

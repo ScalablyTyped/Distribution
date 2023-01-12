@@ -55,7 +55,8 @@ object DescribeGatewayResponse {
     __obj.asInstanceOf[DescribeGatewayResponse]
   }
   
-  extension [Self <: DescribeGatewayResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeGatewayResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

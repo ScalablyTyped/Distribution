@@ -62,7 +62,8 @@ object PromiseOptions {
     __obj.asInstanceOf[PromiseOptions]
   }
   
-  extension [Self <: PromiseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromiseOptions] (val x: Self) extends AnyVal {
     
     inline def setDone(value: js.Function => PromiseOptions): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
     

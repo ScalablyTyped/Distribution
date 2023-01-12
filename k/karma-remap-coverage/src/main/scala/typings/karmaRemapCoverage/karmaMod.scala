@@ -31,7 +31,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setRemapCoverageReporter(value: KarmaRemapCoverageReporter): Self = StObject.set(x, "remapCoverageReporter", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object karmaMod {
       __obj.asInstanceOf[KarmaRemapCoverageReporter]
     }
     
-    extension [Self <: KarmaRemapCoverageReporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KarmaRemapCoverageReporter] (val x: Self) extends AnyVal {
       
       inline def setCobertura(value: String): Self = StObject.set(x, "cobertura", value.asInstanceOf[js.Any])
       

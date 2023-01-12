@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[RequestCountKey]
     }
     
-    extension [Self <: RequestCountKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestCountKey] (val x: Self) extends AnyVal {
       
       inline def setRequestCountKey(value: String): Self = StObject.set(x, "requestCountKey", value.asInstanceOf[js.Any])
       

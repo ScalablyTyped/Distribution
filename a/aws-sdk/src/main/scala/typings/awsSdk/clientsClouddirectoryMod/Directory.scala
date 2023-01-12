@@ -33,7 +33,8 @@ object Directory {
     __obj.asInstanceOf[Directory]
   }
   
-  extension [Self <: Directory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Directory] (val x: Self) extends AnyVal {
     
     inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     

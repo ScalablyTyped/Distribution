@@ -17,7 +17,8 @@ object ListInputSecurityGroupsRequest {
     __obj.asInstanceOf[ListInputSecurityGroupsRequest]
   }
   
-  extension [Self <: ListInputSecurityGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInputSecurityGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

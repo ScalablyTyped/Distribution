@@ -23,7 +23,8 @@ object PutAppInstanceRetentionSettingsResponse {
     __obj.asInstanceOf[PutAppInstanceRetentionSettingsResponse]
   }
   
-  extension [Self <: PutAppInstanceRetentionSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAppInstanceRetentionSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setAppInstanceRetentionSettings(value: AppInstanceRetentionSettings): Self = StObject.set(x, "AppInstanceRetentionSettings", value.asInstanceOf[js.Any])
     

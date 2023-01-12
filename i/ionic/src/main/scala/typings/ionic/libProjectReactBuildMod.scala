@@ -49,7 +49,8 @@ object libProjectReactBuildMod {
       __obj.asInstanceOf[ReactBuildRunnerDeps]
     }
     
-    extension [Self <: ReactBuildRunnerDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactBuildRunnerDeps] (val x: Self) extends AnyVal {
       
       inline def setProject(value: ReactProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }

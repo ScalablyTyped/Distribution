@@ -22,7 +22,8 @@ object Arm64PrefetchOperand {
     __obj.asInstanceOf[Arm64PrefetchOperand]
   }
   
-  extension [Self <: Arm64PrefetchOperand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arm64PrefetchOperand] (val x: Self) extends AnyVal {
     
     inline def setType(value: prefetch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

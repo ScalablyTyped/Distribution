@@ -50,7 +50,8 @@ object IPlayReadySecureStopServiceRequest {
     __obj.asInstanceOf[IPlayReadySecureStopServiceRequest]
   }
   
-  extension [Self <: IPlayReadySecureStopServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlayReadySecureStopServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setPublisherCertificate(value: Double): Self = StObject.set(x, "publisherCertificate", value.asInstanceOf[js.Any])
     

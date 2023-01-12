@@ -18,7 +18,8 @@ object HasuraAggregateResult {
     __obj.asInstanceOf[HasuraAggregateResult[T]]
   }
   
-  extension [Self <: HasuraAggregateResult[?], T /* <: Record[String, Any] */](x: Self & HasuraAggregateResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasuraAggregateResult[?], T /* <: Record[String, Any] */] (val x: Self & HasuraAggregateResult[T]) extends AnyVal {
     
     inline def setAggregate(value: AggregateResult[T]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     

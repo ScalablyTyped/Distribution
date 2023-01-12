@@ -16,7 +16,8 @@ object SshsigningkeyidNumber {
     __obj.asInstanceOf[SshsigningkeyidNumber]
   }
   
-  extension [Self <: SshsigningkeyidNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SshsigningkeyidNumber] (val x: Self) extends AnyVal {
     
     inline def setSsh_signing_key_id(value: Double): Self = StObject.set(x, "ssh_signing_key_id", value.asInstanceOf[js.Any])
   }

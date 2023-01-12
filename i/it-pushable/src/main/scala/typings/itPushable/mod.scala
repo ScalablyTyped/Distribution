@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[BytePushableOptions]
     }
     
-    extension [Self <: BytePushableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BytePushableOptions] (val x: Self) extends AnyVal {
       
       inline def setObjectMode(value: `false`): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[ObjectPushableOptions]
     }
     
-    extension [Self <: ObjectPushableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPushableOptions] (val x: Self) extends AnyVal {
       
       inline def setObjectMode(value: `true`): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
     }
@@ -99,7 +101,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       

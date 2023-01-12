@@ -18,7 +18,8 @@ object PickRoutestringobjectunde {
     __obj.asInstanceOf[PickRoutestringobjectunde]
   }
   
-  extension [Self <: PickRoutestringobjectunde](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickRoutestringobjectunde] (val x: Self) extends AnyVal {
     
     inline def setName(value: Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

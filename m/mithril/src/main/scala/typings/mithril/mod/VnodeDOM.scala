@@ -24,7 +24,8 @@ object VnodeDOM {
     __obj.asInstanceOf[VnodeDOM[Attrs, State]]
   }
   
-  extension [Self <: VnodeDOM[?, ?], Attrs, State](x: Self & (VnodeDOM[Attrs, State])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VnodeDOM[?, ?], Attrs, State] (val x: Self & (VnodeDOM[Attrs, State])) extends AnyVal {
     
     inline def setDom(value: Element): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
     

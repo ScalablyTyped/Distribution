@@ -75,7 +75,8 @@ object goog {
         __obj.asInstanceOf[Socket]
       }
       
-      extension [Self <: Socket](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Socket] (val x: Self) extends AnyVal {
         
         inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
         

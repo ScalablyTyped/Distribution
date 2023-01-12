@@ -47,7 +47,8 @@ object StructureMapStructure {
     __obj.asInstanceOf[StructureMapStructure]
   }
   
-  extension [Self <: StructureMapStructure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureMapStructure] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

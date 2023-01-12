@@ -38,7 +38,8 @@ object WarmPoolConfiguration {
     __obj.asInstanceOf[WarmPoolConfiguration]
   }
   
-  extension [Self <: WarmPoolConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WarmPoolConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInstanceReusePolicy(value: InstanceReusePolicy): Self = StObject.set(x, "InstanceReusePolicy", value.asInstanceOf[js.Any])
     

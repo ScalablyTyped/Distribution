@@ -26,7 +26,8 @@ object MakeDirectoryOptions {
     __obj.asInstanceOf[MakeDirectoryOptions]
   }
   
-  extension [Self <: MakeDirectoryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MakeDirectoryOptions] (val x: Self) extends AnyVal {
     
     inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

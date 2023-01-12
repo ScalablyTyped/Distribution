@@ -18,7 +18,8 @@ object BoundingBox {
     __obj.asInstanceOf[BoundingBox]
   }
   
-  extension [Self <: BoundingBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundingBox] (val x: Self) extends AnyVal {
     
     inline def setNorthEast(value: LatLng): Self = StObject.set(x, "northEast", value.asInstanceOf[js.Any])
     

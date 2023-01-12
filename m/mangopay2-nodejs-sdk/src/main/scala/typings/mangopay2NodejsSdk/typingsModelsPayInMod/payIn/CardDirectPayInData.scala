@@ -99,7 +99,8 @@ object CardDirectPayInData {
     __obj.asInstanceOf[CardDirectPayInData]
   }
   
-  extension [Self <: CardDirectPayInData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardDirectPayInData] (val x: Self) extends AnyVal {
     
     inline def setBilling(value: BillingData): Self = StObject.set(x, "Billing", value.asInstanceOf[js.Any])
     

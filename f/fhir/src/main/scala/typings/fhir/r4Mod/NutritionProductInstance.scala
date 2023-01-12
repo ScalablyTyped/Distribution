@@ -46,7 +46,8 @@ object NutritionProductInstance {
     __obj.asInstanceOf[NutritionProductInstance]
   }
   
-  extension [Self <: NutritionProductInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NutritionProductInstance] (val x: Self) extends AnyVal {
     
     inline def setExpiry(value: String): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     

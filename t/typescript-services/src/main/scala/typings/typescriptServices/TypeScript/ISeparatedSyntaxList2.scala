@@ -59,7 +59,8 @@ object ISeparatedSyntaxList2 {
     __obj.asInstanceOf[ISeparatedSyntaxList2]
   }
   
-  extension [Self <: ISeparatedSyntaxList2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISeparatedSyntaxList2] (val x: Self) extends AnyVal {
     
     inline def setMembers(value: Any): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object JoinEventConfiguration {
     __obj.asInstanceOf[JoinEventConfiguration]
   }
   
-  extension [Self <: JoinEventConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinEventConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLoRaWAN(value: LoRaWANJoinEventNotificationConfigurations): Self = StObject.set(x, "LoRaWAN", value.asInstanceOf[js.Any])
     

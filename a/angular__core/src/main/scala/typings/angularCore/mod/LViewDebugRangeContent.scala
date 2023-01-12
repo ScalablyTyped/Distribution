@@ -32,7 +32,8 @@ object LViewDebugRangeContent {
     __obj.asInstanceOf[LViewDebugRangeContent]
   }
   
-  extension [Self <: LViewDebugRangeContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LViewDebugRangeContent] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

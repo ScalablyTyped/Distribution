@@ -15,7 +15,8 @@ object PriorityNumber {
     __obj.asInstanceOf[PriorityNumber]
   }
   
-  extension [Self <: PriorityNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PriorityNumber] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
   }

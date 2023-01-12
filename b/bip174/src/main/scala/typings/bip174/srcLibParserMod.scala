@@ -43,7 +43,8 @@ object srcLibParserMod {
       __obj.asInstanceOf[PsbtAttributes]
     }
     
-    extension [Self <: PsbtAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PsbtAttributes] (val x: Self) extends AnyVal {
       
       inline def setGlobalMap(value: PsbtGlobal): Self = StObject.set(x, "globalMap", value.asInstanceOf[js.Any])
       

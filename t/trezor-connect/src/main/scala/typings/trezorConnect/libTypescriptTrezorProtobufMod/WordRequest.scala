@@ -16,7 +16,8 @@ object WordRequest {
     __obj.asInstanceOf[WordRequest]
   }
   
-  extension [Self <: WordRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WordRequest] (val x: Self) extends AnyVal {
     
     inline def setType(value: WordRequestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

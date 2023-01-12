@@ -36,7 +36,8 @@ object libPagerItemMod {
       __obj.asInstanceOf[PagerItemProps]
     }
     
-    extension [Self <: PagerItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagerItemProps] (val x: Self) extends AnyVal {
       
       inline def setEventKey(value: Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
       

@@ -40,7 +40,8 @@ object IPointerPoint {
     __obj.asInstanceOf[IPointerPoint]
   }
   
-  extension [Self <: IPointerPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPointerPoint] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

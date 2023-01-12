@@ -23,7 +23,8 @@ object RejectAssignmentRequest {
     __obj.asInstanceOf[RejectAssignmentRequest]
   }
   
-  extension [Self <: RejectAssignmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectAssignmentRequest] (val x: Self) extends AnyVal {
     
     inline def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
     

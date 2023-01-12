@@ -22,7 +22,8 @@ object PDFExportException {
     __obj.asInstanceOf[PDFExportException]
   }
   
-  extension [Self <: PDFExportException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFExportException] (val x: Self) extends AnyVal {
     
     inline def setErrorCodes(value: SafeArray[Double]): Self = StObject.set(x, "ErrorCodes", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object SecurityChangePasswordRequest {
     __obj.asInstanceOf[SecurityChangePasswordRequest]
   }
   
-  extension [Self <: SecurityChangePasswordRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityChangePasswordRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: typings.elasticElasticsearch.anon.Password): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

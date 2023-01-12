@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[AutogypiConfig]
     }
     
-    extension [Self <: AutogypiConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutogypiConfig] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[BindingConfig]
     }
     
-    extension [Self <: BindingConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindingConfig] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object mod {
       __obj.asInstanceOf[GenerateOptions]
     }
     
-    extension [Self <: GenerateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateOptions] (val x: Self) extends AnyVal {
       
       inline def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
       

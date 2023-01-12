@@ -18,7 +18,8 @@ object CancelExportTaskRequest {
     __obj.asInstanceOf[CancelExportTaskRequest]
   }
   
-  extension [Self <: CancelExportTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelExportTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setExportTaskId(value: ExportVmTaskId): Self = StObject.set(x, "ExportTaskId", value.asInstanceOf[js.Any])
   }

@@ -16,7 +16,8 @@ object NamedSheetViewCollectionUpdateData {
     __obj.asInstanceOf[NamedSheetViewCollectionUpdateData]
   }
   
-  extension [Self <: NamedSheetViewCollectionUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedSheetViewCollectionUpdateData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[NamedSheetViewData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

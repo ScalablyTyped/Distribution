@@ -17,7 +17,8 @@ object ImageDecodeResult {
     __obj.asInstanceOf[ImageDecodeResult]
   }
   
-  extension [Self <: ImageDecodeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageDecodeResult] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     

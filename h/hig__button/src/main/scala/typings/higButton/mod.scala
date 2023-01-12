@@ -163,7 +163,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -246,7 +247,8 @@ object mod {
       __obj.asInstanceOf[Targets_]
     }
     
-    extension [Self <: Targets_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Targets_] (val x: Self) extends AnyVal {
       
       inline def setBLANK(value: _blank): Self = StObject.set(x, "BLANK", value.asInstanceOf[js.Any])
       
@@ -279,7 +281,8 @@ object mod {
       __obj.asInstanceOf[Types_]
     }
     
-    extension [Self <: Types_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Types_] (val x: Self) extends AnyVal {
       
       inline def setFLAT(value: flat): Self = StObject.set(x, "FLAT", value.asInstanceOf[js.Any])
       
@@ -306,7 +309,8 @@ object mod {
       __obj.asInstanceOf[Widths_]
     }
     
-    extension [Self <: Widths_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Widths_] (val x: Self) extends AnyVal {
       
       inline def setGROW(value: grow): Self = StObject.set(x, "GROW", value.asInstanceOf[js.Any])
       

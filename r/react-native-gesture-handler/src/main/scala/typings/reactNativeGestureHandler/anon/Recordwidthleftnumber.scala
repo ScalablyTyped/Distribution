@@ -21,7 +21,8 @@ object Recordwidthleftnumber {
     __obj.asInstanceOf[Recordwidthleftnumber]
   }
   
-  extension [Self <: Recordwidthleftnumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Recordwidthleftnumber] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

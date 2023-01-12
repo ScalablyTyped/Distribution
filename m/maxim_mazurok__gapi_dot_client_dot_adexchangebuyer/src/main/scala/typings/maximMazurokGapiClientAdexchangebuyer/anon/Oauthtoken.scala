@@ -40,7 +40,8 @@ object Oauthtoken {
     __obj.asInstanceOf[Oauthtoken]
   }
   
-  extension [Self <: Oauthtoken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Oauthtoken] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: Double): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

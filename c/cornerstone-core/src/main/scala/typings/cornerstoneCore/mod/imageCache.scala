@@ -85,7 +85,8 @@ object imageCache {
       __obj.asInstanceOf[CacheInformation]
     }
     
-    extension [Self <: CacheInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheInformation] (val x: Self) extends AnyVal {
       
       inline def setCacheSizeInBytes(value: Double): Self = StObject.set(x, "cacheSizeInBytes", value.asInstanceOf[js.Any])
       

@@ -52,7 +52,8 @@ object ServerRoute {
     __obj.asInstanceOf[ServerRoute]
   }
   
-  extension [Self <: ServerRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerRoute] (val x: Self) extends AnyVal {
     
     inline def setHandler(value: Method | HandlerDecorations): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     

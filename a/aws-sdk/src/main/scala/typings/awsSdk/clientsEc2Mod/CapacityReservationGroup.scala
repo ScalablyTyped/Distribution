@@ -23,7 +23,8 @@ object CapacityReservationGroup {
     __obj.asInstanceOf[CapacityReservationGroup]
   }
   
-  extension [Self <: CapacityReservationGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapacityReservationGroup] (val x: Self) extends AnyVal {
     
     inline def setGroupArn(value: String): Self = StObject.set(x, "GroupArn", value.asInstanceOf[js.Any])
     

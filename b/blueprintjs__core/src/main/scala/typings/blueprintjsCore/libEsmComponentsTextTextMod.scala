@@ -81,7 +81,8 @@ object libEsmComponentsTextTextMod {
       __obj.asInstanceOf[ITextProps]
     }
     
-    extension [Self <: ITextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object libEsmComponentsTextTextMod {
       __obj.asInstanceOf[ITextState]
     }
     
-    extension [Self <: ITextState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextState] (val x: Self) extends AnyVal {
       
       inline def setIsContentOverflowing(value: Boolean): Self = StObject.set(x, "isContentOverflowing", value.asInstanceOf[js.Any])
       

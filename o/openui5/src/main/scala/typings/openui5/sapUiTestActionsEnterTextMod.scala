@@ -287,7 +287,8 @@ object sapUiTestActionsEnterTextMod {
       __obj.asInstanceOf[EnterTextSettings]
     }
     
-    extension [Self <: EnterTextSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnterTextSettings] (val x: Self) extends AnyVal {
       
       inline def setClearTextFirst(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "clearTextFirst", value.asInstanceOf[js.Any])
       

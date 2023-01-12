@@ -38,7 +38,8 @@ object ZipWriterAddDataOptions {
     __obj.asInstanceOf[ZipWriterAddDataOptions]
   }
   
-  extension [Self <: ZipWriterAddDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipWriterAddDataOptions] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

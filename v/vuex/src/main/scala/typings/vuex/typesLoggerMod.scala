@@ -58,7 +58,8 @@ object typesLoggerMod {
       __obj.asInstanceOf[LoggerOption[S]]
     }
     
-    extension [Self <: LoggerOption[?], S](x: Self & LoggerOption[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerOption[?], S] (val x: Self & LoggerOption[S]) extends AnyVal {
       
       inline def setActionFilter(value: (/* action */ Payload, /* state */ S) => Boolean): Self = StObject.set(x, "actionFilter", js.Any.fromFunction2(value))
       

@@ -19,7 +19,8 @@ object GridMessages {
     __obj.asInstanceOf[GridMessages]
   }
   
-  extension [Self <: GridMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridMessages] (val x: Self) extends AnyVal {
     
     inline def setCommands(value: GridMessagesCommands): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     

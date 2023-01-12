@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3beta1CreateVersionOperationMetadata {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1CreateVersionOperationMetadata]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1CreateVersionOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1CreateVersionOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

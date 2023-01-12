@@ -36,7 +36,8 @@ object distTypesMod {
       __obj.asInstanceOf[SharedRenderProps[P]]
     }
     
-    extension [Self <: SharedRenderProps[?], P](x: Self & SharedRenderProps[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedRenderProps[?], P] (val x: Self & SharedRenderProps[P]) extends AnyVal {
       
       inline def setChildren(value: (js.Function1[/* props */ P, ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

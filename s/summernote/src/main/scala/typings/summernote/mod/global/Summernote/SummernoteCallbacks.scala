@@ -54,7 +54,8 @@ object SummernoteCallbacks {
     __obj.asInstanceOf[SummernoteCallbacks]
   }
   
-  extension [Self <: SummernoteCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SummernoteCallbacks] (val x: Self) extends AnyVal {
     
     inline def setOnBeforeCommand(value: /* contents */ String => Unit): Self = StObject.set(x, "onBeforeCommand", js.Any.fromFunction1(value))
     

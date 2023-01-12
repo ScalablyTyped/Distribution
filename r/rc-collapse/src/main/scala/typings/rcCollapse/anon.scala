@@ -276,7 +276,8 @@ object anon {
       __obj.asInstanceOf[CollapsePanelPropschildre]
     }
     
-    extension [Self <: CollapsePanelPropschildre](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapsePanelPropschildre] (val x: Self) extends AnyVal {
       
       inline def setAccordion(value: Boolean): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
       
@@ -719,7 +720,8 @@ object anon {
       __obj.asInstanceOf[ForceRender]
     }
     
-    extension [Self <: ForceRender](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForceRender] (val x: Self) extends AnyVal {
       
       inline def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
       
@@ -745,7 +747,8 @@ object anon {
       __obj.asInstanceOf[PartialCollapseState]
     }
     
-    extension [Self <: PartialCollapseState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCollapseState] (val x: Self) extends AnyVal {
       
       inline def setActiveKey(value: js.Array[Key]): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       
@@ -767,7 +770,8 @@ object anon {
       __obj.asInstanceOf[Typeofdefault]
     }
     
-    extension [Self <: Typeofdefault](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofdefault] (val x: Self) extends AnyVal {
       
       inline def setDefaultProps(value: ForceRender): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     }

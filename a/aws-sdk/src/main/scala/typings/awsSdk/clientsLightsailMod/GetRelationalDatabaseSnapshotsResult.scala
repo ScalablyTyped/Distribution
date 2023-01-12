@@ -23,7 +23,8 @@ object GetRelationalDatabaseSnapshotsResult {
     __obj.asInstanceOf[GetRelationalDatabaseSnapshotsResult]
   }
   
-  extension [Self <: GetRelationalDatabaseSnapshotsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRelationalDatabaseSnapshotsResult] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object Delegates {
     __obj.asInstanceOf[Delegates]
   }
   
-  extension [Self <: Delegates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Delegates] (val x: Self) extends AnyVal {
     
     inline def setDelegates(value: typeinkeyofMapEventTypeea): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
     

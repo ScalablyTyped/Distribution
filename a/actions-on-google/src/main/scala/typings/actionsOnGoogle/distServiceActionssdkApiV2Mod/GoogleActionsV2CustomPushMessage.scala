@@ -29,7 +29,8 @@ object GoogleActionsV2CustomPushMessage {
     __obj.asInstanceOf[GoogleActionsV2CustomPushMessage]
   }
   
-  extension [Self <: GoogleActionsV2CustomPushMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2CustomPushMessage] (val x: Self) extends AnyVal {
     
     inline def setOrderUpdate(value: GoogleActionsV2OrdersOrderUpdate): Self = StObject.set(x, "orderUpdate", value.asInstanceOf[js.Any])
     

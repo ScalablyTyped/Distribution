@@ -163,7 +163,8 @@ object AutomationExecutionMetadata {
     __obj.asInstanceOf[AutomationExecutionMetadata]
   }
   
-  extension [Self <: AutomationExecutionMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomationExecutionMetadata] (val x: Self) extends AnyVal {
     
     inline def setAlarmConfiguration(value: AlarmConfiguration): Self = StObject.set(x, "AlarmConfiguration", value.asInstanceOf[js.Any])
     

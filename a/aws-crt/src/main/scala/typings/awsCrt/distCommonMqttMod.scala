@@ -114,7 +114,8 @@ object distCommonMqttMod {
       __obj.asInstanceOf[MqttRequest]
     }
     
-    extension [Self <: MqttRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MqttRequest] (val x: Self) extends AnyVal {
       
       inline def setPacket_id(value: Double): Self = StObject.set(x, "packet_id", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object distCommonMqttMod {
       __obj.asInstanceOf[MqttSubscribeRequest]
     }
     
-    extension [Self <: MqttSubscribeRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MqttSubscribeRequest] (val x: Self) extends AnyVal {
       
       inline def setError_code(value: Double): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
       

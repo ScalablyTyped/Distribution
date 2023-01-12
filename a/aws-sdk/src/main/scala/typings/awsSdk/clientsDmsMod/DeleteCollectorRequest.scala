@@ -18,7 +18,8 @@ object DeleteCollectorRequest {
     __obj.asInstanceOf[DeleteCollectorRequest]
   }
   
-  extension [Self <: DeleteCollectorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCollectorRequest] (val x: Self) extends AnyVal {
     
     inline def setCollectorReferencedId(value: String): Self = StObject.set(x, "CollectorReferencedId", value.asInstanceOf[js.Any])
   }

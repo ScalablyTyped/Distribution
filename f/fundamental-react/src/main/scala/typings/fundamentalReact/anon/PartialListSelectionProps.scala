@@ -31,7 +31,8 @@ object PartialListSelectionProps {
     __obj.asInstanceOf[PartialListSelectionProps]
   }
   
-  extension [Self <: PartialListSelectionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialListSelectionProps] (val x: Self) extends AnyVal {
     
     inline def setCheckBoxAriaLabel(value: String): Self = StObject.set(x, "checkBoxAriaLabel", value.asInstanceOf[js.Any])
     

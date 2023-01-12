@@ -20,7 +20,8 @@ object ChannelFind {
     __obj.asInstanceOf[ChannelFind]
   }
   
-  extension [Self <: ChannelFind](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelFind] (val x: Self) extends AnyVal {
     
     inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     

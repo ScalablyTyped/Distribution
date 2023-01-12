@@ -25,7 +25,8 @@ object CIMGeometricEffectAddControlPoints {
     __obj.asInstanceOf[CIMGeometricEffectAddControlPoints]
   }
   
-  extension [Self <: CIMGeometricEffectAddControlPoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectAddControlPoints] (val x: Self) extends AnyVal {
     
     inline def setAngleTolerance(value: Double): Self = StObject.set(x, "angleTolerance", value.asInstanceOf[js.Any])
     

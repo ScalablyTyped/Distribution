@@ -16,7 +16,8 @@ object CascadeSaveOption {
     __obj.asInstanceOf[CascadeSaveOption]
   }
   
-  extension [Self <: CascadeSaveOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CascadeSaveOption] (val x: Self) extends AnyVal {
     
     inline def setCascadeSave(value: Boolean): Self = StObject.set(x, "cascadeSave", value.asInstanceOf[js.Any])
     

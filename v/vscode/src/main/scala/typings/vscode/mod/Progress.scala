@@ -20,7 +20,8 @@ object Progress {
     __obj.asInstanceOf[Progress[T]]
   }
   
-  extension [Self <: Progress[?], T](x: Self & Progress[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Progress[?], T] (val x: Self & Progress[T]) extends AnyVal {
     
     inline def setReport(value: T => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
   }

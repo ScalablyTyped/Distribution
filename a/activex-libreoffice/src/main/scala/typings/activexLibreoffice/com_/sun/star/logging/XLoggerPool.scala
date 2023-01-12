@@ -41,7 +41,8 @@ object XLoggerPool {
     __obj.asInstanceOf[XLoggerPool]
   }
   
-  extension [Self <: XLoggerPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLoggerPool] (val x: Self) extends AnyVal {
     
     inline def setDefaultLogger(value: XLogger): Self = StObject.set(x, "DefaultLogger", value.asInstanceOf[js.Any])
     

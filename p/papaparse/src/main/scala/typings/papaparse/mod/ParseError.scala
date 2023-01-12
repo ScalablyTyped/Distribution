@@ -39,7 +39,8 @@ object ParseError {
     __obj.asInstanceOf[ParseError]
   }
   
-  extension [Self <: ParseError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: MissingQuotes | UndetectableDelimiter | TooFewFields | TooManyFields | InvalidQuotes): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

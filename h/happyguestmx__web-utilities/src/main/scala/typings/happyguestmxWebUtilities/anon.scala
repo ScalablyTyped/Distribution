@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[AttributeValueList]
     }
     
-    extension [Self <: AttributeValueList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeValueList] (val x: Self) extends AnyVal {
       
       inline def setAttributeValueList(value: js.Array[Any]): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setFields(value: FormErrorFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     }
@@ -64,7 +66,8 @@ object anon {
       __obj.asInstanceOf[ItemCollectionKey]
     }
     
-    extension [Self <: ItemCollectionKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemCollectionKey] (val x: Self) extends AnyVal {
       
       inline def setItemCollectionKey(value: StringDictionary[Any]): Self = StObject.set(x, "ItemCollectionKey", value.asInstanceOf[js.Any])
       

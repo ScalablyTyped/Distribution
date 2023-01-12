@@ -32,7 +32,8 @@ object DataBreakpointInfoRequest {
     __obj.asInstanceOf[DataBreakpointInfoRequest]
   }
   
-  extension [Self <: DataBreakpointInfoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataBreakpointInfoRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: DataBreakpointInfoArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

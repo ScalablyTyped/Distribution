@@ -22,7 +22,8 @@ object MembershipsDurationAtLevel {
     __obj.asInstanceOf[MembershipsDurationAtLevel]
   }
   
-  extension [Self <: MembershipsDurationAtLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MembershipsDurationAtLevel] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

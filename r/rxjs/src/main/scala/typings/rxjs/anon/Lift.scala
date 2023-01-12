@@ -17,7 +17,8 @@ object Lift {
     __obj.asInstanceOf[Lift]
   }
   
-  extension [Self <: Lift](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lift] (val x: Self) extends AnyVal {
     
     inline def setLift(
       value: /* import warning: importer.ImportType#apply Failed type conversion: std.InstanceType<rxjs.anon.TypeofObservable>['lift'] */ js.Any

@@ -33,7 +33,8 @@ object WatcherPagerDutyEvent {
     __obj.asInstanceOf[WatcherPagerDutyEvent]
   }
   
-  extension [Self <: WatcherPagerDutyEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherPagerDutyEvent] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object CalendarTextColor {
     __obj.asInstanceOf[CalendarTextColor]
   }
   
-  extension [Self <: CalendarTextColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarTextColor] (val x: Self) extends AnyVal {
     
     inline def setCalendarTextColor(value: String): Self = StObject.set(x, "calendarTextColor", value.asInstanceOf[js.Any])
     

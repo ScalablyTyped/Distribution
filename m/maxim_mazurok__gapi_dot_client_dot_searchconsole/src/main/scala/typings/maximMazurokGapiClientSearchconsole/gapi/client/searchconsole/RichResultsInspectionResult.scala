@@ -19,7 +19,8 @@ object RichResultsInspectionResult {
     __obj.asInstanceOf[RichResultsInspectionResult]
   }
   
-  extension [Self <: RichResultsInspectionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RichResultsInspectionResult] (val x: Self) extends AnyVal {
     
     inline def setDetectedItems(value: js.Array[DetectedItems]): Self = StObject.set(x, "detectedItems", value.asInstanceOf[js.Any])
     

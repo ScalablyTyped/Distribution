@@ -19,7 +19,8 @@ object MultiFactorInfo {
     __obj.asInstanceOf[MultiFactorInfo]
   }
   
-  extension [Self <: MultiFactorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiFactorInfo] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object IShooterComponent {
     __obj.asInstanceOf[IShooterComponent]
   }
   
-  extension [Self <: IShooterComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShooterComponent] (val x: Self) extends AnyVal {
     
     inline def setAuxVal(value: Double): Self = StObject.set(x, "auxVal", value.asInstanceOf[js.Any])
     

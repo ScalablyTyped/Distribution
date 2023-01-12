@@ -16,7 +16,8 @@ object AnalyticsDataimportDeleteUploadDataRequest {
     __obj.asInstanceOf[AnalyticsDataimportDeleteUploadDataRequest]
   }
   
-  extension [Self <: AnalyticsDataimportDeleteUploadDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyticsDataimportDeleteUploadDataRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomDataImportUids(value: js.Array[String]): Self = StObject.set(x, "customDataImportUids", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object DeleteAnalysisRequest {
     __obj.asInstanceOf[DeleteAnalysisRequest]
   }
   
-  extension [Self <: DeleteAnalysisRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAnalysisRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
     

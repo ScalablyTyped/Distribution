@@ -34,7 +34,8 @@ object SeriesPackedBubbleDataLabelsFormatterContextObject {
     __obj.asInstanceOf[SeriesPackedBubbleDataLabelsFormatterContextObject]
   }
   
-  extension [Self <: SeriesPackedBubbleDataLabelsFormatterContextObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesPackedBubbleDataLabelsFormatterContextObject] (val x: Self) extends AnyVal {
     
     inline def setColor(value: ColorString): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

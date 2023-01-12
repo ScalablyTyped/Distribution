@@ -190,7 +190,8 @@ object JQueryAjaxSettings {
     __obj.asInstanceOf[JQueryAjaxSettings]
   }
   
-  extension [Self <: JQueryAjaxSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryAjaxSettings] (val x: Self) extends AnyVal {
     
     inline def setAccepts(value: Any): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
     

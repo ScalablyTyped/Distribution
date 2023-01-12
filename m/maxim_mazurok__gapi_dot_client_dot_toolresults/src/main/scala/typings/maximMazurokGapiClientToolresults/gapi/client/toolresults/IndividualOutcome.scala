@@ -23,7 +23,8 @@ object IndividualOutcome {
     __obj.asInstanceOf[IndividualOutcome]
   }
   
-  extension [Self <: IndividualOutcome](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndividualOutcome] (val x: Self) extends AnyVal {
     
     inline def setMultistepNumber(value: Double): Self = StObject.set(x, "multistepNumber", value.asInstanceOf[js.Any])
     

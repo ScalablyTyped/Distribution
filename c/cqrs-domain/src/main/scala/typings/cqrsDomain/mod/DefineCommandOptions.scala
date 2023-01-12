@@ -23,7 +23,8 @@ object DefineCommandOptions {
     __obj.asInstanceOf[DefineCommandOptions]
   }
   
-  extension [Self <: DefineCommandOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefineCommandOptions] (val x: Self) extends AnyVal {
     
     inline def setExisting(value: Boolean): Self = StObject.set(x, "existing", value.asInstanceOf[js.Any])
     

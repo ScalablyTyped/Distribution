@@ -33,7 +33,8 @@ object Dismissstalereviews {
     __obj.asInstanceOf[Dismissstalereviews]
   }
   
-  extension [Self <: Dismissstalereviews](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dismissstalereviews] (val x: Self) extends AnyVal {
     
     inline def setBypass_pull_request_allowances(value: TeamsUsers): Self = StObject.set(x, "bypass_pull_request_allowances", value.asInstanceOf[js.Any])
     

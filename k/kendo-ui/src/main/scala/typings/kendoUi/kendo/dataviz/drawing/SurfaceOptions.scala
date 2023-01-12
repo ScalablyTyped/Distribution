@@ -33,7 +33,8 @@ object SurfaceOptions {
     __obj.asInstanceOf[SurfaceOptions]
   }
   
-  extension [Self <: SurfaceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurfaceOptions] (val x: Self) extends AnyVal {
     
     inline def setClick(value: /* e */ SurfaceClickEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     

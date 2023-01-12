@@ -18,7 +18,8 @@ object RouteContextObject {
     __obj.asInstanceOf[RouteContextObject]
   }
   
-  extension [Self <: RouteContextObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteContextObject] (val x: Self) extends AnyVal {
     
     inline def setMatches(value: js.Array[RouteMatch[String]]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     

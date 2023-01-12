@@ -111,7 +111,8 @@ object libJoseJwsMod {
       __obj.asInstanceOf[VerifyOptions]
     }
     
-    extension [Self <: VerifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

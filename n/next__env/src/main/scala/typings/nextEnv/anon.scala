@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[CombinedEnv]
     }
     
-    extension [Self <: CombinedEnv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CombinedEnv] (val x: Self) extends AnyVal {
       
       inline def setCombinedEnv(value: Env): Self = StObject.set(x, "combinedEnv", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Contents]
     }
     
-    extension [Self <: Contents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contents] (val x: Self) extends AnyVal {
       
       inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       

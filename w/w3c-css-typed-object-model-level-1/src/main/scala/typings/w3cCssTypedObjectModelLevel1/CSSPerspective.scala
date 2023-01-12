@@ -20,7 +20,8 @@ object CSSPerspective {
     __obj.asInstanceOf[CSSPerspective]
   }
   
-  extension [Self <: CSSPerspective](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPerspective] (val x: Self) extends AnyVal {
     
     inline def setLength(value: CSSNumericValue): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

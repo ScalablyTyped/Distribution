@@ -24,7 +24,8 @@ object buildSrcGeneratedGoogleProtobufAnyMod {
       __obj.asInstanceOf[AnyOutput]
     }
     
-    extension [Self <: AnyOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnyOutput] (val x: Self) extends AnyVal {
       
       inline def setType_url(value: String): Self = StObject.set(x, "type_url", value.asInstanceOf[js.Any])
       

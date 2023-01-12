@@ -19,7 +19,8 @@ object UnfilteredPartition {
     __obj.asInstanceOf[UnfilteredPartition]
   }
   
-  extension [Self <: UnfilteredPartition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnfilteredPartition] (val x: Self) extends AnyVal {
     
     inline def setAuthorizedColumns(value: NameStringList): Self = StObject.set(x, "AuthorizedColumns", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object MetricSetSummary {
     __obj.asInstanceOf[MetricSetSummary]
   }
   
-  extension [Self <: MetricSetSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricSetSummary] (val x: Self) extends AnyVal {
     
     inline def setAnomalyDetectorArn(value: Arn): Self = StObject.set(x, "AnomalyDetectorArn", value.asInstanceOf[js.Any])
     

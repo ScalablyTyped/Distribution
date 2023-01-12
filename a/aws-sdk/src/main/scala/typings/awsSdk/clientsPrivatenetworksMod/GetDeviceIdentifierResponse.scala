@@ -23,7 +23,8 @@ object GetDeviceIdentifierResponse {
     __obj.asInstanceOf[GetDeviceIdentifierResponse]
   }
   
-  extension [Self <: GetDeviceIdentifierResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDeviceIdentifierResponse] (val x: Self) extends AnyVal {
     
     inline def setDeviceIdentifier(value: DeviceIdentifier): Self = StObject.set(x, "deviceIdentifier", value.asInstanceOf[js.Any])
     

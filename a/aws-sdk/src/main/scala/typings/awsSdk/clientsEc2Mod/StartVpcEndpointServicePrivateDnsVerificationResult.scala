@@ -18,7 +18,8 @@ object StartVpcEndpointServicePrivateDnsVerificationResult {
     __obj.asInstanceOf[StartVpcEndpointServicePrivateDnsVerificationResult]
   }
   
-  extension [Self <: StartVpcEndpointServicePrivateDnsVerificationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartVpcEndpointServicePrivateDnsVerificationResult] (val x: Self) extends AnyVal {
     
     inline def setReturnValue(value: Boolean): Self = StObject.set(x, "ReturnValue", value.asInstanceOf[js.Any])
     

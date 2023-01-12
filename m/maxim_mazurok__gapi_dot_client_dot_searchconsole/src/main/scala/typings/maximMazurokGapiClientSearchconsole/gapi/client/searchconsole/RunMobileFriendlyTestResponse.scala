@@ -28,7 +28,8 @@ object RunMobileFriendlyTestResponse {
     __obj.asInstanceOf[RunMobileFriendlyTestResponse]
   }
   
-  extension [Self <: RunMobileFriendlyTestResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunMobileFriendlyTestResponse] (val x: Self) extends AnyVal {
     
     inline def setMobileFriendliness(value: String): Self = StObject.set(x, "mobileFriendliness", value.asInstanceOf[js.Any])
     

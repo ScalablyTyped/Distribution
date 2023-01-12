@@ -142,7 +142,8 @@ object distSrcPeerRoutingMod {
       __obj.asInstanceOf[PeerRoutingInit]
     }
     
-    extension [Self <: PeerRoutingInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerRoutingInit] (val x: Self) extends AnyVal {
       
       inline def setLan(value: Boolean): Self = StObject.set(x, "lan", value.asInstanceOf[js.Any])
       

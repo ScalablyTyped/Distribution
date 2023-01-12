@@ -19,7 +19,8 @@ object PageContext {
     __obj.asInstanceOf[PageContext]
   }
   
-  extension [Self <: PageContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageContext] (val x: Self) extends AnyVal {
     
     inline def setInput(value: EntityFormPageContext | EntityListPageContext): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
   }

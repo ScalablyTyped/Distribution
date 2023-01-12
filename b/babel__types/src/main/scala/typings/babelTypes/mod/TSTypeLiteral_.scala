@@ -25,7 +25,8 @@ object TSTypeLiteral_ {
     __obj.asInstanceOf[TSTypeLiteral_]
   }
   
-  extension [Self <: TSTypeLiteral_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTypeLiteral_] (val x: Self) extends AnyVal {
     
     inline def setMembers(value: js.Array[TSTypeElement]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     

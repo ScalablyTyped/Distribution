@@ -18,7 +18,8 @@ object VerifyTransaction {
     __obj.asInstanceOf[VerifyTransaction]
   }
   
-  extension [Self <: VerifyTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyTransaction] (val x: Self) extends AnyVal {
     
     inline def setVerify(
       value: VerifyTransactionVerifyRequest => js.Promise[AxiosResponse[VerifyTransactionVerifyResponse, Any]]

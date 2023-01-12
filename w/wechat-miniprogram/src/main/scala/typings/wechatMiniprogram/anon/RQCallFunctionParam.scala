@@ -24,7 +24,8 @@ object RQCallFunctionParam {
     __obj.asInstanceOf[RQCallFunctionParam]
   }
   
-  extension [Self <: RQCallFunctionParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RQCallFunctionParam] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

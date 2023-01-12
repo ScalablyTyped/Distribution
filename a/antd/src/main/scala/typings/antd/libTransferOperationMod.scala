@@ -50,7 +50,8 @@ object libTransferOperationMod {
       __obj.asInstanceOf[TransferOperationProps]
     }
     
-    extension [Self <: TransferOperationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferOperationProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

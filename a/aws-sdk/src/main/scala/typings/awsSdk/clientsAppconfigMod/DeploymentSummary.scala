@@ -68,7 +68,8 @@ object DeploymentSummary {
     __obj.asInstanceOf[DeploymentSummary]
   }
   
-  extension [Self <: DeploymentSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentSummary] (val x: Self) extends AnyVal {
     
     inline def setCompletedAt(value: js.Date): Self = StObject.set(x, "CompletedAt", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object DroppableOptions {
     __obj.asInstanceOf[DroppableOptions]
   }
   
-  extension [Self <: DroppableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DroppableOptions] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: Any): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

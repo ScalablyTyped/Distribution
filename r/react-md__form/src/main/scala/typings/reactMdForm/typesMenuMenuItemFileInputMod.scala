@@ -130,7 +130,8 @@ object typesMenuMenuItemFileInputMod {
       __obj.asInstanceOf[MenuItemAllowedFileInputProps]
     }
     
-    extension [Self <: MenuItemAllowedFileInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemAllowedFileInputProps] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -588,7 +589,8 @@ object typesMenuMenuItemFileInputMod {
       __obj.asInstanceOf[MenuItemFileInputProps]
     }
     
-    extension [Self <: MenuItemFileInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemFileInputProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

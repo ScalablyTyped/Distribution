@@ -51,7 +51,8 @@ object libTypescriptSrcNavigationContainerMod {
       __obj.asInstanceOf[Props[ParamList]]
     }
     
-    extension [Self <: Props[?], ParamList /* <: js.Object */](x: Self & Props[ParamList]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?], ParamList /* <: js.Object */] (val x: Self & Props[ParamList]) extends AnyVal {
       
       inline def setDocumentTitle(value: DocumentTitleOptions): Self = StObject.set(x, "documentTitle", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object ParameterRuleDateTime {
     __obj.asInstanceOf[ParameterRuleDateTime]
   }
   
-  extension [Self <: ParameterRuleDateTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterRuleDateTime] (val x: Self) extends AnyVal {
     
     inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object QueryOrderPagePerpage {
     __obj.asInstanceOf[QueryOrderPagePerpage]
   }
   
-  extension [Self <: QueryOrderPagePerpage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryOrderPagePerpage] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: OrderPagePerpage): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

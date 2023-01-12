@@ -22,7 +22,8 @@ object TeamSettings {
     __obj.asInstanceOf[TeamSettings]
   }
   
-  extension [Self <: TeamSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamSettings] (val x: Self) extends AnyVal {
     
     inline def setLive_only(value: Boolean): Self = StObject.set(x, "live_only", value.asInstanceOf[js.Any])
     

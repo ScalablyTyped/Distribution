@@ -23,7 +23,8 @@ object ListProviderConfigResults {
     __obj.asInstanceOf[ListProviderConfigResults]
   }
   
-  extension [Self <: ListProviderConfigResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProviderConfigResults] (val x: Self) extends AnyVal {
     
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     

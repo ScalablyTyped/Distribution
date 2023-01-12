@@ -35,7 +35,8 @@ object DateInputOptions {
     __obj.asInstanceOf[DateInputOptions]
   }
   
-  extension [Self <: DateInputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateInputOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: /* e */ DateInputChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

@@ -171,7 +171,8 @@ object mod {
       __obj.asInstanceOf[CachePolicy]
     }
     
-    extension [Self <: CachePolicy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CachePolicy] (val x: Self) extends AnyVal {
       
       inline def setResponseHeaders(value: () => Headers): Self = StObject.set(x, "responseHeaders", js.Any.fromFunction0(value))
       
@@ -238,7 +239,8 @@ object mod {
       __obj.asInstanceOf[CachePolicyObject]
     }
     
-    extension [Self <: CachePolicyObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CachePolicyObject] (val x: Self) extends AnyVal {
       
       inline def setA(value: Boolean): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -327,7 +329,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCacheHeuristic(value: Double): Self = StObject.set(x, "cacheHeuristic", value.asInstanceOf[js.Any])
       
@@ -366,7 +369,8 @@ object mod {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -393,7 +397,8 @@ object mod {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -431,7 +436,8 @@ object mod {
       __obj.asInstanceOf[RevalidationPolicy]
     }
     
-    extension [Self <: RevalidationPolicy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RevalidationPolicy] (val x: Self) extends AnyVal {
       
       inline def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       

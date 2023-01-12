@@ -43,7 +43,8 @@ object EventMediaFlowInStateChan {
     __obj.asInstanceOf[EventMediaFlowInStateChan]
   }
   
-  extension [Self <: EventMediaFlowInStateChan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventMediaFlowInStateChan] (val x: Self) extends AnyVal {
     
     inline def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     

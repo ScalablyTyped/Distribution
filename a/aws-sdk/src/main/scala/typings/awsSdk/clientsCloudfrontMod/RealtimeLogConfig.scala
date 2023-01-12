@@ -38,7 +38,8 @@ object RealtimeLogConfig {
     __obj.asInstanceOf[RealtimeLogConfig]
   }
   
-  extension [Self <: RealtimeLogConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealtimeLogConfig] (val x: Self) extends AnyVal {
     
     inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

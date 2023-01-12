@@ -17,7 +17,8 @@ object `4` {
     __obj.asInstanceOf[`4`]
   }
   
-  extension [Self <: `4`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `4`] (val x: Self) extends AnyVal {
     
     inline def setType(value: `radial-gradient`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

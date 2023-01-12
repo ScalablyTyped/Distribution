@@ -29,7 +29,8 @@ object Picker {
     __obj.asInstanceOf[Picker]
   }
   
-  extension [Self <: Picker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Picker] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

@@ -43,7 +43,8 @@ object EbsVolumeScanDetails {
     __obj.asInstanceOf[EbsVolumeScanDetails]
   }
   
-  extension [Self <: EbsVolumeScanDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EbsVolumeScanDetails] (val x: Self) extends AnyVal {
     
     inline def setScanCompletedAt(value: js.Date): Self = StObject.set(x, "ScanCompletedAt", value.asInstanceOf[js.Any])
     

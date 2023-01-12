@@ -19,7 +19,8 @@ object AffinityEnumValues {
     __obj.asInstanceOf[AffinityEnumValues]
   }
   
-  extension [Self <: AffinityEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AffinityEnumValues] (val x: Self) extends AnyVal {
     
     inline def setDownstream(value: Affinity): Self = StObject.set(x, "Downstream", value.asInstanceOf[js.Any])
     

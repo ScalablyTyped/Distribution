@@ -20,7 +20,8 @@ object TooltipRequestStartEvent {
     __obj.asInstanceOf[TooltipRequestStartEvent]
   }
   
-  extension [Self <: TooltipRequestStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipRequestStartEvent] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

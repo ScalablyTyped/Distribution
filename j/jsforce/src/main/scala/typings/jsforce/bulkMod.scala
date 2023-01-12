@@ -131,7 +131,8 @@ object bulkMod {
       __obj.asInstanceOf[BulkOptions]
     }
     
-    extension [Self <: BulkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BulkOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrencyMode(value: Serial | Parallel): Self = StObject.set(x, "concurrencyMode", value.asInstanceOf[js.Any])
       

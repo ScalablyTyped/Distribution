@@ -25,7 +25,8 @@ object typesChangeMessageVisibilityOutputMod {
       __obj.asInstanceOf[ChangeMessageVisibilityOutput]
     }
     
-    extension [Self <: ChangeMessageVisibilityOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeMessageVisibilityOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }

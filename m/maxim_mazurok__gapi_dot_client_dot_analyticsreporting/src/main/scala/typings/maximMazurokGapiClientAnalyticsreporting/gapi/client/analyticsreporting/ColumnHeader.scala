@@ -19,7 +19,8 @@ object ColumnHeader {
     __obj.asInstanceOf[ColumnHeader]
   }
   
-  extension [Self <: ColumnHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnHeader] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     

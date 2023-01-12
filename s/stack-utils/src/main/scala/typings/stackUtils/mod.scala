@@ -69,7 +69,8 @@ object mod {
       __obj.asInstanceOf[CallSite]
     }
     
-    extension [Self <: CallSite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallSite] (val x: Self) extends AnyVal {
       
       inline def setGetColumnNumber(value: () => Double): Self = StObject.set(x, "getColumnNumber", js.Any.fromFunction0(value))
       
@@ -112,7 +113,8 @@ object mod {
       __obj.asInstanceOf[CallSiteLike]
     }
     
-    extension [Self <: CallSiteLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallSiteLike] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -186,7 +189,8 @@ object mod {
       __obj.asInstanceOf[StackData]
     }
     
-    extension [Self <: StackData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackData] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -239,7 +243,8 @@ object mod {
       __obj.asInstanceOf[StackLineData]
     }
     
-    extension [Self <: StackLineData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackLineData] (val x: Self) extends AnyVal {
       
       inline def setEvalColumn(value: Double): Self = StObject.set(x, "evalColumn", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object typesInvalidGrantTokenExceptionMod {
       __obj.asInstanceOf[InvalidGrantTokenException]
     }
     
-    extension [Self <: InvalidGrantTokenException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidGrantTokenException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidGrantTokenException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -53,7 +54,8 @@ object typesInvalidGrantTokenExceptionMod {
       __obj.asInstanceOf[InvalidGrantTokenExceptionDetails]
     }
     
-    extension [Self <: InvalidGrantTokenExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidGrantTokenExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

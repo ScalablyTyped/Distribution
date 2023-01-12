@@ -49,7 +49,8 @@ object XImageProducer {
     __obj.asInstanceOf[XImageProducer]
   }
   
-  extension [Self <: XImageProducer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XImageProducer] (val x: Self) extends AnyVal {
     
     inline def setAddConsumer(value: XImageConsumer => Unit): Self = StObject.set(x, "addConsumer", js.Any.fromFunction1(value))
     

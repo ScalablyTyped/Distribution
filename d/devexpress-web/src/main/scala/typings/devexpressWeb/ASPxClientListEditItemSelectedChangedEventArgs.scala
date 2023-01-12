@@ -28,7 +28,8 @@ object ASPxClientListEditItemSelectedChangedEventArgs {
     __obj.asInstanceOf[ASPxClientListEditItemSelectedChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientListEditItemSelectedChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientListEditItemSelectedChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

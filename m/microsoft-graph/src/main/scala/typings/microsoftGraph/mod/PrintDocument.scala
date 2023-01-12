@@ -24,7 +24,8 @@ object PrintDocument {
     __obj.asInstanceOf[PrintDocument]
   }
   
-  extension [Self <: PrintDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintDocument] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: NullableOption[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

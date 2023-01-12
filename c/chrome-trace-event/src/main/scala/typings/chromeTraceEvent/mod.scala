@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setPh(value: String): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object mod {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object mod {
       __obj.asInstanceOf[TracerOptions]
     }
     
-    extension [Self <: TracerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracerOptions] (val x: Self) extends AnyVal {
       
       inline def setFields(value: Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       

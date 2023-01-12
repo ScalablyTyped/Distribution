@@ -17,7 +17,8 @@ object ParametersPathArchiveformat {
     __obj.asInstanceOf[ParametersPathArchiveformat]
   }
   
-  extension [Self <: ParametersPathArchiveformat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPathArchiveformat] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathArchiveformat): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

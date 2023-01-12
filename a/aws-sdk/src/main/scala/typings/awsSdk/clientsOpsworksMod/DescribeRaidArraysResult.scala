@@ -18,7 +18,8 @@ object DescribeRaidArraysResult {
     __obj.asInstanceOf[DescribeRaidArraysResult]
   }
   
-  extension [Self <: DescribeRaidArraysResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRaidArraysResult] (val x: Self) extends AnyVal {
     
     inline def setRaidArrays(value: RaidArrays): Self = StObject.set(x, "RaidArrays", value.asInstanceOf[js.Any])
     

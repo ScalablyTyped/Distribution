@@ -73,7 +73,8 @@ object VideoCodecSettings {
     __obj.asInstanceOf[VideoCodecSettings]
   }
   
-  extension [Self <: VideoCodecSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoCodecSettings] (val x: Self) extends AnyVal {
     
     inline def setAv1Settings(value: Av1Settings): Self = StObject.set(x, "Av1Settings", value.asInstanceOf[js.Any])
     

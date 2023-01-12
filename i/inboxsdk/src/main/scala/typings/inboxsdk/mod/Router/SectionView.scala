@@ -21,7 +21,8 @@ object SectionView {
     __obj.asInstanceOf[SectionView]
   }
   
-  extension [Self <: SectionView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionView] (val x: Self) extends AnyVal {
     
     inline def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
     

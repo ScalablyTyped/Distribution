@@ -27,7 +27,8 @@ object IGetDocumentRequest {
     __obj.asInstanceOf[IGetDocumentRequest]
   }
   
-  extension [Self <: IGetDocumentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGetDocumentRequest] (val x: Self) extends AnyVal {
     
     inline def setMask(value: IDocumentMask): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     

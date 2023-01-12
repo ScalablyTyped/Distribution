@@ -217,7 +217,8 @@ object Library {
     __obj.asInstanceOf[Library]
   }
   
-  extension [Self <: Library](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Library] (val x: Self) extends AnyVal {
     
     inline def setApprovalDate(value: String): Self = StObject.set(x, "approvalDate", value.asInstanceOf[js.Any])
     

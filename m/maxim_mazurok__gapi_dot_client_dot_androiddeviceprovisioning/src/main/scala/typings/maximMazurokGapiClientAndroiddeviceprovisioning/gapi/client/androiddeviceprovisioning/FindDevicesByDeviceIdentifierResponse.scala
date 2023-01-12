@@ -22,7 +22,8 @@ object FindDevicesByDeviceIdentifierResponse {
     __obj.asInstanceOf[FindDevicesByDeviceIdentifierResponse]
   }
   
-  extension [Self <: FindDevicesByDeviceIdentifierResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindDevicesByDeviceIdentifierResponse] (val x: Self) extends AnyVal {
     
     inline def setDevices(value: js.Array[Device]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     

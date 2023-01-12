@@ -20,7 +20,8 @@ object TypeofModuleGraphConnecti {
     __obj.asInstanceOf[TypeofModuleGraphConnecti]
   }
   
-  extension [Self <: TypeofModuleGraphConnecti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofModuleGraphConnecti] (val x: Self) extends AnyVal {
     
     inline def setAddConnectionStates(value: (/* a */ ConnectionState, /* b */ ConnectionState) => ConnectionState): Self = StObject.set(x, "addConnectionStates", js.Any.fromFunction2(value))
   }

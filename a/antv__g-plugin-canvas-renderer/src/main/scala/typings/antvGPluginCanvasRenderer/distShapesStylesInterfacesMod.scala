@@ -69,7 +69,8 @@ object distShapesStylesInterfacesMod {
       __obj.asInstanceOf[StyleRenderer]
     }
     
-    extension [Self <: StyleRenderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleRenderer] (val x: Self) extends AnyVal {
       
       inline def setRender(
         value: (CanvasRenderingContext2D, ParsedBaseStyleProps, DisplayObject[Any, Any], RenderingService) => Unit

@@ -21,7 +21,8 @@ object libAccordionPropsTypeMod {
       __obj.asInstanceOf[AccordionPropsTypes]
     }
     
-    extension [Self <: AccordionPropsTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionPropsTypes] (val x: Self) extends AnyVal {
       
       inline def setActiveKey(value: String | js.Array[String]): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       

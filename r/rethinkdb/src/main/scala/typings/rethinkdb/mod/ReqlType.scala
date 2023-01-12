@@ -17,7 +17,8 @@ object ReqlType {
     __obj.asInstanceOf[ReqlType]
   }
   
-  extension [Self <: ReqlType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReqlType] (val x: Self) extends AnyVal {
     
     inline def setDollarreql_typeDollar(value: String): Self = StObject.set(x, "$reql_type$", value.asInstanceOf[js.Any])
   }

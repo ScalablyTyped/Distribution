@@ -25,7 +25,8 @@ object UpdatePolicy {
     __obj.asInstanceOf[UpdatePolicy]
   }
   
-  extension [Self <: UpdatePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePolicy] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

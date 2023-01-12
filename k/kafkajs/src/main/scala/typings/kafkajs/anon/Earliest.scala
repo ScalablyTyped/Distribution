@@ -19,7 +19,8 @@ object Earliest {
     __obj.asInstanceOf[Earliest]
   }
   
-  extension [Self <: Earliest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Earliest] (val x: Self) extends AnyVal {
     
     inline def setEarliest(value: Boolean): Self = StObject.set(x, "earliest", value.asInstanceOf[js.Any])
     

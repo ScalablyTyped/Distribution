@@ -22,7 +22,8 @@ object OnCameraFrameCallbackResult {
     __obj.asInstanceOf[OnCameraFrameCallbackResult]
   }
   
-  extension [Self <: OnCameraFrameCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnCameraFrameCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

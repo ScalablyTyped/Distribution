@@ -15,7 +15,8 @@ object TrafficLayerOptions {
     __obj.asInstanceOf[TrafficLayerOptions]
   }
   
-  extension [Self <: TrafficLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrafficLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setPredictDate(value: PredictDate): Self = StObject.set(x, "predictDate", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object SpendLimit {
     __obj.asInstanceOf[SpendLimit]
   }
   
-  extension [Self <: SpendLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpendLimit] (val x: Self) extends AnyVal {
     
     inline def setEnforcedLimit(value: PrimitiveLong): Self = StObject.set(x, "EnforcedLimit", value.asInstanceOf[js.Any])
     

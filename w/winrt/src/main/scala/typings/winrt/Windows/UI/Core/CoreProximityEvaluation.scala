@@ -18,7 +18,8 @@ object CoreProximityEvaluation {
     __obj.asInstanceOf[CoreProximityEvaluation]
   }
   
-  extension [Self <: CoreProximityEvaluation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreProximityEvaluation] (val x: Self) extends AnyVal {
     
     inline def setAdjustedPoint(value: Point): Self = StObject.set(x, "adjustedPoint", value.asInstanceOf[js.Any])
     

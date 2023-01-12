@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[LINERIPPLEACTIVE]
     }
     
-    extension [Self <: LINERIPPLEACTIVE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LINERIPPLEACTIVE] (val x: Self) extends AnyVal {
       
       inline def setLINE_RIPPLE_ACTIVE(value: String): Self = StObject.set(x, "LINE_RIPPLE_ACTIVE", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCLineRippleAdapt]
     }
     
-    extension [Self <: PartialMDCLineRippleAdapt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCLineRippleAdapt] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

@@ -22,7 +22,8 @@ object PartialOmitPerformancereg {
     __obj.asInstanceOf[PartialOmitPerformancereg]
   }
   
-  extension [Self <: PartialOmitPerformancereg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOmitPerformancereg] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

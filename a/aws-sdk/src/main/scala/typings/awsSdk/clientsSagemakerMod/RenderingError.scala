@@ -23,7 +23,8 @@ object RenderingError {
     __obj.asInstanceOf[RenderingError]
   }
   
-  extension [Self <: RenderingError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderingError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

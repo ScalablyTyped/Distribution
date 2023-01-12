@@ -18,7 +18,8 @@ object IsBase64Options {
     __obj.asInstanceOf[IsBase64Options]
   }
   
-  extension [Self <: IsBase64Options](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsBase64Options] (val x: Self) extends AnyVal {
     
     inline def setUrlSafe(value: Boolean): Self = StObject.set(x, "urlSafe", value.asInstanceOf[js.Any])
     

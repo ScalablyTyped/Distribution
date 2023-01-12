@@ -37,7 +37,8 @@ object BatchUpdateContactsRequest {
     __obj.asInstanceOf[BatchUpdateContactsRequest]
   }
   
-  extension [Self <: BatchUpdateContactsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateContactsRequest] (val x: Self) extends AnyVal {
     
     inline def setContacts(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.people.gapi.client.people.Person} */ js.Any

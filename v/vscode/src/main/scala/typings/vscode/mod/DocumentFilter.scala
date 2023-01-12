@@ -41,7 +41,8 @@ object DocumentFilter {
     __obj.asInstanceOf[DocumentFilter]
   }
   
-  extension [Self <: DocumentFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentFilter] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

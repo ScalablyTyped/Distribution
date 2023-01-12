@@ -143,7 +143,8 @@ object distSrcLoggerMod {
       __obj.asInstanceOf[LogCallbackParams]
     }
     
-    extension [Self <: LogCallbackParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogCallbackParams] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -198,7 +199,8 @@ object distSrcLoggerMod {
       __obj.asInstanceOf[LogOptions]
     }
     
-    extension [Self <: LogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogOptions] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: LogLevelString): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     }

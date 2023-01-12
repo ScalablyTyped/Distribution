@@ -31,7 +31,8 @@ object ServerInfoObject {
     __obj.asInstanceOf[ServerInfoObject]
   }
   
-  extension [Self <: ServerInfoObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerInfoObject] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotServerInfoObject_typekey(value: ServerInfoObject): Self = StObject.set(x, "InfoPath.ServerInfoObject_typekey", value.asInstanceOf[js.Any])
     

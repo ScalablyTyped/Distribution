@@ -35,7 +35,8 @@ object libEventEventTypeErrorMod {
       __obj.asInstanceOf[EventTypeError]
     }
     
-    extension [Self <: EventTypeError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventTypeError] (val x: Self) extends AnyVal {
       
       inline def set_name(value: Any): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     }

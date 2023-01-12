@@ -25,7 +25,8 @@ object Apilogs {
     __obj.asInstanceOf[Apilogs]
   }
   
-  extension [Self <: Apilogs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Apilogs] (val x: Self) extends AnyVal {
     
     inline def setApilogs(value: String): Self = StObject.set(x, "apilogs", value.asInstanceOf[js.Any])
     

@@ -101,7 +101,8 @@ object AMap {
         __obj.asInstanceOf[typings.amapJsApiHeatmap.AMap.Heatmap.Data]
       }
       
-      extension [Self <: typings.amapJsApiHeatmap.AMap.Heatmap.Data](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.amapJsApiHeatmap.AMap.Heatmap.Data] (val x: Self) extends AnyVal {
         
         inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
@@ -130,7 +131,8 @@ object AMap {
         __obj.asInstanceOf[DataSet]
       }
       
-      extension [Self <: DataSet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataSet] (val x: Self) extends AnyVal {
         
         inline def setData(value: js.Array[typings.amapJsApiHeatmap.AMap.Heatmap.Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -187,7 +189,8 @@ object AMap {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def set3d(value: DrawGridLine): Self = StObject.set(x, "3d", value.asInstanceOf[js.Any])
         

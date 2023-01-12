@@ -130,7 +130,8 @@ object Component {
     __obj.asInstanceOf[Component]
   }
   
-  extension [Self <: Component](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
     
     inline def setAdd_disposing(value: js.Function => Unit): Self = StObject.set(x, "add_disposing", js.Any.fromFunction1(value))
     

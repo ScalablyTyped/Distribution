@@ -28,7 +28,8 @@ object DescribeTapeArchivesInput {
     __obj.asInstanceOf[DescribeTapeArchivesInput]
   }
   
-  extension [Self <: DescribeTapeArchivesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTapeArchivesInput] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PositiveIntObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

@@ -256,7 +256,8 @@ object distSrcIndexDotconsoleMod {
       __obj.asInstanceOf[FirestoreDatabase]
     }
     
-    extension [Self <: FirestoreDatabase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirestoreDatabase] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       

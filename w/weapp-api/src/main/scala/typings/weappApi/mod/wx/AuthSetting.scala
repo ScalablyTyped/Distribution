@@ -62,7 +62,8 @@ object AuthSetting {
     __obj.asInstanceOf[AuthSetting]
   }
   
-  extension [Self <: AuthSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthSetting] (val x: Self) extends AnyVal {
     
     inline def setScopeDotaddress(value: Boolean): Self = StObject.set(x, "scope.address", value.asInstanceOf[js.Any])
     

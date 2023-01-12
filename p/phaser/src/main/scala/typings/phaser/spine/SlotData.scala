@@ -35,7 +35,8 @@ object SlotData {
     __obj.asInstanceOf[SlotData]
   }
   
-  extension [Self <: SlotData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotData] (val x: Self) extends AnyVal {
     
     inline def setAttachmentName(value: String): Self = StObject.set(x, "attachmentName", value.asInstanceOf[js.Any])
     

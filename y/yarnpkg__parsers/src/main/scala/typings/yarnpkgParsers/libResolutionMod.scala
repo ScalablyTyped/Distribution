@@ -28,7 +28,8 @@ object libResolutionMod {
       __obj.asInstanceOf[Resolution]
     }
     
-    extension [Self <: Resolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resolution] (val x: Self) extends AnyVal {
       
       inline def setDescriptor(value: Description): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
       

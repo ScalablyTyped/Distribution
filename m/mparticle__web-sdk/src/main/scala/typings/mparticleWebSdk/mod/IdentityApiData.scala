@@ -15,7 +15,8 @@ object IdentityApiData {
     __obj.asInstanceOf[IdentityApiData]
   }
   
-  extension [Self <: IdentityApiData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityApiData] (val x: Self) extends AnyVal {
     
     inline def setUserIdentities(value: UserIdentities): Self = StObject.set(x, "userIdentities", value.asInstanceOf[js.Any])
   }

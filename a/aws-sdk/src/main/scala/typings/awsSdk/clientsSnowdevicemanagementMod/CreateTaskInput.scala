@@ -38,7 +38,8 @@ object CreateTaskInput {
     __obj.asInstanceOf[CreateTaskInput]
   }
   
-  extension [Self <: CreateTaskInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTaskInput] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotencyToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object FocusResult {
     __obj.asInstanceOf[FocusResult]
   }
   
-  extension [Self <: FocusResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FocusResult] (val x: Self) extends AnyVal {
     
     inline def setFocusProps(value: DOMAttributes[FocusableElement]): Self = StObject.set(x, "focusProps", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object AudioSpecimenProps {
     __obj.asInstanceOf[AudioSpecimenProps]
   }
   
-  extension [Self <: AudioSpecimenProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioSpecimenProps] (val x: Self) extends AnyVal {
     
     inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     

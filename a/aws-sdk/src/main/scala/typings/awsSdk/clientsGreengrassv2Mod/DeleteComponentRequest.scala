@@ -18,7 +18,8 @@ object DeleteComponentRequest {
     __obj.asInstanceOf[DeleteComponentRequest]
   }
   
-  extension [Self <: DeleteComponentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteComponentRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ComponentVersionARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }

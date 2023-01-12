@@ -28,7 +28,8 @@ object LedgerEncryptionDescription {
     __obj.asInstanceOf[LedgerEncryptionDescription]
   }
   
-  extension [Self <: LedgerEncryptionDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LedgerEncryptionDescription] (val x: Self) extends AnyVal {
     
     inline def setEncryptionStatus(value: EncryptionStatus): Self = StObject.set(x, "EncryptionStatus", value.asInstanceOf[js.Any])
     

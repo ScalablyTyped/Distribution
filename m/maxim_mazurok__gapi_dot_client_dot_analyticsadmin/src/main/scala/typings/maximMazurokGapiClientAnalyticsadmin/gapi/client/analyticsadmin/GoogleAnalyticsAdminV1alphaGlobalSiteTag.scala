@@ -22,7 +22,8 @@ object GoogleAnalyticsAdminV1alphaGlobalSiteTag {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaGlobalSiteTag]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaGlobalSiteTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaGlobalSiteTag] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

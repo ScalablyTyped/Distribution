@@ -29,7 +29,8 @@ object WriteControl {
     __obj.asInstanceOf[WriteControl]
   }
   
-  extension [Self <: WriteControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteControl] (val x: Self) extends AnyVal {
     
     inline def setRequiredRevisionId(value: String): Self = StObject.set(x, "requiredRevisionId", value.asInstanceOf[js.Any])
     

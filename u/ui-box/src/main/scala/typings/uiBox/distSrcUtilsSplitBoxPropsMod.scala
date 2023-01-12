@@ -49,7 +49,8 @@ object distSrcUtilsSplitBoxPropsMod {
       __obj.asInstanceOf[SplitBoxProps[P]]
     }
     
-    extension [Self <: SplitBoxProps[?], P /* <: EnhancerProps */](x: Self & SplitBoxProps[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitBoxProps[?], P /* <: EnhancerProps */] (val x: Self & SplitBoxProps[P]) extends AnyVal {
       
       inline def setMatchedProps(
         value: Pick[

@@ -22,7 +22,8 @@ object RulerData {
     __obj.asInstanceOf[RulerData]
   }
   
-  extension [Self <: RulerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RulerData] (val x: Self) extends AnyVal {
     
     inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

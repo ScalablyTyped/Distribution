@@ -25,7 +25,8 @@ object Range {
     __obj.asInstanceOf[Range]
   }
   
-  extension [Self <: Range](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
     
     inline def setHigh(value: Quantity): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     

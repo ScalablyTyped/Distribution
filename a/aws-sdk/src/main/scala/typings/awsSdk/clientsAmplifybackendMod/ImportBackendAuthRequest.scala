@@ -49,7 +49,8 @@ object ImportBackendAuthRequest {
     __obj.asInstanceOf[ImportBackendAuthRequest]
   }
   
-  extension [Self <: ImportBackendAuthRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportBackendAuthRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: string): Self = StObject.set(x, "AppId", value.asInstanceOf[js.Any])
     

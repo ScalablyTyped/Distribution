@@ -96,7 +96,8 @@ object XCalendar4 {
     __obj.asInstanceOf[XCalendar4]
   }
   
-  extension [Self <: XCalendar4](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCalendar4] (val x: Self) extends AnyVal {
     
     inline def setGetLocalDateTime(value: () => Double): Self = StObject.set(x, "getLocalDateTime", js.Any.fromFunction0(value))
     

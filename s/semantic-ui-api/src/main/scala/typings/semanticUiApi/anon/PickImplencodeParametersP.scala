@@ -152,7 +152,8 @@ object PickImplencodeParametersP {
     __obj.asInstanceOf[PickImplencodeParametersP]
   }
   
-  extension [Self <: PickImplencodeParametersP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplencodeParametersP] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String | `false`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

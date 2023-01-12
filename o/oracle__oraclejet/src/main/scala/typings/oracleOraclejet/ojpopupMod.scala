@@ -377,7 +377,8 @@ object ojpopupMod {
         __obj.asInstanceOf[Position]
       }
       
-      extension [Self <: Position](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
         
         inline def setAt(value: PositionAlign): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
         
@@ -415,7 +416,8 @@ object ojpopupMod {
         __obj.asInstanceOf[PositionAlign]
       }
       
-      extension [Self <: PositionAlign](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PositionAlign] (val x: Self) extends AnyVal {
         
         inline def setHorizontal(value: start | end | left | center | bottom): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
         
@@ -441,7 +443,8 @@ object ojpopupMod {
         __obj.asInstanceOf[PositionPoint]
       }
       
-      extension [Self <: PositionPoint](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PositionPoint] (val x: Self) extends AnyVal {
         
         inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
@@ -621,7 +624,8 @@ object ojpopupMod {
       __obj.asInstanceOf[ojPopupEventMap]
     }
     
-    extension [Self <: ojPopupEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojPopupEventMap] (val x: Self) extends AnyVal {
       
       inline def setAutoDismissChanged(value: JetElementCustomEvent[none | focusLoss]): Self = StObject.set(x, "autoDismissChanged", value.asInstanceOf[js.Any])
       
@@ -685,7 +689,8 @@ object ojpopupMod {
       __obj.asInstanceOf[ojPopupSettableProperties]
     }
     
-    extension [Self <: ojPopupSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojPopupSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setAutoDismiss(value: none | focusLoss): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
       
@@ -729,7 +734,8 @@ object ojpopupMod {
       __obj.asInstanceOf[ojPopupSettablePropertiesLenient]
     }
     
-    extension [Self <: ojPopupSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojPopupSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setAutoDismiss(value: none | focusLoss): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
       

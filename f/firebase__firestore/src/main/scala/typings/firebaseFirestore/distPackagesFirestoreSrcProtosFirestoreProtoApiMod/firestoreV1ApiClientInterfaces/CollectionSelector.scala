@@ -17,7 +17,8 @@ object CollectionSelector {
     __obj.asInstanceOf[CollectionSelector]
   }
   
-  extension [Self <: CollectionSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionSelector] (val x: Self) extends AnyVal {
     
     inline def setAllDescendants(value: Boolean): Self = StObject.set(x, "allDescendants", value.asInstanceOf[js.Any])
     

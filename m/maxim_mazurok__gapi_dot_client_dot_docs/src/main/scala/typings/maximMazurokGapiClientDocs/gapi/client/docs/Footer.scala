@@ -19,7 +19,8 @@ object Footer {
     __obj.asInstanceOf[Footer]
   }
   
-  extension [Self <: Footer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Footer] (val x: Self) extends AnyVal {
     
     inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

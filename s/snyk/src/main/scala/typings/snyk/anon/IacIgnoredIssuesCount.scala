@@ -40,7 +40,8 @@ object IacIgnoredIssuesCount {
     __obj.asInstanceOf[IacIgnoredIssuesCount]
   }
   
-  extension [Self <: IacIgnoredIssuesCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IacIgnoredIssuesCount] (val x: Self) extends AnyVal {
     
     inline def setIacIgnoredIssuesCount(value: Double): Self = StObject.set(x, "iacIgnoredIssuesCount", value.asInstanceOf[js.Any])
     

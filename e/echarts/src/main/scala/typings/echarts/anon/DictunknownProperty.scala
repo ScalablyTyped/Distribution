@@ -484,7 +484,8 @@ object DictunknownProperty {
     __obj.asInstanceOf[DictunknownProperty]
   }
   
-  extension [Self <: DictunknownProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictunknownProperty] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

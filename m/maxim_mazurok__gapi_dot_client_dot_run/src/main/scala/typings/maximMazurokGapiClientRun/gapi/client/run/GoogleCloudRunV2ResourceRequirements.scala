@@ -24,7 +24,8 @@ object GoogleCloudRunV2ResourceRequirements {
     __obj.asInstanceOf[GoogleCloudRunV2ResourceRequirements]
   }
   
-  extension [Self <: GoogleCloudRunV2ResourceRequirements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2ResourceRequirements] (val x: Self) extends AnyVal {
     
     inline def setCpuIdle(value: Boolean): Self = StObject.set(x, "cpuIdle", value.asInstanceOf[js.Any])
     

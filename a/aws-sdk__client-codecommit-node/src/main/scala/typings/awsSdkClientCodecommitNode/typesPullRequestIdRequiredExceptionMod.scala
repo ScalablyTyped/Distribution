@@ -35,7 +35,8 @@ object typesPullRequestIdRequiredExceptionMod {
       __obj.asInstanceOf[PullRequestIdRequiredException]
     }
     
-    extension [Self <: PullRequestIdRequiredException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PullRequestIdRequiredException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestIdRequiredException

@@ -26,7 +26,8 @@ object StringOptions {
     __obj.asInstanceOf[StringOptions]
   }
   
-  extension [Self <: StringOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringOptions] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

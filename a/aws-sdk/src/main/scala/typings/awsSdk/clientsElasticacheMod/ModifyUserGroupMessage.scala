@@ -28,7 +28,8 @@ object ModifyUserGroupMessage {
     __obj.asInstanceOf[ModifyUserGroupMessage]
   }
   
-  extension [Self <: ModifyUserGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyUserGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setUserGroupId(value: String): Self = StObject.set(x, "UserGroupId", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object ConditionalColorScaleCriterion {
     __obj.asInstanceOf[ConditionalColorScaleCriterion]
   }
   
-  extension [Self <: ConditionalColorScaleCriterion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalColorScaleCriterion] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

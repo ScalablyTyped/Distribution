@@ -59,7 +59,8 @@ object NumericTextBoxOptions {
     __obj.asInstanceOf[NumericTextBoxOptions]
   }
   
-  extension [Self <: NumericTextBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumericTextBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: /* e */ NumericTextBoxChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

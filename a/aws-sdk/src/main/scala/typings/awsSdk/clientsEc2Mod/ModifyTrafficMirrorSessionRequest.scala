@@ -58,7 +58,8 @@ object ModifyTrafficMirrorSessionRequest {
     __obj.asInstanceOf[ModifyTrafficMirrorSessionRequest]
   }
   
-  extension [Self <: ModifyTrafficMirrorSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyTrafficMirrorSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

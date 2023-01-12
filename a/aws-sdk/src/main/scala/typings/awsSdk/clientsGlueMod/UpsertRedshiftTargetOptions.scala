@@ -28,7 +28,8 @@ object UpsertRedshiftTargetOptions {
     __obj.asInstanceOf[UpsertRedshiftTargetOptions]
   }
   
-  extension [Self <: UpsertRedshiftTargetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpsertRedshiftTargetOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectionName(value: EnclosedInStringProperty): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
     

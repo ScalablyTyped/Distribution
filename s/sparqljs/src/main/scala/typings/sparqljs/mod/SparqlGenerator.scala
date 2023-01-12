@@ -17,7 +17,8 @@ object SparqlGenerator {
     __obj.asInstanceOf[SparqlGenerator]
   }
   
-  extension [Self <: SparqlGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparqlGenerator] (val x: Self) extends AnyVal {
     
     inline def setCreateGenerator(value: () => Any): Self = StObject.set(x, "createGenerator", js.Any.fromFunction0(value))
     

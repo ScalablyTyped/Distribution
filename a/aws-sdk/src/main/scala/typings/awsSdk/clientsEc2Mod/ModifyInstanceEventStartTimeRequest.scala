@@ -33,7 +33,8 @@ object ModifyInstanceEventStartTimeRequest {
     __obj.asInstanceOf[ModifyInstanceEventStartTimeRequest]
   }
   
-  extension [Self <: ModifyInstanceEventStartTimeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyInstanceEventStartTimeRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

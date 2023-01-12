@@ -18,7 +18,8 @@ object libBaseComponentDottypesMod {
       __obj.asInstanceOf[IBaseProps[T]]
     }
     
-    extension [Self <: IBaseProps[?], T](x: Self & IBaseProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseProps[?], T] (val x: Self & IBaseProps[T]) extends AnyVal {
       
       inline def setComponentRef(value: IRefObject[T]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       

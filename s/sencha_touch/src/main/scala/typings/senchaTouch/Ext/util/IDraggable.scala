@@ -125,7 +125,8 @@ object IDraggable {
     __obj.asInstanceOf[IDraggable]
   }
   
-  extension [Self <: IDraggable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDraggable] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

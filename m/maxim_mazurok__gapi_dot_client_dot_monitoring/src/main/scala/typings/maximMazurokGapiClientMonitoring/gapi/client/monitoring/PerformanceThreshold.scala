@@ -22,7 +22,8 @@ object PerformanceThreshold {
     __obj.asInstanceOf[PerformanceThreshold]
   }
   
-  extension [Self <: PerformanceThreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceThreshold] (val x: Self) extends AnyVal {
     
     inline def setBasicSliPerformance(value: BasicSli): Self = StObject.set(x, "basicSliPerformance", value.asInstanceOf[js.Any])
     

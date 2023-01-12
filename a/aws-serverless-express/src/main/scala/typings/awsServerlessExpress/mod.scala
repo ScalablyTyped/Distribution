@@ -159,7 +159,8 @@ object mod {
       __obj.asInstanceOf[ProxyResult]
     }
     
-    extension [Self <: ProxyResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyResult] (val x: Self) extends AnyVal {
       
       inline def setPromise(value: js.Promise[Response]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     }
@@ -178,7 +179,8 @@ object mod {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

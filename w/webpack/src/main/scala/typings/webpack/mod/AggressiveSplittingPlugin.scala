@@ -21,7 +21,8 @@ object AggressiveSplittingPlugin {
     __obj.asInstanceOf[AggressiveSplittingPlugin]
   }
   
-  extension [Self <: AggressiveSplittingPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggressiveSplittingPlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     

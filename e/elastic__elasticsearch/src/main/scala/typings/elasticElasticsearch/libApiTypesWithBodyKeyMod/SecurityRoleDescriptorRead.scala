@@ -33,7 +33,8 @@ object SecurityRoleDescriptorRead {
     __obj.asInstanceOf[SecurityRoleDescriptorRead]
   }
   
-  extension [Self <: SecurityRoleDescriptorRead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityRoleDescriptorRead] (val x: Self) extends AnyVal {
     
     inline def setApplications(value: js.Array[SecurityApplicationPrivileges]): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     

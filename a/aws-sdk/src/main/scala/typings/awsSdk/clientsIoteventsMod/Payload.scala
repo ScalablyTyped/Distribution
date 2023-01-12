@@ -24,7 +24,8 @@ object Payload {
     __obj.asInstanceOf[Payload]
   }
   
-  extension [Self <: Payload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
     
     inline def setContentExpression(value: ContentExpression): Self = StObject.set(x, "contentExpression", value.asInstanceOf[js.Any])
     

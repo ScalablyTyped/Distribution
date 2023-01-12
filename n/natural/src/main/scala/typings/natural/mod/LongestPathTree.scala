@@ -19,7 +19,8 @@ object LongestPathTree {
     __obj.asInstanceOf[LongestPathTree]
   }
   
-  extension [Self <: LongestPathTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LongestPathTree] (val x: Self) extends AnyVal {
     
     inline def setGetDistTo(value: Double => Double): Self = StObject.set(x, "getDistTo", js.Any.fromFunction1(value))
     

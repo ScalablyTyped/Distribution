@@ -15,7 +15,8 @@ object IPING_PONG {
     __obj.asInstanceOf[IPING_PONG]
   }
   
-  extension [Self <: IPING_PONG](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPING_PONG] (val x: Self) extends AnyVal {
     
     inline def setLagValue(value: Double): Self = StObject.set(x, "lagValue", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object PrinterShare {
     __obj.asInstanceOf[PrinterShare]
   }
   
-  extension [Self <: PrinterShare](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterShare] (val x: Self) extends AnyVal {
     
     inline def setAllowAllUsers(value: Boolean): Self = StObject.set(x, "allowAllUsers", value.asInstanceOf[js.Any])
     

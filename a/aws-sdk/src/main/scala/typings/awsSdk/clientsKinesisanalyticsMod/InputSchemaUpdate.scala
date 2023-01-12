@@ -28,7 +28,8 @@ object InputSchemaUpdate {
     __obj.asInstanceOf[InputSchemaUpdate]
   }
   
-  extension [Self <: InputSchemaUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputSchemaUpdate] (val x: Self) extends AnyVal {
     
     inline def setRecordColumnUpdates(value: RecordColumns): Self = StObject.set(x, "RecordColumnUpdates", value.asInstanceOf[js.Any])
     

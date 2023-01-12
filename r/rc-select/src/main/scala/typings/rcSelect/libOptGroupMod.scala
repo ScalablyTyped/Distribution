@@ -32,7 +32,8 @@ object libOptGroupMod extends Shortcut {
       __obj.asInstanceOf[OptGroupProps]
     }
     
-    extension [Self <: OptGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptGroupProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

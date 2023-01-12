@@ -38,7 +38,8 @@ object distDisplayObjectsRectMod {
       __obj.asInstanceOf[ParsedRectStyleProps]
     }
     
-    extension [Self <: ParsedRectStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedRectStyleProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object distDisplayObjectsRectMod {
       __obj.asInstanceOf[RectStyleProps]
     }
     
-    extension [Self <: RectStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RectStyleProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

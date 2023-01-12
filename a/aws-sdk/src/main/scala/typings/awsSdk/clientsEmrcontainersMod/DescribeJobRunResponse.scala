@@ -18,7 +18,8 @@ object DescribeJobRunResponse {
     __obj.asInstanceOf[DescribeJobRunResponse]
   }
   
-  extension [Self <: DescribeJobRunResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeJobRunResponse] (val x: Self) extends AnyVal {
     
     inline def setJobRun(value: JobRun): Self = StObject.set(x, "jobRun", value.asInstanceOf[js.Any])
     

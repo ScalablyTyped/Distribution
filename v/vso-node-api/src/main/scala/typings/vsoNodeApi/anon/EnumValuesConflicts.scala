@@ -15,7 +15,8 @@ object EnumValuesConflicts {
     __obj.asInstanceOf[EnumValuesConflicts]
   }
   
-  extension [Self <: EnumValuesConflicts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesConflicts] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Conflicts): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

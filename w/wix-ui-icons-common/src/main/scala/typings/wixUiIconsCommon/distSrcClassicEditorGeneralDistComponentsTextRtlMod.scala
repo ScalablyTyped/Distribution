@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsTextRtlMod extends Shortcut {
       __obj.asInstanceOf[TextRtlProps]
     }
     
-    extension [Self <: TextRtlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextRtlProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

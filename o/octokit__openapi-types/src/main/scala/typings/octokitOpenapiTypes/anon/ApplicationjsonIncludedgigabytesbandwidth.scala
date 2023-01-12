@@ -17,7 +17,8 @@ object ApplicationjsonIncludedgigabytesbandwidth {
     __obj.asInstanceOf[ApplicationjsonIncludedgigabytesbandwidth]
   }
   
-  extension [Self <: ApplicationjsonIncludedgigabytesbandwidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonIncludedgigabytesbandwidth] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Includedgigabytesbandwidth): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,8 @@ object XComponentEnumerationAccess {
     __obj.asInstanceOf[XComponentEnumerationAccess]
   }
   
-  extension [Self <: XComponentEnumerationAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XComponentEnumerationAccess] (val x: Self) extends AnyVal {
     
     inline def setCreateComponentEnumeration(value: () => XComponentEnumeration): Self = StObject.set(x, "createComponentEnumeration", js.Any.fromFunction0(value))
   }

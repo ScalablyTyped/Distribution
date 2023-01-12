@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object anon {
       __obj.asInstanceOf[RecordDefaultMethodsLogge]
     }
     
-    extension [Self <: RecordDefaultMethodsLogge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordDefaultMethodsLogge] (val x: Self) extends AnyVal {
       
       inline def setAwait(value: LoggerFunc): Self = StObject.set(x, "await", value.asInstanceOf[js.Any])
       

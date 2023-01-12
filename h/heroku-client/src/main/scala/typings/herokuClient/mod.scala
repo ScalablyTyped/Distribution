@@ -99,7 +99,8 @@ object mod {
       __obj.asInstanceOf[HerokuClientOptions]
     }
     
-    extension [Self <: HerokuClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HerokuClientOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -333,7 +334,8 @@ object mod {
       __obj.asInstanceOf[RequestCache]
     }
     
-    extension [Self <: RequestCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestCache] (val x: Self) extends AnyVal {
       
       inline def setGet(value: (String, js.Function2[/* err */ Any, /* value */ Any, Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
@@ -352,7 +354,8 @@ object mod {
       __obj.asInstanceOf[RequestLogger]
     }
     
-    extension [Self <: RequestLogger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestLogger] (val x: Self) extends AnyVal {
       
       inline def setLog(value: Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     }
@@ -373,7 +376,8 @@ object mod {
       __obj.asInstanceOf[RequestURL]
     }
     
-    extension [Self <: RequestURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestURL] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

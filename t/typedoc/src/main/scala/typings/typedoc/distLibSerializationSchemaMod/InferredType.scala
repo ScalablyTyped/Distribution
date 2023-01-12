@@ -22,7 +22,8 @@ object InferredType {
     __obj.asInstanceOf[InferredType]
   }
   
-  extension [Self <: InferredType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferredType] (val x: Self) extends AnyVal {
     
     inline def setConstraint(value: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.SomeType]]): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     

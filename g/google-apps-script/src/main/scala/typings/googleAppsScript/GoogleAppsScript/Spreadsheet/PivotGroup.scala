@@ -84,7 +84,8 @@ object PivotGroup {
     __obj.asInstanceOf[PivotGroup]
   }
   
-  extension [Self <: PivotGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGroup] (val x: Self) extends AnyVal {
     
     inline def setAddManualGroupingRule(value: (String, js.Array[Any]) => PivotGroup): Self = StObject.set(x, "addManualGroupingRule", js.Any.fromFunction2(value))
     

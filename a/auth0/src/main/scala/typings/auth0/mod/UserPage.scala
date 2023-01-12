@@ -17,7 +17,8 @@ object UserPage {
     __obj.asInstanceOf[UserPage[A, U]]
   }
   
-  extension [Self <: UserPage[?, ?], A, U](x: Self & (UserPage[A, U])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPage[?, ?], A, U] (val x: Self & (UserPage[A, U])) extends AnyVal {
     
     inline def setUsers(value: js.Array[User[A, U]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     

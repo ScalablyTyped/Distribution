@@ -71,7 +71,8 @@ object trackerMod {
       @js.native
       def apply(): Unit = js.native
       
-      extension [Self <: Computation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Computation] (val x: Self) extends AnyVal {
         
         inline def setFirstRun(value: Boolean): Self = StObject.set(x, "firstRun", value.asInstanceOf[js.Any])
         

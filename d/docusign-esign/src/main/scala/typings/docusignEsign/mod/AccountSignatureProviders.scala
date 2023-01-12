@@ -18,7 +18,8 @@ object AccountSignatureProviders {
     __obj.asInstanceOf[AccountSignatureProviders]
   }
   
-  extension [Self <: AccountSignatureProviders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountSignatureProviders] (val x: Self) extends AnyVal {
     
     inline def setSignatureProviders(value: js.Array[AccountSignatureProvider]): Self = StObject.set(x, "signatureProviders", value.asInstanceOf[js.Any])
     

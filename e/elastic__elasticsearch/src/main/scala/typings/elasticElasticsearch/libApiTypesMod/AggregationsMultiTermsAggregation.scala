@@ -33,7 +33,8 @@ object AggregationsMultiTermsAggregation {
     __obj.asInstanceOf[AggregationsMultiTermsAggregation]
   }
   
-  extension [Self <: AggregationsMultiTermsAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsMultiTermsAggregation] (val x: Self) extends AnyVal {
     
     inline def setCollect_mode(value: AggregationsTermsAggregationCollectMode): Self = StObject.set(x, "collect_mode", value.asInstanceOf[js.Any])
     

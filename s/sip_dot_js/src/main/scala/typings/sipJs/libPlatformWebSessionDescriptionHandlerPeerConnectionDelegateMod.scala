@@ -80,7 +80,8 @@ object libPlatformWebSessionDescriptionHandlerPeerConnectionDelegateMod {
       __obj.asInstanceOf[PeerConnectionDelegate]
     }
     
-    extension [Self <: PeerConnectionDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerConnectionDelegate] (val x: Self) extends AnyVal {
       
       inline def setOnconnectionstatechange(value: /* event */ Event => Unit): Self = StObject.set(x, "onconnectionstatechange", js.Any.fromFunction1(value))
       

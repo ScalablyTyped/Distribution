@@ -37,7 +37,8 @@ object HoriOrientationFormat {
     __obj.asInstanceOf[HoriOrientationFormat]
   }
   
-  extension [Self <: HoriOrientationFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoriOrientationFormat] (val x: Self) extends AnyVal {
     
     inline def setHorizontalOrientation(value: Double): Self = StObject.set(x, "HorizontalOrientation", value.asInstanceOf[js.Any])
     

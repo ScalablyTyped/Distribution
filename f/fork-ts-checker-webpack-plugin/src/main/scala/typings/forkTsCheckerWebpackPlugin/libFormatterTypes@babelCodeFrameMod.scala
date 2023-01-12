@@ -40,7 +40,8 @@ object `libFormatterTypes@babelCodeFrameMod` {
       __obj.asInstanceOf[BabelCodeFrameOptions]
     }
     
-    extension [Self <: BabelCodeFrameOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BabelCodeFrameOptions] (val x: Self) extends AnyVal {
       
       inline def setForceColor(value: Boolean): Self = StObject.set(x, "forceColor", value.asInstanceOf[js.Any])
       

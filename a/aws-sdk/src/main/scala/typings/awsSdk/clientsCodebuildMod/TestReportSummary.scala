@@ -28,7 +28,8 @@ object TestReportSummary {
     __obj.asInstanceOf[TestReportSummary]
   }
   
-  extension [Self <: TestReportSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestReportSummary] (val x: Self) extends AnyVal {
     
     inline def setDurationInNanoSeconds(value: WrapperLong): Self = StObject.set(x, "durationInNanoSeconds", value.asInstanceOf[js.Any])
     

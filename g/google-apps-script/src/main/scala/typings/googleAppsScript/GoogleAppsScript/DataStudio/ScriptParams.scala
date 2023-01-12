@@ -19,7 +19,8 @@ object ScriptParams {
     __obj.asInstanceOf[ScriptParams]
   }
   
-  extension [Self <: ScriptParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptParams] (val x: Self) extends AnyVal {
     
     inline def setLastRefresh(value: String): Self = StObject.set(x, "lastRefresh", value.asInstanceOf[js.Any])
     

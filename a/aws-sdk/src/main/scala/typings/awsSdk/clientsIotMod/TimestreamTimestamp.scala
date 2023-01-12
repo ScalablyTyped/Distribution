@@ -23,7 +23,8 @@ object TimestreamTimestamp {
     __obj.asInstanceOf[TimestreamTimestamp]
   }
   
-  extension [Self <: TimestreamTimestamp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimestreamTimestamp] (val x: Self) extends AnyVal {
     
     inline def setUnit(value: TimestreamTimestampUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     

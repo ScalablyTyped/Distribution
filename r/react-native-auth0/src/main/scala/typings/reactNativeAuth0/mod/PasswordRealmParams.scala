@@ -23,7 +23,8 @@ object PasswordRealmParams {
     __obj.asInstanceOf[PasswordRealmParams]
   }
   
-  extension [Self <: PasswordRealmParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordRealmParams] (val x: Self) extends AnyVal {
     
     inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     

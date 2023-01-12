@@ -18,7 +18,8 @@ object USBConnectionEventInit {
     __obj.asInstanceOf[USBConnectionEventInit]
   }
   
-  extension [Self <: USBConnectionEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: USBConnectionEventInit] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: USBDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
   }

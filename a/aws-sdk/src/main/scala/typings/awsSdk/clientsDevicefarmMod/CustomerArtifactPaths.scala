@@ -28,7 +28,8 @@ object CustomerArtifactPaths {
     __obj.asInstanceOf[CustomerArtifactPaths]
   }
   
-  extension [Self <: CustomerArtifactPaths](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerArtifactPaths] (val x: Self) extends AnyVal {
     
     inline def setAndroidPaths(value: AndroidPaths): Self = StObject.set(x, "androidPaths", value.asInstanceOf[js.Any])
     

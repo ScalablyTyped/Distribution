@@ -35,7 +35,8 @@ object contribKatex2texMod {
       __obj.asInstanceOf[CopyDelimiters]
     }
     
-    extension [Self <: CopyDelimiters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyDelimiters] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: js.Tuple2[DollarDollar | `[`, DollarDollar | `]`]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       

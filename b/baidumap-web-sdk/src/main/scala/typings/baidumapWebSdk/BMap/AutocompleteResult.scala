@@ -19,7 +19,8 @@ object AutocompleteResult {
     __obj.asInstanceOf[AutocompleteResult]
   }
   
-  extension [Self <: AutocompleteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutocompleteResult] (val x: Self) extends AnyVal {
     
     inline def setGetNumPois(value: () => Double): Self = StObject.set(x, "getNumPois", js.Any.fromFunction0(value))
     

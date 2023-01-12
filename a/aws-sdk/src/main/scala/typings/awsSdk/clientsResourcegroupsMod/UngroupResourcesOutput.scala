@@ -28,7 +28,8 @@ object UngroupResourcesOutput {
     __obj.asInstanceOf[UngroupResourcesOutput]
   }
   
-  extension [Self <: UngroupResourcesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UngroupResourcesOutput] (val x: Self) extends AnyVal {
     
     inline def setFailed(value: FailedResourceList): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     

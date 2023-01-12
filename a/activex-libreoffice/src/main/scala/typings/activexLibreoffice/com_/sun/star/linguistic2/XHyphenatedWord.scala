@@ -83,7 +83,8 @@ object XHyphenatedWord {
     __obj.asInstanceOf[XHyphenatedWord]
   }
   
-  extension [Self <: XHyphenatedWord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHyphenatedWord] (val x: Self) extends AnyVal {
     
     inline def setGetHyphenPos(value: () => Double): Self = StObject.set(x, "getHyphenPos", js.Any.fromFunction0(value))
     

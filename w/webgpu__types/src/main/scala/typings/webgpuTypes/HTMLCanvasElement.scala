@@ -17,7 +17,8 @@ object HTMLCanvasElement {
     __obj.asInstanceOf[HTMLCanvasElement]
   }
   
-  extension [Self <: HTMLCanvasElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLCanvasElement] (val x: Self) extends AnyVal {
     
     inline def setGetContext(value: webgpu => GPUCanvasContext | Null): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
   }

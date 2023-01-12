@@ -28,7 +28,8 @@ object DescribeCustomKeyStoresResponse {
     __obj.asInstanceOf[DescribeCustomKeyStoresResponse]
   }
   
-  extension [Self <: DescribeCustomKeyStoresResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCustomKeyStoresResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomKeyStores(value: CustomKeyStoresList): Self = StObject.set(x, "CustomKeyStores", value.asInstanceOf[js.Any])
     

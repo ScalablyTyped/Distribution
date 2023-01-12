@@ -208,7 +208,8 @@ object datatableConfig {
     __obj.asInstanceOf[datatableConfig]
   }
   
-  extension [Self <: datatableConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: datatableConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

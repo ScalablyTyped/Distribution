@@ -23,7 +23,8 @@ object PublishAdvancedOptions {
     __obj.asInstanceOf[PublishAdvancedOptions]
   }
   
-  extension [Self <: PublishAdvancedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishAdvancedOptions] (val x: Self) extends AnyVal {
     
     inline def setEligible_authid(value: String | js.Array[String]): Self = StObject.set(x, "eligible_authid", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object Encoder {
     __obj.asInstanceOf[Encoder]
   }
   
-  extension [Self <: Encoder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Encoder] (val x: Self) extends AnyVal {
     
     inline def setParse(value: String => WordArray): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     

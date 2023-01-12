@@ -61,7 +61,8 @@ object PartialStyleRulesListItemButton {
     __obj.asInstanceOf[PartialStyleRulesListItemButton]
   }
   
-  extension [Self <: PartialStyleRulesListItemButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesListItemButton] (val x: Self) extends AnyVal {
     
     inline def setButton(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

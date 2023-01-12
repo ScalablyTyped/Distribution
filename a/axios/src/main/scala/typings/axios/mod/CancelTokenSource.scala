@@ -29,7 +29,8 @@ object CancelTokenSource {
     __obj.asInstanceOf[CancelTokenSource]
   }
   
-  extension [Self <: CancelTokenSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelTokenSource] (val x: Self) extends AnyVal {
     
     inline def setCancel(
       value: (/* message */ js.UndefOr[String], /* config */ js.UndefOr[AxiosRequestConfig[Any]], /* request */ js.UndefOr[Any]) => Unit

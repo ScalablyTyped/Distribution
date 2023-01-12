@@ -309,7 +309,8 @@ object mod {
       __obj.asInstanceOf[CookieOptions]
     }
     
-    extension [Self <: CookieOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieOptions] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -371,7 +372,8 @@ object mod {
       __obj.asInstanceOf[SessionData]
     }
     
-    extension [Self <: SessionData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionData] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: Cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     }
@@ -507,7 +509,8 @@ object mod {
       __obj.asInstanceOf[SessionOptions]
     }
     
-    extension [Self <: SessionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionOptions] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: CookieOptions): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
@@ -595,7 +598,8 @@ object mod {
           __obj.asInstanceOf[Request]
         }
         
-        extension [Self <: Request](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
           
           inline def setSession(value: SessionPartialSessionData): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
           

@@ -23,7 +23,8 @@ object KnnSearchRequest {
     __obj.asInstanceOf[KnnSearchRequest]
   }
   
-  extension [Self <: KnnSearchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnnSearchRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Docvaluefields): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

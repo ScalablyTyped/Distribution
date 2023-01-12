@@ -15,7 +15,8 @@ object RoutingErrorEvent {
     __obj.asInstanceOf[RoutingErrorEvent]
   }
   
-  extension [Self <: RoutingErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutingErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: IError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object GetRepositoryCatalogDataRequest {
     __obj.asInstanceOf[GetRepositoryCatalogDataRequest]
   }
   
-  extension [Self <: GetRepositoryCatalogDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRepositoryCatalogDataRequest] (val x: Self) extends AnyVal {
     
     inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     

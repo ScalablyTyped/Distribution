@@ -27,7 +27,8 @@ object distTypesOnStageGeneralDistComponentsSortMod extends Shortcut {
       __obj.asInstanceOf[SortProps]
     }
     
-    extension [Self <: SortProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

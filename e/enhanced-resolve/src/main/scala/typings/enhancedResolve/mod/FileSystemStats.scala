@@ -17,7 +17,8 @@ object FileSystemStats {
     __obj.asInstanceOf[FileSystemStats]
   }
   
-  extension [Self <: FileSystemStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemStats] (val x: Self) extends AnyVal {
     
     inline def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
     

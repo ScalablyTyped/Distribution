@@ -26,7 +26,8 @@ object ILevelTickingArea {
     __obj.asInstanceOf[ILevelTickingArea]
   }
   
-  extension [Self <: ILevelTickingArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILevelTickingArea] (val x: Self) extends AnyVal {
     
     inline def setLevel_ticking_area_id(value: String): Self = StObject.set(x, "level_ticking_area_id", value.asInstanceOf[js.Any])
     

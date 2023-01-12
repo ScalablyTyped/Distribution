@@ -9290,7 +9290,8 @@ object mod {
       __obj.asInstanceOf[ReadJsonOptions]
     }
     
-    extension [Self <: ReadJsonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadJsonOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -9317,7 +9318,8 @@ object mod {
       __obj.asInstanceOf[WriteJsonOptions]
     }
     
-    extension [Self <: WriteJsonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteJsonOptions] (val x: Self) extends AnyVal {
       
       inline def setReplacer(value: JsonReplacer): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
       
@@ -9348,7 +9350,8 @@ object mod {
       __obj.asInstanceOf[WriteOptions]
     }
     
-    extension [Self <: WriteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

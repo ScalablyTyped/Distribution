@@ -170,7 +170,8 @@ object SublayerProperties {
     __obj.asInstanceOf[SublayerProperties]
   }
   
-  extension [Self <: SublayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SublayerProperties] (val x: Self) extends AnyVal {
     
     inline def setDefinitionExpression(value: String): Self = StObject.set(x, "definitionExpression", value.asInstanceOf[js.Any])
     

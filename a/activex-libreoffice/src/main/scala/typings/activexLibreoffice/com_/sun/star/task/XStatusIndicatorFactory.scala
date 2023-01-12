@@ -34,7 +34,8 @@ object XStatusIndicatorFactory {
     __obj.asInstanceOf[XStatusIndicatorFactory]
   }
   
-  extension [Self <: XStatusIndicatorFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStatusIndicatorFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateStatusIndicator(value: () => XStatusIndicator): Self = StObject.set(x, "createStatusIndicator", js.Any.fromFunction0(value))
   }

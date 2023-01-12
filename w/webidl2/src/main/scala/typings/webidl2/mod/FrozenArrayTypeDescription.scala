@@ -26,7 +26,8 @@ object FrozenArrayTypeDescription {
     __obj.asInstanceOf[FrozenArrayTypeDescription]
   }
   
-  extension [Self <: FrozenArrayTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrozenArrayTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setGeneric(value: FrozenArray): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
   }

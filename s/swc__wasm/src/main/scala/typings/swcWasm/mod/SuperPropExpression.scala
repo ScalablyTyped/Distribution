@@ -24,7 +24,8 @@ object SuperPropExpression {
     __obj.asInstanceOf[SuperPropExpression]
   }
   
-  extension [Self <: SuperPropExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuperPropExpression] (val x: Self) extends AnyVal {
     
     inline def setObj(value: Super): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
     

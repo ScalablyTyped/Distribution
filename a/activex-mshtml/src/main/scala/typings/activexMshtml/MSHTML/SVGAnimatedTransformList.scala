@@ -25,7 +25,8 @@ object SVGAnimatedTransformList {
     __obj.asInstanceOf[SVGAnimatedTransformList]
   }
   
-  extension [Self <: SVGAnimatedTransformList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGAnimatedTransformList] (val x: Self) extends AnyVal {
     
     inline def setAnimVal(value: SVGTransformList): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     

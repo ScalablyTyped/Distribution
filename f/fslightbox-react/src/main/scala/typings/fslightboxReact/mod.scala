@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[FsLightboxProps]
     }
     
-    extension [Self <: FsLightboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FsLightboxProps] (val x: Self) extends AnyVal {
       
       inline def setCustomSources(value: js.Array[Element]): Self = StObject.set(x, "customSources", value.asInstanceOf[js.Any])
       
@@ -177,7 +178,8 @@ object mod {
       __obj.asInstanceOf[VideoDimensions]
     }
     
-    extension [Self <: VideoDimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoDimensions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

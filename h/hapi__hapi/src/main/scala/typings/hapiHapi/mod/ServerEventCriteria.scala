@@ -55,7 +55,8 @@ object ServerEventCriteria {
     __obj.asInstanceOf[ServerEventCriteria[T]]
   }
   
-  extension [Self <: ServerEventCriteria[?], T](x: Self & ServerEventCriteria[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerEventCriteria[?], T] (val x: Self & ServerEventCriteria[T]) extends AnyVal {
     
     inline def setChannels(value: String | js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

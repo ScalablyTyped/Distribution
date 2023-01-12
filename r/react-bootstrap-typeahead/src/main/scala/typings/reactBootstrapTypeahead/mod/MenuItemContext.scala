@@ -25,7 +25,8 @@ object MenuItemContext {
     __obj.asInstanceOf[MenuItemContext[T]]
   }
   
-  extension [Self <: MenuItemContext[?], T /* <: TypeaheadModel */](x: Self & MenuItemContext[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuItemContext[?], T /* <: TypeaheadModel */] (val x: Self & MenuItemContext[T]) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IPLAYER_TO_SPECTATOR {
     __obj.asInstanceOf[IPLAYER_TO_SPECTATOR]
   }
   
-  extension [Self <: IPLAYER_TO_SPECTATOR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPLAYER_TO_SPECTATOR] (val x: Self) extends AnyVal {
     
     inline def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     

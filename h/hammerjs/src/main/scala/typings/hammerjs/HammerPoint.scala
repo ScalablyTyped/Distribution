@@ -17,7 +17,8 @@ object HammerPoint {
     __obj.asInstanceOf[HammerPoint]
   }
   
-  extension [Self <: HammerPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HammerPoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

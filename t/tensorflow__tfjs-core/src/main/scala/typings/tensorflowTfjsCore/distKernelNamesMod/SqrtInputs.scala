@@ -16,7 +16,8 @@ object SqrtInputs {
     __obj.asInstanceOf[SqrtInputs]
   }
   
-  extension [Self <: SqrtInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqrtInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

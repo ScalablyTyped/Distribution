@@ -17,7 +17,8 @@ object Dot {
     __obj.asInstanceOf[Dot]
   }
   
-  extension [Self <: Dot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dot] (val x: Self) extends AnyVal {
     
     inline def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
     

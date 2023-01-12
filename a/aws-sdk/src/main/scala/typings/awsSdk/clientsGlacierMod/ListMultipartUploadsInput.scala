@@ -33,7 +33,8 @@ object ListMultipartUploadsInput {
     __obj.asInstanceOf[ListMultipartUploadsInput]
   }
   
-  extension [Self <: ListMultipartUploadsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMultipartUploadsInput] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

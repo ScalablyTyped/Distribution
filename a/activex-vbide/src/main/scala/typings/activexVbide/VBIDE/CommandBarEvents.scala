@@ -17,7 +17,8 @@ object CommandBarEvents {
     __obj.asInstanceOf[CommandBarEvents]
   }
   
-  extension [Self <: CommandBarEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandBarEvents] (val x: Self) extends AnyVal {
     
     inline def setVBIDEDotCommandBarEvents_typekey(value: CommandBarEvents): Self = StObject.set(x, "VBIDE.CommandBarEvents_typekey", value.asInstanceOf[js.Any])
   }

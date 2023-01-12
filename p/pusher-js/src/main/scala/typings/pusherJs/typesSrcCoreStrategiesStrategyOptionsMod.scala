@@ -40,7 +40,8 @@ object typesSrcCoreStrategiesStrategyOptionsMod {
       __obj.asInstanceOf[StrategyOptions]
     }
     
-    extension [Self <: StrategyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOptions] (val x: Self) extends AnyVal {
       
       inline def setFailFast(value: Boolean): Self = StObject.set(x, "failFast", value.asInstanceOf[js.Any])
       

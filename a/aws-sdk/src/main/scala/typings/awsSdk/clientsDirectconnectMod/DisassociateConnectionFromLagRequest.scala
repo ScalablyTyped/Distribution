@@ -23,7 +23,8 @@ object DisassociateConnectionFromLagRequest {
     __obj.asInstanceOf[DisassociateConnectionFromLagRequest]
   }
   
-  extension [Self <: DisassociateConnectionFromLagRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateConnectionFromLagRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     

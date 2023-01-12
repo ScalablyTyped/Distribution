@@ -63,7 +63,8 @@ object DropPendingState {
     __obj.asInstanceOf[DropPendingState]
   }
   
-  extension [Self <: DropPendingState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropPendingState] (val x: Self) extends AnyVal {
     
     inline def setAfterCritical(value: LiftEffect): Self = StObject.set(x, "afterCritical", value.asInstanceOf[js.Any])
     

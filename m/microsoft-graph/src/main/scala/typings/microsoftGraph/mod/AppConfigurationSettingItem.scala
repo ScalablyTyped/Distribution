@@ -22,7 +22,8 @@ object AppConfigurationSettingItem {
     __obj.asInstanceOf[AppConfigurationSettingItem]
   }
   
-  extension [Self <: AppConfigurationSettingItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppConfigurationSettingItem] (val x: Self) extends AnyVal {
     
     inline def setAppConfigKey(value: String): Self = StObject.set(x, "appConfigKey", value.asInstanceOf[js.Any])
     

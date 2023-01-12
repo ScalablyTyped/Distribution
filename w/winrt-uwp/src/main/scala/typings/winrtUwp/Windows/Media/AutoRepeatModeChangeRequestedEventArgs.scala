@@ -17,7 +17,8 @@ object AutoRepeatModeChangeRequestedEventArgs {
     __obj.asInstanceOf[AutoRepeatModeChangeRequestedEventArgs]
   }
   
-  extension [Self <: AutoRepeatModeChangeRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoRepeatModeChangeRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRequestedAutoRepeatMode(value: MediaPlaybackAutoRepeatMode): Self = StObject.set(x, "requestedAutoRepeatMode", value.asInstanceOf[js.Any])
   }

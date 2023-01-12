@@ -16,7 +16,8 @@ object IFinalizableToString {
     __obj.asInstanceOf[IFinalizableToString]
   }
   
-  extension [Self <: IFinalizableToString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFinalizableToString] (val x: Self) extends AnyVal {
     
     inline def setToString(value: () => String): Self = StObject.set(x, "ToString", js.Any.fromFunction0(value))
   }

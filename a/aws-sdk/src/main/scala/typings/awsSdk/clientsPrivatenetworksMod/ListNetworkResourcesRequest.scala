@@ -33,7 +33,8 @@ object ListNetworkResourcesRequest {
     __obj.asInstanceOf[ListNetworkResourcesRequest]
   }
   
-  extension [Self <: ListNetworkResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNetworkResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: NetworkResourceFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object SessionResource {
     __obj.asInstanceOf[SessionResource]
   }
   
-  extension [Self <: SessionResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionResource] (val x: Self) extends AnyVal {
     
     inline def setSearchapplications(value: SearchapplicationsResource): Self = StObject.set(x, "searchapplications", value.asInstanceOf[js.Any])
   }

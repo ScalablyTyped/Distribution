@@ -47,7 +47,8 @@ object libTypescriptHandlersLongPressGestureHandlerMod {
       __obj.asInstanceOf[LongPressGestureConfig]
     }
     
-    extension [Self <: LongPressGestureConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LongPressGestureConfig] (val x: Self) extends AnyVal {
       
       inline def setMaxDist(value: Double): Self = StObject.set(x, "maxDist", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object libTypescriptHandlersLongPressGestureHandlerMod {
       __obj.asInstanceOf[LongPressGestureHandlerEventPayload]
     }
     
-    extension [Self <: LongPressGestureHandlerEventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LongPressGestureHandlerEventPayload] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteX(value: Double): Self = StObject.set(x, "absoluteX", value.asInstanceOf[js.Any])
       

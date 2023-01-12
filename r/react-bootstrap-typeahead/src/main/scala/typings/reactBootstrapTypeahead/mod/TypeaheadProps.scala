@@ -191,7 +191,8 @@ object TypeaheadProps {
     __obj.asInstanceOf[TypeaheadProps[T]]
   }
   
-  extension [Self <: TypeaheadProps[?], T /* <: TypeaheadModel */](x: Self & TypeaheadProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeaheadProps[?], T /* <: TypeaheadModel */] (val x: Self & TypeaheadProps[T]) extends AnyVal {
     
     inline def setAlign(value: TypeaheadAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

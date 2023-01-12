@@ -24,7 +24,8 @@ object SketchMSStyleBorderOptions {
     __obj.asInstanceOf[SketchMSStyleBorderOptions]
   }
   
-  extension [Self <: SketchMSStyleBorderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSStyleBorderOptions] (val x: Self) extends AnyVal {
     
     inline def setDashPattern(value: js.Array[Any]): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
     

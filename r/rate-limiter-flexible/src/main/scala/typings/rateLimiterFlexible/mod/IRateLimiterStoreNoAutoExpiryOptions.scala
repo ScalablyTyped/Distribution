@@ -17,7 +17,8 @@ object IRateLimiterStoreNoAutoExpiryOptions {
     __obj.asInstanceOf[IRateLimiterStoreNoAutoExpiryOptions]
   }
   
-  extension [Self <: IRateLimiterStoreNoAutoExpiryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRateLimiterStoreNoAutoExpiryOptions] (val x: Self) extends AnyVal {
     
     inline def setClearExpiredByTimeout(value: Boolean): Self = StObject.set(x, "clearExpiredByTimeout", value.asInstanceOf[js.Any])
     

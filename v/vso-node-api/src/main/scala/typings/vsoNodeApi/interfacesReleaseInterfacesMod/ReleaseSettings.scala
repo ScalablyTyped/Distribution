@@ -15,7 +15,8 @@ object ReleaseSettings {
     __obj.asInstanceOf[ReleaseSettings]
   }
   
-  extension [Self <: ReleaseSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseSettings] (val x: Self) extends AnyVal {
     
     inline def setRetentionSettings(value: RetentionSettings): Self = StObject.set(x, "retentionSettings", value.asInstanceOf[js.Any])
   }

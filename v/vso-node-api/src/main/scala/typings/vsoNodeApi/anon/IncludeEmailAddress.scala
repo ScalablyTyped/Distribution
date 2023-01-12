@@ -19,7 +19,8 @@ object IncludeEmailAddress {
     __obj.asInstanceOf[IncludeEmailAddress]
   }
   
-  extension [Self <: IncludeEmailAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeEmailAddress] (val x: Self) extends AnyVal {
     
     inline def setIncludeEmailAddress(value: scala.Double): Self = StObject.set(x, "includeEmailAddress", value.asInstanceOf[js.Any])
     

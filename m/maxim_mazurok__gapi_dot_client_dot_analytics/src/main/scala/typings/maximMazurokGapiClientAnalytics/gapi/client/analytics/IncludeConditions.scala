@@ -32,7 +32,8 @@ object IncludeConditions {
     __obj.asInstanceOf[IncludeConditions]
   }
   
-  extension [Self <: IncludeConditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeConditions] (val x: Self) extends AnyVal {
     
     inline def setDaysToLookBack(value: Double): Self = StObject.set(x, "daysToLookBack", value.asInstanceOf[js.Any])
     

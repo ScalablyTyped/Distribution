@@ -69,7 +69,8 @@ object libClassBatchUpdatableMod {
       __obj.asInstanceOf[IBatchUpdatableObject]
     }
     
-    extension [Self <: IBatchUpdatableObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBatchUpdatableObject] (val x: Self) extends AnyVal {
       
       inline def setBeginUpdate(value: () => Unit): Self = StObject.set(x, "beginUpdate", js.Any.fromFunction0(value))
       
@@ -103,7 +104,8 @@ object libClassBatchUpdatableMod {
       __obj.asInstanceOf[IBatchUpdatableObjectExtend]
     }
     
-    extension [Self <: IBatchUpdatableObjectExtend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBatchUpdatableObjectExtend] (val x: Self) extends AnyVal {
       
       inline def setContinueUpdate(value: () => Unit): Self = StObject.set(x, "continueUpdate", js.Any.fromFunction0(value))
       

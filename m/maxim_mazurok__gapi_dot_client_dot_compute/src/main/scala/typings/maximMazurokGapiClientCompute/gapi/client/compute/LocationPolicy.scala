@@ -18,7 +18,8 @@ object LocationPolicy {
     __obj.asInstanceOf[LocationPolicy]
   }
   
-  extension [Self <: LocationPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationPolicy] (val x: Self) extends AnyVal {
     
     inline def setLocations(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.LocationPolicyLocation} */ js.Any

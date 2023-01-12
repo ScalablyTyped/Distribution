@@ -38,7 +38,8 @@ object CrlConfiguration {
     __obj.asInstanceOf[CrlConfiguration]
   }
   
-  extension [Self <: CrlConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrlConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCustomCname(value: String253): Self = StObject.set(x, "CustomCname", value.asInstanceOf[js.Any])
     

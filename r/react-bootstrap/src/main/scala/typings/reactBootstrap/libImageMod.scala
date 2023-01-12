@@ -34,7 +34,8 @@ object libImageMod {
       __obj.asInstanceOf[ImageProps]
     }
     
-    extension [Self <: ImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
       
       inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       

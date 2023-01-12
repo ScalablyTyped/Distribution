@@ -19,7 +19,8 @@ object InvoiceSummary {
     __obj.asInstanceOf[InvoiceSummary]
   }
   
-  extension [Self <: InvoiceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvoiceSummary] (val x: Self) extends AnyVal {
     
     inline def setAdditionalChargeSummaries(value: js.Array[InvoiceSummaryAdditionalChargeSummary]): Self = StObject.set(x, "additionalChargeSummaries", value.asInstanceOf[js.Any])
     

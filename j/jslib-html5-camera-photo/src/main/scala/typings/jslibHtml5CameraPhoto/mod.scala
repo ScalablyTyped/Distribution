@@ -110,7 +110,8 @@ object mod {
       __obj.asInstanceOf[CaptureConfigOption]
     }
     
-    extension [Self <: CaptureConfigOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptureConfigOption] (val x: Self) extends AnyVal {
       
       inline def setImageCompression(value: Double): Self = StObject.set(x, "imageCompression", value.asInstanceOf[js.Any])
       
@@ -157,7 +158,8 @@ object mod {
       __obj.asInstanceOf[FacingModes]
     }
     
-    extension [Self <: FacingModes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FacingModes] (val x: Self) extends AnyVal {
       
       inline def setENVIRONMENT(value: environment): Self = StObject.set(x, "ENVIRONMENT", value.asInstanceOf[js.Any])
       
@@ -190,7 +192,8 @@ object mod {
       __obj.asInstanceOf[ImageTypes]
     }
     
-    extension [Self <: ImageTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageTypes] (val x: Self) extends AnyVal {
       
       inline def setJPG(value: jpg): Self = StObject.set(x, "JPG", value.asInstanceOf[js.Any])
       
@@ -211,7 +214,8 @@ object mod {
       __obj.asInstanceOf[Resolution]
     }
     
-    extension [Self <: Resolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resolution] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: ConstrainULong): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

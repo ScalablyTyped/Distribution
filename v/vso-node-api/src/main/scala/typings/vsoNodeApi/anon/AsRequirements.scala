@@ -19,7 +19,8 @@ object AsRequirements {
     __obj.asInstanceOf[AsRequirements]
   }
   
-  extension [Self <: AsRequirements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsRequirements] (val x: Self) extends AnyVal {
     
     inline def setAsRequirements(value: scala.Double): Self = StObject.set(x, "asRequirements", value.asInstanceOf[js.Any])
     

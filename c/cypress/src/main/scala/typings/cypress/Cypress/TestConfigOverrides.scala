@@ -64,7 +64,8 @@ object TestConfigOverrides {
     __obj.asInstanceOf[TestConfigOverrides]
   }
   
-  extension [Self <: TestConfigOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestConfigOverrides] (val x: Self) extends AnyVal {
     
     inline def setAnimationDistanceThreshold(value: Double): Self = StObject.set(x, "animationDistanceThreshold", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object distKerasFormatLayersNormalizationSerializationMod {
       __obj.asInstanceOf[BatchNormalizationLayerConfig]
     }
     
-    extension [Self <: BatchNormalizationLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchNormalizationLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       

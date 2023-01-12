@@ -28,7 +28,8 @@ object DPoP {
     __obj.asInstanceOf[DPoP]
   }
   
-  extension [Self <: DPoP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DPoP] (val x: Self) extends AnyVal {
     
     inline def setDPoP(value: DPoPInput): Self = StObject.set(x, "DPoP", value.asInstanceOf[js.Any])
     

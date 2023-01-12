@@ -20,7 +20,8 @@ object PollingOptions {
     __obj.asInstanceOf[PollingOptions]
   }
   
-  extension [Self <: PollingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PollingOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
     

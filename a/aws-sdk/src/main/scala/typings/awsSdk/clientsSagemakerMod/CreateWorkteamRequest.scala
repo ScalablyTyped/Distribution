@@ -43,7 +43,8 @@ object CreateWorkteamRequest {
     __obj.asInstanceOf[CreateWorkteamRequest]
   }
   
-  extension [Self <: CreateWorkteamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkteamRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String200): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

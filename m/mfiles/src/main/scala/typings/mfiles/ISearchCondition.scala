@@ -30,7 +30,8 @@ object ISearchCondition {
     __obj.asInstanceOf[ISearchCondition]
   }
   
-  extension [Self <: ISearchCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchCondition] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => ISearchCondition): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

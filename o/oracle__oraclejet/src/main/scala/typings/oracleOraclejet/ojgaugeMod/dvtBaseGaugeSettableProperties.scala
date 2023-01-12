@@ -22,7 +22,8 @@ object dvtBaseGaugeSettableProperties {
     __obj.asInstanceOf[dvtBaseGaugeSettableProperties]
   }
   
-  extension [Self <: dvtBaseGaugeSettableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dvtBaseGaugeSettableProperties] (val x: Self) extends AnyVal {
     
     inline def setTranslations(value: LabelAndValue): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
   }

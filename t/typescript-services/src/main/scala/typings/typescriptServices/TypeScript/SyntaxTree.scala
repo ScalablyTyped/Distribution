@@ -62,7 +62,8 @@ object SyntaxTree {
     __obj.asInstanceOf[SyntaxTree]
   }
   
-  extension [Self <: SyntaxTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxTree] (val x: Self) extends AnyVal {
     
     inline def setComputeDiagnostics(value: () => Any): Self = StObject.set(x, "computeDiagnostics", js.Any.fromFunction0(value))
     

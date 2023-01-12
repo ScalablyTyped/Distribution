@@ -79,7 +79,8 @@ object distUtilsPluginsMod {
       __obj.asInstanceOf[ES5ArrayState]
     }
     
-    extension [Self <: ES5ArrayState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ES5ArrayState] (val x: Self) extends AnyVal {
       
       inline def setBase_(value: Any): Self = StObject.set(x, "base_", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object distUtilsPluginsMod {
       __obj.asInstanceOf[ES5BaseState]
     }
     
-    extension [Self <: ES5BaseState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ES5BaseState] (val x: Self) extends AnyVal {
       
       inline def setAssigned_(value: StringDictionary[Any]): Self = StObject.set(x, "assigned_", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object distUtilsPluginsMod {
       __obj.asInstanceOf[ES5ObjectState]
     }
     
-    extension [Self <: ES5ObjectState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ES5ObjectState] (val x: Self) extends AnyVal {
       
       inline def setBase_(value: AnyObject): Self = StObject.set(x, "base_", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object distUtilsPluginsMod {
       __obj.asInstanceOf[MapState]
     }
     
-    extension [Self <: MapState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapState] (val x: Self) extends AnyVal {
       
       inline def setAssigned_(value: Map[Any, Boolean]): Self = StObject.set(x, "assigned_", value.asInstanceOf[js.Any])
       
@@ -234,7 +238,8 @@ object distUtilsPluginsMod {
       __obj.asInstanceOf[Plugins]
     }
     
-    extension [Self <: Plugins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
       
       inline def setES5(value: CreateES5Proxy): Self = StObject.set(x, "ES5", value.asInstanceOf[js.Any])
       
@@ -283,7 +288,8 @@ object distUtilsPluginsMod {
       __obj.asInstanceOf[SetState]
     }
     
-    extension [Self <: SetState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetState] (val x: Self) extends AnyVal {
       
       inline def setBase_(value: AnySet): Self = StObject.set(x, "base_", value.asInstanceOf[js.Any])
       

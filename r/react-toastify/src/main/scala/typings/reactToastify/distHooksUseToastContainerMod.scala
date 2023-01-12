@@ -53,7 +53,8 @@ object distHooksUseToastContainerMod {
       __obj.asInstanceOf[ContainerInstance]
     }
     
-    extension [Self <: ContainerInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerInstance] (val x: Self) extends AnyVal {
       
       inline def setContainerId(value: Id): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object distHooksUseToastContainerMod {
       __obj.asInstanceOf[QueuedToast]
     }
     
-    extension [Self <: QueuedToast](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueuedToast] (val x: Self) extends AnyVal {
       
       inline def setStaleId(value: Id): Self = StObject.set(x, "staleId", value.asInstanceOf[js.Any])
       

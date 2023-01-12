@@ -33,7 +33,8 @@ object CopyImageRequest {
     __obj.asInstanceOf[CopyImageRequest]
   }
   
-  extension [Self <: CopyImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyImageRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationImageDescription(value: Description): Self = StObject.set(x, "DestinationImageDescription", value.asInstanceOf[js.Any])
     

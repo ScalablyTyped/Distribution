@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[GetPersonalizationStrategyResponse]
     }
     
-    extension [Self <: GetPersonalizationStrategyResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPersonalizationStrategyResponse] (val x: Self) extends AnyVal {
       
       inline def setEventsScoring(value: js.Array[EventName]): Self = StObject.set(x, "eventsScoring", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object mod {
       __obj.asInstanceOf[PersonalizationClient]
     }
     
-    extension [Self <: PersonalizationClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersonalizationClient] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object mod {
       __obj.asInstanceOf[PersonalizationClientOptions]
     }
     
-    extension [Self <: PersonalizationClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersonalizationClientOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -165,7 +168,8 @@ object mod {
       __obj.asInstanceOf[PersonalizationStrategy]
     }
     
-    extension [Self <: PersonalizationStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersonalizationStrategy] (val x: Self) extends AnyVal {
       
       inline def setEventsScoring(value: js.Array[EventType]): Self = StObject.set(x, "eventsScoring", value.asInstanceOf[js.Any])
       
@@ -198,7 +202,8 @@ object mod {
       __obj.asInstanceOf[SetPersonalizationStrategyResponse]
     }
     
-    extension [Self <: SetPersonalizationStrategyResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetPersonalizationStrategyResponse] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

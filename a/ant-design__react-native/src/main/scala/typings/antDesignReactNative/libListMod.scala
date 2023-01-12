@@ -47,7 +47,8 @@ object libListMod {
       __obj.asInstanceOf[ListProps]
     }
     
-    extension [Self <: ListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

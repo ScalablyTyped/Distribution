@@ -15,7 +15,8 @@ object InteractionHoveredPaintToken {
     __obj.asInstanceOf[InteractionHoveredPaintToken]
   }
   
-  extension [Self <: InteractionHoveredPaintToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractionHoveredPaintToken] (val x: Self) extends AnyVal {
     
     inline def setInteraction(value: HoveredPaintToken): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
   }

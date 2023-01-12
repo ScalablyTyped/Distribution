@@ -37,7 +37,8 @@ object triggerCognitoUserPoolTriggerUserMigrationMod {
       __obj.asInstanceOf[BaseUserMigrationTriggerEvent[T]]
     }
     
-    extension [Self <: BaseUserMigrationTriggerEvent[?], T /* <: String */](x: Self & BaseUserMigrationTriggerEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseUserMigrationTriggerEvent[?], T /* <: String */] (val x: Self & BaseUserMigrationTriggerEvent[T]) extends AnyVal {
       
       inline def setRequest(value: Password): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       

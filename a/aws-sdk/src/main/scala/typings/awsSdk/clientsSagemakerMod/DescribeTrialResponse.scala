@@ -60,7 +60,8 @@ object DescribeTrialResponse {
     __obj.asInstanceOf[DescribeTrialResponse]
   }
   
-  extension [Self <: DescribeTrialResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTrialResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedBy(value: UserContext): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setFields(value: StringMap): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object anon {
       __obj.asInstanceOf[FormAction]
     }
     
-    extension [Self <: FormAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormAction] (val x: Self) extends AnyVal {
       
       inline def setFields(value: Record[String, String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       

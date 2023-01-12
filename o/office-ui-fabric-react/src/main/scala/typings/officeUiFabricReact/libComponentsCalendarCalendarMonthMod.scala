@@ -85,7 +85,8 @@ object libComponentsCalendarCalendarMonthMod {
       __obj.asInstanceOf[ICalendarMonth]
     }
     
-    extension [Self <: ICalendarMonth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarMonth] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
@@ -139,7 +140,8 @@ object libComponentsCalendarCalendarMonthMod {
       __obj.asInstanceOf[ICalendarMonthProps]
     }
     
-    extension [Self <: ICalendarMonthProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarMonthProps] (val x: Self) extends AnyVal {
       
       inline def setComponentRef(value: IRefObject[ICalendarMonth]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
@@ -197,7 +199,8 @@ object libComponentsCalendarCalendarMonthMod {
       __obj.asInstanceOf[ICalendarMonthState]
     }
     
-    extension [Self <: ICalendarMonthState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarMonthState] (val x: Self) extends AnyVal {
       
       inline def setIsYearPickerVisible(value: Boolean): Self = StObject.set(x, "isYearPickerVisible", value.asInstanceOf[js.Any])
       

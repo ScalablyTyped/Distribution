@@ -23,7 +23,8 @@ object Percentage {
     __obj.asInstanceOf[Percentage]
   }
   
-  extension [Self <: Percentage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Percentage] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.cssTree.cssTreeStrings.Percentage): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object FetchQueryObject {
     __obj.asInstanceOf[FetchQueryObject]
   }
   
-  extension [Self <: FetchQueryObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchQueryObject] (val x: Self) extends AnyVal {
     
     inline def setBodyParts(value: js.Array[String]): Self = StObject.set(x, "bodyParts", value.asInstanceOf[js.Any])
     

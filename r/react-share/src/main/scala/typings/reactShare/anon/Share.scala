@@ -17,7 +17,8 @@ object Share {
     __obj.asInstanceOf[Share]
   }
   
-  extension [Self <: Share](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Share] (val x: Self) extends AnyVal {
     
     inline def setCallbacks(value: js.Array[js.Function1[/* count */ js.UndefOr[Double], Unit]]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsUsersBoldSmallMod extends S
       __obj.asInstanceOf[UsersBoldSmallProps]
     }
     
-    extension [Self <: UsersBoldSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsersBoldSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

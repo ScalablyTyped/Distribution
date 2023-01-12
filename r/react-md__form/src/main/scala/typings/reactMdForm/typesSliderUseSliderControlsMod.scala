@@ -76,7 +76,8 @@ object typesSliderUseSliderControlsMod {
       __obj.asInstanceOf[SliderAndRangeSliderControls]
     }
     
-    extension [Self <: SliderAndRangeSliderControls](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderAndRangeSliderControls] (val x: Self) extends AnyVal {
       
       inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       

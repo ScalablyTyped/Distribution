@@ -148,7 +148,8 @@ object PickcontainerStyleStylePrAccessibilityActions {
     __obj.asInstanceOf[PickcontainerStyleStylePrAccessibilityActions]
   }
   
-  extension [Self <: PickcontainerStyleStylePrAccessibilityActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickcontainerStyleStylePrAccessibilityActions] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

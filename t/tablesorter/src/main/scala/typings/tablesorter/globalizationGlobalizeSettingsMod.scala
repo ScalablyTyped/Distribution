@@ -29,7 +29,8 @@ object globalizationGlobalizeSettingsMod {
       __obj.asInstanceOf[GlobalizeSettings]
     }
     
-    extension [Self <: GlobalizeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalizeSettings] (val x: Self) extends AnyVal {
       
       inline def setGlobalize(value: Globalize): Self = StObject.set(x, "Globalize", value.asInstanceOf[js.Any])
       

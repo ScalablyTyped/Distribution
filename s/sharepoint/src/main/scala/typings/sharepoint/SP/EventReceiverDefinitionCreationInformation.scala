@@ -63,7 +63,8 @@ object EventReceiverDefinitionCreationInformation {
     __obj.asInstanceOf[EventReceiverDefinitionCreationInformation]
   }
   
-  extension [Self <: EventReceiverDefinitionCreationInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventReceiverDefinitionCreationInformation] (val x: Self) extends AnyVal {
     
     inline def setGet_eventType(value: () => EventReceiverType): Self = StObject.set(x, "get_eventType", js.Any.fromFunction0(value))
     

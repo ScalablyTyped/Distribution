@@ -18,7 +18,8 @@ object CreateNetworkSettingsResponse {
     __obj.asInstanceOf[CreateNetworkSettingsResponse]
   }
   
-  extension [Self <: CreateNetworkSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNetworkSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setNetworkSettingsArn(value: ARN): Self = StObject.set(x, "networkSettingsArn", value.asInstanceOf[js.Any])
   }

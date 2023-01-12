@@ -24,7 +24,8 @@ object LoadingBarProps {
     __obj.asInstanceOf[LoadingBarProps]
   }
   
-  extension [Self <: LoadingBarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadingBarProps] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

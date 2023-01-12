@@ -54,7 +54,8 @@ object ErrorData {
     __obj.asInstanceOf[ErrorData]
   }
   
-  extension [Self <: ErrorData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorData] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

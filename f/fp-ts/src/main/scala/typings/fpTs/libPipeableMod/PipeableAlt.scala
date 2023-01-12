@@ -30,7 +30,8 @@ object PipeableAlt {
     __obj.asInstanceOf[PipeableAlt[F]]
   }
   
-  extension [Self <: PipeableAlt[?], F](x: Self & PipeableAlt[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableAlt[?], F] (val x: Self & PipeableAlt[F]) extends AnyVal {
     
     inline def setAlt(
       value: Lazy[

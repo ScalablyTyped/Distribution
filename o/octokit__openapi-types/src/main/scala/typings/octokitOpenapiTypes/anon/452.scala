@@ -24,7 +24,8 @@ object `452` {
     __obj.asInstanceOf[`452`]
   }
   
-  extension [Self <: `452`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `452`] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: `2fa_disabled` | all): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

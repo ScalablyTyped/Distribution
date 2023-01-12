@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Index[T]]
     }
     
-    extension [Self <: Index[?], T /* <: Double | js.Array[Double] */](x: Self & Index[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index[?], T /* <: Double | js.Array[Double] */] (val x: Self & Index[T]) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Value[T]]
     }
     
-    extension [Self <: Value[?], T /* <: Double | js.Array[Double] */](x: Self & Value[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value[?], T /* <: Double | js.Array[Double] */] (val x: Self & Value[T]) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

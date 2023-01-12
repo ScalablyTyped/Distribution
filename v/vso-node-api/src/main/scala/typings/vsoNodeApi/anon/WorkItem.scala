@@ -17,7 +17,8 @@ object WorkItem {
     __obj.asInstanceOf[WorkItem]
   }
   
-  extension [Self <: WorkItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItem] (val x: Self) extends AnyVal {
     
     inline def setWorkItem(value: scala.Double): Self = StObject.set(x, "workItem", value.asInstanceOf[js.Any])
     

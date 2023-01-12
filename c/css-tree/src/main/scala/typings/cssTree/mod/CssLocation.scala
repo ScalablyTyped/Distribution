@@ -20,7 +20,8 @@ object CssLocation {
     __obj.asInstanceOf[CssLocation]
   }
   
-  extension [Self <: CssLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssLocation] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Column): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

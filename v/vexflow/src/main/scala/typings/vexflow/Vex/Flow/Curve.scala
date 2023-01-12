@@ -48,7 +48,8 @@ object Curve {
          with Position
   }
   
-  extension [Self <: Curve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Curve] (val x: Self) extends AnyVal {
     
     inline def setDraw(value: () => Boolean): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     

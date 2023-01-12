@@ -23,7 +23,8 @@ object JQuery {
     __obj.asInstanceOf[JQuery]
   }
   
-  extension [Self <: JQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
     
     inline def setMatchHeight(value: JQueryMatchHeight): Self = StObject.set(x, "matchHeight", value.asInstanceOf[js.Any])
   }

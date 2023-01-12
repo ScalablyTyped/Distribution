@@ -33,7 +33,8 @@ object DeleteStackInput {
     __obj.asInstanceOf[DeleteStackInput]
   }
   
-  extension [Self <: DeleteStackInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteStackInput] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

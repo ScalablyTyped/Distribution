@@ -17,7 +17,8 @@ object TokenizeOptions {
     __obj.asInstanceOf[TokenizeOptions]
   }
   
-  extension [Self <: TokenizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenizeOptions] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: Boolean): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

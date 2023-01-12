@@ -117,7 +117,8 @@ object mod {
       __obj.asInstanceOf[HierarchyCircularLink[Datum]]
     }
     
-    extension [Self <: HierarchyCircularLink[?], Datum](x: Self & HierarchyCircularLink[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HierarchyCircularLink[?], Datum] (val x: Self & HierarchyCircularLink[Datum]) extends AnyVal {
       
       inline def setSource(value: HierarchyCircularNode[Datum]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object mod {
       __obj.asInstanceOf[HierarchyLink[Datum]]
     }
     
-    extension [Self <: HierarchyLink[?], Datum](x: Self & HierarchyLink[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HierarchyLink[?], Datum] (val x: Self & HierarchyLink[Datum]) extends AnyVal {
       
       inline def setSource(value: HierarchyNode[Datum]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -350,7 +352,8 @@ object mod {
       __obj.asInstanceOf[HierarchyPointLink[Datum]]
     }
     
-    extension [Self <: HierarchyPointLink[?], Datum](x: Self & HierarchyPointLink[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HierarchyPointLink[?], Datum] (val x: Self & HierarchyPointLink[Datum]) extends AnyVal {
       
       inline def setSource(value: HierarchyPointNode[Datum]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -393,7 +396,8 @@ object mod {
       __obj.asInstanceOf[HierarchyRectangularLink[Datum]]
     }
     
-    extension [Self <: HierarchyRectangularLink[?], Datum](x: Self & HierarchyRectangularLink[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HierarchyRectangularLink[?], Datum] (val x: Self & HierarchyRectangularLink[Datum]) extends AnyVal {
       
       inline def setSource(value: HierarchyRectangularNode[Datum]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -451,7 +455,8 @@ object mod {
       __obj.asInstanceOf[PackCircle]
     }
     
-    extension [Self <: PackCircle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackCircle] (val x: Self) extends AnyVal {
       
       inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
@@ -556,7 +561,8 @@ object mod {
       __obj.asInstanceOf[PackRadius]
     }
     
-    extension [Self <: PackRadius](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackRadius] (val x: Self) extends AnyVal {
       
       inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object Sides {
     __obj.asInstanceOf[Sides]
   }
   
-  extension [Self <: Sides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sides] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: IUniform[Any]): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

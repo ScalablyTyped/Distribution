@@ -16,7 +16,8 @@ object RemoveBitbucketServerConnectedRepositoryRequest {
     __obj.asInstanceOf[RemoveBitbucketServerConnectedRepositoryRequest]
   }
   
-  extension [Self <: RemoveBitbucketServerConnectedRepositoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveBitbucketServerConnectedRepositoryRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectedRepository(value: BitbucketServerRepositoryId): Self = StObject.set(x, "connectedRepository", value.asInstanceOf[js.Any])
     

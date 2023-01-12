@@ -23,7 +23,8 @@ object MemoryAllocNearOptions {
     __obj.asInstanceOf[MemoryAllocNearOptions]
   }
   
-  extension [Self <: MemoryAllocNearOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryAllocNearOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxDistance(value: Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
     

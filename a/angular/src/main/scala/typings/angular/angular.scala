@@ -95,7 +95,8 @@ object angular {
       __obj.asInstanceOf[ComponentDefinition]
     }
     
-    extension [Self <: ComponentDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentDefinition] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: Type): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object angular {
       __obj.asInstanceOf[ComponentInstruction]
     }
     
-    extension [Self <: ComponentInstruction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentInstruction] (val x: Self) extends AnyVal {
       
       inline def setComponentType(value: Any): Self = StObject.set(x, "componentType", value.asInstanceOf[js.Any])
       
@@ -205,7 +207,8 @@ object angular {
       __obj.asInstanceOf[IComponentOptions]
     }
     
-    extension [Self <: IComponentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComponentOptions] (val x: Self) extends AnyVal {
       
       inline def set$canActivate(
         value: /* repeated */ Any => Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<boolean> */ Any)
@@ -308,7 +311,8 @@ object angular {
       __obj.asInstanceOf[Instruction]
     }
     
-    extension [Self <: Instruction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Instruction] (val x: Self) extends AnyVal {
       
       inline def setAuxInstruction(value: StringDictionary[Instruction]): Self = StObject.set(x, "auxInstruction", value.asInstanceOf[js.Any])
       
@@ -440,7 +444,8 @@ object angular {
       __obj.asInstanceOf[RouteData]
     }
     
-    extension [Self <: RouteData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteData] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -486,7 +491,8 @@ object angular {
       __obj.asInstanceOf[RouteDefinition]
     }
     
-    extension [Self <: RouteDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteDefinition] (val x: Self) extends AnyVal {
       
       inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -772,7 +778,8 @@ object angular {
       __obj.asInstanceOf[RouterOutlet]
     }
     
-    extension [Self <: RouterOutlet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterOutlet] (val x: Self) extends AnyVal {
       
       inline def setActivate(value: ComponentInstruction => Any): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
       

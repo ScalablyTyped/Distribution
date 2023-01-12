@@ -21,7 +21,8 @@ object DialogflowV1MessageSimpleResponse {
     __obj.asInstanceOf[DialogflowV1MessageSimpleResponse]
   }
   
-  extension [Self <: DialogflowV1MessageSimpleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1MessageSimpleResponse] (val x: Self) extends AnyVal {
     
     inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
     

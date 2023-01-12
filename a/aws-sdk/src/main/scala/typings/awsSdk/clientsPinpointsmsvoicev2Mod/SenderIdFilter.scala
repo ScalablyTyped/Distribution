@@ -23,7 +23,8 @@ object SenderIdFilter {
     __obj.asInstanceOf[SenderIdFilter]
   }
   
-  extension [Self <: SenderIdFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SenderIdFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: SenderIdFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

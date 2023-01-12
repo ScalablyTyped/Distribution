@@ -17,7 +17,8 @@ object CustomFilterParameters {
     __obj.asInstanceOf[CustomFilterParameters[Params]]
   }
   
-  extension [Self <: CustomFilterParameters[?], Params /* <: js.Object */](x: Self & CustomFilterParameters[Params]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomFilterParameters[?], Params /* <: js.Object */] (val x: Self & CustomFilterParameters[Params]) extends AnyVal {
     
     inline def setCallback(value: (Any, Params) => Boolean): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     

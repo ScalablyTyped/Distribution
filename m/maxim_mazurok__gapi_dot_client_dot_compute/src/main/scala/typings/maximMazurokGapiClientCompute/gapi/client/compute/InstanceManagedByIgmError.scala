@@ -22,7 +22,8 @@ object InstanceManagedByIgmError {
     __obj.asInstanceOf[InstanceManagedByIgmError]
   }
   
-  extension [Self <: InstanceManagedByIgmError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceManagedByIgmError] (val x: Self) extends AnyVal {
     
     inline def setError(value: InstanceManagedByIgmErrorManagedInstanceError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

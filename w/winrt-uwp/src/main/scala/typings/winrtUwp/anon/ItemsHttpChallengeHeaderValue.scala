@@ -18,7 +18,8 @@ object ItemsHttpChallengeHeaderValue {
     __obj.asInstanceOf[ItemsHttpChallengeHeaderValue]
   }
   
-  extension [Self <: ItemsHttpChallengeHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsHttpChallengeHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setItems(value: HttpChallengeHeaderValue): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

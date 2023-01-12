@@ -73,7 +73,8 @@ object containerContainerMod extends Shortcut {
       __obj.asInstanceOf[ContainerTypeMap[P, D]]
     }
     
-    extension [Self <: ContainerTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (ContainerTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (ContainerTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: ContainerClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

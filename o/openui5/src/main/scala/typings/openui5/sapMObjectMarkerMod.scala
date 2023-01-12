@@ -495,7 +495,8 @@ object sapMObjectMarkerMod {
       __obj.asInstanceOf[ObjectMarkerSettings]
     }
     
-    extension [Self <: ObjectMarkerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectMarkerSettings] (val x: Self) extends AnyVal {
       
       inline def setAdditionalInfo(value: String | PropertyBindingInfo): Self = StObject.set(x, "additionalInfo", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object MessageReviewHandler {
     __obj.asInstanceOf[MessageReviewHandler]
   }
   
-  extension [Self <: MessageReviewHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageReviewHandler] (val x: Self) extends AnyVal {
     
     inline def setFallbackResult(value: FallbackResult): Self = StObject.set(x, "fallbackResult", value.asInstanceOf[js.Any])
     

@@ -92,7 +92,8 @@ object libTokensMod {
         __obj.asInstanceOf[IAddOptions]
       }
       
-      extension [Self <: IAddOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IAddOptions] (val x: Self) extends AnyVal {
         
         inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
         
@@ -134,7 +135,8 @@ object libTokensMod {
       __obj.asInstanceOf[IMenuExtender[T]]
     }
     
-    extension [Self <: IMenuExtender[?], T /* <: Widget */](x: Self & IMenuExtender[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMenuExtender[?], T /* <: Widget */] (val x: Self & IMenuExtender[T]) extends AnyVal {
       
       inline def setIsEnabled(value: /* widget */ T => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction1(value))
       

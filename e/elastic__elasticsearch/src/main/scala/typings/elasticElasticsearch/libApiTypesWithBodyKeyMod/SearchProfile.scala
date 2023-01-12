@@ -15,7 +15,8 @@ object SearchProfile {
     __obj.asInstanceOf[SearchProfile]
   }
   
-  extension [Self <: SearchProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchProfile] (val x: Self) extends AnyVal {
     
     inline def setShards(value: js.Array[SearchShardProfile]): Self = StObject.set(x, "shards", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object Delta {
     __obj.asInstanceOf[Delta]
   }
   
-  extension [Self <: Delta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Delta] (val x: Self) extends AnyVal {
     
     inline def setDecreasing(value: Symbol): Self = StObject.set(x, "decreasing", value.asInstanceOf[js.Any])
     

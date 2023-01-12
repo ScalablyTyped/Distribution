@@ -53,7 +53,8 @@ object UpdateAgreementRequest {
     __obj.asInstanceOf[UpdateAgreementRequest]
   }
   
-  extension [Self <: UpdateAgreementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAgreementRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessRole(value: Role): Self = StObject.set(x, "AccessRole", value.asInstanceOf[js.Any])
     

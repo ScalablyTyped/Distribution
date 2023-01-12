@@ -342,7 +342,8 @@ object libRestPreviewSyncServiceSyncListMod {
       __obj.asInstanceOf[SyncListListInstanceCreateOptions]
     }
     
-    extension [Self <: SyncListListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
       
@@ -391,7 +392,8 @@ object libRestPreviewSyncServiceSyncListMod {
       __obj.asInstanceOf[SyncListListInstanceEachOptions]
     }
     
-    extension [Self <: SyncListListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ SyncListInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -440,7 +442,8 @@ object libRestPreviewSyncServiceSyncListMod {
       __obj.asInstanceOf[SyncListListInstanceOptions]
     }
     
-    extension [Self <: SyncListListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -474,7 +477,8 @@ object libRestPreviewSyncServiceSyncListMod {
       __obj.asInstanceOf[SyncListListInstancePageOptions]
     }
     
-    extension [Self <: SyncListListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
@@ -559,7 +563,8 @@ object libRestPreviewSyncServiceSyncListMod {
       __obj.asInstanceOf[SyncListResource]
     }
     
-    extension [Self <: SyncListResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -594,7 +599,8 @@ object libRestPreviewSyncServiceSyncListMod {
       __obj.asInstanceOf[SyncListSolution]
     }
     
-    extension [Self <: SyncListSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListSolution] (val x: Self) extends AnyVal {
       
       inline def setServiceSid(value: String): Self = StObject.set(x, "serviceSid", value.asInstanceOf[js.Any])
       

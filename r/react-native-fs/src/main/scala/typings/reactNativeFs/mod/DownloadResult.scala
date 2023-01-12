@@ -21,7 +21,8 @@ object DownloadResult {
     __obj.asInstanceOf[DownloadResult]
   }
   
-  extension [Self <: DownloadResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadResult] (val x: Self) extends AnyVal {
     
     inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
     

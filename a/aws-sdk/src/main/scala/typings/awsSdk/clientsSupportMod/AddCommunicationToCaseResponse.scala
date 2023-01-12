@@ -18,7 +18,8 @@ object AddCommunicationToCaseResponse {
     __obj.asInstanceOf[AddCommunicationToCaseResponse]
   }
   
-  extension [Self <: AddCommunicationToCaseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddCommunicationToCaseResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Result): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

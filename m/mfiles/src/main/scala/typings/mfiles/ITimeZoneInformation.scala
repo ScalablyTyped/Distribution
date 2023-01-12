@@ -19,7 +19,8 @@ object ITimeZoneInformation {
     __obj.asInstanceOf[ITimeZoneInformation]
   }
   
-  extension [Self <: ITimeZoneInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITimeZoneInformation] (val x: Self) extends AnyVal {
     
     inline def setLoadTimeZoneByName(value: String => Unit): Self = StObject.set(x, "LoadTimeZoneByName", js.Any.fromFunction1(value))
     

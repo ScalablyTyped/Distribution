@@ -41,7 +41,8 @@ object TileLayerOptions {
     __obj.asInstanceOf[TileLayerOptions]
   }
   
-  extension [Self <: TileLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setDetectRetina(value: Boolean): Self = StObject.set(x, "detectRetina", value.asInstanceOf[js.Any])
     

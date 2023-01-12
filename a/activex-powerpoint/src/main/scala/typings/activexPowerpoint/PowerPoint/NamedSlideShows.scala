@@ -34,7 +34,8 @@ object NamedSlideShows {
     __obj.asInstanceOf[NamedSlideShows]
   }
   
-  extension [Self <: NamedSlideShows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedSlideShows] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, Any) => NamedSlideShow): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

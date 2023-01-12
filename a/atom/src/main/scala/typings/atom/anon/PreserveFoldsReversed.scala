@@ -17,7 +17,8 @@ object PreserveFoldsReversed {
     __obj.asInstanceOf[PreserveFoldsReversed]
   }
   
-  extension [Self <: PreserveFoldsReversed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreserveFoldsReversed] (val x: Self) extends AnyVal {
     
     inline def setPreserveFolds(value: Boolean): Self = StObject.set(x, "preserveFolds", value.asInstanceOf[js.Any])
     

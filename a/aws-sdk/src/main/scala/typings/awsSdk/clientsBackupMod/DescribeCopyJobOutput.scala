@@ -18,7 +18,8 @@ object DescribeCopyJobOutput {
     __obj.asInstanceOf[DescribeCopyJobOutput]
   }
   
-  extension [Self <: DescribeCopyJobOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCopyJobOutput] (val x: Self) extends AnyVal {
     
     inline def setCopyJob(value: CopyJob): Self = StObject.set(x, "CopyJob", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object colorCreateVisualVariableParamsLegendOptions {
     __obj.asInstanceOf[colorCreateVisualVariableParamsLegendOptions]
   }
   
-  extension [Self <: colorCreateVisualVariableParamsLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: colorCreateVisualVariableParamsLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setShowLegend(value: Boolean): Self = StObject.set(x, "showLegend", value.asInstanceOf[js.Any])
     

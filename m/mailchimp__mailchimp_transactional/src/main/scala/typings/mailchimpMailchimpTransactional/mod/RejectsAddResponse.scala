@@ -19,7 +19,8 @@ object RejectsAddResponse {
     __obj.asInstanceOf[RejectsAddResponse]
   }
   
-  extension [Self <: RejectsAddResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectsAddResponse] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: Boolean): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object LinearGradientColorObject {
     __obj.asInstanceOf[LinearGradientColorObject]
   }
   
-  extension [Self <: LinearGradientColorObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearGradientColorObject] (val x: Self) extends AnyVal {
     
     inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     

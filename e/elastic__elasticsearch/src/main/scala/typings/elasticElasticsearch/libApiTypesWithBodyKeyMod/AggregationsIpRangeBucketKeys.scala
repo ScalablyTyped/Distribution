@@ -21,7 +21,8 @@ object AggregationsIpRangeBucketKeys {
     __obj.asInstanceOf[AggregationsIpRangeBucketKeys]
   }
   
-  extension [Self <: AggregationsIpRangeBucketKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsIpRangeBucketKeys] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

@@ -157,7 +157,8 @@ object CatTransformsTransformsRecord {
     __obj.asInstanceOf[CatTransformsTransformsRecord]
   }
   
-  extension [Self <: CatTransformsTransformsRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatTransformsTransformsRecord] (val x: Self) extends AnyVal {
     
     inline def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object AssociateDiscoveredResourceRequest {
     __obj.asInstanceOf[AssociateDiscoveredResourceRequest]
   }
   
-  extension [Self <: AssociateDiscoveredResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateDiscoveredResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setDiscoveredResource(value: DiscoveredResource): Self = StObject.set(x, "DiscoveredResource", value.asInstanceOf[js.Any])
     

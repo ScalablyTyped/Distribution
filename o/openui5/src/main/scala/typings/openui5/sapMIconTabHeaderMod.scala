@@ -820,7 +820,8 @@ object sapMIconTabHeaderMod {
       __obj.asInstanceOf[IconTabHeaderSettings]
     }
     
-    extension [Self <: IconTabHeaderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconTabHeaderSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaTexts(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "ariaTexts", value.asInstanceOf[js.Any])
       

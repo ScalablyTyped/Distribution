@@ -23,7 +23,8 @@ object PutInsightSelectorsResponse {
     __obj.asInstanceOf[PutInsightSelectorsResponse]
   }
   
-  extension [Self <: PutInsightSelectorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutInsightSelectorsResponse] (val x: Self) extends AnyVal {
     
     inline def setInsightSelectors(value: InsightSelectors): Self = StObject.set(x, "InsightSelectors", value.asInstanceOf[js.Any])
     

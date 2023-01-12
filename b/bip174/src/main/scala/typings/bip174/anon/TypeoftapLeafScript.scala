@@ -32,7 +32,8 @@ object TypeoftapLeafScript {
     __obj.asInstanceOf[TypeoftapLeafScript]
   }
   
-  extension [Self <: TypeoftapLeafScript](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeoftapLeafScript] (val x: Self) extends AnyVal {
     
     inline def setCanAddToArray(value: (js.Array[TapLeafScript], TapLeafScript, Set[String]) => Boolean): Self = StObject.set(x, "canAddToArray", js.Any.fromFunction3(value))
     

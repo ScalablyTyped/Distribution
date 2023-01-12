@@ -15,7 +15,8 @@ object PivotConfiguratorSortable {
     __obj.asInstanceOf[PivotConfiguratorSortable]
   }
   
-  extension [Self <: PivotConfiguratorSortable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotConfiguratorSortable] (val x: Self) extends AnyVal {
     
     inline def setAllowUnsort(value: Boolean): Self = StObject.set(x, "allowUnsort", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object AnalysisPatternReplaceCharFilter {
     __obj.asInstanceOf[AnalysisPatternReplaceCharFilter]
   }
   
-  extension [Self <: AnalysisPatternReplaceCharFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisPatternReplaceCharFilter] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     

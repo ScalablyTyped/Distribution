@@ -43,7 +43,8 @@ object IsURLOptions {
     __obj.asInstanceOf[IsURLOptions]
   }
   
-  extension [Self <: IsURLOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsURLOptions] (val x: Self) extends AnyVal {
     
     inline def setAllow_fragments(value: Boolean): Self = StObject.set(x, "allow_fragments", value.asInstanceOf[js.Any])
     

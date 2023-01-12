@@ -19,7 +19,8 @@ object SchedulerAcceleratorConfig {
     __obj.asInstanceOf[SchedulerAcceleratorConfig]
   }
   
-  extension [Self <: SchedulerAcceleratorConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerAcceleratorConfig] (val x: Self) extends AnyVal {
     
     inline def setCoreCount(value: String): Self = StObject.set(x, "coreCount", value.asInstanceOf[js.Any])
     

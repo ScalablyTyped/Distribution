@@ -100,7 +100,8 @@ object ReportRequest {
     __obj.asInstanceOf[ReportRequest]
   }
   
-  extension [Self <: ReportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportRequest] (val x: Self) extends AnyVal {
     
     inline def setCohortGroup(value: CohortGroup): Self = StObject.set(x, "cohortGroup", value.asInstanceOf[js.Any])
     

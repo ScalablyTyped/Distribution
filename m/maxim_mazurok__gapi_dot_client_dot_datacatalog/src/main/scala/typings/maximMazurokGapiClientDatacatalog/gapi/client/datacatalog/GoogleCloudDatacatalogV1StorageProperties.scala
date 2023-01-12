@@ -26,7 +26,8 @@ object GoogleCloudDatacatalogV1StorageProperties {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1StorageProperties]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1StorageProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1StorageProperties] (val x: Self) extends AnyVal {
     
     inline def setFilePattern(value: js.Array[String]): Self = StObject.set(x, "filePattern", value.asInstanceOf[js.Any])
     

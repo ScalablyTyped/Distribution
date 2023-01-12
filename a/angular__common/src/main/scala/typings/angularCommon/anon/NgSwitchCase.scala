@@ -16,7 +16,8 @@ object NgSwitchCase {
     __obj.asInstanceOf[NgSwitchCase]
   }
   
-  extension [Self <: NgSwitchCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NgSwitchCase] (val x: Self) extends AnyVal {
     
     inline def setNgSwitchCase(value: ngSwitchCase): Self = StObject.set(x, "ngSwitchCase", value.asInstanceOf[js.Any])
   }

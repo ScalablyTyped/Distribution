@@ -16,7 +16,8 @@ object AddProtectedRangeResponse {
     __obj.asInstanceOf[AddProtectedRangeResponse]
   }
   
-  extension [Self <: AddProtectedRangeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddProtectedRangeResponse] (val x: Self) extends AnyVal {
     
     inline def setProtectedRange(value: ProtectedRange): Self = StObject.set(x, "protectedRange", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ReloadTablesResponse {
     __obj.asInstanceOf[ReloadTablesResponse]
   }
   
-  extension [Self <: ReloadTablesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReloadTablesResponse] (val x: Self) extends AnyVal {
     
     inline def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
     

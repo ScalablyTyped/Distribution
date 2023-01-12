@@ -22,7 +22,8 @@ object PickSunburstOptionsdataco {
     __obj.asInstanceOf[PickSunburstOptionsdataco]
   }
   
-  extension [Self <: PickSunburstOptionsdataco](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickSunburstOptionsdataco] (val x: Self) extends AnyVal {
     
     inline def setColorField(value: String): Self = StObject.set(x, "colorField", value.asInstanceOf[js.Any])
     

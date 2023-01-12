@@ -15,7 +15,8 @@ object Arc {
     __obj.asInstanceOf[Arc]
   }
   
-  extension [Self <: Arc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arc] (val x: Self) extends AnyVal {
     
     inline def setArc(value: typings.nivoArcs.distTypesTypesMod.Arc): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
   }

@@ -16,7 +16,8 @@ object IClientBatchSubmitRequest {
     __obj.asInstanceOf[IClientBatchSubmitRequest]
   }
   
-  extension [Self <: IClientBatchSubmitRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientBatchSubmitRequest] (val x: Self) extends AnyVal {
     
     inline def setBatches(value: js.Array[IBatch]): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
     

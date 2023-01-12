@@ -29,7 +29,8 @@ object TsConditionalType {
     __obj.asInstanceOf[TsConditionalType]
   }
   
-  extension [Self <: TsConditionalType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsConditionalType] (val x: Self) extends AnyVal {
     
     inline def setCheckType(value: TsType): Self = StObject.set(x, "checkType", value.asInstanceOf[js.Any])
     

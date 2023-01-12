@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[Anchor]
     }
     
-    extension [Self <: Anchor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Anchor] (val x: Self) extends AnyVal {
       
       inline def setDefined(value: Double): Self = StObject.set(x, "defined", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[NonParsedEntry]
     }
     
-    extension [Self <: NonParsedEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonParsedEntry] (val x: Self) extends AnyVal {
       
       inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setSave(value: Boolean): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
       
@@ -154,7 +157,8 @@ object mod {
       __obj.asInstanceOf[ValidateResults]
     }
     
-    extension [Self <: ValidateResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidateResults] (val x: Self) extends AnyVal {
       
       inline def setAnchorsWithEmptyText(value: js.Array[Anchor]): Self = StObject.set(x, "anchorsWithEmptyText", value.asInstanceOf[js.Any])
       
@@ -199,7 +203,8 @@ object mod {
       __obj.asInstanceOf[Warnings]
     }
     
-    extension [Self <: Warnings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Warnings] (val x: Self) extends AnyVal {
       
       inline def setAnchorsWithNoLinks(value: js.Array[Anchor]): Self = StObject.set(x, "anchorsWithNoLinks", value.asInstanceOf[js.Any])
       

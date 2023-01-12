@@ -100,7 +100,8 @@ object validation {
       __obj.asInstanceOf[XFormComponentValidityListener]
     }
     
-    extension [Self <: XFormComponentValidityListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XFormComponentValidityListener] (val x: Self) extends AnyVal {
       
       inline def setComponentValidityChanged(value: EventObject => Unit): Self = StObject.set(x, "componentValidityChanged", js.Any.fromFunction1(value))
     }
@@ -143,7 +144,8 @@ object validation {
       __obj.asInstanceOf[XValidatable]
     }
     
-    extension [Self <: XValidatable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XValidatable] (val x: Self) extends AnyVal {
       
       inline def setGetValidator(value: () => XValidator): Self = StObject.set(x, "getValidator", js.Any.fromFunction0(value))
       
@@ -239,7 +241,8 @@ object validation {
       __obj.asInstanceOf[XValidatableFormComponent]
     }
     
-    extension [Self <: XValidatableFormComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XValidatableFormComponent] (val x: Self) extends AnyVal {
       
       inline def setAddFormComponentValidityListener(value: XFormComponentValidityListener => Unit): Self = StObject.set(x, "addFormComponentValidityListener", js.Any.fromFunction1(value))
       
@@ -313,7 +316,8 @@ object validation {
       __obj.asInstanceOf[XValidator]
     }
     
-    extension [Self <: XValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XValidator] (val x: Self) extends AnyVal {
       
       inline def setAddValidityConstraintListener(value: XValidityConstraintListener => Unit): Self = StObject.set(x, "addValidityConstraintListener", js.Any.fromFunction1(value))
       
@@ -349,7 +353,8 @@ object validation {
       __obj.asInstanceOf[XValidityConstraintListener]
     }
     
-    extension [Self <: XValidityConstraintListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XValidityConstraintListener] (val x: Self) extends AnyVal {
       
       inline def setValidityConstraintChanged(value: EventObject => Unit): Self = StObject.set(x, "validityConstraintChanged", js.Any.fromFunction1(value))
     }

@@ -17,7 +17,8 @@ object With {
     __obj.asInstanceOf[With]
   }
   
-  extension [Self <: With](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: With] (val x: Self) extends AnyVal {
     
     inline def setIfModifiedSince(value: js.Date): Self = StObject.set(x, "ifModifiedSince", value.asInstanceOf[js.Any])
     

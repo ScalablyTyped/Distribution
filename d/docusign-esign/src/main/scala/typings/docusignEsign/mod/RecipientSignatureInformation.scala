@@ -28,7 +28,8 @@ object RecipientSignatureInformation {
     __obj.asInstanceOf[RecipientSignatureInformation]
   }
   
-  extension [Self <: RecipientSignatureInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientSignatureInformation] (val x: Self) extends AnyVal {
     
     inline def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     

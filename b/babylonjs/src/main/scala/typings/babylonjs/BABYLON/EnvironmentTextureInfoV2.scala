@@ -44,7 +44,8 @@ object EnvironmentTextureInfoV2 {
     __obj.asInstanceOf[EnvironmentTextureInfoV2]
   }
   
-  extension [Self <: EnvironmentTextureInfoV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentTextureInfoV2] (val x: Self) extends AnyVal {
     
     inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
     

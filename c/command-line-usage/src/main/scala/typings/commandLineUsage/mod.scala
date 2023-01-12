@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String | (js.Array[Any | String]) | Data): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object mod {
       __obj.asInstanceOf[OptionDefinition]
     }
     
-    extension [Self <: OptionDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionDefinition] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -180,7 +182,8 @@ object mod {
       __obj.asInstanceOf[OptionList]
     }
     
-    extension [Self <: OptionList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionList] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: String | js.Array[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       

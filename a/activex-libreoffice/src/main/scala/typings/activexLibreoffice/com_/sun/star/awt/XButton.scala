@@ -41,7 +41,8 @@ object XButton {
     __obj.asInstanceOf[XButton]
   }
   
-  extension [Self <: XButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XButton] (val x: Self) extends AnyVal {
     
     inline def setAddActionListener(value: XActionListener => Unit): Self = StObject.set(x, "addActionListener", js.Any.fromFunction1(value))
     

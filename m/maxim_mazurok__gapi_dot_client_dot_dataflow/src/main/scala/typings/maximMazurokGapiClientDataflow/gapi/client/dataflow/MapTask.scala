@@ -25,7 +25,8 @@ object MapTask {
     __obj.asInstanceOf[MapTask]
   }
   
-  extension [Self <: MapTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapTask] (val x: Self) extends AnyVal {
     
     inline def setCounterPrefix(value: String): Self = StObject.set(x, "counterPrefix", value.asInstanceOf[js.Any])
     

@@ -89,7 +89,8 @@ object ContentEncoding {
     __obj.asInstanceOf[ContentEncoding]
   }
   
-  extension [Self <: ContentEncoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentEncoding] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

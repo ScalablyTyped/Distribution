@@ -25,7 +25,8 @@ object TcpipRequestInfo {
     __obj.asInstanceOf[TcpipRequestInfo]
   }
   
-  extension [Self <: TcpipRequestInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TcpipRequestInfo] (val x: Self) extends AnyVal {
     
     inline def setDestIP(value: String): Self = StObject.set(x, "destIP", value.asInstanceOf[js.Any])
     

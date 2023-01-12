@@ -38,7 +38,8 @@ object GetCostForecastRequest {
     __obj.asInstanceOf[GetCostForecastRequest]
   }
   
-  extension [Self <: GetCostForecastRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCostForecastRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: Expression): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

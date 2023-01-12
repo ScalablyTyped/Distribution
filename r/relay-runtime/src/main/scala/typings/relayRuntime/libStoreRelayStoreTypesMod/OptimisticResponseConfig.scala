@@ -21,7 +21,8 @@ object OptimisticResponseConfig {
     __obj.asInstanceOf[OptimisticResponseConfig[TMutation]]
   }
   
-  extension [Self <: OptimisticResponseConfig[?], TMutation /* <: MutationParameters */](x: Self & OptimisticResponseConfig[TMutation]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptimisticResponseConfig[?], TMutation /* <: MutationParameters */] (val x: Self & OptimisticResponseConfig[TMutation]) extends AnyVal {
     
     inline def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

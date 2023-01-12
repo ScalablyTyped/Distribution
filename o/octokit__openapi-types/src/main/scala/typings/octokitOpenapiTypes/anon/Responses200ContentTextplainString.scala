@@ -15,7 +15,8 @@ object Responses200ContentTextplainString {
     __obj.asInstanceOf[Responses200ContentTextplainString]
   }
   
-  extension [Self <: Responses200ContentTextplainString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentTextplainString] (val x: Self) extends AnyVal {
     
     inline def setResponses(value: `200ContentTextplainString`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }

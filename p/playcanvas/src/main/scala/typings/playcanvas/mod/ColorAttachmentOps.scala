@@ -52,7 +52,8 @@ object ColorAttachmentOps {
     __obj.asInstanceOf[ColorAttachmentOps]
   }
   
-  extension [Self <: ColorAttachmentOps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorAttachmentOps] (val x: Self) extends AnyVal {
     
     inline def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     

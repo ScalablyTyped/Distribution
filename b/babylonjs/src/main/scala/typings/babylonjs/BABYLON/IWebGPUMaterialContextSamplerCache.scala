@@ -20,7 +20,8 @@ object IWebGPUMaterialContextSamplerCache {
     __obj.asInstanceOf[IWebGPUMaterialContextSamplerCache]
   }
   
-  extension [Self <: IWebGPUMaterialContextSamplerCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebGPUMaterialContextSamplerCache] (val x: Self) extends AnyVal {
     
     inline def setHashCode_(value: Double): Self = StObject.set(x, "hashCode", value.asInstanceOf[js.Any])
     

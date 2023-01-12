@@ -28,7 +28,8 @@ object CohortGroup {
     __obj.asInstanceOf[CohortGroup]
   }
   
-  extension [Self <: CohortGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CohortGroup] (val x: Self) extends AnyVal {
     
     inline def setCohorts(value: js.Array[Cohort]): Self = StObject.set(x, "cohorts", value.asInstanceOf[js.Any])
     

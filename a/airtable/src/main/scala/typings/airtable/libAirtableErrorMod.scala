@@ -38,7 +38,8 @@ object libAirtableErrorMod {
       __obj.asInstanceOf[AirtableError]
     }
     
-    extension [Self <: AirtableError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AirtableError] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

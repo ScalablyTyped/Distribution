@@ -28,7 +28,8 @@ object DelegationSet {
     __obj.asInstanceOf[DelegationSet]
   }
   
-  extension [Self <: DelegationSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelegationSet] (val x: Self) extends AnyVal {
     
     inline def setCallerReference(value: Nonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     

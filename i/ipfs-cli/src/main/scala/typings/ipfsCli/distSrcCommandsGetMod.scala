@@ -70,7 +70,8 @@ object distSrcCommandsGetMod extends Shortcut {
       __obj.asInstanceOf[Argv]
     }
     
-    extension [Self <: Argv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Argv] (val x: Self) extends AnyVal {
       
       inline def setArchive(value: Boolean): Self = StObject.set(x, "archive", value.asInstanceOf[js.Any])
       

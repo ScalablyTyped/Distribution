@@ -33,7 +33,8 @@ object ClickQueryOptions {
     __obj.asInstanceOf[ClickQueryOptions]
   }
   
-  extension [Self <: ClickQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClickQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setExpectReload(value: Boolean): Self = StObject.set(x, "expectReload", value.asInstanceOf[js.Any])
     

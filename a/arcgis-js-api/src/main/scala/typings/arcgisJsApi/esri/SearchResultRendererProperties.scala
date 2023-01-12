@@ -31,7 +31,8 @@ object SearchResultRendererProperties {
     __obj.asInstanceOf[SearchResultRendererProperties]
   }
   
-  extension [Self <: SearchResultRendererProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchResultRendererProperties] (val x: Self) extends AnyVal {
     
     inline def setShowMoreResultsOpen(value: Boolean): Self = StObject.set(x, "showMoreResultsOpen", value.asInstanceOf[js.Any])
     

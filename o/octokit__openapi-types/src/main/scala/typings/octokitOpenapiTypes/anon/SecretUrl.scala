@@ -21,7 +21,8 @@ object SecretUrl {
     __obj.asInstanceOf[SecretUrl]
   }
   
-  extension [Self <: SecretUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecretUrl] (val x: Self) extends AnyVal {
     
     inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     

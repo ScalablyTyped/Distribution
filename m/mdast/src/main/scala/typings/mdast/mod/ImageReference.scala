@@ -24,7 +24,8 @@ object ImageReference {
     __obj.asInstanceOf[ImageReference]
   }
   
-  extension [Self <: ImageReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageReference] (val x: Self) extends AnyVal {
     
     inline def setType(value: imageReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

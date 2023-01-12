@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Current]
     }
     
-    extension [Self <: Current](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
       
       inline def set__current(value: js.Array[typings.wordpressHooks.mod.Current]): Self = StObject.set(x, "__current", value.asInstanceOf[js.Any])
       

@@ -182,7 +182,8 @@ object Net {
       __obj.asInstanceOf[IWebRequestManager]
     }
     
-    extension [Self <: IWebRequestManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebRequestManager] (val x: Self) extends AnyVal {
       
       inline def setAdd_completedRequest(value: js.Function2[/* sender */ WebRequestExecutor, /* eventArgs */ EventArgs, Unit] => Unit): Self = StObject.set(x, "add_completedRequest", js.Any.fromFunction1(value))
       
@@ -246,7 +247,8 @@ object Net {
       __obj.asInstanceOf[NetworkRequestEventArgs]
     }
     
-    extension [Self <: NetworkRequestEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkRequestEventArgs] (val x: Self) extends AnyVal {
       
       inline def setGet_webRequest(value: () => WebRequest): Self = StObject.set(x, "get_webRequest", js.Any.fromFunction0(value))
     }
@@ -342,7 +344,8 @@ object Net {
       __obj.asInstanceOf[WebRequest]
     }
     
-    extension [Self <: WebRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebRequest] (val x: Self) extends AnyVal {
       
       inline def setAdd_completed(value: js.Function2[/* reference */ Any, /* eventArgs */ EventArgs, Unit] => Unit): Self = StObject.set(x, "add_completed", js.Any.fromFunction1(value))
       
@@ -513,7 +516,8 @@ object Net {
       __obj.asInstanceOf[WebRequestExecutor]
     }
     
-    extension [Self <: WebRequestExecutor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebRequestExecutor] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
@@ -573,7 +577,8 @@ object Net {
       __obj.asInstanceOf[WebServiceError]
     }
     
-    extension [Self <: WebServiceError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebServiceError] (val x: Self) extends AnyVal {
       
       inline def setGet_errorObject(value: () => Any): Self = StObject.set(x, "get_errorObject", js.Any.fromFunction0(value))
       

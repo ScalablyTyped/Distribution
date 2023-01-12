@@ -56,7 +56,8 @@ object ISeparatedSyntaxList {
     __obj.asInstanceOf[ISeparatedSyntaxList]
   }
   
-  extension [Self <: ISeparatedSyntaxList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISeparatedSyntaxList] (val x: Self) extends AnyVal {
     
     inline def setInsertChildrenInto(value: (js.Array[ISyntaxElement], Double) => Unit): Self = StObject.set(x, "insertChildrenInto", js.Any.fromFunction2(value))
     

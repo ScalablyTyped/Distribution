@@ -15,7 +15,8 @@ object NxAttributeExpressionValues {
     __obj.asInstanceOf[NxAttributeExpressionValues]
   }
   
-  extension [Self <: NxAttributeExpressionValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NxAttributeExpressionValues] (val x: Self) extends AnyVal {
     
     inline def setQValues(value: js.Array[NxSimpleValue]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
     

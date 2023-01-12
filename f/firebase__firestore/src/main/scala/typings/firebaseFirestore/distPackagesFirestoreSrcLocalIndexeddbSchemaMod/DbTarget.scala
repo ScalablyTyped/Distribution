@@ -94,7 +94,8 @@ object DbTarget {
     __obj.asInstanceOf[DbTarget]
   }
   
-  extension [Self <: DbTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbTarget] (val x: Self) extends AnyVal {
     
     inline def setCanonicalId(value: String): Self = StObject.set(x, "canonicalId", value.asInstanceOf[js.Any])
     

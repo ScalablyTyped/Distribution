@@ -16,7 +16,8 @@ object ListNodePoolsResponse {
     __obj.asInstanceOf[ListNodePoolsResponse]
   }
   
-  extension [Self <: ListNodePoolsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNodePoolsResponse] (val x: Self) extends AnyVal {
     
     inline def setNodePools(value: js.Array[NodePool]): Self = StObject.set(x, "nodePools", value.asInstanceOf[js.Any])
     

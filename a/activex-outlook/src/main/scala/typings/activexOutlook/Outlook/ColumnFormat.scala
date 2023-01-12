@@ -46,7 +46,8 @@ object ColumnFormat {
     __obj.asInstanceOf[ColumnFormat]
   }
   
-  extension [Self <: ColumnFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnFormat] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: OlAlign): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     

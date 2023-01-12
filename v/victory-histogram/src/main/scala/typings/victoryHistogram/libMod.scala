@@ -55,7 +55,8 @@ object libMod {
       __obj.asInstanceOf[VictoryHistogramProps]
     }
     
-    extension [Self <: VictoryHistogramProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryHistogramProps] (val x: Self) extends AnyVal {
       
       inline def setBinSpacing(value: Double): Self = StObject.set(x, "binSpacing", value.asInstanceOf[js.Any])
       

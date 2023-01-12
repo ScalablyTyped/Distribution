@@ -29,7 +29,8 @@ object CssKeyframeAST {
     __obj.asInstanceOf[CssKeyframeAST]
   }
   
-  extension [Self <: CssKeyframeAST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssKeyframeAST] (val x: Self) extends AnyVal {
     
     inline def setDeclarations(value: js.Array[CssDeclarationAST | CssCommentAST]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     

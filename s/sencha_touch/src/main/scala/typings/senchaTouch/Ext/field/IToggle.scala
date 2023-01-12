@@ -83,7 +83,8 @@ object IToggle {
     __obj.asInstanceOf[IToggle]
   }
   
-  extension [Self <: IToggle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IToggle] (val x: Self) extends AnyVal {
     
     inline def setActiveLabel(value: String): Self = StObject.set(x, "activeLabel", value.asInstanceOf[js.Any])
     

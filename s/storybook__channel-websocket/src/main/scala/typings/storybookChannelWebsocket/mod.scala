@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[CreateChannelArgs]
     }
     
-    extension [Self <: CreateChannelArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateChannelArgs] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object mod {
       __obj.asInstanceOf[WebsocketTransportArgs]
     }
     
-    extension [Self <: WebsocketTransportArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebsocketTransportArgs] (val x: Self) extends AnyVal {
       
       inline def setOnError(value: /* message */ Event => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       

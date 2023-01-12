@@ -51,7 +51,8 @@ object buildSrcMeasurersAbstractMeasurerMod {
       __obj.asInstanceOf[IDimensions]
     }
     
-    extension [Self <: IDimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDimensions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

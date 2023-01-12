@@ -28,7 +28,8 @@ object ListDistributionsByOriginRequestPolicyIdRequest {
     __obj.asInstanceOf[ListDistributionsByOriginRequestPolicyIdRequest]
   }
   
-  extension [Self <: ListDistributionsByOriginRequestPolicyIdRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDistributionsByOriginRequestPolicyIdRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

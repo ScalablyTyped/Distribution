@@ -15,7 +15,8 @@ object ResultDisplayLine {
     __obj.asInstanceOf[ResultDisplayLine]
   }
   
-  extension [Self <: ResultDisplayLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultDisplayLine] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[ResultDisplayField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

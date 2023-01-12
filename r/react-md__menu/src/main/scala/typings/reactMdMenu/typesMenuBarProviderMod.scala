@@ -36,7 +36,8 @@ object typesMenuBarProviderMod {
       __obj.asInstanceOf[HoverableMenuBar]
     }
     
-    extension [Self <: HoverableMenuBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoverableMenuBar] (val x: Self) extends AnyVal {
       
       inline def setHoverTimeout(value: Double): Self = StObject.set(x, "hoverTimeout", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object typesMenuBarProviderMod {
       __obj.asInstanceOf[MenuBarContext]
     }
     
-    extension [Self <: MenuBarContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuBarContext] (val x: Self) extends AnyVal {
       
       inline def setActiveId(value: String): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
       
@@ -165,7 +167,8 @@ object typesMenuBarProviderMod {
       __obj.asInstanceOf[MenuBarProviderProps]
     }
     
-    extension [Self <: MenuBarProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuBarProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

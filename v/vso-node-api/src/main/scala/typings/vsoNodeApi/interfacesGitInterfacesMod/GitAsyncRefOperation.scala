@@ -32,7 +32,8 @@ object GitAsyncRefOperation {
     __obj.asInstanceOf[GitAsyncRefOperation]
   }
   
-  extension [Self <: GitAsyncRefOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitAsyncRefOperation] (val x: Self) extends AnyVal {
     
     inline def setDetailedStatus(value: GitAsyncRefOperationDetail): Self = StObject.set(x, "detailedStatus", value.asInstanceOf[js.Any])
     

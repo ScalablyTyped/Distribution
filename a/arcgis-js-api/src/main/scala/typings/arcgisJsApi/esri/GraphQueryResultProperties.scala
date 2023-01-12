@@ -26,7 +26,8 @@ object GraphQueryResultProperties {
     __obj.asInstanceOf[GraphQueryResultProperties]
   }
   
-  extension [Self <: GraphQueryResultProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphQueryResultProperties] (val x: Self) extends AnyVal {
     
     inline def setResultRows(
       value: js.Array[

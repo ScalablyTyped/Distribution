@@ -21,7 +21,8 @@ object NewDocument {
     __obj.asInstanceOf[NewDocument]
   }
   
-  extension [Self <: NewDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewDocument] (val x: Self) extends AnyVal {
     
     inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     

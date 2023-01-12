@@ -29,7 +29,8 @@ object distDataMod {
       __obj.asInstanceOf[DataOptions]
     }
     
-    extension [Self <: DataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: DataReadable): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

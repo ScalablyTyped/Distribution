@@ -35,7 +35,8 @@ object Display {
       __obj.asInstanceOf[ColorObject]
     }
     
-    extension [Self <: ColorObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorObject] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object Display {
       __obj.asInstanceOf[HSVColorObject]
     }
     
-    extension [Self <: HSVColorObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HSVColorObject] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object Display {
       __obj.asInstanceOf[InputColorObject]
     }
     
-    extension [Self <: InputColorObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputColorObject] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       

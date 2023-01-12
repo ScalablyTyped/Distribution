@@ -18,7 +18,8 @@ object RegisterDefaultPatchBaselineResult {
     __obj.asInstanceOf[RegisterDefaultPatchBaselineResult]
   }
   
-  extension [Self <: RegisterDefaultPatchBaselineResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterDefaultPatchBaselineResult] (val x: Self) extends AnyVal {
     
     inline def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
     

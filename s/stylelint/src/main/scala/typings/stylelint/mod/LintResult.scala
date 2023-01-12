@@ -42,7 +42,8 @@ object LintResult {
     __obj.asInstanceOf[LintResult]
   }
   
-  extension [Self <: LintResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LintResult] (val x: Self) extends AnyVal {
     
     inline def setDeprecations(value: js.Array[Reference]): Self = StObject.set(x, "deprecations", value.asInstanceOf[js.Any])
     

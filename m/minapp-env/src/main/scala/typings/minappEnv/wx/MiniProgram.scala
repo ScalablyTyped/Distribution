@@ -17,7 +17,8 @@ object MiniProgram {
     __obj.asInstanceOf[MiniProgram]
   }
   
-  extension [Self <: MiniProgram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MiniProgram] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
   }

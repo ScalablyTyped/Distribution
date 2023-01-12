@@ -54,7 +54,8 @@ object IPoint {
     __obj.asInstanceOf[IPoint]
   }
   
-  extension [Self <: IPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPoint] (val x: Self) extends AnyVal {
     
     inline def setEquals_(value: /* p */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     

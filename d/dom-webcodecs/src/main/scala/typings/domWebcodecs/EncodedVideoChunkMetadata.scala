@@ -17,7 +17,8 @@ object EncodedVideoChunkMetadata {
     __obj.asInstanceOf[EncodedVideoChunkMetadata]
   }
   
-  extension [Self <: EncodedVideoChunkMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncodedVideoChunkMetadata] (val x: Self) extends AnyVal {
     
     inline def setDecoderConfig(value: VideoDecoderConfig): Self = StObject.set(x, "decoderConfig", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CallFunctionOnResponse {
     __obj.asInstanceOf[CallFunctionOnResponse]
   }
   
-  extension [Self <: CallFunctionOnResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallFunctionOnResponse] (val x: Self) extends AnyVal {
     
     inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     

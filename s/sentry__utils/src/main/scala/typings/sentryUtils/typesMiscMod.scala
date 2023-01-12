@@ -57,7 +57,8 @@ object typesMiscMod {
       __obj.asInstanceOf[SemVer]
     }
     
-    extension [Self <: SemVer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemVer] (val x: Self) extends AnyVal {
       
       inline def setBuildmetadata(value: String): Self = StObject.set(x, "buildmetadata", value.asInstanceOf[js.Any])
       

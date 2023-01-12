@@ -20,7 +20,8 @@ object PressActionOptions {
     __obj.asInstanceOf[PressActionOptions]
   }
   
-  extension [Self <: PressActionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressActionOptions] (val x: Self) extends AnyVal {
     
     inline def setConfidential(value: Boolean): Self = StObject.set(x, "confidential", value.asInstanceOf[js.Any])
     

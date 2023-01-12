@@ -201,7 +201,8 @@ object Environmentid {
     __obj.asInstanceOf[Environmentid]
   }
   
-  extension [Self <: Environmentid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Environmentid] (val x: Self) extends AnyVal {
     
     inline def setBillable_owner(value: Avatarurl): Self = StObject.set(x, "billable_owner", value.asInstanceOf[js.Any])
     

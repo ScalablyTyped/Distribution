@@ -27,7 +27,8 @@ object IsVisible {
     __obj.asInstanceOf[IsVisible]
   }
   
-  extension [Self <: IsVisible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsVisible] (val x: Self) extends AnyVal {
     
     inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     

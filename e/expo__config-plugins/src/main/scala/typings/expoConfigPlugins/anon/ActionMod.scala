@@ -20,7 +20,8 @@ object ActionMod {
     __obj.asInstanceOf[ActionMod[T]]
   }
   
-  extension [Self <: ActionMod[?], T](x: Self & ActionMod[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionMod[?], T] (val x: Self & ActionMod[T]) extends AnyVal {
     
     inline def setAction(value: Mod[T]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }

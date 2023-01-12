@@ -27,7 +27,8 @@ object DistanceMeasurement2DViewModelMeasurement {
     __obj.asInstanceOf[DistanceMeasurement2DViewModelMeasurement]
   }
   
-  extension [Self <: DistanceMeasurement2DViewModelMeasurement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistanceMeasurement2DViewModelMeasurement] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

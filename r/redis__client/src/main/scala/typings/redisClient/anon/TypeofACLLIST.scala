@@ -22,7 +22,8 @@ object TypeofACLLIST {
     __obj.asInstanceOf[TypeofACLLIST]
   }
   
-  extension [Self <: TypeofACLLIST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofACLLIST] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

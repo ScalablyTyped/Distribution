@@ -20,7 +20,8 @@ object ListGroupResourcesItem {
     __obj.asInstanceOf[ListGroupResourcesItem]
   }
   
-  extension [Self <: ListGroupResourcesItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGroupResourcesItem] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: ResourceIdentifier): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     

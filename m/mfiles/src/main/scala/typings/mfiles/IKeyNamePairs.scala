@@ -17,7 +17,8 @@ object IKeyNamePairs {
     __obj.asInstanceOf[IKeyNamePairs]
   }
   
-  extension [Self <: IKeyNamePairs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKeyNamePairs] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

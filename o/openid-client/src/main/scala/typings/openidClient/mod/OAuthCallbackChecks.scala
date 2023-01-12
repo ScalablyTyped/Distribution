@@ -23,7 +23,8 @@ object OAuthCallbackChecks {
     __obj.asInstanceOf[OAuthCallbackChecks]
   }
   
-  extension [Self <: OAuthCallbackChecks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthCallbackChecks] (val x: Self) extends AnyVal {
     
     inline def setCode_verifier(value: String): Self = StObject.set(x, "code_verifier", value.asInstanceOf[js.Any])
     

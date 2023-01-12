@@ -33,7 +33,8 @@ object ProductViewDetail {
     __obj.asInstanceOf[ProductViewDetail]
   }
   
-  extension [Self <: ProductViewDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductViewDetail] (val x: Self) extends AnyVal {
     
     inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     

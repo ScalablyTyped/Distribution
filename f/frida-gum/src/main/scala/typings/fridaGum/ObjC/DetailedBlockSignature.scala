@@ -20,7 +20,8 @@ object DetailedBlockSignature {
     __obj.asInstanceOf[DetailedBlockSignature]
   }
   
-  extension [Self <: DetailedBlockSignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedBlockSignature] (val x: Self) extends AnyVal {
     
     inline def setTypes(value: String): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
   }

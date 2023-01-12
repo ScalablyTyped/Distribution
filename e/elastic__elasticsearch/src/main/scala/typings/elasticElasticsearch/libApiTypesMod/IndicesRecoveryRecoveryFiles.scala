@@ -23,7 +23,8 @@ object IndicesRecoveryRecoveryFiles {
     __obj.asInstanceOf[IndicesRecoveryRecoveryFiles]
   }
   
-  extension [Self <: IndicesRecoveryRecoveryFiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesRecoveryRecoveryFiles] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: js.Array[IndicesRecoveryFileDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

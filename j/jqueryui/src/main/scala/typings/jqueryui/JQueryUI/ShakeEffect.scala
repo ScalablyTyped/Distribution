@@ -19,7 +19,8 @@ object ShakeEffect {
     __obj.asInstanceOf[ShakeEffect]
   }
   
-  extension [Self <: ShakeEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShakeEffect] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

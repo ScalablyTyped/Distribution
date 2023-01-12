@@ -28,7 +28,8 @@ object ResourceSpecificPermission {
     __obj.asInstanceOf[ResourceSpecificPermission]
   }
   
-  extension [Self <: ResourceSpecificPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceSpecificPermission] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

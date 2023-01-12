@@ -20,7 +20,8 @@ object SudokeepNstringolderThans {
     __obj.asInstanceOf[SudokeepNstringolderThans]
   }
   
-  extension [Self <: SudokeepNstringolderThans](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SudokeepNstringolderThans] (val x: Self) extends AnyVal {
     
     inline def setKeepN(value: String): Self = StObject.set(x, "keepN", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object CanvasHTMLAttributes {
     __obj.asInstanceOf[CanvasHTMLAttributes]
   }
   
-  extension [Self <: CanvasHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

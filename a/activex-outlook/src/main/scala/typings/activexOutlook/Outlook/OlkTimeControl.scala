@@ -83,7 +83,8 @@ object OlkTimeControl {
     __obj.asInstanceOf[OlkTimeControl]
   }
   
-  extension [Self <: OlkTimeControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlkTimeControl] (val x: Self) extends AnyVal {
     
     inline def setAutoSize(value: Boolean): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
     

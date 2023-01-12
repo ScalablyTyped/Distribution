@@ -59,7 +59,8 @@ object libConfigMod {
       __obj.asInstanceOf[GlobalizeConfig]
     }
     
-    extension [Self <: GlobalizeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalizeConfig] (val x: Self) extends AnyVal {
       
       inline def setAPP_LANGS(value: js.Array[String]): Self = StObject.set(x, "APP_LANGS", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object libConfigMod {
       __obj.asInstanceOf[ResourceTag]
     }
     
-    extension [Self <: ResourceTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceTag] (val x: Self) extends AnyVal {
       
       inline def setFileIdHash(value: String): Self = StObject.set(x, "fileIdHash", value.asInstanceOf[js.Any])
       

@@ -46,7 +46,8 @@ object TeamsurlUrl {
     __obj.asInstanceOf[TeamsurlUrl]
   }
   
-  extension [Self <: TeamsurlUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamsurlUrl] (val x: Self) extends AnyVal {
     
     inline def setApps(
       value: js.Array[

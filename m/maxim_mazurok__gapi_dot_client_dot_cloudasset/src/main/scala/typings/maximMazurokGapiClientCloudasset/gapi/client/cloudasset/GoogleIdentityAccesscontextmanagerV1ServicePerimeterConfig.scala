@@ -44,7 +44,8 @@ object GoogleIdentityAccesscontextmanagerV1ServicePerimeterConfig {
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1ServicePerimeterConfig]
   }
   
-  extension [Self <: GoogleIdentityAccesscontextmanagerV1ServicePerimeterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1ServicePerimeterConfig] (val x: Self) extends AnyVal {
     
     inline def setAccessLevels(value: js.Array[String]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
     

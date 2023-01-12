@@ -32,7 +32,8 @@ object libTypesIfabricconfigMod {
       __obj.asInstanceOf[IFabricConfig]
     }
     
-    extension [Self <: IFabricConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFabricConfig] (val x: Self) extends AnyVal {
       
       inline def setFontBaseUrl(value: String): Self = StObject.set(x, "fontBaseUrl", value.asInstanceOf[js.Any])
       

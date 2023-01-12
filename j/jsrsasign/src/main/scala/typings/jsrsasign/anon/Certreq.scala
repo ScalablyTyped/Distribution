@@ -32,7 +32,8 @@ object Certreq {
     __obj.asInstanceOf[Certreq]
   }
   
-  extension [Self <: Certreq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Certreq] (val x: Self) extends AnyVal {
     
     inline def setCertreq(value: Boolean): Self = StObject.set(x, "certreq", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object TerminateRecommendationDetail {
     __obj.asInstanceOf[TerminateRecommendationDetail]
   }
   
-  extension [Self <: TerminateRecommendationDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminateRecommendationDetail] (val x: Self) extends AnyVal {
     
     inline def setCurrencyCode(value: GenericString): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     

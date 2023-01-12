@@ -18,7 +18,8 @@ object AssistantAssociationInputData {
     __obj.asInstanceOf[AssistantAssociationInputData]
   }
   
-  extension [Self <: AssistantAssociationInputData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssistantAssociationInputData] (val x: Self) extends AnyVal {
     
     inline def setKnowledgeBaseId(value: Uuid): Self = StObject.set(x, "knowledgeBaseId", value.asInstanceOf[js.Any])
     

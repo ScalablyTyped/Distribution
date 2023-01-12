@@ -28,7 +28,8 @@ object OptedOutNumberInformation {
     __obj.asInstanceOf[OptedOutNumberInformation]
   }
   
-  extension [Self <: OptedOutNumberInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptedOutNumberInformation] (val x: Self) extends AnyVal {
     
     inline def setEndUserOptedOut(value: PrimitiveBoolean): Self = StObject.set(x, "EndUserOptedOut", value.asInstanceOf[js.Any])
     

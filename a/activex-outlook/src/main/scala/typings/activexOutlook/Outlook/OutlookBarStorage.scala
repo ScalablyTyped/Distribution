@@ -34,7 +34,8 @@ object OutlookBarStorage {
     __obj.asInstanceOf[OutlookBarStorage]
   }
   
-  extension [Self <: OutlookBarStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlookBarStorage] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

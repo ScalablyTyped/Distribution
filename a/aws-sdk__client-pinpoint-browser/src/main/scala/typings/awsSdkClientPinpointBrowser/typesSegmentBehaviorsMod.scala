@@ -22,7 +22,8 @@ object typesSegmentBehaviorsMod {
       __obj.asInstanceOf[SegmentBehaviors]
     }
     
-    extension [Self <: SegmentBehaviors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentBehaviors] (val x: Self) extends AnyVal {
       
       inline def setRecency(value: RecencyDimension): Self = StObject.set(x, "Recency", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object typesSegmentBehaviorsMod {
       __obj.asInstanceOf[UnmarshalledSegmentBehaviors]
     }
     
-    extension [Self <: UnmarshalledSegmentBehaviors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSegmentBehaviors] (val x: Self) extends AnyVal {
       
       inline def setRecency(value: UnmarshalledRecencyDimension): Self = StObject.set(x, "Recency", value.asInstanceOf[js.Any])
       

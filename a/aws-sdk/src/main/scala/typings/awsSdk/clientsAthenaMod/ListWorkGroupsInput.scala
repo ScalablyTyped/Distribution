@@ -23,7 +23,8 @@ object ListWorkGroupsInput {
     __obj.asInstanceOf[ListWorkGroupsInput]
   }
   
-  extension [Self <: ListWorkGroupsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListWorkGroupsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxWorkGroupsCount): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

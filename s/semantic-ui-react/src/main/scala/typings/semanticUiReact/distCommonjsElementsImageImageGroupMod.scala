@@ -52,7 +52,8 @@ object distCommonjsElementsImageImageGroupMod extends Shortcut {
       __obj.asInstanceOf[StrictImageGroupProps]
     }
     
-    extension [Self <: StrictImageGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictImageGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

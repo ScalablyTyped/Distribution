@@ -18,7 +18,8 @@ object GetUserSettingsRequest {
     __obj.asInstanceOf[GetUserSettingsRequest]
   }
   
-  extension [Self <: GetUserSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUserSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setUserSettingsArn(value: ARN): Self = StObject.set(x, "userSettingsArn", value.asInstanceOf[js.Any])
   }

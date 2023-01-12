@@ -36,7 +36,8 @@ object libCurveMod {
       __obj.asInstanceOf[CurveProps]
     }
     
-    extension [Self <: CurveProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurveProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StringOrCallback */ Any

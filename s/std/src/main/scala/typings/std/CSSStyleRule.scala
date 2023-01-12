@@ -38,7 +38,8 @@ object CSSStyleRule {
     __obj.asInstanceOf[CSSStyleRule]
   }
   
-  extension [Self <: CSSStyleRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSStyleRule] (val x: Self) extends AnyVal {
     
     inline def setSelectorText(value: java.lang.String): Self = StObject.set(x, "selectorText", value.asInstanceOf[js.Any])
     

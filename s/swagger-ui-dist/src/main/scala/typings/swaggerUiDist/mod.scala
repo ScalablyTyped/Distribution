@@ -131,7 +131,8 @@ object mod {
       __obj.asInstanceOf[SwaggerConfigs]
     }
     
-    extension [Self <: SwaggerConfigs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwaggerConfigs] (val x: Self) extends AnyVal {
       
       inline def setConfigUrl(value: String): Self = StObject.set(x, "configUrl", value.asInstanceOf[js.Any])
       
@@ -218,7 +219,8 @@ object mod {
       __obj.asInstanceOf[SwaggerRequest]
     }
     
-    extension [Self <: SwaggerRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwaggerRequest] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
@@ -241,7 +243,8 @@ object mod {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

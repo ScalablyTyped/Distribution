@@ -30,7 +30,8 @@ object libInterfaceMod {
       __obj.asInstanceOf[FlattenOptionData[OptionType]]
     }
     
-    extension [Self <: FlattenOptionData[?], OptionType](x: Self & FlattenOptionData[OptionType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlattenOptionData[?], OptionType] (val x: Self & FlattenOptionData[OptionType]) extends AnyVal {
       
       inline def setData(value: OptionType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

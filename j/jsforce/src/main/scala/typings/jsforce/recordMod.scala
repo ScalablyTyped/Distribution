@@ -69,7 +69,8 @@ object recordMod {
       __obj.asInstanceOf[RecordAttributes]
     }
     
-    extension [Self <: RecordAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordAttributes] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

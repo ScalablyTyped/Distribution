@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[FullscreenOptions]
     }
     
-    extension [Self <: FullscreenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullscreenOptions] (val x: Self) extends AnyVal {
       
       inline def setEnterOnRotate(value: Boolean): Self = StObject.set(x, "enterOnRotate", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setForceForTesting(value: Boolean): Self = StObject.set(x, "forceForTesting", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object mod {
       __obj.asInstanceOf[TouchControlsOptions]
     }
     
-    extension [Self <: TouchControlsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchControlsOptions] (val x: Self) extends AnyVal {
       
       inline def setDisableOnEnd(value: Boolean): Self = StObject.set(x, "disableOnEnd", value.asInstanceOf[js.Any])
       
@@ -178,7 +181,8 @@ object mod {
         __obj.asInstanceOf[VideoJsPlayer]
       }
       
-      extension [Self <: VideoJsPlayer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoJsPlayer] (val x: Self) extends AnyVal {
         
         inline def setMobileUi(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mobileUi */ Any): Self = StObject.set(x, "mobileUi", value.asInstanceOf[js.Any])
       }

@@ -87,7 +87,8 @@ object FlowsModule {
     __obj.asInstanceOf[FlowsModule]
   }
   
-  extension [Self <: FlowsModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowsModule] (val x: Self) extends AnyVal {
     
     inline def setAddFlow(value: typings.nodeRedRuntime.anon.Flow => js.Promise[String]): Self = StObject.set(x, "addFlow", js.Any.fromFunction1(value))
     

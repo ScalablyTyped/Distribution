@@ -268,7 +268,8 @@ object sapUxapObjectPageHeaderActionButtonMod {
       __obj.asInstanceOf[ObjectPageHeaderActionButtonSettings]
     }
     
-    extension [Self <: ObjectPageHeaderActionButtonSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPageHeaderActionButtonSettings] (val x: Self) extends AnyVal {
       
       inline def setHideIcon(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "hideIcon", value.asInstanceOf[js.Any])
       

@@ -59,7 +59,8 @@ object PLoadingOptions {
     __obj.asInstanceOf[PLoadingOptions]
   }
   
-  extension [Self <: PLoadingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PLoadingOptions] (val x: Self) extends AnyVal {
     
     inline def setAction(value: show | hide | destroy): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

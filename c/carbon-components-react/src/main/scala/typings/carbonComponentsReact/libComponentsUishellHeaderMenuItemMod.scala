@@ -48,7 +48,8 @@ object libComponentsUishellHeaderMenuItemMod {
       __obj.asInstanceOf[HeaderMenuItemPropsBase]
     }
     
-    extension [Self <: HeaderMenuItemPropsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderMenuItemPropsBase] (val x: Self) extends AnyVal {
       
       inline def setIsCurrentPage(value: Boolean): Self = StObject.set(x, "isCurrentPage", value.asInstanceOf[js.Any])
       

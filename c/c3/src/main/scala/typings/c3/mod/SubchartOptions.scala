@@ -31,7 +31,8 @@ object SubchartOptions {
     __obj.asInstanceOf[SubchartOptions]
   }
   
-  extension [Self <: SubchartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubchartOptions] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: `2`): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object ConceptMapGroupUnmapped {
     __obj.asInstanceOf[ConceptMapGroupUnmapped]
   }
   
-  extension [Self <: ConceptMapGroupUnmapped](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConceptMapGroupUnmapped] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

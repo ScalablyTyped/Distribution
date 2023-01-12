@@ -23,7 +23,8 @@ object Disk {
     __obj.asInstanceOf[Disk]
   }
   
-  extension [Self <: Disk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Disk] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: PositiveInteger): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

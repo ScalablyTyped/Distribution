@@ -22,7 +22,8 @@ object configurationMod {
       __obj.asInstanceOf[ConfigCredentialsOption]
     }
     
-    extension [Self <: ConfigCredentialsOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigCredentialsOption] (val x: Self) extends AnyVal {
       
       inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object configurationMod {
       __obj.asInstanceOf[ConfigTokenOption]
     }
     
-    extension [Self <: ConfigTokenOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigTokenOption] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     }
@@ -87,7 +89,8 @@ object configurationMod {
       __obj.asInstanceOf[GeneralConfigOptions]
     }
     
-    extension [Self <: GeneralConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneralConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setCorporation_id(value: String): Self = StObject.set(x, "corporation_id", value.asInstanceOf[js.Any])
       
@@ -177,7 +180,8 @@ object configurationMod {
       __obj.asInstanceOf[MercadoPagoConfig]
     }
     
-    extension [Self <: MercadoPagoConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MercadoPagoConfig] (val x: Self) extends AnyVal {
       
       inline def setAreTestsRunnning(value: () => String): Self = StObject.set(x, "areTestsRunnning", js.Any.fromFunction0(value))
       

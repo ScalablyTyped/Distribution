@@ -26,7 +26,8 @@ object PickTooltipopenclosedestr {
     __obj.asInstanceOf[PickTooltipopenclosedestr]
   }
   
-  extension [Self <: PickTooltipopenclosedestr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickTooltipopenclosedestr] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

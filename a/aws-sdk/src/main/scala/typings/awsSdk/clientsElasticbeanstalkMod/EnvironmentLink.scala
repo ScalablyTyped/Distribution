@@ -23,7 +23,8 @@ object EnvironmentLink {
     __obj.asInstanceOf[EnvironmentLink]
   }
   
-  extension [Self <: EnvironmentLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentLink] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentName(value: String): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     

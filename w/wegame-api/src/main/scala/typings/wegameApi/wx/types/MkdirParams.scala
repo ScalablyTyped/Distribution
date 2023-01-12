@@ -24,7 +24,8 @@ object MkdirParams {
     __obj.asInstanceOf[MkdirParams]
   }
   
-  extension [Self <: MkdirParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MkdirParams] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

@@ -36,7 +36,8 @@ object IChain {
     __obj.asInstanceOf[IChain]
   }
   
-  extension [Self <: IChain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IChain] (val x: Self) extends AnyVal {
     
     inline def setContains(value: js.Array[IChain]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     

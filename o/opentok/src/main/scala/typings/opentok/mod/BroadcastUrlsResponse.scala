@@ -17,7 +17,8 @@ object BroadcastUrlsResponse {
     __obj.asInstanceOf[BroadcastUrlsResponse]
   }
   
-  extension [Self <: BroadcastUrlsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BroadcastUrlsResponse] (val x: Self) extends AnyVal {
     
     inline def setHls(value: String): Self = StObject.set(x, "hls", value.asInstanceOf[js.Any])
     

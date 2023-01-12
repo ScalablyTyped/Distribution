@@ -23,7 +23,8 @@ object HoldoutActivity {
     __obj.asInstanceOf[HoldoutActivity]
   }
   
-  extension [Self <: HoldoutActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoldoutActivity] (val x: Self) extends AnyVal {
     
     inline def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object FieldSchemaInFormMultiLineText {
     __obj.asInstanceOf[FieldSchemaInFormMultiLineText]
   }
   
-  extension [Self <: FieldSchemaInFormMultiLineText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSchemaInFormMultiLineText] (val x: Self) extends AnyVal {
     
     inline def setAllowHyperlink(value: Boolean): Self = StObject.set(x, "AllowHyperlink", value.asInstanceOf[js.Any])
     

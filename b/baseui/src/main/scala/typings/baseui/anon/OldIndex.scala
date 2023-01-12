@@ -20,7 +20,8 @@ object OldIndex {
     __obj.asInstanceOf[OldIndex]
   }
   
-  extension [Self <: OldIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OldIndex] (val x: Self) extends AnyVal {
     
     inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     

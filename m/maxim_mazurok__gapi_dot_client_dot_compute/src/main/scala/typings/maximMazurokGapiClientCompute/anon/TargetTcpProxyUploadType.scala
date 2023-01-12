@@ -68,7 +68,8 @@ object TargetTcpProxyUploadType {
     __obj.asInstanceOf[TargetTcpProxyUploadType]
   }
   
-  extension [Self <: TargetTcpProxyUploadType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetTcpProxyUploadType] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

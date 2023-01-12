@@ -181,7 +181,8 @@ object PartialAxisCalendar {
     __obj.asInstanceOf[PartialAxisCalendar]
   }
   
-  extension [Self <: PartialAxisCalendar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAxisCalendar] (val x: Self) extends AnyVal {
     
     inline def setAutorange(value: `true` | `false` | reversed): Self = StObject.set(x, "autorange", value.asInstanceOf[js.Any])
     

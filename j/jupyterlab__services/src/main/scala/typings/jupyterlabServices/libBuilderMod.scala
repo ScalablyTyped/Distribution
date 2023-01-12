@@ -71,7 +71,8 @@ object libBuilderMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
         
@@ -101,7 +102,8 @@ object libBuilderMod {
         __obj.asInstanceOf[IStatus]
       }
       
-      extension [Self <: IStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IStatus] (val x: Self) extends AnyVal {
         
         inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         

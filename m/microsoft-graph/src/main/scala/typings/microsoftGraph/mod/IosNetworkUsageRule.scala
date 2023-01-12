@@ -25,7 +25,8 @@ object IosNetworkUsageRule {
     __obj.asInstanceOf[IosNetworkUsageRule]
   }
   
-  extension [Self <: IosNetworkUsageRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosNetworkUsageRule] (val x: Self) extends AnyVal {
     
     inline def setCellularDataBlockWhenRoaming(value: Boolean): Self = StObject.set(x, "cellularDataBlockWhenRoaming", value.asInstanceOf[js.Any])
     

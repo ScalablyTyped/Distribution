@@ -18,7 +18,8 @@ object AutoExportPolicy {
     __obj.asInstanceOf[AutoExportPolicy]
   }
   
-  extension [Self <: AutoExportPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoExportPolicy] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: EventTypes): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

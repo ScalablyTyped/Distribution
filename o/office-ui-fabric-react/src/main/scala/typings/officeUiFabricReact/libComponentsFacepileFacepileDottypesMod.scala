@@ -154,7 +154,8 @@ object libComponentsFacepileFacepileDottypesMod {
       __obj.asInstanceOf[IFacepilePersona]
     }
     
-    extension [Self <: IFacepilePersona](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFacepilePersona] (val x: Self) extends AnyVal {
       
       inline def setAllowPhoneInitials(value: Boolean): Self = StObject.set(x, "allowPhoneInitials", value.asInstanceOf[js.Any])
       
@@ -295,7 +296,8 @@ object libComponentsFacepileFacepileDottypesMod {
       __obj.asInstanceOf[IFacepileProps]
     }
     
-    extension [Self <: IFacepileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFacepileProps] (val x: Self) extends AnyVal {
       
       inline def setAddButtonProps(value: IButtonProps): Self = StObject.set(x, "addButtonProps", value.asInstanceOf[js.Any])
       
@@ -409,7 +411,8 @@ object libComponentsFacepileFacepileDottypesMod {
       __obj.asInstanceOf[IFacepileStyleProps]
     }
     
-    extension [Self <: IFacepileStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFacepileStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -455,7 +458,8 @@ object libComponentsFacepileFacepileDottypesMod {
       __obj.asInstanceOf[IFacepileStyles]
     }
     
-    extension [Self <: IFacepileStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFacepileStyles] (val x: Self) extends AnyVal {
       
       inline def setAddButton(value: IStyle): Self = StObject.set(x, "addButton", value.asInstanceOf[js.Any])
       

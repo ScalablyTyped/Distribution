@@ -19,7 +19,8 @@ object SuggestedBullet {
     __obj.asInstanceOf[SuggestedBullet]
   }
   
-  extension [Self <: SuggestedBullet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestedBullet] (val x: Self) extends AnyVal {
     
     inline def setBullet(value: Bullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
     

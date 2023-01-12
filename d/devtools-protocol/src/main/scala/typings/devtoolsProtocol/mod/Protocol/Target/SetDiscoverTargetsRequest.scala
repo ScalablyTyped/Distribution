@@ -24,7 +24,8 @@ object SetDiscoverTargetsRequest {
     __obj.asInstanceOf[SetDiscoverTargetsRequest]
   }
   
-  extension [Self <: SetDiscoverTargetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetDiscoverTargetsRequest] (val x: Self) extends AnyVal {
     
     inline def setDiscover(value: Boolean): Self = StObject.set(x, "discover", value.asInstanceOf[js.Any])
     

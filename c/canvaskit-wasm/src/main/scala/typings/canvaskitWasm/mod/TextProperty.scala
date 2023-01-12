@@ -23,7 +23,8 @@ object TextProperty {
     __obj.asInstanceOf[TextProperty]
   }
   
-  extension [Self <: TextProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextProperty] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

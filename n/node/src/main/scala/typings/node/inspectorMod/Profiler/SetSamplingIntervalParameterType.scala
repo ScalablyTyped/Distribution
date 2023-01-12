@@ -18,7 +18,8 @@ object SetSamplingIntervalParameterType {
     __obj.asInstanceOf[SetSamplingIntervalParameterType]
   }
   
-  extension [Self <: SetSamplingIntervalParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetSamplingIntervalParameterType] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
   }

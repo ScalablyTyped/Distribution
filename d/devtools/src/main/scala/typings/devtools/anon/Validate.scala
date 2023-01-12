@@ -31,7 +31,8 @@ object Validate {
     __obj.asInstanceOf[Validate]
   }
   
-  extension [Self <: Validate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Validate] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: W3CCapabilities | DesiredCapabilities): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

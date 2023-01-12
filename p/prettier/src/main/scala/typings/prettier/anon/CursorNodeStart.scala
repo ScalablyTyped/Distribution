@@ -19,7 +19,8 @@ object CursorNodeStart {
     __obj.asInstanceOf[CursorNodeStart]
   }
   
-  extension [Self <: CursorNodeStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CursorNodeStart] (val x: Self) extends AnyVal {
     
     inline def setCursorNodeStart(value: Double): Self = StObject.set(x, "cursorNodeStart", value.asInstanceOf[js.Any])
     

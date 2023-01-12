@@ -25,7 +25,8 @@ object Dismissedcomment {
     __obj.asInstanceOf[Dismissedcomment]
   }
   
-  extension [Self <: Dismissedcomment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dismissedcomment] (val x: Self) extends AnyVal {
     
     inline def setDismissed_comment(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-alert-dismissed-comment'] */ js.Any

@@ -18,7 +18,8 @@ object SqlConfiguration {
     __obj.asInstanceOf[SqlConfiguration]
   }
   
-  extension [Self <: SqlConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlConfiguration] (val x: Self) extends AnyVal {
     
     inline def setQueryIdentifiersEnclosingOption(value: QueryIdentifiersEnclosingOption): Self = StObject.set(x, "QueryIdentifiersEnclosingOption", value.asInstanceOf[js.Any])
     

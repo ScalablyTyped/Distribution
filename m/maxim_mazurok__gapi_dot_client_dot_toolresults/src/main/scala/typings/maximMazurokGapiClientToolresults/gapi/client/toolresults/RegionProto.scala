@@ -25,7 +25,8 @@ object RegionProto {
     __obj.asInstanceOf[RegionProto]
   }
   
-  extension [Self <: RegionProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionProto] (val x: Self) extends AnyVal {
     
     inline def setHeightPx(value: Double): Self = StObject.set(x, "heightPx", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[VersionInfo]
     }
     
-    extension [Self <: VersionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VersionInfo] (val x: Self) extends AnyVal {
       
       inline def setBuildID(value: String): Self = StObject.set(x, "BuildID", value.asInstanceOf[js.Any])
       

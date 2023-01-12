@@ -23,7 +23,8 @@ object DomainJoinInfo {
     __obj.asInstanceOf[DomainJoinInfo]
   }
   
-  extension [Self <: DomainJoinInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainJoinInfo] (val x: Self) extends AnyVal {
     
     inline def setDirectoryName(value: DirectoryName): Self = StObject.set(x, "DirectoryName", value.asInstanceOf[js.Any])
     

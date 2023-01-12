@@ -73,7 +73,8 @@ object ActiveCellOffset {
     __obj.asInstanceOf[ActiveCellOffset]
   }
   
-  extension [Self <: ActiveCellOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveCellOffset] (val x: Self) extends AnyVal {
     
     inline def setActiveCellOffset(value: SharedValue[Double]): Self = StObject.set(x, "activeCellOffset", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object SetAccess {
     __obj.asInstanceOf[SetAccess]
   }
   
-  extension [Self <: SetAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetAccess] (val x: Self) extends AnyVal {
     
     inline def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
   }

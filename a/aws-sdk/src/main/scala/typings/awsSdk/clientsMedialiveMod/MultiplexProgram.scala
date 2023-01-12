@@ -38,7 +38,8 @@ object MultiplexProgram {
     __obj.asInstanceOf[MultiplexProgram]
   }
   
-  extension [Self <: MultiplexProgram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiplexProgram] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
     

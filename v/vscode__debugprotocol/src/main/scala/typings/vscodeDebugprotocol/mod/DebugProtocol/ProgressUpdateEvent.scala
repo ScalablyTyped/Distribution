@@ -33,7 +33,8 @@ object ProgressUpdateEvent {
     __obj.asInstanceOf[ProgressUpdateEvent]
   }
   
-  extension [Self <: ProgressUpdateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressUpdateEvent] (val x: Self) extends AnyVal {
     
     inline def setBody(value: typings.vscodeDebugprotocol.anon.Message): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

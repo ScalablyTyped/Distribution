@@ -23,7 +23,8 @@ object EntityLabel {
     __obj.asInstanceOf[EntityLabel]
   }
   
-  extension [Self <: EntityLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityLabel] (val x: Self) extends AnyVal {
     
     inline def setName(value: PiiEntityType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

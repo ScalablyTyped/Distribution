@@ -20,7 +20,8 @@ object GooglePrivacyDlpV2RecordKey {
     __obj.asInstanceOf[GooglePrivacyDlpV2RecordKey]
   }
   
-  extension [Self <: GooglePrivacyDlpV2RecordKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2RecordKey] (val x: Self) extends AnyVal {
     
     inline def setBigQueryKey(value: GooglePrivacyDlpV2BigQueryKey): Self = StObject.set(x, "bigQueryKey", value.asInstanceOf[js.Any])
     

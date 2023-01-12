@@ -43,7 +43,8 @@ object QueryOperationCost {
     __obj.asInstanceOf[QueryOperationCost]
   }
   
-  extension [Self <: QueryOperationCost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryOperationCost] (val x: Self) extends AnyVal {
     
     inline def setBlockingItems(value: Double): Self = StObject.set(x, "blockingItems", value.asInstanceOf[js.Any])
     

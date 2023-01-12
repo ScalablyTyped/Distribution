@@ -17,7 +17,8 @@ object IndicesModifyDataStreamIndexAndDataStreamAction {
     __obj.asInstanceOf[IndicesModifyDataStreamIndexAndDataStreamAction]
   }
   
-  extension [Self <: IndicesModifyDataStreamIndexAndDataStreamAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesModifyDataStreamIndexAndDataStreamAction] (val x: Self) extends AnyVal {
     
     inline def setData_stream(value: DataStreamName): Self = StObject.set(x, "data_stream", value.asInstanceOf[js.Any])
     

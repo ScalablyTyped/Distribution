@@ -17,7 +17,8 @@ object TreeViewAnimation {
     __obj.asInstanceOf[TreeViewAnimation]
   }
   
-  extension [Self <: TreeViewAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeViewAnimation] (val x: Self) extends AnyVal {
     
     inline def setCollapse(value: Boolean | TreeViewAnimationCollapse): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
     

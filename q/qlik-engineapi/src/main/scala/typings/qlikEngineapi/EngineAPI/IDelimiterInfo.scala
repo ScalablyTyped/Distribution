@@ -40,7 +40,8 @@ object IDelimiterInfo {
     __obj.asInstanceOf[IDelimiterInfo]
   }
   
-  extension [Self <: IDelimiterInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDelimiterInfo] (val x: Self) extends AnyVal {
     
     inline def setQIsMultiple(value: Boolean): Self = StObject.set(x, "qIsMultiple", value.asInstanceOf[js.Any])
     

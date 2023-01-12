@@ -44,7 +44,8 @@ object Cakey {
     __obj.asInstanceOf[Cakey]
   }
   
-  extension [Self <: Cakey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cakey] (val x: Self) extends AnyVal {
     
     inline def setCakey(value: js.Tuple2[String, String]): Self = StObject.set(x, "cakey", value.asInstanceOf[js.Any])
     

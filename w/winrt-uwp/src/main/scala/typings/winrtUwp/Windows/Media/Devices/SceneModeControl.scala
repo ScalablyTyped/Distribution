@@ -33,7 +33,8 @@ object SceneModeControl {
     __obj.asInstanceOf[SceneModeControl]
   }
   
-  extension [Self <: SceneModeControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneModeControl] (val x: Self) extends AnyVal {
     
     inline def setSetValueAsync(value: CaptureSceneMode => IPromiseWithIAsyncAction): Self = StObject.set(x, "setValueAsync", js.Any.fromFunction1(value))
     

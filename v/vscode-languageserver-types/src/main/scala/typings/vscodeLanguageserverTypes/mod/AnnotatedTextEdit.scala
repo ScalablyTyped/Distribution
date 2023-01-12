@@ -52,7 +52,8 @@ object AnnotatedTextEdit {
     */
   inline def replace(range: Range, newText: String, annotation: ChangeAnnotationIdentifier): AnnotatedTextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(range.asInstanceOf[js.Any], newText.asInstanceOf[js.Any], annotation.asInstanceOf[js.Any])).asInstanceOf[AnnotatedTextEdit]
   
-  extension [Self <: AnnotatedTextEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotatedTextEdit] (val x: Self) extends AnyVal {
     
     inline def setAnnotationId(value: ChangeAnnotationIdentifier): Self = StObject.set(x, "annotationId", value.asInstanceOf[js.Any])
   }

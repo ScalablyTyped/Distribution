@@ -26,7 +26,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[BatchSpanProcessorBrowserConfig]
     }
     
-    extension [Self <: BatchSpanProcessorBrowserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchSpanProcessorBrowserConfig] (val x: Self) extends AnyVal {
       
       inline def setDisableAutoFlushOnDocumentHide(value: Boolean): Self = StObject.set(x, "disableAutoFlushOnDocumentHide", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[BufferConfig]
     }
     
-    extension [Self <: BufferConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferConfig] (val x: Self) extends AnyVal {
       
       inline def setExportTimeoutMillis(value: Double): Self = StObject.set(x, "exportTimeoutMillis", value.asInstanceOf[js.Any])
       
@@ -94,7 +96,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[GeneralLimits]
     }
     
-    extension [Self <: GeneralLimits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneralLimits] (val x: Self) extends AnyVal {
       
       inline def setAttributeCountLimit(value: Double): Self = StObject.set(x, "attributeCountLimit", value.asInstanceOf[js.Any])
       
@@ -121,7 +124,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[SDKRegistrationConfig]
     }
     
-    extension [Self <: SDKRegistrationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SDKRegistrationConfig] (val x: Self) extends AnyVal {
       
       inline def setContextManager(value: ContextManager): Self = StObject.set(x, "contextManager", value.asInstanceOf[js.Any])
       
@@ -158,7 +162,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[SpanLimits]
     }
     
-    extension [Self <: SpanLimits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanLimits] (val x: Self) extends AnyVal {
       
       inline def setAttributeCountLimit(value: Double): Self = StObject.set(x, "attributeCountLimit", value.asInstanceOf[js.Any])
       
@@ -213,7 +218,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[TracerConfig]
     }
     
-    extension [Self <: TracerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracerConfig] (val x: Self) extends AnyVal {
       
       inline def setForceFlushTimeoutMillis(value: Double): Self = StObject.set(x, "forceFlushTimeoutMillis", value.asInstanceOf[js.Any])
       

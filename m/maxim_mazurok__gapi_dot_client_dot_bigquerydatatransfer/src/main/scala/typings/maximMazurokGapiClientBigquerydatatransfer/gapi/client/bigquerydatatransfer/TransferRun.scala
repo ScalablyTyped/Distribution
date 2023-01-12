@@ -69,7 +69,8 @@ object TransferRun {
     __obj.asInstanceOf[TransferRun]
   }
   
-  extension [Self <: TransferRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferRun] (val x: Self) extends AnyVal {
     
     inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     

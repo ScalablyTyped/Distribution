@@ -18,7 +18,8 @@ object CreateHITResponse {
     __obj.asInstanceOf[CreateHITResponse]
   }
   
-  extension [Self <: CreateHITResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateHITResponse] (val x: Self) extends AnyVal {
     
     inline def setHIT(value: HIT): Self = StObject.set(x, "HIT", value.asInstanceOf[js.Any])
     

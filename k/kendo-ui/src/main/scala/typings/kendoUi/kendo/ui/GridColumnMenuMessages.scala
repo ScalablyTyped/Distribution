@@ -42,7 +42,8 @@ object GridColumnMenuMessages {
     __obj.asInstanceOf[GridColumnMenuMessages]
   }
   
-  extension [Self <: GridColumnMenuMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridColumnMenuMessages] (val x: Self) extends AnyVal {
     
     inline def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     

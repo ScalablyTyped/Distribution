@@ -51,7 +51,8 @@ object srcMaterialsLineDashedMaterialMod {
       __obj.asInstanceOf[LineDashedMaterialParameters]
     }
     
-    extension [Self <: LineDashedMaterialParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineDashedMaterialParameters] (val x: Self) extends AnyVal {
       
       inline def setDashSize(value: Double): Self = StObject.set(x, "dashSize", value.asInstanceOf[js.Any])
       

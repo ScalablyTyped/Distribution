@@ -22,7 +22,8 @@ object CertificateTemplateParameters {
     __obj.asInstanceOf[CertificateTemplateParameters]
   }
   
-  extension [Self <: CertificateTemplateParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateTemplateParameters] (val x: Self) extends AnyVal {
     
     inline def setSchema(value: SchemaType): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

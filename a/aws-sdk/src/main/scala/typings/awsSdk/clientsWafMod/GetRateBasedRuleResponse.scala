@@ -18,7 +18,8 @@ object GetRateBasedRuleResponse {
     __obj.asInstanceOf[GetRateBasedRuleResponse]
   }
   
-  extension [Self <: GetRateBasedRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRateBasedRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setRule(value: RateBasedRule): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
     

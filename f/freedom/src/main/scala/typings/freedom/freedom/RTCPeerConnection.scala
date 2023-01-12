@@ -25,7 +25,8 @@ object RTCPeerConnection {
       __obj.asInstanceOf[OnIceCandidateEvent]
     }
     
-    extension [Self <: OnIceCandidateEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnIceCandidateEvent] (val x: Self) extends AnyVal {
       
       inline def setCandidate(value: RTCIceCandidate): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object RTCPeerConnection {
       __obj.asInstanceOf[RTCConfiguration]
     }
     
-    extension [Self <: RTCConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RTCConfiguration] (val x: Self) extends AnyVal {
       
       inline def setIceServers(value: js.Array[RTCIceServer]): Self = StObject.set(x, "iceServers", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object RTCPeerConnection {
       __obj.asInstanceOf[RTCDataChannelInit]
     }
     
-    extension [Self <: RTCDataChannelInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RTCDataChannelInit] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -126,7 +129,8 @@ object RTCPeerConnection {
       __obj.asInstanceOf[RTCIceCandidate]
     }
     
-    extension [Self <: RTCIceCandidate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RTCIceCandidate] (val x: Self) extends AnyVal {
       
       inline def setCandidate(value: String): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
       
@@ -155,7 +159,8 @@ object RTCPeerConnection {
       __obj.asInstanceOf[RTCIceServer]
     }
     
-    extension [Self <: RTCIceServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RTCIceServer] (val x: Self) extends AnyVal {
       
       inline def setCredential(value: String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
       
@@ -188,7 +193,8 @@ object RTCPeerConnection {
       __obj.asInstanceOf[RTCOfferOptions]
     }
     
-    extension [Self <: RTCOfferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RTCOfferOptions] (val x: Self) extends AnyVal {
       
       inline def setIceRestart(value: Boolean): Self = StObject.set(x, "iceRestart", value.asInstanceOf[js.Any])
       
@@ -287,7 +293,8 @@ object RTCPeerConnection {
       __obj.asInstanceOf[RTCSessionDescription]
     }
     
-    extension [Self <: RTCSessionDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RTCSessionDescription] (val x: Self) extends AnyVal {
       
       inline def setSdp(value: String): Self = StObject.set(x, "sdp", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object ConfidentialInstanceConfig {
     __obj.asInstanceOf[ConfidentialInstanceConfig]
   }
   
-  extension [Self <: ConfidentialInstanceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfidentialInstanceConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableConfidentialCompute(value: Boolean): Self = StObject.set(x, "enableConfidentialCompute", value.asInstanceOf[js.Any])
     

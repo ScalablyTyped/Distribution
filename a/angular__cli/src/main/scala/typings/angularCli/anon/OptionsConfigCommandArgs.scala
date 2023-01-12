@@ -20,7 +20,8 @@ object OptionsConfigCommandArgs {
     __obj.asInstanceOf[OptionsConfigCommandArgs]
   }
   
-  extension [Self <: OptionsConfigCommandArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsConfigCommandArgs] (val x: Self) extends AnyVal {
     
     inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object CryptSharedLibPath {
     __obj.asInstanceOf[CryptSharedLibPath]
   }
   
-  extension [Self <: CryptSharedLibPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptSharedLibPath] (val x: Self) extends AnyVal {
     
     inline def setCryptSharedLibPath(value: String): Self = StObject.set(x, "cryptSharedLibPath", value.asInstanceOf[js.Any])
     

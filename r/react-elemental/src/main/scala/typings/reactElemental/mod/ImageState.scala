@@ -15,7 +15,8 @@ object ImageState {
     __obj.asInstanceOf[ImageState]
   }
   
-  extension [Self <: ImageState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageState] (val x: Self) extends AnyVal {
     
     inline def setLoad(value: String): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
   }

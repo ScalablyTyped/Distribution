@@ -21,7 +21,8 @@ object ParsedGrantToken {
     __obj.asInstanceOf[ParsedGrantToken]
   }
   
-  extension [Self <: ParsedGrantToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedGrantToken] (val x: Self) extends AnyVal {
     
     inline def setSignature(value: Any): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     

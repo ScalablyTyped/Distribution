@@ -15,7 +15,8 @@ object Multiaddr {
     __obj.asInstanceOf[Multiaddr]
   }
   
-  extension [Self <: Multiaddr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Multiaddr] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
   }

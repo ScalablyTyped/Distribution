@@ -16,7 +16,8 @@ object GoogleCloudRecommenderV1RecommendationInsightReference {
     __obj.asInstanceOf[GoogleCloudRecommenderV1RecommendationInsightReference]
   }
   
-  extension [Self <: GoogleCloudRecommenderV1RecommendationInsightReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommenderV1RecommendationInsightReference] (val x: Self) extends AnyVal {
     
     inline def setInsight(value: String): Self = StObject.set(x, "insight", value.asInstanceOf[js.Any])
     

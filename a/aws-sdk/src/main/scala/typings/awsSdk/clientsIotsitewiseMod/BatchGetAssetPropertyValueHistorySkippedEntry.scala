@@ -28,7 +28,8 @@ object BatchGetAssetPropertyValueHistorySkippedEntry {
     __obj.asInstanceOf[BatchGetAssetPropertyValueHistorySkippedEntry]
   }
   
-  extension [Self <: BatchGetAssetPropertyValueHistorySkippedEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetAssetPropertyValueHistorySkippedEntry] (val x: Self) extends AnyVal {
     
     inline def setCompletionStatus(value: BatchEntryCompletionStatus): Self = StObject.set(x, "completionStatus", value.asInstanceOf[js.Any])
     

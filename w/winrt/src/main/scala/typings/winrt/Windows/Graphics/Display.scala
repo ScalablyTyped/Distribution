@@ -117,7 +117,8 @@ object Display {
       __obj.asInstanceOf[IDisplayPropertiesStatics]
     }
     
-    extension [Self <: IDisplayPropertiesStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDisplayPropertiesStatics] (val x: Self) extends AnyVal {
       
       inline def setAutoRotationPreferences(value: DisplayOrientations): Self = StObject.set(x, "autoRotationPreferences", value.asInstanceOf[js.Any])
       

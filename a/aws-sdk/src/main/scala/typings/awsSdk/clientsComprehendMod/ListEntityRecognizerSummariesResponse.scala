@@ -23,7 +23,8 @@ object ListEntityRecognizerSummariesResponse {
     __obj.asInstanceOf[ListEntityRecognizerSummariesResponse]
   }
   
-  extension [Self <: ListEntityRecognizerSummariesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEntityRecognizerSummariesResponse] (val x: Self) extends AnyVal {
     
     inline def setEntityRecognizerSummariesList(value: EntityRecognizerSummariesList): Self = StObject.set(x, "EntityRecognizerSummariesList", value.asInstanceOf[js.Any])
     

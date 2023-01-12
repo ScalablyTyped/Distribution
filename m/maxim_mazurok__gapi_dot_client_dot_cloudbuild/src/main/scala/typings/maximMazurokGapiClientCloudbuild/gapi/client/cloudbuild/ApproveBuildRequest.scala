@@ -16,7 +16,8 @@ object ApproveBuildRequest {
     __obj.asInstanceOf[ApproveBuildRequest]
   }
   
-  extension [Self <: ApproveBuildRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApproveBuildRequest] (val x: Self) extends AnyVal {
     
     inline def setApprovalResult(value: ApprovalResult): Self = StObject.set(x, "approvalResult", value.asInstanceOf[js.Any])
     

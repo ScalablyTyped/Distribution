@@ -121,7 +121,8 @@ object texthighlightConfig {
     __obj.asInstanceOf[texthighlightConfig]
   }
   
-  extension [Self <: texthighlightConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: texthighlightConfig] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

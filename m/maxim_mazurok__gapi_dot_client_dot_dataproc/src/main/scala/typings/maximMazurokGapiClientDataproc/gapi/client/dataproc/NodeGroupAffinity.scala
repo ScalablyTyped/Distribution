@@ -20,7 +20,8 @@ object NodeGroupAffinity {
     __obj.asInstanceOf[NodeGroupAffinity]
   }
   
-  extension [Self <: NodeGroupAffinity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeGroupAffinity] (val x: Self) extends AnyVal {
     
     inline def setNodeGroupUri(value: String): Self = StObject.set(x, "nodeGroupUri", value.asInstanceOf[js.Any])
     

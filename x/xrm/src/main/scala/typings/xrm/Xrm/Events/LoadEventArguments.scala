@@ -20,7 +20,8 @@ object LoadEventArguments {
     __obj.asInstanceOf[LoadEventArguments]
   }
   
-  extension [Self <: LoadEventArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadEventArguments] (val x: Self) extends AnyVal {
     
     inline def setGetDataLoadState(value: () => FormDataLoadState): Self = StObject.set(x, "getDataLoadState", js.Any.fromFunction0(value))
   }

@@ -35,7 +35,8 @@ object StockToolsGuiDefinitionsLinesOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsLinesOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsLinesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsLinesOptions] (val x: Self) extends AnyVal {
     
     inline def setArrowInfinityLine(value: StockToolsGuiDefinitionsLinesArrowInfinityLineOptions): Self = StObject.set(x, "arrowInfinityLine", value.asInstanceOf[js.Any])
     

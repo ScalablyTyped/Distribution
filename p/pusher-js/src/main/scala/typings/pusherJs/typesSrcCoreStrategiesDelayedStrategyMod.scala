@@ -50,7 +50,8 @@ object typesSrcCoreStrategiesDelayedStrategyMod {
       __obj.asInstanceOf[DelayedStrategy]
     }
     
-    extension [Self <: DelayedStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelayedStrategy] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: DelayNumber): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object UpdateData {
     __obj.asInstanceOf[UpdateData]
   }
   
-  extension [Self <: UpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateData] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

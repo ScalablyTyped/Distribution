@@ -15,7 +15,8 @@ object IntersectionTolerance {
     __obj.asInstanceOf[IntersectionTolerance]
   }
   
-  extension [Self <: IntersectionTolerance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntersectionTolerance] (val x: Self) extends AnyVal {
     
     inline def setIntersectionTolerance(value: Double): Self = StObject.set(x, "intersectionTolerance", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object ListReceivedGrantsResponse {
     __obj.asInstanceOf[ListReceivedGrantsResponse]
   }
   
-  extension [Self <: ListReceivedGrantsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListReceivedGrantsResponse] (val x: Self) extends AnyVal {
     
     inline def setGrants(value: GrantList): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
     

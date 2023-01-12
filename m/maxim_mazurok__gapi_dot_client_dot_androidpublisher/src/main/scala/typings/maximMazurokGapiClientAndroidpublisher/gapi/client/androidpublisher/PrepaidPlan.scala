@@ -16,7 +16,8 @@ object PrepaidPlan {
     __obj.asInstanceOf[PrepaidPlan]
   }
   
-  extension [Self <: PrepaidPlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrepaidPlan] (val x: Self) extends AnyVal {
     
     inline def setAllowExtendAfterTime(value: String): Self = StObject.set(x, "allowExtendAfterTime", value.asInstanceOf[js.Any])
     

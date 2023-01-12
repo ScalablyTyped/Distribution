@@ -28,7 +28,8 @@ object ArchivalSummary {
     __obj.asInstanceOf[ArchivalSummary]
   }
   
-  extension [Self <: ArchivalSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArchivalSummary] (val x: Self) extends AnyVal {
     
     inline def setArchivalBackupArn(value: BackupArn): Self = StObject.set(x, "ArchivalBackupArn", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object Runner {
     __obj.asInstanceOf[Runner]
   }
   
-  extension [Self <: Runner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Runner] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

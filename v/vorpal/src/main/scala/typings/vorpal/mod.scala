@@ -111,7 +111,8 @@ object mod {
       __obj.asInstanceOf[Args]
     }
     
-    extension [Self <: Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
@@ -130,7 +131,8 @@ object mod {
       __obj.asInstanceOf[ParseOpts]
     }
     
-    extension [Self <: ParseOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOpts] (val x: Self) extends AnyVal {
       
       inline def setUse(value: minimist): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       

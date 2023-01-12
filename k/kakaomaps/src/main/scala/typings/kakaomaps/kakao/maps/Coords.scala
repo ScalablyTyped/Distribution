@@ -22,7 +22,8 @@ object Coords {
     __obj.asInstanceOf[Coords]
   }
   
-  extension [Self <: Coords](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Coords] (val x: Self) extends AnyVal {
     
     inline def setEquals_(value: Coords => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     

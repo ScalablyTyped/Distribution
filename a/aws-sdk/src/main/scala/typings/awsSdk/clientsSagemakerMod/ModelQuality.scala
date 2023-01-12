@@ -23,7 +23,8 @@ object ModelQuality {
     __obj.asInstanceOf[ModelQuality]
   }
   
-  extension [Self <: ModelQuality](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelQuality] (val x: Self) extends AnyVal {
     
     inline def setConstraints(value: MetricsSource): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
     

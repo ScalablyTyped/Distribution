@@ -70,7 +70,8 @@ object FieldsForceAttach {
     __obj.asInstanceOf[FieldsForceAttach]
   }
   
-  extension [Self <: FieldsForceAttach](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldsForceAttach] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

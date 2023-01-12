@@ -30,7 +30,8 @@ object CarePlanRelatedPlan {
     __obj.asInstanceOf[CarePlanRelatedPlan]
   }
   
-  extension [Self <: CarePlanRelatedPlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CarePlanRelatedPlan] (val x: Self) extends AnyVal {
     
     inline def setCode(value: includes | replaces | fulfills): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -88,7 +88,8 @@ object Specimen {
     __obj.asInstanceOf[Specimen]
   }
   
-  extension [Self <: Specimen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Specimen] (val x: Self) extends AnyVal {
     
     inline def setAccessionIdentifier(value: Identifier): Self = StObject.set(x, "accessionIdentifier", value.asInstanceOf[js.Any])
     

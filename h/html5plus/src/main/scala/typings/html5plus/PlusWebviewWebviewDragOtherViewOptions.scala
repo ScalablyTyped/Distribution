@@ -40,7 +40,8 @@ object PlusWebviewWebviewDragOtherViewOptions {
     __obj.asInstanceOf[PlusWebviewWebviewDragOtherViewOptions]
   }
   
-  extension [Self <: PlusWebviewWebviewDragOtherViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewDragOtherViewOptions] (val x: Self) extends AnyVal {
     
     inline def setMoveMode(value: follow | silent): Self = StObject.set(x, "moveMode", value.asInstanceOf[js.Any])
     

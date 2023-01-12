@@ -19,7 +19,8 @@ object GPURenderPassTimestampWrite {
     __obj.asInstanceOf[GPURenderPassTimestampWrite]
   }
   
-  extension [Self <: GPURenderPassTimestampWrite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPURenderPassTimestampWrite] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: GPURenderPassTimestampLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

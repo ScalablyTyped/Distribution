@@ -23,7 +23,8 @@ object RunAggregationQueryRequest {
     __obj.asInstanceOf[RunAggregationQueryRequest]
   }
   
-  extension [Self <: RunAggregationQueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunAggregationQueryRequest] (val x: Self) extends AnyVal {
     
     inline def setNewTransaction(value: TransactionOptions): Self = StObject.set(x, "newTransaction", value.asInstanceOf[js.Any])
     

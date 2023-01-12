@@ -26,7 +26,8 @@ object SlashCommands {
     __obj.asInstanceOf[SlashCommands[T]]
   }
   
-  extension [Self <: SlashCommands[?], T](x: Self & SlashCommands[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlashCommands[?], T] (val x: Self & SlashCommands[T]) extends AnyVal {
     
     inline def setAddResponse(value: SlashCommandOptions[T] => Unit): Self = StObject.set(x, "addResponse", js.Any.fromFunction1(value))
     

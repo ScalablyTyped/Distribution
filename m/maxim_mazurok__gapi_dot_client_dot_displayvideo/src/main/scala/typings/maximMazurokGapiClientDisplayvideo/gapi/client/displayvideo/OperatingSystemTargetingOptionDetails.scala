@@ -16,7 +16,8 @@ object OperatingSystemTargetingOptionDetails {
     __obj.asInstanceOf[OperatingSystemTargetingOptionDetails]
   }
   
-  extension [Self <: OperatingSystemTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperatingSystemTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

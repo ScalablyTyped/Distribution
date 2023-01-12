@@ -42,7 +42,8 @@ object TaskInstance {
     __obj.asInstanceOf[TaskInstance]
   }
   
-  extension [Self <: TaskInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskInstance] (val x: Self) extends AnyVal {
     
     inline def setAlwaysRun(value: Boolean): Self = StObject.set(x, "alwaysRun", value.asInstanceOf[js.Any])
     

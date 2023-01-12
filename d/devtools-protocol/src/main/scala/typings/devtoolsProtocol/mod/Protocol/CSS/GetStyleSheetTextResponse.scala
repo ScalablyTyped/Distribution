@@ -18,7 +18,8 @@ object GetStyleSheetTextResponse {
     __obj.asInstanceOf[GetStyleSheetTextResponse]
   }
   
-  extension [Self <: GetStyleSheetTextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStyleSheetTextResponse] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

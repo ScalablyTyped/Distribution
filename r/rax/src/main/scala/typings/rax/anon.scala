@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: RaxNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Html]
     }
     
-    extension [Self <: Html](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
       
       inline def set__html(value: String): Self = StObject.set(x, "__html", value.asInstanceOf[js.Any])
     }
@@ -115,7 +117,8 @@ object anon {
       __obj.asInstanceOf[ReadonlychildrenRaxNodeun]
     }
     
-    extension [Self <: ReadonlychildrenRaxNodeun](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlychildrenRaxNodeun] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: RaxNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

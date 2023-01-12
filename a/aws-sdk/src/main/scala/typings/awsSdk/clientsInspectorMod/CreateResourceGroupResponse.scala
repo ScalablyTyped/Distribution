@@ -18,7 +18,8 @@ object CreateResourceGroupResponse {
     __obj.asInstanceOf[CreateResourceGroupResponse]
   }
   
-  extension [Self <: CreateResourceGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateResourceGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setResourceGroupArn(value: Arn): Self = StObject.set(x, "resourceGroupArn", value.asInstanceOf[js.Any])
   }

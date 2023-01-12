@@ -23,7 +23,8 @@ object RouteAnalysisEndpointOptionsSpecification {
     __obj.asInstanceOf[RouteAnalysisEndpointOptionsSpecification]
   }
   
-  extension [Self <: RouteAnalysisEndpointOptionsSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteAnalysisEndpointOptionsSpecification] (val x: Self) extends AnyVal {
     
     inline def setIpAddress(value: IPAddress): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     

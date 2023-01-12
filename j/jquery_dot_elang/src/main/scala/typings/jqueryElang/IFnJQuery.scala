@@ -23,7 +23,8 @@ object IFnJQuery {
     __obj.asInstanceOf[IFnJQuery]
   }
   
-  extension [Self <: IFnJQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFnJQuery] (val x: Self) extends AnyVal {
     
     inline def setFnPlugin(value: (JQuery[HTMLElement], Any, String, String, String) => JQuery[HTMLElement]): Self = StObject.set(x, "fnPlugin", js.Any.fromFunction5(value))
   }

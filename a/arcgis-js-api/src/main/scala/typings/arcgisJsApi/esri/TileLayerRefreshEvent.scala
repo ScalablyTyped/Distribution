@@ -15,7 +15,8 @@ object TileLayerRefreshEvent {
     __obj.asInstanceOf[TileLayerRefreshEvent]
   }
   
-  extension [Self <: TileLayerRefreshEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayerRefreshEvent] (val x: Self) extends AnyVal {
     
     inline def setDataChanged(value: Boolean): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
   }

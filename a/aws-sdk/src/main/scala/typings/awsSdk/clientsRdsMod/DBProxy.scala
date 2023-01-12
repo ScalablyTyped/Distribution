@@ -88,7 +88,8 @@ object DBProxy {
     __obj.asInstanceOf[DBProxy]
   }
   
-  extension [Self <: DBProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBProxy] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: UserAuthConfigInfoList): Self = StObject.set(x, "Auth", value.asInstanceOf[js.Any])
     

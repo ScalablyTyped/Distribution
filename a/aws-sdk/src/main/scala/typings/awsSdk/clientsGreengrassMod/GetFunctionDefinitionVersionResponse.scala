@@ -43,7 +43,8 @@ object GetFunctionDefinitionVersionResponse {
     __obj.asInstanceOf[GetFunctionDefinitionVersionResponse]
   }
   
-  extension [Self <: GetFunctionDefinitionVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFunctionDefinitionVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

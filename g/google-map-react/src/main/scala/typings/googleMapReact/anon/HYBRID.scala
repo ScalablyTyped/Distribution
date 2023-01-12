@@ -21,7 +21,8 @@ object HYBRID {
     __obj.asInstanceOf[HYBRID]
   }
   
-  extension [Self <: HYBRID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HYBRID] (val x: Self) extends AnyVal {
     
     inline def setHYBRID(value: String): Self = StObject.set(x, "HYBRID", value.asInstanceOf[js.Any])
     

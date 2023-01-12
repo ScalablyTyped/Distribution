@@ -77,7 +77,8 @@ object Repository {
     __obj.asInstanceOf[Repository]
   }
   
-  extension [Self <: Repository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Repository] (val x: Self) extends AnyVal {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     

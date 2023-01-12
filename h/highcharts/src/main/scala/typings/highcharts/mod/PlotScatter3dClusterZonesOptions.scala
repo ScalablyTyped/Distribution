@@ -35,7 +35,8 @@ object PlotScatter3dClusterZonesOptions {
     __obj.asInstanceOf[PlotScatter3dClusterZonesOptions]
   }
   
-  extension [Self <: PlotScatter3dClusterZonesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotScatter3dClusterZonesOptions] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

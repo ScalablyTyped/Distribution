@@ -35,7 +35,8 @@ object RasterIdentifyOptions {
     __obj.asInstanceOf[RasterIdentifyOptions]
   }
   
-  extension [Self <: RasterIdentifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterIdentifyOptions] (val x: Self) extends AnyVal {
     
     inline def setMultidimensionalDefinition(value: js.Array[DimensionalDefinition]): Self = StObject.set(x, "multidimensionalDefinition", value.asInstanceOf[js.Any])
     

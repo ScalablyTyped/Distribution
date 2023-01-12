@@ -62,7 +62,8 @@ object NativeDataStream {
     __obj.asInstanceOf[NativeDataStream]
   }
   
-  extension [Self <: NativeDataStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeDataStream] (val x: Self) extends AnyVal {
     
     inline def setWriteBoolean(value: Boolean => Unit): Self = StObject.set(x, "writeBoolean", js.Any.fromFunction1(value))
     

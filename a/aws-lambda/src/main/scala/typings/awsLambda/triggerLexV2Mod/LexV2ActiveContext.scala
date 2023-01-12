@@ -21,7 +21,8 @@ object LexV2ActiveContext {
     __obj.asInstanceOf[LexV2ActiveContext]
   }
   
-  extension [Self <: LexV2ActiveContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexV2ActiveContext] (val x: Self) extends AnyVal {
     
     inline def setContextAttributes(value: Record[String, String]): Self = StObject.set(x, "contextAttributes", value.asInstanceOf[js.Any])
     

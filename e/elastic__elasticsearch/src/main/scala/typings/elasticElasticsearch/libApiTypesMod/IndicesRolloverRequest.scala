@@ -36,7 +36,8 @@ object IndicesRolloverRequest {
     __obj.asInstanceOf[IndicesRolloverRequest]
   }
   
-  extension [Self <: IndicesRolloverRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesRolloverRequest] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: IndexAlias): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

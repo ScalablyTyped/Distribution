@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[NodeDimensions]
     }
     
-    extension [Self <: NodeDimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeDimensions] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object mod {
       __obj.asInstanceOf[NodeDimensionsOptions]
     }
     
-    extension [Self <: NodeDimensionsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeDimensionsOptions] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       

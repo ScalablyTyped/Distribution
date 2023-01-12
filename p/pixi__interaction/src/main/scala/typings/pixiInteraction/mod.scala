@@ -787,7 +787,8 @@ object mod {
       __obj.asInstanceOf[DelayedEvent]
     }
     
-    extension [Self <: DelayedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelayedEvent] (val x: Self) extends AnyVal {
       
       inline def setDisplayObject(value: DisplayObject): Self = StObject.set(x, "displayObject", value.asInstanceOf[js.Any])
       
@@ -808,7 +809,8 @@ object mod {
       __obj.asInstanceOf[IHitArea]
     }
     
-    extension [Self <: IHitArea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHitArea] (val x: Self) extends AnyVal {
       
       inline def setContains(value: (Double, Double) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
     }
@@ -836,7 +838,8 @@ object mod {
       __obj.asInstanceOf[InteractionManagerOptions]
     }
     
-    extension [Self <: InteractionManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractionManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoPreventDefault(value: Boolean): Self = StObject.set(x, "autoPreventDefault", value.asInstanceOf[js.Any])
       
@@ -869,7 +872,8 @@ object mod {
       __obj.asInstanceOf[InteractionTrackingFlags]
     }
     
-    extension [Self <: InteractionTrackingFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractionTrackingFlags] (val x: Self) extends AnyVal {
       
       inline def setLEFT_DOWN(value: Double): Self = StObject.set(x, "LEFT_DOWN", value.asInstanceOf[js.Any])
       
@@ -913,7 +917,8 @@ object mod {
       __obj.asInstanceOf[InteractiveTarget_]
     }
     
-    extension [Self <: InteractiveTarget_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractiveTarget_] (val x: Self) extends AnyVal {
       
       inline def setButtonMode(value: Boolean): Self = StObject.set(x, "buttonMode", value.asInstanceOf[js.Any])
       

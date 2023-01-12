@@ -25,7 +25,8 @@ object shadedRelief {
     __obj.asInstanceOf[shadedRelief]
   }
   
-  extension [Self <: shadedRelief](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: shadedRelief] (val x: Self) extends AnyVal {
     
     inline def setCreateRenderer(value: shadedReliefCreateRendererParams => js.Promise[RasterShadedReliefResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
   }

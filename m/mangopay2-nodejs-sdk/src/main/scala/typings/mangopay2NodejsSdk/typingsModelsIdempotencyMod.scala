@@ -61,7 +61,8 @@ object typingsModelsIdempotencyMod {
         __obj.asInstanceOf[IdempotencyData]
       }
       
-      extension [Self <: IdempotencyData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IdempotencyData] (val x: Self) extends AnyVal {
         
         inline def setContentLength(value: String): Self = StObject.set(x, "ContentLength", value.asInstanceOf[js.Any])
         

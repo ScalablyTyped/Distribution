@@ -23,7 +23,8 @@ object TCPFlagField {
     __obj.asInstanceOf[TCPFlagField]
   }
   
-  extension [Self <: TCPFlagField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TCPFlagField] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: Flags): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     

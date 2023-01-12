@@ -28,7 +28,8 @@ object EntitySpecification {
     __obj.asInstanceOf[EntitySpecification]
   }
   
-  extension [Self <: EntitySpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntitySpecification] (val x: Self) extends AnyVal {
     
     inline def setDb(value: Database): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     

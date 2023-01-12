@@ -56,7 +56,8 @@ object Team {
     __obj.asInstanceOf[Team]
   }
   
-  extension [Self <: Team](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Team] (val x: Self) extends AnyVal {
     
     inline def setBans(value: js.Array[BannedChampion]): Self = StObject.set(x, "bans", value.asInstanceOf[js.Any])
     

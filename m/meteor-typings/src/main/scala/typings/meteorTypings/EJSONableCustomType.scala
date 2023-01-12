@@ -20,7 +20,8 @@ object EJSONableCustomType {
     __obj.asInstanceOf[EJSONableCustomType]
   }
   
-  extension [Self <: EJSONableCustomType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EJSONableCustomType] (val x: Self) extends AnyVal {
     
     inline def setEquals_(value: js.Object => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     

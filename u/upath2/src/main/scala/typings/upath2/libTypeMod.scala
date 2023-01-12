@@ -36,7 +36,8 @@ object libTypeMod {
       __obj.asInstanceOf[IParse]
     }
     
-    extension [Self <: IParse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParse] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -220,7 +221,8 @@ object libTypeMod {
       __obj.asInstanceOf[IPathNode]
     }
     
-    extension [Self <: IPathNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPathNode] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: /* path */ String => String): Self = StObject.set(x, "basename", js.Any.fromFunction1(value))
       

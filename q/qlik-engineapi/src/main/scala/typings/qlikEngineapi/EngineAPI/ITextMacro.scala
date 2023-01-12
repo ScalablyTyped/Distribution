@@ -55,7 +55,8 @@ object ITextMacro {
     __obj.asInstanceOf[ITextMacro]
   }
   
-  extension [Self <: ITextMacro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextMacro] (val x: Self) extends AnyVal {
     
     inline def setQDisplayString(value: String): Self = StObject.set(x, "qDisplayString", value.asInstanceOf[js.Any])
     

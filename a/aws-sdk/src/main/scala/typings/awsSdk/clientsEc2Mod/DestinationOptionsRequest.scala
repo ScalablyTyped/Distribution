@@ -28,7 +28,8 @@ object DestinationOptionsRequest {
     __obj.asInstanceOf[DestinationOptionsRequest]
   }
   
-  extension [Self <: DestinationOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setFileFormat(value: DestinationFileFormat): Self = StObject.set(x, "FileFormat", value.asInstanceOf[js.Any])
     

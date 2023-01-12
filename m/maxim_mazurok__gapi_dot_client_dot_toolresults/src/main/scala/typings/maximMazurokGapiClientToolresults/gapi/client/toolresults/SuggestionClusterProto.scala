@@ -22,7 +22,8 @@ object SuggestionClusterProto {
     __obj.asInstanceOf[SuggestionClusterProto]
   }
   
-  extension [Self <: SuggestionClusterProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestionClusterProto] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

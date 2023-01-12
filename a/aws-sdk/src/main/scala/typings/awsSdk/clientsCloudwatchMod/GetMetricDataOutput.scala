@@ -28,7 +28,8 @@ object GetMetricDataOutput {
     __obj.asInstanceOf[GetMetricDataOutput]
   }
   
-  extension [Self <: GetMetricDataOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMetricDataOutput] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: MetricDataResultMessages): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     

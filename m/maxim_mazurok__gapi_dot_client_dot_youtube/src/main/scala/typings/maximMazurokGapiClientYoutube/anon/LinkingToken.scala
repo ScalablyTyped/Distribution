@@ -60,7 +60,8 @@ object LinkingToken {
     __obj.asInstanceOf[LinkingToken]
   }
   
-  extension [Self <: LinkingToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkingToken] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

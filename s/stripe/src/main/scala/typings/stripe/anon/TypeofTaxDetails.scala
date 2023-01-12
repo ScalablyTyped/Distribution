@@ -15,7 +15,8 @@ object TypeofTaxDetails {
     __obj.asInstanceOf[TypeofTaxDetails]
   }
   
-  extension [Self <: TypeofTaxDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTaxDetails] (val x: Self) extends AnyVal {
     
     inline def setTaxId(value: Any): Self = StObject.set(x, "TaxId", value.asInstanceOf[js.Any])
   }

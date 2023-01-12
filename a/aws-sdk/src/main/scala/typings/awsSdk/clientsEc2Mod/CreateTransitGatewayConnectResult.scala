@@ -18,7 +18,8 @@ object CreateTransitGatewayConnectResult {
     __obj.asInstanceOf[CreateTransitGatewayConnectResult]
   }
   
-  extension [Self <: CreateTransitGatewayConnectResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTransitGatewayConnectResult] (val x: Self) extends AnyVal {
     
     inline def setTransitGatewayConnect(value: TransitGatewayConnect): Self = StObject.set(x, "TransitGatewayConnect", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CaseEventIncludedData {
     __obj.asInstanceOf[CaseEventIncludedData]
   }
   
-  extension [Self <: CaseEventIncludedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaseEventIncludedData] (val x: Self) extends AnyVal {
     
     inline def setFields(value: CaseEventIncludedDataFieldsList): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

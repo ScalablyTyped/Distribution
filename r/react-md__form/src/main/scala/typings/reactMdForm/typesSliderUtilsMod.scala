@@ -98,7 +98,8 @@ object typesSliderUtilsMod {
       __obj.asInstanceOf[ComplexSliderControls]
     }
     
-    extension [Self <: ComplexSliderControls](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComplexSliderControls] (val x: Self) extends AnyVal {
       
       inline def setValue(value: RangeSliderValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -117,7 +118,8 @@ object typesSliderUtilsMod {
       __obj.asInstanceOf[DragPercentage]
     }
     
-    extension [Self <: DragPercentage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragPercentage] (val x: Self) extends AnyVal {
       
       inline def setThumb1Percentage(value: String): Self = StObject.set(x, "thumb1Percentage", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object typesSliderUtilsMod {
       __obj.asInstanceOf[DragPercentageOptions]
     }
     
-    extension [Self <: DragPercentageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragPercentageOptions] (val x: Self) extends AnyVal {
       
       inline def setDragValue(value: Double): Self = StObject.set(x, "dragValue", value.asInstanceOf[js.Any])
       
@@ -200,7 +203,8 @@ object typesSliderUtilsMod {
       __obj.asInstanceOf[SimpleSliderControls]
     }
     
-    extension [Self <: SimpleSliderControls](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleSliderControls] (val x: Self) extends AnyVal {
       
       inline def setValue(value: SliderValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -254,7 +258,8 @@ object typesSliderUtilsMod {
       __obj.asInstanceOf[SliderDragValue]
     }
     
-    extension [Self <: SliderDragValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderDragValue] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -307,7 +312,8 @@ object typesSliderUtilsMod {
       __obj.asInstanceOf[SliderDragValues]
     }
     
-    extension [Self <: SliderDragValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderDragValues] (val x: Self) extends AnyVal {
       
       inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       

@@ -62,7 +62,8 @@ object PickImpldisplayTypePartia {
     __obj.asInstanceOf[PickImpldisplayTypePartia]
   }
   
-  extension [Self <: PickImpldisplayTypePartia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpldisplayTypePartia] (val x: Self) extends AnyVal {
     
     inline def setAllowRepeats(value: Boolean): Self = StObject.set(x, "allowRepeats", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PluralNode {
     __obj.asInstanceOf[PluralNode]
   }
   
-  extension [Self <: PluralNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluralNode] (val x: Self) extends AnyVal {
     
     inline def setCases(value: js.Array[MessageNode]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
     

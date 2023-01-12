@@ -20,7 +20,8 @@ object PathRegex {
     __obj.asInstanceOf[PathRegex]
   }
   
-  extension [Self <: PathRegex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathRegex] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

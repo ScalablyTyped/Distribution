@@ -27,7 +27,8 @@ object LayerFromArcGISServerUrlParams {
     __obj.asInstanceOf[LayerFromArcGISServerUrlParams]
   }
   
-  extension [Self <: LayerFromArcGISServerUrlParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerFromArcGISServerUrlParams] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

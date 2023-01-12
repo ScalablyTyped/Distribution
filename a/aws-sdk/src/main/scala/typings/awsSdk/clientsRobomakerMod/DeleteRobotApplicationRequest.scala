@@ -23,7 +23,8 @@ object DeleteRobotApplicationRequest {
     __obj.asInstanceOf[DeleteRobotApplicationRequest]
   }
   
-  extension [Self <: DeleteRobotApplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRobotApplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[PathSpec]
     }
     
-    extension [Self <: PathSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathSpec] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setExtension(value: String | StringDictionary[String]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       

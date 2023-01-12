@@ -33,7 +33,8 @@ object WaitAndContinueSpecification {
     __obj.asInstanceOf[WaitAndContinueSpecification]
   }
   
-  extension [Self <: WaitAndContinueSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaitAndContinueSpecification] (val x: Self) extends AnyVal {
     
     inline def setActive(value: BoxedBoolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

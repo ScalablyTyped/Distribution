@@ -18,7 +18,8 @@ object HlsPlaylistSettings {
     __obj.asInstanceOf[HlsPlaylistSettings]
   }
   
-  extension [Self <: HlsPlaylistSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsPlaylistSettings] (val x: Self) extends AnyVal {
     
     inline def setManifestWindowSeconds(value: _Integer): Self = StObject.set(x, "ManifestWindowSeconds", value.asInstanceOf[js.Any])
     

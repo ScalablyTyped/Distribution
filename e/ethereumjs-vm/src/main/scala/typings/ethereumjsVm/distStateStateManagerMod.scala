@@ -625,7 +625,8 @@ object distStateStateManagerMod {
       __obj.asInstanceOf[StateManager]
     }
     
-    extension [Self <: StateManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateManager] (val x: Self) extends AnyVal {
       
       inline def setAccountIsEmpty(value: (Buffer, Any) => Unit): Self = StObject.set(x, "accountIsEmpty", js.Any.fromFunction2(value))
       
@@ -716,7 +717,8 @@ object distStateStateManagerMod {
       __obj.asInstanceOf[StateManagerOpts]
     }
     
-    extension [Self <: StateManagerOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateManagerOpts] (val x: Self) extends AnyVal {
       
       inline def setCommon(value: typings.ethereumjsCommon.mod.default): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
       

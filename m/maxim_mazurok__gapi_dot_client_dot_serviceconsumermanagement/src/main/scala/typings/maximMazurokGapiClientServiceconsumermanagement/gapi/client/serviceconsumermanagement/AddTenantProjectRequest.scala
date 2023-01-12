@@ -19,7 +19,8 @@ object AddTenantProjectRequest {
     __obj.asInstanceOf[AddTenantProjectRequest]
   }
   
-  extension [Self <: AddTenantProjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddTenantProjectRequest] (val x: Self) extends AnyVal {
     
     inline def setProjectConfig(value: TenantProjectConfig): Self = StObject.set(x, "projectConfig", value.asInstanceOf[js.Any])
     

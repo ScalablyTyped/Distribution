@@ -60,7 +60,8 @@ object RNFetchBlobConfig {
     __obj.asInstanceOf[RNFetchBlobConfig]
   }
   
-  extension [Self <: RNFetchBlobConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RNFetchBlobConfig] (val x: Self) extends AnyVal {
     
     inline def setAddAndroidDownloads(value: AddAndroidDownloads): Self = StObject.set(x, "addAndroidDownloads", value.asInstanceOf[js.Any])
     

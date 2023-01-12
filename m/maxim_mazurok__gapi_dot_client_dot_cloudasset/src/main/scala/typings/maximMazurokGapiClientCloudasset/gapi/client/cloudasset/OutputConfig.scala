@@ -19,7 +19,8 @@ object OutputConfig {
     __obj.asInstanceOf[OutputConfig]
   }
   
-  extension [Self <: OutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputConfig] (val x: Self) extends AnyVal {
     
     inline def setBigqueryDestination(value: BigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
     

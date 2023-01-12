@@ -23,7 +23,8 @@ object FileCacheNFSConfiguration {
     __obj.asInstanceOf[FileCacheNFSConfiguration]
   }
   
-  extension [Self <: FileCacheNFSConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileCacheNFSConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDnsIps(value: RepositoryDnsIps): Self = StObject.set(x, "DnsIps", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object RegExpLiteral {
     __obj.asInstanceOf[RegExpLiteral]
   }
   
-  extension [Self <: RegExpLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegExpLiteral] (val x: Self) extends AnyVal {
     
     inline def setType(value: regexp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

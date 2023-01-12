@@ -105,7 +105,8 @@ object XStorable {
     __obj.asInstanceOf[XStorable]
   }
   
-  extension [Self <: XStorable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStorable] (val x: Self) extends AnyVal {
     
     inline def setGetLocation(value: () => String): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
     

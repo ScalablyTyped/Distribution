@@ -19,7 +19,8 @@ object SecuritySamlPrepareAuthenticationResponse {
     __obj.asInstanceOf[SecuritySamlPrepareAuthenticationResponse]
   }
   
-  extension [Self <: SecuritySamlPrepareAuthenticationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySamlPrepareAuthenticationResponse] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

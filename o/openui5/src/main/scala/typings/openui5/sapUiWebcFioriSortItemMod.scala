@@ -206,7 +206,8 @@ object sapUiWebcFioriSortItemMod {
       __obj.asInstanceOf[SortItemSettings]
     }
     
-    extension [Self <: SortItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortItemSettings] (val x: Self) extends AnyVal {
       
       inline def setSelected(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object TagCostEstimationResourceCollectionFilter {
     __obj.asInstanceOf[TagCostEstimationResourceCollectionFilter]
   }
   
-  extension [Self <: TagCostEstimationResourceCollectionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagCostEstimationResourceCollectionFilter] (val x: Self) extends AnyVal {
     
     inline def setAppBoundaryKey(value: AppBoundaryKey): Self = StObject.set(x, "AppBoundaryKey", value.asInstanceOf[js.Any])
     

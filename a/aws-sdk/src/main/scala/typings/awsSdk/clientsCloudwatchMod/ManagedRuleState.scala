@@ -23,7 +23,8 @@ object ManagedRuleState {
     __obj.asInstanceOf[ManagedRuleState]
   }
   
-  extension [Self <: ManagedRuleState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedRuleState] (val x: Self) extends AnyVal {
     
     inline def setRuleName(value: InsightRuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     

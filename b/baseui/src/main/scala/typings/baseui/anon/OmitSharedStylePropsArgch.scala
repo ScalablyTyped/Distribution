@@ -49,7 +49,8 @@ object OmitSharedStylePropsArgch {
     __obj.asInstanceOf[OmitSharedStylePropsArgch]
   }
   
-  extension [Self <: OmitSharedStylePropsArgch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitSharedStylePropsArgch] (val x: Self) extends AnyVal {
     
     inline def set$anchor(value: AnchorProp): Self = StObject.set(x, "$anchor", value.asInstanceOf[js.Any])
     

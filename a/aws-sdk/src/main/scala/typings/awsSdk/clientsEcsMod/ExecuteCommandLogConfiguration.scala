@@ -38,7 +38,8 @@ object ExecuteCommandLogConfiguration {
     __obj.asInstanceOf[ExecuteCommandLogConfiguration]
   }
   
-  extension [Self <: ExecuteCommandLogConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteCommandLogConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchEncryptionEnabled(value: Boolean): Self = StObject.set(x, "cloudWatchEncryptionEnabled", value.asInstanceOf[js.Any])
     

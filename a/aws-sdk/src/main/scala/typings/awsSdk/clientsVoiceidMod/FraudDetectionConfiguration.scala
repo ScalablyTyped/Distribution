@@ -18,7 +18,8 @@ object FraudDetectionConfiguration {
     __obj.asInstanceOf[FraudDetectionConfiguration]
   }
   
-  extension [Self <: FraudDetectionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FraudDetectionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setRiskThreshold(value: Score): Self = StObject.set(x, "RiskThreshold", value.asInstanceOf[js.Any])
   }

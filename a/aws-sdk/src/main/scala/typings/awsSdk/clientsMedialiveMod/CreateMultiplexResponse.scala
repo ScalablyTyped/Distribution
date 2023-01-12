@@ -18,7 +18,8 @@ object CreateMultiplexResponse {
     __obj.asInstanceOf[CreateMultiplexResponse]
   }
   
-  extension [Self <: CreateMultiplexResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMultiplexResponse] (val x: Self) extends AnyVal {
     
     inline def setMultiplex(value: Multiplex): Self = StObject.set(x, "Multiplex", value.asInstanceOf[js.Any])
     

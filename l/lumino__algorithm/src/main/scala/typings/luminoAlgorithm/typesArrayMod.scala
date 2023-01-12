@@ -1017,7 +1017,8 @@ object typesArrayMod {
           __obj.asInstanceOf[IOptions]
         }
         
-        extension [Self <: IOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
           
           inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
           
@@ -1127,7 +1128,8 @@ object typesArrayMod {
         __obj.asInstanceOf[MutableArrayLike[T]]
       }
       
-      extension [Self <: MutableArrayLike[?], T](x: Self & MutableArrayLike[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MutableArrayLike[?], T] (val x: Self & MutableArrayLike[T]) extends AnyVal {
         
         inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       }

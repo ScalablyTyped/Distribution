@@ -16,7 +16,8 @@ object ColorGradientContrastTool {
     __obj.asInstanceOf[ColorGradientContrastTool]
   }
   
-  extension [Self <: ColorGradientContrastTool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorGradientContrastTool] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String | Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

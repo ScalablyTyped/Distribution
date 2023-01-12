@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Errors]
     }
     
-    extension [Self <: Errors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: Boolean): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

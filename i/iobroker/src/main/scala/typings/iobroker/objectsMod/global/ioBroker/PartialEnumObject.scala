@@ -37,7 +37,8 @@ object PartialEnumObject {
     __obj.asInstanceOf[PartialEnumObject]
   }
   
-  extension [Self <: PartialEnumObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialEnumObject] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: ObjectACL): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object ProductionVariant {
     __obj.asInstanceOf[ProductionVariant]
   }
   
-  extension [Self <: ProductionVariant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductionVariant] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorType(value: ProductionVariantAcceleratorType): Self = StObject.set(x, "AcceleratorType", value.asInstanceOf[js.Any])
     

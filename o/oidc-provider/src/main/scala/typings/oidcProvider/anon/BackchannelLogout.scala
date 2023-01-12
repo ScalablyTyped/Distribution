@@ -59,7 +59,8 @@ object BackchannelLogout {
     __obj.asInstanceOf[BackchannelLogout]
   }
   
-  extension [Self <: BackchannelLogout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackchannelLogout] (val x: Self) extends AnyVal {
     
     inline def setBackchannelLogout(value: Enabled): Self = StObject.set(x, "backchannelLogout", value.asInstanceOf[js.Any])
     

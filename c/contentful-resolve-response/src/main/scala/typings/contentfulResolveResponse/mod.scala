@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[ResolveResponseOptions]
     }
     
-    extension [Self <: ResolveResponseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveResponseOptions] (val x: Self) extends AnyVal {
       
       inline def setItemEntryPoints(value: js.Array[String]): Self = StObject.set(x, "itemEntryPoints", value.asInstanceOf[js.Any])
       

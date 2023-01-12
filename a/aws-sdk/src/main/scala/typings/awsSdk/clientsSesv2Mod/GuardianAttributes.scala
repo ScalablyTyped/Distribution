@@ -18,7 +18,8 @@ object GuardianAttributes {
     __obj.asInstanceOf[GuardianAttributes]
   }
   
-  extension [Self <: GuardianAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GuardianAttributes] (val x: Self) extends AnyVal {
     
     inline def setOptimizedSharedDelivery(value: FeatureStatus): Self = StObject.set(x, "OptimizedSharedDelivery", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2RedactImageResponse {
     __obj.asInstanceOf[GooglePrivacyDlpV2RedactImageResponse]
   }
   
-  extension [Self <: GooglePrivacyDlpV2RedactImageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2RedactImageResponse] (val x: Self) extends AnyVal {
     
     inline def setExtractedText(value: String): Self = StObject.set(x, "extractedText", value.asInstanceOf[js.Any])
     

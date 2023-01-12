@@ -20,7 +20,8 @@ object SystemImageProperties {
     __obj.asInstanceOf[SystemImageProperties]
   }
   
-  extension [Self <: SystemImageProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemImageProperties] (val x: Self) extends AnyVal {
     
     inline def setHorizontalSize(value: String): Self = StObject.set(x, "horizontalSize", value.asInstanceOf[js.Any])
     

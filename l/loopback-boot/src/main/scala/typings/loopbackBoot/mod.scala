@@ -230,7 +230,8 @@ object mod {
       __obj.asInstanceOf[OptionsLB]
     }
     
-    extension [Self <: OptionsLB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsLB] (val x: Self) extends AnyVal {
       
       inline def setAppConfigRootDir(value: String): Self = StObject.set(x, "appConfigRootDir", value.asInstanceOf[js.Any])
       

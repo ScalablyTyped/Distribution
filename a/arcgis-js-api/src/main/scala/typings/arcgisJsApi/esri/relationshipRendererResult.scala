@@ -62,7 +62,8 @@ object relationshipRendererResult {
     __obj.asInstanceOf[relationshipRendererResult]
   }
   
-  extension [Self <: relationshipRendererResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: relationshipRendererResult] (val x: Self) extends AnyVal {
     
     inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     

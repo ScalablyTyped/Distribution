@@ -19,7 +19,8 @@ object FeatureFormSubmitEvent {
     __obj.asInstanceOf[FeatureFormSubmitEvent]
   }
   
-  extension [Self <: FeatureFormSubmitEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureFormSubmitEvent] (val x: Self) extends AnyVal {
     
     inline def setInvalid(value: js.Array[String]): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     

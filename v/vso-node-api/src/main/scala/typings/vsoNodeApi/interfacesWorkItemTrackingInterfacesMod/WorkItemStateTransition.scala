@@ -23,7 +23,8 @@ object WorkItemStateTransition {
     __obj.asInstanceOf[WorkItemStateTransition]
   }
   
-  extension [Self <: WorkItemStateTransition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemStateTransition] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

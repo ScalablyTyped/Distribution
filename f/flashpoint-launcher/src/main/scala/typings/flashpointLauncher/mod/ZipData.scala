@@ -25,7 +25,8 @@ object ZipData {
     __obj.asInstanceOf[ZipData]
   }
   
-  extension [Self <: ZipData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipData] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: String): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

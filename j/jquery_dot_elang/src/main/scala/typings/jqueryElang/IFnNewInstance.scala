@@ -18,7 +18,8 @@ object IFnNewInstance {
     __obj.asInstanceOf[IFnNewInstance]
   }
   
-  extension [Self <: IFnNewInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFnNewInstance] (val x: Self) extends AnyVal {
     
     inline def setCreateInstance(value: (HTMLElement, Any, String) => JQuery[HTMLElement]): Self = StObject.set(x, "createInstance", js.Any.fromFunction3(value))
   }

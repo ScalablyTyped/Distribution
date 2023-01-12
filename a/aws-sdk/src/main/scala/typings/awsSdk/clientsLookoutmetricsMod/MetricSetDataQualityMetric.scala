@@ -23,7 +23,8 @@ object MetricSetDataQualityMetric {
     __obj.asInstanceOf[MetricSetDataQualityMetric]
   }
   
-  extension [Self <: MetricSetDataQualityMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricSetDataQualityMetric] (val x: Self) extends AnyVal {
     
     inline def setDataQualityMetricList(value: DataQualityMetricList): Self = StObject.set(x, "DataQualityMetricList", value.asInstanceOf[js.Any])
     

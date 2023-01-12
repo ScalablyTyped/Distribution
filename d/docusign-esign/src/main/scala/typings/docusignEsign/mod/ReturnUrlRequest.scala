@@ -20,7 +20,8 @@ object ReturnUrlRequest {
     __obj.asInstanceOf[ReturnUrlRequest]
   }
   
-  extension [Self <: ReturnUrlRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnUrlRequest] (val x: Self) extends AnyVal {
     
     inline def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
     

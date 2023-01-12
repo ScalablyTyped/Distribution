@@ -62,7 +62,8 @@ object GoogleCloudMlV1PredictionInput {
     __obj.asInstanceOf[GoogleCloudMlV1PredictionInput]
   }
   
-  extension [Self <: GoogleCloudMlV1PredictionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1PredictionInput] (val x: Self) extends AnyVal {
     
     inline def setBatchSize(value: String): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     

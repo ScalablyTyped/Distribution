@@ -128,7 +128,8 @@ object dxSparklineOptions {
     __obj.asInstanceOf[dxSparklineOptions]
   }
   
-  extension [Self <: dxSparklineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxSparklineOptions] (val x: Self) extends AnyVal {
     
     inline def setArgumentField(value: String): Self = StObject.set(x, "argumentField", value.asInstanceOf[js.Any])
     

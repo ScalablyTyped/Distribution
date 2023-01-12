@@ -18,7 +18,8 @@ object TypeofonReceiveError {
     __obj.asInstanceOf[TypeofonReceiveError]
   }
   
-  extension [Self <: TypeofonReceiveError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofonReceiveError] (val x: Self) extends AnyVal {
     
     inline def setAddListener(value: js.Function1[/* info */ OnReceiveErrorInfo, Unit] => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     

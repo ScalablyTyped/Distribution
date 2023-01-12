@@ -23,7 +23,8 @@ object typesRepositoryTriggerDestinationArnRequiredExceptionMod {
       __obj.asInstanceOf[RepositoryTriggerDestinationArnRequiredException]
     }
     
-    extension [Self <: RepositoryTriggerDestinationArnRequiredException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepositoryTriggerDestinationArnRequiredException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryTriggerDestinationArnRequiredException

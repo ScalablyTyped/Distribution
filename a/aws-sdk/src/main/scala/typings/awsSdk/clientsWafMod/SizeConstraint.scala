@@ -38,7 +38,8 @@ object SizeConstraint {
     __obj.asInstanceOf[SizeConstraint]
   }
   
-  extension [Self <: SizeConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeConstraint] (val x: Self) extends AnyVal {
     
     inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     

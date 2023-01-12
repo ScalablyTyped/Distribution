@@ -19,7 +19,8 @@ object entityMod {
       __obj.asInstanceOf[DatastoreCoords]
     }
     
-    extension [Self <: DatastoreCoords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatastoreCoords] (val x: Self) extends AnyVal {
       
       inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object entityMod {
       __obj.asInstanceOf[DatastoreDouble]
     }
     
-    extension [Self <: DatastoreDouble](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatastoreDouble] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -55,7 +57,8 @@ object entityMod {
       __obj.asInstanceOf[DatastoreGeopoint]
     }
     
-    extension [Self <: DatastoreGeopoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatastoreGeopoint] (val x: Self) extends AnyVal {
       
       inline def setValue(value: DatastoreCoords): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -72,7 +75,8 @@ object entityMod {
       __obj.asInstanceOf[DatastoreInt]
     }
     
-    extension [Self <: DatastoreInt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatastoreInt] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -97,7 +101,8 @@ object entityMod {
       __obj.asInstanceOf[DatastoreKey]
     }
     
-    extension [Self <: DatastoreKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatastoreKey] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -132,7 +137,8 @@ object entityMod {
       __obj.asInstanceOf[DatastoreKeyOptions]
     }
     
-    extension [Self <: DatastoreKeyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatastoreKeyOptions] (val x: Self) extends AnyVal {
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
@@ -166,7 +172,8 @@ object entityMod {
       __obj.asInstanceOf[DatastorePayload[T]]
     }
     
-    extension [Self <: DatastorePayload[?], T](x: Self & DatastorePayload[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatastorePayload[?], T] (val x: Self & DatastorePayload[T]) extends AnyVal {
       
       inline def setData(value: T | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

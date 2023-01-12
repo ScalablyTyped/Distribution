@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object anon {
       __obj.asInstanceOf[Sort]
     }
     
-    extension [Self <: Sort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sort] (val x: Self) extends AnyVal {
       
       inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
@@ -122,7 +125,8 @@ object anon {
       __obj.asInstanceOf[Width]
     }
     
-    extension [Self <: Width](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Width] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

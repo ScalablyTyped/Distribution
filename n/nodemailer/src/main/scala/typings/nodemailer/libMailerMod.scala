@@ -64,7 +64,8 @@ object libMailerMod {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object libMailerMod {
       __obj.asInstanceOf[AmpAttachment]
     }
     
-    extension [Self <: AmpAttachment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AmpAttachment] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object libMailerMod {
       __obj.asInstanceOf[Attachment]
     }
     
-    extension [Self <: Attachment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
       
       inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -203,7 +206,8 @@ object libMailerMod {
       __obj.asInstanceOf[AttachmentLike]
     }
     
-    extension [Self <: AttachmentLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttachmentLike] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String | Buffer | Readable): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -226,7 +230,8 @@ object libMailerMod {
       __obj.asInstanceOf[Connection]
     }
     
-    extension [Self <: Connection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: Socket): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     }
@@ -253,7 +258,8 @@ object libMailerMod {
       __obj.asInstanceOf[Envelope]
     }
     
-    extension [Self <: Envelope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {
       
       inline def setBcc(value: String): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       
@@ -298,7 +304,8 @@ object libMailerMod {
       __obj.asInstanceOf[IcalAttachment]
     }
     
-    extension [Self <: IcalAttachment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IcalAttachment] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -558,7 +565,8 @@ object libMailerMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlternatives(value: js.Array[Attachment]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
       

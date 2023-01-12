@@ -81,7 +81,8 @@ object SparklineOptions {
     __obj.asInstanceOf[SparklineOptions]
   }
   
-  extension [Self <: SparklineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklineOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     

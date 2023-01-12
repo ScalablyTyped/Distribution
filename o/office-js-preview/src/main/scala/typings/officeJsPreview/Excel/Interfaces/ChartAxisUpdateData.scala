@@ -302,7 +302,8 @@ object ChartAxisUpdateData {
     __obj.asInstanceOf[ChartAxisUpdateData]
   }
   
-  extension [Self <: ChartAxisUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartAxisUpdateData] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: ChartTickLabelAlignment | Center | Left | Right): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

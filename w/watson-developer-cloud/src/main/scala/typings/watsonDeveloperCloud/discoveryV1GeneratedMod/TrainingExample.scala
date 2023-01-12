@@ -23,7 +23,8 @@ object TrainingExample {
     __obj.asInstanceOf[TrainingExample]
   }
   
-  extension [Self <: TrainingExample](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrainingExample] (val x: Self) extends AnyVal {
     
     inline def setCross_reference(value: String): Self = StObject.set(x, "cross_reference", value.asInstanceOf[js.Any])
     

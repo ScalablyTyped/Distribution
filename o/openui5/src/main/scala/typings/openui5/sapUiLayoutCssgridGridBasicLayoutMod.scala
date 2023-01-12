@@ -447,7 +447,8 @@ object sapUiLayoutCssgridGridBasicLayoutMod {
       __obj.asInstanceOf[GridBasicLayoutSettings]
     }
     
-    extension [Self <: GridBasicLayoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridBasicLayoutSettings] (val x: Self) extends AnyVal {
       
       inline def setGridAutoColumns(value: CSSGridTrack | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
       

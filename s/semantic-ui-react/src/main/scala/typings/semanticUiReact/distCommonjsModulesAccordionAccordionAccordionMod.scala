@@ -86,7 +86,8 @@ object distCommonjsModulesAccordionAccordionAccordionMod extends Shortcut {
       __obj.asInstanceOf[StrictAccordionAccordionProps]
     }
     
-    extension [Self <: StrictAccordionAccordionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictAccordionAccordionProps] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: Double | js.Array[Double]): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object ExcludedLocation {
     __obj.asInstanceOf[ExcludedLocation]
   }
   
-  extension [Self <: ExcludedLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludedLocation] (val x: Self) extends AnyVal {
     
     inline def setGetCampaignType(value: () => CampaignType): Self = StObject.set(x, "getCampaignType", js.Any.fromFunction0(value))
     

@@ -53,7 +53,8 @@ object As2ConnectorConfig {
     __obj.asInstanceOf[As2ConnectorConfig]
   }
   
-  extension [Self <: As2ConnectorConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: As2ConnectorConfig] (val x: Self) extends AnyVal {
     
     inline def setCompression(value: CompressionEnum): Self = StObject.set(x, "Compression", value.asInstanceOf[js.Any])
     

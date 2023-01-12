@@ -28,7 +28,8 @@ object InitCloudOptions {
     __obj.asInstanceOf[InitCloudOptions]
   }
   
-  extension [Self <: InitCloudOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitCloudOptions] (val x: Self) extends AnyVal {
     
     inline def setEnv(value: String | InitCloudEnvOptions): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     

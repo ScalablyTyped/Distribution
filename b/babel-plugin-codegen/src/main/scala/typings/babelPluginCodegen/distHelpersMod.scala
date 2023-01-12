@@ -53,7 +53,8 @@ object distHelpersMod {
       __obj.asInstanceOf[CompiledESModule]
     }
     
-    extension [Self <: CompiledESModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompiledESModule] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: CodegenModuleExport): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object distHelpersMod {
       __obj.asInstanceOf[GetReplacementOptions]
     }
     
-    extension [Self <: GetReplacementOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetReplacementOptions] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object distHelpersMod {
       __obj.asInstanceOf[ReplaceOptions[SpecificNode]]
     }
     
-    extension [Self <: ReplaceOptions[?], SpecificNode /* <: Node */](x: Self & ReplaceOptions[SpecificNode]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplaceOptions[?], SpecificNode /* <: Node */] (val x: Self & ReplaceOptions[SpecificNode]) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

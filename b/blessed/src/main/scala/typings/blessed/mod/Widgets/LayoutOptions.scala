@@ -31,7 +31,8 @@ object LayoutOptions {
     __obj.asInstanceOf[LayoutOptions]
   }
   
-  extension [Self <: LayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: `inline` | `inline-block` | grid): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

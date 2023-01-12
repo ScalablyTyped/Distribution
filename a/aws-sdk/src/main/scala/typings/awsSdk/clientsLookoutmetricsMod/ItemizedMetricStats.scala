@@ -23,7 +23,8 @@ object ItemizedMetricStats {
     __obj.asInstanceOf[ItemizedMetricStats]
   }
   
-  extension [Self <: ItemizedMetricStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemizedMetricStats] (val x: Self) extends AnyVal {
     
     inline def setMetricName(value: ColumnName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     

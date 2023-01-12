@@ -24,7 +24,8 @@ object RSAKeyPairKeyObjectOptions {
     __obj.asInstanceOf[RSAKeyPairKeyObjectOptions]
   }
   
-  extension [Self <: RSAKeyPairKeyObjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RSAKeyPairKeyObjectOptions] (val x: Self) extends AnyVal {
     
     inline def setModulusLength(value: Double): Self = StObject.set(x, "modulusLength", value.asInstanceOf[js.Any])
     

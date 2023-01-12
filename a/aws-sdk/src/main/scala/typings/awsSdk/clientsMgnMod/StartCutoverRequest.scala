@@ -23,7 +23,8 @@ object StartCutoverRequest {
     __obj.asInstanceOf[StartCutoverRequest]
   }
   
-  extension [Self <: StartCutoverRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartCutoverRequest] (val x: Self) extends AnyVal {
     
     inline def setSourceServerIDs(value: StartCutoverRequestSourceServerIDs): Self = StObject.set(x, "sourceServerIDs", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ApplePay {
     __obj.asInstanceOf[ApplePay]
   }
   
-  extension [Self <: ApplePay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplePay] (val x: Self) extends AnyVal {
     
     inline def setApplePay(value: Boolean): Self = StObject.set(x, "applePay", value.asInstanceOf[js.Any])
     

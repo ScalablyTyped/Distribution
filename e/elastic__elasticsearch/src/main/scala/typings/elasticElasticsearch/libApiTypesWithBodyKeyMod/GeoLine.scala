@@ -18,7 +18,8 @@ object GeoLine {
     __obj.asInstanceOf[GeoLine]
   }
   
-  extension [Self <: GeoLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoLine] (val x: Self) extends AnyVal {
     
     inline def setCoordinates(value: js.Array[js.Array[double]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     

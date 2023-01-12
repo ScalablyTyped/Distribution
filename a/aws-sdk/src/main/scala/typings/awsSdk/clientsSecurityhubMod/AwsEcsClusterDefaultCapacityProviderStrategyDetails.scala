@@ -28,7 +28,8 @@ object AwsEcsClusterDefaultCapacityProviderStrategyDetails {
     __obj.asInstanceOf[AwsEcsClusterDefaultCapacityProviderStrategyDetails]
   }
   
-  extension [Self <: AwsEcsClusterDefaultCapacityProviderStrategyDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsClusterDefaultCapacityProviderStrategyDetails] (val x: Self) extends AnyVal {
     
     inline def setBase(value: Integer): Self = StObject.set(x, "Base", value.asInstanceOf[js.Any])
     

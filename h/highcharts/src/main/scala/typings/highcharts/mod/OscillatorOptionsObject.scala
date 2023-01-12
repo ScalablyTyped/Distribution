@@ -19,7 +19,8 @@ object OscillatorOptionsObject {
     __obj.asInstanceOf[OscillatorOptionsObject]
   }
   
-  extension [Self <: OscillatorOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OscillatorOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setWaveformShape(value: String): Self = StObject.set(x, "waveformShape", value.asInstanceOf[js.Any])
     

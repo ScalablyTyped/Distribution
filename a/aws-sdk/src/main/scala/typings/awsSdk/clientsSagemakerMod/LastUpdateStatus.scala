@@ -23,7 +23,8 @@ object LastUpdateStatus {
     __obj.asInstanceOf[LastUpdateStatus]
   }
   
-  extension [Self <: LastUpdateStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastUpdateStatus] (val x: Self) extends AnyVal {
     
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     

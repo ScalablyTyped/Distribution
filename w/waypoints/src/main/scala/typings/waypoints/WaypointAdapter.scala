@@ -42,7 +42,8 @@ object WaypointAdapter {
     __obj.asInstanceOf[WaypointAdapter]
   }
   
-  extension [Self <: WaypointAdapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaypointAdapter] (val x: Self) extends AnyVal {
     
     inline def setInnerHeight(value: () => Double): Self = StObject.set(x, "innerHeight", js.Any.fromFunction0(value))
     

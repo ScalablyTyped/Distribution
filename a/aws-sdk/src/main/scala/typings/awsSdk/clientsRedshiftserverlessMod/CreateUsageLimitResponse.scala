@@ -18,7 +18,8 @@ object CreateUsageLimitResponse {
     __obj.asInstanceOf[CreateUsageLimitResponse]
   }
   
-  extension [Self <: CreateUsageLimitResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUsageLimitResponse] (val x: Self) extends AnyVal {
     
     inline def setUsageLimit(value: UsageLimit): Self = StObject.set(x, "usageLimit", value.asInstanceOf[js.Any])
     

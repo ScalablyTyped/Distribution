@@ -23,7 +23,8 @@ object GetTagValuesOutput {
     __obj.asInstanceOf[GetTagValuesOutput]
   }
   
-  extension [Self <: GetTagValuesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTagValuesOutput] (val x: Self) extends AnyVal {
     
     inline def setPaginationToken(value: PaginationToken): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     

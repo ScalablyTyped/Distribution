@@ -23,7 +23,8 @@ object ChangeResourceRecordSetsRequest {
     __obj.asInstanceOf[ChangeResourceRecordSetsRequest]
   }
   
-  extension [Self <: ChangeResourceRecordSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeResourceRecordSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setChangeBatch(value: ChangeBatch): Self = StObject.set(x, "ChangeBatch", value.asInstanceOf[js.Any])
     

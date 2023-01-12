@@ -17,7 +17,8 @@ object MultiFactorError {
     __obj.asInstanceOf[MultiFactorError]
   }
   
-  extension [Self <: MultiFactorError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiFactorError] (val x: Self) extends AnyVal {
     
     inline def setResolver(value: MultiFactorResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object Thumbnail {
     __obj.asInstanceOf[Thumbnail]
   }
   
-  extension [Self <: Thumbnail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Thumbnail] (val x: Self) extends AnyVal {
     
     inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     

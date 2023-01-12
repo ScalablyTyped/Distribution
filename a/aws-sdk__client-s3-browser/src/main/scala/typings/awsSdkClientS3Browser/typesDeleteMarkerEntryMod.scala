@@ -42,7 +42,8 @@ object typesDeleteMarkerEntryMod {
       __obj.asInstanceOf[DeleteMarkerEntry]
     }
     
-    extension [Self <: DeleteMarkerEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteMarkerEntry] (val x: Self) extends AnyVal {
       
       inline def setIsLatest(value: Boolean): Self = StObject.set(x, "IsLatest", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object typesDeleteMarkerEntryMod {
       __obj.asInstanceOf[UnmarshalledDeleteMarkerEntry]
     }
     
-    extension [Self <: UnmarshalledDeleteMarkerEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledDeleteMarkerEntry] (val x: Self) extends AnyVal {
       
       inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       

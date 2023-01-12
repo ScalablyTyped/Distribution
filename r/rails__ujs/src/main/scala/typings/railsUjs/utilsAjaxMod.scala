@@ -56,7 +56,8 @@ object utilsAjaxMod {
       __obj.asInstanceOf[AjaxOptions]
     }
     
-    extension [Self <: AjaxOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxOptions] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       

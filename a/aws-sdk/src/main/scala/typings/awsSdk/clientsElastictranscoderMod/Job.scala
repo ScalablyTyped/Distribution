@@ -73,7 +73,8 @@ object Job {
     __obj.asInstanceOf[Job]
   }
   
-  extension [Self <: Job](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

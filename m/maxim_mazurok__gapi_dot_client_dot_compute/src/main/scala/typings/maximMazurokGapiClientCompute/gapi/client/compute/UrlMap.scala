@@ -90,7 +90,8 @@ object UrlMap {
     __obj.asInstanceOf[UrlMap]
   }
   
-  extension [Self <: UrlMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlMap] (val x: Self) extends AnyVal {
     
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     

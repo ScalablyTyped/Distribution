@@ -15,7 +15,8 @@ object SkewXTransform {
     __obj.asInstanceOf[SkewXTransform]
   }
   
-  extension [Self <: SkewXTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkewXTransform] (val x: Self) extends AnyVal {
     
     inline def setSkewX(value: String): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
   }

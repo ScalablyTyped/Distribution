@@ -18,7 +18,8 @@ object DescribeDashboardRequest {
     __obj.asInstanceOf[DescribeDashboardRequest]
   }
   
-  extension [Self <: DescribeDashboardRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDashboardRequest] (val x: Self) extends AnyVal {
     
     inline def setDashboardId(value: ID): Self = StObject.set(x, "dashboardId", value.asInstanceOf[js.Any])
   }

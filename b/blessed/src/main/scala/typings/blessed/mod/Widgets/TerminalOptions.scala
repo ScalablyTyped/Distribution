@@ -46,7 +46,8 @@ object TerminalOptions {
     __obj.asInstanceOf[TerminalOptions]
   }
   
-  extension [Self <: TerminalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminalOptions] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

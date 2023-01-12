@@ -33,7 +33,8 @@ object GetIntegrationResponseRequest {
     __obj.asInstanceOf[GetIntegrationResponseRequest]
   }
   
-  extension [Self <: GetIntegrationResponseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIntegrationResponseRequest] (val x: Self) extends AnyVal {
     
     inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     

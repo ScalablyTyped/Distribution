@@ -24,7 +24,8 @@ object outTypesMod {
       __obj.asInstanceOf[QueueItem]
     }
     
-    extension [Self <: QueueItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueItem] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       

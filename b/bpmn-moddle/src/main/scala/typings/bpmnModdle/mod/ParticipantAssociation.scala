@@ -25,7 +25,8 @@ object ParticipantAssociation {
     __obj.asInstanceOf[ParticipantAssociation]
   }
   
-  extension [Self <: ParticipantAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticipantAssociation] (val x: Self) extends AnyVal {
     
     inline def setInnerParticipantRef(value: Participant): Self = StObject.set(x, "innerParticipantRef", value.asInstanceOf[js.Any])
     

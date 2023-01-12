@@ -23,7 +23,8 @@ object DescribeSafetyRuleResponse {
     __obj.asInstanceOf[DescribeSafetyRuleResponse]
   }
   
-  extension [Self <: DescribeSafetyRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSafetyRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setAssertionRule(value: AssertionRule): Self = StObject.set(x, "AssertionRule", value.asInstanceOf[js.Any])
     

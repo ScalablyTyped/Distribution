@@ -33,7 +33,8 @@ object SystemInfo {
     __obj.asInstanceOf[SystemInfo]
   }
   
-  extension [Self <: SystemInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfo] (val x: Self) extends AnyVal {
     
     inline def setCpuArchitecture(value: String): Self = StObject.set(x, "cpuArchitecture", value.asInstanceOf[js.Any])
     

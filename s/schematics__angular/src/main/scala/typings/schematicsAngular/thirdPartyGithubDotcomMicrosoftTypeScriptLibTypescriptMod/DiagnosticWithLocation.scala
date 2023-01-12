@@ -31,7 +31,8 @@ object DiagnosticWithLocation {
     __obj.asInstanceOf[DiagnosticWithLocation]
   }
   
-  extension [Self <: DiagnosticWithLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticWithLocation] (val x: Self) extends AnyVal {
     
     inline def setFile(value: SourceFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

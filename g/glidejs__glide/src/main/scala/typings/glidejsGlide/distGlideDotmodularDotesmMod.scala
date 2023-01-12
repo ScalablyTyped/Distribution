@@ -168,7 +168,8 @@ object distGlideDotmodularDotesmMod {
       __obj.asInstanceOf[ModularComponentMap]
     }
     
-    extension [Self <: ModularComponentMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModularComponentMap] (val x: Self) extends AnyVal {
       
       inline def setAnchors(value: AnchorsComponent): Self = StObject.set(x, "Anchors", value.asInstanceOf[js.Any])
       
@@ -254,7 +255,8 @@ object distGlideDotmodularDotesmMod {
       __obj.asInstanceOf[OptionalComponentMap]
     }
     
-    extension [Self <: OptionalComponentMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalComponentMap] (val x: Self) extends AnyVal {
       
       inline def setAnchors(value: AnchorsComponent): Self = StObject.set(x, "Anchors", value.asInstanceOf[js.Any])
       
@@ -322,7 +324,8 @@ object distGlideDotmodularDotesmMod {
       __obj.asInstanceOf[OptionalComponentOption]
     }
     
-    extension [Self <: OptionalComponentOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalComponentOption] (val x: Self) extends AnyVal {
       
       inline def setAnchors(
         value: (/* glide */ Properties, /* components */ ModularComponentMap & (Record[String, js.UndefOr[Component]]), /* events */ EventsBus) => AnchorsComponent

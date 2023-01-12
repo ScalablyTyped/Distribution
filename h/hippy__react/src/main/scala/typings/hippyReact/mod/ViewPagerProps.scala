@@ -77,7 +77,8 @@ object ViewPagerProps {
     __obj.asInstanceOf[ViewPagerProps]
   }
   
-  extension [Self <: ViewPagerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewPagerProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

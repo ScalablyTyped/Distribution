@@ -38,7 +38,8 @@ object HostSecurityState {
     __obj.asInstanceOf[HostSecurityState]
   }
   
-  extension [Self <: HostSecurityState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostSecurityState] (val x: Self) extends AnyVal {
     
     inline def setFqdn(value: NullableOption[String]): Self = StObject.set(x, "fqdn", value.asInstanceOf[js.Any])
     

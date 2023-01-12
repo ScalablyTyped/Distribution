@@ -60,7 +60,8 @@ object anon {
       __obj.asInstanceOf[ColumnUserConfigreadonlyw]
     }
     
-    extension [Self <: ColumnUserConfigreadonlyw](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnUserConfigreadonlyw] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: Alignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object anon {
       __obj.asInstanceOf[InstancePath]
     }
     
-    extension [Self <: InstancePath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstancePath] (val x: Self) extends AnyVal {
       
       inline def setInstancePath(value: String): Self = StObject.set(x, "instancePath", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object anon {
       __obj.asInstanceOf[Mapped]
     }
     
-    extension [Self <: Mapped](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mapped] (val x: Self) extends AnyVal {
       
       inline def setMapped(value: `true`): Self = StObject.set(x, "mapped", value.asInstanceOf[js.Any])
     }
@@ -164,7 +167,8 @@ object anon {
       __obj.asInstanceOf[OmitDrawBorderParametersb]
     }
     
-    extension [Self <: OmitDrawBorderParametersb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitDrawBorderParametersb] (val x: Self) extends AnyVal {
       
       inline def setDrawVerticalLine(value: (/* index */ Double, /* size */ Double) => Boolean): Self = StObject.set(x, "drawVerticalLine", js.Any.fromFunction2(value))
       

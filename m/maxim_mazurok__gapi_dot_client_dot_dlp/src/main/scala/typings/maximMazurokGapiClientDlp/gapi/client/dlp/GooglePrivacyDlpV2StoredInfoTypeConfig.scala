@@ -28,7 +28,8 @@ object GooglePrivacyDlpV2StoredInfoTypeConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2StoredInfoTypeConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2StoredInfoTypeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2StoredInfoTypeConfig] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object FullTree {
     __obj.asInstanceOf[FullTree[T]]
   }
   
-  extension [Self <: FullTree[?], T](x: Self & FullTree[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullTree[?], T] (val x: Self & FullTree[T]) extends AnyVal {
     
     inline def setTreeData(value: js.Array[TreeItem[T]]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object typesSrcCoreTransportsTransportsTableMod {
       __obj.asInstanceOf[TransportsTable]
     }
     
-    extension [Self <: TransportsTable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportsTable] (val x: Self) extends AnyVal {
       
       inline def setSockjs(value: default): Self = StObject.set(x, "sockjs", value.asInstanceOf[js.Any])
       

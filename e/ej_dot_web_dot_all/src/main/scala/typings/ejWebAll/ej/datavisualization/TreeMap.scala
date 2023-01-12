@@ -258,7 +258,8 @@ object TreeMap {
       __obj.asInstanceOf[ClickEventArgs]
     }
     
-    extension [Self <: ClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -300,7 +301,8 @@ object TreeMap {
       __obj.asInstanceOf[DesaturationColorMapping]
     }
     
-    extension [Self <: DesaturationColorMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DesaturationColorMapping] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -337,7 +339,8 @@ object TreeMap {
       __obj.asInstanceOf[DoubleClickEventArgs]
     }
     
-    extension [Self <: DoubleClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -358,7 +361,8 @@ object TreeMap {
       __obj.asInstanceOf[DrillDownItemSelectedEventArgs]
     }
     
-    extension [Self <: DrillDownItemSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrillDownItemSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -379,7 +383,8 @@ object TreeMap {
       __obj.asInstanceOf[DrillStartedEventArgs]
     }
     
-    extension [Self <: DrillStartedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrillStartedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -401,7 +406,8 @@ object TreeMap {
       __obj.asInstanceOf[GroupColorMapping]
     }
     
-    extension [Self <: GroupColorMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupColorMapping] (val x: Self) extends AnyVal {
       
       inline def setGroupID(value: String): Self = StObject.set(x, "groupID", value.asInstanceOf[js.Any])
       
@@ -422,7 +428,8 @@ object TreeMap {
       __obj.asInstanceOf[HeaderTemplateRenderingEventArgs]
     }
     
-    extension [Self <: HeaderTemplateRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderTemplateRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -443,7 +450,8 @@ object TreeMap {
       __obj.asInstanceOf[ItemRenderingEventArgs]
     }
     
-    extension [Self <: ItemRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -505,7 +513,8 @@ object TreeMap {
       __obj.asInstanceOf[LeafItemSettings]
     }
     
-    extension [Self <: LeafItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeafItemSettings] (val x: Self) extends AnyVal {
       
       inline def setBorderBrush(value: String): Self = StObject.set(x, "borderBrush", value.asInstanceOf[js.Any])
       
@@ -558,7 +567,8 @@ object TreeMap {
       __obj.asInstanceOf[LegendItemRenderingEventArgs]
     }
     
-    extension [Self <: LegendItemRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendItemRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -632,7 +642,8 @@ object TreeMap {
       __obj.asInstanceOf[LegendSettings]
     }
     
-    extension [Self <: LegendSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendSettings] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -767,7 +778,8 @@ object TreeMap {
       __obj.asInstanceOf[Level]
     }
     
-    extension [Self <: Level](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
       
       inline def setGroupBackground(value: String): Self = StObject.set(x, "groupBackground", value.asInstanceOf[js.Any])
       
@@ -1088,7 +1100,8 @@ object TreeMap {
       __obj.asInstanceOf[typings.ejWebAll.ej.datavisualization.TreeMap.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.datavisualization.TreeMap.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.datavisualization.TreeMap.Model] (val x: Self) extends AnyVal {
       
       inline def setBorderBrush(value: String): Self = StObject.set(x, "borderBrush", value.asInstanceOf[js.Any])
       
@@ -1326,7 +1339,8 @@ object TreeMap {
       __obj.asInstanceOf[PaletteColorMapping]
     }
     
-    extension [Self <: PaletteColorMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaletteColorMapping] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Array[Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -1370,7 +1384,8 @@ object TreeMap {
       __obj.asInstanceOf[RangeColorMapping]
     }
     
-    extension [Self <: RangeColorMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeColorMapping] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1409,7 +1424,8 @@ object TreeMap {
       __obj.asInstanceOf[RefreshedEventArgs]
     }
     
-    extension [Self <: RefreshedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -1430,7 +1446,8 @@ object TreeMap {
       __obj.asInstanceOf[RightClickEventArgs]
     }
     
-    extension [Self <: RightClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RightClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -1451,7 +1468,8 @@ object TreeMap {
       __obj.asInstanceOf[TreeMapGroupSelectedEventArgs]
     }
     
-    extension [Self <: TreeMapGroupSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeMapGroupSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -1472,7 +1490,8 @@ object TreeMap {
       __obj.asInstanceOf[TreeMapItemSelectedEventArgs]
     }
     
-    extension [Self <: TreeMapItemSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeMapItemSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -1494,7 +1513,8 @@ object TreeMap {
       __obj.asInstanceOf[UniColorMapping]
     }
     
-    extension [Self <: UniColorMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UniColorMapping] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

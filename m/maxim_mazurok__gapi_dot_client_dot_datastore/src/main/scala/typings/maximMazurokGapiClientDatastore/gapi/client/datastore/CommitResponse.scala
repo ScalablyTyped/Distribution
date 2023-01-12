@@ -22,7 +22,8 @@ object CommitResponse {
     __obj.asInstanceOf[CommitResponse]
   }
   
-  extension [Self <: CommitResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitResponse] (val x: Self) extends AnyVal {
     
     inline def setCommitTime(value: String): Self = StObject.set(x, "commitTime", value.asInstanceOf[js.Any])
     

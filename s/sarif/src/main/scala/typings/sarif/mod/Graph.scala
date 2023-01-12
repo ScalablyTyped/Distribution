@@ -33,7 +33,8 @@ object Graph {
     __obj.asInstanceOf[Graph]
   }
   
-  extension [Self <: Graph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Graph] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

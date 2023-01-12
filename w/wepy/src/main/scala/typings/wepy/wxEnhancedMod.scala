@@ -119,7 +119,8 @@ object wxEnhancedMod {
       __obj.asInstanceOf[Animation]
     }
     
-    extension [Self <: Animation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String => Animation): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction1(value))
       
@@ -152,7 +153,8 @@ object wxEnhancedMod {
       __obj.asInstanceOf[FilePathParam]
     }
     
-    extension [Self <: FilePathParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilePathParam] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     }
@@ -171,7 +173,8 @@ object wxEnhancedMod {
       __obj.asInstanceOf[LagLng]
     }
     
-    extension [Self <: LagLng](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LagLng] (val x: Self) extends AnyVal {
       
       inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
@@ -213,7 +216,8 @@ object wxEnhancedMod {
       __obj.asInstanceOf[MapContext]
     }
     
-    extension [Self <: MapContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapContext] (val x: Self) extends AnyVal {
       
       inline def setGetCenterLocation(value: /* callbacks */ Complete[LagLng] => Unit): Self = StObject.set(x, "getCenterLocation", js.Any.fromFunction1(value))
       
@@ -250,7 +254,8 @@ object wxEnhancedMod {
       __obj.asInstanceOf[RequestParam]
     }
     
-    extension [Self <: RequestParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestParam] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object | String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -299,7 +304,8 @@ object wxEnhancedMod {
       __obj.asInstanceOf[RotateAnimation]
     }
     
-    extension [Self <: RotateAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RotateAnimation] (val x: Self) extends AnyVal {
       
       inline def setRotate(value: Double => Animation): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
       
@@ -338,7 +344,8 @@ object wxEnhancedMod {
       __obj.asInstanceOf[ScaleAnimation]
     }
     
-    extension [Self <: ScaleAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleAnimation] (val x: Self) extends AnyVal {
       
       inline def setScale(value: Double => Animation): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
       
@@ -367,7 +374,8 @@ object wxEnhancedMod {
       __obj.asInstanceOf[SkewAnimation]
     }
     
-    extension [Self <: SkewAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkewAnimation] (val x: Self) extends AnyVal {
       
       inline def setSkew(value: Double => Animation): Self = StObject.set(x, "skew", js.Any.fromFunction1(value))
       
@@ -402,7 +410,8 @@ object wxEnhancedMod {
       __obj.asInstanceOf[TranslateAnimation]
     }
     
-    extension [Self <: TranslateAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranslateAnimation] (val x: Self) extends AnyVal {
       
       inline def setTranslate(value: Double => Animation): Self = StObject.set(x, "translate", js.Any.fromFunction1(value))
       
@@ -427,7 +436,8 @@ object wxEnhancedMod {
       __obj.asInstanceOf[UrlParam]
     }
     
-    extension [Self <: UrlParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlParam] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -464,7 +474,8 @@ object wxEnhancedMod {
       __obj.asInstanceOf[UserInfo]
     }
     
-    extension [Self <: UserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
       
       inline def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
       
@@ -533,7 +544,8 @@ object wxEnhancedMod {
       __obj.asInstanceOf[WechatProfileDetails]
     }
     
-    extension [Self <: WechatProfileDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WechatProfileDetails] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

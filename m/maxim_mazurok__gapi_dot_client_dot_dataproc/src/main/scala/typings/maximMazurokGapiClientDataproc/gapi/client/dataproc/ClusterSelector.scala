@@ -24,7 +24,8 @@ object ClusterSelector {
     __obj.asInstanceOf[ClusterSelector]
   }
   
-  extension [Self <: ClusterSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterSelector] (val x: Self) extends AnyVal {
     
     inline def setClusterLabels(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

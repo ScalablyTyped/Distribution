@@ -18,7 +18,8 @@ object CastStateEventData {
     __obj.asInstanceOf[CastStateEventData]
   }
   
-  extension [Self <: CastStateEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CastStateEventData] (val x: Self) extends AnyVal {
     
     inline def setCastState(value: CastState): Self = StObject.set(x, "castState", value.asInstanceOf[js.Any])
   }

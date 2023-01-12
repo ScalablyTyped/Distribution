@@ -20,7 +20,8 @@ object RenameInfoFailure {
     __obj.asInstanceOf[RenameInfoFailure]
   }
   
-  extension [Self <: RenameInfoFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenameInfoFailure] (val x: Self) extends AnyVal {
     
     inline def setCanRename(value: `false`): Self = StObject.set(x, "canRename", value.asInstanceOf[js.Any])
     

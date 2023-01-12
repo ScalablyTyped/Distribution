@@ -24,7 +24,8 @@ object StreamWebSocketInformation {
     __obj.asInstanceOf[StreamWebSocketInformation]
   }
   
-  extension [Self <: StreamWebSocketInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamWebSocketInformation] (val x: Self) extends AnyVal {
     
     inline def setBandwidthStatistics(value: BandwidthStatistics): Self = StObject.set(x, "bandwidthStatistics", value.asInstanceOf[js.Any])
     

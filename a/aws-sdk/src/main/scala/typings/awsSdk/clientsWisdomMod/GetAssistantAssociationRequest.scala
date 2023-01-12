@@ -23,7 +23,8 @@ object GetAssistantAssociationRequest {
     __obj.asInstanceOf[GetAssistantAssociationRequest]
   }
   
-  extension [Self <: GetAssistantAssociationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAssistantAssociationRequest] (val x: Self) extends AnyVal {
     
     inline def setAssistantAssociationId(value: UuidOrArn): Self = StObject.set(x, "assistantAssociationId", value.asInstanceOf[js.Any])
     

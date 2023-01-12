@@ -154,7 +154,8 @@ object libSrcMockFxServerMod {
       __obj.asInstanceOf[LoopbackResponse]
     }
     
-    extension [Self <: LoopbackResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoopbackResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -244,7 +245,8 @@ object libSrcMockFxServerMod {
       __obj.asInstanceOf[ServerOptions]
     }
     
-    extension [Self <: ServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
       
       inline def setIncomingMessage(value: Instantiable1[/* socket */ Socket, typings.node.httpMod.IncomingMessage]): Self = StObject.set(x, "IncomingMessage", value.asInstanceOf[js.Any])
       

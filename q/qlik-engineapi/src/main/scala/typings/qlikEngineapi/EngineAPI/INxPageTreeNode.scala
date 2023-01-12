@@ -26,7 +26,8 @@ object INxPageTreeNode {
     __obj.asInstanceOf[INxPageTreeNode]
   }
   
-  extension [Self <: INxPageTreeNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxPageTreeNode] (val x: Self) extends AnyVal {
     
     inline def setQAllValues(value: Boolean): Self = StObject.set(x, "qAllValues", value.asInstanceOf[js.Any])
     

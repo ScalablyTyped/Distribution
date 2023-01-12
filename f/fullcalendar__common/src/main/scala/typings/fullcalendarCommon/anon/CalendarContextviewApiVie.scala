@@ -47,7 +47,8 @@ object CalendarContextviewApiVie {
     __obj.asInstanceOf[CalendarContextviewApiVie]
   }
   
-  extension [Self <: CalendarContextviewApiVie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarContextviewApiVie] (val x: Self) extends AnyVal {
     
     inline def setCalendarApi(value: CalendarApi): Self = StObject.set(x, "calendarApi", value.asInstanceOf[js.Any])
     

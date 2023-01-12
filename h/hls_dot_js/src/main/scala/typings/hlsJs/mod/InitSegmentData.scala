@@ -19,7 +19,8 @@ object InitSegmentData {
     __obj.asInstanceOf[InitSegmentData]
   }
   
-  extension [Self <: InitSegmentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitSegmentData] (val x: Self) extends AnyVal {
     
     inline def setInitPTS(value: Double): Self = StObject.set(x, "initPTS", value.asInstanceOf[js.Any])
     

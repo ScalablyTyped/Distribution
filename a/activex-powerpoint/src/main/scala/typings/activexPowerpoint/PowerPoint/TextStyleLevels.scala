@@ -31,7 +31,8 @@ object TextStyleLevels {
     __obj.asInstanceOf[TextStyleLevels]
   }
   
-  extension [Self <: TextStyleLevels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextStyleLevels] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[Crop]
     }
     
-    extension [Self <: Crop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Crop] (val x: Self) extends AnyVal {
       
       inline def setAspect(value: Double): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[PercentCrop]
     }
     
-    extension [Self <: PercentCrop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PercentCrop] (val x: Self) extends AnyVal {
       
       inline def setUnit(value: Percentsign): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
@@ -194,7 +196,8 @@ object mod {
       __obj.asInstanceOf[ReactCropProps]
     }
     
-    extension [Self <: ReactCropProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactCropProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

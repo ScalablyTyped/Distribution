@@ -28,7 +28,8 @@ object EngineDefaults {
     __obj.asInstanceOf[EngineDefaults]
   }
   
-  extension [Self <: EngineDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EngineDefaults] (val x: Self) extends AnyVal {
     
     inline def setDBParameterGroupFamily(value: String): Self = StObject.set(x, "DBParameterGroupFamily", value.asInstanceOf[js.Any])
     

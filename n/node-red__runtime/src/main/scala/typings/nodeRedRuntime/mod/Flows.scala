@@ -19,7 +19,8 @@ object Flows {
     __obj.asInstanceOf[Flows]
   }
   
-  extension [Self <: Flows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Flows] (val x: Self) extends AnyVal {
     
     inline def setFlows(value: js.Array[js.Object]): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
     

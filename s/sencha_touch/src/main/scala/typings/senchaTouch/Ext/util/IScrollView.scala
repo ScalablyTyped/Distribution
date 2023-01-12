@@ -80,7 +80,8 @@ object IScrollView {
     __obj.asInstanceOf[IScrollView]
   }
   
-  extension [Self <: IScrollView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScrollView] (val x: Self) extends AnyVal {
     
     inline def setGetCls(value: () => String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
     

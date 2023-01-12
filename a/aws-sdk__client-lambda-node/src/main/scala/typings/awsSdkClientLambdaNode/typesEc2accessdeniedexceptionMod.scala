@@ -21,7 +21,8 @@ object typesEc2accessdeniedexceptionMod {
       __obj.asInstanceOf[EC2AccessDeniedException]
     }
     
-    extension [Self <: EC2AccessDeniedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EC2AccessDeniedException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.EC2AccessDeniedException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object typesEc2accessdeniedexceptionMod {
       __obj.asInstanceOf[EC2AccessDeniedExceptionDetails]
     }
     
-    extension [Self <: EC2AccessDeniedExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EC2AccessDeniedExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

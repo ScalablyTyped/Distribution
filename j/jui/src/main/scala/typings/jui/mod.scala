@@ -669,7 +669,8 @@ object mod {
       __obj.asInstanceOf[UITreeBase]
     }
     
-    extension [Self <: UITreeBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UITreeBase] (val x: Self) extends AnyVal {
       
       inline def setAppendNode(value: /* repeated */ Any => UITreeNode): Self = StObject.set(x, "appendNode", js.Any.fromFunction1(value))
       
@@ -734,7 +735,8 @@ object mod {
       __obj.asInstanceOf[UITreeNode]
     }
     
-    extension [Self <: UITreeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UITreeNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[UITreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ServiceEndpointRequest {
     __obj.asInstanceOf[ServiceEndpointRequest]
   }
   
-  extension [Self <: ServiceEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setDataSourceDetails(value: DataSourceDetails): Self = StObject.set(x, "dataSourceDetails", value.asInstanceOf[js.Any])
     

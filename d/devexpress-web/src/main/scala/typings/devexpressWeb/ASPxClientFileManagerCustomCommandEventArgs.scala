@@ -23,7 +23,8 @@ object ASPxClientFileManagerCustomCommandEventArgs {
     __obj.asInstanceOf[ASPxClientFileManagerCustomCommandEventArgs]
   }
   
-  extension [Self <: ASPxClientFileManagerCustomCommandEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFileManagerCustomCommandEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
   }

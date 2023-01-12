@@ -17,7 +17,8 @@ object JobAssignedEvent {
     __obj.asInstanceOf[JobAssignedEvent]
   }
   
-  extension [Self <: JobAssignedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobAssignedEvent] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: TaskAgentJobRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object ImportImageLicenseConfigurationResponse {
     __obj.asInstanceOf[ImportImageLicenseConfigurationResponse]
   }
   
-  extension [Self <: ImportImageLicenseConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportImageLicenseConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setLicenseConfigurationArn(value: String): Self = StObject.set(x, "LicenseConfigurationArn", value.asInstanceOf[js.Any])
     

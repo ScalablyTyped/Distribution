@@ -19,7 +19,8 @@ object ReturnTypeGetMatchedStylesForNodeResponse {
     __obj.asInstanceOf[ReturnTypeGetMatchedStylesForNodeResponse]
   }
   
-  extension [Self <: ReturnTypeGetMatchedStylesForNodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetMatchedStylesForNodeResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetMatchedStylesForNodeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object Photos {
     __obj.asInstanceOf[Photos]
   }
   
-  extension [Self <: Photos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Photos] (val x: Self) extends AnyVal {
     
     inline def setCollections(value: GetRelated): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     

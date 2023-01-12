@@ -23,7 +23,8 @@ object DeleteCachePolicyRequest {
     __obj.asInstanceOf[DeleteCachePolicyRequest]
   }
   
-  extension [Self <: DeleteCachePolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCachePolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

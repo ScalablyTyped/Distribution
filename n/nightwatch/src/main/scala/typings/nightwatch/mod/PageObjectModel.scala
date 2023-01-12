@@ -23,7 +23,8 @@ object PageObjectModel {
     __obj.asInstanceOf[PageObjectModel]
   }
   
-  extension [Self <: PageObjectModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageObjectModel] (val x: Self) extends AnyVal {
     
     inline def setCommands(value: Any): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     

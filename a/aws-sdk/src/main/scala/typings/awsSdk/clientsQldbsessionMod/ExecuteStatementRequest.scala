@@ -28,7 +28,8 @@ object ExecuteStatementRequest {
     __obj.asInstanceOf[ExecuteStatementRequest]
   }
   
-  extension [Self <: ExecuteStatementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteStatementRequest] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: StatementParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     

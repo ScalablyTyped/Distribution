@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[ChannelConfiguration]
     }
     
-    extension [Self <: ChannelConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelConfiguration] (val x: Self) extends AnyVal {
       
       inline def setDebugOutput(value: Boolean): Self = StObject.set(x, "debugOutput", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object mod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setError(value: (/* error */ Any, /* message */ String) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
@@ -148,7 +150,8 @@ object mod {
       __obj.asInstanceOf[MessageTransaction]
     }
     
-    extension [Self <: MessageTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageTransaction] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       

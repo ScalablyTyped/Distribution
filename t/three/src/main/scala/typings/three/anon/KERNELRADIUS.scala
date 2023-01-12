@@ -19,7 +19,8 @@ object KERNELRADIUS {
     __obj.asInstanceOf[KERNELRADIUS]
   }
   
-  extension [Self <: KERNELRADIUS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KERNELRADIUS] (val x: Self) extends AnyVal {
     
     inline def setDEPTH_PACKING(value: Double): Self = StObject.set(x, "DEPTH_PACKING", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object SecureScoreControlStateUpdate {
     __obj.asInstanceOf[SecureScoreControlStateUpdate]
   }
   
-  extension [Self <: SecureScoreControlStateUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecureScoreControlStateUpdate] (val x: Self) extends AnyVal {
     
     inline def setAssignedTo(value: NullableOption[String]): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
     

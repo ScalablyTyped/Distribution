@@ -23,7 +23,8 @@ object filteringFormatterOptionsIntervalOptionsMod {
       __obj.asInstanceOf[IntervalOptions]
     }
     
-    extension [Self <: IntervalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntervalOptions] (val x: Self) extends AnyVal {
       
       inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       

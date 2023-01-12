@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[Installations]
     }
     
-    extension [Self <: Installations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Installations] (val x: Self) extends AnyVal {
       
       inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     }

@@ -73,7 +73,8 @@ object JobSettings {
     __obj.asInstanceOf[JobSettings]
   }
   
-  extension [Self <: JobSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobSettings] (val x: Self) extends AnyVal {
     
     inline def setAdAvailOffset(value: integerMinNegative1000Max1000): Self = StObject.set(x, "AdAvailOffset", value.asInstanceOf[js.Any])
     

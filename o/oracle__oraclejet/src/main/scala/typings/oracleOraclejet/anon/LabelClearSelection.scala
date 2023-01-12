@@ -53,7 +53,8 @@ object LabelClearSelection {
     __obj.asInstanceOf[LabelClearSelection]
   }
   
-  extension [Self <: LabelClearSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelClearSelection] (val x: Self) extends AnyVal {
     
     inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
     

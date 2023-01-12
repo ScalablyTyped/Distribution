@@ -56,7 +56,8 @@ object InjectDetails {
     __obj.asInstanceOf[InjectDetails]
   }
   
-  extension [Self <: InjectDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InjectDetails] (val x: Self) extends AnyVal {
     
     inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
     

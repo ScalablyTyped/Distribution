@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[BadgenOptions]
     }
     
-    extension [Self <: BadgenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgenOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setBadgen(value: /* param0 */ BadgenOptions => String): Self = StObject.set(x, "badgen", js.Any.fromFunction1(value))
       }

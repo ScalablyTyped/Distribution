@@ -16,7 +16,8 @@ object ServiceHooksSubscriptionChannel {
     __obj.asInstanceOf[ServiceHooksSubscriptionChannel]
   }
   
-  extension [Self <: ServiceHooksSubscriptionChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceHooksSubscriptionChannel] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

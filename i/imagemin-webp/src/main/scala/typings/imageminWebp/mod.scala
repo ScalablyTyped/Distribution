@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[Crop]
     }
     
-    extension [Self <: Crop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Crop] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -151,7 +152,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlphaQuality(value: Double): Self = StObject.set(x, "alphaQuality", value.asInstanceOf[js.Any])
       
@@ -250,7 +252,8 @@ object mod {
       __obj.asInstanceOf[Resize]
     }
     
-    extension [Self <: Resize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

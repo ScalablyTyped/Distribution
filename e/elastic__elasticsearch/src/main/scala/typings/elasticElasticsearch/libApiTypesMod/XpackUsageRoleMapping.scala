@@ -17,7 +17,8 @@ object XpackUsageRoleMapping {
     __obj.asInstanceOf[XpackUsageRoleMapping]
   }
   
-  extension [Self <: XpackUsageRoleMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageRoleMapping] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: integer): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

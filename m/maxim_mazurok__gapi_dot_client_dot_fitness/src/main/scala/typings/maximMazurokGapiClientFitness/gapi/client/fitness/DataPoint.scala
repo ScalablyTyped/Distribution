@@ -43,7 +43,8 @@ object DataPoint {
     __obj.asInstanceOf[DataPoint]
   }
   
-  extension [Self <: DataPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPoint] (val x: Self) extends AnyVal {
     
     inline def setComputationTimeMillis(value: String): Self = StObject.set(x, "computationTimeMillis", value.asInstanceOf[js.Any])
     

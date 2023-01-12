@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[CurrentDeviceDownBandwidth]
     }
     
-    extension [Self <: CurrentDeviceDownBandwidth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentDeviceDownBandwidth] (val x: Self) extends AnyVal {
       
       inline def setCurrentDeviceDownBandwidth(value: String): Self = StObject.set(x, "currentDeviceDownBandwidth", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[CurrentVersion]
     }
     
-    extension [Self <: CurrentVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentVersion] (val x: Self) extends AnyVal {
       
       inline def setCurrentVersion(value: String): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
       
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[DaylightSaving]
     }
     
-    extension [Self <: DaylightSaving](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DaylightSaving] (val x: Self) extends AnyVal {
       
       inline def setDaylightSaving(value: String): Self = StObject.set(x, "DaylightSaving", value.asInstanceOf[js.Any])
       
@@ -92,7 +95,8 @@ object anon {
       __obj.asInstanceOf[Enabled]
     }
     
-    extension [Self <: Enabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Double): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -119,7 +123,8 @@ object anon {
       __obj.asInstanceOf[NTPServer1]
     }
     
-    extension [Self <: NTPServer1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NTPServer1] (val x: Self) extends AnyVal {
       
       inline def setNTPServer1(value: String): Self = StObject.set(x, "NTPServer1", value.asInstanceOf[js.Any])
       
@@ -144,7 +149,8 @@ object anon {
       __obj.asInstanceOf[NewPortMappingInfo]
     }
     
-    extension [Self <: NewPortMappingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewPortMappingInfo] (val x: Self) extends AnyVal {
       
       inline def setNewPortMappingInfo(value: Unit): Self = StObject.set(x, "NewPortMappingInfo", value.asInstanceOf[js.Any])
       

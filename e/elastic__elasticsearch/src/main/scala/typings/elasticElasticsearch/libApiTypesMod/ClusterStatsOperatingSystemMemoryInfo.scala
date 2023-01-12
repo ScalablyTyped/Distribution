@@ -31,7 +31,8 @@ object ClusterStatsOperatingSystemMemoryInfo {
     __obj.asInstanceOf[ClusterStatsOperatingSystemMemoryInfo]
   }
   
-  extension [Self <: ClusterStatsOperatingSystemMemoryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsOperatingSystemMemoryInfo] (val x: Self) extends AnyVal {
     
     inline def setAdjusted_total_in_bytes(value: long): Self = StObject.set(x, "adjusted_total_in_bytes", value.asInstanceOf[js.Any])
     

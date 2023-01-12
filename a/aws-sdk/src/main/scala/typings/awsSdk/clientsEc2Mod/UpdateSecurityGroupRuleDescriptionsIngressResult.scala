@@ -18,7 +18,8 @@ object UpdateSecurityGroupRuleDescriptionsIngressResult {
     __obj.asInstanceOf[UpdateSecurityGroupRuleDescriptionsIngressResult]
   }
   
-  extension [Self <: UpdateSecurityGroupRuleDescriptionsIngressResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSecurityGroupRuleDescriptionsIngressResult] (val x: Self) extends AnyVal {
     
     inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     

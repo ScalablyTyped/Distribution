@@ -24,7 +24,8 @@ object Link {
     __obj.asInstanceOf[Link]
   }
   
-  extension [Self <: Link](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[StaticPhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

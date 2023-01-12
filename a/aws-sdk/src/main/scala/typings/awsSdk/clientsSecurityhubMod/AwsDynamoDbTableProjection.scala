@@ -23,7 +23,8 @@ object AwsDynamoDbTableProjection {
     __obj.asInstanceOf[AwsDynamoDbTableProjection]
   }
   
-  extension [Self <: AwsDynamoDbTableProjection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsDynamoDbTableProjection] (val x: Self) extends AnyVal {
     
     inline def setNonKeyAttributes(value: StringList): Self = StObject.set(x, "NonKeyAttributes", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object PixelRatio {
     __obj.asInstanceOf[PixelRatio]
   }
   
-  extension [Self <: PixelRatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PixelRatio] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: /* blob */ Blob => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

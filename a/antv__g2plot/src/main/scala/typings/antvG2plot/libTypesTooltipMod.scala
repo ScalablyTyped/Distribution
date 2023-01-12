@@ -37,7 +37,8 @@ object libTypesTooltipMod {
       __obj.asInstanceOf[TooltipMapping]
     }
     
-    extension [Self <: TooltipMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipMapping] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[String] | `false`): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       

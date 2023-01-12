@@ -32,7 +32,8 @@ object esUseEditableMapMod {
       __obj.asInstanceOf[AddLineOptions]
     }
     
-    extension [Self <: AddLineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddLineOptions] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: top | bottom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       

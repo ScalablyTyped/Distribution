@@ -15,7 +15,8 @@ object AnalyzeExpenseRequest {
     __obj.asInstanceOf[AnalyzeExpenseRequest]
   }
   
-  extension [Self <: AnalyzeExpenseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzeExpenseRequest] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: Document): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
   }

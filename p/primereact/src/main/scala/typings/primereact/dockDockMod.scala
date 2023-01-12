@@ -124,7 +124,8 @@ object dockDockMod {
       __obj.asInstanceOf[DockHeaderTemplateOptions]
     }
     
-    extension [Self <: DockHeaderTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DockHeaderTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setProps(value: DockProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
@@ -528,7 +529,8 @@ object dockDockMod {
       __obj.asInstanceOf[DockProps]
     }
     
-    extension [Self <: DockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DockProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

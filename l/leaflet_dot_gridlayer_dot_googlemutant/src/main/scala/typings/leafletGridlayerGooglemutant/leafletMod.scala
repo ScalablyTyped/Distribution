@@ -43,7 +43,8 @@ object leafletMod {
         __obj.asInstanceOf[GoogleMutantOptions]
       }
       
-      extension [Self <: GoogleMutantOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GoogleMutantOptions] (val x: Self) extends AnyVal {
         
         inline def setContinuousWorld(value: Boolean): Self = StObject.set(x, "continuousWorld", value.asInstanceOf[js.Any])
         
@@ -90,7 +91,8 @@ object leafletMod {
         __obj.asInstanceOf[GoogleMutantStyle]
       }
       
-      extension [Self <: GoogleMutantStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GoogleMutantStyle] (val x: Self) extends AnyVal {
         
         inline def setElementType(value: String): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
         
@@ -133,7 +135,8 @@ object leafletMod {
         __obj.asInstanceOf[GoogleMutantStyler]
       }
       
-      extension [Self <: GoogleMutantStyler](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GoogleMutantStyler] (val x: Self) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         

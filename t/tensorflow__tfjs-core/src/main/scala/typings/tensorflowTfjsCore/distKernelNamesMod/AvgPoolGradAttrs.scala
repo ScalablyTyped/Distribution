@@ -26,7 +26,8 @@ object AvgPoolGradAttrs {
     __obj.asInstanceOf[AvgPoolGradAttrs]
   }
   
-  extension [Self <: AvgPoolGradAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvgPoolGradAttrs] (val x: Self) extends AnyVal {
     
     inline def setFilterSize(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
     

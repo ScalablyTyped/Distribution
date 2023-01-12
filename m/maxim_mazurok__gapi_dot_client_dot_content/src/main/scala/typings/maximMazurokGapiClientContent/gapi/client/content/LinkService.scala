@@ -22,7 +22,8 @@ object LinkService {
     __obj.asInstanceOf[LinkService]
   }
   
-  extension [Self <: LinkService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkService] (val x: Self) extends AnyVal {
     
     inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     

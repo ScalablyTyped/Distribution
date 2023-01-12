@@ -21,7 +21,8 @@ object OverlayContentBackground {
     __obj.asInstanceOf[OverlayContentBackground]
   }
   
-  extension [Self <: OverlayContentBackground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverlayContentBackground] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

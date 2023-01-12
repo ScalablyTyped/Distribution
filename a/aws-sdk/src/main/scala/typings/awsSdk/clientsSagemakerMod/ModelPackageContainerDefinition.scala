@@ -63,7 +63,8 @@ object ModelPackageContainerDefinition {
     __obj.asInstanceOf[ModelPackageContainerDefinition]
   }
   
-  extension [Self <: ModelPackageContainerDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelPackageContainerDefinition] (val x: Self) extends AnyVal {
     
     inline def setContainerHostname(value: ContainerHostname): Self = StObject.set(x, "ContainerHostname", value.asInstanceOf[js.Any])
     

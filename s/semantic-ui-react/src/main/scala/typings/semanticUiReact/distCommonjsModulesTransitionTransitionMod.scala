@@ -110,7 +110,8 @@ object distCommonjsModulesTransitionTransitionMod {
       __obj.asInstanceOf[StrictTransitionProps]
     }
     
-    extension [Self <: StrictTransitionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictTransitionProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: SemanticTRANSITIONS | String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -218,7 +219,8 @@ object distCommonjsModulesTransitionTransitionMod {
       __obj.asInstanceOf[TransitionEventData]
     }
     
-    extension [Self <: TransitionEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionEventData] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: TRANSITION_STATUSES): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
@@ -237,7 +239,8 @@ object distCommonjsModulesTransitionTransitionMod {
       __obj.asInstanceOf[TransitionPropDuration]
     }
     
-    extension [Self <: TransitionPropDuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionPropDuration] (val x: Self) extends AnyVal {
       
       inline def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       

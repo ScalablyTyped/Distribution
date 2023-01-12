@@ -16,7 +16,8 @@ object PartialDebugOptions {
     __obj.asInstanceOf[PartialDebugOptions]
   }
   
-  extension [Self <: PartialDebugOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDebugOptions] (val x: Self) extends AnyVal {
     
     inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     

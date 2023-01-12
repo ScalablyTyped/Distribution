@@ -64,7 +64,8 @@ object ObjectTypeDeclarationScalarsAnnotations {
     __obj.asInstanceOf[ObjectTypeDeclarationScalarsAnnotations]
   }
   
-  extension [Self <: ObjectTypeDeclarationScalarsAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectTypeDeclarationScalarsAnnotations] (val x: Self) extends AnyVal {
     
     inline def setAdditionalProperties(value: () => js.Array[AnnotationRef]): Self = StObject.set(x, "additionalProperties", js.Any.fromFunction0(value))
     

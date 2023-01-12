@@ -16,7 +16,8 @@ object PatchRequestBodyContentApplicationjsonAutotriggerchecks {
     __obj.asInstanceOf[PatchRequestBodyContentApplicationjsonAutotriggerchecks]
   }
   
-  extension [Self <: PatchRequestBodyContentApplicationjsonAutotriggerchecks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchRequestBodyContentApplicationjsonAutotriggerchecks] (val x: Self) extends AnyVal {
     
     inline def setPatch(value: RequestBodyContentApplicationjsonAutotriggerchecks): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }

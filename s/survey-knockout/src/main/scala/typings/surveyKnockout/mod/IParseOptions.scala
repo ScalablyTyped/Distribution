@@ -19,7 +19,8 @@ object IParseOptions {
     __obj.asInstanceOf[IParseOptions]
   }
   
-  extension [Self <: IParseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IParseOptions] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object libSrcLexerTokenizerMod {
       __obj.asInstanceOf[Tokenizer]
     }
     
-    extension [Self <: Tokenizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tokenizer] (val x: Self) extends AnyVal {
       
       inline def setBuildParamRules(value: Any): Self = StObject.set(x, "buildParamRules", value.asInstanceOf[js.Any])
       

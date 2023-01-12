@@ -39,7 +39,8 @@ object buildSrcValueMod {
       __obj.asInstanceOf[ListValue]
     }
     
-    extension [Self <: ListValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListValue] (val x: Self) extends AnyVal {
       
       inline def setValues(value: js.Array[Value]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object buildSrcValueMod {
       __obj.asInstanceOf[Struct]
     }
     
-    extension [Self <: Struct](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Struct] (val x: Self) extends AnyVal {
       
       inline def setFields(value: StringDictionary[Value]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     }
@@ -85,7 +87,8 @@ object buildSrcValueMod {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
       

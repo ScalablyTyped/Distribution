@@ -17,7 +17,8 @@ object ContentInset {
     __obj.asInstanceOf[ContentInset]
   }
   
-  extension [Self <: ContentInset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentInset] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object StatusLevelOptions {
     __obj.asInstanceOf[StatusLevelOptions]
   }
   
-  extension [Self <: StatusLevelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusLevelOptions] (val x: Self) extends AnyVal {
     
     inline def setDEBUG(value: `3`): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
     

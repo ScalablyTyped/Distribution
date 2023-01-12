@@ -23,7 +23,8 @@ object GetDiscoveredSchemaRequest {
     __obj.asInstanceOf[GetDiscoveredSchemaRequest]
   }
   
-  extension [Self <: GetDiscoveredSchemaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDiscoveredSchemaRequest] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: listOfGetDiscoveredSchemaVersionItemInput): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

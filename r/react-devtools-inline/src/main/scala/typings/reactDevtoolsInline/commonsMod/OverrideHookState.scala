@@ -17,7 +17,8 @@ object OverrideHookState {
     __obj.asInstanceOf[OverrideHookState]
   }
   
-  extension [Self <: OverrideHookState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverrideHookState] (val x: Self) extends AnyVal {
     
     inline def setHookID(value: Double): Self = StObject.set(x, "hookID", value.asInstanceOf[js.Any])
   }

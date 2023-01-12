@@ -19,7 +19,8 @@ object Cover {
     __obj.asInstanceOf[Cover]
   }
   
-  extension [Self <: Cover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cover] (val x: Self) extends AnyVal {
     
     inline def `setCover-type`(value: CoverType): Self = StObject.set(x, "cover-type", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object ServerAuthSchemeObject {
     __obj.asInstanceOf[ServerAuthSchemeObject]
   }
   
-  extension [Self <: ServerAuthSchemeObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerAuthSchemeObject] (val x: Self) extends AnyVal {
     
     inline def setApi(value: ServerAuthSchemeObjectApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     

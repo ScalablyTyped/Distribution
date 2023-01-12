@@ -61,7 +61,8 @@ object TouchBarScrubberConstructorOptions {
     __obj.asInstanceOf[TouchBarScrubberConstructorOptions]
   }
   
-  extension [Self <: TouchBarScrubberConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchBarScrubberConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     

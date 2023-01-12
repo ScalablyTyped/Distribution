@@ -50,7 +50,8 @@ object ItemResponse {
     __obj.asInstanceOf[ItemResponse]
   }
   
-  extension [Self <: ItemResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemResponse] (val x: Self) extends AnyVal {
     
     inline def setGetFeedback(value: () => QuizFeedback): Self = StObject.set(x, "getFeedback", js.Any.fromFunction0(value))
     

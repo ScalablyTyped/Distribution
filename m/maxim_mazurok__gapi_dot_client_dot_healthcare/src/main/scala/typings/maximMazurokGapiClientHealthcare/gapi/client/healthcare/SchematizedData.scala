@@ -19,7 +19,8 @@ object SchematizedData {
     __obj.asInstanceOf[SchematizedData]
   }
   
-  extension [Self <: SchematizedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchematizedData] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

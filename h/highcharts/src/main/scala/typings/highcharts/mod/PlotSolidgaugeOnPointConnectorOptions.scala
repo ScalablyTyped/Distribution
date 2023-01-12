@@ -29,7 +29,8 @@ object PlotSolidgaugeOnPointConnectorOptions {
     __obj.asInstanceOf[PlotSolidgaugeOnPointConnectorOptions]
   }
   
-  extension [Self <: PlotSolidgaugeOnPointConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSolidgaugeOnPointConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDashstyle(value: String): Self = StObject.set(x, "dashstyle", value.asInstanceOf[js.Any])
     

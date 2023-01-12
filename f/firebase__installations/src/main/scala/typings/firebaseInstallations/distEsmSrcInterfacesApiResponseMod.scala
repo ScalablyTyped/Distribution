@@ -21,7 +21,8 @@ object distEsmSrcInterfacesApiResponseMod {
       __obj.asInstanceOf[CreateInstallationResponse]
     }
     
-    extension [Self <: CreateInstallationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateInstallationResponse] (val x: Self) extends AnyVal {
       
       inline def setAuthToken(value: GenerateAuthTokenResponse): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object distEsmSrcInterfacesApiResponseMod {
       __obj.asInstanceOf[GenerateAuthTokenResponse]
     }
     
-    extension [Self <: GenerateAuthTokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateAuthTokenResponse] (val x: Self) extends AnyVal {
       
       inline def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       

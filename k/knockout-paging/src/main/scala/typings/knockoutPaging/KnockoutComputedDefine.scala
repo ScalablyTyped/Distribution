@@ -28,7 +28,8 @@ object KnockoutComputedDefine {
     __obj.asInstanceOf[KnockoutComputedDefine[T]]
   }
   
-  extension [Self <: KnockoutComputedDefine[?], T](x: Self & KnockoutComputedDefine[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutComputedDefine[?], T] (val x: Self & KnockoutComputedDefine[T]) extends AnyVal {
     
     inline def setDeferEvaluation(value: Boolean): Self = StObject.set(x, "deferEvaluation", value.asInstanceOf[js.Any])
     

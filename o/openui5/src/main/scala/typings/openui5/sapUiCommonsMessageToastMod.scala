@@ -287,7 +287,8 @@ object sapUiCommonsMessageToastMod {
       __obj.asInstanceOf[MessageToastSettings]
     }
     
-    extension [Self <: MessageToastSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageToastSettings] (val x: Self) extends AnyVal {
       
       inline def setAnchorId(value: String | PropertyBindingInfo): Self = StObject.set(x, "anchorId", value.asInstanceOf[js.Any])
       

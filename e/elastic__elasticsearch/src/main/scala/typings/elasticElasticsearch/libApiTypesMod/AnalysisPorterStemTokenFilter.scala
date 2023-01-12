@@ -20,7 +20,8 @@ object AnalysisPorterStemTokenFilter {
     __obj.asInstanceOf[AnalysisPorterStemTokenFilter]
   }
   
-  extension [Self <: AnalysisPorterStemTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisPorterStemTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setType(value: porter_stem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

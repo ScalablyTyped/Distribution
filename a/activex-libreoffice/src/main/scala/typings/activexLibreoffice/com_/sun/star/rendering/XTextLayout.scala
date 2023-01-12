@@ -259,7 +259,8 @@ object XTextLayout {
     __obj.asInstanceOf[XTextLayout]
   }
   
-  extension [Self <: XTextLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextLayout] (val x: Self) extends AnyVal {
     
     inline def setApplyLogicalAdvancements(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "applyLogicalAdvancements", js.Any.fromFunction1(value))
     

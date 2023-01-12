@@ -138,7 +138,8 @@ object buildSrcMetricsMeterMod {
       __obj.asInstanceOf[MeterOptions]
     }
     
-    extension [Self <: MeterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeterOptions] (val x: Self) extends AnyVal {
       
       inline def setSchemaUrl(value: String): Self = StObject.set(x, "schemaUrl", value.asInstanceOf[js.Any])
       

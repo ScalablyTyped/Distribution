@@ -19,7 +19,8 @@ object SpatialPointerPose {
     __obj.asInstanceOf[SpatialPointerPose]
   }
   
-  extension [Self <: SpatialPointerPose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialPointerPose] (val x: Self) extends AnyVal {
     
     inline def setHead(value: Any): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     

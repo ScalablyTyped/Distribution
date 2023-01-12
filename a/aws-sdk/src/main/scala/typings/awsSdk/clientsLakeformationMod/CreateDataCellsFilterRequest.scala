@@ -18,7 +18,8 @@ object CreateDataCellsFilterRequest {
     __obj.asInstanceOf[CreateDataCellsFilterRequest]
   }
   
-  extension [Self <: CreateDataCellsFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataCellsFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setTableData(value: DataCellsFilter): Self = StObject.set(x, "TableData", value.asInstanceOf[js.Any])
   }

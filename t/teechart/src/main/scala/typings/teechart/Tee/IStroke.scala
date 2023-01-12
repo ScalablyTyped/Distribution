@@ -35,7 +35,8 @@ object IStroke {
     __obj.asInstanceOf[IStroke]
   }
   
-  extension [Self <: IStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStroke] (val x: Self) extends AnyVal {
     
     inline def setCap(value: String): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     

@@ -193,7 +193,8 @@ object AnimationDelayUpdate {
     __obj.asInstanceOf[AnimationDelayUpdate]
   }
   
-  extension [Self <: AnimationDelayUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationDelayUpdate] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

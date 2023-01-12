@@ -147,7 +147,8 @@ object modulesLocalPaymentMod {
       __obj.asInstanceOf[LocalPaymentAddress]
     }
     
-    extension [Self <: LocalPaymentAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalPaymentAddress] (val x: Self) extends AnyVal {
       
       inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
       
@@ -190,7 +191,8 @@ object modulesLocalPaymentMod {
       __obj.asInstanceOf[LocalPaymentCreateOptions]
     }
     
-    extension [Self <: LocalPaymentCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalPaymentCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
       
@@ -223,7 +225,8 @@ object modulesLocalPaymentMod {
       __obj.asInstanceOf[LocalPaymentFallback]
     }
     
-    extension [Self <: LocalPaymentFallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalPaymentFallback] (val x: Self) extends AnyVal {
       
       inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       
@@ -254,7 +257,8 @@ object modulesLocalPaymentMod {
       __obj.asInstanceOf[LocalPaymentStartData]
     }
     
-    extension [Self <: LocalPaymentStartData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalPaymentStartData] (val x: Self) extends AnyVal {
       
       inline def setPaymentId(value: String): Self = StObject.set(x, "paymentId", value.asInstanceOf[js.Any])
     }
@@ -303,7 +307,8 @@ object modulesLocalPaymentMod {
       __obj.asInstanceOf[LocalPaymentStartPaymentOptions]
     }
     
-    extension [Self <: LocalPaymentStartPaymentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalPaymentStartPaymentOptions] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: LocalPaymentAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -380,7 +385,8 @@ object modulesLocalPaymentMod {
       __obj.asInstanceOf[LocalPaymentTokenizeOptions]
     }
     
-    extension [Self <: LocalPaymentTokenizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalPaymentTokenizeOptions] (val x: Self) extends AnyVal {
       
       inline def setBtLpPayerId(value: String): Self = StObject.set(x, "btLpPayerId", value.asInstanceOf[js.Any])
       
@@ -414,7 +420,8 @@ object modulesLocalPaymentMod {
       __obj.asInstanceOf[LocalPaymentTokenizePayload]
     }
     
-    extension [Self <: LocalPaymentTokenizePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalPaymentTokenizePayload] (val x: Self) extends AnyVal {
       
       inline def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
       

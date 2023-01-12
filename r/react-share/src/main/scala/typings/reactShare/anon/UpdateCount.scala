@@ -15,7 +15,8 @@ object UpdateCount {
     __obj.asInstanceOf[UpdateCount]
   }
   
-  extension [Self <: UpdateCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCount] (val x: Self) extends AnyVal {
     
     inline def setUpdateCount(value: (String, String) => Unit): Self = StObject.set(x, "updateCount", js.Any.fromFunction2(value))
   }

@@ -50,7 +50,8 @@ object examplesJsmGeometriesTextGeometryMod {
       __obj.asInstanceOf[TextGeometryParameters]
     }
     
-    extension [Self <: TextGeometryParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextGeometryParameters] (val x: Self) extends AnyVal {
       
       inline def setBevelEnabled(value: Boolean): Self = StObject.set(x, "bevelEnabled", value.asInstanceOf[js.Any])
       

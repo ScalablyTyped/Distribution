@@ -51,7 +51,8 @@ object DataRequirementCodeFilter {
     __obj.asInstanceOf[DataRequirementCodeFilter]
   }
   
-  extension [Self <: DataRequirementCodeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRequirementCodeFilter] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

@@ -172,7 +172,8 @@ object Result {
     __obj.asInstanceOf[Result]
   }
   
-  extension [Self <: Result](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
     
     inline def setAnalysisTarget(value: ArtifactLocation): Self = StObject.set(x, "analysisTarget", value.asInstanceOf[js.Any])
     

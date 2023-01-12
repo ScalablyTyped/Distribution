@@ -259,7 +259,8 @@ object sapUiCommonsRichTooltipMod {
       __obj.asInstanceOf[RichTooltipSettings]
     }
     
-    extension [Self <: RichTooltipSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RichTooltipSettings] (val x: Self) extends AnyVal {
       
       inline def setImageAltText(value: String | PropertyBindingInfo): Self = StObject.set(x, "imageAltText", value.asInstanceOf[js.Any])
       

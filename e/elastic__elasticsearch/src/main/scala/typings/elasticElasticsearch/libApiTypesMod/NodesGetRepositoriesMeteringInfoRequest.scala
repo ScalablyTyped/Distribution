@@ -17,7 +17,8 @@ object NodesGetRepositoriesMeteringInfoRequest {
     __obj.asInstanceOf[NodesGetRepositoriesMeteringInfoRequest]
   }
   
-  extension [Self <: NodesGetRepositoriesMeteringInfoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesGetRepositoriesMeteringInfoRequest] (val x: Self) extends AnyVal {
     
     inline def setNode_id(value: NodeIds): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     

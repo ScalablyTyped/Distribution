@@ -44,7 +44,8 @@ object CcrFollowInfoFollowerIndexParameters {
     __obj.asInstanceOf[CcrFollowInfoFollowerIndexParameters]
   }
   
-  extension [Self <: CcrFollowInfoFollowerIndexParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrFollowInfoFollowerIndexParameters] (val x: Self) extends AnyVal {
     
     inline def setMax_outstanding_read_requests(value: integer): Self = StObject.set(x, "max_outstanding_read_requests", value.asInstanceOf[js.Any])
     

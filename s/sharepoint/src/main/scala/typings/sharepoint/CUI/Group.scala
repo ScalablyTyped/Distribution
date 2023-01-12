@@ -64,7 +64,8 @@ object Group {
     __obj.asInstanceOf[Group]
   }
   
-  extension [Self <: Group](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
     
     inline def setSelectLayout(value: (String, String) => scala.Unit): Self = StObject.set(x, "selectLayout", js.Any.fromFunction2(value))
     

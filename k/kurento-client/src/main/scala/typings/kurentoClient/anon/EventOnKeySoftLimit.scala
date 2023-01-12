@@ -27,7 +27,8 @@ object EventOnKeySoftLimit {
     __obj.asInstanceOf[EventOnKeySoftLimit]
   }
   
-  extension [Self <: EventOnKeySoftLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventOnKeySoftLimit] (val x: Self) extends AnyVal {
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

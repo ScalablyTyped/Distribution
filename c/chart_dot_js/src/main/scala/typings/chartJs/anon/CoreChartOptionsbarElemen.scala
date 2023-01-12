@@ -232,7 +232,8 @@ object CoreChartOptionsbarElemen {
     __obj.asInstanceOf[CoreChartOptionsbarElemen]
   }
   
-  extension [Self <: CoreChartOptionsbarElemen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreChartOptionsbarElemen] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: `false` | AnimationSpecbaronProgres): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

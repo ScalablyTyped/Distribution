@@ -60,7 +60,8 @@ object InventorySourceGroupIdKey {
     __obj.asInstanceOf[InventorySourceGroupIdKey]
   }
   
-  extension [Self <: InventorySourceGroupIdKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventorySourceGroupIdKey] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

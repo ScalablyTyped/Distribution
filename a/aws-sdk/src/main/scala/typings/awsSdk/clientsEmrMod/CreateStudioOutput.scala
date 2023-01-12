@@ -23,7 +23,8 @@ object CreateStudioOutput {
     __obj.asInstanceOf[CreateStudioOutput]
   }
   
-  extension [Self <: CreateStudioOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStudioOutput] (val x: Self) extends AnyVal {
     
     inline def setStudioId(value: XmlStringMaxLen256): Self = StObject.set(x, "StudioId", value.asInstanceOf[js.Any])
     

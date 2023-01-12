@@ -16,7 +16,8 @@ object AcquisitionTargetingRule {
     __obj.asInstanceOf[AcquisitionTargetingRule]
   }
   
-  extension [Self <: AcquisitionTargetingRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcquisitionTargetingRule] (val x: Self) extends AnyVal {
     
     inline def setScope(value: TargetingRuleScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

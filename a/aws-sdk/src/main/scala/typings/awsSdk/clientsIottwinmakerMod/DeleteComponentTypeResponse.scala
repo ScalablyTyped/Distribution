@@ -18,7 +18,8 @@ object DeleteComponentTypeResponse {
     __obj.asInstanceOf[DeleteComponentTypeResponse]
   }
   
-  extension [Self <: DeleteComponentTypeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteComponentTypeResponse] (val x: Self) extends AnyVal {
     
     inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

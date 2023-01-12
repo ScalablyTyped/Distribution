@@ -94,7 +94,8 @@ object typesPutFileInputMod {
       __obj.asInstanceOf[PutFileInput]
     }
     
-    extension [Self <: PutFileInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutFileInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

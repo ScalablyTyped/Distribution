@@ -60,7 +60,8 @@ object CirclePaintPropsPossiblyEvaluated {
     __obj.asInstanceOf[CirclePaintPropsPossiblyEvaluated]
   }
   
-  extension [Self <: CirclePaintPropsPossiblyEvaluated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CirclePaintPropsPossiblyEvaluated] (val x: Self) extends AnyVal {
     
     inline def `setCircle-blur`(value: PossiblyEvaluatedPropertyValue[Double]): Self = StObject.set(x, "circle-blur", value.asInstanceOf[js.Any])
     

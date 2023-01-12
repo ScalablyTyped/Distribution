@@ -31,7 +31,8 @@ object EventMapCore {
     __obj.asInstanceOf[EventMapCore[State]]
   }
   
-  extension [Self <: EventMapCore[?], State /* <: NavigationState[ParamListBase] */](x: Self & EventMapCore[State]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventMapCore[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & EventMapCore[State]) extends AnyVal {
     
     inline def setBeforeRemove(value: CanPreventDefaultData): Self = StObject.set(x, "beforeRemove", value.asInstanceOf[js.Any])
     

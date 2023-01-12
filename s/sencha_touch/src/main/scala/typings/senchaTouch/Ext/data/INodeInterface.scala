@@ -316,7 +316,8 @@ object INodeInterface {
     __obj.asInstanceOf[INodeInterface]
   }
   
-  extension [Self <: INodeInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INodeInterface] (val x: Self) extends AnyVal {
     
     inline def setAppendChild(value: /* node */ js.UndefOr[Any] => INodeInterface): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     

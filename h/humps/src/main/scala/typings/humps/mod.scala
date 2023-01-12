@@ -104,7 +104,8 @@ object mod {
       __obj.asInstanceOf[HumpsOptions]
     }
     
-    extension [Self <: HumpsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HumpsOptions] (val x: Self) extends AnyVal {
       
       inline def setProcess(
         value: (/* key */ String, /* convert */ HumpsProcessorParameter, /* options */ js.UndefOr[HumpsOptions]) => String

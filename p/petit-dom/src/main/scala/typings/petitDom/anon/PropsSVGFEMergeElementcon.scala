@@ -644,7 +644,8 @@ object PropsSVGFEMergeElementcon {
     __obj.asInstanceOf[PropsSVGFEMergeElementcon]
   }
   
-  extension [Self <: PropsSVGFEMergeElementcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGFEMergeElementcon] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

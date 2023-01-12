@@ -20,7 +20,8 @@ object MergePayload {
     __obj.asInstanceOf[MergePayload]
   }
   
-  extension [Self <: MergePayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergePayload] (val x: Self) extends AnyVal {
     
     inline def setIds(value: js.Array[ZendeskID]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object BaselineView {
     __obj.asInstanceOf[BaselineView]
   }
   
-  extension [Self <: BaselineView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaselineView] (val x: Self) extends AnyVal {
     
     inline def setMetric_name(value: BaselineDetails): Self = StObject.set(x, "metric_name", value.asInstanceOf[js.Any])
     

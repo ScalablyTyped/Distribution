@@ -25,7 +25,8 @@ object AutoCorrect {
     __obj.asInstanceOf[AutoCorrect]
   }
   
-  extension [Self <: AutoCorrect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoCorrect] (val x: Self) extends AnyVal {
     
     inline def setAccessDotAutoCorrect_typekey(value: AutoCorrect): Self = StObject.set(x, "Access.AutoCorrect_typekey", value.asInstanceOf[js.Any])
     

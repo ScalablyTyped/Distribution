@@ -18,7 +18,8 @@ object IndicesStorage {
     __obj.asInstanceOf[IndicesStorage]
   }
   
-  extension [Self <: IndicesStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesStorage] (val x: Self) extends AnyVal {
     
     inline def setAllow_mmap(value: Boolean): Self = StObject.set(x, "allow_mmap", value.asInstanceOf[js.Any])
     

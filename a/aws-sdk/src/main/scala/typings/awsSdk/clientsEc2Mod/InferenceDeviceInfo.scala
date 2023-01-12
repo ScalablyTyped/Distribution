@@ -28,7 +28,8 @@ object InferenceDeviceInfo {
     __obj.asInstanceOf[InferenceDeviceInfo]
   }
   
-  extension [Self <: InferenceDeviceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceDeviceInfo] (val x: Self) extends AnyVal {
     
     inline def setCount(value: InferenceDeviceCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

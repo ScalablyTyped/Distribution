@@ -28,7 +28,8 @@ object WorkItemLink {
     __obj.asInstanceOf[WorkItemLink]
   }
   
-  extension [Self <: WorkItemLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemLink] (val x: Self) extends AnyVal {
     
     inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
     

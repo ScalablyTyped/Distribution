@@ -25,7 +25,8 @@ object SubstanceSourceMaterialPartDescription {
     __obj.asInstanceOf[SubstanceSourceMaterialPartDescription]
   }
   
-  extension [Self <: SubstanceSourceMaterialPartDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceSourceMaterialPartDescription] (val x: Self) extends AnyVal {
     
     inline def setPart(value: CodeableConcept): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     

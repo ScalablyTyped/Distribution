@@ -28,7 +28,8 @@ object JobResource {
     __obj.asInstanceOf[JobResource]
   }
   
-  extension [Self <: JobResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobResource] (val x: Self) extends AnyVal {
     
     inline def setEc2AmiResources(value: Ec2AmiResourceList): Self = StObject.set(x, "Ec2AmiResources", value.asInstanceOf[js.Any])
     

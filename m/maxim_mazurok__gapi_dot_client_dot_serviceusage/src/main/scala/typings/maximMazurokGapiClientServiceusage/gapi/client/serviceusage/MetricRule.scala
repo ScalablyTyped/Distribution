@@ -24,7 +24,8 @@ object MetricRule {
     __obj.asInstanceOf[MetricRule]
   }
   
-  extension [Self <: MetricRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricRule] (val x: Self) extends AnyVal {
     
     inline def setMetricCosts(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

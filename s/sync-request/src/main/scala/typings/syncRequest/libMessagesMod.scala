@@ -25,7 +25,8 @@ object libMessagesMod {
       __obj.asInstanceOf[Req]
     }
     
-    extension [Self <: Req](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Req] (val x: Self) extends AnyVal {
       
       inline def setM(value: HttpVerb): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object libMessagesMod {
       __obj.asInstanceOf[Res]
     }
     
-    extension [Self <: Res](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Res] (val x: Self) extends AnyVal {
       
       inline def setB(value: Buffer | String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       

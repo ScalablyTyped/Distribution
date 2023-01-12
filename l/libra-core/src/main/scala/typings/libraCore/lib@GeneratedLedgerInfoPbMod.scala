@@ -109,7 +109,8 @@ object `lib@GeneratedLedgerInfoPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setConsensusBlockId(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "consensusBlockId", value.asInstanceOf[js.Any])
         
@@ -191,7 +192,8 @@ object `lib@GeneratedLedgerInfoPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setLedgerInfo(value: typings.libraCore.`lib@GeneratedLedgerInfoPbMod`.LedgerInfo.AsObject): Self = StObject.set(x, "ledgerInfo", value.asInstanceOf[js.Any])
         
@@ -265,7 +267,8 @@ object `lib@GeneratedLedgerInfoPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setSignature(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
         

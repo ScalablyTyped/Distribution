@@ -15,7 +15,8 @@ object ParsedJsonAsValidationResults {
     __obj.asInstanceOf[ParsedJsonAsValidationResults]
   }
   
-  extension [Self <: ParsedJsonAsValidationResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedJsonAsValidationResults] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: js.Array[ValidationMessageObject]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     

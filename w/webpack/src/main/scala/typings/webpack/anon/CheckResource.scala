@@ -21,7 +21,8 @@ object CheckResource {
     __obj.asInstanceOf[CheckResource]
   }
   
-  extension [Self <: CheckResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckResource] (val x: Self) extends AnyVal {
     
     inline def setCheckResource(value: (String, String) => Boolean): Self = StObject.set(x, "checkResource", js.Any.fromFunction2(value))
   }

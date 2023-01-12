@@ -39,7 +39,8 @@ object IEntityType {
     __obj.asInstanceOf[IEntityType]
   }
   
-  extension [Self <: IEntityType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEntityType] (val x: Self) extends AnyVal {
     
     inline def setAutoExpansionMode(
       value: AutoExpansionMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.EntityType.AutoExpansionMode * / any */ String)

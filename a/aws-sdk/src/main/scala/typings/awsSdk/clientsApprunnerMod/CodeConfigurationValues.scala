@@ -38,7 +38,8 @@ object CodeConfigurationValues {
     __obj.asInstanceOf[CodeConfigurationValues]
   }
   
-  extension [Self <: CodeConfigurationValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeConfigurationValues] (val x: Self) extends AnyVal {
     
     inline def setBuildCommand(value: BuildCommand): Self = StObject.set(x, "BuildCommand", value.asInstanceOf[js.Any])
     

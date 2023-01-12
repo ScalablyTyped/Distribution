@@ -50,7 +50,8 @@ object ExceptionHandlingScope {
     __obj.asInstanceOf[ExceptionHandlingScope]
   }
   
-  extension [Self <: ExceptionHandlingScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExceptionHandlingScope] (val x: Self) extends AnyVal {
     
     inline def setGet_errorMessage(value: () => String): Self = StObject.set(x, "get_errorMessage", js.Any.fromFunction0(value))
     

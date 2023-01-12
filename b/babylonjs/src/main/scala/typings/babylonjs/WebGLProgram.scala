@@ -23,7 +23,8 @@ object WebGLProgram {
     __obj.asInstanceOf[WebGLProgram]
   }
   
-  extension [Self <: WebGLProgram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLProgram] (val x: Self) extends AnyVal {
     
     inline def set__SPECTOR_rebuildProgram(
       value: (/* vertexSourceCode */ String, /* fragmentSourceCode */ String, /* onCompiled */ js.Function1[WebGLProgram, Unit], /* onError */ js.Function1[/* message */ String, Unit]) => Unit

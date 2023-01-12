@@ -193,7 +193,8 @@ object ojtimeaxisMod {
         __obj.asInstanceOf[Converters]
       }
       
-      extension [Self <: Converters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Converters] (val x: Self) extends AnyVal {
         
         inline def setDays(value: Converter[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
         
@@ -361,7 +362,8 @@ object ojtimeaxisMod {
       __obj.asInstanceOf[ojTimeAxisEventMap]
     }
     
-    extension [Self <: ojTimeAxisEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTimeAxisEventMap] (val x: Self) extends AnyVal {
       
       inline def setConverterChanged(value: JetElementCustomEvent[Converters | Converter[String]]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
       
@@ -402,7 +404,8 @@ object ojtimeaxisMod {
       __obj.asInstanceOf[ojTimeAxisSettableProperties]
     }
     
-    extension [Self <: ojTimeAxisSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTimeAxisSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setConverter(value: Converters | Converter[String]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
       
@@ -440,7 +443,8 @@ object ojtimeaxisMod {
       __obj.asInstanceOf[ojTimeAxisSettablePropertiesLenient]
     }
     
-    extension [Self <: ojTimeAxisSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTimeAxisSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setConverter(value: Converters | Converter[String]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object BusinessChainSearchTerms {
     __obj.asInstanceOf[BusinessChainSearchTerms]
   }
   
-  extension [Self <: BusinessChainSearchTerms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessChainSearchTerms] (val x: Self) extends AnyVal {
     
     inline def setBusinessChainQuery(value: String): Self = StObject.set(x, "businessChainQuery", value.asInstanceOf[js.Any])
     

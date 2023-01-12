@@ -19,7 +19,8 @@ object AnalyticsCallOptions {
     __obj.asInstanceOf[AnalyticsCallOptions]
   }
   
-  extension [Self <: AnalyticsCallOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyticsCallOptions] (val x: Self) extends AnyVal {
     
     inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
   }

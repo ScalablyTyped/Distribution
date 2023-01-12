@@ -23,7 +23,8 @@ object ListTagBindingsResponse {
     __obj.asInstanceOf[ListTagBindingsResponse]
   }
   
-  extension [Self <: ListTagBindingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagBindingsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

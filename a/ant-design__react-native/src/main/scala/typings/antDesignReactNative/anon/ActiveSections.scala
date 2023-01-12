@@ -15,7 +15,8 @@ object ActiveSections {
     __obj.asInstanceOf[ActiveSections]
   }
   
-  extension [Self <: ActiveSections](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveSections] (val x: Self) extends AnyVal {
     
     inline def setActiveSections(value: js.Array[Double]): Self = StObject.set(x, "activeSections", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object NDEFRecord {
     __obj.asInstanceOf[NDEFRecord]
   }
   
-  extension [Self <: NDEFRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NDEFRecord] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.typedarray.DataView): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

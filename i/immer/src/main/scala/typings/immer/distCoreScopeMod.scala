@@ -49,7 +49,8 @@ object distCoreScopeMod {
       __obj.asInstanceOf[ImmerScope]
     }
     
-    extension [Self <: ImmerScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImmerScope] (val x: Self) extends AnyVal {
       
       inline def setCanAutoFreeze_(value: Boolean): Self = StObject.set(x, "canAutoFreeze_", value.asInstanceOf[js.Any])
       

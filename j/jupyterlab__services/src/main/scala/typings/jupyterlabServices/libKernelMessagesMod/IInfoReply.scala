@@ -35,7 +35,8 @@ object IInfoReply {
     __obj.asInstanceOf[IInfoReply]
   }
   
-  extension [Self <: IInfoReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInfoReply] (val x: Self) extends AnyVal {
     
     inline def setBanner(value: String): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
     

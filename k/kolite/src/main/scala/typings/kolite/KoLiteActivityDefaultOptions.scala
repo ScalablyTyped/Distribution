@@ -19,7 +19,8 @@ object KoLiteActivityDefaultOptions {
     __obj.asInstanceOf[KoLiteActivityDefaultOptions]
   }
   
-  extension [Self <: KoLiteActivityDefaultOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KoLiteActivityDefaultOptions] (val x: Self) extends AnyVal {
     
     inline def setActivityClass(value: String): Self = StObject.set(x, "activityClass", value.asInstanceOf[js.Any])
     

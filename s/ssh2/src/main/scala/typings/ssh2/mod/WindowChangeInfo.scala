@@ -25,7 +25,8 @@ object WindowChangeInfo {
     __obj.asInstanceOf[WindowChangeInfo]
   }
   
-  extension [Self <: WindowChangeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowChangeInfo] (val x: Self) extends AnyVal {
     
     inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     

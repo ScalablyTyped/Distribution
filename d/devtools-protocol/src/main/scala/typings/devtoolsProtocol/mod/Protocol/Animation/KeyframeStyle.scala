@@ -23,7 +23,8 @@ object KeyframeStyle {
     __obj.asInstanceOf[KeyframeStyle]
   }
   
-  extension [Self <: KeyframeStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyframeStyle] (val x: Self) extends AnyVal {
     
     inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     

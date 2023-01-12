@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[AnchorCount]
     }
     
-    extension [Self <: AnchorCount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnchorCount] (val x: Self) extends AnyVal {
       
       inline def setAnchorCount(value: Double): Self = StObject.set(x, "anchorCount", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[BorderStyle]
     }
     
-    extension [Self <: BorderStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderStyle] (val x: Self) extends AnyVal {
       
       inline def setBorderStyle(value: String): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object anon {
       __obj.asInstanceOf[Each]
     }
     
-    extension [Self <: Each](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Each] (val x: Self) extends AnyVal {
       
       inline def setEach(value: js.Function1[/* conn */ Connection, Unit] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
     }
@@ -118,7 +121,8 @@ object anon {
       __obj.asInstanceOf[Faces]
     }
     
-    extension [Self <: Faces](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Faces] (val x: Self) extends AnyVal {
       
       inline def setFaces(value: js.Array[ContinuousAnchorFace]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
       

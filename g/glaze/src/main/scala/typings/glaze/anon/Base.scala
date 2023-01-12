@@ -30,7 +30,8 @@ object Base {
     __obj.asInstanceOf[Base]
   }
   
-  extension [Self <: Base](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
     
     inline def set1(value: typings.glaze.glazeInts.`1`): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     

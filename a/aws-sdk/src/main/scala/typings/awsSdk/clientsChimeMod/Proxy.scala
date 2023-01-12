@@ -33,7 +33,8 @@ object Proxy {
     __obj.asInstanceOf[Proxy]
   }
   
-  extension [Self <: Proxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Proxy] (val x: Self) extends AnyVal {
     
     inline def setDefaultSessionExpiryMinutes(value: Integer): Self = StObject.set(x, "DefaultSessionExpiryMinutes", value.asInstanceOf[js.Any])
     

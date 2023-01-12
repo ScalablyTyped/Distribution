@@ -43,7 +43,8 @@ object IncludeDeleted {
     __obj.asInstanceOf[IncludeDeleted]
   }
   
-  extension [Self <: IncludeDeleted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeDeleted] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object OverrideButtonConfiguration {
     __obj.asInstanceOf[OverrideButtonConfiguration]
   }
   
-  extension [Self <: OverrideButtonConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverrideButtonConfiguration] (val x: Self) extends AnyVal {
     
     inline def setButtonAction(value: ButtonAction): Self = StObject.set(x, "ButtonAction", value.asInstanceOf[js.Any])
     

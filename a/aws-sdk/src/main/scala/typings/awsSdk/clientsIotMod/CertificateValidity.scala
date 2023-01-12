@@ -23,7 +23,8 @@ object CertificateValidity {
     __obj.asInstanceOf[CertificateValidity]
   }
   
-  extension [Self <: CertificateValidity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateValidity] (val x: Self) extends AnyVal {
     
     inline def setNotAfter(value: js.Date): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
     

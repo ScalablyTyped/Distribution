@@ -18,7 +18,8 @@ object DeleteApplicationRequest {
     __obj.asInstanceOf[DeleteApplicationRequest]
   }
   
-  extension [Self <: DeleteApplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteApplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
   }

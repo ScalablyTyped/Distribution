@@ -69,7 +69,8 @@ object PickImplmaxLengthPartialP {
     __obj.asInstanceOf[PickImplmaxLengthPartialP]
   }
   
-  extension [Self <: PickImplmaxLengthPartialP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplmaxLengthPartialP] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

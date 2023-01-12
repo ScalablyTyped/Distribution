@@ -43,7 +43,8 @@ object PortInfo {
     __obj.asInstanceOf[PortInfo]
   }
   
-  extension [Self <: PortInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortInfo] (val x: Self) extends AnyVal {
     
     inline def setCidrListAliases(value: StringList): Self = StObject.set(x, "cidrListAliases", value.asInstanceOf[js.Any])
     

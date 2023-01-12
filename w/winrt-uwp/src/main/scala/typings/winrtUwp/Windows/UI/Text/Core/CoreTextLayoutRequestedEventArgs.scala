@@ -17,7 +17,8 @@ object CoreTextLayoutRequestedEventArgs {
     __obj.asInstanceOf[CoreTextLayoutRequestedEventArgs]
   }
   
-  extension [Self <: CoreTextLayoutRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreTextLayoutRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: CoreTextLayoutRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }

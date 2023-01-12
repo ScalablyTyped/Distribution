@@ -790,7 +790,8 @@ object PlotHeatmapOptions {
     __obj.asInstanceOf[PlotHeatmapOptions]
   }
   
-  extension [Self <: PlotHeatmapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHeatmapOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

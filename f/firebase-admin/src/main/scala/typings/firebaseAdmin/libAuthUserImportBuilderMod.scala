@@ -104,7 +104,8 @@ object libAuthUserImportBuilderMod {
       __obj.asInstanceOf[AuthFactorInfo]
     }
     
-    extension [Self <: AuthFactorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthFactorInfo] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -196,7 +197,8 @@ object libAuthUserImportBuilderMod {
       __obj.asInstanceOf[UploadAccountOptions]
     }
     
-    extension [Self <: UploadAccountOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadAccountOptions] (val x: Self) extends AnyVal {
       
       inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       
@@ -249,7 +251,8 @@ object libAuthUserImportBuilderMod {
       __obj.asInstanceOf[UploadAccountRequest]
     }
     
-    extension [Self <: UploadAccountRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadAccountRequest] (val x: Self) extends AnyVal {
       
       inline def setUsers(value: js.Array[UploadAccountUser]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
@@ -299,7 +302,8 @@ object libAuthUserImportBuilderMod {
       __obj.asInstanceOf[UploadAccountUser]
     }
     
-    extension [Self <: UploadAccountUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadAccountUser] (val x: Self) extends AnyVal {
       
       inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
@@ -379,7 +383,8 @@ object libAuthUserImportBuilderMod {
       __obj.asInstanceOf[UserImportOptions]
     }
     
-    extension [Self <: UserImportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserImportOptions] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Algorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     }
@@ -473,7 +478,8 @@ object libAuthUserImportBuilderMod {
       __obj.asInstanceOf[UserImportRecord]
     }
     
-    extension [Self <: UserImportRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserImportRecord] (val x: Self) extends AnyVal {
       
       inline def setCustomClaims(value: StringDictionary[Any]): Self = StObject.set(x, "customClaims", value.asInstanceOf[js.Any])
       
@@ -558,7 +564,8 @@ object libAuthUserImportBuilderMod {
       __obj.asInstanceOf[UserImportResult]
     }
     
-    extension [Self <: UserImportResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserImportResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[FirebaseArrayIndexError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -589,7 +596,8 @@ object libAuthUserImportBuilderMod {
       __obj.asInstanceOf[UserMetadataRequest]
     }
     
-    extension [Self <: UserMetadataRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserMetadataRequest] (val x: Self) extends AnyVal {
       
       inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
       
@@ -640,7 +648,8 @@ object libAuthUserImportBuilderMod {
       __obj.asInstanceOf[UserProviderRequest]
     }
     
-    extension [Self <: UserProviderRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserProviderRequest] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object ContentTypeId {
     __obj.asInstanceOf[ContentTypeId]
   }
   
-  extension [Self <: ContentTypeId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentTypeId] (val x: Self) extends AnyVal {
     
     inline def setGet_stringValue(value: () => String): Self = StObject.set(x, "get_stringValue", js.Any.fromFunction0(value))
   }

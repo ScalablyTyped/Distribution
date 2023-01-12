@@ -16,7 +16,8 @@ object IConsensusInitializeBlockRequest {
     __obj.asInstanceOf[IConsensusInitializeBlockRequest]
   }
   
-  extension [Self <: IConsensusInitializeBlockRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusInitializeBlockRequest] (val x: Self) extends AnyVal {
     
     inline def setPreviousId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "previousId", value.asInstanceOf[js.Any])
     

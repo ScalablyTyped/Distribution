@@ -20,7 +20,8 @@ object Auth0LockAvatarOptions {
     __obj.asInstanceOf[Auth0LockAvatarOptions]
   }
   
-  extension [Self <: Auth0LockAvatarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0LockAvatarOptions] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: (String, Auth0LockAvatarDisplayNameCallback) => Unit): Self = StObject.set(x, "displayName", js.Any.fromFunction2(value))
     

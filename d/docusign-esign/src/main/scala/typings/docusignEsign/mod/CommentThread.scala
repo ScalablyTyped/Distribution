@@ -582,7 +582,8 @@ object CommentThread {
     __obj.asInstanceOf[CommentThread]
   }
   
-  extension [Self <: CommentThread](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentThread] (val x: Self) extends AnyVal {
     
     inline def setAnchorAllowWhiteSpaceInCharacters(value: String): Self = StObject.set(x, "anchorAllowWhiteSpaceInCharacters", value.asInstanceOf[js.Any])
     

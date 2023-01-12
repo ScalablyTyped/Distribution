@@ -21,7 +21,8 @@ object RoomStatusTemporary {
     __obj.asInstanceOf[RoomStatusTemporary]
   }
   
-  extension [Self <: RoomStatusTemporary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoomStatusTemporary] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: novice | respawn): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MlAnalysisLimits {
     __obj.asInstanceOf[MlAnalysisLimits]
   }
   
-  extension [Self <: MlAnalysisLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlAnalysisLimits] (val x: Self) extends AnyVal {
     
     inline def setCategorization_examples_limit(value: long): Self = StObject.set(x, "categorization_examples_limit", value.asInstanceOf[js.Any])
     

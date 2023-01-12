@@ -61,7 +61,8 @@ object ASPxClientControl {
     __obj.asInstanceOf[ASPxClientControl]
   }
   
-  extension [Self <: ASPxClientControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientControl] (val x: Self) extends AnyVal {
     
     inline def setAdjustControl(value: () => Unit): Self = StObject.set(x, "AdjustControl", js.Any.fromFunction0(value))
     

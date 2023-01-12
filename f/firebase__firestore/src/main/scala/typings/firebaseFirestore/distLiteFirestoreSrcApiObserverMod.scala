@@ -34,7 +34,8 @@ object distLiteFirestoreSrcApiObserverMod {
       __obj.asInstanceOf[PartialObserver[T]]
     }
     
-    extension [Self <: PartialObserver[?], T](x: Self & PartialObserver[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialObserver[?], T] (val x: Self & PartialObserver[T]) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       

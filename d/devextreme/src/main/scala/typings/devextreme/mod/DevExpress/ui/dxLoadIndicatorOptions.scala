@@ -20,7 +20,8 @@ object dxLoadIndicatorOptions {
     __obj.asInstanceOf[dxLoadIndicatorOptions]
   }
   
-  extension [Self <: dxLoadIndicatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxLoadIndicatorOptions] (val x: Self) extends AnyVal {
     
     inline def setIndicatorSrc(value: String): Self = StObject.set(x, "indicatorSrc", value.asInstanceOf[js.Any])
     

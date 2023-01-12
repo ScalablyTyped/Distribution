@@ -17,7 +17,8 @@ object FullyLoadedChangeTiledImageEvent {
     __obj.asInstanceOf[FullyLoadedChangeTiledImageEvent]
   }
   
-  extension [Self <: FullyLoadedChangeTiledImageEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullyLoadedChangeTiledImageEvent] (val x: Self) extends AnyVal {
     
     inline def setFullyLoaded(value: Boolean): Self = StObject.set(x, "fullyLoaded", value.asInstanceOf[js.Any])
   }

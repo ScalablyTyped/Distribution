@@ -16,7 +16,8 @@ object TargetSslProxiesSetProxyHeaderRequest {
     __obj.asInstanceOf[TargetSslProxiesSetProxyHeaderRequest]
   }
   
-  extension [Self <: TargetSslProxiesSetProxyHeaderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetSslProxiesSetProxyHeaderRequest] (val x: Self) extends AnyVal {
     
     inline def setProxyHeader(value: String): Self = StObject.set(x, "proxyHeader", value.asInstanceOf[js.Any])
     

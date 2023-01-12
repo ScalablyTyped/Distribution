@@ -22,7 +22,8 @@ object UnorderedListToken {
     __obj.asInstanceOf[UnorderedListToken]
   }
   
-  extension [Self <: UnorderedListToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnorderedListToken] (val x: Self) extends AnyVal {
     
     inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

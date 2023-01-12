@@ -26,7 +26,8 @@ object TFontFamilyTypes {
     __obj.asInstanceOf[TFontFamilyTypes]
   }
   
-  extension [Self <: TFontFamilyTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TFontFamilyTypes] (val x: Self) extends AnyVal {
     
     inline def setBold(value: PDFFontSource): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DescribeStacksInput {
     __obj.asInstanceOf[DescribeStacksInput]
   }
   
-  extension [Self <: DescribeStacksInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStacksInput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

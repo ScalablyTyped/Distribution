@@ -29,7 +29,8 @@ object CroppingParameters {
     __obj.asInstanceOf[CroppingParameters]
   }
   
-  extension [Self <: CroppingParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CroppingParameters] (val x: Self) extends AnyVal {
     
     inline def setCropping(value: Boolean): Self = StObject.set(x, "cropping", value.asInstanceOf[js.Any])
     

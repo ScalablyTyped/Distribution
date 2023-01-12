@@ -138,7 +138,8 @@ object Clip {
     __obj.asInstanceOf[Clip]
   }
   
-  extension [Self <: Clip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Clip] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object JQuerySmartwizard {
       __obj.asInstanceOf[AnchorSettings]
     }
     
-    extension [Self <: AnchorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnchorSettings] (val x: Self) extends AnyVal {
       
       inline def setAnchorClickable(value: Boolean): Self = StObject.set(x, "anchorClickable", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object JQuerySmartwizard {
       __obj.asInstanceOf[KeyboardSettings]
     }
     
-    extension [Self <: KeyboardSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardSettings] (val x: Self) extends AnyVal {
       
       inline def setKeyLeft(value: js.Array[Double]): Self = StObject.set(x, "keyLeft", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object JQuerySmartwizard {
       __obj.asInstanceOf[LangSettings]
     }
     
-    extension [Self <: LangSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LangSettings] (val x: Self) extends AnyVal {
       
       inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
@@ -259,7 +262,8 @@ object JQuerySmartwizard {
       __obj.asInstanceOf[SmartWizardOptions]
     }
     
-    extension [Self <: SmartWizardOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmartWizardOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchorSettings(value: AnchorSettings): Self = StObject.set(x, "anchorSettings", value.asInstanceOf[js.Any])
       
@@ -408,7 +412,8 @@ object JQuerySmartwizard {
       __obj.asInstanceOf[ToolbarSettings]
     }
     
-    extension [Self <: ToolbarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarSettings] (val x: Self) extends AnyVal {
       
       inline def setShowNextButton(value: Boolean): Self = StObject.set(x, "showNextButton", value.asInstanceOf[js.Any])
       
@@ -485,7 +490,8 @@ object JQuerySmartwizard {
       __obj.asInstanceOf[TransitionSettings]
     }
     
-    extension [Self <: TransitionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionSettings] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: TransitionAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object DefaultNodeName {
     __obj.asInstanceOf[DefaultNodeName]
   }
   
-  extension [Self <: DefaultNodeName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultNodeName] (val x: Self) extends AnyVal {
     
     inline def setDefaultNodeName(value: String): Self = StObject.set(x, "defaultNodeName", value.asInstanceOf[js.Any])
     

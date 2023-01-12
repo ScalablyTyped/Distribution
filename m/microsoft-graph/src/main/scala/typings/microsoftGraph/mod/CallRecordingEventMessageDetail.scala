@@ -36,7 +36,8 @@ object CallRecordingEventMessageDetail {
     __obj.asInstanceOf[CallRecordingEventMessageDetail]
   }
   
-  extension [Self <: CallRecordingEventMessageDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallRecordingEventMessageDetail] (val x: Self) extends AnyVal {
     
     inline def setCallId(value: NullableOption[String]): Self = StObject.set(x, "callId", value.asInstanceOf[js.Any])
     

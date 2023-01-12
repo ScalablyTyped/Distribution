@@ -17,7 +17,8 @@ object Cli {
     __obj.asInstanceOf[Cli]
   }
   
-  extension [Self <: Cli](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cli] (val x: Self) extends AnyVal {
     
     inline def setCli(value: String): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object INodeStore {
     __obj.asInstanceOf[INodeStore]
   }
   
-  extension [Self <: INodeStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INodeStore] (val x: Self) extends AnyVal {
     
     inline def setIsExpandingOrCollapsing(value: Double): Self = StObject.set(x, "isExpandingOrCollapsing", value.asInstanceOf[js.Any])
     

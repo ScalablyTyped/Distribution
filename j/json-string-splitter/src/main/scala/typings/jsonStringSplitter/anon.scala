@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Jsons]
     }
     
-    extension [Self <: Jsons](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Jsons] (val x: Self) extends AnyVal {
       
       inline def setJsons(value: js.Array[String]): Self = StObject.set(x, "jsons", value.asInstanceOf[js.Any])
       

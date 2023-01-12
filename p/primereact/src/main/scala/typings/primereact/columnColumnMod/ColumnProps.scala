@@ -178,7 +178,8 @@ object ColumnProps {
     __obj.asInstanceOf[ColumnProps]
   }
   
-  extension [Self <: ColumnProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: ColumnAlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

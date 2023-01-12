@@ -38,7 +38,8 @@ object ManagedScaling {
     __obj.asInstanceOf[ManagedScaling]
   }
   
-  extension [Self <: ManagedScaling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedScaling] (val x: Self) extends AnyVal {
     
     inline def setInstanceWarmupPeriod(value: ManagedScalingInstanceWarmupPeriod): Self = StObject.set(x, "instanceWarmupPeriod", value.asInstanceOf[js.Any])
     

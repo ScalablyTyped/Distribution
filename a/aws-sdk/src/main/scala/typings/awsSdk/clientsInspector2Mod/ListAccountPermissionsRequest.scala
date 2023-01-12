@@ -28,7 +28,8 @@ object ListAccountPermissionsRequest {
     __obj.asInstanceOf[ListAccountPermissionsRequest]
   }
   
-  extension [Self <: ListAccountPermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccountPermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListAccountPermissionsMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

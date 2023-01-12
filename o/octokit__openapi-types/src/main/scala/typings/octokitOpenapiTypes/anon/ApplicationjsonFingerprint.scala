@@ -17,7 +17,8 @@ object ApplicationjsonFingerprint {
     __obj.asInstanceOf[ApplicationjsonFingerprint]
   }
   
-  extension [Self <: ApplicationjsonFingerprint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonFingerprint] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Fingerprint): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object EndRecord {
     __obj.asInstanceOf[EndRecord]
   }
   
-  extension [Self <: EndRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndRecord] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     

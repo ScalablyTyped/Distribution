@@ -23,7 +23,8 @@ object ASPxClientGridViewRowCancelEventArgs {
     __obj.asInstanceOf[ASPxClientGridViewRowCancelEventArgs]
   }
   
-  extension [Self <: ASPxClientGridViewRowCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGridViewRowCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }

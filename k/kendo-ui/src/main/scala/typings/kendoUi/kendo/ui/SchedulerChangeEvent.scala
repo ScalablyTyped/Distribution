@@ -25,7 +25,8 @@ object SchedulerChangeEvent {
     __obj.asInstanceOf[SchedulerChangeEvent]
   }
   
-  extension [Self <: SchedulerChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

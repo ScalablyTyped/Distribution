@@ -83,7 +83,8 @@ object libLockModelsMod {
       __obj.asInstanceOf[ManagementLockOwner]
     }
     
-    extension [Self <: ManagementLockOwner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManagementLockOwner] (val x: Self) extends AnyVal {
       
       inline def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object libLockModelsMod {
       __obj.asInstanceOf[Operation]
     }
     
-    extension [Self <: Operation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: OperationDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object libLockModelsMod {
       __obj.asInstanceOf[OperationDisplay]
     }
     
-    extension [Self <: OperationDisplay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationDisplay] (val x: Self) extends AnyVal {
       
       inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       

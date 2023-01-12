@@ -23,7 +23,8 @@ object PartialMatch {
     __obj.asInstanceOf[PartialMatch]
   }
   
-  extension [Self <: PartialMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMatch] (val x: Self) extends AnyVal {
     
     inline def setReference(value: ReferenceRule): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
     

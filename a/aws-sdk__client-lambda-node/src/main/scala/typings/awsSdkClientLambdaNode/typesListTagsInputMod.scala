@@ -46,7 +46,8 @@ object typesListTagsInputMod {
       __obj.asInstanceOf[ListTagsInput]
     }
     
-    extension [Self <: ListTagsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListTagsInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

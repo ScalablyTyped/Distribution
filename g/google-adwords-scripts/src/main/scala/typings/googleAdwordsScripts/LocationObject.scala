@@ -17,7 +17,8 @@ object LocationObject {
     __obj.asInstanceOf[LocationObject]
   }
   
-  extension [Self <: LocationObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationObject] (val x: Self) extends AnyVal {
     
     inline def setBidModifier(value: Double): Self = StObject.set(x, "bidModifier", value.asInstanceOf[js.Any])
     

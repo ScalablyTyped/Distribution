@@ -36,7 +36,8 @@ object outOptionsMsiOptionsMod {
       __obj.asInstanceOf[MsiOptions]
     }
     
-    extension [Self <: MsiOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MsiOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalWixArgs(value: js.Array[String]): Self = StObject.set(x, "additionalWixArgs", value.asInstanceOf[js.Any])
       

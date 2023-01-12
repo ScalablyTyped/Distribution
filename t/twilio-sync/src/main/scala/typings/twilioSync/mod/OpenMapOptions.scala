@@ -20,7 +20,8 @@ object OpenMapOptions {
     __obj.asInstanceOf[OpenMapOptions]
   }
   
-  extension [Self <: OpenMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenMapOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeItems(value: Boolean): Self = StObject.set(x, "includeItems", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListAppMonitorsRequest {
     __obj.asInstanceOf[ListAppMonitorsRequest]
   }
   
-  extension [Self <: ListAppMonitorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAppMonitorsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResultsInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

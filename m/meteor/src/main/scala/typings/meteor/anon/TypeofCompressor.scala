@@ -24,7 +24,8 @@ object TypeofCompressor {
     __obj.asInstanceOf[TypeofCompressor]
   }
   
-  extension [Self <: TypeofCompressor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCompressor] (val x: Self) extends AnyVal {
     
     inline def setNone(value: typings.meteor.meteorInts.`0`): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     

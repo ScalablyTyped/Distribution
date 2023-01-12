@@ -19,7 +19,8 @@ object FoilBadgeLavel {
     __obj.asInstanceOf[FoilBadgeLavel]
   }
   
-  extension [Self <: FoilBadgeLavel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoilBadgeLavel] (val x: Self) extends AnyVal {
     
     inline def setFoilBadgeLavel(value: Double): Self = StObject.set(x, "foilBadgeLavel", value.asInstanceOf[js.Any])
     

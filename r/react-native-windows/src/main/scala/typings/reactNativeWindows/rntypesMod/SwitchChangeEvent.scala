@@ -39,7 +39,8 @@ object SwitchChangeEvent {
     __obj.asInstanceOf[SwitchChangeEvent]
   }
   
-  extension [Self <: SwitchChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

@@ -81,7 +81,8 @@ object RelationshipProperties {
     __obj.asInstanceOf[RelationshipProperties]
   }
   
-  extension [Self <: RelationshipProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationshipProperties] (val x: Self) extends AnyVal {
     
     inline def setCardinality(value: `one-to-one` | `one-to-many` | `many-to-many`): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
     

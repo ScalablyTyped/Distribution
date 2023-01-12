@@ -26,7 +26,8 @@ object GoogleCloudDialogflowCxV3ExportAgentRequest {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ExportAgentRequest]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ExportAgentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ExportAgentRequest] (val x: Self) extends AnyVal {
     
     inline def setAgentUri(value: String): Self = StObject.set(x, "agentUri", value.asInstanceOf[js.Any])
     

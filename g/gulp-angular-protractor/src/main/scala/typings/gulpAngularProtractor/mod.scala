@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object mod {
       __obj.asInstanceOf[WebDriverStart]
     }
     
-    extension [Self <: WebDriverStart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebDriverStart] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object mod {
       __obj.asInstanceOf[WebDriverUpdate]
     }
     
-    extension [Self <: WebDriverUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebDriverUpdate] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

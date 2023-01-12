@@ -23,7 +23,8 @@ object IRectangle {
     __obj.asInstanceOf[IRectangle]
   }
   
-  extension [Self <: IRectangle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRectangle] (val x: Self) extends AnyVal {
     
     inline def setContains(value: IPoint => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     

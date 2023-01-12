@@ -18,7 +18,8 @@ object ModifyTransitGatewayPrefixListReferenceResult {
     __obj.asInstanceOf[ModifyTransitGatewayPrefixListReferenceResult]
   }
   
-  extension [Self <: ModifyTransitGatewayPrefixListReferenceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyTransitGatewayPrefixListReferenceResult] (val x: Self) extends AnyVal {
     
     inline def setTransitGatewayPrefixListReference(value: TransitGatewayPrefixListReference): Self = StObject.set(x, "TransitGatewayPrefixListReference", value.asInstanceOf[js.Any])
     

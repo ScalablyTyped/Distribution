@@ -36,7 +36,8 @@ object SelectFileOptions {
     __obj.asInstanceOf[SelectFileOptions]
   }
   
-  extension [Self <: SelectFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectFileOptions] (val x: Self) extends AnyVal {
     
     inline def setAction(value: select | `drag-drop`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }

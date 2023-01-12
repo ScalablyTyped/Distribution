@@ -33,7 +33,8 @@ object AssociateRepositoryRequest {
     __obj.asInstanceOf[AssociateRepositoryRequest]
   }
   
-  extension [Self <: AssociateRepositoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateRepositoryRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

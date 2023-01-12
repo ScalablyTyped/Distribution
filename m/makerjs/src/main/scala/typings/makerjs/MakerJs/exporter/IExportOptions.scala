@@ -26,7 +26,8 @@ object IExportOptions {
     __obj.asInstanceOf[IExportOptions]
   }
   
-  extension [Self <: IExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExportOptions] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

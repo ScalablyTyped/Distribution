@@ -51,7 +51,8 @@ object SymbolTableElementInfo {
     __obj.asInstanceOf[SymbolTableElementInfo]
   }
   
-  extension [Self <: SymbolTableElementInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolTableElementInfo] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String | RampTitle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

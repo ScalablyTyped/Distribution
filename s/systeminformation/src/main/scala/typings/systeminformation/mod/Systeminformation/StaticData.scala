@@ -54,7 +54,8 @@ object StaticData {
     __obj.asInstanceOf[StaticData]
   }
   
-  extension [Self <: StaticData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticData] (val x: Self) extends AnyVal {
     
     inline def setBaseboard(value: BaseboardData): Self = StObject.set(x, "baseboard", value.asInstanceOf[js.Any])
     

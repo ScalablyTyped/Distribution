@@ -23,7 +23,8 @@ object LineItemAssetInformation {
     __obj.asInstanceOf[LineItemAssetInformation]
   }
   
-  extension [Self <: LineItemAssetInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineItemAssetInformation] (val x: Self) extends AnyVal {
     
     inline def setAssetId(value: AssetId): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
     

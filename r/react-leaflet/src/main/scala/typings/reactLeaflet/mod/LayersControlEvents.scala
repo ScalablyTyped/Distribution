@@ -20,7 +20,8 @@ object LayersControlEvents {
     __obj.asInstanceOf[LayersControlEvents]
   }
   
-  extension [Self <: LayersControlEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayersControlEvents] (val x: Self) extends AnyVal {
     
     inline def setOnbaselayerchange(value: /* event */ LayersControlEvent => Unit): Self = StObject.set(x, "onbaselayerchange", js.Any.fromFunction1(value))
     

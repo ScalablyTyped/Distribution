@@ -26,7 +26,8 @@ object SetVariableArguments {
     __obj.asInstanceOf[SetVariableArguments]
   }
   
-  extension [Self <: SetVariableArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetVariableArguments] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: ValueFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

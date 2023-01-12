@@ -48,7 +48,8 @@ object InstanceInfo {
     __obj.asInstanceOf[InstanceInfo]
   }
   
-  extension [Self <: InstanceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceInfo] (val x: Self) extends AnyVal {
     
     inline def setDeregisterTime(value: js.Date): Self = StObject.set(x, "deregisterTime", value.asInstanceOf[js.Any])
     

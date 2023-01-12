@@ -21,7 +21,8 @@ object RateLimit {
     __obj.asInstanceOf[RateLimit]
   }
   
-  extension [Self <: RateLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RateLimit] (val x: Self) extends AnyVal {
     
     inline def setCallsMade(value: Double): Self = StObject.set(x, "callsMade", value.asInstanceOf[js.Any])
     

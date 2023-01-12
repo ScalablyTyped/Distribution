@@ -30,7 +30,8 @@ object FieldModel {
     __obj.asInstanceOf[FieldModel]
   }
   
-  extension [Self <: FieldModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldModel] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: js.Array[Annotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

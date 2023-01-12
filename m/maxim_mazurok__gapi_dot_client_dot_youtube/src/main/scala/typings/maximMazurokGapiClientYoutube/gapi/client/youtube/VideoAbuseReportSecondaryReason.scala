@@ -19,7 +19,8 @@ object VideoAbuseReportSecondaryReason {
     __obj.asInstanceOf[VideoAbuseReportSecondaryReason]
   }
   
-  extension [Self <: VideoAbuseReportSecondaryReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoAbuseReportSecondaryReason] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

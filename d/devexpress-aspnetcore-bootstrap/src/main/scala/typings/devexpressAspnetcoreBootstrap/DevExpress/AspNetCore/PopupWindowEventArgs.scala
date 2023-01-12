@@ -17,7 +17,8 @@ object PopupWindowEventArgs {
     __obj.asInstanceOf[PopupWindowEventArgs]
   }
   
-  extension [Self <: PopupWindowEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupWindowEventArgs] (val x: Self) extends AnyVal {
     
     inline def setWindow(value: BootstrapPopupWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
   }

@@ -44,7 +44,8 @@ object FeedbackDataInput {
     __obj.asInstanceOf[FeedbackDataInput]
   }
   
-  extension [Self <: FeedbackDataInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeedbackDataInput] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: ShortDoc): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object libChartsTimelineChartMod {
       __obj.asInstanceOf[ITimelineChartProps]
     }
     
-    extension [Self <: ITimelineChartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimelineChartProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Y1]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

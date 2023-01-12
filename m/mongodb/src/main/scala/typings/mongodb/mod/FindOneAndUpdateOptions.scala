@@ -40,7 +40,8 @@ object FindOneAndUpdateOptions {
     __obj.asInstanceOf[FindOneAndUpdateOptions]
   }
   
-  extension [Self <: FindOneAndUpdateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindOneAndUpdateOptions] (val x: Self) extends AnyVal {
     
     inline def setArrayFilters(value: js.Array[Document]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
     

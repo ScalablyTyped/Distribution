@@ -20,7 +20,8 @@ object L {
     __obj.asInstanceOf[L]
   }
   
-  extension [Self <: L](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: L] (val x: Self) extends AnyVal {
     
     inline def setH(value: typings.screeps.screepsStrings.UH): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
     

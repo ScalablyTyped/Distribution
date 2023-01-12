@@ -32,7 +32,8 @@ object StepInTarget {
     __obj.asInstanceOf[StepInTarget]
   }
   
-  extension [Self <: StepInTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepInTarget] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

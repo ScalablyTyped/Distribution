@@ -27,7 +27,8 @@ object IndicesSegmentsShardsSegment {
     __obj.asInstanceOf[IndicesSegmentsShardsSegment]
   }
   
-  extension [Self <: IndicesSegmentsShardsSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSegmentsShardsSegment] (val x: Self) extends AnyVal {
     
     inline def setNum_committed_segments(value: integer): Self = StObject.set(x, "num_committed_segments", value.asInstanceOf[js.Any])
     

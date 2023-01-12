@@ -79,7 +79,8 @@ object formLabelFormLabelMod extends Shortcut {
       __obj.asInstanceOf[FormLabelTypeMap[P, D]]
     }
     
-    extension [Self <: FormLabelTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (FormLabelTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormLabelTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (FormLabelTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: FormLabelClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

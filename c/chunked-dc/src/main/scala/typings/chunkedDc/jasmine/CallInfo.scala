@@ -23,7 +23,8 @@ object CallInfo {
     __obj.asInstanceOf[CallInfo]
   }
   
-  extension [Self <: CallInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallInfo] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[scala.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

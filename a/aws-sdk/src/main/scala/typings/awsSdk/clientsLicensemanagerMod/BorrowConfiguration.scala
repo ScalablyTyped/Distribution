@@ -23,7 +23,8 @@ object BorrowConfiguration {
     __obj.asInstanceOf[BorrowConfiguration]
   }
   
-  extension [Self <: BorrowConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorrowConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllowEarlyCheckIn(value: BoxBoolean): Self = StObject.set(x, "AllowEarlyCheckIn", value.asInstanceOf[js.Any])
     

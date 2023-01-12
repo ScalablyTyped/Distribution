@@ -30,7 +30,8 @@ object IStandaloneDiffEditorConstructionOptions {
     __obj.asInstanceOf[IStandaloneDiffEditorConstructionOptions]
   }
   
-  extension [Self <: IStandaloneDiffEditorConstructionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStandaloneDiffEditorConstructionOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoDetectHighContrast(value: Boolean): Self = StObject.set(x, "autoDetectHighContrast", value.asInstanceOf[js.Any])
     

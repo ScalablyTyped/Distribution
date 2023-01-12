@@ -23,7 +23,8 @@ object ActivityTypeDetail {
     __obj.asInstanceOf[ActivityTypeDetail]
   }
   
-  extension [Self <: ActivityTypeDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityTypeDetail] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: ActivityTypeConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

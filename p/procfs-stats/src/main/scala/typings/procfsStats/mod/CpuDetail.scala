@@ -44,7 +44,8 @@ object CpuDetail {
     __obj.asInstanceOf[CpuDetail]
   }
   
-  extension [Self <: CpuDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CpuDetail] (val x: Self) extends AnyVal {
     
     inline def setGuest(value: String): Self = StObject.set(x, "guest", value.asInstanceOf[js.Any])
     

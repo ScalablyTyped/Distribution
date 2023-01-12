@@ -55,7 +55,8 @@ object Logger {
     __obj.asInstanceOf[Logger]
   }
   
-  extension [Self <: Logger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: (String, /* repeated */ Any) => LogEntry): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
     

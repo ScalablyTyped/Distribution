@@ -23,7 +23,8 @@ object OnInputLifecycle {
     __obj.asInstanceOf[OnInputLifecycle]
   }
   
-  extension [Self <: OnInputLifecycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnInputLifecycle] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: Events): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

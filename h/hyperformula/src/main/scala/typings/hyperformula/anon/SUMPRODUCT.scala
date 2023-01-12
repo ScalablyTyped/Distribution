@@ -15,7 +15,8 @@ object SUMPRODUCT {
     __obj.asInstanceOf[SUMPRODUCT]
   }
   
-  extension [Self <: SUMPRODUCT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SUMPRODUCT] (val x: Self) extends AnyVal {
     
     inline def setSUMPRODUCT(value: MethodParametersRepeatLastArgs): Self = StObject.set(x, "SUMPRODUCT", value.asInstanceOf[js.Any])
   }

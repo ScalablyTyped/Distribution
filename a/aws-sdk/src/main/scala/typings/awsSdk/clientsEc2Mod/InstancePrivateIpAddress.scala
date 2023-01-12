@@ -33,7 +33,8 @@ object InstancePrivateIpAddress {
     __obj.asInstanceOf[InstancePrivateIpAddress]
   }
   
-  extension [Self <: InstancePrivateIpAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancePrivateIpAddress] (val x: Self) extends AnyVal {
     
     inline def setAssociation(value: InstanceNetworkInterfaceAssociation): Self = StObject.set(x, "Association", value.asInstanceOf[js.Any])
     

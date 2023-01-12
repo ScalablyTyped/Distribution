@@ -34,7 +34,8 @@ object protocolInvokeIprotocolMod {
       __obj.asInstanceOf[IProtocol]
     }
     
-    extension [Self <: IProtocol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProtocol] (val x: Self) extends AnyVal {
       
       inline def setReplyData(value: Invoke => Unit): Self = StObject.set(x, "replyData", js.Any.fromFunction1(value))
       

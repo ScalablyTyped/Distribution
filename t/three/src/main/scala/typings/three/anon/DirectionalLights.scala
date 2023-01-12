@@ -102,7 +102,8 @@ object DirectionalLights {
     __obj.asInstanceOf[DirectionalLights]
   }
   
-  extension [Self <: DirectionalLights](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionalLights] (val x: Self) extends AnyVal {
     
     inline def setAlphaMap(value: IUniform[Any]): Self = StObject.set(x, "alphaMap", value.asInstanceOf[js.Any])
     

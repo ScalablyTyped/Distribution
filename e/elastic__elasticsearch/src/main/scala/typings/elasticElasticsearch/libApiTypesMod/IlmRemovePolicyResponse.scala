@@ -17,7 +17,8 @@ object IlmRemovePolicyResponse {
     __obj.asInstanceOf[IlmRemovePolicyResponse]
   }
   
-  extension [Self <: IlmRemovePolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmRemovePolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setFailed_indexes(value: js.Array[IndexName]): Self = StObject.set(x, "failed_indexes", value.asInstanceOf[js.Any])
     

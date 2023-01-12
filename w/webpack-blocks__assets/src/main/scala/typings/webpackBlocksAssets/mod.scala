@@ -49,7 +49,8 @@ object mod {
         __obj.asInstanceOf[CssOptions]
       }
       
-      extension [Self <: CssOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CssOptions] (val x: Self) extends AnyVal {
         
         inline def setImport(value: Boolean | ImportFilter): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
         
@@ -96,7 +97,8 @@ object mod {
         __obj.asInstanceOf[FileOptions]
       }
       
-      extension [Self <: FileOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
         
         inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
@@ -176,7 +178,8 @@ object mod {
         __obj.asInstanceOf[ModuleOptions]
       }
       
-      extension [Self <: ModuleOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModuleOptions] (val x: Self) extends AnyVal {
         
         inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
@@ -233,7 +236,8 @@ object mod {
         __obj.asInstanceOf[ParseImportOptions]
       }
       
-      extension [Self <: ParseImportOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParseImportOptions] (val x: Self) extends AnyVal {
         
         inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
         
@@ -260,7 +264,8 @@ object mod {
         __obj.asInstanceOf[UrlOptions]
       }
       
-      extension [Self <: UrlOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UrlOptions] (val x: Self) extends AnyVal {
         
         inline def setFallback(value: String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
         

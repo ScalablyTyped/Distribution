@@ -31,7 +31,8 @@ object XControlAccess {
     __obj.asInstanceOf[XControlAccess]
   }
   
-  extension [Self <: XControlAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XControlAccess] (val x: Self) extends AnyVal {
     
     inline def setGetControl(value: XControlModel => XControl): Self = StObject.set(x, "getControl", js.Any.fromFunction1(value))
   }

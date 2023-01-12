@@ -73,7 +73,8 @@ object XParagraphCursor {
     __obj.asInstanceOf[XParagraphCursor]
   }
   
-  extension [Self <: XParagraphCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XParagraphCursor] (val x: Self) extends AnyVal {
     
     inline def setGotoEndOfParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoEndOfParagraph", js.Any.fromFunction1(value))
     

@@ -69,7 +69,8 @@ object canvas {
       __obj.asInstanceOf[SkeletonRenderer]
     }
     
-    extension [Self <: SkeletonRenderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonRenderer] (val x: Self) extends AnyVal {
       
       inline def setComputeMeshVertices(value: Any): Self = StObject.set(x, "computeMeshVertices", value.asInstanceOf[js.Any])
       

@@ -209,7 +209,8 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
       __obj.asInstanceOf[ModelBuildInstanceUpdateOptions]
     }
     
-    extension [Self <: ModelBuildInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelBuildInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
       
@@ -375,7 +376,8 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
       __obj.asInstanceOf[ModelBuildListInstanceCreateOptions]
     }
     
-    extension [Self <: ModelBuildListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelBuildListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setStatusCallback(value: String): Self = StObject.set(x, "statusCallback", value.asInstanceOf[js.Any])
       
@@ -428,7 +430,8 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
       __obj.asInstanceOf[ModelBuildListInstanceEachOptions]
     }
     
-    extension [Self <: ModelBuildListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelBuildListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ ModelBuildInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -477,7 +480,8 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
       __obj.asInstanceOf[ModelBuildListInstanceOptions]
     }
     
-    extension [Self <: ModelBuildListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelBuildListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -511,7 +515,8 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
       __obj.asInstanceOf[ModelBuildListInstancePageOptions]
     }
     
-    extension [Self <: ModelBuildListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelBuildListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
@@ -596,7 +601,8 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
       __obj.asInstanceOf[ModelBuildResource]
     }
     
-    extension [Self <: ModelBuildResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelBuildResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -631,7 +637,8 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
       __obj.asInstanceOf[ModelBuildSolution]
     }
     
-    extension [Self <: ModelBuildSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelBuildSolution] (val x: Self) extends AnyVal {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
       

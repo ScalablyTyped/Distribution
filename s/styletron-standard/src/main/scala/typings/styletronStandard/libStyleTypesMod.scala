@@ -572,7 +572,8 @@ object libStyleTypesMod {
       __obj.asInstanceOf[KeyframesObject]
     }
     
-    extension [Self <: KeyframesObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyframesObject] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Properties): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -2172,7 +2173,8 @@ object libStyleTypesMod {
       __obj.asInstanceOf[Properties]
     }
     
-    extension [Self <: Properties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: AccentColor): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       

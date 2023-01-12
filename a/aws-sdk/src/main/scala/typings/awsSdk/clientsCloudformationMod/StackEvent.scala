@@ -93,7 +93,8 @@ object StackEvent {
     __obj.asInstanceOf[StackEvent]
   }
   
-  extension [Self <: StackEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackEvent] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

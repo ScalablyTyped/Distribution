@@ -22,7 +22,8 @@ object GPUPipelineLayout {
     __obj.asInstanceOf[GPUPipelineLayout]
   }
   
-  extension [Self <: GPUPipelineLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUPipelineLayout] (val x: Self) extends AnyVal {
     
     inline def set__brand(value: typings.webgpuTypes.webgpuTypesStrings.GPUPipelineLayout): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
   }

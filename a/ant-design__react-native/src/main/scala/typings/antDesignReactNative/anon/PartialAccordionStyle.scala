@@ -30,7 +30,8 @@ object PartialAccordionStyle {
     __obj.asInstanceOf[PartialAccordionStyle]
   }
   
-  extension [Self <: PartialAccordionStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAccordionStyle] (val x: Self) extends AnyVal {
     
     inline def setArrow(value: TextStyle): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     

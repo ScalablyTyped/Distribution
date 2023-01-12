@@ -56,7 +56,8 @@ object UpdateDialog {
     __obj.asInstanceOf[UpdateDialog]
   }
   
-  extension [Self <: UpdateDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDialog] (val x: Self) extends AnyVal {
     
     inline def setAppendReleaseDescription(value: Boolean): Self = StObject.set(x, "appendReleaseDescription", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object XSanExtension {
     __obj.asInstanceOf[XSanExtension]
   }
   
-  extension [Self <: XSanExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSanExtension] (val x: Self) extends AnyVal {
     
     inline def setAlternativeNames(value: SafeArray[CertAltNameEntry]): Self = StObject.set(x, "AlternativeNames", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object ASPxClientFileManagerFocusedItemChangedEventArgs {
     __obj.asInstanceOf[ASPxClientFileManagerFocusedItemChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientFileManagerFocusedItemChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFileManagerFocusedItemChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     

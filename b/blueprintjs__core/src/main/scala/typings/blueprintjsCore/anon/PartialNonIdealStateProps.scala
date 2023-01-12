@@ -38,7 +38,8 @@ object PartialNonIdealStateProps {
     __obj.asInstanceOf[PartialNonIdealStateProps]
   }
   
-  extension [Self <: PartialNonIdealStateProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialNonIdealStateProps] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Element): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

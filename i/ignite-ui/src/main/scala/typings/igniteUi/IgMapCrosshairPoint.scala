@@ -29,7 +29,8 @@ object IgMapCrosshairPoint {
     __obj.asInstanceOf[IgMapCrosshairPoint]
   }
   
-  extension [Self <: IgMapCrosshairPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgMapCrosshairPoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

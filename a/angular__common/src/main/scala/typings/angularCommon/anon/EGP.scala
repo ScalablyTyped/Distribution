@@ -77,7 +77,8 @@ object EGP {
     __obj.asInstanceOf[EGP]
   }
   
-  extension [Self <: EGP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EGP] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[String]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

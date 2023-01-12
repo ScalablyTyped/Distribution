@@ -23,7 +23,8 @@ object buttonDefinition {
     __obj.asInstanceOf[buttonDefinition]
   }
   
-  extension [Self <: buttonDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: buttonDefinition] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

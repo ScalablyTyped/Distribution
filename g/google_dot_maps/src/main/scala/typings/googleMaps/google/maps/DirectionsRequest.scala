@@ -121,7 +121,8 @@ object DirectionsRequest {
     __obj.asInstanceOf[DirectionsRequest]
   }
   
-  extension [Self <: DirectionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsRequest] (val x: Self) extends AnyVal {
     
     inline def setAvoidFerries(value: Boolean): Self = StObject.set(x, "avoidFerries", value.asInstanceOf[js.Any])
     

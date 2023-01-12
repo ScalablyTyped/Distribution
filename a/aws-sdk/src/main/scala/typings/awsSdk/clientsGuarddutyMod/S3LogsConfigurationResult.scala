@@ -18,7 +18,8 @@ object S3LogsConfigurationResult {
     __obj.asInstanceOf[S3LogsConfigurationResult]
   }
   
-  extension [Self <: S3LogsConfigurationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3LogsConfigurationResult] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: DataSourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }

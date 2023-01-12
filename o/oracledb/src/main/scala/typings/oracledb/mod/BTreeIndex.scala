@@ -38,7 +38,8 @@ object BTreeIndex {
     __obj.asInstanceOf[BTreeIndex]
   }
   
-  extension [Self <: BTreeIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BTreeIndex] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[BTreeIndexField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ChangeProgressStage {
     __obj.asInstanceOf[ChangeProgressStage]
   }
   
-  extension [Self <: ChangeProgressStage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeProgressStage] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

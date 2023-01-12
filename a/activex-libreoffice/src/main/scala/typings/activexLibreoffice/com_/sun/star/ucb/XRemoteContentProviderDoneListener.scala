@@ -34,7 +34,8 @@ object XRemoteContentProviderDoneListener {
     __obj.asInstanceOf[XRemoteContentProviderDoneListener]
   }
   
-  extension [Self <: XRemoteContentProviderDoneListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRemoteContentProviderDoneListener] (val x: Self) extends AnyVal {
     
     inline def setDoneWithRemoteContentProviders(value: XRemoteContentProviderAcceptor => Unit): Self = StObject.set(x, "doneWithRemoteContentProviders", js.Any.fromFunction1(value))
   }

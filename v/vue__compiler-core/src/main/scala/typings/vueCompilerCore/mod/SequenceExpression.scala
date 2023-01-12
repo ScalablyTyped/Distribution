@@ -24,7 +24,8 @@ object SequenceExpression {
     __obj.asInstanceOf[SequenceExpression]
   }
   
-  extension [Self <: SequenceExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequenceExpression] (val x: Self) extends AnyVal {
     
     inline def setExpressions(value: js.Array[JSChildNode]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     

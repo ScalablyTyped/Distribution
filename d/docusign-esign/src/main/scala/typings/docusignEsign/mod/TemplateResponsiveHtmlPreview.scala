@@ -18,7 +18,8 @@ object TemplateResponsiveHtmlPreview {
     __obj.asInstanceOf[TemplateResponsiveHtmlPreview]
   }
   
-  extension [Self <: TemplateResponsiveHtmlPreview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateResponsiveHtmlPreview] (val x: Self) extends AnyVal {
     
     inline def setHtmlDefinitions(value: js.Array[String]): Self = StObject.set(x, "htmlDefinitions", value.asInstanceOf[js.Any])
     

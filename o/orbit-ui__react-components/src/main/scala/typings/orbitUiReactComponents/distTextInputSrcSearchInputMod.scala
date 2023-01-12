@@ -126,7 +126,8 @@ object distTextInputSrcSearchInputMod {
       __obj.asInstanceOf[InnerSearchInputProps]
     }
     
-    extension [Self <: InnerSearchInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerSearchInputProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object Interaction10 {
     __obj.asInstanceOf[Interaction10[BaseToken]]
   }
   
-  extension [Self <: Interaction10[?], BaseToken](x: Self & Interaction10[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interaction10[?], BaseToken] (val x: Self & Interaction10[BaseToken]) extends AnyVal {
     
     inline def setInteraction(value: `10`[BaseToken]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
   }

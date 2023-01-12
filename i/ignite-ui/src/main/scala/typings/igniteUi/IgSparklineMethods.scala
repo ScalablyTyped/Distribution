@@ -133,7 +133,8 @@ object IgSparklineMethods {
     __obj.asInstanceOf[IgSparklineMethods]
   }
   
-  extension [Self <: IgSparklineMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgSparklineMethods] (val x: Self) extends AnyVal {
     
     inline def setAddItem(value: js.Object => js.Object): Self = StObject.set(x, "addItem", js.Any.fromFunction1(value))
     

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[HtmlScriptElement]
     }
     
-    extension [Self <: HtmlScriptElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlScriptElement] (val x: Self) extends AnyVal {
       
       inline def setHtmlScriptElement(value: HTMLScriptElement): Self = StObject.set(x, "htmlScriptElement", value.asInstanceOf[js.Any])
     }
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Interval[T]]
     }
     
-    extension [Self <: Interval[?], T /* <: MutableInterval */](x: Self & Interval[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interval[?], T /* <: MutableInterval */] (val x: Self & Interval[T]) extends AnyVal {
       
       inline def setInterval(value: T): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     }
@@ -54,7 +56,8 @@ object anon {
       __obj.asInstanceOf[IntervalConstInterval]
     }
     
-    extension [Self <: IntervalConstInterval](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntervalConstInterval] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: ConstInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     }
@@ -73,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Result[TOptions]]
     }
     
-    extension [Self <: Result[?], TOptions](x: Self & Result[TOptions]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result[?], TOptions] (val x: Self & Result[TOptions]) extends AnyVal {
       
       inline def setResult(value: TOptions): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
@@ -100,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Set[TOptions]]
     }
     
-    extension [Self <: Set[?], TOptions](x: Self & Set[TOptions]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Set[?], TOptions] (val x: Self & Set[TOptions]) extends AnyVal {
       
       inline def setResult(value: TOptions): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
@@ -121,7 +126,8 @@ object anon {
       __obj.asInstanceOf[TwoDigitYearMax]
     }
     
-    extension [Self <: TwoDigitYearMax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwoDigitYearMax] (val x: Self) extends AnyVal {
       
       inline def setTwoDigitYearMax(value: Double): Self = StObject.set(x, "twoDigitYearMax", value.asInstanceOf[js.Any])
     }

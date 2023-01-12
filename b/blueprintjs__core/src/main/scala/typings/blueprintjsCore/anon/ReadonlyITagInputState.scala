@@ -22,7 +22,8 @@ object ReadonlyITagInputState {
     __obj.asInstanceOf[ReadonlyITagInputState]
   }
   
-  extension [Self <: ReadonlyITagInputState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyITagInputState] (val x: Self) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

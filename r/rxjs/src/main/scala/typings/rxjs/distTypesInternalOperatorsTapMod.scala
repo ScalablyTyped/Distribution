@@ -54,7 +54,8 @@ object distTypesInternalOperatorsTapMod {
       __obj.asInstanceOf[TapObserver[T]]
     }
     
-    extension [Self <: TapObserver[?], T](x: Self & TapObserver[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TapObserver[?], T] (val x: Self & TapObserver[T]) extends AnyVal {
       
       inline def setSubscribe(value: () => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction0(value))
       

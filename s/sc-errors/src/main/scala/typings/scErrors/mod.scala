@@ -415,7 +415,8 @@ object mod {
       __obj.asInstanceOf[SocketProtocolErrorStatuses_]
     }
     
-    extension [Self <: SocketProtocolErrorStatuses_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketProtocolErrorStatuses_] (val x: Self) extends AnyVal {
       
       inline def set1001(value: String): Self = StObject.set(x, "1001", value.asInstanceOf[js.Any])
       
@@ -472,7 +473,8 @@ object mod {
       __obj.asInstanceOf[SocketProtocolIgnoreStatuses_]
     }
     
-    extension [Self <: SocketProtocolIgnoreStatuses_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketProtocolIgnoreStatuses_] (val x: Self) extends AnyVal {
       
       inline def set1000(value: String): Self = StObject.set(x, "1000", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object AlarmRecommendation {
     __obj.asInstanceOf[AlarmRecommendation]
   }
   
-  extension [Self <: AlarmRecommendation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlarmRecommendation] (val x: Self) extends AnyVal {
     
     inline def setAppComponentName(value: EntityId): Self = StObject.set(x, "appComponentName", value.asInstanceOf[js.Any])
     

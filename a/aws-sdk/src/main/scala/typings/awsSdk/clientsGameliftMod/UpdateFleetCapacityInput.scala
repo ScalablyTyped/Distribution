@@ -38,7 +38,8 @@ object UpdateFleetCapacityInput {
     __obj.asInstanceOf[UpdateFleetCapacityInput]
   }
   
-  extension [Self <: UpdateFleetCapacityInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFleetCapacityInput] (val x: Self) extends AnyVal {
     
     inline def setDesiredInstances(value: WholeNumber): Self = StObject.set(x, "DesiredInstances", value.asInstanceOf[js.Any])
     

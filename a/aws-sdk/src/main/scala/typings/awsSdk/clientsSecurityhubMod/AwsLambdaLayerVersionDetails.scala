@@ -28,7 +28,8 @@ object AwsLambdaLayerVersionDetails {
     __obj.asInstanceOf[AwsLambdaLayerVersionDetails]
   }
   
-  extension [Self <: AwsLambdaLayerVersionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsLambdaLayerVersionDetails] (val x: Self) extends AnyVal {
     
     inline def setCompatibleRuntimes(value: NonEmptyStringList): Self = StObject.set(x, "CompatibleRuntimes", value.asInstanceOf[js.Any])
     

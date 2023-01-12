@@ -81,7 +81,8 @@ object ViewPort {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFixedCenter(value: Boolean): Self = StObject.set(x, "fixedCenter", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object ViewPort {
       __obj.asInstanceOf[Padding]
     }
     
-    extension [Self <: Padding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Padding] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

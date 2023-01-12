@@ -25,7 +25,8 @@ object CurrentlyPlayingObject {
     __obj.asInstanceOf[CurrentlyPlayingObject]
   }
   
-  extension [Self <: CurrentlyPlayingObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentlyPlayingObject] (val x: Self) extends AnyVal {
     
     inline def setContext(value: ContextObject): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

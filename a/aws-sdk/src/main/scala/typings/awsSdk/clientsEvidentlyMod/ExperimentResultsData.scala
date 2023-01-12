@@ -33,7 +33,8 @@ object ExperimentResultsData {
     __obj.asInstanceOf[ExperimentResultsData]
   }
   
-  extension [Self <: ExperimentResultsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperimentResultsData] (val x: Self) extends AnyVal {
     
     inline def setMetricName(value: CwDimensionSafeName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     

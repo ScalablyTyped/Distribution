@@ -228,7 +228,8 @@ object sapMRangeSliderMod {
       __obj.asInstanceOf[RangeSliderSettings]
     }
     
-    extension [Self <: RangeSliderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeSliderSettings] (val x: Self) extends AnyVal {
       
       inline def setRange(value: js.Array[float] | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       

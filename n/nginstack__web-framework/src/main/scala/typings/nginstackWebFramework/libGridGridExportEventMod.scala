@@ -35,7 +35,8 @@ object libGridGridExportEventMod {
       __obj.asInstanceOf[GridExportEvent]
     }
     
-    extension [Self <: GridExportEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridExportEvent] (val x: Self) extends AnyVal {
       
       inline def setExporter(value: GridExporter): Self = StObject.set(x, "exporter", value.asInstanceOf[js.Any])
     }

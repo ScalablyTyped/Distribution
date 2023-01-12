@@ -20,7 +20,8 @@ object CreateCompileErrorOptions {
     __obj.asInstanceOf[CreateCompileErrorOptions]
   }
   
-  extension [Self <: CreateCompileErrorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCompileErrorOptions] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

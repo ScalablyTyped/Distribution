@@ -19,7 +19,8 @@ object ReturnTypeCallFunctionOnResponse {
     __obj.asInstanceOf[ReturnTypeCallFunctionOnResponse]
   }
   
-  extension [Self <: ReturnTypeCallFunctionOnResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeCallFunctionOnResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[CallFunctionOnRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object PickConsoleAPICalledEvent {
     __obj.asInstanceOf[PickConsoleAPICalledEvent]
   }
   
-  extension [Self <: PickConsoleAPICalledEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickConsoleAPICalledEvent] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[RemoteObject]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

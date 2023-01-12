@@ -547,7 +547,8 @@ object readlineMod {
       __obj.asInstanceOf[CursorPos]
     }
     
-    extension [Self <: CursorPos](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CursorPos] (val x: Self) extends AnyVal {
       
       inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
@@ -589,7 +590,8 @@ object readlineMod {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setCtrl(value: Boolean): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
       
@@ -658,7 +660,8 @@ object readlineMod {
       __obj.asInstanceOf[ReadLineOptions]
     }
     
-    extension [Self <: ReadLineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadLineOptions] (val x: Self) extends AnyVal {
       
       inline def setCompleter(value: Completer | AsyncCompleter): Self = StObject.set(x, "completer", value.asInstanceOf[js.Any])
       

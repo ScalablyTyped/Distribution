@@ -16,7 +16,8 @@ object DuplicateFilterViewResponse {
     __obj.asInstanceOf[DuplicateFilterViewResponse]
   }
   
-  extension [Self <: DuplicateFilterViewResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DuplicateFilterViewResponse] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: FilterView): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

@@ -80,7 +80,8 @@ object SelectObjectContentRequest {
     __obj.asInstanceOf[SelectObjectContentRequest]
   }
   
-  extension [Self <: SelectObjectContentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectObjectContentRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

@@ -164,7 +164,8 @@ object sapUiModelOdataV2OdatamodelMod {
       __obj.asInstanceOf[ChangeGroupDefinition]
     }
     
-    extension [Self <: ChangeGroupDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeGroupDefinition] (val x: Self) extends AnyVal {
       
       inline def setChangeSetId(value: String): Self = StObject.set(x, "changeSetId", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object CoverSheetInfo {
     __obj.asInstanceOf[CoverSheetInfo]
   }
   
-  extension [Self <: CoverSheetInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverSheetInfo] (val x: Self) extends AnyVal {
     
     inline def `setFrom-name`(value: String): Self = StObject.set(x, "from-name", value.asInstanceOf[js.Any])
     

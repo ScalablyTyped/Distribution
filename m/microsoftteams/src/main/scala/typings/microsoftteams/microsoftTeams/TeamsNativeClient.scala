@@ -18,7 +18,8 @@ object TeamsNativeClient {
     __obj.asInstanceOf[TeamsNativeClient]
   }
   
-  extension [Self <: TeamsNativeClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamsNativeClient] (val x: Self) extends AnyVal {
     
     inline def setFramelessPostMessage(value: String => Unit): Self = StObject.set(x, "framelessPostMessage", js.Any.fromFunction1(value))
   }

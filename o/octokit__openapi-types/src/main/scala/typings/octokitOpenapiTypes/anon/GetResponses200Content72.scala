@@ -102,7 +102,8 @@ object GetResponses200Content72 {
     __obj.asInstanceOf[GetResponses200Content72]
   }
   
-  extension [Self <: GetResponses200Content72](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResponses200Content72] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: ParametersPathSecretnameResponses): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     

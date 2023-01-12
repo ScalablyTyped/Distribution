@@ -29,7 +29,8 @@ object ElasticEase {
     __obj.asInstanceOf[ElasticEase]
   }
   
-  extension [Self <: ElasticEase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticEase] (val x: Self) extends AnyVal {
     
     inline def setOscillations(value: Double): Self = StObject.set(x, "oscillations", value.asInstanceOf[js.Any])
     

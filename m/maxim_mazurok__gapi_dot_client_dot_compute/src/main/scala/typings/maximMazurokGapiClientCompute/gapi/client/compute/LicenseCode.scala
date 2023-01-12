@@ -40,7 +40,8 @@ object LicenseCode {
     __obj.asInstanceOf[LicenseCode]
   }
   
-  extension [Self <: LicenseCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseCode] (val x: Self) extends AnyVal {
     
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object DirectionsConstructorOptions {
     __obj.asInstanceOf[DirectionsConstructorOptions]
   }
   
-  extension [Self <: DirectionsConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

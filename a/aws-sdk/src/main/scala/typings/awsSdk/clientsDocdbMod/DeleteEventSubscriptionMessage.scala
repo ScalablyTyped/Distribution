@@ -18,7 +18,8 @@ object DeleteEventSubscriptionMessage {
     __obj.asInstanceOf[DeleteEventSubscriptionMessage]
   }
   
-  extension [Self <: DeleteEventSubscriptionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEventSubscriptionMessage] (val x: Self) extends AnyVal {
     
     inline def setSubscriptionName(value: String): Self = StObject.set(x, "SubscriptionName", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Callbacks]
     }
     
-    extension [Self <: Callbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callbacks] (val x: Self) extends AnyVal {
       
       inline def setClusterChanged(value: () => Unit): Self = StObject.set(x, "clusterChanged", js.Any.fromFunction0(value))
       
@@ -117,7 +118,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBlocks_in_cluster(value: Double): Self = StObject.set(x, "blocks_in_cluster", value.asInstanceOf[js.Any])
       

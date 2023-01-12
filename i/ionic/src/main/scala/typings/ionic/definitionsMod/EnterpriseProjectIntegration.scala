@@ -25,7 +25,8 @@ object EnterpriseProjectIntegration {
     __obj.asInstanceOf[EnterpriseProjectIntegration]
   }
   
-  extension [Self <: EnterpriseProjectIntegration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterpriseProjectIntegration] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

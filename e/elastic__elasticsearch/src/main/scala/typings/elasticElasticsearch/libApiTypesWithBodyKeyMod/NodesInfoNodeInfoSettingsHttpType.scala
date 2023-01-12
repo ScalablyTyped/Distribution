@@ -15,7 +15,8 @@ object NodesInfoNodeInfoSettingsHttpType {
     __obj.asInstanceOf[NodesInfoNodeInfoSettingsHttpType]
   }
   
-  extension [Self <: NodesInfoNodeInfoSettingsHttpType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoSettingsHttpType] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }

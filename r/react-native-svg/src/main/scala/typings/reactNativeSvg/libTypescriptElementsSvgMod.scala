@@ -125,7 +125,8 @@ object libTypescriptElementsSvgMod {
       __obj.asInstanceOf[SvgProps]
     }
     
-    extension [Self <: SvgProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: ColorValue): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

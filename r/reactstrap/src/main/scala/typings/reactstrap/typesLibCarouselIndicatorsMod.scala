@@ -38,7 +38,8 @@ object typesLibCarouselIndicatorsMod {
       __obj.asInstanceOf[CarouselIndicatorsProps]
     }
     
-    extension [Self <: CarouselIndicatorsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselIndicatorsProps] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       

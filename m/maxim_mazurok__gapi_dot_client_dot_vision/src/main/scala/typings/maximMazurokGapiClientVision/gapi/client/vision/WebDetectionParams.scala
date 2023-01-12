@@ -16,7 +16,8 @@ object WebDetectionParams {
     __obj.asInstanceOf[WebDetectionParams]
   }
   
-  extension [Self <: WebDetectionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebDetectionParams] (val x: Self) extends AnyVal {
     
     inline def setIncludeGeoResults(value: Boolean): Self = StObject.set(x, "includeGeoResults", value.asInstanceOf[js.Any])
     

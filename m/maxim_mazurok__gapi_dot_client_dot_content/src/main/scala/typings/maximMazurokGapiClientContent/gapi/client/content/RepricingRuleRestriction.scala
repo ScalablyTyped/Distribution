@@ -22,7 +22,8 @@ object RepricingRuleRestriction {
     __obj.asInstanceOf[RepricingRuleRestriction]
   }
   
-  extension [Self <: RepricingRuleRestriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepricingRuleRestriction] (val x: Self) extends AnyVal {
     
     inline def setFloor(value: RepricingRuleRestrictionBoundary): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
     

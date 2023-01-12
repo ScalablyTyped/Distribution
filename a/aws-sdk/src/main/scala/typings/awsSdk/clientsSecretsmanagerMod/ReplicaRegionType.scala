@@ -23,7 +23,8 @@ object ReplicaRegionType {
     __obj.asInstanceOf[ReplicaRegionType]
   }
   
-  extension [Self <: ReplicaRegionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicaRegionType] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: KmsKeyIdType): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

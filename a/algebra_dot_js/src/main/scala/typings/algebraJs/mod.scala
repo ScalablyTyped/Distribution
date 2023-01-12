@@ -79,7 +79,8 @@ object mod {
       __obj.asInstanceOf[Term]
     }
     
-    extension [Self <: Term](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Term] (val x: Self) extends AnyVal {
       
       inline def setCoefficient(value: () => typings.algebraJs.mod.algebra.js_.Fraction): Self = StObject.set(x, "coefficient", js.Any.fromFunction0(value))
       
@@ -112,7 +113,8 @@ object mod {
       __obj.asInstanceOf[Variable]
     }
     
-    extension [Self <: Variable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Variable] (val x: Self) extends AnyVal {
       
       inline def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     }
@@ -147,7 +149,8 @@ object mod {
           __obj.asInstanceOf[typings.algebraJs.mod.algebra.js_.Equation]
         }
         
-        extension [Self <: typings.algebraJs.mod.algebra.js_.Equation](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.algebraJs.mod.algebra.js_.Equation] (val x: Self) extends AnyVal {
           
           inline def setLhs(value: typings.algebraJs.mod.algebra.js_.Expression): Self = StObject.set(x, "lhs", value.asInstanceOf[js.Any])
           

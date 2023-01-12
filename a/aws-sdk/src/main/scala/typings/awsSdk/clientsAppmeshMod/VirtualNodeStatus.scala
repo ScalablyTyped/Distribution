@@ -18,7 +18,8 @@ object VirtualNodeStatus {
     __obj.asInstanceOf[VirtualNodeStatus]
   }
   
-  extension [Self <: VirtualNodeStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualNodeStatus] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: VirtualNodeStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

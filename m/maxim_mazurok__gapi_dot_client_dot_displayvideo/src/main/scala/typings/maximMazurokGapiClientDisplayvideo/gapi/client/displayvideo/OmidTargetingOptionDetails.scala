@@ -16,7 +16,8 @@ object OmidTargetingOptionDetails {
     __obj.asInstanceOf[OmidTargetingOptionDetails]
   }
   
-  extension [Self <: OmidTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmidTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setOmid(value: String): Self = StObject.set(x, "omid", value.asInstanceOf[js.Any])
     

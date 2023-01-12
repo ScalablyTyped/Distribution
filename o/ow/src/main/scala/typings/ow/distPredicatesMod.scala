@@ -642,7 +642,8 @@ object distPredicatesMod {
       __obj.asInstanceOf[Predicates]
     }
     
-    extension [Self <: Predicates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Predicates] (val x: Self) extends AnyVal {
       
       inline def setAny(
         value: (js.Function1[/* p1 */ BasePredicate[Any], typings.ow.distPredicatesAnyMod.AnyPredicate[Any]]) & (js.Function2[

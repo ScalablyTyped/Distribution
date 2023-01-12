@@ -34,7 +34,8 @@ object DomPopmotionConfig {
     __obj.asInstanceOf[DomPopmotionConfig]
   }
   
-  extension [Self <: DomPopmotionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomPopmotionConfig] (val x: Self) extends AnyVal {
     
     inline def setDragBounds(value: DragBounds | (js.Function1[/* props */ ResolverProps, DragBounds])): Self = StObject.set(x, "dragBounds", value.asInstanceOf[js.Any])
     

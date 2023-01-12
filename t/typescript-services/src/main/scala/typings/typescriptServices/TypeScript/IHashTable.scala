@@ -38,7 +38,8 @@ object IHashTable {
     __obj.asInstanceOf[IHashTable[T]]
   }
   
-  extension [Self <: IHashTable[?], T](x: Self & IHashTable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHashTable[?], T] (val x: Self & IHashTable[T]) extends AnyVal {
     
     inline def setAdd(value: (String, T) => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

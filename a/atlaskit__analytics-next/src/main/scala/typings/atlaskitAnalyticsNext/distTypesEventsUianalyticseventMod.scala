@@ -61,7 +61,8 @@ object distTypesEventsUianalyticseventMod {
       __obj.asInstanceOf[UIAnalyticsEventProps]
     }
     
-    extension [Self <: UIAnalyticsEventProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIAnalyticsEventProps] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

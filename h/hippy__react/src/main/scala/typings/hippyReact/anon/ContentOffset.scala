@@ -15,7 +15,8 @@ object ContentOffset {
     __obj.asInstanceOf[ContentOffset]
   }
   
-  extension [Self <: ContentOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentOffset] (val x: Self) extends AnyVal {
     
     inline def setContentOffset(value: X): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
   }

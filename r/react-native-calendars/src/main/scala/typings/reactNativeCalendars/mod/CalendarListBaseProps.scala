@@ -65,7 +65,8 @@ object CalendarListBaseProps {
     __obj.asInstanceOf[CalendarListBaseProps]
   }
   
-  extension [Self <: CalendarListBaseProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarListBaseProps] (val x: Self) extends AnyVal {
     
     inline def setCalendarHeight(value: Double): Self = StObject.set(x, "calendarHeight", value.asInstanceOf[js.Any])
     

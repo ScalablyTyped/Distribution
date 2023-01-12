@@ -25,7 +25,8 @@ object PlannerPlanDetails {
     __obj.asInstanceOf[PlannerPlanDetails]
   }
   
-  extension [Self <: PlannerPlanDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlannerPlanDetails] (val x: Self) extends AnyVal {
     
     inline def setCategoryDescriptions(value: NullableOption[PlannerCategoryDescriptions]): Self = StObject.set(x, "categoryDescriptions", value.asInstanceOf[js.Any])
     

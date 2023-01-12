@@ -92,7 +92,8 @@ object XBezierPolyPolygon2D {
     __obj.asInstanceOf[XBezierPolyPolygon2D]
   }
   
-  extension [Self <: XBezierPolyPolygon2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBezierPolyPolygon2D] (val x: Self) extends AnyVal {
     
     inline def setGetBezierSegment(value: (Double, Double) => RealBezierSegment2D): Self = StObject.set(x, "getBezierSegment", js.Any.fromFunction2(value))
     

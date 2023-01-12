@@ -23,7 +23,8 @@ object TypeSpecimenProps {
     __obj.asInstanceOf[TypeSpecimenProps]
   }
   
-  extension [Self <: TypeSpecimenProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeSpecimenProps] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

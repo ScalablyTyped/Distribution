@@ -64,7 +64,8 @@ object RunningCoder {
         __obj.asInstanceOf[AJaxSettings]
       }
       
-      extension [Self <: AJaxSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AJaxSettings] (val x: Self) extends AnyVal {
         
         inline def setAlways(
           value: (/* data */ js.UndefOr[JQuery], /* textStatus */ js.UndefOr[String], /* jqXHR */ js.UndefOr[JQueryXHR]) => Unit
@@ -343,7 +344,8 @@ object RunningCoder {
         __obj.asInstanceOf[Callback]
       }
       
-      extension [Self <: Callback](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
         
         inline def setOnCacheSave(
           value: (/* node */ js.UndefOr[JQuery], /* data */ js.UndefOr[Any], /* group */ js.UndefOr[Any], /* path */ js.UndefOr[Any]) => Unit
@@ -494,7 +496,8 @@ object RunningCoder {
         __obj.asInstanceOf[DropdownFilterItem]
       }
       
-      extension [Self <: DropdownFilterItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DropdownFilterItem] (val x: Self) extends AnyVal {
         
         inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
         
@@ -521,7 +524,8 @@ object RunningCoder {
         __obj.asInstanceOf[DynamicFilterItem]
       }
       
-      extension [Self <: DynamicFilterItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DynamicFilterItem] (val x: Self) extends AnyVal {
         
         inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
@@ -542,7 +546,8 @@ object RunningCoder {
         __obj.asInstanceOf[FromToPair]
       }
       
-      extension [Self <: FromToPair](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FromToPair] (val x: Self) extends AnyVal {
         
         inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
         
@@ -563,7 +568,8 @@ object RunningCoder {
         __obj.asInstanceOf[GroupSetting]
       }
       
-      extension [Self <: GroupSetting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GroupSetting] (val x: Self) extends AnyVal {
         
         inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
@@ -602,7 +608,8 @@ object RunningCoder {
         __obj.asInstanceOf[MultiSelectSettings]
       }
       
-      extension [Self <: MultiSelectSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MultiSelectSettings] (val x: Self) extends AnyVal {
         
         inline def setCallback(value: MultiSelectSettingsCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
         
@@ -673,7 +680,8 @@ object RunningCoder {
         __obj.asInstanceOf[MultiSelectSettingsCallback]
       }
       
-      extension [Self <: MultiSelectSettingsCallback](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MultiSelectSettingsCallback] (val x: Self) extends AnyVal {
         
         inline def setOnCancel(
           value: (/* node */ js.UndefOr[JQuery], /* item */ js.UndefOr[Any], /* event */ js.UndefOr[JQueryEventObject]) => Unit
@@ -996,7 +1004,8 @@ object RunningCoder {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAccent(value: Boolean | FromToPair): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
         
@@ -1244,7 +1253,8 @@ object RunningCoder {
         __obj.asInstanceOf[Selector]
       }
       
-      extension [Self <: Selector](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Selector] (val x: Self) extends AnyVal {
         
         inline def setBackdrop(value: String): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
         
@@ -1371,7 +1381,8 @@ object RunningCoder {
         __obj.asInstanceOf[Source]
       }
       
-      extension [Self <: Source](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
         
         inline def setAjax(value: AJaxSettings | (js.Function1[/* query */ js.UndefOr[String], AJaxSettings])): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
         

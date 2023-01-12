@@ -28,7 +28,8 @@ object IProjectConfig {
     __obj.asInstanceOf[IProjectConfig]
   }
   
-  extension [Self <: IProjectConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProjectConfig] (val x: Self) extends AnyVal {
     
     inline def setHooks(value: RecordHookNamestringArray): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     

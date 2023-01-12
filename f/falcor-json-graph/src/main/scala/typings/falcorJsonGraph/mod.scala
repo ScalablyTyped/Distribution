@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[Atom_]
     }
     
-    extension [Self <: Atom_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Atom_] (val x: Self) extends AnyVal {
       
       inline def set$type(value: atom): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object mod {
       __obj.asInstanceOf[Error_]
     }
     
-    extension [Self <: Error_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error_] (val x: Self) extends AnyVal {
       
       inline def set$type(value: error): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object mod {
       __obj.asInstanceOf[InvalidPath]
     }
     
-    extension [Self <: InvalidPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidPath] (val x: Self) extends AnyVal {
       
       inline def setInvalidate(value: Boolean): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
       
@@ -119,7 +122,8 @@ object mod {
       __obj.asInstanceOf[JSONEnvelope[T]]
     }
     
-    extension [Self <: JSONEnvelope[?], T](x: Self & JSONEnvelope[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONEnvelope[?], T] (val x: Self & JSONEnvelope[T]) extends AnyVal {
       
       inline def setJson(value: T): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     }
@@ -148,7 +152,8 @@ object mod {
       __obj.asInstanceOf[JSONGraphEnvelope]
     }
     
-    extension [Self <: JSONGraphEnvelope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONGraphEnvelope] (val x: Self) extends AnyVal {
       
       inline def setInvalidate(value: js.Array[PathSet]): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
       
@@ -202,7 +207,8 @@ object mod {
       __obj.asInstanceOf[PathValue_]
     }
     
-    extension [Self <: PathValue_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathValue_] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String | PathSet): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -230,7 +236,8 @@ object mod {
       __obj.asInstanceOf[Range]
     }
     
-    extension [Self <: Range](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -262,7 +269,8 @@ object mod {
       __obj.asInstanceOf[Reference]
     }
     
-    extension [Self <: Reference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
       
       inline def set$type(value: reference): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
       
@@ -284,7 +292,8 @@ object mod {
       __obj.asInstanceOf[Sentinel]
     }
     
-    extension [Self <: Sentinel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sentinel] (val x: Self) extends AnyVal {
       
       inline def set$expires(value: Double): Self = StObject.set(x, "$expires", value.asInstanceOf[js.Any])
       

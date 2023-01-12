@@ -69,7 +69,8 @@ object XFolderPicker {
     __obj.asInstanceOf[XFolderPicker]
   }
   
-  extension [Self <: XFolderPicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFolderPicker] (val x: Self) extends AnyVal {
     
     inline def setDirectory(value: String): Self = StObject.set(x, "Directory", value.asInstanceOf[js.Any])
     

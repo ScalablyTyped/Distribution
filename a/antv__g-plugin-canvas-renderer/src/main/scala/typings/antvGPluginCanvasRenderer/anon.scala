@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[PartialCanvasRendererPlug]
     }
     
-    extension [Self <: PartialCanvasRendererPlug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCanvasRendererPlug] (val x: Self) extends AnyVal {
       
       inline def setDirtyObjectNumThreshold(value: Double): Self = StObject.set(x, "dirtyObjectNumThreshold", value.asInstanceOf[js.Any])
       

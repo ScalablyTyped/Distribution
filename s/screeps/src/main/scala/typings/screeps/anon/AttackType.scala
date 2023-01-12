@@ -20,7 +20,8 @@ object AttackType {
     __obj.asInstanceOf[AttackType]
   }
   
-  extension [Self <: AttackType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttackType] (val x: Self) extends AnyVal {
     
     inline def setAttackType(value: EventAttackType): Self = StObject.set(x, "attackType", value.asInstanceOf[js.Any])
     

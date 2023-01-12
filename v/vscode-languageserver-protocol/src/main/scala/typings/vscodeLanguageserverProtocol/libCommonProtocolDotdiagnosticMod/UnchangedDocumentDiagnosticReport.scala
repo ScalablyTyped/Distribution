@@ -27,7 +27,8 @@ object UnchangedDocumentDiagnosticReport {
     __obj.asInstanceOf[UnchangedDocumentDiagnosticReport]
   }
   
-  extension [Self <: UnchangedDocumentDiagnosticReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnchangedDocumentDiagnosticReport] (val x: Self) extends AnyVal {
     
     inline def setKind(value: /* "unchanged" */ String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

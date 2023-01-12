@@ -15,7 +15,8 @@ object GlobalizationNumberOptions {
     __obj.asInstanceOf[GlobalizationNumberOptions]
   }
   
-  extension [Self <: GlobalizationNumberOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalizationNumberOptions] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

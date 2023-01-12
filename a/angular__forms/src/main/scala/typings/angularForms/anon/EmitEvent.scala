@@ -17,7 +17,8 @@ object EmitEvent {
     __obj.asInstanceOf[EmitEvent]
   }
   
-  extension [Self <: EmitEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmitEvent] (val x: Self) extends AnyVal {
     
     inline def setEmitEvent(value: Boolean): Self = StObject.set(x, "emitEvent", value.asInstanceOf[js.Any])
     

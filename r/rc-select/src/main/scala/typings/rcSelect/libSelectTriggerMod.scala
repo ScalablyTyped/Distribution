@@ -31,7 +31,8 @@ object libSelectTriggerMod extends Shortcut {
       __obj.asInstanceOf[RefTriggerProps]
     }
     
-    extension [Self <: RefTriggerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefTriggerProps] (val x: Self) extends AnyVal {
       
       inline def setGetPopupElement(value: () => HTMLDivElement): Self = StObject.set(x, "getPopupElement", js.Any.fromFunction0(value))
     }
@@ -100,7 +101,8 @@ object libSelectTriggerMod extends Shortcut {
       __obj.asInstanceOf[SelectTriggerProps]
     }
     
-    extension [Self <: SelectTriggerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectTriggerProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

@@ -102,7 +102,8 @@ object SeriesDependencywheelOptions {
     __obj.asInstanceOf[SeriesDependencywheelOptions]
   }
   
-  extension [Self <: SeriesDependencywheelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesDependencywheelOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[(js.Tuple3[String, String, Double]) | SeriesSankeyPointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

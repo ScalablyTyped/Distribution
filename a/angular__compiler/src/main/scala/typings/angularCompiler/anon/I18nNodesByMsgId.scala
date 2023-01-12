@@ -19,7 +19,8 @@ object I18nNodesByMsgId {
     __obj.asInstanceOf[I18nNodesByMsgId]
   }
   
-  extension [Self <: I18nNodesByMsgId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: I18nNodesByMsgId] (val x: Self) extends AnyVal {
     
     inline def setI18nNodesByMsgId(value: StringDictionary[js.Array[Node]]): Self = StObject.set(x, "i18nNodesByMsgId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SrcSetParams {
     __obj.asInstanceOf[SrcSetParams]
   }
   
-  extension [Self <: SrcSetParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SrcSetParams] (val x: Self) extends AnyVal {
     
     inline def setDevicePixelRatios(value: js.Array[Double]): Self = StObject.set(x, "devicePixelRatios", value.asInstanceOf[js.Any])
     

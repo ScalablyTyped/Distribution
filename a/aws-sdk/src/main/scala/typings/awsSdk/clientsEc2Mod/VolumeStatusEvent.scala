@@ -43,7 +43,8 @@ object VolumeStatusEvent {
     __obj.asInstanceOf[VolumeStatusEvent]
   }
   
-  extension [Self <: VolumeStatusEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeStatusEvent] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

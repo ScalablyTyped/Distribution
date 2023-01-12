@@ -33,7 +33,8 @@ object WaypointContext {
     __obj.asInstanceOf[WaypointContext]
   }
   
-  extension [Self <: WaypointContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaypointContext] (val x: Self) extends AnyVal {
     
     inline def setAdapter(value: WaypointAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     

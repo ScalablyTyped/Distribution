@@ -31,7 +31,8 @@ object iconOptionsDownloadableMod {
       __obj.asInstanceOf[Downloadable[TUriParam]]
     }
     
-    extension [Self <: Downloadable[?], TUriParam](x: Self & Downloadable[TUriParam]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Downloadable[?], TUriParam] (val x: Self & Downloadable[TUriParam]) extends AnyVal {
       
       inline def setUri(value: /* import warning: importer.ImportType#apply Failed type conversion: this['url'] */ js.Any): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       

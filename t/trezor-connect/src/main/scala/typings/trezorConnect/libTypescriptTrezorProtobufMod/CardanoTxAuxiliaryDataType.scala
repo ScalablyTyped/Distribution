@@ -17,7 +17,8 @@ object CardanoTxAuxiliaryDataType {
     __obj.asInstanceOf[CardanoTxAuxiliaryDataType]
   }
   
-  extension [Self <: CardanoTxAuxiliaryDataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoTxAuxiliaryDataType] (val x: Self) extends AnyVal {
     
     inline def setBlob(value: String): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     

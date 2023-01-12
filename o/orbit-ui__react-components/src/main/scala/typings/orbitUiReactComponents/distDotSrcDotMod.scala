@@ -59,7 +59,8 @@ object distDotSrcDotMod {
       __obj.asInstanceOf[InnerDotProps]
     }
     
-    extension [Self <: InnerDotProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerDotProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

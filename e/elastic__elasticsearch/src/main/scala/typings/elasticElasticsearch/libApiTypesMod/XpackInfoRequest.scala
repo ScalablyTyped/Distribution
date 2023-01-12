@@ -19,7 +19,8 @@ object XpackInfoRequest {
     __obj.asInstanceOf[XpackInfoRequest]
   }
   
-  extension [Self <: XpackInfoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackInfoRequest] (val x: Self) extends AnyVal {
     
     inline def setAccept_enterprise(value: Boolean): Self = StObject.set(x, "accept_enterprise", value.asInstanceOf[js.Any])
     

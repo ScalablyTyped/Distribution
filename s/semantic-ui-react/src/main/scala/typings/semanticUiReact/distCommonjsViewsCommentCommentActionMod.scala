@@ -60,7 +60,8 @@ object distCommonjsViewsCommentCommentActionMod extends Shortcut {
       __obj.asInstanceOf[StrictCommentActionProps]
     }
     
-    extension [Self <: StrictCommentActionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictCommentActionProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object GetHLSStreamingSessionURLOutput {
     __obj.asInstanceOf[GetHLSStreamingSessionURLOutput]
   }
   
-  extension [Self <: GetHLSStreamingSessionURLOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHLSStreamingSessionURLOutput] (val x: Self) extends AnyVal {
     
     inline def setHLSStreamingSessionURL(value: HLSStreamingSessionURL): Self = StObject.set(x, "HLSStreamingSessionURL", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ChannelHistoryResult {
     __obj.asInstanceOf[ChannelHistoryResult]
   }
   
-  extension [Self <: ChannelHistoryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelHistoryResult] (val x: Self) extends AnyVal {
     
     inline def setRecords(value: ChannelHistory): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     

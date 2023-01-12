@@ -18,7 +18,8 @@ object EventDescription_ {
     __obj.asInstanceOf[EventDescription_]
   }
   
-  extension [Self <: EventDescription_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventDescription_] (val x: Self) extends AnyVal {
     
     inline def setLatestDescription(value: eventDescription): Self = StObject.set(x, "latestDescription", value.asInstanceOf[js.Any])
     

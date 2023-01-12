@@ -73,7 +73,8 @@ object DependencyTemplateContext {
     __obj.asInstanceOf[DependencyTemplateContext]
   }
   
-  extension [Self <: DependencyTemplateContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DependencyTemplateContext] (val x: Self) extends AnyVal {
     
     inline def setChunkGraph(value: ChunkGraph): Self = StObject.set(x, "chunkGraph", value.asInstanceOf[js.Any])
     

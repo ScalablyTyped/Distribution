@@ -651,7 +651,8 @@ object ILegendItem {
     __obj.asInstanceOf[ILegendItem]
   }
   
-  extension [Self <: ILegendItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILegendItem] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (/* key */ js.UndefOr[Any], /* o */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

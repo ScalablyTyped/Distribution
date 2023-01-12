@@ -78,7 +78,8 @@ object BindingSelectionChangedEventArgs {
     __obj.asInstanceOf[BindingSelectionChangedEventArgs]
   }
   
-  extension [Self <: BindingSelectionChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingSelectionChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setBinding(value: Binding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     

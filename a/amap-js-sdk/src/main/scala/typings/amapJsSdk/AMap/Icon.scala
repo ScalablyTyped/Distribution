@@ -17,7 +17,8 @@ object Icon {
     __obj.asInstanceOf[Icon]
   }
   
-  extension [Self <: Icon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
     
     inline def setGetImageSize(value: () => Size): Self = StObject.set(x, "getImageSize", js.Any.fromFunction0(value))
     

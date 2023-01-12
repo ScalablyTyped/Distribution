@@ -40,7 +40,8 @@ object GridChildrenProps {
     __obj.asInstanceOf[GridChildrenProps]
   }
   
-  extension [Self <: GridChildrenProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridChildrenProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: H): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

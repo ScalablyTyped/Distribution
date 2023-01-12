@@ -19,7 +19,8 @@ object NetworkRequest {
     __obj.asInstanceOf[NetworkRequest]
   }
   
-  extension [Self <: NetworkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkRequest] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     

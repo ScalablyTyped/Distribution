@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[IdyllDocumentProps]
     }
     
-    extension [Self <: IdyllDocumentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdyllDocumentProps] (val x: Self) extends AnyVal {
       
       inline def setAst(value: AST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       

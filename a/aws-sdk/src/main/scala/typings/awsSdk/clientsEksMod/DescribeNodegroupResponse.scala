@@ -18,7 +18,8 @@ object DescribeNodegroupResponse {
     __obj.asInstanceOf[DescribeNodegroupResponse]
   }
   
-  extension [Self <: DescribeNodegroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNodegroupResponse] (val x: Self) extends AnyVal {
     
     inline def setNodegroup(value: Nodegroup): Self = StObject.set(x, "nodegroup", value.asInstanceOf[js.Any])
     

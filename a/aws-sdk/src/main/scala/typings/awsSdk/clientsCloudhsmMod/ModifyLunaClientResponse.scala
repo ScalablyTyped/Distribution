@@ -18,7 +18,8 @@ object ModifyLunaClientResponse {
     __obj.asInstanceOf[ModifyLunaClientResponse]
   }
   
-  extension [Self <: ModifyLunaClientResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyLunaClientResponse] (val x: Self) extends AnyVal {
     
     inline def setClientArn(value: ClientArn): Self = StObject.set(x, "ClientArn", value.asInstanceOf[js.Any])
     

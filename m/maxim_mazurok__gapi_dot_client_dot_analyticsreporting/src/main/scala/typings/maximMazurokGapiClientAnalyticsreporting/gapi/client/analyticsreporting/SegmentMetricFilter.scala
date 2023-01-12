@@ -31,7 +31,8 @@ object SegmentMetricFilter {
     __obj.asInstanceOf[SegmentMetricFilter]
   }
   
-  extension [Self <: SegmentMetricFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentMetricFilter] (val x: Self) extends AnyVal {
     
     inline def setComparisonValue(value: String): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
     

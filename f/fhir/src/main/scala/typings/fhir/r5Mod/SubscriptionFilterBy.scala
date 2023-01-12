@@ -60,7 +60,8 @@ object SubscriptionFilterBy {
     __obj.asInstanceOf[SubscriptionFilterBy]
   }
   
-  extension [Self <: SubscriptionFilterBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionFilterBy] (val x: Self) extends AnyVal {
     
     inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     

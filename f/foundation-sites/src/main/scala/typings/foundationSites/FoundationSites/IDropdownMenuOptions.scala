@@ -37,7 +37,8 @@ object IDropdownMenuOptions {
     __obj.asInstanceOf[IDropdownMenuOptions]
   }
   
-  extension [Self <: IDropdownMenuOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDropdownMenuOptions] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object libBlueprintMod {
       __obj.asInstanceOf[IButtonProps]
     }
     
-    extension [Self <: IButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IButtonProps] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object libBlueprintMod {
       __obj.asInstanceOf[IInputGroupProps]
     }
     
-    extension [Self <: IInputGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInputGroupProps] (val x: Self) extends AnyVal {
       
       inline def setRightIcon(value: String): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
       

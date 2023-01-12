@@ -23,7 +23,8 @@ object DeleteEventDestinationRequest {
     __obj.asInstanceOf[DeleteEventDestinationRequest]
   }
   
-  extension [Self <: DeleteEventDestinationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEventDestinationRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSetName(value: ConfigurationSetNameOrArn): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     

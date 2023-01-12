@@ -33,7 +33,8 @@ object FlinkApplicationConfigurationDescription {
     __obj.asInstanceOf[FlinkApplicationConfigurationDescription]
   }
   
-  extension [Self <: FlinkApplicationConfigurationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlinkApplicationConfigurationDescription] (val x: Self) extends AnyVal {
     
     inline def setCheckpointConfigurationDescription(value: CheckpointConfigurationDescription): Self = StObject.set(x, "CheckpointConfigurationDescription", value.asInstanceOf[js.Any])
     

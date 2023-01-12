@@ -118,7 +118,8 @@ object libTypescriptXmlMod {
       __obj.asInstanceOf[AST]
     }
     
-    extension [Self <: AST](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AST] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[AST | Element | String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object libTypescriptXmlMod {
       __obj.asInstanceOf[AdditionalProps]
     }
     
-    extension [Self <: AdditionalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalProps] (val x: Self) extends AnyVal {
       
       inline def setOnError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
@@ -191,7 +193,8 @@ object libTypescriptXmlMod {
       __obj.asInstanceOf[AstProps]
     }
     
-    extension [Self <: AstProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AstProps] (val x: Self) extends AnyVal {
       
       inline def setAst(value: JsxAST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       
@@ -218,7 +221,8 @@ object libTypescriptXmlMod {
       __obj.asInstanceOf[JsxAST]
     }
     
-    extension [Self <: JsxAST](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsxAST] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Element | String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -244,7 +248,8 @@ object libTypescriptXmlMod {
       __obj.asInstanceOf[UriProps]
     }
     
-    extension [Self <: UriProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UriProps] (val x: Self) extends AnyVal {
       
       inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
@@ -263,7 +268,8 @@ object libTypescriptXmlMod {
       __obj.asInstanceOf[UriState]
     }
     
-    extension [Self <: UriState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UriState] (val x: Self) extends AnyVal {
       
       inline def setXml(value: String): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
       
@@ -293,7 +299,8 @@ object libTypescriptXmlMod {
       __obj.asInstanceOf[XmlAST]
     }
     
-    extension [Self <: XmlAST](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlAST] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[XmlAST | String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -319,7 +326,8 @@ object libTypescriptXmlMod {
       __obj.asInstanceOf[XmlProps]
     }
     
-    extension [Self <: XmlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlProps] (val x: Self) extends AnyVal {
       
       inline def setXml(value: String): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
       
@@ -338,7 +346,8 @@ object libTypescriptXmlMod {
       __obj.asInstanceOf[XmlState]
     }
     
-    extension [Self <: XmlState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlState] (val x: Self) extends AnyVal {
       
       inline def setAst(value: JsxAST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object StartPosition {
     __obj.asInstanceOf[StartPosition]
   }
   
-  extension [Self <: StartPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartPosition] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteTime(value: Instant): Self = StObject.set(x, "AbsoluteTime", value.asInstanceOf[js.Any])
     

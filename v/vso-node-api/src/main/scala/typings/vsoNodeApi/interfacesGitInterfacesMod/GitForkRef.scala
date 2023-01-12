@@ -31,7 +31,8 @@ object GitForkRef {
     __obj.asInstanceOf[GitForkRef]
   }
   
-  extension [Self <: GitForkRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitForkRef] (val x: Self) extends AnyVal {
     
     inline def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
   }

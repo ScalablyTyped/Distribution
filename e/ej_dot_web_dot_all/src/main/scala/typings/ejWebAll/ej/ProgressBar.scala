@@ -65,7 +65,8 @@ object ProgressBar {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object ProgressBar {
       __obj.asInstanceOf[CompleteEventArgs]
     }
     
-    extension [Self <: CompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -163,7 +165,8 @@ object ProgressBar {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -200,7 +203,8 @@ object ProgressBar {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -310,7 +314,8 @@ object ProgressBar {
       __obj.asInstanceOf[typings.ejWebAll.ej.ProgressBar.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.ProgressBar.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.ProgressBar.Model] (val x: Self) extends AnyVal {
       
       inline def setChange(value: /* e */ ChangeEventArgs => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
@@ -415,7 +420,8 @@ object ProgressBar {
       __obj.asInstanceOf[StartEventArgs]
     }
     
-    extension [Self <: StartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

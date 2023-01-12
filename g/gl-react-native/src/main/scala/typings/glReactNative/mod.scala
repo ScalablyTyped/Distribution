@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[SurfaceProps]
     }
     
-    extension [Self <: SurfaceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SurfaceProps] (val x: Self) extends AnyVal {
       
       inline def setOnContextCreate(value: /* gl */ WebGLRenderingContext => Unit): Self = StObject.set(x, "onContextCreate", js.Any.fromFunction1(value))
       

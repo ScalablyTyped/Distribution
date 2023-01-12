@@ -58,7 +58,8 @@ object TickFormatStop {
     __obj.asInstanceOf[TickFormatStop]
   }
   
-  extension [Self <: TickFormatStop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TickFormatStop] (val x: Self) extends AnyVal {
     
     inline def setDtickrange(value: js.Tuple2[DTickValue | Null, DTickValue | Null]): Self = StObject.set(x, "dtickrange", value.asInstanceOf[js.Any])
     

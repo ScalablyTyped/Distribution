@@ -17,7 +17,8 @@ object ISecretBag {
     __obj.asInstanceOf[ISecretBag]
   }
   
-  extension [Self <: ISecretBag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISecretBag] (val x: Self) extends AnyVal {
     
     inline def setSecretTypeId(value: String): Self = StObject.set(x, "secretTypeId", value.asInstanceOf[js.Any])
     

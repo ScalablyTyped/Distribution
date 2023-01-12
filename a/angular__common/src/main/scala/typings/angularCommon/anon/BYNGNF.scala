@@ -44,7 +44,8 @@ object BYNGNF {
     __obj.asInstanceOf[BYNGNF]
   }
   
-  extension [Self <: BYNGNF](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BYNGNF] (val x: Self) extends AnyVal {
     
     inline def setBYN(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "BYN", value.asInstanceOf[js.Any])
     

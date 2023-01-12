@@ -53,7 +53,8 @@ object DeprecatedNavigator {
     __obj.asInstanceOf[DeprecatedNavigator]
   }
   
-  extension [Self <: DeprecatedNavigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprecatedNavigator] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentRoutes(value: () => js.Array[DeprecatedNavigatorRoute]): Self = StObject.set(x, "getCurrentRoutes", js.Any.fromFunction0(value))
     

@@ -54,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Typeofdevtools]
     }
     
-    extension [Self <: Typeofdevtools](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofdevtools] (val x: Self) extends AnyVal {
       
       inline def setInspectedWindow(value: Any): Self = StObject.set(x, "inspectedWindow", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Typeofdownloads]
     }
     
-    extension [Self <: Typeofdownloads](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofdownloads] (val x: Self) extends AnyVal {
       
       inline def setState(value: StateType): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     }
@@ -167,7 +169,8 @@ object anon {
       __obj.asInstanceOf[Typeofsystem]
     }
     
-    extension [Self <: Typeofsystem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofsystem] (val x: Self) extends AnyVal {
       
       inline def setCpu(value: Any): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       
@@ -638,7 +641,8 @@ object anon {
       __obj.asInstanceOf[Typeofwhale]
     }
     
-    extension [Self <: Typeofwhale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofwhale] (val x: Self) extends AnyVal {
       
       inline def setAlarms(value: Any): Self = StObject.set(x, "alarms", value.asInstanceOf[js.Any])
       

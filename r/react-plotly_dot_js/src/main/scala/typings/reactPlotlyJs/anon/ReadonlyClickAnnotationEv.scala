@@ -24,7 +24,8 @@ object ReadonlyClickAnnotationEv {
     __obj.asInstanceOf[ReadonlyClickAnnotationEv]
   }
   
-  extension [Self <: ReadonlyClickAnnotationEv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyClickAnnotationEv] (val x: Self) extends AnyVal {
     
     inline def setAnnotation(value: Annotations): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     

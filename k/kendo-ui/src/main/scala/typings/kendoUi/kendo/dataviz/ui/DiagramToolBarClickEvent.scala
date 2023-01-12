@@ -24,7 +24,8 @@ object DiagramToolBarClickEvent {
     __obj.asInstanceOf[DiagramToolBarClickEvent]
   }
   
-  extension [Self <: DiagramToolBarClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramToolBarClickEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

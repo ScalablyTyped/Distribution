@@ -22,7 +22,8 @@ object IDimensionItemLayout {
     __obj.asInstanceOf[IDimensionItemLayout]
   }
   
-  extension [Self <: IDimensionItemLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDimensionItemLayout] (val x: Self) extends AnyVal {
     
     inline def setQData(value: Null): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     

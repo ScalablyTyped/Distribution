@@ -18,7 +18,8 @@ object MultiLayerStorage {
     __obj.asInstanceOf[MultiLayerStorage]
   }
   
-  extension [Self <: MultiLayerStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiLayerStorage] (val x: Self) extends AnyVal {
     
     inline def setCustomerManagedS3Storage(value: CustomerManagedS3Storage): Self = StObject.set(x, "customerManagedS3Storage", value.asInstanceOf[js.Any])
   }

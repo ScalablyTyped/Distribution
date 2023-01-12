@@ -18,7 +18,8 @@ object CacheInvalidationRule {
     __obj.asInstanceOf[CacheInvalidationRule]
   }
   
-  extension [Self <: CacheInvalidationRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheInvalidationRule] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

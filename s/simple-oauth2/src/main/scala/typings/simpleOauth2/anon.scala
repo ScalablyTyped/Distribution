@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[AuthorizationMethod]
     }
     
-    extension [Self <: AuthorizationMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationMethod] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationMethod(value: header | body): Self = StObject.set(x, "authorizationMethod", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object anon {
       __obj.asInstanceOf[AuthorizeHost]
     }
     
-    extension [Self <: AuthorizeHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizeHost] (val x: Self) extends AnyVal {
       
       inline def setAuthorizeHost(value: String): Self = StObject.set(x, "authorizeHost", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object anon {
       __obj.asInstanceOf[Id[ClientIdName]]
     }
     
-    extension [Self <: Id[?], ClientIdName /* <: String */](x: Self & Id[ClientIdName]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id[?], ClientIdName /* <: String */] (val x: Self & Id[ClientIdName]) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -139,7 +142,8 @@ object anon {
       __obj.asInstanceOf[Redirecturi]
     }
     
-    extension [Self <: Redirecturi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Redirecturi] (val x: Self) extends AnyVal {
       
       inline def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
       

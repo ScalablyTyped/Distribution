@@ -37,7 +37,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[I18nextSprintfPostProcessor]
     }
     
-    extension [Self <: I18nextSprintfPostProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I18nextSprintfPostProcessor] (val x: Self) extends AnyVal {
       
       inline def setOverloadTranslationOptionHandler(value: js.Array[String] => PostProcess): Self = StObject.set(x, "overloadTranslationOptionHandler", js.Any.fromFunction1(value))
       

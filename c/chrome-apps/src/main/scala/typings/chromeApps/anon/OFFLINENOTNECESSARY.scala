@@ -22,7 +22,8 @@ object OFFLINENOTNECESSARY {
     __obj.asInstanceOf[OFFLINENOTNECESSARY]
   }
   
-  extension [Self <: OFFLINENOTNECESSARY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OFFLINENOTNECESSARY] (val x: Self) extends AnyVal {
     
     inline def setOFFLINE_NOT_NECESSARY(value: OFFLINE_NOT_NECESSARY): Self = StObject.set(x, "OFFLINE_NOT_NECESSARY", value.asInstanceOf[js.Any])
     

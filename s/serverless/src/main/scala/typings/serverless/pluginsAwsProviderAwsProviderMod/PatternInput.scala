@@ -20,7 +20,8 @@ object PatternInput {
     __obj.asInstanceOf[PatternInput]
   }
   
-  extension [Self <: PatternInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatternInput] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: Detail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

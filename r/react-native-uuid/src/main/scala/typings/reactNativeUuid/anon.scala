@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Clockseq]
     }
     
-    extension [Self <: Clockseq](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clockseq] (val x: Self) extends AnyVal {
       
       inline def setClockseq(value: Double): Self = StObject.set(x, "clockseq", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Random]
     }
     
-    extension [Self <: Random](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Random] (val x: Self) extends AnyVal {
       
       inline def setRandom(value: js.Array[Double]): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
       

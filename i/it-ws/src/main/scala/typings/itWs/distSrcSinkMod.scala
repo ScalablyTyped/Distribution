@@ -25,7 +25,8 @@ object distSrcSinkMod {
       __obj.asInstanceOf[SinkOptions]
     }
     
-    extension [Self <: SinkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinkOptions] (val x: Self) extends AnyVal {
       
       inline def setCloseOnEnd(value: Boolean): Self = StObject.set(x, "closeOnEnd", value.asInstanceOf[js.Any])
       

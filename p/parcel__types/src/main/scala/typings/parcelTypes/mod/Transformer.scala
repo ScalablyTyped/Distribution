@@ -42,7 +42,8 @@ object Transformer {
     __obj.asInstanceOf[Transformer[ConfigType]]
   }
   
-  extension [Self <: Transformer[?], ConfigType](x: Self & Transformer[ConfigType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transformer[?], ConfigType] (val x: Self & Transformer[ConfigType]) extends AnyVal {
     
     inline def setCanReuseAST(value: /* arg0 */ Ast => Boolean): Self = StObject.set(x, "canReuseAST", js.Any.fromFunction1(value))
     

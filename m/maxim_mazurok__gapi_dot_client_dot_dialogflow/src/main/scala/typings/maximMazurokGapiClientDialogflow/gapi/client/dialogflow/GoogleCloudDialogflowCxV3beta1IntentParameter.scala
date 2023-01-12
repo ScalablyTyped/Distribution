@@ -31,7 +31,8 @@ object GoogleCloudDialogflowCxV3beta1IntentParameter {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1IntentParameter]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1IntentParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1IntentParameter] (val x: Self) extends AnyVal {
     
     inline def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     

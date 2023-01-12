@@ -28,7 +28,8 @@ object InAppCampaignSchedule {
     __obj.asInstanceOf[InAppCampaignSchedule]
   }
   
-  extension [Self <: InAppCampaignSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InAppCampaignSchedule] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: string): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     

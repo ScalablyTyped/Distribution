@@ -17,7 +17,8 @@ object AppsDynamiteFrontendMember {
     __obj.asInstanceOf[AppsDynamiteFrontendMember]
   }
   
-  extension [Self <: AppsDynamiteFrontendMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteFrontendMember] (val x: Self) extends AnyVal {
     
     inline def setRoster(value: AppsDynamiteFrontendRoster): Self = StObject.set(x, "roster", value.asInstanceOf[js.Any])
     

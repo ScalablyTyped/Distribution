@@ -23,7 +23,8 @@ object ListEventIntegrationAssociationsResponse {
     __obj.asInstanceOf[ListEventIntegrationAssociationsResponse]
   }
   
-  extension [Self <: ListEventIntegrationAssociationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEventIntegrationAssociationsResponse] (val x: Self) extends AnyVal {
     
     inline def setEventIntegrationAssociations(value: EventIntegrationAssociationsList): Self = StObject.set(x, "EventIntegrationAssociations", value.asInstanceOf[js.Any])
     

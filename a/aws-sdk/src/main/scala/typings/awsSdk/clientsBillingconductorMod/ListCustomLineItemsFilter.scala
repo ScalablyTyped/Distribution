@@ -28,7 +28,8 @@ object ListCustomLineItemsFilter {
     __obj.asInstanceOf[ListCustomLineItemsFilter]
   }
   
-  extension [Self <: ListCustomLineItemsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCustomLineItemsFilter] (val x: Self) extends AnyVal {
     
     inline def setArns(value: CustomLineItemArns): Self = StObject.set(x, "Arns", value.asInstanceOf[js.Any])
     

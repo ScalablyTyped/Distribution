@@ -80,7 +80,8 @@ object DescribeDimensionKeysRequest {
     __obj.asInstanceOf[DescribeDimensionKeysRequest]
   }
   
-  extension [Self <: DescribeDimensionKeysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDimensionKeysRequest] (val x: Self) extends AnyVal {
     
     inline def setAdditionalMetrics(value: AdditionalMetricsList): Self = StObject.set(x, "AdditionalMetrics", value.asInstanceOf[js.Any])
     

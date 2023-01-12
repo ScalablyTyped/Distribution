@@ -29,7 +29,8 @@ object TabGroupChangeEvent {
     __obj.asInstanceOf[TabGroupChangeEvent]
   }
   
-  extension [Self <: TabGroupChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabGroupChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setChanged(value: js.Array[TabGroup]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     

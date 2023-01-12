@@ -78,7 +78,8 @@ object buildSrcPublisherMessageBatchMod {
       __obj.asInstanceOf[BatchPublishOptions]
     }
     
-    extension [Self <: BatchPublishOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchPublishOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxBytes(value: Double): Self = StObject.set(x, "maxBytes", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object DeleteSceneRequest {
     __obj.asInstanceOf[DeleteSceneRequest]
   }
   
-  extension [Self <: DeleteSceneRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSceneRequest] (val x: Self) extends AnyVal {
     
     inline def setSceneId(value: Id): Self = StObject.set(x, "sceneId", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object NxInfo {
     __obj.asInstanceOf[NxInfo]
   }
   
-  extension [Self <: NxInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NxInfo] (val x: Self) extends AnyVal {
     
     inline def setQId(value: String): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
     

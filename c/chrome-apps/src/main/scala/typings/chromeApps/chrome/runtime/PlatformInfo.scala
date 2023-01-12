@@ -75,7 +75,8 @@ object PlatformInfo {
     __obj.asInstanceOf[PlatformInfo]
   }
   
-  extension [Self <: PlatformInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlatformInfo] (val x: Self) extends AnyVal {
     
     inline def setArch(
       value: ToStringLiteral[

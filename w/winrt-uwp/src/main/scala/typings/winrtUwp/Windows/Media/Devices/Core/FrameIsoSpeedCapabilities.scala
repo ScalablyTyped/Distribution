@@ -26,7 +26,8 @@ object FrameIsoSpeedCapabilities {
     __obj.asInstanceOf[FrameIsoSpeedCapabilities]
   }
   
-  extension [Self <: FrameIsoSpeedCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameIsoSpeedCapabilities] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

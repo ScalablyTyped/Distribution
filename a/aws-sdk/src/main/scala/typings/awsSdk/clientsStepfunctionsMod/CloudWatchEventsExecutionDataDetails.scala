@@ -18,7 +18,8 @@ object CloudWatchEventsExecutionDataDetails {
     __obj.asInstanceOf[CloudWatchEventsExecutionDataDetails]
   }
   
-  extension [Self <: CloudWatchEventsExecutionDataDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudWatchEventsExecutionDataDetails] (val x: Self) extends AnyVal {
     
     inline def setIncluded(value: includedDetails): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object UpdateVariableRequest {
     __obj.asInstanceOf[UpdateVariableRequest]
   }
   
-  extension [Self <: UpdateVariableRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVariableRequest] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

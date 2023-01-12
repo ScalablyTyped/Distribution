@@ -20,7 +20,8 @@ object PickVictoryCommonPropssca {
     __obj.asInstanceOf[PickVictoryCommonPropssca]
   }
   
-  extension [Self <: PickVictoryCommonPropssca](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickVictoryCommonPropssca] (val x: Self) extends AnyVal {
     
     inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object Domain {
     __obj.asInstanceOf[Domain]
   }
   
-  extension [Self <: Domain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: HashAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

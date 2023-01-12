@@ -27,7 +27,8 @@ object CSFFile {
     __obj.asInstanceOf[CSFFile[TFramework]]
   }
   
-  extension [Self <: CSFFile[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & CSFFile[TFramework]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSFFile[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] (val x: Self & CSFFile[TFramework]) extends AnyVal {
     
     inline def setMeta(value: NormalizedComponentAnnotations[TFramework]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

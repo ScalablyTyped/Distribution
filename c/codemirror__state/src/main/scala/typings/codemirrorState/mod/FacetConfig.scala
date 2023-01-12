@@ -51,7 +51,8 @@ object FacetConfig {
     __obj.asInstanceOf[FacetConfig[Input, Output]]
   }
   
-  extension [Self <: FacetConfig[?, ?], Input, Output](x: Self & (FacetConfig[Input, Output])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacetConfig[?, ?], Input, Output] (val x: Self & (FacetConfig[Input, Output])) extends AnyVal {
     
     inline def setCombine(value: /* value */ js.Array[Input] => Output): Self = StObject.set(x, "combine", js.Any.fromFunction1(value))
     

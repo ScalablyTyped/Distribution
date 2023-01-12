@@ -29,7 +29,8 @@ object StatementVisitor {
     __obj.asInstanceOf[StatementVisitor]
   }
   
-  extension [Self <: StatementVisitor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatementVisitor] (val x: Self) extends AnyVal {
     
     inline def setVisitDeclareFunctionStmt(value: (DeclareFunctionStmt, Any) => Any): Self = StObject.set(x, "visitDeclareFunctionStmt", js.Any.fromFunction2(value))
     

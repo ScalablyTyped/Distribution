@@ -17,7 +17,8 @@ object GanttTooltip {
     __obj.asInstanceOf[GanttTooltip]
   }
   
-  extension [Self <: GanttTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttTooltip] (val x: Self) extends AnyVal {
     
     inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     

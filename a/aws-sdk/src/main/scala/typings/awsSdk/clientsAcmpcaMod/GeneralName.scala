@@ -50,7 +50,8 @@ object GeneralName {
     __obj.asInstanceOf[GeneralName]
   }
   
-  extension [Self <: GeneralName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneralName] (val x: Self) extends AnyVal {
     
     inline def setDirectoryName(value: ASN1Subject): Self = StObject.set(x, "DirectoryName", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object GestureOptions {
     __obj.asInstanceOf[GestureOptions[T]]
   }
   
-  extension [Self <: GestureOptions[?], T /* <: GestureKey */](x: Self & GestureOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GestureOptions[?], T /* <: GestureKey */] (val x: Self & GestureOptions[T]) extends AnyVal {
     
     inline def setFrom(
       value: Vector2 | (js.Function1[

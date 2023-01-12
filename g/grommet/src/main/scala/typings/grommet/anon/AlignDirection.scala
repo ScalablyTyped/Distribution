@@ -28,7 +28,8 @@ object AlignDirection {
     __obj.asInstanceOf[AlignDirection]
   }
   
-  extension [Self <: AlignDirection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignDirection] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignContentType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

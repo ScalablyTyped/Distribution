@@ -25,7 +25,8 @@ object Readonlynamestorepublishs {
     __obj.asInstanceOf[Readonlynamestorepublishs]
   }
   
-  extension [Self <: Readonlynamestorepublishs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynamestorepublishs] (val x: Self) extends AnyVal {
     
     inline def setName(value: storeDotpublish): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

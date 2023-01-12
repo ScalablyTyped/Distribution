@@ -18,7 +18,8 @@ object Holes {
     __obj.asInstanceOf[Holes]
   }
   
-  extension [Self <: Holes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Holes] (val x: Self) extends AnyVal {
     
     inline def setHoles(value: js.Array[js.Array[Vector2]]): Self = StObject.set(x, "holes", value.asInstanceOf[js.Any])
     

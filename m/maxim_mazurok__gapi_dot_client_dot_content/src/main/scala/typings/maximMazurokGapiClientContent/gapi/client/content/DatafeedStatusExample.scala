@@ -22,7 +22,8 @@ object DatafeedStatusExample {
     __obj.asInstanceOf[DatafeedStatusExample]
   }
   
-  extension [Self <: DatafeedStatusExample](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatafeedStatusExample] (val x: Self) extends AnyVal {
     
     inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     

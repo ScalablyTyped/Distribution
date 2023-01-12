@@ -23,7 +23,8 @@ object InstanceTagNotificationAttribute {
     __obj.asInstanceOf[InstanceTagNotificationAttribute]
   }
   
-  extension [Self <: InstanceTagNotificationAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceTagNotificationAttribute] (val x: Self) extends AnyVal {
     
     inline def setIncludeAllTagsOfInstance(value: Boolean): Self = StObject.set(x, "IncludeAllTagsOfInstance", value.asInstanceOf[js.Any])
     

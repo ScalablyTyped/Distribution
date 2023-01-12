@@ -42,7 +42,8 @@ object clientsConnectcontactlensMod {
       __obj.asInstanceOf[Categories]
     }
     
-    extension [Self <: Categories](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Categories] (val x: Self) extends AnyVal {
       
       inline def setMatchedCategories(value: MatchedCategories): Self = StObject.set(x, "MatchedCategories", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object clientsConnectcontactlensMod {
       __obj.asInstanceOf[CategoryDetails]
     }
     
-    extension [Self <: CategoryDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CategoryDetails] (val x: Self) extends AnyVal {
       
       inline def setPointsOfInterest(value: PointsOfInterest): Self = StObject.set(x, "PointsOfInterest", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object clientsConnectcontactlensMod {
       __obj.asInstanceOf[CharacterOffsets]
     }
     
-    extension [Self <: CharacterOffsets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CharacterOffsets] (val x: Self) extends AnyVal {
       
       inline def setBeginOffsetChar(value: CharacterOffset): Self = StObject.set(x, "BeginOffsetChar", value.asInstanceOf[js.Any])
       
@@ -119,7 +122,8 @@ object clientsConnectcontactlensMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -173,7 +177,8 @@ object clientsConnectcontactlensMod {
       __obj.asInstanceOf[IssueDetected]
     }
     
-    extension [Self <: IssueDetected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueDetected] (val x: Self) extends AnyVal {
       
       inline def setCharacterOffsets(value: CharacterOffsets): Self = StObject.set(x, "CharacterOffsets", value.asInstanceOf[js.Any])
     }
@@ -210,7 +215,8 @@ object clientsConnectcontactlensMod {
       __obj.asInstanceOf[ListRealtimeContactAnalysisSegmentsRequest]
     }
     
-    extension [Self <: ListRealtimeContactAnalysisSegmentsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListRealtimeContactAnalysisSegmentsRequest] (val x: Self) extends AnyVal {
       
       inline def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
       
@@ -245,7 +251,8 @@ object clientsConnectcontactlensMod {
       __obj.asInstanceOf[ListRealtimeContactAnalysisSegmentsResponse]
     }
     
-    extension [Self <: ListRealtimeContactAnalysisSegmentsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListRealtimeContactAnalysisSegmentsResponse] (val x: Self) extends AnyVal {
       
       inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
@@ -290,7 +297,8 @@ object clientsConnectcontactlensMod {
       __obj.asInstanceOf[PointOfInterest]
     }
     
-    extension [Self <: PointOfInterest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointOfInterest] (val x: Self) extends AnyVal {
       
       inline def setBeginOffsetMillis(value: OffsetMillis): Self = StObject.set(x, "BeginOffsetMillis", value.asInstanceOf[js.Any])
       
@@ -319,7 +327,8 @@ object clientsConnectcontactlensMod {
       __obj.asInstanceOf[RealtimeContactAnalysisSegment]
     }
     
-    extension [Self <: RealtimeContactAnalysisSegment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RealtimeContactAnalysisSegment] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: Categories): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
       
@@ -398,7 +407,8 @@ object clientsConnectcontactlensMod {
       __obj.asInstanceOf[Transcript]
     }
     
-    extension [Self <: Transcript](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transcript] (val x: Self) extends AnyVal {
       
       inline def setBeginOffsetMillis(value: OffsetMillis): Self = StObject.set(x, "BeginOffsetMillis", value.asInstanceOf[js.Any])
       

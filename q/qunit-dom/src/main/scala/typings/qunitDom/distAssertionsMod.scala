@@ -39,7 +39,8 @@ object distAssertionsMod {
       __obj.asInstanceOf[AssertionResult]
     }
     
-    extension [Self <: AssertionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssertionResult] (val x: Self) extends AnyVal {
       
       inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
@@ -820,7 +821,8 @@ object distAssertionsMod {
       __obj.asInstanceOf[ExistsOptions]
     }
     
-    extension [Self <: ExistsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExistsOptions] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     }

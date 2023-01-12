@@ -54,7 +54,8 @@ object SegmentedControlIOSProps {
     __obj.asInstanceOf[SegmentedControlIOSProps]
   }
   
-  extension [Self <: SegmentedControlIOSProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentedControlIOSProps] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

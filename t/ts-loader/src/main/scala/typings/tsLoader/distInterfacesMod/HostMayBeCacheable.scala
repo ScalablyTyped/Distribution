@@ -22,7 +22,8 @@ object HostMayBeCacheable {
     __obj.asInstanceOf[HostMayBeCacheable]
   }
   
-  extension [Self <: HostMayBeCacheable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostMayBeCacheable] (val x: Self) extends AnyVal {
     
     inline def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
     

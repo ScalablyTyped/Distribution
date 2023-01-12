@@ -35,7 +35,8 @@ object IZoom {
     __obj.asInstanceOf[IZoom]
   }
   
-  extension [Self <: IZoom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IZoom] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

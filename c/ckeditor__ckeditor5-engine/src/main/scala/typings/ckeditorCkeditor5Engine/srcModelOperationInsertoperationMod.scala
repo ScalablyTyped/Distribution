@@ -173,7 +173,8 @@ object srcModelOperationInsertoperationMod {
       __obj.asInstanceOf[InsertOperation]
     }
     
-    extension [Self <: InsertOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InsertOperation] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: () => InsertOperation): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
       

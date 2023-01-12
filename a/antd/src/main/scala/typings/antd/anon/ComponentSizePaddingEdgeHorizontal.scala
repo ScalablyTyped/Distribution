@@ -17,7 +17,8 @@ object ComponentSizePaddingEdgeHorizontal {
     __obj.asInstanceOf[ComponentSizePaddingEdgeHorizontal]
   }
   
-  extension [Self <: ComponentSizePaddingEdgeHorizontal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentSizePaddingEdgeHorizontal] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: SizePaddingEdgeHorizontal): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

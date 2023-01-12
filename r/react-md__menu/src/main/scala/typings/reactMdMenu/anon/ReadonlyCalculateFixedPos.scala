@@ -40,7 +40,8 @@ object ReadonlyCalculateFixedPos {
     __obj.asInstanceOf[ReadonlyCalculateFixedPos]
   }
   
-  extension [Self <: ReadonlyCalculateFixedPos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyCalculateFixedPos] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: PositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

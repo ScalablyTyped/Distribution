@@ -97,7 +97,8 @@ object libComponentsCalendarCalendarMod {
       __obj.asInstanceOf[ICalendarState]
     }
     
-    extension [Self <: ICalendarState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarState] (val x: Self) extends AnyVal {
       
       inline def setIsDayPickerVisible(value: Boolean): Self = StObject.set(x, "isDayPickerVisible", value.asInstanceOf[js.Any])
       

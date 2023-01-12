@@ -167,7 +167,8 @@ object reactSwiperReactMod {
       __obj.asInstanceOf[SlideData]
     }
     
-    extension [Self <: SlideData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideData] (val x: Self) extends AnyVal {
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
@@ -2328,7 +2329,8 @@ object reactSwiperReactMod {
       __obj.asInstanceOf[SwiperProps]
     }
     
-    extension [Self <: SwiperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwiperProps] (val x: Self) extends AnyVal {
       
       inline def setA11y(value: A11yOptions): Self = StObject.set(x, "a11y", value.asInstanceOf[js.Any])
       
@@ -3908,7 +3910,8 @@ object reactSwiperReactMod {
       __obj.asInstanceOf[SwiperSlideProps]
     }
     
-    extension [Self <: SwiperSlideProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwiperSlideProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | (js.Function1[/* slideData */ SlideData, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

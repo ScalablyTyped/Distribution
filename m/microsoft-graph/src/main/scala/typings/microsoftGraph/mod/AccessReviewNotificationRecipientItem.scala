@@ -22,7 +22,8 @@ object AccessReviewNotificationRecipientItem {
     __obj.asInstanceOf[AccessReviewNotificationRecipientItem]
   }
   
-  extension [Self <: AccessReviewNotificationRecipientItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReviewNotificationRecipientItem] (val x: Self) extends AnyVal {
     
     inline def setNotificationRecipientScope(value: NullableOption[AccessReviewNotificationRecipientScope]): Self = StObject.set(x, "notificationRecipientScope", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ChannelDestroyed {
     __obj.asInstanceOf[ChannelDestroyed]
   }
   
-  extension [Self <: ChannelDestroyed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelDestroyed] (val x: Self) extends AnyVal {
     
     inline def setCause(value: Double): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

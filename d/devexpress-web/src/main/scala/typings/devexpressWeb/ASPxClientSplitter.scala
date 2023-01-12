@@ -115,7 +115,8 @@ object ASPxClientSplitter {
     __obj.asInstanceOf[ASPxClientSplitter]
   }
   
-  extension [Self <: ASPxClientSplitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSplitter] (val x: Self) extends AnyVal {
     
     inline def setGetLayoutData(value: () => String): Self = StObject.set(x, "GetLayoutData", js.Any.fromFunction0(value))
     

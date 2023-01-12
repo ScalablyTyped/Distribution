@@ -150,7 +150,8 @@ object PartialRedisOptions {
     __obj.asInstanceOf[PartialRedisOptions]
   }
   
-  extension [Self <: PartialRedisOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRedisOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
     

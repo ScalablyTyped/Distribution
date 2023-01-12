@@ -18,7 +18,8 @@ object Xavc4kIntraVbrProfileSettings {
     __obj.asInstanceOf[Xavc4kIntraVbrProfileSettings]
   }
   
-  extension [Self <: Xavc4kIntraVbrProfileSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Xavc4kIntraVbrProfileSettings] (val x: Self) extends AnyVal {
     
     inline def setXavcClass(value: Xavc4kIntraVbrProfileClass): Self = StObject.set(x, "XavcClass", value.asInstanceOf[js.Any])
     

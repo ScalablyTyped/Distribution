@@ -20,7 +20,8 @@ object MappingBinaryProperty {
     __obj.asInstanceOf[MappingBinaryProperty]
   }
   
-  extension [Self <: MappingBinaryProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingBinaryProperty] (val x: Self) extends AnyVal {
     
     inline def setType(value: binary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

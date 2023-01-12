@@ -30,7 +30,8 @@ object ConnectionPathInFragmentData {
     __obj.asInstanceOf[ConnectionPathInFragmentData]
   }
   
-  extension [Self <: ConnectionPathInFragmentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionPathInFragmentData] (val x: Self) extends AnyVal {
     
     inline def setConnectionPathInFragmentData(value: js.Array[String | Double]): Self = StObject.set(x, "connectionPathInFragmentData", value.asInstanceOf[js.Any])
     

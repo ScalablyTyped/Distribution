@@ -33,7 +33,8 @@ object Options {
       __obj.asInstanceOf[BufferLoad]
     }
     
-    extension [Self <: BufferLoad](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferLoad] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object Options {
       __obj.asInstanceOf[CopyMarker]
     }
     
-    extension [Self <: CopyMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyMarker] (val x: Self) extends AnyVal {
       
       inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object Options {
       __obj.asInstanceOf[FindDisplayMarker]
     }
     
-    extension [Self <: FindDisplayMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindDisplayMarker] (val x: Self) extends AnyVal {
       
       inline def setContainedInBufferRange(value: RangeCompatible): Self = StObject.set(x, "containedInBufferRange", value.asInstanceOf[js.Any])
       
@@ -294,7 +297,8 @@ object Options {
       __obj.asInstanceOf[FindMarker]
     }
     
-    extension [Self <: FindMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindMarker] (val x: Self) extends AnyVal {
       
       inline def setContainsPoint(value: PointCompatible): Self = StObject.set(x, "containsPoint", value.asInstanceOf[js.Any])
       
@@ -349,7 +353,8 @@ object Options {
       __obj.asInstanceOf[ScanContext]
     }
     
-    extension [Self <: ScanContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanContext] (val x: Self) extends AnyVal {
       
       inline def setLeadingContextLineCount(value: Double): Self = StObject.set(x, "leadingContextLineCount", value.asInstanceOf[js.Any])
       

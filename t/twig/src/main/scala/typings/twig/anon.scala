@@ -52,7 +52,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: TwigDotexpressionDottypeDotsubexpressionDotend): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object anon {
       __obj.asInstanceOf[Array]
     }
     
-    extension [Self <: Array](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
       
       inline def setArray(value: End): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
@@ -162,7 +164,8 @@ object anon {
       __obj.asInstanceOf[Binary]
     }
     
-    extension [Self <: Binary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Binary] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: TwigDotexpressionDottypeDotoperatorDotbinary): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
@@ -183,7 +186,8 @@ object anon {
       __obj.asInstanceOf[Brackets]
     }
     
-    extension [Self <: Brackets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Brackets] (val x: Self) extends AnyVal {
       
       inline def setBrackets(value: TwigDotexpressionDottypeDotkeyDotbrackets): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
       
@@ -274,7 +278,8 @@ object anon {
       __obj.asInstanceOf[Cache]
     }
     
-    extension [Self <: Cache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
       
       inline def setCache(value: /* value */ Boolean => Unit): Self = StObject.set(x, "cache", js.Any.fromFunction1(value))
       
@@ -339,7 +344,8 @@ object anon {
       __obj.asInstanceOf[Compile]
     }
     
-    extension [Self <: Compile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compile] (val x: Self) extends AnyVal {
       
       inline def setCompile(value: Value & Any => Stack & (Omit[Any, value])): Self = StObject.set(x, "compile", js.Any.fromFunction1(value))
       
@@ -362,7 +368,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: TwigDotexpressionDottypeDotarrayDotend): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -383,7 +390,8 @@ object anon {
       __obj.asInstanceOf[EndStart]
     }
     
-    extension [Self <: EndStart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndStart] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: TwigDotexpressionDottypeDotparameterDotend): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -409,7 +417,8 @@ object anon {
       __obj.asInstanceOf[Stack]
     }
     
-    extension [Self <: Stack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stack] (val x: Self) extends AnyVal {
       
       inline def setStack(value: js.Array[CompiledToken]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
@@ -430,7 +439,8 @@ object anon {
       __obj.asInstanceOf[Start]
     }
     
-    extension [Self <: Start](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Start] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: TwigDotexpressionDottypeDotobjectDotend): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -452,7 +462,8 @@ object anon {
       __obj.asInstanceOf[Twigoptions]
     }
     
-    extension [Self <: Twigoptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Twigoptions] (val x: Self) extends AnyVal {
       
       inline def `setTwig options`(value: Any): Self = StObject.set(x, "twig options", value.asInstanceOf[js.Any])
       
@@ -471,7 +482,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

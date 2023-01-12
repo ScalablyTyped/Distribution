@@ -24,7 +24,8 @@ object mod {
       __obj.asInstanceOf[IWallaby]
     }
     
-    extension [Self <: IWallaby](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWallaby] (val x: Self) extends AnyVal {
       
       inline def setCompilers(value: IWallabyBuiltInCompilers): Self = StObject.set(x, "compilers", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object mod {
       __obj.asInstanceOf[IWallabyCompilerResult]
     }
     
-    extension [Self <: IWallabyCompilerResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWallabyCompilerResult] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object mod {
       __obj.asInstanceOf[IWallabyConfig]
     }
     
-    extension [Self <: IWallabyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWallabyConfig] (val x: Self) extends AnyVal {
       
       inline def setCompilers(value: IWallabyCompilers): Self = StObject.set(x, "compilers", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object mod {
       __obj.asInstanceOf[IWallabyEnvironment]
     }
     
-    extension [Self <: IWallabyEnvironment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWallabyEnvironment] (val x: Self) extends AnyVal {
       
       inline def setParams(value: IWallabyEnvironmentParameters): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -203,7 +207,8 @@ object mod {
       __obj.asInstanceOf[IWallabyEnvironmentParameters]
     }
     
-    extension [Self <: IWallabyEnvironmentParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWallabyEnvironmentParameters] (val x: Self) extends AnyVal {
       
       inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
@@ -228,7 +233,8 @@ object mod {
       __obj.asInstanceOf[IWallabyEnvironmentViewportSize]
     }
     
-    extension [Self <: IWallabyEnvironmentViewportSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWallabyEnvironmentViewportSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -257,7 +263,8 @@ object mod {
       __obj.asInstanceOf[IWallabyFile]
     }
     
-    extension [Self <: IWallabyFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWallabyFile] (val x: Self) extends AnyVal {
       
       inline def setChangeExt(value: String => Unit): Self = StObject.set(x, "changeExt", js.Any.fromFunction1(value))
       
@@ -290,7 +297,8 @@ object mod {
       __obj.asInstanceOf[IWallabyFilePattern]
     }
     
-    extension [Self <: IWallabyFilePattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWallabyFilePattern] (val x: Self) extends AnyVal {
       
       inline def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
@@ -321,7 +329,8 @@ object mod {
       __obj.asInstanceOf[IWallabyWorkers]
     }
     
-    extension [Self <: IWallabyWorkers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWallabyWorkers] (val x: Self) extends AnyVal {
       
       inline def setRecycle(value: Boolean): Self = StObject.set(x, "recycle", value.asInstanceOf[js.Any])
       

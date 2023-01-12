@@ -29,7 +29,8 @@ object ReferenceImage {
     __obj.asInstanceOf[ReferenceImage]
   }
   
-  extension [Self <: ReferenceImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceImage] (val x: Self) extends AnyVal {
     
     inline def setBoundingPolys(value: js.Array[BoundingPoly]): Self = StObject.set(x, "boundingPolys", value.asInstanceOf[js.Any])
     

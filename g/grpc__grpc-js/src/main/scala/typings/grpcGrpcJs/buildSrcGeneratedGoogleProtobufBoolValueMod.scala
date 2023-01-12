@@ -17,7 +17,8 @@ object buildSrcGeneratedGoogleProtobufBoolValueMod {
       __obj.asInstanceOf[BoolValue]
     }
     
-    extension [Self <: BoolValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoolValue] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -36,7 +37,8 @@ object buildSrcGeneratedGoogleProtobufBoolValueMod {
       __obj.asInstanceOf[BoolValueOutput]
     }
     
-    extension [Self <: BoolValueOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoolValueOutput] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

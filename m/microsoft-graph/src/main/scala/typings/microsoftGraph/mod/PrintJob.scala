@@ -40,7 +40,8 @@ object PrintJob {
     __obj.asInstanceOf[PrintJob]
   }
   
-  extension [Self <: PrintJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintJob] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: PrintJobConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

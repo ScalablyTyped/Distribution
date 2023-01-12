@@ -30,7 +30,8 @@ object distSrcSocketToConnMod {
       __obj.asInstanceOf[SocketToConnOptions]
     }
     
-    extension [Self <: SocketToConnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketToConnOptions] (val x: Self) extends AnyVal {
       
       inline def setLocalAddr(value: Multiaddr_): Self = StObject.set(x, "localAddr", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object UsernameConfigurationType {
     __obj.asInstanceOf[UsernameConfigurationType]
   }
   
-  extension [Self <: UsernameConfigurationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsernameConfigurationType] (val x: Self) extends AnyVal {
     
     inline def setCaseSensitive(value: WrappedBooleanType): Self = StObject.set(x, "CaseSensitive", value.asInstanceOf[js.Any])
   }

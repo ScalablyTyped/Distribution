@@ -92,7 +92,8 @@ object libUnicodeBidiServiceMod {
       __obj.asInstanceOf[UnicodeBidiService]
     }
     
-    extension [Self <: UnicodeBidiService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnicodeBidiService] (val x: Self) extends AnyVal {
       
       inline def setGetDirection(value: String => BidiDirection): Self = StObject.set(x, "getDirection", js.Any.fromFunction1(value))
       

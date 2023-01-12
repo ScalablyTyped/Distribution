@@ -139,7 +139,8 @@ object libComponentsListListDottypesMod {
       __obj.asInstanceOf[IListOnRenderRootProps[T]]
     }
     
-    extension [Self <: IListOnRenderRootProps[?], T](x: Self & IListOnRenderRootProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IListOnRenderRootProps[?], T] (val x: Self & IListOnRenderRootProps[T]) extends AnyVal {
       
       inline def setDivProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "divProps", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object libComponentsListListDottypesMod {
       __obj.asInstanceOf[IListOnRenderSurfaceProps[T]]
     }
     
-    extension [Self <: IListOnRenderSurfaceProps[?], T](x: Self & IListOnRenderSurfaceProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IListOnRenderSurfaceProps[?], T] (val x: Self & IListOnRenderSurfaceProps[T]) extends AnyVal {
       
       inline def setDivProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "divProps", value.asInstanceOf[js.Any])
       
@@ -384,7 +386,8 @@ object libComponentsListListDottypesMod {
       __obj.asInstanceOf[IListProps[T]]
     }
     
-    extension [Self <: IListProps[?], T](x: Self & IListProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IListProps[?], T] (val x: Self & IListProps[T]) extends AnyVal {
       
       inline def setComponentRef(value: IRefObject[IList]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
@@ -534,7 +537,8 @@ object libComponentsListListDottypesMod {
       __obj.asInstanceOf[IPage[T]]
     }
     
-    extension [Self <: IPage[?], T](x: Self & IPage[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPage[?], T] (val x: Self & IPage[T]) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -591,7 +595,8 @@ object libComponentsListListDottypesMod {
       __obj.asInstanceOf[IPageProps[T]]
     }
     
-    extension [Self <: IPageProps[?], T](x: Self & IPageProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPageProps[?], T] (val x: Self & IPageProps[T]) extends AnyVal {
       
       inline def setPage(value: IPage[T]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
@@ -630,7 +635,8 @@ object libComponentsListListDottypesMod {
       __obj.asInstanceOf[IPageSpecification]
     }
     
-    extension [Self <: IPageSpecification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPageSpecification] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

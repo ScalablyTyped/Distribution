@@ -22,7 +22,8 @@ object GenerateSymbolParameters {
     __obj.asInstanceOf[GenerateSymbolParameters]
   }
   
-  extension [Self <: GenerateSymbolParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateSymbolParameters] (val x: Self) extends AnyVal {
     
     inline def setSvgImage(value: String | FormData | HTMLFormElement): Self = StObject.set(x, "svgImage", value.asInstanceOf[js.Any])
     

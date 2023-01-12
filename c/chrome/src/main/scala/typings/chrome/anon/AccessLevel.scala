@@ -15,7 +15,8 @@ object AccessLevel {
     __obj.asInstanceOf[AccessLevel]
   }
   
-  extension [Self <: AccessLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessLevel] (val x: Self) extends AnyVal {
     
     inline def setAccessLevel(value: typings.chrome.chrome.storage.AccessLevel): Self = StObject.set(x, "accessLevel", value.asInstanceOf[js.Any])
   }

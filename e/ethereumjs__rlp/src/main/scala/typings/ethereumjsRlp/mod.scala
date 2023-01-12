@@ -93,7 +93,8 @@ object mod {
       __obj.asInstanceOf[Decoded]
     }
     
-    extension [Self <: Decoded](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decoded] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array | NestedUint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

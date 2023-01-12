@@ -65,7 +65,8 @@ object anon {
       __obj.asInstanceOf[AddCssRequests]
     }
     
-    extension [Self <: AddCssRequests](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddCssRequests] (val x: Self) extends AnyVal {
       
       inline def setAddCssRequests(value: (Any, Any) => Unit): Self = StObject.set(x, "addCssRequests", js.Any.fromFunction2(value))
       
@@ -118,7 +119,8 @@ object anon {
       __obj.asInstanceOf[Browsers]
     }
     
-    extension [Self <: Browsers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Browsers] (val x: Self) extends AnyVal {
       
       inline def setBrowsers(value: Any): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,8 @@ object anon {
       __obj.asInstanceOf[Dependencies]
     }
     
-    extension [Self <: Dependencies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dependencies] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: Any): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -164,7 +167,8 @@ object anon {
       __obj.asInstanceOf[ExpireCache]
     }
     
-    extension [Self <: ExpireCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpireCache] (val x: Self) extends AnyVal {
       
       inline def setExpireCache(value: Any => Unit): Self = StObject.set(x, "expireCache", js.Any.fromFunction1(value))
       
@@ -187,7 +191,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setBrowsers(value: Any): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
       
@@ -261,7 +266,8 @@ object anon {
       __obj.asInstanceOf[GetCGModulePostOrderIndex]
     }
     
-    extension [Self <: GetCGModulePostOrderIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCGModulePostOrderIndex] (val x: Self) extends AnyVal {
       
       inline def setGetCGModulePostOrderIndex(value: (Any, Any) => Any): Self = StObject.set(x, "getCGModulePostOrderIndex", js.Any.fromFunction2(value))
       
@@ -329,7 +335,8 @@ object anon {
       __obj.asInstanceOf[GetOwnerIndex]
     }
     
-    extension [Self <: GetOwnerIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOwnerIndex] (val x: Self) extends AnyVal {
       
       inline def setGetOwnerIndex(value: Any): Self = StObject.set(x, "getOwnerIndex", value.asInstanceOf[js.Any])
       
@@ -361,7 +368,8 @@ object anon {
       __obj.asInstanceOf[Owner]
     }
     
-    extension [Self <: Owner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Owner] (val x: Self) extends AnyVal {
       
       inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       

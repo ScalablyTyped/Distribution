@@ -29,7 +29,8 @@ object ListWorkloadSharesInput {
     __obj.asInstanceOf[ListWorkloadSharesInput]
   }
   
-  extension [Self <: ListWorkloadSharesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListWorkloadSharesInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListWorkloadSharesMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object NavigationEventPayload {
     __obj.asInstanceOf[NavigationEventPayload]
   }
   
-  extension [Self <: NavigationEventPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationEventPayload] (val x: Self) extends AnyVal {
     
     inline def setAction(value: NavigationAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

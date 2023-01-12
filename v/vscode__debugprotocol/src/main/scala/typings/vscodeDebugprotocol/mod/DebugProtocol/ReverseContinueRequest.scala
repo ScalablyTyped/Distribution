@@ -32,7 +32,8 @@ object ReverseContinueRequest {
     __obj.asInstanceOf[ReverseContinueRequest]
   }
   
-  extension [Self <: ReverseContinueRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReverseContinueRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: ReverseContinueArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object ListImagesFilter {
     __obj.asInstanceOf[ListImagesFilter]
   }
   
-  extension [Self <: ListImagesFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListImagesFilter] (val x: Self) extends AnyVal {
     
     inline def setTagStatus(value: TagStatus): Self = StObject.set(x, "tagStatus", value.asInstanceOf[js.Any])
     

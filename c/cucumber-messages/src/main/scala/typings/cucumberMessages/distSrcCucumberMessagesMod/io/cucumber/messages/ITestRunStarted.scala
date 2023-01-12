@@ -17,7 +17,8 @@ object ITestRunStarted {
     __obj.asInstanceOf[ITestRunStarted]
   }
   
-  extension [Self <: ITestRunStarted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITestRunStarted] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: ITimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     

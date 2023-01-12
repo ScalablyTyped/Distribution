@@ -19,7 +19,8 @@ object InteractionOptions {
     __obj.asInstanceOf[InteractionOptions]
   }
   
-  extension [Self <: InteractionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractionOptions] (val x: Self) extends AnyVal {
     
     inline def setHandleEvent(value: MapBrowserEvent => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
   }

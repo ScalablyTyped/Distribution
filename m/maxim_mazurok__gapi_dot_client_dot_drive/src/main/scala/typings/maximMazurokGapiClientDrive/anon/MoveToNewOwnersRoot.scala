@@ -75,7 +75,8 @@ object MoveToNewOwnersRoot {
     __obj.asInstanceOf[MoveToNewOwnersRoot]
   }
   
-  extension [Self <: MoveToNewOwnersRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveToNewOwnersRoot] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

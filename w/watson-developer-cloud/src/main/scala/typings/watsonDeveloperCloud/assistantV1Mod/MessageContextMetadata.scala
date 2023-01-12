@@ -20,7 +20,8 @@ object MessageContextMetadata {
     __obj.asInstanceOf[MessageContextMetadata]
   }
   
-  extension [Self <: MessageContextMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageContextMetadata] (val x: Self) extends AnyVal {
     
     inline def setDeployment(value: String): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     

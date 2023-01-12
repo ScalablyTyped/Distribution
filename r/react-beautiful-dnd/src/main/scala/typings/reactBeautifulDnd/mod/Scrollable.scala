@@ -34,7 +34,8 @@ object Scrollable {
     __obj.asInstanceOf[Scrollable]
   }
   
-  extension [Self <: Scrollable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scrollable] (val x: Self) extends AnyVal {
     
     inline def setFrameClient(value: BoxModel): Self = StObject.set(x, "frameClient", value.asInstanceOf[js.Any])
     

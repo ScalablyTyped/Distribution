@@ -36,7 +36,8 @@ object ConfigInternal {
     __obj.asInstanceOf[ConfigInternal]
   }
   
-  extension [Self <: ConfigInternal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigInternal] (val x: Self) extends AnyVal {
     
     inline def setClientPlatform(value: ClientPlatform): Self = StObject.set(x, "clientPlatform", value.asInstanceOf[js.Any])
     

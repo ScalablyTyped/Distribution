@@ -23,7 +23,8 @@ object FolderLauncherOptions {
     __obj.asInstanceOf[FolderLauncherOptions]
   }
   
-  extension [Self <: FolderLauncherOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderLauncherOptions] (val x: Self) extends AnyVal {
     
     inline def setDesiredRemainingView(value: ViewSizePreference): Self = StObject.set(x, "desiredRemainingView", value.asInstanceOf[js.Any])
     

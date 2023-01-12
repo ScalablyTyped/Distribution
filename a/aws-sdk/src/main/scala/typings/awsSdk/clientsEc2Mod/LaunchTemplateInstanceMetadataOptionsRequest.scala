@@ -38,7 +38,8 @@ object LaunchTemplateInstanceMetadataOptionsRequest {
     __obj.asInstanceOf[LaunchTemplateInstanceMetadataOptionsRequest]
   }
   
-  extension [Self <: LaunchTemplateInstanceMetadataOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateInstanceMetadataOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setHttpEndpoint(value: LaunchTemplateInstanceMetadataEndpointState): Self = StObject.set(x, "HttpEndpoint", value.asInstanceOf[js.Any])
     

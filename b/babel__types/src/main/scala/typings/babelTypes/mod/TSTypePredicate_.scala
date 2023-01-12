@@ -29,7 +29,8 @@ object TSTypePredicate_ {
     __obj.asInstanceOf[TSTypePredicate_]
   }
   
-  extension [Self <: TSTypePredicate_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTypePredicate_] (val x: Self) extends AnyVal {
     
     inline def setAsserts(value: Boolean): Self = StObject.set(x, "asserts", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object GoogleCloudVisionV1p3beta1ProductSearchResults {
     __obj.asInstanceOf[GoogleCloudVisionV1p3beta1ProductSearchResults]
   }
   
-  extension [Self <: GoogleCloudVisionV1p3beta1ProductSearchResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p3beta1ProductSearchResults] (val x: Self) extends AnyVal {
     
     inline def setIndexTime(value: String): Self = StObject.set(x, "indexTime", value.asInstanceOf[js.Any])
     

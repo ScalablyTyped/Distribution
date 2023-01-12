@@ -23,7 +23,8 @@ object CameraPopoverArrowDirectionObject {
     __obj.asInstanceOf[CameraPopoverArrowDirectionObject]
   }
   
-  extension [Self <: CameraPopoverArrowDirectionObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraPopoverArrowDirectionObject] (val x: Self) extends AnyVal {
     
     inline def setARROW_ANY(value: Double): Self = StObject.set(x, "ARROW_ANY", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object MessageDescriptorHtml {
     __obj.asInstanceOf[MessageDescriptorHtml]
   }
   
-  extension [Self <: MessageDescriptorHtml](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageDescriptorHtml] (val x: Self) extends AnyVal {
     
     inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
   }

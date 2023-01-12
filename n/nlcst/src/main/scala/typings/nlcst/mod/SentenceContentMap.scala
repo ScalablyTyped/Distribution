@@ -23,7 +23,8 @@ object SentenceContentMap {
     __obj.asInstanceOf[SentenceContentMap]
   }
   
-  extension [Self <: SentenceContentMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SentenceContentMap] (val x: Self) extends AnyVal {
     
     inline def setPunctuation(value: Punctuation): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
     

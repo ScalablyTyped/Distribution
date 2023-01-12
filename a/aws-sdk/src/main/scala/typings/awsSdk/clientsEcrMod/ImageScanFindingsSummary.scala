@@ -28,7 +28,8 @@ object ImageScanFindingsSummary {
     __obj.asInstanceOf[ImageScanFindingsSummary]
   }
   
-  extension [Self <: ImageScanFindingsSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageScanFindingsSummary] (val x: Self) extends AnyVal {
     
     inline def setFindingSeverityCounts(value: FindingSeverityCounts): Self = StObject.set(x, "findingSeverityCounts", value.asInstanceOf[js.Any])
     

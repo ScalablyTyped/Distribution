@@ -19,7 +19,8 @@ object CountrySelectJs {
       __obj.asInstanceOf[CountryData]
     }
     
-    extension [Self <: CountryData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountryData] (val x: Self) extends AnyVal {
       
       inline def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object CountrySelectJs {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDefaultCountry(value: String): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
       

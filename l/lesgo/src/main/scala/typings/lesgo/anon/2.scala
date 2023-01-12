@@ -17,7 +17,8 @@ object `2` {
     __obj.asInstanceOf[`2`[T]]
   }
   
-  extension [Self <: `2`[?], T /* <: Record[String, SQLValue] */](x: Self & `2`[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `2`[?], T /* <: Record[String, SQLValue] */] (val x: Self & `2`[T]) extends AnyVal {
     
     inline def setKey(value: /* keyof T */ String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }

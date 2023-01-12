@@ -19,7 +19,8 @@ object IntegerRange {
     __obj.asInstanceOf[IntegerRange]
   }
   
-  extension [Self <: IntegerRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegerRange] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: NullableOption[Double]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

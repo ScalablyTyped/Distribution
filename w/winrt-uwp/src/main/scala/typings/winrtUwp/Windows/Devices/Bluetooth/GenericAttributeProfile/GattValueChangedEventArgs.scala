@@ -21,7 +21,8 @@ object GattValueChangedEventArgs {
     __obj.asInstanceOf[GattValueChangedEventArgs]
   }
   
-  extension [Self <: GattValueChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GattValueChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCharacteristicValue(value: IBuffer): Self = StObject.set(x, "characteristicValue", value.asInstanceOf[js.Any])
     

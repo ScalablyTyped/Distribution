@@ -37,7 +37,8 @@ object DependencyException {
     __obj.asInstanceOf[DependencyException]
   }
   
-  extension [Self <: DependencyException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DependencyException] (val x: Self) extends AnyVal {
     
     inline def setUnsatisfiedDependencies(value: SafeArray[XElement]): Self = StObject.set(x, "UnsatisfiedDependencies", value.asInstanceOf[js.Any])
   }

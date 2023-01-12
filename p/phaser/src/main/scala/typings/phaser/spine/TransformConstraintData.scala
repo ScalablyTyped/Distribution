@@ -61,7 +61,8 @@ object TransformConstraintData {
     __obj.asInstanceOf[TransformConstraintData]
   }
   
-  extension [Self <: TransformConstraintData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformConstraintData] (val x: Self) extends AnyVal {
     
     inline def setBones(value: js.Array[BoneData]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     

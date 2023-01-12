@@ -50,7 +50,8 @@ object anon {
       __obj.asInstanceOf[PartialTouchBackendOption]
     }
     
-    extension [Self <: PartialTouchBackendOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTouchBackendOption] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object XAccessibleTableSelection {
     __obj.asInstanceOf[XAccessibleTableSelection]
   }
   
-  extension [Self <: XAccessibleTableSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleTableSelection] (val x: Self) extends AnyVal {
     
     inline def setSelectColumn(value: Double => Boolean): Self = StObject.set(x, "selectColumn", js.Any.fromFunction1(value))
     

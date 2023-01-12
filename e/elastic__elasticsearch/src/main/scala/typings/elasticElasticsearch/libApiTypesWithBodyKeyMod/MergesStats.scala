@@ -56,7 +56,8 @@ object MergesStats {
     __obj.asInstanceOf[MergesStats]
   }
   
-  extension [Self <: MergesStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergesStats] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: long): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

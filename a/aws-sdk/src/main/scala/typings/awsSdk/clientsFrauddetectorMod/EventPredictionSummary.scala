@@ -43,7 +43,8 @@ object EventPredictionSummary {
     __obj.asInstanceOf[EventPredictionSummary]
   }
   
-  extension [Self <: EventPredictionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventPredictionSummary] (val x: Self) extends AnyVal {
     
     inline def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object MakePhoneCallOptions {
     __obj.asInstanceOf[MakePhoneCallOptions]
   }
   
-  extension [Self <: MakePhoneCallOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MakePhoneCallOptions] (val x: Self) extends AnyVal {
     
     inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
   }

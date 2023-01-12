@@ -28,7 +28,8 @@ object OnPremiseConfiguration {
     __obj.asInstanceOf[OnPremiseConfiguration]
   }
   
-  extension [Self <: OnPremiseConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnPremiseConfiguration] (val x: Self) extends AnyVal {
     
     inline def setHostUrl(value: Url): Self = StObject.set(x, "HostUrl", value.asInstanceOf[js.Any])
     

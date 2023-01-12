@@ -36,7 +36,8 @@ object AutoCompleteCommand {
     __obj.asInstanceOf[AutoCompleteCommand]
   }
   
-  extension [Self <: AutoCompleteCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoCompleteCommand] (val x: Self) extends AnyVal {
     
     inline def setAction(value: () => Unit): Self = StObject.set(x, "action", js.Any.fromFunction0(value))
     

@@ -21,7 +21,8 @@ object MultipleAlbumsResponse {
     __obj.asInstanceOf[MultipleAlbumsResponse]
   }
   
-  extension [Self <: MultipleAlbumsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleAlbumsResponse] (val x: Self) extends AnyVal {
     
     inline def setAlbums(value: js.Array[AlbumObjectFull]): Self = StObject.set(x, "albums", value.asInstanceOf[js.Any])
     

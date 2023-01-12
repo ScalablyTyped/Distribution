@@ -34,7 +34,8 @@ object Tube {
     __obj.asInstanceOf[Tube]
   }
   
-  extension [Self <: Tube](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tube] (val x: Self) extends AnyVal {
     
     inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object Complete {
     __obj.asInstanceOf[Complete]
   }
   
-  extension [Self <: Complete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Complete] (val x: Self) extends AnyVal {
     
     inline def setBase(value: Style): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

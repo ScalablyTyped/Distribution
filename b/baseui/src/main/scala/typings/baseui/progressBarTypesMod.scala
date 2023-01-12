@@ -29,7 +29,8 @@ object progressBarTypesMod {
       __obj.asInstanceOf[ProgressBarOverrides]
     }
     
-    extension [Self <: ProgressBarOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressBarOverrides] (val x: Self) extends AnyVal {
       
       inline def setBar(value: Override[Any]): Self = StObject.set(x, "Bar", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object progressBarTypesMod {
       __obj.asInstanceOf[ProgressBarProps]
     }
     
-    extension [Self <: ProgressBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressBarProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object progressBarTypesMod {
       __obj.asInstanceOf[ProgressBarRoundedOverrides]
     }
     
-    extension [Self <: ProgressBarRoundedOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressBarRoundedOverrides] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: Override[Any]): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
@@ -224,7 +227,8 @@ object progressBarTypesMod {
       __obj.asInstanceOf[ProgressBarRoundedProps]
     }
     
-    extension [Self <: ProgressBarRoundedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressBarRoundedProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -297,7 +301,8 @@ object progressBarTypesMod {
       __obj.asInstanceOf[StyleProps]
     }
     
-    extension [Self <: StyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleProps] (val x: Self) extends AnyVal {
       
       inline def set$index(value: Double): Self = StObject.set(x, "$index", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object OverridePullRequestApprovalRulesInput {
     __obj.asInstanceOf[OverridePullRequestApprovalRulesInput]
   }
   
-  extension [Self <: OverridePullRequestApprovalRulesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverridePullRequestApprovalRulesInput] (val x: Self) extends AnyVal {
     
     inline def setOverrideStatus(value: OverrideStatus): Self = StObject.set(x, "overrideStatus", value.asInstanceOf[js.Any])
     

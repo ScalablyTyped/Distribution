@@ -27,7 +27,8 @@ object distTypesClassicEditorSystemDistComponentsContentManagerMod extends Short
       __obj.asInstanceOf[ContentManagerProps]
     }
     
-    extension [Self <: ContentManagerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentManagerProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

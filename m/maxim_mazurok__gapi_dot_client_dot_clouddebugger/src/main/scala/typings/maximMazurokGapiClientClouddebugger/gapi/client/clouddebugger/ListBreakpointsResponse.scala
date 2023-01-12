@@ -22,7 +22,8 @@ object ListBreakpointsResponse {
     __obj.asInstanceOf[ListBreakpointsResponse]
   }
   
-  extension [Self <: ListBreakpointsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBreakpointsResponse] (val x: Self) extends AnyVal {
     
     inline def setBreakpoints(value: js.Array[Breakpoint]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     

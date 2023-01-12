@@ -22,7 +22,8 @@ object SortStep {
     __obj.asInstanceOf[SortStep]
   }
   
-  extension [Self <: SortStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortStep] (val x: Self) extends AnyVal {
     
     inline def setBY(value: SortByProperty | js.Array[SortByProperty]): Self = StObject.set(x, "BY", value.asInstanceOf[js.Any])
     

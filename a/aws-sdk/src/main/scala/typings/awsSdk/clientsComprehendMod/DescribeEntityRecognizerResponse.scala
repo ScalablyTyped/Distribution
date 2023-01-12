@@ -18,7 +18,8 @@ object DescribeEntityRecognizerResponse {
     __obj.asInstanceOf[DescribeEntityRecognizerResponse]
   }
   
-  extension [Self <: DescribeEntityRecognizerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEntityRecognizerResponse] (val x: Self) extends AnyVal {
     
     inline def setEntityRecognizerProperties(value: EntityRecognizerProperties): Self = StObject.set(x, "EntityRecognizerProperties", value.asInstanceOf[js.Any])
     

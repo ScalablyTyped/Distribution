@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[ApiNamespace]
     }
     
-    extension [Self <: ApiNamespace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiNamespace] (val x: Self) extends AnyVal {
       
       inline def setApiNamespace(value: String): Self = StObject.set(x, "apiNamespace", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Boolean | (MatchBy[Any, Any])): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -127,7 +130,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setFetch(value: Context): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
@@ -164,7 +168,8 @@ object anon {
       __obj.asInstanceOf[DisableSortingHarEntries]
     }
     
-    extension [Self <: DisableSortingHarEntries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisableSortingHarEntries] (val x: Self) extends AnyVal {
       
       inline def setDisableSortingHarEntries(value: Boolean): Self = StObject.set(x, "disableSortingHarEntries", value.asInstanceOf[js.Any])
       
@@ -199,7 +204,8 @@ object anon {
       __obj.asInstanceOf[Exclude]
     }
     
-    extension [Self <: Exclude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exclude] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -232,7 +238,8 @@ object anon {
       __obj.asInstanceOf[Hash]
     }
     
-    extension [Self <: Hash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Boolean | (MatchBy[String, String])): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -297,7 +304,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -322,7 +330,8 @@ object anon {
       __obj.asInstanceOf[Page]
     }
     
-    extension [Self <: Page](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
       
       inline def setPage(value: Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
@@ -380,7 +389,8 @@ object anon {
       __obj.asInstanceOf[PartialPollyConfig]
     }
     
-    extension [Self <: PartialPollyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPollyConfig] (val x: Self) extends AnyVal {
       
       inline def setAdapterOptions(value: Dictkey): Self = StObject.set(x, "adapterOptions", value.asInstanceOf[js.Any])
       
@@ -465,7 +475,8 @@ object anon {
       __obj.asInstanceOf[RecordingsDir]
     }
     
-    extension [Self <: RecordingsDir](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordingsDir] (val x: Self) extends AnyVal {
       
       inline def setRecordingsDir(value: String): Self = StObject.set(x, "recordingsDir", value.asInstanceOf[js.Any])
       

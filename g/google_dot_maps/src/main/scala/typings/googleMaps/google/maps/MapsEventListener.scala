@@ -23,7 +23,8 @@ object MapsEventListener {
     __obj.asInstanceOf[MapsEventListener]
   }
   
-  extension [Self <: MapsEventListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapsEventListener] (val x: Self) extends AnyVal {
     
     inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }

@@ -77,7 +77,8 @@ object ScalingActivity {
     __obj.asInstanceOf[ScalingActivity]
   }
   
-  extension [Self <: ScalingActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalingActivity] (val x: Self) extends AnyVal {
     
     inline def setActivityId(value: ResourceId): Self = StObject.set(x, "ActivityId", value.asInstanceOf[js.Any])
     

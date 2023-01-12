@@ -29,7 +29,8 @@ object Image {
     __obj.asInstanceOf[Image]
   }
   
-  extension [Self <: Image](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: /* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

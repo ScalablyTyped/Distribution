@@ -63,7 +63,8 @@ object CustomLineItemListElement {
     __obj.asInstanceOf[CustomLineItemListElement]
   }
   
-  extension [Self <: CustomLineItemListElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLineItemListElement] (val x: Self) extends AnyVal {
     
     inline def setArn(value: CustomLineItemArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

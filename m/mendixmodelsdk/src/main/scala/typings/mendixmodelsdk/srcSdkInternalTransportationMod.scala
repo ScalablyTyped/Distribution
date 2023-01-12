@@ -22,7 +22,8 @@ object srcSdkInternalTransportationMod {
       __obj.asInstanceOf[IRequestFileDownloadOptions]
     }
     
-    extension [Self <: IRequestFileDownloadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRequestFileDownloadOptions] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: RequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object srcSdkInternalTransportationMod {
       __obj.asInstanceOf[IRequestMultipartBinaryFileUploadOptions]
     }
     
-    extension [Self <: IRequestMultipartBinaryFileUploadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRequestMultipartBinaryFileUploadOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object srcSdkInternalTransportationMod {
       __obj.asInstanceOf[IRequestOptions]
     }
     
-    extension [Self <: IRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -121,7 +124,8 @@ object srcSdkInternalTransportationMod {
       __obj.asInstanceOf[IResponse]
     }
     
-    extension [Self <: IResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResponse] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
@@ -161,7 +165,8 @@ object srcSdkInternalTransportationMod {
       __obj.asInstanceOf[ITransportation]
     }
     
-    extension [Self <: ITransportation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITransportation] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: (IRequestOptions, IResponseCallback[Any], IErrorCallback) => Unit): Self = StObject.set(x, "request", js.Any.fromFunction3(value))
       

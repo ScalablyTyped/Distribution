@@ -40,7 +40,8 @@ object GridBaseCfg {
     __obj.asInstanceOf[GridBaseCfg]
   }
   
-  extension [Self <: GridBaseCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridBaseCfg] (val x: Self) extends AnyVal {
     
     inline def setAlternateColor(value: String | js.Array[String]): Self = StObject.set(x, "alternateColor", value.asInstanceOf[js.Any])
     

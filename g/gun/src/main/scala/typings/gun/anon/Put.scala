@@ -17,7 +17,8 @@ object Put {
     __obj.asInstanceOf[Put[DataType]]
   }
   
-  extension [Self <: Put[?], DataType](x: Self & Put[DataType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Put[?], DataType] (val x: Self & Put[DataType]) extends AnyVal {
     
     inline def setPut(value: DisallowArray[Saveable[DataType]] => Unit): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
   }

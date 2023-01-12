@@ -37,7 +37,8 @@ object AssociateTransitGatewayConnectPeerRequest {
     __obj.asInstanceOf[AssociateTransitGatewayConnectPeerRequest]
   }
   
-  extension [Self <: AssociateTransitGatewayConnectPeerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateTransitGatewayConnectPeerRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     

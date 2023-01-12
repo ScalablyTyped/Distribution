@@ -123,7 +123,8 @@ object libEventqueueMod {
       __obj.asInstanceOf[EventQueue[T]]
     }
     
-    extension [Self <: EventQueue[?], T](x: Self & EventQueue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventQueue[?], T] (val x: Self & EventQueue[T]) extends AnyVal {
       
       inline def setAdd(value: (T, Double) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       

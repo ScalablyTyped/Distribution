@@ -29,7 +29,8 @@ object PaddingVertical {
     __obj.asInstanceOf[PaddingVertical]
   }
   
-  extension [Self <: PaddingVertical](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaddingVertical] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

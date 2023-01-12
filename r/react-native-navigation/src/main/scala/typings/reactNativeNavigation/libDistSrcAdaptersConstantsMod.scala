@@ -47,7 +47,8 @@ object libDistSrcAdaptersConstantsMod {
       __obj.asInstanceOf[NavigationConstants]
     }
     
-    extension [Self <: NavigationConstants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationConstants] (val x: Self) extends AnyVal {
       
       inline def setBackButtonId(value: String): Self = StObject.set(x, "backButtonId", value.asInstanceOf[js.Any])
       

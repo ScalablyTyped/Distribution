@@ -24,7 +24,8 @@ object PlayParameterObject {
     __obj.asInstanceOf[PlayParameterObject]
   }
   
-  extension [Self <: PlayParameterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayParameterObject] (val x: Self) extends AnyVal {
     
     inline def setContext_uri(value: String): Self = StObject.set(x, "context_uri", value.asInstanceOf[js.Any])
     

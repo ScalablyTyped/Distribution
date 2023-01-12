@@ -40,7 +40,8 @@ object XInitialization {
     __obj.asInstanceOf[XInitialization]
   }
   
-  extension [Self <: XInitialization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInitialization] (val x: Self) extends AnyVal {
     
     inline def setInitialize(value: SeqEquiv[Any] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
   }

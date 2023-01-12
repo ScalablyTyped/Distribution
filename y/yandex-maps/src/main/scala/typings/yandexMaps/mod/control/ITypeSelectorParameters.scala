@@ -16,7 +16,8 @@ object ITypeSelectorParameters {
     __obj.asInstanceOf[ITypeSelectorParameters]
   }
   
-  extension [Self <: ITypeSelectorParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITypeSelectorParameters] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: PanoramasItemMode): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

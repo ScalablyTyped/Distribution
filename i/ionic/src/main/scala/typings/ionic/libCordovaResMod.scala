@@ -45,7 +45,8 @@ object libCordovaResMod {
       __obj.asInstanceOf[CheckCordovaResDeps]
     }
     
-    extension [Self <: CheckCordovaResDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckCordovaResDeps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }
@@ -62,7 +63,8 @@ object libCordovaResMod {
       __obj.asInstanceOf[CordovaResSchema]
     }
     
-    extension [Self <: CordovaResSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CordovaResSchema] (val x: Self) extends AnyVal {
       
       inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object libCordovaResMod {
       __obj.asInstanceOf[RunCordovaResDeps]
     }
     
-    extension [Self <: RunCordovaResDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunCordovaResDeps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

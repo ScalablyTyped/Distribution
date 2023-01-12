@@ -71,7 +71,8 @@ object ansi256 {
     __obj.asInstanceOf[ansi256]
   }
   
-  extension [Self <: ansi256](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ansi256] (val x: Self) extends AnyVal {
     
     inline def setAnsi16(value: ANSI256_ => ANSI16_): Self = StObject.set(x, "ansi16", js.Any.fromFunction1(value))
     

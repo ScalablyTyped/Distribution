@@ -19,7 +19,8 @@ object GoogleCloudAssetV1Resource {
     __obj.asInstanceOf[GoogleCloudAssetV1Resource]
   }
   
-  extension [Self <: GoogleCloudAssetV1Resource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssetV1Resource] (val x: Self) extends AnyVal {
     
     inline def setAnalysisState(value: IamPolicyAnalysisState): Self = StObject.set(x, "analysisState", value.asInstanceOf[js.Any])
     

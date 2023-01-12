@@ -23,7 +23,8 @@ object BuiltinSlotTypeMetadata {
     __obj.asInstanceOf[BuiltinSlotTypeMetadata]
   }
   
-  extension [Self <: BuiltinSlotTypeMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuiltinSlotTypeMetadata] (val x: Self) extends AnyVal {
     
     inline def setSignature(value: BuiltinSlotTypeSignature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     

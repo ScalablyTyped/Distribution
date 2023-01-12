@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "azure__logger"
-version := "1.0.3-fb52b0"
+version := "1.0.3-b4442d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

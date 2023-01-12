@@ -21,7 +21,8 @@ object CSVLayerQueryExtentOptions {
     __obj.asInstanceOf[CSVLayerQueryExtentOptions]
   }
   
-  extension [Self <: CSVLayerQueryExtentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSVLayerQueryExtentOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

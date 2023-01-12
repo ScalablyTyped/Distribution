@@ -25,7 +25,8 @@ object StepRatio {
     __obj.asInstanceOf[StepRatio]
   }
   
-  extension [Self <: StepRatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepRatio] (val x: Self) extends AnyVal {
     
     inline def setStepRatio(value: Double): Self = StObject.set(x, "stepRatio", value.asInstanceOf[js.Any])
     

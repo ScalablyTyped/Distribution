@@ -18,7 +18,8 @@ object ProvisioningStatusInfo {
     __obj.asInstanceOf[ProvisioningStatusInfo]
   }
   
-  extension [Self <: ProvisioningStatusInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisioningStatusInfo] (val x: Self) extends AnyVal {
     
     inline def setErrorInformation(value: NullableOption[ProvisioningErrorInfo]): Self = StObject.set(x, "errorInformation", value.asInstanceOf[js.Any])
     

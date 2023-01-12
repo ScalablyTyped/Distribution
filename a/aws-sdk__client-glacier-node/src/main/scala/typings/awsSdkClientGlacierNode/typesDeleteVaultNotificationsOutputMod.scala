@@ -25,7 +25,8 @@ object typesDeleteVaultNotificationsOutputMod {
       __obj.asInstanceOf[DeleteVaultNotificationsOutput]
     }
     
-    extension [Self <: DeleteVaultNotificationsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteVaultNotificationsOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }

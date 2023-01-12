@@ -18,7 +18,8 @@ object NotificationHideEvent {
     __obj.asInstanceOf[NotificationHideEvent]
   }
   
-  extension [Self <: NotificationHideEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationHideEvent] (val x: Self) extends AnyVal {
     
     inline def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object OnCommandEventArgs {
     __obj.asInstanceOf[OnCommandEventArgs[T]]
   }
   
-  extension [Self <: OnCommandEventArgs[?], T /* <: SlickData */](x: Self & OnCommandEventArgs[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnCommandEventArgs[?], T /* <: SlickData */] (val x: Self & OnCommandEventArgs[T]) extends AnyVal {
     
     inline def setButton(value: HeaderButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

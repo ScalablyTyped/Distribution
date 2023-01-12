@@ -19,7 +19,8 @@ object SurfaceTooltipOpenEvent {
     __obj.asInstanceOf[SurfaceTooltipOpenEvent]
   }
   
-  extension [Self <: SurfaceTooltipOpenEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurfaceTooltipOpenEvent] (val x: Self) extends AnyVal {
     
     inline def setElement(value: typings.kendoUi.kendo.drawing.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

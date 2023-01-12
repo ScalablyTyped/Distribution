@@ -214,7 +214,8 @@ object TextGraphicObject {
     __obj.asInstanceOf[TextGraphicObject]
   }
   
-  extension [Self <: TextGraphicObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextGraphicObject] (val x: Self) extends AnyVal {
     
     inline def setActualSize(value: Size): Self = StObject.set(x, "ActualSize", value.asInstanceOf[js.Any])
     

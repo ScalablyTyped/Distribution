@@ -38,7 +38,8 @@ object ListTableRowsResult {
     __obj.asInstanceOf[ListTableRowsResult]
   }
   
-  extension [Self <: ListTableRowsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTableRowsResult] (val x: Self) extends AnyVal {
     
     inline def setColumnIds(value: ResourceIds): Self = StObject.set(x, "columnIds", value.asInstanceOf[js.Any])
     

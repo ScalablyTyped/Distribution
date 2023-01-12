@@ -76,7 +76,8 @@ object Node {
     __obj.asInstanceOf[Node]
   }
   
-  extension [Self <: Node](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
     
     inline def setCoerce(value: Node => Node): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
     

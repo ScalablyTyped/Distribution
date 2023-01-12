@@ -28,7 +28,8 @@ object distTypesHttpMod {
       __obj.asInstanceOf[Endpoint]
     }
     
-    extension [Self <: Endpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object distTypesHttpMod {
       __obj.asInstanceOf[HttpHandlerOptions]
     }
     
-    extension [Self <: HttpHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object distTypesHttpMod {
       __obj.asInstanceOf[HttpMessage]
     }
     
-    extension [Self <: HttpMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpMessage] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -127,7 +130,8 @@ object distTypesHttpMod {
       __obj.asInstanceOf[HttpRequest]
     }
     
-    extension [Self <: HttpRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpRequest] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     }
@@ -146,7 +150,8 @@ object distTypesHttpMod {
       __obj.asInstanceOf[HttpResponse]
     }
     
-    extension [Self <: HttpResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpResponse] (val x: Self) extends AnyVal {
       
       inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
@@ -168,7 +173,8 @@ object distTypesHttpMod {
       __obj.asInstanceOf[ResolvedHttpResponse]
     }
     
-    extension [Self <: ResolvedHttpResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedHttpResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }

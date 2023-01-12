@@ -30,7 +30,8 @@ object CardLayoutListSection {
     __obj.asInstanceOf[CardLayoutListSection]
   }
   
-  extension [Self <: CardLayoutListSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardLayoutListSection] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: typings.officeJs.officeJsStrings.List): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
   }

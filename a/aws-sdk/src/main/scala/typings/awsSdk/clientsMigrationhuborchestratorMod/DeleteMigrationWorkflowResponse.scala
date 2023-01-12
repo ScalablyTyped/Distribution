@@ -28,7 +28,8 @@ object DeleteMigrationWorkflowResponse {
     __obj.asInstanceOf[DeleteMigrationWorkflowResponse]
   }
   
-  extension [Self <: DeleteMigrationWorkflowResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMigrationWorkflowResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

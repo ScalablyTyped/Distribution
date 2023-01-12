@@ -22,7 +22,8 @@ object TouchList {
     __obj.asInstanceOf[TouchList]
   }
   
-  extension [Self <: TouchList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchList] (val x: Self) extends AnyVal {
     
     inline def setIdentifiedTouch(value: Double => Touch): Self = StObject.set(x, "identifiedTouch", js.Any.fromFunction1(value))
     

@@ -40,7 +40,8 @@ object IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionM
     __obj.asInstanceOf[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMeasure]
   }
   
-  extension [Self <: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMeasure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMeasure] (val x: Self) extends AnyVal {
     
     inline def setAggregator(value: js.Function): Self = StObject.set(x, "aggregator", value.asInstanceOf[js.Any])
     

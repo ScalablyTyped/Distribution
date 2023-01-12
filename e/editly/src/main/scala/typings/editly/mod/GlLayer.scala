@@ -39,7 +39,8 @@ object GlLayer {
     __obj.asInstanceOf[GlLayer]
   }
   
-  extension [Self <: GlLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlLayer] (val x: Self) extends AnyVal {
     
     inline def setFragmentPath(value: String): Self = StObject.set(x, "fragmentPath", value.asInstanceOf[js.Any])
     

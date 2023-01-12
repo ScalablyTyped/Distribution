@@ -23,7 +23,8 @@ object libTypesMod {
       __obj.asInstanceOf[IDisposable]
     }
     
-    extension [Self <: IDisposable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDisposable] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Any): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
@@ -42,7 +43,8 @@ object libTypesMod {
       __obj.asInstanceOf[ISupportConverting[T]]
     }
     
-    extension [Self <: ISupportConverting[?], T](x: Self & ISupportConverting[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISupportConverting[?], T] (val x: Self & ISupportConverting[T]) extends AnyVal {
       
       inline def setApplyConverter(value: SimpleConverter[T] => ISupportConverting[T]): Self = StObject.set(x, "applyConverter", js.Any.fromFunction1(value))
     }
@@ -59,7 +61,8 @@ object libTypesMod {
       __obj.asInstanceOf[ISupportCopyFrom[T]]
     }
     
-    extension [Self <: ISupportCopyFrom[?], T](x: Self & ISupportCopyFrom[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISupportCopyFrom[?], T] (val x: Self & ISupportCopyFrom[T]) extends AnyVal {
       
       inline def setCopyFrom(value: T => Unit): Self = StObject.set(x, "copyFrom", js.Any.fromFunction1(value))
     }

@@ -18,7 +18,8 @@ object ImportVolumeResult {
     __obj.asInstanceOf[ImportVolumeResult]
   }
   
-  extension [Self <: ImportVolumeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportVolumeResult] (val x: Self) extends AnyVal {
     
     inline def setConversionTask(value: ConversionTask): Self = StObject.set(x, "ConversionTask", value.asInstanceOf[js.Any])
     

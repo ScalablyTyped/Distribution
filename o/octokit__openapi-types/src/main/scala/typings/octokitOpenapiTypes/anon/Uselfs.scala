@@ -21,7 +21,8 @@ object Uselfs {
     __obj.asInstanceOf[Uselfs]
   }
   
-  extension [Self <: Uselfs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Uselfs] (val x: Self) extends AnyVal {
     
     inline def setUse_lfs(value: opt_in | opt_out): Self = StObject.set(x, "use_lfs", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object CustomConnectorProfileProperties {
     __obj.asInstanceOf[CustomConnectorProfileProperties]
   }
   
-  extension [Self <: CustomConnectorProfileProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomConnectorProfileProperties] (val x: Self) extends AnyVal {
     
     inline def setOAuth2Properties(value: OAuth2Properties): Self = StObject.set(x, "oAuth2Properties", value.asInstanceOf[js.Any])
     

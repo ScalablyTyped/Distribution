@@ -57,7 +57,8 @@ object HidInputReport {
     __obj.asInstanceOf[HidInputReport]
   }
   
-  extension [Self <: HidInputReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HidInputReport] (val x: Self) extends AnyVal {
     
     inline def setActivatedBooleanControls(value: IVectorView[HidBooleanControl]): Self = StObject.set(x, "activatedBooleanControls", value.asInstanceOf[js.Any])
     

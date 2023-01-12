@@ -17,7 +17,8 @@ object ChangedPaneType {
     __obj.asInstanceOf[ChangedPaneType]
   }
   
-  extension [Self <: ChangedPaneType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangedPaneType] (val x: Self) extends AnyVal {
     
     inline def setAddedPane(value: Pane): Self = StObject.set(x, "addedPane", value.asInstanceOf[js.Any])
     

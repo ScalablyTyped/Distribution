@@ -23,7 +23,8 @@ object Completion {
     __obj.asInstanceOf[Completion]
   }
   
-  extension [Self <: Completion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Completion] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

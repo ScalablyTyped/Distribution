@@ -17,7 +17,8 @@ object AggregationsAggregation {
     __obj.asInstanceOf[AggregationsAggregation]
   }
   
-  extension [Self <: AggregationsAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsAggregation] (val x: Self) extends AnyVal {
     
     inline def setMeta(value: Metadata): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

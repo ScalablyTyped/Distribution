@@ -49,7 +49,8 @@ object HorizontalAlignment {
     __obj.asInstanceOf[HorizontalAlignment]
   }
   
-  extension [Self <: HorizontalAlignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HorizontalAlignment] (val x: Self) extends AnyVal {
     
     inline def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

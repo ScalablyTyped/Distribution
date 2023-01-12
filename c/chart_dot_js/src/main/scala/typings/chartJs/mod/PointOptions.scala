@@ -55,7 +55,8 @@ object PointOptions {
     __obj.asInstanceOf[PointOptions]
   }
   
-  extension [Self <: PointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointOptions] (val x: Self) extends AnyVal {
     
     inline def setDrawActiveElementsOnTop(value: Boolean): Self = StObject.set(x, "drawActiveElementsOnTop", value.asInstanceOf[js.Any])
     

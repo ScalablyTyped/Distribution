@@ -34,7 +34,8 @@ object distApiFetchMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOAuthToken(value: String): Self = StObject.set(x, "oAuthToken", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object distApiFetchMod {
       __obj.asInstanceOf[Response[T]]
     }
     
-    extension [Self <: Response[?], T](x: Self & Response[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response[?], T] (val x: Self & Response[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

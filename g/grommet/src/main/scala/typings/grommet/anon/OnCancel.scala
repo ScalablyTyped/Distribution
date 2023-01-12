@@ -17,7 +17,8 @@ object OnCancel {
     __obj.asInstanceOf[OnCancel]
   }
   
-  extension [Self <: OnCancel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnCancel] (val x: Self) extends AnyVal {
     
     inline def setOnCancel(value: Any): Self = StObject.set(x, "onCancel", value.asInstanceOf[js.Any])
     

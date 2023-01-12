@@ -18,7 +18,8 @@ object GetCloudFormationStackRecordsRequest {
     __obj.asInstanceOf[GetCloudFormationStackRecordsRequest]
   }
   
-  extension [Self <: GetCloudFormationStackRecordsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCloudFormationStackRecordsRequest] (val x: Self) extends AnyVal {
     
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     

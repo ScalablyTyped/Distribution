@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Matcher]
     }
     
-    extension [Self <: Matcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matcher] (val x: Self) extends AnyVal {
       
       inline def setMatcher(
         value: /* req */ Request_[
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[PostLoadHook]
     }
     
-    extension [Self <: PostLoadHook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostLoadHook] (val x: Self) extends AnyVal {
       
       inline def setPostLoadHook(
         value: (/* matcherfn */ typings.istanbulMiddleware.mod.Matcher, /* transformer */ Any, /* verbose */ Boolean) => PostLoadHookFn
@@ -96,7 +98,8 @@ object anon {
       __obj.asInstanceOf[ResetOnGet]
     }
     
-    extension [Self <: ResetOnGet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResetOnGet] (val x: Self) extends AnyVal {
       
       inline def setResetOnGet(value: Boolean): Self = StObject.set(x, "resetOnGet", value.asInstanceOf[js.Any])
       

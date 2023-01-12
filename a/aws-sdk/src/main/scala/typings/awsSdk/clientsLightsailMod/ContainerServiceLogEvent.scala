@@ -23,7 +23,8 @@ object ContainerServiceLogEvent {
     __obj.asInstanceOf[ContainerServiceLogEvent]
   }
   
-  extension [Self <: ContainerServiceLogEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerServiceLogEvent] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

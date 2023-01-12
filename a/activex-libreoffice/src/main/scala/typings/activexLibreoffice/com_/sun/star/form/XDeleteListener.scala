@@ -39,7 +39,8 @@ object XDeleteListener {
     __obj.asInstanceOf[XDeleteListener]
   }
   
-  extension [Self <: XDeleteListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDeleteListener] (val x: Self) extends AnyVal {
     
     inline def setApproveDelete(value: EventObject => Boolean): Self = StObject.set(x, "approveDelete", js.Any.fromFunction1(value))
     

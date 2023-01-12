@@ -23,7 +23,8 @@ object TextDecoration {
     __obj.asInstanceOf[TextDecoration]
   }
   
-  extension [Self <: TextDecoration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDecoration] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: ExtendType[PropsOf[FC[AnchorExtendedProps]]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     

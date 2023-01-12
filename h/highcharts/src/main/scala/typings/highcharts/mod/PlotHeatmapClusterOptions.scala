@@ -72,7 +72,8 @@ object PlotHeatmapClusterOptions {
     __obj.asInstanceOf[PlotHeatmapClusterOptions]
   }
   
-  extension [Self <: PlotHeatmapClusterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHeatmapClusterOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
     

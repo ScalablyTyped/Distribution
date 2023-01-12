@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Partialdefault]
     }
     
-    extension [Self <: Partialdefault](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Partialdefault] (val x: Self) extends AnyVal {
       
       inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
       

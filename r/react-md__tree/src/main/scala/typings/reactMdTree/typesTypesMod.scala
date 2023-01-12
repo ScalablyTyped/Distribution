@@ -128,7 +128,8 @@ object typesTypesMod {
       __obj.asInstanceOf[BaseTreeItem]
     }
     
-    extension [Self <: BaseTreeItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTreeItem] (val x: Self) extends AnyVal {
       
       inline def setIsCustom(value: Boolean): Self = StObject.set(x, "isCustom", value.asInstanceOf[js.Any])
       
@@ -542,7 +543,8 @@ object typesTypesMod {
       __obj.asInstanceOf[ConfigurableTreeItemProps]
     }
     
-    extension [Self <: ConfigurableTreeItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurableTreeItemProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1400,7 +1402,8 @@ object typesTypesMod {
       __obj.asInstanceOf[ProvidedTreeItemProps]
     }
     
-    extension [Self <: ProvidedTreeItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidedTreeItemProps] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
@@ -1474,7 +1477,8 @@ object typesTypesMod {
       __obj.asInstanceOf[ProvidedTreeProps]
     }
     
-    extension [Self <: ProvidedTreeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidedTreeProps] (val x: Self) extends AnyVal {
       
       inline def setExpanderIcon(value: ReactNode): Self = StObject.set(x, "expanderIcon", value.asInstanceOf[js.Any])
       
@@ -1542,7 +1546,8 @@ object typesTypesMod {
       __obj.asInstanceOf[TreeItemExpansion]
     }
     
-    extension [Self <: TreeItemExpansion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeItemExpansion] (val x: Self) extends AnyVal {
       
       inline def setExpandedIds(value: ExpandedIds): Self = StObject.set(x, "expandedIds", value.asInstanceOf[js.Any])
       
@@ -1579,7 +1584,8 @@ object typesTypesMod {
       __obj.asInstanceOf[TreeItemExpansionIcon]
     }
     
-    extension [Self <: TreeItemExpansionIcon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeItemExpansionIcon] (val x: Self) extends AnyVal {
       
       inline def setExpanderIcon(value: ReactNode): Self = StObject.set(x, "expanderIcon", value.asInstanceOf[js.Any])
       
@@ -1617,7 +1623,8 @@ object typesTypesMod {
       __obj.asInstanceOf[TreeItemIds]
     }
     
-    extension [Self <: TreeItemIds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeItemIds] (val x: Self) extends AnyVal {
       
       inline def setItemId(value: TreeItemId): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
       
@@ -2418,7 +2425,8 @@ object typesTypesMod {
       __obj.asInstanceOf[TreeItemProps]
     }
     
-    extension [Self <: TreeItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeItemProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -3290,7 +3298,8 @@ object typesTypesMod {
       __obj.asInstanceOf[TreeItemSelection]
     }
     
-    extension [Self <: TreeItemSelection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeItemSelection] (val x: Self) extends AnyVal {
       
       inline def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
       
@@ -3333,7 +3342,8 @@ object typesTypesMod {
       __obj.asInstanceOf[TreeItemStates]
     }
     
-    extension [Self <: TreeItemStates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeItemStates] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
@@ -3473,7 +3483,8 @@ object typesTypesMod {
       __obj.asInstanceOf[TreeProps[T]]
     }
     
-    extension [Self <: TreeProps[?], T /* <: BaseTreeItem */](x: Self & TreeProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeProps[?], T /* <: BaseTreeItem */] (val x: Self & TreeProps[T]) extends AnyVal {
       
       inline def setData(value: TreeData[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

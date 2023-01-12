@@ -19,7 +19,8 @@ object UIkitAlertOptions {
     __obj.asInstanceOf[UIkitAlertOptions]
   }
   
-  extension [Self <: UIkitAlertOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitAlertOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Boolean | String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

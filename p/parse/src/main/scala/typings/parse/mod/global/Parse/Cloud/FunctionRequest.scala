@@ -23,7 +23,8 @@ object FunctionRequest {
     __obj.asInstanceOf[FunctionRequest[T]]
   }
   
-  extension [Self <: FunctionRequest[?], T /* <: Params */](x: Self & FunctionRequest[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionRequest[?], T /* <: Params */] (val x: Self & FunctionRequest[T]) extends AnyVal {
     
     inline def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
     

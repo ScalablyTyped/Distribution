@@ -42,7 +42,8 @@ object ITickWorldComponent {
     __obj.asInstanceOf[ITickWorldComponent]
   }
   
-  extension [Self <: ITickWorldComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITickWorldComponent] (val x: Self) extends AnyVal {
     
     inline def setDistance_to_players(value: Double): Self = StObject.set(x, "distance_to_players", value.asInstanceOf[js.Any])
     

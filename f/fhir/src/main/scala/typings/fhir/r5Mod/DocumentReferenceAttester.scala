@@ -38,7 +38,8 @@ object DocumentReferenceAttester {
     __obj.asInstanceOf[DocumentReferenceAttester]
   }
   
-  extension [Self <: DocumentReferenceAttester](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentReferenceAttester] (val x: Self) extends AnyVal {
     
     inline def setMode(value: personal | professional | legal | official): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

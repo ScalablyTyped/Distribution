@@ -23,7 +23,8 @@ object DescribePendingAggregationRequestsResponse {
     __obj.asInstanceOf[DescribePendingAggregationRequestsResponse]
   }
   
-  extension [Self <: DescribePendingAggregationRequestsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePendingAggregationRequestsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

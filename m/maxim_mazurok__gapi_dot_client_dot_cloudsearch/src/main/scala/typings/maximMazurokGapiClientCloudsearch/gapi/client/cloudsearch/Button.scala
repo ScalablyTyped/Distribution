@@ -17,7 +17,8 @@ object Button {
     __obj.asInstanceOf[Button]
   }
   
-  extension [Self <: Button](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
     
     inline def setImageButton(value: ImageButton): Self = StObject.set(x, "imageButton", value.asInstanceOf[js.Any])
     

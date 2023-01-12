@@ -38,7 +38,8 @@ object libSharedIniIniLoaderMod {
       __obj.asInstanceOf[LoadFileOptions]
     }
     
-    extension [Self <: LoadFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadFileOptions] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       

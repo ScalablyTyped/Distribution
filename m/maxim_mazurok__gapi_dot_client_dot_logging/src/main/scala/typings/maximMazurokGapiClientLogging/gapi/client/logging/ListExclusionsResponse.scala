@@ -22,7 +22,8 @@ object ListExclusionsResponse {
     __obj.asInstanceOf[ListExclusionsResponse]
   }
   
-  extension [Self <: ListExclusionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListExclusionsResponse] (val x: Self) extends AnyVal {
     
     inline def setExclusions(value: js.Array[LogExclusion]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     

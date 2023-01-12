@@ -23,7 +23,8 @@ object AssociateSkillWithSkillGroupRequest {
     __obj.asInstanceOf[AssociateSkillWithSkillGroupRequest]
   }
   
-  extension [Self <: AssociateSkillWithSkillGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateSkillWithSkillGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
     

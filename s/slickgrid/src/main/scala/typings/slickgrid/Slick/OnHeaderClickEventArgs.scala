@@ -17,7 +17,8 @@ object OnHeaderClickEventArgs {
     __obj.asInstanceOf[OnHeaderClickEventArgs[T]]
   }
   
-  extension [Self <: OnHeaderClickEventArgs[?], T /* <: SlickData */](x: Self & OnHeaderClickEventArgs[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnHeaderClickEventArgs[?], T /* <: SlickData */] (val x: Self & OnHeaderClickEventArgs[T]) extends AnyVal {
     
     inline def setColumn(value: Column[T]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
   }

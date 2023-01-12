@@ -28,7 +28,8 @@ object TcpRoute {
     __obj.asInstanceOf[TcpRoute]
   }
   
-  extension [Self <: TcpRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TcpRoute] (val x: Self) extends AnyVal {
     
     inline def setAction(value: TcpRouteAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

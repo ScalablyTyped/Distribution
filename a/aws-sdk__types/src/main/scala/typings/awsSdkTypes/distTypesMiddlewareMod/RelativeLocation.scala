@@ -23,7 +23,8 @@ object RelativeLocation {
     __obj.asInstanceOf[RelativeLocation]
   }
   
-  extension [Self <: RelativeLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeLocation] (val x: Self) extends AnyVal {
     
     inline def setRelation(value: Relation): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object angularMod {
         __obj.asInstanceOf[IState]
       }
       
-      extension [Self <: IState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IState] (val x: Self) extends AnyVal {
         
         inline def setModal(value: Boolean | js.Array[String]): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
         

@@ -19,7 +19,8 @@ object TransitioningViewProps {
     __obj.asInstanceOf[TransitioningViewProps]
   }
   
-  extension [Self <: TransitioningViewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitioningViewProps] (val x: Self) extends AnyVal {
     
     inline def setTransition(value: ReactNode): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     

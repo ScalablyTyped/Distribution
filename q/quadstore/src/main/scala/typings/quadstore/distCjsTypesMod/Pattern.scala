@@ -25,7 +25,8 @@ object Pattern {
     __obj.asInstanceOf[Pattern]
   }
   
-  extension [Self <: Pattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
     
     inline def setGraph(value: QuadGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     

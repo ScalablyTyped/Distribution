@@ -410,7 +410,8 @@ object PickleStepArgument {
           __obj.asInstanceOf[IPickleTableCell]
         }
         
-        extension [Self <: IPickleTableCell](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IPickleTableCell] (val x: Self) extends AnyVal {
           
           inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
           
@@ -514,7 +515,8 @@ object PickleStepArgument {
         __obj.asInstanceOf[IPickleTableRow]
       }
       
-      extension [Self <: IPickleTableRow](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPickleTableRow] (val x: Self) extends AnyVal {
         
         inline def setCells(value: js.Array[IPickleTableCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
         
@@ -623,7 +625,8 @@ object PickleStepArgument {
       __obj.asInstanceOf[IPickleDocString]
     }
     
-    extension [Self <: IPickleDocString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPickleDocString] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -652,7 +655,8 @@ object PickleStepArgument {
       __obj.asInstanceOf[IPickleTable]
     }
     
-    extension [Self <: IPickleTable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPickleTable] (val x: Self) extends AnyVal {
       
       inline def setRows(value: js.Array[IPickleTableRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       

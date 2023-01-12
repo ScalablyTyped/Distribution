@@ -31,7 +31,8 @@ object ICompleteReply {
     __obj.asInstanceOf[ICompleteReply]
   }
   
-  extension [Self <: ICompleteReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICompleteReply] (val x: Self) extends AnyVal {
     
     inline def setCursor_end(value: Double): Self = StObject.set(x, "cursor_end", value.asInstanceOf[js.Any])
     

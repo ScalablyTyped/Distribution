@@ -52,7 +52,8 @@ object SchedMsg {
     __obj.asInstanceOf[SchedMsg]
   }
   
-  extension [Self <: SchedMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedMsg] (val x: Self) extends AnyVal {
     
     inline def setAnnounce(value: String => Unit): Self = StObject.set(x, "announce", js.Any.fromFunction1(value))
     

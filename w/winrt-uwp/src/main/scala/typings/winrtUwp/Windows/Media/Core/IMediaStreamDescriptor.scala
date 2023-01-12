@@ -23,7 +23,8 @@ object IMediaStreamDescriptor {
     __obj.asInstanceOf[IMediaStreamDescriptor]
   }
   
-  extension [Self <: IMediaStreamDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaStreamDescriptor] (val x: Self) extends AnyVal {
     
     inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     

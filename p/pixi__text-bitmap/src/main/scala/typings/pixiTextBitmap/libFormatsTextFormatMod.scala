@@ -70,7 +70,8 @@ object libFormatsTextFormatMod {
       __obj.asInstanceOf[IBitmapFontRawData]
     }
     
-    extension [Self <: IBitmapFontRawData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBitmapFontRawData] (val x: Self) extends AnyVal {
       
       inline def setChar(value: js.Array[Height]): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
       

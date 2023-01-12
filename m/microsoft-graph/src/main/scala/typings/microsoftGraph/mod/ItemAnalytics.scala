@@ -21,7 +21,8 @@ object ItemAnalytics {
     __obj.asInstanceOf[ItemAnalytics]
   }
   
-  extension [Self <: ItemAnalytics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemAnalytics] (val x: Self) extends AnyVal {
     
     inline def setAllTime(value: NullableOption[ItemActivityStat]): Self = StObject.set(x, "allTime", value.asInstanceOf[js.Any])
     

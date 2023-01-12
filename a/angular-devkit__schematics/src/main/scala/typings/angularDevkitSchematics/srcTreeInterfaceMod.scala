@@ -102,7 +102,8 @@ object srcTreeInterfaceMod {
       __obj.asInstanceOf[DirEntry]
     }
     
-    extension [Self <: DirEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirEntry] (val x: Self) extends AnyVal {
       
       inline def setDir(value: PathFragment => DirEntry): Self = StObject.set(x, "dir", js.Any.fromFunction1(value))
       
@@ -139,7 +140,8 @@ object srcTreeInterfaceMod {
       __obj.asInstanceOf[FileEntry]
     }
     
-    extension [Self <: FileEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileEntry] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

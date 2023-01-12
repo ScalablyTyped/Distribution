@@ -28,7 +28,8 @@ object PartialDynamicSamplingCon {
     __obj.asInstanceOf[PartialDynamicSamplingCon]
   }
   
-  extension [Self <: PartialDynamicSamplingCon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDynamicSamplingCon] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     

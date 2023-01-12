@@ -34,7 +34,8 @@ object CSSUnitValue {
     __obj.asInstanceOf[CSSUnitValue]
   }
   
-  extension [Self <: CSSUnitValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSUnitValue] (val x: Self) extends AnyVal {
     
     inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     

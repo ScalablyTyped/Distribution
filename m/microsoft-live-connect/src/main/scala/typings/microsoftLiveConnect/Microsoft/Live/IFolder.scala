@@ -117,7 +117,8 @@ object IFolder {
     __obj.asInstanceOf[IFolder]
   }
   
-  extension [Self <: IFolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFolder] (val x: Self) extends AnyVal {
     
     inline def setClient_updated_time(value: String): Self = StObject.set(x, "client_updated_time", value.asInstanceOf[js.Any])
     

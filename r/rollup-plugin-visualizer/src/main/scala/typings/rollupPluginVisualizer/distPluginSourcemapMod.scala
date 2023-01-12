@@ -27,7 +27,8 @@ object distPluginSourcemapMod {
       __obj.asInstanceOf[SourceMapModuleRenderInfo]
     }
     
-    extension [Self <: SourceMapModuleRenderInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapModuleRenderInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

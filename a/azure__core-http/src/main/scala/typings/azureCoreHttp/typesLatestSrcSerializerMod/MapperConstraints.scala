@@ -69,7 +69,8 @@ object MapperConstraints {
     __obj.asInstanceOf[MapperConstraints]
   }
   
-  extension [Self <: MapperConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapperConstraints] (val x: Self) extends AnyVal {
     
     inline def setExclusiveMaximum(value: Double): Self = StObject.set(x, "ExclusiveMaximum", value.asInstanceOf[js.Any])
     

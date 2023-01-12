@@ -80,7 +80,8 @@ object VirtualRendererOptions {
     __obj.asInstanceOf[VirtualRendererOptions]
   }
   
-  extension [Self <: VirtualRendererOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualRendererOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimatedScroll(value: Boolean): Self = StObject.set(x, "animatedScroll", value.asInstanceOf[js.Any])
     

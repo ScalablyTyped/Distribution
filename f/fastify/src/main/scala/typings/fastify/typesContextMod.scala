@@ -20,7 +20,8 @@ object typesContextMod {
       __obj.asInstanceOf[FastifyContext[ContextConfig]]
     }
     
-    extension [Self <: FastifyContext[?], ContextConfig](x: Self & FastifyContext[ContextConfig]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastifyContext[?], ContextConfig] (val x: Self & FastifyContext[ContextConfig]) extends AnyVal {
       
       inline def setConfig(value: FastifyContextConfig & ContextConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }

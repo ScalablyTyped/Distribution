@@ -25,7 +25,8 @@ object EnumObject {
     __obj.asInstanceOf[EnumObject]
   }
   
-  extension [Self <: EnumObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumObject] (val x: Self) extends AnyVal {
     
     inline def setCommon(value: EnumCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     

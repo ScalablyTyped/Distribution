@@ -104,7 +104,8 @@ object esUseEditableArrayMod {
       __obj.asInstanceOf[ActionRenderConfig[T, LineConfig]]
     }
     
-    extension [Self <: ActionRenderConfig[?, ?], T, LineConfig](x: Self & (ActionRenderConfig[T, LineConfig])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionRenderConfig[?, ?], T, LineConfig] (val x: Self & (ActionRenderConfig[T, LineConfig])) extends AnyVal {
       
       inline def setCancelEditable(value: RecordKey => Unit): Self = StObject.set(x, "cancelEditable", js.Any.fromFunction1(value))
       
@@ -186,7 +187,8 @@ object esUseEditableArrayMod {
       __obj.asInstanceOf[ActionTypeText[T]]
     }
     
-    extension [Self <: ActionTypeText[?], T](x: Self & ActionTypeText[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionTypeText[?], T] (val x: Self & ActionTypeText[T]) extends AnyVal {
       
       inline def setAddEditRecord(value: (/* row */ T, /* options */ js.UndefOr[AddLineOptions]) => Boolean): Self = StObject.set(x, "addEditRecord", js.Any.fromFunction2(value))
       
@@ -228,7 +230,8 @@ object esUseEditableArrayMod {
       __obj.asInstanceOf[AddLineOptions]
     }
     
-    extension [Self <: AddLineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddLineOptions] (val x: Self) extends AnyVal {
       
       inline def setNewRecordType(value: dataSource | cache): Self = StObject.set(x, "newRecordType", value.asInstanceOf[js.Any])
       
@@ -265,7 +268,8 @@ object esUseEditableArrayMod {
       __obj.asInstanceOf[NewLineConfig[T]]
     }
     
-    extension [Self <: NewLineConfig[?], T](x: Self & NewLineConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewLineConfig[?], T] (val x: Self & NewLineConfig[T]) extends AnyVal {
       
       inline def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -364,7 +368,8 @@ object esUseEditableArrayMod {
       __obj.asInstanceOf[RowEditableConfig[DataType]]
     }
     
-    extension [Self <: RowEditableConfig[?], DataType](x: Self & RowEditableConfig[DataType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowEditableConfig[?], DataType] (val x: Self & RowEditableConfig[DataType]) extends AnyVal {
       
       inline def setActionRender(
         value: (DataType, /* config */ ActionRenderConfig[DataType, NewLineConfig[DataType]], /* defaultDoms */ Delete) => js.Array[ReactNode]
@@ -502,7 +507,8 @@ object esUseEditableArrayMod {
       __obj.asInstanceOf[SaveEditableActionRef[T]]
     }
     
-    extension [Self <: SaveEditableActionRef[?], T](x: Self & SaveEditableActionRef[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SaveEditableActionRef[?], T] (val x: Self & SaveEditableActionRef[T]) extends AnyVal {
       
       inline def setSave(
         value: () => (ReturnType[

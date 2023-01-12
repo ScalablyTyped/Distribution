@@ -100,7 +100,8 @@ object PartialProgressOptions {
     __obj.asInstanceOf[PartialProgressOptions]
   }
   
-  extension [Self <: PartialProgressOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialProgressOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

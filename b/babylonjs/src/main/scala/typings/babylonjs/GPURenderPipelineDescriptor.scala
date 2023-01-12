@@ -25,7 +25,8 @@ object GPURenderPipelineDescriptor {
     __obj.asInstanceOf[GPURenderPipelineDescriptor]
   }
   
-  extension [Self <: GPURenderPipelineDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPURenderPipelineDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDepthStencil(value: GPUDepthStencilState): Self = StObject.set(x, "depthStencil", value.asInstanceOf[js.Any])
     

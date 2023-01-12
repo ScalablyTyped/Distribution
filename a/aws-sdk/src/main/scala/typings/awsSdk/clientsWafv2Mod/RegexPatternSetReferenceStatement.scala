@@ -28,7 +28,8 @@ object RegexPatternSetReferenceStatement {
     __obj.asInstanceOf[RegexPatternSetReferenceStatement]
   }
   
-  extension [Self <: RegexPatternSetReferenceStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegexPatternSetReferenceStatement] (val x: Self) extends AnyVal {
     
     inline def setARN(value: ResourceArn): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

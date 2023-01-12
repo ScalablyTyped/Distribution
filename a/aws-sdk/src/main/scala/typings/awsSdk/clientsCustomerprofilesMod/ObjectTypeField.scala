@@ -28,7 +28,8 @@ object ObjectTypeField {
     __obj.asInstanceOf[ObjectTypeField]
   }
   
-  extension [Self <: ObjectTypeField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectTypeField] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: FieldContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     

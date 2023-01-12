@@ -29,7 +29,8 @@ object CallsiteFrameIdx {
     __obj.asInstanceOf[CallsiteFrameIdx]
   }
   
-  extension [Self <: CallsiteFrameIdx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallsiteFrameIdx] (val x: Self) extends AnyVal {
     
     inline def setCallsiteFrameIdx(value: Double): Self = StObject.set(x, "callsiteFrameIdx", value.asInstanceOf[js.Any])
     

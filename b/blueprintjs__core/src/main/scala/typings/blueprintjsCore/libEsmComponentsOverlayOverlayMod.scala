@@ -154,7 +154,8 @@ object libEsmComponentsOverlayOverlayMod {
       __obj.asInstanceOf[IBackdropProps]
     }
     
-    extension [Self <: IBackdropProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBackdropProps] (val x: Self) extends AnyVal {
       
       inline def setBackdropClassName(value: String): Self = StObject.set(x, "backdropClassName", value.asInstanceOf[js.Any])
       
@@ -209,7 +210,8 @@ object libEsmComponentsOverlayOverlayMod {
       __obj.asInstanceOf[IOverlayLifecycleProps]
     }
     
-    extension [Self <: IOverlayLifecycleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverlayLifecycleProps] (val x: Self) extends AnyVal {
       
       inline def setOnClosed(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onClosed", js.Any.fromFunction1(value))
       
@@ -259,7 +261,8 @@ object libEsmComponentsOverlayOverlayMod {
       __obj.asInstanceOf[IOverlayProps]
     }
     
-    extension [Self <: IOverlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverlayProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -284,7 +287,8 @@ object libEsmComponentsOverlayOverlayMod {
       __obj.asInstanceOf[IOverlayState]
     }
     
-    extension [Self <: IOverlayState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverlayState] (val x: Self) extends AnyVal {
       
       inline def setHasEverOpened(value: Boolean): Self = StObject.set(x, "hasEverOpened", value.asInstanceOf[js.Any])
       
@@ -394,7 +398,8 @@ object libEsmComponentsOverlayOverlayMod {
       __obj.asInstanceOf[IOverlayableProps]
     }
     
-    extension [Self <: IOverlayableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverlayableProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

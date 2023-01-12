@@ -23,7 +23,8 @@ object GetDocumentationPartRequest {
     __obj.asInstanceOf[GetDocumentationPartRequest]
   }
   
-  extension [Self <: GetDocumentationPartRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDocumentationPartRequest] (val x: Self) extends AnyVal {
     
     inline def setDocumentationPartId(value: String): Self = StObject.set(x, "documentationPartId", value.asInstanceOf[js.Any])
     

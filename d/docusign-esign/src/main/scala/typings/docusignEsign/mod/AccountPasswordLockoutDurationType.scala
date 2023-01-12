@@ -18,7 +18,8 @@ object AccountPasswordLockoutDurationType {
     __obj.asInstanceOf[AccountPasswordLockoutDurationType]
   }
   
-  extension [Self <: AccountPasswordLockoutDurationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountPasswordLockoutDurationType] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

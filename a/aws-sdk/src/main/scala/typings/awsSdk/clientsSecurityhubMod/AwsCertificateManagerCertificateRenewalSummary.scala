@@ -33,7 +33,8 @@ object AwsCertificateManagerCertificateRenewalSummary {
     __obj.asInstanceOf[AwsCertificateManagerCertificateRenewalSummary]
   }
   
-  extension [Self <: AwsCertificateManagerCertificateRenewalSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCertificateManagerCertificateRenewalSummary] (val x: Self) extends AnyVal {
     
     inline def setDomainValidationOptions(value: AwsCertificateManagerCertificateDomainValidationOptions): Self = StObject.set(x, "DomainValidationOptions", value.asInstanceOf[js.Any])
     

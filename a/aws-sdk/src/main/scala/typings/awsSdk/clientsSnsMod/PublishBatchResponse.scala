@@ -23,7 +23,8 @@ object PublishBatchResponse {
     __obj.asInstanceOf[PublishBatchResponse]
   }
   
-  extension [Self <: PublishBatchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishBatchResponse] (val x: Self) extends AnyVal {
     
     inline def setFailed(value: BatchResultErrorEntryList): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     

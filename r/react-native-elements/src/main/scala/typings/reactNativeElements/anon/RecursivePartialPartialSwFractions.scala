@@ -56,7 +56,8 @@ object RecursivePartialPartialSwFractions {
     __obj.asInstanceOf[RecursivePartialPartialSwFractions]
   }
   
-  extension [Self <: RecursivePartialPartialSwFractions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialPartialSwFractions] (val x: Self) extends AnyVal {
     
     inline def setFractions(value: RecursivePartial[js.UndefOr[Any]]): Self = StObject.set(x, "fractions", value.asInstanceOf[js.Any])
     

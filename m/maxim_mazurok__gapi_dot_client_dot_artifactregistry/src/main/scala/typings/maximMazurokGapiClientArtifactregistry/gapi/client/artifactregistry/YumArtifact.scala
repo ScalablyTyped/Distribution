@@ -25,7 +25,8 @@ object YumArtifact {
     __obj.asInstanceOf[YumArtifact]
   }
   
-  extension [Self <: YumArtifact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YumArtifact] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

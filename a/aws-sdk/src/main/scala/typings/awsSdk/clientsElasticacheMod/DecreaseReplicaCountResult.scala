@@ -15,7 +15,8 @@ object DecreaseReplicaCountResult {
     __obj.asInstanceOf[DecreaseReplicaCountResult]
   }
   
-  extension [Self <: DecreaseReplicaCountResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecreaseReplicaCountResult] (val x: Self) extends AnyVal {
     
     inline def setReplicationGroup(value: ReplicationGroup): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
     

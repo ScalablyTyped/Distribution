@@ -36,7 +36,8 @@ object distOperationsSchemasTypesMod {
       __obj.asInstanceOf[CreateSchemaOptions]
     }
     
-    extension [Self <: CreateSchemaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateSchemaOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
       

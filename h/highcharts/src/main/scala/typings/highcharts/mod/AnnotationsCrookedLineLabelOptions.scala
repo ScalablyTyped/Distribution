@@ -143,7 +143,8 @@ object AnnotationsCrookedLineLabelOptions {
     __obj.asInstanceOf[AnnotationsCrookedLineLabelOptions]
   }
   
-  extension [Self <: AnnotationsCrookedLineLabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsCrookedLineLabelOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: AnnotationLabelAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

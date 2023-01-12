@@ -29,7 +29,8 @@ object Processing {
     __obj.asInstanceOf[Processing]
   }
   
-  extension [Self <: Processing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Processing] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: js.Array[ActionIsEnable | IsEnableTrigger]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

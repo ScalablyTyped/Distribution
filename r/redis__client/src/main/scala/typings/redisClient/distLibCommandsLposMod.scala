@@ -38,7 +38,8 @@ object distLibCommandsLposMod {
       __obj.asInstanceOf[LPosOptions]
     }
     
-    extension [Self <: LPosOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LPosOptions] (val x: Self) extends AnyVal {
       
       inline def setMAXLEN(value: Double): Self = StObject.set(x, "MAXLEN", value.asInstanceOf[js.Any])
       

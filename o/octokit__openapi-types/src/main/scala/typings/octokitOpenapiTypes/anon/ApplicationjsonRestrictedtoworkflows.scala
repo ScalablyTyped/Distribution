@@ -17,7 +17,8 @@ object ApplicationjsonRestrictedtoworkflows {
     __obj.asInstanceOf[ApplicationjsonRestrictedtoworkflows]
   }
   
-  extension [Self <: ApplicationjsonRestrictedtoworkflows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonRestrictedtoworkflows] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Restrictedtoworkflows): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

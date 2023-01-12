@@ -41,7 +41,8 @@ object Byterange {
     __obj.asInstanceOf[Byterange]
   }
   
-  extension [Self <: Byterange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Byterange] (val x: Self) extends AnyVal {
     
     inline def setByterange(value: typings.hlsParser.mod.Byterange): Self = StObject.set(x, "byterange", value.asInstanceOf[js.Any])
     

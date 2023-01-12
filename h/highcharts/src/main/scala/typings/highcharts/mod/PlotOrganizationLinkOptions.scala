@@ -37,7 +37,8 @@ object PlotOrganizationLinkOptions {
     __obj.asInstanceOf[PlotOrganizationLinkOptions]
   }
   
-  extension [Self <: PlotOrganizationLinkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotOrganizationLinkOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: ColorString): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

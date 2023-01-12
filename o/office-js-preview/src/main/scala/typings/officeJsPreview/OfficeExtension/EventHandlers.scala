@@ -32,7 +32,8 @@ object EventHandlers {
     __obj.asInstanceOf[EventHandlers[T]]
   }
   
-  extension [Self <: EventHandlers[?], T](x: Self & EventHandlers[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventHandlers[?], T] (val x: Self & EventHandlers[T]) extends AnyVal {
     
     inline def setAdd(value: js.Function1[/* args */ T, js.Promise[Any]] => EventHandlerResult[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

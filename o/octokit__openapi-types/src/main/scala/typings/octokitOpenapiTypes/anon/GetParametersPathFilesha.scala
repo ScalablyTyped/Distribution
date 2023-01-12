@@ -20,7 +20,8 @@ object GetParametersPathFilesha {
     __obj.asInstanceOf[GetParametersPathFilesha]
   }
   
-  extension [Self <: GetParametersPathFilesha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersPathFilesha] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersPathFilesha): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "style-inject"
-version := "0.3-dt-20220624Z-566dc1"
+version := "0.3-dt-20220624Z-6bbc14"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

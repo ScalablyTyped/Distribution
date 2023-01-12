@@ -38,7 +38,8 @@ object ListAvailableResourceMetricsRequest {
     __obj.asInstanceOf[ListAvailableResourceMetricsRequest]
   }
   
-  extension [Self <: ListAvailableResourceMetricsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAvailableResourceMetricsRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: RequestString): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     

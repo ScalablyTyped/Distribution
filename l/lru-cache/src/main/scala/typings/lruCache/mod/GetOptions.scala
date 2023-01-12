@@ -23,7 +23,8 @@ object GetOptions {
     __obj.asInstanceOf[GetOptions]
   }
   
-  extension [Self <: GetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowStale(value: Boolean): Self = StObject.set(x, "allowStale", value.asInstanceOf[js.Any])
     

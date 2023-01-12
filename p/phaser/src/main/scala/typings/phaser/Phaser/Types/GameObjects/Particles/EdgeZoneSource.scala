@@ -24,7 +24,8 @@ object EdgeZoneSource {
     __obj.asInstanceOf[EdgeZoneSource]
   }
   
-  extension [Self <: EdgeZoneSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeZoneSource] (val x: Self) extends AnyVal {
     
     inline def setGetPoints(value: (/* quantity */ Double, /* stepRate */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "getPoints", js.Any.fromFunction2(value))
   }

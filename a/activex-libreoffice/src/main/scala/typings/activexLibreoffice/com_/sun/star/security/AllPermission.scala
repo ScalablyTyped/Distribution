@@ -19,7 +19,8 @@ object AllPermission {
     __obj.asInstanceOf[AllPermission]
   }
   
-  extension [Self <: AllPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllPermission] (val x: Self) extends AnyVal {
     
     inline def setDummy(value: Double): Self = StObject.set(x, "dummy", value.asInstanceOf[js.Any])
   }

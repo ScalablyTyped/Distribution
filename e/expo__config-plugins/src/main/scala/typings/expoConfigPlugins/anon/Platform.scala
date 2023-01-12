@@ -21,7 +21,8 @@ object Platform {
     __obj.asInstanceOf[Platform[ModName]]
   }
   
-  extension [Self <: Platform[?], ModName /* <: String */](x: Self & Platform[ModName]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Platform[?], ModName /* <: String */] (val x: Self & Platform[ModName]) extends AnyVal {
     
     inline def setPlatform(value: ModPlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     

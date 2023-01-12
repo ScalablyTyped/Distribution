@@ -39,7 +39,8 @@ object CalculatedMetricFilter {
     __obj.asInstanceOf[CalculatedMetricFilter]
   }
   
-  extension [Self <: CalculatedMetricFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalculatedMetricFilter] (val x: Self) extends AnyVal {
     
     inline def setCalculatedMetricFilter(value: Any): Self = StObject.set(x, "calculatedMetricFilter", value.asInstanceOf[js.Any])
     

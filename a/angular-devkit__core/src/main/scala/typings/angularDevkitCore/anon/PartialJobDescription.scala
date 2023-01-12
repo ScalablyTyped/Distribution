@@ -25,7 +25,8 @@ object PartialJobDescription {
     __obj.asInstanceOf[PartialJobDescription]
   }
   
-  extension [Self <: PartialJobDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialJobDescription] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: DeepReadonly[JsonSchema]): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

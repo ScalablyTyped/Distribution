@@ -60,7 +60,8 @@ object ObjectConditions {
     __obj.asInstanceOf[ObjectConditions]
   }
   
-  extension [Self <: ObjectConditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectConditions] (val x: Self) extends AnyVal {
     
     inline def setExcludePrefixes(value: js.Array[String]): Self = StObject.set(x, "excludePrefixes", value.asInstanceOf[js.Any])
     

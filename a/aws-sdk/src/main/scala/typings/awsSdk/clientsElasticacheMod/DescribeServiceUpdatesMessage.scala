@@ -33,7 +33,8 @@ object DescribeServiceUpdatesMessage {
     __obj.asInstanceOf[DescribeServiceUpdatesMessage]
   }
   
-  extension [Self <: DescribeServiceUpdatesMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeServiceUpdatesMessage] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

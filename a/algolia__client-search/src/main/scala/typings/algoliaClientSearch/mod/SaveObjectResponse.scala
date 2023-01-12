@@ -23,7 +23,8 @@ object SaveObjectResponse {
     __obj.asInstanceOf[SaveObjectResponse]
   }
   
-  extension [Self <: SaveObjectResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveObjectResponse] (val x: Self) extends AnyVal {
     
     inline def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
     

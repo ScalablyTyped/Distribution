@@ -18,7 +18,8 @@ object MkdirOptions {
     __obj.asInstanceOf[MkdirOptions]
   }
   
-  extension [Self <: MkdirOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MkdirOptions] (val x: Self) extends AnyVal {
     
     inline def setNSFileProtectionKey(value: String): Self = StObject.set(x, "NSFileProtectionKey", value.asInstanceOf[js.Any])
     

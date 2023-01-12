@@ -28,7 +28,8 @@ object EndpointInputConfiguration {
     __obj.asInstanceOf[EndpointInputConfiguration]
   }
   
-  extension [Self <: EndpointInputConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointInputConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentParameterRanges(value: EnvironmentParameterRanges): Self = StObject.set(x, "EnvironmentParameterRanges", value.asInstanceOf[js.Any])
     

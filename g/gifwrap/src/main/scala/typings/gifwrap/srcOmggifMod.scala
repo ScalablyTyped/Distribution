@@ -59,7 +59,8 @@ object srcOmggifMod {
       __obj.asInstanceOf[FrameInfo]
     }
     
-    extension [Self <: FrameInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameInfo] (val x: Self) extends AnyVal {
       
       inline def setData_length(value: Double): Self = StObject.set(x, "data_length", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object srcOmggifMod {
       __obj.asInstanceOf[FrameOptions]
     }
     
-    extension [Self <: FrameOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object srcOmggifMod {
       __obj.asInstanceOf[GlobalOptions]
     }
     
-    extension [Self <: GlobalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: Double): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -231,7 +234,8 @@ object srcOmggifMod {
       __obj.asInstanceOf[OmggifModule]
     }
     
-    extension [Self <: OmggifModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmggifModule] (val x: Self) extends AnyVal {
       
       inline def setGifReader(value: GifReader): Self = StObject.set(x, "GifReader", value.asInstanceOf[js.Any])
       

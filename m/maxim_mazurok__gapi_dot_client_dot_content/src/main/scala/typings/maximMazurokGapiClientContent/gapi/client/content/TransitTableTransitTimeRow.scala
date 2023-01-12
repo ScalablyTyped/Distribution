@@ -15,7 +15,8 @@ object TransitTableTransitTimeRow {
     __obj.asInstanceOf[TransitTableTransitTimeRow]
   }
   
-  extension [Self <: TransitTableTransitTimeRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitTableTransitTimeRow] (val x: Self) extends AnyVal {
     
     inline def setValues(value: js.Array[TransitTableTransitTimeRowTransitTimeValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     

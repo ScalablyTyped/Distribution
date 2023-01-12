@@ -57,7 +57,8 @@ object IELangBaseDefaults {
     __obj.asInstanceOf[IELangBaseDefaults]
   }
   
-  extension [Self <: IELangBaseDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IELangBaseDefaults] (val x: Self) extends AnyVal {
     
     inline def setContentCSS(value: String): Self = StObject.set(x, "contentCSS", value.asInstanceOf[js.Any])
     

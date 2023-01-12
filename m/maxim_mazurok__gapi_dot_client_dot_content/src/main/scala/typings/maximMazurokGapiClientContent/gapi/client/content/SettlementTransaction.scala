@@ -25,7 +25,8 @@ object SettlementTransaction {
     __obj.asInstanceOf[SettlementTransaction]
   }
   
-  extension [Self <: SettlementTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettlementTransaction] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: SettlementTransactionAmount): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

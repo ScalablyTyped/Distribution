@@ -16,7 +16,8 @@ object ProxyInstance {
     __obj.asInstanceOf[ProxyInstance]
   }
   
-  extension [Self <: ProxyInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxyInstance] (val x: Self) extends AnyVal {
     
     inline def setHandle(value: NativePointer): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
   }

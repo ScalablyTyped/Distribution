@@ -23,7 +23,8 @@ object CancelQueryRequest {
     __obj.asInstanceOf[CancelQueryRequest]
   }
   
-  extension [Self <: CancelQueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelQueryRequest] (val x: Self) extends AnyVal {
     
     inline def setEventDataStore(value: EventDataStoreArn): Self = StObject.set(x, "EventDataStore", value.asInstanceOf[js.Any])
     

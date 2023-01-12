@@ -33,7 +33,8 @@ object Location {
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Location */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Location */ Boolean]
   
-  extension [Self <: Location](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
     
     inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

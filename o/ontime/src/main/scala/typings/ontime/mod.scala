@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[OntimeReport]
     }
     
-    extension [Self <: OntimeReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OntimeReport] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
@@ -111,7 +112,8 @@ object mod {
       __obj.asInstanceOf[OntimeSchedule]
     }
     
-    extension [Self <: OntimeSchedule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OntimeSchedule] (val x: Self) extends AnyVal {
       
       inline def setCycle(value: String | js.Array[String]): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object distSrcMessageRpcMod {
     
     inline def encode(obj: ControlGraft): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: ControlGraft](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlGraft] (val x: Self) extends AnyVal {
       
       inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object distSrcMessageRpcMod {
     
     inline def encode(obj: ControlIHave): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: ControlIHave](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlIHave] (val x: Self) extends AnyVal {
       
       inline def setMessageIDs(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "messageIDs", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object distSrcMessageRpcMod {
     
     inline def encode(obj: ControlIWant): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: ControlIWant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlIWant] (val x: Self) extends AnyVal {
       
       inline def setMessageIDs(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "messageIDs", value.asInstanceOf[js.Any])
       
@@ -139,7 +142,8 @@ object distSrcMessageRpcMod {
     
     inline def encode(obj: ControlMessage): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: ControlMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlMessage] (val x: Self) extends AnyVal {
       
       inline def setGraft(value: js.Array[ControlGraft]): Self = StObject.set(x, "graft", value.asInstanceOf[js.Any])
       
@@ -185,7 +189,8 @@ object distSrcMessageRpcMod {
     
     inline def encode(obj: ControlPrune): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: ControlPrune](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlPrune] (val x: Self) extends AnyVal {
       
       inline def setBackoff(value: js.BigInt): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
       
@@ -225,7 +230,8 @@ object distSrcMessageRpcMod {
     
     inline def encode(obj: PeerInfo): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: PeerInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerInfo] (val x: Self) extends AnyVal {
       
       inline def setPeerID(value: js.typedarray.Uint8Array): Self = StObject.set(x, "peerID", value.asInstanceOf[js.Any])
       
@@ -288,7 +294,8 @@ object distSrcMessageRpcMod {
       
       inline def encode(obj: Message): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
       
-      extension [Self <: Message](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
         
         inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -340,7 +347,8 @@ object distSrcMessageRpcMod {
       
       inline def encode(obj: SubOpts): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
       
-      extension [Self <: SubOpts](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubOpts] (val x: Self) extends AnyVal {
         
         inline def setSubscribe(value: Boolean): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
         
@@ -359,7 +367,8 @@ object distSrcMessageRpcMod {
     
     inline def encode(obj: RPC): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: RPC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RPC] (val x: Self) extends AnyVal {
       
       inline def setControl(value: ControlMessage): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
       

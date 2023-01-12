@@ -16,7 +16,8 @@ object GridHeaderFilter {
     __obj.asInstanceOf[GridHeaderFilter]
   }
   
-  extension [Self <: GridHeaderFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridHeaderFilter] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

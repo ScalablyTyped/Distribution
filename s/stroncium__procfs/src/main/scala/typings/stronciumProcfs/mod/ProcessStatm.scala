@@ -23,7 +23,8 @@ object ProcessStatm {
     __obj.asInstanceOf[ProcessStatm]
   }
   
-  extension [Self <: ProcessStatm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessStatm] (val x: Self) extends AnyVal {
     
     inline def setData(value: Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DisassociateAwsAccountFromPartnerAccountRequest {
     __obj.asInstanceOf[DisassociateAwsAccountFromPartnerAccountRequest]
   }
   
-  extension [Self <: DisassociateAwsAccountFromPartnerAccountRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateAwsAccountFromPartnerAccountRequest] (val x: Self) extends AnyVal {
     
     inline def setPartnerAccountId(value: PartnerAccountId): Self = StObject.set(x, "PartnerAccountId", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object FileCacheLustreMetadataConfiguration {
     __obj.asInstanceOf[FileCacheLustreMetadataConfiguration]
   }
   
-  extension [Self <: FileCacheLustreMetadataConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileCacheLustreMetadataConfiguration] (val x: Self) extends AnyVal {
     
     inline def setStorageCapacity(value: MetadataStorageCapacity): Self = StObject.set(x, "StorageCapacity", value.asInstanceOf[js.Any])
   }

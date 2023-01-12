@@ -34,7 +34,8 @@ object distLibCommandsCopyMod {
       __obj.asInstanceOf[CopyCommandOptions]
     }
     
-    extension [Self <: CopyCommandOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyCommandOptions] (val x: Self) extends AnyVal {
       
       inline def setDestinationDb(value: Double): Self = StObject.set(x, "destinationDb", value.asInstanceOf[js.Any])
       

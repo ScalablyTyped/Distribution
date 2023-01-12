@@ -25,7 +25,8 @@ object IdentitytoolkitRelyingpartySendVerificationCodeRequest {
     __obj.asInstanceOf[IdentitytoolkitRelyingpartySendVerificationCodeRequest]
   }
   
-  extension [Self <: IdentitytoolkitRelyingpartySendVerificationCodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitytoolkitRelyingpartySendVerificationCodeRequest] (val x: Self) extends AnyVal {
     
     inline def setIosReceipt(value: String): Self = StObject.set(x, "iosReceipt", value.asInstanceOf[js.Any])
     

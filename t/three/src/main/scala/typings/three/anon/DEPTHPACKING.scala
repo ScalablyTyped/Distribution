@@ -17,7 +17,8 @@ object DEPTHPACKING {
     __obj.asInstanceOf[DEPTHPACKING]
   }
   
-  extension [Self <: DEPTHPACKING](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DEPTHPACKING] (val x: Self) extends AnyVal {
     
     inline def setDEPTH_PACKING(value: Double): Self = StObject.set(x, "DEPTH_PACKING", value.asInstanceOf[js.Any])
     

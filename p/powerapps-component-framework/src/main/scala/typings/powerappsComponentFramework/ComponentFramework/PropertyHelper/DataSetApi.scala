@@ -75,7 +75,8 @@ object DataSetApi {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -135,7 +136,8 @@ object DataSetApi {
       __obj.asInstanceOf[ConditionExpression]
     }
     
-    extension [Self <: ConditionExpression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConditionExpression] (val x: Self) extends AnyVal {
       
       inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
       
@@ -190,7 +192,8 @@ object DataSetApi {
       __obj.asInstanceOf[EntityRecord]
     }
     
-    extension [Self <: EntityRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntityRecord] (val x: Self) extends AnyVal {
       
       inline def setGetFormattedValue(value: String => String): Self = StObject.set(x, "getFormattedValue", js.Any.fromFunction1(value))
       
@@ -231,7 +234,8 @@ object DataSetApi {
       __obj.asInstanceOf[FilterExpression]
     }
     
-    extension [Self <: FilterExpression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterExpression] (val x: Self) extends AnyVal {
       
       inline def setConditions(value: js.Array[ConditionExpression]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
@@ -275,7 +279,8 @@ object DataSetApi {
       __obj.asInstanceOf[Filtering]
     }
     
-    extension [Self <: Filtering](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filtering] (val x: Self) extends AnyVal {
       
       inline def setClearFilter(value: () => Unit): Self = StObject.set(x, "clearFilter", js.Any.fromFunction0(value))
       
@@ -322,7 +327,8 @@ object DataSetApi {
       __obj.asInstanceOf[LinkEntityExposedExpression]
     }
     
-    extension [Self <: LinkEntityExposedExpression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkEntityExposedExpression] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -362,7 +368,8 @@ object DataSetApi {
       __obj.asInstanceOf[Linking]
     }
     
-    extension [Self <: Linking](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Linking] (val x: Self) extends AnyVal {
       
       inline def setAddLinkedEntity(value: LinkEntityExposedExpression => Unit): Self = StObject.set(x, "addLinkedEntity", js.Any.fromFunction1(value))
       
@@ -462,7 +469,8 @@ object DataSetApi {
       __obj.asInstanceOf[SortStatus]
     }
     
-    extension [Self <: SortStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortStatus] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object DefaultPushNotificationTemplate {
     __obj.asInstanceOf[DefaultPushNotificationTemplate]
   }
   
-  extension [Self <: DefaultPushNotificationTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultPushNotificationTemplate] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

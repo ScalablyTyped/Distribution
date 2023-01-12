@@ -28,7 +28,8 @@ object GetPropertiesReturnType {
     __obj.asInstanceOf[GetPropertiesReturnType]
   }
   
-  extension [Self <: GetPropertiesReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPropertiesReturnType] (val x: Self) extends AnyVal {
     
     inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     

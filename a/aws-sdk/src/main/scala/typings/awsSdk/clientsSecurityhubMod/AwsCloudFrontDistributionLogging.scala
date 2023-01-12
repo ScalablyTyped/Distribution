@@ -33,7 +33,8 @@ object AwsCloudFrontDistributionLogging {
     __obj.asInstanceOf[AwsCloudFrontDistributionLogging]
   }
   
-  extension [Self <: AwsCloudFrontDistributionLogging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCloudFrontDistributionLogging] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: NonEmptyString): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

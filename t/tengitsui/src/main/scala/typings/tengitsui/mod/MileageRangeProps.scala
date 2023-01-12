@@ -19,7 +19,8 @@ object MileageRangeProps {
     __obj.asInstanceOf[MileageRangeProps]
   }
   
-  extension [Self <: MileageRangeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MileageRangeProps] (val x: Self) extends AnyVal {
     
     inline def setOnChange(value: js.Array[String] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     

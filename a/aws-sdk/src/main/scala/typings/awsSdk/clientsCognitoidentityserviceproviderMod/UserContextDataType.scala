@@ -23,7 +23,8 @@ object UserContextDataType {
     __obj.asInstanceOf[UserContextDataType]
   }
   
-  extension [Self <: UserContextDataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserContextDataType] (val x: Self) extends AnyVal {
     
     inline def setEncodedData(value: StringType): Self = StObject.set(x, "EncodedData", value.asInstanceOf[js.Any])
     

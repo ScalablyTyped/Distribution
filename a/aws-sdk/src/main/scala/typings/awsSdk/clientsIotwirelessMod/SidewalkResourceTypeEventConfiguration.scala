@@ -18,7 +18,8 @@ object SidewalkResourceTypeEventConfiguration {
     __obj.asInstanceOf[SidewalkResourceTypeEventConfiguration]
   }
   
-  extension [Self <: SidewalkResourceTypeEventConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SidewalkResourceTypeEventConfiguration] (val x: Self) extends AnyVal {
     
     inline def setWirelessDeviceEventTopic(value: EventNotificationTopicStatus): Self = StObject.set(x, "WirelessDeviceEventTopic", value.asInstanceOf[js.Any])
     

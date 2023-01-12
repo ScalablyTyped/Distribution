@@ -18,7 +18,8 @@ object TelemetryConfigurationUpdate {
     __obj.asInstanceOf[TelemetryConfigurationUpdate]
   }
   
-  extension [Self <: TelemetryConfigurationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TelemetryConfigurationUpdate] (val x: Self) extends AnyVal {
     
     inline def setTelemetry(value: Telemetry): Self = StObject.set(x, "Telemetry", value.asInstanceOf[js.Any])
   }

@@ -25,7 +25,8 @@ object libUtilJsresourcereferenceMod {
       __obj.asInstanceOf[JSResourceReference[TModule]]
     }
     
-    extension [Self <: JSResourceReference[?], TModule](x: Self & JSResourceReference[TModule]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSResourceReference[?], TModule] (val x: Self & JSResourceReference[TModule]) extends AnyVal {
       
       inline def setGetModuleId(value: () => String): Self = StObject.set(x, "getModuleId", js.Any.fromFunction0(value))
       

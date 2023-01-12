@@ -34,7 +34,8 @@ object WebDetection {
     __obj.asInstanceOf[WebDetection]
   }
   
-  extension [Self <: WebDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebDetection] (val x: Self) extends AnyVal {
     
     inline def setBestGuessLabels(value: js.Array[WebLabel]): Self = StObject.set(x, "bestGuessLabels", value.asInstanceOf[js.Any])
     

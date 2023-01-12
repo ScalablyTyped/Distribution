@@ -15,7 +15,8 @@ object SignEventPayload {
     __obj.asInstanceOf[SignEventPayload]
   }
   
-  extension [Self <: SignEventPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignEventPayload] (val x: Self) extends AnyVal {
     
     inline def setSignatureId(value: String): Self = StObject.set(x, "signatureId", value.asInstanceOf[js.Any])
   }

@@ -60,7 +60,8 @@ object XFormLayerAccess {
     __obj.asInstanceOf[XFormLayerAccess]
   }
   
-  extension [Self <: XFormLayerAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFormLayerAccess] (val x: Self) extends AnyVal {
     
     inline def setGetFormController(value: XForm => XFormController): Self = StObject.set(x, "getFormController", js.Any.fromFunction1(value))
     

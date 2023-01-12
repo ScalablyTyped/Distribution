@@ -23,7 +23,8 @@ object ProtocolMethodDescription {
     __obj.asInstanceOf[ProtocolMethodDescription]
   }
   
-  extension [Self <: ProtocolMethodDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtocolMethodDescription] (val x: Self) extends AnyVal {
     
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     

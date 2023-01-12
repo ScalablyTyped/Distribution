@@ -19,7 +19,8 @@ object InterconnectDiagnosticsARPEntry {
     __obj.asInstanceOf[InterconnectDiagnosticsARPEntry]
   }
   
-  extension [Self <: InterconnectDiagnosticsARPEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterconnectDiagnosticsARPEntry] (val x: Self) extends AnyVal {
     
     inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     

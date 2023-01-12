@@ -24,7 +24,8 @@ object CrossReference {
     __obj.asInstanceOf[CrossReference]
   }
   
-  extension [Self <: CrossReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossReference] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: String): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     

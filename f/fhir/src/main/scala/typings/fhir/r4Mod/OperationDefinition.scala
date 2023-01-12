@@ -211,7 +211,8 @@ object OperationDefinition {
     __obj.asInstanceOf[OperationDefinition]
   }
   
-  extension [Self <: OperationDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationDefinition] (val x: Self) extends AnyVal {
     
     inline def setAffectsState(value: Boolean): Self = StObject.set(x, "affectsState", value.asInstanceOf[js.Any])
     

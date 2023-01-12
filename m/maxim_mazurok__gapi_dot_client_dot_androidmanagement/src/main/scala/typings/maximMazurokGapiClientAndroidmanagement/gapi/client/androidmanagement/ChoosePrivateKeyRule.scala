@@ -30,7 +30,8 @@ object ChoosePrivateKeyRule {
     __obj.asInstanceOf[ChoosePrivateKeyRule]
   }
   
-  extension [Self <: ChoosePrivateKeyRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChoosePrivateKeyRule] (val x: Self) extends AnyVal {
     
     inline def setPackageNames(value: js.Array[String]): Self = StObject.set(x, "packageNames", value.asInstanceOf[js.Any])
     

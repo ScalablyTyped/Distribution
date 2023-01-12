@@ -22,7 +22,8 @@ object BreakpointsComponent {
     __obj.asInstanceOf[BreakpointsComponent]
   }
   
-  extension [Self <: BreakpointsComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreakpointsComponent] (val x: Self) extends AnyVal {
     
     inline def setMatch(value: Record[Double, Options] => Options): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
   }

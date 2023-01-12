@@ -37,7 +37,8 @@ object AppsDynamiteSharedSpaceInfo {
     __obj.asInstanceOf[AppsDynamiteSharedSpaceInfo]
   }
   
-  extension [Self <: AppsDynamiteSharedSpaceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedSpaceInfo] (val x: Self) extends AnyVal {
     
     inline def setAvatarInfo(value: AppsDynamiteSharedAvatarInfo): Self = StObject.set(x, "avatarInfo", value.asInstanceOf[js.Any])
     

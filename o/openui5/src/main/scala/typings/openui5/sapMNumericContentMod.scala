@@ -801,7 +801,8 @@ object sapMNumericContentMod {
       __obj.asInstanceOf[NumericContentSettings]
     }
     
-    extension [Self <: NumericContentSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumericContentSettings] (val x: Self) extends AnyVal {
       
       inline def setAdaptiveFontSize(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "adaptiveFontSize", value.asInstanceOf[js.Any])
       

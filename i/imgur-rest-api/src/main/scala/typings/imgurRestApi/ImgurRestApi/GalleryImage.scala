@@ -62,7 +62,8 @@ object GalleryImage {
     __obj.asInstanceOf[GalleryImage]
   }
   
-  extension [Self <: GalleryImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GalleryImage] (val x: Self) extends AnyVal {
     
     inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     

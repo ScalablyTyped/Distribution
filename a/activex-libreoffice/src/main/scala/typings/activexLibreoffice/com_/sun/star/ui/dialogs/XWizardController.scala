@@ -58,7 +58,8 @@ object XWizardController {
     __obj.asInstanceOf[XWizardController]
   }
   
-  extension [Self <: XWizardController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XWizardController] (val x: Self) extends AnyVal {
     
     inline def setCanAdvance(value: () => Boolean): Self = StObject.set(x, "canAdvance", js.Any.fromFunction0(value))
     

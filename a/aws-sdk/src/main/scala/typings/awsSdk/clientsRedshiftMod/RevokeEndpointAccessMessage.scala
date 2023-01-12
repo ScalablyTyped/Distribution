@@ -33,7 +33,8 @@ object RevokeEndpointAccessMessage {
     __obj.asInstanceOf[RevokeEndpointAccessMessage]
   }
   
-  extension [Self <: RevokeEndpointAccessMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeEndpointAccessMessage] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: String): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     

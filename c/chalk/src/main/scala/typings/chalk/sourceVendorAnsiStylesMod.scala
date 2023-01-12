@@ -377,7 +377,8 @@ object sourceVendorAnsiStylesMod {
       __obj.asInstanceOf[BackgroundColor]
     }
     
-    extension [Self <: BackgroundColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
       
       inline def setBgBlack(value: CSPair): Self = StObject.set(x, "bgBlack", value.asInstanceOf[js.Any])
       
@@ -461,7 +462,8 @@ object sourceVendorAnsiStylesMod {
       __obj.asInstanceOf[CSPair]
     }
     
-    extension [Self <: CSPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSPair] (val x: Self) extends AnyVal {
       
       inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -494,7 +496,8 @@ object sourceVendorAnsiStylesMod {
       __obj.asInstanceOf[ColorBase]
     }
     
-    extension [Self <: ColorBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorBase] (val x: Self) extends AnyVal {
       
       inline def setAnsi(value: Double => String): Self = StObject.set(x, "ansi", js.Any.fromFunction1(value))
       
@@ -568,7 +571,8 @@ object sourceVendorAnsiStylesMod {
       __obj.asInstanceOf[ConvertColor]
     }
     
-    extension [Self <: ConvertColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertColor] (val x: Self) extends AnyVal {
       
       inline def setAnsi256ToAnsi(value: Double => Double): Self = StObject.set(x, "ansi256ToAnsi", js.Any.fromFunction1(value))
       
@@ -654,7 +658,8 @@ object sourceVendorAnsiStylesMod {
       __obj.asInstanceOf[ForegroundColor]
     }
     
-    extension [Self <: ForegroundColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForegroundColor] (val x: Self) extends AnyVal {
       
       inline def setBlack(value: CSPair): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
       
@@ -783,7 +788,8 @@ object sourceVendorAnsiStylesMod {
       __obj.asInstanceOf[Modifier]
     }
     
-    extension [Self <: Modifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Modifier] (val x: Self) extends AnyVal {
       
       inline def setBold(value: CSPair): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       

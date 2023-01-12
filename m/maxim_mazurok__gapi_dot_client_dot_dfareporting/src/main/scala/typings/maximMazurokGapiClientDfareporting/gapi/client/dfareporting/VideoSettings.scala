@@ -40,7 +40,8 @@ object VideoSettings {
     __obj.asInstanceOf[VideoSettings]
   }
   
-  extension [Self <: VideoSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoSettings] (val x: Self) extends AnyVal {
     
     inline def setCompanionSettings(value: CompanionSetting): Self = StObject.set(x, "companionSettings", value.asInstanceOf[js.Any])
     

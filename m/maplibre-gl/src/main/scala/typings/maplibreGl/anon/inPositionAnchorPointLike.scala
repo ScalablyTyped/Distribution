@@ -47,7 +47,8 @@ object inPositionAnchorPointLike {
     __obj.asInstanceOf[inPositionAnchorPointLike]
   }
   
-  extension [Self <: inPositionAnchorPointLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: inPositionAnchorPointLike] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: PointLike): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

@@ -83,7 +83,8 @@ object Qr {
     __obj.asInstanceOf[Qr]
   }
   
-  extension [Self <: Qr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Qr] (val x: Self) extends AnyVal {
     
     inline def setCommit(value: () => Any): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
     

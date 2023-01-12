@@ -23,7 +23,8 @@ object ISubscription {
     __obj.asInstanceOf[ISubscription]
   }
   
-  extension [Self <: ISubscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISubscription] (val x: Self) extends AnyVal {
     
     inline def setNl(value: Boolean): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
     

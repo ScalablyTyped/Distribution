@@ -65,7 +65,8 @@ object OptionsLayout {
     __obj.asInstanceOf[OptionsLayout]
   }
   
-  extension [Self <: OptionsLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsLayout] (val x: Self) extends AnyVal {
     
     inline def setAdjustResize(value: Boolean): Self = StObject.set(x, "adjustResize", value.asInstanceOf[js.Any])
     

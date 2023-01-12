@@ -33,7 +33,8 @@ object UpdateFunctionRequest {
     __obj.asInstanceOf[UpdateFunctionRequest]
   }
   
-  extension [Self <: UpdateFunctionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFunctionRequest] (val x: Self) extends AnyVal {
     
     inline def setFunctionCode(value: FunctionBlob): Self = StObject.set(x, "FunctionCode", value.asInstanceOf[js.Any])
     

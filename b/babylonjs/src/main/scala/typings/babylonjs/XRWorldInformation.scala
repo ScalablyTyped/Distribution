@@ -17,7 +17,8 @@ object XRWorldInformation {
     __obj.asInstanceOf[XRWorldInformation]
   }
   
-  extension [Self <: XRWorldInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRWorldInformation] (val x: Self) extends AnyVal {
     
     inline def setDetectedMeshes(value: XRMeshSet): Self = StObject.set(x, "detectedMeshes", value.asInstanceOf[js.Any])
     

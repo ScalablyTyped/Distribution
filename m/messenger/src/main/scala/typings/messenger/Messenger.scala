@@ -23,7 +23,8 @@ object Messenger {
     __obj.asInstanceOf[Messenger]
   }
   
-  extension [Self <: Messenger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Messenger] (val x: Self) extends AnyVal {
     
     inline def setHideAll(value: () => Unit): Self = StObject.set(x, "hideAll", js.Any.fromFunction0(value))
     

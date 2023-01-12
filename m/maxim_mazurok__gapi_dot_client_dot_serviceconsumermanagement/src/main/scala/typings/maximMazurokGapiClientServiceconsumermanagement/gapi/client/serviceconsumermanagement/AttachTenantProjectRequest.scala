@@ -25,7 +25,8 @@ object AttachTenantProjectRequest {
     __obj.asInstanceOf[AttachTenantProjectRequest]
   }
   
-  extension [Self <: AttachTenantProjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachTenantProjectRequest] (val x: Self) extends AnyVal {
     
     inline def setExternalResource(value: String): Self = StObject.set(x, "externalResource", value.asInstanceOf[js.Any])
     

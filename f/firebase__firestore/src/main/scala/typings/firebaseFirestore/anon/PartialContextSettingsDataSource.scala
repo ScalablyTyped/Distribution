@@ -29,7 +29,8 @@ object PartialContextSettingsDataSource {
     __obj.asInstanceOf[PartialContextSettingsDataSource]
   }
   
-  extension [Self <: PartialContextSettingsDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialContextSettingsDataSource] (val x: Self) extends AnyVal {
     
     inline def setArrayElement(value: Boolean): Self = StObject.set(x, "arrayElement", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object distCacheItokencacheMod {
       __obj.asInstanceOf[ITokenCache]
     }
     
-    extension [Self <: ITokenCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITokenCache] (val x: Self) extends AnyVal {
       
       inline def setLoadExternalTokens(value: (SilentRequest, ExternalTokenResponse, LoadTokenOptions) => Unit): Self = StObject.set(x, "loadExternalTokens", js.Any.fromFunction3(value))
     }

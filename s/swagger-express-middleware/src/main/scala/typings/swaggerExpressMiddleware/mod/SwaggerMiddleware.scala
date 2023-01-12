@@ -381,7 +381,8 @@ object SwaggerMiddleware {
     __obj.asInstanceOf[SwaggerMiddleware]
   }
   
-  extension [Self <: SwaggerMiddleware](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwaggerMiddleware] (val x: Self) extends AnyVal {
     
     inline def setCORS(
       value: () => RequestHandler[

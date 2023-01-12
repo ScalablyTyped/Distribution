@@ -29,7 +29,8 @@ object RibbonGenerator {
     __obj.asInstanceOf[RibbonGenerator]
   }
   
-  extension [Self <: RibbonGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RibbonGenerator] (val x: Self) extends AnyVal {
     
     inline def setRibbonGenerator(value: typings.nivoChord.distTypesTypesMod.RibbonGenerator): Self = StObject.set(x, "ribbonGenerator", value.asInstanceOf[js.Any])
     

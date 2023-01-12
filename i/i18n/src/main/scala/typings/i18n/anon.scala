@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Disable]
     }
     
-    extension [Self <: Disable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disable] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Partiali18nAPI]
     }
     
-    extension [Self <: Partiali18nAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Partiali18nAPI] (val x: Self) extends AnyVal {
       
       inline def setGetCatalog(value: () => GlobalCatalog): Self = StObject.set(x, "getCatalog", js.Any.fromFunction0(value))
       

@@ -19,7 +19,8 @@ object CounterStructuredNameAndMetadata {
     __obj.asInstanceOf[CounterStructuredNameAndMetadata]
   }
   
-  extension [Self <: CounterStructuredNameAndMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CounterStructuredNameAndMetadata] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: CounterMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

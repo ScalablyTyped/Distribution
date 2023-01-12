@@ -32,7 +32,8 @@ object UpdatePositionRequest {
     __obj.asInstanceOf[UpdatePositionRequest]
   }
   
-  extension [Self <: UpdatePositionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePositionRequest] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: PositionCoordinate): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     

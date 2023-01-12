@@ -33,7 +33,8 @@ object typechoicedefaultValuestr {
     __obj.asInstanceOf[typechoicedefaultValuestr]
   }
   
-  extension [Self <: typechoicedefaultValuestr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typechoicedefaultValuestr] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: select | `button-group`): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

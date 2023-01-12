@@ -23,7 +23,8 @@ object BUS {
     __obj.asInstanceOf[BUS]
   }
   
-  extension [Self <: BUS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BUS] (val x: Self) extends AnyVal {
     
     inline def setBUS(value: String): Self = StObject.set(x, "BUS", value.asInstanceOf[js.Any])
     

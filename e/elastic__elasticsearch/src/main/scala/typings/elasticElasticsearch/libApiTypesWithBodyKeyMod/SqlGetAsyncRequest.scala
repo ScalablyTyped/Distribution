@@ -25,7 +25,8 @@ object SqlGetAsyncRequest {
     __obj.asInstanceOf[SqlGetAsyncRequest]
   }
   
-  extension [Self <: SqlGetAsyncRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlGetAsyncRequest] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     

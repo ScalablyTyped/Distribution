@@ -17,7 +17,8 @@ object RotationalSpringOptions {
     __obj.asInstanceOf[RotationalSpringOptions]
   }
   
-  extension [Self <: RotationalSpringOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotationalSpringOptions] (val x: Self) extends AnyVal {
     
     inline def setRestAngle(value: Double): Self = StObject.set(x, "restAngle", value.asInstanceOf[js.Any])
     

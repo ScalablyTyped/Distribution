@@ -28,7 +28,8 @@ object UpdateVoiceConnectorRequest {
     __obj.asInstanceOf[UpdateVoiceConnectorRequest]
   }
   
-  extension [Self <: UpdateVoiceConnectorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVoiceConnectorRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: VoiceConnectorName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

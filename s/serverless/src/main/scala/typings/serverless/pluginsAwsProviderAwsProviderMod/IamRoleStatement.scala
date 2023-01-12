@@ -30,7 +30,8 @@ object IamRoleStatement {
     __obj.asInstanceOf[IamRoleStatement]
   }
   
-  extension [Self <: IamRoleStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IamRoleStatement] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String | js.Array[String] | StringDictionary[Any]): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

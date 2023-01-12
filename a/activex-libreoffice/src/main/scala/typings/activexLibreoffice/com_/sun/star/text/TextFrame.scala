@@ -205,7 +205,8 @@ object TextFrame {
     __obj.asInstanceOf[TextFrame]
   }
   
-  extension [Self <: TextFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFrame] (val x: Self) extends AnyVal {
     
     inline def setEditInReadonly(value: Boolean): Self = StObject.set(x, "EditInReadonly", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object Flow {
     __obj.asInstanceOf[Flow]
   }
   
-  extension [Self <: Flow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Flow] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: string): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

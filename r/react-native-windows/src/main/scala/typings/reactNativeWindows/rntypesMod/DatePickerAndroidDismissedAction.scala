@@ -18,7 +18,8 @@ object DatePickerAndroidDismissedAction {
     __obj.asInstanceOf[DatePickerAndroidDismissedAction]
   }
   
-  extension [Self <: DatePickerAndroidDismissedAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePickerAndroidDismissedAction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: dismissedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }

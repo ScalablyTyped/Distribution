@@ -19,7 +19,8 @@ object PlotScene {
     __obj.asInstanceOf[PlotScene]
   }
   
-  extension [Self <: PlotScene](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotScene] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

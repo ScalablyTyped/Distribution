@@ -23,7 +23,8 @@ object CSSTransitionElementProps {
     __obj.asInstanceOf[CSSTransitionElementProps[E]]
   }
   
-  extension [Self <: CSSTransitionElementProps[?], E /* <: HTMLElement */](x: Self & CSSTransitionElementProps[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSTransitionElementProps[?], E /* <: HTMLElement */] (val x: Self & CSSTransitionElementProps[E]) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

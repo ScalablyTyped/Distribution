@@ -18,7 +18,8 @@ object DeploymentExportResult {
     __obj.asInstanceOf[DeploymentExportResult]
   }
   
-  extension [Self <: DeploymentExportResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentExportResult] (val x: Self) extends AnyVal {
     
     inline def setTemplate(value: Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object DivergingOptions {
     __obj.asInstanceOf[DivergingOptions]
   }
   
-  extension [Self <: DivergingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DivergingOptions] (val x: Self) extends AnyVal {
     
     inline def setClamp(value: Boolean): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
     

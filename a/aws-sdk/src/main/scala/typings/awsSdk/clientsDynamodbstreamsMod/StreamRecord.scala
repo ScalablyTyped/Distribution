@@ -48,7 +48,8 @@ object StreamRecord {
     __obj.asInstanceOf[StreamRecord]
   }
   
-  extension [Self <: StreamRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamRecord] (val x: Self) extends AnyVal {
     
     inline def setApproximateCreationDateTime(value: js.Date): Self = StObject.set(x, "ApproximateCreationDateTime", value.asInstanceOf[js.Any])
     

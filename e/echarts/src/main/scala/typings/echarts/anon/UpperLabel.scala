@@ -28,7 +28,8 @@ object UpperLabel {
     __obj.asInstanceOf[UpperLabel]
   }
   
-  extension [Self <: UpperLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpperLabel] (val x: Self) extends AnyVal {
     
     inline def setItemStyle(value: `26`): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     

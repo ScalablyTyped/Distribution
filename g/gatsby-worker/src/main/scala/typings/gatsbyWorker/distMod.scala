@@ -108,7 +108,8 @@ object distMod {
       __obj.asInstanceOf[IPublicWorkerInfo]
     }
     
-    extension [Self <: IPublicWorkerInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPublicWorkerInfo] (val x: Self) extends AnyVal {
       
       inline def setWorkerId(value: Double): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
     }
@@ -129,7 +130,8 @@ object distMod {
       __obj.asInstanceOf[IWorkerOptions]
     }
     
-    extension [Self <: IWorkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWorkerOptions] (val x: Self) extends AnyVal {
       
       inline def setEnv(value: Record[String, String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       

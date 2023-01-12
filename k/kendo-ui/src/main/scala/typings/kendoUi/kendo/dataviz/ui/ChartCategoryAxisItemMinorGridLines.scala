@@ -25,7 +25,8 @@ object ChartCategoryAxisItemMinorGridLines {
     __obj.asInstanceOf[ChartCategoryAxisItemMinorGridLines]
   }
   
-  extension [Self <: ChartCategoryAxisItemMinorGridLines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartCategoryAxisItemMinorGridLines] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

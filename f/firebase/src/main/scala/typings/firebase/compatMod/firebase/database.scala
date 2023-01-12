@@ -371,7 +371,8 @@ object database {
       __obj.asInstanceOf[DataSnapshot]
     }
     
-    extension [Self <: DataSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSnapshot] (val x: Self) extends AnyVal {
       
       inline def setChild(value: String => DataSnapshot): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
       
@@ -3074,7 +3075,8 @@ object database {
       __obj.asInstanceOf[TransactionResult]
     }
     
-    extension [Self <: TransactionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionResult] (val x: Self) extends AnyVal {
       
       inline def setCommitted(value: Boolean): Self = StObject.set(x, "committed", value.asInstanceOf[js.Any])
       

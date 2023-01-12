@@ -202,7 +202,8 @@ object StreamLayerProperties {
     __obj.asInstanceOf[StreamLayerProperties]
   }
   
-  extension [Self <: StreamLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     

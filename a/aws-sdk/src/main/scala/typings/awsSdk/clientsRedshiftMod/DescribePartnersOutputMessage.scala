@@ -18,7 +18,8 @@ object DescribePartnersOutputMessage {
     __obj.asInstanceOf[DescribePartnersOutputMessage]
   }
   
-  extension [Self <: DescribePartnersOutputMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePartnersOutputMessage] (val x: Self) extends AnyVal {
     
     inline def setPartnerIntegrationInfoList(value: PartnerIntegrationInfoList): Self = StObject.set(x, "PartnerIntegrationInfoList", value.asInstanceOf[js.Any])
     

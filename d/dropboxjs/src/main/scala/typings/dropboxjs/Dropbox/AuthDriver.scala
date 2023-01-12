@@ -51,7 +51,8 @@ object AuthDriver {
       __obj.asInstanceOf[BrowserBase]
     }
     
-    extension [Self <: BrowserBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserBase] (val x: Self) extends AnyVal {
       
       inline def setAuthType(value: () => String): Self = StObject.set(x, "authType", js.Any.fromFunction0(value))
       
@@ -81,7 +82,8 @@ object AuthDriver {
     def doAuthorize(authUrl: String, stateParam: String, client: Client, callback: QueryParamsCallback): Unit = js.native
   }
   
-  extension [Self <: AuthDriver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthDriver] (val x: Self) extends AnyVal {
     
     inline def setAuthType(value: () => String): Self = StObject.set(x, "authType", js.Any.fromFunction0(value))
     
@@ -144,7 +146,8 @@ object AuthDriver {
       __obj.asInstanceOf[Redirect]
     }
     
-    extension [Self <: Redirect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Redirect] (val x: Self) extends AnyVal {
       
       inline def setDoAuthorize(value: (String, String, Client) => Unit): Self = StObject.set(x, "doAuthorize", js.Any.fromFunction3(value))
       

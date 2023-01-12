@@ -31,7 +31,8 @@ object ScanWhereChain {
     __obj.asInstanceOf[ScanWhereChain]
   }
   
-  extension [Self <: ScanWhereChain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanWhereChain] (val x: Self) extends AnyVal {
     
     inline def setNotNull(value: () => Scan): Self = StObject.set(x, "notNull", js.Any.fromFunction0(value))
   }

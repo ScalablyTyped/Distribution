@@ -44,7 +44,8 @@ object distInterpolationStepMod {
       __obj.asInstanceOf[StepInterpolationOptions]
     }
     
-    extension [Self <: StepInterpolationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepInterpolationOptions] (val x: Self) extends AnyVal {
       
       inline def setFillHoles(value: Boolean): Self = StObject.set(x, "fillHoles", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object VisibleElementsSelectionTools {
     __obj.asInstanceOf[VisibleElementsSelectionTools]
   }
   
-  extension [Self <: VisibleElementsSelectionTools](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisibleElementsSelectionTools] (val x: Self) extends AnyVal {
     
     inline def `setLasso-selection`(value: Boolean): Self = StObject.set(x, "lasso-selection", value.asInstanceOf[js.Any])
     

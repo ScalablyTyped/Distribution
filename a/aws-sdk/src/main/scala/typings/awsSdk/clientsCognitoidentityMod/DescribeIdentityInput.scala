@@ -18,7 +18,8 @@ object DescribeIdentityInput {
     __obj.asInstanceOf[DescribeIdentityInput]
   }
   
-  extension [Self <: DescribeIdentityInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeIdentityInput] (val x: Self) extends AnyVal {
     
     inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
   }

@@ -234,7 +234,8 @@ object OptionsRows {
     __obj.asInstanceOf[OptionsRows]
   }
   
-  extension [Self <: OptionsRows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsRows] (val x: Self) extends AnyVal {
     
     inline def setAddRowPos(value: bottom | top): Self = StObject.set(x, "addRowPos", value.asInstanceOf[js.Any])
     

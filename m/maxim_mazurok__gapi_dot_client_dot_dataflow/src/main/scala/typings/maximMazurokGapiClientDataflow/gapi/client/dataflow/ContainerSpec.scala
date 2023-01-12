@@ -34,7 +34,8 @@ object ContainerSpec {
     __obj.asInstanceOf[ContainerSpec]
   }
   
-  extension [Self <: ContainerSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerSpec] (val x: Self) extends AnyVal {
     
     inline def setDefaultEnvironment(value: FlexTemplateRuntimeEnvironment): Self = StObject.set(x, "defaultEnvironment", value.asInstanceOf[js.Any])
     

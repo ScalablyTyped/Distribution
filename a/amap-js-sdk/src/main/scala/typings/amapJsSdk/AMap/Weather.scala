@@ -36,7 +36,8 @@ object Weather {
     __obj.asInstanceOf[Weather]
   }
   
-  extension [Self <: Weather](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Weather] (val x: Self) extends AnyVal {
     
     inline def setGetForecast(
       value: (String, js.Function2[/* errorStatus */ Any, /* result */ WeatherForecastResult, Unit]) => Unit

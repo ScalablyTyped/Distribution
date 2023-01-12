@@ -24,7 +24,8 @@ object ManagedAndroidStoreApp {
     __obj.asInstanceOf[ManagedAndroidStoreApp]
   }
   
-  extension [Self <: ManagedAndroidStoreApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedAndroidStoreApp] (val x: Self) extends AnyVal {
     
     inline def setAppStoreUrl(value: String): Self = StObject.set(x, "appStoreUrl", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object HTMLTextureFileConfig {
     __obj.asInstanceOf[HTMLTextureFileConfig]
   }
   
-  extension [Self <: HTMLTextureFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLTextureFileConfig] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

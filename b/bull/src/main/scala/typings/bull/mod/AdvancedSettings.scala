@@ -64,7 +64,8 @@ object AdvancedSettings {
     __obj.asInstanceOf[AdvancedSettings]
   }
   
-  extension [Self <: AdvancedSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedSettings] (val x: Self) extends AnyVal {
     
     inline def setBackoffStrategies(
       value: StringDictionary[

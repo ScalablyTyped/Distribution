@@ -84,7 +84,8 @@ object ForegroundStyle {
     __obj.asInstanceOf[ForegroundStyle]
   }
   
-  extension [Self <: ForegroundStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForegroundStyle] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

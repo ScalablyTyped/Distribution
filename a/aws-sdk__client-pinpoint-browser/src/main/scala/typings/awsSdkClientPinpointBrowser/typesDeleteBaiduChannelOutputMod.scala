@@ -31,7 +31,8 @@ object typesDeleteBaiduChannelOutputMod {
       __obj.asInstanceOf[DeleteBaiduChannelOutput]
     }
     
-    extension [Self <: DeleteBaiduChannelOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteBaiduChannelOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

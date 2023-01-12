@@ -44,7 +44,8 @@ object distInterpolationCardinalMod {
       __obj.asInstanceOf[CardinalInterpolationOptions]
     }
     
-    extension [Self <: CardinalInterpolationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardinalInterpolationOptions] (val x: Self) extends AnyVal {
       
       inline def setFillHoles(value: Boolean): Self = StObject.set(x, "fillHoles", value.asInstanceOf[js.Any])
       

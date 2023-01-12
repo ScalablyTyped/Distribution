@@ -20,7 +20,8 @@ object TerminalProfileProvider {
     __obj.asInstanceOf[TerminalProfileProvider]
   }
   
-  extension [Self <: TerminalProfileProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminalProfileProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideTerminalProfile(value: CancellationToken => ProviderResult[TerminalProfile]): Self = StObject.set(x, "provideTerminalProfile", js.Any.fromFunction1(value))
   }

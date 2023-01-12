@@ -44,7 +44,8 @@ object Panose {
     __obj.asInstanceOf[Panose]
   }
   
-  extension [Self <: Panose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Panose] (val x: Self) extends AnyVal {
     
     inline def setArmStyle(value: Double): Self = StObject.set(x, "ArmStyle", value.asInstanceOf[js.Any])
     

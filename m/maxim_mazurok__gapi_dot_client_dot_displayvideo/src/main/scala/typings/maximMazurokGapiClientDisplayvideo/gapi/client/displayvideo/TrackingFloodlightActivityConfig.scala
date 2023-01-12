@@ -22,7 +22,8 @@ object TrackingFloodlightActivityConfig {
     __obj.asInstanceOf[TrackingFloodlightActivityConfig]
   }
   
-  extension [Self <: TrackingFloodlightActivityConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackingFloodlightActivityConfig] (val x: Self) extends AnyVal {
     
     inline def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
     

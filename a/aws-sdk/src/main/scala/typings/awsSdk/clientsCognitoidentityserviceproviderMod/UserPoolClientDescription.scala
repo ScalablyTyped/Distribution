@@ -28,7 +28,8 @@ object UserPoolClientDescription {
     __obj.asInstanceOf[UserPoolClientDescription]
   }
   
-  extension [Self <: UserPoolClientDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPoolClientDescription] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     

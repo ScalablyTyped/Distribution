@@ -48,7 +48,8 @@ object stepper {
       __obj.asInstanceOf[Step]
     }
     
-    extension [Self <: Step](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
       
       inline def setDeselect(value: () => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
       
@@ -109,7 +110,8 @@ object stepper {
       __obj.asInstanceOf[StepOptions]
     }
     
-    extension [Self <: StepOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

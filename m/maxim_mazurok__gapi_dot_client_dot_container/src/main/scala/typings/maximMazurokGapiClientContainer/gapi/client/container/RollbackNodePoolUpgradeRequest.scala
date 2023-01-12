@@ -37,7 +37,8 @@ object RollbackNodePoolUpgradeRequest {
     __obj.asInstanceOf[RollbackNodePoolUpgradeRequest]
   }
   
-  extension [Self <: RollbackNodePoolUpgradeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollbackNodePoolUpgradeRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     

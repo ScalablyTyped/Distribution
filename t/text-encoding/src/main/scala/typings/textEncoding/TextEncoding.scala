@@ -20,7 +20,8 @@ object TextEncoding {
       __obj.asInstanceOf[TextEncoderOptions]
     }
     
-    extension [Self <: TextEncoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextEncoderOptions] (val x: Self) extends AnyVal {
       
       inline def setNONSTANDARD_allowLegacyEncoding(value: Boolean): Self = StObject.set(x, "NONSTANDARD_allowLegacyEncoding", value.asInstanceOf[js.Any])
       

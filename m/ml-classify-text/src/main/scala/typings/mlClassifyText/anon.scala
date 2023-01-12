@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[PartialModelOptions]
     }
     
-    extension [Self <: PartialModelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialModelOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

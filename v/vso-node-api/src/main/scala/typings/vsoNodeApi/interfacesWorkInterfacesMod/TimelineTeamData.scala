@@ -98,7 +98,8 @@ object TimelineTeamData {
     __obj.asInstanceOf[TimelineTeamData]
   }
   
-  extension [Self <: TimelineTeamData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineTeamData] (val x: Self) extends AnyVal {
     
     inline def setBacklog(value: BacklogLevel): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
     

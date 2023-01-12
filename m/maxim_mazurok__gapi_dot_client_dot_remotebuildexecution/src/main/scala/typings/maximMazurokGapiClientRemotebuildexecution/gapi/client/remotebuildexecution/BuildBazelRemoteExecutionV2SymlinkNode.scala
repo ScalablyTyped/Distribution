@@ -26,7 +26,8 @@ object BuildBazelRemoteExecutionV2SymlinkNode {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2SymlinkNode]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2SymlinkNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2SymlinkNode] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

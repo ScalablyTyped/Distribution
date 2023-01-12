@@ -25,7 +25,8 @@ object AppVersion {
     __obj.asInstanceOf[AppVersion]
   }
   
-  extension [Self <: AppVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppVersion] (val x: Self) extends AnyVal {
     
     inline def setProduction(value: Boolean): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
     

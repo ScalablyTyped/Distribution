@@ -38,7 +38,8 @@ object SourceTableFeatureDetails {
     __obj.asInstanceOf[SourceTableFeatureDetails]
   }
   
-  extension [Self <: SourceTableFeatureDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceTableFeatureDetails] (val x: Self) extends AnyVal {
     
     inline def setGlobalSecondaryIndexes(value: GlobalSecondaryIndexes): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
     

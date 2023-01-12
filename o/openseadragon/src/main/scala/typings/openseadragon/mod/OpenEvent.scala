@@ -17,7 +17,8 @@ object OpenEvent {
     __obj.asInstanceOf[OpenEvent]
   }
   
-  extension [Self <: OpenEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenEvent] (val x: Self) extends AnyVal {
     
     inline def setSource(value: TileSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }

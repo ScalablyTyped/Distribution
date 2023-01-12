@@ -16,7 +16,8 @@ object PartialClassesMaterialPic {
     __obj.asInstanceOf[PartialClassesMaterialPic]
   }
   
-  extension [Self <: PartialClassesMaterialPic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassesMaterialPic] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: PartialMaterialPickerStyl): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

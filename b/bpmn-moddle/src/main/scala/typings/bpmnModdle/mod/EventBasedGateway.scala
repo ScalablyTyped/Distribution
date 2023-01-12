@@ -35,7 +35,8 @@ object EventBasedGateway {
     __obj.asInstanceOf[EventBasedGateway]
   }
   
-  extension [Self <: EventBasedGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventBasedGateway] (val x: Self) extends AnyVal {
     
     inline def setEventGatewayType(value: EventBasedGatewayType): Self = StObject.set(x, "eventGatewayType", value.asInstanceOf[js.Any])
     

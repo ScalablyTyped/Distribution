@@ -55,7 +55,8 @@ object UniformFormat {
     __obj.asInstanceOf[UniformFormat]
   }
   
-  extension [Self <: UniformFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniformFormat] (val x: Self) extends AnyVal {
     
     inline def setByteSize(value: Double): Self = StObject.set(x, "byteSize", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ViewStyle {
     __obj.asInstanceOf[ViewStyle]
   }
   
-  extension [Self <: ViewStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewStyle] (val x: Self) extends AnyVal {
     
     inline def setOverflow(value: visible | hidden): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object ChartPivotOptionsData {
     __obj.asInstanceOf[ChartPivotOptionsData]
   }
   
-  extension [Self <: ChartPivotOptionsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartPivotOptionsData] (val x: Self) extends AnyVal {
     
     inline def setShowAxisFieldButtons(value: Boolean): Self = StObject.set(x, "showAxisFieldButtons", value.asInstanceOf[js.Any])
     

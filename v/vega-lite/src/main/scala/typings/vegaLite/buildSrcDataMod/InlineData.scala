@@ -22,7 +22,8 @@ object InlineData {
     __obj.asInstanceOf[InlineData]
   }
   
-  extension [Self <: InlineData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineData] (val x: Self) extends AnyVal {
     
     inline def setValues(value: InlineDataset): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     

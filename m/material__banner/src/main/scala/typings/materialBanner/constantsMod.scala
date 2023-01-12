@@ -165,7 +165,8 @@ object constantsMod {
       __obj.asInstanceOf[MDCBannerActionEventDetail]
     }
     
-    extension [Self <: MDCBannerActionEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCBannerActionEventDetail] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     }
@@ -182,7 +183,8 @@ object constantsMod {
       __obj.asInstanceOf[MDCBannerCloseEventDetail]
     }
     
-    extension [Self <: MDCBannerCloseEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCBannerCloseEventDetail] (val x: Self) extends AnyVal {
       
       inline def setReason(value: CloseReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }

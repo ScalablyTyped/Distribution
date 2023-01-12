@@ -18,7 +18,8 @@ object BatchUpdatePartitionResponse {
     __obj.asInstanceOf[BatchUpdatePartitionResponse]
   }
   
-  extension [Self <: BatchUpdatePartitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdatePartitionResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: BatchUpdatePartitionFailureList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     

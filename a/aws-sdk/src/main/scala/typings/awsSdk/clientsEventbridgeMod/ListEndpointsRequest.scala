@@ -33,7 +33,8 @@ object ListEndpointsRequest {
     __obj.asInstanceOf[ListEndpointsRequest]
   }
   
-  extension [Self <: ListEndpointsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEndpointsRequest] (val x: Self) extends AnyVal {
     
     inline def setHomeRegion(value: HomeRegion): Self = StObject.set(x, "HomeRegion", value.asInstanceOf[js.Any])
     

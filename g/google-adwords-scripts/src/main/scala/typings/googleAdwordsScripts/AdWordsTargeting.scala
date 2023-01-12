@@ -17,7 +17,8 @@ object AdWordsTargeting {
     __obj.asInstanceOf[AdWordsTargeting[A, E]]
   }
   
-  extension [Self <: AdWordsTargeting[?, ?], A, E](x: Self & (AdWordsTargeting[A, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdWordsTargeting[?, ?], A, E] (val x: Self & (AdWordsTargeting[A, E])) extends AnyVal {
     
     inline def setAudiences(value: () => AdWordsSelector[A]): Self = StObject.set(x, "audiences", js.Any.fromFunction0(value))
     

@@ -159,7 +159,8 @@ object mod {
       __obj.asInstanceOf[Country]
     }
     
-    extension [Self <: Country](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
       
       inline def setAltSpellings(value: js.Array[String]): Self = StObject.set(x, "altSpellings", value.asInstanceOf[js.Any])
       

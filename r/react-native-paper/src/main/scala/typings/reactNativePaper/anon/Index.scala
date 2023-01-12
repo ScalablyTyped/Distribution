@@ -38,7 +38,8 @@ object Index {
     __obj.asInstanceOf[Index]
   }
   
-  extension [Self <: Index](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

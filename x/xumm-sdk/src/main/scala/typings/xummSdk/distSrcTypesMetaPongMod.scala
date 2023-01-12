@@ -20,7 +20,8 @@ object distSrcTypesMetaPongMod {
       __obj.asInstanceOf[Pong]
     }
     
-    extension [Self <: Pong](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pong] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: ApplicationDetails): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

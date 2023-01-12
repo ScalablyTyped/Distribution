@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[TokenStream[T]]
     }
     
-    extension [Self <: TokenStream[?], T](x: Self & TokenStream[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenStream[?], T] (val x: Self & TokenStream[T]) extends AnyVal {
       
       inline def setAdvance(value: () => js.UndefOr[T]): Self = StObject.set(x, "advance", js.Any.fromFunction0(value))
       

@@ -16,7 +16,8 @@ object DefinedProperty {
     __obj.asInstanceOf[DefinedProperty]
   }
   
-  extension [Self <: DefinedProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefinedProperty] (val x: Self) extends AnyVal {
     
     inline def setDefined(value: ProductionRule[BooleanValueRef]): Self = StObject.set(x, "defined", value.asInstanceOf[js.Any])
     

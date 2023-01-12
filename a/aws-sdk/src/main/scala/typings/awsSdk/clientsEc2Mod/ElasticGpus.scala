@@ -48,7 +48,8 @@ object ElasticGpus {
     __obj.asInstanceOf[ElasticGpus]
   }
   
-  extension [Self <: ElasticGpus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticGpus] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

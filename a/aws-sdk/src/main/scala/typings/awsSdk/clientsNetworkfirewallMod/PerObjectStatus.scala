@@ -23,7 +23,8 @@ object PerObjectStatus {
     __obj.asInstanceOf[PerObjectStatus]
   }
   
-  extension [Self <: PerObjectStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerObjectStatus] (val x: Self) extends AnyVal {
     
     inline def setSyncStatus(value: PerObjectSyncStatus): Self = StObject.set(x, "SyncStatus", value.asInstanceOf[js.Any])
     

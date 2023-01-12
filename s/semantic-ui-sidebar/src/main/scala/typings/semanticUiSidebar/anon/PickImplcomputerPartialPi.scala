@@ -23,7 +23,8 @@ object PickImplcomputerPartialPi {
     __obj.asInstanceOf[PickImplcomputerPartialPi]
   }
   
-  extension [Self <: PickImplcomputerPartialPi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplcomputerPartialPi] (val x: Self) extends AnyVal {
     
     inline def setComputer(value: ComputerSettings): Self = StObject.set(x, "computer", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object StructureMember {
     __obj.asInstanceOf[StructureMember]
   }
   
-  extension [Self <: StructureMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureMember] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: MemberLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

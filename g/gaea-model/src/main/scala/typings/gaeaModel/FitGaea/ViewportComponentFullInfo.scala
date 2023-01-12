@@ -27,7 +27,8 @@ object ViewportComponentFullInfo {
     __obj.asInstanceOf[ViewportComponentFullInfo]
   }
   
-  extension [Self <: ViewportComponentFullInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewportComponentFullInfo] (val x: Self) extends AnyVal {
     
     inline def setChilds(value: StringDictionary[ViewportComponentInfo]): Self = StObject.set(x, "childs", value.asInstanceOf[js.Any])
     

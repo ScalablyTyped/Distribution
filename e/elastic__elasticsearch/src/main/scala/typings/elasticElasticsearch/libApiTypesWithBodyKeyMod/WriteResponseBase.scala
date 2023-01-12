@@ -37,7 +37,8 @@ object WriteResponseBase {
     __obj.asInstanceOf[WriteResponseBase]
   }
   
-  extension [Self <: WriteResponseBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteResponseBase] (val x: Self) extends AnyVal {
     
     inline def setForced_refresh(value: Boolean): Self = StObject.set(x, "forced_refresh", value.asInstanceOf[js.Any])
     

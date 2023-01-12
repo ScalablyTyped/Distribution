@@ -33,7 +33,8 @@ object CreatePolicyVersionResponse {
     __obj.asInstanceOf[CreatePolicyVersionResponse]
   }
   
-  extension [Self <: CreatePolicyVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePolicyVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultVersion(value: IsDefaultVersion): Self = StObject.set(x, "isDefaultVersion", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object BackendServiceIAP {
     __obj.asInstanceOf[BackendServiceIAP]
   }
   
-  extension [Self <: BackendServiceIAP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendServiceIAP] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -90,7 +90,8 @@ object Popups {
       __obj.asInstanceOf[IMessageDialog]
     }
     
-    extension [Self <: IMessageDialog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMessageDialog] (val x: Self) extends AnyVal {
       
       inline def setCancelCommandIndex(value: Double): Self = StObject.set(x, "cancelCommandIndex", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object Popups {
       __obj.asInstanceOf[IMessageDialogFactory]
     }
     
-    extension [Self <: IMessageDialogFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMessageDialogFactory] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: String => MessageDialog): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -157,7 +159,8 @@ object Popups {
       __obj.asInstanceOf[IUICommand]
     }
     
-    extension [Self <: IUICommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUICommand] (val x: Self) extends AnyVal {
       
       inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -186,7 +189,8 @@ object Popups {
       __obj.asInstanceOf[IUICommandFactory]
     }
     
-    extension [Self <: IUICommandFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUICommandFactory] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: String => UICommand): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       

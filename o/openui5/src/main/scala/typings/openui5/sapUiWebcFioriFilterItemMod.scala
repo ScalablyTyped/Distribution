@@ -260,7 +260,8 @@ object sapUiWebcFioriFilterItemMod {
       __obj.asInstanceOf[FilterItemSettings]
     }
     
-    extension [Self <: FilterItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterItemSettings] (val x: Self) extends AnyVal {
       
       inline def setText(value: String | PropertyBindingInfo): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

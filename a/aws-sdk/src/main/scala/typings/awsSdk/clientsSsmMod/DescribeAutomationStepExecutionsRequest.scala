@@ -38,7 +38,8 @@ object DescribeAutomationStepExecutionsRequest {
     __obj.asInstanceOf[DescribeAutomationStepExecutionsRequest]
   }
   
-  extension [Self <: DescribeAutomationStepExecutionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAutomationStepExecutionsRequest] (val x: Self) extends AnyVal {
     
     inline def setAutomationExecutionId(value: AutomationExecutionId): Self = StObject.set(x, "AutomationExecutionId", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object LiveChatGiftMembershipReceivedDetails {
     __obj.asInstanceOf[LiveChatGiftMembershipReceivedDetails]
   }
   
-  extension [Self <: LiveChatGiftMembershipReceivedDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveChatGiftMembershipReceivedDetails] (val x: Self) extends AnyVal {
     
     inline def setAssociatedMembershipGiftingMessageId(value: String): Self = StObject.set(x, "associatedMembershipGiftingMessageId", value.asInstanceOf[js.Any])
     

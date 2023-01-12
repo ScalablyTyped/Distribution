@@ -38,7 +38,8 @@ object ModelInputConfiguration {
     __obj.asInstanceOf[ModelInputConfiguration]
   }
   
-  extension [Self <: ModelInputConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelInputConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCsvInputTemplate(value: modelInputTemplate): Self = StObject.set(x, "csvInputTemplate", value.asInstanceOf[js.Any])
     

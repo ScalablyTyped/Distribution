@@ -18,7 +18,8 @@ object TrackCacheStorageForOriginRequest {
     __obj.asInstanceOf[TrackCacheStorageForOriginRequest]
   }
   
-  extension [Self <: TrackCacheStorageForOriginRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackCacheStorageForOriginRequest] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }

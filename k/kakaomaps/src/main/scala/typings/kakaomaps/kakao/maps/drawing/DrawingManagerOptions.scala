@@ -45,7 +45,8 @@ object DrawingManagerOptions {
     __obj.asInstanceOf[DrawingManagerOptions]
   }
   
-  extension [Self <: DrawingManagerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawingManagerOptions] (val x: Self) extends AnyVal {
     
     inline def setArrowOptions(value: ArrowOptions): Self = StObject.set(x, "arrowOptions", value.asInstanceOf[js.Any])
     

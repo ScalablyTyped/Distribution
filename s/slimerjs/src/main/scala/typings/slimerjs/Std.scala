@@ -17,7 +17,8 @@ object Std {
     __obj.asInstanceOf[Std]
   }
   
-  extension [Self <: Std](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Std] (val x: Self) extends AnyVal {
     
     inline def setRead(value: () => Any): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
     

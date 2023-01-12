@@ -27,7 +27,8 @@ object Checked {
     __obj.asInstanceOf[Checked]
   }
   
-  extension [Self <: Checked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checked] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: () => Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     

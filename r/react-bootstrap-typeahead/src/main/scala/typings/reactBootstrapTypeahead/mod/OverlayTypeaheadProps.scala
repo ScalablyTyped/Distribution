@@ -22,7 +22,8 @@ object OverlayTypeaheadProps {
     __obj.asInstanceOf[OverlayTypeaheadProps]
   }
   
-  extension [Self <: OverlayTypeaheadProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverlayTypeaheadProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: TypeaheadAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

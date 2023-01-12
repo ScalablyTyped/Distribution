@@ -20,7 +20,8 @@ object SparseSegmentSumInputs {
     __obj.asInstanceOf[SparseSegmentSumInputs]
   }
   
-  extension [Self <: SparseSegmentSumInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparseSegmentSumInputs] (val x: Self) extends AnyVal {
     
     inline def setData(value: scala.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

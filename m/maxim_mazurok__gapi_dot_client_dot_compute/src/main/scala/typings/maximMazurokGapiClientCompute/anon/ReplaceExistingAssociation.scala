@@ -67,7 +67,8 @@ object ReplaceExistingAssociation {
     __obj.asInstanceOf[ReplaceExistingAssociation]
   }
   
-  extension [Self <: ReplaceExistingAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceExistingAssociation] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

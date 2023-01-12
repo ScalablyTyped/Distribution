@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[FulfilledOutcome[T]]
     }
     
-    extension [Self <: FulfilledOutcome[?], T](x: Self & FulfilledOutcome[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FulfilledOutcome[?], T] (val x: Self & FulfilledOutcome[T]) extends AnyVal {
       
       inline def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object mod {
       __obj.asInstanceOf[RejectedOutcome]
     }
     
-    extension [Self <: RejectedOutcome](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RejectedOutcome] (val x: Self) extends AnyVal {
       
       inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       

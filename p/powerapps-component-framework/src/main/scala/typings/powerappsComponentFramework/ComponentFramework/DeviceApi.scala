@@ -47,7 +47,8 @@ object DeviceApi {
       __obj.asInstanceOf[CaptureImageOptions]
     }
     
-    extension [Self <: CaptureImageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptureImageOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowEdit(value: Boolean): Self = StObject.set(x, "allowEdit", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object DeviceApi {
       __obj.asInstanceOf[PickFileOptions]
     }
     
-    extension [Self <: PickFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickFileOptions] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object DeviceApi {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setCoords(value: Accuracy): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       

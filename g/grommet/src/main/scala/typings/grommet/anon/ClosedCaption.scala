@@ -30,7 +30,8 @@ object ClosedCaption {
     __obj.asInstanceOf[ClosedCaption]
   }
   
-  extension [Self <: ClosedCaption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClosedCaption] (val x: Self) extends AnyVal {
     
     inline def setClosedCaption(value: Any): Self = StObject.set(x, "closedCaption", value.asInstanceOf[js.Any])
     

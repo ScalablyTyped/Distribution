@@ -44,7 +44,8 @@ object SubRowDetails {
     __obj.asInstanceOf[SubRowDetails[T]]
   }
   
-  extension [Self <: SubRowDetails[?], T](x: Self & SubRowDetails[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubRowDetails[?], T] (val x: Self & SubRowDetails[T]) extends AnyVal {
     
     inline def setCanExpand(value: Boolean): Self = StObject.set(x, "canExpand", value.asInstanceOf[js.Any])
     

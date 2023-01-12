@@ -23,7 +23,8 @@ object AwsElasticsearchDomainLogPublishingOptionsLogConfig {
     __obj.asInstanceOf[AwsElasticsearchDomainLogPublishingOptionsLogConfig]
   }
   
-  extension [Self <: AwsElasticsearchDomainLogPublishingOptionsLogConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElasticsearchDomainLogPublishingOptionsLogConfig] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchLogsLogGroupArn(value: NonEmptyString): Self = StObject.set(x, "CloudWatchLogsLogGroupArn", value.asInstanceOf[js.Any])
     

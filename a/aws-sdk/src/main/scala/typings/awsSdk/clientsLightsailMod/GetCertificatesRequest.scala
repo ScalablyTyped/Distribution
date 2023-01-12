@@ -28,7 +28,8 @@ object GetCertificatesRequest {
     __obj.asInstanceOf[GetCertificatesRequest]
   }
   
-  extension [Self <: GetCertificatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCertificatesRequest] (val x: Self) extends AnyVal {
     
     inline def setCertificateName(value: CertificateName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
     

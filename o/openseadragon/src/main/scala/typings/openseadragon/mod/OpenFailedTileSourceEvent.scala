@@ -19,7 +19,8 @@ object OpenFailedTileSourceEvent {
     __obj.asInstanceOf[OpenFailedTileSourceEvent]
   }
   
-  extension [Self <: OpenFailedTileSourceEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenFailedTileSourceEvent] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

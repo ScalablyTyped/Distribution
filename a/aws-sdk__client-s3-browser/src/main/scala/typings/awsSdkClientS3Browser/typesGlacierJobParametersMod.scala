@@ -23,7 +23,8 @@ object typesGlacierJobParametersMod {
       __obj.asInstanceOf[GlacierJobParameters]
     }
     
-    extension [Self <: GlacierJobParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlacierJobParameters] (val x: Self) extends AnyVal {
       
       inline def setTier(value: Standard_ | Bulk | Expedited | String): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
     }

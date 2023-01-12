@@ -22,7 +22,8 @@ object RepoRunid {
     __obj.asInstanceOf[RepoRunid]
   }
   
-  extension [Self <: RepoRunid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepoRunid] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

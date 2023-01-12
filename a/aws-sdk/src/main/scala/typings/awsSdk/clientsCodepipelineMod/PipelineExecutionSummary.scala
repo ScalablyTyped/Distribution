@@ -48,7 +48,8 @@ object PipelineExecutionSummary {
     __obj.asInstanceOf[PipelineExecutionSummary]
   }
   
-  extension [Self <: PipelineExecutionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineExecutionSummary] (val x: Self) extends AnyVal {
     
     inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object AlignmentPatternFinder {
     __obj.asInstanceOf[AlignmentPatternFinder]
   }
   
-  extension [Self <: AlignmentPatternFinder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignmentPatternFinder] (val x: Self) extends AnyVal {
     
     inline def setCenterFromEnd(value: (Double, Double) => Double): Self = StObject.set(x, "centerFromEnd", js.Any.fromFunction2(value))
     

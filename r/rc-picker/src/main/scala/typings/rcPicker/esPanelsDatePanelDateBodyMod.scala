@@ -33,7 +33,8 @@ object esPanelsDatePanelDateBodyMod {
       __obj.asInstanceOf[DateBodyPassProps[DateType]]
     }
     
-    extension [Self <: DateBodyPassProps[?], DateType](x: Self & DateBodyPassProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateBodyPassProps[?], DateType] (val x: Self & DateBodyPassProps[DateType]) extends AnyVal {
       
       inline def setDateRender(value: (DateType, DateType) => ReactNode): Self = StObject.set(x, "dateRender", js.Any.fromFunction2(value))
       
@@ -85,7 +86,8 @@ object esPanelsDatePanelDateBodyMod {
       __obj.asInstanceOf[DateBodyProps[DateType]]
     }
     
-    extension [Self <: DateBodyProps[?], DateType](x: Self & DateBodyProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateBodyProps[?], DateType] (val x: Self & DateBodyProps[DateType]) extends AnyVal {
       
       inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       

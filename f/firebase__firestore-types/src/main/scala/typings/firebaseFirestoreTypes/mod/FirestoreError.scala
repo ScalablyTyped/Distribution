@@ -21,7 +21,8 @@ object FirestoreError {
     __obj.asInstanceOf[FirestoreError]
   }
   
-  extension [Self <: FirestoreError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirestoreError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: FirestoreErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

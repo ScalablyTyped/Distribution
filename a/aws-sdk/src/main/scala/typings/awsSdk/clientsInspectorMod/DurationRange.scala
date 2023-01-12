@@ -23,7 +23,8 @@ object DurationRange {
     __obj.asInstanceOf[DurationRange]
   }
   
-  extension [Self <: DurationRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DurationRange] (val x: Self) extends AnyVal {
     
     inline def setMaxSeconds(value: AssessmentRunDuration): Self = StObject.set(x, "maxSeconds", value.asInstanceOf[js.Any])
     

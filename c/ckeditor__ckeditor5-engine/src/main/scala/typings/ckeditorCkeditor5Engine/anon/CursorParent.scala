@@ -18,7 +18,8 @@ object CursorParent {
     __obj.asInstanceOf[CursorParent]
   }
   
-  extension [Self <: CursorParent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CursorParent] (val x: Self) extends AnyVal {
     
     inline def setCursorParent(value: default): Self = StObject.set(x, "cursorParent", value.asInstanceOf[js.Any])
     

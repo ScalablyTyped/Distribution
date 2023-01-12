@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[HexColor]
     }
     
-    extension [Self <: HexColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HexColor] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

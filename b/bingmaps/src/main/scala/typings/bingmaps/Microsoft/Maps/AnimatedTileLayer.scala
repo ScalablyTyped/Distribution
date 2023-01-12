@@ -68,7 +68,8 @@ object AnimatedTileLayer {
     __obj.asInstanceOf[AnimatedTileLayer]
   }
   
-  extension [Self <: AnimatedTileLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimatedTileLayer] (val x: Self) extends AnyVal {
     
     inline def setGetFrameRate(value: () => Double): Self = StObject.set(x, "getFrameRate", js.Any.fromFunction0(value))
     

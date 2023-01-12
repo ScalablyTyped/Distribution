@@ -663,7 +663,8 @@ object buildSrcChannelMod {
       __obj.asInstanceOf[SupportedMark]
     }
     
-    extension [Self <: SupportedMark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SupportedMark] (val x: Self) extends AnyVal {
       
       inline def setArc(value: always | binned): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
       

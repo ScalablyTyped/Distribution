@@ -17,7 +17,8 @@ object ReminderNotifyEmail {
     __obj.asInstanceOf[ReminderNotifyEmail]
   }
   
-  extension [Self <: ReminderNotifyEmail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReminderNotifyEmail] (val x: Self) extends AnyVal {
     
     inline def setReminderNotifyEmail(value: Boolean): Self = StObject.set(x, "reminderNotifyEmail", value.asInstanceOf[js.Any])
     

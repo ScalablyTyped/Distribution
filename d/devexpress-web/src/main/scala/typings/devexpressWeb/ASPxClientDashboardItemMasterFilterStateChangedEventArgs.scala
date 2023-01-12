@@ -28,7 +28,8 @@ object ASPxClientDashboardItemMasterFilterStateChangedEventArgs {
     __obj.asInstanceOf[ASPxClientDashboardItemMasterFilterStateChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientDashboardItemMasterFilterStateChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardItemMasterFilterStateChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setValues(value: js.Array[js.Array[js.Object]]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     

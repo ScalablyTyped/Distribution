@@ -73,7 +73,8 @@ object NatGateway {
     __obj.asInstanceOf[NatGateway]
   }
   
-  extension [Self <: NatGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NatGateway] (val x: Self) extends AnyVal {
     
     inline def setConnectivityType(value: ConnectivityType): Self = StObject.set(x, "ConnectivityType", value.asInstanceOf[js.Any])
     

@@ -316,7 +316,8 @@ object libIconLabiconMod {
         __obj.asInstanceOf[IIcon]
       }
       
-      extension [Self <: IIcon](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IIcon] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -371,7 +372,8 @@ object libIconLabiconMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -430,7 +432,8 @@ object libIconLabiconMod {
         __obj.asInstanceOf[IProps]
       }
       
-      extension [Self <: IProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -496,7 +499,8 @@ object libIconLabiconMod {
         __obj.asInstanceOf[IRendererOptions]
       }
       
-      extension [Self <: IRendererOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRendererOptions] (val x: Self) extends AnyVal {
         
         inline def setAttrs(value: ElementAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
         
@@ -537,7 +541,8 @@ object libIconLabiconMod {
         __obj.asInstanceOf[IResolverProps]
       }
       
-      extension [Self <: IResolverProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IResolverProps] (val x: Self) extends AnyVal {
         
         inline def setFallback(value: LabIcon): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
         

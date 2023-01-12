@@ -53,7 +53,8 @@ object ImageryLayerProperties {
     __obj.asInstanceOf[ImageryLayerProperties]
   }
   
-  extension [Self <: ImageryLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageryLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setCustomParameters(value: Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
     

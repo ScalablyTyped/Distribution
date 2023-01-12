@@ -22,7 +22,8 @@ object TopicReference_ {
     __obj.asInstanceOf[TopicReference_]
   }
   
-  extension [Self <: TopicReference_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicReference_] (val x: Self) extends AnyVal {
     
     inline def setType(value: TopicReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

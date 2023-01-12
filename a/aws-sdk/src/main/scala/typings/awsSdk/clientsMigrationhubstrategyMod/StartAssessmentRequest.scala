@@ -23,7 +23,8 @@ object StartAssessmentRequest {
     __obj.asInstanceOf[StartAssessmentRequest]
   }
   
-  extension [Self <: StartAssessmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartAssessmentRequest] (val x: Self) extends AnyVal {
     
     inline def setS3bucketForAnalysisData(value: StartAssessmentRequestS3bucketForAnalysisDataString): Self = StObject.set(x, "s3bucketForAnalysisData", value.asInstanceOf[js.Any])
     

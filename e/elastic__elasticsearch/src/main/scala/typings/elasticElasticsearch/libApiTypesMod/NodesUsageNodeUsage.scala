@@ -27,7 +27,8 @@ object NodesUsageNodeUsage {
     __obj.asInstanceOf[NodesUsageNodeUsage]
   }
   
-  extension [Self <: NodesUsageNodeUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesUsageNodeUsage] (val x: Self) extends AnyVal {
     
     inline def setAggregations(value: Record[String, Any]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     

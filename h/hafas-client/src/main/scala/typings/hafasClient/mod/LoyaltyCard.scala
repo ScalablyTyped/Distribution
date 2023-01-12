@@ -20,7 +20,8 @@ object LoyaltyCard {
     __obj.asInstanceOf[LoyaltyCard]
   }
   
-  extension [Self <: LoyaltyCard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoyaltyCard] (val x: Self) extends AnyVal {
     
     inline def setClass(value: Double): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetUserAccessLoggingSettingsResponse {
     __obj.asInstanceOf[GetUserAccessLoggingSettingsResponse]
   }
   
-  extension [Self <: GetUserAccessLoggingSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUserAccessLoggingSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setUserAccessLoggingSettings(value: UserAccessLoggingSettings): Self = StObject.set(x, "userAccessLoggingSettings", value.asInstanceOf[js.Any])
     

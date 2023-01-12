@@ -57,7 +57,8 @@ object distCryptoSignedHttpRequestMod {
       __obj.asInstanceOf[SignedHttpRequestOptions]
     }
     
-    extension [Self <: SignedHttpRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignedHttpRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setLoggerOptions(value: LoggerOptions): Self = StObject.set(x, "loggerOptions", value.asInstanceOf[js.Any])
     }

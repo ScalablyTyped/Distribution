@@ -25,7 +25,8 @@ object ICloud {
       __obj.asInstanceOf[CallFunctionParam]
     }
     
-    extension [Self <: CallFunctionParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallFunctionParam] (val x: Self) extends AnyVal {
       
       inline def setData(value: CallFunctionData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object ICloud {
       __obj.asInstanceOf[CallFunctionResult]
     }
     
-    extension [Self <: CallFunctionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallFunctionResult] (val x: Self) extends AnyVal {
       
       inline def setResult(value: AnyObject | java.lang.String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object ICloud {
       __obj.asInstanceOf[DeleteFileParam]
     }
     
-    extension [Self <: DeleteFileParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteFileParam] (val x: Self) extends AnyVal {
       
       inline def setFileList(value: Array[java.lang.String]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     }
@@ -94,7 +97,8 @@ object ICloud {
       __obj.asInstanceOf[DeleteFileResult]
     }
     
-    extension [Self <: DeleteFileResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteFileResult] (val x: Self) extends AnyVal {
       
       inline def setFileList(value: Array[DeleteFileResultItem]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     }
@@ -115,7 +119,8 @@ object ICloud {
       __obj.asInstanceOf[DeleteFileResultItem]
     }
     
-    extension [Self <: DeleteFileResultItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteFileResultItem] (val x: Self) extends AnyVal {
       
       inline def setErrMsg(value: java.lang.String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
       
@@ -140,7 +145,8 @@ object ICloud {
       __obj.asInstanceOf[DownloadFileParam]
     }
     
-    extension [Self <: DownloadFileParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadFileParam] (val x: Self) extends AnyVal {
       
       inline def setCloudPath(value: java.lang.String): Self = StObject.set(x, "cloudPath", value.asInstanceOf[js.Any])
       
@@ -165,7 +171,8 @@ object ICloud {
       __obj.asInstanceOf[DownloadFileResult]
     }
     
-    extension [Self <: DownloadFileResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadFileResult] (val x: Self) extends AnyVal {
       
       inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
@@ -186,7 +193,8 @@ object ICloud {
       __obj.asInstanceOf[GetTempFileURLParam]
     }
     
-    extension [Self <: GetTempFileURLParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTempFileURLParam] (val x: Self) extends AnyVal {
       
       inline def setFileList(value: Array[java.lang.String]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     }
@@ -205,7 +213,8 @@ object ICloud {
       __obj.asInstanceOf[GetTempFileURLResult]
     }
     
-    extension [Self <: GetTempFileURLResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTempFileURLResult] (val x: Self) extends AnyVal {
       
       inline def setFileList(value: Array[GetTempFileURLResultItem]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     }
@@ -236,7 +245,8 @@ object ICloud {
       __obj.asInstanceOf[GetTempFileURLResultItem]
     }
     
-    extension [Self <: GetTempFileURLResultItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTempFileURLResultItem] (val x: Self) extends AnyVal {
       
       inline def setErrMsg(value: java.lang.String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
       
@@ -278,7 +288,8 @@ object ICloud {
       __obj.asInstanceOf[UploadFileParam]
     }
     
-    extension [Self <: UploadFileParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadFileParam] (val x: Self) extends AnyVal {
       
       inline def setCloudPath(value: java.lang.String): Self = StObject.set(x, "cloudPath", value.asInstanceOf[js.Any])
       
@@ -305,7 +316,8 @@ object ICloud {
       __obj.asInstanceOf[UploadFileResult]
     }
     
-    extension [Self <: UploadFileResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadFileResult] (val x: Self) extends AnyVal {
       
       inline def setFileID(value: java.lang.String): Self = StObject.set(x, "fileID", value.asInstanceOf[js.Any])
       

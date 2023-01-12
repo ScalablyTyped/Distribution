@@ -23,7 +23,8 @@ object ListContainersInput {
     __obj.asInstanceOf[ListContainersInput]
   }
   
-  extension [Self <: ListContainersInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListContainersInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ContainerListLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

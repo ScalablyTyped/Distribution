@@ -16,7 +16,8 @@ object IReplyOkContent {
     __obj.asInstanceOf[IReplyOkContent]
   }
   
-  extension [Self <: IReplyOkContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IReplyOkContent] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: ok): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

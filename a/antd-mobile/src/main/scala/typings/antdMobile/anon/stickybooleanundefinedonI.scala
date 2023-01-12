@@ -309,7 +309,8 @@ object stickybooleanundefinedonI {
     __obj.asInstanceOf[stickybooleanundefinedonI]
   }
   
-  extension [Self <: stickybooleanundefinedonI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: stickybooleanundefinedonI] (val x: Self) extends AnyVal {
     
     inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
     

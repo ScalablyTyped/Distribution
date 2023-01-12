@@ -27,7 +27,8 @@ object DocumentationRouterOptions {
     __obj.asInstanceOf[DocumentationRouterOptions]
   }
   
-  extension [Self <: DocumentationRouterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentationRouterOptions] (val x: Self) extends AnyVal {
     
     inline def setBefore(value: (Request, Response) => Unit | `false`): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
     

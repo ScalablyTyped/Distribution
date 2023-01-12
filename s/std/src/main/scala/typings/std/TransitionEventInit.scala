@@ -24,7 +24,8 @@ object TransitionEventInit {
     __obj.asInstanceOf[TransitionEventInit]
   }
   
-  extension [Self <: TransitionEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionEventInit] (val x: Self) extends AnyVal {
     
     inline def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     

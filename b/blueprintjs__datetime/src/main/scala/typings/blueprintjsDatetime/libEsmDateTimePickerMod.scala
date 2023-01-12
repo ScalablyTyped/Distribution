@@ -91,7 +91,8 @@ object libEsmDateTimePickerMod {
       __obj.asInstanceOf[IDateTimePickerProps]
     }
     
-    extension [Self <: IDateTimePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDateTimePickerProps] (val x: Self) extends AnyVal {
       
       inline def setCanClearSelection(value: Boolean): Self = StObject.set(x, "canClearSelection", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object libEsmDateTimePickerMod {
       __obj.asInstanceOf[IDateTimePickerState]
     }
     
-    extension [Self <: IDateTimePickerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDateTimePickerState] (val x: Self) extends AnyVal {
       
       inline def setDateValue(value: js.Date): Self = StObject.set(x, "dateValue", value.asInstanceOf[js.Any])
       

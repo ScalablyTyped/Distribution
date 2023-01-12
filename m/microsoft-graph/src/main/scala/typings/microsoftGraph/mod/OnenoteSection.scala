@@ -36,7 +36,8 @@ object OnenoteSection {
     __obj.asInstanceOf[OnenoteSection]
   }
   
-  extension [Self <: OnenoteSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnenoteSection] (val x: Self) extends AnyVal {
     
     inline def setIsDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     

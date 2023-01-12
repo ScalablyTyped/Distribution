@@ -58,7 +58,8 @@ object namespacesContextualIdentitiesMod {
         __obj.asInstanceOf[ContextualIdentity]
       }
       
-      extension [Self <: ContextualIdentity](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContextualIdentity] (val x: Self) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -101,7 +102,8 @@ object namespacesContextualIdentitiesMod {
         __obj.asInstanceOf[CreateDetailsType]
       }
       
-      extension [Self <: CreateDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateDetailsType] (val x: Self) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -125,7 +127,8 @@ object namespacesContextualIdentitiesMod {
         __obj.asInstanceOf[OnCreatedChangeInfoType]
       }
       
-      extension [Self <: OnCreatedChangeInfoType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnCreatedChangeInfoType] (val x: Self) extends AnyVal {
         
         inline def setContextualIdentity(value: ContextualIdentity): Self = StObject.set(x, "contextualIdentity", value.asInstanceOf[js.Any])
       }
@@ -145,7 +148,8 @@ object namespacesContextualIdentitiesMod {
         __obj.asInstanceOf[OnRemovedChangeInfoType]
       }
       
-      extension [Self <: OnRemovedChangeInfoType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnRemovedChangeInfoType] (val x: Self) extends AnyVal {
         
         inline def setContextualIdentity(value: ContextualIdentity): Self = StObject.set(x, "contextualIdentity", value.asInstanceOf[js.Any])
       }
@@ -165,7 +169,8 @@ object namespacesContextualIdentitiesMod {
         __obj.asInstanceOf[OnUpdatedChangeInfoType]
       }
       
-      extension [Self <: OnUpdatedChangeInfoType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnUpdatedChangeInfoType] (val x: Self) extends AnyVal {
         
         inline def setContextualIdentity(value: ContextualIdentity): Self = StObject.set(x, "contextualIdentity", value.asInstanceOf[js.Any])
       }
@@ -189,7 +194,8 @@ object namespacesContextualIdentitiesMod {
         __obj.asInstanceOf[QueryDetailsType]
       }
       
-      extension [Self <: QueryDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: QueryDetailsType] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -272,7 +278,8 @@ object namespacesContextualIdentitiesMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setCreate(value: CreateDetailsType => js.Promise[ContextualIdentity]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
         
@@ -322,7 +329,8 @@ object namespacesContextualIdentitiesMod {
         __obj.asInstanceOf[UpdateDetailsType]
       }
       
-      extension [Self <: UpdateDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateDetailsType] (val x: Self) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         

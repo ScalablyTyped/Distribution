@@ -32,7 +32,8 @@ object ArcOptions {
     __obj.asInstanceOf[ArcOptions]
   }
   
-  extension [Self <: ArcOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcOptions] (val x: Self) extends AnyVal {
     
     inline def setClip(value: typings.kendoUi.kendo.drawing.Path): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     

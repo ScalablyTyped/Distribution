@@ -30,7 +30,8 @@ object Receivertransactionid {
     __obj.asInstanceOf[Receivertransactionid]
   }
   
-  extension [Self <: Receivertransactionid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Receivertransactionid] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: AmountWithCurrencyCode): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

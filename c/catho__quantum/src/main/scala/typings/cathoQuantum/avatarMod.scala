@@ -35,7 +35,8 @@ object avatarMod {
       __obj.asInstanceOf[AvatarProps]
     }
     
-    extension [Self <: AvatarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarProps] (val x: Self) extends AnyVal {
       
       inline def setHasNotification(value: Boolean): Self = StObject.set(x, "hasNotification", value.asInstanceOf[js.Any])
       

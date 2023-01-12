@@ -22,7 +22,8 @@ object AnalysisIcuFoldingTokenFilter {
     __obj.asInstanceOf[AnalysisIcuFoldingTokenFilter]
   }
   
-  extension [Self <: AnalysisIcuFoldingTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisIcuFoldingTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setType(value: icu_folding): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

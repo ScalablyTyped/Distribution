@@ -28,7 +28,8 @@ object ListResourcesAssociatedToCustomLineItemOutput {
     __obj.asInstanceOf[ListResourcesAssociatedToCustomLineItemOutput]
   }
   
-  extension [Self <: ListResourcesAssociatedToCustomLineItemOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourcesAssociatedToCustomLineItemOutput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: CustomLineItemArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

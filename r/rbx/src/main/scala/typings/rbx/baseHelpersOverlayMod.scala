@@ -36,7 +36,8 @@ object baseHelpersOverlayMod {
       __obj.asInstanceOf[OverlayHelpersProps]
     }
     
-    extension [Self <: OverlayHelpersProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayHelpersProps] (val x: Self) extends AnyVal {
       
       inline def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       

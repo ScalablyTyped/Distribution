@@ -44,7 +44,8 @@ object componentsPostPublishButtonMod {
         __obj.asInstanceOf[BaseProps]
       }
       
-      extension [Self <: BaseProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
         
         inline def setFocusOnMount(value: Boolean): Self = StObject.set(x, "focusOnMount", value.asInstanceOf[js.Any])
         
@@ -98,7 +99,8 @@ object componentsPostPublishButtonMod {
         __obj.asInstanceOf[SubmitProps]
       }
       
-      extension [Self <: SubmitProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubmitProps] (val x: Self) extends AnyVal {
         
         inline def setIsToggle(value: `false`): Self = StObject.set(x, "isToggle", value.asInstanceOf[js.Any])
         
@@ -126,7 +128,8 @@ object componentsPostPublishButtonMod {
         __obj.asInstanceOf[ToggleProps]
       }
       
-      extension [Self <: ToggleProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ToggleProps] (val x: Self) extends AnyVal {
         
         inline def setIsToggle(value: `true`): Self = StObject.set(x, "isToggle", value.asInstanceOf[js.Any])
         

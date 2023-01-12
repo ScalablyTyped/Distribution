@@ -135,7 +135,8 @@ object dxChartCommonSeriesSettings {
     __obj.asInstanceOf[dxChartCommonSeriesSettings]
   }
   
-  extension [Self <: dxChartCommonSeriesSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartCommonSeriesSettings] (val x: Self) extends AnyVal {
     
     inline def setArea(value: Any): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

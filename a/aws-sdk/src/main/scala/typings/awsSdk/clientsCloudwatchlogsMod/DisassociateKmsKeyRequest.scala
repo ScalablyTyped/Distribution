@@ -18,7 +18,8 @@ object DisassociateKmsKeyRequest {
     __obj.asInstanceOf[DisassociateKmsKeyRequest]
   }
   
-  extension [Self <: DisassociateKmsKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateKmsKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object GetShippingLabelOutput {
     __obj.asInstanceOf[GetShippingLabelOutput]
   }
   
-  extension [Self <: GetShippingLabelOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetShippingLabelOutput] (val x: Self) extends AnyVal {
     
     inline def setShippingLabelURL(value: GenericString): Self = StObject.set(x, "ShippingLabelURL", value.asInstanceOf[js.Any])
     

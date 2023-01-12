@@ -18,7 +18,8 @@ object RoleManagement {
     __obj.asInstanceOf[RoleManagement]
   }
   
-  extension [Self <: RoleManagement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoleManagement] (val x: Self) extends AnyVal {
     
     inline def setDirectory(value: NullableOption[RbacApplication]): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object EventWatcherOptions {
     __obj.asInstanceOf[EventWatcherOptions]
   }
   
-  extension [Self <: EventWatcherOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventWatcherOptions] (val x: Self) extends AnyVal {
     
     inline def setEmitter(value: Any => Unit): Self = StObject.set(x, "emitter", js.Any.fromFunction1(value))
     

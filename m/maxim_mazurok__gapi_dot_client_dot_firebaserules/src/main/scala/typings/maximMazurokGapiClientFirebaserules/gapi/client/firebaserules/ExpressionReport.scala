@@ -22,7 +22,8 @@ object ExpressionReport {
     __obj.asInstanceOf[ExpressionReport]
   }
   
-  extension [Self <: ExpressionReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressionReport] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[ExpressionReport]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

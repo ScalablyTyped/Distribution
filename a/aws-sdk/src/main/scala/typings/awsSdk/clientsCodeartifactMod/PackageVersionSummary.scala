@@ -33,7 +33,8 @@ object PackageVersionSummary {
     __obj.asInstanceOf[PackageVersionSummary]
   }
   
-  extension [Self <: PackageVersionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageVersionSummary] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: PackageVersionOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

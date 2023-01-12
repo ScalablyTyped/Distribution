@@ -23,7 +23,8 @@ object TrustedAdvisorCostOptimizingSummary {
     __obj.asInstanceOf[TrustedAdvisorCostOptimizingSummary]
   }
   
-  extension [Self <: TrustedAdvisorCostOptimizingSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustedAdvisorCostOptimizingSummary] (val x: Self) extends AnyVal {
     
     inline def setEstimatedMonthlySavings(value: Double): Self = StObject.set(x, "estimatedMonthlySavings", value.asInstanceOf[js.Any])
     

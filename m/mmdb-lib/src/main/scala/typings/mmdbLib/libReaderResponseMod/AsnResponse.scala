@@ -21,7 +21,8 @@ object AsnResponse {
     __obj.asInstanceOf[AsnResponse]
   }
   
-  extension [Self <: AsnResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsnResponse] (val x: Self) extends AnyVal {
     
     inline def setAutonomous_system_number(value: Double): Self = StObject.set(x, "autonomous_system_number", value.asInstanceOf[js.Any])
     

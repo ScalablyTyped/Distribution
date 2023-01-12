@@ -73,7 +73,8 @@ object distTypesSignatureV4Mod {
       __obj.asInstanceOf[SignatureV4CryptoInit]
     }
     
-    extension [Self <: SignatureV4CryptoInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureV4CryptoInit] (val x: Self) extends AnyVal {
       
       inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     }
@@ -134,7 +135,8 @@ object distTypesSignatureV4Mod {
       __obj.asInstanceOf[SignatureV4Init]
     }
     
-    extension [Self <: SignatureV4Init](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureV4Init] (val x: Self) extends AnyVal {
       
       inline def setApplyChecksum(value: Boolean): Self = StObject.set(x, "applyChecksum", value.asInstanceOf[js.Any])
       

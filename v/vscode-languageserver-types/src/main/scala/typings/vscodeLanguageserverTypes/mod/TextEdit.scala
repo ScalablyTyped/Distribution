@@ -51,7 +51,8 @@ object TextEdit {
     */
   inline def replace(range: Range, newText: String): TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(range.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[TextEdit]
   
-  extension [Self <: TextEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEdit] (val x: Self) extends AnyVal {
     
     inline def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
     

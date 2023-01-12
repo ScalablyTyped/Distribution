@@ -19,7 +19,8 @@ object AppsDynamiteGroupRetentionSettingsUpdatedMetaData {
     __obj.asInstanceOf[AppsDynamiteGroupRetentionSettingsUpdatedMetaData]
   }
   
-  extension [Self <: AppsDynamiteGroupRetentionSettingsUpdatedMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteGroupRetentionSettingsUpdatedMetaData] (val x: Self) extends AnyVal {
     
     inline def setInitiator(value: AppsDynamiteUserId): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
     

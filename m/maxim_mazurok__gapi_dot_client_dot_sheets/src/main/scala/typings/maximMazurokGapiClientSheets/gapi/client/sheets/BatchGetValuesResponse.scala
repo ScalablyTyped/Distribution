@@ -19,7 +19,8 @@ object BatchGetValuesResponse {
     __obj.asInstanceOf[BatchGetValuesResponse]
   }
   
-  extension [Self <: BatchGetValuesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetValuesResponse] (val x: Self) extends AnyVal {
     
     inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     

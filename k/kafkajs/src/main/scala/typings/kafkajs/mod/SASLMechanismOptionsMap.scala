@@ -34,7 +34,8 @@ object SASLMechanismOptionsMap {
     __obj.asInstanceOf[SASLMechanismOptionsMap]
   }
   
-  extension [Self <: SASLMechanismOptionsMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SASLMechanismOptionsMap] (val x: Self) extends AnyVal {
     
     inline def setAws(value: AccessKeyId): Self = StObject.set(x, "aws", value.asInstanceOf[js.Any])
     

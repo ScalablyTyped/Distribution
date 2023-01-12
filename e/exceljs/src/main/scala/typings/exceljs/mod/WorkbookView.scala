@@ -35,7 +35,8 @@ object WorkbookView {
     __obj.asInstanceOf[WorkbookView]
   }
   
-  extension [Self <: WorkbookView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookView] (val x: Self) extends AnyVal {
     
     inline def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
     

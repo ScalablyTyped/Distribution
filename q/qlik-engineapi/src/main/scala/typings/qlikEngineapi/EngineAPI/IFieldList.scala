@@ -21,7 +21,8 @@ object IFieldList {
     __obj.asInstanceOf[IFieldList]
   }
   
-  extension [Self <: IFieldList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldList] (val x: Self) extends AnyVal {
     
     inline def setQItems(value: js.Array[INxFieldDescription]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
     

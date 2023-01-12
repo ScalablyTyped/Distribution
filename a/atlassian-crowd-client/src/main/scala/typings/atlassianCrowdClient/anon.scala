@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Active]
     }
     
-    extension [Self <: Active](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object anon {
       __obj.asInstanceOf[Authenticate]
     }
     
-    extension [Self <: Authenticate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Authenticate] (val x: Self) extends AnyVal {
       
       inline def setAuthenticate(value: (String, String) => js.Promise[^]): Self = StObject.set(x, "authenticate", js.Any.fromFunction2(value))
     }
@@ -148,7 +150,8 @@ object anon {
       __obj.asInstanceOf[Cookie]
     }
     
-    extension [Self <: Cookie](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: () => js.Promise[Any]): Self = StObject.set(x, "cookie", js.Any.fromFunction0(value))
     }
@@ -266,7 +269,8 @@ object anon {
       __obj.asInstanceOf[typings.atlassianCrowdClient.anon.List]
     }
     
-    extension [Self <: typings.atlassianCrowdClient.anon.List](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.atlassianCrowdClient.anon.List] (val x: Self) extends AnyVal {
       
       inline def setList(value: String => js.Promise[typings.atlassianCrowdClient.libModelsAttributesMod.^]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
       
@@ -293,7 +297,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -312,7 +317,8 @@ object anon {
       __obj.asInstanceOf[Password]
     }
     
-    extension [Self <: Password](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -339,7 +345,8 @@ object anon {
       __obj.asInstanceOf[Remove]
     }
     
-    extension [Self <: Remove](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Remove] (val x: Self) extends AnyVal {
       
       inline def setList(value: String => js.Promise[typings.atlassianCrowdClient.libModelsAttributesMod.^]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
       
@@ -362,7 +369,8 @@ object anon {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: String => js.Promise[Unit]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     }
@@ -381,7 +389,8 @@ object anon {
       __obj.asInstanceOf[Reset]
     }
     
-    extension [Self <: Reset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reset] (val x: Self) extends AnyVal {
       
       inline def setReset(value: String => js.Promise[Unit]): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
       
@@ -400,7 +409,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

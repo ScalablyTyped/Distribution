@@ -41,7 +41,8 @@ object XConditionalFormats {
     __obj.asInstanceOf[XConditionalFormats]
   }
   
-  extension [Self <: XConditionalFormats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConditionalFormats] (val x: Self) extends AnyVal {
     
     inline def setConditionalFormats(value: SafeArray[XConditionalFormat]): Self = StObject.set(x, "ConditionalFormats", value.asInstanceOf[js.Any])
     

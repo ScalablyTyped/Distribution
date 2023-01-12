@@ -38,7 +38,8 @@ object ClusterAllocationExplainNodeAllocationExplanation {
     __obj.asInstanceOf[ClusterAllocationExplainNodeAllocationExplanation]
   }
   
-  extension [Self <: ClusterAllocationExplainNodeAllocationExplanation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterAllocationExplainNodeAllocationExplanation] (val x: Self) extends AnyVal {
     
     inline def setDeciders(value: js.Array[ClusterAllocationExplainAllocationDecision]): Self = StObject.set(x, "deciders", value.asInstanceOf[js.Any])
     

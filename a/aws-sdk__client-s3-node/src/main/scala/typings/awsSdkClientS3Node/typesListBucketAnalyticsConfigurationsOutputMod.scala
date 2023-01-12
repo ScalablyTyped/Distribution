@@ -42,7 +42,8 @@ object typesListBucketAnalyticsConfigurationsOutputMod {
       __obj.asInstanceOf[ListBucketAnalyticsConfigurationsOutput]
     }
     
-    extension [Self <: ListBucketAnalyticsConfigurationsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBucketAnalyticsConfigurationsOutput] (val x: Self) extends AnyVal {
       
       inline def setAnalyticsConfigurationList(value: js.Array[UnmarshalledAnalyticsConfiguration]): Self = StObject.set(x, "AnalyticsConfigurationList", value.asInstanceOf[js.Any])
       

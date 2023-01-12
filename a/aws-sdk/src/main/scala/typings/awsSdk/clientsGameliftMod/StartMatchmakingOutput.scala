@@ -18,7 +18,8 @@ object StartMatchmakingOutput {
     __obj.asInstanceOf[StartMatchmakingOutput]
   }
   
-  extension [Self <: StartMatchmakingOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartMatchmakingOutput] (val x: Self) extends AnyVal {
     
     inline def setMatchmakingTicket(value: MatchmakingTicket): Self = StObject.set(x, "MatchmakingTicket", value.asInstanceOf[js.Any])
     

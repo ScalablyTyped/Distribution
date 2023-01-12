@@ -18,7 +18,8 @@ object GetDataIntegrationRequest {
     __obj.asInstanceOf[GetDataIntegrationRequest]
   }
   
-  extension [Self <: GetDataIntegrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataIntegrationRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: Identifier): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
   }

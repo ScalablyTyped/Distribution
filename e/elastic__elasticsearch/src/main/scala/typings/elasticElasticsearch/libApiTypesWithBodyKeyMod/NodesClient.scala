@@ -35,7 +35,8 @@ object NodesClient {
     __obj.asInstanceOf[NodesClient]
   }
   
-  extension [Self <: NodesClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesClient] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: String): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

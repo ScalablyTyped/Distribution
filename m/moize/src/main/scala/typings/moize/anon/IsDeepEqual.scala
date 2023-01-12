@@ -16,7 +16,8 @@ object IsDeepEqual {
     __obj.asInstanceOf[IsDeepEqual]
   }
   
-  extension [Self <: IsDeepEqual](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsDeepEqual] (val x: Self) extends AnyVal {
     
     inline def setIsDeepEqual(value: `true`): Self = StObject.set(x, "isDeepEqual", value.asInstanceOf[js.Any])
   }

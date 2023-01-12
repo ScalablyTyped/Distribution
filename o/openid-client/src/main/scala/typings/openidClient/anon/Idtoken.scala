@@ -19,7 +19,8 @@ object Idtoken {
     __obj.asInstanceOf[Idtoken]
   }
   
-  extension [Self <: Idtoken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Idtoken] (val x: Self) extends AnyVal {
     
     inline def setId_token(value: StringDictionary[Null | ClaimsParameterMember]): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
     

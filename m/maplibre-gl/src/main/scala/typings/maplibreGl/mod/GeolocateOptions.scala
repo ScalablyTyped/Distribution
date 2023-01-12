@@ -24,7 +24,8 @@ object GeolocateOptions {
     __obj.asInstanceOf[GeolocateOptions]
   }
   
-  extension [Self <: GeolocateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeolocateOptions] (val x: Self) extends AnyVal {
     
     inline def setFitBoundsOptions(value: FitBoundsOptions): Self = StObject.set(x, "fitBoundsOptions", value.asInstanceOf[js.Any])
     

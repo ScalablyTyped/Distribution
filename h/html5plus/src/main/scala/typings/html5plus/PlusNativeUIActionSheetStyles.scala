@@ -40,7 +40,8 @@ object PlusNativeUIActionSheetStyles {
     __obj.asInstanceOf[PlusNativeUIActionSheetStyles]
   }
   
-  extension [Self <: PlusNativeUIActionSheetStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeUIActionSheetStyles] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[PlusNativeUI]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

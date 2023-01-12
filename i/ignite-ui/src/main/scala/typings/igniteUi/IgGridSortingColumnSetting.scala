@@ -75,7 +75,8 @@ object IgGridSortingColumnSetting {
     __obj.asInstanceOf[IgGridSortingColumnSetting]
   }
   
-  extension [Self <: IgGridSortingColumnSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridSortingColumnSetting] (val x: Self) extends AnyVal {
     
     inline def setAllowSorting(value: Boolean): Self = StObject.set(x, "allowSorting", value.asInstanceOf[js.Any])
     

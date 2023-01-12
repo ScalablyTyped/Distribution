@@ -35,7 +35,8 @@ object VpnTunnelList {
     __obj.asInstanceOf[VpnTunnelList]
   }
   
-  extension [Self <: VpnTunnelList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpnTunnelList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

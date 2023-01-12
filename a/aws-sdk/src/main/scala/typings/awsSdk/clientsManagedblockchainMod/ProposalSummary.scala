@@ -53,7 +53,8 @@ object ProposalSummary {
     __obj.asInstanceOf[ProposalSummary]
   }
   
-  extension [Self <: ProposalSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProposalSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ArnString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

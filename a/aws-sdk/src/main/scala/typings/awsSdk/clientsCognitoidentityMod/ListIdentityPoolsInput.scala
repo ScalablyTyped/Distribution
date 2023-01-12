@@ -23,7 +23,8 @@ object ListIdentityPoolsInput {
     __obj.asInstanceOf[ListIdentityPoolsInput]
   }
   
-  extension [Self <: ListIdentityPoolsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIdentityPoolsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: QueryLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object DeviceManagementTroubleshootingEvent {
     __obj.asInstanceOf[DeviceManagementTroubleshootingEvent]
   }
   
-  extension [Self <: DeviceManagementTroubleshootingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceManagementTroubleshootingEvent] (val x: Self) extends AnyVal {
     
     inline def setCorrelationId(value: NullableOption[String]): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
     

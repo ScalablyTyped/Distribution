@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[StrategyOption]
     }
     
-    extension [Self <: StrategyOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOption] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: CookieOptions): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[StrategyOptionWithRequest]
     }
     
-    extension [Self <: StrategyOptionWithRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOptionWithRequest] (val x: Self) extends AnyVal {
       
       inline def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }

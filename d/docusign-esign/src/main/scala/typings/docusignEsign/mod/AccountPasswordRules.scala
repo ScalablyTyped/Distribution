@@ -147,7 +147,8 @@ object AccountPasswordRules {
     __obj.asInstanceOf[AccountPasswordRules]
   }
   
-  extension [Self <: AccountPasswordRules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountPasswordRules] (val x: Self) extends AnyVal {
     
     inline def setExpirePassword(value: String): Self = StObject.set(x, "expirePassword", value.asInstanceOf[js.Any])
     

@@ -825,7 +825,8 @@ object AddOrUpdateMembershipForUserInOrg {
     __obj.asInstanceOf[AddOrUpdateMembershipForUserInOrg]
   }
   
-  extension [Self <: AddOrUpdateMembershipForUserInOrg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddOrUpdateMembershipForUserInOrg] (val x: Self) extends AnyVal {
     
     inline def setAddOrUpdateMembershipForUserInOrg(value: `714`): Self = StObject.set(x, "addOrUpdateMembershipForUserInOrg", value.asInstanceOf[js.Any])
     

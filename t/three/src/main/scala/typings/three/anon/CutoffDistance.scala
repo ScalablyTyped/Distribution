@@ -20,7 +20,8 @@ object CutoffDistance {
     __obj.asInstanceOf[CutoffDistance]
   }
   
-  extension [Self <: CutoffDistance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CutoffDistance] (val x: Self) extends AnyVal {
     
     inline def setCutoffDistance(value: default): Self = StObject.set(x, "cutoffDistance", value.asInstanceOf[js.Any])
     

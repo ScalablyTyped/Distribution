@@ -41,7 +41,8 @@ object JsxTextareaElementProps {
     __obj.asInstanceOf[JsxTextareaElementProps]
   }
   
-  extension [Self <: JsxTextareaElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxTextareaElementProps] (val x: Self) extends AnyVal {
     
     inline def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
     

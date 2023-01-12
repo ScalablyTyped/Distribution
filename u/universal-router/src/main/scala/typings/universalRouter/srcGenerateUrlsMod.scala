@@ -44,7 +44,8 @@ object srcGenerateUrlsMod {
       __obj.asInstanceOf[GenerateUrlsOptions]
     }
     
-    extension [Self <: GenerateUrlsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateUrlsOptions] (val x: Self) extends AnyVal {
       
       inline def setStringifyQueryParams(value: /* params */ UrlParams => String): Self = StObject.set(x, "stringifyQueryParams", js.Any.fromFunction1(value))
       

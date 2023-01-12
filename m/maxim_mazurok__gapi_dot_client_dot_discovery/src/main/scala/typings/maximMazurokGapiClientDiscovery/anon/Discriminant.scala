@@ -19,7 +19,8 @@ object Discriminant {
     __obj.asInstanceOf[Discriminant]
   }
   
-  extension [Self <: Discriminant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Discriminant] (val x: Self) extends AnyVal {
     
     inline def setDiscriminant(value: String): Self = StObject.set(x, "discriminant", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PayloadBlockchainNotification {
     __obj.asInstanceOf[PayloadBlockchainNotification]
   }
   
-  extension [Self <: PayloadBlockchainNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayloadBlockchainNotification] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: BlockchainNotification): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

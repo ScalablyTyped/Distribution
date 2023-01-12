@@ -29,7 +29,8 @@ object ImageSpecimenProps {
     __obj.asInstanceOf[ImageSpecimenProps]
   }
   
-  extension [Self <: ImageSpecimenProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageSpecimenProps] (val x: Self) extends AnyVal {
     
     inline def setDark(value: Boolean): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     

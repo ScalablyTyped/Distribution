@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Crumbs]
     }
     
-    extension [Self <: Crumbs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Crumbs] (val x: Self) extends AnyVal {
       
       inline def setCrumbs(value: js.Array[Crumb[String, Any]]): Self = StObject.set(x, "crumbs", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Data[StateKey, NavigationInfo]]
     }
     
-    extension [Self <: Data[?, ?], StateKey /* <: /* keyof NavigationInfo */ String */, NavigationInfo /* <: StringDictionary[Any] */](x: Self & (Data[StateKey, NavigationInfo])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data[?, ?], StateKey /* <: /* keyof NavigationInfo */ String */, NavigationInfo /* <: StringDictionary[Any] */] (val x: Self & (Data[StateKey, NavigationInfo])) extends AnyVal {
       
       inline def setCrumbs(value: js.Array[Crumb[String, Any]]): Self = StObject.set(x, "crumbs", value.asInstanceOf[js.Any])
       

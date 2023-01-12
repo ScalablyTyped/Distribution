@@ -28,7 +28,8 @@ object GetManagedRuleSetRequest {
     __obj.asInstanceOf[GetManagedRuleSetRequest]
   }
   
-  extension [Self <: GetManagedRuleSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetManagedRuleSetRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: EntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

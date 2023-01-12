@@ -15,7 +15,8 @@ object ProLayoutCls {
     __obj.asInstanceOf[ProLayoutCls]
   }
   
-  extension [Self <: ProLayoutCls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProLayoutCls] (val x: Self) extends AnyVal {
     
     inline def setProLayoutCls(value: String): Self = StObject.set(x, "proLayoutCls", value.asInstanceOf[js.Any])
   }

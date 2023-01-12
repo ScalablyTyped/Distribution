@@ -246,7 +246,8 @@ object mod {
       __obj.asInstanceOf[PrettyOptions]
     }
     
-    extension [Self <: PrettyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrettyOptions] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       

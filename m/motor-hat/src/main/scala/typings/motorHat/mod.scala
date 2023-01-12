@@ -135,7 +135,8 @@ object mod {
       __obj.asInstanceOf[DCOptions]
     }
     
-    extension [Self <: DCOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DCOptions] (val x: Self) extends AnyVal {
       
       inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
       
@@ -288,7 +289,8 @@ object mod {
       __obj.asInstanceOf[MotorHatOptions]
     }
     
-    extension [Self <: MotorHatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MotorHatOptions] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -333,7 +335,8 @@ object mod {
       __obj.asInstanceOf[MotorPins]
     }
     
-    extension [Self <: MotorPins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MotorPins] (val x: Self) extends AnyVal {
       
       inline def setIN1(value: Double): Self = StObject.set(x, "IN1", value.asInstanceOf[js.Any])
       
@@ -369,7 +372,8 @@ object mod {
       __obj.asInstanceOf[PinDefinitionObject]
     }
     
-    extension [Self <: PinDefinitionObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinDefinitionObject] (val x: Self) extends AnyVal {
       
       inline def setIN1(value: Double): Self = StObject.set(x, "IN1", value.asInstanceOf[js.Any])
       
@@ -404,7 +408,8 @@ object mod {
       __obj.asInstanceOf[Servo]
     }
     
-    extension [Self <: Servo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Servo] (val x: Self) extends AnyVal {
       
       inline def setCalibrate(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "calibrate", js.Any.fromFunction3(value))
       
@@ -446,7 +451,8 @@ object mod {
       __obj.asInstanceOf[ServoOptions]
     }
     
-    extension [Self <: ServoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServoOptions] (val x: Self) extends AnyVal {
       
       inline def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
       
@@ -495,7 +501,8 @@ object mod {
       __obj.asInstanceOf[StepResult]
     }
     
-    extension [Self <: StepResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepResult] (val x: Self) extends AnyVal {
       
       inline def setDir(value: Direction): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -531,7 +538,8 @@ object mod {
       __obj.asInstanceOf[StepSyncResult]
     }
     
-    extension [Self <: StepSyncResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepSyncResult] (val x: Self) extends AnyVal {
       
       inline def setDir(value: Direction): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -727,7 +735,8 @@ object mod {
       __obj.asInstanceOf[StepperOptions]
     }
     
-    extension [Self <: StepperOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepperOptions] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -791,7 +800,8 @@ object mod {
       __obj.asInstanceOf[StepperSpeed]
     }
     
-    extension [Self <: StepperSpeed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepperSpeed] (val x: Self) extends AnyVal {
       
       inline def setPps(value: Double): Self = StObject.set(x, "pps", value.asInstanceOf[js.Any])
       

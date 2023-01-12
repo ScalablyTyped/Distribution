@@ -313,7 +313,8 @@ object sapUiCoreHyphenationHyphenationMod {
       __obj.asInstanceOf[HyphenationSettings]
     }
     
-    extension [Self <: HyphenationSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HyphenationSettings] (val x: Self) extends AnyVal {
       
       inline def setError(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       

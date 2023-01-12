@@ -33,7 +33,8 @@ object NonTalkTimeFilter {
     __obj.asInstanceOf[NonTalkTimeFilter]
   }
   
-  extension [Self <: NonTalkTimeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonTalkTimeFilter] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteTimeRange(value: AbsoluteTimeRange): Self = StObject.set(x, "AbsoluteTimeRange", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object MeshCreateCylinderParams {
     __obj.asInstanceOf[MeshCreateCylinderParams]
   }
   
-  extension [Self <: MeshCreateCylinderParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshCreateCylinderParams] (val x: Self) extends AnyVal {
     
     inline def setDensificationFactor(value: Double): Self = StObject.set(x, "densificationFactor", value.asInstanceOf[js.Any])
     

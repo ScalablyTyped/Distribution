@@ -42,7 +42,8 @@ object libProvisioningStoreMod {
       __obj.asInstanceOf[ProvisionSession]
     }
     
-    extension [Self <: ProvisionSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvisionSession] (val x: Self) extends AnyVal {
       
       inline def setExpiresTs(value: Double): Self = StObject.set(x, "expiresTs", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object libProvisioningStoreMod {
       __obj.asInstanceOf[ProvisioningStore]
     }
     
-    extension [Self <: ProvisioningStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvisioningStore] (val x: Self) extends AnyVal {
       
       inline def setCreateSession(value: ProvisionSession => js.Promise[Unit] | Unit): Self = StObject.set(x, "createSession", js.Any.fromFunction1(value))
       

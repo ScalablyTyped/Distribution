@@ -17,7 +17,8 @@ object OrganizationsTotalcount {
     __obj.asInstanceOf[OrganizationsTotalcount]
   }
   
-  extension [Self <: OrganizationsTotalcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationsTotalcount] (val x: Self) extends AnyVal {
     
     inline def setOrganizations(value: js.Array[Hooksurl]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
     

@@ -138,7 +138,8 @@ object libCoreTypesMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object libCoreTypesMod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -232,7 +234,8 @@ object libCoreTypesMod {
       __obj.asInstanceOf[TokenizerConfig]
     }
     
-    extension [Self <: TokenizerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenizerConfig] (val x: Self) extends AnyVal {
       
       inline def setCloseParens(value: js.Array[String]): Self = StObject.set(x, "closeParens", value.asInstanceOf[js.Any])
       

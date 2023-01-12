@@ -76,7 +76,8 @@ object IPositionGizmo {
     __obj.asInstanceOf[IPositionGizmo]
   }
   
-  extension [Self <: IPositionGizmo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPositionGizmo] (val x: Self) extends AnyVal {
     
     inline def setAddToAxisCache(value: (Mesh, GizmoAxisCache) => Unit): Self = StObject.set(x, "addToAxisCache", js.Any.fromFunction2(value))
     

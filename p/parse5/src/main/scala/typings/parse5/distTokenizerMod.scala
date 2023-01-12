@@ -674,7 +674,8 @@ object distTokenizerMod {
       __obj.asInstanceOf[TokenHandler]
     }
     
-    extension [Self <: TokenHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenHandler] (val x: Self) extends AnyVal {
       
       inline def setOnCharacter(value: CharacterToken => Unit): Self = StObject.set(x, "onCharacter", js.Any.fromFunction1(value))
       
@@ -711,7 +712,8 @@ object distTokenizerMod {
       __obj.asInstanceOf[TokenizerOptions]
     }
     
-    extension [Self <: TokenizerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenizerOptions] (val x: Self) extends AnyVal {
       
       inline def setSourceCodeLocationInfo(value: Boolean): Self = StObject.set(x, "sourceCodeLocationInfo", value.asInstanceOf[js.Any])
       

@@ -185,7 +185,8 @@ object IPersonaSharedProps {
     __obj.asInstanceOf[IPersonaSharedProps]
   }
   
-  extension [Self <: IPersonaSharedProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPersonaSharedProps] (val x: Self) extends AnyVal {
     
     inline def setAllowPhoneInitials(value: Boolean): Self = StObject.set(x, "allowPhoneInitials", value.asInstanceOf[js.Any])
     

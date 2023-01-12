@@ -24,7 +24,8 @@ object CustomPropertyItems {
     __obj.asInstanceOf[CustomPropertyItems]
   }
   
-  extension [Self <: CustomPropertyItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPropertyItems] (val x: Self) extends AnyVal {
     
     inline def setItems(value: StringDictionary[CustomProperty]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

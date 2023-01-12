@@ -264,7 +264,8 @@ object ojmenuMod {
         __obj.asInstanceOf[OpenOptions]
       }
       
-      extension [Self <: OpenOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OpenOptions] (val x: Self) extends AnyVal {
         
         inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
         
@@ -304,7 +305,8 @@ object ojmenuMod {
         __obj.asInstanceOf[Position]
       }
       
-      extension [Self <: Position](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
         
         inline def setAt(value: PositionAlign): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
         
@@ -342,7 +344,8 @@ object ojmenuMod {
         __obj.asInstanceOf[PositionAlign]
       }
       
-      extension [Self <: PositionAlign](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PositionAlign] (val x: Self) extends AnyVal {
         
         inline def setHorizontal(value: start | end | left | center | bottom): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
         
@@ -368,7 +371,8 @@ object ojmenuMod {
         __obj.asInstanceOf[PositionPoint]
       }
       
-      extension [Self <: PositionPoint](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PositionPoint] (val x: Self) extends AnyVal {
         
         inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
@@ -531,7 +535,8 @@ object ojmenuMod {
       __obj.asInstanceOf[ojMenuEventMap]
     }
     
-    extension [Self <: ojMenuEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojMenuEventMap] (val x: Self) extends AnyVal {
       
       inline def setDisabledChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "disabledChanged", value.asInstanceOf[js.Any])
       
@@ -569,7 +574,8 @@ object ojmenuMod {
       __obj.asInstanceOf[ojMenuSettableProperties]
     }
     
-    extension [Self <: ojMenuSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojMenuSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -597,7 +603,8 @@ object ojmenuMod {
       __obj.asInstanceOf[ojMenuSettablePropertiesLenient]
     }
     
-    extension [Self <: ojMenuSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojMenuSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

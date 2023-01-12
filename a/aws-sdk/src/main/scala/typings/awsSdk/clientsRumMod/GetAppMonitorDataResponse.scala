@@ -23,7 +23,8 @@ object GetAppMonitorDataResponse {
     __obj.asInstanceOf[GetAppMonitorDataResponse]
   }
   
-  extension [Self <: GetAppMonitorDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAppMonitorDataResponse] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: EventDataList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

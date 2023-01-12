@@ -28,7 +28,8 @@ object ListDeliveryStreamsInput {
     __obj.asInstanceOf[ListDeliveryStreamsInput]
   }
   
-  extension [Self <: ListDeliveryStreamsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDeliveryStreamsInput] (val x: Self) extends AnyVal {
     
     inline def setDeliveryStreamType(value: DeliveryStreamType): Self = StObject.set(x, "DeliveryStreamType", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object IRelatedInformation {
     __obj.asInstanceOf[IRelatedInformation]
   }
   
-  extension [Self <: IRelatedInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRelatedInformation] (val x: Self) extends AnyVal {
     
     inline def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     

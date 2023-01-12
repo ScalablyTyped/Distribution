@@ -124,7 +124,8 @@ object distCommonjsModulesProgressProgressMod extends Shortcut {
       __obj.asInstanceOf[StrictProgressProps]
     }
     
-    extension [Self <: StrictProgressProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictProgressProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

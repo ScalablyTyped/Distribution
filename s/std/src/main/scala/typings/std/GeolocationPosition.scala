@@ -20,7 +20,8 @@ object GeolocationPosition {
     __obj.asInstanceOf[GeolocationPosition]
   }
   
-  extension [Self <: GeolocationPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeolocationPosition] (val x: Self) extends AnyVal {
     
     inline def setCoords(value: GeolocationCoordinates): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     

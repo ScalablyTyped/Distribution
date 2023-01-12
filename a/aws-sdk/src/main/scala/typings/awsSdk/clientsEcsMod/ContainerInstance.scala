@@ -103,7 +103,8 @@ object ContainerInstance {
     __obj.asInstanceOf[ContainerInstance]
   }
   
-  extension [Self <: ContainerInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerInstance] (val x: Self) extends AnyVal {
     
     inline def setAgentConnected(value: Boolean): Self = StObject.set(x, "agentConnected", value.asInstanceOf[js.Any])
     

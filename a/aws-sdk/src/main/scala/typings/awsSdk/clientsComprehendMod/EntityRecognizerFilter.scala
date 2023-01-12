@@ -33,7 +33,8 @@ object EntityRecognizerFilter {
     __obj.asInstanceOf[EntityRecognizerFilter]
   }
   
-  extension [Self <: EntityRecognizerFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityRecognizerFilter] (val x: Self) extends AnyVal {
     
     inline def setRecognizerName(value: ComprehendArnName): Self = StObject.set(x, "RecognizerName", value.asInstanceOf[js.Any])
     

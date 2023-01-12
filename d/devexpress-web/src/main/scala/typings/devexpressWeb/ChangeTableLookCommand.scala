@@ -29,7 +29,8 @@ object ChangeTableLookCommand {
     __obj.asInstanceOf[ChangeTableLookCommand]
   }
   
-  extension [Self <: ChangeTableLookCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeTableLookCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: TableLookSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

@@ -28,7 +28,8 @@ object distRequestCommonRefreshTokenRequestMod {
       __obj.asInstanceOf[CommonRefreshTokenRequest]
     }
     
-    extension [Self <: CommonRefreshTokenRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonRefreshTokenRequest] (val x: Self) extends AnyVal {
       
       inline def setCcsCredential(value: CcsCredential): Self = StObject.set(x, "ccsCredential", value.asInstanceOf[js.Any])
       

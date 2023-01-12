@@ -18,7 +18,8 @@ object SipMediaApplicationEndpoint {
     __obj.asInstanceOf[SipMediaApplicationEndpoint]
   }
   
-  extension [Self <: SipMediaApplicationEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SipMediaApplicationEndpoint] (val x: Self) extends AnyVal {
     
     inline def setLambdaArn(value: FunctionArn): Self = StObject.set(x, "LambdaArn", value.asInstanceOf[js.Any])
     

@@ -90,7 +90,8 @@ object JQueryBackStretch {
       __obj.asInstanceOf[BackStretchOptions]
     }
     
-    extension [Self <: BackStretchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackStretchOptions] (val x: Self) extends AnyVal {
       
       inline def setCenteredX(value: Boolean): Self = StObject.set(x, "centeredX", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object typesPathRequiredExceptionMod {
       __obj.asInstanceOf[PathRequiredException]
     }
     
-    extension [Self <: PathRequiredException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathRequiredException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PathRequiredException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

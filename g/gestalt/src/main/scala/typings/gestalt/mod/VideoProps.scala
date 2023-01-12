@@ -119,7 +119,8 @@ object VideoProps {
     __obj.asInstanceOf[VideoProps]
   }
   
-  extension [Self <: VideoProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityMaximizeLabel(value: String): Self = StObject.set(x, "accessibilityMaximizeLabel", value.asInstanceOf[js.Any])
     

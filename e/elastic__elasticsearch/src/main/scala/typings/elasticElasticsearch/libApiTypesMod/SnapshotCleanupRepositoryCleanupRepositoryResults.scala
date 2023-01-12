@@ -17,7 +17,8 @@ object SnapshotCleanupRepositoryCleanupRepositoryResults {
     __obj.asInstanceOf[SnapshotCleanupRepositoryCleanupRepositoryResults]
   }
   
-  extension [Self <: SnapshotCleanupRepositoryCleanupRepositoryResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotCleanupRepositoryCleanupRepositoryResults] (val x: Self) extends AnyVal {
     
     inline def setDeleted_blobs(value: long): Self = StObject.set(x, "deleted_blobs", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object GrammarSlotTypeSource {
     __obj.asInstanceOf[GrammarSlotTypeSource]
   }
   
-  extension [Self <: GrammarSlotTypeSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrammarSlotTypeSource] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyArn(value: KmsKeyArn): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
     

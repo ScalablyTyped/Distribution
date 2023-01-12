@@ -28,7 +28,8 @@ object InstanceTimeline {
     __obj.asInstanceOf[InstanceTimeline]
   }
   
-  extension [Self <: InstanceTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceTimeline] (val x: Self) extends AnyVal {
     
     inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     

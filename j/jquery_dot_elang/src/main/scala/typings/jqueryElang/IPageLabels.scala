@@ -77,7 +77,8 @@ object IPageLabels {
     __obj.asInstanceOf[IPageLabels]
   }
   
-  extension [Self <: IPageLabels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPageLabels] (val x: Self) extends AnyVal {
     
     inline def setLblAdd(value: String): Self = StObject.set(x, "lblAdd", value.asInstanceOf[js.Any])
     

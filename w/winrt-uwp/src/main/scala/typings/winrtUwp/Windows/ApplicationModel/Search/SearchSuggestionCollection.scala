@@ -59,7 +59,8 @@ object SearchSuggestionCollection {
     __obj.asInstanceOf[SearchSuggestionCollection]
   }
   
-  extension [Self <: SearchSuggestionCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSuggestionCollection] (val x: Self) extends AnyVal {
     
     inline def setAppendQuerySuggestion(value: String => Unit): Self = StObject.set(x, "appendQuerySuggestion", js.Any.fromFunction1(value))
     

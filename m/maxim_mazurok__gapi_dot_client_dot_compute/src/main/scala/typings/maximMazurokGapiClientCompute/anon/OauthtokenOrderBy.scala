@@ -98,7 +98,8 @@ object OauthtokenOrderBy {
     __obj.asInstanceOf[OauthtokenOrderBy]
   }
   
-  extension [Self <: OauthtokenOrderBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OauthtokenOrderBy] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

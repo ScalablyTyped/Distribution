@@ -361,7 +361,8 @@ object BulletGraph {
       __obj.asInstanceOf[CaptionSettings]
     }
     
-    extension [Self <: CaptionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptionSettings] (val x: Self) extends AnyVal {
       
       inline def setEnableTrim(value: Boolean): Self = StObject.set(x, "enableTrim", value.asInstanceOf[js.Any])
       
@@ -448,7 +449,8 @@ object BulletGraph {
       __obj.asInstanceOf[CaptionSettingsFont]
     }
     
-    extension [Self <: CaptionSettingsFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptionSettingsFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -537,7 +539,8 @@ object BulletGraph {
       __obj.asInstanceOf[CaptionSettingsIndicator]
     }
     
-    extension [Self <: CaptionSettingsIndicator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptionSettingsIndicator] (val x: Self) extends AnyVal {
       
       inline def setFont(value: CaptionSettingsIndicatorFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -624,7 +627,8 @@ object BulletGraph {
       __obj.asInstanceOf[CaptionSettingsIndicatorFont]
     }
     
-    extension [Self <: CaptionSettingsIndicatorFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptionSettingsIndicatorFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -671,7 +675,8 @@ object BulletGraph {
       __obj.asInstanceOf[CaptionSettingsIndicatorLocation]
     }
     
-    extension [Self <: CaptionSettingsIndicatorLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptionSettingsIndicatorLocation] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -718,7 +723,8 @@ object BulletGraph {
       __obj.asInstanceOf[CaptionSettingsIndicatorSymbol]
     }
     
-    extension [Self <: CaptionSettingsIndicatorSymbol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptionSettingsIndicatorSymbol] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: CaptionSettingsIndicatorSymbolBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -765,7 +771,8 @@ object BulletGraph {
       __obj.asInstanceOf[CaptionSettingsIndicatorSymbolBorder]
     }
     
-    extension [Self <: CaptionSettingsIndicatorSymbolBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptionSettingsIndicatorSymbolBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -796,7 +803,8 @@ object BulletGraph {
       __obj.asInstanceOf[CaptionSettingsIndicatorSymbolSize]
     }
     
-    extension [Self <: CaptionSettingsIndicatorSymbolSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptionSettingsIndicatorSymbolSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -827,7 +835,8 @@ object BulletGraph {
       __obj.asInstanceOf[CaptionSettingsLocation]
     }
     
-    extension [Self <: CaptionSettingsLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptionSettingsLocation] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -886,7 +895,8 @@ object BulletGraph {
       __obj.asInstanceOf[CaptionSettingsSubTitle]
     }
     
-    extension [Self <: CaptionSettingsSubTitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptionSettingsSubTitle] (val x: Self) extends AnyVal {
       
       inline def setFont(value: CaptionSettingsSubTitleFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -961,7 +971,8 @@ object BulletGraph {
       __obj.asInstanceOf[CaptionSettingsSubTitleFont]
     }
     
-    extension [Self <: CaptionSettingsSubTitleFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptionSettingsSubTitleFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1008,7 +1019,8 @@ object BulletGraph {
       __obj.asInstanceOf[CaptionSettingsSubTitleLocation]
     }
     
-    extension [Self <: CaptionSettingsSubTitleLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptionSettingsSubTitleLocation] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -1046,7 +1058,8 @@ object BulletGraph {
       __obj.asInstanceOf[ClickEventArgs]
     }
     
-    extension [Self <: ClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1092,7 +1105,8 @@ object BulletGraph {
       __obj.asInstanceOf[DoubleClickEventArgs]
     }
     
-    extension [Self <: DoubleClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1137,7 +1151,8 @@ object BulletGraph {
       __obj.asInstanceOf[DrawCaptionEventArgs]
     }
     
-    extension [Self <: DrawCaptionEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawCaptionEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCaptionElement(value: HTMLElement): Self = StObject.set(x, "captionElement", value.asInstanceOf[js.Any])
       
@@ -1182,7 +1197,8 @@ object BulletGraph {
       __obj.asInstanceOf[DrawCategoryEventArgs]
     }
     
-    extension [Self <: DrawCategoryEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawCategoryEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCategoryElement(value: HTMLElement): Self = StObject.set(x, "categoryElement", value.asInstanceOf[js.Any])
       
@@ -1227,7 +1243,8 @@ object BulletGraph {
       __obj.asInstanceOf[DrawComparativeMeasureSymbolEventArgs]
     }
     
-    extension [Self <: DrawComparativeMeasureSymbolEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawComparativeMeasureSymbolEventArgs] (val x: Self) extends AnyVal {
       
       inline def setObject(value: Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
       
@@ -1272,7 +1289,8 @@ object BulletGraph {
       __obj.asInstanceOf[DrawFeatureMeasureBarEventArgs]
     }
     
-    extension [Self <: DrawFeatureMeasureBarEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawFeatureMeasureBarEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCurrentElement(value: HTMLElement): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
       
@@ -1317,7 +1335,8 @@ object BulletGraph {
       __obj.asInstanceOf[DrawIndicatorEventArgs]
     }
     
-    extension [Self <: DrawIndicatorEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawIndicatorEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1362,7 +1381,8 @@ object BulletGraph {
       __obj.asInstanceOf[DrawLabelsEventArgs]
     }
     
-    extension [Self <: DrawLabelsEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawLabelsEventArgs] (val x: Self) extends AnyVal {
       
       inline def setLabelType(value: String): Self = StObject.set(x, "labelType", value.asInstanceOf[js.Any])
       
@@ -1407,7 +1427,8 @@ object BulletGraph {
       __obj.asInstanceOf[DrawQualitativeRangesEventArgs]
     }
     
-    extension [Self <: DrawQualitativeRangesEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawQualitativeRangesEventArgs] (val x: Self) extends AnyVal {
       
       inline def setObject(value: Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
       
@@ -1472,7 +1493,8 @@ object BulletGraph {
       __obj.asInstanceOf[DrawTicksEventArgs]
     }
     
-    extension [Self <: DrawTicksEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawTicksEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1533,7 +1555,8 @@ object BulletGraph {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1702,7 +1725,8 @@ object BulletGraph {
       __obj.asInstanceOf[typings.ejWebAll.ej.datavisualization.BulletGraph.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.datavisualization.BulletGraph.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.datavisualization.BulletGraph.Model] (val x: Self) extends AnyVal {
       
       inline def setApplyRangeStrokeToLabels(value: Boolean): Self = StObject.set(x, "applyRangeStrokeToLabels", value.asInstanceOf[js.Any])
       
@@ -1860,7 +1884,8 @@ object BulletGraph {
       __obj.asInstanceOf[QualitativeRange]
     }
     
-    extension [Self <: QualitativeRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QualitativeRange] (val x: Self) extends AnyVal {
       
       inline def setRangeEnd(value: Double): Self = StObject.set(x, "rangeEnd", value.asInstanceOf[js.Any])
       
@@ -1947,7 +1972,8 @@ object BulletGraph {
       __obj.asInstanceOf[QuantitativeScaleSettings]
     }
     
-    extension [Self <: QuantitativeScaleSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuantitativeScaleSettings] (val x: Self) extends AnyVal {
       
       inline def setComparativeMeasureSettings(value: QuantitativeScaleSettingsComparativeMeasureSettings): Self = StObject.set(x, "comparativeMeasureSettings", value.asInstanceOf[js.Any])
       
@@ -2028,7 +2054,8 @@ object BulletGraph {
       __obj.asInstanceOf[QuantitativeScaleSettingsComparativeMeasureSettings]
     }
     
-    extension [Self <: QuantitativeScaleSettingsComparativeMeasureSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuantitativeScaleSettingsComparativeMeasureSettings] (val x: Self) extends AnyVal {
       
       inline def setStroke(value: Double): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
@@ -2064,7 +2091,8 @@ object BulletGraph {
       __obj.asInstanceOf[QuantitativeScaleSettingsFeatureMeasure]
     }
     
-    extension [Self <: QuantitativeScaleSettingsFeatureMeasure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuantitativeScaleSettingsFeatureMeasure] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -2099,7 +2127,8 @@ object BulletGraph {
       __obj.asInstanceOf[QuantitativeScaleSettingsFeaturedMeasureSettings]
     }
     
-    extension [Self <: QuantitativeScaleSettingsFeaturedMeasureSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuantitativeScaleSettingsFeaturedMeasureSettings] (val x: Self) extends AnyVal {
       
       inline def setStroke(value: Double): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
@@ -2150,7 +2179,8 @@ object BulletGraph {
       __obj.asInstanceOf[QuantitativeScaleSettingsFields]
     }
     
-    extension [Self <: QuantitativeScaleSettingsFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuantitativeScaleSettingsFields] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -2226,7 +2256,8 @@ object BulletGraph {
       __obj.asInstanceOf[QuantitativeScaleSettingsLabelSettings]
     }
     
-    extension [Self <: QuantitativeScaleSettingsLabelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuantitativeScaleSettingsLabelSettings] (val x: Self) extends AnyVal {
       
       inline def setFont(value: QuantitativeScaleSettingsLabelSettingsFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -2291,7 +2322,8 @@ object BulletGraph {
       __obj.asInstanceOf[QuantitativeScaleSettingsLabelSettingsFont]
     }
     
-    extension [Self <: QuantitativeScaleSettingsLabelSettingsFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuantitativeScaleSettingsLabelSettingsFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -2330,7 +2362,8 @@ object BulletGraph {
       __obj.asInstanceOf[QuantitativeScaleSettingsLocation]
     }
     
-    extension [Self <: QuantitativeScaleSettingsLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuantitativeScaleSettingsLocation] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -2366,7 +2399,8 @@ object BulletGraph {
       __obj.asInstanceOf[QuantitativeScaleSettingsMajorTickSettings]
     }
     
-    extension [Self <: QuantitativeScaleSettingsMajorTickSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuantitativeScaleSettingsMajorTickSettings] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -2406,7 +2440,8 @@ object BulletGraph {
       __obj.asInstanceOf[QuantitativeScaleSettingsMinorTickSettings]
     }
     
-    extension [Self <: QuantitativeScaleSettingsMinorTickSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuantitativeScaleSettingsMinorTickSettings] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -2448,7 +2483,8 @@ object BulletGraph {
       __obj.asInstanceOf[RightClickEventArgs]
     }
     
-    extension [Self <: RightClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RightClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2497,7 +2533,8 @@ object BulletGraph {
       __obj.asInstanceOf[TooltipSettings]
     }
     
-    extension [Self <: TooltipSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipSettings] (val x: Self) extends AnyVal {
       
       inline def setCaptionTemplate(value: String): Self = StObject.set(x, "captionTemplate", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object typesMod {
       __obj.asInstanceOf[MDCMenuDimensions]
     }
     
-    extension [Self <: MDCMenuDimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCMenuDimensions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object typesMod {
       __obj.asInstanceOf[MDCMenuDistance]
     }
     
-    extension [Self <: MDCMenuDistance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCMenuDistance] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object typesMod {
       __obj.asInstanceOf[MDCMenuPoint]
     }
     
-    extension [Self <: MDCMenuPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCMenuPoint] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

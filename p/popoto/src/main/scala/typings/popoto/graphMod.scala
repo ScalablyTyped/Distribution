@@ -276,7 +276,8 @@ object graphMod {
       __obj.asInstanceOf[Graph]
     }
     
-    extension [Self <: Graph](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Graph] (val x: Self) extends AnyVal {
       
       inline def setAddRelationshipData(value: (Any, Any, js.Function0[Unit], js.Array[Any], Boolean) => Unit): Self = StObject.set(x, "addRelationshipData", js.Any.fromFunction5(value))
       
@@ -383,7 +384,8 @@ object graphMod {
       __obj.asInstanceOf[GraphSchema]
     }
     
-    extension [Self <: GraphSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphSchema] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -414,7 +416,8 @@ object graphMod {
       __obj.asInstanceOf[GraphSchemaRelation]
     }
     
-    extension [Self <: GraphSchemaRelation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphSchemaRelation] (val x: Self) extends AnyVal {
       
       inline def setIsReverse(value: Boolean): Self = StObject.set(x, "isReverse", value.asInstanceOf[js.Any])
       
@@ -448,7 +451,8 @@ object graphMod {
       __obj.asInstanceOf[Link]
     }
     
-    extension [Self <: Link](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -518,7 +522,8 @@ object graphMod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
@@ -571,7 +576,8 @@ object graphMod {
       __obj.asInstanceOf[NodeSchema]
     }
     
-    extension [Self <: NodeSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeSchema] (val x: Self) extends AnyVal {
       
       inline def setIsNegative(value: Boolean): Self = StObject.set(x, "isNegative", value.asInstanceOf[js.Any])
       

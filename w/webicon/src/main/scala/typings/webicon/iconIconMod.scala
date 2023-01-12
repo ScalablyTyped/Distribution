@@ -29,7 +29,8 @@ object iconIconMod {
       __obj.asInstanceOf[Icon]
     }
     
-    extension [Self <: Icon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
       
       inline def setIconIdParser(value: (/* id */ String, /* params */ js.Array[String]) => String): Self = StObject.set(x, "iconIdParser", js.Any.fromFunction2(value))
       

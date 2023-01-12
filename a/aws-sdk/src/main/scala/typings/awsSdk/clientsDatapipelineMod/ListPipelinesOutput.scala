@@ -28,7 +28,8 @@ object ListPipelinesOutput {
     __obj.asInstanceOf[ListPipelinesOutput]
   }
   
-  extension [Self <: ListPipelinesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPipelinesOutput] (val x: Self) extends AnyVal {
     
     inline def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
     

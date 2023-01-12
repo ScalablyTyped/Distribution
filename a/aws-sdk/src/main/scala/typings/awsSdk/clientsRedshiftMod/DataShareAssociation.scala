@@ -38,7 +38,8 @@ object DataShareAssociation {
     __obj.asInstanceOf[DataShareAssociation]
   }
   
-  extension [Self <: DataShareAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataShareAssociation] (val x: Self) extends AnyVal {
     
     inline def setConsumerIdentifier(value: String): Self = StObject.set(x, "ConsumerIdentifier", value.asInstanceOf[js.Any])
     

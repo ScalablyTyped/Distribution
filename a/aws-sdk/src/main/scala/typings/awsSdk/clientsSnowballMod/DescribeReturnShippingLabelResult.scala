@@ -28,7 +28,8 @@ object DescribeReturnShippingLabelResult {
     __obj.asInstanceOf[DescribeReturnShippingLabelResult]
   }
   
-  extension [Self <: DescribeReturnShippingLabelResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReturnShippingLabelResult] (val x: Self) extends AnyVal {
     
     inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object UpdateScheduleRequest {
     __obj.asInstanceOf[UpdateScheduleRequest]
   }
   
-  extension [Self <: UpdateScheduleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateScheduleRequest] (val x: Self) extends AnyVal {
     
     inline def setCronExpression(value: CronExpression): Self = StObject.set(x, "CronExpression", value.asInstanceOf[js.Any])
     

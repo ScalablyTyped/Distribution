@@ -30,7 +30,8 @@ object AppleCurators {
     __obj.asInstanceOf[AppleCurators]
   }
   
-  extension [Self <: AppleCurators](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppleCurators] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: typings.musickitJs.anon.Artwork): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

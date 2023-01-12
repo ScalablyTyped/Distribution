@@ -183,7 +183,8 @@ object mod {
       __obj.asInstanceOf[GenericSetter[SP]]
     }
     
-    extension [Self <: GenericSetter[?], SP](x: Self & GenericSetter[SP]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericSetter[?], SP] (val x: Self & GenericSetter[SP]) extends AnyVal {
       
       inline def setSet(
         value: (Any, /* import warning: importer.ImportType#apply Failed type conversion: SP[K] */ js.Any) => Unit
@@ -1276,7 +1277,8 @@ object mod {
       __obj.asInstanceOf[baseComponentEventMap[SP]]
     }
     
-    extension [Self <: baseComponentEventMap[?], SP /* <: baseComponentSettableProperties */](x: Self & baseComponentEventMap[SP]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: baseComponentEventMap[?], SP /* <: baseComponentSettableProperties */] (val x: Self & baseComponentEventMap[SP]) extends AnyVal {
       
       inline def setTranslationsChanged(value: JetElementCustomEvent[js.Object | Null]): Self = StObject.set(x, "translationsChanged", value.asInstanceOf[js.Any])
     }
@@ -1295,7 +1297,8 @@ object mod {
       __obj.asInstanceOf[baseComponentSettableProperties]
     }
     
-    extension [Self <: baseComponentSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: baseComponentSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
@@ -1317,7 +1320,8 @@ object mod {
       __obj.asInstanceOf[baseComponentSettablePropertiesLenient]
     }
     
-    extension [Self <: baseComponentSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: baseComponentSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       

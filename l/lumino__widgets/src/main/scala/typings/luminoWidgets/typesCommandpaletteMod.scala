@@ -370,7 +370,8 @@ object typesCommandpaletteMod {
         __obj.asInstanceOf[IEmptyMessageRenderData]
       }
       
-      extension [Self <: IEmptyMessageRenderData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IEmptyMessageRenderData] (val x: Self) extends AnyVal {
         
         inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       }
@@ -398,7 +399,8 @@ object typesCommandpaletteMod {
         __obj.asInstanceOf[IHeaderRenderData]
       }
       
-      extension [Self <: IHeaderRenderData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IHeaderRenderData] (val x: Self) extends AnyVal {
         
         inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
         
@@ -520,7 +522,8 @@ object typesCommandpaletteMod {
         __obj.asInstanceOf[IItem]
       }
       
-      extension [Self <: IItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IItem] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
@@ -603,7 +606,8 @@ object typesCommandpaletteMod {
         __obj.asInstanceOf[IItemOptions]
       }
       
-      extension [Self <: IItemOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IItemOptions] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
@@ -646,7 +650,8 @@ object typesCommandpaletteMod {
         __obj.asInstanceOf[IItemRenderData]
       }
       
-      extension [Self <: IItemRenderData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IItemRenderData] (val x: Self) extends AnyVal {
         
         inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
@@ -684,7 +689,8 @@ object typesCommandpaletteMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
         
@@ -740,7 +746,8 @@ object typesCommandpaletteMod {
         __obj.asInstanceOf[IRenderer]
       }
       
-      extension [Self <: IRenderer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRenderer] (val x: Self) extends AnyVal {
         
         inline def setRenderEmptyMessage(value: IEmptyMessageRenderData => VirtualElement): Self = StObject.set(x, "renderEmptyMessage", js.Any.fromFunction1(value))
         

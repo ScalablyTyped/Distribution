@@ -33,7 +33,8 @@ object triggerCognitoUserPoolTriggerPostConfirmationMod {
       __obj.asInstanceOf[BasePostConfirmationTriggerEvent[T]]
     }
     
-    extension [Self <: BasePostConfirmationTriggerEvent[?], T /* <: String */](x: Self & BasePostConfirmationTriggerEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePostConfirmationTriggerEvent[?], T /* <: String */] (val x: Self & BasePostConfirmationTriggerEvent[T]) extends AnyVal {
       
       inline def setRequest(value: UserAttributes): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }

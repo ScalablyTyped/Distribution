@@ -22,7 +22,8 @@ object EditCustomerMatchMembersRequest {
     __obj.asInstanceOf[EditCustomerMatchMembersRequest]
   }
   
-  extension [Self <: EditCustomerMatchMembersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditCustomerMatchMembersRequest] (val x: Self) extends AnyVal {
     
     inline def setAddedContactInfoList(value: ContactInfoList): Self = StObject.set(x, "addedContactInfoList", value.asInstanceOf[js.Any])
     

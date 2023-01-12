@@ -23,7 +23,8 @@ object ObjectLambdaAccessPoint {
     __obj.asInstanceOf[ObjectLambdaAccessPoint]
   }
   
-  extension [Self <: ObjectLambdaAccessPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectLambdaAccessPoint] (val x: Self) extends AnyVal {
     
     inline def setName(value: ObjectLambdaAccessPointName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

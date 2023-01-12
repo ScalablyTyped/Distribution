@@ -20,7 +20,8 @@ object AggregationInfo {
     __obj.asInstanceOf[AggregationInfo]
   }
   
-  extension [Self <: AggregationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationInfo] (val x: Self) extends AnyVal {
     
     inline def setAggregationCount(value: Double): Self = StObject.set(x, "aggregationCount", value.asInstanceOf[js.Any])
     

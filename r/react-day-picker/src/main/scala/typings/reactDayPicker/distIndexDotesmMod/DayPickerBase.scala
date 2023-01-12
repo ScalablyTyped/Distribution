@@ -292,7 +292,8 @@ object DayPickerBase {
     __obj.asInstanceOf[DayPickerBase]
   }
   
-  extension [Self <: DayPickerBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayPickerBase] (val x: Self) extends AnyVal {
     
     inline def setCaptionLayout(value: CaptionLayout): Self = StObject.set(x, "captionLayout", value.asInstanceOf[js.Any])
     

@@ -106,7 +106,8 @@ object libComponentsStateLookupMod {
       __obj.asInstanceOf[StateLookupEvent]
     }
     
-    extension [Self <: StateLookupEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateLookupEvent] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object libComponentsStateLookupMod {
       __obj.asInstanceOf[StateLookupOpts]
     }
     
-    extension [Self <: StateLookupOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateLookupOpts] (val x: Self) extends AnyVal {
       
       inline def setEventTypes(value: js.Array[String]): Self = StObject.set(x, "eventTypes", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object libComponentsStateLookupMod {
       __obj.asInstanceOf[StateLookupRoom]
     }
     
-    extension [Self <: StateLookupRoom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateLookupRoom] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: StringDictionary[StringDictionary[StateLookupEvent]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       

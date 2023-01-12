@@ -19,7 +19,8 @@ object ApiResponse {
     __obj.asInstanceOf[ApiResponse[T]]
   }
   
-  extension [Self <: ApiResponse[?], T](x: Self & ApiResponse[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiResponse[?], T] (val x: Self & ApiResponse[T]) extends AnyVal {
     
     inline def setObj(value: T): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
     

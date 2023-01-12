@@ -22,7 +22,8 @@ object SlotBindingData {
     __obj.asInstanceOf[SlotBindingData[Scope]]
   }
   
-  extension [Self <: SlotBindingData[?], Scope](x: Self & SlotBindingData[Scope]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotBindingData[?], Scope] (val x: Self & SlotBindingData[Scope]) extends AnyVal {
     
     inline def setBindings(value: js.Array[BindingData[Scope]]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     

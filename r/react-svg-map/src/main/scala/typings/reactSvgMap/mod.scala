@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[BaseMapProps]
     }
     
-    extension [Self <: BaseMapProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseMapProps] (val x: Self) extends AnyVal {
       
       inline def setChildrenAfter(value: ReactElement): Self = StObject.set(x, "childrenAfter", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object mod {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object mod {
       __obj.asInstanceOf[Map]
     }
     
-    extension [Self <: Map](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -179,7 +182,8 @@ object mod {
       __obj.asInstanceOf[OnChangeMapProps]
     }
     
-    extension [Self <: OnChangeMapProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnChangeMapProps] (val x: Self) extends AnyVal {
       
       inline def setOnChange(value: /* repeated */ Any => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
@@ -210,7 +214,8 @@ object mod {
       __obj.asInstanceOf[SVGMapProps]
     }
     
-    extension [Self <: SVGMapProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SVGMapProps] (val x: Self) extends AnyVal {
       
       inline def setIsLocationSelected(value: /* repeated */ Any => Any): Self = StObject.set(x, "isLocationSelected", js.Any.fromFunction1(value))
       

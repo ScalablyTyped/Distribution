@@ -38,7 +38,8 @@ object DescribePatchPropertiesRequest {
     __obj.asInstanceOf[DescribePatchPropertiesRequest]
   }
   
-  extension [Self <: DescribePatchPropertiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePatchPropertiesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

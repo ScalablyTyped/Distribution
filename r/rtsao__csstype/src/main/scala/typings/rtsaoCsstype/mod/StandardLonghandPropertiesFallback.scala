@@ -4560,7 +4560,8 @@ object StandardLonghandPropertiesFallback {
     __obj.asInstanceOf[StandardLonghandPropertiesFallback[TLength]]
   }
   
-  extension [Self <: StandardLonghandPropertiesFallback[?], TLength](x: Self & StandardLonghandPropertiesFallback[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardLonghandPropertiesFallback[?], TLength] (val x: Self & StandardLonghandPropertiesFallback[TLength]) extends AnyVal {
     
     inline def setAlignContent(value: AlignContentProperty | js.Array[AlignContentProperty]): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     

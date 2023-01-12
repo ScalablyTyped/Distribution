@@ -46,7 +46,8 @@ object buildSrcCompileCompileMod {
       __obj.asInstanceOf[CompileOptions]
     }
     
-    extension [Self <: CompileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompileOptions] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

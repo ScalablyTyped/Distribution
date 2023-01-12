@@ -25,7 +25,8 @@ object CommitidEvent {
     __obj.asInstanceOf[CommitidEvent]
   }
   
-  extension [Self <: CommitidEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitidEvent] (val x: Self) extends AnyVal {
     
     inline def setComments(
       value: js.Array[

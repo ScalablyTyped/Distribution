@@ -61,7 +61,8 @@ object OrderLineItemProduct {
     __obj.asInstanceOf[OrderLineItemProduct]
   }
   
-  extension [Self <: OrderLineItemProduct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderLineItemProduct] (val x: Self) extends AnyVal {
     
     inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     

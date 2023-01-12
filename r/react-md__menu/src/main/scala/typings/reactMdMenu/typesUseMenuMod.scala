@@ -93,7 +93,8 @@ object typesUseMenuMod {
       __obj.asInstanceOf[MenuHookOptions[ToggleEl]]
     }
     
-    extension [Self <: MenuHookOptions[?], ToggleEl /* <: HTMLElement */](x: Self & MenuHookOptions[ToggleEl]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuHookOptions[?], ToggleEl /* <: HTMLElement */] (val x: Self & MenuHookOptions[ToggleEl]) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -162,7 +163,8 @@ object typesUseMenuMod {
       __obj.asInstanceOf[MenuHookReturnValue[ToggleEl]]
     }
     
-    extension [Self <: MenuHookReturnValue[?], ToggleEl /* <: HTMLElement */](x: Self & MenuHookReturnValue[ToggleEl]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuHookReturnValue[?], ToggleEl /* <: HTMLElement */] (val x: Self & MenuHookReturnValue[ToggleEl]) extends AnyVal {
       
       inline def setToggleProps(value: ProvidedMenuToggleProps[ToggleEl]): Self = StObject.set(x, "toggleProps", value.asInstanceOf[js.Any])
       

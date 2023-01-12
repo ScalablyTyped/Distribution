@@ -19,7 +19,8 @@ object ValueSetArray {
     __obj.asInstanceOf[ValueSetArray]
   }
   
-  extension [Self <: ValueSetArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueSetArray] (val x: Self) extends AnyVal {
     
     inline def setValueSet(value: js.Array[CompletionItemTag]): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
     

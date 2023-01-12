@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[IsActive]
     }
     
-    extension [Self <: IsActive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsActive] (val x: Self) extends AnyVal {
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     }
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[PartialLocation]
     }
     
-    extension [Self <: PartialLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLocation] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object anon {
       __obj.asInstanceOf[PartialLocationAncestorOrigins]
     }
     
-    extension [Self <: PartialLocationAncestorOrigins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLocationAncestorOrigins] (val x: Self) extends AnyVal {
       
       inline def setAncestorOrigins(value: DOMStringList): Self = StObject.set(x, "ancestorOrigins", value.asInstanceOf[js.Any])
       
@@ -188,7 +191,8 @@ object anon {
       __obj.asInstanceOf[PartialPath]
     }
     
-    extension [Self <: PartialPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPath] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -215,7 +219,8 @@ object anon {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -232,7 +237,8 @@ object anon {
       __obj.asInstanceOf[Plain]
     }
     
-    extension [Self <: Plain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plain] (val x: Self) extends AnyVal {
       
       inline def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
       
@@ -255,7 +261,8 @@ object anon {
       __obj.asInstanceOf[Replace]
     }
     
-    extension [Self <: Replace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Replace] (val x: Self) extends AnyVal {
       
       inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
@@ -284,7 +291,8 @@ object anon {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DescribeInstanceAccessControlAttributeConfigurationRequest {
     __obj.asInstanceOf[DescribeInstanceAccessControlAttributeConfigurationRequest]
   }
   
-  extension [Self <: DescribeInstanceAccessControlAttributeConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInstanceAccessControlAttributeConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object ReadonlySharedValue01 {
     __obj.asInstanceOf[ReadonlySharedValue01]
   }
   
-  extension [Self <: ReadonlySharedValue01](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlySharedValue01] (val x: Self) extends AnyVal {
     
     inline def setValue(value: `0` | `1`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

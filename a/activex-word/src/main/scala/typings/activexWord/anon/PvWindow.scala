@@ -16,7 +16,8 @@ object PvWindow {
     __obj.asInstanceOf[PvWindow]
   }
   
-  extension [Self <: PvWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PvWindow] (val x: Self) extends AnyVal {
     
     inline def setPvWindow(value: ProtectedViewWindow): Self = StObject.set(x, "PvWindow", value.asInstanceOf[js.Any])
   }

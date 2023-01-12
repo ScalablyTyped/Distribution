@@ -17,7 +17,8 @@ object SizeBytes {
     __obj.asInstanceOf[SizeBytes]
   }
   
-  extension [Self <: SizeBytes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeBytes] (val x: Self) extends AnyVal {
     
     inline def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     

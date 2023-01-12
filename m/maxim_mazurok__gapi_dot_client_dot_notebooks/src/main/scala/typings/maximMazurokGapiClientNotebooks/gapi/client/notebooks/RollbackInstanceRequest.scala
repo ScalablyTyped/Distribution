@@ -16,7 +16,8 @@ object RollbackInstanceRequest {
     __obj.asInstanceOf[RollbackInstanceRequest]
   }
   
-  extension [Self <: RollbackInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollbackInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setTargetSnapshot(value: String): Self = StObject.set(x, "targetSnapshot", value.asInstanceOf[js.Any])
     

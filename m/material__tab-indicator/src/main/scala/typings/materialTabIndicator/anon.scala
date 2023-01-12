@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[ACTIVE]
     }
     
-    extension [Self <: ACTIVE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ACTIVE] (val x: Self) extends AnyVal {
       
       inline def setACTIVE(value: String): Self = StObject.set(x, "ACTIVE", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[CONTENTSELECTOR]
     }
     
-    extension [Self <: CONTENTSELECTOR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CONTENTSELECTOR] (val x: Self) extends AnyVal {
       
       inline def setCONTENT_SELECTOR(value: String): Self = StObject.set(x, "CONTENT_SELECTOR", value.asInstanceOf[js.Any])
     }
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCTabIndicatorAda]
     }
     
-    extension [Self <: PartialMDCTabIndicatorAda](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCTabIndicatorAda] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

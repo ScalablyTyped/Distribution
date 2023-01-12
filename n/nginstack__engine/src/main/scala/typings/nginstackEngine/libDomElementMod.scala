@@ -78,7 +78,8 @@ object libDomElementMod {
       __obj.asInstanceOf[Element]
     }
     
-    extension [Self <: Element](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: NamedNodeMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

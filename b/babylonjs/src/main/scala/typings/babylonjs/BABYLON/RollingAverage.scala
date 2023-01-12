@@ -74,7 +74,8 @@ object RollingAverage {
     __obj.asInstanceOf[RollingAverage]
   }
   
-  extension [Self <: RollingAverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollingAverage] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Double => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

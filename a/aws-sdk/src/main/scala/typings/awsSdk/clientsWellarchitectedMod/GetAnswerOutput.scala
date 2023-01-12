@@ -26,7 +26,8 @@ object GetAnswerOutput {
     __obj.asInstanceOf[GetAnswerOutput]
   }
   
-  extension [Self <: GetAnswerOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAnswerOutput] (val x: Self) extends AnyVal {
     
     inline def setAnswer(value: Answer): Self = StObject.set(x, "Answer", value.asInstanceOf[js.Any])
     

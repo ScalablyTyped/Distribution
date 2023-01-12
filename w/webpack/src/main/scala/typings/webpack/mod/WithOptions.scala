@@ -19,7 +19,8 @@ object WithOptions {
     __obj.asInstanceOf[WithOptions]
   }
   
-  extension [Self <: WithOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WithOptions] (val x: Self) extends AnyVal {
     
     inline def setWithOptions(value: PartialResolveOptionsWith => ResolverWithOptions): Self = StObject.set(x, "withOptions", js.Any.fromFunction1(value))
   }

@@ -18,7 +18,8 @@ object KeycloakAccountOptions {
     __obj.asInstanceOf[KeycloakAccountOptions]
   }
   
-  extension [Self <: KeycloakAccountOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeycloakAccountOptions] (val x: Self) extends AnyVal {
     
     inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     

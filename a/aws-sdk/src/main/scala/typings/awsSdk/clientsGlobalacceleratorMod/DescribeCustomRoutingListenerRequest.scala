@@ -18,7 +18,8 @@ object DescribeCustomRoutingListenerRequest {
     __obj.asInstanceOf[DescribeCustomRoutingListenerRequest]
   }
   
-  extension [Self <: DescribeCustomRoutingListenerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCustomRoutingListenerRequest] (val x: Self) extends AnyVal {
     
     inline def setListenerArn(value: GenericString): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
   }

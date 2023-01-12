@@ -46,7 +46,8 @@ object XDataEditor {
     __obj.asInstanceOf[XDataEditor]
   }
   
-  extension [Self <: XDataEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataEditor] (val x: Self) extends AnyVal {
     
     inline def setAddDataEditorListener(value: XDataEditorListener => Unit): Self = StObject.set(x, "addDataEditorListener", js.Any.fromFunction1(value))
     

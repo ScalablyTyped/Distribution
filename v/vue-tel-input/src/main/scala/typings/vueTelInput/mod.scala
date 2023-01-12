@@ -44,7 +44,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTelInputComputed]
     }
     
-    extension [Self <: VueTelInputComputed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTelInputComputed] (val x: Self) extends AnyVal {
       
       inline def setFilteredCountries(value: () => js.Array[String]): Self = StObject.set(x, "filteredCountries", js.Any.fromFunction0(value))
       
@@ -92,7 +93,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTelInputConstructor]
     }
     
-    extension [Self <: VueTelInputConstructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTelInputConstructor] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: VueTelInputComputed): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTelInputCountryOption]
     }
     
-    extension [Self <: VueTelInputCountryOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTelInputCountryOption] (val x: Self) extends AnyVal {
       
       inline def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
     }
@@ -157,7 +160,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTelInputData]
     }
     
-    extension [Self <: VueTelInputData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTelInputData] (val x: Self) extends AnyVal {
       
       inline def setActiveCountry(value: VueTelInputCountryOption): Self = StObject.set(x, "activeCountry", value.asInstanceOf[js.Any])
       
@@ -187,7 +191,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTelInputDirective]
     }
     
-    extension [Self <: VueTelInputDirective](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTelInputDirective] (val x: Self) extends AnyVal {
       
       inline def `setClick-outside`(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DirectiveOptions */ Any
@@ -206,7 +211,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTelInputDowndownOption]
     }
     
-    extension [Self <: VueTelInputDowndownOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTelInputDowndownOption] (val x: Self) extends AnyVal {
       
       inline def setDisabledDialCode(value: Boolean): Self = StObject.set(x, "disabledDialCode", value.asInstanceOf[js.Any])
     }
@@ -223,7 +229,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTelInputInputOption]
     }
     
-    extension [Self <: VueTelInputInputOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTelInputInputOption] (val x: Self) extends AnyVal {
       
       inline def setShowDialCode(value: Boolean): Self = StObject.set(x, "showDialCode", value.asInstanceOf[js.Any])
     }
@@ -272,7 +279,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTelInputMethods]
     }
     
-    extension [Self <: VueTelInputMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTelInputMethods] (val x: Self) extends AnyVal {
       
       inline def setChoose(value: Any => Unit): Self = StObject.set(x, "choose", js.Any.fromFunction1(value))
       
@@ -368,7 +376,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTelInputProps]
     }
     
-    extension [Self <: VueTelInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTelInputProps] (val x: Self) extends AnyVal {
       
       inline def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
       
@@ -431,7 +440,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTelInputResponse]
     }
     
-    extension [Self <: VueTelInputResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTelInputResponse] (val x: Self) extends AnyVal {
       
       inline def setCountry(value: VueTelInputCountryOption): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
@@ -454,7 +464,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTelInputWatch]
     }
     
-    extension [Self <: VueTelInputWatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTelInputWatch] (val x: Self) extends AnyVal {
       
       inline def setState(value: Any => Unit): Self = StObject.set(x, "state", js.Any.fromFunction1(value))
       

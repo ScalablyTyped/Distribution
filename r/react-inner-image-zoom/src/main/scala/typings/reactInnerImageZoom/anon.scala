@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Media]
     }
     
-    extension [Self <: Media](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
       
       inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       

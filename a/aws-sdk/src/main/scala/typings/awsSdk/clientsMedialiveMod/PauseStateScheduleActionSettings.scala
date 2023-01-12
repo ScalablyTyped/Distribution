@@ -15,7 +15,8 @@ object PauseStateScheduleActionSettings {
     __obj.asInstanceOf[PauseStateScheduleActionSettings]
   }
   
-  extension [Self <: PauseStateScheduleActionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PauseStateScheduleActionSettings] (val x: Self) extends AnyVal {
     
     inline def setPipelines(value: listOfPipelinePauseStateSettings): Self = StObject.set(x, "Pipelines", value.asInstanceOf[js.Any])
     

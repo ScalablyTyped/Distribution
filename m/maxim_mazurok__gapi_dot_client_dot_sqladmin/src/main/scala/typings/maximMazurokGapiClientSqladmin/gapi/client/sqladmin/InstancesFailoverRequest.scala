@@ -16,7 +16,8 @@ object InstancesFailoverRequest {
     __obj.asInstanceOf[InstancesFailoverRequest]
   }
   
-  extension [Self <: InstancesFailoverRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancesFailoverRequest] (val x: Self) extends AnyVal {
     
     inline def setFailoverContext(value: FailoverContext): Self = StObject.set(x, "failoverContext", value.asInstanceOf[js.Any])
     

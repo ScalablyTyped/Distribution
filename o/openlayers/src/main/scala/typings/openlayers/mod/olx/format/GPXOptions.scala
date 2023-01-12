@@ -17,7 +17,8 @@ object GPXOptions {
     __obj.asInstanceOf[GPXOptions]
   }
   
-  extension [Self <: GPXOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPXOptions] (val x: Self) extends AnyVal {
     
     inline def setReadExtensions(value: (/* feature */ Feature, /* node */ Node) => Any): Self = StObject.set(x, "readExtensions", js.Any.fromFunction2(value))
     

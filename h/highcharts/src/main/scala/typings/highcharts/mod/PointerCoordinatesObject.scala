@@ -17,7 +17,8 @@ object PointerCoordinatesObject {
     __obj.asInstanceOf[PointerCoordinatesObject]
   }
   
-  extension [Self <: PointerCoordinatesObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerCoordinatesObject] (val x: Self) extends AnyVal {
     
     inline def setChartX(value: Double): Self = StObject.set(x, "chartX", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ExecException {
     __obj.asInstanceOf[ExecException]
   }
   
-  extension [Self <: ExecException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecException] (val x: Self) extends AnyVal {
     
     inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     

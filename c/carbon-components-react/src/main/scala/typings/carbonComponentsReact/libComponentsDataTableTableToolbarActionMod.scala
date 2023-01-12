@@ -524,7 +524,8 @@ object libComponentsDataTableTableToolbarActionMod {
       __obj.asInstanceOf[TableToolbarActionAnchorProps]
     }
     
-    extension [Self <: TableToolbarActionAnchorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableToolbarActionAnchorProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1689,7 +1690,8 @@ object libComponentsDataTableTableToolbarActionMod {
       __obj.asInstanceOf[TableToolbarActionButtonProps]
     }
     
-    extension [Self <: TableToolbarActionButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableToolbarActionButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

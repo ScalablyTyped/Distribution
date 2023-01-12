@@ -26,7 +26,8 @@ object MtfRenderer {
     __obj.asInstanceOf[MtfRenderer]
   }
   
-  extension [Self <: MtfRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MtfRenderer] (val x: Self) extends AnyVal {
     
     inline def setCreateWithBitmapCanvas(value: XBitmapCanvas => Unit): Self = StObject.set(x, "createWithBitmapCanvas", js.Any.fromFunction1(value))
   }

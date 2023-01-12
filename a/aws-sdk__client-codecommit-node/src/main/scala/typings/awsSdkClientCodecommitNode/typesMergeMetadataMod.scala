@@ -25,7 +25,8 @@ object typesMergeMetadataMod {
       __obj.asInstanceOf[MergeMetadata]
     }
     
-    extension [Self <: MergeMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeMetadata] (val x: Self) extends AnyVal {
       
       inline def setIsMerged(value: Boolean): Self = StObject.set(x, "isMerged", value.asInstanceOf[js.Any])
       

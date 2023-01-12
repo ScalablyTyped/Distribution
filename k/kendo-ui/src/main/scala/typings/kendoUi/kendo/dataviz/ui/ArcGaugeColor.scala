@@ -19,7 +19,8 @@ object ArcGaugeColor {
     __obj.asInstanceOf[ArcGaugeColor]
   }
   
-  extension [Self <: ArcGaugeColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcGaugeColor] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

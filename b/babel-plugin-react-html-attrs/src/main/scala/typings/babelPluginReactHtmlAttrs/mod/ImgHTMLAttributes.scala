@@ -57,7 +57,8 @@ object ImgHTMLAttributes {
     __obj.asInstanceOf[ImgHTMLAttributes[T]]
   }
   
-  extension [Self <: ImgHTMLAttributes[?], T](x: Self & ImgHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImgHTMLAttributes[?], T] (val x: Self & ImgHTMLAttributes[T]) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

@@ -90,7 +90,8 @@ object anon {
       __obj.asInstanceOf[ApertureValue]
     }
     
-    extension [Self <: ApertureValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApertureValue] (val x: Self) extends AnyVal {
       
       inline def setApertureValue(value: Double): Self = StObject.set(x, "ApertureValue", value.asInstanceOf[js.Any])
       
@@ -279,7 +280,8 @@ object anon {
       __obj.asInstanceOf[Artist]
     }
     
-    extension [Self <: Artist](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Artist] (val x: Self) extends AnyVal {
       
       inline def setArtist(value: String): Self = StObject.set(x, "Artist", value.asInstanceOf[js.Any])
       
@@ -376,7 +378,8 @@ object anon {
       __obj.asInstanceOf[AutoBracketing]
     }
     
-    extension [Self <: AutoBracketing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoBracketing] (val x: Self) extends AnyVal {
       
       inline def setAutoBracketing(value: Double): Self = StObject.set(x, "AutoBracketing", value.asInstanceOf[js.Any])
       
@@ -461,7 +464,8 @@ object anon {
       __obj.asInstanceOf[Compression]
     }
     
-    extension [Self <: Compression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compression] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Double): Self = StObject.set(x, "Compression", value.asInstanceOf[js.Any])
       
@@ -570,7 +574,8 @@ object anon {
       __obj.asInstanceOf[GPSAltitude]
     }
     
-    extension [Self <: GPSAltitude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GPSAltitude] (val x: Self) extends AnyVal {
       
       inline def setGPSAltitude(value: Double): Self = StObject.set(x, "GPSAltitude", value.asInstanceOf[js.Any])
       
@@ -727,7 +732,8 @@ object anon {
       __obj.asInstanceOf[InteropIndex]
     }
     
-    extension [Self <: InteropIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteropIndex] (val x: Self) extends AnyVal {
       
       inline def setInteropIndex(value: String): Self = StObject.set(x, "InteropIndex", value.asInstanceOf[js.Any])
       

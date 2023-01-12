@@ -33,7 +33,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TrendlineLinearOptions]
     }
     
-    extension [Self <: TrendlineLinearOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrendlineLinearOptions] (val x: Self) extends AnyVal {
       
       inline def setLineStyle(value: dotted | solid): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ChartDatasetProperties[TType, TData]]
       }
       
-      extension [Self <: ChartDatasetProperties[?, ?], TType /* <: ChartType */, TData](x: Self & (ChartDatasetProperties[TType, TData])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChartDatasetProperties[?, ?], TType /* <: ChartType */, TData] (val x: Self & (ChartDatasetProperties[TType, TData])) extends AnyVal {
         
         inline def setTrendlineLinear(value: TrendlineLinearOptions): Self = StObject.set(x, "trendlineLinear", value.asInstanceOf[js.Any])
         

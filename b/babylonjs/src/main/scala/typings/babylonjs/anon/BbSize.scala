@@ -36,7 +36,8 @@ object BbSize {
     __obj.asInstanceOf[BbSize]
   }
   
-  extension [Self <: BbSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BbSize] (val x: Self) extends AnyVal {
     
     inline def setBInfo(value: Any): Self = StObject.set(x, "bInfo", value.asInstanceOf[js.Any])
     

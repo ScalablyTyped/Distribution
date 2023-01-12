@@ -34,7 +34,8 @@ object TranslateTimeline {
     __obj.asInstanceOf[TranslateTimeline]
   }
   
-  extension [Self <: TranslateTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslateTimeline] (val x: Self) extends AnyVal {
     
     inline def setBoneIndex(value: Double): Self = StObject.set(x, "boneIndex", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object AggregationsSignificantTermsAggregation {
     __obj.asInstanceOf[AggregationsSignificantTermsAggregation]
   }
   
-  extension [Self <: AggregationsSignificantTermsAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsSignificantTermsAggregation] (val x: Self) extends AnyVal {
     
     inline def setBackground_filter(value: QueryDslQueryContainer): Self = StObject.set(x, "background_filter", value.asInstanceOf[js.Any])
     

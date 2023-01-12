@@ -15,7 +15,8 @@ object Children {
     __obj.asInstanceOf[Children[RecordType]]
   }
   
-  extension [Self <: Children[?], RecordType /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  children :std.Array<RecordType> | undefined} */ js.Any */](x: Self & Children[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Children[?], RecordType /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  children :std.Array<RecordType> | undefined} */ js.Any */] (val x: Self & Children[RecordType]) extends AnyVal {
     
     inline def setChildren(value: js.Array[RecordType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

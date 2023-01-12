@@ -28,7 +28,8 @@ object ListPlatformBranchesRequest {
     __obj.asInstanceOf[ListPlatformBranchesRequest]
   }
   
-  extension [Self <: ListPlatformBranchesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPlatformBranchesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: SearchFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

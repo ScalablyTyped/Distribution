@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[VoronoiCell[T]]
     }
     
-    extension [Self <: VoronoiCell[?], T](x: Self & VoronoiCell[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoronoiCell[?], T] (val x: Self & VoronoiCell[T]) extends AnyVal {
       
       inline def setHalfedges(value: js.Array[Double]): Self = StObject.set(x, "halfedges", value.asInstanceOf[js.Any])
       
@@ -238,7 +239,8 @@ object mod {
       __obj.asInstanceOf[VoronoiLink[T]]
     }
     
-    extension [Self <: VoronoiLink[?], T](x: Self & VoronoiLink[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoronoiLink[?], T] (val x: Self & VoronoiLink[T]) extends AnyVal {
       
       inline def setSource(value: T): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       

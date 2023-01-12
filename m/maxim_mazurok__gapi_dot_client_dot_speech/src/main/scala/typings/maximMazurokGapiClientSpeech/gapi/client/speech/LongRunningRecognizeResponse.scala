@@ -25,7 +25,8 @@ object LongRunningRecognizeResponse {
     __obj.asInstanceOf[LongRunningRecognizeResponse]
   }
   
-  extension [Self <: LongRunningRecognizeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LongRunningRecognizeResponse] (val x: Self) extends AnyVal {
     
     inline def setOutputConfig(value: TranscriptOutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
     

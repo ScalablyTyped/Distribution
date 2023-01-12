@@ -21,7 +21,8 @@ object PayeeTransaction {
     __obj.asInstanceOf[PayeeTransaction]
   }
   
-  extension [Self <: PayeeTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayeeTransaction] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

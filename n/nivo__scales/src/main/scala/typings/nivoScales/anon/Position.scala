@@ -18,7 +18,8 @@ object Position {
     __obj.asInstanceOf[Position[D]]
   }
   
-  extension [Self <: Position[?], D /* <: SerieDatum */](x: Self & Position[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Position[?], D /* <: SerieDatum */] (val x: Self & Position[D]) extends AnyVal {
     
     inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

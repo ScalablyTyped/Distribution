@@ -26,7 +26,8 @@ object Core {
       __obj.asInstanceOf[AppListEntry]
     }
     
-    extension [Self <: AppListEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppListEntry] (val x: Self) extends AnyVal {
       
       inline def setDisplayInfo(value: AppDisplayInfo): Self = StObject.set(x, "displayInfo", value.asInstanceOf[js.Any])
       

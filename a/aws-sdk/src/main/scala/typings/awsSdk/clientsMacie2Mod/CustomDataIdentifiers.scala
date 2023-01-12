@@ -23,7 +23,8 @@ object CustomDataIdentifiers {
     __obj.asInstanceOf[CustomDataIdentifiers]
   }
   
-  extension [Self <: CustomDataIdentifiers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDataIdentifiers] (val x: Self) extends AnyVal {
     
     inline def setDetections(value: CustomDetections): Self = StObject.set(x, "detections", value.asInstanceOf[js.Any])
     

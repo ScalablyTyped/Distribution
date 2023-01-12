@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[EOL]
     }
     
-    extension [Self <: EOL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EOL] (val x: Self) extends AnyVal {
       
       inline def setEOL(value: String): Self = StObject.set(x, "EOL", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object anon {
       __obj.asInstanceOf[FinalEOL]
     }
     
-    extension [Self <: FinalEOL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FinalEOL] (val x: Self) extends AnyVal {
       
       inline def setEOL(value: String): Self = StObject.set(x, "EOL", value.asInstanceOf[js.Any])
       

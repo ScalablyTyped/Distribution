@@ -16,7 +16,8 @@ object AdWordsEntity {
     __obj.asInstanceOf[AdWordsEntity]
   }
   
-  extension [Self <: AdWordsEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdWordsEntity] (val x: Self) extends AnyVal {
     
     inline def setGetEntityType(value: () => String): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
     

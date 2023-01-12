@@ -56,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -330,7 +331,8 @@ object anon {
       __obj.asInstanceOf[TextPropschildrenReactNod]
     }
     
-    extension [Self <: TextPropschildrenReactNod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextPropschildrenReactNod] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -924,7 +926,8 @@ object anon {
       __obj.asInstanceOf[ViewPropschildrenReactNod]
     }
     
-    extension [Self <: ViewPropschildrenReactNod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewPropschildrenReactNod] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

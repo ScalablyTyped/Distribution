@@ -25,7 +25,8 @@ object DDMM {
     __obj.asInstanceOf[DDMM]
   }
   
-  extension [Self <: DDMM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DDMM] (val x: Self) extends AnyVal {
     
     inline def setDDMM(value: Double): Self = StObject.set(x, "DDMM", value.asInstanceOf[js.Any])
     

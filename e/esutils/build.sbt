@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "esutils"
-version := "2.0-dt-20211202Z-3c51fd"
+version := "2.0-dt-20211202Z-f87992"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

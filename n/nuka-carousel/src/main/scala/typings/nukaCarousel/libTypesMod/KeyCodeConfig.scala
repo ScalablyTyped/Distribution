@@ -23,7 +23,8 @@ object KeyCodeConfig {
     __obj.asInstanceOf[KeyCodeConfig]
   }
   
-  extension [Self <: KeyCodeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyCodeConfig] (val x: Self) extends AnyVal {
     
     inline def setFirstSlide(value: js.Array[Double]): Self = StObject.set(x, "firstSlide", value.asInstanceOf[js.Any])
     

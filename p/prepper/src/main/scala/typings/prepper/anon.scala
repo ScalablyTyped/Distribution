@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Exclude]
     }
     
-    extension [Self <: Exclude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exclude] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Invert]
     }
     
-    extension [Self <: Invert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invert] (val x: Self) extends AnyVal {
       
       inline def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
       
@@ -104,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Level]
     }
     
-    extension [Self <: Level](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
       
       inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -129,7 +133,8 @@ object anon {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }

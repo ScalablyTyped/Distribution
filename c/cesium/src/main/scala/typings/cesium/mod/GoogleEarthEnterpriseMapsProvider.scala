@@ -273,7 +273,8 @@ object GoogleEarthEnterpriseMapsProvider {
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    extension [Self <: ConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       

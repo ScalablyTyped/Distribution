@@ -16,7 +16,8 @@ object WorkloadMetadataConfig {
     __obj.asInstanceOf[WorkloadMetadataConfig]
   }
   
-  extension [Self <: WorkloadMetadataConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkloadMetadataConfig] (val x: Self) extends AnyVal {
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

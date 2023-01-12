@@ -33,7 +33,8 @@ object ASPxClientGridViewBatchEditRowRecoveringEventArgs {
     __obj.asInstanceOf[ASPxClientGridViewBatchEditRowRecoveringEventArgs]
   }
   
-  extension [Self <: ASPxClientGridViewBatchEditRowRecoveringEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGridViewBatchEditRowRecoveringEventArgs] (val x: Self) extends AnyVal {
     
     inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object SubstancePolymerMonomerSet {
     __obj.asInstanceOf[SubstancePolymerMonomerSet]
   }
   
-  extension [Self <: SubstancePolymerMonomerSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstancePolymerMonomerSet] (val x: Self) extends AnyVal {
     
     inline def setRatioType(value: CodeableConcept): Self = StObject.set(x, "ratioType", value.asInstanceOf[js.Any])
     

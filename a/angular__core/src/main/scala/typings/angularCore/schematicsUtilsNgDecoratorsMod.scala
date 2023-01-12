@@ -42,7 +42,8 @@ object schematicsUtilsNgDecoratorsMod {
       __obj.asInstanceOf[NgDecorator]
     }
     
-    extension [Self <: NgDecorator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgDecorator] (val x: Self) extends AnyVal {
       
       inline def setImportNode(value: ImportDeclaration): Self = StObject.set(x, "importNode", value.asInstanceOf[js.Any])
       

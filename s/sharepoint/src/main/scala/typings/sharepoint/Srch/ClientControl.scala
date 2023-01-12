@@ -151,7 +151,8 @@ object ClientControl {
     __obj.asInstanceOf[ClientControl]
   }
   
-  extension [Self <: ClientControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientControl] (val x: Self) extends AnyVal {
     
     inline def setAlternateRenderContext(value: Any): Self = StObject.set(x, "alternateRenderContext", value.asInstanceOf[js.Any])
     

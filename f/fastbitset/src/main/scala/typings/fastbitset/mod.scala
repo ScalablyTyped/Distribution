@@ -273,7 +273,8 @@ object mod {
       __obj.asInstanceOf[FastBitSet]
     }
     
-    extension [Self <: FastBitSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastBitSet] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Double => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

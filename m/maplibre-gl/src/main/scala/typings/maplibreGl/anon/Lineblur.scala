@@ -51,7 +51,8 @@ object Lineblur {
     __obj.asInstanceOf[Lineblur]
   }
   
-  extension [Self <: Lineblur](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lineblur] (val x: Self) extends AnyVal {
     
     inline def `setLine-blur`(value: DataDrivenPropertyValueSpecification[Double]): Self = StObject.set(x, "line-blur", value.asInstanceOf[js.Any])
     

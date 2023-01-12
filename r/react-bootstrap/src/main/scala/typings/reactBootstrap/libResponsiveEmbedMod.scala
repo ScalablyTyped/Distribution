@@ -32,7 +32,8 @@ object libResponsiveEmbedMod {
       __obj.asInstanceOf[ResponsiveEmbedProps]
     }
     
-    extension [Self <: ResponsiveEmbedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveEmbedProps] (val x: Self) extends AnyVal {
       
       inline def setA16by9(value: Boolean): Self = StObject.set(x, "a16by9", value.asInstanceOf[js.Any])
       

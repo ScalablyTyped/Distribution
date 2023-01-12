@@ -23,7 +23,8 @@ object ListCrlsResponse {
     __obj.asInstanceOf[ListCrlsResponse]
   }
   
-  extension [Self <: ListCrlsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCrlsResponse] (val x: Self) extends AnyVal {
     
     inline def setCrls(value: CrlDetails): Self = StObject.set(x, "crls", value.asInstanceOf[js.Any])
     

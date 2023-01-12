@@ -22,7 +22,8 @@ object libHeytingAlgebraMod {
       __obj.asInstanceOf[HeytingAlgebra[A]]
     }
     
-    extension [Self <: HeytingAlgebra[?], A](x: Self & HeytingAlgebra[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeytingAlgebra[?], A] (val x: Self & HeytingAlgebra[A]) extends AnyVal {
       
       inline def setImplies(value: (A, A) => A): Self = StObject.set(x, "implies", js.Any.fromFunction2(value))
       

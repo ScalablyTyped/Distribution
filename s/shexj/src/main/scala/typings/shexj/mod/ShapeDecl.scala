@@ -41,7 +41,8 @@ object ShapeDecl {
     __obj.asInstanceOf[ShapeDecl]
   }
   
-  extension [Self <: ShapeDecl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeDecl] (val x: Self) extends AnyVal {
     
     inline def setAbstract(value: BOOL): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     

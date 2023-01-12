@@ -56,7 +56,8 @@ object IgMapBackgroundContent {
     __obj.asInstanceOf[IgMapBackgroundContent]
   }
   
-  extension [Self <: IgMapBackgroundContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgMapBackgroundContent] (val x: Self) extends AnyVal {
     
     inline def setBingUrl(value: String): Self = StObject.set(x, "bingUrl", value.asInstanceOf[js.Any])
     

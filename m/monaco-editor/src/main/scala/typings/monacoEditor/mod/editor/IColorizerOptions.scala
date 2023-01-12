@@ -15,7 +15,8 @@ object IColorizerOptions {
     __obj.asInstanceOf[IColorizerOptions]
   }
   
-  extension [Self <: IColorizerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColorizerOptions] (val x: Self) extends AnyVal {
     
     inline def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
     

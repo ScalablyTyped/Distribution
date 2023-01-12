@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[PassKanji]
     }
     
-    extension [Self <: PassKanji](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PassKanji] (val x: Self) extends AnyVal {
       
       inline def setPassKanji(value: Boolean): Self = StObject.set(x, "passKanji", value.asInstanceOf[js.Any])
       

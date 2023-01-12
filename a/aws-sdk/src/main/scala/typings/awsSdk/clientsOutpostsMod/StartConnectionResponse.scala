@@ -23,7 +23,8 @@ object StartConnectionResponse {
     __obj.asInstanceOf[StartConnectionResponse]
   }
   
-  extension [Self <: StartConnectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartConnectionResponse] (val x: Self) extends AnyVal {
     
     inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
     

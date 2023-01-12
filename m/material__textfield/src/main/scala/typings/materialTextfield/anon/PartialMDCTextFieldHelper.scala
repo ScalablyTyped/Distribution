@@ -28,7 +28,8 @@ object PartialMDCTextFieldHelper {
     __obj.asInstanceOf[PartialMDCTextFieldHelper]
   }
   
-  extension [Self <: PartialMDCTextFieldHelper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMDCTextFieldHelper] (val x: Self) extends AnyVal {
     
     inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
     

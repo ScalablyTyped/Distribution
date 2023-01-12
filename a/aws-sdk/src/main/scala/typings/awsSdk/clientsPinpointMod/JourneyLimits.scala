@@ -33,7 +33,8 @@ object JourneyLimits {
     __obj.asInstanceOf[JourneyLimits]
   }
   
-  extension [Self <: JourneyLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JourneyLimits] (val x: Self) extends AnyVal {
     
     inline def setDailyCap(value: integer): Self = StObject.set(x, "DailyCap", value.asInstanceOf[js.Any])
     

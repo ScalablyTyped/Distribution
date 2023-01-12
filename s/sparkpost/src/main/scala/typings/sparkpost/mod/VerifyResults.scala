@@ -32,7 +32,8 @@ object VerifyResults {
     __obj.asInstanceOf[VerifyResults]
   }
   
-  extension [Self <: VerifyResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyResults] (val x: Self) extends AnyVal {
     
     inline def setDns(value: Dkimrecord): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     

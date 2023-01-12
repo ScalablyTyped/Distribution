@@ -28,7 +28,8 @@ object mod {
         __obj.asInstanceOf[Genre]
       }
       
-      extension [Self <: Genre](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Genre] (val x: Self) extends AnyVal {
         
         inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -55,7 +56,8 @@ object mod {
         __obj.asInstanceOf[IMovieDB]
       }
       
-      extension [Self <: IMovieDB](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IMovieDB] (val x: Self) extends AnyVal {
         
         inline def setMovieImages(value: (InfoOptions, js.Function2[/* err */ Any, /* images */ MovieImages, Unit]) => Unit): Self = StObject.set(x, "movieImages", js.Any.fromFunction2(value))
         
@@ -78,7 +80,8 @@ object mod {
         __obj.asInstanceOf[InfoOptions]
       }
       
-      extension [Self <: InfoOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InfoOptions] (val x: Self) extends AnyVal {
         
         inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -167,7 +170,8 @@ object mod {
         __obj.asInstanceOf[Movie]
       }
       
-      extension [Self <: Movie](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Movie] (val x: Self) extends AnyVal {
         
         inline def setAdult(value: Boolean): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
         
@@ -256,7 +260,8 @@ object mod {
         __obj.asInstanceOf[MovieImage]
       }
       
-      extension [Self <: MovieImage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MovieImage] (val x: Self) extends AnyVal {
         
         inline def setAspect_ratio(value: Double): Self = StObject.set(x, "aspect_ratio", value.asInstanceOf[js.Any])
         
@@ -289,7 +294,8 @@ object mod {
         __obj.asInstanceOf[MovieImages]
       }
       
-      extension [Self <: MovieImages](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MovieImages] (val x: Self) extends AnyVal {
         
         inline def setBackdrops(value: js.Array[MovieImage]): Self = StObject.set(x, "backdrops", value.asInstanceOf[js.Any])
         
@@ -316,7 +322,8 @@ object mod {
         __obj.asInstanceOf[ProductionCompany]
       }
       
-      extension [Self <: ProductionCompany](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductionCompany] (val x: Self) extends AnyVal {
         
         inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -337,7 +344,8 @@ object mod {
         __obj.asInstanceOf[ProductionCountry]
       }
       
-      extension [Self <: ProductionCountry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductionCountry] (val x: Self) extends AnyVal {
         
         inline def setIso_3166_1(value: Double): Self = StObject.set(x, "iso_3166_1", value.asInstanceOf[js.Any])
         
@@ -358,7 +366,8 @@ object mod {
         __obj.asInstanceOf[SearchOptions]
       }
       
-      extension [Self <: SearchOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
         
         inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
         
@@ -408,7 +417,8 @@ object mod {
         __obj.asInstanceOf[SearchResult]
       }
       
-      extension [Self <: SearchResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
         
         inline def setAdult(value: Boolean): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
         
@@ -449,7 +459,8 @@ object mod {
         __obj.asInstanceOf[SearchResults]
       }
       
-      extension [Self <: SearchResults](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchResults] (val x: Self) extends AnyVal {
         
         inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
         
@@ -476,7 +487,8 @@ object mod {
         __obj.asInstanceOf[SpokenLanguage]
       }
       
-      extension [Self <: SpokenLanguage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SpokenLanguage] (val x: Self) extends AnyVal {
         
         inline def setIso_639_1(value: Double): Self = StObject.set(x, "iso_639_1", value.asInstanceOf[js.Any])
         

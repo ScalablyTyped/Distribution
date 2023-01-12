@@ -19,7 +19,8 @@ object ListBigQueryExportsResponse {
     __obj.asInstanceOf[ListBigQueryExportsResponse]
   }
   
-  extension [Self <: ListBigQueryExportsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBigQueryExportsResponse] (val x: Self) extends AnyVal {
     
     inline def setBigQueryExports(value: js.Array[GoogleCloudSecuritycenterV1BigQueryExport]): Self = StObject.set(x, "bigQueryExports", value.asInstanceOf[js.Any])
     

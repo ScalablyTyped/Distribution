@@ -243,7 +243,8 @@ object IgQRCodeBarcode {
     __obj.asInstanceOf[IgQRCodeBarcode]
   }
   
-  extension [Self <: IgQRCodeBarcode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgQRCodeBarcode] (val x: Self) extends AnyVal {
     
     inline def setApplicationIndicator(value: String): Self = StObject.set(x, "applicationIndicator", value.asInstanceOf[js.Any])
     

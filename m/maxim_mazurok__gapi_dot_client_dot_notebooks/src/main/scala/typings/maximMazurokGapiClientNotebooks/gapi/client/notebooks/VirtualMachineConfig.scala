@@ -97,7 +97,8 @@ object VirtualMachineConfig {
     __obj.asInstanceOf[VirtualMachineConfig]
   }
   
-  extension [Self <: VirtualMachineConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualMachineConfig] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorConfig(value: RuntimeAcceleratorConfig): Self = StObject.set(x, "acceleratorConfig", value.asInstanceOf[js.Any])
     

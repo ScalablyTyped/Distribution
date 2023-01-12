@@ -46,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Activationsentences]
     }
     
-    extension [Self <: Activationsentences](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Activationsentences] (val x: Self) extends AnyVal {
       
       inline def setActivation_sentences(value: Any): Self = StObject.set(x, "activation_sentences", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Connection]
     }
     
-    extension [Self <: Connection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -125,7 +128,8 @@ object anon {
       __obj.asInstanceOf[Connections]
     }
     
-    extension [Self <: Connections](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connections] (val x: Self) extends AnyVal {
       
       inline def setConnections(value: Double): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       
@@ -146,7 +150,8 @@ object anon {
       __obj.asInstanceOf[Test]
     }
     
-    extension [Self <: Test](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Test] (val x: Self) extends AnyVal {
       
       inline def setTest(value: Any): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       

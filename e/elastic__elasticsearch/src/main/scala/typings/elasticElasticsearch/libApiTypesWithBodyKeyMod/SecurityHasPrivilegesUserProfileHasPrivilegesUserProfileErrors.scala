@@ -18,7 +18,8 @@ object SecurityHasPrivilegesUserProfileHasPrivilegesUserProfileErrors {
     __obj.asInstanceOf[SecurityHasPrivilegesUserProfileHasPrivilegesUserProfileErrors]
   }
   
-  extension [Self <: SecurityHasPrivilegesUserProfileHasPrivilegesUserProfileErrors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityHasPrivilegesUserProfileHasPrivilegesUserProfileErrors] (val x: Self) extends AnyVal {
     
     inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

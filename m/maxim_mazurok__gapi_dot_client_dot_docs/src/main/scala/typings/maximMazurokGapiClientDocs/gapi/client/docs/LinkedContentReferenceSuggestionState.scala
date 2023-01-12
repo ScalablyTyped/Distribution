@@ -16,7 +16,8 @@ object LinkedContentReferenceSuggestionState {
     __obj.asInstanceOf[LinkedContentReferenceSuggestionState]
   }
   
-  extension [Self <: LinkedContentReferenceSuggestionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedContentReferenceSuggestionState] (val x: Self) extends AnyVal {
     
     inline def setSheetsChartReferenceSuggestionState(value: SheetsChartReferenceSuggestionState): Self = StObject.set(x, "sheetsChartReferenceSuggestionState", value.asInstanceOf[js.Any])
     

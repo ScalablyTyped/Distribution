@@ -41,7 +41,8 @@ object PartialChromePickerStyles {
     __obj.asInstanceOf[PartialChromePickerStyles]
   }
   
-  extension [Self <: PartialChromePickerStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialChromePickerStyles] (val x: Self) extends AnyVal {
     
     inline def setActive(value: CSSProperties): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

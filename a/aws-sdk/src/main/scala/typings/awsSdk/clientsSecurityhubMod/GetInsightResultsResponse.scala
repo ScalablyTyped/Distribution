@@ -18,7 +18,8 @@ object GetInsightResultsResponse {
     __obj.asInstanceOf[GetInsightResultsResponse]
   }
   
-  extension [Self <: GetInsightResultsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInsightResultsResponse] (val x: Self) extends AnyVal {
     
     inline def setInsightResults(value: InsightResults): Self = StObject.set(x, "InsightResults", value.asInstanceOf[js.Any])
   }

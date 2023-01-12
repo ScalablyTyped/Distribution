@@ -28,7 +28,8 @@ object DeleteRegistryResponse {
     __obj.asInstanceOf[DeleteRegistryResponse]
   }
   
-  extension [Self <: DeleteRegistryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRegistryResponse] (val x: Self) extends AnyVal {
     
     inline def setRegistryArn(value: GlueResourceArn): Self = StObject.set(x, "RegistryArn", value.asInstanceOf[js.Any])
     

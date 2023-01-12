@@ -33,7 +33,8 @@ object TransformOutput {
     __obj.asInstanceOf[TransformOutput]
   }
   
-  extension [Self <: TransformOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformOutput] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: Accept): Self = StObject.set(x, "Accept", value.asInstanceOf[js.Any])
     

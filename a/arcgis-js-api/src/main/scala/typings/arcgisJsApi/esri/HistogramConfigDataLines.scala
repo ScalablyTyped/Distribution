@@ -27,7 +27,8 @@ object HistogramConfigDataLines {
     __obj.asInstanceOf[HistogramConfigDataLines]
   }
   
-  extension [Self <: HistogramConfigDataLines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistogramConfigDataLines] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String | Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object LabelLineStyle {
     __obj.asInstanceOf[LabelLineStyle]
   }
   
-  extension [Self <: LabelLineStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelLineStyle] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: FontFamily): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

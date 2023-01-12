@@ -17,7 +17,8 @@ object UpdateCustomerShippingAddressRequest {
     __obj.asInstanceOf[UpdateCustomerShippingAddressRequest]
   }
   
-  extension [Self <: UpdateCustomerShippingAddressRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCustomerShippingAddressRequest] (val x: Self) extends AnyVal {
     
     inline def setUpdateCustomerShippingAddressRequest(value: typings.authorizenet.mod.APIContracts.UpdateCustomerShippingAddressRequest): Self = StObject.set(x, "updateCustomerShippingAddressRequest", value.asInstanceOf[js.Any])
   }

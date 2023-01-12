@@ -35,7 +35,8 @@ object IWebXRControllerPhysicsOptions {
     __obj.asInstanceOf[IWebXRControllerPhysicsOptions]
   }
   
-  extension [Self <: IWebXRControllerPhysicsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRControllerPhysicsOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableHeadsetImpostor(value: Boolean): Self = StObject.set(x, "enableHeadsetImpostor", value.asInstanceOf[js.Any])
     

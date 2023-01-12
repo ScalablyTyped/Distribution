@@ -17,7 +17,8 @@ object FlowNodeBase {
     __obj.asInstanceOf[FlowNodeBase]
   }
   
-  extension [Self <: FlowNodeBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowNodeBase] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: FlowFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object XCellRangeReferrer {
     __obj.asInstanceOf[XCellRangeReferrer]
   }
   
-  extension [Self <: XCellRangeReferrer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCellRangeReferrer] (val x: Self) extends AnyVal {
     
     inline def setGetReferredCells(value: () => XCellRange): Self = StObject.set(x, "getReferredCells", js.Any.fromFunction0(value))
     

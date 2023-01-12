@@ -25,7 +25,8 @@ object GoogleCloudHealthcareV1DicomBigQueryDestination {
     __obj.asInstanceOf[GoogleCloudHealthcareV1DicomBigQueryDestination]
   }
   
-  extension [Self <: GoogleCloudHealthcareV1DicomBigQueryDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudHealthcareV1DicomBigQueryDestination] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

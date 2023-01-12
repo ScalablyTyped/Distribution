@@ -18,7 +18,8 @@ object opensshAuthAgentChannelRequest {
     __obj.asInstanceOf[opensshAuthAgentChannelRequest]
   }
   
-  extension [Self <: opensshAuthAgentChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: opensshAuthAgentChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     

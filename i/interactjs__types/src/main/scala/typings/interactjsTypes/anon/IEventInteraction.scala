@@ -22,7 +22,8 @@ object IEventInteraction {
     __obj.asInstanceOf[IEventInteraction]
   }
   
-  extension [Self <: IEventInteraction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEventInteraction] (val x: Self) extends AnyVal {
     
     inline def setIEvent(value: InteractEvent[Any, EventPhase]): Self = StObject.set(x, "iEvent", value.asInstanceOf[js.Any])
     

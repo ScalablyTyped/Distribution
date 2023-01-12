@@ -226,7 +226,8 @@ object XNode {
     __obj.asInstanceOf[XNode]
   }
   
-  extension [Self <: XNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNode] (val x: Self) extends AnyVal {
     
     inline def setAppendChild(value: XNode => XNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     

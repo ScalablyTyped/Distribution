@@ -29,7 +29,8 @@ object pieDistancenumberundefine {
     __obj.asInstanceOf[pieDistancenumberundefine]
   }
   
-  extension [Self <: pieDistancenumberundefine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pieDistancenumberundefine] (val x: Self) extends AnyVal {
     
     inline def setFormat(
       value: label | value | percentage | `label-value1` | `label-value2` | `label-percentage1` | `label-percentage2`

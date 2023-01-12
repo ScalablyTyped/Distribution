@@ -17,7 +17,8 @@ object TextTrackSettingsOptions {
     __obj.asInstanceOf[TextTrackSettingsOptions]
   }
   
-  extension [Self <: TextTrackSettingsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextTrackSettingsOptions] (val x: Self) extends AnyVal {
     
     inline def setPersistTextTrackSettings(value: Boolean): Self = StObject.set(x, "persistTextTrackSettings", value.asInstanceOf[js.Any])
     

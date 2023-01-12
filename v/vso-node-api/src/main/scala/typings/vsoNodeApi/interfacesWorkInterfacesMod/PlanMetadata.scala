@@ -39,7 +39,8 @@ object PlanMetadata {
     __obj.asInstanceOf[PlanMetadata]
   }
   
-  extension [Self <: PlanMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreatedByIdentity(value: IdentityRef): Self = StObject.set(x, "createdByIdentity", value.asInstanceOf[js.Any])
     

@@ -118,7 +118,8 @@ object buildSrcChannelzMod {
       __obj.asInstanceOf[ChannelInfo]
     }
     
-    extension [Self <: ChannelInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelInfo] (val x: Self) extends AnyVal {
       
       inline def setCallTracker(value: ChannelzCallTracker): Self = StObject.set(x, "callTracker", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object buildSrcChannelzMod {
       __obj.asInstanceOf[ChannelRef]
     }
     
-    extension [Self <: ChannelRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelRef] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object buildSrcChannelzMod {
       __obj.asInstanceOf[ChannelzChildren]
     }
     
-    extension [Self <: ChannelzChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelzChildren] (val x: Self) extends AnyVal {
       
       inline def setChannels(value: js.Array[ChannelRef]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
@@ -210,7 +213,8 @@ object buildSrcChannelzMod {
       __obj.asInstanceOf[ServerInfo]
     }
     
-    extension [Self <: ServerInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerInfo] (val x: Self) extends AnyVal {
       
       inline def setCallTracker(value: ChannelzCallTracker): Self = StObject.set(x, "callTracker", value.asInstanceOf[js.Any])
       
@@ -235,7 +239,8 @@ object buildSrcChannelzMod {
       __obj.asInstanceOf[ServerRef]
     }
     
-    extension [Self <: ServerRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerRef] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -291,7 +296,8 @@ object buildSrcChannelzMod {
       __obj.asInstanceOf[SocketInfo]
     }
     
-    extension [Self <: SocketInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketInfo] (val x: Self) extends AnyVal {
       
       inline def setKeepAlivesSent(value: Double): Self = StObject.set(x, "keepAlivesSent", value.asInstanceOf[js.Any])
       
@@ -362,7 +368,8 @@ object buildSrcChannelzMod {
       __obj.asInstanceOf[SocketRef]
     }
     
-    extension [Self <: SocketRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketRef] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -389,7 +396,8 @@ object buildSrcChannelzMod {
       __obj.asInstanceOf[SubchannelRef]
     }
     
-    extension [Self <: SubchannelRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubchannelRef] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -416,7 +424,8 @@ object buildSrcChannelzMod {
       __obj.asInstanceOf[TlsInfo]
     }
     
-    extension [Self <: TlsInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TlsInfo] (val x: Self) extends AnyVal {
       
       inline def setCipherSuiteOtherName(value: String): Self = StObject.set(x, "cipherSuiteOtherName", value.asInstanceOf[js.Any])
       
@@ -455,7 +464,8 @@ object buildSrcChannelzMod {
       __obj.asInstanceOf[TraceEvent]
     }
     
-    extension [Self <: TraceEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraceEvent] (val x: Self) extends AnyVal {
       
       inline def setChildChannel(value: ChannelRef): Self = StObject.set(x, "childChannel", value.asInstanceOf[js.Any])
       

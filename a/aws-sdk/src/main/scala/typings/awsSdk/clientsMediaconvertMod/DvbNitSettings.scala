@@ -28,7 +28,8 @@ object DvbNitSettings {
     __obj.asInstanceOf[DvbNitSettings]
   }
   
-  extension [Self <: DvbNitSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DvbNitSettings] (val x: Self) extends AnyVal {
     
     inline def setNetworkId(value: integerMin0Max65535): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     

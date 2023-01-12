@@ -112,7 +112,8 @@ object mod {
       __obj.asInstanceOf[FixInfo]
     }
     
-    extension [Self <: FixInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixInfo] (val x: Self) extends AnyVal {
       
       inline def setDeleteCount(value: Double): Self = StObject.set(x, "deleteCount", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object mod {
       __obj.asInstanceOf[LintError]
     }
     
-    extension [Self <: LintError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LintError] (val x: Self) extends AnyVal {
       
       inline def setErrorContext(value: String): Self = StObject.set(x, "errorContext", value.asInstanceOf[js.Any])
       
@@ -332,7 +334,8 @@ object mod {
       __obj.asInstanceOf[MarkdownItToken]
     }
     
-    extension [Self <: MarkdownItToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkdownItToken] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: js.Array[js.Array[String]]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -439,7 +442,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Configuration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -562,7 +566,8 @@ object mod {
       __obj.asInstanceOf[Rule]
     }
     
-    extension [Self <: Rule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
       
       inline def setAsynchronous(value: Boolean): Self = StObject.set(x, "asynchronous", value.asInstanceOf[js.Any])
       
@@ -633,7 +638,8 @@ object mod {
       __obj.asInstanceOf[RuleOnErrorFixInfo]
     }
     
-    extension [Self <: RuleOnErrorFixInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleOnErrorFixInfo] (val x: Self) extends AnyVal {
       
       inline def setDeleteCount(value: Double): Self = StObject.set(x, "deleteCount", value.asInstanceOf[js.Any])
       
@@ -690,7 +696,8 @@ object mod {
       __obj.asInstanceOf[RuleOnErrorInfo]
     }
     
-    extension [Self <: RuleOnErrorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleOnErrorInfo] (val x: Self) extends AnyVal {
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -757,7 +764,8 @@ object mod {
       __obj.asInstanceOf[RuleParams]
     }
     
-    extension [Self <: RuleParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleParams] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: RuleConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

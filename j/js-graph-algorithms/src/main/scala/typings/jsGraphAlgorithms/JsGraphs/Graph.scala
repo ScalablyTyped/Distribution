@@ -38,7 +38,8 @@ object Graph {
     __obj.asInstanceOf[Graph]
   }
   
-  extension [Self <: Graph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Graph] (val x: Self) extends AnyVal {
     
     inline def setAddEdge(value: (Double, Double) => Unit): Self = StObject.set(x, "addEdge", js.Any.fromFunction2(value))
     

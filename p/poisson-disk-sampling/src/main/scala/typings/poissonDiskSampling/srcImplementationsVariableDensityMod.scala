@@ -80,7 +80,8 @@ object srcImplementationsVariableDensityMod {
       __obj.asInstanceOf[VariableDensityPDS]
     }
     
-    extension [Self <: VariableDensityPDS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariableDensityPDS] (val x: Self) extends AnyVal {
       
       inline def setAddPoint(value: js.Array[Double] => js.Array[Double] | Null): Self = StObject.set(x, "addPoint", js.Any.fromFunction1(value))
       

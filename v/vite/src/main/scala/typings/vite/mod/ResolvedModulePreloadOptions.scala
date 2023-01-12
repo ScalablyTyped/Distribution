@@ -18,7 +18,8 @@ object ResolvedModulePreloadOptions {
     __obj.asInstanceOf[ResolvedModulePreloadOptions]
   }
   
-  extension [Self <: ResolvedModulePreloadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedModulePreloadOptions] (val x: Self) extends AnyVal {
     
     inline def setPolyfill(value: Boolean): Self = StObject.set(x, "polyfill", value.asInstanceOf[js.Any])
     

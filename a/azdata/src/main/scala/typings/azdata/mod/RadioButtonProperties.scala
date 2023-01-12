@@ -23,7 +23,8 @@ object RadioButtonProperties {
     __obj.asInstanceOf[RadioButtonProperties]
   }
   
-  extension [Self <: RadioButtonProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioButtonProperties] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

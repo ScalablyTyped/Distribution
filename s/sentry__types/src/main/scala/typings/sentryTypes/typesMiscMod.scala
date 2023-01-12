@@ -37,7 +37,8 @@ object typesMiscMod {
       __obj.asInstanceOf[ExtractedNodeRequestData]
     }
     
-    extension [Self <: ExtractedNodeRequestData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractedNodeRequestData] (val x: Self) extends AnyVal {
       
       inline def setCookies(value: StringDictionary[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object typesMiscMod {
       __obj.asInstanceOf[WorkerLocation]
     }
     
-    extension [Self <: WorkerLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerLocation] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

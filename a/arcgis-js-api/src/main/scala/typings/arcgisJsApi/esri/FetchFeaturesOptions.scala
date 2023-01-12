@@ -28,7 +28,8 @@ object FetchFeaturesOptions {
     __obj.asInstanceOf[FetchFeaturesOptions]
   }
   
-  extension [Self <: FetchFeaturesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchFeaturesOptions] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

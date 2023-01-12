@@ -57,7 +57,8 @@ object libCoreUserAgentCoreUserAgentCoreDelegateMod {
       __obj.asInstanceOf[UserAgentCoreDelegate]
     }
     
-    extension [Self <: UserAgentCoreDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgentCoreDelegate] (val x: Self) extends AnyVal {
       
       inline def setOnInvite(value: /* request */ IncomingInviteRequest => Unit): Self = StObject.set(x, "onInvite", js.Any.fromFunction1(value))
       

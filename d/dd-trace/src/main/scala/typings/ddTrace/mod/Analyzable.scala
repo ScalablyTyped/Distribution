@@ -21,7 +21,8 @@ object Analyzable {
     __obj.asInstanceOf[Analyzable]
   }
   
-  extension [Self <: Analyzable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Analyzable] (val x: Self) extends AnyVal {
     
     inline def setMeasured(value: Boolean | StringDictionary[Boolean]): Self = StObject.set(x, "measured", value.asInstanceOf[js.Any])
     

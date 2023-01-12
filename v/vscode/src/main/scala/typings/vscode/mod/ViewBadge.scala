@@ -23,7 +23,8 @@ object ViewBadge {
     __obj.asInstanceOf[ViewBadge]
   }
   
-  extension [Self <: ViewBadge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewBadge] (val x: Self) extends AnyVal {
     
     inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     

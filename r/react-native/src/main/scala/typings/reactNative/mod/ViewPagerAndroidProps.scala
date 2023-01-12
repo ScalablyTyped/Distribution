@@ -78,7 +78,8 @@ object ViewPagerAndroidProps {
     __obj.asInstanceOf[ViewPagerAndroidProps]
   }
   
-  extension [Self <: ViewPagerAndroidProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewPagerAndroidProps] (val x: Self) extends AnyVal {
     
     inline def setInitialPage(value: Double): Self = StObject.set(x, "initialPage", value.asInstanceOf[js.Any])
     

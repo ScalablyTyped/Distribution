@@ -25,7 +25,8 @@ object ColumnTitleProps {
     __obj.asInstanceOf[ColumnTitleProps[RecordType]]
   }
   
-  extension [Self <: ColumnTitleProps[?], RecordType](x: Self & ColumnTitleProps[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnTitleProps[?], RecordType] (val x: Self & ColumnTitleProps[RecordType]) extends AnyVal {
     
     inline def setFilters(value: Record[String, FilterValue]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

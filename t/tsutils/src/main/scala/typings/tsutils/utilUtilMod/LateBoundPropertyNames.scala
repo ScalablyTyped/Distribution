@@ -18,7 +18,8 @@ object LateBoundPropertyNames {
     __obj.asInstanceOf[LateBoundPropertyNames]
   }
   
-  extension [Self <: LateBoundPropertyNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LateBoundPropertyNames] (val x: Self) extends AnyVal {
     
     inline def setKnown(value: Boolean): Self = StObject.set(x, "known", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object IEventCollision {
     __obj.asInstanceOf[IEventCollision[T]]
   }
   
-  extension [Self <: IEventCollision[?], T](x: Self & IEventCollision[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEventCollision[?], T] (val x: Self & IEventCollision[T]) extends AnyVal {
     
     inline def setPairs(value: js.Array[Pair]): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object MapEventListener {
     __obj.asInstanceOf[MapEventListener]
   }
   
-  extension [Self <: MapEventListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapEventListener] (val x: Self) extends AnyVal {
     
     inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     

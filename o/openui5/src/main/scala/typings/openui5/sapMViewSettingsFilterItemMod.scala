@@ -391,7 +391,8 @@ object sapMViewSettingsFilterItemMod {
       __obj.asInstanceOf[ViewSettingsFilterItemSettings]
     }
     
-    extension [Self <: ViewSettingsFilterItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewSettingsFilterItemSettings] (val x: Self) extends AnyVal {
       
       inline def setFilterDetailItemsAggregationChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "filterDetailItemsAggregationChange", js.Any.fromFunction1(value))
       

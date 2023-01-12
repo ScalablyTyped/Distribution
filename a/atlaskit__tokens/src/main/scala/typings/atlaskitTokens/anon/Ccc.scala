@@ -38,7 +38,8 @@ object Ccc {
     __obj.asInstanceOf[Ccc]
   }
   
-  extension [Self <: Ccc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ccc] (val x: Self) extends AnyVal {
     
     inline def setCcc(value: Component): Self = StObject.set(x, "ccc", value.asInstanceOf[js.Any])
     

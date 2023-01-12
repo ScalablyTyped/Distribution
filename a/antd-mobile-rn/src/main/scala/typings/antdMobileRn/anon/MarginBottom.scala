@@ -19,7 +19,8 @@ object MarginBottom {
     __obj.asInstanceOf[MarginBottom]
   }
   
-  extension [Self <: MarginBottom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarginBottom] (val x: Self) extends AnyVal {
     
     inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     

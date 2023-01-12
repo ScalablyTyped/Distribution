@@ -27,7 +27,8 @@ object TokenHandshake {
     __obj.asInstanceOf[TokenHandshake]
   }
   
-  extension [Self <: TokenHandshake](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenHandshake] (val x: Self) extends AnyVal {
     
     inline def setAuthData(value: TokenAuthData): Self = StObject.set(x, "authData", value.asInstanceOf[js.Any])
     

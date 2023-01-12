@@ -17,7 +17,8 @@ object Parameter {
     __obj.asInstanceOf[Parameter]
   }
   
-  extension [Self <: Parameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
     
     inline def setParameter(value: js.Array[NestedParameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     

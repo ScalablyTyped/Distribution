@@ -24,7 +24,8 @@ object RunnergroupsTotalcount {
     __obj.asInstanceOf[RunnergroupsTotalcount]
   }
   
-  extension [Self <: RunnergroupsTotalcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunnergroupsTotalcount] (val x: Self) extends AnyVal {
     
     inline def setRunner_groups(
       value: js.Array[

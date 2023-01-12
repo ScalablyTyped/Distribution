@@ -106,7 +106,8 @@ object SeriesColumnrangeOptions {
     __obj.asInstanceOf[SeriesColumnrangeOptions]
   }
   
-  extension [Self <: SeriesColumnrangeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesColumnrangeOptions] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: js.Array[

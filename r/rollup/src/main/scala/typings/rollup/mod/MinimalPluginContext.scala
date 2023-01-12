@@ -15,7 +15,8 @@ object MinimalPluginContext {
     __obj.asInstanceOf[MinimalPluginContext]
   }
   
-  extension [Self <: MinimalPluginContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinimalPluginContext] (val x: Self) extends AnyVal {
     
     inline def setMeta(value: PluginContextMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
   }

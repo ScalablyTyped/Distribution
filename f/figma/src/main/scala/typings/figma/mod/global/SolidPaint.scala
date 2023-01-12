@@ -27,7 +27,8 @@ object SolidPaint {
     __obj.asInstanceOf[SolidPaint]
   }
   
-  extension [Self <: SolidPaint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SolidPaint] (val x: Self) extends AnyVal {
     
     inline def setBlendMode(value: BlendMode): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     

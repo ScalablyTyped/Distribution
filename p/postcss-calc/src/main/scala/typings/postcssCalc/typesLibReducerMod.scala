@@ -38,7 +38,8 @@ object typesLibReducerMod {
       __obj.asInstanceOf[Collectible]
     }
     
-    extension [Self <: Collectible](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Collectible] (val x: Self) extends AnyVal {
       
       inline def setNode(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_parser.CalcNode */ Any

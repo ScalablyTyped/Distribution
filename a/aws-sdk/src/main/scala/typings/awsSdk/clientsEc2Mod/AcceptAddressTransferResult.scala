@@ -18,7 +18,8 @@ object AcceptAddressTransferResult {
     __obj.asInstanceOf[AcceptAddressTransferResult]
   }
   
-  extension [Self <: AcceptAddressTransferResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptAddressTransferResult] (val x: Self) extends AnyVal {
     
     inline def setAddressTransfer(value: AddressTransfer): Self = StObject.set(x, "AddressTransfer", value.asInstanceOf[js.Any])
     

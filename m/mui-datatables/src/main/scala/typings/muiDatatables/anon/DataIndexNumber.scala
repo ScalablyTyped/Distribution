@@ -15,7 +15,8 @@ object DataIndexNumber {
     __obj.asInstanceOf[DataIndexNumber]
   }
   
-  extension [Self <: DataIndexNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataIndexNumber] (val x: Self) extends AnyVal {
     
     inline def setDataIndex(value: Double): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
   }

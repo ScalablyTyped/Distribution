@@ -29,7 +29,8 @@ object CertificateErrorEvent {
     __obj.asInstanceOf[CertificateErrorEvent]
   }
   
-  extension [Self <: CertificateErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
     

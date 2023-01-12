@@ -44,7 +44,8 @@ object distTs3Dot9ModulesChannelMod {
       __obj.asInstanceOf[SubAPI]
     }
     
-    extension [Self <: SubAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubAPI] (val x: Self) extends AnyVal {
       
       inline def setCollapseAll(value: () => Unit): Self = StObject.set(x, "collapseAll", js.Any.fromFunction0(value))
       

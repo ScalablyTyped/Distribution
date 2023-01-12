@@ -17,7 +17,8 @@ object P2pTradeRequest {
     __obj.asInstanceOf[P2pTradeRequest]
   }
   
-  extension [Self <: P2pTradeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: P2pTradeRequest] (val x: Self) extends AnyVal {
     
     inline def setQuotesRequest(value: P2pQuotesRequest): Self = StObject.set(x, "quotesRequest", value.asInstanceOf[js.Any])
     

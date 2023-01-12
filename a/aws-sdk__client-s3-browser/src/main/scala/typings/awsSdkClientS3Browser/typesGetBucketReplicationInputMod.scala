@@ -79,7 +79,8 @@ object typesGetBucketReplicationInputMod {
       __obj.asInstanceOf[GetBucketReplicationInput]
     }
     
-    extension [Self <: GetBucketReplicationInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetBucketReplicationInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

@@ -226,7 +226,8 @@ object mod {
       __obj.asInstanceOf[Found[TState]]
     }
     
-    extension [Self <: Found[?], TState](x: Self & Found[TState]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Found[?], TState] (val x: Self & Found[TState]) extends AnyVal {
       
       inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       

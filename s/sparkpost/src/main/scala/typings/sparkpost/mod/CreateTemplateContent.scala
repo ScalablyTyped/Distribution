@@ -35,7 +35,8 @@ object CreateTemplateContent {
     __obj.asInstanceOf[CreateTemplateContent]
   }
   
-  extension [Self <: CreateTemplateContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTemplateContent] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: Address | String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

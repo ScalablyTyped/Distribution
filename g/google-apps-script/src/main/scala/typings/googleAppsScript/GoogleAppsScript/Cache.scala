@@ -74,7 +74,8 @@ object Cache {
       __obj.asInstanceOf[CacheService]
     }
     
-    extension [Self <: CacheService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheService] (val x: Self) extends AnyVal {
       
       inline def setGetDocumentCache(value: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null): Self = StObject.set(x, "getDocumentCache", js.Any.fromFunction0(value))
       

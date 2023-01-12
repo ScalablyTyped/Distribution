@@ -39,7 +39,8 @@ object Q2Color {
     __obj.asInstanceOf[Q2Color]
   }
   
-  extension [Self <: Q2Color](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Q2Color] (val x: Self) extends AnyVal {
     
     inline def setMedianSvgClassName(value: String): Self = StObject.set(x, "medianSvgClassName", value.asInstanceOf[js.Any])
     

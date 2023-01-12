@@ -39,7 +39,8 @@ object TemplatesAddRequest {
     __obj.asInstanceOf[TemplatesAddRequest]
   }
   
-  extension [Self <: TemplatesAddRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplatesAddRequest] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

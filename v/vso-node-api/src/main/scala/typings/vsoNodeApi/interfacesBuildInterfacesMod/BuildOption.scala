@@ -26,7 +26,8 @@ object BuildOption {
     __obj.asInstanceOf[BuildOption]
   }
   
-  extension [Self <: BuildOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildOption] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: BuildOptionDefinitionReference): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

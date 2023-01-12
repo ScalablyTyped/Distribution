@@ -47,7 +47,8 @@ object VirtualElementsAllowedBindings {
     __obj.asInstanceOf[VirtualElementsAllowedBindings]
   }
   
-  extension [Self <: VirtualElementsAllowedBindings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualElementsAllowedBindings] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: Boolean): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

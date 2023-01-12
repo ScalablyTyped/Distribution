@@ -18,7 +18,8 @@ object GenerateServiceLastAccessedDetailsResponse {
     __obj.asInstanceOf[GenerateServiceLastAccessedDetailsResponse]
   }
   
-  extension [Self <: GenerateServiceLastAccessedDetailsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateServiceLastAccessedDetailsResponse] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: jobIDType): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

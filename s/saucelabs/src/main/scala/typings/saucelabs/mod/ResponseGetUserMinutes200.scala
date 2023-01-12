@@ -20,7 +20,8 @@ object ResponseGetUserMinutes200 {
     __obj.asInstanceOf[ResponseGetUserMinutes200]
   }
   
-  extension [Self <: ResponseGetUserMinutes200](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseGetUserMinutes200] (val x: Self) extends AnyVal {
     
     inline def setAutomated(value: String): Self = StObject.set(x, "automated", value.asInstanceOf[js.Any])
     

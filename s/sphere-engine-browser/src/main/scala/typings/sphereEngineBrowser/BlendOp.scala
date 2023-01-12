@@ -18,7 +18,8 @@ object BlendOp {
     __obj.asInstanceOf[BlendOp]
   }
   
-  extension [Self <: BlendOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlendOp] (val x: Self) extends AnyVal {
     
     inline def set_workaround(value: Null): Self = StObject.set(x, "_workaround", value.asInstanceOf[js.Any])
   }

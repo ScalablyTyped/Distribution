@@ -18,7 +18,8 @@ object GetCurrentTimeResponse {
     __obj.asInstanceOf[GetCurrentTimeResponse]
   }
   
-  extension [Self <: GetCurrentTimeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCurrentTimeResponse] (val x: Self) extends AnyVal {
     
     inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
   }

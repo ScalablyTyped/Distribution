@@ -51,7 +51,8 @@ object dxCalendar {
       __obj.asInstanceOf[CellTemplateData]
     }
     
-    extension [Self <: CellTemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellTemplateData] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object dxCalendar {
       __obj.asInstanceOf[ComponentDisabledDate[T]]
     }
     
-    extension [Self <: ComponentDisabledDate[?], T](x: Self & ComponentDisabledDate[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentDisabledDate[?], T] (val x: Self & ComponentDisabledDate[T]) extends AnyVal {
       
       inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

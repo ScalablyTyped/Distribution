@@ -19,7 +19,8 @@ object LHO2 {
     __obj.asInstanceOf[LHO2]
   }
   
-  extension [Self <: LHO2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LHO2] (val x: Self) extends AnyVal {
     
     inline def setLHO2(value: RangedHeal): Self = StObject.set(x, "LHO2", value.asInstanceOf[js.Any])
     

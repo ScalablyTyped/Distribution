@@ -29,7 +29,8 @@ object gapi {
           __obj.asInstanceOf[Challenge]
         }
         
-        extension [Self <: Challenge](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Challenge] (val x: Self) extends AnyVal {
           
           inline def setAlternativeChallenge(value: String): Self = StObject.set(x, "alternativeChallenge", value.asInstanceOf[js.Any])
           
@@ -74,7 +75,8 @@ object gapi {
           __obj.asInstanceOf[VerifyChallengeResponseRequest]
         }
         
-        extension [Self <: VerifyChallengeResponseRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: VerifyChallengeResponseRequest] (val x: Self) extends AnyVal {
           
           inline def setChallengeResponse(value: String): Self = StObject.set(x, "challengeResponse", value.asInstanceOf[js.Any])
           
@@ -110,7 +112,8 @@ object gapi {
           __obj.asInstanceOf[VerifyChallengeResponseResult]
         }
         
-        extension [Self <: VerifyChallengeResponseResult](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: VerifyChallengeResponseResult] (val x: Self) extends AnyVal {
           
           inline def setDevicePermanentId(value: String): Self = StObject.set(x, "devicePermanentId", value.asInstanceOf[js.Any])
           

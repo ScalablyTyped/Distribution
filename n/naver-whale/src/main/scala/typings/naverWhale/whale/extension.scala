@@ -37,7 +37,8 @@ object `extension` {
       __obj.asInstanceOf[FetchProperties]
     }
     
-    extension [Self <: FetchProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchProperties] (val x: Self) extends AnyVal {
       
       inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object `extension` {
       __obj.asInstanceOf[LastError]
     }
     
-    extension [Self <: LastError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LastError] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }

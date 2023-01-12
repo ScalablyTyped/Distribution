@@ -46,7 +46,8 @@ object RosterItemChange {
     __obj.asInstanceOf[RosterItemChange]
   }
   
-  extension [Self <: RosterItemChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RosterItemChange] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

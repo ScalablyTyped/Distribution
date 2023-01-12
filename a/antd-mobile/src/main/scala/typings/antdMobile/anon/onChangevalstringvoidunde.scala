@@ -352,7 +352,8 @@ object onChangevalstringvoidunde {
     __obj.asInstanceOf[onChangevalstringvoidunde]
   }
   
-  extension [Self <: onChangevalstringvoidunde](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: onChangevalstringvoidunde] (val x: Self) extends AnyVal {
     
     inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
     

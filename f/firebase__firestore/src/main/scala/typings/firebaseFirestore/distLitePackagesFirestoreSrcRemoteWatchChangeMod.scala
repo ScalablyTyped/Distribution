@@ -286,7 +286,8 @@ object distLitePackagesFirestoreSrcRemoteWatchChangeMod {
       __obj.asInstanceOf[TargetMetadataProvider]
     }
     
-    extension [Self <: TargetMetadataProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetMetadataProvider] (val x: Self) extends AnyVal {
       
       inline def setGetRemoteKeysForTarget(value: TargetId => DocumentKeySet_): Self = StObject.set(x, "getRemoteKeysForTarget", js.Any.fromFunction1(value))
       

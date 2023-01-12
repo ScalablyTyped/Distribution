@@ -27,7 +27,8 @@ object PartialBrowserFetcherOptiPath {
     __obj.asInstanceOf[PartialBrowserFetcherOptiPath]
   }
   
-  extension [Self <: PartialBrowserFetcherOptiPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBrowserFetcherOptiPath] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

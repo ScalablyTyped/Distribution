@@ -35,7 +35,8 @@ object HLJSOptions {
     __obj.asInstanceOf[HLJSOptions]
   }
   
-  extension [Self <: HLJSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HLJSOptions] (val x: Self) extends AnyVal {
     
     inline def setClassPrefix(value: String): Self = StObject.set(x, "classPrefix", value.asInstanceOf[js.Any])
     

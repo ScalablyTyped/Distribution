@@ -18,7 +18,8 @@ object JourneyStateRequest {
     __obj.asInstanceOf[JourneyStateRequest]
   }
   
-  extension [Self <: JourneyStateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JourneyStateRequest] (val x: Self) extends AnyVal {
     
     inline def setState(value: State): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

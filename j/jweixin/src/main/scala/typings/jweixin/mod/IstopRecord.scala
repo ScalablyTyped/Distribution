@@ -18,7 +18,8 @@ object IstopRecord {
     __obj.asInstanceOf[IstopRecord]
   }
   
-  extension [Self <: IstopRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IstopRecord] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Resouce => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }

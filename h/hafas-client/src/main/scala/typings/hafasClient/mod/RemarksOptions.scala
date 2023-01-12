@@ -37,7 +37,8 @@ object RemarksOptions {
     __obj.asInstanceOf[RemarksOptions]
   }
   
-  extension [Self <: RemarksOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemarksOptions] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: js.Date | Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

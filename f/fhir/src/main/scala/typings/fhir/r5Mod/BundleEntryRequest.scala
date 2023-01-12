@@ -63,7 +63,8 @@ object BundleEntryRequest {
     __obj.asInstanceOf[BundleEntryRequest]
   }
   
-  extension [Self <: BundleEntryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundleEntryRequest] (val x: Self) extends AnyVal {
     
     inline def setIfMatch(value: String): Self = StObject.set(x, "ifMatch", value.asInstanceOf[js.Any])
     

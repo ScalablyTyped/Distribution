@@ -15,7 +15,8 @@ object SocketForwardingConfig {
     __obj.asInstanceOf[SocketForwardingConfig]
   }
   
-  extension [Self <: SocketForwardingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocketForwardingConfig] (val x: Self) extends AnyVal {
     
     inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
   }

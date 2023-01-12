@@ -56,7 +56,8 @@ object CustomerAgentInfo {
     __obj.asInstanceOf[CustomerAgentInfo]
   }
   
-  extension [Self <: CustomerAgentInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerAgentInfo] (val x: Self) extends AnyVal {
     
     inline def setActiveAgents(value: Integer): Self = StObject.set(x, "activeAgents", value.asInstanceOf[js.Any])
     

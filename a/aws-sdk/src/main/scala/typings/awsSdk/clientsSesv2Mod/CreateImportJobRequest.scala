@@ -23,7 +23,8 @@ object CreateImportJobRequest {
     __obj.asInstanceOf[CreateImportJobRequest]
   }
   
-  extension [Self <: CreateImportJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateImportJobRequest] (val x: Self) extends AnyVal {
     
     inline def setImportDataSource(value: ImportDataSource): Self = StObject.set(x, "ImportDataSource", value.asInstanceOf[js.Any])
     

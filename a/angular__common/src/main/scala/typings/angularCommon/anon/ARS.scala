@@ -170,7 +170,8 @@ object ARS {
     __obj.asInstanceOf[ARS]
   }
   
-  extension [Self <: ARS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ARS] (val x: Self) extends AnyVal {
     
     inline def setAED(value: js.Array[String]): Self = StObject.set(x, "AED", value.asInstanceOf[js.Any])
     

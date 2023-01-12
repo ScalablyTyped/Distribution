@@ -79,7 +79,8 @@ object GetEventsByEventAccessPathResponse {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setEventsWithProofList(value: js.Array[typings.libraCore.`lib@GeneratedEventsPbMod`.EventWithProof.AsObject]): Self = StObject.set(x, "eventsWithProofList", value.asInstanceOf[js.Any])
       

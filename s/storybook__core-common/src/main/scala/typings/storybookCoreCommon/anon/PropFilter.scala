@@ -23,7 +23,8 @@ object PropFilter {
     __obj.asInstanceOf[PropFilter]
   }
   
-  extension [Self <: PropFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropFilter] (val x: Self) extends AnyVal {
     
     inline def setPropFilter(value: Any => Boolean): Self = StObject.set(x, "propFilter", js.Any.fromFunction1(value))
     

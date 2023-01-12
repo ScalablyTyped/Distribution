@@ -17,7 +17,8 @@ object SVGPolylineAttributes {
     __obj.asInstanceOf[SVGPolylineAttributes]
   }
   
-  extension [Self <: SVGPolylineAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPolylineAttributes] (val x: Self) extends AnyVal {
     
     inline def setPoints(value: String): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
   }

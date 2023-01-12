@@ -16,7 +16,8 @@ object InstrumentExt {
     __obj.asInstanceOf[InstrumentExt[S, A, MonitorState]]
   }
   
-  extension [Self <: InstrumentExt[?, ?, ?], S, A /* <: Action[Any] */, MonitorState](x: Self & (InstrumentExt[S, A, MonitorState])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstrumentExt[?, ?, ?], S, A /* <: Action[Any] */, MonitorState] (val x: Self & (InstrumentExt[S, A, MonitorState])) extends AnyVal {
     
     inline def setLiftedStore(value: LiftedStore[S, A, MonitorState]): Self = StObject.set(x, "liftedStore", value.asInstanceOf[js.Any])
   }

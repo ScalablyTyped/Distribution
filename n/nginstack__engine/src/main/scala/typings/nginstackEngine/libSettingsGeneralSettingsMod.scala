@@ -85,7 +85,8 @@ object libSettingsGeneralSettingsMod {
       __obj.asInstanceOf[SettingOptions]
     }
     
-    extension [Self <: SettingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettingOptions] (val x: Self) extends AnyVal {
       
       inline def setClassKey(value: typings.nginstackEngine.libDbkeyDbkeyMod.^ | Double): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

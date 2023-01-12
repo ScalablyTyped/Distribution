@@ -33,7 +33,8 @@ object CreateVpcLinkRequest {
     __obj.asInstanceOf[CreateVpcLinkRequest]
   }
   
-  extension [Self <: CreateVpcLinkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVpcLinkRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: StringWithLengthBetween1And128): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

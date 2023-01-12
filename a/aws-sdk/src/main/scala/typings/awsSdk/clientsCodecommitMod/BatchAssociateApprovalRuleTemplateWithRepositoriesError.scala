@@ -28,7 +28,8 @@ object BatchAssociateApprovalRuleTemplateWithRepositoriesError {
     __obj.asInstanceOf[BatchAssociateApprovalRuleTemplateWithRepositoriesError]
   }
   
-  extension [Self <: BatchAssociateApprovalRuleTemplateWithRepositoriesError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchAssociateApprovalRuleTemplateWithRepositoriesError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

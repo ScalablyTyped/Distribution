@@ -228,7 +228,8 @@ object SingleTokenIndenter {
     __obj.asInstanceOf[SingleTokenIndenter]
   }
   
-  extension [Self <: SingleTokenIndenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleTokenIndenter] (val x: Self) extends AnyVal {
     
     inline def setIndentationAmount(value: Any): Self = StObject.set(x, "indentationAmount", value.asInstanceOf[js.Any])
     

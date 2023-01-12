@@ -66,7 +66,8 @@ object distServerApiUtilsMod {
       __obj.asInstanceOf[LazyProps]
     }
     
-    extension [Self <: LazyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LazyProps] (val x: Self) extends AnyVal {
       
       inline def setParams(value: Params | Boolean): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

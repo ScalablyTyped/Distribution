@@ -28,7 +28,8 @@ object DescribeInventoryDeletionsRequest {
     __obj.asInstanceOf[DescribeInventoryDeletionsRequest]
   }
   
-  extension [Self <: DescribeInventoryDeletionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInventoryDeletionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDeletionId(value: UUID): Self = StObject.set(x, "DeletionId", value.asInstanceOf[js.Any])
     

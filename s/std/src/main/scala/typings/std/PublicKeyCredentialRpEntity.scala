@@ -18,7 +18,8 @@ object PublicKeyCredentialRpEntity {
     __obj.asInstanceOf[PublicKeyCredentialRpEntity]
   }
   
-  extension [Self <: PublicKeyCredentialRpEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicKeyCredentialRpEntity] (val x: Self) extends AnyVal {
     
     inline def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

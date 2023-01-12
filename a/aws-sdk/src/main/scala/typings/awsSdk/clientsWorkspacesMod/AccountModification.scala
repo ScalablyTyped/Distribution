@@ -43,7 +43,8 @@ object AccountModification {
     __obj.asInstanceOf[AccountModification]
   }
   
-  extension [Self <: AccountModification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountModification] (val x: Self) extends AnyVal {
     
     inline def setDedicatedTenancyManagementCidrRange(value: DedicatedTenancyManagementCidrRange): Self = StObject.set(x, "DedicatedTenancyManagementCidrRange", value.asInstanceOf[js.Any])
     

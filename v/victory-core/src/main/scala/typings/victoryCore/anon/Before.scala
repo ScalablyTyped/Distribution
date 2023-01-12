@@ -25,7 +25,8 @@ object Before {
     __obj.asInstanceOf[Before]
   }
   
-  extension [Self <: Before](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Before] (val x: Self) extends AnyVal {
     
     inline def setBefore(
       value: (/* datum */ typings.victoryCore.libTypesPropTypesMod.Datum, /* index */ Double, /* data */ js.Array[typings.victoryCore.libTypesPropTypesMod.Datum]) => AnimationStyle

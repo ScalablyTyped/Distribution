@@ -19,7 +19,8 @@ object GIOConfigOptions {
     __obj.asInstanceOf[GIOConfigOptions]
   }
   
-  extension [Self <: GIOConfigOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GIOConfigOptions] (val x: Self) extends AnyVal {
     
     inline def setDataCollect(value: Boolean): Self = StObject.set(x, "dataCollect", value.asInstanceOf[js.Any])
     

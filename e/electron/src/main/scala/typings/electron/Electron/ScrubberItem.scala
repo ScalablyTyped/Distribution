@@ -24,7 +24,8 @@ object ScrubberItem {
     __obj.asInstanceOf[ScrubberItem]
   }
   
-  extension [Self <: ScrubberItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrubberItem] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

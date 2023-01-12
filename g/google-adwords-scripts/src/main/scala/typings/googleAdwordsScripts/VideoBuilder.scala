@@ -17,7 +17,8 @@ object VideoBuilder {
     __obj.asInstanceOf[VideoBuilder[Media]]
   }
   
-  extension [Self <: VideoBuilder[?], Media](x: Self & VideoBuilder[Media]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoBuilder[?], Media] (val x: Self & VideoBuilder[Media]) extends AnyVal {
     
     inline def setWithYouTubeVideoId(value: String => VideoBuilder[Media]): Self = StObject.set(x, "withYouTubeVideoId", js.Any.fromFunction1(value))
   }

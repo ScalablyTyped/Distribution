@@ -96,7 +96,8 @@ object ObjectInspector {
     __obj.asInstanceOf[ObjectInspector]
   }
   
-  extension [Self <: ObjectInspector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectInspector] (val x: Self) extends AnyVal {
     
     inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     

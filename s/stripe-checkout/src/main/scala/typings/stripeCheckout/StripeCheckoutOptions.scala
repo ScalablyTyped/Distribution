@@ -58,7 +58,8 @@ object StripeCheckoutOptions {
     __obj.asInstanceOf[StripeCheckoutOptions]
   }
   
-  extension [Self <: StripeCheckoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StripeCheckoutOptions] (val x: Self) extends AnyVal {
     
     inline def setAlipay(value: Boolean | auto): Self = StObject.set(x, "alipay", value.asInstanceOf[js.Any])
     

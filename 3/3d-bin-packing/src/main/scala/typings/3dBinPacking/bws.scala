@@ -54,7 +54,8 @@ object bws {
         __obj.asInstanceOf[GAWrapperArray]
       }
       
-      extension [Self <: GAWrapperArray](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GAWrapperArray] (val x: Self) extends AnyVal {
         
         inline def setConstructResult(value: () => Any): Self = StObject.set(x, "constructResult", js.Any.fromFunction0(value))
         
@@ -158,7 +159,8 @@ object bws {
         __obj.asInstanceOf[Instance]
       }
       
-      extension [Self <: Instance](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
         
         inline def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
         
@@ -218,7 +220,8 @@ object bws {
         __obj.asInstanceOf[InstanceArray]
       }
       
-      extension [Self <: InstanceArray](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InstanceArray] (val x: Self) extends AnyVal {
         
         inline def setCHILD_TAG(value: () => String): Self = StObject.set(x, "CHILD_TAG", js.Any.fromFunction0(value))
         
@@ -329,7 +332,8 @@ object bws {
         __obj.asInstanceOf[InstanceForm]
       }
       
-      extension [Self <: InstanceForm](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InstanceForm] (val x: Self) extends AnyVal {
         
         inline def set$count(value: String): Self = StObject.set(x, "$count", value.asInstanceOf[js.Any])
         
@@ -402,7 +406,8 @@ object bws {
         __obj.asInstanceOf[InstanceFormArray]
       }
       
-      extension [Self <: InstanceFormArray](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InstanceFormArray] (val x: Self) extends AnyVal {
         
         inline def setCHILD_TAG(value: () => String): Self = StObject.set(x, "CHILD_TAG", js.Any.fromFunction0(value))
         
@@ -534,7 +539,8 @@ object bws {
         __obj.asInstanceOf[Packer]
       }
       
-      extension [Self <: Packer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Packer] (val x: Self) extends AnyVal {
         
         inline def setConstruct(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Unit
@@ -611,7 +617,8 @@ object bws {
         __obj.asInstanceOf[PackerForm]
       }
       
-      extension [Self <: PackerForm](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PackerForm] (val x: Self) extends AnyVal {
         
         inline def setConstruct(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Unit
@@ -707,7 +714,8 @@ object bws {
         __obj.asInstanceOf[Product]
       }
       
-      extension [Self <: Product](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
@@ -920,7 +928,8 @@ object bws {
         __obj.asInstanceOf[Wrap]
       }
       
-      extension [Self <: Wrap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Wrap] (val x: Self) extends AnyVal {
         
         inline def set$instanceName(value: String): Self = StObject.set(x, "$instanceName", value.asInstanceOf[js.Any])
         
@@ -1200,7 +1209,8 @@ object bws {
         __obj.asInstanceOf[Wrapper]
       }
       
-      extension [Self <: Wrapper](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Wrapper] (val x: Self) extends AnyVal {
         
         inline def set$height(value: String): Self = StObject.set(x, "$height", value.asInstanceOf[js.Any])
         
@@ -1309,7 +1319,8 @@ object bws {
         __obj.asInstanceOf[WrapperArray]
       }
       
-      extension [Self <: WrapperArray](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WrapperArray] (val x: Self) extends AnyVal {
         
         inline def setCHILD_TAG(value: () => String): Self = StObject.set(x, "CHILD_TAG", js.Any.fromFunction0(value))
         

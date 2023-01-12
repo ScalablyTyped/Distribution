@@ -18,7 +18,8 @@ object distFrameworkConfigMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setInspector(value: Inspector): Self = StObject.set(x, "inspector", value.asInstanceOf[js.Any])
       

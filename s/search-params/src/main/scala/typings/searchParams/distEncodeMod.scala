@@ -36,7 +36,8 @@ object distEncodeMod {
       __obj.asInstanceOf[IFinalOptions]
     }
     
-    extension [Self <: IFinalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFinalOptions] (val x: Self) extends AnyVal {
       
       inline def setArrayFormat(value: arrayFormat): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object distEncodeMod {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setArrayFormat(value: arrayFormat): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       

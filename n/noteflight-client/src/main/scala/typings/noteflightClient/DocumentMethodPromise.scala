@@ -38,7 +38,8 @@ object DocumentMethodPromise {
     __obj.asInstanceOf[DocumentMethodPromise[Result]]
   }
   
-  extension [Self <: DocumentMethodPromise[?], Result](x: Self & DocumentMethodPromise[Result]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentMethodPromise[?], Result] (val x: Self & DocumentMethodPromise[Result]) extends AnyVal {
     
     inline def setDone(
       value: js.Function1[/* result */ Result, Unit | (js.Array[js.Function1[/* result */ Result, Unit]])] => DocumentMethodPromise[Result]

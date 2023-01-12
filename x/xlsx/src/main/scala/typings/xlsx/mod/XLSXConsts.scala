@@ -26,7 +26,8 @@ object XLSXConsts {
     __obj.asInstanceOf[XLSXConsts]
   }
   
-  extension [Self <: XLSXConsts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLSXConsts] (val x: Self) extends AnyVal {
     
     inline def setSHEET_HIDDEN(value: `1`): Self = StObject.set(x, "SHEET_HIDDEN", value.asInstanceOf[js.Any])
     

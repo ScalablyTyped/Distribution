@@ -594,7 +594,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RequestPromiseOptions]
     }
     
-    extension [Self <: RequestPromiseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestPromiseOptions] (val x: Self) extends AnyVal {
       
       inline def setResolveWithFullResponse(value: Boolean): Self = StObject.set(x, "resolveWithFullResponse", value.asInstanceOf[js.Any])
       

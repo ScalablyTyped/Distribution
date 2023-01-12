@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[CopyStatus]
     }
     
-    extension [Self <: CopyStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyStatus] (val x: Self) extends AnyVal {
       
       inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
@@ -221,7 +223,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
@@ -382,7 +385,8 @@ object mod {
       __obj.asInstanceOf[ProgressData]
     }
     
-    extension [Self <: ProgressData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressData] (val x: Self) extends AnyVal {
       
       inline def setCompletedFiles(value: Double): Self = StObject.set(x, "completedFiles", value.asInstanceOf[js.Any])
       
@@ -406,7 +410,8 @@ object mod {
       __obj.asInstanceOf[ProgressEmitter]
     }
     
-    extension [Self <: ProgressEmitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressEmitter] (val x: Self) extends AnyVal {
       
       inline def setOn(value: (progress, js.Function1[/* progress */ ProgressData, Unit]) => js.Promise[js.Array[String]]): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }

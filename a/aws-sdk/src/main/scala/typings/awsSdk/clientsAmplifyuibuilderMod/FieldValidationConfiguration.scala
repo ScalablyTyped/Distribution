@@ -34,7 +34,8 @@ object FieldValidationConfiguration {
     __obj.asInstanceOf[FieldValidationConfiguration]
   }
   
-  extension [Self <: FieldValidationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldValidationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setNumValues(value: NumValues): Self = StObject.set(x, "numValues", value.asInstanceOf[js.Any])
     

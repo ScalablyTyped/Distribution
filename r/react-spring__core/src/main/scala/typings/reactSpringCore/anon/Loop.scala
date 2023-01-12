@@ -21,7 +21,8 @@ object Loop {
     __obj.asInstanceOf[Loop]
   }
   
-  extension [Self <: Loop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Loop] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

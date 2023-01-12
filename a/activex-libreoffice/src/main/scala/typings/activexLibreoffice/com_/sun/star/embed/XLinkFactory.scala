@@ -48,7 +48,8 @@ object XLinkFactory {
     __obj.asInstanceOf[XLinkFactory]
   }
   
-  extension [Self <: XLinkFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLinkFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateInstanceLinkUserInit(
       value: (SeqEquiv[Double], String, XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface

@@ -67,7 +67,8 @@ object libAccordionIndexDotnativeMod {
       __obj.asInstanceOf[AccordionHeader]
     }
     
-    extension [Self <: AccordionHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionHeader] (val x: Self) extends AnyVal {
       
       inline def setContent(value: ReactElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object libAccordionIndexDotnativeMod {
       __obj.asInstanceOf[AccordionNativeProps]
     }
     
-    extension [Self <: AccordionNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionNativeProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object libAccordionIndexDotnativeMod {
       __obj.asInstanceOf[AccordionPanelProps]
     }
     
-    extension [Self <: AccordionPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionPanelProps] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object Entrypoint {
     __obj.asInstanceOf[Entrypoint]
   }
   
-  extension [Self <: Entrypoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Entrypoint] (val x: Self) extends AnyVal {
     
     inline def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object RelatedPersonCommunication {
     __obj.asInstanceOf[RelatedPersonCommunication]
   }
   
-  extension [Self <: RelatedPersonCommunication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedPersonCommunication] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: CodeableConcept): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

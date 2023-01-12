@@ -49,7 +49,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LogData]
     }
     
-    extension [Self <: LogData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogData] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LogError]
     }
     
-    extension [Self <: LogError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogError] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

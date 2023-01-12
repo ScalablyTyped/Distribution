@@ -20,7 +20,8 @@ object Definitions {
     __obj.asInstanceOf[Definitions[D]]
   }
   
-  extension [Self <: Definitions[?], D /* <: Record[String, Any] */](x: Self & Definitions[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Definitions[?], D /* <: Record[String, Any] */] (val x: Self & Definitions[D]) extends AnyVal {
     
     inline def setDefinitions(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof D ]: ajv.ajv/dist/types/jtd-schema.JTDSchemaType<D[K], D>} */ js.Any

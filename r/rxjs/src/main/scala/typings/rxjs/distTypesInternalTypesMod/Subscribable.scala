@@ -16,7 +16,8 @@ object Subscribable {
     __obj.asInstanceOf[Subscribable[T]]
   }
   
-  extension [Self <: Subscribable[?], T](x: Self & Subscribable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subscribable[?], T] (val x: Self & Subscribable[T]) extends AnyVal {
     
     inline def setSubscribe(value: Partial[Observer[T]] => Unsubscribable): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
   }

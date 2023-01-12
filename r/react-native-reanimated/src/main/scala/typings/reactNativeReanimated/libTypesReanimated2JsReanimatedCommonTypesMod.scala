@@ -79,7 +79,8 @@ object libTypesReanimated2JsReanimatedCommonTypesMod {
       __obj.asInstanceOf[JSReanimated]
     }
     
-    extension [Self <: JSReanimated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSReanimated] (val x: Self) extends AnyVal {
       
       inline def setEnableLayoutAnimations(value: () => Unit): Self = StObject.set(x, "enableLayoutAnimations", js.Any.fromFunction0(value))
       
@@ -158,7 +159,8 @@ object libTypesReanimated2JsReanimatedCommonTypesMod {
       __obj.asInstanceOf[Mapper[T]]
     }
     
-    extension [Self <: Mapper[?], T](x: Self & Mapper[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mapper[?], T] (val x: Self & Mapper[T]) extends AnyVal {
       
       inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
@@ -218,7 +220,8 @@ object libTypesReanimated2JsReanimatedCommonTypesMod {
       __obj.asInstanceOf[MapperRegistry[T]]
     }
     
-    extension [Self <: MapperRegistry[?], T](x: Self & MapperRegistry[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapperRegistry[?], T] (val x: Self & MapperRegistry[T]) extends AnyVal {
       
       inline def setExecute(value: () => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       

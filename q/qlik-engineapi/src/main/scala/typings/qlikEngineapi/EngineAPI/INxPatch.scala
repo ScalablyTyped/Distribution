@@ -34,7 +34,8 @@ object INxPatch {
     __obj.asInstanceOf[INxPatch]
   }
   
-  extension [Self <: INxPatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxPatch] (val x: Self) extends AnyVal {
     
     inline def setQOp(value: NxPatchOpType): Self = StObject.set(x, "qOp", value.asInstanceOf[js.Any])
     

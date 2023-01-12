@@ -17,7 +17,8 @@ object OmitIOptionsserverSettingModel {
     __obj.asInstanceOf[OmitIOptionsserverSettingModel]
   }
   
-  extension [Self <: OmitIOptionsserverSettingModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitIOptionsserverSettingModel] (val x: Self) extends AnyVal {
     
     inline def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }

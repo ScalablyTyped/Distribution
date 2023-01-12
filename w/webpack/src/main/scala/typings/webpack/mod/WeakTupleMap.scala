@@ -42,7 +42,8 @@ object WeakTupleMap {
     __obj.asInstanceOf[WeakTupleMap[T, V]]
   }
   
-  extension [Self <: WeakTupleMap[?, ?], T /* <: js.Array[Any] */, V](x: Self & (WeakTupleMap[T, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakTupleMap[?, ?], T /* <: js.Array[Any] */, V] (val x: Self & (WeakTupleMap[T, V])) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

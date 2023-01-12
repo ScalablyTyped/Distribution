@@ -21,7 +21,8 @@ object IosMobileAppConfiguration {
     __obj.asInstanceOf[IosMobileAppConfiguration]
   }
   
-  extension [Self <: IosMobileAppConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosMobileAppConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEncodedSettingXml(value: NullableOption[String]): Self = StObject.set(x, "encodedSettingXml", value.asInstanceOf[js.Any])
     

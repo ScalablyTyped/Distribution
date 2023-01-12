@@ -40,7 +40,8 @@ object KeySignature {
     __obj.asInstanceOf[KeySignature]
   }
   
-  extension [Self <: KeySignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeySignature] (val x: Self) extends AnyVal {
     
     inline def setFifths(value: Double): Self = StObject.set(x, "fifths", value.asInstanceOf[js.Any])
     

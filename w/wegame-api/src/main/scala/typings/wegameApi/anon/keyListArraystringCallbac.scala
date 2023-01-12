@@ -25,7 +25,8 @@ object keyListArraystringCallbac {
     __obj.asInstanceOf[keyListArraystringCallbac]
   }
   
-  extension [Self <: keyListArraystringCallbac](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyListArraystringCallbac] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

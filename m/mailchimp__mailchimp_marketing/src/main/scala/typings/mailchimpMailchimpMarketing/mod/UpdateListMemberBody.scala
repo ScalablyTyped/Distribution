@@ -17,7 +17,8 @@ object UpdateListMemberBody {
     __obj.asInstanceOf[UpdateListMemberBody]
   }
   
-  extension [Self <: UpdateListMemberBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateListMemberBody] (val x: Self) extends AnyVal {
     
     inline def setEmail_address(value: String): Self = StObject.set(x, "email_address", value.asInstanceOf[js.Any])
     

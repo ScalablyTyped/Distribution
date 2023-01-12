@@ -29,7 +29,8 @@ object PartialStyleRulesStepButt {
     __obj.asInstanceOf[PartialStyleRulesStepButt]
   }
   
-  extension [Self <: PartialStyleRulesStepButt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesStepButt] (val x: Self) extends AnyVal {
     
     inline def setRoot(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

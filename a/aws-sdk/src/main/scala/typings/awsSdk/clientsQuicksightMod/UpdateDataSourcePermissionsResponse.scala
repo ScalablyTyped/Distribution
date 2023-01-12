@@ -33,7 +33,8 @@ object UpdateDataSourcePermissionsResponse {
     __obj.asInstanceOf[UpdateDataSourcePermissionsResponse]
   }
   
-  extension [Self <: UpdateDataSourcePermissionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDataSourcePermissionsResponse] (val x: Self) extends AnyVal {
     
     inline def setDataSourceArn(value: Arn): Self = StObject.set(x, "DataSourceArn", value.asInstanceOf[js.Any])
     

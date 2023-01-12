@@ -18,7 +18,8 @@ object AwsWafRuleGroupRulesActionDetails {
     __obj.asInstanceOf[AwsWafRuleGroupRulesActionDetails]
   }
   
-  extension [Self <: AwsWafRuleGroupRulesActionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsWafRuleGroupRulesActionDetails] (val x: Self) extends AnyVal {
     
     inline def setType(value: NonEmptyString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

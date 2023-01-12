@@ -17,7 +17,8 @@ object PaneState {
     __obj.asInstanceOf[PaneState]
   }
   
-  extension [Self <: PaneState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaneState] (val x: Self) extends AnyVal {
     
     inline def setContext(value: LeafletContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

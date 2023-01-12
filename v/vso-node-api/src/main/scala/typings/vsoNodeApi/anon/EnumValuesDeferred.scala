@@ -15,7 +15,8 @@ object EnumValuesDeferred {
     __obj.asInstanceOf[EnumValuesDeferred]
   }
   
-  extension [Self <: EnumValuesDeferred](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesDeferred] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Deferred): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

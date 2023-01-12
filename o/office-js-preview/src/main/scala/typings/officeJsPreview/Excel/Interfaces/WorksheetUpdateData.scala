@@ -94,7 +94,8 @@ object WorksheetUpdateData {
     __obj.asInstanceOf[WorksheetUpdateData]
   }
   
-  extension [Self <: WorksheetUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetUpdateData] (val x: Self) extends AnyVal {
     
     inline def setEnableCalculation(value: Boolean): Self = StObject.set(x, "enableCalculation", value.asInstanceOf[js.Any])
     

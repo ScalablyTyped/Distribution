@@ -41,7 +41,8 @@ object Scheduling {
     __obj.asInstanceOf[Scheduling]
   }
   
-  extension [Self <: Scheduling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scheduling] (val x: Self) extends AnyVal {
     
     inline def setAutomaticRestart(value: Boolean): Self = StObject.set(x, "automaticRestart", value.asInstanceOf[js.Any])
     

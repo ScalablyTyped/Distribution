@@ -26,7 +26,8 @@ object ArraySizeMethodMethodParameters {
     __obj.asInstanceOf[ArraySizeMethodMethodParameters]
   }
   
-  extension [Self <: ArraySizeMethodMethodParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArraySizeMethodMethodParameters] (val x: Self) extends AnyVal {
     
     inline def setArraySizeMethod(value: String): Self = StObject.set(x, "arraySizeMethod", value.asInstanceOf[js.Any])
     

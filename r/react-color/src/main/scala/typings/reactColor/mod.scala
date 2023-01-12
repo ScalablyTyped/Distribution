@@ -123,7 +123,8 @@ object mod {
       __obj.asInstanceOf[ColorPickerProps[A]]
     }
     
-    extension [Self <: ColorPickerProps[?], A](x: Self & ColorPickerProps[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPickerProps[?], A] (val x: Self & ColorPickerProps[A]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -162,7 +163,8 @@ object mod {
       __obj.asInstanceOf[ColorResult]
     }
     
-    extension [Self <: ColorResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorResult] (val x: Self) extends AnyVal {
       
       inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object mod {
       __obj.asInstanceOf[CustomPickerProps[A]]
     }
     
-    extension [Self <: CustomPickerProps[?], A](x: Self & CustomPickerProps[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomPickerProps[?], A] (val x: Self & CustomPickerProps[A]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -234,7 +237,8 @@ object mod {
       __obj.asInstanceOf[HSLColor]
     }
     
-    extension [Self <: HSLColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HSLColor] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -267,7 +271,8 @@ object mod {
       __obj.asInstanceOf[RGBColor]
     }
     
-    extension [Self <: RGBColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGBColor] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object WorkerConfiguration {
     __obj.asInstanceOf[WorkerConfiguration]
   }
   
-  extension [Self <: WorkerConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerConfiguration] (val x: Self) extends AnyVal {
     
     inline def setUseCompressionStream(value: Boolean): Self = StObject.set(x, "useCompressionStream", value.asInstanceOf[js.Any])
     

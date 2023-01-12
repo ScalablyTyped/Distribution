@@ -28,7 +28,8 @@ object IPerfMetadata {
     __obj.asInstanceOf[IPerfMetadata]
   }
   
-  extension [Self <: IPerfMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPerfMetadata] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

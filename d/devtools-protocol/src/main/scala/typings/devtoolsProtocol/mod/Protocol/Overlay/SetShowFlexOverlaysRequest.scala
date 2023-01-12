@@ -18,7 +18,8 @@ object SetShowFlexOverlaysRequest {
     __obj.asInstanceOf[SetShowFlexOverlaysRequest]
   }
   
-  extension [Self <: SetShowFlexOverlaysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetShowFlexOverlaysRequest] (val x: Self) extends AnyVal {
     
     inline def setFlexNodeHighlightConfigs(value: js.Array[FlexNodeHighlightConfig]): Self = StObject.set(x, "flexNodeHighlightConfigs", value.asInstanceOf[js.Any])
     

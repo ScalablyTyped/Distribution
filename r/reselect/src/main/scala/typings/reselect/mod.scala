@@ -119,7 +119,8 @@ object mod {
       __obj.asInstanceOf[CreateSelectorOptions[MemoizeOptions]]
     }
     
-    extension [Self <: CreateSelectorOptions[?], MemoizeOptions /* <: js.Array[Any] */](x: Self & CreateSelectorOptions[MemoizeOptions]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateSelectorOptions[?], MemoizeOptions /* <: js.Array[Any] */] (val x: Self & CreateSelectorOptions[MemoizeOptions]) extends AnyVal {
       
       inline def setMemoizeOptions(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: MemoizeOptions[0] */ js.Any) | MemoizeOptions

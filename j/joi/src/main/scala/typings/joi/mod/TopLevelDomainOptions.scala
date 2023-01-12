@@ -26,7 +26,8 @@ object TopLevelDomainOptions {
     __obj.asInstanceOf[TopLevelDomainOptions]
   }
   
-  extension [Self <: TopLevelDomainOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopLevelDomainOptions] (val x: Self) extends AnyVal {
     
     inline def setAllow(value: Set[String] | js.Array[String] | Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     

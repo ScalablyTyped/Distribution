@@ -25,7 +25,8 @@ object Typeoffused {
     __obj.asInstanceOf[Typeoffused]
   }
   
-  extension [Self <: Typeoffused](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeoffused] (val x: Self) extends AnyVal {
     
     inline def setConv2d(value: Typeofconv2d): Self = StObject.set(x, "conv2d", value.asInstanceOf[js.Any])
     

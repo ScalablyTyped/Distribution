@@ -21,7 +21,8 @@ object angularMod {
       __obj.asInstanceOf[IRequestShortcutConfig]
     }
     
-    extension [Self <: IRequestShortcutConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRequestShortcutConfig] (val x: Self) extends AnyVal {
       
       inline def setTracker(value: PromiseTracker | js.Array[PromiseTracker]): Self = StObject.set(x, "tracker", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object angularMod {
         __obj.asInstanceOf[PromiseTracker]
       }
       
-      extension [Self <: PromiseTracker](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PromiseTracker] (val x: Self) extends AnyVal {
         
         inline def setActive(value: () => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
         
@@ -90,7 +92,8 @@ object angularMod {
         __obj.asInstanceOf[PromiseTrackerOptions]
       }
       
-      extension [Self <: PromiseTrackerOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PromiseTrackerOptions] (val x: Self) extends AnyVal {
         
         inline def setActivationDelay(value: Double): Self = StObject.set(x, "activationDelay", value.asInstanceOf[js.Any])
         

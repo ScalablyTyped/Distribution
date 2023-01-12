@@ -18,7 +18,8 @@ object StorageClassAnalysis {
     __obj.asInstanceOf[StorageClassAnalysis]
   }
   
-  extension [Self <: StorageClassAnalysis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageClassAnalysis] (val x: Self) extends AnyVal {
     
     inline def setDataExport(value: StorageClassAnalysisDataExport): Self = StObject.set(x, "DataExport", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DisassociateUserFromPermissionGroupResponse {
     __obj.asInstanceOf[DisassociateUserFromPermissionGroupResponse]
   }
   
-  extension [Self <: DisassociateUserFromPermissionGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateUserFromPermissionGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     

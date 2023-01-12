@@ -80,7 +80,8 @@ object TaskRunnerSettings {
     __obj.asInstanceOf[TaskRunnerSettings]
   }
   
-  extension [Self <: TaskRunnerSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskRunnerSettings] (val x: Self) extends AnyVal {
     
     inline def setAlsologtostderr(value: Boolean): Self = StObject.set(x, "alsologtostderr", value.asInstanceOf[js.Any])
     

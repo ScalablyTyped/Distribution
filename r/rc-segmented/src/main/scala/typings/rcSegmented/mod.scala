@@ -129,7 +129,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SegmentedLabeledOption]
     }
     
-    extension [Self <: SegmentedLabeledOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentedLabeledOption] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -735,7 +736,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SegmentedProps]
     }
     
-    extension [Self <: SegmentedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentedProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

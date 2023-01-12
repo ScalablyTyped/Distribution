@@ -40,7 +40,8 @@ object OperationAggregatedList {
     __obj.asInstanceOf[OperationAggregatedList]
   }
   
-  extension [Self <: OperationAggregatedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationAggregatedList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

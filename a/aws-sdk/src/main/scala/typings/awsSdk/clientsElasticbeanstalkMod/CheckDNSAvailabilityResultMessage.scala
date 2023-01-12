@@ -23,7 +23,8 @@ object CheckDNSAvailabilityResultMessage {
     __obj.asInstanceOf[CheckDNSAvailabilityResultMessage]
   }
   
-  extension [Self <: CheckDNSAvailabilityResultMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckDNSAvailabilityResultMessage] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: CnameAvailability): Self = StObject.set(x, "Available", value.asInstanceOf[js.Any])
     

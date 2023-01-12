@@ -167,7 +167,8 @@ object Sidebar {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
@@ -300,7 +301,8 @@ object Sidebar {
           __obj.asInstanceOf[typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.ComputerSettings.Impl]
         }
         
-        extension [Self <: typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.ComputerSettings.Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.ComputerSettings.Impl] (val x: Self) extends AnyVal {
           
           inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
           
@@ -357,7 +359,8 @@ object Sidebar {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setComputer(value: ComputerSettings): Self = StObject.set(x, "computer", value.asInstanceOf[js.Any])
         
@@ -396,7 +399,8 @@ object Sidebar {
           __obj.asInstanceOf[typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.MobileSettings.Impl]
         }
         
-        extension [Self <: typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.MobileSettings.Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.MobileSettings.Impl] (val x: Self) extends AnyVal {
           
           inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
           
@@ -496,7 +500,8 @@ object Sidebar {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         
@@ -569,7 +574,8 @@ object Sidebar {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setIos(value: js.RegExp): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
         
@@ -628,7 +634,8 @@ object Sidebar {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
         

@@ -22,7 +22,8 @@ object PartialWaitOptions {
     __obj.asInstanceOf[PartialWaitOptions]
   }
   
-  extension [Self <: PartialWaitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialWaitOptions] (val x: Self) extends AnyVal {
     
     inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     

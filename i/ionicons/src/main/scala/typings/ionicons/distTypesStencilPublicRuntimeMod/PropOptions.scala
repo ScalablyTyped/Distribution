@@ -34,7 +34,8 @@ object PropOptions {
     __obj.asInstanceOf[PropOptions]
   }
   
-  extension [Self <: PropOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropOptions] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

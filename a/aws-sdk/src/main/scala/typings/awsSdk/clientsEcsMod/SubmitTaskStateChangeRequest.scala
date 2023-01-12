@@ -63,7 +63,8 @@ object SubmitTaskStateChangeRequest {
     __obj.asInstanceOf[SubmitTaskStateChangeRequest]
   }
   
-  extension [Self <: SubmitTaskStateChangeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubmitTaskStateChangeRequest] (val x: Self) extends AnyVal {
     
     inline def setAttachments(value: AttachmentStateChanges): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     

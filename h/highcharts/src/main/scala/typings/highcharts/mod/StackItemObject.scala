@@ -62,7 +62,8 @@ object StackItemObject {
     __obj.asInstanceOf[StackItemObject]
   }
   
-  extension [Self <: StackItemObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackItemObject] (val x: Self) extends AnyVal {
     
     inline def setAlignOptions(value: AlignObject): Self = StObject.set(x, "alignOptions", value.asInstanceOf[js.Any])
     

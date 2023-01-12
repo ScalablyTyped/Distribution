@@ -19,7 +19,8 @@ object GoogleDevtoolsContaineranalysisV1alpha1OperationMetadata {
     __obj.asInstanceOf[GoogleDevtoolsContaineranalysisV1alpha1OperationMetadata]
   }
   
-  extension [Self <: GoogleDevtoolsContaineranalysisV1alpha1OperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsContaineranalysisV1alpha1OperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

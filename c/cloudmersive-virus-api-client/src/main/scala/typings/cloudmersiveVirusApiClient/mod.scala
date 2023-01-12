@@ -267,7 +267,8 @@ object mod {
     @js.native
     val ^ : VirusFound = js.native
     
-    extension [Self <: VirusFound](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirusFound] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
       
@@ -322,7 +323,8 @@ object mod {
     @js.native
     val ^ : VirusScanAdvancedResult = js.native
     
-    extension [Self <: VirusScanAdvancedResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirusScanAdvancedResult] (val x: Self) extends AnyVal {
       
       inline def setContainsExecutable(value: Boolean): Self = StObject.set(x, "ContainsExecutable", value.asInstanceOf[js.Any])
       
@@ -356,7 +358,8 @@ object mod {
     @js.native
     val ^ : VirusScanResult = js.native
     
-    extension [Self <: VirusScanResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirusScanResult] (val x: Self) extends AnyVal {
       
       inline def setCleanResult(value: Boolean): Self = StObject.set(x, "CleanResult", value.asInstanceOf[js.Any])
       
@@ -382,7 +385,8 @@ object mod {
     @js.native
     val ^ : WebsiteScanRequest = js.native
     
-    extension [Self <: WebsiteScanRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebsiteScanRequest] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     }
@@ -413,7 +417,8 @@ object mod {
     @js.native
     val ^ : WebsiteScanResult = js.native
     
-    extension [Self <: WebsiteScanResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebsiteScanResult] (val x: Self) extends AnyVal {
       
       inline def setWebsiteHttpResponseCode(value: Double): Self = StObject.set(x, "WebsiteHttpResponseCode", value.asInstanceOf[js.Any])
       
@@ -529,7 +534,8 @@ object mod {
       __obj.asInstanceOf[ApiInstance]
     }
     
-    extension [Self <: ApiInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiInstance] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -571,7 +577,8 @@ object mod {
       __obj.asInstanceOf[ApiInstanceAuthentications]
     }
     
-    extension [Self <: ApiInstanceAuthentications](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiInstanceAuthentications] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -645,7 +652,8 @@ object mod {
       __obj.asInstanceOf[ScanFileAdvancedOptions]
     }
     
-    extension [Self <: ScanFileAdvancedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanFileAdvancedOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowExecutables(value: Boolean): Self = StObject.set(x, "allowExecutables", value.asInstanceOf[js.Any])
       

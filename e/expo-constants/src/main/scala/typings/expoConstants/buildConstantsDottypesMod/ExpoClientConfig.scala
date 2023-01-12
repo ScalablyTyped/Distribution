@@ -38,7 +38,8 @@ object ExpoClientConfig {
     __obj.asInstanceOf[ExpoClientConfig]
   }
   
-  extension [Self <: ExpoClientConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpoClientConfig] (val x: Self) extends AnyVal {
     
     inline def setBundleUrl(value: String): Self = StObject.set(x, "bundleUrl", value.asInstanceOf[js.Any])
     

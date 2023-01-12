@@ -115,7 +115,8 @@ object srcModelOperationOperationMod {
       __obj.asInstanceOf[Operation]
     }
     
-    extension [Self <: Operation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
       
       inline def setBaseVersion(value: Double): Self = StObject.set(x, "baseVersion", value.asInstanceOf[js.Any])
       

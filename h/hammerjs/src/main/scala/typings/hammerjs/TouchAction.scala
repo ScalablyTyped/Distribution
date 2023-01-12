@@ -29,7 +29,8 @@ object TouchAction {
     __obj.asInstanceOf[TouchAction]
   }
   
-  extension [Self <: TouchAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchAction] (val x: Self) extends AnyVal {
     
     inline def setCompute(value: () => String): Self = StObject.set(x, "compute", js.Any.fromFunction0(value))
     

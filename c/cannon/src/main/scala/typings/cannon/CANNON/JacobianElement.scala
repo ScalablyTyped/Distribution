@@ -26,7 +26,8 @@ object JacobianElement {
     __obj.asInstanceOf[JacobianElement]
   }
   
-  extension [Self <: JacobianElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JacobianElement] (val x: Self) extends AnyVal {
     
     inline def setMultiplyElement(value: JacobianElement => Double): Self = StObject.set(x, "multiplyElement", js.Any.fromFunction1(value))
     

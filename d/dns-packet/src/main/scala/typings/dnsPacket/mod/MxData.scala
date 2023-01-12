@@ -17,7 +17,8 @@ object MxData {
     __obj.asInstanceOf[MxData]
   }
   
-  extension [Self <: MxData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MxData] (val x: Self) extends AnyVal {
     
     inline def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
     

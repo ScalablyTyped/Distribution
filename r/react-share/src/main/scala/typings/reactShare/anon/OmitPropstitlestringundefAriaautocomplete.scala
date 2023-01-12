@@ -508,7 +508,8 @@ object OmitPropstitlestringundefAriaautocomplete {
     __obj.asInstanceOf[OmitPropstitlestringundefAriaautocomplete]
   }
   
-  extension [Self <: OmitPropstitlestringundefAriaautocomplete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitPropstitlestringundefAriaautocomplete] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

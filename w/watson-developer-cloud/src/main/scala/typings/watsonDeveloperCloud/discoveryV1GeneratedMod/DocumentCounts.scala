@@ -26,7 +26,8 @@ object DocumentCounts {
     __obj.asInstanceOf[DocumentCounts]
   }
   
-  extension [Self <: DocumentCounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentCounts] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: Double): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     

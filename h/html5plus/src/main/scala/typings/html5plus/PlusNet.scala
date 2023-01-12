@@ -32,7 +32,8 @@ object PlusNet {
     __obj.asInstanceOf[PlusNet]
   }
   
-  extension [Self <: PlusNet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNet] (val x: Self) extends AnyVal {
     
     inline def setProgressEvent(value: PlusNetProgressEvent): Self = StObject.set(x, "ProgressEvent", value.asInstanceOf[js.Any])
     

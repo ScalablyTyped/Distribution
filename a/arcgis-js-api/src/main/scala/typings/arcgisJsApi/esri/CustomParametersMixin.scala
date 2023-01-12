@@ -20,7 +20,8 @@ object CustomParametersMixin {
     __obj.asInstanceOf[CustomParametersMixin]
   }
   
-  extension [Self <: CustomParametersMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomParametersMixin] (val x: Self) extends AnyVal {
     
     inline def setCustomParameters(value: Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
   }

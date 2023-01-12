@@ -35,7 +35,8 @@ object ISaverDef {
     __obj.asInstanceOf[ISaverDef]
   }
   
-  extension [Self <: ISaverDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISaverDef] (val x: Self) extends AnyVal {
     
     inline def setFilenameTensorName(value: String): Self = StObject.set(x, "filenameTensorName", value.asInstanceOf[js.Any])
     

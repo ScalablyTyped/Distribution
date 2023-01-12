@@ -18,7 +18,8 @@ object SetStorageClassOptions {
     __obj.asInstanceOf[SetStorageClassOptions]
   }
   
-  extension [Self <: SetStorageClassOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetStorageClassOptions] (val x: Self) extends AnyVal {
     
     inline def setPreconditionOpts(value: PreconditionOptions): Self = StObject.set(x, "preconditionOpts", value.asInstanceOf[js.Any])
     

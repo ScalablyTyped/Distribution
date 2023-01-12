@@ -22,7 +22,8 @@ object ShouldDestroyOnFileDelete {
     __obj.asInstanceOf[ShouldDestroyOnFileDelete]
   }
   
-  extension [Self <: ShouldDestroyOnFileDelete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShouldDestroyOnFileDelete] (val x: Self) extends AnyVal {
     
     inline def setShouldDestroyOnFileDelete(value: () => Boolean): Self = StObject.set(x, "shouldDestroyOnFileDelete", js.Any.fromFunction0(value))
     

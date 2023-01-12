@@ -35,7 +35,8 @@ object CONFIGKEYDATASERVICE {
     __obj.asInstanceOf[CONFIGKEYDATASERVICE]
   }
   
-  extension [Self <: CONFIGKEYDATASERVICE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CONFIGKEYDATASERVICE] (val x: Self) extends AnyVal {
     
     inline def setCONFIG_KEY_DATA_SERVICE(value: `0`): Self = StObject.set(x, "CONFIG_KEY_DATA_SERVICE", value.asInstanceOf[js.Any])
     

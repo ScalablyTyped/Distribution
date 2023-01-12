@@ -55,7 +55,8 @@ object RenderContext {
     __obj.asInstanceOf[RenderContext]
   }
   
-  extension [Self <: RenderContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderContext] (val x: Self) extends AnyVal {
     
     inline def setBindRenderTarget(value: () => scala.Unit): Self = StObject.set(x, "bindRenderTarget", js.Any.fromFunction0(value))
     

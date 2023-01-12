@@ -197,7 +197,8 @@ object coreMapDataRequestMod {
       __obj.asInstanceOf[MapDataRequestStatus]
     }
     
-    extension [Self <: MapDataRequestStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapDataRequestStatus] (val x: Self) extends AnyVal {
       
       inline def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
       

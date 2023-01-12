@@ -63,7 +63,8 @@ object enigmaJS {
       __obj.asInstanceOf[IGeneratedAPI]
     }
     
-    extension [Self <: IGeneratedAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGeneratedAPI] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: changed | closed => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       

@@ -24,7 +24,8 @@ object ReadJobRequestwaiterWaite {
     __obj.asInstanceOf[ReadJobRequestwaiterWaite]
   }
   
-  extension [Self <: ReadJobRequestwaiterWaite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadJobRequestwaiterWaite] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

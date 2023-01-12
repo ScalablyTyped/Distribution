@@ -135,7 +135,8 @@ object newrelic {
       __obj.asInstanceOf[EventObject]
     }
     
-    extension [Self <: EventObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventObject] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object newrelic {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: String): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

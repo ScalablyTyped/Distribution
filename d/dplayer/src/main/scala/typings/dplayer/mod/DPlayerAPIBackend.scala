@@ -20,7 +20,8 @@ object DPlayerAPIBackend {
     __obj.asInstanceOf[DPlayerAPIBackend]
   }
   
-  extension [Self <: DPlayerAPIBackend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DPlayerAPIBackend] (val x: Self) extends AnyVal {
     
     inline def setRead(value: (Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
     

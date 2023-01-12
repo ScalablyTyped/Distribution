@@ -22,7 +22,8 @@ object VerifiedPublisher {
     __obj.asInstanceOf[VerifiedPublisher]
   }
   
-  extension [Self <: VerifiedPublisher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifiedPublisher] (val x: Self) extends AnyVal {
     
     inline def setAddedDateTime(value: NullableOption[String]): Self = StObject.set(x, "addedDateTime", value.asInstanceOf[js.Any])
     

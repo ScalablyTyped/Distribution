@@ -21,7 +21,8 @@ object ReadonlyFrameAnimationEve {
     __obj.asInstanceOf[ReadonlyFrameAnimationEve]
   }
   
-  extension [Self <: ReadonlyFrameAnimationEve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyFrameAnimationEve] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Frame): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

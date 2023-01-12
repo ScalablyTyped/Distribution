@@ -107,7 +107,8 @@ object xRFeaturesWebXRPlaneDetectorMod {
       __obj.asInstanceOf[IWebXRPlane]
     }
     
-    extension [Self <: IWebXRPlane](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRPlane] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object xRFeaturesWebXRPlaneDetectorMod {
       __obj.asInstanceOf[IWebXRPlaneDetectorOptions]
     }
     
-    extension [Self <: IWebXRPlaneDetectorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRPlaneDetectorOptions] (val x: Self) extends AnyVal {
       
       inline def setDoNotRemovePlanesOnSessionEnded(value: Boolean): Self = StObject.set(x, "doNotRemovePlanesOnSessionEnded", value.asInstanceOf[js.Any])
       

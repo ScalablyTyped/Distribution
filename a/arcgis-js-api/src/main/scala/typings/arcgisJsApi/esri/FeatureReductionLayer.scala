@@ -20,7 +20,8 @@ object FeatureReductionLayer {
     __obj.asInstanceOf[FeatureReductionLayer]
   }
   
-  extension [Self <: FeatureReductionLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureReductionLayer] (val x: Self) extends AnyVal {
     
     inline def setFeatureReduction(value: FeatureReductionBinning | FeatureReductionCluster | FeatureReductionSelection): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object GetCustomerIndexStatsResponse {
     __obj.asInstanceOf[GetCustomerIndexStatsResponse]
   }
   
-  extension [Self <: GetCustomerIndexStatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCustomerIndexStatsResponse] (val x: Self) extends AnyVal {
     
     inline def setAverageIndexedItemCount(value: String): Self = StObject.set(x, "averageIndexedItemCount", value.asInstanceOf[js.Any])
     

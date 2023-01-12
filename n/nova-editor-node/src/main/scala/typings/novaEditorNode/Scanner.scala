@@ -54,7 +54,8 @@ object Scanner {
     __obj.asInstanceOf[Scanner]
   }
   
-  extension [Self <: Scanner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scanner] (val x: Self) extends AnyVal {
     
     inline def setAtEnd(value: Boolean): Self = StObject.set(x, "atEnd", value.asInstanceOf[js.Any])
     

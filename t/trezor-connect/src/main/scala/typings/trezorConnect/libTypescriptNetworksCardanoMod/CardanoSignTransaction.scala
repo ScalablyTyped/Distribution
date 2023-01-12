@@ -57,7 +57,8 @@ object CardanoSignTransaction {
     __obj.asInstanceOf[CardanoSignTransaction]
   }
   
-  extension [Self <: CardanoSignTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoSignTransaction] (val x: Self) extends AnyVal {
     
     inline def setAdditionalWitnessRequests(value: js.Array[String | js.Array[Double]]): Self = StObject.set(x, "additionalWitnessRequests", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IPropertyDefsAdmin {
     __obj.asInstanceOf[IPropertyDefsAdmin]
   }
   
-  extension [Self <: IPropertyDefsAdmin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPropertyDefsAdmin] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

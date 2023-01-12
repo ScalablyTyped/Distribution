@@ -254,7 +254,8 @@ object mod {
       __obj.asInstanceOf[BulkOperation]
     }
     
-    extension [Self <: BulkOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BulkOperation] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: Any): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
@@ -279,7 +280,8 @@ object mod {
       __obj.asInstanceOf[IdentityVerificationOptions]
     }
     
-    extension [Self <: IdentityVerificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentityVerificationOptions] (val x: Self) extends AnyVal {
       
       inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       

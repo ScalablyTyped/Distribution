@@ -21,7 +21,8 @@ object SvgClassName {
     __obj.asInstanceOf[SvgClassName]
   }
   
-  extension [Self <: SvgClassName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SvgClassName] (val x: Self) extends AnyVal {
     
     inline def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object sapUiIntegrationEditorEditorMod {
       __obj.asInstanceOf[EditorFacade]
     }
     
-    extension [Self <: EditorFacade](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorFacade] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: DataType => js.Promise[Any]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
       

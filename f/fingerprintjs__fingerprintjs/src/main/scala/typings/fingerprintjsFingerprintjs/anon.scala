@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Duration]
     }
     
-    extension [Self <: Duration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Error[T]]
     }
     
-    extension [Self <: Error[?], T](x: Self & Error[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error[?], T] (val x: Self & Error[T]) extends AnyVal {
       
       inline def setError(value: Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -55,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -73,7 +76,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyGetOptions]
     }
     
-    extension [Self <: ReadonlyGetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyGetOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -97,7 +101,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyLoadOptions]
     }
     
-    extension [Self <: ReadonlyLoadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyLoadOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -129,7 +134,8 @@ object anon {
       __obj.asInstanceOf[valueundefinederrorErrorm]
     }
     
-    extension [Self <: valueundefinederrorErrorm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: valueundefinederrorErrorm] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object RegionalinventoryCustomBatchResponseEntry {
     __obj.asInstanceOf[RegionalinventoryCustomBatchResponseEntry]
   }
   
-  extension [Self <: RegionalinventoryCustomBatchResponseEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionalinventoryCustomBatchResponseEntry] (val x: Self) extends AnyVal {
     
     inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     

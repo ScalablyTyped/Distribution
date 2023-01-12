@@ -18,7 +18,8 @@ object TriggerProperties {
     __obj.asInstanceOf[TriggerProperties]
   }
   
-  extension [Self <: TriggerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TriggerProperties] (val x: Self) extends AnyVal {
     
     inline def setScheduled(value: ScheduledTriggerProperties): Self = StObject.set(x, "Scheduled", value.asInstanceOf[js.Any])
     

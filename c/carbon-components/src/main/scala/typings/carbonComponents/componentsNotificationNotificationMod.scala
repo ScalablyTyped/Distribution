@@ -56,7 +56,8 @@ object componentsNotificationNotificationMod {
       __obj.asInstanceOf[Notification]
     }
     
-    extension [Self <: Notification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
       
       inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
       
@@ -86,7 +87,8 @@ object componentsNotificationNotificationMod {
       __obj.asInstanceOf[NotificationOptions]
     }
     
-    extension [Self <: NotificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationOptions] (val x: Self) extends AnyVal {
       
       inline def setEventAfterDeleteNotification(value: String): Self = StObject.set(x, "eventAfterDeleteNotification", value.asInstanceOf[js.Any])
       

@@ -152,7 +152,8 @@ object XAccessibleEditableText {
     __obj.asInstanceOf[XAccessibleEditableText]
   }
   
-  extension [Self <: XAccessibleEditableText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleEditableText] (val x: Self) extends AnyVal {
     
     inline def setCutText(value: (Double, Double) => Boolean): Self = StObject.set(x, "cutText", js.Any.fromFunction2(value))
     

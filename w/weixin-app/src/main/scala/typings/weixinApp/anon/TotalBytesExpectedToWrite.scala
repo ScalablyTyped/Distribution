@@ -22,7 +22,8 @@ object TotalBytesExpectedToWrite {
     __obj.asInstanceOf[TotalBytesExpectedToWrite]
   }
   
-  extension [Self <: TotalBytesExpectedToWrite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TotalBytesExpectedToWrite] (val x: Self) extends AnyVal {
     
     inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     

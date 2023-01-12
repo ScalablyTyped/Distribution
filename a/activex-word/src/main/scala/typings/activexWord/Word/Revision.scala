@@ -62,7 +62,8 @@ object Revision {
     __obj.asInstanceOf[Revision]
   }
   
-  extension [Self <: Revision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Revision] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: () => Unit): Self = StObject.set(x, "Accept", js.Any.fromFunction0(value))
     

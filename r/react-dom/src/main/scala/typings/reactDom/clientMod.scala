@@ -40,7 +40,8 @@ object clientMod {
       __obj.asInstanceOf[HydrationOptions]
     }
     
-    extension [Self <: HydrationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HydrationOptions] (val x: Self) extends AnyVal {
       
       inline def setIdentifierPrefix(value: String): Self = StObject.set(x, "identifierPrefix", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object clientMod {
       __obj.asInstanceOf[Root]
     }
     
-    extension [Self <: Root](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
       
       inline def setRender(value: ReactNode => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
@@ -89,7 +91,8 @@ object clientMod {
       __obj.asInstanceOf[RootOptions]
     }
     
-    extension [Self <: RootOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootOptions] (val x: Self) extends AnyVal {
       
       inline def setIdentifierPrefix(value: String): Self = StObject.set(x, "identifierPrefix", value.asInstanceOf[js.Any])
       

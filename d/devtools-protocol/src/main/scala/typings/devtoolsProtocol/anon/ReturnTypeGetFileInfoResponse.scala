@@ -19,7 +19,8 @@ object ReturnTypeGetFileInfoResponse {
     __obj.asInstanceOf[ReturnTypeGetFileInfoResponse]
   }
   
-  extension [Self <: ReturnTypeGetFileInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetFileInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetFileInfoRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

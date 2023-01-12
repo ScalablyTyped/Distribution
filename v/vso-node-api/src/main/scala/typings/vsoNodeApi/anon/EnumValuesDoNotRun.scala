@@ -15,7 +15,8 @@ object EnumValuesDoNotRun {
     __obj.asInstanceOf[EnumValuesDoNotRun]
   }
   
-  extension [Self <: EnumValuesDoNotRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesDoNotRun] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: DoNotRun): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

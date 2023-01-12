@@ -43,7 +43,8 @@ object QuotaUserUserIp {
     __obj.asInstanceOf[QuotaUserUserIp]
   }
   
-  extension [Self <: QuotaUserUserIp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuotaUserUserIp] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

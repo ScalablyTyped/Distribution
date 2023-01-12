@@ -45,7 +45,8 @@ object libEsmPuppeteerCommonQueryHandlerMod {
       __obj.asInstanceOf[CustomQueryHandler]
     }
     
-    extension [Self <: CustomQueryHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomQueryHandler] (val x: Self) extends AnyVal {
       
       inline def setQueryAll(value: (/* node */ Node, /* selector */ String) => js.Array[Node]): Self = StObject.set(x, "queryAll", js.Any.fromFunction2(value))
       
@@ -85,7 +86,8 @@ object libEsmPuppeteerCommonQueryHandlerMod {
       __obj.asInstanceOf[InternalQueryHandler]
     }
     
-    extension [Self <: InternalQueryHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalQueryHandler] (val x: Self) extends AnyVal {
       
       inline def setQueryAll(
         value: (/* node */ Node, /* selector */ String, /* PuppeteerUtil */ PuppeteerUtil) => js.Array[Node]
@@ -147,7 +149,8 @@ object libEsmPuppeteerCommonQueryHandlerMod {
       __obj.asInstanceOf[PuppeteerQueryHandler]
     }
     
-    extension [Self <: PuppeteerQueryHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PuppeteerQueryHandler] (val x: Self) extends AnyVal {
       
       inline def setQueryAll(
         value: (/* element */ ElementHandle[Node], /* selector */ String) => js.Promise[js.Array[ElementHandle[Node]]]

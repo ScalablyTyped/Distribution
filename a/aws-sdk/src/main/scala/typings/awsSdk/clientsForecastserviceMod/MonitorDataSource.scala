@@ -28,7 +28,8 @@ object MonitorDataSource {
     __obj.asInstanceOf[MonitorDataSource]
   }
   
-  extension [Self <: MonitorDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitorDataSource] (val x: Self) extends AnyVal {
     
     inline def setDatasetImportJobArn(value: Arn): Self = StObject.set(x, "DatasetImportJobArn", value.asInstanceOf[js.Any])
     

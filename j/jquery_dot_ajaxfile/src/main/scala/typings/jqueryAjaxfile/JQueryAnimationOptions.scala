@@ -75,7 +75,8 @@ object JQueryAnimationOptions {
     __obj.asInstanceOf[JQueryAnimationOptions]
   }
   
-  extension [Self <: JQueryAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setAlways(value: (/* animation */ JQueryPromise[Any], /* jumpedToEnd */ Boolean) => Any): Self = StObject.set(x, "always", js.Any.fromFunction2(value))
     

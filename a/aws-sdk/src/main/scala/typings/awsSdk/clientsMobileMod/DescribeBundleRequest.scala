@@ -18,7 +18,8 @@ object DescribeBundleRequest {
     __obj.asInstanceOf[DescribeBundleRequest]
   }
   
-  extension [Self <: DescribeBundleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBundleRequest] (val x: Self) extends AnyVal {
     
     inline def setBundleId(value: BundleId): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
   }

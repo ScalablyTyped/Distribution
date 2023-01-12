@@ -38,7 +38,8 @@ object LambdaFunctionInfo {
     __obj.asInstanceOf[LambdaFunctionInfo]
   }
   
-  extension [Self <: LambdaFunctionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaFunctionInfo] (val x: Self) extends AnyVal {
     
     inline def setCurrentVersion(value: Version): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object PatternSquaresDef_ {
     __obj.asInstanceOf[PatternSquaresDef_]
   }
   
-  extension [Self <: PatternSquaresDef_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatternSquaresDef_] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

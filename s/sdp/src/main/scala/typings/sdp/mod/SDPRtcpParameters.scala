@@ -23,7 +23,8 @@ object SDPRtcpParameters {
     __obj.asInstanceOf[SDPRtcpParameters]
   }
   
-  extension [Self <: SDPRtcpParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDPRtcpParameters] (val x: Self) extends AnyVal {
     
     inline def setCname(value: String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
     

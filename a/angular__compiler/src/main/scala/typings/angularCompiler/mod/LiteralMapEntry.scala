@@ -21,7 +21,8 @@ object LiteralMapEntry {
     __obj.asInstanceOf[LiteralMapEntry]
   }
   
-  extension [Self <: LiteralMapEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiteralMapEntry] (val x: Self) extends AnyVal {
     
     inline def setIsEquivalent(value: LiteralMapEntry => Boolean): Self = StObject.set(x, "isEquivalent", js.Any.fromFunction1(value))
     

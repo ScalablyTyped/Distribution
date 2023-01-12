@@ -34,7 +34,8 @@ object namespacesDevtoolsNetworkMod {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setGetContent(value: () => js.Promise[js.Tuple2[String, String]]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       }
@@ -74,7 +75,8 @@ object namespacesDevtoolsNetworkMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setGetHAR(value: () => js.Promise[GetHARCallbackHarLogType]): Self = StObject.set(x, "getHAR", js.Any.fromFunction0(value))
         

@@ -86,7 +86,8 @@ object mod {
       __obj.asInstanceOf[UnusedWebpackPluginOptions]
     }
     
-    extension [Self <: UnusedWebpackPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnusedWebpackPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setDirectories(value: js.Array[String]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
       

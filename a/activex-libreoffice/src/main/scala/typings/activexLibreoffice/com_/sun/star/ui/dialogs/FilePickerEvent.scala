@@ -25,7 +25,8 @@ object FilePickerEvent {
     __obj.asInstanceOf[FilePickerEvent]
   }
   
-  extension [Self <: FilePickerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePickerEvent] (val x: Self) extends AnyVal {
     
     inline def setElementId(value: Double): Self = StObject.set(x, "ElementId", value.asInstanceOf[js.Any])
   }

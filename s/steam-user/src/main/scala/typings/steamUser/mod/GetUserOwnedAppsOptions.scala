@@ -19,7 +19,8 @@ object GetUserOwnedAppsOptions {
     __obj.asInstanceOf[GetUserOwnedAppsOptions]
   }
   
-  extension [Self <: GetUserOwnedAppsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUserOwnedAppsOptions] (val x: Self) extends AnyVal {
     
     inline def setFilterAppids(value: js.Array[Double]): Self = StObject.set(x, "filterAppids", value.asInstanceOf[js.Any])
     

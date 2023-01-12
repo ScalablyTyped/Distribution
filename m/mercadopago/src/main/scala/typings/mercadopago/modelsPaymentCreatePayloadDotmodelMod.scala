@@ -42,7 +42,8 @@ object modelsPaymentCreatePayloadDotmodelMod {
       __obj.asInstanceOf[AdditionalInfo]
     }
     
-    extension [Self <: AdditionalInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalInfo] (val x: Self) extends AnyVal {
       
       inline def setIp_address(value: String): Self = StObject.set(x, "ip_address", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object modelsPaymentCreatePayloadDotmodelMod {
       __obj.asInstanceOf[CreatePaymentPayload]
     }
     
-    extension [Self <: CreatePaymentPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreatePaymentPayload] (val x: Self) extends AnyVal {
       
       inline def setAdditional_info(value: AdditionalInfo): Self = StObject.set(x, "additional_info", value.asInstanceOf[js.Any])
       
@@ -247,7 +249,8 @@ object modelsPaymentCreatePayloadDotmodelMod {
       __obj.asInstanceOf[PayerAdditionalInfo]
     }
     
-    extension [Self <: PayerAdditionalInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayerAdditionalInfo] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: SimpleAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -281,7 +284,8 @@ object modelsPaymentCreatePayloadDotmodelMod {
       __obj.asInstanceOf[PaymentItem]
     }
     
-    extension [Self <: PaymentItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentItem] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -303,7 +307,8 @@ object modelsPaymentCreatePayloadDotmodelMod {
       __obj.asInstanceOf[PaymentOrder]
     }
     
-    extension [Self <: PaymentOrder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentOrder] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -342,7 +347,8 @@ object modelsPaymentCreatePayloadDotmodelMod {
       __obj.asInstanceOf[PaymentPayer]
     }
     
-    extension [Self <: PaymentPayer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentPayer] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -390,7 +396,8 @@ object modelsPaymentCreatePayloadDotmodelMod {
       __obj.asInstanceOf[Shipments]
     }
     
-    extension [Self <: Shipments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shipments] (val x: Self) extends AnyVal {
       
       inline def setReceiver_address(value: String): Self = StObject.set(x, "receiver_address", value.asInstanceOf[js.Any])
       

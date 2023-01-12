@@ -24,7 +24,8 @@ object BrowserContextOptions {
     __obj.asInstanceOf[BrowserContextOptions]
   }
   
-  extension [Self <: BrowserContextOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserContextOptions] (val x: Self) extends AnyVal {
     
     inline def setProxyBypassList(value: js.Array[String]): Self = StObject.set(x, "proxyBypassList", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListLunaClientsResponse {
     __obj.asInstanceOf[ListLunaClientsResponse]
   }
   
-  extension [Self <: ListLunaClientsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLunaClientsResponse] (val x: Self) extends AnyVal {
     
     inline def setClientList(value: ClientList): Self = StObject.set(x, "ClientList", value.asInstanceOf[js.Any])
     

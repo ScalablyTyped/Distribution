@@ -40,7 +40,8 @@ object IOpenJsCadOptions {
     __obj.asInstanceOf[IOpenJsCadOptions]
   }
   
-  extension [Self <: IOpenJsCadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOpenJsCadOptions] (val x: Self) extends AnyVal {
     
     inline def setExtrusion(value: Double): Self = StObject.set(x, "extrusion", value.asInstanceOf[js.Any])
     

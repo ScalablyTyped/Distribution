@@ -33,7 +33,8 @@ object PartnerEventSourceAccount {
     __obj.asInstanceOf[PartnerEventSourceAccount]
   }
   
-  extension [Self <: PartnerEventSourceAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartnerEventSourceAccount] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: AccountId): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     

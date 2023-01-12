@@ -83,7 +83,8 @@ object libTypographyBaseMod extends Shortcut {
       __obj.asInstanceOf[BlockProps[C]]
     }
     
-    extension [Self <: BlockProps[?], C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */](x: Self & BlockProps[C]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockProps[?], C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */] (val x: Self & BlockProps[C]) extends AnyVal {
       
       inline def setCode(value: Boolean): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -156,7 +157,8 @@ object libTypographyBaseMod extends Shortcut {
       __obj.asInstanceOf[CopyConfig]
     }
     
-    extension [Self <: CopyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyConfig] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: textSlashplain | textSlashhtml): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -213,7 +215,8 @@ object libTypographyBaseMod extends Shortcut {
       __obj.asInstanceOf[EditConfig]
     }
     
-    extension [Self <: EditConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditConfig] (val x: Self) extends AnyVal {
       
       inline def setAutoSize(value: Boolean | AutoSizeType): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
       
@@ -290,7 +293,8 @@ object libTypographyBaseMod extends Shortcut {
       __obj.asInstanceOf[EllipsisConfig]
     }
     
-    extension [Self <: EllipsisConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EllipsisConfig] (val x: Self) extends AnyVal {
       
       inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
       

@@ -96,7 +96,8 @@ object Config {
       __obj.asInstanceOf[Assets]
     }
     
-    extension [Self <: Assets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Assets] (val x: Self) extends AnyVal {
       
       inline def setInlineImageMaxSize(value: Double): Self = StObject.set(x, "inlineImageMaxSize", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object Config {
       __obj.asInstanceOf[Babel]
     }
     
-    extension [Self <: Babel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Babel] (val x: Self) extends AnyVal {
       
       inline def setJsx(value: String): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object Config {
         __obj.asInstanceOf[LoaderOptions]
       }
       
-      extension [Self <: LoaderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
         
         inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
         
@@ -203,7 +206,8 @@ object Config {
       }
     }
     
-    extension [Self <: Css](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Css] (val x: Self) extends AnyVal {
       
       inline def setExtract(value: Boolean): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
       
@@ -263,7 +267,8 @@ object Config {
       __obj.asInstanceOf[DevServer]
     }
     
-    extension [Self <: DevServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DevServer] (val x: Self) extends AnyVal {
       
       inline def setAfter(
         value: /* import warning: importer.ImportType#apply Failed type conversion: webpack-dev-server.webpack-dev-server.Configuration['after'] */ js.Any
@@ -347,7 +352,8 @@ object Config {
   
   type Envs = StringDictionary[String]
   
-  extension [Self <: Config](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: Assets): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
@@ -459,7 +465,8 @@ object Config {
         __obj.asInstanceOf[FileNames]
       }
       
-      extension [Self <: FileNames](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FileNames] (val x: Self) extends AnyVal {
         
         inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
         
@@ -498,7 +505,8 @@ object Config {
         __obj.asInstanceOf[HtmlOptions]
       }
       
-      extension [Self <: HtmlOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HtmlOptions] (val x: Self) extends AnyVal {
         
         inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
         
@@ -518,7 +526,8 @@ object Config {
       }
     }
     
-    extension [Self <: Output](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
       
       inline def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
       
@@ -579,7 +588,8 @@ object Config {
       __obj.asInstanceOf[PluginOption]
     }
     
-    extension [Self <: PluginOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginOption] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

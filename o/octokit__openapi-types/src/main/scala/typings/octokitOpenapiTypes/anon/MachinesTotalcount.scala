@@ -17,7 +17,8 @@ object MachinesTotalcount {
     __obj.asInstanceOf[MachinesTotalcount]
   }
   
-  extension [Self <: MachinesTotalcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MachinesTotalcount] (val x: Self) extends AnyVal {
     
     inline def setMachines(value: js.Array[Cpus]): Self = StObject.set(x, "machines", value.asInstanceOf[js.Any])
     

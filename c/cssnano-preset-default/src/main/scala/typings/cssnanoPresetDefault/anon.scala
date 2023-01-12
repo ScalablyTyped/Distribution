@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Exclude]
     }
     
-    extension [Self <: Exclude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exclude] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: `true`): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Optionsexcludetrueundefin]
     }
     
-    extension [Self <: Optionsexcludetrueundefin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsexcludetrueundefin] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: `true`): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object anon {
       __obj.asInstanceOf[OptionsexcludetrueundefinAdd]
     }
     
-    extension [Self <: OptionsexcludetrueundefinAdd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsexcludetrueundefinAdd] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
@@ -160,7 +163,8 @@ object anon {
       __obj.asInstanceOf[OptionsexcludetrueundefinAngle]
     }
     
-    extension [Self <: OptionsexcludetrueundefinAngle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsexcludetrueundefinAngle] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Boolean): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -453,7 +457,8 @@ object anon {
       __obj.asInstanceOf[OptionsexcludetrueundefinDefaultProtocol]
     }
     
-    extension [Self <: OptionsexcludetrueundefinDefaultProtocol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsexcludetrueundefinDefaultProtocol] (val x: Self) extends AnyVal {
       
       inline def setDefaultProtocol(value: https | http): Self = StObject.set(x, "defaultProtocol", value.asInstanceOf[js.Any])
       
@@ -547,7 +552,8 @@ object anon {
       __obj.asInstanceOf[OptionsexcludetrueundefinEncode]
     }
     
-    extension [Self <: OptionsexcludetrueundefinEncode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsexcludetrueundefinEncode] (val x: Self) extends AnyVal {
       
       inline def setEncode(value: Boolean): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
       
@@ -583,7 +589,8 @@ object anon {
       __obj.asInstanceOf[OptionsexcludetrueundefinExclude]
     }
     
-    extension [Self <: OptionsexcludetrueundefinExclude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsexcludetrueundefinExclude] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: `true`): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -617,7 +624,8 @@ object anon {
       __obj.asInstanceOf[OptionsexcludetrueundefinPreferredQuote]
     }
     
-    extension [Self <: OptionsexcludetrueundefinPreferredQuote](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsexcludetrueundefinPreferredQuote] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: `true`): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -640,7 +648,8 @@ object anon {
       __obj.asInstanceOf[Plugins]
     }
     
-    extension [Self <: Plugins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
       
       inline def setPlugins(value: js.Array[js.Tuple2[PluginCreator[Any], js.UndefOr[Boolean | (Record[String, Any])]]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
@@ -670,7 +679,8 @@ object anon {
       __obj.asInstanceOf[PostCssCalcOptionsexclude]
     }
     
-    extension [Self <: PostCssCalcOptionsexclude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostCssCalcOptionsexclude] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: `true`): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       

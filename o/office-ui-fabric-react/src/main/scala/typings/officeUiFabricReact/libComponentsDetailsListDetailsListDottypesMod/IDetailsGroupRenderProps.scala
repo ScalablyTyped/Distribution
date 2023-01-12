@@ -24,7 +24,8 @@ object IDetailsGroupRenderProps {
     __obj.asInstanceOf[IDetailsGroupRenderProps]
   }
   
-  extension [Self <: IDetailsGroupRenderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDetailsGroupRenderProps] (val x: Self) extends AnyVal {
     
     inline def setOnRenderFooter(
       value: (/* props */ js.UndefOr[IDetailsGroupDividerProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsGroupDividerProps], Element | Null]]) => Element | Null

@@ -178,7 +178,8 @@ object srcModelOperationRootattributeoperationMod {
       __obj.asInstanceOf[RootAttributeOperation[O, N]]
     }
     
-    extension [Self <: RootAttributeOperation[?, ?], O, N](x: Self & (RootAttributeOperation[O, N])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootAttributeOperation[?, ?], O, N] (val x: Self & (RootAttributeOperation[O, N])) extends AnyVal {
       
       inline def setClone_(value: () => RootAttributeOperation[Any, Any]): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
       

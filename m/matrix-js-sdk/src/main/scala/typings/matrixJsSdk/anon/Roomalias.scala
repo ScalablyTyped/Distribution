@@ -17,7 +17,8 @@ object Roomalias {
     __obj.asInstanceOf[Roomalias]
   }
   
-  extension [Self <: Roomalias](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Roomalias] (val x: Self) extends AnyVal {
     
     inline def setRoom_alias(value: String): Self = StObject.set(x, "room_alias", value.asInstanceOf[js.Any])
     

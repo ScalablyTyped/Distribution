@@ -31,7 +31,8 @@ object XConfigurationChangeListener {
     __obj.asInstanceOf[XConfigurationChangeListener]
   }
   
-  extension [Self <: XConfigurationChangeListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConfigurationChangeListener] (val x: Self) extends AnyVal {
     
     inline def setNotifyConfigurationChange(value: ConfigurationChangeEvent => Unit): Self = StObject.set(x, "notifyConfigurationChange", js.Any.fromFunction1(value))
   }

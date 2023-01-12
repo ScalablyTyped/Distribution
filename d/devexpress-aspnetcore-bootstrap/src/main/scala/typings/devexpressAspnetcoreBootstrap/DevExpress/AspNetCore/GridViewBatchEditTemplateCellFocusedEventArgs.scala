@@ -19,7 +19,8 @@ object GridViewBatchEditTemplateCellFocusedEventArgs {
     __obj.asInstanceOf[GridViewBatchEditTemplateCellFocusedEventArgs]
   }
   
-  extension [Self <: GridViewBatchEditTemplateCellFocusedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridViewBatchEditTemplateCellFocusedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: BootstrapGridViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

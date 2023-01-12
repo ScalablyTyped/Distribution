@@ -43,7 +43,8 @@ object MedicationKnowledgeCost {
     __obj.asInstanceOf[MedicationKnowledgeCost]
   }
   
-  extension [Self <: MedicationKnowledgeCost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationKnowledgeCost] (val x: Self) extends AnyVal {
     
     inline def setCostCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "costCodeableConcept", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object distLoggerMessageMod {
       __obj.asInstanceOf[LogFormattersMap]
     }
     
-    extension [Self <: LogFormattersMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogFormattersMap] (val x: Self) extends AnyVal {
       
       inline def setJson(value: /* msg */ LogMessage => String): Self = StObject.set(x, "json", js.Any.fromFunction1(value))
       
@@ -65,7 +66,8 @@ object distLoggerMessageMod {
       __obj.asInstanceOf[LogMessage]
     }
     
-    extension [Self <: LogMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogMessage] (val x: Self) extends AnyVal {
       
       inline def setContext(value: LogContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

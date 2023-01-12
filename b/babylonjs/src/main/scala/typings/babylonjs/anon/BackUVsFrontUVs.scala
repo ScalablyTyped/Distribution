@@ -28,7 +28,8 @@ object BackUVsFrontUVs {
     __obj.asInstanceOf[BackUVsFrontUVs]
   }
   
-  extension [Self <: BackUVsFrontUVs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackUVsFrontUVs] (val x: Self) extends AnyVal {
     
     inline def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     

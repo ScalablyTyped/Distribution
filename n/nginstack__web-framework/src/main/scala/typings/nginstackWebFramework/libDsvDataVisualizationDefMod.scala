@@ -38,7 +38,8 @@ object libDsvDataVisualizationDefMod {
       __obj.asInstanceOf[DataVisualizationDef]
     }
     
-    extension [Self <: DataVisualizationDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataVisualizationDef] (val x: Self) extends AnyVal {
       
       inline def setDataSourceQuery(value: (Record[Any, Any]) | Double): Self = StObject.set(x, "dataSourceQuery", value.asInstanceOf[js.Any])
       

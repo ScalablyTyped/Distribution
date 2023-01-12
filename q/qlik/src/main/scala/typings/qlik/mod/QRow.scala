@@ -23,7 +23,8 @@ object QRow {
     __obj.asInstanceOf[QRow]
   }
   
-  extension [Self <: QRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRow] (val x: Self) extends AnyVal {
     
     inline def setCells(value: js.Array[QDimensionCell | QMeasureCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     

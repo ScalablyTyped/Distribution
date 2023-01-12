@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[DebouncedSearch]
     }
     
-    extension [Self <: DebouncedSearch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebouncedSearch] (val x: Self) extends AnyVal {
       
       inline def setDebouncedSearch(value: String => Unit): Self = StObject.set(x, "debouncedSearch", js.Any.fromFunction1(value))
       

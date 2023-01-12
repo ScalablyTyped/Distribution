@@ -38,7 +38,8 @@ object DragEventUIParam {
     __obj.asInstanceOf[DragEventUIParam]
   }
   
-  extension [Self <: DragEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setHelper(value: String): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     

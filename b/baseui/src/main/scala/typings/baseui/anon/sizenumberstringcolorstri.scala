@@ -49,7 +49,8 @@ object sizenumberstringcolorstri {
     __obj.asInstanceOf[sizenumberstringcolorstri]
   }
   
-  extension [Self <: sizenumberstringcolorstri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sizenumberstringcolorstri] (val x: Self) extends AnyVal {
     
     inline def set$closeable(value: Boolean): Self = StObject.set(x, "$closeable", value.asInstanceOf[js.Any])
     

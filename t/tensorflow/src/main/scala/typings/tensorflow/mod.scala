@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[Graph_]
     }
     
-    extension [Self <: Graph_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Graph_] (val x: Self) extends AnyVal {
       
       inline def setCreateSession(value: () => Session): Self = StObject.set(x, "createSession", js.Any.fromFunction0(value))
       
@@ -111,7 +112,8 @@ object mod {
       __obj.asInstanceOf[Tensor_]
     }
     
-    extension [Self <: Tensor_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tensor_] (val x: Self) extends AnyVal {
       
       inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       

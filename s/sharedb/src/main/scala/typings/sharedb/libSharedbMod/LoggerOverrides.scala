@@ -19,7 +19,8 @@ object LoggerOverrides {
     __obj.asInstanceOf[LoggerOverrides]
   }
   
-  extension [Self <: LoggerOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggerOverrides] (val x: Self) extends AnyVal {
     
     inline def setError(value: LoggerFunction): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

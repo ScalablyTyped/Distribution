@@ -28,7 +28,8 @@ object FrameworkControl {
     __obj.asInstanceOf[FrameworkControl]
   }
   
-  extension [Self <: FrameworkControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameworkControl] (val x: Self) extends AnyVal {
     
     inline def setControlInputParameters(value: ControlInputParameters): Self = StObject.set(x, "ControlInputParameters", value.asInstanceOf[js.Any])
     

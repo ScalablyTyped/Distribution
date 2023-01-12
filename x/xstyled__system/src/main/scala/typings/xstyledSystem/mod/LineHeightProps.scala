@@ -16,7 +16,8 @@ object LineHeightProps {
     __obj.asInstanceOf[LineHeightProps[TLength]]
   }
   
-  extension [Self <: LineHeightProps[?], TLength](x: Self & LineHeightProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineHeightProps[?], TLength] (val x: Self & LineHeightProps[TLength]) extends AnyVal {
     
     inline def setLineHeight(value: ResponsiveValue[LineHeight[TLength]]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     

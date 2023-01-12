@@ -47,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Decode]
     }
     
-    extension [Self <: Decode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decode] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: (/* buffer */ Buffer, /* offset */ js.UndefOr[Double]) => Buffer): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
       

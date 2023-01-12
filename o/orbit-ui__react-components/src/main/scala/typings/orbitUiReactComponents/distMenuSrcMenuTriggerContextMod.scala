@@ -37,7 +37,8 @@ object distMenuSrcMenuTriggerContextMod {
       __obj.asInstanceOf[MenuTriggerContextType]
     }
     
-    extension [Self <: MenuTriggerContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuTriggerContextType] (val x: Self) extends AnyVal {
       
       inline def setClose(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       

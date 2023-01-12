@@ -78,7 +78,8 @@ object XIdlField2 {
     __obj.asInstanceOf[XIdlField2]
   }
   
-  extension [Self <: XIdlField2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIdlField2] (val x: Self) extends AnyVal {
     
     inline def setAccessMode(value: FieldAccessMode): Self = StObject.set(x, "AccessMode", value.asInstanceOf[js.Any])
     

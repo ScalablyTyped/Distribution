@@ -40,7 +40,8 @@ object GlyphRun {
     __obj.asInstanceOf[GlyphRun]
   }
   
-  extension [Self <: GlyphRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlyphRun] (val x: Self) extends AnyVal {
     
     inline def setFakeBold(value: Boolean): Self = StObject.set(x, "fakeBold", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object PutRetentionPolicyRequest {
     __obj.asInstanceOf[PutRetentionPolicyRequest]
   }
   
-  extension [Self <: PutRetentionPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRetentionPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     

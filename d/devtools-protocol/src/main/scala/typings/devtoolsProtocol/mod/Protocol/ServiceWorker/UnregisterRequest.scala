@@ -15,7 +15,8 @@ object UnregisterRequest {
     __obj.asInstanceOf[UnregisterRequest]
   }
   
-  extension [Self <: UnregisterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnregisterRequest] (val x: Self) extends AnyVal {
     
     inline def setScopeURL(value: String): Self = StObject.set(x, "scopeURL", value.asInstanceOf[js.Any])
   }

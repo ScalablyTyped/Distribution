@@ -28,7 +28,8 @@ object SetIdentityMailFromDomainRequest {
     __obj.asInstanceOf[SetIdentityMailFromDomainRequest]
   }
   
-  extension [Self <: SetIdentityMailFromDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetIdentityMailFromDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setBehaviorOnMXFailure(value: BehaviorOnMXFailure): Self = StObject.set(x, "BehaviorOnMXFailure", value.asInstanceOf[js.Any])
     

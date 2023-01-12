@@ -18,7 +18,8 @@ object SlotTypeStatistics {
     __obj.asInstanceOf[SlotTypeStatistics]
   }
   
-  extension [Self <: SlotTypeStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotTypeStatistics] (val x: Self) extends AnyVal {
     
     inline def setDiscoveredSlotTypeCount(value: Count): Self = StObject.set(x, "discoveredSlotTypeCount", value.asInstanceOf[js.Any])
     

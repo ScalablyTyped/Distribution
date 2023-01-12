@@ -49,7 +49,8 @@ object LogstashPipelineSettings {
     __obj.asInstanceOf[LogstashPipelineSettings]
   }
   
-  extension [Self <: LogstashPipelineSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogstashPipelineSettings] (val x: Self) extends AnyVal {
     
     inline def setPipelineDotbatchDotdelay(value: integer): Self = StObject.set(x, "pipeline.batch.delay", value.asInstanceOf[js.Any])
     

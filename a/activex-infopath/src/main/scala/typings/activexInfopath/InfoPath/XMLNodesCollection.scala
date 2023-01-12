@@ -22,7 +22,8 @@ object XMLNodesCollection {
     __obj.asInstanceOf[XMLNodesCollection]
   }
   
-  extension [Self <: XMLNodesCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLNodesCollection] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

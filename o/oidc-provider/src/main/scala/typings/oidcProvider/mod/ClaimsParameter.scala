@@ -18,7 +18,8 @@ object ClaimsParameter {
     __obj.asInstanceOf[ClaimsParameter]
   }
   
-  extension [Self <: ClaimsParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimsParameter] (val x: Self) extends AnyVal {
     
     inline def setId_token(value: StringDictionary[Null | ClaimsParameterMember]): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
     

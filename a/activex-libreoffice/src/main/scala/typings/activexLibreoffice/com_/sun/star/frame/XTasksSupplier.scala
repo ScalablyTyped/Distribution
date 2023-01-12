@@ -54,7 +54,8 @@ object XTasksSupplier {
     __obj.asInstanceOf[XTasksSupplier]
   }
   
-  extension [Self <: XTasksSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTasksSupplier] (val x: Self) extends AnyVal {
     
     inline def setActiveTask(value: XTask): Self = StObject.set(x, "ActiveTask", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object DeviceComplianceScheduledActionForRule {
     __obj.asInstanceOf[DeviceComplianceScheduledActionForRule]
   }
   
-  extension [Self <: DeviceComplianceScheduledActionForRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceComplianceScheduledActionForRule] (val x: Self) extends AnyVal {
     
     inline def setRuleName(value: NullableOption[String]): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
     

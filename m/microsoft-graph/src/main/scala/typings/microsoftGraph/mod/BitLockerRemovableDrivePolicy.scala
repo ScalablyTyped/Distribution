@@ -28,7 +28,8 @@ object BitLockerRemovableDrivePolicy {
     __obj.asInstanceOf[BitLockerRemovableDrivePolicy]
   }
   
-  extension [Self <: BitLockerRemovableDrivePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitLockerRemovableDrivePolicy] (val x: Self) extends AnyVal {
     
     inline def setBlockCrossOrganizationWriteAccess(value: Boolean): Self = StObject.set(x, "blockCrossOrganizationWriteAccess", value.asInstanceOf[js.Any])
     

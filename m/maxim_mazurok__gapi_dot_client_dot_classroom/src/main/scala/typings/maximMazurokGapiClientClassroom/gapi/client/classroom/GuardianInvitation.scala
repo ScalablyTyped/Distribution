@@ -28,7 +28,8 @@ object GuardianInvitation {
     __obj.asInstanceOf[GuardianInvitation]
   }
   
-  extension [Self <: GuardianInvitation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GuardianInvitation] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

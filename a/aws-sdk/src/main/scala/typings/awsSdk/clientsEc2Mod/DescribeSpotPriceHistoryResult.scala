@@ -23,7 +23,8 @@ object DescribeSpotPriceHistoryResult {
     __obj.asInstanceOf[DescribeSpotPriceHistoryResult]
   }
   
-  extension [Self <: DescribeSpotPriceHistoryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSpotPriceHistoryResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

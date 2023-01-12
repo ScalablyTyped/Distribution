@@ -22,7 +22,8 @@ object SubordinateConfig {
     __obj.asInstanceOf[SubordinateConfig]
   }
   
-  extension [Self <: SubordinateConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubordinateConfig] (val x: Self) extends AnyVal {
     
     inline def setCertificateAuthority(value: String): Self = StObject.set(x, "certificateAuthority", value.asInstanceOf[js.Any])
     

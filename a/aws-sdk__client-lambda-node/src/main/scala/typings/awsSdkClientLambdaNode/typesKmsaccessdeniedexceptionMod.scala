@@ -21,7 +21,8 @@ object typesKmsaccessdeniedexceptionMod {
       __obj.asInstanceOf[KMSAccessDeniedException]
     }
     
-    extension [Self <: KMSAccessDeniedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSAccessDeniedException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.KMSAccessDeniedException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object typesKmsaccessdeniedexceptionMod {
       __obj.asInstanceOf[KMSAccessDeniedExceptionDetails]
     }
     
-    extension [Self <: KMSAccessDeniedExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSAccessDeniedExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object GrantExtras {
     __obj.asInstanceOf[GrantExtras]
   }
   
-  extension [Self <: GrantExtras](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrantExtras] (val x: Self) extends AnyVal {
     
     inline def setClientAssertionPayload(value: js.Object): Self = StObject.set(x, "clientAssertionPayload", value.asInstanceOf[js.Any])
     

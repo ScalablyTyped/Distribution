@@ -28,7 +28,8 @@ object IncrementParagraphLeftIndentCommand {
     __obj.asInstanceOf[IncrementParagraphLeftIndentCommand]
   }
   
-  extension [Self <: IncrementParagraphLeftIndentCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncrementParagraphLeftIndentCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     

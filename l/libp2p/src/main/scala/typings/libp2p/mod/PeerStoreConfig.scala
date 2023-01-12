@@ -17,7 +17,8 @@ object PeerStoreConfig {
     __obj.asInstanceOf[PeerStoreConfig]
   }
   
-  extension [Self <: PeerStoreConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerStoreConfig] (val x: Self) extends AnyVal {
     
     inline def setPersistence(value: Boolean): Self = StObject.set(x, "persistence", value.asInstanceOf[js.Any])
     

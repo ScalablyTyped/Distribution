@@ -22,7 +22,8 @@ object TabsActivationUIParams {
     __obj.asInstanceOf[TabsActivationUIParams]
   }
   
-  extension [Self <: TabsActivationUIParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabsActivationUIParams] (val x: Self) extends AnyVal {
     
     inline def setNewPanel(value: JQuery): Self = StObject.set(x, "newPanel", value.asInstanceOf[js.Any])
     

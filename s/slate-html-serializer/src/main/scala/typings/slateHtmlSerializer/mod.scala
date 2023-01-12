@@ -83,7 +83,8 @@ object mod {
       __obj.asInstanceOf[HtmlOptions]
     }
     
-    extension [Self <: HtmlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultBlock(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockProperties */ Any) | String
@@ -125,7 +126,8 @@ object mod {
       __obj.asInstanceOf[Rule]
     }
     
-    extension [Self <: Rule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
       
       inline def setDeserialize(
         value: (/* el */ Element, /* next */ js.Function1[

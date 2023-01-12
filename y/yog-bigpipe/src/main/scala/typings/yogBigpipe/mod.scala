@@ -210,7 +210,8 @@ object mod {
       __obj.asInstanceOf[AddPageletConfig]
     }
     
-    extension [Self <: AddPageletConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddPageletConfig] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -237,7 +238,8 @@ object mod {
       __obj.asInstanceOf[BigPipeOption]
     }
     
-    extension [Self <: BigPipeOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BigPipeOption] (val x: Self) extends AnyVal {
       
       inline def setSkipAnalysis(value: Boolean): Self = StObject.set(x, "skipAnalysis", value.asInstanceOf[js.Any])
       
@@ -289,7 +291,8 @@ object mod {
       __obj.asInstanceOf[PageletData]
     }
     
-    extension [Self <: PageletData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageletData] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -344,7 +347,8 @@ object mod {
       __obj.asInstanceOf[PageletOption]
     }
     
-    extension [Self <: PageletOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageletOption] (val x: Self) extends AnyVal {
       
       inline def setCompiled(value: Boolean): Self = StObject.set(x, "compiled", value.asInstanceOf[js.Any])
       

@@ -82,7 +82,8 @@ object libSearchBarStyleIndexDotnativeMod {
       __obj.asInstanceOf[ISearchBarStyle]
     }
     
-    extension [Self <: ISearchBarStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISearchBarStyle] (val x: Self) extends AnyVal {
       
       inline def setCancelText(value: TextStyle): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
       

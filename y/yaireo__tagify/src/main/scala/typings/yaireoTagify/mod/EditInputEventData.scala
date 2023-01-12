@@ -30,7 +30,8 @@ object EditInputEventData {
     __obj.asInstanceOf[EditInputEventData[T]]
   }
   
-  extension [Self <: EditInputEventData[?], T /* <: BaseTagData */](x: Self & EditInputEventData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditInputEventData[?], T /* <: BaseTagData */] (val x: Self & EditInputEventData[T]) extends AnyVal {
     
     inline def setData(value: T & NewValue): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

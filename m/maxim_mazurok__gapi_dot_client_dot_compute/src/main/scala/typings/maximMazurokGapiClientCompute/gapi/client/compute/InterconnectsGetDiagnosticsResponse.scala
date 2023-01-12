@@ -15,7 +15,8 @@ object InterconnectsGetDiagnosticsResponse {
     __obj.asInstanceOf[InterconnectsGetDiagnosticsResponse]
   }
   
-  extension [Self <: InterconnectsGetDiagnosticsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterconnectsGetDiagnosticsResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: InterconnectDiagnostics): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

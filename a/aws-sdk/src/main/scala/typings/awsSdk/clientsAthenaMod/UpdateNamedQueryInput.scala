@@ -33,7 +33,8 @@ object UpdateNamedQueryInput {
     __obj.asInstanceOf[UpdateNamedQueryInput]
   }
   
-  extension [Self <: UpdateNamedQueryInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateNamedQueryInput] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: NamedQueryDescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

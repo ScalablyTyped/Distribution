@@ -15,7 +15,8 @@ object Entropy {
     __obj.asInstanceOf[Entropy]
   }
   
-  extension [Self <: Entropy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Entropy] (val x: Self) extends AnyVal {
     
     inline def setEntropy(value: String): Self = StObject.set(x, "entropy", value.asInstanceOf[js.Any])
   }

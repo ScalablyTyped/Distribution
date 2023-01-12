@@ -16,7 +16,8 @@ object PictureInPictureWindowEventMap {
     __obj.asInstanceOf[PictureInPictureWindowEventMap]
   }
   
-  extension [Self <: PictureInPictureWindowEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PictureInPictureWindowEventMap] (val x: Self) extends AnyVal {
     
     inline def setResize(value: Event): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
   }

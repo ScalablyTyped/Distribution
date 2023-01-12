@@ -45,7 +45,8 @@ object ContentTypeCreationInformation {
     __obj.asInstanceOf[ContentTypeCreationInformation]
   }
   
-  extension [Self <: ContentTypeCreationInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentTypeCreationInformation] (val x: Self) extends AnyVal {
     
     inline def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
     

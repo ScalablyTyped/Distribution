@@ -16,7 +16,8 @@ object ReplaceNegativeKeywordsRequest {
     __obj.asInstanceOf[ReplaceNegativeKeywordsRequest]
   }
   
-  extension [Self <: ReplaceNegativeKeywordsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceNegativeKeywordsRequest] (val x: Self) extends AnyVal {
     
     inline def setNewNegativeKeywords(value: js.Array[NegativeKeyword]): Self = StObject.set(x, "newNegativeKeywords", value.asInstanceOf[js.Any])
     

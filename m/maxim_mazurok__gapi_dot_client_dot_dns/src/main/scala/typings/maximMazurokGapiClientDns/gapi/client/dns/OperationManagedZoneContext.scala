@@ -19,7 +19,8 @@ object OperationManagedZoneContext {
     __obj.asInstanceOf[OperationManagedZoneContext]
   }
   
-  extension [Self <: OperationManagedZoneContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationManagedZoneContext] (val x: Self) extends AnyVal {
     
     inline def setNewValue(value: ManagedZone): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     

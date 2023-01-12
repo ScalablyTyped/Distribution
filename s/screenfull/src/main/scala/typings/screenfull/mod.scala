@@ -209,7 +209,8 @@ object mod {
       __obj.asInstanceOf[RawEventNames]
     }
     
-    extension [Self <: RawEventNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawEventNames] (val x: Self) extends AnyVal {
       
       inline def setExitFullscreen(value: String): Self = StObject.set(x, "exitFullscreen", value.asInstanceOf[js.Any])
       

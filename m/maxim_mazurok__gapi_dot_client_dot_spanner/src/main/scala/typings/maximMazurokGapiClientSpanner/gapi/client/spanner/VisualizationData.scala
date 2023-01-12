@@ -46,7 +46,8 @@ object VisualizationData {
     __obj.asInstanceOf[VisualizationData]
   }
   
-  extension [Self <: VisualizationData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualizationData] (val x: Self) extends AnyVal {
     
     inline def setDataSourceEndToken(value: String): Self = StObject.set(x, "dataSourceEndToken", value.asInstanceOf[js.Any])
     

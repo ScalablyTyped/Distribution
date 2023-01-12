@@ -606,7 +606,8 @@ object NetworkManager {
     __obj.asInstanceOf[NetworkManager]
   }
   
-  extension [Self <: NetworkManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkManager] (val x: Self) extends AnyVal {
     
     inline def setAddNetworkStateChangeListener(value: NetworkStateChangedCallback => Double): Self = StObject.set(x, "addNetworkStateChangeListener", js.Any.fromFunction1(value))
     

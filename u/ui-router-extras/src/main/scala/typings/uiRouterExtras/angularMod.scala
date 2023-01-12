@@ -45,7 +45,8 @@ object angularMod {
         __obj.asInstanceOf[IDeepStateRedirectConfig]
       }
       
-      extension [Self <: IDeepStateRedirectConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDeepStateRedirectConfig] (val x: Self) extends AnyVal {
         
         inline def setDefault(value: String | IRedirectParams): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
@@ -112,7 +113,8 @@ object angularMod {
         __obj.asInstanceOf[IFutureState]
       }
       
-      extension [Self <: IFutureState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IFutureState] (val x: Self) extends AnyVal {
         
         inline def setStateName(value: String): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
         
@@ -166,7 +168,8 @@ object angularMod {
         __obj.asInstanceOf[IFutureStateProvider]
       }
       
-      extension [Self <: IFutureStateProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IFutureStateProvider] (val x: Self) extends AnyVal {
         
         inline def setAddResolve(value: IResolveFunction => Unit): Self = StObject.set(x, "addResolve", js.Any.fromFunction1(value))
         
@@ -198,7 +201,8 @@ object angularMod {
         __obj.asInstanceOf[IPreviousState]
       }
       
-      extension [Self <: IPreviousState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPreviousState] (val x: Self) extends AnyVal {
         
         inline def setParams(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateParamsService */ Any
@@ -271,7 +275,8 @@ object angularMod {
         __obj.asInstanceOf[IRedirectParams]
       }
       
-      extension [Self <: IRedirectParams](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRedirectParams] (val x: Self) extends AnyVal {
         
         inline def setParams(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateParamsService */ Any
@@ -344,7 +349,8 @@ object angularMod {
         __obj.asInstanceOf[IStickyState]
       }
       
-      extension [Self <: IStickyState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IStickyState] (val x: Self) extends AnyVal {
         
         inline def setDeepStateRedirect(value: Boolean | IDeepStateRedirectConfig): Self = StObject.set(x, "deepStateRedirect", value.asInstanceOf[js.Any])
         
@@ -401,7 +407,8 @@ object angularMod {
         __obj.asInstanceOf[IStickyStateProvider]
       }
       
-      extension [Self <: IStickyStateProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IStickyStateProvider] (val x: Self) extends AnyVal {
         
         inline def setDebugMode(value: () => Boolean): Self = StObject.set(x, "debugMode", js.Any.fromFunction0(value))
         

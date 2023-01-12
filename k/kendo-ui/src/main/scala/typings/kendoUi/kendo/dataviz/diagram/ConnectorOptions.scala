@@ -25,7 +25,8 @@ object ConnectorOptions {
     __obj.asInstanceOf[ConnectorOptions]
   }
   
-  extension [Self <: ConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String | ConnectorFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

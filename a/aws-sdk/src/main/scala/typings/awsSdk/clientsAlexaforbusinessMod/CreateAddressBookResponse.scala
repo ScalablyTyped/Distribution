@@ -18,7 +18,8 @@ object CreateAddressBookResponse {
     __obj.asInstanceOf[CreateAddressBookResponse]
   }
   
-  extension [Self <: CreateAddressBookResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAddressBookResponse] (val x: Self) extends AnyVal {
     
     inline def setAddressBookArn(value: Arn): Self = StObject.set(x, "AddressBookArn", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object Outages {
     __obj.asInstanceOf[Outages]
   }
   
-  extension [Self <: Outages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Outages] (val x: Self) extends AnyVal {
     
     inline def setOutages(value: js.Array[Duration]): Self = StObject.set(x, "outages", value.asInstanceOf[js.Any])
     

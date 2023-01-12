@@ -33,7 +33,8 @@ object CreateDelegationRequest {
     __obj.asInstanceOf[CreateDelegationRequest]
   }
   
-  extension [Self <: CreateDelegationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDelegationRequest] (val x: Self) extends AnyVal {
     
     inline def setComment(value: DelegationComment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

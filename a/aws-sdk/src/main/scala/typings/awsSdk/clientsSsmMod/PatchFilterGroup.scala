@@ -18,7 +18,8 @@ object PatchFilterGroup {
     __obj.asInstanceOf[PatchFilterGroup]
   }
   
-  extension [Self <: PatchFilterGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchFilterGroup] (val x: Self) extends AnyVal {
     
     inline def setPatchFilters(value: PatchFilterList): Self = StObject.set(x, "PatchFilters", value.asInstanceOf[js.Any])
     

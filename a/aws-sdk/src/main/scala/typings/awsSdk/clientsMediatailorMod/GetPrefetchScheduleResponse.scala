@@ -43,7 +43,8 @@ object GetPrefetchScheduleResponse {
     __obj.asInstanceOf[GetPrefetchScheduleResponse]
   }
   
-  extension [Self <: GetPrefetchScheduleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPrefetchScheduleResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: _String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

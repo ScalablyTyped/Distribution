@@ -23,7 +23,8 @@ object AllJoynServiceInfo {
     __obj.asInstanceOf[AllJoynServiceInfo]
   }
   
-  extension [Self <: AllJoynServiceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllJoynServiceInfo] (val x: Self) extends AnyVal {
     
     inline def setObjectPath(value: String): Self = StObject.set(x, "objectPath", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object NodesNodesResponseBase {
     __obj.asInstanceOf[NodesNodesResponseBase]
   }
   
-  extension [Self <: NodesNodesResponseBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesNodesResponseBase] (val x: Self) extends AnyVal {
     
     inline def set_nodes(value: NodeStatistics): Self = StObject.set(x, "_nodes", value.asInstanceOf[js.Any])
     

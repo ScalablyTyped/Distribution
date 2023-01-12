@@ -18,7 +18,8 @@ object GetHistogramsResponse {
     __obj.asInstanceOf[GetHistogramsResponse]
   }
   
-  extension [Self <: GetHistogramsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHistogramsResponse] (val x: Self) extends AnyVal {
     
     inline def setHistograms(value: js.Array[Histogram]): Self = StObject.set(x, "histograms", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetBestEffortCoverageResponse {
     __obj.asInstanceOf[GetBestEffortCoverageResponse]
   }
   
-  extension [Self <: GetBestEffortCoverageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBestEffortCoverageResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: js.Array[ScriptCoverage]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Signals {
     __obj.asInstanceOf[Signals]
   }
   
-  extension [Self <: Signals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Signals] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

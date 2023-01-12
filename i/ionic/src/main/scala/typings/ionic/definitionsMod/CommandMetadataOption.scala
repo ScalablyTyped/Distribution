@@ -19,7 +19,8 @@ object CommandMetadataOption {
     __obj.asInstanceOf[CommandMetadataOption]
   }
   
-  extension [Self <: CommandMetadataOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandMetadataOption] (val x: Self) extends AnyVal {
     
     inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     

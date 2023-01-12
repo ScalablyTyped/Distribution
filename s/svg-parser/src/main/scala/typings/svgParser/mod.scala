@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[ElementNode]
     }
     
-    extension [Self <: ElementNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Node | String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object mod {
       __obj.asInstanceOf[RootNode]
     }
     
-    extension [Self <: RootNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object mod {
       __obj.asInstanceOf[TextNode]
     }
     
-    extension [Self <: TextNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextNode] (val x: Self) extends AnyVal {
       
       inline def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

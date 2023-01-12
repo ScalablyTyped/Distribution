@@ -20,7 +20,8 @@ object ICommandInitializeTestCase {
     __obj.asInstanceOf[ICommandInitializeTestCase]
   }
   
-  extension [Self <: ICommandInitializeTestCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommandInitializeTestCase] (val x: Self) extends AnyVal {
     
     inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     

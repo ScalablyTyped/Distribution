@@ -25,7 +25,8 @@ object RequestDescriptor {
     __obj.asInstanceOf[RequestDescriptor]
   }
   
-  extension [Self <: RequestDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCacheConfig(value: CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
     

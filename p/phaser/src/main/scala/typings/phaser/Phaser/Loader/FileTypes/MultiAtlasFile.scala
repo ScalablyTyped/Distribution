@@ -48,7 +48,8 @@ object MultiAtlasFile {
     __obj.asInstanceOf[MultiAtlasFile]
   }
   
-  extension [Self <: MultiAtlasFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiAtlasFile] (val x: Self) extends AnyVal {
     
     inline def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }

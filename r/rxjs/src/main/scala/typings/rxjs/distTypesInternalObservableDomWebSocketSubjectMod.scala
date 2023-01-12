@@ -118,7 +118,8 @@ object distTypesInternalObservableDomWebSocketSubjectMod {
       __obj.asInstanceOf[WebSocketSubjectConfig[T]]
     }
     
-    extension [Self <: WebSocketSubjectConfig[?], T](x: Self & WebSocketSubjectConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebSocketSubjectConfig[?], T] (val x: Self & WebSocketSubjectConfig[T]) extends AnyVal {
       
       inline def setBinaryType(value: blob | arraybuffer): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
       

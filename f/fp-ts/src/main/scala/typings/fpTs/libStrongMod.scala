@@ -191,7 +191,8 @@ object libStrongMod {
       __obj.asInstanceOf[Strong[F]]
     }
     
-    extension [Self <: Strong[?], F](x: Self & Strong[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Strong[?], F] (val x: Self & Strong[F]) extends AnyVal {
       
       inline def setFirst(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, A, B> */ Any => Any
@@ -228,7 +229,8 @@ object libStrongMod {
       __obj.asInstanceOf[Strong2[F]]
     }
     
-    extension [Self <: Strong2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Strong2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Strong2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Strong2[F]) extends AnyVal {
       
       inline def setFirst(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, B> */ Any => Any
@@ -265,7 +267,8 @@ object libStrongMod {
       __obj.asInstanceOf[Strong3[F]]
     }
     
-    extension [Self <: Strong3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Strong3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Strong3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Strong3[F]) extends AnyVal {
       
       inline def setFirst(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, B> */ Any => Any
@@ -302,7 +305,8 @@ object libStrongMod {
       __obj.asInstanceOf[Strong4[F]]
     }
     
-    extension [Self <: Strong4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Strong4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Strong4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Strong4[F]) extends AnyVal {
       
       inline def setFirst(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, A, B> */ Any => Any

@@ -33,7 +33,8 @@ object CSSFormatConfiguration {
     __obj.asInstanceOf[CSSFormatConfiguration]
   }
   
-  extension [Self <: CSSFormatConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSFormatConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBraceStyle(value: collapse | expand): Self = StObject.set(x, "braceStyle", value.asInstanceOf[js.Any])
     

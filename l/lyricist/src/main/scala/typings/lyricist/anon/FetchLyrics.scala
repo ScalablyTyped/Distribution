@@ -18,7 +18,8 @@ object FetchLyrics {
     __obj.asInstanceOf[FetchLyrics]
   }
   
-  extension [Self <: FetchLyrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchLyrics] (val x: Self) extends AnyVal {
     
     inline def setFetchLyrics(value: Boolean): Self = StObject.set(x, "fetchLyrics", value.asInstanceOf[js.Any])
     

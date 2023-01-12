@@ -19,7 +19,8 @@ object Prompt {
     __obj.asInstanceOf[Prompt]
   }
   
-  extension [Self <: Prompt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Prompt] (val x: Self) extends AnyVal {
     
     inline def setBottomBar(value: Boolean): Self = StObject.set(x, "bottomBar", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object PartialSizeOptionsDetectO {
     __obj.asInstanceOf[PartialSizeOptionsDetectO]
   }
   
-  extension [Self <: PartialSizeOptionsDetectO](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSizeOptionsDetectO] (val x: Self) extends AnyVal {
     
     inline def setAltBoundary(value: Boolean): Self = StObject.set(x, "altBoundary", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object ASPxClientReportToolbar {
     __obj.asInstanceOf[ASPxClientReportToolbar]
   }
   
-  extension [Self <: ASPxClientReportToolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientReportToolbar] (val x: Self) extends AnyVal {
     
     inline def setGetItemTemplateControl(value: String => ASPxClientControl): Self = StObject.set(x, "GetItemTemplateControl", js.Any.fromFunction1(value))
   }

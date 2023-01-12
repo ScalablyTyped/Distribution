@@ -18,7 +18,8 @@ object DeleteTriggerResponse {
     __obj.asInstanceOf[DeleteTriggerResponse]
   }
   
-  extension [Self <: DeleteTriggerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTriggerResponse] (val x: Self) extends AnyVal {
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

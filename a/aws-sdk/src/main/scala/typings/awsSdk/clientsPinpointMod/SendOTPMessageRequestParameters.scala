@@ -74,7 +74,8 @@ object SendOTPMessageRequestParameters {
     __obj.asInstanceOf[SendOTPMessageRequestParameters]
   }
   
-  extension [Self <: SendOTPMessageRequestParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendOTPMessageRequestParameters] (val x: Self) extends AnyVal {
     
     inline def setAllowedAttempts(value: integer): Self = StObject.set(x, "AllowedAttempts", value.asInstanceOf[js.Any])
     

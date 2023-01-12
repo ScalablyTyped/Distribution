@@ -35,7 +35,8 @@ object BacklogInError {
     __obj.asInstanceOf[BacklogInError]
   }
   
-  extension [Self <: BacklogInError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BacklogInError] (val x: Self) extends AnyVal {
     
     inline def setBacklogInError(value: scala.Double): Self = StObject.set(x, "backlogInError", value.asInstanceOf[js.Any])
     

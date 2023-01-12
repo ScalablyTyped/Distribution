@@ -22,7 +22,8 @@ object TransactionOptions {
     __obj.asInstanceOf[TransactionOptions]
   }
   
-  extension [Self <: TransactionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionOptions] (val x: Self) extends AnyVal {
     
     inline def setPartitionedDml(value: Any): Self = StObject.set(x, "partitionedDml", value.asInstanceOf[js.Any])
     

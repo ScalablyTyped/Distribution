@@ -15,7 +15,8 @@ object OrchestrationConfig {
     __obj.asInstanceOf[OrchestrationConfig]
   }
   
-  extension [Self <: OrchestrationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrchestrationConfig] (val x: Self) extends AnyVal {
     
     inline def setTaskHistoryRetentionLimit(value: Double): Self = StObject.set(x, "TaskHistoryRetentionLimit", value.asInstanceOf[js.Any])
     

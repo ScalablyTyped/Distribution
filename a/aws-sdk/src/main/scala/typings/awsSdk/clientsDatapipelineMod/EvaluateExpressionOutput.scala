@@ -18,7 +18,8 @@ object EvaluateExpressionOutput {
     __obj.asInstanceOf[EvaluateExpressionOutput]
   }
   
-  extension [Self <: EvaluateExpressionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluateExpressionOutput] (val x: Self) extends AnyVal {
     
     inline def setEvaluatedExpression(value: longString): Self = StObject.set(x, "evaluatedExpression", value.asInstanceOf[js.Any])
   }

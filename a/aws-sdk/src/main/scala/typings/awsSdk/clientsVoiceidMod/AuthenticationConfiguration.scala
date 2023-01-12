@@ -18,7 +18,8 @@ object AuthenticationConfiguration {
     __obj.asInstanceOf[AuthenticationConfiguration]
   }
   
-  extension [Self <: AuthenticationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAcceptanceThreshold(value: Score): Self = StObject.set(x, "AcceptanceThreshold", value.asInstanceOf[js.Any])
   }

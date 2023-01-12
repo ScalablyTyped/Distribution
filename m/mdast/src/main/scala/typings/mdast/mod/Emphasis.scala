@@ -23,7 +23,8 @@ object Emphasis {
     __obj.asInstanceOf[Emphasis]
   }
   
-  extension [Self <: Emphasis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Emphasis] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

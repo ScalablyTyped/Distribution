@@ -30,7 +30,8 @@ object mergeFileOptionsMod {
       __obj.asInstanceOf[MergeFileOptions]
     }
     
-    extension [Self <: MergeFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeFileOptions] (val x: Self) extends AnyVal {
       
       inline def setAncestorLabel(value: String): Self = StObject.set(x, "ancestorLabel", value.asInstanceOf[js.Any])
       

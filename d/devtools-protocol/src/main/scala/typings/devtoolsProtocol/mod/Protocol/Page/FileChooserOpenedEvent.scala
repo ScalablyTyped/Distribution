@@ -31,7 +31,8 @@ object FileChooserOpenedEvent {
     __obj.asInstanceOf[FileChooserOpenedEvent]
   }
   
-  extension [Self <: FileChooserOpenedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileChooserOpenedEvent] (val x: Self) extends AnyVal {
     
     inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     

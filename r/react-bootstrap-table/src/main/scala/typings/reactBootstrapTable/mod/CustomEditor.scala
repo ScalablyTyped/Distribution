@@ -37,7 +37,8 @@ object CustomEditor {
     __obj.asInstanceOf[CustomEditor[TRow, K]]
   }
   
-  extension [Self <: CustomEditor[?, ?], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */](x: Self & (CustomEditor[TRow, K])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomEditor[?, ?], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] (val x: Self & (CustomEditor[TRow, K])) extends AnyVal {
     
     inline def setCustomEditorParameters(value: js.Object): Self = StObject.set(x, "customEditorParameters", value.asInstanceOf[js.Any])
     

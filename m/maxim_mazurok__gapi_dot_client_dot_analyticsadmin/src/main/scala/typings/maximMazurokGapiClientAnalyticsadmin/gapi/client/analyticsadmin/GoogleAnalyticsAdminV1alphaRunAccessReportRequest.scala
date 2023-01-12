@@ -64,7 +64,8 @@ object GoogleAnalyticsAdminV1alphaRunAccessReportRequest {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaRunAccessReportRequest]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaRunAccessReportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaRunAccessReportRequest] (val x: Self) extends AnyVal {
     
     inline def setDateRanges(value: js.Array[GoogleAnalyticsAdminV1alphaAccessDateRange]): Self = StObject.set(x, "dateRanges", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object TitleFieldProps {
     __obj.asInstanceOf[TitleFieldProps[T, F]]
   }
   
-  extension [Self <: TitleFieldProps[?, ?], T, F](x: Self & (TitleFieldProps[T, F])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TitleFieldProps[?, ?], T, F] (val x: Self & (TitleFieldProps[T, F])) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

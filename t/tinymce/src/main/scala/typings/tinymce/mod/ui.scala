@@ -42,7 +42,8 @@ object ui {
       __obj.asInstanceOf[Container]
     }
     
-    extension [Self <: Container](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Any => Collection): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -61,7 +62,8 @@ object ui {
       __obj.asInstanceOf[ControlSettings]
     }
     
-    extension [Self <: ControlSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlSettings] (val x: Self) extends AnyVal {
       
       inline def setMenu(value: Menu): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     }
@@ -78,7 +80,8 @@ object ui {
       __obj.asInstanceOf[Factory]
     }
     
-    extension [Self <: Factory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Factory] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: Any => Control): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
@@ -105,7 +108,8 @@ object ui {
       __obj.asInstanceOf[Moveable]
     }
     
-    extension [Self <: Moveable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Moveable] (val x: Self) extends AnyVal {
       
       inline def setMoveRel(value: (Node, String) => Control): Self = StObject.set(x, "moveRel", js.Any.fromFunction2(value))
     }

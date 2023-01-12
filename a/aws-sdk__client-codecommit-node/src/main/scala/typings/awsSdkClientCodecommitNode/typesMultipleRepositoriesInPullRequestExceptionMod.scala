@@ -21,7 +21,8 @@ object typesMultipleRepositoriesInPullRequestExceptionMod {
       __obj.asInstanceOf[MultipleRepositoriesInPullRequestException]
     }
     
-    extension [Self <: MultipleRepositoriesInPullRequestException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipleRepositoriesInPullRequestException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MultipleRepositoriesInPullRequestException

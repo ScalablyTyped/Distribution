@@ -23,7 +23,8 @@ object WorkflowDetail {
     __obj.asInstanceOf[WorkflowDetail]
   }
   
-  extension [Self <: WorkflowDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowDetail] (val x: Self) extends AnyVal {
     
     inline def setExecutionRole(value: Role): Self = StObject.set(x, "ExecutionRole", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object WebCrawlerConfiguration {
     __obj.asInstanceOf[WebCrawlerConfiguration]
   }
   
-  extension [Self <: WebCrawlerConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebCrawlerConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationConfiguration(value: AuthenticationConfiguration): Self = StObject.set(x, "AuthenticationConfiguration", value.asInstanceOf[js.Any])
     

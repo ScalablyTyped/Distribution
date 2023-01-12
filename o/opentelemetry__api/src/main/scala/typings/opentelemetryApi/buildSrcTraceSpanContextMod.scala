@@ -66,7 +66,8 @@ object buildSrcTraceSpanContextMod {
       __obj.asInstanceOf[SpanContext]
     }
     
-    extension [Self <: SpanContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanContext] (val x: Self) extends AnyVal {
       
       inline def setIsRemote(value: Boolean): Self = StObject.set(x, "isRemote", value.asInstanceOf[js.Any])
       

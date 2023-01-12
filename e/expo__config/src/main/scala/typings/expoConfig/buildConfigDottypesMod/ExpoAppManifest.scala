@@ -304,7 +304,8 @@ object ExpoAppManifest {
     __obj.asInstanceOf[ExpoAppManifest]
   }
   
-  extension [Self <: ExpoAppManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpoAppManifest] (val x: Self) extends AnyVal {
     
     inline def setAndroid(value: Android): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     

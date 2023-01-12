@@ -30,7 +30,8 @@ object DurandalRouteInstruction {
     __obj.asInstanceOf[DurandalRouteInstruction]
   }
   
-  extension [Self <: DurandalRouteInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DurandalRouteInstruction] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: DurandalRouteConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

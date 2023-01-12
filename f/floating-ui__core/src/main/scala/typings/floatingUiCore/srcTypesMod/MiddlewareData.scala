@@ -31,7 +31,8 @@ object MiddlewareData {
     __obj.asInstanceOf[MiddlewareData]
   }
   
-  extension [Self <: MiddlewareData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MiddlewareData] (val x: Self) extends AnyVal {
     
     inline def setArrow(value: PartialCoordscenterOffset): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object SearchSchemasRequest {
     __obj.asInstanceOf[SearchSchemasRequest]
   }
   
-  extension [Self <: SearchSchemasRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSchemasRequest] (val x: Self) extends AnyVal {
     
     inline def setKeywords(value: string): Self = StObject.set(x, "Keywords", value.asInstanceOf[js.Any])
     

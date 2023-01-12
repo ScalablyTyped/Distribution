@@ -93,7 +93,8 @@ object ChartMetaCommon {
     __obj.asInstanceOf[ChartMetaCommon[TElement, TDatasetElement]]
   }
   
-  extension [Self <: ChartMetaCommon[?, ?], TElement /* <: Element[AnyObject, AnyObject] */, TDatasetElement /* <: Element[AnyObject, AnyObject] */](x: Self & (ChartMetaCommon[TElement, TDatasetElement])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartMetaCommon[?, ?], TElement /* <: Element[AnyObject, AnyObject] */, TDatasetElement /* <: Element[AnyObject, AnyObject] */] (val x: Self & (ChartMetaCommon[TElement, TDatasetElement])) extends AnyVal {
     
     inline def setController(
       value: DatasetController[

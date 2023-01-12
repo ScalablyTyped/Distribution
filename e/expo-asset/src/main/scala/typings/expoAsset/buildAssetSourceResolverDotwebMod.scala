@@ -105,7 +105,8 @@ object buildAssetSourceResolverDotwebMod {
       __obj.asInstanceOf[AssetSourceResolver]
     }
     
-    extension [Self <: AssetSourceResolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssetSourceResolver] (val x: Self) extends AnyVal {
       
       inline def setAsset(value: PackagerAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
       
@@ -177,7 +178,8 @@ object buildAssetSourceResolverDotwebMod {
       __obj.asInstanceOf[PackagerAsset]
     }
     
-    extension [Self <: PackagerAsset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackagerAsset] (val x: Self) extends AnyVal {
       
       inline def setFileSystemLocation(value: String): Self = StObject.set(x, "fileSystemLocation", value.asInstanceOf[js.Any])
       
@@ -224,7 +226,8 @@ object buildAssetSourceResolverDotwebMod {
       __obj.asInstanceOf[ResolvedAssetSource]
     }
     
-    extension [Self <: ResolvedAssetSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedAssetSource] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

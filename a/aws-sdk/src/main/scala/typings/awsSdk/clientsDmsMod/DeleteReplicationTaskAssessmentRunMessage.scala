@@ -18,7 +18,8 @@ object DeleteReplicationTaskAssessmentRunMessage {
     __obj.asInstanceOf[DeleteReplicationTaskAssessmentRunMessage]
   }
   
-  extension [Self <: DeleteReplicationTaskAssessmentRunMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteReplicationTaskAssessmentRunMessage] (val x: Self) extends AnyVal {
     
     inline def setReplicationTaskAssessmentRunArn(value: String): Self = StObject.set(x, "ReplicationTaskAssessmentRunArn", value.asInstanceOf[js.Any])
   }

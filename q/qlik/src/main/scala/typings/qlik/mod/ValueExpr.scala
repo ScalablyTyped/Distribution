@@ -15,7 +15,8 @@ object ValueExpr {
     __obj.asInstanceOf[ValueExpr]
   }
   
-  extension [Self <: ValueExpr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueExpr] (val x: Self) extends AnyVal {
     
     inline def setQv(value: String): Self = StObject.set(x, "qv", value.asInstanceOf[js.Any])
   }

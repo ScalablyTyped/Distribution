@@ -23,7 +23,8 @@ object PutParameterResult {
     __obj.asInstanceOf[PutParameterResult]
   }
   
-  extension [Self <: PutParameterResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutParameterResult] (val x: Self) extends AnyVal {
     
     inline def setTier(value: ParameterTier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
     

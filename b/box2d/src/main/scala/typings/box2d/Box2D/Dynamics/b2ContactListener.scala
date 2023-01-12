@@ -46,7 +46,8 @@ object b2ContactListener {
     __obj.asInstanceOf[b2ContactListener]
   }
   
-  extension [Self <: b2ContactListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2ContactListener] (val x: Self) extends AnyVal {
     
     inline def setBeginContact(value: b2Contact => Unit): Self = StObject.set(x, "BeginContact", js.Any.fromFunction1(value))
     

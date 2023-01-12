@@ -19,7 +19,8 @@ object ViewMountArg {
     __obj.asInstanceOf[ViewMountArg]
   }
   
-  extension [Self <: ViewMountArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewMountArg] (val x: Self) extends AnyVal {
     
     inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     

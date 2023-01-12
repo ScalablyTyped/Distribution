@@ -45,7 +45,8 @@ object libVolumeLocalstorageMod {
       __obj.asInstanceOf[IStore]
     }
     
-    extension [Self <: IStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStore] (val x: Self) extends AnyVal {
       
       inline def setGetItem(value: String => Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       

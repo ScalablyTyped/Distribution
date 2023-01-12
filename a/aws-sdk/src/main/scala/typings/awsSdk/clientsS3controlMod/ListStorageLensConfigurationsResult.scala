@@ -23,7 +23,8 @@ object ListStorageLensConfigurationsResult {
     __obj.asInstanceOf[ListStorageLensConfigurationsResult]
   }
   
-  extension [Self <: ListStorageLensConfigurationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStorageLensConfigurationsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: ContinuationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

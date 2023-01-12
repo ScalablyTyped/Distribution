@@ -18,7 +18,8 @@ object UpdateEventExtraData {
     __obj.asInstanceOf[UpdateEventExtraData]
   }
   
-  extension [Self <: UpdateEventExtraData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEventExtraData] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

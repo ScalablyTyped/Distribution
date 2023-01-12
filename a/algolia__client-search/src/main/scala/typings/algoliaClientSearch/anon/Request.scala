@@ -22,7 +22,8 @@ object Request {
     __obj.asInstanceOf[Request[TObject]]
   }
   
-  extension [Self <: Request[?], TObject](x: Self & Request[TObject]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Request[?], TObject] (val x: Self & Request[TObject]) extends AnyVal {
     
     inline def setRequest(value: BrowseRequestData => js.Promise[BrowseResponse[TObject]]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     

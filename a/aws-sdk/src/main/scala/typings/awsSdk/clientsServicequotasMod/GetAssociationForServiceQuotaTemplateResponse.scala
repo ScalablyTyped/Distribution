@@ -18,7 +18,8 @@ object GetAssociationForServiceQuotaTemplateResponse {
     __obj.asInstanceOf[GetAssociationForServiceQuotaTemplateResponse]
   }
   
-  extension [Self <: GetAssociationForServiceQuotaTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAssociationForServiceQuotaTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setServiceQuotaTemplateAssociationStatus(value: ServiceQuotaTemplateAssociationStatus): Self = StObject.set(x, "ServiceQuotaTemplateAssociationStatus", value.asInstanceOf[js.Any])
     

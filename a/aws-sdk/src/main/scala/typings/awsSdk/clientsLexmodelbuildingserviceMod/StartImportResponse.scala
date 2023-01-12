@@ -48,7 +48,8 @@ object StartImportResponse {
     __obj.asInstanceOf[StartImportResponse]
   }
   
-  extension [Self <: StartImportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartImportResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     

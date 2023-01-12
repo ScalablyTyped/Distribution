@@ -17,7 +17,8 @@ object ParametersPathSecretnameRequestBodyContentApplicationjsonSelectedreposito
     __obj.asInstanceOf[ParametersPathSecretnameRequestBodyContentApplicationjsonSelectedrepositoryids]
   }
   
-  extension [Self <: ParametersPathSecretnameRequestBodyContentApplicationjsonSelectedrepositoryids](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPathSecretnameRequestBodyContentApplicationjsonSelectedrepositoryids] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathSecretname): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

@@ -84,7 +84,8 @@ object IDocListEntry {
     __obj.asInstanceOf[IDocListEntry]
   }
   
-  extension [Self <: IDocListEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDocListEntry] (val x: Self) extends AnyVal {
     
     inline def setQConnectedUsers(value: Double): Self = StObject.set(x, "qConnectedUsers", value.asInstanceOf[js.Any])
     

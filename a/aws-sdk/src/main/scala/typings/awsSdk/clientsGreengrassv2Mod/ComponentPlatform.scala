@@ -23,7 +23,8 @@ object ComponentPlatform {
     __obj.asInstanceOf[ComponentPlatform]
   }
   
-  extension [Self <: ComponentPlatform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentPlatform] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: PlatformAttributesMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

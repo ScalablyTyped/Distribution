@@ -30,7 +30,8 @@ object ComputationDescriptor {
     __obj.asInstanceOf[ComputationDescriptor[T]]
   }
   
-  extension [Self <: ComputationDescriptor[?], T /* <: Ractive[T] */](x: Self & ComputationDescriptor[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputationDescriptor[?], T /* <: Ractive[T] */] (val x: Self & ComputationDescriptor[T]) extends AnyVal {
     
     inline def setGet(value: ComputationFn[T]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

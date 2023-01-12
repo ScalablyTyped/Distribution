@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[HappoHideDynamicElementsOptions]
     }
     
-    extension [Self <: HappoHideDynamicElementsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HappoHideDynamicElementsOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultMatchers(value: js.Array[js.RegExp]): Self = StObject.set(x, "defaultMatchers", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[HappoScreenshotOptions]
     }
     
-    extension [Self <: HappoScreenshotOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HappoScreenshotOptions] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object mod {
       __obj.asInstanceOf[HappoTransformDOMOptions]
     }
     
-    extension [Self <: HappoTransformDOMOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HappoTransformDOMOptions] (val x: Self) extends AnyVal {
       
       inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object Currentuser {
     __obj.asInstanceOf[Currentuser]
   }
   
-  extension [Self <: Currentuser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Currentuser] (val x: Self) extends AnyVal {
     
     inline def setCurrent_user(value: Href): Self = StObject.set(x, "current_user", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object GoogleCloudServicenetworkingV1betaConnection {
     __obj.asInstanceOf[GoogleCloudServicenetworkingV1betaConnection]
   }
   
-  extension [Self <: GoogleCloudServicenetworkingV1betaConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudServicenetworkingV1betaConnection] (val x: Self) extends AnyVal {
     
     inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RemoveTagsFromStreamInput {
     __obj.asInstanceOf[RemoveTagsFromStreamInput]
   }
   
-  extension [Self <: RemoveTagsFromStreamInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveTagsFromStreamInput] (val x: Self) extends AnyVal {
     
     inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     

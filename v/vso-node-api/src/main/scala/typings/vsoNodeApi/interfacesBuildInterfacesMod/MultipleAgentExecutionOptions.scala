@@ -26,7 +26,8 @@ object MultipleAgentExecutionOptions {
     __obj.asInstanceOf[MultipleAgentExecutionOptions]
   }
   
-  extension [Self <: MultipleAgentExecutionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleAgentExecutionOptions] (val x: Self) extends AnyVal {
     
     inline def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
     

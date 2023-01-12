@@ -23,7 +23,8 @@ object DeleteEnvironmentConfigurationMessage {
     __obj.asInstanceOf[DeleteEnvironmentConfigurationMessage]
   }
   
-  extension [Self <: DeleteEnvironmentConfigurationMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEnvironmentConfigurationMessage] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     

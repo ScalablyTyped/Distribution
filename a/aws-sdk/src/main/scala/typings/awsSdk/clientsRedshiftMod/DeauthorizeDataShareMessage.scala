@@ -23,7 +23,8 @@ object DeauthorizeDataShareMessage {
     __obj.asInstanceOf[DeauthorizeDataShareMessage]
   }
   
-  extension [Self <: DeauthorizeDataShareMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeauthorizeDataShareMessage] (val x: Self) extends AnyVal {
     
     inline def setConsumerIdentifier(value: String): Self = StObject.set(x, "ConsumerIdentifier", value.asInstanceOf[js.Any])
     

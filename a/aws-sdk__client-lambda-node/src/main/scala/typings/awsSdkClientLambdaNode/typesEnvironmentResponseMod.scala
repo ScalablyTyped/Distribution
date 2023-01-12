@@ -28,7 +28,8 @@ object typesEnvironmentResponseMod {
       __obj.asInstanceOf[EnvironmentResponse]
     }
     
-    extension [Self <: EnvironmentResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvironmentResponse] (val x: Self) extends AnyVal {
       
       inline def setError(value: EnvironmentError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object typesEnvironmentResponseMod {
       __obj.asInstanceOf[UnmarshalledEnvironmentResponse]
     }
     
-    extension [Self <: UnmarshalledEnvironmentResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledEnvironmentResponse] (val x: Self) extends AnyVal {
       
       inline def setError(value: UnmarshalledEnvironmentError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
       

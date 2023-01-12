@@ -23,7 +23,8 @@ object OnDeviceServiceConfiguration {
     __obj.asInstanceOf[OnDeviceServiceConfiguration]
   }
   
-  extension [Self <: OnDeviceServiceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDeviceServiceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setNFSOnDeviceService(value: NFSOnDeviceServiceConfiguration): Self = StObject.set(x, "NFSOnDeviceService", value.asInstanceOf[js.Any])
     

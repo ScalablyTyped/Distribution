@@ -25,7 +25,8 @@ object RecordDictionaryNameRecor {
     __obj.asInstanceOf[RecordDictionaryNameRecor]
   }
   
-  extension [Self <: RecordDictionaryNameRecor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordDictionaryNameRecor] (val x: Self) extends AnyVal {
     
     inline def setCompounds(value: Record[String, Boolean]): Self = StObject.set(x, "compounds", value.asInstanceOf[js.Any])
     

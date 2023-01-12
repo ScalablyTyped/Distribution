@@ -17,7 +17,8 @@ object AggregationsBucketPathAggregation {
     __obj.asInstanceOf[AggregationsBucketPathAggregation]
   }
   
-  extension [Self <: AggregationsBucketPathAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsBucketPathAggregation] (val x: Self) extends AnyVal {
     
     inline def setBuckets_path(value: AggregationsBucketsPath): Self = StObject.set(x, "buckets_path", value.asInstanceOf[js.Any])
     

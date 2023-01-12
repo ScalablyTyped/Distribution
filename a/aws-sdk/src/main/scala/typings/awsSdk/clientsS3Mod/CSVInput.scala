@@ -48,7 +48,8 @@ object CSVInput {
     __obj.asInstanceOf[CSVInput]
   }
   
-  extension [Self <: CSVInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSVInput] (val x: Self) extends AnyVal {
     
     inline def setAllowQuotedRecordDelimiter(value: AllowQuotedRecordDelimiter): Self = StObject.set(x, "AllowQuotedRecordDelimiter", value.asInstanceOf[js.Any])
     

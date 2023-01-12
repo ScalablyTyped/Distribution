@@ -18,7 +18,8 @@ object EnvironmentResourcesDescription {
     __obj.asInstanceOf[EnvironmentResourcesDescription]
   }
   
-  extension [Self <: EnvironmentResourcesDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentResourcesDescription] (val x: Self) extends AnyVal {
     
     inline def setLoadBalancer(value: LoadBalancerDescription): Self = StObject.set(x, "LoadBalancer", value.asInstanceOf[js.Any])
     

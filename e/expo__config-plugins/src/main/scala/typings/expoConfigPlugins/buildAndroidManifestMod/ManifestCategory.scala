@@ -16,7 +16,8 @@ object ManifestCategory {
     __obj.asInstanceOf[ManifestCategory]
   }
   
-  extension [Self <: ManifestCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestCategory] (val x: Self) extends AnyVal {
     
     inline def set$(value: AndroidManifestAttributes): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }

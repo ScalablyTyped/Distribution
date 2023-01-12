@@ -33,7 +33,8 @@ object VersionInformation {
     __obj.asInstanceOf[VersionInformation]
   }
   
-  extension [Self <: VersionInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VersionInformation] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

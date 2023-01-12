@@ -30,7 +30,8 @@ object UnlinkIdentityInput {
     __obj.asInstanceOf[UnlinkIdentityInput]
   }
   
-  extension [Self <: UnlinkIdentityInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnlinkIdentityInput] (val x: Self) extends AnyVal {
     
     inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     

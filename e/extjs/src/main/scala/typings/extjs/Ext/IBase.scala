@@ -48,7 +48,8 @@ object IBase {
     __obj.asInstanceOf[IBase]
   }
   
-  extension [Self <: IBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBase] (val x: Self) extends AnyVal {
     
     inline def setCallOverridden(value: /* args */ js.UndefOr[Any] => Any): Self = StObject.set(x, "callOverridden", js.Any.fromFunction1(value))
     

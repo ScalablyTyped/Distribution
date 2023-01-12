@@ -20,7 +20,8 @@ object Signinprovider {
     __obj.asInstanceOf[Signinprovider]
   }
   
-  extension [Self <: Signinprovider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Signinprovider] (val x: Self) extends AnyVal {
     
     inline def setIdentities(value: providerinFirebaseSignInP): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     

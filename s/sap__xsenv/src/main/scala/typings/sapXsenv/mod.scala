@@ -79,7 +79,8 @@ object mod {
       __obj.asInstanceOf[ServiceBinding[T]]
     }
     
-    extension [Self <: ServiceBinding[?], T](x: Self & ServiceBinding[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceBinding[?], T] (val x: Self & ServiceBinding[T]) extends AnyVal {
       
       inline def setBinding_guid(value: String): Self = StObject.set(x, "binding_guid", value.asInstanceOf[js.Any])
       

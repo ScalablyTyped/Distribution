@@ -16,7 +16,8 @@ object ExportInstanceRequest {
     __obj.asInstanceOf[ExportInstanceRequest]
   }
   
-  extension [Self <: ExportInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setOutputConfig(value: OutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
     

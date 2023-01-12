@@ -43,7 +43,8 @@ object GetFrameCallbackDetailsType {
     __obj.asInstanceOf[GetFrameCallbackDetailsType]
   }
   
-  extension [Self <: GetFrameCallbackDetailsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFrameCallbackDetailsType] (val x: Self) extends AnyVal {
     
     inline def setErrorOccurred(value: Boolean): Self = StObject.set(x, "errorOccurred", value.asInstanceOf[js.Any])
     

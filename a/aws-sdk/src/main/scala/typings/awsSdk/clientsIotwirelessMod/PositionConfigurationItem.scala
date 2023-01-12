@@ -33,7 +33,8 @@ object PositionConfigurationItem {
     __obj.asInstanceOf[PositionConfigurationItem]
   }
   
-  extension [Self <: PositionConfigurationItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionConfigurationItem] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: DestinationName): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

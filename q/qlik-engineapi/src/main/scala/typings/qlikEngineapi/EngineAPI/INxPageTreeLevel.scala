@@ -24,7 +24,8 @@ object INxPageTreeLevel {
     __obj.asInstanceOf[INxPageTreeLevel]
   }
   
-  extension [Self <: INxPageTreeLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxPageTreeLevel] (val x: Self) extends AnyVal {
     
     inline def setQDepth(value: Double): Self = StObject.set(x, "qDepth", value.asInstanceOf[js.Any])
     

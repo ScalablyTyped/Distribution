@@ -24,7 +24,8 @@ object AnalysisKeepTypesTokenFilter {
     __obj.asInstanceOf[AnalysisKeepTypesTokenFilter]
   }
   
-  extension [Self <: AnalysisKeepTypesTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisKeepTypesTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setMode(value: AnalysisKeepTypesMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

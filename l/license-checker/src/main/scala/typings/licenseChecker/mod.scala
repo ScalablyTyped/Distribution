@@ -129,7 +129,8 @@ object mod {
       __obj.asInstanceOf[InitOpts]
     }
     
-    extension [Self <: InitOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitOpts] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -301,7 +302,8 @@ object mod {
       __obj.asInstanceOf[ModuleInfo]
     }
     
-    extension [Self <: ModuleInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleInfo] (val x: Self) extends AnyVal {
       
       inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       

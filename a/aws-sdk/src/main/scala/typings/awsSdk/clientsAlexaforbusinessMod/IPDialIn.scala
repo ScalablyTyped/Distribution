@@ -23,7 +23,8 @@ object IPDialIn {
     __obj.asInstanceOf[IPDialIn]
   }
   
-  extension [Self <: IPDialIn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPDialIn] (val x: Self) extends AnyVal {
     
     inline def setCommsProtocol(value: CommsProtocol): Self = StObject.set(x, "CommsProtocol", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object RegularPolygonConfig {
     __obj.asInstanceOf[RegularPolygonConfig]
   }
   
-  extension [Self <: RegularPolygonConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegularPolygonConfig] (val x: Self) extends AnyVal {
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     

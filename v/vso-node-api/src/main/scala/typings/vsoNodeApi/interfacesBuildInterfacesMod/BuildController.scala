@@ -58,7 +58,8 @@ object BuildController {
     __obj.asInstanceOf[BuildController]
   }
   
-  extension [Self <: BuildController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildController] (val x: Self) extends AnyVal {
     
     inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     

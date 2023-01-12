@@ -201,7 +201,8 @@ object buildSrcMessageQueuesMod {
       __obj.asInstanceOf[BatchOptions]
     }
     
-    extension [Self <: BatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchOptions] (val x: Self) extends AnyVal {
       
       inline def setCallOptions(value: CallOptions): Self = StObject.set(x, "callOptions", value.asInstanceOf[js.Any])
       
@@ -234,7 +235,8 @@ object buildSrcMessageQueuesMod {
       __obj.asInstanceOf[QueuedMessage]
     }
     
-    extension [Self <: QueuedMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueuedMessage] (val x: Self) extends AnyVal {
       
       inline def setAckId(value: String): Self = StObject.set(x, "ackId", value.asInstanceOf[js.Any])
       

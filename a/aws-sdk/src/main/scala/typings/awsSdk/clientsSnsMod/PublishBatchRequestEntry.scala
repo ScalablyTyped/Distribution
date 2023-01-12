@@ -48,7 +48,8 @@ object PublishBatchRequestEntry {
     __obj.asInstanceOf[PublishBatchRequestEntry]
   }
   
-  extension [Self <: PublishBatchRequestEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishBatchRequestEntry] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

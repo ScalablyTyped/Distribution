@@ -36,7 +36,8 @@ object VstsEnv {
     __obj.asInstanceOf[VstsEnv]
   }
   
-  extension [Self <: VstsEnv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VstsEnv] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

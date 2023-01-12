@@ -23,7 +23,8 @@ object ASPxClientGridViewColumnProcessingModeEventArgs {
     __obj.asInstanceOf[ASPxClientGridViewColumnProcessingModeEventArgs]
   }
   
-  extension [Self <: ASPxClientGridViewColumnProcessingModeEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGridViewColumnProcessingModeEventArgs] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
   }

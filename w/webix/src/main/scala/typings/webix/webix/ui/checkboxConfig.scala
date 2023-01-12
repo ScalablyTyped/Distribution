@@ -109,7 +109,8 @@ object checkboxConfig {
     __obj.asInstanceOf[checkboxConfig]
   }
   
-  extension [Self <: checkboxConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: checkboxConfig] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

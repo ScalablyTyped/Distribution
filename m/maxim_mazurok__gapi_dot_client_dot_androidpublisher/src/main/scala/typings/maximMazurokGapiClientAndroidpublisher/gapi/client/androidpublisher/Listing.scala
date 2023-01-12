@@ -28,7 +28,8 @@ object Listing {
     __obj.asInstanceOf[Listing]
   }
   
-  extension [Self <: Listing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Listing] (val x: Self) extends AnyVal {
     
     inline def setFullDescription(value: String): Self = StObject.set(x, "fullDescription", value.asInstanceOf[js.Any])
     

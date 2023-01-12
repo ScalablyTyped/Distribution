@@ -54,7 +54,8 @@ object typingsParserCacheMod {
       __obj.asInstanceOf[CacheEntry]
     }
     
-    extension [Self <: CacheEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheEntry] (val x: Self) extends AnyVal {
       
       inline def setAst(value: Ast): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       

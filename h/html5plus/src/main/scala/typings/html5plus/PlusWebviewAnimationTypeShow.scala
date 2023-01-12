@@ -108,7 +108,8 @@ object PlusWebviewAnimationTypeShow {
     __obj.asInstanceOf[PlusWebviewAnimationTypeShow]
   }
   
-  extension [Self <: PlusWebviewAnimationTypeShow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewAnimationTypeShow] (val x: Self) extends AnyVal {
     
     inline def setAuto(value: String): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     

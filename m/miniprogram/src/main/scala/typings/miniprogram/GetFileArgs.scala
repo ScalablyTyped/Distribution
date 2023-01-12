@@ -23,7 +23,8 @@ object GetFileArgs {
     __obj.asInstanceOf[GetFileArgs]
   }
   
-  extension [Self <: GetFileArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFileArgs] (val x: Self) extends AnyVal {
     
     inline def setApFilePath(value: String): Self = StObject.set(x, "apFilePath", value.asInstanceOf[js.Any])
     

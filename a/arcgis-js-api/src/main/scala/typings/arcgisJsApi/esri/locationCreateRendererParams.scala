@@ -85,7 +85,8 @@ object locationCreateRendererParams {
     __obj.asInstanceOf[locationCreateRendererParams]
   }
   
-  extension [Self <: locationCreateRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: locationCreateRendererParams] (val x: Self) extends AnyVal {
     
     inline def setColorMixMode(value: String): Self = StObject.set(x, "colorMixMode", value.asInstanceOf[js.Any])
     

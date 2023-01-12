@@ -38,7 +38,8 @@ object PutResourcePolicyRequest {
     __obj.asInstanceOf[PutResourcePolicyRequest]
   }
   
-  extension [Self <: PutResourcePolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutResourcePolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setEnableHybrid(value: EnableHybridValues): Self = StObject.set(x, "EnableHybrid", value.asInstanceOf[js.Any])
     

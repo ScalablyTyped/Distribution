@@ -25,7 +25,8 @@ object DiagnosticReportPerformer {
     __obj.asInstanceOf[DiagnosticReportPerformer]
   }
   
-  extension [Self <: DiagnosticReportPerformer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticReportPerformer] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

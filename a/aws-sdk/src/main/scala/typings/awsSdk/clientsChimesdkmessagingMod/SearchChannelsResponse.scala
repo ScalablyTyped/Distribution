@@ -23,7 +23,8 @@ object SearchChannelsResponse {
     __obj.asInstanceOf[SearchChannelsResponse]
   }
   
-  extension [Self <: SearchChannelsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchChannelsResponse] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: ChannelSummaryList): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[CheckOptions]
     }
     
-    extension [Self <: CheckOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckOptions] (val x: Self) extends AnyVal {
       
       inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object mod {
       __obj.asInstanceOf[LockOptions]
     }
     
-    extension [Self <: LockOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LockOptions] (val x: Self) extends AnyVal {
       
       inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object mod {
       __obj.asInstanceOf[UnlockOptions]
     }
     
-    extension [Self <: UnlockOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnlockOptions] (val x: Self) extends AnyVal {
       
       inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object StyleDeclarationEdit {
     __obj.asInstanceOf[StyleDeclarationEdit]
   }
   
-  extension [Self <: StyleDeclarationEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleDeclarationEdit] (val x: Self) extends AnyVal {
     
     inline def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

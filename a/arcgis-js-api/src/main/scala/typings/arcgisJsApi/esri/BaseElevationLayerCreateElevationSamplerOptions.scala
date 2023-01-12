@@ -29,7 +29,8 @@ object BaseElevationLayerCreateElevationSamplerOptions {
     __obj.asInstanceOf[BaseElevationLayerCreateElevationSamplerOptions]
   }
   
-  extension [Self <: BaseElevationLayerCreateElevationSamplerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseElevationLayerCreateElevationSamplerOptions] (val x: Self) extends AnyVal {
     
     inline def setDemResolution(value: Double | String): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
     

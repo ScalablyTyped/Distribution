@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[Importer]
     }
     
-    extension [Self <: Importer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Importer] (val x: Self) extends AnyVal {
       
       inline def setImport(value: String => js.Promise[Unit]): Self = StObject.set(x, "import", js.Any.fromFunction1(value))
     }
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       

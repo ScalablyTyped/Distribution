@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[ChangeCorrelator]
     }
     
-    extension [Self <: ChangeCorrelator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeCorrelator] (val x: Self) extends AnyVal {
       
       inline def setChangeCorrelator(value: Boolean): Self = StObject.set(x, "changeCorrelator", value.asInstanceOf[js.Any])
     }

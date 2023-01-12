@@ -113,7 +113,8 @@ object XWindow {
     __obj.asInstanceOf[XWindow]
   }
   
-  extension [Self <: XWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XWindow] (val x: Self) extends AnyVal {
     
     inline def setAddFocusListener(value: XFocusListener => Unit): Self = StObject.set(x, "addFocusListener", js.Any.fromFunction1(value))
     

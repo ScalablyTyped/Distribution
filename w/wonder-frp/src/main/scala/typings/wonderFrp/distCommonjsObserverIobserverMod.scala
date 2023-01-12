@@ -24,7 +24,8 @@ object distCommonjsObserverIobserverMod {
       __obj.asInstanceOf[IObserver]
     }
     
-    extension [Self <: IObserver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObserver] (val x: Self) extends AnyVal {
       
       inline def setCompleted(value: () => Any): Self = StObject.set(x, "completed", js.Any.fromFunction0(value))
       

@@ -17,7 +17,8 @@ object SecurityClearApiKeyCacheRequest {
     __obj.asInstanceOf[SecurityClearApiKeyCacheRequest]
   }
   
-  extension [Self <: SecurityClearApiKeyCacheRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityClearApiKeyCacheRequest] (val x: Self) extends AnyVal {
     
     inline def setIds(value: Ids): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     

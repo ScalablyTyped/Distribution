@@ -25,7 +25,8 @@ object dxTrackBarOptions {
     __obj.asInstanceOf[dxTrackBarOptions[TComponent]]
   }
   
-  extension [Self <: dxTrackBarOptions[?], TComponent](x: Self & dxTrackBarOptions[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTrackBarOptions[?], TComponent] (val x: Self & dxTrackBarOptions[TComponent]) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

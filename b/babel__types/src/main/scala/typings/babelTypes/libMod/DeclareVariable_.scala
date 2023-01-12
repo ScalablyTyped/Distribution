@@ -27,7 +27,8 @@ object DeclareVariable_ {
     __obj.asInstanceOf[DeclareVariable_]
   }
   
-  extension [Self <: DeclareVariable_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeclareVariable_] (val x: Self) extends AnyVal {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

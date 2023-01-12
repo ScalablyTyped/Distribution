@@ -18,7 +18,8 @@ object distSrcTypesStorageStorageResponseMod {
       __obj.asInstanceOf[StorageResponse]
     }
     
-    extension [Self <: StorageResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageResponse] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: Name): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     }

@@ -35,7 +35,8 @@ object PacketMirroringList {
     __obj.asInstanceOf[PacketMirroringList]
   }
   
-  extension [Self <: PacketMirroringList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PacketMirroringList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

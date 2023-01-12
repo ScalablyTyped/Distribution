@@ -19,7 +19,8 @@ object CaptureSnapshotRequest {
     __obj.asInstanceOf[CaptureSnapshotRequest]
   }
   
-  extension [Self <: CaptureSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptureSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: mhtml): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

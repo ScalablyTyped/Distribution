@@ -65,7 +65,8 @@ object CalendarDayShape {
     __obj.asInstanceOf[CalendarDayShape]
   }
   
-  extension [Self <: CalendarDayShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarDayShape] (val x: Self) extends AnyVal {
     
     inline def setAriaLabelFormat(value: String): Self = StObject.set(x, "ariaLabelFormat", value.asInstanceOf[js.Any])
     

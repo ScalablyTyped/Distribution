@@ -18,7 +18,8 @@ object AccessibilityActionInfo {
     __obj.asInstanceOf[AccessibilityActionInfo]
   }
   
-  extension [Self <: AccessibilityActionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibilityActionInfo] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

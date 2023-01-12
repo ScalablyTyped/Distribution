@@ -33,7 +33,8 @@ object ColorDashStyle {
     __obj.asInstanceOf[ColorDashStyle]
   }
   
-  extension [Self <: ColorDashStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorDashStyle] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

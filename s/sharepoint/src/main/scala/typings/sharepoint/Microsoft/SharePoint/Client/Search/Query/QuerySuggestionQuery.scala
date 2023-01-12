@@ -36,7 +36,8 @@ object QuerySuggestionQuery {
     __obj.asInstanceOf[QuerySuggestionQuery]
   }
   
-  extension [Self <: QuerySuggestionQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuerySuggestionQuery] (val x: Self) extends AnyVal {
     
     inline def setGet_isPersonal(value: () => Boolean): Self = StObject.set(x, "get_isPersonal", js.Any.fromFunction0(value))
     

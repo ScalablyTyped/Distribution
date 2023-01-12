@@ -21,7 +21,8 @@ object PhoneCallHistoryEntryQueryOptions {
     __obj.asInstanceOf[PhoneCallHistoryEntryQueryOptions]
   }
   
-  extension [Self <: PhoneCallHistoryEntryQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneCallHistoryEntryQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setDesiredMedia(value: PhoneCallHistoryEntryQueryDesiredMedia): Self = StObject.set(x, "desiredMedia", value.asInstanceOf[js.Any])
     

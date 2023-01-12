@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     }
@@ -52,7 +53,8 @@ object mod {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: Socket): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object mod {
       __obj.asInstanceOf[RequestHeaders]
     }
     
-    extension [Self <: RequestHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestHeaders] (val x: Self) extends AnyVal {
       
       inline def `setForwarded-for`(value: String): Self = StObject.set(x, "forwarded-for", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object mod {
           __obj.asInstanceOf[typings.requestIp.mod.global.Express.Request]
         }
         
-        extension [Self <: typings.requestIp.mod.global.Express.Request](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.requestIp.mod.global.Express.Request] (val x: Self) extends AnyVal {
           
           inline def setClientIp(value: String): Self = StObject.set(x, "clientIp", value.asInstanceOf[js.Any])
           

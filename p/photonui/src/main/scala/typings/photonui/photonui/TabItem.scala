@@ -53,7 +53,8 @@ object TabItem {
     __obj.asInstanceOf[TabItem]
   }
   
-  extension [Self <: TabItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabItem] (val x: Self) extends AnyVal {
     
     inline def setTabHtml(value: HTMLElement): Self = StObject.set(x, "tabHtml", value.asInstanceOf[js.Any])
     

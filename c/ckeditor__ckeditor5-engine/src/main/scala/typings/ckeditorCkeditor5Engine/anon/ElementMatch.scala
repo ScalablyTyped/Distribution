@@ -19,7 +19,8 @@ object ElementMatch {
     __obj.asInstanceOf[ElementMatch]
   }
   
-  extension [Self <: ElementMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementMatch] (val x: Self) extends AnyVal {
     
     inline def setElement(value: default): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object EncryptionOptions {
     __obj.asInstanceOf[EncryptionOptions]
   }
   
-  extension [Self <: EncryptionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptionOptions] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: aes128 | aes192 | aes256 | `3des`): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

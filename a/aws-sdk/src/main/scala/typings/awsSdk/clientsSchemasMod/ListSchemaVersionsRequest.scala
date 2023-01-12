@@ -30,7 +30,8 @@ object ListSchemaVersionsRequest {
     __obj.asInstanceOf[ListSchemaVersionsRequest]
   }
   
-  extension [Self <: ListSchemaVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSchemaVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: integer): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

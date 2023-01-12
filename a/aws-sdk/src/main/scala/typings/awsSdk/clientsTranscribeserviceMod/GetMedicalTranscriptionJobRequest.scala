@@ -18,7 +18,8 @@ object GetMedicalTranscriptionJobRequest {
     __obj.asInstanceOf[GetMedicalTranscriptionJobRequest]
   }
   
-  extension [Self <: GetMedicalTranscriptionJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMedicalTranscriptionJobRequest] (val x: Self) extends AnyVal {
     
     inline def setMedicalTranscriptionJobName(value: TranscriptionJobName): Self = StObject.set(x, "MedicalTranscriptionJobName", value.asInstanceOf[js.Any])
   }

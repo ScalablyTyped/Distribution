@@ -148,7 +148,8 @@ object miscArrayToolsMod {
       __obj.asInstanceOf[TupleTypes[T]]
     }
     
-    extension [Self <: TupleTypes[?], T](x: Self & TupleTypes[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TupleTypes[?], T] (val x: Self & TupleTypes[T]) extends AnyVal {
       
       inline def set10(value: js.Tuple10[T, T, T, T, T, T, T, T, T, T]): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
       

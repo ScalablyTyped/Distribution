@@ -28,7 +28,8 @@ object DetectLabelsImageQuality {
     __obj.asInstanceOf[DetectLabelsImageQuality]
   }
   
-  extension [Self <: DetectLabelsImageQuality](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectLabelsImageQuality] (val x: Self) extends AnyVal {
     
     inline def setBrightness(value: Float): Self = StObject.set(x, "Brightness", value.asInstanceOf[js.Any])
     

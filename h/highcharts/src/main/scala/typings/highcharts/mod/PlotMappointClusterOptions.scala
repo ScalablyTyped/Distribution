@@ -72,7 +72,8 @@ object PlotMappointClusterOptions {
     __obj.asInstanceOf[PlotMappointClusterOptions]
   }
   
-  extension [Self <: PlotMappointClusterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotMappointClusterOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
     

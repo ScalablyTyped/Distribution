@@ -17,7 +17,8 @@ object VideoCampaignBidding {
     __obj.asInstanceOf[VideoCampaignBidding]
   }
   
-  extension [Self <: VideoCampaignBidding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoCampaignBidding] (val x: Self) extends AnyVal {
     
     inline def setGetStrategyType(value: () => String): Self = StObject.set(x, "getStrategyType", js.Any.fromFunction0(value))
   }

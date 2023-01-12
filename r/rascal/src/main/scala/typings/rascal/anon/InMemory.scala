@@ -15,7 +15,8 @@ object InMemory {
     __obj.asInstanceOf[InMemory]
   }
   
-  extension [Self <: InMemory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InMemory] (val x: Self) extends AnyVal {
     
     inline def setInMemory(value: SizeNumber): Self = StObject.set(x, "inMemory", value.asInstanceOf[js.Any])
   }

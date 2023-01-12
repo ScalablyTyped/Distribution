@@ -71,7 +71,8 @@ object NodeJS {
       __obj.asInstanceOf[ErrnoException]
     }
     
-    extension [Self <: ErrnoException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrnoException] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -466,7 +467,8 @@ object NodeJS {
       __obj.asInstanceOf[Global]
     }
     
-    extension [Self <: Global](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
       
       inline def setArray(value: ArrayConstructor): Self = StObject.set(x, "Array", value.asInstanceOf[js.Any])
       
@@ -708,7 +710,8 @@ object NodeJS {
       __obj.asInstanceOf[Timer]
     }
     
-    extension [Self <: Timer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timer] (val x: Self) extends AnyVal {
       
       inline def setRef(value: () => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
       

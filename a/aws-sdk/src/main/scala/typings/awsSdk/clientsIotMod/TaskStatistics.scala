@@ -48,7 +48,8 @@ object TaskStatistics {
     __obj.asInstanceOf[TaskStatistics]
   }
   
-  extension [Self <: TaskStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskStatistics] (val x: Self) extends AnyVal {
     
     inline def setCanceledChecks(value: CanceledChecksCount): Self = StObject.set(x, "canceledChecks", value.asInstanceOf[js.Any])
     

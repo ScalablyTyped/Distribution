@@ -50,7 +50,8 @@ object ChooseAddressSuccessCallbackResult {
     __obj.asInstanceOf[ChooseAddressSuccessCallbackResult]
   }
   
-  extension [Self <: ChooseAddressSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseAddressSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setCityName(value: String): Self = StObject.set(x, "cityName", value.asInstanceOf[js.Any])
     

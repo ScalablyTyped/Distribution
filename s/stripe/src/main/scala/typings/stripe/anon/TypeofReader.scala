@@ -15,7 +15,8 @@ object TypeofReader {
     __obj.asInstanceOf[TypeofReader]
   }
   
-  extension [Self <: TypeofReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofReader] (val x: Self) extends AnyVal {
     
     inline def setAction(value: TypeofAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
   }

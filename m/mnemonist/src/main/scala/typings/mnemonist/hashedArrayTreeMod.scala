@@ -91,7 +91,8 @@ object hashedArrayTreeMod {
       __obj.asInstanceOf[HashedArrayTree[T]]
     }
     
-    extension [Self <: HashedArrayTree[?], T](x: Self & HashedArrayTree[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashedArrayTree[?], T] (val x: Self & HashedArrayTree[T]) extends AnyVal {
       
       inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object hashedArrayTreeMod {
       __obj.asInstanceOf[HashedArrayTreeOptions]
     }
     
-    extension [Self <: HashedArrayTreeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashedArrayTreeOptions] (val x: Self) extends AnyVal {
       
       inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       

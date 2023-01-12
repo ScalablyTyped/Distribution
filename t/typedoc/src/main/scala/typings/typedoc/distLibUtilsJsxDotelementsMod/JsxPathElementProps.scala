@@ -22,7 +22,8 @@ object JsxPathElementProps {
     __obj.asInstanceOf[JsxPathElementProps]
   }
   
-  extension [Self <: JsxPathElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxPathElementProps] (val x: Self) extends AnyVal {
     
     inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     

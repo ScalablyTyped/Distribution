@@ -17,7 +17,8 @@ object MediaStreamSourceSampleRequestDeferral {
     __obj.asInstanceOf[MediaStreamSourceSampleRequestDeferral]
   }
   
-  extension [Self <: MediaStreamSourceSampleRequestDeferral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamSourceSampleRequestDeferral] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }

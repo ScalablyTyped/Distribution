@@ -36,7 +36,8 @@ object HostBasedAuthMethod {
     __obj.asInstanceOf[HostBasedAuthMethod]
   }
   
-  extension [Self <: HostBasedAuthMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostBasedAuthMethod] (val x: Self) extends AnyVal {
     
     inline def setKey(value: ParsedKey | Buffer | String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

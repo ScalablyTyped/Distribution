@@ -37,7 +37,8 @@ object buildSrcAckMetadataMod {
       __obj.asInstanceOf[AckErrorInfo]
     }
     
-    extension [Self <: AckErrorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AckErrorInfo] (val x: Self) extends AnyVal {
       
       inline def setGrpcErrorCode(value: Status): Self = StObject.set(x, "grpcErrorCode", value.asInstanceOf[js.Any])
       

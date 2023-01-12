@@ -115,7 +115,8 @@ object PartialAnnotationsArrowcolor {
     __obj.asInstanceOf[PartialAnnotationsArrowcolor]
   }
   
-  extension [Self <: PartialAnnotationsArrowcolor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAnnotationsArrowcolor] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

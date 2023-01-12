@@ -21,7 +21,8 @@ object ExtendedSourceContext {
     __obj.asInstanceOf[ExtendedSourceContext]
   }
   
-  extension [Self <: ExtendedSourceContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendedSourceContext] (val x: Self) extends AnyVal {
     
     inline def setContext(value: SourceContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

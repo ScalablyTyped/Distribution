@@ -48,7 +48,8 @@ object ngccSrcAnalysisTypesMod {
       __obj.asInstanceOf[CompiledClass]
     }
     
-    extension [Self <: CompiledClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompiledClass] (val x: Self) extends AnyVal {
       
       inline def setCompilation(value: js.Array[CompileResult]): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object ngccSrcAnalysisTypesMod {
       __obj.asInstanceOf[CompiledFile]
     }
     
-    extension [Self <: CompiledFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompiledFile] (val x: Self) extends AnyVal {
       
       inline def setCompiledClasses(value: js.Array[CompiledClass]): Self = StObject.set(x, "compiledClasses", value.asInstanceOf[js.Any])
       

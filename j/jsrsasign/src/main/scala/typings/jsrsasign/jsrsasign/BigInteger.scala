@@ -36,7 +36,8 @@ object BigInteger {
     __obj.asInstanceOf[BigInteger]
   }
   
-  extension [Self <: BigInteger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigInteger] (val x: Self) extends AnyVal {
     
     inline def setAbs(value: () => BigInteger): Self = StObject.set(x, "abs", js.Any.fromFunction0(value))
     

@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[TransformOptions]
     }
     
-    extension [Self <: TransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object mod {
       __obj.asInstanceOf[TransformOutput]
     }
     
-    extension [Self <: TransformOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformOutput] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

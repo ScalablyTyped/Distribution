@@ -20,7 +20,8 @@ object CreativeDealIds {
     __obj.asInstanceOf[CreativeDealIds]
   }
   
-  extension [Self <: CreativeDealIds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreativeDealIds] (val x: Self) extends AnyVal {
     
     inline def setDealStatuses(value: js.Array[ArcStatus]): Self = StObject.set(x, "dealStatuses", value.asInstanceOf[js.Any])
     

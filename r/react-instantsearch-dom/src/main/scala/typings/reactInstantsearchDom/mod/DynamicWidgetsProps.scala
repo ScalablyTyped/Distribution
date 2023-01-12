@@ -18,7 +18,8 @@ object DynamicWidgetsProps {
     __obj.asInstanceOf[DynamicWidgetsProps]
   }
   
-  extension [Self <: DynamicWidgetsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicWidgetsProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

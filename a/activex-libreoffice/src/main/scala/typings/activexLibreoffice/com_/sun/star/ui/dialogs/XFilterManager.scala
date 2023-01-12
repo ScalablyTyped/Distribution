@@ -53,7 +53,8 @@ object XFilterManager {
     __obj.asInstanceOf[XFilterManager]
   }
   
-  extension [Self <: XFilterManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFilterManager] (val x: Self) extends AnyVal {
     
     inline def setAppendFilter(value: (String, String) => Unit): Self = StObject.set(x, "appendFilter", js.Any.fromFunction2(value))
     

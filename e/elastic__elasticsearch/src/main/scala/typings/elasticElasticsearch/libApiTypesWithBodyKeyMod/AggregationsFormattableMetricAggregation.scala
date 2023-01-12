@@ -17,7 +17,8 @@ object AggregationsFormattableMetricAggregation {
     __obj.asInstanceOf[AggregationsFormattableMetricAggregation]
   }
   
-  extension [Self <: AggregationsFormattableMetricAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsFormattableMetricAggregation] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

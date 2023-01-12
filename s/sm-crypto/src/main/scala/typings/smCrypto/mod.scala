@@ -110,7 +110,8 @@ object mod {
       __obj.asInstanceOf[KeyPairHex]
     }
     
-    extension [Self <: KeyPairHex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPairHex] (val x: Self) extends AnyVal {
       
       inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object mod {
       __obj.asInstanceOf[KeyPairPoint]
     }
     
-    extension [Self <: KeyPairPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPairPoint] (val x: Self) extends AnyVal {
       
       inline def setK(value: typings.bigi.mod.^): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object mod {
       __obj.asInstanceOf[SM4ModeArrayOutput]
     }
     
-    extension [Self <: SM4ModeArrayOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SM4ModeArrayOutput] (val x: Self) extends AnyVal {
       
       inline def setOutput(value: array): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
@@ -175,7 +178,8 @@ object mod {
       __obj.asInstanceOf[SM4ModeBase]
     }
     
-    extension [Self <: SM4ModeBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SM4ModeBase] (val x: Self) extends AnyVal {
       
       inline def setIv(value: js.Array[Double] | HexString): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
       
@@ -206,7 +210,8 @@ object mod {
       __obj.asInstanceOf[SM4ModeStringOutput]
     }
     
-    extension [Self <: SM4ModeStringOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SM4ModeStringOutput] (val x: Self) extends AnyVal {
       
       inline def setOutput(value: string): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }

@@ -25,7 +25,8 @@ object ArrayBufferConstructor {
     __obj.asInstanceOf[ArrayBufferConstructor]
   }
   
-  extension [Self <: ArrayBufferConstructor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayBufferConstructor] (val x: Self) extends AnyVal {
     
     inline def setWrap(value: (NativePointerValue, Double) => ArrayBuffer): Self = StObject.set(x, "wrap", js.Any.fromFunction2(value))
   }

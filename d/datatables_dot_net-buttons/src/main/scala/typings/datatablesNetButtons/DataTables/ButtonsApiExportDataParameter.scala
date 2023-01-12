@@ -31,7 +31,8 @@ object ButtonsApiExportDataParameter {
     __obj.asInstanceOf[ButtonsApiExportDataParameter]
   }
   
-  extension [Self <: ButtonsApiExportDataParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonsApiExportDataParameter] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

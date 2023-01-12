@@ -38,7 +38,8 @@ object RevokeSigningProfileRequest {
     __obj.asInstanceOf[RevokeSigningProfileRequest]
   }
   
-  extension [Self <: RevokeSigningProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeSigningProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setEffectiveTime(value: js.Date): Self = StObject.set(x, "effectiveTime", value.asInstanceOf[js.Any])
     

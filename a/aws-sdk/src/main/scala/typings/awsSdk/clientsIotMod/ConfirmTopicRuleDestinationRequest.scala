@@ -18,7 +18,8 @@ object ConfirmTopicRuleDestinationRequest {
     __obj.asInstanceOf[ConfirmTopicRuleDestinationRequest]
   }
   
-  extension [Self <: ConfirmTopicRuleDestinationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmTopicRuleDestinationRequest] (val x: Self) extends AnyVal {
     
     inline def setConfirmationToken(value: ConfirmationToken): Self = StObject.set(x, "confirmationToken", value.asInstanceOf[js.Any])
   }

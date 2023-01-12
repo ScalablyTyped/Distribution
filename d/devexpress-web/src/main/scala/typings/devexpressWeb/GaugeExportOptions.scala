@@ -22,7 +22,8 @@ object GaugeExportOptions {
     __obj.asInstanceOf[GaugeExportOptions]
   }
   
-  extension [Self <: GaugeExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GaugeExportOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoArrangeContent(value: Boolean): Self = StObject.set(x, "AutoArrangeContent", value.asInstanceOf[js.Any])
   }

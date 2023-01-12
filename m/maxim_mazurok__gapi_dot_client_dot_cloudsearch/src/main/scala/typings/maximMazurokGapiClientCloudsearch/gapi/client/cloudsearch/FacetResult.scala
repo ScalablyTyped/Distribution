@@ -25,7 +25,8 @@ object FacetResult {
     __obj.asInstanceOf[FacetResult]
   }
   
-  extension [Self <: FacetResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacetResult] (val x: Self) extends AnyVal {
     
     inline def setBuckets(value: js.Array[FacetBucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     

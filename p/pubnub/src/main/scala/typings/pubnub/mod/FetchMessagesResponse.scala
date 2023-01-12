@@ -17,7 +17,8 @@ object FetchMessagesResponse {
     __obj.asInstanceOf[FetchMessagesResponse]
   }
   
-  extension [Self <: FetchMessagesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchMessagesResponse] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: StringDictionary[js.Array[Actions]]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
   }

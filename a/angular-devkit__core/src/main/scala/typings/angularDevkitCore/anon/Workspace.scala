@@ -16,7 +16,8 @@ object Workspace {
     __obj.asInstanceOf[Workspace]
   }
   
-  extension [Self <: Workspace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Workspace] (val x: Self) extends AnyVal {
     
     inline def setWorkspace(value: WorkspaceDefinition): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String | js.Array[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object mod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setCrashed(value: Double): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
       

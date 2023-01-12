@@ -19,7 +19,8 @@ object ExtensionInfo {
     __obj.asInstanceOf[ExtensionInfo]
   }
   
-  extension [Self <: ExtensionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionInfo] (val x: Self) extends AnyVal {
     
     inline def setDefaultOptions(value: js.Object): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
     

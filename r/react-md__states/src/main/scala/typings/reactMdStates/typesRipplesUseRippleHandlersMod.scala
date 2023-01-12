@@ -38,7 +38,8 @@ object typesRipplesUseRippleHandlersMod {
       __obj.asInstanceOf[Options[E]]
     }
     
-    extension [Self <: Options[?], E /* <: HTMLElement */](x: Self & Options[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], E /* <: HTMLElement */] (val x: Self & Options[E]) extends AnyVal {
       
       inline def setCancel(value: Boolean => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       

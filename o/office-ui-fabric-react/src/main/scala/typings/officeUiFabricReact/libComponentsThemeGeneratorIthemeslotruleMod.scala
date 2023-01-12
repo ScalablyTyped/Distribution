@@ -46,7 +46,8 @@ object libComponentsThemeGeneratorIthemeslotruleMod {
       __obj.asInstanceOf[IThemeSlotRule]
     }
     
-    extension [Self <: IThemeSlotRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IThemeSlotRule] (val x: Self) extends AnyVal {
       
       inline def setAsShade(value: Shade): Self = StObject.set(x, "asShade", value.asInstanceOf[js.Any])
       

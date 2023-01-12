@@ -92,7 +92,8 @@ object XBlob {
     __obj.asInstanceOf[XBlob]
   }
   
-  extension [Self <: XBlob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBlob] (val x: Self) extends AnyVal {
     
     inline def setBinaryStream(value: XInputStream): Self = StObject.set(x, "BinaryStream", value.asInstanceOf[js.Any])
     

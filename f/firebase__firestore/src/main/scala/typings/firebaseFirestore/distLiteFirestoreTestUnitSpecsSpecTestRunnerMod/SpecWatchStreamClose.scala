@@ -17,7 +17,8 @@ object SpecWatchStreamClose {
     __obj.asInstanceOf[SpecWatchStreamClose]
   }
   
-  extension [Self <: SpecWatchStreamClose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecWatchStreamClose] (val x: Self) extends AnyVal {
     
     inline def setError(value: SpecError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

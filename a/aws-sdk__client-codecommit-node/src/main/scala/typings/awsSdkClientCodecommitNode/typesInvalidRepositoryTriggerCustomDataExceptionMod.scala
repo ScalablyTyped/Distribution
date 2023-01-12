@@ -23,7 +23,8 @@ object typesInvalidRepositoryTriggerCustomDataExceptionMod {
       __obj.asInstanceOf[InvalidRepositoryTriggerCustomDataException]
     }
     
-    extension [Self <: InvalidRepositoryTriggerCustomDataException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidRepositoryTriggerCustomDataException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryTriggerCustomDataException

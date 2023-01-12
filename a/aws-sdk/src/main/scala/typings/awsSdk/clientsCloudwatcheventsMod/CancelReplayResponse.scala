@@ -28,7 +28,8 @@ object CancelReplayResponse {
     __obj.asInstanceOf[CancelReplayResponse]
   }
   
-  extension [Self <: CancelReplayResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelReplayResponse] (val x: Self) extends AnyVal {
     
     inline def setReplayArn(value: ReplayArn): Self = StObject.set(x, "ReplayArn", value.asInstanceOf[js.Any])
     

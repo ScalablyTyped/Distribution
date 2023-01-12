@@ -47,7 +47,8 @@ object ConditionalAccessPolicy {
     __obj.asInstanceOf[ConditionalAccessPolicy]
   }
   
-  extension [Self <: ConditionalAccessPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalAccessPolicy] (val x: Self) extends AnyVal {
     
     inline def setConditions(value: ConditionalAccessConditionSet): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     

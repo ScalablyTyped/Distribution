@@ -18,7 +18,8 @@ object AppManifestParsedProperties {
     __obj.asInstanceOf[AppManifestParsedProperties]
   }
   
-  extension [Self <: AppManifestParsedProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppManifestParsedProperties] (val x: Self) extends AnyVal {
     
     inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }

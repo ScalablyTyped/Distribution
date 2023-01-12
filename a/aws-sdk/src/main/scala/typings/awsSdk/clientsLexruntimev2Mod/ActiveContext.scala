@@ -32,7 +32,8 @@ object ActiveContext {
     __obj.asInstanceOf[ActiveContext]
   }
   
-  extension [Self <: ActiveContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveContext] (val x: Self) extends AnyVal {
     
     inline def setContextAttributes(value: ActiveContextParametersMap): Self = StObject.set(x, "contextAttributes", value.asInstanceOf[js.Any])
     

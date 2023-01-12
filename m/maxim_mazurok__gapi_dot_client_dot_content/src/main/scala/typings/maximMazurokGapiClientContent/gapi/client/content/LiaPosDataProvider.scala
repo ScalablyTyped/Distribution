@@ -19,7 +19,8 @@ object LiaPosDataProvider {
     __obj.asInstanceOf[LiaPosDataProvider]
   }
   
-  extension [Self <: LiaPosDataProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiaPosDataProvider] (val x: Self) extends AnyVal {
     
     inline def setPosDataProviderId(value: String): Self = StObject.set(x, "posDataProviderId", value.asInstanceOf[js.Any])
     

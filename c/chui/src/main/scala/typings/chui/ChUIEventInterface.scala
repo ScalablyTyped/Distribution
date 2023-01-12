@@ -53,7 +53,8 @@ object ChUIEventInterface {
     __obj.asInstanceOf[ChUIEventInterface]
   }
   
-  extension [Self <: ChUIEventInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChUIEventInterface] (val x: Self) extends AnyVal {
     
     inline def setDoubletap(value: String): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     

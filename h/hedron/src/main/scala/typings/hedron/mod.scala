@@ -123,7 +123,8 @@ object mod {
       __obj.asInstanceOf[BoundsProps]
     }
     
-    extension [Self <: BoundsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundsProps] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object mod {
       __obj.asInstanceOf[BoxProps]
     }
     
-    extension [Self <: BoxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxProps] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -269,7 +271,8 @@ object mod {
       __obj.asInstanceOf[ProviderProps]
     }
     
-    extension [Self <: ProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderProps] (val x: Self) extends AnyVal {
       
       inline def setBreakpoints(value: StringDictionary[String]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       
@@ -346,7 +349,8 @@ object mod {
       __obj.asInstanceOf[Styleable]
     }
     
-    extension [Self <: Styleable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Styleable] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

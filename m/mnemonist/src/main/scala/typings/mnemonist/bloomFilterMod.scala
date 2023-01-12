@@ -54,7 +54,8 @@ object bloomFilterMod {
       __obj.asInstanceOf[BloomFilterOptions]
     }
     
-    extension [Self <: BloomFilterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BloomFilterOptions] (val x: Self) extends AnyVal {
       
       inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       

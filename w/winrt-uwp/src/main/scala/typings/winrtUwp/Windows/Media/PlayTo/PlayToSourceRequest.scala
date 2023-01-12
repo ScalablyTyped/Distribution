@@ -40,7 +40,8 @@ object PlayToSourceRequest {
     __obj.asInstanceOf[PlayToSourceRequest]
   }
   
-  extension [Self <: PlayToSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayToSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     

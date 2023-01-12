@@ -17,7 +17,8 @@ object IINVITATION_REPLY_ERROR {
     __obj.asInstanceOf[IINVITATION_REPLY_ERROR]
   }
   
-  extension [Self <: IINVITATION_REPLY_ERROR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IINVITATION_REPLY_ERROR] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

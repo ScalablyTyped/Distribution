@@ -91,7 +91,8 @@ object mod {
       __obj.asInstanceOf[HOTPGenOpt]
     }
     
-    extension [Self <: HOTPGenOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HOTPGenOpt] (val x: Self) extends AnyVal {
       
       inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[HOTPVerifyOpt]
     }
     
-    extension [Self <: HOTPVerifyOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HOTPVerifyOpt] (val x: Self) extends AnyVal {
       
       inline def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object mod {
       __obj.asInstanceOf[TOTPGenOpt]
     }
     
-    extension [Self <: TOTPGenOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TOTPGenOpt] (val x: Self) extends AnyVal {
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
@@ -191,7 +194,8 @@ object mod {
       __obj.asInstanceOf[TOTPVerifyOpt]
     }
     
-    extension [Self <: TOTPVerifyOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TOTPVerifyOpt] (val x: Self) extends AnyVal {
       
       inline def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
@@ -213,7 +217,8 @@ object mod {
       __obj.asInstanceOf[VerifyResult]
     }
     
-    extension [Self <: VerifyResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyResult] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     }

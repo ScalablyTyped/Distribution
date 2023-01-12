@@ -38,7 +38,8 @@ object DOMQuad {
     __obj.asInstanceOf[DOMQuad]
   }
   
-  extension [Self <: DOMQuad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMQuad] (val x: Self) extends AnyVal {
     
     inline def setGetBounds(value: () => DOMRect): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     

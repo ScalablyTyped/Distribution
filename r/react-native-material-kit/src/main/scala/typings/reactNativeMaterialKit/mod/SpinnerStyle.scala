@@ -15,7 +15,8 @@ object SpinnerStyle {
     __obj.asInstanceOf[SpinnerStyle]
   }
   
-  extension [Self <: SpinnerStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpinnerStyle] (val x: Self) extends AnyVal {
     
     inline def setStrokeColor(value: js.Array[String]): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     

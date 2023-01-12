@@ -16,7 +16,8 @@ object IDBTransactionOptions {
     __obj.asInstanceOf[IDBTransactionOptions]
   }
   
-  extension [Self <: IDBTransactionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDBTransactionOptions] (val x: Self) extends AnyVal {
     
     inline def setDurability(value: IDBTransactionDurability): Self = StObject.set(x, "durability", value.asInstanceOf[js.Any])
     

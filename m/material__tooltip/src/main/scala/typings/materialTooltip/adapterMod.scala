@@ -227,7 +227,8 @@ object adapterMod {
       __obj.asInstanceOf[MDCTooltipAdapter]
     }
     
-    extension [Self <: MDCTooltipAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTooltipAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: CssClasses => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

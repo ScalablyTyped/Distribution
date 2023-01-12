@@ -29,7 +29,8 @@ object paymentMod {
       __obj.asInstanceOf[CanMakePaymentResult]
     }
     
-    extension [Self <: CanMakePaymentResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanMakePaymentResult] (val x: Self) extends AnyVal {
       
       inline def setApplePay(value: Boolean): Self = StObject.set(x, "applePay", value.asInstanceOf[js.Any])
     }
@@ -55,7 +56,8 @@ object paymentMod {
       __obj.asInstanceOf[NewShippingAddress]
     }
     
-    extension [Self <: NewShippingAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewShippingAddress] (val x: Self) extends AnyVal {
       
       inline def setShippingAddress(value: ShippingAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object paymentMod {
       __obj.asInstanceOf[NewShippingOptions]
     }
     
-    extension [Self <: NewShippingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewShippingOptions] (val x: Self) extends AnyVal {
       
       inline def setShippingOption(value: ShippingOption): Self = StObject.set(x, "shippingOption", value.asInstanceOf[js.Any])
       
@@ -117,7 +120,8 @@ object paymentMod {
       __obj.asInstanceOf[PaymentItem]
     }
     
-    extension [Self <: PaymentItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentItem] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -171,7 +175,8 @@ object paymentMod {
       __obj.asInstanceOf[StripePaymentOptions]
     }
     
-    extension [Self <: StripePaymentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StripePaymentOptions] (val x: Self) extends AnyVal {
       
       inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
@@ -298,7 +303,8 @@ object paymentMod {
       __obj.asInstanceOf[StripePaymentResponse]
     }
     
-    extension [Self <: StripePaymentResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StripePaymentResponse] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: completeStatus => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
@@ -368,7 +374,8 @@ object paymentMod {
       __obj.asInstanceOf[UpdateOptions]
     }
     
-    extension [Self <: UpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       

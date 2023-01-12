@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[ModalProps]
     }
     
-    extension [Self <: ModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       
@@ -139,7 +140,8 @@ object mod {
       __obj.asInstanceOf[ModalProviderProps]
     }
     
-    extension [Self <: ModalProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalProviderProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundComponent(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyStyledComponent */ Any

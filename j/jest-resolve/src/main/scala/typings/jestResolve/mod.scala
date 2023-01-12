@@ -132,7 +132,8 @@ object mod {
       __obj.asInstanceOf[FindNodeModuleConfig]
     }
     
-    extension [Self <: FindNodeModuleConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindNodeModuleConfig] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
@@ -240,7 +241,8 @@ object mod {
       __obj.asInstanceOf[ModuleNameMapperConfig]
     }
     
-    extension [Self <: ModuleNameMapperConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleNameMapperConfig] (val x: Self) extends AnyVal {
       
       inline def setModuleName(value: String | js.Array[String]): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
       
@@ -275,7 +277,8 @@ object mod {
       __obj.asInstanceOf[ModuleNotFoundError]
     }
     
-    extension [Self <: ModuleNotFoundError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleNotFoundError] (val x: Self) extends AnyVal {
       
       inline def setBuildMessage(value: String => Unit): Self = StObject.set(x, "buildMessage", js.Any.fromFunction1(value))
       
@@ -324,7 +327,8 @@ object mod {
       __obj.asInstanceOf[ResolveModuleConfig]
     }
     
-    extension [Self <: ResolveModuleConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveModuleConfig] (val x: Self) extends AnyVal {
       
       inline def setConditions(value: js.Array[String]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
@@ -452,7 +456,8 @@ object mod {
       __obj.asInstanceOf[ResolverAsyncObject]
     }
     
-    extension [Self <: ResolverAsyncObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolverAsyncObject] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: (/* path */ String, /* options */ ResolverOptions) => js.Promise[String]): Self = StObject.set(x, "async", js.Any.fromFunction2(value))
       
@@ -494,7 +499,8 @@ object mod {
       __obj.asInstanceOf[ResolverConfig]
     }
     
-    extension [Self <: ResolverConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolverConfig] (val x: Self) extends AnyVal {
       
       inline def setDefaultPlatform(value: String): Self = StObject.set(x, "defaultPlatform", value.asInstanceOf[js.Any])
       
@@ -591,7 +597,8 @@ object mod {
       __obj.asInstanceOf[ResolverOptions]
     }
     
-    extension [Self <: ResolverOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolverOptions] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
@@ -652,7 +659,8 @@ object mod {
       __obj.asInstanceOf[ResolverSyncObject]
     }
     
-    extension [Self <: ResolverSyncObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolverSyncObject] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: (/* path */ String, /* options */ ResolverOptions) => js.Promise[String]): Self = StObject.set(x, "async", js.Any.fromFunction2(value))
       

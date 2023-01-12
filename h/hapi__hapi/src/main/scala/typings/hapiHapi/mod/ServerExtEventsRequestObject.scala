@@ -47,7 +47,8 @@ object ServerExtEventsRequestObject {
     __obj.asInstanceOf[ServerExtEventsRequestObject]
   }
   
-  extension [Self <: ServerExtEventsRequestObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerExtEventsRequestObject] (val x: Self) extends AnyVal {
     
     inline def setMethod(
       value: (Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]) | (js.Array[Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]])

@@ -27,7 +27,8 @@ object CollapsibleSetOptions {
     __obj.asInstanceOf[CollapsibleSetOptions]
   }
   
-  extension [Self <: CollapsibleSetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollapsibleSetOptions] (val x: Self) extends AnyVal {
     
     inline def setCollapsedIcon(value: String): Self = StObject.set(x, "collapsedIcon", value.asInstanceOf[js.Any])
     

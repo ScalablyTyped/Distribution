@@ -83,7 +83,8 @@ object ColumnDescriptor {
     __obj.asInstanceOf[ColumnDescriptor]
   }
   
-  extension [Self <: ColumnDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAutoIncrementCreation(value: String): Self = StObject.set(x, "AutoIncrementCreation", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object InputsZerosLikeInputs {
     __obj.asInstanceOf[InputsZerosLikeInputs]
   }
   
-  extension [Self <: InputsZerosLikeInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputsZerosLikeInputs] (val x: Self) extends AnyVal {
     
     inline def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     

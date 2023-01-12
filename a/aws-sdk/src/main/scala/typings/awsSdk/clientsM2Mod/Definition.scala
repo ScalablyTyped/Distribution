@@ -23,7 +23,8 @@ object Definition {
     __obj.asInstanceOf[Definition]
   }
   
-  extension [Self <: Definition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
     
     inline def setContent(value: StringFree65000): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

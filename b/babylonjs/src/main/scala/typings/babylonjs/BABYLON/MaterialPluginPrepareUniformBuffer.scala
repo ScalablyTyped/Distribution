@@ -15,7 +15,8 @@ object MaterialPluginPrepareUniformBuffer {
     __obj.asInstanceOf[MaterialPluginPrepareUniformBuffer]
   }
   
-  extension [Self <: MaterialPluginPrepareUniformBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaterialPluginPrepareUniformBuffer] (val x: Self) extends AnyVal {
     
     inline def setUbo(value: UniformBuffer): Self = StObject.set(x, "ubo", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object GluePolicy {
     __obj.asInstanceOf[GluePolicy]
   }
   
-  extension [Self <: GluePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GluePolicy] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     

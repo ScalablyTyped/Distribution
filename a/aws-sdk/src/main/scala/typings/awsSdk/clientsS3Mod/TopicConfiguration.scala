@@ -27,7 +27,8 @@ object TopicConfiguration {
     __obj.asInstanceOf[TopicConfiguration]
   }
   
-  extension [Self <: TopicConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: EventList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

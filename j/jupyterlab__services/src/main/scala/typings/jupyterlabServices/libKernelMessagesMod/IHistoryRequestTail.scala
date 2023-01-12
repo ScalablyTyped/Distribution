@@ -22,7 +22,8 @@ object IHistoryRequestTail {
     __obj.asInstanceOf[IHistoryRequestTail]
   }
   
-  extension [Self <: IHistoryRequestTail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHistoryRequestTail] (val x: Self) extends AnyVal {
     
     inline def setHist_access_type(value: tail): Self = StObject.set(x, "hist_access_type", value.asInstanceOf[js.Any])
     

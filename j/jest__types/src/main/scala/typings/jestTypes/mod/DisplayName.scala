@@ -20,7 +20,8 @@ object DisplayName {
     __obj.asInstanceOf[DisplayName]
   }
   
-  extension [Self <: DisplayName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
     
     inline def setColor(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any

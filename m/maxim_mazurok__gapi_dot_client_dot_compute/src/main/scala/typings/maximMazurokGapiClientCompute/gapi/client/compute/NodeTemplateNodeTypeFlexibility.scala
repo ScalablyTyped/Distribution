@@ -19,7 +19,8 @@ object NodeTemplateNodeTypeFlexibility {
     __obj.asInstanceOf[NodeTemplateNodeTypeFlexibility]
   }
   
-  extension [Self <: NodeTemplateNodeTypeFlexibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeTemplateNodeTypeFlexibility] (val x: Self) extends AnyVal {
     
     inline def setCpus(value: String): Self = StObject.set(x, "cpus", value.asInstanceOf[js.Any])
     

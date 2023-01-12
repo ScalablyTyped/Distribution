@@ -28,7 +28,8 @@ object ContributorInsightsSummary {
     __obj.asInstanceOf[ContributorInsightsSummary]
   }
   
-  extension [Self <: ContributorInsightsSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContributorInsightsSummary] (val x: Self) extends AnyVal {
     
     inline def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ColumnFilterParams {
     __obj.asInstanceOf[ColumnFilterParams]
   }
   
-  extension [Self <: ColumnFilterParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnFilterParams] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: FilterField): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

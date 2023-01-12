@@ -35,7 +35,8 @@ object TreeviewControl {
     __obj.asInstanceOf[TreeviewControl]
   }
   
-  extension [Self <: TreeviewControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeviewControl] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

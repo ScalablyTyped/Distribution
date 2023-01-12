@@ -23,7 +23,8 @@ object LruParams {
     __obj.asInstanceOf[LruParams]
   }
   
-  extension [Self <: LruParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LruParams] (val x: Self) extends AnyVal {
     
     inline def setCacheSizeCollectionThreshold(value: Double): Self = StObject.set(x, "cacheSizeCollectionThreshold", value.asInstanceOf[js.Any])
     

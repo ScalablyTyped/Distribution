@@ -20,7 +20,8 @@ object ImageOption {
     __obj.asInstanceOf[ImageOption]
   }
   
-  extension [Self <: ImageOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageOption] (val x: Self) extends AnyVal {
     
     inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
   }

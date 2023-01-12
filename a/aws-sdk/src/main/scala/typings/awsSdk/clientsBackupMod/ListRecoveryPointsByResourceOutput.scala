@@ -23,7 +23,8 @@ object ListRecoveryPointsByResourceOutput {
     __obj.asInstanceOf[ListRecoveryPointsByResourceOutput]
   }
   
-  extension [Self <: ListRecoveryPointsByResourceOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRecoveryPointsByResourceOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

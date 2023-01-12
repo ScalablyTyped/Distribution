@@ -45,7 +45,8 @@ object examplesJsmWebxrXrhandprimitivemodelMod {
       __obj.asInstanceOf[XRHandPrimitiveModelOptions]
     }
     
-    extension [Self <: XRHandPrimitiveModelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XRHandPrimitiveModelOptions] (val x: Self) extends AnyVal {
       
       inline def setPrimitive(value: sphere | box): Self = StObject.set(x, "primitive", value.asInstanceOf[js.Any])
       

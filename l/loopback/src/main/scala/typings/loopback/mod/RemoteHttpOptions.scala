@@ -59,7 +59,8 @@ object RemoteHttpOptions {
     __obj.asInstanceOf[RemoteHttpOptions]
   }
   
-  extension [Self <: RemoteHttpOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteHttpOptions] (val x: Self) extends AnyVal {
     
     inline def setErrorStatus(value: Double): Self = StObject.set(x, "errorStatus", value.asInstanceOf[js.Any])
     

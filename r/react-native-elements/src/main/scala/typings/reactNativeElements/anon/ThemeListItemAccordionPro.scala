@@ -435,7 +435,8 @@ object ThemeListItemAccordionPro {
     __obj.asInstanceOf[ThemeListItemAccordionPro]
   }
   
-  extension [Self <: ThemeListItemAccordionPro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeListItemAccordionPro] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

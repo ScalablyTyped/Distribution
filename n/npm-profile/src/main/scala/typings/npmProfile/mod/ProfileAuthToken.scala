@@ -23,7 +23,8 @@ object ProfileAuthToken {
     __obj.asInstanceOf[ProfileAuthToken]
   }
   
-  extension [Self <: ProfileAuthToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileAuthToken] (val x: Self) extends AnyVal {
     
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     

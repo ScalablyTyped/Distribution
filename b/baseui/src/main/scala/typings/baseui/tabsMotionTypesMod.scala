@@ -58,7 +58,8 @@ object tabsMotionTypesMod {
       __obj.asInstanceOf[StatefulTabsAction]
     }
     
-    extension [Self <: StatefulTabsAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulTabsAction] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: Key): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object tabsMotionTypesMod {
       __obj.asInstanceOf[StatefulTabsProps]
     }
     
-    extension [Self <: StatefulTabsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulTabsProps] (val x: Self) extends AnyVal {
       
       inline def setInitialState(value: StatefulTabsState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object tabsMotionTypesMod {
       __obj.asInstanceOf[StatefulTabsState]
     }
     
-    extension [Self <: StatefulTabsState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulTabsState] (val x: Self) extends AnyVal {
       
       inline def setActiveKey(value: Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
     }
@@ -127,7 +130,8 @@ object tabsMotionTypesMod {
       __obj.asInstanceOf[TabOverrides]
     }
     
-    extension [Self <: TabOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabOverrides] (val x: Self) extends AnyVal {
       
       inline def setArtworkContainer(value: Override[Any]): Self = StObject.set(x, "ArtworkContainer", value.asInstanceOf[js.Any])
       
@@ -166,7 +170,8 @@ object tabsMotionTypesMod {
       __obj.asInstanceOf[TabProps]
     }
     
-    extension [Self <: TabProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
       
       inline def setArtwork(value: ComponentType[sizeIconPropssizecolorIco]): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
       
@@ -223,7 +228,8 @@ object tabsMotionTypesMod {
       __obj.asInstanceOf[TabsOverrides]
     }
     
-    extension [Self <: TabsOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsOverrides] (val x: Self) extends AnyVal {
       
       inline def setEndEnhancerContainer(value: Override[Any]): Self = StObject.set(x, "EndEnhancerContainer", value.asInstanceOf[js.Any])
       
@@ -282,7 +288,8 @@ object tabsMotionTypesMod {
       __obj.asInstanceOf[TabsProps]
     }
     
-    extension [Self <: TabsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
       
       inline def setActivateOnFocus(value: Boolean): Self = StObject.set(x, "activateOnFocus", value.asInstanceOf[js.Any])
       

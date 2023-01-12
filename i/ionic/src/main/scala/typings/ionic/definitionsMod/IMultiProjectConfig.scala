@@ -20,7 +20,8 @@ object IMultiProjectConfig {
     __obj.asInstanceOf[IMultiProjectConfig]
   }
   
-  extension [Self <: IMultiProjectConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMultiProjectConfig] (val x: Self) extends AnyVal {
     
     inline def setDefaultProject(value: String): Self = StObject.set(x, "defaultProject", value.asInstanceOf[js.Any])
     

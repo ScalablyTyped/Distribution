@@ -35,7 +35,8 @@ object ASPxClientSchedulerToolTipData {
     __obj.asInstanceOf[ASPxClientSchedulerToolTipData]
   }
   
-  extension [Self <: ASPxClientSchedulerToolTipData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSchedulerToolTipData] (val x: Self) extends AnyVal {
     
     inline def setGetAppointment(value: () => ASPxClientAppointment): Self = StObject.set(x, "GetAppointment", js.Any.fromFunction0(value))
     

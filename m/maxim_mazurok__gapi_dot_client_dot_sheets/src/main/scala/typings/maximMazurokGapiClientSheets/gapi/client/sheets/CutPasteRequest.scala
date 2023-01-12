@@ -22,7 +22,8 @@ object CutPasteRequest {
     __obj.asInstanceOf[CutPasteRequest]
   }
   
-  extension [Self <: CutPasteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CutPasteRequest] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: GridCoordinate): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

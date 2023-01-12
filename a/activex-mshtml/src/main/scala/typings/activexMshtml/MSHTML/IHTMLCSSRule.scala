@@ -32,7 +32,8 @@ object IHTMLCSSRule {
     __obj.asInstanceOf[IHTMLCSSRule]
   }
   
-  extension [Self <: IHTMLCSSRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLCSSRule] (val x: Self) extends AnyVal {
     
     inline def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
     

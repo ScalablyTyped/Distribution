@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Fake]
     }
     
-    extension [Self <: Fake](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fake] (val x: Self) extends AnyVal {
       
       inline def setFake(value: SensorData): Self = StObject.set(x, "fake", value.asInstanceOf[js.Any])
     }
@@ -35,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Test]
     }
     
-    extension [Self <: Test](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Test] (val x: Self) extends AnyVal {
       
       inline def setTest(value: Fake): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     }

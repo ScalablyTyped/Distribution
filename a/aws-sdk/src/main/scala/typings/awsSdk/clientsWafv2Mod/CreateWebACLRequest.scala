@@ -68,7 +68,8 @@ object CreateWebACLRequest {
     __obj.asInstanceOf[CreateWebACLRequest]
   }
   
-  extension [Self <: CreateWebACLRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWebACLRequest] (val x: Self) extends AnyVal {
     
     inline def setCaptchaConfig(value: CaptchaConfig): Self = StObject.set(x, "CaptchaConfig", value.asInstanceOf[js.Any])
     

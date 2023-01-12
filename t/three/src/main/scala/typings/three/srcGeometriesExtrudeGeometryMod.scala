@@ -86,7 +86,8 @@ object srcGeometriesExtrudeGeometryMod {
       __obj.asInstanceOf[ExtrudeGeometryOptions]
     }
     
-    extension [Self <: ExtrudeGeometryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtrudeGeometryOptions] (val x: Self) extends AnyVal {
       
       inline def setBevelEnabled(value: Boolean): Self = StObject.set(x, "bevelEnabled", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object srcGeometriesExtrudeGeometryMod {
       __obj.asInstanceOf[UVGenerator]
     }
     
-    extension [Self <: UVGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UVGenerator] (val x: Self) extends AnyVal {
       
       inline def setGenerateSideWallUV(value: (ExtrudeGeometry, js.Array[Double], Double, Double, Double, Double) => js.Array[Vector2]): Self = StObject.set(x, "generateSideWallUV", js.Any.fromFunction6(value))
       

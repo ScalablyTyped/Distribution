@@ -21,7 +21,8 @@ object WebGeoposition {
     __obj.asInstanceOf[WebGeoposition]
   }
   
-  extension [Self <: WebGeoposition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGeoposition] (val x: Self) extends AnyVal {
     
     inline def setCoords(value: IWebGeocoordinates): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     

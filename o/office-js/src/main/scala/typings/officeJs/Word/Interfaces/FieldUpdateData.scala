@@ -22,7 +22,8 @@ object FieldUpdateData {
     __obj.asInstanceOf[FieldUpdateData]
   }
   
-  extension [Self <: FieldUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldUpdateData] (val x: Self) extends AnyVal {
     
     inline def setResult(value: RangeUpdateData): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

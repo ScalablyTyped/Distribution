@@ -15,7 +15,8 @@ object ChartLegendInactiveItems {
     __obj.asInstanceOf[ChartLegendInactiveItems]
   }
   
-  extension [Self <: ChartLegendInactiveItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartLegendInactiveItems] (val x: Self) extends AnyVal {
     
     inline def setLabels(value: ChartLegendInactiveItemsLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     

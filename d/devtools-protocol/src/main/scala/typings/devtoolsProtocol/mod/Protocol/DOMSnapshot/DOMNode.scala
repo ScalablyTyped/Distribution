@@ -162,7 +162,8 @@ object DOMNode {
     __obj.asInstanceOf[DOMNode]
   }
   
-  extension [Self <: DOMNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMNode] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: js.Array[NameValue]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

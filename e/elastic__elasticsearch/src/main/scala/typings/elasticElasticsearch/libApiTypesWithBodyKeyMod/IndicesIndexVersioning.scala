@@ -17,7 +17,8 @@ object IndicesIndexVersioning {
     __obj.asInstanceOf[IndicesIndexVersioning]
   }
   
-  extension [Self <: IndicesIndexVersioning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesIndexVersioning] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: VersionString): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ScrollEvents {
     __obj.asInstanceOf[ScrollEvents]
   }
   
-  extension [Self <: ScrollEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollEvents] (val x: Self) extends AnyVal {
     
     inline def setOnScroll(value: /* e */ ScrollEvent => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

@@ -29,7 +29,8 @@ object ProfileItems {
     __obj.asInstanceOf[ProfileItems]
   }
   
-  extension [Self <: ProfileItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileItems] (val x: Self) extends AnyVal {
     
     inline def setAnimated_avatars(value: js.Array[ProfileItem]): Self = StObject.set(x, "animated_avatars", value.asInstanceOf[js.Any])
     

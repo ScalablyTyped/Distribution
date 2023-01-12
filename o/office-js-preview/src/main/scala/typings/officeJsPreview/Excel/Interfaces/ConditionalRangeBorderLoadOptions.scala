@@ -49,7 +49,8 @@ object ConditionalRangeBorderLoadOptions {
     __obj.asInstanceOf[ConditionalRangeBorderLoadOptions]
   }
   
-  extension [Self <: ConditionalRangeBorderLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalRangeBorderLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

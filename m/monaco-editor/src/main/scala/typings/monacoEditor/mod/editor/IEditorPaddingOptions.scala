@@ -23,7 +23,8 @@ object IEditorPaddingOptions {
     __obj.asInstanceOf[IEditorPaddingOptions]
   }
   
-  extension [Self <: IEditorPaddingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditorPaddingOptions] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object TcpConnectionDetails {
     __obj.asInstanceOf[TcpConnectionDetails]
   }
   
-  extension [Self <: TcpConnectionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TcpConnectionDetails] (val x: Self) extends AnyVal {
     
     inline def setDestIP(value: String): Self = StObject.set(x, "destIP", value.asInstanceOf[js.Any])
     

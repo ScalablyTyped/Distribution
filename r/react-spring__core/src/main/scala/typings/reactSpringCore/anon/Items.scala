@@ -26,7 +26,8 @@ object Items {
     __obj.asInstanceOf[Items[Item, Props]]
   }
   
-  extension [Self <: Items[?, ?], Item, Props /* <: js.Object */](x: Self & (Items[Item, Props])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Items[?, ?], Item, Props /* <: js.Object */] (val x: Self & (Items[Item, Props])) extends AnyVal {
     
     inline def setChildren(
       value: (NoInfer[Item], Double) => (js.Function1[/* values */ SpringValues[PickAnimated[Props, `true`]], ReactNode]) | Falsy

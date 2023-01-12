@@ -25,7 +25,8 @@ object IosDeviceCatalog {
     __obj.asInstanceOf[IosDeviceCatalog]
   }
   
-  extension [Self <: IosDeviceCatalog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosDeviceCatalog] (val x: Self) extends AnyVal {
     
     inline def setModels(value: js.Array[IosModel]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     

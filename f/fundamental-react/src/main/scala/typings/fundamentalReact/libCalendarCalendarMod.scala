@@ -45,7 +45,8 @@ object libCalendarCalendarMod {
       __obj.asInstanceOf[CalendarBaseProps]
     }
     
-    extension [Self <: CalendarBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarBaseProps] (val x: Self) extends AnyVal {
       
       inline def setBlockedDates(value: js.Array[js.Date]): Self = StObject.set(x, "blockedDates", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object libCalendarCalendarMod {
       __obj.asInstanceOf[CalendarProps]
     }
     
-    extension [Self <: CalendarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarProps] (val x: Self) extends AnyVal {
       
       inline def setMonthListProps(value: StringDictionary[Any]): Self = StObject.set(x, "monthListProps", value.asInstanceOf[js.Any])
       

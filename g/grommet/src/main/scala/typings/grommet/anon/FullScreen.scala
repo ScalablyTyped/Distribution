@@ -31,7 +31,8 @@ object FullScreen {
     __obj.asInstanceOf[FullScreen]
   }
   
-  extension [Self <: FullScreen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullScreen] (val x: Self) extends AnyVal {
     
     inline def setCloseMenu(value: String): Self = StObject.set(x, "closeMenu", value.asInstanceOf[js.Any])
     

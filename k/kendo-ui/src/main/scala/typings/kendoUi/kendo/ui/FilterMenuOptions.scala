@@ -26,7 +26,8 @@ object FilterMenuOptions {
     __obj.asInstanceOf[FilterMenuOptions]
   }
   
-  extension [Self <: FilterMenuOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterMenuOptions] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

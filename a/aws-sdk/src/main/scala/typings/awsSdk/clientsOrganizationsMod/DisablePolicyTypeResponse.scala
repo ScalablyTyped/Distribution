@@ -18,7 +18,8 @@ object DisablePolicyTypeResponse {
     __obj.asInstanceOf[DisablePolicyTypeResponse]
   }
   
-  extension [Self <: DisablePolicyTypeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisablePolicyTypeResponse] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: Root): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
     

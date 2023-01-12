@@ -16,7 +16,8 @@ object InstallsListResponse {
     __obj.asInstanceOf[InstallsListResponse]
   }
   
-  extension [Self <: InstallsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstallsListResponse] (val x: Self) extends AnyVal {
     
     inline def setInstall(value: js.Array[Install]): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
     

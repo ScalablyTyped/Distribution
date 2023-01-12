@@ -68,7 +68,8 @@ object XServiceConstructorDescription {
     __obj.asInstanceOf[XServiceConstructorDescription]
   }
   
-  extension [Self <: XServiceConstructorDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XServiceConstructorDescription] (val x: Self) extends AnyVal {
     
     inline def setExceptions(value: SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "Exceptions", value.asInstanceOf[js.Any])
     

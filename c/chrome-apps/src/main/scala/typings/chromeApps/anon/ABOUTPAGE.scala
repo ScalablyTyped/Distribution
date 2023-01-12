@@ -76,7 +76,8 @@ object ABOUTPAGE {
     __obj.asInstanceOf[ABOUTPAGE]
   }
   
-  extension [Self <: ABOUTPAGE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ABOUTPAGE] (val x: Self) extends AnyVal {
     
     inline def setABOUT_PAGE(value: about_page_): Self = StObject.set(x, "ABOUT_PAGE", value.asInstanceOf[js.Any])
     

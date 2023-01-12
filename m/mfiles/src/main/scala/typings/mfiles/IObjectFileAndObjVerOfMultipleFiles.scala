@@ -29,7 +29,8 @@ object IObjectFileAndObjVerOfMultipleFiles {
     __obj.asInstanceOf[IObjectFileAndObjVerOfMultipleFiles]
   }
   
-  extension [Self <: IObjectFileAndObjVerOfMultipleFiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectFileAndObjVerOfMultipleFiles] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, IObjectFileAndObjVer) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

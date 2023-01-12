@@ -62,7 +62,8 @@ object IAxis {
     __obj.asInstanceOf[IAxis]
   }
   
-  extension [Self <: IAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAxis] (val x: Self) extends AnyVal {
     
     inline def setAdjustEnd(value: Boolean): Self = StObject.set(x, "adjustEnd", value.asInstanceOf[js.Any])
     

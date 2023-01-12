@@ -21,7 +21,8 @@ object OffsetRequest {
     __obj.asInstanceOf[OffsetRequest]
   }
   
-  extension [Self <: OffsetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OffsetRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxNum(value: Double): Self = StObject.set(x, "maxNum", value.asInstanceOf[js.Any])
     

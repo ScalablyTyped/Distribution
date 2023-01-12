@@ -69,7 +69,8 @@ object esTypesMod {
       __obj.asInstanceOf[PersistConfig[S, RS, HSS, ESS]]
     }
     
-    extension [Self <: PersistConfig[?, ?, ?, ?], S, RS, HSS, ESS](x: Self & (PersistConfig[S, RS, HSS, ESS])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistConfig[?, ?, ?, ?], S, RS, HSS, ESS] (val x: Self & (PersistConfig[S, RS, HSS, ESS])) extends AnyVal {
       
       inline def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object esTypesMod {
       __obj.asInstanceOf[PersistState]
     }
     
-    extension [Self <: PersistState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistState] (val x: Self) extends AnyVal {
       
       inline def setRehydrated(value: Boolean): Self = StObject.set(x, "rehydrated", value.asInstanceOf[js.Any])
       
@@ -175,7 +177,8 @@ object esTypesMod {
       __obj.asInstanceOf[Persistoid]
     }
     
-    extension [Self <: Persistoid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Persistoid] (val x: Self) extends AnyVal {
       
       inline def setFlush(value: () => js.Promise[Any]): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
@@ -218,7 +221,8 @@ object esTypesMod {
       __obj.asInstanceOf[Persistor]
     }
     
-    extension [Self <: Persistor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Persistor] (val x: Self) extends AnyVal {
       
       inline def setDispatch(value: PersistorAction => PersistorAction): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
@@ -267,7 +271,8 @@ object esTypesMod {
       __obj.asInstanceOf[PersistorOptions]
     }
     
-    extension [Self <: PersistorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistorOptions] (val x: Self) extends AnyVal {
       
       inline def setEnhancer(
         value: /* next */ StoreEnhancerStoreCreator[js.Object, js.Object] => StoreEnhancerStoreCreator[Any, js.Object]
@@ -290,7 +295,8 @@ object esTypesMod {
       __obj.asInstanceOf[PersistorState]
     }
     
-    extension [Self <: PersistorState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistorState] (val x: Self) extends AnyVal {
       
       inline def setBootstrapped(value: Boolean): Self = StObject.set(x, "bootstrapped", value.asInstanceOf[js.Any])
       
@@ -318,7 +324,8 @@ object esTypesMod {
       __obj.asInstanceOf[RegisterAction]
     }
     
-    extension [Self <: RegisterAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterAction] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -346,7 +353,8 @@ object esTypesMod {
       __obj.asInstanceOf[RehydrateAction]
     }
     
-    extension [Self <: RehydrateAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RehydrateAction] (val x: Self) extends AnyVal {
       
       inline def setErr(value: RehydrateErrorType): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
@@ -395,7 +403,8 @@ object esTypesMod {
       __obj.asInstanceOf[Storage]
     }
     
-    extension [Self <: Storage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Storage] (val x: Self) extends AnyVal {
       
       inline def setGetItem(value: (String, /* repeated */ Any) => Any): Self = StObject.set(x, "getItem", js.Any.fromFunction2(value))
       
@@ -421,7 +430,8 @@ object esTypesMod {
       __obj.asInstanceOf[Transform[HSS, ESS, S, RS]]
     }
     
-    extension [Self <: Transform[?, ?, ?, ?], HSS, ESS, S, RS](x: Self & (Transform[HSS, ESS, S, RS])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transform[?, ?, ?, ?], HSS, ESS, S, RS] (val x: Self & (Transform[HSS, ESS, S, RS])) extends AnyVal {
       
       inline def setIn(value: (HSS, /* keyof S */ /* key */ String, S) => ESS): Self = StObject.set(x, "in", js.Any.fromFunction3(value))
       
@@ -475,7 +485,8 @@ object esTypesMod {
       __obj.asInstanceOf[WebStorage]
     }
     
-    extension [Self <: WebStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebStorage] (val x: Self) extends AnyVal {
       
       inline def setGetItem(value: String => js.Promise[String | Null]): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       

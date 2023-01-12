@@ -15,7 +15,8 @@ object ParametersPathOrgRoleid {
     __obj.asInstanceOf[ParametersPathOrgRoleid]
   }
   
-  extension [Self <: ParametersPathOrgRoleid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPathOrgRoleid] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathOrgRoleid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
   }

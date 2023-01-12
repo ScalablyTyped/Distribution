@@ -25,7 +25,8 @@ object KeyType {
     __obj.asInstanceOf[KeyType]
   }
   
-  extension [Self <: KeyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyType] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

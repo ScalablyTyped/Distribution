@@ -19,7 +19,8 @@ object Neutral {
     __obj.asInstanceOf[Neutral]
   }
   
-  extension [Self <: Neutral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Neutral] (val x: Self) extends AnyVal {
     
     inline def setFocus(value: PaintToken[BaseToken]): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     

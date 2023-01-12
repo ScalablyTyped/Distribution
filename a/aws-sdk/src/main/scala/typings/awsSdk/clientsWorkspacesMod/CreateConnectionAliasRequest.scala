@@ -23,7 +23,8 @@ object CreateConnectionAliasRequest {
     __obj.asInstanceOf[CreateConnectionAliasRequest]
   }
   
-  extension [Self <: CreateConnectionAliasRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConnectionAliasRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectionString(value: ConnectionString): Self = StObject.set(x, "ConnectionString", value.asInstanceOf[js.Any])
     

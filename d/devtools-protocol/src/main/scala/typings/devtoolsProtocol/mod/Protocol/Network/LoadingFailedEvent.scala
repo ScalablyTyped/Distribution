@@ -49,7 +49,8 @@ object LoadingFailedEvent {
     __obj.asInstanceOf[LoadingFailedEvent]
   }
   
-  extension [Self <: LoadingFailedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadingFailedEvent] (val x: Self) extends AnyVal {
     
     inline def setBlockedReason(value: BlockedReason): Self = StObject.set(x, "blockedReason", value.asInstanceOf[js.Any])
     

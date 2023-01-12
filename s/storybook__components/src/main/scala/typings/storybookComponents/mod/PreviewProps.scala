@@ -30,7 +30,8 @@ object PreviewProps {
     __obj.asInstanceOf[PreviewProps]
   }
   
-  extension [Self <: PreviewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviewProps] (val x: Self) extends AnyVal {
     
     inline def setAdditionalActions(value: js.Array[ActionItem]): Self = StObject.set(x, "additionalActions", value.asInstanceOf[js.Any])
     

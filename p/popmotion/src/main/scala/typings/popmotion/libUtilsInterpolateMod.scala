@@ -29,7 +29,8 @@ object libUtilsInterpolateMod {
       __obj.asInstanceOf[InterpolateOptions[T]]
     }
     
-    extension [Self <: InterpolateOptions[?], T](x: Self & InterpolateOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterpolateOptions[?], T] (val x: Self & InterpolateOptions[T]) extends AnyVal {
       
       inline def setClamp(value: Boolean): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
       

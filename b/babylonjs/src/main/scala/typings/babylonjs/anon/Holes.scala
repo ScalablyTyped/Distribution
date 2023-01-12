@@ -36,7 +36,8 @@ object Holes {
     __obj.asInstanceOf[Holes]
   }
   
-  extension [Self <: Holes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Holes] (val x: Self) extends AnyVal {
     
     inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     

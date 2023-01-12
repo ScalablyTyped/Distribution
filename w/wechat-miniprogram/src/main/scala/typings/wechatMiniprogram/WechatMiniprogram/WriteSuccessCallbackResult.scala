@@ -18,7 +18,8 @@ object WriteSuccessCallbackResult {
     __obj.asInstanceOf[WriteSuccessCallbackResult]
   }
   
-  extension [Self <: WriteSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object AutoScalingThresholds {
     __obj.asInstanceOf[AutoScalingThresholds]
   }
   
-  extension [Self <: AutoScalingThresholds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoScalingThresholds] (val x: Self) extends AnyVal {
     
     inline def setAlarms(value: Strings): Self = StObject.set(x, "Alarms", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object SwitchButtonTheme {
     __obj.asInstanceOf[SwitchButtonTheme]
   }
   
-  extension [Self <: SwitchButtonTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchButtonTheme] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object distSrcRegistrarMod {
       __obj.asInstanceOf[RegistrarComponents]
     }
     
-    extension [Self <: RegistrarComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegistrarComponents] (val x: Self) extends AnyVal {
       
       inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
       

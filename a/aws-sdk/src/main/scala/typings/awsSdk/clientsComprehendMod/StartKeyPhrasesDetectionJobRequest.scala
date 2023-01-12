@@ -63,7 +63,8 @@ object StartKeyPhrasesDetectionJobRequest {
     __obj.asInstanceOf[StartKeyPhrasesDetectionJobRequest]
   }
   
-  extension [Self <: StartKeyPhrasesDetectionJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartKeyPhrasesDetectionJobRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

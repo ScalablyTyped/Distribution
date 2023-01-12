@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[ARIAHIDDEN]
     }
     
-    extension [Self <: ARIAHIDDEN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARIAHIDDEN] (val x: Self) extends AnyVal {
       
       inline def setARIA_HIDDEN(value: String): Self = StObject.set(x, "ARIA_HIDDEN", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[CLOSEDCLASS]
     }
     
-    extension [Self <: CLOSEDCLASS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CLOSEDCLASS] (val x: Self) extends AnyVal {
       
       inline def setCLOSED_CLASS(value: String): Self = StObject.set(x, "CLOSED_CLASS", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCCircularProgres]
     }
     
-    extension [Self <: PartialMDCCircularProgres](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCCircularProgres] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

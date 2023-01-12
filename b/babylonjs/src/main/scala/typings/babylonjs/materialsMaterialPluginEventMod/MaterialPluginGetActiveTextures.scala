@@ -16,7 +16,8 @@ object MaterialPluginGetActiveTextures {
     __obj.asInstanceOf[MaterialPluginGetActiveTextures]
   }
   
-  extension [Self <: MaterialPluginGetActiveTextures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaterialPluginGetActiveTextures] (val x: Self) extends AnyVal {
     
     inline def setActiveTextures(value: js.Array[BaseTexture]): Self = StObject.set(x, "activeTextures", value.asInstanceOf[js.Any])
     

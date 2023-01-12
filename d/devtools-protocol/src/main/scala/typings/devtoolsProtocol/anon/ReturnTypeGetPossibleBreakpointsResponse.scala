@@ -19,7 +19,8 @@ object ReturnTypeGetPossibleBreakpointsResponse {
     __obj.asInstanceOf[ReturnTypeGetPossibleBreakpointsResponse]
   }
   
-  extension [Self <: ReturnTypeGetPossibleBreakpointsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetPossibleBreakpointsResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetPossibleBreakpointsRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

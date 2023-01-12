@@ -19,7 +19,8 @@ object SmartHomeV1ExecuteRequest {
     __obj.asInstanceOf[SmartHomeV1ExecuteRequest]
   }
   
-  extension [Self <: SmartHomeV1ExecuteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartHomeV1ExecuteRequest] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: js.Array[SmartHomeV1ExecuteRequestInputs]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     

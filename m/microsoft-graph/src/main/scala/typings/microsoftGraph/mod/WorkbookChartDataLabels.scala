@@ -45,7 +45,8 @@ object WorkbookChartDataLabels {
     __obj.asInstanceOf[WorkbookChartDataLabels]
   }
   
-  extension [Self <: WorkbookChartDataLabels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookChartDataLabels] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: NullableOption[WorkbookChartDataLabelFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

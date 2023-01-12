@@ -18,7 +18,8 @@ object MultipleQueriesResponse {
     __obj.asInstanceOf[MultipleQueriesResponse[TObject]]
   }
   
-  extension [Self <: MultipleQueriesResponse[?], TObject](x: Self & MultipleQueriesResponse[TObject]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleQueriesResponse[?], TObject] (val x: Self & MultipleQueriesResponse[TObject]) extends AnyVal {
     
     inline def setResults(value: js.Array[SearchResponse[TObject]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object WebExtensionManifestBackgroundC2Type {
     __obj.asInstanceOf[WebExtensionManifestBackgroundC2Type]
   }
   
-  extension [Self <: WebExtensionManifestBackgroundC2Type](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestBackgroundC2Type] (val x: Self) extends AnyVal {
     
     inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     

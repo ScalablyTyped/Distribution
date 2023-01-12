@@ -15,7 +15,8 @@ object USBDeviceRequestOptions {
     __obj.asInstanceOf[USBDeviceRequestOptions]
   }
   
-  extension [Self <: USBDeviceRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: USBDeviceRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[USBDeviceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

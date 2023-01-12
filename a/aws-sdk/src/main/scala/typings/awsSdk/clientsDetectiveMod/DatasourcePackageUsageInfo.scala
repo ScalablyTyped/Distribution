@@ -23,7 +23,8 @@ object DatasourcePackageUsageInfo {
     __obj.asInstanceOf[DatasourcePackageUsageInfo]
   }
   
-  extension [Self <: DatasourcePackageUsageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasourcePackageUsageInfo] (val x: Self) extends AnyVal {
     
     inline def setVolumeUsageInBytes(value: ByteValue): Self = StObject.set(x, "VolumeUsageInBytes", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AccountWithRestoreAccess {
     __obj.asInstanceOf[AccountWithRestoreAccess]
   }
   
-  extension [Self <: AccountWithRestoreAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountWithRestoreAccess] (val x: Self) extends AnyVal {
     
     inline def setAccountAlias(value: String): Self = StObject.set(x, "AccountAlias", value.asInstanceOf[js.Any])
     

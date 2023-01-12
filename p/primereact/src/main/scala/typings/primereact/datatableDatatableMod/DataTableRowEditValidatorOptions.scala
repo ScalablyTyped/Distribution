@@ -15,7 +15,8 @@ object DataTableRowEditValidatorOptions {
     __obj.asInstanceOf[DataTableRowEditValidatorOptions]
   }
   
-  extension [Self <: DataTableRowEditValidatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableRowEditValidatorOptions] (val x: Self) extends AnyVal {
     
     inline def setProps(value: DataTableProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }

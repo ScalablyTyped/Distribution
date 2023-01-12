@@ -28,7 +28,8 @@ object ShorthandEntry {
     __obj.asInstanceOf[ShorthandEntry]
   }
   
-  extension [Self <: ShorthandEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShorthandEntry] (val x: Self) extends AnyVal {
     
     inline def setImportant(value: Boolean): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
     

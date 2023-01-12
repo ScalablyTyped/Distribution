@@ -21,7 +21,8 @@ object UserRef {
     __obj.asInstanceOf[UserRef]
   }
   
-  extension [Self <: UserRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserRef] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

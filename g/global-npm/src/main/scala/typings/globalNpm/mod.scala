@@ -25,7 +25,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[GlobalNPM]
     }
     
-    extension [Self <: GlobalNPM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalNPM] (val x: Self) extends AnyVal {
       
       inline def setGLOBAL_NPM_BIN(value: String): Self = StObject.set(x, "GLOBAL_NPM_BIN", value.asInstanceOf[js.Any])
       

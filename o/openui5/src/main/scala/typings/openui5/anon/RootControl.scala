@@ -19,7 +19,8 @@ object RootControl {
     __obj.asInstanceOf[RootControl]
   }
   
-  extension [Self <: RootControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootControl] (val x: Self) extends AnyVal {
     
     inline def setRootControl(value: default | typings.openui5.sapUiCoreUicomponentMod.default): Self = StObject.set(x, "rootControl", value.asInstanceOf[js.Any])
   }

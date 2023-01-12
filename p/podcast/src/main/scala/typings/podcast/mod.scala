@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[BaseFeedOptions]
     }
     
-    extension [Self <: BaseFeedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseFeedOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -189,7 +190,8 @@ object mod {
       __obj.asInstanceOf[FeedItunesCategory]
     }
     
-    extension [Self <: FeedItunesCategory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedItunesCategory] (val x: Self) extends AnyVal {
       
       inline def setSubcats(value: js.Array[FeedItunesCategory]): Self = StObject.set(x, "subcats", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object mod {
       __obj.asInstanceOf[FeedItunesOwner]
     }
     
-    extension [Self <: FeedItunesOwner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedItunesOwner] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -277,7 +280,8 @@ object mod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -386,7 +390,8 @@ object mod {
       __obj.asInstanceOf[ItemEnclosure]
     }
     
-    extension [Self <: ItemEnclosure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemEnclosure] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

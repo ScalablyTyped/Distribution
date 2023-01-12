@@ -45,7 +45,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AnimalProps]
     }
     
-    extension [Self <: AnimalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimalProps] (val x: Self) extends AnyVal {
       
       inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       

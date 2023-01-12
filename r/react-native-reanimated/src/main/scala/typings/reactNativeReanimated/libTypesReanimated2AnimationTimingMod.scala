@@ -79,7 +79,8 @@ object libTypesReanimated2AnimationTimingMod {
       __obj.asInstanceOf[InnerTimingAnimation]
     }
     
-    extension [Self <: InnerTimingAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerTimingAnimation] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (/* finished */ js.UndefOr[Boolean], /* current */ js.UndefOr[AnimatableValue]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
@@ -167,7 +168,8 @@ object libTypesReanimated2AnimationTimingMod {
       __obj.asInstanceOf[TimingAnimation]
     }
     
-    extension [Self <: TimingAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimingAnimation] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: AnimatableValue): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -204,7 +206,8 @@ object libTypesReanimated2AnimationTimingMod {
       __obj.asInstanceOf[TimingConfig]
     }
     
-    extension [Self <: TimingConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimingConfig] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

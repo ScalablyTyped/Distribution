@@ -23,7 +23,8 @@ object TextEditorVisibleRangesChangeEvent {
     __obj.asInstanceOf[TextEditorVisibleRangesChangeEvent]
   }
   
-  extension [Self <: TextEditorVisibleRangesChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEditorVisibleRangesChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setTextEditor(value: TextEditor): Self = StObject.set(x, "textEditor", value.asInstanceOf[js.Any])
     

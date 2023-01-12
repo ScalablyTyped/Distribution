@@ -40,7 +40,8 @@ object OlapFlatDataSourceOptionsMetadataCubeMeasuresDimensionMeasure {
     __obj.asInstanceOf[OlapFlatDataSourceOptionsMetadataCubeMeasuresDimensionMeasure]
   }
   
-  extension [Self <: OlapFlatDataSourceOptionsMetadataCubeMeasuresDimensionMeasure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlapFlatDataSourceOptionsMetadataCubeMeasuresDimensionMeasure] (val x: Self) extends AnyVal {
     
     inline def setAggregator(value: js.Function): Self = StObject.set(x, "aggregator", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object Finder {
     __obj.asInstanceOf[Finder]
   }
   
-  extension [Self <: Finder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Finder] (val x: Self) extends AnyVal {
     
     inline def setFindPath(value: (Double, Double, Double, Double, Grid) => js.Array[js.Array[Double]]): Self = StObject.set(x, "findPath", js.Any.fromFunction5(value))
   }

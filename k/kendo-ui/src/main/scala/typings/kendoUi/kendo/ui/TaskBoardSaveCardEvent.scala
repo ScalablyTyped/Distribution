@@ -18,7 +18,8 @@ object TaskBoardSaveCardEvent {
     __obj.asInstanceOf[TaskBoardSaveCardEvent]
   }
   
-  extension [Self <: TaskBoardSaveCardEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskBoardSaveCardEvent] (val x: Self) extends AnyVal {
     
     inline def setCard(value: Model): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     

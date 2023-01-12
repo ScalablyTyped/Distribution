@@ -78,7 +78,8 @@ object GridItem {
     __obj.asInstanceOf[GridItem]
   }
   
-  extension [Self <: GridItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridItem] (val x: Self) extends AnyVal {
     
     inline def setClearValidation(value: () => GridItem): Self = StObject.set(x, "clearValidation", js.Any.fromFunction0(value))
     

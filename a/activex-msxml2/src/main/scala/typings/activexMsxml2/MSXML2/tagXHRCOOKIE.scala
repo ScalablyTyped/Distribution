@@ -32,7 +32,8 @@ object tagXHRCOOKIE {
     __obj.asInstanceOf[tagXHRCOOKIE]
   }
   
-  extension [Self <: tagXHRCOOKIE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: tagXHRCOOKIE] (val x: Self) extends AnyVal {
     
     inline def setDwFlags(value: Double): Self = StObject.set(x, "dwFlags", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object distYarnWorkspacesMod {
       __obj.asInstanceOf[ResolveWorkspacePackagesHost]
     }
     
-    extension [Self <: ResolveWorkspacePackagesHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveWorkspacePackagesHost] (val x: Self) extends AnyVal {
       
       inline def setDirname(value: String => String): Self = StObject.set(x, "dirname", js.Any.fromFunction1(value))
       

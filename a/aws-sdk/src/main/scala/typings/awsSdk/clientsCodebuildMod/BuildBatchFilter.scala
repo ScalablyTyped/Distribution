@@ -18,7 +18,8 @@ object BuildBatchFilter {
     __obj.asInstanceOf[BuildBatchFilter]
   }
   
-  extension [Self <: BuildBatchFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBatchFilter] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: StatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

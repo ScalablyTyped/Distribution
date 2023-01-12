@@ -27,7 +27,8 @@ object distTypesRegionInfoGetResolvedSigningRegionMod {
       __obj.asInstanceOf[GetResolvedSigningRegionOptions]
     }
     
-    extension [Self <: GetResolvedSigningRegionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetResolvedSigningRegionOptions] (val x: Self) extends AnyVal {
       
       inline def setRegionRegex(value: String): Self = StObject.set(x, "regionRegex", value.asInstanceOf[js.Any])
       

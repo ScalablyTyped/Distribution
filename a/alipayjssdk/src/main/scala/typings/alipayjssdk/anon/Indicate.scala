@@ -27,7 +27,8 @@ object Indicate {
     __obj.asInstanceOf[Indicate]
   }
   
-  extension [Self <: Indicate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Indicate] (val x: Self) extends AnyVal {
     
     inline def setIndicate(value: Boolean): Self = StObject.set(x, "indicate", value.asInstanceOf[js.Any])
     

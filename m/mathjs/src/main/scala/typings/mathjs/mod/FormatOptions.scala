@@ -56,7 +56,8 @@ object FormatOptions {
     __obj.asInstanceOf[FormatOptions]
   }
   
-  extension [Self <: FormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
     
     inline def setFraction(value: String): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
     

@@ -159,7 +159,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentAddedEvent]
     }
     
-    extension [Self <: AppointmentAddedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentAddedEvent] (val x: Self) extends AnyVal {
       
       inline def setAppointmentData(value: dxSchedulerAppointment): Self = StObject.set(x, "appointmentData", value.asInstanceOf[js.Any])
       
@@ -189,7 +190,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentAddingEvent]
     }
     
-    extension [Self <: AppointmentAddingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentAddingEvent] (val x: Self) extends AnyVal {
       
       inline def setAppointmentData(value: dxSchedulerAppointment): Self = StObject.set(x, "appointmentData", value.asInstanceOf[js.Any])
       
@@ -217,7 +219,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentClickEvent]
     }
     
-    extension [Self <: AppointmentClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentClickEvent] (val x: Self) extends AnyVal {
       
       inline def setAppointmentElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "appointmentElement", value.asInstanceOf[js.Any])
     }
@@ -236,7 +239,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentCollectorTemplateData]
     }
     
-    extension [Self <: AppointmentCollectorTemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentCollectorTemplateData] (val x: Self) extends AnyVal {
       
       inline def setAppointmentCount(value: Double): Self = StObject.set(x, "appointmentCount", value.asInstanceOf[js.Any])
       
@@ -263,7 +267,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentContextMenuEvent]
     }
     
-    extension [Self <: AppointmentContextMenuEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentContextMenuEvent] (val x: Self) extends AnyVal {
       
       inline def setAppointmentElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "appointmentElement", value.asInstanceOf[js.Any])
     }
@@ -289,7 +294,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentDblClickEvent]
     }
     
-    extension [Self <: AppointmentDblClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentDblClickEvent] (val x: Self) extends AnyVal {
       
       inline def setAppointmentElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "appointmentElement", value.asInstanceOf[js.Any])
     }
@@ -310,7 +316,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentDeletedEvent]
     }
     
-    extension [Self <: AppointmentDeletedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentDeletedEvent] (val x: Self) extends AnyVal {
       
       inline def setAppointmentData(value: dxSchedulerAppointment): Self = StObject.set(x, "appointmentData", value.asInstanceOf[js.Any])
       
@@ -340,7 +347,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentDeletingEvent]
     }
     
-    extension [Self <: AppointmentDeletingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentDeletingEvent] (val x: Self) extends AnyVal {
       
       inline def setAppointmentData(value: dxSchedulerAppointment): Self = StObject.set(x, "appointmentData", value.asInstanceOf[js.Any])
       
@@ -365,7 +373,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentDraggingAddEvent]
     }
     
-    extension [Self <: AppointmentDraggingAddEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentDraggingAddEvent] (val x: Self) extends AnyVal {
       
       inline def setFromComponent(value: dxSortable | dxDraggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
       
@@ -399,7 +408,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentDraggingEndEvent]
     }
     
-    extension [Self <: AppointmentDraggingEndEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentDraggingEndEvent] (val x: Self) extends AnyVal {
       
       inline def setFromComponent(value: dxSortable | dxDraggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
       
@@ -437,7 +447,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentDraggingEvent]
     }
     
-    extension [Self <: AppointmentDraggingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentDraggingEvent] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: dxScheduler): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -477,7 +488,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentDraggingMoveEvent]
     }
     
-    extension [Self <: AppointmentDraggingMoveEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentDraggingMoveEvent] (val x: Self) extends AnyVal {
       
       inline def setFromComponent(value: dxSortable | dxDraggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
       
@@ -508,7 +520,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentDraggingRemoveEvent]
     }
     
-    extension [Self <: AppointmentDraggingRemoveEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentDraggingRemoveEvent] (val x: Self) extends AnyVal {
       
       inline def setFromComponent(value: dxSortable | dxDraggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
       
@@ -555,7 +568,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentFormOpeningEvent]
     }
     
-    extension [Self <: AppointmentFormOpeningEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentFormOpeningEvent] (val x: Self) extends AnyVal {
       
       inline def setAppointmentData(value: dxSchedulerAppointment): Self = StObject.set(x, "appointmentData", value.asInstanceOf[js.Any])
       
@@ -586,7 +600,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentRenderedEvent]
     }
     
-    extension [Self <: AppointmentRenderedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentRenderedEvent] (val x: Self) extends AnyVal {
       
       inline def setAppointmentElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "appointmentElement", value.asInstanceOf[js.Any])
     }
@@ -609,7 +624,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentTooltipShowingAppointmentInfo]
     }
     
-    extension [Self <: AppointmentTooltipShowingAppointmentInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentTooltipShowingAppointmentInfo] (val x: Self) extends AnyVal {
       
       inline def setAppointmentData(value: Appointment): Self = StObject.set(x, "appointmentData", value.asInstanceOf[js.Any])
       
@@ -640,7 +656,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentTooltipShowingEvent]
     }
     
-    extension [Self <: AppointmentTooltipShowingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentTooltipShowingEvent] (val x: Self) extends AnyVal {
       
       inline def setAppointments(value: js.Array[AppointmentTooltipShowingAppointmentInfo]): Self = StObject.set(x, "appointments", value.asInstanceOf[js.Any])
       
@@ -663,7 +680,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentTooltipTemplateData]
     }
     
-    extension [Self <: AppointmentTooltipTemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentTooltipTemplateData] (val x: Self) extends AnyVal {
       
       inline def setIsButtonClicked(value: Boolean): Self = StObject.set(x, "isButtonClicked", value.asInstanceOf[js.Any])
     }
@@ -684,7 +702,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentUpdatedEvent]
     }
     
-    extension [Self <: AppointmentUpdatedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentUpdatedEvent] (val x: Self) extends AnyVal {
       
       inline def setAppointmentData(value: dxSchedulerAppointment): Self = StObject.set(x, "appointmentData", value.asInstanceOf[js.Any])
       
@@ -711,7 +730,8 @@ object dxScheduler {
       __obj.asInstanceOf[AppointmentUpdatingEvent]
     }
     
-    extension [Self <: AppointmentUpdatingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentUpdatingEvent] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean | PromiseLike[Boolean]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -756,7 +776,8 @@ object dxScheduler {
       __obj.asInstanceOf[CellClickEvent]
     }
     
-    extension [Self <: CellClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellClickEvent] (val x: Self) extends AnyVal {
       
       inline def setCellData(value: Any): Self = StObject.set(x, "cellData", value.asInstanceOf[js.Any])
       
@@ -784,7 +805,8 @@ object dxScheduler {
       __obj.asInstanceOf[CellContextMenuEvent]
     }
     
-    extension [Self <: CellContextMenuEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellContextMenuEvent] (val x: Self) extends AnyVal {
       
       inline def setCellData(value: Any): Self = StObject.set(x, "cellData", value.asInstanceOf[js.Any])
       
@@ -809,7 +831,8 @@ object dxScheduler {
       __obj.asInstanceOf[DateNavigatorTextInfo]
     }
     
-    extension [Self <: DateNavigatorTextInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateNavigatorTextInfo] (val x: Self) extends AnyVal {
       
       inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
@@ -868,7 +891,8 @@ object dxScheduler {
       __obj.asInstanceOf[TargetedAppointmentInfo]
     }
     
-    extension [Self <: TargetedAppointmentInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetedAppointmentInfo] (val x: Self) extends AnyVal {
       
       inline def setAppointmentData(value: dxSchedulerAppointment): Self = StObject.set(x, "appointmentData", value.asInstanceOf[js.Any])
       

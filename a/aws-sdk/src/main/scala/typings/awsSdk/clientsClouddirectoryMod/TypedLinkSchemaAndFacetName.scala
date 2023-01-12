@@ -23,7 +23,8 @@ object TypedLinkSchemaAndFacetName {
     __obj.asInstanceOf[TypedLinkSchemaAndFacetName]
   }
   
-  extension [Self <: TypedLinkSchemaAndFacetName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypedLinkSchemaAndFacetName] (val x: Self) extends AnyVal {
     
     inline def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
     

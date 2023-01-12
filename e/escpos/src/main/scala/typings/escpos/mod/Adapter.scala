@@ -21,7 +21,8 @@ object Adapter {
     __obj.asInstanceOf[Adapter]
   }
   
-  extension [Self <: Adapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Adapter] (val x: Self) extends AnyVal {
     
     inline def setOpen(value: /* repeated */ Any => Adapter): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     

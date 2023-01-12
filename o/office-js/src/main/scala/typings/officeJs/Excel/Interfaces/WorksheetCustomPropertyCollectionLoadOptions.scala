@@ -41,7 +41,8 @@ object WorksheetCustomPropertyCollectionLoadOptions {
     __obj.asInstanceOf[WorksheetCustomPropertyCollectionLoadOptions]
   }
   
-  extension [Self <: WorksheetCustomPropertyCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetCustomPropertyCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

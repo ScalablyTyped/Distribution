@@ -28,7 +28,8 @@ object ASPxClientDashboardItemSelectionChangedEventArgs {
     __obj.asInstanceOf[ASPxClientDashboardItemSelectionChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientDashboardItemSelectionChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardItemSelectionChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentSelection(value: () => js.Array[ASPxClientDashboardItemDataAxisPointTuple]): Self = StObject.set(x, "GetCurrentSelection", js.Any.fromFunction0(value))
     

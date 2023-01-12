@@ -15,7 +15,8 @@ object AddVirtualAuthenticatorRequest {
     __obj.asInstanceOf[AddVirtualAuthenticatorRequest]
   }
   
-  extension [Self <: AddVirtualAuthenticatorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddVirtualAuthenticatorRequest] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: VirtualAuthenticatorOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }

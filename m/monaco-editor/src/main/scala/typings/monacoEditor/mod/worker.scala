@@ -21,7 +21,8 @@ object worker {
       __obj.asInstanceOf[IMirrorModel]
     }
     
-    extension [Self <: IMirrorModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMirrorModel] (val x: Self) extends AnyVal {
       
       inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
@@ -40,7 +41,8 @@ object worker {
       __obj.asInstanceOf[IMirrorTextModel]
     }
     
-    extension [Self <: IMirrorTextModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMirrorTextModel] (val x: Self) extends AnyVal {
       
       inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
@@ -65,7 +67,8 @@ object worker {
       __obj.asInstanceOf[IWorkerContext[H]]
     }
     
-    extension [Self <: IWorkerContext[?], H](x: Self & IWorkerContext[H]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWorkerContext[?], H] (val x: Self & IWorkerContext[H]) extends AnyVal {
       
       inline def setGetMirrorModels(value: () => js.Array[IMirrorModel]): Self = StObject.set(x, "getMirrorModels", js.Any.fromFunction0(value))
       

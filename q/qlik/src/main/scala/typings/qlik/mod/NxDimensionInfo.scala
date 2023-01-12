@@ -70,7 +70,8 @@ object NxDimensionInfo {
     __obj.asInstanceOf[NxDimensionInfo]
   }
   
-  extension [Self <: NxDimensionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NxDimensionInfo] (val x: Self) extends AnyVal {
     
     inline def setQContinuousAxes(value: Boolean): Self = StObject.set(x, "qContinuousAxes", value.asInstanceOf[js.Any])
     

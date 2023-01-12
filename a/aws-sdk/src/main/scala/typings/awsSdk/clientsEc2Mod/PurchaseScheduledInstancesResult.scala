@@ -18,7 +18,8 @@ object PurchaseScheduledInstancesResult {
     __obj.asInstanceOf[PurchaseScheduledInstancesResult]
   }
   
-  extension [Self <: PurchaseScheduledInstancesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseScheduledInstancesResult] (val x: Self) extends AnyVal {
     
     inline def setScheduledInstanceSet(value: PurchasedScheduledInstanceSet): Self = StObject.set(x, "ScheduledInstanceSet", value.asInstanceOf[js.Any])
     

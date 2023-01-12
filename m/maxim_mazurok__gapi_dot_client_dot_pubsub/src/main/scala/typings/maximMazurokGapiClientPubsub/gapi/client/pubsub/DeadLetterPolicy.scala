@@ -27,7 +27,8 @@ object DeadLetterPolicy {
     __obj.asInstanceOf[DeadLetterPolicy]
   }
   
-  extension [Self <: DeadLetterPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeadLetterPolicy] (val x: Self) extends AnyVal {
     
     inline def setDeadLetterTopic(value: String): Self = StObject.set(x, "deadLetterTopic", value.asInstanceOf[js.Any])
     

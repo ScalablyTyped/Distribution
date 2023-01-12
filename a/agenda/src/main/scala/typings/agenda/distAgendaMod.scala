@@ -366,7 +366,8 @@ object distAgendaMod {
       __obj.asInstanceOf[AgendaConfig]
     }
     
-    extension [Self <: AgendaConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgendaConfig] (val x: Self) extends AnyVal {
       
       inline def setDb(value: Address): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       

@@ -72,7 +72,8 @@ object distEsRefMod {
       __obj.asInstanceOf[RefProps]
     }
     
-    extension [Self <: RefProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object distEsRefMod {
       __obj.asInstanceOf[RefState]
     }
     
-    extension [Self <: RefState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefState] (val x: Self) extends AnyVal {
       
       inline def setKind(value: self | forward | find): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       

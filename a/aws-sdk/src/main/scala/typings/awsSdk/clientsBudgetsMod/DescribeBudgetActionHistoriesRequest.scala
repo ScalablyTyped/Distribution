@@ -28,7 +28,8 @@ object DescribeBudgetActionHistoriesRequest {
     __obj.asInstanceOf[DescribeBudgetActionHistoriesRequest]
   }
   
-  extension [Self <: DescribeBudgetActionHistoriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBudgetActionHistoriesRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

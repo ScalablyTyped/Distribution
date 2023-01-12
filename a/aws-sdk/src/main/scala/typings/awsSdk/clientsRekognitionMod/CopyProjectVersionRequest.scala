@@ -54,7 +54,8 @@ object CopyProjectVersionRequest {
     __obj.asInstanceOf[CopyProjectVersionRequest]
   }
   
-  extension [Self <: CopyProjectVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyProjectVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationProjectArn(value: ProjectArn): Self = StObject.set(x, "DestinationProjectArn", value.asInstanceOf[js.Any])
     

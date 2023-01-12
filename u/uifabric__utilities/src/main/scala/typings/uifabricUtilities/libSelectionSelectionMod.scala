@@ -111,7 +111,8 @@ object libSelectionSelectionMod {
       __obj.asInstanceOf[ISelectionOptions[TItem]]
     }
     
-    extension [Self <: ISelectionOptions[?], TItem](x: Self & ISelectionOptions[TItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectionOptions[?], TItem] (val x: Self & ISelectionOptions[TItem]) extends AnyVal {
       
       inline def setCanSelectItem(value: (/* item */ TItem, /* index */ js.UndefOr[Double]) => Boolean): Self = StObject.set(x, "canSelectItem", js.Any.fromFunction2(value))
       
@@ -164,7 +165,8 @@ object libSelectionSelectionMod {
       __obj.asInstanceOf[ISelectionOptionsWithRequiredGetKey[TItem]]
     }
     
-    extension [Self <: ISelectionOptionsWithRequiredGetKey[?], TItem](x: Self & ISelectionOptionsWithRequiredGetKey[TItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectionOptionsWithRequiredGetKey[?], TItem] (val x: Self & ISelectionOptionsWithRequiredGetKey[TItem]) extends AnyVal {
       
       inline def setCanSelectItem(value: (/* item */ TItem, /* index */ js.UndefOr[Double]) => Boolean): Self = StObject.set(x, "canSelectItem", js.Any.fromFunction2(value))
       

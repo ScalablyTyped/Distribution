@@ -103,7 +103,8 @@ object distLayoutSrcInlineMod {
       __obj.asInstanceOf[InnerInlineProps]
     }
     
-    extension [Self <: InnerInlineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerInlineProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: start | end | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

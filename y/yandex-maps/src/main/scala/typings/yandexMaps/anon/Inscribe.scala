@@ -19,7 +19,8 @@ object Inscribe {
     __obj.asInstanceOf[Inscribe]
   }
   
-  extension [Self <: Inscribe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inscribe] (val x: Self) extends AnyVal {
     
     inline def setInscribe(value: Boolean): Self = StObject.set(x, "inscribe", value.asInstanceOf[js.Any])
     

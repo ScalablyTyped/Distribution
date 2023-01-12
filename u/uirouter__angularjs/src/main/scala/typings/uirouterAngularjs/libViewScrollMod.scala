@@ -23,7 +23,8 @@ object libViewScrollMod {
       __obj.asInstanceOf[UIViewScrollProvider]
     }
     
-    extension [Self <: UIViewScrollProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIViewScrollProvider] (val x: Self) extends AnyVal {
       
       inline def setUseAnchorScroll(value: () => Unit): Self = StObject.set(x, "useAnchorScroll", js.Any.fromFunction0(value))
     }

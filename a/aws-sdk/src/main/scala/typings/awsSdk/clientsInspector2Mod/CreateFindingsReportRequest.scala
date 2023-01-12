@@ -28,7 +28,8 @@ object CreateFindingsReportRequest {
     __obj.asInstanceOf[CreateFindingsReportRequest]
   }
   
-  extension [Self <: CreateFindingsReportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFindingsReportRequest] (val x: Self) extends AnyVal {
     
     inline def setFilterCriteria(value: FilterCriteria): Self = StObject.set(x, "filterCriteria", value.asInstanceOf[js.Any])
     

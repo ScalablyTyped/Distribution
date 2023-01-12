@@ -35,7 +35,8 @@ object b2ContactID {
     __obj.asInstanceOf[b2ContactID]
   }
   
-  extension [Self <: b2ContactID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2ContactID] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: () => b2ContactID): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     

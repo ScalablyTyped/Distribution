@@ -45,7 +45,8 @@ object ItemActivityStat {
     __obj.asInstanceOf[ItemActivityStat]
   }
   
-  extension [Self <: ItemActivityStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemActivityStat] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: NullableOption[ItemActionStat]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     

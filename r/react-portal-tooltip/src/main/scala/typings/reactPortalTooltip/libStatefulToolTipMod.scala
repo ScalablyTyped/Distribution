@@ -30,7 +30,8 @@ object libStatefulToolTipMod {
       __obj.asInstanceOf[StatefulToolTipProps]
     }
     
-    extension [Self <: StatefulToolTipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulToolTipProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object SecurityDeleteServiceTokenRequest {
     __obj.asInstanceOf[SecurityDeleteServiceTokenRequest]
   }
   
-  extension [Self <: SecurityDeleteServiceTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityDeleteServiceTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

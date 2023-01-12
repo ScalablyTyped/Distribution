@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setCas(value: String): Self = StObject.set(x, "cas", value.asInstanceOf[js.Any])
     }

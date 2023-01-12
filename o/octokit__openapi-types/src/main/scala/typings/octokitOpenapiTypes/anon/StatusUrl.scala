@@ -22,7 +22,8 @@ object StatusUrl {
     __obj.asInstanceOf[StatusUrl]
   }
   
-  extension [Self <: StatusUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusUrl] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

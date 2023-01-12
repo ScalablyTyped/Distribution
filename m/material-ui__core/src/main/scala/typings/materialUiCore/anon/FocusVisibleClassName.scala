@@ -15,7 +15,8 @@ object FocusVisibleClassName {
     __obj.asInstanceOf[FocusVisibleClassName]
   }
   
-  extension [Self <: FocusVisibleClassName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FocusVisibleClassName] (val x: Self) extends AnyVal {
     
     inline def setFocusVisibleClassName(value: String): Self = StObject.set(x, "focusVisibleClassName", value.asInstanceOf[js.Any])
     

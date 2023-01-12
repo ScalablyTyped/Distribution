@@ -25,7 +25,8 @@ object PlotHeatmapJitterOptions {
     __obj.asInstanceOf[PlotHeatmapJitterOptions]
   }
   
-  extension [Self <: PlotHeatmapJitterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHeatmapJitterOptions] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

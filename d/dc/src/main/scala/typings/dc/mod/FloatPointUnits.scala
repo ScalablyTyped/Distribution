@@ -15,7 +15,8 @@ object FloatPointUnits {
     __obj.asInstanceOf[FloatPointUnits]
   }
   
-  extension [Self <: FloatPointUnits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatPointUnits] (val x: Self) extends AnyVal {
     
     inline def setPrecision(value: Double => UnitFunction): Self = StObject.set(x, "precision", js.Any.fromFunction1(value))
   }

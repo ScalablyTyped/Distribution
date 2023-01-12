@@ -58,7 +58,8 @@ object DataSourceSettingsSummaries {
     __obj.asInstanceOf[DataSourceSettingsSummaries]
   }
   
-  extension [Self <: DataSourceSettingsSummaries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSettingsSummaries] (val x: Self) extends AnyVal {
     
     inline def setColumnSettings(value: js.Array[Any]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
     

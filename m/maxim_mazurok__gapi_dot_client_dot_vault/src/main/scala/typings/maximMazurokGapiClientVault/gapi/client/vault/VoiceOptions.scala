@@ -16,7 +16,8 @@ object VoiceOptions {
     __obj.asInstanceOf[VoiceOptions]
   }
   
-  extension [Self <: VoiceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceOptions] (val x: Self) extends AnyVal {
     
     inline def setCoveredData(value: js.Array[String]): Self = StObject.set(x, "coveredData", value.asInstanceOf[js.Any])
     

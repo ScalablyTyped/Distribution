@@ -49,7 +49,8 @@ object BoundsCallback {
     __obj.asInstanceOf[BoundsCallback]
   }
   
-  extension [Self <: BoundsCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundsCallback] (val x: Self) extends AnyVal {
     
     inline def setOnCircularArc(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "onCircularArc", js.Any.fromFunction6(value))
     

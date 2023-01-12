@@ -32,7 +32,8 @@ object libAnimateInterfaceMod {
       __obj.asInstanceOf[AnimateExtraCfg]
     }
     
-    extension [Self <: AnimateExtraCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimateExtraCfg] (val x: Self) extends AnyVal {
       
       inline def setCoordinate(value: Coordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
       

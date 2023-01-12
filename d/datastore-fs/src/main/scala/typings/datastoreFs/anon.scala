@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[CreateIfMissing]
     }
     
-    extension [Self <: CreateIfMissing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateIfMissing] (val x: Self) extends AnyVal {
       
       inline def setCreateIfMissing(value: Boolean): Self = StObject.set(x, "createIfMissing", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[DeleteManyConcurrency]
     }
     
-    extension [Self <: DeleteManyConcurrency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteManyConcurrency] (val x: Self) extends AnyVal {
       
       inline def setCreateIfMissing(value: Boolean): Self = StObject.set(x, "createIfMissing", value.asInstanceOf[js.Any])
       

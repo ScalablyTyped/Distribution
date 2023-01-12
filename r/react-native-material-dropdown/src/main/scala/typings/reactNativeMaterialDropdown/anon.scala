@@ -191,7 +191,8 @@ object anon {
       __obj.asInstanceOf[PartialDropDownProps]
     }
     
-    extension [Self <: PartialDropDownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDropDownProps] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteRTLLayout(value: Boolean): Self = StObject.set(x, "absoluteRTLLayout", value.asInstanceOf[js.Any])
       
@@ -667,7 +668,8 @@ object anon {
       __obj.asInstanceOf[PartialDropDownPropsAbsoluteRTLLayout]
     }
     
-    extension [Self <: PartialDropDownPropsAbsoluteRTLLayout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDropDownPropsAbsoluteRTLLayout] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteRTLLayout(value: Boolean): Self = StObject.set(x, "absoluteRTLLayout", value.asInstanceOf[js.Any])
       

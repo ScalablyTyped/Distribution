@@ -424,7 +424,8 @@ object mod {
           __obj.asInstanceOf[ExecOptions]
         }
         
-        extension [Self <: ExecOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ExecOptions] (val x: Self) extends AnyVal {
           
           inline def setBreakOnError(value: Boolean): Self = StObject.set(x, "breakOnError", value.asInstanceOf[js.Any])
           
@@ -471,7 +472,8 @@ object mod {
           __obj.asInstanceOf[FileTaskOptions]
         }
         
-        extension [Self <: FileTaskOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: FileTaskOptions] (val x: Self) extends AnyVal {
           
           inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
           
@@ -495,7 +497,8 @@ object mod {
           __obj.asInstanceOf[Logger_]
         }
         
-        extension [Self <: Logger_](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Logger_] (val x: Self) extends AnyVal {
           
           inline def setError(value: Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
           
@@ -523,7 +526,8 @@ object mod {
           __obj.asInstanceOf[TaskOptions]
         }
         
-        extension [Self <: TaskOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: TaskOptions] (val x: Self) extends AnyVal {
           
           inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
           
@@ -549,7 +553,8 @@ object mod {
           __obj.asInstanceOf[UtilOptions]
         }
         
-        extension [Self <: UtilOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: UtilOptions] (val x: Self) extends AnyVal {
           
           inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
           

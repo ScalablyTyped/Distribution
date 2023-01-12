@@ -72,7 +72,8 @@ object buildSrcFallbackServiceStubMod {
       __obj.asInstanceOf[FetchParameters]
     }
     
-    extension [Self <: FetchParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchParameters] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Buffer | js.typedarray.Uint8Array | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

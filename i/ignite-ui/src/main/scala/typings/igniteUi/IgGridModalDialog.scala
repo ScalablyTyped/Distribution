@@ -109,7 +109,8 @@ object IgGridModalDialog {
     __obj.asInstanceOf[IgGridModalDialog]
   }
   
-  extension [Self <: IgGridModalDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridModalDialog] (val x: Self) extends AnyVal {
     
     inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     

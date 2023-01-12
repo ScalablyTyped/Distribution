@@ -17,7 +17,8 @@ object Deserialize {
     __obj.asInstanceOf[Deserialize]
   }
   
-  extension [Self <: Deserialize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deserialize] (val x: Self) extends AnyVal {
     
     inline def setDeserialize(value: Any => Any): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
     

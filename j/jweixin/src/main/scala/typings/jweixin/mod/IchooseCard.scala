@@ -50,7 +50,8 @@ object IchooseCard {
     __obj.asInstanceOf[IchooseCard]
   }
   
-  extension [Self <: IchooseCard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IchooseCard] (val x: Self) extends AnyVal {
     
     inline def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
     

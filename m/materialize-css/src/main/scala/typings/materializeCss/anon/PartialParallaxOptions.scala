@@ -16,7 +16,8 @@ object PartialParallaxOptions {
     __obj.asInstanceOf[PartialParallaxOptions]
   }
   
-  extension [Self <: PartialParallaxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialParallaxOptions] (val x: Self) extends AnyVal {
     
     inline def setResponsiveThreshold(value: Double): Self = StObject.set(x, "responsiveThreshold", value.asInstanceOf[js.Any])
     

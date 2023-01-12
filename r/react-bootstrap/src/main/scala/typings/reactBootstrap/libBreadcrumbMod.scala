@@ -43,7 +43,8 @@ object libBreadcrumbMod {
       __obj.asInstanceOf[BreadcrumbProps]
     }
     
-    extension [Self <: BreadcrumbProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object ASPxClientDashboardItemEventArgs {
     __obj.asInstanceOf[ASPxClientDashboardItemEventArgs]
   }
   
-  extension [Self <: ASPxClientDashboardItemEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardItemEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIsNullValue(value: Any => Boolean): Self = StObject.set(x, "IsNullValue", js.Any.fromFunction1(value))
     

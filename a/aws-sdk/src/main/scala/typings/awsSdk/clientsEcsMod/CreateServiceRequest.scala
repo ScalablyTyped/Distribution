@@ -123,7 +123,8 @@ object CreateServiceRequest {
     __obj.asInstanceOf[CreateServiceRequest]
   }
   
-  extension [Self <: CreateServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setCapacityProviderStrategy(value: CapacityProviderStrategy): Self = StObject.set(x, "capacityProviderStrategy", value.asInstanceOf[js.Any])
     

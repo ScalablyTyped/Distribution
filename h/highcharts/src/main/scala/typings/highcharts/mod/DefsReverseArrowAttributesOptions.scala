@@ -23,7 +23,8 @@ object DefsReverseArrowAttributesOptions {
     __obj.asInstanceOf[DefsReverseArrowAttributesOptions]
   }
   
-  extension [Self <: DefsReverseArrowAttributesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefsReverseArrowAttributesOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

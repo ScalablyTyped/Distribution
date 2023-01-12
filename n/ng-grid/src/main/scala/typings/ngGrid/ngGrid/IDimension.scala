@@ -19,7 +19,8 @@ object IDimension {
     __obj.asInstanceOf[IDimension]
   }
   
-  extension [Self <: IDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDimension] (val x: Self) extends AnyVal {
     
     inline def setAutoFitHeight(value: Boolean): Self = StObject.set(x, "autoFitHeight", value.asInstanceOf[js.Any])
     

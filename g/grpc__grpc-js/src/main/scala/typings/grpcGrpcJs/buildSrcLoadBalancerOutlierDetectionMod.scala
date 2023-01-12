@@ -178,7 +178,8 @@ object buildSrcLoadBalancerOutlierDetectionMod {
       __obj.asInstanceOf[FailurePercentageEjectionConfig]
     }
     
-    extension [Self <: FailurePercentageEjectionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailurePercentageEjectionConfig] (val x: Self) extends AnyVal {
       
       inline def setEnforcement_percentage(value: Double): Self = StObject.set(x, "enforcement_percentage", value.asInstanceOf[js.Any])
       
@@ -212,7 +213,8 @@ object buildSrcLoadBalancerOutlierDetectionMod {
       __obj.asInstanceOf[SuccessRateEjectionConfig]
     }
     
-    extension [Self <: SuccessRateEjectionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessRateEjectionConfig] (val x: Self) extends AnyVal {
       
       inline def setEnforcement_percentage(value: Double): Self = StObject.set(x, "enforcement_percentage", value.asInstanceOf[js.Any])
       

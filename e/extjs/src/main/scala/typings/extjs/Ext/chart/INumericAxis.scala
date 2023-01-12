@@ -33,7 +33,8 @@ object INumericAxis {
     __obj.asInstanceOf[INumericAxis]
   }
   
-  extension [Self <: INumericAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INumericAxis] (val x: Self) extends AnyVal {
     
     inline def setAdjustMaximumByMajorUnit(value: Boolean): Self = StObject.set(x, "adjustMaximumByMajorUnit", value.asInstanceOf[js.Any])
     

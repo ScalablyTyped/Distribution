@@ -25,7 +25,8 @@ object PlotSunburstLevelsColorVariationOptions {
     __obj.asInstanceOf[PlotSunburstLevelsColorVariationOptions]
   }
   
-  extension [Self <: PlotSunburstLevelsColorVariationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSunburstLevelsColorVariationOptions] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ProgressJsOptions {
     __obj.asInstanceOf[ProgressJsOptions]
   }
   
-  extension [Self <: ProgressJsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressJsOptions] (val x: Self) extends AnyVal {
     
     inline def setConsiderTransition(value: Boolean): Self = StObject.set(x, "considerTransition", value.asInstanceOf[js.Any])
     

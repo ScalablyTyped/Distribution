@@ -50,7 +50,8 @@ object AccessReviewStage {
     __obj.asInstanceOf[AccessReviewStage]
   }
   
-  extension [Self <: AccessReviewStage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReviewStage] (val x: Self) extends AnyVal {
     
     inline def setDecisions(value: NullableOption[js.Array[AccessReviewInstanceDecisionItem]]): Self = StObject.set(x, "decisions", value.asInstanceOf[js.Any])
     

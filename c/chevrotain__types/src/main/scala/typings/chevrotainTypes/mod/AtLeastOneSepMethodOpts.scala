@@ -23,7 +23,8 @@ object AtLeastOneSepMethodOpts {
     __obj.asInstanceOf[AtLeastOneSepMethodOpts[T]]
   }
   
-  extension [Self <: AtLeastOneSepMethodOpts[?], T](x: Self & AtLeastOneSepMethodOpts[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AtLeastOneSepMethodOpts[?], T] (val x: Self & AtLeastOneSepMethodOpts[T]) extends AnyVal {
     
     inline def setERR_MSG(value: String): Self = StObject.set(x, "ERR_MSG", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object LabelingJobStoppingConditions {
     __obj.asInstanceOf[LabelingJobStoppingConditions]
   }
   
-  extension [Self <: LabelingJobStoppingConditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelingJobStoppingConditions] (val x: Self) extends AnyVal {
     
     inline def setMaxHumanLabeledObjectCount(value: MaxHumanLabeledObjectCount): Self = StObject.set(x, "MaxHumanLabeledObjectCount", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object XDatabaseEnvironment {
     __obj.asInstanceOf[XDatabaseEnvironment]
   }
   
-  extension [Self <: XDatabaseEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDatabaseEnvironment] (val x: Self) extends AnyVal {
     
     inline def setCreateDatabaseAccess(value: (String, String) => XDatabaseAccess): Self = StObject.set(x, "createDatabaseAccess", js.Any.fromFunction2(value))
     

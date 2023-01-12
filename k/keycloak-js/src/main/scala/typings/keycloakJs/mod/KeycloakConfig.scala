@@ -28,7 +28,8 @@ object KeycloakConfig {
     __obj.asInstanceOf[KeycloakConfig]
   }
   
-  extension [Self <: KeycloakConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeycloakConfig] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

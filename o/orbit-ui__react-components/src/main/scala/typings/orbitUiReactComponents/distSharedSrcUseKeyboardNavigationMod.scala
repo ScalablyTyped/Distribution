@@ -35,7 +35,8 @@ object distSharedSrcUseKeyboardNavigationMod {
       __obj.asInstanceOf[KeyboardNavigationBindings]
     }
     
-    extension [Self <: KeyboardNavigationBindings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardNavigationBindings] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: js.Array[Keys]): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object distSharedSrcUseKeyboardNavigationMod {
       __obj.asInstanceOf[KeyboardNavigationOptions]
     }
     
-    extension [Self <: KeyboardNavigationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardNavigationOptions] (val x: Self) extends AnyVal {
       
       inline def setOnSelect(value: (/* event */ KeyboardEvent[Element], /* element */ Element) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       

@@ -22,7 +22,8 @@ object S3ExportTaskDefinitionMap {
     __obj.asInstanceOf[S3ExportTaskDefinitionMap]
   }
   
-  extension [Self <: S3ExportTaskDefinitionMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3ExportTaskDefinitionMap] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

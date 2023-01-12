@@ -23,7 +23,8 @@ object ProvisioningArtifactPreferences {
     __obj.asInstanceOf[ProvisioningArtifactPreferences]
   }
   
-  extension [Self <: ProvisioningArtifactPreferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisioningArtifactPreferences] (val x: Self) extends AnyVal {
     
     inline def setStackSetAccounts(value: StackSetAccounts): Self = StObject.set(x, "StackSetAccounts", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object anon {
       __obj.asInstanceOf[PartialConfig]
     }
     
-    extension [Self <: PartialConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialConfig] (val x: Self) extends AnyVal {
       
       inline def setCookieDomain(value: String): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
       

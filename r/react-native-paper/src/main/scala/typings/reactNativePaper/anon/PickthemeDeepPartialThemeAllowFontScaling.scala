@@ -136,7 +136,8 @@ object PickthemeDeepPartialThemeAllowFontScaling {
     __obj.asInstanceOf[PickthemeDeepPartialThemeAllowFontScaling]
   }
   
-  extension [Self <: PickthemeDeepPartialThemeAllowFontScaling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickthemeDeepPartialThemeAllowFontScaling] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

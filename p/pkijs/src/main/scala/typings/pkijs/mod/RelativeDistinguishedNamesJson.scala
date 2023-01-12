@@ -15,7 +15,8 @@ object RelativeDistinguishedNamesJson {
     __obj.asInstanceOf[RelativeDistinguishedNamesJson]
   }
   
-  extension [Self <: RelativeDistinguishedNamesJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeDistinguishedNamesJson] (val x: Self) extends AnyVal {
     
     inline def setTypesAndValues(value: js.Array[AttributeTypeAndValueJson]): Self = StObject.set(x, "typesAndValues", value.asInstanceOf[js.Any])
     

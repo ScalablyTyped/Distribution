@@ -155,7 +155,8 @@ object UI {
       __obj.asInstanceOf[ICredentialPickerOptions]
     }
     
-    extension [Self <: ICredentialPickerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICredentialPickerOptions] (val x: Self) extends AnyVal {
       
       inline def setAlwaysDisplayDialog(value: Boolean): Self = StObject.set(x, "alwaysDisplayDialog", value.asInstanceOf[js.Any])
       
@@ -210,7 +211,8 @@ object UI {
       __obj.asInstanceOf[ICredentialPickerResults]
     }
     
-    extension [Self <: ICredentialPickerResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICredentialPickerResults] (val x: Self) extends AnyVal {
       
       inline def setCredential(value: IBuffer): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
       

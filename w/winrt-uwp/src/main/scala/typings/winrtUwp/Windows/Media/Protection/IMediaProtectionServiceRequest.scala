@@ -21,7 +21,8 @@ object IMediaProtectionServiceRequest {
     __obj.asInstanceOf[IMediaProtectionServiceRequest]
   }
   
-  extension [Self <: IMediaProtectionServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaProtectionServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setProtectionSystem(value: String): Self = StObject.set(x, "protectionSystem", value.asInstanceOf[js.Any])
     

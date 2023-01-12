@@ -19,7 +19,8 @@ object DynamicSlotFnProperty {
     __obj.asInstanceOf[DynamicSlotFnProperty]
   }
   
-  extension [Self <: DynamicSlotFnProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicSlotFnProperty] (val x: Self) extends AnyVal {
     
     inline def setValue(value: SlotFunctionExpression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

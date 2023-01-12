@@ -50,7 +50,8 @@ object EnvelopeFormData {
     __obj.asInstanceOf[EnvelopeFormData]
   }
   
-  extension [Self <: EnvelopeFormData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeFormData] (val x: Self) extends AnyVal {
     
     inline def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
     

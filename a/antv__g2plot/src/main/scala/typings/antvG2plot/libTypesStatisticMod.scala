@@ -970,7 +970,8 @@ object libTypesStatisticMod {
       __obj.asInstanceOf[CSSStyle]
     }
     
-    extension [Self <: CSSStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSStyle] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
@@ -2875,7 +2876,8 @@ object libTypesStatisticMod {
       __obj.asInstanceOf[Statistic]
     }
     
-    extension [Self <: Statistic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Statistic] (val x: Self) extends AnyVal {
       
       inline def setContent(value: `false` | StatisticText): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -2939,7 +2941,8 @@ object libTypesStatisticMod {
       __obj.asInstanceOf[StatisticText]
     }
     
-    extension [Self <: StatisticText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatisticText] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

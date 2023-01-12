@@ -23,7 +23,8 @@ object WorkspaceFoldersChangeEvent {
     __obj.asInstanceOf[WorkspaceFoldersChangeEvent]
   }
   
-  extension [Self <: WorkspaceFoldersChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceFoldersChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: js.Array[WorkspaceFolder]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

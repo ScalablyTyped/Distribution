@@ -46,7 +46,8 @@ object SasPortalDevice {
     __obj.asInstanceOf[SasPortalDevice]
   }
   
-  extension [Self <: SasPortalDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalDevice] (val x: Self) extends AnyVal {
     
     inline def setActiveConfig(value: SasPortalDeviceConfig): Self = StObject.set(x, "activeConfig", value.asInstanceOf[js.Any])
     

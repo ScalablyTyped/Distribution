@@ -20,7 +20,8 @@ object CustomFunctionCallbacks {
     __obj.asInstanceOf[CustomFunctionCallbacks]
   }
   
-  extension [Self <: CustomFunctionCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomFunctionCallbacks] (val x: Self) extends AnyVal {
     
     inline def setOnClose(value: () => OptionalPromise[Unit]): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     

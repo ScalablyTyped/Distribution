@@ -19,7 +19,8 @@ object FilterStep {
     __obj.asInstanceOf[FilterStep]
   }
   
-  extension [Self <: FilterStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterStep] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object ConnectionAliasAssociation {
     __obj.asInstanceOf[ConnectionAliasAssociation]
   }
   
-  extension [Self <: ConnectionAliasAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionAliasAssociation] (val x: Self) extends AnyVal {
     
     inline def setAssociatedAccountId(value: AwsAccount): Self = StObject.set(x, "AssociatedAccountId", value.asInstanceOf[js.Any])
     

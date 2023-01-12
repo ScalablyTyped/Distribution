@@ -16,7 +16,8 @@ object CordovaPlugins {
     __obj.asInstanceOf[CordovaPlugins]
   }
   
-  extension [Self <: CordovaPlugins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CordovaPlugins] (val x: Self) extends AnyVal {
     
     inline def setKeyboard(value: Keyboard): Self = StObject.set(x, "Keyboard", value.asInstanceOf[js.Any])
   }

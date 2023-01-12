@@ -34,7 +34,8 @@ object CanvasTextDrawingStyles {
     __obj.asInstanceOf[CanvasTextDrawingStyles]
   }
   
-  extension [Self <: CanvasTextDrawingStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasTextDrawingStyles] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: CanvasDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

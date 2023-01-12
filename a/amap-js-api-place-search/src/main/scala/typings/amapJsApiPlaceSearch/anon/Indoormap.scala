@@ -16,7 +16,8 @@ object Indoormap {
     __obj.asInstanceOf[Indoormap]
   }
   
-  extension [Self <: Indoormap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Indoormap] (val x: Self) extends AnyVal {
     
     inline def setIndoor_map(value: `false`): Self = StObject.set(x, "indoor_map", value.asInstanceOf[js.Any])
   }

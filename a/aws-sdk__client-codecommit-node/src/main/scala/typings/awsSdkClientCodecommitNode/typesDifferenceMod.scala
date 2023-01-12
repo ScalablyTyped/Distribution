@@ -35,7 +35,8 @@ object typesDifferenceMod {
       __obj.asInstanceOf[Difference]
     }
     
-    extension [Self <: Difference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Difference] (val x: Self) extends AnyVal {
       
       inline def setAfterBlob(value: BlobMetadata): Self = StObject.set(x, "afterBlob", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object typesDifferenceMod {
       __obj.asInstanceOf[UnmarshalledDifference]
     }
     
-    extension [Self <: UnmarshalledDifference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledDifference] (val x: Self) extends AnyVal {
       
       inline def setAfterBlob(value: UnmarshalledBlobMetadata): Self = StObject.set(x, "afterBlob", value.asInstanceOf[js.Any])
       

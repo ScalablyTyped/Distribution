@@ -21,7 +21,8 @@ object typesModulesKeyboardMod {
       __obj.asInstanceOf[KeyboardEvents]
     }
     
-    extension [Self <: KeyboardEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardEvents] (val x: Self) extends AnyVal {
       
       inline def setKeyPress(value: (default, String) => Unit): Self = StObject.set(x, "keyPress", js.Any.fromFunction2(value))
     }
@@ -51,7 +52,8 @@ object typesModulesKeyboardMod {
       __obj.asInstanceOf[KeyboardMethods]
     }
     
-    extension [Self <: KeyboardMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardMethods] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -91,7 +93,8 @@ object typesModulesKeyboardMod {
       __obj.asInstanceOf[KeyboardOptions]
     }
     
-    extension [Self <: KeyboardOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

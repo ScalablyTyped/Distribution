@@ -19,7 +19,8 @@ object OrderSpec {
     __obj.asInstanceOf[OrderSpec[Subject]]
   }
   
-  extension [Self <: OrderSpec[?], Subject](x: Self & OrderSpec[Subject]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderSpec[?], Subject] (val x: Self & OrderSpec[Subject]) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

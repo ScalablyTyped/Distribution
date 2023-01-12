@@ -34,7 +34,8 @@ object EducationResource {
     __obj.asInstanceOf[EducationResource]
   }
   
-  extension [Self <: EducationResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationResource] (val x: Self) extends AnyVal {
     
     inline def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object jetappConfig {
     __obj.asInstanceOf[jetappConfig]
   }
   
-  extension [Self <: jetappConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: jetappConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

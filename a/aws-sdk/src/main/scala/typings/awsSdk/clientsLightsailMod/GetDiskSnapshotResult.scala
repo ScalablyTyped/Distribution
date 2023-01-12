@@ -18,7 +18,8 @@ object GetDiskSnapshotResult {
     __obj.asInstanceOf[GetDiskSnapshotResult]
   }
   
-  extension [Self <: GetDiskSnapshotResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDiskSnapshotResult] (val x: Self) extends AnyVal {
     
     inline def setDiskSnapshot(value: DiskSnapshot): Self = StObject.set(x, "diskSnapshot", value.asInstanceOf[js.Any])
     

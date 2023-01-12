@@ -24,7 +24,8 @@ object GroupBulmaComponentWithoutRenderAs {
     __obj.asInstanceOf[GroupBulmaComponentWithoutRenderAs]
   }
   
-  extension [Self <: GroupBulmaComponentWithoutRenderAs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupBulmaComponentWithoutRenderAs] (val x: Self) extends AnyVal {
     
     inline def setGroup(
       value: /* props */ TagGroupProps & (Omit[ElementProps[TagGroupProps, span], renderAs]) => ReactElement

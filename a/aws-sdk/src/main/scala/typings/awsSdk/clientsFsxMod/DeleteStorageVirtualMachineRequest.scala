@@ -20,7 +20,8 @@ object DeleteStorageVirtualMachineRequest {
     __obj.asInstanceOf[DeleteStorageVirtualMachineRequest]
   }
   
-  extension [Self <: DeleteStorageVirtualMachineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteStorageVirtualMachineRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object Locales {
     __obj.asInstanceOf[Locales]
   }
   
-  extension [Self <: Locales](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Locales] (val x: Self) extends AnyVal {
     
     inline def setCS_CZ(value: cs_CZ): Self = StObject.set(x, "CS_CZ", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object IProjection {
     __obj.asInstanceOf[IProjection]
   }
   
-  extension [Self <: IProjection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProjection] (val x: Self) extends AnyVal {
     
     inline def setFromGlobalPixels(value: (js.Array[Double], Double) => js.Array[Double]): Self = StObject.set(x, "fromGlobalPixels", js.Any.fromFunction2(value))
     

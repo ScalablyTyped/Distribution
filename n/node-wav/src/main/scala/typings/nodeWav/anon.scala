@@ -42,7 +42,8 @@ object anon {
       __obj.asInstanceOf[BitDepth]
     }
     
-    extension [Self <: BitDepth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitDepth] (val x: Self) extends AnyVal {
       
       inline def setBitDepth(value: Double): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object anon {
       __obj.asInstanceOf[ChannelData]
     }
     
-    extension [Self <: ChannelData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelData] (val x: Self) extends AnyVal {
       
       inline def setChannelData(value: js.Array[js.typedarray.Float32Array]): Self = StObject.set(x, "channelData", value.asInstanceOf[js.Any])
       

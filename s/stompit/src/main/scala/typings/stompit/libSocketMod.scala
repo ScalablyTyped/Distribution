@@ -84,7 +84,8 @@ object libSocketMod {
       __obj.asInstanceOf[SocketError]
     }
     
-    extension [Self <: SocketError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketError] (val x: Self) extends AnyVal {
       
       inline def setIsApplicationError(value: () => Boolean): Self = StObject.set(x, "isApplicationError", js.Any.fromFunction0(value))
       
@@ -117,7 +118,8 @@ object libSocketMod {
       __obj.asInstanceOf[SocketOptions]
     }
     
-    extension [Self <: SocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketOptions] (val x: Self) extends AnyVal {
       
       inline def setCommandHandlers(value: CommandHandlers): Self = StObject.set(x, "commandHandlers", value.asInstanceOf[js.Any])
       

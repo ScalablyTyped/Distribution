@@ -85,7 +85,8 @@ object distSrcProvidersMod {
       __obj.asInstanceOf[ProvidersComponents]
     }
     
-    extension [Self <: ProvidersComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidersComponents] (val x: Self) extends AnyVal {
       
       inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
     }
@@ -112,7 +113,8 @@ object distSrcProvidersMod {
       __obj.asInstanceOf[ProvidersInit]
     }
     
-    extension [Self <: ProvidersInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidersInit] (val x: Self) extends AnyVal {
       
       inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       

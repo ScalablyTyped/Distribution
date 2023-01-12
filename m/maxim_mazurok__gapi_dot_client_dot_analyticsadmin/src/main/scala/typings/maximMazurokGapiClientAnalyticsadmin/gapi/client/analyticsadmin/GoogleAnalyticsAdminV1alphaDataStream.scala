@@ -37,7 +37,8 @@ object GoogleAnalyticsAdminV1alphaDataStream {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaDataStream]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaDataStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaDataStream] (val x: Self) extends AnyVal {
     
     inline def setAndroidAppStreamData(value: GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData): Self = StObject.set(x, "androidAppStreamData", value.asInstanceOf[js.Any])
     

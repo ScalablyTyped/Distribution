@@ -19,7 +19,8 @@ object ListArchivesOptions {
     __obj.asInstanceOf[ListArchivesOptions]
   }
   
-  extension [Self <: ListArchivesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListArchivesOptions] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

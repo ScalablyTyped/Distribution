@@ -33,7 +33,8 @@ object ASPxClientSpellCheckerAfterCheckEventArgs {
     __obj.asInstanceOf[ASPxClientSpellCheckerAfterCheckEventArgs]
   }
   
-  extension [Self <: ASPxClientSpellCheckerAfterCheckEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSpellCheckerAfterCheckEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCheckedText(value: String): Self = StObject.set(x, "checkedText", value.asInstanceOf[js.Any])
     

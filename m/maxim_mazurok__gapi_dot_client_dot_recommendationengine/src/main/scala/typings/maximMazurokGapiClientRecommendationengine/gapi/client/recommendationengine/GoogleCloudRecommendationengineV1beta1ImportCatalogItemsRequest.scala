@@ -28,7 +28,8 @@ object GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest] (val x: Self) extends AnyVal {
     
     inline def setErrorsConfig(value: GoogleCloudRecommendationengineV1beta1ImportErrorsConfig): Self = StObject.set(x, "errorsConfig", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object RangeSliderControls {
     __obj.asInstanceOf[RangeSliderControls]
   }
   
-  extension [Self <: RangeSliderControls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeSliderControls] (val x: Self) extends AnyVal {
     
     inline def setDecrement(value: ThumbIndex => Unit): Self = StObject.set(x, "decrement", js.Any.fromFunction1(value))
     

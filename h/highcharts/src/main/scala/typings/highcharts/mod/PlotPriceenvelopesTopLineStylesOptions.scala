@@ -24,7 +24,8 @@ object PlotPriceenvelopesTopLineStylesOptions {
     __obj.asInstanceOf[PlotPriceenvelopesTopLineStylesOptions]
   }
   
-  extension [Self <: PlotPriceenvelopesTopLineStylesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPriceenvelopesTopLineStylesOptions] (val x: Self) extends AnyVal {
     
     inline def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     

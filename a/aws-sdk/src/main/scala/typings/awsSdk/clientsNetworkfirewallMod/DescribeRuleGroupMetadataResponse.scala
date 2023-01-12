@@ -45,7 +45,8 @@ object DescribeRuleGroupMetadataResponse {
     __obj.asInstanceOf[DescribeRuleGroupMetadataResponse]
   }
   
-  extension [Self <: DescribeRuleGroupMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRuleGroupMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setCapacity(value: RuleCapacity): Self = StObject.set(x, "Capacity", value.asInstanceOf[js.Any])
     

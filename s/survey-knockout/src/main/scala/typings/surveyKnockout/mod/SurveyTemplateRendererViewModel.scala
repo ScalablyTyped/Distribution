@@ -17,7 +17,8 @@ object SurveyTemplateRendererViewModel {
     __obj.asInstanceOf[SurveyTemplateRendererViewModel]
   }
   
-  extension [Self <: SurveyTemplateRendererViewModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurveyTemplateRendererViewModel] (val x: Self) extends AnyVal {
     
     inline def setComponentData(value: Any): Self = StObject.set(x, "componentData", value.asInstanceOf[js.Any])
     

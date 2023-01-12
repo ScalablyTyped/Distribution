@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[FormatCharacter]
     }
     
-    extension [Self <: FormatCharacter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatCharacter] (val x: Self) extends AnyVal {
       
       inline def setTransform(value: /* char */ String => String): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
@@ -58,7 +59,8 @@ object mod {
       __obj.asInstanceOf[MaskedInputProps]
     }
     
-    extension [Self <: MaskedInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaskedInputProps] (val x: Self) extends AnyVal {
       
       inline def setFormatCharacters(value: CharsFormatters): Self = StObject.set(x, "formatCharacters", value.asInstanceOf[js.Any])
       

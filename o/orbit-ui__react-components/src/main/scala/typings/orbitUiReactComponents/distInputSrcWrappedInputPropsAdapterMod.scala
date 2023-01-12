@@ -26,7 +26,8 @@ object distInputSrcWrappedInputPropsAdapterMod {
       __obj.asInstanceOf[AdaptedWrappedInputProps]
     }
     
-    extension [Self <: AdaptedWrappedInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdaptedWrappedInputProps] (val x: Self) extends AnyVal {
       
       inline def setWrapperProps(value: `0`): Self = StObject.set(x, "wrapperProps", value.asInstanceOf[js.Any])
     }

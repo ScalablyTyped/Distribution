@@ -43,7 +43,8 @@ object ASPxClientEvent {
     __obj.asInstanceOf[ASPxClientEvent[T]]
   }
   
-  extension [Self <: ASPxClientEvent[?], T](x: Self & ASPxClientEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientEvent[?], T] (val x: Self & ASPxClientEvent[T]) extends AnyVal {
     
     inline def setAddHandler(value: T => Unit): Self = StObject.set(x, "AddHandler", js.Any.fromFunction1(value))
     

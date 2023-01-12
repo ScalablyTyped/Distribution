@@ -23,7 +23,8 @@ object TypeofNextAction {
     __obj.asInstanceOf[TypeofNextAction]
   }
   
-  extension [Self <: TypeofNextAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofNextAction] (val x: Self) extends AnyVal {
     
     inline def setDisplayBankTransferInstructions(value: TypeofDisplayBankTransfer): Self = StObject.set(x, "DisplayBankTransferInstructions", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object JsonXmlElement {
     __obj.asInstanceOf[JsonXmlElement]
   }
   
-  extension [Self <: JsonXmlElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonXmlElement] (val x: Self) extends AnyVal {
     
     inline def setAppendChild(value: (String, js.Array[String]) => JsonXmlElement): Self = StObject.set(x, "appendChild", js.Any.fromFunction2(value))
     

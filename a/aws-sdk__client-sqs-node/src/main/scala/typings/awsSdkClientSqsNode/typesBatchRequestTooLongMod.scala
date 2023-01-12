@@ -21,7 +21,8 @@ object typesBatchRequestTooLongMod {
       __obj.asInstanceOf[BatchRequestTooLong]
     }
     
-    extension [Self <: BatchRequestTooLong](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchRequestTooLong] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.BatchRequestTooLong): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

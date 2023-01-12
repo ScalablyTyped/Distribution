@@ -19,7 +19,8 @@ object ImportYumArtifactsResponse {
     __obj.asInstanceOf[ImportYumArtifactsResponse]
   }
   
-  extension [Self <: ImportYumArtifactsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportYumArtifactsResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: js.Array[ImportYumArtifactsErrorInfo]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object BulletMarkersItemProps {
     __obj.asInstanceOf[BulletMarkersItemProps]
   }
   
-  extension [Self <: BulletMarkersItemProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulletMarkersItemProps] (val x: Self) extends AnyVal {
     
     inline def setAnimatedProps(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<PositionWithColor> */ Any

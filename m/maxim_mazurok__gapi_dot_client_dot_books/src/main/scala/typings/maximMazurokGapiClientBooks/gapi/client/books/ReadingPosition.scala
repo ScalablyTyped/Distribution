@@ -34,7 +34,8 @@ object ReadingPosition {
     __obj.asInstanceOf[ReadingPosition]
   }
   
-  extension [Self <: ReadingPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadingPosition] (val x: Self) extends AnyVal {
     
     inline def setEpubCfiPosition(value: String): Self = StObject.set(x, "epubCfiPosition", value.asInstanceOf[js.Any])
     

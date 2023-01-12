@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[KeepOverrides]
     }
     
-    extension [Self <: KeepOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeepOverrides] (val x: Self) extends AnyVal {
       
       inline def setKeepOverrides(value: Boolean): Self = StObject.set(x, "keepOverrides", value.asInstanceOf[js.Any])
       

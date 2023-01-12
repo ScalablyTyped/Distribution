@@ -25,7 +25,8 @@ object ChartLegendItemLeaveEvent {
     __obj.asInstanceOf[ChartLegendItemLeaveEvent]
   }
   
-  extension [Self <: ChartLegendItemLeaveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartLegendItemLeaveEvent] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object Scenic {
     __obj.asInstanceOf[Scenic]
   }
   
-  extension [Self <: Scenic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scenic] (val x: Self) extends AnyVal {
     
     inline def setDeep_type(value: SCENIC): Self = StObject.set(x, "deep_type", value.asInstanceOf[js.Any])
     

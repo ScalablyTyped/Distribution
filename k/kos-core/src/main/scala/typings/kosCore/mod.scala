@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[Action[T]]
     }
     
-    extension [Self <: Action[?], T](x: Self & Action[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action[?], T] (val x: Self & Action[T]) extends AnyVal {
       
       inline def setPayload(value: Partial[T] & StringDictionary[Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object mod {
       __obj.asInstanceOf[KosModel[T]]
     }
     
-    extension [Self <: KosModel[?], T](x: Self & KosModel[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KosModel[?], T] (val x: Self & KosModel[T]) extends AnyVal {
       
       inline def setAsyncs(
         value: StringDictionary[
@@ -169,7 +171,8 @@ object mod {
       __obj.asInstanceOf[KosProps[T]]
     }
     
-    extension [Self <: KosProps[?], T](x: Self & KosProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KosProps[?], T] (val x: Self & KosProps[T]) extends AnyVal {
       
       inline def setDispatch(value: /* action */ Action[T] => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
@@ -200,7 +203,8 @@ object mod {
       __obj.asInstanceOf[Util]
     }
     
-    extension [Self <: Util](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Util] (val x: Self) extends AnyVal {
       
       inline def setGetActionType(value: String => Namespace): Self = StObject.set(x, "getActionType", js.Any.fromFunction1(value))
       
@@ -225,7 +229,8 @@ object mod {
       __obj.asInstanceOf[WrapperConfig]
     }
     
-    extension [Self <: WrapperConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapperConfig] (val x: Self) extends AnyVal {
       
       inline def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
       

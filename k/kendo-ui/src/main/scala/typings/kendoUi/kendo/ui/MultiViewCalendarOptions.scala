@@ -55,7 +55,8 @@ object MultiViewCalendarOptions {
     __obj.asInstanceOf[MultiViewCalendarOptions]
   }
   
-  extension [Self <: MultiViewCalendarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiViewCalendarOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: /* e */ MultiViewCalendarEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

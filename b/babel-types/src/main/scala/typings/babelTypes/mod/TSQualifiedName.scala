@@ -22,7 +22,8 @@ object TSQualifiedName {
   @js.native
   def apply(left: TSEntityName, right: Identifier_): TSQualifiedName = js.native
   
-  extension [Self <: TSQualifiedName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSQualifiedName] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: TSEntityName): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

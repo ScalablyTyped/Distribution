@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Distance]
     }
     
-    extension [Self <: Distance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Distance] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[FinalBearing]
     }
     
-    extension [Self <: FinalBearing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FinalBearing] (val x: Self) extends AnyVal {
       
       inline def setFinalBearing(value: Double): Self = StObject.set(x, "finalBearing", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Lon1]
     }
     
-    extension [Self <: Lon1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lon1] (val x: Self) extends AnyVal {
       
       inline def setLon1(value: Double): Self = StObject.set(x, "lon1", value.asInstanceOf[js.Any])
       

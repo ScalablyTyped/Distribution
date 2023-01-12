@@ -18,7 +18,8 @@ object ReturnTypeGetProcessInfoResponse {
     __obj.asInstanceOf[ReturnTypeGetProcessInfoResponse]
   }
   
-  extension [Self <: ReturnTypeGetProcessInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetProcessInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[Any]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

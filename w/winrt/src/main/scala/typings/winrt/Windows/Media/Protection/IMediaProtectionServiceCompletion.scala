@@ -15,7 +15,8 @@ object IMediaProtectionServiceCompletion {
     __obj.asInstanceOf[IMediaProtectionServiceCompletion]
   }
   
-  extension [Self <: IMediaProtectionServiceCompletion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaProtectionServiceCompletion] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: Boolean => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
   }

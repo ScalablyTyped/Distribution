@@ -23,7 +23,8 @@ object ModalPropsAndroid {
     __obj.asInstanceOf[ModalPropsAndroid]
   }
   
-  extension [Self <: ModalPropsAndroid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalPropsAndroid] (val x: Self) extends AnyVal {
     
     inline def setHardwareAccelerated(value: Boolean): Self = StObject.set(x, "hardwareAccelerated", value.asInstanceOf[js.Any])
     

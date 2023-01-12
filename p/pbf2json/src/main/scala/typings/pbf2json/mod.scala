@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[Centroid]
     }
     
-    extension [Self <: Centroid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Centroid] (val x: Self) extends AnyVal {
       
       inline def setType(value: entrance): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object mod {
       __obj.asInstanceOf[Coordinate]
     }
     
-    extension [Self <: Coordinate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coordinate] (val x: Self) extends AnyVal {
       
       inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object mod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -144,7 +147,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -186,7 +190,8 @@ object mod {
       __obj.asInstanceOf[Relation]
     }
     
-    extension [Self <: Relation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Relation] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: E): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -226,7 +231,8 @@ object mod {
       __obj.asInstanceOf[Way]
     }
     
-    extension [Self <: Way](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Way] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: E): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       

@@ -47,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Account]
     }
     
-    extension [Self <: Account](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Business]
     }
     
-    extension [Self <: Business](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Business] (val x: Self) extends AnyVal {
       
       inline def setBusiness(value: String): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -148,7 +151,8 @@ object anon {
       __obj.asInstanceOf[Employer]
     }
     
-    extension [Self <: Employer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Employer] (val x: Self) extends AnyVal {
       
       inline def setEmployer(value: Name): Self = StObject.set(x, "employer", value.asInstanceOf[js.Any])
     }
@@ -173,7 +177,8 @@ object anon {
       __obj.asInstanceOf[Files]
     }
     
-    extension [Self <: Files](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Files] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[IFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -215,7 +220,8 @@ object anon {
       __obj.asInstanceOf[Mobile]
     }
     
-    extension [Self <: Mobile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mobile] (val x: Self) extends AnyVal {
       
       inline def setBusiness(value: String): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
       
@@ -240,7 +246,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -265,7 +272,8 @@ object anon {
       __obj.asInstanceOf[Next]
     }
     
-    extension [Self <: Next](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
       
       inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
@@ -296,7 +304,8 @@ object anon {
       __obj.asInstanceOf[Personal]
     }
     
-    extension [Self <: Personal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Personal] (val x: Self) extends AnyVal {
       
       inline def setBusiness(value: IPostalAddress): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object QueryObjectsResponse {
     __obj.asInstanceOf[QueryObjectsResponse]
   }
   
-  extension [Self <: QueryObjectsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryObjectsResponse] (val x: Self) extends AnyVal {
     
     inline def setObjects(value: RemoteObject): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
   }

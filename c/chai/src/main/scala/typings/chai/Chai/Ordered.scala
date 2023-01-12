@@ -18,7 +18,8 @@ object Ordered {
     __obj.asInstanceOf[Ordered]
   }
   
-  extension [Self <: Ordered](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ordered] (val x: Self) extends AnyVal {
     
     inline def setMembers(value: (/* set */ js.Array[Any], /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "members", js.Any.fromFunction2(value))
   }

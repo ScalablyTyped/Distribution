@@ -23,7 +23,8 @@ object CircleGridCfg {
     __obj.asInstanceOf[CircleGridCfg]
   }
   
-  extension [Self <: CircleGridCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleGridCfg] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
   }

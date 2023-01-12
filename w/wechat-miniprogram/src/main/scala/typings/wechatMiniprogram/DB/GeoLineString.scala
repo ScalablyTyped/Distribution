@@ -19,7 +19,8 @@ object GeoLineString {
     __obj.asInstanceOf[GeoLineString]
   }
   
-  extension [Self <: GeoLineString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoLineString] (val x: Self) extends AnyVal {
     
     inline def setPoints(value: js.Array[GeoPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     

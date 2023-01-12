@@ -18,7 +18,8 @@ object DeleteTranscriptionJobRequest {
     __obj.asInstanceOf[DeleteTranscriptionJobRequest]
   }
   
-  extension [Self <: DeleteTranscriptionJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTranscriptionJobRequest] (val x: Self) extends AnyVal {
     
     inline def setTranscriptionJobName(value: TranscriptionJobName): Self = StObject.set(x, "TranscriptionJobName", value.asInstanceOf[js.Any])
   }

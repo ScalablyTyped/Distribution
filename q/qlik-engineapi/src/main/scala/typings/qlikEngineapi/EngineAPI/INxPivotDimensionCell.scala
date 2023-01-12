@@ -101,7 +101,8 @@ object INxPivotDimensionCell {
     __obj.asInstanceOf[INxPivotDimensionCell]
   }
   
-  extension [Self <: INxPivotDimensionCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxPivotDimensionCell] (val x: Self) extends AnyVal {
     
     inline def setQAttrDims(value: js.Array[INxAttributeDimValues]): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
     

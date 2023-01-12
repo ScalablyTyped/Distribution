@@ -133,7 +133,8 @@ object DriveItem {
     __obj.asInstanceOf[DriveItem]
   }
   
-  extension [Self <: DriveItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriveItem] (val x: Self) extends AnyVal {
     
     inline def setAnalytics(value: NullableOption[ItemAnalytics]): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
     

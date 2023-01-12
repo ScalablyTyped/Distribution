@@ -55,7 +55,8 @@ object XUIControllerRegistration {
     __obj.asInstanceOf[XUIControllerRegistration]
   }
   
-  extension [Self <: XUIControllerRegistration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUIControllerRegistration] (val x: Self) extends AnyVal {
     
     inline def setDeregisterController(value: (String, String) => Unit): Self = StObject.set(x, "deregisterController", js.Any.fromFunction2(value))
     

@@ -34,7 +34,8 @@ object distLibPluginsGetMultiPluginResultMod {
       __obj.asInstanceOf[FailedProjectScanError]
     }
     
-    extension [Self <: FailedProjectScanError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailedProjectScanError] (val x: Self) extends AnyVal {
       
       inline def setErrMessage(value: String): Self = StObject.set(x, "errMessage", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object distLibPluginsGetMultiPluginResultMod {
       __obj.asInstanceOf[MultiProjectResultCustom]
     }
     
-    extension [Self <: MultiProjectResultCustom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiProjectResultCustom] (val x: Self) extends AnyVal {
       
       inline def setFailedResults(value: js.Array[FailedProjectScanError]): Self = StObject.set(x, "failedResults", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object distLibPluginsGetMultiPluginResultMod {
       __obj.asInstanceOf[ScannedProjectCustom]
     }
     
-    extension [Self <: ScannedProjectCustom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScannedProjectCustom] (val x: Self) extends AnyVal {
       
       inline def setCallGraph(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CallGraph */ Any

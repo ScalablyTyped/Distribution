@@ -43,7 +43,8 @@ object TransferContactRequest {
     __obj.asInstanceOf[TransferContactRequest]
   }
   
-  extension [Self <: TransferContactRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferContactRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object AesGcmParams {
     __obj.asInstanceOf[AesGcmParams]
   }
   
-  extension [Self <: AesGcmParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AesGcmParams] (val x: Self) extends AnyVal {
     
     inline def setAdditionalData(value: BufferSource): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
     

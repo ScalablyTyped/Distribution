@@ -25,7 +25,8 @@ object Contexts {
     __obj.asInstanceOf[Contexts]
   }
   
-  extension [Self <: Contexts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Contexts] (val x: Self) extends AnyVal {
     
     inline def setChecks(value: js.Array[Appid]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
     

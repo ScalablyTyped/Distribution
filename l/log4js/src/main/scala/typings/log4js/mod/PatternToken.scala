@@ -19,7 +19,8 @@ object PatternToken {
     __obj.asInstanceOf[PatternToken]
   }
   
-  extension [Self <: PatternToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatternToken] (val x: Self) extends AnyVal {
     
     inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     

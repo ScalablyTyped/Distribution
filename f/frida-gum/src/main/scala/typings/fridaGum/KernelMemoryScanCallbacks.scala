@@ -33,7 +33,8 @@ object KernelMemoryScanCallbacks {
     __obj.asInstanceOf[KernelMemoryScanCallbacks]
   }
   
-  extension [Self <: KernelMemoryScanCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KernelMemoryScanCallbacks] (val x: Self) extends AnyVal {
     
     inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
     

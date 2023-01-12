@@ -27,7 +27,8 @@ object DSNodeMultiplier {
     __obj.asInstanceOf[DSNodeMultiplier]
   }
   
-  extension [Self <: DSNodeMultiplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DSNodeMultiplier] (val x: Self) extends AnyVal {
     
     inline def setComma(value: Boolean): Self = StObject.set(x, "comma", value.asInstanceOf[js.Any])
     

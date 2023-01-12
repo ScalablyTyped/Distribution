@@ -98,7 +98,8 @@ object Queue {
     __obj.asInstanceOf[Queue]
   }
   
-  extension [Self <: Queue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Queue] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (String, js.Function0[Any]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     

@@ -61,7 +61,8 @@ object settings {
       __obj.asInstanceOf[SaveParameters]
     }
     
-    extension [Self <: SaveParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SaveParameters] (val x: Self) extends AnyVal {
       
       inline def setWebhookUrl(value: String): Self = StObject.set(x, "webhookUrl", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object settings {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
       

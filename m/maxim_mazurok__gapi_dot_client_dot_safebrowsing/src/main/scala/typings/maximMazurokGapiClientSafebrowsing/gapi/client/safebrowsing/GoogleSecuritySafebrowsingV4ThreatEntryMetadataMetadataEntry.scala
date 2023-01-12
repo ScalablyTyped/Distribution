@@ -19,7 +19,8 @@ object GoogleSecuritySafebrowsingV4ThreatEntryMetadataMetadataEntry {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4ThreatEntryMetadataMetadataEntry]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4ThreatEntryMetadataMetadataEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4ThreatEntryMetadataMetadataEntry] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

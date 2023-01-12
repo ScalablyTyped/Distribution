@@ -25,7 +25,8 @@ object DangerouslyDisableOnNavigationEvent {
     __obj.asInstanceOf[DangerouslyDisableOnNavigationEvent]
   }
   
-  extension [Self <: DangerouslyDisableOnNavigationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DangerouslyDisableOnNavigationEvent] (val x: Self) extends AnyVal {
     
     inline def setDangerouslyDisableOnNavigation(value: () => Unit): Self = StObject.set(x, "dangerouslyDisableOnNavigation", js.Any.fromFunction0(value))
     

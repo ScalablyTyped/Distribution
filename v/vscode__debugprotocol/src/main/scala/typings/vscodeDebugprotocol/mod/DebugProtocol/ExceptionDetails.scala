@@ -32,7 +32,8 @@ object ExceptionDetails {
     __obj.asInstanceOf[ExceptionDetails]
   }
   
-  extension [Self <: ExceptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExceptionDetails] (val x: Self) extends AnyVal {
     
     inline def setEvaluateName(value: String): Self = StObject.set(x, "evaluateName", value.asInstanceOf[js.Any])
     

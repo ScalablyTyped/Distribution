@@ -42,7 +42,8 @@ object NamedVariables {
     __obj.asInstanceOf[NamedVariables]
   }
   
-  extension [Self <: NamedVariables](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedVariables] (val x: Self) extends AnyVal {
     
     inline def setIndexedVariables(value: Double): Self = StObject.set(x, "indexedVariables", value.asInstanceOf[js.Any])
     

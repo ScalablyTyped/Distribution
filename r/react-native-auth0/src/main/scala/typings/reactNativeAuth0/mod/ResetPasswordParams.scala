@@ -17,7 +17,8 @@ object ResetPasswordParams {
     __obj.asInstanceOf[ResetPasswordParams]
   }
   
-  extension [Self <: ResetPasswordParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetPasswordParams] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

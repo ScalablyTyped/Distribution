@@ -23,7 +23,8 @@ object IRestoreAgentRequest {
     __obj.asInstanceOf[IRestoreAgentRequest]
   }
   
-  extension [Self <: IRestoreAgentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRestoreAgentRequest] (val x: Self) extends AnyVal {
     
     inline def setAgentContent(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "agentContent", value.asInstanceOf[js.Any])
     

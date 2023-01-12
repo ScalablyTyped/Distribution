@@ -39,7 +39,8 @@ object esPanelsDecadePanelDecadeHeaderMod {
       __obj.asInstanceOf[YearHeaderProps[DateType]]
     }
     
-    extension [Self <: YearHeaderProps[?], DateType](x: Self & YearHeaderProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YearHeaderProps[?], DateType] (val x: Self & YearHeaderProps[DateType]) extends AnyVal {
       
       inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       

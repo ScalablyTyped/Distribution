@@ -23,7 +23,8 @@ object DeleteRowParams {
     __obj.asInstanceOf[DeleteRowParams]
   }
   
-  extension [Self <: DeleteRowParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRowParams] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

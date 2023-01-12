@@ -38,7 +38,8 @@ object FirewallPolicyDetails {
     __obj.asInstanceOf[FirewallPolicyDetails]
   }
   
-  extension [Self <: FirewallPolicyDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallPolicyDetails] (val x: Self) extends AnyVal {
     
     inline def setStatefulRuleGroupReferences(value: FirewallPolicyStatefulRuleGroupReferencesList): Self = StObject.set(x, "StatefulRuleGroupReferences", value.asInstanceOf[js.Any])
     

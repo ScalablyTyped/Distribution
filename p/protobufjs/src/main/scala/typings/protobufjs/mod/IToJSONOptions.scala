@@ -16,7 +16,8 @@ object IToJSONOptions {
     __obj.asInstanceOf[IToJSONOptions]
   }
   
-  extension [Self <: IToJSONOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IToJSONOptions] (val x: Self) extends AnyVal {
     
     inline def setKeepComments(value: Boolean): Self = StObject.set(x, "keepComments", value.asInstanceOf[js.Any])
     

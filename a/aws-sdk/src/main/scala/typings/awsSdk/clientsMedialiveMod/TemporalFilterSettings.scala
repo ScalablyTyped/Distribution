@@ -25,7 +25,8 @@ object TemporalFilterSettings {
     __obj.asInstanceOf[TemporalFilterSettings]
   }
   
-  extension [Self <: TemporalFilterSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemporalFilterSettings] (val x: Self) extends AnyVal {
     
     inline def setPostFilterSharpening(value: TemporalFilterPostFilterSharpening): Self = StObject.set(x, "PostFilterSharpening", value.asInstanceOf[js.Any])
     

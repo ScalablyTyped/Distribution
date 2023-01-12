@@ -23,7 +23,8 @@ object LineItemGroup {
     __obj.asInstanceOf[LineItemGroup]
   }
   
-  extension [Self <: LineItemGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineItemGroup] (val x: Self) extends AnyVal {
     
     inline def setLineItemGroupIndex(value: UInteger): Self = StObject.set(x, "LineItemGroupIndex", value.asInstanceOf[js.Any])
     

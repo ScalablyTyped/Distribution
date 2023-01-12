@@ -26,7 +26,8 @@ object HighlightResultPrimitive {
     __obj.asInstanceOf[HighlightResultPrimitive]
   }
   
-  extension [Self <: HighlightResultPrimitive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightResultPrimitive] (val x: Self) extends AnyVal {
     
     inline def setFullyHighlighted(value: Boolean): Self = StObject.set(x, "fullyHighlighted", value.asInstanceOf[js.Any])
     

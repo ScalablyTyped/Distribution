@@ -22,7 +22,8 @@ object EmailFields {
     __obj.asInstanceOf[EmailFields]
   }
   
-  extension [Self <: EmailFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailFields] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: /* user */ User => String): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
     

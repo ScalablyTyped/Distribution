@@ -27,7 +27,8 @@ object XAccessibleExtendedAttributes {
     __obj.asInstanceOf[XAccessibleExtendedAttributes]
   }
   
-  extension [Self <: XAccessibleExtendedAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleExtendedAttributes] (val x: Self) extends AnyVal {
     
     inline def setExtendedAttributes(value: Any): Self = StObject.set(x, "ExtendedAttributes", value.asInstanceOf[js.Any])
     

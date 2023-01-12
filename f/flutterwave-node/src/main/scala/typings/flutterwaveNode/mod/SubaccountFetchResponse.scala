@@ -16,7 +16,8 @@ object SubaccountFetchResponse {
     __obj.asInstanceOf[SubaccountFetchResponse]
   }
   
-  extension [Self <: SubaccountFetchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubaccountFetchResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Bankname): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

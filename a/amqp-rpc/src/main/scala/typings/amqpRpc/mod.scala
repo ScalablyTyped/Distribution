@@ -126,7 +126,8 @@ object mod {
       __obj.asInstanceOf[BroadcastOptions]
     }
     
-    extension [Self <: BroadcastOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BroadcastOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object mod {
       __obj.asInstanceOf[CallOptions]
     }
     
-    extension [Self <: CallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoDeleteCallback(value: Any): Self = StObject.set(x, "autoDeleteCallback", value.asInstanceOf[js.Any])
       
@@ -192,7 +194,8 @@ object mod {
       __obj.asInstanceOf[CommandInfo]
     }
     
-    extension [Self <: CommandInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandInfo] (val x: Self) extends AnyVal {
       
       inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
       
@@ -229,7 +232,8 @@ object mod {
       __obj.asInstanceOf[HandlerOptions]
     }
     
-    extension [Self <: HandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoDelete(value: Boolean): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
       
@@ -272,7 +276,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setConn_options(value: Any): Self = StObject.set(x, "conn_options", value.asInstanceOf[js.Any])
       

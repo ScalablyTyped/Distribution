@@ -33,7 +33,8 @@ object ASPxClientStrip {
     __obj.asInstanceOf[ASPxClientStrip]
   }
   
-  extension [Self <: ASPxClientStrip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientStrip] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: ASPxClientAxis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

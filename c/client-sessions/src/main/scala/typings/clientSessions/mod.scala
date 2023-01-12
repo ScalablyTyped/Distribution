@@ -26,7 +26,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ComputeHmacOptions]
     }
     
-    extension [Self <: ComputeHmacOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputeHmacOptions] (val x: Self) extends AnyVal {
       
       inline def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CookieOptions]
     }
     
-    extension [Self <: CookieOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieOptions] (val x: Self) extends AnyVal {
       
       inline def setEphemeral(value: Boolean): Self = StObject.set(x, "ephemeral", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DecodeResult]
     }
     
-    extension [Self <: DecodeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeResult] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SessionOptions]
     }
     
-    extension [Self <: SessionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionOptions] (val x: Self) extends AnyVal {
       
       inline def setActiveDuration(value: Double): Self = StObject.set(x, "activeDuration", value.asInstanceOf[js.Any])
       

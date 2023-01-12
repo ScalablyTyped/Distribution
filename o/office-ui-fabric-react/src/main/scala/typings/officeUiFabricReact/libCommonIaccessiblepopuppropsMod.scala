@@ -51,7 +51,8 @@ object libCommonIaccessiblepopuppropsMod {
       __obj.asInstanceOf[IAccessiblePopupProps]
     }
     
-    extension [Self <: IAccessiblePopupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAccessiblePopupProps] (val x: Self) extends AnyVal {
       
       inline def setCloseButtonAriaLabel(value: String): Self = StObject.set(x, "closeButtonAriaLabel", value.asInstanceOf[js.Any])
       

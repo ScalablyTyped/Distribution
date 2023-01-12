@@ -32,7 +32,8 @@ object Autofit {
     __obj.asInstanceOf[Autofit]
   }
   
-  extension [Self <: Autofit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Autofit] (val x: Self) extends AnyVal {
     
     inline def setAutofitType(value: String): Self = StObject.set(x, "autofitType", value.asInstanceOf[js.Any])
     

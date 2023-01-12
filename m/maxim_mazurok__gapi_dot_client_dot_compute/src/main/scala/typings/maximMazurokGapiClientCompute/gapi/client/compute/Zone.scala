@@ -46,7 +46,8 @@ object Zone {
     __obj.asInstanceOf[Zone]
   }
   
-  extension [Self <: Zone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Zone] (val x: Self) extends AnyVal {
     
     inline def setAvailableCpuPlatforms(value: js.Array[String]): Self = StObject.set(x, "availableCpuPlatforms", value.asInstanceOf[js.Any])
     

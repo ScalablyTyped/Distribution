@@ -52,7 +52,8 @@ object IonicEnvironment {
     __obj.asInstanceOf[IonicEnvironment]
   }
   
-  extension [Self <: IonicEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IonicEnvironment] (val x: Self) extends AnyVal {
     
     inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

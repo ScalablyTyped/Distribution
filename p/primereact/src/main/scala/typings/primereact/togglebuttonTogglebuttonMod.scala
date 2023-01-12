@@ -144,7 +144,8 @@ object togglebuttonTogglebuttonMod {
       __obj.asInstanceOf[ToggleButtonChangeParams]
     }
     
-    extension [Self <: ToggleButtonChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleButtonChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object togglebuttonTogglebuttonMod {
       __obj.asInstanceOf[ToggleButtonChangeTargetOptions]
     }
     
-    extension [Self <: ToggleButtonChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleButtonChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -641,7 +643,8 @@ object togglebuttonTogglebuttonMod {
       __obj.asInstanceOf[ToggleButtonProps]
     }
     
-    extension [Self <: ToggleButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

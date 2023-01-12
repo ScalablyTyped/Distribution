@@ -106,7 +106,8 @@ object mod {
       __obj.asInstanceOf[RequestState[T]]
     }
     
-    extension [Self <: RequestState[?], T](x: Self & RequestState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestState[?], T] (val x: Self & RequestState[T]) extends AnyVal {
       
       inline def setAttachment(value: T): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
       

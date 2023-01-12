@@ -25,7 +25,8 @@ object InputAccessoryViewProps {
     __obj.asInstanceOf[InputAccessoryViewProps]
   }
   
-  extension [Self <: InputAccessoryViewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputAccessoryViewProps] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: ColorValue): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

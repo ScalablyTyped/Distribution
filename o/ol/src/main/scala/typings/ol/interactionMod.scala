@@ -186,7 +186,8 @@ object interactionMod {
       __obj.asInstanceOf[DefaultsOptions]
     }
     
-    extension [Self <: DefaultsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultsOptions] (val x: Self) extends AnyVal {
       
       inline def setAltShiftDragRotate(value: Boolean): Self = StObject.set(x, "altShiftDragRotate", value.asInstanceOf[js.Any])
       

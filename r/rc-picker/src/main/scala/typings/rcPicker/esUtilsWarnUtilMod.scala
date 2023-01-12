@@ -27,7 +27,8 @@ object esUtilsWarnUtilMod {
       __obj.asInstanceOf[WarningProps]
     }
     
-    extension [Self <: WarningProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WarningProps] (val x: Self) extends AnyVal {
       
       inline def setPicker(value: PickerMode): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       

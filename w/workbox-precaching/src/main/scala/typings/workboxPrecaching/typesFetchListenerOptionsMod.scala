@@ -26,7 +26,8 @@ object typesFetchListenerOptionsMod {
       __obj.asInstanceOf[FetchListenerOptions]
     }
     
-    extension [Self <: FetchListenerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchListenerOptions] (val x: Self) extends AnyVal {
       
       inline def setCleanURLs(value: Boolean): Self = StObject.set(x, "cleanURLs", value.asInstanceOf[js.Any])
       

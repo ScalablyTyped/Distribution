@@ -18,7 +18,8 @@ object TestRenderEmailTemplateResponse {
     __obj.asInstanceOf[TestRenderEmailTemplateResponse]
   }
   
-  extension [Self <: TestRenderEmailTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestRenderEmailTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setRenderedTemplate(value: RenderedEmailTemplate): Self = StObject.set(x, "RenderedTemplate", value.asInstanceOf[js.Any])
   }

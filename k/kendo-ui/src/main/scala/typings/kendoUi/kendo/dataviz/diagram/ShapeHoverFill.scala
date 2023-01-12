@@ -17,7 +17,8 @@ object ShapeHoverFill {
     __obj.asInstanceOf[ShapeHoverFill]
   }
   
-  extension [Self <: ShapeHoverFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeHoverFill] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

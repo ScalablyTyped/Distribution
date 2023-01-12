@@ -26,7 +26,8 @@ object libKbaranimatorMod {
       __obj.asInstanceOf[KBarAnimatorProps]
     }
     
-    extension [Self <: KBarAnimatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KBarAnimatorProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

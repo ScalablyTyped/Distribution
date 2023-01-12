@@ -36,7 +36,8 @@ object GetPartialAXTreeRequest {
     __obj.asInstanceOf[GetPartialAXTreeRequest]
   }
   
-  extension [Self <: GetPartialAXTreeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPartialAXTreeRequest] (val x: Self) extends AnyVal {
     
     inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     

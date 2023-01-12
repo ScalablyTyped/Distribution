@@ -35,7 +35,8 @@ object socialsMod {
       __obj.asInstanceOf[SocialsProps]
     }
     
-    extension [Self <: SocialsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocialsProps] (val x: Self) extends AnyVal {
       
       inline def setItems(value: NonEmptyArray[Name]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       

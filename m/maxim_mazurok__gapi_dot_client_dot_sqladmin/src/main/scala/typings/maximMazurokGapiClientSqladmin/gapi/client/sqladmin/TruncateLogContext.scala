@@ -19,7 +19,8 @@ object TruncateLogContext {
     __obj.asInstanceOf[TruncateLogContext]
   }
   
-  extension [Self <: TruncateLogContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TruncateLogContext] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

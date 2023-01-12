@@ -23,7 +23,8 @@ object UpdateTagsForDomainRequest {
     __obj.asInstanceOf[UpdateTagsForDomainRequest]
   }
   
-  extension [Self <: UpdateTagsForDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTagsForDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

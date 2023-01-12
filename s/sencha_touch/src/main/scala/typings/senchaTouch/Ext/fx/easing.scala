@@ -38,7 +38,8 @@ object easing {
       __obj.asInstanceOf[IAbstract]
     }
     
-    extension [Self <: IAbstract](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       inline def setGetStartTime(value: () => Double): Self = StObject.set(x, "getStartTime", js.Any.fromFunction0(value))
       
@@ -99,7 +100,8 @@ object easing {
       __obj.asInstanceOf[IBounce]
     }
     
-    extension [Self <: IBounce](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBounce] (val x: Self) extends AnyVal {
       
       inline def setGetAcceleration(value: () => Double): Self = StObject.set(x, "getAcceleration", js.Any.fromFunction0(value))
       
@@ -210,7 +212,8 @@ object easing {
       __obj.asInstanceOf[IBoundMomentum]
     }
     
-    extension [Self <: IBoundMomentum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBoundMomentum] (val x: Self) extends AnyVal {
       
       inline def setBounce(value: Any): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
       
@@ -299,7 +302,8 @@ object easing {
       __obj.asInstanceOf[IEaseIn]
     }
     
-    extension [Self <: IEaseIn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEaseIn] (val x: Self) extends AnyVal {
       
       inline def setGetExponent(value: () => Double): Self = StObject.set(x, "getExponent", js.Any.fromFunction0(value))
       
@@ -332,7 +336,8 @@ object easing {
       __obj.asInstanceOf[IEaseOut]
     }
     
-    extension [Self <: IEaseOut](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEaseOut] (val x: Self) extends AnyVal {
       
       inline def setGetExponent(value: () => Double): Self = StObject.set(x, "getExponent", js.Any.fromFunction0(value))
       
@@ -375,7 +380,8 @@ object easing {
       __obj.asInstanceOf[ILinear]
     }
     
-    extension [Self <: ILinear](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILinear] (val x: Self) extends AnyVal {
       
       inline def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
       
@@ -436,7 +442,8 @@ object easing {
       __obj.asInstanceOf[IMomentum]
     }
     
-    extension [Self <: IMomentum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMomentum] (val x: Self) extends AnyVal {
       
       inline def setGetAcceleration(value: () => Double): Self = StObject.set(x, "getAcceleration", js.Any.fromFunction0(value))
       

@@ -18,7 +18,8 @@ object HostInformation {
     __obj.asInstanceOf[HostInformation]
   }
   
-  extension [Self <: HostInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostInformation] (val x: Self) extends AnyVal {
     
     inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
   }

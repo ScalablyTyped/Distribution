@@ -34,7 +34,8 @@ object FloodlightActivityPublisherDynamicTag {
     __obj.asInstanceOf[FloodlightActivityPublisherDynamicTag]
   }
   
-  extension [Self <: FloodlightActivityPublisherDynamicTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloodlightActivityPublisherDynamicTag] (val x: Self) extends AnyVal {
     
     inline def setClickThrough(value: Boolean): Self = StObject.set(x, "clickThrough", value.asInstanceOf[js.Any])
     

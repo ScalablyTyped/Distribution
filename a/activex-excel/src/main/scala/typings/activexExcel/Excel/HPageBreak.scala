@@ -47,7 +47,8 @@ object HPageBreak {
     __obj.asInstanceOf[HPageBreak]
   }
   
-  extension [Self <: HPageBreak](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HPageBreak] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[ListrError[Ctx]]
     }
     
-    extension [Self <: ListrError[?], Ctx](x: Self & ListrError[Ctx]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListrError[?], Ctx] (val x: Self & ListrError[Ctx]) extends AnyVal {
       
       inline def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[ListrEvent]
     }
     
-    extension [Self <: ListrEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListrEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: String | Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object mod {
       __obj.asInstanceOf[ListrOptions[Ctx]]
     }
     
-    extension [Self <: ListrOptions[?], Ctx](x: Self & ListrOptions[Ctx]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListrOptions[?], Ctx] (val x: Self & ListrOptions[Ctx]) extends AnyVal {
       
       inline def setConcurrent(value: Boolean | Double): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
       
@@ -132,7 +135,8 @@ object mod {
       __obj.asInstanceOf[ListrRenderer]
     }
     
-    extension [Self <: ListrRenderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListrRenderer] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: js.Error => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
       
@@ -185,7 +189,8 @@ object mod {
       __obj.asInstanceOf[ListrTask[Ctx]]
     }
     
-    extension [Self <: ListrTask[?], Ctx](x: Self & ListrTask[Ctx]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListrTask[?], Ctx] (val x: Self & ListrTask[Ctx]) extends AnyVal {
       
       inline def setEnabled(value: /* ctx */ Ctx => Boolean | js.Promise[Boolean] | Observable_[Boolean]): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
       

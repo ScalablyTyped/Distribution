@@ -74,7 +74,8 @@ object Bincheckname {
     __obj.asInstanceOf[Bincheckname]
   }
   
-  extension [Self <: Bincheckname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bincheckname] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: Double): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

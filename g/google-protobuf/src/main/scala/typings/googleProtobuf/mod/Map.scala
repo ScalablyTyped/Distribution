@@ -156,7 +156,8 @@ object Map {
       __obj.asInstanceOf[IteratorResult[T]]
     }
     
-    extension [Self <: IteratorResult[?], T](x: Self & IteratorResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IteratorResult[?], T] (val x: Self & IteratorResult[T]) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       

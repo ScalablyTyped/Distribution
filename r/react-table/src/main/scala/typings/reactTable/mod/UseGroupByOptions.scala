@@ -33,7 +33,8 @@ object UseGroupByOptions {
     __obj.asInstanceOf[UseGroupByOptions[D]]
   }
   
-  extension [Self <: UseGroupByOptions[?], D /* <: js.Object */](x: Self & UseGroupByOptions[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseGroupByOptions[?], D /* <: js.Object */] (val x: Self & UseGroupByOptions[D]) extends AnyVal {
     
     inline def setAggregations(value: Record[String, AggregatorFn[D]]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     

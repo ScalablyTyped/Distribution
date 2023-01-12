@@ -76,7 +76,8 @@ object Deliveriesurl {
     __obj.asInstanceOf[Deliveriesurl]
   }
   
-  extension [Self <: Deliveriesurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deliveriesurl] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

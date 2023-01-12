@@ -20,7 +20,8 @@ object R3CompiledExpression {
     __obj.asInstanceOf[R3CompiledExpression]
   }
   
-  extension [Self <: R3CompiledExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3CompiledExpression] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

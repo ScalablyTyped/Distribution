@@ -292,7 +292,8 @@ object NavigationBindingsOptions {
     __obj.asInstanceOf[NavigationBindingsOptions]
   }
   
-  extension [Self <: NavigationBindingsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationBindingsOptions] (val x: Self) extends AnyVal {
     
     inline def setArrowInfinityLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "arrowInfinityLine", value.asInstanceOf[js.Any])
     

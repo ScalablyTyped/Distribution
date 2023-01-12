@@ -28,7 +28,8 @@ object ApproveDecision {
     __obj.asInstanceOf[ApproveDecision]
   }
   
-  extension [Self <: ApproveDecision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApproveDecision] (val x: Self) extends AnyVal {
     
     inline def setApproveTime(value: String): Self = StObject.set(x, "approveTime", value.asInstanceOf[js.Any])
     

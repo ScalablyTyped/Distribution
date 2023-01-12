@@ -114,7 +114,8 @@ object TreeListOptions {
     __obj.asInstanceOf[TreeListOptions]
   }
   
-  extension [Self <: TreeListOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListOptions] (val x: Self) extends AnyVal {
     
     inline def setAltRowTemplate(value: String | js.Function): Self = StObject.set(x, "altRowTemplate", value.asInstanceOf[js.Any])
     

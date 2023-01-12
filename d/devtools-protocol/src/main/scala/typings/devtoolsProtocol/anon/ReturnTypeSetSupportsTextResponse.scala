@@ -19,7 +19,8 @@ object ReturnTypeSetSupportsTextResponse {
     __obj.asInstanceOf[ReturnTypeSetSupportsTextResponse]
   }
   
-  extension [Self <: ReturnTypeSetSupportsTextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeSetSupportsTextResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[SetSupportsTextRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UpdateGlobalSecondaryIndexAction {
     __obj.asInstanceOf[UpdateGlobalSecondaryIndexAction]
   }
   
-  extension [Self <: UpdateGlobalSecondaryIndexAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateGlobalSecondaryIndexAction] (val x: Self) extends AnyVal {
     
     inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     

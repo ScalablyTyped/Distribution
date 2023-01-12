@@ -102,7 +102,8 @@ object PositionDatumDef {
     __obj.asInstanceOf[PositionDatumDef[F]]
   }
   
-  extension [Self <: PositionDatumDef[?], F /* <: Field */](x: Self & PositionDatumDef[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionDatumDef[?], F /* <: Field */] (val x: Self & PositionDatumDef[F]) extends AnyVal {
     
     inline def setAxis(value: Axis[ExprRef | SignalRef]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

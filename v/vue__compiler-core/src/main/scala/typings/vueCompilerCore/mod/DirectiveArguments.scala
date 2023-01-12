@@ -19,7 +19,8 @@ object DirectiveArguments {
     __obj.asInstanceOf[DirectiveArguments]
   }
   
-  extension [Self <: DirectiveArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectiveArguments] (val x: Self) extends AnyVal {
     
     inline def setElements(value: js.Array[DirectiveArgumentNode]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     

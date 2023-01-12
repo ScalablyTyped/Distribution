@@ -21,7 +21,8 @@ object Registry {
     __obj.asInstanceOf[Registry[MinimumArgumentValueT, MinimumInputValueT, MinimumOutputValueT]]
   }
   
-  extension [Self <: Registry[?, ?, ?], MinimumArgumentValueT /* <: JsonValue */, MinimumInputValueT /* <: JsonValue */, MinimumOutputValueT /* <: JsonValue */](x: Self & (Registry[MinimumArgumentValueT, MinimumInputValueT, MinimumOutputValueT])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Registry[?, ?, ?], MinimumArgumentValueT /* <: JsonValue */, MinimumInputValueT /* <: JsonValue */, MinimumOutputValueT /* <: JsonValue */] (val x: Self & (Registry[MinimumArgumentValueT, MinimumInputValueT, MinimumOutputValueT])) extends AnyVal {
     
     inline def setGet(value: JobName => Observable_[(JobHandler[Any, Any, Any]) | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }

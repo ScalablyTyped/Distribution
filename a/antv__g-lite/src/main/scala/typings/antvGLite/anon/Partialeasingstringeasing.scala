@@ -23,7 +23,8 @@ object Partialeasingstringeasing {
     __obj.asInstanceOf[Partialeasingstringeasing]
   }
   
-  extension [Self <: Partialeasingstringeasing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialeasingstringeasing] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

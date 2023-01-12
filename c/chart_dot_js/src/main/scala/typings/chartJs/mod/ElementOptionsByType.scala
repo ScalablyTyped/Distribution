@@ -26,7 +26,8 @@ object ElementOptionsByType {
     __obj.asInstanceOf[ElementOptionsByType[TType]]
   }
   
-  extension [Self <: ElementOptionsByType[?], TType /* <: ChartType */](x: Self & ElementOptionsByType[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementOptionsByType[?], TType /* <: ChartType */] (val x: Self & ElementOptionsByType[TType]) extends AnyVal {
     
     inline def setArc(value: ScriptableAndArrayOptions[ArcOptions & ArcHoverOptions, ScriptableContext[TType]]): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     

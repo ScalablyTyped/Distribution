@@ -136,7 +136,8 @@ object IgBaseChartMethods {
     __obj.asInstanceOf[IgBaseChartMethods]
   }
   
-  extension [Self <: IgBaseChartMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgBaseChartMethods] (val x: Self) extends AnyVal {
     
     inline def setAddItem(value: js.Object => js.Object): Self = StObject.set(x, "addItem", js.Any.fromFunction1(value))
     

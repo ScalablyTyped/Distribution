@@ -17,7 +17,8 @@ object CMapData {
     __obj.asInstanceOf[CMapData]
   }
   
-  extension [Self <: CMapData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CMapData] (val x: Self) extends AnyVal {
     
     inline def setCMapData(value: Any): Self = StObject.set(x, "cMapData", value.asInstanceOf[js.Any])
     

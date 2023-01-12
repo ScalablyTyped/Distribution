@@ -15,7 +15,8 @@ object Driver {
     __obj.asInstanceOf[Driver]
   }
   
-  extension [Self <: Driver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Driver] (val x: Self) extends AnyVal {
     
     inline def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     

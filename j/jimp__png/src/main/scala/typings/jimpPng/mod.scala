@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[PNG]
     }
     
-    extension [Self <: PNG](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PNG] (val x: Self) extends AnyVal {
       
       inline def setClass(value: PNGClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       

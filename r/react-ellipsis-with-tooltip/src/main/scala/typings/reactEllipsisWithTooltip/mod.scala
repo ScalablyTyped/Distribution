@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[EllipsisWithTooltipProps]
     }
     
-    extension [Self <: EllipsisWithTooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EllipsisWithTooltipProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

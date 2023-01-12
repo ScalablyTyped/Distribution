@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Blocks]
     }
     
-    extension [Self <: Blocks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blocks] (val x: Self) extends AnyVal {
       
       inline def setBlocks(value: Blockstore): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Hash]
     }
     
-    extension [Self <: Hash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
       
       inline def setHash(value: CID[Any, `112`, `18`, `0`]): Self = StObject.set(x, "Hash", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -136,7 +140,8 @@ object anon {
       __obj.asInstanceOf[TypeofInvalidValueError]
     }
     
-    extension [Self <: TypeofInvalidValueError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofInvalidValueError] (val x: Self) extends AnyVal {
       
       inline def setCode_3(value: String): Self = StObject.set(x, "code_3", value.asInstanceOf[js.Any])
     }
@@ -153,7 +158,8 @@ object anon {
       __obj.asInstanceOf[TypeofMissingRepoOptionsE]
     }
     
-    extension [Self <: TypeofMissingRepoOptionsE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofMissingRepoOptionsE] (val x: Self) extends AnyVal {
       
       inline def setCode_4(value: String): Self = StObject.set(x, "code_4", value.asInstanceOf[js.Any])
     }
@@ -170,7 +176,8 @@ object anon {
       __obj.asInstanceOf[TypeofNonReversibleMigrat]
     }
     
-    extension [Self <: TypeofNonReversibleMigrat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofNonReversibleMigrat] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
@@ -187,7 +194,8 @@ object anon {
       __obj.asInstanceOf[TypeofNotInitializedRepoE]
     }
     
-    extension [Self <: TypeofNotInitializedRepoE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofNotInitializedRepoE] (val x: Self) extends AnyVal {
       
       inline def setCode_1(value: String): Self = StObject.set(x, "code_1", value.asInstanceOf[js.Any])
     }
@@ -204,7 +212,8 @@ object anon {
       __obj.asInstanceOf[TypeofRequiredParameterEr]
     }
     
-    extension [Self <: TypeofRequiredParameterEr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofRequiredParameterEr] (val x: Self) extends AnyVal {
       
       inline def setCode_2(value: String): Self = StObject.set(x, "code_2", value.asInstanceOf[js.Any])
     }

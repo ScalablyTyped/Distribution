@@ -34,7 +34,8 @@ object ElevationQueryResult {
     __obj.asInstanceOf[ElevationQueryResult]
   }
   
-  extension [Self <: ElevationQueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElevationQueryResult] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: Point | Multipoint | Polyline): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

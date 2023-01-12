@@ -29,7 +29,8 @@ object libErrorMod {
       __obj.asInstanceOf[RecurlyError]
     }
     
-    extension [Self <: RecurlyError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecurlyError] (val x: Self) extends AnyVal {
       
       inline def setClassification(value: String): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
       

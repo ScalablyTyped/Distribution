@@ -35,7 +35,8 @@ object LookupDeveloperIdentityResponse {
     __obj.asInstanceOf[LookupDeveloperIdentityResponse]
   }
   
-  extension [Self <: LookupDeveloperIdentityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupDeveloperIdentityResponse] (val x: Self) extends AnyVal {
     
     inline def setDeveloperUserIdentifierList(value: js.Array[String]): Self = StObject.set(x, "DeveloperUserIdentifierList", value.asInstanceOf[js.Any])
     

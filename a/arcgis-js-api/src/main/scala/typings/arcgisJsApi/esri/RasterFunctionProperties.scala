@@ -61,7 +61,8 @@ object RasterFunctionProperties {
     __obj.asInstanceOf[RasterFunctionProperties]
   }
   
-  extension [Self <: RasterFunctionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterFunctionProperties] (val x: Self) extends AnyVal {
     
     inline def setFunctionArguments(value: Any): Self = StObject.set(x, "functionArguments", value.asInstanceOf[js.Any])
     

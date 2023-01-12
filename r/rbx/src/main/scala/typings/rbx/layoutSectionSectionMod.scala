@@ -78,7 +78,8 @@ object layoutSectionSectionMod {
       __obj.asInstanceOf[SectionModifierProps]
     }
     
-    extension [Self <: SectionModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SectionModifierProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object layoutSectionSectionMod {
       __obj.asInstanceOf[SectionProps]
     }
     
-    extension [Self <: SectionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SectionProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -328,7 +330,8 @@ object layoutSectionSectionMod {
       __obj.asInstanceOf[SectionVariables]
     }
     
-    extension [Self <: SectionVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SectionVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }
@@ -345,7 +348,8 @@ object layoutSectionSectionMod {
       __obj.asInstanceOf[SectionVariablesDefaults]
     }
     
-    extension [Self <: SectionVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SectionVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }

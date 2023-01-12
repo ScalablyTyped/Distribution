@@ -28,7 +28,8 @@ object SparkSubmit {
     __obj.asInstanceOf[SparkSubmit]
   }
   
-  extension [Self <: SparkSubmit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparkSubmit] (val x: Self) extends AnyVal {
     
     inline def setEntryPoint(value: EntryPointPath): Self = StObject.set(x, "entryPoint", value.asInstanceOf[js.Any])
     

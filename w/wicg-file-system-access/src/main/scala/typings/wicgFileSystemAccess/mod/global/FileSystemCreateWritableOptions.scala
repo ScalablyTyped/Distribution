@@ -15,7 +15,8 @@ object FileSystemCreateWritableOptions {
     __obj.asInstanceOf[FileSystemCreateWritableOptions]
   }
   
-  extension [Self <: FileSystemCreateWritableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemCreateWritableOptions] (val x: Self) extends AnyVal {
     
     inline def setKeepExistingData(value: Boolean): Self = StObject.set(x, "keepExistingData", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object AdTechnologyProviders {
     __obj.asInstanceOf[AdTechnologyProviders]
   }
   
-  extension [Self <: AdTechnologyProviders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdTechnologyProviders] (val x: Self) extends AnyVal {
     
     inline def setDetectedGvlIds(value: js.Array[String]): Self = StObject.set(x, "detectedGvlIds", value.asInstanceOf[js.Any])
     

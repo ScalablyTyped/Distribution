@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[ClassicFormFields]
     }
     
-    extension [Self <: ClassicFormFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassicFormFields] (val x: Self) extends AnyVal {
       
       inline def `setBIRTHDAY[day]`(value: Double): Self = StObject.set(x, "BIRTHDAY[day]", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object mod {
       __obj.asInstanceOf[EmailFormFields]
     }
     
-    extension [Self <: EmailFormFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailFormFields] (val x: Self) extends AnyVal {
       
       inline def setEMAIL(value: String): Self = StObject.set(x, "EMAIL", value.asInstanceOf[js.Any])
     }
@@ -75,7 +77,8 @@ object mod {
       __obj.asInstanceOf[ErrorResponseArgs]
     }
     
-    extension [Self <: ErrorResponseArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorResponseArgs] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String | js.Error): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -102,7 +105,8 @@ object mod {
       __obj.asInstanceOf[NameFormFields]
     }
     
-    extension [Self <: NameFormFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameFormFields] (val x: Self) extends AnyVal {
       
       inline def setFNAME(value: String): Self = StObject.set(x, "FNAME", value.asInstanceOf[js.Any])
       
@@ -123,7 +127,8 @@ object mod {
       __obj.asInstanceOf[PendingArgs]
     }
     
-    extension [Self <: PendingArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PendingArgs] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: Null): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -146,7 +151,8 @@ object mod {
       __obj.asInstanceOf[Props[FormFields]]
     }
     
-    extension [Self <: Props[?], FormFields](x: Self & Props[FormFields]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?], FormFields] (val x: Self & Props[FormFields]) extends AnyVal {
       
       inline def setRender(value: /* hooks */ FormHooks[FormFields] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
@@ -185,7 +191,8 @@ object mod {
       __obj.asInstanceOf[SubscribeArg[FormFields]]
     }
     
-    extension [Self <: SubscribeArg[?], FormFields](x: Self & SubscribeArg[FormFields]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscribeArg[?], FormFields] (val x: Self & SubscribeArg[FormFields]) extends AnyVal {
       
       inline def setSubscribe(value: FormFields => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
@@ -206,7 +213,8 @@ object mod {
       __obj.asInstanceOf[SuccessResponseArgs]
     }
     
-    extension [Self <: SuccessResponseArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessResponseArgs] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

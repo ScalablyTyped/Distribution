@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Rect]
     }
     
-    extension [Self <: Rect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
       
       inline def setRect(value: PRect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
       

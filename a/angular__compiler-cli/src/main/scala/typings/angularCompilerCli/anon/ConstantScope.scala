@@ -17,7 +17,8 @@ object ConstantScope {
     __obj.asInstanceOf[ConstantScope[TConstantScope, TStatement]]
   }
   
-  extension [Self <: ConstantScope[?, ?], TConstantScope, TStatement](x: Self & (ConstantScope[TConstantScope, TStatement])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstantScope[?, ?], TConstantScope, TStatement] (val x: Self & (ConstantScope[TConstantScope, TStatement])) extends AnyVal {
     
     inline def setConstantScope(value: TConstantScope): Self = StObject.set(x, "constantScope", value.asInstanceOf[js.Any])
     

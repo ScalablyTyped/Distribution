@@ -59,7 +59,8 @@ object WhereClause {
     __obj.asInstanceOf[WhereClause]
   }
   
-  extension [Self <: WhereClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhereClause] (val x: Self) extends AnyVal {
     
     inline def setCalculateValue(value: Any => Any): Self = StObject.set(x, "calculateValue", js.Any.fromFunction1(value))
     

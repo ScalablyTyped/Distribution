@@ -49,7 +49,8 @@ object distCommonjsModulesTransitionTransitionGroupMod extends Shortcut {
       __obj.asInstanceOf[StrictTransitionGroupProps]
     }
     
-    extension [Self <: StrictTransitionGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictTransitionGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: SemanticTRANSITIONS | String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

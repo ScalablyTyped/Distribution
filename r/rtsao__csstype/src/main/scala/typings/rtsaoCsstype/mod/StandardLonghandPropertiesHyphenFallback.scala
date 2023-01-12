@@ -4560,7 +4560,8 @@ object StandardLonghandPropertiesHyphenFallback {
     __obj.asInstanceOf[StandardLonghandPropertiesHyphenFallback[TLength]]
   }
   
-  extension [Self <: StandardLonghandPropertiesHyphenFallback[?], TLength](x: Self & StandardLonghandPropertiesHyphenFallback[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardLonghandPropertiesHyphenFallback[?], TLength] (val x: Self & StandardLonghandPropertiesHyphenFallback[TLength]) extends AnyVal {
     
     inline def `setAlign-content`(value: AlignContentProperty | js.Array[AlignContentProperty]): Self = StObject.set(x, "align-content", value.asInstanceOf[js.Any])
     

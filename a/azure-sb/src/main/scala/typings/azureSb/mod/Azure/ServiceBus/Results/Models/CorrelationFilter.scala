@@ -32,7 +32,8 @@ object CorrelationFilter {
     __obj.asInstanceOf[CorrelationFilter]
   }
   
-  extension [Self <: CorrelationFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CorrelationFilter] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     

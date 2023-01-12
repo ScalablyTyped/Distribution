@@ -23,7 +23,8 @@ object typesInvalidFilePositionExceptionMod {
       __obj.asInstanceOf[InvalidFilePositionException]
     }
     
-    extension [Self <: InvalidFilePositionException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidFilePositionException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidFilePositionException

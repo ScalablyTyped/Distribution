@@ -17,7 +17,8 @@ object WebExtensionManifestWebAccessibleResourcesC2ItemType {
     __obj.asInstanceOf[WebExtensionManifestWebAccessibleResourcesC2ItemType]
   }
   
-  extension [Self <: WebExtensionManifestWebAccessibleResourcesC2ItemType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestWebAccessibleResourcesC2ItemType] (val x: Self) extends AnyVal {
     
     inline def setMatches(value: js.Array[MatchPatternRestricted]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     

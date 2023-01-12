@@ -20,7 +20,8 @@ object JQuerySerializeArrayElement {
     __obj.asInstanceOf[JQuerySerializeArrayElement]
   }
   
-  extension [Self <: JQuerySerializeArrayElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQuerySerializeArrayElement] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

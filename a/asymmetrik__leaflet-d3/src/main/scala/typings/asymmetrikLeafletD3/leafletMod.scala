@@ -53,7 +53,8 @@ object leafletMod {
         __obj.asInstanceOf[CompoundOptions]
       }
       
-      extension [Self <: CompoundOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CompoundOptions] (val x: Self) extends AnyVal {
         
         inline def setHandlers(value: js.Array[HexbinHoverHandler]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
         
@@ -61,7 +62,8 @@ object leafletMod {
       }
     }
     
-    extension [Self <: HexbinHoverHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HexbinHoverHandler] (val x: Self) extends AnyVal {
       
       inline def setMouseout(value: (HexbinLayer_, Any) => Unit): Self = StObject.set(x, "mouseout", js.Any.fromFunction2(value))
       
@@ -85,7 +87,8 @@ object leafletMod {
         __obj.asInstanceOf[ResizeScaleOptions]
       }
       
-      extension [Self <: ResizeScaleOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResizeScaleOptions] (val x: Self) extends AnyVal {
         
         inline def setRadiusScale(value: Double): Self = StObject.set(x, "radiusScale", value.asInstanceOf[js.Any])
       }
@@ -104,7 +107,8 @@ object leafletMod {
         __obj.asInstanceOf[TooltipOptions]
       }
       
-      extension [Self <: TooltipOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TooltipOptions] (val x: Self) extends AnyVal {
         
         inline def setTooltipContent(value: Any => String): Self = StObject.set(x, "tooltipContent", js.Any.fromFunction1(value))
       }
@@ -140,7 +144,8 @@ object leafletMod {
       __obj.asInstanceOf[HexbinLayerConfig]
     }
     
-    extension [Self <: HexbinLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HexbinLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setColorRange(value: js.Array[String]): Self = StObject.set(x, "colorRange", value.asInstanceOf[js.Any])
       
@@ -258,7 +263,8 @@ object leafletMod {
       __obj.asInstanceOf[PingLayerConfig]
     }
     
-    extension [Self <: PingLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PingLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

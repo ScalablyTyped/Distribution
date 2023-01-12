@@ -29,7 +29,8 @@ object MlStartTrainedModelDeploymentRequest {
     __obj.asInstanceOf[MlStartTrainedModelDeploymentRequest]
   }
   
-  extension [Self <: MlStartTrainedModelDeploymentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlStartTrainedModelDeploymentRequest] (val x: Self) extends AnyVal {
     
     inline def setCache_size(value: ByteSize): Self = StObject.set(x, "cache_size", value.asInstanceOf[js.Any])
     

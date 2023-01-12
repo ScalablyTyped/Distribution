@@ -18,7 +18,8 @@ object PrimeUpgradeUserstate {
     __obj.asInstanceOf[PrimeUpgradeUserstate]
   }
   
-  extension [Self <: PrimeUpgradeUserstate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrimeUpgradeUserstate] (val x: Self) extends AnyVal {
     
     inline def `setMessage-type`(value: primepaidupgrade): Self = StObject.set(x, "message-type", value.asInstanceOf[js.Any])
     

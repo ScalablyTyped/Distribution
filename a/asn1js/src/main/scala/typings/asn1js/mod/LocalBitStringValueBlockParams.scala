@@ -37,7 +37,8 @@ object LocalBitStringValueBlockParams {
     __obj.asInstanceOf[LocalBitStringValueBlockParams]
   }
   
-  extension [Self <: LocalBitStringValueBlockParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalBitStringValueBlockParams] (val x: Self) extends AnyVal {
     
     inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
     

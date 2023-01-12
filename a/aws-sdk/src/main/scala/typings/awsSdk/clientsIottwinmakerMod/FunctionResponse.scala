@@ -33,7 +33,8 @@ object FunctionResponse {
     __obj.asInstanceOf[FunctionResponse]
   }
   
-  extension [Self <: FunctionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionResponse] (val x: Self) extends AnyVal {
     
     inline def setImplementedBy(value: DataConnector): Self = StObject.set(x, "implementedBy", value.asInstanceOf[js.Any])
     

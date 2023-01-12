@@ -106,7 +106,8 @@ object distSrcModulesUiTopBlockTopBlockMod {
       __obj.asInstanceOf[IDependencies]
     }
     
-    extension [Self <: IDependencies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDependencies] (val x: Self) extends AnyVal {
       
       inline def setLiveIndicator(value: ILiveIndicator): Self = StObject.set(x, "liveIndicator", value.asInstanceOf[js.Any])
       

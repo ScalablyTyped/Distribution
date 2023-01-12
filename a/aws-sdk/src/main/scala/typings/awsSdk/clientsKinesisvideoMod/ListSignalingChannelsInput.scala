@@ -28,7 +28,8 @@ object ListSignalingChannelsInput {
     __obj.asInstanceOf[ListSignalingChannelsInput]
   }
   
-  extension [Self <: ListSignalingChannelsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSignalingChannelsInput] (val x: Self) extends AnyVal {
     
     inline def setChannelNameCondition(value: ChannelNameCondition): Self = StObject.set(x, "ChannelNameCondition", value.asInstanceOf[js.Any])
     

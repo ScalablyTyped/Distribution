@@ -86,7 +86,8 @@ object Representation {
     __obj.asInstanceOf[Representation]
   }
   
-  extension [Self <: Representation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Representation] (val x: Self) extends AnyVal {
     
     inline def setAdaptation(value: js.Object): Self = StObject.set(x, "adaptation", value.asInstanceOf[js.Any])
     

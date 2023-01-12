@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Classes]
     }
     
-    extension [Self <: Classes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Classes] (val x: Self) extends AnyVal {
       
       inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Force]
     }
     
-    extension [Self <: Force](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Force] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object anon {
       __obj.asInstanceOf[LockString]
     }
     
-    extension [Self <: LockString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LockString] (val x: Self) extends AnyVal {
       
       inline def setLockString(value: String): Self = StObject.set(x, "lockString", value.asInstanceOf[js.Any])
     }
@@ -117,7 +120,8 @@ object anon {
       __obj.asInstanceOf[ThisTypeNonNullableNodeHe]
     }
     
-    extension [Self <: ThisTypeNonNullableNodeHe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThisTypeNonNullableNodeHe] (val x: Self) extends AnyVal {
       
       inline def setExpressApp(value: Any): Self = StObject.set(x, "expressApp", value.asInstanceOf[js.Any])
       

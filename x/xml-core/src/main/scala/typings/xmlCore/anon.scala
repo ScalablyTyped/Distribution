@@ -68,7 +68,8 @@ object anon {
       __obj.asInstanceOf[XmlAttributeTypeanytypest]
     }
     
-    extension [Self <: XmlAttributeTypeanytypest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlAttributeTypeanytypest] (val x: Self) extends AnyVal {
       
       inline def setConverter(value: IConverter[Any]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
       
@@ -198,7 +199,8 @@ object anon {
       __obj.asInstanceOf[XmlChildElementTypeanytyp]
     }
     
-    extension [Self <: XmlChildElementTypeanytyp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlChildElementTypeanytyp] (val x: Self) extends AnyVal {
       
       inline def setConverter(value: IConverter[Any]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
       

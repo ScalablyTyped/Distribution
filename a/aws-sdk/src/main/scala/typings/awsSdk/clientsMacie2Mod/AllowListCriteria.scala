@@ -23,7 +23,8 @@ object AllowListCriteria {
     __obj.asInstanceOf[AllowListCriteria]
   }
   
-  extension [Self <: AllowListCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowListCriteria] (val x: Self) extends AnyVal {
     
     inline def setRegex(value: stringMin1Max512PatternSS): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     

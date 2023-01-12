@@ -40,7 +40,8 @@ object pageMod {
       __obj.asInstanceOf[PageConfig]
     }
     
-    extension [Self <: PageConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageConfig] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object pageMod {
       __obj.asInstanceOf[UrlParam]
     }
     
-    extension [Self <: UrlParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlParam] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

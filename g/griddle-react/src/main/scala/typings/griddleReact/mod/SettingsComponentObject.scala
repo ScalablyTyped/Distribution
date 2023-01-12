@@ -17,7 +17,8 @@ object SettingsComponentObject {
     __obj.asInstanceOf[SettingsComponentObject]
   }
   
-  extension [Self <: SettingsComponentObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettingsComponentObject] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: GriddleComponent[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

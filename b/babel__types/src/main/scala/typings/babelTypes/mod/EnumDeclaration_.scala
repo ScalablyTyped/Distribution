@@ -28,7 +28,8 @@ object EnumDeclaration_ {
     __obj.asInstanceOf[EnumDeclaration_]
   }
   
-  extension [Self <: EnumDeclaration_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumDeclaration_] (val x: Self) extends AnyVal {
     
     inline def setBody(value: EnumBooleanBody_ | EnumNumberBody_ | EnumStringBody_ | EnumSymbolBody_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

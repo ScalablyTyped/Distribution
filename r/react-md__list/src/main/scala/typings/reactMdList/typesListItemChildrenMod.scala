@@ -119,7 +119,8 @@ object typesListItemChildrenMod {
       __obj.asInstanceOf[ListItemChildrenProps]
     }
     
-    extension [Self <: ListItemChildrenProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemChildrenProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

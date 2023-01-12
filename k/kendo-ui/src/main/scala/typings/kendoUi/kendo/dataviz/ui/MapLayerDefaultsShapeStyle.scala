@@ -17,7 +17,8 @@ object MapLayerDefaultsShapeStyle {
     __obj.asInstanceOf[MapLayerDefaultsShapeStyle]
   }
   
-  extension [Self <: MapLayerDefaultsShapeStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapLayerDefaultsShapeStyle] (val x: Self) extends AnyVal {
     
     inline def setFill(value: MapLayerDefaultsShapeStyleFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

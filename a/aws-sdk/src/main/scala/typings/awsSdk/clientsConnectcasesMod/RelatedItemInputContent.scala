@@ -23,7 +23,8 @@ object RelatedItemInputContent {
     __obj.asInstanceOf[RelatedItemInputContent]
   }
   
-  extension [Self <: RelatedItemInputContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedItemInputContent] (val x: Self) extends AnyVal {
     
     inline def setComment(value: CommentContent): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

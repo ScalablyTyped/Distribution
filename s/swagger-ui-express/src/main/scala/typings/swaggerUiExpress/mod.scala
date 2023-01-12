@@ -284,7 +284,8 @@ object mod {
       __obj.asInstanceOf[SwaggerUiOptions]
     }
     
-    extension [Self <: SwaggerUiOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwaggerUiOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomCss(value: String): Self = StObject.set(x, "customCss", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ReplaceableItem {
     __obj.asInstanceOf[ReplaceableItem]
   }
   
-  extension [Self <: ReplaceableItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceableItem] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: ReplaceableAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

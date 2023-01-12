@@ -21,7 +21,8 @@ object PersistenceOptionsFlipped {
     __obj.asInstanceOf[PersistenceOptionsFlipped]
   }
   
-  extension [Self <: PersistenceOptionsFlipped](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistenceOptionsFlipped] (val x: Self) extends AnyVal {
     
     inline def set0(value: File): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

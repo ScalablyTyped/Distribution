@@ -18,7 +18,8 @@ object Ipv6CidrBlock {
     __obj.asInstanceOf[Ipv6CidrBlock]
   }
   
-  extension [Self <: Ipv6CidrBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ipv6CidrBlock] (val x: Self) extends AnyVal {
     
     inline def setIpv6CidrBlock(value: String): Self = StObject.set(x, "Ipv6CidrBlock", value.asInstanceOf[js.Any])
     

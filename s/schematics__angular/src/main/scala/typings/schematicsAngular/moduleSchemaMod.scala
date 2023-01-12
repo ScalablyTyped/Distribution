@@ -84,7 +84,8 @@ object moduleSchemaMod {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def setCommonModule(value: Boolean): Self = StObject.set(x, "commonModule", value.asInstanceOf[js.Any])
       

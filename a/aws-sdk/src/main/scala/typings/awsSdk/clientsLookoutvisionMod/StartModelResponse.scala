@@ -18,7 +18,8 @@ object StartModelResponse {
     __obj.asInstanceOf[StartModelResponse]
   }
   
-  extension [Self <: StartModelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartModelResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: ModelHostingStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

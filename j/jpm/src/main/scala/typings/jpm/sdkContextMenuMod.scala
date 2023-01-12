@@ -41,7 +41,8 @@ object sdkContextMenuMod {
     @js.native
     def apply(options: AccessKey): Item = js.native
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setContentScript(value: String | js.Array[String]): Self = StObject.set(x, "contentScript", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object sdkContextMenuMod {
     @js.native
     def apply(options: ContentScript): Menu = js.native
     
-    extension [Self <: Menu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Menu] (val x: Self) extends AnyVal {
       
       inline def setAddItem(value: ItemMenuSeparator => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction1(value))
       
@@ -195,7 +197,8 @@ object sdkContextMenuMod {
     @js.native
     def apply(): Separator = js.native
     
-    extension [Self <: Separator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Separator] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

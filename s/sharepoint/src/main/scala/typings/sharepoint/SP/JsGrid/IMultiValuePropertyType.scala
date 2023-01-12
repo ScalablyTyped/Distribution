@@ -41,7 +41,8 @@ object IMultiValuePropertyType {
     __obj.asInstanceOf[IMultiValuePropertyType]
   }
   
-  extension [Self <: IMultiValuePropertyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMultiValuePropertyType] (val x: Self) extends AnyVal {
     
     inline def setBMultiValue(value: Boolean): Self = StObject.set(x, "bMultiValue", value.asInstanceOf[js.Any])
     

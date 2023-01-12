@@ -15,7 +15,8 @@ object AuthenticationResponseDetails {
     __obj.asInstanceOf[AuthenticationResponseDetails]
   }
   
-  extension [Self <: AuthenticationResponseDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationResponseDetails] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

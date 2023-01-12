@@ -68,7 +68,8 @@ object AuditFinding {
     __obj.asInstanceOf[AuditFinding]
   }
   
-  extension [Self <: AuditFinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditFinding] (val x: Self) extends AnyVal {
     
     inline def setCheckName(value: AuditCheckName): Self = StObject.set(x, "checkName", value.asInstanceOf[js.Any])
     

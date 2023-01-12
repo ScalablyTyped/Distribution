@@ -85,7 +85,8 @@ object BarSize {
     __obj.asInstanceOf[BarSize]
   }
   
-  extension [Self <: BarSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarSize] (val x: Self) extends AnyVal {
     
     inline def setBarSize(value: Double): Self = StObject.set(x, "barSize", value.asInstanceOf[js.Any])
     

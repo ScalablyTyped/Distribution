@@ -35,7 +35,8 @@ object GoogleApiOAuth2TokenObject {
     __obj.asInstanceOf[GoogleApiOAuth2TokenObject]
   }
   
-  extension [Self <: GoogleApiOAuth2TokenObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiOAuth2TokenObject] (val x: Self) extends AnyVal {
     
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     

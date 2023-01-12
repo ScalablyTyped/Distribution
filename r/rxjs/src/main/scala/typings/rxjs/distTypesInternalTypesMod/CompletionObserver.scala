@@ -23,7 +23,8 @@ object CompletionObserver {
     __obj.asInstanceOf[CompletionObserver[T]]
   }
   
-  extension [Self <: CompletionObserver[?], T](x: Self & CompletionObserver[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionObserver[?], T] (val x: Self & CompletionObserver[T]) extends AnyVal {
     
     inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     

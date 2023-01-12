@@ -17,7 +17,8 @@ object DrawingLimitOptions {
     __obj.asInstanceOf[DrawingLimitOptions]
   }
   
-  extension [Self <: DrawingLimitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawingLimitOptions] (val x: Self) extends AnyVal {
     
     inline def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

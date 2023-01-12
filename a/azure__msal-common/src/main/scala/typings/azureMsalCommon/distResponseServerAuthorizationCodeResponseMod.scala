@@ -37,7 +37,8 @@ object distResponseServerAuthorizationCodeResponseMod {
       __obj.asInstanceOf[ServerAuthorizationCodeResponse]
     }
     
-    extension [Self <: ServerAuthorizationCodeResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerAuthorizationCodeResponse] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       

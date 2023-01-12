@@ -56,7 +56,8 @@ object BootstrapClientTreeView {
     __obj.asInstanceOf[BootstrapClientTreeView]
   }
   
-  extension [Self <: BootstrapClientTreeView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientTreeView] (val x: Self) extends AnyVal {
     
     inline def setSetSelectedNode(value: BootstrapClientTreeViewNode => Unit): Self = StObject.set(x, "SetSelectedNode", js.Any.fromFunction1(value))
   }

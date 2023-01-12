@@ -24,7 +24,8 @@ object NewStreamMessage {
     __obj.asInstanceOf[NewStreamMessage]
   }
   
-  extension [Self <: NewStreamMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewStreamMessage] (val x: Self) extends AnyVal {
     
     inline def setData(value: Uint8ArrayList): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

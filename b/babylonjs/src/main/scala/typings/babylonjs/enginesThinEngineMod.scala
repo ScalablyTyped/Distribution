@@ -4653,7 +4653,8 @@ object enginesThinEngineMod {
       __obj.asInstanceOf[EngineOptions]
     }
     
-    extension [Self <: EngineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EngineOptions] (val x: Self) extends AnyVal {
       
       inline def setAdaptToDeviceRatio(value: Boolean): Self = StObject.set(x, "adaptToDeviceRatio", value.asInstanceOf[js.Any])
       
@@ -4735,7 +4736,8 @@ object enginesThinEngineMod {
       __obj.asInstanceOf[HostInformation]
     }
     
-    extension [Self <: HostInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostInformation] (val x: Self) extends AnyVal {
       
       inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
     }
@@ -4756,7 +4758,8 @@ object enginesThinEngineMod {
       __obj.asInstanceOf[ISceneLike]
     }
     
-    extension [Self <: ISceneLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISceneLike] (val x: Self) extends AnyVal {
       
       inline def setAddPendingData(value: Any => Unit): Self = StObject.set(x, "addPendingData", js.Any.fromFunction1(value))
       

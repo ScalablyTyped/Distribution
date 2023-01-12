@@ -29,7 +29,8 @@ object PartialStyleRulesCardActiFocusHighlight {
     __obj.asInstanceOf[PartialStyleRulesCardActiFocusHighlight]
   }
   
-  extension [Self <: PartialStyleRulesCardActiFocusHighlight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesCardActiFocusHighlight] (val x: Self) extends AnyVal {
     
     inline def setFocusHighlight(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

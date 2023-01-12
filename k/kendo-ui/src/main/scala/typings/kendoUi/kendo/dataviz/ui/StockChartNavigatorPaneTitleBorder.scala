@@ -19,7 +19,8 @@ object StockChartNavigatorPaneTitleBorder {
     __obj.asInstanceOf[StockChartNavigatorPaneTitleBorder]
   }
   
-  extension [Self <: StockChartNavigatorPaneTitleBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartNavigatorPaneTitleBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

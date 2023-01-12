@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[ClassName]
     }
     
-    extension [Self <: ClassName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     }
@@ -53,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Fill]
     }
     
-    extension [Self <: Fill](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fill] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -78,7 +81,8 @@ object anon {
       __obj.asInstanceOf[FontFamily]
     }
     
-    extension [Self <: FontFamily](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontFamily] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

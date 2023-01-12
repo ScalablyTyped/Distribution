@@ -21,7 +21,8 @@ object RgbaAnimatedValue {
     __obj.asInstanceOf[RgbaAnimatedValue]
   }
   
-  extension [Self <: RgbaAnimatedValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RgbaAnimatedValue] (val x: Self) extends AnyVal {
     
     inline def setA(value: AnimatedValue): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

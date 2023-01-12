@@ -17,7 +17,8 @@ object FileAsset {
     __obj.asInstanceOf[FileAsset]
   }
   
-  extension [Self <: FileAsset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileAsset] (val x: Self) extends AnyVal {
     
     inline def setDirPath(value: String): Self = StObject.set(x, "dirPath", value.asInstanceOf[js.Any])
     

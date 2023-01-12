@@ -41,7 +41,8 @@ object distTypesArcShapeMod {
       __obj.asInstanceOf[ArcShapeProps[Datum]]
     }
     
-    extension [Self <: ArcShapeProps[?], Datum /* <: DatumWithArcAndColor */](x: Self & ArcShapeProps[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcShapeProps[?], Datum /* <: DatumWithArcAndColor */] (val x: Self & ArcShapeProps[Datum]) extends AnyVal {
       
       inline def setDatum(value: Datum): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
       

@@ -127,7 +127,8 @@ object popoverPopoverMod {
       __obj.asInstanceOf[PopoverActions]
     }
     
-    extension [Self <: PopoverActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverActions] (val x: Self) extends AnyVal {
       
       inline def setUpdatePosition(value: () => Unit): Self = StObject.set(x, "updatePosition", js.Any.fromFunction0(value))
     }
@@ -158,7 +159,8 @@ object popoverPopoverMod {
       __obj.asInstanceOf[PopoverOrigin]
     }
     
-    extension [Self <: PopoverOrigin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverOrigin] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: left | center | right | Double): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object popoverPopoverMod {
       __obj.asInstanceOf[PopoverPosition]
     }
     
-    extension [Self <: PopoverPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverPosition] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -741,7 +744,8 @@ object popoverPopoverMod {
       __obj.asInstanceOf[PopoverProps]
     }
     
-    extension [Self <: PopoverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

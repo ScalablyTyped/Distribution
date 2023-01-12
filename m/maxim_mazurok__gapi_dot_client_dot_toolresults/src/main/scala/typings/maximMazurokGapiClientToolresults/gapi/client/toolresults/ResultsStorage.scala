@@ -19,7 +19,8 @@ object ResultsStorage {
     __obj.asInstanceOf[ResultsStorage]
   }
   
-  extension [Self <: ResultsStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultsStorage] (val x: Self) extends AnyVal {
     
     inline def setResultsStoragePath(value: FileReference): Self = StObject.set(x, "resultsStoragePath", value.asInstanceOf[js.Any])
     

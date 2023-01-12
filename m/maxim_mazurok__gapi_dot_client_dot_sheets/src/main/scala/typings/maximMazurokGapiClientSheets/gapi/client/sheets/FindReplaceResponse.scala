@@ -31,7 +31,8 @@ object FindReplaceResponse {
     __obj.asInstanceOf[FindReplaceResponse]
   }
   
-  extension [Self <: FindReplaceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindReplaceResponse] (val x: Self) extends AnyVal {
     
     inline def setFormulasChanged(value: Double): Self = StObject.set(x, "formulasChanged", value.asInstanceOf[js.Any])
     

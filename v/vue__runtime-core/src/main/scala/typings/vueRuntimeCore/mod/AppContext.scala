@@ -33,7 +33,8 @@ object AppContext {
     __obj.asInstanceOf[AppContext]
   }
   
-  extension [Self <: AppContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppContext] (val x: Self) extends AnyVal {
     
     inline def setApp(value: App[Any]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

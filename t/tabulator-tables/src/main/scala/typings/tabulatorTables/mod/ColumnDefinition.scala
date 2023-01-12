@@ -394,7 +394,8 @@ object ColumnDefinition {
     __obj.asInstanceOf[ColumnDefinition]
   }
   
-  extension [Self <: ColumnDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnDefinition] (val x: Self) extends AnyVal {
     
     inline def setAccessor(
       value: (/* value */ Any, /* data */ Any, /* type */ data | download | clipboard, /* AccessorParams */ Any, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => Any

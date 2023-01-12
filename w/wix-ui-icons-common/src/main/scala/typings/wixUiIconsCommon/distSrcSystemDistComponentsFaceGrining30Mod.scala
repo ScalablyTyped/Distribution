@@ -27,7 +27,8 @@ object distSrcSystemDistComponentsFaceGrining30Mod extends Shortcut {
       __obj.asInstanceOf[FaceGrining30Props]
     }
     
-    extension [Self <: FaceGrining30Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaceGrining30Props] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

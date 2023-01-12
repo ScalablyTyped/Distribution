@@ -23,7 +23,8 @@ object DescribeInstancesOutput {
     __obj.asInstanceOf[DescribeInstancesOutput]
   }
   
-  extension [Self <: DescribeInstancesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInstancesOutput] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: InstanceList): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     

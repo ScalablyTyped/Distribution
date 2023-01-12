@@ -22,7 +22,8 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1BuiltImage {
     __obj.asInstanceOf[ContaineranalysisGoogleDevtoolsCloudbuildV1BuiltImage]
   }
   
-  extension [Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1BuiltImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1BuiltImage] (val x: Self) extends AnyVal {
     
     inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     

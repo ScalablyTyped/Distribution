@@ -18,7 +18,8 @@ object DescribeDataIngestionJobRequest {
     __obj.asInstanceOf[DescribeDataIngestionJobRequest]
   }
   
-  extension [Self <: DescribeDataIngestionJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDataIngestionJobRequest] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: IngestionJobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }

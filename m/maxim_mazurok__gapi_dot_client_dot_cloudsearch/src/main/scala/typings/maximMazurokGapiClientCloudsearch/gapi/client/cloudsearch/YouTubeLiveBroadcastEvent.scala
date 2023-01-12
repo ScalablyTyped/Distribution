@@ -22,7 +22,8 @@ object YouTubeLiveBroadcastEvent {
     __obj.asInstanceOf[YouTubeLiveBroadcastEvent]
   }
   
-  extension [Self <: YouTubeLiveBroadcastEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YouTubeLiveBroadcastEvent] (val x: Self) extends AnyVal {
     
     inline def setBroadcastId(value: String): Self = StObject.set(x, "broadcastId", value.asInstanceOf[js.Any])
     

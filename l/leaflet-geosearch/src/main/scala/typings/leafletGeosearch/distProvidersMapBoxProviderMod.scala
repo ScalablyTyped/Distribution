@@ -35,7 +35,8 @@ object distProvidersMapBoxProviderMod {
       __obj.asInstanceOf[MapBoxProviderOptions]
     }
     
-    extension [Self <: MapBoxProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapBoxProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setReverseUrl(value: String): Self = StObject.set(x, "reverseUrl", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object distProvidersMapBoxProviderMod {
       __obj.asInstanceOf[RawResult]
     }
     
-    extension [Self <: RawResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawResult] (val x: Self) extends AnyVal {
       
       inline def setBbox(value: js.Tuple4[String, String, String, String]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object distProvidersMapBoxProviderMod {
       __obj.asInstanceOf[RequestResult]
     }
     
-    extension [Self <: RequestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestResult] (val x: Self) extends AnyVal {
       
       inline def setFeatures(value: js.Array[RawResult]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       

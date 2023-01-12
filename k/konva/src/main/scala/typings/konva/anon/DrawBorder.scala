@@ -31,7 +31,8 @@ object DrawBorder {
     __obj.asInstanceOf[DrawBorder]
   }
   
-  extension [Self <: DrawBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawBorder] (val x: Self) extends AnyVal {
     
     inline def setDrawBorder(value: Boolean): Self = StObject.set(x, "drawBorder", value.asInstanceOf[js.Any])
     

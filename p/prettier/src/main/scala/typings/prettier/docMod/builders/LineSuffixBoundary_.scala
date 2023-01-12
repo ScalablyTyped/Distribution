@@ -19,7 +19,8 @@ object LineSuffixBoundary_ {
     __obj.asInstanceOf[LineSuffixBoundary_]
   }
   
-  extension [Self <: LineSuffixBoundary_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineSuffixBoundary_] (val x: Self) extends AnyVal {
     
     inline def setType(value: `line-suffix-boundary`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

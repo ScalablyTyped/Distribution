@@ -15,7 +15,8 @@ object Mutation {
     __obj.asInstanceOf[Mutation]
   }
   
-  extension [Self <: Mutation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mutation] (val x: Self) extends AnyVal {
     
     inline def setMutation(value: () => ActiveBrushes): Self = StObject.set(x, "mutation", js.Any.fromFunction0(value))
   }

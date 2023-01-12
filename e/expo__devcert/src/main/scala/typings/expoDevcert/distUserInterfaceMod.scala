@@ -39,7 +39,8 @@ object distUserInterfaceMod extends Shortcut {
       __obj.asInstanceOf[UserInterface]
     }
     
-    extension [Self <: UserInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserInterface] (val x: Self) extends AnyVal {
       
       inline def setCloseFirefoxBeforeContinuing(value: () => js.Promise[Unit]): Self = StObject.set(x, "closeFirefoxBeforeContinuing", js.Any.fromFunction0(value))
       

@@ -56,7 +56,8 @@ object JSSpec {
       __obj.asInstanceOf[ContextOptions]
     }
     
-    extension [Self <: ContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextOptions] (val x: Self) extends AnyVal {
       
       inline def setRandom(value: Boolean): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object JSSpec {
       __obj.asInstanceOf[ExampleOptions]
     }
     
-    extension [Self <: ExampleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExampleOptions] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

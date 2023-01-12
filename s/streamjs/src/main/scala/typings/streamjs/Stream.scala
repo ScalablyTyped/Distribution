@@ -182,7 +182,8 @@ object Stream {
       __obj.asInstanceOf[Collector[T]]
     }
     
-    extension [Self <: Collector[?], T](x: Self & Collector[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Collector[?], T] (val x: Self & Collector[T]) extends AnyVal {
       
       inline def setAccumulator(value: (T, T) => T): Self = StObject.set(x, "accumulator", js.Any.fromFunction2(value))
       
@@ -213,7 +214,8 @@ object Stream {
       __obj.asInstanceOf[Iterator[T]]
     }
     
-    extension [Self <: Iterator[?], T](x: Self & Iterator[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Iterator[?], T] (val x: Self & Iterator[T]) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -236,7 +238,8 @@ object Stream {
       __obj.asInstanceOf[JoinOptions]
     }
     
-    extension [Self <: JoinOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JoinOptions] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
@@ -285,7 +288,8 @@ object Stream {
       __obj.asInstanceOf[Optional[T]]
     }
     
-    extension [Self <: Optional[?], T](x: Self & Optional[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optional[?], T] (val x: Self & Optional[T]) extends AnyVal {
       
       inline def setFilter(value: js.Function1[/* elem */ T, Boolean] => Optional[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

@@ -21,7 +21,8 @@ object MapContextEvent {
     __obj.asInstanceOf[MapContextEvent]
   }
   
-  extension [Self <: MapContextEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapContextEvent] (val x: Self) extends AnyVal {
     
     inline def setOriginalEvent(value: WebGLContextEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     

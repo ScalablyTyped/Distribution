@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsFullWidthStripBoldMod extends 
       __obj.asInstanceOf[FullWidthStripBoldProps]
     }
     
-    extension [Self <: FullWidthStripBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullWidthStripBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object ClaimResponseNote {
     __obj.asInstanceOf[ClaimResponseNote]
   }
   
-  extension [Self <: ClaimResponseNote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimResponseNote] (val x: Self) extends AnyVal {
     
     inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     

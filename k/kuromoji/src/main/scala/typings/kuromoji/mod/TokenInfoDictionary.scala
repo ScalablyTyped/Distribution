@@ -39,7 +39,8 @@ object TokenInfoDictionary {
     __obj.asInstanceOf[TokenInfoDictionary]
   }
   
-  extension [Self <: TokenInfoDictionary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenInfoDictionary] (val x: Self) extends AnyVal {
     
     inline def setAddMapping(value: (Double, Double) => Unit): Self = StObject.set(x, "addMapping", js.Any.fromFunction2(value))
     

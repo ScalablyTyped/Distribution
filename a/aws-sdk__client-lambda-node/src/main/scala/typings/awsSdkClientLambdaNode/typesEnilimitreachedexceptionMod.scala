@@ -21,7 +21,8 @@ object typesEnilimitreachedexceptionMod {
       __obj.asInstanceOf[ENILimitReachedException]
     }
     
-    extension [Self <: ENILimitReachedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ENILimitReachedException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.ENILimitReachedException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object typesEnilimitreachedexceptionMod {
       __obj.asInstanceOf[ENILimitReachedExceptionDetails]
     }
     
-    extension [Self <: ENILimitReachedExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ENILimitReachedExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

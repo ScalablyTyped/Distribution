@@ -48,7 +48,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[FlattenOptions]
       }
       
-      extension [Self <: FlattenOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FlattenOptions] (val x: Self) extends AnyVal {
         
         inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
         
@@ -87,7 +88,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[UnflattenOptions]
       }
       
-      extension [Self <: UnflattenOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UnflattenOptions] (val x: Self) extends AnyVal {
         
         inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
         

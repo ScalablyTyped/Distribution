@@ -20,7 +20,8 @@ object CalloutProps {
     __obj.asInstanceOf[CalloutProps]
   }
   
-  extension [Self <: CalloutProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalloutProps] (val x: Self) extends AnyVal {
     
     inline def setCalloutProps(value: DirectionalHint): Self = StObject.set(x, "calloutProps", value.asInstanceOf[js.Any])
   }

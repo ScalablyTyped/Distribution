@@ -110,7 +110,8 @@ object QueryLambdaVersion {
     /* 1 */ val INVALIDSQL: typings.rockset.distCodegenApiMod.QueryLambdaVersion.StateEnum.INVALIDSQL & Double = js.native
   }
   
-  extension [Self <: QueryLambdaVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryLambdaVersion] (val x: Self) extends AnyVal {
     
     inline def setCollections(value: js.Array[String]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     

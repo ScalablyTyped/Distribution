@@ -21,7 +21,8 @@ object ISVGPathSegMovetoRel {
     __obj.asInstanceOf[ISVGPathSegMovetoRel]
   }
   
-  extension [Self <: ISVGPathSegMovetoRel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISVGPathSegMovetoRel] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotISVGPathSegMovetoRel_typekey(value: ISVGPathSegMovetoRel): Self = StObject.set(x, "MSHTML.ISVGPathSegMovetoRel_typekey", value.asInstanceOf[js.Any])
     

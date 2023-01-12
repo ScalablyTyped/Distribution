@@ -21,7 +21,8 @@ object PhononDeviceObject {
     __obj.asInstanceOf[PhononDeviceObject]
   }
   
-  extension [Self <: PhononDeviceObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhononDeviceObject] (val x: Self) extends AnyVal {
     
     inline def setANDROID(value: String): Self = StObject.set(x, "ANDROID", value.asInstanceOf[js.Any])
     

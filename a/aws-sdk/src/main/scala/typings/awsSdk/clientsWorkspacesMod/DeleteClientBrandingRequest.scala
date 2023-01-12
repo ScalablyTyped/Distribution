@@ -23,7 +23,8 @@ object DeleteClientBrandingRequest {
     __obj.asInstanceOf[DeleteClientBrandingRequest]
   }
   
-  extension [Self <: DeleteClientBrandingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteClientBrandingRequest] (val x: Self) extends AnyVal {
     
     inline def setPlatforms(value: ClientDeviceTypeList): Self = StObject.set(x, "Platforms", value.asInstanceOf[js.Any])
     

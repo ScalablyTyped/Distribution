@@ -31,7 +31,8 @@ object SceneFilterProperties {
     __obj.asInstanceOf[SceneFilterProperties]
   }
   
-  extension [Self <: SceneFilterProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneFilterProperties] (val x: Self) extends AnyVal {
     
     inline def setGeometries(value: CollectionProperties[Any]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object WebUIToastNotificationActivatedEventArgs {
     __obj.asInstanceOf[WebUIToastNotificationActivatedEventArgs]
   }
   
-  extension [Self <: WebUIToastNotificationActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebUIToastNotificationActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     

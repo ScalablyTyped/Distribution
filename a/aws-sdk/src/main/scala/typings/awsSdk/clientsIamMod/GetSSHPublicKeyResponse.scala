@@ -18,7 +18,8 @@ object GetSSHPublicKeyResponse {
     __obj.asInstanceOf[GetSSHPublicKeyResponse]
   }
   
-  extension [Self <: GetSSHPublicKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSSHPublicKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setSSHPublicKey(value: SSHPublicKey): Self = StObject.set(x, "SSHPublicKey", value.asInstanceOf[js.Any])
     

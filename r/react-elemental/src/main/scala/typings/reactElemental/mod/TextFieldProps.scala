@@ -88,7 +88,8 @@ object TextFieldProps {
     __obj.asInstanceOf[TextFieldProps]
   }
   
-  extension [Self <: TextFieldProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFieldProps] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

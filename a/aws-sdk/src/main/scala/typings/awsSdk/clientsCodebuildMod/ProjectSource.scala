@@ -64,7 +64,8 @@ object ProjectSource {
     __obj.asInstanceOf[ProjectSource]
   }
   
-  extension [Self <: ProjectSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectSource] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: SourceAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

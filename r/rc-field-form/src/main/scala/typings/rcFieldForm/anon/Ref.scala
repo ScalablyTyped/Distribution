@@ -16,7 +16,8 @@ object Ref {
     __obj.asInstanceOf[Ref[Values]]
   }
   
-  extension [Self <: Ref[?], Values](x: Self & Ref[Values]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ref[?], Values] (val x: Self & Ref[Values]) extends AnyVal {
     
     inline def setRef(value: typings.react.mod.Ref[FormInstance[Values]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

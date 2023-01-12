@@ -18,7 +18,8 @@ object GetLogRecordResponse {
     __obj.asInstanceOf[GetLogRecordResponse]
   }
   
-  extension [Self <: GetLogRecordResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLogRecordResponse] (val x: Self) extends AnyVal {
     
     inline def setLogRecord(value: LogRecord): Self = StObject.set(x, "logRecord", value.asInstanceOf[js.Any])
     

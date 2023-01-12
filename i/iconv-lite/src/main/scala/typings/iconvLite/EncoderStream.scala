@@ -18,7 +18,8 @@ object EncoderStream {
     __obj.asInstanceOf[EncoderStream]
   }
   
-  extension [Self <: EncoderStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncoderStream] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: () => js.UndefOr[Buffer]): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     

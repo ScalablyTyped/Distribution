@@ -18,7 +18,8 @@ object DiffMode {
     __obj.asInstanceOf[DiffMode]
   }
   
-  extension [Self <: DiffMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiffMode] (val x: Self) extends AnyVal {
     
     inline def setDiffMode(value: DIFF_MODES): Self = StObject.set(x, "diffMode", value.asInstanceOf[js.Any])
     

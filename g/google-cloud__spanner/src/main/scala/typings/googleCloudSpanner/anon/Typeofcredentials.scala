@@ -54,7 +54,8 @@ object Typeofcredentials {
     __obj.asInstanceOf[Typeofcredentials]
   }
   
-  extension [Self <: Typeofcredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofcredentials] (val x: Self) extends AnyVal {
     
     inline def setCombineCallCredentials(value: (CallCredentials, /* repeated */ CallCredentials) => CallCredentials): Self = StObject.set(x, "combineCallCredentials", js.Any.fromFunction2(value))
     

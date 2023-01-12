@@ -15,7 +15,8 @@ object AnalysisCompleted {
     __obj.asInstanceOf[AnalysisCompleted]
   }
   
-  extension [Self <: AnalysisCompleted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisCompleted] (val x: Self) extends AnyVal {
     
     inline def setAnalysisType(value: js.Array[String]): Self = StObject.set(x, "analysisType", value.asInstanceOf[js.Any])
     

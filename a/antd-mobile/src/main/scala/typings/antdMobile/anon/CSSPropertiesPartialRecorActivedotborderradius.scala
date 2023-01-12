@@ -9983,7 +9983,8 @@ object CSSPropertiesPartialRecorActivedotborderradius {
     __obj.asInstanceOf[CSSPropertiesPartialRecorActivedotborderradius]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorActivedotborderradius](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorActivedotborderradius] (val x: Self) extends AnyVal {
     
     inline def `set--active-dot-border-radius`(value: String): Self = StObject.set(x, "--active-dot-border-radius", value.asInstanceOf[js.Any])
     

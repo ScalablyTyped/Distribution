@@ -39,7 +39,8 @@ object libIdTokenMod {
       __obj.asInstanceOf[IdToken]
     }
     
-    extension [Self <: IdToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdToken] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: LineItem): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object libIdTokenMod {
       __obj.asInstanceOf[UserInfo]
     }
     
-    extension [Self <: UserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

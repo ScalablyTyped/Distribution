@@ -38,7 +38,8 @@ object XWebDAVCommandEnvironment {
     __obj.asInstanceOf[XWebDAVCommandEnvironment]
   }
   
-  extension [Self <: XWebDAVCommandEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XWebDAVCommandEnvironment] (val x: Self) extends AnyVal {
     
     inline def setGetUserRequestHeaders(value: (String, WebDAVHTTPMethod) => SafeArray[StringPair]): Self = StObject.set(x, "getUserRequestHeaders", js.Any.fromFunction2(value))
   }

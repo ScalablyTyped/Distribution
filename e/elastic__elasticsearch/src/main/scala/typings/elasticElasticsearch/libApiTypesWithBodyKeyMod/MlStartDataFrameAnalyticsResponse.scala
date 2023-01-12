@@ -17,7 +17,8 @@ object MlStartDataFrameAnalyticsResponse {
     __obj.asInstanceOf[MlStartDataFrameAnalyticsResponse]
   }
   
-  extension [Self <: MlStartDataFrameAnalyticsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlStartDataFrameAnalyticsResponse] (val x: Self) extends AnyVal {
     
     inline def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     

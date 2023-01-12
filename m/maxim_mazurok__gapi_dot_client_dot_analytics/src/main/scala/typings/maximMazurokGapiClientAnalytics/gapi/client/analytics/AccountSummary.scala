@@ -28,7 +28,8 @@ object AccountSummary {
     __obj.asInstanceOf[AccountSummary]
   }
   
-  extension [Self <: AccountSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountSummary] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

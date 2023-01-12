@@ -21,7 +21,8 @@ object ICategoryAxis {
     __obj.asInstanceOf[ICategoryAxis]
   }
   
-  extension [Self <: ICategoryAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICategoryAxis] (val x: Self) extends AnyVal {
     
     inline def setCalculateCategoryCount(value: Boolean): Self = StObject.set(x, "calculateCategoryCount", value.asInstanceOf[js.Any])
     

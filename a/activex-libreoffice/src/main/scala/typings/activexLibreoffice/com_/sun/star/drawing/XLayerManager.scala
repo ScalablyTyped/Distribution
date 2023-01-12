@@ -62,7 +62,8 @@ object XLayerManager {
     __obj.asInstanceOf[XLayerManager]
   }
   
-  extension [Self <: XLayerManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLayerManager] (val x: Self) extends AnyVal {
     
     inline def setAttachShapeToLayer(value: (XShape, XLayer) => Unit): Self = StObject.set(x, "attachShapeToLayer", js.Any.fromFunction2(value))
     

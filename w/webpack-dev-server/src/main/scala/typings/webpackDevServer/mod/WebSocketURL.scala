@@ -25,7 +25,8 @@ object WebSocketURL {
     __obj.asInstanceOf[WebSocketURL]
   }
   
-  extension [Self <: WebSocketURL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSocketURL] (val x: Self) extends AnyVal {
     
     inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object OnHeaderCellRenderedEventArgs {
     __obj.asInstanceOf[OnHeaderCellRenderedEventArgs[T]]
   }
   
-  extension [Self <: OnHeaderCellRenderedEventArgs[?], T /* <: SlickData */](x: Self & OnHeaderCellRenderedEventArgs[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnHeaderCellRenderedEventArgs[?], T /* <: SlickData */] (val x: Self & OnHeaderCellRenderedEventArgs[T]) extends AnyVal {
     
     inline def setColumn(value: Column[T]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

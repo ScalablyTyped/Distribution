@@ -42,7 +42,8 @@ object UpdateFileSystemRequest {
     __obj.asInstanceOf[UpdateFileSystemRequest]
   }
   
-  extension [Self <: UpdateFileSystemRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFileSystemRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

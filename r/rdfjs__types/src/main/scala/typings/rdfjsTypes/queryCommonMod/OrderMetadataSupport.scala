@@ -16,7 +16,8 @@ object OrderMetadataSupport {
     __obj.asInstanceOf[OrderMetadataSupport]
   }
   
-  extension [Self <: OrderMetadataSupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderMetadataSupport] (val x: Self) extends AnyVal {
     
     inline def setOrder(value: `true`): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
   }

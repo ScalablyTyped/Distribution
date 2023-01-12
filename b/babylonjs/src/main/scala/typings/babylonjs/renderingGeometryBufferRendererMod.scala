@@ -294,7 +294,8 @@ object renderingGeometryBufferRendererMod {
       __obj.asInstanceOf[ISavedTransformationMatrix]
     }
     
-    extension [Self <: ISavedTransformationMatrix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISavedTransformationMatrix] (val x: Self) extends AnyVal {
       
       inline def setViewProjection(value: Matrix): Self = StObject.set(x, "viewProjection", value.asInstanceOf[js.Any])
       

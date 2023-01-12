@@ -96,7 +96,8 @@ object mod {
       __obj.asInstanceOf[Client]
     }
     
-    extension [Self <: Client](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
       
       inline def setCookies(value: Cookies): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object mod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setBasic_auth(value: Pass): Self = StObject.set(x, "basic_auth", value.asInstanceOf[js.Any])
       
@@ -205,7 +207,8 @@ object mod {
       __obj.asInstanceOf[DateFormatterOptions]
     }
     
-    extension [Self <: DateFormatterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateFormatterOptions] (val x: Self) extends AnyVal {
       
       inline def setColons(value: Boolean): Self = StObject.set(x, "colons", value.asInstanceOf[js.Any])
       
@@ -244,7 +247,8 @@ object mod {
       __obj.asInstanceOf[HeadersProcessor]
     }
     
-    extension [Self <: HeadersProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadersProcessor] (val x: Self) extends AnyVal {
       
       inline def setComposeRequest(value: Headers => Unit): Self = StObject.set(x, "composeRequest", js.Any.fromFunction1(value))
       
@@ -298,7 +302,8 @@ object mod {
       __obj.asInstanceOf[ServerOptions]
     }
     
-    extension [Self <: ServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

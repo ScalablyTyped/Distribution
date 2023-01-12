@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[HTMLtoJSX]
     }
     
-    extension [Self <: HTMLtoJSX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLtoJSX] (val x: Self) extends AnyVal {
       
       inline def setConvert(value: String => String): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
     }

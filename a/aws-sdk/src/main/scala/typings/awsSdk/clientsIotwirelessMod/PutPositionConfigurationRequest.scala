@@ -33,7 +33,8 @@ object PutPositionConfigurationRequest {
     __obj.asInstanceOf[PutPositionConfigurationRequest]
   }
   
-  extension [Self <: PutPositionConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutPositionConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: DestinationName): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object CustomTransformer {
     __obj.asInstanceOf[CustomTransformer]
   }
   
-  extension [Self <: CustomTransformer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomTransformer] (val x: Self) extends AnyVal {
     
     inline def setTransformBundle(value: Bundle => Bundle): Self = StObject.set(x, "transformBundle", js.Any.fromFunction1(value))
     

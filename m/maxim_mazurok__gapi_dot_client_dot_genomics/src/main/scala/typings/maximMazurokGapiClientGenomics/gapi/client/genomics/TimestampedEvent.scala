@@ -21,7 +21,8 @@ object TimestampedEvent {
     __obj.asInstanceOf[TimestampedEvent]
   }
   
-  extension [Self <: TimestampedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimestampedEvent] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

@@ -30,7 +30,8 @@ object SeatDiscount {
     __obj.asInstanceOf[SeatDiscount]
   }
   
-  extension [Self <: SeatDiscount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeatDiscount] (val x: Self) extends AnyVal {
     
     inline def setBeginSeatCount(value: String): Self = StObject.set(x, "beginSeatCount", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object Frustum {
     __obj.asInstanceOf[Frustum]
   }
   
-  extension [Self <: Frustum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Frustum] (val x: Self) extends AnyVal {
     
     inline def setFrustum(value: PerspectiveFrustum | OrthographicFrustum): Self = StObject.set(x, "frustum", value.asInstanceOf[js.Any])
     

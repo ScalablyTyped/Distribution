@@ -15,7 +15,8 @@ object LangStockToolsOptions {
     __obj.asInstanceOf[LangStockToolsOptions]
   }
   
-  extension [Self <: LangStockToolsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangStockToolsOptions] (val x: Self) extends AnyVal {
     
     inline def setGui(value: LangStockToolsGuiOptions): Self = StObject.set(x, "gui", value.asInstanceOf[js.Any])
     

@@ -697,7 +697,8 @@ object sapMP13nGroupPanelMod_ {
       __obj.asInstanceOf[P13nGroupPanelSettings]
     }
     
-    extension [Self <: P13nGroupPanelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P13nGroupPanelSettings] (val x: Self) extends AnyVal {
       
       inline def setAddGroupItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "addGroupItem", js.Any.fromFunction1(value))
       

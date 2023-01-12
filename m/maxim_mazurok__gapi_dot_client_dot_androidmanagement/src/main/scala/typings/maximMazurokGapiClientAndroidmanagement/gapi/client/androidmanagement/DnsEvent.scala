@@ -25,7 +25,8 @@ object DnsEvent {
     __obj.asInstanceOf[DnsEvent]
   }
   
-  extension [Self <: DnsEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsEvent] (val x: Self) extends AnyVal {
     
     inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     

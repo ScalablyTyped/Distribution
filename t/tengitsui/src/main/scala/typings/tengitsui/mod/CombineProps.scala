@@ -24,7 +24,8 @@ object CombineProps {
     __obj.asInstanceOf[CombineProps]
   }
   
-  extension [Self <: CombineProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CombineProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

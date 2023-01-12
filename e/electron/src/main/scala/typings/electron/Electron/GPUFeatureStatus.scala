@@ -94,7 +94,8 @@ object GPUFeatureStatus {
     __obj.asInstanceOf[GPUFeatureStatus]
   }
   
-  extension [Self <: GPUFeatureStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUFeatureStatus] (val x: Self) extends AnyVal {
     
     inline def set2d_canvas(value: String): Self = StObject.set(x, "2d_canvas", value.asInstanceOf[js.Any])
     

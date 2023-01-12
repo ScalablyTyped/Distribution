@@ -15,7 +15,8 @@ object ForwardingRuleReference {
     __obj.asInstanceOf[ForwardingRuleReference]
   }
   
-  extension [Self <: ForwardingRuleReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardingRuleReference] (val x: Self) extends AnyVal {
     
     inline def setForwardingRule(value: String): Self = StObject.set(x, "forwardingRule", value.asInstanceOf[js.Any])
     

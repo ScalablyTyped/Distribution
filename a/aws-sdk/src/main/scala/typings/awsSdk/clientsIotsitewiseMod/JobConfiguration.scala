@@ -18,7 +18,8 @@ object JobConfiguration {
     __obj.asInstanceOf[JobConfiguration]
   }
   
-  extension [Self <: JobConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFileFormat(value: FileFormat): Self = StObject.set(x, "fileFormat", value.asInstanceOf[js.Any])
   }

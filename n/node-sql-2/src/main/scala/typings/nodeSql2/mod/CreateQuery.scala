@@ -17,7 +17,8 @@ object CreateQuery {
     __obj.asInstanceOf[CreateQuery]
   }
   
-  extension [Self <: CreateQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateQuery] (val x: Self) extends AnyVal {
     
     inline def setIfNotExists(value: () => Executable): Self = StObject.set(x, "ifNotExists", js.Any.fromFunction0(value))
   }

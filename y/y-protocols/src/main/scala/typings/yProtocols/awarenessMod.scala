@@ -95,7 +95,8 @@ object awarenessMod {
       __obj.asInstanceOf[MetaClientState]
     }
     
-    extension [Self <: MetaClientState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetaClientState] (val x: Self) extends AnyVal {
       
       inline def setClock(value: Double): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
       

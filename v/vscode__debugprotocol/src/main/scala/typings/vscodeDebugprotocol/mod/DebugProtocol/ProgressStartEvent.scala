@@ -29,7 +29,8 @@ object ProgressStartEvent {
     __obj.asInstanceOf[ProgressStartEvent]
   }
   
-  extension [Self <: ProgressStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressStartEvent] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Cancellable): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

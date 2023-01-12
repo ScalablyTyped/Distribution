@@ -21,7 +21,8 @@ object GoogleActionsTransactionsV3TransactionRequirementsCheckResult {
     __obj.asInstanceOf[GoogleActionsTransactionsV3TransactionRequirementsCheckResult]
   }
   
-  extension [Self <: GoogleActionsTransactionsV3TransactionRequirementsCheckResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsTransactionsV3TransactionRequirementsCheckResult] (val x: Self) extends AnyVal {
     
     inline def setResultType(value: GoogleActionsTransactionsV3TransactionRequirementsCheckResultResultType): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
     

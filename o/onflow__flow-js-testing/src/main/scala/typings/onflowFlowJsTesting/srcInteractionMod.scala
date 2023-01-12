@@ -62,7 +62,8 @@ object srcInteractionMod {
       __obj.asInstanceOf[TransactionEvent]
     }
     
-    extension [Self <: TransactionEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object srcInteractionMod {
       __obj.asInstanceOf[TransactionStatus]
     }
     
-    extension [Self <: TransactionStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionStatus] (val x: Self) extends AnyVal {
       
       inline def setBlockId(value: String): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
       

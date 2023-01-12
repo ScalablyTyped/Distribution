@@ -18,7 +18,8 @@ object RuntimeTransformResult {
     __obj.asInstanceOf[RuntimeTransformResult]
   }
   
-  extension [Self <: RuntimeTransformResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeTransformResult] (val x: Self) extends AnyVal {
     
     inline def setWrapperLength(value: Double): Self = StObject.set(x, "wrapperLength", value.asInstanceOf[js.Any])
   }

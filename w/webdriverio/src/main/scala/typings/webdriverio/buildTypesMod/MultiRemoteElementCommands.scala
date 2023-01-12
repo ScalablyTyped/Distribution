@@ -322,7 +322,8 @@ object MultiRemoteElementCommands {
     __obj.asInstanceOf[MultiRemoteElementCommands]
   }
   
-  extension [Self <: MultiRemoteElementCommands](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiRemoteElementCommands] (val x: Self) extends AnyVal {
     
     inline def set$(
       value: /* args */ Parameters[

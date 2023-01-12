@@ -18,7 +18,8 @@ object SnsConfiguration {
     __obj.asInstanceOf[SnsConfiguration]
   }
   
-  extension [Self <: SnsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }

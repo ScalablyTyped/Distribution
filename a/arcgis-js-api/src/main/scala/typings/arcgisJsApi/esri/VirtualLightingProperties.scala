@@ -33,7 +33,8 @@ object VirtualLightingProperties {
     __obj.asInstanceOf[VirtualLightingProperties]
   }
   
-  extension [Self <: VirtualLightingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualLightingProperties] (val x: Self) extends AnyVal {
     
     inline def setAmbientOcclusionEnabled(value: Boolean): Self = StObject.set(x, "ambientOcclusionEnabled", value.asInstanceOf[js.Any])
     

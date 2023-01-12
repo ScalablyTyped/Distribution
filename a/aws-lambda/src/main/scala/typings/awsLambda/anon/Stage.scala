@@ -31,7 +31,8 @@ object Stage {
     __obj.asInstanceOf[Stage]
   }
   
-  extension [Self <: Stage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stage] (val x: Self) extends AnyVal {
     
     inline def `setExecution-id`(value: String): Self = StObject.set(x, "execution-id", value.asInstanceOf[js.Any])
     

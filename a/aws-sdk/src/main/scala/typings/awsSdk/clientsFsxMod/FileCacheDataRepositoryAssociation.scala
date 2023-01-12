@@ -33,7 +33,8 @@ object FileCacheDataRepositoryAssociation {
     __obj.asInstanceOf[FileCacheDataRepositoryAssociation]
   }
   
-  extension [Self <: FileCacheDataRepositoryAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileCacheDataRepositoryAssociation] (val x: Self) extends AnyVal {
     
     inline def setDataRepositoryPath(value: ArchivePath): Self = StObject.set(x, "DataRepositoryPath", value.asInstanceOf[js.Any])
     

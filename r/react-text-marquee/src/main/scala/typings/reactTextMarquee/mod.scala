@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[MarqueeProps]
     }
     
-    extension [Self <: MarqueeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarqueeProps] (val x: Self) extends AnyVal {
       
       inline def setHoverToStop(value: Boolean): Self = StObject.set(x, "hoverToStop", value.asInstanceOf[js.Any])
       

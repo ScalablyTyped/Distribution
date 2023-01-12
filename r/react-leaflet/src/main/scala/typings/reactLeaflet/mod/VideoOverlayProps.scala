@@ -28,7 +28,8 @@ object VideoOverlayProps {
     __obj.asInstanceOf[VideoOverlayProps]
   }
   
-  extension [Self <: VideoOverlayProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoOverlayProps] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

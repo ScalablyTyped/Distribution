@@ -18,7 +18,8 @@ object ITextureAssetTask {
     __obj.asInstanceOf[ITextureAssetTask[TEX]]
   }
   
-  extension [Self <: ITextureAssetTask[?], TEX /* <: BaseTexture */](x: Self & ITextureAssetTask[TEX]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextureAssetTask[?], TEX /* <: BaseTexture */] (val x: Self & ITextureAssetTask[TEX]) extends AnyVal {
     
     inline def setTexture(value: TEX): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
   }

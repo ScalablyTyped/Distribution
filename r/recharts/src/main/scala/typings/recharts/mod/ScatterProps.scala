@@ -260,7 +260,8 @@ object ScatterProps {
     __obj.asInstanceOf[ScatterProps]
   }
   
-  extension [Self <: ScatterProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScatterProps] (val x: Self) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

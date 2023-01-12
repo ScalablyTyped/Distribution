@@ -19,7 +19,8 @@ object AggregationsSignificantTermsBucketBase {
     __obj.asInstanceOf[AggregationsSignificantTermsBucketBase]
   }
   
-  extension [Self <: AggregationsSignificantTermsBucketBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsSignificantTermsBucketBase] (val x: Self) extends AnyVal {
     
     inline def setBg_count(value: long): Self = StObject.set(x, "bg_count", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object dynamsoftDotFileUploaderMod {
       __obj.asInstanceOf[FileUploader]
     }
     
-    extension [Self <: FileUploader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploader] (val x: Self) extends AnyVal {
       
       inline def setInit(
         value: (String, js.Function1[/* uploadManager */ UploadManager, Unit], js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]) => Unit
@@ -56,7 +57,8 @@ object dynamsoftDotFileUploaderMod {
       __obj.asInstanceOf[FormField]
     }
     
-    extension [Self <: FormField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormField] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (String, String) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     }
@@ -151,7 +153,8 @@ object dynamsoftDotFileUploaderMod {
       __obj.asInstanceOf[Job]
     }
     
-    extension [Self <: Job](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
       
       inline def setBlockSize(value: Double): Self = StObject.set(x, "BlockSize", value.asInstanceOf[js.Any])
       
@@ -224,7 +227,8 @@ object dynamsoftDotFileUploaderMod {
       __obj.asInstanceOf[UploadManager]
     }
     
-    extension [Self <: UploadManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadManager] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Job => Boolean): Self = StObject.set(x, "Cancel", js.Any.fromFunction1(value))
       

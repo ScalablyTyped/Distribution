@@ -17,7 +17,8 @@ object DeleteFileSystemOpenZFSResponse {
     __obj.asInstanceOf[DeleteFileSystemOpenZFSResponse]
   }
   
-  extension [Self <: DeleteFileSystemOpenZFSResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFileSystemOpenZFSResponse] (val x: Self) extends AnyVal {
     
     inline def setFinalBackupId(value: BackupId): Self = StObject.set(x, "FinalBackupId", value.asInstanceOf[js.Any])
     

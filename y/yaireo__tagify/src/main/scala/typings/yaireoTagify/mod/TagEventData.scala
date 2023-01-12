@@ -26,7 +26,8 @@ object TagEventData {
     __obj.asInstanceOf[TagEventData[T]]
   }
   
-  extension [Self <: TagEventData[?], T /* <: BaseTagData */](x: Self & TagEventData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagEventData[?], T /* <: BaseTagData */] (val x: Self & TagEventData[T]) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

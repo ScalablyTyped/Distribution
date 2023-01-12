@@ -215,7 +215,8 @@ object libAlternativeMod {
       __obj.asInstanceOf[Alternative[F]]
     }
     
-    extension [Self <: Alternative[?], F](x: Self & Alternative[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alternative[?], F] (val x: Self & Alternative[F]) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
@@ -246,7 +247,8 @@ object libAlternativeMod {
       __obj.asInstanceOf[Alternative1[F]]
     }
     
-    extension [Self <: Alternative1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & Alternative1[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alternative1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & Alternative1[F]) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
@@ -277,7 +279,8 @@ object libAlternativeMod {
       __obj.asInstanceOf[Alternative2[F]]
     }
     
-    extension [Self <: Alternative2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Alternative2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alternative2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Alternative2[F]) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
@@ -312,7 +315,8 @@ object libAlternativeMod {
       __obj.asInstanceOf[Alternative2C[F, E]]
     }
     
-    extension [Self <: Alternative2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (Alternative2C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alternative2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (Alternative2C[F, E])) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -345,7 +349,8 @@ object libAlternativeMod {
       __obj.asInstanceOf[Alternative3[F]]
     }
     
-    extension [Self <: Alternative3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Alternative3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alternative3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Alternative3[F]) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
@@ -380,7 +385,8 @@ object libAlternativeMod {
       __obj.asInstanceOf[Alternative3C[F, E]]
     }
     
-    extension [Self <: Alternative3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (Alternative3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alternative3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (Alternative3C[F, E])) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -413,7 +419,8 @@ object libAlternativeMod {
       __obj.asInstanceOf[Alternative4[F]]
     }
     
-    extension [Self <: Alternative4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Alternative4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alternative4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Alternative4[F]) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }

@@ -15,7 +15,8 @@ object PositionInput {
     __obj.asInstanceOf[PositionInput]
   }
   
-  extension [Self <: PositionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionInput] (val x: Self) extends AnyVal {
     
     inline def setPos(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
   }

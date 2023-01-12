@@ -17,7 +17,8 @@ object QueryLike {
     __obj.asInstanceOf[QueryLike]
   }
   
-  extension [Self <: QueryLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryLike] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object XTransactedObject {
     __obj.asInstanceOf[XTransactedObject]
   }
   
-  extension [Self <: XTransactedObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTransactedObject] (val x: Self) extends AnyVal {
     
     inline def setCommit(value: () => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
     

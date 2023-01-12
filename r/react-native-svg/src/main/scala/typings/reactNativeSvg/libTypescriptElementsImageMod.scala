@@ -69,7 +69,8 @@ object libTypescriptElementsImageMod {
       __obj.asInstanceOf[ImageProps]
     }
     
-    extension [Self <: ImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: NumberProp): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

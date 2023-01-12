@@ -17,7 +17,8 @@ object IBackgroundTaskCompletedEventArgs {
     __obj.asInstanceOf[IBackgroundTaskCompletedEventArgs]
   }
   
-  extension [Self <: IBackgroundTaskCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBackgroundTaskCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCheckResult(value: () => Unit): Self = StObject.set(x, "checkResult", js.Any.fromFunction0(value))
     

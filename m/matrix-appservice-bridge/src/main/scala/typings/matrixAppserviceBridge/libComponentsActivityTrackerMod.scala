@@ -71,7 +71,8 @@ object libComponentsActivityTrackerMod {
       __obj.asInstanceOf[ActivityTrackerOpts]
     }
     
-    extension [Self <: ActivityTrackerOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActivityTrackerOpts] (val x: Self) extends AnyVal {
       
       inline def setDefaultOnline(value: Boolean): Self = StObject.set(x, "defaultOnline", value.asInstanceOf[js.Any])
       

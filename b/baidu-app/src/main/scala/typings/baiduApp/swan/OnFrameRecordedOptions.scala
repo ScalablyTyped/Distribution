@@ -19,7 +19,8 @@ object OnFrameRecordedOptions {
     __obj.asInstanceOf[OnFrameRecordedOptions]
   }
   
-  extension [Self <: OnFrameRecordedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnFrameRecordedOptions] (val x: Self) extends AnyVal {
     
     inline def setFrameBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "frameBuffer", value.asInstanceOf[js.Any])
     

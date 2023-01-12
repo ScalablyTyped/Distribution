@@ -38,7 +38,8 @@ object mod {
         __obj.asInstanceOf[ConstructorOptions]
       }
       
-      extension [Self <: ConstructorOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
         
         inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
         
@@ -100,7 +101,8 @@ object mod {
         __obj.asInstanceOf[typings.jasmineReporters.mod.JUnitXmlReporter.ConstructorOptions]
       }
       
-      extension [Self <: typings.jasmineReporters.mod.JUnitXmlReporter.ConstructorOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jasmineReporters.mod.JUnitXmlReporter.ConstructorOptions] (val x: Self) extends AnyVal {
         
         inline def setCaptureStdout(value: Boolean): Self = StObject.set(x, "captureStdout", value.asInstanceOf[js.Any])
         
@@ -183,7 +185,8 @@ object mod {
         __obj.asInstanceOf[typings.jasmineReporters.mod.NUnitXmlReporter.ConstructorOptions]
       }
       
-      extension [Self <: typings.jasmineReporters.mod.NUnitXmlReporter.ConstructorOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jasmineReporters.mod.NUnitXmlReporter.ConstructorOptions] (val x: Self) extends AnyVal {
         
         inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
         
@@ -226,7 +229,8 @@ object mod {
         __obj.asInstanceOf[typings.jasmineReporters.mod.TeamCityReporter.ConstructorOptions]
       }
       
-      extension [Self <: typings.jasmineReporters.mod.TeamCityReporter.ConstructorOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jasmineReporters.mod.TeamCityReporter.ConstructorOptions] (val x: Self) extends AnyVal {
         
         inline def setModifySuiteName(value: (/* suiteName */ String, /* suite */ SuiteResult) => String): Self = StObject.set(x, "modifySuiteName", js.Any.fromFunction2(value))
         
@@ -259,7 +263,8 @@ object mod {
         __obj.asInstanceOf[typings.jasmineReporters.mod.TerminalReporter.ConstructorOptions]
       }
       
-      extension [Self <: typings.jasmineReporters.mod.TerminalReporter.ConstructorOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jasmineReporters.mod.TerminalReporter.ConstructorOptions] (val x: Self) extends AnyVal {
         
         inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         

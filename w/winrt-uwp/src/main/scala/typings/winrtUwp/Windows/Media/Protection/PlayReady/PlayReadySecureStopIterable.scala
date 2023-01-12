@@ -21,7 +21,8 @@ object PlayReadySecureStopIterable {
     __obj.asInstanceOf[PlayReadySecureStopIterable]
   }
   
-  extension [Self <: PlayReadySecureStopIterable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayReadySecureStopIterable] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: () => IIterator[IPlayReadySecureStopServiceRequest]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
   }

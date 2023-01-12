@@ -24,7 +24,8 @@ object IndicesRecoveryVerifyIndex {
     __obj.asInstanceOf[IndicesRecoveryVerifyIndex]
   }
   
-  extension [Self <: IndicesRecoveryVerifyIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesRecoveryVerifyIndex] (val x: Self) extends AnyVal {
     
     inline def setCheck_index_time(value: Duration): Self = StObject.set(x, "check_index_time", value.asInstanceOf[js.Any])
     

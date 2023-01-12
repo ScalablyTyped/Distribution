@@ -82,7 +82,8 @@ object AMap {
         __obj.asInstanceOf[BusStop]
       }
       
-      extension [Self <: BusStop](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BusStop] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -107,7 +108,8 @@ object AMap {
         __obj.asInstanceOf[EventMap]
       }
       
-      extension [Self <: EventMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
         
         inline def setComplete(value: Event_[complete, SearchResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
         
@@ -214,7 +216,8 @@ object AMap {
         __obj.asInstanceOf[LineInfoBase]
       }
       
-      extension [Self <: LineInfoBase](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LineInfoBase] (val x: Self) extends AnyVal {
         
         inline def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
         
@@ -304,7 +307,8 @@ object AMap {
         __obj.asInstanceOf[LineInfoExt]
       }
       
-      extension [Self <: LineInfoExt](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LineInfoExt] (val x: Self) extends AnyVal {
         
         inline def setBasic_price(value: String): Self = StObject.set(x, "basic_price", value.asInstanceOf[js.Any])
         
@@ -361,7 +365,8 @@ object AMap {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
         
@@ -410,7 +415,8 @@ object AMap {
         __obj.asInstanceOf[SearchResult]
       }
       
-      extension [Self <: SearchResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
         
         inline def setCityList(value: js.Array[Any]): Self = StObject.set(x, "cityList", value.asInstanceOf[js.Any])
         

@@ -721,7 +721,8 @@ object typecheckboxIndeterminate_ {
     __obj.asInstanceOf[typecheckboxIndeterminate_]
   }
   
-  extension [Self <: typecheckboxIndeterminate_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typecheckboxIndeterminate_] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

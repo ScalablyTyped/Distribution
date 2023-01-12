@@ -18,7 +18,8 @@ object `97` {
     __obj.asInstanceOf[`97`]
   }
   
-  extension [Self <: `97`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `97`] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[SetTouchEmulationEnabledRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

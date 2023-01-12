@@ -43,7 +43,8 @@ object DevicePose {
     __obj.asInstanceOf[DevicePose]
   }
   
-  extension [Self <: DevicePose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevicePose] (val x: Self) extends AnyVal {
     
     inline def setAngularAcceleration(value: Nullable[js.typedarray.Float32Array]): Self = StObject.set(x, "angularAcceleration", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object TypeofVertexAttachment {
     __obj.asInstanceOf[TypeofVertexAttachment]
   }
   
-  extension [Self <: TypeofVertexAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofVertexAttachment] (val x: Self) extends AnyVal {
     
     inline def setNextID(value: Any): Self = StObject.set(x, "nextID", value.asInstanceOf[js.Any])
   }

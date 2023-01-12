@@ -17,7 +17,8 @@ object ApplyAttributesRuleSet {
     __obj.asInstanceOf[ApplyAttributesRuleSet]
   }
   
-  extension [Self <: ApplyAttributesRuleSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyAttributesRuleSet] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: RuleSet[Widget[Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

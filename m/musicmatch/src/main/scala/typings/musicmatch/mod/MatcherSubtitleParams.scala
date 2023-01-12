@@ -19,7 +19,8 @@ object MatcherSubtitleParams {
     __obj.asInstanceOf[MatcherSubtitleParams]
   }
   
-  extension [Self <: MatcherSubtitleParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatcherSubtitleParams] (val x: Self) extends AnyVal {
     
     inline def setF_subtitle_length(value: Double): Self = StObject.set(x, "f_subtitle_length", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ReadonlyCollection {
     __obj.asInstanceOf[ReadonlyCollection[K]]
   }
   
-  extension [Self <: ReadonlyCollection[?], K](x: Self & ReadonlyCollection[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyCollection[?], K] (val x: Self & ReadonlyCollection[K]) extends AnyVal {
     
     inline def setHas(value: K => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     

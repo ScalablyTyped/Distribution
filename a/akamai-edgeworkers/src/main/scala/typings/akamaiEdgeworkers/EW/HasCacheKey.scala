@@ -18,7 +18,8 @@ object HasCacheKey {
     __obj.asInstanceOf[HasCacheKey]
   }
   
-  extension [Self <: HasCacheKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasCacheKey] (val x: Self) extends AnyVal {
     
     inline def setCacheKey(value: CacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
   }

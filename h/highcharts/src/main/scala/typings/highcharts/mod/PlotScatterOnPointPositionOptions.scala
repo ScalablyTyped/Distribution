@@ -39,7 +39,8 @@ object PlotScatterOnPointPositionOptions {
     __obj.asInstanceOf[PlotScatterOnPointPositionOptions]
   }
   
-  extension [Self <: PlotScatterOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotScatterOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

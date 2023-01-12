@@ -43,7 +43,8 @@ object AppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
     __obj.asInstanceOf[AppointmentsProviderShowAppointmentDetailsActivatedEventArgs]
   }
   
-  extension [Self <: AppointmentsProviderShowAppointmentDetailsActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentsProviderShowAppointmentDetailsActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setInstanceStartDate(value: js.Date): Self = StObject.set(x, "instanceStartDate", value.asInstanceOf[js.Any])
     

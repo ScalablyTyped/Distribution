@@ -21,7 +21,8 @@ object ChatMessages {
     __obj.asInstanceOf[ChatMessages]
   }
   
-  extension [Self <: ChatMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMessages] (val x: Self) extends AnyVal {
     
     inline def setMessageListLabel(value: String): Self = StObject.set(x, "messageListLabel", value.asInstanceOf[js.Any])
     

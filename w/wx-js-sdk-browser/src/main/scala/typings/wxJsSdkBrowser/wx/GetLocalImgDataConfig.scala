@@ -27,7 +27,8 @@ object GetLocalImgDataConfig {
     __obj.asInstanceOf[GetLocalImgDataConfig]
   }
   
-  extension [Self <: GetLocalImgDataConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLocalImgDataConfig] (val x: Self) extends AnyVal {
     
     inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     

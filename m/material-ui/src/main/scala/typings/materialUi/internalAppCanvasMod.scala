@@ -26,7 +26,8 @@ object internalAppCanvasMod {
       __obj.asInstanceOf[AppCanvasProps]
     }
     
-    extension [Self <: AppCanvasProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCanvasProps] (val x: Self) extends AnyVal {
       
       inline def setRef(value: LegacyRef[AppCanvas]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       

@@ -60,7 +60,8 @@ object distTypesArcTransitionModeMod {
       __obj.asInstanceOf[ArcTransitionModeConfig]
     }
     
-    extension [Self <: ArcTransitionModeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcTransitionModeConfig] (val x: Self) extends AnyVal {
       
       inline def setEnter(value: Arc => Arc): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
       
@@ -85,7 +86,8 @@ object distTypesArcTransitionModeMod {
       __obj.asInstanceOf[TransitionExtra[Datum, ExtraProps]]
     }
     
-    extension [Self <: TransitionExtra[?, ?], Datum /* <: DatumWithArc */, ExtraProps](x: Self & (TransitionExtra[Datum, ExtraProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionExtra[?, ?], Datum /* <: DatumWithArc */, ExtraProps] (val x: Self & (TransitionExtra[Datum, ExtraProps])) extends AnyVal {
       
       inline def setEnter(value: Datum => ExtraProps): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
       

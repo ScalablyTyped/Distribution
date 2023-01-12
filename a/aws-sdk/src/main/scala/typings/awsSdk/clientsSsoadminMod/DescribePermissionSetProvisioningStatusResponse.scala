@@ -18,7 +18,8 @@ object DescribePermissionSetProvisioningStatusResponse {
     __obj.asInstanceOf[DescribePermissionSetProvisioningStatusResponse]
   }
   
-  extension [Self <: DescribePermissionSetProvisioningStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePermissionSetProvisioningStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setPermissionSetProvisioningStatus(value: PermissionSetProvisioningStatus): Self = StObject.set(x, "PermissionSetProvisioningStatus", value.asInstanceOf[js.Any])
     

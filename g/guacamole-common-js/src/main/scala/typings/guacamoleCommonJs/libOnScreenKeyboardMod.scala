@@ -127,7 +127,8 @@ object libOnScreenKeyboardMod {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKeysym(value: Double): Self = StObject.set(x, "keysym", value.asInstanceOf[js.Any])
       
@@ -215,7 +216,8 @@ object libOnScreenKeyboardMod {
       __obj.asInstanceOf[Layout]
     }
     
-    extension [Self <: Layout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
       
       inline def setKeyWidths(value: Record[String, Double]): Self = StObject.set(x, "keyWidths", value.asInstanceOf[js.Any])
       

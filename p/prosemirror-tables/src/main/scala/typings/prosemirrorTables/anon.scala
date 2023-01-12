@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[CellMinWidth]
     }
     
-    extension [Self <: CellMinWidth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellMinWidth] (val x: Self) extends AnyVal {
       
       inline def setCellMinWidth(value: Double): Self = StObject.set(x, "cellMinWidth", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[RecordTableRolesNodeType]
     }
     
-    extension [Self <: RecordTableRolesNodeType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordTableRolesNodeType] (val x: Self) extends AnyVal {
       
       inline def setCell(value: NodeType): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object anon {
       __obj.asInstanceOf[UseDeprecatedLogic]
     }
     
-    extension [Self <: UseDeprecatedLogic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseDeprecatedLogic] (val x: Self) extends AnyVal {
       
       inline def setUseDeprecatedLogic(value: Boolean): Self = StObject.set(x, "useDeprecatedLogic", value.asInstanceOf[js.Any])
       

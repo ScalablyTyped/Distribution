@@ -35,7 +35,8 @@ object IndicesFieldUsageStatsInvertedIndex {
     __obj.asInstanceOf[IndicesFieldUsageStatsInvertedIndex]
   }
   
-  extension [Self <: IndicesFieldUsageStatsInvertedIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesFieldUsageStatsInvertedIndex] (val x: Self) extends AnyVal {
     
     inline def setOffsets(value: uint): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
     

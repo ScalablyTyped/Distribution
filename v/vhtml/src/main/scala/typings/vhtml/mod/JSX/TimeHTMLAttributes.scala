@@ -17,7 +17,8 @@ object TimeHTMLAttributes {
     __obj.asInstanceOf[TimeHTMLAttributes]
   }
   
-  extension [Self <: TimeHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setDatetime(value: String): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
     

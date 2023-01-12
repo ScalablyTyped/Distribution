@@ -32,7 +32,8 @@ object libSymbolsMod extends Shortcut {
       __obj.asInstanceOf[ISymbols]
     }
     
-    extension [Self <: ISymbols](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISymbols] (val x: Self) extends AnyVal {
       
       inline def setSerialize(value: js.Symbol): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
     }

@@ -65,7 +65,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: js.Array[String]): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object anon {
       __obj.asInstanceOf[Button]
     }
     
-    extension [Self <: Button](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
       
       inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
@@ -173,7 +175,8 @@ object anon {
       __obj.asInstanceOf[Close]
     }
     
-    extension [Self <: Close](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
       
       inline def setClose(value: RevealCSSOptions): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -196,7 +199,8 @@ object anon {
       __obj.asInstanceOf[Namespace]
     }
     
-    extension [Self <: Namespace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Namespace] (val x: Self) extends AnyVal {
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     }

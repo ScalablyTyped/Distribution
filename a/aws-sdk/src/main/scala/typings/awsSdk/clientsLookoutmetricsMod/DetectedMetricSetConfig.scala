@@ -28,7 +28,8 @@ object DetectedMetricSetConfig {
     __obj.asInstanceOf[DetectedMetricSetConfig]
   }
   
-  extension [Self <: DetectedMetricSetConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectedMetricSetConfig] (val x: Self) extends AnyVal {
     
     inline def setMetricSetFrequency(value: DetectedField): Self = StObject.set(x, "MetricSetFrequency", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object TypeofWebSocket {
     __obj.asInstanceOf[TypeofWebSocket]
   }
   
-  extension [Self <: TypeofWebSocket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofWebSocket] (val x: Self) extends AnyVal {
     
     inline def setCLOSED(value: Double): Self = StObject.set(x, "CLOSED", value.asInstanceOf[js.Any])
     

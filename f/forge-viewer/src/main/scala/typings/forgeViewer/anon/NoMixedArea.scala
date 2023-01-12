@@ -19,7 +19,8 @@ object NoMixedArea {
     __obj.asInstanceOf[NoMixedArea]
   }
   
-  extension [Self <: NoMixedArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoMixedArea] (val x: Self) extends AnyVal {
     
     inline def setNoMixedArea(value: Boolean): Self = StObject.set(x, "noMixedArea", value.asInstanceOf[js.Any])
     

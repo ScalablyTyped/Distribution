@@ -51,7 +51,8 @@ object CmisProperty {
     __obj.asInstanceOf[CmisProperty]
   }
   
-  extension [Self <: CmisProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CmisProperty] (val x: Self) extends AnyVal {
     
     inline def setChoices(value: Any): Self = StObject.set(x, "Choices", value.asInstanceOf[js.Any])
     

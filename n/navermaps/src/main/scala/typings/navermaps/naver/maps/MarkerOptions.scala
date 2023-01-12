@@ -38,7 +38,8 @@ object MarkerOptions {
     __obj.asInstanceOf[MarkerOptions]
   }
   
-  extension [Self <: MarkerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

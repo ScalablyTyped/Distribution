@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[OmitOptionsblacklistedNod]
     }
     
-    extension [Self <: OmitOptionsblacklistedNod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitOptionsblacklistedNod] (val x: Self) extends AnyVal {
       
       inline def setStrategy(value: accented | bidi): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
       

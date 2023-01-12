@@ -16,7 +16,8 @@ object `2` {
     __obj.asInstanceOf[`2`]
   }
   
-  extension [Self <: `2`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
     
     inline def setNull(value: js.Array[PickConstructresolveAll]): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
     

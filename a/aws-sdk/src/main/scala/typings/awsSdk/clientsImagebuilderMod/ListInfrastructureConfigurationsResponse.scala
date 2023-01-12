@@ -28,7 +28,8 @@ object ListInfrastructureConfigurationsResponse {
     __obj.asInstanceOf[ListInfrastructureConfigurationsResponse]
   }
   
-  extension [Self <: ListInfrastructureConfigurationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInfrastructureConfigurationsResponse] (val x: Self) extends AnyVal {
     
     inline def setInfrastructureConfigurationSummaryList(value: InfrastructureConfigurationSummaryList): Self = StObject.set(x, "infrastructureConfigurationSummaryList", value.asInstanceOf[js.Any])
     

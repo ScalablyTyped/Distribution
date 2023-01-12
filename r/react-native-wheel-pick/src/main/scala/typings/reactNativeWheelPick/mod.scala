@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[DatePickerAndroidProps]
     }
     
-    extension [Self <: DatePickerAndroidProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerAndroidProps] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object mod {
       __obj.asInstanceOf[DatePickerIOSProps]
     }
     
-    extension [Self <: DatePickerIOSProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerIOSProps] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -206,7 +208,8 @@ object mod {
       __obj.asInstanceOf[PickerProps[T]]
     }
     
-    extension [Self <: PickerProps[?], T](x: Self & PickerProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerProps[?], T] (val x: Self & PickerProps[T]) extends AnyVal {
       
       inline def setItemSpace(value: Double): Self = StObject.set(x, "itemSpace", value.asInstanceOf[js.Any])
       

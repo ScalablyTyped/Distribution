@@ -18,7 +18,8 @@ object SetShowHingeRequest {
     __obj.asInstanceOf[SetShowHingeRequest]
   }
   
-  extension [Self <: SetShowHingeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetShowHingeRequest] (val x: Self) extends AnyVal {
     
     inline def setHingeConfig(value: HingeConfig): Self = StObject.set(x, "hingeConfig", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object locking {
       __obj.asInstanceOf[IHeaderContainer]
     }
     
-    extension [Self <: IHeaderContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHeaderContainer] (val x: Self) extends AnyVal {
       
       inline def setGetGridColumns(value: () => Array): Self = StObject.set(x, "getGridColumns", js.Any.fromFunction0(value))
       
@@ -78,7 +79,8 @@ object locking {
       __obj.asInstanceOf[typings.extjs.Ext.grid.locking.ILockable]
     }
     
-    extension [Self <: typings.extjs.Ext.grid.locking.ILockable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.grid.locking.ILockable] (val x: Self) extends AnyVal {
       
       inline def setLockedGridConfig(value: Any): Self = StObject.set(x, "lockedGridConfig", value.asInstanceOf[js.Any])
       
@@ -128,7 +130,8 @@ object locking {
       __obj.asInstanceOf[typings.extjs.Ext.grid.locking.IView]
     }
     
-    extension [Self <: typings.extjs.Ext.grid.locking.IView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.grid.locking.IView] (val x: Self) extends AnyVal {
       
       inline def setIsLockingView(value: Boolean): Self = StObject.set(x, "isLockingView", value.asInstanceOf[js.Any])
       

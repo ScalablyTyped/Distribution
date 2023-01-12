@@ -18,7 +18,8 @@ object SocksClientEstablishedEvent {
     __obj.asInstanceOf[SocksClientEstablishedEvent]
   }
   
-  extension [Self <: SocksClientEstablishedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocksClientEstablishedEvent] (val x: Self) extends AnyVal {
     
     inline def setRemoteHost(value: SocksRemoteHost): Self = StObject.set(x, "remoteHost", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object IMidiMessage {
     __obj.asInstanceOf[IMidiMessage]
   }
   
-  extension [Self <: IMidiMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMidiMessage] (val x: Self) extends AnyVal {
     
     inline def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     

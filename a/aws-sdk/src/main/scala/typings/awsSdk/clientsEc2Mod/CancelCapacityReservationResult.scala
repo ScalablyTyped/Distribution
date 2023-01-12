@@ -18,7 +18,8 @@ object CancelCapacityReservationResult {
     __obj.asInstanceOf[CancelCapacityReservationResult]
   }
   
-  extension [Self <: CancelCapacityReservationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelCapacityReservationResult] (val x: Self) extends AnyVal {
     
     inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     

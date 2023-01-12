@@ -31,7 +31,8 @@ object Splitpanes {
   @js.native
   val ^ : Splitpanes = js.native
   
-  extension [Self <: Splitpanes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Splitpanes] (val x: Self) extends AnyVal {
     
     inline def setBeforeDestroy(value: () => Unit): Self = StObject.set(x, "beforeDestroy", js.Any.fromFunction0(value))
     

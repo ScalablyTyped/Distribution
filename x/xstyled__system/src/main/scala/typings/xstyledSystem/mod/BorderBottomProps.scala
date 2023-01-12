@@ -16,7 +16,8 @@ object BorderBottomProps {
     __obj.asInstanceOf[BorderBottomProps[TLength]]
   }
   
-  extension [Self <: BorderBottomProps[?], TLength](x: Self & BorderBottomProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderBottomProps[?], TLength] (val x: Self & BorderBottomProps[TLength]) extends AnyVal {
     
     inline def setBorderBottom(value: ResponsiveValue[BorderBottom[TLength]]): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     

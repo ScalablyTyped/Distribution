@@ -23,7 +23,8 @@ object UsageAccountResult {
     __obj.asInstanceOf[UsageAccountResult]
   }
   
-  extension [Self <: UsageAccountResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageAccountResult] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

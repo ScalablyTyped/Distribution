@@ -21,7 +21,8 @@ object WidthX {
     __obj.asInstanceOf[WidthX]
   }
   
-  extension [Self <: WidthX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidthX] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

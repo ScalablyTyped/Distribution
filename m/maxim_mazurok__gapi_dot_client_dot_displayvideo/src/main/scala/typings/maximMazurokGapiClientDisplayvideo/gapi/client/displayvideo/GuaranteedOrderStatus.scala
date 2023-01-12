@@ -31,7 +31,8 @@ object GuaranteedOrderStatus {
     __obj.asInstanceOf[GuaranteedOrderStatus]
   }
   
-  extension [Self <: GuaranteedOrderStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GuaranteedOrderStatus] (val x: Self) extends AnyVal {
     
     inline def setConfigStatus(value: String): Self = StObject.set(x, "configStatus", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object PanoramaLabel {
     __obj.asInstanceOf[PanoramaLabel]
   }
   
-  extension [Self <: PanoramaLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanoramaLabel] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     

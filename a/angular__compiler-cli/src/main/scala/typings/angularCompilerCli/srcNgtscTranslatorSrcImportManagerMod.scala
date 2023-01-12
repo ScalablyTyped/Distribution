@@ -51,7 +51,8 @@ object srcNgtscTranslatorSrcImportManagerMod {
       __obj.asInstanceOf[Import]
     }
     
-    extension [Self <: Import](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Import] (val x: Self) extends AnyVal {
       
       inline def setQualifier(value: Identifier): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
       

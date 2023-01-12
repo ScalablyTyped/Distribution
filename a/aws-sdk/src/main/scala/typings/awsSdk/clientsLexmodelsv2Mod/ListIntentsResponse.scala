@@ -38,7 +38,8 @@ object ListIntentsResponse {
     __obj.asInstanceOf[ListIntentsResponse]
   }
   
-  extension [Self <: ListIntentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIntentsResponse] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     

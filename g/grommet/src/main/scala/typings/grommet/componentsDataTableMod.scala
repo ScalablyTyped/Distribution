@@ -102,7 +102,8 @@ object componentsDataTableMod {
       __obj.asInstanceOf[ColumnConfig[TRowType]]
     }
     
-    extension [Self <: ColumnConfig[?], TRowType](x: Self & ColumnConfig[TRowType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnConfig[?], TRowType] (val x: Self & ColumnConfig[TRowType]) extends AnyVal {
       
       inline def setAggregate(value: avg | max | min | sum): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
       
@@ -297,7 +298,8 @@ object componentsDataTableMod {
       __obj.asInstanceOf[DataTableProps[TRowType]]
     }
     
-    extension [Self <: DataTableProps[?], TRowType](x: Self & DataTableProps[TRowType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTableProps[?], TRowType] (val x: Self & DataTableProps[TRowType]) extends AnyVal {
       
       inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
       
@@ -494,7 +496,8 @@ object componentsDataTableMod {
       __obj.asInstanceOf[KeyPress[TRowType]]
     }
     
-    extension [Self <: KeyPress[?], TRowType](x: Self & KeyPress[TRowType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPress[?], TRowType] (val x: Self & KeyPress[TRowType]) extends AnyVal {
       
       inline def setDatum(value: TRowType): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     }
@@ -551,7 +554,8 @@ object componentsDataTableMod {
       __obj.asInstanceOf[MouseClick[TRowType]]
     }
     
-    extension [Self <: MouseClick[?], TRowType](x: Self & MouseClick[TRowType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseClick[?], TRowType] (val x: Self & MouseClick[TRowType]) extends AnyVal {
       
       inline def setDatum(value: TRowType): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
       
@@ -576,7 +580,8 @@ object componentsDataTableMod {
       __obj.asInstanceOf[Sections[TBody, THeader, TFooter, TPinned]]
     }
     
-    extension [Self <: Sections[?, ?, ?, ?], TBody, THeader, TFooter, TPinned](x: Self & (Sections[TBody, THeader, TFooter, TPinned])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sections[?, ?, ?, ?], TBody, THeader, TFooter, TPinned] (val x: Self & (Sections[TBody, THeader, TFooter, TPinned])) extends AnyVal {
       
       inline def setBody(value: TBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

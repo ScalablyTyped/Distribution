@@ -15,7 +15,8 @@ object DeleteInstanceOnboardingJobRequest {
     __obj.asInstanceOf[DeleteInstanceOnboardingJobRequest]
   }
   
-  extension [Self <: DeleteInstanceOnboardingJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteInstanceOnboardingJobRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectInstanceId(value: InstanceId): Self = StObject.set(x, "connectInstanceId", value.asInstanceOf[js.Any])
   }

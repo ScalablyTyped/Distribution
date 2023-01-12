@@ -27,7 +27,8 @@ object ExposesConfig {
     __obj.asInstanceOf[ExposesConfig]
   }
   
-  extension [Self <: ExposesConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExposesConfig] (val x: Self) extends AnyVal {
     
     inline def setImport(value: String | js.Array[String]): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
     

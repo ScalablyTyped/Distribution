@@ -42,7 +42,8 @@ object GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter] (val x: Self) extends AnyVal {
     
     inline def setAtAnyPointInTime(value: Boolean): Self = StObject.set(x, "atAnyPointInTime", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object NativeFlow {
   @js.native
   val ^ : NativeFlowStatic = js.native
   
-  extension [Self <: NativeFlow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeFlow] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: String => Unit): Self = StObject.set(x, "accessToken", js.Any.fromFunction1(value))
     

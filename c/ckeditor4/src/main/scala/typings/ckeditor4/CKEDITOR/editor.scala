@@ -441,7 +441,8 @@ object editor {
       __obj.asInstanceOf[eventObject]
     }
     
-    extension [Self <: eventObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: eventObject] (val x: Self) extends AnyVal {
       
       inline def setActiveEnterModeChange(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "activeEnterModeChange", js.Any.fromFunction1(value))
       

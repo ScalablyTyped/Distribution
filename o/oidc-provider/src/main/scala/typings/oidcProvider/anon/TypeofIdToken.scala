@@ -16,7 +16,8 @@ object TypeofIdToken {
     __obj.asInstanceOf[TypeofIdToken]
   }
   
-  extension [Self <: TypeofIdToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofIdToken] (val x: Self) extends AnyVal {
     
     inline def setValidate(value: (String, typings.oidcProvider.mod.Client) => js.Promise[Header]): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
   }

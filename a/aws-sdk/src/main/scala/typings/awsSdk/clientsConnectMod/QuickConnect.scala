@@ -43,7 +43,8 @@ object QuickConnect {
     __obj.asInstanceOf[QuickConnect]
   }
   
-  extension [Self <: QuickConnect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuickConnect] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: QuickConnectDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

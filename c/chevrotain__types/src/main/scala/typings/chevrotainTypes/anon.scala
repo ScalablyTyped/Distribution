@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Actual]
     }
     
-    extension [Self <: Actual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Actual] (val x: Self) extends AnyVal {
       
       inline def setActual(value: IToken): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object anon {
       __obj.asInstanceOf[CustomUserDescription]
     }
     
-    extension [Self <: CustomUserDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomUserDescription] (val x: Self) extends AnyVal {
       
       inline def setActual(value: js.Array[IToken]): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object anon {
       __obj.asInstanceOf[Definition]
     }
     
-    extension [Self <: Definition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
       
       inline def setDefinition(value: js.Array[IProduction]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       
@@ -127,7 +130,8 @@ object anon {
       __obj.asInstanceOf[DefinitionIdx]
     }
     
-    extension [Self <: DefinitionIdx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefinitionIdx] (val x: Self) extends AnyVal {
       
       inline def setDefinition(value: js.Array[IProduction]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       
@@ -163,7 +167,8 @@ object anon {
       __obj.asInstanceOf[ExpectedIterationPaths]
     }
     
-    extension [Self <: ExpectedIterationPaths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpectedIterationPaths] (val x: Self) extends AnyVal {
       
       inline def setActual(value: js.Array[IToken]): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
@@ -196,7 +201,8 @@ object anon {
       __obj.asInstanceOf[FirstRedundant]
     }
     
-    extension [Self <: FirstRedundant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirstRedundant] (val x: Self) extends AnyVal {
       
       inline def setFirstRedundant(value: IToken): Self = StObject.set(x, "firstRedundant", value.asInstanceOf[js.Any])
       
@@ -221,7 +227,8 @@ object anon {
       __obj.asInstanceOf[Idx]
     }
     
-    extension [Self <: Idx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Idx] (val x: Self) extends AnyVal {
       
       inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
@@ -252,7 +259,8 @@ object anon {
       __obj.asInstanceOf[IgnoreAmbiguities]
     }
     
-    extension [Self <: IgnoreAmbiguities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoreAmbiguities] (val x: Self) extends AnyVal {
       
       inline def setDefinition(value: js.Array[IProduction]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       
@@ -284,7 +292,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
@@ -313,7 +322,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setDefinition(value: js.Array[IProduction]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       
@@ -340,7 +350,8 @@ object anon {
       __obj.asInstanceOf[Payload]
     }
     
-    extension [Self <: Payload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -365,7 +376,8 @@ object anon {
       __obj.asInstanceOf[Separator]
     }
     
-    extension [Self <: Separator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Separator] (val x: Self) extends AnyVal {
       
       inline def setDefinition(value: js.Array[IProduction]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: `false`): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: Boolean | String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object anon {
       __obj.asInstanceOf[Browser]
     }
     
-    extension [Self <: Browser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: Boolean): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object anon {
       __obj.asInstanceOf[BrowserFields]
     }
     
-    extension [Self <: BrowserFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserFields] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -142,7 +146,8 @@ object anon {
       __obj.asInstanceOf[Conditions]
     }
     
-    extension [Self <: Conditions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Conditions] (val x: Self) extends AnyVal {
       
       inline def setConditions(value: js.Array[String]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
@@ -169,7 +174,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: `true`): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       

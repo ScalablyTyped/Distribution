@@ -35,7 +35,8 @@ object PlotHeatmapOnPointOptions {
     __obj.asInstanceOf[PlotHeatmapOnPointOptions]
   }
   
-  extension [Self <: PlotHeatmapOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHeatmapOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotHeatmapOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

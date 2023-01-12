@@ -107,7 +107,8 @@ object mod {
       __obj.asInstanceOf[Options_[Schema]]
     }
     
-    extension [Self <: Options_[?], Schema /* <: JSONSchema */](x: Self & Options_[Schema]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options_[?], Schema /* <: JSONSchema */] (val x: Self & Options_[Schema]) extends AnyVal {
       
       inline def setIgnoreAdditionalProperties(value: Boolean): Self = StObject.set(x, "ignoreAdditionalProperties", value.asInstanceOf[js.Any])
       
@@ -740,7 +741,8 @@ object mod {
       __obj.asInstanceOf[Resolvers[Schema]]
     }
     
-    extension [Self <: Resolvers[?], Schema /* <: JSONSchema */](x: Self & Resolvers[Schema]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resolvers[?], Schema /* <: JSONSchema */] (val x: Self & Resolvers[Schema]) extends AnyVal {
       
       inline def set$id(
         value: (js.Array[

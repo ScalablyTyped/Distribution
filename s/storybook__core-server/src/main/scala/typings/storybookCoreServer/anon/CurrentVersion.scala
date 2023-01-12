@@ -19,7 +19,8 @@ object CurrentVersion {
     __obj.asInstanceOf[CurrentVersion]
   }
   
-  extension [Self <: CurrentVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentVersion] (val x: Self) extends AnyVal {
     
     inline def setCurrentVersion(value: String): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TypeofSource {
     __obj.asInstanceOf[TypeofSource]
   }
   
-  extension [Self <: TypeofSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSource] (val x: Self) extends AnyVal {
     
     inline def setSourceOrder(value: Any): Self = StObject.set(x, "SourceOrder", value.asInstanceOf[js.Any])
   }

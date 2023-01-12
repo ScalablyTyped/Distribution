@@ -33,7 +33,8 @@ object CreateCoreDefinitionRequest {
     __obj.asInstanceOf[CreateCoreDefinitionRequest]
   }
   
-  extension [Self <: CreateCoreDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCoreDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     

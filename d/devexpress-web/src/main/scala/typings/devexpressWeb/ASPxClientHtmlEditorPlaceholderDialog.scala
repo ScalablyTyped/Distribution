@@ -28,7 +28,8 @@ object ASPxClientHtmlEditorPlaceholderDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorPlaceholderDialog]
   }
   
-  extension [Self <: ASPxClientHtmlEditorPlaceholderDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorPlaceholderDialog] (val x: Self) extends AnyVal {
     
     inline def setGetPlaceholderNameListBox(value: () => ASPxClientListBox): Self = StObject.set(x, "GetPlaceholderNameListBox", js.Any.fromFunction0(value))
   }

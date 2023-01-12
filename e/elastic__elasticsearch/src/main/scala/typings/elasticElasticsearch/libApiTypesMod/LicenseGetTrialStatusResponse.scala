@@ -15,7 +15,8 @@ object LicenseGetTrialStatusResponse {
     __obj.asInstanceOf[LicenseGetTrialStatusResponse]
   }
   
-  extension [Self <: LicenseGetTrialStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseGetTrialStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setEligible_to_start_trial(value: Boolean): Self = StObject.set(x, "eligible_to_start_trial", value.asInstanceOf[js.Any])
   }

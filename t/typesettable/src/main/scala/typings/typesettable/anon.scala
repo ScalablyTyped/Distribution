@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Destroy]
     }
     
-    extension [Self <: Destroy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Destroy] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[KinIXAlignnumber]
     }
     
-    extension [Self <: KinIXAlignnumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinIXAlignnumber] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: Double): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -91,7 +94,8 @@ object anon {
       __obj.asInstanceOf[KinIYAlignnumber]
     }
     
-    extension [Self <: KinIYAlignnumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinIYAlignnumber] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -112,7 +116,8 @@ object anon {
       __obj.asInstanceOf[Write]
     }
     
-    extension [Self <: Write](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Write] (val x: Self) extends AnyVal {
       
       inline def setWrite(value: (String, Double, IXAlign, Double, Double) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction5(value))
     }

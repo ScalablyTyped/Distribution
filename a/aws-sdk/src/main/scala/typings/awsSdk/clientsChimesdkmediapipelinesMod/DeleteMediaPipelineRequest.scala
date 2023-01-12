@@ -18,7 +18,8 @@ object DeleteMediaPipelineRequest {
     __obj.asInstanceOf[DeleteMediaPipelineRequest]
   }
   
-  extension [Self <: DeleteMediaPipelineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMediaPipelineRequest] (val x: Self) extends AnyVal {
     
     inline def setMediaPipelineId(value: GuidString): Self = StObject.set(x, "MediaPipelineId", value.asInstanceOf[js.Any])
   }

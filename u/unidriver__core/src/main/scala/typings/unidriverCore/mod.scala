@@ -126,7 +126,8 @@ object mod {
       __obj.asInstanceOf[DriverContext]
     }
     
-    extension [Self <: DriverContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DriverContext] (val x: Self) extends AnyVal {
       
       inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object mod {
       __obj.asInstanceOf[EnterValueOptions]
     }
     
-    extension [Self <: EnterValueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnterValueOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -198,7 +200,8 @@ object mod {
       __obj.asInstanceOf[MouseUniDriver[T]]
     }
     
-    extension [Self <: MouseUniDriver[?], T](x: Self & MouseUniDriver[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseUniDriver[?], T] (val x: Self & MouseUniDriver[T]) extends AnyVal {
       
       inline def setLeave(value: () => js.Promise[Unit]): Self = StObject.set(x, "leave", js.Any.fromFunction0(value))
       
@@ -294,7 +297,8 @@ object mod {
       __obj.asInstanceOf[UniDriverList[T]]
     }
     
-    extension [Self <: UniDriverList[?], T](x: Self & UniDriverList[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UniDriverList[?], T] (val x: Self & UniDriverList[T]) extends AnyVal {
       
       inline def setCount(value: () => js.Promise[Double]): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
       

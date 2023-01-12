@@ -35,7 +35,8 @@ object QueryBuilder {
     __obj.asInstanceOf[QueryBuilder]
   }
   
-  extension [Self <: QueryBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryBuilder] (val x: Self) extends AnyVal {
     
     inline def setBindings(value: () => js.Array[Any]): Self = StObject.set(x, "bindings", js.Any.fromFunction0(value))
     

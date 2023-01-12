@@ -91,7 +91,8 @@ object LocatorSearchSourceProperties {
     __obj.asInstanceOf[LocatorSearchSourceProperties]
   }
   
-  extension [Self <: LocatorSearchSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocatorSearchSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

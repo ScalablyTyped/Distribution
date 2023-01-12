@@ -71,7 +71,8 @@ object Rectangle {
       __obj.asInstanceOf[EventMap[I]]
     }
     
-    extension [Self <: EventMap[?], I](x: Self & EventMap[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
       
       inline def setSetBounds(value: Event_[setBounds, Unit]): Self = StObject.set(x, "setBounds", value.asInstanceOf[js.Any])
     }
@@ -184,7 +185,8 @@ object Rectangle {
       __obj.asInstanceOf[GetOptionsResult[ExtraData]]
     }
     
-    extension [Self <: GetOptionsResult[?], ExtraData](x: Self & GetOptionsResult[ExtraData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOptionsResult[?], ExtraData] (val x: Self & GetOptionsResult[ExtraData]) extends AnyVal {
       
       inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -240,7 +242,8 @@ object Rectangle {
       __obj.asInstanceOf[Options[ExtraData]]
     }
     
-    extension [Self <: Options[?], ExtraData](x: Self & Options[ExtraData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
       
       inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       

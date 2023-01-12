@@ -18,7 +18,8 @@ object StatSyncOptionsbigintfals {
     __obj.asInstanceOf[StatSyncOptionsbigintfals]
   }
   
-  extension [Self <: StatSyncOptionsbigintfals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatSyncOptionsbigintfals] (val x: Self) extends AnyVal {
     
     inline def setBigint(value: Boolean): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
     

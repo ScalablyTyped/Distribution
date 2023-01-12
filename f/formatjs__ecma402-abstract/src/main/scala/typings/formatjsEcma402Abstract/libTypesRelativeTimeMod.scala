@@ -38,7 +38,8 @@ object libTypesRelativeTimeMod {
       __obj.asInstanceOf[FieldData]
     }
     
-    extension [Self <: FieldData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldData] (val x: Self) extends AnyVal {
       
       inline def `set-1`(value: String): Self = StObject.set(x, "-1", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object libTypesRelativeTimeMod {
       __obj.asInstanceOf[LocaleFieldsData]
     }
     
-    extension [Self <: LocaleFieldsData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocaleFieldsData] (val x: Self) extends AnyVal {
       
       inline def setDay(value: FieldData): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -262,7 +264,8 @@ object libTypesRelativeTimeMod {
       __obj.asInstanceOf[RelativeTimeData]
     }
     
-    extension [Self <: RelativeTimeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelativeTimeData] (val x: Self) extends AnyVal {
       
       inline def setFew(value: String): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
       
@@ -402,7 +405,8 @@ object libTypesRelativeTimeMod {
       __obj.asInstanceOf[RelativeTimeFormatInternal]
     }
     
-    extension [Self <: RelativeTimeFormatInternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelativeTimeFormatInternal] (val x: Self) extends AnyVal {
       
       inline def setFields(value: LocaleFieldsData): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -515,7 +519,8 @@ object libTypesRelativeTimeMod {
       __obj.asInstanceOf[UnpackedLocaleFieldsData]
     }
     
-    extension [Self <: UnpackedLocaleFieldsData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnpackedLocaleFieldsData] (val x: Self) extends AnyVal {
       
       inline def setDay(value: FieldData): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       

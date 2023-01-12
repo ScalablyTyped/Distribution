@@ -18,7 +18,8 @@ object CreateScriptOutput {
     __obj.asInstanceOf[CreateScriptOutput]
   }
   
-  extension [Self <: CreateScriptOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateScriptOutput] (val x: Self) extends AnyVal {
     
     inline def setScript(value: Script): Self = StObject.set(x, "Script", value.asInstanceOf[js.Any])
     

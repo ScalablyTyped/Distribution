@@ -622,7 +622,8 @@ object builtConfigMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAfterLaunch(value: /* exitCode */ Double => Unit): Self = StObject.set(x, "afterLaunch", js.Any.fromFunction1(value))
       

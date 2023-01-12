@@ -96,7 +96,8 @@ object DescribeHyperParameterTuningJobResponse {
     __obj.asInstanceOf[DescribeHyperParameterTuningJobResponse]
   }
   
-  extension [Self <: DescribeHyperParameterTuningJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHyperParameterTuningJobResponse] (val x: Self) extends AnyVal {
     
     inline def setBestTrainingJob(value: HyperParameterTrainingJobSummary): Self = StObject.set(x, "BestTrainingJob", value.asInstanceOf[js.Any])
     

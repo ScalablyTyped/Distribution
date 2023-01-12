@@ -45,7 +45,8 @@ object PopupProps {
     __obj.asInstanceOf[PopupProps]
   }
   
-  extension [Self <: PopupProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupProps] (val x: Self) extends AnyVal {
     
     inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     

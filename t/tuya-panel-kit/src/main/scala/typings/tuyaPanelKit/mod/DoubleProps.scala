@@ -160,7 +160,8 @@ object DoubleProps {
     __obj.asInstanceOf[DoubleProps]
   }
   
-  extension [Self <: DoubleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoubleProps] (val x: Self) extends AnyVal {
     
     inline def setEndColor(value: String): Self = StObject.set(x, "endColor", value.asInstanceOf[js.Any])
     

@@ -97,7 +97,8 @@ object libComponentsHoverCardHoverCardDotbaseMod {
       __obj.asInstanceOf[IHoverCardState]
     }
     
-    extension [Self <: IHoverCardState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHoverCardState] (val x: Self) extends AnyVal {
       
       inline def setIsHoverCardVisible(value: Boolean): Self = StObject.set(x, "isHoverCardVisible", value.asInstanceOf[js.Any])
       

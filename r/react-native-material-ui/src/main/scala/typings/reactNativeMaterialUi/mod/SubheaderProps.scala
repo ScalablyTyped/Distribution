@@ -22,7 +22,8 @@ object SubheaderProps {
     __obj.asInstanceOf[SubheaderProps]
   }
   
-  extension [Self <: SubheaderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubheaderProps] (val x: Self) extends AnyVal {
     
     inline def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     

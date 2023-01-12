@@ -37,7 +37,8 @@ object ISharedDocument {
     __obj.asInstanceOf[ISharedDocument]
   }
   
-  extension [Self <: ISharedDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISharedDocument] (val x: Self) extends AnyVal {
     
     inline def setChanged(value: ISignal[ISharedDocument, DocumentChange]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     

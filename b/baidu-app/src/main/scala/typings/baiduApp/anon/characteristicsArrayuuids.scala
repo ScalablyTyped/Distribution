@@ -20,7 +20,8 @@ object characteristicsArrayuuids {
     __obj.asInstanceOf[characteristicsArrayuuids]
   }
   
-  extension [Self <: characteristicsArrayuuids](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: characteristicsArrayuuids] (val x: Self) extends AnyVal {
     
     inline def setCharacteristics(value: js.Array[Properties]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
     

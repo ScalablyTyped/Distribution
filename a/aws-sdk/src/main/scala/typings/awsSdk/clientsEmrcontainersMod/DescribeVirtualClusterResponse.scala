@@ -18,7 +18,8 @@ object DescribeVirtualClusterResponse {
     __obj.asInstanceOf[DescribeVirtualClusterResponse]
   }
   
-  extension [Self <: DescribeVirtualClusterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVirtualClusterResponse] (val x: Self) extends AnyVal {
     
     inline def setVirtualCluster(value: VirtualCluster): Self = StObject.set(x, "virtualCluster", value.asInstanceOf[js.Any])
     

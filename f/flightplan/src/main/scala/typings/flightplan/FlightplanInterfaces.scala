@@ -20,7 +20,8 @@ object FlightplanInterfaces {
       __obj.asInstanceOf[CommandOptions]
     }
     
-    extension [Self <: CommandOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandOptions] (val x: Self) extends AnyVal {
       
       inline def setFailsafe(value: Boolean): Self = StObject.set(x, "failsafe", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object FlightplanInterfaces {
       __obj.asInstanceOf[CommandResult]
     }
     
-    extension [Self <: CommandResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandResult] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object FlightplanInterfaces {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object FlightplanInterfaces {
       __obj.asInstanceOf[PromptOptions]
     }
     
-    extension [Self <: PromptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromptOptions] (val x: Self) extends AnyVal {
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
@@ -141,7 +145,8 @@ object FlightplanInterfaces {
       __obj.asInstanceOf[Runtime]
     }
     
-    extension [Self <: Runtime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Runtime] (val x: Self) extends AnyVal {
       
       inline def setHosts(value: js.Array[Host]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
       
@@ -168,7 +173,8 @@ object FlightplanInterfaces {
       __obj.asInstanceOf[SudoOptions]
     }
     
-    extension [Self <: SudoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SudoOptions] (val x: Self) extends AnyVal {
       
       inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
@@ -193,7 +199,8 @@ object FlightplanInterfaces {
       __obj.asInstanceOf[TargetOptions]
     }
     
-    extension [Self <: TargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: String): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

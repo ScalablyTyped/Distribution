@@ -18,7 +18,8 @@ object UrlMatchResult {
     __obj.asInstanceOf[UrlMatchResult]
   }
   
-  extension [Self <: UrlMatchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlMatchResult] (val x: Self) extends AnyVal {
     
     inline def setConsumed(value: js.Array[UrlSegment]): Self = StObject.set(x, "consumed", value.asInstanceOf[js.Any])
     

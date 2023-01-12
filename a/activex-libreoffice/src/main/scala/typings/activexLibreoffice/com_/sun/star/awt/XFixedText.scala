@@ -50,7 +50,8 @@ object XFixedText {
     __obj.asInstanceOf[XFixedText]
   }
   
-  extension [Self <: XFixedText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFixedText] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: Double): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     

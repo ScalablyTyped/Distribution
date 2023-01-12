@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[FormatFourDigits]
     }
     
-    extension [Self <: FormatFourDigits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatFourDigits] (val x: Self) extends AnyVal {
       
       inline def setFormatFourDigits(value: Boolean): Self = StObject.set(x, "formatFourDigits", value.asInstanceOf[js.Any])
       

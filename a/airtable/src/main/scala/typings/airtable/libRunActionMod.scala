@@ -111,7 +111,8 @@ object libRunActionMod {
       __obj.asInstanceOf[ActionResponse]
     }
     
-    extension [Self <: ActionResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionResponse] (val x: Self) extends AnyVal {
       
       inline def setArrayBuffer(value: () => js.Promise[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       

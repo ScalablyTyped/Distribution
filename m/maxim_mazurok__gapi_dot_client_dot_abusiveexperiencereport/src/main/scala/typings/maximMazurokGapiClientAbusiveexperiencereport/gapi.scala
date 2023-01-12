@@ -46,7 +46,8 @@ object gapi {
           __obj.asInstanceOf[SiteSummaryResponse]
         }
         
-        extension [Self <: SiteSummaryResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SiteSummaryResponse] (val x: Self) extends AnyVal {
           
           inline def setAbusiveStatus(value: String): Self = StObject.set(x, "abusiveStatus", value.asInstanceOf[js.Any])
           
@@ -106,7 +107,8 @@ object gapi {
           __obj.asInstanceOf[ViolatingSitesResponse]
         }
         
-        extension [Self <: ViolatingSitesResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ViolatingSitesResponse] (val x: Self) extends AnyVal {
           
           inline def setViolatingSites(value: js.Array[SiteSummaryResponse]): Self = StObject.set(x, "violatingSites", value.asInstanceOf[js.Any])
           

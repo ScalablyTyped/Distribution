@@ -20,7 +20,8 @@ object distTypesSrcPalettePaletteQuantizerYieldValueMod {
       __obj.asInstanceOf[PaletteQuantizerYieldValue]
     }
     
-    extension [Self <: PaletteQuantizerYieldValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaletteQuantizerYieldValue] (val x: Self) extends AnyVal {
       
       inline def setPalette(value: Palette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
       

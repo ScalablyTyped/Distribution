@@ -73,7 +73,8 @@ object srcCoreComponentMod {
       __obj.asInstanceOf[ComponentParameters]
     }
     
-    extension [Self <: ComponentParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentParameters] (val x: Self) extends AnyVal {
       
       inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object PlayToConnectionTransferredEventArgs {
     __obj.asInstanceOf[PlayToConnectionTransferredEventArgs]
   }
   
-  extension [Self <: PlayToConnectionTransferredEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayToConnectionTransferredEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCurrentSource(value: PlayToSource): Self = StObject.set(x, "currentSource", value.asInstanceOf[js.Any])
     

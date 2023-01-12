@@ -15,7 +15,8 @@ object IDataProviderDeferral {
     __obj.asInstanceOf[IDataProviderDeferral]
   }
   
-  extension [Self <: IDataProviderDeferral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataProviderDeferral] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }

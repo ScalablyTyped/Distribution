@@ -98,7 +98,8 @@ object JobFlowInstancesConfig {
     __obj.asInstanceOf[JobFlowInstancesConfig]
   }
   
-  extension [Self <: JobFlowInstancesConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobFlowInstancesConfig] (val x: Self) extends AnyVal {
     
     inline def setAdditionalMasterSecurityGroups(value: SecurityGroupsList): Self = StObject.set(x, "AdditionalMasterSecurityGroups", value.asInstanceOf[js.Any])
     

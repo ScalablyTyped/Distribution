@@ -25,7 +25,8 @@ object Link {
   @js.native
   val ^ : FunctionComponent[LinkProps & AProps] = js.native
   
-  extension [Self <: Link](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

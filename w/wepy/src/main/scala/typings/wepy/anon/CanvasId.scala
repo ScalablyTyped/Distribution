@@ -23,7 +23,8 @@ object CanvasId {
     __obj.asInstanceOf[CanvasId]
   }
   
-  extension [Self <: CanvasId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasId] (val x: Self) extends AnyVal {
     
     inline def setCanvasId(value: String): Self = StObject.set(x, "canvasId", value.asInstanceOf[js.Any])
     

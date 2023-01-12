@@ -16,7 +16,8 @@ object IndicesGetFieldMappingTypeFieldMappings {
     __obj.asInstanceOf[IndicesGetFieldMappingTypeFieldMappings]
   }
   
-  extension [Self <: IndicesGetFieldMappingTypeFieldMappings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesGetFieldMappingTypeFieldMappings] (val x: Self) extends AnyVal {
     
     inline def setMappings(value: Record[Field, MappingFieldMapping]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
   }

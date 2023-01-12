@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[IIconClasses]
     }
     
-    extension [Self <: IIconClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIconClasses] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object mod {
       __obj.asInstanceOf[IPopParams]
     }
     
-    extension [Self <: IPopParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopParams] (val x: Self) extends AnyVal {
       
       inline def setToasterId(value: Double): Self = StObject.set(x, "toasterId", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object mod {
       __obj.asInstanceOf[IPopReturn]
     }
     
-    extension [Self <: IPopReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopReturn] (val x: Self) extends AnyVal {
       
       inline def setToastId(value: String | Double): Self = StObject.set(x, "toastId", value.asInstanceOf[js.Any])
       
@@ -132,7 +135,8 @@ object mod {
       __obj.asInstanceOf[IToast]
     }
     
-    extension [Self <: IToast](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToast] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -247,7 +251,8 @@ object mod {
       __obj.asInstanceOf[IToasterConfig]
     }
     
-    extension [Self <: IToasterConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToasterConfig] (val x: Self) extends AnyVal {
       
       inline def `setBody-output-type`(value: String): Self = StObject.set(x, "body-output-type", value.asInstanceOf[js.Any])
       
@@ -336,7 +341,8 @@ object mod {
       __obj.asInstanceOf[IToasterEventRegistry]
     }
     
-    extension [Self <: IToasterEventRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToasterEventRegistry] (val x: Self) extends AnyVal {
       
       inline def setSetup(value: () => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction0(value))
       

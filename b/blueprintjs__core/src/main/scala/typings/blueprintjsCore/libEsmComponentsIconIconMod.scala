@@ -142,7 +142,8 @@ object libEsmComponentsIconIconMod {
       __obj.asInstanceOf[IIconProps]
     }
     
-    extension [Self <: IIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIconProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

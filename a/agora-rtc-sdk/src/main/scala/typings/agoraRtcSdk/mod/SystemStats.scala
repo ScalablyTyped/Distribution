@@ -22,7 +22,8 @@ object SystemStats {
     __obj.asInstanceOf[SystemStats]
   }
   
-  extension [Self <: SystemStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemStats] (val x: Self) extends AnyVal {
     
     inline def setBatteryLevel(value: string): Self = StObject.set(x, "BatteryLevel", value.asInstanceOf[js.Any])
   }

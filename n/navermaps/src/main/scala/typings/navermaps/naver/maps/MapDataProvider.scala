@@ -22,7 +22,8 @@ object MapDataProvider {
     __obj.asInstanceOf[MapDataProvider]
   }
   
-  extension [Self <: MapDataProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapDataProvider] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: Bounds | BoundsLiteral | ArrayOfBounds | ArrayOfBoundsLiteral): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

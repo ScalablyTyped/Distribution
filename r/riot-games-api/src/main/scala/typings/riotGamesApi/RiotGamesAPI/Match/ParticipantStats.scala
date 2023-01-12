@@ -203,7 +203,8 @@ object ParticipantStats {
     __obj.asInstanceOf[ParticipantStats]
   }
   
-  extension [Self <: ParticipantStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticipantStats] (val x: Self) extends AnyVal {
     
     inline def setAssists(value: Double): Self = StObject.set(x, "assists", value.asInstanceOf[js.Any])
     

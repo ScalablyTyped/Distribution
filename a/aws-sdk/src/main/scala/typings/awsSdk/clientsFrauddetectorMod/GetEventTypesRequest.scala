@@ -28,7 +28,8 @@ object GetEventTypesRequest {
     __obj.asInstanceOf[GetEventTypesRequest]
   }
   
-  extension [Self <: GetEventTypesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEventTypesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: eventTypesMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

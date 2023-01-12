@@ -15,7 +15,8 @@ object EnumValuesDisabledAsDuplicateOfDefault {
     __obj.asInstanceOf[EnumValuesDisabledAsDuplicateOfDefault]
   }
   
-  extension [Self <: EnumValuesDisabledAsDuplicateOfDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesDisabledAsDuplicateOfDefault] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: DisabledAsDuplicateOfDefault): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

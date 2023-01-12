@@ -46,7 +46,8 @@ object tab {
       __obj.asInstanceOf[IBar]
     }
     
-    extension [Self <: IBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBar] (val x: Self) extends AnyVal {
       
       inline def setAfterComponentLayout(value: /* width */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "afterComponentLayout", js.Any.fromFunction1(value))
       
@@ -132,7 +133,8 @@ object tab {
       __obj.asInstanceOf[typings.extjs.Ext.tab.IPanel]
     }
     
-    extension [Self <: typings.extjs.Ext.tab.IPanel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.tab.IPanel] (val x: Self) extends AnyVal {
       
       inline def setActiveTab(value: Any): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
       
@@ -223,7 +225,8 @@ object tab {
       __obj.asInstanceOf[ITab]
     }
     
-    extension [Self <: ITab](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITab] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

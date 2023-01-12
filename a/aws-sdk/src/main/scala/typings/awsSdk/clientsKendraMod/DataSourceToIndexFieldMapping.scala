@@ -28,7 +28,8 @@ object DataSourceToIndexFieldMapping {
     __obj.asInstanceOf[DataSourceToIndexFieldMapping]
   }
   
-  extension [Self <: DataSourceToIndexFieldMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceToIndexFieldMapping] (val x: Self) extends AnyVal {
     
     inline def setDataSourceFieldName(value: DataSourceFieldName): Self = StObject.set(x, "DataSourceFieldName", value.asInstanceOf[js.Any])
     

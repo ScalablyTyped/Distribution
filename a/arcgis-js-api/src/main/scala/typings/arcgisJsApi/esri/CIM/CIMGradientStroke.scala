@@ -56,7 +56,8 @@ object CIMGradientStroke {
     __obj.asInstanceOf[CIMGradientStroke]
   }
   
-  extension [Self <: CIMGradientStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGradientStroke] (val x: Self) extends AnyVal {
     
     inline def setColorRamp(value: Any): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
     

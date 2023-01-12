@@ -20,7 +20,8 @@ object PartialsheetNamestringrow {
     __obj.asInstanceOf[PartialsheetNamestringrow]
   }
   
-  extension [Self <: PartialsheetNamestringrow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialsheetNamestringrow] (val x: Self) extends AnyVal {
     
     inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     

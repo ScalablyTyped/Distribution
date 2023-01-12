@@ -19,7 +19,8 @@ object ParametersVectorizationForbidden {
     __obj.asInstanceOf[ParametersVectorizationForbidden]
   }
   
-  extension [Self <: ParametersVectorizationForbidden](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersVectorizationForbidden] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

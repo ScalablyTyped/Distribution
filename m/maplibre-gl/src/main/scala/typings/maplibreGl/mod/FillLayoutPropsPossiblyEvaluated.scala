@@ -16,7 +16,8 @@ object FillLayoutPropsPossiblyEvaluated {
     __obj.asInstanceOf[FillLayoutPropsPossiblyEvaluated]
   }
   
-  extension [Self <: FillLayoutPropsPossiblyEvaluated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillLayoutPropsPossiblyEvaluated] (val x: Self) extends AnyVal {
     
     inline def `setFill-sort-key`(value: PossiblyEvaluatedPropertyValue[Double]): Self = StObject.set(x, "fill-sort-key", value.asInstanceOf[js.Any])
   }

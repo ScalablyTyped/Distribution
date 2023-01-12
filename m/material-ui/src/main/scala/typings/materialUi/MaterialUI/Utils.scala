@@ -28,7 +28,8 @@ object Utils {
         __obj.asInstanceOf[MuiColorObject]
       }
       
-      extension [Self <: MuiColorObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MuiColorObject] (val x: Self) extends AnyVal {
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -76,7 +77,8 @@ object Utils {
       __obj.asInstanceOf[Dom]
     }
     
-    extension [Self <: Dom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dom] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: (Element, String) => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction2(value))
       
@@ -120,7 +122,8 @@ object Utils {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setIsKeyboard(value: Event => Boolean): Self = StObject.set(x, "isKeyboard", js.Any.fromFunction1(value))
       

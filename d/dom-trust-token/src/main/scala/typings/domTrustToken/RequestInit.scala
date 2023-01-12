@@ -15,7 +15,8 @@ object RequestInit {
     __obj.asInstanceOf[RequestInit]
   }
   
-  extension [Self <: RequestInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestInit] (val x: Self) extends AnyVal {
     
     inline def setTrustToken(value: TrustToken): Self = StObject.set(x, "trustToken", value.asInstanceOf[js.Any])
     

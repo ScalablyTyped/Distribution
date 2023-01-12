@@ -19,7 +19,8 @@ object pluploadResponse {
     __obj.asInstanceOf[pluploadResponse]
   }
   
-  extension [Self <: pluploadResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pluploadResponse] (val x: Self) extends AnyVal {
     
     inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     

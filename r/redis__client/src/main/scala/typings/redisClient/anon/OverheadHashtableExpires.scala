@@ -17,7 +17,8 @@ object OverheadHashtableExpires {
     __obj.asInstanceOf[OverheadHashtableExpires]
   }
   
-  extension [Self <: OverheadHashtableExpires](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverheadHashtableExpires] (val x: Self) extends AnyVal {
     
     inline def setOverheadHashtableExpires(value: Double): Self = StObject.set(x, "overheadHashtableExpires", value.asInstanceOf[js.Any])
     

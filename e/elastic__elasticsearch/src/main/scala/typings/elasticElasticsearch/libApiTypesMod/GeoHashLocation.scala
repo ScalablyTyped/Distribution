@@ -17,7 +17,8 @@ object GeoHashLocation {
     __obj.asInstanceOf[GeoHashLocation]
   }
   
-  extension [Self <: GeoHashLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoHashLocation] (val x: Self) extends AnyVal {
     
     inline def setGeohash(value: GeoHash): Self = StObject.set(x, "geohash", value.asInstanceOf[js.Any])
   }

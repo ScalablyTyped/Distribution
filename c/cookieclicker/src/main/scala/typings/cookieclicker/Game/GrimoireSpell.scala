@@ -63,7 +63,8 @@ object GrimoireSpell {
     __obj.asInstanceOf[GrimoireSpell]
   }
   
-  extension [Self <: GrimoireSpell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrimoireSpell] (val x: Self) extends AnyVal {
     
     inline def setCostMin(value: Double): Self = StObject.set(x, "costMin", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object CallbacksWithType {
     __obj.asInstanceOf[CallbacksWithType[T]]
   }
   
-  extension [Self <: CallbacksWithType[?], T](x: Self & CallbacksWithType[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbacksWithType[?], T] (val x: Self & CallbacksWithType[T]) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

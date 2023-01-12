@@ -21,7 +21,8 @@ object IndicesFieldUsageStatsShardsStats {
     __obj.asInstanceOf[IndicesFieldUsageStatsShardsStats]
   }
   
-  extension [Self <: IndicesFieldUsageStatsShardsStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesFieldUsageStatsShardsStats] (val x: Self) extends AnyVal {
     
     inline def setAll_fields(value: IndicesFieldUsageStatsFieldSummary): Self = StObject.set(x, "all_fields", value.asInstanceOf[js.Any])
     

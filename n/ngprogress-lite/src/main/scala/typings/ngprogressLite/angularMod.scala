@@ -37,7 +37,8 @@ object angularMod {
         __obj.asInstanceOf[IConfigurationOptions]
       }
       
-      extension [Self <: IConfigurationOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IConfigurationOptions] (val x: Self) extends AnyVal {
         
         inline def setEase(value: String): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
         
@@ -79,7 +80,8 @@ object angularMod {
         __obj.asInstanceOf[INgProgressLiteProvider]
       }
       
-      extension [Self <: INgProgressLiteProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: INgProgressLiteProvider] (val x: Self) extends AnyVal {
         
         inline def setSettings(value: IConfigurationOptions): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       }

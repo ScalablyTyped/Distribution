@@ -29,7 +29,8 @@ object XSQLQueryComposerFactory {
     __obj.asInstanceOf[XSQLQueryComposerFactory]
   }
   
-  extension [Self <: XSQLQueryComposerFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSQLQueryComposerFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateQueryComposer(value: () => XSQLQueryComposer): Self = StObject.set(x, "createQueryComposer", js.Any.fromFunction0(value))
   }

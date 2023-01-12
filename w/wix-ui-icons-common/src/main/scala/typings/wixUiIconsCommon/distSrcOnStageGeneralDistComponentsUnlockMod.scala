@@ -27,7 +27,8 @@ object distSrcOnStageGeneralDistComponentsUnlockMod extends Shortcut {
       __obj.asInstanceOf[UnlockProps]
     }
     
-    extension [Self <: UnlockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnlockProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

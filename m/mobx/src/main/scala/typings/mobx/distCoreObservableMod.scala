@@ -49,7 +49,8 @@ object distCoreObservableMod {
       __obj.asInstanceOf[IDepTreeNode]
     }
     
-    extension [Self <: IDepTreeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDepTreeNode] (val x: Self) extends AnyVal {
       
       inline def setName_(value: String): Self = StObject.set(x, "name_", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object distCoreObservableMod {
       __obj.asInstanceOf[IObservable]
     }
     
-    extension [Self <: IObservable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObservable] (val x: Self) extends AnyVal {
       
       inline def setDiffValue_(value: Double): Self = StObject.set(x, "diffValue_", value.asInstanceOf[js.Any])
       

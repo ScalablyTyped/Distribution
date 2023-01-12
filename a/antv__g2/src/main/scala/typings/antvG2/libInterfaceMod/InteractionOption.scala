@@ -24,7 +24,8 @@ object InteractionOption {
     __obj.asInstanceOf[InteractionOption]
   }
   
-  extension [Self <: InteractionOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractionOption] (val x: Self) extends AnyVal {
     
     inline def setCfg(value: LooseObject): Self = StObject.set(x, "cfg", value.asInstanceOf[js.Any])
     

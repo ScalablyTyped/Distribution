@@ -34,7 +34,8 @@ object ZAxisProps {
     __obj.asInstanceOf[ZAxisProps]
   }
   
-  extension [Self <: ZAxisProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZAxisProps] (val x: Self) extends AnyVal {
     
     inline def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     

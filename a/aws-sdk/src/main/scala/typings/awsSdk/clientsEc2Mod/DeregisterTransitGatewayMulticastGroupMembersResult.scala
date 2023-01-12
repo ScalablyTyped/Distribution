@@ -18,7 +18,8 @@ object DeregisterTransitGatewayMulticastGroupMembersResult {
     __obj.asInstanceOf[DeregisterTransitGatewayMulticastGroupMembersResult]
   }
   
-  extension [Self <: DeregisterTransitGatewayMulticastGroupMembersResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterTransitGatewayMulticastGroupMembersResult] (val x: Self) extends AnyVal {
     
     inline def setDeregisteredMulticastGroupMembers(value: TransitGatewayMulticastDeregisteredGroupMembers): Self = StObject.set(x, "DeregisteredMulticastGroupMembers", value.asInstanceOf[js.Any])
     

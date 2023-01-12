@@ -17,7 +17,8 @@ object ProgressEvent {
     __obj.asInstanceOf[ProgressEvent[T]]
   }
   
-  extension [Self <: ProgressEvent[?], T](x: Self & ProgressEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressEvent[?], T] (val x: Self & ProgressEvent[T]) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

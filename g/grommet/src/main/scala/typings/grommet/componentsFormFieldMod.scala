@@ -79,7 +79,8 @@ object componentsFormFieldMod {
       __obj.asInstanceOf[FormFieldProps]
     }
     
-    extension [Self <: FormFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormFieldProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

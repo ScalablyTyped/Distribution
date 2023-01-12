@@ -19,7 +19,8 @@ object SignalFlowOptions {
     __obj.asInstanceOf[SignalFlowOptions]
   }
   
-  extension [Self <: SignalFlowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignalFlowOptions] (val x: Self) extends AnyVal {
     
     inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
     

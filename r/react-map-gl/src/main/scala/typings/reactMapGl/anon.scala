@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[DeltaScaleX]
     }
     
-    extension [Self <: DeltaScaleX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeltaScaleX] (val x: Self) extends AnyVal {
       
       inline def setDeltaScaleX(value: Double): Self = StObject.set(x, "deltaScaleX", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[MaxPitch]
     }
     
-    extension [Self <: MaxPitch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxPitch] (val x: Self) extends AnyVal {
       
       inline def setMaxPitch(value: Double): Self = StObject.set(x, "maxPitch", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -149,7 +153,8 @@ object anon {
       __obj.asInstanceOf[PartialMapState]
     }
     
-    extension [Self <: PartialMapState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMapState] (val x: Self) extends AnyVal {
       
       inline def setConstructor(value: /* props */ MapStateProps => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
       
@@ -217,7 +222,8 @@ object anon {
       __obj.asInstanceOf[PositionInputscalenumbers]
     }
     
-    extension [Self <: PositionInputscalenumbers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionInputscalenumbers] (val x: Self) extends AnyVal {
       
       inline def setPos(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
@@ -243,7 +249,8 @@ object anon {
       __obj.asInstanceOf[PositionInputstartPosnumb]
     }
     
-    extension [Self <: PositionInputstartPosnumb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionInputstartPosnumb] (val x: Self) extends AnyVal {
       
       inline def setPos(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
@@ -266,7 +273,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

@@ -69,7 +69,8 @@ object AddToSet {
     __obj.asInstanceOf[AddToSet[T]]
   }
   
-  extension [Self <: AddToSet[?], T](x: Self & AddToSet[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddToSet[?], T] (val x: Self & AddToSet[T]) extends AnyVal {
     
     inline def set$addToSet(value: ArraysOrEach[T] & Dictionary[Any]): Self = StObject.set(x, "$addToSet", value.asInstanceOf[js.Any])
     

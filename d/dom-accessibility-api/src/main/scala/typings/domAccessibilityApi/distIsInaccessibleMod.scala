@@ -35,7 +35,8 @@ object distIsInaccessibleMod {
       __obj.asInstanceOf[IsInaccessibleOptions]
     }
     
-    extension [Self <: IsInaccessibleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsInaccessibleOptions] (val x: Self) extends AnyVal {
       
       inline def setGetComputedStyle(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.getComputedStyle */ Any
@@ -62,7 +63,8 @@ object distIsInaccessibleMod {
       __obj.asInstanceOf[IsSubtreeInaccessibleOptions]
     }
     
-    extension [Self <: IsSubtreeInaccessibleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsSubtreeInaccessibleOptions] (val x: Self) extends AnyVal {
       
       inline def setGetComputedStyle(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.getComputedStyle */ Any

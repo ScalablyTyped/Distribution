@@ -34,7 +34,8 @@ object libStepsMod {
       __obj.asInstanceOf[StepsProps]
     }
     
-    extension [Self <: StepsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepsProps] (val x: Self) extends AnyVal {
       
       inline def setActiveStyle(value: CSSProperties | (js.Function1[/* dotValue */ Double, CSSProperties])): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
       

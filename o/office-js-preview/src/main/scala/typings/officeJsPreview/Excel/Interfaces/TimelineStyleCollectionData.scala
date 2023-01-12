@@ -16,7 +16,8 @@ object TimelineStyleCollectionData {
     __obj.asInstanceOf[TimelineStyleCollectionData]
   }
   
-  extension [Self <: TimelineStyleCollectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineStyleCollectionData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[TimelineStyleData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

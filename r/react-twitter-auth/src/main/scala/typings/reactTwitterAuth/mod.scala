@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[TwitterLoginProps]
     }
     
-    extension [Self <: TwitterLoginProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwitterLoginProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

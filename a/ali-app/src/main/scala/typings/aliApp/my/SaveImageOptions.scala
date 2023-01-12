@@ -24,7 +24,8 @@ object SaveImageOptions {
     __obj.asInstanceOf[SaveImageOptions]
   }
   
-  extension [Self <: SaveImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveImageOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* res */ ErrMsg => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

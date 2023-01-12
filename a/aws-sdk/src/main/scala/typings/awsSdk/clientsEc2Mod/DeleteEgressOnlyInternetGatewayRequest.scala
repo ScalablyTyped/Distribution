@@ -23,7 +23,8 @@ object DeleteEgressOnlyInternetGatewayRequest {
     __obj.asInstanceOf[DeleteEgressOnlyInternetGatewayRequest]
   }
   
-  extension [Self <: DeleteEgressOnlyInternetGatewayRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEgressOnlyInternetGatewayRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

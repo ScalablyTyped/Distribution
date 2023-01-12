@@ -40,7 +40,8 @@ object ISSLConfig {
     __obj.asInstanceOf[ISSLConfig]
   }
   
-  extension [Self <: ISSLConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISSLConfig] (val x: Self) extends AnyVal {
     
     inline def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     

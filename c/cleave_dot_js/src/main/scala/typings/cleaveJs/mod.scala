@@ -69,7 +69,8 @@ object mod {
       __obj.asInstanceOf[Cleave]
     }
     
-    extension [Self <: Cleave](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cleave] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -100,7 +101,8 @@ object mod {
       __obj.asInstanceOf[Properties]
     }
     
-    extension [Self <: Properties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
       
       inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }

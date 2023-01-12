@@ -28,7 +28,8 @@ object PathToConversionReportCompatibleFields {
     __obj.asInstanceOf[PathToConversionReportCompatibleFields]
   }
   
-  extension [Self <: PathToConversionReportCompatibleFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathToConversionReportCompatibleFields] (val x: Self) extends AnyVal {
     
     inline def setConversionDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "conversionDimensions", value.asInstanceOf[js.Any])
     

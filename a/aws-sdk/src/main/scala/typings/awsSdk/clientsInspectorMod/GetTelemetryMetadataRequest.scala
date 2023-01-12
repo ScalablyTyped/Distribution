@@ -18,7 +18,8 @@ object GetTelemetryMetadataRequest {
     __obj.asInstanceOf[GetTelemetryMetadataRequest]
   }
   
-  extension [Self <: GetTelemetryMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTelemetryMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
   }

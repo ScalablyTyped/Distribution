@@ -21,7 +21,8 @@ object SubAssembly {
     __obj.asInstanceOf[SubAssembly]
   }
   
-  extension [Self <: SubAssembly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubAssembly] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.SubAssembly): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

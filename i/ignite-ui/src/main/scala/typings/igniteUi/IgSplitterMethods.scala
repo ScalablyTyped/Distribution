@@ -97,7 +97,8 @@ object IgSplitterMethods {
     __obj.asInstanceOf[IgSplitterMethods]
   }
   
-  extension [Self <: IgSplitterMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgSplitterMethods] (val x: Self) extends AnyVal {
     
     inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     

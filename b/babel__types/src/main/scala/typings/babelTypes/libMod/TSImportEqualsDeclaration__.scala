@@ -33,7 +33,8 @@ object TSImportEqualsDeclaration__ {
     __obj.asInstanceOf[TSImportEqualsDeclaration__]
   }
   
-  extension [Self <: TSImportEqualsDeclaration__](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSImportEqualsDeclaration__] (val x: Self) extends AnyVal {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

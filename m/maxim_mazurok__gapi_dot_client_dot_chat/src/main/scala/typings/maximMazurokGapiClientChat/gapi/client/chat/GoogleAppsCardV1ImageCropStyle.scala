@@ -19,7 +19,8 @@ object GoogleAppsCardV1ImageCropStyle {
     __obj.asInstanceOf[GoogleAppsCardV1ImageCropStyle]
   }
   
-  extension [Self <: GoogleAppsCardV1ImageCropStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCardV1ImageCropStyle] (val x: Self) extends AnyVal {
     
     inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     

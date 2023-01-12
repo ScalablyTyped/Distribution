@@ -66,7 +66,8 @@ object DataSource {
     __obj.asInstanceOf[DataSource]
   }
   
-  extension [Self <: DataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
     
     inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     

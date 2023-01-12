@@ -15,7 +15,8 @@ object BaseRequest {
     __obj.asInstanceOf[BaseRequest]
   }
   
-  extension [Self <: BaseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseRequest] (val x: Self) extends AnyVal {
     
     inline def setOutputFormat(value: OutputFormat): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
     

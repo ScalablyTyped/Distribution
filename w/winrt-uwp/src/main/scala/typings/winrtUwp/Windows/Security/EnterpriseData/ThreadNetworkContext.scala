@@ -17,7 +17,8 @@ object ThreadNetworkContext {
     __obj.asInstanceOf[ThreadNetworkContext]
   }
   
-  extension [Self <: ThreadNetworkContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadNetworkContext] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }

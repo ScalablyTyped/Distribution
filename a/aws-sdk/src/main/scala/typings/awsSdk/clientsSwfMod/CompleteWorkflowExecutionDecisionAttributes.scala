@@ -18,7 +18,8 @@ object CompleteWorkflowExecutionDecisionAttributes {
     __obj.asInstanceOf[CompleteWorkflowExecutionDecisionAttributes]
   }
   
-  extension [Self <: CompleteWorkflowExecutionDecisionAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompleteWorkflowExecutionDecisionAttributes] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Data): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

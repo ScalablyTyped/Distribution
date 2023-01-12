@@ -362,7 +362,8 @@ object EnvelopeDocumentTabs {
     __obj.asInstanceOf[EnvelopeDocumentTabs]
   }
   
-  extension [Self <: EnvelopeDocumentTabs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeDocumentTabs] (val x: Self) extends AnyVal {
     
     inline def setApproveTabs(value: js.Array[Approve]): Self = StObject.set(x, "approveTabs", value.asInstanceOf[js.Any])
     

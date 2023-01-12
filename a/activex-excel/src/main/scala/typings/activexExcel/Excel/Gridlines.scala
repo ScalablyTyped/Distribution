@@ -43,7 +43,8 @@ object Gridlines {
     __obj.asInstanceOf[Gridlines]
   }
   
-  extension [Self <: Gridlines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gridlines] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

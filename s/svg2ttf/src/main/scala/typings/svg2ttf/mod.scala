@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[FontOptions]
     }
     
-    extension [Self <: FontOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontOptions] (val x: Self) extends AnyVal {
       
       inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[MicroBuffer]
     }
     
-    extension [Self <: MicroBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MicroBuffer] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     }

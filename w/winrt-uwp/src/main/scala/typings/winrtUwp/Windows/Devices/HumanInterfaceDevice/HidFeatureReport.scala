@@ -58,7 +58,8 @@ object HidFeatureReport {
     __obj.asInstanceOf[HidFeatureReport]
   }
   
-  extension [Self <: HidFeatureReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HidFeatureReport] (val x: Self) extends AnyVal {
     
     inline def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

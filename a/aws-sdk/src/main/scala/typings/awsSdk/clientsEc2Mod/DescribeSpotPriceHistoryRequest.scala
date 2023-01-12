@@ -58,7 +58,8 @@ object DescribeSpotPriceHistoryRequest {
     __obj.asInstanceOf[DescribeSpotPriceHistoryRequest]
   }
   
-  extension [Self <: DescribeSpotPriceHistoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSpotPriceHistoryRequest] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

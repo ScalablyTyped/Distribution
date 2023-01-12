@@ -19,7 +19,8 @@ object Dictkey {
     __obj.asInstanceOf[Dictkey[TOptions]]
   }
   
-  extension [Self <: Dictkey[?], TOptions](x: Self & Dictkey[TOptions]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictkey[?], TOptions] (val x: Self & Dictkey[TOptions]) extends AnyVal {
     
     inline def setProduction(value: Partial[TOptions]): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object Editors {
     __obj.asInstanceOf[Editors]
   }
   
-  extension [Self <: Editors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Editors] (val x: Self) extends AnyVal {
     
     inline def setDomainUsersCanEdit(value: Boolean): Self = StObject.set(x, "domainUsersCanEdit", value.asInstanceOf[js.Any])
     

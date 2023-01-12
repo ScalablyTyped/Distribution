@@ -32,7 +32,8 @@ object PickModalContainerPropsac {
     __obj.asInstanceOf[PickModalContainerPropsac]
   }
   
-  extension [Self <: PickModalContainerPropsac](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickModalContainerPropsac] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

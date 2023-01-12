@@ -67,7 +67,8 @@ object DescribeEnvironmentsMessa {
     __obj.asInstanceOf[DescribeEnvironmentsMessa]
   }
   
-  extension [Self <: DescribeEnvironmentsMessa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEnvironmentsMessa] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

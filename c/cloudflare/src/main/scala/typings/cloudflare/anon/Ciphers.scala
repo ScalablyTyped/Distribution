@@ -23,7 +23,8 @@ object Ciphers {
     __obj.asInstanceOf[Ciphers]
   }
   
-  extension [Self <: Ciphers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ciphers] (val x: Self) extends AnyVal {
     
     inline def setCiphers(value: js.Array[String]): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
     

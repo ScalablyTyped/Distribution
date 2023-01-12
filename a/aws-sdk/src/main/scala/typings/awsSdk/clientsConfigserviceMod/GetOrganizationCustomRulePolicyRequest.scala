@@ -18,7 +18,8 @@ object GetOrganizationCustomRulePolicyRequest {
     __obj.asInstanceOf[GetOrganizationCustomRulePolicyRequest]
   }
   
-  extension [Self <: GetOrganizationCustomRulePolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOrganizationCustomRulePolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setOrganizationConfigRuleName(value: OrganizationConfigRuleName): Self = StObject.set(x, "OrganizationConfigRuleName", value.asInstanceOf[js.Any])
   }

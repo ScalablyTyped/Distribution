@@ -73,7 +73,8 @@ object KmlPlacemark {
     __obj.asInstanceOf[KmlPlacemark]
   }
   
-  extension [Self <: KmlPlacemark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlPlacemark] (val x: Self) extends AnyVal {
     
     inline def setGetGeometry(value: () => KmlGeometry): Self = StObject.set(x, "getGeometry", js.Any.fromFunction0(value))
     

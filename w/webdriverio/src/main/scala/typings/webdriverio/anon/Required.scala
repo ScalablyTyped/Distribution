@@ -30,7 +30,8 @@ object Required {
     __obj.asInstanceOf[Required]
   }
   
-  extension [Self <: Required](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Required] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: WebDriverLogTypes): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

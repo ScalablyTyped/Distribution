@@ -23,7 +23,8 @@ object typesMod {
       __obj.asInstanceOf[MDCDataTableRowSelectionChangedEventDetail]
     }
     
-    extension [Self <: MDCDataTableRowSelectionChangedEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCDataTableRowSelectionChangedEventDetail] (val x: Self) extends AnyVal {
       
       inline def setRowId(value: String): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object typesMod {
       __obj.asInstanceOf[ProgressIndicatorStyles]
     }
     
-    extension [Self <: ProgressIndicatorStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressIndicatorStyles] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object typesMod {
       __obj.asInstanceOf[RowClickEventData]
     }
     
-    extension [Self <: RowClickEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowClickEventData] (val x: Self) extends AnyVal {
       
       inline def setRow(value: HTMLElement): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
@@ -96,7 +99,8 @@ object typesMod {
       __obj.asInstanceOf[SortActionEventData]
     }
     
-    extension [Self <: SortActionEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortActionEventData] (val x: Self) extends AnyVal {
       
       inline def setColumnId(value: String): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
       
@@ -125,7 +129,8 @@ object typesMod {
       __obj.asInstanceOf[SortActionEventDetail]
     }
     
-    extension [Self <: SortActionEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortActionEventDetail] (val x: Self) extends AnyVal {
       
       inline def setColumnId(value: String): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
       

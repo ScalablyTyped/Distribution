@@ -28,7 +28,8 @@ object NotificationContext {
     __obj.asInstanceOf[NotificationContext]
   }
   
-  extension [Self <: NotificationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationContext] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: ValidationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

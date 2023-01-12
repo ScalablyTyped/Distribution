@@ -20,7 +20,8 @@ object characteristicsArraychara {
     __obj.asInstanceOf[characteristicsArraychara]
   }
   
-  extension [Self <: characteristicsArraychara](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: characteristicsArraychara] (val x: Self) extends AnyVal {
     
     inline def setCharacteristics(value: js.Array[Properties]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object SunLightingProperties {
     __obj.asInstanceOf[SunLightingProperties]
   }
   
-  extension [Self <: SunLightingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SunLightingProperties] (val x: Self) extends AnyVal {
     
     inline def setAmbientOcclusionEnabled(value: Boolean): Self = StObject.set(x, "ambientOcclusionEnabled", value.asInstanceOf[js.Any])
     

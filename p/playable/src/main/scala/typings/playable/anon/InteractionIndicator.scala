@@ -38,7 +38,8 @@ object InteractionIndicator {
     __obj.asInstanceOf[InteractionIndicator]
   }
   
-  extension [Self <: InteractionIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractionIndicator] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

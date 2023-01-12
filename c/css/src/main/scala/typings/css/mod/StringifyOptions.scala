@@ -33,7 +33,8 @@ object StringifyOptions {
     __obj.asInstanceOf[StringifyOptions]
   }
   
-  extension [Self <: StringifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringifyOptions] (val x: Self) extends AnyVal {
     
     inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     

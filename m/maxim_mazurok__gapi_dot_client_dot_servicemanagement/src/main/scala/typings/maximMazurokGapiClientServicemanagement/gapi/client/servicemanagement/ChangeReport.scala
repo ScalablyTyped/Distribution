@@ -19,7 +19,8 @@ object ChangeReport {
     __obj.asInstanceOf[ChangeReport]
   }
   
-  extension [Self <: ChangeReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeReport] (val x: Self) extends AnyVal {
     
     inline def setConfigChanges(value: js.Array[ConfigChange]): Self = StObject.set(x, "configChanges", value.asInstanceOf[js.Any])
     

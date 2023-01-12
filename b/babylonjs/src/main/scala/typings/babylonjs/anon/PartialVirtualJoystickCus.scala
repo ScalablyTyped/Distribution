@@ -30,7 +30,8 @@ object PartialVirtualJoystickCus {
     __obj.asInstanceOf[PartialVirtualJoystickCus]
   }
   
-  extension [Self <: PartialVirtualJoystickCus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialVirtualJoystickCus] (val x: Self) extends AnyVal {
     
     inline def setAlwaysVisible(value: Boolean): Self = StObject.set(x, "alwaysVisible", value.asInstanceOf[js.Any])
     

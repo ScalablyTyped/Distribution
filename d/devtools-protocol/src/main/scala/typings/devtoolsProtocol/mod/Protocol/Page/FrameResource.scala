@@ -51,7 +51,8 @@ object FrameResource {
     __obj.asInstanceOf[FrameResource]
   }
   
-  extension [Self <: FrameResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameResource] (val x: Self) extends AnyVal {
     
     inline def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     

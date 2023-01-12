@@ -63,7 +63,8 @@ object PrinterLocation {
     __obj.asInstanceOf[PrinterLocation]
   }
   
-  extension [Self <: PrinterLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterLocation] (val x: Self) extends AnyVal {
     
     inline def setAltitudeInMeters(value: NullableOption[Double]): Self = StObject.set(x, "altitudeInMeters", value.asInstanceOf[js.Any])
     

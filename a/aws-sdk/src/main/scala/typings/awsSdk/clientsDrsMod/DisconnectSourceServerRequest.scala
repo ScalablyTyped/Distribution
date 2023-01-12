@@ -18,7 +18,8 @@ object DisconnectSourceServerRequest {
     __obj.asInstanceOf[DisconnectSourceServerRequest]
   }
   
-  extension [Self <: DisconnectSourceServerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisconnectSourceServerRequest] (val x: Self) extends AnyVal {
     
     inline def setSourceServerID(value: SourceServerID): Self = StObject.set(x, "sourceServerID", value.asInstanceOf[js.Any])
   }

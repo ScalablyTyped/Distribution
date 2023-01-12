@@ -17,7 +17,8 @@ object FieldMemoryUsage {
     __obj.asInstanceOf[FieldMemoryUsage]
   }
   
-  extension [Self <: FieldMemoryUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldMemoryUsage] (val x: Self) extends AnyVal {
     
     inline def setMemory_size(value: ByteSize): Self = StObject.set(x, "memory_size", value.asInstanceOf[js.Any])
     

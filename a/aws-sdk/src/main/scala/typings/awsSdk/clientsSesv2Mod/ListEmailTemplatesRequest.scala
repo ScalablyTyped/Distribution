@@ -23,7 +23,8 @@ object ListEmailTemplatesRequest {
     __obj.asInstanceOf[ListEmailTemplatesRequest]
   }
   
-  extension [Self <: ListEmailTemplatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEmailTemplatesRequest] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

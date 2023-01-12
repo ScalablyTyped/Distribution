@@ -16,7 +16,8 @@ object AddSheetResponse {
     __obj.asInstanceOf[AddSheetResponse]
   }
   
-  extension [Self <: AddSheetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddSheetResponse] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: SheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

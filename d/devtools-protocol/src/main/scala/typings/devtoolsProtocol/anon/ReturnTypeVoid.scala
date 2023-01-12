@@ -18,7 +18,8 @@ object ReturnTypeVoid {
     __obj.asInstanceOf[ReturnTypeVoid]
   }
   
-  extension [Self <: ReturnTypeVoid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeVoid] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[PauseOnAsyncCallRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

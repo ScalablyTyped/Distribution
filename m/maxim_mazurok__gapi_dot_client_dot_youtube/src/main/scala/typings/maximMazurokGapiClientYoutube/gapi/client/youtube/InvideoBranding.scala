@@ -28,7 +28,8 @@ object InvideoBranding {
     __obj.asInstanceOf[InvideoBranding]
   }
   
-  extension [Self <: InvideoBranding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvideoBranding] (val x: Self) extends AnyVal {
     
     inline def setImageBytes(value: String): Self = StObject.set(x, "imageBytes", value.asInstanceOf[js.Any])
     

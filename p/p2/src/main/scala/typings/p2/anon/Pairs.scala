@@ -19,7 +19,8 @@ object Pairs {
     __obj.asInstanceOf[Pairs]
   }
   
-  extension [Self <: Pairs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pairs] (val x: Self) extends AnyVal {
     
     inline def setPairs(value: js.Array[typings.p2.mod.Body]): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
     

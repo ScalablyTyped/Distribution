@@ -19,7 +19,8 @@ object LiveDelay {
     __obj.asInstanceOf[LiveDelay]
   }
   
-  extension [Self <: LiveDelay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveDelay] (val x: Self) extends AnyVal {
     
     inline def setLiveDelay(value: Double): Self = StObject.set(x, "liveDelay", value.asInstanceOf[js.Any])
     

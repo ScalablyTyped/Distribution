@@ -33,7 +33,8 @@ object PlotHeikinashiOnPointOptions {
     __obj.asInstanceOf[PlotHeikinashiOnPointOptions]
   }
   
-  extension [Self <: PlotHeikinashiOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHeikinashiOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotHeikinashiOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

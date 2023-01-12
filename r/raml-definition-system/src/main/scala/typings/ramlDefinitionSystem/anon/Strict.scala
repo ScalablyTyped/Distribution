@@ -35,7 +35,8 @@ object Strict {
     __obj.asInstanceOf[Strict]
   }
   
-  extension [Self <: Strict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Strict] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: NameString): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

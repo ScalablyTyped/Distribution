@@ -16,7 +16,8 @@ object TopoJSONOptions {
     __obj.asInstanceOf[TopoJSONOptions]
   }
   
-  extension [Self <: TopoJSONOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopoJSONOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultDataProjection(value: ProjectionLike): Self = StObject.set(x, "defaultDataProjection", value.asInstanceOf[js.Any])
     

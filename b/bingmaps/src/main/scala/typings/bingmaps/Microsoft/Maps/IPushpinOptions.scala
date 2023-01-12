@@ -57,7 +57,8 @@ object IPushpinOptions {
     __obj.asInstanceOf[IPushpinOptions]
   }
   
-  extension [Self <: IPushpinOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPushpinOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: Point): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

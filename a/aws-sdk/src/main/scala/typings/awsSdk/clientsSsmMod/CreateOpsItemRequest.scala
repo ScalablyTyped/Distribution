@@ -88,7 +88,8 @@ object CreateOpsItemRequest {
     __obj.asInstanceOf[CreateOpsItemRequest]
   }
   
-  extension [Self <: CreateOpsItemRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOpsItemRequest] (val x: Self) extends AnyVal {
     
     inline def setActualEndTime(value: js.Date): Self = StObject.set(x, "ActualEndTime", value.asInstanceOf[js.Any])
     

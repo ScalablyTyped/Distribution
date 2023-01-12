@@ -27,7 +27,8 @@ object AnnotationsTimeCyclesOptions {
     __obj.asInstanceOf[AnnotationsTimeCyclesOptions]
   }
   
-  extension [Self <: AnnotationsTimeCyclesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsTimeCyclesOptions] (val x: Self) extends AnyVal {
     
     inline def setControlPointOptions(value: AnnotationsTimeCyclesControlPointOptions): Self = StObject.set(x, "controlPointOptions", value.asInstanceOf[js.Any])
     

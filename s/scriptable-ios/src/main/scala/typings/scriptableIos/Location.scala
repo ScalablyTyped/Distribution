@@ -31,7 +31,8 @@ object Location {
       __obj.asInstanceOf[CurrentLocation]
     }
     
-    extension [Self <: CurrentLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentLocation] (val x: Self) extends AnyVal {
       
       inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object Location {
       __obj.asInstanceOf[GeocodeLocation]
     }
     
-    extension [Self <: GeocodeLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeocodeLocation] (val x: Self) extends AnyVal {
       
       inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object Location {
       __obj.asInstanceOf[GeocodePostalAddress]
     }
     
-    extension [Self <: GeocodePostalAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeocodePostalAddress] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
@@ -165,7 +168,8 @@ object Location {
       __obj.asInstanceOf[GeocodeSummary]
     }
     
-    extension [Self <: GeocodeSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeocodeSummary] (val x: Self) extends AnyVal {
       
       inline def setAdministrativeArea(value: String): Self = StObject.set(x, "administrativeArea", value.asInstanceOf[js.Any])
       

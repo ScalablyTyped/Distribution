@@ -33,7 +33,8 @@ object ListPolicyPrincipalsRequest {
     __obj.asInstanceOf[ListPolicyPrincipalsRequest]
   }
   
-  extension [Self <: ListPolicyPrincipalsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPolicyPrincipalsRequest] (val x: Self) extends AnyVal {
     
     inline def setAscendingOrder(value: AscendingOrder): Self = StObject.set(x, "ascendingOrder", value.asInstanceOf[js.Any])
     

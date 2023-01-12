@@ -1980,7 +1980,8 @@ object mod {
       __obj.asInstanceOf[ContextValue[T]]
     }
     
-    extension [Self <: ContextValue[?], T](x: Self & ContextValue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextValue[?], T] (val x: Self & ContextValue[T]) extends AnyVal {
       
       inline def setRef(value: MutableRefObject[T]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
@@ -6271,7 +6272,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setLabelable(value: Boolean): Self = StObject.set(x, "labelable", value.asInstanceOf[js.Any])
       
@@ -6338,7 +6340,8 @@ object mod {
       __obj.asInstanceOf[UseDrag1DProps]
     }
     
-    extension [Self <: UseDrag1DProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseDrag1DProps] (val x: Self) extends AnyVal {
       
       inline def setContainerRef(value: MutableRefObject[HTMLElement]): Self = StObject.set(x, "containerRef", value.asInstanceOf[js.Any])
       
@@ -6397,7 +6400,8 @@ object mod {
       __obj.asInstanceOf[ViewportSize]
     }
     
-    extension [Self <: ViewportSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewportSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -6418,7 +6422,8 @@ object mod {
       __obj.asInstanceOf[useResizeObserverOptionsType[T]]
     }
     
-    extension [Self <: useResizeObserverOptionsType[?], T](x: Self & useResizeObserverOptionsType[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: useResizeObserverOptionsType[?], T] (val x: Self & useResizeObserverOptionsType[T]) extends AnyVal {
       
       inline def setOnResize(value: () => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction0(value))
       

@@ -51,7 +51,8 @@ object DirectionsResponse {
     __obj.asInstanceOf[DirectionsResponse]
   }
   
-  extension [Self <: DirectionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsResponse] (val x: Self) extends AnyVal {
     
     inline def setAvailable_travel_modes(value: js.Array[String]): Self = StObject.set(x, "available_travel_modes", value.asInstanceOf[js.Any])
     

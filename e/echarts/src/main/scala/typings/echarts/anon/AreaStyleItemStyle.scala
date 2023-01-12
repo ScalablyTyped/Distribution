@@ -33,7 +33,8 @@ object AreaStyleItemStyle {
     __obj.asInstanceOf[AreaStyleItemStyle]
   }
   
-  extension [Self <: AreaStyleItemStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaStyleItemStyle] (val x: Self) extends AnyVal {
     
     inline def setAreaStyle(value: Opacity): Self = StObject.set(x, "areaStyle", value.asInstanceOf[js.Any])
     

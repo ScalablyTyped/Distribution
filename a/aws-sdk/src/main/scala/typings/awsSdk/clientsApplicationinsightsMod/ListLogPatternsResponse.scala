@@ -28,7 +28,8 @@ object ListLogPatternsResponse {
     __obj.asInstanceOf[ListLogPatternsResponse]
   }
   
-  extension [Self <: ListLogPatternsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLogPatternsResponse] (val x: Self) extends AnyVal {
     
     inline def setLogPatterns(value: LogPatternList): Self = StObject.set(x, "LogPatterns", value.asInstanceOf[js.Any])
     

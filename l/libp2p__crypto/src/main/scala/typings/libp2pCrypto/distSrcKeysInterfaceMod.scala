@@ -30,7 +30,8 @@ object distSrcKeysInterfaceMod {
       __obj.asInstanceOf[ECDHKeyPair]
     }
     
-    extension [Self <: ECDHKeyPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ECDHKeyPair] (val x: Self) extends AnyVal {
       
       inline def setPrivate(value: js.typedarray.Uint8Array): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object distSrcKeysInterfaceMod {
       __obj.asInstanceOf[JWKKeyPair]
     }
     
-    extension [Self <: JWKKeyPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JWKKeyPair] (val x: Self) extends AnyVal {
       
       inline def setPrivateKey(value: JsonWebKey): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object distSrcKeysInterfaceMod {
       __obj.asInstanceOf[Uint8ArrayKeyPair]
     }
     
-    extension [Self <: Uint8ArrayKeyPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Uint8ArrayKeyPair] (val x: Self) extends AnyVal {
       
       inline def setPrivateKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       

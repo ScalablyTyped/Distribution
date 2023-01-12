@@ -17,7 +17,8 @@ object IAuthCra {
     __obj.asInstanceOf[IAuthCra]
   }
   
-  extension [Self <: IAuthCra](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAuthCra] (val x: Self) extends AnyVal {
     
     inline def setDerive_key(value: (String, String, Double, Double) => String): Self = StObject.set(x, "derive_key", js.Any.fromFunction4(value))
     

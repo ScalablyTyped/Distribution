@@ -19,7 +19,8 @@ object ListPropertiesSuggestionState {
     __obj.asInstanceOf[ListPropertiesSuggestionState]
   }
   
-  extension [Self <: ListPropertiesSuggestionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPropertiesSuggestionState] (val x: Self) extends AnyVal {
     
     inline def setNestingLevelsSuggestionStates(value: js.Array[NestingLevelSuggestionState]): Self = StObject.set(x, "nestingLevelsSuggestionStates", value.asInstanceOf[js.Any])
     

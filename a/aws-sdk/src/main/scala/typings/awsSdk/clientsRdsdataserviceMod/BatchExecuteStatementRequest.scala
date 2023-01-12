@@ -48,7 +48,8 @@ object BatchExecuteStatementRequest {
     __obj.asInstanceOf[BatchExecuteStatementRequest]
   }
   
-  extension [Self <: BatchExecuteStatementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchExecuteStatementRequest] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: DbName): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object NativeUIEvent {
     __obj.asInstanceOf[NativeUIEvent]
   }
   
-  extension [Self <: NativeUIEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeUIEvent] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
   }

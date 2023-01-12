@@ -28,7 +28,8 @@ object PersonResponse {
     __obj.asInstanceOf[PersonResponse]
   }
   
-  extension [Self <: PersonResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersonResponse] (val x: Self) extends AnyVal {
     
     inline def setHttpStatusCode(value: Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
     

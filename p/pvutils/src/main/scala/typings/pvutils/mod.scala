@@ -178,7 +178,8 @@ object mod {
       __obj.asInstanceOf[HexBlock]
     }
     
-    extension [Self <: HexBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HexBlock] (val x: Self) extends AnyVal {
       
       inline def setValueHex(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "valueHex", value.asInstanceOf[js.Any])
       
@@ -199,7 +200,8 @@ object mod {
       __obj.asInstanceOf[LocalBaseBlock]
     }
     
-    extension [Self <: LocalBaseBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalBaseBlock] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

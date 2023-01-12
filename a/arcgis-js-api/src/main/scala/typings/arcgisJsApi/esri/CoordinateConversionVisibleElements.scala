@@ -41,7 +41,8 @@ object CoordinateConversionVisibleElements {
     __obj.asInstanceOf[CoordinateConversionVisibleElements]
   }
   
-  extension [Self <: CoordinateConversionVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoordinateConversionVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setCaptureButton(value: Boolean): Self = StObject.set(x, "captureButton", value.asInstanceOf[js.Any])
     

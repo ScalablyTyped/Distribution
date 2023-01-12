@@ -28,7 +28,8 @@ object ConvolverOptions {
     __obj.asInstanceOf[ConvolverOptions]
   }
   
-  extension [Self <: ConvolverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConvolverOptions] (val x: Self) extends AnyVal {
     
     inline def setImpulse(value: String): Self = StObject.set(x, "impulse", value.asInstanceOf[js.Any])
     

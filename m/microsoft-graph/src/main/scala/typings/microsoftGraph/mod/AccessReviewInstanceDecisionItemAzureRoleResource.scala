@@ -18,7 +18,8 @@ object AccessReviewInstanceDecisionItemAzureRoleResource {
     __obj.asInstanceOf[AccessReviewInstanceDecisionItemAzureRoleResource]
   }
   
-  extension [Self <: AccessReviewInstanceDecisionItemAzureRoleResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReviewInstanceDecisionItemAzureRoleResource] (val x: Self) extends AnyVal {
     
     inline def setScope(value: NullableOption[AccessReviewInstanceDecisionItemResource]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

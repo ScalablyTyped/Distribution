@@ -62,7 +62,8 @@ object srcNgtscCoreApiSrcOptionsMod {
       __obj.asInstanceOf[TestOnlyOptions]
     }
     
-    extension [Self <: TestOnlyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestOnlyOptions] (val x: Self) extends AnyVal {
       
       inline def setTracePerformance(value: String): Self = StObject.set(x, "tracePerformance", value.asInstanceOf[js.Any])
       

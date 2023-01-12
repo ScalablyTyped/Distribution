@@ -23,7 +23,8 @@ object AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetails] (val x: Self) extends AnyVal {
     
     inline def setType(value: NonEmptyString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

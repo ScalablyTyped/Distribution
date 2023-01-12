@@ -38,7 +38,8 @@ object ListAccessPreviewFindingsRequest {
     __obj.asInstanceOf[ListAccessPreviewFindingsRequest]
   }
   
-  extension [Self <: ListAccessPreviewFindingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccessPreviewFindingsRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessPreviewId(value: AccessPreviewId): Self = StObject.set(x, "accessPreviewId", value.asInstanceOf[js.Any])
     

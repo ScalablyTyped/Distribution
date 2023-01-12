@@ -30,7 +30,8 @@ object JsDecoderModule {
     __obj.asInstanceOf[JsDecoderModule]
   }
   
-  extension [Self <: JsDecoderModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsDecoderModule] (val x: Self) extends AnyVal {
     
     inline def setJsDecoderModule(value: String): Self = StObject.set(x, "jsDecoderModule", value.asInstanceOf[js.Any])
     

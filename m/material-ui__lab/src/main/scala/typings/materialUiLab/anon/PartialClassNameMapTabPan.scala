@@ -16,7 +16,8 @@ object PartialClassNameMapTabPan {
     __obj.asInstanceOf[PartialClassNameMapTabPan]
   }
   
-  extension [Self <: PartialClassNameMapTabPan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapTabPan] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

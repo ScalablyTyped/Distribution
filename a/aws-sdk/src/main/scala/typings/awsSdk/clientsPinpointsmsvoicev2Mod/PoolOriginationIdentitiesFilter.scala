@@ -23,7 +23,8 @@ object PoolOriginationIdentitiesFilter {
     __obj.asInstanceOf[PoolOriginationIdentitiesFilter]
   }
   
-  extension [Self <: PoolOriginationIdentitiesFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoolOriginationIdentitiesFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: PoolOriginationIdentitiesFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

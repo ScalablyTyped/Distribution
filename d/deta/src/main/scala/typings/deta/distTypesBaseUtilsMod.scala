@@ -54,7 +54,8 @@ object distTypesBaseUtilsMod {
       __obj.asInstanceOf[TTLResponse]
     }
     
-    extension [Self <: TTLResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TTLResponse] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

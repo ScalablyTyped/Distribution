@@ -21,7 +21,8 @@ object IPropertyValueSuggestion {
     __obj.asInstanceOf[IPropertyValueSuggestion]
   }
   
-  extension [Self <: IPropertyValueSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPropertyValueSuggestion] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IPropertyValueSuggestion): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

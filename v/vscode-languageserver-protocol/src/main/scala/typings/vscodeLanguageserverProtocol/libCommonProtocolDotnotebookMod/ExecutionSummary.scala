@@ -41,7 +41,8 @@ object ExecutionSummary {
   
   inline def is(value: Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.notebook.ExecutionSummary */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.notebook.ExecutionSummary */ Boolean]
   
-  extension [Self <: ExecutionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionSummary] (val x: Self) extends AnyVal {
     
     inline def setExecutionOrder(value: uinteger): Self = StObject.set(x, "executionOrder", value.asInstanceOf[js.Any])
     

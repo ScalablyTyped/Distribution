@@ -75,7 +75,8 @@ object XUIElementFactoryRegistration {
     __obj.asInstanceOf[XUIElementFactoryRegistration]
   }
   
-  extension [Self <: XUIElementFactoryRegistration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUIElementFactoryRegistration] (val x: Self) extends AnyVal {
     
     inline def setDeregisterFactory(value: (String, String, String) => Unit): Self = StObject.set(x, "deregisterFactory", js.Any.fromFunction3(value))
     

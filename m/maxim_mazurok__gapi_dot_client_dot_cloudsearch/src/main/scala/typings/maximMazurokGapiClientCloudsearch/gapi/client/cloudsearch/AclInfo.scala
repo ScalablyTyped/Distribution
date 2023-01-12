@@ -22,7 +22,8 @@ object AclInfo {
     __obj.asInstanceOf[AclInfo]
   }
   
-  extension [Self <: AclInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AclInfo] (val x: Self) extends AnyVal {
     
     inline def setGroupsCount(value: Double): Self = StObject.set(x, "groupsCount", value.asInstanceOf[js.Any])
     

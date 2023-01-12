@@ -19,7 +19,8 @@ object RollupGroupings {
     __obj.asInstanceOf[RollupGroupings]
   }
   
-  extension [Self <: RollupGroupings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupGroupings] (val x: Self) extends AnyVal {
     
     inline def setDate_histogram(value: RollupDateHistogramGrouping): Self = StObject.set(x, "date_histogram", value.asInstanceOf[js.Any])
     

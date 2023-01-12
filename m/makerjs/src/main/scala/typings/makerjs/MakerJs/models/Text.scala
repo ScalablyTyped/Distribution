@@ -20,7 +20,8 @@ object Text {
     __obj.asInstanceOf[Text]
   }
   
-  extension [Self <: Text](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
     
     inline def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
   }

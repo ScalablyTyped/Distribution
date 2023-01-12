@@ -61,7 +61,8 @@ object SerialPort {
     __obj.asInstanceOf[SerialPort]
   }
   
-  extension [Self <: SerialPort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerialPort] (val x: Self) extends AnyVal {
     
     inline def setDeviceInstanceId(value: String): Self = StObject.set(x, "deviceInstanceId", value.asInstanceOf[js.Any])
     

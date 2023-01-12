@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Allow]
     }
     
-    extension [Self <: Allow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Allow] (val x: Self) extends AnyVal {
       
       inline def setAllow(value: String): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Method]
     }
     
-    extension [Self <: Method](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -96,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Only]
     }
     
-    extension [Self <: Only](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Only] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -115,7 +119,8 @@ object anon {
       __obj.asInstanceOf[RemoveContentHeaders]
     }
     
-    extension [Self <: RemoveContentHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveContentHeaders] (val x: Self) extends AnyVal {
       
       inline def setRemoveContentHeaders(value: `true`): Self = StObject.set(x, "removeContentHeaders", value.asInstanceOf[js.Any])
     }

@@ -19,7 +19,8 @@ object VideoOffset {
     __obj.asInstanceOf[VideoOffset]
   }
   
-  extension [Self <: VideoOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoOffset] (val x: Self) extends AnyVal {
     
     inline def setOffsetPercentage(value: Double): Self = StObject.set(x, "offsetPercentage", value.asInstanceOf[js.Any])
     

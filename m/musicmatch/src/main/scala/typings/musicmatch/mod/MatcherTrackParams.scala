@@ -19,7 +19,8 @@ object MatcherTrackParams {
     __obj.asInstanceOf[MatcherTrackParams]
   }
   
-  extension [Self <: MatcherTrackParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatcherTrackParams] (val x: Self) extends AnyVal {
     
     inline def setF_has_lyrics(value: TBoolean): Self = StObject.set(x, "f_has_lyrics", value.asInstanceOf[js.Any])
     

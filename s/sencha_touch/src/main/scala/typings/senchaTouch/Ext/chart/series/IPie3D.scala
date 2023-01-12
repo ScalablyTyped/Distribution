@@ -72,7 +72,8 @@ object IPie3D {
     __obj.asInstanceOf[IPie3D]
   }
   
-  extension [Self <: IPie3D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPie3D] (val x: Self) extends AnyVal {
     
     inline def setDonut(value: Any): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
     

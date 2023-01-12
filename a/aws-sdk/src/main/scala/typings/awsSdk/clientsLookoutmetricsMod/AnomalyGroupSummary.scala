@@ -38,7 +38,8 @@ object AnomalyGroupSummary {
     __obj.asInstanceOf[AnomalyGroupSummary]
   }
   
-  extension [Self <: AnomalyGroupSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnomalyGroupSummary] (val x: Self) extends AnyVal {
     
     inline def setAnomalyGroupId(value: UUID): Self = StObject.set(x, "AnomalyGroupId", value.asInstanceOf[js.Any])
     

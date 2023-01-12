@@ -58,7 +58,8 @@ object RegisterContainerInstanceRequest {
     __obj.asInstanceOf[RegisterContainerInstanceRequest]
   }
   
-  extension [Self <: RegisterContainerInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterContainerInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

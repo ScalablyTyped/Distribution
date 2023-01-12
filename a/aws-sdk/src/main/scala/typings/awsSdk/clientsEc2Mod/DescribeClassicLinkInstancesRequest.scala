@@ -38,7 +38,8 @@ object DescribeClassicLinkInstancesRequest {
     __obj.asInstanceOf[DescribeClassicLinkInstancesRequest]
   }
   
-  extension [Self <: DescribeClassicLinkInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeClassicLinkInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

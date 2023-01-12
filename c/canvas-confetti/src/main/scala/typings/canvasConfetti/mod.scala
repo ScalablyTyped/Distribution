@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[GlobalOptions]
     }
     
-    extension [Self <: GlobalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalOptions] (val x: Self) extends AnyVal {
       
       inline def setDisableForReducedMotion(value: Boolean): Self = StObject.set(x, "disableForReducedMotion", value.asInstanceOf[js.Any])
       
@@ -182,7 +183,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -267,7 +269,8 @@ object mod {
       __obj.asInstanceOf[Origin]
     }
     
-    extension [Self <: Origin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

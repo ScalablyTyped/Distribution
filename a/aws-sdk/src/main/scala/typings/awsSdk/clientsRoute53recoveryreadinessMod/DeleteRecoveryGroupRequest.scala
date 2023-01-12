@@ -18,7 +18,8 @@ object DeleteRecoveryGroupRequest {
     __obj.asInstanceOf[DeleteRecoveryGroupRequest]
   }
   
-  extension [Self <: DeleteRecoveryGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRecoveryGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setRecoveryGroupName(value: string): Self = StObject.set(x, "RecoveryGroupName", value.asInstanceOf[js.Any])
   }

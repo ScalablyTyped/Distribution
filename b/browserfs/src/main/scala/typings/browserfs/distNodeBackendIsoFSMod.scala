@@ -208,7 +208,8 @@ object distNodeBackendIsoFSMod {
       __obj.asInstanceOf[IsoFSOptions]
     }
     
-    extension [Self <: IsoFSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsoFSOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

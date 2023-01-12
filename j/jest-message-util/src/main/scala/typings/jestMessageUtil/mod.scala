@@ -116,7 +116,8 @@ object mod {
       __obj.asInstanceOf[Frame]
     }
     
-    extension [Self <: Frame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
@@ -136,7 +137,8 @@ object mod {
       __obj.asInstanceOf[StackTraceConfig]
     }
     
-    extension [Self <: StackTraceConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackTraceConfig] (val x: Self) extends AnyVal {
       
       inline def setRootDir(value: String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object mod {
       __obj.asInstanceOf[StackTraceOptions]
     }
     
-    extension [Self <: StackTraceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackTraceOptions] (val x: Self) extends AnyVal {
       
       inline def setNoCodeFrame(value: Boolean): Self = StObject.set(x, "noCodeFrame", value.asInstanceOf[js.Any])
       

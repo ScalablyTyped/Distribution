@@ -196,7 +196,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[PromiseValue[T]]
       }
       
-      extension [Self <: PromiseValue[?], T](x: Self & PromiseValue[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PromiseValue[?], T] (val x: Self & PromiseValue[T]) extends AnyVal {
         
         inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         

@@ -95,7 +95,8 @@ object distCommonjsAddonsSelectSelectMod {
       __obj.asInstanceOf[StrictSelectProps]
     }
     
-    extension [Self <: StrictSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictSelectProps] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: js.Array[DropdownItemProps]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

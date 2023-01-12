@@ -17,7 +17,8 @@ object INDLicenseFetchCompletedEventArgs {
     __obj.asInstanceOf[INDLicenseFetchCompletedEventArgs]
   }
   
-  extension [Self <: INDLicenseFetchCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INDLicenseFetchCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setResponseCustomData(value: INDCustomData): Self = StObject.set(x, "responseCustomData", value.asInstanceOf[js.Any])
   }

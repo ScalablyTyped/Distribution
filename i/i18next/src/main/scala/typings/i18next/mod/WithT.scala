@@ -47,7 +47,8 @@ object WithT {
     __obj.asInstanceOf[WithT[N]]
   }
   
-  extension [Self <: WithT[?], N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](x: Self & WithT[N]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WithT[?], N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */] (val x: Self & WithT[N]) extends AnyVal {
     
     inline def setT(value: TFunction[N, Unit]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }

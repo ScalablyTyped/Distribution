@@ -18,7 +18,8 @@ object PublicKeyInfoJson {
     __obj.asInstanceOf[PublicKeyInfoJson]
   }
   
-  extension [Self <: PublicKeyInfoJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicKeyInfoJson] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: AlgorithmIdentifierJson): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

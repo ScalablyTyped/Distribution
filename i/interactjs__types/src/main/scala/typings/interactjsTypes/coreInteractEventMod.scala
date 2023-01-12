@@ -169,7 +169,8 @@ object coreInteractEventMod {
       __obj.asInstanceOf[PhaseMap]
     }
     
-    extension [Self <: PhaseMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhaseMap] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: `true`): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

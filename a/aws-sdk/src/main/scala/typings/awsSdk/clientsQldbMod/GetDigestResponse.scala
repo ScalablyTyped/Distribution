@@ -23,7 +23,8 @@ object GetDigestResponse {
     __obj.asInstanceOf[GetDigestResponse]
   }
   
-  extension [Self <: GetDigestResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDigestResponse] (val x: Self) extends AnyVal {
     
     inline def setDigest(value: Digest): Self = StObject.set(x, "Digest", value.asInstanceOf[js.Any])
     

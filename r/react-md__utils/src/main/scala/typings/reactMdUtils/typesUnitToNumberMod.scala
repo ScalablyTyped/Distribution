@@ -29,7 +29,8 @@ object typesUnitToNumberMod {
       __obj.asInstanceOf[UnitToNumberOptions]
     }
     
-    extension [Self <: UnitToNumberOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnitToNumberOptions] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object FilterActivity {
     __obj.asInstanceOf[FilterActivity]
   }
   
-  extension [Self <: FilterActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterActivity] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: FilterExpression): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

@@ -108,7 +108,8 @@ object pluginsColumnSummaryColumnSummaryMod {
       __obj.asInstanceOf[Endpoint]
     }
     
-    extension [Self <: Endpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
       
       inline def setCustomFunction(value: js.ThisFunction1[/* this */ ColumnSummary, Endpoint, Double]): Self = StObject.set(x, "customFunction", value.asInstanceOf[js.Any])
       

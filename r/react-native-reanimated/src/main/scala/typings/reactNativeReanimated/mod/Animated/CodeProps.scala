@@ -19,7 +19,8 @@ object CodeProps {
     __obj.asInstanceOf[CodeProps]
   }
   
-  extension [Self <: CodeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: () => AnimatedNode[Double]): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
     

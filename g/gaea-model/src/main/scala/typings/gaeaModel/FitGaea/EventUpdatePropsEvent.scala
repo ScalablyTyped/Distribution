@@ -18,7 +18,8 @@ object EventUpdatePropsEvent {
     __obj.asInstanceOf[EventUpdatePropsEvent]
   }
   
-  extension [Self <: EventUpdatePropsEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventUpdatePropsEvent] (val x: Self) extends AnyVal {
     
     inline def setProps(value: ComponentProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }

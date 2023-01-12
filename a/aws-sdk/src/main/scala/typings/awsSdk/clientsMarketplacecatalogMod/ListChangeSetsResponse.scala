@@ -23,7 +23,8 @@ object ListChangeSetsResponse {
     __obj.asInstanceOf[ListChangeSetsResponse]
   }
   
-  extension [Self <: ListChangeSetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListChangeSetsResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeSetSummaryList(value: ChangeSetSummaryList): Self = StObject.set(x, "ChangeSetSummaryList", value.asInstanceOf[js.Any])
     

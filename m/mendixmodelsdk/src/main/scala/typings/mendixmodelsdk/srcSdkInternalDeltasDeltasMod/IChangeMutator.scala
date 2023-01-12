@@ -22,7 +22,8 @@ object IChangeMutator {
     __obj.asInstanceOf[IChangeMutator]
   }
   
-  extension [Self <: IChangeMutator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IChangeMutator] (val x: Self) extends AnyVal {
     
     inline def setMutatorType(value: CHANGE): Self = StObject.set(x, "mutatorType", value.asInstanceOf[js.Any])
     

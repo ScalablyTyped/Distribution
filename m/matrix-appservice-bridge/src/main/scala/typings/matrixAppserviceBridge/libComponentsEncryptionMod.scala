@@ -98,7 +98,8 @@ object libComponentsEncryptionMod {
       __obj.asInstanceOf[ClientEncryptionSession]
     }
     
-    extension [Self <: ClientEncryptionSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientEncryptionSession] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object libComponentsEncryptionMod {
       __obj.asInstanceOf[ClientEncryptionStore]
     }
     
-    extension [Self <: ClientEncryptionStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientEncryptionStore] (val x: Self) extends AnyVal {
       
       inline def setGetStoredSession(value: String => js.Promise[ClientEncryptionSession | Null]): Self = StObject.set(x, "getStoredSession", js.Any.fromFunction1(value))
       

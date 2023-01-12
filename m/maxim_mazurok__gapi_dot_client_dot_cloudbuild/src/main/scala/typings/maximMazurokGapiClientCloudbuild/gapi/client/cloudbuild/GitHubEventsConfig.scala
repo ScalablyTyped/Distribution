@@ -31,7 +31,8 @@ object GitHubEventsConfig {
     __obj.asInstanceOf[GitHubEventsConfig]
   }
   
-  extension [Self <: GitHubEventsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitHubEventsConfig] (val x: Self) extends AnyVal {
     
     inline def setEnterpriseConfigResourceName(value: String): Self = StObject.set(x, "enterpriseConfigResourceName", value.asInstanceOf[js.Any])
     

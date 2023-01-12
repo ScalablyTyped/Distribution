@@ -15,7 +15,8 @@ object SQRT {
     __obj.asInstanceOf[SQRT]
   }
   
-  extension [Self <: SQRT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SQRT] (val x: Self) extends AnyVal {
     
     inline def setSQRT(value: Method): Self = StObject.set(x, "SQRT", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object ReturnTypeGetWindowBoundsResponse {
     __obj.asInstanceOf[ReturnTypeGetWindowBoundsResponse]
   }
   
-  extension [Self <: ReturnTypeGetWindowBoundsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetWindowBoundsResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetWindowBoundsRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

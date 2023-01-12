@@ -117,7 +117,8 @@ object distNodeEsmSrcCoreSnapChildrenNodeMod {
         __obj.asInstanceOf[typings.firebaseDatabase.distNodeEsmSrcCoreSnapChildrenNodeMod.firebaseDatabaseDistNodeEsmSrcCoreSnapNodeAugmentingMod.NamedNode]
       }
       
-      extension [Self <: typings.firebaseDatabase.distNodeEsmSrcCoreSnapChildrenNodeMod.firebaseDatabaseDistNodeEsmSrcCoreSnapNodeAugmentingMod.NamedNode](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.firebaseDatabase.distNodeEsmSrcCoreSnapChildrenNodeMod.firebaseDatabaseDistNodeEsmSrcCoreSnapNodeAugmentingMod.NamedNode] (val x: Self) extends AnyVal {
         
         inline def setMAX(
           value: typings.firebaseDatabase.distNodeEsmSrcCoreSnapChildrenNodeMod.firebaseDatabaseDistNodeEsmSrcCoreSnapNodeAugmentingMod.NamedNode

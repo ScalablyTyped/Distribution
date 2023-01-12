@@ -37,7 +37,8 @@ object InfobarDetails {
     __obj.asInstanceOf[InfobarDetails]
   }
   
-  extension [Self <: InfobarDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfobarDetails] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: InfobarActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     

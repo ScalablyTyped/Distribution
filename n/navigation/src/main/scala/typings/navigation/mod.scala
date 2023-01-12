@@ -921,7 +921,8 @@ object mod {
       __obj.asInstanceOf[StateInfo[Key]]
     }
     
-    extension [Self <: StateInfo[?], Key /* <: String */](x: Self & StateInfo[Key]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateInfo[?], Key /* <: String */] (val x: Self & StateInfo[Key]) extends AnyVal {
       
       inline def setDefaultTypes(value: Any): Self = StObject.set(x, "defaultTypes", value.asInstanceOf[js.Any])
       

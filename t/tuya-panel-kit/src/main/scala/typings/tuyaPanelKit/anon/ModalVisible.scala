@@ -15,7 +15,8 @@ object ModalVisible {
     __obj.asInstanceOf[ModalVisible]
   }
   
-  extension [Self <: ModalVisible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalVisible] (val x: Self) extends AnyVal {
     
     inline def setModalVisible(value: Boolean): Self = StObject.set(x, "modalVisible", value.asInstanceOf[js.Any])
   }

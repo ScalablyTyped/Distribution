@@ -18,7 +18,8 @@ object First {
     __obj.asInstanceOf[First[K, V]]
   }
   
-  extension [Self <: First[?, ?], K, V](x: Self & (First[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: First[?, ?], K, V] (val x: Self & (First[K, V])) extends AnyVal {
     
     inline def setFirst(value: IMapView[K, V]): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     

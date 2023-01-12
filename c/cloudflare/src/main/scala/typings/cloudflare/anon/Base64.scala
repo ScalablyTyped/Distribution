@@ -25,7 +25,8 @@ object Base64 {
     __obj.asInstanceOf[Base64]
   }
   
-  extension [Self <: Base64](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Base64] (val x: Self) extends AnyVal {
     
     inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
     

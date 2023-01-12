@@ -23,7 +23,8 @@ object ResourceCollectionFilter {
     __obj.asInstanceOf[ResourceCollectionFilter]
   }
   
-  extension [Self <: ResourceCollectionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceCollectionFilter] (val x: Self) extends AnyVal {
     
     inline def setCloudFormation(value: CloudFormationCollectionFilter): Self = StObject.set(x, "CloudFormation", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PageInjectableResources {
     __obj.asInstanceOf[PageInjectableResources]
   }
   
-  extension [Self <: PageInjectableResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageInjectableResources] (val x: Self) extends AnyVal {
     
     inline def setEmbeddedScripts(value: js.Array[String]): Self = StObject.set(x, "embeddedScripts", value.asInstanceOf[js.Any])
     

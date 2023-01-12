@@ -98,7 +98,8 @@ object ASPxClientCheckBox {
     __obj.asInstanceOf[ASPxClientCheckBox]
   }
   
-  extension [Self <: ASPxClientCheckBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCheckBox] (val x: Self) extends AnyVal {
     
     inline def setCheckedChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientCheckBox]]): Self = StObject.set(x, "CheckedChanged", value.asInstanceOf[js.Any])
     

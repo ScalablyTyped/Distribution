@@ -43,7 +43,8 @@ object ControlDomainInsights {
     __obj.asInstanceOf[ControlDomainInsights]
   }
   
-  extension [Self <: ControlDomainInsights](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlDomainInsights] (val x: Self) extends AnyVal {
     
     inline def setControlsCountByNoncompliantEvidence(value: NullableInteger): Self = StObject.set(x, "controlsCountByNoncompliantEvidence", value.asInstanceOf[js.Any])
     

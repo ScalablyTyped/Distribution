@@ -23,7 +23,8 @@ object CreateURL {
     __obj.asInstanceOf[CreateURL]
   }
   
-  extension [Self <: CreateURL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateURL] (val x: Self) extends AnyVal {
     
     inline def setCreateURL(value: /* repeated */ Any => String): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     

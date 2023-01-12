@@ -23,7 +23,8 @@ object InspectorIssue {
     __obj.asInstanceOf[InspectorIssue]
   }
   
-  extension [Self <: InspectorIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectorIssue] (val x: Self) extends AnyVal {
     
     inline def setCode(value: InspectorIssueCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

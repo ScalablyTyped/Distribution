@@ -36,7 +36,8 @@ object ForeignTextStyle {
     __obj.asInstanceOf[ForeignTextStyle]
   }
   
-  extension [Self <: ForeignTextStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForeignTextStyle] (val x: Self) extends AnyVal {
     
     inline def setLibraryID(value: Uuid): Self = StObject.set(x, "libraryID", value.asInstanceOf[js.Any])
     

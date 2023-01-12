@@ -104,7 +104,8 @@ object JQueryMobileEvents {
     __obj.asInstanceOf[JQueryMobileEvents]
   }
   
-  extension [Self <: JQueryMobileEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryMobileEvents] (val x: Self) extends AnyVal {
     
     inline def setOrientationchange(value: Any): Self = StObject.set(x, "orientationchange", value.asInstanceOf[js.Any])
     

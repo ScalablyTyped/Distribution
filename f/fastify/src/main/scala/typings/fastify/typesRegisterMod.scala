@@ -70,7 +70,8 @@ object typesRegisterMod {
       __obj.asInstanceOf[RegisterOptions]
     }
     
-    extension [Self <: RegisterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterOptions] (val x: Self) extends AnyVal {
       
       inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       

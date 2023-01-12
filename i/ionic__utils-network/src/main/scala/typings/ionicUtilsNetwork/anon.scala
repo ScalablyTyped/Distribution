@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Device]
     }
     
-    extension [Self <: Device](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Timeout]
     }
     
-    extension [Self <: Timeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

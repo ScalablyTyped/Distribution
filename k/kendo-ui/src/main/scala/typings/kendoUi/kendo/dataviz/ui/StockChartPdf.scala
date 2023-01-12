@@ -39,7 +39,8 @@ object StockChartPdf {
     __obj.asInstanceOf[StockChartPdf]
   }
   
-  extension [Self <: StockChartPdf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartPdf] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

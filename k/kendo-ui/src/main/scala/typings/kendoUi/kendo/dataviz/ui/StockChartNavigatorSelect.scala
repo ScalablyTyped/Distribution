@@ -19,7 +19,8 @@ object StockChartNavigatorSelect {
     __obj.asInstanceOf[StockChartNavigatorSelect]
   }
   
-  extension [Self <: StockChartNavigatorSelect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartNavigatorSelect] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: js.Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

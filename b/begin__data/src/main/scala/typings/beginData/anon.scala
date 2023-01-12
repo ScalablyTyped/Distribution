@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Dictothers]
     }
     
-    extension [Self <: Dictothers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictothers] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Table]
     }
     
-    extension [Self <: Table](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object IExportAgentResponse {
     __obj.asInstanceOf[IExportAgentResponse]
   }
   
-  extension [Self <: IExportAgentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExportAgentResponse] (val x: Self) extends AnyVal {
     
     inline def setAgentContent(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "agentContent", value.asInstanceOf[js.Any])
     

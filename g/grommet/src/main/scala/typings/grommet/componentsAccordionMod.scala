@@ -46,7 +46,8 @@ object componentsAccordionMod {
       __obj.asInstanceOf[AccordionProps]
     }
     
-    extension [Self <: AccordionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionProps] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: Double | js.Array[Double]): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       

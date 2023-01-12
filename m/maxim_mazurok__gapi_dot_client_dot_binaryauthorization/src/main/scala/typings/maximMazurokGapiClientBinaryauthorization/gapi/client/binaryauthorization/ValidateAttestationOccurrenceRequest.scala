@@ -25,7 +25,8 @@ object ValidateAttestationOccurrenceRequest {
     __obj.asInstanceOf[ValidateAttestationOccurrenceRequest]
   }
   
-  extension [Self <: ValidateAttestationOccurrenceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateAttestationOccurrenceRequest] (val x: Self) extends AnyVal {
     
     inline def setAttestation(value: AttestationOccurrence): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
     

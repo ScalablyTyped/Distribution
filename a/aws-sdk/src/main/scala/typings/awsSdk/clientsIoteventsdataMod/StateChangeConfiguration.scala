@@ -18,7 +18,8 @@ object StateChangeConfiguration {
     __obj.asInstanceOf[StateChangeConfiguration]
   }
   
-  extension [Self <: StateChangeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateChangeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setTriggerType(value: TriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
     

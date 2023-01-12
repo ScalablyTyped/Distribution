@@ -54,7 +54,8 @@ object NativeFunctionArgumentTypeMap {
     __obj.asInstanceOf[NativeFunctionArgumentTypeMap]
   }
   
-  extension [Self <: NativeFunctionArgumentTypeMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeFunctionArgumentTypeMap] (val x: Self) extends AnyVal {
     
     inline def setDotDotDot(value: Variadic): Self = StObject.set(x, "...", value.asInstanceOf[js.Any])
     

@@ -1060,7 +1060,8 @@ object sapMMessageViewMod {
       __obj.asInstanceOf[MessageViewSettings]
     }
     
-    extension [Self <: MessageViewSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageViewSettings] (val x: Self) extends AnyVal {
       
       inline def setActiveTitlePress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "activeTitlePress", js.Any.fromFunction1(value))
       

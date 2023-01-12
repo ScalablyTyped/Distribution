@@ -26,7 +26,8 @@ object PostParametersPathPackagetypeUsernameQueryToken {
     __obj.asInstanceOf[PostParametersPathPackagetypeUsernameQueryToken]
   }
   
-  extension [Self <: PostParametersPathPackagetypeUsernameQueryToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostParametersPathPackagetypeUsernameQueryToken] (val x: Self) extends AnyVal {
     
     inline def setPost(value: ParametersPathPackagetypeUsernameQueryToken): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }

@@ -25,7 +25,8 @@ object GoogleChannelConfig {
     __obj.asInstanceOf[GoogleChannelConfig]
   }
   
-  extension [Self <: GoogleChannelConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleChannelConfig] (val x: Self) extends AnyVal {
     
     inline def setCryptoKeyName(value: String): Self = StObject.set(x, "cryptoKeyName", value.asInstanceOf[js.Any])
     

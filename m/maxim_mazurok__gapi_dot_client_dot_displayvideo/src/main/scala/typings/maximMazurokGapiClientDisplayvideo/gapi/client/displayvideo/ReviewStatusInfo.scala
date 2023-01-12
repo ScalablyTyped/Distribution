@@ -28,7 +28,8 @@ object ReviewStatusInfo {
     __obj.asInstanceOf[ReviewStatusInfo]
   }
   
-  extension [Self <: ReviewStatusInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReviewStatusInfo] (val x: Self) extends AnyVal {
     
     inline def setApprovalStatus(value: String): Self = StObject.set(x, "approvalStatus", value.asInstanceOf[js.Any])
     

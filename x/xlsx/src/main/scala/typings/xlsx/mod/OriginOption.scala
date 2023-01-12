@@ -16,7 +16,8 @@ object OriginOption {
     __obj.asInstanceOf[OriginOption]
   }
   
-  extension [Self <: OriginOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginOption] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: Double | String | CellAddress): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

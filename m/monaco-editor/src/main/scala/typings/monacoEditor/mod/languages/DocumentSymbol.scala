@@ -37,7 +37,8 @@ object DocumentSymbol {
     __obj.asInstanceOf[DocumentSymbol]
   }
   
-  extension [Self <: DocumentSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSymbol] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[DocumentSymbol]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

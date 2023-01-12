@@ -23,7 +23,8 @@ object libTypescriptCoreSettingsMod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: IconProps => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
     }

@@ -38,7 +38,8 @@ object RecommendationDisruptionCompliance {
     __obj.asInstanceOf[RecommendationDisruptionCompliance]
   }
   
-  extension [Self <: RecommendationDisruptionCompliance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationDisruptionCompliance] (val x: Self) extends AnyVal {
     
     inline def setExpectedComplianceStatus(value: ComplianceStatus): Self = StObject.set(x, "expectedComplianceStatus", value.asInstanceOf[js.Any])
     

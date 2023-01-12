@@ -23,7 +23,8 @@ object LicensingOverride {
     __obj.asInstanceOf[LicensingOverride]
   }
   
-  extension [Self <: LicensingOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicensingOverride] (val x: Self) extends AnyVal {
     
     inline def setBehavior(value: ContributionLicensingBehaviorType): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     

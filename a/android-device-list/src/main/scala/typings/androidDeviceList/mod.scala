@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[Device]
     }
     
-    extension [Self <: Device](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
       
       inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
       

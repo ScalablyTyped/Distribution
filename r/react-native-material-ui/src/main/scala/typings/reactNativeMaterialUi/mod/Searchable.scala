@@ -35,7 +35,8 @@ object Searchable {
     __obj.asInstanceOf[Searchable]
   }
   
-  extension [Self <: Searchable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Searchable] (val x: Self) extends AnyVal {
     
     inline def setAutoCapitalize(value: none | sentences | words | characters): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
     

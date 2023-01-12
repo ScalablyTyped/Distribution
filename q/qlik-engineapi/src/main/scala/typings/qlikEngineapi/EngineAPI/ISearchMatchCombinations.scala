@@ -21,7 +21,8 @@ object ISearchMatchCombinations {
     __obj.asInstanceOf[ISearchMatchCombinations]
   }
   
-  extension [Self <: ISearchMatchCombinations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchMatchCombinations] (val x: Self) extends AnyVal {
     
     inline def setQSearchMatchCombinations(value: js.Array[ISerachMatchCombination]): Self = StObject.set(x, "qSearchMatchCombinations", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object DropdownWidget {
     __obj.asInstanceOf[DropdownWidget]
   }
   
-  extension [Self <: DropdownWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropdownWidget] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

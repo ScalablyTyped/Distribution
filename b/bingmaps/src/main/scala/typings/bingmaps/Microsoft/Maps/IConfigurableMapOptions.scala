@@ -19,7 +19,8 @@ object IConfigurableMapOptions {
     __obj.asInstanceOf[IConfigurableMapOptions]
   }
   
-  extension [Self <: IConfigurableMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConfigurableMapOptions] (val x: Self) extends AnyVal {
     
     inline def setMapOptions(value: IMapOptions): Self = StObject.set(x, "mapOptions", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object NotebookInstanceLifecycleHook {
     __obj.asInstanceOf[NotebookInstanceLifecycleHook]
   }
   
-  extension [Self <: NotebookInstanceLifecycleHook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookInstanceLifecycleHook] (val x: Self) extends AnyVal {
     
     inline def setContent(value: NotebookInstanceLifecycleConfigContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     

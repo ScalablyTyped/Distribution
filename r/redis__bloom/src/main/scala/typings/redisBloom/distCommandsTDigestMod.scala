@@ -203,7 +203,8 @@ object distCommandsTDigestMod {
       __obj.asInstanceOf[CompressionOption]
     }
     
-    extension [Self <: CompressionOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressionOption] (val x: Self) extends AnyVal {
       
       inline def setCOMPRESSION(value: Double): Self = StObject.set(x, "COMPRESSION", value.asInstanceOf[js.Any])
       

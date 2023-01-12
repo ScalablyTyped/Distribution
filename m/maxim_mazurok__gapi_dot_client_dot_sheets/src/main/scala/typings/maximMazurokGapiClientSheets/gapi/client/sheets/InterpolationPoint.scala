@@ -25,7 +25,8 @@ object InterpolationPoint {
     __obj.asInstanceOf[InterpolationPoint]
   }
   
-  extension [Self <: InterpolationPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpolationPoint] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

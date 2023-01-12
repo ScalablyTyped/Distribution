@@ -122,7 +122,8 @@ object Arialive {
     __obj.asInstanceOf[Arialive]
   }
   
-  extension [Self <: Arialive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arialive] (val x: Self) extends AnyVal {
     
     inline def `setAria-live`(value: String): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
     

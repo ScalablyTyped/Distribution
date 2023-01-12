@@ -15,7 +15,8 @@ object MasteryTreeListDto {
     __obj.asInstanceOf[MasteryTreeListDto]
   }
   
-  extension [Self <: MasteryTreeListDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MasteryTreeListDto] (val x: Self) extends AnyVal {
     
     inline def setMasteryTreeItems(value: js.Array[MasteryTreeItemDto]): Self = StObject.set(x, "masteryTreeItems", value.asInstanceOf[js.Any])
     

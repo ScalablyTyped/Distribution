@@ -33,7 +33,8 @@ object BatchParameters {
     __obj.asInstanceOf[BatchParameters]
   }
   
-  extension [Self <: BatchParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchParameters] (val x: Self) extends AnyVal {
     
     inline def setArrayProperties(value: BatchArrayProperties): Self = StObject.set(x, "ArrayProperties", value.asInstanceOf[js.Any])
     

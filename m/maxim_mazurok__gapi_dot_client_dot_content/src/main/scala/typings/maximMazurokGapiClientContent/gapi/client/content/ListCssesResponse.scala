@@ -19,7 +19,8 @@ object ListCssesResponse {
     __obj.asInstanceOf[ListCssesResponse]
   }
   
-  extension [Self <: ListCssesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCssesResponse] (val x: Self) extends AnyVal {
     
     inline def setCsses(value: js.Array[Css]): Self = StObject.set(x, "csses", value.asInstanceOf[js.Any])
     

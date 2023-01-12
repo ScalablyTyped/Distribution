@@ -43,7 +43,8 @@ object TimestreamAction {
     __obj.asInstanceOf[TimestreamAction]
   }
   
-  extension [Self <: TimestreamAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimestreamAction] (val x: Self) extends AnyVal {
     
     inline def setDatabaseName(value: TimestreamDatabaseName): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     

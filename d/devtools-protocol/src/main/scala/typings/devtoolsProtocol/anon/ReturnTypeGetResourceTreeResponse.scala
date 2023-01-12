@@ -18,7 +18,8 @@ object ReturnTypeGetResourceTreeResponse {
     __obj.asInstanceOf[ReturnTypeGetResourceTreeResponse]
   }
   
-  extension [Self <: ReturnTypeGetResourceTreeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetResourceTreeResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[Any]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

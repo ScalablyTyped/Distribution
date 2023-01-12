@@ -28,7 +28,8 @@ object TelemetryMetadata {
     __obj.asInstanceOf[TelemetryMetadata]
   }
   
-  extension [Self <: TelemetryMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TelemetryMetadata] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

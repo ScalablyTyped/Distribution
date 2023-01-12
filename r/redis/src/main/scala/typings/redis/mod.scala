@@ -365,7 +365,8 @@ object mod {
       __obj.asInstanceOf[RedisDefaultModules]
     }
     
-    extension [Self <: RedisDefaultModules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisDefaultModules] (val x: Self) extends AnyVal {
       
       inline def setBf(value: Add): Self = StObject.set(x, "bf", value.asInstanceOf[js.Any])
       

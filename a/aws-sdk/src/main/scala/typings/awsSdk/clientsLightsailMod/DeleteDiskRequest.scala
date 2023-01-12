@@ -23,7 +23,8 @@ object DeleteDiskRequest {
     __obj.asInstanceOf[DeleteDiskRequest]
   }
   
-  extension [Self <: DeleteDiskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDiskRequest] (val x: Self) extends AnyVal {
     
     inline def setDiskName(value: ResourceName): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
     

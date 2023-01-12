@@ -19,7 +19,8 @@ object StaffAvailabilityItem {
     __obj.asInstanceOf[StaffAvailabilityItem]
   }
   
-  extension [Self <: StaffAvailabilityItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaffAvailabilityItem] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityItems(value: NullableOption[js.Array[AvailabilityItem]]): Self = StObject.set(x, "availabilityItems", value.asInstanceOf[js.Any])
     

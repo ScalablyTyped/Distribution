@@ -15,7 +15,8 @@ object ServerContext {
     __obj.asInstanceOf[ServerContext[T]]
   }
   
-  extension [Self <: ServerContext[?], T /* <: typings.react.nextMod.reactAugmentingMod.ServerContextJSONValue */](x: Self & ServerContext[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerContext[?], T /* <: typings.react.nextMod.reactAugmentingMod.ServerContextJSONValue */] (val x: Self & ServerContext[T]) extends AnyVal {
     
     inline def setProvider(value: Provider[T]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
   }

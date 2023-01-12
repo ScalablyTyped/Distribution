@@ -16,7 +16,8 @@ object TypeofOCRPro {
     __obj.asInstanceOf[TypeofOCRPro]
   }
   
-  extension [Self <: TypeofOCRPro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofOCRPro] (val x: Self) extends AnyVal {
     
     inline def setNewSettings(value: () => Settings): Self = StObject.set(x, "NewSettings", js.Any.fromFunction0(value))
   }

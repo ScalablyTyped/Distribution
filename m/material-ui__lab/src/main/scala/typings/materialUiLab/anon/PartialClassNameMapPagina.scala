@@ -18,7 +18,8 @@ object PartialClassNameMapPagina {
     __obj.asInstanceOf[PartialClassNameMapPagina]
   }
   
-  extension [Self <: PartialClassNameMapPagina](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapPagina] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

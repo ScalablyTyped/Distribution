@@ -227,7 +227,8 @@ object mod {
       __obj.asInstanceOf[BitArray]
     }
     
-    extension [Self <: BitArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitArray] (val x: Self) extends AnyVal {
       
       inline def setAnd(value: BitArray => BitArray): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
       

@@ -23,7 +23,8 @@ object ServiceInsightHealth {
     __obj.asInstanceOf[ServiceInsightHealth]
   }
   
-  extension [Self <: ServiceInsightHealth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceInsightHealth] (val x: Self) extends AnyVal {
     
     inline def setOpenProactiveInsights(value: NumOpenProactiveInsights): Self = StObject.set(x, "OpenProactiveInsights", value.asInstanceOf[js.Any])
     

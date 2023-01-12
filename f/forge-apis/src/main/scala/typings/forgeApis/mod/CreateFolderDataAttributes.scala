@@ -18,7 +18,8 @@ object CreateFolderDataAttributes {
     __obj.asInstanceOf[CreateFolderDataAttributes]
   }
   
-  extension [Self <: CreateFolderDataAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFolderDataAttributes] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: BaseAttributesExtensionObject): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

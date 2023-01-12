@@ -626,7 +626,8 @@ object HTMLAttributesHTMLDivElem {
     __obj.asInstanceOf[HTMLAttributesHTMLDivElem]
   }
   
-  extension [Self <: HTMLAttributesHTMLDivElem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLAttributesHTMLDivElem] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

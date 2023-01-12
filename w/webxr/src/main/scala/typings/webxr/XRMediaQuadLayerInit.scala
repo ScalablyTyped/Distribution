@@ -21,7 +21,8 @@ object XRMediaQuadLayerInit {
     __obj.asInstanceOf[XRMediaQuadLayerInit]
   }
   
-  extension [Self <: XRMediaQuadLayerInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRMediaQuadLayerInit] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

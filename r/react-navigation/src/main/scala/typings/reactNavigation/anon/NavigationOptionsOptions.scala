@@ -15,7 +15,8 @@ object NavigationOptionsOptions {
     __obj.asInstanceOf[NavigationOptionsOptions[Options]]
   }
   
-  extension [Self <: NavigationOptionsOptions[?], Options](x: Self & NavigationOptionsOptions[Options]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationOptionsOptions[?], Options] (val x: Self & NavigationOptionsOptions[Options]) extends AnyVal {
     
     inline def setNavigationOptions(value: Options): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
   }

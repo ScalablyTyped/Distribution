@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[FontBaseUrl]
     }
     
-    extension [Self <: FontBaseUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontBaseUrl] (val x: Self) extends AnyVal {
       
       inline def setFontBaseUrl(value: String): Self = StObject.set(x, "fontBaseUrl", value.asInstanceOf[js.Any])
       

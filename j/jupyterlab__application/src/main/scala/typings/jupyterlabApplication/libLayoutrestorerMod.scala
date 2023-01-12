@@ -47,7 +47,8 @@ object libLayoutrestorerMod {
     @js.native
     val ^ : Token[ILayoutRestorer] = js.native
     
-    extension [Self <: ILayoutRestorer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILayoutRestorer] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (Widget, String) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
@@ -230,7 +231,8 @@ object libLayoutrestorerMod {
         __obj.asInstanceOf[typings.jupyterlabApplication.libLayoutrestorerMod.LayoutRestorer.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabApplication.libLayoutrestorerMod.LayoutRestorer.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabApplication.libLayoutrestorerMod.LayoutRestorer.IOptions] (val x: Self) extends AnyVal {
         
         inline def setConnector(value: IDataConnector[ReadonlyPartialJSONValue, ReadonlyPartialJSONValue, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
         

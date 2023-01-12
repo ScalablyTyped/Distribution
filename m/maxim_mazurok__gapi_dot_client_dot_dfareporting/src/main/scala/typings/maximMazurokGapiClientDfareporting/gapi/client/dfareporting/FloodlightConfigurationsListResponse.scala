@@ -19,7 +19,8 @@ object FloodlightConfigurationsListResponse {
     __obj.asInstanceOf[FloodlightConfigurationsListResponse]
   }
   
-  extension [Self <: FloodlightConfigurationsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloodlightConfigurationsListResponse] (val x: Self) extends AnyVal {
     
     inline def setFloodlightConfigurations(value: js.Array[FloodlightConfiguration]): Self = StObject.set(x, "floodlightConfigurations", value.asInstanceOf[js.Any])
     

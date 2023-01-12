@@ -20,7 +20,8 @@ object EntityMentionCollection {
     __obj.asInstanceOf[EntityMentionCollection]
   }
   
-  extension [Self <: EntityMentionCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityMentionCollection] (val x: Self) extends AnyVal {
     
     inline def setExamples(value: js.Array[EntityMention]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
     

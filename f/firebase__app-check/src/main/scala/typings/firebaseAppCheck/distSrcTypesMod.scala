@@ -33,7 +33,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[AppCheckProvider]
     }
     
-    extension [Self <: AppCheckProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckProvider] (val x: Self) extends AnyVal {
       
       inline def setGetToken(value: () => js.Promise[AppCheckTokenInternal]): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
       
@@ -54,7 +55,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[AppCheckTokenInternal]
     }
     
-    extension [Self <: AppCheckTokenInternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckTokenInternal] (val x: Self) extends AnyVal {
       
       inline def setIssuedAtTimeMillis(value: Double): Self = StObject.set(x, "issuedAtTimeMillis", value.asInstanceOf[js.Any])
     }
@@ -82,7 +84,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[AppCheckTokenObserver]
     }
     
-    extension [Self <: AppCheckTokenObserver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckTokenObserver] (val x: Self) extends AnyVal {
       
       inline def setNext(value: /* token */ typings.firebaseAppCheck.distSrcPublicTypesMod.AppCheckTokenResult => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
       
@@ -105,7 +108,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[AppCheckTokenResult]
     }
     
-    extension [Self <: AppCheckTokenResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckTokenResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -157,7 +161,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[ThrottleData]
     }
     
-    extension [Self <: ThrottleData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrottleData] (val x: Self) extends AnyVal {
       
       inline def setAllowRequestsAfter(value: Double): Self = StObject.set(x, "allowRequestsAfter", value.asInstanceOf[js.Any])
       
@@ -182,7 +187,8 @@ object distSrcTypesMod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def `setApp-check-internal`(value: FirebaseAppCheckInternal): Self = StObject.set(x, "app-check-internal", value.asInstanceOf[js.Any])
       }

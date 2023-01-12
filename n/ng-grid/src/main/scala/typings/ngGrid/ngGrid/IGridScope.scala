@@ -126,7 +126,8 @@ object IGridScope {
     __obj.asInstanceOf[IGridScope]
   }
   
-  extension [Self <: IGridScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGridScope] (val x: Self) extends AnyVal {
     
     inline def setAdjustScrollLeft(value: Double => Unit): Self = StObject.set(x, "adjustScrollLeft", js.Any.fromFunction1(value))
     

@@ -71,7 +71,8 @@ object libPathParamModelMod {
       __obj.asInstanceOf[PathParamModel]
     }
     
-    extension [Self <: PathParamModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathParamModel] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       

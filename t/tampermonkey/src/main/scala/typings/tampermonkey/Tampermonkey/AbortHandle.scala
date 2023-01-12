@@ -15,7 +15,8 @@ object AbortHandle {
     __obj.asInstanceOf[AbortHandle[TReturn]]
   }
   
-  extension [Self <: AbortHandle[?], TReturn](x: Self & AbortHandle[TReturn]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbortHandle[?], TReturn] (val x: Self & AbortHandle[TReturn]) extends AnyVal {
     
     inline def setAbort(value: () => TReturn): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
   }

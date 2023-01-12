@@ -16,7 +16,8 @@ object GoogleCloudDialogflowV2beta1ExportOperationMetadata {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1ExportOperationMetadata]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1ExportOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1ExportOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setExportedGcsDestination(value: GoogleCloudDialogflowV2beta1GcsDestination): Self = StObject.set(x, "exportedGcsDestination", value.asInstanceOf[js.Any])
     

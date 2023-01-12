@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Border]
     }
     
-    extension [Self <: Border](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[Callbacks]
     }
     
-    extension [Self <: Callbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callbacks] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Boolean | Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       
@@ -137,7 +139,8 @@ object mod {
       __obj.asInstanceOf[EdgeOffset]
     }
     
-    extension [Self <: EdgeOffset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EdgeOffset] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -352,7 +355,8 @@ object mod {
       __obj.asInstanceOf[InfoWindowOptions]
     }
     
-    extension [Self <: InfoWindowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfoWindowOptions] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -473,7 +477,8 @@ object mod {
       __obj.asInstanceOf[Offset]
     }
     
-    extension [Self <: Offset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -532,7 +537,8 @@ object mod {
       __obj.asInstanceOf[Shadow]
     }
     
-    extension [Self <: Shadow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shadow] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: String): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       

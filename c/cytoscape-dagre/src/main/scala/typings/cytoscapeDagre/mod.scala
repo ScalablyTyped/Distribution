@@ -89,7 +89,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DagreLayoutOptions]
     }
     
-    extension [Self <: DagreLayoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DagreLayoutOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimateFilter(value: (/* node */ NodeSingular, /* i */ Double) => Boolean): Self = StObject.set(x, "animateFilter", js.Any.fromFunction2(value))
       

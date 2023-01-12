@@ -89,7 +89,8 @@ object mod {
       __obj.asInstanceOf[ConfettiProps]
     }
     
-    extension [Self <: ConfettiProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfettiProps] (val x: Self) extends AnyVal {
       
       inline def setBsize(value: Double): Self = StObject.set(x, "bsize", value.asInstanceOf[js.Any])
       

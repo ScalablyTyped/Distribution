@@ -20,7 +20,8 @@ object Anythingbut {
     __obj.asInstanceOf[Anythingbut]
   }
   
-  extension [Self <: Anythingbut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Anythingbut] (val x: Self) extends AnyVal {
     
     inline def `setAnything-but`(value: js.Array[Filter]): Self = StObject.set(x, "anything-but", value.asInstanceOf[js.Any])
     

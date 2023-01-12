@@ -79,7 +79,8 @@ object mod {
       __obj.asInstanceOf[XMPlugin]
     }
     
-    extension [Self <: XMPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMPlugin] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object mod {
       __obj.asInstanceOf[options]
     }
     
-    extension [Self <: options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: options] (val x: Self) extends AnyVal {
       
       inline def setAccessTokenUrl(value: String): Self = StObject.set(x, "accessTokenUrl", value.asInstanceOf[js.Any])
       

@@ -104,7 +104,8 @@ object CommonOrganisation {
     __obj.asInstanceOf[CommonOrganisation]
   }
   
-  extension [Self <: CommonOrganisation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonOrganisation] (val x: Self) extends AnyVal {
     
     inline def setAbn(value: String): Self = StObject.set(x, "abn", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object Rootmodule {
     __obj.asInstanceOf[Rootmodule]
   }
   
-  extension [Self <: Rootmodule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rootmodule] (val x: Self) extends AnyVal {
     
     inline def setRoot_module(value: Resources): Self = StObject.set(x, "root_module", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object Output {
     __obj.asInstanceOf[Output]
   }
   
-  extension [Self <: Output](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
     
     inline def setAudioDescriptionNames(value: listOfString): Self = StObject.set(x, "AudioDescriptionNames", value.asInstanceOf[js.Any])
     

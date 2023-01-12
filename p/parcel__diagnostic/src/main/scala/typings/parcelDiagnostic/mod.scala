@@ -125,7 +125,8 @@ object mod {
       __obj.asInstanceOf[Diagnostic]
     }
     
-    extension [Self <: Diagnostic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Diagnostic] (val x: Self) extends AnyVal {
       
       inline def setCodeFrames(value: js.Array[DiagnosticCodeFrame]): Self = StObject.set(x, "codeFrames", value.asInstanceOf[js.Any])
       
@@ -191,7 +192,8 @@ object mod {
       __obj.asInstanceOf[DiagnosticCodeFrame]
     }
     
-    extension [Self <: DiagnosticCodeFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiagnosticCodeFrame] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -229,7 +231,8 @@ object mod {
       __obj.asInstanceOf[DiagnosticCodeHighlight]
     }
     
-    extension [Self <: DiagnosticCodeHighlight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiagnosticCodeHighlight] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: DiagnosticHighlightLocation): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -254,7 +257,8 @@ object mod {
       __obj.asInstanceOf[DiagnosticHighlightLocation]
     }
     
-    extension [Self <: DiagnosticHighlightLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiagnosticHighlightLocation] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -322,7 +326,8 @@ object mod {
       __obj.asInstanceOf[PrintableError]
     }
     
-    extension [Self <: PrintableError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintableError] (val x: Self) extends AnyVal {
       
       inline def setCodeFrame(value: String): Self = StObject.set(x, "codeFrame", value.asInstanceOf[js.Any])
       
@@ -368,7 +373,8 @@ object mod {
       __obj.asInstanceOf[ThrowableDiagnostic]
     }
     
-    extension [Self <: ThrowableDiagnostic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrowableDiagnostic] (val x: Self) extends AnyVal {
       
       inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
       
@@ -387,7 +393,8 @@ object mod {
       __obj.asInstanceOf[ThrowableDiagnosticOpts]
     }
     
-    extension [Self <: ThrowableDiagnosticOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrowableDiagnosticOpts] (val x: Self) extends AnyVal {
       
       inline def setDiagnostic(value: Diagnostic | js.Array[Diagnostic]): Self = StObject.set(x, "diagnostic", value.asInstanceOf[js.Any])
       

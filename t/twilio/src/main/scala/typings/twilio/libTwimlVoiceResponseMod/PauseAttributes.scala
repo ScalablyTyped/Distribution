@@ -15,7 +15,8 @@ object PauseAttributes {
     __obj.asInstanceOf[PauseAttributes]
   }
   
-  extension [Self <: PauseAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PauseAttributes] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

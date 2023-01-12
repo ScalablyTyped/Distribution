@@ -20,7 +20,8 @@ object IPRIVATE_MESSAGE {
     __obj.asInstanceOf[IPRIVATE_MESSAGE]
   }
   
-  extension [Self <: IPRIVATE_MESSAGE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPRIVATE_MESSAGE] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

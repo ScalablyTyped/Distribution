@@ -51,7 +51,8 @@ object distTypesMiddlewaresExpectCtMod {
       __obj.asInstanceOf[ExpectCtOptions]
     }
     
-    extension [Self <: ExpectCtOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpectCtOptions] (val x: Self) extends AnyVal {
       
       inline def setEnforce(value: Boolean): Self = StObject.set(x, "enforce", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CanvasInstance]
     }
     
-    extension [Self <: CanvasInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasInstance] (val x: Self) extends AnyVal {
       
       inline def setClear(value: CanvasRenderingContext2D => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
@@ -84,7 +85,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       

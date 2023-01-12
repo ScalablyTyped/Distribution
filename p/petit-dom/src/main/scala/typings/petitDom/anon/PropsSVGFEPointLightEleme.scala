@@ -639,7 +639,8 @@ object PropsSVGFEPointLightEleme {
     __obj.asInstanceOf[PropsSVGFEPointLightEleme]
   }
   
-  extension [Self <: PropsSVGFEPointLightEleme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGFEPointLightEleme] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

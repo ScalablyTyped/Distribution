@@ -17,7 +17,8 @@ object Model {
     __obj.asInstanceOf[Model]
   }
   
-  extension [Self <: Model](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
     
     inline def setModel(value: typings.forgeViewer.Autodesk.Viewing.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

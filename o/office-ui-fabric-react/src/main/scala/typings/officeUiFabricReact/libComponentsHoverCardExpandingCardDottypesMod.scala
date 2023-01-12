@@ -82,7 +82,8 @@ object libComponentsHoverCardExpandingCardDottypesMod {
       __obj.asInstanceOf[IExpandingCardProps]
     }
     
-    extension [Self <: IExpandingCardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExpandingCardProps] (val x: Self) extends AnyVal {
       
       inline def setCompactCardHeight(value: Double): Self = StObject.set(x, "compactCardHeight", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object libComponentsHoverCardExpandingCardDottypesMod {
       __obj.asInstanceOf[IExpandingCardStyleProps]
     }
     
-    extension [Self <: IExpandingCardStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExpandingCardStyleProps] (val x: Self) extends AnyVal {
       
       inline def setCompactCardHeight(value: Double): Self = StObject.set(x, "compactCardHeight", value.asInstanceOf[js.Any])
       
@@ -187,7 +189,8 @@ object libComponentsHoverCardExpandingCardDottypesMod {
       __obj.asInstanceOf[IExpandingCardStyles]
     }
     
-    extension [Self <: IExpandingCardStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExpandingCardStyles] (val x: Self) extends AnyVal {
       
       inline def setCompactCard(value: IStyle): Self = StObject.set(x, "compactCard", value.asInstanceOf[js.Any])
       

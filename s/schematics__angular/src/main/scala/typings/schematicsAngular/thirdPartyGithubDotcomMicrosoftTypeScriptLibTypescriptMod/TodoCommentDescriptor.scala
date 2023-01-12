@@ -17,7 +17,8 @@ object TodoCommentDescriptor {
     __obj.asInstanceOf[TodoCommentDescriptor]
   }
   
-  extension [Self <: TodoCommentDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TodoCommentDescriptor] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     

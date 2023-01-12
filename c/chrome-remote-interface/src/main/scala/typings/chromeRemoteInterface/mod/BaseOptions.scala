@@ -23,7 +23,8 @@ object BaseOptions {
     __obj.asInstanceOf[BaseOptions]
   }
   
-  extension [Self <: BaseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
     
     inline def setAlterPath(value: /* path */ String => String): Self = StObject.set(x, "alterPath", js.Any.fromFunction1(value))
     

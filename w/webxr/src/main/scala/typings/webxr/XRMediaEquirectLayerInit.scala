@@ -25,7 +25,8 @@ object XRMediaEquirectLayerInit {
     __obj.asInstanceOf[XRMediaEquirectLayerInit]
   }
   
-  extension [Self <: XRMediaEquirectLayerInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRMediaEquirectLayerInit] (val x: Self) extends AnyVal {
     
     inline def setCentralHorizontalAngle(value: Double): Self = StObject.set(x, "centralHorizontalAngle", value.asInstanceOf[js.Any])
     

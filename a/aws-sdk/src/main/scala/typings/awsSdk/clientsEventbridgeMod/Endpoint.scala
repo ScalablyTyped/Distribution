@@ -78,7 +78,8 @@ object Endpoint {
     __obj.asInstanceOf[Endpoint]
   }
   
-  extension [Self <: Endpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
     
     inline def setArn(value: EndpointArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

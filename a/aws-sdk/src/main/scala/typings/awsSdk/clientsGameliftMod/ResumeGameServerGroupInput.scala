@@ -23,7 +23,8 @@ object ResumeGameServerGroupInput {
     __obj.asInstanceOf[ResumeGameServerGroupInput]
   }
   
-  extension [Self <: ResumeGameServerGroupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResumeGameServerGroupInput] (val x: Self) extends AnyVal {
     
     inline def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
     

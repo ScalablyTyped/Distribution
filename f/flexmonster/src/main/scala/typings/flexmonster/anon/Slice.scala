@@ -15,7 +15,8 @@ object Slice {
     __obj.asInstanceOf[Slice]
   }
   
-  extension [Self <: Slice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Slice] (val x: Self) extends AnyVal {
     
     inline def setSlice(value: typings.flexmonster.mod.Slice): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
     

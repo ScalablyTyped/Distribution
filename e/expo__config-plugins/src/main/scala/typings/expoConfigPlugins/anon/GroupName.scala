@@ -27,7 +27,8 @@ object GroupName {
     __obj.asInstanceOf[GroupName]
   }
   
-  extension [Self <: GroupName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupName] (val x: Self) extends AnyVal {
     
     inline def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
     

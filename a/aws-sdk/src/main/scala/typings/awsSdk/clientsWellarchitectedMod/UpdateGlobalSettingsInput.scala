@@ -18,7 +18,8 @@ object UpdateGlobalSettingsInput {
     __obj.asInstanceOf[UpdateGlobalSettingsInput]
   }
   
-  extension [Self <: UpdateGlobalSettingsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateGlobalSettingsInput] (val x: Self) extends AnyVal {
     
     inline def setOrganizationSharingStatus(value: OrganizationSharingStatus): Self = StObject.set(x, "OrganizationSharingStatus", value.asInstanceOf[js.Any])
     

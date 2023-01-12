@@ -27,7 +27,8 @@ object Qrmatrix {
     __obj.asInstanceOf[Qrmatrix]
   }
   
-  extension [Self <: Qrmatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Qrmatrix] (val x: Self) extends AnyVal {
     
     inline def setQr_matrix(value: String): Self = StObject.set(x, "qr_matrix", value.asInstanceOf[js.Any])
     

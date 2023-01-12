@@ -20,7 +20,8 @@ object GotoArguments {
     __obj.asInstanceOf[GotoArguments]
   }
   
-  extension [Self <: GotoArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GotoArguments] (val x: Self) extends AnyVal {
     
     inline def setTargetId(value: Double): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     

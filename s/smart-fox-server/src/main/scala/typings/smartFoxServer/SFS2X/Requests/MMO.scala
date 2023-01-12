@@ -40,7 +40,8 @@ object MMO {
       __obj.asInstanceOf[MMORoomSettings]
     }
     
-    extension [Self <: MMORoomSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MMORoomSettings] (val x: Self) extends AnyVal {
       
       inline def setDefaultAOI(value: Vec3D): Self = StObject.set(x, "defaultAOI", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object MMO {
       __obj.asInstanceOf[MapLimits]
     }
     
-    extension [Self <: MapLimits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapLimits] (val x: Self) extends AnyVal {
       
       inline def setHigherLimit(value: Vec3D): Self = StObject.set(x, "higherLimit", value.asInstanceOf[js.Any])
       

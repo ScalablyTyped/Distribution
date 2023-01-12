@@ -28,7 +28,8 @@ object RemovePermissionRequest {
     __obj.asInstanceOf[RemovePermissionRequest]
   }
   
-  extension [Self <: RemovePermissionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemovePermissionRequest] (val x: Self) extends AnyVal {
     
     inline def setActionGroup(value: ActionGroup): Self = StObject.set(x, "actionGroup", value.asInstanceOf[js.Any])
     

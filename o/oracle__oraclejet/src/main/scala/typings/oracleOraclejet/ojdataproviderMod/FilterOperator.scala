@@ -19,7 +19,8 @@ object FilterOperator {
     __obj.asInstanceOf[FilterOperator[D]]
   }
   
-  extension [Self <: FilterOperator[?], D](x: Self & FilterOperator[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterOperator[?], D] (val x: Self & FilterOperator[D]) extends AnyVal {
     
     inline def setFilter(value: js.Array[Any] => js.Array[Any]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     

@@ -24,7 +24,8 @@ object authUserPassesTestMod extends Shortcut {
       __obj.asInstanceOf[UserPassesTestProps]
     }
     
-    extension [Self <: UserPassesTestProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserPassesTestProps] (val x: Self) extends AnyVal {
       
       inline def setTestFunc(value: UserInterface => Boolean): Self = StObject.set(x, "testFunc", js.Any.fromFunction1(value))
     }

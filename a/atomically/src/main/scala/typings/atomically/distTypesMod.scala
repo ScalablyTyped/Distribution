@@ -37,7 +37,8 @@ object distTypesMod {
       __obj.asInstanceOf[ReadOptions]
     }
     
-    extension [Self <: ReadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object distTypesMod {
       __obj.asInstanceOf[WriteOptions]
     }
     
-    extension [Self <: WriteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteOptions] (val x: Self) extends AnyVal {
       
       inline def setChown(value: Gid | `false`): Self = StObject.set(x, "chown", value.asInstanceOf[js.Any])
       

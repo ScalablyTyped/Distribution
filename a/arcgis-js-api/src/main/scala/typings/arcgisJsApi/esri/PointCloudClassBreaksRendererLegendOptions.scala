@@ -20,7 +20,8 @@ object PointCloudClassBreaksRendererLegendOptions {
     __obj.asInstanceOf[PointCloudClassBreaksRendererLegendOptions]
   }
   
-  extension [Self <: PointCloudClassBreaksRendererLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointCloudClassBreaksRendererLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

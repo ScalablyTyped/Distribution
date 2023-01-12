@@ -31,7 +31,8 @@ object OnReferenceFragmentUpdatedDetailsType {
     __obj.asInstanceOf[OnReferenceFragmentUpdatedDetailsType]
   }
   
-  extension [Self <: OnReferenceFragmentUpdatedDetailsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnReferenceFragmentUpdatedDetailsType] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

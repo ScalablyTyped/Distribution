@@ -15,7 +15,8 @@ object IntrinsicAttributes {
     __obj.asInstanceOf[IntrinsicAttributes]
   }
   
-  extension [Self <: IntrinsicAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntrinsicAttributes] (val x: Self) extends AnyVal {
     
     inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

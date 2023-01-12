@@ -16,7 +16,8 @@ object ShapeCollectionUpdateData {
     __obj.asInstanceOf[ShapeCollectionUpdateData]
   }
   
-  extension [Self <: ShapeCollectionUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeCollectionUpdateData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[ShapeData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

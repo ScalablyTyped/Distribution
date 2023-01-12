@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[MenuDividerProps]
     }
     
-    extension [Self <: MenuDividerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuDividerProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object mod {
       __obj.asInstanceOf[MenuItemProps]
     }
     
-    extension [Self <: MenuItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -163,7 +165,8 @@ object mod {
       __obj.asInstanceOf[MenuProps]
     }
     
-    extension [Self <: MenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuProps] (val x: Self) extends AnyVal {
       
       inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object GetObjectTorrentOutput {
     __obj.asInstanceOf[GetObjectTorrentOutput]
   }
   
-  extension [Self <: GetObjectTorrentOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectTorrentOutput] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Body): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     

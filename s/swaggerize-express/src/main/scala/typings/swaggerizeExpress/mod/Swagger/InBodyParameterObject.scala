@@ -17,7 +17,8 @@ object InBodyParameterObject {
     __obj.asInstanceOf[InBodyParameterObject]
   }
   
-  extension [Self <: InBodyParameterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InBodyParameterObject] (val x: Self) extends AnyVal {
     
     inline def setSchema(value: SchemaObject): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }

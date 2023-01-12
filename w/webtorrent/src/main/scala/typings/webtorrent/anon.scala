@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Autoplay]
     }
     
-    extension [Self <: Autoplay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Autoplay] (val x: Self) extends AnyVal {
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Files]
     }
     
-    extension [Self <: Files](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Files] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       

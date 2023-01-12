@@ -38,7 +38,8 @@ object PackageData {
     __obj.asInstanceOf[PackageData]
   }
   
-  extension [Self <: PackageData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageData] (val x: Self) extends AnyVal {
     
     inline def setData(value: Dictfield): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

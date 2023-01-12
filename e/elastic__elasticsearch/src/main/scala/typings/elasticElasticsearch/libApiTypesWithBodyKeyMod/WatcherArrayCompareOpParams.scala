@@ -17,7 +17,8 @@ object WatcherArrayCompareOpParams {
     __obj.asInstanceOf[WatcherArrayCompareOpParams]
   }
   
-  extension [Self <: WatcherArrayCompareOpParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherArrayCompareOpParams] (val x: Self) extends AnyVal {
     
     inline def setQuantifier(value: WatcherQuantifier): Self = StObject.set(x, "quantifier", value.asInstanceOf[js.Any])
     

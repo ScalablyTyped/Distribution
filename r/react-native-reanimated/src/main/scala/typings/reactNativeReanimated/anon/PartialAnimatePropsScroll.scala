@@ -440,7 +440,8 @@ object PartialAnimatePropsScroll {
     __obj.asInstanceOf[PartialAnimatePropsScroll]
   }
   
-  extension [Self <: PartialAnimatePropsScroll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAnimatePropsScroll] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(
       value: js.Array[AccessibilityActionInfo] | AnimatedNode[js.UndefOr[js.Array[AccessibilityActionInfo]]]

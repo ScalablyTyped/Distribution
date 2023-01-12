@@ -26,7 +26,8 @@ object CreateWorkloadShareInput {
     __obj.asInstanceOf[CreateWorkloadShareInput]
   }
   
-  extension [Self <: CreateWorkloadShareInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkloadShareInput] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

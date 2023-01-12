@@ -23,7 +23,8 @@ object AdditionalResources {
     __obj.asInstanceOf[AdditionalResources]
   }
   
-  extension [Self <: AdditionalResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalResources] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Urls): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object AppsDynamiteSharedRetentionSettings {
     __obj.asInstanceOf[AppsDynamiteSharedRetentionSettings]
   }
   
-  extension [Self <: AppsDynamiteSharedRetentionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedRetentionSettings] (val x: Self) extends AnyVal {
     
     inline def setExpiryTimestamp(value: String): Self = StObject.set(x, "expiryTimestamp", value.asInstanceOf[js.Any])
     

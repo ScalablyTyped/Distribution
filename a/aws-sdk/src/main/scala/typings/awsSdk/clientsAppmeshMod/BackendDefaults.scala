@@ -18,7 +18,8 @@ object BackendDefaults {
     __obj.asInstanceOf[BackendDefaults]
   }
   
-  extension [Self <: BackendDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendDefaults] (val x: Self) extends AnyVal {
     
     inline def setClientPolicy(value: ClientPolicy): Self = StObject.set(x, "clientPolicy", value.asInstanceOf[js.Any])
     

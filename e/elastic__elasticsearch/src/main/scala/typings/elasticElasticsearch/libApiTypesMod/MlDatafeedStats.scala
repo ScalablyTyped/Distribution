@@ -25,7 +25,8 @@ object MlDatafeedStats {
     __obj.asInstanceOf[MlDatafeedStats]
   }
   
-  extension [Self <: MlDatafeedStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDatafeedStats] (val x: Self) extends AnyVal {
     
     inline def setAssignment_explanation(value: String): Self = StObject.set(x, "assignment_explanation", value.asInstanceOf[js.Any])
     

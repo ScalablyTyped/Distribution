@@ -221,7 +221,8 @@ object RTE {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -258,7 +259,8 @@ object RTE {
       __obj.asInstanceOf[ContextMenuClickEventArgs]
     }
     
-    extension [Self <: ContextMenuClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -295,7 +297,8 @@ object RTE {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -332,7 +335,8 @@ object RTE {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -369,7 +373,8 @@ object RTE {
       __obj.asInstanceOf[ExecuteEventArgs]
     }
     
-    extension [Self <: ExecuteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecuteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -402,7 +407,8 @@ object RTE {
       __obj.asInstanceOf[ExportToPdfSettings]
     }
     
-    extension [Self <: ExportToPdfSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportToPdfSettings] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -431,7 +437,8 @@ object RTE {
       __obj.asInstanceOf[ExportToWordSettings]
     }
     
-    extension [Self <: ExportToWordSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportToWordSettings] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -464,7 +471,8 @@ object RTE {
       __obj.asInstanceOf[FileBrowser]
     }
     
-    extension [Self <: FileBrowser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileBrowser] (val x: Self) extends AnyVal {
       
       inline def setAjaxAction(value: String): Self = StObject.set(x, "ajaxAction", value.asInstanceOf[js.Any])
       
@@ -501,7 +509,8 @@ object RTE {
       __obj.asInstanceOf[ImageBrowser]
     }
     
-    extension [Self <: ImageBrowser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageBrowser] (val x: Self) extends AnyVal {
       
       inline def setAjaxAction(value: String): Self = StObject.set(x, "ajaxAction", value.asInstanceOf[js.Any])
       
@@ -530,7 +539,8 @@ object RTE {
       __obj.asInstanceOf[ImportSettings]
     }
     
-    extension [Self <: ImportSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportSettings] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -559,7 +569,8 @@ object RTE {
       __obj.asInstanceOf[KeydownEventArgs]
     }
     
-    extension [Self <: KeydownEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeydownEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -596,7 +607,8 @@ object RTE {
       __obj.asInstanceOf[KeyupEventArgs]
     }
     
-    extension [Self <: KeyupEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyupEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -969,7 +981,8 @@ object RTE {
       __obj.asInstanceOf[typings.ejWebAll.ej.RTE.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.RTE.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.RTE.Model] (val x: Self) extends AnyVal {
       
       inline def setAllowEditing(value: Boolean): Self = StObject.set(x, "allowEditing", value.asInstanceOf[js.Any])
       
@@ -1284,7 +1297,8 @@ object RTE {
       __obj.asInstanceOf[PasteCleanupSettings]
     }
     
-    extension [Self <: PasteCleanupSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasteCleanupSettings] (val x: Self) extends AnyVal {
       
       inline def setCleanCSS(value: Boolean): Self = StObject.set(x, "cleanCSS", value.asInstanceOf[js.Any])
       
@@ -1325,7 +1339,8 @@ object RTE {
       __obj.asInstanceOf[PreRenderEventArgs]
     }
     
-    extension [Self <: PreRenderEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreRenderEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1366,7 +1381,8 @@ object RTE {
       __obj.asInstanceOf[SelectEventArgs]
     }
     
-    extension [Self <: SelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1479,7 +1495,8 @@ object RTE {
       __obj.asInstanceOf[Tools]
     }
     
-    extension [Self <: Tools](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tools] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: Any): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -1640,7 +1657,8 @@ object RTE {
       __obj.asInstanceOf[ToolsCustomOrderedList]
     }
     
-    extension [Self <: ToolsCustomOrderedList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolsCustomOrderedList] (val x: Self) extends AnyVal {
       
       inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
@@ -1701,7 +1719,8 @@ object RTE {
       __obj.asInstanceOf[ToolsCustomUnorderedList]
     }
     
-    extension [Self <: ToolsCustomUnorderedList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolsCustomUnorderedList] (val x: Self) extends AnyVal {
       
       inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       

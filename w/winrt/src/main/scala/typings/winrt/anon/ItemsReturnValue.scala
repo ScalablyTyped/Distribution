@@ -19,7 +19,8 @@ object ItemsReturnValue {
     __obj.asInstanceOf[ItemsReturnValue]
   }
   
-  extension [Self <: ItemsReturnValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsReturnValue] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[IKeyValuePair[String, NamedResource]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

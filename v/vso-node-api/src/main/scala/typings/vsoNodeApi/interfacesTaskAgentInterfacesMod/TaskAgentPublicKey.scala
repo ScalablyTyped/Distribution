@@ -23,7 +23,8 @@ object TaskAgentPublicKey {
     __obj.asInstanceOf[TaskAgentPublicKey]
   }
   
-  extension [Self <: TaskAgentPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAgentPublicKey] (val x: Self) extends AnyVal {
     
     inline def setExponent(value: js.Array[Double]): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
     

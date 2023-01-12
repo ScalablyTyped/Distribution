@@ -89,7 +89,8 @@ object ReturnPartialSuccess {
     __obj.asInstanceOf[ReturnPartialSuccess]
   }
   
-  extension [Self <: ReturnPartialSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnPartialSuccess] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

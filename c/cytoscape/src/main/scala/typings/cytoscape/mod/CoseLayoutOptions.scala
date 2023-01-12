@@ -70,7 +70,8 @@ object CoseLayoutOptions {
     __obj.asInstanceOf[CoseLayoutOptions]
   }
   
-  extension [Self <: CoseLayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoseLayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimationThreshold(value: Double): Self = StObject.set(x, "animationThreshold", value.asInstanceOf[js.Any])
     

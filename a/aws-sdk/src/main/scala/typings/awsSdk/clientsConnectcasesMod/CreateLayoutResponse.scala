@@ -23,7 +23,8 @@ object CreateLayoutResponse {
     __obj.asInstanceOf[CreateLayoutResponse]
   }
   
-  extension [Self <: CreateLayoutResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLayoutResponse] (val x: Self) extends AnyVal {
     
     inline def setLayoutArn(value: LayoutArn): Self = StObject.set(x, "layoutArn", value.asInstanceOf[js.Any])
     

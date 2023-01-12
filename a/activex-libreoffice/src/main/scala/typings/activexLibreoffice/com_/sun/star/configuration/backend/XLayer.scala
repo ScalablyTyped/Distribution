@@ -35,7 +35,8 @@ object XLayer {
     __obj.asInstanceOf[XLayer]
   }
   
-  extension [Self <: XLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLayer] (val x: Self) extends AnyVal {
     
     inline def setReadData(value: XLayerHandler => Unit): Self = StObject.set(x, "readData", js.Any.fromFunction1(value))
   }

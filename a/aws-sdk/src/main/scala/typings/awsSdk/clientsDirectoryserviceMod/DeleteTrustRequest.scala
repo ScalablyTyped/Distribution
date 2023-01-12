@@ -23,7 +23,8 @@ object DeleteTrustRequest {
     __obj.asInstanceOf[DeleteTrustRequest]
   }
   
-  extension [Self <: DeleteTrustRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTrustRequest] (val x: Self) extends AnyVal {
     
     inline def setDeleteAssociatedConditionalForwarder(value: DeleteAssociatedConditionalForwarder): Self = StObject.set(x, "DeleteAssociatedConditionalForwarder", value.asInstanceOf[js.Any])
     

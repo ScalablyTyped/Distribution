@@ -47,7 +47,8 @@ object SubstanceNucleicAcid {
     __obj.asInstanceOf[SubstanceNucleicAcid]
   }
   
-  extension [Self <: SubstanceNucleicAcid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceNucleicAcid] (val x: Self) extends AnyVal {
     
     inline def setAreaOfHybridisation(value: String): Self = StObject.set(x, "areaOfHybridisation", value.asInstanceOf[js.Any])
     

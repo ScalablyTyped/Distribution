@@ -48,7 +48,8 @@ object InvokeScreenAutomationRequest {
     __obj.asInstanceOf[InvokeScreenAutomationRequest]
   }
   
-  extension [Self <: InvokeScreenAutomationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvokeScreenAutomationRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: ResourceId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

@@ -122,7 +122,8 @@ object ColorPickerOptions {
     __obj.asInstanceOf[ColorPickerOptions]
   }
   
-  extension [Self <: ColorPickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorPickerOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: ColorPickerAlignOptions): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

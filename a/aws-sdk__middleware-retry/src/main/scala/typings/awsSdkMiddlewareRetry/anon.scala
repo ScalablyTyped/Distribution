@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[AfterRequest]
     }
     
-    extension [Self <: AfterRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterRequest] (val x: Self) extends AnyVal {
       
       inline def setAfterRequest(value: js.Function): Self = StObject.set(x, "afterRequest", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Output[Ouput]]
     }
     
-    extension [Self <: Output[?], Ouput /* <: MetadataBearer */](x: Self & Output[Ouput]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Output[?], Ouput /* <: MetadataBearer */] (val x: Self & Output[Ouput]) extends AnyVal {
       
       inline def setOutput(value: Ouput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       

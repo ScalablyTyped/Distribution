@@ -34,7 +34,8 @@ object IndicesForcemergeParams {
     __obj.asInstanceOf[IndicesForcemergeParams]
   }
   
-  extension [Self <: IndicesForcemergeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesForcemergeParams] (val x: Self) extends AnyVal {
     
     inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     

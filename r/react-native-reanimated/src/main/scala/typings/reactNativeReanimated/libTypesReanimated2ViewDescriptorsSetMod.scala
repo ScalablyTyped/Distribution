@@ -54,7 +54,8 @@ object libTypesReanimated2ViewDescriptorsSetMod {
       __obj.asInstanceOf[ViewDescriptorsSet]
     }
     
-    extension [Self <: ViewDescriptorsSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewDescriptorsSet] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Descriptor => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -93,7 +94,8 @@ object libTypesReanimated2ViewDescriptorsSetMod {
       __obj.asInstanceOf[ViewRefSet[T]]
     }
     
-    extension [Self <: ViewRefSet[?], T](x: Self & ViewRefSet[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewRefSet[?], T] (val x: Self & ViewRefSet[T]) extends AnyVal {
       
       inline def setAdd(value: T => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

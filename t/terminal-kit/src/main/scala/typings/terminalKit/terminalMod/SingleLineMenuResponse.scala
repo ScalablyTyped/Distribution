@@ -32,7 +32,8 @@ object SingleLineMenuResponse {
     __obj.asInstanceOf[SingleLineMenuResponse]
   }
   
-  extension [Self <: SingleLineMenuResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleLineMenuResponse] (val x: Self) extends AnyVal {
     
     inline def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     

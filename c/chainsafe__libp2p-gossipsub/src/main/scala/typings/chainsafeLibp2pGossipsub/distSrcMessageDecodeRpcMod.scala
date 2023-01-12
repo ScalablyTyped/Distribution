@@ -45,7 +45,8 @@ object distSrcMessageDecodeRpcMod {
       __obj.asInstanceOf[DecodeRPCLimits]
     }
     
-    extension [Self <: DecodeRPCLimits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeRPCLimits] (val x: Self) extends AnyVal {
       
       inline def setMaxControlMessages(value: Double): Self = StObject.set(x, "maxControlMessages", value.asInstanceOf[js.Any])
       

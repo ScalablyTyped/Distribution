@@ -15,7 +15,8 @@ object IPrintTaskOptionsCore {
     __obj.asInstanceOf[IPrintTaskOptionsCore]
   }
   
-  extension [Self <: IPrintTaskOptionsCore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrintTaskOptionsCore] (val x: Self) extends AnyVal {
     
     inline def setGetPageDescription(value: Double => PrintPageDescription): Self = StObject.set(x, "getPageDescription", js.Any.fromFunction1(value))
   }

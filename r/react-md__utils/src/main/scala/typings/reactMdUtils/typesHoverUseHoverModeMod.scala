@@ -43,7 +43,8 @@ object typesHoverUseHoverModeMod {
       __obj.asInstanceOf[HoverModeEventHandlers]
     }
     
-    extension [Self <: HoverModeEventHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoverModeEventHandlers] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     }
@@ -121,7 +122,8 @@ object typesHoverUseHoverModeMod {
       __obj.asInstanceOf[HoverModeHookReturnValue]
     }
     
-    extension [Self <: HoverModeHookReturnValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoverModeHookReturnValue] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -165,7 +167,8 @@ object typesHoverUseHoverModeMod {
       __obj.asInstanceOf[HoverModeHoverEventHandlers]
     }
     
-    extension [Self <: HoverModeHoverEventHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoverModeHoverEventHandlers] (val x: Self) extends AnyVal {
       
       inline def setOnMouseEnter(value: MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
@@ -204,7 +207,8 @@ object typesHoverUseHoverModeMod {
       __obj.asInstanceOf[HoverModeOptions]
     }
     
-    extension [Self <: HoverModeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoverModeOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultVisible(value: Boolean): Self = StObject.set(x, "defaultVisible", value.asInstanceOf[js.Any])
       

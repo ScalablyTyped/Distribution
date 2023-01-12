@@ -29,7 +29,8 @@ object PieChartLegend {
     __obj.asInstanceOf[PieChartLegend]
   }
   
-  extension [Self <: PieChartLegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieChartLegend] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: ChartLegendAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

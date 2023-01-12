@@ -25,7 +25,8 @@ object GrantPermissionsRequest {
     __obj.asInstanceOf[GrantPermissionsRequest]
   }
   
-  extension [Self <: GrantPermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrantPermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
     

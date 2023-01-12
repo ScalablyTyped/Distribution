@@ -43,7 +43,8 @@ object CreateAcceleratorRequest {
     __obj.asInstanceOf[CreateAcceleratorRequest]
   }
   
-  extension [Self <: CreateAcceleratorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAcceleratorRequest] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: GenericBoolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

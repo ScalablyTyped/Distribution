@@ -28,7 +28,8 @@ object SetTopicAttributesInput {
     __obj.asInstanceOf[SetTopicAttributesInput]
   }
   
-  extension [Self <: SetTopicAttributesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetTopicAttributesInput] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: attributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     

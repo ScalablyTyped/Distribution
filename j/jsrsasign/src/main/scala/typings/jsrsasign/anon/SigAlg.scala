@@ -23,7 +23,8 @@ object SigAlg {
     __obj.asInstanceOf[SigAlg]
   }
   
-  extension [Self <: SigAlg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SigAlg] (val x: Self) extends AnyVal {
     
     inline def setCerts(value: js.Array[String]): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     

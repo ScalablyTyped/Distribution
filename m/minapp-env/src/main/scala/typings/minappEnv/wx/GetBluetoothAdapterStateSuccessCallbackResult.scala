@@ -19,7 +19,8 @@ object GetBluetoothAdapterStateSuccessCallbackResult {
     __obj.asInstanceOf[GetBluetoothAdapterStateSuccessCallbackResult]
   }
   
-  extension [Self <: GetBluetoothAdapterStateSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBluetoothAdapterStateSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     

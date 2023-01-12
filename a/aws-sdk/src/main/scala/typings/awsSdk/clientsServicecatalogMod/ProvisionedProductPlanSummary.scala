@@ -43,7 +43,8 @@ object ProvisionedProductPlanSummary {
     __obj.asInstanceOf[ProvisionedProductPlanSummary]
   }
   
-  extension [Self <: ProvisionedProductPlanSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisionedProductPlanSummary] (val x: Self) extends AnyVal {
     
     inline def setPlanId(value: Id): Self = StObject.set(x, "PlanId", value.asInstanceOf[js.Any])
     

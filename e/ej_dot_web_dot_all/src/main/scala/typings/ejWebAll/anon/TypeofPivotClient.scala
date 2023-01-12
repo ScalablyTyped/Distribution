@@ -20,7 +20,8 @@ object TypeofPivotClient {
     __obj.asInstanceOf[TypeofPivotClient]
   }
   
-  extension [Self <: TypeofPivotClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPivotClient] (val x: Self) extends AnyVal {
     
     inline def setFn(value: PivotClient): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

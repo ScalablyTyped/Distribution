@@ -21,7 +21,8 @@ object barsOptions {
     __obj.asInstanceOf[barsOptions]
   }
   
-  extension [Self <: barsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: barsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

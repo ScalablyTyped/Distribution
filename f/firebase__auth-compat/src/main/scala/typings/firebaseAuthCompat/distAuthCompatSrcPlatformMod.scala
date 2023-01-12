@@ -39,7 +39,8 @@ object distAuthCompatSrcPlatformMod {
         __obj.asInstanceOf[Document]
       }
       
-      extension [Self <: Document](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
         
         inline def setDocumentMode(value: Double): Self = StObject.set(x, "documentMode", value.asInstanceOf[js.Any])
         

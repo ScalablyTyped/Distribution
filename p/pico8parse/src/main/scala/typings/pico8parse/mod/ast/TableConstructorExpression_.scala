@@ -20,7 +20,8 @@ object TableConstructorExpression_ {
     __obj.asInstanceOf[TableConstructorExpression_]
   }
   
-  extension [Self <: TableConstructorExpression_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableConstructorExpression_] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[TableKey_ | TableKeyString_ | TableValue_]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

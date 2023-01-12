@@ -28,7 +28,8 @@ object DescribeSnapshotAttributeResult {
     __obj.asInstanceOf[DescribeSnapshotAttributeResult]
   }
   
-  extension [Self <: DescribeSnapshotAttributeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSnapshotAttributeResult] (val x: Self) extends AnyVal {
     
     inline def setCreateVolumePermissions(value: CreateVolumePermissionList): Self = StObject.set(x, "CreateVolumePermissions", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteFileSystemWindowsConfiguration {
     __obj.asInstanceOf[DeleteFileSystemWindowsConfiguration]
   }
   
-  extension [Self <: DeleteFileSystemWindowsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFileSystemWindowsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFinalBackupTags(value: Tags): Self = StObject.set(x, "FinalBackupTags", value.asInstanceOf[js.Any])
     

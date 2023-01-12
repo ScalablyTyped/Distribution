@@ -49,7 +49,8 @@ object libParseMod {
       __obj.asInstanceOf[Commit]
     }
     
-    extension [Self <: Commit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Commit] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object libParseMod {
       __obj.asInstanceOf[CommitNote]
     }
     
-    extension [Self <: CommitNote](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitNote] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object libParseMod {
       __obj.asInstanceOf[CommitReference]
     }
     
-    extension [Self <: CommitReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitReference] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -188,7 +191,8 @@ object libParseMod {
       __obj.asInstanceOf[ParserOptions]
     }
     
-    extension [Self <: ParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
       
       inline def setCommentChar(value: String): Self = StObject.set(x, "commentChar", value.asInstanceOf[js.Any])
       

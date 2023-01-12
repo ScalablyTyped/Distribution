@@ -23,7 +23,8 @@ object StartReportJobInput {
     __obj.asInstanceOf[StartReportJobInput]
   }
   
-  extension [Self <: StartReportJobInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartReportJobInput] (val x: Self) extends AnyVal {
     
     inline def setIdempotencyToken(value: String): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     

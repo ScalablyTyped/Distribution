@@ -23,7 +23,8 @@ object TestResults {
     __obj.asInstanceOf[TestResults]
   }
   
-  extension [Self <: TestResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestResults] (val x: Self) extends AnyVal {
     
     inline def setDisconnected(value: Boolean): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
     

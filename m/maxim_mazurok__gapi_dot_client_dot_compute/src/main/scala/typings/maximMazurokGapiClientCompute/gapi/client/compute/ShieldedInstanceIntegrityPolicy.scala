@@ -16,7 +16,8 @@ object ShieldedInstanceIntegrityPolicy {
     __obj.asInstanceOf[ShieldedInstanceIntegrityPolicy]
   }
   
-  extension [Self <: ShieldedInstanceIntegrityPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShieldedInstanceIntegrityPolicy] (val x: Self) extends AnyVal {
     
     inline def setUpdateAutoLearnPolicy(value: Boolean): Self = StObject.set(x, "updateAutoLearnPolicy", value.asInstanceOf[js.Any])
     

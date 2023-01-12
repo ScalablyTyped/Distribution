@@ -35,7 +35,8 @@ object ImageEditorOptions {
     __obj.asInstanceOf[ImageEditorOptions]
   }
   
-  extension [Self <: ImageEditorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageEditorOptions] (val x: Self) extends AnyVal {
     
     inline def setError(value: /* e */ ImageEditorErrorEvent => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     

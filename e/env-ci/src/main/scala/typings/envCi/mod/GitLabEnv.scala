@@ -49,7 +49,8 @@ object GitLabEnv {
     __obj.asInstanceOf[GitLabEnv]
   }
   
-  extension [Self <: GitLabEnv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitLabEnv] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object IEntityAcquiredItemEventData {
     __obj.asInstanceOf[IEntityAcquiredItemEventData]
   }
   
-  extension [Self <: IEntityAcquiredItemEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEntityAcquiredItemEventData] (val x: Self) extends AnyVal {
     
     inline def setAcquired_amount(value: Double): Self = StObject.set(x, "acquired_amount", value.asInstanceOf[js.Any])
     

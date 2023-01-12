@@ -329,7 +329,8 @@ object esComponentsPasscodeInputPasscodeInputMod {
       __obj.asInstanceOf[PasscodeInputProps]
     }
     
-    extension [Self <: PasscodeInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasscodeInputProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -600,7 +601,8 @@ object esComponentsPasscodeInputPasscodeInputMod {
       __obj.asInstanceOf[PasscodeInputRef]
     }
     
-    extension [Self <: PasscodeInputRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasscodeInputRef] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       

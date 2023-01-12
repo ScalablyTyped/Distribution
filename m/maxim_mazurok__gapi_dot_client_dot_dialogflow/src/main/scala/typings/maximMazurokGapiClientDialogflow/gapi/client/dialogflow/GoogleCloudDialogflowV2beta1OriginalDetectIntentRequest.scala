@@ -29,7 +29,8 @@ object GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest] (val x: Self) extends AnyVal {
     
     inline def setPayload(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

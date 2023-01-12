@@ -28,7 +28,8 @@ object AppSpecification {
     __obj.asInstanceOf[AppSpecification]
   }
   
-  extension [Self <: AppSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppSpecification] (val x: Self) extends AnyVal {
     
     inline def setContainerArguments(value: ContainerArguments): Self = StObject.set(x, "ContainerArguments", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object informationMod {
       __obj.asInstanceOf[FileInfo]
     }
     
-    extension [Self <: FileInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileInfo] (val x: Self) extends AnyVal {
       
       inline def setBlocks(value: js.Array[Block]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object informationMod {
       __obj.asInstanceOf[Polyline]
     }
     
-    extension [Self <: Polyline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Polyline] (val x: Self) extends AnyVal {
       
       inline def setRgb(value: ColorNumber): Self = StObject.set(x, "rgb", value.asInstanceOf[js.Any])
       

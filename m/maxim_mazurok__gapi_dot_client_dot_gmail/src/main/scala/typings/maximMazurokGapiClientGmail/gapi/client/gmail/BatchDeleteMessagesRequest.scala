@@ -16,7 +16,8 @@ object BatchDeleteMessagesRequest {
     __obj.asInstanceOf[BatchDeleteMessagesRequest]
   }
   
-  extension [Self <: BatchDeleteMessagesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteMessagesRequest] (val x: Self) extends AnyVal {
     
     inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     

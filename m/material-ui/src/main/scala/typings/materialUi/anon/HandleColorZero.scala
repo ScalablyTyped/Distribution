@@ -33,7 +33,8 @@ object HandleColorZero {
     __obj.asInstanceOf[HandleColorZero]
   }
   
-  extension [Self <: HandleColorZero](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandleColorZero] (val x: Self) extends AnyVal {
     
     inline def setHandleColorZero(value: String): Self = StObject.set(x, "handleColorZero", value.asInstanceOf[js.Any])
     

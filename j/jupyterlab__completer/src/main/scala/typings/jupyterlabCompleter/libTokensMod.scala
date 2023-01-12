@@ -56,7 +56,8 @@ object libTokensMod {
         __obj.asInstanceOf[ICompletable]
       }
       
-      extension [Self <: ICompletable](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICompletable] (val x: Self) extends AnyVal {
         
         inline def setParent(value: Widget): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       }
@@ -85,7 +86,8 @@ object libTokensMod {
         __obj.asInstanceOf[ICompletableAttributes]
       }
       
-      extension [Self <: ICompletableAttributes](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICompletableAttributes] (val x: Self) extends AnyVal {
         
         inline def setConnector(value: (IDataConnector[IReply, Unit, IRequest, String]) | ICompletionItemsConnector): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
         

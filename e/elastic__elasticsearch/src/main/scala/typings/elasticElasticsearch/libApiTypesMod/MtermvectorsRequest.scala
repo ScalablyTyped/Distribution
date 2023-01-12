@@ -43,7 +43,8 @@ object MtermvectorsRequest {
     __obj.asInstanceOf[MtermvectorsRequest]
   }
   
-  extension [Self <: MtermvectorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MtermvectorsRequest] (val x: Self) extends AnyVal {
     
     inline def setDocs(value: js.Array[MtermvectorsOperation]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     

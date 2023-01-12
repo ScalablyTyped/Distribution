@@ -34,7 +34,8 @@ object commandPaletteMod {
       __obj.asInstanceOf[Command]
     }
     
-    extension [Self <: Command](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -275,7 +276,8 @@ object commandPaletteMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAlwaysRenderCommands(value: Boolean): Self = StObject.set(x, "alwaysRenderCommands", value.asInstanceOf[js.Any])
       

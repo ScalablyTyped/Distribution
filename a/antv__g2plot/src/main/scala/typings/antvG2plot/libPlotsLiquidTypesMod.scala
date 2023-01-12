@@ -55,7 +55,8 @@ object libPlotsLiquidTypesMod {
       __obj.asInstanceOf[CustomInfo]
     }
     
-    extension [Self <: CustomInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomInfo] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object libPlotsLiquidTypesMod {
       __obj.asInstanceOf[LiquidOptions]
     }
     
-    extension [Self <: LiquidOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiquidOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -386,7 +388,8 @@ object libPlotsLiquidTypesMod {
       __obj.asInstanceOf[Outline]
     }
     
-    extension [Self <: Outline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Outline] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: Double): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -424,7 +427,8 @@ object libPlotsLiquidTypesMod {
       __obj.asInstanceOf[Wave]
     }
     
-    extension [Self <: Wave](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Wave] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object GriddleInitialState {
     __obj.asInstanceOf[GriddleInitialState]
   }
   
-  extension [Self <: GriddleInitialState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GriddleInitialState] (val x: Self) extends AnyVal {
     
     inline def setEnableSettings(value: Boolean): Self = StObject.set(x, "enableSettings", value.asInstanceOf[js.Any])
     

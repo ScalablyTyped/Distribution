@@ -19,7 +19,8 @@ object RenderUnsafeAttributes {
     __obj.asInstanceOf[RenderUnsafeAttributes]
   }
   
-  extension [Self <: RenderUnsafeAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderUnsafeAttributes] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

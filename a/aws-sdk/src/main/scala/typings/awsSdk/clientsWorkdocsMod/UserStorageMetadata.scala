@@ -23,7 +23,8 @@ object UserStorageMetadata {
     __obj.asInstanceOf[UserStorageMetadata]
   }
   
-  extension [Self <: UserStorageMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserStorageMetadata] (val x: Self) extends AnyVal {
     
     inline def setStorageRule(value: StorageRuleType): Self = StObject.set(x, "StorageRule", value.asInstanceOf[js.Any])
     

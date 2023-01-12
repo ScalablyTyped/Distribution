@@ -43,7 +43,8 @@ object SegmentDemographics {
     __obj.asInstanceOf[SegmentDemographics]
   }
   
-  extension [Self <: SegmentDemographics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentDemographics] (val x: Self) extends AnyVal {
     
     inline def setAppVersion(value: SetDimension): Self = StObject.set(x, "AppVersion", value.asInstanceOf[js.Any])
     

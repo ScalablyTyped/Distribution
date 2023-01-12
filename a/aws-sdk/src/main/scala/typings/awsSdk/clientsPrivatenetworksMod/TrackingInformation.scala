@@ -18,7 +18,8 @@ object TrackingInformation {
     __obj.asInstanceOf[TrackingInformation]
   }
   
-  extension [Self <: TrackingInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackingInformation] (val x: Self) extends AnyVal {
     
     inline def setTrackingNumber(value: String): Self = StObject.set(x, "trackingNumber", value.asInstanceOf[js.Any])
     

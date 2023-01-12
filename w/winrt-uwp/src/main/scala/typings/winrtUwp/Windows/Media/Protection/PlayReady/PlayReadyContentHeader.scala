@@ -67,7 +67,8 @@ object PlayReadyContentHeader {
     __obj.asInstanceOf[PlayReadyContentHeader]
   }
   
-  extension [Self <: PlayReadyContentHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayReadyContentHeader] (val x: Self) extends AnyVal {
     
     inline def setCustomAttributes(value: String): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
     

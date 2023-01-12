@@ -26,7 +26,8 @@ object IDateTimeFormatterStatics {
     __obj.asInstanceOf[IDateTimeFormatterStatics]
   }
   
-  extension [Self <: IDateTimeFormatterStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDateTimeFormatterStatics] (val x: Self) extends AnyVal {
     
     inline def setLongDate(value: DateTimeFormatter): Self = StObject.set(x, "longDate", value.asInstanceOf[js.Any])
     

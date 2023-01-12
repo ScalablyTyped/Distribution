@@ -46,7 +46,8 @@ object PartialProgressIndicatorO {
     __obj.asInstanceOf[PartialProgressIndicatorO]
   }
   
-  extension [Self <: PartialProgressIndicatorO](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialProgressIndicatorO] (val x: Self) extends AnyVal {
     
     inline def setClassComplete(value: String): Self = StObject.set(x, "classComplete", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object SeriesHeatmapDataDragDropGuideBoxOptions {
     __obj.asInstanceOf[SeriesHeatmapDataDragDropGuideBoxOptions]
   }
   
-  extension [Self <: SeriesHeatmapDataDragDropGuideBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesHeatmapDataDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

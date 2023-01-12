@@ -17,7 +17,8 @@ object TimepickerIconOptions {
     __obj.asInstanceOf[TimepickerIconOptions]
   }
   
-  extension [Self <: TimepickerIconOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimepickerIconOptions] (val x: Self) extends AnyVal {
     
     inline def setDown(value: String): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
     

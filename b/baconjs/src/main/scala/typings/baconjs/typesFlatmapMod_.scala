@@ -50,7 +50,8 @@ object typesFlatmapMod_ {
       __obj.asInstanceOf[FlatMapParams]
     }
     
-    extension [Self <: FlatMapParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlatMapParams] (val x: Self) extends AnyVal {
       
       inline def setDesc(value: Desc): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       

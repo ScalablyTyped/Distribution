@@ -71,7 +71,8 @@ object writer {
       __obj.asInstanceOf[IJson]
     }
     
-    extension [Self <: IJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJson] (val x: Self) extends AnyVal {
       
       inline def setAllowSingle(value: Boolean): Self = StObject.set(x, "allowSingle", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object writer {
       __obj.asInstanceOf[typings.senchaTouch.Ext.data.writer.IWriter]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.data.writer.IWriter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.data.writer.IWriter] (val x: Self) extends AnyVal {
       
       inline def setGetNameProperty(value: () => String): Self = StObject.set(x, "getNameProperty", js.Any.fromFunction0(value))
       
@@ -278,7 +280,8 @@ object writer {
       __obj.asInstanceOf[IXml]
     }
     
-    extension [Self <: IXml](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IXml] (val x: Self) extends AnyVal {
       
       inline def setDefaultDocumentRoot(value: String): Self = StObject.set(x, "defaultDocumentRoot", value.asInstanceOf[js.Any])
       

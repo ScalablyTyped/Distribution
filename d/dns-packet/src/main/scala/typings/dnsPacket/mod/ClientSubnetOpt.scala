@@ -25,7 +25,8 @@ object ClientSubnetOpt {
     __obj.asInstanceOf[ClientSubnetOpt]
   }
   
-  extension [Self <: ClientSubnetOpt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientSubnetOpt] (val x: Self) extends AnyVal {
     
     inline def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     

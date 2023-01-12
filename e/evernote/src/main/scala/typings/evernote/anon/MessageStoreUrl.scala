@@ -25,7 +25,8 @@ object MessageStoreUrl {
     __obj.asInstanceOf[MessageStoreUrl]
   }
   
-  extension [Self <: MessageStoreUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageStoreUrl] (val x: Self) extends AnyVal {
     
     inline def setMessageStoreUrl(value: String): Self = StObject.set(x, "messageStoreUrl", value.asInstanceOf[js.Any])
     

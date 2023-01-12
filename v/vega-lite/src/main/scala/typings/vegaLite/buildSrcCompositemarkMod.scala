@@ -217,7 +217,8 @@ object buildSrcCompositemarkMod {
       __obj.asInstanceOf[SharedCompositeEncoding[F]]
     }
     
-    extension [Self <: SharedCompositeEncoding[?], F /* <: Field */](x: Self & SharedCompositeEncoding[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedCompositeEncoding[?], F /* <: Field */] (val x: Self & SharedCompositeEncoding[F]) extends AnyVal {
       
       inline def setAngle(value: Partial[js.UndefOr[NumericMarkPropDef[F]]]): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       

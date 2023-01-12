@@ -15,7 +15,8 @@ object EnumValuesFeedbackDesktop {
     __obj.asInstanceOf[EnumValuesFeedbackDesktop]
   }
   
-  extension [Self <: EnumValuesFeedbackDesktop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesFeedbackDesktop] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: FeedbackDesktop): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

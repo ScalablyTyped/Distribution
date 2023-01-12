@@ -36,7 +36,8 @@ object OfficeGraphInsights {
     __obj.asInstanceOf[OfficeGraphInsights]
   }
   
-  extension [Self <: OfficeGraphInsights](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfficeGraphInsights] (val x: Self) extends AnyVal {
     
     inline def setShared(value: NullableOption[js.Array[SharedInsight]]): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     

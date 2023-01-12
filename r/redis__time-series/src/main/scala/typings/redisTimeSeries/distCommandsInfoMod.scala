@@ -71,7 +71,8 @@ object distCommandsInfoMod {
       __obj.asInstanceOf[InfoReply]
     }
     
-    extension [Self <: InfoReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfoReply] (val x: Self) extends AnyVal {
       
       inline def setChunkCount(value: Double): Self = StObject.set(x, "chunkCount", value.asInstanceOf[js.Any])
       

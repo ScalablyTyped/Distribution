@@ -32,7 +32,8 @@ object emailMod {
         __obj.asInstanceOf[CustomEmailOptions]
       }
       
-      extension [Self <: CustomEmailOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomEmailOptions] (val x: Self) extends AnyVal {
         
         inline def setPackageSettings(value: Any): Self = StObject.set(x, "packageSettings", value.asInstanceOf[js.Any])
         
@@ -71,7 +72,8 @@ object emailMod {
         __obj.asInstanceOf[EmailOptions]
       }
       
-      extension [Self <: EmailOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EmailOptions] (val x: Self) extends AnyVal {
         
         inline def setAttachments(value: js.Array[js.Object]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
         
@@ -146,7 +148,8 @@ object emailMod {
     @js.native
     val ^ : typings.meteor.emailMod.MailComposerStatic = js.native
     
-    extension [Self <: typings.meteor.emailMod.MailComposer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.meteor.emailMod.MailComposer] (val x: Self) extends AnyVal {
       
       inline def setAddHeader(value: (String, String) => Unit): Self = StObject.set(x, "addHeader", js.Any.fromFunction2(value))
       
@@ -204,7 +207,8 @@ object emailMod {
       __obj.asInstanceOf[typings.meteor.emailMod.MailComposerOptions]
     }
     
-    extension [Self <: typings.meteor.emailMod.MailComposerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.meteor.emailMod.MailComposerOptions] (val x: Self) extends AnyVal {
       
       inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       

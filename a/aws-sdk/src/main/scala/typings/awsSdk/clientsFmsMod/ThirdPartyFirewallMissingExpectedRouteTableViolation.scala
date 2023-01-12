@@ -38,7 +38,8 @@ object ThirdPartyFirewallMissingExpectedRouteTableViolation {
     __obj.asInstanceOf[ThirdPartyFirewallMissingExpectedRouteTableViolation]
   }
   
-  extension [Self <: ThirdPartyFirewallMissingExpectedRouteTableViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThirdPartyFirewallMissingExpectedRouteTableViolation] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: LengthBoundedString): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object Scope {
     __obj.asInstanceOf[Scope]
   }
   
-  extension [Self <: Scope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
     
     inline def setComplianceResourceId(value: BaseResourceId): Self = StObject.set(x, "ComplianceResourceId", value.asInstanceOf[js.Any])
     

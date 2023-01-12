@@ -116,7 +116,8 @@ object dxPolarChartArgumentAxis {
     __obj.asInstanceOf[dxPolarChartArgumentAxis]
   }
   
-  extension [Self <: dxPolarChartArgumentAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPolarChartArgumentAxis] (val x: Self) extends AnyVal {
     
     inline def setArgumentType(value: ChartsDataType): Self = StObject.set(x, "argumentType", value.asInstanceOf[js.Any])
     

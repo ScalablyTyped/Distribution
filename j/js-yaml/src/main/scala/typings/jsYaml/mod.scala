@@ -166,7 +166,8 @@ object mod {
       __obj.asInstanceOf[DumpOptions]
     }
     
-    extension [Self <: DumpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DumpOptions] (val x: Self) extends AnyVal {
       
       inline def setCondenseFlow(value: Boolean): Self = StObject.set(x, "condenseFlow", value.asInstanceOf[js.Any])
       
@@ -266,7 +267,8 @@ object mod {
       __obj.asInstanceOf[LoadOptions]
     }
     
-    extension [Self <: LoadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -311,7 +313,8 @@ object mod {
       __obj.asInstanceOf[Mark]
     }
     
-    extension [Self <: Mark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mark] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: String): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -340,7 +343,8 @@ object mod {
       __obj.asInstanceOf[SchemaDefinition]
     }
     
-    extension [Self <: SchemaDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaDefinition] (val x: Self) extends AnyVal {
       
       inline def setExplicit(value: js.Array[Type]): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
       
@@ -409,7 +413,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setCheckLineBreaks(value: Boolean): Self = StObject.set(x, "checkLineBreaks", value.asInstanceOf[js.Any])
       
@@ -480,7 +485,8 @@ object mod {
       __obj.asInstanceOf[TypeConstructorOptions]
     }
     
-    extension [Self <: TypeConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setConstruct(value: (/* data */ Any, /* type */ js.UndefOr[String]) => Any): Self = StObject.set(x, "construct", js.Any.fromFunction2(value))
       

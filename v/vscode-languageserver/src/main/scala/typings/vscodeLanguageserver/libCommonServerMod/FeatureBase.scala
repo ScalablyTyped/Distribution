@@ -31,7 +31,8 @@ object FeatureBase {
     __obj.asInstanceOf[FeatureBase]
   }
   
-  extension [Self <: FeatureBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureBase] (val x: Self) extends AnyVal {
     
     inline def setFillServerCapabilities(value: ServerCapabilities[LSPAny] => Unit): Self = StObject.set(x, "fillServerCapabilities", js.Any.fromFunction1(value))
     

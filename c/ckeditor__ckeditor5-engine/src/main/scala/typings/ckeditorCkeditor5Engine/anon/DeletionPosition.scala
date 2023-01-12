@@ -37,7 +37,8 @@ object DeletionPosition {
     __obj.asInstanceOf[DeletionPosition]
   }
   
-  extension [Self <: DeletionPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletionPosition] (val x: Self) extends AnyVal {
     
     inline def setDeletionPosition(value: ReturnType[js.Function0[Root]]): Self = StObject.set(x, "deletionPosition", value.asInstanceOf[js.Any])
     

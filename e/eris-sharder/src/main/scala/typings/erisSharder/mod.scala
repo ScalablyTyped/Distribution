@@ -146,7 +146,8 @@ object mod {
       __obj.asInstanceOf[Cluster]
     }
     
-    extension [Self <: Cluster](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cluster] (val x: Self) extends AnyVal {
       
       inline def setApp(value: Any): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       

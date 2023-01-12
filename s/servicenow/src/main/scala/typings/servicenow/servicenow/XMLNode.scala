@@ -38,7 +38,8 @@ object XMLNode {
     __obj.asInstanceOf[XMLNode]
   }
   
-  extension [Self <: XMLNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLNode] (val x: Self) extends AnyVal {
     
     inline def setGetAttribute(value: String => String): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
     

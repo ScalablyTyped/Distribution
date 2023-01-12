@@ -98,7 +98,8 @@ object UpdateIntentRequest {
     __obj.asInstanceOf[UpdateIntentRequest]
   }
   
-  extension [Self <: UpdateIntentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateIntentRequest] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     

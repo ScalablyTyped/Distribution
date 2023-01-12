@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[ApiOptions]
     }
     
-    extension [Self <: ApiOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiOptions] (val x: Self) extends AnyVal {
       
       inline def setErrorMiddleware(value: () => Any): Self = StObject.set(x, "errorMiddleware", js.Any.fromFunction0(value))
       
@@ -57,7 +58,8 @@ object mod {
       __obj.asInstanceOf[HttpMethodOptions]
     }
     
-    extension [Self <: HttpMethodOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpMethodOptions] (val x: Self) extends AnyVal {
       
       inline def setRawBody(value: Boolean): Self = StObject.set(x, "rawBody", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object mod {
       __obj.asInstanceOf[HttpResponse]
     }
     
-    extension [Self <: HttpResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.Object | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

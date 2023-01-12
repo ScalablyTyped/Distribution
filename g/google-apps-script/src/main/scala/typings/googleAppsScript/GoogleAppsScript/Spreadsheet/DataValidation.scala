@@ -44,7 +44,8 @@ object DataValidation {
     __obj.asInstanceOf[DataValidation]
   }
   
-  extension [Self <: DataValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataValidation] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: () => DataValidationBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     

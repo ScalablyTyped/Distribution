@@ -2534,7 +2534,8 @@ object Slides {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.AffineTransform]
     }
     
-    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.AffineTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.AffineTransform] (val x: Self) extends AnyVal {
       
       inline def setGetScaleX(value: () => Double): Self = StObject.set(x, "getScaleX", js.Any.fromFunction0(value))
       
@@ -2596,7 +2597,8 @@ object Slides {
       __obj.asInstanceOf[AffineTransformBuilder]
     }
     
-    extension [Self <: AffineTransformBuilder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AffineTransformBuilder] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.AffineTransform): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
       
@@ -2633,7 +2635,8 @@ object Slides {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.AutoText]
     }
     
-    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.AutoText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.AutoText] (val x: Self) extends AnyVal {
       
       inline def setGetAutoTextType(value: () => AutoTextType): Self = StObject.set(x, "getAutoTextType", js.Any.fromFunction0(value))
       
@@ -2677,7 +2680,8 @@ object Slides {
       __obj.asInstanceOf[Border]
     }
     
-    extension [Self <: Border](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
       
       inline def setGetDashStyle(value: () => DashStyle): Self = StObject.set(x, "getDashStyle", js.Any.fromFunction0(value))
       
@@ -2762,7 +2766,8 @@ object Slides {
         __obj.asInstanceOf[PresentationsCollection]
       }
       
-      extension [Self <: PresentationsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PresentationsCollection] (val x: Self) extends AnyVal {
         
         inline def setBatchUpdate(value: (BatchUpdatePresentationRequest, String) => BatchUpdatePresentationResponse): Self = StObject.set(x, "batchUpdate", js.Any.fromFunction2(value))
         
@@ -2801,7 +2806,8 @@ object Slides {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setAsRgbColor(value: () => typings.googleAppsScript.GoogleAppsScript.Base.RgbColor): Self = StObject.set(x, "asRgbColor", js.Any.fromFunction0(value))
       
@@ -2846,7 +2852,8 @@ object Slides {
       __obj.asInstanceOf[ConnectionSite]
     }
     
-    extension [Self <: ConnectionSite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionSite] (val x: Self) extends AnyVal {
       
       inline def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
       
@@ -3336,7 +3343,8 @@ object Slides {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Link]
     }
     
-    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Link](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Link] (val x: Self) extends AnyVal {
       
       inline def setGetLinkType(value: () => LinkType): Self = StObject.set(x, "getLinkType", js.Any.fromFunction0(value))
       
@@ -3368,7 +3376,8 @@ object Slides {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.List]
     }
     
-    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.List](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.List] (val x: Self) extends AnyVal {
       
       inline def setGetListId(value: () => String): Self = StObject.set(x, "getListId", js.Any.fromFunction0(value))
       
@@ -3407,7 +3416,8 @@ object Slides {
       __obj.asInstanceOf[ListStyle]
     }
     
-    extension [Self <: ListStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListStyle] (val x: Self) extends AnyVal {
       
       inline def setApplyListPreset(value: ListPreset => ListStyle): Self = StObject.set(x, "applyListPreset", js.Any.fromFunction1(value))
       
@@ -3523,7 +3533,8 @@ object Slides {
     def selectAsCurrentPage(): Unit = js.native
   }
   
-  extension [Self <: Slides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Slides] (val x: Self) extends AnyVal {
     
     inline def setNewAffineTransform(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform): Self = StObject.set(x, "newAffineTransform", js.Any.fromFunction0(value))
     
@@ -4068,7 +4079,8 @@ object Slides {
       __obj.asInstanceOf[PageElementRange]
     }
     
-    extension [Self <: PageElementRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageElementRange] (val x: Self) extends AnyVal {
       
       inline def setGetPageElements(value: () => js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.PageElement]): Self = StObject.set(x, "getPageElements", js.Any.fromFunction0(value))
     }
@@ -4088,7 +4100,8 @@ object Slides {
       __obj.asInstanceOf[PageRange]
     }
     
-    extension [Self <: PageRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageRange] (val x: Self) extends AnyVal {
       
       inline def setGetPages(value: () => js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Page]): Self = StObject.set(x, "getPages", js.Any.fromFunction0(value))
     }
@@ -4110,7 +4123,8 @@ object Slides {
       __obj.asInstanceOf[Paragraph]
     }
     
-    extension [Self <: Paragraph](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Paragraph] (val x: Self) extends AnyVal {
       
       inline def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
       
@@ -4189,7 +4203,8 @@ object Slides {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle]
     }
     
-    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle] (val x: Self) extends AnyVal {
       
       inline def setGetIndentEnd(value: () => Double): Self = StObject.set(x, "getIndentEnd", js.Any.fromFunction0(value))
       
@@ -4254,7 +4269,8 @@ object Slides {
       __obj.asInstanceOf[PictureFill]
     }
     
-    extension [Self <: PictureFill](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PictureFill] (val x: Self) extends AnyVal {
       
       inline def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
       
@@ -4282,7 +4298,8 @@ object Slides {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
       
@@ -4389,7 +4406,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform] (val x: Self) extends AnyVal {
         
         inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
         
@@ -4436,7 +4454,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText] (val x: Self) extends AnyVal {
         
         inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -4465,7 +4484,8 @@ object Slides {
         __obj.asInstanceOf[BatchUpdatePresentationRequest]
       }
       
-      extension [Self <: BatchUpdatePresentationRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchUpdatePresentationRequest] (val x: Self) extends AnyVal {
         
         inline def setRequests(value: js.Array[Request]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
         
@@ -4494,7 +4514,8 @@ object Slides {
         __obj.asInstanceOf[BatchUpdatePresentationResponse]
       }
       
-      extension [Self <: BatchUpdatePresentationResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchUpdatePresentationResponse] (val x: Self) extends AnyVal {
         
         inline def setPresentationId(value: String): Self = StObject.set(x, "presentationId", value.asInstanceOf[js.Any])
         
@@ -4529,7 +4550,8 @@ object Slides {
         __obj.asInstanceOf[Bullet]
       }
       
-      extension [Self <: Bullet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Bullet] (val x: Self) extends AnyVal {
         
         inline def setBulletStyle(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle): Self = StObject.set(x, "bulletStyle", value.asInstanceOf[js.Any])
         
@@ -4560,7 +4582,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme] (val x: Self) extends AnyVal {
         
         inline def setColors(value: js.Array[ThemeColorPair]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
         
@@ -4585,7 +4608,8 @@ object Slides {
         __obj.asInstanceOf[ColorStop]
       }
       
-      extension [Self <: ColorStop](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ColorStop] (val x: Self) extends AnyVal {
         
         inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
         
@@ -4616,7 +4640,8 @@ object Slides {
         __obj.asInstanceOf[CreateImageRequest]
       }
       
-      extension [Self <: CreateImageRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateImageRequest] (val x: Self) extends AnyVal {
         
         inline def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
         
@@ -4643,7 +4668,8 @@ object Slides {
         __obj.asInstanceOf[CreateImageResponse]
       }
       
-      extension [Self <: CreateImageResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateImageResponse] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -4668,7 +4694,8 @@ object Slides {
         __obj.asInstanceOf[CreateLineRequest]
       }
       
-      extension [Self <: CreateLineRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateLineRequest] (val x: Self) extends AnyVal {
         
         inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
         
@@ -4699,7 +4726,8 @@ object Slides {
         __obj.asInstanceOf[CreateLineResponse]
       }
       
-      extension [Self <: CreateLineResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateLineResponse] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -4724,7 +4752,8 @@ object Slides {
         __obj.asInstanceOf[CreateParagraphBulletsRequest]
       }
       
-      extension [Self <: CreateParagraphBulletsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateParagraphBulletsRequest] (val x: Self) extends AnyVal {
         
         inline def setBulletPreset(value: String): Self = StObject.set(x, "bulletPreset", value.asInstanceOf[js.Any])
         
@@ -4759,7 +4788,8 @@ object Slides {
         __obj.asInstanceOf[CreateShapeRequest]
       }
       
-      extension [Self <: CreateShapeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateShapeRequest] (val x: Self) extends AnyVal {
         
         inline def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
         
@@ -4786,7 +4816,8 @@ object Slides {
         __obj.asInstanceOf[CreateShapeResponse]
       }
       
-      extension [Self <: CreateShapeResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateShapeResponse] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -4813,7 +4844,8 @@ object Slides {
         __obj.asInstanceOf[CreateSheetsChartRequest]
       }
       
-      extension [Self <: CreateSheetsChartRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateSheetsChartRequest] (val x: Self) extends AnyVal {
         
         inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
         
@@ -4848,7 +4880,8 @@ object Slides {
         __obj.asInstanceOf[CreateSheetsChartResponse]
       }
       
-      extension [Self <: CreateSheetsChartResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateSheetsChartResponse] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -4873,7 +4906,8 @@ object Slides {
         __obj.asInstanceOf[CreateSlideRequest]
       }
       
-      extension [Self <: CreateSlideRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateSlideRequest] (val x: Self) extends AnyVal {
         
         inline def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
         
@@ -4906,7 +4940,8 @@ object Slides {
         __obj.asInstanceOf[CreateSlideResponse]
       }
       
-      extension [Self <: CreateSlideResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateSlideResponse] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -4931,7 +4966,8 @@ object Slides {
         __obj.asInstanceOf[CreateTableRequest]
       }
       
-      extension [Self <: CreateTableRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateTableRequest] (val x: Self) extends AnyVal {
         
         inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
@@ -4962,7 +4998,8 @@ object Slides {
         __obj.asInstanceOf[CreateTableResponse]
       }
       
-      extension [Self <: CreateTableResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateTableResponse] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -4987,7 +5024,8 @@ object Slides {
         __obj.asInstanceOf[CreateVideoRequest]
       }
       
-      extension [Self <: CreateVideoRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateVideoRequest] (val x: Self) extends AnyVal {
         
         inline def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
         
@@ -5018,7 +5056,8 @@ object Slides {
         __obj.asInstanceOf[CreateVideoResponse]
       }
       
-      extension [Self <: CreateVideoResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateVideoResponse] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -5045,7 +5084,8 @@ object Slides {
         __obj.asInstanceOf[CropProperties]
       }
       
-      extension [Self <: CropProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CropProperties] (val x: Self) extends AnyVal {
         
         inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
         
@@ -5080,7 +5120,8 @@ object Slides {
         __obj.asInstanceOf[DeleteObjectRequest]
       }
       
-      extension [Self <: DeleteObjectRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteObjectRequest] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -5103,7 +5144,8 @@ object Slides {
         __obj.asInstanceOf[DeleteParagraphBulletsRequest]
       }
       
-      extension [Self <: DeleteParagraphBulletsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteParagraphBulletsRequest] (val x: Self) extends AnyVal {
         
         inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
@@ -5132,7 +5174,8 @@ object Slides {
         __obj.asInstanceOf[DeleteTableColumnRequest]
       }
       
-      extension [Self <: DeleteTableColumnRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteTableColumnRequest] (val x: Self) extends AnyVal {
         
         inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
@@ -5157,7 +5200,8 @@ object Slides {
         __obj.asInstanceOf[DeleteTableRowRequest]
       }
       
-      extension [Self <: DeleteTableRowRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteTableRowRequest] (val x: Self) extends AnyVal {
         
         inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
@@ -5184,7 +5228,8 @@ object Slides {
         __obj.asInstanceOf[DeleteTextRequest]
       }
       
-      extension [Self <: DeleteTextRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteTextRequest] (val x: Self) extends AnyVal {
         
         inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
@@ -5213,7 +5258,8 @@ object Slides {
         __obj.asInstanceOf[Dimension]
       }
       
-      extension [Self <: Dimension](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
         
         inline def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
         
@@ -5238,7 +5284,8 @@ object Slides {
         __obj.asInstanceOf[DuplicateObjectRequest]
       }
       
-      extension [Self <: DuplicateObjectRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DuplicateObjectRequest] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -5261,7 +5308,8 @@ object Slides {
         __obj.asInstanceOf[DuplicateObjectResponse]
       }
       
-      extension [Self <: DuplicateObjectResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DuplicateObjectResponse] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -5280,7 +5328,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Group]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Group](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Group] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
@@ -5303,7 +5352,8 @@ object Slides {
         __obj.asInstanceOf[GroupObjectsRequest]
       }
       
-      extension [Self <: GroupObjectsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GroupObjectsRequest] (val x: Self) extends AnyVal {
         
         inline def setChildrenObjectIds(value: js.Array[String]): Self = StObject.set(x, "childrenObjectIds", value.asInstanceOf[js.Any])
         
@@ -5328,7 +5378,8 @@ object Slides {
         __obj.asInstanceOf[GroupObjectsResponse]
       }
       
-      extension [Self <: GroupObjectsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GroupObjectsResponse] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -5351,7 +5402,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Image]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Image](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Image] (val x: Self) extends AnyVal {
         
         inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
         
@@ -5392,7 +5444,8 @@ object Slides {
         __obj.asInstanceOf[ImageProperties]
       }
       
-      extension [Self <: ImageProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ImageProperties] (val x: Self) extends AnyVal {
         
         inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
         
@@ -5445,7 +5498,8 @@ object Slides {
         __obj.asInstanceOf[InsertTableColumnsRequest]
       }
       
-      extension [Self <: InsertTableColumnsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InsertTableColumnsRequest] (val x: Self) extends AnyVal {
         
         inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
@@ -5482,7 +5536,8 @@ object Slides {
         __obj.asInstanceOf[InsertTableRowsRequest]
       }
       
-      extension [Self <: InsertTableRowsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InsertTableRowsRequest] (val x: Self) extends AnyVal {
         
         inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
@@ -5519,7 +5574,8 @@ object Slides {
         __obj.asInstanceOf[InsertTextRequest]
       }
       
-      extension [Self <: InsertTextRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InsertTextRequest] (val x: Self) extends AnyVal {
         
         inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
@@ -5554,7 +5610,8 @@ object Slides {
         __obj.asInstanceOf[LayoutPlaceholderIdMapping]
       }
       
-      extension [Self <: LayoutPlaceholderIdMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LayoutPlaceholderIdMapping] (val x: Self) extends AnyVal {
         
         inline def setLayoutPlaceholder(value: Placeholder): Self = StObject.set(x, "layoutPlaceholder", value.asInstanceOf[js.Any])
         
@@ -5585,7 +5642,8 @@ object Slides {
         __obj.asInstanceOf[LayoutProperties]
       }
       
-      extension [Self <: LayoutProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LayoutProperties] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -5614,7 +5672,8 @@ object Slides {
         __obj.asInstanceOf[LayoutReference]
       }
       
-      extension [Self <: LayoutReference](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LayoutReference] (val x: Self) extends AnyVal {
         
         inline def setLayoutId(value: String): Self = StObject.set(x, "layoutId", value.asInstanceOf[js.Any])
         
@@ -5641,7 +5700,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Line]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Line](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Line] (val x: Self) extends AnyVal {
         
         inline def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
         
@@ -5670,7 +5730,8 @@ object Slides {
         __obj.asInstanceOf[LineConnection]
       }
       
-      extension [Self <: LineConnection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LineConnection] (val x: Self) extends AnyVal {
         
         inline def setConnectedObjectId(value: String): Self = StObject.set(x, "connectedObjectId", value.asInstanceOf[js.Any])
         
@@ -5693,7 +5754,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.LineFill]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.LineFill](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.LineFill] (val x: Self) extends AnyVal {
         
         inline def setSolidFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
         
@@ -5726,7 +5788,8 @@ object Slides {
         __obj.asInstanceOf[LineProperties]
       }
       
-      extension [Self <: LineProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LineProperties] (val x: Self) extends AnyVal {
         
         inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
         
@@ -5779,7 +5842,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link] (val x: Self) extends AnyVal {
         
         inline def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
         
@@ -5812,7 +5876,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.List]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.List](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.List] (val x: Self) extends AnyVal {
         
         inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
         
@@ -5835,7 +5900,8 @@ object Slides {
         __obj.asInstanceOf[MasterProperties]
       }
       
-      extension [Self <: MasterProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MasterProperties] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -5856,7 +5922,8 @@ object Slides {
         __obj.asInstanceOf[MergeTableCellsRequest]
       }
       
-      extension [Self <: MergeTableCellsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MergeTableCellsRequest] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -5879,7 +5946,8 @@ object Slides {
         __obj.asInstanceOf[NestingLevel]
       }
       
-      extension [Self <: NestingLevel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NestingLevel] (val x: Self) extends AnyVal {
         
         inline def setBulletStyle(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle): Self = StObject.set(x, "bulletStyle", value.asInstanceOf[js.Any])
         
@@ -5898,7 +5966,8 @@ object Slides {
         __obj.asInstanceOf[NotesProperties]
       }
       
-      extension [Self <: NotesProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NotesProperties] (val x: Self) extends AnyVal {
         
         inline def setSpeakerNotesObjectId(value: String): Self = StObject.set(x, "speakerNotesObjectId", value.asInstanceOf[js.Any])
         
@@ -5919,7 +5988,8 @@ object Slides {
         __obj.asInstanceOf[OpaqueColor]
       }
       
-      extension [Self <: OpaqueColor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OpaqueColor] (val x: Self) extends AnyVal {
         
         inline def setRgbColor(value: RgbColor): Self = StObject.set(x, "rgbColor", value.asInstanceOf[js.Any])
         
@@ -5942,7 +6012,8 @@ object Slides {
         __obj.asInstanceOf[OptionalColor]
       }
       
-      extension [Self <: OptionalColor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OptionalColor] (val x: Self) extends AnyVal {
         
         inline def setOpaqueColor(value: OpaqueColor): Self = StObject.set(x, "opaqueColor", value.asInstanceOf[js.Any])
         
@@ -5967,7 +6038,8 @@ object Slides {
         __obj.asInstanceOf[Outline]
       }
       
-      extension [Self <: Outline](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Outline] (val x: Self) extends AnyVal {
         
         inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
         
@@ -5998,7 +6070,8 @@ object Slides {
         __obj.asInstanceOf[OutlineFill]
       }
       
-      extension [Self <: OutlineFill](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OutlineFill] (val x: Self) extends AnyVal {
         
         inline def setSolidFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
         
@@ -6033,7 +6106,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page] (val x: Self) extends AnyVal {
         
         inline def setLayoutProperties(value: LayoutProperties): Self = StObject.set(x, "layoutProperties", value.asInstanceOf[js.Any])
         
@@ -6090,7 +6164,8 @@ object Slides {
         __obj.asInstanceOf[PageBackgroundFill]
       }
       
-      extension [Self <: PageBackgroundFill](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PageBackgroundFill] (val x: Self) extends AnyVal {
         
         inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
         
@@ -6141,7 +6216,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -6212,7 +6288,8 @@ object Slides {
         __obj.asInstanceOf[PageElementProperties]
       }
       
-      extension [Self <: PageElementProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PageElementProperties] (val x: Self) extends AnyVal {
         
         inline def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
         
@@ -6241,7 +6318,8 @@ object Slides {
         __obj.asInstanceOf[PageProperties]
       }
       
-      extension [Self <: PageProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PageProperties] (val x: Self) extends AnyVal {
         
         inline def setColorScheme(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
         
@@ -6266,7 +6344,8 @@ object Slides {
         __obj.asInstanceOf[ParagraphMarker]
       }
       
-      extension [Self <: ParagraphMarker](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParagraphMarker] (val x: Self) extends AnyVal {
         
         inline def setBullet(value: Bullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
         
@@ -6305,7 +6384,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle] (val x: Self) extends AnyVal {
         
         inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
         
@@ -6360,7 +6440,8 @@ object Slides {
         __obj.asInstanceOf[Placeholder]
       }
       
-      extension [Self <: Placeholder](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Placeholder] (val x: Self) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -6403,7 +6484,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation] (val x: Self) extends AnyVal {
         
         inline def setLayouts(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page]): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
         
@@ -6464,7 +6546,8 @@ object Slides {
         __obj.asInstanceOf[Range]
       }
       
-      extension [Self <: Range](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
         
         inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
         
@@ -6493,7 +6576,8 @@ object Slides {
         __obj.asInstanceOf[Recolor]
       }
       
-      extension [Self <: Recolor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Recolor] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -6518,7 +6602,8 @@ object Slides {
         __obj.asInstanceOf[RefreshSheetsChartRequest]
       }
       
-      extension [Self <: RefreshSheetsChartRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RefreshSheetsChartRequest] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -6545,7 +6630,8 @@ object Slides {
         __obj.asInstanceOf[ReplaceAllShapesWithImageRequest]
       }
       
-      extension [Self <: ReplaceAllShapesWithImageRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReplaceAllShapesWithImageRequest] (val x: Self) extends AnyVal {
         
         inline def setContainsText(value: SubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
         
@@ -6582,7 +6668,8 @@ object Slides {
         __obj.asInstanceOf[ReplaceAllShapesWithImageResponse]
       }
       
-      extension [Self <: ReplaceAllShapesWithImageResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReplaceAllShapesWithImageResponse] (val x: Self) extends AnyVal {
         
         inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
         
@@ -6609,7 +6696,8 @@ object Slides {
         __obj.asInstanceOf[ReplaceAllShapesWithSheetsChartRequest]
       }
       
-      extension [Self <: ReplaceAllShapesWithSheetsChartRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReplaceAllShapesWithSheetsChartRequest] (val x: Self) extends AnyVal {
         
         inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
         
@@ -6646,7 +6734,8 @@ object Slides {
         __obj.asInstanceOf[ReplaceAllShapesWithSheetsChartResponse]
       }
       
-      extension [Self <: ReplaceAllShapesWithSheetsChartResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReplaceAllShapesWithSheetsChartResponse] (val x: Self) extends AnyVal {
         
         inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
         
@@ -6669,7 +6758,8 @@ object Slides {
         __obj.asInstanceOf[ReplaceAllTextRequest]
       }
       
-      extension [Self <: ReplaceAllTextRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReplaceAllTextRequest] (val x: Self) extends AnyVal {
         
         inline def setContainsText(value: SubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
         
@@ -6698,7 +6788,8 @@ object Slides {
         __obj.asInstanceOf[ReplaceAllTextResponse]
       }
       
-      extension [Self <: ReplaceAllTextResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReplaceAllTextResponse] (val x: Self) extends AnyVal {
         
         inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
         
@@ -6721,7 +6812,8 @@ object Slides {
         __obj.asInstanceOf[ReplaceImageRequest]
       }
       
-      extension [Self <: ReplaceImageRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReplaceImageRequest] (val x: Self) extends AnyVal {
         
         inline def setImageObjectId(value: String): Self = StObject.set(x, "imageObjectId", value.asInstanceOf[js.Any])
         
@@ -6832,7 +6924,8 @@ object Slides {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setCreateImage(value: CreateImageRequest): Self = StObject.set(x, "createImage", value.asInstanceOf[js.Any])
         
@@ -7019,7 +7112,8 @@ object Slides {
         __obj.asInstanceOf[RerouteLineRequest]
       }
       
-      extension [Self <: RerouteLineRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RerouteLineRequest] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -7060,7 +7154,8 @@ object Slides {
         __obj.asInstanceOf[Response]
       }
       
-      extension [Self <: Response](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
         
         inline def setCreateImage(value: CreateImageResponse): Self = StObject.set(x, "createImage", value.asInstanceOf[js.Any])
         
@@ -7127,7 +7222,8 @@ object Slides {
         __obj.asInstanceOf[RgbColor]
       }
       
-      extension [Self <: RgbColor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RgbColor] (val x: Self) extends AnyVal {
         
         inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
         
@@ -7168,7 +7264,8 @@ object Slides {
         __obj.asInstanceOf[Shadow]
       }
       
-      extension [Self <: Shadow](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Shadow] (val x: Self) extends AnyVal {
         
         inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
         
@@ -7221,7 +7318,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Shape]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Shape](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Shape] (val x: Self) extends AnyVal {
         
         inline def setPlaceholder(value: Placeholder): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
         
@@ -7254,7 +7352,8 @@ object Slides {
         __obj.asInstanceOf[ShapeBackgroundFill]
       }
       
-      extension [Self <: ShapeBackgroundFill](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShapeBackgroundFill] (val x: Self) extends AnyVal {
         
         inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
         
@@ -7285,7 +7384,8 @@ object Slides {
         __obj.asInstanceOf[ShapeProperties]
       }
       
-      extension [Self <: ShapeProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShapeProperties] (val x: Self) extends AnyVal {
         
         inline def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
         
@@ -7326,7 +7426,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SheetsChart]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SheetsChart](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SheetsChart] (val x: Self) extends AnyVal {
         
         inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
         
@@ -7357,7 +7458,8 @@ object Slides {
         __obj.asInstanceOf[SheetsChartProperties]
       }
       
-      extension [Self <: SheetsChartProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SheetsChartProperties] (val x: Self) extends AnyVal {
         
         inline def setChartImageProperties(value: ImageProperties): Self = StObject.set(x, "chartImageProperties", value.asInstanceOf[js.Any])
         
@@ -7378,7 +7480,8 @@ object Slides {
         __obj.asInstanceOf[Size]
       }
       
-      extension [Self <: Size](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
         
         inline def setHeight(value: Dimension): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
@@ -7405,7 +7508,8 @@ object Slides {
         __obj.asInstanceOf[SlideProperties]
       }
       
-      extension [Self <: SlideProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SlideProperties] (val x: Self) extends AnyVal {
         
         inline def setLayoutObjectId(value: String): Self = StObject.set(x, "layoutObjectId", value.asInstanceOf[js.Any])
         
@@ -7434,7 +7538,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill] (val x: Self) extends AnyVal {
         
         inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
         
@@ -7459,7 +7564,8 @@ object Slides {
         __obj.asInstanceOf[StretchedPictureFill]
       }
       
-      extension [Self <: StretchedPictureFill](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StretchedPictureFill] (val x: Self) extends AnyVal {
         
         inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
         
@@ -7484,7 +7590,8 @@ object Slides {
         __obj.asInstanceOf[SubstringMatchCriteria]
       }
       
-      extension [Self <: SubstringMatchCriteria](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubstringMatchCriteria] (val x: Self) extends AnyVal {
         
         inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
         
@@ -7517,7 +7624,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Table]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Table](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Table] (val x: Self) extends AnyVal {
         
         inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
@@ -7566,7 +7674,8 @@ object Slides {
         __obj.asInstanceOf[TableBorderCell]
       }
       
-      extension [Self <: TableBorderCell](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableBorderCell] (val x: Self) extends AnyVal {
         
         inline def setLocation(value: TableCellLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
@@ -7589,7 +7698,8 @@ object Slides {
         __obj.asInstanceOf[TableBorderFill]
       }
       
-      extension [Self <: TableBorderFill](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableBorderFill] (val x: Self) extends AnyVal {
         
         inline def setSolidFill(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
         
@@ -7612,7 +7722,8 @@ object Slides {
         __obj.asInstanceOf[TableBorderProperties]
       }
       
-      extension [Self <: TableBorderProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableBorderProperties] (val x: Self) extends AnyVal {
         
         inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
         
@@ -7639,7 +7750,8 @@ object Slides {
         __obj.asInstanceOf[TableBorderRow]
       }
       
-      extension [Self <: TableBorderRow](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableBorderRow] (val x: Self) extends AnyVal {
         
         inline def setTableBorderCells(value: js.Array[TableBorderCell]): Self = StObject.set(x, "tableBorderCells", value.asInstanceOf[js.Any])
         
@@ -7668,7 +7780,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell] (val x: Self) extends AnyVal {
         
         inline def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
         
@@ -7705,7 +7818,8 @@ object Slides {
         __obj.asInstanceOf[TableCellBackgroundFill]
       }
       
-      extension [Self <: TableCellBackgroundFill](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableCellBackgroundFill] (val x: Self) extends AnyVal {
         
         inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
         
@@ -7730,7 +7844,8 @@ object Slides {
         __obj.asInstanceOf[TableCellLocation]
       }
       
-      extension [Self <: TableCellLocation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableCellLocation] (val x: Self) extends AnyVal {
         
         inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
         
@@ -7755,7 +7870,8 @@ object Slides {
         __obj.asInstanceOf[TableCellProperties]
       }
       
-      extension [Self <: TableCellProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableCellProperties] (val x: Self) extends AnyVal {
         
         inline def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
         
@@ -7778,7 +7894,8 @@ object Slides {
         __obj.asInstanceOf[TableColumnProperties]
       }
       
-      extension [Self <: TableColumnProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableColumnProperties] (val x: Self) extends AnyVal {
         
         inline def setColumnWidth(value: Dimension): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
         
@@ -7801,7 +7918,8 @@ object Slides {
         __obj.asInstanceOf[TableRange]
       }
       
-      extension [Self <: TableRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableRange] (val x: Self) extends AnyVal {
         
         inline def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
         
@@ -7832,7 +7950,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow] (val x: Self) extends AnyVal {
         
         inline def setRowHeight(value: Dimension): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
         
@@ -7861,7 +7980,8 @@ object Slides {
         __obj.asInstanceOf[TableRowProperties]
       }
       
-      extension [Self <: TableRowProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableRowProperties] (val x: Self) extends AnyVal {
         
         inline def setMinRowHeight(value: Dimension): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
         
@@ -7882,7 +8002,8 @@ object Slides {
         __obj.asInstanceOf[TextContent]
       }
       
-      extension [Self <: TextContent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextContent] (val x: Self) extends AnyVal {
         
         inline def setLists(value: js.Object): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
         
@@ -7915,7 +8036,8 @@ object Slides {
         __obj.asInstanceOf[TextElement]
       }
       
-      extension [Self <: TextElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextElement] (val x: Self) extends AnyVal {
         
         inline def setAutoText(value: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
         
@@ -7952,7 +8074,8 @@ object Slides {
         __obj.asInstanceOf[TextRun]
       }
       
-      extension [Self <: TextRun](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextRun] (val x: Self) extends AnyVal {
         
         inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -7997,7 +8120,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle] (val x: Self) extends AnyVal {
         
         inline def setBackgroundColor(value: OptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
@@ -8062,7 +8186,8 @@ object Slides {
         __obj.asInstanceOf[ThemeColorPair]
       }
       
-      extension [Self <: ThemeColorPair](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ThemeColorPair] (val x: Self) extends AnyVal {
         
         inline def setColor(value: RgbColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -8089,7 +8214,8 @@ object Slides {
         __obj.asInstanceOf[Thumbnail]
       }
       
-      extension [Self <: Thumbnail](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Thumbnail] (val x: Self) extends AnyVal {
         
         inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
         
@@ -8116,7 +8242,8 @@ object Slides {
         __obj.asInstanceOf[UngroupObjectsRequest]
       }
       
-      extension [Self <: UngroupObjectsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UngroupObjectsRequest] (val x: Self) extends AnyVal {
         
         inline def setObjectIds(value: js.Array[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
         
@@ -8139,7 +8266,8 @@ object Slides {
         __obj.asInstanceOf[UnmergeTableCellsRequest]
       }
       
-      extension [Self <: UnmergeTableCellsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UnmergeTableCellsRequest] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -8166,7 +8294,8 @@ object Slides {
         __obj.asInstanceOf[UpdateImagePropertiesRequest]
       }
       
-      extension [Self <: UpdateImagePropertiesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateImagePropertiesRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -8195,7 +8324,8 @@ object Slides {
         __obj.asInstanceOf[UpdateLineCategoryRequest]
       }
       
-      extension [Self <: UpdateLineCategoryRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateLineCategoryRequest] (val x: Self) extends AnyVal {
         
         inline def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
         
@@ -8222,7 +8352,8 @@ object Slides {
         __obj.asInstanceOf[UpdateLinePropertiesRequest]
       }
       
-      extension [Self <: UpdateLinePropertiesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateLinePropertiesRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -8253,7 +8384,8 @@ object Slides {
         __obj.asInstanceOf[UpdatePageElementAltTextRequest]
       }
       
-      extension [Self <: UpdatePageElementAltTextRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdatePageElementAltTextRequest] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -8284,7 +8416,8 @@ object Slides {
         __obj.asInstanceOf[UpdatePageElementTransformRequest]
       }
       
-      extension [Self <: UpdatePageElementTransformRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdatePageElementTransformRequest] (val x: Self) extends AnyVal {
         
         inline def setApplyMode(value: String): Self = StObject.set(x, "applyMode", value.asInstanceOf[js.Any])
         
@@ -8313,7 +8446,8 @@ object Slides {
         __obj.asInstanceOf[UpdatePageElementsZOrderRequest]
       }
       
-      extension [Self <: UpdatePageElementsZOrderRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdatePageElementsZOrderRequest] (val x: Self) extends AnyVal {
         
         inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
         
@@ -8342,7 +8476,8 @@ object Slides {
         __obj.asInstanceOf[UpdatePagePropertiesRequest]
       }
       
-      extension [Self <: UpdatePagePropertiesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdatePagePropertiesRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -8377,7 +8512,8 @@ object Slides {
         __obj.asInstanceOf[UpdateParagraphStyleRequest]
       }
       
-      extension [Self <: UpdateParagraphStyleRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateParagraphStyleRequest] (val x: Self) extends AnyVal {
         
         inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
@@ -8416,7 +8552,8 @@ object Slides {
         __obj.asInstanceOf[UpdateShapePropertiesRequest]
       }
       
-      extension [Self <: UpdateShapePropertiesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateShapePropertiesRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -8445,7 +8582,8 @@ object Slides {
         __obj.asInstanceOf[UpdateSlidesPositionRequest]
       }
       
-      extension [Self <: UpdateSlidesPositionRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateSlidesPositionRequest] (val x: Self) extends AnyVal {
         
         inline def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
         
@@ -8478,7 +8616,8 @@ object Slides {
         __obj.asInstanceOf[UpdateTableBorderPropertiesRequest]
       }
       
-      extension [Self <: UpdateTableBorderPropertiesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateTableBorderPropertiesRequest] (val x: Self) extends AnyVal {
         
         inline def setBorderPosition(value: String): Self = StObject.set(x, "borderPosition", value.asInstanceOf[js.Any])
         
@@ -8519,7 +8658,8 @@ object Slides {
         __obj.asInstanceOf[UpdateTableCellPropertiesRequest]
       }
       
-      extension [Self <: UpdateTableCellPropertiesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateTableCellPropertiesRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -8556,7 +8696,8 @@ object Slides {
         __obj.asInstanceOf[UpdateTableColumnPropertiesRequest]
       }
       
-      extension [Self <: UpdateTableColumnPropertiesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateTableColumnPropertiesRequest] (val x: Self) extends AnyVal {
         
         inline def setColumnIndices(value: js.Array[Double]): Self = StObject.set(x, "columnIndices", value.asInstanceOf[js.Any])
         
@@ -8595,7 +8736,8 @@ object Slides {
         __obj.asInstanceOf[UpdateTableRowPropertiesRequest]
       }
       
-      extension [Self <: UpdateTableRowPropertiesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateTableRowPropertiesRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -8636,7 +8778,8 @@ object Slides {
         __obj.asInstanceOf[UpdateTextStyleRequest]
       }
       
-      extension [Self <: UpdateTextStyleRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateTextStyleRequest] (val x: Self) extends AnyVal {
         
         inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
         
@@ -8675,7 +8818,8 @@ object Slides {
         __obj.asInstanceOf[UpdateVideoPropertiesRequest]
       }
       
-      extension [Self <: UpdateVideoPropertiesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateVideoPropertiesRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -8708,7 +8852,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Video]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Video](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Video] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -8747,7 +8892,8 @@ object Slides {
         __obj.asInstanceOf[VideoProperties]
       }
       
-      extension [Self <: VideoProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoProperties] (val x: Self) extends AnyVal {
         
         inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
         
@@ -8784,7 +8930,8 @@ object Slides {
         __obj.asInstanceOf[WeightedFontFamily]
       }
       
-      extension [Self <: WeightedFontFamily](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WeightedFontFamily] (val x: Self) extends AnyVal {
         
         inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
         
@@ -8807,7 +8954,8 @@ object Slides {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WordArt]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WordArt](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WordArt] (val x: Self) extends AnyVal {
         
         inline def setRenderedText(value: String): Self = StObject.set(x, "renderedText", value.asInstanceOf[js.Any])
         
@@ -8826,7 +8974,8 @@ object Slides {
         __obj.asInstanceOf[WriteControl]
       }
       
-      extension [Self <: WriteControl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WriteControl] (val x: Self) extends AnyVal {
         
         inline def setRequiredRevisionId(value: String): Self = StObject.set(x, "requiredRevisionId", value.asInstanceOf[js.Any])
         
@@ -8871,7 +9020,8 @@ object Slides {
       __obj.asInstanceOf[Selection]
     }
     
-    extension [Self <: Selection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
       
       inline def setGetCurrentPage(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Page): Self = StObject.set(x, "getCurrentPage", js.Any.fromFunction0(value))
       
@@ -9331,7 +9481,8 @@ object Slides {
       __obj.asInstanceOf[SlidesApp]
     }
     
-    extension [Self <: SlidesApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlidesApp] (val x: Self) extends AnyVal {
       
       inline def setAlignmentPosition(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AlignmentPosition */ Any
@@ -9446,7 +9597,8 @@ object Slides {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.SolidFill]
     }
     
-    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.SolidFill](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.SolidFill] (val x: Self) extends AnyVal {
       
       inline def setGetAlpha(value: () => Double): Self = StObject.set(x, "getAlpha", js.Any.fromFunction0(value))
       
@@ -9600,7 +9752,8 @@ object Slides {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.TableCell]
     }
     
-    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.TableCell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.TableCell] (val x: Self) extends AnyVal {
       
       inline def setGetColumnIndex(value: () => Integer): Self = StObject.set(x, "getColumnIndex", js.Any.fromFunction0(value))
       
@@ -9644,7 +9797,8 @@ object Slides {
       __obj.asInstanceOf[TableCellRange]
     }
     
-    extension [Self <: TableCellRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableCellRange] (val x: Self) extends AnyVal {
       
       inline def setGetTableCells(value: () => js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.TableCell]): Self = StObject.set(x, "getTableCells", js.Any.fromFunction0(value))
     }
@@ -9682,7 +9836,8 @@ object Slides {
       __obj.asInstanceOf[TableColumn]
     }
     
-    extension [Self <: TableColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableColumn] (val x: Self) extends AnyVal {
       
       inline def setGetCell(value: Integer => typings.googleAppsScript.GoogleAppsScript.Slides.TableCell): Self = StObject.set(x, "getCell", js.Any.fromFunction1(value))
       
@@ -9729,7 +9884,8 @@ object Slides {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.TableRow]
     }
     
-    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.TableRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Slides.TableRow] (val x: Self) extends AnyVal {
       
       inline def setGetCell(value: Integer => typings.googleAppsScript.GoogleAppsScript.Slides.TableCell): Self = StObject.set(x, "getCell", js.Any.fromFunction1(value))
       
@@ -9902,7 +10058,8 @@ object Slides {
       __obj.asInstanceOf[ThemeColor]
     }
     
-    extension [Self <: ThemeColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeColor] (val x: Self) extends AnyVal {
       
       inline def setGetColorType(value: () => ColorType): Self = StObject.set(x, "getColorType", js.Any.fromFunction0(value))
       

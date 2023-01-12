@@ -16,7 +16,8 @@ object MailOptions {
     __obj.asInstanceOf[MailOptions]
   }
   
-  extension [Self <: MailOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailOptions] (val x: Self) extends AnyVal {
     
     inline def setExcludeDrafts(value: Boolean): Self = StObject.set(x, "excludeDrafts", value.asInstanceOf[js.Any])
     

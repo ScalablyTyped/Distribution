@@ -22,7 +22,8 @@ object BoxShadowProps {
     __obj.asInstanceOf[BoxShadowProps[ThemeType]]
   }
   
-  extension [Self <: BoxShadowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & BoxShadowProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoxShadowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & BoxShadowProps[ThemeType]) extends AnyVal {
     
     inline def setBoxShadow(value: ResponsiveValue[BoxShadow | Double, ThemeType]): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     

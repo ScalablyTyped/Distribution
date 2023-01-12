@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Maintenance]
     }
     
-    extension [Self <: Maintenance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Maintenance] (val x: Self) extends AnyVal {
       
       inline def setMaintenance(value: Double): Self = StObject.set(x, "maintenance", value.asInstanceOf[js.Any])
       
@@ -503,7 +504,8 @@ object anon {
       __obj.asInstanceOf[Optionsdetailedtrue]
     }
     
-    extension [Self <: Optionsdetailedtrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsdetailedtrue] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

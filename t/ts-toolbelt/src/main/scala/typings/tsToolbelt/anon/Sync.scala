@@ -17,7 +17,8 @@ object Sync {
     __obj.asInstanceOf[Sync]
   }
   
-  extension [Self <: Sync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sync] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: ListPipeListAsync): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

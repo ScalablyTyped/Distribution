@@ -29,7 +29,8 @@ object RefreshWrapperProps {
     __obj.asInstanceOf[RefreshWrapperProps]
   }
   
-  extension [Self <: RefreshWrapperProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshWrapperProps] (val x: Self) extends AnyVal {
     
     inline def setBounceTime(value: Double): Self = StObject.set(x, "bounceTime", value.asInstanceOf[js.Any])
     

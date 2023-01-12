@@ -74,7 +74,8 @@ object EnergyConcession {
     __obj.asInstanceOf[EnergyConcession]
   }
   
-  extension [Self <: EnergyConcession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnergyConcession] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: String): Self = StObject.set(x, "additionalInfo", value.asInstanceOf[js.Any])
     

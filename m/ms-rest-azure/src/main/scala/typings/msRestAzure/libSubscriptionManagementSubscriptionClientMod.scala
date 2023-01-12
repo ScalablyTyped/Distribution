@@ -102,7 +102,8 @@ object libSubscriptionManagementSubscriptionClientMod {
       __obj.asInstanceOf[SubscriptionClient]
     }
     
-    extension [Self <: SubscriptionClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionClient] (val x: Self) extends AnyVal {
       
       inline def setAcceptLanguage(value: String): Self = StObject.set(x, "acceptLanguage", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object AssociateTargetsWithJobResponse {
     __obj.asInstanceOf[AssociateTargetsWithJobResponse]
   }
   
-  extension [Self <: AssociateTargetsWithJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateTargetsWithJobResponse] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: JobDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

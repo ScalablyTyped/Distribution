@@ -29,7 +29,8 @@ object IAdditionalFolders {
     __obj.asInstanceOf[IAdditionalFolders]
   }
   
-  extension [Self <: IAdditionalFolders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAdditionalFolders] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, IAdditionalFolder) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

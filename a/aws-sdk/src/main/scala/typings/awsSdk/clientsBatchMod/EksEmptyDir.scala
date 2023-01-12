@@ -23,7 +23,8 @@ object EksEmptyDir {
     __obj.asInstanceOf[EksEmptyDir]
   }
   
-  extension [Self <: EksEmptyDir](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EksEmptyDir] (val x: Self) extends AnyVal {
     
     inline def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DescribeMultiRegionAccessPointOperationRequest {
     __obj.asInstanceOf[DescribeMultiRegionAccessPointOperationRequest]
   }
   
-  extension [Self <: DescribeMultiRegionAccessPointOperationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMultiRegionAccessPointOperationRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

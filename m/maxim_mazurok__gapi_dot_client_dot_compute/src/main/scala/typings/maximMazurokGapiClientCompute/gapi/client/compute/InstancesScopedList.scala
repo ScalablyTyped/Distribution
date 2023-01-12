@@ -20,7 +20,8 @@ object InstancesScopedList {
     __obj.asInstanceOf[InstancesScopedList]
   }
   
-  extension [Self <: InstancesScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancesScopedList] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: js.Array[Instance]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     

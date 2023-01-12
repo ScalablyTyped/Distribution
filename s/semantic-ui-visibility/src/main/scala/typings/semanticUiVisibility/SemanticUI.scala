@@ -103,13 +103,15 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
         }
       }
       
-      extension [Self <: ClassNameSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClassNameSettings] (val x: Self) extends AnyVal {
         
         inline def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       }
@@ -126,7 +128,8 @@ object SemanticUI {
           __obj.asInstanceOf[Param]
         }
         
-        extension [Self <: Param](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Param] (val x: Self) extends AnyVal {
           
           inline def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
         }
@@ -184,7 +187,8 @@ object SemanticUI {
         __obj.asInstanceOf[ElementCalculations]
       }
       
-      extension [Self <: ElementCalculations](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ElementCalculations] (val x: Self) extends AnyVal {
         
         inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         
@@ -231,7 +235,8 @@ object SemanticUI {
         __obj.asInstanceOf[ElementPosition]
       }
       
-      extension [Self <: ElementPosition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ElementPosition] (val x: Self) extends AnyVal {
         
         inline def setFits(value: Boolean): Self = StObject.set(x, "fits", value.asInstanceOf[js.Any])
         
@@ -269,13 +274,15 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
       }
       
-      extension [Self <: ErrorSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
         
         inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
@@ -292,7 +299,8 @@ object SemanticUI {
           __obj.asInstanceOf[Param]
         }
         
-        extension [Self <: Param](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Param] (val x: Self) extends AnyVal {
           
           inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
@@ -312,7 +320,8 @@ object SemanticUI {
         __obj.asInstanceOf[ScreenCalculations]
       }
       
-      extension [Self <: ScreenCalculations](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ScreenCalculations] (val x: Self) extends AnyVal {
         
         inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         
@@ -331,7 +340,8 @@ object SemanticUI {
         __obj.asInstanceOf[ScreenSize]
       }
       
-      extension [Self <: ScreenSize](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ScreenSize] (val x: Self) extends AnyVal {
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       }
@@ -646,7 +656,8 @@ object SemanticUI {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setCheckOnRefresh(value: Boolean): Self = StObject.set(x, "checkOnRefresh", value.asInstanceOf[js.Any])
         

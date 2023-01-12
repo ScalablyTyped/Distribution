@@ -33,7 +33,8 @@ object AdminConsentRequestPolicy {
     __obj.asInstanceOf[AdminConsentRequestPolicy]
   }
   
-  extension [Self <: AdminConsentRequestPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminConsentRequestPolicy] (val x: Self) extends AnyVal {
     
     inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     

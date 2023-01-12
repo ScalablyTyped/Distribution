@@ -18,7 +18,8 @@ object `92` {
     __obj.asInstanceOf[`92`]
   }
   
-  extension [Self <: `92`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `92`] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[js.UndefOr[SetGeolocationOverrideRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

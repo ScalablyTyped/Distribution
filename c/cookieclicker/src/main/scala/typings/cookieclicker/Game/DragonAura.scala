@@ -24,7 +24,8 @@ object DragonAura {
     __obj.asInstanceOf[DragonAura]
   }
   
-  extension [Self <: DragonAura](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragonAura] (val x: Self) extends AnyVal {
     
     inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     

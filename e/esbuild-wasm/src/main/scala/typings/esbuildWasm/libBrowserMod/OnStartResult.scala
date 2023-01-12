@@ -17,7 +17,8 @@ object OnStartResult {
     __obj.asInstanceOf[OnStartResult]
   }
   
-  extension [Self <: OnStartResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnStartResult] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: js.Array[PartialMessage]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

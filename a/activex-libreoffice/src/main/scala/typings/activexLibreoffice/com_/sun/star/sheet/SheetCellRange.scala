@@ -628,7 +628,8 @@ object SheetCellRange {
     __obj.asInstanceOf[SheetCellRange]
   }
   
-  extension [Self <: SheetCellRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetCellRange] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteName(value: String): Self = StObject.set(x, "AbsoluteName", value.asInstanceOf[js.Any])
     

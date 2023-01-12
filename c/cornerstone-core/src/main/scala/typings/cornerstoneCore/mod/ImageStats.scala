@@ -28,7 +28,8 @@ object ImageStats {
     __obj.asInstanceOf[ImageStats]
   }
   
-  extension [Self <: ImageStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageStats] (val x: Self) extends AnyVal {
     
     inline def setLastGetPixelDataTime(value: Double): Self = StObject.set(x, "lastGetPixelDataTime", value.asInstanceOf[js.Any])
     

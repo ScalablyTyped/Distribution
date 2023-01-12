@@ -18,7 +18,8 @@ object IconPad {
     __obj.asInstanceOf[IconPad]
   }
   
-  extension [Self <: IconPad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconPad] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: `14`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

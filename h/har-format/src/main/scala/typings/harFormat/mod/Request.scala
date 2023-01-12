@@ -61,7 +61,8 @@ object Request {
     __obj.asInstanceOf[Request]
   }
   
-  extension [Self <: Request](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
     
     inline def setBodySize(value: Double): Self = StObject.set(x, "bodySize", value.asInstanceOf[js.Any])
     

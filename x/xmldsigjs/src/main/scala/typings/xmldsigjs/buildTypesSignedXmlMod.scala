@@ -172,7 +172,8 @@ object buildTypesSignedXmlMod {
       __obj.asInstanceOf[OptionsSign]
     }
     
-    extension [Self <: OptionsSign](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsSign] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -227,7 +228,8 @@ object buildTypesSignedXmlMod {
       __obj.asInstanceOf[OptionsSignReference]
     }
     
-    extension [Self <: OptionsSignReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsSignReference] (val x: Self) extends AnyVal {
       
       inline def setHash(value: AlgorithmIdentifier): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -275,7 +277,8 @@ object buildTypesSignedXmlMod {
       __obj.asInstanceOf[OptionsVerify]
     }
     
-    extension [Self <: OptionsVerify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsVerify] (val x: Self) extends AnyVal {
       
       inline def setContent(value: DigestReferenceSource): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -304,7 +307,8 @@ object buildTypesSignedXmlMod {
       __obj.asInstanceOf[OptionsXPathSignTransform]
     }
     
-    extension [Self <: OptionsXPathSignTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsXPathSignTransform] (val x: Self) extends AnyVal {
       
       inline def setName(value: xpath): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

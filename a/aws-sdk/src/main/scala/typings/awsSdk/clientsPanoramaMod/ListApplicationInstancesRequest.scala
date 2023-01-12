@@ -33,7 +33,8 @@ object ListApplicationInstancesRequest {
     __obj.asInstanceOf[ListApplicationInstancesRequest]
   }
   
-  extension [Self <: ListApplicationInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListApplicationInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     

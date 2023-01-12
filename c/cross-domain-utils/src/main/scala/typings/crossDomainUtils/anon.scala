@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Cancel]
     }
     
-    extension [Self <: Cancel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[MockUserAgent]
     }
     
-    extension [Self <: MockUserAgent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockUserAgent] (val x: Self) extends AnyVal {
       
       inline def setMockUserAgent(value: String): Self = StObject.set(x, "mockUserAgent", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[TypeofXMLHttpRequest]
     }
     
-    extension [Self <: TypeofXMLHttpRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofXMLHttpRequest] (val x: Self) extends AnyVal {
       
       inline def setDONE(value: Double): Self = StObject.set(x, "DONE", value.asInstanceOf[js.Any])
       

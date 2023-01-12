@@ -47,7 +47,8 @@ object LQueries {
     __obj.asInstanceOf[LQueries]
   }
   
-  extension [Self <: LQueries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LQueries] (val x: Self) extends AnyVal {
     
     inline def setCreateEmbeddedView(value: TView => LQueries | Null): Self = StObject.set(x, "createEmbeddedView", js.Any.fromFunction1(value))
     

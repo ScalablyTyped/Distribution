@@ -18,7 +18,8 @@ object GetUserAttributeVerificationCodeResponse {
     __obj.asInstanceOf[GetUserAttributeVerificationCodeResponse]
   }
   
-  extension [Self <: GetUserAttributeVerificationCodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUserAttributeVerificationCodeResponse] (val x: Self) extends AnyVal {
     
     inline def setCodeDeliveryDetails(value: CodeDeliveryDetailsType): Self = StObject.set(x, "CodeDeliveryDetails", value.asInstanceOf[js.Any])
     

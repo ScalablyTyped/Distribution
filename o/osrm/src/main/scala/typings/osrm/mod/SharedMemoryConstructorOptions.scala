@@ -26,7 +26,8 @@ object SharedMemoryConstructorOptions {
     __obj.asInstanceOf[SharedMemoryConstructorOptions]
   }
   
-  extension [Self <: SharedMemoryConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedMemoryConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setDataset_name(value: String): Self = StObject.set(x, "dataset_name", value.asInstanceOf[js.Any])
     

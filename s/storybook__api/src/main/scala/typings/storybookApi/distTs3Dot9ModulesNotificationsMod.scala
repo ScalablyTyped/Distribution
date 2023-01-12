@@ -32,7 +32,8 @@ object distTs3Dot9ModulesNotificationsMod {
       __obj.asInstanceOf[Notification]
     }
     
-    extension [Self <: Notification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Headline): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object distTs3Dot9ModulesNotificationsMod {
       __obj.asInstanceOf[SubAPI]
     }
     
-    extension [Self <: SubAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubAPI] (val x: Self) extends AnyVal {
       
       inline def setAddNotification(value: Notification => Unit): Self = StObject.set(x, "addNotification", js.Any.fromFunction1(value))
       
@@ -82,7 +84,8 @@ object distTs3Dot9ModulesNotificationsMod {
       __obj.asInstanceOf[SubState]
     }
     
-    extension [Self <: SubState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
       
       inline def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       

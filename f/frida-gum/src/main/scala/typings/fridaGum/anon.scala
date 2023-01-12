@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Base]
     }
     
-    extension [Self <: Base](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
       
       inline def setBase(value: X86Register): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[BaseDisp]
     }
     
-    extension [Self <: BaseDisp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseDisp] (val x: Self) extends AnyVal {
       
       inline def setBase(value: MipsRegister): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object anon {
       __obj.asInstanceOf[Block]
     }
     
-    extension [Self <: Block](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
@@ -151,7 +154,8 @@ object anon {
       __obj.asInstanceOf[Disp]
     }
     
-    extension [Self <: Disp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disp] (val x: Self) extends AnyVal {
       
       inline def setBase(value: ArmRegister): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -182,7 +186,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setBase(value: Arm64Register): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -210,7 +215,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: ArmShifter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -232,7 +238,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setType(value: Arm64Shifter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -344,7 +351,8 @@ object anon {
       __obj.asInstanceOf[Wrapper]
     }
     
-    extension [Self <: Wrapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Wrapper] (val x: Self) extends AnyVal {
       
       inline def set$alloc(value: MethodDispatcher[js.Object]): Self = StObject.set(x, "$alloc", value.asInstanceOf[js.Any])
       

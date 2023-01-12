@@ -38,7 +38,8 @@ object StartThingRegistrationTaskRequest {
     __obj.asInstanceOf[StartThingRegistrationTaskRequest]
   }
   
-  extension [Self <: StartThingRegistrationTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartThingRegistrationTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setInputFileBucket(value: RegistryS3BucketName): Self = StObject.set(x, "inputFileBucket", value.asInstanceOf[js.Any])
     

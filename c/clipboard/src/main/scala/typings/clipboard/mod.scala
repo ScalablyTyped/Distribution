@@ -94,7 +94,8 @@ object mod {
       __obj.asInstanceOf[CopyActionOptions]
     }
     
-    extension [Self <: CopyActionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyActionOptions] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object mod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -168,7 +170,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAction(value: /* elem */ Element => Action): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       

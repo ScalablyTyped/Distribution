@@ -26,7 +26,8 @@ object LocationWithAttributes {
     __obj.asInstanceOf[LocationWithAttributes]
   }
   
-  extension [Self <: LocationWithAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationWithAttributes] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: Record[String, Location]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

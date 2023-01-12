@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[ContextSelectorProps[T]]
     }
     
-    extension [Self <: ContextSelectorProps[?], T](x: Self & ContextSelectorProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextSelectorProps[?], T] (val x: Self & ContextSelectorProps[T]) extends AnyVal {
       
       inline def setTheme(value: Context[T]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setCenterRadiusPx(value: Double): Self = StObject.set(x, "centerRadiusPx", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object mod {
       __obj.asInstanceOf[PieCenterProps]
     }
     
-    extension [Self <: PieCenterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieCenterProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -156,7 +159,8 @@ object mod {
       __obj.asInstanceOf[PieMenuProps]
     }
     
-    extension [Self <: PieMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieMenuProps] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Record[String, Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -197,7 +201,8 @@ object mod {
       __obj.asInstanceOf[SliceContext]
     }
     
-    extension [Self <: SliceContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliceContext] (val x: Self) extends AnyVal {
       
       inline def setCenterRadius(value: String): Self = StObject.set(x, "centerRadius", value.asInstanceOf[js.Any])
       
@@ -252,7 +257,8 @@ object mod {
       __obj.asInstanceOf[SliceProps]
     }
     
-    extension [Self <: SliceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliceProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object CryptoEngineSignWithPrivateKeyParams {
     __obj.asInstanceOf[CryptoEngineSignWithPrivateKeyParams]
   }
   
-  extension [Self <: CryptoEngineSignWithPrivateKeyParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptoEngineSignWithPrivateKeyParams] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
   }

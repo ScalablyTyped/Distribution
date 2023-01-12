@@ -29,7 +29,8 @@ object DeleteDatabaseRequest {
     __obj.asInstanceOf[DeleteDatabaseRequest]
   }
   
-  extension [Self <: DeleteDatabaseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDatabaseRequest] (val x: Self) extends AnyVal {
     
     inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     

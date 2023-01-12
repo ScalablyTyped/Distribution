@@ -15,7 +15,8 @@ object KnockoutPageGenerator {
     __obj.asInstanceOf[KnockoutPageGenerator]
   }
   
-  extension [Self <: KnockoutPageGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutPageGenerator] (val x: Self) extends AnyVal {
     
     inline def setGenerate(value: KnockoutPagedObservableArray[Any] => js.Array[Double]): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
   }

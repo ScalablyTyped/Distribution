@@ -24,7 +24,8 @@ object SfStoreLocator extends Shortcut {
       __obj.asInstanceOf[Computed]
     }
     
-    extension [Self <: Computed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Computed] (val x: Self) extends AnyVal {
       
       inline def setComputedMapOptions(value: js.Object): Self = StObject.set(x, "computedMapOptions", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object SfStoreLocator extends Shortcut {
       __obj.asInstanceOf[Constructor]
     }
     
-    extension [Self <: Constructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constructor] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: Computed): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object SfStoreLocator extends Shortcut {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
@@ -134,7 +137,8 @@ object SfStoreLocator extends Shortcut {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setCenterOn(value: Any => Unit): Self = StObject.set(x, "centerOn", js.Any.fromFunction1(value))
       
@@ -196,7 +200,8 @@ object SfStoreLocator extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: js.Array[Double] | js.Object): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       

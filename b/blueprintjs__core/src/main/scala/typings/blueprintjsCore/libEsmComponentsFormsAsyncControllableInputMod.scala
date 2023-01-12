@@ -65,7 +65,8 @@ object libEsmComponentsFormsAsyncControllableInputMod {
       __obj.asInstanceOf[IAsyncControllableInputProps]
     }
     
-    extension [Self <: IAsyncControllableInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAsyncControllableInputProps] (val x: Self) extends AnyVal {
       
       inline def setInputRef(value: LegacyRef[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object libEsmComponentsFormsAsyncControllableInputMod {
       __obj.asInstanceOf[IAsyncControllableInputState]
     }
     
-    extension [Self <: IAsyncControllableInputState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAsyncControllableInputState] (val x: Self) extends AnyVal {
       
       inline def setHasPendingUpdate(value: Boolean): Self = StObject.set(x, "hasPendingUpdate", value.asInstanceOf[js.Any])
       

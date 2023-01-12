@@ -18,7 +18,8 @@ object GetServiceSettingRequest {
     __obj.asInstanceOf[GetServiceSettingRequest]
   }
   
-  extension [Self <: GetServiceSettingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceSettingRequest] (val x: Self) extends AnyVal {
     
     inline def setSettingId(value: ServiceSettingId): Self = StObject.set(x, "SettingId", value.asInstanceOf[js.Any])
   }

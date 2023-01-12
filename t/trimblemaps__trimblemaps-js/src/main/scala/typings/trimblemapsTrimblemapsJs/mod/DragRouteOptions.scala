@@ -25,7 +25,8 @@ object DragRouteOptions {
     __obj.asInstanceOf[DragRouteOptions]
   }
   
-  extension [Self <: DragRouteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragRouteOptions] (val x: Self) extends AnyVal {
     
     inline def setSnapKey(value: shiftKey | ctrlKey | altKey): Self = StObject.set(x, "snapKey", value.asInstanceOf[js.Any])
     

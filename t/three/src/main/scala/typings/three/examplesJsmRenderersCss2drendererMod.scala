@@ -49,7 +49,8 @@ object examplesJsmRenderersCss2drendererMod {
       __obj.asInstanceOf[CSS2DParameters]
     }
     
-    extension [Self <: CSS2DParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSS2DParameters] (val x: Self) extends AnyVal {
       
       inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       

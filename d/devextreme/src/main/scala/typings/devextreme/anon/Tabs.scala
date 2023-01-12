@@ -24,7 +24,8 @@ object Tabs {
     __obj.asInstanceOf[Tabs]
   }
   
-  extension [Self <: Tabs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tabs] (val x: Self) extends AnyVal {
     
     inline def setTabs(value: js.Array[Groups]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     

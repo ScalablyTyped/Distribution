@@ -62,7 +62,8 @@ object ParserOptionsByModuleTypeKnown {
     __obj.asInstanceOf[ParserOptionsByModuleTypeKnown]
   }
   
-  extension [Self <: ParserOptionsByModuleTypeKnown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParserOptionsByModuleTypeKnown] (val x: Self) extends AnyVal {
     
     inline def setAsset(value: AssetParserOptions): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object IEditorInlayHintsOptions {
     __obj.asInstanceOf[IEditorInlayHintsOptions]
   }
   
-  extension [Self <: IEditorInlayHintsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditorInlayHintsOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: on | off | offUnlessPressed | onUnlessPressed): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

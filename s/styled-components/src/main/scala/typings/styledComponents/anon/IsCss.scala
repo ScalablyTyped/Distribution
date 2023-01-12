@@ -15,7 +15,8 @@ object IsCss {
     __obj.asInstanceOf[IsCss]
   }
   
-  extension [Self <: IsCss](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsCss] (val x: Self) extends AnyVal {
     
     inline def setIsCss(value: Boolean): Self = StObject.set(x, "isCss", value.asInstanceOf[js.Any])
     

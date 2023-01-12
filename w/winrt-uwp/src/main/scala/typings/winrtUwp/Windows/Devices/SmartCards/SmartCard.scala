@@ -42,7 +42,8 @@ object SmartCard {
     __obj.asInstanceOf[SmartCard]
   }
   
-  extension [Self <: SmartCard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartCard] (val x: Self) extends AnyVal {
     
     inline def setConnectAsync(value: () => IPromiseWithIAsyncOperation[SmartCardConnection]): Self = StObject.set(x, "connectAsync", js.Any.fromFunction0(value))
     

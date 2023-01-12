@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[TrackerParams]
     }
     
-    extension [Self <: TrackerParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackerParams] (val x: Self) extends AnyVal {
       
       inline def setConstantVelocity(value: Boolean): Self = StObject.set(x, "constantVelocity", value.asInstanceOf[js.Any])
       

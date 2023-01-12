@@ -76,7 +76,8 @@ object CopyPackageVersionsRequest {
     __obj.asInstanceOf[CopyPackageVersionsRequest]
   }
   
-  extension [Self <: CopyPackageVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyPackageVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowOverwrite(value: BooleanOptional): Self = StObject.set(x, "allowOverwrite", value.asInstanceOf[js.Any])
     

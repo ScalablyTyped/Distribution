@@ -18,7 +18,8 @@ object DescribeKeyPhrasesDetectionJobResponse {
     __obj.asInstanceOf[DescribeKeyPhrasesDetectionJobResponse]
   }
   
-  extension [Self <: DescribeKeyPhrasesDetectionJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeKeyPhrasesDetectionJobResponse] (val x: Self) extends AnyVal {
     
     inline def setKeyPhrasesDetectionJobProperties(value: KeyPhrasesDetectionJobProperties): Self = StObject.set(x, "KeyPhrasesDetectionJobProperties", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetAppMonitorRequest {
     __obj.asInstanceOf[GetAppMonitorRequest]
   }
   
-  extension [Self <: GetAppMonitorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAppMonitorRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: AppMonitorName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

@@ -45,7 +45,8 @@ object DataSchema {
     __obj.asInstanceOf[DataSchema]
   }
   
-  extension [Self <: DataSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSchema] (val x: Self) extends AnyVal {
     
     inline def setFields(value: () => js.Array[Any]): Self = StObject.set(x, "fields", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object RiskExceptionConfigurationType {
     __obj.asInstanceOf[RiskExceptionConfigurationType]
   }
   
-  extension [Self <: RiskExceptionConfigurationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RiskExceptionConfigurationType] (val x: Self) extends AnyVal {
     
     inline def setBlockedIPRangeList(value: BlockedIPRangeListType): Self = StObject.set(x, "BlockedIPRangeList", value.asInstanceOf[js.Any])
     

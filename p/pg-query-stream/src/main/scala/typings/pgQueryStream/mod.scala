@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[QueryStreamConfig]
     }
     
-    extension [Self <: QueryStreamConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryStreamConfig] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       

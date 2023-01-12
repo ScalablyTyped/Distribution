@@ -19,7 +19,8 @@ object Distance {
     __obj.asInstanceOf[Distance]
   }
   
-  extension [Self <: Distance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Distance] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

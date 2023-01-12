@@ -15,7 +15,8 @@ object SslPoliciesListAvailableFeaturesResponse {
     __obj.asInstanceOf[SslPoliciesListAvailableFeaturesResponse]
   }
   
-  extension [Self <: SslPoliciesListAvailableFeaturesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SslPoliciesListAvailableFeaturesResponse] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     

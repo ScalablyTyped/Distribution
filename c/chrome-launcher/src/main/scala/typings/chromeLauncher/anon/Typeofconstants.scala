@@ -214,7 +214,8 @@ object Typeofconstants {
     __obj.asInstanceOf[Typeofconstants]
   }
   
-  extension [Self <: Typeofconstants](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofconstants] (val x: Self) extends AnyVal {
     
     inline def setCOPYFILE_EXCL(value: Double): Self = StObject.set(x, "COPYFILE_EXCL", value.asInstanceOf[js.Any])
     

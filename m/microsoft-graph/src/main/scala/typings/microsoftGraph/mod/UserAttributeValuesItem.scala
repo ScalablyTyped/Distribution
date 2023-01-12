@@ -22,7 +22,8 @@ object UserAttributeValuesItem {
     __obj.asInstanceOf[UserAttributeValuesItem]
   }
   
-  extension [Self <: UserAttributeValuesItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserAttributeValuesItem] (val x: Self) extends AnyVal {
     
     inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     

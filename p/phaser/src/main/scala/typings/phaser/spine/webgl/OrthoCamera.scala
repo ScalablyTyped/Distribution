@@ -62,7 +62,8 @@ object OrthoCamera {
     __obj.asInstanceOf[OrthoCamera]
   }
   
-  extension [Self <: OrthoCamera](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrthoCamera] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: Vector3): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

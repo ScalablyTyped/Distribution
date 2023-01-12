@@ -43,7 +43,8 @@ object TransitGatewayPrefixListReference {
     __obj.asInstanceOf[TransitGatewayPrefixListReference]
   }
   
-  extension [Self <: TransitGatewayPrefixListReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitGatewayPrefixListReference] (val x: Self) extends AnyVal {
     
     inline def setBlackhole(value: Boolean): Self = StObject.set(x, "Blackhole", value.asInstanceOf[js.Any])
     

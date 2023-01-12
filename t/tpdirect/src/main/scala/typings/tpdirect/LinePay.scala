@@ -15,7 +15,8 @@ object LinePay {
     __obj.asInstanceOf[LinePay]
   }
   
-  extension [Self <: LinePay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinePay] (val x: Self) extends AnyVal {
     
     inline def setGetPrime(value: js.Function1[/* result */ LinePayGetPrimeResult, Unit] => Unit): Self = StObject.set(x, "getPrime", js.Any.fromFunction1(value))
   }

@@ -68,7 +68,8 @@ object MarkDefMixins {
     __obj.asInstanceOf[MarkDefMixins[ES]]
   }
   
-  extension [Self <: MarkDefMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & MarkDefMixins[ES]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkDefMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & MarkDefMixins[ES]) extends AnyVal {
     
     inline def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     

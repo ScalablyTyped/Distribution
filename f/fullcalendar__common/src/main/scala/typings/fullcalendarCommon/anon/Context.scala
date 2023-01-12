@@ -24,7 +24,8 @@ object Context {
     __obj.asInstanceOf[Context[Meta]]
   }
   
-  extension [Self <: Context[?], Meta](x: Self & Context[Meta]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Context[?], Meta] (val x: Self & Context[Meta]) extends AnyVal {
     
     inline def setContext(value: CalendarContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

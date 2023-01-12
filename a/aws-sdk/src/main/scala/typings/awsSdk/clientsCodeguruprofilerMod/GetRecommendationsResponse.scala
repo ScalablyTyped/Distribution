@@ -44,7 +44,8 @@ object GetRecommendationsResponse {
     __obj.asInstanceOf[GetRecommendationsResponse]
   }
   
-  extension [Self <: GetRecommendationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRecommendationsResponse] (val x: Self) extends AnyVal {
     
     inline def setAnomalies(value: Anomalies): Self = StObject.set(x, "anomalies", value.asInstanceOf[js.Any])
     

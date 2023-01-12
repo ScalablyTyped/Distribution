@@ -22,7 +22,8 @@ object Lastreadat {
     __obj.asInstanceOf[Lastreadat]
   }
   
-  extension [Self <: Lastreadat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lastreadat] (val x: Self) extends AnyVal {
     
     inline def setLast_read_at(value: String): Self = StObject.set(x, "last_read_at", value.asInstanceOf[js.Any])
     

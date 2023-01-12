@@ -28,7 +28,8 @@ object HideTooltipEventUIParam {
     __obj.asInstanceOf[HideTooltipEventUIParam]
   }
   
-  extension [Self <: HideTooltipEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HideTooltipEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

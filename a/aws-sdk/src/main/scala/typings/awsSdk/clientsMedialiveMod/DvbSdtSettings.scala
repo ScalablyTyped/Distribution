@@ -33,7 +33,8 @@ object DvbSdtSettings {
     __obj.asInstanceOf[DvbSdtSettings]
   }
   
-  extension [Self <: DvbSdtSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DvbSdtSettings] (val x: Self) extends AnyVal {
     
     inline def setOutputSdt(value: DvbSdtOutputSdt): Self = StObject.set(x, "OutputSdt", value.asInstanceOf[js.Any])
     

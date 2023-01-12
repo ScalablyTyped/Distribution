@@ -21,7 +21,8 @@ object SubscriptionHistory {
     __obj.asInstanceOf[SubscriptionHistory]
   }
   
-  extension [Self <: SubscriptionHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionHistory] (val x: Self) extends AnyVal {
     
     inline def setBalance(value: String): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
     

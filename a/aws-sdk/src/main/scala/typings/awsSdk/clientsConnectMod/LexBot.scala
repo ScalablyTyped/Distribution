@@ -23,7 +23,8 @@ object LexBot {
     __obj.asInstanceOf[LexBot]
   }
   
-  extension [Self <: LexBot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexBot] (val x: Self) extends AnyVal {
     
     inline def setLexRegion(value: LexRegion): Self = StObject.set(x, "LexRegion", value.asInstanceOf[js.Any])
     

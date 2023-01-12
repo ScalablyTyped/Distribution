@@ -16,7 +16,8 @@ object Type {
     __obj.asInstanceOf[Type[T]]
   }
   
-  extension [Self <: Type[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 249, starting with typings.babelTypes.babelTypesStrings.ClassAccessorProperty, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any */](x: Self & Type[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Type[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 249, starting with typings.babelTypes.babelTypesStrings.ClassAccessorProperty, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any */] (val x: Self & Type[T]) extends AnyVal {
     
     inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

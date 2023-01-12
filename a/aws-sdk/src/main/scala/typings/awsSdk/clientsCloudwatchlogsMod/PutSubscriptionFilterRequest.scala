@@ -48,7 +48,8 @@ object PutSubscriptionFilterRequest {
     __obj.asInstanceOf[PutSubscriptionFilterRequest]
   }
   
-  extension [Self <: PutSubscriptionFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutSubscriptionFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationArn(value: DestinationArn): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
     

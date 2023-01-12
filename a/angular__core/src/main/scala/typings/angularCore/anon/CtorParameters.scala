@@ -24,7 +24,8 @@ object CtorParameters {
     __obj.asInstanceOf[CtorParameters]
   }
   
-  extension [Self <: CtorParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CtorParameters] (val x: Self) extends AnyVal {
     
     inline def setCtorParameters(value: () => js.Array[Any]): Self = StObject.set(x, "ctorParameters", js.Any.fromFunction0(value))
     

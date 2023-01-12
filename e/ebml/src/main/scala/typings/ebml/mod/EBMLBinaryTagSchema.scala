@@ -19,7 +19,8 @@ object EBMLBinaryTagSchema {
     __obj.asInstanceOf[EBMLBinaryTagSchema]
   }
   
-  extension [Self <: EBMLBinaryTagSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EBMLBinaryTagSchema] (val x: Self) extends AnyVal {
     
     inline def setBytesize(value: Double): Self = StObject.set(x, "bytesize", value.asInstanceOf[js.Any])
     

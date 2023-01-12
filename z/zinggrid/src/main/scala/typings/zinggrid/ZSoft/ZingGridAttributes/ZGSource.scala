@@ -18,7 +18,8 @@ object ZGSource {
     __obj.asInstanceOf[ZGSource]
   }
   
-  extension [Self <: ZGSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZGSource] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

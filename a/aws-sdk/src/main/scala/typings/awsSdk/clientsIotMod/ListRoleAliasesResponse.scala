@@ -23,7 +23,8 @@ object ListRoleAliasesResponse {
     __obj.asInstanceOf[ListRoleAliasesResponse]
   }
   
-  extension [Self <: ListRoleAliasesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRoleAliasesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextMarker(value: Marker): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
     

@@ -131,7 +131,8 @@ object libDaumPostcodeEmbedMod {
       __obj.asInstanceOf[DaumPostcodeEmbedProps]
     }
     
-    extension [Self <: DaumPostcodeEmbedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DaumPostcodeEmbedProps] (val x: Self) extends AnyVal {
       
       inline def setAlwaysShowEngAddr(value: Boolean): Self = StObject.set(x, "alwaysShowEngAddr", value.asInstanceOf[js.Any])
       
@@ -260,7 +261,8 @@ object libDaumPostcodeEmbedMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
     }

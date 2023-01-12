@@ -19,7 +19,8 @@ object HTMLDocumentCompatibleInfo {
     __obj.asInstanceOf[HTMLDocumentCompatibleInfo]
   }
   
-  extension [Self <: HTMLDocumentCompatibleInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLDocumentCompatibleInfo] (val x: Self) extends AnyVal {
     
     inline def setConstructor(value: Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     

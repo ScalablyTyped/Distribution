@@ -20,7 +20,8 @@ object TreeTableToggleParams {
     __obj.asInstanceOf[TreeTableToggleParams]
   }
   
-  extension [Self <: TreeTableToggleParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeTableToggleParams] (val x: Self) extends AnyVal {
     
     inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     

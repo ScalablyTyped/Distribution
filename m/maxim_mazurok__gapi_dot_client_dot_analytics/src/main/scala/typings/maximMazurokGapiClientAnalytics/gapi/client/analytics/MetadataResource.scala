@@ -15,7 +15,8 @@ object MetadataResource {
     __obj.asInstanceOf[MetadataResource]
   }
   
-  extension [Self <: MetadataResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataResource] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: ColumnsResource): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
   }

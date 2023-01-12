@@ -25,7 +25,8 @@ object MapboxDrawControls {
     __obj.asInstanceOf[MapboxDrawControls]
   }
   
-  extension [Self <: MapboxDrawControls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapboxDrawControls] (val x: Self) extends AnyVal {
     
     inline def setCombine_features(value: Boolean): Self = StObject.set(x, "combine_features", value.asInstanceOf[js.Any])
     

@@ -157,7 +157,8 @@ object IVaultObjectPropertyOperations {
     __obj.asInstanceOf[IVaultObjectPropertyOperations]
   }
   
-  extension [Self <: IVaultObjectPropertyOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultObjectPropertyOperations] (val x: Self) extends AnyVal {
     
     inline def setApproveOrRejectAssignment(value: (IObjVer, Boolean) => IObjectVersionAndProperties): Self = StObject.set(x, "ApproveOrRejectAssignment", js.Any.fromFunction2(value))
     

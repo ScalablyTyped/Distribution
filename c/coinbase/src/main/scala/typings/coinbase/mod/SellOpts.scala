@@ -48,7 +48,8 @@ object SellOpts {
     __obj.asInstanceOf[SellOpts]
   }
   
-  extension [Self <: SellOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SellOpts] (val x: Self) extends AnyVal {
     
     inline def setAgree_btc_amount_varies(value: Boolean): Self = StObject.set(x, "agree_btc_amount_varies", value.asInstanceOf[js.Any])
     

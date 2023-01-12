@@ -17,7 +17,8 @@ object Premultiply {
     __obj.asInstanceOf[Premultiply]
   }
   
-  extension [Self <: Premultiply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Premultiply] (val x: Self) extends AnyVal {
     
     inline def setPremultiply(value: Boolean): Self = StObject.set(x, "premultiply", value.asInstanceOf[js.Any])
     

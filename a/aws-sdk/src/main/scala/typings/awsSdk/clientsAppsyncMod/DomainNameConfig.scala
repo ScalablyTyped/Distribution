@@ -38,7 +38,8 @@ object DomainNameConfig {
     __obj.asInstanceOf[DomainNameConfig]
   }
   
-  extension [Self <: DomainNameConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainNameConfig] (val x: Self) extends AnyVal {
     
     inline def setAppsyncDomainName(value: String): Self = StObject.set(x, "appsyncDomainName", value.asInstanceOf[js.Any])
     

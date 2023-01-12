@@ -28,7 +28,8 @@ object AnalysisHunspellTokenFilter {
     __obj.asInstanceOf[AnalysisHunspellTokenFilter]
   }
   
-  extension [Self <: AnalysisHunspellTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisHunspellTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setDedup(value: Boolean): Self = StObject.set(x, "dedup", value.asInstanceOf[js.Any])
     

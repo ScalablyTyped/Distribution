@@ -18,7 +18,8 @@ object DeleteUsageLimitRequest {
     __obj.asInstanceOf[DeleteUsageLimitRequest]
   }
   
-  extension [Self <: DeleteUsageLimitRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteUsageLimitRequest] (val x: Self) extends AnyVal {
     
     inline def setUsageLimitId(value: String): Self = StObject.set(x, "usageLimitId", value.asInstanceOf[js.Any])
   }

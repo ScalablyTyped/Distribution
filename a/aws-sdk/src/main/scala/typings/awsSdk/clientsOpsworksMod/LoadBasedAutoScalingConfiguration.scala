@@ -33,7 +33,8 @@ object LoadBasedAutoScalingConfiguration {
     __obj.asInstanceOf[LoadBasedAutoScalingConfiguration]
   }
   
-  extension [Self <: LoadBasedAutoScalingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadBasedAutoScalingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDownScaling(value: AutoScalingThresholds): Self = StObject.set(x, "DownScaling", value.asInstanceOf[js.Any])
     

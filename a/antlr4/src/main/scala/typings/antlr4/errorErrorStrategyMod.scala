@@ -71,7 +71,8 @@ object errorErrorStrategyMod {
       __obj.asInstanceOf[ErrorStrategy]
     }
     
-    extension [Self <: ErrorStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorStrategy] (val x: Self) extends AnyVal {
       
       inline def setInErrorRecoveryMode(value: typings.antlr4.parserMod.default => Unit): Self = StObject.set(x, "inErrorRecoveryMode", js.Any.fromFunction1(value))
       

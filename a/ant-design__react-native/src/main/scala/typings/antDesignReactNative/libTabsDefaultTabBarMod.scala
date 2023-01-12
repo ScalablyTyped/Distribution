@@ -106,7 +106,8 @@ object libTabsDefaultTabBarMod {
       __obj.asInstanceOf[PropsType]
     }
     
-    extension [Self <: PropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsType] (val x: Self) extends AnyVal {
       
       inline def setKeyboardShouldPersistTaps(value: Boolean): Self = StObject.set(x, "keyboardShouldPersistTaps", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object libTabsDefaultTabBarMod {
       __obj.asInstanceOf[StateType]
     }
     
-    extension [Self <: StateType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateType] (val x: Self) extends AnyVal {
       
       inline def set_containerWidth(value: Double): Self = StObject.set(x, "_containerWidth", value.asInstanceOf[js.Any])
       

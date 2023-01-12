@@ -27,7 +27,8 @@ object DeclareModuleExports_ {
     __obj.asInstanceOf[DeclareModuleExports_]
   }
   
-  extension [Self <: DeclareModuleExports_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeclareModuleExports_] (val x: Self) extends AnyVal {
     
     inline def setType(value: DeclareModuleExports): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

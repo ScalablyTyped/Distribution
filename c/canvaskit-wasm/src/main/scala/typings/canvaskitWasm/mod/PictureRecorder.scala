@@ -34,7 +34,8 @@ object PictureRecorder {
     __obj.asInstanceOf[PictureRecorder]
   }
   
-  extension [Self <: PictureRecorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PictureRecorder] (val x: Self) extends AnyVal {
     
     inline def setBeginRecording(value: InputRect => Canvas): Self = StObject.set(x, "beginRecording", js.Any.fromFunction1(value))
     

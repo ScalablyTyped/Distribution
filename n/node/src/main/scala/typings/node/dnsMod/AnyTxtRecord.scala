@@ -21,7 +21,8 @@ object AnyTxtRecord {
     __obj.asInstanceOf[AnyTxtRecord]
   }
   
-  extension [Self <: AnyTxtRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnyTxtRecord] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[String]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

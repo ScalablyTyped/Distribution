@@ -17,7 +17,8 @@ object GitResolutionPickOneAction {
     __obj.asInstanceOf[GitResolutionPickOneAction]
   }
   
-  extension [Self <: GitResolutionPickOneAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitResolutionPickOneAction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: GitResolutionWhichAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }

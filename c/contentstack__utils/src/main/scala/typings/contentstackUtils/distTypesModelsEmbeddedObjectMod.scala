@@ -24,7 +24,8 @@ object distTypesModelsEmbeddedObjectMod {
       __obj.asInstanceOf[EmbeddedItem]
     }
     
-    extension [Self <: EmbeddedItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmbeddedItem] (val x: Self) extends AnyVal {
       
       inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object distTypesModelsEmbeddedObjectMod {
       __obj.asInstanceOf[EntryEmbedable]
     }
     
-    extension [Self <: EntryEmbedable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryEmbedable] (val x: Self) extends AnyVal {
       
       inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       

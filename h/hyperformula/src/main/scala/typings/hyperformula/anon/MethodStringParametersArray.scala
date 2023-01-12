@@ -17,7 +17,8 @@ object MethodStringParametersArray {
     __obj.asInstanceOf[MethodStringParametersArray]
   }
   
-  extension [Self <: MethodStringParametersArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodStringParametersArray] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

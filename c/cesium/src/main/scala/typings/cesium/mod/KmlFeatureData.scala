@@ -64,7 +64,8 @@ object KmlFeatureData {
       __obj.asInstanceOf[Author]
     }
     
-    extension [Self <: Author](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Author] (val x: Self) extends AnyVal {
       
       inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object KmlFeatureData {
       __obj.asInstanceOf[Link]
     }
     
-    extension [Self <: Link](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       

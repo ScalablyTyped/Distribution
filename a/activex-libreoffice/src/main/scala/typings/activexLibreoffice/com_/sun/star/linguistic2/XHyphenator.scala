@@ -85,7 +85,8 @@ object XHyphenator {
     __obj.asInstanceOf[XHyphenator]
   }
   
-  extension [Self <: XHyphenator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHyphenator] (val x: Self) extends AnyVal {
     
     inline def setCreatePossibleHyphens(value: (String, Locale, PropertyValues) => XPossibleHyphens): Self = StObject.set(x, "createPossibleHyphens", js.Any.fromFunction3(value))
     

@@ -102,7 +102,8 @@ object XFramesSupplier {
     __obj.asInstanceOf[XFramesSupplier]
   }
   
-  extension [Self <: XFramesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFramesSupplier] (val x: Self) extends AnyVal {
     
     inline def setActiveFrame(value: XFrame): Self = StObject.set(x, "ActiveFrame", value.asInstanceOf[js.Any])
     

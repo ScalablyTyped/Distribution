@@ -57,7 +57,8 @@ object EventChannel {
     __obj.asInstanceOf[EventChannel]
   }
   
-  extension [Self <: EventChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventChannel] (val x: Self) extends AnyVal {
     
     inline def setEmit(value: (String, Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     

@@ -27,7 +27,8 @@ object RedirectProps {
     __obj.asInstanceOf[RedirectProps]
   }
   
-  extension [Self <: RedirectProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedirectProps] (val x: Self) extends AnyVal {
     
     inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object SocialAttachmentAction {
     __obj.asInstanceOf[SocialAttachmentAction]
   }
   
-  extension [Self <: SocialAttachmentAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialAttachmentAction] (val x: Self) extends AnyVal {
     
     inline def setGet_actionKind(value: () => SocialAttachmentActionKind): Self = StObject.set(x, "get_actionKind", js.Any.fromFunction0(value))
     

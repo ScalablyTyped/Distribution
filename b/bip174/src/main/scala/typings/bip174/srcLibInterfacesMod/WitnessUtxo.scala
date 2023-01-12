@@ -18,7 +18,8 @@ object WitnessUtxo {
     __obj.asInstanceOf[WitnessUtxo]
   }
   
-  extension [Self <: WitnessUtxo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WitnessUtxo] (val x: Self) extends AnyVal {
     
     inline def setScript(value: Buffer): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     

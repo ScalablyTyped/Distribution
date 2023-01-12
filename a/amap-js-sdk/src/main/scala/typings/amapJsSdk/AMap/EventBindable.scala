@@ -17,7 +17,8 @@ object EventBindable {
     __obj.asInstanceOf[EventBindable]
   }
   
-  extension [Self <: EventBindable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventBindable] (val x: Self) extends AnyVal {
     
     inline def setOff(value: (String, EventCallback) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
     

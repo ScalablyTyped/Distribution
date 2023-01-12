@@ -27,7 +27,8 @@ object UpdateLocationNfsRequest {
     __obj.asInstanceOf[UpdateLocationNfsRequest]
   }
   
-  extension [Self <: UpdateLocationNfsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLocationNfsRequest] (val x: Self) extends AnyVal {
     
     inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     

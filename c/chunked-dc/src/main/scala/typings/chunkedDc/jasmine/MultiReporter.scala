@@ -25,7 +25,8 @@ object MultiReporter {
     __obj.asInstanceOf[MultiReporter]
   }
   
-  extension [Self <: MultiReporter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiReporter] (val x: Self) extends AnyVal {
     
     inline def setAddReporter(value: Reporter => Unit): Self = StObject.set(x, "addReporter", js.Any.fromFunction1(value))
   }

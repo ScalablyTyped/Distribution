@@ -18,7 +18,8 @@ object ParallelismConfiguration {
     __obj.asInstanceOf[ParallelismConfiguration]
   }
   
-  extension [Self <: ParallelismConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParallelismConfiguration] (val x: Self) extends AnyVal {
     
     inline def setMaxParallelExecutionSteps(value: MaxParallelExecutionSteps): Self = StObject.set(x, "MaxParallelExecutionSteps", value.asInstanceOf[js.Any])
   }

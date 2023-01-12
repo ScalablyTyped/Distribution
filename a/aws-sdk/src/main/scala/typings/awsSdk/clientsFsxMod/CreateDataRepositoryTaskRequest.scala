@@ -39,7 +39,8 @@ object CreateDataRepositoryTaskRequest {
     __obj.asInstanceOf[CreateDataRepositoryTaskRequest]
   }
   
-  extension [Self <: CreateDataRepositoryTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataRepositoryTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setCapacityToRelease(value: CapacityToRelease): Self = StObject.set(x, "CapacityToRelease", value.asInstanceOf[js.Any])
     

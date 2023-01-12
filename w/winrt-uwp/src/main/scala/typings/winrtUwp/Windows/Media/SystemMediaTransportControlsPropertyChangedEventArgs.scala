@@ -17,7 +17,8 @@ object SystemMediaTransportControlsPropertyChangedEventArgs {
     __obj.asInstanceOf[SystemMediaTransportControlsPropertyChangedEventArgs]
   }
   
-  extension [Self <: SystemMediaTransportControlsPropertyChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemMediaTransportControlsPropertyChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setProperty(value: SystemMediaTransportControlsProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }

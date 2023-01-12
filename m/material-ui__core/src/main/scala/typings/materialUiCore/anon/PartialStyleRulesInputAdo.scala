@@ -45,7 +45,8 @@ object PartialStyleRulesInputAdo {
     __obj.asInstanceOf[PartialStyleRulesInputAdo]
   }
   
-  extension [Self <: PartialStyleRulesInputAdo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesInputAdo] (val x: Self) extends AnyVal {
     
     inline def setDisablePointerEvents(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

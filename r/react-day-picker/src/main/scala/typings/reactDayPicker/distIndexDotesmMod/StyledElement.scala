@@ -179,7 +179,8 @@ object StyledElement {
     __obj.asInstanceOf[StyledElement[T]]
   }
   
-  extension [Self <: StyledElement[?], T](x: Self & StyledElement[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyledElement[?], T] (val x: Self & StyledElement[T]) extends AnyVal {
     
     inline def setButton(value: T): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

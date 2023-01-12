@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[ScrollOptions]
     }
     
-    extension [Self <: ScrollOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollOptions] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

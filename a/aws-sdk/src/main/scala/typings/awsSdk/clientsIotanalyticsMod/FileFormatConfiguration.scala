@@ -23,7 +23,8 @@ object FileFormatConfiguration {
     __obj.asInstanceOf[FileFormatConfiguration]
   }
   
-  extension [Self <: FileFormatConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileFormatConfiguration] (val x: Self) extends AnyVal {
     
     inline def setJsonConfiguration(value: JsonConfiguration): Self = StObject.set(x, "jsonConfiguration", value.asInstanceOf[js.Any])
     

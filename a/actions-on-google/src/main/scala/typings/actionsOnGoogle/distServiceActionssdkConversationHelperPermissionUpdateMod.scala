@@ -40,7 +40,8 @@ object distServiceActionssdkConversationHelperPermissionUpdateMod {
       __obj.asInstanceOf[UpdatePermissionOptions]
     }
     
-    extension [Self <: UpdatePermissionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdatePermissionOptions] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: js.Array[GoogleActionsV2Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object RequesterPays {
     __obj.asInstanceOf[RequesterPays]
   }
   
-  extension [Self <: RequesterPays](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequesterPays] (val x: Self) extends AnyVal {
     
     inline def setRequesterPays(value: Boolean): Self = StObject.set(x, "requesterPays", value.asInstanceOf[js.Any])
     

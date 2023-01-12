@@ -34,7 +34,8 @@ object OnlineMeetingInfo {
     __obj.asInstanceOf[OnlineMeetingInfo]
   }
   
-  extension [Self <: OnlineMeetingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnlineMeetingInfo] (val x: Self) extends AnyVal {
     
     inline def setConferenceId(value: NullableOption[String]): Self = StObject.set(x, "conferenceId", value.asInstanceOf[js.Any])
     

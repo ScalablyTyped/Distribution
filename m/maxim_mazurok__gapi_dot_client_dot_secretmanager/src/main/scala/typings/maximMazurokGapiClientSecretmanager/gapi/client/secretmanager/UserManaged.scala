@@ -16,7 +16,8 @@ object UserManaged {
     __obj.asInstanceOf[UserManaged]
   }
   
-  extension [Self <: UserManaged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserManaged] (val x: Self) extends AnyVal {
     
     inline def setReplicas(value: js.Array[Replica]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     

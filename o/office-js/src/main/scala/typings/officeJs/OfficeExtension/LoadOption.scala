@@ -56,7 +56,8 @@ object LoadOption {
     __obj.asInstanceOf[LoadOption]
   }
   
-  extension [Self <: LoadOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadOption] (val x: Self) extends AnyVal {
     
     inline def setExpand(value: String | js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     

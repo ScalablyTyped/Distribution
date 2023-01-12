@@ -60,7 +60,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HTTPError]
     }
     
-    extension [Self <: HTTPError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTTPError] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ProgressEvent]
     }
     
-    extension [Self <: ProgressEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressEvent] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: download | upload): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -310,7 +312,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ResponseError]
     }
     
-    extension [Self <: ResponseError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseError] (val x: Self) extends AnyVal {
       
       inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       

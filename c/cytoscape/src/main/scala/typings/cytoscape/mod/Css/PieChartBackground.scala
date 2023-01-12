@@ -68,7 +68,8 @@ object PieChartBackground {
     __obj.asInstanceOf[PieChartBackground]
   }
   
-  extension [Self <: PieChartBackground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieChartBackground] (val x: Self) extends AnyVal {
     
     inline def `setPie-i-background-color`(value: PropertyValueNode[Colour]): Self = StObject.set(x, "pie-i-background-color", value.asInstanceOf[js.Any])
     

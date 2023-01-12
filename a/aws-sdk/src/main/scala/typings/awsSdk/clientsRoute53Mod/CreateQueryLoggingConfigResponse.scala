@@ -23,7 +23,8 @@ object CreateQueryLoggingConfigResponse {
     __obj.asInstanceOf[CreateQueryLoggingConfigResponse]
   }
   
-  extension [Self <: CreateQueryLoggingConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateQueryLoggingConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: ResourceURI): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     

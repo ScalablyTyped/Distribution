@@ -31,7 +31,8 @@ object PartialModeBar {
     __obj.asInstanceOf[PartialModeBar]
   }
   
-  extension [Self <: PartialModeBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialModeBar] (val x: Self) extends AnyVal {
     
     inline def setActivecolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "activecolor", value.asInstanceOf[js.Any])
     

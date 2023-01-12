@@ -126,7 +126,8 @@ object typesFormMessageContainerMod {
       __obj.asInstanceOf[FormMessageContainerProps]
     }
     
-    extension [Self <: FormMessageContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormMessageContainerProps] (val x: Self) extends AnyVal {
       
       inline def setMessageProps(value: MessageProps): Self = StObject.set(x, "messageProps", value.asInstanceOf[js.Any])
       
@@ -553,7 +554,8 @@ object typesFormMessageContainerMod {
       __obj.asInstanceOf[MessageProps]
     }
     
-    extension [Self <: MessageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

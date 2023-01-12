@@ -18,7 +18,8 @@ object `17` {
     __obj.asInstanceOf[`17`[WidgetType]]
   }
   
-  extension [Self <: `17`[?], WidgetType /* <: AnyWidget */](x: Self & `17`[WidgetType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `17`[?], WidgetType /* <: AnyWidget */] (val x: Self & `17`[WidgetType]) extends AnyVal {
     
     inline def setChildren(value: JSXChildren[WidgetType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

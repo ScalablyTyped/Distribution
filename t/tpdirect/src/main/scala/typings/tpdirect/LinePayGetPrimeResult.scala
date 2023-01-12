@@ -17,7 +17,8 @@ object LinePayGetPrimeResult {
     __obj.asInstanceOf[LinePayGetPrimeResult]
   }
   
-  extension [Self <: LinePayGetPrimeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinePayGetPrimeResult] (val x: Self) extends AnyVal {
     
     inline def setCs_key(value: String): Self = StObject.set(x, "cs_key", value.asInstanceOf[js.Any])
   }

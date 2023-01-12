@@ -17,7 +17,8 @@ object IConsensusBroadcastResponse {
     __obj.asInstanceOf[IConsensusBroadcastResponse]
   }
   
-  extension [Self <: IConsensusBroadcastResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusBroadcastResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object srcNgtscTypecheckExtendedApiExtendedTemplateCheckerMod {
       __obj.asInstanceOf[ExtendedTemplateChecker]
     }
     
-    extension [Self <: ExtendedTemplateChecker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedTemplateChecker] (val x: Self) extends AnyVal {
       
       inline def setGetDiagnosticsForComponent(value: ClassDeclaration => js.Array[TemplateDiagnostic]): Self = StObject.set(x, "getDiagnosticsForComponent", js.Any.fromFunction1(value))
     }

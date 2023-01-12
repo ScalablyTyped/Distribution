@@ -92,7 +92,8 @@ object ControlProperties {
     __obj.asInstanceOf[ControlProperties]
   }
   
-  extension [Self <: ControlProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlProperties] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     

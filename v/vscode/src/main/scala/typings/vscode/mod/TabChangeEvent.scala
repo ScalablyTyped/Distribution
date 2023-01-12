@@ -29,7 +29,8 @@ object TabChangeEvent {
     __obj.asInstanceOf[TabChangeEvent]
   }
   
-  extension [Self <: TabChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setChanged(value: js.Array[Tab]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     

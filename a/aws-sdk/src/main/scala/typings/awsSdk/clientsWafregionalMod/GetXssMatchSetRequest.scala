@@ -18,7 +18,8 @@ object GetXssMatchSetRequest {
     __obj.asInstanceOf[GetXssMatchSetRequest]
   }
   
-  extension [Self <: GetXssMatchSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetXssMatchSetRequest] (val x: Self) extends AnyVal {
     
     inline def setXssMatchSetId(value: ResourceId): Self = StObject.set(x, "XssMatchSetId", value.asInstanceOf[js.Any])
   }

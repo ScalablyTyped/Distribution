@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[CallEnd]
     }
     
-    extension [Self <: CallEnd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallEnd] (val x: Self) extends AnyVal {
       
       inline def setCallEnd(value: Boolean): Self = StObject.set(x, "callEnd", value.asInstanceOf[js.Any])
       

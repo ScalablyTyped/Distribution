@@ -19,7 +19,8 @@ object ReturnTypeGetOriginTrialsResponse {
     __obj.asInstanceOf[ReturnTypeGetOriginTrialsResponse]
   }
   
-  extension [Self <: ReturnTypeGetOriginTrialsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetOriginTrialsResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetOriginTrialsRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

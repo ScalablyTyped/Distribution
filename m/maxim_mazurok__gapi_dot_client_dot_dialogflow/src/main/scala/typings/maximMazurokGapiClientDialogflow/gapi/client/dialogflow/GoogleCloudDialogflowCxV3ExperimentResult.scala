@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3ExperimentResult {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ExperimentResult]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ExperimentResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ExperimentResult] (val x: Self) extends AnyVal {
     
     inline def setLastUpdateTime(value: String): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     

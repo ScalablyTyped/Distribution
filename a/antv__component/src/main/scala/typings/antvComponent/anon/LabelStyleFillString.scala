@@ -15,7 +15,8 @@ object LabelStyleFillString {
     __obj.asInstanceOf[LabelStyleFillString]
   }
   
-  extension [Self <: LabelStyleFillString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelStyleFillString] (val x: Self) extends AnyVal {
     
     inline def setLabelStyle(value: FillString): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
   }

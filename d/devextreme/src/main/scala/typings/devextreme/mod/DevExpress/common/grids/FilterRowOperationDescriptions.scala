@@ -68,7 +68,8 @@ object FilterRowOperationDescriptions {
     __obj.asInstanceOf[FilterRowOperationDescriptions]
   }
   
-  extension [Self <: FilterRowOperationDescriptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterRowOperationDescriptions] (val x: Self) extends AnyVal {
     
     inline def setBetween(value: String): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
     

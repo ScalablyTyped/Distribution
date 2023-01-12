@@ -32,7 +32,8 @@ object GmePanel {
       __obj.asInstanceOf[IActivePanel]
     }
     
-    extension [Self <: IActivePanel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IActivePanel] (val x: Self) extends AnyVal {
       
       inline def setGetNodeID(value: () => String): Self = StObject.set(x, "getNodeID", js.Any.fromFunction0(value))
       
@@ -85,7 +86,8 @@ object GmePanel {
       __obj.asInstanceOf[LayoutManager]
     }
     
-    extension [Self <: LayoutManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutManager] (val x: Self) extends AnyVal {
       
       inline def setAddPanel(value: (String, PanelBase, Container) => Unit): Self = StObject.set(x, "addPanel", js.Any.fromFunction3(value))
       
@@ -125,7 +127,8 @@ object GmePanel {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setCreateLogger(value: (String, LogOptions) => Logger): Self = StObject.set(x, "createLogger", js.Any.fromFunction2(value))
       
@@ -144,7 +147,8 @@ object GmePanel {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setLOGGER_INSTANCE_NAME(value: String): Self = StObject.set(x, "LOGGER_INSTANCE_NAME", value.asInstanceOf[js.Any])
     }
@@ -167,7 +171,8 @@ object GmePanel {
       __obj.asInstanceOf[OptionsWithHeader]
     }
     
-    extension [Self <: OptionsWithHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsWithHeader] (val x: Self) extends AnyVal {
       
       inline def setFLOATING_TITLE(value: String): Self = StObject.set(x, "FLOATING_TITLE", value.asInstanceOf[js.Any])
       
@@ -223,7 +228,8 @@ object GmePanel {
       __obj.asInstanceOf[PanelBase]
     }
     
-    extension [Self <: PanelBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelBase] (val x: Self) extends AnyVal {
       
       inline def setAfterAppend(value: () => Unit): Self = StObject.set(x, "afterAppend", js.Any.fromFunction0(value))
       
@@ -290,7 +296,8 @@ object GmePanel {
       __obj.asInstanceOf[PanelBaseWithHeader]
     }
     
-    extension [Self <: PanelBaseWithHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelBaseWithHeader] (val x: Self) extends AnyVal {
       
       inline def setGetNodeID(value: () => String): Self = StObject.set(x, "getNodeID", js.Any.fromFunction0(value))
       
@@ -317,7 +324,8 @@ object GmePanel {
       __obj.asInstanceOf[PanelManager]
     }
     
-    extension [Self <: PanelManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelManager] (val x: Self) extends AnyVal {
       
       inline def setGetActivePanel(value: () => PanelBase): Self = StObject.set(x, "getActivePanel", js.Any.fromFunction0(value))
       
@@ -336,7 +344,8 @@ object GmePanel {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }

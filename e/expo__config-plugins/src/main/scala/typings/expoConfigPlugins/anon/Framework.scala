@@ -23,7 +23,8 @@ object Framework {
     __obj.asInstanceOf[Framework]
   }
   
-  extension [Self <: Framework](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Framework] (val x: Self) extends AnyVal {
     
     inline def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
     

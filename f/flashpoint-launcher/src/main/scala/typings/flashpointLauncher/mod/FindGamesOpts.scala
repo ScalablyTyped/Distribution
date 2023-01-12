@@ -24,7 +24,8 @@ object FindGamesOpts {
     __obj.asInstanceOf[FindGamesOpts]
   }
   
-  extension [Self <: FindGamesOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindGamesOpts] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: GameOrderDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

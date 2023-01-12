@@ -16,7 +16,8 @@ object FetchTimeResponse {
     __obj.asInstanceOf[FetchTimeResponse]
   }
   
-  extension [Self <: FetchTimeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchTimeResponse] (val x: Self) extends AnyVal {
     
     inline def setTimetoken(value: Double): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
   }

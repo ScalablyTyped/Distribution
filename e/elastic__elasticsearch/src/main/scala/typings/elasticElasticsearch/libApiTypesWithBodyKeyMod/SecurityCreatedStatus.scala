@@ -15,7 +15,8 @@ object SecurityCreatedStatus {
     __obj.asInstanceOf[SecurityCreatedStatus]
   }
   
-  extension [Self <: SecurityCreatedStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityCreatedStatus] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: Boolean): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
   }

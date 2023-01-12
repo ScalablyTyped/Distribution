@@ -24,7 +24,8 @@ object RecipientKeyIdentifierParameters {
     __obj.asInstanceOf[RecipientKeyIdentifierParameters]
   }
   
-  extension [Self <: RecipientKeyIdentifierParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientKeyIdentifierParameters] (val x: Self) extends AnyVal {
     
     inline def setDate(value: GeneralizedTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

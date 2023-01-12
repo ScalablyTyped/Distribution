@@ -19,7 +19,8 @@ object Antialiased {
     __obj.asInstanceOf[Antialiased]
   }
   
-  extension [Self <: Antialiased](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Antialiased] (val x: Self) extends AnyVal {
     
     inline def setAntialiased(value: Boolean): Self = StObject.set(x, "antialiased", value.asInstanceOf[js.Any])
     

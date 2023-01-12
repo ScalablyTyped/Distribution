@@ -45,7 +45,8 @@ object PrePassRendererSceneComponent {
     __obj.asInstanceOf[PrePassRendererSceneComponent]
   }
   
-  extension [Self <: PrePassRendererSceneComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrePassRendererSceneComponent] (val x: Self) extends AnyVal {
     
     inline def set_afterCameraDraw(value: Any): Self = StObject.set(x, "_afterCameraDraw", value.asInstanceOf[js.Any])
     

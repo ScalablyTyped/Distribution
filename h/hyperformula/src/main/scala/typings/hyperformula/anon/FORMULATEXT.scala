@@ -15,7 +15,8 @@ object FORMULATEXT {
     __obj.asInstanceOf[FORMULATEXT]
   }
   
-  extension [Self <: FORMULATEXT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FORMULATEXT] (val x: Self) extends AnyVal {
     
     inline def setFORMULATEXT(value: DoesNotNeedArgumentsToBeComputed): Self = StObject.set(x, "FORMULATEXT", value.asInstanceOf[js.Any])
   }

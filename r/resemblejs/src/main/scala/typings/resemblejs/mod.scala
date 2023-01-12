@@ -89,7 +89,8 @@ object mod {
       __obj.asInstanceOf[AnalysisResult]
     }
     
-    extension [Self <: AnalysisResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalysisResult] (val x: Self) extends AnyVal {
       
       inline def setBlack(value: Double): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object mod {
       __obj.asInstanceOf[Box]
     }
     
-    extension [Self <: Box](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object mod {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -249,7 +252,8 @@ object mod {
       __obj.asInstanceOf[Comparison]
     }
     
-    extension [Self <: Comparison](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comparison] (val x: Self) extends AnyVal {
       
       inline def setIgnoreAlpha(value: () => Comparison): Self = StObject.set(x, "ignoreAlpha", js.Any.fromFunction0(value))
       
@@ -319,7 +323,8 @@ object mod {
       __obj.asInstanceOf[ComparisonOptions]
     }
     
-    extension [Self <: ComparisonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComparisonOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnore(value: ComparisonIgnoreOption | js.Array[ComparisonIgnoreOption]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
@@ -406,7 +411,8 @@ object mod {
       __obj.asInstanceOf[ComparisonResult]
     }
     
-    extension [Self <: ComparisonResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComparisonResult] (val x: Self) extends AnyVal {
       
       inline def setAnalysisTime(value: Double): Self = StObject.set(x, "analysisTime", value.asInstanceOf[js.Any])
       
@@ -486,7 +492,8 @@ object mod {
       __obj.asInstanceOf[OutputSettings_]
     }
     
-    extension [Self <: OutputSettings_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputSettings_] (val x: Self) extends AnyVal {
       
       inline def setBoundingBox(value: Box): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
       
@@ -559,7 +566,8 @@ object mod {
       __obj.asInstanceOf[Tolerance]
     }
     
-    extension [Self <: Tolerance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tolerance] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

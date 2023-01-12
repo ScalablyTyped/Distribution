@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[MiddlewareOptions]
     }
     
-    extension [Self <: MiddlewareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiddlewareOptions] (val x: Self) extends AnyVal {
       
       inline def setPaths(value: StringDictionary[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     }
@@ -51,7 +52,8 @@ object mod {
         __obj.asInstanceOf[ConfigOptions]
       }
       
-      extension [Self <: ConfigOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
         
         inline def setEsModulesMiddleware(value: MiddlewareOptions): Self = StObject.set(x, "esModulesMiddleware", value.asInstanceOf[js.Any])
         

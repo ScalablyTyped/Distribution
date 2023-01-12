@@ -17,7 +17,8 @@ object RNFetchBlobDfIOS {
     __obj.asInstanceOf[RNFetchBlobDfIOS]
   }
   
-  extension [Self <: RNFetchBlobDfIOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RNFetchBlobDfIOS] (val x: Self) extends AnyVal {
     
     inline def setFree(value: Double): Self = StObject.set(x, "free", value.asInstanceOf[js.Any])
     

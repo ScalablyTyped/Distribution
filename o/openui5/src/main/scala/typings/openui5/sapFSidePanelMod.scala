@@ -576,7 +576,8 @@ object sapFSidePanelMod {
       __obj.asInstanceOf[SidePanelSettings]
     }
     
-    extension [Self <: SidePanelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidePanelSettings] (val x: Self) extends AnyVal {
       
       inline def setActionBarExpanded(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "actionBarExpanded", value.asInstanceOf[js.Any])
       

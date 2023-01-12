@@ -28,7 +28,8 @@ object MaterializedViewDefinition {
     __obj.asInstanceOf[MaterializedViewDefinition]
   }
   
-  extension [Self <: MaterializedViewDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaterializedViewDefinition] (val x: Self) extends AnyVal {
     
     inline def setEnableRefresh(value: Boolean): Self = StObject.set(x, "enableRefresh", value.asInstanceOf[js.Any])
     

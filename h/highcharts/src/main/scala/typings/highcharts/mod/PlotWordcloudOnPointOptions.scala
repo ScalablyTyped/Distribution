@@ -33,7 +33,8 @@ object PlotWordcloudOnPointOptions {
     __obj.asInstanceOf[PlotWordcloudOnPointOptions]
   }
   
-  extension [Self <: PlotWordcloudOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotWordcloudOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotWordcloudOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object GetOutpostInstanceTypesInput {
     __obj.asInstanceOf[GetOutpostInstanceTypesInput]
   }
   
-  extension [Self <: GetOutpostInstanceTypesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOutpostInstanceTypesInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults1000): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

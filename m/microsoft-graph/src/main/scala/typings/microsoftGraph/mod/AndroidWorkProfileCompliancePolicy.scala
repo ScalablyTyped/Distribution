@@ -87,7 +87,8 @@ object AndroidWorkProfileCompliancePolicy {
     __obj.asInstanceOf[AndroidWorkProfileCompliancePolicy]
   }
   
-  extension [Self <: AndroidWorkProfileCompliancePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidWorkProfileCompliancePolicy] (val x: Self) extends AnyVal {
     
     inline def setDeviceThreatProtectionEnabled(value: Boolean): Self = StObject.set(x, "deviceThreatProtectionEnabled", value.asInstanceOf[js.Any])
     

@@ -88,7 +88,8 @@ object ColorSchemeForPolygon {
     __obj.asInstanceOf[ColorSchemeForPolygon]
   }
   
-  extension [Self <: ColorSchemeForPolygon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorSchemeForPolygon] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

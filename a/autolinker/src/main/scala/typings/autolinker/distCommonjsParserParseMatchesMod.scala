@@ -47,7 +47,8 @@ object distCommonjsParserParseMatchesMod {
       __obj.asInstanceOf[ParseMatchesArgs]
     }
     
-    extension [Self <: ParseMatchesArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseMatchesArgs] (val x: Self) extends AnyVal {
       
       inline def setDecodePercentEncoding(value: Boolean): Self = StObject.set(x, "decodePercentEncoding", value.asInstanceOf[js.Any])
       

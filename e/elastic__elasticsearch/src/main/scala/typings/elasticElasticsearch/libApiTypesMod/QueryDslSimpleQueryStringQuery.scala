@@ -41,7 +41,8 @@ object QueryDslSimpleQueryStringQuery {
     __obj.asInstanceOf[QueryDslSimpleQueryStringQuery]
   }
   
-  extension [Self <: QueryDslSimpleQueryStringQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslSimpleQueryStringQuery] (val x: Self) extends AnyVal {
     
     inline def setAnalyze_wildcard(value: Boolean): Self = StObject.set(x, "analyze_wildcard", value.asInstanceOf[js.Any])
     

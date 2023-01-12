@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[Manifest]
     }
     
-    extension [Self <: Manifest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Manifest] (val x: Self) extends AnyVal {
       
       inline def setRegister(value: Plugins): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setPreConnections(value: (/* Server */ Server_, /* next */ js.Function1[/* err */ Any, Unit]) => Unit): Self = StObject.set(x, "preConnections", js.Any.fromFunction2(value))
       
@@ -88,7 +90,8 @@ object mod {
       __obj.asInstanceOf[PluginObject]
     }
     
-    extension [Self <: PluginObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginObject] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

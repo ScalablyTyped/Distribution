@@ -36,7 +36,8 @@ object RawParcelConfig {
     __obj.asInstanceOf[RawParcelConfig]
   }
   
-  extension [Self <: RawParcelConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawParcelConfig] (val x: Self) extends AnyVal {
     
     inline def setBundler(value: PackageName): Self = StObject.set(x, "bundler", value.asInstanceOf[js.Any])
     

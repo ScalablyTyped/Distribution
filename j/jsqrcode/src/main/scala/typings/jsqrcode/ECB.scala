@@ -21,7 +21,8 @@ object ECB {
     __obj.asInstanceOf[ECB]
   }
   
-  extension [Self <: ECB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ECB] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

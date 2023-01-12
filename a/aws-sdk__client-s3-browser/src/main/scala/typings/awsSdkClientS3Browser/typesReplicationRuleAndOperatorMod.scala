@@ -27,7 +27,8 @@ object typesReplicationRuleAndOperatorMod {
       __obj.asInstanceOf[ReplicationRuleAndOperator]
     }
     
-    extension [Self <: ReplicationRuleAndOperator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicationRuleAndOperator] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object typesReplicationRuleAndOperatorMod {
       __obj.asInstanceOf[UnmarshalledReplicationRuleAndOperator]
     }
     
-    extension [Self <: UnmarshalledReplicationRuleAndOperator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledReplicationRuleAndOperator] (val x: Self) extends AnyVal {
       
       inline def setTags(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ContextMenuItem {
     __obj.asInstanceOf[ContextMenuItem]
   }
   
-  extension [Self <: ContextMenuItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextMenuItem] (val x: Self) extends AnyVal {
     
     inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

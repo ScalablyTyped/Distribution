@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[AutoDelete]
     }
     
-    extension [Self <: AutoDelete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoDelete] (val x: Self) extends AnyVal {
       
       inline def setAutoDelete(value: Boolean): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[DefaultExchangeName]
     }
     
-    extension [Self <: DefaultExchangeName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultExchangeName] (val x: Self) extends AnyVal {
       
       inline def setDefaultExchangeName(value: String): Self = StObject.set(x, "defaultExchangeName", value.asInstanceOf[js.Any])
       

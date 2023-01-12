@@ -24,7 +24,8 @@ object CommandMetadataOption {
     __obj.asInstanceOf[CommandMetadataOption]
   }
   
-  extension [Self <: CommandMetadataOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandMetadataOption] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

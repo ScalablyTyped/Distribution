@@ -27,7 +27,8 @@ object QueryGrantableRolesRequest {
     __obj.asInstanceOf[QueryGrantableRolesRequest]
   }
   
-  extension [Self <: QueryGrantableRolesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryGrantableRolesRequest] (val x: Self) extends AnyVal {
     
     inline def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
     

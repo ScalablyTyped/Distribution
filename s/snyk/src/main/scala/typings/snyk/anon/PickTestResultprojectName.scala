@@ -16,7 +16,8 @@ object PickTestResultprojectName {
     __obj.asInstanceOf[PickTestResultprojectName]
   }
   
-  extension [Self <: PickTestResultprojectName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickTestResultprojectName] (val x: Self) extends AnyVal {
     
     inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Value {
     __obj.asInstanceOf[Value]
   }
   
-  extension [Self <: Value](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
     
     inline def setButtonIndex(value: Double): Self = StObject.set(x, "buttonIndex", value.asInstanceOf[js.Any])
     

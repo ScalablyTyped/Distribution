@@ -18,7 +18,8 @@ object IndicesCloseCloseIndexResult {
     __obj.asInstanceOf[IndicesCloseCloseIndexResult]
   }
   
-  extension [Self <: IndicesCloseCloseIndexResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesCloseCloseIndexResult] (val x: Self) extends AnyVal {
     
     inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     

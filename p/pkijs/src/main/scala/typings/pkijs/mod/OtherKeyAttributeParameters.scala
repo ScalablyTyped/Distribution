@@ -20,7 +20,8 @@ object OtherKeyAttributeParameters {
     __obj.asInstanceOf[OtherKeyAttributeParameters]
   }
   
-  extension [Self <: OtherKeyAttributeParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherKeyAttributeParameters] (val x: Self) extends AnyVal {
     
     inline def setKeyAttr(value: Any): Self = StObject.set(x, "keyAttr", value.asInstanceOf[js.Any])
     

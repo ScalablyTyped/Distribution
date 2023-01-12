@@ -38,7 +38,8 @@ object ListFindingAggregationsRequest {
     __obj.asInstanceOf[ListFindingAggregationsRequest]
   }
   
-  extension [Self <: ListFindingAggregationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFindingAggregationsRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: StringFilterList): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     

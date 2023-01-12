@@ -23,7 +23,8 @@ object `496` {
     __obj.asInstanceOf[`496`]
   }
   
-  extension [Self <: `496`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `496`] (val x: Self) extends AnyVal {
     
     inline def setId(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis-sarif-id'] */ js.Any

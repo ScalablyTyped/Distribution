@@ -41,7 +41,8 @@ object TextfieldProps {
     __obj.asInstanceOf[TextfieldProps]
   }
   
-  extension [Self <: TextfieldProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextfieldProps] (val x: Self) extends AnyVal {
     
     inline def setError(value: ReactNode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

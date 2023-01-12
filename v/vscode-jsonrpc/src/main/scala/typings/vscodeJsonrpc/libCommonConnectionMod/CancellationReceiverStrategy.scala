@@ -28,7 +28,8 @@ object CancellationReceiverStrategy {
   
   inline def is(value: Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/common/connection.CancellationReceiverStrategy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/common/connection.CancellationReceiverStrategy */ Boolean]
   
-  extension [Self <: CancellationReceiverStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancellationReceiverStrategy] (val x: Self) extends AnyVal {
     
     inline def setCreateCancellationTokenSource(value: CancellationId => AbstractCancellationTokenSource): Self = StObject.set(x, "createCancellationTokenSource", js.Any.fromFunction1(value))
     

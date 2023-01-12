@@ -18,7 +18,8 @@ object ReadPreferenceLikeOptions {
     __obj.asInstanceOf[ReadPreferenceLikeOptions]
   }
   
-  extension [Self <: ReadPreferenceLikeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadPreferenceLikeOptions] (val x: Self) extends AnyVal {
     
     inline def setReadPreference(value: ReadPreferenceLike | MaxStalenessSeconds): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     

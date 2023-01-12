@@ -62,7 +62,8 @@ object VectorTileLayerCurrentStyleInfo {
     __obj.asInstanceOf[VectorTileLayerCurrentStyleInfo]
   }
   
-  extension [Self <: VectorTileLayerCurrentStyleInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VectorTileLayerCurrentStyleInfo] (val x: Self) extends AnyVal {
     
     inline def setGlyphsUrl(value: String): Self = StObject.set(x, "glyphsUrl", value.asInstanceOf[js.Any])
     

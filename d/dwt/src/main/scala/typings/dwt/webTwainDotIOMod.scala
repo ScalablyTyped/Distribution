@@ -38,7 +38,8 @@ object webTwainDotIOMod {
       __obj.asInstanceOf[Base64Result]
     }
     
-    extension [Self <: Base64Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base64Result] (val x: Self) extends AnyVal {
       
       inline def setGetData(value: (Double, Double) => String): Self = StObject.set(x, "getData", js.Any.fromFunction2(value))
       
@@ -79,7 +80,8 @@ object webTwainDotIOMod {
       __obj.asInstanceOf[LicenseDetailItem]
     }
     
-    extension [Self <: LicenseDetailItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LicenseDetailItem] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
       

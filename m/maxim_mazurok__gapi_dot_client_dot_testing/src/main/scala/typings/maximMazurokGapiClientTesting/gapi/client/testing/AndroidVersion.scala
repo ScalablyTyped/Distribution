@@ -34,7 +34,8 @@ object AndroidVersion {
     __obj.asInstanceOf[AndroidVersion]
   }
   
-  extension [Self <: AndroidVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidVersion] (val x: Self) extends AnyVal {
     
     inline def setApiLevel(value: Double): Self = StObject.set(x, "apiLevel", value.asInstanceOf[js.Any])
     

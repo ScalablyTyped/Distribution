@@ -23,7 +23,8 @@ object GetHostnameSuggestionResult {
     __obj.asInstanceOf[GetHostnameSuggestionResult]
   }
   
-  extension [Self <: GetHostnameSuggestionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHostnameSuggestionResult] (val x: Self) extends AnyVal {
     
     inline def setHostname(value: String): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
     

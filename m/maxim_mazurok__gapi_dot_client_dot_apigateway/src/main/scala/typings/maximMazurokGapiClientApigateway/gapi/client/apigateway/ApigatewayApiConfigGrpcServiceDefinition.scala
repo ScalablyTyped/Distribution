@@ -25,7 +25,8 @@ object ApigatewayApiConfigGrpcServiceDefinition {
     __obj.asInstanceOf[ApigatewayApiConfigGrpcServiceDefinition]
   }
   
-  extension [Self <: ApigatewayApiConfigGrpcServiceDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApigatewayApiConfigGrpcServiceDefinition] (val x: Self) extends AnyVal {
     
     inline def setFileDescriptorSet(value: ApigatewayApiConfigFile): Self = StObject.set(x, "fileDescriptorSet", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object FloodlightGroup {
     __obj.asInstanceOf[FloodlightGroup]
   }
   
-  extension [Self <: FloodlightGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloodlightGroup] (val x: Self) extends AnyVal {
     
     inline def setActiveViewConfig(value: ActiveViewVideoViewabilityMetricConfig): Self = StObject.set(x, "activeViewConfig", value.asInstanceOf[js.Any])
     

@@ -104,7 +104,8 @@ object PartialOptionsobjectDatas {
     __obj.asInstanceOf[PartialOptionsobjectDatas]
   }
   
-  extension [Self <: PartialOptionsobjectDatas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOptionsobjectDatas] (val x: Self) extends AnyVal {
     
     inline def setAcceptHeader(value: String): Self = StObject.set(x, "acceptHeader", value.asInstanceOf[js.Any])
     

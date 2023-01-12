@@ -20,7 +20,8 @@ object Summary {
     __obj.asInstanceOf[Summary]
   }
   
-  extension [Self <: Summary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Summary] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: js.Array[MetadataGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     

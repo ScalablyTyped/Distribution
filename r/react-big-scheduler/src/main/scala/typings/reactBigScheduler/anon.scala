@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[CellUnit]
     }
     
-    extension [Self <: CellUnit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellUnit] (val x: Self) extends AnyVal {
       
       inline def setCellUnit(value: CellUnits): Self = StObject.set(x, "cellUnit", value.asInstanceOf[js.Any])
       

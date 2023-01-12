@@ -33,7 +33,8 @@ object AttachmentTimeline {
     __obj.asInstanceOf[AttachmentTimeline]
   }
   
-  extension [Self <: AttachmentTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentTimeline] (val x: Self) extends AnyVal {
     
     inline def setAttachmentNames(value: js.Array[String]): Self = StObject.set(x, "attachmentNames", value.asInstanceOf[js.Any])
     

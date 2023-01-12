@@ -17,7 +17,8 @@ object OpenReturn {
     __obj.asInstanceOf[OpenReturn]
   }
   
-  extension [Self <: OpenReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenReturn] (val x: Self) extends AnyVal {
     
     inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

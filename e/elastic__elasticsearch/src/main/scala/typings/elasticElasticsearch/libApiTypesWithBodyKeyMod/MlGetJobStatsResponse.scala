@@ -17,7 +17,8 @@ object MlGetJobStatsResponse {
     __obj.asInstanceOf[MlGetJobStatsResponse]
   }
   
-  extension [Self <: MlGetJobStatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetJobStatsResponse] (val x: Self) extends AnyVal {
     
     inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

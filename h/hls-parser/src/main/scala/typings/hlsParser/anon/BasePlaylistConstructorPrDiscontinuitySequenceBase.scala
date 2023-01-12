@@ -54,7 +54,8 @@ object BasePlaylistConstructorPrDiscontinuitySequenceBase {
     __obj.asInstanceOf[BasePlaylistConstructorPrDiscontinuitySequenceBase]
   }
   
-  extension [Self <: BasePlaylistConstructorPrDiscontinuitySequenceBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePlaylistConstructorPrDiscontinuitySequenceBase] (val x: Self) extends AnyVal {
     
     inline def setDiscontinuitySequenceBase(value: Double): Self = StObject.set(x, "discontinuitySequenceBase", value.asInstanceOf[js.Any])
     

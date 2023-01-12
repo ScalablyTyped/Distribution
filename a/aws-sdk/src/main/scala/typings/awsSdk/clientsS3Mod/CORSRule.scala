@@ -43,7 +43,8 @@ object CORSRule {
     __obj.asInstanceOf[CORSRule]
   }
   
-  extension [Self <: CORSRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CORSRule] (val x: Self) extends AnyVal {
     
     inline def setAllowedHeaders(value: AllowedHeaders): Self = StObject.set(x, "AllowedHeaders", value.asInstanceOf[js.Any])
     

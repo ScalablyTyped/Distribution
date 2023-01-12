@@ -23,7 +23,8 @@ object ListOrganizationServiceAccessStatusRequest {
     __obj.asInstanceOf[ListOrganizationServiceAccessStatusRequest]
   }
   
-  extension [Self <: ListOrganizationServiceAccessStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOrganizationServiceAccessStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PullRequest {
       __obj.asInstanceOf[GetPullRequestCommentsParams]
     }
     
-    extension [Self <: GetPullRequestCommentsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPullRequestCommentsParams] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object PullRequest {
       __obj.asInstanceOf[GetPullRequestsParams]
     }
     
-    extension [Self <: GetPullRequestsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPullRequestsParams] (val x: Self) extends AnyVal {
       
       inline def setAssigneeId(value: js.Array[Double]): Self = StObject.set(x, "assigneeId", value.asInstanceOf[js.Any])
       
@@ -111,7 +113,8 @@ object PullRequest {
       __obj.asInstanceOf[PatchPullRequestCommentsParams]
     }
     
-    extension [Self <: PatchPullRequestCommentsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatchPullRequestCommentsParams] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
@@ -138,7 +141,8 @@ object PullRequest {
       __obj.asInstanceOf[PatchPullRequestParams]
     }
     
-    extension [Self <: PatchPullRequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatchPullRequestParams] (val x: Self) extends AnyVal {
       
       inline def setAssigneeId(value: Double): Self = StObject.set(x, "assigneeId", value.asInstanceOf[js.Any])
       
@@ -183,7 +187,8 @@ object PullRequest {
       __obj.asInstanceOf[PostPullRequestCommentsParams]
     }
     
-    extension [Self <: PostPullRequestCommentsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostPullRequestCommentsParams] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -220,7 +225,8 @@ object PullRequest {
       __obj.asInstanceOf[PostPullRequestParams]
     }
     
-    extension [Self <: PostPullRequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostPullRequestParams] (val x: Self) extends AnyVal {
       
       inline def setAssigneeId(value: Double): Self = StObject.set(x, "assigneeId", value.asInstanceOf[js.Any])
       

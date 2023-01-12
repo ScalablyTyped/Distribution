@@ -29,7 +29,8 @@ object WorkItemTemplate {
     __obj.asInstanceOf[WorkItemTemplate]
   }
   
-  extension [Self <: WorkItemTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemTemplate] (val x: Self) extends AnyVal {
     
     inline def setFields(value: StringDictionary[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
   }

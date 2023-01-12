@@ -231,7 +231,8 @@ object libComponentsImageImageDottypesMod {
       __obj.asInstanceOf[IImageProps]
     }
     
-    extension [Self <: IImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IImageProps] (val x: Self) extends AnyVal {
       
       inline def setCoverStyle(value: ImageCoverStyle): Self = StObject.set(x, "coverStyle", value.asInstanceOf[js.Any])
       
@@ -355,7 +356,8 @@ object libComponentsImageImageDottypesMod {
       __obj.asInstanceOf[IImageStyleProps]
     }
     
-    extension [Self <: IImageStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IImageStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -444,7 +446,8 @@ object libComponentsImageImageDottypesMod {
       __obj.asInstanceOf[IImageStyles]
     }
     
-    extension [Self <: IImageStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IImageStyles] (val x: Self) extends AnyVal {
       
       inline def setImage(value: IStyle): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       

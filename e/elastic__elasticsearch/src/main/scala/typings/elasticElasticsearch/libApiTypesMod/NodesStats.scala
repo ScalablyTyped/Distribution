@@ -60,7 +60,8 @@ object NodesStats {
     __obj.asInstanceOf[NodesStats]
   }
   
-  extension [Self <: NodesStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesStats] (val x: Self) extends AnyVal {
     
     inline def setAdaptive_selection(value: Record[String, NodesAdaptiveSelection]): Self = StObject.set(x, "adaptive_selection", value.asInstanceOf[js.Any])
     

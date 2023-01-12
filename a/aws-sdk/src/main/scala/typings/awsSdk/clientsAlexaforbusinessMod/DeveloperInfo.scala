@@ -33,7 +33,8 @@ object DeveloperInfo {
     __obj.asInstanceOf[DeveloperInfo]
   }
   
-  extension [Self <: DeveloperInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeveloperInfo] (val x: Self) extends AnyVal {
     
     inline def setDeveloperName(value: DeveloperName): Self = StObject.set(x, "DeveloperName", value.asInstanceOf[js.Any])
     

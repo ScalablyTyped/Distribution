@@ -62,7 +62,8 @@ object typesPositioningCreateHorizontalPositionMod {
       __obj.asInstanceOf[EqualWidthOptions]
     }
     
-    extension [Self <: EqualWidthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EqualWidthOptions] (val x: Self) extends AnyVal {
       
       inline def setContainerRect(value: DOMRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object typesPositioningCreateHorizontalPositionMod {
       __obj.asInstanceOf[FixConfig]
     }
     
-    extension [Self <: FixConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixConfig] (val x: Self) extends AnyVal {
       
       inline def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
       
@@ -158,7 +160,8 @@ object typesPositioningCreateHorizontalPositionMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setContainerRect(value: DOMRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
       
@@ -204,7 +207,8 @@ object typesPositioningCreateHorizontalPositionMod {
       __obj.asInstanceOf[XPosition]
     }
     
-    extension [Self <: XPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XPosition] (val x: Self) extends AnyVal {
       
       inline def setActualX(value: HorizontalPosition): Self = StObject.set(x, "actualX", value.asInstanceOf[js.Any])
       

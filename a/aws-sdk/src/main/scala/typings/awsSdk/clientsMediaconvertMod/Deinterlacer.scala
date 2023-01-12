@@ -28,7 +28,8 @@ object Deinterlacer {
     __obj.asInstanceOf[Deinterlacer]
   }
   
-  extension [Self <: Deinterlacer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deinterlacer] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: DeinterlaceAlgorithm): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     

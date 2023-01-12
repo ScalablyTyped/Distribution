@@ -26,7 +26,8 @@ object IUboRefusedReasonType {
     __obj.asInstanceOf[IUboRefusedReasonType]
   }
   
-  extension [Self <: IUboRefusedReasonType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUboRefusedReasonType] (val x: Self) extends AnyVal {
     
     inline def setInvalidDeclaredUbo(value: INVALID_DECLARED_UBO): Self = StObject.set(x, "InvalidDeclaredUbo", value.asInstanceOf[js.Any])
     

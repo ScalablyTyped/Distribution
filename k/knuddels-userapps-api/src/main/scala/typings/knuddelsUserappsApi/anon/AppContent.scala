@@ -18,7 +18,8 @@ object AppContent {
     __obj.asInstanceOf[AppContent]
   }
   
-  extension [Self <: AppContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppContent] (val x: Self) extends AnyVal {
     
     inline def setAppContent(value: typings.knuddelsUserappsApi.mod.global.AppContent): Self = StObject.set(x, "appContent", value.asInstanceOf[js.Any])
     

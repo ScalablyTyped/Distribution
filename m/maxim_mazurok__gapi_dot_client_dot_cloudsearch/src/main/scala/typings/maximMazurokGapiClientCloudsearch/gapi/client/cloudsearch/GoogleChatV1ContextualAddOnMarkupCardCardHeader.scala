@@ -28,7 +28,8 @@ object GoogleChatV1ContextualAddOnMarkupCardCardHeader {
     __obj.asInstanceOf[GoogleChatV1ContextualAddOnMarkupCardCardHeader]
   }
   
-  extension [Self <: GoogleChatV1ContextualAddOnMarkupCardCardHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleChatV1ContextualAddOnMarkupCardCardHeader] (val x: Self) extends AnyVal {
     
     inline def setImageStyle(value: String): Self = StObject.set(x, "imageStyle", value.asInstanceOf[js.Any])
     

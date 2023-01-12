@@ -306,7 +306,8 @@ object typesQueriesMod {
       __obj.asInstanceOf[ByRoleOptions]
     }
     
-    extension [Self <: ByRoleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByRoleOptions] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       

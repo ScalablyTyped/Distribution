@@ -17,7 +17,8 @@ object ChatQueryOptions {
     __obj.asInstanceOf[ChatQueryOptions]
   }
   
-  extension [Self <: ChatQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
   }

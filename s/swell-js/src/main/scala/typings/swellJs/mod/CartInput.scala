@@ -22,7 +22,8 @@ object CartInput {
     __obj.asInstanceOf[CartInput]
   }
   
-  extension [Self <: CartInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CartInput] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: js.Array[CartOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

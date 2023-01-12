@@ -19,7 +19,8 @@ object TSInterfaceBody {
   @js.native
   def apply(body: js.Array[TSTypeElement]): TSInterfaceBody = js.native
   
-  extension [Self <: TSInterfaceBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSInterfaceBody] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Array[TSTypeElement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

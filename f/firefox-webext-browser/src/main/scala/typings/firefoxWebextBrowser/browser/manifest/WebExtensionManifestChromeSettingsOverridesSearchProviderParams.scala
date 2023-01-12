@@ -28,7 +28,8 @@ object WebExtensionManifestChromeSettingsOverridesSearchProviderParams {
     __obj.asInstanceOf[WebExtensionManifestChromeSettingsOverridesSearchProviderParams]
   }
   
-  extension [Self <: WebExtensionManifestChromeSettingsOverridesSearchProviderParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestChromeSettingsOverridesSearchProviderParams] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

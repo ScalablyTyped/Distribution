@@ -25,7 +25,8 @@ object WatcherOptions {
     __obj.asInstanceOf[WatcherOptions]
   }
   
-  extension [Self <: WatcherOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherOptions] (val x: Self) extends AnyVal {
     
     inline def setBuildDelay(value: Double): Self = StObject.set(x, "buildDelay", value.asInstanceOf[js.Any])
     

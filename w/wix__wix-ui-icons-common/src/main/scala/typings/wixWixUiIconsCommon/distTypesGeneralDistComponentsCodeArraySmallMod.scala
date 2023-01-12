@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsCodeArraySmallMod extends Shortcut {
       __obj.asInstanceOf[CodeArraySmallProps]
     }
     
-    extension [Self <: CodeArraySmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeArraySmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object BucketServerSideEncryption {
     __obj.asInstanceOf[BucketServerSideEncryption]
   }
   
-  extension [Self <: BucketServerSideEncryption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketServerSideEncryption] (val x: Self) extends AnyVal {
     
     inline def setKmsMasterKeyId(value: string): Self = StObject.set(x, "kmsMasterKeyId", value.asInstanceOf[js.Any])
     

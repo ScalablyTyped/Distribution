@@ -97,7 +97,8 @@ object BasePage {
     __obj.asInstanceOf[BasePage[T]]
   }
   
-  extension [Self <: BasePage[?], T /* <: Context */](x: Self & BasePage[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePage[?], T /* <: Context */] (val x: Self & BasePage[T]) extends AnyVal {
     
     inline def setAuthor(value: Double): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

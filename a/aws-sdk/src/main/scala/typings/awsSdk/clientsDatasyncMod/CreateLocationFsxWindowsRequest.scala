@@ -53,7 +53,8 @@ object CreateLocationFsxWindowsRequest {
     __obj.asInstanceOf[CreateLocationFsxWindowsRequest]
   }
   
-  extension [Self <: CreateLocationFsxWindowsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLocationFsxWindowsRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: SmbDomain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     

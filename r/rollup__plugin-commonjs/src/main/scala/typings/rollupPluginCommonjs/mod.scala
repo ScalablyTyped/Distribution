@@ -268,7 +268,8 @@ object mod {
       __obj.asInstanceOf[RollupCommonJSOptions]
     }
     
-    extension [Self <: RollupCommonJSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RollupCommonJSOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultIsModuleExports(
         value: DefaultIsModuleExportsOption | (js.Function1[/* id */ String, DefaultIsModuleExportsOption])

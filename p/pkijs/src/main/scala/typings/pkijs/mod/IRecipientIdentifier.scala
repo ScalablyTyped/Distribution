@@ -18,7 +18,8 @@ object IRecipientIdentifier {
     __obj.asInstanceOf[IRecipientIdentifier]
   }
   
-  extension [Self <: IRecipientIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRecipientIdentifier] (val x: Self) extends AnyVal {
     
     inline def setValue(value: IssuerAndSerialNumber | OctetString): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

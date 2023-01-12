@@ -15,7 +15,8 @@ object SvgProps {
     __obj.asInstanceOf[SvgProps]
   }
   
-  extension [Self <: SvgProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SvgProps] (val x: Self) extends AnyVal {
     
     inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     

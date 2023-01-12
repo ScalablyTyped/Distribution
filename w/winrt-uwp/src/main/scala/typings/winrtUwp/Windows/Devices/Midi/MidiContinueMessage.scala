@@ -25,7 +25,8 @@ object MidiContinueMessage {
     __obj.asInstanceOf[MidiContinueMessage]
   }
   
-  extension [Self <: MidiContinueMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MidiContinueMessage] (val x: Self) extends AnyVal {
     
     inline def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     

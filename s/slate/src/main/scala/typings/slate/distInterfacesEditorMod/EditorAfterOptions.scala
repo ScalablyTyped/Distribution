@@ -20,7 +20,8 @@ object EditorAfterOptions {
     __obj.asInstanceOf[EditorAfterOptions]
   }
   
-  extension [Self <: EditorAfterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorAfterOptions] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

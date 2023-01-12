@@ -67,7 +67,8 @@ object AnimationSpecpieonProgres {
     __obj.asInstanceOf[AnimationSpecpieonProgres]
   }
   
-  extension [Self <: AnimationSpecpieonProgres](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationSpecpieonProgres] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Scriptable[Double, ScriptableContext[pie]]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

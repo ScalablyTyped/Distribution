@@ -53,7 +53,8 @@ object libGridFieldPermissionValidatorMod {
       __obj.asInstanceOf[FieldPermissionValidator]
     }
     
-    extension [Self <: FieldPermissionValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldPermissionValidator] (val x: Self) extends AnyVal {
       
       inline def setHandlerFunc_(value: Any): Self = StObject.set(x, "handlerFunc_", value.asInstanceOf[js.Any])
       

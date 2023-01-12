@@ -28,7 +28,8 @@ object ListRoutingProfilesRequest {
     __obj.asInstanceOf[ListRoutingProfilesRequest]
   }
   
-  extension [Self <: ListRoutingProfilesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRoutingProfilesRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

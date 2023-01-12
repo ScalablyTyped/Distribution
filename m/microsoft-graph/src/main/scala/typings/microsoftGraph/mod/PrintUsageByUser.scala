@@ -18,7 +18,8 @@ object PrintUsageByUser {
     __obj.asInstanceOf[PrintUsageByUser]
   }
   
-  extension [Self <: PrintUsageByUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintUsageByUser] (val x: Self) extends AnyVal {
     
     inline def setUserPrincipalName(value: String): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
     

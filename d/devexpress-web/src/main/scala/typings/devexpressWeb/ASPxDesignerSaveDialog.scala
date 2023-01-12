@@ -36,7 +36,8 @@ object ASPxDesignerSaveDialog {
     __obj.asInstanceOf[ASPxDesignerSaveDialog]
   }
   
-  extension [Self <: ASPxDesignerSaveDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxDesignerSaveDialog] (val x: Self) extends AnyVal {
     
     inline def setNotSave(value: () => Unit): Self = StObject.set(x, "notSave", js.Any.fromFunction0(value))
     

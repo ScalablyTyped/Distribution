@@ -23,7 +23,8 @@ object IngestProcessorBase {
     __obj.asInstanceOf[IngestProcessorBase]
   }
   
-  extension [Self <: IngestProcessorBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestProcessorBase] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

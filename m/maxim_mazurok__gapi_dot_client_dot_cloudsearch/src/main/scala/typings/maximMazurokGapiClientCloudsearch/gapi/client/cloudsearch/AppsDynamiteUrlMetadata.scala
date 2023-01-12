@@ -58,7 +58,8 @@ object AppsDynamiteUrlMetadata {
     __obj.asInstanceOf[AppsDynamiteUrlMetadata]
   }
   
-  extension [Self <: AppsDynamiteUrlMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteUrlMetadata] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

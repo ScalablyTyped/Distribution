@@ -15,7 +15,8 @@ object IBulkResult {
     __obj.asInstanceOf[IBulkResult]
   }
   
-  extension [Self <: IBulkResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBulkResult] (val x: Self) extends AnyVal {
     
     inline def setRowsAffected(value: Double): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
   }

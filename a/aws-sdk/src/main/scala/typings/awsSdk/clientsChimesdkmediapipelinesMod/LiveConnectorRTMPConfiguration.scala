@@ -28,7 +28,8 @@ object LiveConnectorRTMPConfiguration {
     __obj.asInstanceOf[LiveConnectorRTMPConfiguration]
   }
   
-  extension [Self <: LiveConnectorRTMPConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveConnectorRTMPConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAudioChannels(value: AudioChannelsOption): Self = StObject.set(x, "AudioChannels", value.asInstanceOf[js.Any])
     

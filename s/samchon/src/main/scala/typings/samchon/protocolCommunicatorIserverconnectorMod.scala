@@ -57,7 +57,8 @@ object protocolCommunicatorIserverconnectorMod {
       __obj.asInstanceOf[IServerConnector]
     }
     
-    extension [Self <: IServerConnector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IServerConnector] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: (String, Double) => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
       

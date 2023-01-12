@@ -23,7 +23,8 @@ object DeleteBillingGroupRequest {
     __obj.asInstanceOf[DeleteBillingGroupRequest]
   }
   
-  extension [Self <: DeleteBillingGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBillingGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setBillingGroupName(value: BillingGroupName): Self = StObject.set(x, "billingGroupName", value.asInstanceOf[js.Any])
     

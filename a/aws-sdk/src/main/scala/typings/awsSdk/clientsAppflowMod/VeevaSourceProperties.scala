@@ -39,7 +39,8 @@ object VeevaSourceProperties {
     __obj.asInstanceOf[VeevaSourceProperties]
   }
   
-  extension [Self <: VeevaSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VeevaSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setDocumentType(value: DocumentType): Self = StObject.set(x, "documentType", value.asInstanceOf[js.Any])
     

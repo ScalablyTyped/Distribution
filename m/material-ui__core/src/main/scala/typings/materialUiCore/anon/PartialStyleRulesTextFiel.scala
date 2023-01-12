@@ -21,7 +21,8 @@ object PartialStyleRulesTextFiel {
     __obj.asInstanceOf[PartialStyleRulesTextFiel]
   }
   
-  extension [Self <: PartialStyleRulesTextFiel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesTextFiel] (val x: Self) extends AnyVal {
     
     inline def setRoot(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

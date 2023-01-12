@@ -30,7 +30,8 @@ object CallEndedEventMessageDetail {
     __obj.asInstanceOf[CallEndedEventMessageDetail]
   }
   
-  extension [Self <: CallEndedEventMessageDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallEndedEventMessageDetail] (val x: Self) extends AnyVal {
     
     inline def setCallDuration(value: NullableOption[String]): Self = StObject.set(x, "callDuration", value.asInstanceOf[js.Any])
     

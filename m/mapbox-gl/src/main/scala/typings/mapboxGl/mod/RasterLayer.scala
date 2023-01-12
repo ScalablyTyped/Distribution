@@ -27,7 +27,8 @@ object RasterLayer {
     __obj.asInstanceOf[RasterLayer]
   }
   
-  extension [Self <: RasterLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterLayer] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: RasterLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

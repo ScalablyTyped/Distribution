@@ -96,7 +96,8 @@ object mod {
       __obj.asInstanceOf[ArrayPromptOptions]
     }
     
-    extension [Self <: ArrayPromptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayPromptOptions] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -212,7 +213,8 @@ object mod {
       __obj.asInstanceOf[BasePromptOptions]
     }
     
-    extension [Self <: BasePromptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePromptOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: /* value */ String => String | js.Promise[String]): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
@@ -289,7 +291,8 @@ object mod {
       __obj.asInstanceOf[BooleanPromptOptions]
     }
     
-    extension [Self <: BooleanPromptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BooleanPromptOptions] (val x: Self) extends AnyVal {
       
       inline def setInitial(value: Boolean): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
@@ -318,7 +321,8 @@ object mod {
       __obj.asInstanceOf[Choice]
     }
     
-    extension [Self <: Choice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Choice] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean | String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -418,7 +422,8 @@ object mod {
       __obj.asInstanceOf[NumberPromptOptions]
     }
     
-    extension [Self <: NumberPromptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberPromptOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -544,7 +549,8 @@ object mod {
       __obj.asInstanceOf[SnippetPromptOptions]
     }
     
-    extension [Self <: SnippetPromptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnippetPromptOptions] (val x: Self) extends AnyVal {
       
       inline def setNewline(value: String): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
       
@@ -580,7 +586,8 @@ object mod {
       __obj.asInstanceOf[SortPromptOptions]
     }
     
-    extension [Self <: SortPromptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortPromptOptions] (val x: Self) extends AnyVal {
       
       inline def setDrag(value: Boolean): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
@@ -623,7 +630,8 @@ object mod {
       __obj.asInstanceOf[StringPromptOptions]
     }
     
-    extension [Self <: StringPromptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringPromptOptions] (val x: Self) extends AnyVal {
       
       inline def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       

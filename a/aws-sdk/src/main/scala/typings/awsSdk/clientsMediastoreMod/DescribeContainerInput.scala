@@ -18,7 +18,8 @@ object DescribeContainerInput {
     __obj.asInstanceOf[DescribeContainerInput]
   }
   
-  extension [Self <: DescribeContainerInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeContainerInput] (val x: Self) extends AnyVal {
     
     inline def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
     

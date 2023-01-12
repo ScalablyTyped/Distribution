@@ -36,7 +36,8 @@ object distSrcCommandsSwarmDisconnectMod extends Shortcut {
       __obj.asInstanceOf[Argv]
     }
     
-    extension [Self <: Argv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Argv] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Multiaddr_): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

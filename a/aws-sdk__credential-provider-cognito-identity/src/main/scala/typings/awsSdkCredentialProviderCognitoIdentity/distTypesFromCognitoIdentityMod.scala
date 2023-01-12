@@ -34,7 +34,8 @@ object distTypesFromCognitoIdentityMod {
       __obj.asInstanceOf[CognitoIdentityCredentials]
     }
     
-    extension [Self <: CognitoIdentityCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CognitoIdentityCredentials] (val x: Self) extends AnyVal {
       
       inline def setIdentityId(value: String): Self = StObject.set(x, "identityId", value.asInstanceOf[js.Any])
     }
@@ -57,7 +58,8 @@ object distTypesFromCognitoIdentityMod {
       __obj.asInstanceOf[FromCognitoIdentityParameters]
     }
     
-    extension [Self <: FromCognitoIdentityParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromCognitoIdentityParameters] (val x: Self) extends AnyVal {
       
       inline def setIdentityId(value: String): Self = StObject.set(x, "identityId", value.asInstanceOf[js.Any])
     }

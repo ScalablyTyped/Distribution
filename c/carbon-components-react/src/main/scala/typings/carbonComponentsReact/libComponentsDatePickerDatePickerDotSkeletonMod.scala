@@ -27,7 +27,8 @@ object libComponentsDatePickerDatePickerDotSkeletonMod extends Shortcut {
       __obj.asInstanceOf[DatePickerSkeletonProps]
     }
     
-    extension [Self <: DatePickerSkeletonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerSkeletonProps] (val x: Self) extends AnyVal {
       
       inline def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       

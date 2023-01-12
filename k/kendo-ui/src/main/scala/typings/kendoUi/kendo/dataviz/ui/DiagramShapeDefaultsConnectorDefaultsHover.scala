@@ -17,7 +17,8 @@ object DiagramShapeDefaultsConnectorDefaultsHover {
     __obj.asInstanceOf[DiagramShapeDefaultsConnectorDefaultsHover]
   }
   
-  extension [Self <: DiagramShapeDefaultsConnectorDefaultsHover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramShapeDefaultsConnectorDefaultsHover] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String | DiagramShapeDefaultsConnectorDefaultsHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

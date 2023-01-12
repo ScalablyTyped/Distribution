@@ -15,7 +15,8 @@ object Maneuver {
     __obj.asInstanceOf[Maneuver]
   }
   
-  extension [Self <: Maneuver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Maneuver] (val x: Self) extends AnyVal {
     
     inline def setManeuver(value: js.Array[Id]): Self = StObject.set(x, "maneuver", value.asInstanceOf[js.Any])
     

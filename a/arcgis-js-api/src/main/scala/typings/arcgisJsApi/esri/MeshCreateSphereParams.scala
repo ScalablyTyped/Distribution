@@ -61,7 +61,8 @@ object MeshCreateSphereParams {
     __obj.asInstanceOf[MeshCreateSphereParams]
   }
   
-  extension [Self <: MeshCreateSphereParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshCreateSphereParams] (val x: Self) extends AnyVal {
     
     inline def setDensificationFactor(value: Double): Self = StObject.set(x, "densificationFactor", value.asInstanceOf[js.Any])
     

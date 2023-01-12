@@ -39,7 +39,8 @@ object distSrcModulesUiLiveIndicatorTypesMod {
       __obj.asInstanceOf[ILiveIndicator]
     }
     
-    extension [Self <: ILiveIndicator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILiveIndicator] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -66,7 +67,8 @@ object distSrcModulesUiLiveIndicatorTypesMod {
       __obj.asInstanceOf[ILiveIndicatorViewCallbacks]
     }
     
-    extension [Self <: ILiveIndicatorViewCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILiveIndicatorViewCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object distSrcModulesUiLiveIndicatorTypesMod {
       __obj.asInstanceOf[ILiveIndicatorViewConfig]
     }
     
-    extension [Self <: ILiveIndicatorViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILiveIndicatorViewConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: ILiveIndicatorViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -127,7 +130,8 @@ object distSrcModulesUiLiveIndicatorTypesMod {
       __obj.asInstanceOf[ILiveIndicatorViewStyles]
     }
     
-    extension [Self <: ILiveIndicatorViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILiveIndicatorViewStyles] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

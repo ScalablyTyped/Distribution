@@ -27,7 +27,8 @@ object QueryDslCombinedFieldsQuery {
     __obj.asInstanceOf[QueryDslCombinedFieldsQuery]
   }
   
-  extension [Self <: QueryDslCombinedFieldsQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslCombinedFieldsQuery] (val x: Self) extends AnyVal {
     
     inline def setAuto_generate_synonyms_phrase_query(value: Boolean): Self = StObject.set(x, "auto_generate_synonyms_phrase_query", value.asInstanceOf[js.Any])
     

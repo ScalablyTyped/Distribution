@@ -31,7 +31,8 @@ object PresetCriteriaConditionalFormatData {
     __obj.asInstanceOf[PresetCriteriaConditionalFormatData]
   }
   
-  extension [Self <: PresetCriteriaConditionalFormatData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PresetCriteriaConditionalFormatData] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: ConditionalRangeFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

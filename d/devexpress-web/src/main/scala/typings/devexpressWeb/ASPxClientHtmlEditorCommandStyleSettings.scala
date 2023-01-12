@@ -95,7 +95,8 @@ object ASPxClientHtmlEditorCommandStyleSettings {
     __obj.asInstanceOf[ASPxClientHtmlEditorCommandStyleSettings]
   }
   
-  extension [Self <: ASPxClientHtmlEditorCommandStyleSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorCommandStyleSettings] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

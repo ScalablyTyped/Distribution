@@ -18,7 +18,8 @@ object libInvokeMod {
       __obj.asInstanceOf[InvokedPromiseOptions]
     }
     
-    extension [Self <: InvokedPromiseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvokedPromiseOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -37,7 +38,8 @@ object libInvokeMod {
       __obj.asInstanceOf[PromiseMachineSchema]
     }
     
-    extension [Self <: PromiseMachineSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseMachineSchema] (val x: Self) extends AnyVal {
       
       inline def setStates(value: Pending): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     }

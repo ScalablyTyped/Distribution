@@ -18,7 +18,8 @@ object MultiCompilerOptions {
     __obj.asInstanceOf[MultiCompilerOptions]
   }
   
-  extension [Self <: MultiCompilerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiCompilerOptions] (val x: Self) extends AnyVal {
     
     inline def setParallelism(value: Double): Self = StObject.set(x, "parallelism", value.asInstanceOf[js.Any])
     

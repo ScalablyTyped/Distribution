@@ -46,7 +46,8 @@ object XPanels {
     __obj.asInstanceOf[XPanels]
   }
   
-  extension [Self <: XPanels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPanels] (val x: Self) extends AnyVal {
     
     inline def setDeckId(value: String): Self = StObject.set(x, "DeckId", value.asInstanceOf[js.Any])
     

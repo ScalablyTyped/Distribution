@@ -31,7 +31,8 @@ object CookiesRemovedDetails {
     __obj.asInstanceOf[CookiesRemovedDetails]
   }
   
-  extension [Self <: CookiesRemovedDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CookiesRemovedDetails] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

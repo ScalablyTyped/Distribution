@@ -42,7 +42,8 @@ object TdHTMLAttributes {
     __obj.asInstanceOf[TdHTMLAttributes[T]]
   }
   
-  extension [Self <: TdHTMLAttributes[?], T](x: Self & TdHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TdHTMLAttributes[?], T] (val x: Self & TdHTMLAttributes[T]) extends AnyVal {
     
     inline def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
     

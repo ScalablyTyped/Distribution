@@ -31,7 +31,8 @@ object PatchInstanceFilter {
     __obj.asInstanceOf[PatchInstanceFilter]
   }
   
-  extension [Self <: PatchInstanceFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchInstanceFilter] (val x: Self) extends AnyVal {
     
     inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

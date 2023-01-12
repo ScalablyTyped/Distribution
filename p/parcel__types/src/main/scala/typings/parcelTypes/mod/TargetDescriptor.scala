@@ -20,7 +20,8 @@ object TargetDescriptor {
     __obj.asInstanceOf[TargetDescriptor]
   }
   
-  extension [Self <: TargetDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDistDir(value: FilePath): Self = StObject.set(x, "distDir", value.asInstanceOf[js.Any])
     

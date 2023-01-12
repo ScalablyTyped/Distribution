@@ -45,7 +45,8 @@ object srcReaderMod {
       __obj.asInstanceOf[MetadataConstructorOptions]
     }
     
-    extension [Self <: MetadataConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthnRequestBinding(value: String): Self = StObject.set(x, "authnRequestBinding", value.asInstanceOf[js.Any])
       

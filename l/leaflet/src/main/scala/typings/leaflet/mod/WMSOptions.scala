@@ -29,7 +29,8 @@ object WMSOptions {
     __obj.asInstanceOf[WMSOptions]
   }
   
-  extension [Self <: WMSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WMSOptions] (val x: Self) extends AnyVal {
     
     inline def setCrs(value: CRS): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
     

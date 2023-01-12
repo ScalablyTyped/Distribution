@@ -185,7 +185,8 @@ object Inreplytoid {
     __obj.asInstanceOf[Inreplytoid]
   }
   
-  extension [Self <: Inreplytoid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inreplytoid] (val x: Self) extends AnyVal {
     
     inline def setAuthor_association(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['author-association'] */ js.Any

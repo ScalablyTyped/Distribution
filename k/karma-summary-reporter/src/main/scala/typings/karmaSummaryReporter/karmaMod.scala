@@ -30,7 +30,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setSummaryReporter(value: SummaryReporterConfig): Self = StObject.set(x, "summaryReporter", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object karmaMod {
       __obj.asInstanceOf[SummaryReporterConfig]
     }
     
-    extension [Self <: SummaryReporterConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummaryReporterConfig] (val x: Self) extends AnyVal {
       
       inline def setBrowserList(value: always | never | ifneeded): Self = StObject.set(x, "browserList", value.asInstanceOf[js.Any])
       

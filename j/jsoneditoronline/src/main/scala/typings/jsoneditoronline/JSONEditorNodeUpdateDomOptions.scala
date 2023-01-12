@@ -17,7 +17,8 @@ object JSONEditorNodeUpdateDomOptions {
     __obj.asInstanceOf[JSONEditorNodeUpdateDomOptions]
   }
   
-  extension [Self <: JSONEditorNodeUpdateDomOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONEditorNodeUpdateDomOptions] (val x: Self) extends AnyVal {
     
     inline def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
     

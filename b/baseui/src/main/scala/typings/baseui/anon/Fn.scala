@@ -16,7 +16,8 @@ object Fn {
     __obj.asInstanceOf[Fn]
   }
   
-  extension [Self <: Fn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fn] (val x: Self) extends AnyVal {
     
     inline def setFn(value: PopperDataObject => Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
   }

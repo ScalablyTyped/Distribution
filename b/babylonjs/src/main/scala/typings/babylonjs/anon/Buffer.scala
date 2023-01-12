@@ -45,7 +45,8 @@ object Buffer {
     __obj.asInstanceOf[Buffer]
   }
   
-  extension [Self <: Buffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
     
     inline def setAlphaFilter(value: Double): Self = StObject.set(x, "alphaFilter", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object PlusPushClientInfo {
     __obj.asInstanceOf[PlusPushClientInfo]
   }
   
-  extension [Self <: PlusPushClientInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusPushClientInfo] (val x: Self) extends AnyVal {
     
     inline def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     

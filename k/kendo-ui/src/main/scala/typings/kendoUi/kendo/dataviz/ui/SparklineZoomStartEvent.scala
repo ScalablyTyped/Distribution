@@ -19,7 +19,8 @@ object SparklineZoomStartEvent {
     __obj.asInstanceOf[SparklineZoomStartEvent]
   }
   
-  extension [Self <: SparklineZoomStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklineZoomStartEvent] (val x: Self) extends AnyVal {
     
     inline def setAxisRanges(value: Any): Self = StObject.set(x, "axisRanges", value.asInstanceOf[js.Any])
     

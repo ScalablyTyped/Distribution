@@ -30,7 +30,8 @@ object EndPositionPrefix {
     __obj.asInstanceOf[EndPositionPrefix[P]]
   }
   
-  extension [Self <: EndPositionPrefix[?], P /* <: PartsMixins[Any] */](x: Self & EndPositionPrefix[P]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndPositionPrefix[?], P /* <: PartsMixins[Any] */] (val x: Self & EndPositionPrefix[P]) extends AnyVal {
     
     inline def setEndPositionPrefix(value: String): Self = StObject.set(x, "endPositionPrefix", value.asInstanceOf[js.Any])
     

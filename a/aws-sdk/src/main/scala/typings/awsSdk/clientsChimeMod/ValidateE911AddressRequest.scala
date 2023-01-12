@@ -56,7 +56,8 @@ object ValidateE911AddressRequest {
     __obj.asInstanceOf[ValidateE911AddressRequest]
   }
   
-  extension [Self <: ValidateE911AddressRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateE911AddressRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: NonEmptyString): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

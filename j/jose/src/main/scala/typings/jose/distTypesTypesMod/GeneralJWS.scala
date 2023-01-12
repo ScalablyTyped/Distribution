@@ -18,7 +18,8 @@ object GeneralJWS {
     __obj.asInstanceOf[GeneralJWS]
   }
   
-  extension [Self <: GeneralJWS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneralJWS] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

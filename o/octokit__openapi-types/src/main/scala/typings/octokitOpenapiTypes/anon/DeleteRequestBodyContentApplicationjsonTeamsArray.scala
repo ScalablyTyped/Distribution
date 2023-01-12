@@ -58,7 +58,8 @@ object DeleteRequestBodyContentApplicationjsonTeamsArray {
     __obj.asInstanceOf[DeleteRequestBodyContentApplicationjsonTeamsArray]
   }
   
-  extension [Self <: DeleteRequestBodyContentApplicationjsonTeamsArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRequestBodyContentApplicationjsonTeamsArray] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: RequestBodyContentApplicationjsonTeamsArray): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     

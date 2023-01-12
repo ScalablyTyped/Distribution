@@ -23,7 +23,8 @@ object EntityDetectorConfiguration {
     __obj.asInstanceOf[EntityDetectorConfiguration]
   }
   
-  extension [Self <: EntityDetectorConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityDetectorConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllowedStatistics(value: AllowedStatisticList): Self = StObject.set(x, "AllowedStatistics", value.asInstanceOf[js.Any])
     

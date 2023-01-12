@@ -28,7 +28,8 @@ object PhysicsHitData {
     __obj.asInstanceOf[PhysicsHitData]
   }
   
-  extension [Self <: PhysicsHitData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicsHitData] (val x: Self) extends AnyVal {
     
     inline def setContactPoint(value: Vector3): Self = StObject.set(x, "contactPoint", value.asInstanceOf[js.Any])
     

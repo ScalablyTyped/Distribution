@@ -109,7 +109,8 @@ object OmitRequestOptionskeyofUR {
     __obj.asInstanceOf[OmitRequestOptionskeyofUR]
   }
   
-  extension [Self <: OmitRequestOptionskeyofUR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitRequestOptionskeyofUR] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: Agent | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

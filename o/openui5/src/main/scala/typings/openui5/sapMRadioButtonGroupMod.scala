@@ -739,7 +739,8 @@ object sapMRadioButtonGroupMod {
       __obj.asInstanceOf[RadioButtonGroupSettings]
     }
     
-    extension [Self <: RadioButtonGroupSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonGroupSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaDescribedBy(value: js.Array[typings.openui5.sapUiCoreControlMod.default | String]): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       

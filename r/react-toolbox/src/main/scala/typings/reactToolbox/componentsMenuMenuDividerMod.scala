@@ -47,7 +47,8 @@ object componentsMenuMenuDividerMod {
       __obj.asInstanceOf[MenuDividerProps]
     }
     
-    extension [Self <: MenuDividerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuDividerProps] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: MenuDividerTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object componentsMenuMenuDividerMod {
       __obj.asInstanceOf[MenuDividerTheme]
     }
     
-    extension [Self <: MenuDividerTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuDividerTheme] (val x: Self) extends AnyVal {
       
       inline def setMenuDivider(value: String): Self = StObject.set(x, "menuDivider", value.asInstanceOf[js.Any])
       

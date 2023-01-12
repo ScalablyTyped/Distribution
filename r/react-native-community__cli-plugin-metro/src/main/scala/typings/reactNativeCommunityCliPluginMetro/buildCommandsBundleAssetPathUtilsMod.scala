@@ -53,7 +53,8 @@ object buildCommandsBundleAssetPathUtilsMod {
       __obj.asInstanceOf[PackagerAsset]
     }
     
-    extension [Self <: PackagerAsset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackagerAsset] (val x: Self) extends AnyVal {
       
       inline def setHttpServerLocation(value: String): Self = StObject.set(x, "httpServerLocation", value.asInstanceOf[js.Any])
       

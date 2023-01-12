@@ -19,7 +19,8 @@ object SecurityDisableUserRequest {
     __obj.asInstanceOf[SecurityDisableUserRequest]
   }
   
-  extension [Self <: SecurityDisableUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityDisableUserRequest] (val x: Self) extends AnyVal {
     
     inline def setRefresh(value: Refresh): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     

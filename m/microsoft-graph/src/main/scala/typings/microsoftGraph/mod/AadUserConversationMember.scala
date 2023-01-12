@@ -26,7 +26,8 @@ object AadUserConversationMember {
     __obj.asInstanceOf[AadUserConversationMember]
   }
   
-  extension [Self <: AadUserConversationMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AadUserConversationMember] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: NullableOption[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

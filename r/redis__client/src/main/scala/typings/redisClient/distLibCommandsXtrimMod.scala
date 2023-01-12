@@ -38,7 +38,8 @@ object distLibCommandsXtrimMod {
       __obj.asInstanceOf[XTrimOptions]
     }
     
-    extension [Self <: XTrimOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XTrimOptions] (val x: Self) extends AnyVal {
       
       inline def setLIMIT(value: Double): Self = StObject.set(x, "LIMIT", value.asInstanceOf[js.Any])
       

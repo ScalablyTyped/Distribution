@@ -29,7 +29,8 @@ object UIkitNavOptions {
     __obj.asInstanceOf[UIkitNavOptions]
   }
   
-  extension [Self <: UIkitNavOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitNavOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

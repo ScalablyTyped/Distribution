@@ -23,7 +23,8 @@ object ASPxClientRichEditPopupMenuShowingEventArgs {
     __obj.asInstanceOf[ASPxClientRichEditPopupMenuShowingEventArgs]
   }
   
-  extension [Self <: ASPxClientRichEditPopupMenuShowingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRichEditPopupMenuShowingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setMenuItems(value: ASPxClientRichEditPopupMenuItemCollection): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
   }

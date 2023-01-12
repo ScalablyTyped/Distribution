@@ -28,7 +28,8 @@ object FixedResponseActionConfig {
     __obj.asInstanceOf[FixedResponseActionConfig]
   }
   
-  extension [Self <: FixedResponseActionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixedResponseActionConfig] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: FixedResponseActionContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     

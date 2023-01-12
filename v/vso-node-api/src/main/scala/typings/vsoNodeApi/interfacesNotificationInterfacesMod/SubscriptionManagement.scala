@@ -17,7 +17,8 @@ object SubscriptionManagement {
     __obj.asInstanceOf[SubscriptionManagement]
   }
   
-  extension [Self <: SubscriptionManagement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionManagement] (val x: Self) extends AnyVal {
     
     inline def setServiceInstanceType(value: String): Self = StObject.set(x, "serviceInstanceType", value.asInstanceOf[js.Any])
     

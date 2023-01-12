@@ -19,7 +19,8 @@ object MessagePassThroughLayout {
     __obj.asInstanceOf[MessagePassThroughLayout]
   }
   
-  extension [Self <: MessagePassThroughLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagePassThroughLayout] (val x: Self) extends AnyVal {
     
     inline def setType(value: messagePassThrough): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

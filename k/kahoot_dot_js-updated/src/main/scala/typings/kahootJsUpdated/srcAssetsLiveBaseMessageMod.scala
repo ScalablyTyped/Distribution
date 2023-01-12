@@ -34,7 +34,8 @@ object srcAssetsLiveBaseMessageMod {
       __obj.asInstanceOf[LiveBaseMessage]
     }
     
-    extension [Self <: LiveBaseMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiveBaseMessage] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       

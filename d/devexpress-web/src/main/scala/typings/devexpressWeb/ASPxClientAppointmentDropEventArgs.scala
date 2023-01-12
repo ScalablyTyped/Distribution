@@ -37,7 +37,8 @@ object ASPxClientAppointmentDropEventArgs {
     __obj.asInstanceOf[ASPxClientAppointmentDropEventArgs]
   }
   
-  extension [Self <: ASPxClientAppointmentDropEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientAppointmentDropEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDragInformation(value: js.Array[ASPxClientAppointmentDragInfo]): Self = StObject.set(x, "dragInformation", value.asInstanceOf[js.Any])
     

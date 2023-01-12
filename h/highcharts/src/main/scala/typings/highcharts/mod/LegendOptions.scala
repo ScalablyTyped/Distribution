@@ -322,7 +322,8 @@ object LegendOptions {
     __obj.asInstanceOf[LegendOptions]
   }
   
-  extension [Self <: LegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: LegendAccessibilityOptions): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

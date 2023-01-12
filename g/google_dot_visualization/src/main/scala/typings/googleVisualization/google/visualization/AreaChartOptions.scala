@@ -85,7 +85,8 @@ object AreaChartOptions {
     __obj.asInstanceOf[AreaChartOptions]
   }
   
-  extension [Self <: AreaChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaChartOptions] (val x: Self) extends AnyVal {
     
     inline def setAggregationTarget(value: String): Self = StObject.set(x, "aggregationTarget", value.asInstanceOf[js.Any])
     

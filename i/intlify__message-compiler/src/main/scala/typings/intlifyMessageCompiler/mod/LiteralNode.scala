@@ -23,7 +23,8 @@ object LiteralNode {
     __obj.asInstanceOf[LiteralNode]
   }
   
-  extension [Self <: LiteralNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiteralNode] (val x: Self) extends AnyVal {
     
     inline def setType(value: `9`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

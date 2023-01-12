@@ -33,7 +33,8 @@ object SubscriptionEvaluationSettings {
     __obj.asInstanceOf[SubscriptionEvaluationSettings]
   }
   
-  extension [Self <: SubscriptionEvaluationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionEvaluationSettings] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

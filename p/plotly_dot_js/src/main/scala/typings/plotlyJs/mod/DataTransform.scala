@@ -42,7 +42,8 @@ object DataTransform {
     __obj.asInstanceOf[DataTransform]
   }
   
-  extension [Self <: DataTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTransform] (val x: Self) extends AnyVal {
     
     inline def setAggregations(value: js.Array[TransformAggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     

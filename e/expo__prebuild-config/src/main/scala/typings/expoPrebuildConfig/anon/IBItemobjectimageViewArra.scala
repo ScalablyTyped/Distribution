@@ -23,7 +23,8 @@ object IBItemobjectimageViewArra {
     __obj.asInstanceOf[IBItemobjectimageViewArra]
   }
   
-  extension [Self <: IBItemobjectimageViewArra](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBItemobjectimageViewArra] (val x: Self) extends AnyVal {
     
     inline def set$(value: js.Object): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     

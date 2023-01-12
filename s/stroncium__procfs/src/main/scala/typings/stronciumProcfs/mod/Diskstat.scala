@@ -53,7 +53,8 @@ object Diskstat {
     __obj.asInstanceOf[Diskstat]
   }
   
-  extension [Self <: Diskstat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Diskstat] (val x: Self) extends AnyVal {
     
     inline def setCurrentIoCount(value: Double): Self = StObject.set(x, "currentIoCount", value.asInstanceOf[js.Any])
     

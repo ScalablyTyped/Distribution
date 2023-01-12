@@ -22,7 +22,8 @@ object ImportResourcesRequest {
     __obj.asInstanceOf[ImportResourcesRequest]
   }
   
-  extension [Self <: ImportResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setContentStructure(value: String): Self = StObject.set(x, "contentStructure", value.asInstanceOf[js.Any])
     

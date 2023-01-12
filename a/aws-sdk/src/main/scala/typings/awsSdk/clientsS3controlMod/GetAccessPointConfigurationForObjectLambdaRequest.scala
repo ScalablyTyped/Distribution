@@ -23,7 +23,8 @@ object GetAccessPointConfigurationForObjectLambdaRequest {
     __obj.asInstanceOf[GetAccessPointConfigurationForObjectLambdaRequest]
   }
   
-  extension [Self <: GetAccessPointConfigurationForObjectLambdaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccessPointConfigurationForObjectLambdaRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

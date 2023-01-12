@@ -124,7 +124,8 @@ object mod {
       __obj.asInstanceOf[AddOptions]
     }
     
-    extension [Self <: AddOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddOptions] (val x: Self) extends AnyVal {
       
       inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object mod {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -205,7 +207,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAuth_pass(value: String): Self = StObject.set(x, "auth_pass", value.asInstanceOf[js.Any])
       
@@ -250,7 +253,8 @@ object mod {
       __obj.asInstanceOf[RouteOptions]
     }
     
-    extension [Self <: RouteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteOptions] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
@@ -292,7 +296,8 @@ object mod {
         __obj.asInstanceOf[Response]
       }
       
-      extension [Self <: Response](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
         
         inline def setExpress_redis_cache_name(value: String): Self = StObject.set(x, "express_redis_cache_name", value.asInstanceOf[js.Any])
         

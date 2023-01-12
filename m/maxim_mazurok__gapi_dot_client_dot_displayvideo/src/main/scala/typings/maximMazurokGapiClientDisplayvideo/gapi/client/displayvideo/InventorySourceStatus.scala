@@ -41,7 +41,8 @@ object InventorySourceStatus {
     __obj.asInstanceOf[InventorySourceStatus]
   }
   
-  extension [Self <: InventorySourceStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventorySourceStatus] (val x: Self) extends AnyVal {
     
     inline def setConfigStatus(value: String): Self = StObject.set(x, "configStatus", value.asInstanceOf[js.Any])
     

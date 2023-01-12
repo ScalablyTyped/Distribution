@@ -40,7 +40,8 @@ object IAbstractValidationRule {
     __obj.asInstanceOf[IAbstractValidationRule[T]]
   }
   
-  extension [Self <: IAbstractValidationRule[?], T](x: Self & IAbstractValidationRule[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAbstractValidationRule[?], T] (val x: Self & IAbstractValidationRule[T]) extends AnyVal {
     
     inline def setChildren(value: StringDictionary[IAbstractValidationRule[Any]]): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
     

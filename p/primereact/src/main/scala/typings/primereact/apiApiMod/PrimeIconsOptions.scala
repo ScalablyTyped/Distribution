@@ -722,7 +722,8 @@ object PrimeIconsOptions {
     __obj.asInstanceOf[PrimeIconsOptions]
   }
   
-  extension [Self <: PrimeIconsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrimeIconsOptions] (val x: Self) extends AnyVal {
     
     inline def setALIGN_CENTER(value: String): Self = StObject.set(x, "ALIGN_CENTER", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object UpdateColumnStatisticsForPartitionResponse {
     __obj.asInstanceOf[UpdateColumnStatisticsForPartitionResponse]
   }
   
-  extension [Self <: UpdateColumnStatisticsForPartitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateColumnStatisticsForPartitionResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: ColumnStatisticsErrors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object ASPxClientHtmlEditorTablePropertiesCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorTablePropertiesCommandArguments]
   }
   
-  extension [Self <: ASPxClientHtmlEditorTablePropertiesCommandArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorTablePropertiesCommandArguments] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

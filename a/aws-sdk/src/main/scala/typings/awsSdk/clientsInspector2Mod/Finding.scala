@@ -110,7 +110,8 @@ object Finding {
     __obj.asInstanceOf[Finding]
   }
   
-  extension [Self <: Finding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Finding] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AccountId): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
     

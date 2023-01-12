@@ -25,7 +25,8 @@ object KikMessage {
     __obj.asInstanceOf[KikMessage]
   }
   
-  extension [Self <: KikMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KikMessage] (val x: Self) extends AnyVal {
     
     inline def setBig(value: Boolean): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
     

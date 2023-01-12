@@ -61,7 +61,8 @@ object autoStartBaseMod extends Shortcut {
       __obj.asInstanceOf[AutoStart]
     }
     
-    extension [Self <: AutoStart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoStart] (val x: Self) extends AnyVal {
       
       inline def setCursorElement(value: Element): Self = StObject.set(x, "cursorElement", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object autoStartBaseMod extends Shortcut {
       __obj.asInstanceOf[CheckSignalArg]
     }
     
-    extension [Self <: CheckSignalArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckSignalArg] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ActionProps[ActionName]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object autoStartBaseMod extends Shortcut {
         __obj.asInstanceOf[InteractStatic]
       }
       
-      extension [Self <: InteractStatic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InteractStatic] (val x: Self) extends AnyVal {
         
         inline def setMaxInteractions(value: Any => Any): Self = StObject.set(x, "maxInteractions", js.Any.fromFunction1(value))
       }
@@ -154,7 +157,8 @@ object autoStartBaseMod extends Shortcut {
         __obj.asInstanceOf[BaseDefaults]
       }
       
-      extension [Self <: BaseDefaults](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseDefaults] (val x: Self) extends AnyVal {
         
         inline def setActionChecker(value: Any): Self = StObject.set(x, "actionChecker", value.asInstanceOf[js.Any])
         
@@ -193,7 +197,8 @@ object autoStartBaseMod extends Shortcut {
         __obj.asInstanceOf[PerActionDefaults]
       }
       
-      extension [Self <: PerActionDefaults](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PerActionDefaults] (val x: Self) extends AnyVal {
         
         inline def setAllowFrom(value: String | Element): Self = StObject.set(x, "allowFrom", value.asInstanceOf[js.Any])
         
@@ -242,7 +247,8 @@ object autoStartBaseMod extends Shortcut {
         __obj.asInstanceOf[typings.interactjsTypes.autoStartBaseMod.interactjsCoreScopeAugmentingMod.Scope]
       }
       
-      extension [Self <: typings.interactjsTypes.autoStartBaseMod.interactjsCoreScopeAugmentingMod.Scope](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.interactjsTypes.autoStartBaseMod.interactjsCoreScopeAugmentingMod.Scope] (val x: Self) extends AnyVal {
         
         inline def setAutoStart(value: AutoStart): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       }
@@ -279,7 +285,8 @@ object autoStartBaseMod extends Shortcut {
         __obj.asInstanceOf[SignalArgs]
       }
       
-      extension [Self <: SignalArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SignalArgs] (val x: Self) extends AnyVal {
         
         inline def `setAuto-startColoncheck`(value: CheckSignalArg): Self = StObject.set(x, "auto-start:check", value.asInstanceOf[js.Any])
         

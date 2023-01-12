@@ -28,7 +28,8 @@ object SecurityDetails {
     __obj.asInstanceOf[SecurityDetails]
   }
   
-  extension [Self <: SecurityDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityDetails] (val x: Self) extends AnyVal {
     
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     

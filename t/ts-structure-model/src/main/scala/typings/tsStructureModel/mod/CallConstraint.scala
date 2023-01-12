@@ -18,7 +18,8 @@ object CallConstraint {
     __obj.asInstanceOf[CallConstraint]
   }
   
-  extension [Self <: CallConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallConstraint] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Annotation): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

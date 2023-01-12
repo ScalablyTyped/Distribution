@@ -23,7 +23,8 @@ object DescribeTransitGatewayPeeringAttachmentsResult {
     __obj.asInstanceOf[DescribeTransitGatewayPeeringAttachmentsResult]
   }
   
-  extension [Self <: DescribeTransitGatewayPeeringAttachmentsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTransitGatewayPeeringAttachmentsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

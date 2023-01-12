@@ -41,7 +41,8 @@ object Webhook {
     __obj.asInstanceOf[Webhook]
   }
   
-  extension [Self <: Webhook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Webhook] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

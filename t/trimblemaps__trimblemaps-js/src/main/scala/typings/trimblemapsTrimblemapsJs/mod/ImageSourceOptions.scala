@@ -17,7 +17,8 @@ object ImageSourceOptions {
     __obj.asInstanceOf[ImageSourceOptions]
   }
   
-  extension [Self <: ImageSourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageSourceOptions] (val x: Self) extends AnyVal {
     
     inline def setCoordinates(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     

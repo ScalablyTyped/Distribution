@@ -37,7 +37,8 @@ object pluginsXyzMod extends Shortcut {
         __obj.asInstanceOf[Colord]
       }
       
-      extension [Self <: Colord](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Colord] (val x: Self) extends AnyVal {
         
         inline def setToXyz(value: () => XyzaColor): Self = StObject.set(x, "toXyz", js.Any.fromFunction0(value))
       }

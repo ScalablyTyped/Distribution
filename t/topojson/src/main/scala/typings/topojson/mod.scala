@@ -184,7 +184,8 @@ object mod {
       __obj.asInstanceOf[UsAtlas]
     }
     
-    extension [Self <: UsAtlas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsAtlas] (val x: Self) extends AnyVal {
       
       inline def setBbox(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
@@ -220,7 +221,8 @@ object mod {
       __obj.asInstanceOf[WorldAtlas]
     }
     
-    extension [Self <: WorldAtlas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorldAtlas] (val x: Self) extends AnyVal {
       
       inline def setBbox(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       

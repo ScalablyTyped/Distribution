@@ -18,7 +18,8 @@ object Sudoproviderstringundefin {
     __obj.asInstanceOf[Sudoproviderstringundefin]
   }
   
-  extension [Self <: Sudoproviderstringundefin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sudoproviderstringundefin] (val x: Self) extends AnyVal {
     
     inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     

@@ -158,7 +158,8 @@ object PickViewPropscolorstringu {
     __obj.asInstanceOf[PickViewPropscolorstringu]
   }
   
-  extension [Self <: PickViewPropscolorstringu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickViewPropscolorstringu] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

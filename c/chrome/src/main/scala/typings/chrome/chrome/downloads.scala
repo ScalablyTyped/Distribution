@@ -32,7 +32,8 @@ object downloads {
       __obj.asInstanceOf[BooleanDelta]
     }
     
-    extension [Self <: BooleanDelta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BooleanDelta] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object downloads {
       __obj.asInstanceOf[DoubleDelta]
     }
     
-    extension [Self <: DoubleDelta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleDelta] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object downloads {
       __obj.asInstanceOf[DownloadDelta]
     }
     
-    extension [Self <: DownloadDelta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadDelta] (val x: Self) extends AnyVal {
       
       inline def setCanResume(value: BooleanDelta): Self = StObject.set(x, "canResume", value.asInstanceOf[js.Any])
       
@@ -247,7 +250,8 @@ object downloads {
       __obj.asInstanceOf[DownloadFilenameSuggestion]
     }
     
-    extension [Self <: DownloadFilenameSuggestion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadFilenameSuggestion] (val x: Self) extends AnyVal {
       
       inline def setConflictAction(value: String): Self = StObject.set(x, "conflictAction", value.asInstanceOf[js.Any])
       
@@ -442,7 +446,8 @@ object downloads {
       __obj.asInstanceOf[DownloadItem]
     }
     
-    extension [Self <: DownloadItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadItem] (val x: Self) extends AnyVal {
       
       inline def setByExtensionId(value: String): Self = StObject.set(x, "byExtensionId", value.asInstanceOf[js.Any])
       
@@ -528,7 +533,8 @@ object downloads {
       __obj.asInstanceOf[DownloadOptions]
     }
     
-    extension [Self <: DownloadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -644,7 +650,8 @@ object downloads {
       __obj.asInstanceOf[DownloadQuery]
     }
     
-    extension [Self <: DownloadQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadQuery] (val x: Self) extends AnyVal {
       
       inline def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
       
@@ -795,7 +802,8 @@ object downloads {
       __obj.asInstanceOf[GetFileIconOptions]
     }
     
-    extension [Self <: GetFileIconOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetFileIconOptions] (val x: Self) extends AnyVal {
       
       inline def setSize(value: `16` | `32`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -818,7 +826,8 @@ object downloads {
       __obj.asInstanceOf[HeaderNameValuePair]
     }
     
-    extension [Self <: HeaderNameValuePair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderNameValuePair] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -839,7 +848,8 @@ object downloads {
       __obj.asInstanceOf[StringDelta]
     }
     
-    extension [Self <: StringDelta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringDelta] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

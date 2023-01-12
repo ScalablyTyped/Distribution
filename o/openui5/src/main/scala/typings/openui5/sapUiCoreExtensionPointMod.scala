@@ -37,7 +37,8 @@ object sapUiCoreExtensionPointMod extends Shortcut {
       __obj.asInstanceOf[ExtensionPoint]
     }
     
-    extension [Self <: ExtensionPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtensionPoint] (val x: Self) extends AnyVal {
       
       inline def setLoad(value: Container => js.Promise[js.Array[typings.openui5.sapUiCoreControlMod.default]]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     }

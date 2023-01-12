@@ -33,7 +33,8 @@ object DisplayApplianceDocumentPage {
     __obj.asInstanceOf[DisplayApplianceDocumentPage]
   }
   
-  extension [Self <: DisplayApplianceDocumentPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayApplianceDocumentPage] (val x: Self) extends AnyVal {
     
     inline def setDocPageCountTotal(value: Double): Self = StObject.set(x, "docPageCountTotal", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DraggedContext[T]]
     }
     
-    extension [Self <: DraggedContext[?], T](x: Self & DraggedContext[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggedContext[?], T] (val x: Self & DraggedContext[T]) extends AnyVal {
       
       inline def setElement(value: T): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DropContext[T]]
     }
     
-    extension [Self <: DropContext[?], T](x: Self & DropContext[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropContext[?], T] (val x: Self & DropContext[T]) extends AnyVal {
       
       inline def setComponent(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any
@@ -123,7 +125,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MoveEvent[T]]
     }
     
-    extension [Self <: MoveEvent[?], T](x: Self & MoveEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveEvent[?], T] (val x: Self & MoveEvent[T]) extends AnyVal {
       
       inline def setDragged(value: Element): Self = StObject.set(x, "dragged", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Rectangle]
     }
     
-    extension [Self <: Rectangle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rectangle] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

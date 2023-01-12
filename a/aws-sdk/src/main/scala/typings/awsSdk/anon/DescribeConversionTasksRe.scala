@@ -31,7 +31,8 @@ object DescribeConversionTasksRe {
     __obj.asInstanceOf[DescribeConversionTasksRe]
   }
   
-  extension [Self <: DescribeConversionTasksRe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeConversionTasksRe] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

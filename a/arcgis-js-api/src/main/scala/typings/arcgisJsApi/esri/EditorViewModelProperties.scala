@@ -88,7 +88,8 @@ object EditorViewModelProperties {
     __obj.asInstanceOf[EditorViewModelProperties]
   }
   
-  extension [Self <: EditorViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setAllowedWorkflows(value: `create-features` | create | update): Self = StObject.set(x, "allowedWorkflows", value.asInstanceOf[js.Any])
     

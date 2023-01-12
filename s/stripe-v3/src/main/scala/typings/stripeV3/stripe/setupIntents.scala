@@ -130,7 +130,8 @@ object setupIntents {
       __obj.asInstanceOf[SetupIntent]
     }
     
-    extension [Self <: SetupIntent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetupIntent] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
@@ -220,7 +221,8 @@ object setupIntents {
       __obj.asInstanceOf[SetupIntentNextActionRedirectToUrl]
     }
     
-    extension [Self <: SetupIntentNextActionRedirectToUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetupIntentNextActionRedirectToUrl] (val x: Self) extends AnyVal {
       
       inline def setRedirect_to_url(value: Url): Self = StObject.set(x, "redirect_to_url", value.asInstanceOf[js.Any])
       
@@ -251,7 +253,8 @@ object setupIntents {
       __obj.asInstanceOf[SetupIntentNextActionUseStripeSdk]
     }
     
-    extension [Self <: SetupIntentNextActionUseStripeSdk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetupIntentNextActionUseStripeSdk] (val x: Self) extends AnyVal {
       
       inline def setType(value: use_stripe_sdk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

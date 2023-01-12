@@ -22,7 +22,8 @@ object InlayHintLabelPart {
     __obj.asInstanceOf[InlayHintLabelPart]
   }
   
-  extension [Self <: InlayHintLabelPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlayHintLabelPart] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

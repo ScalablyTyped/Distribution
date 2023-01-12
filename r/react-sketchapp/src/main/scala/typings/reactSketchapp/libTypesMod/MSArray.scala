@@ -18,7 +18,8 @@ object MSArray {
     __obj.asInstanceOf[MSArray[T]]
   }
   
-  extension [Self <: MSArray[?], T](x: Self & MSArray[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MSArray[?], T] (val x: Self & MSArray[T]) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

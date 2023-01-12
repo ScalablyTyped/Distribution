@@ -20,7 +20,8 @@ object SubnetworksScopedList {
     __obj.asInstanceOf[SubnetworksScopedList]
   }
   
-  extension [Self <: SubnetworksScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubnetworksScopedList] (val x: Self) extends AnyVal {
     
     inline def setSubnetworks(value: js.Array[Subnetwork]): Self = StObject.set(x, "subnetworks", value.asInstanceOf[js.Any])
     

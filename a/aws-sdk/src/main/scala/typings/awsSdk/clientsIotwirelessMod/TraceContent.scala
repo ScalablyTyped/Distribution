@@ -17,7 +17,8 @@ object TraceContent {
     __obj.asInstanceOf[TraceContent]
   }
   
-  extension [Self <: TraceContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraceContent] (val x: Self) extends AnyVal {
     
     inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "LogLevel", value.asInstanceOf[js.Any])
     

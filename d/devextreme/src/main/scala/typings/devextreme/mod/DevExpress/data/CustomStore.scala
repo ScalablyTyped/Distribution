@@ -35,7 +35,8 @@ object CustomStore {
       __obj.asInstanceOf[GroupItem[TItem]]
     }
     
-    extension [Self <: GroupItem[?], TItem](x: Self & GroupItem[TItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupItem[?], TItem] (val x: Self & GroupItem[TItem]) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object GlideElementDescriptor {
     __obj.asInstanceOf[GlideElementDescriptor]
   }
   
-  extension [Self <: GlideElementDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlideElementDescriptor] (val x: Self) extends AnyVal {
     
     inline def setGetAttachmentEncryptionType(value: () => String): Self = StObject.set(x, "getAttachmentEncryptionType", js.Any.fromFunction0(value))
     

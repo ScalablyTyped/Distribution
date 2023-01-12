@@ -57,7 +57,8 @@ object libPlotsSankeyTypesMod {
       __obj.asInstanceOf[NodeLinkData]
     }
     
-    extension [Self <: NodeLinkData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeLinkData] (val x: Self) extends AnyVal {
       
       inline def setLinks(value: js.Array[Target]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
@@ -248,7 +249,8 @@ object libPlotsSankeyTypesMod {
       __obj.asInstanceOf[SankeyOptions]
     }
     
-    extension [Self <: SankeyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

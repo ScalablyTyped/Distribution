@@ -77,7 +77,8 @@ object Rfcomm {
       __obj.asInstanceOf[RfcommServiceId]
     }
     
-    extension [Self <: RfcommServiceId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RfcommServiceId] (val x: Self) extends AnyVal {
       
       inline def setAsShortId(value: () => Double): Self = StObject.set(x, "asShortId", js.Any.fromFunction0(value))
       

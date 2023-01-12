@@ -34,7 +34,8 @@ object AllSelected {
     __obj.asInstanceOf[AllSelected]
   }
   
-  extension [Self <: AllSelected](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllSelected] (val x: Self) extends AnyVal {
     
     inline def setAllSelected(value: Boolean): Self = StObject.set(x, "allSelected", value.asInstanceOf[js.Any])
     

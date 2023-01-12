@@ -20,7 +20,8 @@ object TypeofPivotGauge {
     __obj.asInstanceOf[TypeofPivotGauge]
   }
   
-  extension [Self <: TypeofPivotGauge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPivotGauge] (val x: Self) extends AnyVal {
     
     inline def setFn(value: PivotGauge): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

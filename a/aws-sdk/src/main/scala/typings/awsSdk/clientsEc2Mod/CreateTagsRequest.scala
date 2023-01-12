@@ -28,7 +28,8 @@ object CreateTagsRequest {
     __obj.asInstanceOf[CreateTagsRequest]
   }
   
-  extension [Self <: CreateTagsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTagsRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

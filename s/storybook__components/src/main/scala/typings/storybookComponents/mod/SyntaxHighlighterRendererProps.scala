@@ -19,7 +19,8 @@ object SyntaxHighlighterRendererProps {
     __obj.asInstanceOf[SyntaxHighlighterRendererProps]
   }
   
-  extension [Self <: SyntaxHighlighterRendererProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxHighlighterRendererProps] (val x: Self) extends AnyVal {
     
     inline def setRows(value: js.Array[Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     

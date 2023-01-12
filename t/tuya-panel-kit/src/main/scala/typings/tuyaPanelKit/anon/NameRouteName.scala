@@ -23,7 +23,8 @@ object NameRouteName {
     __obj.asInstanceOf[NameRouteName[RouteName, ParamList]]
   }
   
-  extension [Self <: NameRouteName[?, ?], RouteName /* <: /* keyof ParamList */ String */, ParamList /* <: ParamListBase */](x: Self & (NameRouteName[RouteName, ParamList])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameRouteName[?, ?], RouteName /* <: /* keyof ParamList */ String */, ParamList /* <: ParamListBase */] (val x: Self & (NameRouteName[RouteName, ParamList])) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

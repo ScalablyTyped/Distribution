@@ -18,7 +18,8 @@ object TargetGroup {
     __obj.asInstanceOf[TargetGroup]
   }
   
-  extension [Self <: TargetGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetGroup] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

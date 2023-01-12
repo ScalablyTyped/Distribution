@@ -60,7 +60,8 @@ object BrowserConnectOptionsbrow {
     __obj.asInstanceOf[BrowserConnectOptionsbrow]
   }
   
-  extension [Self <: BrowserConnectOptionsbrow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserConnectOptionsbrow] (val x: Self) extends AnyVal {
     
     inline def setBrowserURL(value: String): Self = StObject.set(x, "browserURL", value.asInstanceOf[js.Any])
     

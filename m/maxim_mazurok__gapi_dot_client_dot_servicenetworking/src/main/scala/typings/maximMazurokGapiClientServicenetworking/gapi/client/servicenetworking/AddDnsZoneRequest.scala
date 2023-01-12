@@ -28,7 +28,8 @@ object AddDnsZoneRequest {
     __obj.asInstanceOf[AddDnsZoneRequest]
   }
   
-  extension [Self <: AddDnsZoneRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddDnsZoneRequest] (val x: Self) extends AnyVal {
     
     inline def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
     

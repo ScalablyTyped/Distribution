@@ -29,7 +29,8 @@ object IsPanning {
     __obj.asInstanceOf[IsPanning]
   }
   
-  extension [Self <: IsPanning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsPanning] (val x: Self) extends AnyVal {
     
     inline def setActiveBrushes(value: BrushBoolean): Self = StObject.set(x, "activeBrushes", value.asInstanceOf[js.Any])
     

@@ -127,7 +127,8 @@ object libCryptoMod {
       __obj.asInstanceOf[CryptoContext]
     }
     
-    extension [Self <: CryptoContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptoContext] (val x: Self) extends AnyVal {
       
       inline def setDecrypt(value: Buffer => js.Promise[Buffer]): Self = StObject.set(x, "decrypt", js.Any.fromFunction1(value))
       
@@ -178,7 +179,8 @@ object libCryptoMod {
       __obj.asInstanceOf[DecryptionContext]
     }
     
-    extension [Self <: DecryptionContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecryptionContext] (val x: Self) extends AnyVal {
       
       inline def setAuthTag(value: Buffer): Self = StObject.set(x, "authTag", value.asInstanceOf[js.Any])
     }
@@ -197,7 +199,8 @@ object libCryptoMod {
       __obj.asInstanceOf[EncryptionContext]
     }
     
-    extension [Self <: EncryptionContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptionContext] (val x: Self) extends AnyVal {
       
       inline def setNonce(value: Buffer): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
@@ -218,7 +221,8 @@ object libCryptoMod {
       __obj.asInstanceOf[KeyPair]
     }
     
-    extension [Self <: KeyPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPair] (val x: Self) extends AnyVal {
       
       inline def setPrivateKey(value: KeyObject): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       

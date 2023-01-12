@@ -59,7 +59,8 @@ object IgValidatorCreditCardRule {
     __obj.asInstanceOf[IgValidatorCreditCardRule]
   }
   
-  extension [Self <: IgValidatorCreditCardRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgValidatorCreditCardRule] (val x: Self) extends AnyVal {
     
     inline def setFormatMessage(value: String => String): Self = StObject.set(x, "formatMessage", js.Any.fromFunction1(value))
     

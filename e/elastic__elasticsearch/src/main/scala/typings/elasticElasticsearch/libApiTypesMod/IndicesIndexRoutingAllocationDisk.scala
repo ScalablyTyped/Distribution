@@ -15,7 +15,8 @@ object IndicesIndexRoutingAllocationDisk {
     __obj.asInstanceOf[IndicesIndexRoutingAllocationDisk]
   }
   
-  extension [Self <: IndicesIndexRoutingAllocationDisk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesIndexRoutingAllocationDisk] (val x: Self) extends AnyVal {
     
     inline def setThreshold_enabled(value: Boolean | String): Self = StObject.set(x, "threshold_enabled", value.asInstanceOf[js.Any])
     

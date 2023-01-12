@@ -597,7 +597,8 @@ object sapMQuickViewPageMod {
       __obj.asInstanceOf[QuickViewPageSettings]
     }
     
-    extension [Self <: QuickViewPageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickViewPageSettings] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: typings.openui5.sapMAvatarMod.default): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       

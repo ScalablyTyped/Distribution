@@ -36,7 +36,8 @@ object Expiry {
     __obj.asInstanceOf[Expiry]
   }
   
-  extension [Self <: Expiry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Expiry] (val x: Self) extends AnyVal {
     
     inline def setBranch_id(value: Double): Self = StObject.set(x, "branch_id", value.asInstanceOf[js.Any])
     

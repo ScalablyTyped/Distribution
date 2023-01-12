@@ -47,7 +47,8 @@ object libTypescriptElementsSymbolMod {
       __obj.asInstanceOf[SymbolProps]
     }
     
-    extension [Self <: SymbolProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymbolProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

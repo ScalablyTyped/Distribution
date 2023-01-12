@@ -34,7 +34,8 @@ object PartialSidenavOptions {
     __obj.asInstanceOf[PartialSidenavOptions]
   }
   
-  extension [Self <: PartialSidenavOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSidenavOptions] (val x: Self) extends AnyVal {
     
     inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     

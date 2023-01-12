@@ -31,7 +31,8 @@ object ShapeEvent {
     __obj.asInstanceOf[ShapeEvent]
   }
   
-  extension [Self <: ShapeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeEvent] (val x: Self) extends AnyVal {
     
     inline def setShape(value: js.Array[LatLng_]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     

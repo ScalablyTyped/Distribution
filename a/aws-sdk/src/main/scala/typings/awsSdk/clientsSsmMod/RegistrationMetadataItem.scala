@@ -23,7 +23,8 @@ object RegistrationMetadataItem {
     __obj.asInstanceOf[RegistrationMetadataItem]
   }
   
-  extension [Self <: RegistrationMetadataItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegistrationMetadataItem] (val x: Self) extends AnyVal {
     
     inline def setKey(value: RegistrationMetadataKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

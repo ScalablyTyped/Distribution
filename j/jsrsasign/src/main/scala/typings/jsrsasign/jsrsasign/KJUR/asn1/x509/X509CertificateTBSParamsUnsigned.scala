@@ -24,7 +24,8 @@ object X509CertificateTBSParamsUnsigned {
     __obj.asInstanceOf[X509CertificateTBSParamsUnsigned]
   }
   
-  extension [Self <: X509CertificateTBSParamsUnsigned](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X509CertificateTBSParamsUnsigned] (val x: Self) extends AnyVal {
     
     inline def setCakey(value: String | RSAKey | DSA | ECDSA): Self = StObject.set(x, "cakey", value.asInstanceOf[js.Any])
     

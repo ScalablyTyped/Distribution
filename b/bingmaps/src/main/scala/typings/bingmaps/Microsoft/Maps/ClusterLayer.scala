@@ -68,7 +68,8 @@ object ClusterLayer {
     __obj.asInstanceOf[ClusterLayer]
   }
   
-  extension [Self <: ClusterLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterLayer] (val x: Self) extends AnyVal {
     
     inline def setGetClusterPushpinByGridKey(value: Double => ClusterPushpin | Pushpin): Self = StObject.set(x, "getClusterPushpinByGridKey", js.Any.fromFunction1(value))
     

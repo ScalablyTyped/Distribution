@@ -62,7 +62,8 @@ object ConnectionEventMap {
     __obj.asInstanceOf[ConnectionEventMap]
   }
   
-  extension [Self <: ConnectionEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionEventMap] (val x: Self) extends AnyVal {
     
     inline def setClosed(value: /* reason */ String => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
     

@@ -16,7 +16,8 @@ object Partition {
     __obj.asInstanceOf[Partition]
   }
   
-  extension [Self <: Partition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partition] (val x: Self) extends AnyVal {
     
     inline def setPartitionToken(value: String): Self = StObject.set(x, "partitionToken", value.asInstanceOf[js.Any])
     

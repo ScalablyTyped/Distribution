@@ -28,7 +28,8 @@ object ComputedOptions {
     __obj.asInstanceOf[ComputedOptions[T, TTarget]]
   }
   
-  extension [Self <: ComputedOptions[?, ?], T, TTarget](x: Self & (ComputedOptions[T, TTarget])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputedOptions[?, ?], T, TTarget] (val x: Self & (ComputedOptions[T, TTarget])) extends AnyVal {
     
     inline def setDeferEvaluation(value: Boolean): Self = StObject.set(x, "deferEvaluation", value.asInstanceOf[js.Any])
     

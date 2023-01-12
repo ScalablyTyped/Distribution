@@ -23,7 +23,8 @@ object OrderableDBInstanceOptionsMessage {
     __obj.asInstanceOf[OrderableDBInstanceOptionsMessage]
   }
   
-  extension [Self <: OrderableDBInstanceOptionsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderableDBInstanceOptionsMessage] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

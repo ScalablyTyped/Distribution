@@ -97,7 +97,8 @@ object mod {
         __obj.asInstanceOf[FirebaseApp]
       }
       
-      extension [Self <: FirebaseApp](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FirebaseApp] (val x: Self) extends AnyVal {
         
         inline def setStorage(value: /* storageBucket */ js.UndefOr[String] => FirebaseStorage): Self = StObject.set(x, "storage", js.Any.fromFunction1(value))
         
@@ -116,7 +117,8 @@ object mod {
         __obj.asInstanceOf[typings.firebaseStorageCompat.mod.firebaseAppCompatAugmentingMod.FirebaseNamespace]
       }
       
-      extension [Self <: typings.firebaseStorageCompat.mod.firebaseAppCompatAugmentingMod.FirebaseNamespace](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.firebaseStorageCompat.mod.firebaseAppCompatAugmentingMod.FirebaseNamespace] (val x: Self) extends AnyVal {
         
         inline def setStorage(value: Call): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
         

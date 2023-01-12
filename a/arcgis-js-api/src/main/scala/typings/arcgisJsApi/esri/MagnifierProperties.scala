@@ -92,7 +92,8 @@ object MagnifierProperties {
     __obj.asInstanceOf[MagnifierProperties]
   }
   
-  extension [Self <: MagnifierProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MagnifierProperties] (val x: Self) extends AnyVal {
     
     inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     

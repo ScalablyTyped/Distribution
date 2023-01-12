@@ -141,7 +141,8 @@ object Math {
     __obj.asInstanceOf[Math]
   }
   
-  extension [Self <: Math](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Math] (val x: Self) extends AnyVal {
     
     inline def setAcosh(value: Double => Double): Self = StObject.set(x, "acosh", js.Any.fromFunction1(value))
     

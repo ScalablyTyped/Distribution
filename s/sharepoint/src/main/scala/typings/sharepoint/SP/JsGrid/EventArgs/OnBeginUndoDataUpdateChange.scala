@@ -19,7 +19,8 @@ object OnBeginUndoDataUpdateChange {
     __obj.asInstanceOf[OnBeginUndoDataUpdateChange]
   }
   
-  extension [Self <: OnBeginUndoDataUpdateChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBeginUndoDataUpdateChange] (val x: Self) extends AnyVal {
     
     inline def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
   }

@@ -48,7 +48,8 @@ object GetFolderOutput {
     __obj.asInstanceOf[GetFolderOutput]
   }
   
-  extension [Self <: GetFolderOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFolderOutput] (val x: Self) extends AnyVal {
     
     inline def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     

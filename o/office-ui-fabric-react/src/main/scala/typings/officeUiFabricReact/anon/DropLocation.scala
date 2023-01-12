@@ -16,7 +16,8 @@ object DropLocation {
     __obj.asInstanceOf[DropLocation]
   }
   
-  extension [Self <: DropLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropLocation] (val x: Self) extends AnyVal {
     
     inline def setDropLocation(value: ColumnDragEndLocation): Self = StObject.set(x, "dropLocation", value.asInstanceOf[js.Any])
     

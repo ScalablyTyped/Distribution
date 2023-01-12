@@ -19,7 +19,8 @@ object AppTrackInfo {
     __obj.asInstanceOf[AppTrackInfo]
   }
   
-  extension [Self <: AppTrackInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppTrackInfo] (val x: Self) extends AnyVal {
     
     inline def setTrackAlias(value: String): Self = StObject.set(x, "trackAlias", value.asInstanceOf[js.Any])
     

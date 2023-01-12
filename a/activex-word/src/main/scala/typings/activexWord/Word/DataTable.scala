@@ -58,7 +58,8 @@ object DataTable {
     __obj.asInstanceOf[DataTable]
   }
   
-  extension [Self <: DataTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTable] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

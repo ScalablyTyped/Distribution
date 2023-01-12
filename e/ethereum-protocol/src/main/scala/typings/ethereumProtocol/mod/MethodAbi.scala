@@ -39,7 +39,8 @@ object MethodAbi {
     __obj.asInstanceOf[MethodAbi]
   }
   
-  extension [Self <: MethodAbi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodAbi] (val x: Self) extends AnyVal {
     
     inline def setConstant(value: Boolean): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
     

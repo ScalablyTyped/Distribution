@@ -91,7 +91,8 @@ object zip {
       __obj.asInstanceOf[WriteOptions]
     }
     
-    extension [Self <: WriteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteOptions] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       

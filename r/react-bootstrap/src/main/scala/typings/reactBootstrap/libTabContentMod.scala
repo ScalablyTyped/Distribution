@@ -37,7 +37,8 @@ object libTabContentMod {
       __obj.asInstanceOf[TabContentProps]
     }
     
-    extension [Self <: TabContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabContentProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean | ElementType[Any]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object GoogleAnalyticsAdminV1alphaAccessFilter {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAccessFilter]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAccessFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAccessFilter] (val x: Self) extends AnyVal {
     
     inline def setBetweenFilter(value: GoogleAnalyticsAdminV1alphaAccessBetweenFilter): Self = StObject.set(x, "betweenFilter", value.asInstanceOf[js.Any])
     

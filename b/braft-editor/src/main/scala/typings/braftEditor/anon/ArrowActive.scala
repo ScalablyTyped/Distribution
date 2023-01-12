@@ -41,7 +41,8 @@ object ArrowActive {
     __obj.asInstanceOf[ArrowActive]
   }
   
-  extension [Self <: ArrowActive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrowActive] (val x: Self) extends AnyVal {
     
     inline def setArrowActive(value: Boolean): Self = StObject.set(x, "arrowActive", value.asInstanceOf[js.Any])
     

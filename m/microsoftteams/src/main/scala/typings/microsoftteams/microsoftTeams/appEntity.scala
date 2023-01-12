@@ -50,7 +50,8 @@ object appEntity {
       __obj.asInstanceOf[AppEntity]
     }
     
-    extension [Self <: AppEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppEntity] (val x: Self) extends AnyVal {
       
       inline def setAppIconUrl(value: String): Self = StObject.set(x, "appIconUrl", value.asInstanceOf[js.Any])
       

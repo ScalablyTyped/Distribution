@@ -23,7 +23,8 @@ object SATFactory {
     __obj.asInstanceOf[SATFactory]
   }
   
-  extension [Self <: SATFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SATFactory] (val x: Self) extends AnyVal {
     
     inline def setCollides(value: (BodyType, BodyType, ICollisionData) => ICollisionData): Self = StObject.set(x, "collides", js.Any.fromFunction3(value))
   }

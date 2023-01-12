@@ -19,7 +19,8 @@ object Implicit {
     __obj.asInstanceOf[Implicit]
   }
   
-  extension [Self <: Implicit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Implicit] (val x: Self) extends AnyVal {
     
     inline def setImplicit(value: Double): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
     

@@ -104,7 +104,8 @@ object EnergyPlan {
     __obj.asInstanceOf[EnergyPlan]
   }
   
-  extension [Self <: EnergyPlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnergyPlan] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInformation(value: BundleUri): Self = StObject.set(x, "additionalInformation", value.asInstanceOf[js.Any])
     

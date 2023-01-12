@@ -143,7 +143,8 @@ object QueryDesign {
     __obj.asInstanceOf[QueryDesign]
   }
   
-  extension [Self <: QueryDesign](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDesign] (val x: Self) extends AnyVal {
     
     inline def setActiveCommand(value: String): Self = StObject.set(x, "ActiveCommand", value.asInstanceOf[js.Any])
     

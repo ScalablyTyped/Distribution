@@ -23,7 +23,8 @@ object DetachTypedLinkRequest {
     __obj.asInstanceOf[DetachTypedLinkRequest]
   }
   
-  extension [Self <: DetachTypedLinkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachTypedLinkRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     

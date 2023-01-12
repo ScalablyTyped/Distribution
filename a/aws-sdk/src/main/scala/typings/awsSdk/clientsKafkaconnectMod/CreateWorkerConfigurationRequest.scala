@@ -28,7 +28,8 @@ object CreateWorkerConfigurationRequest {
     __obj.asInstanceOf[CreateWorkerConfigurationRequest]
   }
   
-  extension [Self <: CreateWorkerConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkerConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: stringMax1024): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

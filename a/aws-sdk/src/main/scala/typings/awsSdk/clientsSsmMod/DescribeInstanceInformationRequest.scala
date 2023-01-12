@@ -33,7 +33,8 @@ object DescribeInstanceInformationRequest {
     __obj.asInstanceOf[DescribeInstanceInformationRequest]
   }
   
-  extension [Self <: DescribeInstanceInformationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInstanceInformationRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: InstanceInformationStringFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

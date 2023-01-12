@@ -19,7 +19,8 @@ object GBPJPY {
     __obj.asInstanceOf[GBPJPY]
   }
   
-  extension [Self <: GBPJPY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GBPJPY] (val x: Self) extends AnyVal {
     
     inline def setGBP(value: js.Array[String]): Self = StObject.set(x, "GBP", value.asInstanceOf[js.Any])
     

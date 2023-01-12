@@ -75,7 +75,8 @@ object VideoItem {
     __obj.asInstanceOf[VideoItem]
   }
   
-  extension [Self <: VideoItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoItem] (val x: Self) extends AnyVal {
     
     inline def setDuplicate(value: () => VideoItem): Self = StObject.set(x, "duplicate", js.Any.fromFunction0(value))
     

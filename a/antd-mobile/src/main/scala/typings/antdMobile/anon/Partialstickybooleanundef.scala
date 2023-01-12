@@ -173,7 +173,8 @@ object Partialstickybooleanundef {
     __obj.asInstanceOf[Partialstickybooleanundef]
   }
   
-  extension [Self <: Partialstickybooleanundef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialstickybooleanundef] (val x: Self) extends AnyVal {
     
     inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
     

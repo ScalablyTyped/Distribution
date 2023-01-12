@@ -17,7 +17,8 @@ object AudioEffect {
     __obj.asInstanceOf[AudioEffect]
   }
   
-  extension [Self <: AudioEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioEffect] (val x: Self) extends AnyVal {
     
     inline def setAudioEffectType(value: AudioEffectType): Self = StObject.set(x, "audioEffectType", value.asInstanceOf[js.Any])
   }

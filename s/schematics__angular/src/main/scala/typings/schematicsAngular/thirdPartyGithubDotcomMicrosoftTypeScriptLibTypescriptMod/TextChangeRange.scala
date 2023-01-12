@@ -17,7 +17,8 @@ object TextChangeRange {
     __obj.asInstanceOf[TextChangeRange]
   }
   
-  extension [Self <: TextChangeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextChangeRange] (val x: Self) extends AnyVal {
     
     inline def setNewLength(value: Double): Self = StObject.set(x, "newLength", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SetAutomaticPresenceSimulationRequest {
     __obj.asInstanceOf[SetAutomaticPresenceSimulationRequest]
   }
   
-  extension [Self <: SetAutomaticPresenceSimulationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetAutomaticPresenceSimulationRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticatorId(value: AuthenticatorId): Self = StObject.set(x, "authenticatorId", value.asInstanceOf[js.Any])
     

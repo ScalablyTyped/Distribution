@@ -63,7 +63,8 @@ object libTokensMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setAnchor(value: Widget): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
         
@@ -75,7 +76,8 @@ object libTokensMod {
       }
     }
     
-    extension [Self <: ITooltipManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipManager] (val x: Self) extends AnyVal {
       
       inline def setInvoke(value: IOptions => Unit): Self = StObject.set(x, "invoke", js.Any.fromFunction1(value))
     }

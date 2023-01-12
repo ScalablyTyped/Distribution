@@ -23,7 +23,8 @@ object publishingClient {
     __obj.asInstanceOf[publishingClient]
   }
   
-  extension [Self <: publishingClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: publishingClient] (val x: Self) extends AnyVal {
     
     inline def setBoundRecords(value: Any): Self = StObject.set(x, "boundRecords", value.asInstanceOf[js.Any])
     

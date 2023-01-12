@@ -38,7 +38,8 @@ object AssociateOriginationIdentityResult {
     __obj.asInstanceOf[AssociateOriginationIdentityResult]
   }
   
-  extension [Self <: AssociateOriginationIdentityResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateOriginationIdentityResult] (val x: Self) extends AnyVal {
     
     inline def setIsoCountryCode(value: IsoCountryCode): Self = StObject.set(x, "IsoCountryCode", value.asInstanceOf[js.Any])
     

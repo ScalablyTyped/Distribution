@@ -25,7 +25,8 @@ object ZendeskDestinationProperties {
     __obj.asInstanceOf[ZendeskDestinationProperties]
   }
   
-  extension [Self <: ZendeskDestinationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZendeskDestinationProperties] (val x: Self) extends AnyVal {
     
     inline def setErrorHandlingConfig(value: ErrorHandlingConfig): Self = StObject.set(x, "errorHandlingConfig", value.asInstanceOf[js.Any])
     

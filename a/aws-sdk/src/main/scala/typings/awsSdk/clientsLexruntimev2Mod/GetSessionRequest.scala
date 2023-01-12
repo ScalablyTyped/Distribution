@@ -33,7 +33,8 @@ object GetSessionRequest {
     __obj.asInstanceOf[GetSessionRequest]
   }
   
-  extension [Self <: GetSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setBotAliasId(value: BotAliasIdentifier): Self = StObject.set(x, "botAliasId", value.asInstanceOf[js.Any])
     

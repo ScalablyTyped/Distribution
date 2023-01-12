@@ -76,7 +76,8 @@ object ClientOptions {
     __obj.asInstanceOf[ClientOptions]
   }
   
-  extension [Self <: ClientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthProvider(value: AuthProvider): Self = StObject.set(x, "authProvider", value.asInstanceOf[js.Any])
     

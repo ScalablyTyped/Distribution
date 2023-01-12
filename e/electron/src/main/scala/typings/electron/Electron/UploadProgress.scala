@@ -35,7 +35,8 @@ object UploadProgress {
     __obj.asInstanceOf[UploadProgress]
   }
   
-  extension [Self <: UploadProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadProgress] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

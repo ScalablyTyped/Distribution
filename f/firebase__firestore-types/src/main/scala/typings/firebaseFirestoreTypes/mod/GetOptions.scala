@@ -18,7 +18,8 @@ object GetOptions {
     __obj.asInstanceOf[GetOptions]
   }
   
-  extension [Self <: GetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
     
     inline def setSource(value: default | server | cache): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

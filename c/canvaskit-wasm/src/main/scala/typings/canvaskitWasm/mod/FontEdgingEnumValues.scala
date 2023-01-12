@@ -21,7 +21,8 @@ object FontEdgingEnumValues {
     __obj.asInstanceOf[FontEdgingEnumValues]
   }
   
-  extension [Self <: FontEdgingEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontEdgingEnumValues] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: FontEdging): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     

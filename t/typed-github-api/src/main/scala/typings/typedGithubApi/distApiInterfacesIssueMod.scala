@@ -88,7 +88,8 @@ object distApiInterfacesIssueMod {
       __obj.asInstanceOf[Issue]
     }
     
-    extension [Self <: Issue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Issue] (val x: Self) extends AnyVal {
       
       inline def setAssignee(value: UserSummary): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object distApiInterfacesIssueMod {
       __obj.asInstanceOf[IssueComment]
     }
     
-    extension [Self <: IssueComment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueComment] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -222,7 +224,8 @@ object distApiInterfacesIssueMod {
       __obj.asInstanceOf[PullRequestExtension]
     }
     
-    extension [Self <: PullRequestExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PullRequestExtension] (val x: Self) extends AnyVal {
       
       inline def setDiff_url(value: String): Self = StObject.set(x, "diff_url", value.asInstanceOf[js.Any])
       

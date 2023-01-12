@@ -16,7 +16,8 @@ object IResourceLoaderStatics {
     __obj.asInstanceOf[IResourceLoaderStatics]
   }
   
-  extension [Self <: IResourceLoaderStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResourceLoaderStatics] (val x: Self) extends AnyVal {
     
     inline def setGetStringForReference(value: Uri => String): Self = StObject.set(x, "getStringForReference", js.Any.fromFunction1(value))
   }

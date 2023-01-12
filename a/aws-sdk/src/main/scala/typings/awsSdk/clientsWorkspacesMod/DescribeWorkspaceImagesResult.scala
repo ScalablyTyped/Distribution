@@ -23,7 +23,8 @@ object DescribeWorkspaceImagesResult {
     __obj.asInstanceOf[DescribeWorkspaceImagesResult]
   }
   
-  extension [Self <: DescribeWorkspaceImagesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeWorkspaceImagesResult] (val x: Self) extends AnyVal {
     
     inline def setImages(value: WorkspaceImageList): Self = StObject.set(x, "Images", value.asInstanceOf[js.Any])
     

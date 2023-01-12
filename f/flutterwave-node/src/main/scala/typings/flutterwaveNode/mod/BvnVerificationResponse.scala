@@ -17,7 +17,8 @@ object BvnVerificationResponse {
     __obj.asInstanceOf[BvnVerificationResponse]
   }
   
-  extension [Self <: BvnVerificationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BvnVerificationResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: typings.flutterwaveNode.anon.Bvn): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

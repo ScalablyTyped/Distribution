@@ -15,7 +15,8 @@ object FilmstripDisplayChangedEvent {
     __obj.asInstanceOf[FilmstripDisplayChangedEvent]
   }
   
-  extension [Self <: FilmstripDisplayChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilmstripDisplayChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }

@@ -50,7 +50,8 @@ object GeometryData {
     __obj.asInstanceOf[GeometryData]
   }
   
-  extension [Self <: GeometryData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometryData] (val x: Self) extends AnyVal {
     
     inline def setIndexCount(value: Double): Self = StObject.set(x, "indexCount", value.asInstanceOf[js.Any])
     

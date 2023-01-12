@@ -18,7 +18,8 @@ object LabelValue {
     __obj.asInstanceOf[LabelValue]
   }
   
-  extension [Self <: LabelValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelValue] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object Advertiser {
     __obj.asInstanceOf[Advertiser]
   }
   
-  extension [Self <: Advertiser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Advertiser] (val x: Self) extends AnyVal {
     
     inline def setAdvertiser(value: String): Self = StObject.set(x, "advertiser", value.asInstanceOf[js.Any])
     

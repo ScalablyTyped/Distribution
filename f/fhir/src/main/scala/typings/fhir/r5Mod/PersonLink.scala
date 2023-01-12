@@ -31,7 +31,8 @@ object PersonLink {
     __obj.asInstanceOf[PersonLink]
   }
   
-  extension [Self <: PersonLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersonLink] (val x: Self) extends AnyVal {
     
     inline def setAssurance(value: level1 | level2 | level3 | level4): Self = StObject.set(x, "assurance", value.asInstanceOf[js.Any])
     

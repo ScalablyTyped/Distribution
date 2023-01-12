@@ -62,7 +62,8 @@ object VirtualServiceRef {
     __obj.asInstanceOf[VirtualServiceRef]
   }
   
-  extension [Self <: VirtualServiceRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualServiceRef] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

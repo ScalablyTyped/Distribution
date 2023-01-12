@@ -37,7 +37,8 @@ object ExecutionStageSummary {
     __obj.asInstanceOf[ExecutionStageSummary]
   }
   
-  extension [Self <: ExecutionStageSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionStageSummary] (val x: Self) extends AnyVal {
     
     inline def setComponentSource(value: js.Array[ComponentSource]): Self = StObject.set(x, "componentSource", value.asInstanceOf[js.Any])
     

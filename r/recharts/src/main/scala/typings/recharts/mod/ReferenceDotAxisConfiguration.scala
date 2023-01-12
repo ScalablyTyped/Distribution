@@ -15,7 +15,8 @@ object ReferenceDotAxisConfiguration {
     __obj.asInstanceOf[ReferenceDotAxisConfiguration]
   }
   
-  extension [Self <: ReferenceDotAxisConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceDotAxisConfiguration] (val x: Self) extends AnyVal {
     
     inline def setScale(value: /* x */ Double | String => Double): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
   }

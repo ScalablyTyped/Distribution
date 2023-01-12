@@ -23,7 +23,8 @@ object TaskExecution {
     __obj.asInstanceOf[TaskExecution]
   }
   
-  extension [Self <: TaskExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskExecution] (val x: Self) extends AnyVal {
     
     inline def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     

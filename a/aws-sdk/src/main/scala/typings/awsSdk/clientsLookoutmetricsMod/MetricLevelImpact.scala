@@ -28,7 +28,8 @@ object MetricLevelImpact {
     __obj.asInstanceOf[MetricLevelImpact]
   }
   
-  extension [Self <: MetricLevelImpact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricLevelImpact] (val x: Self) extends AnyVal {
     
     inline def setContributionMatrix(value: ContributionMatrix): Self = StObject.set(x, "ContributionMatrix", value.asInstanceOf[js.Any])
     

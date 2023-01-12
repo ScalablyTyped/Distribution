@@ -15,7 +15,8 @@ object CustomPlacementConfig {
     __obj.asInstanceOf[CustomPlacementConfig]
   }
   
-  extension [Self <: CustomPlacementConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPlacementConfig] (val x: Self) extends AnyVal {
     
     inline def setDataLocations(value: js.Array[String]): Self = StObject.set(x, "dataLocations", value.asInstanceOf[js.Any])
     

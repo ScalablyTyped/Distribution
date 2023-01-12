@@ -275,7 +275,8 @@ object TestCase {
       __obj.asInstanceOf[ITestStep]
     }
     
-    extension [Self <: ITestStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITestStep] (val x: Self) extends AnyVal {
       
       inline def setHookId(value: String): Self = StObject.set(x, "hookId", value.asInstanceOf[js.Any])
       

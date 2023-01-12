@@ -23,7 +23,8 @@ object ASPxClientFileManagerItemMovedEventArgs {
     __obj.asInstanceOf[ASPxClientFileManagerItemMovedEventArgs]
   }
   
-  extension [Self <: ASPxClientFileManagerItemMovedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFileManagerItemMovedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setOldFolderFullName(value: String): Self = StObject.set(x, "oldFolderFullName", value.asInstanceOf[js.Any])
   }

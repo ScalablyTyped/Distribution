@@ -23,7 +23,8 @@ object UpdateCustomMetricRequest {
     __obj.asInstanceOf[UpdateCustomMetricRequest]
   }
   
-  extension [Self <: UpdateCustomMetricRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCustomMetricRequest] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: CustomMetricDisplayName): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

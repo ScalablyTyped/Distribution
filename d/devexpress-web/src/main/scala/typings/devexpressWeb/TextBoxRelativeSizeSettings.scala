@@ -41,7 +41,8 @@ object TextBoxRelativeSizeSettings {
     __obj.asInstanceOf[TextBoxRelativeSizeSettings]
   }
   
-  extension [Self <: TextBoxRelativeSizeSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextBoxRelativeSizeSettings] (val x: Self) extends AnyVal {
     
     inline def setRelativeHeight(value: Double): Self = StObject.set(x, "relativeHeight", value.asInstanceOf[js.Any])
     

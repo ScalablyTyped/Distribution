@@ -17,7 +17,8 @@ object ForceReply {
     __obj.asInstanceOf[ForceReply]
   }
   
-  extension [Self <: ForceReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceReply] (val x: Self) extends AnyVal {
     
     inline def setForce_reply(value: Boolean): Self = StObject.set(x, "force_reply", value.asInstanceOf[js.Any])
     

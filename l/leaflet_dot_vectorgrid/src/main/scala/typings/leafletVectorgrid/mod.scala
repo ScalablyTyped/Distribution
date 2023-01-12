@@ -188,7 +188,8 @@ object mod {
           __obj.asInstanceOf[ProtobufOptions]
         }
         
-        extension [Self <: ProtobufOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ProtobufOptions] (val x: Self) extends AnyVal {
           
           inline def setFetchOptions(value: (Record[String, Any]) & ProtobufFetchOptions): Self = StObject.set(x, "fetchOptions", value.asInstanceOf[js.Any])
           
@@ -217,7 +218,8 @@ object mod {
           __obj.asInstanceOf[SlicerOptions]
         }
         
-        extension [Self <: SlicerOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SlicerOptions] (val x: Self) extends AnyVal {
           
           inline def setVectorTileLayerName(value: String): Self = StObject.set(x, "vectorTileLayerName", value.asInstanceOf[js.Any])
           
@@ -285,7 +287,8 @@ object mod {
         __obj.asInstanceOf[TileProps]
       }
       
-      extension [Self <: TileProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TileProps] (val x: Self) extends AnyVal {
         
         inline def setOptions(value: RendererOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
@@ -332,7 +335,8 @@ object mod {
         __obj.asInstanceOf[VectorGridOptions[T]]
       }
       
-      extension [Self <: VectorGridOptions[?], T /* <: Tile | typings.leafletVectorgrid.mod.leafletAugmentingMod.SVG_.Tile */](x: Self & VectorGridOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VectorGridOptions[?], T /* <: Tile | typings.leafletVectorgrid.mod.leafletAugmentingMod.SVG_.Tile */] (val x: Self & VectorGridOptions[T]) extends AnyVal {
         
         inline def setFilter(value: (/* properties */ Feature, /* zoom */ Double) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
         

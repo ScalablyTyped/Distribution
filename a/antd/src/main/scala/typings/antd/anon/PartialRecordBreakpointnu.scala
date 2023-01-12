@@ -26,7 +26,8 @@ object PartialRecordBreakpointnu {
     __obj.asInstanceOf[PartialRecordBreakpointnu]
   }
   
-  extension [Self <: PartialRecordBreakpointnu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordBreakpointnu] (val x: Self) extends AnyVal {
     
     inline def setLg(value: Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
     

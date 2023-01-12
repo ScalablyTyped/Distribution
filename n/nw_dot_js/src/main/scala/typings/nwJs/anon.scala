@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[AddListener]
     }
     
-    extension [Self <: AddListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddListener] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: js.Function1[/* changeInfo */ CookiesOnChangedCallbackChangeInfo, Unit] => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     }
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

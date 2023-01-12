@@ -38,7 +38,8 @@ object DataRepositoryTaskStatus {
     __obj.asInstanceOf[DataRepositoryTaskStatus]
   }
   
-  extension [Self <: DataRepositoryTaskStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRepositoryTaskStatus] (val x: Self) extends AnyVal {
     
     inline def setFailedCount(value: FailedCount): Self = StObject.set(x, "FailedCount", value.asInstanceOf[js.Any])
     

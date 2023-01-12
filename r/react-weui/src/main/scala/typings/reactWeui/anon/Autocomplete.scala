@@ -38,7 +38,8 @@ object Autocomplete {
     __obj.asInstanceOf[Autocomplete]
   }
   
-  extension [Self <: Autocomplete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Autocomplete] (val x: Self) extends AnyVal {
     
     inline def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
     

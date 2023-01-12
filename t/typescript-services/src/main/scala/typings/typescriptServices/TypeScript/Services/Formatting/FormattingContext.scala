@@ -80,7 +80,8 @@ object FormattingContext {
     __obj.asInstanceOf[FormattingContext]
   }
   
-  extension [Self <: FormattingContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormattingContext] (val x: Self) extends AnyVal {
     
     inline def setBlockIsOnOneLine(value: IndentationNodeContext => Boolean): Self = StObject.set(x, "BlockIsOnOneLine", js.Any.fromFunction1(value))
     

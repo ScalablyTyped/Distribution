@@ -21,7 +21,8 @@ object ICalendarFactory {
     __obj.asInstanceOf[ICalendarFactory]
   }
   
-  extension [Self <: ICalendarFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICalendarFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateCalendar(value: (IIterable[String], String, String) => Calendar): Self = StObject.set(x, "createCalendar", js.Any.fromFunction3(value))
     

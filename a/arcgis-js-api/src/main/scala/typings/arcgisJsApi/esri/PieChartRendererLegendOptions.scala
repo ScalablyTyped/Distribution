@@ -20,7 +20,8 @@ object PieChartRendererLegendOptions {
     __obj.asInstanceOf[PieChartRendererLegendOptions]
   }
   
-  extension [Self <: PieChartRendererLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieChartRendererLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

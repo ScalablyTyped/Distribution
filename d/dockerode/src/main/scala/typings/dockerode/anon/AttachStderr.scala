@@ -67,7 +67,8 @@ object AttachStderr {
     __obj.asInstanceOf[AttachStderr]
   }
   
-  extension [Self <: AttachStderr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachStderr] (val x: Self) extends AnyVal {
     
     inline def setAttachStderr(value: Boolean): Self = StObject.set(x, "AttachStderr", value.asInstanceOf[js.Any])
     

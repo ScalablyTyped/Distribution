@@ -17,7 +17,8 @@ object AuthorizeOptions {
     __obj.asInstanceOf[AuthorizeOptions]
   }
   
-  extension [Self <: AuthorizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeOptions] (val x: Self) extends AnyVal {
     
     inline def setIdLength(value: Double): Self = StObject.set(x, "idLength", value.asInstanceOf[js.Any])
     

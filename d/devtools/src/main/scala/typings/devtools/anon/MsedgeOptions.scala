@@ -17,7 +17,8 @@ object MsedgeOptions {
     __obj.asInstanceOf[MsedgeOptions]
   }
   
-  extension [Self <: MsedgeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MsedgeOptions] (val x: Self) extends AnyVal {
     
     inline def setMsColonedgeOptions(value: DebuggerAddress): Self = StObject.set(x, "ms:edgeOptions", value.asInstanceOf[js.Any])
   }

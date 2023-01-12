@@ -21,7 +21,8 @@ object Rack {
     __obj.asInstanceOf[Rack]
   }
   
-  extension [Self <: Rack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rack] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

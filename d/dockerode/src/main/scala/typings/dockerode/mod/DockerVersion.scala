@@ -49,7 +49,8 @@ object DockerVersion {
     __obj.asInstanceOf[DockerVersion]
   }
   
-  extension [Self <: DockerVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DockerVersion] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: String): Self = StObject.set(x, "ApiVersion", value.asInstanceOf[js.Any])
     

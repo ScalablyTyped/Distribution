@@ -25,7 +25,8 @@ object MetaKey {
     __obj.asInstanceOf[MetaKey]
   }
   
-  extension [Self <: MetaKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetaKey] (val x: Self) extends AnyVal {
     
     inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
     

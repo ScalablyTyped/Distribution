@@ -27,7 +27,8 @@ object TraitScalarsAnnotations {
     __obj.asInstanceOf[TraitScalarsAnnotations]
   }
   
-  extension [Self <: TraitScalarsAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraitScalarsAnnotations] (val x: Self) extends AnyVal {
     
     inline def setUsage(value: () => js.Array[AnnotationRef]): Self = StObject.set(x, "usage", js.Any.fromFunction0(value))
   }

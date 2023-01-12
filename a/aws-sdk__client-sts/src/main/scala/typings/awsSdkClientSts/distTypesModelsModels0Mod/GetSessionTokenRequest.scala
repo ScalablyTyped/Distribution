@@ -47,7 +47,8 @@ object GetSessionTokenRequest {
     __obj.asInstanceOf[GetSessionTokenRequest]
   }
   
-  extension [Self <: GetSessionTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSessionTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setDurationSeconds(value: Double): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
     

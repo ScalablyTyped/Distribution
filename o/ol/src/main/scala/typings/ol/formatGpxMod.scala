@@ -30,7 +30,8 @@ object formatGpxMod {
       __obj.asInstanceOf[LayoutOptions]
     }
     
-    extension [Self <: LayoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutOptions] (val x: Self) extends AnyVal {
       
       inline def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object formatGpxMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setReadExtensions(
         value: (/* p0 */ typings.ol.featureMod.default[typings.ol.geomGeometryMod.default], /* p1 */ Node) => Unit

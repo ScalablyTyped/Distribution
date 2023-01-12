@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[IFormatNumberOptions]
     }
     
-    extension [Self <: IFormatNumberOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFormatNumberOptions] (val x: Self) extends AnyVal {
       
       inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object mod {
       __obj.asInstanceOf[IFormatNumberOverrideOptions]
     }
     
-    extension [Self <: IFormatNumberOverrideOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFormatNumberOverrideOptions] (val x: Self) extends AnyVal {
       
       inline def setNoSeparator(value: Boolean): Self = StObject.set(x, "noSeparator", value.asInstanceOf[js.Any])
       

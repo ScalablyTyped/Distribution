@@ -25,7 +25,8 @@ object RaphaelFont {
     __obj.asInstanceOf[RaphaelFont]
   }
   
-  extension [Self <: RaphaelFont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaphaelFont] (val x: Self) extends AnyVal {
     
     inline def setFace(value: PartialRaphaelFontFace): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
     

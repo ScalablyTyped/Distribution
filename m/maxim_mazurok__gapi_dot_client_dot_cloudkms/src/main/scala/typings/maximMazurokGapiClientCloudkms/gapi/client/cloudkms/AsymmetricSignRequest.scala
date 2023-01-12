@@ -40,7 +40,8 @@ object AsymmetricSignRequest {
     __obj.asInstanceOf[AsymmetricSignRequest]
   }
   
-  extension [Self <: AsymmetricSignRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsymmetricSignRequest] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

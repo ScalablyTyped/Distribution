@@ -17,7 +17,8 @@ object ValidationAction {
     __obj.asInstanceOf[ValidationAction]
   }
   
-  extension [Self <: ValidationAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationAction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: () => Unit): Self = StObject.set(x, "action", js.Any.fromFunction0(value))
     

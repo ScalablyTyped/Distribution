@@ -35,7 +35,8 @@ object GenerateImageFromCodeOptions {
     __obj.asInstanceOf[GenerateImageFromCodeOptions]
   }
   
-  extension [Self <: GenerateImageFromCodeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateImageFromCodeOptions] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

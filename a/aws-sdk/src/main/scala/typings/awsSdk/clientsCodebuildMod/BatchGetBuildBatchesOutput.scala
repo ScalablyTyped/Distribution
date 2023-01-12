@@ -23,7 +23,8 @@ object BatchGetBuildBatchesOutput {
     __obj.asInstanceOf[BatchGetBuildBatchesOutput]
   }
   
-  extension [Self <: BatchGetBuildBatchesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetBuildBatchesOutput] (val x: Self) extends AnyVal {
     
     inline def setBuildBatches(value: BuildBatches): Self = StObject.set(x, "buildBatches", value.asInstanceOf[js.Any])
     

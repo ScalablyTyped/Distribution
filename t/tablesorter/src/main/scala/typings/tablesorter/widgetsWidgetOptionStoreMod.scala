@@ -48,7 +48,8 @@ object widgetsWidgetOptionStoreMod {
       __obj.asInstanceOf[WidgetOptionStore[TElement]]
     }
     
-    extension [Self <: WidgetOptionStore[?], TElement](x: Self & WidgetOptionStore[TElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidgetOptionStore[?], TElement] (val x: Self & WidgetOptionStore[TElement]) extends AnyVal {
       
       inline def set$sticky(value: JQuery[HTMLElement]): Self = StObject.set(x, "$sticky", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object BatchPutScheduledUpdateGroupActionAnswer {
     __obj.asInstanceOf[BatchPutScheduledUpdateGroupActionAnswer]
   }
   
-  extension [Self <: BatchPutScheduledUpdateGroupActionAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchPutScheduledUpdateGroupActionAnswer] (val x: Self) extends AnyVal {
     
     inline def setFailedScheduledUpdateGroupActions(value: FailedScheduledUpdateGroupActionRequests): Self = StObject.set(x, "FailedScheduledUpdateGroupActions", value.asInstanceOf[js.Any])
     

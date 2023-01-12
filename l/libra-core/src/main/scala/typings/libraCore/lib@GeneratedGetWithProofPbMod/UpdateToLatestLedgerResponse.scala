@@ -97,7 +97,8 @@ object UpdateToLatestLedgerResponse {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setLedgerInfoWithSigs(value: typings.libraCore.`lib@GeneratedLedgerInfoPbMod`.LedgerInfoWithSignatures.AsObject): Self = StObject.set(x, "ledgerInfoWithSigs", value.asInstanceOf[js.Any])
       

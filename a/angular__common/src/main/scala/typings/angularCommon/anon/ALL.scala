@@ -302,7 +302,8 @@ object ALL {
     __obj.asInstanceOf[ALL]
   }
   
-  extension [Self <: ALL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ALL] (val x: Self) extends AnyVal {
     
     inline def setAFN(value: js.Array[scala.Nothing]): Self = StObject.set(x, "AFN", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object IdentitySnapshot {
     __obj.asInstanceOf[IdentitySnapshot]
   }
   
-  extension [Self <: IdentitySnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitySnapshot] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: js.Array[Identity]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     

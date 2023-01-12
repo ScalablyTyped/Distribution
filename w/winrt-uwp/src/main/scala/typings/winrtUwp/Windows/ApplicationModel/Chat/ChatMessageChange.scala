@@ -20,7 +20,8 @@ object ChatMessageChange {
     __obj.asInstanceOf[ChatMessageChange]
   }
   
-  extension [Self <: ChatMessageChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMessageChange] (val x: Self) extends AnyVal {
     
     inline def setChangeType(value: ChatMessageChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     

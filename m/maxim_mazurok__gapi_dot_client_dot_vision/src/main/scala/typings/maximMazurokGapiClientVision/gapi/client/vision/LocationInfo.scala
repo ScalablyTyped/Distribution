@@ -16,7 +16,8 @@ object LocationInfo {
     __obj.asInstanceOf[LocationInfo]
   }
   
-  extension [Self <: LocationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationInfo] (val x: Self) extends AnyVal {
     
     inline def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     

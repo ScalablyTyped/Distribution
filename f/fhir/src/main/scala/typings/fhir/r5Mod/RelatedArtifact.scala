@@ -100,7 +100,8 @@ object RelatedArtifact {
     __obj.asInstanceOf[RelatedArtifact]
   }
   
-  extension [Self <: RelatedArtifact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedArtifact] (val x: Self) extends AnyVal {
     
     inline def setCitation(value: String): Self = StObject.set(x, "citation", value.asInstanceOf[js.Any])
     

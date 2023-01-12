@@ -17,7 +17,8 @@ object WebServerOptions {
     __obj.asInstanceOf[WebServerOptions[TProcessor, THandler]]
   }
   
-  extension [Self <: WebServerOptions[?, ?], TProcessor, THandler](x: Self & (WebServerOptions[TProcessor, THandler])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebServerOptions[?, ?], TProcessor, THandler] (val x: Self & (WebServerOptions[TProcessor, THandler])) extends AnyVal {
     
     inline def setServices(value: StringDictionary[Handler[TProcessor, THandler]]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
   }

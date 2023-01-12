@@ -28,7 +28,8 @@ object StringValueDefWithCondition {
     __obj.asInstanceOf[StringValueDefWithCondition[F, T]]
   }
   
-  extension [Self <: StringValueDefWithCondition[?, ?], F /* <: Field */, T /* <: Type */](x: Self & (StringValueDefWithCondition[F, T])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringValueDefWithCondition[?, ?], F /* <: Field */, T /* <: Type */] (val x: Self & (StringValueDefWithCondition[F, T])) extends AnyVal {
     
     inline def setCondition(
       value: (Conditional[

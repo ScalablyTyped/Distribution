@@ -28,7 +28,8 @@ object AchievementUpdateRequest {
     __obj.asInstanceOf[AchievementUpdateRequest]
   }
   
-  extension [Self <: AchievementUpdateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AchievementUpdateRequest] (val x: Self) extends AnyVal {
     
     inline def setAchievementId(value: String): Self = StObject.set(x, "achievementId", value.asInstanceOf[js.Any])
     

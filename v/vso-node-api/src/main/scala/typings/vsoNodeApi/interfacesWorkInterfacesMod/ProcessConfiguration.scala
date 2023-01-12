@@ -49,7 +49,8 @@ object ProcessConfiguration {
     __obj.asInstanceOf[ProcessConfiguration]
   }
   
-  extension [Self <: ProcessConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBugWorkItems(value: CategoryConfiguration): Self = StObject.set(x, "bugWorkItems", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object HistoryLabelRemoved {
     __obj.asInstanceOf[HistoryLabelRemoved]
   }
   
-  extension [Self <: HistoryLabelRemoved](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryLabelRemoved] (val x: Self) extends AnyVal {
     
     inline def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
     

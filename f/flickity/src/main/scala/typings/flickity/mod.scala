@@ -164,7 +164,8 @@ object mod {
       __obj.asInstanceOf[EventBindings]
     }
     
-    extension [Self <: EventBindings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventBindings] (val x: Self) extends AnyVal {
       
       inline def setBgLazyLoad(value: (/* event */ js.UndefOr[Event], /* element */ js.UndefOr[Element]) => Unit): Self = StObject.set(x, "bgLazyLoad", js.Any.fromFunction2(value))
       
@@ -817,7 +818,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAccessibility(value: Boolean): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
       

@@ -131,7 +131,8 @@ object ASTElement {
     __obj.asInstanceOf[ASTElement]
   }
   
-  extension [Self <: ASTElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASTElement] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

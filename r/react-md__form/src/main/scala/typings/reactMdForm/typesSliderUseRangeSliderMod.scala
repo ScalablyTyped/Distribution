@@ -52,7 +52,8 @@ object typesSliderUseRangeSliderMod {
       __obj.asInstanceOf[RangeSliderRequiredProps]
     }
     
-    extension [Self <: RangeSliderRequiredProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeSliderRequiredProps] (val x: Self) extends AnyVal {
       
       inline def setValue(value: RangeSliderValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -79,7 +80,8 @@ object typesSliderUseRangeSliderMod {
       __obj.asInstanceOf[UseRangeSliderOptions]
     }
     
-    extension [Self <: UseRangeSliderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseRangeSliderOptions] (val x: Self) extends AnyVal {
       
       inline def setOnChange(value: /* value */ RangeSliderValue => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       

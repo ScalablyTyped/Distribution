@@ -25,7 +25,8 @@ object dxTileViewItem {
     __obj.asInstanceOf[dxTileViewItem]
   }
   
-  extension [Self <: dxTileViewItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTileViewItem] (val x: Self) extends AnyVal {
     
     inline def setHeightRatio(value: Double): Self = StObject.set(x, "heightRatio", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object NavigationInfo {
     __obj.asInstanceOf[NavigationInfo]
   }
   
-  extension [Self <: NavigationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationInfo] (val x: Self) extends AnyVal {
     
     inline def setEnableForcedRedirect(value: Boolean): Self = StObject.set(x, "enableForcedRedirect", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ResponseGetDashboardMessageForUser200 {
     __obj.asInstanceOf[ResponseGetDashboardMessageForUser200]
   }
   
-  extension [Self <: ResponseGetDashboardMessageForUser200](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseGetDashboardMessageForUser200] (val x: Self) extends AnyVal {
     
     inline def setResponse(value: Cta): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     

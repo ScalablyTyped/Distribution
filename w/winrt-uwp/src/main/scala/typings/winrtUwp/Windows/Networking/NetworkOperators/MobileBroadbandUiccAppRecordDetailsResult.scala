@@ -39,7 +39,8 @@ object MobileBroadbandUiccAppRecordDetailsResult {
     __obj.asInstanceOf[MobileBroadbandUiccAppRecordDetailsResult]
   }
   
-  extension [Self <: MobileBroadbandUiccAppRecordDetailsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandUiccAppRecordDetailsResult] (val x: Self) extends AnyVal {
     
     inline def setKind(value: UiccAppRecordKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -289,7 +289,8 @@ object libFromReaderMod {
       __obj.asInstanceOf[FromReader[F]]
     }
     
-    extension [Self <: FromReader[?], F](x: Self & FromReader[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromReader[?], F] (val x: Self & FromReader[F]) extends AnyVal {
       
       inline def setFromReader(value: Reader_[Any, Any] => Any): Self = StObject.set(x, "fromReader", js.Any.fromFunction1(value))
       
@@ -310,7 +311,8 @@ object libFromReaderMod {
       __obj.asInstanceOf[FromReader2[F]]
     }
     
-    extension [Self <: FromReader2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & FromReader2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromReader2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & FromReader2[F]) extends AnyVal {
       
       inline def setFromReader(value: Reader_[Any, Any] => Any): Self = StObject.set(x, "fromReader", js.Any.fromFunction1(value))
       
@@ -331,7 +333,8 @@ object libFromReaderMod {
       __obj.asInstanceOf[FromReader3[F]]
     }
     
-    extension [Self <: FromReader3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & FromReader3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromReader3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & FromReader3[F]) extends AnyVal {
       
       inline def setFromReader(value: Reader_[Any, Any] => Any): Self = StObject.set(x, "fromReader", js.Any.fromFunction1(value))
       
@@ -354,7 +357,8 @@ object libFromReaderMod {
       __obj.asInstanceOf[FromReader3C[F, E]]
     }
     
-    extension [Self <: FromReader3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (FromReader3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromReader3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (FromReader3C[F, E])) extends AnyVal {
       
       inline def setFromReader(value: Reader_[Any, Any] => Any): Self = StObject.set(x, "fromReader", js.Any.fromFunction1(value))
       
@@ -377,7 +381,8 @@ object libFromReaderMod {
       __obj.asInstanceOf[FromReader4[F]]
     }
     
-    extension [Self <: FromReader4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & FromReader4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromReader4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & FromReader4[F]) extends AnyVal {
       
       inline def setFromReader(value: Reader_[Any, Any] => Any): Self = StObject.set(x, "fromReader", js.Any.fromFunction1(value))
       

@@ -59,7 +59,8 @@ object MediaTrackCapabilities {
     __obj.asInstanceOf[MediaTrackCapabilities]
   }
   
-  extension [Self <: MediaTrackCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaTrackCapabilities] (val x: Self) extends AnyVal {
     
     inline def setBrightness(value: MediaSettingsRange): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     

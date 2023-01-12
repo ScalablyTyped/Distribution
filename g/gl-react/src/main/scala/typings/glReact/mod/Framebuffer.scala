@@ -31,7 +31,8 @@ object Framebuffer {
     __obj.asInstanceOf[Framebuffer]
   }
   
-  extension [Self <: Framebuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Framebuffer] (val x: Self) extends AnyVal {
     
     inline def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
     

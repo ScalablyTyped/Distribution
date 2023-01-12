@@ -18,7 +18,8 @@ object AssociateApplicationFleetResult {
     __obj.asInstanceOf[AssociateApplicationFleetResult]
   }
   
-  extension [Self <: AssociateApplicationFleetResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateApplicationFleetResult] (val x: Self) extends AnyVal {
     
     inline def setApplicationFleetAssociation(value: ApplicationFleetAssociation): Self = StObject.set(x, "ApplicationFleetAssociation", value.asInstanceOf[js.Any])
     

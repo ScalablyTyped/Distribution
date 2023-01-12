@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[AbortSignal]
     }
     
-    extension [Self <: AbortSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbortSignal] (val x: Self) extends AnyVal {
       
       inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
     }
@@ -198,7 +199,8 @@ object mod {
       __obj.asInstanceOf[InjectOptions]
     }
     
-    extension [Self <: InjectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
@@ -308,7 +310,8 @@ object mod {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

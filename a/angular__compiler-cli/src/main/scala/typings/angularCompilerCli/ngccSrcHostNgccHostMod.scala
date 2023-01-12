@@ -60,7 +60,8 @@ object ngccSrcHostNgccHostMod {
       __obj.asInstanceOf[NgccClassSymbol]
     }
     
-    extension [Self <: NgccClassSymbol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgccClassSymbol] (val x: Self) extends AnyVal {
       
       inline def setAdjacent(value: SymbolWithValueDeclaration): Self = StObject.set(x, "adjacent", value.asInstanceOf[js.Any])
       

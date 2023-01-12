@@ -19,7 +19,8 @@ object IMetadataCardValueSuggestion {
     __obj.asInstanceOf[IMetadataCardValueSuggestion]
   }
   
-  extension [Self <: IMetadataCardValueSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMetadataCardValueSuggestion] (val x: Self) extends AnyVal {
     
     inline def setIsNewValue(value: Boolean): Self = StObject.set(x, "IsNewValue", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[C]
     }
     
-    extension [Self <: C](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: C] (val x: Self) extends AnyVal {
       
       inline def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Dklen]
     }
     
-    extension [Self <: Dklen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dklen] (val x: Self) extends AnyVal {
       
       inline def setDklen(value: Double): Self = StObject.set(x, "dklen", value.asInstanceOf[js.Any])
       
@@ -130,7 +132,8 @@ object anon {
       __obj.asInstanceOf[Iv]
     }
     
-    extension [Self <: Iv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Iv] (val x: Self) extends AnyVal {
       
       inline def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     }
@@ -147,7 +150,8 @@ object anon {
       __obj.asInstanceOf[Mac]
     }
     
-    extension [Self <: Mac](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mac] (val x: Self) extends AnyVal {
       
       inline def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     }

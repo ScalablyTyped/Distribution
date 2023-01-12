@@ -25,7 +25,8 @@ object IGradientOptionsCoords {
     __obj.asInstanceOf[IGradientOptionsCoords]
   }
   
-  extension [Self <: IGradientOptionsCoords](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGradientOptionsCoords] (val x: Self) extends AnyVal {
     
     inline def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ChannelBannerResource {
     __obj.asInstanceOf[ChannelBannerResource]
   }
   
-  extension [Self <: ChannelBannerResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelBannerResource] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

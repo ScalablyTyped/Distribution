@@ -25,7 +25,8 @@ object AptSettings {
     __obj.asInstanceOf[AptSettings]
   }
   
-  extension [Self <: AptSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AptSettings] (val x: Self) extends AnyVal {
     
     inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     

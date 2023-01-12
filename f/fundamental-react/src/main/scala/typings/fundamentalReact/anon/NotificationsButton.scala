@@ -17,7 +17,8 @@ object NotificationsButton {
     __obj.asInstanceOf[NotificationsButton]
   }
   
-  extension [Self <: NotificationsButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationsButton] (val x: Self) extends AnyVal {
     
     inline def setCounterLabel(value: String): Self = StObject.set(x, "counterLabel", value.asInstanceOf[js.Any])
     

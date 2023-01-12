@@ -83,7 +83,8 @@ object libEsmDateRangeSelectionStrategyMod {
       __obj.asInstanceOf[IDateRangeSelectionState]
     }
     
-    extension [Self <: IDateRangeSelectionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDateRangeSelectionState] (val x: Self) extends AnyVal {
       
       inline def setBoundary(value: Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       

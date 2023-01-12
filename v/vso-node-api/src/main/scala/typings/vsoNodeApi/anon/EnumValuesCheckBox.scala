@@ -15,7 +15,8 @@ object EnumValuesCheckBox {
     __obj.asInstanceOf[EnumValuesCheckBox]
   }
   
-  extension [Self <: EnumValuesCheckBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesCheckBox] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: CheckBox): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

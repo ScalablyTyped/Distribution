@@ -160,7 +160,8 @@ object mod {
       __obj.asInstanceOf[CommonProps]
     }
     
-    extension [Self <: CommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
       
       inline def setAfterLoad(value: () => Any): Self = StObject.set(x, "afterLoad", js.Any.fromFunction0(value))
       
@@ -240,7 +241,8 @@ object mod {
       __obj.asInstanceOf[LazyComponentProps]
     }
     
-    extension [Self <: LazyComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LazyComponentProps] (val x: Self) extends AnyVal {
       
       inline def setScrollPosition(value: ScrollPosition): Self = StObject.set(x, "scrollPosition", value.asInstanceOf[js.Any])
     }
@@ -261,7 +263,8 @@ object mod {
       __obj.asInstanceOf[LazyLoadComponentProps]
     }
     
-    extension [Self <: LazyLoadComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LazyLoadComponentProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -695,7 +698,8 @@ object mod {
       __obj.asInstanceOf[LazyLoadImageProps]
     }
     
-    extension [Self <: LazyLoadImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LazyLoadImageProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1510,7 +1514,8 @@ object mod {
       __obj.asInstanceOf[ScrollPosition]
     }
     
-    extension [Self <: ScrollPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollPosition] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

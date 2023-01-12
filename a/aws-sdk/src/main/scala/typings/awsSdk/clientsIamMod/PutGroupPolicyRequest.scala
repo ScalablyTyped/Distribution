@@ -28,7 +28,8 @@ object PutGroupPolicyRequest {
     __obj.asInstanceOf[PutGroupPolicyRequest]
   }
   
-  extension [Self <: PutGroupPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutGroupPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     

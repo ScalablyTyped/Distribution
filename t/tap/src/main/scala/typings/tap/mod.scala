@@ -2312,7 +2312,8 @@ object mod extends Shortcut {
             __obj.asInstanceOf[Instance]
           }
           
-          extension [Self <: Instance](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
             
             inline def setContent(value: String | Buffer | Spec): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
             
@@ -3556,7 +3557,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DeprecatedAssertionSynonyms]
     }
     
-    extension [Self <: DeprecatedAssertionSynonyms](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeprecatedAssertionSynonyms] (val x: Self) extends AnyVal {
       
       inline def setAssert(
         value: (/* obj */ Any, /* message */ js.UndefOr[String], /* extra */ js.UndefOr[Assert]) => Boolean
@@ -3867,7 +3869,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Assert]
       }
       
-      extension [Self <: Assert](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Assert] (val x: Self) extends AnyVal {
         
         inline def setDiagnostic(value: Boolean): Self = StObject.set(x, "diagnostic", value.asInstanceOf[js.Any])
         
@@ -3902,7 +3905,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Spawn]
       }
       
-      extension [Self <: Spawn](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Spawn] (val x: Self) extends AnyVal {
         
         inline def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
         
@@ -3941,7 +3945,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[typings.tap.mod.Options.Test]
       }
       
-      extension [Self <: typings.tap.mod.Options.Test](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.tap.mod.Options.Test] (val x: Self) extends AnyVal {
         
         inline def setAutoend(value: Boolean): Self = StObject.set(x, "autoend", value.asInstanceOf[js.Any])
         

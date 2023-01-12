@@ -17,7 +17,8 @@ object BatchMatMulAttrs {
     __obj.asInstanceOf[BatchMatMulAttrs]
   }
   
-  extension [Self <: BatchMatMulAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchMatMulAttrs] (val x: Self) extends AnyVal {
     
     inline def setTransposeA(value: Boolean): Self = StObject.set(x, "transposeA", value.asInstanceOf[js.Any])
     

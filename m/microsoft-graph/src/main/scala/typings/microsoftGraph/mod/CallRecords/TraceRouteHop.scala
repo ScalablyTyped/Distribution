@@ -27,7 +27,8 @@ object TraceRouteHop {
     __obj.asInstanceOf[TraceRouteHop]
   }
   
-  extension [Self <: TraceRouteHop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraceRouteHop] (val x: Self) extends AnyVal {
     
     inline def setHopCount(value: NullableOption[Double]): Self = StObject.set(x, "hopCount", value.asInstanceOf[js.Any])
     

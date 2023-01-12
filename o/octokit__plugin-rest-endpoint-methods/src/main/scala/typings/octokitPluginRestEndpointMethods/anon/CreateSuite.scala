@@ -50,7 +50,8 @@ object CreateSuite {
     __obj.asInstanceOf[CreateSuite]
   }
   
-  extension [Self <: CreateSuite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSuite] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: `951`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

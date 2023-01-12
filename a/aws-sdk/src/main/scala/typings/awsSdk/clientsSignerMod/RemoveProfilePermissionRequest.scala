@@ -28,7 +28,8 @@ object RemoveProfilePermissionRequest {
     __obj.asInstanceOf[RemoveProfilePermissionRequest]
   }
   
-  extension [Self <: RemoveProfilePermissionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveProfilePermissionRequest] (val x: Self) extends AnyVal {
     
     inline def setProfileName(value: ProfileName): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ConnectorConfigResponse {
     __obj.asInstanceOf[ConnectorConfigResponse]
   }
   
-  extension [Self <: ConnectorConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setActivationCode(value: String): Self = StObject.set(x, "activationCode", value.asInstanceOf[js.Any])
     

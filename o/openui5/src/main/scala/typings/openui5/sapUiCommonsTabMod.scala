@@ -295,7 +295,8 @@ object sapUiCommonsTabMod {
       __obj.asInstanceOf[TabSettings]
     }
     
-    extension [Self <: TabSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabSettings] (val x: Self) extends AnyVal {
       
       inline def setClosable(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
       

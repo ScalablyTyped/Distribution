@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Deflate]
     }
     
-    extension [Self <: Deflate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deflate] (val x: Self) extends AnyVal {
       
       inline def setDeflate(value: js.Array[String]): Self = StObject.set(x, "deflate", value.asInstanceOf[js.Any])
       

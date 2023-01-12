@@ -25,7 +25,8 @@ object PartialMDCTextFieldFounda {
     __obj.asInstanceOf[PartialMDCTextFieldFounda]
   }
   
-  extension [Self <: PartialMDCTextFieldFounda](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMDCTextFieldFounda] (val x: Self) extends AnyVal {
     
     inline def setCharacterCounter(value: MDCTextFieldCharacterCounterFoundation): Self = StObject.set(x, "characterCounter", value.asInstanceOf[js.Any])
     

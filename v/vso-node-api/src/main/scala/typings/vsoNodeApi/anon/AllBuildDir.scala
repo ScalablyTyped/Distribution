@@ -26,7 +26,8 @@ object AllBuildDir {
     __obj.asInstanceOf[AllBuildDir]
   }
   
-  extension [Self <: AllBuildDir](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllBuildDir] (val x: Self) extends AnyVal {
     
     inline def setAllBuildDir(value: scala.Double): Self = StObject.set(x, "allBuildDir", value.asInstanceOf[js.Any])
     

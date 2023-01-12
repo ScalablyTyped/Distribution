@@ -17,7 +17,8 @@ object EAGER {
     __obj.asInstanceOf[EAGER]
   }
   
-  extension [Self <: EAGER](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EAGER] (val x: Self) extends AnyVal {
     
     inline def setEAGER(value: String): Self = StObject.set(x, "EAGER", value.asInstanceOf[js.Any])
     

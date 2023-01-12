@@ -18,7 +18,8 @@ object ModelDigests {
     __obj.asInstanceOf[ModelDigests]
   }
   
-  extension [Self <: ModelDigests](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelDigests] (val x: Self) extends AnyVal {
     
     inline def setArtifactDigest(value: ArtifactDigest): Self = StObject.set(x, "ArtifactDigest", value.asInstanceOf[js.Any])
     

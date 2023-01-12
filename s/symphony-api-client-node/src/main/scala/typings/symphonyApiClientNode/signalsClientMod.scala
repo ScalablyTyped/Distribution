@@ -182,7 +182,8 @@ object signalsClientMod {
       __obj.asInstanceOf[DeleteOperationResult]
     }
     
-    extension [Self <: DeleteOperationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteOperationResult] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -218,7 +219,8 @@ object signalsClientMod {
       __obj.asInstanceOf[Signal]
     }
     
-    extension [Self <: Signal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Signal] (val x: Self) extends AnyVal {
       
       inline def setCompanyWide(value: Boolean): Self = StObject.set(x, "companyWide", value.asInstanceOf[js.Any])
       
@@ -253,7 +255,8 @@ object signalsClientMod {
       __obj.asInstanceOf[SignalSubscriber]
     }
     
-    extension [Self <: SignalSubscriber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignalSubscriber] (val x: Self) extends AnyVal {
       
       inline def setOwner(value: Boolean): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
@@ -284,7 +287,8 @@ object signalsClientMod {
       __obj.asInstanceOf[SignalSubscribersResponse]
     }
     
-    extension [Self <: SignalSubscribersResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignalSubscribersResponse] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[SignalSubscriber]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -320,7 +324,8 @@ object signalsClientMod {
       __obj.asInstanceOf[SignalSubscriptionResult]
     }
     
-    extension [Self <: SignalSubscriptionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignalSubscriptionResult] (val x: Self) extends AnyVal {
       
       inline def setFailedSubscription(value: Double): Self = StObject.set(x, "failedSubscription", value.asInstanceOf[js.Any])
       

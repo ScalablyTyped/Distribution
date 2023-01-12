@@ -83,7 +83,8 @@ object Framework {
     __obj.asInstanceOf[Framework]
   }
   
-  extension [Self <: Framework](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Framework] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AuditManagerArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

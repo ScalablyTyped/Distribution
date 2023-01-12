@@ -48,7 +48,8 @@ object AwsEc2SecurityGroupIpPermission {
     __obj.asInstanceOf[AwsEc2SecurityGroupIpPermission]
   }
   
-  extension [Self <: AwsEc2SecurityGroupIpPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2SecurityGroupIpPermission] (val x: Self) extends AnyVal {
     
     inline def setFromPort(value: Integer): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
     

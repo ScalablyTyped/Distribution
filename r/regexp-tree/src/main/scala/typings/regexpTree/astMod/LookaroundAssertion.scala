@@ -26,7 +26,8 @@ object LookaroundAssertion {
     __obj.asInstanceOf[LookaroundAssertion]
   }
   
-  extension [Self <: LookaroundAssertion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookaroundAssertion] (val x: Self) extends AnyVal {
     
     inline def setAssertion(value: Expression): Self = StObject.set(x, "assertion", value.asInstanceOf[js.Any])
     

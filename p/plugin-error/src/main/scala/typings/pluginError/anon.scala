@@ -58,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Optionsmessagestring]
     }
     
-    extension [Self <: Optionsmessagestring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsmessagestring] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object anon {
       __obj.asInstanceOf[Optionspluginstringmessag]
     }
     
-    extension [Self <: Optionspluginstringmessag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionspluginstringmessag] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -225,7 +227,8 @@ object anon {
       __obj.asInstanceOf[PluginError]
     }
     
-    extension [Self <: PluginError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginError] (val x: Self) extends AnyVal {
       
       inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       

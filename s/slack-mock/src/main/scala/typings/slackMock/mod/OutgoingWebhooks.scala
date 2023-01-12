@@ -23,7 +23,8 @@ object OutgoingWebhooks {
     __obj.asInstanceOf[OutgoingWebhooks[T]]
   }
   
-  extension [Self <: OutgoingWebhooks[?], T](x: Self & OutgoingWebhooks[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutgoingWebhooks[?], T] (val x: Self & OutgoingWebhooks[T]) extends AnyVal {
     
     inline def setCalls(value: js.Array[OutgoingWebhookCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     

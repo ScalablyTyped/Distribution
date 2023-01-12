@@ -34,7 +34,8 @@ object TextElement {
     __obj.asInstanceOf[TextElement]
   }
   
-  extension [Self <: TextElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextElement] (val x: Self) extends AnyVal {
     
     inline def setAutoText(value: AutoText): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
     

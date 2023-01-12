@@ -19,7 +19,8 @@ object SetDataValidationRequest {
     __obj.asInstanceOf[SetDataValidationRequest]
   }
   
-  extension [Self <: SetDataValidationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetDataValidationRequest] (val x: Self) extends AnyVal {
     
     inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

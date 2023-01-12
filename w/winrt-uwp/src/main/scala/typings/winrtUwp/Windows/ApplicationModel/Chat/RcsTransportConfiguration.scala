@@ -39,7 +39,8 @@ object RcsTransportConfiguration {
     __obj.asInstanceOf[RcsTransportConfiguration]
   }
   
-  extension [Self <: RcsTransportConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RcsTransportConfiguration] (val x: Self) extends AnyVal {
     
     inline def setMaxAttachmentCount(value: Double): Self = StObject.set(x, "maxAttachmentCount", value.asInstanceOf[js.Any])
     

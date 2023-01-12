@@ -18,7 +18,8 @@ object PathLineCommand {
     __obj.asInstanceOf[PathLineCommand]
   }
   
-  extension [Self <: PathLineCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathLineCommand] (val x: Self) extends AnyVal {
     
     inline def setLine(value: VectorOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
   }

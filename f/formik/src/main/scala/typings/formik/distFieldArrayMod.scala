@@ -100,7 +100,8 @@ object distFieldArrayMod {
       __obj.asInstanceOf[ArrayHelpers]
     }
     
-    extension [Self <: ArrayHelpers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayHelpers] (val x: Self) extends AnyVal {
       
       inline def setHandleInsert(value: (Double, Any) => js.Function0[Unit]): Self = StObject.set(x, "handleInsert", js.Any.fromFunction2(value))
       
@@ -153,7 +154,8 @@ object distFieldArrayMod {
       __obj.asInstanceOf[FieldArrayConfig]
     }
     
-    extension [Self <: FieldArrayConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldArrayConfig] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -197,7 +199,8 @@ object distFieldArrayMod {
       __obj.asInstanceOf[FieldArrayRenderProps]
     }
     
-    extension [Self <: FieldArrayRenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldArrayRenderProps] (val x: Self) extends AnyVal {
       
       inline def setForm(value: FormikProps[Any]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       

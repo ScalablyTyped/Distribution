@@ -113,7 +113,8 @@ object NightwatchTestSettingGeneric {
     __obj.asInstanceOf[NightwatchTestSettingGeneric]
   }
   
-  extension [Self <: NightwatchTestSettingGeneric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NightwatchTestSettingGeneric] (val x: Self) extends AnyVal {
     
     inline def setAccess_key(value: String): Self = StObject.set(x, "access_key", value.asInstanceOf[js.Any])
     

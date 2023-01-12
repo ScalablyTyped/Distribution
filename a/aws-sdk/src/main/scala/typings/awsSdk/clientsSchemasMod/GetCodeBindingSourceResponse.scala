@@ -15,7 +15,8 @@ object GetCodeBindingSourceResponse {
     __obj.asInstanceOf[GetCodeBindingSourceResponse]
   }
   
-  extension [Self <: GetCodeBindingSourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCodeBindingSourceResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Body): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     

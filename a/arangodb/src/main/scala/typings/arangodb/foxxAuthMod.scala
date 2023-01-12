@@ -33,7 +33,8 @@ object foxxAuthMod {
       __obj.asInstanceOf[AuthData]
     }
     
-    extension [Self <: AuthData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthData] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object foxxAuthMod {
       __obj.asInstanceOf[AuthOptions]
     }
     
-    extension [Self <: AuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: HashAlgorithm): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object foxxAuthMod {
       __obj.asInstanceOf[Pbkdf2AuthOptions]
     }
     
-    extension [Self <: Pbkdf2AuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pbkdf2AuthOptions] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: pbkdf2): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       

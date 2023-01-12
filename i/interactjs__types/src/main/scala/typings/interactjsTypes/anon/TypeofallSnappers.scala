@@ -21,7 +21,8 @@ object TypeofallSnappers {
     __obj.asInstanceOf[TypeofallSnappers]
   }
   
-  extension [Self <: TypeofallSnappers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofallSnappers] (val x: Self) extends AnyVal {
     
     inline def setEdgeTarget(value: () => Unit): Self = StObject.set(x, "edgeTarget", js.Any.fromFunction0(value))
     

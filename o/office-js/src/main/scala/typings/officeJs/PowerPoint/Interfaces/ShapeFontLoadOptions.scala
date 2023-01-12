@@ -73,7 +73,8 @@ object ShapeFontLoadOptions {
     __obj.asInstanceOf[ShapeFontLoadOptions]
   }
   
-  extension [Self <: ShapeFontLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeFontLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

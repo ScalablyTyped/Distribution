@@ -18,7 +18,8 @@ object MetricMathAnomalyDetector {
     __obj.asInstanceOf[MetricMathAnomalyDetector]
   }
   
-  extension [Self <: MetricMathAnomalyDetector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricMathAnomalyDetector] (val x: Self) extends AnyVal {
     
     inline def setMetricDataQueries(value: MetricDataQueries): Self = StObject.set(x, "MetricDataQueries", value.asInstanceOf[js.Any])
     

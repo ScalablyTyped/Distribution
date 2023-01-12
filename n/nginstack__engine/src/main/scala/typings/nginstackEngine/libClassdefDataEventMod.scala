@@ -33,7 +33,8 @@ object libClassdefDataEventMod {
       __obj.asInstanceOf[DataEvent]
     }
     
-    extension [Self <: DataEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: DataSet): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }

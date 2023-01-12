@@ -39,7 +39,8 @@ object Parameter {
     __obj.asInstanceOf[Parameter]
   }
   
-  extension [Self <: Parameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
     
     inline def setAddRule(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Parameter.addRule */ Any

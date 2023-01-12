@@ -53,7 +53,8 @@ object PersistentSettings {
     __obj.asInstanceOf[PersistentSettings]
   }
   
-  extension [Self <: PersistentSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistentSettings] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: () => Boolean): Self = StObject.set(x, "available", js.Any.fromFunction0(value))
     

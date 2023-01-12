@@ -37,7 +37,8 @@ object status {
     __obj.asInstanceOf[status]
   }
   
-  extension [Self <: status](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: status] (val x: Self) extends AnyVal {
     
     inline def setERROR(value: error): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     

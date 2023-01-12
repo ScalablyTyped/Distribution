@@ -20,7 +20,8 @@ object OptionsDocCommandArgs {
     __obj.asInstanceOf[OptionsDocCommandArgs]
   }
   
-  extension [Self <: OptionsDocCommandArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsDocCommandArgs] (val x: Self) extends AnyVal {
     
     inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     

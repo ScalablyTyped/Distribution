@@ -19,7 +19,8 @@ object TodoComment {
     __obj.asInstanceOf[TodoComment]
   }
   
-  extension [Self <: TodoComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TodoComment] (val x: Self) extends AnyVal {
     
     inline def setDescriptor(value: TodoCommentDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
     

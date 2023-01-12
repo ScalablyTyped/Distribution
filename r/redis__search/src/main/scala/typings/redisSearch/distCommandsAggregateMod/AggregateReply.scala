@@ -19,7 +19,8 @@ object AggregateReply {
     __obj.asInstanceOf[AggregateReply]
   }
   
-  extension [Self <: AggregateReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateReply] (val x: Self) extends AnyVal {
     
     inline def setResults(value: js.Array[Record[String, RedisCommandArgument]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Options {
     __obj.asInstanceOf[Options[CommandOptions]]
   }
   
-  extension [Self <: Options[?], CommandOptions](x: Self & Options[CommandOptions]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options[?], CommandOptions] (val x: Self & Options[CommandOptions]) extends AnyVal {
     
     inline def setOptions(value: typings.snyk.distLibTypesMod.Options & CommandOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

@@ -118,7 +118,8 @@ object CreateNFSFileShareInput {
     __obj.asInstanceOf[CreateNFSFileShareInput]
   }
   
-  extension [Self <: CreateNFSFileShareInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNFSFileShareInput] (val x: Self) extends AnyVal {
     
     inline def setAuditDestinationARN(value: AuditDestinationARN): Self = StObject.set(x, "AuditDestinationARN", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object mod {
       __obj.asInstanceOf[ReactNativePhotoViewProps]
     }
     
-    extension [Self <: ReactNativePhotoViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactNativePhotoViewProps] (val x: Self) extends AnyVal {
       
       inline def setAndroidScaleType(value: center | centerCrop | centerInside | fitCenter | fitStart | fitEnd | fitXY): Self = StObject.set(x, "androidScaleType", value.asInstanceOf[js.Any])
       

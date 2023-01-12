@@ -648,7 +648,8 @@ object OmitCheckBoxsetAbsoluteBounds {
     __obj.asInstanceOf[OmitCheckBoxsetAbsoluteBounds]
   }
   
-  extension [Self <: OmitCheckBoxsetAbsoluteBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitCheckBoxsetAbsoluteBounds] (val x: Self) extends AnyVal {
     
     inline def set$getProperty(value: /* name */ String => Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
     

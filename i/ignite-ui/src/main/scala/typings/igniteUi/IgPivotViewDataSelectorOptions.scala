@@ -38,7 +38,8 @@ object IgPivotViewDataSelectorOptions {
     __obj.asInstanceOf[IgPivotViewDataSelectorOptions]
   }
   
-  extension [Self <: IgPivotViewDataSelectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPivotViewDataSelectorOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomMoveValidation(value: js.Function): Self = StObject.set(x, "customMoveValidation", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object ConsequenceParams {
     __obj.asInstanceOf[ConsequenceParams]
   }
   
-  extension [Self <: ConsequenceParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsequenceParams] (val x: Self) extends AnyVal {
     
     inline def setAutomaticFacetFilters(value: js.Array[AutomaticFacetFilter | String]): Self = StObject.set(x, "automaticFacetFilters", value.asInstanceOf[js.Any])
     

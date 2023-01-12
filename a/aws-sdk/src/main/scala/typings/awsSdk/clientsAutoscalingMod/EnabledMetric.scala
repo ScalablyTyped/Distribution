@@ -23,7 +23,8 @@ object EnabledMetric {
     __obj.asInstanceOf[EnabledMetric]
   }
   
-  extension [Self <: EnabledMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnabledMetric] (val x: Self) extends AnyVal {
     
     inline def setGranularity(value: XmlStringMaxLen255): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
     

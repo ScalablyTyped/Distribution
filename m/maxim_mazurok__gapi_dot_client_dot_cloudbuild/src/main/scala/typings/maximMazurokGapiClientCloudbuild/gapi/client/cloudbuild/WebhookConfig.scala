@@ -19,7 +19,8 @@ object WebhookConfig {
     __obj.asInstanceOf[WebhookConfig]
   }
   
-  extension [Self <: WebhookConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebhookConfig] (val x: Self) extends AnyVal {
     
     inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     

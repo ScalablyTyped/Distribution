@@ -28,7 +28,8 @@ object PutFileSystemPolicyRequest {
     __obj.asInstanceOf[PutFileSystemPolicyRequest]
   }
   
-  extension [Self <: PutFileSystemPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutFileSystemPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setBypassPolicyLockoutSafetyCheck(value: BypassPolicyLockoutSafetyCheck): Self = StObject.set(x, "BypassPolicyLockoutSafetyCheck", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetQualificationScoreResponse {
     __obj.asInstanceOf[GetQualificationScoreResponse]
   }
   
-  extension [Self <: GetQualificationScoreResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetQualificationScoreResponse] (val x: Self) extends AnyVal {
     
     inline def setQualification(value: Qualification): Self = StObject.set(x, "Qualification", value.asInstanceOf[js.Any])
     

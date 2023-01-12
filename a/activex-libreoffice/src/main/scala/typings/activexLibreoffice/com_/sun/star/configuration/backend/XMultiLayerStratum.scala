@@ -119,7 +119,8 @@ object XMultiLayerStratum {
     __obj.asInstanceOf[XMultiLayerStratum]
   }
   
-  extension [Self <: XMultiLayerStratum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMultiLayerStratum] (val x: Self) extends AnyVal {
     
     inline def setGetLayer(value: (String, String) => XLayer): Self = StObject.set(x, "getLayer", js.Any.fromFunction2(value))
     

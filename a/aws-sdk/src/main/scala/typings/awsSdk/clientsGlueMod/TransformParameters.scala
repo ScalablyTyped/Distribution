@@ -23,7 +23,8 @@ object TransformParameters {
     __obj.asInstanceOf[TransformParameters]
   }
   
-  extension [Self <: TransformParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformParameters] (val x: Self) extends AnyVal {
     
     inline def setFindMatchesParameters(value: FindMatchesParameters): Self = StObject.set(x, "FindMatchesParameters", value.asInstanceOf[js.Any])
     

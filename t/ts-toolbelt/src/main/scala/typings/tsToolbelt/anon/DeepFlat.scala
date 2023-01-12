@@ -19,7 +19,8 @@ object DeepFlat {
     __obj.asInstanceOf[DeepFlat[O]]
   }
   
-  extension [Self <: DeepFlat[?], O /* <: js.Object */](x: Self & DeepFlat[O]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepFlat[?], O /* <: js.Object */] (val x: Self & DeepFlat[O]) extends AnyVal {
     
     inline def setDeep(value: CompulsoryDeep[O]): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     

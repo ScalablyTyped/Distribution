@@ -23,7 +23,8 @@ object Scoping {
     __obj.asInstanceOf[Scoping]
   }
   
-  extension [Self <: Scoping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scoping] (val x: Self) extends AnyVal {
     
     inline def setExcludes(value: JobScopingBlock): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     

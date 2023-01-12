@@ -28,7 +28,8 @@ object DBError {
     __obj.asInstanceOf[DBError]
   }
   
-  extension [Self <: DBError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBError] (val x: Self) extends AnyVal {
     
     inline def setErrorNum(value: Double): Self = StObject.set(x, "errorNum", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[OpenAPIParametersAsJSONSchema]
     }
     
-    extension [Self <: OpenAPIParametersAsJSONSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIParametersAsJSONSchema] (val x: Self) extends AnyVal {
       
       inline def setBody(value: IJsonSchema): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

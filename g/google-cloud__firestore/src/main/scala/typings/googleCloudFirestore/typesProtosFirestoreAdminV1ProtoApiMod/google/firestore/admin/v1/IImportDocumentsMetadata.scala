@@ -36,7 +36,8 @@ object IImportDocumentsMetadata {
     __obj.asInstanceOf[IImportDocumentsMetadata]
   }
   
-  extension [Self <: IImportDocumentsMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IImportDocumentsMetadata] (val x: Self) extends AnyVal {
     
     inline def setCollectionIds(value: js.Array[String]): Self = StObject.set(x, "collectionIds", value.asInstanceOf[js.Any])
     

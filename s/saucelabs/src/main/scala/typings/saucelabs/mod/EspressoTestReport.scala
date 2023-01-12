@@ -97,7 +97,8 @@ object EspressoTestReport {
     __obj.asInstanceOf[EspressoTestReport]
   }
   
-  extension [Self <: EspressoTestReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EspressoTestReport] (val x: Self) extends AnyVal {
     
     inline def setAppVersionId(value: Double): Self = StObject.set(x, "appVersionId", value.asInstanceOf[js.Any])
     

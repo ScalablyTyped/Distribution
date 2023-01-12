@@ -104,7 +104,8 @@ object distDisplayObjectsTextMod {
       __obj.asInstanceOf[ParsedTextStyleProps]
     }
     
-    extension [Self <: ParsedTextStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedTextStyleProps] (val x: Self) extends AnyVal {
       
       inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       
@@ -306,7 +307,8 @@ object distDisplayObjectsTextMod {
       __obj.asInstanceOf[TextStyleProps]
     }
     
-    extension [Self <: TextStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextStyleProps] (val x: Self) extends AnyVal {
       
       inline def setDx(value: Double | String): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       

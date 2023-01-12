@@ -99,7 +99,8 @@ object UserSignatureDefinition {
     __obj.asInstanceOf[UserSignatureDefinition]
   }
   
-  extension [Self <: UserSignatureDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserSignatureDefinition] (val x: Self) extends AnyVal {
     
     inline def setDateStampProperties(value: DateStampProperties): Self = StObject.set(x, "dateStampProperties", value.asInstanceOf[js.Any])
     

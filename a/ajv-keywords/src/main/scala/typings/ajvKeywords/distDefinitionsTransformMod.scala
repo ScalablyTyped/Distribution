@@ -26,7 +26,8 @@ object distDefinitionsTransformMod extends Shortcut {
       __obj.asInstanceOf[TransformConfig]
     }
     
-    extension [Self <: TransformConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformConfig] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Record[String, js.UndefOr[String]]): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     }

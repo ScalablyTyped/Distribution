@@ -40,7 +40,8 @@ object TargetHttpsProxyAggregatedList {
     __obj.asInstanceOf[TargetHttpsProxyAggregatedList]
   }
   
-  extension [Self <: TargetHttpsProxyAggregatedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetHttpsProxyAggregatedList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

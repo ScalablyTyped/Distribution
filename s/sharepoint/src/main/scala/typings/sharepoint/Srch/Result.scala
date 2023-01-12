@@ -318,7 +318,8 @@ object Result {
     __obj.asInstanceOf[Result]
   }
   
-  extension [Self <: Result](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: (String, String, String, String, String, String, String, String, String) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction9(value))
     

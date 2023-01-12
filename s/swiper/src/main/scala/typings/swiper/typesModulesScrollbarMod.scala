@@ -84,7 +84,8 @@ object typesModulesScrollbarMod {
       __obj.asInstanceOf[ScrollbarMethods]
     }
     
-    extension [Self <: ScrollbarMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollbarMethods] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -184,7 +185,8 @@ object typesModulesScrollbarMod {
       __obj.asInstanceOf[ScrollbarOptions]
     }
     
-    extension [Self <: ScrollbarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollbarOptions] (val x: Self) extends AnyVal {
       
       inline def setDragClass(value: String): Self = StObject.set(x, "dragClass", value.asInstanceOf[js.Any])
       

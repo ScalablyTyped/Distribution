@@ -28,7 +28,8 @@ object OptionSpecification {
     __obj.asInstanceOf[OptionSpecification]
   }
   
-  extension [Self <: OptionSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionSpecification] (val x: Self) extends AnyVal {
     
     inline def setNamespace(value: OptionNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     

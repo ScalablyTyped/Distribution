@@ -15,7 +15,8 @@ object P2pTradeResponse {
     __obj.asInstanceOf[P2pTradeResponse]
   }
   
-  extension [Self <: P2pTradeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: P2pTradeResponse] (val x: Self) extends AnyVal {
     
     inline def setTradeForm(value: FormResponse): Self = StObject.set(x, "tradeForm", value.asInstanceOf[js.Any])
   }

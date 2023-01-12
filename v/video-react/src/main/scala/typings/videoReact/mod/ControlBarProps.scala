@@ -41,7 +41,8 @@ object ControlBarProps {
     __obj.asInstanceOf[ControlBarProps]
   }
   
-  extension [Self <: ControlBarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlBarProps] (val x: Self) extends AnyVal {
     
     inline def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     

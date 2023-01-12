@@ -15,7 +15,8 @@ object CaptionsChangedParam {
     __obj.asInstanceOf[CaptionsChangedParam]
   }
   
-  extension [Self <: CaptionsChangedParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionsChangedParam] (val x: Self) extends AnyVal {
     
     inline def setCurrentTrack(value: Double): Self = StObject.set(x, "currentTrack", value.asInstanceOf[js.Any])
   }

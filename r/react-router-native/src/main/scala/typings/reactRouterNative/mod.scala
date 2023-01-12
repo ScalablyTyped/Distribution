@@ -107,7 +107,8 @@ object mod {
       __obj.asInstanceOf[BackButtonProps]
     }
     
-    extension [Self <: BackButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackButtonProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object mod {
       __obj.asInstanceOf[LinkProps]
     }
     
-    extension [Self <: LinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ComponentType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -175,7 +177,8 @@ object mod {
       __obj.asInstanceOf[NativeRouterProps]
     }
     
-    extension [Self <: NativeRouterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeRouterProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

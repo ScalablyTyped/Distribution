@@ -274,7 +274,8 @@ object mod {
       __obj.asInstanceOf[coreVisitors[V]]
     }
     
-    extension [Self <: coreVisitors[?], V](x: Self & coreVisitors[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: coreVisitors[?], V] (val x: Self & coreVisitors[V]) extends AnyVal {
       
       inline def setArrayExpression(value: V): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
       
@@ -547,7 +548,8 @@ object mod {
       __obj.asInstanceOf[es2015Visitors[V]]
     }
     
-    extension [Self <: es2015Visitors[?], V](x: Self & es2015Visitors[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: es2015Visitors[?], V] (val x: Self & es2015Visitors[V]) extends AnyVal {
       
       inline def setArrayPattern(value: V): Self = StObject.set(x, "ArrayPattern", value.asInstanceOf[js.Any])
       
@@ -762,7 +764,8 @@ object mod {
       __obj.asInstanceOf[flowVisitors[V]]
     }
     
-    extension [Self <: flowVisitors[?], V](x: Self & flowVisitors[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: flowVisitors[?], V] (val x: Self & flowVisitors[V]) extends AnyVal {
       
       inline def setAnyTypeAnnotation(value: V): Self = StObject.set(x, "AnyTypeAnnotation", value.asInstanceOf[js.Any])
       
@@ -951,7 +954,8 @@ object mod {
       __obj.asInstanceOf[jsxVisitors[V]]
     }
     
-    extension [Self <: jsxVisitors[?], V](x: Self & jsxVisitors[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: jsxVisitors[?], V] (val x: Self & jsxVisitors[V]) extends AnyVal {
       
       inline def setJSXAttribute(value: V): Self = StObject.set(x, "JSXAttribute", value.asInstanceOf[js.Any])
       
@@ -1014,7 +1018,8 @@ object mod {
       __obj.asInstanceOf[miscVisitors[V]]
     }
     
-    extension [Self <: miscVisitors[?], V](x: Self & miscVisitors[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: miscVisitors[?], V] (val x: Self & miscVisitors[V]) extends AnyVal {
       
       inline def setNoop(value: V): Self = StObject.set(x, "Noop", value.asInstanceOf[js.Any])
       

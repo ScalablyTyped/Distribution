@@ -18,7 +18,8 @@ object WebCLSampler {
     __obj.asInstanceOf[WebCLSampler]
   }
   
-  extension [Self <: WebCLSampler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebCLSampler] (val x: Self) extends AnyVal {
     
     inline def setGetInfo(value: SamplerInfo => Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     

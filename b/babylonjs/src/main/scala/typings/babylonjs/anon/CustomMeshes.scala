@@ -38,7 +38,8 @@ object CustomMeshes {
     __obj.asInstanceOf[CustomMeshes]
   }
   
-  extension [Self <: CustomMeshes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomMeshes] (val x: Self) extends AnyVal {
     
     inline def setCustomColors(value: FingerColor): Self = StObject.set(x, "customColors", value.asInstanceOf[js.Any])
     

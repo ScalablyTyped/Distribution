@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[CliOptions]
     }
     
-    extension [Self <: CliOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CliOptions] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setBinaries(value: js.Array[String]): Self = StObject.set(x, "Binaries", value.asInstanceOf[js.Any])
       
@@ -854,7 +856,8 @@ object mod {
       __obj.asInstanceOf[Helpers_]
     }
     
-    extension [Self <: Helpers_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Helpers_] (val x: Self) extends AnyVal {
       
       inline def setGetAndroidSDKInfo(value: () => js.Promise[String]): Self = StObject.set(x, "getAndroidSDKInfo", js.Any.fromFunction0(value))
       
@@ -1045,7 +1048,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setConsole(value: Boolean): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
@@ -1090,7 +1094,8 @@ object mod {
       __obj.asInstanceOf[RunConfig]
     }
     
-    extension [Self <: RunConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunConfig] (val x: Self) extends AnyVal {
       
       inline def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       

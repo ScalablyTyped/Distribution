@@ -79,7 +79,8 @@ object buildSrcContextsCanvasMod {
       __obj.asInstanceOf[ICanvasFontStyle]
     }
     
-    extension [Self <: ICanvasFontStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICanvasFontStyle] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       

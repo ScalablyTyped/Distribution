@@ -29,7 +29,8 @@ object XpackUsageEqlFeaturesJoin {
     __obj.asInstanceOf[XpackUsageEqlFeaturesJoin]
   }
   
-  extension [Self <: XpackUsageEqlFeaturesJoin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageEqlFeaturesJoin] (val x: Self) extends AnyVal {
     
     inline def setJoin_queries_five_or_more(value: uint): Self = StObject.set(x, "join_queries_five_or_more", value.asInstanceOf[js.Any])
     

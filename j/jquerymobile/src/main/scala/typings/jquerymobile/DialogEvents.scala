@@ -16,7 +16,8 @@ object DialogEvents {
     __obj.asInstanceOf[DialogEvents]
   }
   
-  extension [Self <: DialogEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogEvents] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (/* event */ Event, /* ui */ Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     

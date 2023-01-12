@@ -39,7 +39,8 @@ object typesUseFieldStatesMod {
       __obj.asInstanceOf[EventHandlers[E]]
     }
     
-    extension [Self <: EventHandlers[?], E /* <: FormElement */](x: Self & EventHandlers[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventHandlers[?], E /* <: FormElement */] (val x: Self & EventHandlers[E]) extends AnyVal {
       
       inline def setOnBlur(value: FocusEvent[E, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
@@ -74,7 +75,8 @@ object typesUseFieldStatesMod {
       __obj.asInstanceOf[FieldStatesOptions[E]]
     }
     
-    extension [Self <: FieldStatesOptions[?], E /* <: FormElement */](x: Self & FieldStatesOptions[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldStatesOptions[?], E /* <: FormElement */] (val x: Self & FieldStatesOptions[E]) extends AnyVal {
       
       inline def setDefaultValue(value: String | js.Array[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object typesUseFieldStatesMod {
       __obj.asInstanceOf[ReturnValue[E]]
     }
     
-    extension [Self <: ReturnValue[?], E /* <: FormElement */](x: Self & ReturnValue[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReturnValue[?], E /* <: FormElement */] (val x: Self & ReturnValue[E]) extends AnyVal {
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       

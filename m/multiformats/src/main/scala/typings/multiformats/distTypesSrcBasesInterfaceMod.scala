@@ -21,7 +21,8 @@ object distTypesSrcBasesInterfaceMod {
       __obj.asInstanceOf[BaseCodec]
     }
     
-    extension [Self <: BaseCodec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseCodec] (val x: Self) extends AnyVal {
       
       inline def setDecoder(value: BaseDecoder): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object distTypesSrcBasesInterfaceMod {
       __obj.asInstanceOf[BaseDecoder]
     }
     
-    extension [Self <: BaseDecoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseDecoder] (val x: Self) extends AnyVal {
       
       inline def setBaseDecode(value: String => js.typedarray.Uint8Array): Self = StObject.set(x, "baseDecode", js.Any.fromFunction1(value))
     }
@@ -69,7 +71,8 @@ object distTypesSrcBasesInterfaceMod {
       __obj.asInstanceOf[BaseEncoder]
     }
     
-    extension [Self <: BaseEncoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseEncoder] (val x: Self) extends AnyVal {
       
       inline def setBaseEncode(value: js.typedarray.Uint8Array => String): Self = StObject.set(x, "baseEncode", js.Any.fromFunction1(value))
     }
@@ -91,7 +94,8 @@ object distTypesSrcBasesInterfaceMod {
       __obj.asInstanceOf[CombobaseDecoder[Prefix]]
     }
     
-    extension [Self <: CombobaseDecoder[?], Prefix /* <: String */](x: Self & CombobaseDecoder[Prefix]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CombobaseDecoder[?], Prefix /* <: String */] (val x: Self & CombobaseDecoder[Prefix]) extends AnyVal {
       
       inline def setDecoders(value: Record[Prefix, UnibaseDecoder[Prefix]]): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
     }
@@ -116,7 +120,8 @@ object distTypesSrcBasesInterfaceMod {
       __obj.asInstanceOf[MultibaseCodec[Prefix]]
     }
     
-    extension [Self <: MultibaseCodec[?], Prefix /* <: String */](x: Self & MultibaseCodec[Prefix]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultibaseCodec[?], Prefix /* <: String */] (val x: Self & MultibaseCodec[Prefix]) extends AnyVal {
       
       inline def setDecoder(value: MultibaseDecoder[Prefix]): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
       
@@ -145,7 +150,8 @@ object distTypesSrcBasesInterfaceMod {
       __obj.asInstanceOf[MultibaseDecoder[Prefix]]
     }
     
-    extension [Self <: MultibaseDecoder[?], Prefix /* <: String */](x: Self & MultibaseDecoder[Prefix]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultibaseDecoder[?], Prefix /* <: String */] (val x: Self & MultibaseDecoder[Prefix]) extends AnyVal {
       
       inline def setDecode(value: Multibase[Prefix] => js.typedarray.Uint8Array): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     }
@@ -176,7 +182,8 @@ object distTypesSrcBasesInterfaceMod {
       __obj.asInstanceOf[MultibaseEncoder[Prefix]]
     }
     
-    extension [Self <: MultibaseEncoder[?], Prefix /* <: String */](x: Self & MultibaseEncoder[Prefix]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultibaseEncoder[?], Prefix /* <: String */] (val x: Self & MultibaseEncoder[Prefix]) extends AnyVal {
       
       inline def setEncode(value: js.typedarray.Uint8Array => Multibase[Prefix]): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
       
@@ -201,7 +208,8 @@ object distTypesSrcBasesInterfaceMod {
       __obj.asInstanceOf[UnibaseDecoder[Prefix]]
     }
     
-    extension [Self <: UnibaseDecoder[?], Prefix /* <: String */](x: Self & UnibaseDecoder[Prefix]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnibaseDecoder[?], Prefix /* <: String */] (val x: Self & UnibaseDecoder[Prefix]) extends AnyVal {
       
       inline def setPrefix(value: Prefix): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     }

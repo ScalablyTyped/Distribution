@@ -28,7 +28,8 @@ object ASPxClientTreeViewNodeClickEventArgs {
     __obj.asInstanceOf[ASPxClientTreeViewNodeClickEventArgs]
   }
   
-  extension [Self <: ASPxClientTreeViewNodeClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTreeViewNodeClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     

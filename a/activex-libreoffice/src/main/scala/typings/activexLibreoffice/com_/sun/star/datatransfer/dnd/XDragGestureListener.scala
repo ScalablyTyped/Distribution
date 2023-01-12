@@ -36,7 +36,8 @@ object XDragGestureListener {
     __obj.asInstanceOf[XDragGestureListener]
   }
   
-  extension [Self <: XDragGestureListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDragGestureListener] (val x: Self) extends AnyVal {
     
     inline def setDragGestureRecognized(value: DragGestureEvent => Unit): Self = StObject.set(x, "dragGestureRecognized", js.Any.fromFunction1(value))
   }

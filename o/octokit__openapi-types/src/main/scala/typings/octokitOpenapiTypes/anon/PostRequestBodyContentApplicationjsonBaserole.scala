@@ -25,7 +25,8 @@ object PostRequestBodyContentApplicationjsonBaserole {
     __obj.asInstanceOf[PostRequestBodyContentApplicationjsonBaserole]
   }
   
-  extension [Self <: PostRequestBodyContentApplicationjsonBaserole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostRequestBodyContentApplicationjsonBaserole] (val x: Self) extends AnyVal {
     
     inline def setPost(value: RequestBodyContentApplicationjsonBaserole): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }

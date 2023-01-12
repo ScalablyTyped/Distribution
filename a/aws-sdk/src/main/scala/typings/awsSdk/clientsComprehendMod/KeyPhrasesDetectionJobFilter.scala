@@ -33,7 +33,8 @@ object KeyPhrasesDetectionJobFilter {
     __obj.asInstanceOf[KeyPhrasesDetectionJobFilter]
   }
   
-  extension [Self <: KeyPhrasesDetectionJobFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyPhrasesDetectionJobFilter] (val x: Self) extends AnyVal {
     
     inline def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     

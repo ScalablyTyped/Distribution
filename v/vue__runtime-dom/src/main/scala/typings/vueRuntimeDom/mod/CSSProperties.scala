@@ -6904,7 +6904,8 @@ object CSSProperties {
     __obj.asInstanceOf[CSSProperties]
   }
   
-  extension [Self <: CSSProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSProperties] (val x: Self) extends AnyVal {
     
     inline def `set-khtml-box-align`(value: BoxAlign): Self = StObject.set(x, "-khtml-box-align", value.asInstanceOf[js.Any])
     

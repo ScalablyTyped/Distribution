@@ -31,7 +31,8 @@ object SdkHarnessContainerImage {
     __obj.asInstanceOf[SdkHarnessContainerImage]
   }
   
-  extension [Self <: SdkHarnessContainerImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SdkHarnessContainerImage] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: js.Array[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

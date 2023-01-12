@@ -20,7 +20,8 @@ object PointUpdateModel {
     __obj.asInstanceOf[PointUpdateModel]
   }
   
-  extension [Self <: PointUpdateModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointUpdateModel] (val x: Self) extends AnyVal {
     
     inline def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     

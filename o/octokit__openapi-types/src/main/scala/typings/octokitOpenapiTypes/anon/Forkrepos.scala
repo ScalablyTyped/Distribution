@@ -25,7 +25,8 @@ object Forkrepos {
     __obj.asInstanceOf[Forkrepos]
   }
   
-  extension [Self <: Forkrepos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Forkrepos] (val x: Self) extends AnyVal {
     
     inline def setFork_repos(value: Double): Self = StObject.set(x, "fork_repos", value.asInstanceOf[js.Any])
     

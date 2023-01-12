@@ -30,7 +30,8 @@ object DataGroupingResultObject {
     __obj.asInstanceOf[DataGroupingResultObject]
   }
   
-  extension [Self <: DataGroupingResultObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataGroupingResultObject] (val x: Self) extends AnyVal {
     
     inline def setGroupMap(
       value: js.Array[

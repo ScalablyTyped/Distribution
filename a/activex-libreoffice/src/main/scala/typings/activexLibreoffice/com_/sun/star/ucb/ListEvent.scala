@@ -25,7 +25,8 @@ object ListEvent {
     __obj.asInstanceOf[ListEvent]
   }
   
-  extension [Self <: ListEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEvent] (val x: Self) extends AnyVal {
     
     inline def setChanges(value: SafeArray[ListAction]): Self = StObject.set(x, "Changes", value.asInstanceOf[js.Any])
   }

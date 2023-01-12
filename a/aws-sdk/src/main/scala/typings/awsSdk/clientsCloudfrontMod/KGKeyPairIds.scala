@@ -20,7 +20,8 @@ object KGKeyPairIds {
     __obj.asInstanceOf[KGKeyPairIds]
   }
   
-  extension [Self <: KGKeyPairIds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KGKeyPairIds] (val x: Self) extends AnyVal {
     
     inline def setKeyGroupId(value: String): Self = StObject.set(x, "KeyGroupId", value.asInstanceOf[js.Any])
     

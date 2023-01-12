@@ -63,7 +63,8 @@ object TypeofShaderLib {
     __obj.asInstanceOf[TypeofShaderLib]
   }
   
-  extension [Self <: TypeofShaderLib](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofShaderLib] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Shader): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

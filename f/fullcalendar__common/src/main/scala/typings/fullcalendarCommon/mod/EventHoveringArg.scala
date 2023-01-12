@@ -23,7 +23,8 @@ object EventHoveringArg {
     __obj.asInstanceOf[EventHoveringArg]
   }
   
-  extension [Self <: EventHoveringArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventHoveringArg] (val x: Self) extends AnyVal {
     
     inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     

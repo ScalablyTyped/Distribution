@@ -37,7 +37,8 @@ object FilterCriteria {
     __obj.asInstanceOf[FilterCriteria]
   }
   
-  extension [Self <: FilterCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterCriteria] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: BooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

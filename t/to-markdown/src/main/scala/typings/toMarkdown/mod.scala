@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[Converter]
     }
     
-    extension [Self <: Converter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Converter] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setConverters(value: js.Array[Converter]): Self = StObject.set(x, "converters", value.asInstanceOf[js.Any])
       

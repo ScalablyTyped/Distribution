@@ -26,7 +26,8 @@ object AppsDynamiteSharedSelectionInput {
     __obj.asInstanceOf[AppsDynamiteSharedSelectionInput]
   }
   
-  extension [Self <: AppsDynamiteSharedSelectionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedSelectionInput] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[AppsDynamiteSharedSelectionInputSelectionItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

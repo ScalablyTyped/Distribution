@@ -28,7 +28,8 @@ object EC2ReplaceRouteTableAssociationAction {
     __obj.asInstanceOf[EC2ReplaceRouteTableAssociationAction]
   }
   
-  extension [Self <: EC2ReplaceRouteTableAssociationAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EC2ReplaceRouteTableAssociationAction] (val x: Self) extends AnyVal {
     
     inline def setAssociationId(value: ActionTarget): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     

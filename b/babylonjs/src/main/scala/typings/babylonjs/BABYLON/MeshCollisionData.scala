@@ -40,7 +40,8 @@ object MeshCollisionData {
     __obj.asInstanceOf[MeshCollisionData]
   }
   
-  extension [Self <: MeshCollisionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshCollisionData] (val x: Self) extends AnyVal {
     
     inline def set_checkCollisions(value: Boolean): Self = StObject.set(x, "_checkCollisions", value.asInstanceOf[js.Any])
     

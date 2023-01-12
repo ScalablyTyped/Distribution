@@ -63,7 +63,8 @@ object PageEventObject {
     __obj.asInstanceOf[PageEventObject]
   }
   
-  extension [Self <: PageEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageEventObject] (val x: Self) extends AnyVal {
     
     inline def setConsole(value: ConsoleMessage): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
     

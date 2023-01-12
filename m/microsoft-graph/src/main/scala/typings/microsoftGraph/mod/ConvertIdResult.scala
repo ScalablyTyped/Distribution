@@ -25,7 +25,8 @@ object ConvertIdResult {
     __obj.asInstanceOf[ConvertIdResult]
   }
   
-  extension [Self <: ConvertIdResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConvertIdResult] (val x: Self) extends AnyVal {
     
     inline def setErrorDetails(value: NullableOption[GenericError]): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     

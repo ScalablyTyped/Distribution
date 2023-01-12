@@ -50,7 +50,8 @@ object MatterCollisionFilter {
     __obj.asInstanceOf[MatterCollisionFilter]
   }
   
-  extension [Self <: MatterCollisionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatterCollisionFilter] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: Double): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

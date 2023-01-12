@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[TypingAnimationProps]
     }
     
-    extension [Self <: TypingAnimationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypingAnimationProps] (val x: Self) extends AnyVal {
       
       inline def setDotAmplitude(value: Double): Self = StObject.set(x, "dotAmplitude", value.asInstanceOf[js.Any])
       

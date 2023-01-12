@@ -150,7 +150,8 @@ object srcWorkspaceCenterMod {
       __obj.asInstanceOf[WorkspaceCenter]
     }
     
-    extension [Self <: WorkspaceCenter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceCenter] (val x: Self) extends AnyVal {
       
       inline def setActivateNextPane(value: () => Unit): Self = StObject.set(x, "activateNextPane", js.Any.fromFunction0(value))
       

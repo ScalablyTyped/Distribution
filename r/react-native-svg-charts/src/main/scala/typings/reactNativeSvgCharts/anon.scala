@@ -63,7 +63,8 @@ object anon {
       __obj.asInstanceOf[BOTH]
     }
     
-    extension [Self <: BOTH](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BOTH] (val x: Self) extends AnyVal {
       
       inline def setBOTH(value: typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.BOTH): Self = StObject.set(x, "BOTH", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -144,7 +146,8 @@ object anon {
       __obj.asInstanceOf[Color[T]]
     }
     
-    extension [Self <: Color[?], T](x: Self & Color[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color[?], T] (val x: Self & Color[T]) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -177,7 +180,8 @@ object anon {
       __obj.asInstanceOf[CornerRadius]
     }
     
-    extension [Self <: CornerRadius](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CornerRadius] (val x: Self) extends AnyVal {
       
       inline def setCornerRadius(value: Double | String): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
       
@@ -200,7 +204,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -219,7 +224,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -371,7 +377,8 @@ object anon {
       __obj.asInstanceOf[PartialLineProps]
     }
     
-    extension [Self <: PartialLineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLineProps] (val x: Self) extends AnyVal {
       
       inline def setClipPath(value: String): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
       
@@ -783,7 +790,8 @@ object anon {
       __obj.asInstanceOf[PartialPathProps]
     }
     
-    extension [Self <: PartialPathProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPathProps] (val x: Self) extends AnyVal {
       
       inline def setClipPath(value: String): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
       
@@ -1233,7 +1241,8 @@ object anon {
       __obj.asInstanceOf[PartialTextProps]
     }
     
-    extension [Self <: PartialTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTextProps] (val x: Self) extends AnyVal {
       
       inline def setAlignmentBaseline(value: AlignmentBaseline): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
       
@@ -1622,7 +1631,8 @@ object anon {
       __obj.asInstanceOf[Top]
     }
     
-    extension [Self <: Top](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Top] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

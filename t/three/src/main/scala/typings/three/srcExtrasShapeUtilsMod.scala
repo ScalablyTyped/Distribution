@@ -32,7 +32,8 @@ object srcExtrasShapeUtilsMod {
       __obj.asInstanceOf[Vec2]
     }
     
-    extension [Self <: Vec2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vec2] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

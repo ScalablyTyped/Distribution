@@ -49,7 +49,8 @@ object DeliveryViewData {
     __obj.asInstanceOf[DeliveryViewData]
   }
   
-  extension [Self <: DeliveryViewData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryViewData] (val x: Self) extends AnyVal {
     
     inline def setChildIdToParentIdMap(value: NumberDictionary[Double]): Self = StObject.set(x, "childIdToParentIdMap", value.asInstanceOf[js.Any])
     

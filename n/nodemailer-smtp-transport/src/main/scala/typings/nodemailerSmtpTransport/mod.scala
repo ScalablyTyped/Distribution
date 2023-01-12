@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[AuthOptions]
     }
     
-    extension [Self <: AuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -244,7 +245,8 @@ object mod {
       __obj.asInstanceOf[SmtpOptions]
     }
     
-    extension [Self <: SmtpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmtpOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: AuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

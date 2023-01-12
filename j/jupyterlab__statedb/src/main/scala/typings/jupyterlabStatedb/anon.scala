@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Ids[V, T]]
     }
     
-    extension [Self <: Ids[?, ?], V, T](x: Self & (Ids[V, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ids[?, ?], V, T] (val x: Self & (Ids[V, T])) extends AnyVal {
       
       inline def setIds(value: js.Array[V]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[IdsValues]
     }
     
-    extension [Self <: IdsValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdsValues] (val x: Self) extends AnyVal {
       
       inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Values[T]]
     }
     
-    extension [Self <: Values[?], T /* <: ReadonlyPartialJSONValue */](x: Self & Values[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Values[?], T /* <: ReadonlyPartialJSONValue */] (val x: Self & Values[T]) extends AnyVal {
       
       inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       

@@ -199,7 +199,8 @@ object mod {
       __obj.asInstanceOf[DrawerProperties]
     }
     
-    extension [Self <: DrawerProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerProperties] (val x: Self) extends AnyVal {
       
       inline def setAcceptDoubleTap(value: Boolean): Self = StObject.set(x, "acceptDoubleTap", value.asInstanceOf[js.Any])
       
@@ -340,7 +341,8 @@ object mod {
       __obj.asInstanceOf[DrawerStyles]
     }
     
-    extension [Self <: DrawerStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerStyles] (val x: Self) extends AnyVal {
       
       inline def setDrawer(value: ViewStyle): Self = StObject.set(x, "drawer", value.asInstanceOf[js.Any])
       
@@ -363,7 +365,8 @@ object mod {
       __obj.asInstanceOf[NestedViewStyles]
     }
     
-    extension [Self <: NestedViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NestedViewStyles] (val x: Self) extends AnyVal {
       
       inline def setDrawerOverlay(value: ViewStyle): Self = StObject.set(x, "drawerOverlay", value.asInstanceOf[js.Any])
       

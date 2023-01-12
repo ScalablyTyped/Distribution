@@ -20,7 +20,8 @@ object Item {
     __obj.asInstanceOf[Item]
   }
   
-  extension [Self <: Item](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: (SyntheticEvent[HTMLElement, typings.std.Event]) | KeyboardEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

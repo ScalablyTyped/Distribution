@@ -27,7 +27,8 @@ object RsaPrivateKey {
     __obj.asInstanceOf[RsaPrivateKey]
   }
   
-  extension [Self <: RsaPrivateKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RsaPrivateKey] (val x: Self) extends AnyVal {
     
     inline def setKey(value: KeyLike): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

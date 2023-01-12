@@ -26,7 +26,8 @@ object GraphemeLines {
     __obj.asInstanceOf[GraphemeLines]
   }
   
-  extension [Self <: GraphemeLines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphemeLines] (val x: Self) extends AnyVal {
     
     inline def setGraphemeLines(value: js.Array[String]): Self = StObject.set(x, "graphemeLines", value.asInstanceOf[js.Any])
     

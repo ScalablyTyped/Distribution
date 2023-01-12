@@ -21,7 +21,8 @@ object DefaultReporterOptions {
     __obj.asInstanceOf[DefaultReporterOptions]
   }
   
-  extension [Self <: DefaultReporterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultReporterOptions] (val x: Self) extends AnyVal {
     
     inline def setJasmineCorePath(value: String): Self = StObject.set(x, "jasmineCorePath", value.asInstanceOf[js.Any])
     

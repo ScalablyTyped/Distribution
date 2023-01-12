@@ -40,7 +40,8 @@ object MedicationKnowledgeDefinitional {
     __obj.asInstanceOf[MedicationKnowledgeDefinitional]
   }
   
-  extension [Self <: MedicationKnowledgeDefinitional](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationKnowledgeDefinitional] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: js.Array[Reference]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

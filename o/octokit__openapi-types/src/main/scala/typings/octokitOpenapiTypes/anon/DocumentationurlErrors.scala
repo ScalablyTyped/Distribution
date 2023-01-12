@@ -19,7 +19,8 @@ object DocumentationurlErrors {
     __obj.asInstanceOf[DocumentationurlErrors]
   }
   
-  extension [Self <: DocumentationurlErrors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentationurlErrors] (val x: Self) extends AnyVal {
     
     inline def setDocumentation_url(value: String): Self = StObject.set(x, "documentation_url", value.asInstanceOf[js.Any])
     

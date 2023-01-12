@@ -15,7 +15,8 @@ object DataProps {
     __obj.asInstanceOf[DataProps[RawDatum]]
   }
   
-  extension [Self <: DataProps[?], RawDatum /* <: BarDatum */](x: Self & DataProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProps[?], RawDatum /* <: BarDatum */] (val x: Self & DataProps[RawDatum]) extends AnyVal {
     
     inline def setData(value: js.Array[RawDatum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

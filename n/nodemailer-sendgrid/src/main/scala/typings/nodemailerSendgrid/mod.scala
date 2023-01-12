@@ -24,7 +24,8 @@ object mod {
       __obj.asInstanceOf[SendgridOptions]
     }
     
-    extension [Self <: SendgridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendgridOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     }

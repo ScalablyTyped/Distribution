@@ -21,7 +21,8 @@ object dividerTypesMod {
       __obj.asInstanceOf[DividerProps]
     }
     
-    extension [Self <: DividerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DividerProps] (val x: Self) extends AnyVal {
       
       inline def set$size(value: cell | section | module): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
       

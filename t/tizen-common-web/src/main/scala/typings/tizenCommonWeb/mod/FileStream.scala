@@ -175,7 +175,8 @@ object FileStream {
     __obj.asInstanceOf[FileStream]
   }
   
-  extension [Self <: FileStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileStream] (val x: Self) extends AnyVal {
     
     inline def setBytesAvailable(value: Double): Self = StObject.set(x, "bytesAvailable", value.asInstanceOf[js.Any])
     

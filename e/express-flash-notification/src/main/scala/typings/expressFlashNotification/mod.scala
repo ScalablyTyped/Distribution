@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[efnOptions]
     }
     
-    extension [Self <: efnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: efnOptions] (val x: Self) extends AnyVal {
       
       inline def setAfterAllRender(
         value: (/* htmlFragments */ js.Array[String], /* callback */ js.Function2[/* err */ Any, /* html */ String, Unit]) => Unit
@@ -98,7 +99,8 @@ object mod {
           __obj.asInstanceOf[FlashOptions]
         }
         
-        extension [Self <: FlashOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: FlashOptions] (val x: Self) extends AnyVal {
           
           inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
           

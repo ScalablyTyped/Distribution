@@ -40,7 +40,8 @@ object libRadioDemoBasicMod {
       __obj.asInstanceOf[EventRadioGroup]
     }
     
-    extension [Self <: EventRadioGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventRadioGroup] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: `1`): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -57,7 +58,8 @@ object libRadioDemoBasicMod {
       __obj.asInstanceOf[EventRadioItem]
     }
     
-    extension [Self <: EventRadioItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventRadioItem] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: Checked): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }

@@ -42,7 +42,8 @@ object CampaignExtensions {
     __obj.asInstanceOf[CampaignExtensions]
   }
   
-  extension [Self <: CampaignExtensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CampaignExtensions] (val x: Self) extends AnyVal {
     
     inline def setCallouts(value: () => CampaignCalloutSelector): Self = StObject.set(x, "callouts", js.Any.fromFunction0(value))
     

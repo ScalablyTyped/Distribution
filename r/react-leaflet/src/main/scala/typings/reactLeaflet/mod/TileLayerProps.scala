@@ -42,7 +42,8 @@ object TileLayerProps {
     __obj.asInstanceOf[TileLayerProps]
   }
   
-  extension [Self <: TileLayerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayerProps] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

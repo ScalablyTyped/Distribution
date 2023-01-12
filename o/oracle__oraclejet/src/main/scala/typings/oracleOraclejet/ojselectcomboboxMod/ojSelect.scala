@@ -50,7 +50,8 @@ object ojSelect {
       __obj.asInstanceOf[typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup]
     }
     
-    extension [Self <: typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup] (val x: Self) extends AnyVal {
       
       inline def setChildren(
         value: js.Array[
@@ -86,7 +87,8 @@ object ojSelect {
       __obj.asInstanceOf[typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option]
     }
     
-    extension [Self <: typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object ojSelect {
       __obj.asInstanceOf[OptionContext]
     }
     
-    extension [Self <: OptionContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionContext] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: Element): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -168,7 +171,8 @@ object ojSelect {
       __obj.asInstanceOf[OptionsKeys]
     }
     
-    extension [Self <: OptionsKeys](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsKeys] (val x: Self) extends AnyVal {
       
       inline def setChildKeys(value: OptionsKeys): Self = StObject.set(x, "childKeys", value.asInstanceOf[js.Any])
       

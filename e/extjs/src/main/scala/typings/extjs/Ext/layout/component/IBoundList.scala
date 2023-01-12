@@ -31,7 +31,8 @@ object IBoundList {
     __obj.asInstanceOf[IBoundList]
   }
   
-  extension [Self <: IBoundList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBoundList] (val x: Self) extends AnyVal {
     
     inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
     

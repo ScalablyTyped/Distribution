@@ -350,7 +350,8 @@ object sapUiCommonsProgressIndicatorMod {
       __obj.asInstanceOf[ProgressIndicatorSettings]
     }
     
-    extension [Self <: ProgressIndicatorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressIndicatorSettings] (val x: Self) extends AnyVal {
       
       inline def setBarColor(
         value: BarColor | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BarColor * / any */ String) | PropertyBindingInfo

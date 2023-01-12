@@ -40,7 +40,8 @@ object DroneEnv {
     __obj.asInstanceOf[DroneEnv]
   }
   
-  extension [Self <: DroneEnv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DroneEnv] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

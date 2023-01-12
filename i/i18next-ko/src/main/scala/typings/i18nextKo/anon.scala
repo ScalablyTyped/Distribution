@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Translation]
     }
     
-    extension [Self <: Translation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Translation] (val x: Self) extends AnyVal {
       
       inline def setTranslation(value: StringDictionary[String]): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
     }

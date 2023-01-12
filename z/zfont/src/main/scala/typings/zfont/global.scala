@@ -150,7 +150,8 @@ object global {
           __obj.asInstanceOf[FontOptions]
         }
         
-        extension [Self <: FontOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: FontOptions] (val x: Self) extends AnyVal {
           
           inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
         }
@@ -260,7 +261,8 @@ object global {
           __obj.asInstanceOf[TextGroupOptions[T]]
         }
         
-        extension [Self <: TextGroupOptions[?], T /* <: typings.zfont.mod.zdogAugmentingMod.MultilineText */](x: Self & TextGroupOptions[T]) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: TextGroupOptions[?], T /* <: typings.zfont.mod.zdogAugmentingMod.MultilineText */] (val x: Self & TextGroupOptions[T]) extends AnyVal {
           
           inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
           
@@ -337,7 +339,8 @@ object global {
           __obj.asInstanceOf[TextOptions[T]]
         }
         
-        extension [Self <: TextOptions[?], T /* <: typings.zfont.mod.zdogAugmentingMod.MultilineText */](x: Self & TextOptions[T]) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: TextOptions[?], T /* <: typings.zfont.mod.zdogAugmentingMod.MultilineText */] (val x: Self & TextOptions[T]) extends AnyVal {
           
           inline def setFont(value: typings.zfont.mod.zdogAugmentingMod.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
           

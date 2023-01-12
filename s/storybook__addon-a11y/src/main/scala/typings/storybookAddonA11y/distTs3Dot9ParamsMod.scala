@@ -26,7 +26,8 @@ object distTs3Dot9ParamsMod {
       __obj.asInstanceOf[A11yParameters]
     }
     
-    extension [Self <: A11yParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: A11yParameters] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Spec): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object distTs3Dot9ParamsMod {
       __obj.asInstanceOf[Setup]
     }
     
-    extension [Self <: Setup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Setup] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Spec): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

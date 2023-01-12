@@ -47,7 +47,8 @@ object GELPHP {
     __obj.asInstanceOf[GELPHP]
   }
   
-  extension [Self <: GELPHP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GELPHP] (val x: Self) extends AnyVal {
     
     inline def setBYN(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "BYN", value.asInstanceOf[js.Any])
     

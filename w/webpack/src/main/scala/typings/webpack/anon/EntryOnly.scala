@@ -40,7 +40,8 @@ object EntryOnly {
     __obj.asInstanceOf[EntryOnly]
   }
   
-  extension [Self <: EntryOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntryOnly] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

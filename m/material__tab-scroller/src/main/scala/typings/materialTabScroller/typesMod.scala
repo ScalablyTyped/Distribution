@@ -19,7 +19,8 @@ object typesMod {
       __obj.asInstanceOf[MDCTabScrollerAnimation]
     }
     
-    extension [Self <: MDCTabScrollerAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTabScrollerAnimation] (val x: Self) extends AnyVal {
       
       inline def setFinalScrollPosition(value: Double): Self = StObject.set(x, "finalScrollPosition", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object typesMod {
       __obj.asInstanceOf[MDCTabScrollerHorizontalEdges]
     }
     
-    extension [Self <: MDCTabScrollerHorizontalEdges](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTabScrollerHorizontalEdges] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       

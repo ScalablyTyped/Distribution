@@ -20,7 +20,8 @@ object TypeofHeatMapLegend {
     __obj.asInstanceOf[TypeofHeatMapLegend]
   }
   
-  extension [Self <: TypeofHeatMapLegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofHeatMapLegend] (val x: Self) extends AnyVal {
     
     inline def setFn(value: HeatMapLegend): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object Property {
     __obj.asInstanceOf[Property]
   }
   
-  extension [Self <: Property](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Metadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object TransformAttrs {
     __obj.asInstanceOf[TransformAttrs]
   }
   
-  extension [Self <: TransformAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformAttrs] (val x: Self) extends AnyVal {
     
     inline def setFillMode(value: constant | reflect | wrap | nearest): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
     

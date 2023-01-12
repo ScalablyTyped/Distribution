@@ -23,7 +23,8 @@ object DatasetContentDeliveryDestination {
     __obj.asInstanceOf[DatasetContentDeliveryDestination]
   }
   
-  extension [Self <: DatasetContentDeliveryDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetContentDeliveryDestination] (val x: Self) extends AnyVal {
     
     inline def setIotEventsDestinationConfiguration(value: IotEventsDestinationConfiguration): Self = StObject.set(x, "iotEventsDestinationConfiguration", value.asInstanceOf[js.Any])
     

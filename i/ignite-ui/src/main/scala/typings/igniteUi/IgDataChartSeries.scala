@@ -1060,7 +1060,8 @@ object IgDataChartSeries {
     __obj.asInstanceOf[IgDataChartSeries]
   }
   
-  extension [Self <: IgDataChartSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgDataChartSeries] (val x: Self) extends AnyVal {
     
     inline def setAngleAxis(value: String): Self = StObject.set(x, "angleAxis", value.asInstanceOf[js.Any])
     

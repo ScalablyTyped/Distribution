@@ -77,7 +77,8 @@ object mod {
       __obj.asInstanceOf[FilledContext]
     }
     
-    extension [Self <: FilledContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilledContext] (val x: Self) extends AnyVal {
       
       inline def setHelmet(value: HelmetServerState): Self = StObject.set(x, "helmet", value.asInstanceOf[js.Any])
     }
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[HelmetDatum]
     }
     
-    extension [Self <: HelmetDatum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelmetDatum] (val x: Self) extends AnyVal {
       
       inline def setToComponent(value: () => Component[Any, js.Object, Any]): Self = StObject.set(x, "toComponent", js.Any.fromFunction0(value))
     }
@@ -111,7 +113,8 @@ object mod {
       __obj.asInstanceOf[HelmetHTMLBodyDatum]
     }
     
-    extension [Self <: HelmetHTMLBodyDatum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelmetHTMLBodyDatum] (val x: Self) extends AnyVal {
       
       inline def setToComponent(value: () => HTMLAttributes[HTMLBodyElement]): Self = StObject.set(x, "toComponent", js.Any.fromFunction0(value))
     }
@@ -128,7 +131,8 @@ object mod {
       __obj.asInstanceOf[HelmetHTMLElementDatum]
     }
     
-    extension [Self <: HelmetHTMLElementDatum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelmetHTMLElementDatum] (val x: Self) extends AnyVal {
       
       inline def setToComponent(value: () => HTMLAttributes[HTMLHtmlElement]): Self = StObject.set(x, "toComponent", js.Any.fromFunction0(value))
     }
@@ -181,7 +185,8 @@ object mod {
       __obj.asInstanceOf[HelmetProps]
     }
     
-    extension [Self <: HelmetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelmetProps] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -310,7 +315,8 @@ object mod {
       __obj.asInstanceOf[HelmetServerState]
     }
     
-    extension [Self <: HelmetServerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelmetServerState] (val x: Self) extends AnyVal {
       
       inline def setBase(value: HelmetDatum): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -364,7 +370,8 @@ object mod {
       __obj.asInstanceOf[HelmetTags]
     }
     
-    extension [Self <: HelmetTags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelmetTags] (val x: Self) extends AnyVal {
       
       inline def setBaseTag(value: js.Array[Any]): Self = StObject.set(x, "baseTag", value.asInstanceOf[js.Any])
       
@@ -411,7 +418,8 @@ object mod {
       __obj.asInstanceOf[ProviderProps]
     }
     
-    extension [Self <: ProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderProps] (val x: Self) extends AnyVal {
       
       inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

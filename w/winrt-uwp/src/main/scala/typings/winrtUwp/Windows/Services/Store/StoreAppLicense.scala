@@ -52,7 +52,8 @@ object StoreAppLicense {
     __obj.asInstanceOf[StoreAppLicense]
   }
   
-  extension [Self <: StoreAppLicense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreAppLicense] (val x: Self) extends AnyVal {
     
     inline def setAddOnLicenses(value: IMapView[String, StoreLicense]): Self = StObject.set(x, "addOnLicenses", value.asInstanceOf[js.Any])
     

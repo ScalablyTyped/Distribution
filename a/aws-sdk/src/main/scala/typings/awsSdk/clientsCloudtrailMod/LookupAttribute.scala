@@ -23,7 +23,8 @@ object LookupAttribute {
     __obj.asInstanceOf[LookupAttribute]
   }
   
-  extension [Self <: LookupAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupAttribute] (val x: Self) extends AnyVal {
     
     inline def setAttributeKey(value: LookupAttributeKey): Self = StObject.set(x, "AttributeKey", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object RouteInfo {
     __obj.asInstanceOf[RouteInfo]
   }
   
-  extension [Self <: RouteInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteInfo] (val x: Self) extends AnyVal {
     
     inline def setDestIpRange(value: String): Self = StObject.set(x, "destIpRange", value.asInstanceOf[js.Any])
     

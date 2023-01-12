@@ -31,7 +31,8 @@ object ChartValueAxisItemNotesLabel {
     __obj.asInstanceOf[ChartValueAxisItemNotesLabel]
   }
   
-  extension [Self <: ChartValueAxisItemNotesLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartValueAxisItemNotesLabel] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

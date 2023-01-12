@@ -26,7 +26,8 @@ object IGenericProperties {
     __obj.asInstanceOf[IGenericProperties]
   }
   
-  extension [Self <: IGenericProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericProperties] (val x: Self) extends AnyVal {
     
     inline def setQInfo(value: INxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
   }

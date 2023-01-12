@@ -218,7 +218,8 @@ object InitialOptionsWithRootDir {
     __obj.asInstanceOf[InitialOptionsWithRootDir]
   }
   
-  extension [Self <: InitialOptionsWithRootDir](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialOptionsWithRootDir] (val x: Self) extends AnyVal {
     
     inline def setAutomock(value: Boolean): Self = StObject.set(x, "automock", value.asInstanceOf[js.Any])
     

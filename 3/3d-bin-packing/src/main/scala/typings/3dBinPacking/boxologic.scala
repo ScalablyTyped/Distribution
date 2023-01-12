@@ -77,7 +77,8 @@ object boxologic {
       __obj.asInstanceOf[Box]
     }
     
-    extension [Self <: Box](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
       
       inline def setCox(value: Double): Self = StObject.set(x, "cox", value.asInstanceOf[js.Any])
       
@@ -524,7 +525,8 @@ object boxologic {
       __obj.asInstanceOf[Boxologic]
     }
     
-    extension [Self <: Boxologic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Boxologic] (val x: Self) extends AnyVal {
       
       inline def setAnalyze_box(value: (Any, Any, Any, Any, Any, Any, Any, Any, Any) => Any): Self = StObject.set(x, "analyze_box", js.Any.fromFunction9(value))
       
@@ -705,7 +707,8 @@ object boxologic {
       __obj.asInstanceOf[Instance]
     }
     
-    extension [Self <: Instance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -754,7 +757,8 @@ object boxologic {
       __obj.asInstanceOf[Pallet]
     }
     
-    extension [Self <: Pallet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pallet] (val x: Self) extends AnyVal {
       
       inline def setSet_orientation(value: Double => Unit): Self = StObject.set(x, "set_orientation", js.Any.fromFunction1(value))
     }
@@ -787,7 +791,8 @@ object boxologic {
       __obj.asInstanceOf[Scrap]
     }
     
-    extension [Self <: Scrap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scrap] (val x: Self) extends AnyVal {
       
       inline def setCumx(value: Double): Self = StObject.set(x, "cumx", value.asInstanceOf[js.Any])
       

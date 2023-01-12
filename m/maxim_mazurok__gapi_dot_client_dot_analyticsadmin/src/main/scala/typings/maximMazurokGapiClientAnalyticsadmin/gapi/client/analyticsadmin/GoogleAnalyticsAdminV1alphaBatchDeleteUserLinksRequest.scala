@@ -16,7 +16,8 @@ object GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest] (val x: Self) extends AnyVal {
     
     inline def setRequests(value: js.Array[GoogleAnalyticsAdminV1alphaDeleteUserLinkRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     

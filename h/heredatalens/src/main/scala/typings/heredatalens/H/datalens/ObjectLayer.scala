@@ -58,7 +58,8 @@ object ObjectLayer {
       __obj.asInstanceOf[Clustering]
     }
     
-    extension [Self <: Clustering](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clustering] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Zoom => ClusteringOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
       
@@ -98,7 +99,8 @@ object ObjectLayer {
       __obj.asInstanceOf[ObjectStyleOptions]
     }
     
-    extension [Self <: ObjectStyleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectStyleOptions] (val x: Self) extends AnyVal {
       
       inline def setArrows(value: typings.heremaps.H.map.ArrowStyle.Options): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object ObjectLayer {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setClustering(value: Clustering): Self = StObject.set(x, "clustering", value.asInstanceOf[js.Any])
       
@@ -195,7 +198,8 @@ object ObjectLayer {
       __obj.asInstanceOf[Row]
     }
     
-    extension [Self <: Row](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
       
       inline def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
       

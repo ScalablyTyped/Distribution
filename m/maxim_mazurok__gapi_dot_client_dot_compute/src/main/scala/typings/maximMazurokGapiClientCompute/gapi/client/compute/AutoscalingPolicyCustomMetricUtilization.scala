@@ -48,7 +48,8 @@ object AutoscalingPolicyCustomMetricUtilization {
     __obj.asInstanceOf[AutoscalingPolicyCustomMetricUtilization]
   }
   
-  extension [Self <: AutoscalingPolicyCustomMetricUtilization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingPolicyCustomMetricUtilization] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

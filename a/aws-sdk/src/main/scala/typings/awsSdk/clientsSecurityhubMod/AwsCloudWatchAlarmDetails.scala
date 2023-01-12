@@ -123,7 +123,8 @@ object AwsCloudWatchAlarmDetails {
     __obj.asInstanceOf[AwsCloudWatchAlarmDetails]
   }
   
-  extension [Self <: AwsCloudWatchAlarmDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCloudWatchAlarmDetails] (val x: Self) extends AnyVal {
     
     inline def setActionsEnabled(value: Boolean): Self = StObject.set(x, "ActionsEnabled", value.asInstanceOf[js.Any])
     

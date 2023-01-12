@@ -36,7 +36,8 @@ object DedupTopBottomIndices {
     __obj.asInstanceOf[DedupTopBottomIndices]
   }
   
-  extension [Self <: DedupTopBottomIndices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DedupTopBottomIndices] (val x: Self) extends AnyVal {
     
     inline def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     

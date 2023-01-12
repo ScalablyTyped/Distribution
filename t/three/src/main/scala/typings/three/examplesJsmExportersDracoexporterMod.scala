@@ -41,7 +41,8 @@ object examplesJsmExportersDracoexporterMod {
       __obj.asInstanceOf[DRACOExporterOptions]
     }
     
-    extension [Self <: DRACOExporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DRACOExporterOptions] (val x: Self) extends AnyVal {
       
       inline def setDecodeSpeed(value: Double): Self = StObject.set(x, "decodeSpeed", value.asInstanceOf[js.Any])
       

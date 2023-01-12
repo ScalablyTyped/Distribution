@@ -28,7 +28,8 @@ object GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket {
     __obj.asInstanceOf[GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket]
   }
   
-  extension [Self <: GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket] (val x: Self) extends AnyVal {
     
     inline def setBucketSize(value: String): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CreateFirewallRuleResponse {
     __obj.asInstanceOf[CreateFirewallRuleResponse]
   }
   
-  extension [Self <: CreateFirewallRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFirewallRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setFirewallRule(value: FirewallRule): Self = StObject.set(x, "FirewallRule", value.asInstanceOf[js.Any])
     

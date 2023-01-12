@@ -43,7 +43,8 @@ object WFSWriteGetFeatureOptions {
     __obj.asInstanceOf[WFSWriteGetFeatureOptions]
   }
   
-  extension [Self <: WFSWriteGetFeatureOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WFSWriteGetFeatureOptions] (val x: Self) extends AnyVal {
     
     inline def setBbox(value: Extent_): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
     

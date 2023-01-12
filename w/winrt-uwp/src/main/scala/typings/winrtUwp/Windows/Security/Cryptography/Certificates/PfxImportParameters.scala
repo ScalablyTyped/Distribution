@@ -43,7 +43,8 @@ object PfxImportParameters {
     __obj.asInstanceOf[PfxImportParameters]
   }
   
-  extension [Self <: PfxImportParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PfxImportParameters] (val x: Self) extends AnyVal {
     
     inline def setContainerNamePrefix(value: String): Self = StObject.set(x, "containerNamePrefix", value.asInstanceOf[js.Any])
     

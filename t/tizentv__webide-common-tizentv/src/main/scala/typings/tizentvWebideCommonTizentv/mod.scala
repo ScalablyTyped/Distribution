@@ -123,7 +123,8 @@ object mod {
       __obj.asInstanceOf[AccessInfo]
     }
     
-    extension [Self <: AccessInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessInfo] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -170,7 +171,8 @@ object mod {
       __obj.asInstanceOf[AuthorInfo]
     }
     
-    extension [Self <: AuthorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorInfo] (val x: Self) extends AnyVal {
       
       inline def setAuthorName(value: String): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
       
@@ -207,7 +209,8 @@ object mod {
       __obj.asInstanceOf[AuthorProfile]
     }
     
-    extension [Self <: AuthorProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorProfile] (val x: Self) extends AnyVal {
       
       inline def setAuthorCA(value: String): Self = StObject.set(x, "authorCA", value.asInstanceOf[js.Any])
       
@@ -232,7 +235,8 @@ object mod {
       __obj.asInstanceOf[DistributorInfo]
     }
     
-    extension [Self <: DistributorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DistributorInfo] (val x: Self) extends AnyVal {
       
       inline def setDistributorPassword(value: String): Self = StObject.set(x, "distributorPassword", value.asInstanceOf[js.Any])
       
@@ -259,7 +263,8 @@ object mod {
       __obj.asInstanceOf[DistributorProfile]
     }
     
-    extension [Self <: DistributorProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DistributorProfile] (val x: Self) extends AnyVal {
       
       inline def setDistributorCA(value: String): Self = StObject.set(x, "distributorCA", value.asInstanceOf[js.Any])
       
@@ -324,7 +329,8 @@ object mod {
       __obj.asInstanceOf[ProfileItem]
     }
     
-    extension [Self <: ProfileItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProfileItem] (val x: Self) extends AnyVal {
       
       inline def setAuthorKey(value: String): Self = StObject.set(x, "authorKey", value.asInstanceOf[js.Any])
       
@@ -371,7 +377,8 @@ object mod {
       __obj.asInstanceOf[SamsungAuthorInfo]
     }
     
-    extension [Self <: SamsungAuthorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SamsungAuthorInfo] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       

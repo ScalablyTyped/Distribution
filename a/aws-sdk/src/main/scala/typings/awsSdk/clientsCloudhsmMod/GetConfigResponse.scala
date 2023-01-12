@@ -28,7 +28,8 @@ object GetConfigResponse {
     __obj.asInstanceOf[GetConfigResponse]
   }
   
-  extension [Self <: GetConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setConfigCred(value: String): Self = StObject.set(x, "ConfigCred", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetInstancesRequest {
     __obj.asInstanceOf[GetInstancesRequest]
   }
   
-  extension [Self <: GetInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     

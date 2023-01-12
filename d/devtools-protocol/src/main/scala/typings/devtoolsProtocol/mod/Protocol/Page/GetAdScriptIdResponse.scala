@@ -19,7 +19,8 @@ object GetAdScriptIdResponse {
     __obj.asInstanceOf[GetAdScriptIdResponse]
   }
   
-  extension [Self <: GetAdScriptIdResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAdScriptIdResponse] (val x: Self) extends AnyVal {
     
     inline def setAdScriptId(value: AdScriptId): Self = StObject.set(x, "adScriptId", value.asInstanceOf[js.Any])
     

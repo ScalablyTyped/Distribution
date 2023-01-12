@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Am]
     }
     
-    extension [Self <: Am](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Am] (val x: Self) extends AnyVal {
       
       inline def setAm(value: String): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object anon {
       __obj.asInstanceOf[Cols]
     }
     
-    extension [Self <: Cols](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cols] (val x: Self) extends AnyVal {
       
       inline def setCols(value: js.Array[Key]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
@@ -100,7 +103,8 @@ object anon {
       __obj.asInstanceOf[Date]
     }
     
-    extension [Self <: Date](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
       
       inline def setDate(value: Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     }
@@ -119,7 +123,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -140,7 +145,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setCols(value: js.Array[Any]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       

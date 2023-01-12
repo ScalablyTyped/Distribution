@@ -23,7 +23,8 @@ object ACLPendingChanges {
     __obj.asInstanceOf[ACLPendingChanges]
   }
   
-  extension [Self <: ACLPendingChanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ACLPendingChanges] (val x: Self) extends AnyVal {
     
     inline def setUserNamesToAdd(value: UserNameList): Self = StObject.set(x, "UserNamesToAdd", value.asInstanceOf[js.Any])
     

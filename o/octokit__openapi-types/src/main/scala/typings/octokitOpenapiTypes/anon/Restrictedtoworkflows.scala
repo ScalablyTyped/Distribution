@@ -47,7 +47,8 @@ object Restrictedtoworkflows {
     __obj.asInstanceOf[Restrictedtoworkflows]
   }
   
-  extension [Self <: Restrictedtoworkflows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Restrictedtoworkflows] (val x: Self) extends AnyVal {
     
     inline def setAllows_public_repositories(value: Boolean): Self = StObject.set(x, "allows_public_repositories", value.asInstanceOf[js.Any])
     

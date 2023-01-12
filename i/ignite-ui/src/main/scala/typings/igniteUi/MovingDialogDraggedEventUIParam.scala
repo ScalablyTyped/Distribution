@@ -18,7 +18,8 @@ object MovingDialogDraggedEventUIParam {
     __obj.asInstanceOf[MovingDialogDraggedEventUIParam]
   }
   
-  extension [Self <: MovingDialogDraggedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MovingDialogDraggedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

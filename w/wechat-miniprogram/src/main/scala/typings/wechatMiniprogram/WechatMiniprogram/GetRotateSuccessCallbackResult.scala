@@ -18,7 +18,8 @@ object GetRotateSuccessCallbackResult {
     __obj.asInstanceOf[GetRotateSuccessCallbackResult]
   }
   
-  extension [Self <: GetRotateSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRotateSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

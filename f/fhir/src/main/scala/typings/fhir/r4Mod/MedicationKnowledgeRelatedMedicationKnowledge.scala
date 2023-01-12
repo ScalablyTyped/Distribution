@@ -26,7 +26,8 @@ object MedicationKnowledgeRelatedMedicationKnowledge {
     __obj.asInstanceOf[MedicationKnowledgeRelatedMedicationKnowledge]
   }
   
-  extension [Self <: MedicationKnowledgeRelatedMedicationKnowledge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationKnowledgeRelatedMedicationKnowledge] (val x: Self) extends AnyVal {
     
     inline def setReference(value: js.Array[Reference]): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     

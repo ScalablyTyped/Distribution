@@ -56,7 +56,8 @@ object InfrastructureLogging {
     __obj.asInstanceOf[InfrastructureLogging]
   }
   
-  extension [Self <: InfrastructureLogging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfrastructureLogging] (val x: Self) extends AnyVal {
     
     inline def setAppendOnly(value: Boolean): Self = StObject.set(x, "appendOnly", value.asInstanceOf[js.Any])
     

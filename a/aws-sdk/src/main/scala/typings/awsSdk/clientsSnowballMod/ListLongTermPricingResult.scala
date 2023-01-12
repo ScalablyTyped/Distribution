@@ -23,7 +23,8 @@ object ListLongTermPricingResult {
     __obj.asInstanceOf[ListLongTermPricingResult]
   }
   
-  extension [Self <: ListLongTermPricingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLongTermPricingResult] (val x: Self) extends AnyVal {
     
     inline def setLongTermPricingEntries(value: LongTermPricingEntryList): Self = StObject.set(x, "LongTermPricingEntries", value.asInstanceOf[js.Any])
     

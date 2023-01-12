@@ -18,7 +18,8 @@ object ActionMenu {
     __obj.asInstanceOf[ActionMenu]
   }
   
-  extension [Self <: ActionMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionMenu] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[Callback]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

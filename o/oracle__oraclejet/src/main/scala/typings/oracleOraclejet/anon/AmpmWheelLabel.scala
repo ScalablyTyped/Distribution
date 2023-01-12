@@ -35,7 +35,8 @@ object AmpmWheelLabel {
     __obj.asInstanceOf[AmpmWheelLabel]
   }
   
-  extension [Self <: AmpmWheelLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmpmWheelLabel] (val x: Self) extends AnyVal {
     
     inline def setAmpmWheelLabel(value: String): Self = StObject.set(x, "ampmWheelLabel", value.asInstanceOf[js.Any])
     

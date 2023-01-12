@@ -34,7 +34,8 @@ object distDeclarationsSrcFiltersMod {
       __obj.asInstanceOf[Config[Option]]
     }
     
-    extension [Self <: Config[?], Option](x: Self & Config[Option]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config[?], Option] (val x: Self & Config[Option]) extends AnyVal {
       
       inline def setIgnoreAccents(value: Boolean): Self = StObject.set(x, "ignoreAccents", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object distDeclarationsSrcFiltersMod {
       __obj.asInstanceOf[FilterOptionOption[Option]]
     }
     
-    extension [Self <: FilterOptionOption[?], Option](x: Self & FilterOptionOption[Option]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterOptionOption[?], Option] (val x: Self & FilterOptionOption[Option]) extends AnyVal {
       
       inline def setData(value: Option): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

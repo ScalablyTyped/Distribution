@@ -50,7 +50,8 @@ object GitAsyncRefOperationDetail {
     __obj.asInstanceOf[GitAsyncRefOperationDetail]
   }
   
-  extension [Self <: GitAsyncRefOperationDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitAsyncRefOperationDetail] (val x: Self) extends AnyVal {
     
     inline def setConflict(value: Boolean): Self = StObject.set(x, "conflict", value.asInstanceOf[js.Any])
     

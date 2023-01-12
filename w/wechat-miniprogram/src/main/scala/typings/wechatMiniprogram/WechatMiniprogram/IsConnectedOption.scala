@@ -22,7 +22,8 @@ object IsConnectedOption {
     __obj.asInstanceOf[IsConnectedOption]
   }
   
-  extension [Self <: IsConnectedOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsConnectedOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ Nfcrwerror => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

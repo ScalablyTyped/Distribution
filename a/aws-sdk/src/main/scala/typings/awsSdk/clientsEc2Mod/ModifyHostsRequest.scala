@@ -38,7 +38,8 @@ object ModifyHostsRequest {
     __obj.asInstanceOf[ModifyHostsRequest]
   }
   
-  extension [Self <: ModifyHostsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyHostsRequest] (val x: Self) extends AnyVal {
     
     inline def setAutoPlacement(value: AutoPlacement): Self = StObject.set(x, "AutoPlacement", value.asInstanceOf[js.Any])
     

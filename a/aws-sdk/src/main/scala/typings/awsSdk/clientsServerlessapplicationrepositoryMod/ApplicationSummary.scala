@@ -53,7 +53,8 @@ object ApplicationSummary {
     __obj.asInstanceOf[ApplicationSummary]
   }
   
-  extension [Self <: ApplicationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationSummary] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

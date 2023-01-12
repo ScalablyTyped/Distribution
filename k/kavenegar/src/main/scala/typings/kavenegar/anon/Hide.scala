@@ -27,7 +27,8 @@ object Hide {
     __obj.asInstanceOf[Hide]
   }
   
-  extension [Self <: Hide](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hide] (val x: Self) extends AnyVal {
     
     inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Channel]
     }
     
-    extension [Self <: Channel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: typings.twilioChat.mod.Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Consumptionreportinterval]
     }
     
-    extension [Self <: Consumptionreportinterval](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Consumptionreportinterval] (val x: Self) extends AnyVal {
       
       inline def setConsumption_report_interval(value: String): Self = StObject.set(x, "consumption_report_interval", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Conversations]
     }
     
-    extension [Self <: Conversations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Conversations] (val x: Self) extends AnyVal {
       
       inline def setConversations(value: String): Self = StObject.set(x, "conversations", value.asInstanceOf[js.Any])
       
@@ -153,7 +156,8 @@ object anon {
       __obj.asInstanceOf[CurrentUser]
     }
     
-    extension [Self <: CurrentUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentUser] (val x: Self) extends AnyVal {
       
       inline def setConversations(value: String): Self = StObject.set(x, "conversations", value.asInstanceOf[js.Any])
       
@@ -188,7 +192,8 @@ object anon {
       __obj.asInstanceOf[ErrorCode]
     }
     
-    extension [Self <: ErrorCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorCode] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
@@ -217,7 +222,8 @@ object anon {
       __obj.asInstanceOf[Member]
     }
     
-    extension [Self <: Member](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Member] (val x: Self) extends AnyVal {
       
       inline def setMember(value: typings.twilioChat.mod.Member): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
       
@@ -240,7 +246,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: typings.twilioChat.mod.Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -263,7 +270,8 @@ object anon {
       __obj.asInstanceOf[Myconversations]
     }
     
-    extension [Self <: Myconversations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Myconversations] (val x: Self) extends AnyVal {
       
       inline def setMy_conversations(value: String): Self = StObject.set(x, "my_conversations", value.asInstanceOf[js.Any])
       
@@ -284,7 +292,8 @@ object anon {
       __obj.asInstanceOf[UpdateReasons]
     }
     
-    extension [Self <: UpdateReasons](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateReasons] (val x: Self) extends AnyVal {
       
       inline def setUpdateReasons(value: js.Array[UserUpdateReason]): Self = StObject.set(x, "updateReasons", value.asInstanceOf[js.Any])
       

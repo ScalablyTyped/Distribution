@@ -197,7 +197,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setChan(value: js.Array[String]): Self = StObject.set(x, "chan", value.asInstanceOf[js.Any])
       
@@ -387,7 +388,8 @@ object mod {
       __obj.asInstanceOf[SocketEvents]
     }
     
-    extension [Self <: SocketEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketEvents] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

@@ -23,7 +23,8 @@ object GetAssetPropertyValueHistoryResponse {
     __obj.asInstanceOf[GetAssetPropertyValueHistoryResponse]
   }
   
-  extension [Self <: GetAssetPropertyValueHistoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAssetPropertyValueHistoryResponse] (val x: Self) extends AnyVal {
     
     inline def setAssetPropertyValueHistory(value: AssetPropertyValueHistory): Self = StObject.set(x, "assetPropertyValueHistory", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[ArcFlag]
     }
     
-    extension [Self <: ArcFlag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcFlag] (val x: Self) extends AnyVal {
       
       inline def setArcFlag(value: Any): Self = StObject.set(x, "arcFlag", value.asInstanceOf[js.Any])
       

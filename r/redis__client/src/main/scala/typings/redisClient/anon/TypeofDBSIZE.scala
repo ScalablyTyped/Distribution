@@ -23,7 +23,8 @@ object TypeofDBSIZE {
     __obj.asInstanceOf[TypeofDBSIZE]
   }
   
-  extension [Self <: TypeofDBSIZE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDBSIZE] (val x: Self) extends AnyVal {
     
     inline def setIS_READ_ONLY(value: /* true */ Boolean): Self = StObject.set(x, "IS_READ_ONLY", value.asInstanceOf[js.Any])
     

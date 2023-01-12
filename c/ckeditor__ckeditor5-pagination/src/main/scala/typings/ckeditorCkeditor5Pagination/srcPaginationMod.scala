@@ -42,7 +42,8 @@ object srcPaginationMod {
       __obj.asInstanceOf[PaginationConfig]
     }
     
-    extension [Self <: PaginationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationConfig] (val x: Self) extends AnyVal {
       
       inline def setEnableOnUnsupportedBrowsers(value: Boolean): Self = StObject.set(x, "enableOnUnsupportedBrowsers", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object srcPaginationMod {
       __obj.asInstanceOf[PaginationMarginsConfig]
     }
     
-    extension [Self <: PaginationMarginsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationMarginsConfig] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object srcPaginationMod {
         __obj.asInstanceOf[Plugins]
       }
       
-      extension [Self <: Plugins](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
         
         inline def setPagination(value: Pagination): Self = StObject.set(x, "Pagination", value.asInstanceOf[js.Any])
       }

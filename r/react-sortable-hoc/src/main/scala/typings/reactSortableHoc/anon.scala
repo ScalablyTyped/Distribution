@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Cancel]
     }
     
-    extension [Self <: Cancel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: js.Array[Double]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[TagName]
     }
     
-    extension [Self <: TagName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagName] (val x: Self) extends AnyVal {
       
       inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     }
@@ -87,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Target]
     }
     
-    extension [Self <: Target](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: TagName): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }

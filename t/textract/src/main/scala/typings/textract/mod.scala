@@ -145,7 +145,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setDoc(value: extractorExecOpts): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
@@ -205,7 +206,8 @@ object mod {
       __obj.asInstanceOf[URLConfig]
     }
     
-    extension [Self <: URLConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLConfig] (val x: Self) extends AnyVal {
       
       inline def setTypeOverride(value: String): Self = StObject.set(x, "typeOverride", value.asInstanceOf[js.Any])
       
@@ -224,7 +226,8 @@ object mod {
       __obj.asInstanceOf[extractorExecOpts]
     }
     
-    extension [Self <: extractorExecOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: extractorExecOpts] (val x: Self) extends AnyVal {
       
       inline def setExec(value: StringDictionary[String]): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     }

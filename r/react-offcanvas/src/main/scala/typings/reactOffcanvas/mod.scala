@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[OffCanvasBodyProps]
     }
     
-    extension [Self <: OffCanvasBodyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OffCanvasBodyProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object mod {
       __obj.asInstanceOf[OffCanvasMenuProps]
     }
     
-    extension [Self <: OffCanvasMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OffCanvasMenuProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -181,7 +183,8 @@ object mod {
       __obj.asInstanceOf[OffCanvasProps]
     }
     
-    extension [Self <: OffCanvasProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OffCanvasProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

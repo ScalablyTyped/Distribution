@@ -74,7 +74,8 @@ object AddParents {
     __obj.asInstanceOf[AddParents]
   }
   
-  extension [Self <: AddParents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddParents] (val x: Self) extends AnyVal {
     
     inline def setAddParents(value: String): Self = StObject.set(x, "addParents", value.asInstanceOf[js.Any])
     

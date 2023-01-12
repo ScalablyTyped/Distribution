@@ -82,7 +82,8 @@ object LanguageConfiguration {
     __obj.asInstanceOf[LanguageConfiguration]
   }
   
-  extension [Self <: LanguageConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAutoCloseBefore(value: String): Self = StObject.set(x, "autoCloseBefore", value.asInstanceOf[js.Any])
     

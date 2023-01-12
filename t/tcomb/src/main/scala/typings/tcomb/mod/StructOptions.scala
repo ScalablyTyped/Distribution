@@ -19,7 +19,8 @@ object StructOptions {
     __obj.asInstanceOf[StructOptions]
   }
   
-  extension [Self <: StructOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultProps(value: js.Object): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

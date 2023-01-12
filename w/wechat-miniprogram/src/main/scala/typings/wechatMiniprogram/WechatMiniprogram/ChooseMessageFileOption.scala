@@ -43,7 +43,8 @@ object ChooseMessageFileOption {
     __obj.asInstanceOf[ChooseMessageFileOption]
   }
   
-  extension [Self <: ChooseMessageFileOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseMessageFileOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

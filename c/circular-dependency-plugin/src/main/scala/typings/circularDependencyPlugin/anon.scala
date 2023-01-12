@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Compilation]
     }
     
-    extension [Self <: Compilation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compilation] (val x: Self) extends AnyVal {
       
       inline def setCompilation(value: typings.webpack.mod.Compilation): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[CompilationCompilation]
     }
     
-    extension [Self <: CompilationCompilation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompilationCompilation] (val x: Self) extends AnyVal {
       
       inline def setCompilation(value: typings.webpack.mod.Compilation): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
     }

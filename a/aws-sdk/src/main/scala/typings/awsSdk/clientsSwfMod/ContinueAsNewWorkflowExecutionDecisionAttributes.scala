@@ -58,7 +58,8 @@ object ContinueAsNewWorkflowExecutionDecisionAttributes {
     __obj.asInstanceOf[ContinueAsNewWorkflowExecutionDecisionAttributes]
   }
   
-  extension [Self <: ContinueAsNewWorkflowExecutionDecisionAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinueAsNewWorkflowExecutionDecisionAttributes] (val x: Self) extends AnyVal {
     
     inline def setChildPolicy(value: ChildPolicy): Self = StObject.set(x, "childPolicy", value.asInstanceOf[js.Any])
     

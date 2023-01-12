@@ -27,7 +27,8 @@ object distSchemaMiscGlobalSampleMod {
       __obj.asInstanceOf[GlobalSample]
     }
     
-    extension [Self <: GlobalSample](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalSample] (val x: Self) extends AnyVal {
       
       inline def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       

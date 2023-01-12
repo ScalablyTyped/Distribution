@@ -43,7 +43,8 @@ object GetSavingsPlansUtilizationDetailsRequest {
     __obj.asInstanceOf[GetSavingsPlansUtilizationDetailsRequest]
   }
   
-  extension [Self <: GetSavingsPlansUtilizationDetailsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSavingsPlansUtilizationDetailsRequest] (val x: Self) extends AnyVal {
     
     inline def setDataType(value: SavingsPlansDataTypes): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     

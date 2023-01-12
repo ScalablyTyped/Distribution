@@ -17,7 +17,8 @@ object TopicString {
     __obj.asInstanceOf[TopicString]
   }
   
-  extension [Self <: TopicString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicString] (val x: Self) extends AnyVal {
     
     inline def setPartitions(value: js.Array[FirstSequence]): Self = StObject.set(x, "partitions", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object AssumeDecoratedRoleWithSAMLResponse {
     __obj.asInstanceOf[AssumeDecoratedRoleWithSAMLResponse]
   }
   
-  extension [Self <: AssumeDecoratedRoleWithSAMLResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssumeDecoratedRoleWithSAMLResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessKeyId(value: AccessKeyIdString): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
     

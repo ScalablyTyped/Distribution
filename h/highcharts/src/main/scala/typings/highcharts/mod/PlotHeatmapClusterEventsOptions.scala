@@ -21,7 +21,8 @@ object PlotHeatmapClusterEventsOptions {
     __obj.asInstanceOf[PlotHeatmapClusterEventsOptions]
   }
   
-  extension [Self <: PlotHeatmapClusterEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHeatmapClusterEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setDrillToCluster(value: MarkerClusterDrillCallbackFunction): Self = StObject.set(x, "drillToCluster", value.asInstanceOf[js.Any])
     

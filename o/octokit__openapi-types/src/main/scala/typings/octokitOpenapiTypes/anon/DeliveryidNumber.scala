@@ -15,7 +15,8 @@ object DeliveryidNumber {
     __obj.asInstanceOf[DeliveryidNumber]
   }
   
-  extension [Self <: DeliveryidNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryidNumber] (val x: Self) extends AnyVal {
     
     inline def setDelivery_id(value: Double): Self = StObject.set(x, "delivery_id", value.asInstanceOf[js.Any])
   }

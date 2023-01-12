@@ -482,7 +482,8 @@ object sapUiIntegrationActionDefinitionMod {
       __obj.asInstanceOf[ActionDefinitionSettings]
     }
     
-    extension [Self <: ActionDefinitionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionDefinitionSettings] (val x: Self) extends AnyVal {
       
       inline def setButtonType(
         value: ButtonType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ButtonType * / any */ String) | PropertyBindingInfo

@@ -45,7 +45,8 @@ object Matrix2D {
     __obj.asInstanceOf[Matrix2D]
   }
   
-  extension [Self <: Matrix2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Matrix2D] (val x: Self) extends AnyVal {
     
     inline def setM00(value: Double): Self = StObject.set(x, "m00", value.asInstanceOf[js.Any])
     

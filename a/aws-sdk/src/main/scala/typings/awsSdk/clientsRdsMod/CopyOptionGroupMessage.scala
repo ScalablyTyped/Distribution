@@ -34,7 +34,8 @@ object CopyOptionGroupMessage {
     __obj.asInstanceOf[CopyOptionGroupMessage]
   }
   
-  extension [Self <: CopyOptionGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyOptionGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setSourceOptionGroupIdentifier(value: String): Self = StObject.set(x, "SourceOptionGroupIdentifier", value.asInstanceOf[js.Any])
     

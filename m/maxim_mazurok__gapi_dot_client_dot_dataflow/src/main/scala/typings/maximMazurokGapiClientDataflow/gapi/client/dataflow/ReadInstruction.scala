@@ -16,7 +16,8 @@ object ReadInstruction {
     __obj.asInstanceOf[ReadInstruction]
   }
   
-  extension [Self <: ReadInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadInstruction] (val x: Self) extends AnyVal {
     
     inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

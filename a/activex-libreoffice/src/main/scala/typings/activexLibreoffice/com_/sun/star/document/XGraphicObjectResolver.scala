@@ -26,7 +26,8 @@ object XGraphicObjectResolver {
     __obj.asInstanceOf[XGraphicObjectResolver]
   }
   
-  extension [Self <: XGraphicObjectResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGraphicObjectResolver] (val x: Self) extends AnyVal {
     
     inline def setResolveGraphicObjectURL(value: String => String): Self = StObject.set(x, "resolveGraphicObjectURL", js.Any.fromFunction1(value))
   }

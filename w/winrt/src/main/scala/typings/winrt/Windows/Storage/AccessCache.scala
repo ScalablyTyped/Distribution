@@ -53,7 +53,8 @@ object AccessCache {
       __obj.asInstanceOf[AccessListEntry]
     }
     
-    extension [Self <: AccessListEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessListEntry] (val x: Self) extends AnyVal {
       
       inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object AccessCache {
       __obj.asInstanceOf[IItemRemovedEventArgs]
     }
     
-    extension [Self <: IItemRemovedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IItemRemovedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setRemovedEntry(value: AccessListEntry): Self = StObject.set(x, "removedEntry", value.asInstanceOf[js.Any])
     }
@@ -96,7 +98,8 @@ object AccessCache {
       __obj.asInstanceOf[IStorageApplicationPermissionsStatics]
     }
     
-    extension [Self <: IStorageApplicationPermissionsStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStorageApplicationPermissionsStatics] (val x: Self) extends AnyVal {
       
       inline def setFutureAccessList(value: StorageItemAccessList): Self = StObject.set(x, "futureAccessList", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object NodeJS {
       __obj.asInstanceOf[Module]
     }
     
-    extension [Self <: Module](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
       
       inline def setHot(value: Hot): Self = StObject.set(x, "hot", value.asInstanceOf[js.Any])
     }

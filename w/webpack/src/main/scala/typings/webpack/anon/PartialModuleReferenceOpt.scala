@@ -22,7 +22,8 @@ object PartialModuleReferenceOpt {
     __obj.asInstanceOf[PartialModuleReferenceOpt]
   }
   
-  extension [Self <: PartialModuleReferenceOpt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialModuleReferenceOpt] (val x: Self) extends AnyVal {
     
     inline def setAsiSafe(value: Boolean): Self = StObject.set(x, "asiSafe", value.asInstanceOf[js.Any])
     

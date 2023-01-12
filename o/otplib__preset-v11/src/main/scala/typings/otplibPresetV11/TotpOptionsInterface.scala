@@ -21,7 +21,8 @@ object TotpOptionsInterface {
     __obj.asInstanceOf[TotpOptionsInterface]
   }
   
-  extension [Self <: TotpOptionsInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TotpOptionsInterface] (val x: Self) extends AnyVal {
     
     inline def setEpoch(value: Any): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
     

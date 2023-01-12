@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Log]
     }
     
-    extension [Self <: Log](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
       
       inline def setLog(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
     }
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[OmitCrawlerRequestOptions]
     }
     
-    extension [Self <: OmitCrawlerRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitCrawlerRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (js.Error, CrawlerRequestResponse) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       

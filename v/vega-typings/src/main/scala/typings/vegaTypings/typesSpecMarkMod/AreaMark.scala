@@ -23,7 +23,8 @@ object AreaMark {
     __obj.asInstanceOf[AreaMark]
   }
   
-  extension [Self <: AreaMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaMark] (val x: Self) extends AnyVal {
     
     inline def setType(value: area): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

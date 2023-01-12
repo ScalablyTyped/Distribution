@@ -27,7 +27,8 @@ object buildConstantsMod {
       __obj.asInstanceOf[ParsedErrorResponse]
     }
     
-    extension [Self <: ParsedErrorResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedErrorResponse] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: RequestId): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

@@ -65,7 +65,8 @@ object RenderBarProps {
     __obj.asInstanceOf[RenderBarProps[RawDatum]]
   }
   
-  extension [Self <: RenderBarProps[?], RawDatum /* <: BarDatum */](x: Self & RenderBarProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderBarProps[?], RawDatum /* <: BarDatum */] (val x: Self & RenderBarProps[RawDatum]) extends AnyVal {
     
     inline def setBar(value: ComputedBarDatum[RawDatum] & DataValue): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     

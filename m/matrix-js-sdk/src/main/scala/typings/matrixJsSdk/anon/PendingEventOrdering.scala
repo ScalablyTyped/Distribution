@@ -25,7 +25,8 @@ object PendingEventOrdering {
     __obj.asInstanceOf[PendingEventOrdering]
   }
   
-  extension [Self <: PendingEventOrdering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingEventOrdering] (val x: Self) extends AnyVal {
     
     inline def setPendingEventOrdering(value: String): Self = StObject.set(x, "pendingEventOrdering", value.asInstanceOf[js.Any])
     

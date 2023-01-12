@@ -23,7 +23,8 @@ object PredefinedArchiveLayoutOptions {
     __obj.asInstanceOf[PredefinedArchiveLayoutOptions]
   }
   
-  extension [Self <: PredefinedArchiveLayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredefinedArchiveLayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setType(value: bestFit | pip | verticalPresentation | horizontalPresentation | focus): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

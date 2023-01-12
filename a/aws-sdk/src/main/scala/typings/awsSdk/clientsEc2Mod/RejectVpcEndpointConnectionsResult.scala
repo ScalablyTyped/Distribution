@@ -18,7 +18,8 @@ object RejectVpcEndpointConnectionsResult {
     __obj.asInstanceOf[RejectVpcEndpointConnectionsResult]
   }
   
-  extension [Self <: RejectVpcEndpointConnectionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectVpcEndpointConnectionsResult] (val x: Self) extends AnyVal {
     
     inline def setUnsuccessful(value: UnsuccessfulItemSet): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
     

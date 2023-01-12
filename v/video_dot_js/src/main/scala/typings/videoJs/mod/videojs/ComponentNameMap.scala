@@ -26,7 +26,8 @@ object ComponentNameMap {
     __obj.asInstanceOf[ComponentNameMap]
   }
   
-  extension [Self <: ComponentNameMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentNameMap] (val x: Self) extends AnyVal {
     
     inline def setLiveDisplay(value: LiveDisplay): Self = StObject.set(x, "liveDisplay", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[Tabulator]
     }
     
-    extension [Self <: Tabulator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tabulator] (val x: Self) extends AnyVal {
       
       inline def setDefaultShowAttribute(value: String): Self = StObject.set(x, "defaultShowAttribute", value.asInstanceOf[js.Any])
       

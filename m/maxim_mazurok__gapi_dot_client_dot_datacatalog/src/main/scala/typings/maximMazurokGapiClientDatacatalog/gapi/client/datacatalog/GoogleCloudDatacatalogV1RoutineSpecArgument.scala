@@ -22,7 +22,8 @@ object GoogleCloudDatacatalogV1RoutineSpecArgument {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1RoutineSpecArgument]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1RoutineSpecArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1RoutineSpecArgument] (val x: Self) extends AnyVal {
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object StructureStorage {
     __obj.asInstanceOf[StructureStorage]
   }
   
-  extension [Self <: StructureStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureStorage] (val x: Self) extends AnyVal {
     
     inline def setStore(value: StoreDefinition): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     

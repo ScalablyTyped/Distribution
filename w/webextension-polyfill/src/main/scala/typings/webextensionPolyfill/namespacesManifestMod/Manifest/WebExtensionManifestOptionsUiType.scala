@@ -30,7 +30,8 @@ object WebExtensionManifestOptionsUiType {
     __obj.asInstanceOf[WebExtensionManifestOptionsUiType]
   }
   
-  extension [Self <: WebExtensionManifestOptionsUiType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestOptionsUiType] (val x: Self) extends AnyVal {
     
     inline def setBrowser_style(value: Boolean): Self = StObject.set(x, "browser_style", value.asInstanceOf[js.Any])
     

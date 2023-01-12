@@ -544,7 +544,8 @@ object distSrcTypesKeyframesMod {
       __obj.asInstanceOf[KeyframesTimeline]
     }
     
-    extension [Self <: KeyframesTimeline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyframesTimeline] (val x: Self) extends AnyVal {
       
       inline def set0(value: BoxCssPropsCssProps): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       

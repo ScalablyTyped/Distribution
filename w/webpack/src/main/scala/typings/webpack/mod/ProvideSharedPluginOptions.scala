@@ -23,7 +23,8 @@ object ProvideSharedPluginOptions {
     __obj.asInstanceOf[ProvideSharedPluginOptions]
   }
   
-  extension [Self <: ProvideSharedPluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvideSharedPluginOptions] (val x: Self) extends AnyVal {
     
     inline def setProvides(value: Provides): Self = StObject.set(x, "provides", value.asInstanceOf[js.Any])
     

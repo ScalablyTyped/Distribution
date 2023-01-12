@@ -99,7 +99,8 @@ object Stats {
     __obj.asInstanceOf[Stats]
   }
   
-  extension [Self <: Stats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
     
     inline def setGetAverageCpc(value: () => Double): Self = StObject.set(x, "getAverageCpc", js.Any.fromFunction0(value))
     

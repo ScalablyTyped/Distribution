@@ -28,7 +28,8 @@ object ListAssociationVersionsRequest {
     __obj.asInstanceOf[ListAssociationVersionsRequest]
   }
   
-  extension [Self <: ListAssociationVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssociationVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     

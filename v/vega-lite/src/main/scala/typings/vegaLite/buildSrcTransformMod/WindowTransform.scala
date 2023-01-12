@@ -46,7 +46,8 @@ object WindowTransform {
     __obj.asInstanceOf[WindowTransform]
   }
   
-  extension [Self <: WindowTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowTransform] (val x: Self) extends AnyVal {
     
     inline def setFrame(value: js.Array[Null | Double]): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object IPrimitive {
     __obj.asInstanceOf[IPrimitive]
   }
   
-  extension [Self <: IPrimitive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrimitive] (val x: Self) extends AnyVal {
     
     inline def setGetCursor(value: () => String): Self = StObject.set(x, "getCursor", js.Any.fromFunction0(value))
     

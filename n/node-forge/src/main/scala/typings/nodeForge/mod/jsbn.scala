@@ -135,7 +135,8 @@ object jsbn {
       __obj.asInstanceOf[RandomGenerator]
     }
     
-    extension [Self <: RandomGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomGenerator] (val x: Self) extends AnyVal {
       
       inline def setNextBytes(value: js.Array[Double] => Unit): Self = StObject.set(x, "nextBytes", js.Any.fromFunction1(value))
     }

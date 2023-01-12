@@ -70,7 +70,8 @@ object b2ContactPoint {
     __obj.asInstanceOf[b2ContactPoint]
   }
   
-  extension [Self <: b2ContactPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2ContactPoint] (val x: Self) extends AnyVal {
     
     inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     

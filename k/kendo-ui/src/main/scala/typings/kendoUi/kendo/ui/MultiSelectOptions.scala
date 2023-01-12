@@ -100,7 +100,8 @@ object MultiSelectOptions {
     __obj.asInstanceOf[MultiSelectOptions]
   }
   
-  extension [Self <: MultiSelectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiSelectOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Boolean | MultiSelectAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

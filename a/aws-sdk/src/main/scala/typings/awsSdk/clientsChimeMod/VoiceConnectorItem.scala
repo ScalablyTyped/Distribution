@@ -23,7 +23,8 @@ object VoiceConnectorItem {
     __obj.asInstanceOf[VoiceConnectorItem]
   }
   
-  extension [Self <: VoiceConnectorItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceConnectorItem] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: VoiceConnectorItemPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     

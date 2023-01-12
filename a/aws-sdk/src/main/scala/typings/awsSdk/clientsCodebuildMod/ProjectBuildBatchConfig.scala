@@ -38,7 +38,8 @@ object ProjectBuildBatchConfig {
     __obj.asInstanceOf[ProjectBuildBatchConfig]
   }
   
-  extension [Self <: ProjectBuildBatchConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectBuildBatchConfig] (val x: Self) extends AnyVal {
     
     inline def setBatchReportMode(value: BatchReportModeType): Self = StObject.set(x, "batchReportMode", value.asInstanceOf[js.Any])
     

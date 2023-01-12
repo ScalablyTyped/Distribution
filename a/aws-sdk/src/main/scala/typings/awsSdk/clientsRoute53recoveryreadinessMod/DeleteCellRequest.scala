@@ -18,7 +18,8 @@ object DeleteCellRequest {
     __obj.asInstanceOf[DeleteCellRequest]
   }
   
-  extension [Self <: DeleteCellRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCellRequest] (val x: Self) extends AnyVal {
     
     inline def setCellName(value: string): Self = StObject.set(x, "CellName", value.asInstanceOf[js.Any])
   }

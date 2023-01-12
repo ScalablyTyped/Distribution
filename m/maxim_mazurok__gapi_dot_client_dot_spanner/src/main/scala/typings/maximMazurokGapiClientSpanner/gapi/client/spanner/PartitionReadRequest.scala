@@ -37,7 +37,8 @@ object PartitionReadRequest {
     __obj.asInstanceOf[PartitionReadRequest]
   }
   
-  extension [Self <: PartitionReadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionReadRequest] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

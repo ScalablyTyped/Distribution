@@ -24,7 +24,8 @@ object PartialCurrentRefinements {
     __obj.asInstanceOf[PartialCurrentRefinements]
   }
   
-  extension [Self <: PartialCurrentRefinements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCurrentRefinements] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[Refinement]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

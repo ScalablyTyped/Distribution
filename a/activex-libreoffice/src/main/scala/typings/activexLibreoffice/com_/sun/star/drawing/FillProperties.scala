@@ -185,7 +185,8 @@ object FillProperties {
     __obj.asInstanceOf[FillProperties]
   }
   
-  extension [Self <: FillProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillProperties] (val x: Self) extends AnyVal {
     
     inline def setFillBackground(value: Boolean): Self = StObject.set(x, "FillBackground", value.asInstanceOf[js.Any])
     

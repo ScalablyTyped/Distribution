@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[FileDef]
     }
     
-    extension [Self <: FileDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileDef] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[HTML5ToPDF]
     }
     
-    extension [Self <: HTML5ToPDF](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTML5ToPDF] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: () => js.Promise[Buffer]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
       
@@ -141,7 +143,8 @@ object mod {
       __obj.asInstanceOf[LegacyOptions]
     }
     
-    extension [Self <: LegacyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyOptions] (val x: Self) extends AnyVal {
       
       inline def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
       
@@ -222,7 +225,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setInclude(value: js.Array[String | FileDef]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
@@ -299,7 +303,8 @@ object mod {
       __obj.asInstanceOf[ParsedOptions]
     }
     
-    extension [Self <: ParsedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

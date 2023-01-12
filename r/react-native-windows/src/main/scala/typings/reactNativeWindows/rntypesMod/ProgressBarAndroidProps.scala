@@ -55,7 +55,8 @@ object ProgressBarAndroidProps {
     __obj.asInstanceOf[ProgressBarAndroidProps]
   }
   
-  extension [Self <: ProgressBarAndroidProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressBarAndroidProps] (val x: Self) extends AnyVal {
     
     inline def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
     

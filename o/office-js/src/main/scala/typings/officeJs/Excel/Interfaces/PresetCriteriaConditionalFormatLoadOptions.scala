@@ -41,7 +41,8 @@ object PresetCriteriaConditionalFormatLoadOptions {
     __obj.asInstanceOf[PresetCriteriaConditionalFormatLoadOptions]
   }
   
-  extension [Self <: PresetCriteriaConditionalFormatLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PresetCriteriaConditionalFormatLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

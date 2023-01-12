@@ -18,7 +18,8 @@ object IncrementalPullConfig {
     __obj.asInstanceOf[IncrementalPullConfig]
   }
   
-  extension [Self <: IncrementalPullConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncrementalPullConfig] (val x: Self) extends AnyVal {
     
     inline def setDatetimeTypeFieldName(value: DatetimeTypeFieldName): Self = StObject.set(x, "datetimeTypeFieldName", value.asInstanceOf[js.Any])
     

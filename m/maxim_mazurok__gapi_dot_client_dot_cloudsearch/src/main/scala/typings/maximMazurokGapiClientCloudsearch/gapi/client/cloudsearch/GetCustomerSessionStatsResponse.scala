@@ -15,7 +15,8 @@ object GetCustomerSessionStatsResponse {
     __obj.asInstanceOf[GetCustomerSessionStatsResponse]
   }
   
-  extension [Self <: GetCustomerSessionStatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCustomerSessionStatsResponse] (val x: Self) extends AnyVal {
     
     inline def setStats(value: js.Array[CustomerSessionStats]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     

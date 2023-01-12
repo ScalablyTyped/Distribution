@@ -51,7 +51,8 @@ object distTypesMiddlewaresStrictTransportSecurityMod {
       __obj.asInstanceOf[StrictTransportSecurityOptions]
     }
     
-    extension [Self <: StrictTransportSecurityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictTransportSecurityOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeSubDomains(value: Boolean): Self = StObject.set(x, "includeSubDomains", value.asInstanceOf[js.Any])
       

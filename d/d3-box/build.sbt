@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "d3-box"
-version := "0.0-unknown-dt-20221103Z-e08ac8"
+version := "0.0-unknown-dt-20221103Z-59d775"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "d3-selection" % "3.0-dt-20220720Z-07c147",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f")
+  "org.scalablytyped" %%% "d3-selection" % "3.0-dt-20220720Z-cb99f3",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

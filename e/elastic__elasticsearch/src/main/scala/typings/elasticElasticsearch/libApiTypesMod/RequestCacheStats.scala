@@ -23,7 +23,8 @@ object RequestCacheStats {
     __obj.asInstanceOf[RequestCacheStats]
   }
   
-  extension [Self <: RequestCacheStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestCacheStats] (val x: Self) extends AnyVal {
     
     inline def setEvictions(value: long): Self = StObject.set(x, "evictions", value.asInstanceOf[js.Any])
     

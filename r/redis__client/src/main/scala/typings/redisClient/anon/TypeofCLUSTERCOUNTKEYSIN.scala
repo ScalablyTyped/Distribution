@@ -17,7 +17,8 @@ object TypeofCLUSTERCOUNTKEYSIN {
     __obj.asInstanceOf[TypeofCLUSTERCOUNTKEYSIN]
   }
   
-  extension [Self <: TypeofCLUSTERCOUNTKEYSIN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCLUSTERCOUNTKEYSIN] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: Double => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction1(value))
     

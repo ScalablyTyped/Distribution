@@ -46,7 +46,8 @@ object JoinVoIPChatOption {
     __obj.asInstanceOf[JoinVoIPChatOption]
   }
   
-  extension [Self <: JoinVoIPChatOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinVoIPChatOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ JoinVoIPChatError => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

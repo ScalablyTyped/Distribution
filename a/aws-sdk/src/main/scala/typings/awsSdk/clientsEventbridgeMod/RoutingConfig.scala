@@ -18,7 +18,8 @@ object RoutingConfig {
     __obj.asInstanceOf[RoutingConfig]
   }
   
-  extension [Self <: RoutingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutingConfig] (val x: Self) extends AnyVal {
     
     inline def setFailoverConfig(value: FailoverConfig): Self = StObject.set(x, "FailoverConfig", value.asInstanceOf[js.Any])
   }

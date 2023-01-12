@@ -119,7 +119,8 @@ object IAxis {
     __obj.asInstanceOf[IAxis]
   }
   
-  extension [Self <: IAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAxis] (val x: Self) extends AnyVal {
     
     inline def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
     

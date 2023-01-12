@@ -272,7 +272,8 @@ object libGridDetailGridMod {
       __obj.asInstanceOf[DetailGrid]
     }
     
-    extension [Self <: DetailGrid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailGrid] (val x: Self) extends AnyVal {
       
       inline def setAdaptEvent_(value: Any): Self = StObject.set(x, "adaptEvent_", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object buildSrcHashStreamValidatorMod {
       __obj.asInstanceOf[HashStreamValidatorOptions]
     }
     
-    extension [Self <: HashStreamValidatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashStreamValidatorOptions] (val x: Self) extends AnyVal {
       
       inline def setCrc32c(value: Boolean): Self = StObject.set(x, "crc32c", value.asInstanceOf[js.Any])
       

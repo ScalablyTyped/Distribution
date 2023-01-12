@@ -20,7 +20,8 @@ object DOMEventListener {
     __obj.asInstanceOf[DOMEventListener]
   }
   
-  extension [Self <: DOMEventListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMEventListener] (val x: Self) extends AnyVal {
     
     inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     

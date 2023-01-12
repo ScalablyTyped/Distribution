@@ -71,7 +71,8 @@ object GoogleApiPageSpeedOnlineResource {
     __obj.asInstanceOf[GoogleApiPageSpeedOnlineResource]
   }
   
-  extension [Self <: GoogleApiPageSpeedOnlineResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiPageSpeedOnlineResource] (val x: Self) extends AnyVal {
     
     inline def setFormattedResults(value: Locale): Self = StObject.set(x, "formattedResults", value.asInstanceOf[js.Any])
     

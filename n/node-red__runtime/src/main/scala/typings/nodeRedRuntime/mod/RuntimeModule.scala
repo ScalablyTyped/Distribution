@@ -137,7 +137,8 @@ object RuntimeModule {
     __obj.asInstanceOf[RuntimeModule]
   }
   
-  extension [Self <: RuntimeModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeModule] (val x: Self) extends AnyVal {
     
     inline def setComms(value: CommsModule): Self = StObject.set(x, "comms", value.asInstanceOf[js.Any])
     

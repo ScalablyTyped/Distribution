@@ -75,7 +75,8 @@ object apiMod {
       __obj.asInstanceOf[ApiInit[D]]
     }
     
-    extension [Self <: ApiInit[?], D /* <: DatasetCore[Quad, Quad] */](x: Self & ApiInit[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiInit[?], D /* <: DatasetCore[Quad, Quad] */] (val x: Self & ApiInit[D]) extends AnyVal {
       
       inline def setCodePath(value: String): Self = StObject.set(x, "codePath", value.asInstanceOf[js.Any])
       

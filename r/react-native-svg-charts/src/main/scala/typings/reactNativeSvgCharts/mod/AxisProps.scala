@@ -33,7 +33,8 @@ object AxisProps {
     __obj.asInstanceOf[AxisProps[T]]
   }
   
-  extension [Self <: AxisProps[?], T](x: Self & AxisProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisProps[?], T] (val x: Self & AxisProps[T]) extends AnyVal {
     
     inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

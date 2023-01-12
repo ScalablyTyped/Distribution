@@ -30,7 +30,8 @@ object INxGroupTail {
     __obj.asInstanceOf[INxGroupTail]
   }
   
-  extension [Self <: INxGroupTail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxGroupTail] (val x: Self) extends AnyVal {
     
     inline def setQDown(value: Double): Self = StObject.set(x, "qDown", value.asInstanceOf[js.Any])
     

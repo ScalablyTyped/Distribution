@@ -62,7 +62,8 @@ object XAreaLink {
     __obj.asInstanceOf[XAreaLink]
   }
   
-  extension [Self <: XAreaLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAreaLink] (val x: Self) extends AnyVal {
     
     inline def setDestArea(value: CellRangeAddress): Self = StObject.set(x, "DestArea", value.asInstanceOf[js.Any])
     

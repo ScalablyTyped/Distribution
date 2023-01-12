@@ -27,7 +27,8 @@ object IdentityManagerSetProtocolErrorHandlerHandlerFunction {
     __obj.asInstanceOf[IdentityManagerSetProtocolErrorHandlerHandlerFunction]
   }
   
-  extension [Self <: IdentityManagerSetProtocolErrorHandlerHandlerFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityManagerSetProtocolErrorHandlerHandlerFunction] (val x: Self) extends AnyVal {
     
     inline def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object NodesKeyedProcessor {
     __obj.asInstanceOf[NodesKeyedProcessor]
   }
   
-  extension [Self <: NodesKeyedProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesKeyedProcessor] (val x: Self) extends AnyVal {
     
     inline def setStats(value: NodesProcessor): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     

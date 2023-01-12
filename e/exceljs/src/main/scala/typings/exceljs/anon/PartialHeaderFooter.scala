@@ -30,7 +30,8 @@ object PartialHeaderFooter {
     __obj.asInstanceOf[PartialHeaderFooter]
   }
   
-  extension [Self <: PartialHeaderFooter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialHeaderFooter] (val x: Self) extends AnyVal {
     
     inline def setDifferentFirst(value: Boolean): Self = StObject.set(x, "differentFirst", value.asInstanceOf[js.Any])
     

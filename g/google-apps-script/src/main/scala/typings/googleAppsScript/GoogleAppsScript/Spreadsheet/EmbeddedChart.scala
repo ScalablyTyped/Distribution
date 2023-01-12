@@ -79,7 +79,8 @@ object EmbeddedChart {
     __obj.asInstanceOf[EmbeddedChart]
   }
   
-  extension [Self <: EmbeddedChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbeddedChart] (val x: Self) extends AnyVal {
     
     inline def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
     

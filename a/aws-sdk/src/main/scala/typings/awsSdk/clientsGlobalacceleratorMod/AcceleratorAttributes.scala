@@ -28,7 +28,8 @@ object AcceleratorAttributes {
     __obj.asInstanceOf[AcceleratorAttributes]
   }
   
-  extension [Self <: AcceleratorAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceleratorAttributes] (val x: Self) extends AnyVal {
     
     inline def setFlowLogsEnabled(value: GenericBoolean): Self = StObject.set(x, "FlowLogsEnabled", value.asInstanceOf[js.Any])
     

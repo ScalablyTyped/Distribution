@@ -108,7 +108,8 @@ object dxScrollable {
       __obj.asInstanceOf[ScrollEventInfo[T]]
     }
     
-    extension [Self <: ScrollEventInfo[?], T](x: Self & ScrollEventInfo[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollEventInfo[?], T] (val x: Self & ScrollEventInfo[T]) extends AnyVal {
       
       inline def setReachedBottom(value: Boolean): Self = StObject.set(x, "reachedBottom", value.asInstanceOf[js.Any])
       

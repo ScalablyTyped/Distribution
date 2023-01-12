@@ -19,7 +19,8 @@ object FetchListResult {
     __obj.asInstanceOf[FetchListResult[K, D]]
   }
   
-  extension [Self <: FetchListResult[?, ?], K, D](x: Self & (FetchListResult[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchListResult[?, ?], K, D] (val x: Self & (FetchListResult[K, D])) extends AnyVal {
     
     inline def setData(value: js.Array[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

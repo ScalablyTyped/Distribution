@@ -23,7 +23,8 @@ object OutpostConfigRequest {
     __obj.asInstanceOf[OutpostConfigRequest]
   }
   
-  extension [Self <: OutpostConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutpostConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setControlPlaneInstanceType(value: String): Self = StObject.set(x, "controlPlaneInstanceType", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object BuildBatchPhase {
     __obj.asInstanceOf[BuildBatchPhase]
   }
   
-  extension [Self <: BuildBatchPhase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBatchPhase] (val x: Self) extends AnyVal {
     
     inline def setContexts(value: PhaseContexts): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     

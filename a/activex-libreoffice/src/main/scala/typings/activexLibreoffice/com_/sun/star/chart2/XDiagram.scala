@@ -89,7 +89,8 @@ object XDiagram {
     __obj.asInstanceOf[XDiagram]
   }
   
-  extension [Self <: XDiagram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDiagram] (val x: Self) extends AnyVal {
     
     inline def setDefaultColorScheme(value: XColorScheme): Self = StObject.set(x, "DefaultColorScheme", value.asInstanceOf[js.Any])
     

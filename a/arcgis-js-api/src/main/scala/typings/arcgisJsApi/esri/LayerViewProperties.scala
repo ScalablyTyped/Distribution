@@ -22,7 +22,8 @@ object LayerViewProperties {
     __obj.asInstanceOf[LayerViewProperties]
   }
   
-  extension [Self <: LayerViewProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerViewProperties] (val x: Self) extends AnyVal {
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

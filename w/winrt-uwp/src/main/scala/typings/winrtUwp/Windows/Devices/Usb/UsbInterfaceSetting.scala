@@ -52,7 +52,8 @@ object UsbInterfaceSetting {
     __obj.asInstanceOf[UsbInterfaceSetting]
   }
   
-  extension [Self <: UsbInterfaceSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsbInterfaceSetting] (val x: Self) extends AnyVal {
     
     inline def setBulkInEndpoints(value: IVectorView[UsbBulkInEndpointDescriptor]): Self = StObject.set(x, "bulkInEndpoints", value.asInstanceOf[js.Any])
     

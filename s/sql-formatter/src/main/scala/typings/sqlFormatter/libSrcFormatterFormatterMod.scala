@@ -84,7 +84,8 @@ object libSrcFormatterFormatterMod {
       __obj.asInstanceOf[Formatter]
     }
     
-    extension [Self <: Formatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Formatter] (val x: Self) extends AnyVal {
       
       inline def setCfg(value: Any): Self = StObject.set(x, "cfg", value.asInstanceOf[js.Any])
       

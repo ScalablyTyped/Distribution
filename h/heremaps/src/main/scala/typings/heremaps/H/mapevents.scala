@@ -100,7 +100,8 @@ object mapevents {
     // TODO not sure this is the right interpretation of the docs
     type Buttons = BitMask
     
-    extension [Self <: Pointer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pointer] (val x: Self) extends AnyVal {
       
       inline def setButton(value: Button): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object mapevents {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setEnable(value: BitMask): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
         
@@ -227,7 +229,8 @@ object mapevents {
       __obj.asInstanceOf[ContextMenuEvent]
     }
     
-    extension [Self <: ContextMenuEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -285,7 +288,8 @@ object mapevents {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setChangedPointers(value: js.Array[Pointer]): Self = StObject.set(x, "changedPointers", value.asInstanceOf[js.Any])
       
@@ -370,7 +374,8 @@ object mapevents {
       __obj.asInstanceOf[WheelEvent]
     }
     
-    extension [Self <: WheelEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WheelEvent] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       

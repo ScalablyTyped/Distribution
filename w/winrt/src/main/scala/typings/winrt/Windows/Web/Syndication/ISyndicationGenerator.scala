@@ -20,7 +20,8 @@ object ISyndicationGenerator {
     __obj.asInstanceOf[ISyndicationGenerator]
   }
   
-  extension [Self <: ISyndicationGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyndicationGenerator] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[ArrowStart]
     }
     
-    extension [Self <: ArrowStart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrowStart] (val x: Self) extends AnyVal {
       
       inline def setArrowStart(value: Point): Self = StObject.set(x, "arrowStart", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Arrowpath]
     }
     
-    extension [Self <: Arrowpath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arrowpath] (val x: Self) extends AnyVal {
       
       inline def setArrowpath(value: String): Self = StObject.set(x, "arrowpath", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Cola]
     }
     
-    extension [Self <: Cola](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cola] (val x: Self) extends AnyVal {
       
       inline def setCola(value: Layout): Self = StObject.set(x, "cola", value.asInstanceOf[js.Any])
       
@@ -101,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Constraint]
     }
     
-    extension [Self <: Constraint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constraint] (val x: Self) extends AnyVal {
       
       inline def setConstraint(value: typings.webcola.distSrcVpscMod.Constraint): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
       
@@ -124,7 +128,8 @@ object anon {
       __obj.asInstanceOf[DesiredCenter]
     }
     
-    extension [Self <: DesiredCenter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DesiredCenter] (val x: Self) extends AnyVal {
       
       inline def setDesiredCenter(value: Double): Self = StObject.set(x, "desiredCenter", value.asInstanceOf[js.Any])
       
@@ -145,7 +150,8 @@ object anon {
       __obj.asInstanceOf[E]
     }
     
-    extension [Self <: E](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: E] (val x: Self) extends AnyVal {
       
       inline def setE(value: js.Array[VisibilityEdge]): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
       
@@ -191,7 +197,8 @@ object anon {
       __obj.asInstanceOf[Groups]
     }
     
-    extension [Self <: Groups](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Groups] (val x: Self) extends AnyVal {
       
       inline def setGroups(value: js.Array[Any]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
@@ -216,7 +223,8 @@ object anon {
       __obj.asInstanceOf[Links]
     }
     
-    extension [Self <: Links](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Links] (val x: Self) extends AnyVal {
       
       inline def setLinks(value: js.Array[Link[Node]]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
@@ -243,7 +251,8 @@ object anon {
       __obj.asInstanceOf[LowerBound]
     }
     
-    extension [Self <: LowerBound](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LowerBound] (val x: Self) extends AnyVal {
       
       inline def setLowerBound(value: Double): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
       
@@ -268,7 +277,8 @@ object anon {
       __obj.asInstanceOf[T1]
     }
     
-    extension [Self <: T1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: T1] (val x: Self) extends AnyVal {
       
       inline def setT1(value: Double): Self = StObject.set(x, "t1", value.asInstanceOf[js.Any])
       
@@ -289,7 +299,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

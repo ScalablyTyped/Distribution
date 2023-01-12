@@ -56,7 +56,8 @@ object GanttDateHelpers {
     __obj.asInstanceOf[GanttDateHelpers]
   }
   
-  extension [Self <: GanttDateHelpers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttDateHelpers] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (js.Date, Double, String) => js.Date): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
     

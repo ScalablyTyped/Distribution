@@ -486,7 +486,8 @@ object mod {
       __obj.asInstanceOf[EventListenerProps[T]]
     }
     
-    extension [Self <: EventListenerProps[?], T /* <: EventTarget | WindowEventTargets */](x: Self & EventListenerProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventListenerProps[?], T /* <: EventTarget | WindowEventTargets */] (val x: Self & EventListenerProps[T]) extends AnyVal {
       
       inline def setOnAbort(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, Any]): Self = StObject.set(x, "onAbort", value.asInstanceOf[js.Any])
       
@@ -1199,7 +1200,8 @@ object mod {
       __obj.asInstanceOf[EventOptions]
     }
     
-    extension [Self <: EventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventOptions] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       

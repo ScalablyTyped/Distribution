@@ -29,7 +29,8 @@ object ImagePatternObject {
     __obj.asInstanceOf[ImagePatternObject]
   }
   
-  extension [Self <: ImagePatternObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagePatternObject] (val x: Self) extends AnyVal {
     
     inline def setImage(value: Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

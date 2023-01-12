@@ -33,7 +33,8 @@ object ChangeInfo {
     __obj.asInstanceOf[ChangeInfo]
   }
   
-  extension [Self <: ChangeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeInfo] (val x: Self) extends AnyVal {
     
     inline def setComment(value: ResourceDescription): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

@@ -120,7 +120,8 @@ object srcModelDocumentfragmentMod {
       __obj.asInstanceOf[FromJSONArg]
     }
     
-    extension [Self <: FromJSONArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromJSONArg] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: (Record[String, String]) | (js.Array[js.Tuple2[String, String]])): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

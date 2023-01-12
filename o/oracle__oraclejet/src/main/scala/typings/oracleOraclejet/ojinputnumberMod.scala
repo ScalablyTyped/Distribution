@@ -571,7 +571,8 @@ object ojinputnumberMod {
       __obj.asInstanceOf[ojInputNumberEventMap]
     }
     
-    extension [Self <: ojInputNumberEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojInputNumberEventMap] (val x: Self) extends AnyVal {
       
       inline def setAsyncValidatorsChanged(value: JetElementCustomEvent[js.Array[AsyncValidator[Double]]]): Self = StObject.set(x, "asyncValidatorsChanged", value.asInstanceOf[js.Any])
       
@@ -662,7 +663,8 @@ object ojinputnumberMod {
       __obj.asInstanceOf[ojInputNumberSettableProperties]
     }
     
-    extension [Self <: ojInputNumberSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojInputNumberSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setAsyncValidators(value: js.Array[AsyncValidator[Double]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
       
@@ -768,7 +770,8 @@ object ojinputnumberMod {
       __obj.asInstanceOf[ojInputNumberSettablePropertiesLenient]
     }
     
-    extension [Self <: ojInputNumberSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojInputNumberSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setAsyncValidators(value: js.Array[AsyncValidator[Double]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
       

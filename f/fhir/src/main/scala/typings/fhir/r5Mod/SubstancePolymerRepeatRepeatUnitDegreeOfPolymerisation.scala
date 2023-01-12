@@ -35,7 +35,8 @@ object SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisation {
     __obj.asInstanceOf[SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisation]
   }
   
-  extension [Self <: SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisation] (val x: Self) extends AnyVal {
     
     inline def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     

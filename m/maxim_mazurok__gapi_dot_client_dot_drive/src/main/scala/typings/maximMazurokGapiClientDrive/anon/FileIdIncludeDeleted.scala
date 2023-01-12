@@ -49,7 +49,8 @@ object FileIdIncludeDeleted {
     __obj.asInstanceOf[FileIdIncludeDeleted]
   }
   
-  extension [Self <: FileIdIncludeDeleted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileIdIncludeDeleted] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

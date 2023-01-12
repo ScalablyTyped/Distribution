@@ -21,7 +21,8 @@ object Normalized {
     __obj.asInstanceOf[Normalized]
   }
   
-  extension [Self <: Normalized](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Normalized] (val x: Self) extends AnyVal {
     
     inline def setNormalized(value: TopLevel[NormalizedSpec] & LayoutSizeMixins): Self = StObject.set(x, "normalized", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object Browser {
     __obj.asInstanceOf[Browser]
   }
   
-  extension [Self <: Browser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

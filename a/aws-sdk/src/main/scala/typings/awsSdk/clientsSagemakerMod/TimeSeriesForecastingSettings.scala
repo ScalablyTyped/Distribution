@@ -23,7 +23,8 @@ object TimeSeriesForecastingSettings {
     __obj.asInstanceOf[TimeSeriesForecastingSettings]
   }
   
-  extension [Self <: TimeSeriesForecastingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSeriesForecastingSettings] (val x: Self) extends AnyVal {
     
     inline def setAmazonForecastRoleArn(value: RoleArn): Self = StObject.set(x, "AmazonForecastRoleArn", value.asInstanceOf[js.Any])
     

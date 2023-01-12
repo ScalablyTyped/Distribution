@@ -39,7 +39,8 @@ object Palette {
     __obj.asInstanceOf[Palette]
   }
   
-  extension [Self <: Palette](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Palette] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, js.Object) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

@@ -38,7 +38,8 @@ object GetOpenIDConnectProviderResponse {
     __obj.asInstanceOf[GetOpenIDConnectProviderResponse]
   }
   
-  extension [Self <: GetOpenIDConnectProviderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOpenIDConnectProviderResponse] (val x: Self) extends AnyVal {
     
     inline def setClientIDList(value: clientIDListType): Self = StObject.set(x, "ClientIDList", value.asInstanceOf[js.Any])
     

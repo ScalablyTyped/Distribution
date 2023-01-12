@@ -15,7 +15,8 @@ object GanttEnterprise {
     __obj.asInstanceOf[GanttEnterprise]
   }
   
-  extension [Self <: GanttEnterprise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttEnterprise] (val x: Self) extends AnyVal {
     
     inline def setGetGanttInstance(value: () => GanttStatic): Self = StObject.set(x, "getGanttInstance", js.Any.fromFunction0(value))
   }

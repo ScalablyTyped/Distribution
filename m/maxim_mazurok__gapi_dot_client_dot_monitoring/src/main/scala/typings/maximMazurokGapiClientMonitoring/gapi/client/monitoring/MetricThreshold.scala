@@ -69,7 +69,8 @@ object MetricThreshold {
     __obj.asInstanceOf[MetricThreshold]
   }
   
-  extension [Self <: MetricThreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricThreshold] (val x: Self) extends AnyVal {
     
     inline def setAggregations(value: js.Array[Aggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object InlineValuesProvider {
     __obj.asInstanceOf[InlineValuesProvider]
   }
   
-  extension [Self <: InlineValuesProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineValuesProvider] (val x: Self) extends AnyVal {
     
     inline def setOnDidChangeInlineValues(
       value: (/* listener */ js.Function1[Unit, Any], /* thisArgs */ js.UndefOr[Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable

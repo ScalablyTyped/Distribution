@@ -25,7 +25,8 @@ object BitbucketServerSecrets {
     __obj.asInstanceOf[BitbucketServerSecrets]
   }
   
-  extension [Self <: BitbucketServerSecrets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitbucketServerSecrets] (val x: Self) extends AnyVal {
     
     inline def setAdminAccessTokenVersionName(value: String): Self = StObject.set(x, "adminAccessTokenVersionName", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object RcsServiceKindSupportedChangedEventArgs {
     __obj.asInstanceOf[RcsServiceKindSupportedChangedEventArgs]
   }
   
-  extension [Self <: RcsServiceKindSupportedChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RcsServiceKindSupportedChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setServiceKind(value: RcsServiceKind): Self = StObject.set(x, "serviceKind", value.asInstanceOf[js.Any])
   }

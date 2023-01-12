@@ -19,7 +19,8 @@ object GetSourceOrderHighlightObjectForTestRequest {
     __obj.asInstanceOf[GetSourceOrderHighlightObjectForTestRequest]
   }
   
-  extension [Self <: GetSourceOrderHighlightObjectForTestRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSourceOrderHighlightObjectForTestRequest] (val x: Self) extends AnyVal {
     
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }

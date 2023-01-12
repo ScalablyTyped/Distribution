@@ -48,7 +48,8 @@ object CreateDomainConfigurationRequest {
     __obj.asInstanceOf[CreateDomainConfigurationRequest]
   }
   
-  extension [Self <: CreateDomainConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDomainConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthorizerConfig(value: AuthorizerConfig): Self = StObject.set(x, "authorizerConfig", value.asInstanceOf[js.Any])
     

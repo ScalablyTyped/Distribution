@@ -19,7 +19,8 @@ object RestoreResponse {
     __obj.asInstanceOf[RestoreResponse]
   }
   
-  extension [Self <: RestoreResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreResponse] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

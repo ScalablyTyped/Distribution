@@ -18,7 +18,8 @@ object StopRemoteAccessSessionResult {
     __obj.asInstanceOf[StopRemoteAccessSessionResult]
   }
   
-  extension [Self <: StopRemoteAccessSessionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopRemoteAccessSessionResult] (val x: Self) extends AnyVal {
     
     inline def setRemoteAccessSession(value: RemoteAccessSession): Self = StObject.set(x, "remoteAccessSession", value.asInstanceOf[js.Any])
     

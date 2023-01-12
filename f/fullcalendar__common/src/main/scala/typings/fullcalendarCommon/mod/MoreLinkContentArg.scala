@@ -21,7 +21,8 @@ object MoreLinkContentArg {
     __obj.asInstanceOf[MoreLinkContentArg]
   }
   
-  extension [Self <: MoreLinkContentArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoreLinkContentArg] (val x: Self) extends AnyVal {
     
     inline def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object selectorSetDotnextMod {
       __obj.asInstanceOf[ISelectorSetIndex]
     }
     
-    extension [Self <: ISelectorSetIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectorSetIndex] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Element => js.Array[String] | Unit): Self = StObject.set(x, "element", js.Any.fromFunction1(value))
       

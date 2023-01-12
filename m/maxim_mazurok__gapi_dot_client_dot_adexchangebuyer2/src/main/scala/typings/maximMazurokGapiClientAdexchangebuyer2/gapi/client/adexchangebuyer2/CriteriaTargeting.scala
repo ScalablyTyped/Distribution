@@ -19,7 +19,8 @@ object CriteriaTargeting {
     __obj.asInstanceOf[CriteriaTargeting]
   }
   
-  extension [Self <: CriteriaTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CriteriaTargeting] (val x: Self) extends AnyVal {
     
     inline def setExcludedCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "excludedCriteriaIds", value.asInstanceOf[js.Any])
     

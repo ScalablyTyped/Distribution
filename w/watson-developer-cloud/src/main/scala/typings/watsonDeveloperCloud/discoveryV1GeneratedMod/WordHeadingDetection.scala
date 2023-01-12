@@ -18,7 +18,8 @@ object WordHeadingDetection {
     __obj.asInstanceOf[WordHeadingDetection]
   }
   
-  extension [Self <: WordHeadingDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WordHeadingDetection] (val x: Self) extends AnyVal {
     
     inline def setFonts(value: js.Array[FontSetting]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     

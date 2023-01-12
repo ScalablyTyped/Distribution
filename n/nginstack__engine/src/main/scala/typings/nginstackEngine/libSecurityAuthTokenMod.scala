@@ -67,7 +67,8 @@ object libSecurityAuthTokenMod {
       __obj.asInstanceOf[AuthToken]
     }
     
-    extension [Self <: AuthToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthToken] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object Fido2KeyRestrictions {
     __obj.asInstanceOf[Fido2KeyRestrictions]
   }
   
-  extension [Self <: Fido2KeyRestrictions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fido2KeyRestrictions] (val x: Self) extends AnyVal {
     
     inline def setAaGuids(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "aaGuids", value.asInstanceOf[js.Any])
     

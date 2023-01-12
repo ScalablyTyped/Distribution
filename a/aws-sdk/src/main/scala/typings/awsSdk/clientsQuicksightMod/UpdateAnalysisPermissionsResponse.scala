@@ -38,7 +38,8 @@ object UpdateAnalysisPermissionsResponse {
     __obj.asInstanceOf[UpdateAnalysisPermissionsResponse]
   }
   
-  extension [Self <: UpdateAnalysisPermissionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAnalysisPermissionsResponse] (val x: Self) extends AnyVal {
     
     inline def setAnalysisArn(value: Arn): Self = StObject.set(x, "AnalysisArn", value.asInstanceOf[js.Any])
     

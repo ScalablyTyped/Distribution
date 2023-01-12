@@ -41,7 +41,8 @@ object libEncryptionMod {
       __obj.asInstanceOf[DagJWE]
     }
     
-    extension [Self <: DagJWE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DagJWE] (val x: Self) extends AnyVal {
       
       inline def setAad(value: String): Self = StObject.set(x, "aad", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object libEncryptionMod {
       __obj.asInstanceOf[EncodedJWE]
     }
     
-    extension [Self <: EncodedJWE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodedJWE] (val x: Self) extends AnyVal {
       
       inline def setAad(value: js.typedarray.Uint8Array): Self = StObject.set(x, "aad", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object libEncryptionMod {
       __obj.asInstanceOf[EncodedRecipient]
     }
     
-    extension [Self <: EncodedRecipient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodedRecipient] (val x: Self) extends AnyVal {
       
       inline def setEncrypted_key(value: js.typedarray.Uint8Array): Self = StObject.set(x, "encrypted_key", value.asInstanceOf[js.Any])
       
@@ -160,7 +163,8 @@ object libEncryptionMod {
       __obj.asInstanceOf[JWERecipient]
     }
     
-    extension [Self <: JWERecipient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JWERecipient] (val x: Self) extends AnyVal {
       
       inline def setEncrypted_key(value: String): Self = StObject.set(x, "encrypted_key", value.asInstanceOf[js.Any])
       

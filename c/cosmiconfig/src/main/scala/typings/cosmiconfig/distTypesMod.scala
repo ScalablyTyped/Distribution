@@ -50,7 +50,8 @@ object distTypesMod {
       __obj.asInstanceOf[ExplorerOptions]
     }
     
-    extension [Self <: ExplorerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExplorerOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object distTypesMod {
       __obj.asInstanceOf[ExplorerOptionsSync]
     }
     
-    extension [Self <: ExplorerOptionsSync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExplorerOptionsSync] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

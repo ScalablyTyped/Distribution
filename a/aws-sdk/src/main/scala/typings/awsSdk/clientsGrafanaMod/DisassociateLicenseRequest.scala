@@ -23,7 +23,8 @@ object DisassociateLicenseRequest {
     __obj.asInstanceOf[DisassociateLicenseRequest]
   }
   
-  extension [Self <: DisassociateLicenseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateLicenseRequest] (val x: Self) extends AnyVal {
     
     inline def setLicenseType(value: LicenseType): Self = StObject.set(x, "licenseType", value.asInstanceOf[js.Any])
     

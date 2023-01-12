@@ -49,7 +49,8 @@ object RecordTABLE2defaultRangeP {
     __obj.asInstanceOf[RecordTABLE2defaultRangeP]
   }
   
-  extension [Self <: RecordTABLE2defaultRangeP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordTABLE2defaultRangeP] (val x: Self) extends AnyVal {
     
     inline def setAmpm(value: RangePatterns): Self = StObject.set(x, "ampm", value.asInstanceOf[js.Any])
     

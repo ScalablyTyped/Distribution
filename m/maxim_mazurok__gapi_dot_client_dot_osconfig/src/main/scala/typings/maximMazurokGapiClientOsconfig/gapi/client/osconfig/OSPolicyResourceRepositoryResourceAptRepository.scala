@@ -28,7 +28,8 @@ object OSPolicyResourceRepositoryResourceAptRepository {
     __obj.asInstanceOf[OSPolicyResourceRepositoryResourceAptRepository]
   }
   
-  extension [Self <: OSPolicyResourceRepositoryResourceAptRepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyResourceRepositoryResourceAptRepository] (val x: Self) extends AnyVal {
     
     inline def setArchiveType(value: String): Self = StObject.set(x, "archiveType", value.asInstanceOf[js.Any])
     

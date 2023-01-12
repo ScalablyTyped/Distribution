@@ -16,7 +16,8 @@ object DuplicateObjectResponse {
     __obj.asInstanceOf[DuplicateObjectResponse]
   }
   
-  extension [Self <: DuplicateObjectResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DuplicateObjectResponse] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

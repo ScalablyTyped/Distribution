@@ -38,7 +38,8 @@ object GetDeliverabilityDashboardOptionsResponse {
     __obj.asInstanceOf[GetDeliverabilityDashboardOptionsResponse]
   }
   
-  extension [Self <: GetDeliverabilityDashboardOptionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDeliverabilityDashboardOptionsResponse] (val x: Self) extends AnyVal {
     
     inline def setAccountStatus(value: DeliverabilityDashboardAccountStatus): Self = StObject.set(x, "AccountStatus", value.asInstanceOf[js.Any])
     

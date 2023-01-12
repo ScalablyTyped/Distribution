@@ -33,7 +33,8 @@ object ActivityTaskCanceledEventAttributes {
     __obj.asInstanceOf[ActivityTaskCanceledEventAttributes]
   }
   
-  extension [Self <: ActivityTaskCanceledEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityTaskCanceledEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

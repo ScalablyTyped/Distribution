@@ -23,7 +23,8 @@ object OnHighlightedHighlightInfoType {
     __obj.asInstanceOf[OnHighlightedHighlightInfoType]
   }
   
-  extension [Self <: OnHighlightedHighlightInfoType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnHighlightedHighlightInfoType] (val x: Self) extends AnyVal {
     
     inline def setTabIds(value: js.Array[Double]): Self = StObject.set(x, "tabIds", value.asInstanceOf[js.Any])
     

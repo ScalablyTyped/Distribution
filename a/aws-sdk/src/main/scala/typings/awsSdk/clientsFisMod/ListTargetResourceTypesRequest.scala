@@ -23,7 +23,8 @@ object ListTargetResourceTypesRequest {
     __obj.asInstanceOf[ListTargetResourceTypesRequest]
   }
   
-  extension [Self <: ListTargetResourceTypesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTargetResourceTypesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListTargetResourceTypesMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object libDomProcessingInstructionMod {
       __obj.asInstanceOf[ProcessingInstruction]
     }
     
-    extension [Self <: ProcessingInstruction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessingInstruction] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

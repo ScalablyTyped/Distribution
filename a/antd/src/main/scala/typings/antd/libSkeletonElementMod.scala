@@ -39,7 +39,8 @@ object libSkeletonElementMod extends Shortcut {
       __obj.asInstanceOf[SkeletonElementProps]
     }
     
-    extension [Self <: SkeletonElementProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonElementProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

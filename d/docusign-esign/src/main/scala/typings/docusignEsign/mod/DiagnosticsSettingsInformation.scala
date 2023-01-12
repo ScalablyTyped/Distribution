@@ -28,7 +28,8 @@ object DiagnosticsSettingsInformation {
     __obj.asInstanceOf[DiagnosticsSettingsInformation]
   }
   
-  extension [Self <: DiagnosticsSettingsInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticsSettingsInformation] (val x: Self) extends AnyVal {
     
     inline def setApiRequestLogMaxEntries(value: String): Self = StObject.set(x, "apiRequestLogMaxEntries", value.asInstanceOf[js.Any])
     

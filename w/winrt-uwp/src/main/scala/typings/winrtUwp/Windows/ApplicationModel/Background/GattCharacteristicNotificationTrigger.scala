@@ -18,7 +18,8 @@ object GattCharacteristicNotificationTrigger {
     __obj.asInstanceOf[GattCharacteristicNotificationTrigger]
   }
   
-  extension [Self <: GattCharacteristicNotificationTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GattCharacteristicNotificationTrigger] (val x: Self) extends AnyVal {
     
     inline def setCharacteristic(value: GattCharacteristic): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
   }

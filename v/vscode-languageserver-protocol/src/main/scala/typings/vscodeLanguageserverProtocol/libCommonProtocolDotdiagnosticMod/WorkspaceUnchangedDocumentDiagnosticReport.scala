@@ -29,7 +29,8 @@ object WorkspaceUnchangedDocumentDiagnosticReport {
     __obj.asInstanceOf[WorkspaceUnchangedDocumentDiagnosticReport]
   }
   
-  extension [Self <: WorkspaceUnchangedDocumentDiagnosticReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceUnchangedDocumentDiagnosticReport] (val x: Self) extends AnyVal {
     
     inline def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     

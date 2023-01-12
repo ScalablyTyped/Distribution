@@ -57,7 +57,8 @@ object libCommonProtocolDotconfigurationMod {
       __obj.asInstanceOf[ConfigurationItem]
     }
     
-    extension [Self <: ConfigurationItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurationItem] (val x: Self) extends AnyVal {
       
       inline def setScopeUri(value: String): Self = StObject.set(x, "scopeUri", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object libCommonProtocolDotconfigurationMod {
       __obj.asInstanceOf[ConfigurationParams]
     }
     
-    extension [Self <: ConfigurationParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurationParams] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[ConfigurationItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       

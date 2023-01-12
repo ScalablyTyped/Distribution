@@ -32,7 +32,8 @@ object esmTypesMod {
       __obj.asInstanceOf[SearchMetadata]
     }
     
-    extension [Self <: SearchMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchMetadata] (val x: Self) extends AnyVal {
       
       inline def setAction(value: clear | input): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

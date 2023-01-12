@@ -21,7 +21,8 @@ object SignJwtRequest {
     __obj.asInstanceOf[SignJwtRequest]
   }
   
-  extension [Self <: SignJwtRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignJwtRequest] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

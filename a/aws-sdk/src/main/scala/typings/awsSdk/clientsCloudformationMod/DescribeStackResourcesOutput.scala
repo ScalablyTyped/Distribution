@@ -18,7 +18,8 @@ object DescribeStackResourcesOutput {
     __obj.asInstanceOf[DescribeStackResourcesOutput]
   }
   
-  extension [Self <: DescribeStackResourcesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStackResourcesOutput] (val x: Self) extends AnyVal {
     
     inline def setStackResources(value: StackResources): Self = StObject.set(x, "StackResources", value.asInstanceOf[js.Any])
     

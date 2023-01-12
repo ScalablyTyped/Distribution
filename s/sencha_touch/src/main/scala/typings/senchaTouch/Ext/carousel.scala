@@ -123,7 +123,8 @@ object carousel {
       __obj.asInstanceOf[typings.senchaTouch.Ext.carousel.ICarousel]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.carousel.ICarousel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.carousel.ICarousel] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: java.lang.String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -236,7 +237,8 @@ object carousel {
       __obj.asInstanceOf[IIndicator]
     }
     
-    extension [Self <: IIndicator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIndicator] (val x: Self) extends AnyVal {
       
       inline def setGetDirection(value: () => java.lang.String): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
       
@@ -285,7 +287,8 @@ object carousel {
       __obj.asInstanceOf[IInfinite]
     }
     
-    extension [Self <: IInfinite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInfinite] (val x: Self) extends AnyVal {
       
       inline def setGetInnerItemConfig(value: () => Any): Self = StObject.set(x, "getInnerItemConfig", js.Any.fromFunction0(value))
       
@@ -330,7 +333,8 @@ object carousel {
       __obj.asInstanceOf[IItem]
     }
     
-    extension [Self <: IItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IItem] (val x: Self) extends AnyVal {
       
       inline def setGetTranslatable(value: () => Boolean): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
       

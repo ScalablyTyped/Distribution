@@ -28,7 +28,8 @@ object BrokerInstance {
     __obj.asInstanceOf[BrokerInstance]
   }
   
-  extension [Self <: BrokerInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrokerInstance] (val x: Self) extends AnyVal {
     
     inline def setConsoleURL(value: string): Self = StObject.set(x, "ConsoleURL", value.asInstanceOf[js.Any])
     

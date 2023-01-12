@@ -16,7 +16,8 @@ object ColorPickerContrastTool {
     __obj.asInstanceOf[ColorPickerContrastTool]
   }
   
-  extension [Self <: ColorPickerContrastTool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorPickerContrastTool] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String | Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

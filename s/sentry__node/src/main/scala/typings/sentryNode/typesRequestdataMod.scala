@@ -46,7 +46,8 @@ object typesRequestdataMod {
       __obj.asInstanceOf[AddRequestDataToEventOptions]
     }
     
-    extension [Self <: AddRequestDataToEventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddRequestDataToEventOptions] (val x: Self) extends AnyVal {
       
       inline def setInclude(value: Ip): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       

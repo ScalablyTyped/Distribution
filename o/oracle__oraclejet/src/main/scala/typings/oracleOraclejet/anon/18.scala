@@ -16,7 +16,8 @@ object `18` {
     __obj.asInstanceOf[`18`[K, D]]
   }
   
-  extension [Self <: `18`[?, ?], K, D](x: Self & (`18`[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `18`[?, ?], K, D] (val x: Self & (`18`[K, D])) extends AnyVal {
     
     inline def setRenderer(value: RootNodeContext[K, D] => Insert): Self = StObject.set(x, "renderer", js.Any.fromFunction1(value))
   }

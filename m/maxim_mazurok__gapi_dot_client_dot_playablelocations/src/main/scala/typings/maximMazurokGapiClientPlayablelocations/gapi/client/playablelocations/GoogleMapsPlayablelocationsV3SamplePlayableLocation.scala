@@ -37,7 +37,8 @@ object GoogleMapsPlayablelocationsV3SamplePlayableLocation {
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3SamplePlayableLocation]
   }
   
-  extension [Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocation] (val x: Self) extends AnyVal {
     
     inline def setCenterPoint(value: GoogleTypeLatLng): Self = StObject.set(x, "centerPoint", value.asInstanceOf[js.Any])
     

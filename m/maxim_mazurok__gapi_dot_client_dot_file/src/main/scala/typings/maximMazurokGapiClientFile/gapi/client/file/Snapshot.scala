@@ -33,7 +33,8 @@ object Snapshot {
     __obj.asInstanceOf[Snapshot]
   }
   
-  extension [Self <: Snapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Snapshot] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

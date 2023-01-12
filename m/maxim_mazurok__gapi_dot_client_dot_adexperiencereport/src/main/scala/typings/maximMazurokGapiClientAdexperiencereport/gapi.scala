@@ -46,7 +46,8 @@ object gapi {
           __obj.asInstanceOf[PlatformSummary]
         }
         
-        extension [Self <: PlatformSummary](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: PlatformSummary] (val x: Self) extends AnyVal {
           
           inline def setBetterAdsStatus(value: String): Self = StObject.set(x, "betterAdsStatus", value.asInstanceOf[js.Any])
           
@@ -98,7 +99,8 @@ object gapi {
           __obj.asInstanceOf[SiteSummaryResponse]
         }
         
-        extension [Self <: SiteSummaryResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SiteSummaryResponse] (val x: Self) extends AnyVal {
           
           inline def setDesktopSummary(value: PlatformSummary): Self = StObject.set(x, "desktopSummary", value.asInstanceOf[js.Any])
           
@@ -142,7 +144,8 @@ object gapi {
           __obj.asInstanceOf[ViolatingSitesResponse]
         }
         
-        extension [Self <: ViolatingSitesResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ViolatingSitesResponse] (val x: Self) extends AnyVal {
           
           inline def setViolatingSites(value: js.Array[SiteSummaryResponse]): Self = StObject.set(x, "violatingSites", value.asInstanceOf[js.Any])
           

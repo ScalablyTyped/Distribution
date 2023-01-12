@@ -25,7 +25,8 @@ object OnAnchor {
     __obj.asInstanceOf[OnAnchor]
   }
   
-  extension [Self <: OnAnchor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnAnchor] (val x: Self) extends AnyVal {
     
     inline def setOnAnchor(value: Any => String): Self = StObject.set(x, "onAnchor", js.Any.fromFunction1(value))
     

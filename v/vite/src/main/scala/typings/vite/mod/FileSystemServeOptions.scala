@@ -40,7 +40,8 @@ object FileSystemServeOptions {
     __obj.asInstanceOf[FileSystemServeOptions]
   }
   
-  extension [Self <: FileSystemServeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemServeOptions] (val x: Self) extends AnyVal {
     
     inline def setAllow(value: js.Array[String]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     

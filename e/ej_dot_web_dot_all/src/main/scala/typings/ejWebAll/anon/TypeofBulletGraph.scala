@@ -20,7 +20,8 @@ object TypeofBulletGraph {
     __obj.asInstanceOf[TypeofBulletGraph]
   }
   
-  extension [Self <: TypeofBulletGraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofBulletGraph] (val x: Self) extends AnyVal {
     
     inline def setFn(value: BulletGraph): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

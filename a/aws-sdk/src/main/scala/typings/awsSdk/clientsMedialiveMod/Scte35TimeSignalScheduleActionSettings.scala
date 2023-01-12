@@ -18,7 +18,8 @@ object Scte35TimeSignalScheduleActionSettings {
     __obj.asInstanceOf[Scte35TimeSignalScheduleActionSettings]
   }
   
-  extension [Self <: Scte35TimeSignalScheduleActionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scte35TimeSignalScheduleActionSettings] (val x: Self) extends AnyVal {
     
     inline def setScte35Descriptors(value: listOfScte35Descriptor): Self = StObject.set(x, "Scte35Descriptors", value.asInstanceOf[js.Any])
     

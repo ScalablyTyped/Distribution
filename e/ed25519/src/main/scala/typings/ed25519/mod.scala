@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[CurveKeyPair]
     }
     
-    extension [Self <: CurveKeyPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurveKeyPair] (val x: Self) extends AnyVal {
       
       inline def setPrivateKey(value: Buffer): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       

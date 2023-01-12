@@ -67,7 +67,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AbstractClearOptions[K]]
     }
     
-    extension [Self <: AbstractClearOptions[?], K](x: Self & AbstractClearOptions[K]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractClearOptions[?], K] (val x: Self & AbstractClearOptions[K]) extends AnyVal {
       
       inline def setGt(value: K): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
       

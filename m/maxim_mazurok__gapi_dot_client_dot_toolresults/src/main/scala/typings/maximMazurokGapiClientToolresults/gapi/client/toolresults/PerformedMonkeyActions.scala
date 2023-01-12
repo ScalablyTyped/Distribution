@@ -16,7 +16,8 @@ object PerformedMonkeyActions {
     __obj.asInstanceOf[PerformedMonkeyActions]
   }
   
-  extension [Self <: PerformedMonkeyActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformedMonkeyActions] (val x: Self) extends AnyVal {
     
     inline def setTotalActions(value: Double): Self = StObject.set(x, "totalActions", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object Startindex {
     __obj.asInstanceOf[Startindex]
   }
   
-  extension [Self <: Startindex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Startindex] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

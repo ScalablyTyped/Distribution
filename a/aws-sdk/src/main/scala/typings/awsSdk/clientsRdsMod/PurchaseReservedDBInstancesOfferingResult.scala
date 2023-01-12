@@ -15,7 +15,8 @@ object PurchaseReservedDBInstancesOfferingResult {
     __obj.asInstanceOf[PurchaseReservedDBInstancesOfferingResult]
   }
   
-  extension [Self <: PurchaseReservedDBInstancesOfferingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseReservedDBInstancesOfferingResult] (val x: Self) extends AnyVal {
     
     inline def setReservedDBInstance(value: ReservedDBInstance): Self = StObject.set(x, "ReservedDBInstance", value.asInstanceOf[js.Any])
     

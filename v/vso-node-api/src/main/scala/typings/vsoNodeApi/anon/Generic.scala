@@ -19,7 +19,8 @@ object Generic {
     __obj.asInstanceOf[Generic]
   }
   
-  extension [Self <: Generic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Generic] (val x: Self) extends AnyVal {
     
     inline def setGeneric(value: scala.Double): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     

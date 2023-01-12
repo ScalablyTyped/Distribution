@@ -78,7 +78,8 @@ object XDispatchRecorderSupplier {
     __obj.asInstanceOf[XDispatchRecorderSupplier]
   }
   
-  extension [Self <: XDispatchRecorderSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDispatchRecorderSupplier] (val x: Self) extends AnyVal {
     
     inline def setDispatchAndRecord(value: (URL, SeqEquiv[PropertyValue], XDispatch) => Unit): Self = StObject.set(x, "dispatchAndRecord", js.Any.fromFunction3(value))
     

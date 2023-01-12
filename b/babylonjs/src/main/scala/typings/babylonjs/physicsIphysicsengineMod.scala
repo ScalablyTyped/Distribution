@@ -164,7 +164,8 @@ object physicsIphysicsengineMod {
       __obj.asInstanceOf[IPhysicsEngine]
     }
     
-    extension [Self <: IPhysicsEngine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPhysicsEngine] (val x: Self) extends AnyVal {
       
       inline def setAddImpostor(value: PhysicsImpostor => Unit): Self = StObject.set(x, "addImpostor", js.Any.fromFunction1(value))
       
@@ -346,7 +347,8 @@ object physicsIphysicsengineMod {
       __obj.asInstanceOf[PhysicsImpostorJoint]
     }
     
-    extension [Self <: PhysicsImpostorJoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhysicsImpostorJoint] (val x: Self) extends AnyVal {
       
       inline def setConnectedImpostor(value: PhysicsImpostor): Self = StObject.set(x, "connectedImpostor", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object RTCDtlsFingerprint {
     __obj.asInstanceOf[RTCDtlsFingerprint]
   }
   
-  extension [Self <: RTCDtlsFingerprint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCDtlsFingerprint] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: java.lang.String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

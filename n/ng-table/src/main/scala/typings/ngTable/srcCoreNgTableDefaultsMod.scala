@@ -30,7 +30,8 @@ object srcCoreNgTableDefaultsMod {
       __obj.asInstanceOf[IDefaults]
     }
     
-    extension [Self <: IDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDefaults] (val x: Self) extends AnyVal {
       
       inline def setParams(value: IParamValues[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

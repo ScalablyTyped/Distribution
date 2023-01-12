@@ -59,7 +59,8 @@ object OnSendHeadersListenerDetails {
     __obj.asInstanceOf[OnSendHeadersListenerDetails]
   }
   
-  extension [Self <: OnSendHeadersListenerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnSendHeadersListenerDetails] (val x: Self) extends AnyVal {
     
     inline def setFrame(value: WebFrameMain_): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     

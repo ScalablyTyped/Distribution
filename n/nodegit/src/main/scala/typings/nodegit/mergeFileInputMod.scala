@@ -25,7 +25,8 @@ object mergeFileInputMod {
       __obj.asInstanceOf[MergeFileInput]
     }
     
-    extension [Self <: MergeFileInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeFileInput] (val x: Self) extends AnyVal {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       

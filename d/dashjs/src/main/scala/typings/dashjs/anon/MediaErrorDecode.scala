@@ -15,7 +15,8 @@ object MediaErrorDecode {
     __obj.asInstanceOf[MediaErrorDecode]
   }
   
-  extension [Self <: MediaErrorDecode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaErrorDecode] (val x: Self) extends AnyVal {
     
     inline def setMediaErrorDecode(value: Double): Self = StObject.set(x, "mediaErrorDecode", value.asInstanceOf[js.Any])
     

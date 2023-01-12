@@ -19,7 +19,8 @@ object ThirdPartyAuthenticationToken {
     __obj.asInstanceOf[ThirdPartyAuthenticationToken]
   }
   
-  extension [Self <: ThirdPartyAuthenticationToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThirdPartyAuthenticationToken] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

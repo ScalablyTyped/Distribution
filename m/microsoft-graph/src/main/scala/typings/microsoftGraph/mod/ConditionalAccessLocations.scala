@@ -19,7 +19,8 @@ object ConditionalAccessLocations {
     __obj.asInstanceOf[ConditionalAccessLocations]
   }
   
-  extension [Self <: ConditionalAccessLocations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalAccessLocations] (val x: Self) extends AnyVal {
     
     inline def setExcludeLocations(value: js.Array[String]): Self = StObject.set(x, "excludeLocations", value.asInstanceOf[js.Any])
     

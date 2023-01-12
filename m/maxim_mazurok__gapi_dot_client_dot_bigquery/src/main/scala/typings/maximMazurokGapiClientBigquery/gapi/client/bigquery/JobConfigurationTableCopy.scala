@@ -46,7 +46,8 @@ object JobConfigurationTableCopy {
     __obj.asInstanceOf[JobConfigurationTableCopy]
   }
   
-  extension [Self <: JobConfigurationTableCopy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobConfigurationTableCopy] (val x: Self) extends AnyVal {
     
     inline def setCreateDisposition(value: String): Self = StObject.set(x, "createDisposition", value.asInstanceOf[js.Any])
     

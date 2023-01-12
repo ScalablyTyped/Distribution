@@ -34,7 +34,8 @@ object SpatialReferenceProperties {
     __obj.asInstanceOf[SpatialReferenceProperties]
   }
   
-  extension [Self <: SpatialReferenceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialReferenceProperties] (val x: Self) extends AnyVal {
     
     inline def setImageCoordinateSystem(value: Any): Self = StObject.set(x, "imageCoordinateSystem", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object srcInputsMod {
       __obj.asInstanceOf[HelpTextProps]
     }
     
-    extension [Self <: HelpTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelpTextProps] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object srcInputsMod {
       __obj.asInstanceOf[InputBase]
     }
     
-    extension [Self <: InputBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputBase] (val x: Self) extends AnyVal {
       
       inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object srcInputsMod {
       __obj.asInstanceOf[RangeInputBase[T]]
     }
     
-    extension [Self <: RangeInputBase[?], T](x: Self & RangeInputBase[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeInputBase[?], T] (val x: Self & RangeInputBase[T]) extends AnyVal {
       
       inline def setMaxValue(value: T): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       
@@ -110,7 +113,8 @@ object srcInputsMod {
       __obj.asInstanceOf[RangeValue[T]]
     }
     
-    extension [Self <: RangeValue[?], T](x: Self & RangeValue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeValue[?], T] (val x: Self & RangeValue[T]) extends AnyVal {
       
       inline def setEnd(value: T): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -136,7 +140,8 @@ object srcInputsMod {
       __obj.asInstanceOf[SpectrumHelpTextProps]
     }
     
-    extension [Self <: SpectrumHelpTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpectrumHelpTextProps] (val x: Self) extends AnyVal {
       
       inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
@@ -164,7 +169,8 @@ object srcInputsMod {
       __obj.asInstanceOf[SpectrumTextInputBase]
     }
     
-    extension [Self <: SpectrumTextInputBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpectrumTextInputBase] (val x: Self) extends AnyVal {
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -184,7 +190,8 @@ object srcInputsMod {
       __obj.asInstanceOf[TextInputBase]
     }
     
-    extension [Self <: TextInputBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInputBase] (val x: Self) extends AnyVal {
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -210,7 +217,8 @@ object srcInputsMod {
       __obj.asInstanceOf[Validation]
     }
     
-    extension [Self <: Validation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Validation] (val x: Self) extends AnyVal {
       
       inline def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
       
@@ -252,7 +260,8 @@ object srcInputsMod {
       __obj.asInstanceOf[ValueBase[T, C]]
     }
     
-    extension [Self <: ValueBase[?, ?], T, C](x: Self & (ValueBase[T, C])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueBase[?, ?], T, C] (val x: Self & (ValueBase[T, C])) extends AnyVal {
       
       inline def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       

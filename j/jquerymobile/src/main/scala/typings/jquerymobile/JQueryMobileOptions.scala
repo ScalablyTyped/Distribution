@@ -63,7 +63,8 @@ object JQueryMobileOptions {
     __obj.asInstanceOf[JQueryMobileOptions]
   }
   
-  extension [Self <: JQueryMobileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryMobileOptions] (val x: Self) extends AnyVal {
     
     inline def setActiveBtnClass(value: String): Self = StObject.set(x, "activeBtnClass", value.asInstanceOf[js.Any])
     

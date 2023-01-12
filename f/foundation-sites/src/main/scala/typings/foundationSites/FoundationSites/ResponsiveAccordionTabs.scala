@@ -26,7 +26,8 @@ object ResponsiveAccordionTabs {
     __obj.asInstanceOf[ResponsiveAccordionTabs]
   }
   
-  extension [Self <: ResponsiveAccordionTabs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsiveAccordionTabs] (val x: Self) extends AnyVal {
     
     inline def setClose(value: (Any, /* repeated */ Any) => Any): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
     

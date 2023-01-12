@@ -47,7 +47,8 @@ object readonlytypefacetreadonly {
     __obj.asInstanceOf[readonlytypefacetreadonly]
   }
   
-  extension [Self <: readonlytypefacetreadonly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: readonlytypefacetreadonly] (val x: Self) extends AnyVal {
     
     inline def setFacet(value: String): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeferUpdateChangedEventUIParam {
     __obj.asInstanceOf[DeferUpdateChangedEventUIParam]
   }
   
-  extension [Self <: DeferUpdateChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeferUpdateChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setDeferUpdate(value: Boolean): Self = StObject.set(x, "deferUpdate", value.asInstanceOf[js.Any])
     

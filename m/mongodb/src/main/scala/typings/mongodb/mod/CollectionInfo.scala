@@ -27,7 +27,8 @@ object CollectionInfo {
     __obj.asInstanceOf[CollectionInfo]
   }
   
-  extension [Self <: CollectionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionInfo] (val x: Self) extends AnyVal {
     
     inline def setIdIndex(value: Document): Self = StObject.set(x, "idIndex", value.asInstanceOf[js.Any])
     

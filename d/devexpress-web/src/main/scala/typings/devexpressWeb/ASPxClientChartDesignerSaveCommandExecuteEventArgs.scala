@@ -17,7 +17,8 @@ object ASPxClientChartDesignerSaveCommandExecuteEventArgs {
     __obj.asInstanceOf[ASPxClientChartDesignerSaveCommandExecuteEventArgs]
   }
   
-  extension [Self <: ASPxClientChartDesignerSaveCommandExecuteEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientChartDesignerSaveCommandExecuteEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
   }

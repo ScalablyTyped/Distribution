@@ -21,7 +21,8 @@ object TransactionNotification {
     __obj.asInstanceOf[TransactionNotification]
   }
   
-  extension [Self <: TransactionNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionNotification] (val x: Self) extends AnyVal {
     
     inline def setKind(value: TransactionNotificationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

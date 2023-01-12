@@ -15,7 +15,8 @@ object PopupInterface {
     __obj.asInstanceOf[PopupInterface]
   }
   
-  extension [Self <: PopupInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupInterface] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_core_PopupInterface(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_core_PopupInterface", value.asInstanceOf[js.Any])
   }

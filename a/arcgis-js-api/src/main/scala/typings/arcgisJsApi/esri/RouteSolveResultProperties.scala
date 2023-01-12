@@ -48,7 +48,8 @@ object RouteSolveResultProperties {
     __obj.asInstanceOf[RouteSolveResultProperties]
   }
   
-  extension [Self <: RouteSolveResultProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteSolveResultProperties] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: js.Array[NAMessageProperties]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     

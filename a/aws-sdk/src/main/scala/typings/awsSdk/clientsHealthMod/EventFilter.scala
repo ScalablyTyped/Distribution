@@ -78,7 +78,8 @@ object EventFilter {
     __obj.asInstanceOf[EventFilter]
   }
   
-  extension [Self <: EventFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventFilter] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: availabilityZones): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
     

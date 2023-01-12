@@ -17,7 +17,8 @@ object Dkimrecord {
     __obj.asInstanceOf[Dkimrecord]
   }
   
-  extension [Self <: Dkimrecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dkimrecord] (val x: Self) extends AnyVal {
     
     inline def setDkim_record(value: String): Self = StObject.set(x, "dkim_record", value.asInstanceOf[js.Any])
     

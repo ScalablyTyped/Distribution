@@ -28,7 +28,8 @@ object RetentionArchiveTier {
     __obj.asInstanceOf[RetentionArchiveTier]
   }
   
-  extension [Self <: RetentionArchiveTier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetentionArchiveTier] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Count): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

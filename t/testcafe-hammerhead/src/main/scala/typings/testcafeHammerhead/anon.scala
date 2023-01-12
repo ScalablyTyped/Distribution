@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Hostname]
     }
     
-    extension [Self <: Hostname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hostname] (val x: Self) extends AnyVal {
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[PartialRequestFilterRuleO]
     }
     
-    extension [Self <: PartialRequestFilterRuleO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRequestFilterRuleO] (val x: Self) extends AnyVal {
       
       inline def setIsAjax(value: Boolean): Self = StObject.set(x, "isAjax", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[PartialSessionOptions]
     }
     
-    extension [Self <: PartialSessionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSessionOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowMultipleWindows(value: Boolean): Self = StObject.set(x, "allowMultipleWindows", value.asInstanceOf[js.Any])
       
@@ -110,7 +113,8 @@ object anon {
       __obj.asInstanceOf[Port]
     }
     
-    extension [Self <: Port](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       

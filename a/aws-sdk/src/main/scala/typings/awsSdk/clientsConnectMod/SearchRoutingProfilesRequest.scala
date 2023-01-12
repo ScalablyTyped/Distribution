@@ -38,7 +38,8 @@ object SearchRoutingProfilesRequest {
     __obj.asInstanceOf[SearchRoutingProfilesRequest]
   }
   
-  extension [Self <: SearchRoutingProfilesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchRoutingProfilesRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

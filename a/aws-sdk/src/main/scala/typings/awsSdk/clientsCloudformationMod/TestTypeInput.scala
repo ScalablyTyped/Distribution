@@ -38,7 +38,8 @@ object TestTypeInput {
     __obj.asInstanceOf[TestTypeInput]
   }
   
-  extension [Self <: TestTypeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestTypeInput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: TypeArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

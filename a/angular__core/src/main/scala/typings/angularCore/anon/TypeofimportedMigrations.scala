@@ -75,7 +75,8 @@ object TypeofimportedMigrations {
     __obj.asInstanceOf[TypeofimportedMigrations]
   }
   
-  extension [Self <: TypeofimportedMigrations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofimportedMigrations] (val x: Self) extends AnyVal {
     
     inline def setDynamicValue(value: TypeofDynamicValue): Self = StObject.set(x, "DynamicValue", value.asInstanceOf[js.Any])
     

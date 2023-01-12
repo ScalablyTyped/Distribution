@@ -202,7 +202,8 @@ object mod {
         __obj.asInstanceOf[CommonConnDetail]
       }
       
-      extension [Self <: CommonConnDetail](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CommonConnDetail] (val x: Self) extends AnyVal {
         
         inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
@@ -250,7 +251,8 @@ object mod {
         __obj.asInstanceOf[TcpConnDetail]
       }
       
-      extension [Self <: TcpConnDetail](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TcpConnDetail] (val x: Self) extends AnyVal {
         
         inline def setInterface(value: tcp): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
       }
@@ -272,7 +274,8 @@ object mod {
         __obj.asInstanceOf[TlsConnDetail]
       }
       
-      extension [Self <: TlsConnDetail](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TlsConnDetail] (val x: Self) extends AnyVal {
         
         inline def setInterface(value: tls): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
         
@@ -296,7 +299,8 @@ object mod {
         __obj.asInstanceOf[UdpConnDetail]
       }
       
-      extension [Self <: UdpConnDetail](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UdpConnDetail] (val x: Self) extends AnyVal {
         
         inline def setInterface(value: udp): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
       }
@@ -436,7 +440,8 @@ object mod {
       __obj.asInstanceOf[Constants_]
     }
     
-    extension [Self <: Constants_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constants_] (val x: Self) extends AnyVal {
       
       inline def setAUDIT_SRC_TYPE_APP_SERVER(value: `4`): Self = StObject.set(x, "AUDIT_SRC_TYPE_APP_SERVER", value.asInstanceOf[js.Any])
       

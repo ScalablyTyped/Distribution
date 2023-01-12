@@ -245,7 +245,8 @@ object onfleetMod {
       __obj.asInstanceOf[BottleneckOptions]
     }
     
-    extension [Self <: BottleneckOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BottleneckOptions] (val x: Self) extends AnyVal {
       
       inline def setLIMITER_MAX_CONCURRENT(value: Double): Self = StObject.set(x, "LIMITER_MAX_CONCURRENT", value.asInstanceOf[js.Any])
       
@@ -317,7 +318,8 @@ object onfleetMod {
       __obj.asInstanceOf[Onfleet]
     }
     
-    extension [Self <: Onfleet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Onfleet] (val x: Self) extends AnyVal {
       
       inline def setAdministrators(value: typings.onfleetNodeOnfleet.resourcesAdministratorsMod.^): Self = StObject.set(x, "administrators", value.asInstanceOf[js.Any])
       

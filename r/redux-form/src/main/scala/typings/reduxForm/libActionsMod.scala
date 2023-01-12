@@ -379,7 +379,8 @@ object libActionsMod {
       __obj.asInstanceOf[FormAction]
     }
     
-    extension [Self <: FormAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormAction] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -417,7 +418,8 @@ object libActionsMod {
       __obj.asInstanceOf[InitializeOptions]
     }
     
-    extension [Self <: InitializeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitializeOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepDirty(value: Boolean): Self = StObject.set(x, "keepDirty", value.asInstanceOf[js.Any])
       

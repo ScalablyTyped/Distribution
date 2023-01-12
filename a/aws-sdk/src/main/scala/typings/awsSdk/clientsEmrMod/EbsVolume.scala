@@ -23,7 +23,8 @@ object EbsVolume {
     __obj.asInstanceOf[EbsVolume]
   }
   
-  extension [Self <: EbsVolume](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EbsVolume] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: String): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     

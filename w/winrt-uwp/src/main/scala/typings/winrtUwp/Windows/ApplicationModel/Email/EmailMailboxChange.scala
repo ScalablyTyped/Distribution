@@ -32,7 +32,8 @@ object EmailMailboxChange {
     __obj.asInstanceOf[EmailMailboxChange]
   }
   
-  extension [Self <: EmailMailboxChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailMailboxChange] (val x: Self) extends AnyVal {
     
     inline def setChangeType(value: EmailMailboxChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     

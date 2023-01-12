@@ -18,7 +18,8 @@ object VgComparator {
     __obj.asInstanceOf[VgComparator]
   }
   
-  extension [Self <: VgComparator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VgComparator] (val x: Self) extends AnyVal {
     
     inline def setField(value: String | js.Array[String]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

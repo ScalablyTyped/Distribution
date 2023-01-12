@@ -51,7 +51,8 @@ object PowerFormsResponse {
     __obj.asInstanceOf[PowerFormsResponse]
   }
   
-  extension [Self <: PowerFormsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PowerFormsResponse] (val x: Self) extends AnyVal {
     
     inline def setEndPosition(value: Double): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     

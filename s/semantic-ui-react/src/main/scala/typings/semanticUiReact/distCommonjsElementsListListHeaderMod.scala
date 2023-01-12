@@ -48,7 +48,8 @@ object distCommonjsElementsListListHeaderMod extends Shortcut {
       __obj.asInstanceOf[StrictListHeaderProps]
     }
     
-    extension [Self <: StrictListHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictListHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

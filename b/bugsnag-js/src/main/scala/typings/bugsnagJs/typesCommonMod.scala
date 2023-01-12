@@ -65,7 +65,8 @@ object typesCommonMod {
       __obj.asInstanceOf[IConfig]
     }
     
-    extension [Self <: IConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -234,7 +235,8 @@ object typesCommonMod {
       __obj.asInstanceOf[IFinalConfig]
     }
     
-    extension [Self <: IFinalConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFinalConfig] (val x: Self) extends AnyVal {
       
       inline def setAutoBreadcrumbs(value: Boolean): Self = StObject.set(x, "autoBreadcrumbs", value.asInstanceOf[js.Any])
       

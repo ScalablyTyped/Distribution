@@ -43,7 +43,8 @@ object PickImplremovePartialPick {
     __obj.asInstanceOf[PickImplremovePartialPick]
   }
   
-  extension [Self <: PickImplremovePartialPick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplremovePartialPick] (val x: Self) extends AnyVal {
     
     inline def setAddition(value: String): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
     

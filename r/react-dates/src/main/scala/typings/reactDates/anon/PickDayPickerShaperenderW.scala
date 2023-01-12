@@ -90,7 +90,8 @@ object PickDayPickerShaperenderW {
     __obj.asInstanceOf[PickDayPickerShaperenderW]
   }
   
-  extension [Self <: PickDayPickerShaperenderW](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickDayPickerShaperenderW] (val x: Self) extends AnyVal {
     
     inline def setCalendarInfoPosition(value: Any): Self = StObject.set(x, "calendarInfoPosition", value.asInstanceOf[js.Any])
     

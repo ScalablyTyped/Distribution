@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[InputRow]
     }
     
-    extension [Self <: InputRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputRow] (val x: Self) extends AnyVal {
       
       inline def setEntry(value: Boolean): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[InputTransform]
     }
     
-    extension [Self <: InputTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputTransform] (val x: Self) extends AnyVal {
       
       inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
@@ -301,7 +303,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
@@ -443,7 +446,8 @@ object mod {
       __obj.asInstanceOf[ParentObject]
     }
     
-    extension [Self <: ParentObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParentObject] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
@@ -496,7 +500,8 @@ object mod {
       __obj.asInstanceOf[PersistentCacheItem]
     }
     
-    extension [Self <: PersistentCacheItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistentCacheItem] (val x: Self) extends AnyVal {
       
       inline def setDeps(value: StringDictionary[Boolean]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
@@ -536,7 +541,8 @@ object mod {
       __obj.asInstanceOf[TransformObject]
     }
     
-    extension [Self <: TransformObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformObject] (val x: Self) extends AnyVal {
       
       inline def setDeps(value: StringDictionary[Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       

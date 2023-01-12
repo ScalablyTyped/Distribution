@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[Request_]
     }
     
-    extension [Self <: Request_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request_] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.Object | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object mod {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.Object | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setOnloadCSS(value: (HTMLLinkElement, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onloadCSS", js.Any.fromFunction2(value))
       }

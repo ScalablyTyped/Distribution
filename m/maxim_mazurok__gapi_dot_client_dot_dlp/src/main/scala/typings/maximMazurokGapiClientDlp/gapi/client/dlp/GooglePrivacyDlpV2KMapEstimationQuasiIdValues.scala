@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2KMapEstimationQuasiIdValues {
     __obj.asInstanceOf[GooglePrivacyDlpV2KMapEstimationQuasiIdValues]
   }
   
-  extension [Self <: GooglePrivacyDlpV2KMapEstimationQuasiIdValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2KMapEstimationQuasiIdValues] (val x: Self) extends AnyVal {
     
     inline def setEstimatedAnonymity(value: String): Self = StObject.set(x, "estimatedAnonymity", value.asInstanceOf[js.Any])
     

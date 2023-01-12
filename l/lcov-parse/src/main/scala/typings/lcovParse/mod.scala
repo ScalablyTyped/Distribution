@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[LcovBranch]
     }
     
-    extension [Self <: LcovBranch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LcovBranch] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Double): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object mod {
       __obj.asInstanceOf[LcovFile]
     }
     
-    extension [Self <: LcovFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LcovFile] (val x: Self) extends AnyVal {
       
       inline def setBranches(value: LcovPart[LcovBranch]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,8 @@ object mod {
       __obj.asInstanceOf[LcovFunc]
     }
     
-    extension [Self <: LcovFunc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LcovFunc] (val x: Self) extends AnyVal {
       
       inline def setHit(value: Double): Self = StObject.set(x, "hit", value.asInstanceOf[js.Any])
       
@@ -169,7 +172,8 @@ object mod {
       __obj.asInstanceOf[LcovLine]
     }
     
-    extension [Self <: LcovLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LcovLine] (val x: Self) extends AnyVal {
       
       inline def setHit(value: Double): Self = StObject.set(x, "hit", value.asInstanceOf[js.Any])
       
@@ -195,7 +199,8 @@ object mod {
       __obj.asInstanceOf[LcovPart[T]]
     }
     
-    extension [Self <: LcovPart[?], T](x: Self & LcovPart[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LcovPart[?], T] (val x: Self & LcovPart[T]) extends AnyVal {
       
       inline def setDetails(value: js.Array[T]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       

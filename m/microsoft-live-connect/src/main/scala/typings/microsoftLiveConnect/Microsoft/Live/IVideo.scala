@@ -167,7 +167,8 @@ object IVideo {
     __obj.asInstanceOf[IVideo]
   }
   
-  extension [Self <: IVideo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVideo] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     

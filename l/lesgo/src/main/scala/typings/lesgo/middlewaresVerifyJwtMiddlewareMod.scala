@@ -47,7 +47,8 @@ object middlewaresVerifyJwtMiddlewareMod {
       __obj.asInstanceOf[JwtGatewayEvent]
     }
     
-    extension [Self <: JwtGatewayEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JwtGatewayEvent] (val x: Self) extends AnyVal {
       
       inline def setDecodedJwt(value: `1`): Self = StObject.set(x, "decodedJwt", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object middlewaresVerifyJwtMiddlewareMod {
       __obj.asInstanceOf[VerifyJwtMiddleware]
     }
     
-    extension [Self <: VerifyJwtMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyJwtMiddleware] (val x: Self) extends AnyVal {
       
       inline def setBefore(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify middy.MiddlewareFunction<JwtGatewayEvent, any> */ Any

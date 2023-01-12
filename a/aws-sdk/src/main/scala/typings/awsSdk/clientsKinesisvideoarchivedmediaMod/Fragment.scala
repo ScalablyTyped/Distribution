@@ -38,7 +38,8 @@ object Fragment {
     __obj.asInstanceOf[Fragment]
   }
   
-  extension [Self <: Fragment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fragment] (val x: Self) extends AnyVal {
     
     inline def setFragmentLengthInMilliseconds(value: Long): Self = StObject.set(x, "FragmentLengthInMilliseconds", value.asInstanceOf[js.Any])
     

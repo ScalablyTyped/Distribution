@@ -26,7 +26,8 @@ object JoinAggregateTransform {
     __obj.asInstanceOf[JoinAggregateTransform]
   }
   
-  extension [Self <: JoinAggregateTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinAggregateTransform] (val x: Self) extends AnyVal {
     
     inline def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     

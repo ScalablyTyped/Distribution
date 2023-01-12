@@ -56,7 +56,8 @@ object GoogleActionsV2OrdersPaymentMethodTokenizationParameters {
     __obj.asInstanceOf[GoogleActionsV2OrdersPaymentMethodTokenizationParameters]
   }
   
-  extension [Self <: GoogleActionsV2OrdersPaymentMethodTokenizationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2OrdersPaymentMethodTokenizationParameters] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: ApiClientObjectMap[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

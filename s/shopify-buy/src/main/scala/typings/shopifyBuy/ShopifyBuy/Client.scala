@@ -32,7 +32,8 @@ object Client {
     __obj.asInstanceOf[Client]
   }
   
-  extension [Self <: Client](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
     
     inline def setCheckout(value: CheckoutResource): Self = StObject.set(x, "checkout", value.asInstanceOf[js.Any])
     

@@ -235,7 +235,8 @@ object distTypesOptionsMod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowInput(value: Boolean): Self = StObject.set(x, "allowInput", value.asInstanceOf[js.Any])
       
@@ -470,7 +471,8 @@ object distTypesOptionsMod {
       __obj.asInstanceOf[DateRangeLimit[D]]
     }
     
-    extension [Self <: DateRangeLimit[?], D](x: Self & DateRangeLimit[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateRangeLimit[?], D] (val x: Self & DateRangeLimit[D]) extends AnyVal {
       
       inline def setFrom(value: D): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -664,7 +666,8 @@ object distTypesOptionsMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowInput(value: Boolean): Self = StObject.set(x, "allowInput", value.asInstanceOf[js.Any])
       
@@ -1202,7 +1205,8 @@ object distTypesOptionsMod {
       __obj.asInstanceOf[ParsedOptions]
     }
     
-    extension [Self <: ParsedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowInput(value: Boolean): Self = StObject.set(x, "allowInput", value.asInstanceOf[js.Any])
       

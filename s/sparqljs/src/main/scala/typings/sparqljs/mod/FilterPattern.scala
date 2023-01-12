@@ -21,7 +21,8 @@ object FilterPattern {
     __obj.asInstanceOf[FilterPattern]
   }
   
-  extension [Self <: FilterPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterPattern] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

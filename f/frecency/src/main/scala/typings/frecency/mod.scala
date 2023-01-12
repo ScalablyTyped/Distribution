@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[Frecency[T]]
     }
     
-    extension [Self <: Frecency[?], T](x: Self & Frecency[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Frecency[?], T] (val x: Self & Frecency[T]) extends AnyVal {
       
       inline def setSave(value: SearchQuery[T] => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
       

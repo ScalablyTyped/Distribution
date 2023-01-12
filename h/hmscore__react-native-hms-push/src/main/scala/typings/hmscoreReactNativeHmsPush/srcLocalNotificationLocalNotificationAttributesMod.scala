@@ -123,7 +123,8 @@ object srcLocalNotificationLocalNotificationAttributesMod {
       __obj.asInstanceOf[LocalNotificationAttributes]
     }
     
-    extension [Self <: LocalNotificationAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalNotificationAttributes] (val x: Self) extends AnyVal {
       
       inline def setActions(value: actions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

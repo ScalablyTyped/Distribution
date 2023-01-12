@@ -38,7 +38,8 @@ object OAuth2SecuritySchemeSettingsScalarsAnnotations {
     __obj.asInstanceOf[OAuth2SecuritySchemeSettingsScalarsAnnotations]
   }
   
-  extension [Self <: OAuth2SecuritySchemeSettingsScalarsAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuth2SecuritySchemeSettingsScalarsAnnotations] (val x: Self) extends AnyVal {
     
     inline def setAccessTokenUri(value: () => js.Array[AnnotationRef]): Self = StObject.set(x, "accessTokenUri", js.Any.fromFunction0(value))
     

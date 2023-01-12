@@ -30,7 +30,8 @@ object BasicFilter {
     __obj.asInstanceOf[BasicFilter]
   }
   
-  extension [Self <: BasicFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicFilter] (val x: Self) extends AnyVal {
     
     inline def setCriteria(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.FilterCriteria} */ js.Any

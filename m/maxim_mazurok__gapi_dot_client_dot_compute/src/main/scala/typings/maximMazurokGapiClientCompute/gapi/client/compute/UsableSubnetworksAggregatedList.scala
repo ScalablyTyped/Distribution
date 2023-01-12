@@ -36,7 +36,8 @@ object UsableSubnetworksAggregatedList {
     __obj.asInstanceOf[UsableSubnetworksAggregatedList]
   }
   
-  extension [Self <: UsableSubnetworksAggregatedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsableSubnetworksAggregatedList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

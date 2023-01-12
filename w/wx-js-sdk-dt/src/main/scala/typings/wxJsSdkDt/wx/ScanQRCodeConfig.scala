@@ -32,7 +32,8 @@ object ScanQRCodeConfig {
     __obj.asInstanceOf[ScanQRCodeConfig]
   }
   
-  extension [Self <: ScanQRCodeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanQRCodeConfig] (val x: Self) extends AnyVal {
     
     inline def setNeedResult(value: Double): Self = StObject.set(x, "needResult", value.asInstanceOf[js.Any])
     

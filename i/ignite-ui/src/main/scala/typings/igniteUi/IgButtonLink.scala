@@ -25,7 +25,8 @@ object IgButtonLink {
     __obj.asInstanceOf[IgButtonLink]
   }
   
-  extension [Self <: IgButtonLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgButtonLink] (val x: Self) extends AnyVal {
     
     inline def setHref(value: Any): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

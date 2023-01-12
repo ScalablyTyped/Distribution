@@ -28,7 +28,8 @@ object AppointmentDialogClosingEventUIParam {
     __obj.asInstanceOf[AppointmentDialogClosingEventUIParam]
   }
   
-  extension [Self <: AppointmentDialogClosingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentDialogClosingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

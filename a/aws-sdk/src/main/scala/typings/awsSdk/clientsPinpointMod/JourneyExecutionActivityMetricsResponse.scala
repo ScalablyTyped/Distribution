@@ -50,7 +50,8 @@ object JourneyExecutionActivityMetricsResponse {
     __obj.asInstanceOf[JourneyExecutionActivityMetricsResponse]
   }
   
-  extension [Self <: JourneyExecutionActivityMetricsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JourneyExecutionActivityMetricsResponse] (val x: Self) extends AnyVal {
     
     inline def setActivityType(value: string): Self = StObject.set(x, "ActivityType", value.asInstanceOf[js.Any])
     

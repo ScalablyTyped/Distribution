@@ -25,7 +25,8 @@ object LiveChatMemberMilestoneChatDetails {
     __obj.asInstanceOf[LiveChatMemberMilestoneChatDetails]
   }
   
-  extension [Self <: LiveChatMemberMilestoneChatDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveChatMemberMilestoneChatDetails] (val x: Self) extends AnyVal {
     
     inline def setMemberLevelName(value: String): Self = StObject.set(x, "memberLevelName", value.asInstanceOf[js.Any])
     

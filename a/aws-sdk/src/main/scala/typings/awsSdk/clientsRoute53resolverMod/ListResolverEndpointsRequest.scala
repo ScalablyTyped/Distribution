@@ -28,7 +28,8 @@ object ListResolverEndpointsRequest {
     __obj.asInstanceOf[ListResolverEndpointsRequest]
   }
   
-  extension [Self <: ListResolverEndpointsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResolverEndpointsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

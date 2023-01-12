@@ -608,7 +608,8 @@ object libComponentsAspectRatioAspectRatioMod {
       __obj.asInstanceOf[AspectRatioBaseIsolatedProps]
     }
     
-    extension [Self <: AspectRatioBaseIsolatedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AspectRatioBaseIsolatedProps] (val x: Self) extends AnyVal {
       
       inline def setRatio(value: AspectRatioValue): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
       
@@ -631,7 +632,8 @@ object libComponentsAspectRatioAspectRatioMod {
       __obj.asInstanceOf[AspectRatioBaseProps]
     }
     
-    extension [Self <: AspectRatioBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AspectRatioBaseProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -954,7 +956,8 @@ object libComponentsAspectRatioAspectRatioMod {
       __obj.asInstanceOf[AspectRatioDefaultProps]
     }
     
-    extension [Self <: AspectRatioDefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AspectRatioDefaultProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

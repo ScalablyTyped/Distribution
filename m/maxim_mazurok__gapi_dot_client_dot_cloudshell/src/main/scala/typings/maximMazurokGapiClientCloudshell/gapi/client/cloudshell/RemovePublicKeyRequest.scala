@@ -16,7 +16,8 @@ object RemovePublicKeyRequest {
     __obj.asInstanceOf[RemovePublicKeyRequest]
   }
   
-  extension [Self <: RemovePublicKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemovePublicKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

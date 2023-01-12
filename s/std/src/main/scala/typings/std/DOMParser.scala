@@ -26,7 +26,8 @@ object DOMParser {
     __obj.asInstanceOf[DOMParser]
   }
   
-  extension [Self <: DOMParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMParser] (val x: Self) extends AnyVal {
     
     inline def setParseFromString(value: (java.lang.String, DOMParserSupportedType) => Document): Self = StObject.set(x, "parseFromString", js.Any.fromFunction2(value))
   }

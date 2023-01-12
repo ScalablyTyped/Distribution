@@ -15,7 +15,8 @@ object Ticks {
     __obj.asInstanceOf[Ticks]
   }
   
-  extension [Self <: Ticks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ticks] (val x: Self) extends AnyVal {
     
     inline def setTicks(value: js.Array[Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object IconItemProps {
     __obj.asInstanceOf[IconItemProps]
   }
   
-  extension [Self <: IconItemProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconItemProps] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object DictionaryMapperType {
     __obj.asInstanceOf[DictionaryMapperType]
   }
   
-  extension [Self <: DictionaryMapperType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictionaryMapperType] (val x: Self) extends AnyVal {
     
     inline def setName(value: Dictionary): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

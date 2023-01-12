@@ -97,7 +97,8 @@ object typesPublicEndpointMod {
       __obj.asInstanceOf[PublicEndpoint]
     }
     
-    extension [Self <: PublicEndpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublicEndpoint] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
       
@@ -190,7 +191,8 @@ object typesPublicEndpointMod {
       __obj.asInstanceOf[UnmarshalledPublicEndpoint]
     }
     
-    extension [Self <: UnmarshalledPublicEndpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledPublicEndpoint] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       

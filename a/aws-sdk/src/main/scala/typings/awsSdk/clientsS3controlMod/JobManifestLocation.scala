@@ -28,7 +28,8 @@ object JobManifestLocation {
     __obj.asInstanceOf[JobManifestLocation]
   }
   
-  extension [Self <: JobManifestLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobManifestLocation] (val x: Self) extends AnyVal {
     
     inline def setETag(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     

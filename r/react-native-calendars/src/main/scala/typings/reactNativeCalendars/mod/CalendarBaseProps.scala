@@ -161,7 +161,8 @@ object CalendarBaseProps {
     __obj.asInstanceOf[CalendarBaseProps]
   }
   
-  extension [Self <: CalendarBaseProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarBaseProps] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: TCalendarDate): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

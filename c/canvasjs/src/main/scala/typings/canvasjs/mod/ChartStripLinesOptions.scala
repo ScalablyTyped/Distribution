@@ -152,7 +152,8 @@ object ChartStripLinesOptions {
     __obj.asInstanceOf[ChartStripLinesOptions]
   }
   
-  extension [Self <: ChartStripLinesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartStripLinesOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

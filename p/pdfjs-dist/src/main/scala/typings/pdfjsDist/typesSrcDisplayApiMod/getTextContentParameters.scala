@@ -25,7 +25,8 @@ object getTextContentParameters {
     __obj.asInstanceOf[getTextContentParameters]
   }
   
-  extension [Self <: getTextContentParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: getTextContentParameters] (val x: Self) extends AnyVal {
     
     inline def setDisableCombineTextItems(value: Boolean): Self = StObject.set(x, "disableCombineTextItems", value.asInstanceOf[js.Any])
     

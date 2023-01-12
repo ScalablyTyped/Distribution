@@ -18,7 +18,8 @@ object BatchDeleteGeofenceResponse {
     __obj.asInstanceOf[BatchDeleteGeofenceResponse]
   }
   
-  extension [Self <: BatchDeleteGeofenceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteGeofenceResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: BatchDeleteGeofenceErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     

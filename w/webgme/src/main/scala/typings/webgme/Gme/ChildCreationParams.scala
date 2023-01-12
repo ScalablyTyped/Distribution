@@ -17,7 +17,8 @@ object ChildCreationParams {
     __obj.asInstanceOf[ChildCreationParams]
   }
   
-  extension [Self <: ChildCreationParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildCreationParams] (val x: Self) extends AnyVal {
     
     inline def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
     

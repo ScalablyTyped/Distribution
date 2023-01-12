@@ -192,7 +192,8 @@ object mod {
       __obj.asInstanceOf[FlatTreeIterator]
     }
     
-    extension [Self <: FlatTreeIterator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlatTreeIterator] (val x: Self) extends AnyVal {
       
       inline def setContains(value: Double => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       

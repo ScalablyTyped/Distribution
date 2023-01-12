@@ -18,7 +18,8 @@ object ReadVResult {
     __obj.asInstanceOf[ReadVResult]
   }
   
-  extension [Self <: ReadVResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadVResult] (val x: Self) extends AnyVal {
     
     inline def setBuffers(value: js.Array[ArrayBufferView]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
     

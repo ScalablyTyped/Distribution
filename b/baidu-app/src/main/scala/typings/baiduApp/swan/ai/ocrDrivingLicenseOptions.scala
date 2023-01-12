@@ -31,7 +31,8 @@ object ocrDrivingLicenseOptions {
     __obj.asInstanceOf[ocrDrivingLicenseOptions]
   }
   
-  extension [Self <: ocrDrivingLicenseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ocrDrivingLicenseOptions] (val x: Self) extends AnyVal {
     
     inline def setDetect_direction(value: Boolean): Self = StObject.set(x, "detect_direction", value.asInstanceOf[js.Any])
     

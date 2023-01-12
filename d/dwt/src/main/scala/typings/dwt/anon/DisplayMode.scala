@@ -25,7 +25,8 @@ object DisplayMode {
     __obj.asInstanceOf[DisplayMode]
   }
   
-  extension [Self <: DisplayMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayMode] (val x: Self) extends AnyVal {
     
     inline def setDisplayMode(value: String): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     

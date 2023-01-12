@@ -59,7 +59,8 @@ object Chart3dOptions {
     __obj.asInstanceOf[Chart3dOptions]
   }
   
-  extension [Self <: Chart3dOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chart3dOptions] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

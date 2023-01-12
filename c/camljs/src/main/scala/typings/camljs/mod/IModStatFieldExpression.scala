@@ -34,7 +34,8 @@ object IModStatFieldExpression {
     __obj.asInstanceOf[IModStatFieldExpression]
   }
   
-  extension [Self <: IModStatFieldExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModStatFieldExpression] (val x: Self) extends AnyVal {
     
     inline def setIsApproved(value: () => IExpression): Self = StObject.set(x, "IsApproved", js.Any.fromFunction0(value))
     

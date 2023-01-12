@@ -30,7 +30,8 @@ object distHelpersUseBackendMod {
       __obj.asInstanceOf[BackendHook]
     }
     
-    extension [Self <: BackendHook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackendHook] (val x: Self) extends AnyVal {
       
       inline def setBackend(value: cpu | wasm | webgl): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       

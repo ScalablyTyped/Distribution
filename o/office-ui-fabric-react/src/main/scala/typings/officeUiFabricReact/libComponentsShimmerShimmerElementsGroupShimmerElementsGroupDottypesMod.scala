@@ -73,7 +73,8 @@ object libComponentsShimmerShimmerElementsGroupShimmerElementsGroupDottypesMod {
       __obj.asInstanceOf[IShimmerElementsGroupProps]
     }
     
-    extension [Self <: IShimmerElementsGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerElementsGroupProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object libComponentsShimmerShimmerElementsGroupShimmerElementsGroupDottypesMod {
       __obj.asInstanceOf[IShimmerElementsGroupStyleProps]
     }
     
-    extension [Self <: IShimmerElementsGroupStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerElementsGroupStyleProps] (val x: Self) extends AnyVal {
       
       inline def setFlexWrap(value: Boolean): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object libComponentsShimmerShimmerElementsGroupShimmerElementsGroupDottypesMod {
       __obj.asInstanceOf[IShimmerElementsGroupStyles]
     }
     
-    extension [Self <: IShimmerElementsGroupStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerElementsGroupStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

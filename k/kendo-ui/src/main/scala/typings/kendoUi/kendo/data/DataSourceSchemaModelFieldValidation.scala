@@ -26,7 +26,8 @@ object DataSourceSchemaModelFieldValidation {
     __obj.asInstanceOf[DataSourceSchemaModelFieldValidation]
   }
   
-  extension [Self <: DataSourceSchemaModelFieldValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSchemaModelFieldValidation] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

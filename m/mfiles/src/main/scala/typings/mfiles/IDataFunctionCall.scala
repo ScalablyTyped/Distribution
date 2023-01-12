@@ -48,7 +48,8 @@ object IDataFunctionCall {
     __obj.asInstanceOf[IDataFunctionCall]
   }
   
-  extension [Self <: IDataFunctionCall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataFunctionCall] (val x: Self) extends AnyVal {
     
     inline def setDataFunction(value: MFDataFunction): Self = StObject.set(x, "DataFunction", value.asInstanceOf[js.Any])
     

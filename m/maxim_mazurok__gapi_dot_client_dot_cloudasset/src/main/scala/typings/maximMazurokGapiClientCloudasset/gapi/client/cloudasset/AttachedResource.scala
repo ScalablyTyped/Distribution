@@ -25,7 +25,8 @@ object AttachedResource {
     __obj.asInstanceOf[AttachedResource]
   }
   
-  extension [Self <: AttachedResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachedResource] (val x: Self) extends AnyVal {
     
     inline def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object EnumerationValue {
     __obj.asInstanceOf[EnumerationValue]
   }
   
-  extension [Self <: EnumerationValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumerationValue] (val x: Self) extends AnyVal {
     
     inline def setSynonyms(value: SynonymList): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
     

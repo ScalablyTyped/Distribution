@@ -23,7 +23,8 @@ object distCoreDndContextMod {
       __obj.asInstanceOf[DndContextType]
     }
     
-    extension [Self <: DndContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DndContextType] (val x: Self) extends AnyVal {
       
       inline def setDragDropManager(value: DragDropManager): Self = StObject.set(x, "dragDropManager", value.asInstanceOf[js.Any])
       

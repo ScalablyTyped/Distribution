@@ -19,7 +19,8 @@ object DiagramSelectableStroke {
     __obj.asInstanceOf[DiagramSelectableStroke]
   }
   
-  extension [Self <: DiagramSelectableStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramSelectableStroke] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AvailSuppression {
     __obj.asInstanceOf[AvailSuppression]
   }
   
-  extension [Self <: AvailSuppression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvailSuppression] (val x: Self) extends AnyVal {
     
     inline def setMode(value: Mode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     

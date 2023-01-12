@@ -33,7 +33,8 @@ object srcEsmResponseMod {
       __obj.asInstanceOf[BaseResponseMeta]
     }
     
-    extension [Self <: BaseResponseMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseResponseMeta] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object srcEsmResponseMod {
       __obj.asInstanceOf[HttpClientResponse]
     }
     
-    extension [Self <: HttpClientResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpClientResponse] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object srcEsmResponseMod {
       __obj.asInstanceOf[HttpClientResponseMeta]
     }
     
-    extension [Self <: HttpClientResponseMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpClientResponseMeta] (val x: Self) extends AnyVal {
       
       inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
       
@@ -201,7 +204,8 @@ object srcEsmResponseMod {
       __obj.asInstanceOf[SocketInfo]
     }
     
-    extension [Self <: SocketInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketInfo] (val x: Self) extends AnyVal {
       
       inline def setBytesRead(value: Double): Self = StObject.set(x, "bytesRead", value.asInstanceOf[js.Any])
       
@@ -253,7 +257,8 @@ object srcEsmResponseMod {
       __obj.asInstanceOf[Timing]
     }
     
-    extension [Self <: Timing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timing] (val x: Self) extends AnyVal {
       
       inline def setConnected(value: Double): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       

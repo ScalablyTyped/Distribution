@@ -19,7 +19,8 @@ object MediaSessionEventData {
     __obj.asInstanceOf[MediaSessionEventData]
   }
   
-  extension [Self <: MediaSessionEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaSessionEventData] (val x: Self) extends AnyVal {
     
     inline def setMediaSession(value: Media): Self = StObject.set(x, "mediaSession", value.asInstanceOf[js.Any])
   }

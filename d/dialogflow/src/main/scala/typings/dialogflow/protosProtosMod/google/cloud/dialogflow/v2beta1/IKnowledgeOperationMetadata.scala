@@ -20,7 +20,8 @@ object IKnowledgeOperationMetadata {
     __obj.asInstanceOf[IKnowledgeOperationMetadata]
   }
   
-  extension [Self <: IKnowledgeOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKnowledgeOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setState(
       value: State | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State * / any */ String)

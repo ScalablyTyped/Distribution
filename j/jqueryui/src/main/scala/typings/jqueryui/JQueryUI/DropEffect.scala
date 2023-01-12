@@ -15,7 +15,8 @@ object DropEffect {
     __obj.asInstanceOf[DropEffect]
   }
   
-  extension [Self <: DropEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropEffect] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

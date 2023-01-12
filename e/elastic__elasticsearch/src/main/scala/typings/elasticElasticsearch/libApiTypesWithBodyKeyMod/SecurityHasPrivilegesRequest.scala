@@ -21,7 +21,8 @@ object SecurityHasPrivilegesRequest {
     __obj.asInstanceOf[SecurityHasPrivilegesRequest]
   }
   
-  extension [Self <: SecurityHasPrivilegesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityHasPrivilegesRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Application): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

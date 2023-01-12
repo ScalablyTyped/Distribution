@@ -96,7 +96,8 @@ object libToolsApkSigningMod extends Shortcut {
       __obj.asInstanceOf[CertCheckOptions]
     }
     
-    extension [Self <: CertCheckOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertCheckOptions] (val x: Self) extends AnyVal {
       
       inline def setRequireDefaultCert(value: Boolean): Self = StObject.set(x, "requireDefaultCert", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object libToolsApkSigningMod extends Shortcut {
       __obj.asInstanceOf[KeystoreHash]
     }
     
-    extension [Self <: KeystoreHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeystoreHash] (val x: Self) extends AnyVal {
       
       inline def setMd5(value: String): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
       

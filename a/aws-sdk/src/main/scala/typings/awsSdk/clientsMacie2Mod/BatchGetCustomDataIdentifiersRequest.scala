@@ -18,7 +18,8 @@ object BatchGetCustomDataIdentifiersRequest {
     __obj.asInstanceOf[BatchGetCustomDataIdentifiersRequest]
   }
   
-  extension [Self <: BatchGetCustomDataIdentifiersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetCustomDataIdentifiersRequest] (val x: Self) extends AnyVal {
     
     inline def setIds(value: listOfString): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     

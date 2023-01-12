@@ -20,7 +20,8 @@ object StellarManageDataOp {
     __obj.asInstanceOf[StellarManageDataOp]
   }
   
-  extension [Self <: StellarManageDataOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StellarManageDataOp] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

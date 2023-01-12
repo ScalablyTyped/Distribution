@@ -29,7 +29,8 @@ object VersionResult {
     __obj.asInstanceOf[VersionResult]
   }
   
-  extension [Self <: VersionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VersionResult] (val x: Self) extends AnyVal {
     
     inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     

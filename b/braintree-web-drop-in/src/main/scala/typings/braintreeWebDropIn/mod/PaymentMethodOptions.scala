@@ -16,7 +16,8 @@ object PaymentMethodOptions {
     __obj.asInstanceOf[PaymentMethodOptions]
   }
   
-  extension [Self <: PaymentMethodOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentMethodOptions] (val x: Self) extends AnyVal {
     
     inline def setThreeDSecure(value: AdditionalInformation): Self = StObject.set(x, "threeDSecure", value.asInstanceOf[js.Any])
   }

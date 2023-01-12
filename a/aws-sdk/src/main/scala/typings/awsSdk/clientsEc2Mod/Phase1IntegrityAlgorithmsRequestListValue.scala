@@ -18,7 +18,8 @@ object Phase1IntegrityAlgorithmsRequestListValue {
     __obj.asInstanceOf[Phase1IntegrityAlgorithmsRequestListValue]
   }
   
-  extension [Self <: Phase1IntegrityAlgorithmsRequestListValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Phase1IntegrityAlgorithmsRequestListValue] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     

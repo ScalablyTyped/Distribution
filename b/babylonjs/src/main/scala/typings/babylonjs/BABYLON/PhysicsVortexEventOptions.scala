@@ -56,7 +56,8 @@ object PhysicsVortexEventOptions {
     __obj.asInstanceOf[PhysicsVortexEventOptions]
   }
   
-  extension [Self <: PhysicsVortexEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicsVortexEventOptions] (val x: Self) extends AnyVal {
     
     inline def setCentrifugalForceMultiplier(value: Double): Self = StObject.set(x, "centrifugalForceMultiplier", value.asInstanceOf[js.Any])
     

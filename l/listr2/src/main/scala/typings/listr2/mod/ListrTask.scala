@@ -81,7 +81,8 @@ object ListrTask {
     __obj.asInstanceOf[ListrTask[Ctx, Renderer]]
   }
   
-  extension [Self <: ListrTask[?, ?], Ctx, Renderer /* <: ListrRendererFactory */](x: Self & (ListrTask[Ctx, Renderer])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListrTask[?, ?], Ctx, Renderer /* <: ListrRendererFactory */] (val x: Self & (ListrTask[Ctx, Renderer])) extends AnyVal {
     
     inline def setEnabled(value: Boolean | (js.Function1[/* ctx */ Ctx, Boolean | js.Promise[Boolean]])): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

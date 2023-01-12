@@ -36,7 +36,8 @@ object PopoverPrivateState {
     __obj.asInstanceOf[PopoverPrivateState]
   }
   
-  extension [Self <: PopoverPrivateState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopoverPrivateState] (val x: Self) extends AnyVal {
     
     inline def setArrowOffset(value: Offset): Self = StObject.set(x, "arrowOffset", value.asInstanceOf[js.Any])
     

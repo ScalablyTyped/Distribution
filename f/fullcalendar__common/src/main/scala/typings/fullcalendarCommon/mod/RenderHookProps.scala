@@ -49,7 +49,8 @@ object RenderHookProps {
     __obj.asInstanceOf[RenderHookProps[ContentArg]]
   }
   
-  extension [Self <: RenderHookProps[?], ContentArg](x: Self & RenderHookProps[ContentArg]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderHookProps[?], ContentArg] (val x: Self & RenderHookProps[ContentArg]) extends AnyVal {
     
     inline def setChildren(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ref<any> */ /* rootElRef */ Any, /* classNames */ js.Array[String], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ref<any> */ /* innerElRef */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentChildren */ /* innerContent */ Any) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentChildren */ Any

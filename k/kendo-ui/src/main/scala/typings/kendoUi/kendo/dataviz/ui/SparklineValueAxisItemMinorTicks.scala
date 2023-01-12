@@ -25,7 +25,8 @@ object SparklineValueAxisItemMinorTicks {
     __obj.asInstanceOf[SparklineValueAxisItemMinorTicks]
   }
   
-  extension [Self <: SparklineValueAxisItemMinorTicks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklineValueAxisItemMinorTicks] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

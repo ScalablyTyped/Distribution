@@ -15,7 +15,8 @@ object LevelControllerConfig {
     __obj.asInstanceOf[LevelControllerConfig]
   }
   
-  extension [Self <: LevelControllerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LevelControllerConfig] (val x: Self) extends AnyVal {
     
     inline def setStartLevel(value: Double): Self = StObject.set(x, "startLevel", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object DocEventMap {
     __obj.asInstanceOf[DocEventMap[T]]
   }
   
-  extension [Self <: DocEventMap[?], T](x: Self & DocEventMap[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocEventMap[?], T] (val x: Self & DocEventMap[T]) extends AnyVal {
     
     inline def `setBefore op`(value: (js.Array[Any], Any, String) => Unit): Self = StObject.set(x, "before op", js.Any.fromFunction3(value))
     

@@ -20,7 +20,8 @@ object RequestLibResponse {
     __obj.asInstanceOf[RequestLibResponse]
   }
   
-  extension [Self <: RequestLibResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestLibResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

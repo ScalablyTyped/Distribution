@@ -74,7 +74,8 @@ object Cardhash {
     __obj.asInstanceOf[Cardhash]
   }
   
-  extension [Self <: Cardhash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cardhash] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: Double): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[SerializeJSOptions]
     }
     
-    extension [Self <: SerializeJSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializeJSOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreFunction(value: Boolean): Self = StObject.set(x, "ignoreFunction", value.asInstanceOf[js.Any])
       

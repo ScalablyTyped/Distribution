@@ -18,7 +18,8 @@ object ResponseBytesJson {
     __obj.asInstanceOf[ResponseBytesJson]
   }
   
-  extension [Self <: ResponseBytesJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseBytesJson] (val x: Self) extends AnyVal {
     
     inline def setResponse(value: OctetStringJson): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     

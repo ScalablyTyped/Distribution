@@ -56,7 +56,8 @@ object ANGAUD {
     __obj.asInstanceOf[ANGAUD]
   }
   
-  extension [Self <: ANGAUD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ANGAUD] (val x: Self) extends AnyVal {
     
     inline def setANG(value: js.Array[String]): Self = StObject.set(x, "ANG", value.asInstanceOf[js.Any])
     

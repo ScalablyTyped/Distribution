@@ -28,7 +28,8 @@ object ListMFADevicesRequest {
     __obj.asInstanceOf[ListMFADevicesRequest]
   }
   
-  extension [Self <: ListMFADevicesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMFADevicesRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

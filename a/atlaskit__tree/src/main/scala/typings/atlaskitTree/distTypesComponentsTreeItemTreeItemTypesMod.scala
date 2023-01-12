@@ -71,7 +71,8 @@ object distTypesComponentsTreeItemTreeItemTypesMod {
       __obj.asInstanceOf[RenderItemParams]
     }
     
-    extension [Self <: RenderItemParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderItemParams] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object distTypesComponentsTreeItemTreeItemTypesMod {
       __obj.asInstanceOf[TreeDraggingStyle]
     }
     
-    extension [Self <: TreeDraggingStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeDraggingStyle] (val x: Self) extends AnyVal {
       
       inline def setPaddingLeft(value: Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       

@@ -161,7 +161,8 @@ object LiveTranscoding {
     __obj.asInstanceOf[LiveTranscoding]
   }
   
-  extension [Self <: LiveTranscoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveTranscoding] (val x: Self) extends AnyVal {
     
     inline def setAudioBitrate(value: Double): Self = StObject.set(x, "audioBitrate", value.asInstanceOf[js.Any])
     

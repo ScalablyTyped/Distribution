@@ -18,7 +18,8 @@ object WatchIgnorePluginOptions {
     __obj.asInstanceOf[WatchIgnorePluginOptions]
   }
   
-  extension [Self <: WatchIgnorePluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchIgnorePluginOptions] (val x: Self) extends AnyVal {
     
     inline def setPaths(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TimeOver {
     __obj.asInstanceOf[TimeOver]
   }
   
-  extension [Self <: TimeOver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeOver] (val x: Self) extends AnyVal {
     
     inline def setQuestionNumber(value: Double): Self = StObject.set(x, "questionNumber", value.asInstanceOf[js.Any])
   }

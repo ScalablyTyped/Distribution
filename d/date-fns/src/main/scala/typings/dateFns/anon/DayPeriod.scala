@@ -32,7 +32,8 @@ object DayPeriod {
     __obj.asInstanceOf[DayPeriod]
   }
   
-  extension [Self <: DayPeriod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayPeriod] (val x: Self) extends AnyVal {
     
     inline def setDay(value: /* repeated */ Any => Any): Self = StObject.set(x, "day", js.Any.fromFunction1(value))
     

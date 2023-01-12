@@ -22,7 +22,8 @@ object ExitFullScreenOption {
     __obj.asInstanceOf[ExitFullScreenOption]
   }
   
-  extension [Self <: ExitFullScreenOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExitFullScreenOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

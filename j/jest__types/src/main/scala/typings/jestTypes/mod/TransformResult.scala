@@ -19,7 +19,8 @@ object TransformResult {
     __obj.asInstanceOf[TransformResult]
   }
   
-  extension [Self <: TransformResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformResult] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

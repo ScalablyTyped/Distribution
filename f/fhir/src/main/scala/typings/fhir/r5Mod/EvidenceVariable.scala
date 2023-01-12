@@ -174,7 +174,8 @@ object EvidenceVariable {
     __obj.asInstanceOf[EvidenceVariable]
   }
   
-  extension [Self <: EvidenceVariable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvidenceVariable] (val x: Self) extends AnyVal {
     
     inline def setActual(value: Boolean): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     

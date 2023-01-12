@@ -16,7 +16,8 @@ object exportKmlResultKmz {
     __obj.asInstanceOf[exportKmlResultKmz]
   }
   
-  extension [Self <: exportKmlResultKmz](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: exportKmlResultKmz] (val x: Self) extends AnyVal {
     
     inline def setKmz(value: Blob): Self = StObject.set(x, "kmz", value.asInstanceOf[js.Any])
   }

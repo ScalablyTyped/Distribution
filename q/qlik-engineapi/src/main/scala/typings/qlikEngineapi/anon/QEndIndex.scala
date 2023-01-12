@@ -17,7 +17,8 @@ object QEndIndex {
     __obj.asInstanceOf[QEndIndex]
   }
   
-  extension [Self <: QEndIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QEndIndex] (val x: Self) extends AnyVal {
     
     inline def setQEndIndex(value: Double): Self = StObject.set(x, "qEndIndex", value.asInstanceOf[js.Any])
     

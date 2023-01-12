@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[AttributeCountLimit]
     }
     
-    extension [Self <: AttributeCountLimit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeCountLimit] (val x: Self) extends AnyVal {
       
       inline def setAttributeCountLimit(value: Double): Self = StObject.set(x, "attributeCountLimit", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[AttributeValueLengthLimit]
     }
     
-    extension [Self <: AttributeValueLengthLimit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeValueLengthLimit] (val x: Self) extends AnyVal {
       
       inline def setAttributeCountLimit(value: Double): Self = StObject.set(x, "attributeCountLimit", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object anon {
       __obj.asInstanceOf[ForceFlushTimeoutMillis]
     }
     
-    extension [Self <: ForceFlushTimeoutMillis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForceFlushTimeoutMillis] (val x: Self) extends AnyVal {
       
       inline def setForceFlushTimeoutMillis(value: Double): Self = StObject.set(x, "forceFlushTimeoutMillis", value.asInstanceOf[js.Any])
       
@@ -274,7 +277,8 @@ object anon {
       __obj.asInstanceOf[RequiredENVIRONMENT]
     }
     
-    extension [Self <: RequiredENVIRONMENT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredENVIRONMENT] (val x: Self) extends AnyVal {
       
       inline def setCONTAINER_NAME(value: String): Self = StObject.set(x, "CONTAINER_NAME", value.asInstanceOf[js.Any])
       
@@ -401,7 +405,8 @@ object anon {
       __obj.asInstanceOf[SchemaUrl]
     }
     
-    extension [Self <: SchemaUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaUrl] (val x: Self) extends AnyVal {
       
       inline def setSchemaUrl(value: String): Self = StObject.set(x, "schemaUrl", value.asInstanceOf[js.Any])
       
@@ -445,7 +450,8 @@ object anon {
       __obj.asInstanceOf[TracerConfigsamplerSample]
     }
     
-    extension [Self <: TracerConfigsamplerSample](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracerConfigsamplerSample] (val x: Self) extends AnyVal {
       
       inline def setForceFlushTimeoutMillis(value: Double): Self = StObject.set(x, "forceFlushTimeoutMillis", value.asInstanceOf[js.Any])
       

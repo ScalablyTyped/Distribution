@@ -35,7 +35,8 @@ object ListParameters {
     __obj.asInstanceOf[ListParameters]
   }
   
-  extension [Self <: ListParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListParameters] (val x: Self) extends AnyVal {
     
     inline def setCorpora(value: String): Self = StObject.set(x, "corpora", value.asInstanceOf[js.Any])
     

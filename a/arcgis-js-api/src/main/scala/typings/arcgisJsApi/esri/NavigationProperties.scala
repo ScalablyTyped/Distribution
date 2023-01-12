@@ -47,7 +47,8 @@ object NavigationProperties {
     __obj.asInstanceOf[NavigationProperties]
   }
   
-  extension [Self <: NavigationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationProperties] (val x: Self) extends AnyVal {
     
     inline def setBrowserTouchPanEnabled(value: Boolean): Self = StObject.set(x, "browserTouchPanEnabled", value.asInstanceOf[js.Any])
     

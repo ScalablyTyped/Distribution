@@ -84,7 +84,8 @@ object distRunCodeMod {
       __obj.asInstanceOf[RunCodeOpts]
     }
     
-    extension [Self <: RunCodeOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunCodeOpts] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Buffer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

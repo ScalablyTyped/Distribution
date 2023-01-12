@@ -29,7 +29,8 @@ object Firstxpx {
     __obj.asInstanceOf[Firstxpx]
   }
   
-  extension [Self <: Firstxpx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Firstxpx] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

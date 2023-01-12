@@ -18,7 +18,8 @@ object S3TableOutputOptions {
     __obj.asInstanceOf[S3TableOutputOptions]
   }
   
-  extension [Self <: S3TableOutputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3TableOutputOptions] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: S3Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
   }

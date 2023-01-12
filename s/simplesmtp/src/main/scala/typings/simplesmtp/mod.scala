@@ -179,7 +179,8 @@ object mod {
       __obj.asInstanceOf[SmtpServerOptions]
     }
     
-    extension [Self <: SmtpServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmtpServerOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthMethods(value: js.Array[String]): Self = StObject.set(x, "authMethods", value.asInstanceOf[js.Any])
       

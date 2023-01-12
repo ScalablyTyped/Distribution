@@ -37,7 +37,8 @@ object TransformRaw {
     __obj.asInstanceOf[TransformRaw[T]]
   }
   
-  extension [Self <: TransformRaw[?], T /* <: Record[String, Any] */](x: Self & TransformRaw[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformRaw[?], T /* <: Record[String, Any] */] (val x: Self & TransformRaw[T]) extends AnyVal {
     
     inline def setIsMatch(value: /* node */ Node => Boolean): Self = StObject.set(x, "isMatch", js.Any.fromFunction1(value))
     

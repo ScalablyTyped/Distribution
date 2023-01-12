@@ -15,7 +15,8 @@ object BearingDelta {
     __obj.asInstanceOf[BearingDelta]
   }
   
-  extension [Self <: BearingDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BearingDelta] (val x: Self) extends AnyVal {
     
     inline def setBearingDelta(value: Double): Self = StObject.set(x, "bearingDelta", value.asInstanceOf[js.Any])
   }

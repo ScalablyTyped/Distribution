@@ -20,7 +20,8 @@ object FreezeWorldMatrix {
     __obj.asInstanceOf[FreezeWorldMatrix]
   }
   
-  extension [Self <: FreezeWorldMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreezeWorldMatrix] (val x: Self) extends AnyVal {
     
     inline def setActions(value: Nullable[Any]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

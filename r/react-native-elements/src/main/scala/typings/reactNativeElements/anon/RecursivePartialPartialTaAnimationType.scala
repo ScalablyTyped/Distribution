@@ -25,7 +25,8 @@ object RecursivePartialPartialTaAnimationType {
     __obj.asInstanceOf[RecursivePartialPartialTaAnimationType]
   }
   
-  extension [Self <: RecursivePartialPartialTaAnimationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialPartialTaAnimationType] (val x: Self) extends AnyVal {
     
     inline def setAnimationConfig(value: RecursivePartial[js.UndefOr[OmitSpringAnimationConfig]]): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
     

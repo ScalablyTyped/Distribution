@@ -191,7 +191,8 @@ object DocumentSettings {
     __obj.asInstanceOf[DocumentSettings]
   }
   
-  extension [Self <: DocumentSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSettings] (val x: Self) extends AnyVal {
     
     inline def setAddParaSpacingToTableCells(value: Boolean): Self = StObject.set(x, "AddParaSpacingToTableCells", value.asInstanceOf[js.Any])
     

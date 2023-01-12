@@ -20,7 +20,8 @@ object ModuleFactory {
     __obj.asInstanceOf[ModuleFactory]
   }
   
-  extension [Self <: ModuleFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(
       value: (ModuleFactoryCreateData, js.Function2[/* arg0 */ js.UndefOr[js.Error], /* arg1 */ js.UndefOr[ModuleFactoryResult], Unit]) => Unit

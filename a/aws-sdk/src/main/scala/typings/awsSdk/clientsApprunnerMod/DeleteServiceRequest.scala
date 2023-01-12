@@ -18,7 +18,8 @@ object DeleteServiceRequest {
     __obj.asInstanceOf[DeleteServiceRequest]
   }
   
-  extension [Self <: DeleteServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setServiceArn(value: AppRunnerResourceArn): Self = StObject.set(x, "ServiceArn", value.asInstanceOf[js.Any])
   }

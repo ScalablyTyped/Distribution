@@ -46,7 +46,8 @@ object CaseOperation {
     __obj.asInstanceOf[CaseOperation]
   }
   
-  extension [Self <: CaseOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaseOperation] (val x: Self) extends AnyVal {
     
     inline def setAction(value: NullableOption[CaseAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

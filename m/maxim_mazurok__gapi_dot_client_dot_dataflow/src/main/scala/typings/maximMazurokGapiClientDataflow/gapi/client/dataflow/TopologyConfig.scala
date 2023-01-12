@@ -30,7 +30,8 @@ object TopologyConfig {
     __obj.asInstanceOf[TopologyConfig]
   }
   
-  extension [Self <: TopologyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopologyConfig] (val x: Self) extends AnyVal {
     
     inline def setComputations(value: js.Array[ComputationTopology]): Self = StObject.set(x, "computations", value.asInstanceOf[js.Any])
     

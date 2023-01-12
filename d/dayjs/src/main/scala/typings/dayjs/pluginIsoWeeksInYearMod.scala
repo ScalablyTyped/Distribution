@@ -31,7 +31,8 @@ object pluginIsoWeeksInYearMod extends Shortcut {
         __obj.asInstanceOf[Dayjs]
       }
       
-      extension [Self <: Dayjs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Dayjs] (val x: Self) extends AnyVal {
         
         inline def setIsoWeeksInYear(value: () => Double): Self = StObject.set(x, "isoWeeksInYear", js.Any.fromFunction0(value))
       }

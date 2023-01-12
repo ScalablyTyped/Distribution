@@ -20,7 +20,8 @@ object TypeValue {
     __obj.asInstanceOf[TypeValue]
   }
   
-  extension [Self <: TypeValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeValue] (val x: Self) extends AnyVal {
     
     inline def setType(value: bundle_group): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

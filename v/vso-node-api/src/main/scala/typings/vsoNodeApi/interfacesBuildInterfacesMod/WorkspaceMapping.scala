@@ -50,7 +50,8 @@ object WorkspaceMapping {
     __obj.asInstanceOf[WorkspaceMapping]
   }
   
-  extension [Self <: WorkspaceMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceMapping] (val x: Self) extends AnyVal {
     
     inline def setDefinitionUri(value: String): Self = StObject.set(x, "definitionUri", value.asInstanceOf[js.Any])
     

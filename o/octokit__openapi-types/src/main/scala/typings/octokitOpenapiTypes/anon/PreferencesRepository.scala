@@ -20,7 +20,8 @@ object PreferencesRepository {
     __obj.asInstanceOf[PreferencesRepository]
   }
   
-  extension [Self <: PreferencesRepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreferencesRepository] (val x: Self) extends AnyVal {
     
     inline def setPreferences(value: Autotriggerchecks): Self = StObject.set(x, "preferences", value.asInstanceOf[js.Any])
     

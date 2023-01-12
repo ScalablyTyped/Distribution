@@ -24,7 +24,8 @@ object RuntimeInfo {
     __obj.asInstanceOf[RuntimeInfo]
   }
   
-  extension [Self <: RuntimeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeInfo] (val x: Self) extends AnyVal {
     
     inline def setDiagnosticOutputUri(value: String): Self = StObject.set(x, "diagnosticOutputUri", value.asInstanceOf[js.Any])
     

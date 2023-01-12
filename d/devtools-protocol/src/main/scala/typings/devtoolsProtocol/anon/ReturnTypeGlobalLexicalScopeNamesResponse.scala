@@ -22,7 +22,8 @@ object ReturnTypeGlobalLexicalScopeNamesResponse {
     __obj.asInstanceOf[ReturnTypeGlobalLexicalScopeNamesResponse]
   }
   
-  extension [Self <: ReturnTypeGlobalLexicalScopeNamesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGlobalLexicalScopeNamesResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[js.UndefOr[GlobalLexicalScopeNamesRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

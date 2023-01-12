@@ -23,7 +23,8 @@ object ASPxClientProcessingModeEventArgs {
     __obj.asInstanceOf[ASPxClientProcessingModeEventArgs]
   }
   
-  extension [Self <: ASPxClientProcessingModeEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientProcessingModeEventArgs] (val x: Self) extends AnyVal {
     
     inline def setProcessOnServer(value: Boolean): Self = StObject.set(x, "processOnServer", value.asInstanceOf[js.Any])
   }

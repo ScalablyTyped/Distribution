@@ -28,7 +28,8 @@ object Action {
     __obj.asInstanceOf[Action]
   }
   
-  extension [Self <: Action](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: Name): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetDataflowGraphResponse {
     __obj.asInstanceOf[GetDataflowGraphResponse]
   }
   
-  extension [Self <: GetDataflowGraphResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataflowGraphResponse] (val x: Self) extends AnyVal {
     
     inline def setDagEdges(value: DagEdges): Self = StObject.set(x, "DagEdges", value.asInstanceOf[js.Any])
     

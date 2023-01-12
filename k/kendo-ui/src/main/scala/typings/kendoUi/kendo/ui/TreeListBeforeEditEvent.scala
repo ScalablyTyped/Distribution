@@ -18,7 +18,8 @@ object TreeListBeforeEditEvent {
     __obj.asInstanceOf[TreeListBeforeEditEvent]
   }
   
-  extension [Self <: TreeListBeforeEditEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListBeforeEditEvent] (val x: Self) extends AnyVal {
     
     inline def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

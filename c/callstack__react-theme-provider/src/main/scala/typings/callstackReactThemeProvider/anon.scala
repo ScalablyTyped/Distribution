@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[`0`[Theme]]
     }
     
-    extension [Self <: `0`[?], Theme](x: Self & `0`[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?], Theme] (val x: Self & `0`[Theme]) extends AnyVal {
       
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[`1`[Theme]]
     }
     
-    extension [Self <: `1`[?], Theme](x: Self & `1`[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`[?], Theme] (val x: Self & `1`[Theme]) extends AnyVal {
       
       inline def setTheme(value: DeepPartial[Theme]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -56,7 +58,8 @@ object anon {
       __obj.asInstanceOf[ThemeTheme[Theme]]
     }
     
-    extension [Self <: ThemeTheme[?], Theme](x: Self & ThemeTheme[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeTheme[?], Theme] (val x: Self & ThemeTheme[Theme]) extends AnyVal {
       
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

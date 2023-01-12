@@ -54,7 +54,8 @@ object anon {
       __obj.asInstanceOf[HTTPOrNetworkError]
     }
     
-    extension [Self <: HTTPOrNetworkError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTTPOrNetworkError] (val x: Self) extends AnyVal {
       
       inline def setHTTPOrNetworkError(value: (/* err */ js.Error, /* response */ IncomingMessage, /* body */ Any) => Boolean): Self = StObject.set(x, "HTTPOrNetworkError", js.Any.fromFunction3(value))
       

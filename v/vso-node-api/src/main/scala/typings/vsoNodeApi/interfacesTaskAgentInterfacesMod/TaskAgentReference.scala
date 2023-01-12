@@ -40,7 +40,8 @@ object TaskAgentReference {
     __obj.asInstanceOf[TaskAgentReference]
   }
   
-  extension [Self <: TaskAgentReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAgentReference] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

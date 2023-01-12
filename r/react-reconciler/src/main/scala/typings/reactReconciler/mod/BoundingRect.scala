@@ -21,7 +21,8 @@ object BoundingRect {
     __obj.asInstanceOf[BoundingRect]
   }
   
-  extension [Self <: BoundingRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundingRect] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

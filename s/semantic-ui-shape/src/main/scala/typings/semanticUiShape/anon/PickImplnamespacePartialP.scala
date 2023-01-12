@@ -51,7 +51,8 @@ object PickImplnamespacePartialP {
     __obj.asInstanceOf[PickImplnamespacePartialP]
   }
   
-  extension [Self <: PickImplnamespacePartialP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplnamespacePartialP] (val x: Self) extends AnyVal {
     
     inline def setBeforeChange(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "beforeChange", value.asInstanceOf[js.Any])
     

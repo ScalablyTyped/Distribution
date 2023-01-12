@@ -16,7 +16,8 @@ object NgSubmit {
     __obj.asInstanceOf[NgSubmit]
   }
   
-  extension [Self <: NgSubmit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NgSubmit] (val x: Self) extends AnyVal {
     
     inline def setNgSubmit(value: ngSubmit): Self = StObject.set(x, "ngSubmit", value.asInstanceOf[js.Any])
   }

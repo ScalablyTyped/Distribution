@@ -70,7 +70,8 @@ object AwsS3BucketBucketLifecycleConfigurationRulesDetails {
     __obj.asInstanceOf[AwsS3BucketBucketLifecycleConfigurationRulesDetails]
   }
   
-  extension [Self <: AwsS3BucketBucketLifecycleConfigurationRulesDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketBucketLifecycleConfigurationRulesDetails] (val x: Self) extends AnyVal {
     
     inline def setAbortIncompleteMultipartUpload(value: AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetails): Self = StObject.set(x, "AbortIncompleteMultipartUpload", value.asInstanceOf[js.Any])
     

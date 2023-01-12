@@ -21,7 +21,8 @@ object ClusterRerouteCommandCancelAction {
     __obj.asInstanceOf[ClusterRerouteCommandCancelAction]
   }
   
-  extension [Self <: ClusterRerouteCommandCancelAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterRerouteCommandCancelAction] (val x: Self) extends AnyVal {
     
     inline def setAllow_primary(value: Boolean): Self = StObject.set(x, "allow_primary", value.asInstanceOf[js.Any])
     

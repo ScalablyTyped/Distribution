@@ -22,7 +22,8 @@ object PartialRegion {
     __obj.asInstanceOf[PartialRegion]
   }
   
-  extension [Self <: PartialRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRegion] (val x: Self) extends AnyVal {
     
     inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     

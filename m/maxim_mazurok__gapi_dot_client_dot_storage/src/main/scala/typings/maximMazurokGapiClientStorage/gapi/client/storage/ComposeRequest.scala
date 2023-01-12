@@ -24,7 +24,8 @@ object ComposeRequest {
     __obj.asInstanceOf[ComposeRequest]
   }
   
-  extension [Self <: ComposeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComposeRequest] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: Object): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

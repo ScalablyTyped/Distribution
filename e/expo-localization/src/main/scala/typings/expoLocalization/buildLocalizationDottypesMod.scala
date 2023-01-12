@@ -240,7 +240,8 @@ object buildLocalizationDottypesMod {
       __obj.asInstanceOf[Calendar]
     }
     
-    extension [Self <: Calendar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Calendar] (val x: Self) extends AnyVal {
       
       inline def setCalendar(value: CalendarIdentifier): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
       
@@ -326,7 +327,8 @@ object buildLocalizationDottypesMod {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
       
@@ -454,7 +456,8 @@ object buildLocalizationDottypesMod {
       __obj.asInstanceOf[Localization]
     }
     
-    extension [Self <: Localization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Localization] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       

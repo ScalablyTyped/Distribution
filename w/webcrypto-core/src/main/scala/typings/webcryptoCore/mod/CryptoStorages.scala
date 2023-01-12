@@ -17,7 +17,8 @@ object CryptoStorages {
     __obj.asInstanceOf[CryptoStorages]
   }
   
-  extension [Self <: CryptoStorages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptoStorages] (val x: Self) extends AnyVal {
     
     inline def setCertStorage(value: CryptoCertificateStorage): Self = StObject.set(x, "certStorage", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object StatisticalThreshold {
     __obj.asInstanceOf[StatisticalThreshold]
   }
   
-  extension [Self <: StatisticalThreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatisticalThreshold] (val x: Self) extends AnyVal {
     
     inline def setStatistic(value: EvaluationStatistic): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
     

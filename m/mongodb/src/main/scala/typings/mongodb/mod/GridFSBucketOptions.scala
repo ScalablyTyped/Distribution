@@ -24,7 +24,8 @@ object GridFSBucketOptions {
     __obj.asInstanceOf[GridFSBucketOptions]
   }
   
-  extension [Self <: GridFSBucketOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridFSBucketOptions] (val x: Self) extends AnyVal {
     
     inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     

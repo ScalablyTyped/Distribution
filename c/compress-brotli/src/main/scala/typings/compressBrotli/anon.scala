@@ -56,7 +56,8 @@ object anon {
       __obj.asInstanceOf[CompressOptions[SerializeResult, DeserializeResult]]
     }
     
-    extension [Self <: CompressOptions[?, ?], SerializeResult, DeserializeResult](x: Self & (CompressOptions[SerializeResult, DeserializeResult])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressOptions[?, ?], SerializeResult, DeserializeResult] (val x: Self & (CompressOptions[SerializeResult, DeserializeResult])) extends AnyVal {
       
       inline def setCompressOptions(value: BrotliOptions): Self = StObject.set(x, "compressOptions", value.asInstanceOf[js.Any])
       

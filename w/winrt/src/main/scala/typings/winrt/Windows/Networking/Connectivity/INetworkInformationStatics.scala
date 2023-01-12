@@ -42,7 +42,8 @@ object INetworkInformationStatics {
     __obj.asInstanceOf[INetworkInformationStatics]
   }
   
-  extension [Self <: INetworkInformationStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INetworkInformationStatics] (val x: Self) extends AnyVal {
     
     inline def setGetConnectionProfiles(value: () => IVectorView[ConnectionProfile]): Self = StObject.set(x, "getConnectionProfiles", js.Any.fromFunction0(value))
     

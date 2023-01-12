@@ -22,7 +22,8 @@ object ExpansionFile {
     __obj.asInstanceOf[ExpansionFile]
   }
   
-  extension [Self <: ExpansionFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpansionFile] (val x: Self) extends AnyVal {
     
     inline def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     

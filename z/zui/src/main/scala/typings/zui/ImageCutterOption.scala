@@ -34,7 +34,8 @@ object ImageCutterOption {
     __obj.asInstanceOf[ImageCutterOption]
   }
   
-  extension [Self <: ImageCutterOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageCutterOption] (val x: Self) extends AnyVal {
     
     inline def setCoverColor(value: String): Self = StObject.set(x, "coverColor", value.asInstanceOf[js.Any])
     

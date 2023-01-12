@@ -23,7 +23,8 @@ object AddProfileKeyResponse {
     __obj.asInstanceOf[AddProfileKeyResponse]
   }
   
-  extension [Self <: AddProfileKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddProfileKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setKeyName(value: name): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
     

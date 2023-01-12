@@ -41,7 +41,8 @@ object Settings {
     __obj.asInstanceOf[Settings]
   }
   
-  extension [Self <: Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, Any, Request) => Any): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
     

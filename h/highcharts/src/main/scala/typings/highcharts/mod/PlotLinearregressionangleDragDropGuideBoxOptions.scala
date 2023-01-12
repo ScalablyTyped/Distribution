@@ -18,7 +18,8 @@ object PlotLinearregressionangleDragDropGuideBoxOptions {
     __obj.asInstanceOf[PlotLinearregressionangleDragDropGuideBoxOptions]
   }
   
-  extension [Self <: PlotLinearregressionangleDragDropGuideBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotLinearregressionangleDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

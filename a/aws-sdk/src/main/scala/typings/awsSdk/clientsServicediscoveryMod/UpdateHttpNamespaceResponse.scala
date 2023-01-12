@@ -18,7 +18,8 @@ object UpdateHttpNamespaceResponse {
     __obj.asInstanceOf[UpdateHttpNamespaceResponse]
   }
   
-  extension [Self <: UpdateHttpNamespaceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateHttpNamespaceResponse] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     

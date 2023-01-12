@@ -18,7 +18,8 @@ object NormalMap {
     __obj.asInstanceOf[NormalMap]
   }
   
-  extension [Self <: NormalMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalMap] (val x: Self) extends AnyVal {
     
     inline def setNormalMap(value: IUniform[Any]): Self = StObject.set(x, "normalMap", value.asInstanceOf[js.Any])
     

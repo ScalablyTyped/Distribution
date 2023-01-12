@@ -18,7 +18,8 @@ object UpdateBillingGroupResponse {
     __obj.asInstanceOf[UpdateBillingGroupResponse]
   }
   
-  extension [Self <: UpdateBillingGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBillingGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

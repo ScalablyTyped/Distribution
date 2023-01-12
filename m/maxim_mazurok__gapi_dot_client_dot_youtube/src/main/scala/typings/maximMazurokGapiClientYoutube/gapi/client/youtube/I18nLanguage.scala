@@ -26,7 +26,8 @@ object I18nLanguage {
     __obj.asInstanceOf[I18nLanguage]
   }
   
-  extension [Self <: I18nLanguage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: I18nLanguage] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object QueryInfo {
     __obj.asInstanceOf[QueryInfo]
   }
   
-  extension [Self <: QueryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryInfo] (val x: Self) extends AnyVal {
     
     inline def setSelectFields(value: FieldInfoList): Self = StObject.set(x, "SelectFields", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object CheckrunsTotalcount {
     __obj.asInstanceOf[CheckrunsTotalcount]
   }
   
-  extension [Self <: CheckrunsTotalcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckrunsTotalcount] (val x: Self) extends AnyVal {
     
     inline def setCheck_runs(value: js.Array[Deployment]): Self = StObject.set(x, "check_runs", value.asInstanceOf[js.Any])
     

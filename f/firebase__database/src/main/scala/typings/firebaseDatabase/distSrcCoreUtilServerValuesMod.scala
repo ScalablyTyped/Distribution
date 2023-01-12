@@ -39,7 +39,8 @@ object distSrcCoreUtilServerValuesMod {
       __obj.asInstanceOf[ValueProvider]
     }
     
-    extension [Self <: ValueProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueProvider] (val x: Self) extends AnyVal {
       
       inline def setGetImmediateChild(value: String => ValueProvider): Self = StObject.set(x, "getImmediateChild", js.Any.fromFunction1(value))
       

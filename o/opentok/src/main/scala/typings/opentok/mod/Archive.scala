@@ -64,7 +64,8 @@ object Archive {
     __obj.asInstanceOf[Archive]
   }
   
-  extension [Self <: Archive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Archive] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

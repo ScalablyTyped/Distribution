@@ -24,7 +24,8 @@ object QuaternionLinearInterpolant {
     __obj.asInstanceOf[QuaternionLinearInterpolant]
   }
   
-  extension [Self <: QuaternionLinearInterpolant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuaternionLinearInterpolant] (val x: Self) extends AnyVal {
     
     inline def setInterpolate_(value: (Double, Double, Double, Double) => Any): Self = StObject.set(x, "interpolate_", js.Any.fromFunction4(value))
   }

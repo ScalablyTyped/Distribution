@@ -15,7 +15,8 @@ object Collect {
     __obj.asInstanceOf[Collect]
   }
   
-  extension [Self <: Collect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collect] (val x: Self) extends AnyVal {
     
     inline def setCollect(value: Boolean): Self = StObject.set(x, "collect", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object StandardRolloutPolicy {
     __obj.asInstanceOf[StandardRolloutPolicy]
   }
   
-  extension [Self <: StandardRolloutPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardRolloutPolicy] (val x: Self) extends AnyVal {
     
     inline def setBatchNodeCount(value: Double): Self = StObject.set(x, "batchNodeCount", value.asInstanceOf[js.Any])
     

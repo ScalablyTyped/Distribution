@@ -90,7 +90,8 @@ object libCarouselIndexDotnativeMod {
       __obj.asInstanceOf[CarouselOffset]
     }
     
-    extension [Self <: CarouselOffset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselOffset] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object libCarouselIndexDotnativeMod {
       __obj.asInstanceOf[CarouselProps]
     }
     
-    extension [Self <: CarouselProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselProps] (val x: Self) extends AnyVal {
       
       inline def setAfterChange(value: /* index */ Double => Unit): Self = StObject.set(x, "afterChange", js.Any.fromFunction1(value))
       
@@ -222,7 +224,8 @@ object libCarouselIndexDotnativeMod {
       __obj.asInstanceOf[CarouselState]
     }
     
-    extension [Self <: CarouselState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselState] (val x: Self) extends AnyVal {
       
       inline def setAutoplayEnd(value: Boolean): Self = StObject.set(x, "autoplayEnd", value.asInstanceOf[js.Any])
       
@@ -261,7 +264,8 @@ object libCarouselIndexDotnativeMod {
       __obj.asInstanceOf[PaginationProps]
     }
     
-    extension [Self <: PaginationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

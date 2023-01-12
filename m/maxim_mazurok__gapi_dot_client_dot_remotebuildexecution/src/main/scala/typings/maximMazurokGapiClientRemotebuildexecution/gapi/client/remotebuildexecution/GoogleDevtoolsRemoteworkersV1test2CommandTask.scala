@@ -22,7 +22,8 @@ object GoogleDevtoolsRemoteworkersV1test2CommandTask {
     __obj.asInstanceOf[GoogleDevtoolsRemoteworkersV1test2CommandTask]
   }
   
-  extension [Self <: GoogleDevtoolsRemoteworkersV1test2CommandTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2CommandTask] (val x: Self) extends AnyVal {
     
     inline def setExpectedOutputs(value: GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs): Self = StObject.set(x, "expectedOutputs", value.asInstanceOf[js.Any])
     

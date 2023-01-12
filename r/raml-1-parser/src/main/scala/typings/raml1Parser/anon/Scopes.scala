@@ -37,7 +37,8 @@ object Scopes {
     __obj.asInstanceOf[Scopes]
   }
   
-  extension [Self <: Scopes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scopes] (val x: Self) extends AnyVal {
     
     inline def setAccessTokenUri(value: java.lang.String): Self = StObject.set(x, "accessTokenUri", value.asInstanceOf[js.Any])
     

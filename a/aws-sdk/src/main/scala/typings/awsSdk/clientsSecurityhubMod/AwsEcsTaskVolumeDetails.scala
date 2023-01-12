@@ -23,7 +23,8 @@ object AwsEcsTaskVolumeDetails {
     __obj.asInstanceOf[AwsEcsTaskVolumeDetails]
   }
   
-  extension [Self <: AwsEcsTaskVolumeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskVolumeDetails] (val x: Self) extends AnyVal {
     
     inline def setHost(value: AwsEcsTaskVolumeHostDetails): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     

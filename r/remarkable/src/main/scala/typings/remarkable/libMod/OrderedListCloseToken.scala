@@ -21,7 +21,8 @@ object OrderedListCloseToken {
     __obj.asInstanceOf[OrderedListCloseToken]
   }
   
-  extension [Self <: OrderedListCloseToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderedListCloseToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: ordered_list_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object UploadMetadata {
     __obj.asInstanceOf[UploadMetadata]
   }
   
-  extension [Self <: UploadMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadMetadata] (val x: Self) extends AnyVal {
     
     inline def setSignedHeaders(value: SignedHeaderMap): Self = StObject.set(x, "SignedHeaders", value.asInstanceOf[js.Any])
     

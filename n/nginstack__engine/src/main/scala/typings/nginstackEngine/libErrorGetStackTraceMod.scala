@@ -46,7 +46,8 @@ object libErrorGetStackTraceMod {
       __obj.asInstanceOf[StackTraceElement]
     }
     
-    extension [Self <: StackTraceElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackTraceElement] (val x: Self) extends AnyVal {
       
       inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
       

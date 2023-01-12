@@ -80,7 +80,8 @@ object BodyHtmlurl {
     __obj.asInstanceOf[BodyHtmlurl]
   }
   
-  extension [Self <: BodyHtmlurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyHtmlurl] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object BasicTransform {
     __obj.asInstanceOf[BasicTransform]
   }
   
-  extension [Self <: BasicTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicTransform] (val x: Self) extends AnyVal {
     
     inline def setGetInvertedMatrix(value: () => mat4): Self = StObject.set(x, "getInvertedMatrix", js.Any.fromFunction0(value))
     

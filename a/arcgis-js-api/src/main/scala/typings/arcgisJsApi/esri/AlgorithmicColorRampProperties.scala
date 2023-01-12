@@ -39,7 +39,8 @@ object AlgorithmicColorRampProperties {
     __obj.asInstanceOf[AlgorithmicColorRampProperties]
   }
   
-  extension [Self <: AlgorithmicColorRampProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlgorithmicColorRampProperties] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: `cie-lab` | `lab-lch` | hsv): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

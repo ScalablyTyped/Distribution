@@ -68,7 +68,8 @@ object NetworkResource {
     __obj.asInstanceOf[NetworkResource]
   }
   
-  extension [Self <: NetworkResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkResource] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AWSAccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

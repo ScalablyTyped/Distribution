@@ -31,7 +31,8 @@ object XFilterDetect {
     __obj.asInstanceOf[XFilterDetect]
   }
   
-  extension [Self <: XFilterDetect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFilterDetect] (val x: Self) extends AnyVal {
     
     inline def setGetContentType(value: String => String): Self = StObject.set(x, "getContentType", js.Any.fromFunction1(value))
     

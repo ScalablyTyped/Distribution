@@ -34,7 +34,8 @@ object CheckboxGridValidationBuilder {
     __obj.asInstanceOf[CheckboxGridValidationBuilder]
   }
   
-  extension [Self <: CheckboxGridValidationBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckboxGridValidationBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => CheckboxGridValidation): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

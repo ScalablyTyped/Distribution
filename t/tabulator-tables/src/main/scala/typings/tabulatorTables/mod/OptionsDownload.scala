@@ -37,7 +37,8 @@ object OptionsDownload {
     __obj.asInstanceOf[OptionsDownload]
   }
   
-  extension [Self <: OptionsDownload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsDownload] (val x: Self) extends AnyVal {
     
     inline def setDownloadComplete(value: () => Unit): Self = StObject.set(x, "downloadComplete", js.Any.fromFunction0(value))
     

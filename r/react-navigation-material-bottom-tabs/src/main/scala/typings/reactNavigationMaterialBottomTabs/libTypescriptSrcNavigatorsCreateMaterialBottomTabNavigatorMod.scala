@@ -101,7 +101,8 @@ object libTypescriptSrcNavigatorsCreateMaterialBottomTabNavigatorMod {
       __obj.asInstanceOf[NavigationViewProps]
     }
     
-    extension [Self <: NavigationViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationViewProps] (val x: Self) extends AnyVal {
       
       inline def setDescriptors(
         value: StringDictionary[
@@ -154,7 +155,8 @@ object libTypescriptSrcNavigatorsCreateMaterialBottomTabNavigatorMod {
       __obj.asInstanceOf[RenderIconProps]
     }
     
-    extension [Self <: RenderIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderIconProps] (val x: Self) extends AnyVal {
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       

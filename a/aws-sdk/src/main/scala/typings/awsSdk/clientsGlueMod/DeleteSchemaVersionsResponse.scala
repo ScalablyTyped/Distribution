@@ -18,7 +18,8 @@ object DeleteSchemaVersionsResponse {
     __obj.asInstanceOf[DeleteSchemaVersionsResponse]
   }
   
-  extension [Self <: DeleteSchemaVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSchemaVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setSchemaVersionErrors(value: SchemaVersionErrorList): Self = StObject.set(x, "SchemaVersionErrors", value.asInstanceOf[js.Any])
     

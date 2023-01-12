@@ -18,7 +18,8 @@ object ParamsTypeReturnTypeGetSamplingProfileResponse {
     __obj.asInstanceOf[ParamsTypeReturnTypeGetSamplingProfileResponse]
   }
   
-  extension [Self <: ParamsTypeReturnTypeGetSamplingProfileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParamsTypeReturnTypeGetSamplingProfileResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[Any]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

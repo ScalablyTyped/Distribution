@@ -33,7 +33,8 @@ object distTypesInterfaceMod {
       __obj.asInstanceOf[ISize]
     }
     
-    extension [Self <: ISize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object distTypesInterfaceMod {
       __obj.asInstanceOf[ISizeCalculationResult]
     }
     
-    extension [Self <: ISizeCalculationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISizeCalculationResult] (val x: Self) extends AnyVal {
       
       inline def setImages(value: js.Array[ISize]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       

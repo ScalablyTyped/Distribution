@@ -69,7 +69,8 @@ object TestCaseResultUpdateModel {
     __obj.asInstanceOf[TestCaseResultUpdateModel]
   }
   
-  extension [Self <: TestCaseResultUpdateModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestCaseResultUpdateModel] (val x: Self) extends AnyVal {
     
     inline def setAssociatedWorkItems(value: js.Array[Double]): Self = StObject.set(x, "associatedWorkItems", value.asInstanceOf[js.Any])
     

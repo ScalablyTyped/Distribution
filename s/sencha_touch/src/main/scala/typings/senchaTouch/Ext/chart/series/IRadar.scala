@@ -23,7 +23,8 @@ object IRadar {
     __obj.asInstanceOf[IRadar]
   }
   
-  extension [Self <: IRadar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRadar] (val x: Self) extends AnyVal {
     
     inline def setGetItemForPoint(value: (/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction2(value))
     

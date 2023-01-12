@@ -76,7 +76,8 @@ object PhotoImportImportItemsResult {
     __obj.asInstanceOf[PhotoImportImportItemsResult]
   }
   
-  extension [Self <: PhotoImportImportItemsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhotoImportImportItemsResult] (val x: Self) extends AnyVal {
     
     inline def setDeleteImportedItemsFromSourceAsync(
       value: () => IPromiseWithIAsyncOperationWithProgress[PhotoImportDeleteImportedItemsFromSourceResult, Double]

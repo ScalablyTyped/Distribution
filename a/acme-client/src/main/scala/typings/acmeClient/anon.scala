@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Production]
     }
     
-    extension [Self <: Production](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Production] (val x: Self) extends AnyVal {
       
       inline def setProduction(value: String): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[ProductionString]
     }
     
-    extension [Self <: ProductionString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProductionString] (val x: Self) extends AnyVal {
       
       inline def setProduction(value: String): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
     }

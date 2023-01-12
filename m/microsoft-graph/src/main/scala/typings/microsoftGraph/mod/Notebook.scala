@@ -48,7 +48,8 @@ object Notebook {
     __obj.asInstanceOf[Notebook]
   }
   
-  extension [Self <: Notebook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Notebook] (val x: Self) extends AnyVal {
     
     inline def setIsDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     

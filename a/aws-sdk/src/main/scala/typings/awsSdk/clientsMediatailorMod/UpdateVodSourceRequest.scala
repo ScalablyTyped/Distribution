@@ -32,7 +32,8 @@ object UpdateVodSourceRequest {
     __obj.asInstanceOf[UpdateVodSourceRequest]
   }
   
-  extension [Self <: UpdateVodSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVodSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setHttpPackageConfigurations(value: HttpPackageConfigurations): Self = StObject.set(x, "HttpPackageConfigurations", value.asInstanceOf[js.Any])
     

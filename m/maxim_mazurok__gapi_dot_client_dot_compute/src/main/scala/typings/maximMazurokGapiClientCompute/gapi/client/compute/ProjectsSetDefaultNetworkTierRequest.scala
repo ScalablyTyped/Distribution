@@ -16,7 +16,8 @@ object ProjectsSetDefaultNetworkTierRequest {
     __obj.asInstanceOf[ProjectsSetDefaultNetworkTierRequest]
   }
   
-  extension [Self <: ProjectsSetDefaultNetworkTierRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectsSetDefaultNetworkTierRequest] (val x: Self) extends AnyVal {
     
     inline def setNetworkTier(value: String): Self = StObject.set(x, "networkTier", value.asInstanceOf[js.Any])
     

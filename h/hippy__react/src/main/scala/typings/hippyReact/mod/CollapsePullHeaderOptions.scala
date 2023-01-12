@@ -16,7 +16,8 @@ object CollapsePullHeaderOptions {
     __obj.asInstanceOf[CollapsePullHeaderOptions]
   }
   
-  extension [Self <: CollapsePullHeaderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollapsePullHeaderOptions] (val x: Self) extends AnyVal {
     
     inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     

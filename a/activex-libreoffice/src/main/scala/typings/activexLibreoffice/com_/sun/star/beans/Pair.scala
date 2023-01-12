@@ -23,7 +23,8 @@ object Pair {
     __obj.asInstanceOf[Pair[T, U]]
   }
   
-  extension [Self <: Pair[?, ?], T, U](x: Self & (Pair[T, U])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pair[?, ?], T, U] (val x: Self & (Pair[T, U])) extends AnyVal {
     
     inline def setFirst(value: T): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
     

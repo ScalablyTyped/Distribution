@@ -29,7 +29,8 @@ object RecordMetadata {
     __obj.asInstanceOf[RecordMetadata]
   }
   
-  extension [Self <: RecordMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordMetadata] (val x: Self) extends AnyVal {
     
     inline def setBaseOffset(value: String): Self = StObject.set(x, "baseOffset", value.asInstanceOf[js.Any])
     

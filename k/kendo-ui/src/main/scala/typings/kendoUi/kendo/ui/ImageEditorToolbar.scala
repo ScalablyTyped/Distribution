@@ -27,7 +27,8 @@ object ImageEditorToolbar {
     __obj.asInstanceOf[ImageEditorToolbar]
   }
   
-  extension [Self <: ImageEditorToolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageEditorToolbar] (val x: Self) extends AnyVal {
     
     inline def setClick(value: js.Function): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     

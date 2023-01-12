@@ -35,7 +35,8 @@ object ComponentConfiguration {
     __obj.asInstanceOf[ComponentConfiguration]
   }
   
-  extension [Self <: ComponentConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAppCheckCredentials(value: CredentialsProvider[String]): Self = StObject.set(x, "appCheckCredentials", value.asInstanceOf[js.Any])
     

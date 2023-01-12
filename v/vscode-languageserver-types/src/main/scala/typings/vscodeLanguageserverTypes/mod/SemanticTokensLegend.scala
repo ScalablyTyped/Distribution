@@ -23,7 +23,8 @@ object SemanticTokensLegend {
     __obj.asInstanceOf[SemanticTokensLegend]
   }
   
-  extension [Self <: SemanticTokensLegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SemanticTokensLegend] (val x: Self) extends AnyVal {
     
     inline def setTokenModifiers(value: js.Array[String]): Self = StObject.set(x, "tokenModifiers", value.asInstanceOf[js.Any])
     

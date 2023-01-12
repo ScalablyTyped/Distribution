@@ -21,7 +21,8 @@ object SVGRootAttributes {
     __obj.asInstanceOf[SVGRootAttributes]
   }
   
-  extension [Self <: SVGRootAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGRootAttributes] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

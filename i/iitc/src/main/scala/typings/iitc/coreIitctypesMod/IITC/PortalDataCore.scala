@@ -19,7 +19,8 @@ object PortalDataCore {
     __obj.asInstanceOf[PortalDataCore]
   }
   
-  extension [Self <: PortalDataCore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalDataCore] (val x: Self) extends AnyVal {
     
     inline def setLatE6(value: Double): Self = StObject.set(x, "latE6", value.asInstanceOf[js.Any])
     

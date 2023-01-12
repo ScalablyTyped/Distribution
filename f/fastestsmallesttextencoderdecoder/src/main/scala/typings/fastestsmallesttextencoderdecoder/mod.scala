@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[DecodeOptions]
     }
     
-    extension [Self <: DecodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeOptions] (val x: Self) extends AnyVal {
       
       inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object mod {
       __obj.asInstanceOf[EncodingProgress]
     }
     
-    extension [Self <: EncodingProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingProgress] (val x: Self) extends AnyVal {
       
       inline def setRead(value: Double): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
       

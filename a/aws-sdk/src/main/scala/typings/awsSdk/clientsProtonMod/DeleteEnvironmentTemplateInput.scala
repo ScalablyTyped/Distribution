@@ -18,7 +18,8 @@ object DeleteEnvironmentTemplateInput {
     __obj.asInstanceOf[DeleteEnvironmentTemplateInput]
   }
   
-  extension [Self <: DeleteEnvironmentTemplateInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEnvironmentTemplateInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

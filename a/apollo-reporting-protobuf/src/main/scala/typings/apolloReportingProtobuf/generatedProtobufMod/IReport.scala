@@ -27,7 +27,8 @@ object IReport {
     __obj.asInstanceOf[IReport]
   }
   
-  extension [Self <: IReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IReport] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: ITimestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object AutosuggestPropsSingleSection {
     __obj.asInstanceOf[AutosuggestPropsSingleSection[TSuggestion]]
   }
   
-  extension [Self <: AutosuggestPropsSingleSection[?], TSuggestion](x: Self & AutosuggestPropsSingleSection[TSuggestion]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutosuggestPropsSingleSection[?], TSuggestion] (val x: Self & AutosuggestPropsSingleSection[TSuggestion]) extends AnyVal {
     
     inline def setMultiSection(value: `false`): Self = StObject.set(x, "multiSection", value.asInstanceOf[js.Any])
     

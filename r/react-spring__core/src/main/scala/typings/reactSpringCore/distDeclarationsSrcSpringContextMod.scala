@@ -36,7 +36,8 @@ object distDeclarationsSrcSpringContextMod {
     def Provider: typings.react.mod.Provider[SpringContext] = js.native
     inline def Provider_=(x: Provider[SpringContext]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Provider")(x.asInstanceOf[js.Any])
     
-    extension [Self <: SpringContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpringContext] (val x: Self) extends AnyVal {
       
       inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
       

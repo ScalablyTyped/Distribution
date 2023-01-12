@@ -38,7 +38,8 @@ object EndpointDetails {
     __obj.asInstanceOf[EndpointDetails]
   }
   
-  extension [Self <: EndpointDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointDetails] (val x: Self) extends AnyVal {
     
     inline def setAddressAllocationIds(value: AddressAllocationIds): Self = StObject.set(x, "AddressAllocationIds", value.asInstanceOf[js.Any])
     

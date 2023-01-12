@@ -19,7 +19,8 @@ object HealthCounts {
     __obj.asInstanceOf[HealthCounts]
   }
   
-  extension [Self <: HealthCounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HealthCounts] (val x: Self) extends AnyVal {
     
     inline def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     

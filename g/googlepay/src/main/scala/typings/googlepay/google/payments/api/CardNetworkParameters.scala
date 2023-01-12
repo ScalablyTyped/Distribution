@@ -44,7 +44,8 @@ object CardNetworkParameters {
     __obj.asInstanceOf[CardNetworkParameters]
   }
   
-  extension [Self <: CardNetworkParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardNetworkParameters] (val x: Self) extends AnyVal {
     
     inline def setAcquirerBin(value: String): Self = StObject.set(x, "acquirerBin", value.asInstanceOf[js.Any])
     

@@ -96,7 +96,8 @@ object TQuery {
     __obj.asInstanceOf[TQuery]
   }
   
-  extension [Self <: TQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TQuery] (val x: Self) extends AnyVal {
     
     inline def setCrossesNgTemplate(value: Boolean): Self = StObject.set(x, "crossesNgTemplate", value.asInstanceOf[js.Any])
     

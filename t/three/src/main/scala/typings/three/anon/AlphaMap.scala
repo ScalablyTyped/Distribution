@@ -33,7 +33,8 @@ object AlphaMap {
     __obj.asInstanceOf[AlphaMap]
   }
   
-  extension [Self <: AlphaMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlphaMap] (val x: Self) extends AnyVal {
     
     inline def setAlphaMap(value: IUniform[Any]): Self = StObject.set(x, "alphaMap", value.asInstanceOf[js.Any])
     

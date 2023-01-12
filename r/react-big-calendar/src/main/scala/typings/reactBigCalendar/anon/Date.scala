@@ -21,7 +21,8 @@ object Date {
     __obj.asInstanceOf[Date[TEvent]]
   }
   
-  extension [Self <: Date[?], TEvent /* <: js.Object */](x: Self & Date[TEvent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Date[?], TEvent /* <: js.Object */] (val x: Self & Date[TEvent]) extends AnyVal {
     
     inline def setDate(value: ComponentType[js.Object]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

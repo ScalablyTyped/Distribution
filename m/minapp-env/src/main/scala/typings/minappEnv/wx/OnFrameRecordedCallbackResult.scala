@@ -20,7 +20,8 @@ object OnFrameRecordedCallbackResult {
     __obj.asInstanceOf[OnFrameRecordedCallbackResult]
   }
   
-  extension [Self <: OnFrameRecordedCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnFrameRecordedCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setFrameBuffer(value: ArrayBuffer): Self = StObject.set(x, "frameBuffer", value.asInstanceOf[js.Any])
     

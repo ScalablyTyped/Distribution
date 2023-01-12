@@ -61,7 +61,8 @@ object PartialOmitCheckboxPropsc {
     __obj.asInstanceOf[PartialOmitCheckboxPropsc]
   }
   
-  extension [Self <: PartialOmitCheckboxPropsc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOmitCheckboxPropsc] (val x: Self) extends AnyVal {
     
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     

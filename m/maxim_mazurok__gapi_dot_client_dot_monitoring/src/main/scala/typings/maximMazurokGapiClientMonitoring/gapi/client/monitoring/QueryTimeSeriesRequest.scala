@@ -25,7 +25,8 @@ object QueryTimeSeriesRequest {
     __obj.asInstanceOf[QueryTimeSeriesRequest]
   }
   
-  extension [Self <: QueryTimeSeriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryTimeSeriesRequest] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

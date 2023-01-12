@@ -56,7 +56,8 @@ object TfvcShelvesetRequestData {
     __obj.asInstanceOf[TfvcShelvesetRequestData]
   }
   
-  extension [Self <: TfvcShelvesetRequestData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcShelvesetRequestData] (val x: Self) extends AnyVal {
     
     inline def setIncludeDetails(value: Boolean): Self = StObject.set(x, "includeDetails", value.asInstanceOf[js.Any])
     

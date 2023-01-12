@@ -36,7 +36,8 @@ object StructureWall {
     __obj.asInstanceOf[StructureWall]
   }
   
-  extension [Self <: StructureWall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureWall] (val x: Self) extends AnyVal {
     
     inline def setTicksToLive(value: Double): Self = StObject.set(x, "ticksToLive", value.asInstanceOf[js.Any])
   }

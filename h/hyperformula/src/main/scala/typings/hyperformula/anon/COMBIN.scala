@@ -56,7 +56,8 @@ object COMBIN {
     __obj.asInstanceOf[COMBIN]
   }
   
-  extension [Self <: COMBIN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: COMBIN] (val x: Self) extends AnyVal {
     
     inline def setCOMBIN(value: `23`): Self = StObject.set(x, "COMBIN", value.asInstanceOf[js.Any])
     

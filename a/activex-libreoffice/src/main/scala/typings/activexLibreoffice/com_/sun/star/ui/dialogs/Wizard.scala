@@ -57,7 +57,8 @@ object Wizard {
     __obj.asInstanceOf[Wizard]
   }
   
-  extension [Self <: Wizard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Wizard] (val x: Self) extends AnyVal {
     
     inline def setCreateMultiplePathsWizard(value: (SeqEquiv[SeqEquiv[Double]], XWizardController) => Unit): Self = StObject.set(x, "createMultiplePathsWizard", js.Any.fromFunction2(value))
     

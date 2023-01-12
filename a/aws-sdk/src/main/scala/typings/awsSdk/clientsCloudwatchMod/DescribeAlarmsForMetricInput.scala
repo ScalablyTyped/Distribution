@@ -48,7 +48,8 @@ object DescribeAlarmsForMetricInput {
     __obj.asInstanceOf[DescribeAlarmsForMetricInput]
   }
   
-  extension [Self <: DescribeAlarmsForMetricInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAlarmsForMetricInput] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

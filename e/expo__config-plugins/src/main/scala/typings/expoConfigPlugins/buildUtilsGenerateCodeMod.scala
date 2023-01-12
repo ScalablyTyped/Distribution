@@ -37,7 +37,8 @@ object buildUtilsGenerateCodeMod {
       __obj.asInstanceOf[MergeResults]
     }
     
-    extension [Self <: MergeResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeResults] (val x: Self) extends AnyVal {
       
       inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       

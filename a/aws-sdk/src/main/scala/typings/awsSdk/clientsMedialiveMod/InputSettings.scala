@@ -73,7 +73,8 @@ object InputSettings {
     __obj.asInstanceOf[InputSettings]
   }
   
-  extension [Self <: InputSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputSettings] (val x: Self) extends AnyVal {
     
     inline def setAudioSelectors(value: listOfAudioSelector): Self = StObject.set(x, "AudioSelectors", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object AuditCheckDetails {
     __obj.asInstanceOf[AuditCheckDetails]
   }
   
-  extension [Self <: AuditCheckDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditCheckDetails] (val x: Self) extends AnyVal {
     
     inline def setCheckCompliant(value: CheckCompliant): Self = StObject.set(x, "checkCompliant", value.asInstanceOf[js.Any])
     

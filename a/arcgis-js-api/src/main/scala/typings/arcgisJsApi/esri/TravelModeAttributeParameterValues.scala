@@ -34,7 +34,8 @@ object TravelModeAttributeParameterValues {
     __obj.asInstanceOf[TravelModeAttributeParameterValues]
   }
   
-  extension [Self <: TravelModeAttributeParameterValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TravelModeAttributeParameterValues] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     

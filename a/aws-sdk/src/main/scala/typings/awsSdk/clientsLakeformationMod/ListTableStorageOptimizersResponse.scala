@@ -23,7 +23,8 @@ object ListTableStorageOptimizersResponse {
     __obj.asInstanceOf[ListTableStorageOptimizersResponse]
   }
   
-  extension [Self <: ListTableStorageOptimizersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTableStorageOptimizersResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

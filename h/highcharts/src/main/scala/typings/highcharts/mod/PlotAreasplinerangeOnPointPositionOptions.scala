@@ -39,7 +39,8 @@ object PlotAreasplinerangeOnPointPositionOptions {
     __obj.asInstanceOf[PlotAreasplinerangeOnPointPositionOptions]
   }
   
-  extension [Self <: PlotAreasplinerangeOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotAreasplinerangeOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

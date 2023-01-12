@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[At]
     }
     
-    extension [Self <: At](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: At] (val x: Self) extends AnyVal {
       
       inline def setAt(value: Double): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object anon {
       __obj.asInstanceOf[WithFileTypes]
     }
     
-    extension [Self <: WithFileTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithFileTypes] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

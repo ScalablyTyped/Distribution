@@ -42,7 +42,8 @@ object BoundaryEvent {
     __obj.asInstanceOf[BoundaryEvent]
   }
   
-  extension [Self <: BoundaryEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundaryEvent] (val x: Self) extends AnyVal {
     
     inline def setAttachedToRef(value: Activity): Self = StObject.set(x, "attachedToRef", value.asInstanceOf[js.Any])
     

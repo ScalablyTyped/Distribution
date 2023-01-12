@@ -20,7 +20,8 @@ object ChartMediaInfo {
     __obj.asInstanceOf[ChartMediaInfo]
   }
   
-  extension [Self <: ChartMediaInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartMediaInfo] (val x: Self) extends AnyVal {
     
     inline def setValue(value: ChartMediaInfoValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

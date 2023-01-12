@@ -16,7 +16,8 @@ object LetterSpacingProps {
     __obj.asInstanceOf[LetterSpacingProps[TLength]]
   }
   
-  extension [Self <: LetterSpacingProps[?], TLength](x: Self & LetterSpacingProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LetterSpacingProps[?], TLength] (val x: Self & LetterSpacingProps[TLength]) extends AnyVal {
     
     inline def setLetterSpacing(value: ResponsiveValue[LetterSpacing[TLength]]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     

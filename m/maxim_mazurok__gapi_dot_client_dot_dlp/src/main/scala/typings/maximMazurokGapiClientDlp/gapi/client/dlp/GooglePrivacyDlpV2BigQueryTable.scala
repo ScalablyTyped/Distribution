@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2BigQueryTable {
     __obj.asInstanceOf[GooglePrivacyDlpV2BigQueryTable]
   }
   
-  extension [Self <: GooglePrivacyDlpV2BigQueryTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2BigQueryTable] (val x: Self) extends AnyVal {
     
     inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     

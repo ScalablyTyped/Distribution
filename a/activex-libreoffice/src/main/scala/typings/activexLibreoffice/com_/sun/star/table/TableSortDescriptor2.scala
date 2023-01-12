@@ -38,7 +38,8 @@ object TableSortDescriptor2 {
     __obj.asInstanceOf[TableSortDescriptor2]
   }
   
-  extension [Self <: TableSortDescriptor2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableSortDescriptor2] (val x: Self) extends AnyVal {
     
     inline def setIsSortColumns(value: Boolean): Self = StObject.set(x, "IsSortColumns", value.asInstanceOf[js.Any])
     

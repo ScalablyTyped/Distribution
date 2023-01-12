@@ -34,7 +34,8 @@ object TemplateOverridesOptions {
     __obj.asInstanceOf[TemplateOverridesOptions]
   }
   
-  extension [Self <: TemplateOverridesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateOverridesOptions] (val x: Self) extends AnyVal {
     
     inline def setBaseViewID(value: Double | String): Self = StObject.set(x, "BaseViewID", value.asInstanceOf[js.Any])
     

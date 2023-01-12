@@ -20,7 +20,8 @@ object NavigationAnnotationsAnimationOptions {
     __obj.asInstanceOf[NavigationAnnotationsAnimationOptions]
   }
   
-  extension [Self <: NavigationAnnotationsAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationAnnotationsAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     

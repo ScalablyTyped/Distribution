@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[Cover]
     }
     
-    extension [Self <: Cover](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cover] (val x: Self) extends AnyVal {
       
       inline def setCover(value: height | width): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Render]
     }
     
-    extension [Self <: Render](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Render] (val x: Self) extends AnyVal {
       
       inline def setRender(value: () => js.Promise[String]): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     }

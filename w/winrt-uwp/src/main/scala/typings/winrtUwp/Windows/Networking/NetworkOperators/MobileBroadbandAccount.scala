@@ -44,7 +44,8 @@ object MobileBroadbandAccount {
     __obj.asInstanceOf[MobileBroadbandAccount]
   }
   
-  extension [Self <: MobileBroadbandAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandAccount] (val x: Self) extends AnyVal {
     
     inline def setCurrentDeviceInformation(value: MobileBroadbandDeviceInformation): Self = StObject.set(x, "currentDeviceInformation", value.asInstanceOf[js.Any])
     

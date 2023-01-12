@@ -22,7 +22,8 @@ object HomogenMatrixLine4 {
     __obj.asInstanceOf[HomogenMatrixLine4]
   }
   
-  extension [Self <: HomogenMatrixLine4](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HomogenMatrixLine4] (val x: Self) extends AnyVal {
     
     inline def setColumn1(value: Double): Self = StObject.set(x, "Column1", value.asInstanceOf[js.Any])
     

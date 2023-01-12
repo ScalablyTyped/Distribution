@@ -38,7 +38,8 @@ object XInsertListener {
     __obj.asInstanceOf[XInsertListener]
   }
   
-  extension [Self <: XInsertListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInsertListener] (val x: Self) extends AnyVal {
     
     inline def setInserted(value: EventObject => Unit): Self = StObject.set(x, "inserted", js.Any.fromFunction1(value))
     

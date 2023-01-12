@@ -15,7 +15,8 @@ object Cancreaterepository {
     __obj.asInstanceOf[Cancreaterepository]
   }
   
-  extension [Self <: Cancreaterepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cancreaterepository] (val x: Self) extends AnyVal {
     
     inline def setCan_create_repository(value: Boolean): Self = StObject.set(x, "can_create_repository", value.asInstanceOf[js.Any])
   }

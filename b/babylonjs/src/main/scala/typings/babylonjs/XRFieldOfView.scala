@@ -21,7 +21,8 @@ object XRFieldOfView {
     __obj.asInstanceOf[XRFieldOfView]
   }
   
-  extension [Self <: XRFieldOfView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRFieldOfView] (val x: Self) extends AnyVal {
     
     inline def setAngleDown(value: Double): Self = StObject.set(x, "angleDown", value.asInstanceOf[js.Any])
     

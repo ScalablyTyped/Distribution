@@ -23,7 +23,8 @@ object UiTemplateInfo {
     __obj.asInstanceOf[UiTemplateInfo]
   }
   
-  extension [Self <: UiTemplateInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UiTemplateInfo] (val x: Self) extends AnyVal {
     
     inline def setContentSha256(value: TemplateContentSha256): Self = StObject.set(x, "ContentSha256", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object CustomPageSize {
     __obj.asInstanceOf[CustomPageSize]
   }
   
-  extension [Self <: CustomPageSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPageSize] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double | auto): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

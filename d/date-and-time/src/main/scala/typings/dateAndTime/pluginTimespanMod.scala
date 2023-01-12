@@ -46,7 +46,8 @@ object pluginTimespanMod {
         __obj.asInstanceOf[TimeSpanResult]
       }
       
-      extension [Self <: TimeSpanResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TimeSpanResult] (val x: Self) extends AnyVal {
         
         inline def setToDays(value: String => String): Self = StObject.set(x, "toDays", js.Any.fromFunction1(value))
         

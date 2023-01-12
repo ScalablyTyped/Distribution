@@ -159,7 +159,8 @@ object mod {
     @js.native
     val ^ : Shell = js.native
     
-    extension [Self <: Shell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shell] (val x: Self) extends AnyVal {
       
       inline def setOpenExternal(value: String => Unit): Self = StObject.set(x, "openExternal", js.Any.fromFunction1(value))
       
@@ -344,7 +345,8 @@ object mod {
       __obj.asInstanceOf[HideMenusOptions]
     }
     
-    extension [Self <: HideMenusOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HideMenusOptions] (val x: Self) extends AnyVal {
       
       inline def setHideEdit(value: Boolean): Self = StObject.set(x, "hideEdit", value.asInstanceOf[js.Any])
       
@@ -384,7 +386,8 @@ object mod {
       __obj.asInstanceOf[MenuConfig]
     }
     
-    extension [Self <: MenuConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuConfig] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -421,7 +424,8 @@ object mod {
       __obj.asInstanceOf[MenuItemConfig]
     }
     
-    extension [Self <: MenuItemConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemConfig] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -480,7 +484,8 @@ object mod {
       __obj.asInstanceOf[ShortcutOption]
     }
     
-    extension [Self <: ShortcutOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShortcutOption] (val x: Self) extends AnyVal {
       
       inline def setActive(value: js.Function): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -509,7 +514,8 @@ object mod {
       __obj.asInstanceOf[TrayOption]
     }
     
-    extension [Self <: TrayOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrayOption] (val x: Self) extends AnyVal {
       
       inline def setAlticon(value: String): Self = StObject.set(x, "alticon", value.asInstanceOf[js.Any])
       
@@ -564,7 +570,8 @@ object mod {
       __obj.asInstanceOf[WindowManifestOptions]
     }
     
-    extension [Self <: WindowManifestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowManifestOptions] (val x: Self) extends AnyVal {
       
       inline def setFrame(value: Boolean): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       

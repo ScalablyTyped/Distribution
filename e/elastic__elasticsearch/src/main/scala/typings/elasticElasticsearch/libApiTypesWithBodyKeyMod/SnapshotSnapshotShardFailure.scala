@@ -23,7 +23,8 @@ object SnapshotSnapshotShardFailure {
     __obj.asInstanceOf[SnapshotSnapshotShardFailure]
   }
   
-  extension [Self <: SnapshotSnapshotShardFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotSnapshotShardFailure] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: IndexName): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

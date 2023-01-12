@@ -30,7 +30,8 @@ object DataProvider {
     __obj.asInstanceOf[DataProvider[T]]
   }
   
-  extension [Self <: DataProvider[?], T /* <: SlickData */](x: Self & DataProvider[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProvider[?], T /* <: SlickData */] (val x: Self & DataProvider[T]) extends AnyVal {
     
     inline def setGetItem(value: Double => T): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     

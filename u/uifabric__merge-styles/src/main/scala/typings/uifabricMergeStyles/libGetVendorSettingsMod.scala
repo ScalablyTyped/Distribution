@@ -32,7 +32,8 @@ object libGetVendorSettingsMod {
       __obj.asInstanceOf[IVendorSettings]
     }
     
-    extension [Self <: IVendorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVendorSettings] (val x: Self) extends AnyVal {
       
       inline def setIsMoz(value: Boolean): Self = StObject.set(x, "isMoz", value.asInstanceOf[js.Any])
       

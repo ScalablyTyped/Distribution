@@ -17,7 +17,8 @@ object StandardLines {
     __obj.asInstanceOf[StandardLines]
   }
   
-  extension [Self <: StandardLines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardLines] (val x: Self) extends AnyVal {
     
     inline def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     

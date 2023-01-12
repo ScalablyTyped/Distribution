@@ -53,7 +53,8 @@ object ImageProps {
     __obj.asInstanceOf[ImageProps]
   }
   
-  extension [Self <: ImageProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
     
     inline def setCameraSwitcher(value: Boolean): Self = StObject.set(x, "cameraSwitcher", value.asInstanceOf[js.Any])
     

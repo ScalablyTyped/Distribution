@@ -18,7 +18,8 @@ object AddRuleResponse {
     __obj.asInstanceOf[AddRuleResponse]
   }
   
-  extension [Self <: AddRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setRule(value: CSSRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
   }

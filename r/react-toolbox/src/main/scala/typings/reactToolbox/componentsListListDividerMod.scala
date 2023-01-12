@@ -41,7 +41,8 @@ object componentsListListDividerMod {
       __obj.asInstanceOf[ListDividerProps]
     }
     
-    extension [Self <: ListDividerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListDividerProps] (val x: Self) extends AnyVal {
       
       inline def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object componentsListListDividerMod {
       __obj.asInstanceOf[ListDividerTheme]
     }
     
-    extension [Self <: ListDividerTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListDividerTheme] (val x: Self) extends AnyVal {
       
       inline def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       

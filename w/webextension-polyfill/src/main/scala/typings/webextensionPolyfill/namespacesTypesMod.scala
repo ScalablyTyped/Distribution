@@ -78,7 +78,8 @@ object namespacesTypesMod {
         __obj.asInstanceOf[Setting]
       }
       
-      extension [Self <: Setting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Setting] (val x: Self) extends AnyVal {
         
         inline def setClear(value: SettingClearDetailsType => js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
         
@@ -108,7 +109,8 @@ object namespacesTypesMod {
         __obj.asInstanceOf[SettingClearDetailsType]
       }
       
-      extension [Self <: SettingClearDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SettingClearDetailsType] (val x: Self) extends AnyVal {
         
         inline def setScope(value: SettingScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
         
@@ -145,7 +147,8 @@ object namespacesTypesMod {
         __obj.asInstanceOf[SettingGetCallbackDetailsType]
       }
       
-      extension [Self <: SettingGetCallbackDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SettingGetCallbackDetailsType] (val x: Self) extends AnyVal {
         
         inline def setIncognitoSpecific(value: Boolean): Self = StObject.set(x, "incognitoSpecific", value.asInstanceOf[js.Any])
         
@@ -175,7 +178,8 @@ object namespacesTypesMod {
         __obj.asInstanceOf[SettingGetDetailsType]
       }
       
-      extension [Self <: SettingGetDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SettingGetDetailsType] (val x: Self) extends AnyVal {
         
         inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
         
@@ -209,7 +213,8 @@ object namespacesTypesMod {
         __obj.asInstanceOf[SettingOnChangeDetailsType]
       }
       
-      extension [Self <: SettingOnChangeDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SettingOnChangeDetailsType] (val x: Self) extends AnyVal {
         
         inline def setIncognitoSpecific(value: Boolean): Self = StObject.set(x, "incognitoSpecific", value.asInstanceOf[js.Any])
         
@@ -272,7 +277,8 @@ object namespacesTypesMod {
         __obj.asInstanceOf[SettingSetDetailsType]
       }
       
-      extension [Self <: SettingSetDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SettingSetDetailsType] (val x: Self) extends AnyVal {
         
         inline def setScope(value: SettingScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
         

@@ -29,7 +29,8 @@ object AuthCredentials {
     __obj.asInstanceOf[AuthCredentials[AuthUser, AuthApp]]
   }
   
-  extension [Self <: AuthCredentials[?, ?], AuthUser /* <: js.Object */, AuthApp /* <: js.Object */](x: Self & (AuthCredentials[AuthUser, AuthApp])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthCredentials[?, ?], AuthUser /* <: js.Object */, AuthApp /* <: js.Object */] (val x: Self & (AuthCredentials[AuthUser, AuthApp])) extends AnyVal {
     
     inline def setApp(value: MergeType[AppCredentials, AuthApp]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

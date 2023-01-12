@@ -28,7 +28,8 @@ object DeprovisionPublicIpv4PoolCidrRequest {
     __obj.asInstanceOf[DeprovisionPublicIpv4PoolCidrRequest]
   }
   
-  extension [Self <: DeprovisionPublicIpv4PoolCidrRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprovisionPublicIpv4PoolCidrRequest] (val x: Self) extends AnyVal {
     
     inline def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     

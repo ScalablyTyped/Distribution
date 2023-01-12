@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsRichTextMod extends Shortcut {
       __obj.asInstanceOf[RichTextProps]
     }
     
-    extension [Self <: RichTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RichTextProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

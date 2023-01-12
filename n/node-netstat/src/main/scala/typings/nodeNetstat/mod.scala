@@ -95,7 +95,8 @@ object mod {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object mod {
       __obj.asInstanceOf[AsyncResult]
     }
     
-    extension [Self <: AsyncResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncResult] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }
@@ -137,7 +139,8 @@ object mod {
       __obj.asInstanceOf[Command]
     }
     
-    extension [Self <: Command](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -163,7 +166,8 @@ object mod {
       __obj.asInstanceOf[Commands_]
     }
     
-    extension [Self <: Commands_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Commands_] (val x: Self) extends AnyVal {
       
       inline def setDarwin(value: Command): Self = StObject.set(x, "darwin", value.asInstanceOf[js.Any])
       
@@ -195,7 +199,8 @@ object mod {
       __obj.asInstanceOf[Filter]
     }
     
-    extension [Self <: Filter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
       
       inline def setLocal(value: RecursivePartialAddress): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
@@ -246,7 +251,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDone(value: /* error */ js.UndefOr[String] => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
       
@@ -295,7 +301,8 @@ object mod {
       __obj.asInstanceOf[ParsedItem]
     }
     
-    extension [Self <: ParsedItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedItem] (val x: Self) extends AnyVal {
       
       inline def setLocal(value: Address): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
@@ -328,7 +335,8 @@ object mod {
       __obj.asInstanceOf[ParserFactoryOptions]
     }
     
-    extension [Self <: ParserFactoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserFactoryOptions] (val x: Self) extends AnyVal {
       
       inline def setParseName(value: Boolean): Self = StObject.set(x, "parseName", value.asInstanceOf[js.Any])
       
@@ -372,7 +380,8 @@ object mod {
       __obj.asInstanceOf[RawItem]
     }
     
-    extension [Self <: RawItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawItem] (val x: Self) extends AnyVal {
       
       inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       

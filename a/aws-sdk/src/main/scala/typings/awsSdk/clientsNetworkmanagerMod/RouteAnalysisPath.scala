@@ -23,7 +23,8 @@ object RouteAnalysisPath {
     __obj.asInstanceOf[RouteAnalysisPath]
   }
   
-  extension [Self <: RouteAnalysisPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteAnalysisPath] (val x: Self) extends AnyVal {
     
     inline def setCompletionStatus(value: RouteAnalysisCompletion): Self = StObject.set(x, "CompletionStatus", value.asInstanceOf[js.Any])
     

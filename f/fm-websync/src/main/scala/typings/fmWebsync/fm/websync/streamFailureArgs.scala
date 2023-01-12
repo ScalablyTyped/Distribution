@@ -32,7 +32,8 @@ object streamFailureArgs {
     __obj.asInstanceOf[streamFailureArgs]
   }
   
-  extension [Self <: streamFailureArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: streamFailureArgs] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

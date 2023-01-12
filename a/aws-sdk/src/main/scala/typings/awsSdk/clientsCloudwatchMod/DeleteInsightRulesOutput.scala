@@ -18,7 +18,8 @@ object DeleteInsightRulesOutput {
     __obj.asInstanceOf[DeleteInsightRulesOutput]
   }
   
-  extension [Self <: DeleteInsightRulesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteInsightRulesOutput] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: BatchFailures): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object `1` {
     __obj.asInstanceOf[`1`]
   }
   
-  extension [Self <: `1`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
     
     inline def setDatasets(value: LineControllerDatasetOptions & FillerControllerDatasetOptions): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
   }

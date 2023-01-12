@@ -22,7 +22,8 @@ object InteractionPartial {
     __obj.asInstanceOf[InteractionPartial]
   }
   
-  extension [Self <: InteractionPartial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractionPartial] (val x: Self) extends AnyVal {
     
     inline def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

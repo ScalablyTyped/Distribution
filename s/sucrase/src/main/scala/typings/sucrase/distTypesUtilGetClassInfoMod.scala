@@ -32,7 +32,8 @@ object distTypesUtilGetClassInfoMod {
       __obj.asInstanceOf[ClassHeaderInfo]
     }
     
-    extension [Self <: ClassHeaderInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassHeaderInfo] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object distTypesUtilGetClassInfoMod {
       __obj.asInstanceOf[ClassInfo]
     }
     
-    extension [Self <: ClassInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassInfo] (val x: Self) extends AnyVal {
       
       inline def setConstructorInitializerStatements(value: js.Array[String]): Self = StObject.set(x, "constructorInitializerStatements", value.asInstanceOf[js.Any])
       
@@ -119,7 +121,8 @@ object distTypesUtilGetClassInfoMod {
       __obj.asInstanceOf[FieldInfo]
     }
     
-    extension [Self <: FieldInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldInfo] (val x: Self) extends AnyVal {
       
       inline def setEqualsIndex(value: Double): Self = StObject.set(x, "equalsIndex", value.asInstanceOf[js.Any])
       
@@ -140,7 +143,8 @@ object distTypesUtilGetClassInfoMod {
       __obj.asInstanceOf[TokenRange]
     }
     
-    extension [Self <: TokenRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenRange] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

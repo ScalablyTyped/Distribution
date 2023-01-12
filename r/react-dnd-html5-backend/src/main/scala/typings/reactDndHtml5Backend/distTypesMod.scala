@@ -24,7 +24,8 @@ object distTypesMod {
       __obj.asInstanceOf[HTML5BackendOptions]
     }
     
-    extension [Self <: HTML5BackendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTML5BackendOptions] (val x: Self) extends AnyVal {
       
       inline def setRootElement(value: Node): Self = StObject.set(x, "rootElement", value.asInstanceOf[js.Any])
     }

@@ -15,7 +15,8 @@ object SkipRender {
     __obj.asInstanceOf[SkipRender]
   }
   
-  extension [Self <: SkipRender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkipRender] (val x: Self) extends AnyVal {
     
     inline def setSkipRender(value: Boolean): Self = StObject.set(x, "skipRender", value.asInstanceOf[js.Any])
     

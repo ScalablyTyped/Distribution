@@ -37,7 +37,8 @@ object leafletMod {
       __obj.asInstanceOf[ResponsivePopupOptions]
     }
     
-    extension [Self <: ResponsivePopupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsivePopupOptions] (val x: Self) extends AnyVal {
       
       inline def setHasTip(value: Boolean): Self = StObject.set(x, "hasTip", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object RevocationDetails {
     __obj.asInstanceOf[RevocationDetails]
   }
   
-  extension [Self <: RevocationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevocationDetails] (val x: Self) extends AnyVal {
     
     inline def setRevocationState(value: String): Self = StObject.set(x, "revocationState", value.asInstanceOf[js.Any])
     

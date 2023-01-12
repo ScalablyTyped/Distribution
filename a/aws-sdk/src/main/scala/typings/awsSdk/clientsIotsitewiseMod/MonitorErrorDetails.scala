@@ -23,7 +23,8 @@ object MonitorErrorDetails {
     __obj.asInstanceOf[MonitorErrorDetails]
   }
   
-  extension [Self <: MonitorErrorDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitorErrorDetails] (val x: Self) extends AnyVal {
     
     inline def setCode(value: MonitorErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

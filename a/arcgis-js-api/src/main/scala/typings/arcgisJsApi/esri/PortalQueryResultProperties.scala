@@ -41,7 +41,8 @@ object PortalQueryResultProperties {
     __obj.asInstanceOf[PortalQueryResultProperties]
   }
   
-  extension [Self <: PortalQueryResultProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalQueryResultProperties] (val x: Self) extends AnyVal {
     
     inline def setNextQueryParams(value: PortalQueryParamsProperties): Self = StObject.set(x, "nextQueryParams", value.asInstanceOf[js.Any])
     

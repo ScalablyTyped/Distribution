@@ -50,7 +50,8 @@ object RegionsMixin {
     __obj.asInstanceOf[RegionsMixin]
   }
   
-  extension [Self <: RegionsMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionsMixin] (val x: Self) extends AnyVal {
     
     inline def setAddRegion(value: Any): Self = StObject.set(x, "addRegion", value.asInstanceOf[js.Any])
     

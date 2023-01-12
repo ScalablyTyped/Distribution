@@ -23,7 +23,8 @@ object CreateCliTokenResponse {
     __obj.asInstanceOf[CreateCliTokenResponse]
   }
   
-  extension [Self <: CreateCliTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCliTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setCliToken(value: Token): Self = StObject.set(x, "CliToken", value.asInstanceOf[js.Any])
     

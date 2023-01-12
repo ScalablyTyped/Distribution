@@ -2295,7 +2295,8 @@ object VendorLonghandProperties {
     __obj.asInstanceOf[VendorLonghandProperties[TLength, TTime]]
   }
   
-  extension [Self <: VendorLonghandProperties[?, ?], TLength, TTime](x: Self & (VendorLonghandProperties[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VendorLonghandProperties[?, ?], TLength, TTime] (val x: Self & (VendorLonghandProperties[TLength, TTime])) extends AnyVal {
     
     inline def setMozAnimationDelay(value: AnimationDelay[TTime]): Self = StObject.set(x, "MozAnimationDelay", value.asInstanceOf[js.Any])
     

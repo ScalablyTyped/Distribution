@@ -22,7 +22,8 @@ object PartialServerStatusRespon {
     __obj.asInstanceOf[PartialServerStatusRespon]
   }
   
-  extension [Self <: PartialServerStatusRespon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialServerStatusRespon] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

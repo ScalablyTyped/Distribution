@@ -15,7 +15,8 @@ object TransformSyncContainer {
     __obj.asInstanceOf[TransformSyncContainer]
   }
   
-  extension [Self <: TransformSyncContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformSyncContainer] (val x: Self) extends AnyVal {
     
     inline def setTime(value: TransformTimeSync): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     

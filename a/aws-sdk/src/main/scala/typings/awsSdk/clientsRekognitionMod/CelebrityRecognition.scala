@@ -23,7 +23,8 @@ object CelebrityRecognition {
     __obj.asInstanceOf[CelebrityRecognition]
   }
   
-  extension [Self <: CelebrityRecognition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CelebrityRecognition] (val x: Self) extends AnyVal {
     
     inline def setCelebrity(value: CelebrityDetail): Self = StObject.set(x, "Celebrity", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object EnergyDerListResponse {
     __obj.asInstanceOf[EnergyDerListResponse]
   }
   
-  extension [Self <: EnergyDerListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnergyDerListResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: DerRecords): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

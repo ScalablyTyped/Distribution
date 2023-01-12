@@ -73,7 +73,8 @@ object DescribeQuerySuggestionsBlockListResponse {
     __obj.asInstanceOf[DescribeQuerySuggestionsBlockListResponse]
   }
   
-  extension [Self <: DescribeQuerySuggestionsBlockListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeQuerySuggestionsBlockListResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

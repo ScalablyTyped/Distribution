@@ -21,7 +21,8 @@ object LocalMinima {
     __obj.asInstanceOf[LocalMinima]
   }
   
-  extension [Self <: LocalMinima](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalMinima] (val x: Self) extends AnyVal {
     
     inline def setLeftBound(value: TEdge): Self = StObject.set(x, "leftBound", value.asInstanceOf[js.Any])
     

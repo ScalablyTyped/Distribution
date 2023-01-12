@@ -23,7 +23,8 @@ object UpdateRulesOfIpGroupRequest {
     __obj.asInstanceOf[UpdateRulesOfIpGroupRequest]
   }
   
-  extension [Self <: UpdateRulesOfIpGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRulesOfIpGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: IpGroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     

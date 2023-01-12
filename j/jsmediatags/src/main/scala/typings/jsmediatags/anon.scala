@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[AvoidHeadRequests]
     }
     
-    extension [Self <: AvoidHeadRequests](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvoidHeadRequests] (val x: Self) extends AnyVal {
       
       inline def setAvoidHeadRequests(value: Boolean): Self = StObject.set(x, "avoidHeadRequests", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[CRC]
     }
     
-    extension [Self <: CRC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CRC] (val x: Self) extends AnyVal {
       
       inline def setCRC(value: Double): Self = StObject.set(x, "CRC", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Compression]
     }
     
-    extension [Self <: Compression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compression] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
@@ -116,7 +119,8 @@ object anon {
       __obj.asInstanceOf[EndIx]
     }
     
-    extension [Self <: EndIx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndIx] (val x: Self) extends AnyVal {
       
       inline def setEndIx(value: Double): Self = StObject.set(x, "endIx", value.asInstanceOf[js.Any])
       
@@ -143,7 +147,8 @@ object anon {
       __obj.asInstanceOf[Filealterpreservation]
     }
     
-    extension [Self <: Filealterpreservation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filealterpreservation] (val x: Self) extends AnyVal {
       
       inline def setFile_alter_preservation(value: Boolean): Self = StObject.set(x, "file_alter_preservation", value.asInstanceOf[js.Any])
       

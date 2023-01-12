@@ -27,7 +27,8 @@ object PractitionerRoleNotAvailable {
     __obj.asInstanceOf[PractitionerRoleNotAvailable]
   }
   
-  extension [Self <: PractitionerRoleNotAvailable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PractitionerRoleNotAvailable] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

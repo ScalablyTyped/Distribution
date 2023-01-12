@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[LrcData]
     }
     
-    extension [Self <: LrcData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LrcData] (val x: Self) extends AnyVal {
       
       inline def setScripts(value: js.Array[ScriptItem]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object mod {
       __obj.asInstanceOf[ScriptItem]
     }
     
-    extension [Self <: ScriptItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptItem] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

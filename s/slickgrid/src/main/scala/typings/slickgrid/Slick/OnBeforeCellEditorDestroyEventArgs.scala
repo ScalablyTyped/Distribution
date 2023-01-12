@@ -18,7 +18,8 @@ object OnBeforeCellEditorDestroyEventArgs {
     __obj.asInstanceOf[OnBeforeCellEditorDestroyEventArgs[T]]
   }
   
-  extension [Self <: OnBeforeCellEditorDestroyEventArgs[?], T /* <: SlickData */](x: Self & OnBeforeCellEditorDestroyEventArgs[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBeforeCellEditorDestroyEventArgs[?], T /* <: SlickData */] (val x: Self & OnBeforeCellEditorDestroyEventArgs[T]) extends AnyVal {
     
     inline def setEditor(value: Editor[T]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
   }

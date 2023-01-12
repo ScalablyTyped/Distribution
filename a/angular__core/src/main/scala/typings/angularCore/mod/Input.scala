@@ -17,7 +17,8 @@ object Input {
   @js.native
   val ^ : InputDecorator = js.native
   
-  extension [Self <: Input](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
     
     inline def setBindingPropertyName(value: String): Self = StObject.set(x, "bindingPropertyName", value.asInstanceOf[js.Any])
     

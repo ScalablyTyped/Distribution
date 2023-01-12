@@ -23,7 +23,8 @@ object ClientVpnEndpointStatus {
     __obj.asInstanceOf[ClientVpnEndpointStatus]
   }
   
-  extension [Self <: ClientVpnEndpointStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientVpnEndpointStatus] (val x: Self) extends AnyVal {
     
     inline def setCode(value: ClientVpnEndpointStatusCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object AppsDynamiteConsentedAppUnfurlMetadata {
     __obj.asInstanceOf[AppsDynamiteConsentedAppUnfurlMetadata]
   }
   
-  extension [Self <: AppsDynamiteConsentedAppUnfurlMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteConsentedAppUnfurlMetadata] (val x: Self) extends AnyVal {
     
     inline def setClientSpecifiedAppId(value: AppsDynamiteUserId): Self = StObject.set(x, "clientSpecifiedAppId", value.asInstanceOf[js.Any])
     

@@ -260,7 +260,8 @@ object Tile {
       __obj.asInstanceOf[Badge]
     }
     
-    extension [Self <: Badge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Badge] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -322,7 +323,8 @@ object Tile {
       __obj.asInstanceOf[Caption]
     }
     
-    extension [Self <: Caption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Caption] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: CaptionAlignment | String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -390,7 +392,8 @@ object Tile {
       __obj.asInstanceOf[LiveTile]
     }
     
-    extension [Self <: LiveTile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiveTile] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -523,7 +526,8 @@ object Tile {
       __obj.asInstanceOf[typings.ejWebAll.ej.Tile.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Tile.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Tile.Model] (val x: Self) extends AnyVal {
       
       inline def setAllowSelection(value: Boolean): Self = StObject.set(x, "allowSelection", value.asInstanceOf[js.Any])
       
@@ -628,7 +632,8 @@ object Tile {
       __obj.asInstanceOf[MouseDownEventArgs]
     }
     
-    extension [Self <: MouseDownEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseDownEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -681,7 +686,8 @@ object Tile {
       __obj.asInstanceOf[MouseUpEventArgs]
     }
     
-    extension [Self <: MouseUpEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseUpEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object TemplateSSMDocumentDetails {
     __obj.asInstanceOf[TemplateSSMDocumentDetails]
   }
   
-  extension [Self <: TemplateSSMDocumentDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateSSMDocumentDetails] (val x: Self) extends AnyVal {
     
     inline def setDocumentName(value: SSMDocumentName): Self = StObject.set(x, "DocumentName", value.asInstanceOf[js.Any])
     

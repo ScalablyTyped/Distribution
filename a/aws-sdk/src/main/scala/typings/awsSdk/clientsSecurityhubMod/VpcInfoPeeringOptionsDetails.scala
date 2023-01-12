@@ -28,7 +28,8 @@ object VpcInfoPeeringOptionsDetails {
     __obj.asInstanceOf[VpcInfoPeeringOptionsDetails]
   }
   
-  extension [Self <: VpcInfoPeeringOptionsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcInfoPeeringOptionsDetails] (val x: Self) extends AnyVal {
     
     inline def setAllowDnsResolutionFromRemoteVpc(value: Boolean): Self = StObject.set(x, "AllowDnsResolutionFromRemoteVpc", value.asInstanceOf[js.Any])
     

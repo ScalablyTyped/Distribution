@@ -19,7 +19,8 @@ object Desktop {
     __obj.asInstanceOf[Desktop]
   }
   
-  extension [Self <: Desktop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Desktop] (val x: Self) extends AnyVal {
     
     inline def setDesktop(value: horizontal | vertical): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
     

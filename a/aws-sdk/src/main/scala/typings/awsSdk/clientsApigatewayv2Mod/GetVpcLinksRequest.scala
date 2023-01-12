@@ -23,7 +23,8 @@ object GetVpcLinksRequest {
     __obj.asInstanceOf[GetVpcLinksRequest]
   }
   
-  extension [Self <: GetVpcLinksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVpcLinksRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -95,7 +95,8 @@ object Arm64Relocator {
     __obj.asInstanceOf[Arm64Relocator]
   }
   
-  extension [Self <: Arm64Relocator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arm64Relocator] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object ListAvailableResourceDimensionsResponse {
     __obj.asInstanceOf[ListAvailableResourceDimensionsResponse]
   }
   
-  extension [Self <: ListAvailableResourceDimensionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAvailableResourceDimensionsResponse] (val x: Self) extends AnyVal {
     
     inline def setMetricDimensions(value: MetricDimensionsList): Self = StObject.set(x, "MetricDimensions", value.asInstanceOf[js.Any])
     

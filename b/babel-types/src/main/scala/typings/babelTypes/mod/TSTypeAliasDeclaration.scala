@@ -33,7 +33,8 @@ object TSTypeAliasDeclaration {
   @js.native
   def apply(id: Identifier_, typeParameters: TypeParameterDeclaration_, typeAnnotation: TSType): TSTypeAliasDeclaration = js.native
   
-  extension [Self <: TSTypeAliasDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTypeAliasDeclaration] (val x: Self) extends AnyVal {
     
     inline def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
     

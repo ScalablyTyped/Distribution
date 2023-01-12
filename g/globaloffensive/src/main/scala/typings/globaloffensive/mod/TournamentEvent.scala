@@ -41,7 +41,8 @@ object TournamentEvent {
     __obj.asInstanceOf[TournamentEvent]
   }
   
-  extension [Self <: TournamentEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TournamentEvent] (val x: Self) extends AnyVal {
     
     inline def setActive_section_id(value: Double): Self = StObject.set(x, "active_section_id", value.asInstanceOf[js.Any])
     

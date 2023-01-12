@@ -67,7 +67,8 @@ object quat {
     __obj.asInstanceOf[quat]
   }
   
-  extension [Self <: quat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: quat] (val x: Self) extends AnyVal {
     
     inline def setDot(value: quat => Double): Self = StObject.set(x, "dot", js.Any.fromFunction1(value))
     

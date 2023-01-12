@@ -492,7 +492,8 @@ object PartialIContextualMenuIte {
     __obj.asInstanceOf[PartialIContextualMenuIte]
   }
   
-  extension [Self <: PartialIContextualMenuIte](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIContextualMenuIte] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object Operation {
     __obj.asInstanceOf[Operation]
   }
   
-  extension [Self <: Operation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: success | failed | `in-progress`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

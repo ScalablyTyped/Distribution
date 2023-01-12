@@ -327,7 +327,8 @@ object buildTypesSeqStreamMod {
       __obj.asInstanceOf[SeqStreamBaseParameters]
     }
     
-    extension [Self <: SeqStreamBaseParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeqStreamBaseParameters] (val x: Self) extends AnyVal {
       
       inline def setAppendBlock(value: Double): Self = StObject.set(x, "appendBlock", value.asInstanceOf[js.Any])
       
@@ -357,7 +358,8 @@ object buildTypesSeqStreamMod {
       __obj.asInstanceOf[SeqStreamBufferParameters]
     }
     
-    extension [Self <: SeqStreamBufferParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeqStreamBufferParameters] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     }
@@ -376,7 +378,8 @@ object buildTypesSeqStreamMod {
       __obj.asInstanceOf[SeqStreamHexParameters]
     }
     
-    extension [Self <: SeqStreamHexParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeqStreamHexParameters] (val x: Self) extends AnyVal {
       
       inline def setHexstring(value: String): Self = StObject.set(x, "hexstring", value.asInstanceOf[js.Any])
     }
@@ -396,7 +399,8 @@ object buildTypesSeqStreamMod {
       __obj.asInstanceOf[SeqStreamLengthParameters]
     }
     
-    extension [Self <: SeqStreamLengthParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeqStreamLengthParameters] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -464,7 +468,8 @@ object buildTypesSeqStreamMod {
       __obj.asInstanceOf[SeqStreamStreamParameters]
     }
     
-    extension [Self <: SeqStreamStreamParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeqStreamStreamParameters] (val x: Self) extends AnyVal {
       
       inline def setStream(value: ByteStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
@@ -483,7 +488,8 @@ object buildTypesSeqStreamMod {
       __obj.asInstanceOf[SeqStreamStringParameters]
     }
     
-    extension [Self <: SeqStreamStringParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeqStreamStringParameters] (val x: Self) extends AnyVal {
       
       inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }
@@ -503,7 +509,8 @@ object buildTypesSeqStreamMod {
       __obj.asInstanceOf[SeqStreamViewParameters]
     }
     
-    extension [Self <: SeqStreamViewParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeqStreamViewParameters] (val x: Self) extends AnyVal {
       
       inline def setView(value: js.typedarray.Uint8Array): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }

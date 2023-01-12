@@ -20,7 +20,8 @@ object LogstashPutPipelineRequest {
     __obj.asInstanceOf[LogstashPutPipelineRequest]
   }
   
-  extension [Self <: LogstashPutPipelineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogstashPutPipelineRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: LogstashPipeline): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

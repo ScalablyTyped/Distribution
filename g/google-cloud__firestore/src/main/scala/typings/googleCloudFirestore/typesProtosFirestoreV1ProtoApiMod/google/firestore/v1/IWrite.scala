@@ -33,7 +33,8 @@ object IWrite {
     __obj.asInstanceOf[IWrite]
   }
   
-  extension [Self <: IWrite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWrite] (val x: Self) extends AnyVal {
     
     inline def setCurrentDocument(value: IPrecondition): Self = StObject.set(x, "currentDocument", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object HttpData {
     __obj.asInstanceOf[HttpData]
   }
   
-  extension [Self <: HttpData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpData] (val x: Self) extends AnyVal {
     
     inline def setListUrl(value: String): Self = StObject.set(x, "listUrl", value.asInstanceOf[js.Any])
     

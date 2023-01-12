@@ -28,7 +28,8 @@ object GitImportStatusDetail {
     __obj.asInstanceOf[GitImportStatusDetail]
   }
   
-  extension [Self <: GitImportStatusDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitImportStatusDetail] (val x: Self) extends AnyVal {
     
     inline def setAllSteps(value: js.Array[String]): Self = StObject.set(x, "allSteps", value.asInstanceOf[js.Any])
     

@@ -124,7 +124,8 @@ object ClientOptions {
     __obj.asInstanceOf[ClientOptions]
   }
   
-  extension [Self <: ClientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
     
     inline def setAckTimeout(value: Double): Self = StObject.set(x, "ackTimeout", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object CIMScaleDependentSizeVariation {
     __obj.asInstanceOf[CIMScaleDependentSizeVariation]
   }
   
-  extension [Self <: CIMScaleDependentSizeVariation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMScaleDependentSizeVariation] (val x: Self) extends AnyVal {
     
     inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     

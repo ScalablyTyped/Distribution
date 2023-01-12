@@ -97,7 +97,8 @@ object QRScannerStatus {
     __obj.asInstanceOf[QRScannerStatus]
   }
   
-  extension [Self <: QRScannerStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRScannerStatus] (val x: Self) extends AnyVal {
     
     inline def setAuthorized(value: Boolean): Self = StObject.set(x, "authorized", value.asInstanceOf[js.Any])
     

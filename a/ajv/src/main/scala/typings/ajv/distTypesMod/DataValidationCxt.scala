@@ -30,7 +30,8 @@ object DataValidationCxt {
     __obj.asInstanceOf[DataValidationCxt[T]]
   }
   
-  extension [Self <: DataValidationCxt[?], T /* <: String | Double */](x: Self & DataValidationCxt[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataValidationCxt[?], T /* <: String | Double */] (val x: Self & DataValidationCxt[T]) extends AnyVal {
     
     inline def setDynamicAnchors(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ Ref in string ]:? ajv.ajv/dist/types.ValidateFunction<unknown>} */ js.Any

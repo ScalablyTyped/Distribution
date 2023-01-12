@@ -74,7 +74,8 @@ object EventContext {
     __obj.asInstanceOf[EventContext]
   }
   
-  extension [Self <: EventContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventContext] (val x: Self) extends AnyVal {
     
     inline def setGetContext(value: () => GlobalContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
     

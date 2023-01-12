@@ -59,7 +59,8 @@ object TypeofPaymentMethodOptionBacsDebit {
     __obj.asInstanceOf[TypeofPaymentMethodOptionBacsDebit]
   }
   
-  extension [Self <: TypeofPaymentMethodOptionBacsDebit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPaymentMethodOptionBacsDebit] (val x: Self) extends AnyVal {
     
     inline def setAcssDebit(value: TypeofAcssDebit): Self = StObject.set(x, "AcssDebit", value.asInstanceOf[js.Any])
     

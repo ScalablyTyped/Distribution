@@ -31,7 +31,8 @@ object GoogleCloudVisionV1p4beta1SafeSearchAnnotation {
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1SafeSearchAnnotation]
   }
   
-  extension [Self <: GoogleCloudVisionV1p4beta1SafeSearchAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p4beta1SafeSearchAnnotation] (val x: Self) extends AnyVal {
     
     inline def setAdult(value: String): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
     

@@ -88,7 +88,8 @@ object ElasticsearchDomainConfig {
     __obj.asInstanceOf[ElasticsearchDomainConfig]
   }
   
-  extension [Self <: ElasticsearchDomainConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticsearchDomainConfig] (val x: Self) extends AnyVal {
     
     inline def setAccessPolicies(value: AccessPoliciesStatus): Self = StObject.set(x, "AccessPolicies", value.asInstanceOf[js.Any])
     

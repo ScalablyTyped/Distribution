@@ -17,7 +17,8 @@ object ClassAttributes {
     __obj.asInstanceOf[ClassAttributes[T]]
   }
   
-  extension [Self <: ClassAttributes[?], T](x: Self & ClassAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassAttributes[?], T] (val x: Self & ClassAttributes[T]) extends AnyVal {
     
     inline def setRef(value: LegacyRef[T]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

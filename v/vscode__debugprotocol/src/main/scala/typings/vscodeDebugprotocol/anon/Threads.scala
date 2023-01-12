@@ -17,7 +17,8 @@ object Threads {
     __obj.asInstanceOf[Threads]
   }
   
-  extension [Self <: Threads](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Threads] (val x: Self) extends AnyVal {
     
     inline def setThreads(value: js.Array[Thread]): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object NavigationNavigateAction {
     __obj.asInstanceOf[NavigationNavigateAction]
   }
   
-  extension [Self <: NavigationNavigateAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationNavigateAction] (val x: Self) extends AnyVal {
     
     inline def setType(value: NavigationSlashNAVIGATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

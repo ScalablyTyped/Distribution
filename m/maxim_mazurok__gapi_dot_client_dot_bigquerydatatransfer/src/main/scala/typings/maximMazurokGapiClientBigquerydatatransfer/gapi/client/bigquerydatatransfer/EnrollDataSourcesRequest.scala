@@ -16,7 +16,8 @@ object EnrollDataSourcesRequest {
     __obj.asInstanceOf[EnrollDataSourcesRequest]
   }
   
-  extension [Self <: EnrollDataSourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrollDataSourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setDataSourceIds(value: js.Array[String]): Self = StObject.set(x, "dataSourceIds", value.asInstanceOf[js.Any])
     

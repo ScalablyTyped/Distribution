@@ -20,7 +20,8 @@ object keyinAxisNamenumberX {
     __obj.asInstanceOf[keyinAxisNamenumberX]
   }
   
-  extension [Self <: keyinAxisNamenumberX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinAxisNamenumberX] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

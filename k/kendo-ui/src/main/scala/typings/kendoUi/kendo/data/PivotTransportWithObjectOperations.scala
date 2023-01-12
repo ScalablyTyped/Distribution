@@ -23,7 +23,8 @@ object PivotTransportWithObjectOperations {
     __obj.asInstanceOf[PivotTransportWithObjectOperations]
   }
   
-  extension [Self <: PivotTransportWithObjectOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotTransportWithObjectOperations] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: PivotTransportConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object AccountRef {
     __obj.asInstanceOf[AccountRef]
   }
   
-  extension [Self <: AccountRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountRef] (val x: Self) extends AnyVal {
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

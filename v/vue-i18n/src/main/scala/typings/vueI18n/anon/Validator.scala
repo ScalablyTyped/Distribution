@@ -20,7 +20,8 @@ object Validator {
     __obj.asInstanceOf[Validator]
   }
   
-  extension [Self <: Validator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Validator] (val x: Self) extends AnyVal {
     
     inline def setType(value: js.Array[StringConstructor | NumberConstructor]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

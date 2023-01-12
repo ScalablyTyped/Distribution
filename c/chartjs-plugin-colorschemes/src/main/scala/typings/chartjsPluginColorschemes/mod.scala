@@ -30,7 +30,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ColorSchemesOptions]
     }
     
-    extension [Self <: ColorSchemesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorSchemesOptions] (val x: Self) extends AnyVal {
       
       inline def setCustom(value: /* schemeColors */ js.Array[String] => js.Array[String] | Unit): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
       
@@ -73,7 +74,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ChartPluginsOptions]
       }
       
-      extension [Self <: ChartPluginsOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChartPluginsOptions] (val x: Self) extends AnyVal {
         
         inline def setColorschemes(value: ColorSchemesOptions): Self = StObject.set(x, "colorschemes", value.asInstanceOf[js.Any])
         

@@ -115,7 +115,8 @@ object zrender {
       __obj.asInstanceOf[PathStyleProps]
     }
     
-    extension [Self <: PathStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathStyleProps] (val x: Self) extends AnyVal {
       
       inline def setDecal(value: PatternObject): Self = StObject.set(x, "decal", value.asInstanceOf[js.Any])
       
@@ -219,7 +220,8 @@ object zrender {
         __obj.asInstanceOf[Path]
       }
       
-      extension [Self <: Path](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
         
         inline def setAutoBatch(value: Boolean): Self = StObject.set(x, "autoBatch", value.asInstanceOf[js.Any])
         

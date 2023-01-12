@@ -20,7 +20,8 @@ object TopicPartitions {
     __obj.asInstanceOf[TopicPartitions]
   }
   
-  extension [Self <: TopicPartitions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicPartitions] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

@@ -90,7 +90,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBack(value: Double): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object mod {
       __obj.asInstanceOf[SeekButtonOptions]
     }
     
-    extension [Self <: SeekButtonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeekButtonOptions] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: forward | back): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object mod {
         __obj.asInstanceOf[VideoJsPlayer]
       }
       
-      extension [Self <: VideoJsPlayer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoJsPlayer] (val x: Self) extends AnyVal {
         
         inline def setSeekButtons(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof seekButtons */ Any): Self = StObject.set(x, "seekButtons", value.asInstanceOf[js.Any])
       }
@@ -164,7 +167,8 @@ object mod {
         __obj.asInstanceOf[VideoJsPlayerPluginOptions]
       }
       
-      extension [Self <: VideoJsPlayerPluginOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoJsPlayerPluginOptions] (val x: Self) extends AnyVal {
         
         inline def setSeekButtons(value: Options): Self = StObject.set(x, "seekButtons", value.asInstanceOf[js.Any])
         

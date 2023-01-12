@@ -65,7 +65,8 @@ object JumpEdit {
     __obj.asInstanceOf[JumpEdit]
   }
   
-  extension [Self <: JumpEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JumpEdit] (val x: Self) extends AnyVal {
     
     inline def setHint(value: String): Self = StObject.set(x, "Hint", value.asInstanceOf[js.Any])
     

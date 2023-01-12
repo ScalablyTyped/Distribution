@@ -40,7 +40,8 @@ object SendRuleAction {
     __obj.asInstanceOf[SendRuleAction]
   }
   
-  extension [Self <: SendRuleAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendRuleAction] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: OlRuleActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     

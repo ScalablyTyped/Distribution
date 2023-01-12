@@ -656,7 +656,8 @@ object cjsNumberInputMod {
       __obj.asInstanceOf[NumberPickerInputSnapshot]
     }
     
-    extension [Self <: NumberPickerInputSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberPickerInputSnapshot] (val x: Self) extends AnyVal {
       
       inline def setReselectText(value: Boolean): Self = StObject.set(x, "reselectText", value.asInstanceOf[js.Any])
       
@@ -677,7 +678,8 @@ object cjsNumberInputMod {
       __obj.asInstanceOf[NumberPickerInputState]
     }
     
-    extension [Self <: NumberPickerInputState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberPickerInputState] (val x: Self) extends AnyVal {
       
       inline def setLastValueFromProps(value: String): Self = StObject.set(x, "lastValueFromProps", value.asInstanceOf[js.Any])
       

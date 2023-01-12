@@ -494,7 +494,8 @@ object PolyLineOverlay {
     __obj.asInstanceOf[PolyLineOverlay]
   }
   
-  extension [Self <: PolyLineOverlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolyLineOverlay] (val x: Self) extends AnyVal {
     
     inline def setAnchorAllowWhiteSpaceInCharacters(value: String): Self = StObject.set(x, "anchorAllowWhiteSpaceInCharacters", value.asInstanceOf[js.Any])
     

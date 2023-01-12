@@ -156,7 +156,8 @@ object distCoreDerivationMod {
       __obj.asInstanceOf[IDerivation]
     }
     
-    extension [Self <: IDerivation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDerivation] (val x: Self) extends AnyVal {
       
       inline def setDependenciesState_(value: IDerivationState): Self = StObject.set(x, "dependenciesState_", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object WorkflowType {
     __obj.asInstanceOf[WorkflowType]
   }
   
-  extension [Self <: WorkflowType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowType] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

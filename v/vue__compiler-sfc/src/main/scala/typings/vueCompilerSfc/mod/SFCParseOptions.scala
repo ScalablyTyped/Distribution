@@ -27,7 +27,8 @@ object SFCParseOptions {
     __obj.asInstanceOf[SFCParseOptions]
   }
   
-  extension [Self <: SFCParseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFCParseOptions] (val x: Self) extends AnyVal {
     
     inline def setCompiler(value: TemplateCompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
     

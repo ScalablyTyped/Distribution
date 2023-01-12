@@ -17,7 +17,8 @@ object CanPreventDefault {
     __obj.asInstanceOf[CanPreventDefault]
   }
   
-  extension [Self <: CanPreventDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanPreventDefault] (val x: Self) extends AnyVal {
     
     inline def setCanPreventDefault(value: Boolean): Self = StObject.set(x, "canPreventDefault", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object CordovaPackageJson {
     __obj.asInstanceOf[CordovaPackageJson]
   }
   
-  extension [Self <: CordovaPackageJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CordovaPackageJson] (val x: Self) extends AnyVal {
     
     inline def setCordova(value: Platforms): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
   }

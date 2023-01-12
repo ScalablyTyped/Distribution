@@ -22,7 +22,8 @@ object typesCorsconfigurationMod {
       __obj.asInstanceOf[CORSConfiguration]
     }
     
-    extension [Self <: CORSConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CORSConfiguration] (val x: Self) extends AnyVal {
       
       inline def setCORSRules(value: js.Array[CORSRule] | js.Iterable[CORSRule]): Self = StObject.set(x, "CORSRules", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object typesCorsconfigurationMod {
       __obj.asInstanceOf[UnmarshalledCORSConfiguration]
     }
     
-    extension [Self <: UnmarshalledCORSConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledCORSConfiguration] (val x: Self) extends AnyVal {
       
       inline def setCORSRules(value: js.Array[UnmarshalledCORSRule]): Self = StObject.set(x, "CORSRules", value.asInstanceOf[js.Any])
       

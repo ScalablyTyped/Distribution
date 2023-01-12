@@ -19,7 +19,8 @@ object AllowlistsDeleteResponse {
     __obj.asInstanceOf[AllowlistsDeleteResponse]
   }
   
-  extension [Self <: AllowlistsDeleteResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowlistsDeleteResponse] (val x: Self) extends AnyVal {
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     

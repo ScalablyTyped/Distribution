@@ -119,7 +119,8 @@ object leafletMod {
       __obj.asInstanceOf[GPXMarkerOptions]
     }
     
-    extension [Self <: GPXMarkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GPXMarkerOptions] (val x: Self) extends AnyVal {
       
       inline def setEndIconUrl(value: String): Self = StObject.set(x, "endIconUrl", value.asInstanceOf[js.Any])
       
@@ -158,7 +159,8 @@ object leafletMod {
       __obj.asInstanceOf[GPXOptions]
     }
     
-    extension [Self <: GPXOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GPXOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

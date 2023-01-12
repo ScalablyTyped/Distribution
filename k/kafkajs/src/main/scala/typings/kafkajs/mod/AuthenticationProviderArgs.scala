@@ -26,7 +26,8 @@ object AuthenticationProviderArgs {
     __obj.asInstanceOf[AuthenticationProviderArgs]
   }
   
-  extension [Self <: AuthenticationProviderArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationProviderArgs] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

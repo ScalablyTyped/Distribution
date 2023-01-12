@@ -38,7 +38,8 @@ object NetSocket4 {
     __obj.asInstanceOf[NetSocket4]
   }
   
-  extension [Self <: NetSocket4](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetSocket4] (val x: Self) extends AnyVal {
     
     inline def setLocalAddress(value: Double): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     

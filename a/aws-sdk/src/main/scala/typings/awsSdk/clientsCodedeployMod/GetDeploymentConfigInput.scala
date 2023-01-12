@@ -18,7 +18,8 @@ object GetDeploymentConfigInput {
     __obj.asInstanceOf[GetDeploymentConfigInput]
   }
   
-  extension [Self <: GetDeploymentConfigInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDeploymentConfigInput] (val x: Self) extends AnyVal {
     
     inline def setDeploymentConfigName(value: DeploymentConfigName): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
   }

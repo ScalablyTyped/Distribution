@@ -23,7 +23,8 @@ object OptionHTMLAttributes {
     __obj.asInstanceOf[OptionHTMLAttributes]
   }
   
-  extension [Self <: OptionHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Booleanish): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

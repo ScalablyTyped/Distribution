@@ -20,7 +20,8 @@ object EllipticArc {
     __obj.asInstanceOf[EllipticArc]
   }
   
-  extension [Self <: EllipticArc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EllipticArc] (val x: Self) extends AnyVal {
     
     inline def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
   }

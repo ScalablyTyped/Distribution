@@ -23,7 +23,8 @@ object SendLocationOptions {
     __obj.asInstanceOf[SendLocationOptions]
   }
   
-  extension [Self <: SendLocationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendLocationOptions] (val x: Self) extends AnyVal {
     
     inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     

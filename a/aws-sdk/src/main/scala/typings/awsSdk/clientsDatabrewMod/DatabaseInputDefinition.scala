@@ -30,7 +30,8 @@ object DatabaseInputDefinition {
     __obj.asInstanceOf[DatabaseInputDefinition]
   }
   
-  extension [Self <: DatabaseInputDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseInputDefinition] (val x: Self) extends AnyVal {
     
     inline def setDatabaseTableName(value: DatabaseTableName): Self = StObject.set(x, "DatabaseTableName", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object IELangSearchDelegates {
     __obj.asInstanceOf[IELangSearchDelegates]
   }
   
-  extension [Self <: IELangSearchDelegates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IELangSearchDelegates] (val x: Self) extends AnyVal {
     
     inline def setLangDirectionClickHandler(value: js.Function): Self = StObject.set(x, "langDirectionClickHandler", value.asInstanceOf[js.Any])
     

@@ -143,7 +143,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object mod {
       __obj.asInstanceOf[Spinner]
     }
     
-    extension [Self <: Spinner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spinner] (val x: Self) extends AnyVal {
       
       inline def setFrames(value: js.Array[String]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
@@ -242,7 +244,8 @@ object mod {
       __obj.asInstanceOf[SpinnerOptions]
     }
     
-    extension [Self <: SpinnerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpinnerOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

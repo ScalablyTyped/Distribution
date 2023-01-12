@@ -24,7 +24,8 @@ object Tree {
     __obj.asInstanceOf[Tree]
   }
   
-  extension [Self <: Tree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tree] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object WorkflowExecutionFilter {
     __obj.asInstanceOf[WorkflowExecutionFilter]
   }
   
-  extension [Self <: WorkflowExecutionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowExecutionFilter] (val x: Self) extends AnyVal {
     
     inline def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
   }

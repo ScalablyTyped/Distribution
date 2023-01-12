@@ -28,7 +28,8 @@ object Typeofidle {
     __obj.asInstanceOf[Typeofidle]
   }
   
-  extension [Self <: Typeofidle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofidle] (val x: Self) extends AnyVal {
     
     inline def setGetAutoLockDelay(value: js.Function1[/* delay */ Double, Unit] => Unit): Self = StObject.set(x, "getAutoLockDelay", js.Any.fromFunction1(value))
     

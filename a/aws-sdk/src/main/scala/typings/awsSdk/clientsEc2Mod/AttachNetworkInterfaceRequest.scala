@@ -38,7 +38,8 @@ object AttachNetworkInterfaceRequest {
     __obj.asInstanceOf[AttachNetworkInterfaceRequest]
   }
   
-  extension [Self <: AttachNetworkInterfaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachNetworkInterfaceRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceIndex(value: Integer): Self = StObject.set(x, "DeviceIndex", value.asInstanceOf[js.Any])
     

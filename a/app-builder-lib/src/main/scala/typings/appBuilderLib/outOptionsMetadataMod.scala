@@ -21,7 +21,8 @@ object outOptionsMetadataMod {
       __obj.asInstanceOf[AuthorMetadata]
     }
     
-    extension [Self <: AuthorMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorMetadata] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object outOptionsMetadataMod {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: AuthorMetadata): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object outOptionsMetadataMod {
       __obj.asInstanceOf[RepositoryInfo]
     }
     
-    extension [Self <: RepositoryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepositoryInfo] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

@@ -32,7 +32,8 @@ object Friend {
     __obj.asInstanceOf[Friend]
   }
   
-  extension [Self <: Friend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Friend] (val x: Self) extends AnyVal {
     
     inline def setFriendSince(value: Double): Self = StObject.set(x, "friendSince", value.asInstanceOf[js.Any])
     

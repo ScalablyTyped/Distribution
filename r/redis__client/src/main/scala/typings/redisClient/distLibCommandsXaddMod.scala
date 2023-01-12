@@ -42,7 +42,8 @@ object distLibCommandsXaddMod {
       __obj.asInstanceOf[XAddOptions]
     }
     
-    extension [Self <: XAddOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XAddOptions] (val x: Self) extends AnyVal {
       
       inline def setNOMKSTREAM(value: `true`): Self = StObject.set(x, "NOMKSTREAM", value.asInstanceOf[js.Any])
       

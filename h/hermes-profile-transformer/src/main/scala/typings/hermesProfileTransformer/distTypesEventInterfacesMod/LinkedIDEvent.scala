@@ -26,7 +26,8 @@ object LinkedIDEvent {
     __obj.asInstanceOf[LinkedIDEvent]
   }
   
-  extension [Self <: LinkedIDEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedIDEvent] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: Linkedid): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

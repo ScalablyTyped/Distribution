@@ -47,7 +47,8 @@ object distSrcListenerMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setHandler(value: /* conn */ Connection => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       

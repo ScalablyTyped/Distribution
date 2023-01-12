@@ -51,7 +51,8 @@ object LocationRegion {
     __obj.asInstanceOf[LocationRegion]
   }
   
-  extension [Self <: LocationRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationRegion] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

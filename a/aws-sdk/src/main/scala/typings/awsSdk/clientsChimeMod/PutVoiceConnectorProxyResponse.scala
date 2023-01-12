@@ -18,7 +18,8 @@ object PutVoiceConnectorProxyResponse {
     __obj.asInstanceOf[PutVoiceConnectorProxyResponse]
   }
   
-  extension [Self <: PutVoiceConnectorProxyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutVoiceConnectorProxyResponse] (val x: Self) extends AnyVal {
     
     inline def setProxy(value: Proxy): Self = StObject.set(x, "Proxy", value.asInstanceOf[js.Any])
     

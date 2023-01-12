@@ -155,7 +155,8 @@ object UserProfile {
       __obj.asInstanceOf[FirstSignInSettings]
     }
     
-    extension [Self <: FirstSignInSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirstSignInSettings] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: () => IIterator[IKeyValuePair[Any, Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
@@ -205,7 +206,8 @@ object UserProfile {
       __obj.asInstanceOf[UserProfilePersonalizationSettings]
     }
     
-    extension [Self <: UserProfilePersonalizationSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserProfilePersonalizationSettings] (val x: Self) extends AnyVal {
       
       inline def setTrySetLockScreenImageAsync(value: StorageFile => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "trySetLockScreenImageAsync", js.Any.fromFunction1(value))
       

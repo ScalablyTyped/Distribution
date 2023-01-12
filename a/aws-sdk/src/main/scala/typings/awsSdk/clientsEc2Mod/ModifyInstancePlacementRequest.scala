@@ -53,7 +53,8 @@ object ModifyInstancePlacementRequest {
     __obj.asInstanceOf[ModifyInstancePlacementRequest]
   }
   
-  extension [Self <: ModifyInstancePlacementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyInstancePlacementRequest] (val x: Self) extends AnyVal {
     
     inline def setAffinity(value: Affinity): Self = StObject.set(x, "Affinity", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object typesDescribeStreamSummaryInputMod {
       __obj.asInstanceOf[DescribeStreamSummaryInput]
     }
     
-    extension [Self <: DescribeStreamSummaryInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeStreamSummaryInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

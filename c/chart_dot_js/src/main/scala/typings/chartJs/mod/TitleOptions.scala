@@ -73,7 +73,8 @@ object TitleOptions {
     __obj.asInstanceOf[TitleOptions]
   }
   
-  extension [Self <: TitleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TitleOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Align): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

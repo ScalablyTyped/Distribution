@@ -18,7 +18,8 @@ object CreateNotificationRuleResult {
     __obj.asInstanceOf[CreateNotificationRuleResult]
   }
   
-  extension [Self <: CreateNotificationRuleResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNotificationRuleResult] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

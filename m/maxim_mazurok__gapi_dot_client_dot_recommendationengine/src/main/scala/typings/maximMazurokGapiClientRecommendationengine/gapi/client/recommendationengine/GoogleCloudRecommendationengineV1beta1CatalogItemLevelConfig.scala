@@ -19,7 +19,8 @@ object GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig] (val x: Self) extends AnyVal {
     
     inline def setEventItemLevel(value: String): Self = StObject.set(x, "eventItemLevel", value.asInstanceOf[js.Any])
     

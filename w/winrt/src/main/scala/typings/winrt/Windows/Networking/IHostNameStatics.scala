@@ -15,7 +15,8 @@ object IHostNameStatics {
     __obj.asInstanceOf[IHostNameStatics]
   }
   
-  extension [Self <: IHostNameStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHostNameStatics] (val x: Self) extends AnyVal {
     
     inline def setCompare(value: (String, String) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
   }

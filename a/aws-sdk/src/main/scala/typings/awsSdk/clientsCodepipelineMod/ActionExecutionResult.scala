@@ -28,7 +28,8 @@ object ActionExecutionResult {
     __obj.asInstanceOf[ActionExecutionResult]
   }
   
-  extension [Self <: ActionExecutionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionExecutionResult] (val x: Self) extends AnyVal {
     
     inline def setExternalExecutionId(value: ExternalExecutionId): Self = StObject.set(x, "externalExecutionId", value.asInstanceOf[js.Any])
     

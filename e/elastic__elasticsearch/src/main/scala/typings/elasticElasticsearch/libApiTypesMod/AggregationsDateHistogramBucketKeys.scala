@@ -19,7 +19,8 @@ object AggregationsDateHistogramBucketKeys {
     __obj.asInstanceOf[AggregationsDateHistogramBucketKeys]
   }
   
-  extension [Self <: AggregationsDateHistogramBucketKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsDateHistogramBucketKeys] (val x: Self) extends AnyVal {
     
     inline def setKey(value: EpochTime[UnitMillis]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

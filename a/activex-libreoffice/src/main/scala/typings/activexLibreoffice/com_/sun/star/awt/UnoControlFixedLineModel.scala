@@ -117,7 +117,8 @@ object UnoControlFixedLineModel {
     __obj.asInstanceOf[UnoControlFixedLineModel]
   }
   
-  extension [Self <: UnoControlFixedLineModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlFixedLineModel] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

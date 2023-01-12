@@ -38,7 +38,8 @@ object DistributionBundle {
     __obj.asInstanceOf[DistributionBundle]
   }
   
-  extension [Self <: DistributionBundle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionBundle] (val x: Self) extends AnyVal {
     
     inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     

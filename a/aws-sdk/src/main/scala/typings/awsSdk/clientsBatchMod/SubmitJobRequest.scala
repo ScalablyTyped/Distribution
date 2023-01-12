@@ -88,7 +88,8 @@ object SubmitJobRequest {
     __obj.asInstanceOf[SubmitJobRequest]
   }
   
-  extension [Self <: SubmitJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubmitJobRequest] (val x: Self) extends AnyVal {
     
     inline def setArrayProperties(value: ArrayProperties): Self = StObject.set(x, "arrayProperties", value.asInstanceOf[js.Any])
     

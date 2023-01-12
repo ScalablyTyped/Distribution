@@ -38,7 +38,8 @@ object distTypesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setTestIdAttribute(value: String): Self = StObject.set(x, "testIdAttribute", value.asInstanceOf[js.Any])
     }
@@ -1313,7 +1314,8 @@ object distTypesMod {
       __obj.asInstanceOf[WithinSelectors]
     }
     
-    extension [Self <: WithinSelectors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithinSelectors] (val x: Self) extends AnyVal {
       
       inline def setFindAllByAltText(
         value: /* params */ Parameters[

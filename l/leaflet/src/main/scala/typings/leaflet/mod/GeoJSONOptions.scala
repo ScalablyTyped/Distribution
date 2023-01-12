@@ -88,7 +88,8 @@ object GeoJSONOptions {
     __obj.asInstanceOf[GeoJSONOptions[P]]
   }
   
-  extension [Self <: GeoJSONOptions[?], P](x: Self & GeoJSONOptions[P]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONOptions[?], P] (val x: Self & GeoJSONOptions[P]) extends AnyVal {
     
     inline def setCoordsToLatLng(value: /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) => LatLng_): Self = StObject.set(x, "coordsToLatLng", js.Any.fromFunction1(value))
     

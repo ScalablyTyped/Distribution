@@ -28,7 +28,8 @@ object RulesSourceList {
     __obj.asInstanceOf[RulesSourceList]
   }
   
-  extension [Self <: RulesSourceList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RulesSourceList] (val x: Self) extends AnyVal {
     
     inline def setGeneratedRulesType(value: GeneratedRulesType): Self = StObject.set(x, "GeneratedRulesType", value.asInstanceOf[js.Any])
     

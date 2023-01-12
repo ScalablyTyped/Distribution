@@ -41,7 +41,8 @@ object CustomXmlPartScopedCollectionLoadOptions {
     __obj.asInstanceOf[CustomXmlPartScopedCollectionLoadOptions]
   }
   
-  extension [Self <: CustomXmlPartScopedCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomXmlPartScopedCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

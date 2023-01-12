@@ -51,7 +51,8 @@ object libFormMod {
       __obj.asInstanceOf[FormSubmitProp[FormData, P, ErrorType]]
     }
     
-    extension [Self <: FormSubmitProp[?, ?, ?], FormData, P, ErrorType](x: Self & (FormSubmitProp[FormData, P, ErrorType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormSubmitProp[?, ?, ?], FormData, P, ErrorType] (val x: Self & (FormSubmitProp[FormData, P, ErrorType])) extends AnyVal {
       
       inline def setOnSubmit(
         value: (FormData, /* dispatch */ Dispatch[Any], /* props */ DecoratedFormProps[FormData, P, ErrorType]) => Unit | (FormErrors[FormData, ErrorType]) | js.Promise[Any]

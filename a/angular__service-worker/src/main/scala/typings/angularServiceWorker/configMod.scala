@@ -60,7 +60,8 @@ object configMod {
       __obj.asInstanceOf[AssetGroup]
     }
     
-    extension [Self <: AssetGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssetGroup] (val x: Self) extends AnyVal {
       
       inline def setCacheQueryOptions(value: PickCacheQueryOptionsigno): Self = StObject.set(x, "cacheQueryOptions", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object configMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAppData(value: js.Object): Self = StObject.set(x, "appData", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object configMod {
       __obj.asInstanceOf[DataGroup]
     }
     
-    extension [Self <: DataGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataGroup] (val x: Self) extends AnyVal {
       
       inline def setCacheConfig(value: CacheOpaqueResponses): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
       
@@ -196,7 +199,8 @@ object configMod {
       __obj.asInstanceOf[Filesystem]
     }
     
-    extension [Self <: Filesystem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filesystem] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String => js.Promise[String]): Self = StObject.set(x, "hash", js.Any.fromFunction1(value))
       
@@ -238,7 +242,8 @@ object configMod {
       __obj.asInstanceOf[Generator2]
     }
     
-    extension [Self <: Generator2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Generator2] (val x: Self) extends AnyVal {
       
       inline def setBaseHref(value: Any): Self = StObject.set(x, "baseHref", value.asInstanceOf[js.Any])
       

@@ -171,7 +171,8 @@ object mod {
       __obj.asInstanceOf[CommandOptionRegex]
     }
     
-    extension [Self <: CommandOptionRegex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandOptionRegex] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
@@ -234,7 +235,8 @@ object mod {
       __obj.asInstanceOf[StartOptions]
     }
     
-    extension [Self <: StartOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoRestart(value: Boolean): Self = StObject.set(x, "autoRestart", value.asInstanceOf[js.Any])
       

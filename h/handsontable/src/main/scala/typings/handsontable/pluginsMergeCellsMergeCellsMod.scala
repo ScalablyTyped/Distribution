@@ -45,7 +45,8 @@ object pluginsMergeCellsMergeCellsMod {
       __obj.asInstanceOf[DetailedSettings]
     }
     
-    extension [Self <: DetailedSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailedSettings] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       

@@ -51,7 +51,8 @@ object JsxButtonElementProps {
     __obj.asInstanceOf[JsxButtonElementProps]
   }
   
-  extension [Self <: JsxButtonElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxButtonElementProps] (val x: Self) extends AnyVal {
     
     inline def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
     

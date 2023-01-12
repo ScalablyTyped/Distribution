@@ -47,7 +47,8 @@ object XGridDataListener {
     __obj.asInstanceOf[XGridDataListener]
   }
   
-  extension [Self <: XGridDataListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGridDataListener] (val x: Self) extends AnyVal {
     
     inline def setDataChanged(value: GridDataEvent => Unit): Self = StObject.set(x, "dataChanged", js.Any.fromFunction1(value))
     

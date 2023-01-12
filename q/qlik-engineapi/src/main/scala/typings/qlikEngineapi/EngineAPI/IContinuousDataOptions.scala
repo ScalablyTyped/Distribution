@@ -36,7 +36,8 @@ object IContinuousDataOptions {
     __obj.asInstanceOf[IContinuousDataOptions]
   }
   
-  extension [Self <: IContinuousDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContinuousDataOptions] (val x: Self) extends AnyVal {
     
     inline def setQEnd(value: Double): Self = StObject.set(x, "qEnd", value.asInstanceOf[js.Any])
     

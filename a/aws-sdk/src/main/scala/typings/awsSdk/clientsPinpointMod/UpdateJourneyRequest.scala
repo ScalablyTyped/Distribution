@@ -25,7 +25,8 @@ object UpdateJourneyRequest {
     __obj.asInstanceOf[UpdateJourneyRequest]
   }
   
-  extension [Self <: UpdateJourneyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateJourneyRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

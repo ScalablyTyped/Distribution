@@ -53,7 +53,8 @@ object DesktopCapturerSource {
     __obj.asInstanceOf[DesktopCapturerSource]
   }
   
-  extension [Self <: DesktopCapturerSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DesktopCapturerSource] (val x: Self) extends AnyVal {
     
     inline def setAppIcon(value: NativeImage_): Self = StObject.set(x, "appIcon", value.asInstanceOf[js.Any])
     

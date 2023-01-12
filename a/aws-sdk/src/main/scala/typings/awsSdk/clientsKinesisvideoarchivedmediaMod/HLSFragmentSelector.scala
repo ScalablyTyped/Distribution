@@ -23,7 +23,8 @@ object HLSFragmentSelector {
     __obj.asInstanceOf[HLSFragmentSelector]
   }
   
-  extension [Self <: HLSFragmentSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HLSFragmentSelector] (val x: Self) extends AnyVal {
     
     inline def setFragmentSelectorType(value: HLSFragmentSelectorType): Self = StObject.set(x, "FragmentSelectorType", value.asInstanceOf[js.Any])
     

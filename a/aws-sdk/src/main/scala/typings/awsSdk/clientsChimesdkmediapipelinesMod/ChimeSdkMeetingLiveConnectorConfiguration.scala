@@ -33,7 +33,8 @@ object ChimeSdkMeetingLiveConnectorConfiguration {
     __obj.asInstanceOf[ChimeSdkMeetingLiveConnectorConfiguration]
   }
   
-  extension [Self <: ChimeSdkMeetingLiveConnectorConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChimeSdkMeetingLiveConnectorConfiguration] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

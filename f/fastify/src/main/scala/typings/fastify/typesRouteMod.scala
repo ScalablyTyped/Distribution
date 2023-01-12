@@ -200,7 +200,8 @@ object typesRouteMod {
       ]]
     }
     
-    extension [Self <: RouteOptions[?, ?, ?, ?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */](x: Self & (RouteOptions[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteOptions[?, ?, ?, ?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] (val x: Self & (RouteOptions[
             RawServer, 
             RawRequest, 
             RawReply, 
@@ -209,7 +210,7 @@ object typesRouteMod {
             SchemaCompiler, 
             TypeProvider, 
             Logger
-          ])) {
+          ])) extends AnyVal {
       
       inline def setHandler(
         value: RouteHandlerMethod[
@@ -598,7 +599,8 @@ object typesRouteMod {
       ]]
     }
     
-    extension [Self <: RouteShorthandOptions[?, ?, ?, ?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */](x: Self & (RouteShorthandOptions[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteShorthandOptions[?, ?, ?, ?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] (val x: Self & (RouteShorthandOptions[
             RawServer, 
             RawRequest, 
             RawReply, 
@@ -607,7 +609,7 @@ object typesRouteMod {
             SchemaCompiler, 
             TypeProvider, 
             Logger
-          ])) {
+          ])) extends AnyVal {
       
       inline def setAttachValidation(value: Boolean): Self = StObject.set(x, "attachValidation", value.asInstanceOf[js.Any])
       
@@ -1140,7 +1142,8 @@ object typesRouteMod {
       ]]
     }
     
-    extension [Self <: RouteShorthandOptionsWithHandler[?, ?, ?, ?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */](x: Self & (RouteShorthandOptionsWithHandler[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteShorthandOptionsWithHandler[?, ?, ?, ?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] (val x: Self & (RouteShorthandOptionsWithHandler[
             RawServer, 
             RawRequest, 
             RawReply, 
@@ -1149,7 +1152,7 @@ object typesRouteMod {
             SchemaCompiler, 
             TypeProvider, 
             Logger
-          ])) {
+          ])) extends AnyVal {
       
       inline def setHandler(
         value: RouteHandlerMethod[

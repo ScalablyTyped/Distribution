@@ -18,7 +18,8 @@ object UserDefinedFunction {
     __obj.asInstanceOf[UserDefinedFunction]
   }
   
-  extension [Self <: UserDefinedFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserDefinedFunction] (val x: Self) extends AnyVal {
     
     inline def setUserDefinedFunctionType(value: UserDefinedFunctionType): Self = StObject.set(x, "userDefinedFunctionType", value.asInstanceOf[js.Any])
     

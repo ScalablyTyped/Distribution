@@ -21,7 +21,8 @@ object RepeatStatement {
     __obj.asInstanceOf[RepeatStatement]
   }
   
-  extension [Self <: RepeatStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepeatStatement] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

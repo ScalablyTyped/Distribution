@@ -50,7 +50,8 @@ object buildSrcParserParserMod {
       __obj.asInstanceOf[ParseResult]
     }
     
-    extension [Self <: ParseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseResult] (val x: Self) extends AnyVal {
       
       inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       

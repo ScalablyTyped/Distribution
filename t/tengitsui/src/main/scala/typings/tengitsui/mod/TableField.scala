@@ -40,7 +40,8 @@ object TableField {
     __obj.asInstanceOf[TableField]
   }
   
-  extension [Self <: TableField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableField] (val x: Self) extends AnyVal {
     
     inline def setBeforeOptionRender(value: /* items */ String | js.Array[String] => Any): Self = StObject.set(x, "beforeOptionRender", js.Any.fromFunction1(value))
     

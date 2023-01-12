@@ -25,7 +25,8 @@ object DOMQuadInit {
     __obj.asInstanceOf[DOMQuadInit]
   }
   
-  extension [Self <: DOMQuadInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMQuadInit] (val x: Self) extends AnyVal {
     
     inline def setP1(value: DOMPointInit): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ScriptsPainlessExecuteResponse {
     __obj.asInstanceOf[ScriptsPainlessExecuteResponse[TResult]]
   }
   
-  extension [Self <: ScriptsPainlessExecuteResponse[?], TResult](x: Self & ScriptsPainlessExecuteResponse[TResult]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptsPainlessExecuteResponse[?], TResult] (val x: Self & ScriptsPainlessExecuteResponse[TResult]) extends AnyVal {
     
     inline def setResult(value: TResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }

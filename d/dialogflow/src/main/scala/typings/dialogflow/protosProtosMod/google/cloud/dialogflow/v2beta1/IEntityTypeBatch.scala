@@ -17,7 +17,8 @@ object IEntityTypeBatch {
     __obj.asInstanceOf[IEntityTypeBatch]
   }
   
-  extension [Self <: IEntityTypeBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEntityTypeBatch] (val x: Self) extends AnyVal {
     
     inline def setEntityTypes(value: js.Array[IEntityType]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object EmailMailboxAutoReplySettings {
     __obj.asInstanceOf[EmailMailboxAutoReplySettings]
   }
   
-  extension [Self <: EmailMailboxAutoReplySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailMailboxAutoReplySettings] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

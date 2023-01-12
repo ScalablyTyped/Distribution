@@ -228,7 +228,8 @@ object distPoolMod {
       __obj.asInstanceOf[PoolOptions[T]]
     }
     
-    extension [Self <: PoolOptions[?], T](x: Self & PoolOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoolOptions[?], T] (val x: Self & PoolOptions[T]) extends AnyVal {
       
       inline def setAcquireTimeoutMillis(value: Double): Self = StObject.set(x, "acquireTimeoutMillis", value.asInstanceOf[js.Any])
       

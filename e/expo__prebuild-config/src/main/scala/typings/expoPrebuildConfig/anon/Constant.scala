@@ -32,7 +32,8 @@ object Constant {
     __obj.asInstanceOf[Constant]
   }
   
-  extension [Self <: Constant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Constant] (val x: Self) extends AnyVal {
     
     inline def setConstant(value: Double): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
     

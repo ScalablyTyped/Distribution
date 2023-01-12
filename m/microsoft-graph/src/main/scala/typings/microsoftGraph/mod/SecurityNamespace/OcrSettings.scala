@@ -26,7 +26,8 @@ object OcrSettings {
     __obj.asInstanceOf[OcrSettings]
   }
   
-  extension [Self <: OcrSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OcrSettings] (val x: Self) extends AnyVal {
     
     inline def setIsEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     

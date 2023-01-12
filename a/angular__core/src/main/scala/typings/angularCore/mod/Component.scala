@@ -141,7 +141,8 @@ object Component {
   @js.native
   val ^ : ComponentDecorator = js.native
   
-  extension [Self <: Component](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
     
     inline def setAnimations(value: js.Array[Any]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     

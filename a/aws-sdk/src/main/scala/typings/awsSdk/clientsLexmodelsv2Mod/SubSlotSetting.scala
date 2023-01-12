@@ -23,7 +23,8 @@ object SubSlotSetting {
     __obj.asInstanceOf[SubSlotSetting]
   }
   
-  extension [Self <: SubSlotSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubSlotSetting] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: SubSlotExpression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object AbstractContainer {
     __obj.asInstanceOf[AbstractContainer]
   }
   
-  extension [Self <: AbstractContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractContainer] (val x: Self) extends AnyVal {
     
     inline def setMembers(value: js.Array[AbstractBase]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object ComposeActionResponse {
     __obj.asInstanceOf[ComposeActionResponse]
   }
   
-  extension [Self <: ComposeActionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComposeActionResponse] (val x: Self) extends AnyVal {
     
     inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
   }

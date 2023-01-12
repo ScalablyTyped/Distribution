@@ -28,7 +28,8 @@ object RegisterJobDefinitionResponse {
     __obj.asInstanceOf[RegisterJobDefinitionResponse]
   }
   
-  extension [Self <: RegisterJobDefinitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterJobDefinitionResponse] (val x: Self) extends AnyVal {
     
     inline def setJobDefinitionArn(value: String): Self = StObject.set(x, "jobDefinitionArn", value.asInstanceOf[js.Any])
     

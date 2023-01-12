@@ -18,7 +18,8 @@ object AllocateHostsResult {
     __obj.asInstanceOf[AllocateHostsResult]
   }
   
-  extension [Self <: AllocateHostsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllocateHostsResult] (val x: Self) extends AnyVal {
     
     inline def setHostIds(value: ResponseHostIdList): Self = StObject.set(x, "HostIds", value.asInstanceOf[js.Any])
     

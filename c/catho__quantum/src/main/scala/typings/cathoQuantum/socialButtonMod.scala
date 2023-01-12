@@ -28,7 +28,8 @@ object socialButtonMod {
       __obj.asInstanceOf[SocialButtonProps]
     }
     
-    extension [Self <: SocialButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocialButtonProps] (val x: Self) extends AnyVal {
       
       inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     }

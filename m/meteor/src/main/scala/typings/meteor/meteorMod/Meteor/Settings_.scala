@@ -20,7 +20,8 @@ object Settings_ {
     __obj.asInstanceOf[Settings_]
   }
   
-  extension [Self <: Settings_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Settings_] (val x: Self) extends AnyVal {
     
     inline def setPublic(value: StringDictionary[Any]): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
   }

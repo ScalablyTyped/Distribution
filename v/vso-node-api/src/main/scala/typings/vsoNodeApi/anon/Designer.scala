@@ -17,7 +17,8 @@ object Designer {
     __obj.asInstanceOf[Designer]
   }
   
-  extension [Self <: Designer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Designer] (val x: Self) extends AnyVal {
     
     inline def setDesigner(value: scala.Double): Self = StObject.set(x, "designer", value.asInstanceOf[js.Any])
     

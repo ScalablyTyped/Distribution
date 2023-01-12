@@ -21,7 +21,8 @@ object IIsPointOnPathOptions {
     __obj.asInstanceOf[IIsPointOnPathOptions]
   }
   
-  extension [Self <: IIsPointOnPathOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIsPointOnPathOptions] (val x: Self) extends AnyVal {
     
     inline def setCachedLineSlope(value: ISlope): Self = StObject.set(x, "cachedLineSlope", value.asInstanceOf[js.Any])
     

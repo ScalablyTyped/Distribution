@@ -393,7 +393,8 @@ object ComposeProps {
     __obj.asInstanceOf[ComposeProps]
   }
   
-  extension [Self <: ComposeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComposeProps] (val x: Self) extends AnyVal {
     
     inline def setAndDegree1(value: Double): Self = StObject.set(x, "andDegree1", value.asInstanceOf[js.Any])
     

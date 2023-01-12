@@ -23,7 +23,8 @@ object GameServerGroupAutoScalingPolicy {
     __obj.asInstanceOf[GameServerGroupAutoScalingPolicy]
   }
   
-  extension [Self <: GameServerGroupAutoScalingPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameServerGroupAutoScalingPolicy] (val x: Self) extends AnyVal {
     
     inline def setEstimatedInstanceWarmup(value: PositiveInteger): Self = StObject.set(x, "EstimatedInstanceWarmup", value.asInstanceOf[js.Any])
     

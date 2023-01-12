@@ -25,7 +25,8 @@ object BatchDisassociateResourcesFromCustomLineItemInput {
     __obj.asInstanceOf[BatchDisassociateResourcesFromCustomLineItemInput]
   }
   
-  extension [Self <: BatchDisassociateResourcesFromCustomLineItemInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDisassociateResourcesFromCustomLineItemInput] (val x: Self) extends AnyVal {
     
     inline def setBillingPeriodRange(value: CustomLineItemBillingPeriodRange): Self = StObject.set(x, "BillingPeriodRange", value.asInstanceOf[js.Any])
     

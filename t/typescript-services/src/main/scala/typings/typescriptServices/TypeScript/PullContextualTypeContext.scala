@@ -47,7 +47,8 @@ object PullContextualTypeContext {
     __obj.asInstanceOf[PullContextualTypeContext]
   }
   
-  extension [Self <: PullContextualTypeContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullContextualTypeContext] (val x: Self) extends AnyVal {
     
     inline def setAstSymbolMap(value: Any): Self = StObject.set(x, "astSymbolMap", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object DSSEHint {
     __obj.asInstanceOf[DSSEHint]
   }
   
-  extension [Self <: DSSEHint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DSSEHint] (val x: Self) extends AnyVal {
     
     inline def setHumanReadableName(value: String): Self = StObject.set(x, "humanReadableName", value.asInstanceOf[js.Any])
     

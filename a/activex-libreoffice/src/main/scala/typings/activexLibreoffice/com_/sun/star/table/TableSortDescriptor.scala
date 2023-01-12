@@ -67,7 +67,8 @@ object TableSortDescriptor {
     __obj.asInstanceOf[TableSortDescriptor]
   }
   
-  extension [Self <: TableSortDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableSortDescriptor] (val x: Self) extends AnyVal {
     
     inline def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
     

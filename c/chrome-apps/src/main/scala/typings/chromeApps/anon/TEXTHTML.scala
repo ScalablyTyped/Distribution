@@ -19,7 +19,8 @@ object TEXTHTML {
     __obj.asInstanceOf[TEXTHTML]
   }
   
-  extension [Self <: TEXTHTML](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TEXTHTML] (val x: Self) extends AnyVal {
     
     inline def setTEXT_HTML(value: textHtml): Self = StObject.set(x, "TEXT_HTML", value.asInstanceOf[js.Any])
     

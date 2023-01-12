@@ -21,7 +21,8 @@ object RecipientDomain {
     __obj.asInstanceOf[RecipientDomain]
   }
   
-  extension [Self <: RecipientDomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientDomain] (val x: Self) extends AnyVal {
     
     inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object DeviceDefinitionCorrectiveAction {
     __obj.asInstanceOf[DeviceDefinitionCorrectiveAction]
   }
   
-  extension [Self <: DeviceDefinitionCorrectiveAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDefinitionCorrectiveAction] (val x: Self) extends AnyVal {
     
     inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

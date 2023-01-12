@@ -55,7 +55,8 @@ object PreviewServer {
     __obj.asInstanceOf[PreviewServer]
   }
   
-  extension [Self <: PreviewServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviewServer] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: ResolvedConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

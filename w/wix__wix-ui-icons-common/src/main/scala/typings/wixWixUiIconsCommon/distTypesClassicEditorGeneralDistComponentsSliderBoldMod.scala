@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsSliderBoldMod extends Shortcut
       __obj.asInstanceOf[SliderBoldProps]
     }
     
-    extension [Self <: SliderBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -95,7 +95,8 @@ object RoundStats {
     __obj.asInstanceOf[RoundStats]
   }
   
-  extension [Self <: RoundStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoundStats] (val x: Self) extends AnyVal {
     
     inline def setAssists(value: js.Array[Double]): Self = StObject.set(x, "assists", value.asInstanceOf[js.Any])
     

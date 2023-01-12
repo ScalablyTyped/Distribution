@@ -28,7 +28,8 @@ object RowDeletedEventUIParam {
     __obj.asInstanceOf[RowDeletedEventUIParam]
   }
   
-  extension [Self <: RowDeletedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowDeletedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

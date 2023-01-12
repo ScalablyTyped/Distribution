@@ -97,7 +97,8 @@ object KmlContainer {
     __obj.asInstanceOf[KmlContainer]
   }
   
-  extension [Self <: KmlContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlContainer] (val x: Self) extends AnyVal {
     
     inline def setGetElementById(value: String => KmlObject): Self = StObject.set(x, "getElementById", js.Any.fromFunction1(value))
     

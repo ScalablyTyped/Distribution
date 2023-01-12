@@ -16,7 +16,8 @@ object GoogleCloudSaasacceleratorManagementProvidersV1NotificationParameter {
     __obj.asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1NotificationParameter]
   }
   
-  extension [Self <: GoogleCloudSaasacceleratorManagementProvidersV1NotificationParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1NotificationParameter] (val x: Self) extends AnyVal {
     
     inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     

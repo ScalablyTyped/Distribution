@@ -18,7 +18,8 @@ object GetSMSAttributesResponse {
     __obj.asInstanceOf[GetSMSAttributesResponse]
   }
   
-  extension [Self <: GetSMSAttributesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSMSAttributesResponse] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: MapStringToString): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

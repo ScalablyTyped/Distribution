@@ -17,7 +17,8 @@ object ApplicationjsonAuthorCommitter {
     __obj.asInstanceOf[ApplicationjsonAuthorCommitter]
   }
   
-  extension [Self <: ApplicationjsonAuthorCommitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonAuthorCommitter] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: AuthorCommitter): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

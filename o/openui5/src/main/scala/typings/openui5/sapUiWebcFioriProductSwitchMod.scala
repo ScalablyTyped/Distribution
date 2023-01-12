@@ -221,7 +221,8 @@ object sapUiWebcFioriProductSwitchMod {
       __obj.asInstanceOf[ProductSwitchSettings]
     }
     
-    extension [Self <: ProductSwitchSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProductSwitchSettings] (val x: Self) extends AnyVal {
       
       inline def setItems(
         value: js.Array[IProductSwitchItem] | IProductSwitchItem | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

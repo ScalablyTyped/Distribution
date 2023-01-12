@@ -23,7 +23,8 @@ object ClarifyTextConfig {
     __obj.asInstanceOf[ClarifyTextConfig]
   }
   
-  extension [Self <: ClarifyTextConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClarifyTextConfig] (val x: Self) extends AnyVal {
     
     inline def setGranularity(value: ClarifyTextGranularity): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
     

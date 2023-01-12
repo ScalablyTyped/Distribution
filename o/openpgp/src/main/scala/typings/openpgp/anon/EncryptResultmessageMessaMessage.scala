@@ -24,7 +24,8 @@ object EncryptResultmessageMessaMessage {
     __obj.asInstanceOf[EncryptResultmessageMessaMessage]
   }
   
-  extension [Self <: EncryptResultmessageMessaMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptResultmessageMessaMessage] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: typings.openpgp.mod.message.Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

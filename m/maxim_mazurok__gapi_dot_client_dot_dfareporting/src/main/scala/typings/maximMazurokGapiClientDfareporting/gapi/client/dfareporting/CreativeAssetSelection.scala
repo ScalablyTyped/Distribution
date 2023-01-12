@@ -22,7 +22,8 @@ object CreativeAssetSelection {
     __obj.asInstanceOf[CreativeAssetSelection]
   }
   
-  extension [Self <: CreativeAssetSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreativeAssetSelection] (val x: Self) extends AnyVal {
     
     inline def setDefaultAssetId(value: String): Self = StObject.set(x, "defaultAssetId", value.asInstanceOf[js.Any])
     

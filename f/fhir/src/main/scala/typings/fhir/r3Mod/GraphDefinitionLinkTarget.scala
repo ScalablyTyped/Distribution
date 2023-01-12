@@ -40,7 +40,8 @@ object GraphDefinitionLinkTarget {
     __obj.asInstanceOf[GraphDefinitionLinkTarget]
   }
   
-  extension [Self <: GraphDefinitionLinkTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphDefinitionLinkTarget] (val x: Self) extends AnyVal {
     
     inline def setCompartment(value: js.Array[GraphDefinitionLinkTargetCompartment]): Self = StObject.set(x, "compartment", value.asInstanceOf[js.Any])
     

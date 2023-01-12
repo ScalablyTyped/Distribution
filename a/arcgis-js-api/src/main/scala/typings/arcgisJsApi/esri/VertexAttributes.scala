@@ -34,7 +34,8 @@ object VertexAttributes {
     __obj.asInstanceOf[VertexAttributes]
   }
   
-  extension [Self <: VertexAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VertexAttributes] (val x: Self) extends AnyVal {
     
     inline def setNormal(value: js.typedarray.Float32Array): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     

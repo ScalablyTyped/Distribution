@@ -48,7 +48,8 @@ object BorderColorProps {
     __obj.asInstanceOf[BorderColorProps[ThemeType, TVal]]
   }
   
-  extension [Self <: BorderColorProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (BorderColorProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderColorProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderColorProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setBorderBottomColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
     

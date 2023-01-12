@@ -18,7 +18,8 @@ object ClusterStatsClusterNetworkTypes {
     __obj.asInstanceOf[ClusterStatsClusterNetworkTypes]
   }
   
-  extension [Self <: ClusterStatsClusterNetworkTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsClusterNetworkTypes] (val x: Self) extends AnyVal {
     
     inline def setHttp_types(value: Record[String, integer]): Self = StObject.set(x, "http_types", value.asInstanceOf[js.Any])
     

@@ -150,7 +150,8 @@ object srcTypesMod {
       __obj.asInstanceOf[ComputePositionConfig]
     }
     
-    extension [Self <: ComputePositionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputePositionConfig] (val x: Self) extends AnyVal {
       
       inline def setMiddleware(value: js.Array[js.UndefOr[Middleware | Null | `false`]]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
       
@@ -198,7 +199,8 @@ object srcTypesMod {
       __obj.asInstanceOf[DetectOverflowOptions]
     }
     
-    extension [Self <: DetectOverflowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetectOverflowOptions] (val x: Self) extends AnyVal {
       
       inline def setAltBoundary(value: Boolean): Self = StObject.set(x, "altBoundary", value.asInstanceOf[js.Any])
       
@@ -227,7 +229,8 @@ object srcTypesMod {
       __obj.asInstanceOf[Elements]
     }
     
-    extension [Self <: Elements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Elements] (val x: Self) extends AnyVal {
       
       inline def setFloating(value: FloatingElement): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
       
@@ -253,7 +256,8 @@ object srcTypesMod {
       __obj.asInstanceOf[Middleware]
     }
     
-    extension [Self <: Middleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Middleware] (val x: Self) extends AnyVal {
       
       inline def setFn(value: MiddlewareArguments => Promisable[MiddlewareReturn]): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
       
@@ -303,7 +307,8 @@ object srcTypesMod {
       __obj.asInstanceOf[MiddlewareArguments]
     }
     
-    extension [Self <: MiddlewareArguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiddlewareArguments] (val x: Self) extends AnyVal {
       
       inline def setElements(value: Elements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
@@ -338,7 +343,8 @@ object srcTypesMod {
       __obj.asInstanceOf[NodeScroll]
     }
     
-    extension [Self <: NodeScroll](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeScroll] (val x: Self) extends AnyVal {
       
       inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
       
@@ -381,7 +387,8 @@ object srcTypesMod {
       __obj.asInstanceOf[Platform_]
     }
     
-    extension [Self <: Platform_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Platform_] (val x: Self) extends AnyVal {
       
       inline def setConvertOffsetParentRelativeRectToViewportRelativeRect(value: /* args */ OffsetParent => Promisable[Rect]): Self = StObject.set(x, "convertOffsetParentRelativeRectToViewportRelativeRect", js.Any.fromFunction1(value))
       
@@ -437,7 +444,8 @@ object srcTypesMod {
       __obj.asInstanceOf[SizeOptions]
     }
     
-    extension [Self <: SizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeOptions] (val x: Self) extends AnyVal {
       
       inline def setApply(value: MiddlewareArgumentsavaila => Promisable[Unit]): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -456,7 +464,8 @@ object srcTypesMod {
       __obj.asInstanceOf[VirtualElement]
     }
     
-    extension [Self <: VirtualElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualElement] (val x: Self) extends AnyVal {
       
       inline def setContextElement(value: typings.std.Element): Self = StObject.set(x, "contextElement", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object GetColumnStatisticsForPartitionResponse {
     __obj.asInstanceOf[GetColumnStatisticsForPartitionResponse]
   }
   
-  extension [Self <: GetColumnStatisticsForPartitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetColumnStatisticsForPartitionResponse] (val x: Self) extends AnyVal {
     
     inline def setColumnStatisticsList(value: ColumnStatisticsList): Self = StObject.set(x, "ColumnStatisticsList", value.asInstanceOf[js.Any])
     

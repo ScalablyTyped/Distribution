@@ -16,7 +16,8 @@ object DocumentTimelineOptions {
     __obj.asInstanceOf[DocumentTimelineOptions]
   }
   
-  extension [Self <: DocumentTimelineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentTimelineOptions] (val x: Self) extends AnyVal {
     
     inline def setOriginTime(value: DOMHighResTimeStamp): Self = StObject.set(x, "originTime", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object MountPoint {
     __obj.asInstanceOf[MountPoint]
   }
   
-  extension [Self <: MountPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MountPoint] (val x: Self) extends AnyVal {
     
     inline def setContainerPath(value: String): Self = StObject.set(x, "containerPath", value.asInstanceOf[js.Any])
     

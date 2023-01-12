@@ -28,7 +28,8 @@ object VisibilityConfig {
     __obj.asInstanceOf[VisibilityConfig]
   }
   
-  extension [Self <: VisibilityConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisibilityConfig] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchMetricsEnabled(value: Boolean): Self = StObject.set(x, "CloudWatchMetricsEnabled", value.asInstanceOf[js.Any])
     

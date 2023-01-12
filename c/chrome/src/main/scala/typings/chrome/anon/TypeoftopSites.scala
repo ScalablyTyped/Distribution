@@ -16,7 +16,8 @@ object TypeoftopSites {
     __obj.asInstanceOf[TypeoftopSites]
   }
   
-  extension [Self <: TypeoftopSites](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeoftopSites] (val x: Self) extends AnyVal {
     
     inline def setGet(value: js.Function1[/* data */ js.Array[MostVisitedURL], Unit] => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }

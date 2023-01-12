@@ -25,7 +25,8 @@ object ClusterIstio {
     __obj.asInstanceOf[ClusterIstio]
   }
   
-  extension [Self <: ClusterIstio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterIstio] (val x: Self) extends AnyVal {
     
     inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     

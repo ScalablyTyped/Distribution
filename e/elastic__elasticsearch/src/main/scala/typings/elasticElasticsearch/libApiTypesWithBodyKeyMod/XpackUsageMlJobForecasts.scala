@@ -17,7 +17,8 @@ object XpackUsageMlJobForecasts {
     __obj.asInstanceOf[XpackUsageMlJobForecasts]
   }
   
-  extension [Self <: XpackUsageMlJobForecasts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageMlJobForecasts] (val x: Self) extends AnyVal {
     
     inline def setForecasted_jobs(value: long): Self = StObject.set(x, "forecasted_jobs", value.asInstanceOf[js.Any])
     

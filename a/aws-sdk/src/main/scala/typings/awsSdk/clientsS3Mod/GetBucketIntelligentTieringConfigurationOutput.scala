@@ -18,7 +18,8 @@ object GetBucketIntelligentTieringConfigurationOutput {
     __obj.asInstanceOf[GetBucketIntelligentTieringConfigurationOutput]
   }
   
-  extension [Self <: GetBucketIntelligentTieringConfigurationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketIntelligentTieringConfigurationOutput] (val x: Self) extends AnyVal {
     
     inline def setIntelligentTieringConfiguration(value: IntelligentTieringConfiguration): Self = StObject.set(x, "IntelligentTieringConfiguration", value.asInstanceOf[js.Any])
     

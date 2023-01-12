@@ -23,7 +23,8 @@ object ResourceGroupTag {
     __obj.asInstanceOf[ResourceGroupTag]
   }
   
-  extension [Self <: ResourceGroupTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceGroupTag] (val x: Self) extends AnyVal {
     
     inline def setKey(value: TagKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

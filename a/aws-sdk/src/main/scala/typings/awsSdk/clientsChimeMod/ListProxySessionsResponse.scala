@@ -23,7 +23,8 @@ object ListProxySessionsResponse {
     __obj.asInstanceOf[ListProxySessionsResponse]
   }
   
-  extension [Self <: ListProxySessionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProxySessionsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

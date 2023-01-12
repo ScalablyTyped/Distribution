@@ -94,7 +94,8 @@ object distTypesThemeConfigMod {
       __obj.asInstanceOf[ThemeConfig]
     }
     
-    extension [Self <: ThemeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeConfig] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Mode | Type): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

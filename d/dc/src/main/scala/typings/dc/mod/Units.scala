@@ -49,7 +49,8 @@ object Units {
     __obj.asInstanceOf[Units]
   }
   
-  extension [Self <: Units](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Units] (val x: Self) extends AnyVal {
     
     inline def setFp(value: FloatPointUnits): Self = StObject.set(x, "fp", value.asInstanceOf[js.Any])
     

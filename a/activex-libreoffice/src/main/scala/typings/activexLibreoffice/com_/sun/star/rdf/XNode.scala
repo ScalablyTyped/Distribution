@@ -29,7 +29,8 @@ object XNode {
     __obj.asInstanceOf[XNode]
   }
   
-  extension [Self <: XNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNode] (val x: Self) extends AnyVal {
     
     inline def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
   }

@@ -30,7 +30,8 @@ object TestResult {
     __obj.asInstanceOf[TestResult]
   }
   
-  extension [Self <: TestResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
     
     inline def setDepGraphData(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DepGraphData */ Any

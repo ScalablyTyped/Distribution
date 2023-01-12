@@ -34,7 +34,8 @@ object SetCredentialsResponse {
     __obj.asInstanceOf[SetCredentialsResponse]
   }
   
-  extension [Self <: SetCredentialsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetCredentialsResponse] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => Any): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

@@ -21,7 +21,8 @@ object ShippingsettingsListResponse {
     __obj.asInstanceOf[ShippingsettingsListResponse]
   }
   
-  extension [Self <: ShippingsettingsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShippingsettingsListResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

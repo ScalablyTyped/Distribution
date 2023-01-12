@@ -19,7 +19,8 @@ object RightElementPressEvent {
     __obj.asInstanceOf[RightElementPressEvent]
   }
   
-  extension [Self <: RightElementPressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RightElementPressEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

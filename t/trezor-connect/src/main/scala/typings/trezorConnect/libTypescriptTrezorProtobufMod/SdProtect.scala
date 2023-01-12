@@ -15,7 +15,8 @@ object SdProtect {
     __obj.asInstanceOf[SdProtect]
   }
   
-  extension [Self <: SdProtect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SdProtect] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: SdProtectOperationType): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }

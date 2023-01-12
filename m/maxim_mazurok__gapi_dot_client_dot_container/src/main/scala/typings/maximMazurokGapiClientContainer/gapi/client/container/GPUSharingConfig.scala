@@ -19,7 +19,8 @@ object GPUSharingConfig {
     __obj.asInstanceOf[GPUSharingConfig]
   }
   
-  extension [Self <: GPUSharingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUSharingConfig] (val x: Self) extends AnyVal {
     
     inline def setGpuSharingStrategy(value: String): Self = StObject.set(x, "gpuSharingStrategy", value.asInstanceOf[js.Any])
     

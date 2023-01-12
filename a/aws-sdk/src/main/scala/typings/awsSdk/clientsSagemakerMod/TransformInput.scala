@@ -33,7 +33,8 @@ object TransformInput {
     __obj.asInstanceOf[TransformInput]
   }
   
-  extension [Self <: TransformInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformInput] (val x: Self) extends AnyVal {
     
     inline def setCompressionType(value: CompressionType): Self = StObject.set(x, "CompressionType", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object GetUserProfileSuccessCallbackResult {
     __obj.asInstanceOf[GetUserProfileSuccessCallbackResult]
   }
   
-  extension [Self <: GetUserProfileSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUserProfileSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setCloudID(value: String): Self = StObject.set(x, "cloudID", value.asInstanceOf[js.Any])
     

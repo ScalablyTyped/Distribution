@@ -35,7 +35,8 @@ object IsPreferred {
     __obj.asInstanceOf[IsPreferred]
   }
   
-  extension [Self <: IsPreferred](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsPreferred] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

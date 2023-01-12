@@ -17,7 +17,8 @@ object SchedulerCurrentTimeMarker {
     __obj.asInstanceOf[SchedulerCurrentTimeMarker]
   }
   
-  extension [Self <: SchedulerCurrentTimeMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerCurrentTimeMarker] (val x: Self) extends AnyVal {
     
     inline def setUpdateInterval(value: Double): Self = StObject.set(x, "updateInterval", value.asInstanceOf[js.Any])
     

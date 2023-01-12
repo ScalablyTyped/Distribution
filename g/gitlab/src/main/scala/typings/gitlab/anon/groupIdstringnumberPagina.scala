@@ -29,7 +29,8 @@ object groupIdstringnumberPagina {
     __obj.asInstanceOf[groupIdstringnumberPagina]
   }
   
-  extension [Self <: groupIdstringnumberPagina](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: groupIdstringnumberPagina] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: String | Double): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     

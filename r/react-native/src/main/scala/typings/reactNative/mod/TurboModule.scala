@@ -15,7 +15,8 @@ object TurboModule {
     __obj.asInstanceOf[TurboModule]
   }
   
-  extension [Self <: TurboModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TurboModule] (val x: Self) extends AnyVal {
     
     inline def setGetConstants(value: () => js.Object): Self = StObject.set(x, "getConstants", js.Any.fromFunction0(value))
     

@@ -21,7 +21,8 @@ object PullSymbolInfo {
     __obj.asInstanceOf[PullSymbolInfo]
   }
   
-  extension [Self <: PullSymbolInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullSymbolInfo] (val x: Self) extends AnyVal {
     
     inline def setAliasSymbol(value: PullTypeAliasSymbol): Self = StObject.set(x, "aliasSymbol", value.asInstanceOf[js.Any])
     

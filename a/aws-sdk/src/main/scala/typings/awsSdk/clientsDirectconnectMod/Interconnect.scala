@@ -88,7 +88,8 @@ object Interconnect {
     __obj.asInstanceOf[Interconnect]
   }
   
-  extension [Self <: Interconnect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interconnect] (val x: Self) extends AnyVal {
     
     inline def setAwsDevice(value: AwsDevice): Self = StObject.set(x, "awsDevice", value.asInstanceOf[js.Any])
     

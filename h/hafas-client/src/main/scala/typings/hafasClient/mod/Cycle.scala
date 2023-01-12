@@ -19,7 +19,8 @@ object Cycle {
     __obj.asInstanceOf[Cycle]
   }
   
-  extension [Self <: Cycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cycle] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

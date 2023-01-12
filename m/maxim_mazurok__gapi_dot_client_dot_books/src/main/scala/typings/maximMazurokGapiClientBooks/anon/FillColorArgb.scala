@@ -25,7 +25,8 @@ object FillColorArgb {
     __obj.asInstanceOf[FillColorArgb]
   }
   
-  extension [Self <: FillColorArgb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillColorArgb] (val x: Self) extends AnyVal {
     
     inline def setFillColorArgb(value: String): Self = StObject.set(x, "fillColorArgb", value.asInstanceOf[js.Any])
     

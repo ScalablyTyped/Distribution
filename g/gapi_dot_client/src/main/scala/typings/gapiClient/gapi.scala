@@ -43,7 +43,8 @@ object gapi {
         __obj.asInstanceOf[GoogleApiOAuth2TokenObject]
       }
       
-      extension [Self <: GoogleApiOAuth2TokenObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GoogleApiOAuth2TokenObject] (val x: Self) extends AnyVal {
         
         inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
         
@@ -123,7 +124,8 @@ object gapi {
         __obj.asInstanceOf[Response[T]]
       }
       
-      extension [Self <: Response[?], T](x: Self & Response[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Response[?], T] (val x: Self & Response[T]) extends AnyVal {
         
         inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         

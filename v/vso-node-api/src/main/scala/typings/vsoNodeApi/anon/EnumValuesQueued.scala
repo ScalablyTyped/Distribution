@@ -15,7 +15,8 @@ object EnumValuesQueued {
     __obj.asInstanceOf[EnumValuesQueued]
   }
   
-  extension [Self <: EnumValuesQueued](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesQueued] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Queued): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

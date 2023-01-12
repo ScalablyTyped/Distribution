@@ -36,7 +36,8 @@ object XDrawPageSupplier {
     __obj.asInstanceOf[XDrawPageSupplier]
   }
   
-  extension [Self <: XDrawPageSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDrawPageSupplier] (val x: Self) extends AnyVal {
     
     inline def setDrawPage(value: XDrawPage): Self = StObject.set(x, "DrawPage", value.asInstanceOf[js.Any])
     

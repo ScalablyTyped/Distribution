@@ -98,7 +98,8 @@ object LightTextureAtlas {
     __obj.asInstanceOf[LightTextureAtlas]
   }
   
-  extension [Self <: LightTextureAtlas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LightTextureAtlas] (val x: Self) extends AnyVal {
     
     inline def setAllocateCookieAtlas(value: Any => Unit): Self = StObject.set(x, "allocateCookieAtlas", js.Any.fromFunction1(value))
     

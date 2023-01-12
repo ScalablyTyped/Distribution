@@ -18,7 +18,8 @@ object GetSettingSuccessCallbackResult {
     __obj.asInstanceOf[GetSettingSuccessCallbackResult]
   }
   
-  extension [Self <: GetSettingSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSettingSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setAuthSetting(value: AuthSetting): Self = StObject.set(x, "authSetting", value.asInstanceOf[js.Any])
   }

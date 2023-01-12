@@ -69,7 +69,8 @@ object KafkaIntegration {
     /* 0 */ val JSON: typings.rockset.distCodegenApiMod.KafkaIntegration.KafkaDataFormatEnum.JSON & Double = js.native
   }
   
-  extension [Self <: KafkaIntegration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaIntegration] (val x: Self) extends AnyVal {
     
     inline def setConnection_string(value: String): Self = StObject.set(x, "connection_string", value.asInstanceOf[js.Any])
     

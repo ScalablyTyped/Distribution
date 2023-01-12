@@ -60,7 +60,8 @@ object distTypesResponsiveVoronoiMod {
       __obj.asInstanceOf[ResponsiveVoronoiProps]
     }
     
-    extension [Self <: ResponsiveVoronoiProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveVoronoiProps] (val x: Self) extends AnyVal {
       
       inline def setCellLineColor(value: String): Self = StObject.set(x, "cellLineColor", value.asInstanceOf[js.Any])
       

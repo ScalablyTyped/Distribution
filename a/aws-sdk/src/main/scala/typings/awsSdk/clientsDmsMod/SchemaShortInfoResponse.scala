@@ -38,7 +38,8 @@ object SchemaShortInfoResponse {
     __obj.asInstanceOf[SchemaShortInfoResponse]
   }
   
-  extension [Self <: SchemaShortInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaShortInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setDatabaseId(value: String): Self = StObject.set(x, "DatabaseId", value.asInstanceOf[js.Any])
     

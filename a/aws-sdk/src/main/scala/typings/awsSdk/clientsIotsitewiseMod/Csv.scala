@@ -18,7 +18,8 @@ object Csv {
     __obj.asInstanceOf[Csv]
   }
   
-  extension [Self <: Csv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Csv] (val x: Self) extends AnyVal {
     
     inline def setColumnNames(value: ColumnNames): Self = StObject.set(x, "columnNames", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object AdCompanionsParam {
     __obj.asInstanceOf[AdCompanionsParam]
   }
   
-  extension [Self <: AdCompanionsParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdCompanionsParam] (val x: Self) extends AnyVal {
     
     inline def setCompanions(value: js.Array[Any]): Self = StObject.set(x, "companions", value.asInstanceOf[js.Any])
     

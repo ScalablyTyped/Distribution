@@ -23,7 +23,8 @@ object PortalStatus {
     __obj.asInstanceOf[PortalStatus]
   }
   
-  extension [Self <: PortalStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalStatus] (val x: Self) extends AnyVal {
     
     inline def setError(value: MonitorErrorDetails): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object OrdersValidate {
       __obj.asInstanceOf[RequestHeaders]
     }
     
-    extension [Self <: RequestHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestHeaders] (val x: Self) extends AnyVal {
       
       inline def `setPayPal-Client-Metadata-Id`(value: String): Self = StObject.set(x, "PayPal-Client-Metadata-Id", value.asInstanceOf[js.Any])
       

@@ -206,7 +206,8 @@ object distGithubApiMod {
       __obj.asInstanceOf[SearchResult[T]]
     }
     
-    extension [Self <: SearchResult[?], T](x: Self & SearchResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResult[?], T] (val x: Self & SearchResult[T]) extends AnyVal {
       
       inline def setResult(value: T): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object VastRequestOptions {
     __obj.asInstanceOf[VastRequestOptions]
   }
   
-  extension [Self <: VastRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VastRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setResolveAll(value: Boolean): Self = StObject.set(x, "resolveAll", value.asInstanceOf[js.Any])
     

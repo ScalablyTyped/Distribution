@@ -23,7 +23,8 @@ object FilterDate {
     __obj.asInstanceOf[FilterDate]
   }
   
-  extension [Self <: FilterDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterDate] (val x: Self) extends AnyVal {
     
     inline def setExcludeDates(value: js.Array[js.Date]): Self = StObject.set(x, "excludeDates", value.asInstanceOf[js.Any])
     

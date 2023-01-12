@@ -50,7 +50,8 @@ object PartialBadgeProps {
     __obj.asInstanceOf[PartialBadgeProps]
   }
   
-  extension [Self <: PartialBadgeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBadgeProps] (val x: Self) extends AnyVal {
     
     inline def setBadgeStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "badgeStyle", value.asInstanceOf[js.Any])
     

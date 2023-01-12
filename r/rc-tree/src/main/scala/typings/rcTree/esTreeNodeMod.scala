@@ -128,7 +128,8 @@ object esTreeNodeMod extends Shortcut {
       __obj.asInstanceOf[InternalTreeNodeProps]
     }
     
-    extension [Self <: InternalTreeNodeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalTreeNodeProps] (val x: Self) extends AnyVal {
       
       inline def setContext(value: TreeContextProps[DataNode]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object esTreeNodeMod extends Shortcut {
       __obj.asInstanceOf[TreeNodeProps[TreeDataType]]
     }
     
-    extension [Self <: TreeNodeProps[?], TreeDataType /* <: BasicDataNode */](x: Self & TreeNodeProps[TreeDataType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeNodeProps[?], TreeDataType /* <: BasicDataNode */] (val x: Self & TreeNodeProps[TreeDataType]) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -355,7 +357,8 @@ object esTreeNodeMod extends Shortcut {
       __obj.asInstanceOf[TreeNodeState]
     }
     
-    extension [Self <: TreeNodeState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeNodeState] (val x: Self) extends AnyVal {
       
       inline def setDragNodeHighlight(value: Boolean): Self = StObject.set(x, "dragNodeHighlight", value.asInstanceOf[js.Any])
     }

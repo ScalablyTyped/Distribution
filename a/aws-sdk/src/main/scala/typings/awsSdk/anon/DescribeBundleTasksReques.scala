@@ -38,7 +38,8 @@ object DescribeBundleTasksReques {
     __obj.asInstanceOf[DescribeBundleTasksReques]
   }
   
-  extension [Self <: DescribeBundleTasksReques](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBundleTasksReques] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

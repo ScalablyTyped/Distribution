@@ -40,7 +40,8 @@ object `0Reverse` {
     __obj.asInstanceOf[`0Reverse`[L, LO, I]]
   }
   
-  extension [Self <: `0Reverse`[?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, LO /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */](x: Self & (`0Reverse`[L, LO, I])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0Reverse`[?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, LO /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */] (val x: Self & (`0Reverse`[L, LO, I])) extends AnyVal {
     
     inline def set0(
       value: __Reverse[

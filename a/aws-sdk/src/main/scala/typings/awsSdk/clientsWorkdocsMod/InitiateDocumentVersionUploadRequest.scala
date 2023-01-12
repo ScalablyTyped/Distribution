@@ -53,7 +53,8 @@ object InitiateDocumentVersionUploadRequest {
     __obj.asInstanceOf[InitiateDocumentVersionUploadRequest]
   }
   
-  extension [Self <: InitiateDocumentVersionUploadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitiateDocumentVersionUploadRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     

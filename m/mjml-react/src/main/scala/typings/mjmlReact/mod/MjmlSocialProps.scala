@@ -44,7 +44,8 @@ object MjmlSocialProps {
     __obj.asInstanceOf[MjmlSocialProps]
   }
   
-  extension [Self <: MjmlSocialProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MjmlSocialProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -113,7 +113,8 @@ object FolderItemV2 {
     __obj.asInstanceOf[FolderItemV2]
   }
   
-  extension [Self <: FolderItemV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderItemV2] (val x: Self) extends AnyVal {
     
     inline def setCompletedDateTime(value: String): Self = StObject.set(x, "completedDateTime", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object JdbcSQLXML {
     __obj.asInstanceOf[JdbcSQLXML]
   }
   
-  extension [Self <: JdbcSQLXML](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JdbcSQLXML] (val x: Self) extends AnyVal {
     
     inline def setFree(value: () => Unit): Self = StObject.set(x, "free", js.Any.fromFunction0(value))
     

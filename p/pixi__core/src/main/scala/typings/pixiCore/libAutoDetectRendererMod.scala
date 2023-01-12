@@ -41,7 +41,8 @@ object libAutoDetectRendererMod {
       __obj.asInstanceOf[IRendererOptionsAuto]
     }
     
-    extension [Self <: IRendererOptionsAuto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRendererOptionsAuto] (val x: Self) extends AnyVal {
       
       inline def setForceCanvas(value: Boolean): Self = StObject.set(x, "forceCanvas", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object UnifiedRoleManagementPolicyEnablementRule {
     __obj.asInstanceOf[UnifiedRoleManagementPolicyEnablementRule]
   }
   
-  extension [Self <: UnifiedRoleManagementPolicyEnablementRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnifiedRoleManagementPolicyEnablementRule] (val x: Self) extends AnyVal {
     
     inline def setEnabledRules(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "enabledRules", value.asInstanceOf[js.Any])
     

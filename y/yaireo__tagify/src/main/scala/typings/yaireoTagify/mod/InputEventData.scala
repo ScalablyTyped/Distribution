@@ -25,7 +25,8 @@ object InputEventData {
     __obj.asInstanceOf[InputEventData[T]]
   }
   
-  extension [Self <: InputEventData[?], T /* <: BaseTagData */](x: Self & InputEventData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputEventData[?], T /* <: BaseTagData */] (val x: Self & InputEventData[T]) extends AnyVal {
     
     inline def setInputElm(value: HTMLInputElement | HTMLTextAreaElement): Self = StObject.set(x, "inputElm", value.asInstanceOf[js.Any])
     

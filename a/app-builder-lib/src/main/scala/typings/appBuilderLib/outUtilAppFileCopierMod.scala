@@ -58,7 +58,8 @@ object outUtilAppFileCopierMod {
       __obj.asInstanceOf[ResolvedFileSet]
     }
     
-    extension [Self <: ResolvedFileSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedFileSet] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       

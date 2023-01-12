@@ -20,7 +20,8 @@ object SubtypeGroupLayerEditingInfo {
     __obj.asInstanceOf[SubtypeGroupLayerEditingInfo]
   }
   
-  extension [Self <: SubtypeGroupLayerEditingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtypeGroupLayerEditingInfo] (val x: Self) extends AnyVal {
     
     inline def setLastEditDate(value: js.Date): Self = StObject.set(x, "lastEditDate", value.asInstanceOf[js.Any])
   }

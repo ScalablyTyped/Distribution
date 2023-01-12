@@ -18,7 +18,8 @@ object GetWorkgroupResponse {
     __obj.asInstanceOf[GetWorkgroupResponse]
   }
   
-  extension [Self <: GetWorkgroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWorkgroupResponse] (val x: Self) extends AnyVal {
     
     inline def setWorkgroup(value: Workgroup): Self = StObject.set(x, "workgroup", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object OnSeekData {
     __obj.asInstanceOf[OnSeekData]
   }
   
-  extension [Self <: OnSeekData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnSeekData] (val x: Self) extends AnyVal {
     
     inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     

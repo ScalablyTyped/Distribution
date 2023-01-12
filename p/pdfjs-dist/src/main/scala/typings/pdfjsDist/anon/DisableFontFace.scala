@@ -23,7 +23,8 @@ object DisableFontFace {
     __obj.asInstanceOf[DisableFontFace]
   }
   
-  extension [Self <: DisableFontFace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableFontFace] (val x: Self) extends AnyVal {
     
     inline def setDisableFontFace(value: Boolean): Self = StObject.set(x, "disableFontFace", value.asInstanceOf[js.Any])
     

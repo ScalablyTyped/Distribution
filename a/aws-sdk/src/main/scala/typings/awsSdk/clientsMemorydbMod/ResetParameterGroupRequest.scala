@@ -28,7 +28,8 @@ object ResetParameterGroupRequest {
     __obj.asInstanceOf[ResetParameterGroupRequest]
   }
   
-  extension [Self <: ResetParameterGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetParameterGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setAllParameters(value: Boolean): Self = StObject.set(x, "AllParameters", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object Typeofstyles {
     __obj.asInstanceOf[Typeofstyles]
   }
   
-  extension [Self <: Typeofstyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofstyles] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: Double & RegisteredStyleBrand): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

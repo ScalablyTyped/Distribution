@@ -100,7 +100,8 @@ object mod {
       __obj.asInstanceOf[PaginationData]
     }
     
-    extension [Self <: PaginationData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationData] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object mod {
       __obj.asInstanceOf[PaginationLocale]
     }
     
-    extension [Self <: PaginationLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationLocale] (val x: Self) extends AnyVal {
       
       inline def setItems_per_page(value: String): Self = StObject.set(x, "items_per_page", value.asInstanceOf[js.Any])
       
@@ -312,7 +314,8 @@ object mod {
       __obj.asInstanceOf[PaginationProps]
     }
     
-    extension [Self <: PaginationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object SendMessageToExtension {
     __obj.asInstanceOf[SendMessageToExtension]
   }
   
-  extension [Self <: SendMessageToExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendMessageToExtension] (val x: Self) extends AnyVal {
     
     inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     

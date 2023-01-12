@@ -21,7 +21,8 @@ object StoreOptions {
     __obj.asInstanceOf[StoreOptions]
   }
   
-  extension [Self <: StoreOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreOptions] (val x: Self) extends AnyVal {
     
     inline def setCreator(value: Any): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
     

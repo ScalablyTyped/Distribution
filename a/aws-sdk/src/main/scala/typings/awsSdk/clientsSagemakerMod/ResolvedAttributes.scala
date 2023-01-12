@@ -22,7 +22,8 @@ object ResolvedAttributes {
     __obj.asInstanceOf[ResolvedAttributes]
   }
   
-  extension [Self <: ResolvedAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedAttributes] (val x: Self) extends AnyVal {
     
     inline def setAutoMLJobObjective(value: AutoMLJobObjective): Self = StObject.set(x, "AutoMLJobObjective", value.asInstanceOf[js.Any])
     

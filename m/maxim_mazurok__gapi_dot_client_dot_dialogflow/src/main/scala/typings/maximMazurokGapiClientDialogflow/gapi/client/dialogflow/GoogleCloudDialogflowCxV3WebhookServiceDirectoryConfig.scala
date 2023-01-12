@@ -22,7 +22,8 @@ object GoogleCloudDialogflowCxV3WebhookServiceDirectoryConfig {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3WebhookServiceDirectoryConfig]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3WebhookServiceDirectoryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3WebhookServiceDirectoryConfig] (val x: Self) extends AnyVal {
     
     inline def setGenericWebService(value: GoogleCloudDialogflowCxV3WebhookGenericWebService): Self = StObject.set(x, "genericWebService", value.asInstanceOf[js.Any])
     

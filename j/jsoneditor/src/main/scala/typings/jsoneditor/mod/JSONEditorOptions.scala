@@ -391,7 +391,8 @@ object JSONEditorOptions {
     __obj.asInstanceOf[JSONEditorOptions]
   }
   
-  extension [Self <: JSONEditorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONEditorOptions] (val x: Self) extends AnyVal {
     
     inline def setAce(value: Ace): Self = StObject.set(x, "ace", value.asInstanceOf[js.Any])
     

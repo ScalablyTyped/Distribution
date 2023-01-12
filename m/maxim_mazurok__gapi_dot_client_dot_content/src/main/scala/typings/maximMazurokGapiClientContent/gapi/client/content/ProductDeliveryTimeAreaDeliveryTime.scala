@@ -19,7 +19,8 @@ object ProductDeliveryTimeAreaDeliveryTime {
     __obj.asInstanceOf[ProductDeliveryTimeAreaDeliveryTime]
   }
   
-  extension [Self <: ProductDeliveryTimeAreaDeliveryTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductDeliveryTimeAreaDeliveryTime] (val x: Self) extends AnyVal {
     
     inline def setDeliveryArea(value: DeliveryArea): Self = StObject.set(x, "deliveryArea", value.asInstanceOf[js.Any])
     

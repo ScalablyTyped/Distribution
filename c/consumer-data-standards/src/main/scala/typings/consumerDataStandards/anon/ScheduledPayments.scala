@@ -21,7 +21,8 @@ object ScheduledPayments {
     __obj.asInstanceOf[ScheduledPayments]
   }
   
-  extension [Self <: ScheduledPayments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledPayments] (val x: Self) extends AnyVal {
     
     inline def setScheduledPayments(value: js.Array[From]): Self = StObject.set(x, "scheduledPayments", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object typesGetChannelsInputMod {
       __obj.asInstanceOf[GetChannelsInput]
     }
     
-    extension [Self <: GetChannelsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetChannelsInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

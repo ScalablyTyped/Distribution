@@ -33,7 +33,8 @@ object GetCostAndUsageWithResourcesResponse {
     __obj.asInstanceOf[GetCostAndUsageWithResourcesResponse]
   }
   
-  extension [Self <: GetCostAndUsageWithResourcesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCostAndUsageWithResourcesResponse] (val x: Self) extends AnyVal {
     
     inline def setDimensionValueAttributes(value: DimensionValuesWithAttributesList): Self = StObject.set(x, "DimensionValueAttributes", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ASPxClientVerticalGridFocusedCellChangingEventArgs {
     __obj.asInstanceOf[ASPxClientVerticalGridFocusedCellChangingEventArgs]
   }
   
-  extension [Self <: ASPxClientVerticalGridFocusedCellChangingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientVerticalGridFocusedCellChangingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCellInfo(value: ASPxClientVerticalGridCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
   }

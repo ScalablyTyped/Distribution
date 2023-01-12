@@ -22,7 +22,8 @@ object getSummaryDataOptions {
     __obj.asInstanceOf[getSummaryDataOptions]
   }
   
-  extension [Self <: getSummaryDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: getSummaryDataOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreAliases(value: Boolean): Self = StObject.set(x, "ignoreAliases", value.asInstanceOf[js.Any])
     

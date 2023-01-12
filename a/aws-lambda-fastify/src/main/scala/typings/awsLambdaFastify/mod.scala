@@ -142,7 +142,8 @@ object mod {
       __obj.asInstanceOf[AwsLambdaFastifyOptions]
     }
     
-    extension [Self <: AwsLambdaFastifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwsLambdaFastifyOptions] (val x: Self) extends AnyVal {
       
       inline def setBinaryMimeTypes(value: js.Array[String]): Self = StObject.set(x, "binaryMimeTypes", value.asInstanceOf[js.Any])
       

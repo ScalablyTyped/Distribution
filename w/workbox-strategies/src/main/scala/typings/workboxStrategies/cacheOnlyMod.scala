@@ -47,7 +47,8 @@ object cacheOnlyMod {
       __obj.asInstanceOf[CacheOnlyOptions]
     }
     
-    extension [Self <: CacheOnlyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheOnlyOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
       

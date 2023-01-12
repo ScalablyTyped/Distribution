@@ -63,7 +63,8 @@ object DescribeApiDestinationResponse {
     __obj.asInstanceOf[DescribeApiDestinationResponse]
   }
   
-  extension [Self <: DescribeApiDestinationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeApiDestinationResponse] (val x: Self) extends AnyVal {
     
     inline def setApiDestinationArn(value: ApiDestinationArn): Self = StObject.set(x, "ApiDestinationArn", value.asInstanceOf[js.Any])
     

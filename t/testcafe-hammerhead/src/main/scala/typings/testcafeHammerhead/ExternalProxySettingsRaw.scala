@@ -17,7 +17,8 @@ object ExternalProxySettingsRaw {
     __obj.asInstanceOf[ExternalProxySettingsRaw]
   }
   
-  extension [Self <: ExternalProxySettingsRaw](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalProxySettingsRaw] (val x: Self) extends AnyVal {
     
     inline def setBypassRules(value: js.Array[String]): Self = StObject.set(x, "bypassRules", value.asInstanceOf[js.Any])
     

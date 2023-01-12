@@ -21,7 +21,8 @@ object IGeocoderElement {
     __obj.asInstanceOf[IGeocoderElement]
   }
   
-  extension [Self <: IGeocoderElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeocoderElement] (val x: Self) extends AnyVal {
     
     inline def setCloseButton(value: HTMLElement): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     

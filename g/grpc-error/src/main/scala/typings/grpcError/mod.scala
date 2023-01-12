@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[GRPCError]
     }
     
-    extension [Self <: GRPCError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GRPCError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

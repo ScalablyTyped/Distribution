@@ -50,7 +50,8 @@ object CreateHsmRequest {
     __obj.asInstanceOf[CreateHsmRequest]
   }
   
-  extension [Self <: CreateHsmRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateHsmRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

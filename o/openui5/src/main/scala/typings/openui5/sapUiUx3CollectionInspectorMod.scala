@@ -753,7 +753,8 @@ object sapUiUx3CollectionInspectorMod {
       __obj.asInstanceOf[CollectionInspectorSettings]
     }
     
-    extension [Self <: CollectionInspectorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionInspectorSettings] (val x: Self) extends AnyVal {
       
       inline def setCollectionSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "collectionSelected", js.Any.fromFunction1(value))
       

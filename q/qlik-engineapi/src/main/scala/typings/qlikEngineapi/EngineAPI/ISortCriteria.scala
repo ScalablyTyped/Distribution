@@ -58,7 +58,8 @@ object ISortCriteria {
     __obj.asInstanceOf[ISortCriteria]
   }
   
-  extension [Self <: ISortCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISortCriteria] (val x: Self) extends AnyVal {
     
     inline def setQExpression(value: IValueExpr): Self = StObject.set(x, "qExpression", value.asInstanceOf[js.Any])
     

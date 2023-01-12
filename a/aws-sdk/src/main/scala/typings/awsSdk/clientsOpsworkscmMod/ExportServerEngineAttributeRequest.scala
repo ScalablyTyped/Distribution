@@ -28,7 +28,8 @@ object ExportServerEngineAttributeRequest {
     __obj.asInstanceOf[ExportServerEngineAttributeRequest]
   }
   
-  extension [Self <: ExportServerEngineAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportServerEngineAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setExportAttributeName(value: String): Self = StObject.set(x, "ExportAttributeName", value.asInstanceOf[js.Any])
     

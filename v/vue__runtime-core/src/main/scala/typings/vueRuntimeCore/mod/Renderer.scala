@@ -33,7 +33,8 @@ object Renderer {
     __obj.asInstanceOf[Renderer[HostElement]]
   }
   
-  extension [Self <: Renderer[?], HostElement](x: Self & Renderer[HostElement]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Renderer[?], HostElement] (val x: Self & Renderer[HostElement]) extends AnyVal {
     
     inline def setCreateApp(
       value: (/* rootComponent */ Component[Any, Any, Any, ComputedOptions, MethodOptions], /* rootProps */ js.UndefOr[Data | Null]) => App[HostElement]

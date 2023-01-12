@@ -28,7 +28,8 @@ object ColorMixins {
     __obj.asInstanceOf[ColorMixins[ES]]
   }
   
-  extension [Self <: ColorMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & ColorMixins[ES]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & ColorMixins[ES]) extends AnyVal {
     
     inline def setColor(value: Color | Gradient | ES): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

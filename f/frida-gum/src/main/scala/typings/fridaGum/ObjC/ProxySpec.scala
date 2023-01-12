@@ -41,7 +41,8 @@ object ProxySpec {
     __obj.asInstanceOf[ProxySpec[D, T, S]]
   }
   
-  extension [Self <: ProxySpec[?, ?, ?], D /* <: ProxyData */, T, S](x: Self & (ProxySpec[D, T, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxySpec[?, ?, ?], D /* <: ProxyData */, T, S] (val x: Self & (ProxySpec[D, T, S])) extends AnyVal {
     
     inline def setEvents(value: ProxyEventCallbacks[D, T, S]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

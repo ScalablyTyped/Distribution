@@ -55,7 +55,8 @@ object CreateConfig {
     __obj.asInstanceOf[CreateConfig]
   }
   
-  extension [Self <: CreateConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConfig] (val x: Self) extends AnyVal {
     
     inline def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
     

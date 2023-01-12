@@ -23,7 +23,8 @@ object OpenNumberingListDialogCommand {
     __obj.asInstanceOf[OpenNumberingListDialogCommand]
   }
   
-  extension [Self <: OpenNumberingListDialogCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenNumberingListDialogCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

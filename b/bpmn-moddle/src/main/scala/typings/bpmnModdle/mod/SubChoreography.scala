@@ -41,7 +41,8 @@ object SubChoreography {
     __obj.asInstanceOf[SubChoreography]
   }
   
-  extension [Self <: SubChoreography](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubChoreography] (val x: Self) extends AnyVal {
     
     inline def setArtifacts(value: js.Array[Artifact]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object InventoryReportInventoryListing {
     __obj.asInstanceOf[InventoryReportInventoryListing]
   }
   
-  extension [Self <: InventoryReportInventoryListing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventoryReportInventoryListing] (val x: Self) extends AnyVal {
     
     inline def setCountingDateTime(value: String): Self = StObject.set(x, "countingDateTime", value.asInstanceOf[js.Any])
     

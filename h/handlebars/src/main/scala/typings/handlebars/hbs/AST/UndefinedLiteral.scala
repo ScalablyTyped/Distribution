@@ -19,7 +19,8 @@ object UndefinedLiteral {
     __obj.asInstanceOf[UndefinedLiteral]
   }
   
-  extension [Self <: UndefinedLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UndefinedLiteral] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.handlebars.handlebarsStrings.UndefinedLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

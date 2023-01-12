@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Cancel]
     }
     
-    extension [Self <: Cancel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Class): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object anon {
       __obj.asInstanceOf[Class]
     }
     
-    extension [Self <: Class](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Class] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object anon {
       __obj.asInstanceOf[Confirm]
     }
     
-    extension [Self <: Confirm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Confirm] (val x: Self) extends AnyVal {
       
       inline def setConfirm(value: String): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
       
@@ -210,7 +214,8 @@ object anon {
       __obj.asInstanceOf[DEFAULTS]
     }
     
-    extension [Self <: DEFAULTS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DEFAULTS] (val x: Self) extends AnyVal {
       
       inline def setDEFAULTS(value: MessageBoxesDefault): Self = StObject.set(x, "DEFAULTS", value.asInstanceOf[js.Any])
       
@@ -251,7 +256,8 @@ object anon {
       __obj.asInstanceOf[Icon]
     }
     
-    extension [Self <: Icon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -284,7 +290,8 @@ object anon {
       __obj.asInstanceOf[IconClass]
     }
     
-    extension [Self <: IconClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconClass] (val x: Self) extends AnyVal {
       
       inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
       
@@ -318,7 +325,8 @@ object anon {
       __obj.asInstanceOf[Width]
     }
     
-    extension [Self <: Width](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Width] (val x: Self) extends AnyVal {
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       

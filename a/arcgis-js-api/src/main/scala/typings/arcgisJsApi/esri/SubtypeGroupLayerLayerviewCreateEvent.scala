@@ -17,7 +17,8 @@ object SubtypeGroupLayerLayerviewCreateEvent {
     __obj.asInstanceOf[SubtypeGroupLayerLayerviewCreateEvent]
   }
   
-  extension [Self <: SubtypeGroupLayerLayerviewCreateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtypeGroupLayerLayerviewCreateEvent] (val x: Self) extends AnyVal {
     
     inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     

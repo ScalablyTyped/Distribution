@@ -23,7 +23,8 @@ object ThumbDragEndEventUIParam {
     __obj.asInstanceOf[ThumbDragEndEventUIParam]
   }
   
-  extension [Self <: ThumbDragEndEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThumbDragEndEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[AccessToken]
     }
     
-    extension [Self <: AccessToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessToken] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[In]
     }
     
-    extension [Self <: In](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: In] (val x: Self) extends AnyVal {
       
       inline def setIn(value: String): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Oauth2]
     }
     
-    extension [Self <: Oauth2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Oauth2] (val x: Self) extends AnyVal {
       
       inline def setOauth2(value: AccessToken): Self = StObject.set(x, "oauth2", value.asInstanceOf[js.Any])
       

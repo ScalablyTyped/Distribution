@@ -126,7 +126,8 @@ object ListItemProperties {
     __obj.asInstanceOf[ListItemProperties]
   }
   
-  extension [Self <: ListItemProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListItemProperties] (val x: Self) extends AnyVal {
     
     inline def setActionsOpen(value: Boolean): Self = StObject.set(x, "actionsOpen", value.asInstanceOf[js.Any])
     

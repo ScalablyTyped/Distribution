@@ -29,7 +29,8 @@ object Experiment {
     __obj.asInstanceOf[Experiment]
   }
   
-  extension [Self <: Experiment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Experiment] (val x: Self) extends AnyVal {
     
     inline def setDetmethod(value: Detmethod): Self = StObject.set(x, "detmethod", value.asInstanceOf[js.Any])
     

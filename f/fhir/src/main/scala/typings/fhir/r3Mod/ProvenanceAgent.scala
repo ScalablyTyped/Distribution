@@ -49,7 +49,8 @@ object ProvenanceAgent {
     __obj.asInstanceOf[ProvenanceAgent]
   }
   
-  extension [Self <: ProvenanceAgent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvenanceAgent] (val x: Self) extends AnyVal {
     
     inline def setOnBehalfOfReference(value: Reference): Self = StObject.set(x, "onBehalfOfReference", value.asInstanceOf[js.Any])
     

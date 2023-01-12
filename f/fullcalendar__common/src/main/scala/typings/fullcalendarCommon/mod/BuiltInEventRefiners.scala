@@ -78,7 +78,8 @@ object BuiltInEventRefiners {
     __obj.asInstanceOf[BuiltInEventRefiners]
   }
   
-  extension [Self <: BuiltInEventRefiners](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuiltInEventRefiners] (val x: Self) extends AnyVal {
     
     inline def setAllDay(value: BooleanConstructor): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
     

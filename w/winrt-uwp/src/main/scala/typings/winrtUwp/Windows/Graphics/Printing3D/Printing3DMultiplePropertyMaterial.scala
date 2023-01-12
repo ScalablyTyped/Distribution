@@ -18,7 +18,8 @@ object Printing3DMultiplePropertyMaterial {
     __obj.asInstanceOf[Printing3DMultiplePropertyMaterial]
   }
   
-  extension [Self <: Printing3DMultiplePropertyMaterial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printing3DMultiplePropertyMaterial] (val x: Self) extends AnyVal {
     
     inline def setMaterialIndices(value: IVector[Double]): Self = StObject.set(x, "materialIndices", value.asInstanceOf[js.Any])
   }

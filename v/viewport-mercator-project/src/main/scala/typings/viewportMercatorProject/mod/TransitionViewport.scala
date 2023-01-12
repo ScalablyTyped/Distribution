@@ -19,7 +19,8 @@ object TransitionViewport {
     __obj.asInstanceOf[TransitionViewport]
   }
   
-  extension [Self <: TransitionViewport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionViewport] (val x: Self) extends AnyVal {
     
     inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     

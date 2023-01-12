@@ -32,7 +32,8 @@ object libDecoratorsInjectMod {
       __obj.asInstanceOf[InjectOptions]
     }
     
-    extension [Self <: InjectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectOptions] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

@@ -49,7 +49,8 @@ object NDDownloadEngineNotifier {
     __obj.asInstanceOf[NDDownloadEngineNotifier]
   }
   
-  extension [Self <: NDDownloadEngineNotifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NDDownloadEngineNotifier] (val x: Self) extends AnyVal {
     
     inline def setOnContentIDReceived(value: INDLicenseFetchDescriptor => Unit): Self = StObject.set(x, "onContentIDReceived", js.Any.fromFunction1(value))
     

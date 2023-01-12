@@ -43,7 +43,8 @@ object distServiceActionssdkConversationHelperHelperMod {
       __obj.asInstanceOf[HelperOptions[TIntent, TValueSpec]]
     }
     
-    extension [Self <: HelperOptions[?, ?], TIntent /* <: Intent */, TValueSpec](x: Self & (HelperOptions[TIntent, TValueSpec])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelperOptions[?, ?], TIntent /* <: Intent */, TValueSpec] (val x: Self & (HelperOptions[TIntent, TValueSpec])) extends AnyVal {
       
       inline def setData(value: TValueSpec): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

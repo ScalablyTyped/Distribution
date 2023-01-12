@@ -17,7 +17,8 @@ object BasePoolConfig {
     __obj.asInstanceOf[BasePoolConfig]
   }
   
-  extension [Self <: BasePoolConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePoolConfig] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

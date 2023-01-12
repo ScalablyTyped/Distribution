@@ -469,7 +469,8 @@ object mod {
       __obj.asInstanceOf[CollectionInsertOneOptionsMonk]
     }
     
-    extension [Self <: CollectionInsertOneOptionsMonk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionInsertOneOptionsMonk] (val x: Self) extends AnyVal {
       
       inline def setCastIds(value: Boolean): Self = StObject.set(x, "castIds", value.asInstanceOf[js.Any])
     }
@@ -486,7 +487,8 @@ object mod {
       __obj.asInstanceOf[CollectionOptions]
     }
     
-    extension [Self <: CollectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionOptions] (val x: Self) extends AnyVal {
       
       inline def setMiddlewares(value: js.Array[TMiddleware]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
       
@@ -512,7 +514,8 @@ object mod {
       __obj.asInstanceOf[DropIndexOptions]
     }
     
-    extension [Self <: DropIndexOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropIndexOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxTimeMS(value: Double): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
       
@@ -533,7 +536,8 @@ object mod {
       __obj.asInstanceOf[DropIndexResult]
     }
     
-    extension [Self <: DropIndexResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropIndexResult] (val x: Self) extends AnyVal {
       
       inline def setNIndexesWas(value: Double): Self = StObject.set(x, "nIndexesWas", value.asInstanceOf[js.Any])
       
@@ -554,7 +558,8 @@ object mod {
       __obj.asInstanceOf[DropIndexesResult]
     }
     
-    extension [Self <: DropIndexesResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropIndexesResult] (val x: Self) extends AnyVal {
       
       inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
@@ -589,7 +594,8 @@ object mod {
       __obj.asInstanceOf[FindOptions[T]]
     }
     
-    extension [Self <: FindOptions[?], T](x: Self & FindOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindOptions[?], T] (val x: Self & FindOptions[T]) extends AnyVal {
       
       inline def setRawCursor(value: Boolean): Self = StObject.set(x, "rawCursor", value.asInstanceOf[js.Any])
       
@@ -620,7 +626,8 @@ object mod {
       __obj.asInstanceOf[IObjectID]
     }
     
-    extension [Self <: IObjectID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObjectID] (val x: Self) extends AnyVal {
       
       inline def setToHexString(value: () => String): Self = StObject.set(x, "toHexString", js.Any.fromFunction0(value))
     }
@@ -656,7 +663,8 @@ object mod {
       __obj.asInstanceOf[SingleMulti]
     }
     
-    extension [Self <: SingleMulti](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleMulti] (val x: Self) extends AnyVal {
       
       inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
@@ -684,7 +692,8 @@ object mod {
       __obj.asInstanceOf[StatsOptions]
     }
     
-    extension [Self <: StatsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatsOptions] (val x: Self) extends AnyVal {
       
       inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       

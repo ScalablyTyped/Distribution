@@ -53,7 +53,8 @@ object Event {
     __obj.asInstanceOf[Event]
   }
   
-  extension [Self <: Event](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
     
     inline def setActivemq(value: ActiveMq): Self = StObject.set(x, "activemq", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ExtractI18nOptions {
     __obj.asInstanceOf[ExtractI18nOptions]
   }
   
-  extension [Self <: ExtractI18nOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtractI18nOptions] (val x: Self) extends AnyVal {
     
     inline def setBrowserTarget(value: String): Self = StObject.set(x, "browserTarget", value.asInstanceOf[js.Any])
   }

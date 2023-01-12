@@ -25,7 +25,8 @@ object RestoreFromSnapshotResponse {
     __obj.asInstanceOf[RestoreFromSnapshotResponse]
   }
   
-  extension [Self <: RestoreFromSnapshotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreFromSnapshotResponse] (val x: Self) extends AnyVal {
     
     inline def setNamespace(value: Namespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     

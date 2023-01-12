@@ -138,7 +138,8 @@ object libModalModalDotnativeMod {
       __obj.asInstanceOf[IModalNativeProps]
     }
     
-    extension [Self <: IModalNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModalNativeProps] (val x: Self) extends AnyVal {
       
       inline def setBodyStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
       

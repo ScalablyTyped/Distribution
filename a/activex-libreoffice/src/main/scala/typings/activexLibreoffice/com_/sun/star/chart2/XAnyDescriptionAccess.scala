@@ -92,7 +92,8 @@ object XAnyDescriptionAccess {
     __obj.asInstanceOf[XAnyDescriptionAccess]
   }
   
-  extension [Self <: XAnyDescriptionAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAnyDescriptionAccess] (val x: Self) extends AnyVal {
     
     inline def setAnyColumnDescriptions(value: SafeArray[SafeArray[Any]]): Self = StObject.set(x, "AnyColumnDescriptions", value.asInstanceOf[js.Any])
     

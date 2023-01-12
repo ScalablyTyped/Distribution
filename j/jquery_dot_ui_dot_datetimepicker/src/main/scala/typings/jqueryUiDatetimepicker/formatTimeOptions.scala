@@ -19,7 +19,8 @@ object formatTimeOptions {
     __obj.asInstanceOf[formatTimeOptions]
   }
   
-  extension [Self <: formatTimeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: formatTimeOptions] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

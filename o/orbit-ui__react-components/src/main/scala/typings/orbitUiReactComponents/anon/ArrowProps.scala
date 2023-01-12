@@ -40,7 +40,8 @@ object ArrowProps {
     __obj.asInstanceOf[ArrowProps]
   }
   
-  extension [Self <: ArrowProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrowProps] (val x: Self) extends AnyVal {
     
     inline def setArrowProps(value: RefUndefined | RefMergedRef): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
     

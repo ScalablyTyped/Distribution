@@ -63,7 +63,8 @@ object ListAggregatedUtterancesResponse {
     __obj.asInstanceOf[ListAggregatedUtterancesResponse]
   }
   
-  extension [Self <: ListAggregatedUtterancesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAggregatedUtterancesResponse] (val x: Self) extends AnyVal {
     
     inline def setAggregatedUtterancesSummaries(value: AggregatedUtterancesSummaryList): Self = StObject.set(x, "aggregatedUtterancesSummaries", value.asInstanceOf[js.Any])
     

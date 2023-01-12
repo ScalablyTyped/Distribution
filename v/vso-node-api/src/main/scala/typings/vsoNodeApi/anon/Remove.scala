@@ -17,7 +17,8 @@ object Remove {
     __obj.asInstanceOf[Remove]
   }
   
-  extension [Self <: Remove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Remove] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: scala.Double): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

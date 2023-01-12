@@ -19,7 +19,8 @@ object ArgsTableDataProps {
     __obj.asInstanceOf[ArgsTableDataProps]
   }
   
-  extension [Self <: ArgsTableDataProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArgsTableDataProps] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

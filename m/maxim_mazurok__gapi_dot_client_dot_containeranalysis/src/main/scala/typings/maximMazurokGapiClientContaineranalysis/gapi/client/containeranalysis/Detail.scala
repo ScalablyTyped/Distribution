@@ -66,7 +66,8 @@ object Detail {
     __obj.asInstanceOf[Detail]
   }
   
-  extension [Self <: Detail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Detail] (val x: Self) extends AnyVal {
     
     inline def setAffectedCpeUri(value: String): Self = StObject.set(x, "affectedCpeUri", value.asInstanceOf[js.Any])
     

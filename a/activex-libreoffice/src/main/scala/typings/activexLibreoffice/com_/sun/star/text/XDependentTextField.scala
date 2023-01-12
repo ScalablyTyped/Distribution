@@ -50,7 +50,8 @@ object XDependentTextField {
     __obj.asInstanceOf[XDependentTextField]
   }
   
-  extension [Self <: XDependentTextField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDependentTextField] (val x: Self) extends AnyVal {
     
     inline def setAttachTextFieldMaster(value: XPropertySet => Unit): Self = StObject.set(x, "attachTextFieldMaster", js.Any.fromFunction1(value))
     

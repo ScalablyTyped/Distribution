@@ -18,7 +18,8 @@ object S3BucketSinkConfiguration {
     __obj.asInstanceOf[S3BucketSinkConfiguration]
   }
   
-  extension [Self <: S3BucketSinkConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3BucketSinkConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: Arn): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
   }

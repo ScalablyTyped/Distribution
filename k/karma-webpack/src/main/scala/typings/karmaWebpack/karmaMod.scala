@@ -22,7 +22,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setWebpack(value: Configuration): Self = StObject.set(x, "webpack", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object karmaMod {
       __obj.asInstanceOf[KarmaWebpackMiddlewareOptions]
     }
     
-    extension [Self <: KarmaWebpackMiddlewareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KarmaWebpackMiddlewareOptions] (val x: Self) extends AnyVal {
       
       inline def setError(value: Logger): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

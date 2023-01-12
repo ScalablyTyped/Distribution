@@ -28,7 +28,8 @@ object GetModelVersionRequest {
     __obj.asInstanceOf[GetModelVersionRequest]
   }
   
-  extension [Self <: GetModelVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetModelVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setModelId(value: modelIdentifier): Self = StObject.set(x, "modelId", value.asInstanceOf[js.Any])
     

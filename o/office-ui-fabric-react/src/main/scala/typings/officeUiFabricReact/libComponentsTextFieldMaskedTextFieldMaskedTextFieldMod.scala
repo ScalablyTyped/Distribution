@@ -139,7 +139,8 @@ object libComponentsTextFieldMaskedTextFieldMaskedTextFieldMod {
       __obj.asInstanceOf[IMaskedTextFieldState]
     }
     
-    extension [Self <: IMaskedTextFieldState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMaskedTextFieldState] (val x: Self) extends AnyVal {
       
       inline def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
       

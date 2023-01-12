@@ -24,7 +24,8 @@ object DataTableColumnResizeEndParams {
     __obj.asInstanceOf[DataTableColumnResizeEndParams]
   }
   
-  extension [Self <: DataTableColumnResizeEndParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableColumnResizeEndParams] (val x: Self) extends AnyVal {
     
     inline def setColumn(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Column */ Any

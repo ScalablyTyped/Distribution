@@ -17,7 +17,8 @@ object ScreenTipText {
     __obj.asInstanceOf[ScreenTipText]
   }
   
-  extension [Self <: ScreenTipText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenTipText] (val x: Self) extends AnyVal {
     
     inline def setScreenTipText(value: Any): Self = StObject.set(x, "ScreenTipText", value.asInstanceOf[js.Any])
     

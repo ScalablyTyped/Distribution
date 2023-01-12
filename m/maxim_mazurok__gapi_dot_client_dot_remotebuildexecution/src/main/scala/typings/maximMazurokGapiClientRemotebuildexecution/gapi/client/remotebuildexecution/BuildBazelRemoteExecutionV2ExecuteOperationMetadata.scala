@@ -25,7 +25,8 @@ object BuildBazelRemoteExecutionV2ExecuteOperationMetadata {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2ExecuteOperationMetadata]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2ExecuteOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2ExecuteOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setActionDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "actionDigest", value.asInstanceOf[js.Any])
     

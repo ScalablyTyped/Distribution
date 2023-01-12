@@ -18,7 +18,8 @@ object ReadAsyncOptions {
     __obj.asInstanceOf[ReadAsyncOptions[TBuffer]]
   }
   
-  extension [Self <: ReadAsyncOptions[?], TBuffer /* <: ArrayBufferView */](x: Self & ReadAsyncOptions[TBuffer]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadAsyncOptions[?], TBuffer /* <: ArrayBufferView */] (val x: Self & ReadAsyncOptions[TBuffer]) extends AnyVal {
     
     inline def setBuffer(value: TBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

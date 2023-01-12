@@ -28,7 +28,8 @@ object ConversationLink {
     __obj.asInstanceOf[ConversationLink]
   }
   
-  extension [Self <: ConversationLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversationLink] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

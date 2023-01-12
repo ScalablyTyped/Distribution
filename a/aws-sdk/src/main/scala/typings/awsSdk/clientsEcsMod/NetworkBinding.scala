@@ -33,7 +33,8 @@ object NetworkBinding {
     __obj.asInstanceOf[NetworkBinding]
   }
   
-  extension [Self <: NetworkBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkBinding] (val x: Self) extends AnyVal {
     
     inline def setBindIP(value: String): Self = StObject.set(x, "bindIP", value.asInstanceOf[js.Any])
     

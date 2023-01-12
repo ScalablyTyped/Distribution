@@ -15,7 +15,8 @@ object DataTableHeaderTemplateOptions {
     __obj.asInstanceOf[DataTableHeaderTemplateOptions]
   }
   
-  extension [Self <: DataTableHeaderTemplateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableHeaderTemplateOptions] (val x: Self) extends AnyVal {
     
     inline def setProps(value: DataTableProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }

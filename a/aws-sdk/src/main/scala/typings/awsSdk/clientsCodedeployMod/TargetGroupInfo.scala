@@ -18,7 +18,8 @@ object TargetGroupInfo {
     __obj.asInstanceOf[TargetGroupInfo]
   }
   
-  extension [Self <: TargetGroupInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetGroupInfo] (val x: Self) extends AnyVal {
     
     inline def setName(value: TargetGroupName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

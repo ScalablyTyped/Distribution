@@ -30,7 +30,8 @@ object FloatingMarkerProps {
     __obj.asInstanceOf[FloatingMarkerProps]
   }
   
-  extension [Self <: FloatingMarkerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingMarkerProps] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: AnchorPositions): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

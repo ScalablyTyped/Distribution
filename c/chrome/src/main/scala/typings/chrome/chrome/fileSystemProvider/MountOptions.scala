@@ -36,7 +36,8 @@ object MountOptions {
     __obj.asInstanceOf[MountOptions]
   }
   
-  extension [Self <: MountOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MountOptions] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

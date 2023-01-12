@@ -96,7 +96,8 @@ object Launch {
     __obj.asInstanceOf[Launch]
   }
   
-  extension [Self <: Launch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Launch] (val x: Self) extends AnyVal {
     
     inline def setArn(value: LaunchArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

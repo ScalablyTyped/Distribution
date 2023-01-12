@@ -18,7 +18,8 @@ object MaxWarningLineLength {
     __obj.asInstanceOf[MaxWarningLineLength]
   }
   
-  extension [Self <: MaxWarningLineLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxWarningLineLength] (val x: Self) extends AnyVal {
     
     inline def setMaxWarningLineLength(value: Double): Self = StObject.set(x, "maxWarningLineLength", value.asInstanceOf[js.Any])
     

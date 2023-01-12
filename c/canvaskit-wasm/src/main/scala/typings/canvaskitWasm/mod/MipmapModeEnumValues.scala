@@ -21,7 +21,8 @@ object MipmapModeEnumValues {
     __obj.asInstanceOf[MipmapModeEnumValues]
   }
   
-  extension [Self <: MipmapModeEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MipmapModeEnumValues] (val x: Self) extends AnyVal {
     
     inline def setLinear(value: MipmapMode): Self = StObject.set(x, "Linear", value.asInstanceOf[js.Any])
     

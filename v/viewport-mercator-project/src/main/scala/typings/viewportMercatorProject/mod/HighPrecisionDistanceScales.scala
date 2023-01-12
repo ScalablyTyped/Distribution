@@ -26,7 +26,8 @@ object HighPrecisionDistanceScales {
     __obj.asInstanceOf[HighPrecisionDistanceScales]
   }
   
-  extension [Self <: HighPrecisionDistanceScales](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighPrecisionDistanceScales] (val x: Self) extends AnyVal {
     
     inline def setPixelsPerDegree2(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "pixelsPerDegree2", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ModifyDocumentPermissionRequest {
     __obj.asInstanceOf[ModifyDocumentPermissionRequest]
   }
   
-  extension [Self <: ModifyDocumentPermissionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyDocumentPermissionRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountIdsToAdd(value: AccountIdList): Self = StObject.set(x, "AccountIdsToAdd", value.asInstanceOf[js.Any])
     

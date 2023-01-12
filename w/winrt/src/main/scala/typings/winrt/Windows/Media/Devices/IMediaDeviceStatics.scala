@@ -35,7 +35,8 @@ object IMediaDeviceStatics {
     __obj.asInstanceOf[IMediaDeviceStatics]
   }
   
-  extension [Self <: IMediaDeviceStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaDeviceStatics] (val x: Self) extends AnyVal {
     
     inline def setGetAudioCaptureSelector(value: () => String): Self = StObject.set(x, "getAudioCaptureSelector", js.Any.fromFunction0(value))
     

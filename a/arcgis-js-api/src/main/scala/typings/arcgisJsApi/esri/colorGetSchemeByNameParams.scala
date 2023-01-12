@@ -78,7 +78,8 @@ object colorGetSchemeByNameParams {
     __obj.asInstanceOf[colorGetSchemeByNameParams]
   }
   
-  extension [Self <: colorGetSchemeByNameParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: colorGetSchemeByNameParams] (val x: Self) extends AnyVal {
     
     inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     

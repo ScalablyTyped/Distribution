@@ -20,7 +20,8 @@ object DeleteSuggesterRequest {
     __obj.asInstanceOf[DeleteSuggesterRequest]
   }
   
-  extension [Self <: DeleteSuggesterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSuggesterRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

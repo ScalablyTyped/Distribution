@@ -18,7 +18,8 @@ object ListClassifiersParams {
     __obj.asInstanceOf[ListClassifiersParams]
   }
   
-  extension [Self <: ListClassifiersParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListClassifiersParams] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

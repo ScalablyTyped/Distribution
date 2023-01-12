@@ -48,7 +48,8 @@ object symbolUtilsGetDisplayedColorOptions {
     __obj.asInstanceOf[symbolUtilsGetDisplayedColorOptions]
   }
   
-  extension [Self <: symbolUtilsGetDisplayedColorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: symbolUtilsGetDisplayedColorOptions] (val x: Self) extends AnyVal {
     
     inline def setRenderer(value: Renderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     

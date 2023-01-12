@@ -17,7 +17,8 @@ object MethodAny {
     __obj.asInstanceOf[MethodAny]
   }
   
-  extension [Self <: MethodAny](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodAny] (val x: Self) extends AnyVal {
     
     inline def setMethod(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof resources.gateway.afterHandler */ Any

@@ -15,7 +15,8 @@ object GetManifestIconsResponse {
     __obj.asInstanceOf[GetManifestIconsResponse]
   }
   
-  extension [Self <: GetManifestIconsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetManifestIconsResponse] (val x: Self) extends AnyVal {
     
     inline def setPrimaryIcon(value: String): Self = StObject.set(x, "primaryIcon", value.asInstanceOf[js.Any])
     

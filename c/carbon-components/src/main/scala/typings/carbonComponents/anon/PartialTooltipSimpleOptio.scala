@@ -22,7 +22,8 @@ object PartialTooltipSimpleOptio {
     __obj.asInstanceOf[PartialTooltipSimpleOptio]
   }
   
-  extension [Self <: PartialTooltipSimpleOptio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTooltipSimpleOptio] (val x: Self) extends AnyVal {
     
     inline def setClassTooltipHidden(value: String): Self = StObject.set(x, "classTooltipHidden", value.asInstanceOf[js.Any])
     

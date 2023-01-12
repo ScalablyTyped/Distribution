@@ -15,7 +15,8 @@ object IgnoredFileKeys {
     __obj.asInstanceOf[IgnoredFileKeys]
   }
   
-  extension [Self <: IgnoredFileKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoredFileKeys] (val x: Self) extends AnyVal {
     
     inline def setIgnoredFileKeys(value: js.Array[Double]): Self = StObject.set(x, "ignoredFileKeys", value.asInstanceOf[js.Any])
     

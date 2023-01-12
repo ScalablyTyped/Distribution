@@ -316,7 +316,8 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
       __obj.asInstanceOf[FieldListInstanceCreateOptions]
     }
     
-    extension [Self <: FieldListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setFieldType(value: String): Self = StObject.set(x, "fieldType", value.asInstanceOf[js.Any])
       
@@ -365,7 +366,8 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
       __obj.asInstanceOf[FieldListInstanceEachOptions]
     }
     
-    extension [Self <: FieldListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ FieldInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -414,7 +416,8 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
       __obj.asInstanceOf[FieldListInstanceOptions]
     }
     
-    extension [Self <: FieldListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -448,7 +451,8 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
       __obj.asInstanceOf[FieldListInstancePageOptions]
     }
     
-    extension [Self <: FieldListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
@@ -529,7 +533,8 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
       __obj.asInstanceOf[FieldResource]
     }
     
-    extension [Self <: FieldResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -564,7 +569,8 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
       __obj.asInstanceOf[FieldSolution]
     }
     
-    extension [Self <: FieldSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldSolution] (val x: Self) extends AnyVal {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
       

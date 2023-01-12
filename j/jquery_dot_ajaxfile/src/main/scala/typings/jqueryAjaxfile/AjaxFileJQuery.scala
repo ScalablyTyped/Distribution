@@ -19,7 +19,8 @@ object AjaxFileJQuery {
       __obj.asInstanceOf[IAjaxFileJQueryExtension]
     }
     
-    extension [Self <: IAjaxFileJQueryExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAjaxFileJQueryExtension] (val x: Self) extends AnyVal {
       
       inline def setAjaxWithFile(value: IJQueryOption => JQueryDeferred[Any]): Self = StObject.set(x, "ajaxWithFile", js.Any.fromFunction1(value))
     }
@@ -58,7 +59,8 @@ object AjaxFileJQuery {
       __obj.asInstanceOf[IJQueryOption]
     }
     
-    extension [Self <: IJQueryOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJQueryOption] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: (/* jqXHR */ IJQueryXHR, /* textStatus */ String) => Any): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
       

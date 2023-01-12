@@ -44,7 +44,8 @@ object ConsentVerification {
     __obj.asInstanceOf[ConsentVerification]
   }
   
-  extension [Self <: ConsentVerification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsentVerification] (val x: Self) extends AnyVal {
     
     inline def setVerificationDate(value: js.Array[String]): Self = StObject.set(x, "verificationDate", value.asInstanceOf[js.Any])
     

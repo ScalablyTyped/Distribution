@@ -28,7 +28,8 @@ object NewCustomVocabularyItem {
     __obj.asInstanceOf[NewCustomVocabularyItem]
   }
   
-  extension [Self <: NewCustomVocabularyItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewCustomVocabularyItem] (val x: Self) extends AnyVal {
     
     inline def setDisplayAs(value: Phrase): Self = StObject.set(x, "displayAs", value.asInstanceOf[js.Any])
     

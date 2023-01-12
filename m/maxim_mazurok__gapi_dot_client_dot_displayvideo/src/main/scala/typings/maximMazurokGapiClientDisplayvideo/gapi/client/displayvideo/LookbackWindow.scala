@@ -19,7 +19,8 @@ object LookbackWindow {
     __obj.asInstanceOf[LookbackWindow]
   }
   
-  extension [Self <: LookbackWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookbackWindow] (val x: Self) extends AnyVal {
     
     inline def setClickDays(value: Double): Self = StObject.set(x, "clickDays", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object GridLineOptions {
     __obj.asInstanceOf[GridLineOptions]
   }
   
-  extension [Self <: GridLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridLineOptions] (val x: Self) extends AnyVal {
     
     inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ASN1ObjectParam {
     __obj.asInstanceOf[ASN1ObjectParam]
   }
   
-  extension [Self <: ASN1ObjectParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASN1ObjectParam] (val x: Self) extends AnyVal {
     
     inline def setObj(value: ASN1Object): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
   }

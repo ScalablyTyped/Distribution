@@ -16,7 +16,8 @@ object IncludesArtwork {
     __obj.asInstanceOf[IncludesArtwork]
   }
   
-  extension [Self <: IncludesArtwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludesArtwork] (val x: Self) extends AnyVal {
     
     inline def set$includesArtwork(value: Boolean): Self = StObject.set(x, "$includesArtwork", value.asInstanceOf[js.Any])
   }

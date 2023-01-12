@@ -24,7 +24,8 @@ object AuthorizeOptions {
     __obj.asInstanceOf[AuthorizeOptions]
   }
   
-  extension [Self <: AuthorizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomScheme(value: String): Self = StObject.set(x, "customScheme", value.asInstanceOf[js.Any])
     

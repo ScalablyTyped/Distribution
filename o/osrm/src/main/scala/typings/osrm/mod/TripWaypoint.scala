@@ -34,7 +34,8 @@ object TripWaypoint {
     __obj.asInstanceOf[TripWaypoint]
   }
   
-  extension [Self <: TripWaypoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TripWaypoint] (val x: Self) extends AnyVal {
     
     inline def setTrips_index(value: Double): Self = StObject.set(x, "trips_index", value.asInstanceOf[js.Any])
     

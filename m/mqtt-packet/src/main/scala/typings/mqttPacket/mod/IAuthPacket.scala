@@ -25,7 +25,8 @@ object IAuthPacket {
     __obj.asInstanceOf[IAuthPacket]
   }
   
-  extension [Self <: IAuthPacket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAuthPacket] (val x: Self) extends AnyVal {
     
     inline def setCmd(value: auth): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object ResponseBankingProductByIdV4 {
     __obj.asInstanceOf[ResponseBankingProductByIdV4]
   }
   
-  extension [Self <: ResponseBankingProductByIdV4](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseBankingProductByIdV4] (val x: Self) extends AnyVal {
     
     inline def setData(value: AdditionalInformation): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

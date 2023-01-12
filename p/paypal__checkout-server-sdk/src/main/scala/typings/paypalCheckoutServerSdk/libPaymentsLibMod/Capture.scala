@@ -51,7 +51,8 @@ object Capture {
     __obj.asInstanceOf[Capture]
   }
   
-  extension [Self <: Capture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Capture] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Money): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

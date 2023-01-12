@@ -35,7 +35,8 @@ object AggregationsCategorizeTextAggregation {
     __obj.asInstanceOf[AggregationsCategorizeTextAggregation]
   }
   
-  extension [Self <: AggregationsCategorizeTextAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsCategorizeTextAggregation] (val x: Self) extends AnyVal {
     
     inline def setCategorization_analyzer(value: AggregationsCategorizeTextAnalyzer): Self = StObject.set(x, "categorization_analyzer", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object KeyPhrase {
     __obj.asInstanceOf[KeyPhrase]
   }
   
-  extension [Self <: KeyPhrase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyPhrase] (val x: Self) extends AnyVal {
     
     inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     

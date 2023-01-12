@@ -25,7 +25,8 @@ object GoogleActionsV2OrdersOrderOptions {
     __obj.asInstanceOf[GoogleActionsV2OrdersOrderOptions]
   }
   
-  extension [Self <: GoogleActionsV2OrdersOrderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2OrdersOrderOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomerInfoOptions(value: GoogleActionsV2OrdersCustomerInfoOptions): Self = StObject.set(x, "customerInfoOptions", value.asInstanceOf[js.Any])
     

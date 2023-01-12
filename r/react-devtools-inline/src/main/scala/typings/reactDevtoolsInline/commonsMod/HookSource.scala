@@ -21,7 +21,8 @@ object HookSource {
     __obj.asInstanceOf[HookSource]
   }
   
-  extension [Self <: HookSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HookSource] (val x: Self) extends AnyVal {
     
     inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object SecureFormsOptions {
     __obj.asInstanceOf[SecureFormsOptions]
   }
   
-  extension [Self <: SecureFormsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecureFormsOptions] (val x: Self) extends AnyVal {
     
     inline def setFonts(value: js.Array[FontOptions]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     

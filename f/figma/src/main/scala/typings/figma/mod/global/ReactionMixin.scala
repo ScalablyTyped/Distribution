@@ -15,7 +15,8 @@ object ReactionMixin {
     __obj.asInstanceOf[ReactionMixin]
   }
   
-  extension [Self <: ReactionMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactionMixin] (val x: Self) extends AnyVal {
     
     inline def setReactions(value: js.Array[Reaction]): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     

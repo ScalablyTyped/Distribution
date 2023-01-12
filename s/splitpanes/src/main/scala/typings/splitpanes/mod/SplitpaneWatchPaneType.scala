@@ -19,7 +19,8 @@ object SplitpaneWatchPaneType {
     __obj.asInstanceOf[SplitpaneWatchPaneType]
   }
   
-  extension [Self <: SplitpaneWatchPaneType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitpaneWatchPaneType] (val x: Self) extends AnyVal {
     
     inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     

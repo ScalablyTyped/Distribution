@@ -18,7 +18,8 @@ object PortSet {
     __obj.asInstanceOf[PortSet]
   }
   
-  extension [Self <: PortSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortSet] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: VariableDefinitionList): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
     

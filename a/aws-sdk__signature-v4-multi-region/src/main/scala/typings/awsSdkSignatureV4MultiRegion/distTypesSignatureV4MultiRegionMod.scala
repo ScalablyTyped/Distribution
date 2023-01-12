@@ -46,7 +46,8 @@ object distTypesSignatureV4MultiRegionMod {
       __obj.asInstanceOf[SignatureV4MultiRegionInit]
     }
     
-    extension [Self <: SignatureV4MultiRegionInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureV4MultiRegionInit] (val x: Self) extends AnyVal {
       
       inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       

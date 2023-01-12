@@ -21,7 +21,8 @@ object DataViewValueColumn {
     __obj.asInstanceOf[DataViewValueColumn]
   }
   
-  extension [Self <: DataViewValueColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewValueColumn] (val x: Self) extends AnyVal {
     
     inline def setHighlights(value: js.Array[PrimitiveValue]): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
     

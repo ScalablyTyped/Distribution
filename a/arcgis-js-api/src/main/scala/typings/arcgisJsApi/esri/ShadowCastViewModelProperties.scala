@@ -85,7 +85,8 @@ object ShadowCastViewModelProperties {
     __obj.asInstanceOf[ShadowCastViewModelProperties]
   }
   
-  extension [Self <: ShadowCastViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowCastViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setDate(value: DateProperties): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

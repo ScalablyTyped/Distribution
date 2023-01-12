@@ -273,7 +273,8 @@ object PlotCmfDataLabelsOptions {
     __obj.asInstanceOf[PlotCmfDataLabelsOptions]
   }
   
-  extension [Self <: PlotCmfDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotCmfDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

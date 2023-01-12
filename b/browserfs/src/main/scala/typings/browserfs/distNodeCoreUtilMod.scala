@@ -63,7 +63,8 @@ object distNodeCoreUtilMod {
       __obj.asInstanceOf[Arrayish[T]]
     }
     
-    extension [Self <: Arrayish[?], T](x: Self & Arrayish[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arrayish[?], T] (val x: Self & Arrayish[T]) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }

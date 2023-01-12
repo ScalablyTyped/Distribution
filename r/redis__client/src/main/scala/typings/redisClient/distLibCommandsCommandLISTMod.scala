@@ -61,7 +61,8 @@ object distLibCommandsCommandLISTMod {
       __obj.asInstanceOf[Filter]
     }
     
-    extension [Self <: Filter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
       
       inline def setFilterBy(value: FilterBy): Self = StObject.set(x, "filterBy", value.asInstanceOf[js.Any])
       

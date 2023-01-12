@@ -32,7 +32,8 @@ object CalendarList_ {
     __obj.asInstanceOf[CalendarList_]
   }
   
-  extension [Self <: CalendarList_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarList_] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: etag): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

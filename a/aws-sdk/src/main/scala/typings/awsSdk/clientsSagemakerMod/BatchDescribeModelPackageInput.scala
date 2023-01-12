@@ -18,7 +18,8 @@ object BatchDescribeModelPackageInput {
     __obj.asInstanceOf[BatchDescribeModelPackageInput]
   }
   
-  extension [Self <: BatchDescribeModelPackageInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDescribeModelPackageInput] (val x: Self) extends AnyVal {
     
     inline def setModelPackageArnList(value: ModelPackageArnList): Self = StObject.set(x, "ModelPackageArnList", value.asInstanceOf[js.Any])
     

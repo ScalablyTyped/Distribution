@@ -243,7 +243,8 @@ object Tweens {
       __obj.asInstanceOf[NumberTweenBuilderConfig]
     }
     
-    extension [Self <: NumberTweenBuilderConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberTweenBuilderConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbackScope(value: Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
       
@@ -452,7 +453,8 @@ object Tweens {
       __obj.asInstanceOf[StaggerConfig]
     }
     
-    extension [Self <: StaggerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaggerConfig] (val x: Self) extends AnyVal {
       
       inline def setEase(value: String | js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
       
@@ -653,7 +655,8 @@ object Tweens {
       __obj.asInstanceOf[TimelineBuilderConfig]
     }
     
-    extension [Self <: TimelineBuilderConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineBuilderConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbackScope(value: Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
       
@@ -1067,7 +1070,8 @@ object Tweens {
       __obj.asInstanceOf[TweenBuilderConfig]
     }
     
-    extension [Self <: TweenBuilderConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TweenBuilderConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbackScope(value: Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
       
@@ -1331,7 +1335,8 @@ object Tweens {
       __obj.asInstanceOf[TweenConfigDefaults]
     }
     
-    extension [Self <: TweenConfigDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TweenConfigDefaults] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -1548,7 +1553,8 @@ object Tweens {
       __obj.asInstanceOf[TweenDataConfig]
     }
     
-    extension [Self <: TweenDataConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TweenDataConfig] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -1692,7 +1698,8 @@ object Tweens {
       __obj.asInstanceOf[TweenDataGenConfig]
     }
     
-    extension [Self <: TweenDataGenConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TweenDataGenConfig] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: js.Function): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -1828,7 +1835,8 @@ object Tweens {
       __obj.asInstanceOf[TweenPropConfig]
     }
     
-    extension [Self <: TweenPropConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TweenPropConfig] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

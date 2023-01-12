@@ -25,7 +25,8 @@ object AllowDirectories {
     __obj.asInstanceOf[AllowDirectories]
   }
   
-  extension [Self <: AllowDirectories](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowDirectories] (val x: Self) extends AnyVal {
     
     inline def setAllowDirectories(value: Boolean): Self = StObject.set(x, "allowDirectories", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object TotalAdditiveWeight {
     __obj.asInstanceOf[TotalAdditiveWeight]
   }
   
-  extension [Self <: TotalAdditiveWeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TotalAdditiveWeight] (val x: Self) extends AnyVal {
     
     inline def setAdditiveAnimations(value: js.Array[RuntimeAnimation]): Self = StObject.set(x, "additiveAnimations", value.asInstanceOf[js.Any])
     

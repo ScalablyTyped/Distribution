@@ -17,7 +17,8 @@ object ManagedInstanceLastAttempt {
     __obj.asInstanceOf[ManagedInstanceLastAttempt]
   }
   
-  extension [Self <: ManagedInstanceLastAttempt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedInstanceLastAttempt] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

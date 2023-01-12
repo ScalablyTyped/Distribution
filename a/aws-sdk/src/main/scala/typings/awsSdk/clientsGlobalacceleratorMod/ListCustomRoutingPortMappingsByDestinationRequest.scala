@@ -33,7 +33,8 @@ object ListCustomRoutingPortMappingsByDestinationRequest {
     __obj.asInstanceOf[ListCustomRoutingPortMappingsByDestinationRequest]
   }
   
-  extension [Self <: ListCustomRoutingPortMappingsByDestinationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCustomRoutingPortMappingsByDestinationRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationAddress(value: GenericString): Self = StObject.set(x, "DestinationAddress", value.asInstanceOf[js.Any])
     

@@ -88,7 +88,8 @@ object UserAccountManagementGranularInformation {
     __obj.asInstanceOf[UserAccountManagementGranularInformation]
   }
   
-  extension [Self <: UserAccountManagementGranularInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserAccountManagementGranularInformation] (val x: Self) extends AnyVal {
     
     inline def setCanManageAccountSecuritySettings(value: String): Self = StObject.set(x, "canManageAccountSecuritySettings", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object PutManagedRuleSetVersionsRequest {
     __obj.asInstanceOf[PutManagedRuleSetVersionsRequest]
   }
   
-  extension [Self <: PutManagedRuleSetVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutManagedRuleSetVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: EntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

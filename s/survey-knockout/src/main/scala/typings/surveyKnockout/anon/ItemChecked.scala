@@ -44,7 +44,8 @@ object ItemChecked {
     __obj.asInstanceOf[ItemChecked]
   }
   
-  extension [Self <: ItemChecked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemChecked] (val x: Self) extends AnyVal {
     
     inline def setClearButton(value: String): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
     

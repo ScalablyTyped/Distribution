@@ -19,7 +19,8 @@ object CameraPictureSourceTypeObject {
     __obj.asInstanceOf[CameraPictureSourceTypeObject]
   }
   
-  extension [Self <: CameraPictureSourceTypeObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraPictureSourceTypeObject] (val x: Self) extends AnyVal {
     
     inline def setCAMERA(value: Double): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
     

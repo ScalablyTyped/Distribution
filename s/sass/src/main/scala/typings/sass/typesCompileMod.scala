@@ -68,7 +68,8 @@ object typesCompileMod {
       __obj.asInstanceOf[CompileResult]
     }
     
-    extension [Self <: CompileResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompileResult] (val x: Self) extends AnyVal {
       
       inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       

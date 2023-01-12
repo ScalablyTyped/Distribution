@@ -33,7 +33,8 @@ object ListObservabilityConfigurationsRequest {
     __obj.asInstanceOf[ListObservabilityConfigurationsRequest]
   }
   
-  extension [Self <: ListObservabilityConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListObservabilityConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setLatestOnly(value: Boolean): Self = StObject.set(x, "LatestOnly", value.asInstanceOf[js.Any])
     

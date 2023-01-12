@@ -18,7 +18,8 @@ object BatchDisableAlarmRequest {
     __obj.asInstanceOf[BatchDisableAlarmRequest]
   }
   
-  extension [Self <: BatchDisableAlarmRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDisableAlarmRequest] (val x: Self) extends AnyVal {
     
     inline def setDisableActionRequests(value: DisableAlarmActionRequests): Self = StObject.set(x, "disableActionRequests", value.asInstanceOf[js.Any])
     

@@ -113,7 +113,8 @@ object Organization {
     /* 3 */ val TRIALEXPIRED: typings.rockset.distCodegenApiMod.Organization.StateEnum.TRIALEXPIRED & Double = js.native
   }
   
-  extension [Self <: Organization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Organization] (val x: Self) extends AnyVal {
     
     inline def setCompany_name(value: String): Self = StObject.set(x, "company_name", value.asInstanceOf[js.Any])
     

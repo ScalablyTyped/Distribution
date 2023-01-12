@@ -49,7 +49,8 @@ object typesConsumerDescriptionMod {
       __obj.asInstanceOf[ConsumerDescription]
     }
     
-    extension [Self <: ConsumerDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsumerDescription] (val x: Self) extends AnyVal {
       
       inline def setConsumerARN(value: String): Self = StObject.set(x, "ConsumerARN", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object typesConsumerDescriptionMod {
       __obj.asInstanceOf[UnmarshalledConsumerDescription]
     }
     
-    extension [Self <: UnmarshalledConsumerDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledConsumerDescription] (val x: Self) extends AnyVal {
       
       inline def setConsumerCreationTimestamp(value: js.Date): Self = StObject.set(x, "ConsumerCreationTimestamp", value.asInstanceOf[js.Any])
     }

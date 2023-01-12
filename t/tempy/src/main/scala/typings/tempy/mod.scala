@@ -79,7 +79,8 @@ object mod {
       __obj.asInstanceOf[DirectoryOptions]
     }
     
-    extension [Self <: DirectoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryOptions] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       

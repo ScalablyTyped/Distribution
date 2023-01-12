@@ -18,7 +18,8 @@ object CoverageThreshold {
     __obj.asInstanceOf[CoverageThreshold]
   }
   
-  extension [Self <: CoverageThreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageThreshold] (val x: Self) extends AnyVal {
     
     inline def setGlobal(value: CoverageThresholdValue): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
   }

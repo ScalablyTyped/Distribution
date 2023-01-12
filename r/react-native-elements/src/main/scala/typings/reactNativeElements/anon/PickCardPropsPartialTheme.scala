@@ -20,7 +20,8 @@ object PickCardPropsPartialTheme {
     __obj.asInstanceOf[PickCardPropsPartialTheme]
   }
   
-  extension [Self <: PickCardPropsPartialTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickCardPropsPartialTheme] (val x: Self) extends AnyVal {
     
     inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     

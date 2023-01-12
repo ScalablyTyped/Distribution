@@ -27,7 +27,8 @@ object RasterRGBResult {
     __obj.asInstanceOf[RasterRGBResult]
   }
   
-  extension [Self <: RasterRGBResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterRGBResult] (val x: Self) extends AnyVal {
     
     inline def setRenderer(value: RasterStretchRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     

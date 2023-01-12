@@ -33,7 +33,8 @@ object distCordovaSrcApiAuthenticationSmsMod {
       __obj.asInstanceOf[LinkWithPhoneNumberRequest]
     }
     
-    extension [Self <: LinkWithPhoneNumberRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkWithPhoneNumberRequest] (val x: Self) extends AnyVal {
       
       inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     }
@@ -54,7 +55,8 @@ object distCordovaSrcApiAuthenticationSmsMod {
       __obj.asInstanceOf[SendPhoneVerificationCodeRequest]
     }
     
-    extension [Self <: SendPhoneVerificationCodeRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendPhoneVerificationCodeRequest] (val x: Self) extends AnyVal {
       
       inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object distCordovaSrcApiAuthenticationSmsMod {
       __obj.asInstanceOf[SendPhoneVerificationCodeResponse]
     }
     
-    extension [Self <: SendPhoneVerificationCodeResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendPhoneVerificationCodeResponse] (val x: Self) extends AnyVal {
       
       inline def setSessionInfo(value: String): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
     }
@@ -102,7 +105,8 @@ object distCordovaSrcApiAuthenticationSmsMod {
       __obj.asInstanceOf[SignInWithPhoneNumberRequest]
     }
     
-    extension [Self <: SignInWithPhoneNumberRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignInWithPhoneNumberRequest] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -142,7 +146,8 @@ object distCordovaSrcApiAuthenticationSmsMod {
       __obj.asInstanceOf[SignInWithPhoneNumberResponse]
     }
     
-    extension [Self <: SignInWithPhoneNumberResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignInWithPhoneNumberResponse] (val x: Self) extends AnyVal {
       
       inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
       

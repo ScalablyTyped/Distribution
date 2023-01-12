@@ -19,7 +19,8 @@ object PgpProvider {
       __obj.asInstanceOf[KeyFingerprint]
     }
     
-    extension [Self <: KeyFingerprint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyFingerprint] (val x: Self) extends AnyVal {
       
       inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object PgpProvider {
       __obj.asInstanceOf[PublicKey]
     }
     
-    extension [Self <: PublicKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
       
       inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object PgpProvider {
       __obj.asInstanceOf[VerifyDecryptResult]
     }
     
-    extension [Self <: VerifyDecryptResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyDecryptResult] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

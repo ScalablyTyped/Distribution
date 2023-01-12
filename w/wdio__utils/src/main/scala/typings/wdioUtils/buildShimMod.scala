@@ -92,7 +92,8 @@ object buildShimMod {
           __obj.asInstanceOf[Global]
         }
         
-        extension [Self <: Global](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
           
           inline def setExpect(value: Any): Self = StObject.set(x, "expect", value.asInstanceOf[js.Any])
           
@@ -179,7 +180,8 @@ object buildShimMod {
       __obj.asInstanceOf[Retries]
     }
     
-    extension [Self <: Retries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Retries] (val x: Self) extends AnyVal {
       
       inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       

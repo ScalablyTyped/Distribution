@@ -43,7 +43,8 @@ object InferenceEventSummary {
     __obj.asInstanceOf[InferenceEventSummary]
   }
   
-  extension [Self <: InferenceEventSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceEventSummary] (val x: Self) extends AnyVal {
     
     inline def setDiagnostics(value: ModelMetrics): Self = StObject.set(x, "Diagnostics", value.asInstanceOf[js.Any])
     

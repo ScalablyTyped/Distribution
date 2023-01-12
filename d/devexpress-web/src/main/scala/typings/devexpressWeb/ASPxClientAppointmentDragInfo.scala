@@ -47,7 +47,8 @@ object ASPxClientAppointmentDragInfo {
     __obj.asInstanceOf[ASPxClientAppointmentDragInfo]
   }
   
-  extension [Self <: ASPxClientAppointmentDragInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientAppointmentDragInfo] (val x: Self) extends AnyVal {
     
     inline def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     

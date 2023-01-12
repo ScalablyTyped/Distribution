@@ -122,7 +122,8 @@ object ChannelDescriptor0 {
     __obj.asInstanceOf[ChannelDescriptor0]
   }
   
-  extension [Self <: ChannelDescriptor0](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelDescriptor0] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

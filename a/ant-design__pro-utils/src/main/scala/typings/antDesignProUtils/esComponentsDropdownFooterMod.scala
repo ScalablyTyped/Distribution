@@ -35,7 +35,8 @@ object esComponentsDropdownFooterMod {
       __obj.asInstanceOf[DropdownFooterProps]
     }
     
-    extension [Self <: DropdownFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownFooterProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

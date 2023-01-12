@@ -44,7 +44,8 @@ object libProviderServicesNamesAndRolesMod {
       __obj.asInstanceOf[Member]
     }
     
-    extension [Self <: Member](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Member] (val x: Self) extends AnyVal {
       
       inline def setLis_person_sourcedid(value: String): Self = StObject.set(x, "lis_person_sourcedid", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object libProviderServicesNamesAndRolesMod {
       __obj.asInstanceOf[MemberFilters]
     }
     
-    extension [Self <: MemberFilters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemberFilters] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object libProviderServicesNamesAndRolesMod {
       __obj.asInstanceOf[MembersResult]
     }
     
-    extension [Self <: MembersResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MembersResult] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Id): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

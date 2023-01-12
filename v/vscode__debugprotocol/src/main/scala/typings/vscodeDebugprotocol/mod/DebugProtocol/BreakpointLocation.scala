@@ -26,7 +26,8 @@ object BreakpointLocation {
     __obj.asInstanceOf[BreakpointLocation]
   }
   
-  extension [Self <: BreakpointLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreakpointLocation] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

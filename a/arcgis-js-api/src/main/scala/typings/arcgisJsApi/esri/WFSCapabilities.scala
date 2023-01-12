@@ -27,7 +27,8 @@ object WFSCapabilities {
     __obj.asInstanceOf[WFSCapabilities]
   }
   
-  extension [Self <: WFSCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WFSCapabilities] (val x: Self) extends AnyVal {
     
     inline def setFeatureTypes(value: js.Array[WFSFeatureType]): Self = StObject.set(x, "featureTypes", value.asInstanceOf[js.Any])
     

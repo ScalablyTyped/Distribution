@@ -26,7 +26,8 @@ object RuntimeError {
     __obj.asInstanceOf[RuntimeError]
   }
   
-  extension [Self <: RuntimeError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ErrorCodesType): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

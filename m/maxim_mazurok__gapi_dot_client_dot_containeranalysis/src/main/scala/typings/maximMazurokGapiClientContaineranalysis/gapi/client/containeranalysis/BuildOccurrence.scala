@@ -33,7 +33,8 @@ object BuildOccurrence {
     __obj.asInstanceOf[BuildOccurrence]
   }
   
-  extension [Self <: BuildOccurrence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildOccurrence] (val x: Self) extends AnyVal {
     
     inline def setIntotoProvenance(value: InTotoProvenance): Self = StObject.set(x, "intotoProvenance", value.asInstanceOf[js.Any])
     

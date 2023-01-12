@@ -19,7 +19,8 @@ object Sentiment {
     __obj.asInstanceOf[Sentiment]
   }
   
-  extension [Self <: Sentiment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sentiment] (val x: Self) extends AnyVal {
     
     inline def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
     

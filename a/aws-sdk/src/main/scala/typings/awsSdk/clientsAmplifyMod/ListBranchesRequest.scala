@@ -28,7 +28,8 @@ object ListBranchesRequest {
     __obj.asInstanceOf[ListBranchesRequest]
   }
   
-  extension [Self <: ListBranchesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBranchesRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

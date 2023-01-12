@@ -80,7 +80,8 @@ object HidNumericControlDescription {
     __obj.asInstanceOf[HidNumericControlDescription]
   }
   
-  extension [Self <: HidNumericControlDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HidNumericControlDescription] (val x: Self) extends AnyVal {
     
     inline def setHasNull(value: Boolean): Self = StObject.set(x, "hasNull", value.asInstanceOf[js.Any])
     

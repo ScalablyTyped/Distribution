@@ -20,7 +20,8 @@ object SelectListGroupProps {
     __obj.asInstanceOf[SelectListGroupProps]
   }
   
-  extension [Self <: SelectListGroupProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectListGroupProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

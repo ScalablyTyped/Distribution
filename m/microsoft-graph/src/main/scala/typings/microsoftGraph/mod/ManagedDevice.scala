@@ -204,7 +204,8 @@ object ManagedDevice {
     __obj.asInstanceOf[ManagedDevice]
   }
   
-  extension [Self <: ManagedDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedDevice] (val x: Self) extends AnyVal {
     
     inline def setActivationLockBypassCode(value: NullableOption[String]): Self = StObject.set(x, "activationLockBypassCode", value.asInstanceOf[js.Any])
     

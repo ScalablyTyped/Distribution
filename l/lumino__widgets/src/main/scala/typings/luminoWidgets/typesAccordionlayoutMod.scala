@@ -76,7 +76,8 @@ object typesAccordionlayoutMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setTitleSpace(value: Double): Self = StObject.set(x, "titleSpace", value.asInstanceOf[js.Any])
         
@@ -116,7 +117,8 @@ object typesAccordionlayoutMod {
         __obj.asInstanceOf[IRenderer]
       }
       
-      extension [Self <: IRenderer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRenderer] (val x: Self) extends AnyVal {
         
         inline def setCreateSectionTitle(value: Title[Widget] => HTMLElement): Self = StObject.set(x, "createSectionTitle", js.Any.fromFunction1(value))
         

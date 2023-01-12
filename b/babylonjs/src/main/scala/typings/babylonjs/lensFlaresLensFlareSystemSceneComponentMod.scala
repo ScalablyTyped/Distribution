@@ -115,7 +115,8 @@ object lensFlaresLensFlareSystemSceneComponentMod {
         __obj.asInstanceOf[AbstractScene]
       }
       
-      extension [Self <: AbstractScene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AbstractScene] (val x: Self) extends AnyVal {
         
         inline def setAddLensFlareSystem(value: LensFlareSystem => Unit): Self = StObject.set(x, "addLensFlareSystem", js.Any.fromFunction1(value))
         

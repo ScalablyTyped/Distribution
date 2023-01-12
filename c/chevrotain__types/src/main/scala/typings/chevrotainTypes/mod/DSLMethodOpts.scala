@@ -42,7 +42,8 @@ object DSLMethodOpts {
     __obj.asInstanceOf[DSLMethodOpts[T]]
   }
   
-  extension [Self <: DSLMethodOpts[?], T](x: Self & DSLMethodOpts[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DSLMethodOpts[?], T] (val x: Self & DSLMethodOpts[T]) extends AnyVal {
     
     inline def setDEF(value: () => T): Self = StObject.set(x, "DEF", js.Any.fromFunction0(value))
     

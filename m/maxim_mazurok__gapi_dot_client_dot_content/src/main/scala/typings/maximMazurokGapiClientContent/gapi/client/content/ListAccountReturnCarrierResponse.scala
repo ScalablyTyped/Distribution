@@ -16,7 +16,8 @@ object ListAccountReturnCarrierResponse {
     __obj.asInstanceOf[ListAccountReturnCarrierResponse]
   }
   
-  extension [Self <: ListAccountReturnCarrierResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccountReturnCarrierResponse] (val x: Self) extends AnyVal {
     
     inline def setAccountReturnCarriers(value: js.Array[AccountReturnCarrier]): Self = StObject.set(x, "accountReturnCarriers", value.asInstanceOf[js.Any])
     

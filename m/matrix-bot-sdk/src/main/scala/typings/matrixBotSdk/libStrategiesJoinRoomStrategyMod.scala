@@ -39,7 +39,8 @@ object libStrategiesJoinRoomStrategyMod {
       __obj.asInstanceOf[IJoinRoomStrategy]
     }
     
-    extension [Self <: IJoinRoomStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJoinRoomStrategy] (val x: Self) extends AnyVal {
       
       inline def setJoinRoom(
         value: (String, String, js.Function1[/* targetRoomIdOrAlias */ String, js.Promise[String]]) => js.Promise[String]

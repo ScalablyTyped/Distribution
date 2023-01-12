@@ -29,7 +29,8 @@ object AbstractHandshake {
     __obj.asInstanceOf[AbstractHandshake]
   }
   
-  extension [Self <: AbstractHandshake](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractHandshake] (val x: Self) extends AnyVal {
     
     inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object DropRowRangeRequest {
     __obj.asInstanceOf[DropRowRangeRequest]
   }
   
-  extension [Self <: DropRowRangeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropRowRangeRequest] (val x: Self) extends AnyVal {
     
     inline def setDeleteAllDataFromTable(value: Boolean): Self = StObject.set(x, "deleteAllDataFromTable", value.asInstanceOf[js.Any])
     

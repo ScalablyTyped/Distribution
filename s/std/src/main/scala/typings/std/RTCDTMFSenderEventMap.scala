@@ -16,7 +16,8 @@ object RTCDTMFSenderEventMap {
     __obj.asInstanceOf[RTCDTMFSenderEventMap]
   }
   
-  extension [Self <: RTCDTMFSenderEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCDTMFSenderEventMap] (val x: Self) extends AnyVal {
     
     inline def setTonechange(value: RTCDTMFToneChangeEvent): Self = StObject.set(x, "tonechange", value.asInstanceOf[js.Any])
   }

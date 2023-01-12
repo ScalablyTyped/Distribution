@@ -206,7 +206,8 @@ object FileDescriptorProto {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setDependencyList(value: js.Array[String]): Self = StObject.set(x, "dependencyList", value.asInstanceOf[js.Any])
       

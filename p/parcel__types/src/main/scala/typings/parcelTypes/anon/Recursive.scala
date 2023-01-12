@@ -17,7 +17,8 @@ object Recursive {
     __obj.asInstanceOf[Recursive]
   }
   
-  extension [Self <: Recursive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Recursive] (val x: Self) extends AnyVal {
     
     inline def setIncludeInline(value: Boolean): Self = StObject.set(x, "includeInline", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object CIMLineCallout {
     __obj.asInstanceOf[CIMLineCallout]
   }
   
-  extension [Self <: CIMLineCallout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMLineCallout] (val x: Self) extends AnyVal {
     
     inline def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     

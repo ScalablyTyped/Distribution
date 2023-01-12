@@ -48,7 +48,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T](x: Self & Options[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setAfterBuild(value: (/* model */ Any, /* attrs */ T | js.Array[T], /* options */ Any) => Unit): Self = StObject.set(x, "afterBuild", js.Any.fromFunction3(value))
       

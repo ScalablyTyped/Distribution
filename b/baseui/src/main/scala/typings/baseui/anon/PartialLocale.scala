@@ -50,7 +50,8 @@ object PartialLocale {
     __obj.asInstanceOf[PartialLocale]
   }
   
-  extension [Self <: PartialLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLocale] (val x: Self) extends AnyVal {
     
     inline def setAccordion(value: AccordionLocale): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
     

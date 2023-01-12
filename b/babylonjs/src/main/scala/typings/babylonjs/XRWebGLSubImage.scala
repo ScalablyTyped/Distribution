@@ -33,7 +33,8 @@ object XRWebGLSubImage {
     __obj.asInstanceOf[XRWebGLSubImage]
   }
   
-  extension [Self <: XRWebGLSubImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRWebGLSubImage] (val x: Self) extends AnyVal {
     
     inline def setColorTexture(value: WebGLTexture): Self = StObject.set(x, "colorTexture", value.asInstanceOf[js.Any])
     

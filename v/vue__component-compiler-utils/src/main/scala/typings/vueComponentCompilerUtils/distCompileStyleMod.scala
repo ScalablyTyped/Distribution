@@ -30,7 +30,8 @@ object distCompileStyleMod {
       __obj.asInstanceOf[AsyncStyleCompileOptions]
     }
     
-    extension [Self <: AsyncStyleCompileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncStyleCompileOptions] (val x: Self) extends AnyVal {
       
       inline def setIsAsync(value: Boolean): Self = StObject.set(x, "isAsync", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object distCompileStyleMod {
       __obj.asInstanceOf[StyleCompileOptions]
     }
     
-    extension [Self <: StyleCompileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleCompileOptions] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object distCompileStyleMod {
       __obj.asInstanceOf[StyleCompileResults]
     }
     
-    extension [Self <: StyleCompileResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleCompileResults] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

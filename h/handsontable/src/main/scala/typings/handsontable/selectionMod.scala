@@ -21,7 +21,8 @@ object selectionMod {
       __obj.asInstanceOf[SelectionController]
     }
     
-    extension [Self <: SelectionController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionController] (val x: Self) extends AnyVal {
       
       inline def setCell(value: Boolean): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       

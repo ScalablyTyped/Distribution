@@ -25,7 +25,8 @@ object TensorInfo {
       __obj.asInstanceOf[ICooSparse]
     }
     
-    extension [Self <: ICooSparse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICooSparse] (val x: Self) extends AnyVal {
       
       inline def setDenseShapeTensorName(value: String): Self = StObject.set(x, "denseShapeTensorName", value.asInstanceOf[js.Any])
       

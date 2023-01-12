@@ -40,7 +40,8 @@ object GetIosPostInstallAttributionRequest {
     __obj.asInstanceOf[GetIosPostInstallAttributionRequest]
   }
   
-  extension [Self <: GetIosPostInstallAttributionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIosPostInstallAttributionRequest] (val x: Self) extends AnyVal {
     
     inline def setAppInstallationTime(value: String): Self = StObject.set(x, "appInstallationTime", value.asInstanceOf[js.Any])
     

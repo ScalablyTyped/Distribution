@@ -19,7 +19,8 @@ object ActiveIcon {
     __obj.asInstanceOf[ActiveIcon]
   }
   
-  extension [Self <: ActiveIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveIcon] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

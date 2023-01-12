@@ -24,7 +24,8 @@ object StretchedPictureFill {
     __obj.asInstanceOf[StretchedPictureFill]
   }
   
-  extension [Self <: StretchedPictureFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StretchedPictureFill] (val x: Self) extends AnyVal {
     
     inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     

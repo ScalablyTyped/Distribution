@@ -14,7 +14,8 @@ object PixelRatio {
   @js.native
   val ^ : PixelRatio = js.native
   
-  extension [Self <: PixelRatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PixelRatio] (val x: Self) extends AnyVal {
     
     inline def setGet(value: () => Double): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
   }

@@ -22,7 +22,8 @@ object ProductViewItemIssue {
     __obj.asInstanceOf[ProductViewItemIssue]
   }
   
-  extension [Self <: ProductViewItemIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductViewItemIssue] (val x: Self) extends AnyVal {
     
     inline def setIssueType(value: ProductViewItemIssueItemIssueType): Self = StObject.set(x, "issueType", value.asInstanceOf[js.Any])
     

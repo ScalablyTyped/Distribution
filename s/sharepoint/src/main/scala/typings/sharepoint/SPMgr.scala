@@ -40,7 +40,8 @@ object SPMgr {
     __obj.asInstanceOf[SPMgr]
   }
   
-  extension [Self <: SPMgr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SPMgr] (val x: Self) extends AnyVal {
     
     inline def setNewGroup(value: (StringDictionary[Any], String) => Boolean): Self = StObject.set(x, "NewGroup", js.Any.fromFunction2(value))
     

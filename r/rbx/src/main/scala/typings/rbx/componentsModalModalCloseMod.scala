@@ -70,7 +70,8 @@ object componentsModalModalCloseMod {
       __obj.asInstanceOf[ModalCloseModifierProps]
     }
     
-    extension [Self <: ModalCloseModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalCloseModifierProps] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
@@ -164,7 +165,8 @@ object componentsModalModalCloseMod {
       __obj.asInstanceOf[ModalCloseProps]
     }
     
-    extension [Self <: ModalCloseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalCloseProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`

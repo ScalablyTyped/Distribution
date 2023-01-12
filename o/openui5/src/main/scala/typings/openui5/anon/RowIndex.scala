@@ -29,7 +29,8 @@ object RowIndex {
     __obj.asInstanceOf[RowIndex]
   }
   
-  extension [Self <: RowIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowIndex] (val x: Self) extends AnyVal {
     
     inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     

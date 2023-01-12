@@ -17,7 +17,8 @@ object MediaTrackConstraints {
     __obj.asInstanceOf[MediaTrackConstraints]
   }
   
-  extension [Self <: MediaTrackConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaTrackConstraints] (val x: Self) extends AnyVal {
     
     inline def setAdvanced(value: js.Array[MediaTrackConstraintSet]): Self = StObject.set(x, "advanced", value.asInstanceOf[js.Any])
     

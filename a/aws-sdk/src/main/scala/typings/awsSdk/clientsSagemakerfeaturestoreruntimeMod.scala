@@ -54,7 +54,8 @@ object clientsSagemakerfeaturestoreruntimeMod {
       __obj.asInstanceOf[BatchGetRecordError]
     }
     
-    extension [Self <: BatchGetRecordError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchGetRecordError] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: ValueAsString): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object clientsSagemakerfeaturestoreruntimeMod {
       __obj.asInstanceOf[BatchGetRecordIdentifier]
     }
     
-    extension [Self <: BatchGetRecordIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchGetRecordIdentifier] (val x: Self) extends AnyVal {
       
       inline def setFeatureGroupName(value: FeatureGroupName): Self = StObject.set(x, "FeatureGroupName", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object clientsSagemakerfeaturestoreruntimeMod {
       __obj.asInstanceOf[BatchGetRecordRequest]
     }
     
-    extension [Self <: BatchGetRecordRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchGetRecordRequest] (val x: Self) extends AnyVal {
       
       inline def setIdentifiers(value: BatchGetRecordIdentifiers): Self = StObject.set(x, "Identifiers", value.asInstanceOf[js.Any])
       
@@ -160,7 +163,8 @@ object clientsSagemakerfeaturestoreruntimeMod {
       __obj.asInstanceOf[BatchGetRecordResponse]
     }
     
-    extension [Self <: BatchGetRecordResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchGetRecordResponse] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: BatchGetRecordErrors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
       
@@ -200,7 +204,8 @@ object clientsSagemakerfeaturestoreruntimeMod {
       __obj.asInstanceOf[BatchGetRecordResultDetail]
     }
     
-    extension [Self <: BatchGetRecordResultDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchGetRecordResultDetail] (val x: Self) extends AnyVal {
       
       inline def setFeatureGroupName(value: ValueAsString): Self = StObject.set(x, "FeatureGroupName", value.asInstanceOf[js.Any])
       
@@ -230,7 +235,8 @@ object clientsSagemakerfeaturestoreruntimeMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -271,7 +277,8 @@ object clientsSagemakerfeaturestoreruntimeMod {
       __obj.asInstanceOf[DeleteRecordRequest]
     }
     
-    extension [Self <: DeleteRecordRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteRecordRequest] (val x: Self) extends AnyVal {
       
       inline def setEventTime(value: ValueAsString): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
       
@@ -306,7 +313,8 @@ object clientsSagemakerfeaturestoreruntimeMod {
       __obj.asInstanceOf[FeatureValue]
     }
     
-    extension [Self <: FeatureValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureValue] (val x: Self) extends AnyVal {
       
       inline def setFeatureName(value: FeatureName): Self = StObject.set(x, "FeatureName", value.asInstanceOf[js.Any])
       
@@ -338,7 +346,8 @@ object clientsSagemakerfeaturestoreruntimeMod {
       __obj.asInstanceOf[GetRecordRequest]
     }
     
-    extension [Self <: GetRecordRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetRecordRequest] (val x: Self) extends AnyVal {
       
       inline def setFeatureGroupName(value: FeatureGroupName): Self = StObject.set(x, "FeatureGroupName", value.asInstanceOf[js.Any])
       
@@ -366,7 +375,8 @@ object clientsSagemakerfeaturestoreruntimeMod {
       __obj.asInstanceOf[GetRecordResponse]
     }
     
-    extension [Self <: GetRecordResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetRecordResponse] (val x: Self) extends AnyVal {
       
       inline def setRecord(value: Record): Self = StObject.set(x, "Record", value.asInstanceOf[js.Any])
       
@@ -397,7 +407,8 @@ object clientsSagemakerfeaturestoreruntimeMod {
       __obj.asInstanceOf[PutRecordRequest]
     }
     
-    extension [Self <: PutRecordRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutRecordRequest] (val x: Self) extends AnyVal {
       
       inline def setFeatureGroupName(value: FeatureGroupName): Self = StObject.set(x, "FeatureGroupName", value.asInstanceOf[js.Any])
       

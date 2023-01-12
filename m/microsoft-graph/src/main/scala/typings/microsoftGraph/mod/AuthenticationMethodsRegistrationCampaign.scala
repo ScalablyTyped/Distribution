@@ -32,7 +32,8 @@ object AuthenticationMethodsRegistrationCampaign {
     __obj.asInstanceOf[AuthenticationMethodsRegistrationCampaign]
   }
   
-  extension [Self <: AuthenticationMethodsRegistrationCampaign](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationMethodsRegistrationCampaign] (val x: Self) extends AnyVal {
     
     inline def setExcludeTargets(value: js.Array[ExcludeTarget]): Self = StObject.set(x, "excludeTargets", value.asInstanceOf[js.Any])
     

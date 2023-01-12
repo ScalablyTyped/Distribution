@@ -23,7 +23,8 @@ object TextBoxStyle {
     __obj.asInstanceOf[TextBoxStyle]
   }
   
-  extension [Self <: TextBoxStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextBoxStyle] (val x: Self) extends AnyVal {
     
     inline def setDash(value: js.Array[Double]): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     

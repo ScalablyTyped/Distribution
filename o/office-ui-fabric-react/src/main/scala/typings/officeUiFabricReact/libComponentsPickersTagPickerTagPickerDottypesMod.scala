@@ -29,7 +29,8 @@ object libComponentsPickersTagPickerTagPickerDottypesMod {
       __obj.asInstanceOf[ITag]
     }
     
-    extension [Self <: ITag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITag] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object libComponentsPickersTagPickerTagPickerDottypesMod {
       __obj.asInstanceOf[ITagItemProps]
     }
     
-    extension [Self <: ITagItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITagItemProps] (val x: Self) extends AnyVal {
       
       inline def setEnableTagFocusInDisabledPicker(value: Boolean): Self = StObject.set(x, "enableTagFocusInDisabledPicker", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object libComponentsPickersTagPickerTagPickerDottypesMod {
       __obj.asInstanceOf[ITagItemStyleProps]
     }
     
-    extension [Self <: ITagItemStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITagItemStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -133,7 +136,8 @@ object libComponentsPickersTagPickerTagPickerDottypesMod {
       __obj.asInstanceOf[ITagItemStyles]
     }
     
-    extension [Self <: ITagItemStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITagItemStyles] (val x: Self) extends AnyVal {
       
       inline def setClose(value: IStyle): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -172,7 +176,8 @@ object libComponentsPickersTagPickerTagPickerDottypesMod {
       __obj.asInstanceOf[ITagItemSuggestionProps]
     }
     
-    extension [Self <: ITagItemSuggestionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITagItemSuggestionProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: IStyleFunctionOrObject[ITagItemSuggestionStyleProps, ITagItemSuggestionStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
@@ -200,7 +205,8 @@ object libComponentsPickersTagPickerTagPickerDottypesMod {
       __obj.asInstanceOf[ITagItemSuggestionStyleProps]
     }
     
-    extension [Self <: ITagItemSuggestionStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITagItemSuggestionStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -222,7 +228,8 @@ object libComponentsPickersTagPickerTagPickerDottypesMod {
       __obj.asInstanceOf[ITagItemSuggestionStyles]
     }
     
-    extension [Self <: ITagItemSuggestionStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITagItemSuggestionStyles] (val x: Self) extends AnyVal {
       
       inline def setSuggestionTextOverflow(value: IStyle): Self = StObject.set(x, "suggestionTextOverflow", value.asInstanceOf[js.Any])
       

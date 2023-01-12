@@ -24,7 +24,8 @@ object WillSaveTextDocumentParams {
     __obj.asInstanceOf[WillSaveTextDocumentParams]
   }
   
-  extension [Self <: WillSaveTextDocumentParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WillSaveTextDocumentParams] (val x: Self) extends AnyVal {
     
     inline def setReason(value: TextDocumentSaveReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

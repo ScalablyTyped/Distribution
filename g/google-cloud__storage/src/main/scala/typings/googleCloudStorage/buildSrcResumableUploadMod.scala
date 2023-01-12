@@ -221,7 +221,8 @@ object buildSrcResumableUploadMod {
       __obj.asInstanceOf[ApiError]
     }
     
-    extension [Self <: ApiError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -256,7 +257,8 @@ object buildSrcResumableUploadMod {
       __obj.asInstanceOf[ConfigMetadata]
     }
     
-    extension [Self <: ConfigMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigMetadata] (val x: Self) extends AnyVal {
       
       inline def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
       
@@ -285,7 +287,8 @@ object buildSrcResumableUploadMod {
       __obj.asInstanceOf[ErrorWithCode]
     }
     
-    extension [Self <: ErrorWithCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorWithCode] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
@@ -302,7 +305,8 @@ object buildSrcResumableUploadMod {
       __obj.asInstanceOf[GoogleInnerError]
     }
     
-    extension [Self <: GoogleInnerError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoogleInnerError] (val x: Self) extends AnyVal {
       
       inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
@@ -355,7 +359,8 @@ object buildSrcResumableUploadMod {
       __obj.asInstanceOf[QueryParameters]
     }
     
-    extension [Self <: QueryParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryParameters] (val x: Self) extends AnyVal {
       
       inline def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
       
@@ -514,7 +519,8 @@ object buildSrcResumableUploadMod {
       __obj.asInstanceOf[UploadConfig]
     }
     
-    extension [Self <: UploadConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadConfig] (val x: Self) extends AnyVal {
       
       inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
       

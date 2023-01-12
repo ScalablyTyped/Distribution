@@ -174,7 +174,8 @@ object typesSpecTitleMod {
       __obj.asInstanceOf[BaseTitle]
     }
     
-    extension [Self <: BaseTitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTitle] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -325,7 +326,8 @@ object typesSpecTitleMod {
       __obj.asInstanceOf[Title]
     }
     
-    extension [Self <: Title](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
       
       inline def setEncode(value: TitleEncode | Encode[TextEncodeEntry]): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
       
@@ -389,7 +391,8 @@ object typesSpecTitleMod {
       __obj.asInstanceOf[TitleEncode]
     }
     
-    extension [Self <: TitleEncode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleEncode] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: GuideEncodeEntry[GroupEncodeEntry]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       

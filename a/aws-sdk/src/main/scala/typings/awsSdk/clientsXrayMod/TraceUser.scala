@@ -23,7 +23,8 @@ object TraceUser {
     __obj.asInstanceOf[TraceUser]
   }
   
-  extension [Self <: TraceUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraceUser] (val x: Self) extends AnyVal {
     
     inline def setServiceIds(value: ServiceIds): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
     

@@ -145,7 +145,8 @@ object typesRequestMod {
       __obj.asInstanceOf[RequestGenericInterface]
     }
     
-    extension [Self <: RequestGenericInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestGenericInterface] (val x: Self) extends AnyVal {
       
       inline def setBody(value: RequestBodyDefault): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       

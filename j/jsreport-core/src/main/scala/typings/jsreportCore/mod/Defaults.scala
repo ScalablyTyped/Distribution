@@ -17,7 +17,8 @@ object Defaults {
     __obj.asInstanceOf[Defaults]
   }
   
-  extension [Self <: Defaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Defaults] (val x: Self) extends AnyVal {
     
     inline def setLoadConfig(value: Boolean): Self = StObject.set(x, "loadConfig", value.asInstanceOf[js.Any])
     

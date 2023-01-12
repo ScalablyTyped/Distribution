@@ -18,7 +18,8 @@ object DescribeConversionTasksResult {
     __obj.asInstanceOf[DescribeConversionTasksResult]
   }
   
-  extension [Self <: DescribeConversionTasksResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeConversionTasksResult] (val x: Self) extends AnyVal {
     
     inline def setConversionTasks(value: DescribeConversionTaskList): Self = StObject.set(x, "ConversionTasks", value.asInstanceOf[js.Any])
     

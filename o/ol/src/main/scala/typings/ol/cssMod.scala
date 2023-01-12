@@ -67,7 +67,8 @@ object cssMod {
       __obj.asInstanceOf[FontParameters]
     }
     
-    extension [Self <: FontParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontParameters] (val x: Self) extends AnyVal {
       
       inline def setFamilies(value: js.Array[String]): Self = StObject.set(x, "families", value.asInstanceOf[js.Any])
       

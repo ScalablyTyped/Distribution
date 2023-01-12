@@ -20,7 +20,8 @@ object OnData {
     __obj.asInstanceOf[OnData]
   }
   
-  extension [Self <: OnData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnData] (val x: Self) extends AnyVal {
     
     inline def setOnData(value: Buffer => Unit): Self = StObject.set(x, "onData", js.Any.fromFunction1(value))
     

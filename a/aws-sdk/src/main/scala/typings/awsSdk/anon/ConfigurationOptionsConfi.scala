@@ -886,7 +886,8 @@ object ConfigurationOptionsConfi {
     __obj.asInstanceOf[ConfigurationOptionsConfi]
   }
   
-  extension [Self <: ConfigurationOptionsConfi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationOptionsConfi] (val x: Self) extends AnyVal {
     
     inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     

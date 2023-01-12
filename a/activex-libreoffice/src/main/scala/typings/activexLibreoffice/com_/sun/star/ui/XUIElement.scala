@@ -63,7 +63,8 @@ object XUIElement {
     __obj.asInstanceOf[XUIElement]
   }
   
-  extension [Self <: XUIElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUIElement] (val x: Self) extends AnyVal {
     
     inline def setFrame(value: XFrame): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
     

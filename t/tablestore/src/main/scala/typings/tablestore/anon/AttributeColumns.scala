@@ -34,7 +34,8 @@ object AttributeColumns {
     __obj.asInstanceOf[AttributeColumns]
   }
   
-  extension [Self <: AttributeColumns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeColumns] (val x: Self) extends AnyVal {
     
     inline def setAttributeColumns(value: js.Array[DELETEALL]): Self = StObject.set(x, "attributeColumns", value.asInstanceOf[js.Any])
     

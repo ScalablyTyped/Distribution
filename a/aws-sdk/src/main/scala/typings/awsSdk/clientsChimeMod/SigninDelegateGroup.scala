@@ -18,7 +18,8 @@ object SigninDelegateGroup {
     __obj.asInstanceOf[SigninDelegateGroup]
   }
   
-  extension [Self <: SigninDelegateGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SigninDelegateGroup] (val x: Self) extends AnyVal {
     
     inline def setGroupName(value: NonEmptyString): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     

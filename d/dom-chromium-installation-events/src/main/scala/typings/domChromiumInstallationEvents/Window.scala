@@ -20,7 +20,8 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  extension [Self <: Window](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
     
     inline def setOnappinstalled(value: js.ThisFunction1[Window, /* ev */ Event, Any]): Self = StObject.set(x, "onappinstalled", value.asInstanceOf[js.Any])
     

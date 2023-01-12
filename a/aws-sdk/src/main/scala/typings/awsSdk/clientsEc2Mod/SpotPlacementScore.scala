@@ -28,7 +28,8 @@ object SpotPlacementScore {
     __obj.asInstanceOf[SpotPlacementScore]
   }
   
-  extension [Self <: SpotPlacementScore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpotPlacementScore] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZoneId(value: String): Self = StObject.set(x, "AvailabilityZoneId", value.asInstanceOf[js.Any])
     

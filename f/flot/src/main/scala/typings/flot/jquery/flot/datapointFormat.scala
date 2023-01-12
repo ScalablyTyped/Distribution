@@ -23,7 +23,8 @@ object datapointFormat {
     __obj.asInstanceOf[datapointFormat]
   }
   
-  extension [Self <: datapointFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: datapointFormat] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

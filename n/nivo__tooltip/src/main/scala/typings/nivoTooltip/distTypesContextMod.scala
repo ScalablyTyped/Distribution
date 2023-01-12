@@ -74,7 +74,8 @@ object distTypesContextMod {
       __obj.asInstanceOf[TooltipStateContextDataHidden]
     }
     
-    extension [Self <: TooltipStateContextDataHidden](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipStateContextDataHidden] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Null): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object distTypesContextMod {
       __obj.asInstanceOf[TooltipStateContextDataVisible]
     }
     
-    extension [Self <: TooltipStateContextDataVisible](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipStateContextDataVisible] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: TooltipAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       

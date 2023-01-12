@@ -21,7 +21,8 @@ object TransactionThreeDSecureInfo {
     __obj.asInstanceOf[TransactionThreeDSecureInfo]
   }
   
-  extension [Self <: TransactionThreeDSecureInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionThreeDSecureInfo] (val x: Self) extends AnyVal {
     
     inline def setEnrolled(value: String): Self = StObject.set(x, "enrolled", value.asInstanceOf[js.Any])
     

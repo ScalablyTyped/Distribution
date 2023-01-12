@@ -40,7 +40,8 @@ object LogEvent {
     __obj.asInstanceOf[LogEvent]
   }
   
-  extension [Self <: LogEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogEvent] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: internal | app): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

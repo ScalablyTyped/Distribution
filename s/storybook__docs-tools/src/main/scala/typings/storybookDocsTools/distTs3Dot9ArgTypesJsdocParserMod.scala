@@ -25,7 +25,8 @@ object distTs3Dot9ArgTypesJsdocParserMod {
       __obj.asInstanceOf[ExtractedJsDoc]
     }
     
-    extension [Self <: ExtractedJsDoc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractedJsDoc] (val x: Self) extends AnyVal {
       
       inline def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object distTs3Dot9ArgTypesJsdocParserMod {
       __obj.asInstanceOf[ExtractedJsDocParam]
     }
     
-    extension [Self <: ExtractedJsDocParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractedJsDocParam] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object distTs3Dot9ArgTypesJsdocParserMod {
       __obj.asInstanceOf[ExtractedJsDocReturns]
     }
     
-    extension [Self <: ExtractedJsDocReturns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractedJsDocReturns] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -118,7 +121,8 @@ object distTs3Dot9ArgTypesJsdocParserMod {
       __obj.asInstanceOf[JsDocParsingOptions]
     }
     
-    extension [Self <: JsDocParsingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsDocParsingOptions] (val x: Self) extends AnyVal {
       
       inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
@@ -145,7 +149,8 @@ object distTs3Dot9ArgTypesJsdocParserMod {
       __obj.asInstanceOf[JsDocParsingResult]
     }
     
-    extension [Self <: JsDocParsingResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsDocParsingResult] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

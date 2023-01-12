@@ -17,7 +17,8 @@ object IAuthenticatedSafe {
     __obj.asInstanceOf[IAuthenticatedSafe]
   }
   
-  extension [Self <: IAuthenticatedSafe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAuthenticatedSafe] (val x: Self) extends AnyVal {
     
     inline def setParsedValue(value: Any): Self = StObject.set(x, "parsedValue", value.asInstanceOf[js.Any])
     

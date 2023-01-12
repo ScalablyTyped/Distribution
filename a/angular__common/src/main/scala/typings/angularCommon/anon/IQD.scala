@@ -19,7 +19,8 @@ object IQD {
     __obj.asInstanceOf[IQD]
   }
   
-  extension [Self <: IQD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQD] (val x: Self) extends AnyVal {
     
     inline def setIQD(value: js.Array[String]): Self = StObject.set(x, "IQD", value.asInstanceOf[js.Any])
     

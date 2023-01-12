@@ -30,7 +30,8 @@ object AfterInitUpdate {
     __obj.asInstanceOf[AfterInitUpdate]
   }
   
-  extension [Self <: AfterInitUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AfterInitUpdate] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

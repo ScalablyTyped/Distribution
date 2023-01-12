@@ -23,7 +23,8 @@ object MixedInstancesPolicy {
     __obj.asInstanceOf[MixedInstancesPolicy]
   }
   
-  extension [Self <: MixedInstancesPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MixedInstancesPolicy] (val x: Self) extends AnyVal {
     
     inline def setInstancesDistribution(value: InstancesDistribution): Self = StObject.set(x, "InstancesDistribution", value.asInstanceOf[js.Any])
     

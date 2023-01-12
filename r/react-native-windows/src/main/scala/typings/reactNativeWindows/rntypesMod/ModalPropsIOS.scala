@@ -48,7 +48,8 @@ object ModalPropsIOS {
     __obj.asInstanceOf[ModalPropsIOS]
   }
   
-  extension [Self <: ModalPropsIOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalPropsIOS] (val x: Self) extends AnyVal {
     
     inline def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
     

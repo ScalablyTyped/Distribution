@@ -56,7 +56,8 @@ object Cloudflare {
     __obj.asInstanceOf[Cloudflare]
   }
   
-  extension [Self <: Cloudflare](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cloudflare] (val x: Self) extends AnyVal {
     
     inline def setDnsRecords(value: DNSRecords): Self = StObject.set(x, "dnsRecords", value.asInstanceOf[js.Any])
     

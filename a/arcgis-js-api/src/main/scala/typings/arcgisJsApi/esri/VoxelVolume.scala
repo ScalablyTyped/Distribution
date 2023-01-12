@@ -62,7 +62,8 @@ object VoxelVolume {
     __obj.asInstanceOf[VoxelVolume]
   }
   
-  extension [Self <: VoxelVolume](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoxelVolume] (val x: Self) extends AnyVal {
     
     inline def setComputeLayerSpaceLocation(value: js.Array[Double] => Point): Self = StObject.set(x, "computeLayerSpaceLocation", js.Any.fromFunction1(value))
     

@@ -18,7 +18,8 @@ object WorkspaceEditMetadata {
     __obj.asInstanceOf[WorkspaceEditMetadata]
   }
   
-  extension [Self <: WorkspaceEditMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceEditMetadata] (val x: Self) extends AnyVal {
     
     inline def setIsRefactoring(value: Boolean): Self = StObject.set(x, "isRefactoring", value.asInstanceOf[js.Any])
     

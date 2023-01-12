@@ -66,7 +66,8 @@ object cellTypesTextTypeTextTypeMod {
       __obj.asInstanceOf[TextCellType]
     }
     
-    extension [Self <: TextCellType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextCellType] (val x: Self) extends AnyVal {
       
       inline def setEditor(value: Instantiable1[/* instance */ default, TextEditor]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       

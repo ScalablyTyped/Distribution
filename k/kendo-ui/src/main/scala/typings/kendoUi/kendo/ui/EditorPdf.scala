@@ -41,7 +41,8 @@ object EditorPdf {
     __obj.asInstanceOf[EditorPdf]
   }
   
-  extension [Self <: EditorPdf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorPdf] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

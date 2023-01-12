@@ -40,7 +40,8 @@ object libComponentsCheckboxCheckboxDottypesMod {
       __obj.asInstanceOf[ICheckbox]
     }
     
-    extension [Self <: ICheckbox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckbox] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -171,7 +172,8 @@ object libComponentsCheckboxCheckboxDottypesMod {
       __obj.asInstanceOf[ICheckboxProps]
     }
     
-    extension [Self <: ICheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       
@@ -278,7 +280,8 @@ object libComponentsCheckboxCheckboxDottypesMod {
       __obj.asInstanceOf[ICheckboxStyleProps]
     }
     
-    extension [Self <: ICheckboxStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckboxStyleProps] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -346,7 +349,8 @@ object libComponentsCheckboxCheckboxDottypesMod {
       __obj.asInstanceOf[ICheckboxStyles]
     }
     
-    extension [Self <: ICheckboxStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckboxStyles] (val x: Self) extends AnyVal {
       
       inline def setCheckbox(value: IStyle): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
       

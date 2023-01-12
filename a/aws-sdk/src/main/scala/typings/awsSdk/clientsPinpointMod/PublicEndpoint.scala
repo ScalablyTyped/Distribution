@@ -68,7 +68,8 @@ object PublicEndpoint {
     __obj.asInstanceOf[PublicEndpoint]
   }
   
-  extension [Self <: PublicEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicEndpoint] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: string): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

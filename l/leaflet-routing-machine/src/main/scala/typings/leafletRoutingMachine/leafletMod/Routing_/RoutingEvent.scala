@@ -16,7 +16,8 @@ object RoutingEvent {
     __obj.asInstanceOf[RoutingEvent]
   }
   
-  extension [Self <: RoutingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutingEvent] (val x: Self) extends AnyVal {
     
     inline def setWaypoints(value: js.Array[Waypoint_]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     

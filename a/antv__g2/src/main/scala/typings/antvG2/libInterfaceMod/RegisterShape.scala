@@ -30,7 +30,8 @@ object RegisterShape {
     __obj.asInstanceOf[RegisterShape]
   }
   
-  extension [Self <: RegisterShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterShape] (val x: Self) extends AnyVal {
     
     inline def setDraw(value: (ShapeInfo, IGroup) => IShape | IGroup | Unit): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
     

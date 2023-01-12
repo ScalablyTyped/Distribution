@@ -322,7 +322,8 @@ object dxGantt {
       __obj.asInstanceOf[Column[TRowData, TKey]]
     }
     
-    extension [Self <: Column[?, ?], TRowData, TKey](x: Self & (Column[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column[?, ?], TRowData, TKey] (val x: Self & (Column[TRowData, TKey])) extends AnyVal {
       
       inline def setAlignment(value: HorizontalAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -531,7 +532,8 @@ object dxGantt {
       __obj.asInstanceOf[ContextMenuPreparingEvent]
     }
     
-    extension [Self <: ContextMenuPreparingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuPreparingEvent] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: dxGantt): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -580,7 +582,8 @@ object dxGantt {
       __obj.asInstanceOf[CustomCommandEvent]
     }
     
-    extension [Self <: CustomCommandEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomCommandEvent] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: dxGantt): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -609,7 +612,8 @@ object dxGantt {
       __obj.asInstanceOf[DependencyDeletedEvent]
     }
     
-    extension [Self <: DependencyDeletedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyDeletedEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -633,7 +637,8 @@ object dxGantt {
       __obj.asInstanceOf[DependencyDeletingEvent]
     }
     
-    extension [Self <: DependencyDeletingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyDeletingEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -656,7 +661,8 @@ object dxGantt {
       __obj.asInstanceOf[DependencyInsertedEvent]
     }
     
-    extension [Self <: DependencyInsertedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyInsertedEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -678,7 +684,8 @@ object dxGantt {
       __obj.asInstanceOf[DependencyInsertingEvent]
     }
     
-    extension [Self <: DependencyInsertingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyInsertingEvent] (val x: Self) extends AnyVal {
       
       inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
@@ -906,7 +913,8 @@ object dxGantt {
       __obj.asInstanceOf[ProgressTooltipTemplateData]
     }
     
-    extension [Self <: ProgressTooltipTemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressTooltipTemplateData] (val x: Self) extends AnyVal {
       
       inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     }
@@ -929,7 +937,8 @@ object dxGantt {
       __obj.asInstanceOf[ResourceAssignedEvent]
     }
     
-    extension [Self <: ResourceAssignedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceAssignedEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -951,7 +960,8 @@ object dxGantt {
       __obj.asInstanceOf[ResourceAssigningEvent]
     }
     
-    extension [Self <: ResourceAssigningEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceAssigningEvent] (val x: Self) extends AnyVal {
       
       inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
@@ -972,7 +982,8 @@ object dxGantt {
       __obj.asInstanceOf[ResourceDeletedEvent]
     }
     
-    extension [Self <: ResourceDeletedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceDeletedEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -996,7 +1007,8 @@ object dxGantt {
       __obj.asInstanceOf[ResourceDeletingEvent]
     }
     
-    extension [Self <: ResourceDeletingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceDeletingEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -1019,7 +1031,8 @@ object dxGantt {
       __obj.asInstanceOf[ResourceInsertedEvent]
     }
     
-    extension [Self <: ResourceInsertedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceInsertedEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -1041,7 +1054,8 @@ object dxGantt {
       __obj.asInstanceOf[ResourceInsertingEvent]
     }
     
-    extension [Self <: ResourceInsertingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceInsertingEvent] (val x: Self) extends AnyVal {
       
       inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
@@ -1061,7 +1075,8 @@ object dxGantt {
       __obj.asInstanceOf[ResourceManagerDialogShowingEvent]
     }
     
-    extension [Self <: ResourceManagerDialogShowingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceManagerDialogShowingEvent] (val x: Self) extends AnyVal {
       
       inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
@@ -1084,7 +1099,8 @@ object dxGantt {
       __obj.asInstanceOf[ResourceUnassignedEvent]
     }
     
-    extension [Self <: ResourceUnassignedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceUnassignedEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -1108,7 +1124,8 @@ object dxGantt {
       __obj.asInstanceOf[ResourceUnassigningEvent]
     }
     
-    extension [Self <: ResourceUnassigningEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceUnassigningEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -1146,7 +1163,8 @@ object dxGantt {
       __obj.asInstanceOf[ScaleCellPreparedEvent]
     }
     
-    extension [Self <: ScaleCellPreparedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleCellPreparedEvent] (val x: Self) extends AnyVal {
       
       inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
@@ -1175,7 +1193,8 @@ object dxGantt {
       __obj.asInstanceOf[SelectionChangedEvent]
     }
     
-    extension [Self <: SelectionChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setSelectedRowKey(value: Any): Self = StObject.set(x, "selectedRowKey", value.asInstanceOf[js.Any])
       
@@ -1198,7 +1217,8 @@ object dxGantt {
       __obj.asInstanceOf[TaskClickEvent]
     }
     
-    extension [Self <: TaskClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskClickEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -1241,7 +1261,8 @@ object dxGantt {
       __obj.asInstanceOf[TaskContentTemplateData]
     }
     
-    extension [Self <: TaskContentTemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskContentTemplateData] (val x: Self) extends AnyVal {
       
       inline def setCellSize(value: Any): Self = StObject.set(x, "cellSize", value.asInstanceOf[js.Any])
       
@@ -1277,7 +1298,8 @@ object dxGantt {
       __obj.asInstanceOf[TaskDblClickEvent]
     }
     
-    extension [Self <: TaskDblClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskDblClickEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -1304,7 +1326,8 @@ object dxGantt {
       __obj.asInstanceOf[TaskDeletedEvent]
     }
     
-    extension [Self <: TaskDeletedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskDeletedEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -1328,7 +1351,8 @@ object dxGantt {
       __obj.asInstanceOf[TaskDeletingEvent]
     }
     
-    extension [Self <: TaskDeletingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskDeletingEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -1356,7 +1380,8 @@ object dxGantt {
       __obj.asInstanceOf[TaskEditDialogShowingEvent]
     }
     
-    extension [Self <: TaskEditDialogShowingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskEditDialogShowingEvent] (val x: Self) extends AnyVal {
       
       inline def setHiddenFields(value: js.Array[String]): Self = StObject.set(x, "hiddenFields", value.asInstanceOf[js.Any])
       
@@ -1391,7 +1416,8 @@ object dxGantt {
       __obj.asInstanceOf[TaskInsertedEvent]
     }
     
-    extension [Self <: TaskInsertedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskInsertedEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -1415,7 +1441,8 @@ object dxGantt {
       __obj.asInstanceOf[TaskInsertingEvent]
     }
     
-    extension [Self <: TaskInsertingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskInsertingEvent] (val x: Self) extends AnyVal {
       
       inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
@@ -1439,7 +1466,8 @@ object dxGantt {
       __obj.asInstanceOf[TaskMovingEvent]
     }
     
-    extension [Self <: TaskMovingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskMovingEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -1464,7 +1492,8 @@ object dxGantt {
       __obj.asInstanceOf[TaskUpdatedEvent]
     }
     
-    extension [Self <: TaskUpdatedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskUpdatedEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -1490,7 +1519,8 @@ object dxGantt {
       __obj.asInstanceOf[TaskUpdatingEvent]
     }
     
-    extension [Self <: TaskUpdatingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskUpdatingEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -1513,7 +1543,8 @@ object dxGantt {
       __obj.asInstanceOf[TimeTooltipTemplateData]
     }
     
-    extension [Self <: TimeTooltipTemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeTooltipTemplateData] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

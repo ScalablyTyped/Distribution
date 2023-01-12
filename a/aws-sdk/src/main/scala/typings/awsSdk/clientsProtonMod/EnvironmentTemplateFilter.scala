@@ -23,7 +23,8 @@ object EnvironmentTemplateFilter {
     __obj.asInstanceOf[EnvironmentTemplateFilter]
   }
   
-  extension [Self <: EnvironmentTemplateFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentTemplateFilter] (val x: Self) extends AnyVal {
     
     inline def setMajorVersion(value: TemplateVersionPart): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[ReactHolderProp]
     }
     
-    extension [Self <: ReactHolderProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactHolderProp] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

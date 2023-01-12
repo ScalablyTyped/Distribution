@@ -39,7 +39,8 @@ object PickListMetadataModel {
     __obj.asInstanceOf[PickListMetadataModel]
   }
   
-  extension [Self <: PickListMetadataModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickListMetadataModel] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

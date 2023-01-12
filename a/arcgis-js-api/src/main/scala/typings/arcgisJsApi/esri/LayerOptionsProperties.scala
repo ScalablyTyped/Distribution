@@ -31,7 +31,8 @@ object LayerOptionsProperties {
     __obj.asInstanceOf[LayerOptionsProperties]
   }
   
-  extension [Self <: LayerOptionsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerOptionsProperties] (val x: Self) extends AnyVal {
     
     inline def setReturnTopmostRaster(value: Boolean): Self = StObject.set(x, "returnTopmostRaster", value.asInstanceOf[js.Any])
     

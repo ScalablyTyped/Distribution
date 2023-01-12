@@ -53,7 +53,8 @@ object `0Assign` {
     __obj.asInstanceOf[`0Assign`[Os, I, O, depth, ignore, fill]]
   }
   
-  extension [Self <: `0Assign`[?, ?, ?, ?, ?, ?], Os /* <: typings.tsToolbelt.outListListMod.List[js.Object] */, I /* <: Iteration */, O /* <: js.Object */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */](x: Self & (`0Assign`[Os, I, O, depth, ignore, fill])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0Assign`[?, ?, ?, ?, ?, ?], Os /* <: typings.tsToolbelt.outListListMod.List[js.Object] */, I /* <: Iteration */, O /* <: js.Object */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */] (val x: Self & (`0Assign`[Os, I, O, depth, ignore, fill])) extends AnyVal {
     
     inline def set0(
       value: __Assign[

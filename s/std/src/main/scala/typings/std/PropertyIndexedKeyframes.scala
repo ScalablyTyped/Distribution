@@ -28,7 +28,8 @@ object PropertyIndexedKeyframes {
     __obj.asInstanceOf[PropertyIndexedKeyframes]
   }
   
-  extension [Self <: PropertyIndexedKeyframes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyIndexedKeyframes] (val x: Self) extends AnyVal {
     
     inline def setComposite(value: CompositeOperationOrAuto | js.Array[CompositeOperationOrAuto]): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object EditorOptions {
     __obj.asInstanceOf[EditorOptions]
   }
   
-  extension [Self <: EditorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorOptions] (val x: Self) extends AnyVal {
     
     inline def setBaseIndentSize(value: Double): Self = StObject.set(x, "BaseIndentSize", value.asInstanceOf[js.Any])
     

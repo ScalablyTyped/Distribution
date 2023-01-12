@@ -42,7 +42,8 @@ object WiFiPropertiesBase {
     __obj.asInstanceOf[WiFiPropertiesBase[M, S]]
   }
   
-  extension [Self <: WiFiPropertiesBase[?, ?], M /* <: ManagedObject */, S](x: Self & (WiFiPropertiesBase[M, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WiFiPropertiesBase[?, ?], M /* <: ManagedObject */, S] (val x: Self & (WiFiPropertiesBase[M, S])) extends AnyVal {
     
     inline def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
     

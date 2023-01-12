@@ -66,7 +66,8 @@ object EventsMap {
     __obj.asInstanceOf[EventsMap]
   }
   
-  extension [Self <: EventsMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventsMap] (val x: Self) extends AnyVal {
     
     inline def setDisconnect(value: String): Self = StObject.set(x, "Disconnect", value.asInstanceOf[js.Any])
     

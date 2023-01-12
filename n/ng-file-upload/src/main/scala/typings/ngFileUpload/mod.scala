@@ -57,7 +57,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[FileResizeOptions]
         }
         
-        extension [Self <: FileResizeOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: FileResizeOptions] (val x: Self) extends AnyVal {
           
           inline def setCenterCrop(value: Boolean): Self = StObject.set(x, "centerCrop", value.asInstanceOf[js.Any])
           
@@ -198,7 +199,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[FileUploadOptions]
         }
         
-        extension [Self <: FileUploadOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: FileUploadOptions] (val x: Self) extends AnyVal {
           
           inline def setNgfAccept(value: String): Self = StObject.set(x, "ngfAccept", value.asInstanceOf[js.Any])
           
@@ -328,7 +330,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IFileUploadConfigFile]
         }
         
-        extension [Self <: IFileUploadConfigFile](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IFileUploadConfigFile] (val x: Self) extends AnyVal {
           
           inline def setArrayKey(value: String): Self = StObject.set(x, "arrayKey", value.asInstanceOf[js.Any])
           
@@ -515,7 +518,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[ImageDimensions]
         }
         
-        extension [Self <: ImageDimensions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ImageDimensions] (val x: Self) extends AnyVal {
           
           inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
           

@@ -36,7 +36,8 @@ object Intersection {
     __obj.asInstanceOf[Intersection]
   }
   
-  extension [Self <: Intersection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Intersection] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

@@ -443,7 +443,8 @@ object buildSrcExtOptionsMod {
       __obj.asInstanceOf[ExtOptions]
     }
     
-    extension [Self <: ExtOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtOptions] (val x: Self) extends AnyVal {
       
       inline def setCompareFileAsync(
         value: (/* path1 */ String, /* stat1 */ Stats, /* path2 */ String, /* stat2 */ Stats, /* options */ Options) => js.Promise[Boolean]

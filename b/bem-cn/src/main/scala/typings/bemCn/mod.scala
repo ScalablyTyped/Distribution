@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[BemContext]
     }
     
-    extension [Self <: BemContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BemContext] (val x: Self) extends AnyVal {
       
       inline def setMixes(value: js.Array[BemMix]): Self = StObject.set(x, "mixes", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object mod {
       __obj.asInstanceOf[BemSettings]
     }
     
-    extension [Self <: BemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BemSettings] (val x: Self) extends AnyVal {
       
       inline def setClassMap(value: Record[String, String]): Self = StObject.set(x, "classMap", value.asInstanceOf[js.Any])
       
@@ -161,7 +163,8 @@ object mod {
       __obj.asInstanceOf[BemStates]
     }
     
-    extension [Self <: BemStates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BemStates] (val x: Self) extends AnyVal {
       
       inline def `setHas-`(value: BemState): Self = StObject.set(x, "has-", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object SearchShardProfile {
     __obj.asInstanceOf[SearchShardProfile]
   }
   
-  extension [Self <: SearchShardProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchShardProfile] (val x: Self) extends AnyVal {
     
     inline def setAggregations(value: js.Array[SearchAggregationProfile]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ListEntityRecognizersRequest {
     __obj.asInstanceOf[ListEntityRecognizersRequest]
   }
   
-  extension [Self <: ListEntityRecognizersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEntityRecognizersRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: EntityRecognizerFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

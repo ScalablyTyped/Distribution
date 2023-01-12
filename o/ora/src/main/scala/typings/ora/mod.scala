@@ -141,7 +141,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -334,7 +335,8 @@ object mod {
       __obj.asInstanceOf[PersistOptions]
     }
     
-    extension [Self <: PersistOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistOptions] (val x: Self) extends AnyVal {
       
       inline def setPrefixText(value: String | PrefixTextGenerator): Self = StObject.set(x, "prefixText", value.asInstanceOf[js.Any])
       
@@ -377,7 +379,8 @@ object mod {
       __obj.asInstanceOf[PromiseOptions[T]]
     }
     
-    extension [Self <: PromiseOptions[?], T](x: Self & PromiseOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseOptions[?], T] (val x: Self & PromiseOptions[T]) extends AnyVal {
       
       inline def setFailText(value: String | (js.Function1[/* error */ js.Error, String])): Self = StObject.set(x, "failText", value.asInstanceOf[js.Any])
       
@@ -406,7 +409,8 @@ object mod {
       __obj.asInstanceOf[Spinner]
     }
     
-    extension [Self <: Spinner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spinner] (val x: Self) extends AnyVal {
       
       inline def setFrames(value: js.Array[String]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       

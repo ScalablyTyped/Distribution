@@ -18,7 +18,8 @@ object PlotParetoDragDropGuideBoxOptions {
     __obj.asInstanceOf[PlotParetoDragDropGuideBoxOptions]
   }
   
-  extension [Self <: PlotParetoDragDropGuideBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotParetoDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

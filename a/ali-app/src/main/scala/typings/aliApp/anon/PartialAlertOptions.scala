@@ -26,7 +26,8 @@ object PartialAlertOptions {
     __obj.asInstanceOf[PartialAlertOptions]
   }
   
-  extension [Self <: PartialAlertOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAlertOptions] (val x: Self) extends AnyVal {
     
     inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
     

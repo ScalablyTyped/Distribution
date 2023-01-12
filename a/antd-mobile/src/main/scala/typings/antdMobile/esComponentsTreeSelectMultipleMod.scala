@@ -329,7 +329,8 @@ object esComponentsTreeSelectMultipleMod {
       __obj.asInstanceOf[MultipleProps]
     }
     
-    extension [Self <: MultipleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipleProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

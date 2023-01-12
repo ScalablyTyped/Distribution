@@ -48,7 +48,8 @@ object ConfigurationSetInformation {
     __obj.asInstanceOf[ConfigurationSetInformation]
   }
   
-  extension [Self <: ConfigurationSetInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationSetInformation] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSetArn(value: String): Self = StObject.set(x, "ConfigurationSetArn", value.asInstanceOf[js.Any])
     

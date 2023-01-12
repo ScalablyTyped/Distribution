@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[AccessToken]
     }
     
-    extension [Self <: AccessToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessToken] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Errors]
     }
     
-    extension [Self <: Errors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[BacklogErrorMessage]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -105,7 +108,8 @@ object anon {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -134,7 +138,8 @@ object anon {
       __obj.asInstanceOf[Method]
     }
     
-    extension [Self <: Method](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -159,7 +164,8 @@ object anon {
       __obj.asInstanceOf[RefreshToken]
     }
     
-    extension [Self <: RefreshToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshToken] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

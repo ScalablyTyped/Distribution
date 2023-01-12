@@ -15,7 +15,8 @@ object EnumValuesExternalTfsBuild {
     __obj.asInstanceOf[EnumValuesExternalTfsBuild]
   }
   
-  extension [Self <: EnumValuesExternalTfsBuild](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesExternalTfsBuild] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: ExternalTfsBuild): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

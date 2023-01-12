@@ -22,7 +22,8 @@ object GoogleCloudDialogflowCxV3TestError {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3TestError]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3TestError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3TestError] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: GoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

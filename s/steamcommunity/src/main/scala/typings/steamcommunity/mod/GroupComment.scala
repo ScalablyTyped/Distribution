@@ -28,7 +28,8 @@ object GroupComment {
     __obj.asInstanceOf[GroupComment]
   }
   
-  extension [Self <: GroupComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupComment] (val x: Self) extends AnyVal {
     
     inline def setAuthorId(value: String): Self = StObject.set(x, "authorId", value.asInstanceOf[js.Any])
     

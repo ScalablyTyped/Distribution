@@ -19,7 +19,8 @@ object SortKeyRange {
     __obj.asInstanceOf[SortKeyRange]
   }
   
-  extension [Self <: SortKeyRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortKeyRange] (val x: Self) extends AnyVal {
     
     inline def setSortKey(value: Double): Self = StObject.set(x, "sortKey", value.asInstanceOf[js.Any])
     

@@ -74,7 +74,8 @@ object dictionarymatchesnumberfa {
     __obj.asInstanceOf[dictionarymatchesnumberfa]
   }
   
-  extension [Self <: dictionarymatchesnumberfa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dictionarymatchesnumberfa] (val x: Self) extends AnyVal {
     
     inline def `setDictionary matches`(value: Double): Self = StObject.set(x, "dictionary matches", value.asInstanceOf[js.Any])
     

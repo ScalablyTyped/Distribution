@@ -21,7 +21,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[Api]
     }
     
-    extension [Self <: Api](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
       
       inline def setRest(value: RestEndpointMethods): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
     }
@@ -44,7 +45,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[EndpointDecorations]
     }
     
-    extension [Self <: EndpointDecorations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointDecorations] (val x: Self) extends AnyVal {
       
       inline def setDeprecated(value: String): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       

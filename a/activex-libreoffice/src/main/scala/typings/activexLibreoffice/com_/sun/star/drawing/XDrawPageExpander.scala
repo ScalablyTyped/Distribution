@@ -33,7 +33,8 @@ object XDrawPageExpander {
     __obj.asInstanceOf[XDrawPageExpander]
   }
   
-  extension [Self <: XDrawPageExpander](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDrawPageExpander] (val x: Self) extends AnyVal {
     
     inline def setExpand(value: XDrawPage => XDrawPages): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
   }

@@ -527,7 +527,8 @@ object upgradeMod {
       __obj.asInstanceOf[LocationUpgradeConfig]
     }
     
-    extension [Self <: LocationUpgradeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationUpgradeConfig] (val x: Self) extends AnyVal {
       
       inline def setAppBaseHref(value: String): Self = StObject.set(x, "appBaseHref", value.asInstanceOf[js.Any])
       

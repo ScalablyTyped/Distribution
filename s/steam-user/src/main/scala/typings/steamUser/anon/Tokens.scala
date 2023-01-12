@@ -16,7 +16,8 @@ object Tokens {
     __obj.asInstanceOf[Tokens]
   }
   
-  extension [Self <: Tokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tokens] (val x: Self) extends AnyVal {
     
     inline def setTokens(value: Record[String, String]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
   }

@@ -27,7 +27,8 @@ object ISearchSuggestItem {
     __obj.asInstanceOf[ISearchSuggestItem]
   }
   
-  extension [Self <: ISearchSuggestItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchSuggestItem] (val x: Self) extends AnyVal {
     
     inline def setQTerm(value: Double): Self = StObject.set(x, "qTerm", value.asInstanceOf[js.Any])
     

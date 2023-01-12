@@ -34,7 +34,8 @@ object TextColumn {
     __obj.asInstanceOf[TextColumn]
   }
   
-  extension [Self <: TextColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextColumn] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object AlignItemsProps {
     __obj.asInstanceOf[AlignItemsProps]
   }
   
-  extension [Self <: AlignItemsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignItemsProps] (val x: Self) extends AnyVal {
     
     inline def setAlignItems(value: ResponsiveValue[AlignItems]): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     

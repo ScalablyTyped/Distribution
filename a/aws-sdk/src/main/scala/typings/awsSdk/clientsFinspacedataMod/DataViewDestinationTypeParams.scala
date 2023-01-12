@@ -28,7 +28,8 @@ object DataViewDestinationTypeParams {
     __obj.asInstanceOf[DataViewDestinationTypeParams]
   }
   
-  extension [Self <: DataViewDestinationTypeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewDestinationTypeParams] (val x: Self) extends AnyVal {
     
     inline def setDestinationType(value: DataViewDestinationType): Self = StObject.set(x, "destinationType", value.asInstanceOf[js.Any])
     

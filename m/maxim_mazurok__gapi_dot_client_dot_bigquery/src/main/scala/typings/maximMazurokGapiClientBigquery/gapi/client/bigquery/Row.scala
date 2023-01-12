@@ -19,7 +19,8 @@ object Row {
     __obj.asInstanceOf[Row]
   }
   
-  extension [Self <: Row](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
     
     inline def setActualLabel(value: String): Self = StObject.set(x, "actualLabel", value.asInstanceOf[js.Any])
     

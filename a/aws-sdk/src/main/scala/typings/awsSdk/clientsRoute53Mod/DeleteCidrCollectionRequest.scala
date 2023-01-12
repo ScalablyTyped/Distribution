@@ -18,7 +18,8 @@ object DeleteCidrCollectionRequest {
     __obj.asInstanceOf[DeleteCidrCollectionRequest]
   }
   
-  extension [Self <: DeleteCidrCollectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCidrCollectionRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: UUID): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

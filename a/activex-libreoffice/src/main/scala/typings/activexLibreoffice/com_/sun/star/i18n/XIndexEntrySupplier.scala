@@ -41,7 +41,8 @@ object XIndexEntrySupplier {
     __obj.asInstanceOf[XIndexEntrySupplier]
   }
   
-  extension [Self <: XIndexEntrySupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIndexEntrySupplier] (val x: Self) extends AnyVal {
     
     inline def setGetIndexCharacter(value: (String, Locale, String) => String): Self = StObject.set(x, "getIndexCharacter", js.Any.fromFunction3(value))
     

@@ -19,7 +19,8 @@ object Xsl {
       __obj.asInstanceOf[IXsltProcessor]
     }
     
-    extension [Self <: IXsltProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IXsltProcessor] (val x: Self) extends AnyVal {
       
       inline def setTransformToString(value: IXmlNode => String): Self = StObject.set(x, "transformToString", js.Any.fromFunction1(value))
     }
@@ -36,7 +37,8 @@ object Xsl {
       __obj.asInstanceOf[IXsltProcessorFactory]
     }
     
-    extension [Self <: IXsltProcessorFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IXsltProcessorFactory] (val x: Self) extends AnyVal {
       
       inline def setCreateInstance(value: XmlDocument => XsltProcessor): Self = StObject.set(x, "createInstance", js.Any.fromFunction1(value))
     }

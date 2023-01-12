@@ -184,7 +184,8 @@ object mod {
       __obj.asInstanceOf[BroadcastFlags]
     }
     
-    extension [Self <: BroadcastFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BroadcastFlags] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
@@ -227,7 +228,8 @@ object mod {
       __obj.asInstanceOf[BroadcastOptions]
     }
     
-    extension [Self <: BroadcastOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BroadcastOptions] (val x: Self) extends AnyVal {
       
       inline def setExcept(value: Set[SocketId]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
       

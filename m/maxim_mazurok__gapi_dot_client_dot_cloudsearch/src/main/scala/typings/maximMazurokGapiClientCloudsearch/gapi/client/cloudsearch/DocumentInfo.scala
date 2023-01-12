@@ -16,7 +16,8 @@ object DocumentInfo {
     __obj.asInstanceOf[DocumentInfo]
   }
   
-  extension [Self <: DocumentInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentInfo] (val x: Self) extends AnyVal {
     
     inline def setWhiteboardInfo(value: WhiteboardInfo): Self = StObject.set(x, "whiteboardInfo", value.asInstanceOf[js.Any])
     

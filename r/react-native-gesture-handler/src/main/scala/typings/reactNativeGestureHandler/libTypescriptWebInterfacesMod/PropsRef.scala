@@ -17,7 +17,8 @@ object PropsRef {
     __obj.asInstanceOf[PropsRef]
   }
   
-  extension [Self <: PropsRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsRef] (val x: Self) extends AnyVal {
     
     inline def setOnGestureHandlerEvent(value: () => Unit): Self = StObject.set(x, "onGestureHandlerEvent", js.Any.fromFunction0(value))
     

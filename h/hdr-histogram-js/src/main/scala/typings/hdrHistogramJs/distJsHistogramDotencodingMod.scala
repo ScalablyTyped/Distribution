@@ -48,7 +48,8 @@ object distJsHistogramDotencodingMod {
         __obj.asInstanceOf[typings.hdrHistogramJs.distJsHistogramDotencodingMod.hdrHistogramJsDistJsHistogramAugmentingMod.JsHistogram]
       }
       
-      extension [Self <: typings.hdrHistogramJs.distJsHistogramDotencodingMod.hdrHistogramJsDistJsHistogramAugmentingMod.JsHistogram](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.hdrHistogramJs.distJsHistogramDotencodingMod.hdrHistogramJsDistJsHistogramAugmentingMod.JsHistogram] (val x: Self) extends AnyVal {
         
         inline def setEncodeIntoCompressedBase64(value: /* compressionLevel */ js.UndefOr[Double] => String): Self = StObject.set(x, "encodeIntoCompressedBase64", js.Any.fromFunction1(value))
       }

@@ -21,7 +21,8 @@ object IBConstraint {
     __obj.asInstanceOf[IBConstraint]
   }
   
-  extension [Self <: IBConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBConstraint] (val x: Self) extends AnyVal {
     
     inline def set$(value: Constant): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }

@@ -43,7 +43,8 @@ object AwsEc2VpnConnectionVgwTelemetryDetails {
     __obj.asInstanceOf[AwsEc2VpnConnectionVgwTelemetryDetails]
   }
   
-  extension [Self <: AwsEc2VpnConnectionVgwTelemetryDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2VpnConnectionVgwTelemetryDetails] (val x: Self) extends AnyVal {
     
     inline def setAcceptedRouteCount(value: Integer): Self = StObject.set(x, "AcceptedRouteCount", value.asInstanceOf[js.Any])
     

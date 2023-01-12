@@ -18,7 +18,8 @@ object WorkbookChartLineFormat {
     __obj.asInstanceOf[WorkbookChartLineFormat]
   }
   
-  extension [Self <: WorkbookChartLineFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookChartLineFormat] (val x: Self) extends AnyVal {
     
     inline def setColor(value: NullableOption[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

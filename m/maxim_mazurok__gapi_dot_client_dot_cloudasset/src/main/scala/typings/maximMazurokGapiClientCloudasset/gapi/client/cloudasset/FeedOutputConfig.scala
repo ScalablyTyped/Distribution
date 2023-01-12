@@ -16,7 +16,8 @@ object FeedOutputConfig {
     __obj.asInstanceOf[FeedOutputConfig]
   }
   
-  extension [Self <: FeedOutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeedOutputConfig] (val x: Self) extends AnyVal {
     
     inline def setPubsubDestination(value: PubsubDestination): Self = StObject.set(x, "pubsubDestination", value.asInstanceOf[js.Any])
     

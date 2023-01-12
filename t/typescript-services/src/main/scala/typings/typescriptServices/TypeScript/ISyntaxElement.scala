@@ -71,7 +71,8 @@ object ISyntaxElement {
     __obj.asInstanceOf[ISyntaxElement]
   }
   
-  extension [Self <: ISyntaxElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyntaxElement] (val x: Self) extends AnyVal {
     
     inline def setChildAt(value: Double => ISyntaxElement): Self = StObject.set(x, "childAt", js.Any.fromFunction1(value))
     

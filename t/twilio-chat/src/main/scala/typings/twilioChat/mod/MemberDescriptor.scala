@@ -38,7 +38,8 @@ object MemberDescriptor {
     __obj.asInstanceOf[MemberDescriptor]
   }
   
-  extension [Self <: MemberDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

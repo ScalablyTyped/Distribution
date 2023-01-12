@@ -48,7 +48,8 @@ object ClientVpnRoute {
     __obj.asInstanceOf[ClientVpnRoute]
   }
   
-  extension [Self <: ClientVpnRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientVpnRoute] (val x: Self) extends AnyVal {
     
     inline def setClientVpnEndpointId(value: String): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     

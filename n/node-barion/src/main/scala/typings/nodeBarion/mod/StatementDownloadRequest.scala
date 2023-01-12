@@ -29,7 +29,8 @@ object StatementDownloadRequest {
     __obj.asInstanceOf[StatementDownloadRequest]
   }
   
-  extension [Self <: StatementDownloadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatementDownloadRequest] (val x: Self) extends AnyVal {
     
     inline def setCurrency(value: CZK | EUR | HUF | USD): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
     

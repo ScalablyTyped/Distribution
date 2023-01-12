@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsWixHotelsMod extends Shortcut {
       __obj.asInstanceOf[WixHotelsProps]
     }
     
-    extension [Self <: WixHotelsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WixHotelsProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

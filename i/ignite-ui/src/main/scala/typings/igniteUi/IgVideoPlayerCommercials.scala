@@ -49,7 +49,8 @@ object IgVideoPlayerCommercials {
     __obj.asInstanceOf[IgVideoPlayerCommercials]
   }
   
-  extension [Self <: IgVideoPlayerCommercials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgVideoPlayerCommercials] (val x: Self) extends AnyVal {
     
     inline def setAdMessage(value: IgVideoPlayerCommercialsAdMessage): Self = StObject.set(x, "adMessage", value.asInstanceOf[js.Any])
     

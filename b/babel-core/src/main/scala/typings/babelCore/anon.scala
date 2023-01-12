@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Exported]
     }
     
-    extension [Self <: Exported](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exported] (val x: Self) extends AnyVal {
       
       inline def setExported(value: js.Array[js.Object]): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Loc]
     }
     
-    extension [Self <: Loc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Loc] (val x: Self) extends AnyVal {
       
       inline def setLoc(value: js.Object): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object AppsDynamiteSharedDimension {
     __obj.asInstanceOf[AppsDynamiteSharedDimension]
   }
   
-  extension [Self <: AppsDynamiteSharedDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedDimension] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object RemoveResponseHeaderParams {
     __obj.asInstanceOf[RemoveResponseHeaderParams]
   }
   
-  extension [Self <: RemoveResponseHeaderParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveResponseHeaderParams] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

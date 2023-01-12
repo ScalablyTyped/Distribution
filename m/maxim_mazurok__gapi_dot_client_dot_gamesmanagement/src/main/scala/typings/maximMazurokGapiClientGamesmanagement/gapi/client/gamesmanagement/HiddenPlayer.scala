@@ -22,7 +22,8 @@ object HiddenPlayer {
     __obj.asInstanceOf[HiddenPlayer]
   }
   
-  extension [Self <: HiddenPlayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HiddenPlayer] (val x: Self) extends AnyVal {
     
     inline def setHiddenTimeMillis(value: String): Self = StObject.set(x, "hiddenTimeMillis", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object libTypescriptFabricLinearGradientNativeComponentMod extends Shortcut {
       __obj.asInstanceOf[NativeProps]
     }
     
-    extension [Self <: NativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeProps] (val x: Self) extends AnyVal {
       
       inline def setGradient(value: js.Array[Float]): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object libTypescriptFabricLinearGradientNativeComponentMod extends Shortcut {
       __obj.asInstanceOf[SvgNodeCommonProps]
     }
     
-    extension [Self <: SvgNodeCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgNodeCommonProps] (val x: Self) extends AnyVal {
       
       inline def setClipPath(value: String): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
       

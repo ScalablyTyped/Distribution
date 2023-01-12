@@ -43,7 +43,8 @@ object ChildWorkflowExecutionCanceledEventAttributes {
     __obj.asInstanceOf[ChildWorkflowExecutionCanceledEventAttributes]
   }
   
-  extension [Self <: ChildWorkflowExecutionCanceledEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildWorkflowExecutionCanceledEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

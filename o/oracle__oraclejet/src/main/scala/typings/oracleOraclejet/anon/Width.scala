@@ -20,7 +20,8 @@ object Width {
     __obj.asInstanceOf[Width[K, D]]
   }
   
-  extension [Self <: Width[?, ?], K, D](x: Self & (Width[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Width[?, ?], K, D] (val x: Self & (Width[K, D])) extends AnyVal {
     
     inline def setHeight(value: (js.Function1[/* context */ HeaderContext[K, D], String]) | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

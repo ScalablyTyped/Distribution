@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2ListDeidentifyTemplatesResponse {
     __obj.asInstanceOf[GooglePrivacyDlpV2ListDeidentifyTemplatesResponse]
   }
   
-  extension [Self <: GooglePrivacyDlpV2ListDeidentifyTemplatesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2ListDeidentifyTemplatesResponse] (val x: Self) extends AnyVal {
     
     inline def setDeidentifyTemplates(value: js.Array[GooglePrivacyDlpV2DeidentifyTemplate]): Self = StObject.set(x, "deidentifyTemplates", value.asInstanceOf[js.Any])
     

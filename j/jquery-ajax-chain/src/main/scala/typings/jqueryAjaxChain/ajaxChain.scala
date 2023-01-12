@@ -69,7 +69,8 @@ object ajaxChain {
       __obj.asInstanceOf[AjaxChainConfiguration]
     }
     
-    extension [Self <: AjaxChainConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxChainConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAjaxSettings(value: JQueryAjaxSettings): Self = StObject.set(x, "ajaxSettings", value.asInstanceOf[js.Any])
       

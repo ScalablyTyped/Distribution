@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsQuickFormatMod extends Shortcu
       __obj.asInstanceOf[QuickFormatProps]
     }
     
-    extension [Self <: QuickFormatProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickFormatProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

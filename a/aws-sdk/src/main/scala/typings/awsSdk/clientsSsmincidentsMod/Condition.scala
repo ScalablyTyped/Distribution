@@ -29,7 +29,8 @@ object Condition {
     __obj.asInstanceOf[Condition]
   }
   
-  extension [Self <: Condition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: js.Date): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

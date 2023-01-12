@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Buttons]
     }
     
-    extension [Self <: Buttons](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Buttons] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: Boolean): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[CBackground]
     }
     
-    extension [Self <: CBackground](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CBackground] (val x: Self) extends AnyVal {
       
       inline def setCBackground(value: String): Self = StObject.set(x, "cBackground", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Dimensions]
     }
     
-    extension [Self <: Dimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
       
       inline def setDimensions(value: typings.accessibility.mod.Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
@@ -97,7 +100,8 @@ object anon {
       __obj.asInstanceOf[Font]
     }
     
-    extension [Self <: Font](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
       
       inline def setFont(value: SizeOrPosition): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     }
@@ -115,7 +119,8 @@ object anon {
       __obj.asInstanceOf[Persistent]
     }
     
-    extension [Self <: Persistent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Persistent] (val x: Self) extends AnyVal {
       
       inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       

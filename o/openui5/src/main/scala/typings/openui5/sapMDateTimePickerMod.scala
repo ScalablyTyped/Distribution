@@ -341,7 +341,8 @@ object sapMDateTimePickerMod {
       __obj.asInstanceOf[DateTimePickerSettings]
     }
     
-    extension [Self <: DateTimePickerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTimePickerSettings] (val x: Self) extends AnyVal {
       
       inline def setMinutesStep(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "minutesStep", value.asInstanceOf[js.Any])
       

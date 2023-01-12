@@ -23,7 +23,8 @@ object ListInstanceStorageConfigsResponse {
     __obj.asInstanceOf[ListInstanceStorageConfigsResponse]
   }
   
-  extension [Self <: ListInstanceStorageConfigsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInstanceStorageConfigsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

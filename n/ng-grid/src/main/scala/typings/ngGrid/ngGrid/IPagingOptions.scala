@@ -25,7 +25,8 @@ object IPagingOptions {
     __obj.asInstanceOf[IPagingOptions]
   }
   
-  extension [Self <: IPagingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPagingOptions] (val x: Self) extends AnyVal {
     
     inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     

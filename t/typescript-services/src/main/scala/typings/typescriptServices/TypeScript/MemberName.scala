@@ -29,7 +29,8 @@ object MemberName {
     __obj.asInstanceOf[MemberName]
   }
   
-  extension [Self <: MemberName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberName] (val x: Self) extends AnyVal {
     
     inline def setIsArray(value: () => Boolean): Self = StObject.set(x, "isArray", js.Any.fromFunction0(value))
     

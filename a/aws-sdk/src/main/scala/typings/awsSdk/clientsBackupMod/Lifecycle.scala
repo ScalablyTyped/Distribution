@@ -23,7 +23,8 @@ object Lifecycle {
     __obj.asInstanceOf[Lifecycle]
   }
   
-  extension [Self <: Lifecycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lifecycle] (val x: Self) extends AnyVal {
     
     inline def setDeleteAfterDays(value: Long_): Self = StObject.set(x, "DeleteAfterDays", value.asInstanceOf[js.Any])
     

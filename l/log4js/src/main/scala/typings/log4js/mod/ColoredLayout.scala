@@ -20,7 +20,8 @@ object ColoredLayout {
     __obj.asInstanceOf[ColoredLayout]
   }
   
-  extension [Self <: ColoredLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColoredLayout] (val x: Self) extends AnyVal {
     
     inline def setType(value: colored | coloured): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

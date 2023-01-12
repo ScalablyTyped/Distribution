@@ -23,7 +23,8 @@ object ComputedSerieAxis {
     __obj.asInstanceOf[ComputedSerieAxis[Value]]
   }
   
-  extension [Self <: ComputedSerieAxis[?], Value /* <: ScaleValue */](x: Self & ComputedSerieAxis[Value]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputedSerieAxis[?], Value /* <: ScaleValue */] (val x: Self & ComputedSerieAxis[Value]) extends AnyVal {
     
     inline def setAll(value: js.Array[Value]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

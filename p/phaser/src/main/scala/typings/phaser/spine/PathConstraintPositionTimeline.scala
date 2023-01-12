@@ -34,7 +34,8 @@ object PathConstraintPositionTimeline {
     __obj.asInstanceOf[PathConstraintPositionTimeline]
   }
   
-  extension [Self <: PathConstraintPositionTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathConstraintPositionTimeline] (val x: Self) extends AnyVal {
     
     inline def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     

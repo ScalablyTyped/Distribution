@@ -31,7 +31,8 @@ object IMediaDeviceControl {
     __obj.asInstanceOf[IMediaDeviceControl]
   }
   
-  extension [Self <: IMediaDeviceControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaDeviceControl] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: MediaDeviceControlCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object BootboxPromptOptions {
     __obj.asInstanceOf[BootboxPromptOptions]
   }
   
-  extension [Self <: BootboxPromptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootboxPromptOptions] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: BootboxConfirmPromptButtonMap): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

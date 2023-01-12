@@ -29,7 +29,8 @@ object GraveyardPosition {
     __obj.asInstanceOf[GraveyardPosition]
   }
   
-  extension [Self <: GraveyardPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraveyardPosition] (val x: Self) extends AnyVal {
     
     inline def setBaseVersion(value: Double): Self = StObject.set(x, "baseVersion", value.asInstanceOf[js.Any])
     

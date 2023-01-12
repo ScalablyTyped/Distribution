@@ -134,7 +134,8 @@ object SceneAxis {
     __obj.asInstanceOf[SceneAxis]
   }
   
-  extension [Self <: SceneAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneAxis] (val x: Self) extends AnyVal {
     
     inline def setBackgroundcolor(value: Color): Self = StObject.set(x, "backgroundcolor", value.asInstanceOf[js.Any])
     

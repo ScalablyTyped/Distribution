@@ -63,7 +63,8 @@ object SizeSliderProperties {
     __obj.asInstanceOf[SizeSliderProperties]
   }
   
-  extension [Self <: SizeSliderProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeSliderProperties] (val x: Self) extends AnyVal {
     
     inline def setHandlesSyncedToPrimary(value: Boolean): Self = StObject.set(x, "handlesSyncedToPrimary", value.asInstanceOf[js.Any])
     

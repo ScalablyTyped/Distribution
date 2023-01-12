@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[First]
     }
     
-    extension [Self <: First](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: First] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: js.Array[Comment]): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Offset]
     }
     
-    extension [Self <: Offset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -63,7 +65,8 @@ object anon {
       __obj.asInstanceOf[PartialParseConfig]
     }
     
-    extension [Self <: PartialParseConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialParseConfig] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       

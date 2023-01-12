@@ -30,7 +30,8 @@ object TrustTokenParams {
     __obj.asInstanceOf[TrustTokenParams]
   }
   
-  extension [Self <: TrustTokenParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustTokenParams] (val x: Self) extends AnyVal {
     
     inline def setIssuers(value: js.Array[String]): Self = StObject.set(x, "issuers", value.asInstanceOf[js.Any])
     

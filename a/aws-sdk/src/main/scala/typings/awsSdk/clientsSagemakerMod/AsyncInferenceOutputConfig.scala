@@ -28,7 +28,8 @@ object AsyncInferenceOutputConfig {
     __obj.asInstanceOf[AsyncInferenceOutputConfig]
   }
   
-  extension [Self <: AsyncInferenceOutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncInferenceOutputConfig] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

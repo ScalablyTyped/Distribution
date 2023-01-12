@@ -39,7 +39,8 @@ object SparklineValueAxisItemLabels {
     __obj.asInstanceOf[SparklineValueAxisItemLabels]
   }
   
-  extension [Self <: SparklineValueAxisItemLabels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklineValueAxisItemLabels] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

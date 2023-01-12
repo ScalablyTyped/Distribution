@@ -114,7 +114,8 @@ object ColumnDefinition {
     __obj.asInstanceOf[ColumnDefinition]
   }
   
-  extension [Self <: ColumnDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnDefinition] (val x: Self) extends AnyVal {
     
     inline def setBoolean(value: NullableOption[BooleanColumn]): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     

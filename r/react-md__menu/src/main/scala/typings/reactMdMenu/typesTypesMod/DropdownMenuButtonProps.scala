@@ -59,7 +59,8 @@ object DropdownMenuButtonProps {
     __obj.asInstanceOf[DropdownMenuButtonProps]
   }
   
-  extension [Self <: DropdownMenuButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropdownMenuButtonProps] (val x: Self) extends AnyVal {
     
     inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
     

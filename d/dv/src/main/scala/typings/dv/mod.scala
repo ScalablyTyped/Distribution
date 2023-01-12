@@ -561,7 +561,8 @@ object mod {
       __obj.asInstanceOf[BarCode]
     }
     
-    extension [Self <: BarCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarCode] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -618,7 +619,8 @@ object mod {
       __obj.asInstanceOf[Barcodeformat]
     }
     
-    extension [Self <: Barcodeformat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Barcodeformat] (val x: Self) extends AnyVal {
       
       inline def setAZTEC(value: Boolean): Self = StObject.set(x, "AZTEC", value.asInstanceOf[js.Any])
       
@@ -661,7 +663,8 @@ object mod {
       __obj.asInstanceOf[Box]
     }
     
-    extension [Self <: Box](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -686,7 +689,8 @@ object mod {
       __obj.asInstanceOf[Choice]
     }
     
-    extension [Self <: Choice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Choice] (val x: Self) extends AnyVal {
       
       inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
@@ -711,7 +715,8 @@ object mod {
       __obj.asInstanceOf[Component]
     }
     
-    extension [Self <: Component](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -738,7 +743,8 @@ object mod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -763,7 +769,8 @@ object mod {
       __obj.asInstanceOf[Rect]
     }
     
-    extension [Self <: Rect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -790,7 +797,8 @@ object mod {
       __obj.asInstanceOf[Region]
     }
     
-    extension [Self <: Region](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
       
       inline def setBox(value: Box): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
       
@@ -815,7 +823,8 @@ object mod {
       __obj.asInstanceOf[Segment]
     }
     
-    extension [Self <: Segment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
       
       inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -838,7 +847,8 @@ object mod {
       __obj.asInstanceOf[Skew]
     }
     
-    extension [Self <: Skew](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Skew] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -859,7 +869,8 @@ object mod {
       __obj.asInstanceOf[Symbol]
     }
     
-    extension [Self <: Symbol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
       
       inline def setChoices(value: js.Array[Choice]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       
@@ -880,7 +891,8 @@ object mod {
       __obj.asInstanceOf[Textline]
     }
     
-    extension [Self <: Textline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Textline] (val x: Self) extends AnyVal {
       
       inline def setBox(value: Box): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
     }

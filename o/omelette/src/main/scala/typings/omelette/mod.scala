@@ -37,7 +37,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CallbackAsyncValue]
     }
     
-    extension [Self <: CallbackAsyncValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackAsyncValue] (val x: Self) extends AnyVal {
       
       inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CallbackValue]
     }
     
-    extension [Self <: CallbackValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackValue] (val x: Self) extends AnyVal {
       
       inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       

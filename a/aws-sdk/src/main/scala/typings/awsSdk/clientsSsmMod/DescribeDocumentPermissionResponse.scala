@@ -28,7 +28,8 @@ object DescribeDocumentPermissionResponse {
     __obj.asInstanceOf[DescribeDocumentPermissionResponse]
   }
   
-  extension [Self <: DescribeDocumentPermissionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDocumentPermissionResponse] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     

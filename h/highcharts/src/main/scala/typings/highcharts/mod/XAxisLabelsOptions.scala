@@ -217,7 +217,8 @@ object XAxisLabelsOptions {
     __obj.asInstanceOf[XAxisLabelsOptions]
   }
   
-  extension [Self <: XAxisLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAxisLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

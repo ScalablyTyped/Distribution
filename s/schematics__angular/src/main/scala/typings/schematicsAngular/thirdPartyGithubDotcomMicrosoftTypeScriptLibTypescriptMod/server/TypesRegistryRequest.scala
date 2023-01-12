@@ -16,7 +16,8 @@ object TypesRegistryRequest {
     __obj.asInstanceOf[TypesRegistryRequest]
   }
   
-  extension [Self <: TypesRegistryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypesRegistryRequest] (val x: Self) extends AnyVal {
     
     inline def setKind(value: typesRegistry): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

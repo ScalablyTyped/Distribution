@@ -98,7 +98,8 @@ object OpsItemSummary {
     __obj.asInstanceOf[OpsItemSummary]
   }
   
-  extension [Self <: OpsItemSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpsItemSummary] (val x: Self) extends AnyVal {
     
     inline def setActualEndTime(value: js.Date): Self = StObject.set(x, "ActualEndTime", value.asInstanceOf[js.Any])
     

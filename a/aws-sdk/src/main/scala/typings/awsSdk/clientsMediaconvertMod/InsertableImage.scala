@@ -68,7 +68,8 @@ object InsertableImage {
     __obj.asInstanceOf[InsertableImage]
   }
   
-  extension [Self <: InsertableImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertableImage] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: integerMin0Max2147483647): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     

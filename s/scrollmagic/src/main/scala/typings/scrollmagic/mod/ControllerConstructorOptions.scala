@@ -24,7 +24,8 @@ object ControllerConstructorOptions {
     __obj.asInstanceOf[ControllerConstructorOptions]
   }
   
-  extension [Self <: ControllerConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControllerConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: String | Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

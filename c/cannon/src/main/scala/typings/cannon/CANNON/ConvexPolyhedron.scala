@@ -116,7 +116,8 @@ object ConvexPolyhedron {
     __obj.asInstanceOf[ConvexPolyhedron]
   }
   
-  extension [Self <: ConvexPolyhedron](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConvexPolyhedron] (val x: Self) extends AnyVal {
     
     inline def setCalculateWorldAABB(value: (Vec3, Quaternion, Vec3, Vec3) => Unit): Self = StObject.set(x, "calculateWorldAABB", js.Any.fromFunction4(value))
     

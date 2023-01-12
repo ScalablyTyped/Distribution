@@ -26,7 +26,8 @@ object typesMod {
       __obj.asInstanceOf[MDCToolbarEventDetail]
     }
     
-    extension [Self <: MDCToolbarEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCToolbarEventDetail] (val x: Self) extends AnyVal {
       
       inline def setFlexibleExpansionRatio(value: Double): Self = StObject.set(x, "flexibleExpansionRatio", value.asInstanceOf[js.Any])
     }

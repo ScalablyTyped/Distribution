@@ -67,7 +67,8 @@ object XLogHandler {
     __obj.asInstanceOf[XLogHandler]
   }
   
-  extension [Self <: XLogHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLogHandler] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: String): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
     

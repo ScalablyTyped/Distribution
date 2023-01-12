@@ -19,7 +19,8 @@ object AggregationsGeoCentroidAggregation {
     __obj.asInstanceOf[AggregationsGeoCentroidAggregation]
   }
   
-  extension [Self <: AggregationsGeoCentroidAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsGeoCentroidAggregation] (val x: Self) extends AnyVal {
     
     inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

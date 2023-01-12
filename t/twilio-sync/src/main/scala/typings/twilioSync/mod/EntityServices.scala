@@ -19,7 +19,8 @@ object EntityServices {
     __obj.asInstanceOf[EntityServices]
   }
   
-  extension [Self <: EntityServices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityServices] (val x: Self) extends AnyVal {
     
     inline def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     

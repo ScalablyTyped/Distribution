@@ -28,7 +28,8 @@ object DescribeEndpointTypesMessage {
     __obj.asInstanceOf[DescribeEndpointTypesMessage]
   }
   
-  extension [Self <: DescribeEndpointTypesMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEndpointTypesMessage] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

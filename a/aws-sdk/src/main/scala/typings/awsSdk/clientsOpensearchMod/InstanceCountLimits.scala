@@ -23,7 +23,8 @@ object InstanceCountLimits {
     __obj.asInstanceOf[InstanceCountLimits]
   }
   
-  extension [Self <: InstanceCountLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceCountLimits] (val x: Self) extends AnyVal {
     
     inline def setMaximumInstanceCount(value: MaximumInstanceCount): Self = StObject.set(x, "MaximumInstanceCount", value.asInstanceOf[js.Any])
     

@@ -120,7 +120,8 @@ object PermilleFormatter {
     __obj.asInstanceOf[PermilleFormatter]
   }
   
-  extension [Self <: PermilleFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermilleFormatter] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     

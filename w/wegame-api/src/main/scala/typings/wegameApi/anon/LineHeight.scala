@@ -15,7 +15,8 @@ object LineHeight {
     __obj.asInstanceOf[LineHeight]
   }
   
-  extension [Self <: LineHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineHeight] (val x: Self) extends AnyVal {
     
     inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
   }

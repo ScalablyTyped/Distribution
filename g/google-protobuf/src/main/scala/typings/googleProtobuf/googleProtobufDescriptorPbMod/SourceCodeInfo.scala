@@ -129,7 +129,8 @@ object SourceCodeInfo {
         __obj.asInstanceOf[typings.googleProtobuf.googleProtobufDescriptorPbMod.SourceCodeInfo.Location.AsObject]
       }
       
-      extension [Self <: typings.googleProtobuf.googleProtobufDescriptorPbMod.SourceCodeInfo.Location.AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleProtobuf.googleProtobufDescriptorPbMod.SourceCodeInfo.Location.AsObject] (val x: Self) extends AnyVal {
         
         inline def setLeadingComments(value: String): Self = StObject.set(x, "leadingComments", value.asInstanceOf[js.Any])
         
@@ -190,7 +191,8 @@ object SourceCodeInfo {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setLocationList(
         value: js.Array[

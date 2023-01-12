@@ -22,7 +22,8 @@ object PathParserParamKey {
     __obj.asInstanceOf[PathParserParamKey]
   }
   
-  extension [Self <: PathParserParamKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathParserParamKey] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

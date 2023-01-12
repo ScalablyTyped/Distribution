@@ -17,7 +17,8 @@ object GoogchromeOptions {
     __obj.asInstanceOf[GoogchromeOptions]
   }
   
-  extension [Self <: GoogchromeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogchromeOptions] (val x: Self) extends AnyVal {
     
     inline def setGoogColonchromeOptions(value: DebuggerAddress): Self = StObject.set(x, "goog:chromeOptions", value.asInstanceOf[js.Any])
   }

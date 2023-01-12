@@ -27,7 +27,8 @@ object SetlikeDeclarationMemberType {
     __obj.asInstanceOf[SetlikeDeclarationMemberType]
   }
   
-  extension [Self <: SetlikeDeclarationMemberType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetlikeDeclarationMemberType] (val x: Self) extends AnyVal {
     
     inline def setType(value: setlike): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

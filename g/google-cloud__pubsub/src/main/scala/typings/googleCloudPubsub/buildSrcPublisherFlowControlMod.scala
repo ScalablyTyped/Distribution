@@ -91,7 +91,8 @@ object buildSrcPublisherFlowControlMod {
       __obj.asInstanceOf[FlowControlOptions]
     }
     
-    extension [Self <: FlowControlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowControlOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxOutstandingBytes(value: Double): Self = StObject.set(x, "maxOutstandingBytes", value.asInstanceOf[js.Any])
       

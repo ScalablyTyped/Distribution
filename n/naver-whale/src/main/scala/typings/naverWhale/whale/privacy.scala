@@ -41,7 +41,8 @@ object privacy {
       __obj.asInstanceOf[Network]
     }
     
-    extension [Self <: Network](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
       
       inline def setNetworkPredictionEnabled(value: ChromeSetting): Self = StObject.set(x, "networkPredictionEnabled", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object privacy {
       __obj.asInstanceOf[Services]
     }
     
-    extension [Self <: Services](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Services] (val x: Self) extends AnyVal {
       
       inline def setAlternateErrorPagesEnabled(value: ChromeSetting): Self = StObject.set(x, "alternateErrorPagesEnabled", value.asInstanceOf[js.Any])
       
@@ -161,7 +163,8 @@ object privacy {
       __obj.asInstanceOf[Websites]
     }
     
-    extension [Self <: Websites](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Websites] (val x: Self) extends AnyVal {
       
       inline def setDoNotTrackEnabled(value: ChromeSetting): Self = StObject.set(x, "doNotTrackEnabled", value.asInstanceOf[js.Any])
       

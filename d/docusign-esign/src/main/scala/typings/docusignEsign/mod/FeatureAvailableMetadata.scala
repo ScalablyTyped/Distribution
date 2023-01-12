@@ -17,7 +17,8 @@ object FeatureAvailableMetadata {
     __obj.asInstanceOf[FeatureAvailableMetadata]
   }
   
-  extension [Self <: FeatureAvailableMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureAvailableMetadata] (val x: Self) extends AnyVal {
     
     inline def setAvailabilty(value: String): Self = StObject.set(x, "availabilty", value.asInstanceOf[js.Any])
     

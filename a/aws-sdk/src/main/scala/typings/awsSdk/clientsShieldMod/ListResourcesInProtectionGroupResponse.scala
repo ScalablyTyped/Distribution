@@ -23,7 +23,8 @@ object ListResourcesInProtectionGroupResponse {
     __obj.asInstanceOf[ListResourcesInProtectionGroupResponse]
   }
   
-  extension [Self <: ListResourcesInProtectionGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourcesInProtectionGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object RelatedUnchangedDocumentDiagnosticReport {
     __obj.asInstanceOf[RelatedUnchangedDocumentDiagnosticReport]
   }
   
-  extension [Self <: RelatedUnchangedDocumentDiagnosticReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedUnchangedDocumentDiagnosticReport] (val x: Self) extends AnyVal {
     
     inline def setRelatedDocuments(value: StringDictionary[FullDocumentDiagnosticReport | UnchangedDocumentDiagnosticReport]): Self = StObject.set(x, "relatedDocuments", value.asInstanceOf[js.Any])
     

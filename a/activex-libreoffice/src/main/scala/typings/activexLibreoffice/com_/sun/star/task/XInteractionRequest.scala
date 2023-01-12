@@ -45,7 +45,8 @@ object XInteractionRequest {
     __obj.asInstanceOf[XInteractionRequest]
   }
   
-  extension [Self <: XInteractionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInteractionRequest] (val x: Self) extends AnyVal {
     
     inline def setContinuations(value: SafeArray[XInteractionContinuation]): Self = StObject.set(x, "Continuations", value.asInstanceOf[js.Any])
     

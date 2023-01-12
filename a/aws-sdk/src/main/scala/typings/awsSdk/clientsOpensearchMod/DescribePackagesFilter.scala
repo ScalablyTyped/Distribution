@@ -23,7 +23,8 @@ object DescribePackagesFilter {
     __obj.asInstanceOf[DescribePackagesFilter]
   }
   
-  extension [Self <: DescribePackagesFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePackagesFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: DescribePackagesFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

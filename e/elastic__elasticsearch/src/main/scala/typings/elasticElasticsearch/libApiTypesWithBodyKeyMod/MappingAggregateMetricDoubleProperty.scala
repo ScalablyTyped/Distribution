@@ -26,7 +26,8 @@ object MappingAggregateMetricDoubleProperty {
     __obj.asInstanceOf[MappingAggregateMetricDoubleProperty]
   }
   
-  extension [Self <: MappingAggregateMetricDoubleProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingAggregateMetricDoubleProperty] (val x: Self) extends AnyVal {
     
     inline def setDefault_metric(value: String): Self = StObject.set(x, "default_metric", value.asInstanceOf[js.Any])
     

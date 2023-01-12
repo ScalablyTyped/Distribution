@@ -47,7 +47,8 @@ object libViewInterfaceMod {
       __obj.asInstanceOf[ActiveUIView]
     }
     
-    extension [Self <: ActiveUIView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveUIView] (val x: Self) extends AnyVal {
       
       inline def set$type(value: String): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object libViewInterfaceMod {
       __obj.asInstanceOf[ViewConfig]
     }
     
-    extension [Self <: ViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewConfig] (val x: Self) extends AnyVal {
       
       inline def set$id(value: Double): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object libViewInterfaceMod {
       __obj.asInstanceOf[ViewContext]
     }
     
-    extension [Self <: ViewContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewContext] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

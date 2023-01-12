@@ -29,7 +29,8 @@ object CanOptOut {
     __obj.asInstanceOf[CanOptOut]
   }
   
-  extension [Self <: CanOptOut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanOptOut] (val x: Self) extends AnyVal {
     
     inline def setCanOptOut(value: scala.Double): Self = StObject.set(x, "canOptOut", value.asInstanceOf[js.Any])
     

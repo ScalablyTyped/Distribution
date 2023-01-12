@@ -190,7 +190,8 @@ object widgetsFilterOptionsMod {
       __obj.asInstanceOf[FilterOptions[TElement]]
     }
     
-    extension [Self <: FilterOptions[?], TElement](x: Self & FilterOptions[TElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterOptions[?], TElement] (val x: Self & FilterOptions[TElement]) extends AnyVal {
       
       inline def setFilter_cellFilter(value: String | js.Array[String]): Self = StObject.set(x, "filter_cellFilter", value.asInstanceOf[js.Any])
       

@@ -72,7 +72,8 @@ object libConfigMod {
       __obj.asInstanceOf[BaseConfigOptions]
     }
     
-    extension [Self <: BaseConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setPathPrefix(value: js.Array[String]): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
       

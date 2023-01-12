@@ -67,7 +67,8 @@ object ToastSuccessProps {
     __obj.asInstanceOf[ToastSuccessProps]
   }
   
-  extension [Self <: ToastSuccessProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToastSuccessProps] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

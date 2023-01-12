@@ -17,7 +17,8 @@ object SourceFileLike {
     __obj.asInstanceOf[SourceFileLike]
   }
   
-  extension [Self <: SourceFileLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceFileLike] (val x: Self) extends AnyVal {
     
     inline def setGetLineAndCharacterOfPosition(value: Double => LineAndCharacter): Self = StObject.set(x, "getLineAndCharacterOfPosition", js.Any.fromFunction1(value))
     

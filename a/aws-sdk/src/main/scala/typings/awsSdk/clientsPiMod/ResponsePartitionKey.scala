@@ -18,7 +18,8 @@ object ResponsePartitionKey {
     __obj.asInstanceOf[ResponsePartitionKey]
   }
   
-  extension [Self <: ResponsePartitionKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsePartitionKey] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: DimensionMap): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  extension [Self <: Window](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
     
     inline def setPrefixFree(value: PrefixFree): Self = StObject.set(x, "PrefixFree", value.asInstanceOf[js.Any])
     

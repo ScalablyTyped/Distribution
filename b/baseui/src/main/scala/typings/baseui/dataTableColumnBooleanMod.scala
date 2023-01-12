@@ -32,7 +32,8 @@ object dataTableColumnBooleanMod {
       __obj.asInstanceOf[FilterParameters]
     }
     
-    extension [Self <: FilterParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterParameters] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

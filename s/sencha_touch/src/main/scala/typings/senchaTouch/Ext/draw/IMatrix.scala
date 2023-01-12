@@ -331,7 +331,8 @@ object IMatrix {
     __obj.asInstanceOf[IMatrix]
   }
   
-  extension [Self <: IMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMatrix] (val x: Self) extends AnyVal {
     
     inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

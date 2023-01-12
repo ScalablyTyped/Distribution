@@ -16,7 +16,8 @@ object LocationMetadata {
     __obj.asInstanceOf[LocationMetadata]
   }
   
-  extension [Self <: LocationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationMetadata] (val x: Self) extends AnyVal {
     
     inline def setLegacyLocationId(value: String): Self = StObject.set(x, "legacyLocationId", value.asInstanceOf[js.Any])
     

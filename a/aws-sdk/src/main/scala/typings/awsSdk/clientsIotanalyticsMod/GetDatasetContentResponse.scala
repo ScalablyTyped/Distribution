@@ -28,7 +28,8 @@ object GetDatasetContentResponse {
     __obj.asInstanceOf[GetDatasetContentResponse]
   }
   
-  extension [Self <: GetDatasetContentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDatasetContentResponse] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: DatasetEntries): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

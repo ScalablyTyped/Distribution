@@ -48,7 +48,8 @@ object WebDriverValue {
     __obj.asInstanceOf[WebDriverValue]
   }
   
-  extension [Self <: WebDriverValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebDriverValue] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object MediaGroup {
     __obj.asInstanceOf[MediaGroup]
   }
   
-  extension [Self <: MediaGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaGroup] (val x: Self) extends AnyVal {
     
     inline def setContent(value: js.Array[MediaContent]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

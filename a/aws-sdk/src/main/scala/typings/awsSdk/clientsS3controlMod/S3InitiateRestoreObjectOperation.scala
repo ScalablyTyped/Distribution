@@ -23,7 +23,8 @@ object S3InitiateRestoreObjectOperation {
     __obj.asInstanceOf[S3InitiateRestoreObjectOperation]
   }
   
-  extension [Self <: S3InitiateRestoreObjectOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3InitiateRestoreObjectOperation] (val x: Self) extends AnyVal {
     
     inline def setExpirationInDays(value: S3ExpirationInDays): Self = StObject.set(x, "ExpirationInDays", value.asInstanceOf[js.Any])
     

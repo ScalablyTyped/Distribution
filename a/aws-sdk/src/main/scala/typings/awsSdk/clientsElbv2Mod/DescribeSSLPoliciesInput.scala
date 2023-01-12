@@ -33,7 +33,8 @@ object DescribeSSLPoliciesInput {
     __obj.asInstanceOf[DescribeSSLPoliciesInput]
   }
   
-  extension [Self <: DescribeSSLPoliciesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSSLPoliciesInput] (val x: Self) extends AnyVal {
     
     inline def setLoadBalancerType(value: LoadBalancerTypeEnum): Self = StObject.set(x, "LoadBalancerType", value.asInstanceOf[js.Any])
     

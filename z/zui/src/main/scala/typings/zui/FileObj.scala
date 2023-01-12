@@ -42,7 +42,8 @@ object FileObj {
     __obj.asInstanceOf[FileObj]
   }
   
-  extension [Self <: FileObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileObj] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

@@ -48,7 +48,8 @@ object PrintOrientationOptionDetails {
     __obj.asInstanceOf[PrintOrientationOptionDetails]
   }
   
-  extension [Self <: PrintOrientationOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintOrientationOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     

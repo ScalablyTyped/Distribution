@@ -19,7 +19,8 @@ object KnockoutComputedContext {
     __obj.asInstanceOf[KnockoutComputedContext]
   }
   
-  extension [Self <: KnockoutComputedContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutComputedContext] (val x: Self) extends AnyVal {
     
     inline def setGetDependenciesCount(value: () => Double): Self = StObject.set(x, "getDependenciesCount", js.Any.fromFunction0(value))
     

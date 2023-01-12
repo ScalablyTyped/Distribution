@@ -67,7 +67,8 @@ object IDirectionsRenderOptions {
     __obj.asInstanceOf[IDirectionsRenderOptions]
   }
   
-  extension [Self <: IDirectionsRenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDirectionsRenderOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoUpdateMapView(value: Boolean): Self = StObject.set(x, "autoUpdateMapView", value.asInstanceOf[js.Any])
     

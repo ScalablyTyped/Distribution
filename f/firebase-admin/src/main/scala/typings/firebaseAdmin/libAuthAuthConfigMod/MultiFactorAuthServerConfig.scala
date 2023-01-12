@@ -17,7 +17,8 @@ object MultiFactorAuthServerConfig {
     __obj.asInstanceOf[MultiFactorAuthServerConfig]
   }
   
-  extension [Self <: MultiFactorAuthServerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiFactorAuthServerConfig] (val x: Self) extends AnyVal {
     
     inline def setEnabledProviders(value: js.Array[AuthFactorServerType]): Self = StObject.set(x, "enabledProviders", value.asInstanceOf[js.Any])
     

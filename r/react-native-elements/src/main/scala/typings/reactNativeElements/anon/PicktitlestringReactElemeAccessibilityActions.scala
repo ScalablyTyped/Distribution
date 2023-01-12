@@ -187,7 +187,8 @@ object PicktitlestringReactElemeAccessibilityActions {
     __obj.asInstanceOf[PicktitlestringReactElemeAccessibilityActions]
   }
   
-  extension [Self <: PicktitlestringReactElemeAccessibilityActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PicktitlestringReactElemeAccessibilityActions] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

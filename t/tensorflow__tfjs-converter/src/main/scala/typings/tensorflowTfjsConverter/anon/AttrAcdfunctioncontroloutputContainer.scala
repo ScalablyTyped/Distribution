@@ -21,7 +21,8 @@ object AttrAcdfunctioncontroloutputContainer {
     __obj.asInstanceOf[AttrAcdfunctioncontroloutputContainer]
   }
   
-  extension [Self <: AttrAcdfunctioncontroloutputContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrAcdfunctioncontroloutputContainer] (val x: Self) extends AnyVal {
     
     inline def setAttr(value: AcdfunctioncontroloutputContainer): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     

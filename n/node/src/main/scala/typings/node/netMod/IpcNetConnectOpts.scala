@@ -19,7 +19,8 @@ object IpcNetConnectOpts {
     __obj.asInstanceOf[IpcNetConnectOpts]
   }
   
-  extension [Self <: IpcNetConnectOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpcNetConnectOpts] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

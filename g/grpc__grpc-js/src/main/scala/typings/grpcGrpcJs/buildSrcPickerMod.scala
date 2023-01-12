@@ -93,7 +93,8 @@ object buildSrcPickerMod {
       __obj.asInstanceOf[CompletePickResult]
     }
     
-    extension [Self <: CompletePickResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompletePickResult] (val x: Self) extends AnyVal {
       
       inline def setPickResultType(value: COMPLETE): Self = StObject.set(x, "pickResultType", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object buildSrcPickerMod {
       __obj.asInstanceOf[DropCallPickResult]
     }
     
-    extension [Self <: DropCallPickResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropCallPickResult] (val x: Self) extends AnyVal {
       
       inline def setExtraFilterFactories(value: js.Array[Any]): Self = StObject.set(x, "extraFilterFactories", value.asInstanceOf[js.Any])
       
@@ -162,7 +164,8 @@ object buildSrcPickerMod {
       __obj.asInstanceOf[PickArgs]
     }
     
-    extension [Self <: PickArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickArgs] (val x: Self) extends AnyVal {
       
       inline def setExtraPickInfo(value: StringDictionary[String]): Self = StObject.set(x, "extraPickInfo", value.asInstanceOf[js.Any])
       
@@ -203,7 +206,8 @@ object buildSrcPickerMod {
       __obj.asInstanceOf[PickResult]
     }
     
-    extension [Self <: PickResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickResult] (val x: Self) extends AnyVal {
       
       inline def setExtraFilterFactories(value: js.Array[FilterFactory[Filter]]): Self = StObject.set(x, "extraFilterFactories", value.asInstanceOf[js.Any])
       
@@ -236,7 +240,8 @@ object buildSrcPickerMod {
       __obj.asInstanceOf[Picker]
     }
     
-    extension [Self <: Picker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Picker] (val x: Self) extends AnyVal {
       
       inline def setPick(value: PickArgs => PickResult): Self = StObject.set(x, "pick", js.Any.fromFunction1(value))
     }
@@ -274,7 +279,8 @@ object buildSrcPickerMod {
       __obj.asInstanceOf[QueuePickResult]
     }
     
-    extension [Self <: QueuePickResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueuePickResult] (val x: Self) extends AnyVal {
       
       inline def setExtraFilterFactories(value: js.Array[Any]): Self = StObject.set(x, "extraFilterFactories", value.asInstanceOf[js.Any])
       
@@ -322,7 +328,8 @@ object buildSrcPickerMod {
       __obj.asInstanceOf[TransientFailurePickResult]
     }
     
-    extension [Self <: TransientFailurePickResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransientFailurePickResult] (val x: Self) extends AnyVal {
       
       inline def setExtraFilterFactories(value: js.Array[Any]): Self = StObject.set(x, "extraFilterFactories", value.asInstanceOf[js.Any])
       

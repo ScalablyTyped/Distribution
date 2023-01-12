@@ -293,7 +293,8 @@ object Instance {
     __obj.asInstanceOf[Instance]
   }
   
-  extension [Self <: Instance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
     
     inline def setAmiLaunchIndex(value: Integer): Self = StObject.set(x, "AmiLaunchIndex", value.asInstanceOf[js.Any])
     

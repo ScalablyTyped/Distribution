@@ -20,7 +20,8 @@ object PartialFont {
     __obj.asInstanceOf[PartialFont]
   }
   
-  extension [Self <: PartialFont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFont] (val x: Self) extends AnyVal {
     
     inline def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

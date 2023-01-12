@@ -93,7 +93,8 @@ object XObjectInspector {
     __obj.asInstanceOf[XObjectInspector]
   }
   
-  extension [Self <: XObjectInspector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XObjectInspector] (val x: Self) extends AnyVal {
     
     inline def setInspect(value: SeqEquiv[XInterface] => Unit): Self = StObject.set(x, "inspect", js.Any.fromFunction1(value))
     

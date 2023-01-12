@@ -146,7 +146,8 @@ object distPathMod {
       __obj.asInstanceOf[IFormatInputPathObject]
     }
     
-    extension [Self <: IFormatInputPathObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFormatInputPathObject] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -204,7 +205,8 @@ object distPathMod {
       __obj.asInstanceOf[IParsedPath]
     }
     
-    extension [Self <: IParsedPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParsedPath] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       

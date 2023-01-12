@@ -27,7 +27,8 @@ object OctetStringParams {
     __obj.asInstanceOf[OctetStringParams]
   }
   
-  extension [Self <: OctetStringParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OctetStringParams] (val x: Self) extends AnyVal {
     
     inline def setIsConstructed(value: scala.Boolean): Self = StObject.set(x, "isConstructed", value.asInstanceOf[js.Any])
     

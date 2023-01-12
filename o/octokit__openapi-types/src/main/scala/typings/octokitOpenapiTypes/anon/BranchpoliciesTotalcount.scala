@@ -21,7 +21,8 @@ object BranchpoliciesTotalcount {
     __obj.asInstanceOf[BranchpoliciesTotalcount]
   }
   
-  extension [Self <: BranchpoliciesTotalcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BranchpoliciesTotalcount] (val x: Self) extends AnyVal {
     
     inline def setBranch_policies(value: js.Array[NameNodeid]): Self = StObject.set(x, "branch_policies", value.asInstanceOf[js.Any])
     

@@ -86,7 +86,8 @@ object distCommonjsMatchMentionMatchMod {
       __obj.asInstanceOf[MentionMatchConfig]
     }
     
-    extension [Self <: MentionMatchConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionMatchConfig] (val x: Self) extends AnyVal {
       
       inline def setMention(value: String): Self = StObject.set(x, "mention", value.asInstanceOf[js.Any])
       

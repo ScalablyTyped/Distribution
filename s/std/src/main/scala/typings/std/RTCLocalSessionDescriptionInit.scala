@@ -19,7 +19,8 @@ object RTCLocalSessionDescriptionInit {
     __obj.asInstanceOf[RTCLocalSessionDescriptionInit]
   }
   
-  extension [Self <: RTCLocalSessionDescriptionInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCLocalSessionDescriptionInit] (val x: Self) extends AnyVal {
     
     inline def setSdp(value: java.lang.String): Self = StObject.set(x, "sdp", value.asInstanceOf[js.Any])
     

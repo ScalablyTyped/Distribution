@@ -194,7 +194,8 @@ object RuntimeRes {
     __obj.asInstanceOf[RuntimeRes]
   }
   
-  extension [Self <: RuntimeRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeRes] (val x: Self) extends AnyVal {
     
     inline def setArgumentExceptionMessage(value: String): Self = StObject.set(x, "argumentExceptionMessage", value.asInstanceOf[js.Any])
     

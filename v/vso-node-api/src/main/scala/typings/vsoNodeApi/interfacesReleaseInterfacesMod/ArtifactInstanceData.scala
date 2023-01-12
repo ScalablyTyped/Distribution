@@ -21,7 +21,8 @@ object ArtifactInstanceData {
     __obj.asInstanceOf[ArtifactInstanceData]
   }
   
-  extension [Self <: ArtifactInstanceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactInstanceData] (val x: Self) extends AnyVal {
     
     inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     

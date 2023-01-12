@@ -227,7 +227,8 @@ object ListViewProps {
     __obj.asInstanceOf[ListViewProps]
   }
   
-  extension [Self <: ListViewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListViewProps] (val x: Self) extends AnyVal {
     
     inline def setBounces(value: Boolean): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
     

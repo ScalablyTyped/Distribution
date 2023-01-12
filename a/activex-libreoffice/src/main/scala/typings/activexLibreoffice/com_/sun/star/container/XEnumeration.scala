@@ -47,7 +47,8 @@ object XEnumeration {
     __obj.asInstanceOf[XEnumeration]
   }
   
-  extension [Self <: XEnumeration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEnumeration] (val x: Self) extends AnyVal {
     
     inline def setHasMoreElements(value: () => Boolean): Self = StObject.set(x, "hasMoreElements", js.Any.fromFunction0(value))
     

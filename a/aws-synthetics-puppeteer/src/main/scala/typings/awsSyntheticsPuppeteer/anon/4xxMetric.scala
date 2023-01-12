@@ -80,7 +80,8 @@ object `4xxMetric` {
     __obj.asInstanceOf[`4xxMetric`]
   }
   
-  extension [Self <: `4xxMetric`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `4xxMetric`] (val x: Self) extends AnyVal {
     
     inline def setAggregated2xxMetric(value: Boolean): Self = StObject.set(x, "aggregated2xxMetric", value.asInstanceOf[js.Any])
     

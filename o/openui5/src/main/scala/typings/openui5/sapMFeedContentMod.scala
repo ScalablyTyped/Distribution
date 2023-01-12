@@ -445,7 +445,8 @@ object sapMFeedContentMod {
       __obj.asInstanceOf[FeedContentSettings]
     }
     
-    extension [Self <: FeedContentSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedContentSettings] (val x: Self) extends AnyVal {
       
       inline def setContentText(value: String | PropertyBindingInfo): Self = StObject.set(x, "contentText", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object libProcMod {
       __obj.asInstanceOf[Proc]
     }
     
-    extension [Self <: Proc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Proc] (val x: Self) extends AnyVal {
       
       inline def setTotalProcesses(value: () => js.Promise[Double | String]): Self = StObject.set(x, "totalProcesses", js.Any.fromFunction0(value))
       

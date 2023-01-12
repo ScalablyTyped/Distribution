@@ -24,7 +24,8 @@ object AccessControlException {
     __obj.asInstanceOf[AccessControlException]
   }
   
-  extension [Self <: AccessControlException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessControlException] (val x: Self) extends AnyVal {
     
     inline def setLackingPermission(value: Any): Self = StObject.set(x, "LackingPermission", value.asInstanceOf[js.Any])
   }

@@ -43,7 +43,8 @@ object GetAccountAuthorizationDetailsResponse {
     __obj.asInstanceOf[GetAccountAuthorizationDetailsResponse]
   }
   
-  extension [Self <: GetAccountAuthorizationDetailsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccountAuthorizationDetailsResponse] (val x: Self) extends AnyVal {
     
     inline def setGroupDetailList(value: groupDetailListType): Self = StObject.set(x, "GroupDetailList", value.asInstanceOf[js.Any])
     

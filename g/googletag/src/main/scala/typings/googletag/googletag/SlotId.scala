@@ -24,7 +24,8 @@ object SlotId {
     __obj.asInstanceOf[SlotId]
   }
   
-  extension [Self <: SlotId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotId] (val x: Self) extends AnyVal {
     
     inline def setGetAdUnitPath(value: () => String): Self = StObject.set(x, "getAdUnitPath", js.Any.fromFunction0(value))
     

@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       

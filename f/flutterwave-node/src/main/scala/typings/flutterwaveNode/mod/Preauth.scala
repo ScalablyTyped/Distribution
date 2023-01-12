@@ -27,7 +27,8 @@ object Preauth {
     __obj.asInstanceOf[Preauth]
   }
   
-  extension [Self <: Preauth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Preauth] (val x: Self) extends AnyVal {
     
     inline def setCaptureCard(value: PreauthCaptureCardRequest => js.Promise[AxiosResponse[Any, Any]]): Self = StObject.set(x, "captureCard", js.Any.fromFunction1(value))
     

@@ -81,7 +81,8 @@ object ASPxClientLoadingPanel {
     __obj.asInstanceOf[ASPxClientLoadingPanel]
   }
   
-  extension [Self <: ASPxClientLoadingPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientLoadingPanel] (val x: Self) extends AnyVal {
     
     inline def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     

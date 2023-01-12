@@ -17,7 +17,8 @@ object RSAPublicKeyJson {
     __obj.asInstanceOf[RSAPublicKeyJson]
   }
   
-  extension [Self <: RSAPublicKeyJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RSAPublicKeyJson] (val x: Self) extends AnyVal {
     
     inline def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     

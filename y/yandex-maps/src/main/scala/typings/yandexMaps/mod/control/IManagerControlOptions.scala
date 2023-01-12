@@ -23,7 +23,8 @@ object IManagerControlOptions {
     __obj.asInstanceOf[IManagerControlOptions]
   }
   
-  extension [Self <: IManagerControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IManagerControlOptions] (val x: Self) extends AnyVal {
     
     inline def setFloat(value: none | left | right): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
     

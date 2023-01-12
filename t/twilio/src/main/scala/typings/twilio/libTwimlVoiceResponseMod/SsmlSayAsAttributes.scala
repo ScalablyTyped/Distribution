@@ -17,7 +17,8 @@ object SsmlSayAsAttributes {
     __obj.asInstanceOf[SsmlSayAsAttributes]
   }
   
-  extension [Self <: SsmlSayAsAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SsmlSayAsAttributes] (val x: Self) extends AnyVal {
     
     inline def `setInterpret-as`(value: SsmlSayAsInterpretAs): Self = StObject.set(x, "interpret-as", value.asInstanceOf[js.Any])
     

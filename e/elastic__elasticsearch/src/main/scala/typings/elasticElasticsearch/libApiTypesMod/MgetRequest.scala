@@ -37,7 +37,8 @@ object MgetRequest {
     __obj.asInstanceOf[MgetRequest]
   }
   
-  extension [Self <: MgetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MgetRequest] (val x: Self) extends AnyVal {
     
     inline def setDocs(value: js.Array[MgetOperation]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     

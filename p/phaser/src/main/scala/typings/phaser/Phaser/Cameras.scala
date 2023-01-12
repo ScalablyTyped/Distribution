@@ -188,7 +188,8 @@ object Cameras {
         __obj.asInstanceOf[FixedKeyControl]
       }
       
-      extension [Self <: FixedKeyControl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FixedKeyControl] (val x: Self) extends AnyVal {
         
         inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
@@ -398,7 +399,8 @@ object Cameras {
         __obj.asInstanceOf[SmoothedKeyControl]
       }
       
-      extension [Self <: SmoothedKeyControl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SmoothedKeyControl] (val x: Self) extends AnyVal {
         
         inline def setAccelX(value: Double): Self = StObject.set(x, "accelX", value.asInstanceOf[js.Any])
         
@@ -2131,7 +2133,8 @@ object Cameras {
           __obj.asInstanceOf[Fade]
         }
         
-        extension [Self <: Fade](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Fade] (val x: Self) extends AnyVal {
           
           inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
           
@@ -2272,7 +2275,8 @@ object Cameras {
           __obj.asInstanceOf[Flash]
         }
         
-        extension [Self <: Flash](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Flash] (val x: Self) extends AnyVal {
           
           inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
           
@@ -2721,7 +2725,8 @@ object Cameras {
           __obj.asInstanceOf[RotateTo]
         }
         
-        extension [Self <: RotateTo](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: RotateTo] (val x: Self) extends AnyVal {
           
           inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
           

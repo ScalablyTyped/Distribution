@@ -23,7 +23,8 @@ object AudioHlsRenditionSelection {
     __obj.asInstanceOf[AudioHlsRenditionSelection]
   }
   
-  extension [Self <: AudioHlsRenditionSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioHlsRenditionSelection] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: stringMin1): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     

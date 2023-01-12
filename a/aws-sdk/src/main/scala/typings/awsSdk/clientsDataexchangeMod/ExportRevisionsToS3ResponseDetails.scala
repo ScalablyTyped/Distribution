@@ -33,7 +33,8 @@ object ExportRevisionsToS3ResponseDetails {
     __obj.asInstanceOf[ExportRevisionsToS3ResponseDetails]
   }
   
-  extension [Self <: ExportRevisionsToS3ResponseDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportRevisionsToS3ResponseDetails] (val x: Self) extends AnyVal {
     
     inline def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     

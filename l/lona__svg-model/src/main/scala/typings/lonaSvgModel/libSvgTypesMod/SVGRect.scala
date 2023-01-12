@@ -24,7 +24,8 @@ object SVGRect {
     __obj.asInstanceOf[SVGRect]
   }
   
-  extension [Self <: SVGRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGRect] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: SVGRectAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

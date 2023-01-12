@@ -26,7 +26,8 @@ object ActualSignatureInfo {
     __obj.asInstanceOf[ActualSignatureInfo]
   }
   
-  extension [Self <: ActualSignatureInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActualSignatureInfo] (val x: Self) extends AnyVal {
     
     inline def setCurrentParameter(value: Double): Self = StObject.set(x, "currentParameter", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ConfusionMatrix {
     __obj.asInstanceOf[ConfusionMatrix]
   }
   
-  extension [Self <: ConfusionMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfusionMatrix] (val x: Self) extends AnyVal {
     
     inline def setConfidenceThreshold(value: Double): Self = StObject.set(x, "confidenceThreshold", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object typesDeleteItemOutputMod {
       __obj.asInstanceOf[DeleteItemOutput]
     }
     
-    extension [Self <: DeleteItemOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteItemOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

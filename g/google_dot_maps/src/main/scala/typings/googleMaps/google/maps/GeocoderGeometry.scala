@@ -37,7 +37,8 @@ object GeocoderGeometry {
     __obj.asInstanceOf[GeocoderGeometry]
   }
   
-  extension [Self <: GeocoderGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeocoderGeometry] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: LatLngBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

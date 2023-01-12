@@ -20,7 +20,8 @@ object GetParametersPathChecksuiteid {
     __obj.asInstanceOf[GetParametersPathChecksuiteid]
   }
   
-  extension [Self <: GetParametersPathChecksuiteid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersPathChecksuiteid] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersPathChecksuiteid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

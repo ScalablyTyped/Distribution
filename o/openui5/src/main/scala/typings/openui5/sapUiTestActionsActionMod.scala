@@ -159,7 +159,8 @@ object sapUiTestActionsActionMod {
       __obj.asInstanceOf[ActionSettings]
     }
     
-    extension [Self <: ActionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionSettings] (val x: Self) extends AnyVal {
       
       inline def setIdSuffix(value: String | PropertyBindingInfo): Self = StObject.set(x, "idSuffix", value.asInstanceOf[js.Any])
       

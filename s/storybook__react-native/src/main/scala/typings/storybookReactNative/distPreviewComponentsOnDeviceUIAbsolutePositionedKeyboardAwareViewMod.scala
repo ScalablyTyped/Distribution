@@ -51,7 +51,8 @@ object distPreviewComponentsOnDeviceUIAbsolutePositionedKeyboardAwareViewMod {
       __obj.asInstanceOf[PreviewDimens]
     }
     
-    extension [Self <: PreviewDimens](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewDimens] (val x: Self) extends AnyVal {
       
       inline def setPreviewHeight(value: Double): Self = StObject.set(x, "previewHeight", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object distPreviewComponentsOnDeviceUIAbsolutePositionedKeyboardAwareViewMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setOnLayout(value: PreviewDimens => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
     }

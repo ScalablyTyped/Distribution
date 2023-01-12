@@ -17,7 +17,8 @@ object EndsWith {
     __obj.asInstanceOf[EndsWith[T]]
   }
   
-  extension [Self <: EndsWith[?], T](x: Self & EndsWith[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndsWith[?], T] (val x: Self & EndsWith[T]) extends AnyVal {
     
     inline def setEndsWith(value: T => Unit): Self = StObject.set(x, "endsWith", js.Any.fromFunction1(value))
     

@@ -19,7 +19,8 @@ object TrimOptions {
     __obj.asInstanceOf[TrimOptions]
   }
   
-  extension [Self <: TrimOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrimOptions] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object DominantColor {
     __obj.asInstanceOf[DominantColor]
   }
   
-  extension [Self <: DominantColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DominantColor] (val x: Self) extends AnyVal {
     
     inline def setBlue(value: UInteger): Self = StObject.set(x, "Blue", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object ButtonMenuConfig {
     __obj.asInstanceOf[ButtonMenuConfig]
   }
   
-  extension [Self <: ButtonMenuConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonMenuConfig] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

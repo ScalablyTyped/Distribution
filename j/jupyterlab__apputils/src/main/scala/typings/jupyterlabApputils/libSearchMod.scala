@@ -76,7 +76,8 @@ object libSearchMod {
       __obj.asInstanceOf[IScore]
     }
     
-    extension [Self <: IScore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScore] (val x: Self) extends AnyVal {
       
       inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       

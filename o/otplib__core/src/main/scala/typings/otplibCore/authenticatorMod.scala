@@ -131,7 +131,8 @@ object authenticatorMod {
       __obj.asInstanceOf[AuthenticatorOptions_[T]]
     }
     
-    extension [Self <: AuthenticatorOptions_[?], T](x: Self & AuthenticatorOptions_[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticatorOptions_[?], T] (val x: Self & AuthenticatorOptions_[T]) extends AnyVal {
       
       inline def setCreateRandomBytes(value: (/* size */ Double, /* encoding */ KeyEncodings) => T): Self = StObject.set(x, "createRandomBytes", js.Any.fromFunction2(value))
       

@@ -53,7 +53,8 @@ object JsxLinkElementProps {
     __obj.asInstanceOf[JsxLinkElementProps]
   }
   
-  extension [Self <: JsxLinkElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxLinkElementProps] (val x: Self) extends AnyVal {
     
     inline def setAs(
       value: audio | document | embed | fetch | font | image | object_ | script | style | track | video | worker

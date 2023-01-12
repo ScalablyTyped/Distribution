@@ -26,7 +26,8 @@ object IBNFDefResult {
     __obj.asInstanceOf[IBNFDefResult]
   }
   
-  extension [Self <: IBNFDefResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBNFDefResult] (val x: Self) extends AnyVal {
     
     inline def setQBnfDefs(value: js.Array[IBNFDef]): Self = StObject.set(x, "qBnfDefs", value.asInstanceOf[js.Any])
     

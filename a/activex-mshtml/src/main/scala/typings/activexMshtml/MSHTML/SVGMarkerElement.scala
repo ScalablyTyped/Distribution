@@ -76,7 +76,8 @@ object SVGMarkerElement {
     __obj.asInstanceOf[SVGMarkerElement]
   }
   
-  extension [Self <: SVGMarkerElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGMarkerElement] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

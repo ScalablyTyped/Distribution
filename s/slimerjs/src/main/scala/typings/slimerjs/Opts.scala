@@ -19,7 +19,8 @@ object Opts {
     __obj.asInstanceOf[Opts]
   }
   
-  extension [Self <: Opts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
     
     inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     

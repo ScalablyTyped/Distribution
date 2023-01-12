@@ -46,7 +46,8 @@ object ShellConfig {
     __obj.asInstanceOf[ShellConfig]
   }
   
-  extension [Self <: ShellConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShellConfig] (val x: Self) extends AnyVal {
     
     inline def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
     

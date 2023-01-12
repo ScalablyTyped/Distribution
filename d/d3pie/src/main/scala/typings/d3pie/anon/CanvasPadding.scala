@@ -23,7 +23,8 @@ object CanvasPadding {
     __obj.asInstanceOf[CanvasPadding]
   }
   
-  extension [Self <: CanvasPadding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasPadding] (val x: Self) extends AnyVal {
     
     inline def setCanvasPadding(value: Bottom): Self = StObject.set(x, "canvasPadding", value.asInstanceOf[js.Any])
     

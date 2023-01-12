@@ -22,7 +22,8 @@ object SqlOutOfDiskReport {
     __obj.asInstanceOf[SqlOutOfDiskReport]
   }
   
-  extension [Self <: SqlOutOfDiskReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlOutOfDiskReport] (val x: Self) extends AnyVal {
     
     inline def setSqlMinRecommendedIncreaseSizeGb(value: Double): Self = StObject.set(x, "sqlMinRecommendedIncreaseSizeGb", value.asInstanceOf[js.Any])
     

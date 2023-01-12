@@ -23,7 +23,8 @@ object StreamingDataPreviewOptions {
     __obj.asInstanceOf[StreamingDataPreviewOptions]
   }
   
-  extension [Self <: StreamingDataPreviewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingDataPreviewOptions] (val x: Self) extends AnyVal {
     
     inline def setPollingTime(value: PollingTime): Self = StObject.set(x, "PollingTime", value.asInstanceOf[js.Any])
     

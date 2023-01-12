@@ -23,7 +23,8 @@ object ReadonlyROOT0CHOOSE0VALUE {
     __obj.asInstanceOf[ReadonlyROOT0CHOOSE0VALUE]
   }
   
-  extension [Self <: ReadonlyROOT0CHOOSE0VALUE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyROOT0CHOOSE0VALUE] (val x: Self) extends AnyVal {
     
     inline def setCHOOSE(value: `0`): Self = StObject.set(x, "CHOOSE", value.asInstanceOf[js.Any])
     

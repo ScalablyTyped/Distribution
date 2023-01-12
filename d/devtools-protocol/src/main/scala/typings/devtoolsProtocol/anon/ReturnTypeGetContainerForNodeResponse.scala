@@ -19,7 +19,8 @@ object ReturnTypeGetContainerForNodeResponse {
     __obj.asInstanceOf[ReturnTypeGetContainerForNodeResponse]
   }
   
-  extension [Self <: ReturnTypeGetContainerForNodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetContainerForNodeResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetContainerForNodeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object CreateDynamicThingGroupRequest {
     __obj.asInstanceOf[CreateDynamicThingGroupRequest]
   }
   
-  extension [Self <: CreateDynamicThingGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDynamicThingGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setIndexName(value: IndexName): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     

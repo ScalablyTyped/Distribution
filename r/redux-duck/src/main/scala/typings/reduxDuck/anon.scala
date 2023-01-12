@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Type[T, AppAction]]
     }
     
-    extension [Self <: Type[?, ?], T /* <: String & (/* import warning: importer.ImportType#apply Failed type conversion: AppAction['type'] */ js.Any) */, AppAction /* <: Action[Any] */](x: Self & (Type[T, AppAction])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type[?, ?], T /* <: String & (/* import warning: importer.ImportType#apply Failed type conversion: AppAction['type'] */ js.Any) */, AppAction /* <: Action[Any] */] (val x: Self & (Type[T, AppAction])) extends AnyVal {
       
       inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

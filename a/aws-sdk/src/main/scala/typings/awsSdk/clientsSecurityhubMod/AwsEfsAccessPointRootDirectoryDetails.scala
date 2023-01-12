@@ -23,7 +23,8 @@ object AwsEfsAccessPointRootDirectoryDetails {
     __obj.asInstanceOf[AwsEfsAccessPointRootDirectoryDetails]
   }
   
-  extension [Self <: AwsEfsAccessPointRootDirectoryDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEfsAccessPointRootDirectoryDetails] (val x: Self) extends AnyVal {
     
     inline def setCreationInfo(value: AwsEfsAccessPointRootDirectoryCreationInfoDetails): Self = StObject.set(x, "CreationInfo", value.asInstanceOf[js.Any])
     

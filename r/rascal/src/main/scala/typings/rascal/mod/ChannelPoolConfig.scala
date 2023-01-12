@@ -25,7 +25,8 @@ object ChannelPoolConfig {
     __obj.asInstanceOf[ChannelPoolConfig]
   }
   
-  extension [Self <: ChannelPoolConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelPoolConfig] (val x: Self) extends AnyVal {
     
     inline def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Api]
     }
     
-    extension [Self <: Api](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
       
       inline def setApi(value: String): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Cleanup]
     }
     
-    extension [Self <: Cleanup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cleanup] (val x: Self) extends AnyVal {
       
       inline def setCleanup(value: () => js.Promise[Unit]): Self = StObject.set(x, "cleanup", js.Any.fromFunction0(value))
       
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Migrate]
     }
     
-    extension [Self <: Migrate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Migrate] (val x: Self) extends AnyVal {
       
       inline def setApi(value: String): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object anon {
       __obj.asInstanceOf[Nsecs]
     }
     
-    extension [Self <: Nsecs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nsecs] (val x: Self) extends AnyVal {
       
       inline def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
       

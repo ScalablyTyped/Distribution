@@ -37,7 +37,8 @@ object libDescriptionsRowMod extends Shortcut {
       __obj.asInstanceOf[RowProps]
     }
     
-    extension [Self <: RowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
       
       inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       

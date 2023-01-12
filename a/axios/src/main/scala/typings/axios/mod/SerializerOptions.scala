@@ -21,7 +21,8 @@ object SerializerOptions {
     __obj.asInstanceOf[SerializerOptions]
   }
   
-  extension [Self <: SerializerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerializerOptions] (val x: Self) extends AnyVal {
     
     inline def setDots(value: Boolean): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     

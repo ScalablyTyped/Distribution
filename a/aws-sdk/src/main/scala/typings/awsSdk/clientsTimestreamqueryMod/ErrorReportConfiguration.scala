@@ -18,7 +18,8 @@ object ErrorReportConfiguration {
     __obj.asInstanceOf[ErrorReportConfiguration]
   }
   
-  extension [Self <: ErrorReportConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorReportConfiguration] (val x: Self) extends AnyVal {
     
     inline def setS3Configuration(value: S3Configuration): Self = StObject.set(x, "S3Configuration", value.asInstanceOf[js.Any])
   }

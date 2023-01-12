@@ -33,7 +33,8 @@ object RequiredKahootOptions {
     __obj.asInstanceOf[RequiredKahootOptions]
   }
   
-  extension [Self <: RequiredKahootOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredKahootOptions] (val x: Self) extends AnyVal {
     
     inline def setModules(value: Answer): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     

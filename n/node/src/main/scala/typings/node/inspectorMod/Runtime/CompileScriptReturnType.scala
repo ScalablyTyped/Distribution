@@ -23,7 +23,8 @@ object CompileScriptReturnType {
     __obj.asInstanceOf[CompileScriptReturnType]
   }
   
-  extension [Self <: CompileScriptReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompileScriptReturnType] (val x: Self) extends AnyVal {
     
     inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     

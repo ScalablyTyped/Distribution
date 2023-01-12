@@ -28,7 +28,8 @@ object PullRequestMergedStateChangedEventMetadata {
     __obj.asInstanceOf[PullRequestMergedStateChangedEventMetadata]
   }
   
-  extension [Self <: PullRequestMergedStateChangedEventMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullRequestMergedStateChangedEventMetadata] (val x: Self) extends AnyVal {
     
     inline def setDestinationReference(value: ReferenceName): Self = StObject.set(x, "destinationReference", value.asInstanceOf[js.Any])
     

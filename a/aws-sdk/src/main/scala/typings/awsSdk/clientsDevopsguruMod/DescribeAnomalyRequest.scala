@@ -23,7 +23,8 @@ object DescribeAnomalyRequest {
     __obj.asInstanceOf[DescribeAnomalyRequest]
   }
   
-  extension [Self <: DescribeAnomalyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAnomalyRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AwsAccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

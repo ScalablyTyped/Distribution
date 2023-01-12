@@ -67,7 +67,8 @@ object libToolsAabUtilsMod extends Shortcut {
       __obj.asInstanceOf[ApkCreationOptions]
     }
     
-    extension [Self <: ApkCreationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApkCreationOptions] (val x: Self) extends AnyVal {
       
       inline def setKeyAlias(value: Boolean): Self = StObject.set(x, "keyAlias", value.asInstanceOf[js.Any])
       

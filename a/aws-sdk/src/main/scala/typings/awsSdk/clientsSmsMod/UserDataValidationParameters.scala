@@ -23,7 +23,8 @@ object UserDataValidationParameters {
     __obj.asInstanceOf[UserDataValidationParameters]
   }
   
-  extension [Self <: UserDataValidationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserDataValidationParameters] (val x: Self) extends AnyVal {
     
     inline def setScriptType(value: ScriptType): Self = StObject.set(x, "scriptType", value.asInstanceOf[js.Any])
     

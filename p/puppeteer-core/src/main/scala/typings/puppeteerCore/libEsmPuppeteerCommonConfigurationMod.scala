@@ -113,7 +113,8 @@ object libEsmPuppeteerCommonConfigurationMod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setBrowserRevision(value: String): Self = StObject.set(x, "browserRevision", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object libEsmPuppeteerCommonConfigurationMod {
       __obj.asInstanceOf[ExperimentsConfiguration]
     }
     
-    extension [Self <: ExperimentsConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExperimentsConfiguration] (val x: Self) extends AnyVal {
       
       inline def setMacArmChromiumEnabled(value: Boolean): Self = StObject.set(x, "macArmChromiumEnabled", value.asInstanceOf[js.Any])
       

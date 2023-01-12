@@ -29,7 +29,8 @@ object HighlightElementInDOM {
     __obj.asInstanceOf[HighlightElementInDOM]
   }
   
-  extension [Self <: HighlightElementInDOM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightElementInDOM] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

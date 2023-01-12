@@ -20,7 +20,8 @@ object DockingData {
     __obj.asInstanceOf[DockingData]
   }
   
-  extension [Self <: DockingData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DockingData] (val x: Self) extends AnyVal {
     
     inline def setBFloating(value: Boolean): Self = StObject.set(x, "bFloating", value.asInstanceOf[js.Any])
     

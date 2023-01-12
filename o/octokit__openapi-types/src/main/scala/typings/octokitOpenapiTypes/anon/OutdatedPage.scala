@@ -24,7 +24,8 @@ object OutdatedPage {
     __obj.asInstanceOf[OutdatedPage]
   }
   
-  extension [Self <: OutdatedPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutdatedPage] (val x: Self) extends AnyVal {
     
     inline def setOutdated(value: String): Self = StObject.set(x, "outdated", value.asInstanceOf[js.Any])
     

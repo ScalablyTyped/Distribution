@@ -39,7 +39,8 @@ object OmitProFieldFCRenderProps {
     __obj.asInstanceOf[OmitProFieldFCRenderProps]
   }
   
-  extension [Self <: OmitProFieldFCRenderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitProFieldFCRenderProps] (val x: Self) extends AnyVal {
     
     inline def setFieldProps(value: Any): Self = StObject.set(x, "fieldProps", value.asInstanceOf[js.Any])
     

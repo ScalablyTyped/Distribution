@@ -51,7 +51,8 @@ object GPUBufferUsage {
     __obj.asInstanceOf[GPUBufferUsage]
   }
   
-  extension [Self <: GPUBufferUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUBufferUsage] (val x: Self) extends AnyVal {
     
     inline def setCOPY_DST(value: GPUFlagsConstant): Self = StObject.set(x, "COPY_DST", value.asInstanceOf[js.Any])
     

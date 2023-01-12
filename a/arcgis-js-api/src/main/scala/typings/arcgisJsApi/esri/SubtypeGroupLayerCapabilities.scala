@@ -70,7 +70,8 @@ object SubtypeGroupLayerCapabilities {
     __obj.asInstanceOf[SubtypeGroupLayerCapabilities]
   }
   
-  extension [Self <: SubtypeGroupLayerCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtypeGroupLayerCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAttachment(value: SubtypeGroupLayerCapabilitiesAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object TemplatesRenderRequest {
     __obj.asInstanceOf[TemplatesRenderRequest]
   }
   
-  extension [Self <: TemplatesRenderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplatesRenderRequest] (val x: Self) extends AnyVal {
     
     inline def setMerge_vars(value: js.Array[MergeVar]): Self = StObject.set(x, "merge_vars", value.asInstanceOf[js.Any])
     

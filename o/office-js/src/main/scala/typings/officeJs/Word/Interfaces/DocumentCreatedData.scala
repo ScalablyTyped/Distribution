@@ -70,7 +70,8 @@ object DocumentCreatedData {
     __obj.asInstanceOf[DocumentCreatedData]
   }
   
-  extension [Self <: DocumentCreatedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentCreatedData] (val x: Self) extends AnyVal {
     
     inline def setBody(value: BodyData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

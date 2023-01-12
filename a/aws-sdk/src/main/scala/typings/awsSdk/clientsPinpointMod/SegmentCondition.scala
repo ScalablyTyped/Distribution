@@ -18,7 +18,8 @@ object SegmentCondition {
     __obj.asInstanceOf[SegmentCondition]
   }
   
-  extension [Self <: SegmentCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentCondition] (val x: Self) extends AnyVal {
     
     inline def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
   }

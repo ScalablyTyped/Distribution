@@ -106,7 +106,8 @@ object libUtilitiesDragdropDragDropHelperMod {
       __obj.asInstanceOf[IDragDropHelperParams]
     }
     
-    extension [Self <: IDragDropHelperParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDragDropHelperParams] (val x: Self) extends AnyVal {
       
       inline def setMinimumPixelsForDrag(value: Double): Self = StObject.set(x, "minimumPixelsForDrag", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object SystemInfoPeripheral {
     __obj.asInstanceOf[SystemInfoPeripheral]
   }
   
-  extension [Self <: SystemInfoPeripheral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoPeripheral] (val x: Self) extends AnyVal {
     
     inline def setIsVideoOutputOn(value: Boolean): Self = StObject.set(x, "isVideoOutputOn", value.asInstanceOf[js.Any])
   }

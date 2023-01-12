@@ -126,7 +126,8 @@ object esComponentsGlobalHeaderMod {
       __obj.asInstanceOf[GlobalHeaderProps]
     }
     
-    extension [Self <: GlobalHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setActionsRender(value: WithFalse[js.Function1[/* props */ HeaderViewProps, js.Array[ReactNode]]]): Self = StObject.set(x, "actionsRender", value.asInstanceOf[js.Any])
       

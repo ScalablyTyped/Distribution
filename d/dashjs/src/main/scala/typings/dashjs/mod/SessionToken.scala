@@ -37,7 +37,8 @@ object SessionToken {
     __obj.asInstanceOf[SessionToken]
   }
   
-  extension [Self <: SessionToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionToken] (val x: Self) extends AnyVal {
     
     inline def setGetExpirationTime(value: () => Double): Self = StObject.set(x, "getExpirationTime", js.Any.fromFunction0(value))
     

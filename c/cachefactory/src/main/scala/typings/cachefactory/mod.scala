@@ -144,7 +144,8 @@ object mod {
       __obj.asInstanceOf[CacheFactoryInfo]
     }
     
-    extension [Self <: CacheFactoryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheFactoryInfo] (val x: Self) extends AnyVal {
       
       inline def setCaches(value: StringDictionary[CacheInfo]): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
       
@@ -167,7 +168,8 @@ object mod {
       __obj.asInstanceOf[CacheInfo]
     }
     
-    extension [Self <: CacheInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -208,7 +210,8 @@ object mod {
       __obj.asInstanceOf[CacheOptions]
     }
     
-    extension [Self <: CacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheFlushInterval(value: Double): Self = StObject.set(x, "cacheFlushInterval", value.asInstanceOf[js.Any])
       
@@ -294,7 +297,8 @@ object mod {
       __obj.asInstanceOf[GetPutOptions]
     }
     
-    extension [Self <: GetPutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPutOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
@@ -331,7 +335,8 @@ object mod {
       __obj.asInstanceOf[ItemInfo]
     }
     
-    extension [Self <: ItemInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemInfo] (val x: Self) extends AnyVal {
       
       inline def setAccessed(value: Double): Self = StObject.set(x, "accessed", value.asInstanceOf[js.Any])
       
@@ -412,7 +417,8 @@ object mod {
       __obj.asInstanceOf[Utils_]
     }
     
-    extension [Self <: Utils_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Utils_] (val x: Self) extends AnyVal {
       
       inline def setEquals_(value: (Any, Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       

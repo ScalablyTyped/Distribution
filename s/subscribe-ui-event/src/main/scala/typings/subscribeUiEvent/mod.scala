@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[ArgmentedEvent[T]]
     }
     
-    extension [Self <: ArgmentedEvent[?], T /* <: EventType */](x: Self & ArgmentedEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgmentedEvent[?], T /* <: EventType */] (val x: Self & ArgmentedEvent[T]) extends AnyVal {
       
       inline def setMainType(value: String): Self = StObject.set(x, "mainType", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object mod {
       __obj.asInstanceOf[SubscribeOptions]
     }
     
-    extension [Self <: SubscribeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -189,7 +191,8 @@ object mod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }

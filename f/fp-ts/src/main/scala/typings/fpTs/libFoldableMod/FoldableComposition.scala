@@ -40,7 +40,8 @@ object FoldableComposition {
     __obj.asInstanceOf[FoldableComposition[F, G]]
   }
   
-  extension [Self <: FoldableComposition[?, ?], F, G](x: Self & (FoldableComposition[F, G])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoldableComposition[?, ?], F, G] (val x: Self & (FoldableComposition[F, G])) extends AnyVal {
     
     inline def setFoldMap(
       value: Monoid[Any] => js.Function2[

@@ -68,7 +68,8 @@ object EventContentArg {
     __obj.asInstanceOf[EventContentArg]
   }
   
-  extension [Self <: EventContentArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventContentArg] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

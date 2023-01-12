@@ -34,7 +34,8 @@ object IModelContentChange {
     __obj.asInstanceOf[IModelContentChange]
   }
   
-  extension [Self <: IModelContentChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModelContentChange] (val x: Self) extends AnyVal {
     
     inline def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

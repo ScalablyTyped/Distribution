@@ -56,7 +56,8 @@ object CustomerConnectorInfo {
     __obj.asInstanceOf[CustomerConnectorInfo]
   }
   
-  extension [Self <: CustomerConnectorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerConnectorInfo] (val x: Self) extends AnyVal {
     
     inline def setActiveConnectors(value: Integer): Self = StObject.set(x, "activeConnectors", value.asInstanceOf[js.Any])
     

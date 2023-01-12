@@ -36,7 +36,8 @@ object IProcessableBlobs {
     __obj.asInstanceOf[IProcessableBlobs]
   }
   
-  extension [Self <: IProcessableBlobs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProcessableBlobs] (val x: Self) extends AnyVal {
     
     inline def setGetProcessedBlobsFromArray(value: js.Array[Blob] => js.Promise[Any]): Self = StObject.set(x, "getProcessedBlobsFromArray", js.Any.fromFunction1(value))
     

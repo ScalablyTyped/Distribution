@@ -23,7 +23,8 @@ object PresignedUrlConfig {
     __obj.asInstanceOf[PresignedUrlConfig]
   }
   
-  extension [Self <: PresignedUrlConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PresignedUrlConfig] (val x: Self) extends AnyVal {
     
     inline def setExpiresInSec(value: ExpiresInSec): Self = StObject.set(x, "expiresInSec", value.asInstanceOf[js.Any])
     

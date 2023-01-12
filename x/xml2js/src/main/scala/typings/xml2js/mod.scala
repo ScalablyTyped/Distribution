@@ -117,7 +117,8 @@ object mod {
       __obj.asInstanceOf[BuilderOptions]
     }
     
-    extension [Self <: BuilderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuilderOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowSurrogateChars(value: Boolean): Self = StObject.set(x, "allowSurrogateChars", value.asInstanceOf[js.Any])
       
@@ -213,7 +214,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -345,7 +347,8 @@ object mod {
       __obj.asInstanceOf[OptionsV2]
     }
     
-    extension [Self <: OptionsV2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsV2] (val x: Self) extends AnyVal {
       
       inline def setAllowSurrogateChars(value: Boolean): Self = StObject.set(x, "allowSurrogateChars", value.asInstanceOf[js.Any])
       
@@ -436,7 +439,8 @@ object mod {
       __obj.asInstanceOf[ParserOptions]
     }
     
-    extension [Self <: ParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -565,7 +569,8 @@ object mod {
       __obj.asInstanceOf[RenderOptions]
     }
     
-    extension [Self <: RenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
       
       inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
@@ -596,7 +601,8 @@ object mod {
       __obj.asInstanceOf[XmlDeclarationAttributes]
     }
     
-    extension [Self <: XmlDeclarationAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlDeclarationAttributes] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

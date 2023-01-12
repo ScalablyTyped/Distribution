@@ -18,7 +18,8 @@ object HlsS3Settings {
     __obj.asInstanceOf[HlsS3Settings]
   }
   
-  extension [Self <: HlsS3Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsS3Settings] (val x: Self) extends AnyVal {
     
     inline def setCannedAcl(value: S3CannedAcl): Self = StObject.set(x, "CannedAcl", value.asInstanceOf[js.Any])
     

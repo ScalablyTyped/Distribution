@@ -29,7 +29,8 @@ object PartialCurrentValue {
     __obj.asInstanceOf[PartialCurrentValue]
   }
   
-  extension [Self <: PartialCurrentValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCurrentValue] (val x: Self) extends AnyVal {
     
     inline def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

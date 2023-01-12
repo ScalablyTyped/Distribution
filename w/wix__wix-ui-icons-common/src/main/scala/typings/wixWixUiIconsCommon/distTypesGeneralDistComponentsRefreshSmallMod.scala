@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsRefreshSmallMod extends Shortcut {
       __obj.asInstanceOf[RefreshSmallProps]
     }
     
-    extension [Self <: RefreshSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

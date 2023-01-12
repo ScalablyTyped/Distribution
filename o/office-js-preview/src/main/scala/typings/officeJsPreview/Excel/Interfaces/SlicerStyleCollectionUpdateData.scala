@@ -16,7 +16,8 @@ object SlicerStyleCollectionUpdateData {
     __obj.asInstanceOf[SlicerStyleCollectionUpdateData]
   }
   
-  extension [Self <: SlicerStyleCollectionUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlicerStyleCollectionUpdateData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[SlicerStyleData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

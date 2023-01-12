@@ -38,7 +38,8 @@ object ATVJSSlideShow {
     __obj.asInstanceOf[ATVJSSlideShow]
   }
   
-  extension [Self <: ATVJSSlideShow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVJSSlideShow] (val x: Self) extends AnyVal {
     
     inline def setOnExit(value: /* lastPhotoId */ js.UndefOr[String] => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
     

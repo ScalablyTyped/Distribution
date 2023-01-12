@@ -33,7 +33,8 @@ object QueryDslPercolateQuery {
     __obj.asInstanceOf[QueryDslPercolateQuery]
   }
   
-  extension [Self <: QueryDslPercolateQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslPercolateQuery] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: Any): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

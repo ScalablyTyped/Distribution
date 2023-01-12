@@ -32,7 +32,8 @@ object TraceOptions {
     __obj.asInstanceOf[TraceOptions]
   }
   
-  extension [Self <: TraceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraceOptions] (val x: Self) extends AnyVal {
     
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

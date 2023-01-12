@@ -23,7 +23,8 @@ object PivotGroupLimit {
     __obj.asInstanceOf[PivotGroupLimit]
   }
   
-  extension [Self <: PivotGroupLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGroupLimit] (val x: Self) extends AnyVal {
     
     inline def setApplyOrder(value: Double): Self = StObject.set(x, "applyOrder", value.asInstanceOf[js.Any])
     

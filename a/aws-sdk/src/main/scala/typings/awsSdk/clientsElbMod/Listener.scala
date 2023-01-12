@@ -38,7 +38,8 @@ object Listener {
     __obj.asInstanceOf[Listener]
   }
   
-  extension [Self <: Listener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
     
     inline def setInstancePort(value: InstancePort): Self = StObject.set(x, "InstancePort", value.asInstanceOf[js.Any])
     

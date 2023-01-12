@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[CustomHeaders]
     }
     
-    extension [Self <: CustomHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomHeaders] (val x: Self) extends AnyVal {
       
       inline def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[CustomHeadersExpand]
     }
     
-    extension [Self <: CustomHeadersExpand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomHeadersExpand] (val x: Self) extends AnyVal {
       
       inline def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
@@ -96,7 +99,8 @@ object anon {
       __obj.asInstanceOf[CustomHeadersTop]
     }
     
-    extension [Self <: CustomHeadersTop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomHeadersTop] (val x: Self) extends AnyVal {
       
       inline def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
@@ -123,7 +127,8 @@ object anon {
       __obj.asInstanceOf[Expand]
     }
     
-    extension [Self <: Expand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expand] (val x: Self) extends AnyVal {
       
       inline def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
@@ -156,7 +161,8 @@ object anon {
       __obj.asInstanceOf[ExpandFilter]
     }
     
-    extension [Self <: ExpandFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandFilter] (val x: Self) extends AnyVal {
       
       inline def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
@@ -189,7 +195,8 @@ object anon {
       __obj.asInstanceOf[Filter]
     }
     
-    extension [Self <: Filter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
       
       inline def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
@@ -214,7 +221,8 @@ object anon {
       __obj.asInstanceOf[Parameters]
     }
     
-    extension [Self <: Parameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
       
       inline def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
@@ -239,7 +247,8 @@ object anon {
       __obj.asInstanceOf[Skiptoken]
     }
     
-    extension [Self <: Skiptoken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Skiptoken] (val x: Self) extends AnyVal {
       
       inline def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
@@ -266,7 +275,8 @@ object anon {
       __obj.asInstanceOf[Top]
     }
     
-    extension [Self <: Top](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Top] (val x: Self) extends AnyVal {
       
       inline def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       

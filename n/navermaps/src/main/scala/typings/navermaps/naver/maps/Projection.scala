@@ -17,7 +17,8 @@ object Projection {
     __obj.asInstanceOf[Projection]
   }
   
-  extension [Self <: Projection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
     
     inline def setFromCoordToPoint(value: Coord => Point): Self = StObject.set(x, "fromCoordToPoint", js.Any.fromFunction1(value))
     

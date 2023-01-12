@@ -89,7 +89,8 @@ object mod {
       __obj.asInstanceOf[InitialCoverage]
     }
     
-    extension [Self <: InitialCoverage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitialCoverage] (val x: Self) extends AnyVal {
       
       inline def setCoverageData(value: Any): Self = StObject.set(x, "coverageData", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object mod {
       __obj.asInstanceOf[InstrumenterOptions]
     }
     
-    extension [Self <: InstrumenterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstrumenterOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoWrap(value: Boolean): Self = StObject.set(x, "autoWrap", value.asInstanceOf[js.Any])
       
@@ -170,7 +172,8 @@ object mod {
       __obj.asInstanceOf[Visitor]
     }
     
-    extension [Self <: Visitor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Visitor] (val x: Self) extends AnyVal {
       
       inline def setEnter(value: String => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
       
@@ -191,7 +194,8 @@ object mod {
       __obj.asInstanceOf[VisitorOptions]
     }
     
-    extension [Self <: VisitorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisitorOptions] (val x: Self) extends AnyVal {
       
       inline def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
       

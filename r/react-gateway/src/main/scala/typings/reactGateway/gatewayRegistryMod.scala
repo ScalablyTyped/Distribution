@@ -86,7 +86,8 @@ object gatewayRegistryMod {
       __obj.asInstanceOf[GatewayRegistry]
     }
     
-    extension [Self <: GatewayRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GatewayRegistry] (val x: Self) extends AnyVal {
       
       inline def setAddChild(value: (String, String, ReactNode) => Unit): Self = StObject.set(x, "addChild", js.Any.fromFunction3(value))
       

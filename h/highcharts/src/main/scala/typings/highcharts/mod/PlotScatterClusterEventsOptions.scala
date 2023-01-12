@@ -21,7 +21,8 @@ object PlotScatterClusterEventsOptions {
     __obj.asInstanceOf[PlotScatterClusterEventsOptions]
   }
   
-  extension [Self <: PlotScatterClusterEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotScatterClusterEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setDrillToCluster(value: MarkerClusterDrillCallbackFunction): Self = StObject.set(x, "drillToCluster", value.asInstanceOf[js.Any])
     

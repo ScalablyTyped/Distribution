@@ -28,7 +28,8 @@ object TcbLocation {
     __obj.asInstanceOf[TcbLocation]
   }
   
-  extension [Self <: TcbLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TcbLocation] (val x: Self) extends AnyVal {
     
     inline def setIsShimFile(value: Boolean): Self = StObject.set(x, "isShimFile", value.asInstanceOf[js.Any])
     

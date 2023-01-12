@@ -144,7 +144,8 @@ object ResponseItem {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setGetAccountStateResponse(value: typings.libraCore.`lib@GeneratedGetWithProofPbMod`.GetAccountStateResponse.AsObject): Self = StObject.set(x, "getAccountStateResponse", value.asInstanceOf[js.Any])
       

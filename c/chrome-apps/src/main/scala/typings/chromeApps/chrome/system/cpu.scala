@@ -67,7 +67,8 @@ object cpu {
       __obj.asInstanceOf[CpuInfo]
     }
     
-    extension [Self <: CpuInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CpuInfo] (val x: Self) extends AnyVal {
       
       inline def setArchName(value: String): Self = StObject.set(x, "archName", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object cpu {
       __obj.asInstanceOf[ProcessorInfo]
     }
     
-    extension [Self <: ProcessorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessorInfo] (val x: Self) extends AnyVal {
       
       inline def setUsage(value: ProcessorUsage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     }
@@ -128,7 +130,8 @@ object cpu {
       __obj.asInstanceOf[ProcessorUsage]
     }
     
-    extension [Self <: ProcessorUsage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessorUsage] (val x: Self) extends AnyVal {
       
       inline def setIdle(value: double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
       

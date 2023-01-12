@@ -63,7 +63,8 @@ object typesLoggerMod {
       __obj.asInstanceOf[Logger_]
     }
     
-    extension [Self <: Logger_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger_] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       

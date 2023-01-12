@@ -33,7 +33,8 @@ object AddressAttribute {
     __obj.asInstanceOf[AddressAttribute]
   }
   
-  extension [Self <: AddressAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressAttribute] (val x: Self) extends AnyVal {
     
     inline def setAllocationId(value: AllocationId): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     

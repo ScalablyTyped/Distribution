@@ -23,7 +23,8 @@ object CloneReceiptRuleSetRequest {
     __obj.asInstanceOf[CloneReceiptRuleSetRequest]
   }
   
-  extension [Self <: CloneReceiptRuleSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloneReceiptRuleSetRequest] (val x: Self) extends AnyVal {
     
     inline def setOriginalRuleSetName(value: ReceiptRuleSetName): Self = StObject.set(x, "OriginalRuleSetName", value.asInstanceOf[js.Any])
     

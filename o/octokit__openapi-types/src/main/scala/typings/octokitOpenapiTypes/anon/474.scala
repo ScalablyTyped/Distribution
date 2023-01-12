@@ -16,7 +16,8 @@ object `474` {
     __obj.asInstanceOf[`474`]
   }
   
-  extension [Self <: `474`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `474`] (val x: Self) extends AnyVal {
     
     inline def setExclude_pull_requests(value: Boolean): Self = StObject.set(x, "exclude_pull_requests", value.asInstanceOf[js.Any])
     

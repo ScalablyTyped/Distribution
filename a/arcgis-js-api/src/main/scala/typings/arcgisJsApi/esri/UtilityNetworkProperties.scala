@@ -22,7 +22,8 @@ object UtilityNetworkProperties {
     __obj.asInstanceOf[UtilityNetworkProperties]
   }
   
-  extension [Self <: UtilityNetworkProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UtilityNetworkProperties] (val x: Self) extends AnyVal {
     
     inline def setSharedNamedTraceConfigurations(value: js.Array[NamedTraceConfiguration]): Self = StObject.set(x, "sharedNamedTraceConfigurations", value.asInstanceOf[js.Any])
     

@@ -165,7 +165,8 @@ object DataGroupingOptionsObject {
     __obj.asInstanceOf[DataGroupingOptionsObject]
   }
   
-  extension [Self <: DataGroupingOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataGroupingOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: String | DataGroupingAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object XConstantsTypeDescription {
     __obj.asInstanceOf[XConstantsTypeDescription]
   }
   
-  extension [Self <: XConstantsTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConstantsTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setConstants(value: SafeArray[XConstantTypeDescription]): Self = StObject.set(x, "Constants", value.asInstanceOf[js.Any])
     

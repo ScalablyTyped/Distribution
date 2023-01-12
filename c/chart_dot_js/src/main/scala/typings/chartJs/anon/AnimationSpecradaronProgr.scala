@@ -67,7 +67,8 @@ object AnimationSpecradaronProgr {
     __obj.asInstanceOf[AnimationSpecradaronProgr]
   }
   
-  extension [Self <: AnimationSpecradaronProgr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationSpecradaronProgr] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Scriptable[Double, ScriptableContext[radar]]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object AssociateDeviceWithPlacementRequest {
     __obj.asInstanceOf[AssociateDeviceWithPlacementRequest]
   }
   
-  extension [Self <: AssociateDeviceWithPlacementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateDeviceWithPlacementRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: DeviceId): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

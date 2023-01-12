@@ -113,7 +113,8 @@ object BridgeAttendedTransfer {
     __obj.asInstanceOf[BridgeAttendedTransfer]
   }
   
-  extension [Self <: BridgeAttendedTransfer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BridgeAttendedTransfer] (val x: Self) extends AnyVal {
     
     inline def setDestination_application(value: String): Self = StObject.set(x, "destination_application", value.asInstanceOf[js.Any])
     

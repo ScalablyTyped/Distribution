@@ -774,7 +774,8 @@ object WeakValidationMapOmitSele {
     __obj.asInstanceOf[WeakValidationMapOmitSele]
   }
   
-  extension [Self <: WeakValidationMapOmitSele](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapOmitSele] (val x: Self) extends AnyVal {
     
     inline def setAbout(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any

@@ -15,7 +15,8 @@ object MultiViewCalendarMessages {
     __obj.asInstanceOf[MultiViewCalendarMessages]
   }
   
-  extension [Self <: MultiViewCalendarMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiViewCalendarMessages] (val x: Self) extends AnyVal {
     
     inline def setWeekColumnHeader(value: String): Self = StObject.set(x, "weekColumnHeader", value.asInstanceOf[js.Any])
     

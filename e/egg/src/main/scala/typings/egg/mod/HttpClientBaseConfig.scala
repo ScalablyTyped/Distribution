@@ -31,7 +31,8 @@ object HttpClientBaseConfig {
     __obj.asInstanceOf[HttpClientBaseConfig]
   }
   
-  extension [Self <: HttpClientBaseConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpClientBaseConfig] (val x: Self) extends AnyVal {
     
     inline def setFreeSocketKeepAliveTimeout(value: Double): Self = StObject.set(x, "freeSocketKeepAliveTimeout", value.asInstanceOf[js.Any])
     

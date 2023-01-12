@@ -16,7 +16,8 @@ object BSONSymbolExtended {
     __obj.asInstanceOf[BSONSymbolExtended]
   }
   
-  extension [Self <: BSONSymbolExtended](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BSONSymbolExtended] (val x: Self) extends AnyVal {
     
     inline def set$symbol(value: String): Self = StObject.set(x, "$symbol", value.asInstanceOf[js.Any])
   }

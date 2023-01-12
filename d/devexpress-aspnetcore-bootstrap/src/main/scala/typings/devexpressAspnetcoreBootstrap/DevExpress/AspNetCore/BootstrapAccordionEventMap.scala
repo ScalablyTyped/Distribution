@@ -38,7 +38,8 @@ object BootstrapAccordionEventMap {
     __obj.asInstanceOf[BootstrapAccordionEventMap]
   }
   
-  extension [Self <: BootstrapAccordionEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapAccordionEventMap] (val x: Self) extends AnyVal {
     
     inline def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     

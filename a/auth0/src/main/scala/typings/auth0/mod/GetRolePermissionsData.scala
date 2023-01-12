@@ -19,7 +19,8 @@ object GetRolePermissionsData {
     __obj.asInstanceOf[GetRolePermissionsData]
   }
   
-  extension [Self <: GetRolePermissionsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRolePermissionsData] (val x: Self) extends AnyVal {
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

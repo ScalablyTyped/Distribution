@@ -23,7 +23,8 @@ object GooglePrivacyDlpV2LikelihoodAdjustment {
     __obj.asInstanceOf[GooglePrivacyDlpV2LikelihoodAdjustment]
   }
   
-  extension [Self <: GooglePrivacyDlpV2LikelihoodAdjustment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2LikelihoodAdjustment] (val x: Self) extends AnyVal {
     
     inline def setFixedLikelihood(value: String): Self = StObject.set(x, "fixedLikelihood", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PartialNotificationOption {
     __obj.asInstanceOf[PartialNotificationOption]
   }
   
-  extension [Self <: PartialNotificationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialNotificationOption] (val x: Self) extends AnyVal {
     
     inline def setEventAfterDeleteNotification(value: String): Self = StObject.set(x, "eventAfterDeleteNotification", value.asInstanceOf[js.Any])
     

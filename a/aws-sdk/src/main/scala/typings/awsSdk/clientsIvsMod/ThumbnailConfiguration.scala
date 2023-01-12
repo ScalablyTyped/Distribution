@@ -23,7 +23,8 @@ object ThumbnailConfiguration {
     __obj.asInstanceOf[ThumbnailConfiguration]
   }
   
-  extension [Self <: ThumbnailConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThumbnailConfiguration] (val x: Self) extends AnyVal {
     
     inline def setRecordingMode(value: RecordingMode): Self = StObject.set(x, "recordingMode", value.asInstanceOf[js.Any])
     

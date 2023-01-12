@@ -23,7 +23,8 @@ object UpdateRowData {
     __obj.asInstanceOf[UpdateRowData]
   }
   
-  extension [Self <: UpdateRowData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRowData] (val x: Self) extends AnyVal {
     
     inline def setCellsToUpdate(value: RowDataInput): Self = StObject.set(x, "cellsToUpdate", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object `285` {
     __obj.asInstanceOf[`285`]
   }
   
-  extension [Self <: `285`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `285`] (val x: Self) extends AnyVal {
     
     inline def setLast_read_at(value: String): Self = StObject.set(x, "last_read_at", value.asInstanceOf[js.Any])
     

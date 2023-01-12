@@ -24,7 +24,8 @@ object SecretsTotalcount {
     __obj.asInstanceOf[SecretsTotalcount]
   }
   
-  extension [Self <: SecretsTotalcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecretsTotalcount] (val x: Self) extends AnyVal {
     
     inline def setSecrets(
       value: js.Array[

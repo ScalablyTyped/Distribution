@@ -23,7 +23,8 @@ object BatchDetectSentimentResponse {
     __obj.asInstanceOf[BatchDetectSentimentResponse]
   }
   
-  extension [Self <: BatchDetectSentimentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDetectSentimentResponse] (val x: Self) extends AnyVal {
     
     inline def setErrorList(value: BatchItemErrorList): Self = StObject.set(x, "ErrorList", value.asInstanceOf[js.Any])
     

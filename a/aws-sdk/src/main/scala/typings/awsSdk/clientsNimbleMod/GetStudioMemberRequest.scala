@@ -23,7 +23,8 @@ object GetStudioMemberRequest {
     __obj.asInstanceOf[GetStudioMemberRequest]
   }
   
-  extension [Self <: GetStudioMemberRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStudioMemberRequest] (val x: Self) extends AnyVal {
     
     inline def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
     

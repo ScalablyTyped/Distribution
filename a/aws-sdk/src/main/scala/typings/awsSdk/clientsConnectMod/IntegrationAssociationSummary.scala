@@ -53,7 +53,8 @@ object IntegrationAssociationSummary {
     __obj.asInstanceOf[IntegrationAssociationSummary]
   }
   
-  extension [Self <: IntegrationAssociationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegrationAssociationSummary] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

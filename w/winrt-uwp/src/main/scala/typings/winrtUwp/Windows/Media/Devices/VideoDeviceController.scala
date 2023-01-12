@@ -201,7 +201,8 @@ object VideoDeviceController {
     __obj.asInstanceOf[VideoDeviceController]
   }
   
-  extension [Self <: VideoDeviceController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoDeviceController] (val x: Self) extends AnyVal {
     
     inline def setAdvancedPhotoControl(value: AdvancedPhotoControl): Self = StObject.set(x, "advancedPhotoControl", value.asInstanceOf[js.Any])
     

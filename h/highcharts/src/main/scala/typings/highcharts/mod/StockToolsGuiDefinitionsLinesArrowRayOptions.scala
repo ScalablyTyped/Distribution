@@ -18,7 +18,8 @@ object StockToolsGuiDefinitionsLinesArrowRayOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsLinesArrowRayOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsLinesArrowRayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsLinesArrowRayOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

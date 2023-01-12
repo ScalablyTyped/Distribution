@@ -21,7 +21,8 @@ object IUpdateContextRequest {
     __obj.asInstanceOf[IUpdateContextRequest]
   }
   
-  extension [Self <: IUpdateContextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUpdateContextRequest] (val x: Self) extends AnyVal {
     
     inline def setContext(value: IContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

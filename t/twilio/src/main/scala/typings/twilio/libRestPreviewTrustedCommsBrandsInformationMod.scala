@@ -155,7 +155,8 @@ object libRestPreviewTrustedCommsBrandsInformationMod {
       __obj.asInstanceOf[BrandsInformationInstanceFetchOptions]
     }
     
-    extension [Self <: BrandsInformationInstanceFetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrandsInformationInstanceFetchOptions] (val x: Self) extends AnyVal {
       
       inline def setIfNoneMatch(value: String): Self = StObject.set(x, "ifNoneMatch", value.asInstanceOf[js.Any])
       
@@ -222,7 +223,8 @@ object libRestPreviewTrustedCommsBrandsInformationMod {
       __obj.asInstanceOf[BrandsInformationResource]
     }
     
-    extension [Self <: BrandsInformationResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrandsInformationResource] (val x: Self) extends AnyVal {
       
       inline def setFile_link(value: String): Self = StObject.set(x, "file_link", value.asInstanceOf[js.Any])
       

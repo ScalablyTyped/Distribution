@@ -71,7 +71,8 @@ object distComponentsTypesBooleanMod {
       __obj.asInstanceOf[BooleanTypeProps]
     }
     
-    extension [Self <: BooleanTypeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BooleanTypeProps] (val x: Self) extends AnyVal {
       
       inline def setKnob(value: BooleanTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     }

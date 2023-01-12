@@ -23,7 +23,8 @@ object Private {
     __obj.asInstanceOf[Private]
   }
   
-  extension [Self <: Private](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Private] (val x: Self) extends AnyVal {
     
     inline def setPrivate(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

@@ -516,7 +516,8 @@ object inplaceInplaceMod {
       __obj.asInstanceOf[InplaceProps]
     }
     
-    extension [Self <: InplaceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InplaceProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1271,7 +1272,8 @@ object inplaceInplaceMod {
       __obj.asInstanceOf[InplaceToggleParams]
     }
     
-    extension [Self <: InplaceToggleParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InplaceToggleParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       

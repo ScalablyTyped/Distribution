@@ -87,7 +87,8 @@ object libInteractionActionComponentListStateMod {
       __obj.asInstanceOf[ListStateCfg]
     }
     
-    extension [Self <: ListStateCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListStateCfg] (val x: Self) extends AnyVal {
       
       inline def setComponentNames(value: js.Array[String]): Self = StObject.set(x, "componentNames", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object BatchWriteSpansRequest {
     __obj.asInstanceOf[BatchWriteSpansRequest]
   }
   
-  extension [Self <: BatchWriteSpansRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchWriteSpansRequest] (val x: Self) extends AnyVal {
     
     inline def setSpans(value: js.Array[Span]): Self = StObject.set(x, "spans", value.asInstanceOf[js.Any])
     

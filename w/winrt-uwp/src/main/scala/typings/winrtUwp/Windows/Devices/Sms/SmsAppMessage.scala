@@ -84,7 +84,8 @@ object SmsAppMessage {
     __obj.asInstanceOf[SmsAppMessage]
   }
   
-  extension [Self <: SmsAppMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmsAppMessage] (val x: Self) extends AnyVal {
     
     inline def setBinaryBody(value: IBuffer): Self = StObject.set(x, "binaryBody", value.asInstanceOf[js.Any])
     

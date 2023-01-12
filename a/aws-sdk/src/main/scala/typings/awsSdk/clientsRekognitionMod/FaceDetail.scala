@@ -88,7 +88,8 @@ object FaceDetail {
     __obj.asInstanceOf[FaceDetail]
   }
   
-  extension [Self <: FaceDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaceDetail] (val x: Self) extends AnyVal {
     
     inline def setAgeRange(value: AgeRange): Self = StObject.set(x, "AgeRange", value.asInstanceOf[js.Any])
     

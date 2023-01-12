@@ -33,7 +33,8 @@ object ListConnectorEntitiesRequest {
     __obj.asInstanceOf[ListConnectorEntitiesRequest]
   }
   
-  extension [Self <: ListConnectorEntitiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListConnectorEntitiesRequest] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: ApiVersion_): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

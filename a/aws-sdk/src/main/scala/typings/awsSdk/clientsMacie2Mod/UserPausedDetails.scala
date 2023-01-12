@@ -28,7 +28,8 @@ object UserPausedDetails {
     __obj.asInstanceOf[UserPausedDetails]
   }
   
-  extension [Self <: UserPausedDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPausedDetails] (val x: Self) extends AnyVal {
     
     inline def setJobExpiresAt(value: js.Date): Self = StObject.set(x, "jobExpiresAt", value.asInstanceOf[js.Any])
     

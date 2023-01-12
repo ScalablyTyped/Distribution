@@ -25,7 +25,8 @@ object distTypesMod {
       __obj.asInstanceOf[AbortSignal]
     }
     
-    extension [Self <: AbortSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbortSignal] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(value: (String, js.Function1[/* repeated */ Any, Any]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       

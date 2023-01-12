@@ -405,7 +405,8 @@ object sapMFeedListItemActionMod {
       __obj.asInstanceOf[FeedListItemActionSettings]
     }
     
-    extension [Self <: FeedListItemActionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedListItemActionSettings] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

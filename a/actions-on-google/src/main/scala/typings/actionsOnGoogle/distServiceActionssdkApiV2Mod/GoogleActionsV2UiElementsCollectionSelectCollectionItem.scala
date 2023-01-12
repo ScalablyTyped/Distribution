@@ -38,7 +38,8 @@ object GoogleActionsV2UiElementsCollectionSelectCollectionItem {
     __obj.asInstanceOf[GoogleActionsV2UiElementsCollectionSelectCollectionItem]
   }
   
-  extension [Self <: GoogleActionsV2UiElementsCollectionSelectCollectionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2UiElementsCollectionSelectCollectionItem] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

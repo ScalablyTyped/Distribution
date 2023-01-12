@@ -23,7 +23,8 @@ object RemoveFlowVpcInterfaceRequest {
     __obj.asInstanceOf[RemoveFlowVpcInterfaceRequest]
   }
   
-  extension [Self <: RemoveFlowVpcInterfaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveFlowVpcInterfaceRequest] (val x: Self) extends AnyVal {
     
     inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     

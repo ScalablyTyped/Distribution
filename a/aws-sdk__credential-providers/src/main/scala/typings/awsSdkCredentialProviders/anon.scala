@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[OmitAssumeRoleCommandInpu]
     }
     
-    extension [Self <: OmitAssumeRoleCommandInpu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitAssumeRoleCommandInpu] (val x: Self) extends AnyVal {
       
       inline def setDurationSeconds(value: Double): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
       

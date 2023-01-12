@@ -15,7 +15,8 @@ object CreateFolderDataRelationships {
     __obj.asInstanceOf[CreateFolderDataRelationships]
   }
   
-  extension [Self <: CreateFolderDataRelationships](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFolderDataRelationships] (val x: Self) extends AnyVal {
     
     inline def setParent(value: CreateFolderDataRelationshipsParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
   }

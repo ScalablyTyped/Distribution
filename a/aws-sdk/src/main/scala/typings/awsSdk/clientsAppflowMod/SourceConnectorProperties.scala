@@ -87,7 +87,8 @@ object SourceConnectorProperties {
     __obj.asInstanceOf[SourceConnectorProperties]
   }
   
-  extension [Self <: SourceConnectorProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceConnectorProperties] (val x: Self) extends AnyVal {
     
     inline def setAmplitude(value: AmplitudeSourceProperties): Self = StObject.set(x, "Amplitude", value.asInstanceOf[js.Any])
     

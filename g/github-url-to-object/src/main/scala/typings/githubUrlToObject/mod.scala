@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setEnterprise(value: Boolean): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setApi_url(value: String): Self = StObject.set(x, "api_url", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DatastoreStatistics {
     __obj.asInstanceOf[DatastoreStatistics]
   }
   
-  extension [Self <: DatastoreStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatastoreStatistics] (val x: Self) extends AnyVal {
     
     inline def setSize(value: EstimatedResourceSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Ontology {
     __obj.asInstanceOf[Ontology]
   }
   
-  extension [Self <: Ontology](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ontology] (val x: Self) extends AnyVal {
     
     inline def setCollections(value: Any): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     

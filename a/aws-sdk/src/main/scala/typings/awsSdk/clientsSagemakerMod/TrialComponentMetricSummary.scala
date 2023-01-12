@@ -58,7 +58,8 @@ object TrialComponentMetricSummary {
     __obj.asInstanceOf[TrialComponentMetricSummary]
   }
   
-  extension [Self <: TrialComponentMetricSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrialComponentMetricSummary] (val x: Self) extends AnyVal {
     
     inline def setAvg(value: OptionalDouble): Self = StObject.set(x, "Avg", value.asInstanceOf[js.Any])
     

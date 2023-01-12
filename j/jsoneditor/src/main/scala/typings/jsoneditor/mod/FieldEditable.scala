@@ -17,7 +17,8 @@ object FieldEditable {
     __obj.asInstanceOf[FieldEditable]
   }
   
-  extension [Self <: FieldEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldEditable] (val x: Self) extends AnyVal {
     
     inline def setField(value: Boolean): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

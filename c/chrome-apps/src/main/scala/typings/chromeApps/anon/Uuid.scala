@@ -18,7 +18,8 @@ object Uuid {
     __obj.asInstanceOf[Uuid]
   }
   
-  extension [Self <: Uuid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Uuid] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[integer]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ValueQuery {
     __obj.asInstanceOf[ValueQuery]
   }
   
-  extension [Self <: ValueQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueQuery] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

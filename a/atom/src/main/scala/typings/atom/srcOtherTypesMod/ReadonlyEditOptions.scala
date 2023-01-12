@@ -16,7 +16,8 @@ object ReadonlyEditOptions {
     __obj.asInstanceOf[ReadonlyEditOptions]
   }
   
-  extension [Self <: ReadonlyEditOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyEditOptions] (val x: Self) extends AnyVal {
     
     inline def setBypassReadOnly(value: Boolean): Self = StObject.set(x, "bypassReadOnly", value.asInstanceOf[js.Any])
     

@@ -203,7 +203,8 @@ object libMachineLearningMachineLearningMod {
       __obj.asInstanceOf[ListModelsResult]
     }
     
-    extension [Self <: ListModelsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListModelsResult] (val x: Self) extends AnyVal {
       
       inline def setModels(value: js.Array[Model]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
       
@@ -236,7 +237,8 @@ object libMachineLearningMachineLearningMod {
       __obj.asInstanceOf[TFLiteModel]
     }
     
-    extension [Self <: TFLiteModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TFLiteModel] (val x: Self) extends AnyVal {
       
       inline def setAutomlModel(value: String): Self = StObject.set(x, "automlModel", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object PositionBaseMixins {
     __obj.asInstanceOf[PositionBaseMixins]
   }
   
-  extension [Self <: PositionBaseMixins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionBaseMixins] (val x: Self) extends AnyVal {
     
     inline def setStack(value: StackOffset | Boolean): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     

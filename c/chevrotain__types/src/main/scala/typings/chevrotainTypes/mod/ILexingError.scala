@@ -23,7 +23,8 @@ object ILexingError {
     __obj.asInstanceOf[ILexingError]
   }
   
-  extension [Self <: ILexingError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILexingError] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

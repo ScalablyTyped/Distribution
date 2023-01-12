@@ -152,7 +152,8 @@ object RecipientViewRequest {
     __obj.asInstanceOf[RecipientViewRequest]
   }
   
-  extension [Self <: RecipientViewRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientViewRequest] (val x: Self) extends AnyVal {
     
     inline def setAssertionId(value: String): Self = StObject.set(x, "assertionId", value.asInstanceOf[js.Any])
     

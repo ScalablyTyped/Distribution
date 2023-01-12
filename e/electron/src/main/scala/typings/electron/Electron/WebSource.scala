@@ -18,7 +18,8 @@ object WebSource {
     __obj.asInstanceOf[WebSource]
   }
   
-  extension [Self <: WebSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSource] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object BatchModifyClusterSnapshotsOutputMessage {
     __obj.asInstanceOf[BatchModifyClusterSnapshotsOutputMessage]
   }
   
-  extension [Self <: BatchModifyClusterSnapshotsOutputMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchModifyClusterSnapshotsOutputMessage] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: BatchSnapshotOperationErrors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     

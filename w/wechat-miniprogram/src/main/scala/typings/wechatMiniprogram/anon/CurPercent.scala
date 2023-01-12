@@ -15,7 +15,8 @@ object CurPercent {
     __obj.asInstanceOf[CurPercent]
   }
   
-  extension [Self <: CurPercent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurPercent] (val x: Self) extends AnyVal {
     
     inline def setCurPercent(value: Double): Self = StObject.set(x, "curPercent", value.asInstanceOf[js.Any])
   }

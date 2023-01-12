@@ -23,7 +23,8 @@ object editAsstringundefinedhypeEditAs {
     __obj.asInstanceOf[editAsstringundefinedhypeEditAs]
   }
   
-  extension [Self <: editAsstringundefinedhypeEditAs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: editAsstringundefinedhypeEditAs] (val x: Self) extends AnyVal {
     
     inline def setEditAs(value: String): Self = StObject.set(x, "editAs", value.asInstanceOf[js.Any])
     

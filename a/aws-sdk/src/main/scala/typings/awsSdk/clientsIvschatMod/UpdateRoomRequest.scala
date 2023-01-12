@@ -38,7 +38,8 @@ object UpdateRoomRequest {
     __obj.asInstanceOf[UpdateRoomRequest]
   }
   
-  extension [Self <: UpdateRoomRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRoomRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: RoomIdentifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

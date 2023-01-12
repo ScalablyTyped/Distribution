@@ -396,7 +396,8 @@ object libInterpreterMod {
       __obj.asInstanceOf[Clock]
     }
     
-    extension [Self <: Clock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clock] (val x: Self) extends AnyVal {
       
       inline def setClearTimeout(value: Any => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
       
@@ -425,7 +426,8 @@ object libInterpreterMod {
       __obj.asInstanceOf[SpawnOptions]
     }
     
-    extension [Self <: SpawnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpawnOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoForward(value: Boolean): Self = StObject.set(x, "autoForward", value.asInstanceOf[js.Any])
       

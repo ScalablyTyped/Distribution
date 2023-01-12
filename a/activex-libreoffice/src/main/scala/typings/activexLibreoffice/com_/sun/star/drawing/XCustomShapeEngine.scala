@@ -52,7 +52,8 @@ object XCustomShapeEngine {
     __obj.asInstanceOf[XCustomShapeEngine]
   }
   
-  extension [Self <: XCustomShapeEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCustomShapeEngine] (val x: Self) extends AnyVal {
     
     inline def setGetInteraction(value: () => SafeArray[XCustomShapeHandle]): Self = StObject.set(x, "getInteraction", js.Any.fromFunction0(value))
     

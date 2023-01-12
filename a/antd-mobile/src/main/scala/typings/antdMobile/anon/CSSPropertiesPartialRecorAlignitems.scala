@@ -9993,7 +9993,8 @@ object CSSPropertiesPartialRecorAlignitems {
     __obj.asInstanceOf[CSSPropertiesPartialRecorAlignitems]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorAlignitems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorAlignitems] (val x: Self) extends AnyVal {
     
     inline def `set--active-background-color`(value: String): Self = StObject.set(x, "--active-background-color", value.asInstanceOf[js.Any])
     

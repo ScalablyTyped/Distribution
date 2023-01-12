@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[RandExp_]
     }
     
-    extension [Self <: RandExp_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandExp_] (val x: Self) extends AnyVal {
       
       inline def setDefaultRange(value: typings.drange.mod.^): Self = StObject.set(x, "defaultRange", value.asInstanceOf[js.Any])
       

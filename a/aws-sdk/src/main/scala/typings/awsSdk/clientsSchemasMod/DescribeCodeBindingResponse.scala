@@ -33,7 +33,8 @@ object DescribeCodeBindingResponse {
     __obj.asInstanceOf[DescribeCodeBindingResponse]
   }
   
-  extension [Self <: DescribeCodeBindingResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCodeBindingResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

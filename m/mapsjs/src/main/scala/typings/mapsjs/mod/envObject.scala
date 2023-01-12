@@ -33,7 +33,8 @@ object envObject {
     __obj.asInstanceOf[envObject]
   }
   
-  extension [Self <: envObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: envObject] (val x: Self) extends AnyVal {
     
     inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
     

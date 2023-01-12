@@ -31,7 +31,8 @@ object EducationStudent {
     __obj.asInstanceOf[EducationStudent]
   }
   
-  extension [Self <: EducationStudent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationStudent] (val x: Self) extends AnyVal {
     
     inline def setBirthDate(value: NullableOption[String]): Self = StObject.set(x, "birthDate", value.asInstanceOf[js.Any])
     

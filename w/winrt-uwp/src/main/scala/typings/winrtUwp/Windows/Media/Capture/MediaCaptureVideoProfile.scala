@@ -43,7 +43,8 @@ object MediaCaptureVideoProfile {
     __obj.asInstanceOf[MediaCaptureVideoProfile]
   }
   
-  extension [Self <: MediaCaptureVideoProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaCaptureVideoProfile] (val x: Self) extends AnyVal {
     
     inline def setGetConcurrency(value: () => IVectorView[MediaCaptureVideoProfile]): Self = StObject.set(x, "getConcurrency", js.Any.fromFunction0(value))
     

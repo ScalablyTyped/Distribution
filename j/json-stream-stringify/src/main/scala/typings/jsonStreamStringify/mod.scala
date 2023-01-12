@@ -151,7 +151,8 @@ object mod {
       __obj.asInstanceOf[IStackItem]
     }
     
-    extension [Self <: IStackItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStackItem] (val x: Self) extends AnyVal {
       
       inline def setAddSeparatorAfterEnd(value: Boolean): Self = StObject.set(x, "addSeparatorAfterEnd", value.asInstanceOf[js.Any])
       

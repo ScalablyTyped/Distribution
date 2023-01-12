@@ -18,7 +18,8 @@ object ReplicaConfigurationRequest {
     __obj.asInstanceOf[ReplicaConfigurationRequest]
   }
   
-  extension [Self <: ReplicaConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicaConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setReplicaCount(value: Integer): Self = StObject.set(x, "ReplicaCount", value.asInstanceOf[js.Any])
     

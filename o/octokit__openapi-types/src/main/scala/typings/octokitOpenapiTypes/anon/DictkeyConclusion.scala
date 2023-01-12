@@ -22,7 +22,8 @@ object DictkeyConclusion {
     __obj.asInstanceOf[DictkeyConclusion]
   }
   
-  extension [Self <: DictkeyConclusion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictkeyConclusion] (val x: Self) extends AnyVal {
     
     inline def setConclusion(value: Any): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
     

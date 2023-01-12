@@ -58,7 +58,8 @@ object AwsEcsTaskDetails {
     __obj.asInstanceOf[AwsEcsTaskDetails]
   }
   
-  extension [Self <: AwsEcsTaskDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDetails] (val x: Self) extends AnyVal {
     
     inline def setClusterArn(value: NonEmptyString): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     

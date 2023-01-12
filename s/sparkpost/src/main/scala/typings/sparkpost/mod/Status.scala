@@ -51,7 +51,8 @@ object Status {
     __obj.asInstanceOf[Status]
   }
   
-  extension [Self <: Status](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
     
     inline def setAbuse_at_status(value: valid | invalid | unverified | pending): Self = StObject.set(x, "abuse_at_status", value.asInstanceOf[js.Any])
     

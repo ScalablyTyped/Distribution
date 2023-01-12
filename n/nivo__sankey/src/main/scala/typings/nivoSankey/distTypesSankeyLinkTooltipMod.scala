@@ -27,7 +27,8 @@ object distTypesSankeyLinkTooltipMod {
       __obj.asInstanceOf[SankeyLinkTooltipProps[N, L]]
     }
     
-    extension [Self <: SankeyLinkTooltipProps[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */](x: Self & (SankeyLinkTooltipProps[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyLinkTooltipProps[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */] (val x: Self & (SankeyLinkTooltipProps[N, L])) extends AnyVal {
       
       inline def setLink(value: SankeyLinkDatum[N, L]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     }

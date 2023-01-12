@@ -22,7 +22,8 @@ object NodeGroupAutoscalingPolicy {
     __obj.asInstanceOf[NodeGroupAutoscalingPolicy]
   }
   
-  extension [Self <: NodeGroupAutoscalingPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeGroupAutoscalingPolicy] (val x: Self) extends AnyVal {
     
     inline def setMaxNodes(value: Double): Self = StObject.set(x, "maxNodes", value.asInstanceOf[js.Any])
     

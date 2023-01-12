@@ -23,7 +23,8 @@ object DeleteAssessmentFrameworkShareRequest {
     __obj.asInstanceOf[DeleteAssessmentFrameworkShareRequest]
   }
   
-  extension [Self <: DeleteAssessmentFrameworkShareRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAssessmentFrameworkShareRequest] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: UUID): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     

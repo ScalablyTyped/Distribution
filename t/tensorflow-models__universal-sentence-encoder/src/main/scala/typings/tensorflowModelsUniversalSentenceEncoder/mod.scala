@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[LoadConfig]
     }
     
-    extension [Self <: LoadConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadConfig] (val x: Self) extends AnyVal {
       
       inline def setModelUrl(value: String): Self = StObject.set(x, "modelUrl", value.asInstanceOf[js.Any])
       

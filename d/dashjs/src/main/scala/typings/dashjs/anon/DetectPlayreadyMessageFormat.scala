@@ -19,7 +19,8 @@ object DetectPlayreadyMessageFormat {
     __obj.asInstanceOf[DetectPlayreadyMessageFormat]
   }
   
-  extension [Self <: DetectPlayreadyMessageFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectPlayreadyMessageFormat] (val x: Self) extends AnyVal {
     
     inline def setDetectPlayreadyMessageFormat(value: Boolean): Self = StObject.set(x, "detectPlayreadyMessageFormat", value.asInstanceOf[js.Any])
     

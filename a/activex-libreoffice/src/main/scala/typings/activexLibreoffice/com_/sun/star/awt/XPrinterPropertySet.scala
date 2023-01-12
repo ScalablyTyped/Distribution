@@ -78,7 +78,8 @@ object XPrinterPropertySet {
     __obj.asInstanceOf[XPrinterPropertySet]
   }
   
-  extension [Self <: XPrinterPropertySet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPrinterPropertySet] (val x: Self) extends AnyVal {
     
     inline def setBinarySetup(value: SafeArray[Double]): Self = StObject.set(x, "BinarySetup", value.asInstanceOf[js.Any])
     

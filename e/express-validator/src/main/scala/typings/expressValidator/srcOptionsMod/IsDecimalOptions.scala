@@ -21,7 +21,8 @@ object IsDecimalOptions {
     __obj.asInstanceOf[IsDecimalOptions]
   }
   
-  extension [Self <: IsDecimalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsDecimalOptions] (val x: Self) extends AnyVal {
     
     inline def setBlacklisted_chars(value: String): Self = StObject.set(x, "blacklisted_chars", value.asInstanceOf[js.Any])
     

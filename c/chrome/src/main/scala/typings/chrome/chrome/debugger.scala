@@ -33,7 +33,8 @@ object debugger {
       __obj.asInstanceOf[Debuggee]
     }
     
-    extension [Self <: Debuggee](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Debuggee] (val x: Self) extends AnyVal {
       
       inline def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object debugger {
       __obj.asInstanceOf[TargetInfo]
     }
     
-    extension [Self <: TargetInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetInfo] (val x: Self) extends AnyVal {
       
       inline def setAttached(value: Boolean): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       

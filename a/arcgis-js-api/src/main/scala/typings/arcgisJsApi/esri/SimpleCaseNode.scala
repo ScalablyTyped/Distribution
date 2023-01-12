@@ -44,7 +44,8 @@ object SimpleCaseNode {
     __obj.asInstanceOf[SimpleCaseNode]
   }
   
-  extension [Self <: SimpleCaseNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleCaseNode] (val x: Self) extends AnyVal {
     
     inline def setClauses(value: js.Array[WhenNode]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
     

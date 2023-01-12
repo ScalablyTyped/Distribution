@@ -17,7 +17,8 @@ object SettingsPaneCommandsRequestedEventArgs {
     __obj.asInstanceOf[SettingsPaneCommandsRequestedEventArgs]
   }
   
-  extension [Self <: SettingsPaneCommandsRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettingsPaneCommandsRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: SettingsPaneCommandsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }

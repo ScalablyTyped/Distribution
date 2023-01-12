@@ -43,7 +43,8 @@ object CsvFormatDescriptor {
     __obj.asInstanceOf[CsvFormatDescriptor]
   }
   
-  extension [Self <: CsvFormatDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CsvFormatDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCharset(value: Charset): Self = StObject.set(x, "Charset", value.asInstanceOf[js.Any])
     

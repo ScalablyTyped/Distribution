@@ -28,7 +28,8 @@ object UpdateRoutingProfileConcurrencyRequest {
     __obj.asInstanceOf[UpdateRoutingProfileConcurrencyRequest]
   }
   
-  extension [Self <: UpdateRoutingProfileConcurrencyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRoutingProfileConcurrencyRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object AppointmentEndDate {
     __obj.asInstanceOf[AppointmentEndDate]
   }
   
-  extension [Self <: AppointmentEndDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentEndDate] (val x: Self) extends AnyVal {
     
     inline def setAppointment(value: default): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
     

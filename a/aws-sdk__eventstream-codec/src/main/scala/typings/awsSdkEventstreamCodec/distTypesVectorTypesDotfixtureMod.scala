@@ -25,7 +25,8 @@ object distTypesVectorTypesDotfixtureMod {
       __obj.asInstanceOf[NegativeTestVector]
     }
     
-    extension [Self <: NegativeTestVector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NegativeTestVector] (val x: Self) extends AnyVal {
       
       inline def setEncoded(value: js.typedarray.Uint8Array): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object distTypesVectorTypesDotfixtureMod {
       __obj.asInstanceOf[PositiveTestVector]
     }
     
-    extension [Self <: PositiveTestVector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositiveTestVector] (val x: Self) extends AnyVal {
       
       inline def setDecoded(value: Message): Self = StObject.set(x, "decoded", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object HTMLPerformance {
     __obj.asInstanceOf[HTMLPerformance]
   }
   
-  extension [Self <: HTMLPerformance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLPerformance] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotHTMLPerformance_typekey(value: HTMLPerformance): Self = StObject.set(x, "MSHTML.HTMLPerformance_typekey", value.asInstanceOf[js.Any])
     

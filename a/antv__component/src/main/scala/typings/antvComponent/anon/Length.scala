@@ -19,7 +19,8 @@ object Length {
     __obj.asInstanceOf[Length]
   }
   
-  extension [Self <: Length](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

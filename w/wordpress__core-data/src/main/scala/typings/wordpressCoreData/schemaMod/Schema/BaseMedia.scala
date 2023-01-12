@@ -101,7 +101,8 @@ object BaseMedia {
     __obj.asInstanceOf[BaseMedia[T]]
   }
   
-  extension [Self <: BaseMedia[?], T /* <: Context */](x: Self & BaseMedia[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseMedia[?], T /* <: Context */] (val x: Self & BaseMedia[T]) extends AnyVal {
     
     inline def setAlt_text(value: String): Self = StObject.set(x, "alt_text", value.asInstanceOf[js.Any])
     

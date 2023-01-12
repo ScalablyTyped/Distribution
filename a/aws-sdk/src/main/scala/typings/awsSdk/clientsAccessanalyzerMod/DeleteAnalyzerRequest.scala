@@ -23,7 +23,8 @@ object DeleteAnalyzerRequest {
     __obj.asInstanceOf[DeleteAnalyzerRequest]
   }
   
-  extension [Self <: DeleteAnalyzerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAnalyzerRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalyzerName(value: Name): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
     

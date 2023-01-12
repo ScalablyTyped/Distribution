@@ -19,7 +19,8 @@ object ClusterRerouteRerouteDecision {
     __obj.asInstanceOf[ClusterRerouteRerouteDecision]
   }
   
-  extension [Self <: ClusterRerouteRerouteDecision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterRerouteRerouteDecision] (val x: Self) extends AnyVal {
     
     inline def setDecider(value: String): Self = StObject.set(x, "decider", value.asInstanceOf[js.Any])
     

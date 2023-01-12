@@ -57,7 +57,8 @@ object distMethodsCollectionsTypesMod {
       __obj.asInstanceOf[Basic]
     }
     
-    extension [Self <: Basic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Basic] (val x: Self) extends AnyVal {
       
       inline def setCover_photo(value: Nullable[typings.unsplashJs.distMethodsPhotosTypesMod.Basic]): Self = StObject.set(x, "cover_photo", value.asInstanceOf[js.Any])
       

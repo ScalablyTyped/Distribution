@@ -25,7 +25,8 @@ object ClinicalUseDefinitionContraindicationOtherTherapy {
     __obj.asInstanceOf[ClinicalUseDefinitionContraindicationOtherTherapy]
   }
   
-  extension [Self <: ClinicalUseDefinitionContraindicationOtherTherapy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClinicalUseDefinitionContraindicationOtherTherapy] (val x: Self) extends AnyVal {
     
     inline def setRelationshipType(value: CodeableConcept): Self = StObject.set(x, "relationshipType", value.asInstanceOf[js.Any])
     

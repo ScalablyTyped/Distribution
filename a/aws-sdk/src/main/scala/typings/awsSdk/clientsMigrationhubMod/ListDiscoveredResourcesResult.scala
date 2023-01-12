@@ -23,7 +23,8 @@ object ListDiscoveredResourcesResult {
     __obj.asInstanceOf[ListDiscoveredResourcesResult]
   }
   
-  extension [Self <: ListDiscoveredResourcesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDiscoveredResourcesResult] (val x: Self) extends AnyVal {
     
     inline def setDiscoveredResourceList(value: DiscoveredResourceList): Self = StObject.set(x, "DiscoveredResourceList", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object OverlayImageOptions {
     __obj.asInstanceOf[OverlayImageOptions]
   }
   
-  extension [Self <: OverlayImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverlayImageOptions] (val x: Self) extends AnyVal {
     
     inline def setAnsi(value: Boolean): Self = StObject.set(x, "ansi", value.asInstanceOf[js.Any])
     

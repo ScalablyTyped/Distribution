@@ -22,7 +22,8 @@ object RequestOptions {
     __obj.asInstanceOf[RequestOptions]
   }
   
-  extension [Self <: RequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
     
     inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object RegisterSchemaVersionResponse {
     __obj.asInstanceOf[RegisterSchemaVersionResponse]
   }
   
-  extension [Self <: RegisterSchemaVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterSchemaVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setSchemaVersionId(value: SchemaVersionIdString): Self = StObject.set(x, "SchemaVersionId", value.asInstanceOf[js.Any])
     

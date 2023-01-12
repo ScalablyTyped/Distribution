@@ -43,7 +43,8 @@ object OMaths {
     __obj.asInstanceOf[OMaths]
   }
   
-  extension [Self <: OMaths](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OMaths] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Range => Range): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

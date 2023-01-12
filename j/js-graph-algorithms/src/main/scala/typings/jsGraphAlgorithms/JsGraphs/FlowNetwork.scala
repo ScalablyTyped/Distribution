@@ -35,7 +35,8 @@ object FlowNetwork {
     __obj.asInstanceOf[FlowNetwork]
   }
   
-  extension [Self <: FlowNetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowNetwork] (val x: Self) extends AnyVal {
     
     inline def setAddEdge(value: FlowEdge => Unit): Self = StObject.set(x, "addEdge", js.Any.fromFunction1(value))
     

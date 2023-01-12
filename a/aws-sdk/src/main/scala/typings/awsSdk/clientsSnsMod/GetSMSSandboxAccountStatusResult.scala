@@ -18,7 +18,8 @@ object GetSMSSandboxAccountStatusResult {
     __obj.asInstanceOf[GetSMSSandboxAccountStatusResult]
   }
   
-  extension [Self <: GetSMSSandboxAccountStatusResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSMSSandboxAccountStatusResult] (val x: Self) extends AnyVal {
     
     inline def setIsInSandbox(value: Boolean): Self = StObject.set(x, "IsInSandbox", value.asInstanceOf[js.Any])
   }

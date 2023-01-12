@@ -20,7 +20,8 @@ object PartialMUIDataTableTextLaAll {
     __obj.asInstanceOf[PartialMUIDataTableTextLaAll]
   }
   
-  extension [Self <: PartialMUIDataTableTextLaAll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMUIDataTableTextLaAll] (val x: Self) extends AnyVal {
     
     inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

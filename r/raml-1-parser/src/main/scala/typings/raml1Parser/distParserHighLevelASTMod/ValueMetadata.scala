@@ -46,7 +46,8 @@ object ValueMetadata {
     __obj.asInstanceOf[ValueMetadata]
   }
   
-  extension [Self <: ValueMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueMetadata] (val x: Self) extends AnyVal {
     
     inline def setCalculated(value: () => Boolean): Self = StObject.set(x, "calculated", js.Any.fromFunction0(value))
     

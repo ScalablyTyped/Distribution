@@ -48,7 +48,8 @@ object ElevationProfileSample {
     __obj.asInstanceOf[ElevationProfileSample]
   }
   
-  extension [Self <: ElevationProfileSample](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElevationProfileSample] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

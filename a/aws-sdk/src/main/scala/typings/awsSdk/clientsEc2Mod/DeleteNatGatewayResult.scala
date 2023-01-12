@@ -18,7 +18,8 @@ object DeleteNatGatewayResult {
     __obj.asInstanceOf[DeleteNatGatewayResult]
   }
   
-  extension [Self <: DeleteNatGatewayResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteNatGatewayResult] (val x: Self) extends AnyVal {
     
     inline def setNatGatewayId(value: String): Self = StObject.set(x, "NatGatewayId", value.asInstanceOf[js.Any])
     

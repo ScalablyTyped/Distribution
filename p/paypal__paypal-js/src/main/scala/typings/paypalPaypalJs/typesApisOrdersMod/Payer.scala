@@ -56,7 +56,8 @@ object Payer {
     __obj.asInstanceOf[Payer]
   }
   
-  extension [Self <: Payer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Payer] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

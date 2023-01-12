@@ -21,7 +21,8 @@ object VerificationAcmount {
     __obj.asInstanceOf[VerificationAcmount]
   }
   
-  extension [Self <: VerificationAcmount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerificationAcmount] (val x: Self) extends AnyVal {
     
     inline def setMakeDefault(value: Boolean): Self = StObject.set(x, "makeDefault", value.asInstanceOf[js.Any])
     

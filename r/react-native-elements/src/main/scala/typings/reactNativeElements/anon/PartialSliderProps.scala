@@ -69,7 +69,8 @@ object PartialSliderProps {
     __obj.asInstanceOf[PartialSliderProps]
   }
   
-  extension [Self <: PartialSliderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSliderProps] (val x: Self) extends AnyVal {
     
     inline def setAllowTouchTrack(value: Boolean): Self = StObject.set(x, "allowTouchTrack", value.asInstanceOf[js.Any])
     

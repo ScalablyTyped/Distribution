@@ -23,7 +23,8 @@ object SDKError {
     __obj.asInstanceOf[SDKError]
   }
   
-  extension [Self <: SDKError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDKError] (val x: Self) extends AnyVal {
     
     inline def setHttpStatusCode(value: Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
     

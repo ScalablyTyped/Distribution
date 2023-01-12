@@ -49,7 +49,8 @@ object ApplicationSummary {
     __obj.asInstanceOf[ApplicationSummary]
   }
   
-  extension [Self <: ApplicationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationSummary] (val x: Self) extends AnyVal {
     
     inline def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
     

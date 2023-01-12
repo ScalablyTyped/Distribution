@@ -46,7 +46,8 @@ object PayoutBatchItems {
     __obj.asInstanceOf[PayoutBatchItems]
   }
   
-  extension [Self <: PayoutBatchItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayoutBatchItems] (val x: Self) extends AnyVal {
     
     inline def setActivity_id(value: String): Self = StObject.set(x, "activity_id", value.asInstanceOf[js.Any])
     

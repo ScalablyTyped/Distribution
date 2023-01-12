@@ -28,7 +28,8 @@ object DescribeSecurityConfigurationOutput {
     __obj.asInstanceOf[DescribeSecurityConfigurationOutput]
   }
   
-  extension [Self <: DescribeSecurityConfigurationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSecurityConfigurationOutput] (val x: Self) extends AnyVal {
     
     inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     

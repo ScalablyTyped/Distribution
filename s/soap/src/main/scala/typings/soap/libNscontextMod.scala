@@ -89,7 +89,8 @@ object libNscontextMod {
       __obj.asInstanceOf[INamespace]
     }
     
-    extension [Self <: INamespace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INamespace] (val x: Self) extends AnyVal {
       
       inline def setDeclared(value: Boolean): Self = StObject.set(x, "declared", value.asInstanceOf[js.Any])
       

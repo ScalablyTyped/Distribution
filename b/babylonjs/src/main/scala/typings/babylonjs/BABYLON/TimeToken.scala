@@ -22,7 +22,8 @@ object TimeToken {
     __obj.asInstanceOf[TimeToken]
   }
   
-  extension [Self <: TimeToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeToken] (val x: Self) extends AnyVal {
     
     inline def set_endTimeQuery(value: Nullable[WebGLQuery]): Self = StObject.set(x, "_endTimeQuery", value.asInstanceOf[js.Any])
     

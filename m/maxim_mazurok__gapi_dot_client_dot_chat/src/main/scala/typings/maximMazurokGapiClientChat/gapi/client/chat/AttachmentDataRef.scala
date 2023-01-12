@@ -16,7 +16,8 @@ object AttachmentDataRef {
     __obj.asInstanceOf[AttachmentDataRef]
   }
   
-  extension [Self <: AttachmentDataRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentDataRef] (val x: Self) extends AnyVal {
     
     inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     

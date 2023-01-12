@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCompiler(value: Compiler | MultiCompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object mod {
         __obj.asInstanceOf[typings.koaWebpack.mod.koaAugmentingMod.DefaultState]
       }
       
-      extension [Self <: typings.koaWebpack.mod.koaAugmentingMod.DefaultState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.koaWebpack.mod.koaAugmentingMod.DefaultState] (val x: Self) extends AnyVal {
         
         inline def setFs(
           value: /* import warning: importer.ImportType#apply Failed type conversion: webpack-dev-middleware.webpack-dev-middleware.Options<node.http.IncomingMessage, webpack-dev-middleware.webpack-dev-middleware.ServerResponse>['fs'] */ js.Any

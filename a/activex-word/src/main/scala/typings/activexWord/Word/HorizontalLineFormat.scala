@@ -40,7 +40,8 @@ object HorizontalLineFormat {
     __obj.asInstanceOf[HorizontalLineFormat]
   }
   
-  extension [Self <: HorizontalLineFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HorizontalLineFormat] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: WdHorizontalLineAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     

@@ -154,7 +154,8 @@ object ojChartGroupEventMap {
     __obj.asInstanceOf[ojChartGroupEventMap]
   }
   
-  extension [Self <: ojChartGroupEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojChartGroupEventMap] (val x: Self) extends AnyVal {
     
     inline def setDrillingChanged(value: JetElementCustomEvent[js.UndefOr[on | off | inherit]]): Self = StObject.set(x, "drillingChanged", value.asInstanceOf[js.Any])
     

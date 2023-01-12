@@ -47,7 +47,8 @@ object typesTabsListMod {
       __obj.asInstanceOf[TabsListProps]
     }
     
-    extension [Self <: TabsListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsListProps] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       

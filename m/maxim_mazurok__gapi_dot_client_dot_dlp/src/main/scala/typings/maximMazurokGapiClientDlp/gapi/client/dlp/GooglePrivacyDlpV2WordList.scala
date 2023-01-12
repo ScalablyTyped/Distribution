@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2WordList {
     __obj.asInstanceOf[GooglePrivacyDlpV2WordList]
   }
   
-  extension [Self <: GooglePrivacyDlpV2WordList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2WordList] (val x: Self) extends AnyVal {
     
     inline def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     

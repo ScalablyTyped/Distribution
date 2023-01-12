@@ -19,7 +19,8 @@ object ToastContentProps {
     __obj.asInstanceOf[ToastContentProps[Data]]
   }
   
-  extension [Self <: ToastContentProps[?], Data](x: Self & ToastContentProps[Data]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToastContentProps[?], Data] (val x: Self & ToastContentProps[Data]) extends AnyVal {
     
     inline def setCloseToast(value: () => Unit): Self = StObject.set(x, "closeToast", js.Any.fromFunction0(value))
     

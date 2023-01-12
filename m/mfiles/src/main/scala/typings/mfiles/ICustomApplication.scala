@@ -51,7 +51,8 @@ object ICustomApplication {
     __obj.asInstanceOf[ICustomApplication]
   }
   
-  extension [Self <: ICustomApplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomApplication] (val x: Self) extends AnyVal {
     
     inline def setApplicationType(value: MFCustomApplicationType): Self = StObject.set(x, "ApplicationType", value.asInstanceOf[js.Any])
     

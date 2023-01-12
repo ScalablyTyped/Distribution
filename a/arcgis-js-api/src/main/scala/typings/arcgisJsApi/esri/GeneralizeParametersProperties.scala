@@ -40,7 +40,8 @@ object GeneralizeParametersProperties {
     __obj.asInstanceOf[GeneralizeParametersProperties]
   }
   
-  extension [Self <: GeneralizeParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneralizeParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setDeviationUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "deviationUnit", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object LobbyBypassSettings {
     __obj.asInstanceOf[LobbyBypassSettings]
   }
   
-  extension [Self <: LobbyBypassSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LobbyBypassSettings] (val x: Self) extends AnyVal {
     
     inline def setIsDialInBypassEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "isDialInBypassEnabled", value.asInstanceOf[js.Any])
     

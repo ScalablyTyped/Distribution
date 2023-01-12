@@ -29,7 +29,8 @@ object XLiteral {
     __obj.asInstanceOf[XLiteral]
   }
   
-  extension [Self <: XLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLiteral] (val x: Self) extends AnyVal {
     
     inline def setDatatype(value: XURI): Self = StObject.set(x, "Datatype", value.asInstanceOf[js.Any])
     

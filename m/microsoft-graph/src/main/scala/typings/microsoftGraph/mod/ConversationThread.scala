@@ -47,7 +47,8 @@ object ConversationThread {
     __obj.asInstanceOf[ConversationThread]
   }
   
-  extension [Self <: ConversationThread](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversationThread] (val x: Self) extends AnyVal {
     
     inline def setCcRecipients(value: js.Array[Recipient]): Self = StObject.set(x, "ccRecipients", value.asInstanceOf[js.Any])
     

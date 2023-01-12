@@ -28,7 +28,8 @@ object DeleteIAMPolicyAssignmentRequest {
     __obj.asInstanceOf[DeleteIAMPolicyAssignmentRequest]
   }
   
-  extension [Self <: DeleteIAMPolicyAssignmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIAMPolicyAssignmentRequest] (val x: Self) extends AnyVal {
     
     inline def setAssignmentName(value: IAMPolicyAssignmentName): Self = StObject.set(x, "AssignmentName", value.asInstanceOf[js.Any])
     

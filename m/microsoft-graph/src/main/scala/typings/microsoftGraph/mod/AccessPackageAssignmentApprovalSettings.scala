@@ -25,7 +25,8 @@ object AccessPackageAssignmentApprovalSettings {
     __obj.asInstanceOf[AccessPackageAssignmentApprovalSettings]
   }
   
-  extension [Self <: AccessPackageAssignmentApprovalSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessPackageAssignmentApprovalSettings] (val x: Self) extends AnyVal {
     
     inline def setIsApprovalRequiredForAdd(value: NullableOption[Boolean]): Self = StObject.set(x, "isApprovalRequiredForAdd", value.asInstanceOf[js.Any])
     

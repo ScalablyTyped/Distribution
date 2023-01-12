@@ -39,7 +39,8 @@ object ChangesReaderOptions {
     __obj.asInstanceOf[ChangesReaderOptions]
   }
   
-  extension [Self <: ChangesReaderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangesReaderOptions] (val x: Self) extends AnyVal {
     
     inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     

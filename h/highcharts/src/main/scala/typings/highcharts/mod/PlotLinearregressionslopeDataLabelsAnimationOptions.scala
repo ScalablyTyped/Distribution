@@ -20,7 +20,8 @@ object PlotLinearregressionslopeDataLabelsAnimationOptions {
     __obj.asInstanceOf[PlotLinearregressionslopeDataLabelsAnimationOptions]
   }
   
-  extension [Self <: PlotLinearregressionslopeDataLabelsAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotLinearregressionslopeDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     

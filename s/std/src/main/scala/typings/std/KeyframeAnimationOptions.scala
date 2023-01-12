@@ -18,7 +18,8 @@ object KeyframeAnimationOptions {
     __obj.asInstanceOf[KeyframeAnimationOptions]
   }
   
-  extension [Self <: KeyframeAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyframeAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

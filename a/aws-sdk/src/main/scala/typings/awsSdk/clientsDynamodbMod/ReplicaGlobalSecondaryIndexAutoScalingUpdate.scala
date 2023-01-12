@@ -20,7 +20,8 @@ object ReplicaGlobalSecondaryIndexAutoScalingUpdate {
     __obj.asInstanceOf[ReplicaGlobalSecondaryIndexAutoScalingUpdate]
   }
   
-  extension [Self <: ReplicaGlobalSecondaryIndexAutoScalingUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicaGlobalSecondaryIndexAutoScalingUpdate] (val x: Self) extends AnyVal {
     
     inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     

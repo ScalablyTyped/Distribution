@@ -20,7 +20,8 @@ object Hue {
     __obj.asInstanceOf[Hue]
   }
   
-  extension [Self <: Hue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hue] (val x: Self) extends AnyVal {
     
     inline def setHue(value: IUniform[Any]): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     

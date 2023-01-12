@@ -33,7 +33,8 @@ object UpdateEnvironmentRequest {
     __obj.asInstanceOf[UpdateEnvironmentRequest]
   }
   
-  extension [Self <: UpdateEnvironmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEnvironmentRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: EnvironmentDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

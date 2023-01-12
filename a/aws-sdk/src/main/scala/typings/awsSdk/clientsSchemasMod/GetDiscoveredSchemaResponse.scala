@@ -18,7 +18,8 @@ object GetDiscoveredSchemaResponse {
     __obj.asInstanceOf[GetDiscoveredSchemaResponse]
   }
   
-  extension [Self <: GetDiscoveredSchemaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDiscoveredSchemaResponse] (val x: Self) extends AnyVal {
     
     inline def setContent(value: string): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     

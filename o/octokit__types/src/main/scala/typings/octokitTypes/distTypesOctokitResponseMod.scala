@@ -34,7 +34,8 @@ object distTypesOctokitResponseMod {
       __obj.asInstanceOf[OctokitResponse[T, S]]
     }
     
-    extension [Self <: OctokitResponse[?, ?], T, S /* <: Double */](x: Self & (OctokitResponse[T, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OctokitResponse[?, ?], T, S /* <: Double */] (val x: Self & (OctokitResponse[T, S])) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object UnavailableTypeValueReference {
     __obj.asInstanceOf[UnavailableTypeValueReference]
   }
   
-  extension [Self <: UnavailableTypeValueReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnavailableTypeValueReference] (val x: Self) extends AnyVal {
     
     inline def setKind(value: `2`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

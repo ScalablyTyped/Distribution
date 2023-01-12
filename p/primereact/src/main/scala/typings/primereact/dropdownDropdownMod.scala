@@ -158,7 +158,8 @@ object dropdownDropdownMod {
       __obj.asInstanceOf[DropdownChangeParams]
     }
     
-    extension [Self <: DropdownChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object dropdownDropdownMod {
       __obj.asInstanceOf[DropdownChangeTargetOptions]
     }
     
-    extension [Self <: DropdownChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object dropdownDropdownMod {
       __obj.asInstanceOf[DropdownFilterOptions]
     }
     
-    extension [Self <: DropdownFilterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownFilterOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: /* event */ js.UndefOr[KeyboardEvent] => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -239,7 +242,8 @@ object dropdownDropdownMod {
       __obj.asInstanceOf[DropdownFilterParams]
     }
     
-    extension [Self <: DropdownFilterParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownFilterParams] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -767,7 +771,8 @@ object dropdownDropdownMod {
       __obj.asInstanceOf[DropdownProps]
     }
     
-    extension [Self <: DropdownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

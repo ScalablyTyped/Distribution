@@ -78,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object anon {
       __obj.asInstanceOf[Columns[Row]]
     }
     
-    extension [Self <: Columns[?], Row](x: Self & Columns[Row]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Columns[?], Row] (val x: Self & Columns[Row]) extends AnyVal {
       
       inline def setColumns(value: js.Array[/* keyof Row */ String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object anon {
       __obj.asInstanceOf[LOWER]
     }
     
-    extension [Self <: LOWER](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LOWER] (val x: Self) extends AnyVal {
       
       inline def setLOWER(value: typings.nodeSql2.mod.Column[Any, String] => typings.nodeSql2.mod.Column[Any, String]): Self = StObject.set(x, "LOWER", js.Any.fromFunction1(value))
     }

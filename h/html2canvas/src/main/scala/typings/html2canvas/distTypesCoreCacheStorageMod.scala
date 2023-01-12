@@ -76,7 +76,8 @@ object distTypesCoreCacheStorageMod {
       __obj.asInstanceOf[ResourceOptions]
     }
     
-    extension [Self <: ResourceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowTaint(value: Boolean): Self = StObject.set(x, "allowTaint", value.asInstanceOf[js.Any])
       

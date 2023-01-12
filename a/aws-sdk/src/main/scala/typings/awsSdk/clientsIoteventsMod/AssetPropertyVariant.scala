@@ -33,7 +33,8 @@ object AssetPropertyVariant {
     __obj.asInstanceOf[AssetPropertyVariant]
   }
   
-  extension [Self <: AssetPropertyVariant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetPropertyVariant] (val x: Self) extends AnyVal {
     
     inline def setBooleanValue(value: AssetPropertyBooleanValue): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     

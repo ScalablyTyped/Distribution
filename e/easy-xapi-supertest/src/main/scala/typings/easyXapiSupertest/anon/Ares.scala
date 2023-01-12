@@ -35,7 +35,8 @@ object Ares {
     __obj.asInstanceOf[Ares]
   }
   
-  extension [Self <: Ares](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ares] (val x: Self) extends AnyVal {
     
     inline def setAres(value: String): Self = StObject.set(x, "ares", value.asInstanceOf[js.Any])
     

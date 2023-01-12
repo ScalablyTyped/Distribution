@@ -67,7 +67,8 @@ object URL {
     __obj.asInstanceOf[URL]
   }
   
-  extension [Self <: URL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: URL] (val x: Self) extends AnyVal {
     
     inline def setHash(value: java.lang.String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

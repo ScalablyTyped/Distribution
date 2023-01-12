@@ -24,7 +24,8 @@ object GoogleActionsV2DevicesAndroidApp {
     __obj.asInstanceOf[GoogleActionsV2DevicesAndroidApp]
   }
   
-  extension [Self <: GoogleActionsV2DevicesAndroidApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2DevicesAndroidApp] (val x: Self) extends AnyVal {
     
     inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     

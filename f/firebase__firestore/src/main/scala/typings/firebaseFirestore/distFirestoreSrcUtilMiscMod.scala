@@ -41,7 +41,8 @@ object distFirestoreSrcUtilMiscMod {
       __obj.asInstanceOf[Equatable[T]]
     }
     
-    extension [Self <: Equatable[?], T](x: Self & Equatable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Equatable[?], T] (val x: Self & Equatable[T]) extends AnyVal {
       
       inline def setIsEqual(value: T => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     }
@@ -62,7 +63,8 @@ object distFirestoreSrcUtilMiscMod {
       __obj.asInstanceOf[Iterable[V]]
     }
     
-    extension [Self <: Iterable[?], V](x: Self & Iterable[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Iterable[?], V] (val x: Self & Iterable[V]) extends AnyVal {
       
       inline def setForEach(value: js.Function1[/* v */ V, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     }

@@ -31,7 +31,8 @@ object ASPxDesignerElementSerializationInfoWithBindings {
     __obj.asInstanceOf[ASPxDesignerElementSerializationInfoWithBindings]
   }
   
-  extension [Self <: ASPxDesignerElementSerializationInfoWithBindings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxDesignerElementSerializationInfoWithBindings] (val x: Self) extends AnyVal {
     
     inline def setBindingName(value: String): Self = StObject.set(x, "bindingName", value.asInstanceOf[js.Any])
   }

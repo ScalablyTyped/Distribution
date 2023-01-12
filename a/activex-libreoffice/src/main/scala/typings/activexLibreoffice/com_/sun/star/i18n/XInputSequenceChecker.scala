@@ -35,7 +35,8 @@ object XInputSequenceChecker {
     __obj.asInstanceOf[XInputSequenceChecker]
   }
   
-  extension [Self <: XInputSequenceChecker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInputSequenceChecker] (val x: Self) extends AnyVal {
     
     inline def setCheckInputSequence(value: (String, Double, String, Double) => Boolean): Self = StObject.set(x, "checkInputSequence", js.Any.fromFunction4(value))
   }

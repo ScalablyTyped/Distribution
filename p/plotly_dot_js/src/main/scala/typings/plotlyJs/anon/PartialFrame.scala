@@ -27,7 +27,8 @@ object PartialFrame {
     __obj.asInstanceOf[PartialFrame]
   }
   
-  extension [Self <: PartialFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFrame] (val x: Self) extends AnyVal {
     
     inline def setBaseframe(value: String): Self = StObject.set(x, "baseframe", value.asInstanceOf[js.Any])
     

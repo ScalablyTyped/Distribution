@@ -132,7 +132,8 @@ object distDocumentTextPathElementMod {
       __obj.asInstanceOf[ICachedPoint]
     }
     
-    extension [Self <: ICachedPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICachedPoint] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     }
@@ -155,7 +156,8 @@ object distDocumentTextPathElementMod {
       __obj.asInstanceOf[IGlyphInfo]
     }
     
-    extension [Self <: IGlyphInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGlyphInfo] (val x: Self) extends AnyVal {
       
       inline def setP0(value: ICachedPoint): Self = StObject.set(x, "p0", value.asInstanceOf[js.Any])
       
@@ -185,7 +187,8 @@ object distDocumentTextPathElementMod {
       __obj.asInstanceOf[IPathCommand]
     }
     
-    extension [Self <: IPathCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPathCommand] (val x: Self) extends AnyVal {
       
       inline def setPathLength(value: Double): Self = StObject.set(x, "pathLength", value.asInstanceOf[js.Any])
       
@@ -214,7 +217,8 @@ object distDocumentTextPathElementMod {
       __obj.asInstanceOf[IPoint]
     }
     
-    extension [Self <: IPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPoint] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

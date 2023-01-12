@@ -28,7 +28,8 @@ object IStringExpressionContainer {
     __obj.asInstanceOf[IStringExpressionContainer]
   }
   
-  extension [Self <: IStringExpressionContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStringExpressionContainer] (val x: Self) extends AnyVal {
     
     inline def setQStringExpression(value: String): Self = StObject.set(x, "qStringExpression", value.asInstanceOf[js.Any])
   }

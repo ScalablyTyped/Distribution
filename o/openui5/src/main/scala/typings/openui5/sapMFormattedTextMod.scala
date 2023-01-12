@@ -601,7 +601,8 @@ object sapMFormattedTextMod {
       __obj.asInstanceOf[FormattedTextSettings]
     }
     
-    extension [Self <: FormattedTextSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormattedTextSettings] (val x: Self) extends AnyVal {
       
       inline def setControls(
         value: js.Array[typings.openui5.sapMLinkMod.default] | typings.openui5.sapMLinkMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

@@ -75,7 +75,8 @@ object XSheetCellCursor {
     __obj.asInstanceOf[XSheetCellCursor]
   }
   
-  extension [Self <: XSheetCellCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetCellCursor] (val x: Self) extends AnyVal {
     
     inline def setCollapseToCurrentArray(value: () => Unit): Self = StObject.set(x, "collapseToCurrentArray", js.Any.fromFunction0(value))
     

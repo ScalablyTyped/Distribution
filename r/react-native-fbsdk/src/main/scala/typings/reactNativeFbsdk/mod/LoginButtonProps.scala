@@ -52,7 +52,8 @@ object LoginButtonProps {
     __obj.asInstanceOf[LoginButtonProps]
   }
   
-  extension [Self <: LoginButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoginButtonProps] (val x: Self) extends AnyVal {
     
     inline def setDefaultAudience(value: DefaultAudience): Self = StObject.set(x, "defaultAudience", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object ArcadeExecutor {
     __obj.asInstanceOf[ArcadeExecutor]
   }
   
-  extension [Self <: ArcadeExecutor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcadeExecutor] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: ExecuteFunction): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
     

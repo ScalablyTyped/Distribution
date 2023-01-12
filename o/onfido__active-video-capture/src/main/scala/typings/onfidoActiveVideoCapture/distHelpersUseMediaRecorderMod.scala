@@ -28,7 +28,8 @@ object distHelpersUseMediaRecorderMod {
       __obj.asInstanceOf[MediaRecorderHook]
     }
     
-    extension [Self <: MediaRecorderHook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaRecorderHook] (val x: Self) extends AnyVal {
       
       inline def setStartCapture(value: () => Unit): Self = StObject.set(x, "startCapture", js.Any.fromFunction0(value))
       

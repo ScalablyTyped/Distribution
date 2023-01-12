@@ -23,7 +23,8 @@ object AwsLambdaFunctionLayer {
     __obj.asInstanceOf[AwsLambdaFunctionLayer]
   }
   
-  extension [Self <: AwsLambdaFunctionLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsLambdaFunctionLayer] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NonEmptyString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

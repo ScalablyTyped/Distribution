@@ -32,7 +32,8 @@ object ComponentNode {
     __obj.asInstanceOf[ComponentNode]
   }
   
-  extension [Self <: ComponentNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentNode] (val x: Self) extends AnyVal {
     
     inline def setCodegenNode(value: VNodeCall | CacheExpression | MemoExpression): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     

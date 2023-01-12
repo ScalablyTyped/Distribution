@@ -39,7 +39,8 @@ object ScheduleRunTest {
     __obj.asInstanceOf[ScheduleRunTest]
   }
   
-  extension [Self <: ScheduleRunTest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleRunTest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

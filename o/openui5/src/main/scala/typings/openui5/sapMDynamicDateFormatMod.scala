@@ -128,7 +128,8 @@ object sapMDynamicDateFormatMod {
       __obj.asInstanceOf[DynamicDateFormat]
     }
     
-    extension [Self <: DynamicDateFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicDateFormat] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: (js.Object, Boolean) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       

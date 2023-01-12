@@ -30,7 +30,8 @@ object ValueEvent {
     __obj.asInstanceOf[ValueEvent]
   }
   
-  extension [Self <: ValueEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueEvent] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: PeerId): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

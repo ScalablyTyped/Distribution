@@ -42,7 +42,8 @@ object langinLanguagesstringsmar {
     __obj.asInstanceOf[langinLanguagesstringsmar]
   }
   
-  extension [Self <: langinLanguagesstringsmar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: langinLanguagesstringsmar] (val x: Self) extends AnyVal {
     
     inline def setByOn(value: String): Self = StObject.set(x, "byOn", value.asInstanceOf[js.Any])
     

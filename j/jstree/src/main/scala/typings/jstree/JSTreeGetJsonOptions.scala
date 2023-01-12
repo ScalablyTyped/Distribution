@@ -48,7 +48,8 @@ object JSTreeGetJsonOptions {
     __obj.asInstanceOf[JSTreeGetJsonOptions]
   }
   
-  extension [Self <: JSTreeGetJsonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSTreeGetJsonOptions] (val x: Self) extends AnyVal {
     
     inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     

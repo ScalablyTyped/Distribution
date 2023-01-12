@@ -106,7 +106,8 @@ object SonificationOptions {
     __obj.asInstanceOf[SonificationOptions]
   }
   
-  extension [Self <: SonificationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SonificationOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterSeriesWait(value: Double): Self = StObject.set(x, "afterSeriesWait", value.asInstanceOf[js.Any])
     

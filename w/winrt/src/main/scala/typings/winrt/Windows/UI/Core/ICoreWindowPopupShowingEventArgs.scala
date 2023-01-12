@@ -16,7 +16,8 @@ object ICoreWindowPopupShowingEventArgs {
     __obj.asInstanceOf[ICoreWindowPopupShowingEventArgs]
   }
   
-  extension [Self <: ICoreWindowPopupShowingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICoreWindowPopupShowingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setSetDesiredSize(value: Size => Unit): Self = StObject.set(x, "setDesiredSize", js.Any.fromFunction1(value))
   }

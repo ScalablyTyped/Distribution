@@ -312,7 +312,8 @@ object Graphics {
       __obj.asInstanceOf[Arc]
     }
     
-    extension [Self <: Arc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arc] (val x: Self) extends AnyVal {
       
       inline def setAnticlockwise(value: Double): Self = StObject.set(x, "anticlockwise", value.asInstanceOf[js.Any])
       
@@ -348,7 +349,8 @@ object Graphics {
       __obj.asInstanceOf[ArcTo]
     }
     
-    extension [Self <: ArcTo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcTo] (val x: Self) extends AnyVal {
       
       inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
@@ -386,7 +388,8 @@ object Graphics {
       __obj.asInstanceOf[BezierCurveTo]
     }
     
-    extension [Self <: BezierCurveTo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BezierCurveTo] (val x: Self) extends AnyVal {
       
       inline def setCp1x(value: Double): Self = StObject.set(x, "cp1x", value.asInstanceOf[js.Any])
       
@@ -418,7 +421,8 @@ object Graphics {
       __obj.asInstanceOf[Circle]
     }
     
-    extension [Self <: Circle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Circle] (val x: Self) extends AnyVal {
       
       inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
@@ -470,7 +474,8 @@ object Graphics {
       __obj.asInstanceOf[LineTo]
     }
     
-    extension [Self <: LineTo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineTo] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -491,7 +496,8 @@ object Graphics {
       __obj.asInstanceOf[MoveTo]
     }
     
-    extension [Self <: MoveTo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveTo] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -521,7 +527,8 @@ object Graphics {
       __obj.asInstanceOf[PolyStar]
     }
     
-    extension [Self <: PolyStar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolyStar] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -555,7 +562,8 @@ object Graphics {
       __obj.asInstanceOf[QuadraticCurveTo]
     }
     
-    extension [Self <: QuadraticCurveTo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuadraticCurveTo] (val x: Self) extends AnyVal {
       
       inline def setCpx(value: Double): Self = StObject.set(x, "cpx", value.asInstanceOf[js.Any])
       
@@ -585,7 +593,8 @@ object Graphics {
       __obj.asInstanceOf[Rect]
     }
     
-    extension [Self <: Rect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -632,7 +641,8 @@ object Graphics {
       __obj.asInstanceOf[RoundRect]
     }
     
-    extension [Self <: RoundRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoundRect] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -696,7 +706,8 @@ object Graphics {
       __obj.asInstanceOf[StrokeStyle]
     }
     
-    extension [Self <: StrokeStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrokeStyle] (val x: Self) extends AnyVal {
       
       inline def setCaps(value: String): Self = StObject.set(x, "caps", value.asInstanceOf[js.Any])
       

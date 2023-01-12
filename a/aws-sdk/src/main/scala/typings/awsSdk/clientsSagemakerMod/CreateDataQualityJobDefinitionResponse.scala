@@ -18,7 +18,8 @@ object CreateDataQualityJobDefinitionResponse {
     __obj.asInstanceOf[CreateDataQualityJobDefinitionResponse]
   }
   
-  extension [Self <: CreateDataQualityJobDefinitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataQualityJobDefinitionResponse] (val x: Self) extends AnyVal {
     
     inline def setJobDefinitionArn(value: MonitoringJobDefinitionArn): Self = StObject.set(x, "JobDefinitionArn", value.asInstanceOf[js.Any])
   }

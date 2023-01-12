@@ -55,7 +55,8 @@ object dxSankeyTooltip {
     __obj.asInstanceOf[dxSankeyTooltip]
   }
   
-  extension [Self <: dxSankeyTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxSankeyTooltip] (val x: Self) extends AnyVal {
     
     inline def setCustomizeLinkTooltip(value: /* info */ Source => Any): Self = StObject.set(x, "customizeLinkTooltip", js.Any.fromFunction1(value))
     

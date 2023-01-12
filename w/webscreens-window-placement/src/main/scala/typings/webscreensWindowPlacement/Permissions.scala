@@ -16,7 +16,8 @@ object Permissions {
     __obj.asInstanceOf[Permissions]
   }
   
-  extension [Self <: Permissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Permissions] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: PermissionDescriptorWithWindowPlacement => js.Promise[PermissionStatus]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
   }

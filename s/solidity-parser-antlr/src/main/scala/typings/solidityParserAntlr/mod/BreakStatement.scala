@@ -21,7 +21,8 @@ object BreakStatement {
     __obj.asInstanceOf[BreakStatement]
   }
   
-  extension [Self <: BreakStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreakStatement] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.BreakStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

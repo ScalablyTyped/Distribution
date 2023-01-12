@@ -23,7 +23,8 @@ object CreateSuiteDefinitionRequest {
     __obj.asInstanceOf[CreateSuiteDefinitionRequest]
   }
   
-  extension [Self <: CreateSuiteDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSuiteDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setSuiteDefinitionConfiguration(value: SuiteDefinitionConfiguration): Self = StObject.set(x, "suiteDefinitionConfiguration", value.asInstanceOf[js.Any])
     

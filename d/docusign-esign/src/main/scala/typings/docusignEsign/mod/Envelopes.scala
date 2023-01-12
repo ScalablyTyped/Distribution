@@ -480,7 +480,8 @@ object Envelopes {
     __obj.asInstanceOf[Envelopes]
   }
   
-  extension [Self <: Envelopes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Envelopes] (val x: Self) extends AnyVal {
     
     inline def setAccessControlListBase64(value: String): Self = StObject.set(x, "accessControlListBase64", value.asInstanceOf[js.Any])
     

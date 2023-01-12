@@ -20,7 +20,8 @@ object MemberMetadata {
     __obj.asInstanceOf[MemberMetadata]
   }
   
-  extension [Self <: MemberMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberMetadata] (val x: Self) extends AnyVal {
     
     inline def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     

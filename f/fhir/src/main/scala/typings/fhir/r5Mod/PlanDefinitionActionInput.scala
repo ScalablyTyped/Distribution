@@ -34,7 +34,8 @@ object PlanDefinitionActionInput {
     __obj.asInstanceOf[PlanDefinitionActionInput]
   }
   
-  extension [Self <: PlanDefinitionActionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanDefinitionActionInput] (val x: Self) extends AnyVal {
     
     inline def setRelatedData(value: String): Self = StObject.set(x, "relatedData", value.asInstanceOf[js.Any])
     

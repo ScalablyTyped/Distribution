@@ -58,7 +58,8 @@ object Globals {
     __obj.asInstanceOf[Globals]
   }
   
-  extension [Self <: Globals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Globals] (val x: Self) extends AnyVal {
     
     inline def setAutoUpdateLoop(value: Boolean): Self = StObject.set(x, "autoUpdateLoop", value.asInstanceOf[js.Any])
     

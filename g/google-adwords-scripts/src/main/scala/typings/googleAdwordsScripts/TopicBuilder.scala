@@ -23,7 +23,8 @@ object TopicBuilder {
     __obj.asInstanceOf[TopicBuilder[Topic]]
   }
   
-  extension [Self <: TopicBuilder[?], Topic](x: Self & TopicBuilder[Topic]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicBuilder[?], Topic] (val x: Self & TopicBuilder[Topic]) extends AnyVal {
     
     inline def setWithTopicId(value: Double => TopicBuilder[Topic]): Self = StObject.set(x, "withTopicId", js.Any.fromFunction1(value))
   }

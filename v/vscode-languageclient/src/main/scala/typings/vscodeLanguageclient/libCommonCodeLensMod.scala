@@ -61,7 +61,8 @@ object libCommonCodeLensMod {
       __obj.asInstanceOf[CodeLensMiddleware]
     }
     
-    extension [Self <: CodeLensMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeLensMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideCodeLenses(
         value: js.ThisFunction3[
@@ -102,7 +103,8 @@ object libCommonCodeLensMod {
       __obj.asInstanceOf[CodeLensProviderShape]
     }
     
-    extension [Self <: CodeLensProviderShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeLensProviderShape] (val x: Self) extends AnyVal {
       
       inline def setOnDidChangeCodeLensEmitter(value: EventEmitter[Unit]): Self = StObject.set(x, "onDidChangeCodeLensEmitter", value.asInstanceOf[js.Any])
       

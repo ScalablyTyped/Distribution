@@ -31,7 +31,8 @@ object Parser {
     __obj.asInstanceOf[Parser[T]]
   }
   
-  extension [Self <: Parser[?], T](x: Self & Parser[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parser[?], T] (val x: Self & Parser[T]) extends AnyVal {
     
     inline def setAstFormat(value: String): Self = StObject.set(x, "astFormat", value.asInstanceOf[js.Any])
     

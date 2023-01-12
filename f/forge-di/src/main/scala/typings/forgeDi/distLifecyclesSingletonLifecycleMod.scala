@@ -41,7 +41,8 @@ object distLifecyclesSingletonLifecycleMod {
       __obj.asInstanceOf[SingletonLifecycle]
     }
     
-    extension [Self <: SingletonLifecycle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingletonLifecycle] (val x: Self) extends AnyVal {
       
       inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     }

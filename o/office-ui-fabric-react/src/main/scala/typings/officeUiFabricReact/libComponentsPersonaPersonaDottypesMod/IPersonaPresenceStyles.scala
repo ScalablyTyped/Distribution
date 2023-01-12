@@ -18,7 +18,8 @@ object IPersonaPresenceStyles {
     __obj.asInstanceOf[IPersonaPresenceStyles]
   }
   
-  extension [Self <: IPersonaPresenceStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPersonaPresenceStyles] (val x: Self) extends AnyVal {
     
     inline def setPresence(value: IStyle): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
     

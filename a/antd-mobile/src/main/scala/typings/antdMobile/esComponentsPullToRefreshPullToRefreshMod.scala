@@ -100,7 +100,8 @@ object esComponentsPullToRefreshPullToRefreshMod {
       __obj.asInstanceOf[PullToRefreshProps]
     }
     
-    extension [Self <: PullToRefreshProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PullToRefreshProps] (val x: Self) extends AnyVal {
       
       inline def setCanReleaseText(value: ReactNode): Self = StObject.set(x, "canReleaseText", value.asInstanceOf[js.Any])
       

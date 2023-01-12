@@ -32,7 +32,8 @@ object Pagination {
     __obj.asInstanceOf[Pagination]
   }
   
-  extension [Self <: Pagination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pagination] (val x: Self) extends AnyVal {
     
     inline def setMatched(value: Double): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
     

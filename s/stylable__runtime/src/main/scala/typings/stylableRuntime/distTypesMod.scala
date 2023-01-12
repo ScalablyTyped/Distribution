@@ -22,7 +22,8 @@ object distTypesMod {
       __obj.asInstanceOf[AttributeMap]
     }
     
-    extension [Self <: AttributeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeMap] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object distTypesMod {
       __obj.asInstanceOf[ClassesMap]
     }
     
-    extension [Self <: ClassesMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassesMap] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
@@ -82,7 +84,8 @@ object distTypesMod {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setStc(value: (/* namespace */ String, /* stateMapping */ js.UndefOr[StateMap | Null]) => String): Self = StObject.set(x, "stc", js.Any.fromFunction2(value))
       
@@ -115,7 +118,8 @@ object distTypesMod {
       __obj.asInstanceOf[InheritedAttributes]
     }
     
-    extension [Self <: InheritedAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InheritedAttributes] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -154,7 +158,8 @@ object distTypesMod {
       __obj.asInstanceOf[RenderableStylesheet]
     }
     
-    extension [Self <: RenderableStylesheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderableStylesheet] (val x: Self) extends AnyVal {
       
       inline def set$css(value: String): Self = StObject.set(x, "$css", value.asInstanceOf[js.Any])
       
@@ -222,7 +227,8 @@ object distTypesMod {
       __obj.asInstanceOf[RuntimeStylesheet]
     }
     
-    extension [Self <: RuntimeStylesheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuntimeStylesheet] (val x: Self) extends AnyVal {
       
       inline def setCssStates(value: StateMap => String): Self = StObject.set(x, "cssStates", js.Any.fromFunction1(value))
       
@@ -274,7 +280,8 @@ object distTypesMod {
       __obj.asInstanceOf[StylableExports]
     }
     
-    extension [Self <: StylableExports](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylableExports] (val x: Self) extends AnyVal {
       
       inline def setClasses(value: ClassesMap): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       

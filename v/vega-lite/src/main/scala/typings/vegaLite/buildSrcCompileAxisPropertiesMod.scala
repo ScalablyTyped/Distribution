@@ -980,7 +980,8 @@ object buildSrcCompileAxisPropertiesMod {
       __obj.asInstanceOf[AxisRuleParams]
     }
     
-    extension [Self <: AxisRuleParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisRuleParams] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: AxisInternal): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       

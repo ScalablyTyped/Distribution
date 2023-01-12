@@ -59,7 +59,8 @@ object ReferencePageGet {
     __obj.asInstanceOf[ReferencePageGet]
   }
   
-  extension [Self <: ReferencePageGet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferencePageGet] (val x: Self) extends AnyVal {
     
     inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
   }

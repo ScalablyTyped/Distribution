@@ -61,7 +61,8 @@ object ICartesianSeries {
     __obj.asInstanceOf[ICartesianSeries]
   }
   
-  extension [Self <: ICartesianSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICartesianSeries] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object KeyRing {
     __obj.asInstanceOf[KeyRing]
   }
   
-  extension [Self <: KeyRing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyRing] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

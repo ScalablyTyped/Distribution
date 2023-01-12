@@ -27,7 +27,8 @@ object concatenateMod {
       __obj.asInstanceOf[ConcatenateReturn]
     }
     
-    extension [Self <: ConcatenateReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcatenateReturn] (val x: Self) extends AnyVal {
       
       inline def setDone(value: js.Promise[Unit]): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       

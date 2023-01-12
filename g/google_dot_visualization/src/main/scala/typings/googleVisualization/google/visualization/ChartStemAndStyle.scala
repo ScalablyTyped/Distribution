@@ -17,7 +17,8 @@ object ChartStemAndStyle {
     __obj.asInstanceOf[ChartStemAndStyle]
   }
   
-  extension [Self <: ChartStemAndStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartStemAndStyle] (val x: Self) extends AnyVal {
     
     inline def setStem(value: ChartStem): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
     

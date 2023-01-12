@@ -74,7 +74,8 @@ object distSrcQueryManagerMod {
       __obj.asInstanceOf[CleanUpEvents]
     }
     
-    extension [Self <: CleanUpEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CleanUpEvents] (val x: Self) extends AnyVal {
       
       inline def setCleanup(value: CustomEvent[Any]): Self = StObject.set(x, "cleanup", value.asInstanceOf[js.Any])
     }
@@ -93,7 +94,8 @@ object distSrcQueryManagerMod {
       __obj.asInstanceOf[QueryManagerComponents]
     }
     
-    extension [Self <: QueryManagerComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryManagerComponents] (val x: Self) extends AnyVal {
       
       inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object distSrcQueryManagerMod {
       __obj.asInstanceOf[QueryManagerInit]
     }
     
-    extension [Self <: QueryManagerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryManagerInit] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

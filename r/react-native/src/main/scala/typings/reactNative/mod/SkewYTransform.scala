@@ -15,7 +15,8 @@ object SkewYTransform {
     __obj.asInstanceOf[SkewYTransform]
   }
   
-  extension [Self <: SkewYTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkewYTransform] (val x: Self) extends AnyVal {
     
     inline def setSkewY(value: String): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
   }

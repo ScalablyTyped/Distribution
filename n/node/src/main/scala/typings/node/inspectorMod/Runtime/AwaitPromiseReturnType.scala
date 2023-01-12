@@ -23,7 +23,8 @@ object AwaitPromiseReturnType {
     __obj.asInstanceOf[AwaitPromiseReturnType]
   }
   
-  extension [Self <: AwaitPromiseReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwaitPromiseReturnType] (val x: Self) extends AnyVal {
     
     inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     

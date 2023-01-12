@@ -48,7 +48,8 @@ object GroupUsers {
     __obj.asInstanceOf[GroupUsers]
   }
   
-  extension [Self <: GroupUsers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupUsers] (val x: Self) extends AnyVal {
     
     inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     

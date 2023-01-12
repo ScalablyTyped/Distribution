@@ -26,7 +26,8 @@ object libNoticeBarPropsTypeMod {
       __obj.asInstanceOf[NoticeBarPropsType]
     }
     
-    extension [Self <: NoticeBarPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoticeBarPropsType] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ReactElement): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

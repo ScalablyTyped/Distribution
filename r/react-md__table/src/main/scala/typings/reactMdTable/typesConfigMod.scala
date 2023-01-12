@@ -41,7 +41,8 @@ object typesConfigMod {
       __obj.asInstanceOf[TableCellConfig]
     }
     
-    extension [Self <: TableCellConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableCellConfig] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object typesConfigMod {
       __obj.asInstanceOf[TableCellConfiguration]
     }
     
-    extension [Self <: TableCellConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableCellConfiguration] (val x: Self) extends AnyVal {
       
       inline def setHAlign(value: TableCellHorizontalAlignment): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
       
@@ -161,7 +163,8 @@ object typesConfigMod {
       __obj.asInstanceOf[TableConfigContext]
     }
     
-    extension [Self <: TableConfigContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableConfigContext] (val x: Self) extends AnyVal {
       
       inline def setDisableBorders(value: Boolean): Self = StObject.set(x, "disableBorders", value.asInstanceOf[js.Any])
       
@@ -204,7 +207,8 @@ object typesConfigMod {
       __obj.asInstanceOf[TableConfiguration]
     }
     
-    extension [Self <: TableConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableConfiguration] (val x: Self) extends AnyVal {
       
       inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       
@@ -237,7 +241,8 @@ object typesConfigMod {
       __obj.asInstanceOf[TableRowConfiguration]
     }
     
-    extension [Self <: TableRowConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableRowConfiguration] (val x: Self) extends AnyVal {
       
       inline def setDisableBorders(value: Boolean): Self = StObject.set(x, "disableBorders", value.asInstanceOf[js.Any])
       

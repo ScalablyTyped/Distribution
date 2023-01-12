@@ -16,7 +16,8 @@ object State {
     __obj.asInstanceOf[State]
   }
   
-  extension [Self <: State](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
     
     inline def setDispatch(value: Dispatch_[js.Object]): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
   }

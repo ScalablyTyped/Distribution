@@ -28,7 +28,8 @@ object DeleteResourcePolicyStatementRequest {
     __obj.asInstanceOf[DeleteResourcePolicyStatementRequest]
   }
   
-  extension [Self <: DeleteResourcePolicyStatementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteResourcePolicyStatementRequest] (val x: Self) extends AnyVal {
     
     inline def setExpectedRevisionId(value: RevisionId): Self = StObject.set(x, "expectedRevisionId", value.asInstanceOf[js.Any])
     

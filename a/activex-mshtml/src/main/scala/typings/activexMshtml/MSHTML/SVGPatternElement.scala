@@ -85,7 +85,8 @@ object SVGPatternElement {
     __obj.asInstanceOf[SVGPatternElement]
   }
   
-  extension [Self <: SVGPatternElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPatternElement] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

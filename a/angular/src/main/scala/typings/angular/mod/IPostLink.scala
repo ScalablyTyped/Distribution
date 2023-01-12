@@ -28,7 +28,8 @@ object IPostLink {
     __obj.asInstanceOf[IPostLink]
   }
   
-  extension [Self <: IPostLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPostLink] (val x: Self) extends AnyVal {
     
     inline def set$postLink(value: () => Unit): Self = StObject.set(x, "$postLink", js.Any.fromFunction0(value))
   }

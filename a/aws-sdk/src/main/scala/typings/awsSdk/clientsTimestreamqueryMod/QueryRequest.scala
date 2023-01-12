@@ -33,7 +33,8 @@ object QueryRequest {
     __obj.asInstanceOf[QueryRequest]
   }
   
-  extension [Self <: QueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientRequestToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

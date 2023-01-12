@@ -44,7 +44,8 @@ object Forecast {
     __obj.asInstanceOf[Forecast]
   }
   
-  extension [Self <: Forecast](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Forecast] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

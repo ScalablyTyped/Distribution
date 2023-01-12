@@ -42,7 +42,8 @@ object authMetadataMod {
       __obj.asInstanceOf[AuthMetadata]
     }
     
-    extension [Self <: AuthMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthMetadata] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: Buffer): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object authMetadataMod {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setIdentifier(value: Double): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object authMetadataMod {
       __obj.asInstanceOf[UsernameAndPassword]
     }
     
-    extension [Self <: UsernameAndPassword](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsernameAndPassword] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: Buffer): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       

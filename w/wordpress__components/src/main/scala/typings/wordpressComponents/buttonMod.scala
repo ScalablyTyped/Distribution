@@ -377,7 +377,8 @@ object buttonMod {
         __obj.asInstanceOf[AnchorProps]
       }
       
-      extension [Self <: AnchorProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AnchorProps] (val x: Self) extends AnyVal {
         
         inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
         
@@ -1105,7 +1106,8 @@ object buttonMod {
         __obj.asInstanceOf[BaseProps]
       }
       
-      extension [Self <: BaseProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -1520,7 +1522,8 @@ object buttonMod {
         __obj.asInstanceOf[ButtonProps]
       }
       
-      extension [Self <: ButtonProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
         
         inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
         

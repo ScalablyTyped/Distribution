@@ -38,7 +38,8 @@ object FilteredLogEvent {
     __obj.asInstanceOf[FilteredLogEvent]
   }
   
-  extension [Self <: FilteredLogEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilteredLogEvent] (val x: Self) extends AnyVal {
     
     inline def setEventId(value: EventId): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     

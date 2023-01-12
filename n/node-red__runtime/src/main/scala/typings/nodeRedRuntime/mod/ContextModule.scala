@@ -36,7 +36,8 @@ object ContextModule {
     __obj.asInstanceOf[ContextModule]
   }
   
-  extension [Self <: ContextModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextModule] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: Id => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     

@@ -32,7 +32,8 @@ object GetMapGlyphsRequest {
     __obj.asInstanceOf[GetMapGlyphsRequest]
   }
   
-  extension [Self <: GetMapGlyphsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMapGlyphsRequest] (val x: Self) extends AnyVal {
     
     inline def setFontStack(value: String): Self = StObject.set(x, "FontStack", value.asInstanceOf[js.Any])
     

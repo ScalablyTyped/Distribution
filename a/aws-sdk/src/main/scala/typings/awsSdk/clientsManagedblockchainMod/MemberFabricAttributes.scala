@@ -23,7 +23,8 @@ object MemberFabricAttributes {
     __obj.asInstanceOf[MemberFabricAttributes]
   }
   
-  extension [Self <: MemberFabricAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberFabricAttributes] (val x: Self) extends AnyVal {
     
     inline def setAdminUsername(value: UsernameString): Self = StObject.set(x, "AdminUsername", value.asInstanceOf[js.Any])
     

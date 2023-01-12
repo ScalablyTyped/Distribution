@@ -21,7 +21,8 @@ object EmailAttribute {
     __obj.asInstanceOf[EmailAttribute]
   }
   
-  extension [Self <: EmailAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailAttribute] (val x: Self) extends AnyVal {
     
     inline def setType(value: email): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

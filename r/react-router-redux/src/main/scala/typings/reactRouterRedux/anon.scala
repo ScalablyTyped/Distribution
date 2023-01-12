@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[History]
     }
     
-    extension [Self <: History](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: History] (val x: Self) extends AnyVal {
       
       inline def setHistory(value: typings.history.mod.History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[IsExact]
     }
     
-    extension [Self <: IsExact](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsExact] (val x: Self) extends AnyVal {
       
       inline def setIsExact(value: Boolean): Self = StObject.set(x, "isExact", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object anon {
       __obj.asInstanceOf[Locationpropsmatchpathstr]
     }
     
-    extension [Self <: Locationpropsmatchpathstr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locationpropsmatchpathstr] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -146,7 +149,8 @@ object anon {
       __obj.asInstanceOf[Router]
     }
     
-    extension [Self <: Router](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Router] (val x: Self) extends AnyVal {
       
       inline def setRouter(value: RouterState): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     }

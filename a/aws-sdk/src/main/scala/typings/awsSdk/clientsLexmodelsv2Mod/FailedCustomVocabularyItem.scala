@@ -28,7 +28,8 @@ object FailedCustomVocabularyItem {
     __obj.asInstanceOf[FailedCustomVocabularyItem]
   }
   
-  extension [Self <: FailedCustomVocabularyItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailedCustomVocabularyItem] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

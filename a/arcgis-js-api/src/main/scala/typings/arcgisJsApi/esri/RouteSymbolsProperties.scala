@@ -94,7 +94,8 @@ object RouteSymbolsProperties {
     __obj.asInstanceOf[RouteSymbolsProperties]
   }
   
-  extension [Self <: RouteSymbolsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteSymbolsProperties] (val x: Self) extends AnyVal {
     
     inline def setDirectionLines(value: SimpleLineSymbolPropertie | LineSymbol3DPropertiestyp | CIMSymbolPropertiestypeci): Self = StObject.set(x, "directionLines", value.asInstanceOf[js.Any])
     

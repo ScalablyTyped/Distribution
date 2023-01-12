@@ -48,7 +48,8 @@ object AwsEcrContainerAggregation {
     __obj.asInstanceOf[AwsEcrContainerAggregation]
   }
   
-  extension [Self <: AwsEcrContainerAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcrContainerAggregation] (val x: Self) extends AnyVal {
     
     inline def setArchitectures(value: StringFilterList): Self = StObject.set(x, "architectures", value.asInstanceOf[js.Any])
     

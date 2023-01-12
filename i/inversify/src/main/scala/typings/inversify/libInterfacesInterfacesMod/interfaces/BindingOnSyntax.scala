@@ -20,7 +20,8 @@ object BindingOnSyntax {
     __obj.asInstanceOf[BindingOnSyntax[T]]
   }
   
-  extension [Self <: BindingOnSyntax[?], T](x: Self & BindingOnSyntax[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingOnSyntax[?], T] (val x: Self & BindingOnSyntax[T]) extends AnyVal {
     
     inline def setOnActivation(
       value: js.Function2[/* context */ Context, /* injectable */ T, T | js.Promise[T]] => BindingWhenSyntax[T]

@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[AsyncOptions]
     }
     
-    extension [Self <: AsyncOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncOptions] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setNothrow(value: Boolean): Self = StObject.set(x, "nothrow", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object mod {
       __obj.asInstanceOf[OptionsAll]
     }
     
-    extension [Self <: OptionsAll](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsAll] (val x: Self) extends AnyVal {
       
       inline def setAll(value: `true`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     }
@@ -123,7 +126,8 @@ object mod {
       __obj.asInstanceOf[OptionsFirst]
     }
     
-    extension [Self <: OptionsFirst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsFirst] (val x: Self) extends AnyVal {
       
       inline def setAll(value: `false`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -146,7 +150,8 @@ object mod {
       __obj.asInstanceOf[OptionsNoThrow]
     }
     
-    extension [Self <: OptionsNoThrow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsNoThrow] (val x: Self) extends AnyVal {
       
       inline def setNothrow(value: `true`): Self = StObject.set(x, "nothrow", value.asInstanceOf[js.Any])
     }
@@ -167,7 +172,8 @@ object mod {
       __obj.asInstanceOf[OptionsThrow]
     }
     
-    extension [Self <: OptionsThrow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsThrow] (val x: Self) extends AnyVal {
       
       inline def setNothrow(value: `false`): Self = StObject.set(x, "nothrow", value.asInstanceOf[js.Any])
       

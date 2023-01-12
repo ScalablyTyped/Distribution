@@ -26,7 +26,8 @@ object libPaginationPaginationMod extends Shortcut {
       __obj.asInstanceOf[PaginationConfig]
     }
     
-    extension [Self <: PaginationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationConfig] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: PaginationPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object libPaginationPaginationMod extends Shortcut {
       __obj.asInstanceOf[PaginationProps]
     }
     
-    extension [Self <: PaginationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
       
       inline def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
       

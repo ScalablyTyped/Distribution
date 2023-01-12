@@ -29,7 +29,8 @@ object View {
     __obj.asInstanceOf[View[Data]]
   }
   
-  extension [Self <: View[?], Data](x: Self & View[Data]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: View[?], Data] (val x: Self & View[Data]) extends AnyVal {
     
     inline def setAttributes(value: Title): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

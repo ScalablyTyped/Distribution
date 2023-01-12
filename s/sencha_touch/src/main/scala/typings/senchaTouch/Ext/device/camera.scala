@@ -39,7 +39,8 @@ object camera {
       __obj.asInstanceOf[IAbstract]
     }
     
-    extension [Self <: IAbstract](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       inline def setCapture(
         value: (/* options */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* destination */ js.UndefOr[String], /* encoding */ js.UndefOr[String], /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit
@@ -66,7 +67,8 @@ object camera {
       __obj.asInstanceOf[ICordova]
     }
     
-    extension [Self <: ICordova](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICordova] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: /* args */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
       
@@ -91,7 +93,8 @@ object camera {
       __obj.asInstanceOf[IPhoneGap]
     }
     
-    extension [Self <: IPhoneGap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPhoneGap] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: /* args */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
       
@@ -116,7 +119,8 @@ object camera {
       __obj.asInstanceOf[ISencha]
     }
     
-    extension [Self <: ISencha](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISencha] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: /* options */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
       
@@ -151,7 +155,8 @@ object camera {
       __obj.asInstanceOf[ISimulator]
     }
     
-    extension [Self <: ISimulator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISimulator] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: /* options */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
       

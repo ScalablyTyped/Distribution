@@ -19,7 +19,8 @@ object PermissionRequestHandler {
     __obj.asInstanceOf[PermissionRequestHandler]
   }
   
-  extension [Self <: PermissionRequestHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionRequestHandler] (val x: Self) extends AnyVal {
     
     inline def setAllow(value: () => Unit): Self = StObject.set(x, "allow", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object DataViewErrorInfo {
     __obj.asInstanceOf[DataViewErrorInfo]
   }
   
-  extension [Self <: DataViewErrorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewErrorInfo] (val x: Self) extends AnyVal {
     
     inline def setErrorCategory(value: ErrorCategory): Self = StObject.set(x, "errorCategory", value.asInstanceOf[js.Any])
     

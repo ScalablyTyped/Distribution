@@ -90,7 +90,8 @@ object TreeSettings {
     __obj.asInstanceOf[TreeSettings]
   }
   
-  extension [Self <: TreeSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeSettings] (val x: Self) extends AnyVal {
     
     inline def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
     

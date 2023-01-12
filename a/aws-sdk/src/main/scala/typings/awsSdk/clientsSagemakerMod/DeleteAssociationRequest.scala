@@ -23,7 +23,8 @@ object DeleteAssociationRequest {
     __obj.asInstanceOf[DeleteAssociationRequest]
   }
   
-  extension [Self <: DeleteAssociationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAssociationRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationArn(value: AssociationEntityArn): Self = StObject.set(x, "DestinationArn", value.asInstanceOf[js.Any])
     

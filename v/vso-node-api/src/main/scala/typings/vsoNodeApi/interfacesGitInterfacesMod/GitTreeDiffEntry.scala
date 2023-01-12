@@ -44,7 +44,8 @@ object GitTreeDiffEntry {
     __obj.asInstanceOf[GitTreeDiffEntry]
   }
   
-  extension [Self <: GitTreeDiffEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitTreeDiffEntry] (val x: Self) extends AnyVal {
     
     inline def setBaseObjectId(value: String): Self = StObject.set(x, "baseObjectId", value.asInstanceOf[js.Any])
     

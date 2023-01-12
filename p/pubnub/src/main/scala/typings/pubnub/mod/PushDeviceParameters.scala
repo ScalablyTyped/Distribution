@@ -17,7 +17,8 @@ object PushDeviceParameters {
     __obj.asInstanceOf[PushDeviceParameters]
   }
   
-  extension [Self <: PushDeviceParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushDeviceParameters] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     

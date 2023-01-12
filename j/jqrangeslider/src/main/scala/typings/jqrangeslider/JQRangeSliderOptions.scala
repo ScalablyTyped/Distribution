@@ -45,7 +45,8 @@ object JQRangeSliderOptions {
     __obj.asInstanceOf[JQRangeSliderOptions]
   }
   
-  extension [Self <: JQRangeSliderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQRangeSliderOptions] (val x: Self) extends AnyVal {
     
     inline def setArrows(value: Boolean): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
     

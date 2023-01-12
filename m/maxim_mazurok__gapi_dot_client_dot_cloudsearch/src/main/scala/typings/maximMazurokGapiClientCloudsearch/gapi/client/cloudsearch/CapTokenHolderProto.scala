@@ -20,7 +20,8 @@ object CapTokenHolderProto {
     __obj.asInstanceOf[CapTokenHolderProto]
   }
   
-  extension [Self <: CapTokenHolderProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapTokenHolderProto] (val x: Self) extends AnyVal {
     
     inline def setTokenHmacSha1Prefix(value: String): Self = StObject.set(x, "tokenHmacSha1Prefix", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ColorLAB {
     __obj.asInstanceOf[ColorLAB]
   }
   
-  extension [Self <: ColorLAB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorLAB] (val x: Self) extends AnyVal {
     
     inline def setA(value: NumericValueRef): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

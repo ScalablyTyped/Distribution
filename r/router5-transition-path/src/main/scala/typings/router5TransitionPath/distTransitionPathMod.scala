@@ -36,7 +36,8 @@ object distTransitionPathMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: Options): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object distTransitionPathMod {
       __obj.asInstanceOf[TransitionPath]
     }
     
-    extension [Self <: TransitionPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionPath] (val x: Self) extends AnyVal {
       
       inline def setIntersection(value: String): Self = StObject.set(x, "intersection", value.asInstanceOf[js.Any])
       

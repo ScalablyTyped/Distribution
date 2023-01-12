@@ -55,7 +55,8 @@ object CommentDeletedEventArgs {
     __obj.asInstanceOf[CommentDeletedEventArgs]
   }
   
-  extension [Self <: CommentDeletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentDeletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCommentDetails(value: js.Array[CommentDetail]): Self = StObject.set(x, "commentDetails", value.asInstanceOf[js.Any])
     

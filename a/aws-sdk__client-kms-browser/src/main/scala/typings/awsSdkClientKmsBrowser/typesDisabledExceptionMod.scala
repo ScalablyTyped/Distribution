@@ -35,7 +35,8 @@ object typesDisabledExceptionMod {
       __obj.asInstanceOf[DisabledException]
     }
     
-    extension [Self <: DisabledException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisabledException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.DisabledException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -55,7 +56,8 @@ object typesDisabledExceptionMod {
       __obj.asInstanceOf[DisabledExceptionDetails]
     }
     
-    extension [Self <: DisabledExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisabledExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

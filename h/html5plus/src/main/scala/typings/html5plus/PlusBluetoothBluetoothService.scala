@@ -32,7 +32,8 @@ object PlusBluetoothBluetoothService {
     __obj.asInstanceOf[PlusBluetoothBluetoothService]
   }
   
-  extension [Self <: PlusBluetoothBluetoothService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusBluetoothBluetoothService] (val x: Self) extends AnyVal {
     
     inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
     

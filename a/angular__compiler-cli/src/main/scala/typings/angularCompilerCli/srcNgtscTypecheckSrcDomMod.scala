@@ -132,7 +132,8 @@ object srcNgtscTypecheckSrcDomMod {
       __obj.asInstanceOf[DomSchemaChecker]
     }
     
-    extension [Self <: DomSchemaChecker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomSchemaChecker] (val x: Self) extends AnyVal {
       
       inline def setCheckElement(value: (String, TmplAstElement, js.Array[SchemaMetadata], Boolean) => Unit): Self = StObject.set(x, "checkElement", js.Any.fromFunction4(value))
       

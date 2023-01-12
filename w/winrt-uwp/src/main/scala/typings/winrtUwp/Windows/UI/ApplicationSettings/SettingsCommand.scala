@@ -28,7 +28,8 @@ object SettingsCommand {
     __obj.asInstanceOf[SettingsCommand]
   }
   
-  extension [Self <: SettingsCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettingsCommand] (val x: Self) extends AnyVal {
     
     inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

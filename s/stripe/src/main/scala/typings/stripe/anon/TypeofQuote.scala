@@ -19,7 +19,8 @@ object TypeofQuote {
     __obj.asInstanceOf[TypeofQuote]
   }
   
-  extension [Self <: TypeofQuote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofQuote] (val x: Self) extends AnyVal {
     
     inline def setAutomaticTax(value: Any): Self = StObject.set(x, "AutomaticTax", value.asInstanceOf[js.Any])
     

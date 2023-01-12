@@ -20,7 +20,8 @@ object IShowDialogAction {
     __obj.asInstanceOf[IShowDialogAction]
   }
   
-  extension [Self <: IShowDialogAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShowDialogAction] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

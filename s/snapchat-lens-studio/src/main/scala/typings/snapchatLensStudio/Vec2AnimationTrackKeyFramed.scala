@@ -31,7 +31,8 @@ object Vec2AnimationTrackKeyFramed {
     __obj.asInstanceOf[Vec2AnimationTrackKeyFramed]
   }
   
-  extension [Self <: Vec2AnimationTrackKeyFramed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vec2AnimationTrackKeyFramed] (val x: Self) extends AnyVal {
     
     inline def setAddKey(value: (Double, vec2) => Unit): Self = StObject.set(x, "addKey", js.Any.fromFunction2(value))
     

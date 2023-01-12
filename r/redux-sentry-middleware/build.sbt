@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "redux-sentry-middleware"
-version := "0.2-dt-20211202Z-865fbc"
+version := "0.2-dt-20211202Z-79c790"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "redux" % "4.2.0-0eae05",
-  "org.scalablytyped" %%% "sentry__browser" % "7.19.0-0afb2f",
-  "org.scalablytyped" %%% "sentry__core" % "7.19.0-203b37",
-  "org.scalablytyped" %%% "sentry__types" % "7.19.0-59f10f",
-  "org.scalablytyped" %%% "sentry__utils" % "7.19.0-55e8bb",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f")
+  "org.scalablytyped" %%% "redux" % "4.2.0-17c5bf",
+  "org.scalablytyped" %%% "sentry__browser" % "7.19.0-cada61",
+  "org.scalablytyped" %%% "sentry__core" % "7.19.0-16584a",
+  "org.scalablytyped" %%% "sentry__types" % "7.19.0-6fca75",
+  "org.scalablytyped" %%% "sentry__utils" % "7.19.0-ef7b9d",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -25,7 +25,8 @@ object BeginDragPayload {
     __obj.asInstanceOf[BeginDragPayload]
   }
   
-  extension [Self <: BeginDragPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeginDragPayload] (val x: Self) extends AnyVal {
     
     inline def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object AnalysisAsciiFoldingTokenFilter {
     __obj.asInstanceOf[AnalysisAsciiFoldingTokenFilter]
   }
   
-  extension [Self <: AnalysisAsciiFoldingTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisAsciiFoldingTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setPreserve_original(value: Boolean): Self = StObject.set(x, "preserve_original", value.asInstanceOf[js.Any])
     

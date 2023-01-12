@@ -21,7 +21,8 @@ object ArcGaugeScaleLabelsPadding {
     __obj.asInstanceOf[ArcGaugeScaleLabelsPadding]
   }
   
-  extension [Self <: ArcGaugeScaleLabelsPadding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcGaugeScaleLabelsPadding] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

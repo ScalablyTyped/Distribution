@@ -101,7 +101,8 @@ object buildMod {
       __obj.asInstanceOf[ESLintConfig]
     }
     
-    extension [Self <: ESLintConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ESLintConfig] (val x: Self) extends AnyVal {
       
       inline def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
       
@@ -251,7 +252,8 @@ object buildMod {
       __obj.asInstanceOf[ESLintOverride]
     }
     
-    extension [Self <: ESLintOverride](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ESLintOverride] (val x: Self) extends AnyVal {
       
       inline def setExcludedFiles(value: String | js.Array[String]): Self = StObject.set(x, "excludedFiles", value.asInstanceOf[js.Any])
       
@@ -291,7 +293,8 @@ object buildMod {
       __obj.asInstanceOf[ESLintParserOptions]
     }
     
-    extension [Self <: ESLintParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ESLintParserOptions] (val x: Self) extends AnyVal {
       
       inline def setEcmaFeatures(value: ExperimentalObjectRestSpread): Self = StObject.set(x, "ecmaFeatures", value.asInstanceOf[js.Any])
       

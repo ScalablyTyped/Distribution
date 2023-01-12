@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[CollapseCallbackArgs]
     }
     
-    extension [Self <: CollapseCallbackArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseCallbackArgs] (val x: Self) extends AnyVal {
       
       inline def setContainerHeight(value: Double): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object mod {
       __obj.asInstanceOf[CollapseProps]
     }
     
-    extension [Self <: CollapseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseProps] (val x: Self) extends AnyVal {
       
       inline def setCheckTimeout(value: Double): Self = StObject.set(x, "checkTimeout", value.asInstanceOf[js.Any])
       

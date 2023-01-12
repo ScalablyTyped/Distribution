@@ -18,7 +18,8 @@ object TerraformPlanJson {
     __obj.asInstanceOf[TerraformPlanJson]
   }
   
-  extension [Self <: TerraformPlanJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerraformPlanJson] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: Rootmodule): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

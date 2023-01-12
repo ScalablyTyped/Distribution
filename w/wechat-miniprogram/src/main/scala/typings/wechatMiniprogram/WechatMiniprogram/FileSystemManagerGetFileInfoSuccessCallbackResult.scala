@@ -18,7 +18,8 @@ object FileSystemManagerGetFileInfoSuccessCallbackResult {
     __obj.asInstanceOf[FileSystemManagerGetFileInfoSuccessCallbackResult]
   }
   
-  extension [Self <: FileSystemManagerGetFileInfoSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemManagerGetFileInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

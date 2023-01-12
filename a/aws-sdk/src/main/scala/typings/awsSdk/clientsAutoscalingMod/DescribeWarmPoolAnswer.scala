@@ -28,7 +28,8 @@ object DescribeWarmPoolAnswer {
     __obj.asInstanceOf[DescribeWarmPoolAnswer]
   }
   
-  extension [Self <: DescribeWarmPoolAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeWarmPoolAnswer] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: Instances): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     

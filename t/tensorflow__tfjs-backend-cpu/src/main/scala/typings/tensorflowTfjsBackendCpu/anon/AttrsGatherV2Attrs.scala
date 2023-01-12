@@ -22,7 +22,8 @@ object AttrsGatherV2Attrs {
     __obj.asInstanceOf[AttrsGatherV2Attrs]
   }
   
-  extension [Self <: AttrsGatherV2Attrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsGatherV2Attrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: GatherV2Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

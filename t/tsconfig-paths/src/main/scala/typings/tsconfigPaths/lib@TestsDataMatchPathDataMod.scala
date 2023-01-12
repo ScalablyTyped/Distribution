@@ -51,7 +51,8 @@ object `lib@TestsDataMatchPathDataMod` {
       __obj.asInstanceOf[OneTest]
     }
     
-    extension [Self <: OneTest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OneTest] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteBaseUrl(value: String): Self = StObject.set(x, "absoluteBaseUrl", value.asInstanceOf[js.Any])
       

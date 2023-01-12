@@ -23,7 +23,8 @@ object S3SetObjectRetentionOperation {
     __obj.asInstanceOf[S3SetObjectRetentionOperation]
   }
   
-  extension [Self <: S3SetObjectRetentionOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3SetObjectRetentionOperation] (val x: Self) extends AnyVal {
     
     inline def setBypassGovernanceRetention(value: Boolean): Self = StObject.set(x, "BypassGovernanceRetention", value.asInstanceOf[js.Any])
     

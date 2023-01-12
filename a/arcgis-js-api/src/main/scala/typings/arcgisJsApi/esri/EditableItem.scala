@@ -27,7 +27,8 @@ object EditableItem {
     __obj.asInstanceOf[EditableItem]
   }
   
-  extension [Self <: EditableItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditableItem] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: FeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

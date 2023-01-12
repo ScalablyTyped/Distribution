@@ -25,7 +25,8 @@ object distWriteMod {
       __obj.asInstanceOf[WriteOptions]
     }
     
-    extension [Self <: WriteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepWriter(value: Boolean): Self = StObject.set(x, "keepWriter", value.asInstanceOf[js.Any])
       

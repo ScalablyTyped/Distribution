@@ -65,7 +65,8 @@ object PrinterDescriptor {
     __obj.asInstanceOf[PrinterDescriptor]
   }
   
-  extension [Self <: PrinterDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCanSetPaperFormat(value: Boolean): Self = StObject.set(x, "CanSetPaperFormat", value.asInstanceOf[js.Any])
     

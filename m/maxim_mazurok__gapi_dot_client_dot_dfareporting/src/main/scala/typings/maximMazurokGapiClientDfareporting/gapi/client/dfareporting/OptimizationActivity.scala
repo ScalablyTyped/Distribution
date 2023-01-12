@@ -25,7 +25,8 @@ object OptimizationActivity {
     __obj.asInstanceOf[OptimizationActivity]
   }
   
-  extension [Self <: OptimizationActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptimizationActivity] (val x: Self) extends AnyVal {
     
     inline def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
     

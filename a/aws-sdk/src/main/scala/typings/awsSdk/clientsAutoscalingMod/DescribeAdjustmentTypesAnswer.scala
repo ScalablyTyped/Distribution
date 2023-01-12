@@ -18,7 +18,8 @@ object DescribeAdjustmentTypesAnswer {
     __obj.asInstanceOf[DescribeAdjustmentTypesAnswer]
   }
   
-  extension [Self <: DescribeAdjustmentTypesAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAdjustmentTypesAnswer] (val x: Self) extends AnyVal {
     
     inline def setAdjustmentTypes(value: AdjustmentTypes): Self = StObject.set(x, "AdjustmentTypes", value.asInstanceOf[js.Any])
     

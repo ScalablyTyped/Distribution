@@ -31,7 +31,8 @@ object DetectRetina {
     __obj.asInstanceOf[DetectRetina]
   }
   
-  extension [Self <: DetectRetina](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectRetina] (val x: Self) extends AnyVal {
     
     inline def setDetectRetina(value: Boolean): Self = StObject.set(x, "detectRetina", value.asInstanceOf[js.Any])
     

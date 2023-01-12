@@ -22,7 +22,8 @@ object ClaheOptions {
     __obj.asInstanceOf[ClaheOptions]
   }
   
-  extension [Self <: ClaheOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaheOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

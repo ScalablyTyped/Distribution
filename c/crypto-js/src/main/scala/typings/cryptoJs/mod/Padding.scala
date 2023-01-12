@@ -39,7 +39,8 @@ object Padding {
     __obj.asInstanceOf[Padding]
   }
   
-  extension [Self <: Padding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Padding] (val x: Self) extends AnyVal {
     
     inline def setPad(value: (WordArray, Double) => Unit): Self = StObject.set(x, "pad", js.Any.fromFunction2(value))
     

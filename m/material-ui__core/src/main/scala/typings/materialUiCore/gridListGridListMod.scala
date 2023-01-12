@@ -45,7 +45,8 @@ object gridListGridListMod extends Shortcut {
       __obj.asInstanceOf[GridListTypeMap[P, D]]
     }
     
-    extension [Self <: GridListTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (GridListTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridListTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (GridListTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: GridListClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

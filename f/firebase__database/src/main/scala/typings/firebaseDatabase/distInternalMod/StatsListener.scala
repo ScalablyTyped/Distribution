@@ -25,7 +25,8 @@ object StatsListener {
     __obj.asInstanceOf[StatsListener]
   }
   
-  extension [Self <: StatsListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatsListener] (val x: Self) extends AnyVal {
     
     inline def setCollection_(value: Any): Self = StObject.set(x, "collection_", value.asInstanceOf[js.Any])
     

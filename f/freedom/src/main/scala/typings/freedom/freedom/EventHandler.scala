@@ -27,7 +27,8 @@ object EventHandler {
     __obj.asInstanceOf[EventHandler]
   }
   
-  extension [Self <: EventHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventHandler] (val x: Self) extends AnyVal {
     
     inline def setOff(value: (String, js.Function) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
     

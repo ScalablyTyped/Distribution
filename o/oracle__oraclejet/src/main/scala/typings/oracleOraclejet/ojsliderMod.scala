@@ -365,7 +365,8 @@ object ojsliderMod {
       __obj.asInstanceOf[ojSliderEventMap]
     }
     
-    extension [Self <: ojSliderEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSliderEventMap] (val x: Self) extends AnyVal {
       
       inline def setMaxChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "maxChanged", value.asInstanceOf[js.Any])
       
@@ -424,7 +425,8 @@ object ojsliderMod {
       __obj.asInstanceOf[ojSliderSettableProperties]
     }
     
-    extension [Self <: ojSliderSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSliderSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -494,7 +496,8 @@ object ojsliderMod {
       __obj.asInstanceOf[ojSliderSettablePropertiesLenient]
     }
     
-    extension [Self <: ojSliderSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSliderSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
       

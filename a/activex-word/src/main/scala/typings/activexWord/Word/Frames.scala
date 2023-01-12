@@ -40,7 +40,8 @@ object Frames {
     __obj.asInstanceOf[Frames]
   }
   
-  extension [Self <: Frames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Frames] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Range => Frame): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

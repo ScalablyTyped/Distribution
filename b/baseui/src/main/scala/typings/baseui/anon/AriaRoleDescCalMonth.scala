@@ -15,7 +15,8 @@ object AriaRoleDescCalMonth {
     __obj.asInstanceOf[AriaRoleDescCalMonth]
   }
   
-  extension [Self <: AriaRoleDescCalMonth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AriaRoleDescCalMonth] (val x: Self) extends AnyVal {
     
     inline def setAriaRoleDescCalMonth(value: String): Self = StObject.set(x, "ariaRoleDescCalMonth", value.asInstanceOf[js.Any])
   }

@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[JwtDecodeOptions]
     }
     
-    extension [Self <: JwtDecodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JwtDecodeOptions] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object mod {
       __obj.asInstanceOf[JwtHeader]
     }
     
-    extension [Self <: JwtHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JwtHeader] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object mod {
       __obj.asInstanceOf[JwtPayload]
     }
     
-    extension [Self <: JwtPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JwtPayload] (val x: Self) extends AnyVal {
       
       inline def setAud(value: js.Array[String] | String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
       

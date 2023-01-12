@@ -42,7 +42,8 @@ object distNodeEsmSrcApiAuthenticationIdpMod {
       __obj.asInstanceOf[SignInWithIdpRequest]
     }
     
-    extension [Self <: SignInWithIdpRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignInWithIdpRequest] (val x: Self) extends AnyVal {
       
       inline def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object distNodeEsmSrcApiAuthenticationIdpMod {
       __obj.asInstanceOf[SignInWithIdpResponse]
     }
     
-    extension [Self <: SignInWithIdpResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignInWithIdpResponse] (val x: Self) extends AnyVal {
       
       inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       

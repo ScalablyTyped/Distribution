@@ -19,7 +19,8 @@ object IOCRPage {
     __obj.asInstanceOf[IOCRPage]
   }
   
-  extension [Self <: IOCRPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOCRPage] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IOCRPage): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

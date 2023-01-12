@@ -45,7 +45,8 @@ object anon {
       __obj.asInstanceOf[PartialComponentDefinitio]
     }
     
-    extension [Self <: PartialComponentDefinitio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialComponentDefinitio] (val x: Self) extends AnyVal {
       
       inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
       
@@ -143,7 +144,8 @@ object anon {
       __obj.asInstanceOf[PartialPageDefinitions]
     }
     
-    extension [Self <: PartialPageDefinitions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPageDefinitions] (val x: Self) extends AnyVal {
       
       inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
       
@@ -281,7 +283,8 @@ object anon {
       __obj.asInstanceOf[PartialPageDefinitionsAttached]
     }
     
-    extension [Self <: PartialPageDefinitionsAttached](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPageDefinitionsAttached] (val x: Self) extends AnyVal {
       
       inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
       

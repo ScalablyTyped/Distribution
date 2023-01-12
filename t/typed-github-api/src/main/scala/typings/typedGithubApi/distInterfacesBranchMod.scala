@@ -28,7 +28,8 @@ object distInterfacesBranchMod {
       __obj.asInstanceOf[Branch]
     }
     
-    extension [Self <: Branch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Branch] (val x: Self) extends AnyVal {
       
       inline def setCommit(value: CommitSummary): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     }
@@ -49,7 +50,8 @@ object distInterfacesBranchMod {
       __obj.asInstanceOf[BranchRef]
     }
     
-    extension [Self <: BranchRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BranchRef] (val x: Self) extends AnyVal {
       
       inline def setLoadAsync(value: () => js.Promise[Branch | Null]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction0(value))
       
@@ -76,7 +78,8 @@ object distInterfacesBranchMod {
       __obj.asInstanceOf[BranchSummary]
     }
     
-    extension [Self <: BranchSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BranchSummary] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -104,7 +107,8 @@ object distInterfacesBranchMod {
       __obj.asInstanceOf[BranchSummaryWithRepository]
     }
     
-    extension [Self <: BranchSummaryWithRepository](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BranchSummaryWithRepository] (val x: Self) extends AnyVal {
       
       inline def setRepository(value: Repository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     }

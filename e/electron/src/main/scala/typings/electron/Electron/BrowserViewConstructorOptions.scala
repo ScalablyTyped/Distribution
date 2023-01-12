@@ -18,7 +18,8 @@ object BrowserViewConstructorOptions {
     __obj.asInstanceOf[BrowserViewConstructorOptions]
   }
   
-  extension [Self <: BrowserViewConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserViewConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setWebPreferences(value: WebPreferences): Self = StObject.set(x, "webPreferences", value.asInstanceOf[js.Any])
     

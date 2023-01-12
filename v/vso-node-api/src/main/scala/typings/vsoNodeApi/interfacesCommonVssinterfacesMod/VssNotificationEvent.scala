@@ -44,7 +44,8 @@ object VssNotificationEvent {
     __obj.asInstanceOf[VssNotificationEvent]
   }
   
-  extension [Self <: VssNotificationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VssNotificationEvent] (val x: Self) extends AnyVal {
     
     inline def setActors(value: js.Array[EventActor]): Self = StObject.set(x, "actors", value.asInstanceOf[js.Any])
     

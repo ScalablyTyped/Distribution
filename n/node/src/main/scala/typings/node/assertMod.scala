@@ -1100,7 +1100,8 @@ object assertMod {
       __obj.asInstanceOf[CallTrackerCall]
     }
     
-    extension [Self <: CallTrackerCall](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallTrackerCall] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: js.Array[Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -1133,7 +1134,8 @@ object assertMod {
       __obj.asInstanceOf[CallTrackerReportInformation]
     }
     
-    extension [Self <: CallTrackerReportInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallTrackerReportInformation] (val x: Self) extends AnyVal {
       
       inline def setActual(value: Double): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       

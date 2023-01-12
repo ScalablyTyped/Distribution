@@ -23,7 +23,8 @@ object ListSlackChannelConfigurationsResult {
     __obj.asInstanceOf[ListSlackChannelConfigurationsResult]
   }
   
-  extension [Self <: ListSlackChannelConfigurationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSlackChannelConfigurationsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: paginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

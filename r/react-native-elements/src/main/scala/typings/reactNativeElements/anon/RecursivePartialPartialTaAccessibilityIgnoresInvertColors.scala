@@ -227,7 +227,8 @@ object RecursivePartialPartialTaAccessibilityIgnoresInvertColors {
     __obj.asInstanceOf[RecursivePartialPartialTaAccessibilityIgnoresInvertColors]
   }
   
-  extension [Self <: RecursivePartialPartialTaAccessibilityIgnoresInvertColors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialPartialTaAccessibilityIgnoresInvertColors] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

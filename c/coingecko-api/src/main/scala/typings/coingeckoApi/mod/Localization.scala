@@ -79,7 +79,8 @@ object Localization {
     __obj.asInstanceOf[Localization]
   }
   
-  extension [Self <: Localization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Localization] (val x: Self) extends AnyVal {
     
     inline def setAr(value: String): Self = StObject.set(x, "ar", value.asInstanceOf[js.Any])
     

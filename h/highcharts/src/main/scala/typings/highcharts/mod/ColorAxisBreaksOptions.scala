@@ -37,7 +37,8 @@ object ColorAxisBreaksOptions {
     __obj.asInstanceOf[ColorAxisBreaksOptions]
   }
   
-  extension [Self <: ColorAxisBreaksOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorAxisBreaksOptions] (val x: Self) extends AnyVal {
     
     inline def setBreakSize(value: Double): Self = StObject.set(x, "breakSize", value.asInstanceOf[js.Any])
     

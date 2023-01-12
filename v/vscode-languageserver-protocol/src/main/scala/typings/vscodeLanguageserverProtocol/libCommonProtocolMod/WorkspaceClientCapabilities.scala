@@ -111,7 +111,8 @@ object WorkspaceClientCapabilities {
     __obj.asInstanceOf[WorkspaceClientCapabilities]
   }
   
-  extension [Self <: WorkspaceClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setApplyEdit(value: Boolean): Self = StObject.set(x, "applyEdit", value.asInstanceOf[js.Any])
     

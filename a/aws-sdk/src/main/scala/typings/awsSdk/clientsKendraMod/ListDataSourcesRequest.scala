@@ -28,7 +28,8 @@ object ListDataSourcesRequest {
     __obj.asInstanceOf[ListDataSourcesRequest]
   }
   
-  extension [Self <: ListDataSourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataSourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
     

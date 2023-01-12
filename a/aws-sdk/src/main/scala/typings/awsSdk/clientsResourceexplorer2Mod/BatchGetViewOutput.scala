@@ -23,7 +23,8 @@ object BatchGetViewOutput {
     __obj.asInstanceOf[BatchGetViewOutput]
   }
   
-  extension [Self <: BatchGetViewOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetViewOutput] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: BatchGetViewErrors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     

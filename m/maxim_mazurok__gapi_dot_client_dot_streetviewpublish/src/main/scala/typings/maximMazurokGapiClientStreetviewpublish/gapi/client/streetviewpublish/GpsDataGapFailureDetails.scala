@@ -19,7 +19,8 @@ object GpsDataGapFailureDetails {
     __obj.asInstanceOf[GpsDataGapFailureDetails]
   }
   
-  extension [Self <: GpsDataGapFailureDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GpsDataGapFailureDetails] (val x: Self) extends AnyVal {
     
     inline def setGapDuration(value: String): Self = StObject.set(x, "gapDuration", value.asInstanceOf[js.Any])
     

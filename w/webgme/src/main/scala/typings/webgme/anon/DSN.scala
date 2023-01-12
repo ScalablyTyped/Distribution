@@ -19,7 +19,8 @@ object DSN {
     __obj.asInstanceOf[DSN]
   }
   
-  extension [Self <: DSN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DSN] (val x: Self) extends AnyVal {
     
     inline def setDSN(value: String): Self = StObject.set(x, "DSN", value.asInstanceOf[js.Any])
     

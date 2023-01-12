@@ -18,7 +18,8 @@ object CreateSampleFindingsRequest {
     __obj.asInstanceOf[CreateSampleFindingsRequest]
   }
   
-  extension [Self <: CreateSampleFindingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSampleFindingsRequest] (val x: Self) extends AnyVal {
     
     inline def setFindingTypes(value: listOfFindingType): Self = StObject.set(x, "findingTypes", value.asInstanceOf[js.Any])
     

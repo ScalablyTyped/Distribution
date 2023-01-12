@@ -39,7 +39,8 @@ object NamedRange {
     __obj.asInstanceOf[NamedRange]
   }
   
-  extension [Self <: NamedRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedRange] (val x: Self) extends AnyVal {
     
     inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     

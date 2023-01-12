@@ -79,7 +79,8 @@ object BlockedErrorCellValue {
     __obj.asInstanceOf[BlockedErrorCellValue]
   }
   
-  extension [Self <: BlockedErrorCellValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockedErrorCellValue] (val x: Self) extends AnyVal {
     
     inline def setBasicType(value: error | Error): Self = StObject.set(x, "basicType", value.asInstanceOf[js.Any])
     

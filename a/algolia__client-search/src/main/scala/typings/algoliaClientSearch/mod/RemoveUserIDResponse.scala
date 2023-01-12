@@ -18,7 +18,8 @@ object RemoveUserIDResponse {
     __obj.asInstanceOf[RemoveUserIDResponse]
   }
   
-  extension [Self <: RemoveUserIDResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveUserIDResponse] (val x: Self) extends AnyVal {
     
     inline def setDeletedAt(value: String): Self = StObject.set(x, "deletedAt", value.asInstanceOf[js.Any])
   }

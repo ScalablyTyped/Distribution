@@ -99,7 +99,8 @@ object XAccessibleExtendedComponent {
     __obj.asInstanceOf[XAccessibleExtendedComponent]
   }
   
-  extension [Self <: XAccessibleExtendedComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleExtendedComponent] (val x: Self) extends AnyVal {
     
     inline def setFont(value: XFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDownloadApkEnd(value: String => Any): Self = StObject.set(x, "downloadApkEnd", js.Any.fromFunction1(value))
       

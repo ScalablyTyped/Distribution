@@ -26,7 +26,8 @@ object CallInfo {
     __obj.asInstanceOf[CallInfo[Fn]]
   }
   
-  extension [Self <: CallInfo[?], Fn /* <: Func */](x: Self & CallInfo[Fn]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallInfo[?], Fn /* <: Func */] (val x: Self & CallInfo[Fn]) extends AnyVal {
     
     inline def setArgs(value: Parameters[Fn]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

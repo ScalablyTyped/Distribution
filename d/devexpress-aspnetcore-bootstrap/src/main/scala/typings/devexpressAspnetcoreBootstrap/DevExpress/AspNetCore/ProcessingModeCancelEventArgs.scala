@@ -17,7 +17,8 @@ object ProcessingModeCancelEventArgs {
     __obj.asInstanceOf[ProcessingModeCancelEventArgs]
   }
   
-  extension [Self <: ProcessingModeCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessingModeCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }

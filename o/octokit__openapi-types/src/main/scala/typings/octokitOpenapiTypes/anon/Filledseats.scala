@@ -23,7 +23,8 @@ object Filledseats {
     __obj.asInstanceOf[Filledseats]
   }
   
-  extension [Self <: Filledseats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Filledseats] (val x: Self) extends AnyVal {
     
     inline def setFilled_seats(value: Double): Self = StObject.set(x, "filled_seats", value.asInstanceOf[js.Any])
     

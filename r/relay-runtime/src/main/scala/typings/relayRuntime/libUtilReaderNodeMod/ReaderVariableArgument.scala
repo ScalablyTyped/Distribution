@@ -24,7 +24,8 @@ object ReaderVariableArgument {
     __obj.asInstanceOf[ReaderVariableArgument]
   }
   
-  extension [Self <: ReaderVariableArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderVariableArgument] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

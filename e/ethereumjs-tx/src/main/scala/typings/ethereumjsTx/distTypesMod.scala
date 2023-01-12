@@ -26,7 +26,8 @@ object distTypesMod {
       __obj.asInstanceOf[FakeTxData]
     }
     
-    extension [Self <: FakeTxData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FakeTxData] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: BufferLike): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object distTypesMod {
       __obj.asInstanceOf[TransactionOptions]
     }
     
-    extension [Self <: TransactionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionOptions] (val x: Self) extends AnyVal {
       
       inline def setChain(value: Double | String): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object distTypesMod {
       __obj.asInstanceOf[TransformableToBuffer]
     }
     
-    extension [Self <: TransformableToBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformableToBuffer] (val x: Self) extends AnyVal {
       
       inline def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
     }
@@ -147,7 +150,8 @@ object distTypesMod {
       __obj.asInstanceOf[TxData]
     }
     
-    extension [Self <: TxData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TxData] (val x: Self) extends AnyVal {
       
       inline def setData(value: BufferLike): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

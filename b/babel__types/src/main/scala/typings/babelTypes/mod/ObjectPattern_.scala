@@ -31,7 +31,8 @@ object ObjectPattern_ {
     __obj.asInstanceOf[ObjectPattern_]
   }
   
-  extension [Self <: ObjectPattern_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectPattern_] (val x: Self) extends AnyVal {
     
     inline def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     

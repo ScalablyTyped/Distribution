@@ -16,7 +16,8 @@ object RegionDisksResizeRequest {
     __obj.asInstanceOf[RegionDisksResizeRequest]
   }
   
-  extension [Self <: RegionDisksResizeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionDisksResizeRequest] (val x: Self) extends AnyVal {
     
     inline def setSizeGb(value: String): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
     

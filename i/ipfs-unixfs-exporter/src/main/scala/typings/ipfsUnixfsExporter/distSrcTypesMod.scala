@@ -55,7 +55,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[ExporterOptions]
     }
     
-    extension [Self <: ExporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExporterOptions] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[NextResult]
     }
     
-    extension [Self <: NextResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NextResult] (val x: Self) extends AnyVal {
       
       inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[ResolveResult]
     }
     
-    extension [Self <: ResolveResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveResult] (val x: Self) extends AnyVal {
       
       inline def setEntry(value: UnixFSEntry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
@@ -203,7 +206,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[ShardTraversalContext]
     }
     
-    extension [Self <: ShardTraversalContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShardTraversalContext] (val x: Self) extends AnyVal {
       
       inline def setHamtDepth(value: Double): Self = StObject.set(x, "hamtDepth", value.asInstanceOf[js.Any])
       

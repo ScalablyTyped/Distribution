@@ -24,7 +24,8 @@ object IterationCount {
     __obj.asInstanceOf[IterationCount]
   }
   
-  extension [Self <: IterationCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IterationCount] (val x: Self) extends AnyVal {
     
     inline def setIterationCount(value: String): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
     

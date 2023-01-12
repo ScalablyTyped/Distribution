@@ -17,7 +17,8 @@ object NodesJvmThreads {
     __obj.asInstanceOf[NodesJvmThreads]
   }
   
-  extension [Self <: NodesJvmThreads](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesJvmThreads] (val x: Self) extends AnyVal {
     
     inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

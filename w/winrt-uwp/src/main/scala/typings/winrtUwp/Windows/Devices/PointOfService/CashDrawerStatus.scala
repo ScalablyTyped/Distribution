@@ -20,7 +20,8 @@ object CashDrawerStatus {
     __obj.asInstanceOf[CashDrawerStatus]
   }
   
-  extension [Self <: CashDrawerStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CashDrawerStatus] (val x: Self) extends AnyVal {
     
     inline def setExtendedStatus(value: Double): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
     

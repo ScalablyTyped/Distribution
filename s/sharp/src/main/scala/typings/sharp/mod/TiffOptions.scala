@@ -54,7 +54,8 @@ object TiffOptions {
     __obj.asInstanceOf[TiffOptions]
   }
   
-  extension [Self <: TiffOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TiffOptions] (val x: Self) extends AnyVal {
     
     inline def setBitdepth(value: `1` | `2` | `4` | `8`): Self = StObject.set(x, "bitdepth", value.asInstanceOf[js.Any])
     

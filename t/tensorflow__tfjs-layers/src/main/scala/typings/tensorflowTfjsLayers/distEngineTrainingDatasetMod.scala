@@ -41,7 +41,8 @@ object distEngineTrainingDatasetMod {
       __obj.asInstanceOf[FitDatasetElement]
     }
     
-    extension [Self <: FitDatasetElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FitDatasetElement] (val x: Self) extends AnyVal {
       
       inline def setXs(value: TensorOrArrayOrMap): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object distEngineTrainingDatasetMod {
       __obj.asInstanceOf[ModelEvaluateDatasetArgs]
     }
     
-    extension [Self <: ModelEvaluateDatasetArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelEvaluateDatasetArgs] (val x: Self) extends AnyVal {
       
       inline def setBatches(value: Double): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
       
@@ -227,7 +229,8 @@ object distEngineTrainingDatasetMod {
       __obj.asInstanceOf[ModelFitDatasetArgs[T]]
     }
     
-    extension [Self <: ModelFitDatasetArgs[?], T](x: Self & ModelFitDatasetArgs[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelFitDatasetArgs[?], T] (val x: Self & ModelFitDatasetArgs[T]) extends AnyVal {
       
       inline def setBatchesPerEpoch(value: Double): Self = StObject.set(x, "batchesPerEpoch", value.asInstanceOf[js.Any])
       

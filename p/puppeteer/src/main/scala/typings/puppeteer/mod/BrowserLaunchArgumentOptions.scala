@@ -44,7 +44,8 @@ object BrowserLaunchArgumentOptions {
     __obj.asInstanceOf[BrowserLaunchArgumentOptions]
   }
   
-  extension [Self <: BrowserLaunchArgumentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserLaunchArgumentOptions] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

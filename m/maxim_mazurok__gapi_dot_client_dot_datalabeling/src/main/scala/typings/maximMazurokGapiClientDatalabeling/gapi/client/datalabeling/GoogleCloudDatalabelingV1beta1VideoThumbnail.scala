@@ -19,7 +19,8 @@ object GoogleCloudDatalabelingV1beta1VideoThumbnail {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1VideoThumbnail]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1VideoThumbnail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1VideoThumbnail] (val x: Self) extends AnyVal {
     
     inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     

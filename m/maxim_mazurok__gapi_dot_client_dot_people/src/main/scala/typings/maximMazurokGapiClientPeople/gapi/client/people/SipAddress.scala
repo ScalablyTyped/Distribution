@@ -25,7 +25,8 @@ object SipAddress {
     __obj.asInstanceOf[SipAddress]
   }
   
-  extension [Self <: SipAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SipAddress] (val x: Self) extends AnyVal {
     
     inline def setFormattedType(value: String): Self = StObject.set(x, "formattedType", value.asInstanceOf[js.Any])
     

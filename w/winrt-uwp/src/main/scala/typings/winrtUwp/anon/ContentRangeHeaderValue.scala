@@ -18,7 +18,8 @@ object ContentRangeHeaderValue {
     __obj.asInstanceOf[ContentRangeHeaderValue]
   }
   
-  extension [Self <: ContentRangeHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentRangeHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setContentRangeHeaderValue(value: HttpContentRangeHeaderValue): Self = StObject.set(x, "contentRangeHeaderValue", value.asInstanceOf[js.Any])
     

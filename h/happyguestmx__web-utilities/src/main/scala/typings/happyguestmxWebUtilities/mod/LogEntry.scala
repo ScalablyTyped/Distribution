@@ -28,7 +28,8 @@ object LogEntry {
     __obj.asInstanceOf[LogEntry]
   }
   
-  extension [Self <: LogEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogEntry] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

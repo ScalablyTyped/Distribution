@@ -15,7 +15,8 @@ object SessionInfo {
     __obj.asInstanceOf[SessionInfo]
   }
   
-  extension [Self <: SessionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionInfo] (val x: Self) extends AnyVal {
     
     inline def setSessionInfo(value: String): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
   }

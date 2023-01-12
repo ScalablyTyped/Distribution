@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_tinyscrollbar"
-version := "1.8-dt-20221103Z-3994d7"
+version := "1.8-dt-20221103Z-1fe66a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

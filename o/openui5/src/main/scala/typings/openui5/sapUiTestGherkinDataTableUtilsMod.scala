@@ -70,7 +70,8 @@ object sapUiTestGherkinDataTableUtilsMod extends Shortcut {
     @js.native
     val ^ : normalization = js.native
     
-    extension [Self <: normalization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: normalization] (val x: Self) extends AnyVal {
       
       inline def setCamelCase(value: String => String): Self = StObject.set(x, "camelCase", js.Any.fromFunction1(value))
       

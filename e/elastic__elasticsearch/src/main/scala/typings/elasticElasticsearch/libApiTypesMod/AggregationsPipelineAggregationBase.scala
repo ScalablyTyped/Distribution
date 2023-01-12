@@ -19,7 +19,8 @@ object AggregationsPipelineAggregationBase {
     __obj.asInstanceOf[AggregationsPipelineAggregationBase]
   }
   
-  extension [Self <: AggregationsPipelineAggregationBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsPipelineAggregationBase] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

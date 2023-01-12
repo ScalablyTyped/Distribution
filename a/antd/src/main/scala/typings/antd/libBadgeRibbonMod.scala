@@ -51,7 +51,8 @@ object libBadgeRibbonMod extends Shortcut {
       __obj.asInstanceOf[RibbonProps]
     }
     
-    extension [Self <: RibbonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RibbonProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

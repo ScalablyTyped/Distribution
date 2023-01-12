@@ -16,7 +16,8 @@ object GoogleSecuritySafebrowsingV4Checksum {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4Checksum]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4Checksum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4Checksum] (val x: Self) extends AnyVal {
     
     inline def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     

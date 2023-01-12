@@ -27,7 +27,8 @@ object ArgsTableOptionProps {
     __obj.asInstanceOf[ArgsTableOptionProps]
   }
   
-  extension [Self <: ArgsTableOptionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArgsTableOptionProps] (val x: Self) extends AnyVal {
     
     inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     

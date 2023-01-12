@@ -33,7 +33,8 @@ object TestRoleRequest {
     __obj.asInstanceOf[TestRoleRequest]
   }
   
-  extension [Self <: TestRoleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestRoleRequest] (val x: Self) extends AnyVal {
     
     inline def setInputBucket(value: BucketName): Self = StObject.set(x, "InputBucket", value.asInstanceOf[js.Any])
     

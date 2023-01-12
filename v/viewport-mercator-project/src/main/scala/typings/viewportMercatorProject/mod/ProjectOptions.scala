@@ -15,7 +15,8 @@ object ProjectOptions {
     __obj.asInstanceOf[ProjectOptions]
   }
   
-  extension [Self <: ProjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectOptions] (val x: Self) extends AnyVal {
     
     inline def setTopLeft(value: Boolean): Self = StObject.set(x, "topLeft", value.asInstanceOf[js.Any])
     

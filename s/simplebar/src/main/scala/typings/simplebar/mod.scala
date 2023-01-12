@@ -114,7 +114,8 @@ object mod {
       __obj.asInstanceOf[KnownClassNamesOptions]
     }
     
-    extension [Self <: KnownClassNamesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KnownClassNamesOptions] (val x: Self) extends AnyVal {
       
       inline def setContentEl(value: String): Self = StObject.set(x, "contentEl", value.asInstanceOf[js.Any])
       
@@ -203,7 +204,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
       
@@ -264,7 +266,8 @@ object mod {
       __obj.asInstanceOf[SimpleBar]
     }
     
-    extension [Self <: SimpleBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleBar] (val x: Self) extends AnyVal {
       
       inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       

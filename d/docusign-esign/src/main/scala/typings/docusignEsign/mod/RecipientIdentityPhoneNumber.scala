@@ -22,7 +22,8 @@ object RecipientIdentityPhoneNumber {
     __obj.asInstanceOf[RecipientIdentityPhoneNumber]
   }
   
-  extension [Self <: RecipientIdentityPhoneNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientIdentityPhoneNumber] (val x: Self) extends AnyVal {
     
     inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     

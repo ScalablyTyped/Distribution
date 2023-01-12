@@ -81,7 +81,8 @@ object esComponentsPickerPickerMod {
       __obj.asInstanceOf[PickerActions]
     }
     
-    extension [Self <: PickerActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerActions] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -407,7 +408,8 @@ object esComponentsPickerPickerMod {
       __obj.asInstanceOf[PickerProps]
     }
     
-    extension [Self <: PickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

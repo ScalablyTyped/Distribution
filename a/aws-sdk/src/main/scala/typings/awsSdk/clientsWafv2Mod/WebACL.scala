@@ -99,7 +99,8 @@ object WebACL {
     __obj.asInstanceOf[WebACL]
   }
   
-  extension [Self <: WebACL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebACL] (val x: Self) extends AnyVal {
     
     inline def setARN(value: ResourceArn): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

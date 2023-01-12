@@ -85,7 +85,8 @@ object DocumentListParams {
     __obj.asInstanceOf[DocumentListParams]
   }
   
-  extension [Self <: DocumentListParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentListParams] (val x: Self) extends AnyVal {
     
     inline def setConflicts(value: Boolean): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     

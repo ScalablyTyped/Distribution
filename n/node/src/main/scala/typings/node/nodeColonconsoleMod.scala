@@ -132,7 +132,8 @@ object nodeColonconsoleMod {
           __obj.asInstanceOf[ConsoleConstructorOptions]
         }
         
-        extension [Self <: ConsoleConstructorOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ConsoleConstructorOptions] (val x: Self) extends AnyVal {
           
           inline def setColorMode(value: Boolean | auto): Self = StObject.set(x, "colorMode", value.asInstanceOf[js.Any])
           

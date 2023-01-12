@@ -18,7 +18,8 @@ object BubbleParsedData {
     __obj.asInstanceOf[BubbleParsedData]
   }
   
-  extension [Self <: BubbleParsedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BubbleParsedData] (val x: Self) extends AnyVal {
     
     inline def set_custom(value: Double): Self = StObject.set(x, "_custom", value.asInstanceOf[js.Any])
   }

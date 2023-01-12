@@ -22,7 +22,8 @@ object DynamicLinkWarning {
     __obj.asInstanceOf[DynamicLinkWarning]
   }
   
-  extension [Self <: DynamicLinkWarning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicLinkWarning] (val x: Self) extends AnyVal {
     
     inline def setWarningCode(value: String): Self = StObject.set(x, "warningCode", value.asInstanceOf[js.Any])
     

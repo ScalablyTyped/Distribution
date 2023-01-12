@@ -18,7 +18,8 @@ object UpdateTypeResponse {
     __obj.asInstanceOf[UpdateTypeResponse]
   }
   
-  extension [Self <: UpdateTypeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTypeResponse] (val x: Self) extends AnyVal {
     
     inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

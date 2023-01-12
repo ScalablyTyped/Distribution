@@ -42,7 +42,8 @@ object LongPressEvent {
     __obj.asInstanceOf[LongPressEvent]
   }
   
-  extension [Self <: LongPressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LongPressEvent] (val x: Self) extends AnyVal {
     
     inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     

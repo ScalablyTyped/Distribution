@@ -33,7 +33,8 @@ object StartContentUploadResponse {
     __obj.asInstanceOf[StartContentUploadResponse]
   }
   
-  extension [Self <: StartContentUploadResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartContentUploadResponse] (val x: Self) extends AnyVal {
     
     inline def setHeadersToInclude(value: Headers): Self = StObject.set(x, "headersToInclude", value.asInstanceOf[js.Any])
     

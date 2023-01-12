@@ -29,7 +29,8 @@ object libApiRegistererUnregisterOptionsMod {
       __obj.asInstanceOf[RegistererUnregisterOptions]
     }
     
-    extension [Self <: RegistererUnregisterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegistererUnregisterOptions] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       

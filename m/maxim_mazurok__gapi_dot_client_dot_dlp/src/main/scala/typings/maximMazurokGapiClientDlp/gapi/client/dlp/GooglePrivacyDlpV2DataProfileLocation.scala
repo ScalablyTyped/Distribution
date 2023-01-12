@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2DataProfileLocation {
     __obj.asInstanceOf[GooglePrivacyDlpV2DataProfileLocation]
   }
   
-  extension [Self <: GooglePrivacyDlpV2DataProfileLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2DataProfileLocation] (val x: Self) extends AnyVal {
     
     inline def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
     

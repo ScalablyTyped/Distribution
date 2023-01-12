@@ -56,7 +56,8 @@ object AndroidApp {
     __obj.asInstanceOf[AndroidApp]
   }
   
-  extension [Self <: AndroidApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidApp] (val x: Self) extends AnyVal {
     
     inline def setApiKeyId(value: String): Self = StObject.set(x, "apiKeyId", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ShellOptions {
     __obj.asInstanceOf[ShellOptions]
   }
   
-  extension [Self <: ShellOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShellOptions] (val x: Self) extends AnyVal {
     
     inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     

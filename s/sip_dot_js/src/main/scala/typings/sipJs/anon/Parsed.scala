@@ -17,7 +17,8 @@ object Parsed {
     __obj.asInstanceOf[Parsed]
   }
   
-  extension [Self <: Parsed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parsed] (val x: Self) extends AnyVal {
     
     inline def setParsed(value: Any): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     

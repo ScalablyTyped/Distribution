@@ -52,7 +52,8 @@ object distLoadStrategiesImageLoadStrategyMod {
       __obj.asInstanceOf[IImageLoadConfig]
     }
     
-    extension [Self <: IImageLoadConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IImageLoadConfig] (val x: Self) extends AnyVal {
       
       inline def setLoadElement(value: HTMLImageElement): Self = StObject.set(x, "loadElement", value.asInstanceOf[js.Any])
       

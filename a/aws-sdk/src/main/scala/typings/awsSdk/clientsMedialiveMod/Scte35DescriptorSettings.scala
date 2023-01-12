@@ -18,7 +18,8 @@ object Scte35DescriptorSettings {
     __obj.asInstanceOf[Scte35DescriptorSettings]
   }
   
-  extension [Self <: Scte35DescriptorSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scte35DescriptorSettings] (val x: Self) extends AnyVal {
     
     inline def setSegmentationDescriptorScte35DescriptorSettings(value: Scte35SegmentationDescriptor): Self = StObject.set(x, "SegmentationDescriptorScte35DescriptorSettings", value.asInstanceOf[js.Any])
   }

@@ -98,7 +98,8 @@ object MKRadioButtonProperties {
     __obj.asInstanceOf[MKRadioButtonProperties]
   }
   
-  extension [Self <: MKRadioButtonProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MKRadioButtonProperties] (val x: Self) extends AnyVal {
     
     inline def setBorderOffColor(value: String): Self = StObject.set(x, "borderOffColor", value.asInstanceOf[js.Any])
     

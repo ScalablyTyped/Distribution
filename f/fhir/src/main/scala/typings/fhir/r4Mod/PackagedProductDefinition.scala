@@ -99,7 +99,8 @@ object PackagedProductDefinition {
     __obj.asInstanceOf[PackagedProductDefinition]
   }
   
-  extension [Self <: PackagedProductDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackagedProductDefinition] (val x: Self) extends AnyVal {
     
     inline def setCharacteristic(value: js.Array[CodeableConcept]): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
     

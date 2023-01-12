@@ -20,7 +20,8 @@ object Exact {
     __obj.asInstanceOf[Exact[E]]
   }
   
-  extension [Self <: Exact[?], E /* <: js.Object */](x: Self & Exact[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exact[?], E /* <: js.Object */] (val x: Self & Exact[E]) extends AnyVal {
     
     inline def setExact(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof E ]: lokijs.ExactIndex<E>} */ js.Any

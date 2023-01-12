@@ -18,7 +18,8 @@ object KeyPairSyncResult {
     __obj.asInstanceOf[KeyPairSyncResult[T1, T2]]
   }
   
-  extension [Self <: KeyPairSyncResult[?, ?], T1 /* <: String | Buffer */, T2 /* <: String | Buffer */](x: Self & (KeyPairSyncResult[T1, T2])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyPairSyncResult[?, ?], T1 /* <: String | Buffer */, T2 /* <: String | Buffer */] (val x: Self & (KeyPairSyncResult[T1, T2])) extends AnyVal {
     
     inline def setPrivateKey(value: T2): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     

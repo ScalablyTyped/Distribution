@@ -56,7 +56,8 @@ object MapStyler {
     __obj.asInstanceOf[MapStyler]
   }
   
-  extension [Self <: MapStyler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapStyler] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

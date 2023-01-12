@@ -32,7 +32,8 @@ object DescribeExportTasksReques {
     __obj.asInstanceOf[DescribeExportTasksReques]
   }
   
-  extension [Self <: DescribeExportTasksReques](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeExportTasksReques] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

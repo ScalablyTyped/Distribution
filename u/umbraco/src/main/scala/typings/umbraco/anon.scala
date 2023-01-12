@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[Error[T]]
     }
     
-    extension [Self <: Error[?], T](x: Self & Error[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error[?], T] (val x: Self & Error[T]) extends AnyVal {
       
       inline def setError(
         value: (IResourcePromise, /* status */ Double, /* headers */ IHttpHeadersGetter, /* config */ IRequestConfig) => Unit
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[ErrorMsg[T]]
     }
     
-    extension [Self <: ErrorMsg[?], T](x: Self & ErrorMsg[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorMsg[?], T] (val x: Self & ErrorMsg[T]) extends AnyVal {
       
       inline def setErrorMsg(value: String): Self = StObject.set(x, "errorMsg", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Filter]
     }
     
-    extension [Self <: Filter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -122,7 +125,8 @@ object anon {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     }

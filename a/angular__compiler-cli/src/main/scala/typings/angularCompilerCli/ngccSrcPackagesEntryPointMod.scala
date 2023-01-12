@@ -102,7 +102,8 @@ object ngccSrcPackagesEntryPointMod {
       __obj.asInstanceOf[EntryPoint]
     }
     
-    extension [Self <: EntryPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryPoint] (val x: Self) extends AnyVal {
       
       inline def setCompiledByAngular(value: Boolean): Self = StObject.set(x, "compiledByAngular", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object ngccSrcPackagesEntryPointMod {
       __obj.asInstanceOf[EntryPointPackageJson]
     }
     
-    extension [Self <: EntryPointPackageJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryPointPackageJson] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -265,7 +267,8 @@ object ngccSrcPackagesEntryPointMod {
       __obj.asInstanceOf[PackageJsonFormatPropertiesMap]
     }
     
-    extension [Self <: PackageJsonFormatPropertiesMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageJsonFormatPropertiesMap] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       

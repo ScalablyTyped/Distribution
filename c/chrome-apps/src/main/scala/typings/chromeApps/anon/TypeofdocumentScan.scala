@@ -22,7 +22,8 @@ object TypeofdocumentScan {
     __obj.asInstanceOf[TypeofdocumentScan]
   }
   
-  extension [Self <: TypeofdocumentScan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofdocumentScan] (val x: Self) extends AnyVal {
     
     inline def setScan(value: (DocumentScanOptions, js.Function1[/* result */ DocumentScanCallbackArg, Unit]) => Unit): Self = StObject.set(x, "scan", js.Any.fromFunction2(value))
   }

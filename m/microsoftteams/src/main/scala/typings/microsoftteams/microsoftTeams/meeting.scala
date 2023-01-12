@@ -63,7 +63,8 @@ object meeting {
       __obj.asInstanceOf[IConversation]
     }
     
-    extension [Self <: IConversation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConversation] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -108,7 +109,8 @@ object meeting {
       __obj.asInstanceOf[IDetails]
     }
     
-    extension [Self <: IDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetails] (val x: Self) extends AnyVal {
       
       inline def setJoinUrl(value: String): Self = StObject.set(x, "joinUrl", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object meeting {
       __obj.asInstanceOf[IMeetingDetails]
     }
     
-    extension [Self <: IMeetingDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMeetingDetails] (val x: Self) extends AnyVal {
       
       inline def setConversation(value: IConversation): Self = StObject.set(x, "conversation", value.asInstanceOf[js.Any])
       
@@ -191,7 +194,8 @@ object meeting {
       __obj.asInstanceOf[IOrganizer]
     }
     
-    extension [Self <: IOrganizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOrganizer] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -222,7 +226,8 @@ object meeting {
       __obj.asInstanceOf[LiveStreamState]
     }
     
-    extension [Self <: LiveStreamState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiveStreamState] (val x: Self) extends AnyVal {
       
       inline def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

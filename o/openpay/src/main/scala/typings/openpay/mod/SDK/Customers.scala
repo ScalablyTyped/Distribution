@@ -71,7 +71,8 @@ object Customers {
       __obj.asInstanceOf[typings.openpay.mod.SDK.Customers.BankAccounts]
     }
     
-    extension [Self <: typings.openpay.mod.SDK.Customers.BankAccounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.openpay.mod.SDK.Customers.BankAccounts] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (String, Any, Callback[Any]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
       
@@ -105,7 +106,8 @@ object Customers {
       __obj.asInstanceOf[typings.openpay.mod.SDK.Customers.Cards]
     }
     
-    extension [Self <: typings.openpay.mod.SDK.Customers.Cards](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.openpay.mod.SDK.Customers.Cards] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (String, Any, Callback[Any]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
       
@@ -142,7 +144,8 @@ object Customers {
       __obj.asInstanceOf[typings.openpay.mod.SDK.Customers.Charges]
     }
     
-    extension [Self <: typings.openpay.mod.SDK.Customers.Charges](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.openpay.mod.SDK.Customers.Charges] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: (String, String, js.Object, Callback[Any]) => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction4(value))
       
@@ -156,7 +159,8 @@ object Customers {
     }
   }
   
-  extension [Self <: Customers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Customers] (val x: Self) extends AnyVal {
     
     inline def setBankaccounts(value: typings.openpay.mod.SDK.Customers.BankAccounts): Self = StObject.set(x, "bankaccounts", value.asInstanceOf[js.Any])
     
@@ -200,7 +204,8 @@ object Customers {
       __obj.asInstanceOf[typings.openpay.mod.SDK.Customers.Payouts]
     }
     
-    extension [Self <: typings.openpay.mod.SDK.Customers.Payouts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.openpay.mod.SDK.Customers.Payouts] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (String, Any, Callback[Any]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
       
@@ -235,7 +240,8 @@ object Customers {
       __obj.asInstanceOf[Subscriptions]
     }
     
-    extension [Self <: Subscriptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscriptions] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (String, Any, Callback[Any]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
       
@@ -268,7 +274,8 @@ object Customers {
       __obj.asInstanceOf[typings.openpay.mod.SDK.Customers.Transfers]
     }
     
-    extension [Self <: typings.openpay.mod.SDK.Customers.Transfers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.openpay.mod.SDK.Customers.Transfers] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (String, Any, Callback[Any]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
       

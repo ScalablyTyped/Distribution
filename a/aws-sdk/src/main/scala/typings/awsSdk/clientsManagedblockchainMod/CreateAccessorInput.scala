@@ -23,7 +23,8 @@ object CreateAccessorInput {
     __obj.asInstanceOf[CreateAccessorInput]
   }
   
-  extension [Self <: CreateAccessorInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAccessorInput] (val x: Self) extends AnyVal {
     
     inline def setAccessorType(value: AccessorType): Self = StObject.set(x, "AccessorType", value.asInstanceOf[js.Any])
     

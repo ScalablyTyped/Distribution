@@ -17,7 +17,8 @@ object IBufferState {
     __obj.asInstanceOf[IBufferState]
   }
   
-  extension [Self <: IBufferState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBufferState] (val x: Self) extends AnyVal {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

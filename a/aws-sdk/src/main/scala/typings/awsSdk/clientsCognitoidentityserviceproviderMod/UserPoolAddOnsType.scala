@@ -18,7 +18,8 @@ object UserPoolAddOnsType {
     __obj.asInstanceOf[UserPoolAddOnsType]
   }
   
-  extension [Self <: UserPoolAddOnsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPoolAddOnsType] (val x: Self) extends AnyVal {
     
     inline def setAdvancedSecurityMode(value: AdvancedSecurityModeType): Self = StObject.set(x, "AdvancedSecurityMode", value.asInstanceOf[js.Any])
   }

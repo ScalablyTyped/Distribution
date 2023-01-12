@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[DebugPromiseLike]
     }
     
-    extension [Self <: DebugPromiseLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebugPromiseLike] (val x: Self) extends AnyVal {
       
       inline def setThen(
         value: (js.Function1[/* value */ scala.Nothing, scala.Nothing], js.Function1[/* reason */ scala.Nothing, scala.Nothing]) => scala.Nothing
@@ -112,7 +113,8 @@ object mod {
       __obj.asInstanceOf[ReactTestRendererJSON]
     }
     
-    extension [Self <: ReactTestRendererJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactTestRendererJSON] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReactTestRendererNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object mod {
       __obj.asInstanceOf[ReactTestRendererTree]
     }
     
-    extension [Self <: ReactTestRendererTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactTestRendererTree] (val x: Self) extends AnyVal {
       
       inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
@@ -171,7 +174,8 @@ object mod {
       __obj.asInstanceOf[TestRendererOptions]
     }
     
-    extension [Self <: TestRendererOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestRendererOptions] (val x: Self) extends AnyVal {
       
       inline def setCreateNodeMock(value: ReactElement => Any): Self = StObject.set(x, "createNodeMock", js.Any.fromFunction1(value))
     }

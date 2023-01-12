@@ -33,7 +33,8 @@ object PutQueryDefinitionRequest {
     __obj.asInstanceOf[PutQueryDefinitionRequest]
   }
   
-  extension [Self <: PutQueryDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutQueryDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setLogGroupNames(value: LogGroupNames): Self = StObject.set(x, "logGroupNames", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object GPUTextureDescriptor {
     __obj.asInstanceOf[GPUTextureDescriptor]
   }
   
-  extension [Self <: GPUTextureDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUTextureDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDimension(value: GPUTextureDimension): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     

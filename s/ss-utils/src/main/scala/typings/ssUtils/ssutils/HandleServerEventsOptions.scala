@@ -36,7 +36,8 @@ object HandleServerEventsOptions {
     __obj.asInstanceOf[HandleServerEventsOptions]
   }
   
-  extension [Self <: HandleServerEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandleServerEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setHandlers(value: StringDictionary[js.Function]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
     

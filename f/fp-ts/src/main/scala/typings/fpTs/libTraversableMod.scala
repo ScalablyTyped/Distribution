@@ -944,7 +944,8 @@ object libTraversableMod {
       __obj.asInstanceOf[TraversableComposition[F, G]]
     }
     
-    extension [Self <: TraversableComposition[?, ?], F, G](x: Self & (TraversableComposition[F, G])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraversableComposition[?, ?], F, G] (val x: Self & (TraversableComposition[F, G])) extends AnyVal {
       
       inline def setSequence(
         value: Applicative[Any] => js.Function1[

@@ -15,7 +15,8 @@ object IRequestTask {
     __obj.asInstanceOf[IRequestTask]
   }
   
-  extension [Self <: IRequestTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRequestTask] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
   }

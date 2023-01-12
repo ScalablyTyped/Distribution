@@ -36,7 +36,8 @@ object IStreamingDetectIntentResponse {
     __obj.asInstanceOf[IStreamingDetectIntentResponse]
   }
   
-  extension [Self <: IStreamingDetectIntentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStreamingDetectIntentResponse] (val x: Self) extends AnyVal {
     
     inline def setAlternativeQueryResults(value: js.Array[IQueryResult]): Self = StObject.set(x, "alternativeQueryResults", value.asInstanceOf[js.Any])
     

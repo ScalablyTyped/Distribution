@@ -17,7 +17,8 @@ object IBeginTransactionResponse {
     __obj.asInstanceOf[IBeginTransactionResponse]
   }
   
-  extension [Self <: IBeginTransactionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBeginTransactionResponse] (val x: Self) extends AnyVal {
     
     inline def setTransaction(value: js.typedarray.Uint8Array): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     

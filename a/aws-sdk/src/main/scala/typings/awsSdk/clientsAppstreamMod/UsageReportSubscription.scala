@@ -33,7 +33,8 @@ object UsageReportSubscription {
     __obj.asInstanceOf[UsageReportSubscription]
   }
   
-  extension [Self <: UsageReportSubscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageReportSubscription] (val x: Self) extends AnyVal {
     
     inline def setLastGeneratedReportDate(value: js.Date): Self = StObject.set(x, "LastGeneratedReportDate", value.asInstanceOf[js.Any])
     

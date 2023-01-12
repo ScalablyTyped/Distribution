@@ -32,7 +32,8 @@ object CustomDocument {
     __obj.asInstanceOf[CustomDocument]
   }
   
-  extension [Self <: CustomDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDocument] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

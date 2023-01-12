@@ -15,7 +15,8 @@ object IncludeEmpty {
     __obj.asInstanceOf[IncludeEmpty]
   }
   
-  extension [Self <: IncludeEmpty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeEmpty] (val x: Self) extends AnyVal {
     
     inline def setIncludeEmpty(value: Boolean): Self = StObject.set(x, "includeEmpty", value.asInstanceOf[js.Any])
   }

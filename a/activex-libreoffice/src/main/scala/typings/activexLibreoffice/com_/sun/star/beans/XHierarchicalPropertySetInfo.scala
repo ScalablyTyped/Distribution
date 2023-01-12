@@ -43,7 +43,8 @@ object XHierarchicalPropertySetInfo {
     __obj.asInstanceOf[XHierarchicalPropertySetInfo]
   }
   
-  extension [Self <: XHierarchicalPropertySetInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHierarchicalPropertySetInfo] (val x: Self) extends AnyVal {
     
     inline def setGetPropertyByHierarchicalName(value: String => Property): Self = StObject.set(x, "getPropertyByHierarchicalName", js.Any.fromFunction1(value))
     

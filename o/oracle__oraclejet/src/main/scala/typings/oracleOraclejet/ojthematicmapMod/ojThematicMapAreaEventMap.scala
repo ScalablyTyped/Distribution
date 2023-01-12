@@ -179,7 +179,8 @@ object ojThematicMapAreaEventMap {
     __obj.asInstanceOf[ojThematicMapAreaEventMap]
   }
   
-  extension [Self <: ojThematicMapAreaEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojThematicMapAreaEventMap] (val x: Self) extends AnyVal {
     
     inline def setCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = StObject.set(x, "categoriesChanged", value.asInstanceOf[js.Any])
     

@@ -547,7 +547,8 @@ object IconButtonPropstypestring {
     __obj.asInstanceOf[IconButtonPropstypestring]
   }
   
-  extension [Self <: IconButtonPropstypestring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconButtonPropstypestring] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ComboBoxAnimation {
     __obj.asInstanceOf[ComboBoxAnimation]
   }
   
-  extension [Self <: ComboBoxAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComboBoxAnimation] (val x: Self) extends AnyVal {
     
     inline def setClose(value: ComboBoxAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

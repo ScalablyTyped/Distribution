@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[ConjunctionInfo]
     }
     
-    extension [Self <: ConjunctionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConjunctionInfo] (val x: Self) extends AnyVal {
       
       inline def setConjunction(value: and | or): Self = StObject.set(x, "conjunction", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object mod {
       __obj.asInstanceOf[LicenseInfo]
     }
     
-    extension [Self <: LicenseInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LicenseInfo] (val x: Self) extends AnyVal {
       
       inline def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object mod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       

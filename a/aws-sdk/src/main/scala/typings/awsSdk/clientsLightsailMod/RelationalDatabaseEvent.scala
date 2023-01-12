@@ -33,7 +33,8 @@ object RelationalDatabaseEvent {
     __obj.asInstanceOf[RelationalDatabaseEvent]
   }
   
-  extension [Self <: RelationalDatabaseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationalDatabaseEvent] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

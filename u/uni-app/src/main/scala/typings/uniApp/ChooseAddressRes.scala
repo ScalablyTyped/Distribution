@@ -58,7 +58,8 @@ object ChooseAddressRes {
     __obj.asInstanceOf[ChooseAddressRes]
   }
   
-  extension [Self <: ChooseAddressRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseAddressRes] (val x: Self) extends AnyVal {
     
     inline def setCityName(value: String): Self = StObject.set(x, "cityName", value.asInstanceOf[js.Any])
     

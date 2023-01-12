@@ -15,7 +15,8 @@ object BrushBoolean {
     __obj.asInstanceOf[BrushBoolean]
   }
   
-  extension [Self <: BrushBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrushBoolean] (val x: Self) extends AnyVal {
     
     inline def setBrush(value: Boolean): Self = StObject.set(x, "brush", value.asInstanceOf[js.Any])
   }

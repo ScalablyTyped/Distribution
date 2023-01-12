@@ -16,7 +16,8 @@ object BaseAudioContextEventMap {
     __obj.asInstanceOf[BaseAudioContextEventMap]
   }
   
-  extension [Self <: BaseAudioContextEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseAudioContextEventMap] (val x: Self) extends AnyVal {
     
     inline def setStatechange(value: Event): Self = StObject.set(x, "statechange", value.asInstanceOf[js.Any])
   }

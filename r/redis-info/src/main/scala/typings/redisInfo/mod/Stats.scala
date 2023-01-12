@@ -92,7 +92,8 @@ object Stats {
     __obj.asInstanceOf[Stats]
   }
   
-  extension [Self <: Stats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
     
     inline def setActive_defrag_hits(value: String): Self = StObject.set(x, "active_defrag_hits", value.asInstanceOf[js.Any])
     

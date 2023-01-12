@@ -24,7 +24,8 @@ object OnDropDocument {
     __obj.asInstanceOf[OnDropDocument[TDocument]]
   }
   
-  extension [Self <: OnDropDocument[?], TDocument](x: Self & OnDropDocument[TDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDropDocument[?], TDocument] (val x: Self & OnDropDocument[TDocument]) extends AnyVal {
     
     inline def setDocument(value: TDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

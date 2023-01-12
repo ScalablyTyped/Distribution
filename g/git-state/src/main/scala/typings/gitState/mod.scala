@@ -281,7 +281,8 @@ object mod {
       __obj.asInstanceOf[CheckResult]
     }
     
-    extension [Self <: CheckResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckResult] (val x: Self) extends AnyVal {
       
       inline def setAhead(value: Double): Self = StObject.set(x, "ahead", value.asInstanceOf[js.Any])
       
@@ -316,7 +317,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setMaxBuffer(value: Double): Self = StObject.set(x, "maxBuffer", value.asInstanceOf[js.Any])
       

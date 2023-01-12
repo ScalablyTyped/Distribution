@@ -66,7 +66,8 @@ object PackageStatus {
     __obj.asInstanceOf[PackageStatus]
   }
   
-  extension [Self <: PackageStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageStatus] (val x: Self) extends AnyVal {
     
     inline def setDataOffline(value: Boolean): Self = StObject.set(x, "dataOffline", value.asInstanceOf[js.Any])
     

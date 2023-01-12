@@ -22,7 +22,8 @@ object CoreConnectionsPerHost {
     __obj.asInstanceOf[CoreConnectionsPerHost]
   }
   
-  extension [Self <: CoreConnectionsPerHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreConnectionsPerHost] (val x: Self) extends AnyVal {
     
     inline def setCoreConnectionsPerHost(value: NumberDictionary[Double]): Self = StObject.set(x, "coreConnectionsPerHost", value.asInstanceOf[js.Any])
     

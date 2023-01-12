@@ -62,7 +62,8 @@ object ReferencePageSet {
     __obj.asInstanceOf[ReferencePageSet]
   }
   
-  extension [Self <: ReferencePageSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferencePageSet] (val x: Self) extends AnyVal {
     
     inline def setNameOn(value: Boolean): Self = StObject.set(x, "NameOn", value.asInstanceOf[js.Any])
     

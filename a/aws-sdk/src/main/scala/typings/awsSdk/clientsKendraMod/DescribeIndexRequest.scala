@@ -18,7 +18,8 @@ object DescribeIndexRequest {
     __obj.asInstanceOf[DescribeIndexRequest]
   }
   
-  extension [Self <: DescribeIndexRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeIndexRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: IndexId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

@@ -85,7 +85,8 @@ object typesNumberValidateResponseMod {
       __obj.asInstanceOf[NumberValidateResponse]
     }
     
-    extension [Self <: NumberValidateResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberValidateResponse] (val x: Self) extends AnyVal {
       
       inline def setCarrier(value: String): Self = StObject.set(x, "Carrier", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object libClassdefFieldEventMod {
       __obj.asInstanceOf[FieldEvent]
     }
     
-    extension [Self <: FieldEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldEvent] (val x: Self) extends AnyVal {
       
       inline def setField(value: typings.nginstackEngine.libClassdefFieldMod.^): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     }

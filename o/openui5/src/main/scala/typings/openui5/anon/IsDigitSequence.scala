@@ -40,7 +40,8 @@ object IsDigitSequence {
     __obj.asInstanceOf[IsDigitSequence]
   }
   
-  extension [Self <: IsDigitSequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsDigitSequence] (val x: Self) extends AnyVal {
     
     inline def setIsDigitSequence(value: Boolean | String): Self = StObject.set(x, "isDigitSequence", value.asInstanceOf[js.Any])
     

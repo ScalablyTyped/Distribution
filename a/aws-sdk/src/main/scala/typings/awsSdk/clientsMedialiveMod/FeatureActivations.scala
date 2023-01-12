@@ -19,7 +19,8 @@ object FeatureActivations {
     __obj.asInstanceOf[FeatureActivations]
   }
   
-  extension [Self <: FeatureActivations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureActivations] (val x: Self) extends AnyVal {
     
     inline def setInputPrepareScheduleActions(value: FeatureActivationsInputPrepareScheduleActions): Self = StObject.set(x, "InputPrepareScheduleActions", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object Replica {
     __obj.asInstanceOf[Replica]
   }
   
-  extension [Self <: Replica](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Replica] (val x: Self) extends AnyVal {
     
     inline def setCustomerManagedEncryption(value: CustomerManagedEncryption): Self = StObject.set(x, "customerManagedEncryption", value.asInstanceOf[js.Any])
     

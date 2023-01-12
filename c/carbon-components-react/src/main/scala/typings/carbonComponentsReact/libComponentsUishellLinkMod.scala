@@ -37,7 +37,8 @@ object libComponentsUishellLinkMod {
       __obj.asInstanceOf[LinkPropsBase[P]]
     }
     
-    extension [Self <: LinkPropsBase[?], P](x: Self & LinkPropsBase[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkPropsBase[?], P] (val x: Self & LinkPropsBase[P]) extends AnyVal {
       
       inline def setElement(value: String | JSXElementConstructor[InnerElementProps[P]]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       

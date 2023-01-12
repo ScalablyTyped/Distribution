@@ -66,7 +66,8 @@ object componentsListListItemMod {
       __obj.asInstanceOf[ListItemProps]
     }
     
-    extension [Self <: ListItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object componentsListListItemMod {
       __obj.asInstanceOf[ListItemTheme]
     }
     
-    extension [Self <: ListItemTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemTheme] (val x: Self) extends AnyVal {
       
       inline def setListItem(value: String): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
       

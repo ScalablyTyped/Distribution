@@ -32,7 +32,8 @@ object typesSamplingRuleRecordMod {
       __obj.asInstanceOf[SamplingRuleRecord]
     }
     
-    extension [Self <: SamplingRuleRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SamplingRuleRecord] (val x: Self) extends AnyVal {
       
       inline def setCreatedAt(value: js.Date | String | Double): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object typesSamplingRuleRecordMod {
       __obj.asInstanceOf[UnmarshalledSamplingRuleRecord]
     }
     
-    extension [Self <: UnmarshalledSamplingRuleRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSamplingRuleRecord] (val x: Self) extends AnyVal {
       
       inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
       

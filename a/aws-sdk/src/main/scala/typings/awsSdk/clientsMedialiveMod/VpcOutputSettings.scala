@@ -31,7 +31,8 @@ object VpcOutputSettings {
     __obj.asInstanceOf[VpcOutputSettings]
   }
   
-  extension [Self <: VpcOutputSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcOutputSettings] (val x: Self) extends AnyVal {
     
     inline def setPublicAddressAllocationIds(value: listOfString): Self = StObject.set(x, "PublicAddressAllocationIds", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object IPropertyInfo {
     __obj.asInstanceOf[IPropertyInfo]
   }
   
-  extension [Self <: IPropertyInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPropertyInfo] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: () => js.Array[IAnnotation]): Self = StObject.set(x, "annotations", js.Any.fromFunction0(value))
     

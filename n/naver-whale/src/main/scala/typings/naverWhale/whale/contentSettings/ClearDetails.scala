@@ -22,7 +22,8 @@ object ClearDetails {
     __obj.asInstanceOf[ClearDetails]
   }
   
-  extension [Self <: ClearDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearDetails] (val x: Self) extends AnyVal {
     
     inline def setScope(value: typings.chrome.chrome.contentSettings.ScopeEnum): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object PermEntry {
     __obj.asInstanceOf[PermEntry]
   }
   
-  extension [Self <: PermEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermEntry] (val x: Self) extends AnyVal {
     
     inline def setPermid(value: Double): Self = StObject.set(x, "permid", value.asInstanceOf[js.Any])
     

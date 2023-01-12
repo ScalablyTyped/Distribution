@@ -448,7 +448,8 @@ object srcMaterialsMaterialMod {
       __obj.asInstanceOf[MaterialParameters]
     }
     
-    extension [Self <: MaterialParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaterialParameters] (val x: Self) extends AnyVal {
       
       inline def setAlphaTest(value: Double): Self = StObject.set(x, "alphaTest", value.asInstanceOf[js.Any])
       

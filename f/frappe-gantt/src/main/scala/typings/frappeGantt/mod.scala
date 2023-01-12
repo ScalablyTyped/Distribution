@@ -98,7 +98,8 @@ object mod {
       __obj.asInstanceOf[EnrichedTask]
     }
     
-    extension [Self <: EnrichedTask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnrichedTask] (val x: Self) extends AnyVal {
       
       inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object mod {
       __obj.asInstanceOf[Gantt]
     }
     
-    extension [Self <: Gantt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Gantt] (val x: Self) extends AnyVal {
       
       inline def setChange_view_mode(value: viewMode => Unit): Self = StObject.set(x, "change_view_mode", js.Any.fromFunction1(value))
       
@@ -176,7 +178,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setArrow_curve(value: Double): Self = StObject.set(x, "arrow_curve", value.asInstanceOf[js.Any])
       
@@ -271,7 +274,8 @@ object mod {
       __obj.asInstanceOf[Task]
     }
     
-    extension [Self <: Task](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
       
       inline def setCustom_class(value: String): Self = StObject.set(x, "custom_class", value.asInstanceOf[js.Any])
       

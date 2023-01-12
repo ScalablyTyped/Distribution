@@ -60,7 +60,8 @@ object typesUploadPartCopyOutputMod {
       __obj.asInstanceOf[UploadPartCopyOutput]
     }
     
-    extension [Self <: UploadPartCopyOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadPartCopyOutput] (val x: Self) extends AnyVal {
       
       inline def setCopyPartResult(value: UnmarshalledCopyPartResult): Self = StObject.set(x, "CopyPartResult", value.asInstanceOf[js.Any])
       

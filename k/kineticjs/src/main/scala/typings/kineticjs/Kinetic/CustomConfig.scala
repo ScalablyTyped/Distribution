@@ -18,7 +18,8 @@ object CustomConfig {
     __obj.asInstanceOf[CustomConfig]
   }
   
-  extension [Self <: CustomConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomConfig] (val x: Self) extends AnyVal {
     
     inline def setDrawFunc(value: () => Any): Self = StObject.set(x, "drawFunc", js.Any.fromFunction0(value))
   }

@@ -227,7 +227,8 @@ object sapUiCoreInvisibleTextMod {
       __obj.asInstanceOf[InvisibleTextSettings]
     }
     
-    extension [Self <: InvisibleTextSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvisibleTextSettings] (val x: Self) extends AnyVal {
       
       inline def setText(value: String | PropertyBindingInfo): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

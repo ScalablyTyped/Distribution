@@ -28,7 +28,8 @@ object ExportResourceSpecification {
     __obj.asInstanceOf[ExportResourceSpecification]
   }
   
-  extension [Self <: ExportResourceSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportResourceSpecification] (val x: Self) extends AnyVal {
     
     inline def setBotExportSpecification(value: BotExportSpecification): Self = StObject.set(x, "botExportSpecification", value.asInstanceOf[js.Any])
     

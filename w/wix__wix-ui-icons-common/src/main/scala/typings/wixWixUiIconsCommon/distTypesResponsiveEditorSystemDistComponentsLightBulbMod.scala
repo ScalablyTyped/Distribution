@@ -27,7 +27,8 @@ object distTypesResponsiveEditorSystemDistComponentsLightBulbMod extends Shortcu
       __obj.asInstanceOf[LightBulbProps]
     }
     
-    extension [Self <: LightBulbProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LightBulbProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

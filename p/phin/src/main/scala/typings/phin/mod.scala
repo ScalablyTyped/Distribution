@@ -93,7 +93,8 @@ object mod {
       __obj.asInstanceOf[IJSONResponseOptions]
     }
     
-    extension [Self <: IJSONResponseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJSONResponseOptions] (val x: Self) extends AnyVal {
       
       inline def setParse(value: json): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     }
@@ -112,7 +113,8 @@ object mod {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setParse(value: none): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object mod {
       __obj.asInstanceOf[IOptionsBase]
     }
     
-    extension [Self <: IOptionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptionsBase] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
@@ -223,7 +226,8 @@ object mod {
       __obj.asInstanceOf[IStreamResponseOptions]
     }
     
-    extension [Self <: IStreamResponseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStreamResponseOptions] (val x: Self) extends AnyVal {
       
       inline def setStream(value: `true`): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
@@ -248,7 +252,8 @@ object mod {
       __obj.asInstanceOf[IStringResponseOptions]
     }
     
-    extension [Self <: IStringResponseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStringResponseOptions] (val x: Self) extends AnyVal {
       
       inline def setParse(value: string): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     }

@@ -27,7 +27,8 @@ object distSrcOnStageGeneralDistComponentsForumsSmallMod extends Shortcut {
       __obj.asInstanceOf[ForumsSmallProps]
     }
     
-    extension [Self <: ForumsSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForumsSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

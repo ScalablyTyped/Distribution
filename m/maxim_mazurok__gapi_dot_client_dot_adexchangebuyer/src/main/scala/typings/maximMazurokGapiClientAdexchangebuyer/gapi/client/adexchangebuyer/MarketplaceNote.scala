@@ -37,7 +37,8 @@ object MarketplaceNote {
     __obj.asInstanceOf[MarketplaceNote]
   }
   
-  extension [Self <: MarketplaceNote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarketplaceNote] (val x: Self) extends AnyVal {
     
     inline def setCreatorRole(value: String): Self = StObject.set(x, "creatorRole", value.asInstanceOf[js.Any])
     

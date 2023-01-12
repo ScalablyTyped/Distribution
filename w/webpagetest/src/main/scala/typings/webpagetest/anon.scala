@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: js.Array[typings.webpagetest.mod.Location]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setResponse(value: typings.webpagetest.mod.Response[Location]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }

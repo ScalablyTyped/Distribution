@@ -93,7 +93,8 @@ object IXmlCharacterData {
     __obj.asInstanceOf[IXmlCharacterData]
   }
   
-  extension [Self <: IXmlCharacterData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXmlCharacterData] (val x: Self) extends AnyVal {
     
     inline def setAppendData(value: String => Unit): Self = StObject.set(x, "appendData", js.Any.fromFunction1(value))
     

@@ -57,7 +57,8 @@ object Sheet {
     __obj.asInstanceOf[Sheet]
   }
   
-  extension [Self <: Sheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sheet] (val x: Self) extends AnyVal {
     
     inline def setBandedRanges(value: js.Array[BandedRange]): Self = StObject.set(x, "bandedRanges", value.asInstanceOf[js.Any])
     

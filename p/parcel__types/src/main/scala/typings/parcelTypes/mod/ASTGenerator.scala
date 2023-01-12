@@ -18,7 +18,8 @@ object ASTGenerator {
     __obj.asInstanceOf[ASTGenerator]
   }
   
-  extension [Self <: ASTGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASTGenerator] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

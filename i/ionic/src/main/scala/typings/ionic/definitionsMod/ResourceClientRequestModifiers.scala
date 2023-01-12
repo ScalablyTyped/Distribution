@@ -15,7 +15,8 @@ object ResourceClientRequestModifiers {
     __obj.asInstanceOf[ResourceClientRequestModifiers]
   }
   
-  extension [Self <: ResourceClientRequestModifiers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceClientRequestModifiers] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

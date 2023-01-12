@@ -30,7 +30,8 @@ object MsearchTemplateRequest {
     __obj.asInstanceOf[MsearchTemplateRequest]
   }
   
-  extension [Self <: MsearchTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MsearchTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Array[MsearchTemplateRequestItem]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

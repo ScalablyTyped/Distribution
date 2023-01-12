@@ -16,7 +16,8 @@ object SheetsChartProperties {
     __obj.asInstanceOf[SheetsChartProperties]
   }
   
-  extension [Self <: SheetsChartProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetsChartProperties] (val x: Self) extends AnyVal {
     
     inline def setChartImageProperties(value: ImageProperties): Self = StObject.set(x, "chartImageProperties", value.asInstanceOf[js.Any])
     

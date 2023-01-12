@@ -18,7 +18,8 @@ object typesPaginationMod {
       __obj.asInstanceOf[PaginationMeta]
     }
     
-    extension [Self <: PaginationMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationMeta] (val x: Self) extends AnyVal {
       
       inline def setPagination(value: Count): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     }

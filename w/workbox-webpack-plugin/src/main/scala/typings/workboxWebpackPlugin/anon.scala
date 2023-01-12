@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[ChannelName]
     }
     
-    extension [Self <: ChannelName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelName] (val x: Self) extends AnyVal {
       
       inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Integrity]
     }
     
-    extension [Self <: Integrity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Integrity] (val x: Self) extends AnyVal {
       
       inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
       
@@ -105,7 +108,8 @@ object anon {
       __obj.asInstanceOf[Manifest]
     }
     
-    extension [Self <: Manifest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Manifest] (val x: Self) extends AnyVal {
       
       inline def setManifest(value: js.Array[ManifestEntry]): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       
@@ -138,7 +142,8 @@ object anon {
       __obj.asInstanceOf[MaxAgeSeconds]
     }
     
-    extension [Self <: MaxAgeSeconds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxAgeSeconds] (val x: Self) extends AnyVal {
       
       inline def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
       
@@ -161,7 +166,8 @@ object anon {
       __obj.asInstanceOf[MaxRetentionTime]
     }
     
-    extension [Self <: MaxRetentionTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxRetentionTime] (val x: Self) extends AnyVal {
       
       inline def setMaxRetentionTime(value: Double): Self = StObject.set(x, "maxRetentionTime", value.asInstanceOf[js.Any])
     }
@@ -180,7 +186,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -421,7 +421,8 @@ object IgGridFilteringLocale {
     __obj.asInstanceOf[IgGridFilteringLocale]
   }
   
-  extension [Self <: IgGridFilteringLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridFilteringLocale] (val x: Self) extends AnyVal {
     
     inline def setAdvancedButtonLabel(value: String): Self = StObject.set(x, "advancedButtonLabel", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object int64 {
     __obj.asInstanceOf[int64]
   }
   
-  extension [Self <: int64](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: int64] (val x: Self) extends AnyVal {
     
     inline def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
     

@@ -17,7 +17,8 @@ object ConfigurationParamWithUrls {
     __obj.asInstanceOf[ConfigurationParamWithUrls]
   }
   
-  extension [Self <: ConfigurationParamWithUrls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationParamWithUrls] (val x: Self) extends AnyVal {
     
     inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     

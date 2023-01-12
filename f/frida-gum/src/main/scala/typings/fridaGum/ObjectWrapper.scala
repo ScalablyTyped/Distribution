@@ -17,7 +17,8 @@ object ObjectWrapper {
     __obj.asInstanceOf[ObjectWrapper]
   }
   
-  extension [Self <: ObjectWrapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectWrapper] (val x: Self) extends AnyVal {
     
     inline def setHandle(value: NativePointer): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
   }

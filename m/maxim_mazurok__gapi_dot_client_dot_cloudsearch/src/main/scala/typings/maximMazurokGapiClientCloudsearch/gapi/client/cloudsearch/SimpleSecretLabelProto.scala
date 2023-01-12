@@ -30,7 +30,8 @@ object SimpleSecretLabelProto {
     __obj.asInstanceOf[SimpleSecretLabelProto]
   }
   
-  extension [Self <: SimpleSecretLabelProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleSecretLabelProto] (val x: Self) extends AnyVal {
     
     inline def setCapabilityId(value: Double): Self = StObject.set(x, "capabilityId", value.asInstanceOf[js.Any])
     

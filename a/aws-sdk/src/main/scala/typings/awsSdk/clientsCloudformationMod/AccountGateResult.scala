@@ -23,7 +23,8 @@ object AccountGateResult {
     __obj.asInstanceOf[AccountGateResult]
   }
   
-  extension [Self <: AccountGateResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountGateResult] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: AccountGateStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

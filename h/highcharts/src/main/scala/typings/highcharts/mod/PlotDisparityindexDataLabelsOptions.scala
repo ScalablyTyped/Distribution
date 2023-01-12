@@ -275,7 +275,8 @@ object PlotDisparityindexDataLabelsOptions {
     __obj.asInstanceOf[PlotDisparityindexDataLabelsOptions]
   }
   
-  extension [Self <: PlotDisparityindexDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotDisparityindexDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

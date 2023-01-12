@@ -18,7 +18,8 @@ object Optional {
     __obj.asInstanceOf[Optional]
   }
   
-  extension [Self <: Optional](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Optional] (val x: Self) extends AnyVal {
     
     inline def setArgumentType(value: ArgumentTypes): Self = StObject.set(x, "argumentType", value.asInstanceOf[js.Any])
     

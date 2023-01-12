@@ -22,7 +22,8 @@ object CardanoTxCertificateType {
     __obj.asInstanceOf[CardanoTxCertificateType]
   }
   
-  extension [Self <: CardanoTxCertificateType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoTxCertificateType] (val x: Self) extends AnyVal {
     
     inline def setPath(value: js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

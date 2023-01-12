@@ -15,7 +15,8 @@ object WebGPUBufferDescription {
     __obj.asInstanceOf[WebGPUBufferDescription]
   }
   
-  extension [Self <: WebGPUBufferDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGPUBufferDescription] (val x: Self) extends AnyVal {
     
     inline def setBinding(value: WebGPUBindingInfo): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
   }

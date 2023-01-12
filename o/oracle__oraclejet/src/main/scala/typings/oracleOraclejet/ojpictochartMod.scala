@@ -719,7 +719,8 @@ object ojpictochartMod {
         __obj.asInstanceOf[ItemContext[K]]
       }
       
-      extension [Self <: ItemContext[?], K](x: Self & ItemContext[K]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ItemContext[?], K] (val x: Self & ItemContext[K]) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -749,7 +750,8 @@ object ojpictochartMod {
         __obj.asInstanceOf[NodeContext]
       }
       
-      extension [Self <: NodeContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NodeContext] (val x: Self) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -786,7 +788,8 @@ object ojpictochartMod {
         __obj.asInstanceOf[TooltipContext[K]]
       }
       
-      extension [Self <: TooltipContext[?], K](x: Self & TooltipContext[K]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TooltipContext[?], K] (val x: Self & TooltipContext[K]) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -983,7 +986,8 @@ object ojpictochartMod {
       __obj.asInstanceOf[ojPictoChartEventMap[K, D]]
     }
     
-    extension [Self <: ojPictoChartEventMap[?, ?], K, D](x: Self & (ojPictoChartEventMap[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojPictoChartEventMap[?, ?], K, D] (val x: Self & (ojPictoChartEventMap[K, D])) extends AnyVal {
       
       inline def setAnimationDurationChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "animationDurationChanged", value.asInstanceOf[js.Any])
       
@@ -2480,7 +2484,8 @@ object ojpictochartMod {
       __obj.asInstanceOf[ojPictoChartItemEventMap]
     }
     
-    extension [Self <: ojPictoChartItemEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojPictoChartItemEventMap] (val x: Self) extends AnyVal {
       
       inline def setBorderColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "borderColorChanged", value.asInstanceOf[js.Any])
       
@@ -2592,7 +2597,8 @@ object ojpictochartMod {
       __obj.asInstanceOf[ojPictoChartItemSettableProperties]
     }
     
-    extension [Self <: ojPictoChartItemSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojPictoChartItemSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -2684,7 +2690,8 @@ object ojpictochartMod {
       __obj.asInstanceOf[ojPictoChartItemSettablePropertiesLenient]
     }
     
-    extension [Self <: ojPictoChartItemSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojPictoChartItemSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -2831,7 +2838,8 @@ object ojpictochartMod {
       __obj.asInstanceOf[ojPictoChartSettableProperties[K, D]]
     }
     
-    extension [Self <: ojPictoChartSettableProperties[?, ?], K, D](x: Self & (ojPictoChartSettableProperties[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojPictoChartSettableProperties[?, ?], K, D] (val x: Self & (ojPictoChartSettableProperties[K, D])) extends AnyVal {
       
       inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
@@ -2951,7 +2959,8 @@ object ojpictochartMod {
       __obj.asInstanceOf[ojPictoChartSettablePropertiesLenient[K, D]]
     }
     
-    extension [Self <: ojPictoChartSettablePropertiesLenient[?, ?], K, D](x: Self & (ojPictoChartSettablePropertiesLenient[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojPictoChartSettablePropertiesLenient[?, ?], K, D] (val x: Self & (ojPictoChartSettablePropertiesLenient[K, D])) extends AnyVal {
       
       inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       

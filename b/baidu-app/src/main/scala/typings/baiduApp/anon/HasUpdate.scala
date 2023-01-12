@@ -15,7 +15,8 @@ object HasUpdate {
     __obj.asInstanceOf[HasUpdate]
   }
   
-  extension [Self <: HasUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasUpdate] (val x: Self) extends AnyVal {
     
     inline def setHasUpdate(value: Boolean): Self = StObject.set(x, "hasUpdate", value.asInstanceOf[js.Any])
   }

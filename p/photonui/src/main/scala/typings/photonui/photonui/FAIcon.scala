@@ -48,7 +48,8 @@ object FAIcon {
     __obj.asInstanceOf[FAIcon]
   }
   
-  extension [Self <: FAIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FAIcon] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object GroupOptions {
     __obj.asInstanceOf[GroupOptions]
   }
   
-  extension [Self <: GroupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupOptions] (val x: Self) extends AnyVal {
     
     inline def setClip(value: Path): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     

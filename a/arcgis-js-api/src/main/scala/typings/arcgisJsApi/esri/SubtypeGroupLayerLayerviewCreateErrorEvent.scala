@@ -17,7 +17,8 @@ object SubtypeGroupLayerLayerviewCreateErrorEvent {
     __obj.asInstanceOf[SubtypeGroupLayerLayerviewCreateErrorEvent]
   }
   
-  extension [Self <: SubtypeGroupLayerLayerviewCreateErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtypeGroupLayerLayerviewCreateErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

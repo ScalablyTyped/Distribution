@@ -103,7 +103,8 @@ object DeviceDescriptor {
     __obj.asInstanceOf[DeviceDescriptor]
   }
   
-  extension [Self <: DeviceDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAbiType(value: String): Self = StObject.set(x, "abiType", value.asInstanceOf[js.Any])
     

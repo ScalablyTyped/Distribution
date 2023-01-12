@@ -15,7 +15,8 @@ object UpdateApnsVoipChannelResponse {
     __obj.asInstanceOf[UpdateApnsVoipChannelResponse]
   }
   
-  extension [Self <: UpdateApnsVoipChannelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateApnsVoipChannelResponse] (val x: Self) extends AnyVal {
     
     inline def setAPNSVoipChannelResponse(value: APNSVoipChannelResponse): Self = StObject.set(x, "APNSVoipChannelResponse", value.asInstanceOf[js.Any])
   }

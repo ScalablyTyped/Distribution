@@ -81,7 +81,8 @@ object CreationDate {
     __obj.asInstanceOf[CreationDate]
   }
   
-  extension [Self <: CreationDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreationDate] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

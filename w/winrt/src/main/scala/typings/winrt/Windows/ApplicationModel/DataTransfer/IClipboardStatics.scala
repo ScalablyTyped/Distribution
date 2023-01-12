@@ -29,7 +29,8 @@ object IClipboardStatics {
     __obj.asInstanceOf[IClipboardStatics]
   }
   
-  extension [Self <: IClipboardStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClipboardStatics] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

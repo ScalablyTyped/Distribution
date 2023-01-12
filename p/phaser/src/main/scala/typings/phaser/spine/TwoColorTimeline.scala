@@ -44,7 +44,8 @@ object TwoColorTimeline {
     __obj.asInstanceOf[TwoColorTimeline]
   }
   
-  extension [Self <: TwoColorTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TwoColorTimeline] (val x: Self) extends AnyVal {
     
     inline def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     

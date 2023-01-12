@@ -33,7 +33,8 @@ object IdentityUserFlowAttribute {
     __obj.asInstanceOf[IdentityUserFlowAttribute]
   }
   
-  extension [Self <: IdentityUserFlowAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityUserFlowAttribute] (val x: Self) extends AnyVal {
     
     inline def setDataType(value: IdentityUserFlowAttributeDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

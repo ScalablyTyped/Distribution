@@ -28,7 +28,8 @@ object FunctionRequest {
     __obj.asInstanceOf[FunctionRequest]
   }
   
-  extension [Self <: FunctionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionRequest] (val x: Self) extends AnyVal {
     
     inline def setImplementedBy(value: DataConnector): Self = StObject.set(x, "implementedBy", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object MistGetBalanceRequest {
     __obj.asInstanceOf[MistGetBalanceRequest]
   }
   
-  extension [Self <: MistGetBalanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MistGetBalanceRequest] (val x: Self) extends AnyVal {
     
     inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     

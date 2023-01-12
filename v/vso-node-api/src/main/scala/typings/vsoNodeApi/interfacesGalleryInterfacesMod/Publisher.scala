@@ -44,7 +44,8 @@ object Publisher {
     __obj.asInstanceOf[Publisher]
   }
   
-  extension [Self <: Publisher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Publisher] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object gapi {
           __obj.asInstanceOf[GoogleFactcheckingFactchecktoolsV1alpha1Claim]
         }
         
-        extension [Self <: GoogleFactcheckingFactchecktoolsV1alpha1Claim](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleFactcheckingFactchecktoolsV1alpha1Claim] (val x: Self) extends AnyVal {
           
           inline def setClaimDate(value: String): Self = StObject.set(x, "claimDate", value.asInstanceOf[js.Any])
           
@@ -89,7 +90,8 @@ object gapi {
           __obj.asInstanceOf[GoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor]
         }
         
-        extension [Self <: GoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor] (val x: Self) extends AnyVal {
           
           inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
           
@@ -136,7 +138,8 @@ object gapi {
           __obj.asInstanceOf[GoogleFactcheckingFactchecktoolsV1alpha1ClaimRating]
         }
         
-        extension [Self <: GoogleFactcheckingFactchecktoolsV1alpha1ClaimRating](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleFactcheckingFactchecktoolsV1alpha1ClaimRating] (val x: Self) extends AnyVal {
           
           inline def setBestRating(value: Double): Self = StObject.set(x, "bestRating", value.asInstanceOf[js.Any])
           
@@ -191,7 +194,8 @@ object gapi {
           __obj.asInstanceOf[GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview]
         }
         
-        extension [Self <: GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview] (val x: Self) extends AnyVal {
           
           inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
           
@@ -234,7 +238,8 @@ object gapi {
           __obj.asInstanceOf[GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor]
         }
         
-        extension [Self <: GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor] (val x: Self) extends AnyVal {
           
           inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
           
@@ -285,7 +290,8 @@ object gapi {
           __obj.asInstanceOf[GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup]
         }
         
-        extension [Self <: GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup] (val x: Self) extends AnyVal {
           
           inline def setClaimAppearances(value: js.Array[String]): Self = StObject.set(x, "claimAppearances", value.asInstanceOf[js.Any])
           
@@ -356,7 +362,8 @@ object gapi {
           __obj.asInstanceOf[GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage]
         }
         
-        extension [Self <: GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage] (val x: Self) extends AnyVal {
           
           inline def setClaimReviewAuthor(value: GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor): Self = StObject.set(x, "claimReviewAuthor", value.asInstanceOf[js.Any])
           
@@ -401,7 +408,8 @@ object gapi {
           __obj.asInstanceOf[GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimSearchResponse]
         }
         
-        extension [Self <: GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimSearchResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimSearchResponse] (val x: Self) extends AnyVal {
           
           inline def setClaims(value: js.Array[GoogleFactcheckingFactchecktoolsV1alpha1Claim]): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
           
@@ -430,7 +438,8 @@ object gapi {
           __obj.asInstanceOf[GoogleFactcheckingFactchecktoolsV1alpha1ListClaimReviewMarkupPagesResponse]
         }
         
-        extension [Self <: GoogleFactcheckingFactchecktoolsV1alpha1ListClaimReviewMarkupPagesResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleFactcheckingFactchecktoolsV1alpha1ListClaimReviewMarkupPagesResponse] (val x: Self) extends AnyVal {
           
           inline def setClaimReviewMarkupPages(value: js.Array[GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage]): Self = StObject.set(x, "claimReviewMarkupPages", value.asInstanceOf[js.Any])
           
@@ -459,7 +468,8 @@ object gapi {
           __obj.asInstanceOf[GoogleFactcheckingFactchecktoolsV1alpha1Publisher]
         }
         
-        extension [Self <: GoogleFactcheckingFactchecktoolsV1alpha1Publisher](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleFactcheckingFactchecktoolsV1alpha1Publisher] (val x: Self) extends AnyVal {
           
           inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           

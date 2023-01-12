@@ -73,7 +73,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ActionHistory]
     }
     
-    extension [Self <: ActionHistory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionHistory] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -158,7 +159,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CalendarOptions]
     }
     
-    extension [Self <: CalendarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -272,7 +274,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: center | left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -369,7 +372,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ColumnEditor]
     }
     
-    extension [Self <: ColumnEditor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnEditor] (val x: Self) extends AnyVal {
       
       inline def setCloseEditor(value: js.Function): Self = StObject.set(x, "closeEditor", value.asInstanceOf[js.Any])
       
@@ -530,7 +534,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EventsOptions]
     }
     
-    extension [Self <: EventsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventsOptions] (val x: Self) extends AnyVal {
       
       inline def setOnafterchanges(value: js.Function): Self = StObject.set(x, "onafterchanges", value.asInstanceOf[js.Any])
       
@@ -836,7 +841,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[InitializationOptions]
     }
     
-    extension [Self <: InitializationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitializationOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowComments(value: Boolean): Self = StObject.set(x, "allowComments", value.asInstanceOf[js.Any])
       
@@ -1834,7 +1840,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MethodsOptions]
     }
     
-    extension [Self <: MethodsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodsOptions] (val x: Self) extends AnyVal {
       
       inline def setDeleteColumn(value: js.Function): Self = StObject.set(x, "deleteColumn", value.asInstanceOf[js.Any])
       
@@ -2101,7 +2108,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SharedMethodsInitializationOptions]
     }
     
-    extension [Self <: SharedMethodsInitializationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedMethodsInitializationOptions] (val x: Self) extends AnyVal {
       
       inline def setFullscreen(value: js.Function | Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
       
@@ -2128,7 +2136,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SourceValueElement[T]]
     }
     
-    extension [Self <: SourceValueElement[?], T /* <: CellValue */](x: Self & SourceValueElement[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceValueElement[?], T /* <: CellValue */] (val x: Self & SourceValueElement[T]) extends AnyVal {
       
       inline def setId(value: T): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -2232,7 +2241,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TranslationsOptions]
     }
     
-    extension [Self <: TranslationsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranslationsOptions] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: Any): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2367,7 +2377,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[UnDocumentOptions]
     }
     
-    extension [Self <: UnDocumentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnDocumentOptions] (val x: Self) extends AnyVal {
       
       inline def setFooters(
         value: js.Array[

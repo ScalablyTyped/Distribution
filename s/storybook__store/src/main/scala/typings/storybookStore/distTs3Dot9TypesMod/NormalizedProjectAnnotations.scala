@@ -22,7 +22,8 @@ object NormalizedProjectAnnotations {
     __obj.asInstanceOf[NormalizedProjectAnnotations[TFramework]]
   }
   
-  extension [Self <: NormalizedProjectAnnotations[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & NormalizedProjectAnnotations[TFramework]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizedProjectAnnotations[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] (val x: Self & NormalizedProjectAnnotations[TFramework]) extends AnyVal {
     
     inline def setArgTypes(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StrictArgTypes */ Any

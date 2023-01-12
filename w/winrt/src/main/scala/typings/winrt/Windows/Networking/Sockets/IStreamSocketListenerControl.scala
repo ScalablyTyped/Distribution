@@ -15,7 +15,8 @@ object IStreamSocketListenerControl {
     __obj.asInstanceOf[IStreamSocketListenerControl]
   }
   
-  extension [Self <: IStreamSocketListenerControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStreamSocketListenerControl] (val x: Self) extends AnyVal {
     
     inline def setQualityOfService(value: SocketQualityOfService): Self = StObject.set(x, "qualityOfService", value.asInstanceOf[js.Any])
   }

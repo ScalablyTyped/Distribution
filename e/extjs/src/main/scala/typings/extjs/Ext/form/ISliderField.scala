@@ -31,7 +31,8 @@ object ISliderField {
     __obj.asInstanceOf[ISliderField]
   }
   
-  extension [Self <: ISliderField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISliderField] (val x: Self) extends AnyVal {
     
     inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     

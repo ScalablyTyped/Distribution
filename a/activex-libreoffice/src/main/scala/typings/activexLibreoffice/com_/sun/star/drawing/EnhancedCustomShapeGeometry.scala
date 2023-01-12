@@ -82,7 +82,8 @@ object EnhancedCustomShapeGeometry {
     __obj.asInstanceOf[EnhancedCustomShapeGeometry]
   }
   
-  extension [Self <: EnhancedCustomShapeGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedCustomShapeGeometry] (val x: Self) extends AnyVal {
     
     inline def setAdjustmentValues(value: SafeArray[EnhancedCustomShapeAdjustmentValue]): Self = StObject.set(x, "AdjustmentValues", value.asInstanceOf[js.Any])
     

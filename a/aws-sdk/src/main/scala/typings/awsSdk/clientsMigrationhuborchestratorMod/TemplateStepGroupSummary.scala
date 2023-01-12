@@ -33,7 +33,8 @@ object TemplateStepGroupSummary {
     __obj.asInstanceOf[TemplateStepGroupSummary]
   }
   
-  extension [Self <: TemplateStepGroupSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateStepGroupSummary] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

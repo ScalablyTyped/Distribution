@@ -20,7 +20,8 @@ object ITerminalAddon {
     __obj.asInstanceOf[ITerminalAddon]
   }
   
-  extension [Self <: ITerminalAddon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITerminalAddon] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: Terminal => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
   }

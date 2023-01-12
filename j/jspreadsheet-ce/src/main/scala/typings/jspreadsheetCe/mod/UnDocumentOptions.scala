@@ -19,7 +19,8 @@ object UnDocumentOptions {
     __obj.asInstanceOf[UnDocumentOptions]
   }
   
-  extension [Self <: UnDocumentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnDocumentOptions] (val x: Self) extends AnyVal {
     
     inline def setFooters(
       value: js.Array[

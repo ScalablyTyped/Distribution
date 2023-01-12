@@ -18,7 +18,8 @@ object AllowPlainStrings {
     __obj.asInstanceOf[AllowPlainStrings]
   }
   
-  extension [Self <: AllowPlainStrings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowPlainStrings] (val x: Self) extends AnyVal {
     
     inline def setAllowPlainStrings(value: Boolean): Self = StObject.set(x, "allowPlainStrings", value.asInstanceOf[js.Any])
   }

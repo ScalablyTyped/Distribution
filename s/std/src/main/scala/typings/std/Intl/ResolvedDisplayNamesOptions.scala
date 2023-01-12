@@ -34,7 +34,8 @@ object ResolvedDisplayNamesOptions {
     __obj.asInstanceOf[ResolvedDisplayNamesOptions]
   }
   
-  extension [Self <: ResolvedDisplayNamesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedDisplayNamesOptions] (val x: Self) extends AnyVal {
     
     inline def setFallback(value: DisplayNamesFallback): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     

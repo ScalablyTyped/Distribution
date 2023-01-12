@@ -19,7 +19,8 @@ object SegmentData {
     __obj.asInstanceOf[SegmentData]
   }
   
-  extension [Self <: SegmentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentData] (val x: Self) extends AnyVal {
     
     inline def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

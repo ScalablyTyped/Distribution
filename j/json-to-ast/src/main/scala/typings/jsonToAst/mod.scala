@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[ASTNode]
     }
     
-    extension [Self <: ASTNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ASTNode] (val x: Self) extends AnyVal {
       
       inline def setLoc(value: Location): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object mod {
       __obj.asInstanceOf[ArrayNode]
     }
     
-    extension [Self <: ArrayNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ValueNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object mod {
       __obj.asInstanceOf[IdentifierNode]
     }
     
-    extension [Self <: IdentifierNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentifierNode] (val x: Self) extends AnyVal {
       
       inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
@@ -119,7 +122,8 @@ object mod {
       __obj.asInstanceOf[LiteralNode]
     }
     
-    extension [Self <: LiteralNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiteralNode] (val x: Self) extends AnyVal {
       
       inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
@@ -146,7 +150,8 @@ object mod {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -176,7 +181,8 @@ object mod {
       __obj.asInstanceOf[ObjectNode]
     }
     
-    extension [Self <: ObjectNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[PropertyNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -209,7 +215,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setLoc(value: Boolean): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
       
@@ -236,7 +243,8 @@ object mod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -265,7 +273,8 @@ object mod {
       __obj.asInstanceOf[PropertyNode]
     }
     
-    extension [Self <: PropertyNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyNode] (val x: Self) extends AnyVal {
       
       inline def setKey(value: IdentifierNode): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

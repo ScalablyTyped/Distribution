@@ -35,7 +35,8 @@ object AdaptorOptions {
     __obj.asInstanceOf[AdaptorOptions]
   }
   
-  extension [Self <: AdaptorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdaptorOptions] (val x: Self) extends AnyVal {
     
     inline def setAggregates(value: String): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
     

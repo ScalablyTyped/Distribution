@@ -25,7 +25,8 @@ object WebAccountClientView {
     __obj.asInstanceOf[WebAccountClientView]
   }
   
-  extension [Self <: WebAccountClientView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAccountClientView] (val x: Self) extends AnyVal {
     
     inline def setAccountPairwiseId(value: String): Self = StObject.set(x, "accountPairwiseId", value.asInstanceOf[js.Any])
     

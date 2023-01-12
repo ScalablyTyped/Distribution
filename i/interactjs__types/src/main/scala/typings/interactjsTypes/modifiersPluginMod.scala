@@ -32,7 +32,8 @@ object modifiersPluginMod extends Shortcut {
         __obj.asInstanceOf[InteractStatic]
       }
       
-      extension [Self <: InteractStatic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InteractStatic] (val x: Self) extends AnyVal {
         
         inline def setModifiers(value: AspectRatio): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       }

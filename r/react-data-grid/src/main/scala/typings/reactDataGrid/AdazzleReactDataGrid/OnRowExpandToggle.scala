@@ -31,7 +31,8 @@ object OnRowExpandToggle {
     __obj.asInstanceOf[OnRowExpandToggle]
   }
   
-  extension [Self <: OnRowExpandToggle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnRowExpandToggle] (val x: Self) extends AnyVal {
     
     inline def setColumnGroupName(value: String): Self = StObject.set(x, "columnGroupName", value.asInstanceOf[js.Any])
     

@@ -293,7 +293,8 @@ object MultiSelectOptions {
     __obj.asInstanceOf[MultiSelectOptions]
   }
   
-  extension [Self <: MultiSelectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiSelectOptions] (val x: Self) extends AnyVal {
     
     inline def setAllSelectedText(value: String | Boolean): Self = StObject.set(x, "allSelectedText", value.asInstanceOf[js.Any])
     

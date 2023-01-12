@@ -19,7 +19,8 @@ object Refetch {
     __obj.asInstanceOf[Refetch]
   }
   
-  extension [Self <: Refetch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Refetch] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: js.Array[ConnectionMetadata]): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

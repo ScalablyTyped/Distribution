@@ -33,7 +33,8 @@ object SessionKeysAbpV11 {
     __obj.asInstanceOf[SessionKeysAbpV11]
   }
   
-  extension [Self <: SessionKeysAbpV11](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionKeysAbpV11] (val x: Self) extends AnyVal {
     
     inline def setAppSKey(value: AppSKey): Self = StObject.set(x, "AppSKey", value.asInstanceOf[js.Any])
     

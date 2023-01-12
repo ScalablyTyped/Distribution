@@ -48,7 +48,8 @@ object XmlParams {
     __obj.asInstanceOf[XmlParams]
   }
   
-  extension [Self <: XmlParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XmlParams] (val x: Self) extends AnyVal {
     
     inline def setAttribute_prefix(value: String): Self = StObject.set(x, "attribute_prefix", value.asInstanceOf[js.Any])
     

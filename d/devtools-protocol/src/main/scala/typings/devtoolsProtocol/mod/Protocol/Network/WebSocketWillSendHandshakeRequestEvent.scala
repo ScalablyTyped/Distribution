@@ -38,7 +38,8 @@ object WebSocketWillSendHandshakeRequestEvent {
     __obj.asInstanceOf[WebSocketWillSendHandshakeRequestEvent]
   }
   
-  extension [Self <: WebSocketWillSendHandshakeRequestEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSocketWillSendHandshakeRequestEvent] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: WebSocketRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

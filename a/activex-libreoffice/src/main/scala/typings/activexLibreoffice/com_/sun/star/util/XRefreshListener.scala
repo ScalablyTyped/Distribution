@@ -28,7 +28,8 @@ object XRefreshListener {
     __obj.asInstanceOf[XRefreshListener]
   }
   
-  extension [Self <: XRefreshListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRefreshListener] (val x: Self) extends AnyVal {
     
     inline def setRefreshed(value: EventObject => Unit): Self = StObject.set(x, "refreshed", js.Any.fromFunction1(value))
   }

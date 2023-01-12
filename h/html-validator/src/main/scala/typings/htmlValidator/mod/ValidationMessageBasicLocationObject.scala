@@ -32,7 +32,8 @@ object ValidationMessageBasicLocationObject {
     __obj.asInstanceOf[ValidationMessageBasicLocationObject]
   }
   
-  extension [Self <: ValidationMessageBasicLocationObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationMessageBasicLocationObject] (val x: Self) extends AnyVal {
     
     inline def setExtract(value: String): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object MetricsFactory_ {
     __obj.asInstanceOf[MetricsFactory_]
   }
   
-  extension [Self <: MetricsFactory_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricsFactory_] (val x: Self) extends AnyVal {
     
     inline def setGetAllMetrics(value: () => js.Array[CommandMetrics]): Self = StObject.set(x, "getAllMetrics", js.Any.fromFunction0(value))
     

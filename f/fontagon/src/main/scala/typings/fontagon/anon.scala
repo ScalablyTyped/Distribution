@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[RecordStyleSheetGeneratio]
     }
     
-    extension [Self <: RecordStyleSheetGeneratio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordStyleSheetGeneratio] (val x: Self) extends AnyVal {
       
       inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object PivotGridV2PdfExportEvent {
     __obj.asInstanceOf[PivotGridV2PdfExportEvent]
   }
   
-  extension [Self <: PivotGridV2PdfExportEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGridV2PdfExportEvent] (val x: Self) extends AnyVal {
     
     inline def setPromise(value: JQueryPromise[Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     

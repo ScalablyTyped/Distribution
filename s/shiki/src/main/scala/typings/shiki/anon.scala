@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[pathstringgrammarIRawGram]
     }
     
-    extension [Self <: pathstringgrammarIRawGram](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: pathstringgrammarIRawGram] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object anon {
       __obj.asInstanceOf[pathstringundefinedgramma]
     }
     
-    extension [Self <: pathstringundefinedgramma](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: pathstringundefinedgramma] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object SearchAggregation {
     __obj.asInstanceOf[SearchAggregation]
   }
   
-  extension [Self <: SearchAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAggregation] (val x: Self) extends AnyVal {
     
     inline def setBuckets(value: NullableOption[js.Array[SearchBucket]]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     

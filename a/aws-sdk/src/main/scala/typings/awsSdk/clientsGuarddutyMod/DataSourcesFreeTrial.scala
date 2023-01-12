@@ -43,7 +43,8 @@ object DataSourcesFreeTrial {
     __obj.asInstanceOf[DataSourcesFreeTrial]
   }
   
-  extension [Self <: DataSourcesFreeTrial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourcesFreeTrial] (val x: Self) extends AnyVal {
     
     inline def setCloudTrail(value: DataSourceFreeTrial): Self = StObject.set(x, "CloudTrail", value.asInstanceOf[js.Any])
     

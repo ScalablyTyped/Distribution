@@ -60,7 +60,8 @@ object eventsOrmDoteventMod {
       __obj.asInstanceOf[ORM]
     }
     
-    extension [Self <: ORM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ORM] (val x: Self) extends AnyVal {
       
       inline def setAL1(value: Any): Self = StObject.set(x, "AL1", value.asInstanceOf[js.Any])
       

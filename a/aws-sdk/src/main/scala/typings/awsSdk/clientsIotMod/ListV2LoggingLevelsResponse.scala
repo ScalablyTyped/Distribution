@@ -23,7 +23,8 @@ object ListV2LoggingLevelsResponse {
     __obj.asInstanceOf[ListV2LoggingLevelsResponse]
   }
   
-  extension [Self <: ListV2LoggingLevelsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListV2LoggingLevelsResponse] (val x: Self) extends AnyVal {
     
     inline def setLogTargetConfigurations(value: LogTargetConfigurations): Self = StObject.set(x, "logTargetConfigurations", value.asInstanceOf[js.Any])
     

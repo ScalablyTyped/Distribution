@@ -18,7 +18,8 @@ object ExpireSessionRequest {
     __obj.asInstanceOf[ExpireSessionRequest]
   }
   
-  extension [Self <: ExpireSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpireSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setSessionId(value: String): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
   }

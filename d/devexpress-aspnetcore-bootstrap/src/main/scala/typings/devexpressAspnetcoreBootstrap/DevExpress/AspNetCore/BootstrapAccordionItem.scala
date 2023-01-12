@@ -75,7 +75,8 @@ object BootstrapAccordionItem {
     __obj.asInstanceOf[BootstrapAccordionItem]
   }
   
-  extension [Self <: BootstrapAccordionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapAccordionItem] (val x: Self) extends AnyVal {
     
     inline def setGetBadgeIconCssClass(value: () => String): Self = StObject.set(x, "getBadgeIconCssClass", js.Any.fromFunction0(value))
     

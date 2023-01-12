@@ -17,7 +17,8 @@ object HistoryTransactionOptions {
     __obj.asInstanceOf[HistoryTransactionOptions]
   }
   
-  extension [Self <: HistoryTransactionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryTransactionOptions] (val x: Self) extends AnyVal {
     
     inline def setSelectionsMarkerLayer(value: MarkerLayer): Self = StObject.set(x, "selectionsMarkerLayer", value.asInstanceOf[js.Any])
     

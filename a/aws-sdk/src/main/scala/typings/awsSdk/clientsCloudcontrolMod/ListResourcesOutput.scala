@@ -28,7 +28,8 @@ object ListResourcesOutput {
     __obj.asInstanceOf[ListResourcesOutput]
   }
   
-  extension [Self <: ListResourcesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourcesOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: HandlerNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

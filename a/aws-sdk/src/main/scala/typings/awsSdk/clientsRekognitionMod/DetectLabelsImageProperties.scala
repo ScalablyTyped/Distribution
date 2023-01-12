@@ -33,7 +33,8 @@ object DetectLabelsImageProperties {
     __obj.asInstanceOf[DetectLabelsImageProperties]
   }
   
-  extension [Self <: DetectLabelsImageProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectLabelsImageProperties] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: DetectLabelsImageBackground): Self = StObject.set(x, "Background", value.asInstanceOf[js.Any])
     

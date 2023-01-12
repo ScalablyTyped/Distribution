@@ -517,7 +517,8 @@ object buildSrcGeneratedGrpcGcpMod {
           __obj.asInstanceOf[IAffinityConfig]
         }
         
-        extension [Self <: IAffinityConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IAffinityConfig] (val x: Self) extends AnyVal {
           
           inline def setAffinityKey(value: String): Self = StObject.set(x, "affinityKey", value.asInstanceOf[js.Any])
           
@@ -549,7 +550,8 @@ object buildSrcGeneratedGrpcGcpMod {
           __obj.asInstanceOf[IApiConfig]
         }
         
-        extension [Self <: IApiConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IApiConfig] (val x: Self) extends AnyVal {
           
           inline def setChannelPool(value: IChannelPoolConfig): Self = StObject.set(x, "channelPool", value.asInstanceOf[js.Any])
           
@@ -594,7 +596,8 @@ object buildSrcGeneratedGrpcGcpMod {
           __obj.asInstanceOf[IChannelPoolConfig]
         }
         
-        extension [Self <: IChannelPoolConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IChannelPoolConfig] (val x: Self) extends AnyVal {
           
           inline def setDebugHeaderIntervalSecs(value: Double): Self = StObject.set(x, "debugHeaderIntervalSecs", value.asInstanceOf[js.Any])
           
@@ -646,7 +649,8 @@ object buildSrcGeneratedGrpcGcpMod {
           __obj.asInstanceOf[IMethodConfig]
         }
         
-        extension [Self <: IMethodConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IMethodConfig] (val x: Self) extends AnyVal {
           
           inline def setAffinity(value: IAffinityConfig): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
           

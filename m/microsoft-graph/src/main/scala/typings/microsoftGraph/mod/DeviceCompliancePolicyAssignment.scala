@@ -18,7 +18,8 @@ object DeviceCompliancePolicyAssignment {
     __obj.asInstanceOf[DeviceCompliancePolicyAssignment]
   }
   
-  extension [Self <: DeviceCompliancePolicyAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceCompliancePolicyAssignment] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: NullableOption[DeviceAndAppManagementAssignmentTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

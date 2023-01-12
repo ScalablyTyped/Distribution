@@ -73,7 +73,8 @@ object anon {
       __obj.asInstanceOf[DefaultInit]
     }
     
-    extension [Self <: DefaultInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultInit] (val x: Self) extends AnyVal {
       
       inline def setDefaultInit(value: js.Object): Self = StObject.set(x, "defaultInit", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object anon {
       __obj.asInstanceOf[PartialConfig]
     }
     
-    extension [Self <: PartialConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialConfig] (val x: Self) extends AnyVal {
       
       inline def setAsyncUtilTimeout(value: Double): Self = StObject.set(x, "asyncUtilTimeout", value.asInstanceOf[js.Any])
       
@@ -415,7 +417,8 @@ object anon {
       __obj.asInstanceOf[Typeofqueries]
     }
     
-    extension [Self <: Typeofqueries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofqueries] (val x: Self) extends AnyVal {
       
       inline def setFindAllByAltText(value: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]]): Self = StObject.set(x, "findAllByAltText", js.Any.fromFunction1(value))
       

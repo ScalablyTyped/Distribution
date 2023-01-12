@@ -243,7 +243,8 @@ object MatterDebugConfig {
     __obj.asInstanceOf[MatterDebugConfig]
   }
   
-  extension [Self <: MatterDebugConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatterDebugConfig] (val x: Self) extends AnyVal {
     
     inline def setAnchorColor(value: Double): Self = StObject.set(x, "anchorColor", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object MaskedViewIOSProps {
     __obj.asInstanceOf[MaskedViewIOSProps]
   }
   
-  extension [Self <: MaskedViewIOSProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaskedViewIOSProps] (val x: Self) extends AnyVal {
     
     inline def setMaskElement(value: ReactElement): Self = StObject.set(x, "maskElement", value.asInstanceOf[js.Any])
   }

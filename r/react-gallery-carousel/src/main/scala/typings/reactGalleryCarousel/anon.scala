@@ -147,7 +147,8 @@ object anon {
       __obj.asInstanceOf[CarouselWithChildrenParti]
     }
     
-    extension [Self <: CarouselWithChildrenParti](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselWithChildrenParti] (val x: Self) extends AnyVal {
       
       inline def setActiveIcon(value: ReactNode): Self = StObject.set(x, "activeIcon", value.asInstanceOf[js.Any])
       
@@ -529,7 +530,8 @@ object anon {
       __obj.asInstanceOf[CarouselWithImagesPartial]
     }
     
-    extension [Self <: CarouselWithImagesPartial](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselWithImagesPartial] (val x: Self) extends AnyVal {
       
       inline def setActiveIcon(value: ReactNode): Self = StObject.set(x, "activeIcon", value.asInstanceOf[js.Any])
       
@@ -790,7 +792,8 @@ object anon {
       __obj.asInstanceOf[CurIndex]
     }
     
-    extension [Self <: CurIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurIndex] (val x: Self) extends AnyVal {
       
       inline def setCurIndex(value: Double): Self = StObject.set(x, "curIndex", value.asInstanceOf[js.Any])
       
@@ -835,7 +838,8 @@ object anon {
       __obj.asInstanceOf[GoLeft]
     }
     
-    extension [Self <: GoLeft](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoLeft] (val x: Self) extends AnyVal {
       
       inline def setGoLeft(value: () => Unit): Self = StObject.set(x, "goLeft", js.Any.fromFunction0(value))
       

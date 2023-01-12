@@ -434,7 +434,8 @@ object Map {
       __obj.asInstanceOf[BubbleRenderingEventArgs]
     }
     
-    extension [Self <: BubbleRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BubbleRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -455,7 +456,8 @@ object Map {
       __obj.asInstanceOf[ClickEventArgs]
     }
     
-    extension [Self <: ClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -489,7 +491,8 @@ object Map {
       __obj.asInstanceOf[DisplayTextRenderingEventArgs]
     }
     
-    extension [Self <: DisplayTextRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayTextRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -522,7 +525,8 @@ object Map {
       __obj.asInstanceOf[DoubleClickEventArgs]
     }
     
-    extension [Self <: DoubleClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -647,7 +651,8 @@ object Map {
       __obj.asInstanceOf[Layer]
     }
     
-    extension [Self <: Layer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
       
       inline def setBingMapType(value: BingMapType | String): Self = StObject.set(x, "bingMapType", value.asInstanceOf[js.Any])
       
@@ -812,7 +817,8 @@ object Map {
       __obj.asInstanceOf[LayersBubbleSettings]
     }
     
-    extension [Self <: LayersBubbleSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersBubbleSettings] (val x: Self) extends AnyVal {
       
       inline def setBubbleOpacity(value: Double): Self = StObject.set(x, "bubbleOpacity", value.asInstanceOf[js.Any])
       
@@ -870,7 +876,8 @@ object Map {
       __obj.asInstanceOf[LayersBubbleSettingsColorMappings]
     }
     
-    extension [Self <: LayersBubbleSettingsColorMappings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersBubbleSettingsColorMappings] (val x: Self) extends AnyVal {
       
       inline def setRangeColorMapping(value: js.Array[LayersBubbleSettingsColorMappingsRangeColorMapping]): Self = StObject.set(x, "rangeColorMapping", value.asInstanceOf[js.Any])
       
@@ -908,7 +915,8 @@ object Map {
       __obj.asInstanceOf[LayersBubbleSettingsColorMappingsRangeColorMapping]
     }
     
-    extension [Self <: LayersBubbleSettingsColorMappingsRangeColorMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersBubbleSettingsColorMappingsRangeColorMapping] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -968,7 +976,8 @@ object Map {
       __obj.asInstanceOf[LayersLabelSettings]
     }
     
-    extension [Self <: LayersLabelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersLabelSettings] (val x: Self) extends AnyVal {
       
       inline def setEnableSmartLabel(value: Boolean): Self = StObject.set(x, "enableSmartLabel", value.asInstanceOf[js.Any])
       
@@ -1035,7 +1044,8 @@ object Map {
       __obj.asInstanceOf[LayersLabelSettingsFont]
     }
     
-    extension [Self <: LayersLabelSettingsFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersLabelSettingsFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1172,7 +1182,8 @@ object Map {
       __obj.asInstanceOf[LayersLegendSettings]
     }
     
-    extension [Self <: LayersLegendSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersLegendSettings] (val x: Self) extends AnyVal {
       
       inline def setDockOnMap(value: Boolean): Self = StObject.set(x, "dockOnMap", value.asInstanceOf[js.Any])
       
@@ -1345,7 +1356,8 @@ object Map {
       __obj.asInstanceOf[LayersShapeSettings]
     }
     
-    extension [Self <: LayersShapeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersShapeSettings] (val x: Self) extends AnyVal {
       
       inline def setAutoFill(value: Boolean): Self = StObject.set(x, "autoFill", value.asInstanceOf[js.Any])
       
@@ -1432,7 +1444,8 @@ object Map {
       __obj.asInstanceOf[LayersShapeSettingsColorMappings]
     }
     
-    extension [Self <: LayersShapeSettingsColorMappings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersShapeSettingsColorMappings] (val x: Self) extends AnyVal {
       
       inline def setEqualColorMapping(value: js.Array[LayersShapeSettingsColorMappingsEqualColorMapping]): Self = StObject.set(x, "equalColorMapping", value.asInstanceOf[js.Any])
       
@@ -1467,7 +1480,8 @@ object Map {
       __obj.asInstanceOf[LayersShapeSettingsColorMappingsEqualColorMapping]
     }
     
-    extension [Self <: LayersShapeSettingsColorMappingsEqualColorMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersShapeSettingsColorMappingsEqualColorMapping] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1503,7 +1517,8 @@ object Map {
       __obj.asInstanceOf[LayersShapeSettingsColorMappingsRangeColorMapping]
     }
     
-    extension [Self <: LayersShapeSettingsColorMappingsRangeColorMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersShapeSettingsColorMappingsRangeColorMapping] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -1634,7 +1649,8 @@ object Map {
       __obj.asInstanceOf[LayersSubLayer]
     }
     
-    extension [Self <: LayersSubLayer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersSubLayer] (val x: Self) extends AnyVal {
       
       inline def setBingMapType(value: BingMapType | String): Self = StObject.set(x, "bingMapType", value.asInstanceOf[js.Any])
       
@@ -1798,7 +1814,8 @@ object Map {
       __obj.asInstanceOf[LayersSubLayersBubbleSettings]
     }
     
-    extension [Self <: LayersSubLayersBubbleSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersSubLayersBubbleSettings] (val x: Self) extends AnyVal {
       
       inline def setBubbleOpacity(value: Double): Self = StObject.set(x, "bubbleOpacity", value.asInstanceOf[js.Any])
       
@@ -1860,7 +1877,8 @@ object Map {
       __obj.asInstanceOf[LayersSubLayersBubbleSettingsColorMappings]
     }
     
-    extension [Self <: LayersSubLayersBubbleSettingsColorMappings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersSubLayersBubbleSettingsColorMappings] (val x: Self) extends AnyVal {
       
       inline def setRangeColorMapping(value: js.Array[LayersSubLayersBubbleSettingsColorMappingsRangeColorMapping]): Self = StObject.set(x, "rangeColorMapping", value.asInstanceOf[js.Any])
       
@@ -1898,7 +1916,8 @@ object Map {
       __obj.asInstanceOf[LayersSubLayersBubbleSettingsColorMappingsRangeColorMapping]
     }
     
-    extension [Self <: LayersSubLayersBubbleSettingsColorMappingsRangeColorMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersSubLayersBubbleSettingsColorMappingsRangeColorMapping] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1954,7 +1973,8 @@ object Map {
       __obj.asInstanceOf[LayersSubLayersLabelSettings]
     }
     
-    extension [Self <: LayersSubLayersLabelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersSubLayersLabelSettings] (val x: Self) extends AnyVal {
       
       inline def setEnableSmartLabel(value: Boolean): Self = StObject.set(x, "enableSmartLabel", value.asInstanceOf[js.Any])
       
@@ -2082,7 +2102,8 @@ object Map {
       __obj.asInstanceOf[LayersSubLayersLegendSettings]
     }
     
-    extension [Self <: LayersSubLayersLegendSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersSubLayersLegendSettings] (val x: Self) extends AnyVal {
       
       inline def setDockOnMap(value: Boolean): Self = StObject.set(x, "dockOnMap", value.asInstanceOf[js.Any])
       
@@ -2246,7 +2267,8 @@ object Map {
       __obj.asInstanceOf[LayersSubLayersShapeSettings]
     }
     
-    extension [Self <: LayersSubLayersShapeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersSubLayersShapeSettings] (val x: Self) extends AnyVal {
       
       inline def setAutoFill(value: Boolean): Self = StObject.set(x, "autoFill", value.asInstanceOf[js.Any])
       
@@ -2329,7 +2351,8 @@ object Map {
       __obj.asInstanceOf[LayersSubLayersShapeSettingsColorMappings]
     }
     
-    extension [Self <: LayersSubLayersShapeSettingsColorMappings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersSubLayersShapeSettingsColorMappings] (val x: Self) extends AnyVal {
       
       inline def setEqualColorMapping(value: js.Array[LayersSubLayersShapeSettingsColorMappingsEqualColorMapping]): Self = StObject.set(x, "equalColorMapping", value.asInstanceOf[js.Any])
       
@@ -2364,7 +2387,8 @@ object Map {
       __obj.asInstanceOf[LayersSubLayersShapeSettingsColorMappingsEqualColorMapping]
     }
     
-    extension [Self <: LayersSubLayersShapeSettingsColorMappingsEqualColorMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersSubLayersShapeSettingsColorMappingsEqualColorMapping] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -2400,7 +2424,8 @@ object Map {
       __obj.asInstanceOf[LayersSubLayersShapeSettingsColorMappingsRangeColorMapping]
     }
     
-    extension [Self <: LayersSubLayersShapeSettingsColorMappingsRangeColorMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersSubLayersShapeSettingsColorMappingsRangeColorMapping] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -2445,7 +2470,8 @@ object Map {
       __obj.asInstanceOf[LegendItemClickEventArgs]
     }
     
-    extension [Self <: LegendItemClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendItemClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2478,7 +2504,8 @@ object Map {
       __obj.asInstanceOf[LegendItemRenderingEventArgs]
     }
     
-    extension [Self <: LegendItemRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendItemRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -2507,7 +2534,8 @@ object Map {
       __obj.asInstanceOf[MarkerEnterEventArgs]
     }
     
-    extension [Self <: MarkerEnterEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerEnterEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2544,7 +2572,8 @@ object Map {
       __obj.asInstanceOf[MarkerLeaveEventArgs]
     }
     
-    extension [Self <: MarkerLeaveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerLeaveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2573,7 +2602,8 @@ object Map {
       __obj.asInstanceOf[MarkerSelectedEventArgs]
     }
     
-    extension [Self <: MarkerSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -2738,7 +2768,8 @@ object Map {
       __obj.asInstanceOf[typings.ejWebAll.ej.datavisualization.Map.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.datavisualization.Map.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.datavisualization.Map.Model] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -2893,7 +2924,8 @@ object Map {
       __obj.asInstanceOf[MouseleaveEventArgs]
     }
     
-    extension [Self <: MouseleaveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseleaveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -2914,7 +2946,8 @@ object Map {
       __obj.asInstanceOf[MouseoverEventArgs]
     }
     
-    extension [Self <: MouseoverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseoverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -2956,7 +2989,8 @@ object Map {
       __obj.asInstanceOf[NavigationControl]
     }
     
-    extension [Self <: NavigationControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationControl] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePosition(value: Any): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
@@ -3001,7 +3035,8 @@ object Map {
       __obj.asInstanceOf[OnLoadEventArgs]
     }
     
-    extension [Self <: OnLoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnLoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3030,7 +3065,8 @@ object Map {
       __obj.asInstanceOf[OnRenderCompleteEventArgs]
     }
     
-    extension [Self <: OnRenderCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnRenderCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -3051,7 +3087,8 @@ object Map {
       __obj.asInstanceOf[PannedEventArgs]
     }
     
-    extension [Self <: PannedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PannedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -3072,7 +3109,8 @@ object Map {
       __obj.asInstanceOf[RefreshedEventArgs]
     }
     
-    extension [Self <: RefreshedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -3093,7 +3131,8 @@ object Map {
       __obj.asInstanceOf[RightClickEventArgs]
     }
     
-    extension [Self <: RightClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RightClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -3114,7 +3153,8 @@ object Map {
       __obj.asInstanceOf[ShapeRenderingEventArgs]
     }
     
-    extension [Self <: ShapeRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShapeRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -3135,7 +3175,8 @@ object Map {
       __obj.asInstanceOf[ShapeSelectedEventArgs]
     }
     
-    extension [Self <: ShapeSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShapeSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -3192,7 +3233,8 @@ object Map {
       __obj.asInstanceOf[ZoomSettings]
     }
     
-    extension [Self <: ZoomSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomSettings] (val x: Self) extends AnyVal {
       
       inline def setAnimationDuration(value: String): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
@@ -3245,7 +3287,8 @@ object Map {
       __obj.asInstanceOf[ZoomedInEventArgs]
     }
     
-    extension [Self <: ZoomedInEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomedInEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -3274,7 +3317,8 @@ object Map {
       __obj.asInstanceOf[ZoomedOutEventArgs]
     }
     
-    extension [Self <: ZoomedOutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomedOutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       

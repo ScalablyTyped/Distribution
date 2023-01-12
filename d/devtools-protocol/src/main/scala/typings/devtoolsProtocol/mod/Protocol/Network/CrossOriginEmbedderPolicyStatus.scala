@@ -21,7 +21,8 @@ object CrossOriginEmbedderPolicyStatus {
     __obj.asInstanceOf[CrossOriginEmbedderPolicyStatus]
   }
   
-  extension [Self <: CrossOriginEmbedderPolicyStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossOriginEmbedderPolicyStatus] (val x: Self) extends AnyVal {
     
     inline def setReportOnlyReportingEndpoint(value: String): Self = StObject.set(x, "reportOnlyReportingEndpoint", value.asInstanceOf[js.Any])
     

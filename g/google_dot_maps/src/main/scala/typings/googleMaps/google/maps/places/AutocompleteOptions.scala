@@ -72,7 +72,8 @@ object AutocompleteOptions {
     __obj.asInstanceOf[AutocompleteOptions]
   }
   
-  extension [Self <: AutocompleteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutocompleteOptions] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: LatLngBounds | LatLngBoundsLiteral): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

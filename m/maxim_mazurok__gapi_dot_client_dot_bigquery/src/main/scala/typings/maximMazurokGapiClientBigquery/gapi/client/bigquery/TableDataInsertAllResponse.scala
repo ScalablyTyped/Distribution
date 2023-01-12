@@ -20,7 +20,8 @@ object TableDataInsertAllResponse {
     __obj.asInstanceOf[TableDataInsertAllResponse]
   }
   
-  extension [Self <: TableDataInsertAllResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableDataInsertAllResponse] (val x: Self) extends AnyVal {
     
     inline def setInsertErrors(value: js.Array[Errors]): Self = StObject.set(x, "insertErrors", value.asInstanceOf[js.Any])
     

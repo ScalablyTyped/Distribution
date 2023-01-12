@@ -149,7 +149,8 @@ object JQueryNanoScroller {
       __obj.asInstanceOf[NanoScrollerOptions]
     }
     
-    extension [Self <: NanoScrollerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NanoScrollerOptions] (val x: Self) extends AnyVal {
       
       inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
       

@@ -41,7 +41,8 @@ object WordInfo {
     __obj.asInstanceOf[WordInfo]
   }
   
-  extension [Self <: WordInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WordInfo] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

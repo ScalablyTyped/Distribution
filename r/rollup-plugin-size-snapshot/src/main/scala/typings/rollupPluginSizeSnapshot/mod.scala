@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[PluginSizeSnapshotOptions]
     }
     
-    extension [Self <: PluginSizeSnapshotOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginSizeSnapshotOptions] (val x: Self) extends AnyVal {
       
       inline def setMatchSnapshot(value: Boolean): Self = StObject.set(x, "matchSnapshot", value.asInstanceOf[js.Any])
       

@@ -994,7 +994,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatBansCollection]
       }
       
-      extension [Self <: LiveChatBansCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatBansCollection] (val x: Self) extends AnyVal {
         
         inline def setInsert(value: (LiveChatBan, String) => LiveChatBan): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
         
@@ -1231,7 +1232,8 @@ object YouTube {
     }
   }
   
-  extension [Self <: YouTube](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YouTube] (val x: Self) extends AnyVal {
     
     inline def setActivities(value: ActivitiesCollection): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
     
@@ -1613,7 +1615,8 @@ object YouTube {
         __obj.asInstanceOf[AccessPolicy]
       }
       
-      extension [Self <: AccessPolicy](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccessPolicy] (val x: Self) extends AnyVal {
         
         inline def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
         
@@ -1646,7 +1649,8 @@ object YouTube {
         __obj.asInstanceOf[Activity]
       }
       
-      extension [Self <: Activity](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
         
         inline def setContentDetails(value: ActivityContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
         
@@ -1701,7 +1705,8 @@ object YouTube {
         __obj.asInstanceOf[ActivityContentDetails]
       }
       
-      extension [Self <: ActivityContentDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityContentDetails] (val x: Self) extends AnyVal {
         
         inline def setBulletin(value: ActivityContentDetailsBulletin): Self = StObject.set(x, "bulletin", value.asInstanceOf[js.Any])
         
@@ -1760,7 +1765,8 @@ object YouTube {
         __obj.asInstanceOf[ActivityContentDetailsBulletin]
       }
       
-      extension [Self <: ActivityContentDetailsBulletin](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityContentDetailsBulletin] (val x: Self) extends AnyVal {
         
         inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
         
@@ -1779,7 +1785,8 @@ object YouTube {
         __obj.asInstanceOf[ActivityContentDetailsChannelItem]
       }
       
-      extension [Self <: ActivityContentDetailsChannelItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityContentDetailsChannelItem] (val x: Self) extends AnyVal {
         
         inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
         
@@ -1798,7 +1805,8 @@ object YouTube {
         __obj.asInstanceOf[ActivityContentDetailsComment]
       }
       
-      extension [Self <: ActivityContentDetailsComment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityContentDetailsComment] (val x: Self) extends AnyVal {
         
         inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
         
@@ -1817,7 +1825,8 @@ object YouTube {
         __obj.asInstanceOf[ActivityContentDetailsFavorite]
       }
       
-      extension [Self <: ActivityContentDetailsFavorite](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityContentDetailsFavorite] (val x: Self) extends AnyVal {
         
         inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
         
@@ -1836,7 +1845,8 @@ object YouTube {
         __obj.asInstanceOf[ActivityContentDetailsLike]
       }
       
-      extension [Self <: ActivityContentDetailsLike](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityContentDetailsLike] (val x: Self) extends AnyVal {
         
         inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
         
@@ -1859,7 +1869,8 @@ object YouTube {
         __obj.asInstanceOf[ActivityContentDetailsPlaylistItem]
       }
       
-      extension [Self <: ActivityContentDetailsPlaylistItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityContentDetailsPlaylistItem] (val x: Self) extends AnyVal {
         
         inline def setPlaylistId(value: String): Self = StObject.set(x, "playlistId", value.asInstanceOf[js.Any])
         
@@ -1904,7 +1915,8 @@ object YouTube {
         __obj.asInstanceOf[ActivityContentDetailsPromotedItem]
       }
       
-      extension [Self <: ActivityContentDetailsPromotedItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityContentDetailsPromotedItem] (val x: Self) extends AnyVal {
         
         inline def setAdTag(value: String): Self = StObject.set(x, "adTag", value.asInstanceOf[js.Any])
         
@@ -1967,7 +1979,8 @@ object YouTube {
         __obj.asInstanceOf[ActivityContentDetailsRecommendation]
       }
       
-      extension [Self <: ActivityContentDetailsRecommendation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityContentDetailsRecommendation] (val x: Self) extends AnyVal {
         
         inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
@@ -2002,7 +2015,8 @@ object YouTube {
         __obj.asInstanceOf[ActivityContentDetailsSocial]
       }
       
-      extension [Self <: ActivityContentDetailsSocial](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityContentDetailsSocial] (val x: Self) extends AnyVal {
         
         inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
         
@@ -2037,7 +2051,8 @@ object YouTube {
         __obj.asInstanceOf[ActivityContentDetailsSubscription]
       }
       
-      extension [Self <: ActivityContentDetailsSubscription](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityContentDetailsSubscription] (val x: Self) extends AnyVal {
         
         inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
         
@@ -2056,7 +2071,8 @@ object YouTube {
         __obj.asInstanceOf[ActivityContentDetailsUpload]
       }
       
-      extension [Self <: ActivityContentDetailsUpload](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityContentDetailsUpload] (val x: Self) extends AnyVal {
         
         inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
         
@@ -2092,7 +2108,8 @@ object YouTube {
         __obj.asInstanceOf[ActivityListResponse]
       }
       
-      extension [Self <: ActivityListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -2159,7 +2176,8 @@ object YouTube {
         __obj.asInstanceOf[ActivitySnippet]
       }
       
-      extension [Self <: ActivitySnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivitySnippet] (val x: Self) extends AnyVal {
         
         inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
@@ -2212,7 +2230,8 @@ object YouTube {
         __obj.asInstanceOf[Caption]
       }
       
-      extension [Self <: Caption](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Caption] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -2251,7 +2270,8 @@ object YouTube {
         __obj.asInstanceOf[CaptionListResponse]
       }
       
-      extension [Self <: CaptionListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CaptionListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -2312,7 +2332,8 @@ object YouTube {
         __obj.asInstanceOf[CaptionSnippet]
       }
       
-      extension [Self <: CaptionSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CaptionSnippet] (val x: Self) extends AnyVal {
         
         inline def setAudioTrackType(value: String): Self = StObject.set(x, "audioTrackType", value.asInstanceOf[js.Any])
         
@@ -2387,7 +2408,8 @@ object YouTube {
         __obj.asInstanceOf[CdnSettings]
       }
       
-      extension [Self <: CdnSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CdnSettings] (val x: Self) extends AnyVal {
         
         inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         
@@ -2448,7 +2470,8 @@ object YouTube {
         __obj.asInstanceOf[Channel]
       }
       
-      extension [Self <: Channel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
         
         inline def setAuditDetails(value: ChannelAuditDetails): Self = StObject.set(x, "auditDetails", value.asInstanceOf[js.Any])
         
@@ -2523,7 +2546,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelAuditDetails]
       }
       
-      extension [Self <: ChannelAuditDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelAuditDetails] (val x: Self) extends AnyVal {
         
         inline def setCommunityGuidelinesGoodStanding(value: Boolean): Self = StObject.set(x, "communityGuidelinesGoodStanding", value.asInstanceOf[js.Any])
         
@@ -2554,7 +2578,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelBannerResource]
       }
       
-      extension [Self <: ChannelBannerResource](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelBannerResource] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -2587,7 +2612,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelBrandingSettings]
       }
       
-      extension [Self <: ChannelBrandingSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelBrandingSettings] (val x: Self) extends AnyVal {
         
         inline def setChannel(value: ChannelSettings): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
         
@@ -2620,7 +2646,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelContentDetails]
       }
       
-      extension [Self <: ChannelContentDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelContentDetails] (val x: Self) extends AnyVal {
         
         inline def setRelatedPlaylists(value: ChannelContentDetailsRelatedPlaylists): Self = StObject.set(x, "relatedPlaylists", value.asInstanceOf[js.Any])
         
@@ -2647,7 +2674,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelContentDetailsRelatedPlaylists]
       }
       
-      extension [Self <: ChannelContentDetailsRelatedPlaylists](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelContentDetailsRelatedPlaylists] (val x: Self) extends AnyVal {
         
         inline def setFavorites(value: String): Self = StObject.set(x, "favorites", value.asInstanceOf[js.Any])
         
@@ -2684,7 +2712,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelContentOwnerDetails]
       }
       
-      extension [Self <: ChannelContentOwnerDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelContentOwnerDetails] (val x: Self) extends AnyVal {
         
         inline def setContentOwner(value: String): Self = StObject.set(x, "contentOwner", value.asInstanceOf[js.Any])
         
@@ -2709,7 +2738,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelConversionPing]
       }
       
-      extension [Self <: ChannelConversionPing](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelConversionPing] (val x: Self) extends AnyVal {
         
         inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
@@ -2732,7 +2762,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelConversionPings]
       }
       
-      extension [Self <: ChannelConversionPings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelConversionPings] (val x: Self) extends AnyVal {
         
         inline def setPings(value: js.Array[ChannelConversionPing]): Self = StObject.set(x, "pings", value.asInstanceOf[js.Any])
         
@@ -2770,7 +2801,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelListResponse]
       }
       
-      extension [Self <: ChannelListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -2825,7 +2857,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelLocalization]
       }
       
-      extension [Self <: ChannelLocalization](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelLocalization] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -2854,7 +2887,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelProfileDetails]
       }
       
-      extension [Self <: ChannelProfileDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelProfileDetails] (val x: Self) extends AnyVal {
         
         inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
@@ -2897,7 +2931,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelSection]
       }
       
-      extension [Self <: ChannelSection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelSection] (val x: Self) extends AnyVal {
         
         inline def setContentDetails(value: ChannelSectionContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
         
@@ -2942,7 +2977,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelSectionContentDetails]
       }
       
-      extension [Self <: ChannelSectionContentDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelSectionContentDetails] (val x: Self) extends AnyVal {
         
         inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
         
@@ -2977,7 +3013,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelSectionListResponse]
       }
       
-      extension [Self <: ChannelSectionListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelSectionListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3014,7 +3051,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelSectionLocalization]
       }
       
-      extension [Self <: ChannelSectionLocalization](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelSectionLocalization] (val x: Self) extends AnyVal {
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
@@ -3045,7 +3083,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelSectionSnippet]
       }
       
-      extension [Self <: ChannelSectionSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelSectionSnippet] (val x: Self) extends AnyVal {
         
         inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
@@ -3092,7 +3131,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelSectionTargeting]
       }
       
-      extension [Self <: ChannelSectionTargeting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelSectionTargeting] (val x: Self) extends AnyVal {
         
         inline def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
         
@@ -3151,7 +3191,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelSettings]
       }
       
-      extension [Self <: ChannelSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelSettings] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
@@ -3238,7 +3279,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelSnippet]
       }
       
-      extension [Self <: ChannelSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelSnippet] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
@@ -3293,7 +3335,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelStatistics]
       }
       
-      extension [Self <: ChannelStatistics](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelStatistics] (val x: Self) extends AnyVal {
         
         inline def setCommentCount(value: String): Self = StObject.set(x, "commentCount", value.asInstanceOf[js.Any])
         
@@ -3332,7 +3375,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelStatus]
       }
       
-      extension [Self <: ChannelStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelStatus] (val x: Self) extends AnyVal {
         
         inline def setIsLinked(value: Boolean): Self = StObject.set(x, "isLinked", value.asInstanceOf[js.Any])
         
@@ -3361,7 +3405,8 @@ object YouTube {
         __obj.asInstanceOf[ChannelTopicDetails]
       }
       
-      extension [Self <: ChannelTopicDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelTopicDetails] (val x: Self) extends AnyVal {
         
         inline def setTopicCategories(value: js.Array[String]): Self = StObject.set(x, "topicCategories", value.asInstanceOf[js.Any])
         
@@ -3394,7 +3439,8 @@ object YouTube {
         __obj.asInstanceOf[Comment]
       }
       
-      extension [Self <: Comment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3440,7 +3486,8 @@ object YouTube {
         __obj.asInstanceOf[CommentListResponse]
       }
       
-      extension [Self <: CommentListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CommentListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3517,7 +3564,8 @@ object YouTube {
         __obj.asInstanceOf[CommentSnippet]
       }
       
-      extension [Self <: CommentSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CommentSnippet] (val x: Self) extends AnyVal {
         
         inline def setAuthorChannelId(value: js.Object): Self = StObject.set(x, "authorChannelId", value.asInstanceOf[js.Any])
         
@@ -3600,7 +3648,8 @@ object YouTube {
         __obj.asInstanceOf[CommentThread]
       }
       
-      extension [Self <: CommentThread](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CommentThread] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3650,7 +3699,8 @@ object YouTube {
         __obj.asInstanceOf[CommentThreadListResponse]
       }
       
-      extension [Self <: CommentThreadListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CommentThreadListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3699,7 +3749,8 @@ object YouTube {
         __obj.asInstanceOf[CommentThreadReplies]
       }
       
-      extension [Self <: CommentThreadReplies](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CommentThreadReplies] (val x: Self) extends AnyVal {
         
         inline def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
         
@@ -3730,7 +3781,8 @@ object YouTube {
         __obj.asInstanceOf[CommentThreadSnippet]
       }
       
-      extension [Self <: CommentThreadSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CommentThreadSnippet] (val x: Self) extends AnyVal {
         
         inline def setCanReply(value: Boolean): Self = StObject.set(x, "canReply", value.asInstanceOf[js.Any])
         
@@ -3907,7 +3959,8 @@ object YouTube {
         __obj.asInstanceOf[ContentRating]
       }
       
-      extension [Self <: ContentRating](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContentRating] (val x: Self) extends AnyVal {
         
         inline def setAcbRating(value: String): Self = StObject.set(x, "acbRating", value.asInstanceOf[js.Any])
         
@@ -4210,7 +4263,8 @@ object YouTube {
         __obj.asInstanceOf[GeoPoint]
       }
       
-      extension [Self <: GeoPoint](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GeoPoint] (val x: Self) extends AnyVal {
         
         inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
         
@@ -4243,7 +4297,8 @@ object YouTube {
         __obj.asInstanceOf[GuideCategory]
       }
       
-      extension [Self <: GuideCategory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GuideCategory] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -4291,7 +4346,8 @@ object YouTube {
         __obj.asInstanceOf[GuideCategoryListResponse]
       }
       
-      extension [Self <: GuideCategoryListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GuideCategoryListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -4346,7 +4402,8 @@ object YouTube {
         __obj.asInstanceOf[GuideCategorySnippet]
       }
       
-      extension [Self <: GuideCategorySnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GuideCategorySnippet] (val x: Self) extends AnyVal {
         
         inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
@@ -4375,7 +4432,8 @@ object YouTube {
         __obj.asInstanceOf[I18nLanguage]
       }
       
-      extension [Self <: I18nLanguage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: I18nLanguage] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -4414,7 +4472,8 @@ object YouTube {
         __obj.asInstanceOf[I18nLanguageListResponse]
       }
       
-      extension [Self <: I18nLanguageListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: I18nLanguageListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -4453,7 +4512,8 @@ object YouTube {
         __obj.asInstanceOf[I18nLanguageSnippet]
       }
       
-      extension [Self <: I18nLanguageSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: I18nLanguageSnippet] (val x: Self) extends AnyVal {
         
         inline def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
         
@@ -4482,7 +4542,8 @@ object YouTube {
         __obj.asInstanceOf[I18nRegion]
       }
       
-      extension [Self <: I18nRegion](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: I18nRegion] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -4521,7 +4582,8 @@ object YouTube {
         __obj.asInstanceOf[I18nRegionListResponse]
       }
       
-      extension [Self <: I18nRegionListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: I18nRegionListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -4560,7 +4622,8 @@ object YouTube {
         __obj.asInstanceOf[I18nRegionSnippet]
       }
       
-      extension [Self <: I18nRegionSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: I18nRegionSnippet] (val x: Self) extends AnyVal {
         
         inline def setGl(value: String): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
         
@@ -4625,7 +4688,8 @@ object YouTube {
         __obj.asInstanceOf[ImageSettings]
       }
       
-      extension [Self <: ImageSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ImageSettings] (val x: Self) extends AnyVal {
         
         inline def setBackgroundImageUrl(value: LocalizedProperty): Self = StObject.set(x, "backgroundImageUrl", value.asInstanceOf[js.Any])
         
@@ -4732,7 +4796,8 @@ object YouTube {
         __obj.asInstanceOf[IngestionInfo]
       }
       
-      extension [Self <: IngestionInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IngestionInfo] (val x: Self) extends AnyVal {
         
         inline def setBackupIngestionAddress(value: String): Self = StObject.set(x, "backupIngestionAddress", value.asInstanceOf[js.Any])
         
@@ -4767,7 +4832,8 @@ object YouTube {
         __obj.asInstanceOf[InvideoBranding]
       }
       
-      extension [Self <: InvideoBranding](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InvideoBranding] (val x: Self) extends AnyVal {
         
         inline def setImageBytes(value: String): Self = StObject.set(x, "imageBytes", value.asInstanceOf[js.Any])
         
@@ -4804,7 +4870,8 @@ object YouTube {
         __obj.asInstanceOf[InvideoPosition]
       }
       
-      extension [Self <: InvideoPosition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InvideoPosition] (val x: Self) extends AnyVal {
         
         inline def setCornerPosition(value: String): Self = StObject.set(x, "cornerPosition", value.asInstanceOf[js.Any])
         
@@ -4833,7 +4900,8 @@ object YouTube {
         __obj.asInstanceOf[InvideoPromotion]
       }
       
-      extension [Self <: InvideoPromotion](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InvideoPromotion] (val x: Self) extends AnyVal {
         
         inline def setDefaultTiming(value: InvideoTiming): Self = StObject.set(x, "defaultTiming", value.asInstanceOf[js.Any])
         
@@ -4870,7 +4938,8 @@ object YouTube {
         __obj.asInstanceOf[InvideoTiming]
       }
       
-      extension [Self <: InvideoTiming](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InvideoTiming] (val x: Self) extends AnyVal {
         
         inline def setDurationMs(value: String): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
         
@@ -4897,7 +4966,8 @@ object YouTube {
         __obj.asInstanceOf[LanguageTag]
       }
       
-      extension [Self <: LanguageTag](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LanguageTag] (val x: Self) extends AnyVal {
         
         inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
@@ -4928,7 +4998,8 @@ object YouTube {
         __obj.asInstanceOf[LiveBroadcast]
       }
       
-      extension [Self <: LiveBroadcast](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveBroadcast] (val x: Self) extends AnyVal {
         
         inline def setContentDetails(value: LiveBroadcastContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
         
@@ -5001,7 +5072,8 @@ object YouTube {
         __obj.asInstanceOf[LiveBroadcastContentDetails]
       }
       
-      extension [Self <: LiveBroadcastContentDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveBroadcastContentDetails] (val x: Self) extends AnyVal {
         
         inline def setBoundStreamId(value: String): Self = StObject.set(x, "boundStreamId", value.asInstanceOf[js.Any])
         
@@ -5097,7 +5169,8 @@ object YouTube {
         __obj.asInstanceOf[LiveBroadcastListResponse]
       }
       
-      extension [Self <: LiveBroadcastListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveBroadcastListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -5170,7 +5243,8 @@ object YouTube {
         __obj.asInstanceOf[LiveBroadcastSnippet]
       }
       
-      extension [Self <: LiveBroadcastSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveBroadcastSnippet] (val x: Self) extends AnyVal {
         
         inline def setActualEndTime(value: String): Self = StObject.set(x, "actualEndTime", value.asInstanceOf[js.Any])
         
@@ -5231,7 +5305,8 @@ object YouTube {
         __obj.asInstanceOf[LiveBroadcastStatistics]
       }
       
-      extension [Self <: LiveBroadcastStatistics](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveBroadcastStatistics] (val x: Self) extends AnyVal {
         
         inline def setConcurrentViewers(value: String): Self = StObject.set(x, "concurrentViewers", value.asInstanceOf[js.Any])
         
@@ -5260,7 +5335,8 @@ object YouTube {
         __obj.asInstanceOf[LiveBroadcastStatus]
       }
       
-      extension [Self <: LiveBroadcastStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveBroadcastStatus] (val x: Self) extends AnyVal {
         
         inline def setLifeCycleStatus(value: String): Self = StObject.set(x, "lifeCycleStatus", value.asInstanceOf[js.Any])
         
@@ -5297,7 +5373,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatBan]
       }
       
-      extension [Self <: LiveChatBan](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatBan] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -5334,7 +5411,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatBanSnippet]
       }
       
-      extension [Self <: LiveChatBanSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatBanSnippet] (val x: Self) extends AnyVal {
         
         inline def setBanDurationSeconds(value: String): Self = StObject.set(x, "banDurationSeconds", value.asInstanceOf[js.Any])
         
@@ -5371,7 +5449,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatFanFundingEventDetails]
       }
       
-      extension [Self <: LiveChatFanFundingEventDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatFanFundingEventDetails] (val x: Self) extends AnyVal {
         
         inline def setAmountDisplayString(value: String): Self = StObject.set(x, "amountDisplayString", value.asInstanceOf[js.Any])
         
@@ -5410,7 +5489,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatMessage]
       }
       
-      extension [Self <: LiveChatMessage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatMessage] (val x: Self) extends AnyVal {
         
         inline def setAuthorDetails(value: LiveChatMessageAuthorDetails): Self = StObject.set(x, "authorDetails", value.asInstanceOf[js.Any])
         
@@ -5459,7 +5539,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatMessageAuthorDetails]
       }
       
-      extension [Self <: LiveChatMessageAuthorDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatMessageAuthorDetails] (val x: Self) extends AnyVal {
         
         inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
@@ -5506,7 +5587,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatMessageDeletedDetails]
       }
       
-      extension [Self <: LiveChatMessageDeletedDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatMessageDeletedDetails] (val x: Self) extends AnyVal {
         
         inline def setDeletedMessageId(value: String): Self = StObject.set(x, "deletedMessageId", value.asInstanceOf[js.Any])
         
@@ -5544,7 +5626,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatMessageListResponse]
       }
       
-      extension [Self <: LiveChatMessageListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatMessageListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -5601,7 +5684,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatMessageRetractedDetails]
       }
       
-      extension [Self <: LiveChatMessageRetractedDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatMessageRetractedDetails] (val x: Self) extends AnyVal {
         
         inline def setRetractedMessageId(value: String): Self = StObject.set(x, "retractedMessageId", value.asInstanceOf[js.Any])
         
@@ -5652,7 +5736,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatMessageSnippet]
       }
       
-      extension [Self <: LiveChatMessageSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatMessageSnippet] (val x: Self) extends AnyVal {
         
         inline def setAuthorChannelId(value: String): Self = StObject.set(x, "authorChannelId", value.asInstanceOf[js.Any])
         
@@ -5741,7 +5826,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatModerator]
       }
       
-      extension [Self <: LiveChatModerator](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatModerator] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -5789,7 +5875,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatModeratorListResponse]
       }
       
-      extension [Self <: LiveChatModeratorListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatModeratorListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -5844,7 +5931,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatModeratorSnippet]
       }
       
-      extension [Self <: LiveChatModeratorSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatModeratorSnippet] (val x: Self) extends AnyVal {
         
         inline def setLiveChatId(value: String): Self = StObject.set(x, "liveChatId", value.asInstanceOf[js.Any])
         
@@ -5867,7 +5955,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatPollClosedDetails]
       }
       
-      extension [Self <: LiveChatPollClosedDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatPollClosedDetails] (val x: Self) extends AnyVal {
         
         inline def setPollId(value: String): Self = StObject.set(x, "pollId", value.asInstanceOf[js.Any])
         
@@ -5890,7 +5979,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatPollEditedDetails]
       }
       
-      extension [Self <: LiveChatPollEditedDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatPollEditedDetails] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -5921,7 +6011,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatPollItem]
       }
       
-      extension [Self <: LiveChatPollItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatPollItem] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -5948,7 +6039,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatPollOpenedDetails]
       }
       
-      extension [Self <: LiveChatPollOpenedDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatPollOpenedDetails] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -5979,7 +6071,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatPollVotedDetails]
       }
       
-      extension [Self <: LiveChatPollVotedDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatPollVotedDetails] (val x: Self) extends AnyVal {
         
         inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
         
@@ -6010,7 +6103,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatSuperChatDetails]
       }
       
-      extension [Self <: LiveChatSuperChatDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatSuperChatDetails] (val x: Self) extends AnyVal {
         
         inline def setAmountDisplayString(value: String): Self = StObject.set(x, "amountDisplayString", value.asInstanceOf[js.Any])
         
@@ -6053,7 +6147,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatSuperStickerDetails]
       }
       
-      extension [Self <: LiveChatSuperStickerDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatSuperStickerDetails] (val x: Self) extends AnyVal {
         
         inline def setAmountDisplayString(value: String): Self = StObject.set(x, "amountDisplayString", value.asInstanceOf[js.Any])
         
@@ -6088,7 +6183,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatTextMessageDetails]
       }
       
-      extension [Self <: LiveChatTextMessageDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatTextMessageDetails] (val x: Self) extends AnyVal {
         
         inline def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
         
@@ -6111,7 +6207,8 @@ object YouTube {
         __obj.asInstanceOf[LiveChatUserBannedMessageDetails]
       }
       
-      extension [Self <: LiveChatUserBannedMessageDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveChatUserBannedMessageDetails] (val x: Self) extends AnyVal {
         
         inline def setBanDurationSeconds(value: String): Self = StObject.set(x, "banDurationSeconds", value.asInstanceOf[js.Any])
         
@@ -6150,7 +6247,8 @@ object YouTube {
         __obj.asInstanceOf[LiveStream]
       }
       
-      extension [Self <: LiveStream](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveStream] (val x: Self) extends AnyVal {
         
         inline def setCdn(value: CdnSettings): Self = StObject.set(x, "cdn", value.asInstanceOf[js.Any])
         
@@ -6199,7 +6297,8 @@ object YouTube {
         __obj.asInstanceOf[LiveStreamConfigurationIssue]
       }
       
-      extension [Self <: LiveStreamConfigurationIssue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveStreamConfigurationIssue] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -6232,7 +6331,8 @@ object YouTube {
         __obj.asInstanceOf[LiveStreamContentDetails]
       }
       
-      extension [Self <: LiveStreamContentDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveStreamContentDetails] (val x: Self) extends AnyVal {
         
         inline def setClosedCaptionsIngestionUrl(value: String): Self = StObject.set(x, "closedCaptionsIngestionUrl", value.asInstanceOf[js.Any])
         
@@ -6259,7 +6359,8 @@ object YouTube {
         __obj.asInstanceOf[LiveStreamHealthStatus]
       }
       
-      extension [Self <: LiveStreamHealthStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveStreamHealthStatus] (val x: Self) extends AnyVal {
         
         inline def setConfigurationIssues(value: js.Array[LiveStreamConfigurationIssue]): Self = StObject.set(x, "configurationIssues", value.asInstanceOf[js.Any])
         
@@ -6305,7 +6406,8 @@ object YouTube {
         __obj.asInstanceOf[LiveStreamListResponse]
       }
       
-      extension [Self <: LiveStreamListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveStreamListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -6366,7 +6468,8 @@ object YouTube {
         __obj.asInstanceOf[LiveStreamSnippet]
       }
       
-      extension [Self <: LiveStreamSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveStreamSnippet] (val x: Self) extends AnyVal {
         
         inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
@@ -6403,7 +6506,8 @@ object YouTube {
         __obj.asInstanceOf[LiveStreamStatus]
       }
       
-      extension [Self <: LiveStreamStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveStreamStatus] (val x: Self) extends AnyVal {
         
         inline def setHealthStatus(value: LiveStreamHealthStatus): Self = StObject.set(x, "healthStatus", value.asInstanceOf[js.Any])
         
@@ -6430,7 +6534,8 @@ object YouTube {
         __obj.asInstanceOf[LocalizedProperty]
       }
       
-      extension [Self <: LocalizedProperty](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LocalizedProperty] (val x: Self) extends AnyVal {
         
         inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
@@ -6461,7 +6566,8 @@ object YouTube {
         __obj.asInstanceOf[LocalizedString]
       }
       
-      extension [Self <: LocalizedString](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LocalizedString] (val x: Self) extends AnyVal {
         
         inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
         
@@ -6488,7 +6594,8 @@ object YouTube {
         __obj.asInstanceOf[MonitorStreamInfo]
       }
       
-      extension [Self <: MonitorStreamInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MonitorStreamInfo] (val x: Self) extends AnyVal {
         
         inline def setBroadcastStreamDelayMs(value: Double): Self = StObject.set(x, "broadcastStreamDelayMs", value.asInstanceOf[js.Any])
         
@@ -6517,7 +6624,8 @@ object YouTube {
         __obj.asInstanceOf[Nonprofit]
       }
       
-      extension [Self <: Nonprofit](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Nonprofit] (val x: Self) extends AnyVal {
         
         inline def setNonprofitId(value: NonprofitId): Self = StObject.set(x, "nonprofitId", value.asInstanceOf[js.Any])
         
@@ -6540,7 +6648,8 @@ object YouTube {
         __obj.asInstanceOf[NonprofitId]
       }
       
-      extension [Self <: NonprofitId](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NonprofitId] (val x: Self) extends AnyVal {
         
         inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
@@ -6561,7 +6670,8 @@ object YouTube {
         __obj.asInstanceOf[PageInfo]
       }
       
-      extension [Self <: PageInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PageInfo] (val x: Self) extends AnyVal {
         
         inline def setResultsPerPage(value: Double): Self = StObject.set(x, "resultsPerPage", value.asInstanceOf[js.Any])
         
@@ -6598,7 +6708,8 @@ object YouTube {
         __obj.asInstanceOf[Playlist]
       }
       
-      extension [Self <: Playlist](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Playlist] (val x: Self) extends AnyVal {
         
         inline def setContentDetails(value: PlaylistContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
         
@@ -6645,7 +6756,8 @@ object YouTube {
         __obj.asInstanceOf[PlaylistContentDetails]
       }
       
-      extension [Self <: PlaylistContentDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlaylistContentDetails] (val x: Self) extends AnyVal {
         
         inline def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
         
@@ -6674,7 +6786,8 @@ object YouTube {
         __obj.asInstanceOf[PlaylistItem]
       }
       
-      extension [Self <: PlaylistItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlaylistItem] (val x: Self) extends AnyVal {
         
         inline def setContentDetails(value: PlaylistItemContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
         
@@ -6721,7 +6834,8 @@ object YouTube {
         __obj.asInstanceOf[PlaylistItemContentDetails]
       }
       
-      extension [Self <: PlaylistItemContentDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlaylistItemContentDetails] (val x: Self) extends AnyVal {
         
         inline def setEndAt(value: String): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
         
@@ -6773,7 +6887,8 @@ object YouTube {
         __obj.asInstanceOf[PlaylistItemListResponse]
       }
       
-      extension [Self <: PlaylistItemListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlaylistItemListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -6842,7 +6957,8 @@ object YouTube {
         __obj.asInstanceOf[PlaylistItemSnippet]
       }
       
-      extension [Self <: PlaylistItemSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlaylistItemSnippet] (val x: Self) extends AnyVal {
         
         inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
@@ -6893,7 +7009,8 @@ object YouTube {
         __obj.asInstanceOf[PlaylistItemStatus]
       }
       
-      extension [Self <: PlaylistItemStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlaylistItemStatus] (val x: Self) extends AnyVal {
         
         inline def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
         
@@ -6929,7 +7046,8 @@ object YouTube {
         __obj.asInstanceOf[PlaylistListResponse]
       }
       
-      extension [Self <: PlaylistListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlaylistListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -6984,7 +7102,8 @@ object YouTube {
         __obj.asInstanceOf[PlaylistLocalization]
       }
       
-      extension [Self <: PlaylistLocalization](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlaylistLocalization] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -7007,7 +7126,8 @@ object YouTube {
         __obj.asInstanceOf[PlaylistPlayer]
       }
       
-      extension [Self <: PlaylistPlayer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlaylistPlayer] (val x: Self) extends AnyVal {
         
         inline def setEmbedHtml(value: String): Self = StObject.set(x, "embedHtml", value.asInstanceOf[js.Any])
         
@@ -7042,7 +7162,8 @@ object YouTube {
         __obj.asInstanceOf[PlaylistSnippet]
       }
       
-      extension [Self <: PlaylistSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlaylistSnippet] (val x: Self) extends AnyVal {
         
         inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
@@ -7095,7 +7216,8 @@ object YouTube {
         __obj.asInstanceOf[PlaylistStatus]
       }
       
-      extension [Self <: PlaylistStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlaylistStatus] (val x: Self) extends AnyVal {
         
         inline def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
         
@@ -7120,7 +7242,8 @@ object YouTube {
         __obj.asInstanceOf[PromotedItem]
       }
       
-      extension [Self <: PromotedItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PromotedItem] (val x: Self) extends AnyVal {
         
         inline def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
         
@@ -7157,7 +7280,8 @@ object YouTube {
         __obj.asInstanceOf[PromotedItemId]
       }
       
-      extension [Self <: PromotedItemId](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PromotedItemId] (val x: Self) extends AnyVal {
         
         inline def setRecentlyUploadedBy(value: String): Self = StObject.set(x, "recentlyUploadedBy", value.asInstanceOf[js.Any])
         
@@ -7190,7 +7314,8 @@ object YouTube {
         __obj.asInstanceOf[PropertyValue]
       }
       
-      extension [Self <: PropertyValue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PropertyValue] (val x: Self) extends AnyVal {
         
         inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
         
@@ -7219,7 +7344,8 @@ object YouTube {
         __obj.asInstanceOf[ResourceId]
       }
       
-      extension [Self <: ResourceId](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResourceId] (val x: Self) extends AnyVal {
         
         inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
@@ -7269,7 +7395,8 @@ object YouTube {
         __obj.asInstanceOf[SearchListResponse]
       }
       
-      extension [Self <: SearchListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -7332,7 +7459,8 @@ object YouTube {
         __obj.asInstanceOf[SearchResult]
       }
       
-      extension [Self <: SearchResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -7375,7 +7503,8 @@ object YouTube {
         __obj.asInstanceOf[SearchResultSnippet]
       }
       
-      extension [Self <: SearchResultSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchResultSnippet] (val x: Self) extends AnyVal {
         
         inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
@@ -7422,7 +7551,8 @@ object YouTube {
         __obj.asInstanceOf[Sponsor]
       }
       
-      extension [Self <: Sponsor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Sponsor] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -7464,7 +7594,8 @@ object YouTube {
         __obj.asInstanceOf[SponsorListResponse]
       }
       
-      extension [Self <: SponsorListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SponsorListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -7519,7 +7650,8 @@ object YouTube {
         __obj.asInstanceOf[SponsorSnippet]
       }
       
-      extension [Self <: SponsorSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SponsorSnippet] (val x: Self) extends AnyVal {
         
         inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
@@ -7560,7 +7692,8 @@ object YouTube {
         __obj.asInstanceOf[Subscription]
       }
       
-      extension [Self <: Subscription](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
         
         inline def setContentDetails(value: SubscriptionContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
         
@@ -7603,7 +7736,8 @@ object YouTube {
         __obj.asInstanceOf[SubscriptionContentDetails]
       }
       
-      extension [Self <: SubscriptionContentDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubscriptionContentDetails] (val x: Self) extends AnyVal {
         
         inline def setActivityType(value: String): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
         
@@ -7647,7 +7781,8 @@ object YouTube {
         __obj.asInstanceOf[SubscriptionListResponse]
       }
       
-      extension [Self <: SubscriptionListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubscriptionListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -7712,7 +7847,8 @@ object YouTube {
         __obj.asInstanceOf[SubscriptionSnippet]
       }
       
-      extension [Self <: SubscriptionSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubscriptionSnippet] (val x: Self) extends AnyVal {
         
         inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
@@ -7761,7 +7897,8 @@ object YouTube {
         __obj.asInstanceOf[SubscriptionSubscriberSnippet]
       }
       
-      extension [Self <: SubscriptionSubscriberSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubscriptionSubscriberSnippet] (val x: Self) extends AnyVal {
         
         inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
@@ -7798,7 +7935,8 @@ object YouTube {
         __obj.asInstanceOf[SuperChatEvent]
       }
       
-      extension [Self <: SuperChatEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuperChatEvent] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -7844,7 +7982,8 @@ object YouTube {
         __obj.asInstanceOf[SuperChatEventListResponse]
       }
       
-      extension [Self <: SuperChatEventListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuperChatEventListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -7915,7 +8054,8 @@ object YouTube {
         __obj.asInstanceOf[SuperChatEventSnippet]
       }
       
-      extension [Self <: SuperChatEventSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuperChatEventSnippet] (val x: Self) extends AnyVal {
         
         inline def setAmountMicros(value: String): Self = StObject.set(x, "amountMicros", value.asInstanceOf[js.Any])
         
@@ -7982,7 +8122,8 @@ object YouTube {
         __obj.asInstanceOf[SuperStickerMetadata]
       }
       
-      extension [Self <: SuperStickerMetadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuperStickerMetadata] (val x: Self) extends AnyVal {
         
         inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
         
@@ -8013,7 +8154,8 @@ object YouTube {
         __obj.asInstanceOf[Thumbnail]
       }
       
-      extension [Self <: Thumbnail](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Thumbnail] (val x: Self) extends AnyVal {
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
@@ -8048,7 +8190,8 @@ object YouTube {
         __obj.asInstanceOf[ThumbnailDetails]
       }
       
-      extension [Self <: ThumbnailDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ThumbnailDetails] (val x: Self) extends AnyVal {
         
         inline def setDefault(value: Thumbnail): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
@@ -8091,7 +8234,8 @@ object YouTube {
         __obj.asInstanceOf[ThumbnailSetResponse]
       }
       
-      extension [Self <: ThumbnailSetResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ThumbnailSetResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -8162,7 +8306,8 @@ object YouTube {
         __obj.asInstanceOf[Video]
       }
       
-      extension [Self <: Video](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Video] (val x: Self) extends AnyVal {
         
         inline def setAgeGating(value: VideoAgeGating): Self = StObject.set(x, "ageGating", value.asInstanceOf[js.Any])
         
@@ -8257,7 +8402,8 @@ object YouTube {
         __obj.asInstanceOf[VideoAbuseReport]
       }
       
-      extension [Self <: VideoAbuseReport](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoAbuseReport] (val x: Self) extends AnyVal {
         
         inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
         
@@ -8298,7 +8444,8 @@ object YouTube {
         __obj.asInstanceOf[VideoAbuseReportReason]
       }
       
-      extension [Self <: VideoAbuseReportReason](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoAbuseReportReason] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -8337,7 +8484,8 @@ object YouTube {
         __obj.asInstanceOf[VideoAbuseReportReasonListResponse]
       }
       
-      extension [Self <: VideoAbuseReportReasonListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoAbuseReportReasonListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -8376,7 +8524,8 @@ object YouTube {
         __obj.asInstanceOf[VideoAbuseReportReasonSnippet]
       }
       
-      extension [Self <: VideoAbuseReportReasonSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoAbuseReportReasonSnippet] (val x: Self) extends AnyVal {
         
         inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
@@ -8403,7 +8552,8 @@ object YouTube {
         __obj.asInstanceOf[VideoAbuseReportSecondaryReason]
       }
       
-      extension [Self <: VideoAbuseReportSecondaryReason](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoAbuseReportSecondaryReason] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -8430,7 +8580,8 @@ object YouTube {
         __obj.asInstanceOf[VideoAgeGating]
       }
       
-      extension [Self <: VideoAgeGating](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoAgeGating] (val x: Self) extends AnyVal {
         
         inline def setAlcoholContent(value: Boolean): Self = StObject.set(x, "alcoholContent", value.asInstanceOf[js.Any])
         
@@ -8463,7 +8614,8 @@ object YouTube {
         __obj.asInstanceOf[VideoCategory]
       }
       
-      extension [Self <: VideoCategory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoCategory] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -8511,7 +8663,8 @@ object YouTube {
         __obj.asInstanceOf[VideoCategoryListResponse]
       }
       
-      extension [Self <: VideoCategoryListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoCategoryListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -8568,7 +8721,8 @@ object YouTube {
         __obj.asInstanceOf[VideoCategorySnippet]
       }
       
-      extension [Self <: VideoCategorySnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoCategorySnippet] (val x: Self) extends AnyVal {
         
         inline def setAssignable(value: Boolean): Self = StObject.set(x, "assignable", value.asInstanceOf[js.Any])
         
@@ -8613,7 +8767,8 @@ object YouTube {
         __obj.asInstanceOf[VideoContentDetails]
       }
       
-      extension [Self <: VideoContentDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoContentDetails] (val x: Self) extends AnyVal {
         
         inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
         
@@ -8670,7 +8825,8 @@ object YouTube {
         __obj.asInstanceOf[VideoContentDetailsRegionRestriction]
       }
       
-      extension [Self <: VideoContentDetailsRegionRestriction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoContentDetailsRegionRestriction] (val x: Self) extends AnyVal {
         
         inline def setAllowed(value: js.Array[String]): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
         
@@ -8713,7 +8869,8 @@ object YouTube {
         __obj.asInstanceOf[VideoFileDetails]
       }
       
-      extension [Self <: VideoFileDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoFileDetails] (val x: Self) extends AnyVal {
         
         inline def setAudioStreams(value: js.Array[VideoFileDetailsAudioStream]): Self = StObject.set(x, "audioStreams", value.asInstanceOf[js.Any])
         
@@ -8774,7 +8931,8 @@ object YouTube {
         __obj.asInstanceOf[VideoFileDetailsAudioStream]
       }
       
-      extension [Self <: VideoFileDetailsAudioStream](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoFileDetailsAudioStream] (val x: Self) extends AnyVal {
         
         inline def setBitrateBps(value: String): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
         
@@ -8819,7 +8977,8 @@ object YouTube {
         __obj.asInstanceOf[VideoFileDetailsVideoStream]
       }
       
-      extension [Self <: VideoFileDetailsVideoStream](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoFileDetailsVideoStream] (val x: Self) extends AnyVal {
         
         inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
         
@@ -8874,7 +9033,8 @@ object YouTube {
         __obj.asInstanceOf[VideoGetRatingResponse]
       }
       
-      extension [Self <: VideoGetRatingResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoGetRatingResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -8928,7 +9088,8 @@ object YouTube {
         __obj.asInstanceOf[VideoListResponse]
       }
       
-      extension [Self <: VideoListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoListResponse] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -8991,7 +9152,8 @@ object YouTube {
         __obj.asInstanceOf[VideoLiveStreamingDetails]
       }
       
-      extension [Self <: VideoLiveStreamingDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoLiveStreamingDetails] (val x: Self) extends AnyVal {
         
         inline def setActiveLiveChatId(value: String): Self = StObject.set(x, "activeLiveChatId", value.asInstanceOf[js.Any])
         
@@ -9032,7 +9194,8 @@ object YouTube {
         __obj.asInstanceOf[VideoLocalization]
       }
       
-      extension [Self <: VideoLocalization](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoLocalization] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -9055,7 +9218,8 @@ object YouTube {
         __obj.asInstanceOf[VideoMonetizationDetails]
       }
       
-      extension [Self <: VideoMonetizationDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoMonetizationDetails] (val x: Self) extends AnyVal {
         
         inline def setAccess(value: AccessPolicy): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
         
@@ -9078,7 +9242,8 @@ object YouTube {
         __obj.asInstanceOf[VideoPlayer]
       }
       
-      extension [Self <: VideoPlayer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoPlayer] (val x: Self) extends AnyVal {
         
         inline def setEmbedHeight(value: String): Self = StObject.set(x, "embedHeight", value.asInstanceOf[js.Any])
         
@@ -9119,7 +9284,8 @@ object YouTube {
         __obj.asInstanceOf[VideoProcessingDetails]
       }
       
-      extension [Self <: VideoProcessingDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoProcessingDetails] (val x: Self) extends AnyVal {
         
         inline def setEditorSuggestionsAvailability(value: String): Self = StObject.set(x, "editorSuggestionsAvailability", value.asInstanceOf[js.Any])
         
@@ -9170,7 +9336,8 @@ object YouTube {
         __obj.asInstanceOf[VideoProcessingDetailsProcessingProgress]
       }
       
-      extension [Self <: VideoProcessingDetailsProcessingProgress](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoProcessingDetailsProcessingProgress] (val x: Self) extends AnyVal {
         
         inline def setPartsProcessed(value: String): Self = StObject.set(x, "partsProcessed", value.asInstanceOf[js.Any])
         
@@ -9197,7 +9364,8 @@ object YouTube {
         __obj.asInstanceOf[VideoProjectDetails]
       }
       
-      extension [Self <: VideoProjectDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoProjectDetails] (val x: Self) extends AnyVal {
         
         inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
         
@@ -9220,7 +9388,8 @@ object YouTube {
         __obj.asInstanceOf[VideoRating]
       }
       
-      extension [Self <: VideoRating](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoRating] (val x: Self) extends AnyVal {
         
         inline def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
         
@@ -9247,7 +9416,8 @@ object YouTube {
         __obj.asInstanceOf[VideoRecordingDetails]
       }
       
-      extension [Self <: VideoRecordingDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoRecordingDetails] (val x: Self) extends AnyVal {
         
         inline def setLocation(value: GeoPoint): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
@@ -9296,7 +9466,8 @@ object YouTube {
         __obj.asInstanceOf[VideoSnippet]
       }
       
-      extension [Self <: VideoSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoSnippet] (val x: Self) extends AnyVal {
         
         inline def setCategoryId(value: String): Self = StObject.set(x, "categoryId", value.asInstanceOf[js.Any])
         
@@ -9369,7 +9540,8 @@ object YouTube {
         __obj.asInstanceOf[VideoStatistics]
       }
       
-      extension [Self <: VideoStatistics](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoStatistics] (val x: Self) extends AnyVal {
         
         inline def setCommentCount(value: String): Self = StObject.set(x, "commentCount", value.asInstanceOf[js.Any])
         
@@ -9418,7 +9590,8 @@ object YouTube {
         __obj.asInstanceOf[VideoStatus]
       }
       
-      extension [Self <: VideoStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoStatus] (val x: Self) extends AnyVal {
         
         inline def setEmbeddable(value: Boolean): Self = StObject.set(x, "embeddable", value.asInstanceOf[js.Any])
         
@@ -9473,7 +9646,8 @@ object YouTube {
         __obj.asInstanceOf[VideoSuggestions]
       }
       
-      extension [Self <: VideoSuggestions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoSuggestions] (val x: Self) extends AnyVal {
         
         inline def setEditorSuggestions(value: js.Array[String]): Self = StObject.set(x, "editorSuggestions", value.asInstanceOf[js.Any])
         
@@ -9520,7 +9694,8 @@ object YouTube {
         __obj.asInstanceOf[VideoSuggestionsTagSuggestion]
       }
       
-      extension [Self <: VideoSuggestionsTagSuggestion](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoSuggestionsTagSuggestion] (val x: Self) extends AnyVal {
         
         inline def setCategoryRestricts(value: js.Array[String]): Self = StObject.set(x, "categoryRestricts", value.asInstanceOf[js.Any])
         
@@ -9549,7 +9724,8 @@ object YouTube {
         __obj.asInstanceOf[VideoTopicDetails]
       }
       
-      extension [Self <: VideoTopicDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoTopicDetails] (val x: Self) extends AnyVal {
         
         inline def setRelevantTopicIds(value: js.Array[String]): Self = StObject.set(x, "relevantTopicIds", value.asInstanceOf[js.Any])
         
@@ -9586,7 +9762,8 @@ object YouTube {
         __obj.asInstanceOf[WatchSettings]
       }
       
-      extension [Self <: WatchSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WatchSettings] (val x: Self) extends AnyVal {
         
         inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         

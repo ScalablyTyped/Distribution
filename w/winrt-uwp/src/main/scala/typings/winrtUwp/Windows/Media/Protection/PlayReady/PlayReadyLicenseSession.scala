@@ -30,7 +30,8 @@ object PlayReadyLicenseSession {
     __obj.asInstanceOf[PlayReadyLicenseSession]
   }
   
-  extension [Self <: PlayReadyLicenseSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayReadyLicenseSession] (val x: Self) extends AnyVal {
     
     inline def setConfigureMediaProtectionManager(value: MediaProtectionManager => Unit): Self = StObject.set(x, "configureMediaProtectionManager", js.Any.fromFunction1(value))
     

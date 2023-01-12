@@ -60,7 +60,8 @@ object axisChangedHandleraxesIWe {
     __obj.asInstanceOf[axisChangedHandleraxesIWe]
   }
   
-  extension [Self <: axisChangedHandleraxesIWe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: axisChangedHandleraxesIWe] (val x: Self) extends AnyVal {
     
     inline def setAllowedComponentTypes(value: js.Array[MotionControllerComponentType]): Self = StObject.set(x, "allowedComponentTypes", value.asInstanceOf[js.Any])
     

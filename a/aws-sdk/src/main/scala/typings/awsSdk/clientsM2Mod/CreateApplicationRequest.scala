@@ -43,7 +43,8 @@ object CreateApplicationRequest {
     __obj.asInstanceOf[CreateApplicationRequest]
   }
   
-  extension [Self <: CreateApplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateApplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

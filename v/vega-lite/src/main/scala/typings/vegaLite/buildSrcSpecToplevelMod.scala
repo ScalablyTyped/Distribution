@@ -60,7 +60,8 @@ object buildSrcSpecToplevelMod {
       __obj.asInstanceOf[AutoSizeParams]
     }
     
-    extension [Self <: AutoSizeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoSizeParams] (val x: Self) extends AnyVal {
       
       inline def setContains(value: content | padding): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object buildSrcSpecToplevelMod {
       __obj.asInstanceOf[TopLevelProperties[ES]]
     }
     
-    extension [Self <: TopLevelProperties[?], ES /* <: ExprRef | SignalRef */](x: Self & TopLevelProperties[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopLevelProperties[?], ES /* <: ExprRef | SignalRef */] (val x: Self & TopLevelProperties[ES]) extends AnyVal {
       
       inline def setAutosize(value: AutosizeType | AutoSizeParams): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
       

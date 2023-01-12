@@ -99,7 +99,8 @@ object libUtilUtilsMod {
       __obj.asInstanceOf[Cleanup]
     }
     
-    extension [Self <: Cleanup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cleanup] (val x: Self) extends AnyVal {
       
       inline def setDoCleanup(value: Boolean): Self = StObject.set(x, "doCleanup", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object libUtilUtilsMod {
       __obj.asInstanceOf[ErrorWithCode_]
     }
     
-    extension [Self <: ErrorWithCode_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorWithCode_] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }

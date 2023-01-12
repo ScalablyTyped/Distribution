@@ -28,7 +28,8 @@ object LaunchDetails {
     __obj.asInstanceOf[LaunchDetails]
   }
   
-  extension [Self <: LaunchDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchDetails] (val x: Self) extends AnyVal {
     
     inline def setLatestLaunchTime(value: js.Date): Self = StObject.set(x, "latestLaunchTime", value.asInstanceOf[js.Any])
     

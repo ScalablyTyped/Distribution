@@ -18,7 +18,8 @@ object ImportSource {
     __obj.asInstanceOf[ImportSource]
   }
   
-  extension [Self <: ImportSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportSource] (val x: Self) extends AnyVal {
     
     inline def setS3(value: S3ImportSource): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
   }

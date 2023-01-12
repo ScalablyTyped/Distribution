@@ -23,7 +23,8 @@ object typesInvalidRuntimeExceptionMod {
       __obj.asInstanceOf[InvalidRuntimeException]
     }
     
-    extension [Self <: InvalidRuntimeException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidRuntimeException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.InvalidRuntimeException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -48,7 +49,8 @@ object typesInvalidRuntimeExceptionMod {
       __obj.asInstanceOf[InvalidRuntimeExceptionDetails]
     }
     
-    extension [Self <: InvalidRuntimeExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidRuntimeExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

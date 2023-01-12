@@ -68,7 +68,8 @@ object XAccessibleRelationSet {
     __obj.asInstanceOf[XAccessibleRelationSet]
   }
   
-  extension [Self <: XAccessibleRelationSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleRelationSet] (val x: Self) extends AnyVal {
     
     inline def setContainsRelation(value: Double => Boolean): Self = StObject.set(x, "containsRelation", js.Any.fromFunction1(value))
     

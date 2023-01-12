@@ -48,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: ComputedRangeDatum): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: color): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     }
@@ -125,7 +128,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -158,7 +162,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: DatumId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -195,7 +200,8 @@ object anon {
       __obj.asInstanceOf[IdDatumId]
     }
     
-    extension [Self <: IdDatumId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdDatumId] (val x: Self) extends AnyVal {
       
       inline def setId(value: DatumId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -281,7 +287,8 @@ object anon {
       __obj.asInstanceOf[OmitBulletSvgPropsheightw]
     }
     
-    extension [Self <: OmitBulletSvgPropsheightw](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitBulletSvgPropsheightw] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -461,7 +468,8 @@ object anon {
       __obj.asInstanceOf[PickBulletRectsPropsdataC]
     }
     
-    extension [Self <: PickBulletRectsPropsdataC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickBulletRectsPropsdataC] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[ComputedRangeDatum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -499,7 +507,8 @@ object anon {
       __obj.asInstanceOf[PickCommonBulletPropslayo]
     }
     
-    extension [Self <: PickCommonBulletPropslayo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickCommonBulletPropslayo] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -537,7 +546,8 @@ object anon {
       __obj.asInstanceOf[WithDatumIdComputedMarker]
     }
     
-    extension [Self <: WithDatumIdComputedMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithDatumIdComputedMarker] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -569,7 +579,8 @@ object anon {
       __obj.asInstanceOf[WithDatumIdComputedRangeD]
     }
     
-    extension [Self <: WithDatumIdComputedRangeD](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithDatumIdComputedRangeD] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

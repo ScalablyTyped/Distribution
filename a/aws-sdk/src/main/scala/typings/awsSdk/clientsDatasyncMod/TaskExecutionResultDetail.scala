@@ -58,7 +58,8 @@ object TaskExecutionResultDetail {
     __obj.asInstanceOf[TaskExecutionResultDetail]
   }
   
-  extension [Self <: TaskExecutionResultDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskExecutionResultDetail] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

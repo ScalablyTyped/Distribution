@@ -98,7 +98,8 @@ object mod {
       __obj.asInstanceOf[Browser]
     }
     
-    extension [Self <: Browser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
       
       inline def setBinPath(value: String): Self = StObject.set(x, "binPath", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object mod {
       __obj.asInstanceOf[BrowserPlatformDetails]
     }
     
-    extension [Self <: BrowserPlatformDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserPlatformDetails] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -216,7 +218,8 @@ object mod {
       __obj.asInstanceOf[BrowserstackAuth]
     }
     
-    extension [Self <: BrowserstackAuth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserstackAuth] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -264,7 +267,8 @@ object mod {
       __obj.asInstanceOf[LaunchOptions]
     }
     
-    extension [Self <: LaunchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LaunchOptions] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       

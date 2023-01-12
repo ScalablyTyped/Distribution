@@ -40,7 +40,8 @@ object CIM3DSymbolProperties {
     __obj.asInstanceOf[CIM3DSymbolProperties]
   }
   
-  extension [Self <: CIM3DSymbolProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIM3DSymbolProperties] (val x: Self) extends AnyVal {
     
     inline def setDominantSizeAxis3D(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DominantSizeAxis * / any */ String

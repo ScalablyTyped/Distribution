@@ -28,7 +28,8 @@ object DnsRequestAction {
     __obj.asInstanceOf[DnsRequestAction]
   }
   
-  extension [Self <: DnsRequestAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsRequestAction] (val x: Self) extends AnyVal {
     
     inline def setBlocked(value: Boolean): Self = StObject.set(x, "Blocked", value.asInstanceOf[js.Any])
     

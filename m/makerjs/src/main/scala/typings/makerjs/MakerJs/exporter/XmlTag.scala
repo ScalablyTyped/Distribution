@@ -60,7 +60,8 @@ object XmlTag {
     __obj.asInstanceOf[XmlTag]
   }
   
-  extension [Self <: XmlTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XmlTag] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: IXmlTagAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

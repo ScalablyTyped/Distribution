@@ -30,7 +30,8 @@ object CanAddAttendees {
     __obj.asInstanceOf[CanAddAttendees]
   }
   
-  extension [Self <: CanAddAttendees](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanAddAttendees] (val x: Self) extends AnyVal {
     
     inline def setCanAddAttendees(value: Boolean): Self = StObject.set(x, "canAddAttendees", value.asInstanceOf[js.Any])
     

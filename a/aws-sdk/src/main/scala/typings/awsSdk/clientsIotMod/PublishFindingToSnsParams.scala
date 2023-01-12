@@ -18,7 +18,8 @@ object PublishFindingToSnsParams {
     __obj.asInstanceOf[PublishFindingToSnsParams]
   }
   
-  extension [Self <: PublishFindingToSnsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishFindingToSnsParams] (val x: Self) extends AnyVal {
     
     inline def setTopicArn(value: SnsTopicArn): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
   }

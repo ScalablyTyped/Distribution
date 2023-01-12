@@ -27,7 +27,8 @@ object PartialCreateRecipientPro {
     __obj.asInstanceOf[PartialCreateRecipientPro]
   }
   
-  extension [Self <: PartialCreateRecipientPro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCreateRecipientPro] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: js.Array[OnfleetMetadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

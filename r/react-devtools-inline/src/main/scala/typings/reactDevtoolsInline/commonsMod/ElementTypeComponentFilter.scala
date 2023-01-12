@@ -23,7 +23,8 @@ object ElementTypeComponentFilter {
     __obj.asInstanceOf[ElementTypeComponentFilter]
   }
   
-  extension [Self <: ElementTypeComponentFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementTypeComponentFilter] (val x: Self) extends AnyVal {
     
     inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     

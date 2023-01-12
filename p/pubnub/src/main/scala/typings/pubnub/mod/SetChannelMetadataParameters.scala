@@ -20,7 +20,8 @@ object SetChannelMetadataParameters {
     __obj.asInstanceOf[SetChannelMetadataParameters[Custom]]
   }
   
-  extension [Self <: SetChannelMetadataParameters[?], Custom /* <: ObjectCustom */](x: Self & SetChannelMetadataParameters[Custom]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetChannelMetadataParameters[?], Custom /* <: ObjectCustom */] (val x: Self & SetChannelMetadataParameters[Custom]) extends AnyVal {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

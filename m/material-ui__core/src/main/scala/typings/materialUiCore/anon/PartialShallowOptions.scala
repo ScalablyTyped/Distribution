@@ -51,7 +51,8 @@ object PartialShallowOptions {
     __obj.asInstanceOf[PartialShallowOptions]
   }
   
-  extension [Self <: PartialShallowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialShallowOptions] (val x: Self) extends AnyVal {
     
     inline def setAdapter(value: EnzymeAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     

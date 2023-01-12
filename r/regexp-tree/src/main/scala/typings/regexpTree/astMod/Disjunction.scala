@@ -21,7 +21,8 @@ object Disjunction {
     __obj.asInstanceOf[Disjunction]
   }
   
-  extension [Self <: Disjunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Disjunction] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object dxPieChartCommonAnnotationConfig {
     __obj.asInstanceOf[dxPieChartCommonAnnotationConfig]
   }
   
-  extension [Self <: dxPieChartCommonAnnotationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPieChartCommonAnnotationConfig] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: Double | js.Date | String): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

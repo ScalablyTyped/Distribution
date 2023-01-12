@@ -28,7 +28,8 @@ object IMandateStatus {
     __obj.asInstanceOf[IMandateStatus]
   }
   
-  extension [Self <: IMandateStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMandateStatus] (val x: Self) extends AnyVal {
     
     inline def setActive(value: ACTIVE): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     

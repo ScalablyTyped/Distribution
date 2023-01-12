@@ -95,7 +95,8 @@ object distSrcFetchMod {
       __obj.asInstanceOf[FetchServiceComponents]
     }
     
-    extension [Self <: FetchServiceComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchServiceComponents] (val x: Self) extends AnyVal {
       
       inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object distSrcFetchMod {
       __obj.asInstanceOf[FetchServiceInit]
     }
     
-    extension [Self <: FetchServiceInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchServiceInit] (val x: Self) extends AnyVal {
       
       inline def setMaxInboundStreams(value: Double): Self = StObject.set(x, "maxInboundStreams", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object distSrcFetchMod {
       __obj.asInstanceOf[HandleMessageOptions]
     }
     
-    extension [Self <: HandleMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       

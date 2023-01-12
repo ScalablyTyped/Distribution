@@ -18,7 +18,8 @@ object ResourceARNDetail {
     __obj.asInstanceOf[ResourceARNDetail]
   }
   
-  extension [Self <: ResourceARNDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceARNDetail] (val x: Self) extends AnyVal {
     
     inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

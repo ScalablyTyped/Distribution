@@ -145,7 +145,8 @@ object webglShaderBuilderMod {
       __obj.asInstanceOf[StyleParseResult]
     }
     
-    extension [Self <: StyleParseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleParseResult] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[CustomAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object webglShaderBuilderMod {
       __obj.asInstanceOf[VaryingDescription]
     }
     
-    extension [Self <: VaryingDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VaryingDescription] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       

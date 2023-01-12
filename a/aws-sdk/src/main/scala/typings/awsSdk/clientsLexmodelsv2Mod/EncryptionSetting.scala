@@ -28,7 +28,8 @@ object EncryptionSetting {
     __obj.asInstanceOf[EncryptionSetting]
   }
   
-  extension [Self <: EncryptionSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptionSetting] (val x: Self) extends AnyVal {
     
     inline def setAssociatedTranscriptsPassword(value: FilePassword): Self = StObject.set(x, "associatedTranscriptsPassword", value.asInstanceOf[js.Any])
     

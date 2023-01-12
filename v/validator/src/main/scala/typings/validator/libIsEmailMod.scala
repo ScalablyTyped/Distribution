@@ -85,7 +85,8 @@ object libIsEmailMod {
       __obj.asInstanceOf[IsEmailOptions]
     }
     
-    extension [Self <: IsEmailOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsEmailOptions] (val x: Self) extends AnyVal {
       
       inline def setAllow_display_name(value: Boolean): Self = StObject.set(x, "allow_display_name", value.asInstanceOf[js.Any])
       

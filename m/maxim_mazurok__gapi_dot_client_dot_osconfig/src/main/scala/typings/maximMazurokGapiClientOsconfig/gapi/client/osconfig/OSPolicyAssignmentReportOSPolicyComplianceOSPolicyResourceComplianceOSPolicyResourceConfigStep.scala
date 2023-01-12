@@ -19,7 +19,8 @@ object OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceOSPol
     __obj.asInstanceOf[OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceOSPolicyResourceConfigStep]
   }
   
-  extension [Self <: OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceOSPolicyResourceConfigStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceOSPolicyResourceConfigStep] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

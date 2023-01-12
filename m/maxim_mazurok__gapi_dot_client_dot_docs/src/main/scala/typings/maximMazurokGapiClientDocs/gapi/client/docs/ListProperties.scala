@@ -19,7 +19,8 @@ object ListProperties {
     __obj.asInstanceOf[ListProperties]
   }
   
-  extension [Self <: ListProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProperties] (val x: Self) extends AnyVal {
     
     inline def setNestingLevels(value: js.Array[NestingLevel]): Self = StObject.set(x, "nestingLevels", value.asInstanceOf[js.Any])
     

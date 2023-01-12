@@ -23,7 +23,8 @@ object EngineAttribute {
     __obj.asInstanceOf[EngineAttribute]
   }
   
-  extension [Self <: EngineAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EngineAttribute] (val x: Self) extends AnyVal {
     
     inline def setName(value: EngineAttributeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object NonceString {
     __obj.asInstanceOf[NonceString]
   }
   
-  extension [Self <: NonceString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonceString] (val x: Self) extends AnyVal {
     
     inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
   }

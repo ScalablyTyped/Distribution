@@ -216,7 +216,8 @@ object audioIndexMod {
         __obj.asInstanceOf[AbstractScene]
       }
       
-      extension [Self <: AbstractScene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AbstractScene] (val x: Self) extends AnyVal {
         
         inline def setSounds(value: Nullable[js.Array[typings.babylonjs.audioSoundMod.Sound]]): Self = StObject.set(x, "sounds", value.asInstanceOf[js.Any])
         
@@ -294,7 +295,8 @@ object audioIndexMod {
         __obj.asInstanceOf[typings.babylonjs.audioIndexMod.babylonjsSceneAugmentingMod.Scene]
       }
       
-      extension [Self <: typings.babylonjs.audioIndexMod.babylonjsSceneAugmentingMod.Scene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.audioIndexMod.babylonjsSceneAugmentingMod.Scene] (val x: Self) extends AnyVal {
         
         inline def setAudioEnabled(value: Boolean): Self = StObject.set(x, "audioEnabled", value.asInstanceOf[js.Any])
         

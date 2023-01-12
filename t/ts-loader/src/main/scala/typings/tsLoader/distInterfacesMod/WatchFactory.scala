@@ -59,7 +59,8 @@ object WatchFactory {
     __obj.asInstanceOf[WatchFactory]
   }
   
-  extension [Self <: WatchFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchFactory] (val x: Self) extends AnyVal {
     
     inline def setInvokeFileWatcher(value: (String, FileWatcherEventKind) => Boolean): Self = StObject.set(x, "invokeFileWatcher", js.Any.fromFunction2(value))
     

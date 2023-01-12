@@ -191,7 +191,8 @@ object sapMP13nSortItemMod {
       __obj.asInstanceOf[P13nSortItemSettings]
     }
     
-    extension [Self <: P13nSortItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P13nSortItemSettings] (val x: Self) extends AnyVal {
       
       inline def setColumnKey(value: String | PropertyBindingInfo): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
       

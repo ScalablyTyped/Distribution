@@ -18,7 +18,8 @@ object LabelDescriptorHtml {
     __obj.asInstanceOf[LabelDescriptorHtml]
   }
   
-  extension [Self <: LabelDescriptorHtml](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelDescriptorHtml] (val x: Self) extends AnyVal {
     
     inline def setIconHtml(value: String): Self = StObject.set(x, "iconHtml", value.asInstanceOf[js.Any])
   }

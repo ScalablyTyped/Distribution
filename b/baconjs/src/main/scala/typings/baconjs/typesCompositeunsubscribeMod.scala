@@ -73,7 +73,8 @@ object typesCompositeunsubscribeMod {
       __obj.asInstanceOf[CompositeUnsubscribe]
     }
     
-    extension [Self <: CompositeUnsubscribe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompositeUnsubscribe] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Subscription => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

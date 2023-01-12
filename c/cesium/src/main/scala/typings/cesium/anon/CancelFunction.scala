@@ -33,7 +33,8 @@ object CancelFunction {
     __obj.asInstanceOf[CancelFunction]
   }
   
-  extension [Self <: CancelFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelFunction] (val x: Self) extends AnyVal {
     
     inline def setCancelFunction(value: () => Unit): Self = StObject.set(x, "cancelFunction", js.Any.fromFunction0(value))
     

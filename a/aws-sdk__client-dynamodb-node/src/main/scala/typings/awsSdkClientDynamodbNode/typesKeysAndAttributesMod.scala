@@ -53,7 +53,8 @@ object typesKeysAndAttributesMod {
       __obj.asInstanceOf[KeysAndAttributes]
     }
     
-    extension [Self <: KeysAndAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeysAndAttributes] (val x: Self) extends AnyVal {
       
       inline def setAttributesToGet(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object typesKeysAndAttributesMod {
       __obj.asInstanceOf[UnmarshalledKeysAndAttributes]
     }
     
-    extension [Self <: UnmarshalledKeysAndAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledKeysAndAttributes] (val x: Self) extends AnyVal {
       
       inline def setAttributesToGet(value: js.Array[String]): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
       

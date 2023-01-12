@@ -117,7 +117,8 @@ object NodeJS {
       __obj.asInstanceOf[CallSite]
     }
     
-    extension [Self <: CallSite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallSite] (val x: Self) extends AnyVal {
       
       inline def setGetColumnNumber(value: () => Double | Null): Self = StObject.set(x, "getColumnNumber", js.Any.fromFunction0(value))
       
@@ -168,7 +169,8 @@ object NodeJS {
       __obj.asInstanceOf[ErrnoException]
     }
     
-    extension [Self <: ErrnoException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrnoException] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -238,7 +240,8 @@ object NodeJS {
       __obj.asInstanceOf[Module]
     }
     
-    extension [Self <: Module](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Module]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -323,7 +326,8 @@ object NodeJS {
       __obj.asInstanceOf[RefCounted]
     }
     
-    extension [Self <: RefCounted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefCounted] (val x: Self) extends AnyVal {
       
       inline def setRef(value: () => RefCounted): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
       
@@ -374,7 +378,8 @@ object NodeJS {
       __obj.asInstanceOf[RequireExtensions]
     }
     
-    extension [Self <: RequireExtensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequireExtensions] (val x: Self) extends AnyVal {
       
       inline def setDotjs(value: (Module, String) => Any): Self = StObject.set(x, ".js", js.Any.fromFunction2(value))
       

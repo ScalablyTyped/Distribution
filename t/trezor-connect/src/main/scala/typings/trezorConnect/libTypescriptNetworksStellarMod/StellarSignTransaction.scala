@@ -19,7 +19,8 @@ object StellarSignTransaction {
     __obj.asInstanceOf[StellarSignTransaction]
   }
   
-  extension [Self <: StellarSignTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StellarSignTransaction] (val x: Self) extends AnyVal {
     
     inline def setNetworkPassphrase(value: String): Self = StObject.set(x, "networkPassphrase", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ListBuiltInIntentsResponse {
     __obj.asInstanceOf[ListBuiltInIntentsResponse]
   }
   
-  extension [Self <: ListBuiltInIntentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBuiltInIntentsResponse] (val x: Self) extends AnyVal {
     
     inline def setBuiltInIntentSummaries(value: BuiltInIntentSummaryList): Self = StObject.set(x, "builtInIntentSummaries", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PushFilter {
     __obj.asInstanceOf[PushFilter]
   }
   
-  extension [Self <: PushFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushFilter] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distPluginsWeekSelectWeekSelectMod {
       __obj.asInstanceOf[PlusWeeks]
     }
     
-    extension [Self <: PlusWeeks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlusWeeks] (val x: Self) extends AnyVal {
       
       inline def setWeekEndDay(value: Date): Self = StObject.set(x, "weekEndDay", value.asInstanceOf[js.Any])
       

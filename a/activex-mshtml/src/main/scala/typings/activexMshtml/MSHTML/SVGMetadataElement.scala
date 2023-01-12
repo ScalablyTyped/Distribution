@@ -31,7 +31,8 @@ object SVGMetadataElement {
     __obj.asInstanceOf[SVGMetadataElement]
   }
   
-  extension [Self <: SVGMetadataElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGMetadataElement] (val x: Self) extends AnyVal {
     
     inline def setFocusable(value: SVGAnimatedEnumeration): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     

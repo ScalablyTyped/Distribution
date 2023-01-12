@@ -47,7 +47,8 @@ object GenericCollection {
     __obj.asInstanceOf[GenericCollection[T]]
   }
   
-  extension [Self <: GenericCollection[?], T](x: Self & GenericCollection[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericCollection[?], T] (val x: Self & GenericCollection[T]) extends AnyVal {
     
     inline def setEach(
       value: js.Function3[

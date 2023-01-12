@@ -21,7 +21,8 @@ object PartialStyleRulesAccordio0 {
     __obj.asInstanceOf[PartialStyleRulesAccordio0]
   }
   
-  extension [Self <: PartialStyleRulesAccordio0](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesAccordio0] (val x: Self) extends AnyVal {
     
     inline def setRoot(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

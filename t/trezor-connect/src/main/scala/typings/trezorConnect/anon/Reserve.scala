@@ -15,7 +15,8 @@ object Reserve {
     __obj.asInstanceOf[Reserve]
   }
   
-  extension [Self <: Reserve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reserve] (val x: Self) extends AnyVal {
     
     inline def setReserve(value: String): Self = StObject.set(x, "reserve", value.asInstanceOf[js.Any])
     

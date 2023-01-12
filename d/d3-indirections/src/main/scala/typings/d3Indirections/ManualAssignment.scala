@@ -22,7 +22,8 @@ object ManualAssignment {
     __obj.asInstanceOf[ManualAssignment]
   }
   
-  extension [Self <: ManualAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManualAssignment] (val x: Self) extends AnyVal {
     
     inline def setResourceUid(value: String): Self = StObject.set(x, "resourceUid", value.asInstanceOf[js.Any])
   }

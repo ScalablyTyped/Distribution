@@ -20,7 +20,8 @@ object NullableBooleanSchema {
     __obj.asInstanceOf[NullableBooleanSchema]
   }
   
-  extension [Self <: NullableBooleanSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullableBooleanSchema] (val x: Self) extends AnyVal {
     
     inline def setType(value: js.Array[boolean | `null`]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

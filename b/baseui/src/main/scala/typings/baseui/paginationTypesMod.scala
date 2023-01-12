@@ -28,7 +28,8 @@ object paginationTypesMod {
       __obj.asInstanceOf[Callbacks]
     }
     
-    extension [Self <: Callbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callbacks] (val x: Self) extends AnyVal {
       
       inline def setOnNextClick(value: /* a */ EventAny => Any): Self = StObject.set(x, "onNextClick", js.Any.fromFunction1(value))
       
@@ -59,7 +60,8 @@ object paginationTypesMod {
       __obj.asInstanceOf[Labels]
     }
     
-    extension [Self <: Labels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Labels] (val x: Self) extends AnyVal {
       
       inline def setNextButton(value: String): Self = StObject.set(x, "nextButton", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object paginationTypesMod {
       __obj.asInstanceOf[PaginationOverrides]
     }
     
-    extension [Self <: PaginationOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationOverrides] (val x: Self) extends AnyVal {
       
       inline def setDropdownContainer(value: Override[Any]): Self = StObject.set(x, "DropdownContainer", value.asInstanceOf[js.Any])
       
@@ -148,7 +151,8 @@ object paginationTypesMod {
       __obj.asInstanceOf[PaginationProps]
     }
     
-    extension [Self <: PaginationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
       
       inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       
@@ -205,7 +209,8 @@ object paginationTypesMod {
       __obj.asInstanceOf[StatefulContainerProps]
     }
     
-    extension [Self <: StatefulContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -238,7 +243,8 @@ object paginationTypesMod {
       __obj.asInstanceOf[StatefulContainerState]
     }
     
-    extension [Self <: StatefulContainerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulContainerState] (val x: Self) extends AnyVal {
       
       inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     }
@@ -271,7 +277,8 @@ object paginationTypesMod {
       __obj.asInstanceOf[StatefulPaginationProps]
     }
     
-    extension [Self <: StatefulPaginationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulPaginationProps] (val x: Self) extends AnyVal {
       
       inline def setInitialState(value: StatefulContainerState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       

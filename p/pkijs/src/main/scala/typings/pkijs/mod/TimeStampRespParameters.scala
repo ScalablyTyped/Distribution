@@ -20,7 +20,8 @@ object TimeStampRespParameters {
     __obj.asInstanceOf[TimeStampRespParameters]
   }
   
-  extension [Self <: TimeStampRespParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeStampRespParameters] (val x: Self) extends AnyVal {
     
     inline def setSchema(value: SchemaType): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

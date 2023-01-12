@@ -24,7 +24,8 @@ object NodesDiscovery {
     __obj.asInstanceOf[NodesDiscovery]
   }
   
-  extension [Self <: NodesDiscovery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesDiscovery] (val x: Self) extends AnyVal {
     
     inline def setCluster_applier_stats(value: NodesClusterAppliedStats): Self = StObject.set(x, "cluster_applier_stats", value.asInstanceOf[js.Any])
     

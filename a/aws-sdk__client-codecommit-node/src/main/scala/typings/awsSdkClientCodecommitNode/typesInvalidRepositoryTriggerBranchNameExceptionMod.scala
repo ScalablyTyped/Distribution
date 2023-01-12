@@ -23,7 +23,8 @@ object typesInvalidRepositoryTriggerBranchNameExceptionMod {
       __obj.asInstanceOf[InvalidRepositoryTriggerBranchNameException]
     }
     
-    extension [Self <: InvalidRepositoryTriggerBranchNameException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidRepositoryTriggerBranchNameException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryTriggerBranchNameException

@@ -41,7 +41,8 @@ object esAlignMod extends Shortcut {
       __obj.asInstanceOf[AlignProps]
     }
     
-    extension [Self <: AlignProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object esAlignMod extends Shortcut {
       __obj.asInstanceOf[RefAlign]
     }
     
-    extension [Self <: RefAlign](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefAlign] (val x: Self) extends AnyVal {
       
       inline def setForceAlign(value: () => Unit): Self = StObject.set(x, "forceAlign", js.Any.fromFunction0(value))
     }

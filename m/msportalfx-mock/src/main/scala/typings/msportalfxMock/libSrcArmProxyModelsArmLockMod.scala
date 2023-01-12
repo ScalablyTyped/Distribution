@@ -20,7 +20,8 @@ object libSrcArmProxyModelsArmLockMod {
       __obj.asInstanceOf[ArmLockData]
     }
     
-    extension [Self <: ArmLockData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArmLockData] (val x: Self) extends AnyVal {
       
       inline def setProperties(value: LockProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
@@ -64,7 +65,8 @@ object libSrcArmProxyModelsArmLockMod {
       __obj.asInstanceOf[LockBase]
     }
     
-    extension [Self <: LockBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LockBase] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object libSrcArmProxyModelsArmLockMod {
       __obj.asInstanceOf[LockProperties]
     }
     
-    extension [Self <: LockProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LockProperties] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

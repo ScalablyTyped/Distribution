@@ -51,7 +51,8 @@ object IBoot {
     __obj.asInstanceOf[IBoot]
   }
   
-  extension [Self <: IBoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBoot] (val x: Self) extends AnyVal {
     
     inline def setBeforeClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "beforeClose", js.Any.fromFunction0(value))
     

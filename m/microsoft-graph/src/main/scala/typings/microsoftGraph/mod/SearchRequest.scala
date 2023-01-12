@@ -37,7 +37,8 @@ object SearchRequest {
     __obj.asInstanceOf[SearchRequest]
   }
   
-  extension [Self <: SearchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchRequest] (val x: Self) extends AnyVal {
     
     inline def setAggregationFilters(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "aggregationFilters", value.asInstanceOf[js.Any])
     

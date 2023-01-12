@@ -23,7 +23,8 @@ object TypeofSetupIntentCreatePa {
     __obj.asInstanceOf[TypeofSetupIntentCreatePa]
   }
   
-  extension [Self <: TypeofSetupIntentCreatePa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSetupIntentCreatePa] (val x: Self) extends AnyVal {
     
     inline def setMandateData(value: TypeofMandateData): Self = StObject.set(x, "MandateData", value.asInstanceOf[js.Any])
     

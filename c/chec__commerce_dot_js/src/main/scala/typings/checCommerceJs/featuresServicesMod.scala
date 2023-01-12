@@ -35,7 +35,8 @@ object featuresServicesMod {
       __obj.asInstanceOf[LocaleListCountriesResponse]
     }
     
-    extension [Self <: LocaleListCountriesResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocaleListCountriesResponse] (val x: Self) extends AnyVal {
       
       inline def setCountries(value: StringDictionary[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object featuresServicesMod {
       __obj.asInstanceOf[LocaleListSubdivisionsResponse]
     }
     
-    extension [Self <: LocaleListSubdivisionsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocaleListSubdivisionsResponse] (val x: Self) extends AnyVal {
       
       inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object TrustTokens {
     __obj.asInstanceOf[TrustTokens]
   }
   
-  extension [Self <: TrustTokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustTokens] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

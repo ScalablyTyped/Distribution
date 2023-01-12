@@ -111,7 +111,8 @@ object Colors {
     __obj.asInstanceOf[Colors]
   }
   
-  extension [Self <: Colors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

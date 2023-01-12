@@ -105,7 +105,8 @@ object distOptimizersOptimizerMod {
       __obj.asInstanceOf[OptimizerVariable]
     }
     
-    extension [Self <: OptimizerVariable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptimizerVariable] (val x: Self) extends AnyVal {
       
       inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[FilePath]
     }
     
-    extension [Self <: FilePath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilePath] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[RequireResolveFunction]
     }
     
-    extension [Self <: RequireResolveFunction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequireResolveFunction] (val x: Self) extends AnyVal {
       
       inline def setRequireResolveFunction(value: String => String): Self = StObject.set(x, "requireResolveFunction", js.Any.fromFunction1(value))
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[TypeofModuleNotFoundError]
     }
     
-    extension [Self <: TypeofModuleNotFoundError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofModuleNotFoundError] (val x: Self) extends AnyVal {
       
       inline def setDuckType(value: ModuleNotFoundError => ModuleNotFoundError): Self = StObject.set(x, "duckType", js.Any.fromFunction1(value))
     }

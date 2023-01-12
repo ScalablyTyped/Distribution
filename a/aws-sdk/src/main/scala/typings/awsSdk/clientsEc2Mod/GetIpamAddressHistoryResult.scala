@@ -23,7 +23,8 @@ object GetIpamAddressHistoryResult {
     __obj.asInstanceOf[GetIpamAddressHistoryResult]
   }
   
-  extension [Self <: GetIpamAddressHistoryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIpamAddressHistoryResult] (val x: Self) extends AnyVal {
     
     inline def setHistoryRecords(value: IpamAddressHistoryRecordSet): Self = StObject.set(x, "HistoryRecords", value.asInstanceOf[js.Any])
     

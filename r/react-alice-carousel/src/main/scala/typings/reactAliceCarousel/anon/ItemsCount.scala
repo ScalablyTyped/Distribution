@@ -19,7 +19,8 @@ object ItemsCount {
     __obj.asInstanceOf[ItemsCount]
   }
   
-  extension [Self <: ItemsCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsCount] (val x: Self) extends AnyVal {
     
     inline def setActiveIndex(value: Any): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

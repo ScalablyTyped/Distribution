@@ -43,7 +43,8 @@ object UpdateResiliencyPolicyRequest {
     __obj.asInstanceOf[UpdateResiliencyPolicyRequest]
   }
   
-  extension [Self <: UpdateResiliencyPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateResiliencyPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setDataLocationConstraint(value: DataLocationConstraint): Self = StObject.set(x, "dataLocationConstraint", value.asInstanceOf[js.Any])
     

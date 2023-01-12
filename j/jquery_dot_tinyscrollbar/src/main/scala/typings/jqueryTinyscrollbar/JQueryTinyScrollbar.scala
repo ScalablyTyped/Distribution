@@ -50,7 +50,8 @@ object JQueryTinyScrollbar {
       __obj.asInstanceOf[JQueryTinyScrollbarOptions]
     }
     
-    extension [Self <: JQueryTinyScrollbarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JQueryTinyScrollbarOptions] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       

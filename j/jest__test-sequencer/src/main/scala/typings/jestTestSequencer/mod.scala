@@ -112,7 +112,8 @@ object mod {
       __obj.asInstanceOf[ShardOptions]
     }
     
-    extension [Self <: ShardOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShardOptions] (val x: Self) extends AnyVal {
       
       inline def setShardCount(value: Double): Self = StObject.set(x, "shardCount", value.asInstanceOf[js.Any])
       
@@ -208,7 +209,8 @@ object mod {
       __obj.asInstanceOf[TestSequencer]
     }
     
-    extension [Self <: TestSequencer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestSequencer] (val x: Self) extends AnyVal {
       
       inline def setAllFailedTests(value: js.Array[Test] => js.Array[Test] | js.Promise[js.Array[Test]]): Self = StObject.set(x, "allFailedTests", js.Any.fromFunction1(value))
       

@@ -23,7 +23,8 @@ object IgButtonIcons {
     __obj.asInstanceOf[IgButtonIcons]
   }
   
-  extension [Self <: IgButtonIcons](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgButtonIcons] (val x: Self) extends AnyVal {
     
     inline def setPrimary(value: Any): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     

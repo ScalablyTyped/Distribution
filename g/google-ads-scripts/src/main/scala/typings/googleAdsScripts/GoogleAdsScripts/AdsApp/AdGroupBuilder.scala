@@ -63,7 +63,8 @@ object AdGroupBuilder {
     __obj.asInstanceOf[AdGroupBuilder]
   }
   
-  extension [Self <: AdGroupBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdGroupBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithCpa(value: Double => AdGroupBuilder): Self = StObject.set(x, "withCpa", js.Any.fromFunction1(value))
     

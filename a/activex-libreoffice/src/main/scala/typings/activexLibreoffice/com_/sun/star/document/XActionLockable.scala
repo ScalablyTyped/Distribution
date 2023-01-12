@@ -54,7 +54,8 @@ object XActionLockable {
     __obj.asInstanceOf[XActionLockable]
   }
   
-  extension [Self <: XActionLockable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XActionLockable] (val x: Self) extends AnyVal {
     
     inline def setAddActionLock(value: () => Unit): Self = StObject.set(x, "addActionLock", js.Any.fromFunction0(value))
     

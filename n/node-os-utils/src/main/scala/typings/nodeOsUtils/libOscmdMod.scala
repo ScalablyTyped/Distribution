@@ -77,7 +77,8 @@ object libOscmdMod {
       __obj.asInstanceOf[OsCmd]
     }
     
-    extension [Self <: OsCmd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OsCmd] (val x: Self) extends AnyVal {
       
       inline def setDiskUsage(value: () => js.Promise[String]): Self = StObject.set(x, "diskUsage", js.Any.fromFunction0(value))
       

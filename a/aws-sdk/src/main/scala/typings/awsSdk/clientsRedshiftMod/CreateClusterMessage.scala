@@ -183,7 +183,8 @@ object CreateClusterMessage {
     __obj.asInstanceOf[CreateClusterMessage]
   }
   
-  extension [Self <: CreateClusterMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateClusterMessage] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: String): Self = StObject.set(x, "AdditionalInfo", value.asInstanceOf[js.Any])
     

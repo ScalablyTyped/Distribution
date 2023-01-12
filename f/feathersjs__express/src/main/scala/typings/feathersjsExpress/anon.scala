@@ -58,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: /* msg */ String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
@@ -83,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Html]
     }
     
-    extension [Self <: Html](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
       
       inline def setHtml(value: Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object anon {
       __obj.asInstanceOf[PartialServiceMethodsanyS]
     }
     
-    extension [Self <: PartialServiceMethodsanyS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialServiceMethodsanyS] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: /* data */ Partial[Any] => js.Promise[Any | js.Array[Any]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       

@@ -73,7 +73,8 @@ object KmlScale {
     __obj.asInstanceOf[KmlScale]
   }
   
-  extension [Self <: KmlScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlScale] (val x: Self) extends AnyVal {
     
     inline def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
     

@@ -43,7 +43,8 @@ object ChaiSpies {
       __obj.asInstanceOf[Always]
     }
     
-    extension [Self <: Always](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Always] (val x: Self) extends AnyVal {
       
       inline def setWith(value: AlwaysWith): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
     }
@@ -133,7 +134,8 @@ object ChaiSpies {
       __obj.asInstanceOf[At]
     }
     
-    extension [Self <: At](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: At] (val x: Self) extends AnyVal {
       
       inline def setLeast(value: Double => Assertion): Self = StObject.set(x, "least", js.Any.fromFunction1(value))
       
@@ -343,7 +345,8 @@ object ChaiSpies {
       __obj.asInstanceOf[Resetable]
     }
     
-    extension [Self <: Resetable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resetable] (val x: Self) extends AnyVal {
       
       inline def setReset(value: () => Resetable): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }

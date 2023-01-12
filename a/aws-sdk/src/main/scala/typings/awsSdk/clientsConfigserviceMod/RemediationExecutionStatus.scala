@@ -35,7 +35,8 @@ object RemediationExecutionStatus {
     __obj.asInstanceOf[RemediationExecutionStatus]
   }
   
-  extension [Self <: RemediationExecutionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemediationExecutionStatus] (val x: Self) extends AnyVal {
     
     inline def setInvocationTime(value: js.Date): Self = StObject.set(x, "InvocationTime", value.asInstanceOf[js.Any])
     

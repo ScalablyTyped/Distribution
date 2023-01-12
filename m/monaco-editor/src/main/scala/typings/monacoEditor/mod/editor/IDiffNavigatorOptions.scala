@@ -19,7 +19,8 @@ object IDiffNavigatorOptions {
     __obj.asInstanceOf[IDiffNavigatorOptions]
   }
   
-  extension [Self <: IDiffNavigatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDiffNavigatorOptions] (val x: Self) extends AnyVal {
     
     inline def setAlwaysRevealFirst(value: Boolean): Self = StObject.set(x, "alwaysRevealFirst", value.asInstanceOf[js.Any])
     

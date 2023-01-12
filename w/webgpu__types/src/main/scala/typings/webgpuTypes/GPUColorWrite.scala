@@ -36,7 +36,8 @@ object GPUColorWrite {
     __obj.asInstanceOf[GPUColorWrite]
   }
   
-  extension [Self <: GPUColorWrite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUColorWrite] (val x: Self) extends AnyVal {
     
     inline def setALL(value: GPUFlagsConstant): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
     

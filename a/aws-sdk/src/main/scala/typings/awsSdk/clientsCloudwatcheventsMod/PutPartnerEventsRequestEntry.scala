@@ -38,7 +38,8 @@ object PutPartnerEventsRequestEntry {
     __obj.asInstanceOf[PutPartnerEventsRequestEntry]
   }
   
-  extension [Self <: PutPartnerEventsRequestEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutPartnerEventsRequestEntry] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: String): Self = StObject.set(x, "Detail", value.asInstanceOf[js.Any])
     

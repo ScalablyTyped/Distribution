@@ -23,7 +23,8 @@ object ResourceKey {
     __obj.asInstanceOf[ResourceKey]
   }
   
-  extension [Self <: ResourceKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceKey] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     

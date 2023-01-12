@@ -18,7 +18,8 @@ object UpdateXssMatchSetResponse {
     __obj.asInstanceOf[UpdateXssMatchSetResponse]
   }
   
-  extension [Self <: UpdateXssMatchSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateXssMatchSetResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     

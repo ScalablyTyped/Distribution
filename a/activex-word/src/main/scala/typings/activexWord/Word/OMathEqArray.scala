@@ -46,7 +46,8 @@ object OMathEqArray {
     __obj.asInstanceOf[OMathEqArray]
   }
   
-  extension [Self <: OMathEqArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OMathEqArray] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: WdOMathVertAlignType): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object IMessageEvent {
     __obj.asInstanceOf[IMessageEvent]
   }
   
-  extension [Self <: IMessageEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMessageEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: String | Buffer | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

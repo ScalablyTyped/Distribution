@@ -21,7 +21,8 @@ object AccessTokenUri {
     __obj.asInstanceOf[AccessTokenUri]
   }
   
-  extension [Self <: AccessTokenUri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessTokenUri] (val x: Self) extends AnyVal {
     
     inline def setAccessTokenUri(value: Domain): Self = StObject.set(x, "accessTokenUri", value.asInstanceOf[js.Any])
     

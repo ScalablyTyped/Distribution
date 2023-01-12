@@ -23,7 +23,8 @@ object GetArtifactUrlResult {
     __obj.asInstanceOf[GetArtifactUrlResult]
   }
   
-  extension [Self <: GetArtifactUrlResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetArtifactUrlResult] (val x: Self) extends AnyVal {
     
     inline def setArtifactId(value: ArtifactId): Self = StObject.set(x, "artifactId", value.asInstanceOf[js.Any])
     

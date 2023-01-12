@@ -30,7 +30,8 @@ object HydrationRenderer {
     __obj.asInstanceOf[HydrationRenderer]
   }
   
-  extension [Self <: HydrationRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HydrationRenderer] (val x: Self) extends AnyVal {
     
     inline def setHydrate(
       value: (/* vnode */ VNode[Node, Element, StringDictionary[Any]], /* container */ ElementvnodeVNodeRenderer | ShadowRootvnodeVNodeRende) => Unit

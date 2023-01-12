@@ -42,7 +42,8 @@ object IdMilestone {
     __obj.asInstanceOf[IdMilestone]
   }
   
-  extension [Self <: IdMilestone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdMilestone] (val x: Self) extends AnyVal {
     
     inline def setActor(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any

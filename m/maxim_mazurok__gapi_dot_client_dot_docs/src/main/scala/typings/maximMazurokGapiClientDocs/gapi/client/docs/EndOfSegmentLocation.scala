@@ -16,7 +16,8 @@ object EndOfSegmentLocation {
     __obj.asInstanceOf[EndOfSegmentLocation]
   }
   
-  extension [Self <: EndOfSegmentLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndOfSegmentLocation] (val x: Self) extends AnyVal {
     
     inline def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
     

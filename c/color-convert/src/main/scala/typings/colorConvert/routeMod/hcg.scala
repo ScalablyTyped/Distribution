@@ -71,7 +71,8 @@ object hcg {
     __obj.asInstanceOf[hcg]
   }
   
-  extension [Self <: hcg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: hcg] (val x: Self) extends AnyVal {
     
     inline def setAnsi16(value: HCG_ => ANSI16_): Self = StObject.set(x, "ansi16", js.Any.fromFunction1(value))
     

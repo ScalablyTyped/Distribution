@@ -83,7 +83,8 @@ object mod {
       __obj.asInstanceOf[Critters]
     }
     
-    extension [Self <: Critters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Critters] (val x: Self) extends AnyVal {
       
       inline def setGetCssAsset(value: String => js.UndefOr[js.Promise[js.UndefOr[String]] | String]): Self = StObject.set(x, "getCssAsset", js.Any.fromFunction1(value))
       
@@ -112,7 +113,8 @@ object mod {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: /* message */ String => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
@@ -181,7 +183,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAdditionalStylesheets(value: js.Array[String]): Self = StObject.set(x, "additionalStylesheets", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[DismissBtnMessage]
     }
     
-    extension [Self <: DismissBtnMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DismissBtnMessage] (val x: Self) extends AnyVal {
       
       inline def setDismissBtnMessage(value: `Close the modal by clicking here`): Self = StObject.set(x, "dismissBtnMessage", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[ModalVideo]
     }
     
-    extension [Self <: ModalVideo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalVideo] (val x: Self) extends AnyVal {
       
       inline def setModalVideo(value: `modal-video`): Self = StObject.set(x, "modalVideo", value.asInstanceOf[js.Any])
       

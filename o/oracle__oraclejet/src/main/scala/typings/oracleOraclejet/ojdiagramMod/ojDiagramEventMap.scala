@@ -294,7 +294,8 @@ object ojDiagramEventMap {
     __obj.asInstanceOf[ojDiagramEventMap[K1, K2, D1, D2]]
   }
   
-  extension [Self <: ojDiagramEventMap[?, ?, ?, ?], K1, K2, D1, D2](x: Self & (ojDiagramEventMap[K1, K2, D1, D2])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojDiagramEventMap[?, ?, ?, ?], K1, K2, D1, D2] (val x: Self & (ojDiagramEventMap[K1, K2, D1, D2])) extends AnyVal {
     
     inline def setAnimationOnDataChangeChanged(value: JetElementCustomEvent[auto | none]): Self = StObject.set(x, "animationOnDataChangeChanged", value.asInstanceOf[js.Any])
     

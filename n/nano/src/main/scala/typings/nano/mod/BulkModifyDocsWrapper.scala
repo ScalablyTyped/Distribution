@@ -15,7 +15,8 @@ object BulkModifyDocsWrapper {
     __obj.asInstanceOf[BulkModifyDocsWrapper]
   }
   
-  extension [Self <: BulkModifyDocsWrapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkModifyDocsWrapper] (val x: Self) extends AnyVal {
     
     inline def setDocs(value: js.Array[Any]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     

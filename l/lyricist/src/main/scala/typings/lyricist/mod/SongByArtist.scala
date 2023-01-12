@@ -64,7 +64,8 @@ object SongByArtist {
     __obj.asInstanceOf[SongByArtist]
   }
   
-  extension [Self <: SongByArtist](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SongByArtist] (val x: Self) extends AnyVal {
     
     inline def setAnnotation_count(value: Double): Self = StObject.set(x, "annotation_count", value.asInstanceOf[js.Any])
     

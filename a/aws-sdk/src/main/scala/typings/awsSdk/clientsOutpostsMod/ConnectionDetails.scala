@@ -43,7 +43,8 @@ object ConnectionDetails {
     __obj.asInstanceOf[ConnectionDetails]
   }
   
-  extension [Self <: ConnectionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionDetails] (val x: Self) extends AnyVal {
     
     inline def setAllowedIps(value: CIDRList): Self = StObject.set(x, "AllowedIps", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DragAndDropCoordinate {
     __obj.asInstanceOf[DragAndDropCoordinate]
   }
   
-  extension [Self <: DragAndDropCoordinate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragAndDropCoordinate] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

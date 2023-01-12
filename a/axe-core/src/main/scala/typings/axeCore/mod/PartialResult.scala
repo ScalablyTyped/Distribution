@@ -19,7 +19,8 @@ object PartialResult {
     __obj.asInstanceOf[PartialResult]
   }
   
-  extension [Self <: PartialResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialResult] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentData(value: EnvironmentData): Self = StObject.set(x, "environmentData", value.asInstanceOf[js.Any])
     

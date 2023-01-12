@@ -19,7 +19,8 @@ object GoogleCloudDatalabelingV1p2alpha1OutputConfig {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1p2alpha1OutputConfig]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1p2alpha1OutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1p2alpha1OutputConfig] (val x: Self) extends AnyVal {
     
     inline def setGcsDestination(value: GoogleCloudDatalabelingV1p2alpha1GcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     

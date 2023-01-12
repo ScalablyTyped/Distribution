@@ -29,7 +29,8 @@ object Options {
     __obj.asInstanceOf[Options]
   }
   
-  extension [Self <: Options](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     inline def setDisplayPasteOptions(value: MsoTriState): Self = StObject.set(x, "DisplayPasteOptions", value.asInstanceOf[js.Any])
     

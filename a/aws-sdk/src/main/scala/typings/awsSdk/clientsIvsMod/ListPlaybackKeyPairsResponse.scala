@@ -23,7 +23,8 @@ object ListPlaybackKeyPairsResponse {
     __obj.asInstanceOf[ListPlaybackKeyPairsResponse]
   }
   
-  extension [Self <: ListPlaybackKeyPairsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPlaybackKeyPairsResponse] (val x: Self) extends AnyVal {
     
     inline def setKeyPairs(value: PlaybackKeyPairList): Self = StObject.set(x, "keyPairs", value.asInstanceOf[js.Any])
     

@@ -85,7 +85,8 @@ object RequestWillBeSentEvent {
     __obj.asInstanceOf[RequestWillBeSentEvent]
   }
   
-  extension [Self <: RequestWillBeSentEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestWillBeSentEvent] (val x: Self) extends AnyVal {
     
     inline def setDocumentURL(value: String): Self = StObject.set(x, "documentURL", value.asInstanceOf[js.Any])
     

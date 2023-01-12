@@ -63,7 +63,8 @@ object GetTransactionsResponse {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setTxnListWithProof(value: typings.libraCore.`lib@GeneratedTransactionPbMod`.TransactionListWithProof.AsObject): Self = StObject.set(x, "txnListWithProof", value.asInstanceOf[js.Any])
       

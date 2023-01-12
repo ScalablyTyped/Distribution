@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[AmazonDaxClientHttpOptions]
     }
     
-    extension [Self <: AmazonDaxClientHttpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AmazonDaxClientHttpOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object mod {
       __obj.asInstanceOf[AmazonDaxClientOptions]
     }
     
-    extension [Self <: AmazonDaxClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AmazonDaxClientOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       

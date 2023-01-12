@@ -76,7 +76,8 @@ object ParagraphStyleSuggestionState {
     __obj.asInstanceOf[ParagraphStyleSuggestionState]
   }
   
-  extension [Self <: ParagraphStyleSuggestionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphStyleSuggestionState] (val x: Self) extends AnyVal {
     
     inline def setAlignmentSuggested(value: Boolean): Self = StObject.set(x, "alignmentSuggested", value.asInstanceOf[js.Any])
     

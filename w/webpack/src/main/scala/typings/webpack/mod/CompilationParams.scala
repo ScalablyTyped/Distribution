@@ -17,7 +17,8 @@ object CompilationParams {
     __obj.asInstanceOf[CompilationParams]
   }
   
-  extension [Self <: CompilationParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompilationParams] (val x: Self) extends AnyVal {
     
     inline def setContextModuleFactory(value: ContextModuleFactory): Self = StObject.set(x, "contextModuleFactory", value.asInstanceOf[js.Any])
     

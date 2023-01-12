@@ -23,7 +23,8 @@ object DuplicateDuplicateProperties {
     __obj.asInstanceOf[DuplicateDuplicateProperties]
   }
   
-  extension [Self <: DuplicateDuplicateProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DuplicateDuplicateProperties] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

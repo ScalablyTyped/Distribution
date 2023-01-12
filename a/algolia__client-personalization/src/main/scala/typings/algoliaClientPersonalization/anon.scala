@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[EventName]
     }
     
-    extension [Self <: EventName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventName] (val x: Self) extends AnyVal {
       
       inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[EventType]
     }
     
-    extension [Self <: EventType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventType] (val x: Self) extends AnyVal {
       
       inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[FacetName]
     }
     
-    extension [Self <: FacetName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FacetName] (val x: Self) extends AnyVal {
       
       inline def setFacetName(value: String): Self = StObject.set(x, "facetName", value.asInstanceOf[js.Any])
       
@@ -102,7 +105,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyPromiseGetPersona]
     }
     
-    extension [Self <: ReadonlyPromiseGetPersona](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyPromiseGetPersona] (val x: Self) extends AnyVal {
       
       inline def setCatch(value: () => js.Promise[GetPersonalizationStrategyResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
@@ -135,7 +139,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyPromiseSetPersona]
     }
     
-    extension [Self <: ReadonlyPromiseSetPersona](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyPromiseSetPersona] (val x: Self) extends AnyVal {
       
       inline def setCatch(value: () => js.Promise[SetPersonalizationStrategyResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
@@ -158,7 +163,8 @@ object anon {
       __obj.asInstanceOf[Score]
     }
     
-    extension [Self <: Score](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Score] (val x: Self) extends AnyVal {
       
       inline def setFacetName(value: String): Self = StObject.set(x, "facetName", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object OnPostHandler {
     __obj.asInstanceOf[OnPostHandler]
   }
   
-  extension [Self <: OnPostHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnPostHandler] (val x: Self) extends AnyVal {
     
     inline def setOnPostHandler(value: MethodAny): Self = StObject.set(x, "onPostHandler", value.asInstanceOf[js.Any])
   }

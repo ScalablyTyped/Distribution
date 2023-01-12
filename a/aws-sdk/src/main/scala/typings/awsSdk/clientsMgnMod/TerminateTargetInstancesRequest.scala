@@ -23,7 +23,8 @@ object TerminateTargetInstancesRequest {
     __obj.asInstanceOf[TerminateTargetInstancesRequest]
   }
   
-  extension [Self <: TerminateTargetInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminateTargetInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setSourceServerIDs(value: TerminateTargetInstancesRequestSourceServerIDs): Self = StObject.set(x, "sourceServerIDs", value.asInstanceOf[js.Any])
     

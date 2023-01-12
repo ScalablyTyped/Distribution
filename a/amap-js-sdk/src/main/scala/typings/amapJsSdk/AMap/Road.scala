@@ -23,7 +23,8 @@ object Road {
     __obj.asInstanceOf[Road]
   }
   
-  extension [Self <: Road](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Road] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

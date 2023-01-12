@@ -50,7 +50,8 @@ object DescribeNatGatewaysReques {
     __obj.asInstanceOf[DescribeNatGatewaysReques]
   }
   
-  extension [Self <: DescribeNatGatewaysReques](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNatGatewaysReques] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

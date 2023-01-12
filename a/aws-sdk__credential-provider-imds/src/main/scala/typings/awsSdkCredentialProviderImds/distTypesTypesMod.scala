@@ -20,7 +20,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[InstanceMetadataCredentials]
     }
     
-    extension [Self <: InstanceMetadataCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstanceMetadataCredentials] (val x: Self) extends AnyVal {
       
       inline def setOriginalExpiration(value: js.Date): Self = StObject.set(x, "originalExpiration", value.asInstanceOf[js.Any])
       

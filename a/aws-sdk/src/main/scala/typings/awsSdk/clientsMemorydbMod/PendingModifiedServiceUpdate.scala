@@ -23,7 +23,8 @@ object PendingModifiedServiceUpdate {
     __obj.asInstanceOf[PendingModifiedServiceUpdate]
   }
   
-  extension [Self <: PendingModifiedServiceUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingModifiedServiceUpdate] (val x: Self) extends AnyVal {
     
     inline def setServiceUpdateName(value: String): Self = StObject.set(x, "ServiceUpdateName", value.asInstanceOf[js.Any])
     

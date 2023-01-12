@@ -24,7 +24,8 @@ object OlapResultTupleOptions {
     __obj.asInstanceOf[OlapResultTupleOptions]
   }
   
-  extension [Self <: OlapResultTupleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlapResultTupleOptions] (val x: Self) extends AnyVal {
     
     inline def setMembers(value: js.Array[Any]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     

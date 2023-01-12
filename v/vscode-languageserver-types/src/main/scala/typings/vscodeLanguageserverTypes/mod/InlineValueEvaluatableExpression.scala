@@ -39,7 +39,8 @@ object InlineValueEvaluatableExpression {
   inline def is(): /* is vscode-languageserver-types.vscode-languageserver-types.InlineValueEvaluatableExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")().asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.InlineValueEvaluatableExpression */ Boolean]
   inline def is(value: InlineValue): /* is vscode-languageserver-types.vscode-languageserver-types.InlineValueEvaluatableExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.InlineValueEvaluatableExpression */ Boolean]
   
-  extension [Self <: InlineValueEvaluatableExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineValueEvaluatableExpression] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

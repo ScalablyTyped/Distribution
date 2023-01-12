@@ -52,7 +52,8 @@ object distTypesCirclesMod {
       __obj.asInstanceOf[CirclesProps[RawDatum]]
     }
     
-    extension [Self <: CirclesProps[?], RawDatum](x: Self & CirclesProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CirclesProps[?], RawDatum] (val x: Self & CirclesProps[RawDatum]) extends AnyVal {
       
       inline def setBorderColor(value: InheritedColorConfig[ComputedDatum[RawDatum]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       

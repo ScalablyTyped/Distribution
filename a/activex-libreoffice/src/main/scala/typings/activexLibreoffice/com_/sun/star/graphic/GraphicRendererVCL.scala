@@ -57,7 +57,8 @@ object GraphicRendererVCL {
     __obj.asInstanceOf[GraphicRendererVCL]
   }
   
-  extension [Self <: GraphicRendererVCL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicRendererVCL] (val x: Self) extends AnyVal {
     
     inline def setDestinationRect(value: Rectangle): Self = StObject.set(x, "DestinationRect", value.asInstanceOf[js.Any])
     

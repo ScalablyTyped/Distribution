@@ -35,7 +35,8 @@ object ViewOptions {
     __obj.asInstanceOf[ViewOptions[TModel, TElement]]
   }
   
-  extension [Self <: ViewOptions[?, ?], TModel /* <: js.UndefOr[Model[Any, ModelSetOptions, Any]] */, TElement /* <: Element */](x: Self & (ViewOptions[TModel, TElement])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewOptions[?, ?], TModel /* <: js.UndefOr[Model[Any, ModelSetOptions, Any]] */, TElement /* <: Element */] (val x: Self & (ViewOptions[TModel, TElement])) extends AnyVal {
     
     inline def setAttributes(value: Record[String, Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

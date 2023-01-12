@@ -22,7 +22,8 @@ object DocumentAndElementEventHandlersEventMap {
     __obj.asInstanceOf[DocumentAndElementEventHandlersEventMap]
   }
   
-  extension [Self <: DocumentAndElementEventHandlersEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentAndElementEventHandlersEventMap] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: ClipboardEvent): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
     

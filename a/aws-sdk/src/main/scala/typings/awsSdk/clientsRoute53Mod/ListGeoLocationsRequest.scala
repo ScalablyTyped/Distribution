@@ -33,7 +33,8 @@ object ListGeoLocationsRequest {
     __obj.asInstanceOf[ListGeoLocationsRequest]
   }
   
-  extension [Self <: ListGeoLocationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGeoLocationsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object typesBatchGetTracesInputMod {
       __obj.asInstanceOf[BatchGetTracesInput]
     }
     
-    extension [Self <: BatchGetTracesInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchGetTracesInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object Alphabet {
     __obj.asInstanceOf[Alphabet[Base, Prefix]]
   }
   
-  extension [Self <: Alphabet[?, ?], Base /* <: String */, Prefix /* <: String */](x: Self & (Alphabet[Base, Prefix])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Alphabet[?, ?], Base /* <: String */, Prefix /* <: String */] (val x: Self & (Alphabet[Base, Prefix])) extends AnyVal {
     
     inline def setAlphabet(value: String): Self = StObject.set(x, "alphabet", value.asInstanceOf[js.Any])
     

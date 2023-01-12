@@ -31,7 +31,8 @@ object EntryPoint {
     __obj.asInstanceOf[EntryPoint]
   }
   
-  extension [Self <: EntryPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntryPoint] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

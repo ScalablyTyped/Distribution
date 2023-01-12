@@ -24,7 +24,8 @@ object IRSAPublicKey {
     __obj.asInstanceOf[IRSAPublicKey]
   }
   
-  extension [Self <: IRSAPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRSAPublicKey] (val x: Self) extends AnyVal {
     
     inline def setModulus(value: Integer): Self = StObject.set(x, "modulus", value.asInstanceOf[js.Any])
     

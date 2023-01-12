@@ -102,7 +102,8 @@ object typesContextmenuMod {
         __obj.asInstanceOf[IItemOptions]
       }
       
-      extension [Self <: IItemOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IItemOptions] (val x: Self) extends AnyVal {
         
         inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
         
@@ -152,7 +153,8 @@ object typesContextmenuMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
         

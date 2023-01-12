@@ -19,7 +19,8 @@ object typesIoMod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setStatusCallback(value: Status => Unit): Self = StObject.set(x, "statusCallback", js.Any.fromFunction1(value))
       }
@@ -36,7 +37,8 @@ object typesIoMod {
         __obj.asInstanceOf[Status]
       }
       
-      extension [Self <: Status](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
         
         inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
         

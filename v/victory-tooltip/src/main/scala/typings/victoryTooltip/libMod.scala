@@ -113,7 +113,8 @@ object libMod {
       __obj.asInstanceOf[FlyoutProps]
     }
     
-    extension [Self <: FlyoutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlyoutProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -327,7 +328,8 @@ object libMod {
       __obj.asInstanceOf[VictoryTooltipProps]
     }
     
-    extension [Self <: VictoryTooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryTooltipProps] (val x: Self) extends AnyVal {
       
       inline def setActivateData(value: Boolean): Self = StObject.set(x, "activateData", value.asInstanceOf[js.Any])
       

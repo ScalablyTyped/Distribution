@@ -30,7 +30,8 @@ object PaginationPage {
     __obj.asInstanceOf[PaginationPage]
   }
   
-  extension [Self <: PaginationPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginationPage] (val x: Self) extends AnyVal {
     
     inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     

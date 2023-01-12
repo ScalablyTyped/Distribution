@@ -33,7 +33,8 @@ object libComponentsLinkLinkDottypesMod {
       __obj.asInstanceOf[ILink]
     }
     
-    extension [Self <: ILink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILink] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
@@ -85,7 +86,8 @@ object libComponentsLinkLinkDottypesMod {
       __obj.asInstanceOf[ILinkHTMLAttributes[T]]
     }
     
-    extension [Self <: ILinkHTMLAttributes[?], T](x: Self & ILinkHTMLAttributes[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILinkHTMLAttributes[?], T] (val x: Self & ILinkHTMLAttributes[T]) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -204,7 +206,8 @@ object libComponentsLinkLinkDottypesMod {
       __obj.asInstanceOf[ILinkProps]
     }
     
-    extension [Self <: ILinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILinkProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: String | (ComponentClass[js.Object, ComponentState]) | FunctionComponent[js.Object]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -255,7 +258,8 @@ object libComponentsLinkLinkDottypesMod {
       __obj.asInstanceOf[ILinkStyleProps]
     }
     
-    extension [Self <: ILinkStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILinkStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -288,7 +292,8 @@ object libComponentsLinkLinkDottypesMod {
       __obj.asInstanceOf[ILinkStyles]
     }
     
-    extension [Self <: ILinkStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILinkStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

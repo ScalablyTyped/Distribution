@@ -150,7 +150,8 @@ object mod {
       __obj.asInstanceOf[Pattern[T]]
     }
     
-    extension [Self <: Pattern[?], T](x: Self & Pattern[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pattern[?], T] (val x: Self & Pattern[T]) extends AnyVal {
       
       inline def setMatch(value: String => T): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
       
@@ -172,7 +173,8 @@ object mod {
       __obj.asInstanceOf[hexoSpawnDisableEncodingAndOverrideStdioOptions]
     }
     
-    extension [Self <: hexoSpawnDisableEncodingAndOverrideStdioOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: hexoSpawnDisableEncodingAndOverrideStdioOptions] (val x: Self) extends AnyVal {
       
       inline def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
       
@@ -195,7 +197,8 @@ object mod {
       __obj.asInstanceOf[hexoSpawnDisableEncodingOptions]
     }
     
-    extension [Self <: hexoSpawnDisableEncodingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: hexoSpawnDisableEncodingOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: _empty | `false`): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -222,7 +225,8 @@ object mod {
       __obj.asInstanceOf[hexoSpawnOptions]
     }
     
-    extension [Self <: hexoSpawnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: hexoSpawnOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -248,7 +252,8 @@ object mod {
       __obj.asInstanceOf[hexoSpawnOverrideStdioOptions]
     }
     
-    extension [Self <: hexoSpawnOverrideStdioOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: hexoSpawnOverrideStdioOptions] (val x: Self) extends AnyVal {
       
       inline def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
       

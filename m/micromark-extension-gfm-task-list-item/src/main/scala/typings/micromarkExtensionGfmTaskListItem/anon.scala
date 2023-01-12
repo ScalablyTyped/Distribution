@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Tokenize]
     }
     
-    extension [Self <: Tokenize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tokenize] (val x: Self) extends AnyVal {
       
       inline def setTokenize(value: (/* effects */ Effects, /* ok */ State, /* nok */ State) => State): Self = StObject.set(x, "tokenize", js.Any.fromFunction3(value))
     }

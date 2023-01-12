@@ -18,7 +18,8 @@ object AutoMLResult {
     __obj.asInstanceOf[AutoMLResult]
   }
   
-  extension [Self <: AutoMLResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMLResult] (val x: Self) extends AnyVal {
     
     inline def setBestRecipeArn(value: Arn): Self = StObject.set(x, "bestRecipeArn", value.asInstanceOf[js.Any])
     

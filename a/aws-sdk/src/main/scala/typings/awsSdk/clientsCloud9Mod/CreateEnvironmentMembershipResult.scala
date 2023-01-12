@@ -18,7 +18,8 @@ object CreateEnvironmentMembershipResult {
     __obj.asInstanceOf[CreateEnvironmentMembershipResult]
   }
   
-  extension [Self <: CreateEnvironmentMembershipResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEnvironmentMembershipResult] (val x: Self) extends AnyVal {
     
     inline def setMembership(value: EnvironmentMember): Self = StObject.set(x, "membership", value.asInstanceOf[js.Any])
   }

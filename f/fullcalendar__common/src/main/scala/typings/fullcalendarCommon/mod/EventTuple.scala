@@ -18,7 +18,8 @@ object EventTuple {
     __obj.asInstanceOf[EventTuple]
   }
   
-  extension [Self <: EventTuple](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventTuple] (val x: Self) extends AnyVal {
     
     inline def setDef(value: EventDef): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SpaceDetails {
     __obj.asInstanceOf[SpaceDetails]
   }
   
-  extension [Self <: SpaceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpaceDetails] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object AggregationsStringStatsAggregation {
     __obj.asInstanceOf[AggregationsStringStatsAggregation]
   }
   
-  extension [Self <: AggregationsStringStatsAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsStringStatsAggregation] (val x: Self) extends AnyVal {
     
     inline def setShow_distribution(value: Boolean): Self = StObject.set(x, "show_distribution", value.asInstanceOf[js.Any])
     

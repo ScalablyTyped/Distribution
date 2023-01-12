@@ -60,7 +60,8 @@ object ColumnChooser {
     __obj.asInstanceOf[ColumnChooser]
   }
   
-  extension [Self <: ColumnChooser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnChooser] (val x: Self) extends AnyVal {
     
     inline def setAllowSearch(value: Boolean): Self = StObject.set(x, "allowSearch", value.asInstanceOf[js.Any])
     

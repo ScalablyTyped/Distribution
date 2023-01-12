@@ -278,7 +278,8 @@ object sapUiCoreTitleMod {
       __obj.asInstanceOf[TitleSettings]
     }
     
-    extension [Self <: TitleSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleSettings] (val x: Self) extends AnyVal {
       
       inline def setEmphasized(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "emphasized", value.asInstanceOf[js.Any])
       

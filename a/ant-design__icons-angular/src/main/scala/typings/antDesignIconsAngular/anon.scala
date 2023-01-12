@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Optional]
     }
     
-    extension [Self <: Optional](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optional] (val x: Self) extends AnyVal {
       
       inline def setOptional(value: `true`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     }
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       

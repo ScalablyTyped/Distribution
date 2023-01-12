@@ -20,7 +20,8 @@ object HasuraMutationResponse {
     __obj.asInstanceOf[HasuraMutationResponse[T]]
   }
   
-  extension [Self <: HasuraMutationResponse[?], T /* <: Record[String, Any] */](x: Self & HasuraMutationResponse[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasuraMutationResponse[?], T /* <: Record[String, Any] */] (val x: Self & HasuraMutationResponse[T]) extends AnyVal {
     
     inline def setAffected_rows(value: Double): Self = StObject.set(x, "affected_rows", value.asInstanceOf[js.Any])
     

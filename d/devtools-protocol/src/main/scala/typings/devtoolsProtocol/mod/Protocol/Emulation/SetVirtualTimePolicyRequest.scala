@@ -34,7 +34,8 @@ object SetVirtualTimePolicyRequest {
     __obj.asInstanceOf[SetVirtualTimePolicyRequest]
   }
   
-  extension [Self <: SetVirtualTimePolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetVirtualTimePolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setBudget(value: Double): Self = StObject.set(x, "budget", value.asInstanceOf[js.Any])
     

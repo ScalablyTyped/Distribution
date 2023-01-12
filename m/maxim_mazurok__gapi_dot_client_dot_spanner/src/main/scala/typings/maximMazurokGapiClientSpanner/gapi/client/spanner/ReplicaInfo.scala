@@ -25,7 +25,8 @@ object ReplicaInfo {
     __obj.asInstanceOf[ReplicaInfo]
   }
   
-  extension [Self <: ReplicaInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicaInfo] (val x: Self) extends AnyVal {
     
     inline def setDefaultLeaderLocation(value: Boolean): Self = StObject.set(x, "defaultLeaderLocation", value.asInstanceOf[js.Any])
     

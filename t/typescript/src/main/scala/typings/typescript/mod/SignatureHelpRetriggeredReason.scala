@@ -29,7 +29,8 @@ object SignatureHelpRetriggeredReason {
     __obj.asInstanceOf[SignatureHelpRetriggeredReason]
   }
   
-  extension [Self <: SignatureHelpRetriggeredReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureHelpRetriggeredReason] (val x: Self) extends AnyVal {
     
     inline def setKind(value: retrigger): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

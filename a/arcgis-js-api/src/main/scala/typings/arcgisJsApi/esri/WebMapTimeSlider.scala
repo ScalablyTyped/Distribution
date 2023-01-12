@@ -78,7 +78,8 @@ object WebMapTimeSlider {
     __obj.asInstanceOf[WebMapTimeSlider]
   }
   
-  extension [Self <: WebMapTimeSlider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebMapTimeSlider] (val x: Self) extends AnyVal {
     
     inline def setCurrentTimeExtent(value: TimeExtent): Self = StObject.set(x, "currentTimeExtent", value.asInstanceOf[js.Any])
     

@@ -363,7 +363,8 @@ object HummerCommonStyle {
     __obj.asInstanceOf[HummerCommonStyle]
   }
   
-  extension [Self <: HummerCommonStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HummerCommonStyle] (val x: Self) extends AnyVal {
     
     inline def setAlignContent(value: `flex-start` | `flex-end` | center | `space-between` | `space-around` | stretch): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     

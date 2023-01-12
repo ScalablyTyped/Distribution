@@ -17,7 +17,8 @@ object ConserveMemory {
     __obj.asInstanceOf[ConserveMemory]
   }
   
-  extension [Self <: ConserveMemory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConserveMemory] (val x: Self) extends AnyVal {
     
     inline def setConserveMemory(value: Boolean): Self = StObject.set(x, "conserveMemory", value.asInstanceOf[js.Any])
     

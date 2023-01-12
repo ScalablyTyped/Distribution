@@ -38,7 +38,8 @@ object DeleteSlotTypeRequest {
     __obj.asInstanceOf[DeleteSlotTypeRequest]
   }
   
-  extension [Self <: DeleteSlotTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSlotTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     

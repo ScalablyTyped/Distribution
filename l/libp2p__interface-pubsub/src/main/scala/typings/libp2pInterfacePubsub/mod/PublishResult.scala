@@ -16,7 +16,8 @@ object PublishResult {
     __obj.asInstanceOf[PublishResult]
   }
   
-  extension [Self <: PublishResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishResult] (val x: Self) extends AnyVal {
     
     inline def setRecipients(value: js.Array[PeerId]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     

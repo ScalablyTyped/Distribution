@@ -18,7 +18,8 @@ object CreateLocationFsxOpenZfsResponse {
     __obj.asInstanceOf[CreateLocationFsxOpenZfsResponse]
   }
   
-  extension [Self <: CreateLocationFsxOpenZfsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLocationFsxOpenZfsResponse] (val x: Self) extends AnyVal {
     
     inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     

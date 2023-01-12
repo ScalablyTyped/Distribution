@@ -29,7 +29,8 @@ object YAxisLabelsSymbolOptions {
     __obj.asInstanceOf[YAxisLabelsSymbolOptions]
   }
   
-  extension [Self <: YAxisLabelsSymbolOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YAxisLabelsSymbolOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object UpdateResourceRequest {
     __obj.asInstanceOf[UpdateResourceRequest]
   }
   
-  extension [Self <: UpdateResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object Scaling {
     __obj.asInstanceOf[Scaling]
   }
   
-  extension [Self <: Scaling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scaling] (val x: Self) extends AnyVal {
     
     inline def setConverter(value: js.Object): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     

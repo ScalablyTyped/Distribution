@@ -35,7 +35,8 @@ object distSrcModulesUiLoaderTypesMod {
       __obj.asInstanceOf[ILoader]
     }
     
-    extension [Self <: ILoader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILoader] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -66,7 +67,8 @@ object distSrcModulesUiLoaderTypesMod {
       __obj.asInstanceOf[ILoaderViewStyles]
     }
     
-    extension [Self <: ILoaderViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILoaderViewStyles] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

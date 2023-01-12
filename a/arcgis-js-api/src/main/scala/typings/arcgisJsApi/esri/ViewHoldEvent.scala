@@ -45,7 +45,8 @@ object ViewHoldEvent {
     __obj.asInstanceOf[ViewHoldEvent]
   }
   
-  extension [Self <: ViewHoldEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewHoldEvent] (val x: Self) extends AnyVal {
     
     inline def setButton(value: `0` | `1` | `2`): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

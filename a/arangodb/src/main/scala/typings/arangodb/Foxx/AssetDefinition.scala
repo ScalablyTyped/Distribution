@@ -19,7 +19,8 @@ object AssetDefinition {
     __obj.asInstanceOf[AssetDefinition]
   }
   
-  extension [Self <: AssetDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetDefinition] (val x: Self) extends AnyVal {
     
     inline def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
     

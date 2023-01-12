@@ -18,7 +18,8 @@ object ModifyVpcEndpointServiceConfigurationResult {
     __obj.asInstanceOf[ModifyVpcEndpointServiceConfigurationResult]
   }
   
-  extension [Self <: ModifyVpcEndpointServiceConfigurationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyVpcEndpointServiceConfigurationResult] (val x: Self) extends AnyVal {
     
     inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     

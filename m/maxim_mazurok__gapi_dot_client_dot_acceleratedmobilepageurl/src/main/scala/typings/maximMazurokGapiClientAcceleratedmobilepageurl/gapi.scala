@@ -31,7 +31,8 @@ object gapi {
           __obj.asInstanceOf[AmpUrl]
         }
         
-        extension [Self <: AmpUrl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: AmpUrl] (val x: Self) extends AnyVal {
           
           inline def setAmpUrl(value: String): Self = StObject.set(x, "ampUrl", value.asInstanceOf[js.Any])
           
@@ -65,7 +66,8 @@ object gapi {
           __obj.asInstanceOf[AmpUrlError]
         }
         
-        extension [Self <: AmpUrlError](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: AmpUrlError] (val x: Self) extends AnyVal {
           
           inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
           
@@ -104,7 +106,8 @@ object gapi {
           __obj.asInstanceOf[BatchGetAmpUrlsRequest]
         }
         
-        extension [Self <: BatchGetAmpUrlsRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: BatchGetAmpUrlsRequest] (val x: Self) extends AnyVal {
           
           inline def setLookupStrategy(value: String): Self = StObject.set(x, "lookupStrategy", value.asInstanceOf[js.Any])
           
@@ -136,7 +139,8 @@ object gapi {
           __obj.asInstanceOf[BatchGetAmpUrlsResponse]
         }
         
-        extension [Self <: BatchGetAmpUrlsResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: BatchGetAmpUrlsResponse] (val x: Self) extends AnyVal {
           
           inline def setAmpUrls(value: js.Array[AmpUrl]): Self = StObject.set(x, "ampUrls", value.asInstanceOf[js.Any])
           

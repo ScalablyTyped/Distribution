@@ -21,7 +21,8 @@ object ConversationParticipant {
     __obj.asInstanceOf[ConversationParticipant]
   }
   
-  extension [Self <: ConversationParticipant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversationParticipant] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

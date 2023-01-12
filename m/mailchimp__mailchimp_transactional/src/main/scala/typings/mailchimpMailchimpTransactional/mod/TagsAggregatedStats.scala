@@ -34,7 +34,8 @@ object TagsAggregatedStats {
     __obj.asInstanceOf[TagsAggregatedStats]
   }
   
-  extension [Self <: TagsAggregatedStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagsAggregatedStats] (val x: Self) extends AnyVal {
     
     inline def setLast_30_days(value: TagsInfoStats): Self = StObject.set(x, "last_30_days", value.asInstanceOf[js.Any])
     

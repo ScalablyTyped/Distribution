@@ -40,7 +40,8 @@ object SynthesizePinchGestureRequest {
     __obj.asInstanceOf[SynthesizePinchGestureRequest]
   }
   
-  extension [Self <: SynthesizePinchGestureRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynthesizePinchGestureRequest] (val x: Self) extends AnyVal {
     
     inline def setGestureSourceType(value: GestureSourceType): Self = StObject.set(x, "gestureSourceType", value.asInstanceOf[js.Any])
     

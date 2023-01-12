@@ -78,7 +78,8 @@ object ActionRenderConfiganyNewL {
     __obj.asInstanceOf[ActionRenderConfiganyNewL]
   }
   
-  extension [Self <: ActionRenderConfiganyNewL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionRenderConfiganyNewL] (val x: Self) extends AnyVal {
     
     inline def setAddEditRecord(value: (/* row */ Any, /* options */ js.UndefOr[AddLineOptions]) => Boolean): Self = StObject.set(x, "addEditRecord", js.Any.fromFunction2(value))
     

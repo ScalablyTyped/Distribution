@@ -23,7 +23,8 @@ object PutRecordInput {
     __obj.asInstanceOf[PutRecordInput]
   }
   
-  extension [Self <: PutRecordInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRecordInput] (val x: Self) extends AnyVal {
     
     inline def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
     

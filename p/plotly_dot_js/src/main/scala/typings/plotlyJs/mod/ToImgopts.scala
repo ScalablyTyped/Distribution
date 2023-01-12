@@ -25,7 +25,8 @@ object ToImgopts {
     __obj.asInstanceOf[ToImgopts]
   }
   
-  extension [Self <: ToImgopts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToImgopts] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: jpeg | png | webp | svg): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

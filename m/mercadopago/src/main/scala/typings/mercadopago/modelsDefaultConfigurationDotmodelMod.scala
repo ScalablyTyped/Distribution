@@ -25,7 +25,8 @@ object modelsDefaultConfigurationDotmodelMod {
       __obj.asInstanceOf[DefaultConfiguration]
     }
     
-    extension [Self <: DefaultConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultConfiguration] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object modelsDefaultConfigurationDotmodelMod {
       __obj.asInstanceOf[DefaultConfigurationOmitQs]
     }
     
-    extension [Self <: DefaultConfigurationOmitQs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultConfigurationOmitQs] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object modelsDefaultConfigurationDotmodelMod {
       __obj.asInstanceOf[SearchConfiguration[T]]
     }
     
-    extension [Self <: SearchConfiguration[?], T](x: Self & SearchConfiguration[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchConfiguration[?], T] (val x: Self & SearchConfiguration[T]) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

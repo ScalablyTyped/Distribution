@@ -26,7 +26,8 @@ object AdvertiseReqObj {
     __obj.asInstanceOf[AdvertiseReqObj]
   }
   
-  extension [Self <: AdvertiseReqObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvertiseReqObj] (val x: Self) extends AnyVal {
     
     inline def setConnectable(value: Boolean): Self = StObject.set(x, "connectable", value.asInstanceOf[js.Any])
     

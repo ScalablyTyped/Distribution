@@ -16,7 +16,8 @@ object GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

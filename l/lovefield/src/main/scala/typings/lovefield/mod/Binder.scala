@@ -15,7 +15,8 @@ object Binder {
     __obj.asInstanceOf[Binder]
   }
   
-  extension [Self <: Binder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Binder] (val x: Self) extends AnyVal {
     
     inline def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
   }

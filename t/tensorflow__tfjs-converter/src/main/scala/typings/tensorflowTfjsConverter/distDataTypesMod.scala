@@ -37,7 +37,8 @@ object distDataTypesMod {
       __obj.asInstanceOf[TensorInfo]
     }
     
-    extension [Self <: TensorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TensorInfo] (val x: Self) extends AnyVal {
       
       inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object BatchDeleteDelegationByAssessmentResponse {
     __obj.asInstanceOf[BatchDeleteDelegationByAssessmentResponse]
   }
   
-  extension [Self <: BatchDeleteDelegationByAssessmentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteDelegationByAssessmentResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: BatchDeleteDelegationByAssessmentErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

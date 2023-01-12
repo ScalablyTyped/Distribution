@@ -67,7 +67,8 @@ object Branchkey {
     __obj.asInstanceOf[Branchkey]
   }
   
-  extension [Self <: Branchkey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Branchkey] (val x: Self) extends AnyVal {
     
     inline def setBranch_key(value: Live): Self = StObject.set(x, "branch_key", value.asInstanceOf[js.Any])
     

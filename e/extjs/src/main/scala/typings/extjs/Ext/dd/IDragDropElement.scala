@@ -73,7 +73,8 @@ object IDragDropElement {
     __obj.asInstanceOf[IDragDropElement]
   }
   
-  extension [Self <: IDragDropElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDragDropElement] (val x: Self) extends AnyVal {
     
     inline def setGetPosX(value: /* el */ js.UndefOr[HTMLElement] => Double): Self = StObject.set(x, "getPosX", js.Any.fromFunction1(value))
     

@@ -40,7 +40,8 @@ object SliderControls {
     __obj.asInstanceOf[SliderControls]
   }
   
-  extension [Self <: SliderControls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderControls] (val x: Self) extends AnyVal {
     
     inline def setDecrement(value: () => Unit): Self = StObject.set(x, "decrement", js.Any.fromFunction0(value))
     

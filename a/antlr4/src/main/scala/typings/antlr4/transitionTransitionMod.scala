@@ -103,7 +103,8 @@ object transitionTransitionMod {
       __obj.asInstanceOf[Transition]
     }
     
-    extension [Self <: Transition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transition] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: typings.antlr4.stateAtnstateMod.default): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }

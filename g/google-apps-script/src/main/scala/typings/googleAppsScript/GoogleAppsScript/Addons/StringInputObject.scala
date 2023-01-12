@@ -18,7 +18,8 @@ object StringInputObject {
     __obj.asInstanceOf[StringInputObject]
   }
   
-  extension [Self <: StringInputObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringInputObject] (val x: Self) extends AnyVal {
     
     inline def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

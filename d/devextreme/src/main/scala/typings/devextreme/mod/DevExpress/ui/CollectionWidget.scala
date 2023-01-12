@@ -30,7 +30,8 @@ object CollectionWidget {
       __obj.asInstanceOf[SelectionChangedInfo[TItem]]
     }
     
-    extension [Self <: SelectionChangedInfo[?], TItem /* <: ItemLike */](x: Self & SelectionChangedInfo[TItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionChangedInfo[?], TItem /* <: ItemLike */] (val x: Self & SelectionChangedInfo[TItem]) extends AnyVal {
       
       inline def setAddedItems(value: js.Array[TItem]): Self = StObject.set(x, "addedItems", value.asInstanceOf[js.Any])
       

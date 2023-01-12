@@ -18,7 +18,8 @@ object RotateEncryptionKeyMessage {
     __obj.asInstanceOf[RotateEncryptionKeyMessage]
   }
   
-  extension [Self <: RotateEncryptionKeyMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotateEncryptionKeyMessage] (val x: Self) extends AnyVal {
     
     inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
   }

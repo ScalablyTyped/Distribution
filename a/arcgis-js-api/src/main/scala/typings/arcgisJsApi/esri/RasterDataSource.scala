@@ -36,7 +36,8 @@ object RasterDataSource {
     __obj.asInstanceOf[RasterDataSource]
   }
   
-  extension [Self <: RasterDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterDataSource] (val x: Self) extends AnyVal {
     
     inline def setDataSourceName(value: String): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ForceTextInputFocus {
     __obj.asInstanceOf[ForceTextInputFocus]
   }
   
-  extension [Self <: ForceTextInputFocus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceTextInputFocus] (val x: Self) extends AnyVal {
     
     inline def setForceTextInputFocus(value: Boolean): Self = StObject.set(x, "forceTextInputFocus", value.asInstanceOf[js.Any])
   }

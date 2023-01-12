@@ -18,7 +18,8 @@ object StartCutoverResponse {
     __obj.asInstanceOf[StartCutoverResponse]
   }
   
-  extension [Self <: StartCutoverResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartCutoverResponse] (val x: Self) extends AnyVal {
     
     inline def setJob(value: Job): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     

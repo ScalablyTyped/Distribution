@@ -47,7 +47,8 @@ object Bucket {
     __obj.asInstanceOf[Bucket]
   }
   
-  extension [Self <: Bucket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bucket] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetChunkInput {
     __obj.asInstanceOf[GetChunkInput]
   }
   
-  extension [Self <: GetChunkInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetChunkInput] (val x: Self) extends AnyVal {
     
     inline def setChunkToken(value: String): Self = StObject.set(x, "ChunkToken", value.asInstanceOf[js.Any])
     

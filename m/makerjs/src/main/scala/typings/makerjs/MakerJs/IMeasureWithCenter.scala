@@ -33,7 +33,8 @@ object IMeasureWithCenter {
     __obj.asInstanceOf[IMeasureWithCenter]
   }
   
-  extension [Self <: IMeasureWithCenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMeasureWithCenter] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: IPoint): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

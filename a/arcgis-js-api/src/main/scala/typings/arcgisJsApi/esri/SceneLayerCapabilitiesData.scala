@@ -20,7 +20,8 @@ object SceneLayerCapabilitiesData {
     __obj.asInstanceOf[SceneLayerCapabilitiesData]
   }
   
-  extension [Self <: SceneLayerCapabilitiesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneLayerCapabilitiesData] (val x: Self) extends AnyVal {
     
     inline def setSupportsZ(value: Boolean): Self = StObject.set(x, "supportsZ", value.asInstanceOf[js.Any])
   }

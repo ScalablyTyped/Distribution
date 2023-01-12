@@ -51,7 +51,8 @@ object sourcewindowtypeWindowEve {
     __obj.asInstanceOf[sourcewindowtypeWindowEve]
   }
   
-  extension [Self <: sourcewindowtypeWindowEve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sourcewindowtypeWindowEve] (val x: Self) extends AnyVal {
     
     inline def setBetween(value: js.Tuple2[ID, ID]): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
     

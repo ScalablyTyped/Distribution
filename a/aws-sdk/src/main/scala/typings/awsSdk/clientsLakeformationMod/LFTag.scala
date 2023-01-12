@@ -23,7 +23,8 @@ object LFTag {
     __obj.asInstanceOf[LFTag]
   }
   
-  extension [Self <: LFTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LFTag] (val x: Self) extends AnyVal {
     
     inline def setTagKey(value: LFTagKey): Self = StObject.set(x, "TagKey", value.asInstanceOf[js.Any])
     

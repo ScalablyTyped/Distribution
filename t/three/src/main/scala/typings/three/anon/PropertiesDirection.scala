@@ -17,7 +17,8 @@ object PropertiesDirection {
     __obj.asInstanceOf[PropertiesDirection]
   }
   
-  extension [Self <: PropertiesDirection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertiesDirection] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: Direction): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

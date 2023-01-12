@@ -100,7 +100,8 @@ object libDommousemovetrackerMod {
       __obj.asInstanceOf[DOMMouseMoveTracker]
     }
     
-    extension [Self <: DOMMouseMoveTracker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMMouseMoveTracker] (val x: Self) extends AnyVal {
       
       inline def setCaptureMouseMoves(value: js.Object => Unit): Self = StObject.set(x, "captureMouseMoves", js.Any.fromFunction1(value))
       

@@ -27,7 +27,8 @@ object libStepsStepsItemMod {
       __obj.asInstanceOf[RenderIconParams]
     }
     
-    extension [Self <: RenderIconParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderIconParams] (val x: Self) extends AnyVal {
       
       inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object libStepsStepsItemMod {
       __obj.asInstanceOf[StepsItemProps]
     }
     
-    extension [Self <: StepsItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepsItemProps] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

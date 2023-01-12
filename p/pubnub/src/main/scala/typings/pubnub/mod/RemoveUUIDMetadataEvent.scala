@@ -20,7 +20,8 @@ object RemoveUUIDMetadataEvent {
     __obj.asInstanceOf[RemoveUUIDMetadataEvent]
   }
   
-  extension [Self <: RemoveUUIDMetadataEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveUUIDMetadataEvent] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: Type): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

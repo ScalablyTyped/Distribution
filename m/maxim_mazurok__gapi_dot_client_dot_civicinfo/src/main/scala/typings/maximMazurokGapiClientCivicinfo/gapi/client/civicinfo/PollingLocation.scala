@@ -43,7 +43,8 @@ object PollingLocation {
     __obj.asInstanceOf[PollingLocation]
   }
   
-  extension [Self <: PollingLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PollingLocation] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: SimpleAddressType): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

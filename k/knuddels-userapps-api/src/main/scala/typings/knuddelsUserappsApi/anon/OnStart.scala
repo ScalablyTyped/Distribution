@@ -21,7 +21,8 @@ object OnStart {
     __obj.asInstanceOf[OnStart]
   }
   
-  extension [Self <: OnStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnStart] (val x: Self) extends AnyVal {
     
     inline def setMaximumCount(value: Double): Self = StObject.set(x, "maximumCount", value.asInstanceOf[js.Any])
     

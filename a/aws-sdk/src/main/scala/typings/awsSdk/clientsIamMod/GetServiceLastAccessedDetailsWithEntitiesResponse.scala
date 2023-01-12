@@ -53,7 +53,8 @@ object GetServiceLastAccessedDetailsWithEntitiesResponse {
     __obj.asInstanceOf[GetServiceLastAccessedDetailsWithEntitiesResponse]
   }
   
-  extension [Self <: GetServiceLastAccessedDetailsWithEntitiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceLastAccessedDetailsWithEntitiesResponse] (val x: Self) extends AnyVal {
     
     inline def setEntityDetailsList(value: entityDetailsListType): Self = StObject.set(x, "EntityDetailsList", value.asInstanceOf[js.Any])
     

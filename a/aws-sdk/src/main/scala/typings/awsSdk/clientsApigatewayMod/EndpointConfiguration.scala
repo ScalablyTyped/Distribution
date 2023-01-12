@@ -23,7 +23,8 @@ object EndpointConfiguration {
     __obj.asInstanceOf[EndpointConfiguration]
   }
   
-  extension [Self <: EndpointConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointConfiguration] (val x: Self) extends AnyVal {
     
     inline def setTypes(value: ListOfEndpointType): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object typesMod {
       __obj.asInstanceOf[ManifestEntry]
     }
     
-    extension [Self <: ManifestEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManifestEntry] (val x: Self) extends AnyVal {
       
       inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object typesMod {
       __obj.asInstanceOf[ManifestTransformResult]
     }
     
-    extension [Self <: ManifestTransformResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManifestTransformResult] (val x: Self) extends AnyVal {
       
       inline def setManifest(value: js.Array[ManifestEntry]): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object typesMod {
       __obj.asInstanceOf[RuntimeCachingEntry]
     }
     
-    extension [Self <: RuntimeCachingEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuntimeCachingEntry] (val x: Self) extends AnyVal {
       
       inline def setHandler(value: String | RouteHandlerCallback): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
@@ -184,7 +187,8 @@ object typesMod {
       __obj.asInstanceOf[RuntimeCachingEntryOptions]
     }
     
-    extension [Self <: RuntimeCachingEntryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuntimeCachingEntryOptions] (val x: Self) extends AnyVal {
       
       inline def setBackgroundSync(value: Name): Self = StObject.set(x, "backgroundSync", value.asInstanceOf[js.Any])
       

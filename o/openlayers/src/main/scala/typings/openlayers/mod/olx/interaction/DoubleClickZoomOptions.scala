@@ -17,7 +17,8 @@ object DoubleClickZoomOptions {
     __obj.asInstanceOf[DoubleClickZoomOptions]
   }
   
-  extension [Self <: DoubleClickZoomOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoubleClickZoomOptions] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

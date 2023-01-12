@@ -23,7 +23,8 @@ object AsyncResponseDetails {
     __obj.asInstanceOf[AsyncResponseDetails]
   }
   
-  extension [Self <: AsyncResponseDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncResponseDetails] (val x: Self) extends AnyVal {
     
     inline def setErrorDetails(value: AsyncErrorDetails): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
     

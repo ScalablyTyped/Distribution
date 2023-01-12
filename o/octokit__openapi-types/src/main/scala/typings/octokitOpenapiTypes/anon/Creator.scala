@@ -62,7 +62,8 @@ object Creator {
     __obj.asInstanceOf[Creator]
   }
   
-  extension [Self <: Creator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Creator] (val x: Self) extends AnyVal {
     
     inline def setAssignee(value: String): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
     

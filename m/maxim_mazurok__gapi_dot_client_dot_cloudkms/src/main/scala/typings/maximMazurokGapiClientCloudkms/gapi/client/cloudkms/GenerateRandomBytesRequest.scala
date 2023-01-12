@@ -19,7 +19,8 @@ object GenerateRandomBytesRequest {
     __obj.asInstanceOf[GenerateRandomBytesRequest]
   }
   
-  extension [Self <: GenerateRandomBytesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateRandomBytesRequest] (val x: Self) extends AnyVal {
     
     inline def setLengthBytes(value: Double): Self = StObject.set(x, "lengthBytes", value.asInstanceOf[js.Any])
     

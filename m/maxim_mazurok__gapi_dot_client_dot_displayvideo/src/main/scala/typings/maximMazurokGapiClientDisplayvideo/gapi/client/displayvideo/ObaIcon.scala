@@ -37,7 +37,8 @@ object ObaIcon {
     __obj.asInstanceOf[ObaIcon]
   }
   
-  extension [Self <: ObaIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObaIcon] (val x: Self) extends AnyVal {
     
     inline def setClickTrackingUrl(value: String): Self = StObject.set(x, "clickTrackingUrl", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object AppNameHidden {
     __obj.asInstanceOf[AppNameHidden]
   }
   
-  extension [Self <: AppNameHidden](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppNameHidden] (val x: Self) extends AnyVal {
     
     inline def setAppNameHidden(value: Boolean): Self = StObject.set(x, "appNameHidden", value.asInstanceOf[js.Any])
     

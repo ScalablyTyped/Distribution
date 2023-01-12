@@ -33,7 +33,8 @@ object Opreturndata {
     __obj.asInstanceOf[Opreturndata]
   }
   
-  extension [Self <: Opreturndata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Opreturndata] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: scala.Unit): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

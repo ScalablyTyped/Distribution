@@ -46,7 +46,8 @@ object FieldMask {
     __obj.asInstanceOf[FieldMask]
   }
   
-  extension [Self <: FieldMask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldMask] (val x: Self) extends AnyVal {
     
     inline def setCovers(value: _FieldPath => Boolean): Self = StObject.set(x, "covers", js.Any.fromFunction1(value))
     

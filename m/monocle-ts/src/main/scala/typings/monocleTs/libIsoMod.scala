@@ -274,7 +274,8 @@ object libIsoMod {
       __obj.asInstanceOf[Iso_[S, A]]
     }
     
-    extension [Self <: Iso_[?, ?], S, A](x: Self & (Iso_[S, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Iso_[?, ?], S, A] (val x: Self & (Iso_[S, A])) extends AnyVal {
       
       inline def setGet(value: S => A): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       

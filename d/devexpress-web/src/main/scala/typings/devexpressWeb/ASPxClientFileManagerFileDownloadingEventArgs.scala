@@ -23,7 +23,8 @@ object ASPxClientFileManagerFileDownloadingEventArgs {
     __obj.asInstanceOf[ASPxClientFileManagerFileDownloadingEventArgs]
   }
   
-  extension [Self <: ASPxClientFileManagerFileDownloadingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFileManagerFileDownloadingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }

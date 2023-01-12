@@ -54,7 +54,8 @@ object TypeofCSSRule {
     __obj.asInstanceOf[TypeofCSSRule]
   }
   
-  extension [Self <: TypeofCSSRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCSSRule] (val x: Self) extends AnyVal {
     
     inline def setCHARSET_RULE(value: Double): Self = StObject.set(x, "CHARSET_RULE", value.asInstanceOf[js.Any])
     

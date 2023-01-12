@@ -75,7 +75,8 @@ object QuotaLimit {
     __obj.asInstanceOf[QuotaLimit]
   }
   
-  extension [Self <: QuotaLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuotaLimit] (val x: Self) extends AnyVal {
     
     inline def setDefaultLimit(value: String): Self = StObject.set(x, "defaultLimit", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListBucketsQueryType {
     __obj.asInstanceOf[ListBucketsQueryType]
   }
   
-  extension [Self <: ListBucketsQueryType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBucketsQueryType] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     

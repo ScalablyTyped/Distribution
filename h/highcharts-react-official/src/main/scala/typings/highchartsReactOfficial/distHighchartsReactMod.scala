@@ -101,7 +101,8 @@ object distHighchartsReactMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setAllowChartUpdate(value: Boolean): Self = StObject.set(x, "allowChartUpdate", value.asInstanceOf[js.Any])
         
@@ -160,7 +161,8 @@ object distHighchartsReactMod {
         __obj.asInstanceOf[RefObject]
       }
       
-      extension [Self <: RefObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RefObject] (val x: Self) extends AnyVal {
         
         inline def setChart(value: Chart_): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
         

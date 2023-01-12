@@ -54,7 +54,8 @@ object libUtilsFixUtilMod {
       __obj.asInstanceOf[FixedInfo]
     }
     
-    extension [Self <: FixedInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedInfo] (val x: Self) extends AnyVal {
       
       inline def setFirstFixLeft(value: Boolean): Self = StObject.set(x, "firstFixLeft", value.asInstanceOf[js.Any])
       

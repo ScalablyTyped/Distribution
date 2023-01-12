@@ -81,7 +81,8 @@ object TileInfoProperties {
     __obj.asInstanceOf[TileInfoProperties]
   }
   
-  extension [Self <: TileInfoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileInfoProperties] (val x: Self) extends AnyVal {
     
     inline def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
     

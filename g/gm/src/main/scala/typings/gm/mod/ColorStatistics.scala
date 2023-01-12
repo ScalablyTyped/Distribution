@@ -22,7 +22,8 @@ object ColorStatistics {
     __obj.asInstanceOf[ColorStatistics]
   }
   
-  extension [Self <: ColorStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorStatistics] (val x: Self) extends AnyVal {
     
     inline def setMaximum(value: String): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     

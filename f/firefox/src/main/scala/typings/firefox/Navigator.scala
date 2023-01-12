@@ -15,7 +15,8 @@ object Navigator {
     __obj.asInstanceOf[Navigator]
   }
   
-  extension [Self <: Navigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
     
     inline def setMozApps(value: Apps): Self = StObject.set(x, "mozApps", value.asInstanceOf[js.Any])
   }

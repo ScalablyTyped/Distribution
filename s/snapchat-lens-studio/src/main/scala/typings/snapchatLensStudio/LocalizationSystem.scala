@@ -70,7 +70,8 @@ object LocalizationSystem {
     __obj.asInstanceOf[LocalizationSystem]
   }
   
-  extension [Self <: LocalizationSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalizationSystem] (val x: Self) extends AnyVal {
     
     inline def setGetDateAndTimeFormatted(value: js.Date => String): Self = StObject.set(x, "getDateAndTimeFormatted", js.Any.fromFunction1(value))
     

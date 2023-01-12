@@ -537,7 +537,8 @@ object sapUiLayoutSplitterMod {
       __obj.asInstanceOf[SplitterSettings]
     }
     
-    extension [Self <: SplitterSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitterSettings] (val x: Self) extends AnyVal {
       
       inline def setContentAreas(
         value: js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

@@ -25,7 +25,8 @@ object GraphQLFieldConfig {
     __obj.asInstanceOf[GraphQLFieldConfig]
   }
   
-  extension [Self <: GraphQLFieldConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphQLFieldConfig] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: GraphQLFieldConfigArgumentMap): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

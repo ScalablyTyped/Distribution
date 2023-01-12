@@ -18,7 +18,8 @@ object ExportTableToPointInTimeOutput {
     __obj.asInstanceOf[ExportTableToPointInTimeOutput]
   }
   
-  extension [Self <: ExportTableToPointInTimeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportTableToPointInTimeOutput] (val x: Self) extends AnyVal {
     
     inline def setExportDescription(value: ExportDescription): Self = StObject.set(x, "ExportDescription", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object PersistState {
     __obj.asInstanceOf[PersistState[T]]
   }
   
-  extension [Self <: PersistState[?], T /* <: js.Object */](x: Self & PersistState[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistState[?], T /* <: js.Object */] (val x: Self & PersistState[T]) extends AnyVal {
     
     inline def setChildren(value: SettledChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

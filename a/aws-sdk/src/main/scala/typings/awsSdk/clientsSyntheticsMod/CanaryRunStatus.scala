@@ -28,7 +28,8 @@ object CanaryRunStatus {
     __obj.asInstanceOf[CanaryRunStatus]
   }
   
-  extension [Self <: CanaryRunStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanaryRunStatus] (val x: Self) extends AnyVal {
     
     inline def setState(value: CanaryRunState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

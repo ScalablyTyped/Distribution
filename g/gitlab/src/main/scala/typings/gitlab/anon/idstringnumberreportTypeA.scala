@@ -46,7 +46,8 @@ object idstringnumberreportTypeA {
     __obj.asInstanceOf[idstringnumberreportTypeA]
   }
   
-  extension [Self <: idstringnumberreportTypeA](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: idstringnumberreportTypeA] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: js.Array[String]): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

@@ -115,7 +115,8 @@ object Contact {
     __obj.asInstanceOf[Contact]
   }
   
-  extension [Self <: Contact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
     
     inline def setAssistantName(value: NullableOption[String]): Self = StObject.set(x, "assistantName", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object StopBulkDeploymentRequest {
     __obj.asInstanceOf[StopBulkDeploymentRequest]
   }
   
-  extension [Self <: StopBulkDeploymentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopBulkDeploymentRequest] (val x: Self) extends AnyVal {
     
     inline def setBulkDeploymentId(value: string): Self = StObject.set(x, "BulkDeploymentId", value.asInstanceOf[js.Any])
   }

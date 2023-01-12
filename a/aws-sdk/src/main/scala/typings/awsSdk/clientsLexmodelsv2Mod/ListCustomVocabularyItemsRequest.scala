@@ -38,7 +38,8 @@ object ListCustomVocabularyItemsRequest {
     __obj.asInstanceOf[ListCustomVocabularyItemsRequest]
   }
   
-  extension [Self <: ListCustomVocabularyItemsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCustomVocabularyItemsRequest] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     

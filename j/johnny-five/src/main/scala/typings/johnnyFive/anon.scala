@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Abbr]
     }
     
-    extension [Self <: Abbr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Abbr] (val x: Self) extends AnyVal {
       
       inline def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       

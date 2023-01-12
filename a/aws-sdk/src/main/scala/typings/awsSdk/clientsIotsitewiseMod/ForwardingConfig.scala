@@ -18,7 +18,8 @@ object ForwardingConfig {
     __obj.asInstanceOf[ForwardingConfig]
   }
   
-  extension [Self <: ForwardingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardingConfig] (val x: Self) extends AnyVal {
     
     inline def setState(value: ForwardingConfigState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

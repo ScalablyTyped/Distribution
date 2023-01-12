@@ -43,7 +43,8 @@ object Database {
     __obj.asInstanceOf[Database]
   }
   
-  extension [Self <: Database](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Database] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

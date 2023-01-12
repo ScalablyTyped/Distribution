@@ -50,7 +50,8 @@ object libPickerIndexDotnativeMod {
       __obj.asInstanceOf[PickerNativeProps]
     }
     
-    extension [Self <: PickerNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerNativeProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: IPickerStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

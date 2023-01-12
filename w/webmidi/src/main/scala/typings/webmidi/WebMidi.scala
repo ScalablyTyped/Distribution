@@ -88,7 +88,8 @@ object WebMidi {
       __obj.asInstanceOf[MIDIConnectionEventInit]
     }
     
-    extension [Self <: MIDIConnectionEventInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MIDIConnectionEventInit] (val x: Self) extends AnyVal {
       
       inline def setPort(value: MIDIPort): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
@@ -166,7 +167,8 @@ object WebMidi {
       __obj.asInstanceOf[MIDIMessageEventInit]
     }
     
-    extension [Self <: MIDIMessageEventInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MIDIMessageEventInit] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -189,7 +191,8 @@ object WebMidi {
       __obj.asInstanceOf[MIDIOptions]
     }
     
-    extension [Self <: MIDIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MIDIOptions] (val x: Self) extends AnyVal {
       
       inline def setSysex(value: Boolean): Self = StObject.set(x, "sysex", value.asInstanceOf[js.Any])
     }

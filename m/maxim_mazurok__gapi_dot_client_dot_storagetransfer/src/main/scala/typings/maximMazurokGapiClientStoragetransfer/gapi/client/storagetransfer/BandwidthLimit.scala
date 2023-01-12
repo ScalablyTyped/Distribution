@@ -16,7 +16,8 @@ object BandwidthLimit {
     __obj.asInstanceOf[BandwidthLimit]
   }
   
-  extension [Self <: BandwidthLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BandwidthLimit] (val x: Self) extends AnyVal {
     
     inline def setLimitMbps(value: String): Self = StObject.set(x, "limitMbps", value.asInstanceOf[js.Any])
     

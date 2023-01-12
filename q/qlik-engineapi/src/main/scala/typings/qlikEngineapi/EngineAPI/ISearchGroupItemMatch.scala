@@ -44,7 +44,8 @@ object ISearchGroupItemMatch {
     __obj.asInstanceOf[ISearchGroupItemMatch]
   }
   
-  extension [Self <: ISearchGroupItemMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchGroupItemMatch] (val x: Self) extends AnyVal {
     
     inline def setQAttributes(value: js.Array[ISearchAttribute]): Self = StObject.set(x, "qAttributes", value.asInstanceOf[js.Any])
     

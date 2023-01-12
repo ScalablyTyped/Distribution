@@ -38,7 +38,8 @@ object GitPullRequestStatus {
     __obj.asInstanceOf[GitPullRequestStatus]
   }
   
-  extension [Self <: GitPullRequestStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitPullRequestStatus] (val x: Self) extends AnyVal {
     
     inline def setIterationId(value: Double): Self = StObject.set(x, "iterationId", value.asInstanceOf[js.Any])
     

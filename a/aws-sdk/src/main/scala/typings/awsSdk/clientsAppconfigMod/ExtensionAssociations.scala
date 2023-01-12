@@ -23,7 +23,8 @@ object ExtensionAssociations {
     __obj.asInstanceOf[ExtensionAssociations]
   }
   
-  extension [Self <: ExtensionAssociations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionAssociations] (val x: Self) extends AnyVal {
     
     inline def setItems(value: ExtensionAssociationSummaries): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

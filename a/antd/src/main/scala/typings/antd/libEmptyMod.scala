@@ -38,7 +38,8 @@ object libEmptyMod extends Shortcut {
       __obj.asInstanceOf[EmptyProps]
     }
     
-    extension [Self <: EmptyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmptyProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object libEmptyMod extends Shortcut {
       __obj.asInstanceOf[TransferLocale]
     }
     
-    extension [Self <: TransferLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferLocale] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     }

@@ -33,7 +33,8 @@ object ParticleEmitterBoundsAlt {
     __obj.asInstanceOf[ParticleEmitterBoundsAlt]
   }
   
-  extension [Self <: ParticleEmitterBoundsAlt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticleEmitterBoundsAlt] (val x: Self) extends AnyVal {
     
     inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     

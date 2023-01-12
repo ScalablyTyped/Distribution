@@ -105,7 +105,8 @@ object MessagingOptions {
     __obj.asInstanceOf[MessagingOptions]
   }
   
-  extension [Self <: MessagingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagingOptions] (val x: Self) extends AnyVal {
     
     inline def setCollapseKey(value: String): Self = StObject.set(x, "collapseKey", value.asInstanceOf[js.Any])
     

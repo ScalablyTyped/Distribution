@@ -18,7 +18,8 @@ object GetPublicAccessBlockRequest {
     __obj.asInstanceOf[GetPublicAccessBlockRequest]
   }
   
-  extension [Self <: GetPublicAccessBlockRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPublicAccessBlockRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
   }

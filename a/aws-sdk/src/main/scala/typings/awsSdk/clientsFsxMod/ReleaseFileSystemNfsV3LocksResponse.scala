@@ -15,7 +15,8 @@ object ReleaseFileSystemNfsV3LocksResponse {
     __obj.asInstanceOf[ReleaseFileSystemNfsV3LocksResponse]
   }
   
-  extension [Self <: ReleaseFileSystemNfsV3LocksResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseFileSystemNfsV3LocksResponse] (val x: Self) extends AnyVal {
     
     inline def setFileSystem(value: FileSystem): Self = StObject.set(x, "FileSystem", value.asInstanceOf[js.Any])
     

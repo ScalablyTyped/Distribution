@@ -28,7 +28,8 @@ object FailoverState {
     __obj.asInstanceOf[FailoverState]
   }
   
-  extension [Self <: FailoverState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailoverState] (val x: Self) extends AnyVal {
     
     inline def setFromDbClusterArn(value: String): Self = StObject.set(x, "FromDbClusterArn", value.asInstanceOf[js.Any])
     

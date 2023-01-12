@@ -33,7 +33,8 @@ object GlobalAdditions {
     __obj.asInstanceOf[GlobalAdditions]
   }
   
-  extension [Self <: GlobalAdditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalAdditions] (val x: Self) extends AnyVal {
     
     inline def set__coverage__(value: CoverageMapData): Self = StObject.set(x, "__coverage__", value.asInstanceOf[js.Any])
   }

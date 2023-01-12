@@ -61,7 +61,8 @@ object OnConnectionBindInfo {
     __obj.asInstanceOf[OnConnectionBindInfo]
   }
   
-  extension [Self <: OnConnectionBindInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnConnectionBindInfo] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

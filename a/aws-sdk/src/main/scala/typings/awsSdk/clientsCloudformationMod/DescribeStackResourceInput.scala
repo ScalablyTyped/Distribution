@@ -23,7 +23,8 @@ object DescribeStackResourceInput {
     __obj.asInstanceOf[DescribeStackResourceInput]
   }
   
-  extension [Self <: DescribeStackResourceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStackResourceInput] (val x: Self) extends AnyVal {
     
     inline def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
     

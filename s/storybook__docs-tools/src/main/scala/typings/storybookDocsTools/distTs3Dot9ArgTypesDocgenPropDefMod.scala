@@ -19,7 +19,8 @@ object distTs3Dot9ArgTypesDocgenPropDefMod {
       __obj.asInstanceOf[JsDocParam]
     }
     
-    extension [Self <: JsDocParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsDocParam] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object distTs3Dot9ArgTypesDocgenPropDefMod {
       __obj.asInstanceOf[JsDocReturns]
     }
     
-    extension [Self <: JsDocReturns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsDocReturns] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object distTs3Dot9ArgTypesDocgenPropDefMod {
       __obj.asInstanceOf[JsDocTags]
     }
     
-    extension [Self <: JsDocTags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsDocTags] (val x: Self) extends AnyVal {
       
       inline def setParams(value: js.Array[JsDocParam]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -99,7 +102,8 @@ object distTs3Dot9ArgTypesDocgenPropDefMod {
       __obj.asInstanceOf[PropDef]
     }
     
-    extension [Self <: PropDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropDef] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: PropDefaultValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -140,7 +144,8 @@ object distTs3Dot9ArgTypesDocgenPropDefMod {
       __obj.asInstanceOf[PropSummaryValue]
     }
     
-    extension [Self <: PropSummaryValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropSummaryValue] (val x: Self) extends AnyVal {
       
       inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       

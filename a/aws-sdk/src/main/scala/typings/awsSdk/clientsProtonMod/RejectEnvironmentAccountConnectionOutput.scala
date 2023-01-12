@@ -18,7 +18,8 @@ object RejectEnvironmentAccountConnectionOutput {
     __obj.asInstanceOf[RejectEnvironmentAccountConnectionOutput]
   }
   
-  extension [Self <: RejectEnvironmentAccountConnectionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectEnvironmentAccountConnectionOutput] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentAccountConnection(value: EnvironmentAccountConnection): Self = StObject.set(x, "environmentAccountConnection", value.asInstanceOf[js.Any])
   }

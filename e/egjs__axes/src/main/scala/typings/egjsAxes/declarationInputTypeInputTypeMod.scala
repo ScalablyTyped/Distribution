@@ -53,7 +53,8 @@ object declarationInputTypeInputTypeMod {
       __obj.asInstanceOf[InputType]
     }
     
-    extension [Self <: InputType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputType] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: js.Array[String]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       

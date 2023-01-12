@@ -165,7 +165,8 @@ object Instance {
     __obj.asInstanceOf[Instance]
   }
   
-  extension [Self <: Instance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
     
     inline def setAdvancedMachineFeatures(value: AdvancedMachineFeatures): Self = StObject.set(x, "advancedMachineFeatures", value.asInstanceOf[js.Any])
     

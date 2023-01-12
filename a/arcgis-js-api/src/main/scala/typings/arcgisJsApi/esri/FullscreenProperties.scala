@@ -39,7 +39,8 @@ object FullscreenProperties {
     __obj.asInstanceOf[FullscreenProperties]
   }
   
-  extension [Self <: FullscreenProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullscreenProperties] (val x: Self) extends AnyVal {
     
     inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

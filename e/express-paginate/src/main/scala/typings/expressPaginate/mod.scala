@@ -188,7 +188,8 @@ object mod {
       __obj.asInstanceOf[PageElement]
     }
     
-    extension [Self <: PageElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageElement] (val x: Self) extends AnyVal {
       
       inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
@@ -221,7 +222,8 @@ object mod {
           __obj.asInstanceOf[Request]
         }
         
-        extension [Self <: Request](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
           
           inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
           

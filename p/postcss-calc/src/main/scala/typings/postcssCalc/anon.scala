@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Precision]
     }
     
-    extension [Self <: Precision](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Precision] (val x: Self) extends AnyVal {
       
       inline def setPrecision(value: Double | `false`): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Preserve]
     }
     
-    extension [Self <: Preserve](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Preserve] (val x: Self) extends AnyVal {
       
       inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       

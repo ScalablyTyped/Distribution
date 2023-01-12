@@ -17,7 +17,8 @@ object SchemaNames {
     __obj.asInstanceOf[SchemaNames]
   }
   
-  extension [Self <: SchemaNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaNames] (val x: Self) extends AnyVal {
     
     inline def setBlockName(value: String): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
     

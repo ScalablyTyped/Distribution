@@ -17,7 +17,8 @@ object IndicesModifyDataStreamAction {
     __obj.asInstanceOf[IndicesModifyDataStreamAction]
   }
   
-  extension [Self <: IndicesModifyDataStreamAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesModifyDataStreamAction] (val x: Self) extends AnyVal {
     
     inline def setAdd_backing_index(value: IndicesModifyDataStreamIndexAndDataStreamAction): Self = StObject.set(x, "add_backing_index", value.asInstanceOf[js.Any])
     

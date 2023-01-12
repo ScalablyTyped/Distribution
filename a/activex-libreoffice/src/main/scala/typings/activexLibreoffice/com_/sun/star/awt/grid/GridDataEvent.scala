@@ -45,7 +45,8 @@ object GridDataEvent {
     __obj.asInstanceOf[GridDataEvent]
   }
   
-  extension [Self <: GridDataEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridDataEvent] (val x: Self) extends AnyVal {
     
     inline def setFirstColumn(value: Double): Self = StObject.set(x, "FirstColumn", value.asInstanceOf[js.Any])
     

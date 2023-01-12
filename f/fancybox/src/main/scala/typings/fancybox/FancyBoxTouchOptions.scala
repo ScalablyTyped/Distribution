@@ -23,7 +23,8 @@ object FancyBoxTouchOptions {
     __obj.asInstanceOf[FancyBoxTouchOptions]
   }
   
-  extension [Self <: FancyBoxTouchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxTouchOptions] (val x: Self) extends AnyVal {
     
     inline def setMomentum(value: Boolean): Self = StObject.set(x, "momentum", value.asInstanceOf[js.Any])
     

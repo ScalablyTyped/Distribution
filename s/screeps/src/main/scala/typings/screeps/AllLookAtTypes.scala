@@ -60,7 +60,8 @@ object AllLookAtTypes {
     __obj.asInstanceOf[AllLookAtTypes]
   }
   
-  extension [Self <: AllLookAtTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllLookAtTypes] (val x: Self) extends AnyVal {
     
     inline def setConstructionSite(value: ConstructionSite[BuildableStructureConstant]): Self = StObject.set(x, "constructionSite", value.asInstanceOf[js.Any])
     

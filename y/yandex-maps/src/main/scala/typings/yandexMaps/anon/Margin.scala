@@ -24,7 +24,8 @@ object Margin {
     __obj.asInstanceOf[Margin]
   }
   
-  extension [Self <: Margin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Margin] (val x: Self) extends AnyVal {
     
     inline def setCss(value: CSSStyleDeclaration): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     

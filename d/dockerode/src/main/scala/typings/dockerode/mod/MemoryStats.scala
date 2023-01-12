@@ -32,7 +32,8 @@ object MemoryStats {
     __obj.asInstanceOf[MemoryStats]
   }
   
-  extension [Self <: MemoryStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryStats] (val x: Self) extends AnyVal {
     
     inline def setCommitbytes(value: Double): Self = StObject.set(x, "commitbytes", value.asInstanceOf[js.Any])
     

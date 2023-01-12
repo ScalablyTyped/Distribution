@@ -92,7 +92,8 @@ object Legend {
     __obj.asInstanceOf[Legend]
   }
   
-  extension [Self <: Legend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Legend] (val x: Self) extends AnyVal {
     
     inline def setBorderwidth(value: Double): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
     

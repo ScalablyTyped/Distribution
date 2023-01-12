@@ -37,7 +37,8 @@ object distUrlIuriMod {
       __obj.asInstanceOf[IUri]
     }
     
-    extension [Self <: IUri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUri] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePath(value: String): Self = StObject.set(x, "AbsolutePath", value.asInstanceOf[js.Any])
       

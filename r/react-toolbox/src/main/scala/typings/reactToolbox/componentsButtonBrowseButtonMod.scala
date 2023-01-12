@@ -73,7 +73,8 @@ object componentsButtonBrowseButtonMod {
       __obj.asInstanceOf[BrowseButtonProps]
     }
     
-    extension [Self <: BrowseButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowseButtonProps] (val x: Self) extends AnyVal {
       
       inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
       

@@ -390,7 +390,8 @@ object sapMPagingButtonMod {
       __obj.asInstanceOf[PagingButtonSettings]
     }
     
-    extension [Self <: PagingButtonSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagingButtonSettings] (val x: Self) extends AnyVal {
       
       inline def setCount(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

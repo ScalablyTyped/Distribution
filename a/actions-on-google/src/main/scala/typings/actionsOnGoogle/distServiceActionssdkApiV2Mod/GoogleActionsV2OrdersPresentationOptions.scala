@@ -31,7 +31,8 @@ object GoogleActionsV2OrdersPresentationOptions {
     __obj.asInstanceOf[GoogleActionsV2OrdersPresentationOptions]
   }
   
-  extension [Self <: GoogleActionsV2OrdersPresentationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2OrdersPresentationOptions] (val x: Self) extends AnyVal {
     
     inline def setCallToAction(value: String): Self = StObject.set(x, "callToAction", value.asInstanceOf[js.Any])
     

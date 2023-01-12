@@ -34,7 +34,8 @@ object CannotConvertException {
     __obj.asInstanceOf[CannotConvertException]
   }
   
-  extension [Self <: CannotConvertException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CannotConvertException] (val x: Self) extends AnyVal {
     
     inline def setArgumentIndex(value: Double): Self = StObject.set(x, "ArgumentIndex", value.asInstanceOf[js.Any])
     

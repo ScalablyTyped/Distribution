@@ -33,7 +33,8 @@ object typesWriteSegmentRequestMod {
       __obj.asInstanceOf[UnmarshalledWriteSegmentRequest]
     }
     
-    extension [Self <: UnmarshalledWriteSegmentRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledWriteSegmentRequest] (val x: Self) extends AnyVal {
       
       inline def setDimensions(value: UnmarshalledSegmentDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object typesWriteSegmentRequestMod {
       __obj.asInstanceOf[WriteSegmentRequest]
     }
     
-    extension [Self <: WriteSegmentRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteSegmentRequest] (val x: Self) extends AnyVal {
       
       inline def setDimensions(value: SegmentDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object StorageConfiguration {
     __obj.asInstanceOf[StorageConfiguration]
   }
   
-  extension [Self <: StorageConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEfs(value: EfsStorageConfiguration): Self = StObject.set(x, "efs", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object Dictkey {
     __obj.asInstanceOf[Dictkey]
   }
   
-  extension [Self <: Dictkey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
     
     inline def setGlobalData(value: Any): Self = StObject.set(x, "globalData", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object UpdateInstanceMetadataItemsResponse {
     __obj.asInstanceOf[UpdateInstanceMetadataItemsResponse]
   }
   
-  extension [Self <: UpdateInstanceMetadataItemsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateInstanceMetadataItemsResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

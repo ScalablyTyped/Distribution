@@ -18,7 +18,8 @@ object HashedMessage {
     __obj.asInstanceOf[HashedMessage]
   }
   
-  extension [Self <: HashedMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashedMessage] (val x: Self) extends AnyVal {
     
     inline def setHashAlgorithm(value: AlgorithmIdentifierSchema): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     

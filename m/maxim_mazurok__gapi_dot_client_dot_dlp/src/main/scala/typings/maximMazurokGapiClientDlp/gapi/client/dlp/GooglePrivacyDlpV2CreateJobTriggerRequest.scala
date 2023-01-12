@@ -25,7 +25,8 @@ object GooglePrivacyDlpV2CreateJobTriggerRequest {
     __obj.asInstanceOf[GooglePrivacyDlpV2CreateJobTriggerRequest]
   }
   
-  extension [Self <: GooglePrivacyDlpV2CreateJobTriggerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2CreateJobTriggerRequest] (val x: Self) extends AnyVal {
     
     inline def setJobTrigger(value: GooglePrivacyDlpV2JobTrigger): Self = StObject.set(x, "jobTrigger", value.asInstanceOf[js.Any])
     

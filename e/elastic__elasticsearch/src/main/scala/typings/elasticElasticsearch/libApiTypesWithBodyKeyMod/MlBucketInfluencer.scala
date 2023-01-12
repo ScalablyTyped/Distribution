@@ -46,7 +46,8 @@ object MlBucketInfluencer {
     __obj.asInstanceOf[MlBucketInfluencer]
   }
   
-  extension [Self <: MlBucketInfluencer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlBucketInfluencer] (val x: Self) extends AnyVal {
     
     inline def setAnomaly_score(value: double): Self = StObject.set(x, "anomaly_score", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object CreateProvisioningTemplateRequest {
     __obj.asInstanceOf[CreateProvisioningTemplateRequest]
   }
   
-  extension [Self <: CreateProvisioningTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateProvisioningTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: TemplateDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

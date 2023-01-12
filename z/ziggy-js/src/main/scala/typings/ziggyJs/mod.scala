@@ -106,7 +106,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: StringDictionary[String | Double]): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
@@ -156,7 +157,8 @@ object mod {
       __obj.asInstanceOf[Routable]
     }
     
-    extension [Self <: Routable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Routable] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -177,7 +179,8 @@ object mod {
       __obj.asInstanceOf[Route]
     }
     
-    extension [Self <: Route](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object libLowSyncMod {
       __obj.asInstanceOf[SyncAdapter[T]]
     }
     
-    extension [Self <: SyncAdapter[?], T](x: Self & SyncAdapter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncAdapter[?], T] (val x: Self & SyncAdapter[T]) extends AnyVal {
       
       inline def setRead(value: () => T | Null): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       

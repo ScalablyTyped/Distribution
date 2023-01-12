@@ -22,7 +22,8 @@ object ChannelGroupingRule {
     __obj.asInstanceOf[ChannelGroupingRule]
   }
   
-  extension [Self <: ChannelGroupingRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelGroupingRule] (val x: Self) extends AnyVal {
     
     inline def setDisjunctiveMatchStatements(value: js.Array[DisjunctiveMatchStatement]): Self = StObject.set(x, "disjunctiveMatchStatements", value.asInstanceOf[js.Any])
     

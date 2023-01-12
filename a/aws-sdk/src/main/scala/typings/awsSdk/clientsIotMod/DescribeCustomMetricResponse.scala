@@ -43,7 +43,8 @@ object DescribeCustomMetricResponse {
     __obj.asInstanceOf[DescribeCustomMetricResponse]
   }
   
-  extension [Self <: DescribeCustomMetricResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCustomMetricResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

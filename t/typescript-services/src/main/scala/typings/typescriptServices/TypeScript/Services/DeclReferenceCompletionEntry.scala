@@ -34,7 +34,8 @@ object DeclReferenceCompletionEntry {
     __obj.asInstanceOf[DeclReferenceCompletionEntry]
   }
   
-  extension [Self <: DeclReferenceCompletionEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeclReferenceCompletionEntry] (val x: Self) extends AnyVal {
     
     inline def setDecl(value: PullDecl): Self = StObject.set(x, "decl", value.asInstanceOf[js.Any])
     

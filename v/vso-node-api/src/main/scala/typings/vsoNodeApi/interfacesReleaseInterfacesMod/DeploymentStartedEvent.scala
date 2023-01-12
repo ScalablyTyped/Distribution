@@ -19,7 +19,8 @@ object DeploymentStartedEvent {
     __obj.asInstanceOf[DeploymentStartedEvent]
   }
   
-  extension [Self <: DeploymentStartedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentStartedEvent] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: ReleaseEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     

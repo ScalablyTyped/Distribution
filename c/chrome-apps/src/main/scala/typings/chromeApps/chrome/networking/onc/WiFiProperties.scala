@@ -50,7 +50,8 @@ object WiFiProperties {
     __obj.asInstanceOf[WiFiProperties[M, OF, B, S, L]]
   }
   
-  extension [Self <: WiFiProperties[?, ?, ?, ?, ?], M /* <: ManagedObject */, OF /* <: ObjectFunction */, B, S, L](x: Self & (WiFiProperties[M, OF, B, S, L])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WiFiProperties[?, ?, ?, ?, ?], M /* <: ManagedObject */, OF /* <: ObjectFunction */, B, S, L] (val x: Self & (WiFiProperties[M, OF, B, S, L])) extends AnyVal {
     
     inline def setAllowGatewayARPPolling(value: B): Self = StObject.set(x, "AllowGatewayARPPolling", value.asInstanceOf[js.Any])
     

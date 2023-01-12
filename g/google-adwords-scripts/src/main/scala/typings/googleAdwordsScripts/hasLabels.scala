@@ -19,7 +19,8 @@ object hasLabels {
     __obj.asInstanceOf[hasLabels]
   }
   
-  extension [Self <: hasLabels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: hasLabels] (val x: Self) extends AnyVal {
     
     inline def setApplyLabel(value: String => Unit): Self = StObject.set(x, "applyLabel", js.Any.fromFunction1(value))
     

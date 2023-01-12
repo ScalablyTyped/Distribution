@@ -36,7 +36,8 @@ object HttpClient {
     __obj.asInstanceOf[HttpClient]
   }
   
-  extension [Self <: HttpClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpClient] (val x: Self) extends AnyVal {
     
     inline def setHooks(value: `0`): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     

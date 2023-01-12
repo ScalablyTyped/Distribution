@@ -24,7 +24,8 @@ object GetCertificateAuthorityCs {
     __obj.asInstanceOf[GetCertificateAuthorityCs]
   }
   
-  extension [Self <: GetCertificateAuthorityCs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCertificateAuthorityCs] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

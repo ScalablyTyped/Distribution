@@ -635,7 +635,8 @@ object PropsSVGStopElementconten {
     __obj.asInstanceOf[PropsSVGStopElementconten]
   }
   
-  extension [Self <: PropsSVGStopElementconten](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGStopElementconten] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

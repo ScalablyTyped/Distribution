@@ -41,7 +41,8 @@ object PartialFlipModifier {
     __obj.asInstanceOf[PartialFlipModifier]
   }
   
-  extension [Self <: PartialFlipModifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFlipModifier] (val x: Self) extends AnyVal {
     
     inline def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

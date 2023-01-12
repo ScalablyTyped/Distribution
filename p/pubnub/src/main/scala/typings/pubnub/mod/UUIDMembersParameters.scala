@@ -25,7 +25,8 @@ object UUIDMembersParameters {
     __obj.asInstanceOf[UUIDMembersParameters]
   }
   
-  extension [Self <: UUIDMembersParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UUIDMembersParameters] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

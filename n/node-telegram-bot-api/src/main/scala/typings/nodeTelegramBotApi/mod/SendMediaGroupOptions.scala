@@ -17,7 +17,8 @@ object SendMediaGroupOptions {
     __obj.asInstanceOf[SendMediaGroupOptions]
   }
   
-  extension [Self <: SendMediaGroupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendMediaGroupOptions] (val x: Self) extends AnyVal {
     
     inline def setDisable_notification(value: Boolean): Self = StObject.set(x, "disable_notification", value.asInstanceOf[js.Any])
     

@@ -133,7 +133,8 @@ object srcGoalGoalMod {
       __obj.asInstanceOf[StatusTypes]
     }
     
-    extension [Self <: StatusTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusTypes] (val x: Self) extends AnyVal {
       
       inline def setACTIVE(value: active): Self = StObject.set(x, "ACTIVE", value.asInstanceOf[js.Any])
       

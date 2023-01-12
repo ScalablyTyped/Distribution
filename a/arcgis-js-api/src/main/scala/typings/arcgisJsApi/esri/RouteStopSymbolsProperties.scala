@@ -83,7 +83,8 @@ object RouteStopSymbolsProperties {
     __obj.asInstanceOf[RouteStopSymbolsProperties]
   }
   
-  extension [Self <: RouteStopSymbolsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteStopSymbolsProperties] (val x: Self) extends AnyVal {
     
     inline def setBreak(
       value: SimpleMarkerSymbolPropert | PictureMarkerSymbolProper | PointSymbol3DPropertiesty | CIMSymbolPropertiestypeci

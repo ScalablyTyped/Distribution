@@ -33,7 +33,8 @@ object CreateGrokClassifierRequest {
     __obj.asInstanceOf[CreateGrokClassifierRequest]
   }
   
-  extension [Self <: CreateGrokClassifierRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGrokClassifierRequest] (val x: Self) extends AnyVal {
     
     inline def setClassification(value: Classification): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
     

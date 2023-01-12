@@ -17,7 +17,8 @@ object ApplicationjsonAsync {
     __obj.asInstanceOf[ApplicationjsonAsync]
   }
   
-  extension [Self <: ApplicationjsonAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonAsync] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Async): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

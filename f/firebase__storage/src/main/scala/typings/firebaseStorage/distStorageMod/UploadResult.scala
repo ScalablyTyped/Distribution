@@ -23,7 +23,8 @@ object UploadResult {
     __obj.asInstanceOf[UploadResult]
   }
   
-  extension [Self <: UploadResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadResult] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: FullMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object EksConfiguration {
     __obj.asInstanceOf[EksConfiguration]
   }
   
-  extension [Self <: EksConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EksConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEksClusterArn(value: String): Self = StObject.set(x, "eksClusterArn", value.asInstanceOf[js.Any])
     

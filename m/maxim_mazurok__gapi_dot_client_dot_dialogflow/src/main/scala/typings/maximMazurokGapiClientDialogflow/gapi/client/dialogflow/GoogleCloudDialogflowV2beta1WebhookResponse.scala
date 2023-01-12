@@ -68,7 +68,8 @@ object GoogleCloudDialogflowV2beta1WebhookResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1WebhookResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1WebhookResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1WebhookResponse] (val x: Self) extends AnyVal {
     
     inline def setEndInteraction(value: Boolean): Self = StObject.set(x, "endInteraction", value.asInstanceOf[js.Any])
     

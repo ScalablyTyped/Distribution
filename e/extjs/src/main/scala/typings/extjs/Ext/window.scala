@@ -193,7 +193,8 @@ object window {
       __obj.asInstanceOf[typings.extjs.Ext.window.IMessageBox]
     }
     
-    extension [Self <: typings.extjs.Ext.window.IMessageBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.window.IMessageBox] (val x: Self) extends AnyVal {
       
       inline def setAlert(
         value: (/* title */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => typings.extjs.Ext.window.IMessageBox
@@ -407,7 +408,8 @@ object window {
       __obj.asInstanceOf[typings.extjs.Ext.window.IWindow]
     }
     
-    extension [Self <: typings.extjs.Ext.window.IWindow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.window.IWindow] (val x: Self) extends AnyVal {
       
       inline def setAfterCollapse(value: () => Unit): Self = StObject.set(x, "afterCollapse", js.Any.fromFunction0(value))
       

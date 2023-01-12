@@ -23,7 +23,8 @@ object ListTopicRuleDestinationsResponse {
     __obj.asInstanceOf[ListTopicRuleDestinationsResponse]
   }
   
-  extension [Self <: ListTopicRuleDestinationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTopicRuleDestinationsResponse] (val x: Self) extends AnyVal {
     
     inline def setDestinationSummaries(value: TopicRuleDestinationSummaries): Self = StObject.set(x, "destinationSummaries", value.asInstanceOf[js.Any])
     

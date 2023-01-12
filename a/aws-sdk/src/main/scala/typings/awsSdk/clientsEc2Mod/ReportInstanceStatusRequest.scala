@@ -48,7 +48,8 @@ object ReportInstanceStatusRequest {
     __obj.asInstanceOf[ReportInstanceStatusRequest]
   }
   
-  extension [Self <: ReportInstanceStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportInstanceStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

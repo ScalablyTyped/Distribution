@@ -47,7 +47,8 @@ object IRouteLeg {
     __obj.asInstanceOf[IRouteLeg]
   }
   
-  extension [Self <: IRouteLeg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRouteLeg] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

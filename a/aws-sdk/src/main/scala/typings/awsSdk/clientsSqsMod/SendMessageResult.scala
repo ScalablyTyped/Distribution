@@ -38,7 +38,8 @@ object SendMessageResult {
     __obj.asInstanceOf[SendMessageResult]
   }
   
-  extension [Self <: SendMessageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendMessageResult] (val x: Self) extends AnyVal {
     
     inline def setMD5OfMessageAttributes(value: String): Self = StObject.set(x, "MD5OfMessageAttributes", value.asInstanceOf[js.Any])
     

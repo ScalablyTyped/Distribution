@@ -19,7 +19,8 @@ object CompensationRange {
     __obj.asInstanceOf[CompensationRange]
   }
   
-  extension [Self <: CompensationRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompensationRange] (val x: Self) extends AnyVal {
     
     inline def setMaxCompensation(value: Money): Self = StObject.set(x, "maxCompensation", value.asInstanceOf[js.Any])
     

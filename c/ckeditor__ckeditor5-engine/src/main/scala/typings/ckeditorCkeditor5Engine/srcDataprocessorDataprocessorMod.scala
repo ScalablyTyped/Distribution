@@ -31,7 +31,8 @@ object srcDataprocessorDataprocessorMod {
       __obj.asInstanceOf[DataProcessor]
     }
     
-    extension [Self <: DataProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataProcessor] (val x: Self) extends AnyVal {
       
       inline def setRegisterRawContentMatcher(value: MatcherPattern => Unit): Self = StObject.set(x, "registerRawContentMatcher", js.Any.fromFunction1(value))
       

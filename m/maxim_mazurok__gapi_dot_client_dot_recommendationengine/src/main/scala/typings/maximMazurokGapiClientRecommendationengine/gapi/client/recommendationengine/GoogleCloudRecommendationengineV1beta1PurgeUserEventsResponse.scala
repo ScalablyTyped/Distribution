@@ -19,7 +19,8 @@ object GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse] (val x: Self) extends AnyVal {
     
     inline def setPurgedEventsCount(value: String): Self = StObject.set(x, "purgedEventsCount", value.asInstanceOf[js.Any])
     

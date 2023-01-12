@@ -24,7 +24,8 @@ object Rectangle {
     __obj.asInstanceOf[Rectangle]
   }
   
-  extension [Self <: Rectangle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rectangle] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

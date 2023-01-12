@@ -1952,7 +1952,8 @@ object mod {
       __obj.asInstanceOf[AsyncFireObject]
     }
     
-    extension [Self <: AsyncFireObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncFireObject] (val x: Self) extends AnyVal {
       
       inline def setAbort(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
@@ -2352,7 +2353,8 @@ object mod {
       __obj.asInstanceOf[RenderOptions]
     }
     
-    extension [Self <: RenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Record[String, Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -2484,7 +2486,8 @@ object mod {
       __obj.asInstanceOf[VueTestUtilsRenderOptions]
     }
     
-    extension [Self <: VueTestUtilsRenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTestUtilsRenderOptions] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Record[String, Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -2536,7 +2539,8 @@ object mod {
       __obj.asInstanceOf[VueTestingLibraryRenderOptions]
     }
     
-    extension [Self <: VueTestingLibraryRenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTestingLibraryRenderOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseElement(value: Element): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
       

@@ -62,7 +62,8 @@ object Bibliography {
     __obj.asInstanceOf[Bibliography]
   }
   
-  extension [Self <: Bibliography](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bibliography] (val x: Self) extends AnyVal {
     
     inline def setFields(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
   }

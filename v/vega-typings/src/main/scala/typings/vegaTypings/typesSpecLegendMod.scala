@@ -399,7 +399,8 @@ object typesSpecLegendMod {
       __obj.asInstanceOf[BaseLegend]
     }
     
-    extension [Self <: BaseLegend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseLegend] (val x: Self) extends AnyVal {
       
       inline def setAria(value: Boolean): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
@@ -682,7 +683,8 @@ object typesSpecLegendMod {
       __obj.asInstanceOf[GuideEncodeEntry[T]]
     }
     
-    extension [Self <: GuideEncodeEntry[?], T](x: Self & GuideEncodeEntry[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GuideEncodeEntry[?], T] (val x: Self & GuideEncodeEntry[T]) extends AnyVal {
       
       inline def setEnter(value: T): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
@@ -783,7 +785,8 @@ object typesSpecLegendMod {
       __obj.asInstanceOf[Legend]
     }
     
-    extension [Self <: Legend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Legend] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: Orientation): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -872,7 +875,8 @@ object typesSpecLegendMod {
       __obj.asInstanceOf[LegendEncode]
     }
     
-    extension [Self <: LegendEncode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendEncode] (val x: Self) extends AnyVal {
       
       inline def setEntries(value: GuideEncodeEntry[GroupEncodeEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       

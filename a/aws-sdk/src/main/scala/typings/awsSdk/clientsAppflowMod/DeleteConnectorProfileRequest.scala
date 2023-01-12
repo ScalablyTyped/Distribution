@@ -23,7 +23,8 @@ object DeleteConnectorProfileRequest {
     __obj.asInstanceOf[DeleteConnectorProfileRequest]
   }
   
-  extension [Self <: DeleteConnectorProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteConnectorProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
     

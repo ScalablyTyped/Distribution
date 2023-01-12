@@ -37,7 +37,8 @@ object GeolocationRequest {
     __obj.asInstanceOf[GeolocationRequest]
   }
   
-  extension [Self <: GeolocationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeolocationRequest] (val x: Self) extends AnyVal {
     
     inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     

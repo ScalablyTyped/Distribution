@@ -16,7 +16,8 @@ object PersistenceAOFOffInfo {
     __obj.asInstanceOf[PersistenceAOFOffInfo]
   }
   
-  extension [Self <: PersistenceAOFOffInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistenceAOFOffInfo] (val x: Self) extends AnyVal {
     
     inline def setAof_enabled(value: OFF): Self = StObject.set(x, "aof_enabled", value.asInstanceOf[js.Any])
   }

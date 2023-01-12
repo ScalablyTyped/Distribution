@@ -50,7 +50,8 @@ object MlCategory {
     __obj.asInstanceOf[MlCategory]
   }
   
-  extension [Self <: MlCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlCategory] (val x: Self) extends AnyVal {
     
     inline def setCategory_id(value: ulong): Self = StObject.set(x, "category_id", value.asInstanceOf[js.Any])
     

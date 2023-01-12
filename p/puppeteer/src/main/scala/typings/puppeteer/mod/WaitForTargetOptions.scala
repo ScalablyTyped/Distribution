@@ -19,7 +19,8 @@ object WaitForTargetOptions {
     __obj.asInstanceOf[WaitForTargetOptions]
   }
   
-  extension [Self <: WaitForTargetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaitForTargetOptions] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

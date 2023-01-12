@@ -40,7 +40,8 @@ object ClassMethodBase {
     __obj.asInstanceOf[ClassMethodBase]
   }
   
-  extension [Self <: ClassMethodBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassMethodBase] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: Accessibility): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

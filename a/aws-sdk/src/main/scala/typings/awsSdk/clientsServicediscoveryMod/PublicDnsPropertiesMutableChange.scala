@@ -18,7 +18,8 @@ object PublicDnsPropertiesMutableChange {
     __obj.asInstanceOf[PublicDnsPropertiesMutableChange]
   }
   
-  extension [Self <: PublicDnsPropertiesMutableChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicDnsPropertiesMutableChange] (val x: Self) extends AnyVal {
     
     inline def setSOA(value: SOAChange): Self = StObject.set(x, "SOA", value.asInstanceOf[js.Any])
   }

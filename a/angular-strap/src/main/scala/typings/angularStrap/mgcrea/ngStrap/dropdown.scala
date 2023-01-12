@@ -27,7 +27,8 @@ object dropdown {
       __obj.asInstanceOf[IDropdown]
     }
     
-    extension [Self <: IDropdown](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDropdown] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -70,7 +71,8 @@ object dropdown {
       __obj.asInstanceOf[IDropdownOptions]
     }
     
-    extension [Self <: IDropdownOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDropdownOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object dropdown {
       __obj.asInstanceOf[IDropdownProvider]
     }
     
-    extension [Self <: IDropdownProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDropdownProvider] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: IDropdownOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }

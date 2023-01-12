@@ -53,7 +53,8 @@ object TVParallaxProperties {
     __obj.asInstanceOf[TVParallaxProperties]
   }
   
-  extension [Self <: TVParallaxProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TVParallaxProperties] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

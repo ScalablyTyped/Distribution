@@ -23,7 +23,8 @@ object AudioSelector {
     __obj.asInstanceOf[AudioSelector]
   }
   
-  extension [Self <: AudioSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioSelector] (val x: Self) extends AnyVal {
     
     inline def setName(value: stringMin1): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

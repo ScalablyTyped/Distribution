@@ -43,7 +43,8 @@ object UpdatePhoneNumberRequest {
     __obj.asInstanceOf[UpdatePhoneNumberRequest]
   }
   
-  extension [Self <: UpdatePhoneNumberRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePhoneNumberRequest] (val x: Self) extends AnyVal {
     
     inline def setDeletionProtectionEnabled(value: Boolean): Self = StObject.set(x, "DeletionProtectionEnabled", value.asInstanceOf[js.Any])
     

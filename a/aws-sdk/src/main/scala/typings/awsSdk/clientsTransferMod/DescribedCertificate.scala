@@ -83,7 +83,8 @@ object DescribedCertificate {
     __obj.asInstanceOf[DescribedCertificate]
   }
   
-  extension [Self <: DescribedCertificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribedCertificate] (val x: Self) extends AnyVal {
     
     inline def setActiveDate(value: js.Date): Self = StObject.set(x, "ActiveDate", value.asInstanceOf[js.Any])
     

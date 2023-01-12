@@ -21,7 +21,8 @@ object FrameTime {
     __obj.asInstanceOf[FrameTime]
   }
   
-  extension [Self <: FrameTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameTime] (val x: Self) extends AnyVal {
     
     inline def setFrameTime(value: Double): Self = StObject.set(x, "frameTime", value.asInstanceOf[js.Any])
     

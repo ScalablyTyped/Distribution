@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[AssetTags]
     }
     
-    extension [Self <: AssetTags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssetTags] (val x: Self) extends AnyVal {
       
       inline def setAssetTags(value: Meta): Self = StObject.set(x, "assetTags", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Assets]
     }
     
-    extension [Self <: Assets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Assets] (val x: Self) extends AnyVal {
       
       inline def setAssets(value: Favicon): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[BodyTags]
     }
     
-    extension [Self <: BodyTags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyTags] (val x: Self) extends AnyVal {
       
       inline def setBodyTags(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "bodyTags", value.asInstanceOf[js.Any])
       
@@ -110,7 +113,8 @@ object anon {
       __obj.asInstanceOf[Css]
     }
     
-    extension [Self <: Css](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Css] (val x: Self) extends AnyVal {
       
       inline def setCss(value: js.Array[String]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
@@ -149,7 +153,8 @@ object anon {
       __obj.asInstanceOf[DictmetaAttributeName]
     }
     
-    extension [Self <: DictmetaAttributeName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DictmetaAttributeName] (val x: Self) extends AnyVal {
       
       inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
@@ -178,7 +183,8 @@ object anon {
       __obj.asInstanceOf[Favicon]
     }
     
-    extension [Self <: Favicon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Favicon] (val x: Self) extends AnyVal {
       
       inline def setCss(value: js.Array[String]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
@@ -215,7 +221,8 @@ object anon {
       __obj.asInstanceOf[Files]
     }
     
-    extension [Self <: Files](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Files] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: Css): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -250,7 +257,8 @@ object anon {
       __obj.asInstanceOf[HeadTags]
     }
     
-    extension [Self <: HeadTags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadTags] (val x: Self) extends AnyVal {
       
       inline def setBodyTags(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "bodyTags", value.asInstanceOf[js.Any])
       
@@ -293,7 +301,8 @@ object anon {
       __obj.asInstanceOf[Html]
     }
     
-    extension [Self <: Html](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
       
       inline def setBodyTags(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "bodyTags", value.asInstanceOf[js.Any])
       
@@ -326,7 +335,8 @@ object anon {
       __obj.asInstanceOf[Meta]
     }
     
-    extension [Self <: Meta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
@@ -357,7 +367,8 @@ object anon {
       __obj.asInstanceOf[OutputName]
     }
     
-    extension [Self <: OutputName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputName] (val x: Self) extends AnyVal {
       
       inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -380,7 +391,8 @@ object anon {
       __obj.asInstanceOf[Plugin]
     }
     
-    extension [Self <: Plugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
       
       inline def setOutputName(value: String): Self = StObject.set(x, "outputName", value.asInstanceOf[js.Any])
       

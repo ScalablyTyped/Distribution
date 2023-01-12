@@ -24,7 +24,8 @@ object ChannelsClockRateMediaTypeName {
     __obj.asInstanceOf[ChannelsClockRateMediaTypeName]
   }
   
-  extension [Self <: ChannelsClockRateMediaTypeName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelsClockRateMediaTypeName] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: typings.rtpParser.rtpParserInts.`1`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

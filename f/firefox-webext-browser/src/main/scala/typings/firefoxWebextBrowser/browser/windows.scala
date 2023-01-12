@@ -74,7 +74,8 @@ object windows {
       __obj.asInstanceOf[CreateCreateData]
     }
     
-    extension [Self <: CreateCreateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateCreateData] (val x: Self) extends AnyVal {
       
       inline def setAllowScriptsToClose(value: Boolean): Self = StObject.set(x, "allowScriptsToClose", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object windows {
       __obj.asInstanceOf[GetAllGetInfo]
     }
     
-    extension [Self <: GetAllGetInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAllGetInfo] (val x: Self) extends AnyVal {
       
       inline def setPopulate(value: Boolean): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
       
@@ -211,7 +213,8 @@ object windows {
       __obj.asInstanceOf[GetInfo]
     }
     
-    extension [Self <: GetInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetInfo] (val x: Self) extends AnyVal {
       
       inline def setPopulate(value: Boolean): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
       
@@ -268,7 +271,8 @@ object windows {
       __obj.asInstanceOf[UpdateUpdateInfo]
     }
     
-    extension [Self <: UpdateUpdateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateUpdateInfo] (val x: Self) extends AnyVal {
       
       inline def setDrawAttention(value: Boolean): Self = StObject.set(x, "drawAttention", value.asInstanceOf[js.Any])
       
@@ -362,7 +366,8 @@ object windows {
       __obj.asInstanceOf[Window]
     }
     
-    extension [Self <: Window](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
       
       inline def setAlwaysOnTop(value: Boolean): Self = StObject.set(x, "alwaysOnTop", value.asInstanceOf[js.Any])
       

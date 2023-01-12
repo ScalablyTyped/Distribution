@@ -16,7 +16,8 @@ object KnockoutStatic {
     __obj.asInstanceOf[KnockoutStatic]
   }
   
-  extension [Self <: KnockoutStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutStatic] (val x: Self) extends AnyVal {
     
     inline def setSecureBindingsProvider(value: Instantiable): Self = StObject.set(x, "secureBindingsProvider", value.asInstanceOf[js.Any])
   }

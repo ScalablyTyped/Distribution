@@ -42,7 +42,8 @@ object ChartParallelAxesGridOptions {
     __obj.asInstanceOf[ChartParallelAxesGridOptions]
   }
   
-  extension [Self <: ChartParallelAxesGridOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartParallelAxesGridOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

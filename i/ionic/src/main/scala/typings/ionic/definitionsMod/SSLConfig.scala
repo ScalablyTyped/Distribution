@@ -19,7 +19,8 @@ object SSLConfig {
     __obj.asInstanceOf[SSLConfig]
   }
   
-  extension [Self <: SSLConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSLConfig] (val x: Self) extends AnyVal {
     
     inline def setCafile(value: String | js.Array[String]): Self = StObject.set(x, "cafile", value.asInstanceOf[js.Any])
     

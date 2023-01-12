@@ -18,7 +18,8 @@ object RedshiftRetryOptions {
     __obj.asInstanceOf[RedshiftRetryOptions]
   }
   
-  extension [Self <: RedshiftRetryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedshiftRetryOptions] (val x: Self) extends AnyVal {
     
     inline def setDurationInSeconds(value: RedshiftRetryDurationInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
     

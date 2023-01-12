@@ -28,7 +28,8 @@ object DescribeAffectedAccountsForOrganizationRequest {
     __obj.asInstanceOf[DescribeAffectedAccountsForOrganizationRequest]
   }
   
-  extension [Self <: DescribeAffectedAccountsForOrganizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAffectedAccountsForOrganizationRequest] (val x: Self) extends AnyVal {
     
     inline def setEventArn(value: eventArn): Self = StObject.set(x, "eventArn", value.asInstanceOf[js.Any])
     

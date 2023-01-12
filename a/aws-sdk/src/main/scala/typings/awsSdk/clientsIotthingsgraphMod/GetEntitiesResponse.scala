@@ -18,7 +18,8 @@ object GetEntitiesResponse {
     __obj.asInstanceOf[GetEntitiesResponse]
   }
   
-  extension [Self <: GetEntitiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEntitiesResponse] (val x: Self) extends AnyVal {
     
     inline def setDescriptions(value: EntityDescriptions): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     

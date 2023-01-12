@@ -19,7 +19,8 @@ object RootNodeName {
     __obj.asInstanceOf[RootNodeName]
   }
   
-  extension [Self <: RootNodeName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootNodeName] (val x: Self) extends AnyVal {
     
     inline def setComponentProperty(value: String): Self = StObject.set(x, "componentProperty", value.asInstanceOf[js.Any])
     

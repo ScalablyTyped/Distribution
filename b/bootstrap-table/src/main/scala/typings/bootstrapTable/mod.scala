@@ -108,7 +108,8 @@ object mod {
       __obj.asInstanceOf[BootstrapTableColumn]
     }
     
-    extension [Self <: BootstrapTableColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootstrapTableColumn] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: Any): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -399,7 +400,8 @@ object mod {
       __obj.asInstanceOf[BootstrapTableEvents]
     }
     
-    extension [Self <: BootstrapTableEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootstrapTableEvents] (val x: Self) extends AnyVal {
       
       inline def setAllDotbsDottable(value: String): Self = StObject.set(x, "all.bs.table", value.asInstanceOf[js.Any])
       
@@ -494,7 +496,8 @@ object mod {
       __obj.asInstanceOf[BootstrapTableIcons]
     }
     
-    extension [Self <: BootstrapTableIcons](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootstrapTableIcons] (val x: Self) extends AnyVal {
       
       inline def setAutoRefresh(value: String): Self = StObject.set(x, "autoRefresh", value.asInstanceOf[js.Any])
       
@@ -603,7 +606,8 @@ object mod {
       __obj.asInstanceOf[BootstrapTableLocale]
     }
     
-    extension [Self <: BootstrapTableLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootstrapTableLocale] (val x: Self) extends AnyVal {
       
       inline def setFormatAllRows(value: () => String): Self = StObject.set(x, "formatAllRows", js.Any.fromFunction0(value))
       
@@ -1008,7 +1012,8 @@ object mod {
       __obj.asInstanceOf[BootstrapTableOptions]
     }
     
-    extension [Self <: BootstrapTableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootstrapTableOptions] (val x: Self) extends AnyVal {
       
       inline def setAjax(value: /* params */ BootstrapAjaxParams => Any): Self = StObject.set(x, "ajax", js.Any.fromFunction1(value))
       

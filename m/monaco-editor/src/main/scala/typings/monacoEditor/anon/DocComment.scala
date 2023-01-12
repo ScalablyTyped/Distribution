@@ -16,7 +16,8 @@ object DocComment {
     __obj.asInstanceOf[DocComment]
   }
   
-  extension [Self <: DocComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocComment] (val x: Self) extends AnyVal {
     
     inline def setDocComment(value: IDocComment): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
     

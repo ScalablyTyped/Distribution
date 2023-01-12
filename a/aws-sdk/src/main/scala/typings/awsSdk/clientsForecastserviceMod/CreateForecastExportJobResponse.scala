@@ -18,7 +18,8 @@ object CreateForecastExportJobResponse {
     __obj.asInstanceOf[CreateForecastExportJobResponse]
   }
   
-  extension [Self <: CreateForecastExportJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateForecastExportJobResponse] (val x: Self) extends AnyVal {
     
     inline def setForecastExportJobArn(value: Arn): Self = StObject.set(x, "ForecastExportJobArn", value.asInstanceOf[js.Any])
     

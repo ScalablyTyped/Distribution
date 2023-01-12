@@ -23,7 +23,8 @@ object IgGridAppendRowsOnDemandMethods {
     __obj.asInstanceOf[IgGridAppendRowsOnDemandMethods]
   }
   
-  extension [Self <: IgGridAppendRowsOnDemandMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridAppendRowsOnDemandMethods] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

@@ -37,7 +37,8 @@ object libComponentsAnnotationReactElementComponentMod {
       __obj.asInstanceOf[ReactElementAnnotationCfg]
     }
     
-    extension [Self <: ReactElementAnnotationCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactElementAnnotationCfg] (val x: Self) extends AnyVal {
       
       inline def setAlignX(value: left | middle | right): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
       

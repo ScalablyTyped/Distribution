@@ -27,7 +27,8 @@ object PickImplinvalidContextPar {
     __obj.asInstanceOf[PickImplinvalidContextPar]
   }
   
-  extension [Self <: PickImplinvalidContextPar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplinvalidContextPar] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

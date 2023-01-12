@@ -152,7 +152,8 @@ object DrawPage {
     __obj.asInstanceOf[DrawPage]
   }
   
-  extension [Self <: DrawPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawPage] (val x: Self) extends AnyVal {
     
     inline def setChange(value: Double): Self = StObject.set(x, "Change", value.asInstanceOf[js.Any])
     

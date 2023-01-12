@@ -19,7 +19,8 @@ object GroupClientData {
     __obj.asInstanceOf[GroupClientData]
   }
   
-  extension [Self <: GroupClientData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupClientData] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object TextDocumentContentChangeEvent {
     __obj.asInstanceOf[TextDocumentContentChangeEvent]
   }
   
-  extension [Self <: TextDocumentContentChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDocumentContentChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

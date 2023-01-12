@@ -32,7 +32,8 @@ object Trie {
     __obj.asInstanceOf[Trie]
   }
   
-  extension [Self <: Trie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Trie] (val x: Self) extends AnyVal {
     
     inline def setAddString(value: String => Boolean): Self = StObject.set(x, "addString", js.Any.fromFunction1(value))
     

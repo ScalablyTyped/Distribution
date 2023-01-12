@@ -25,7 +25,8 @@ object GanttMessagesViews {
     __obj.asInstanceOf[GanttMessagesViews]
   }
   
-  extension [Self <: GanttMessagesViews](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttMessagesViews] (val x: Self) extends AnyVal {
     
     inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

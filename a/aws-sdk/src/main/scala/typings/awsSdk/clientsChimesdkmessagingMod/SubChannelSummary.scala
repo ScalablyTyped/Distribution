@@ -23,7 +23,8 @@ object SubChannelSummary {
     __obj.asInstanceOf[SubChannelSummary]
   }
   
-  extension [Self <: SubChannelSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubChannelSummary] (val x: Self) extends AnyVal {
     
     inline def setMembershipCount(value: MembershipCount): Self = StObject.set(x, "MembershipCount", value.asInstanceOf[js.Any])
     

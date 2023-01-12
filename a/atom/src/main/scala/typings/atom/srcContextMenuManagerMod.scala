@@ -71,7 +71,8 @@ object srcContextMenuManagerMod {
       __obj.asInstanceOf[ContextMenuItemOptions]
     }
     
-    extension [Self <: ContextMenuItemOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuItemOptions] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object srcContextMenuManagerMod {
       __obj.asInstanceOf[ContextMenuManager]
     }
     
-    extension [Self <: ContextMenuManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuManager] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: StringDictionary[js.Array[ContextMenuOptions]] => Disposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     }

@@ -20,7 +20,8 @@ object BuilderConfigObject {
     __obj.asInstanceOf[BuilderConfigObject]
   }
   
-  extension [Self <: BuilderConfigObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuilderConfigObject] (val x: Self) extends AnyVal {
     
     inline def setName(value: BuilderName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

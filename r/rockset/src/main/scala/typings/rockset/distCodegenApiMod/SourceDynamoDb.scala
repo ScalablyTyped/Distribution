@@ -41,7 +41,8 @@ object SourceDynamoDb {
     __obj.asInstanceOf[SourceDynamoDb]
   }
   
-  extension [Self <: SourceDynamoDb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceDynamoDb] (val x: Self) extends AnyVal {
     
     inline def setAws_region(value: String): Self = StObject.set(x, "aws_region", value.asInstanceOf[js.Any])
     

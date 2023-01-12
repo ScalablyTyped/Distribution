@@ -17,7 +17,8 @@ object IInlineStyle {
     __obj.asInstanceOf[IInlineStyle[Props]]
   }
   
-  extension [Self <: IInlineStyle[?], Props](x: Self & IInlineStyle[Props]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInlineStyle[?], Props] (val x: Self & IInlineStyle[Props]) extends AnyVal {
     
     inline def setGenerateStyleObject(value: js.Object => js.Object): Self = StObject.set(x, "generateStyleObject", js.Any.fromFunction1(value))
     

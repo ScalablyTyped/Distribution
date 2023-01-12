@@ -42,7 +42,8 @@ object SupplyRequestParameter {
     __obj.asInstanceOf[SupplyRequestParameter]
   }
   
-  extension [Self <: SupplyRequestParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupplyRequestParameter] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object ComponentTargetInfo {
     __obj.asInstanceOf[ComponentTargetInfo]
   }
   
-  extension [Self <: ComponentTargetInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentTargetInfo] (val x: Self) extends AnyVal {
     
     inline def setComponentTargetInfo(value: js.Object): Self = StObject.set(x, "componentTargetInfo", value.asInstanceOf[js.Any])
     

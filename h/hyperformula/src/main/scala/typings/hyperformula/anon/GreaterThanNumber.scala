@@ -18,7 +18,8 @@ object GreaterThanNumber {
     __obj.asInstanceOf[GreaterThanNumber]
   }
   
-  extension [Self <: GreaterThanNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GreaterThanNumber] (val x: Self) extends AnyVal {
     
     inline def setArgumentType(value: ArgumentTypes): Self = StObject.set(x, "argumentType", value.asInstanceOf[js.Any])
     

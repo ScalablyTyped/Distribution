@@ -41,7 +41,8 @@ object WorkerHealthReport {
     __obj.asInstanceOf[WorkerHealthReport]
   }
   
-  extension [Self <: WorkerHealthReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerHealthReport] (val x: Self) extends AnyVal {
     
     inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object examplesJsmNodesCoreNodeParserMod {
       __obj.asInstanceOf[NodeParser]
     }
     
-    extension [Self <: NodeParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeParser] (val x: Self) extends AnyVal {
       
       inline def setParseFunction(value: String => typings.three.examplesJsmNodesCoreNodeMod.default): Self = StObject.set(x, "parseFunction", js.Any.fromFunction1(value))
     }

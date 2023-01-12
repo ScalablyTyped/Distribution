@@ -25,7 +25,8 @@ object distOverlaySrcUseOverlayFocusRingMod {
       __obj.asInstanceOf[UseOverlayFocusRingProps]
     }
     
-    extension [Self <: UseOverlayFocusRingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseOverlayFocusRingProps] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       

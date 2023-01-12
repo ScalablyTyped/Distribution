@@ -21,7 +21,8 @@ object IVector4Like {
     __obj.asInstanceOf[IVector4Like]
   }
   
-  extension [Self <: IVector4Like](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVector4Like] (val x: Self) extends AnyVal {
     
     inline def setW(value: float): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     

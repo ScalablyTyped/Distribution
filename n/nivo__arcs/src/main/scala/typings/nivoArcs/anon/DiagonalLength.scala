@@ -42,7 +42,8 @@ object DiagonalLength {
     __obj.asInstanceOf[DiagonalLength[Datum]]
   }
   
-  extension [Self <: DiagonalLength[?], Datum /* <: DatumWithArcAndColor */](x: Self & DiagonalLength[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagonalLength[?], Datum /* <: DatumWithArcAndColor */] (val x: Self & DiagonalLength[Datum]) extends AnyVal {
     
     inline def setData(value: js.Array[Datum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

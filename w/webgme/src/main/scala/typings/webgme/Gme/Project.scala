@@ -25,7 +25,8 @@ object Project {
     __obj.asInstanceOf[Project]
   }
   
-  extension [Self <: Project](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Project] (val x: Self) extends AnyVal {
     
     inline def setBranches(value: StringDictionary[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object ThreatAssessmentRequest {
     __obj.asInstanceOf[ThreatAssessmentRequest]
   }
   
-  extension [Self <: ThreatAssessmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreatAssessmentRequest] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: ThreatCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

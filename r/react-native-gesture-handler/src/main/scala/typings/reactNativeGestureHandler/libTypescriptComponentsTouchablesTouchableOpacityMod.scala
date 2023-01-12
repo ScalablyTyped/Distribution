@@ -38,7 +38,8 @@ object libTypescriptComponentsTouchablesTouchableOpacityMod {
       __obj.asInstanceOf[GHTouchableOpacityProps]
     }
     
-    extension [Self <: GHTouchableOpacityProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GHTouchableOpacityProps] (val x: Self) extends AnyVal {
       
       inline def setUseNativeAnimations(value: Boolean): Self = StObject.set(x, "useNativeAnimations", value.asInstanceOf[js.Any])
       

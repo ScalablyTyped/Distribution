@@ -18,7 +18,8 @@ object ProcessorConfiguration {
     __obj.asInstanceOf[ProcessorConfiguration]
   }
   
-  extension [Self <: ProcessorConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessorConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLambda(value: LambdaConfiguration): Self = StObject.set(x, "Lambda", value.asInstanceOf[js.Any])
   }

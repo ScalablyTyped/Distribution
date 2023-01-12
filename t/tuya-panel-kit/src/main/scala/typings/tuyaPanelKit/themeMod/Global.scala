@@ -41,7 +41,8 @@ object Global {
     __obj.asInstanceOf[Global]
   }
   
-  extension [Self <: Global](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: BackgroundProps): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

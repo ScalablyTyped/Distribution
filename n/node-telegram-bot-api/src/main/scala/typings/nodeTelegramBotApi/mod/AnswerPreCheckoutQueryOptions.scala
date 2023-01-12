@@ -15,7 +15,8 @@ object AnswerPreCheckoutQueryOptions {
     __obj.asInstanceOf[AnswerPreCheckoutQueryOptions]
   }
   
-  extension [Self <: AnswerPreCheckoutQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnswerPreCheckoutQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     

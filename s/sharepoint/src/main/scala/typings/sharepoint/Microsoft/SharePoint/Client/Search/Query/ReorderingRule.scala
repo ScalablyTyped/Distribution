@@ -42,7 +42,8 @@ object ReorderingRule {
     __obj.asInstanceOf[ReorderingRule]
   }
   
-  extension [Self <: ReorderingRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReorderingRule] (val x: Self) extends AnyVal {
     
     inline def setGet_boost(value: () => Double): Self = StObject.set(x, "get_boost", js.Any.fromFunction0(value))
     

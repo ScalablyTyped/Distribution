@@ -18,7 +18,8 @@ object CreateTransitGatewayPeeringAttachmentRequestOptions {
     __obj.asInstanceOf[CreateTransitGatewayPeeringAttachmentRequestOptions]
   }
   
-  extension [Self <: CreateTransitGatewayPeeringAttachmentRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTransitGatewayPeeringAttachmentRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setDynamicRouting(value: DynamicRoutingValue): Self = StObject.set(x, "DynamicRouting", value.asInstanceOf[js.Any])
     

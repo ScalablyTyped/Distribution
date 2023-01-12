@@ -18,7 +18,8 @@ object PutApprovalResultOutput {
     __obj.asInstanceOf[PutApprovalResultOutput]
   }
   
-  extension [Self <: PutApprovalResultOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutApprovalResultOutput] (val x: Self) extends AnyVal {
     
     inline def setApprovedAt(value: js.Date): Self = StObject.set(x, "approvedAt", value.asInstanceOf[js.Any])
     

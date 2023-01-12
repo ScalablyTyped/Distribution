@@ -103,7 +103,8 @@ object RecoveryPointByBackupVault {
     __obj.asInstanceOf[RecoveryPointByBackupVault]
   }
   
-  extension [Self <: RecoveryPointByBackupVault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecoveryPointByBackupVault] (val x: Self) extends AnyVal {
     
     inline def setBackupSizeInBytes(value: Long_): Self = StObject.set(x, "BackupSizeInBytes", value.asInstanceOf[js.Any])
     

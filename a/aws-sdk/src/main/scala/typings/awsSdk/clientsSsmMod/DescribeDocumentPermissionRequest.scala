@@ -33,7 +33,8 @@ object DescribeDocumentPermissionRequest {
     __obj.asInstanceOf[DescribeDocumentPermissionRequest]
   }
   
-  extension [Self <: DescribeDocumentPermissionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDocumentPermissionRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: DocumentPermissionMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

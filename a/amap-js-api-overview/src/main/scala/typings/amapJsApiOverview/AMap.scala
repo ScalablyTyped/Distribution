@@ -76,7 +76,8 @@ object AMap {
         __obj.asInstanceOf[EventMap]
       }
       
-      extension [Self <: EventMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
         
         inline def setClose(value: Event_[close, Unit]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
         
@@ -112,7 +113,8 @@ object AMap {
         __obj.asInstanceOf[Options[L]]
       }
       
-      extension [Self <: Options[?], L /* <: TileLayer */](x: Self & Options[L]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options[?], L /* <: TileLayer */] (val x: Self & Options[L]) extends AnyVal {
         
         inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
         

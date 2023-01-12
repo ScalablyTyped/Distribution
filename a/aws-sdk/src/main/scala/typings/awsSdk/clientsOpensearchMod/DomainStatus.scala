@@ -138,7 +138,8 @@ object DomainStatus {
     __obj.asInstanceOf[DomainStatus]
   }
   
-  extension [Self <: DomainStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainStatus] (val x: Self) extends AnyVal {
     
     inline def setARN(value: ARN): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

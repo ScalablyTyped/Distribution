@@ -28,7 +28,8 @@ object TimerEventDefinition {
     __obj.asInstanceOf[TimerEventDefinition]
   }
   
-  extension [Self <: TimerEventDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimerEventDefinition] (val x: Self) extends AnyVal {
     
     inline def setTimeCycle(value: Expression): Self = StObject.set(x, "timeCycle", value.asInstanceOf[js.Any])
     

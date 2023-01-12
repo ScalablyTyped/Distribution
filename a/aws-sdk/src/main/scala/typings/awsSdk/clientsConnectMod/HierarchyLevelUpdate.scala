@@ -18,7 +18,8 @@ object HierarchyLevelUpdate {
     __obj.asInstanceOf[HierarchyLevelUpdate]
   }
   
-  extension [Self <: HierarchyLevelUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HierarchyLevelUpdate] (val x: Self) extends AnyVal {
     
     inline def setName(value: HierarchyLevelName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

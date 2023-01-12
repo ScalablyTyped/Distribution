@@ -18,7 +18,8 @@ object AuthenticationMethodConfiguration {
     __obj.asInstanceOf[AuthenticationMethodConfiguration]
   }
   
-  extension [Self <: AuthenticationMethodConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationMethodConfiguration] (val x: Self) extends AnyVal {
     
     inline def setState(value: NullableOption[AuthenticationMethodState]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

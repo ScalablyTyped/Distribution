@@ -18,7 +18,8 @@ object ChatMessageMentionedIdentitySet {
     __obj.asInstanceOf[ChatMessageMentionedIdentitySet]
   }
   
-  extension [Self <: ChatMessageMentionedIdentitySet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMessageMentionedIdentitySet] (val x: Self) extends AnyVal {
     
     inline def setConversation(value: NullableOption[TeamworkConversationIdentity]): Self = StObject.set(x, "conversation", value.asInstanceOf[js.Any])
     

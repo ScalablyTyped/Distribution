@@ -22,7 +22,8 @@ object ChangeStreamDropIndexDocument {
     __obj.asInstanceOf[ChangeStreamDropIndexDocument]
   }
   
-  extension [Self <: ChangeStreamDropIndexDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamDropIndexDocument] (val x: Self) extends AnyVal {
     
     inline def setOperationType(value: dropIndexes): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
   }

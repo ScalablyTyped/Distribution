@@ -46,7 +46,8 @@ object JdbcParameterMetaData {
     __obj.asInstanceOf[JdbcParameterMetaData]
   }
   
-  extension [Self <: JdbcParameterMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JdbcParameterMetaData] (val x: Self) extends AnyVal {
     
     inline def setGetParameterClassName(value: Integer => String): Self = StObject.set(x, "getParameterClassName", js.Any.fromFunction1(value))
     

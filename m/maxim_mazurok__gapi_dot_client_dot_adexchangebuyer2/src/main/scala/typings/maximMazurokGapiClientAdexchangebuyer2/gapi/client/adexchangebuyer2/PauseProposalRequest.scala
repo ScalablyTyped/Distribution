@@ -16,7 +16,8 @@ object PauseProposalRequest {
     __obj.asInstanceOf[PauseProposalRequest]
   }
   
-  extension [Self <: PauseProposalRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PauseProposalRequest] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

@@ -92,7 +92,8 @@ object anon {
       __obj.asInstanceOf[Edges]
     }
     
-    extension [Self <: Edges](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Edges] (val x: Self) extends AnyVal {
       
       inline def setEdges(value: js.Array[Any]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
@@ -135,7 +136,8 @@ object anon {
       __obj.asInstanceOf[GEO]
     }
     
-    extension [Self <: GEO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GEO] (val x: Self) extends AnyVal {
       
       inline def setGEO(value: String): Self = StObject.set(x, "GEO", value.asInstanceOf[js.Any])
       
@@ -169,7 +171,8 @@ object anon {
       __obj.asInstanceOf[Type[T]]
     }
     
-    extension [Self <: Type[?], T /* <: filter | map | pick | rename | `rename-fields` | reverse | default | sort | sortBy | `sort-by` | subset | partition | group | groups | fold | `fill-rows` | fillRows | impute | aggregate | summary | percent | proportion | regression | kernelDotdensity | `kernel-smoothDotdensity` | kernelDotregression | `kernel-smoothDotregression` | binDothistogram | binDotdot | binDothexagon | binDothex | hexbin | binDotquantile | binDotrectangle | binDotrect | treemap | hierarchyDottreemap | adjacency | hierarchyDotpartition | voronoi | diagramDotvoronoi | diagramDotsankey | sankey | diagramDotarc | arc | geoDotregion | geoDotprojection | geoDotcentroid | `tag-cloud` | `word-cloud` */](x: Self & Type[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type[?], T /* <: filter | map | pick | rename | `rename-fields` | reverse | default | sort | sortBy | `sort-by` | subset | partition | group | groups | fold | `fill-rows` | fillRows | impute | aggregate | summary | percent | proportion | regression | kernelDotdensity | `kernel-smoothDotdensity` | kernelDotregression | `kernel-smoothDotregression` | binDothistogram | binDotdot | binDothexagon | binDothex | hexbin | binDotquantile | binDotrectangle | binDotrect | treemap | hierarchyDottreemap | adjacency | hierarchyDotpartition | voronoi | diagramDotvoronoi | diagramDotsankey | sankey | diagramDotarc | arc | geoDotregion | geoDotprojection | geoDotcentroid | `tag-cloud` | `word-cloud` */] (val x: Self & Type[T]) extends AnyVal {
       
       inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -187,7 +190,8 @@ object anon {
       __obj.asInstanceOf[TypeT[T]]
     }
     
-    extension [Self <: TypeT[?], T /* <: csv | tsv | dsv | graph | diagram | hex | hexjson_ | `hex-json` | HexJSON | geo | geojson_ | GeoJSON | hierarchy | tree | topojson_ | TopoJSON */](x: Self & TypeT[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeT[?], T /* <: csv | tsv | dsv | graph | diagram | hex | hexjson_ | `hex-json` | HexJSON | geo | geojson_ | GeoJSON | hierarchy | tree | topojson_ | TopoJSON */] (val x: Self & TypeT[T]) extends AnyVal {
       
       inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

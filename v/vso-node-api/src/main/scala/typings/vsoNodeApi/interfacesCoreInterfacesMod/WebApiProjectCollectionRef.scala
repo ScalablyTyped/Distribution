@@ -33,7 +33,8 @@ object WebApiProjectCollectionRef {
     __obj.asInstanceOf[WebApiProjectCollectionRef]
   }
   
-  extension [Self <: WebApiProjectCollectionRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebApiProjectCollectionRef] (val x: Self) extends AnyVal {
     
     inline def setCollectionUrl(value: String): Self = StObject.set(x, "collectionUrl", value.asInstanceOf[js.Any])
     

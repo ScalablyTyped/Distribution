@@ -47,7 +47,8 @@ object ParagraphTextValidationBuilder {
     __obj.asInstanceOf[ParagraphTextValidationBuilder]
   }
   
-  extension [Self <: ParagraphTextValidationBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphTextValidationBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => ParagraphTextValidation): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

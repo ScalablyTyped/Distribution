@@ -36,7 +36,8 @@ object TwitterIntentEventData {
     __obj.asInstanceOf[TwitterIntentEventData]
   }
   
-  extension [Self <: TwitterIntentEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TwitterIntentEventData] (val x: Self) extends AnyVal {
     
     inline def setScreen_name(value: String): Self = StObject.set(x, "screen_name", value.asInstanceOf[js.Any])
     

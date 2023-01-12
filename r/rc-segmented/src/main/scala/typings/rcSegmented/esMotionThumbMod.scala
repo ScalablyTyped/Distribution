@@ -48,7 +48,8 @@ object esMotionThumbMod {
       __obj.asInstanceOf[MotionThumbInterface]
     }
     
-    extension [Self <: MotionThumbInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MotionThumbInterface] (val x: Self) extends AnyVal {
       
       inline def setContainerRef(value: RefObject[HTMLDivElement]): Self = StObject.set(x, "containerRef", value.asInstanceOf[js.Any])
       

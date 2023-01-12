@@ -366,7 +366,8 @@ object testUtilsMod {
       __obj.asInstanceOf[DebugPromiseLike]
     }
     
-    extension [Self <: DebugPromiseLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebugPromiseLike] (val x: Self) extends AnyVal {
       
       inline def setThen(
         value: (js.Function1[/* value */ scala.Nothing, scala.Nothing], js.Function1[/* reason */ scala.Nothing, scala.Nothing]) => scala.Nothing
@@ -466,7 +467,8 @@ object testUtilsMod {
       __obj.asInstanceOf[OptionalEventProperties]
     }
     
-    extension [Self <: OptionalEventProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalEventProperties] (val x: Self) extends AnyVal {
       
       inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
@@ -608,7 +610,8 @@ object testUtilsMod {
       __obj.asInstanceOf[SyntheticEventData]
     }
     
-    extension [Self <: SyntheticEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyntheticEventData] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       

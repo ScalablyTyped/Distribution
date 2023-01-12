@@ -29,7 +29,8 @@ object CorrelationProperty {
     __obj.asInstanceOf[CorrelationProperty]
   }
   
-  extension [Self <: CorrelationProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CorrelationProperty] (val x: Self) extends AnyVal {
     
     inline def setCorrelationPropertyRetrievalExpression(value: CorrelationPropertyRetrievalExpression): Self = StObject.set(x, "correlationPropertyRetrievalExpression", value.asInstanceOf[js.Any])
     

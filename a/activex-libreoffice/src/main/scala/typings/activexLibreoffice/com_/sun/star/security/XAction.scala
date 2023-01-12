@@ -28,7 +28,8 @@ object XAction {
     __obj.asInstanceOf[XAction]
   }
   
-  extension [Self <: XAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAction] (val x: Self) extends AnyVal {
     
     inline def setRun(value: () => Any): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
   }

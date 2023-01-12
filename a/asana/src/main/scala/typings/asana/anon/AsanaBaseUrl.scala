@@ -30,7 +30,8 @@ object AsanaBaseUrl {
     __obj.asInstanceOf[AsanaBaseUrl]
   }
   
-  extension [Self <: AsanaBaseUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsanaBaseUrl] (val x: Self) extends AnyVal {
     
     inline def setAsanaBaseUrl(value: String): Self = StObject.set(x, "asanaBaseUrl", value.asInstanceOf[js.Any])
     

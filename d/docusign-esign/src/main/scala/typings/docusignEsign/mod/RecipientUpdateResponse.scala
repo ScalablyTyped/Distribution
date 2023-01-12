@@ -44,7 +44,8 @@ object RecipientUpdateResponse {
     __obj.asInstanceOf[RecipientUpdateResponse]
   }
   
-  extension [Self <: RecipientUpdateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientUpdateResponse] (val x: Self) extends AnyVal {
     
     inline def setCombined(value: String): Self = StObject.set(x, "combined", value.asInstanceOf[js.Any])
     

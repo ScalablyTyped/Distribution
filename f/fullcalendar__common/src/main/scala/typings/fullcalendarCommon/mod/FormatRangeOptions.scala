@@ -17,7 +17,8 @@ object FormatRangeOptions {
     __obj.asInstanceOf[FormatRangeOptions]
   }
   
-  extension [Self <: FormatRangeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatRangeOptions] (val x: Self) extends AnyVal {
     
     inline def setIsEndExclusive(value: Boolean): Self = StObject.set(x, "isEndExclusive", value.asInstanceOf[js.Any])
     

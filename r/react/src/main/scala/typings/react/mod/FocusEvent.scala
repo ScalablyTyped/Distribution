@@ -38,7 +38,8 @@ object FocusEvent {
     __obj.asInstanceOf[FocusEvent[Target, RelatedTarget]]
   }
   
-  extension [Self <: FocusEvent[?, ?], Target, RelatedTarget](x: Self & (FocusEvent[Target, RelatedTarget])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FocusEvent[?, ?], Target, RelatedTarget] (val x: Self & (FocusEvent[Target, RelatedTarget])) extends AnyVal {
     
     inline def setRelatedTarget(value: EventTarget & RelatedTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
     

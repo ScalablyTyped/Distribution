@@ -18,7 +18,8 @@ object PhysicsVortexEventData {
     __obj.asInstanceOf[PhysicsVortexEventData]
   }
   
-  extension [Self <: PhysicsVortexEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicsVortexEventData] (val x: Self) extends AnyVal {
     
     inline def setCylinder(value: Mesh): Self = StObject.set(x, "cylinder", value.asInstanceOf[js.Any])
   }

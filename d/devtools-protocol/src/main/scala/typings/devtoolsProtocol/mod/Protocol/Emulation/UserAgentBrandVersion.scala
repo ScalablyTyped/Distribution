@@ -17,7 +17,8 @@ object UserAgentBrandVersion {
     __obj.asInstanceOf[UserAgentBrandVersion]
   }
   
-  extension [Self <: UserAgentBrandVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserAgentBrandVersion] (val x: Self) extends AnyVal {
     
     inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     

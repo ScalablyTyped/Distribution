@@ -81,7 +81,8 @@ object RuntimeEnvironment {
     __obj.asInstanceOf[RuntimeEnvironment]
   }
   
-  extension [Self <: RuntimeEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeEnvironment] (val x: Self) extends AnyVal {
     
     inline def setAdditionalExperiments(value: js.Array[String]): Self = StObject.set(x, "additionalExperiments", value.asInstanceOf[js.Any])
     

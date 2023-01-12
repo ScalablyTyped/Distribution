@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Block]
     }
     
-    extension [Self <: Block](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: String): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[BodyAttribute]
     }
     
-    extension [Self <: BodyAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyAttribute] (val x: Self) extends AnyVal {
       
       inline def setBodyAttribute(value: String): Self = StObject.set(x, "bodyAttribute", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -99,7 +102,8 @@ object anon {
       __obj.asInstanceOf[ElementName]
     }
     
-    extension [Self <: ElementName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementName] (val x: Self) extends AnyVal {
       
       inline def setElementName(value: String): Self = StObject.set(x, "elementName", value.asInstanceOf[js.Any])
       
@@ -126,7 +130,8 @@ object anon {
       __obj.asInstanceOf[Elements]
     }
     
-    extension [Self <: Elements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Elements] (val x: Self) extends AnyVal {
       
       inline def setElements(
         value: js.Array[
@@ -154,7 +159,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -177,7 +183,8 @@ object anon {
       __obj.asInstanceOf[ParseErrors]
     }
     
-    extension [Self <: ParseErrors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseErrors] (val x: Self) extends AnyVal {
       
       inline def setParseErrors(value: js.Array[ParseError]): Self = StObject.set(x, "parseErrors", value.asInstanceOf[js.Any])
       
@@ -284,7 +291,8 @@ object anon {
       __obj.asInstanceOf[ɵParsedMessagelocationɵSo]
     }
     
-    extension [Self <: ɵParsedMessagelocationɵSo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ɵParsedMessagelocationɵSo] (val x: Self) extends AnyVal {
       
       inline def setAssociatedMessageIds(value: Record[String, MessageId]): Self = StObject.set(x, "associatedMessageIds", value.asInstanceOf[js.Any])
       

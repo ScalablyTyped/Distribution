@@ -28,7 +28,8 @@ object CreateImageVersionRequest {
     __obj.asInstanceOf[CreateImageVersionRequest]
   }
   
-  extension [Self <: CreateImageVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateImageVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setBaseImage(value: ImageBaseImage): Self = StObject.set(x, "BaseImage", value.asInstanceOf[js.Any])
     

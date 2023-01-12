@@ -75,7 +75,8 @@ object NutritionProduct {
     __obj.asInstanceOf[NutritionProduct]
   }
   
-  extension [Self <: NutritionProduct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NutritionProduct] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: js.Array[CodeableConcept]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

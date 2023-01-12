@@ -22,7 +22,8 @@ object ThreeStarsSet {
     __obj.asInstanceOf[ThreeStarsSet]
   }
   
-  extension [Self <: ThreeStarsSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreeStarsSet] (val x: Self) extends AnyVal {
     
     inline def setGoldStar(value: Icon): Self = StObject.set(x, "goldStar", value.asInstanceOf[js.Any])
     

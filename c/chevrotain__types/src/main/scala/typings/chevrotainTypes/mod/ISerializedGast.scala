@@ -20,7 +20,8 @@ object ISerializedGast {
     __obj.asInstanceOf[ISerializedGast]
   }
   
-  extension [Self <: ISerializedGast](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISerializedGast] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: js.Array[ISerializedGast]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

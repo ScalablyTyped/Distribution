@@ -28,7 +28,8 @@ object TeamMember {
     __obj.asInstanceOf[TeamMember]
   }
   
-  extension [Self <: TeamMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamMember] (val x: Self) extends AnyVal {
     
     inline def setProjectRole(value: Role): Self = StObject.set(x, "projectRole", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SetRequestInterceptionRequest {
     __obj.asInstanceOf[SetRequestInterceptionRequest]
   }
   
-  extension [Self <: SetRequestInterceptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetRequestInterceptionRequest] (val x: Self) extends AnyVal {
     
     inline def setPatterns(value: js.Array[RequestPattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object SizeProps {
     __obj.asInstanceOf[SizeProps[TLength]]
   }
   
-  extension [Self <: SizeProps[?], TLength](x: Self & SizeProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeProps[?], TLength] (val x: Self & SizeProps[TLength]) extends AnyVal {
     
     inline def setSize(value: ResponsiveValue[Height[TLength]]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

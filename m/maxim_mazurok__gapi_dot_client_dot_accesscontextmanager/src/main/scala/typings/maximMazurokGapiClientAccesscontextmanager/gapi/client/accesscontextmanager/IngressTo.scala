@@ -22,7 +22,8 @@ object IngressTo {
     __obj.asInstanceOf[IngressTo]
   }
   
-  extension [Self <: IngressTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngressTo] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: js.Array[ApiOperation]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

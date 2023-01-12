@@ -49,7 +49,8 @@ object ExplainParams {
     __obj.asInstanceOf[ExplainParams]
   }
   
-  extension [Self <: ExplainParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExplainParams] (val x: Self) extends AnyVal {
     
     inline def setAnalyzeWildcard(value: Boolean): Self = StObject.set(x, "analyzeWildcard", value.asInstanceOf[js.Any])
     

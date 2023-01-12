@@ -23,7 +23,8 @@ object JNotifyOptions {
     __obj.asInstanceOf[JNotifyOptions]
   }
   
-  extension [Self <: JNotifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JNotifyOptions] (val x: Self) extends AnyVal {
     
     inline def setDisappearTime(value: Double): Self = StObject.set(x, "disappearTime", value.asInstanceOf[js.Any])
     

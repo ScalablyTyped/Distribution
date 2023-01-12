@@ -15,7 +15,8 @@ object Statistic {
     __obj.asInstanceOf[Statistic]
   }
   
-  extension [Self <: Statistic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Statistic] (val x: Self) extends AnyVal {
     
     inline def setStatistic(value: typings.antvG2plot.libTypesStatisticMod.Statistic): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
   }

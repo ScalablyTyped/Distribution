@@ -202,7 +202,8 @@ object srcNgtscTranslatorSrcTranslatorMod {
       __obj.asInstanceOf[TranslatorOptions[TExpression]]
     }
     
-    extension [Self <: TranslatorOptions[?], TExpression](x: Self & TranslatorOptions[TExpression]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranslatorOptions[?], TExpression] (val x: Self & TranslatorOptions[TExpression]) extends AnyVal {
       
       inline def setAnnotateForClosureCompiler(value: Boolean): Self = StObject.set(x, "annotateForClosureCompiler", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[N]
     }
     
-    extension [Self <: N](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: N] (val x: Self) extends AnyVal {
       
       inline def setN(value: Double | (Map[Double, EncodeTrieNode])): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[O]
     }
     
-    extension [Self <: O](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: O] (val x: Self) extends AnyVal {
       
       inline def setN(value: Double | (Map[Double, typings.entities.libGeneratedEncodeHtmlMod.EncodeTrieNode])): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object FreshnessOptions {
     __obj.asInstanceOf[FreshnessOptions]
   }
   
-  extension [Self <: FreshnessOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreshnessOptions] (val x: Self) extends AnyVal {
     
     inline def setFreshnessDuration(value: String): Self = StObject.set(x, "freshnessDuration", value.asInstanceOf[js.Any])
     

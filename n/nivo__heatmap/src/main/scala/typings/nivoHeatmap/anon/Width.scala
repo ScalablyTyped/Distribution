@@ -21,7 +21,8 @@ object Width {
     __obj.asInstanceOf[Width[Datum, ExtraProps]]
   }
   
-  extension [Self <: Width[?, ?], Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](x: Self & (Width[Datum, ExtraProps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Width[?, ?], Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */] (val x: Self & (Width[Datum, ExtraProps])) extends AnyVal {
     
     inline def setData(value: js.Array[HeatMapSerie[Datum, ExtraProps]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

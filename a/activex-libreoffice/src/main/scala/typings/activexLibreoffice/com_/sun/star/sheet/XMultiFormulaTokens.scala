@@ -51,7 +51,8 @@ object XMultiFormulaTokens {
     __obj.asInstanceOf[XMultiFormulaTokens]
   }
   
-  extension [Self <: XMultiFormulaTokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMultiFormulaTokens] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

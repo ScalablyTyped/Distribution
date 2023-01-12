@@ -27,7 +27,8 @@ object typebooleandefaultValuebo {
     __obj.asInstanceOf[typebooleandefaultValuebo]
   }
   
-  extension [Self <: typebooleandefaultValuebo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typebooleandefaultValuebo] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

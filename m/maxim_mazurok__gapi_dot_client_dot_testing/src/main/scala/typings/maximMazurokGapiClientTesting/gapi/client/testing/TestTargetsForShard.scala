@@ -19,7 +19,8 @@ object TestTargetsForShard {
     __obj.asInstanceOf[TestTargetsForShard]
   }
   
-  extension [Self <: TestTargetsForShard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestTargetsForShard] (val x: Self) extends AnyVal {
     
     inline def setTestTargets(value: js.Array[String]): Self = StObject.set(x, "testTargets", value.asInstanceOf[js.Any])
     

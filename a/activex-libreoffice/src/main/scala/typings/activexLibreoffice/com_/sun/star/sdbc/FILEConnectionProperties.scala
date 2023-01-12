@@ -32,7 +32,8 @@ object FILEConnectionProperties {
     __obj.asInstanceOf[FILEConnectionProperties]
   }
   
-  extension [Self <: FILEConnectionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FILEConnectionProperties] (val x: Self) extends AnyVal {
     
     inline def setCharSet(value: String): Self = StObject.set(x, "CharSet", value.asInstanceOf[js.Any])
   }

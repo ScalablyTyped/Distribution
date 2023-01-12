@@ -18,7 +18,8 @@ object PlotPyramid3dDragDropGuideBoxOptions {
     __obj.asInstanceOf[PlotPyramid3dDragDropGuideBoxOptions]
   }
   
-  extension [Self <: PlotPyramid3dDragDropGuideBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPyramid3dDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

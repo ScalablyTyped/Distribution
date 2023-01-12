@@ -26,7 +26,8 @@ object TBSRequestParameters {
     __obj.asInstanceOf[TBSRequestParameters]
   }
   
-  extension [Self <: TBSRequestParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TBSRequestParameters] (val x: Self) extends AnyVal {
     
     inline def setRequestExtensions(value: js.Array[Extension]): Self = StObject.set(x, "requestExtensions", value.asInstanceOf[js.Any])
     

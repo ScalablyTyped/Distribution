@@ -36,7 +36,8 @@ object InterfaceMixinType {
     __obj.asInstanceOf[InterfaceMixinType]
   }
   
-  extension [Self <: InterfaceMixinType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterfaceMixinType] (val x: Self) extends AnyVal {
     
     inline def setInheritance(value: Null): Self = StObject.set(x, "inheritance", value.asInstanceOf[js.Any])
     

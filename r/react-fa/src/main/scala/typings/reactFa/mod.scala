@@ -98,7 +98,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IconProps]
     }
     
-    extension [Self <: IconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: CustomComponent): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
@@ -205,7 +206,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IconStackProps]
     }
     
-    extension [Self <: IconStackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconStackProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -247,7 +249,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SizeOverrideHTMLProps[T]]
     }
     
-    extension [Self <: SizeOverrideHTMLProps[?], T](x: Self & SizeOverrideHTMLProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeOverrideHTMLProps[?], T] (val x: Self & SizeOverrideHTMLProps[T]) extends AnyVal {
       
       inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

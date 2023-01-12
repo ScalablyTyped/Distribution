@@ -21,7 +21,8 @@ object APNSNotificationPayload {
     __obj.asInstanceOf[APNSNotificationPayload]
   }
   
-  extension [Self <: APNSNotificationPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APNSNotificationPayload] (val x: Self) extends AnyVal {
     
     inline def setApnsPushType(value: String): Self = StObject.set(x, "apnsPushType", value.asInstanceOf[js.Any])
     

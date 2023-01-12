@@ -20,7 +20,8 @@ object EditorViewModelFailures {
     __obj.asInstanceOf[EditorViewModelFailures]
   }
   
-  extension [Self <: EditorViewModelFailures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorViewModelFailures] (val x: Self) extends AnyVal {
     
     inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

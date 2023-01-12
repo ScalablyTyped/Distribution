@@ -18,7 +18,8 @@ object GetManagedScalingPolicyOutput {
     __obj.asInstanceOf[GetManagedScalingPolicyOutput]
   }
   
-  extension [Self <: GetManagedScalingPolicyOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetManagedScalingPolicyOutput] (val x: Self) extends AnyVal {
     
     inline def setManagedScalingPolicy(value: ManagedScalingPolicy): Self = StObject.set(x, "ManagedScalingPolicy", value.asInstanceOf[js.Any])
     

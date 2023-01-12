@@ -24,7 +24,8 @@ object DefaultRawDatum {
     __obj.asInstanceOf[DefaultRawDatum]
   }
   
-  extension [Self <: DefaultRawDatum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultRawDatum] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

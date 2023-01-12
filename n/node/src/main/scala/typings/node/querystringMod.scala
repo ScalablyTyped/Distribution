@@ -242,7 +242,8 @@ object querystringMod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setDecodeURIComponent(value: /* str */ String => String): Self = StObject.set(x, "decodeURIComponent", js.Any.fromFunction1(value))
       
@@ -269,7 +270,8 @@ object querystringMod {
       __obj.asInstanceOf[StringifyOptions]
     }
     
-    extension [Self <: StringifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringifyOptions] (val x: Self) extends AnyVal {
       
       inline def setEncodeURIComponent(value: /* str */ String => String): Self = StObject.set(x, "encodeURIComponent", js.Any.fromFunction1(value))
       

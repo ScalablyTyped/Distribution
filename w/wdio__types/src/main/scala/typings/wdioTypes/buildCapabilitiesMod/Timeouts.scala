@@ -21,7 +21,8 @@ object Timeouts {
     __obj.asInstanceOf[Timeouts]
   }
   
-  extension [Self <: Timeouts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timeouts] (val x: Self) extends AnyVal {
     
     inline def setImplicit(value: Double): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object TestResultDocument {
     __obj.asInstanceOf[TestResultDocument]
   }
   
-  extension [Self <: TestResultDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestResultDocument] (val x: Self) extends AnyVal {
     
     inline def setOperationReference(value: TestOperationReference): Self = StObject.set(x, "operationReference", value.asInstanceOf[js.Any])
     

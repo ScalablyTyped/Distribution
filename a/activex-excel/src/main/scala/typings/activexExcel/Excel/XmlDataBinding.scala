@@ -43,7 +43,8 @@ object XmlDataBinding {
     __obj.asInstanceOf[XmlDataBinding]
   }
   
-  extension [Self <: XmlDataBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XmlDataBinding] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

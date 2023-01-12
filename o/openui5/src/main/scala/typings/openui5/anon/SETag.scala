@@ -19,7 +19,8 @@ object SETag {
     __obj.asInstanceOf[SETag]
   }
   
-  extension [Self <: SETag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SETag] (val x: Self) extends AnyVal {
     
     inline def setSETag(value: String): Self = StObject.set(x, "sETag", value.asInstanceOf[js.Any])
     

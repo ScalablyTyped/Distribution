@@ -40,7 +40,8 @@ object LinearOptions {
     __obj.asInstanceOf[LinearOptions]
   }
   
-  extension [Self <: LinearOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearOptions] (val x: Self) extends AnyVal {
     
     inline def setClamp(value: Boolean): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
     

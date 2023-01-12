@@ -49,7 +49,8 @@ object Availablespare {
     __obj.asInstanceOf[Availablespare]
   }
   
-  extension [Self <: Availablespare](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Availablespare] (val x: Self) extends AnyVal {
     
     inline def setAvailable_spare(value: Double): Self = StObject.set(x, "available_spare", value.asInstanceOf[js.Any])
     

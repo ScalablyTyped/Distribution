@@ -41,7 +41,8 @@ object esDialogContentPanelMod extends Shortcut {
       __obj.asInstanceOf[ContentRef]
     }
     
-    extension [Self <: ContentRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentRef] (val x: Self) extends AnyVal {
       
       inline def setChangeActive(value: Boolean => Unit): Self = StObject.set(x, "changeActive", js.Any.fromFunction1(value))
       
@@ -137,7 +138,8 @@ object esDialogContentPanelMod extends Shortcut {
       __obj.asInstanceOf[PanelProps]
     }
     
-    extension [Self <: PanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Any): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

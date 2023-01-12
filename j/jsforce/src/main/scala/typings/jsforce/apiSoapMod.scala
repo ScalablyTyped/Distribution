@@ -91,7 +91,8 @@ object apiSoapMod {
       __obj.asInstanceOf[DescribeTab]
     }
     
-    extension [Self <: DescribeTab](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeTab] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Array[js.Object]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object apiSoapMod {
       __obj.asInstanceOf[DescribeTabSetResult]
     }
     
-    extension [Self <: DescribeTabSetResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeTabSetResult] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -169,7 +171,8 @@ object apiSoapMod {
       __obj.asInstanceOf[EmptyRecycleBinResult]
     }
     
-    extension [Self <: EmptyRecycleBinResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmptyRecycleBinResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[js.Object]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -208,7 +211,8 @@ object apiSoapMod {
       __obj.asInstanceOf[LeadConvert]
     }
     
-    extension [Self <: LeadConvert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeadConvert] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
@@ -265,7 +269,8 @@ object apiSoapMod {
       __obj.asInstanceOf[LeadConvertResult]
     }
     
-    extension [Self <: LeadConvertResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeadConvertResult] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
@@ -302,7 +307,8 @@ object apiSoapMod {
       __obj.asInstanceOf[MergeRequest]
     }
     
-    extension [Self <: MergeRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeRequest] (val x: Self) extends AnyVal {
       
       inline def setMasterRecord(value: js.Object): Self = StObject.set(x, "masterRecord", value.asInstanceOf[js.Any])
       
@@ -331,7 +337,8 @@ object apiSoapMod {
       __obj.asInstanceOf[MergeResult]
     }
     
-    extension [Self <: MergeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[js.Object]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -368,7 +375,8 @@ object apiSoapMod {
       __obj.asInstanceOf[ResetPasswordResult]
     }
     
-    extension [Self <: ResetPasswordResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResetPasswordResult] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     }
@@ -385,7 +393,8 @@ object apiSoapMod {
       __obj.asInstanceOf[ServerTimestampResult]
     }
     
-    extension [Self <: ServerTimestampResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerTimestampResult] (val x: Self) extends AnyVal {
       
       inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
@@ -406,7 +415,8 @@ object apiSoapMod {
       __obj.asInstanceOf[SoapDeleteResult]
     }
     
-    extension [Self <: SoapDeleteResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SoapDeleteResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[js.Object]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -433,7 +443,8 @@ object apiSoapMod {
       __obj.asInstanceOf[SoapSaveResult]
     }
     
-    extension [Self <: SoapSaveResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SoapSaveResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[js.Object]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -462,7 +473,8 @@ object apiSoapMod {
       __obj.asInstanceOf[SoapUpsertResult]
     }
     
-    extension [Self <: SoapUpsertResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SoapUpsertResult] (val x: Self) extends AnyVal {
       
       inline def setCreated(value: Boolean): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
@@ -552,7 +564,8 @@ object apiSoapMod {
       __obj.asInstanceOf[UserInfoResult]
     }
     
-    extension [Self <: UserInfoResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserInfoResult] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityMode(value: Boolean): Self = StObject.set(x, "accessibilityMode", value.asInstanceOf[js.Any])
       

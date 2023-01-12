@@ -17,7 +17,8 @@ object RemoteDesktop {
       __obj.asInstanceOf[IInteractiveSessionStatics]
     }
     
-    extension [Self <: IInteractiveSessionStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInteractiveSessionStatics] (val x: Self) extends AnyVal {
       
       inline def setIsRemote(value: Boolean): Self = StObject.set(x, "isRemote", value.asInstanceOf[js.Any])
     }

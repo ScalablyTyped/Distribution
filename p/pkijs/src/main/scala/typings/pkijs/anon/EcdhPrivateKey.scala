@@ -16,7 +16,8 @@ object EcdhPrivateKey {
     __obj.asInstanceOf[EcdhPrivateKey]
   }
   
-  extension [Self <: EcdhPrivateKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcdhPrivateKey] (val x: Self) extends AnyVal {
     
     inline def setEcdhPrivateKey(value: CryptoKey): Self = StObject.set(x, "ecdhPrivateKey", value.asInstanceOf[js.Any])
   }

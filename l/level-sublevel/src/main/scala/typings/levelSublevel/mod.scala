@@ -25,7 +25,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Batch]
     }
     
-    extension [Self <: Batch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Batch] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: Sublevel): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Sublevel]
     }
     
-    extension [Self <: Sublevel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sublevel] (val x: Self) extends AnyVal {
       
       inline def setPre(value: Hook => js.Function): Self = StObject.set(x, "pre", js.Any.fromFunction1(value))
       

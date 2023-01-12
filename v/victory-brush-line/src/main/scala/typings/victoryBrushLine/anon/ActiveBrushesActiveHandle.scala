@@ -29,7 +29,8 @@ object ActiveBrushesActiveHandle {
     __obj.asInstanceOf[ActiveBrushesActiveHandle]
   }
   
-  extension [Self <: ActiveBrushesActiveHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveBrushesActiveHandle] (val x: Self) extends AnyVal {
     
     inline def setActiveHandle(value: Null): Self = StObject.set(x, "activeHandle", value.asInstanceOf[js.Any])
     

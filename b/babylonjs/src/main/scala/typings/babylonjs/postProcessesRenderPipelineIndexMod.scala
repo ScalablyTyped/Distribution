@@ -329,7 +329,8 @@ object postProcessesRenderPipelineIndexMod {
         __obj.asInstanceOf[typings.babylonjs.postProcessesRenderPipelineIndexMod.babylonjsSceneAugmentingMod.Scene]
       }
       
-      extension [Self <: typings.babylonjs.postProcessesRenderPipelineIndexMod.babylonjsSceneAugmentingMod.Scene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.postProcessesRenderPipelineIndexMod.babylonjsSceneAugmentingMod.Scene] (val x: Self) extends AnyVal {
         
         inline def setPostProcessRenderPipelineManager(
           value: typings.babylonjs.postProcessesRenderPipelinePostProcessRenderPipelineManagerMod.PostProcessRenderPipelineManager

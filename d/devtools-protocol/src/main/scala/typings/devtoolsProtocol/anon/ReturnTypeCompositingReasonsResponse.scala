@@ -19,7 +19,8 @@ object ReturnTypeCompositingReasonsResponse {
     __obj.asInstanceOf[ReturnTypeCompositingReasonsResponse]
   }
   
-  extension [Self <: ReturnTypeCompositingReasonsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeCompositingReasonsResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[CompositingReasonsRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

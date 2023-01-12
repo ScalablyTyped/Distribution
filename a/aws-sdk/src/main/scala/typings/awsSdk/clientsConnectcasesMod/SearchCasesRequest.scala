@@ -48,7 +48,8 @@ object SearchCasesRequest {
     __obj.asInstanceOf[SearchCasesRequest]
   }
   
-  extension [Self <: SearchCasesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchCasesRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainId(value: DomainId): Self = StObject.set(x, "domainId", value.asInstanceOf[js.Any])
     

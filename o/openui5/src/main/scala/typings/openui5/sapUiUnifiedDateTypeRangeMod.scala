@@ -269,7 +269,8 @@ object sapUiUnifiedDateTypeRangeMod {
       __obj.asInstanceOf[DateTypeRangeSettings]
     }
     
-    extension [Self <: DateTypeRangeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTypeRangeSettings] (val x: Self) extends AnyVal {
       
       inline def setColor(value: CSSColor | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

@@ -407,7 +407,8 @@ object libInterfaceMod {
       __obj.asInstanceOf[IBaseGemoProps]
     }
     
-    extension [Self <: IBaseGemoProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseGemoProps] (val x: Self) extends AnyVal {
       
       inline def setAdjust(value: dodge | stack | symmetric | jitter | String | AdjustOption | js.Array[AdjustOption]): Self = StObject.set(x, "adjust", value.asInstanceOf[js.Any])
       
@@ -591,7 +592,8 @@ object libInterfaceMod {
       __obj.asInstanceOf[IChartProps]
     }
     
-    extension [Self <: IChartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChartProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFit(value: Boolean): Self = StObject.set(x, "autoFit", value.asInstanceOf[js.Any])
       
@@ -806,7 +808,8 @@ object libInterfaceMod {
       __obj.asInstanceOf[IEvent]
     }
     
-    extension [Self <: IEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEvent] (val x: Self) extends AnyVal {
       
       inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
@@ -905,7 +908,8 @@ object libInterfaceMod {
       __obj.asInstanceOf[IViewProps]
     }
     
-    extension [Self <: IViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IViewProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

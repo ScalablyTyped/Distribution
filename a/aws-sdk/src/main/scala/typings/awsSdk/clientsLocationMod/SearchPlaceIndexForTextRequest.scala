@@ -48,7 +48,8 @@ object SearchPlaceIndexForTextRequest {
     __obj.asInstanceOf[SearchPlaceIndexForTextRequest]
   }
   
-  extension [Self <: SearchPlaceIndexForTextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchPlaceIndexForTextRequest] (val x: Self) extends AnyVal {
     
     inline def setBiasPosition(value: Position): Self = StObject.set(x, "BiasPosition", value.asInstanceOf[js.Any])
     

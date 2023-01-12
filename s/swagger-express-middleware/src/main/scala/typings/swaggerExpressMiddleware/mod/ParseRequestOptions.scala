@@ -43,7 +43,8 @@ object ParseRequestOptions {
     __obj.asInstanceOf[ParseRequestOptions]
   }
   
-  extension [Self <: ParseRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setCookie(value: CookieParserOptionItem): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     

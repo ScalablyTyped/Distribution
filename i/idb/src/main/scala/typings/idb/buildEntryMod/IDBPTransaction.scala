@@ -68,7 +68,8 @@ object IDBPTransaction {
     __obj.asInstanceOf[IDBPTransaction[DBTypes, TxStores, Mode]]
   }
   
-  extension [Self <: IDBPTransaction[?, ?, ?], DBTypes /* <: DBSchema | Any */, TxStores /* <: ArrayLike[StoreNames[DBTypes]] */, Mode /* <: IDBTransactionMode */](x: Self & (IDBPTransaction[DBTypes, TxStores, Mode])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDBPTransaction[?, ?, ?], DBTypes /* <: DBSchema | Any */, TxStores /* <: ArrayLike[StoreNames[DBTypes]] */, Mode /* <: IDBTransactionMode */] (val x: Self & (IDBPTransaction[DBTypes, TxStores, Mode])) extends AnyVal {
     
     inline def setDb(value: IDBPDatabase[DBTypes]): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     

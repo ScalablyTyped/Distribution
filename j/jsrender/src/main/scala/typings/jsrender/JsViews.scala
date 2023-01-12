@@ -32,7 +32,8 @@ object JsViews {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setParentTags(value: Hash[Tag]): Self = StObject.set(x, "parentTags", value.asInstanceOf[js.Any])
       
@@ -315,7 +316,8 @@ object JsViews {
       __obj.asInstanceOf[TagCtxParams]
     }
     
-    extension [Self <: TagCtxParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagCtxParams] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -376,7 +378,8 @@ object JsViews {
       __obj.asInstanceOf[TagOptionProps]
     }
     
-    extension [Self <: TagOptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagOptionProps] (val x: Self) extends AnyVal {
       
       inline def setArgDefault(value: Boolean): Self = StObject.set(x, "argDefault", value.asInstanceOf[js.Any])
       
@@ -448,7 +451,8 @@ object JsViews {
       __obj.asInstanceOf[TagOptions]
     }
     
-    extension [Self <: TagOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagOptions] (val x: Self) extends AnyVal {
       
       inline def setTemplate(value: TemplateSetter): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
@@ -532,7 +536,8 @@ object JsViews {
       __obj.asInstanceOf[TemplateOptions]
     }
     
-    extension [Self <: TemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setConverters(value: Hash[Converter]): Self = StObject.set(x, "converters", value.asInstanceOf[js.Any])
       
@@ -708,7 +713,8 @@ object JsViews {
       __obj.asInstanceOf[ViewModelOptions]
     }
     
-    extension [Self <: ViewModelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewModelOptions] (val x: Self) extends AnyVal {
       
       inline def setExtend(value: Hash[Any]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
       
@@ -884,7 +890,8 @@ object JsViews {
       __obj.asInstanceOf[Views]
     }
     
-    extension [Self <: Views](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Views] (val x: Self) extends AnyVal {
       
       inline def setConverters(value: Store[Converter, Converter]): Self = StObject.set(x, "converters", value.asInstanceOf[js.Any])
       

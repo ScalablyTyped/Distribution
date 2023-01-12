@@ -26,7 +26,8 @@ object Credit {
     __obj.asInstanceOf[Credit]
   }
   
-  extension [Self <: Credit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Credit] (val x: Self) extends AnyVal {
     
     inline def setCredit(value: typings.cesium.mod.Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
     

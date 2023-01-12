@@ -29,7 +29,8 @@ object MediaSource {
     __obj.asInstanceOf[MediaSource]
   }
   
-  extension [Self <: MediaSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaSource] (val x: Self) extends AnyVal {
     
     inline def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
     

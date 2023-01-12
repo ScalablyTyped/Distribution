@@ -23,7 +23,8 @@ object TileRenderedEventUIParam {
     __obj.asInstanceOf[TileRenderedEventUIParam]
   }
   
-  extension [Self <: TileRenderedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileRenderedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

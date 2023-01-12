@@ -22,7 +22,8 @@ object CreateItemIncluded {
     __obj.asInstanceOf[CreateItemIncluded]
   }
   
-  extension [Self <: CreateItemIncluded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateItemIncluded] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: CreateStorageDataAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

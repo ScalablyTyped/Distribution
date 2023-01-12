@@ -23,7 +23,8 @@ object ReplicateInstanceResponse {
     __obj.asInstanceOf[ReplicateInstanceResponse]
   }
   
-  extension [Self <: ReplicateInstanceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicateInstanceResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

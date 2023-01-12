@@ -85,7 +85,8 @@ object distPredicatesPredicateMod {
       __obj.asInstanceOf[Context[T]]
     }
     
-    extension [Self <: Context[?], T](x: Self & Context[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context[?], T] (val x: Self & Context[T]) extends AnyVal {
       
       inline def setValidators(value: js.Array[Validator[T]]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object distPredicatesPredicateMod {
       __obj.asInstanceOf[PredicateOptions]
     }
     
-    extension [Self <: PredicateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PredicateOptions] (val x: Self) extends AnyVal {
       
       inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       

@@ -58,7 +58,8 @@ object AudioEncodingProperties {
     __obj.asInstanceOf[AudioEncodingProperties]
   }
   
-  extension [Self <: AudioEncodingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioEncodingProperties] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     

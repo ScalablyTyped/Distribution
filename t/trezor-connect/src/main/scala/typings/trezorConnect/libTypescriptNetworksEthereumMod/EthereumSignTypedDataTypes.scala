@@ -18,7 +18,8 @@ object EthereumSignTypedDataTypes {
     __obj.asInstanceOf[EthereumSignTypedDataTypes]
   }
   
-  extension [Self <: EthereumSignTypedDataTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EthereumSignTypedDataTypes] (val x: Self) extends AnyVal {
     
     inline def setEIP712Domain(value: js.Array[EthereumSignTypedDataTypeProperty]): Self = StObject.set(x, "EIP712Domain", value.asInstanceOf[js.Any])
     

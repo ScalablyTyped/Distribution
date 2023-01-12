@@ -15,7 +15,8 @@ object DeviceToken {
     __obj.asInstanceOf[DeviceToken]
   }
   
-  extension [Self <: DeviceToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceToken] (val x: Self) extends AnyVal {
     
     inline def setDeviceToken(value: String): Self = StObject.set(x, "deviceToken", value.asInstanceOf[js.Any])
   }

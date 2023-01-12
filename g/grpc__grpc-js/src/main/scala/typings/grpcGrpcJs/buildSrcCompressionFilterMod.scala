@@ -53,7 +53,8 @@ object buildSrcCompressionFilterMod {
       __obj.asInstanceOf[SharedCompressionFilterConfig]
     }
     
-    extension [Self <: SharedCompressionFilterConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedCompressionFilterConfig] (val x: Self) extends AnyVal {
       
       inline def setServerSupportedEncodingHeader(value: String): Self = StObject.set(x, "serverSupportedEncodingHeader", value.asInstanceOf[js.Any])
       

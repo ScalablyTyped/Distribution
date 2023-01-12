@@ -30,7 +30,8 @@ object ListAssignmentsForHITRequest {
     __obj.asInstanceOf[ListAssignmentsForHITRequest]
   }
   
-  extension [Self <: ListAssignmentsForHITRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssignmentsForHITRequest] (val x: Self) extends AnyVal {
     
     inline def setAssignmentStatuses(value: AssignmentStatusList): Self = StObject.set(x, "AssignmentStatuses", value.asInstanceOf[js.Any])
     

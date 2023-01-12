@@ -59,7 +59,8 @@ object FieldsHealthCheckKey {
     __obj.asInstanceOf[FieldsHealthCheckKey]
   }
   
-  extension [Self <: FieldsHealthCheckKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldsHealthCheckKey] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

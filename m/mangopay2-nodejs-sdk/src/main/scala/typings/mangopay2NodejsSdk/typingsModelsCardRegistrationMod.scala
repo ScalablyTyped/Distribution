@@ -93,7 +93,8 @@ object typingsModelsCardRegistrationMod {
         __obj.asInstanceOf[CardRegistrationData]
       }
       
-      extension [Self <: CardRegistrationData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CardRegistrationData] (val x: Self) extends AnyVal {
         
         inline def setAccessKey(value: String): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
         
@@ -137,7 +138,8 @@ object typingsModelsCardRegistrationMod {
         __obj.asInstanceOf[CreateCardRegistration]
       }
       
-      extension [Self <: CreateCardRegistration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateCardRegistration] (val x: Self) extends AnyVal {
         
         inline def setCardType(value: CardType): Self = StObject.set(x, "CardType", value.asInstanceOf[js.Any])
         
@@ -169,7 +171,8 @@ object typingsModelsCardRegistrationMod {
         __obj.asInstanceOf[UpdateCardRegistration]
       }
       
-      extension [Self <: UpdateCardRegistration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateCardRegistration] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
         

@@ -80,7 +80,8 @@ object distCommonjsElementsRevealRevealMod extends Shortcut {
       __obj.asInstanceOf[StrictRevealProps]
     }
     
-    extension [Self <: StrictRevealProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictRevealProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

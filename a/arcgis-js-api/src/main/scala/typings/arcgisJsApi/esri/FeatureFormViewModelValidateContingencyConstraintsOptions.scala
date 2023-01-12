@@ -20,7 +20,8 @@ object FeatureFormViewModelValidateContingencyConstraintsOptions {
     __obj.asInstanceOf[FeatureFormViewModelValidateContingencyConstraintsOptions]
   }
   
-  extension [Self <: FeatureFormViewModelValidateContingencyConstraintsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureFormViewModelValidateContingencyConstraintsOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeIncompleteViolations(value: Boolean): Self = StObject.set(x, "includeIncompleteViolations", value.asInstanceOf[js.Any])
     

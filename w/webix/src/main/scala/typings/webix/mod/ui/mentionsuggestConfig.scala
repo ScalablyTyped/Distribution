@@ -108,7 +108,8 @@ object mentionsuggestConfig {
     __obj.asInstanceOf[mentionsuggestConfig]
   }
   
-  extension [Self <: mentionsuggestConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: mentionsuggestConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

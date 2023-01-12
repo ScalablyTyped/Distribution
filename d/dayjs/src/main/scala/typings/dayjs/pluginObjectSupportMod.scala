@@ -32,7 +32,8 @@ object pluginObjectSupportMod extends Shortcut {
         __obj.asInstanceOf[ConfigTypeMap]
       }
       
-      extension [Self <: ConfigTypeMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConfigTypeMap] (val x: Self) extends AnyVal {
         
         inline def setObjectSupport(value: D): Self = StObject.set(x, "objectSupport", value.asInstanceOf[js.Any])
       }
@@ -53,7 +54,8 @@ object pluginObjectSupportMod extends Shortcut {
         __obj.asInstanceOf[Dayjs]
       }
       
-      extension [Self <: Dayjs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Dayjs] (val x: Self) extends AnyVal {
         
         inline def setAdd(value: js.Object => Dayjs): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
         

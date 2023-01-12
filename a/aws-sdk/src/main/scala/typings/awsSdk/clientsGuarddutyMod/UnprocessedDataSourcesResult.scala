@@ -15,7 +15,8 @@ object UnprocessedDataSourcesResult {
     __obj.asInstanceOf[UnprocessedDataSourcesResult]
   }
   
-  extension [Self <: UnprocessedDataSourcesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnprocessedDataSourcesResult] (val x: Self) extends AnyVal {
     
     inline def setMalwareProtection(value: MalwareProtectionConfigurationResult): Self = StObject.set(x, "MalwareProtection", value.asInstanceOf[js.Any])
     

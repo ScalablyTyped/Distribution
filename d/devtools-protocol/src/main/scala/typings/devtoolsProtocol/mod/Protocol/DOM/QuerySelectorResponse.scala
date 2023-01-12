@@ -18,7 +18,8 @@ object QuerySelectorResponse {
     __obj.asInstanceOf[QuerySelectorResponse]
   }
   
-  extension [Self <: QuerySelectorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuerySelectorResponse] (val x: Self) extends AnyVal {
     
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }

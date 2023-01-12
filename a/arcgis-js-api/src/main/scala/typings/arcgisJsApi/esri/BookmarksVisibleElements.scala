@@ -34,7 +34,8 @@ object BookmarksVisibleElements {
     __obj.asInstanceOf[BookmarksVisibleElements]
   }
   
-  extension [Self <: BookmarksVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookmarksVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setAddBookmark(value: Boolean): Self = StObject.set(x, "addBookmark", value.asInstanceOf[js.Any])
     

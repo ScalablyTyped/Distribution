@@ -19,7 +19,8 @@ object pluploadFilters {
     __obj.asInstanceOf[pluploadFilters]
   }
   
-  extension [Self <: pluploadFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pluploadFilters] (val x: Self) extends AnyVal {
     
     inline def setMax_file_size(value: Double | String): Self = StObject.set(x, "max_file_size", value.asInstanceOf[js.Any])
     

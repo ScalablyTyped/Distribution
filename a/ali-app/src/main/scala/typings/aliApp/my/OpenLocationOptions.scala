@@ -30,7 +30,8 @@ object OpenLocationOptions {
     __obj.asInstanceOf[OpenLocationOptions]
   }
   
-  extension [Self <: OpenLocationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenLocationOptions] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

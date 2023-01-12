@@ -98,7 +98,8 @@ object distKnobStoreMod {
       __obj.asInstanceOf[KnobStore]
     }
     
-    extension [Self <: KnobStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KnobStore] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: js.Array[Callback]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       

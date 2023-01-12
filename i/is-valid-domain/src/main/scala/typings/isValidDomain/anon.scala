@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[AllowUnicode]
     }
     
-    extension [Self <: AllowUnicode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowUnicode] (val x: Self) extends AnyVal {
       
       inline def setAllowUnicode(value: Boolean): Self = StObject.set(x, "allowUnicode", value.asInstanceOf[js.Any])
       

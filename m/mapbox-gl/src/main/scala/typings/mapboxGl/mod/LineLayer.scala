@@ -27,7 +27,8 @@ object LineLayer {
     __obj.asInstanceOf[LineLayer]
   }
   
-  extension [Self <: LineLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineLayer] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: LineLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

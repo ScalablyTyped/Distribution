@@ -40,7 +40,8 @@ object clientsSsooidcMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object clientsSsooidcMod {
       __obj.asInstanceOf[CreateTokenRequest]
     }
     
-    extension [Self <: CreateTokenRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateTokenRequest] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object clientsSsooidcMod {
       __obj.asInstanceOf[CreateTokenResponse]
     }
     
-    extension [Self <: CreateTokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateTokenResponse] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: AccessToken): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -238,7 +241,8 @@ object clientsSsooidcMod {
       __obj.asInstanceOf[RegisterClientRequest]
     }
     
-    extension [Self <: RegisterClientRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterClientRequest] (val x: Self) extends AnyVal {
       
       inline def setClientName(value: ClientName): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
       
@@ -291,7 +295,8 @@ object clientsSsooidcMod {
       __obj.asInstanceOf[RegisterClientResponse]
     }
     
-    extension [Self <: RegisterClientResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterClientResponse] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationEndpoint(value: URI): Self = StObject.set(x, "authorizationEndpoint", value.asInstanceOf[js.Any])
       
@@ -396,7 +401,8 @@ object clientsSsooidcMod {
       __obj.asInstanceOf[StartDeviceAuthorizationRequest]
     }
     
-    extension [Self <: StartDeviceAuthorizationRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartDeviceAuthorizationRequest] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -445,7 +451,8 @@ object clientsSsooidcMod {
       __obj.asInstanceOf[StartDeviceAuthorizationResponse]
     }
     
-    extension [Self <: StartDeviceAuthorizationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartDeviceAuthorizationResponse] (val x: Self) extends AnyVal {
       
       inline def setDeviceCode(value: DeviceCode): Self = StObject.set(x, "deviceCode", value.asInstanceOf[js.Any])
       

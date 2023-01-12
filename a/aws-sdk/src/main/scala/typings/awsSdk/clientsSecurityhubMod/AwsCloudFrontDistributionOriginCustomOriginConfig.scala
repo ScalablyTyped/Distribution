@@ -43,7 +43,8 @@ object AwsCloudFrontDistributionOriginCustomOriginConfig {
     __obj.asInstanceOf[AwsCloudFrontDistributionOriginCustomOriginConfig]
   }
   
-  extension [Self <: AwsCloudFrontDistributionOriginCustomOriginConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCloudFrontDistributionOriginCustomOriginConfig] (val x: Self) extends AnyVal {
     
     inline def setHttpPort(value: Integer): Self = StObject.set(x, "HttpPort", value.asInstanceOf[js.Any])
     

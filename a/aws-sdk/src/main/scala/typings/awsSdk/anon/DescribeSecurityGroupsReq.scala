@@ -57,7 +57,8 @@ object DescribeSecurityGroupsReq {
     __obj.asInstanceOf[DescribeSecurityGroupsReq]
   }
   
-  extension [Self <: DescribeSecurityGroupsReq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSecurityGroupsReq] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

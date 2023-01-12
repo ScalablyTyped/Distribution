@@ -434,7 +434,8 @@ object libUpdateManagerMod {
       __obj.asInstanceOf[docReloadType]
     }
     
-    extension [Self <: docReloadType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: docReloadType] (val x: Self) extends AnyVal {
       
       inline def setReloadTimeCount(value: Double): Self = StObject.set(x, "reloadTimeCount", value.asInstanceOf[js.Any])
       

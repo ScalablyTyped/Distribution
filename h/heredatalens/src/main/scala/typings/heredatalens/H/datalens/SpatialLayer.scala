@@ -97,7 +97,8 @@ object SpatialLayer {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDataToRows(value: (/* data */ Data, /* x */ X, /* y */ Y, /* z */ Zoom) => js.Array[Row]): Self = StObject.set(x, "dataToRows", js.Any.fromFunction4(value))
       

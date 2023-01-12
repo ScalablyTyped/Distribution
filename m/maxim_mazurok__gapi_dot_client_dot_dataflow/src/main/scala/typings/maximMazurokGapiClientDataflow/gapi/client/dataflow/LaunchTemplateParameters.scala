@@ -32,7 +32,8 @@ object LaunchTemplateParameters {
     __obj.asInstanceOf[LaunchTemplateParameters]
   }
   
-  extension [Self <: LaunchTemplateParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateParameters] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: RuntimeEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     

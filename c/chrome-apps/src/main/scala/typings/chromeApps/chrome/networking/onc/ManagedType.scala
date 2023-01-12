@@ -45,7 +45,8 @@ object ManagedType {
     __obj.asInstanceOf[ManagedType[T]]
   }
   
-  extension [Self <: ManagedType[?], T](x: Self & ManagedType[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedType[?], T] (val x: Self & ManagedType[T]) extends AnyVal {
     
     inline def setActive(value: T): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     

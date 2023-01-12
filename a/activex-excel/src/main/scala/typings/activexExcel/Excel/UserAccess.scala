@@ -23,7 +23,8 @@ object UserAccess {
     __obj.asInstanceOf[UserAccess]
   }
   
-  extension [Self <: UserAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserAccess] (val x: Self) extends AnyVal {
     
     inline def setAllowEdit(value: Boolean): Self = StObject.set(x, "AllowEdit", value.asInstanceOf[js.Any])
     

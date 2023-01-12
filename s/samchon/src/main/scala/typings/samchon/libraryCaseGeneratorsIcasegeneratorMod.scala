@@ -30,7 +30,8 @@ object libraryCaseGeneratorsIcasegeneratorMod {
       __obj.asInstanceOf[ICaseGenerator]
     }
     
-    extension [Self <: ICaseGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICaseGenerator] (val x: Self) extends AnyVal {
       
       inline def setAt(value: Double => js.Array[Double]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
       

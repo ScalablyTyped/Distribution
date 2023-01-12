@@ -24,7 +24,8 @@ object IndicesIndexSettingsAnalysis {
     __obj.asInstanceOf[IndicesIndexSettingsAnalysis]
   }
   
-  extension [Self <: IndicesIndexSettingsAnalysis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesIndexSettingsAnalysis] (val x: Self) extends AnyVal {
     
     inline def setAnalyzer(value: Record[String, AnalysisAnalyzer]): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object servicesTokensMod {
       __obj.asInstanceOf[CreateTokenRequest]
     }
     
-    extension [Self <: CreateTokenRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateTokenRequest] (val x: Self) extends AnyVal {
       
       inline def setAllowedUrls(value: js.Array[String]): Self = StObject.set(x, "allowedUrls", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object servicesTokensMod {
       __obj.asInstanceOf[Scope]
     }
     
-    extension [Self <: Scope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object servicesTokensMod {
       __obj.asInstanceOf[TemporaryTokenRequest]
     }
     
-    extension [Self <: TemporaryTokenRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemporaryTokenRequest] (val x: Self) extends AnyVal {
       
       inline def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
@@ -171,7 +174,8 @@ object servicesTokensMod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -208,7 +212,8 @@ object servicesTokensMod {
       __obj.asInstanceOf[TokenDetail]
     }
     
-    extension [Self <: TokenDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenDetail] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -272,7 +277,8 @@ object servicesTokensMod {
       __obj.asInstanceOf[TokensService]
     }
     
-    extension [Self <: TokensService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokensService] (val x: Self) extends AnyVal {
       
       inline def setCreateTemporaryToken(value: TemporaryTokenRequest => MapiRequest[Any]): Self = StObject.set(x, "createTemporaryToken", js.Any.fromFunction1(value))
       
@@ -303,7 +309,8 @@ object servicesTokensMod {
       __obj.asInstanceOf[UpdateTokenRequest]
     }
     
-    extension [Self <: UpdateTokenRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateTokenRequest] (val x: Self) extends AnyVal {
       
       inline def setTokenId(value: String): Self = StObject.set(x, "tokenId", value.asInstanceOf[js.Any])
     }

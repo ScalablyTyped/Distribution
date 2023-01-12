@@ -126,7 +126,8 @@ object Six {
     __obj.asInstanceOf[Six]
   }
   
-  extension [Self <: Six](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Six] (val x: Self) extends AnyVal {
     
     inline def setDataProvider(value: DataProvider): Self = StObject.set(x, "DataProvider", value.asInstanceOf[js.Any])
     
@@ -187,7 +188,8 @@ object Six {
       __obj.asInstanceOf[PluginsMap]
     }
     
-    extension [Self <: PluginsMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginsMap] (val x: Self) extends AnyVal {
       
       inline def setSso(value: /* conf */ ssoConf => Any): Self = StObject.set(x, "sso", js.Any.fromFunction1(value))
       
@@ -220,7 +222,8 @@ object Six {
           __obj.asInstanceOf[DataProvider]
         }
         
-        extension [Self <: DataProvider](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: DataProvider] (val x: Self) extends AnyVal {
           
           inline def setExecute(value: (js.Object, Any) => Any): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
           
@@ -301,7 +304,8 @@ object Six {
           __obj.asInstanceOf[ssoClientConf]
         }
         
-        extension [Self <: ssoClientConf](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ssoClientConf] (val x: Self) extends AnyVal {
           
           inline def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
           
@@ -344,7 +348,8 @@ object Six {
           __obj.asInstanceOf[ssoConf]
         }
         
-        extension [Self <: ssoConf](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ssoConf] (val x: Self) extends AnyVal {
           
           inline def setAdapter(value: js.Object => js.Object): Self = StObject.set(x, "adapter", js.Any.fromFunction1(value))
           
@@ -381,7 +386,8 @@ object Six {
           __obj.asInstanceOf[token]
         }
         
-        extension [Self <: token](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: token] (val x: Self) extends AnyVal {
           
           inline def setExpiredTime(value: Double): Self = StObject.set(x, "expiredTime", value.asInstanceOf[js.Any])
           
@@ -424,7 +430,8 @@ object Six {
           __obj.asInstanceOf[cacheConf]
         }
         
-        extension [Self <: cacheConf](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: cacheConf] (val x: Self) extends AnyVal {
           
           inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
           
@@ -455,7 +462,8 @@ object Six {
           __obj.asInstanceOf[staticConf]
         }
         
-        extension [Self <: staticConf](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: staticConf] (val x: Self) extends AnyVal {
           
           inline def setCacheConf(value: cacheConf): Self = StObject.set(x, "cacheConf", value.asInstanceOf[js.Any])
           
@@ -523,7 +531,8 @@ object Six {
           __obj.asInstanceOf[uacConf]
         }
         
-        extension [Self <: uacConf](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: uacConf] (val x: Self) extends AnyVal {
           
           inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
           
@@ -587,7 +596,8 @@ object Six {
           __obj.asInstanceOf[upmConf]
         }
         
-        extension [Self <: upmConf](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: upmConf] (val x: Self) extends AnyVal {
           
           inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
           
@@ -640,7 +650,8 @@ object Six {
           __obj.asInstanceOf[runtimeConf]
         }
         
-        extension [Self <: runtimeConf](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: runtimeConf] (val x: Self) extends AnyVal {
           
           inline def setCodeKey(value: String): Self = StObject.set(x, "codeKey", value.asInstanceOf[js.Any])
           

@@ -19,7 +19,8 @@ object LineHeight {
     __obj.asInstanceOf[LineHeight]
   }
   
-  extension [Self <: LineHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineHeight] (val x: Self) extends AnyVal {
     
     inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     

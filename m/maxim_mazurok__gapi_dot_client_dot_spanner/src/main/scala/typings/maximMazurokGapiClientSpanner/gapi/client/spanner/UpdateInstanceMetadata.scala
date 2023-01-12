@@ -25,7 +25,8 @@ object UpdateInstanceMetadata {
     __obj.asInstanceOf[UpdateInstanceMetadata]
   }
   
-  extension [Self <: UpdateInstanceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateInstanceMetadata] (val x: Self) extends AnyVal {
     
     inline def setCancelTime(value: String): Self = StObject.set(x, "cancelTime", value.asInstanceOf[js.Any])
     

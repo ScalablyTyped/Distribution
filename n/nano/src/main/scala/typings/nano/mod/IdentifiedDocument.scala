@@ -15,7 +15,8 @@ object IdentifiedDocument {
     __obj.asInstanceOf[IdentifiedDocument]
   }
   
-  extension [Self <: IdentifiedDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentifiedDocument] (val x: Self) extends AnyVal {
     
     inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }

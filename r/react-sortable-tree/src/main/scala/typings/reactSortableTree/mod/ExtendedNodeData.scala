@@ -31,7 +31,8 @@ object ExtendedNodeData {
     __obj.asInstanceOf[ExtendedNodeData[T]]
   }
   
-  extension [Self <: ExtendedNodeData[?], T](x: Self & ExtendedNodeData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendedNodeData[?], T] (val x: Self & ExtendedNodeData[T]) extends AnyVal {
     
     inline def setIsSearchFocus(value: Boolean): Self = StObject.set(x, "isSearchFocus", value.asInstanceOf[js.Any])
     

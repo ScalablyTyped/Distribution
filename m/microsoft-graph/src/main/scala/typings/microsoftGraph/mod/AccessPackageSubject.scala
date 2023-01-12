@@ -39,7 +39,8 @@ object AccessPackageSubject {
     __obj.asInstanceOf[AccessPackageSubject]
   }
   
-  extension [Self <: AccessPackageSubject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessPackageSubject] (val x: Self) extends AnyVal {
     
     inline def setConnectedOrganization(value: NullableOption[ConnectedOrganization]): Self = StObject.set(x, "connectedOrganization", value.asInstanceOf[js.Any])
     

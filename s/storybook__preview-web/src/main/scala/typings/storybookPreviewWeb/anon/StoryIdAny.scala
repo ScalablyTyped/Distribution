@@ -17,7 +17,8 @@ object StoryIdAny {
     __obj.asInstanceOf[StoryIdAny]
   }
   
-  extension [Self <: StoryIdAny](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoryIdAny] (val x: Self) extends AnyVal {
     
     inline def setStoryId(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any

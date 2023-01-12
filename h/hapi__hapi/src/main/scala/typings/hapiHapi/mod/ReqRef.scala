@@ -40,7 +40,8 @@ object ReqRef {
     __obj.asInstanceOf[ReqRef]
   }
   
-  extension [Self <: ReqRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReqRef] (val x: Self) extends AnyVal {
     
     inline def setAuthApi(value: Any): Self = StObject.set(x, "AuthApi", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object typesDataRetrievalRuleMod {
       __obj.asInstanceOf[DataRetrievalRule]
     }
     
-    extension [Self <: DataRetrievalRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataRetrievalRule] (val x: Self) extends AnyVal {
       
       inline def setBytesPerHour(value: Double): Self = StObject.set(x, "BytesPerHour", value.asInstanceOf[js.Any])
       

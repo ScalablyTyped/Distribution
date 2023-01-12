@@ -28,7 +28,8 @@ object AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetails {
     __obj.asInstanceOf[AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetails]
   }
   
-  extension [Self <: AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetails] (val x: Self) extends AnyVal {
     
     inline def setDate(value: NonEmptyString): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     

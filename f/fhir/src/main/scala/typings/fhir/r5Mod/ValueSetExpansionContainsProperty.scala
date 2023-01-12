@@ -65,7 +65,8 @@ object ValueSetExpansionContainsProperty {
     __obj.asInstanceOf[ValueSetExpansionContainsProperty]
   }
   
-  extension [Self <: ValueSetExpansionContainsProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueSetExpansionContainsProperty] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

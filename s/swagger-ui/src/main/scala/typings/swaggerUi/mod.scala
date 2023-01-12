@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[PluginsOptions]
     }
     
-    extension [Self <: PluginsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginsOptions] (val x: Self) extends AnyVal {
       
       inline def setPluginLoadType(value: PluginLoadType): Self = StObject.set(x, "pluginLoadType", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object mod {
       __obj.asInstanceOf[SwaggerUI]
     }
     
-    extension [Self <: SwaggerUI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwaggerUI] (val x: Self) extends AnyVal {
       
       inline def setInitOAuth(value: Any => Unit): Self = StObject.set(x, "initOAuth", js.Any.fromFunction1(value))
       
@@ -407,7 +409,8 @@ object mod {
       __obj.asInstanceOf[SwaggerUIOptions]
     }
     
-    extension [Self <: SwaggerUIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwaggerUIOptions] (val x: Self) extends AnyVal {
       
       inline def setConfigUrl(value: String): Self = StObject.set(x, "configUrl", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object distEs5ComponentMod {
       __obj.asInstanceOf[BodyScroll]
     }
     
-    extension [Self <: BodyScroll](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyScroll] (val x: Self) extends AnyVal {
       
       inline def setGapMode(value: GapMode): Self = StObject.set(x, "gapMode", value.asInstanceOf[js.Any])
       

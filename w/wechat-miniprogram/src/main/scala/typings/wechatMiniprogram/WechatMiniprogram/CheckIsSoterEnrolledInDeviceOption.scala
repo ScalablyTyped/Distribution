@@ -33,7 +33,8 @@ object CheckIsSoterEnrolledInDeviceOption {
     __obj.asInstanceOf[CheckIsSoterEnrolledInDeviceOption]
   }
   
-  extension [Self <: CheckIsSoterEnrolledInDeviceOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckIsSoterEnrolledInDeviceOption] (val x: Self) extends AnyVal {
     
     inline def setCheckAuthMode(value: fingerPrint | facial | speech): Self = StObject.set(x, "checkAuthMode", value.asInstanceOf[js.Any])
     

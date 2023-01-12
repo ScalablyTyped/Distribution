@@ -35,7 +35,8 @@ object DelayedCallbackEvent {
     __obj.asInstanceOf[DelayedCallbackEvent]
   }
   
-  extension [Self <: DelayedCallbackEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelayedCallbackEvent] (val x: Self) extends AnyVal {
     
     inline def setGetDelayTime(value: () => Double): Self = StObject.set(x, "getDelayTime", js.Any.fromFunction0(value))
     

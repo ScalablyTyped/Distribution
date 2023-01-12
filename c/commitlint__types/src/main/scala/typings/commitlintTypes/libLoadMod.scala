@@ -32,7 +32,8 @@ object libLoadMod {
       __obj.asInstanceOf[LoadOptions]
     }
     
-    extension [Self <: LoadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object libLoadMod {
       __obj.asInstanceOf[ParserPreset]
     }
     
-    extension [Self <: ParserPreset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserPreset] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object libLoadMod {
       __obj.asInstanceOf[Plugin]
     }
     
-    extension [Self <: Plugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
       
       inline def setRules(value: StringDictionary[Rule[scala.Nothing] | AsyncRule[scala.Nothing] | SyncRule[scala.Nothing]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     }
@@ -129,7 +132,8 @@ object libLoadMod {
       __obj.asInstanceOf[QualifiedConfig]
     }
     
-    extension [Self <: QualifiedConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QualifiedConfig] (val x: Self) extends AnyVal {
       
       inline def setDefaultIgnores(value: Boolean): Self = StObject.set(x, "defaultIgnores", value.asInstanceOf[js.Any])
       
@@ -239,7 +243,8 @@ object libLoadMod {
       __obj.asInstanceOf[QualifiedRules]
     }
     
-    extension [Self <: QualifiedRules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QualifiedRules] (val x: Self) extends AnyVal {
       
       inline def `setBody-case`(value: CaseRuleConfig[Qualified]): Self = StObject.set(x, "body-case", value.asInstanceOf[js.Any])
       
@@ -476,7 +481,8 @@ object libLoadMod {
       __obj.asInstanceOf[UserConfig]
     }
     
-    extension [Self <: UserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserConfig] (val x: Self) extends AnyVal {
       
       inline def setDefaultIgnores(value: Boolean): Self = StObject.set(x, "defaultIgnores", value.asInstanceOf[js.Any])
       

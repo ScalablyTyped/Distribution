@@ -23,7 +23,8 @@ object GetInlineStylesForNodeResponse {
     __obj.asInstanceOf[GetInlineStylesForNodeResponse]
   }
   
-  extension [Self <: GetInlineStylesForNodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInlineStylesForNodeResponse] (val x: Self) extends AnyVal {
     
     inline def setAttributesStyle(value: CSSStyle): Self = StObject.set(x, "attributesStyle", value.asInstanceOf[js.Any])
     

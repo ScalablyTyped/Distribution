@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[AddSource_]
     }
     
-    extension [Self <: AddSource_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddSource_] (val x: Self) extends AnyVal {
       
       inline def setGetProxies(value: InternalOptions => GetProxiesEventEmitter): Self = StObject.set(x, "getProxies", js.Any.fromFunction1(value))
       
@@ -104,7 +105,8 @@ object mod {
       __obj.asInstanceOf[InternalOptions]
     }
     
-    extension [Self <: InternalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalOptions] (val x: Self) extends AnyVal {
       
       inline def setSample(value: Boolean): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object mod {
       __obj.asInstanceOf[ListSourcesOptions]
     }
     
-    extension [Self <: ListSourcesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListSourcesOptions] (val x: Self) extends AnyVal {
       
       inline def setSourcesBlackList(value: js.Array[String]): Self = StObject.set(x, "sourcesBlackList", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAnonymityLevels(value: js.Array[AnonymityLevel]): Self = StObject.set(x, "anonymityLevels", value.asInstanceOf[js.Any])
       
@@ -269,7 +273,8 @@ object mod {
       __obj.asInstanceOf[Proxy]
     }
     
-    extension [Self <: Proxy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Proxy] (val x: Self) extends AnyVal {
       
       inline def setAnonymityLevel(value: AnonymityLevel): Self = StObject.set(x, "anonymityLevel", value.asInstanceOf[js.Any])
       
@@ -308,7 +313,8 @@ object mod {
       __obj.asInstanceOf[Source]
     }
     
-    extension [Self <: Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
       
       inline def setHomeUrl(value: String): Self = StObject.set(x, "homeUrl", value.asInstanceOf[js.Any])
       

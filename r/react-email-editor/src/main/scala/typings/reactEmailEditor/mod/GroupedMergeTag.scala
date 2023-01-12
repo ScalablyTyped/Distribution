@@ -19,7 +19,8 @@ object GroupedMergeTag {
     __obj.asInstanceOf[GroupedMergeTag]
   }
   
-  extension [Self <: GroupedMergeTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupedMergeTag] (val x: Self) extends AnyVal {
     
     inline def setMergeTags(value: js.Array[SimpleMergeTag | GroupedMergeTag]): Self = StObject.set(x, "mergeTags", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object UnityMediaPlayer {
     __obj.asInstanceOf[UnityMediaPlayer]
   }
   
-  extension [Self <: UnityMediaPlayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnityMediaPlayer] (val x: Self) extends AnyVal {
     
     inline def setGetPlaybackstate(value: js.Function => Any): Self = StObject.set(x, "getPlaybackstate", js.Any.fromFunction1(value))
     

@@ -33,7 +33,8 @@ object PlaybackKeyPair {
     __obj.asInstanceOf[PlaybackKeyPair]
   }
   
-  extension [Self <: PlaybackKeyPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackKeyPair] (val x: Self) extends AnyVal {
     
     inline def setArn(value: PlaybackKeyPairArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

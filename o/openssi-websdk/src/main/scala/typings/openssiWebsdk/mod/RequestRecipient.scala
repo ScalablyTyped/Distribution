@@ -17,7 +17,8 @@ object RequestRecipient {
     __obj.asInstanceOf[RequestRecipient]
   }
   
-  extension [Self <: RequestRecipient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestRecipient] (val x: Self) extends AnyVal {
     
     inline def setDid(value: DID): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
     

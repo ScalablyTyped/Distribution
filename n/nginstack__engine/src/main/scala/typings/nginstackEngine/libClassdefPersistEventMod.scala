@@ -43,7 +43,8 @@ object libClassdefPersistEventMod {
       __obj.asInstanceOf[PersistEvent]
     }
     
-    extension [Self <: PersistEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistEvent] (val x: Self) extends AnyVal {
       
       inline def setAction(value: typings.nginstackEngine.libDatasetApplyUpdatesActionMod.^): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object typesPrecacheEntryMod {
       __obj.asInstanceOf[PrecacheEntry]
     }
     
-    extension [Self <: PrecacheEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrecacheEntry] (val x: Self) extends AnyVal {
       
       inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
       

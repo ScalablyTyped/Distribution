@@ -15,7 +15,8 @@ object IsPrivate {
     __obj.asInstanceOf[IsPrivate]
   }
   
-  extension [Self <: IsPrivate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsPrivate] (val x: Self) extends AnyVal {
     
     inline def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
   }

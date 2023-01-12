@@ -23,7 +23,8 @@ object CommonMixin {
     __obj.asInstanceOf[CommonMixin]
   }
   
-  extension [Self <: CommonMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonMixin] (val x: Self) extends AnyVal {
     
     inline def setBindEvents(value: Any): Self = StObject.set(x, "bindEvents", value.asInstanceOf[js.Any])
     

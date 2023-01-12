@@ -23,7 +23,8 @@ object MakeTextUpperCaseCommand {
     __obj.asInstanceOf[MakeTextUpperCaseCommand]
   }
   
-  extension [Self <: MakeTextUpperCaseCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MakeTextUpperCaseCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

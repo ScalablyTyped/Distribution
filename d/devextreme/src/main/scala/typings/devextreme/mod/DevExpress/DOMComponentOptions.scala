@@ -48,7 +48,8 @@ object DOMComponentOptions {
     __obj.asInstanceOf[DOMComponentOptions[TComponent]]
   }
   
-  extension [Self <: DOMComponentOptions[?], TComponent](x: Self & DOMComponentOptions[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMComponentOptions[?], TComponent] (val x: Self & DOMComponentOptions[TComponent]) extends AnyVal {
     
     inline def setBindingOptions(value: StringDictionary[Any]): Self = StObject.set(x, "bindingOptions", value.asInstanceOf[js.Any])
     

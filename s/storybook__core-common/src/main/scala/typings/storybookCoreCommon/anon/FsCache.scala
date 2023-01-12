@@ -17,7 +17,8 @@ object FsCache {
     __obj.asInstanceOf[FsCache]
   }
   
-  extension [Self <: FsCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FsCache] (val x: Self) extends AnyVal {
     
     inline def setFsCache(value: Boolean): Self = StObject.set(x, "fsCache", value.asInstanceOf[js.Any])
     

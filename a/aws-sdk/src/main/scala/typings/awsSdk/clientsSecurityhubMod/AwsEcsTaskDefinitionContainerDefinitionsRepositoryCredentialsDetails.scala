@@ -18,7 +18,8 @@ object AwsEcsTaskDefinitionContainerDefinitionsRepositoryCredentialsDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionContainerDefinitionsRepositoryCredentialsDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionContainerDefinitionsRepositoryCredentialsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionContainerDefinitionsRepositoryCredentialsDetails] (val x: Self) extends AnyVal {
     
     inline def setCredentialsParameter(value: NonEmptyString): Self = StObject.set(x, "CredentialsParameter", value.asInstanceOf[js.Any])
     

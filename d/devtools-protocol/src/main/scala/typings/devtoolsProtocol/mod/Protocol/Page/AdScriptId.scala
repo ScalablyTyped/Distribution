@@ -26,7 +26,8 @@ object AdScriptId {
     __obj.asInstanceOf[AdScriptId]
   }
   
-  extension [Self <: AdScriptId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdScriptId] (val x: Self) extends AnyVal {
     
     inline def setDebuggerId(value: UniqueDebuggerId): Self = StObject.set(x, "debuggerId", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object IgColorPickerSplitButtonMethods {
     __obj.asInstanceOf[IgColorPickerSplitButtonMethods]
   }
   
-  extension [Self <: IgColorPickerSplitButtonMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgColorPickerSplitButtonMethods] (val x: Self) extends AnyVal {
     
     inline def setCollapse(value: js.Object => js.Object): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
     

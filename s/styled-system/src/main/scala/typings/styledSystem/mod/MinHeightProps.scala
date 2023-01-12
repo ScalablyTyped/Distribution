@@ -21,7 +21,8 @@ object MinHeightProps {
     __obj.asInstanceOf[MinHeightProps[ThemeType, TVal]]
   }
   
-  extension [Self <: MinHeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (MinHeightProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinHeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (MinHeightProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setMinHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     

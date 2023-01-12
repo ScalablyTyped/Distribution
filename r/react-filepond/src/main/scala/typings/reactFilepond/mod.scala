@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[FilePondProps]
     }
     
-    extension [Self <: FilePondProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilePondProps] (val x: Self) extends AnyVal {
       
       inline def setAcceptedFileTypes(value: js.Array[String]): Self = StObject.set(x, "acceptedFileTypes", value.asInstanceOf[js.Any])
       

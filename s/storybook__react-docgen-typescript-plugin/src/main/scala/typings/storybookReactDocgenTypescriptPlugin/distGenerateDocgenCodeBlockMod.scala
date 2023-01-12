@@ -40,7 +40,8 @@ object distGenerateDocgenCodeBlockMod {
       __obj.asInstanceOf[GeneratorOptions]
     }
     
-    extension [Self <: GeneratorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneratorOptions] (val x: Self) extends AnyVal {
       
       inline def setComponentDocs(value: js.Array[ComponentDoc]): Self = StObject.set(x, "componentDocs", value.asInstanceOf[js.Any])
       

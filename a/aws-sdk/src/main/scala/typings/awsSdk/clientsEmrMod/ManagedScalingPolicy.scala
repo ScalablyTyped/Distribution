@@ -18,7 +18,8 @@ object ManagedScalingPolicy {
     __obj.asInstanceOf[ManagedScalingPolicy]
   }
   
-  extension [Self <: ManagedScalingPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedScalingPolicy] (val x: Self) extends AnyVal {
     
     inline def setComputeLimits(value: ComputeLimits): Self = StObject.set(x, "ComputeLimits", value.asInstanceOf[js.Any])
     

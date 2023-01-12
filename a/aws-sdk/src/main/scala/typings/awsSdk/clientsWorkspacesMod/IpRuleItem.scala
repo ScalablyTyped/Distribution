@@ -23,7 +23,8 @@ object IpRuleItem {
     __obj.asInstanceOf[IpRuleItem]
   }
   
-  extension [Self <: IpRuleItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpRuleItem] (val x: Self) extends AnyVal {
     
     inline def setIpRule(value: IpRule): Self = StObject.set(x, "ipRule", value.asInstanceOf[js.Any])
     

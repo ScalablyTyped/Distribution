@@ -20,7 +20,8 @@ object SystemInfoStorage {
     __obj.asInstanceOf[SystemInfoStorage]
   }
   
-  extension [Self <: SystemInfoStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoStorage] (val x: Self) extends AnyVal {
     
     inline def setUnits(value: js.Array[SystemInfoStorageUnit]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     

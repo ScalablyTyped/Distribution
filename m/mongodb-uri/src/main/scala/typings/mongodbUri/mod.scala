@@ -69,7 +69,8 @@ object mod {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object mod {
       __obj.asInstanceOf[UriObject]
     }
     
-    extension [Self <: UriObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UriObject] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,8 @@ object mod {
       __obj.asInstanceOf[parserOptions]
     }
     
-    extension [Self <: parserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: parserOptions] (val x: Self) extends AnyVal {
       
       inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     }

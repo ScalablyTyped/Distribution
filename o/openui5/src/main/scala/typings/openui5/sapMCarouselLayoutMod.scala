@@ -176,7 +176,8 @@ object sapMCarouselLayoutMod {
       __obj.asInstanceOf[CarouselLayoutSettings]
     }
     
-    extension [Self <: CarouselLayoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselLayoutSettings] (val x: Self) extends AnyVal {
       
       inline def setVisiblePagesCount(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "visiblePagesCount", value.asInstanceOf[js.Any])
       

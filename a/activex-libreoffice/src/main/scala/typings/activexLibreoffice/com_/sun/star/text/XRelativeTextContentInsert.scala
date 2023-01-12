@@ -41,7 +41,8 @@ object XRelativeTextContentInsert {
     __obj.asInstanceOf[XRelativeTextContentInsert]
   }
   
-  extension [Self <: XRelativeTextContentInsert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRelativeTextContentInsert] (val x: Self) extends AnyVal {
     
     inline def setInsertTextContentAfter(value: (XTextContent, XTextContent) => Unit): Self = StObject.set(x, "insertTextContentAfter", js.Any.fromFunction2(value))
     

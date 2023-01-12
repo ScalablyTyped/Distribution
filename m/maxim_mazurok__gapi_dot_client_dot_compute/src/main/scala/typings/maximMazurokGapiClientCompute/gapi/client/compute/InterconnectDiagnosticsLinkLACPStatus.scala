@@ -25,7 +25,8 @@ object InterconnectDiagnosticsLinkLACPStatus {
     __obj.asInstanceOf[InterconnectDiagnosticsLinkLACPStatus]
   }
   
-  extension [Self <: InterconnectDiagnosticsLinkLACPStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterconnectDiagnosticsLinkLACPStatus] (val x: Self) extends AnyVal {
     
     inline def setGoogleSystemId(value: String): Self = StObject.set(x, "googleSystemId", value.asInstanceOf[js.Any])
     

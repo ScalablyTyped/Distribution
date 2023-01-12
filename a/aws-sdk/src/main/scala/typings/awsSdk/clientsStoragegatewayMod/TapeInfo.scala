@@ -53,7 +53,8 @@ object TapeInfo {
     __obj.asInstanceOf[TapeInfo]
   }
   
-  extension [Self <: TapeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TapeInfo] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object AxisCrosshairLabelOptions {
     __obj.asInstanceOf[AxisCrosshairLabelOptions]
   }
   
-  extension [Self <: AxisCrosshairLabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisCrosshairLabelOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

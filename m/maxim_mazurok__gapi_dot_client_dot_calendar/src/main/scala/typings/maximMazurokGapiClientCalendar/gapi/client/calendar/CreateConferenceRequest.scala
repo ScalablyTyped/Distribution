@@ -25,7 +25,8 @@ object CreateConferenceRequest {
     __obj.asInstanceOf[CreateConferenceRequest]
   }
   
-  extension [Self <: CreateConferenceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConferenceRequest] (val x: Self) extends AnyVal {
     
     inline def setConferenceSolutionKey(value: ConferenceSolutionKey): Self = StObject.set(x, "conferenceSolutionKey", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Root {
     __obj.asInstanceOf[Root]
   }
   
-  extension [Self <: Root](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
     
     inline def setApp(value: typings.vueDevtoolsApi.libEsmApiAppMod.App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

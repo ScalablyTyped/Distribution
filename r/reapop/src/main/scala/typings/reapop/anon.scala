@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[DismissNotification]
     }
     
-    extension [Self <: DismissNotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DismissNotification] (val x: Self) extends AnyVal {
       
       inline def setDismissNotification(value: /* id */ String => Unit): Self = StObject.set(x, "dismissNotification", js.Any.fromFunction1(value))
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Duration]
     }
     
-    extension [Self <: Duration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Notification]
     }
     
-    extension [Self <: Notification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object anon {
       __obj.asInstanceOf[PartialNotification]
     }
     
-    extension [Self <: PartialNotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialNotification] (val x: Self) extends AnyVal {
       
       inline def setAllowHTML(value: Boolean): Self = StObject.set(x, "allowHTML", value.asInstanceOf[js.Any])
       
@@ -203,7 +207,8 @@ object anon {
       __obj.asInstanceOf[PartialNotificationConfig]
     }
     
-    extension [Self <: PartialNotificationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialNotificationConfig] (val x: Self) extends AnyVal {
       
       inline def setCustomizeNotification(value: /* notification */ NewNotification => Unit): Self = StObject.set(x, "customizeNotification", js.Any.fromFunction1(value))
       

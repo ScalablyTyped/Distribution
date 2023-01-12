@@ -28,7 +28,8 @@ object BatchEvaluateGeofencesError {
     __obj.asInstanceOf[BatchEvaluateGeofencesError]
   }
   
-  extension [Self <: BatchEvaluateGeofencesError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchEvaluateGeofencesError] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: Id): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     

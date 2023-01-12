@@ -19,7 +19,8 @@ object TipDropin {
     __obj.asInstanceOf[TipDropin]
   }
   
-  extension [Self <: TipDropin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TipDropin] (val x: Self) extends AnyVal {
     
     inline def setChargeId(value: String): Self = StObject.set(x, "chargeId", value.asInstanceOf[js.Any])
     

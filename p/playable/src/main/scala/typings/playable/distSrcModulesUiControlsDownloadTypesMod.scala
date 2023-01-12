@@ -35,7 +35,8 @@ object distSrcModulesUiControlsDownloadTypesMod {
       __obj.asInstanceOf[IDownloadButton]
     }
     
-    extension [Self <: IDownloadButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDownloadButton] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -60,7 +61,8 @@ object distSrcModulesUiControlsDownloadTypesMod {
       __obj.asInstanceOf[IDownloadButtonAPI]
     }
     
-    extension [Self <: IDownloadButtonAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDownloadButtonAPI] (val x: Self) extends AnyVal {
       
       inline def setSetDownloadClickCallback(value: /* callback */ js.Function0[Unit] => Unit): Self = StObject.set(x, "setDownloadClickCallback", js.Any.fromFunction1(value))
       
@@ -79,7 +81,8 @@ object distSrcModulesUiControlsDownloadTypesMod {
       __obj.asInstanceOf[IDownloadViewCallbacks]
     }
     
-    extension [Self <: IDownloadViewCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDownloadViewCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnButtonClick(value: () => Unit): Self = StObject.set(x, "onButtonClick", js.Any.fromFunction0(value))
     }
@@ -107,7 +110,8 @@ object distSrcModulesUiControlsDownloadTypesMod {
       __obj.asInstanceOf[IDownloadViewConfig]
     }
     
-    extension [Self <: IDownloadViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDownloadViewConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: IDownloadViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -134,7 +138,8 @@ object distSrcModulesUiControlsDownloadTypesMod {
       __obj.asInstanceOf[IDownloadViewStyles]
     }
     
-    extension [Self <: IDownloadViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDownloadViewStyles] (val x: Self) extends AnyVal {
       
       inline def setButtonWrapper(value: String): Self = StObject.set(x, "buttonWrapper", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object filteringMatchTypeSettingsMod {
       __obj.asInstanceOf[MatchTypeSettings]
     }
     
-    extension [Self <: MatchTypeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchTypeSettings] (val x: Self) extends AnyVal {
       
       inline def setInput(value: MatchType): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       

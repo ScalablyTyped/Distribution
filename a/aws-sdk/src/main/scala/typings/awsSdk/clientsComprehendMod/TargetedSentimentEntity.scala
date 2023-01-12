@@ -23,7 +23,8 @@ object TargetedSentimentEntity {
     __obj.asInstanceOf[TargetedSentimentEntity]
   }
   
-  extension [Self <: TargetedSentimentEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedSentimentEntity] (val x: Self) extends AnyVal {
     
     inline def setDescriptiveMentionIndex(value: ListOfDescriptiveMentionIndices): Self = StObject.set(x, "DescriptiveMentionIndex", value.asInstanceOf[js.Any])
     

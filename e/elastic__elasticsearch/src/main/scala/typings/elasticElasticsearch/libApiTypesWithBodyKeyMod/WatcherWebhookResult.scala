@@ -17,7 +17,8 @@ object WatcherWebhookResult {
     __obj.asInstanceOf[WatcherWebhookResult]
   }
   
-  extension [Self <: WatcherWebhookResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherWebhookResult] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: WatcherHttpInputRequestResult): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

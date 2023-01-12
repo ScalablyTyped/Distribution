@@ -28,7 +28,8 @@ object ASPxClientDockManagerProcessingModeEventArgs {
     __obj.asInstanceOf[ASPxClientDockManagerProcessingModeEventArgs]
   }
   
-  extension [Self <: ASPxClientDockManagerProcessingModeEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDockManagerProcessingModeEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPanel(value: ASPxClientDockPanel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ExistenceFilter {
     __obj.asInstanceOf[ExistenceFilter]
   }
   
-  extension [Self <: ExistenceFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExistenceFilter] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

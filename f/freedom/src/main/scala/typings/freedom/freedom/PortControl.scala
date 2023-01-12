@@ -37,7 +37,8 @@ object PortControl {
       __obj.asInstanceOf[Mapping]
     }
     
-    extension [Self <: Mapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mapping] (val x: Self) extends AnyVal {
       
       inline def setErrInfo(value: String): Self = StObject.set(x, "errInfo", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object PortControl {
       __obj.asInstanceOf[ProtocolSupport]
     }
     
-    extension [Self <: ProtocolSupport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtocolSupport] (val x: Self) extends AnyVal {
       
       inline def setNatPmp(value: Boolean): Self = StObject.set(x, "natPmp", value.asInstanceOf[js.Any])
       

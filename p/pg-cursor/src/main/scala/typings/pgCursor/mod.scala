@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[CursorQueryConfig]
     }
     
-    extension [Self <: CursorQueryConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CursorQueryConfig] (val x: Self) extends AnyVal {
       
       inline def setRowMode(value: array): Self = StObject.set(x, "rowMode", value.asInstanceOf[js.Any])
       

@@ -55,7 +55,8 @@ object PutExternalModelRequest {
     __obj.asInstanceOf[PutExternalModelRequest]
   }
   
-  extension [Self <: PutExternalModelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutExternalModelRequest] (val x: Self) extends AnyVal {
     
     inline def setInputConfiguration(value: ModelInputConfiguration): Self = StObject.set(x, "inputConfiguration", value.asInstanceOf[js.Any])
     

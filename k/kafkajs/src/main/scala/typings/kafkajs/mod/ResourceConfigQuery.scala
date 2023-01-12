@@ -20,7 +20,8 @@ object ResourceConfigQuery {
     __obj.asInstanceOf[ResourceConfigQuery]
   }
   
-  extension [Self <: ResourceConfigQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceConfigQuery] (val x: Self) extends AnyVal {
     
     inline def setConfigNames(value: js.Array[String]): Self = StObject.set(x, "configNames", value.asInstanceOf[js.Any])
     

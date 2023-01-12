@@ -57,7 +57,8 @@ object adminUserClientMod {
       __obj.asInstanceOf[AdminUserAttributes]
     }
     
-    extension [Self <: AdminUserAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdminUserAttributes] (val x: Self) extends AnyVal {
       
       inline def setAccountType(value: String): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object adminUserClientMod {
       __obj.asInstanceOf[AdminUserInfo]
     }
     
-    extension [Self <: AdminUserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdminUserInfo] (val x: Self) extends AnyVal {
       
       inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object adminUserClientMod {
       __obj.asInstanceOf[AdminUserSystemInfo]
     }
     
-    extension [Self <: AdminUserSystemInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdminUserSystemInfo] (val x: Self) extends AnyVal {
       
       inline def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       

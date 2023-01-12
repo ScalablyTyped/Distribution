@@ -21,7 +21,8 @@ object HashClientIdResponse {
     __obj.asInstanceOf[HashClientIdResponse]
   }
   
-  extension [Self <: HashClientIdResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashClientIdResponse] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

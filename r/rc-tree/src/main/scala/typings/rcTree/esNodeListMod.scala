@@ -131,7 +131,8 @@ object esNodeListMod {
       __obj.asInstanceOf[NodeListProps[TreeDataType]]
     }
     
-    extension [Self <: NodeListProps[?], TreeDataType](x: Self & NodeListProps[TreeDataType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeListProps[?], TreeDataType] (val x: Self & NodeListProps[TreeDataType]) extends AnyVal {
       
       inline def setActiveItem(value: FlattenNode[TreeDataType]): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
       
@@ -240,7 +241,8 @@ object esNodeListMod {
       __obj.asInstanceOf[NodeListRef]
     }
     
-    extension [Self <: NodeListRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeListRef] (val x: Self) extends AnyVal {
       
       inline def setGetIndentWidth(value: () => Double): Self = StObject.set(x, "getIndentWidth", js.Any.fromFunction0(value))
       

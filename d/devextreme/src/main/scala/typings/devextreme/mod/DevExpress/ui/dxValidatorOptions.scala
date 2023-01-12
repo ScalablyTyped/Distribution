@@ -43,7 +43,8 @@ object dxValidatorOptions {
     __obj.asInstanceOf[dxValidatorOptions]
   }
   
-  extension [Self <: dxValidatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxValidatorOptions] (val x: Self) extends AnyVal {
     
     inline def setAdapter(value: ApplyValidationResults): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     

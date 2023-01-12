@@ -21,7 +21,8 @@ object DanglingIndicesListDanglingIndicesDanglingIndex {
     __obj.asInstanceOf[DanglingIndicesListDanglingIndicesDanglingIndex]
   }
   
-  extension [Self <: DanglingIndicesListDanglingIndicesDanglingIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DanglingIndicesListDanglingIndicesDanglingIndex] (val x: Self) extends AnyVal {
     
     inline def setCreation_date_millis(value: EpochTime[UnitMillis]): Self = StObject.set(x, "creation_date_millis", value.asInstanceOf[js.Any])
     

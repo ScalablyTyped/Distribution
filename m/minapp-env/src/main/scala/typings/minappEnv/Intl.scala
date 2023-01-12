@@ -25,7 +25,8 @@ object Intl {
       __obj.asInstanceOf[Collator]
     }
     
-    extension [Self <: Collator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Collator] (val x: Self) extends AnyVal {
       
       inline def setCompare(value: (java.lang.String, java.lang.String) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
       
@@ -54,7 +55,8 @@ object Intl {
       __obj.asInstanceOf[CollatorOptions]
     }
     
-    extension [Self <: CollatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollatorOptions] (val x: Self) extends AnyVal {
       
       inline def setCaseFirst(value: java.lang.String): Self = StObject.set(x, "caseFirst", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object Intl {
       __obj.asInstanceOf[DateTimeFormatOptions]
     }
     
-    extension [Self <: DateTimeFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTimeFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setDay(value: java.lang.String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -196,7 +199,8 @@ object Intl {
       __obj.asInstanceOf[NumberFormat]
     }
     
-    extension [Self <: NumberFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberFormat] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: Double => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
@@ -233,7 +237,8 @@ object Intl {
       __obj.asInstanceOf[NumberFormatOptions]
     }
     
-    extension [Self <: NumberFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: java.lang.String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
@@ -308,7 +313,8 @@ object Intl {
       __obj.asInstanceOf[ResolvedCollatorOptions]
     }
     
-    extension [Self <: ResolvedCollatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedCollatorOptions] (val x: Self) extends AnyVal {
       
       inline def setCaseFirst(value: java.lang.String): Self = StObject.set(x, "caseFirst", value.asInstanceOf[js.Any])
       
@@ -368,7 +374,8 @@ object Intl {
       __obj.asInstanceOf[ResolvedDateTimeFormatOptions]
     }
     
-    extension [Self <: ResolvedDateTimeFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedDateTimeFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setCalendar(value: java.lang.String): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
       
@@ -459,7 +466,8 @@ object Intl {
       __obj.asInstanceOf[ResolvedNumberFormatOptions]
     }
     
-    extension [Self <: ResolvedNumberFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedNumberFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: java.lang.String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       

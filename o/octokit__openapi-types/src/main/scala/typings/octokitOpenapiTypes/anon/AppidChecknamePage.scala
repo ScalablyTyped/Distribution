@@ -25,7 +25,8 @@ object AppidChecknamePage {
     __obj.asInstanceOf[AppidChecknamePage]
   }
   
-  extension [Self <: AppidChecknamePage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppidChecknamePage] (val x: Self) extends AnyVal {
     
     inline def setApp_id(value: Double): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
     

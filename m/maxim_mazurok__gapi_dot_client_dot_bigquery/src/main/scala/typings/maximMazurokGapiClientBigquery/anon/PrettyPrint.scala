@@ -41,7 +41,8 @@ object PrettyPrint {
     __obj.asInstanceOf[PrettyPrint]
   }
   
-  extension [Self <: PrettyPrint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrettyPrint] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

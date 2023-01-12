@@ -22,7 +22,8 @@ object GoogleCloudDialogflowCxV3beta1EnvironmentTestCasesConfig {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1EnvironmentTestCasesConfig]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1EnvironmentTestCasesConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1EnvironmentTestCasesConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableContinuousRun(value: Boolean): Self = StObject.set(x, "enableContinuousRun", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object BytesInOutput {
     __obj.asInstanceOf[BytesInOutput]
   }
   
-  extension [Self <: BytesInOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BytesInOutput] (val x: Self) extends AnyVal {
     
     inline def setBytesInOutput(value: Double): Self = StObject.set(x, "bytesInOutput", value.asInstanceOf[js.Any])
   }

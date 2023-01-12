@@ -37,7 +37,8 @@ object Transform {
     __obj.asInstanceOf[Transform]
   }
   
-  extension [Self <: Transform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
     
     inline def setPerspective(value: Double | Animation): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
     

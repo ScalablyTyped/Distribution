@@ -18,7 +18,8 @@ object ListDomainNamesRequest {
     __obj.asInstanceOf[ListDomainNamesRequest]
   }
   
-  extension [Self <: ListDomainNamesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDomainNamesRequest] (val x: Self) extends AnyVal {
     
     inline def setEngineType(value: EngineType): Self = StObject.set(x, "EngineType", value.asInstanceOf[js.Any])
     

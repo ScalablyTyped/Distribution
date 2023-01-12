@@ -27,7 +27,8 @@ object StopsByInterval {
     __obj.asInstanceOf[StopsByInterval]
   }
   
-  extension [Self <: StopsByInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopsByInterval] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: TimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

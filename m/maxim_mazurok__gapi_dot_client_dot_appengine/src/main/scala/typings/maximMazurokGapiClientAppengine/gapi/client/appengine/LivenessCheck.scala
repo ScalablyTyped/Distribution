@@ -34,7 +34,8 @@ object LivenessCheck {
     __obj.asInstanceOf[LivenessCheck]
   }
   
-  extension [Self <: LivenessCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LivenessCheck] (val x: Self) extends AnyVal {
     
     inline def setCheckInterval(value: String): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
     

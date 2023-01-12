@@ -34,7 +34,8 @@ object IOverlayWidget {
     __obj.asInstanceOf[IOverlayWidget]
   }
   
-  extension [Self <: IOverlayWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOverlayWidget] (val x: Self) extends AnyVal {
     
     inline def setGetDomNode(value: () => HTMLElement): Self = StObject.set(x, "getDomNode", js.Any.fromFunction0(value))
     

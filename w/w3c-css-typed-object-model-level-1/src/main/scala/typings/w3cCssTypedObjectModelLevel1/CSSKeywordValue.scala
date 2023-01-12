@@ -17,7 +17,8 @@ object CSSKeywordValue {
     __obj.asInstanceOf[CSSKeywordValue]
   }
   
-  extension [Self <: CSSKeywordValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSKeywordValue] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

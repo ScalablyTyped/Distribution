@@ -43,7 +43,8 @@ object GetScreenDataRequest {
     __obj.asInstanceOf[GetScreenDataRequest]
   }
   
-  extension [Self <: GetScreenDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetScreenDataRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: ResourceId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

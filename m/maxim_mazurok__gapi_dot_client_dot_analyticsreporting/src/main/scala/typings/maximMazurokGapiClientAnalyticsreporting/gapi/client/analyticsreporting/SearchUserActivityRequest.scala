@@ -40,7 +40,8 @@ object SearchUserActivityRequest {
     __obj.asInstanceOf[SearchUserActivityRequest]
   }
   
-  extension [Self <: SearchUserActivityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchUserActivityRequest] (val x: Self) extends AnyVal {
     
     inline def setActivityTypes(value: js.Array[String]): Self = StObject.set(x, "activityTypes", value.asInstanceOf[js.Any])
     

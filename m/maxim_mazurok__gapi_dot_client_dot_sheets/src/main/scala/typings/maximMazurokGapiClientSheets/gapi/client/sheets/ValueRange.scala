@@ -33,7 +33,8 @@ object ValueRange {
     __obj.asInstanceOf[ValueRange]
   }
   
-  extension [Self <: ValueRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueRange] (val x: Self) extends AnyVal {
     
     inline def setMajorDimension(value: String): Self = StObject.set(x, "majorDimension", value.asInstanceOf[js.Any])
     

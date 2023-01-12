@@ -49,7 +49,8 @@ object ListMapsResponseEntry {
     __obj.asInstanceOf[ListMapsResponseEntry]
   }
   
-  extension [Self <: ListMapsResponseEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMapsResponseEntry] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     

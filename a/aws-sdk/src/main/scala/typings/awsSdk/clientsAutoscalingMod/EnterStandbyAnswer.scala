@@ -18,7 +18,8 @@ object EnterStandbyAnswer {
     __obj.asInstanceOf[EnterStandbyAnswer]
   }
   
-  extension [Self <: EnterStandbyAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterStandbyAnswer] (val x: Self) extends AnyVal {
     
     inline def setActivities(value: Activities): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
     

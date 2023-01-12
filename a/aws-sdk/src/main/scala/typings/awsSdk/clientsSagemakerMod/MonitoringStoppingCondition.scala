@@ -18,7 +18,8 @@ object MonitoringStoppingCondition {
     __obj.asInstanceOf[MonitoringStoppingCondition]
   }
   
-  extension [Self <: MonitoringStoppingCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringStoppingCondition] (val x: Self) extends AnyVal {
     
     inline def setMaxRuntimeInSeconds(value: MonitoringMaxRuntimeInSeconds): Self = StObject.set(x, "MaxRuntimeInSeconds", value.asInstanceOf[js.Any])
   }

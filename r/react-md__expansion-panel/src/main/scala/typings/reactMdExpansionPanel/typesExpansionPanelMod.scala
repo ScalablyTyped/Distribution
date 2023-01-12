@@ -37,7 +37,8 @@ object typesExpansionPanelMod {
       __obj.asInstanceOf[ConfigurableCardContentProps]
     }
     
-    extension [Self <: ConfigurableCardContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurableCardContentProps] (val x: Self) extends AnyVal {
       
       inline def setDisablePadding(value: Boolean): Self = StObject.set(x, "disablePadding", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object typesExpansionPanelMod {
       __obj.asInstanceOf[ExpansionPanelProps]
     }
     
-    extension [Self <: ExpansionPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpansionPanelProps] (val x: Self) extends AnyVal {
       
       inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       

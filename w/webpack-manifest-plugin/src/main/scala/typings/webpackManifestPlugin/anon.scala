@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[ModuleAssets]
     }
     
-    extension [Self <: ModuleAssets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleAssets] (val x: Self) extends AnyVal {
       
       inline def setModuleAssets(value: Record[Any, Any]): Self = StObject.set(x, "moduleAssets", value.asInstanceOf[js.Any])
     }

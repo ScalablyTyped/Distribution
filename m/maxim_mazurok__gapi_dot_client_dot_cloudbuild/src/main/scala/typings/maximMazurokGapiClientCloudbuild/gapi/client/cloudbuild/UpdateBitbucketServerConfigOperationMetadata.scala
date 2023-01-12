@@ -22,7 +22,8 @@ object UpdateBitbucketServerConfigOperationMetadata {
     __obj.asInstanceOf[UpdateBitbucketServerConfigOperationMetadata]
   }
   
-  extension [Self <: UpdateBitbucketServerConfigOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBitbucketServerConfigOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setBitbucketServerConfig(value: String): Self = StObject.set(x, "bitbucketServerConfig", value.asInstanceOf[js.Any])
     

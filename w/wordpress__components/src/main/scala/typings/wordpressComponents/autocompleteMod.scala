@@ -143,7 +143,8 @@ object autocompleteMod {
         __obj.asInstanceOf[Completer[T]]
       }
       
-      extension [Self <: Completer[?], T](x: Self & Completer[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Completer[?], T] (val x: Self & Completer[T]) extends AnyVal {
         
         inline def setAllowContext(value: (/* before */ String, /* after */ String) => Boolean): Self = StObject.set(x, "allowContext", js.Any.fromFunction2(value))
         
@@ -209,7 +210,8 @@ object autocompleteMod {
         __obj.asInstanceOf[Props[T]]
       }
       
-      extension [Self <: Props[?], T](x: Self & Props[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props[?], T] (val x: Self & Props[T]) extends AnyVal {
         
         inline def setChildren(value: RenderProps => Element | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
         
@@ -257,7 +259,8 @@ object autocompleteMod {
         __obj.asInstanceOf[RenderProps]
       }
       
-      extension [Self <: RenderProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
         
         inline def setActiveId(value: String): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
         

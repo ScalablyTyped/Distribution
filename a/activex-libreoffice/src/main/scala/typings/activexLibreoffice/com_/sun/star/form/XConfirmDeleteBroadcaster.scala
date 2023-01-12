@@ -44,7 +44,8 @@ object XConfirmDeleteBroadcaster {
     __obj.asInstanceOf[XConfirmDeleteBroadcaster]
   }
   
-  extension [Self <: XConfirmDeleteBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConfirmDeleteBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setAddConfirmDeleteListener(value: XConfirmDeleteListener => Unit): Self = StObject.set(x, "addConfirmDeleteListener", js.Any.fromFunction1(value))
     

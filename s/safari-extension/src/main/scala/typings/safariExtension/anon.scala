@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Typeofsafari]
     }
     
-    extension [Self <: Typeofsafari](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofsafari] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: SafariApplication): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       

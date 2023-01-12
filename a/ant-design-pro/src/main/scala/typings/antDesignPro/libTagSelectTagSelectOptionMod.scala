@@ -43,7 +43,8 @@ object libTagSelectTagSelectOptionMod {
       __obj.asInstanceOf[TagSelectOptionProps]
     }
     
-    extension [Self <: TagSelectOptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagSelectOptionProps] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       

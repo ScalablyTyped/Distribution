@@ -15,7 +15,8 @@ object SearchStupidBackoffSmoothingModel {
     __obj.asInstanceOf[SearchStupidBackoffSmoothingModel]
   }
   
-  extension [Self <: SearchStupidBackoffSmoothingModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchStupidBackoffSmoothingModel] (val x: Self) extends AnyVal {
     
     inline def setDiscount(value: double): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
   }

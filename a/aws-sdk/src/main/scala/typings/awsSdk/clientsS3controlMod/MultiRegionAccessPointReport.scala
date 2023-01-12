@@ -40,7 +40,8 @@ object MultiRegionAccessPointReport {
     __obj.asInstanceOf[MultiRegionAccessPointReport]
   }
   
-  extension [Self <: MultiRegionAccessPointReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiRegionAccessPointReport] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: MultiRegionAccessPointAlias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     

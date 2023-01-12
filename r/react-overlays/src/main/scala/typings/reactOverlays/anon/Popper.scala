@@ -20,7 +20,8 @@ object Popper {
     __obj.asInstanceOf[Popper]
   }
   
-  extension [Self <: Popper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Popper] (val x: Self) extends AnyVal {
     
     inline def setPlacement(value: typings.reactOverlays.esmUsePopperMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     

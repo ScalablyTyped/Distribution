@@ -26,7 +26,8 @@ object RoleBasedFilter {
     __obj.asInstanceOf[RoleBasedFilter]
   }
   
-  extension [Self <: RoleBasedFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoleBasedFilter] (val x: Self) extends AnyVal {
     
     inline def setExclusions(value: js.Array[String]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     

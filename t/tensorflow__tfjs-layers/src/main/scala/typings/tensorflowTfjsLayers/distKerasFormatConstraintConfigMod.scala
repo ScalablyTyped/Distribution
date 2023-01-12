@@ -49,7 +49,8 @@ object distKerasFormatConstraintConfigMod {
       __obj.asInstanceOf[MaxNormConfig]
     }
     
-    extension [Self <: MaxNormConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxNormConfig] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object distKerasFormatConstraintConfigMod {
       __obj.asInstanceOf[MinMaxNormConfig]
     }
     
-    extension [Self <: MinMaxNormConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinMaxNormConfig] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object distKerasFormatConstraintConfigMod {
       __obj.asInstanceOf[UnitNormConfig]
     }
     
-    extension [Self <: UnitNormConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnitNormConfig] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       

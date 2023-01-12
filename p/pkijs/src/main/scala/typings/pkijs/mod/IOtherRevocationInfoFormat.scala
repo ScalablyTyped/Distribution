@@ -17,7 +17,8 @@ object IOtherRevocationInfoFormat {
     __obj.asInstanceOf[IOtherRevocationInfoFormat]
   }
   
-  extension [Self <: IOtherRevocationInfoFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOtherRevocationInfoFormat] (val x: Self) extends AnyVal {
     
     inline def setOtherRevInfo(value: Any): Self = StObject.set(x, "otherRevInfo", value.asInstanceOf[js.Any])
     

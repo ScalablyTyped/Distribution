@@ -60,7 +60,8 @@ object XScenario {
     __obj.asInstanceOf[XScenario]
   }
   
-  extension [Self <: XScenario](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XScenario] (val x: Self) extends AnyVal {
     
     inline def setAddRanges(value: SeqEquiv[CellRangeAddress] => Unit): Self = StObject.set(x, "addRanges", js.Any.fromFunction1(value))
     

@@ -28,7 +28,8 @@ object LiveChatSuperStickerDetails {
     __obj.asInstanceOf[LiveChatSuperStickerDetails]
   }
   
-  extension [Self <: LiveChatSuperStickerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveChatSuperStickerDetails] (val x: Self) extends AnyVal {
     
     inline def setAmountDisplayString(value: String): Self = StObject.set(x, "amountDisplayString", value.asInstanceOf[js.Any])
     

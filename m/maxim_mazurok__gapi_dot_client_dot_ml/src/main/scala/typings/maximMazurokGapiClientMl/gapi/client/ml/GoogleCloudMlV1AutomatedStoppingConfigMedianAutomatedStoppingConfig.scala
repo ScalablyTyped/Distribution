@@ -19,7 +19,8 @@ object GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig {
     __obj.asInstanceOf[GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig]
   }
   
-  extension [Self <: GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig] (val x: Self) extends AnyVal {
     
     inline def setUseElapsedTime(value: Boolean): Self = StObject.set(x, "useElapsedTime", value.asInstanceOf[js.Any])
     

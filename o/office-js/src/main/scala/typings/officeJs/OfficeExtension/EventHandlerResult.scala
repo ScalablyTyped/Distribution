@@ -18,7 +18,8 @@ object EventHandlerResult {
     __obj.asInstanceOf[EventHandlerResult[T]]
   }
   
-  extension [Self <: EventHandlerResult[?], T](x: Self & EventHandlerResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventHandlerResult[?], T] (val x: Self & EventHandlerResult[T]) extends AnyVal {
     
     inline def setContext(value: ClientRequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object ITitleOwner {
     __obj.asInstanceOf[ITitleOwner]
   }
   
-  extension [Self <: ITitleOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITitleOwner] (val x: Self) extends AnyVal {
     
     inline def setIsRequireTextAfterTitle(value: Boolean): Self = StObject.set(x, "isRequireTextAfterTitle", value.asInstanceOf[js.Any])
     

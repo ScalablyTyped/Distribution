@@ -47,7 +47,8 @@ object ConsoleHandler {
     __obj.asInstanceOf[ConsoleHandler]
   }
   
-  extension [Self <: ConsoleHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsoleHandler] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     

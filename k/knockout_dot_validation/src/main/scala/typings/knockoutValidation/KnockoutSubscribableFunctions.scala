@@ -35,7 +35,8 @@ object KnockoutSubscribableFunctions {
     __obj.asInstanceOf[KnockoutSubscribableFunctions[T]]
   }
   
-  extension [Self <: KnockoutSubscribableFunctions[?], T](x: Self & KnockoutSubscribableFunctions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutSubscribableFunctions[?], T] (val x: Self & KnockoutSubscribableFunctions[T]) extends AnyVal {
     
     inline def setClearError(value: () => Unit): Self = StObject.set(x, "clearError", js.Any.fromFunction0(value))
     

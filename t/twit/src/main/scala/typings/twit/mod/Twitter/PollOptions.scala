@@ -17,7 +17,8 @@ object PollOptions {
     __obj.asInstanceOf[PollOptions]
   }
   
-  extension [Self <: PollOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PollOptions] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

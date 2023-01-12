@@ -48,7 +48,8 @@ object CollectionSelection {
     __obj.asInstanceOf[CollectionSelection]
   }
   
-  extension [Self <: CollectionSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionSelection] (val x: Self) extends AnyVal {
     
     inline def setDeselect(value: () => CollectionSelection): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
     

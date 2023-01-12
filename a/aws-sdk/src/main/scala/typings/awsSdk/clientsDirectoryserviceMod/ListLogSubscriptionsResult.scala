@@ -23,7 +23,8 @@ object ListLogSubscriptionsResult {
     __obj.asInstanceOf[ListLogSubscriptionsResult]
   }
   
-  extension [Self <: ListLogSubscriptionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLogSubscriptionsResult] (val x: Self) extends AnyVal {
     
     inline def setLogSubscriptions(value: LogSubscriptions): Self = StObject.set(x, "LogSubscriptions", value.asInstanceOf[js.Any])
     

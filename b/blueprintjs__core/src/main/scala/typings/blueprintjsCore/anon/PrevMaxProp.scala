@@ -21,7 +21,8 @@ object PrevMaxProp {
     __obj.asInstanceOf[PrevMaxProp]
   }
   
-  extension [Self <: PrevMaxProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrevMaxProp] (val x: Self) extends AnyVal {
     
     inline def setPrevMaxProp(value: Double): Self = StObject.set(x, "prevMaxProp", value.asInstanceOf[js.Any])
     

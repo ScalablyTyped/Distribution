@@ -16,7 +16,8 @@ object AbstractWorkerEventMap {
     __obj.asInstanceOf[AbstractWorkerEventMap]
   }
   
-  extension [Self <: AbstractWorkerEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractWorkerEventMap] (val x: Self) extends AnyVal {
     
     inline def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

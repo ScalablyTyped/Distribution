@@ -23,7 +23,8 @@ object DescribeAccountResult {
     __obj.asInstanceOf[DescribeAccountResult]
   }
   
-  extension [Self <: DescribeAccountResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAccountResult] (val x: Self) extends AnyVal {
     
     inline def setDedicatedTenancyManagementCidrRange(value: DedicatedTenancyManagementCidrRange): Self = StObject.set(x, "DedicatedTenancyManagementCidrRange", value.asInstanceOf[js.Any])
     

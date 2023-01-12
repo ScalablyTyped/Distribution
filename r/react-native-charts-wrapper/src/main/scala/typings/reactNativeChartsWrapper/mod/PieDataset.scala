@@ -22,7 +22,8 @@ object PieDataset {
     __obj.asInstanceOf[PieDataset]
   }
   
-  extension [Self <: PieDataset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieDataset] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: PieDatasetConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

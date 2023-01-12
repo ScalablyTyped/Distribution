@@ -19,7 +19,8 @@ object GetScrollResponder {
     __obj.asInstanceOf[GetScrollResponder]
   }
   
-  extension [Self <: GetScrollResponder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetScrollResponder] (val x: Self) extends AnyVal {
     
     inline def setGetScrollResponder(value: () => ReactNode): Self = StObject.set(x, "getScrollResponder", js.Any.fromFunction0(value))
   }

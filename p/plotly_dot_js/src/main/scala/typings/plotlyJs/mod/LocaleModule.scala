@@ -25,7 +25,8 @@ object LocaleModule {
     __obj.asInstanceOf[LocaleModule]
   }
   
-  extension [Self <: LocaleModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocaleModule] (val x: Self) extends AnyVal {
     
     inline def setDictionary(value: Record[String, Any]): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[AsyncPeek[T]]
     }
     
-    extension [Self <: AsyncPeek[?], T](x: Self & AsyncPeek[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncPeek[?], T] (val x: Self & AsyncPeek[T]) extends AnyVal {
       
       inline def setPeek(value: () => js.Promise[IteratorResult[T, Unit]]): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
     }
@@ -53,7 +54,8 @@ object mod {
       __obj.asInstanceOf[Peek[T]]
     }
     
-    extension [Self <: Peek[?], T](x: Self & Peek[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Peek[?], T] (val x: Self & Peek[T]) extends AnyVal {
       
       inline def setPeek(value: () => IteratorResult[T, Unit]): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
     }
@@ -78,7 +80,8 @@ object mod {
       __obj.asInstanceOf[Push[T]]
     }
     
-    extension [Self <: Push[?], T](x: Self & Push[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Push[?], T] (val x: Self & Push[T]) extends AnyVal {
       
       inline def setPush(value: T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     }

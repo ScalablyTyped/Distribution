@@ -50,7 +50,8 @@ object PortalSummary {
     __obj.asInstanceOf[PortalSummary]
   }
   
-  extension [Self <: PortalSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

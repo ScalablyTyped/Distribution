@@ -31,7 +31,8 @@ object RichEditFileInfo {
     __obj.asInstanceOf[RichEditFileInfo]
   }
   
-  extension [Self <: RichEditFileInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RichEditFileInfo] (val x: Self) extends AnyVal {
     
     inline def setDocumentFormat(value: DocumentFormat): Self = StObject.set(x, "documentFormat", value.asInstanceOf[js.Any])
     

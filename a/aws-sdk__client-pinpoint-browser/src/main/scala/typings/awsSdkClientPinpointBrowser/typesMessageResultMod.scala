@@ -73,7 +73,8 @@ object typesMessageResultMod {
       __obj.asInstanceOf[MessageResult]
     }
     
-    extension [Self <: MessageResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageResult] (val x: Self) extends AnyVal {
       
       inline def setDeliveryStatus(
         value: SUCCESSFUL | THROTTLED | TEMPORARY_FAILURE | PERMANENT_FAILURE | UNKNOWN_FAILURE | OPT_OUT | DUPLICATE | String

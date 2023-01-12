@@ -33,7 +33,8 @@ object CapacitySpecificationSummary {
     __obj.asInstanceOf[CapacitySpecificationSummary]
   }
   
-  extension [Self <: CapacitySpecificationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapacitySpecificationSummary] (val x: Self) extends AnyVal {
     
     inline def setLastUpdateToPayPerRequestTimestamp(value: js.Date): Self = StObject.set(x, "lastUpdateToPayPerRequestTimestamp", value.asInstanceOf[js.Any])
     

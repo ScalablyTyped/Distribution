@@ -24,7 +24,8 @@ object ElementInjector {
     __obj.asInstanceOf[ElementInjector]
   }
   
-  extension [Self <: ElementInjector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementInjector] (val x: Self) extends AnyVal {
     
     inline def setElementInjector(value: Injector): Self = StObject.set(x, "elementInjector", value.asInstanceOf[js.Any])
     

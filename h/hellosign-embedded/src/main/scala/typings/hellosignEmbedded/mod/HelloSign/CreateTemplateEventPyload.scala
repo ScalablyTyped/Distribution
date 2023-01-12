@@ -18,7 +18,8 @@ object CreateTemplateEventPyload {
     __obj.asInstanceOf[CreateTemplateEventPyload]
   }
   
-  extension [Self <: CreateTemplateEventPyload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTemplateEventPyload] (val x: Self) extends AnyVal {
     
     inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     

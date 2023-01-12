@@ -44,7 +44,8 @@ object AdditionalData {
     __obj.asInstanceOf[AdditionalData]
   }
   
-  extension [Self <: AdditionalData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalData] (val x: Self) extends AnyVal {
     
     inline def setAdditionalData(value: js.Array[Key]): Self = StObject.set(x, "AdditionalData", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsMoveToTrashMod extends Shortcu
       __obj.asInstanceOf[MoveToTrashProps]
     }
     
-    extension [Self <: MoveToTrashProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveToTrashProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

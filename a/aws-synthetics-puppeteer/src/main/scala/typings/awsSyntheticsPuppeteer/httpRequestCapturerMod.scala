@@ -86,7 +86,8 @@ object httpRequestCapturerMod extends Shortcut {
       __obj.asInstanceOf[HttpRequestCapturer]
     }
     
-    extension [Self <: HttpRequestCapturer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpRequestCapturer] (val x: Self) extends AnyVal {
       
       inline def setAddHelperHeaders(value: (Any, Any, Any, Any) => Unit): Self = StObject.set(x, "addHelperHeaders", js.Any.fromFunction4(value))
       

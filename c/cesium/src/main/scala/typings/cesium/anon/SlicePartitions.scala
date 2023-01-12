@@ -21,7 +21,8 @@ object SlicePartitions {
     __obj.asInstanceOf[SlicePartitions]
   }
   
-  extension [Self <: SlicePartitions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlicePartitions] (val x: Self) extends AnyVal {
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     

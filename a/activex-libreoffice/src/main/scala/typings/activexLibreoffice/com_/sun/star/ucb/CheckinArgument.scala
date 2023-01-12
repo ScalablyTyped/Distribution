@@ -47,7 +47,8 @@ object CheckinArgument {
     __obj.asInstanceOf[CheckinArgument]
   }
   
-  extension [Self <: CheckinArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckinArgument] (val x: Self) extends AnyVal {
     
     inline def setMajorVersion(value: Boolean): Self = StObject.set(x, "MajorVersion", value.asInstanceOf[js.Any])
     

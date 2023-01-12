@@ -28,7 +28,8 @@ object componentsRangeInputMod {
       __obj.asInstanceOf[ColorInterface]
     }
     
-    extension [Self <: ColorInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorInterface] (val x: Self) extends AnyVal {
       
       inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object componentsRangeInputMod {
       __obj.asInstanceOf[RangeInputProps]
     }
     
-    extension [Self <: RangeInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeInputProps] (val x: Self) extends AnyVal {
       
       inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
       

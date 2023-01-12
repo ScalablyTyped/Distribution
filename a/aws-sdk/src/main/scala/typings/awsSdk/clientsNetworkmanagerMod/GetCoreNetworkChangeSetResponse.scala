@@ -23,7 +23,8 @@ object GetCoreNetworkChangeSetResponse {
     __obj.asInstanceOf[GetCoreNetworkChangeSetResponse]
   }
   
-  extension [Self <: GetCoreNetworkChangeSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCoreNetworkChangeSetResponse] (val x: Self) extends AnyVal {
     
     inline def setCoreNetworkChanges(value: CoreNetworkChangeList): Self = StObject.set(x, "CoreNetworkChanges", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object distDeclarationsSrcContextMod {
     @js.native
     val ^ : TreeContext = js.native
     
-    extension [Self <: TreeContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeContext] (val x: Self) extends AnyVal {
       
       inline def setDependencies(
         value: Set[

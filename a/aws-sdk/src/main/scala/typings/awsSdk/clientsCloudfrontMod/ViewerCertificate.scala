@@ -48,7 +48,8 @@ object ViewerCertificate {
     __obj.asInstanceOf[ViewerCertificate]
   }
   
-  extension [Self <: ViewerCertificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewerCertificate] (val x: Self) extends AnyVal {
     
     inline def setACMCertificateArn(value: String): Self = StObject.set(x, "ACMCertificateArn", value.asInstanceOf[js.Any])
     

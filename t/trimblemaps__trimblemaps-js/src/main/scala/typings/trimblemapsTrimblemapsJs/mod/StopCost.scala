@@ -23,7 +23,8 @@ object StopCost {
     __obj.asInstanceOf[StopCost]
   }
   
-  extension [Self <: StopCost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopCost] (val x: Self) extends AnyVal {
     
     inline def setCostOfStop(value: Double): Self = StObject.set(x, "costOfStop", value.asInstanceOf[js.Any])
     

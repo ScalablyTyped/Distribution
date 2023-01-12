@@ -46,7 +46,8 @@ object AnalysisWordDelimiterTokenFilter {
     __obj.asInstanceOf[AnalysisWordDelimiterTokenFilter]
   }
   
-  extension [Self <: AnalysisWordDelimiterTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisWordDelimiterTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setCatenate_all(value: Boolean): Self = StObject.set(x, "catenate_all", value.asInstanceOf[js.Any])
     

@@ -118,7 +118,8 @@ object mod {
       __obj.asInstanceOf[Link]
     }
     
-    extension [Self <: Link](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
       
       inline def setDeprecation(value: String): Self = StObject.set(x, "deprecation", value.asInstanceOf[js.Any])
       
@@ -277,7 +278,8 @@ object mod {
       __obj.asInstanceOf[Resource]
     }
     
-    extension [Self <: Resource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
       
       inline def setAllEmbeddedArrays(value: () => ResourceCollection): Self = StObject.set(x, "allEmbeddedArrays", js.Any.fromFunction0(value))
       

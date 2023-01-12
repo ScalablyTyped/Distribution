@@ -17,7 +17,8 @@ object SdkFeatures {
     __obj.asInstanceOf[SdkFeatures]
   }
   
-  extension [Self <: SdkFeatures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SdkFeatures] (val x: Self) extends AnyVal {
     
     inline def setDisable_cross_device_sms(value: Boolean): Self = StObject.set(x, "disable_cross_device_sms", value.asInstanceOf[js.Any])
     

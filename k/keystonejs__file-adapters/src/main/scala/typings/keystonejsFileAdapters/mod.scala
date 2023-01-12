@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[CloudinaryFileAdapterConfig]
     }
     
-    extension [Self <: CloudinaryFileAdapterConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudinaryFileAdapterConfig] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object mod {
       __obj.asInstanceOf[LocalFileAdapterConfig]
     }
     
-    extension [Self <: LocalFileAdapterConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalFileAdapterConfig] (val x: Self) extends AnyVal {
       
       inline def setGetFilename(value: /* options */ Id => String): Self = StObject.set(x, "getFilename", js.Any.fromFunction1(value))
       

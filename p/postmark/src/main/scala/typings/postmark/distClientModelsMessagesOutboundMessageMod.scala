@@ -63,7 +63,8 @@ object distClientModelsMessagesOutboundMessageMod {
       __obj.asInstanceOf[OutboundMessage]
     }
     
-    extension [Self <: OutboundMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutboundMessage] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: js.Array[String]): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object distClientModelsMessagesOutboundMessageMod {
       __obj.asInstanceOf[OutboundMessageDetails]
     }
     
-    extension [Self <: OutboundMessageDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutboundMessageDetails] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object distClientModelsMessagesOutboundMessageMod {
       __obj.asInstanceOf[OutboundMessageDump]
     }
     
-    extension [Self <: OutboundMessageDump](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutboundMessageDump] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     }
@@ -193,7 +196,8 @@ object distClientModelsMessagesOutboundMessageMod {
       __obj.asInstanceOf[OutboundMessages]
     }
     
-    extension [Self <: OutboundMessages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutboundMessages] (val x: Self) extends AnyVal {
       
       inline def setMessages(value: js.Array[OutboundMessage]): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
       
@@ -216,7 +220,8 @@ object distClientModelsMessagesOutboundMessageMod {
       __obj.asInstanceOf[Recipient]
     }
     
-    extension [Self <: Recipient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Recipient] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
       

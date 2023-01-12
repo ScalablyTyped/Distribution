@@ -23,7 +23,8 @@ object WorldCount {
     __obj.asInstanceOf[WorldCount]
   }
   
-  extension [Self <: WorldCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorldCount] (val x: Self) extends AnyVal {
     
     inline def setFloorplanCount(value: FloorplanCount): Self = StObject.set(x, "floorplanCount", value.asInstanceOf[js.Any])
     

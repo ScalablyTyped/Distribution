@@ -39,7 +39,8 @@ object Payment_ {
     __obj.asInstanceOf[Payment_]
   }
   
-  extension [Self <: Payment_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Payment_] (val x: Self) extends AnyVal {
     
     inline def setCreate_time(value: String): Self = StObject.set(x, "create_time", value.asInstanceOf[js.Any])
     

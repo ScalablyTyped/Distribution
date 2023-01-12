@@ -69,7 +69,8 @@ object XURLTransformer {
     __obj.asInstanceOf[XURLTransformer]
   }
   
-  extension [Self <: XURLTransformer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XURLTransformer] (val x: Self) extends AnyVal {
     
     inline def setAssemble(value: js.Array[URL] => Boolean): Self = StObject.set(x, "assemble", js.Any.fromFunction1(value))
     

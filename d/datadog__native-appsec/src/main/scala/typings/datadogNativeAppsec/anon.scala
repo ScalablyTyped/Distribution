@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Errors]
     }
     
-    extension [Self <: Errors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Major]
     }
     
-    extension [Self <: Major](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Major] (val x: Self) extends AnyVal {
       
       inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[ObfuscatorKeyRegex]
     }
     
-    extension [Self <: ObfuscatorKeyRegex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObfuscatorKeyRegex] (val x: Self) extends AnyVal {
       
       inline def setObfuscatorKeyRegex(value: String): Self = StObject.set(x, "obfuscatorKeyRegex", value.asInstanceOf[js.Any])
       

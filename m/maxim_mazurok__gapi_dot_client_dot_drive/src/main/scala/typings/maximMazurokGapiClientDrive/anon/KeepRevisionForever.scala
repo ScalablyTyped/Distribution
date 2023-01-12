@@ -70,7 +70,8 @@ object KeepRevisionForever {
     __obj.asInstanceOf[KeepRevisionForever]
   }
   
-  extension [Self <: KeepRevisionForever](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeepRevisionForever] (val x: Self) extends AnyVal {
     
     inline def setAddParents(value: String): Self = StObject.set(x, "addParents", value.asInstanceOf[js.Any])
     

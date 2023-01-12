@@ -80,7 +80,8 @@ object distTestingTargetMockMod {
       __obj.asInstanceOf[LogLevelMap[T]]
     }
     
-    extension [Self <: LogLevelMap[?], T](x: Self & LogLevelMap[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogLevelMap[?], T] (val x: Self & LogLevelMap[T]) extends AnyVal {
       
       inline def setDebug(value: T): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       

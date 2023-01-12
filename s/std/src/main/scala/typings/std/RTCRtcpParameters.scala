@@ -19,7 +19,8 @@ object RTCRtcpParameters {
     __obj.asInstanceOf[RTCRtcpParameters]
   }
   
-  extension [Self <: RTCRtcpParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCRtcpParameters] (val x: Self) extends AnyVal {
     
     inline def setCname(value: java.lang.String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object KeyList {
     __obj.asInstanceOf[KeyList]
   }
   
-  extension [Self <: KeyList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyList] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

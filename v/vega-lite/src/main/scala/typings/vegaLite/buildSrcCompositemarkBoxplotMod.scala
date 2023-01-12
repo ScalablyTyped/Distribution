@@ -74,7 +74,8 @@ object buildSrcCompositemarkBoxplotMod {
       __obj.asInstanceOf[BoxPlotConfig]
     }
     
-    extension [Self <: BoxPlotConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxPlotConfig] (val x: Self) extends AnyVal {
       
       inline def setExtent(value: `min-max` | Double): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object buildSrcCompositemarkBoxplotMod {
       __obj.asInstanceOf[BoxPlotConfigMixins]
     }
     
-    extension [Self <: BoxPlotConfigMixins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxPlotConfigMixins] (val x: Self) extends AnyVal {
       
       inline def setBoxplot(value: BoxPlotConfig): Self = StObject.set(x, "boxplot", value.asInstanceOf[js.Any])
       

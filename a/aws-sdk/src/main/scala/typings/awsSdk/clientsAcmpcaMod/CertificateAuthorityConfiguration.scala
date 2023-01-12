@@ -33,7 +33,8 @@ object CertificateAuthorityConfiguration {
     __obj.asInstanceOf[CertificateAuthorityConfiguration]
   }
   
-  extension [Self <: CertificateAuthorityConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateAuthorityConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCsrExtensions(value: CsrExtensions): Self = StObject.set(x, "CsrExtensions", value.asInstanceOf[js.Any])
     

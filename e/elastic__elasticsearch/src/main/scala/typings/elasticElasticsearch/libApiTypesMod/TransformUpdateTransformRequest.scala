@@ -37,7 +37,8 @@ object TransformUpdateTransformRequest {
     __obj.asInstanceOf[TransformUpdateTransformRequest]
   }
   
-  extension [Self <: TransformUpdateTransformRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformUpdateTransformRequest] (val x: Self) extends AnyVal {
     
     inline def setDefer_validation(value: Boolean): Self = StObject.set(x, "defer_validation", value.asInstanceOf[js.Any])
     

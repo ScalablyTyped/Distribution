@@ -28,7 +28,8 @@ object ListStudioSessionMappingsInput {
     __obj.asInstanceOf[ListStudioSessionMappingsInput]
   }
   
-  extension [Self <: ListStudioSessionMappingsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStudioSessionMappingsInput] (val x: Self) extends AnyVal {
     
     inline def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
     

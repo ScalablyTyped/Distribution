@@ -203,7 +203,8 @@ object libAuthAuthApiRequestMod {
       __obj.asInstanceOf[BatchDeleteAccountsResponse]
     }
     
-    extension [Self <: BatchDeleteAccountsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchDeleteAccountsResponse] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[BatchDeleteErrorInfo]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -228,7 +229,8 @@ object libAuthAuthApiRequestMod {
       __obj.asInstanceOf[BatchDeleteErrorInfo]
     }
     
-    extension [Self <: BatchDeleteErrorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchDeleteErrorInfo] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

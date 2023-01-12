@@ -27,7 +27,8 @@ object MultiFileAppender {
     __obj.asInstanceOf[MultiFileAppender]
   }
   
-  extension [Self <: MultiFileAppender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiFileAppender] (val x: Self) extends AnyVal {
     
     inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

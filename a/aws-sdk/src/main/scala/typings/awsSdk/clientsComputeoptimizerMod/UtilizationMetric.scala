@@ -28,7 +28,8 @@ object UtilizationMetric {
     __obj.asInstanceOf[UtilizationMetric]
   }
   
-  extension [Self <: UtilizationMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UtilizationMetric] (val x: Self) extends AnyVal {
     
     inline def setName(value: MetricName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

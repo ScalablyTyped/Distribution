@@ -35,7 +35,8 @@ object RuleListOptions {
     __obj.asInstanceOf[RuleListOptions]
   }
   
-  extension [Self <: RuleListOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleListOptions] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: Classes[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

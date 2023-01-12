@@ -28,7 +28,8 @@ object DescribeVpcAttributeRequest {
     __obj.asInstanceOf[DescribeVpcAttributeRequest]
   }
   
-  extension [Self <: DescribeVpcAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVpcAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: VpcAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     

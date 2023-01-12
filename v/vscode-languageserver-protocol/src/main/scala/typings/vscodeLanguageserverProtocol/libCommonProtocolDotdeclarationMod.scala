@@ -66,7 +66,8 @@ object libCommonProtocolDotdeclarationMod {
       __obj.asInstanceOf[DeclarationClientCapabilities]
     }
     
-    extension [Self <: DeclarationClientCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeclarationClientCapabilities] (val x: Self) extends AnyVal {
       
       inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
       

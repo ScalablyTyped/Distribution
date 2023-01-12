@@ -76,7 +76,8 @@ object DOMUIEvent {
     __obj.asInstanceOf[DOMUIEvent]
   }
   
-  extension [Self <: DOMUIEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMUIEvent] (val x: Self) extends AnyVal {
     
     inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     

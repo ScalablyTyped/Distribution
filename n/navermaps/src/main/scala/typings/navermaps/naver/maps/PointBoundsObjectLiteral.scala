@@ -21,7 +21,8 @@ object PointBoundsObjectLiteral {
     __obj.asInstanceOf[PointBoundsObjectLiteral]
   }
   
-  extension [Self <: PointBoundsObjectLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointBoundsObjectLiteral] (val x: Self) extends AnyVal {
     
     inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
     

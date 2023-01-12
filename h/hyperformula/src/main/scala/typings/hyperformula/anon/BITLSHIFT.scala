@@ -17,7 +17,8 @@ object BITLSHIFT {
     __obj.asInstanceOf[BITLSHIFT]
   }
   
-  extension [Self <: BITLSHIFT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BITLSHIFT] (val x: Self) extends AnyVal {
     
     inline def setBITLSHIFT(value: MethodParameters): Self = StObject.set(x, "BITLSHIFT", value.asInstanceOf[js.Any])
     

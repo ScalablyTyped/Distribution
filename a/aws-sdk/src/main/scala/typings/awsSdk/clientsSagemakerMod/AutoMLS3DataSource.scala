@@ -23,7 +23,8 @@ object AutoMLS3DataSource {
     __obj.asInstanceOf[AutoMLS3DataSource]
   }
   
-  extension [Self <: AutoMLS3DataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMLS3DataSource] (val x: Self) extends AnyVal {
     
     inline def setS3DataType(value: AutoMLS3DataType): Self = StObject.set(x, "S3DataType", value.asInstanceOf[js.Any])
     

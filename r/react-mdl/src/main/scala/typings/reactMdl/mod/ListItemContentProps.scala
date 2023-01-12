@@ -27,7 +27,8 @@ object ListItemContentProps {
     __obj.asInstanceOf[ListItemContentProps]
   }
   
-  extension [Self <: ListItemContentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListItemContentProps] (val x: Self) extends AnyVal {
     
     inline def setAvatar(value: String | Element): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     

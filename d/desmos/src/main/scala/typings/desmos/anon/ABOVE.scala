@@ -27,7 +27,8 @@ object ABOVE {
     __obj.asInstanceOf[ABOVE]
   }
   
-  extension [Self <: ABOVE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ABOVE] (val x: Self) extends AnyVal {
     
     inline def setABOVE(value: typings.desmos.desmosStrings.ABOVE): Self = StObject.set(x, "ABOVE", value.asInstanceOf[js.Any])
     

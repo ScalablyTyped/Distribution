@@ -24,7 +24,8 @@ object PartialMargin {
     __obj.asInstanceOf[PartialMargin]
   }
   
-  extension [Self <: PartialMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMargin] (val x: Self) extends AnyVal {
     
     inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     

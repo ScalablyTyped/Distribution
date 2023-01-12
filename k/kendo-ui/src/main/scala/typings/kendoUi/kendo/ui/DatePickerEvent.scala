@@ -19,7 +19,8 @@ object DatePickerEvent {
     __obj.asInstanceOf[DatePickerEvent]
   }
   
-  extension [Self <: DatePickerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePickerEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

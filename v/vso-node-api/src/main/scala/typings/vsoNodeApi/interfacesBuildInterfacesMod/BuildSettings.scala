@@ -32,7 +32,8 @@ object BuildSettings {
     __obj.asInstanceOf[BuildSettings]
   }
   
-  extension [Self <: BuildSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildSettings] (val x: Self) extends AnyVal {
     
     inline def setDaysToKeepDeletedBuildsBeforeDestroy(value: Double): Self = StObject.set(x, "daysToKeepDeletedBuildsBeforeDestroy", value.asInstanceOf[js.Any])
     

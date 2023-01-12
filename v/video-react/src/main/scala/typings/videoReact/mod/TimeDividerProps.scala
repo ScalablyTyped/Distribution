@@ -17,7 +17,8 @@ object TimeDividerProps {
     __obj.asInstanceOf[TimeDividerProps]
   }
   
-  extension [Self <: TimeDividerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeDividerProps] (val x: Self) extends AnyVal {
     
     inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     

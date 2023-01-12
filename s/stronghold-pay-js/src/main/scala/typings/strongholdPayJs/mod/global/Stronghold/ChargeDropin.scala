@@ -22,7 +22,8 @@ object ChargeDropin {
     __obj.asInstanceOf[ChargeDropin]
   }
   
-  extension [Self <: ChargeDropin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChargeDropin] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

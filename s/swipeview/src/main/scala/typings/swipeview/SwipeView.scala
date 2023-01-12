@@ -72,7 +72,8 @@ object SwipeView {
     __obj.asInstanceOf[SwipeView]
   }
   
-  extension [Self <: SwipeView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwipeView] (val x: Self) extends AnyVal {
     
     inline def setCurrentMasterPage(value: Double): Self = StObject.set(x, "currentMasterPage", value.asInstanceOf[js.Any])
     

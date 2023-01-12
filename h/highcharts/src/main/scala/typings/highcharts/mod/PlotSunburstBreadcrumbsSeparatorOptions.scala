@@ -23,7 +23,8 @@ object PlotSunburstBreadcrumbsSeparatorOptions {
     __obj.asInstanceOf[PlotSunburstBreadcrumbsSeparatorOptions]
   }
   
-  extension [Self <: PlotSunburstBreadcrumbsSeparatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSunburstBreadcrumbsSeparatorOptions] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: CSSObject | PlotSunburstBreadcrumbsSeparatorStyleOptions): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

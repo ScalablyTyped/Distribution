@@ -47,7 +47,8 @@ object esPortalMod extends Shortcut {
       __obj.asInstanceOf[PortalProps]
     }
     
-    extension [Self <: PortalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalProps] (val x: Self) extends AnyVal {
       
       inline def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
       

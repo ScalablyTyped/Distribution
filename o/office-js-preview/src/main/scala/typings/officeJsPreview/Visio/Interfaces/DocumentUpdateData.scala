@@ -30,7 +30,8 @@ object DocumentUpdateData {
     __obj.asInstanceOf[DocumentUpdateData]
   }
   
-  extension [Self <: DocumentUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentUpdateData] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: ApplicationUpdateData): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

@@ -860,7 +860,8 @@ object sapUiCoreIconMod {
       __obj.asInstanceOf[IconSettings]
     }
     
-    extension [Self <: IconSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconSettings] (val x: Self) extends AnyVal {
       
       inline def setActiveBackgroundColor(value: String | PropertyBindingInfo): Self = StObject.set(x, "activeBackgroundColor", value.asInstanceOf[js.Any])
       

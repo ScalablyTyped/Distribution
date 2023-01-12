@@ -70,7 +70,8 @@ object AsyncResult {
     __obj.asInstanceOf[AsyncResult[T]]
   }
   
-  extension [Self <: AsyncResult[?], T](x: Self & AsyncResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncResult[?], T] (val x: Self & AsyncResult[T]) extends AnyVal {
     
     inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     

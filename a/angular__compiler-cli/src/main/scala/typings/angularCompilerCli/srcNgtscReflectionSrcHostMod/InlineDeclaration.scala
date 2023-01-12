@@ -23,7 +23,8 @@ object InlineDeclaration {
     __obj.asInstanceOf[InlineDeclaration]
   }
   
-  extension [Self <: InlineDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineDeclaration] (val x: Self) extends AnyVal {
     
     inline def setImplementation(value: DeclarationNode): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     

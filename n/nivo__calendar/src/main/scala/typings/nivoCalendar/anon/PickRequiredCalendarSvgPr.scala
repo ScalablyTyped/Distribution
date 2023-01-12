@@ -46,7 +46,8 @@ object PickRequiredCalendarSvgPr {
     __obj.asInstanceOf[PickRequiredCalendarSvgPr]
   }
   
-  extension [Self <: PickRequiredCalendarSvgPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickRequiredCalendarSvgPr] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: BoxAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

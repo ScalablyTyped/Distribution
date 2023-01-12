@@ -52,7 +52,8 @@ object typesPullRequestTargetMod {
       __obj.asInstanceOf[PullRequestTarget]
     }
     
-    extension [Self <: PullRequestTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PullRequestTarget] (val x: Self) extends AnyVal {
       
       inline def setDestinationCommit(value: String): Self = StObject.set(x, "destinationCommit", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object typesPullRequestTargetMod {
       __obj.asInstanceOf[UnmarshalledPullRequestTarget]
     }
     
-    extension [Self <: UnmarshalledPullRequestTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledPullRequestTarget] (val x: Self) extends AnyVal {
       
       inline def setMergeMetadata(value: UnmarshalledMergeMetadata): Self = StObject.set(x, "mergeMetadata", value.asInstanceOf[js.Any])
       

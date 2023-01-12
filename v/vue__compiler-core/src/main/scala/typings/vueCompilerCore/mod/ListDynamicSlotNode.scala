@@ -26,7 +26,8 @@ object ListDynamicSlotNode {
     __obj.asInstanceOf[ListDynamicSlotNode]
   }
   
-  extension [Self <: ListDynamicSlotNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDynamicSlotNode] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Tuple2[ExpressionNode, ListDynamicSlotIterator]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

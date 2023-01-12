@@ -676,7 +676,8 @@ object distDeclarationsSrcThreeTypesMod {
       __obj.asInstanceOf[NodeProps[T, P]]
     }
     
-    extension [Self <: NodeProps[?, ?], T, P](x: Self & (NodeProps[T, P])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeProps[?, ?], T, P] (val x: Self & (NodeProps[T, P])) extends AnyVal {
       
       inline def setArgs(value: Args[P]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -810,7 +811,8 @@ object distDeclarationsSrcThreeTypesMod {
       __obj.asInstanceOf[PrimitiveProps]
     }
     
-    extension [Self <: PrimitiveProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimitiveProps] (val x: Self) extends AnyVal {
       
       inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     }
@@ -1194,7 +1196,8 @@ object distDeclarationsSrcThreeTypesMod {
   }
   object ThreeElements {
     
-    extension [Self <: ThreeElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThreeElements] (val x: Self) extends AnyVal {
       
       inline def setAmbientLight(value: AmbientLightProps): Self = StObject.set(x, "ambientLight", value.asInstanceOf[js.Any])
       

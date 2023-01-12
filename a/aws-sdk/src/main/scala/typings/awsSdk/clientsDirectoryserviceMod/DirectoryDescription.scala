@@ -143,7 +143,8 @@ object DirectoryDescription {
     __obj.asInstanceOf[DirectoryDescription]
   }
   
-  extension [Self <: DirectoryDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryDescription] (val x: Self) extends AnyVal {
     
     inline def setAccessUrl(value: AccessUrl): Self = StObject.set(x, "AccessUrl", value.asInstanceOf[js.Any])
     

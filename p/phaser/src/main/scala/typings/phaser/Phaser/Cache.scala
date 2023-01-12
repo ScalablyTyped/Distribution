@@ -95,7 +95,8 @@ object Cache {
       __obj.asInstanceOf[BaseCache]
     }
     
-    extension [Self <: BaseCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseCache] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (String, Any) => BaseCache): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
@@ -236,7 +237,8 @@ object Cache {
       __obj.asInstanceOf[CacheManager]
     }
     
-    extension [Self <: CacheManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheManager] (val x: Self) extends AnyVal {
       
       inline def setAddCustom(value: String => BaseCache): Self = StObject.set(x, "addCustom", js.Any.fromFunction1(value))
       

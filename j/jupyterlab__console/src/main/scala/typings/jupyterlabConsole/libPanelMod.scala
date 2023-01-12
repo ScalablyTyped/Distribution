@@ -116,7 +116,8 @@ object libPanelMod {
       @js.native
       val ^ : Token[IContentFactory] = js.native
       
-      extension [Self <: IContentFactory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
         
         inline def setCreateConsole(value: typings.jupyterlabConsole.libWidgetMod.CodeConsole.IOptions => CodeConsole): Self = StObject.set(x, "createConsole", js.Any.fromFunction1(value))
       }
@@ -206,7 +207,8 @@ object libPanelMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
         

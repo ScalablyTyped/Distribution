@@ -41,7 +41,8 @@ object typesModulesEffectFlipMod {
       __obj.asInstanceOf[FlipEffectOptions]
     }
     
-    extension [Self <: FlipEffectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlipEffectOptions] (val x: Self) extends AnyVal {
       
       inline def setLimitRotation(value: Boolean): Self = StObject.set(x, "limitRotation", value.asInstanceOf[js.Any])
       

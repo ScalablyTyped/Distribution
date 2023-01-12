@@ -30,7 +30,8 @@ object distKernelsNonMaxSuppressionUtilMod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setPSelectedIndices(value: Double): Self = StObject.set(x, "pSelectedIndices", value.asInstanceOf[js.Any])
       

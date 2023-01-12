@@ -40,7 +40,8 @@ object Literal {
     __obj.asInstanceOf[Literal]
   }
   
-  extension [Self <: Literal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Literal] (val x: Self) extends AnyVal {
     
     inline def setPrefixed(value: scala.Boolean): Self = StObject.set(x, "prefixed", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object AppointmentPropertyNames {
     __obj.asInstanceOf[AppointmentPropertyNames]
   }
   
-  extension [Self <: AppointmentPropertyNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentPropertyNames] (val x: Self) extends AnyVal {
     
     inline def setNormal(value: String): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
     

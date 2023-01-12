@@ -55,7 +55,8 @@ object libVictoryPrimitivesPointMod {
       __obj.asInstanceOf[PointProps]
     }
     
-    extension [Self <: PointProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointProps] (val x: Self) extends AnyVal {
       
       inline def setDatum(value: Any): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
       

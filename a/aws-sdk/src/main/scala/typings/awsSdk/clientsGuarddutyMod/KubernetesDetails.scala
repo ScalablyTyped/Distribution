@@ -23,7 +23,8 @@ object KubernetesDetails {
     __obj.asInstanceOf[KubernetesDetails]
   }
   
-  extension [Self <: KubernetesDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KubernetesDetails] (val x: Self) extends AnyVal {
     
     inline def setKubernetesUserDetails(value: KubernetesUserDetails): Self = StObject.set(x, "KubernetesUserDetails", value.asInstanceOf[js.Any])
     

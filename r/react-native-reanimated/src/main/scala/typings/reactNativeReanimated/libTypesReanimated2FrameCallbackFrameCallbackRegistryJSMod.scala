@@ -48,7 +48,8 @@ object libTypesReanimated2FrameCallbackFrameCallbackRegistryJSMod {
       __obj.asInstanceOf[FrameCallbackRegistryJS]
     }
     
-    extension [Self <: FrameCallbackRegistryJS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameCallbackRegistryJS] (val x: Self) extends AnyVal {
       
       inline def setManageStateFrameCallback(value: (Double, Boolean) => Unit): Self = StObject.set(x, "manageStateFrameCallback", js.Any.fromFunction2(value))
       

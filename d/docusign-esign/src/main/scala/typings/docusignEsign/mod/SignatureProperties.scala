@@ -23,7 +23,8 @@ object SignatureProperties {
     __obj.asInstanceOf[SignatureProperties]
   }
   
-  extension [Self <: SignatureProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureProperties] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GetCookiesRequest {
     __obj.asInstanceOf[GetCookiesRequest]
   }
   
-  extension [Self <: GetCookiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCookiesRequest] (val x: Self) extends AnyVal {
     
     inline def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
     

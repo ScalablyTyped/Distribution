@@ -18,7 +18,8 @@ object CreateStorageLocationResultMessage {
     __obj.asInstanceOf[CreateStorageLocationResultMessage]
   }
   
-  extension [Self <: CreateStorageLocationResultMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStorageLocationResultMessage] (val x: Self) extends AnyVal {
     
     inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     

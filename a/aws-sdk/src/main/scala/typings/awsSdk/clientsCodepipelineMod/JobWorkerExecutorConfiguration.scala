@@ -23,7 +23,8 @@ object JobWorkerExecutorConfiguration {
     __obj.asInstanceOf[JobWorkerExecutorConfiguration]
   }
   
-  extension [Self <: JobWorkerExecutorConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobWorkerExecutorConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPollingAccounts(value: PollingAccountList): Self = StObject.set(x, "pollingAccounts", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ToastFailedEventArgs {
     __obj.asInstanceOf[ToastFailedEventArgs]
   }
   
-  extension [Self <: ToastFailedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToastFailedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: WinRTError): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
   }

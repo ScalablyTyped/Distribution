@@ -89,7 +89,8 @@ object FilterInstanceGroupManager {
     __obj.asInstanceOf[FilterInstanceGroupManager]
   }
   
-  extension [Self <: FilterInstanceGroupManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterInstanceGroupManager] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

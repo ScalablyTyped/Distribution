@@ -21,7 +21,8 @@ object GetBatteryInfoSuccessCallbackResult {
     __obj.asInstanceOf[GetBatteryInfoSuccessCallbackResult]
   }
   
-  extension [Self <: GetBatteryInfoSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBatteryInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

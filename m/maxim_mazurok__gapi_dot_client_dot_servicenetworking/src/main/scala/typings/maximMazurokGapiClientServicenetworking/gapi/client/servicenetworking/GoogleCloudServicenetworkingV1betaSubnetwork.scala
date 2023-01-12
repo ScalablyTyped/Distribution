@@ -25,7 +25,8 @@ object GoogleCloudServicenetworkingV1betaSubnetwork {
     __obj.asInstanceOf[GoogleCloudServicenetworkingV1betaSubnetwork]
   }
   
-  extension [Self <: GoogleCloudServicenetworkingV1betaSubnetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudServicenetworkingV1betaSubnetwork] (val x: Self) extends AnyVal {
     
     inline def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
     

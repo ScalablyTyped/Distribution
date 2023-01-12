@@ -15,7 +15,8 @@ object IMessageOptions {
     __obj.asInstanceOf[IMessageOptions]
   }
   
-  extension [Self <: IMessageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMessageOptions] (val x: Self) extends AnyVal {
     
     inline def setMapEntry(value: Boolean): Self = StObject.set(x, "mapEntry", value.asInstanceOf[js.Any])
     

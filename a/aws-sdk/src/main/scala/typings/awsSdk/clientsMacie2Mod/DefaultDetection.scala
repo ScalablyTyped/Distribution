@@ -28,7 +28,8 @@ object DefaultDetection {
     __obj.asInstanceOf[DefaultDetection]
   }
   
-  extension [Self <: DefaultDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultDetection] (val x: Self) extends AnyVal {
     
     inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

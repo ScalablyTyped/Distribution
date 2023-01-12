@@ -73,7 +73,8 @@ object BarCustomLayerBaseProps {
     __obj.asInstanceOf[BarCustomLayerBaseProps[RawDatum]]
   }
   
-  extension [Self <: BarCustomLayerBaseProps[?], RawDatum](x: Self & BarCustomLayerBaseProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarCustomLayerBaseProps[?], RawDatum] (val x: Self & BarCustomLayerBaseProps[RawDatum]) extends AnyVal {
     
     inline def setBars(value: js.Array[ComputedBarDatum[RawDatum]]): Self = StObject.set(x, "bars", value.asInstanceOf[js.Any])
     

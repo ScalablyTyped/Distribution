@@ -20,7 +20,8 @@ object SmartHomeV1DisconnectRequest {
     __obj.asInstanceOf[SmartHomeV1DisconnectRequest]
   }
   
-  extension [Self <: SmartHomeV1DisconnectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartHomeV1DisconnectRequest] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: js.Array[Intent]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     

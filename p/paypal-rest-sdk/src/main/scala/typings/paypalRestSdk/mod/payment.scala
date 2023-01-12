@@ -86,7 +86,8 @@ object payment {
       __obj.asInstanceOf[AuthorizationResponse]
     }
     
-    extension [Self <: AuthorizationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationResponse] (val x: Self) extends AnyVal {
       
       inline def setCreate_time(value: String): Self = StObject.set(x, "create_time", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object payment {
       __obj.asInstanceOf[CaptureResponse]
     }
     
-    extension [Self <: CaptureResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptureResponse] (val x: Self) extends AnyVal {
       
       inline def setCreate_time(value: String): Self = StObject.set(x, "create_time", value.asInstanceOf[js.Any])
       
@@ -128,7 +130,8 @@ object payment {
       __obj.asInstanceOf[ExecuteRequest]
     }
     
-    extension [Self <: ExecuteRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecuteRequest] (val x: Self) extends AnyVal {
       
       inline def setPayer_id(value: String): Self = StObject.set(x, "payer_id", value.asInstanceOf[js.Any])
     }
@@ -152,7 +155,8 @@ object payment {
       __obj.asInstanceOf[ListResponse]
     }
     
-    extension [Self <: ListResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListResponse] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -179,7 +183,8 @@ object payment {
       __obj.asInstanceOf[RefundResponse]
     }
     
-    extension [Self <: RefundResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefundResponse] (val x: Self) extends AnyVal {
       
       inline def setCreate_time(value: String): Self = StObject.set(x, "create_time", value.asInstanceOf[js.Any])
       
@@ -202,7 +207,8 @@ object payment {
       __obj.asInstanceOf[SaleResponse]
     }
     
-    extension [Self <: SaleResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SaleResponse] (val x: Self) extends AnyVal {
       
       inline def setCreate_time(value: String): Self = StObject.set(x, "create_time", value.asInstanceOf[js.Any])
       

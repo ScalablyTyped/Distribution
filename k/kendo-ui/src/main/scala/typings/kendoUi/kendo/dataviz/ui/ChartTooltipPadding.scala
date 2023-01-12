@@ -21,7 +21,8 @@ object ChartTooltipPadding {
     __obj.asInstanceOf[ChartTooltipPadding]
   }
   
-  extension [Self <: ChartTooltipPadding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartTooltipPadding] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

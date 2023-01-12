@@ -45,7 +45,8 @@ object GetTagsRequest {
     __obj.asInstanceOf[GetTagsRequest]
   }
   
-  extension [Self <: GetTagsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTagsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: Expression): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

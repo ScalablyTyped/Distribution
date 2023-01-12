@@ -28,7 +28,8 @@ object FileSizes {
     __obj.asInstanceOf[FileSizes]
   }
   
-  extension [Self <: FileSizes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSizes] (val x: Self) extends AnyVal {
     
     inline def setBase(value: FileSize): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

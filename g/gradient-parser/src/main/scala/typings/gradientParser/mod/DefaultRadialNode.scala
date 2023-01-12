@@ -19,7 +19,8 @@ object DefaultRadialNode {
     __obj.asInstanceOf[DefaultRadialNode]
   }
   
-  extension [Self <: DefaultRadialNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultRadialNode] (val x: Self) extends AnyVal {
     
     inline def setAt(value: PositionNode): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object IsGlobPattern {
     __obj.asInstanceOf[IsGlobPattern]
   }
   
-  extension [Self <: IsGlobPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsGlobPattern] (val x: Self) extends AnyVal {
     
     inline def setIsGlobPattern(value: String => Boolean): Self = StObject.set(x, "isGlobPattern", js.Any.fromFunction1(value))
   }

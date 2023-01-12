@@ -34,7 +34,8 @@ object MultiScriptFileConfig {
     __obj.asInstanceOf[MultiScriptFileConfig]
   }
   
-  extension [Self <: MultiScriptFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiScriptFileConfig] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

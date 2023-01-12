@@ -49,7 +49,8 @@ object MapViewHighlightOptions {
     __obj.asInstanceOf[MapViewHighlightOptions]
   }
   
-  extension [Self <: MapViewHighlightOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapViewHighlightOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object PlotPackedbubbleJitterOptions {
     __obj.asInstanceOf[PlotPackedbubbleJitterOptions]
   }
   
-  extension [Self <: PlotPackedbubbleJitterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPackedbubbleJitterOptions] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

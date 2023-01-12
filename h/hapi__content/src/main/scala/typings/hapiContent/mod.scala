@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[ContentDisposition]
     }
     
-    extension [Self <: ContentDisposition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentDisposition] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object mod {
       __obj.asInstanceOf[ContentType]
     }
     
-    extension [Self <: ContentType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
       
       inline def setBoundary(value: String): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       

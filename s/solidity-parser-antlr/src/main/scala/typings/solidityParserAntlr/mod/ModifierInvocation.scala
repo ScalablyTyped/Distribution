@@ -24,7 +24,8 @@ object ModifierInvocation {
     __obj.asInstanceOf[ModifierInvocation]
   }
   
-  extension [Self <: ModifierInvocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifierInvocation] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[Expression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

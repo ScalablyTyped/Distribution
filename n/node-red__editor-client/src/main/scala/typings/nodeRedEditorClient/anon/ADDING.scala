@@ -56,7 +56,8 @@ object ADDING {
     __obj.asInstanceOf[ADDING]
   }
   
-  extension [Self <: ADDING](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ADDING] (val x: Self) extends AnyVal {
     
     inline def setADDING(value: Double): Self = StObject.set(x, "ADDING", value.asInstanceOf[js.Any])
     

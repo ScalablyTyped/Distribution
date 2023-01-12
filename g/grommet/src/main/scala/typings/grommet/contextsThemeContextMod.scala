@@ -28,7 +28,8 @@ object contextsThemeContextMod {
       __obj.asInstanceOf[ThemeContextI]
     }
     
-    extension [Self <: ThemeContextI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeContextI] (val x: Self) extends AnyVal {
       
       inline def setExtend(value: FC[Children]): Self = StObject.set(x, "Extend", value.asInstanceOf[js.Any])
     }

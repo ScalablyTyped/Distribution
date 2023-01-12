@@ -40,7 +40,8 @@ object univariateColorSizeCreateContinuousRendererParamsSymbolOptions {
     __obj.asInstanceOf[univariateColorSizeCreateContinuousRendererParamsSymbolOptions]
   }
   
-  extension [Self <: univariateColorSizeCreateContinuousRendererParamsSymbolOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: univariateColorSizeCreateContinuousRendererParamsSymbolOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbolStyle(
       value: caret | `circle-caret` | arrow | `circle-arrow` | `plus-minus` | `circle-plus-minus` | square_ | circle | triangle_ | `happy-sad` | thumb

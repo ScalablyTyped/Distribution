@@ -23,7 +23,8 @@ object ModifyInstanceMetadataOptionsResult {
     __obj.asInstanceOf[ModifyInstanceMetadataOptionsResult]
   }
   
-  extension [Self <: ModifyInstanceMetadataOptionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyInstanceMetadataOptionsResult] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

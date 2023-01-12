@@ -28,7 +28,8 @@ object AccountSignatureProviderOption {
     __obj.asInstanceOf[AccountSignatureProviderOption]
   }
   
-  extension [Self <: AccountSignatureProviderOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountSignatureProviderOption] (val x: Self) extends AnyVal {
     
     inline def setSignatureProviderOptionDisplayName(value: String): Self = StObject.set(x, "signatureProviderOptionDisplayName", value.asInstanceOf[js.Any])
     

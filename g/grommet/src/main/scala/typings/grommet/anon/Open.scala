@@ -21,7 +21,8 @@ object Open {
     __obj.asInstanceOf[Open]
   }
   
-  extension [Self <: Open](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Open] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: ExtendType[Record[String, Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     

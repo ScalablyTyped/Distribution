@@ -32,7 +32,8 @@ object XScriptInvocationContext {
     __obj.asInstanceOf[XScriptInvocationContext]
   }
   
-  extension [Self <: XScriptInvocationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XScriptInvocationContext] (val x: Self) extends AnyVal {
     
     inline def setScriptContainer(value: XEmbeddedScripts): Self = StObject.set(x, "ScriptContainer", value.asInstanceOf[js.Any])
   }

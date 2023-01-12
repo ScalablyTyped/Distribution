@@ -58,7 +58,8 @@ object UpdateCsvClassifierRequest {
     __obj.asInstanceOf[UpdateCsvClassifierRequest]
   }
   
-  extension [Self <: UpdateCsvClassifierRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCsvClassifierRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowSingleColumn(value: NullableBoolean): Self = StObject.set(x, "AllowSingleColumn", value.asInstanceOf[js.Any])
     

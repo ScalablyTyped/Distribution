@@ -23,7 +23,8 @@ object SetFamily {
     __obj.asInstanceOf[SetFamily]
   }
   
-  extension [Self <: SetFamily](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetFamily] (val x: Self) extends AnyVal {
     
     inline def setSetFamily(value: String): Self = StObject.set(x, "setFamily", value.asInstanceOf[js.Any])
     

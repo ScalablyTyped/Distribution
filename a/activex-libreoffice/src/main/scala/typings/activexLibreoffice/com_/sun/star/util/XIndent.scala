@@ -30,7 +30,8 @@ object XIndent {
     __obj.asInstanceOf[XIndent]
   }
   
-  extension [Self <: XIndent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIndent] (val x: Self) extends AnyVal {
     
     inline def setDecrementIndent(value: () => Unit): Self = StObject.set(x, "decrementIndent", js.Any.fromFunction0(value))
     

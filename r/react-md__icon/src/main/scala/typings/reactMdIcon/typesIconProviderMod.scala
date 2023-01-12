@@ -121,7 +121,8 @@ object typesIconProviderMod {
       __obj.asInstanceOf[ConfigurableIcons]
     }
     
-    extension [Self <: ConfigurableIcons](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurableIcons] (val x: Self) extends AnyVal {
       
       inline def setBack(value: ReactNode): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
       
@@ -213,7 +214,8 @@ object typesIconProviderMod {
       __obj.asInstanceOf[ConfiguredIcons]
     }
     
-    extension [Self <: ConfiguredIcons](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfiguredIcons] (val x: Self) extends AnyVal {
       
       inline def setBack(value: ReactNode): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
       
@@ -287,7 +289,8 @@ object typesIconProviderMod {
       __obj.asInstanceOf[IconProviderProps]
     }
     
-    extension [Self <: IconProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

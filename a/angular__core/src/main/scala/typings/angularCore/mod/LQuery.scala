@@ -35,7 +35,8 @@ object LQuery {
     __obj.asInstanceOf[LQuery[T]]
   }
   
-  extension [Self <: LQuery[?], T](x: Self & LQuery[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LQuery[?], T] (val x: Self & LQuery[T]) extends AnyVal {
     
     inline def setMatches(value: js.Array[T | Null]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     

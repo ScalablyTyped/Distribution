@@ -43,7 +43,8 @@ object CopyPartResult {
     __obj.asInstanceOf[CopyPartResult]
   }
   
-  extension [Self <: CopyPartResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyPartResult] (val x: Self) extends AnyVal {
     
     inline def setChecksumCRC32(value: ChecksumCRC32): Self = StObject.set(x, "ChecksumCRC32", value.asInstanceOf[js.Any])
     

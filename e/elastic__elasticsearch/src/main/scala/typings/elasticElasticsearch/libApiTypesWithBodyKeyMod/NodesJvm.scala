@@ -30,7 +30,8 @@ object NodesJvm {
     __obj.asInstanceOf[NodesJvm]
   }
   
-  extension [Self <: NodesJvm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesJvm] (val x: Self) extends AnyVal {
     
     inline def setBuffer_pools(value: Record[String, NodesNodeBufferPool]): Self = StObject.set(x, "buffer_pools", value.asInstanceOf[js.Any])
     

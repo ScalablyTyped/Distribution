@@ -28,7 +28,8 @@ object OperationProgress {
     __obj.asInstanceOf[OperationProgress]
   }
   
-  extension [Self <: OperationProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationProgress] (val x: Self) extends AnyVal {
     
     inline def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     

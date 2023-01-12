@@ -257,7 +257,8 @@ object distCoreToastMod {
       __obj.asInstanceOf[ToastPromiseParams[TData, TError, TPending]]
     }
     
-    extension [Self <: ToastPromiseParams[?, ?, ?], TData, TError, TPending](x: Self & (ToastPromiseParams[TData, TError, TPending])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastPromiseParams[?, ?, ?], TData, TError, TPending] (val x: Self & (ToastPromiseParams[TData, TError, TPending])) extends AnyVal {
       
       inline def setError(value: String | UpdateOptions[TError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

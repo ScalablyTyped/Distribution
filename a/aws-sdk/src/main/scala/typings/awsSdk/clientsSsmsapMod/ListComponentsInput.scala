@@ -28,7 +28,8 @@ object ListComponentsInput {
     __obj.asInstanceOf[ListComponentsInput]
   }
   
-  extension [Self <: ListComponentsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListComponentsInput] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: ApplicationId): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

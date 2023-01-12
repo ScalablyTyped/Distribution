@@ -17,7 +17,8 @@ object ICheckboxCellActionEventArgs {
     __obj.asInstanceOf[ICheckboxCellActionEventArgs]
   }
   
-  extension [Self <: ICheckboxCellActionEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICheckboxCellActionEventArgs] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
   }

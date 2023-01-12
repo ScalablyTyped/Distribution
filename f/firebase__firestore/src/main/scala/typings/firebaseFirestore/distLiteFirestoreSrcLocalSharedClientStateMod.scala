@@ -278,7 +278,8 @@ object distLiteFirestoreSrcLocalSharedClientStateMod {
       __obj.asInstanceOf[ClientState]
     }
     
-    extension [Self <: ClientState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientState] (val x: Self) extends AnyVal {
       
       inline def setActiveTargetIds(value: TargetIdSet_): Self = StObject.set(x, "activeTargetIds", value.asInstanceOf[js.Any])
     }

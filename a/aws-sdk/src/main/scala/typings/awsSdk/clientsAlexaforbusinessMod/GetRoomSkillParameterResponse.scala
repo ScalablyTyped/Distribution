@@ -18,7 +18,8 @@ object GetRoomSkillParameterResponse {
     __obj.asInstanceOf[GetRoomSkillParameterResponse]
   }
   
-  extension [Self <: GetRoomSkillParameterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRoomSkillParameterResponse] (val x: Self) extends AnyVal {
     
     inline def setRoomSkillParameter(value: RoomSkillParameter): Self = StObject.set(x, "RoomSkillParameter", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object RecommendedIntentSummary {
     __obj.asInstanceOf[RecommendedIntentSummary]
   }
   
-  extension [Self <: RecommendedIntentSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendedIntentSummary] (val x: Self) extends AnyVal {
     
     inline def setIntentId(value: Id): Self = StObject.set(x, "intentId", value.asInstanceOf[js.Any])
     

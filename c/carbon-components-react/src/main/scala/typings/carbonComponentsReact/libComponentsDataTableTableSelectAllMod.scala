@@ -55,7 +55,8 @@ object libComponentsDataTableTableSelectAllMod extends Shortcut {
       __obj.asInstanceOf[TableSelectAllProps]
     }
     
-    extension [Self <: TableSelectAllProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableSelectAllProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(
         value: /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/typings/shared.ReactInputAttr<std.HTMLInputElement>['aria-label'] */ js.Any

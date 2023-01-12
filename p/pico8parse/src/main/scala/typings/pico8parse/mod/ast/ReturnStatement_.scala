@@ -20,7 +20,8 @@ object ReturnStatement_ {
     __obj.asInstanceOf[ReturnStatement_]
   }
   
-  extension [Self <: ReturnStatement_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnStatement_] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[Expression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

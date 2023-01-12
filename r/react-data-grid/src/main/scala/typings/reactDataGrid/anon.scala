@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Callback]
     }
     
-    extension [Self <: Callback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Caption]
     }
     
-    extension [Self <: Caption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Caption] (val x: Self) extends AnyVal {
       
       inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Data */ Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
@@ -123,7 +126,8 @@ object anon {
       __obj.asInstanceOf[EnableShiftSelect[T]]
     }
     
-    extension [Self <: EnableShiftSelect[?], T](x: Self & EnableShiftSelect[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnableShiftSelect[?], T] (val x: Self & EnableShiftSelect[T]) extends AnyVal {
       
       inline def setEnableShiftSelect(value: Boolean): Self = StObject.set(x, "enableShiftSelect", value.asInstanceOf[js.Any])
       
@@ -160,7 +164,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -181,7 +186,8 @@ object anon {
       __obj.asInstanceOf[Idx]
     }
     
-    extension [Self <: Idx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Idx] (val x: Self) extends AnyVal {
       
       inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
@@ -204,7 +210,8 @@ object anon {
       __obj.asInstanceOf[Indexes]
     }
     
-    extension [Self <: Indexes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Indexes] (val x: Self) extends AnyVal {
       
       inline def setIndexes(value: js.Array[Double]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
       
@@ -237,7 +244,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
@@ -260,7 +268,8 @@ object anon {
       __obj.asInstanceOf[RowKey]
     }
     
-    extension [Self <: RowKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowKey] (val x: Self) extends AnyVal {
       
       inline def setRowKey(value: String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
       
@@ -287,7 +296,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -310,7 +320,8 @@ object anon {
       __obj.asInstanceOf[Width]
     }
     
-    extension [Self <: Width](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Width] (val x: Self) extends AnyVal {
       
       inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }

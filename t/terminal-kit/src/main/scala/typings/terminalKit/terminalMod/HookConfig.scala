@@ -25,7 +25,8 @@ object HookConfig {
     __obj.asInstanceOf[HookConfig]
   }
   
-  extension [Self <: HookConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HookConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoComplete(value: js.Array[String] | Autocompletion): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     

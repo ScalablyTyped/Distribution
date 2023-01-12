@@ -23,7 +23,8 @@ object GatewayCapabilitySummary {
     __obj.asInstanceOf[GatewayCapabilitySummary]
   }
   
-  extension [Self <: GatewayCapabilitySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatewayCapabilitySummary] (val x: Self) extends AnyVal {
     
     inline def setCapabilityNamespace(value: CapabilityNamespace): Self = StObject.set(x, "capabilityNamespace", value.asInstanceOf[js.Any])
     

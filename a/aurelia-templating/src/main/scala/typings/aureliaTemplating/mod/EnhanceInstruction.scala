@@ -40,7 +40,8 @@ object EnhanceInstruction {
     __obj.asInstanceOf[EnhanceInstruction]
   }
   
-  extension [Self <: EnhanceInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhanceInstruction] (val x: Self) extends AnyVal {
     
     inline def setBindingContext(value: js.Object): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
     

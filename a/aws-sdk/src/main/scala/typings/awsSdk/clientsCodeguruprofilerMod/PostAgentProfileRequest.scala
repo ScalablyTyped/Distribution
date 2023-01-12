@@ -33,7 +33,8 @@ object PostAgentProfileRequest {
     __obj.asInstanceOf[PostAgentProfileRequest]
   }
   
-  extension [Self <: PostAgentProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostAgentProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setAgentProfile(value: AgentProfile): Self = StObject.set(x, "agentProfile", value.asInstanceOf[js.Any])
     

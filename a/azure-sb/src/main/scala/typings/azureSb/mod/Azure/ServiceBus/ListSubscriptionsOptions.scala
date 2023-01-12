@@ -18,7 +18,8 @@ object ListSubscriptionsOptions {
     __obj.asInstanceOf[ListSubscriptionsOptions]
   }
   
-  extension [Self <: ListSubscriptionsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSubscriptionsOptions] (val x: Self) extends AnyVal {
     
     inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     

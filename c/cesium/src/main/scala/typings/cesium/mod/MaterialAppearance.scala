@@ -153,7 +153,8 @@ object MaterialAppearance {
       __obj.asInstanceOf[MaterialSupportType]
     }
     
-    extension [Self <: MaterialSupportType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaterialSupportType] (val x: Self) extends AnyVal {
       
       inline def setFragmentShaderSource(value: String): Self = StObject.set(x, "fragmentShaderSource", value.asInstanceOf[js.Any])
       

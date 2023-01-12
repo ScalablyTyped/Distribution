@@ -19,7 +19,8 @@ object InverseBindMatrices {
     __obj.asInstanceOf[InverseBindMatrices]
   }
   
-  extension [Self <: InverseBindMatrices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InverseBindMatrices] (val x: Self) extends AnyVal {
     
     inline def setInverseBindMatrices(value: BufferAttribute | InterleavedBufferAttribute): Self = StObject.set(x, "inverseBindMatrices", value.asInstanceOf[js.Any])
     

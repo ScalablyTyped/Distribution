@@ -48,7 +48,8 @@ object PartialOverflowMenuOption {
     __obj.asInstanceOf[PartialOverflowMenuOption]
   }
   
-  extension [Self <: PartialOverflowMenuOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOverflowMenuOption] (val x: Self) extends AnyVal {
     
     inline def setClassMenuFlip(value: String): Self = StObject.set(x, "classMenuFlip", value.asInstanceOf[js.Any])
     

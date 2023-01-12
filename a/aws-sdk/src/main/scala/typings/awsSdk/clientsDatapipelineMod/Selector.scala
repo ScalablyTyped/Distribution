@@ -20,7 +20,8 @@ object Selector {
     __obj.asInstanceOf[Selector]
   }
   
-  extension [Self <: Selector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Selector] (val x: Self) extends AnyVal {
     
     inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     

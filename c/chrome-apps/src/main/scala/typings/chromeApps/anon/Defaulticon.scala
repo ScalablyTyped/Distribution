@@ -31,7 +31,8 @@ object Defaulticon {
     __obj.asInstanceOf[Defaulticon]
   }
   
-  extension [Self <: Defaulticon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Defaulticon] (val x: Self) extends AnyVal {
     
     inline def setDefault_icon(value: String): Self = StObject.set(x, "default_icon", value.asInstanceOf[js.Any])
     

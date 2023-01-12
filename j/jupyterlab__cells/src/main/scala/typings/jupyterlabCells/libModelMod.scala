@@ -96,7 +96,8 @@ object libModelMod {
         __obj.asInstanceOf[IContentFactory]
       }
       
-      extension [Self <: IContentFactory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
         
         inline def setCreateAttachmentsModel(value: typings.jupyterlabAttachments.libModelMod.IAttachmentsModel.IOptions => IAttachmentsModel): Self = StObject.set(x, "createAttachmentsModel", js.Any.fromFunction1(value))
       }
@@ -121,7 +122,8 @@ object libModelMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         
@@ -257,7 +259,8 @@ object libModelMod {
         __obj.asInstanceOf[typings.jupyterlabCells.libModelMod.CellModel.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabCells.libModelMod.CellModel.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabCells.libModelMod.CellModel.IOptions] (val x: Self) extends AnyVal {
         
         inline def setCell(value: IBaseCell): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
         
@@ -376,7 +379,8 @@ object libModelMod {
         __obj.asInstanceOf[IContentFactory]
       }
       
-      extension [Self <: IContentFactory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
         
         inline def setCreateOutputArea(value: typings.jupyterlabOutputarea.libModelMod.IOutputAreaModel.IOptions => IOutputAreaModel): Self = StObject.set(x, "createOutputArea", js.Any.fromFunction1(value))
       }
@@ -401,7 +405,8 @@ object libModelMod {
         __obj.asInstanceOf[typings.jupyterlabCells.libModelMod.CodeCellModel.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabCells.libModelMod.CodeCellModel.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabCells.libModelMod.CodeCellModel.IOptions] (val x: Self) extends AnyVal {
         
         inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         
@@ -474,7 +479,8 @@ object libModelMod {
       __obj.asInstanceOf[IAttachmentsCellModel]
     }
     
-    extension [Self <: IAttachmentsCellModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAttachmentsCellModel] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: IAttachmentsModel): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     }
@@ -555,7 +561,8 @@ object libModelMod {
       __obj.asInstanceOf[ICellModel]
     }
     
-    extension [Self <: ICellModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICellModel] (val x: Self) extends AnyVal {
       
       inline def setContentChanged(value: ISignal[ICellModel, Unit]): Self = StObject.set(x, "contentChanged", value.asInstanceOf[js.Any])
       
@@ -645,7 +652,8 @@ object libModelMod {
       __obj.asInstanceOf[ICodeCellModel]
     }
     
-    extension [Self <: ICodeCellModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICodeCellModel] (val x: Self) extends AnyVal {
       
       inline def setClearExecution(value: () => Unit): Self = StObject.set(x, "clearExecution", js.Any.fromFunction0(value))
       
@@ -701,7 +709,8 @@ object libModelMod {
       __obj.asInstanceOf[IMarkdownCellModel]
     }
     
-    extension [Self <: IMarkdownCellModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMarkdownCellModel] (val x: Self) extends AnyVal {
       
       inline def setType(value: markdown): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -747,7 +756,8 @@ object libModelMod {
       __obj.asInstanceOf[IRawCellModel]
     }
     
-    extension [Self <: IRawCellModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRawCellModel] (val x: Self) extends AnyVal {
       
       inline def setType(value: raw): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

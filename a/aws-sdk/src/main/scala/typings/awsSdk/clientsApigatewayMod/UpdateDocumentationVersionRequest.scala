@@ -28,7 +28,8 @@ object UpdateDocumentationVersionRequest {
     __obj.asInstanceOf[UpdateDocumentationVersionRequest]
   }
   
-  extension [Self <: UpdateDocumentationVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDocumentationVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setDocumentationVersion(value: String): Self = StObject.set(x, "documentationVersion", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object JsxAreaElementProps {
     __obj.asInstanceOf[JsxAreaElementProps]
   }
   
-  extension [Self <: JsxAreaElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxAreaElementProps] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

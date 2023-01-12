@@ -108,7 +108,8 @@ object DownshiftProps {
     __obj.asInstanceOf[DownshiftProps[Item]]
   }
   
-  extension [Self <: DownshiftProps[?], Item](x: Self & DownshiftProps[Item]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownshiftProps[?], Item] (val x: Self & DownshiftProps[Item]) extends AnyVal {
     
     inline def setChildren(value: /* options */ ControllerStateAndHelpers[Item] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     

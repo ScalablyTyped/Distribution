@@ -17,7 +17,8 @@ object Typeofpower {
     __obj.asInstanceOf[Typeofpower]
   }
   
-  extension [Self <: Typeofpower](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofpower] (val x: Self) extends AnyVal {
     
     inline def setReleaseKeepAwake(value: () => Unit): Self = StObject.set(x, "releaseKeepAwake", js.Any.fromFunction0(value))
     

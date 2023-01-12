@@ -30,7 +30,8 @@ object ESMap {
     __obj.asInstanceOf[ESMap[K, V]]
   }
   
-  extension [Self <: ESMap[?, ?], K, V](x: Self & (ESMap[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ESMap[?, ?], K, V] (val x: Self & (ESMap[K, V])) extends AnyVal {
     
     inline def setSet(value: (K, V) => ESMap[K, V]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }

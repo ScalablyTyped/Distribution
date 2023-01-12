@@ -26,7 +26,8 @@ object PartialMessage {
     __obj.asInstanceOf[PartialMessage]
   }
   
-  extension [Self <: PartialMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMessage] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: Any): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

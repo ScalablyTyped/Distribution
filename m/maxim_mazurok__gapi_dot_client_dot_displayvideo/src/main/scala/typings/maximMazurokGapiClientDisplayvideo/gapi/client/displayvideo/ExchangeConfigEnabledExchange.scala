@@ -25,7 +25,8 @@ object ExchangeConfigEnabledExchange {
     __obj.asInstanceOf[ExchangeConfigEnabledExchange]
   }
   
-  extension [Self <: ExchangeConfigEnabledExchange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExchangeConfigEnabledExchange] (val x: Self) extends AnyVal {
     
     inline def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
     

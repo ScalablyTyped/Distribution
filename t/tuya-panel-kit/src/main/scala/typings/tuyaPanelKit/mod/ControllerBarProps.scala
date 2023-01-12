@@ -122,7 +122,8 @@ object ControllerBarProps {
     __obj.asInstanceOf[ControllerBarProps]
   }
   
-  extension [Self <: ControllerBarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControllerBarProps] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

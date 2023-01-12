@@ -36,7 +36,8 @@ object formatWfsMod {
       __obj.asInstanceOf[FeatureCollectionMetadata]
     }
     
-    extension [Self <: FeatureCollectionMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureCollectionMetadata] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Extent): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object formatWfsMod {
       __obj.asInstanceOf[FeatureType]
     }
     
-    extension [Self <: FeatureType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureType] (val x: Self) extends AnyVal {
       
       inline def setBbox(value: Extent): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object formatWfsMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFeatureNS(value: StringDictionary[String] | String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
       
@@ -131,7 +134,8 @@ object formatWfsMod {
       __obj.asInstanceOf[TransactionResponse]
     }
     
-    extension [Self <: TransactionResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionResponse] (val x: Self) extends AnyVal {
       
       inline def setInsertIds(value: js.Array[String]): Self = StObject.set(x, "insertIds", value.asInstanceOf[js.Any])
       
@@ -252,7 +256,8 @@ object formatWfsMod {
       __obj.asInstanceOf[WriteGetFeatureOptions]
     }
     
-    extension [Self <: WriteGetFeatureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteGetFeatureOptions] (val x: Self) extends AnyVal {
       
       inline def setBbox(value: Extent): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
@@ -341,7 +346,8 @@ object formatWfsMod {
       __obj.asInstanceOf[WriteTransactionOptions]
     }
     
-    extension [Self <: WriteTransactionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteTransactionOptions] (val x: Self) extends AnyVal {
       
       inline def setFeatureNS(value: String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
       

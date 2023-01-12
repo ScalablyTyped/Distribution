@@ -15,7 +15,8 @@ object Submittable {
     __obj.asInstanceOf[Submittable]
   }
   
-  extension [Self <: Submittable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Submittable] (val x: Self) extends AnyVal {
     
     inline def setSubmit(value: Connection => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
   }

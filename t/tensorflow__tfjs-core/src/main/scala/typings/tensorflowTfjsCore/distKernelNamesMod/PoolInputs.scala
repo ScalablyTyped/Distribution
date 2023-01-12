@@ -16,7 +16,8 @@ object PoolInputs {
     __obj.asInstanceOf[PoolInputs]
   }
   
-  extension [Self <: PoolInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoolInputs] (val x: Self) extends AnyVal {
     
     inline def setInput(value: scala.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object SearchAvailablePhoneNumbersRequest {
     __obj.asInstanceOf[SearchAvailablePhoneNumbersRequest]
   }
   
-  extension [Self <: SearchAvailablePhoneNumbersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAvailablePhoneNumbersRequest] (val x: Self) extends AnyVal {
     
     inline def setAreaCode(value: String): Self = StObject.set(x, "AreaCode", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[Options[FallbackType]]
     }
     
-    extension [Self <: Options[?], FallbackType](x: Self & Options[FallbackType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], FallbackType] (val x: Self & Options[FallbackType]) extends AnyVal {
       
       inline def setFallback(value: () => FallbackType): Self = StObject.set(x, "fallback", js.Any.fromFunction0(value))
       

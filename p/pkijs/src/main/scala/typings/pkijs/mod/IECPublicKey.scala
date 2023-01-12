@@ -19,7 +19,8 @@ object IECPublicKey {
     __obj.asInstanceOf[IECPublicKey]
   }
   
-  extension [Self <: IECPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IECPublicKey] (val x: Self) extends AnyVal {
     
     inline def setNamedCurve(value: String): Self = StObject.set(x, "namedCurve", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object CanvasPutImageDataOptions {
     __obj.asInstanceOf[CanvasPutImageDataOptions]
   }
   
-  extension [Self <: CanvasPutImageDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasPutImageDataOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.typedarray.Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

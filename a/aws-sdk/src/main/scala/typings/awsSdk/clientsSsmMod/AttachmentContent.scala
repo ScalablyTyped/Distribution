@@ -38,7 +38,8 @@ object AttachmentContent {
     __obj.asInstanceOf[AttachmentContent]
   }
   
-  extension [Self <: AttachmentContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentContent] (val x: Self) extends AnyVal {
     
     inline def setHash(value: AttachmentHash): Self = StObject.set(x, "Hash", value.asInstanceOf[js.Any])
     

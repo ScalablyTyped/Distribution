@@ -18,7 +18,8 @@ object SaveOptions {
     __obj.asInstanceOf[SaveOptions]
   }
   
-  extension [Self <: SaveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveOptions] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: ExportFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

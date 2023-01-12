@@ -148,7 +148,8 @@ object Toolbar {
       __obj.asInstanceOf[ClickEventArgs]
     }
     
-    extension [Self <: ClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object Toolbar {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -234,7 +236,8 @@ object Toolbar {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -295,7 +298,8 @@ object Toolbar {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
@@ -356,7 +360,8 @@ object Toolbar {
       __obj.asInstanceOf[FocusOutEventArgs]
     }
     
-    extension [Self <: FocusOutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusOutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -405,7 +410,8 @@ object Toolbar {
       __obj.asInstanceOf[ItemHoverEventArgs]
     }
     
-    extension [Self <: ItemHoverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemHoverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -466,7 +472,8 @@ object Toolbar {
       __obj.asInstanceOf[ItemLeaveEventArgs]
     }
     
-    extension [Self <: ItemLeaveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemLeaveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -539,7 +546,8 @@ object Toolbar {
       __obj.asInstanceOf[Items]
     }
     
-    extension [Self <: Items](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
@@ -708,7 +716,8 @@ object Toolbar {
       __obj.asInstanceOf[typings.ejWebAll.ej.Toolbar.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Toolbar.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Toolbar.Model] (val x: Self) extends AnyVal {
       
       inline def setClick(value: /* e */ ClickEventArgs => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
       
@@ -853,7 +862,8 @@ object Toolbar {
       __obj.asInstanceOf[OverflowCloseEventArgs]
     }
     
-    extension [Self <: OverflowCloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverflowCloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -914,7 +924,8 @@ object Toolbar {
       __obj.asInstanceOf[OverflowOpenEventArgs]
     }
     
-    extension [Self <: OverflowOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverflowOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

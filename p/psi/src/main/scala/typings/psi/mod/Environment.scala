@@ -19,7 +19,8 @@ object Environment {
     __obj.asInstanceOf[Environment]
   }
   
-  extension [Self <: Environment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
     
     inline def setBenchmarkIndex(value: Double): Self = StObject.set(x, "benchmarkIndex", value.asInstanceOf[js.Any])
     

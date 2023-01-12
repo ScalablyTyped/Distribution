@@ -19,7 +19,8 @@ object Fake {
     __obj.asInstanceOf[Fake]
   }
   
-  extension [Self <: Fake](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fake] (val x: Self) extends AnyVal {
     
     inline def setBackward(value: Boolean): Self = StObject.set(x, "backward", value.asInstanceOf[js.Any])
     

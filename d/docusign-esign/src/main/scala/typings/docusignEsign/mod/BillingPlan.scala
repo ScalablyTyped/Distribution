@@ -118,7 +118,8 @@ object BillingPlan {
     __obj.asInstanceOf[BillingPlan]
   }
   
-  extension [Self <: BillingPlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BillingPlan] (val x: Self) extends AnyVal {
     
     inline def setAppStoreProducts(value: js.Array[/* Contains information about an APP store product. */ AppStoreProduct]): Self = StObject.set(x, "appStoreProducts", value.asInstanceOf[js.Any])
     

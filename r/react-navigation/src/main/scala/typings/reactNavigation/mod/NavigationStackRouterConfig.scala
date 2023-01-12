@@ -21,7 +21,8 @@ object NavigationStackRouterConfig {
     __obj.asInstanceOf[NavigationStackRouterConfig]
   }
   
-  extension [Self <: NavigationStackRouterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationStackRouterConfig] (val x: Self) extends AnyVal {
     
     inline def setInitialRouteKey(value: String): Self = StObject.set(x, "initialRouteKey", value.asInstanceOf[js.Any])
     

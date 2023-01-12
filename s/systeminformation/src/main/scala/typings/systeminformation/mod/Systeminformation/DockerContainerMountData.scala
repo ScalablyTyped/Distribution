@@ -25,7 +25,8 @@ object DockerContainerMountData {
     __obj.asInstanceOf[DockerContainerMountData]
   }
   
-  extension [Self <: DockerContainerMountData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DockerContainerMountData] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: String): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

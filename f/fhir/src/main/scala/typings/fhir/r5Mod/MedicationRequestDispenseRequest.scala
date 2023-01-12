@@ -60,7 +60,8 @@ object MedicationRequestDispenseRequest {
     __obj.asInstanceOf[MedicationRequestDispenseRequest]
   }
   
-  extension [Self <: MedicationRequestDispenseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationRequestDispenseRequest] (val x: Self) extends AnyVal {
     
     inline def setDispenseInterval(value: Duration): Self = StObject.set(x, "dispenseInterval", value.asInstanceOf[js.Any])
     

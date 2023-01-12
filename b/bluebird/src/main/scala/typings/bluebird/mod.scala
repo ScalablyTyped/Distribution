@@ -3768,7 +3768,8 @@ object mod {
       __obj.asInstanceOf[ConcurrencyOption]
     }
     
-    extension [Self <: ConcurrencyOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcurrencyOption] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
     }
@@ -3787,7 +3788,8 @@ object mod {
       __obj.asInstanceOf[CoroutineOptions]
     }
     
-    extension [Self <: CoroutineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoroutineOptions] (val x: Self) extends AnyVal {
       
       inline def setYieldHandler(value: Any => Any): Self = StObject.set(x, "yieldHandler", js.Any.fromFunction1(value))
     }
@@ -3824,7 +3826,8 @@ object mod {
       __obj.asInstanceOf[FromNodeOptions]
     }
     
-    extension [Self <: FromNodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromNodeOptions] (val x: Self) extends AnyVal {
       
       inline def setMultiArgs(value: Boolean): Self = StObject.set(x, "multiArgs", value.asInstanceOf[js.Any])
       
@@ -3882,7 +3885,8 @@ object mod {
       __obj.asInstanceOf[Inspection[R]]
     }
     
-    extension [Self <: Inspection[?], R](x: Self & Inspection[R]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inspection[?], R] (val x: Self & Inspection[R]) extends AnyVal {
       
       inline def setIsCancelled(value: () => Boolean): Self = StObject.set(x, "isCancelled", js.Any.fromFunction0(value))
       
@@ -3981,7 +3985,8 @@ object mod {
       __obj.asInstanceOf[PromisifyAllOptions[T]]
     }
     
-    extension [Self <: PromisifyAllOptions[?], T](x: Self & PromisifyAllOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromisifyAllOptions[?], T] (val x: Self & PromisifyAllOptions[T]) extends AnyVal {
       
       inline def setFilter(
         value: (/* name */ String, /* func */ js.Function1[/* repeated */ Any, Any], /* target */ js.UndefOr[Any], /* passesDefaultFilter */ js.UndefOr[Boolean]) => Boolean
@@ -4022,7 +4027,8 @@ object mod {
       __obj.asInstanceOf[PromisifyOptions]
     }
     
-    extension [Self <: PromisifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromisifyOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -4078,7 +4084,8 @@ object mod {
       __obj.asInstanceOf[SpreadOption]
     }
     
-    extension [Self <: SpreadOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpreadOption] (val x: Self) extends AnyVal {
       
       inline def setSpread(value: Boolean): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
     }

@@ -34,7 +34,8 @@ object CarrierRate {
     __obj.asInstanceOf[CarrierRate]
   }
   
-  extension [Self <: CarrierRate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CarrierRate] (val x: Self) extends AnyVal {
     
     inline def setCarrierName(value: String): Self = StObject.set(x, "carrierName", value.asInstanceOf[js.Any])
     

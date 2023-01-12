@@ -34,7 +34,8 @@ object TaskPanes {
     __obj.asInstanceOf[TaskPanes]
   }
   
-  extension [Self <: TaskPanes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskPanes] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

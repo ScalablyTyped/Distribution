@@ -80,7 +80,8 @@ object componentsCalendarMod {
       __obj.asInstanceOf[CalendarHeaderProps]
     }
     
-    extension [Self <: CalendarHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object componentsCalendarMod {
       __obj.asInstanceOf[CalendarProps]
     }
     
-    extension [Self <: CalendarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarProps] (val x: Self) extends AnyVal {
       
       inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
       
@@ -276,7 +278,8 @@ object componentsCalendarMod {
       __obj.asInstanceOf[RenderProps]
     }
     
-    extension [Self <: RenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       

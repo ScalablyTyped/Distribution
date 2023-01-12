@@ -40,7 +40,8 @@ object ObjectConstructor {
     __obj.asInstanceOf[ObjectConstructor]
   }
   
-  extension [Self <: ObjectConstructor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectConstructor] (val x: Self) extends AnyVal {
     
     inline def setAssign(value: (Any, /* repeated */ Any) => Any): Self = StObject.set(x, "assign", js.Any.fromFunction2(value))
     

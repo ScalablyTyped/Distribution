@@ -30,7 +30,8 @@ object GridToolbarItemClickEventArgs {
     __obj.asInstanceOf[GridToolbarItemClickEventArgs]
   }
   
-  extension [Self <: GridToolbarItemClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridToolbarItemClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setItem(value: BootstrapMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object X64WordArray {
     __obj.asInstanceOf[X64WordArray]
   }
   
-  extension [Self <: X64WordArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X64WordArray] (val x: Self) extends AnyVal {
     
     inline def setSigBytes(value: Double): Self = StObject.set(x, "sigBytes", value.asInstanceOf[js.Any])
     

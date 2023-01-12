@@ -22,7 +22,8 @@ object FileSystemManagerGetSavedFileListOption {
     __obj.asInstanceOf[FileSystemManagerGetSavedFileListOption]
   }
   
-  extension [Self <: FileSystemManagerGetSavedFileListOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemManagerGetSavedFileListOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

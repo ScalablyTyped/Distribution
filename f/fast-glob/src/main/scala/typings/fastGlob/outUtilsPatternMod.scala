@@ -71,7 +71,8 @@ object outUtilsPatternMod {
       __obj.asInstanceOf[PatternTypeOptions]
     }
     
-    extension [Self <: PatternTypeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatternTypeOptions] (val x: Self) extends AnyVal {
       
       inline def setBraceExpansion(value: Boolean): Self = StObject.set(x, "braceExpansion", value.asInstanceOf[js.Any])
       

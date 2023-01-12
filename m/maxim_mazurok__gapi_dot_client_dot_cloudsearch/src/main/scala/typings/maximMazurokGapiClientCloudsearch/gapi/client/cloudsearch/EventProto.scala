@@ -23,7 +23,8 @@ object EventProto {
     __obj.asInstanceOf[EventProto]
   }
   
-  extension [Self <: EventProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventProto] (val x: Self) extends AnyVal {
     
     inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     

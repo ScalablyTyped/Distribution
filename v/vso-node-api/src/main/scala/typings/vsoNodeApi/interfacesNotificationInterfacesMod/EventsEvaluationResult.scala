@@ -23,7 +23,8 @@ object EventsEvaluationResult {
     __obj.asInstanceOf[EventsEvaluationResult]
   }
   
-  extension [Self <: EventsEvaluationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventsEvaluationResult] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

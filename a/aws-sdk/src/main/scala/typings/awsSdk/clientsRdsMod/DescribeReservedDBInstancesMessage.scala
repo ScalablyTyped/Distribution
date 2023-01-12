@@ -68,7 +68,8 @@ object DescribeReservedDBInstancesMessage {
     __obj.asInstanceOf[DescribeReservedDBInstancesMessage]
   }
   
-  extension [Self <: DescribeReservedDBInstancesMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReservedDBInstancesMessage] (val x: Self) extends AnyVal {
     
     inline def setDBInstanceClass(value: String): Self = StObject.set(x, "DBInstanceClass", value.asInstanceOf[js.Any])
     

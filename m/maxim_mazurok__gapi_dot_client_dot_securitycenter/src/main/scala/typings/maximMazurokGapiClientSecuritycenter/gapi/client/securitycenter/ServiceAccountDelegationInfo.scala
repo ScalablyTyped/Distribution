@@ -23,7 +23,8 @@ object ServiceAccountDelegationInfo {
     __obj.asInstanceOf[ServiceAccountDelegationInfo]
   }
   
-  extension [Self <: ServiceAccountDelegationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceAccountDelegationInfo] (val x: Self) extends AnyVal {
     
     inline def setPrincipalEmail(value: String): Self = StObject.set(x, "principalEmail", value.asInstanceOf[js.Any])
     

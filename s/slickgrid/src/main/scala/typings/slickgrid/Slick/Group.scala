@@ -100,7 +100,8 @@ object Group {
     __obj.asInstanceOf[Group[T]]
   }
   
-  extension [Self <: Group[?], T /* <: SlickData */](x: Self & Group[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Group[?], T /* <: SlickData */] (val x: Self & Group[T]) extends AnyVal {
     
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     

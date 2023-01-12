@@ -28,7 +28,8 @@ object PlatformFontUsage {
     __obj.asInstanceOf[PlatformFontUsage]
   }
   
-  extension [Self <: PlatformFontUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlatformFontUsage] (val x: Self) extends AnyVal {
     
     inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     

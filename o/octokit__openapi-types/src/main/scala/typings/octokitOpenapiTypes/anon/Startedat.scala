@@ -52,7 +52,8 @@ object Startedat {
     __obj.asInstanceOf[Startedat]
   }
   
-  extension [Self <: Startedat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Startedat] (val x: Self) extends AnyVal {
     
     inline def setCompleted_at(value: String): Self = StObject.set(x, "completed_at", value.asInstanceOf[js.Any])
     

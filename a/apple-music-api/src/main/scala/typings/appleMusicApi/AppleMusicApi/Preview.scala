@@ -18,7 +18,8 @@ object Preview {
     __obj.asInstanceOf[Preview]
   }
   
-  extension [Self <: Preview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Preview] (val x: Self) extends AnyVal {
     
     inline def setArtwork(value: Artwork): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SetFileModeEntry {
     __obj.asInstanceOf[SetFileModeEntry]
   }
   
-  extension [Self <: SetFileModeEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetFileModeEntry] (val x: Self) extends AnyVal {
     
     inline def setFileMode(value: FileModeTypeEnum): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
     

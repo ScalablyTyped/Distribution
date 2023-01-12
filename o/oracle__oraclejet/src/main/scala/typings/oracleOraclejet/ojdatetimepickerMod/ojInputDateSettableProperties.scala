@@ -86,7 +86,8 @@ object ojInputDateSettableProperties {
     __obj.asInstanceOf[ojInputDateSettableProperties]
   }
   
-  extension [Self <: ojInputDateSettableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojInputDateSettableProperties] (val x: Self) extends AnyVal {
     
     inline def setConverter(value: Converter[String] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     

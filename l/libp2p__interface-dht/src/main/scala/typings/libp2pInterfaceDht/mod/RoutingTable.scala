@@ -15,7 +15,8 @@ object RoutingTable {
     __obj.asInstanceOf[RoutingTable]
   }
   
-  extension [Self <: RoutingTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutingTable] (val x: Self) extends AnyVal {
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object ListTargetsForSecurityProfileRequest {
     __obj.asInstanceOf[ListTargetsForSecurityProfileRequest]
   }
   
-  extension [Self <: ListTargetsForSecurityProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTargetsForSecurityProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ClearSharedStorageEntriesRequest {
     __obj.asInstanceOf[ClearSharedStorageEntriesRequest]
   }
   
-  extension [Self <: ClearSharedStorageEntriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearSharedStorageEntriesRequest] (val x: Self) extends AnyVal {
     
     inline def setOwnerOrigin(value: String): Self = StObject.set(x, "ownerOrigin", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object libCustomizationsCustomizerDottypesMod {
       __obj.asInstanceOf[ICustomizerProps]
     }
     
-    extension [Self <: ICustomizerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomizerProps] (val x: Self) extends AnyVal {
       
       inline def setComponentRef(value: IRefObject[Any]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       

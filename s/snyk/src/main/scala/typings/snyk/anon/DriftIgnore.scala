@@ -30,7 +30,8 @@ object DriftIgnore {
     __obj.asInstanceOf[DriftIgnore]
   }
   
-  extension [Self <: DriftIgnore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriftIgnore] (val x: Self) extends AnyVal {
     
     inline def setDriftIgnore(value: js.Array[String]): Self = StObject.set(x, "driftIgnore", value.asInstanceOf[js.Any])
     

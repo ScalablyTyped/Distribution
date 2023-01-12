@@ -50,7 +50,8 @@ object accessibilityFeatures {
       __obj.asInstanceOf[AccessibilityFeaturesCallbackArg]
     }
     
-    extension [Self <: AccessibilityFeaturesCallbackArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessibilityFeaturesCallbackArg] (val x: Self) extends AnyVal {
       
       inline def setIncognitoSpecific(value: Boolean): Self = StObject.set(x, "incognitoSpecific", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object accessibilityFeatures {
       __obj.asInstanceOf[AccessibilityFeaturesClearArg]
     }
     
-    extension [Self <: AccessibilityFeaturesClearArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessibilityFeaturesClearArg] (val x: Self) extends AnyVal {
       
       inline def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object accessibilityFeatures {
       __obj.asInstanceOf[AccessibilityFeaturesGetArg]
     }
     
-    extension [Self <: AccessibilityFeaturesGetArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessibilityFeaturesGetArg] (val x: Self) extends AnyVal {
       
       inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
       
@@ -132,7 +135,8 @@ object accessibilityFeatures {
       __obj.asInstanceOf[AccessibilityFeaturesSetArg]
     }
     
-    extension [Self <: AccessibilityFeaturesSetArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessibilityFeaturesSetArg] (val x: Self) extends AnyVal {
       
       inline def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       

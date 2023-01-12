@@ -19,7 +19,8 @@ object DatabaseEncryption {
     __obj.asInstanceOf[DatabaseEncryption]
   }
   
-  extension [Self <: DatabaseEncryption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseEncryption] (val x: Self) extends AnyVal {
     
     inline def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object RTCDataChannelInit {
     __obj.asInstanceOf[RTCDataChannelInit]
   }
   
-  extension [Self <: RTCDataChannelInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCDataChannelInit] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

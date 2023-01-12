@@ -27,7 +27,8 @@ object DocumentLoadCompleteEventArgs {
     __obj.asInstanceOf[DocumentLoadCompleteEventArgs]
   }
   
-  extension [Self <: DocumentLoadCompleteEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentLoadCompleteEventArgs] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }

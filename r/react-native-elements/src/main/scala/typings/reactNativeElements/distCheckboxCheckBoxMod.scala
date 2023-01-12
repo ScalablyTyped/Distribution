@@ -69,7 +69,8 @@ object distCheckboxCheckBoxMod extends Shortcut {
       __obj.asInstanceOf[CheckBoxProps]
     }
     
-    extension [Self <: CheckBoxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckBoxProps] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       

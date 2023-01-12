@@ -23,7 +23,8 @@ object ButtonOption {
     __obj.asInstanceOf[ButtonOption]
   }
   
-  extension [Self <: ButtonOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonOption] (val x: Self) extends AnyVal {
     
     inline def setHoldtime(value: Double): Self = StObject.set(x, "holdtime", value.asInstanceOf[js.Any])
     

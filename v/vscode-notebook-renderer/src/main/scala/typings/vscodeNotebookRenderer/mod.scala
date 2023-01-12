@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[OutputItem]
     }
     
-    extension [Self <: OutputItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputItem] (val x: Self) extends AnyVal {
       
       inline def setBlob(value: () => Blob): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
       
@@ -133,7 +134,8 @@ object mod {
       __obj.asInstanceOf[RendererApi]
     }
     
-    extension [Self <: RendererApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RendererApi] (val x: Self) extends AnyVal {
       
       inline def setDisposeOutputItem(value: /* id */ js.UndefOr[String] => Unit): Self = StObject.set(x, "disposeOutputItem", js.Any.fromFunction1(value))
       
@@ -204,7 +206,8 @@ object mod {
       __obj.asInstanceOf[RendererContext[TState]]
     }
     
-    extension [Self <: RendererContext[?], TState](x: Self & RendererContext[TState]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RendererContext[?], TState] (val x: Self & RendererContext[TState]) extends AnyVal {
       
       inline def setGetRenderer(value: String => js.Promise[js.UndefOr[RendererApi]]): Self = StObject.set(x, "getRenderer", js.Any.fromFunction1(value))
       

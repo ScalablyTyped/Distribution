@@ -49,7 +49,8 @@ object DataViewMatrixNode {
     __obj.asInstanceOf[DataViewMatrixNode]
   }
   
-  extension [Self <: DataViewMatrixNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewMatrixNode] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[DataViewMatrixNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

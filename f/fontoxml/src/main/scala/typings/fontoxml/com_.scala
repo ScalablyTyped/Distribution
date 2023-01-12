@@ -26,7 +26,8 @@ object com_ {
         __obj.asInstanceOf[IFontoMessageEventData]
       }
       
-      extension [Self <: IFontoMessageEventData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IFontoMessageEventData] (val x: Self) extends AnyVal {
         
         inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
         
@@ -68,7 +69,8 @@ object com_ {
         __obj.asInstanceOf[IInvocator]
       }
       
-      extension [Self <: IInvocator](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IInvocator] (val x: Self) extends AnyVal {
         
         inline def setAutosave(value: Boolean): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
         
@@ -109,7 +111,8 @@ object com_ {
         __obj.asInstanceOf[IUserInfo]
       }
       
-      extension [Self <: IUserInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IUserInfo] (val x: Self) extends AnyVal {
         
         inline def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
       }
@@ -128,7 +131,8 @@ object com_ {
         __obj.asInstanceOf[IWorkflowInfo]
       }
       
-      extension [Self <: IWorkflowInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IWorkflowInfo] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         

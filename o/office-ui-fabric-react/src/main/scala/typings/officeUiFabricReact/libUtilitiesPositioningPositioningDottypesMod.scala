@@ -98,7 +98,8 @@ object libUtilitiesPositioningPositioningDottypesMod {
       __obj.asInstanceOf[ICalloutBeakPositionedInfo]
     }
     
-    extension [Self <: ICalloutBeakPositionedInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalloutBeakPositionedInfo] (val x: Self) extends AnyVal {
       
       inline def setClosestEdge(value: RectangleEdge): Self = StObject.set(x, "closestEdge", value.asInstanceOf[js.Any])
     }
@@ -125,7 +126,8 @@ object libUtilitiesPositioningPositioningDottypesMod {
       __obj.asInstanceOf[ICalloutPositionProps]
     }
     
-    extension [Self <: ICalloutPositionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalloutPositionProps] (val x: Self) extends AnyVal {
       
       inline def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object libUtilitiesPositioningPositioningDottypesMod {
       __obj.asInstanceOf[ICalloutPositionedInfo]
     }
     
-    extension [Self <: ICalloutPositionedInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalloutPositionedInfo] (val x: Self) extends AnyVal {
       
       inline def setBeakPosition(value: ICalloutBeakPositionedInfo): Self = StObject.set(x, "beakPosition", value.asInstanceOf[js.Any])
     }
@@ -175,7 +178,8 @@ object libUtilitiesPositioningPositioningDottypesMod {
       __obj.asInstanceOf[IPosition]
     }
     
-    extension [Self <: IPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPosition] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -212,7 +216,8 @@ object libUtilitiesPositioningPositioningDottypesMod {
       __obj.asInstanceOf[IPositionDirectionalHintData]
     }
     
-    extension [Self <: IPositionDirectionalHintData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPositionDirectionalHintData] (val x: Self) extends AnyVal {
       
       inline def setAlignTargetEdge(value: Boolean): Self = StObject.set(x, "alignTargetEdge", value.asInstanceOf[js.Any])
       
@@ -277,7 +282,8 @@ object libUtilitiesPositioningPositioningDottypesMod {
       __obj.asInstanceOf[IPositionProps]
     }
     
-    extension [Self <: IPositionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPositionProps] (val x: Self) extends AnyVal {
       
       inline def setAlignTargetEdge(value: Boolean): Self = StObject.set(x, "alignTargetEdge", value.asInstanceOf[js.Any])
       
@@ -340,7 +346,8 @@ object libUtilitiesPositioningPositioningDottypesMod {
       __obj.asInstanceOf[IPositionedData]
     }
     
-    extension [Self <: IPositionedData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPositionedData] (val x: Self) extends AnyVal {
       
       inline def setAlignmentEdge(value: RectangleEdge): Self = StObject.set(x, "alignmentEdge", value.asInstanceOf[js.Any])
       
@@ -374,7 +381,8 @@ object libUtilitiesPositioningPositioningDottypesMod {
       __obj.asInstanceOf[IRelativePositions]
     }
     
-    extension [Self <: IRelativePositions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRelativePositions] (val x: Self) extends AnyVal {
       
       inline def setBeakPosition(value: typings.officeUiFabricReact.anon.Position): Self = StObject.set(x, "beakPosition", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object ListBucketIntelligentTieringConfigurationsOutput {
     __obj.asInstanceOf[ListBucketIntelligentTieringConfigurationsOutput]
   }
   
-  extension [Self <: ListBucketIntelligentTieringConfigurationsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBucketIntelligentTieringConfigurationsOutput] (val x: Self) extends AnyVal {
     
     inline def setContinuationToken(value: Token): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object libOpenfilesMod {
       __obj.asInstanceOf[OpenFiles]
     }
     
-    extension [Self <: OpenFiles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenFiles] (val x: Self) extends AnyVal {
       
       inline def setOpenFd(value: () => js.Promise[Double]): Self = StObject.set(x, "openFd", js.Any.fromFunction0(value))
     }

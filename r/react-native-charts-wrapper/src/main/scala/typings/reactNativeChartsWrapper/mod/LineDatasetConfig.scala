@@ -41,7 +41,8 @@ object LineDatasetConfig {
     __obj.asInstanceOf[LineDatasetConfig]
   }
   
-  extension [Self <: LineDatasetConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineDatasetConfig] (val x: Self) extends AnyVal {
     
     inline def setCircleColor(value: Color): Self = StObject.set(x, "circleColor", value.asInstanceOf[js.Any])
     

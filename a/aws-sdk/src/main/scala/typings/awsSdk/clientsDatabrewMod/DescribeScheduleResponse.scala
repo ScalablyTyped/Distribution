@@ -58,7 +58,8 @@ object DescribeScheduleResponse {
     __obj.asInstanceOf[DescribeScheduleResponse]
   }
   
-  extension [Self <: DescribeScheduleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeScheduleResponse] (val x: Self) extends AnyVal {
     
     inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     

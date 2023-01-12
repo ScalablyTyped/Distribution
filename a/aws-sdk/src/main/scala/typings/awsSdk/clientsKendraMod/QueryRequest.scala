@@ -78,7 +78,8 @@ object QueryRequest {
     __obj.asInstanceOf[QueryRequest]
   }
   
-  extension [Self <: QueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributeFilter(value: AttributeFilter): Self = StObject.set(x, "AttributeFilter", value.asInstanceOf[js.Any])
     

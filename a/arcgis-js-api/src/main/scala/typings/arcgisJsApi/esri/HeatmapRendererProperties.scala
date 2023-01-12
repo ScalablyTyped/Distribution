@@ -86,7 +86,8 @@ object HeatmapRendererProperties {
     __obj.asInstanceOf[HeatmapRendererProperties]
   }
   
-  extension [Self <: HeatmapRendererProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeatmapRendererProperties] (val x: Self) extends AnyVal {
     
     inline def setColorStops(value: js.Array[HeatmapColorStopProperties]): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
     

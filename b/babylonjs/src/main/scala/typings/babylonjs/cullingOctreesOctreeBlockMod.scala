@@ -160,7 +160,8 @@ object cullingOctreesOctreeBlockMod {
       __obj.asInstanceOf[IOctreeContainer[T]]
     }
     
-    extension [Self <: IOctreeContainer[?], T](x: Self & IOctreeContainer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOctreeContainer[?], T] (val x: Self & IOctreeContainer[T]) extends AnyVal {
       
       inline def setBlocks(value: js.Array[OctreeBlock[T]]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       

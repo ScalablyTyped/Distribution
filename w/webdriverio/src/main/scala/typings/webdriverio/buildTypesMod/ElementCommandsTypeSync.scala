@@ -1361,7 +1361,8 @@ object ElementCommandsTypeSync {
     __obj.asInstanceOf[ElementCommandsTypeSync]
   }
   
-  extension [Self <: ElementCommandsTypeSync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementCommandsTypeSync] (val x: Self) extends AnyVal {
     
     inline def set$(
       value: /* args */ Parameters[

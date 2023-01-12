@@ -23,7 +23,8 @@ object PickDialogTitlePropstitle {
     __obj.asInstanceOf[PickDialogTitlePropstitle]
   }
   
-  extension [Self <: PickDialogTitlePropstitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickDialogTitlePropstitle] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

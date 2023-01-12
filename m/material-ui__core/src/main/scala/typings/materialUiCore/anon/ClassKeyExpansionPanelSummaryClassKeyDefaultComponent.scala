@@ -21,7 +21,8 @@ object ClassKeyExpansionPanelSummaryClassKeyDefaultComponent {
     __obj.asInstanceOf[ClassKeyExpansionPanelSummaryClassKeyDefaultComponent]
   }
   
-  extension [Self <: ClassKeyExpansionPanelSummaryClassKeyDefaultComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassKeyExpansionPanelSummaryClassKeyDefaultComponent] (val x: Self) extends AnyVal {
     
     inline def setClassKey(value: ExpansionPanelSummaryClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
     

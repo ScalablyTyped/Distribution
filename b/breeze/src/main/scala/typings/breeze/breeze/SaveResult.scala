@@ -27,7 +27,8 @@ object SaveResult {
     __obj.asInstanceOf[SaveResult]
   }
   
-  extension [Self <: SaveResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveResult] (val x: Self) extends AnyVal {
     
     inline def setDeletedKeys(value: js.Array[DeletedEntityKey]): Self = StObject.set(x, "deletedKeys", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object AdGroupUrls {
     __obj.asInstanceOf[AdGroupUrls]
   }
   
-  extension [Self <: AdGroupUrls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdGroupUrls] (val x: Self) extends AnyVal {
     
     inline def setClearFinalUrlSuffix(value: () => Unit): Self = StObject.set(x, "clearFinalUrlSuffix", js.Any.fromFunction0(value))
     

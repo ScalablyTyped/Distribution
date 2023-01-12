@@ -65,7 +65,8 @@ object InvertedIndexCharNode {
     __obj.asInstanceOf[InvertedIndexCharNode]
   }
   
-  extension [Self <: InvertedIndexCharNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvertedIndexCharNode] (val x: Self) extends AnyVal {
     
     inline def setA(value: InvertedIndexNode): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object InputBuilder {
     __obj.asInstanceOf[InputBuilder]
   }
   
-  extension [Self <: InputBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => InputPlaceholder): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

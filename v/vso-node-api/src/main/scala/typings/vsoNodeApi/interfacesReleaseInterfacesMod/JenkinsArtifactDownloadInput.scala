@@ -17,7 +17,8 @@ object JenkinsArtifactDownloadInput {
     __obj.asInstanceOf[JenkinsArtifactDownloadInput]
   }
   
-  extension [Self <: JenkinsArtifactDownloadInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JenkinsArtifactDownloadInput] (val x: Self) extends AnyVal {
     
     inline def setArtifactItems(value: js.Array[String]): Self = StObject.set(x, "artifactItems", value.asInstanceOf[js.Any])
     

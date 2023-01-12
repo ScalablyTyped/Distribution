@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsVerticalRatioSmallMod extends Shortcut {
       __obj.asInstanceOf[VerticalRatioSmallProps]
     }
     
-    extension [Self <: VerticalRatioSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerticalRatioSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

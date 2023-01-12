@@ -25,7 +25,8 @@ object ConditionDefinitionPlan {
     __obj.asInstanceOf[ConditionDefinitionPlan]
   }
   
-  extension [Self <: ConditionDefinitionPlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionDefinitionPlan] (val x: Self) extends AnyVal {
     
     inline def setReference(value: Reference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     

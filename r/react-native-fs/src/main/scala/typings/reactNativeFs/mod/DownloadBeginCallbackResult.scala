@@ -24,7 +24,8 @@ object DownloadBeginCallbackResult {
     __obj.asInstanceOf[DownloadBeginCallbackResult]
   }
   
-  extension [Self <: DownloadBeginCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadBeginCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
     

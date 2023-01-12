@@ -15,7 +15,8 @@ object Region {
     __obj.asInstanceOf[Region]
   }
   
-  extension [Self <: Region](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Coordinates): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
   }

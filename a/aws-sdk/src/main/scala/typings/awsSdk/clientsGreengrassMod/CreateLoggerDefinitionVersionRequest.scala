@@ -28,7 +28,8 @@ object CreateLoggerDefinitionVersionRequest {
     __obj.asInstanceOf[CreateLoggerDefinitionVersionRequest]
   }
   
-  extension [Self <: CreateLoggerDefinitionVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLoggerDefinitionVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     

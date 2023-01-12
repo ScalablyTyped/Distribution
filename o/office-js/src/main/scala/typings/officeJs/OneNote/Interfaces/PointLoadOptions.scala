@@ -37,7 +37,8 @@ object PointLoadOptions {
     __obj.asInstanceOf[PointLoadOptions]
   }
   
-  extension [Self <: PointLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

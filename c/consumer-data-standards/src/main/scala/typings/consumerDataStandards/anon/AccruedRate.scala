@@ -76,7 +76,8 @@ object AccruedRate {
     __obj.asInstanceOf[AccruedRate]
   }
   
-  extension [Self <: AccruedRate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccruedRate] (val x: Self) extends AnyVal {
     
     inline def setAccruedRate(value: String): Self = StObject.set(x, "accruedRate", value.asInstanceOf[js.Any])
     

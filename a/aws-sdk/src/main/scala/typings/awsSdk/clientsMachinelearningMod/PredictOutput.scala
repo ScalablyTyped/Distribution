@@ -15,7 +15,8 @@ object PredictOutput {
     __obj.asInstanceOf[PredictOutput]
   }
   
-  extension [Self <: PredictOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredictOutput] (val x: Self) extends AnyVal {
     
     inline def setPrediction(value: Prediction): Self = StObject.set(x, "Prediction", value.asInstanceOf[js.Any])
     

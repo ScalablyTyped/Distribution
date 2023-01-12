@@ -30,7 +30,8 @@ object LoggerModule {
     __obj.asInstanceOf[LoggerModule]
   }
   
-  extension [Self <: LoggerModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggerModule] (val x: Self) extends AnyVal {
     
     inline def setError(value: /* repeated */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     

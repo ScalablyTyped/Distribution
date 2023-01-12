@@ -50,7 +50,8 @@ object ITag {
     __obj.asInstanceOf[ITag]
   }
   
-  extension [Self <: ITag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITag] (val x: Self) extends AnyVal {
     
     inline def setCreated_time(value: String): Self = StObject.set(x, "created_time", value.asInstanceOf[js.Any])
     

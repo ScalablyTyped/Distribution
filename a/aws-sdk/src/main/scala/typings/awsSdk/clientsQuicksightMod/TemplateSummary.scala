@@ -43,7 +43,8 @@ object TemplateSummary {
     __obj.asInstanceOf[TemplateSummary]
   }
   
-  extension [Self <: TemplateSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

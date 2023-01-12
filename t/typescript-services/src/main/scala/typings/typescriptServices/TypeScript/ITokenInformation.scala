@@ -17,7 +17,8 @@ object ITokenInformation {
     __obj.asInstanceOf[ITokenInformation]
   }
   
-  extension [Self <: ITokenInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITokenInformation] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: ISyntaxToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -105,7 +105,8 @@ object mod {
       __obj.asInstanceOf[AtImportOptions]
     }
     
-    extension [Self <: AtImportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AtImportOptions] (val x: Self) extends AnyVal {
       
       inline def setAddModulesDirectories(value: js.Array[String]): Self = StObject.set(x, "addModulesDirectories", value.asInstanceOf[js.Any])
       

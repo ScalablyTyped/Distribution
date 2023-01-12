@@ -18,7 +18,8 @@ object DescribeEventTrackerResponse {
     __obj.asInstanceOf[DescribeEventTrackerResponse]
   }
   
-  extension [Self <: DescribeEventTrackerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEventTrackerResponse] (val x: Self) extends AnyVal {
     
     inline def setEventTracker(value: EventTracker): Self = StObject.set(x, "eventTracker", value.asInstanceOf[js.Any])
     

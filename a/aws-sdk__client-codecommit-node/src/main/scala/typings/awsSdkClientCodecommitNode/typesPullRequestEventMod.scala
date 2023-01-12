@@ -69,7 +69,8 @@ object typesPullRequestEventMod {
       __obj.asInstanceOf[PullRequestEvent]
     }
     
-    extension [Self <: PullRequestEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PullRequestEvent] (val x: Self) extends AnyVal {
       
       inline def setActorArn(value: String): Self = StObject.set(x, "actorArn", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object typesPullRequestEventMod {
       __obj.asInstanceOf[UnmarshalledPullRequestEvent]
     }
     
-    extension [Self <: UnmarshalledPullRequestEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledPullRequestEvent] (val x: Self) extends AnyVal {
       
       inline def setEventDate(value: js.Date): Self = StObject.set(x, "eventDate", value.asInstanceOf[js.Any])
       

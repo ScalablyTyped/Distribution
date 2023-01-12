@@ -19,7 +19,8 @@ object HexOptions {
     __obj.asInstanceOf[HexOptions]
   }
   
-  extension [Self <: HexOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HexOptions] (val x: Self) extends AnyVal {
     
     inline def setByteAligned(value: Boolean): Self = StObject.set(x, "byteAligned", value.asInstanceOf[js.Any])
     

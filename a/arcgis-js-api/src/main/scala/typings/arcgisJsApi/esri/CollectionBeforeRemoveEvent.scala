@@ -21,7 +21,8 @@ object CollectionBeforeRemoveEvent {
     __obj.asInstanceOf[CollectionBeforeRemoveEvent]
   }
   
-  extension [Self <: CollectionBeforeRemoveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionBeforeRemoveEvent] (val x: Self) extends AnyVal {
     
     inline def setCancellable(value: Boolean): Self = StObject.set(x, "cancellable", value.asInstanceOf[js.Any])
     

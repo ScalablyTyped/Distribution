@@ -120,7 +120,8 @@ object XGridColumnModel {
     __obj.asInstanceOf[XGridColumnModel]
   }
   
-  extension [Self <: XGridColumnModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGridColumnModel] (val x: Self) extends AnyVal {
     
     inline def setAddColumn(value: XGridColumn => Double): Self = StObject.set(x, "addColumn", js.Any.fromFunction1(value))
     

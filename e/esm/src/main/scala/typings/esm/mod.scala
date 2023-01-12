@@ -59,7 +59,8 @@ object mod {
         __obj.asInstanceOf[Esm]
       }
       
-      extension [Self <: Esm](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Esm] (val x: Self) extends AnyVal {
         
         inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
         
@@ -109,7 +110,8 @@ object mod {
         __obj.asInstanceOf[typings.esm.mod.Options.Options]
       }
       
-      extension [Self <: typings.esm.mod.Options.Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.esm.mod.Options.Options] (val x: Self) extends AnyVal {
         
         inline def setAwait(value: Boolean): Self = StObject.set(x, "await", value.asInstanceOf[js.Any])
         

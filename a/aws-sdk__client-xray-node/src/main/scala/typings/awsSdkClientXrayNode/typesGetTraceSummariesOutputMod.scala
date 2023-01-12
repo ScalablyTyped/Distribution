@@ -46,7 +46,8 @@ object typesGetTraceSummariesOutputMod {
       __obj.asInstanceOf[GetTraceSummariesOutput]
     }
     
-    extension [Self <: GetTraceSummariesOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTraceSummariesOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

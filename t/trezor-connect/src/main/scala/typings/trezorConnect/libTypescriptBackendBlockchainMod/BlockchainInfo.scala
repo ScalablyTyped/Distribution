@@ -47,7 +47,8 @@ object BlockchainInfo {
     __obj.asInstanceOf[BlockchainInfo]
   }
   
-  extension [Self <: BlockchainInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockchainInfo] (val x: Self) extends AnyVal {
     
     inline def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
     

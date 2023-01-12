@@ -28,7 +28,8 @@ object SensitiveDataResult {
     __obj.asInstanceOf[SensitiveDataResult]
   }
   
-  extension [Self <: SensitiveDataResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SensitiveDataResult] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: NonEmptyString): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     

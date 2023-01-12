@@ -25,7 +25,8 @@ object PartnerEntity {
     __obj.asInstanceOf[PartnerEntity]
   }
   
-  extension [Self <: PartnerEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartnerEntity] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

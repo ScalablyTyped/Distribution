@@ -32,7 +32,8 @@ object ChunkSize {
     __obj.asInstanceOf[ChunkSize]
   }
   
-  extension [Self <: ChunkSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChunkSize] (val x: Self) extends AnyVal {
     
     inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     

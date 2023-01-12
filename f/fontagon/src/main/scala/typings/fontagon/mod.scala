@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[FormatOptions]
     }
     
-    extension [Self <: FormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
       
       inline def setEot(value: Record[String, Any]): Self = StObject.set(x, "eot", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setClassOptions(value: Record[String, Any]): Self = StObject.set(x, "classOptions", value.asInstanceOf[js.Any])
       

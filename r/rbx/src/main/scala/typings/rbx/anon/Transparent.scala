@@ -15,7 +15,8 @@ object Transparent {
     __obj.asInstanceOf[Transparent]
   }
   
-  extension [Self <: Transparent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transparent] (val x: Self) extends AnyVal {
     
     inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
   }

@@ -39,7 +39,8 @@ object IContactLocationField {
     __obj.asInstanceOf[IContactLocationField]
   }
   
-  extension [Self <: IContactLocationField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContactLocationField] (val x: Self) extends AnyVal {
     
     inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     

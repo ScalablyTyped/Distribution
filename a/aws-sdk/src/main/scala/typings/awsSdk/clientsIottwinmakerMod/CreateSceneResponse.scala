@@ -23,7 +23,8 @@ object CreateSceneResponse {
     __obj.asInstanceOf[CreateSceneResponse]
   }
   
-  extension [Self <: CreateSceneResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSceneResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: TwinMakerArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

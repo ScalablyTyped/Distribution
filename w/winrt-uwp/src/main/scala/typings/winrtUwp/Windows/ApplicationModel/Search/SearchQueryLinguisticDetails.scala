@@ -28,7 +28,8 @@ object SearchQueryLinguisticDetails {
     __obj.asInstanceOf[SearchQueryLinguisticDetails]
   }
   
-  extension [Self <: SearchQueryLinguisticDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchQueryLinguisticDetails] (val x: Self) extends AnyVal {
     
     inline def setQueryTextAlternatives(value: IVectorView[String]): Self = StObject.set(x, "queryTextAlternatives", value.asInstanceOf[js.Any])
     

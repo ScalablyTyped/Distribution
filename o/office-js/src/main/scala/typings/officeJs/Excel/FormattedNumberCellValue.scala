@@ -60,7 +60,8 @@ object FormattedNumberCellValue {
     __obj.asInstanceOf[FormattedNumberCellValue]
   }
   
-  extension [Self <: FormattedNumberCellValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormattedNumberCellValue] (val x: Self) extends AnyVal {
     
     inline def setBasicType(value: double | Double): Self = StObject.set(x, "basicType", value.asInstanceOf[js.Any])
     

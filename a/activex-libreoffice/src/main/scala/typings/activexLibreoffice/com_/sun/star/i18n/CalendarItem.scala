@@ -25,7 +25,8 @@ object CalendarItem {
     __obj.asInstanceOf[CalendarItem]
   }
   
-  extension [Self <: CalendarItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarItem] (val x: Self) extends AnyVal {
     
     inline def setAbbrevName(value: String): Self = StObject.set(x, "AbbrevName", value.asInstanceOf[js.Any])
     

@@ -183,7 +183,8 @@ object sapUiCoreUicomponentMod {
       __obj.asInstanceOf[RoutingMetadata]
     }
     
-    extension [Self <: RoutingMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoutingMetadata] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: RootView): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

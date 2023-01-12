@@ -23,7 +23,8 @@ object RepeatingRadialGradientNode {
     __obj.asInstanceOf[RepeatingRadialGradientNode]
   }
   
-  extension [Self <: RepeatingRadialGradientNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepeatingRadialGradientNode] (val x: Self) extends AnyVal {
     
     inline def setColorStops(value: js.Array[ColorStop]): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object GestureHandlers {
     __obj.asInstanceOf[GestureHandlers[T, TContext]]
   }
   
-  extension [Self <: GestureHandlers[?, ?], T, TContext /* <: Context */](x: Self & (GestureHandlers[T, TContext])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GestureHandlers[?, ?], T, TContext /* <: Context */] (val x: Self & (GestureHandlers[T, TContext])) extends AnyVal {
     
     inline def setOnActive(value: (T, TContext) => Unit): Self = StObject.set(x, "onActive", js.Any.fromFunction2(value))
     

@@ -19,7 +19,8 @@ object SortColumn {
     __obj.asInstanceOf[SortColumn[T]]
   }
   
-  extension [Self <: SortColumn[?], T /* <: js.Object */](x: Self & SortColumn[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortColumn[?], T /* <: js.Object */] (val x: Self & SortColumn[T]) extends AnyVal {
     
     inline def setSortColumn(value: ColumnDescription[T, Any]): Self = StObject.set(x, "sortColumn", value.asInstanceOf[js.Any])
     

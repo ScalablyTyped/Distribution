@@ -45,7 +45,8 @@ object ShapeActivatedEventArgs {
     __obj.asInstanceOf[ShapeActivatedEventArgs]
   }
   
-  extension [Self <: ShapeActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setShapeId(value: String): Self = StObject.set(x, "shapeId", value.asInstanceOf[js.Any])
     

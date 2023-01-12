@@ -23,7 +23,8 @@ object EdiPartyName {
     __obj.asInstanceOf[EdiPartyName]
   }
   
-  extension [Self <: EdiPartyName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdiPartyName] (val x: Self) extends AnyVal {
     
     inline def setNameAssigner(value: String256): Self = StObject.set(x, "NameAssigner", value.asInstanceOf[js.Any])
     

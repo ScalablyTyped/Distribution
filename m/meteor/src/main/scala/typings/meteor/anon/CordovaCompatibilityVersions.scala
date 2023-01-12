@@ -23,7 +23,8 @@ object CordovaCompatibilityVersions {
     __obj.asInstanceOf[CordovaCompatibilityVersions]
   }
   
-  extension [Self <: CordovaCompatibilityVersions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CordovaCompatibilityVersions] (val x: Self) extends AnyVal {
     
     inline def setCordovaCompatibilityVersions(value: Any): Self = StObject.set(x, "cordovaCompatibilityVersions", value.asInstanceOf[js.Any])
     

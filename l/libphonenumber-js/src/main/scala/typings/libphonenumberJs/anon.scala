@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setDefaultCountry(value: CountryCode): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[DefaultCallingCode]
     }
     
-    extension [Self <: DefaultCallingCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultCallingCode] (val x: Self) extends AnyVal {
       
       inline def setDefaultCallingCode(value: String): Self = StObject.set(x, "defaultCallingCode", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[DefaultCountry]
     }
     
-    extension [Self <: DefaultCountry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultCountry] (val x: Self) extends AnyVal {
       
       inline def setDefaultCallingCode(value: String): Self = StObject.set(x, "defaultCallingCode", value.asInstanceOf[js.Any])
       
@@ -94,7 +97,8 @@ object anon {
       __obj.asInstanceOf[Tag[T]]
     }
     
-    extension [Self <: Tag[?], T](x: Self & Tag[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag[?], T] (val x: Self & Tag[T]) extends AnyVal {
       
       inline def set__tag(value: T): Self = StObject.set(x, "__tag", value.asInstanceOf[js.Any])
       
@@ -115,7 +119,8 @@ object anon {
       __obj.asInstanceOf[V2]
     }
     
-    extension [Self <: V2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V2] (val x: Self) extends AnyVal {
       
       inline def setDefaultCountry(value: CountryCode): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
       

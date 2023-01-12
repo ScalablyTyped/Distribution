@@ -19,7 +19,8 @@ object IsFlippedHorizontal {
     __obj.asInstanceOf[IsFlippedHorizontal]
   }
   
-  extension [Self <: IsFlippedHorizontal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsFlippedHorizontal] (val x: Self) extends AnyVal {
     
     inline def setIsFlippedHorizontal(value: Boolean): Self = StObject.set(x, "isFlippedHorizontal", value.asInstanceOf[js.Any])
     

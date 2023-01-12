@@ -78,7 +78,8 @@ object ChangesetSummary {
     __obj.asInstanceOf[ChangesetSummary]
   }
   
-  extension [Self <: ChangesetSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangesetSummary] (val x: Self) extends AnyVal {
     
     inline def setActiveFromTimestamp(value: TimestampEpoch): Self = StObject.set(x, "activeFromTimestamp", value.asInstanceOf[js.Any])
     

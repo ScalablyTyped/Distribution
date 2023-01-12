@@ -178,7 +178,8 @@ object libRestPreviewTrustedCommsCurrentCallMod {
       __obj.asInstanceOf[CurrentCallInstanceFetchOptions]
     }
     
-    extension [Self <: CurrentCallInstanceFetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentCallInstanceFetchOptions] (val x: Self) extends AnyVal {
       
       inline def setXXcnamSensitivePhoneNumberFrom(value: String): Self = StObject.set(x, "xXcnamSensitivePhoneNumberFrom", value.asInstanceOf[js.Any])
       
@@ -294,7 +295,8 @@ object libRestPreviewTrustedCommsCurrentCallMod {
       __obj.asInstanceOf[CurrentCallResource]
     }
     
-    extension [Self <: CurrentCallResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentCallResource] (val x: Self) extends AnyVal {
       
       inline def setBg_color(value: String): Self = StObject.set(x, "bg_color", value.asInstanceOf[js.Any])
       

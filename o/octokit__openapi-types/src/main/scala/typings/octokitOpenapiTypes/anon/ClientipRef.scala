@@ -19,7 +19,8 @@ object ClientipRef {
     __obj.asInstanceOf[ClientipRef]
   }
   
-  extension [Self <: ClientipRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientipRef] (val x: Self) extends AnyVal {
     
     inline def setClient_ip(value: String): Self = StObject.set(x, "client_ip", value.asInstanceOf[js.Any])
     

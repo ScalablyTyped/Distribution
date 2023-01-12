@@ -28,7 +28,8 @@ object DeleteRuleGroupsNamespaceRequest {
     __obj.asInstanceOf[DeleteRuleGroupsNamespaceRequest]
   }
   
-  extension [Self <: DeleteRuleGroupsNamespaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRuleGroupsNamespaceRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotencyToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

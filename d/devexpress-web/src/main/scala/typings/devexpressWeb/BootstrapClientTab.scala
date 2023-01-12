@@ -86,7 +86,8 @@ object BootstrapClientTab {
     __obj.asInstanceOf[BootstrapClientTab]
   }
   
-  extension [Self <: BootstrapClientTab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientTab] (val x: Self) extends AnyVal {
     
     inline def setGetActiveIconCssClass(value: () => String): Self = StObject.set(x, "GetActiveIconCssClass", js.Any.fromFunction0(value))
     

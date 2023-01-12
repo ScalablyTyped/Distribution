@@ -28,7 +28,8 @@ object PutResourcePermissionInput {
     __obj.asInstanceOf[PutResourcePermissionInput]
   }
   
-  extension [Self <: PutResourcePermissionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutResourcePermissionInput] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: PermissionActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     

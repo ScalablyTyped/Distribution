@@ -21,7 +21,8 @@ object DatePickerLocaleDismissText {
     __obj.asInstanceOf[DatePickerLocaleDismissText]
   }
   
-  extension [Self <: DatePickerLocaleDismissText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePickerLocaleDismissText] (val x: Self) extends AnyVal {
     
     inline def setDatePickerLocale(value: Calendar): Self = StObject.set(x, "DatePickerLocale", value.asInstanceOf[js.Any])
     

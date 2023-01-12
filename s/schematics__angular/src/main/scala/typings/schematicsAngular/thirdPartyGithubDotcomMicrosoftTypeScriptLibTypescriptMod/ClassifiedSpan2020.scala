@@ -17,7 +17,8 @@ object ClassifiedSpan2020 {
     __obj.asInstanceOf[ClassifiedSpan2020]
   }
   
-  extension [Self <: ClassifiedSpan2020](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassifiedSpan2020] (val x: Self) extends AnyVal {
     
     inline def setClassificationType(value: Double): Self = StObject.set(x, "classificationType", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object AccountSuspensionWarning {
     __obj.asInstanceOf[AccountSuspensionWarning]
   }
   
-  extension [Self <: AccountSuspensionWarning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountSuspensionWarning] (val x: Self) extends AnyVal {
     
     inline def setAppealWindow(value: String): Self = StObject.set(x, "appealWindow", value.asInstanceOf[js.Any])
     

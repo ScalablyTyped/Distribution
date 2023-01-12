@@ -19,7 +19,8 @@ object CustomFilterEvent {
     __obj.asInstanceOf[CustomFilterEvent]
   }
   
-  extension [Self <: CustomFilterEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomFilterEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

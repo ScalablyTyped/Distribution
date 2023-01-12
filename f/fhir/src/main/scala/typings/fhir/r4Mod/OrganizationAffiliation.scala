@@ -82,7 +82,8 @@ object OrganizationAffiliation {
     __obj.asInstanceOf[OrganizationAffiliation]
   }
   
-  extension [Self <: OrganizationAffiliation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationAffiliation] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

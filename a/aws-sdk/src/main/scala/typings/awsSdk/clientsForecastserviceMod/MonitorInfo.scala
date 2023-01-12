@@ -23,7 +23,8 @@ object MonitorInfo {
     __obj.asInstanceOf[MonitorInfo]
   }
   
-  extension [Self <: MonitorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitorInfo] (val x: Self) extends AnyVal {
     
     inline def setMonitorArn(value: Arn): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object StepInfoList {
     __obj.asInstanceOf[StepInfoList]
   }
   
-  extension [Self <: StepInfoList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepInfoList] (val x: Self) extends AnyVal {
     
     inline def setStepInfoList(value: js.Array[StepInfo]): Self = StObject.set(x, "stepInfoList", value.asInstanceOf[js.Any])
     

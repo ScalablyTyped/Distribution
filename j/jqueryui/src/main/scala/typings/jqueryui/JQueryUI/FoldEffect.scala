@@ -17,7 +17,8 @@ object FoldEffect {
     __obj.asInstanceOf[FoldEffect]
   }
   
-  extension [Self <: FoldEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoldEffect] (val x: Self) extends AnyVal {
     
     inline def setHorizFirst(value: Boolean): Self = StObject.set(x, "horizFirst", value.asInstanceOf[js.Any])
     

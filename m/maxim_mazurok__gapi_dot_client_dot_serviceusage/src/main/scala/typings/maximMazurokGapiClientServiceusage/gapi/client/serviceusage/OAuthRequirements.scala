@@ -19,7 +19,8 @@ object OAuthRequirements {
     __obj.asInstanceOf[OAuthRequirements]
   }
   
-  extension [Self <: OAuthRequirements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthRequirements] (val x: Self) extends AnyVal {
     
     inline def setCanonicalScopes(value: String): Self = StObject.set(x, "canonicalScopes", value.asInstanceOf[js.Any])
     

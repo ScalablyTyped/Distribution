@@ -19,7 +19,8 @@ object BorderRadiusPaddingHorizontal {
     __obj.asInstanceOf[BorderRadiusPaddingHorizontal]
   }
   
-  extension [Self <: BorderRadiusPaddingHorizontal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderRadiusPaddingHorizontal] (val x: Self) extends AnyVal {
     
     inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     

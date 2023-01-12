@@ -20,7 +20,8 @@ object LexV2ImageResponseCardMessage {
     __obj.asInstanceOf[LexV2ImageResponseCardMessage]
   }
   
-  extension [Self <: LexV2ImageResponseCardMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexV2ImageResponseCardMessage] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: ImageResponseCard): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

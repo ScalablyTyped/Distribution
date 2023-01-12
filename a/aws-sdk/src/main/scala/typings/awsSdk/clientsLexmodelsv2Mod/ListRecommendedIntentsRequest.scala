@@ -43,7 +43,8 @@ object ListRecommendedIntentsRequest {
     __obj.asInstanceOf[ListRecommendedIntentsRequest]
   }
   
-  extension [Self <: ListRecommendedIntentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRecommendedIntentsRequest] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     

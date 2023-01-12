@@ -18,7 +18,8 @@ object UpdateTableResponse {
     __obj.asInstanceOf[UpdateTableResponse]
   }
   
-  extension [Self <: UpdateTableResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTableResponse] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: ARN): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
   }

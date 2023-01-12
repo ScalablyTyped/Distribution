@@ -15,7 +15,8 @@ object ShowSizeChanger {
     __obj.asInstanceOf[ShowSizeChanger]
   }
   
-  extension [Self <: ShowSizeChanger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowSizeChanger] (val x: Self) extends AnyVal {
     
     inline def setShowSizeChanger(value: Boolean): Self = StObject.set(x, "showSizeChanger", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object distDdsketchMappingTypesMod {
       __obj.asInstanceOf[Mapping]
     }
     
-    extension [Self <: Mapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mapping] (val x: Self) extends AnyVal {
       
       inline def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
       

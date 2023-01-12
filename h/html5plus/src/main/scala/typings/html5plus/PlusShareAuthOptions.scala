@@ -55,7 +55,8 @@ object PlusShareAuthOptions {
     __obj.asInstanceOf[PlusShareAuthOptions]
   }
   
-  extension [Self <: PlusShareAuthOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusShareAuthOptions] (val x: Self) extends AnyVal {
     
     inline def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     

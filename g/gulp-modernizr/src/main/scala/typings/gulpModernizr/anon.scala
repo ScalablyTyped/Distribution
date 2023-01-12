@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[ClassPrefix]
     }
     
-    extension [Self <: ClassPrefix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassPrefix] (val x: Self) extends AnyVal {
       
       inline def setClassPrefix(value: String): Self = StObject.set(x, "classPrefix", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Src]
     }
     
-    extension [Self <: Src](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Src] (val x: Self) extends AnyVal {
       
       inline def setSrc(value: js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       

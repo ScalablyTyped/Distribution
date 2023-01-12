@@ -52,7 +52,8 @@ object GoogleDevtoolsRemotebuildbotCommandDurations {
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildbotCommandDurations]
   }
   
-  extension [Self <: GoogleDevtoolsRemotebuildbotCommandDurations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemotebuildbotCommandDurations] (val x: Self) extends AnyVal {
     
     inline def setCasRelease(value: String): Self = StObject.set(x, "casRelease", value.asInstanceOf[js.Any])
     

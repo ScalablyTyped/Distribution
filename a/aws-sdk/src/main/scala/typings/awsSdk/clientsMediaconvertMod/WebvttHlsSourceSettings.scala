@@ -28,7 +28,8 @@ object WebvttHlsSourceSettings {
     __obj.asInstanceOf[WebvttHlsSourceSettings]
   }
   
-  extension [Self <: WebvttHlsSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebvttHlsSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setRenditionGroupId(value: string): Self = StObject.set(x, "RenditionGroupId", value.asInstanceOf[js.Any])
     

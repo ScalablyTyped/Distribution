@@ -26,7 +26,8 @@ object ChannelStatus {
     __obj.asInstanceOf[ChannelStatus]
   }
   
-  extension [Self <: ChannelStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelStatus] (val x: Self) extends AnyVal {
     
     inline def setIsLinked(value: Boolean): Self = StObject.set(x, "isLinked", value.asInstanceOf[js.Any])
     

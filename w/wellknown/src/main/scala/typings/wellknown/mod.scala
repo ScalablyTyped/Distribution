@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[GeoJSONFeature]
     }
     
-    extension [Self <: GeoJSONFeature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoJSONFeature] (val x: Self) extends AnyVal {
       
       inline def setGeometry(value: GeoJSONGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object mod {
       __obj.asInstanceOf[GeoJSONGeometryCollection]
     }
     
-    extension [Self <: GeoJSONGeometryCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoJSONGeometryCollection] (val x: Self) extends AnyVal {
       
       inline def setGeometries(value: js.Array[GeoJSONGeometry]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object mod {
       __obj.asInstanceOf[Geometry[T, C]]
     }
     
-    extension [Self <: Geometry[?, ?], T, C](x: Self & (Geometry[T, C])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Geometry[?, ?], T, C] (val x: Self & (Geometry[T, C])) extends AnyVal {
       
       inline def setCoordinates(value: C): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       

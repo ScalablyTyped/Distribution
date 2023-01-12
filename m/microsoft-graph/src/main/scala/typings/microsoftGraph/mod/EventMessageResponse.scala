@@ -19,7 +19,8 @@ object EventMessageResponse {
     __obj.asInstanceOf[EventMessageResponse]
   }
   
-  extension [Self <: EventMessageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventMessageResponse] (val x: Self) extends AnyVal {
     
     inline def setProposedNewTime(value: NullableOption[TimeSlot]): Self = StObject.set(x, "proposedNewTime", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object PickImpliosPartialPickImpIos {
     __obj.asInstanceOf[PickImpliosPartialPickImpIos]
   }
   
-  extension [Self <: PickImpliosPartialPickImpIos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpliosPartialPickImpIos] (val x: Self) extends AnyVal {
     
     inline def setIos(value: js.RegExp): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     

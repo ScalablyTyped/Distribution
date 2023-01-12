@@ -15,7 +15,8 @@ object CommonAPIResult {
     __obj.asInstanceOf[CommonAPIResult]
   }
   
-  extension [Self <: CommonAPIResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonAPIResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

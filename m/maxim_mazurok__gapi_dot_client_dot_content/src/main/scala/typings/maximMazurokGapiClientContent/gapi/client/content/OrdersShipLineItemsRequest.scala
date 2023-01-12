@@ -25,7 +25,8 @@ object OrdersShipLineItemsRequest {
     __obj.asInstanceOf[OrdersShipLineItemsRequest]
   }
   
-  extension [Self <: OrdersShipLineItemsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrdersShipLineItemsRequest] (val x: Self) extends AnyVal {
     
     inline def setLineItems(value: js.Array[OrderShipmentLineItemShipment]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     

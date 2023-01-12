@@ -19,7 +19,8 @@ object BulkEditAssignedUserRolesRequest {
     __obj.asInstanceOf[BulkEditAssignedUserRolesRequest]
   }
   
-  extension [Self <: BulkEditAssignedUserRolesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkEditAssignedUserRolesRequest] (val x: Self) extends AnyVal {
     
     inline def setCreatedAssignedUserRoles(value: js.Array[AssignedUserRole]): Self = StObject.set(x, "createdAssignedUserRoles", value.asInstanceOf[js.Any])
     

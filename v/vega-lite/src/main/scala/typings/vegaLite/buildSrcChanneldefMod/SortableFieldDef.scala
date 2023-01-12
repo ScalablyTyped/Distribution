@@ -39,7 +39,8 @@ object SortableFieldDef {
     __obj.asInstanceOf[SortableFieldDef[F, T, B]]
   }
   
-  extension [Self <: SortableFieldDef[?, ?, ?], F /* <: Field */, T /* <: Type */, B /* <: Bin */](x: Self & (SortableFieldDef[F, T, B])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortableFieldDef[?, ?, ?], F /* <: Field */, T /* <: Type */, B /* <: Bin */] (val x: Self & (SortableFieldDef[F, T, B])) extends AnyVal {
     
     inline def setSort(value: Sort[F]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     

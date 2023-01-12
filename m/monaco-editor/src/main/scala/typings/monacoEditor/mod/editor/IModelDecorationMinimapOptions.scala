@@ -20,7 +20,8 @@ object IModelDecorationMinimapOptions {
     __obj.asInstanceOf[IModelDecorationMinimapOptions]
   }
   
-  extension [Self <: IModelDecorationMinimapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModelDecorationMinimapOptions] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: MinimapPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }

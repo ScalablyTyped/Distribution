@@ -36,7 +36,8 @@ object ListDataValidationFailure {
     __obj.asInstanceOf[ListDataValidationFailure]
   }
   
-  extension [Self <: ListDataValidationFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataValidationFailure] (val x: Self) extends AnyVal {
     
     inline def setGet_displayName(value: () => String): Self = StObject.set(x, "get_displayName", js.Any.fromFunction0(value))
     

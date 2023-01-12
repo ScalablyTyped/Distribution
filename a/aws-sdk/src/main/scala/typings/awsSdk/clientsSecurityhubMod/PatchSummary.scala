@@ -68,7 +68,8 @@ object PatchSummary {
     __obj.asInstanceOf[PatchSummary]
   }
   
-  extension [Self <: PatchSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchSummary] (val x: Self) extends AnyVal {
     
     inline def setFailedCount(value: Integer): Self = StObject.set(x, "FailedCount", value.asInstanceOf[js.Any])
     

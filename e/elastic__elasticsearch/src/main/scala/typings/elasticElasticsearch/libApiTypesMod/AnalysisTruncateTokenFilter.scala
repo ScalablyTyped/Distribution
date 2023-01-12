@@ -22,7 +22,8 @@ object AnalysisTruncateTokenFilter {
     __obj.asInstanceOf[AnalysisTruncateTokenFilter]
   }
   
-  extension [Self <: AnalysisTruncateTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisTruncateTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setLength(value: integer): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

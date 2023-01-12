@@ -19,7 +19,8 @@ object Narrow {
     __obj.asInstanceOf[Narrow]
   }
   
-  extension [Self <: Narrow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Narrow] (val x: Self) extends AnyVal {
     
     inline def setLong(value: js.Array[String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     

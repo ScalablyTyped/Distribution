@@ -143,7 +143,8 @@ object PartialFacetOptionsrectci {
     __obj.asInstanceOf[PartialFacetOptionsrectci]
   }
   
-  extension [Self <: PartialFacetOptionsrectci](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFacetOptionsrectci] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

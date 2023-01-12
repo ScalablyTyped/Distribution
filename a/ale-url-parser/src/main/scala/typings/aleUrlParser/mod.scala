@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCompareFunction(value: (/* a */ String, /* b */ String) => Double): Self = StObject.set(x, "compareFunction", js.Any.fromFunction2(value))
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[UrlObject]
     }
     
-    extension [Self <: UrlObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlObject] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

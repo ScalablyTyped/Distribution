@@ -15,7 +15,8 @@ object IAngularBootstrapConfig {
     __obj.asInstanceOf[IAngularBootstrapConfig]
   }
   
-  extension [Self <: IAngularBootstrapConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAngularBootstrapConfig] (val x: Self) extends AnyVal {
     
     inline def setStrictDi(value: Boolean): Self = StObject.set(x, "strictDi", value.asInstanceOf[js.Any])
     

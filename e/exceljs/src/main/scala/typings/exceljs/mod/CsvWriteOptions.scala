@@ -39,7 +39,8 @@ object CsvWriteOptions {
     __obj.asInstanceOf[CsvWriteOptions]
   }
   
-  extension [Self <: CsvWriteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CsvWriteOptions] (val x: Self) extends AnyVal {
     
     inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CloseTunnelRequest {
     __obj.asInstanceOf[CloseTunnelRequest]
   }
   
-  extension [Self <: CloseTunnelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseTunnelRequest] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: DeleteFlag): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     

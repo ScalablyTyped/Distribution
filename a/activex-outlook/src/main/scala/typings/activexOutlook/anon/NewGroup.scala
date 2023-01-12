@@ -16,7 +16,8 @@ object NewGroup {
     __obj.asInstanceOf[NewGroup]
   }
   
-  extension [Self <: NewGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewGroup] (val x: Self) extends AnyVal {
     
     inline def setNewGroup(value: OutlookBarGroup): Self = StObject.set(x, "NewGroup", value.asInstanceOf[js.Any])
   }

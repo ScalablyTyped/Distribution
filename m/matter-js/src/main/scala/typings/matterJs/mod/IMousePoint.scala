@@ -17,7 +17,8 @@ object IMousePoint {
     __obj.asInstanceOf[IMousePoint]
   }
   
-  extension [Self <: IMousePoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMousePoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

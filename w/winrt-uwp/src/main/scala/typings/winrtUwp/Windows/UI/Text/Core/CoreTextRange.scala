@@ -20,7 +20,8 @@ object CoreTextRange {
     __obj.asInstanceOf[CoreTextRange]
   }
   
-  extension [Self <: CoreTextRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreTextRange] (val x: Self) extends AnyVal {
     
     inline def setEndCaretPosition(value: Double): Self = StObject.set(x, "endCaretPosition", value.asInstanceOf[js.Any])
     

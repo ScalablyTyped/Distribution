@@ -28,7 +28,8 @@ object distQunitDomModulesMod {
       __obj.asInstanceOf[SetupOptions]
     }
     
-    extension [Self <: SetupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetupOptions] (val x: Self) extends AnyVal {
       
       inline def setGetRootElement(value: () => Element | Null): Self = StObject.set(x, "getRootElement", js.Any.fromFunction0(value))
       

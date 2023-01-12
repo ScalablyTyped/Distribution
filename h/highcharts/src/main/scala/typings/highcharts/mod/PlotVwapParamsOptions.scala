@@ -34,7 +34,8 @@ object PlotVwapParamsOptions {
     __obj.asInstanceOf[PlotVwapParamsOptions]
   }
   
-  extension [Self <: PlotVwapParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotVwapParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

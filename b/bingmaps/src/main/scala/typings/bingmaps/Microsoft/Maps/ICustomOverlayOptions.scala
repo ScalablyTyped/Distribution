@@ -21,7 +21,8 @@ object ICustomOverlayOptions {
     __obj.asInstanceOf[ICustomOverlayOptions]
   }
   
-  extension [Self <: ICustomOverlayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomOverlayOptions] (val x: Self) extends AnyVal {
     
     inline def setBeneathLabels(value: Boolean): Self = StObject.set(x, "beneathLabels", value.asInstanceOf[js.Any])
     

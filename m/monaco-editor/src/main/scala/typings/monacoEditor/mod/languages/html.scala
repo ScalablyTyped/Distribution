@@ -68,7 +68,8 @@ object html {
       __obj.asInstanceOf[HTMLDataConfiguration]
     }
     
-    extension [Self <: HTMLDataConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLDataConfiguration] (val x: Self) extends AnyVal {
       
       inline def setDataProviders(value: StringDictionary[HTMLDataV1]): Self = StObject.set(x, "dataProviders", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object html {
       __obj.asInstanceOf[HTMLDataV1]
     }
     
-    extension [Self <: HTMLDataV1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLDataV1] (val x: Self) extends AnyVal {
       
       inline def setGlobalAttributes(value: js.Array[IAttributeData]): Self = StObject.set(x, "globalAttributes", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object html {
       __obj.asInstanceOf[HTMLFormatConfiguration]
     }
     
-    extension [Self <: HTMLFormatConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLFormatConfiguration] (val x: Self) extends AnyVal {
       
       inline def setContentUnformatted(value: String): Self = StObject.set(x, "contentUnformatted", value.asInstanceOf[js.Any])
       
@@ -215,7 +218,8 @@ object html {
       __obj.asInstanceOf[IAttributeData]
     }
     
-    extension [Self <: IAttributeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAttributeData] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String | MarkupContent): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -254,7 +258,8 @@ object html {
       __obj.asInstanceOf[IReference]
     }
     
-    extension [Self <: IReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IReference] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -279,7 +284,8 @@ object html {
       __obj.asInstanceOf[ITagData]
     }
     
-    extension [Self <: ITagData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITagData] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[IAttributeData]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -314,7 +320,8 @@ object html {
       __obj.asInstanceOf[IValueData]
     }
     
-    extension [Self <: IValueData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IValueData] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String | MarkupContent): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -343,7 +350,8 @@ object html {
       __obj.asInstanceOf[IValueSet]
     }
     
-    extension [Self <: IValueSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IValueSet] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -383,7 +391,8 @@ object html {
       __obj.asInstanceOf[LanguageServiceRegistration]
     }
     
-    extension [Self <: LanguageServiceRegistration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageServiceRegistration] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: LanguageServiceDefaults): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }
@@ -402,7 +411,8 @@ object html {
       __obj.asInstanceOf[MarkupContent]
     }
     
-    extension [Self <: MarkupContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkupContent] (val x: Self) extends AnyVal {
       
       inline def setKind(value: MarkupKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -491,7 +501,8 @@ object html {
       __obj.asInstanceOf[ModeConfiguration]
     }
     
-    extension [Self <: ModeConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModeConfiguration] (val x: Self) extends AnyVal {
       
       inline def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -567,7 +578,8 @@ object html {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setData(value: HTMLDataConfiguration): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

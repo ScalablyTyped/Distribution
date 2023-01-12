@@ -158,7 +158,8 @@ object buildSrcNodejsCommonServiceMod {
       __obj.asInstanceOf[ServiceConfig]
     }
     
-    extension [Self <: ServiceConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceConfig] (val x: Self) extends AnyVal {
       
       inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
       
@@ -218,7 +219,8 @@ object buildSrcNodejsCommonServiceMod {
       __obj.asInstanceOf[ServiceOptions]
     }
     
-    extension [Self <: ServiceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthClient(value: AuthClient | GoogleAuth[JSONClient]): Self = StObject.set(x, "authClient", value.asInstanceOf[js.Any])
       
@@ -292,7 +294,8 @@ object buildSrcNodejsCommonServiceMod {
       __obj.asInstanceOf[StreamRequestOptions]
     }
     
-    extension [Self <: StreamRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setShouldReturnStream(value: `true`): Self = StObject.set(x, "shouldReturnStream", value.asInstanceOf[js.Any])
     }

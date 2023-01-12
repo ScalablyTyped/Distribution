@@ -30,7 +30,8 @@ object TransformGetTransformStatsTransformStats {
     __obj.asInstanceOf[TransformGetTransformStatsTransformStats]
   }
   
-  extension [Self <: TransformGetTransformStatsTransformStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformGetTransformStatsTransformStats] (val x: Self) extends AnyVal {
     
     inline def setCheckpointing(value: TransformGetTransformStatsCheckpointing): Self = StObject.set(x, "checkpointing", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DbNoDocument {
     __obj.asInstanceOf[DbNoDocument]
   }
   
-  extension [Self <: DbNoDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbNoDocument] (val x: Self) extends AnyVal {
     
     inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

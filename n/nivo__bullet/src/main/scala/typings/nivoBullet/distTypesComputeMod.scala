@@ -60,7 +60,8 @@ object distTypesComputeMod {
       __obj.asInstanceOf[ComputeRect]
     }
     
-    extension [Self <: ComputeRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputeRect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

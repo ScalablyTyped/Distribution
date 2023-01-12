@@ -43,7 +43,8 @@ object ResumeFrame {
     __obj.asInstanceOf[ResumeFrame]
   }
   
-  extension [Self <: ResumeFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResumeFrame] (val x: Self) extends AnyVal {
     
     inline def setClientPosition(value: Double): Self = StObject.set(x, "clientPosition", value.asInstanceOf[js.Any])
     

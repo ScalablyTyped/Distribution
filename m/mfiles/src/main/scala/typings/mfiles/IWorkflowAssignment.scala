@@ -32,7 +32,8 @@ object IWorkflowAssignment {
     __obj.asInstanceOf[IWorkflowAssignment]
   }
   
-  extension [Self <: IWorkflowAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWorkflowAssignment] (val x: Self) extends AnyVal {
     
     inline def setAssignedTo_DEPRECATED(value: IPropertyValue): Self = StObject.set(x, "AssignedTo_DEPRECATED", value.asInstanceOf[js.Any])
     

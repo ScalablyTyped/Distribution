@@ -16,7 +16,8 @@ object SpacingScaleTokenSchema {
     __obj.asInstanceOf[SpacingScaleTokenSchema[ScaleValues]]
   }
   
-  extension [Self <: SpacingScaleTokenSchema[?], ScaleValues /* <: String */](x: Self & SpacingScaleTokenSchema[ScaleValues]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpacingScaleTokenSchema[?], ScaleValues /* <: String */] (val x: Self & SpacingScaleTokenSchema[ScaleValues]) extends AnyVal {
     
     inline def setSpacing(value: Scale[ScaleValues]): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
   }

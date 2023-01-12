@@ -23,7 +23,8 @@ object ASPxClientPopupWindowResizeEventArgs {
     __obj.asInstanceOf[ASPxClientPopupWindowResizeEventArgs]
   }
   
-  extension [Self <: ASPxClientPopupWindowResizeEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientPopupWindowResizeEventArgs] (val x: Self) extends AnyVal {
     
     inline def setResizeState(value: Double): Self = StObject.set(x, "resizeState", value.asInstanceOf[js.Any])
   }

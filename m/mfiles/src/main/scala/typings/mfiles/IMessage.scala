@@ -55,7 +55,8 @@ object IMessage {
     __obj.asInstanceOf[IMessage]
   }
   
-  extension [Self <: IMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMessage] (val x: Self) extends AnyVal {
     
     inline def setButton1_enabled(value: Boolean): Self = StObject.set(x, "button1_enabled", value.asInstanceOf[js.Any])
     

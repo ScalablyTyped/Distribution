@@ -49,7 +49,8 @@ object distLibCommandsXautoclaimJUSTIDMod {
       __obj.asInstanceOf[XAutoClaimJustIdReply]
     }
     
-    extension [Self <: XAutoClaimJustIdReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XAutoClaimJustIdReply] (val x: Self) extends AnyVal {
       
       inline def setMessages(value: js.Array[RedisCommandArgument]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       

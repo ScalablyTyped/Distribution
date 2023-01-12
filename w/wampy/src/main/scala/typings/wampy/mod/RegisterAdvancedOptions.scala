@@ -24,7 +24,8 @@ object RegisterAdvancedOptions {
     __obj.asInstanceOf[RegisterAdvancedOptions]
   }
   
-  extension [Self <: RegisterAdvancedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterAdvancedOptions] (val x: Self) extends AnyVal {
     
     inline def setInvoke(value: single | roundrobin | random | first | last): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
     

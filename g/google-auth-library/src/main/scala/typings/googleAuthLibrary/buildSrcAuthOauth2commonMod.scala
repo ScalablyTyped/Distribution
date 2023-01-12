@@ -74,7 +74,8 @@ object buildSrcAuthOauth2commonMod {
       __obj.asInstanceOf[ClientAuthentication]
     }
     
-    extension [Self <: ClientAuthentication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientAuthentication] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object buildSrcAuthOauth2commonMod {
       __obj.asInstanceOf[OAuthErrorResponse]
     }
     
-    extension [Self <: OAuthErrorResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OAuthErrorResponse] (val x: Self) extends AnyVal {
       
       inline def setError(value: OAuthErrorCode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

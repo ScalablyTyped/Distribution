@@ -32,7 +32,8 @@ object CreateTableRequest {
     __obj.asInstanceOf[CreateTableRequest]
   }
   
-  extension [Self <: CreateTableRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTableRequest] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

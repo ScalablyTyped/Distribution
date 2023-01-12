@@ -26,7 +26,8 @@ object CalendarCurrentViewData {
     __obj.asInstanceOf[CalendarCurrentViewData]
   }
   
-  extension [Self <: CalendarCurrentViewData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarCurrentViewData] (val x: Self) extends AnyVal {
     
     inline def setDateProfileGenerator(value: DateProfileGenerator): Self = StObject.set(x, "dateProfileGenerator", value.asInstanceOf[js.Any])
     

@@ -318,7 +318,8 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
       __obj.asInstanceOf[AvailableAddOnListInstanceEachOptions]
     }
     
-    extension [Self <: AvailableAddOnListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvailableAddOnListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ AvailableAddOnInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -367,7 +368,8 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
       __obj.asInstanceOf[AvailableAddOnListInstanceOptions]
     }
     
-    extension [Self <: AvailableAddOnListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvailableAddOnListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -401,7 +403,8 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
       __obj.asInstanceOf[AvailableAddOnListInstancePageOptions]
     }
     
-    extension [Self <: AvailableAddOnListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvailableAddOnListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
@@ -474,7 +477,8 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
       __obj.asInstanceOf[AvailableAddOnResource]
     }
     
-    extension [Self <: AvailableAddOnResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvailableAddOnResource] (val x: Self) extends AnyVal {
       
       inline def setConfiguration_schema(value: js.Object): Self = StObject.set(x, "configuration_schema", value.asInstanceOf[js.Any])
       

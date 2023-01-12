@@ -24,7 +24,8 @@ object RawCurrencyData {
     __obj.asInstanceOf[RawCurrencyData]
   }
   
-  extension [Self <: RawCurrencyData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawCurrencyData] (val x: Self) extends AnyVal {
     
     inline def setAccounting(value: String): Self = StObject.set(x, "accounting", value.asInstanceOf[js.Any])
     

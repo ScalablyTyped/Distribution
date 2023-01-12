@@ -35,7 +35,8 @@ object Cancelling {
     __obj.asInstanceOf[Cancelling]
   }
   
-  extension [Self <: Cancelling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cancelling] (val x: Self) extends AnyVal {
     
     inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

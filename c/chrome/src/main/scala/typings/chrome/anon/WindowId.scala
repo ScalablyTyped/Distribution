@@ -16,7 +16,8 @@ object WindowId {
     __obj.asInstanceOf[WindowId]
   }
   
-  extension [Self <: WindowId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowId] (val x: Self) extends AnyVal {
     
     inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
     

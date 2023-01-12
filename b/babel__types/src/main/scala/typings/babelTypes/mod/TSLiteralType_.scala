@@ -28,7 +28,8 @@ object TSLiteralType_ {
     __obj.asInstanceOf[TSLiteralType_]
   }
   
-  extension [Self <: TSLiteralType_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSLiteralType_] (val x: Self) extends AnyVal {
     
     inline def setLiteral(
       value: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_ | TemplateLiteral_ | UnaryExpression_

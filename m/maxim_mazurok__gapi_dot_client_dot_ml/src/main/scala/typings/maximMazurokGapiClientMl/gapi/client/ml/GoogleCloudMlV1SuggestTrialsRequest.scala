@@ -22,7 +22,8 @@ object GoogleCloudMlV1SuggestTrialsRequest {
     __obj.asInstanceOf[GoogleCloudMlV1SuggestTrialsRequest]
   }
   
-  extension [Self <: GoogleCloudMlV1SuggestTrialsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1SuggestTrialsRequest] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

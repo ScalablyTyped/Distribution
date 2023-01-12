@@ -24,7 +24,8 @@ object AnalysisLengthTokenFilter {
     __obj.asInstanceOf[AnalysisLengthTokenFilter]
   }
   
-  extension [Self <: AnalysisLengthTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisLengthTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setMax(value: integer): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

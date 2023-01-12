@@ -25,7 +25,8 @@ object Axis {
     __obj.asInstanceOf[Axis]
   }
   
-  extension [Self <: Axis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Axis] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object EachMessagePayload {
     __obj.asInstanceOf[EachMessagePayload]
   }
   
-  extension [Self <: EachMessagePayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EachMessagePayload] (val x: Self) extends AnyVal {
     
     inline def setHeartbeat(value: () => js.Promise[Unit]): Self = StObject.set(x, "heartbeat", js.Any.fromFunction0(value))
     

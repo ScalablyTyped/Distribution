@@ -55,7 +55,8 @@ object ServiceUpdateMessage {
     __obj.asInstanceOf[ServiceUpdateMessage]
   }
   
-  extension [Self <: ServiceUpdateMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceUpdateMessage] (val x: Self) extends AnyVal {
     
     inline def setActionRequiredByDateTime(value: NullableOption[String]): Self = StObject.set(x, "actionRequiredByDateTime", value.asInstanceOf[js.Any])
     

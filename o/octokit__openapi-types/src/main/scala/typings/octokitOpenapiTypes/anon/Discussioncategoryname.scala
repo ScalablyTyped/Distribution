@@ -46,7 +46,8 @@ object Discussioncategoryname {
     __obj.asInstanceOf[Discussioncategoryname]
   }
   
-  extension [Self <: Discussioncategoryname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Discussioncategoryname] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

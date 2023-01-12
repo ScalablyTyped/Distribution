@@ -31,7 +31,8 @@ object HTCDefaultDispatch {
     __obj.asInstanceOf[HTCDefaultDispatch]
   }
   
-  extension [Self <: HTCDefaultDispatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTCDefaultDispatch] (val x: Self) extends AnyVal {
     
     inline def setCreateEventObject(value: () => IHTMLEventObj): Self = StObject.set(x, "CreateEventObject", js.Any.fromFunction0(value))
     

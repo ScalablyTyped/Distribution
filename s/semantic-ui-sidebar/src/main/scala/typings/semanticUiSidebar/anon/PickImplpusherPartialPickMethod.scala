@@ -27,7 +27,8 @@ object PickImplpusherPartialPickMethod {
     __obj.asInstanceOf[PickImplpusherPartialPickMethod]
   }
   
-  extension [Self <: PickImplpusherPartialPickMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplpusherPartialPickMethod] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

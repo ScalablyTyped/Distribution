@@ -15,7 +15,8 @@ object NDEFMessage {
     __obj.asInstanceOf[NDEFMessage]
   }
   
-  extension [Self <: NDEFMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NDEFMessage] (val x: Self) extends AnyVal {
     
     inline def setRecords(value: js.Array[NDEFRecord]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     

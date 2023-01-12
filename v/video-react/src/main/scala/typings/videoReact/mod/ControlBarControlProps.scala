@@ -20,7 +20,8 @@ object ControlBarControlProps {
     __obj.asInstanceOf[ControlBarControlProps]
   }
   
-  extension [Self <: ControlBarControlProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlBarControlProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object GetPropsWithRefKey {
     __obj.asInstanceOf[GetPropsWithRefKey]
   }
   
-  extension [Self <: GetPropsWithRefKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPropsWithRefKey] (val x: Self) extends AnyVal {
     
     inline def setRefKey(value: String): Self = StObject.set(x, "refKey", value.asInstanceOf[js.Any])
     

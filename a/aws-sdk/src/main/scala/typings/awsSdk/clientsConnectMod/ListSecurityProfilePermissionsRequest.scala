@@ -33,7 +33,8 @@ object ListSecurityProfilePermissionsRequest {
     __obj.asInstanceOf[ListSecurityProfilePermissionsRequest]
   }
   
-  extension [Self <: ListSecurityProfilePermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSecurityProfilePermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

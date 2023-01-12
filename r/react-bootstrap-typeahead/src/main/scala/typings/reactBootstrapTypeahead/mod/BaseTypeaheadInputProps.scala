@@ -22,7 +22,8 @@ object BaseTypeaheadInputProps {
     __obj.asInstanceOf[BaseTypeaheadInputProps]
   }
   
-  extension [Self <: BaseTypeaheadInputProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseTypeaheadInputProps] (val x: Self) extends AnyVal {
     
     inline def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

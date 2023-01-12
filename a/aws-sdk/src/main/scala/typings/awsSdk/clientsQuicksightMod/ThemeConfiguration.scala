@@ -28,7 +28,8 @@ object ThemeConfiguration {
     __obj.asInstanceOf[ThemeConfiguration]
   }
   
-  extension [Self <: ThemeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDataColorPalette(value: DataColorPalette): Self = StObject.set(x, "DataColorPalette", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object BreakpointsFontSizeFontWeightLetterSpacingLineHeight {
     __obj.asInstanceOf[BreakpointsFontSizeFontWeightLetterSpacingLineHeight]
   }
   
-  extension [Self <: BreakpointsFontSizeFontWeightLetterSpacingLineHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreakpointsFontSizeFontWeightLetterSpacingLineHeight] (val x: Self) extends AnyVal {
     
     inline def setBreakpoints(value: LgMax): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     

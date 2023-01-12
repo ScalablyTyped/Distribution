@@ -15,7 +15,8 @@ object SpatialInteraction {
     __obj.asInstanceOf[SpatialInteraction]
   }
   
-  extension [Self <: SpatialInteraction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialInteraction] (val x: Self) extends AnyVal {
     
     inline def setSourceState(value: Any): Self = StObject.set(x, "sourceState", value.asInstanceOf[js.Any])
   }

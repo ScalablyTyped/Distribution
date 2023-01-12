@@ -17,7 +17,8 @@ object ValuePair {
     __obj.asInstanceOf[ValuePair]
   }
   
-  extension [Self <: ValuePair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValuePair] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: Any): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
     

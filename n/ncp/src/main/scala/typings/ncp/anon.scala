@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[OptionserrsPathLike]
     }
     
-    extension [Self <: OptionserrsPathLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionserrsPathLike] (val x: Self) extends AnyVal {
       
       inline def setClobber(value: Boolean): Self = StObject.set(x, "clobber", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object anon {
       __obj.asInstanceOf[Optionserrsundefined]
     }
     
-    extension [Self <: Optionserrsundefined](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionserrsundefined] (val x: Self) extends AnyVal {
       
       inline def setClobber(value: Boolean): Self = StObject.set(x, "clobber", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object anon {
       __obj.asInstanceOf[OptionsstopOnErrtrue]
     }
     
-    extension [Self <: OptionsstopOnErrtrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsstopOnErrtrue] (val x: Self) extends AnyVal {
       
       inline def setClobber(value: Boolean): Self = StObject.set(x, "clobber", value.asInstanceOf[js.Any])
       

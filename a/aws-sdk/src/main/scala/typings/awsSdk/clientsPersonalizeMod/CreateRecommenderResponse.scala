@@ -18,7 +18,8 @@ object CreateRecommenderResponse {
     __obj.asInstanceOf[CreateRecommenderResponse]
   }
   
-  extension [Self <: CreateRecommenderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRecommenderResponse] (val x: Self) extends AnyVal {
     
     inline def setRecommenderArn(value: Arn): Self = StObject.set(x, "recommenderArn", value.asInstanceOf[js.Any])
     

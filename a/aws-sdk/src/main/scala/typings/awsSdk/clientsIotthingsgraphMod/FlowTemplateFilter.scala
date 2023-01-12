@@ -23,7 +23,8 @@ object FlowTemplateFilter {
     __obj.asInstanceOf[FlowTemplateFilter]
   }
   
-  extension [Self <: FlowTemplateFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowTemplateFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: FlowTemplateFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

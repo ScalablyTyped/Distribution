@@ -47,7 +47,8 @@ object WidgetDecorationSpec {
     __obj.asInstanceOf[WidgetDecorationSpec]
   }
   
-  extension [Self <: WidgetDecorationSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetDecorationSpec] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

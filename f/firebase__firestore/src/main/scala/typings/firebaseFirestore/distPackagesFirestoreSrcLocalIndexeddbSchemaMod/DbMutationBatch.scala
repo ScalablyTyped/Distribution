@@ -52,7 +52,8 @@ object DbMutationBatch {
     __obj.asInstanceOf[DbMutationBatch]
   }
   
-  extension [Self <: DbMutationBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbMutationBatch] (val x: Self) extends AnyVal {
     
     inline def setBaseMutations(value: js.Array[Write]): Self = StObject.set(x, "baseMutations", value.asInstanceOf[js.Any])
     

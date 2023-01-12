@@ -49,7 +49,8 @@ object ActivityDefinitionParticipant {
     __obj.asInstanceOf[ActivityDefinitionParticipant]
   }
   
-  extension [Self <: ActivityDefinitionParticipant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityDefinitionParticipant] (val x: Self) extends AnyVal {
     
     inline def setFunction(value: CodeableConcept): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object anon {
       __obj.asInstanceOf[ActiveNav]
     }
     
-    extension [Self <: ActiveNav](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveNav] (val x: Self) extends AnyVal {
       
       inline def setActiveNav(value: String): Self = StObject.set(x, "activeNav", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object anon {
       __obj.asInstanceOf[After]
     }
     
-    extension [Self <: After](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: After] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,8 @@ object anon {
       __obj.asInstanceOf[Before]
     }
     
-    extension [Self <: Before](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Before] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -168,7 +171,8 @@ object anon {
       __obj.asInstanceOf[Ltr]
     }
     
-    extension [Self <: Ltr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ltr] (val x: Self) extends AnyVal {
       
       inline def setLtr(value: String): Self = StObject.set(x, "ltr", value.asInstanceOf[js.Any])
       
@@ -194,7 +198,8 @@ object anon {
       __obj.asInstanceOf[Modify]
     }
     
-    extension [Self <: Modify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Modify] (val x: Self) extends AnyVal {
       
       inline def setModify(value: Double => Double): Self = StObject.set(x, "modify", js.Any.fromFunction1(value))
     }
@@ -281,7 +286,8 @@ object anon {
       __obj.asInstanceOf[RequiredOptions]
     }
     
-    extension [Self <: RequiredOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       

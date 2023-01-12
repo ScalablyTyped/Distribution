@@ -23,7 +23,8 @@ object AssociateClientVpnTargetNetworkResult {
     __obj.asInstanceOf[AssociateClientVpnTargetNetworkResult]
   }
   
-  extension [Self <: AssociateClientVpnTargetNetworkResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateClientVpnTargetNetworkResult] (val x: Self) extends AnyVal {
     
     inline def setAssociationId(value: String): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     

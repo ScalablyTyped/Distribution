@@ -51,7 +51,8 @@ object DataTruncation {
     __obj.asInstanceOf[DataTruncation]
   }
   
-  extension [Self <: DataTruncation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTruncation] (val x: Self) extends AnyVal {
     
     inline def setDataSize(value: Double): Self = StObject.set(x, "DataSize", value.asInstanceOf[js.Any])
     

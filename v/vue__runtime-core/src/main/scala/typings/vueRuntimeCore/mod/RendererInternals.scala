@@ -1017,7 +1017,8 @@ object RendererInternals {
     __obj.asInstanceOf[RendererInternals[HostNode, HostElement]]
   }
   
-  extension [Self <: RendererInternals[?, ?], HostNode, HostElement](x: Self & (RendererInternals[HostNode, HostElement])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RendererInternals[?, ?], HostNode, HostElement] (val x: Self & (RendererInternals[HostNode, HostElement])) extends AnyVal {
     
     inline def setM(
       value: (/* vnode */ VNode[RendererNode, RendererElement, StringDictionary[Any]], /* container */ RendererElement, /* anchor */ RendererNode | Null, /* type */ MoveType, /* parentSuspense */ js.UndefOr[SuspenseBoundary | Null]) => Unit

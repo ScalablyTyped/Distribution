@@ -33,7 +33,8 @@ object GpuDeviceInfo {
     __obj.asInstanceOf[GpuDeviceInfo]
   }
   
-  extension [Self <: GpuDeviceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GpuDeviceInfo] (val x: Self) extends AnyVal {
     
     inline def setCount(value: GpuDeviceCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

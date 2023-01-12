@@ -27,7 +27,8 @@ object MarkerClustererOptions {
     __obj.asInstanceOf[MarkerClustererOptions]
   }
   
-  extension [Self <: MarkerClustererOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerClustererOptions] (val x: Self) extends AnyVal {
     
     inline def setAverageCenter(value: Boolean): Self = StObject.set(x, "averageCenter", value.asInstanceOf[js.Any])
     

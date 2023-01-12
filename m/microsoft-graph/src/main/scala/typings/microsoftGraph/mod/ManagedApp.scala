@@ -21,7 +21,8 @@ object ManagedApp {
     __obj.asInstanceOf[ManagedApp]
   }
   
-  extension [Self <: ManagedApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedApp] (val x: Self) extends AnyVal {
     
     inline def setAppAvailability(value: ManagedAppAvailability): Self = StObject.set(x, "appAvailability", value.asInstanceOf[js.Any])
     

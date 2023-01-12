@@ -19,7 +19,8 @@ object Vertex2DList {
     __obj.asInstanceOf[Vertex2DList]
   }
   
-  extension [Self <: Vertex2DList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vertex2DList] (val x: Self) extends AnyVal {
     
     inline def setXOffsets(value: js.Array[Double]): Self = StObject.set(x, "xOffsets", value.asInstanceOf[js.Any])
     

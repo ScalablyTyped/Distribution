@@ -471,7 +471,8 @@ object PartialLinearProgressProp {
     __obj.asInstanceOf[PartialLinearProgressProp]
   }
   
-  extension [Self <: PartialLinearProgressProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLinearProgressProp] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

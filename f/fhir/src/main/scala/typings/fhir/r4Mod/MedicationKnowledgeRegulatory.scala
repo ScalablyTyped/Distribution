@@ -35,7 +35,8 @@ object MedicationKnowledgeRegulatory {
     __obj.asInstanceOf[MedicationKnowledgeRegulatory]
   }
   
-  extension [Self <: MedicationKnowledgeRegulatory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationKnowledgeRegulatory] (val x: Self) extends AnyVal {
     
     inline def setMaxDispense(value: MedicationKnowledgeRegulatoryMaxDispense): Self = StObject.set(x, "maxDispense", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ProcessesProcessLoadData {
     __obj.asInstanceOf[ProcessesProcessLoadData]
   }
   
-  extension [Self <: ProcessesProcessLoadData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessesProcessLoadData] (val x: Self) extends AnyVal {
     
     inline def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     

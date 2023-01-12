@@ -109,7 +109,8 @@ object XChartTypeTemplate {
     __obj.asInstanceOf[XChartTypeTemplate]
   }
   
-  extension [Self <: XChartTypeTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XChartTypeTemplate] (val x: Self) extends AnyVal {
     
     inline def setApplyStyle(value: (XDataSeries, Double, Double, Double) => Unit): Self = StObject.set(x, "applyStyle", js.Any.fromFunction4(value))
     

@@ -36,7 +36,8 @@ object SetAutoAttachRequest {
     __obj.asInstanceOf[SetAutoAttachRequest]
   }
   
-  extension [Self <: SetAutoAttachRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetAutoAttachRequest] (val x: Self) extends AnyVal {
     
     inline def setAutoAttach(value: Boolean): Self = StObject.set(x, "autoAttach", value.asInstanceOf[js.Any])
     

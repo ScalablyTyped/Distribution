@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Accesstoken]
     }
     
-    extension [Self <: Accesstoken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accesstoken] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       

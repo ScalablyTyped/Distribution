@@ -55,7 +55,8 @@ object pieChartCreateRendererForClusteringParams {
     __obj.asInstanceOf[pieChartCreateRendererForClusteringParams]
   }
   
-  extension [Self <: pieChartCreateRendererForClusteringParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pieChartCreateRendererForClusteringParams] (val x: Self) extends AnyVal {
     
     inline def setDefaultSymbolEnabled(value: Boolean): Self = StObject.set(x, "defaultSymbolEnabled", value.asInstanceOf[js.Any])
     

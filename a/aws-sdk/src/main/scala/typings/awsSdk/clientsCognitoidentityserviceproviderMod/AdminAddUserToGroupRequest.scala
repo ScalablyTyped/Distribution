@@ -28,7 +28,8 @@ object AdminAddUserToGroupRequest {
     __obj.asInstanceOf[AdminAddUserToGroupRequest]
   }
   
-  extension [Self <: AdminAddUserToGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminAddUserToGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupName(value: GroupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     

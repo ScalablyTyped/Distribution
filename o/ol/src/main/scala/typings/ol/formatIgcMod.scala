@@ -52,7 +52,8 @@ object formatIgcMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAltitudeMode(value: IGCZ | String): Self = StObject.set(x, "altitudeMode", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object StereoPanner {
   def pan: Double = js.native
   inline def pan_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pan")(x.asInstanceOf[js.Any])
   
-  extension [Self <: StereoPanner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StereoPanner] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: AudioNode => StereoPanner): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     

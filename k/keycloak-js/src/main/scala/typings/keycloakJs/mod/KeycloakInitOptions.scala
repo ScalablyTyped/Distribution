@@ -160,7 +160,8 @@ object KeycloakInitOptions {
     __obj.asInstanceOf[KeycloakInitOptions]
   }
   
-  extension [Self <: KeycloakInitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeycloakInitOptions] (val x: Self) extends AnyVal {
     
     inline def setAdapter(value: typings.keycloakJs.keycloakJsStrings.default | cordova | `cordova-native` | KeycloakAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     

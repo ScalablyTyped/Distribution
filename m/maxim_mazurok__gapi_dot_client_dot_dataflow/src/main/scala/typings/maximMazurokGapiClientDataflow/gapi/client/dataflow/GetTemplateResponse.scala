@@ -25,7 +25,8 @@ object GetTemplateResponse {
     __obj.asInstanceOf[GetTemplateResponse]
   }
   
-  extension [Self <: GetTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: TemplateMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

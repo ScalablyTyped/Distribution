@@ -31,7 +31,8 @@ object PartialRangeSelectorButto {
     __obj.asInstanceOf[PartialRangeSelectorButto]
   }
   
-  extension [Self <: PartialRangeSelectorButto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRangeSelectorButto] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

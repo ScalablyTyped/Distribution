@@ -23,7 +23,8 @@ object AssociateIamInstanceProfileRequest {
     __obj.asInstanceOf[AssociateIamInstanceProfileRequest]
   }
   
-  extension [Self <: AssociateIamInstanceProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateIamInstanceProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setIamInstanceProfile(value: IamInstanceProfileSpecification): Self = StObject.set(x, "IamInstanceProfile", value.asInstanceOf[js.Any])
     

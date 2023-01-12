@@ -23,7 +23,8 @@ object DownloadUploadData {
     __obj.asInstanceOf[DownloadUploadData]
   }
   
-  extension [Self <: DownloadUploadData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadUploadData] (val x: Self) extends AnyVal {
     
     inline def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     

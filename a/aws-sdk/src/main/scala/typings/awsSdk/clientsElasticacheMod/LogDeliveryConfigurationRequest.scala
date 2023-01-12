@@ -38,7 +38,8 @@ object LogDeliveryConfigurationRequest {
     __obj.asInstanceOf[LogDeliveryConfigurationRequest]
   }
   
-  extension [Self <: LogDeliveryConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogDeliveryConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationDetails(value: DestinationDetails): Self = StObject.set(x, "DestinationDetails", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IBitmapTypedValue {
     __obj.asInstanceOf[IBitmapTypedValue]
   }
   
-  extension [Self <: IBitmapTypedValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBitmapTypedValue] (val x: Self) extends AnyVal {
     
     inline def setType(value: PropertyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

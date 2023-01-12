@@ -22,7 +22,8 @@ object GradebookSettings {
     __obj.asInstanceOf[GradebookSettings]
   }
   
-  extension [Self <: GradebookSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GradebookSettings] (val x: Self) extends AnyVal {
     
     inline def setCalculationType(value: String): Self = StObject.set(x, "calculationType", value.asInstanceOf[js.Any])
     

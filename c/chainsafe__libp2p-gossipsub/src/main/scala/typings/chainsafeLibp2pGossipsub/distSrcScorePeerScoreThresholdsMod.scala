@@ -65,7 +65,8 @@ object distSrcScorePeerScoreThresholdsMod {
       __obj.asInstanceOf[PeerScoreThresholds]
     }
     
-    extension [Self <: PeerScoreThresholds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerScoreThresholds] (val x: Self) extends AnyVal {
       
       inline def setAcceptPXThreshold(value: Double): Self = StObject.set(x, "acceptPXThreshold", value.asInstanceOf[js.Any])
       

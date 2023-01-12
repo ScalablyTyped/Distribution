@@ -53,7 +53,8 @@ object PathParser {
     __obj.asInstanceOf[PathParser]
   }
   
-  extension [Self <: PathParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathParser] (val x: Self) extends AnyVal {
     
     inline def setKeys(value: js.Array[PathParserParamKey]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     

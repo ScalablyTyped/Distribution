@@ -639,7 +639,8 @@ object typesMenuItemSeparatorMod {
       __obj.asInstanceOf[MenuItemSeparatorProps]
     }
     
-    extension [Self <: MenuItemSeparatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemSeparatorProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

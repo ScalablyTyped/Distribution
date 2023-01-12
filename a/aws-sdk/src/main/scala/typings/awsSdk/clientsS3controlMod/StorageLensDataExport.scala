@@ -23,7 +23,8 @@ object StorageLensDataExport {
     __obj.asInstanceOf[StorageLensDataExport]
   }
   
-  extension [Self <: StorageLensDataExport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageLensDataExport] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchMetrics(value: CloudWatchMetrics): Self = StObject.set(x, "CloudWatchMetrics", value.asInstanceOf[js.Any])
     

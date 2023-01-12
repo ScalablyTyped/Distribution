@@ -33,7 +33,8 @@ object keysstringPointerActionPo {
     __obj.asInstanceOf[keysstringPointerActionPo]
   }
   
-  extension [Self <: keysstringPointerActionPo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keysstringPointerActionPo] (val x: Self) extends AnyVal {
     
     inline def setCoords(value: PointerCoords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     

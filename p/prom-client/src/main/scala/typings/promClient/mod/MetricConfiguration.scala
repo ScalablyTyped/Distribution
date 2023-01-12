@@ -25,7 +25,8 @@ object MetricConfiguration {
     __obj.asInstanceOf[MetricConfiguration[T]]
   }
   
-  extension [Self <: MetricConfiguration[?], T /* <: String */](x: Self & MetricConfiguration[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricConfiguration[?], T /* <: String */] (val x: Self & MetricConfiguration[T]) extends AnyVal {
     
     inline def setAggregator(value: Aggregator): Self = StObject.set(x, "aggregator", value.asInstanceOf[js.Any])
     

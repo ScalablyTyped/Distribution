@@ -26,7 +26,8 @@ object Balance {
     __obj.asInstanceOf[Balance]
   }
   
-  extension [Self <: Balance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Balance] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

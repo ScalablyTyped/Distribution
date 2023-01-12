@@ -21,7 +21,8 @@ object CursorObject {
     __obj.asInstanceOf[CursorObject]
   }
   
-  extension [Self <: CursorObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CursorObject] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

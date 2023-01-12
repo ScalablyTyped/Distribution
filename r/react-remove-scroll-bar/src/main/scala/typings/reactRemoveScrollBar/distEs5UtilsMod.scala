@@ -69,7 +69,8 @@ object distEs5UtilsMod {
       __obj.asInstanceOf[GapOffset]
     }
     
-    extension [Self <: GapOffset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GapOffset] (val x: Self) extends AnyVal {
       
       inline def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object statusFileOptionsMod {
       __obj.asInstanceOf[StatusFileOptions]
     }
     
-    extension [Self <: StatusFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusFileOptions] (val x: Self) extends AnyVal {
       
       inline def setEntry(value: StatusEntry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object TeamInstanceParameters {
     __obj.asInstanceOf[TeamInstanceParameters]
   }
   
-  extension [Self <: TeamInstanceParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamInstanceParameters] (val x: Self) extends AnyVal {
     
     inline def setFavoriteTeamsOnly(value: Boolean): Self = StObject.set(x, "favoriteTeamsOnly", value.asInstanceOf[js.Any])
     

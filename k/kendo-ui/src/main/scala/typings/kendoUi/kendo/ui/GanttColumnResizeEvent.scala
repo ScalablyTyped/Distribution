@@ -21,7 +21,8 @@ object GanttColumnResizeEvent {
     __obj.asInstanceOf[GanttColumnResizeEvent]
   }
   
-  extension [Self <: GanttColumnResizeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttColumnResizeEvent] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

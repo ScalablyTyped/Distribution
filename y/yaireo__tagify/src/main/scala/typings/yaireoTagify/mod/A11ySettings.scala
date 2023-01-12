@@ -19,7 +19,8 @@ object A11ySettings {
     __obj.asInstanceOf[A11ySettings]
   }
   
-  extension [Self <: A11ySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: A11ySettings] (val x: Self) extends AnyVal {
     
     inline def setFocusableTags(value: Boolean): Self = StObject.set(x, "focusableTags", value.asInstanceOf[js.Any])
     

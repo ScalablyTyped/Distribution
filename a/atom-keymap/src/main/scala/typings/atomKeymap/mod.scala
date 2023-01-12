@@ -87,7 +87,8 @@ object mod extends Shortcut {
             __obj.asInstanceOf[AddedKeystrokeResolver]
           }
           
-          extension [Self <: AddedKeystrokeResolver](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: AddedKeystrokeResolver] (val x: Self) extends AnyVal {
             
             inline def setEvent(value: KeyboardEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
             
@@ -132,7 +133,8 @@ object mod extends Shortcut {
             __obj.asInstanceOf[FailedKeybindingMatch]
           }
           
-          extension [Self <: FailedKeybindingMatch](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: FailedKeybindingMatch] (val x: Self) extends AnyVal {
             
             inline def setKeyboardEventTarget(value: Element): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
             
@@ -155,7 +157,8 @@ object mod extends Shortcut {
             __obj.asInstanceOf[FailedKeymapFileRead]
           }
           
-          extension [Self <: FailedKeymapFileRead](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: FailedKeymapFileRead] (val x: Self) extends AnyVal {
             
             inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
             
@@ -181,7 +184,8 @@ object mod extends Shortcut {
             __obj.asInstanceOf[FullKeybindingMatch]
           }
           
-          extension [Self <: FullKeybindingMatch](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: FullKeybindingMatch] (val x: Self) extends AnyVal {
             
             inline def setBinding(value: KeyBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
             
@@ -203,7 +207,8 @@ object mod extends Shortcut {
             __obj.asInstanceOf[KeymapLoaded]
           }
           
-          extension [Self <: KeymapLoaded](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: KeymapLoaded] (val x: Self) extends AnyVal {
             
             inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
           }
@@ -227,7 +232,8 @@ object mod extends Shortcut {
             __obj.asInstanceOf[PartialKeybindingMatch]
           }
           
-          extension [Self <: PartialKeybindingMatch](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: PartialKeybindingMatch] (val x: Self) extends AnyVal {
             
             inline def setKeyboardEventTarget(value: Element): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
             
@@ -289,7 +295,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[KeyBinding]
         }
         
-        extension [Self <: KeyBinding](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: KeyBinding] (val x: Self) extends AnyVal {
           
           inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
           
@@ -447,7 +454,8 @@ object mod extends Shortcut {
             __obj.asInstanceOf[BuildKeyEvent]
           }
           
-          extension [Self <: BuildKeyEvent](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: BuildKeyEvent] (val x: Self) extends AnyVal {
             
             inline def setAlt(value: Boolean): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
             

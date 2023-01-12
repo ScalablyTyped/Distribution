@@ -67,7 +67,8 @@ object KerberosConfig {
     __obj.asInstanceOf[KerberosConfig]
   }
   
-  extension [Self <: KerberosConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KerberosConfig] (val x: Self) extends AnyVal {
     
     inline def setCrossRealmTrustAdminServer(value: String): Self = StObject.set(x, "crossRealmTrustAdminServer", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Base64]
     }
     
-    extension [Self <: Base64](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base64] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       

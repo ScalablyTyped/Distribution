@@ -73,7 +73,8 @@ object HTMLAppBehavior {
     __obj.asInstanceOf[HTMLAppBehavior]
   }
   
-  extension [Self <: HTMLAppBehavior](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLAppBehavior] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ReferencedSecurityGroup {
     __obj.asInstanceOf[ReferencedSecurityGroup]
   }
   
-  extension [Self <: ReferencedSecurityGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferencedSecurityGroup] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: String): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     

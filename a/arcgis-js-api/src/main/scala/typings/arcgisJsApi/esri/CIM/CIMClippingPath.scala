@@ -28,7 +28,8 @@ object CIMClippingPath {
     __obj.asInstanceOf[CIMClippingPath]
   }
   
-  extension [Self <: CIMClippingPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMClippingPath] (val x: Self) extends AnyVal {
     
     inline def setClippingType(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ClippingType * / any */ String

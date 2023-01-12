@@ -19,7 +19,8 @@ object ClusterAllocationExplainParams {
     __obj.asInstanceOf[ClusterAllocationExplainParams]
   }
   
-  extension [Self <: ClusterAllocationExplainParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterAllocationExplainParams] (val x: Self) extends AnyVal {
     
     inline def setIncludeDiskInfo(value: Boolean): Self = StObject.set(x, "includeDiskInfo", value.asInstanceOf[js.Any])
     

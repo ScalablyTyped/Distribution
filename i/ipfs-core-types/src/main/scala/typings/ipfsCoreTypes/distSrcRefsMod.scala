@@ -46,7 +46,8 @@ object distSrcRefsMod {
       __obj.asInstanceOf[API[OptionExtension]]
     }
     
-    extension [Self <: API[?], OptionExtension](x: Self & API[OptionExtension]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: API[?], OptionExtension] (val x: Self & API[OptionExtension]) extends AnyVal {
       
       inline def setLocal(value: /* options */ js.UndefOr[AbortOptions & OptionExtension] => AsyncIterable[RefsResult]): Self = StObject.set(x, "local", js.Any.fromFunction1(value))
       
@@ -89,7 +90,8 @@ object distSrcRefsMod {
       __obj.asInstanceOf[RefsOptions]
     }
     
-    extension [Self <: RefsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefsOptions] (val x: Self) extends AnyVal {
       
       inline def setEdges(value: Boolean): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object distSrcRefsMod {
       __obj.asInstanceOf[RefsResult]
     }
     
-    extension [Self <: RefsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefsResult] (val x: Self) extends AnyVal {
       
       inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       

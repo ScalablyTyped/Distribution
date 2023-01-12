@@ -19,7 +19,8 @@ object SpacedProps {
     __obj.asInstanceOf[SpacedProps]
   }
   
-  extension [Self <: SpacedProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpacedProps] (val x: Self) extends AnyVal {
     
     inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     

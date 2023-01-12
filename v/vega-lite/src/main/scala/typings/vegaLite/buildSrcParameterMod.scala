@@ -53,7 +53,8 @@ object buildSrcParameterMod {
       __obj.asInstanceOf[VariableParameter]
     }
     
-    extension [Self <: VariableParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariableParameter] (val x: Self) extends AnyVal {
       
       inline def setBind(value: Binding): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       

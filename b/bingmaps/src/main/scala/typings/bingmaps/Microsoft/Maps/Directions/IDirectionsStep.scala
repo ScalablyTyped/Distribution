@@ -75,7 +75,8 @@ object IDirectionsStep {
     __obj.asInstanceOf[IDirectionsStep]
   }
   
-  extension [Self <: IDirectionsStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDirectionsStep] (val x: Self) extends AnyVal {
     
     inline def setChildItineraryItems(value: js.Array[IDirectionsStep]): Self = StObject.set(x, "childItineraryItems", value.asInstanceOf[js.Any])
     

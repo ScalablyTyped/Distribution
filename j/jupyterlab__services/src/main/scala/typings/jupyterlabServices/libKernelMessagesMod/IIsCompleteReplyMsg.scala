@@ -30,7 +30,8 @@ object IIsCompleteReplyMsg {
     __obj.asInstanceOf[IIsCompleteReplyMsg]
   }
   
-  extension [Self <: IIsCompleteReplyMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIsCompleteReplyMsg] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ReplyContent[IIsCompleteReplyIncomplete | IIsCompleteReplyOther]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

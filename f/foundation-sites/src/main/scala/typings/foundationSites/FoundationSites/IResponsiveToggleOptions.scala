@@ -17,7 +17,8 @@ object IResponsiveToggleOptions {
     __obj.asInstanceOf[IResponsiveToggleOptions]
   }
   
-  extension [Self <: IResponsiveToggleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResponsiveToggleOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

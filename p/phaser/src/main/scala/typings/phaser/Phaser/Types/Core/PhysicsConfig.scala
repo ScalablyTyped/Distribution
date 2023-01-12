@@ -30,7 +30,8 @@ object PhysicsConfig {
     __obj.asInstanceOf[PhysicsConfig]
   }
   
-  extension [Self <: PhysicsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicsConfig] (val x: Self) extends AnyVal {
     
     inline def setArcade(value: ArcadeWorldConfig): Self = StObject.set(x, "arcade", value.asInstanceOf[js.Any])
     

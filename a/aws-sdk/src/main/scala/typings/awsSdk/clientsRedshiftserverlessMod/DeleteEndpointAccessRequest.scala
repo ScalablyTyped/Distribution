@@ -18,7 +18,8 @@ object DeleteEndpointAccessRequest {
     __obj.asInstanceOf[DeleteEndpointAccessRequest]
   }
   
-  extension [Self <: DeleteEndpointAccessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEndpointAccessRequest] (val x: Self) extends AnyVal {
     
     inline def setEndpointName(value: String): Self = StObject.set(x, "endpointName", value.asInstanceOf[js.Any])
   }

@@ -300,7 +300,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyreadonlyACCEPTHAN]
     }
     
-    extension [Self <: ReadonlyreadonlyACCEPTHAN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyreadonlyACCEPTHAN] (val x: Self) extends AnyVal {
       
       inline def setACCEPT_HANDOVER(value: androidDotpermissionDotACCEPT_HANDOVER): Self = StObject.set(x, "ACCEPT_HANDOVER", value.asInstanceOf[js.Any])
       
@@ -678,7 +679,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyreadonlyACCESSORY]
     }
     
-    extension [Self <: ReadonlyreadonlyACCESSORY](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyreadonlyACCESSORY] (val x: Self) extends AnyVal {
       
       inline def setACCESSORY_MANAGER(value: windowsDotpermissionDotaccessoryManager): Self = StObject.set(x, "ACCESSORY_MANAGER", value.asInstanceOf[js.Any])
       
@@ -986,7 +988,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyreadonlyANDROIDRe]
     }
     
-    extension [Self <: ReadonlyreadonlyANDROIDRe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyreadonlyANDROIDRe] (val x: Self) extends AnyVal {
       
       inline def setANDROID(value: ReadonlyreadonlyACCEPTHAN): Self = StObject.set(x, "ANDROID", value.asInstanceOf[js.Any])
       
@@ -1040,7 +1043,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyreadonlyAPPTRACKI]
     }
     
-    extension [Self <: ReadonlyreadonlyAPPTRACKI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyreadonlyAPPTRACKI] (val x: Self) extends AnyVal {
       
       inline def setAPP_TRACKING_TRANSPARENCY(value: iosDotpermissionDotAPP_TRACKING_TRANSPARENCY): Self = StObject.set(x, "APP_TRACKING_TRANSPARENCY", value.asInstanceOf[js.Any])
       
@@ -1098,7 +1102,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyreadonlyUNAVAILAB]
     }
     
-    extension [Self <: ReadonlyreadonlyUNAVAILAB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyreadonlyUNAVAILAB] (val x: Self) extends AnyVal {
       
       inline def setBLOCKED(value: blocked): Self = StObject.set(x, "BLOCKED", value.asInstanceOf[js.Any])
       

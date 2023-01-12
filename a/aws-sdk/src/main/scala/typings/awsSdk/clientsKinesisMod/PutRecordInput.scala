@@ -38,7 +38,8 @@ object PutRecordInput {
     __obj.asInstanceOf[PutRecordInput]
   }
   
-  extension [Self <: PutRecordInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRecordInput] (val x: Self) extends AnyVal {
     
     inline def setData(value: Data): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object CidrBlockAssociation {
     __obj.asInstanceOf[CidrBlockAssociation]
   }
   
-  extension [Self <: CidrBlockAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CidrBlockAssociation] (val x: Self) extends AnyVal {
     
     inline def setAssociationId(value: NonEmptyString): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     

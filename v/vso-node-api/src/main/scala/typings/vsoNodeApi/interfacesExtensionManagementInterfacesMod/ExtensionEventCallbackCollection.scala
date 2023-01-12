@@ -56,7 +56,8 @@ object ExtensionEventCallbackCollection {
     __obj.asInstanceOf[ExtensionEventCallbackCollection]
   }
   
-  extension [Self <: ExtensionEventCallbackCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionEventCallbackCollection] (val x: Self) extends AnyVal {
     
     inline def setPostDisable(value: ExtensionEventCallback): Self = StObject.set(x, "postDisable", value.asInstanceOf[js.Any])
     

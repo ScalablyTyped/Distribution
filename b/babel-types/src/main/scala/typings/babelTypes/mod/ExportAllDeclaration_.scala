@@ -26,7 +26,8 @@ object ExportAllDeclaration_ {
     __obj.asInstanceOf[ExportAllDeclaration_]
   }
   
-  extension [Self <: ExportAllDeclaration_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportAllDeclaration_] (val x: Self) extends AnyVal {
     
     inline def setSource(value: StringLiteral_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

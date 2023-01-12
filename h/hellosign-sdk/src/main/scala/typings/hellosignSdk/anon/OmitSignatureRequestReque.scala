@@ -61,7 +61,8 @@ object OmitSignatureRequestReque {
     __obj.asInstanceOf[OmitSignatureRequestReque]
   }
   
-  extension [Self <: OmitSignatureRequestReque](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitSignatureRequestReque] (val x: Self) extends AnyVal {
     
     inline def setAllow_decline(value: Double): Self = StObject.set(x, "allow_decline", value.asInstanceOf[js.Any])
     

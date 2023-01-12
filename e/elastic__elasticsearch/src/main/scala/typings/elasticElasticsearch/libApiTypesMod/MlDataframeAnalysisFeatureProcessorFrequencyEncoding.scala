@@ -20,7 +20,8 @@ object MlDataframeAnalysisFeatureProcessorFrequencyEncoding {
     __obj.asInstanceOf[MlDataframeAnalysisFeatureProcessorFrequencyEncoding]
   }
   
-  extension [Self <: MlDataframeAnalysisFeatureProcessorFrequencyEncoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalysisFeatureProcessorFrequencyEncoding] (val x: Self) extends AnyVal {
     
     inline def setFeature_name(value: Name): Self = StObject.set(x, "feature_name", value.asInstanceOf[js.Any])
     

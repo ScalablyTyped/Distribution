@@ -16,7 +16,8 @@ object PrevSubjectArray {
     __obj.asInstanceOf[PrevSubjectArray]
   }
   
-  extension [Self <: PrevSubjectArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrevSubjectArray] (val x: Self) extends AnyVal {
     
     inline def setPrevSubject(value: js.Array[optional]): Self = StObject.set(x, "prevSubject", value.asInstanceOf[js.Any])
     

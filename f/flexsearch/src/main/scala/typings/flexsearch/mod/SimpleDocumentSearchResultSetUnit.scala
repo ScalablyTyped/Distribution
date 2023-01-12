@@ -17,7 +17,8 @@ object SimpleDocumentSearchResultSetUnit {
     __obj.asInstanceOf[SimpleDocumentSearchResultSetUnit]
   }
   
-  extension [Self <: SimpleDocumentSearchResultSetUnit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleDocumentSearchResultSetUnit] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

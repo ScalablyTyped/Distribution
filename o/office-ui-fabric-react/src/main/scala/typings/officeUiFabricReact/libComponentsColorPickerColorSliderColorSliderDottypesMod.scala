@@ -31,7 +31,8 @@ object libComponentsColorPickerColorSliderColorSliderDottypesMod {
       __obj.asInstanceOf[IColorSlider]
     }
     
-    extension [Self <: IColorSlider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorSlider] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -130,7 +131,8 @@ object libComponentsColorPickerColorSliderColorSliderDottypesMod {
       __obj.asInstanceOf[IColorSliderProps]
     }
     
-    extension [Self <: IColorSliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorSliderProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -217,7 +219,8 @@ object libComponentsColorPickerColorSliderColorSliderDottypesMod {
       __obj.asInstanceOf[IColorSliderStyleProps]
     }
     
-    extension [Self <: IColorSliderStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorSliderStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -259,7 +262,8 @@ object libComponentsColorPickerColorSliderColorSliderDottypesMod {
       __obj.asInstanceOf[IColorSliderStyles]
     }
     
-    extension [Self <: IColorSliderStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorSliderStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

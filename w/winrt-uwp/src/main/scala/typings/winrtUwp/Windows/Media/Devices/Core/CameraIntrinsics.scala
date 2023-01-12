@@ -74,7 +74,8 @@ object CameraIntrinsics {
     __obj.asInstanceOf[CameraIntrinsics]
   }
   
-  extension [Self <: CameraIntrinsics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraIntrinsics] (val x: Self) extends AnyVal {
     
     inline def setFocalLength(value: Vector2): Self = StObject.set(x, "focalLength", value.asInstanceOf[js.Any])
     

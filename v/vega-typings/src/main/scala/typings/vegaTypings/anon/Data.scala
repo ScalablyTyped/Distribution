@@ -23,7 +23,8 @@ object Data {
     __obj.asInstanceOf[Data]
   }
   
-  extension [Self <: Data](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
     
     inline def setData(value: (/* name */ js.UndefOr[String], /* object */ js.UndefOr[Any]) => Boolean): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
     

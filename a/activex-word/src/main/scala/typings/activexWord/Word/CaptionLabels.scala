@@ -37,7 +37,8 @@ object CaptionLabels {
     __obj.asInstanceOf[CaptionLabels]
   }
   
-  extension [Self <: CaptionLabels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionLabels] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: String => CaptionLabel): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

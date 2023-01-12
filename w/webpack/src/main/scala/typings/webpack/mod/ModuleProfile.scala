@@ -125,7 +125,8 @@ object ModuleProfile {
     __obj.asInstanceOf[ModuleProfile]
   }
   
-  extension [Self <: ModuleProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleProfile] (val x: Self) extends AnyVal {
     
     inline def setAdditionalFactories(value: Double): Self = StObject.set(x, "additionalFactories", value.asInstanceOf[js.Any])
     

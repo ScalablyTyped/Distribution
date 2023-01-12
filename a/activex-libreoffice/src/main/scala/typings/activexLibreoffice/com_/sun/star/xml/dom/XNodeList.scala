@@ -33,7 +33,8 @@ object XNodeList {
     __obj.asInstanceOf[XNodeList]
   }
   
-  extension [Self <: XNodeList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNodeList] (val x: Self) extends AnyVal {
     
     inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     

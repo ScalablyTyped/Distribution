@@ -44,7 +44,8 @@ object CreateKeySigningKeyRequest {
     __obj.asInstanceOf[CreateKeySigningKeyRequest]
   }
   
-  extension [Self <: CreateKeySigningKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateKeySigningKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setCallerReference(value: Nonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     

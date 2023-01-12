@@ -26,7 +26,8 @@ object typesSelectedVariantMod {
       __obj.asInstanceOf[SelectedVariant]
     }
     
-    extension [Self <: SelectedVariant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectedVariant] (val x: Self) extends AnyVal {
       
       inline def setGroup_id(value: String): Self = StObject.set(x, "group_id", value.asInstanceOf[js.Any])
       

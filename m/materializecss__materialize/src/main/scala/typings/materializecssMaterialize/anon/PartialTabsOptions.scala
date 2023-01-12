@@ -24,7 +24,8 @@ object PartialTabsOptions {
     __obj.asInstanceOf[PartialTabsOptions]
   }
   
-  extension [Self <: PartialTabsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTabsOptions] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

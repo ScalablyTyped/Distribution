@@ -25,7 +25,8 @@ object IPositionableOptions {
     __obj.asInstanceOf[IPositionableOptions]
   }
   
-  extension [Self <: IPositionableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPositionableOptions] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

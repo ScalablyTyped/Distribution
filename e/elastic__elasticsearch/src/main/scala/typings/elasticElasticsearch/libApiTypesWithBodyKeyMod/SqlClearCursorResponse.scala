@@ -15,7 +15,8 @@ object SqlClearCursorResponse {
     __obj.asInstanceOf[SqlClearCursorResponse]
   }
   
-  extension [Self <: SqlClearCursorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlClearCursorResponse] (val x: Self) extends AnyVal {
     
     inline def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
   }

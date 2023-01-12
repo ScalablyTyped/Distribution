@@ -20,7 +20,8 @@ object AttributeTypeAndValueParameters {
     __obj.asInstanceOf[AttributeTypeAndValueParameters]
   }
   
-  extension [Self <: AttributeTypeAndValueParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeTypeAndValueParameters] (val x: Self) extends AnyVal {
     
     inline def setSchema(value: SchemaType): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

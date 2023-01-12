@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[Export[T, X]]
     }
     
-    extension [Self <: Export[?, ?], T, X](x: Self & (Export[T, X])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Export[?, ?], T, X] (val x: Self & (Export[T, X])) extends AnyVal {
       
       inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[InternalItemData[X]]
     }
     
-    extension [Self <: InternalItemData[?], X](x: Self & InternalItemData[X]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalItemData[?], X] (val x: Self & InternalItemData[X]) extends AnyVal {
       
       inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object mod {
       __obj.asInstanceOf[Items[T]]
     }
     
-    extension [Self <: Items[?], T](x: Self & Items[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Items[?], T] (val x: Self & Items[T]) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -116,7 +119,8 @@ object mod {
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T](x: Self & Options[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -188,7 +192,8 @@ object mod {
       __obj.asInstanceOf[SetOptions[X]]
     }
     
-    extension [Self <: SetOptions[?], X](x: Self & SetOptions[X]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetOptions[?], X] (val x: Self & SetOptions[X]) extends AnyVal {
       
       inline def setMeta(value: X): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       

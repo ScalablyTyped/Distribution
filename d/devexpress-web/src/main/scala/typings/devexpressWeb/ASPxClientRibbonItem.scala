@@ -73,7 +73,8 @@ object ASPxClientRibbonItem {
     __obj.asInstanceOf[ASPxClientRibbonItem]
   }
   
-  extension [Self <: ASPxClientRibbonItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRibbonItem] (val x: Self) extends AnyVal {
     
     inline def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
     

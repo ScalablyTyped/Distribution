@@ -30,7 +30,8 @@ object openShareOptions {
     __obj.asInstanceOf[openShareOptions]
   }
   
-  extension [Self <: openShareOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: openShareOptions] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

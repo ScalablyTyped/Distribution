@@ -53,7 +53,8 @@ object Schedule {
     __obj.asInstanceOf[Schedule]
   }
   
-  extension [Self <: Schedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
     
     inline def setBranchFilters(value: js.Array[String]): Self = StObject.set(x, "branchFilters", value.asInstanceOf[js.Any])
     

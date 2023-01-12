@@ -29,7 +29,8 @@ object RewriteRules {
     __obj.asInstanceOf[RewriteRules]
   }
   
-  extension [Self <: RewriteRules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RewriteRules] (val x: Self) extends AnyVal {
     
     inline def setFn(
       value: (/* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage], /* match */ String) => String

@@ -33,7 +33,8 @@ object LangAccessibilityAxisOptions {
     __obj.asInstanceOf[LangAccessibilityAxisOptions]
   }
   
-  extension [Self <: LangAccessibilityAxisOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangAccessibilityAxisOptions] (val x: Self) extends AnyVal {
     
     inline def setRangeCategories(value: String): Self = StObject.set(x, "rangeCategories", value.asInstanceOf[js.Any])
     

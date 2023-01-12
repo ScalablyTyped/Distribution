@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Candidate]
     }
     
-    extension [Self <: Candidate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Candidate] (val x: Self) extends AnyVal {
       
       inline def setCandidate(value: String): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Channel]
     }
     
-    extension [Self <: Channel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: RTCDataChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[TypeofRTCPeerConnection]
     }
     
-    extension [Self <: TypeofRTCPeerConnection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofRTCPeerConnection] (val x: Self) extends AnyVal {
       
       inline def setGenerateCertificate(value: AlgorithmIdentifier => js.Promise[RTCCertificate]): Self = StObject.set(x, "generateCertificate", js.Any.fromFunction1(value))
     }
@@ -95,7 +98,8 @@ object anon {
       __obj.asInstanceOf[WebRTCPeerInitlogPrefixst]
     }
     
-    extension [Self <: WebRTCPeerInitlogPrefixst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebRTCPeerInitlogPrefixst] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

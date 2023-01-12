@@ -22,7 +22,8 @@ object CreateProjectRequest {
     __obj.asInstanceOf[CreateProjectRequest]
   }
   
-  extension [Self <: CreateProjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateProjectRequest] (val x: Self) extends AnyVal {
     
     inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     

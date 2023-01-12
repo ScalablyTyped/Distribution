@@ -40,7 +40,8 @@ object Explorers {
     __obj.asInstanceOf[Explorers]
   }
   
-  extension [Self <: Explorers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Explorers] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Any, OlFolderDisplayMode) => Explorer): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

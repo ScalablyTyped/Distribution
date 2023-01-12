@@ -24,7 +24,8 @@ object DroppableEventUIParam {
     __obj.asInstanceOf[DroppableEventUIParam]
   }
   
-  extension [Self <: DroppableEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DroppableEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setDraggable(value: JQuery): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     

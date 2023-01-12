@@ -53,7 +53,8 @@ object MagneticStripeReaderReport {
     __obj.asInstanceOf[MagneticStripeReaderReport]
   }
   
-  extension [Self <: MagneticStripeReaderReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MagneticStripeReaderReport] (val x: Self) extends AnyVal {
     
     inline def setAdditionalSecurityInformation(value: IBuffer): Self = StObject.set(x, "additionalSecurityInformation", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object PrefetchConsumption {
     __obj.asInstanceOf[PrefetchConsumption]
   }
   
-  extension [Self <: PrefetchConsumption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrefetchConsumption] (val x: Self) extends AnyVal {
     
     inline def setAvailMatchingCriteria(value: listOfAvailMatchingCriteria): Self = StObject.set(x, "AvailMatchingCriteria", value.asInstanceOf[js.Any])
     

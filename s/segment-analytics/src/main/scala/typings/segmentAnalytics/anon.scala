@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Dictintegration]
     }
     
-    extension [Self <: Dictintegration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictintegration] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "All", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object anon {
       __obj.asInstanceOf[KeyString]
     }
     
-    extension [Self <: KeyString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyString] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }

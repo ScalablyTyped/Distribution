@@ -23,7 +23,8 @@ object DeleteMetricFilterRequest {
     __obj.asInstanceOf[DeleteMetricFilterRequest]
   }
   
-  extension [Self <: DeleteMetricFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMetricFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setFilterName(value: FilterName): Self = StObject.set(x, "filterName", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ListMobileSdkReleasesRequest {
     __obj.asInstanceOf[ListMobileSdkReleasesRequest]
   }
   
-  extension [Self <: ListMobileSdkReleasesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMobileSdkReleasesRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

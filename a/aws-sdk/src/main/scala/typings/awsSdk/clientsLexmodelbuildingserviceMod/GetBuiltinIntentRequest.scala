@@ -18,7 +18,8 @@ object GetBuiltinIntentRequest {
     __obj.asInstanceOf[GetBuiltinIntentRequest]
   }
   
-  extension [Self <: GetBuiltinIntentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBuiltinIntentRequest] (val x: Self) extends AnyVal {
     
     inline def setSignature(value: BuiltinIntentSignature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }

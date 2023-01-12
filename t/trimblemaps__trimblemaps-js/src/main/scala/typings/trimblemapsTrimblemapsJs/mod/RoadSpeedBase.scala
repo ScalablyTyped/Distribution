@@ -33,7 +33,8 @@ object RoadSpeedBase {
     __obj.asInstanceOf[RoadSpeedBase]
   }
   
-  extension [Self <: RoadSpeedBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoadSpeedBase] (val x: Self) extends AnyVal {
     
     inline def setRoadCategory(value: `16` | `3` | `13` | `17` | `4` | `7` | `5` | `15` | `12` | `6` | `10` | `8` | `1` | `14`): Self = StObject.set(x, "roadCategory", value.asInstanceOf[js.Any])
     

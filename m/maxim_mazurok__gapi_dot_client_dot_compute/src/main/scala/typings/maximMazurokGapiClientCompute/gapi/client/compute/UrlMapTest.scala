@@ -43,7 +43,8 @@ object UrlMapTest {
     __obj.asInstanceOf[UrlMapTest]
   }
   
-  extension [Self <: UrlMapTest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlMapTest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

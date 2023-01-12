@@ -19,7 +19,8 @@ object PreviousChange {
     __obj.asInstanceOf[PreviousChange]
   }
   
-  extension [Self <: PreviousChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviousChange] (val x: Self) extends AnyVal {
     
     inline def setFirstParent(value: scala.Double): Self = StObject.set(x, "firstParent", value.asInstanceOf[js.Any])
     

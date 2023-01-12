@@ -21,7 +21,8 @@ object SlashCommandOptions {
     __obj.asInstanceOf[SlashCommandOptions[T]]
   }
   
-  extension [Self <: SlashCommandOptions[?], T](x: Self & SlashCommandOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlashCommandOptions[?], T] (val x: Self & SlashCommandOptions[T]) extends AnyVal {
     
     inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

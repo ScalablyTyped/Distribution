@@ -33,7 +33,8 @@ object SetTopBarTextOptions {
     __obj.asInstanceOf[SetTopBarTextOptions]
   }
   
-  extension [Self <: SetTopBarTextOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetTopBarTextOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

@@ -15,7 +15,8 @@ object EnumValuesBacklogInError {
     __obj.asInstanceOf[EnumValuesBacklogInError]
   }
   
-  extension [Self <: EnumValuesBacklogInError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesBacklogInError] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: BacklogInError): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

@@ -131,7 +131,8 @@ object PlaceSearchResult {
     __obj.asInstanceOf[PlaceSearchResult]
   }
   
-  extension [Self <: PlaceSearchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceSearchResult] (val x: Self) extends AnyVal {
     
     inline def setAlt_ids(value: js.Array[AlternativePlaceId]): Self = StObject.set(x, "alt_ids", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[ApiKey]
     }
     
-    extension [Self <: ApiKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiKey] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[BaseUrl]
     }
     
-    extension [Self <: BaseUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseUrl] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object anon {
       __obj.asInstanceOf[Domain]
     }
     
-    extension [Self <: Domain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -130,7 +133,8 @@ object anon {
       __obj.asInstanceOf[Truncate]
     }
     
-    extension [Self <: Truncate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Truncate] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -169,7 +173,8 @@ object anon {
       __obj.asInstanceOf[UserAgent]
     }
     
-    extension [Self <: UserAgent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       

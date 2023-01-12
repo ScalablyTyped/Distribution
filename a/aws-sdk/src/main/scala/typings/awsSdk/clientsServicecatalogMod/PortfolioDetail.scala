@@ -43,7 +43,8 @@ object PortfolioDetail {
     __obj.asInstanceOf[PortfolioDetail]
   }
   
-  extension [Self <: PortfolioDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortfolioDetail] (val x: Self) extends AnyVal {
     
     inline def setARN(value: ResourceARN): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

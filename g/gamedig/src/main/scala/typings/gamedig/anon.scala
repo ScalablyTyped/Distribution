@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Docnotes]
     }
     
-    extension [Self <: Docnotes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Docnotes] (val x: Self) extends AnyVal {
       
       inline def setDoc_notes(value: String): Self = StObject.set(x, "doc_notes", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Extra]
     }
     
-    extension [Self <: Extra](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extra] (val x: Self) extends AnyVal {
       
       inline def setExtra(value: Docnotes): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[ListenUdpPort]
     }
     
-    extension [Self <: ListenUdpPort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListenUdpPort] (val x: Self) extends AnyVal {
       
       inline def setListenUdpPort(value: Double): Self = StObject.set(x, "listenUdpPort", value.asInstanceOf[js.Any])
       
@@ -92,7 +95,8 @@ object anon {
       __obj.asInstanceOf[Port]
     }
     
-    extension [Self <: Port](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       

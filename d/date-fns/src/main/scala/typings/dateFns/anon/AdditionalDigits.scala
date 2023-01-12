@@ -16,7 +16,8 @@ object AdditionalDigits {
     __obj.asInstanceOf[AdditionalDigits]
   }
   
-  extension [Self <: AdditionalDigits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalDigits] (val x: Self) extends AnyVal {
     
     inline def setAdditionalDigits(value: typings.dateFns.dateFnsInts.`0` | typings.dateFns.dateFnsInts.`1` | `2`): Self = StObject.set(x, "additionalDigits", value.asInstanceOf[js.Any])
     

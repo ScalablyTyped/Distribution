@@ -80,7 +80,8 @@ object buildSrcPropagationCompositeMod {
       __obj.asInstanceOf[CompositePropagatorConfig]
     }
     
-    extension [Self <: CompositePropagatorConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompositePropagatorConfig] (val x: Self) extends AnyVal {
       
       inline def setPropagators(value: js.Array[TextMapPropagator[Any]]): Self = StObject.set(x, "propagators", value.asInstanceOf[js.Any])
       

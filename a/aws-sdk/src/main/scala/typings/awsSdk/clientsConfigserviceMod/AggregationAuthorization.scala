@@ -33,7 +33,8 @@ object AggregationAuthorization {
     __obj.asInstanceOf[AggregationAuthorization]
   }
   
-  extension [Self <: AggregationAuthorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationAuthorization] (val x: Self) extends AnyVal {
     
     inline def setAggregationAuthorizationArn(value: String): Self = StObject.set(x, "AggregationAuthorizationArn", value.asInstanceOf[js.Any])
     

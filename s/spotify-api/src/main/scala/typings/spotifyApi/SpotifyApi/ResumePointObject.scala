@@ -27,7 +27,8 @@ object ResumePointObject {
     __obj.asInstanceOf[ResumePointObject]
   }
   
-  extension [Self <: ResumePointObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResumePointObject] (val x: Self) extends AnyVal {
     
     inline def setFully_played(value: Boolean): Self = StObject.set(x, "fully_played", value.asInstanceOf[js.Any])
     

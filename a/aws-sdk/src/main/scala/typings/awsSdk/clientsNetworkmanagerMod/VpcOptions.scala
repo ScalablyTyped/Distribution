@@ -18,7 +18,8 @@ object VpcOptions {
     __obj.asInstanceOf[VpcOptions]
   }
   
-  extension [Self <: VpcOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcOptions] (val x: Self) extends AnyVal {
     
     inline def setIpv6Support(value: Boolean): Self = StObject.set(x, "Ipv6Support", value.asInstanceOf[js.Any])
     

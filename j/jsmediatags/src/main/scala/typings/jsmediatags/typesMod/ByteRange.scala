@@ -18,7 +18,8 @@ object ByteRange {
     __obj.asInstanceOf[ByteRange]
   }
   
-  extension [Self <: ByteRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ByteRange] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

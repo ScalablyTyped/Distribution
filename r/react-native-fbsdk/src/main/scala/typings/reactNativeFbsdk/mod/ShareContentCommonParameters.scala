@@ -34,7 +34,8 @@ object ShareContentCommonParameters {
     __obj.asInstanceOf[ShareContentCommonParameters]
   }
   
-  extension [Self <: ShareContentCommonParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareContentCommonParameters] (val x: Self) extends AnyVal {
     
     inline def setHashtag(value: String): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
     

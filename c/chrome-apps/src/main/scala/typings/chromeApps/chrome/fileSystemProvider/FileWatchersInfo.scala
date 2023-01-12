@@ -25,7 +25,8 @@ object FileWatchersInfo {
     __obj.asInstanceOf[FileWatchersInfo]
   }
   
-  extension [Self <: FileWatchersInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileWatchersInfo] (val x: Self) extends AnyVal {
     
     inline def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
     

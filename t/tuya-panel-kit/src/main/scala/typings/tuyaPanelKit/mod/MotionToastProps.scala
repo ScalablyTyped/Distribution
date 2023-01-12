@@ -56,7 +56,8 @@ object MotionToastProps {
     __obj.asInstanceOf[MotionToastProps]
   }
   
-  extension [Self <: MotionToastProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotionToastProps] (val x: Self) extends AnyVal {
     
     inline def setAnimationConfig(value: Delay): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
     

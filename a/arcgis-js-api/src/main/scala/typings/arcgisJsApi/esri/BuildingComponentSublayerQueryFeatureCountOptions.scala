@@ -21,7 +21,8 @@ object BuildingComponentSublayerQueryFeatureCountOptions {
     __obj.asInstanceOf[BuildingComponentSublayerQueryFeatureCountOptions]
   }
   
-  extension [Self <: BuildingComponentSublayerQueryFeatureCountOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingComponentSublayerQueryFeatureCountOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

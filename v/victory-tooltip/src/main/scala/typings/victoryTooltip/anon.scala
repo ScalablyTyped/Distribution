@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Y]
     }
     
-    extension [Self <: Y](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
       
       inline def setX(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NumberOrCallback */ Any

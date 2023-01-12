@@ -18,7 +18,8 @@ object UnsubscribeParameters {
     __obj.asInstanceOf[UnsubscribeParameters]
   }
   
-  extension [Self <: UnsubscribeParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsubscribeParameters] (val x: Self) extends AnyVal {
     
     inline def setChannelGroups(value: js.Array[String]): Self = StObject.set(x, "channelGroups", value.asInstanceOf[js.Any])
     

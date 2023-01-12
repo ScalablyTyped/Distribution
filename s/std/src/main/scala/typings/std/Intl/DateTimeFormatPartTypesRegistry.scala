@@ -66,7 +66,8 @@ object DateTimeFormatPartTypesRegistry {
     __obj.asInstanceOf[DateTimeFormatPartTypesRegistry]
   }
   
-  extension [Self <: DateTimeFormatPartTypesRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeFormatPartTypesRegistry] (val x: Self) extends AnyVal {
     
     inline def setDay(value: Any): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

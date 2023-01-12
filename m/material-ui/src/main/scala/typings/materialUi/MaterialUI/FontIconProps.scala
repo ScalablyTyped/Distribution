@@ -21,7 +21,8 @@ object FontIconProps {
     __obj.asInstanceOf[FontIconProps]
   }
   
-  extension [Self <: FontIconProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontIconProps] (val x: Self) extends AnyVal {
     
     inline def setHoverColor(value: String): Self = StObject.set(x, "hoverColor", value.asInstanceOf[js.Any])
     

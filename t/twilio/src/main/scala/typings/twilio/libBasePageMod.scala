@@ -214,7 +214,8 @@ object libBasePageMod {
       __obj.asInstanceOf[Page[TVersion, TPayload, TResource, TInstance]]
     }
     
-    extension [Self <: Page[?, ?, ?, ?], TVersion /* <: typings.twilio.libBaseVersionMod.^ */, TPayload /* <: TwilioResponsePayload */, TResource, TInstance](x: Self & (Page[TVersion, TPayload, TResource, TInstance])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Page[?, ?, ?, ?], TVersion /* <: typings.twilio.libBaseVersionMod.^ */, TPayload /* <: TwilioResponsePayload */, TResource, TInstance] (val x: Self & (Page[TVersion, TPayload, TResource, TInstance])) extends AnyVal {
       
       inline def setGetNextPageUrl(value: () => String): Self = StObject.set(x, "getNextPageUrl", js.Any.fromFunction0(value))
       
@@ -269,7 +270,8 @@ object libBasePageMod {
       __obj.asInstanceOf[TwilioResponsePayload]
     }
     
-    extension [Self <: TwilioResponsePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwilioResponsePayload] (val x: Self) extends AnyVal {
       
       inline def setFirst_page_uri(value: String): Self = StObject.set(x, "first_page_uri", value.asInstanceOf[js.Any])
       

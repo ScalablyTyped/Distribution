@@ -52,7 +52,8 @@ object BillingProfile {
     __obj.asInstanceOf[BillingProfile]
   }
   
-  extension [Self <: BillingProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BillingProfile] (val x: Self) extends AnyVal {
     
     inline def setConsolidatedInvoice(value: Boolean): Self = StObject.set(x, "consolidatedInvoice", value.asInstanceOf[js.Any])
     

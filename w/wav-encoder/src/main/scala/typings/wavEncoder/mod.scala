@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[AudioData]
     }
     
-    extension [Self <: AudioData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AudioData] (val x: Self) extends AnyVal {
       
       inline def setChannelData(value: js.Array[js.typedarray.Float32Array]): Self = StObject.set(x, "channelData", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBitDepth(value: Double): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
       

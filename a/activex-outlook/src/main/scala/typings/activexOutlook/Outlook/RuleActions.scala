@@ -88,7 +88,8 @@ object RuleActions {
     __obj.asInstanceOf[RuleActions]
   }
   
-  extension [Self <: RuleActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleActions] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

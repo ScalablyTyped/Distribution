@@ -228,7 +228,8 @@ object CoreEvents {
     __obj.asInstanceOf[CoreEvents]
   }
   
-  extension [Self <: CoreEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreEvents] (val x: Self) extends AnyVal {
     
     inline def setOnAllComplete(value: (/* succeeded */ js.Array[Double], /* failed */ js.Array[Double]) => Unit): Self = StObject.set(x, "onAllComplete", js.Any.fromFunction2(value))
     

@@ -17,7 +17,8 @@ object SearchFetchProfileDebug {
     __obj.asInstanceOf[SearchFetchProfileDebug]
   }
   
-  extension [Self <: SearchFetchProfileDebug](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchFetchProfileDebug] (val x: Self) extends AnyVal {
     
     inline def setFast_path(value: integer): Self = StObject.set(x, "fast_path", value.asInstanceOf[js.Any])
     

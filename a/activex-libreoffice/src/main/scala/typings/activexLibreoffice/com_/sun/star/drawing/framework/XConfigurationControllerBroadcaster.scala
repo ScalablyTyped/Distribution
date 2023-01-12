@@ -43,7 +43,8 @@ object XConfigurationControllerBroadcaster {
     __obj.asInstanceOf[XConfigurationControllerBroadcaster]
   }
   
-  extension [Self <: XConfigurationControllerBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConfigurationControllerBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setAddConfigurationChangeListener(value: (XConfigurationChangeListener, String, Any) => Unit): Self = StObject.set(x, "addConfigurationChangeListener", js.Any.fromFunction3(value))
     

@@ -23,7 +23,8 @@ object ListGraphsResponse {
     __obj.asInstanceOf[ListGraphsResponse]
   }
   
-  extension [Self <: ListGraphsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGraphsResponse] (val x: Self) extends AnyVal {
     
     inline def setGraphList(value: GraphList): Self = StObject.set(x, "GraphList", value.asInstanceOf[js.Any])
     

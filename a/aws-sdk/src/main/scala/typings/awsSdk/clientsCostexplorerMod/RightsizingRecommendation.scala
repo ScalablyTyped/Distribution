@@ -43,7 +43,8 @@ object RightsizingRecommendation {
     __obj.asInstanceOf[RightsizingRecommendation]
   }
   
-  extension [Self <: RightsizingRecommendation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RightsizingRecommendation] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: GenericString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

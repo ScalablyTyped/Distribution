@@ -32,7 +32,8 @@ object ContentWindow {
     __obj.asInstanceOf[ContentWindow]
   }
   
-  extension [Self <: ContentWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentWindow] (val x: Self) extends AnyVal {
     
     inline def setPostMessage(value: (Any, String) => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction2(value))
   }

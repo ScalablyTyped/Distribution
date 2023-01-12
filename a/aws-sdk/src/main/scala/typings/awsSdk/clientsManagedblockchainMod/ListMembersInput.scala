@@ -43,7 +43,8 @@ object ListMembersInput {
     __obj.asInstanceOf[ListMembersInput]
   }
   
-  extension [Self <: ListMembersInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMembersInput] (val x: Self) extends AnyVal {
     
     inline def setIsOwned(value: IsOwned): Self = StObject.set(x, "IsOwned", value.asInstanceOf[js.Any])
     

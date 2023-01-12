@@ -23,7 +23,8 @@ object typesDeleteRequestMod {
       __obj.asInstanceOf[DeleteRequest]
     }
     
-    extension [Self <: DeleteRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteRequest] (val x: Self) extends AnyVal {
       
       inline def setKey(value: StringDictionary[AttributeValue] | (js.Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object typesDeleteRequestMod {
       __obj.asInstanceOf[UnmarshalledDeleteRequest]
     }
     
-    extension [Self <: UnmarshalledDeleteRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledDeleteRequest] (val x: Self) extends AnyVal {
       
       inline def setKey(value: StringDictionary[UnmarshalledAttributeValue]): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     }

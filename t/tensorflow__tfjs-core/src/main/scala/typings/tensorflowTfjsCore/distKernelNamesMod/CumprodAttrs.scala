@@ -19,7 +19,8 @@ object CumprodAttrs {
     __obj.asInstanceOf[CumprodAttrs]
   }
   
-  extension [Self <: CumprodAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CumprodAttrs] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

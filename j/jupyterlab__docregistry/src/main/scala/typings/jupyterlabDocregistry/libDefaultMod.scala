@@ -475,7 +475,8 @@ object libDefaultMod {
         __obj.asInstanceOf[IOptions[T, U]]
       }
       
-      extension [Self <: IOptions[?, ?], T /* <: Widget */, U /* <: IModel */](x: Self & (IOptions[T, U])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions[?, ?], T /* <: Widget */, U /* <: IModel */] (val x: Self & (IOptions[T, U])) extends AnyVal {
         
         inline def setContext(value: IContext[U]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       }
@@ -499,7 +500,8 @@ object libDefaultMod {
         __obj.asInstanceOf[IOptionsOptionalContent[T, U]]
       }
       
-      extension [Self <: IOptionsOptionalContent[?, ?], T /* <: Widget */, U /* <: IModel */](x: Self & (IOptionsOptionalContent[T, U])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptionsOptionalContent[?, ?], T /* <: Widget */, U /* <: IModel */] (val x: Self & (IOptionsOptionalContent[T, U])) extends AnyVal {
         
         inline def setContext(value: IContext[U]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         

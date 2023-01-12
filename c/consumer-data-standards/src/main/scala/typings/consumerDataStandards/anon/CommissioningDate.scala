@@ -74,7 +74,8 @@ object CommissioningDate {
     __obj.asInstanceOf[CommissioningDate]
   }
   
-  extension [Self <: CommissioningDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommissioningDate] (val x: Self) extends AnyVal {
     
     inline def setCommissioningDate(value: String): Self = StObject.set(x, "commissioningDate", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object GanttCurrentTimeMarker {
     __obj.asInstanceOf[GanttCurrentTimeMarker]
   }
   
-  extension [Self <: GanttCurrentTimeMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttCurrentTimeMarker] (val x: Self) extends AnyVal {
     
     inline def setUpdateInterval(value: Double): Self = StObject.set(x, "updateInterval", value.asInstanceOf[js.Any])
     

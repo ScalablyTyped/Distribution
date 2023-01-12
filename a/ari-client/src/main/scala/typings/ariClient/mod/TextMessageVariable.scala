@@ -17,7 +17,8 @@ object TextMessageVariable {
     __obj.asInstanceOf[TextMessageVariable]
   }
   
-  extension [Self <: TextMessageVariable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextMessageVariable] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -117,7 +117,8 @@ object Shader {
     __obj.asInstanceOf[Shader]
   }
   
-  extension [Self <: Shader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shader] (val x: Self) extends AnyVal {
     
     inline def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
     

@@ -19,7 +19,8 @@ object NodeGroupMaintenanceWindow {
     __obj.asInstanceOf[NodeGroupMaintenanceWindow]
   }
   
-  extension [Self <: NodeGroupMaintenanceWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeGroupMaintenanceWindow] (val x: Self) extends AnyVal {
     
     inline def setMaintenanceDuration(value: Duration): Self = StObject.set(x, "maintenanceDuration", value.asInstanceOf[js.Any])
     

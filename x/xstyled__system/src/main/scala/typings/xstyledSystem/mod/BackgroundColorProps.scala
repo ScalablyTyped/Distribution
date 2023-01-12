@@ -18,7 +18,8 @@ object BackgroundColorProps {
     __obj.asInstanceOf[BackgroundColorProps[TLength]]
   }
   
-  extension [Self <: BackgroundColorProps[?], TLength](x: Self & BackgroundColorProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundColorProps[?], TLength] (val x: Self & BackgroundColorProps[TLength]) extends AnyVal {
     
     inline def setBackgroundColor(value: ResponsiveValue[Background[TLength]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

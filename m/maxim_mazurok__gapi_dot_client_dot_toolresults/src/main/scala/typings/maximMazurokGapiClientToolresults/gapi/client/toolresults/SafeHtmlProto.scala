@@ -19,7 +19,8 @@ object SafeHtmlProto {
     __obj.asInstanceOf[SafeHtmlProto]
   }
   
-  extension [Self <: SafeHtmlProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafeHtmlProto] (val x: Self) extends AnyVal {
     
     inline def setPrivateDoNotAccessOrElseSafeHtmlWrappedValue(value: String): Self = StObject.set(x, "privateDoNotAccessOrElseSafeHtmlWrappedValue", value.asInstanceOf[js.Any])
     

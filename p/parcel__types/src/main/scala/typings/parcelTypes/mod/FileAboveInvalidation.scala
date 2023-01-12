@@ -19,7 +19,8 @@ object FileAboveInvalidation {
     __obj.asInstanceOf[FileAboveInvalidation]
   }
   
-  extension [Self <: FileAboveInvalidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileAboveInvalidation] (val x: Self) extends AnyVal {
     
     inline def setAboveFilePath(value: FilePath): Self = StObject.set(x, "aboveFilePath", value.asInstanceOf[js.Any])
     

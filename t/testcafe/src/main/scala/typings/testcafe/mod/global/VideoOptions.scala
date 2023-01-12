@@ -33,7 +33,8 @@ object VideoOptions {
     __obj.asInstanceOf[VideoOptions]
   }
   
-  extension [Self <: VideoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoOptions] (val x: Self) extends AnyVal {
     
     inline def setFailedOnly(value: Boolean): Self = StObject.set(x, "failedOnly", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object typesDefaultBranchCannotBeDeletedExceptionMod {
       __obj.asInstanceOf[DefaultBranchCannotBeDeletedException]
     }
     
-    extension [Self <: DefaultBranchCannotBeDeletedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultBranchCannotBeDeletedException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.DefaultBranchCannotBeDeletedException

@@ -23,7 +23,8 @@ object NewDeviceMetadataType {
     __obj.asInstanceOf[NewDeviceMetadataType]
   }
   
-  extension [Self <: NewDeviceMetadataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewDeviceMetadataType] (val x: Self) extends AnyVal {
     
     inline def setDeviceGroupKey(value: StringType): Self = StObject.set(x, "DeviceGroupKey", value.asInstanceOf[js.Any])
     

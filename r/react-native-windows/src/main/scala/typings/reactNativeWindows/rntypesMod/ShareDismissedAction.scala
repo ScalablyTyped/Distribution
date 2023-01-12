@@ -18,7 +18,8 @@ object ShareDismissedAction {
     __obj.asInstanceOf[ShareDismissedAction]
   }
   
-  extension [Self <: ShareDismissedAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareDismissedAction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: dismissedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }

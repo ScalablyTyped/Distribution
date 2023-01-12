@@ -19,7 +19,8 @@ object Candlestick {
     __obj.asInstanceOf[Candlestick]
   }
   
-  extension [Self <: Candlestick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Candlestick] (val x: Self) extends AnyVal {
     
     inline def setFallingColor(value: ChartStrokeFill): Self = StObject.set(x, "fallingColor", value.asInstanceOf[js.Any])
     

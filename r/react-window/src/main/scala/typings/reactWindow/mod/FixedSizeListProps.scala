@@ -27,7 +27,8 @@ object FixedSizeListProps {
     __obj.asInstanceOf[FixedSizeListProps[T]]
   }
   
-  extension [Self <: FixedSizeListProps[?], T](x: Self & FixedSizeListProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixedSizeListProps[?], T] (val x: Self & FixedSizeListProps[T]) extends AnyVal {
     
     inline def setItemSize(value: Double): Self = StObject.set(x, "itemSize", value.asInstanceOf[js.Any])
   }

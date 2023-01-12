@@ -25,7 +25,8 @@ object CrossProfilePolicies {
     __obj.asInstanceOf[CrossProfilePolicies]
   }
   
-  extension [Self <: CrossProfilePolicies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossProfilePolicies] (val x: Self) extends AnyVal {
     
     inline def setCrossProfileCopyPaste(value: String): Self = StObject.set(x, "crossProfileCopyPaste", value.asInstanceOf[js.Any])
     

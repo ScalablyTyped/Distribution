@@ -21,7 +21,8 @@ object SceneLayerViewQueryFeaturesOptions {
     __obj.asInstanceOf[SceneLayerViewQueryFeaturesOptions]
   }
   
-  extension [Self <: SceneLayerViewQueryFeaturesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneLayerViewQueryFeaturesOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

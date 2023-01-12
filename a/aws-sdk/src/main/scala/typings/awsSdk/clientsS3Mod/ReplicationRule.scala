@@ -52,7 +52,8 @@ object ReplicationRule {
     __obj.asInstanceOf[ReplicationRule]
   }
   
-  extension [Self <: ReplicationRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationRule] (val x: Self) extends AnyVal {
     
     inline def setDeleteMarkerReplication(value: DeleteMarkerReplication): Self = StObject.set(x, "DeleteMarkerReplication", value.asInstanceOf[js.Any])
     

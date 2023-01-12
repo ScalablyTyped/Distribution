@@ -71,7 +71,8 @@ object UserLocation {
     __obj.asInstanceOf[UserLocation]
   }
   
-  extension [Self <: UserLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserLocation] (val x: Self) extends AnyVal {
     
     inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     

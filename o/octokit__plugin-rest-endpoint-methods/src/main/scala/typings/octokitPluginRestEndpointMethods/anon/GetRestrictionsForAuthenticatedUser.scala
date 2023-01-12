@@ -277,7 +277,8 @@ object GetRestrictionsForAuthenticatedUser {
     __obj.asInstanceOf[GetRestrictionsForAuthenticatedUser]
   }
   
-  extension [Self <: GetRestrictionsForAuthenticatedUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRestrictionsForAuthenticatedUser] (val x: Self) extends AnyVal {
     
     inline def setGetRestrictionsForAuthenticatedUser(value: `302`): Self = StObject.set(x, "getRestrictionsForAuthenticatedUser", value.asInstanceOf[js.Any])
     

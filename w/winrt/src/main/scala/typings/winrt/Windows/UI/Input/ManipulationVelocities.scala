@@ -20,7 +20,8 @@ object ManipulationVelocities {
     __obj.asInstanceOf[ManipulationVelocities]
   }
   
-  extension [Self <: ManipulationVelocities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManipulationVelocities] (val x: Self) extends AnyVal {
     
     inline def setAngular(value: Double): Self = StObject.set(x, "angular", value.asInstanceOf[js.Any])
     

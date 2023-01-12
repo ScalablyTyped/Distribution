@@ -68,7 +68,8 @@ object distTypesCentersMod {
       __obj.asInstanceOf[ArcCenter[Datum]]
     }
     
-    extension [Self <: ArcCenter[?], Datum /* <: DatumWithArc */](x: Self & ArcCenter[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcCenter[?], Datum /* <: DatumWithArc */] (val x: Self & ArcCenter[Datum]) extends AnyVal {
       
       inline def setData(value: Datum): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }

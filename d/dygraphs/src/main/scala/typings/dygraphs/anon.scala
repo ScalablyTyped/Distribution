@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[ErrorPlotter]
     }
     
-    extension [Self <: ErrorPlotter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorPlotter] (val x: Self) extends AnyVal {
       
       inline def setErrorPlotter(value: Any => Unit): Self = StObject.set(x, "errorPlotter", js.Any.fromFunction1(value))
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Idx]
     }
     
-    extension [Self <: Idx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Idx] (val x: Self) extends AnyVal {
       
       inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -164,7 +167,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordAxisPerAxisO]
     }
     
-    extension [Self <: PartialRecordAxisPerAxisO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordAxisPerAxisO] (val x: Self) extends AnyVal {
       
       inline def setX(value: PerAxisOptions): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -224,7 +228,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyAnnotation]
     }
     
-    extension [Self <: ReadonlyAnnotation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyAnnotation] (val x: Self) extends AnyVal {
       
       inline def setAttachAtBottom(value: Boolean): Self = StObject.set(x, "attachAtBottom", value.asInstanceOf[js.Any])
       
@@ -320,7 +325,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyArea]
     }
     
-    extension [Self <: ReadonlyArea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyArea] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -616,7 +622,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyPoint]
     }
     
-    extension [Self <: ReadonlyPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyPoint] (val x: Self) extends AnyVal {
       
       inline def setAnnotation(value: Annotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
       

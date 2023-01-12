@@ -43,7 +43,8 @@ object GetAutoScalingGroupRecommendationsRequest {
     __obj.asInstanceOf[GetAutoScalingGroupRecommendationsRequest]
   }
   
-  extension [Self <: GetAutoScalingGroupRecommendationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAutoScalingGroupRecommendationsRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     

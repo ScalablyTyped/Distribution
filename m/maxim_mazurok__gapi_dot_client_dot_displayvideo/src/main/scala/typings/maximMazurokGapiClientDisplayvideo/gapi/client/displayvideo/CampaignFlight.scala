@@ -27,7 +27,8 @@ object CampaignFlight {
     __obj.asInstanceOf[CampaignFlight]
   }
   
-  extension [Self <: CampaignFlight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CampaignFlight] (val x: Self) extends AnyVal {
     
     inline def setPlannedDates(value: DateRange): Self = StObject.set(x, "plannedDates", value.asInstanceOf[js.Any])
     

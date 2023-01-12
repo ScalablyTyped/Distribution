@@ -45,7 +45,8 @@ object resourcesToGraphMod {
       __obj.asInstanceOf[Options[F]]
     }
     
-    extension [Self <: Options[?], F /* <: Factory[BaseQuad, BaseQuad, DatasetCore[BaseQuad, BaseQuad]] */](x: Self & Options[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], F /* <: Factory[BaseQuad, BaseQuad, DatasetCore[BaseQuad, BaseQuad]] */] (val x: Self & Options[F]) extends AnyVal {
       
       inline def setFactory(value: F): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
       

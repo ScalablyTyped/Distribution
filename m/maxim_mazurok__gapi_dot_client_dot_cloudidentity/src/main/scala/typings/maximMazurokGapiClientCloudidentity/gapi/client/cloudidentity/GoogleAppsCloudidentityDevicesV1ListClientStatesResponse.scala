@@ -19,7 +19,8 @@ object GoogleAppsCloudidentityDevicesV1ListClientStatesResponse {
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1ListClientStatesResponse]
   }
   
-  extension [Self <: GoogleAppsCloudidentityDevicesV1ListClientStatesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1ListClientStatesResponse] (val x: Self) extends AnyVal {
     
     inline def setClientStates(value: js.Array[GoogleAppsCloudidentityDevicesV1ClientState]): Self = StObject.set(x, "clientStates", value.asInstanceOf[js.Any])
     

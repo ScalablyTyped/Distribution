@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[InterfaceCoordinates]
     }
     
-    extension [Self <: InterfaceCoordinates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterfaceCoordinates] (val x: Self) extends AnyVal {
       
       inline def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object mod {
       __obj.asInstanceOf[InterfaceDatum]
     }
     
-    extension [Self <: InterfaceDatum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterfaceDatum] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object mod {
       __obj.asInstanceOf[InterfaceProjection]
     }
     
-    extension [Self <: InterfaceProjection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterfaceProjection] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -258,7 +261,8 @@ object mod {
       __obj.asInstanceOf[ProjectionDefinition]
     }
     
-    extension [Self <: ProjectionDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectionDefinition] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       

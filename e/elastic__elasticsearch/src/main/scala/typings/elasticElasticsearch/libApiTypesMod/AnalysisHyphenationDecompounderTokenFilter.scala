@@ -20,7 +20,8 @@ object AnalysisHyphenationDecompounderTokenFilter {
     __obj.asInstanceOf[AnalysisHyphenationDecompounderTokenFilter]
   }
   
-  extension [Self <: AnalysisHyphenationDecompounderTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisHyphenationDecompounderTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setType(value: hyphenation_decompounder): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

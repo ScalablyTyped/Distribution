@@ -43,7 +43,8 @@ object SecurityGroupRuleDescription {
     __obj.asInstanceOf[SecurityGroupRuleDescription]
   }
   
-  extension [Self <: SecurityGroupRuleDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGroupRuleDescription] (val x: Self) extends AnyVal {
     
     inline def setFromPort(value: IPPortNumber): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
     

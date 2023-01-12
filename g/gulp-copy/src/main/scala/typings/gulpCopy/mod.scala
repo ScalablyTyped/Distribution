@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[GulpCopyOptions]
     }
     
-    extension [Self <: GulpCopyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GulpCopyOptions] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: Double): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     }

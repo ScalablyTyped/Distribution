@@ -23,7 +23,8 @@ object libEsmCommonCellTypesMod {
       __obj.asInstanceOf[ICellCoordinates]
     }
     
-    extension [Self <: ICellCoordinates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICellCoordinates] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object libEsmCommonCellTypesMod {
       __obj.asInstanceOf[IFocusedCellCoordinates]
     }
     
-    extension [Self <: IFocusedCellCoordinates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFocusedCellCoordinates] (val x: Self) extends AnyVal {
       
       inline def setFocusSelectionIndex(value: Double): Self = StObject.set(x, "focusSelectionIndex", value.asInstanceOf[js.Any])
     }

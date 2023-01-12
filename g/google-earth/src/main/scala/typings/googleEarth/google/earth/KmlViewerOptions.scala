@@ -61,7 +61,8 @@ object KmlViewerOptions {
     __obj.asInstanceOf[KmlViewerOptions]
   }
   
-  extension [Self <: KmlViewerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlViewerOptions] (val x: Self) extends AnyVal {
     
     inline def setGetOption(value: GEViewerOptionsValueEnum => GEViewerOptionsValueEnum): Self = StObject.set(x, "getOption", js.Any.fromFunction1(value))
     

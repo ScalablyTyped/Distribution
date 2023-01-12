@@ -28,7 +28,8 @@ object PutEmailMonitoringConfigurationRequest {
     __obj.asInstanceOf[PutEmailMonitoringConfigurationRequest]
   }
   
-  extension [Self <: PutEmailMonitoringConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutEmailMonitoringConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setLogGroupArn(value: LogGroupArn): Self = StObject.set(x, "LogGroupArn", value.asInstanceOf[js.Any])
     

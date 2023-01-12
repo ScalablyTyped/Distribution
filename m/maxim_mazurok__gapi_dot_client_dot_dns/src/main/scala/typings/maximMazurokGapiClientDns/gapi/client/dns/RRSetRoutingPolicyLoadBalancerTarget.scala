@@ -34,7 +34,8 @@ object RRSetRoutingPolicyLoadBalancerTarget {
     __obj.asInstanceOf[RRSetRoutingPolicyLoadBalancerTarget]
   }
   
-  extension [Self <: RRSetRoutingPolicyLoadBalancerTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RRSetRoutingPolicyLoadBalancerTarget] (val x: Self) extends AnyVal {
     
     inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     

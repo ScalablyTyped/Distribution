@@ -23,7 +23,8 @@ object TextareaOptions {
     __obj.asInstanceOf[TextareaOptions]
   }
   
-  extension [Self <: TextareaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextareaOptions] (val x: Self) extends AnyVal {
     
     inline def setInputOnFocus(value: Boolean): Self = StObject.set(x, "inputOnFocus", value.asInstanceOf[js.Any])
     

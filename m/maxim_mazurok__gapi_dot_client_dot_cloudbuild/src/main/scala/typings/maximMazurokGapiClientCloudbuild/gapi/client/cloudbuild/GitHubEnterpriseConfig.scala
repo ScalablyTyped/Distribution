@@ -45,7 +45,8 @@ object GitHubEnterpriseConfig {
     __obj.asInstanceOf[GitHubEnterpriseConfig]
   }
   
-  extension [Self <: GitHubEnterpriseConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitHubEnterpriseConfig] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

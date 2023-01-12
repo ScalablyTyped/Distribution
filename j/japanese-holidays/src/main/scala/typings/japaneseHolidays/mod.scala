@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[Holiday]
     }
     
-    extension [Self <: Holiday](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Holiday] (val x: Self) extends AnyVal {
       
       inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       

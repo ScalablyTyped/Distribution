@@ -19,7 +19,8 @@ object AccountIdentifier {
     __obj.asInstanceOf[AccountIdentifier]
   }
   
-  extension [Self <: AccountIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountIdentifier] (val x: Self) extends AnyVal {
     
     inline def setAggregatorId(value: String): Self = StObject.set(x, "aggregatorId", value.asInstanceOf[js.Any])
     

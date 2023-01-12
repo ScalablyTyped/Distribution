@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[App]
     }
     
-    extension [Self <: App](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: App] (val x: Self) extends AnyVal {
       
       inline def setAllowStop(value: Boolean): Self = StObject.set(x, "allowStop", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object mod {
       __obj.asInstanceOf[AppInfo]
     }
     
-    extension [Self <: AppInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppInfo] (val x: Self) extends AnyVal {
       
       inline def setDialVer(value: String): Self = StObject.set(x, "dialVer", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object mod {
       __obj.asInstanceOf[AppInfoOptions]
     }
     
-    extension [Self <: AppInfoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppInfoOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowStop(value: String): Self = StObject.set(x, "allowStop", value.asInstanceOf[js.Any])
     }
@@ -160,7 +163,8 @@ object mod {
       __obj.asInstanceOf[CorsOptions]
     }
     
-    extension [Self <: CorsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CorsOptions] (val x: Self) extends AnyVal {
       
       inline def setExposedHeaders(value: js.Array[String]): Self = StObject.set(x, "exposedHeaders", value.asInstanceOf[js.Any])
       
@@ -193,7 +197,8 @@ object mod {
       __obj.asInstanceOf[Delegate]
     }
     
-    extension [Self <: Delegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delegate] (val x: Self) extends AnyVal {
       
       inline def setGetApp(value: String => App): Self = StObject.set(x, "getApp", js.Any.fromFunction1(value))
       
@@ -237,7 +242,8 @@ object mod {
       __obj.asInstanceOf[DeviceInfo]
     }
     
-    extension [Self <: DeviceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
       
       inline def setApplicationUrl(value: String): Self = StObject.set(x, "applicationUrl", value.asInstanceOf[js.Any])
       
@@ -302,7 +308,8 @@ object mod {
       __obj.asInstanceOf[ServerOptions]
     }
     
-    extension [Self <: ServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
       
       inline def setCorsAllowOrigins(value: String | Boolean): Self = StObject.set(x, "corsAllowOrigins", value.asInstanceOf[js.Any])
       

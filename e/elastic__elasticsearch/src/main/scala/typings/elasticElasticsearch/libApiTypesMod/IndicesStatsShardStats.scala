@@ -63,7 +63,8 @@ object IndicesStatsShardStats {
     __obj.asInstanceOf[IndicesStatsShardStats]
   }
   
-  extension [Self <: IndicesStatsShardStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesStatsShardStats] (val x: Self) extends AnyVal {
     
     inline def setBulk(value: BulkStats): Self = StObject.set(x, "bulk", value.asInstanceOf[js.Any])
     

@@ -251,7 +251,8 @@ object typingsInterpreterPluginFunctionPluginMod {
       __obj.asInstanceOf[FunctionArgument]
     }
     
-    extension [Self <: FunctionArgument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionArgument] (val x: Self) extends AnyVal {
       
       inline def setArgumentType(value: ArgumentTypes): Self = StObject.set(x, "argumentType", value.asInstanceOf[js.Any])
       
@@ -370,7 +371,8 @@ object typingsInterpreterPluginFunctionPluginMod {
       __obj.asInstanceOf[FunctionMetadata]
     }
     
-    extension [Self <: FunctionMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionMetadata] (val x: Self) extends AnyVal {
       
       inline def setArrayFunction(value: Boolean): Self = StObject.set(x, "arrayFunction", value.asInstanceOf[js.Any])
       

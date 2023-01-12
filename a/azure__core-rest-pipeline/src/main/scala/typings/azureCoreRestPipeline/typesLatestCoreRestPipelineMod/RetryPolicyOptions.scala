@@ -24,7 +24,8 @@ object RetryPolicyOptions {
     __obj.asInstanceOf[RetryPolicyOptions]
   }
   
-  extension [Self <: RetryPolicyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryPolicyOptions] (val x: Self) extends AnyVal {
     
     inline def setLogger(value: AzureLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object TransformBlock {
     __obj.asInstanceOf[TransformBlock[T]]
   }
   
-  extension [Self <: TransformBlock[?], T /* <: Record[String, Any] */](x: Self & TransformBlock[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformBlock[?], T /* <: Record[String, Any] */] (val x: Self & TransformBlock[T]) extends AnyVal {
     
     inline def setBlocks(value: js.Array[String]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     

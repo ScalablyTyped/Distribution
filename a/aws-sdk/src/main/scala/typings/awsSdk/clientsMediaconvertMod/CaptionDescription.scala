@@ -38,7 +38,8 @@ object CaptionDescription {
     __obj.asInstanceOf[CaptionDescription]
   }
   
-  extension [Self <: CaptionDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionDescription] (val x: Self) extends AnyVal {
     
     inline def setCaptionSelectorName(value: stringMin1): Self = StObject.set(x, "CaptionSelectorName", value.asInstanceOf[js.Any])
     

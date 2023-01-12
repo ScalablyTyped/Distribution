@@ -73,7 +73,8 @@ object RouteHasOutOfScopeEndpointViolation {
     __obj.asInstanceOf[RouteHasOutOfScopeEndpointViolation]
   }
   
-  extension [Self <: RouteHasOutOfScopeEndpointViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteHasOutOfScopeEndpointViolation] (val x: Self) extends AnyVal {
     
     inline def setCurrentFirewallSubnetRouteTable(value: ResourceId): Self = StObject.set(x, "CurrentFirewallSubnetRouteTable", value.asInstanceOf[js.Any])
     

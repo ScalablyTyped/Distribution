@@ -40,7 +40,8 @@ object ASPxClientReportDocumentMap {
     __obj.asInstanceOf[ASPxClientReportDocumentMap]
   }
   
-  extension [Self <: ASPxClientReportDocumentMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientReportDocumentMap] (val x: Self) extends AnyVal {
     
     inline def setContentChanged(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientReportDocumentMap]]): Self = StObject.set(x, "ContentChanged", value.asInstanceOf[js.Any])
   }

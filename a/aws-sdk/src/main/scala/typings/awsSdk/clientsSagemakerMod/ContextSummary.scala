@@ -43,7 +43,8 @@ object ContextSummary {
     __obj.asInstanceOf[ContextSummary]
   }
   
-  extension [Self <: ContextSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextSummary] (val x: Self) extends AnyVal {
     
     inline def setContextArn(value: ContextArn): Self = StObject.set(x, "ContextArn", value.asInstanceOf[js.Any])
     

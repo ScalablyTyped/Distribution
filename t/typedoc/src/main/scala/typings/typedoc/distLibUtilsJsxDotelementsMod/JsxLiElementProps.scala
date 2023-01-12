@@ -17,7 +17,8 @@ object JsxLiElementProps {
     __obj.asInstanceOf[JsxLiElementProps]
   }
   
-  extension [Self <: JsxLiElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxLiElementProps] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

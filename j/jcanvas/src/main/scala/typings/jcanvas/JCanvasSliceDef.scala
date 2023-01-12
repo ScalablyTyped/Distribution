@@ -45,7 +45,8 @@ object JCanvasSliceDef {
     __obj.asInstanceOf[JCanvasSliceDef]
   }
   
-  extension [Self <: JCanvasSliceDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JCanvasSliceDef] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

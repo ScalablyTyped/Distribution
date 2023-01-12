@@ -21,7 +21,8 @@ object AzureSubscription {
     __obj.asInstanceOf[AzureSubscription]
   }
   
-  extension [Self <: AzureSubscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AzureSubscription] (val x: Self) extends AnyVal {
     
     inline def setAzureSubscription(value: scala.Double): Self = StObject.set(x, "azureSubscription", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetInstanceAccessOutput {
     __obj.asInstanceOf[GetInstanceAccessOutput]
   }
   
-  extension [Self <: GetInstanceAccessOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInstanceAccessOutput] (val x: Self) extends AnyVal {
     
     inline def setInstanceAccess(value: InstanceAccess): Self = StObject.set(x, "InstanceAccess", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object QueryDslFieldValueFactorScoreFunction {
     __obj.asInstanceOf[QueryDslFieldValueFactorScoreFunction]
   }
   
-  extension [Self <: QueryDslFieldValueFactorScoreFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslFieldValueFactorScoreFunction] (val x: Self) extends AnyVal {
     
     inline def setFactor(value: double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     

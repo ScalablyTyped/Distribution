@@ -540,7 +540,8 @@ object CreateBlob {
     __obj.asInstanceOf[CreateBlob]
   }
   
-  extension [Self <: CreateBlob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBlob] (val x: Self) extends AnyVal {
     
     inline def setCreateBlob(value: `287`): Self = StObject.set(x, "createBlob", value.asInstanceOf[js.Any])
     

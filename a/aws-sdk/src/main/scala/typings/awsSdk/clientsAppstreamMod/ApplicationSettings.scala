@@ -23,7 +23,8 @@ object ApplicationSettings {
     __obj.asInstanceOf[ApplicationSettings]
   }
   
-  extension [Self <: ApplicationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationSettings] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

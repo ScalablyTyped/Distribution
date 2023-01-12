@@ -19,7 +19,8 @@ object GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable {
     __obj.asInstanceOf[GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable]
   }
   
-  extension [Self <: GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

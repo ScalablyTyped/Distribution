@@ -19,7 +19,8 @@ object ServerConfiguration {
     __obj.asInstanceOf[ServerConfiguration]
   }
   
-  extension [Self <: ServerConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerConfiguration] (val x: Self) extends AnyVal {
     
     inline def setGet(value: String => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

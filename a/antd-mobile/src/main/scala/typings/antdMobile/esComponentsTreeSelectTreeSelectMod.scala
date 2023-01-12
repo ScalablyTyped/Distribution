@@ -320,7 +320,8 @@ object esComponentsTreeSelectTreeSelectMod {
       __obj.asInstanceOf[TreeSelectProps]
     }
     
-    extension [Self <: TreeSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSelectProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

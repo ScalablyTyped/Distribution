@@ -29,7 +29,8 @@ object ICriteriaParts {
     __obj.asInstanceOf[ICriteriaParts]
   }
   
-  extension [Self <: ICriteriaParts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICriteriaParts] (val x: Self) extends AnyVal {
     
     inline def setNoDatabaseProperties(value: js.Array[String]): Self = StObject.set(x, "noDatabaseProperties", value.asInstanceOf[js.Any])
     

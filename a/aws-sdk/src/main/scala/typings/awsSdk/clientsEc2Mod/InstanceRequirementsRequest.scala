@@ -128,7 +128,8 @@ object InstanceRequirementsRequest {
     __obj.asInstanceOf[InstanceRequirementsRequest]
   }
   
-  extension [Self <: InstanceRequirementsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceRequirementsRequest] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorCount(value: AcceleratorCountRequest): Self = StObject.set(x, "AcceleratorCount", value.asInstanceOf[js.Any])
     

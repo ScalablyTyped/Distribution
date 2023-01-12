@@ -29,7 +29,8 @@ object ButtonMenuViewModelProperties {
     __obj.asInstanceOf[ButtonMenuViewModelProperties]
   }
   
-  extension [Self <: ButtonMenuViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonMenuViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[ButtonMenuItemProperties]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

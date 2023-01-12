@@ -531,7 +531,8 @@ object libComponentsDropdownDropdownMod {
       __obj.asInstanceOf[DropdownProps[ItemType]]
     }
     
-    extension [Self <: DropdownProps[?], ItemType](x: Self & DropdownProps[ItemType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownProps[?], ItemType] (val x: Self & DropdownProps[ItemType]) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1346,7 +1347,8 @@ object libComponentsDropdownDropdownMod {
       __obj.asInstanceOf[OnChangeData[ItemType]]
     }
     
-    extension [Self <: OnChangeData[?], ItemType](x: Self & OnChangeData[ItemType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnChangeData[?], ItemType] (val x: Self & OnChangeData[ItemType]) extends AnyVal {
       
       inline def setSelectedItem(value: ItemType): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
       

@@ -118,7 +118,8 @@ object IPanel {
     __obj.asInstanceOf[IPanel]
   }
   
-  extension [Self <: IPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPanel] (val x: Self) extends AnyVal {
     
     inline def setCheckChange(value: () => Unit): Self = StObject.set(x, "checkChange", js.Any.fromFunction0(value))
     

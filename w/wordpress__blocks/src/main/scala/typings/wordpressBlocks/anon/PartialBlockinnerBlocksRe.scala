@@ -81,7 +81,8 @@ object PartialBlockinnerBlocksRe {
     __obj.asInstanceOf[PartialBlockinnerBlocksRe]
   }
   
-  extension [Self <: PartialBlockinnerBlocksRe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBlockinnerBlocksRe] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

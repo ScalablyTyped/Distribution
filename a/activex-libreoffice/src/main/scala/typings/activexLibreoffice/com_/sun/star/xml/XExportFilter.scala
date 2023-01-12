@@ -39,7 +39,8 @@ object XExportFilter {
     __obj.asInstanceOf[XExportFilter]
   }
   
-  extension [Self <: XExportFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExportFilter] (val x: Self) extends AnyVal {
     
     inline def setExporter(value: (SeqEquiv[PropertyValue], SeqEquiv[String]) => Boolean): Self = StObject.set(x, "exporter", js.Any.fromFunction2(value))
   }

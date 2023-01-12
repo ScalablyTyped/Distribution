@@ -18,7 +18,8 @@ object SavingsAMLAnswersSuccessResponse {
     __obj.asInstanceOf[SavingsAMLAnswersSuccessResponse]
   }
   
-  extension [Self <: SavingsAMLAnswersSuccessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsAMLAnswersSuccessResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Success_): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

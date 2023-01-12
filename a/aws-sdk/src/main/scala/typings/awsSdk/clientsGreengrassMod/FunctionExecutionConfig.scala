@@ -17,7 +17,8 @@ object FunctionExecutionConfig {
     __obj.asInstanceOf[FunctionExecutionConfig]
   }
   
-  extension [Self <: FunctionExecutionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionExecutionConfig] (val x: Self) extends AnyVal {
     
     inline def setIsolationMode(value: FunctionIsolationMode): Self = StObject.set(x, "IsolationMode", value.asInstanceOf[js.Any])
     

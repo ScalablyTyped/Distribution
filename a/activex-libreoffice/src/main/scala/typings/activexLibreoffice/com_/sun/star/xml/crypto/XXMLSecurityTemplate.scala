@@ -56,7 +56,8 @@ object XXMLSecurityTemplate {
     __obj.asInstanceOf[XXMLSecurityTemplate]
   }
   
-  extension [Self <: XXMLSecurityTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XXMLSecurityTemplate] (val x: Self) extends AnyVal {
     
     inline def setGetStatus(value: () => SecurityOperationStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
     

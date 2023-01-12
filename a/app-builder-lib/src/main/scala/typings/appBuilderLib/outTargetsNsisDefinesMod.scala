@@ -163,7 +163,8 @@ object outTargetsNsisDefinesMod {
       __obj.asInstanceOf[Defines]
     }
     
-    extension [Self <: Defines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Defines] (val x: Self) extends AnyVal {
       
       inline def setAPP_32(value: String): Self = StObject.set(x, "APP_32", value.asInstanceOf[js.Any])
       

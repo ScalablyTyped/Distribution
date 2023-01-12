@@ -114,7 +114,8 @@ object distSrcKadDhtMod {
       __obj.asInstanceOf[SingleKadDHTInit]
     }
     
-    extension [Self <: SingleKadDHTInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleKadDHTInit] (val x: Self) extends AnyVal {
       
       inline def setLan(value: Boolean): Self = StObject.set(x, "lan", value.asInstanceOf[js.Any])
       

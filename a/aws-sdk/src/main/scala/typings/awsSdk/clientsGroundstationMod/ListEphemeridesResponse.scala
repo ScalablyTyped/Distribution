@@ -23,7 +23,8 @@ object ListEphemeridesResponse {
     __obj.asInstanceOf[ListEphemeridesResponse]
   }
   
-  extension [Self <: ListEphemeridesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEphemeridesResponse] (val x: Self) extends AnyVal {
     
     inline def setEphemerides(value: EphemeridesList): Self = StObject.set(x, "ephemerides", value.asInstanceOf[js.Any])
     

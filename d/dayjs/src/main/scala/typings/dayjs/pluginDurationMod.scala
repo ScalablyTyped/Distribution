@@ -220,7 +220,8 @@ object pluginDurationMod extends Shortcut {
       __obj.asInstanceOf[DurationUnitsObjectType]
     }
     
-    extension [Self <: DurationUnitsObjectType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DurationUnitsObjectType] (val x: Self) extends AnyVal {
       
       inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
@@ -277,7 +278,8 @@ object pluginDurationMod extends Shortcut {
         __obj.asInstanceOf[Dayjs]
       }
       
-      extension [Self <: Dayjs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Dayjs] (val x: Self) extends AnyVal {
         
         inline def setAdd(value: Duration => Dayjs): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
         

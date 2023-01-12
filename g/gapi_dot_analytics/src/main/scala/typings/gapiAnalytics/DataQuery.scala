@@ -41,7 +41,8 @@ object DataQuery {
     __obj.asInstanceOf[DataQuery]
   }
   
-  extension [Self <: DataQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataQuery] (val x: Self) extends AnyVal {
     
     inline def set30daysAgo(value: String): Self = StObject.set(x, "30daysAgo", value.asInstanceOf[js.Any])
     

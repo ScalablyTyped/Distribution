@@ -28,7 +28,8 @@ object CropProperties {
     __obj.asInstanceOf[CropProperties]
   }
   
-  extension [Self <: CropProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CropProperties] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

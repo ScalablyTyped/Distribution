@@ -18,7 +18,8 @@ object AdvancedRecognitionSetting {
     __obj.asInstanceOf[AdvancedRecognitionSetting]
   }
   
-  extension [Self <: AdvancedRecognitionSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedRecognitionSetting] (val x: Self) extends AnyVal {
     
     inline def setAudioRecognitionStrategy(value: AudioRecognitionStrategy): Self = StObject.set(x, "audioRecognitionStrategy", value.asInstanceOf[js.Any])
     

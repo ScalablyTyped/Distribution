@@ -36,7 +36,8 @@ object OutlookItem {
     __obj.asInstanceOf[OutlookItem]
   }
   
-  extension [Self <: OutlookItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlookItem] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

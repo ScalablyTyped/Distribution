@@ -85,7 +85,8 @@ object SVGUseElement {
     __obj.asInstanceOf[SVGUseElement]
   }
   
-  extension [Self <: SVGUseElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGUseElement] (val x: Self) extends AnyVal {
     
     inline def setAnimatedInstanceRoot(value: ISVGElementInstance): Self = StObject.set(x, "animatedInstanceRoot", value.asInstanceOf[js.Any])
     

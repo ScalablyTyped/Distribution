@@ -23,7 +23,8 @@ object ProcessorFeature {
     __obj.asInstanceOf[ProcessorFeature]
   }
   
-  extension [Self <: ProcessorFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessorFeature] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

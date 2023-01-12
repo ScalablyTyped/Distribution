@@ -72,7 +72,8 @@ object PlotMapClusterOptions {
     __obj.asInstanceOf[PlotMapClusterOptions]
   }
   
-  extension [Self <: PlotMapClusterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotMapClusterOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
     

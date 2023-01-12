@@ -31,7 +31,8 @@ object PreprocessingConfig {
     __obj.asInstanceOf[PreprocessingConfig]
   }
   
-  extension [Self <: PreprocessingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreprocessingConfig] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: Audio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

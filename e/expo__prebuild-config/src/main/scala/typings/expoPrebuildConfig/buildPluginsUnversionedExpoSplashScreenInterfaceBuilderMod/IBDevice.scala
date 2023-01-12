@@ -21,7 +21,8 @@ object IBDevice {
     __obj.asInstanceOf[IBDevice]
   }
   
-  extension [Self <: IBDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBDevice] (val x: Self) extends AnyVal {
     
     inline def set$(value: Appearance): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }

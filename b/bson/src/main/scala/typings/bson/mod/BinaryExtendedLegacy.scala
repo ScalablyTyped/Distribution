@@ -19,7 +19,8 @@ object BinaryExtendedLegacy {
     __obj.asInstanceOf[BinaryExtendedLegacy]
   }
   
-  extension [Self <: BinaryExtendedLegacy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinaryExtendedLegacy] (val x: Self) extends AnyVal {
     
     inline def set$binary(value: String): Self = StObject.set(x, "$binary", value.asInstanceOf[js.Any])
     

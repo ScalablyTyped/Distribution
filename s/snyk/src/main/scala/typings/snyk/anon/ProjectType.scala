@@ -18,7 +18,8 @@ object ProjectType {
     __obj.asInstanceOf[ProjectType]
   }
   
-  extension [Self <: ProjectType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectType] (val x: Self) extends AnyVal {
     
     inline def setCloudConfigResults(value: js.Array[AnnotatedIacIssue]): Self = StObject.set(x, "cloudConfigResults", value.asInstanceOf[js.Any])
     

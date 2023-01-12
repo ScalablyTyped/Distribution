@@ -53,7 +53,8 @@ object ReferenceResolver {
     __obj.asInstanceOf[ReferenceResolver]
   }
   
-  extension [Self <: ReferenceResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceResolver] (val x: Self) extends AnyVal {
     
     inline def setGetNormalizedFilePath(value: (Any, Any) => Any): Self = StObject.set(x, "getNormalizedFilePath", js.Any.fromFunction2(value))
     

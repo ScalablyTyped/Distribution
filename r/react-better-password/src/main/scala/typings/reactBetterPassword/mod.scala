@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[PasswordProps]
     }
     
-    extension [Self <: PasswordProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasswordProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

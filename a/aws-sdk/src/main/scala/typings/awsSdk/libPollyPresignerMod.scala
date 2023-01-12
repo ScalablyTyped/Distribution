@@ -58,7 +58,8 @@ object libPollyPresignerMod {
         __obj.asInstanceOf[PresignerOptions]
       }
       
-      extension [Self <: PresignerOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PresignerOptions] (val x: Self) extends AnyVal {
         
         inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         

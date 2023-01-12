@@ -22,7 +22,8 @@ object Standards {
     __obj.asInstanceOf[Standards]
   }
   
-  extension [Self <: Standards](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Standards] (val x: Self) extends AnyVal {
     
     inline def setAriaAttrs(value: StringDictionary[AriaAttrs]): Self = StObject.set(x, "ariaAttrs", value.asInstanceOf[js.Any])
     

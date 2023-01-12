@@ -153,7 +153,8 @@ object mod {
       __obj.asInstanceOf[IP2Region]
     }
     
-    extension [Self <: IP2Region](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IP2Region] (val x: Self) extends AnyVal {
       
       inline def setBinarySearch(value: (String, SearchCallback) => Unit): Self = StObject.set(x, "binarySearch", js.Any.fromFunction2(value))
       

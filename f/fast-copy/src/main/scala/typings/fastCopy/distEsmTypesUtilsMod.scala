@@ -39,7 +39,8 @@ object distEsmTypesUtilsMod {
       __obj.asInstanceOf[Cache]
     }
     
-    extension [Self <: Cache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
       
       inline def setGet(value: Any => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       

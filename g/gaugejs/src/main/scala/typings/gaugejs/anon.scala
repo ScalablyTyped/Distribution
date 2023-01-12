@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[DivColor]
     }
     
-    extension [Self <: DivColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DivColor] (val x: Self) extends AnyVal {
       
       inline def setDivColor(value: String): Self = StObject.set(x, "divColor", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object anon {
       __obj.asInstanceOf[FontSize]
     }
     
-    extension [Self <: FontSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontSize] (val x: Self) extends AnyVal {
       
       inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     }
@@ -134,7 +137,8 @@ object anon {
       __obj.asInstanceOf[PointerOptionsiconPathstr]
     }
     
-    extension [Self <: PointerOptionsiconPathstr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointerOptionsiconPathstr] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -174,7 +178,8 @@ object anon {
       __obj.asInstanceOf[StaticZoneOptionsheightnu]
     }
     
-    extension [Self <: StaticZoneOptionsheightnu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticZoneOptionsheightnu] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

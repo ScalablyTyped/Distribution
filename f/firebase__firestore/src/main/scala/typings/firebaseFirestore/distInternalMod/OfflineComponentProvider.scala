@@ -40,7 +40,8 @@ object OfflineComponentProvider {
     __obj.asInstanceOf[OfflineComponentProvider]
   }
   
-  extension [Self <: OfflineComponentProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfflineComponentProvider] (val x: Self) extends AnyVal {
     
     inline def setGcScheduler(value: Scheduler): Self = StObject.set(x, "gcScheduler", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object QueueRemoveItemsRequest {
     __obj.asInstanceOf[QueueRemoveItemsRequest]
   }
   
-  extension [Self <: QueueRemoveItemsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueueRemoveItemsRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     

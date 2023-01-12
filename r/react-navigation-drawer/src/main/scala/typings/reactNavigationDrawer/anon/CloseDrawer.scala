@@ -19,7 +19,8 @@ object CloseDrawer {
     __obj.asInstanceOf[CloseDrawer]
   }
   
-  extension [Self <: CloseDrawer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseDrawer] (val x: Self) extends AnyVal {
     
     inline def setCloseDrawer(value: () => Any): Self = StObject.set(x, "closeDrawer", js.Any.fromFunction0(value))
     

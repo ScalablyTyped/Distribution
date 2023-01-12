@@ -23,7 +23,8 @@ object ScaleX {
     __obj.asInstanceOf[ScaleX]
   }
   
-  extension [Self <: ScaleX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleX] (val x: Self) extends AnyVal {
     
     inline def setCanvas(value: Any): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     

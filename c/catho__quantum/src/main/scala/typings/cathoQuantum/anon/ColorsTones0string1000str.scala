@@ -43,7 +43,8 @@ object ColorsTones0string1000str {
     __obj.asInstanceOf[ColorsTones0string1000str]
   }
   
-  extension [Self <: ColorsTones0string1000str](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorsTones0string1000str] (val x: Self) extends AnyVal {
     
     inline def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

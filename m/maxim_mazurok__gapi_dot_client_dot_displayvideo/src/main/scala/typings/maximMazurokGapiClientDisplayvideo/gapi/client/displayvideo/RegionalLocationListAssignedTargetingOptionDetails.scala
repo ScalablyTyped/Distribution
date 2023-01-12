@@ -19,7 +19,8 @@ object RegionalLocationListAssignedTargetingOptionDetails {
     __obj.asInstanceOf[RegionalLocationListAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: RegionalLocationListAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionalLocationListAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     

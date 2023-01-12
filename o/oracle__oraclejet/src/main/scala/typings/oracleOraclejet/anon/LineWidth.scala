@@ -21,7 +21,8 @@ object LineWidth {
     __obj.asInstanceOf[LineWidth]
   }
   
-  extension [Self <: LineWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineWidth] (val x: Self) extends AnyVal {
     
     inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     

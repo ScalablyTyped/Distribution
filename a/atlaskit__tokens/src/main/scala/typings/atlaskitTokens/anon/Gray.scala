@@ -43,7 +43,8 @@ object Gray {
     __obj.asInstanceOf[Gray]
   }
   
-  extension [Self <: Gray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gray] (val x: Self) extends AnyVal {
     
     inline def setBlue(value: PaintToken[BaseToken]): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     

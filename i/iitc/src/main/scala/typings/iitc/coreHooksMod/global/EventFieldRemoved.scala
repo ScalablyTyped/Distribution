@@ -19,7 +19,8 @@ object EventFieldRemoved {
     __obj.asInstanceOf[EventFieldRemoved]
   }
   
-  extension [Self <: EventFieldRemoved](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventFieldRemoved] (val x: Self) extends AnyVal {
     
     inline def setData(value: FieldData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -74,7 +74,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Extension]
     }
     
-    extension [Self <: Extension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       

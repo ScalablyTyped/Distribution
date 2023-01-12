@@ -24,7 +24,8 @@ object X500NameParamcertissuerst {
     __obj.asInstanceOf[X500NameParamcertissuerst]
   }
   
-  extension [Self <: X500NameParamcertissuerst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X500NameParamcertissuerst] (val x: Self) extends AnyVal {
     
     inline def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object FlamegraphChartData {
     __obj.asInstanceOf[FlamegraphChartData]
   }
   
-  extension [Self <: FlamegraphChartData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlamegraphChartData] (val x: Self) extends AnyVal {
     
     inline def setBaseDuration(value: Double): Self = StObject.set(x, "baseDuration", value.asInstanceOf[js.Any])
     

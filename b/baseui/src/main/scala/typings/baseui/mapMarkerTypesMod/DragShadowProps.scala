@@ -21,7 +21,8 @@ object DragShadowProps {
     __obj.asInstanceOf[DragShadowProps]
   }
   
-  extension [Self <: DragShadowProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragShadowProps] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

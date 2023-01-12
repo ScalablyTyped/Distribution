@@ -20,7 +20,8 @@ object CreateTenancyUnitRequest {
     __obj.asInstanceOf[CreateTenancyUnitRequest]
   }
   
-  extension [Self <: CreateTenancyUnitRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTenancyUnitRequest] (val x: Self) extends AnyVal {
     
     inline def setTenancyUnitId(value: String): Self = StObject.set(x, "tenancyUnitId", value.asInstanceOf[js.Any])
     

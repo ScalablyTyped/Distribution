@@ -68,7 +68,8 @@ object XIeeeDoubleBitmap {
     __obj.asInstanceOf[XIeeeDoubleBitmap]
   }
   
-  extension [Self <: XIeeeDoubleBitmap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIeeeDoubleBitmap] (val x: Self) extends AnyVal {
     
     inline def setSetData(value: (SeqEquiv[Double], FloatingPointBitmapLayout, IntegerRectangle2D) => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction3(value))
     

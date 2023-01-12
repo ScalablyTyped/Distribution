@@ -24,7 +24,8 @@ object AccelerometerParams {
     __obj.asInstanceOf[AccelerometerParams]
   }
   
-  extension [Self <: AccelerometerParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccelerometerParams] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

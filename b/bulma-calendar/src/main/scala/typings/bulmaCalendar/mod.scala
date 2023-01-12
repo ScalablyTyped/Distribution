@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[Event[T]]
     }
     
-    extension [Self <: Event[?], T /* <: EventType */](x: Self & Event[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event[?], T /* <: EventType */] (val x: Self & Event[T]) extends AnyVal {
       
       inline def setData(value: typings.bulmaCalendar.mod.bulmaCalendar): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -366,7 +367,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowSameDayRange(value: Boolean): Self = StObject.set(x, "allowSameDayRange", value.asInstanceOf[js.Any])
       

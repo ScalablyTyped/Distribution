@@ -18,7 +18,8 @@ object AssessmentTargetFilter {
     __obj.asInstanceOf[AssessmentTargetFilter]
   }
   
-  extension [Self <: AssessmentTargetFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssessmentTargetFilter] (val x: Self) extends AnyVal {
     
     inline def setAssessmentTargetNamePattern(value: NamePattern): Self = StObject.set(x, "assessmentTargetNamePattern", value.asInstanceOf[js.Any])
     

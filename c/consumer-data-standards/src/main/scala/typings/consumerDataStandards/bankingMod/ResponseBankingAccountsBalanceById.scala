@@ -24,7 +24,8 @@ object ResponseBankingAccountsBalanceById {
     __obj.asInstanceOf[ResponseBankingAccountsBalanceById]
   }
   
-  extension [Self <: ResponseBankingAccountsBalanceById](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseBankingAccountsBalanceById] (val x: Self) extends AnyVal {
     
     inline def setData(value: AmortisedLimit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

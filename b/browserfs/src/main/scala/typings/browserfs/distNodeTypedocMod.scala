@@ -87,7 +87,8 @@ object distNodeTypedocMod {
       __obj.asInstanceOf[BrowserFS]
     }
     
-    extension [Self <: BrowserFS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserFS] (val x: Self) extends AnyVal {
       
       inline def setBFSRequire(value: FnCall): Self = StObject.set(x, "BFSRequire", value.asInstanceOf[js.Any])
       

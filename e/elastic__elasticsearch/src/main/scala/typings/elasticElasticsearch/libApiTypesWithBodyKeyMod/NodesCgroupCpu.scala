@@ -21,7 +21,8 @@ object NodesCgroupCpu {
     __obj.asInstanceOf[NodesCgroupCpu]
   }
   
-  extension [Self <: NodesCgroupCpu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesCgroupCpu] (val x: Self) extends AnyVal {
     
     inline def setCfs_period_micros(value: integer): Self = StObject.set(x, "cfs_period_micros", value.asInstanceOf[js.Any])
     

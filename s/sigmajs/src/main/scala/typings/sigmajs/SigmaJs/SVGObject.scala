@@ -18,7 +18,8 @@ object SVGObject {
     __obj.asInstanceOf[SVGObject[T]]
   }
   
-  extension [Self <: SVGObject[?], T](x: Self & SVGObject[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGObject[?], T] (val x: Self & SVGObject[T]) extends AnyVal {
     
     inline def setCreate(value: (T, /* repeated */ Any) => Element): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     

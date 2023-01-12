@@ -34,7 +34,8 @@ object PropertyCategoryDescriptor {
     __obj.asInstanceOf[PropertyCategoryDescriptor]
   }
   
-  extension [Self <: PropertyCategoryDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyCategoryDescriptor] (val x: Self) extends AnyVal {
     
     inline def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object GoogleCloudDialogflowCxV3CompareVersionsResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3CompareVersionsResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3CompareVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3CompareVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setBaseVersionContentJson(value: String): Self = StObject.set(x, "baseVersionContentJson", value.asInstanceOf[js.Any])
     

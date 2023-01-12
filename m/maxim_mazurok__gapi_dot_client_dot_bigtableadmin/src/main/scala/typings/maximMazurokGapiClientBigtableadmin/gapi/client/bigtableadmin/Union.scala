@@ -16,7 +16,8 @@ object Union {
     __obj.asInstanceOf[Union]
   }
   
-  extension [Self <: Union](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Union] (val x: Self) extends AnyVal {
     
     inline def setRules(value: js.Array[GcRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     

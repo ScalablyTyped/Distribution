@@ -16,7 +16,8 @@ object PublicKeyEntry {
     __obj.asInstanceOf[PublicKeyEntry]
   }
   
-  extension [Self <: PublicKeyEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicKeyEntry] (val x: Self) extends AnyVal {
     
     inline def setPubKey(value: ParsedKey | Comment): Self = StObject.set(x, "pubKey", value.asInstanceOf[js.Any])
   }

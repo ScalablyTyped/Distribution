@@ -18,7 +18,8 @@ object PickTabsselect {
     __obj.asInstanceOf[PickTabsselect]
   }
   
-  extension [Self <: PickTabsselect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickTabsselect] (val x: Self) extends AnyVal {
     
     inline def setSelect(value: /* tabId */ String => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
   }

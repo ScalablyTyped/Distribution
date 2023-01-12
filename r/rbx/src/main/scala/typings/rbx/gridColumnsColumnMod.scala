@@ -200,7 +200,8 @@ object gridColumnsColumnMod {
       __obj.asInstanceOf[ColumnBreakpointOptions]
     }
     
-    extension [Self <: ColumnBreakpointOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnBreakpointOptions] (val x: Self) extends AnyVal {
       
       inline def setNarrow(value: Boolean): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
       
@@ -251,7 +252,8 @@ object gridColumnsColumnMod {
       __obj.asInstanceOf[ColumnModifierProps]
     }
     
-    extension [Self <: ColumnModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnModifierProps] (val x: Self) extends AnyVal {
       
       inline def setDesktop(value: ColumnBreakpointOptions): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
       
@@ -400,7 +402,8 @@ object gridColumnsColumnMod {
       __obj.asInstanceOf[ColumnProps]
     }
     
-    extension [Self <: ColumnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -594,7 +597,8 @@ object gridColumnsColumnMod {
       __obj.asInstanceOf[ColumnVariables]
     }
     
-    extension [Self <: ColumnVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(
         value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full
@@ -615,7 +619,8 @@ object gridColumnsColumnMod {
       __obj.asInstanceOf[ColumnVariablesDefaults]
     }
     
-    extension [Self <: ColumnVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(
         value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full

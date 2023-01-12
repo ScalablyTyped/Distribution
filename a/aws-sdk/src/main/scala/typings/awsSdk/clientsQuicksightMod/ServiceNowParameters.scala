@@ -18,7 +18,8 @@ object ServiceNowParameters {
     __obj.asInstanceOf[ServiceNowParameters]
   }
   
-  extension [Self <: ServiceNowParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceNowParameters] (val x: Self) extends AnyVal {
     
     inline def setSiteBaseUrl(value: SiteBaseUrl): Self = StObject.set(x, "SiteBaseUrl", value.asInstanceOf[js.Any])
   }

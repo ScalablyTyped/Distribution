@@ -151,7 +151,8 @@ object lambdaConfigurationMod {
       __obj.asInstanceOf[LambdaConfiguration]
     }
     
-    extension [Self <: LambdaConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LambdaConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
@@ -300,7 +301,8 @@ object lambdaConfigurationMod {
       __obj.asInstanceOf[LambdaResolvableConfiguration]
     }
     
-    extension [Self <: LambdaResolvableConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LambdaResolvableConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBodyLengthChecker(value: Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
@@ -432,7 +434,8 @@ object lambdaConfigurationMod {
       __obj.asInstanceOf[LambdaResolvedConfiguration]
     }
     
-    extension [Self <: LambdaResolvedConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LambdaResolvedConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       

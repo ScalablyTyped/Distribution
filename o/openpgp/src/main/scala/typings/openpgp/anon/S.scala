@@ -20,7 +20,8 @@ object S {
     __obj.asInstanceOf[S]
   }
   
-  extension [Self <: S](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S] (val x: Self) extends AnyVal {
     
     inline def setS(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any

@@ -25,7 +25,8 @@ object SingleCollisionBox {
     __obj.asInstanceOf[SingleCollisionBox]
   }
   
-  extension [Self <: SingleCollisionBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleCollisionBox] (val x: Self) extends AnyVal {
     
     inline def setAnchorPointX(value: Double): Self = StObject.set(x, "anchorPointX", value.asInstanceOf[js.Any])
     

@@ -464,7 +464,8 @@ object TNode {
     __obj.asInstanceOf[TNode]
   }
   
-  extension [Self <: TNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TNode] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: TAttributes): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object distSrcWidgetsBaseWidgetMod {
       __obj.asInstanceOf[BaseWidgetProps]
     }
     
-    extension [Self <: BaseWidgetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseWidgetProps] (val x: Self) extends AnyVal {
       
       inline def setBaseClass(value: String): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
       

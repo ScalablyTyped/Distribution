@@ -53,7 +53,8 @@ object GetGroupResponse {
     __obj.asInstanceOf[GetGroupResponse]
   }
   
-  extension [Self <: GetGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object distJestMod {
       __obj.asInstanceOf[StylableJestConfig]
     }
     
-    extension [Self <: StylableJestConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylableJestConfig] (val x: Self) extends AnyVal {
       
       inline def setStylable(
         value: Partial[

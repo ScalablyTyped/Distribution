@@ -63,7 +63,8 @@ object `20` {
     __obj.asInstanceOf[`20`[BaseToken]]
   }
   
-  extension [Self <: `20`[?], BaseToken](x: Self & `20`[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `20`[?], BaseToken] (val x: Self & `20`[BaseToken]) extends AnyVal {
     
     inline def set0(value: SpacingToken[BaseToken]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

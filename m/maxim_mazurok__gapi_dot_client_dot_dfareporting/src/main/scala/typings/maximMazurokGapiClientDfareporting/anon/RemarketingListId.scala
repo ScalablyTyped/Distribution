@@ -53,7 +53,8 @@ object RemarketingListId {
     __obj.asInstanceOf[RemarketingListId]
   }
   
-  extension [Self <: RemarketingListId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemarketingListId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

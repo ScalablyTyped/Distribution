@@ -33,7 +33,8 @@ object IMetaGraphDef {
     __obj.asInstanceOf[IMetaGraphDef]
   }
   
-  extension [Self <: IMetaGraphDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMetaGraphDef] (val x: Self) extends AnyVal {
     
     inline def setAssetFileDef(value: js.Array[IAssetFileDef]): Self = StObject.set(x, "assetFileDef", value.asInstanceOf[js.Any])
     

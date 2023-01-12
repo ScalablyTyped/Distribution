@@ -26,7 +26,8 @@ object ServerCallbackArgs {
     __obj.asInstanceOf[ServerCallbackArgs]
   }
   
-  extension [Self <: ServerCallbackArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerCallbackArgs] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: LinkCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

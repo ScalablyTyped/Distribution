@@ -15,7 +15,8 @@ object SpatialManipulationDelta {
     __obj.asInstanceOf[SpatialManipulationDelta]
   }
   
-  extension [Self <: SpatialManipulationDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialManipulationDelta] (val x: Self) extends AnyVal {
     
     inline def setTranslation(value: Any): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
   }

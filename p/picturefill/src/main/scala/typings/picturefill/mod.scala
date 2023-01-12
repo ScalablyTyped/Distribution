@@ -33,7 +33,8 @@ object mod {
         __obj.asInstanceOf[EvaluateArg]
       }
       
-      extension [Self <: EvaluateArg](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EvaluateArg] (val x: Self) extends AnyVal {
         
         inline def setElements(value: NodeList | js.Array[ElementNullable]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
         

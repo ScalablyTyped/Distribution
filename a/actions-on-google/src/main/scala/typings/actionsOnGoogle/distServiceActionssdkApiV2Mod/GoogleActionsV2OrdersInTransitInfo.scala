@@ -18,7 +18,8 @@ object GoogleActionsV2OrdersInTransitInfo {
     __obj.asInstanceOf[GoogleActionsV2OrdersInTransitInfo]
   }
   
-  extension [Self <: GoogleActionsV2OrdersInTransitInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2OrdersInTransitInfo] (val x: Self) extends AnyVal {
     
     inline def setUpdatedTime(value: String): Self = StObject.set(x, "updatedTime", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions {
     __obj.asInstanceOf[ApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions]
   }
   
-  extension [Self <: ApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: CanapprovepullrequestreviewsDefaultworkflowpermissions): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

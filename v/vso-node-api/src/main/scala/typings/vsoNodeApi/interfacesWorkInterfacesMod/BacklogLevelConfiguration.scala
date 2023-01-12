@@ -70,7 +70,8 @@ object BacklogLevelConfiguration {
     __obj.asInstanceOf[BacklogLevelConfiguration]
   }
   
-  extension [Self <: BacklogLevelConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BacklogLevelConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAddPanelFields(value: js.Array[WorkItemFieldReference]): Self = StObject.set(x, "addPanelFields", value.asInstanceOf[js.Any])
     

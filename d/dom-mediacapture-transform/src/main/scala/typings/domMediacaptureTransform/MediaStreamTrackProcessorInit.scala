@@ -24,7 +24,8 @@ object MediaStreamTrackProcessorInit {
     __obj.asInstanceOf[MediaStreamTrackProcessorInit]
   }
   
-  extension [Self <: MediaStreamTrackProcessorInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamTrackProcessorInit] (val x: Self) extends AnyVal {
     
     inline def setMaxBufferSize(value: Double): Self = StObject.set(x, "maxBufferSize", value.asInstanceOf[js.Any])
     

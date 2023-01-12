@@ -197,7 +197,8 @@ object Dimmer {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
@@ -294,7 +295,8 @@ object Dimmer {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
         
@@ -348,13 +350,15 @@ object Dimmer {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
     }
     
-    extension [Self <: ErrorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     }
@@ -371,7 +375,8 @@ object Dimmer {
         __obj.asInstanceOf[typings.semanticUiDimmer.SemanticUI.Dimmer.ErrorSettings.Param]
       }
       
-      extension [Self <: typings.semanticUiDimmer.SemanticUI.Dimmer.ErrorSettings.Param](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.semanticUiDimmer.SemanticUI.Dimmer.ErrorSettings.Param] (val x: Self) extends AnyVal {
         
         inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
@@ -404,7 +409,8 @@ object Dimmer {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -465,13 +471,15 @@ object Dimmer {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setDimmer(value: () => JQuery): Self = StObject.set(x, "dimmer", js.Any.fromFunction0(value))
       }
     }
     
-    extension [Self <: TemplateSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateSettings] (val x: Self) extends AnyVal {
       
       inline def setDimmer(value: () => JQuery): Self = StObject.set(x, "dimmer", js.Any.fromFunction0(value))
     }
@@ -490,7 +498,8 @@ object Dimmer {
         __obj.asInstanceOf[typings.semanticUiDimmer.SemanticUI.Dimmer.TemplateSettings.Param]
       }
       
-      extension [Self <: typings.semanticUiDimmer.SemanticUI.Dimmer.TemplateSettings.Param](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.semanticUiDimmer.SemanticUI.Dimmer.TemplateSettings.Param] (val x: Self) extends AnyVal {
         
         inline def setDimmer(value: () => JQuery): Self = StObject.set(x, "dimmer", js.Any.fromFunction0(value))
       }

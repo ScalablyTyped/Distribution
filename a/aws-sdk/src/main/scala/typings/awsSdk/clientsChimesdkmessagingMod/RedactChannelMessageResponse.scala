@@ -28,7 +28,8 @@ object RedactChannelMessageResponse {
     __obj.asInstanceOf[RedactChannelMessageResponse]
   }
   
-  extension [Self <: RedactChannelMessageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedactChannelMessageResponse] (val x: Self) extends AnyVal {
     
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     

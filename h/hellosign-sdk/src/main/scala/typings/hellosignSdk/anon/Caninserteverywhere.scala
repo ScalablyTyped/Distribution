@@ -15,7 +15,8 @@ object Caninserteverywhere {
     __obj.asInstanceOf[Caninserteverywhere]
   }
   
-  extension [Self <: Caninserteverywhere](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Caninserteverywhere] (val x: Self) extends AnyVal {
     
     inline def setCan_insert_everywhere(value: Boolean): Self = StObject.set(x, "can_insert_everywhere", value.asInstanceOf[js.Any])
   }

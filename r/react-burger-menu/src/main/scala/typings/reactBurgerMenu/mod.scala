@@ -148,7 +148,8 @@ object mod {
       __obj.asInstanceOf[HoverState]
     }
     
-    extension [Self <: HoverState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoverState] (val x: Self) extends AnyVal {
       
       inline def setIsMouseIn(value: Boolean): Self = StObject.set(x, "isMouseIn", value.asInstanceOf[js.Any])
     }
@@ -233,7 +234,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setBodyClassName(value: String): Self = StObject.set(x, "bodyClassName", value.asInstanceOf[js.Any])
       
@@ -382,7 +384,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     }
@@ -425,7 +428,8 @@ object mod {
       __obj.asInstanceOf[Styles]
     }
     
-    extension [Self <: Styles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
       
       inline def setBmBurgerBars(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "bmBurgerBars", value.asInstanceOf[js.Any])
       

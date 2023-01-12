@@ -63,7 +63,8 @@ object distCommonjsAddonsPortalPortalInnerMod {
       __obj.asInstanceOf[StrictPortalInnerProps]
     }
     
-    extension [Self <: StrictPortalInnerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictPortalInnerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

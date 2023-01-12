@@ -26,7 +26,8 @@ object PointData {
     __obj.asInstanceOf[PointData]
   }
   
-  extension [Self <: PointData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

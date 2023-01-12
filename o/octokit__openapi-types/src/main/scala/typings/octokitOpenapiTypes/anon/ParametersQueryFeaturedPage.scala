@@ -17,7 +17,8 @@ object ParametersQueryFeaturedPage {
     __obj.asInstanceOf[ParametersQueryFeaturedPage]
   }
   
-  extension [Self <: ParametersQueryFeaturedPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryFeaturedPage] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryFeaturedPage): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

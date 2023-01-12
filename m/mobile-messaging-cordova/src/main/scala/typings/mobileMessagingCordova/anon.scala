@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Actions]
     }
     
-    extension [Self <: Actions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[AuthenticationRequired]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[ApplicationCodePersistingDisabled]
     }
     
-    extension [Self <: ApplicationCodePersistingDisabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationCodePersistingDisabled] (val x: Self) extends AnyVal {
       
       inline def setApplicationCodePersistingDisabled(value: Boolean): Self = StObject.set(x, "applicationCodePersistingDisabled", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object anon {
       __obj.asInstanceOf[AuthenticationRequired]
     }
     
-    extension [Self <: AuthenticationRequired](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticationRequired] (val x: Self) extends AnyVal {
       
       inline def setAuthenticationRequired(value: Boolean): Self = StObject.set(x, "authenticationRequired", value.asInstanceOf[js.Any])
       
@@ -152,7 +155,8 @@ object anon {
       __obj.asInstanceOf[ForceCleanup]
     }
     
-    extension [Self <: ForceCleanup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForceCleanup] (val x: Self) extends AnyVal {
       
       inline def setForceCleanup(value: Boolean): Self = StObject.set(x, "forceCleanup", value.asInstanceOf[js.Any])
       
@@ -186,7 +190,8 @@ object anon {
       __obj.asInstanceOf[MultipleNotifications]
     }
     
-    extension [Self <: MultipleNotifications](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipleNotifications] (val x: Self) extends AnyVal {
       
       inline def setMultipleNotifications(value: Boolean): Self = StObject.set(x, "multipleNotifications", value.asInstanceOf[js.Any])
       
@@ -207,7 +212,8 @@ object anon {
       __obj.asInstanceOf[ShowModally]
     }
     
-    extension [Self <: ShowModally](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowModally] (val x: Self) extends AnyVal {
       
       inline def setShowModally(value: Boolean): Self = StObject.set(x, "showModally", value.asInstanceOf[js.Any])
     }

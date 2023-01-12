@@ -32,7 +32,8 @@ object AllocatePrivateVirtualInterfaceRequest {
     __obj.asInstanceOf[AllocatePrivateVirtualInterfaceRequest]
   }
   
-  extension [Self <: AllocatePrivateVirtualInterfaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllocatePrivateVirtualInterfaceRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     

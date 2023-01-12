@@ -20,7 +20,8 @@ object WizardFormValidateFailedEvent {
     __obj.asInstanceOf[WizardFormValidateFailedEvent]
   }
   
-  extension [Self <: WizardFormValidateFailedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WizardFormValidateFailedEvent] (val x: Self) extends AnyVal {
     
     inline def setForm(value: Form): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     

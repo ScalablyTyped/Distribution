@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[InputMb]
     }
     
-    extension [Self <: InputMb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputMb] (val x: Self) extends AnyVal {
       
       inline def setInputMb(value: Double): Self = StObject.set(x, "inputMb", value.asInstanceOf[js.Any])
       

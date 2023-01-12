@@ -38,7 +38,8 @@ object GetMinuteUsageResponse {
     __obj.asInstanceOf[GetMinuteUsageResponse]
   }
   
-  extension [Self <: GetMinuteUsageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMinuteUsageResponse] (val x: Self) extends AnyVal {
     
     inline def setEstimatedMinutesRemaining(value: Integer): Self = StObject.set(x, "estimatedMinutesRemaining", value.asInstanceOf[js.Any])
     

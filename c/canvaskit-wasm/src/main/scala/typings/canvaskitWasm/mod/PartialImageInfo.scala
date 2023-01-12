@@ -21,7 +21,8 @@ object PartialImageInfo {
     __obj.asInstanceOf[PartialImageInfo]
   }
   
-  extension [Self <: PartialImageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialImageInfo] (val x: Self) extends AnyVal {
     
     inline def setAlphaType(value: AlphaType): Self = StObject.set(x, "alphaType", value.asInstanceOf[js.Any])
     

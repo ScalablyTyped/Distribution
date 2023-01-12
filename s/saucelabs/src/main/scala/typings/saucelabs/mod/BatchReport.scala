@@ -57,7 +57,8 @@ object BatchReport {
     __obj.asInstanceOf[BatchReport]
   }
   
-  extension [Self <: BatchReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchReport] (val x: Self) extends AnyVal {
     
     inline def setBatchId(value: Id): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     

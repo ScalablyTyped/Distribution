@@ -18,7 +18,8 @@ object DescribeAutoScalingNotificationTypesAnswer {
     __obj.asInstanceOf[DescribeAutoScalingNotificationTypesAnswer]
   }
   
-  extension [Self <: DescribeAutoScalingNotificationTypesAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAutoScalingNotificationTypesAnswer] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingNotificationTypes(value: AutoScalingNotificationTypes): Self = StObject.set(x, "AutoScalingNotificationTypes", value.asInstanceOf[js.Any])
     

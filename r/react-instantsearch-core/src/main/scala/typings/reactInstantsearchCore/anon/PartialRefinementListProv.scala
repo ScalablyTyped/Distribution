@@ -28,7 +28,8 @@ object PartialRefinementListProv {
     __obj.asInstanceOf[PartialRefinementListProv]
   }
   
-  extension [Self <: PartialRefinementListProv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRefinementListProv] (val x: Self) extends AnyVal {
     
     inline def setCanRefine(value: Boolean): Self = StObject.set(x, "canRefine", value.asInstanceOf[js.Any])
     

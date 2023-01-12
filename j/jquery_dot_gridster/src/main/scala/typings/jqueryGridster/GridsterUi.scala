@@ -16,7 +16,8 @@ object GridsterUi {
     __obj.asInstanceOf[GridsterUi]
   }
   
-  extension [Self <: GridsterUi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridsterUi] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Left): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }

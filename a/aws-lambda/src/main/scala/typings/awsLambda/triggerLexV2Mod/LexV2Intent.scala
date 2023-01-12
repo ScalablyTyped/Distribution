@@ -31,7 +31,8 @@ object LexV2Intent {
     __obj.asInstanceOf[LexV2Intent]
   }
   
-  extension [Self <: LexV2Intent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexV2Intent] (val x: Self) extends AnyVal {
     
     inline def setConfirmationState(value: Confirmed_ | Denied | None): Self = StObject.set(x, "confirmationState", value.asInstanceOf[js.Any])
     

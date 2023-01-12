@@ -58,7 +58,8 @@ object CreateSourceLocationResponse {
     __obj.asInstanceOf[CreateSourceLocationResponse]
   }
   
-  extension [Self <: CreateSourceLocationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSourceLocationResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessConfiguration(value: AccessConfiguration): Self = StObject.set(x, "AccessConfiguration", value.asInstanceOf[js.Any])
     

@@ -121,7 +121,8 @@ object mod {
       __obj.asInstanceOf[BackendOptions]
     }
     
-    extension [Self <: BackendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackendOptions] (val x: Self) extends AnyVal {
       
       inline def setAddPath(value: String): Self = StObject.set(x, "addPath", value.asInstanceOf[js.Any])
       

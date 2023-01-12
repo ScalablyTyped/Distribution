@@ -61,7 +61,8 @@ object dfaDfaserializerMod {
       __obj.asInstanceOf[DFASerializer]
     }
     
-    extension [Self <: DFASerializer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DFASerializer] (val x: Self) extends AnyVal {
       
       inline def setDfa(value: typings.antlr4.dfaDfaMod.default): Self = StObject.set(x, "dfa", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object GoogleAppsCardV1BorderStyle {
     __obj.asInstanceOf[GoogleAppsCardV1BorderStyle]
   }
   
-  extension [Self <: GoogleAppsCardV1BorderStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCardV1BorderStyle] (val x: Self) extends AnyVal {
     
     inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     

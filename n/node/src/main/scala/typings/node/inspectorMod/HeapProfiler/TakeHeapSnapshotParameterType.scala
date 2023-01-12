@@ -18,7 +18,8 @@ object TakeHeapSnapshotParameterType {
     __obj.asInstanceOf[TakeHeapSnapshotParameterType]
   }
   
-  extension [Self <: TakeHeapSnapshotParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TakeHeapSnapshotParameterType] (val x: Self) extends AnyVal {
     
     inline def setReportProgress(value: Boolean): Self = StObject.set(x, "reportProgress", value.asInstanceOf[js.Any])
     

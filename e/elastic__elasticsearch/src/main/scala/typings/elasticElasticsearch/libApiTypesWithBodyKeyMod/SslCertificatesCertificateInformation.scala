@@ -36,7 +36,8 @@ object SslCertificatesCertificateInformation {
     __obj.asInstanceOf[SslCertificatesCertificateInformation]
   }
   
-  extension [Self <: SslCertificatesCertificateInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SslCertificatesCertificateInformation] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

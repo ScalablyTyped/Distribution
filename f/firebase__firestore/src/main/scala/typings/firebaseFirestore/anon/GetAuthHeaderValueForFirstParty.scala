@@ -16,7 +16,8 @@ object GetAuthHeaderValueForFirstParty {
     __obj.asInstanceOf[GetAuthHeaderValueForFirstParty]
   }
   
-  extension [Self <: GetAuthHeaderValueForFirstParty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAuthHeaderValueForFirstParty] (val x: Self) extends AnyVal {
     
     inline def setGetAuthHeaderValueForFirstParty(value: js.Array[StringDictionary[String]] => String | Null): Self = StObject.set(x, "getAuthHeaderValueForFirstParty", js.Any.fromFunction1(value))
   }

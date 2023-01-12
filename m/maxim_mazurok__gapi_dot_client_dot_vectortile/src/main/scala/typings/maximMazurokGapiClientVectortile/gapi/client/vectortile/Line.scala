@@ -31,7 +31,8 @@ object Line {
     __obj.asInstanceOf[Line]
   }
   
-  extension [Self <: Line](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
     
     inline def setBasemapZOrder(value: BasemapZOrder): Self = StObject.set(x, "basemapZOrder", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object LogicalLocation {
     __obj.asInstanceOf[LogicalLocation]
   }
   
-  extension [Self <: LogicalLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogicalLocation] (val x: Self) extends AnyVal {
     
     inline def setDecoratedName(value: String): Self = StObject.set(x, "decoratedName", value.asInstanceOf[js.Any])
     

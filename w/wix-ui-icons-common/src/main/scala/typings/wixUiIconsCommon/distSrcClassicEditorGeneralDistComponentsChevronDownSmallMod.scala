@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsChevronDownSmallMod extends Shor
       __obj.asInstanceOf[ChevronDownSmallProps]
     }
     
-    extension [Self <: ChevronDownSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChevronDownSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

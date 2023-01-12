@@ -34,7 +34,8 @@ object SensitiveAdminAction {
     __obj.asInstanceOf[SensitiveAdminAction]
   }
   
-  extension [Self <: SensitiveAdminAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SensitiveAdminAction] (val x: Self) extends AnyVal {
     
     inline def setActorEmail(value: String): Self = StObject.set(x, "actorEmail", value.asInstanceOf[js.Any])
     

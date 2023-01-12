@@ -23,7 +23,8 @@ object EnergyUsageListResponse {
     __obj.asInstanceOf[EnergyUsageListResponse]
   }
   
-  extension [Self <: EnergyUsageListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnergyUsageListResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Reads): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

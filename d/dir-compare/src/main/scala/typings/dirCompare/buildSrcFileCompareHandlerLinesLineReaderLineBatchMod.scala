@@ -31,7 +31,8 @@ object buildSrcFileCompareHandlerLinesLineReaderLineBatchMod {
       __obj.asInstanceOf[LineBatch]
     }
     
-    extension [Self <: LineBatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineBatch] (val x: Self) extends AnyVal {
       
       inline def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object ParsedHttpResponseBody {
     __obj.asInstanceOf[ParsedHttpResponseBody]
   }
   
-  extension [Self <: ParsedHttpResponseBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedHttpResponseBody] (val x: Self) extends AnyVal {
     
     inline def setBody(value: ResponseBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

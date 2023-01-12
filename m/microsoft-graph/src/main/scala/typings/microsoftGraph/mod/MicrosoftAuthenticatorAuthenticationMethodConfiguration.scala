@@ -18,7 +18,8 @@ object MicrosoftAuthenticatorAuthenticationMethodConfiguration {
     __obj.asInstanceOf[MicrosoftAuthenticatorAuthenticationMethodConfiguration]
   }
   
-  extension [Self <: MicrosoftAuthenticatorAuthenticationMethodConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MicrosoftAuthenticatorAuthenticationMethodConfiguration] (val x: Self) extends AnyVal {
     
     inline def setIncludeTargets(value: NullableOption[js.Array[MicrosoftAuthenticatorAuthenticationMethodTarget]]): Self = StObject.set(x, "includeTargets", value.asInstanceOf[js.Any])
     

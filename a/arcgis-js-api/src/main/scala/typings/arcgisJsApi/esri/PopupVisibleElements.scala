@@ -27,7 +27,8 @@ object PopupVisibleElements {
     __obj.asInstanceOf[PopupVisibleElements]
   }
   
-  extension [Self <: PopupVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     

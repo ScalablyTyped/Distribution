@@ -19,7 +19,8 @@ object PubSubEvents {
     __obj.asInstanceOf[PubSubEvents]
   }
   
-  extension [Self <: PubSubEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PubSubEvents] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: CustomEvent[Message]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

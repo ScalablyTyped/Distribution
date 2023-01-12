@@ -16,7 +16,8 @@ object Fontface {
     __obj.asInstanceOf[Fontface]
   }
   
-  extension [Self <: Fontface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fontface] (val x: Self) extends AnyVal {
     
     inline def `set@font-face`(value: JSSFontface | js.Array[JSSFontface]): Self = StObject.set(x, "@font-face", value.asInstanceOf[js.Any])
     

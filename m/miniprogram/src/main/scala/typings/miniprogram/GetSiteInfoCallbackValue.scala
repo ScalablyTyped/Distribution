@@ -15,7 +15,8 @@ object GetSiteInfoCallbackValue {
     __obj.asInstanceOf[GetSiteInfoCallbackValue]
   }
   
-  extension [Self <: GetSiteInfoCallbackValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSiteInfoCallbackValue] (val x: Self) extends AnyVal {
     
     inline def setSiteName(value: String): Self = StObject.set(x, "siteName", value.asInstanceOf[js.Any])
   }

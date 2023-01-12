@@ -31,7 +31,8 @@ object ModuleEvent {
     __obj.asInstanceOf[ModuleEvent]
   }
   
-  extension [Self <: ModuleEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleEvent] (val x: Self) extends AnyVal {
     
     inline def setBody(value: typings.vscodeDebugprotocol.anon.Module): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

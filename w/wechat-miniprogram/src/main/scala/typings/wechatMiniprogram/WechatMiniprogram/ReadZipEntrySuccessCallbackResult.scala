@@ -18,7 +18,8 @@ object ReadZipEntrySuccessCallbackResult {
     __obj.asInstanceOf[ReadZipEntrySuccessCallbackResult]
   }
   
-  extension [Self <: ReadZipEntrySuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadZipEntrySuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: EntriesResult): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

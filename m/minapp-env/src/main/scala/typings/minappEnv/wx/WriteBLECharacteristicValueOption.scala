@@ -35,7 +35,8 @@ object WriteBLECharacteristicValueOption {
     __obj.asInstanceOf[WriteBLECharacteristicValueOption]
   }
   
-  extension [Self <: WriteBLECharacteristicValueOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteBLECharacteristicValueOption] (val x: Self) extends AnyVal {
     
     inline def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object TaskLogReference {
     __obj.asInstanceOf[TaskLogReference]
   }
   
-  extension [Self <: TaskLogReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskLogReference] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

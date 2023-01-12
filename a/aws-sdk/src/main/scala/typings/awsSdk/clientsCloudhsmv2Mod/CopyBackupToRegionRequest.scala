@@ -28,7 +28,8 @@ object CopyBackupToRegionRequest {
     __obj.asInstanceOf[CopyBackupToRegionRequest]
   }
   
-  extension [Self <: CopyBackupToRegionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyBackupToRegionRequest] (val x: Self) extends AnyVal {
     
     inline def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
     

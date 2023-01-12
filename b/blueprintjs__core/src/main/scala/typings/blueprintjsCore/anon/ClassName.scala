@@ -42,7 +42,8 @@ object ClassName {
     __obj.asInstanceOf[ClassName[E]]
   }
   
-  extension [Self <: ClassName[?], E /* <: HTMLButtonElement | HTMLAnchorElement */](x: Self & ClassName[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassName[?], E /* <: HTMLButtonElement | HTMLAnchorElement */] (val x: Self & ClassName[E]) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

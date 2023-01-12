@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object anon {
       __obj.asInstanceOf[Domain]
     }
     
-    extension [Self <: Domain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: LatLngLiteralVerbose): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -154,7 +157,8 @@ object anon {
       __obj.asInstanceOf[PartialPlaceSearchResult]
     }
     
-    extension [Self <: PartialPlaceSearchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPlaceSearchResult] (val x: Self) extends AnyVal {
       
       inline def setAlt_ids(value: js.Array[AlternativePlaceId]): Self = StObject.set(x, "alt_ids", value.asInstanceOf[js.Any])
       
@@ -235,7 +239,8 @@ object anon {
       __obj.asInstanceOf[Points]
     }
     
-    extension [Self <: Points](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Points] (val x: Self) extends AnyVal {
       
       inline def setPoints(value: String): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     }

@@ -23,7 +23,8 @@ object ViolationEventOccurrenceRange {
     __obj.asInstanceOf[ViolationEventOccurrenceRange]
   }
   
-  extension [Self <: ViolationEventOccurrenceRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViolationEventOccurrenceRange] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

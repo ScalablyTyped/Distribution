@@ -40,7 +40,8 @@ object srcHeadingMod {
       __obj.asInstanceOf[HeadingConfig]
     }
     
-    extension [Self <: HeadingConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadingConfig] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: js.Array[HeadingOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object srcHeadingMod {
       __obj.asInstanceOf[HeadingOption]
     }
     
-    extension [Self <: HeadingOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadingOption] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object srcHeadingMod {
         __obj.asInstanceOf[Plugins]
       }
       
-      extension [Self <: Plugins](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
         
         inline def setHeading(value: Heading): Self = StObject.set(x, "Heading", value.asInstanceOf[js.Any])
       }

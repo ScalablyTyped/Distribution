@@ -29,7 +29,8 @@ object XConnectableShape {
     __obj.asInstanceOf[XConnectableShape]
   }
   
-  extension [Self <: XConnectableShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConnectableShape] (val x: Self) extends AnyVal {
     
     inline def setCanConnect(value: (Point, Boolean, Double) => Boolean): Self = StObject.set(x, "canConnect", js.Any.fromFunction3(value))
     

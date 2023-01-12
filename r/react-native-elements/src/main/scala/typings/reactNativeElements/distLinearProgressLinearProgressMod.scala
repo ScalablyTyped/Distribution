@@ -36,7 +36,8 @@ object distLinearProgressLinearProgressMod extends Shortcut {
       __obj.asInstanceOf[LinearProgressProps]
     }
     
-    extension [Self <: LinearProgressProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinearProgressProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: primary | secondary | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

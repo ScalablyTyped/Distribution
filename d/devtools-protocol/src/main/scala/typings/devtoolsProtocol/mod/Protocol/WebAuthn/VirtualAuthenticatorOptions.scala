@@ -65,7 +65,8 @@ object VirtualAuthenticatorOptions {
     __obj.asInstanceOf[VirtualAuthenticatorOptions]
   }
   
-  extension [Self <: VirtualAuthenticatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualAuthenticatorOptions] (val x: Self) extends AnyVal {
     
     inline def setAutomaticPresenceSimulation(value: Boolean): Self = StObject.set(x, "automaticPresenceSimulation", value.asInstanceOf[js.Any])
     

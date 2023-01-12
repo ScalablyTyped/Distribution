@@ -44,7 +44,8 @@ object VideoStatus {
     __obj.asInstanceOf[VideoStatus]
   }
   
-  extension [Self <: VideoStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoStatus] (val x: Self) extends AnyVal {
     
     inline def setEmbeddable(value: Boolean): Self = StObject.set(x, "embeddable", value.asInstanceOf[js.Any])
     

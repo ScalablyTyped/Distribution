@@ -23,7 +23,8 @@ object BatchResponse {
     __obj.asInstanceOf[BatchResponse]
   }
   
-  extension [Self <: BatchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchResponse] (val x: Self) extends AnyVal {
     
     inline def setObjectIDs(value: js.Array[String]): Self = StObject.set(x, "objectIDs", value.asInstanceOf[js.Any])
     

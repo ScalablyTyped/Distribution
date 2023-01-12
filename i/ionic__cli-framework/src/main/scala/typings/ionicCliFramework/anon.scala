@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Aliases[C, N, M, I, O]]
     }
     
-    extension [Self <: Aliases[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](x: Self & (Aliases[C, N, M, I, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aliases[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (Aliases[C, N, M, I, O])) extends AnyVal {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Argv[N, C, M, I, O]]
     }
     
-    extension [Self <: Argv[?, ?, ?, ?, ?], N /* <: INamespace[C, N, M, I, O] */, C /* <: ICommand[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](x: Self & (Argv[N, C, M, I, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Argv[?, ?, ?, ?, ?], N /* <: INamespace[C, N, M, I, O] */, C /* <: ICommand[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (Argv[N, C, M, I, O])) extends AnyVal {
       
       inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[CaseSensitive]
     }
     
-    extension [Self <: CaseSensitive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaseSensitive] (val x: Self) extends AnyVal {
       
       inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
@@ -110,7 +113,8 @@ object anon {
       __obj.asInstanceOf[Colors]
     }
     
-    extension [Self <: Colors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
       
       inline def setColors(value: typings.ionicCliFramework.libColorsMod.Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -129,7 +133,8 @@ object anon {
       __obj.asInstanceOf[Commands[C, N, M, I, O]]
     }
     
-    extension [Self <: Commands[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](x: Self & (Commands[C, N, M, I, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Commands[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (Commands[C, N, M, I, O])) extends AnyVal {
       
       inline def setCommands(value: js.Array[HydratedCommandMetadata[C, N, M, I, O]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
@@ -148,7 +153,8 @@ object anon {
       __obj.asInstanceOf[IncludeSeparated]
     }
     
-    extension [Self <: IncludeSeparated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncludeSeparated] (val x: Self) extends AnyVal {
       
       inline def setIncludeSeparated(value: Boolean): Self = StObject.set(x, "includeSeparated", value.asInstanceOf[js.Any])
       
@@ -191,7 +197,8 @@ object anon {
       __obj.asInstanceOf[RequiredCommandMetadataCo]
     }
     
-    extension [Self <: RequiredCommandMetadataCo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredCommandMetadataCo] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -232,7 +239,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -251,7 +259,8 @@ object anon {
       __obj.asInstanceOf[ValueString]
     }
     
-    extension [Self <: ValueString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueString] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

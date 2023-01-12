@@ -19,7 +19,8 @@ object BaseToken {
     __obj.asInstanceOf[BaseToken[TValue, Group]]
   }
   
-  extension [Self <: BaseToken[?, ?], TValue, Group /* <: Groups */](x: Self & (BaseToken[TValue, Group])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseToken[?, ?], TValue, Group /* <: Groups */] (val x: Self & (BaseToken[TValue, Group])) extends AnyVal {
     
     inline def setAttributes(value: GroupGroup[Group]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
   }

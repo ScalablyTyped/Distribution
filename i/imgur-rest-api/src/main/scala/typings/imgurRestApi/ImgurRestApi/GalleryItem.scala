@@ -64,7 +64,8 @@ object GalleryItem {
     __obj.asInstanceOf[GalleryItem]
   }
   
-  extension [Self <: GalleryItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GalleryItem] (val x: Self) extends AnyVal {
     
     inline def setAccount_id(value: Double): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
     

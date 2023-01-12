@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[ValidationPropertiesVue]
     }
     
-    extension [Self <: ValidationPropertiesVue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationPropertiesVue] (val x: Self) extends AnyVal {
       
       inline def setDelayTouch(
         value: Validation & (ValidationProperties[js.Function1[/* v */ Validation, Unit]]) & ValidationEvaluation

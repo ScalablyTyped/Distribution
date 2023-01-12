@@ -23,7 +23,8 @@ object MlDeleteForecastRequest {
     __obj.asInstanceOf[MlDeleteForecastRequest]
   }
   
-  extension [Self <: MlDeleteForecastRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDeleteForecastRequest] (val x: Self) extends AnyVal {
     
     inline def setAllow_no_forecasts(value: Boolean): Self = StObject.set(x, "allow_no_forecasts", value.asInstanceOf[js.Any])
     

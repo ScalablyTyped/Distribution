@@ -26,7 +26,8 @@ object Runid {
     __obj.asInstanceOf[Runid]
   }
   
-  extension [Self <: Runid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Runid] (val x: Self) extends AnyVal {
     
     inline def setOwner(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any

@@ -18,7 +18,8 @@ object RegisterModelStepMetadata {
     __obj.asInstanceOf[RegisterModelStepMetadata]
   }
   
-  extension [Self <: RegisterModelStepMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterModelStepMetadata] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String256): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteSamplingRuleRequest {
     __obj.asInstanceOf[DeleteSamplingRuleRequest]
   }
   
-  extension [Self <: DeleteSamplingRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSamplingRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setRuleARN(value: String): Self = StObject.set(x, "RuleARN", value.asInstanceOf[js.Any])
     

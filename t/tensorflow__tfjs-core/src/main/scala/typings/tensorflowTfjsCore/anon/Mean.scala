@@ -19,7 +19,8 @@ object Mean {
     __obj.asInstanceOf[Mean]
   }
   
-  extension [Self <: Mean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mean] (val x: Self) extends AnyVal {
     
     inline def setMean(value: Tensor[Rank]): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[Convert]
     }
     
-    extension [Self <: Convert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Convert] (val x: Self) extends AnyVal {
       
       inline def setToHtml(value: String => String): Self = StObject.set(x, "toHtml", js.Any.fromFunction1(value))
     }
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[ConverterOptions]
     }
     
-    extension [Self <: ConverterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConverterOptions] (val x: Self) extends AnyVal {
       
       inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       

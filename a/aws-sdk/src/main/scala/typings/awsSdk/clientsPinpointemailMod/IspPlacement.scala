@@ -23,7 +23,8 @@ object IspPlacement {
     __obj.asInstanceOf[IspPlacement]
   }
   
-  extension [Self <: IspPlacement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IspPlacement] (val x: Self) extends AnyVal {
     
     inline def setIspName(value: IspName): Self = StObject.set(x, "IspName", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TypeofAddInvoiceItem {
     __obj.asInstanceOf[TypeofAddInvoiceItem]
   }
   
-  extension [Self <: TypeofAddInvoiceItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofAddInvoiceItem] (val x: Self) extends AnyVal {
     
     inline def setPriceData(value: Any): Self = StObject.set(x, "PriceData", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object ScrollTimelineOption {
     __obj.asInstanceOf[ScrollTimelineOption]
   }
   
-  extension [Self <: ScrollTimelineOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollTimelineOption] (val x: Self) extends AnyVal {
     
     inline def setEndScrollOffset(value: Double): Self = StObject.set(x, "endScrollOffset", value.asInstanceOf[js.Any])
     

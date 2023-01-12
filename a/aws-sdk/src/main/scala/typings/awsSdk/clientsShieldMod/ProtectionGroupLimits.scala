@@ -23,7 +23,8 @@ object ProtectionGroupLimits {
     __obj.asInstanceOf[ProtectionGroupLimits]
   }
   
-  extension [Self <: ProtectionGroupLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectionGroupLimits] (val x: Self) extends AnyVal {
     
     inline def setMaxProtectionGroups(value: Long): Self = StObject.set(x, "MaxProtectionGroups", value.asInstanceOf[js.Any])
     

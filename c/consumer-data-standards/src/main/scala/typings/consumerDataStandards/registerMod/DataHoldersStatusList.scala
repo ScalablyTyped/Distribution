@@ -27,7 +27,8 @@ object DataHoldersStatusList {
     __obj.asInstanceOf[DataHoldersStatusList]
   }
   
-  extension [Self <: DataHoldersStatusList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataHoldersStatusList] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[LegalEntityId]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

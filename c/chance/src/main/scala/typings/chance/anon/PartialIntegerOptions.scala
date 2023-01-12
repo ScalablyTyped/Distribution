@@ -18,7 +18,8 @@ object PartialIntegerOptions {
     __obj.asInstanceOf[PartialIntegerOptions]
   }
   
-  extension [Self <: PartialIntegerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIntegerOptions] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

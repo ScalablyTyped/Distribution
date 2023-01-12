@@ -129,7 +129,8 @@ object Column {
     __obj.asInstanceOf[Column[T]]
   }
   
-  extension [Self <: Column[?], T /* <: SlickData */](x: Self & Column[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Column[?], T /* <: SlickData */] (val x: Self & Column[T]) extends AnyVal {
     
     inline def setAsyncPostRender(value: (/* cellNode */ Any, /* row */ Any, /* dataContext */ Any, /* colDef */ Any) => Unit): Self = StObject.set(x, "asyncPostRender", js.Any.fromFunction4(value))
     

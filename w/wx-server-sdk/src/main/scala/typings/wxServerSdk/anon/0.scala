@@ -15,7 +15,8 @@ object `0` {
     __obj.asInstanceOf[`0`]
   }
   
-  extension [Self <: `0`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
     
     inline def setUpdated(value: typings.wxServerSdk.wxServerSdkInts.`0` | typings.wxServerSdk.wxServerSdkInts.`1`): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object FilterEmptyReviews {
     __obj.asInstanceOf[FilterEmptyReviews]
   }
   
-  extension [Self <: FilterEmptyReviews](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterEmptyReviews] (val x: Self) extends AnyVal {
     
     inline def setFilterEmptyReviews(value: scala.Double): Self = StObject.set(x, "filterEmptyReviews", value.asInstanceOf[js.Any])
     

@@ -169,7 +169,8 @@ object XmlDocumentFragment {
     __obj.asInstanceOf[XmlDocumentFragment]
   }
   
-  extension [Self <: XmlDocumentFragment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XmlDocumentFragment] (val x: Self) extends AnyVal {
     
     inline def setAppendChild(value: IXmlNode => IXmlNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     

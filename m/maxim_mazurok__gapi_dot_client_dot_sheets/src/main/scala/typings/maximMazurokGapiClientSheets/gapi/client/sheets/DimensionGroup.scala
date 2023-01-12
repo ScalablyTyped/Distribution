@@ -26,7 +26,8 @@ object DimensionGroup {
     __obj.asInstanceOf[DimensionGroup]
   }
   
-  extension [Self <: DimensionGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionGroup] (val x: Self) extends AnyVal {
     
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     

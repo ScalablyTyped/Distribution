@@ -18,7 +18,8 @@ object TrackSourceSettings {
     __obj.asInstanceOf[TrackSourceSettings]
   }
   
-  extension [Self <: TrackSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setTrackNumber(value: integerMin1Max2147483647): Self = StObject.set(x, "TrackNumber", value.asInstanceOf[js.Any])
     

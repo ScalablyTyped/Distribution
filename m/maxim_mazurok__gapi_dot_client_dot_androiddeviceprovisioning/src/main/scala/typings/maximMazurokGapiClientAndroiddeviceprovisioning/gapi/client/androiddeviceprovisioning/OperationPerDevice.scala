@@ -25,7 +25,8 @@ object OperationPerDevice {
     __obj.asInstanceOf[OperationPerDevice]
   }
   
-  extension [Self <: OperationPerDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationPerDevice] (val x: Self) extends AnyVal {
     
     inline def setClaim(value: PartnerClaim): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
     

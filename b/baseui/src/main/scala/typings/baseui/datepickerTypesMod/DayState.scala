@@ -17,7 +17,8 @@ object DayState {
     __obj.asInstanceOf[DayState]
   }
   
-  extension [Self <: DayState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayState] (val x: Self) extends AnyVal {
     
     inline def setIsFocusVisible(value: Boolean): Self = StObject.set(x, "isFocusVisible", value.asInstanceOf[js.Any])
     

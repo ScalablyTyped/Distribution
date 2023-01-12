@@ -33,7 +33,8 @@ object AuxiliaryComment {
     __obj.asInstanceOf[AuxiliaryComment]
   }
   
-  extension [Self <: AuxiliaryComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuxiliaryComment] (val x: Self) extends AnyVal {
     
     inline def setAuxiliaryComment(value: typings.webpack.mod.AuxiliaryComment): Self = StObject.set(x, "auxiliaryComment", value.asInstanceOf[js.Any])
     

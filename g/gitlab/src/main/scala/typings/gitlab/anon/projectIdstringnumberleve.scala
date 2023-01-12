@@ -24,7 +24,8 @@ object projectIdstringnumberleve {
     __obj.asInstanceOf[projectIdstringnumberleve]
   }
   
-  extension [Self <: projectIdstringnumberleve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: projectIdstringnumberleve] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: NotificationSettingLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

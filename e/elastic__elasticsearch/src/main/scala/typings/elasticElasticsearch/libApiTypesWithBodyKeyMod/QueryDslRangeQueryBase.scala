@@ -17,7 +17,8 @@ object QueryDslRangeQueryBase {
     __obj.asInstanceOf[QueryDslRangeQueryBase]
   }
   
-  extension [Self <: QueryDslRangeQueryBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslRangeQueryBase] (val x: Self) extends AnyVal {
     
     inline def setRelation(value: QueryDslRangeRelation): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
     

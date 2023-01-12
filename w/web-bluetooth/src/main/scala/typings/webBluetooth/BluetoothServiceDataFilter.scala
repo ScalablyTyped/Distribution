@@ -17,7 +17,8 @@ object BluetoothServiceDataFilter {
     __obj.asInstanceOf[BluetoothServiceDataFilter]
   }
   
-  extension [Self <: BluetoothServiceDataFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BluetoothServiceDataFilter] (val x: Self) extends AnyVal {
     
     inline def setService(value: BluetoothServiceUUID): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
   }

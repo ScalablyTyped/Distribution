@@ -20,7 +20,8 @@ object CypressError {
     __obj.asInstanceOf[CypressError]
   }
   
-  extension [Self <: CypressError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CypressError] (val x: Self) extends AnyVal {
     
     inline def setCodeFrame(value: CodeFrame): Self = StObject.set(x, "codeFrame", value.asInstanceOf[js.Any])
     

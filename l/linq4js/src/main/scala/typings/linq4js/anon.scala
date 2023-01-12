@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[GroupValue]
     }
     
-    extension [Self <: GroupValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupValue] (val x: Self) extends AnyVal {
       
       inline def setGroupValue(value: Any): Self = StObject.set(x, "GroupValue", value.asInstanceOf[js.Any])
       

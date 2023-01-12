@@ -59,7 +59,8 @@ object XCustomSprite {
     __obj.asInstanceOf[XCustomSprite]
   }
   
-  extension [Self <: XCustomSprite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCustomSprite] (val x: Self) extends AnyVal {
     
     inline def setContentCanvas(value: XCanvas): Self = StObject.set(x, "ContentCanvas", value.asInstanceOf[js.Any])
     

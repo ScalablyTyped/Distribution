@@ -43,7 +43,8 @@ object miscObservableCoroutineMod {
         __obj.asInstanceOf[Observable[T]]
       }
       
-      extension [Self <: Observable[?], T](x: Self & Observable[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Observable[?], T] (val x: Self & Observable[T]) extends AnyVal {
         
         inline def setCancelAllCoroutines(value: () => Unit): Self = StObject.set(x, "cancelAllCoroutines", js.Any.fromFunction0(value))
         

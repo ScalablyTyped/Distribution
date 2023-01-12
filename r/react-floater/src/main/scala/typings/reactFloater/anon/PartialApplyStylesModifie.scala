@@ -37,7 +37,8 @@ object PartialApplyStylesModifie {
     __obj.asInstanceOf[PartialApplyStylesModifie]
   }
   
-  extension [Self <: PartialApplyStylesModifie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialApplyStylesModifie] (val x: Self) extends AnyVal {
     
     inline def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

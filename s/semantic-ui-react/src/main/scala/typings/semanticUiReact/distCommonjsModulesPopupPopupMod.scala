@@ -79,7 +79,8 @@ object distCommonjsModulesPopupPopupMod extends Shortcut {
       __obj.asInstanceOf[PopperOffsetsFunctionParams]
     }
     
-    extension [Self <: PopperOffsetsFunctionParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopperOffsetsFunctionParams] (val x: Self) extends AnyVal {
       
       inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
@@ -240,7 +241,8 @@ object distCommonjsModulesPopupPopupMod extends Shortcut {
       __obj.asInstanceOf[StrictPopupProps]
     }
     
-    extension [Self <: StrictPopupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictPopupProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

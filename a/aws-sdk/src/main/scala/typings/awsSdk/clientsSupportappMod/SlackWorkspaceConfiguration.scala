@@ -28,7 +28,8 @@ object SlackWorkspaceConfiguration {
     __obj.asInstanceOf[SlackWorkspaceConfiguration]
   }
   
-  extension [Self <: SlackWorkspaceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlackWorkspaceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllowOrganizationMemberAccount(value: booleanValue): Self = StObject.set(x, "allowOrganizationMemberAccount", value.asInstanceOf[js.Any])
     

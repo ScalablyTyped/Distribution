@@ -42,7 +42,8 @@ object distInterpolationMonotoneCubicMod {
       __obj.asInstanceOf[MonotoneCubicInterpolationOptions]
     }
     
-    extension [Self <: MonotoneCubicInterpolationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonotoneCubicInterpolationOptions] (val x: Self) extends AnyVal {
       
       inline def setFillHoles(value: Boolean): Self = StObject.set(x, "fillHoles", value.asInstanceOf[js.Any])
       

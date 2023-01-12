@@ -45,7 +45,8 @@ object ConstantMemberType {
     __obj.asInstanceOf[ConstantMemberType]
   }
   
-  extension [Self <: ConstantMemberType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstantMemberType] (val x: Self) extends AnyVal {
     
     inline def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     

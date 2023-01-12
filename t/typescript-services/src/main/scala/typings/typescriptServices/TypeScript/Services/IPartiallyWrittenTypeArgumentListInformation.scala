@@ -20,7 +20,8 @@ object IPartiallyWrittenTypeArgumentListInformation {
     __obj.asInstanceOf[IPartiallyWrittenTypeArgumentListInformation]
   }
   
-  extension [Self <: IPartiallyWrittenTypeArgumentListInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPartiallyWrittenTypeArgumentListInformation] (val x: Self) extends AnyVal {
     
     inline def setArgumentIndex(value: Double): Self = StObject.set(x, "argumentIndex", value.asInstanceOf[js.Any])
     

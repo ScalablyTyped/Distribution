@@ -19,7 +19,8 @@ object ZoneTypeRestriction {
     __obj.asInstanceOf[ZoneTypeRestriction]
   }
   
-  extension [Self <: ZoneTypeRestriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoneTypeRestriction] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     

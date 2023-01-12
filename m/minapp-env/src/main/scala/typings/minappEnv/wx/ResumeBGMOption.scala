@@ -22,7 +22,8 @@ object ResumeBGMOption {
     __obj.asInstanceOf[ResumeBGMOption]
   }
   
-  extension [Self <: ResumeBGMOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResumeBGMOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

@@ -15,7 +15,8 @@ object ReshapeAttrs {
     __obj.asInstanceOf[ReshapeAttrs]
   }
   
-  extension [Self <: ReshapeAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReshapeAttrs] (val x: Self) extends AnyVal {
     
     inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     

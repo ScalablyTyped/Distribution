@@ -299,7 +299,8 @@ object libPlotsLineTypesMod {
       __obj.asInstanceOf[LineOptions]
     }
     
-    extension [Self <: LineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

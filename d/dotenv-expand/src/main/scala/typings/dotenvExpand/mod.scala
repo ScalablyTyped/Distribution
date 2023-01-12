@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[DotenvExpandOptions]
     }
     
-    extension [Self <: DotenvExpandOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotenvExpandOptions] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object mod {
       __obj.asInstanceOf[DotenvExpandOutput]
     }
     
-    extension [Self <: DotenvExpandOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotenvExpandOutput] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

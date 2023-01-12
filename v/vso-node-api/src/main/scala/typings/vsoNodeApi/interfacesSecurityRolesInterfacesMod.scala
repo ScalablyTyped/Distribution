@@ -82,7 +82,8 @@ object interfacesSecurityRolesInterfacesMod {
       __obj.asInstanceOf[RoleAssignment]
     }
     
-    extension [Self <: RoleAssignment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoleAssignment] (val x: Self) extends AnyVal {
       
       inline def setAccess(value: RoleAccess): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object interfacesSecurityRolesInterfacesMod {
       __obj.asInstanceOf[SecurityRole]
     }
     
-    extension [Self <: SecurityRole](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SecurityRole] (val x: Self) extends AnyVal {
       
       inline def setAllowPermissions(value: Double): Self = StObject.set(x, "allowPermissions", value.asInstanceOf[js.Any])
       
@@ -188,7 +190,8 @@ object interfacesSecurityRolesInterfacesMod {
       __obj.asInstanceOf[UserRoleAssignmentRef]
     }
     
-    extension [Self <: UserRoleAssignmentRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserRoleAssignmentRef] (val x: Self) extends AnyVal {
       
       inline def setRoleName(value: String): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
       

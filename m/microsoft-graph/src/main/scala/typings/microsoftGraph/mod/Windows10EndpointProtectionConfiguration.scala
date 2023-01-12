@@ -148,7 +148,8 @@ object Windows10EndpointProtectionConfiguration {
     __obj.asInstanceOf[Windows10EndpointProtectionConfiguration]
   }
   
-  extension [Self <: Windows10EndpointProtectionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Windows10EndpointProtectionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAppLockerApplicationControl(value: AppLockerApplicationControlType): Self = StObject.set(x, "appLockerApplicationControl", value.asInstanceOf[js.Any])
     

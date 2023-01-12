@@ -55,7 +55,8 @@ object jasmine {
       __obj.asInstanceOf[AsyncCustomMatcherResult]
     }
     
-    extension [Self <: AsyncCustomMatcherResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncCustomMatcherResult] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -199,7 +200,8 @@ object jasmine {
       __obj.asInstanceOf[Spec]
     }
     
-    extension [Self <: Spec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spec] (val x: Self) extends AnyVal {
       
       inline def setAddMatchers(value: AsyncCustomMatcherFactories => Unit): Self = StObject.set(x, "addMatchers", js.Any.fromFunction1(value))
     }

@@ -16,7 +16,8 @@ object WEBGLCompressedTextureEtc1 {
     __obj.asInstanceOf[WEBGLCompressedTextureEtc1]
   }
   
-  extension [Self <: WEBGLCompressedTextureEtc1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WEBGLCompressedTextureEtc1] (val x: Self) extends AnyVal {
     
     inline def setCOMPRESSED_RGB_ETC1_WEBGL(value: GLenum): Self = StObject.set(x, "COMPRESSED_RGB_ETC1_WEBGL", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object XImportable {
     __obj.asInstanceOf[XImportable]
   }
   
-  extension [Self <: XImportable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XImportable] (val x: Self) extends AnyVal {
     
     inline def setCreateImportDescriptor(value: Boolean => SafeArray[PropertyValue]): Self = StObject.set(x, "createImportDescriptor", js.Any.fromFunction1(value))
     

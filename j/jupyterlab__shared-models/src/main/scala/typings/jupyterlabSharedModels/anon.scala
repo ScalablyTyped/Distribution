@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setAction(value: add | update | delete): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Delete[T]]
     }
     
-    extension [Self <: Delete[?], T](x: Self & Delete[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delete[?], T] (val x: Self & Delete[T]) extends AnyVal {
       
       inline def setDelete(value: Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object anon {
       __obj.asInstanceOf[NewValue]
     }
     
-    extension [Self <: NewValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewValue] (val x: Self) extends AnyVal {
       
       inline def setNewValue(value: INotebookMetadata): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
@@ -130,7 +134,8 @@ object anon {
       __obj.asInstanceOf[NewValueOldValue[MetadataType]]
     }
     
-    extension [Self <: NewValueOldValue[?], MetadataType](x: Self & NewValueOldValue[MetadataType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewValueOldValue[?], MetadataType] (val x: Self & NewValueOldValue[MetadataType]) extends AnyVal {
       
       inline def setNewValue(value: Partial[MetadataType]): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
@@ -155,7 +160,8 @@ object anon {
       __obj.asInstanceOf[OldValue]
     }
     
-    extension [Self <: OldValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OldValue] (val x: Self) extends AnyVal {
       
       inline def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
@@ -183,7 +189,8 @@ object anon {
       __obj.asInstanceOf[PartialINotebookMetadata]
     }
     
-    extension [Self <: PartialINotebookMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialINotebookMetadata] (val x: Self) extends AnyVal {
       
       inline def setKernelspec(value: IKernelspecMetadata): Self = StObject.set(x, "kernelspec", value.asInstanceOf[js.Any])
       

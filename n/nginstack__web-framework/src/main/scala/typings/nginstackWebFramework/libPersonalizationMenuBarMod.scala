@@ -61,7 +61,8 @@ object libPersonalizationMenuBarMod {
       __obj.asInstanceOf[MenuBar]
     }
     
-    extension [Self <: MenuBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuBar] (val x: Self) extends AnyVal {
       
       inline def setITheme(value: Any): Self = StObject.set(x, "iTheme", value.asInstanceOf[js.Any])
       

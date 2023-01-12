@@ -68,7 +68,8 @@ object ThemeParams {
     __obj.asInstanceOf[ThemeParams]
   }
   
-  extension [Self <: ThemeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeParams] (val x: Self) extends AnyVal {
     
     inline def setBg_color(value: String): Self = StObject.set(x, "bg_color", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object libTypescriptComponentsBottomNavigationBottomNavigationMod extends Shortc
       __obj.asInstanceOf[NavigationState]
     }
     
-    extension [Self <: NavigationState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationState] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -264,7 +265,8 @@ object libTypescriptComponentsBottomNavigationBottomNavigationMod extends Shortc
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setActiveColor(value: String): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
       
@@ -379,7 +381,8 @@ object libTypescriptComponentsBottomNavigationBottomNavigationMod extends Shortc
       __obj.asInstanceOf[Route]
     }
     
-    extension [Self <: Route](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
       
@@ -426,7 +429,8 @@ object libTypescriptComponentsBottomNavigationBottomNavigationMod extends Shortc
       __obj.asInstanceOf[TabPressEvent]
     }
     
-    extension [Self <: TabPressEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabPressEvent] (val x: Self) extends AnyVal {
       
       inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
       
@@ -458,7 +462,8 @@ object libTypescriptComponentsBottomNavigationBottomNavigationMod extends Shortc
       __obj.asInstanceOf[TouchableProps]
     }
     
-    extension [Self <: TouchableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchableProps] (val x: Self) extends AnyVal {
       
       inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
       

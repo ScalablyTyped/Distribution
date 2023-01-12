@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[options]
     }
     
-    extension [Self <: options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: options] (val x: Self) extends AnyVal {
       
       inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       

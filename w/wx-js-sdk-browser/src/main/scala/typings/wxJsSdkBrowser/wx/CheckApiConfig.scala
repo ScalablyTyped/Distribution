@@ -31,7 +31,8 @@ object CheckApiConfig {
     __obj.asInstanceOf[CheckApiConfig]
   }
   
-  extension [Self <: CheckApiConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckApiConfig] (val x: Self) extends AnyVal {
     
     inline def setJsApiList(value: js.Array[String]): Self = StObject.set(x, "jsApiList", value.asInstanceOf[js.Any])
     

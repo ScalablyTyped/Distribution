@@ -23,7 +23,8 @@ object ListAssociatedStacksRequest {
     __obj.asInstanceOf[ListAssociatedStacksRequest]
   }
   
-  extension [Self <: ListAssociatedStacksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssociatedStacksRequest] (val x: Self) extends AnyVal {
     
     inline def setFleetName(value: String): Self = StObject.set(x, "FleetName", value.asInstanceOf[js.Any])
     

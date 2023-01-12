@@ -50,7 +50,8 @@ object Slider {
     __obj.asInstanceOf[Slider]
   }
   
-  extension [Self <: Slider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Slider] (val x: Self) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

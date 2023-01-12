@@ -33,7 +33,8 @@ object GetServiceProfileResponse {
     __obj.asInstanceOf[GetServiceProfileResponse]
   }
   
-  extension [Self <: GetServiceProfileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceProfileResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ServiceProfileArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

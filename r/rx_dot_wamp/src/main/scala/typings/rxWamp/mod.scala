@@ -218,7 +218,8 @@ object mod {
       __obj.asInstanceOf[IWampEvent]
     }
     
-    extension [Self <: IWampEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWampEvent] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

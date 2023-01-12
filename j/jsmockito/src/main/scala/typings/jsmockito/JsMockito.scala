@@ -44,7 +44,8 @@ object JsMockito {
       __obj.asInstanceOf[JsMockitoStubBuilder]
     }
     
-    extension [Self <: JsMockitoStubBuilder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsMockitoStubBuilder] (val x: Self) extends AnyVal {
       
       inline def setThen(value: /* repeated */ js.Function1[/* obj */ Any, Any] => JsMockitoStubBuilder): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
       

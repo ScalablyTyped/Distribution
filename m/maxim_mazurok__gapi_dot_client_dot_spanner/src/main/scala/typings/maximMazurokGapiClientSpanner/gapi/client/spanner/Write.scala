@@ -29,7 +29,8 @@ object Write {
     __obj.asInstanceOf[Write]
   }
   
-  extension [Self <: Write](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Write] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

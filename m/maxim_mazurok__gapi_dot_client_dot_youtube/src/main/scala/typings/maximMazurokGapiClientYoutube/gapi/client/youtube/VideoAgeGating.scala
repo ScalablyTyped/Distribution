@@ -25,7 +25,8 @@ object VideoAgeGating {
     __obj.asInstanceOf[VideoAgeGating]
   }
   
-  extension [Self <: VideoAgeGating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoAgeGating] (val x: Self) extends AnyVal {
     
     inline def setAlcoholContent(value: Boolean): Self = StObject.set(x, "alcoholContent", value.asInstanceOf[js.Any])
     

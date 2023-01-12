@@ -23,7 +23,8 @@ object AttachStaticIpRequest {
     __obj.asInstanceOf[AttachStaticIpRequest]
   }
   
-  extension [Self <: AttachStaticIpRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachStaticIpRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     

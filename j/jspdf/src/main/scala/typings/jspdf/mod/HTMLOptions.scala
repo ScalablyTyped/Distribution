@@ -39,7 +39,8 @@ object HTMLOptions {
     __obj.asInstanceOf[HTMLOptions]
   }
   
-  extension [Self <: HTMLOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoPaging(value: Boolean | slice | text): Self = StObject.set(x, "autoPaging", value.asInstanceOf[js.Any])
     

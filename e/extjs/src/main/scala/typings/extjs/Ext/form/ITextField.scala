@@ -158,7 +158,8 @@ object ITextField {
     __obj.asInstanceOf[ITextField]
   }
   
-  extension [Self <: ITextField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextField] (val x: Self) extends AnyVal {
     
     inline def setAllowBlank(value: Boolean): Self = StObject.set(x, "allowBlank", value.asInstanceOf[js.Any])
     

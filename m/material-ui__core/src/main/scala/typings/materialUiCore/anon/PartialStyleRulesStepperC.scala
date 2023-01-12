@@ -33,7 +33,8 @@ object PartialStyleRulesStepperC {
     __obj.asInstanceOf[PartialStyleRulesStepperC]
   }
   
-  extension [Self <: PartialStyleRulesStepperC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesStepperC] (val x: Self) extends AnyVal {
     
     inline def setAlternativeLabel(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

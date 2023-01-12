@@ -47,7 +47,8 @@ object MouseSelectionStyle {
     __obj.asInstanceOf[MouseSelectionStyle]
   }
   
-  extension [Self <: MouseSelectionStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseSelectionStyle] (val x: Self) extends AnyVal {
     
     inline def setGet(value: (MouseEvent, Boolean, Boolean) => EditorSelection): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
     

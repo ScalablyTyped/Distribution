@@ -44,7 +44,8 @@ object IgPivotViewPivotGridPanel {
     __obj.asInstanceOf[IgPivotViewPivotGridPanel]
   }
   
-  extension [Self <: IgPivotViewPivotGridPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPivotViewPivotGridPanel] (val x: Self) extends AnyVal {
     
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     

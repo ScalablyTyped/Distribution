@@ -43,7 +43,8 @@ object FileOperationOptions {
     __obj.asInstanceOf[FileOperationOptions]
   }
   
-  extension [Self <: FileOperationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileOperationOptions] (val x: Self) extends AnyVal {
     
     inline def setDidCreate(value: FileOperationRegistrationOptions): Self = StObject.set(x, "didCreate", value.asInstanceOf[js.Any])
     

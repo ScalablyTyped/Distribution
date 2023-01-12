@@ -100,7 +100,8 @@ object DataSourceConfiguration {
     __obj.asInstanceOf[DataSourceConfiguration]
   }
   
-  extension [Self <: DataSourceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAlfrescoConfiguration(value: AlfrescoConfiguration): Self = StObject.set(x, "AlfrescoConfiguration", value.asInstanceOf[js.Any])
     

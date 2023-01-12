@@ -18,7 +18,8 @@ object AwsEc2NetworkInterfaceIpV6AddressDetail {
     __obj.asInstanceOf[AwsEc2NetworkInterfaceIpV6AddressDetail]
   }
   
-  extension [Self <: AwsEc2NetworkInterfaceIpV6AddressDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2NetworkInterfaceIpV6AddressDetail] (val x: Self) extends AnyVal {
     
     inline def setIpV6Address(value: NonEmptyString): Self = StObject.set(x, "IpV6Address", value.asInstanceOf[js.Any])
     

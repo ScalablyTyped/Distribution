@@ -20,7 +20,8 @@ object TypeofKanban {
     __obj.asInstanceOf[TypeofKanban]
   }
   
-  extension [Self <: TypeofKanban](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofKanban] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Kanban): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

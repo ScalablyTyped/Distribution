@@ -136,7 +136,8 @@ object mod {
       __obj.asInstanceOf[ColorizeOptions]
     }
     
-    extension [Self <: ColorizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorizeOptions] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -218,7 +219,8 @@ object mod {
       __obj.asInstanceOf[JsonOptions]
     }
     
-    extension [Self <: JsonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonOptions] (val x: Self) extends AnyVal {
       
       inline def setBigint(value: Boolean): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
       
@@ -272,7 +274,8 @@ object mod {
       __obj.asInstanceOf[LabelOptions]
     }
     
-    extension [Self <: LabelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelOptions] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -308,7 +311,8 @@ object mod {
       __obj.asInstanceOf[MetadataOptions]
     }
     
-    extension [Self <: MetadataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataOptions] (val x: Self) extends AnyVal {
       
       inline def setFillExcept(value: js.Array[String]): Self = StObject.set(x, "fillExcept", value.asInstanceOf[js.Any])
       
@@ -343,7 +347,8 @@ object mod {
       __obj.asInstanceOf[PadLevelsOptions]
     }
     
-    extension [Self <: PadLevelsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PadLevelsOptions] (val x: Self) extends AnyVal {
       
       inline def setLevels(value: Record[String, Double]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
       
@@ -371,7 +376,8 @@ object mod {
       __obj.asInstanceOf[PrettyPrintOptions]
     }
     
-    extension [Self <: PrettyPrintOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrettyPrintOptions] (val x: Self) extends AnyVal {
       
       inline def setColorize(value: Boolean): Self = StObject.set(x, "colorize", value.asInstanceOf[js.Any])
       
@@ -404,7 +410,8 @@ object mod {
       __obj.asInstanceOf[TimestampOptions]
     }
     
-    extension [Self <: TimestampOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimestampOptions] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -439,7 +446,8 @@ object mod {
       __obj.asInstanceOf[TransformableInfo]
     }
     
-    extension [Self <: TransformableInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformableInfo] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -471,7 +479,8 @@ object mod {
       __obj.asInstanceOf[UncolorizeOptions]
     }
     
-    extension [Self <: UncolorizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UncolorizeOptions] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: Boolean): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

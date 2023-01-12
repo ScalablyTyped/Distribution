@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[EnvironmentContext]
     }
     
-    extension [Self <: EnvironmentContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvironmentContext] (val x: Self) extends AnyVal {
       
       inline def setStore(value: js.Array[MIMEHeader]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object mod {
       __obj.asInstanceOf[MIMEHeader]
     }
     
-    extension [Self <: MIMEHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MIMEHeader] (val x: Self) extends AnyVal {
       
       inline def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object mod {
       __obj.asInstanceOf[MIMEMessageContent]
     }
     
-    extension [Self <: MIMEMessageContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MIMEMessageContent] (val x: Self) extends AnyVal {
       
       inline def setDump(value: (PartialEnvironmentContext, MailboxBoundaries) => String): Self = StObject.set(x, "dump", js.Any.fromFunction2(value))
       
@@ -165,7 +168,8 @@ object mod {
       __obj.asInstanceOf[MailLocationData]
     }
     
-    extension [Self <: MailLocationData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailLocationData] (val x: Self) extends AnyVal {
       
       inline def setAddr(value: String): Self = StObject.set(x, "addr", value.asInstanceOf[js.Any])
       
@@ -203,7 +207,8 @@ object mod {
       __obj.asInstanceOf[Mailbox]
     }
     
-    extension [Self <: Mailbox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mailbox] (val x: Self) extends AnyVal {
       
       inline def setCreateMailbox(value: () => Unit): Self = StObject.set(x, "createMailbox", js.Any.fromFunction0(value))
       
@@ -232,7 +237,8 @@ object mod {
       __obj.asInstanceOf[MailboxBoundaries]
     }
     
-    extension [Self <: MailboxBoundaries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailboxBoundaries] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -263,7 +269,8 @@ object mod {
       __obj.asInstanceOf[MailboxOptions]
     }
     
-    extension [Self <: MailboxOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailboxOptions] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -335,7 +342,8 @@ object mod {
       __obj.asInstanceOf[RecipientOptions]
     }
     
-    extension [Self <: RecipientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecipientOptions] (val x: Self) extends AnyVal {
       
       inline def setType(value: RecipientType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

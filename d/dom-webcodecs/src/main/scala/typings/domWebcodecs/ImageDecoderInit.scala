@@ -30,7 +30,8 @@ object ImageDecoderInit {
     __obj.asInstanceOf[ImageDecoderInit]
   }
   
-  extension [Self <: ImageDecoderInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageDecoderInit] (val x: Self) extends AnyVal {
     
     inline def setColorSpaceConversion(value: ColorSpaceConversion): Self = StObject.set(x, "colorSpaceConversion", value.asInstanceOf[js.Any])
     

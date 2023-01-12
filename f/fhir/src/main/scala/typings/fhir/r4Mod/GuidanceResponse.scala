@@ -121,7 +121,8 @@ object GuidanceResponse {
     __obj.asInstanceOf[GuidanceResponse]
   }
   
-  extension [Self <: GuidanceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GuidanceResponse] (val x: Self) extends AnyVal {
     
     inline def setDataRequirement(value: js.Array[DataRequirement]): Self = StObject.set(x, "dataRequirement", value.asInstanceOf[js.Any])
     

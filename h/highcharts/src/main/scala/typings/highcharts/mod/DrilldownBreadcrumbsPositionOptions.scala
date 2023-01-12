@@ -35,7 +35,8 @@ object DrilldownBreadcrumbsPositionOptions {
     __obj.asInstanceOf[DrilldownBreadcrumbsPositionOptions]
   }
   
-  extension [Self <: DrilldownBreadcrumbsPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrilldownBreadcrumbsPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

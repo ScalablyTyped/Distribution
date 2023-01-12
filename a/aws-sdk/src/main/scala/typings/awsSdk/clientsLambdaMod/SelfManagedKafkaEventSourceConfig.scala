@@ -18,7 +18,8 @@ object SelfManagedKafkaEventSourceConfig {
     __obj.asInstanceOf[SelfManagedKafkaEventSourceConfig]
   }
   
-  extension [Self <: SelfManagedKafkaEventSourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelfManagedKafkaEventSourceConfig] (val x: Self) extends AnyVal {
     
     inline def setConsumerGroupId(value: URI): Self = StObject.set(x, "ConsumerGroupId", value.asInstanceOf[js.Any])
     

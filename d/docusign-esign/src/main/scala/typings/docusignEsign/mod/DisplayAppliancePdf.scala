@@ -31,7 +31,8 @@ object DisplayAppliancePdf {
     __obj.asInstanceOf[DisplayAppliancePdf]
   }
   
-  extension [Self <: DisplayAppliancePdf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayAppliancePdf] (val x: Self) extends AnyVal {
     
     inline def setAttachmentInfo(value: DisplayApplianceSignerAttachment): Self = StObject.set(x, "attachmentInfo", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetRelationalDatabaseLogStreamsResult {
     __obj.asInstanceOf[GetRelationalDatabaseLogStreamsResult]
   }
   
-  extension [Self <: GetRelationalDatabaseLogStreamsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRelationalDatabaseLogStreamsResult] (val x: Self) extends AnyVal {
     
     inline def setLogStreams(value: StringList): Self = StObject.set(x, "logStreams", value.asInstanceOf[js.Any])
     

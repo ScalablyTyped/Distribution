@@ -15,7 +15,8 @@ object CreateCacheSecurityGroupResult {
     __obj.asInstanceOf[CreateCacheSecurityGroupResult]
   }
   
-  extension [Self <: CreateCacheSecurityGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCacheSecurityGroupResult] (val x: Self) extends AnyVal {
     
     inline def setCacheSecurityGroup(value: CacheSecurityGroup): Self = StObject.set(x, "CacheSecurityGroup", value.asInstanceOf[js.Any])
     

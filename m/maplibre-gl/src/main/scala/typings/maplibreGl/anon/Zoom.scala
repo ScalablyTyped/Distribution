@@ -17,7 +17,8 @@ object Zoom {
     __obj.asInstanceOf[Zoom]
   }
   
-  extension [Self <: Zoom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Zoom] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String | Double | Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

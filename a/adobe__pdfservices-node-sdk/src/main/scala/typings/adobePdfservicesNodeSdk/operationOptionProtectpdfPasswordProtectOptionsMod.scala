@@ -72,7 +72,8 @@ object operationOptionProtectpdfPasswordProtectOptionsMod {
       __obj.asInstanceOf[ContentEncryption]
     }
     
-    extension [Self <: ContentEncryption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentEncryption] (val x: Self) extends AnyVal {
       
       inline def setALL_CONTENT(value: ALL_CONTENT): Self = StObject.set(x, "ALL_CONTENT", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object operationOptionProtectpdfPasswordProtectOptionsMod {
       __obj.asInstanceOf[EncryptionAlgorithm]
     }
     
-    extension [Self <: EncryptionAlgorithm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptionAlgorithm] (val x: Self) extends AnyVal {
       
       inline def setAES_128(value: AES_128): Self = StObject.set(x, "AES_128", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object operationOptionProtectpdfPasswordProtectOptionsMod {
       __obj.asInstanceOf[Permission]
     }
     
-    extension [Self <: Permission](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Permission] (val x: Self) extends AnyVal {
       
       inline def setCOPY_CONTENT(value: COPY_CONTENT): Self = StObject.set(x, "COPY_CONTENT", value.asInstanceOf[js.Any])
       

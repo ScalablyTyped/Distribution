@@ -46,7 +46,8 @@ object PivotItemData {
     __obj.asInstanceOf[PivotItemData]
   }
   
-  extension [Self <: PivotItemData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotItemData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

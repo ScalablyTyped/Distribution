@@ -23,7 +23,8 @@ object StartExecutionOutput {
     __obj.asInstanceOf[StartExecutionOutput]
   }
   
-  extension [Self <: StartExecutionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartExecutionOutput] (val x: Self) extends AnyVal {
     
     inline def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
     

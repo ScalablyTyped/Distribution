@@ -23,7 +23,8 @@ object AwsEc2VpnConnectionRoutesDetails {
     __obj.asInstanceOf[AwsEc2VpnConnectionRoutesDetails]
   }
   
-  extension [Self <: AwsEc2VpnConnectionRoutesDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2VpnConnectionRoutesDetails] (val x: Self) extends AnyVal {
     
     inline def setDestinationCidrBlock(value: NonEmptyString): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     

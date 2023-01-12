@@ -20,7 +20,8 @@ object CASESENSITIVE {
     __obj.asInstanceOf[CASESENSITIVE]
   }
   
-  extension [Self <: CASESENSITIVE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CASESENSITIVE] (val x: Self) extends AnyVal {
     
     inline def setCASESENSITIVE(value: `true`): Self = StObject.set(x, "CASESENSITIVE", value.asInstanceOf[js.Any])
     

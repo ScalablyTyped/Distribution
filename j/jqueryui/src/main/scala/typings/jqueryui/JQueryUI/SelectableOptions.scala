@@ -30,7 +30,8 @@ object SelectableOptions {
     __obj.asInstanceOf[SelectableOptions]
   }
   
-  extension [Self <: SelectableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectableOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoRefresh(value: Boolean): Self = StObject.set(x, "autoRefresh", value.asInstanceOf[js.Any])
     

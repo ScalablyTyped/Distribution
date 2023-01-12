@@ -28,7 +28,8 @@ object ListTagsInput {
     __obj.asInstanceOf[ListTagsInput]
   }
   
-  extension [Self <: ListTagsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GoogleDevtoolsRemotebuildexecutionAdminV1alphaGetWorkerPoolRequest {
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaGetWorkerPoolRequest]
   }
   
-  extension [Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaGetWorkerPoolRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaGetWorkerPoolRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object EnvironmentMatrix {
     __obj.asInstanceOf[EnvironmentMatrix]
   }
   
-  extension [Self <: EnvironmentMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentMatrix] (val x: Self) extends AnyVal {
     
     inline def setAndroidDeviceList(value: AndroidDeviceList): Self = StObject.set(x, "androidDeviceList", value.asInstanceOf[js.Any])
     

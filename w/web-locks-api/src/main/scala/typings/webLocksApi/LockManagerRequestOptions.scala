@@ -24,7 +24,8 @@ object LockManagerRequestOptions {
     __obj.asInstanceOf[LockManagerRequestOptions]
   }
   
-  extension [Self <: LockManagerRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LockManagerRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setIfAvailable(value: Boolean): Self = StObject.set(x, "ifAvailable", value.asInstanceOf[js.Any])
     

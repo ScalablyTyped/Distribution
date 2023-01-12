@@ -18,7 +18,8 @@ object BillingGroupProperties {
     __obj.asInstanceOf[BillingGroupProperties]
   }
   
-  extension [Self <: BillingGroupProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BillingGroupProperties] (val x: Self) extends AnyVal {
     
     inline def setBillingGroupDescription(value: BillingGroupDescription): Self = StObject.set(x, "billingGroupDescription", value.asInstanceOf[js.Any])
     

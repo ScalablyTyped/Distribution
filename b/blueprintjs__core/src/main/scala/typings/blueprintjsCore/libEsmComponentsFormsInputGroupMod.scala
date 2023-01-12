@@ -226,7 +226,8 @@ object libEsmComponentsFormsInputGroupMod {
       __obj.asInstanceOf[IInputGroupProps]
     }
     
-    extension [Self <: IInputGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInputGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAsyncControl(value: Boolean): Self = StObject.set(x, "asyncControl", value.asInstanceOf[js.Any])
       
@@ -793,7 +794,8 @@ object libEsmComponentsFormsInputGroupMod {
       __obj.asInstanceOf[IInputGroupProps2]
     }
     
-    extension [Self <: IInputGroupProps2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInputGroupProps2] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1692,7 +1694,8 @@ object libEsmComponentsFormsInputGroupMod {
       __obj.asInstanceOf[IInputGroupState]
     }
     
-    extension [Self <: IInputGroupState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInputGroupState] (val x: Self) extends AnyVal {
       
       inline def setLeftElementWidth(value: Double): Self = StObject.set(x, "leftElementWidth", value.asInstanceOf[js.Any])
       

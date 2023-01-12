@@ -22,7 +22,8 @@ object GetStorageInfoSuccessCallbackOption {
     __obj.asInstanceOf[GetStorageInfoSuccessCallbackOption]
   }
   
-  extension [Self <: GetStorageInfoSuccessCallbackOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStorageInfoSuccessCallbackOption] (val x: Self) extends AnyVal {
     
     inline def setCurrentSize(value: Double): Self = StObject.set(x, "currentSize", value.asInstanceOf[js.Any])
     

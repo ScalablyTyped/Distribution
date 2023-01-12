@@ -74,7 +74,8 @@ object pluginsAutoRowSizeAutoRowSizeMod {
       __obj.asInstanceOf[DetailedSettings]
     }
     
-    extension [Self <: DetailedSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailedSettings] (val x: Self) extends AnyVal {
       
       inline def setSyncLimit(value: String | Double): Self = StObject.set(x, "syncLimit", value.asInstanceOf[js.Any])
       

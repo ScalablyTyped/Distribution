@@ -46,7 +46,8 @@ object buildHermesBundlerMod {
       __obj.asInstanceOf[HermesBundleOutput]
     }
     
-    extension [Self <: HermesBundleOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HermesBundleOutput] (val x: Self) extends AnyVal {
       
       inline def setHbc(value: js.typedarray.Uint8Array): Self = StObject.set(x, "hbc", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object ListJobsFilterTerm {
     __obj.asInstanceOf[ListJobsFilterTerm]
   }
   
-  extension [Self <: ListJobsFilterTerm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListJobsFilterTerm] (val x: Self) extends AnyVal {
     
     inline def setComparator(value: JobComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     

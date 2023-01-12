@@ -38,7 +38,8 @@ object TouchBarSliderConstructorOptions {
     __obj.asInstanceOf[TouchBarSliderConstructorOptions]
   }
   
-  extension [Self <: TouchBarSliderConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchBarSliderConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: /* newValue */ Double => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

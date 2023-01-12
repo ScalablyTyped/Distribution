@@ -20,7 +20,8 @@ object RuntimeIntent {
     __obj.asInstanceOf[RuntimeIntent]
   }
   
-  extension [Self <: RuntimeIntent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeIntent] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

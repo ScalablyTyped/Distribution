@@ -27,7 +27,8 @@ object FixedPrice {
     __obj.asInstanceOf[FixedPrice]
   }
   
-  extension [Self <: FixedPrice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixedPrice] (val x: Self) extends AnyVal {
     
     inline def setLocal_price(value: Price[FiatCurrency]): Self = StObject.set(x, "local_price", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object sizeRangeSizeRangeParams {
     __obj.asInstanceOf[sizeRangeSizeRangeParams]
   }
   
-  extension [Self <: sizeRangeSizeRangeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sizeRangeSizeRangeParams] (val x: Self) extends AnyVal {
     
     inline def setForBinning(value: Boolean): Self = StObject.set(x, "forBinning", value.asInstanceOf[js.Any])
     

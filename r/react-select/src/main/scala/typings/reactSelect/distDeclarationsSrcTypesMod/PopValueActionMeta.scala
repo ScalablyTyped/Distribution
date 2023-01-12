@@ -22,7 +22,8 @@ object PopValueActionMeta {
     __obj.asInstanceOf[PopValueActionMeta[Option]]
   }
   
-  extension [Self <: PopValueActionMeta[?], Option](x: Self & PopValueActionMeta[Option]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopValueActionMeta[?], Option] (val x: Self & PopValueActionMeta[Option]) extends AnyVal {
     
     inline def setAction(value: `pop-value`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

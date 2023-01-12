@@ -33,7 +33,8 @@ object CreateResourceDataSyncRequest {
     __obj.asInstanceOf[CreateResourceDataSyncRequest]
   }
   
-  extension [Self <: CreateResourceDataSyncRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateResourceDataSyncRequest] (val x: Self) extends AnyVal {
     
     inline def setS3Destination(value: ResourceDataSyncS3Destination): Self = StObject.set(x, "S3Destination", value.asInstanceOf[js.Any])
     

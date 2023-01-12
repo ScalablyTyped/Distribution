@@ -19,7 +19,8 @@ object MediaStreamError {
     __obj.asInstanceOf[MediaStreamError]
   }
   
-  extension [Self <: MediaStreamError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamError] (val x: Self) extends AnyVal {
     
     inline def setConstraintName(value: String): Self = StObject.set(x, "constraintName", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ManagedEBookAssignment {
     __obj.asInstanceOf[ManagedEBookAssignment]
   }
   
-  extension [Self <: ManagedEBookAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedEBookAssignment] (val x: Self) extends AnyVal {
     
     inline def setInstallIntent(value: InstallIntent): Self = StObject.set(x, "installIntent", value.asInstanceOf[js.Any])
     

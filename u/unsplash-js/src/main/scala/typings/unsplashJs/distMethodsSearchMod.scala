@@ -91,7 +91,8 @@ object distMethodsSearchMod {
       __obj.asInstanceOf[SearchParams]
     }
     
-    extension [Self <: SearchParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchParams] (val x: Self) extends AnyVal {
       
       inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object distMethodsSearchMod {
       __obj.asInstanceOf[SearchPhotosParams]
     }
     
-    extension [Self <: SearchPhotosParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchPhotosParams] (val x: Self) extends AnyVal {
       
       inline def setCollectionIds(value: js.Array[String]): Self = StObject.set(x, "collectionIds", value.asInstanceOf[js.Any])
       

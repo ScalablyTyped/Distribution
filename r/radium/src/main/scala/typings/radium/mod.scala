@@ -79,7 +79,8 @@ object mod {
         __obj.asInstanceOf[RadiumConfig]
       }
       
-      extension [Self <: RadiumConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RadiumConfig] (val x: Self) extends AnyVal {
         
         inline def setMatchMedia(value: /* mediaQuery */ String => MediaQueryList): Self = StObject.set(x, "matchMedia", js.Any.fromFunction1(value))
         
@@ -125,7 +126,8 @@ object mod {
         __obj.asInstanceOf[RadiumTestMode]
       }
       
-      extension [Self <: RadiumTestMode](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RadiumTestMode] (val x: Self) extends AnyVal {
         
         inline def setClearState(value: () => Unit): Self = StObject.set(x, "clearState", js.Any.fromFunction0(value))
         
@@ -159,7 +161,8 @@ object mod {
         __obj.asInstanceOf[StyleProps]
       }
       
-      extension [Self <: StyleProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StyleProps] (val x: Self) extends AnyVal {
         
         inline def setRules(value: CSSProperties | StyleRules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
         
@@ -184,7 +187,8 @@ object mod {
         __obj.asInstanceOf[StyleRootProps]
       }
       
-      extension [Self <: StyleRootProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StyleRootProps] (val x: Self) extends AnyVal {
         
         inline def setRadiumConfig(value: RadiumConfig): Self = StObject.set(x, "radiumConfig", value.asInstanceOf[js.Any])
         

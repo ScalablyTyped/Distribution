@@ -30,7 +30,8 @@ object lists {
       __obj.asInstanceOf[MemberAddMultipleData]
     }
     
-    extension [Self <: MemberAddMultipleData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemberAddMultipleData] (val x: Self) extends AnyVal {
       
       inline def setMembers(value: js.Array[Address]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object lists {
       __obj.asInstanceOf[MemberCreateData]
     }
     
-    extension [Self <: MemberCreateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemberCreateData] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object lists {
       __obj.asInstanceOf[MemberUpdateData]
     }
     
-    extension [Self <: MemberUpdateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemberUpdateData] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

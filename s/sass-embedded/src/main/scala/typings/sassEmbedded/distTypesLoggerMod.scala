@@ -48,7 +48,8 @@ object distTypesLoggerMod {
     @js.native
     val silent: Logger = js.native
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: (/* message */ String, /* options */ Span) => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
       

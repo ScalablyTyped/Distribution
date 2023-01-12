@@ -28,7 +28,8 @@ object ActivatePipelineInput {
     __obj.asInstanceOf[ActivatePipelineInput]
   }
   
-  extension [Self <: ActivatePipelineInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivatePipelineInput] (val x: Self) extends AnyVal {
     
     inline def setParameterValues(value: ParameterValueList): Self = StObject.set(x, "parameterValues", value.asInstanceOf[js.Any])
     

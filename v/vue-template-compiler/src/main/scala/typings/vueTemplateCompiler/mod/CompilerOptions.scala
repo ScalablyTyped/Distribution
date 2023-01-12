@@ -29,7 +29,8 @@ object CompilerOptions {
     __obj.asInstanceOf[CompilerOptions]
   }
   
-  extension [Self <: CompilerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompilerOptions] (val x: Self) extends AnyVal {
     
     inline def setDirectives(value: Record[String, DirectiveFunction]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     

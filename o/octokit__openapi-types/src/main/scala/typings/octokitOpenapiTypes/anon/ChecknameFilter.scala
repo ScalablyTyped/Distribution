@@ -33,7 +33,8 @@ object ChecknameFilter {
     __obj.asInstanceOf[ChecknameFilter]
   }
   
-  extension [Self <: ChecknameFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChecknameFilter] (val x: Self) extends AnyVal {
     
     inline def setCheck_name(value: String): Self = StObject.set(x, "check_name", value.asInstanceOf[js.Any])
     

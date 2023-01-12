@@ -78,7 +78,8 @@ object UpdateStackRequest {
     __obj.asInstanceOf[UpdateStackRequest]
   }
   
-  extension [Self <: UpdateStackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateStackRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessEndpoints(value: AccessEndpointList): Self = StObject.set(x, "AccessEndpoints", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object libSpritesheetAssetMod {
       __obj.asInstanceOf[SpriteSheetJson]
     }
     
-    extension [Self <: SpriteSheetJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpriteSheetJson] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: Image): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }

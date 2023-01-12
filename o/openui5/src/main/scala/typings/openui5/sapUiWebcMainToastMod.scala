@@ -352,7 +352,8 @@ object sapUiWebcMainToastMod {
       __obj.asInstanceOf[ToastSettings]
     }
     
-    extension [Self <: ToastSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastSettings] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

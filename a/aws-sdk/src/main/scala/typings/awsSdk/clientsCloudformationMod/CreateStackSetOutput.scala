@@ -18,7 +18,8 @@ object CreateStackSetOutput {
     __obj.asInstanceOf[CreateStackSetOutput]
   }
   
-  extension [Self <: CreateStackSetOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStackSetOutput] (val x: Self) extends AnyVal {
     
     inline def setStackSetId(value: StackSetId): Self = StObject.set(x, "StackSetId", value.asInstanceOf[js.Any])
     

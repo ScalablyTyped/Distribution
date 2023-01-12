@@ -28,7 +28,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Bytewise]
     }
     
-    extension [Self <: Bytewise](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bytewise] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: Buffer => Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       

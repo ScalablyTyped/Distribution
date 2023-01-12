@@ -46,7 +46,8 @@ object AppsDynamiteQuotedMessageMetadata {
     __obj.asInstanceOf[AppsDynamiteQuotedMessageMetadata]
   }
   
-  extension [Self <: AppsDynamiteQuotedMessageMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteQuotedMessageMetadata] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: js.Array[AppsDynamiteAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

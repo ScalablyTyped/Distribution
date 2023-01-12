@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[CropOnlyFrames]
     }
     
-    extension [Self <: CropOnlyFrames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CropOnlyFrames] (val x: Self) extends AnyVal {
       
       inline def setCropOnlyFrames(value: Boolean): Self = StObject.set(x, "cropOnlyFrames", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object anon {
       __obj.asInstanceOf[East]
     }
     
-    extension [Self <: East](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: East] (val x: Self) extends AnyVal {
       
       inline def setEast(value: Boolean): Self = StObject.set(x, "east", value.asInstanceOf[js.Any])
       

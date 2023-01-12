@@ -73,7 +73,8 @@ object EndpointBatchItem {
     __obj.asInstanceOf[EndpointBatchItem]
   }
   
-  extension [Self <: EndpointBatchItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointBatchItem] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: string): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

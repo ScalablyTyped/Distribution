@@ -19,7 +19,8 @@ object StringParamtypegenundefin {
     __obj.asInstanceOf[StringParamtypegenundefin]
   }
   
-  extension [Self <: StringParamtypegenundefin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringParamtypegenundefin] (val x: Self) extends AnyVal {
     
     inline def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
     

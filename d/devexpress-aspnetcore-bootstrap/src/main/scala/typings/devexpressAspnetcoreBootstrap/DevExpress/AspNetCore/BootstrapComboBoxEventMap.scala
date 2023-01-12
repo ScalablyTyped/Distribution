@@ -66,7 +66,8 @@ object BootstrapComboBoxEventMap {
     __obj.asInstanceOf[BootstrapComboBoxEventMap]
   }
   
-  extension [Self <: BootstrapComboBoxEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapComboBoxEventMap] (val x: Self) extends AnyVal {
     
     inline def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     

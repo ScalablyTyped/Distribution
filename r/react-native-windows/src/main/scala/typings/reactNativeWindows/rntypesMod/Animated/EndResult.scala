@@ -15,7 +15,8 @@ object EndResult {
     __obj.asInstanceOf[EndResult]
   }
   
-  extension [Self <: EndResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndResult] (val x: Self) extends AnyVal {
     
     inline def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
   }

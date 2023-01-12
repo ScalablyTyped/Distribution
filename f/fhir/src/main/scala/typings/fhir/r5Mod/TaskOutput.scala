@@ -318,7 +318,8 @@ object TaskOutput {
     __obj.asInstanceOf[TaskOutput]
   }
   
-  extension [Self <: TaskOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskOutput] (val x: Self) extends AnyVal {
     
     inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

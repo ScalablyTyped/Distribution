@@ -28,7 +28,8 @@ object ClientContributionNode {
     __obj.asInstanceOf[ClientContributionNode]
   }
   
-  extension [Self <: ClientContributionNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientContributionNode] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

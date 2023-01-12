@@ -75,7 +75,8 @@ object libCjsPuppeteerCommonNetworkEventManagerMod {
       __obj.asInstanceOf[QueuedEventGroup]
     }
     
-    extension [Self <: QueuedEventGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueuedEventGroup] (val x: Self) extends AnyVal {
       
       inline def setLoadingFailedEvent(value: LoadingFailedEvent): Self = StObject.set(x, "loadingFailedEvent", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object libCjsPuppeteerCommonNetworkEventManagerMod {
       __obj.asInstanceOf[RedirectInfo]
     }
     
-    extension [Self <: RedirectInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectInfo] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: RequestWillBeSentEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       

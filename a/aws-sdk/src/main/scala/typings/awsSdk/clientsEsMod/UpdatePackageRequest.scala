@@ -30,7 +30,8 @@ object UpdatePackageRequest {
     __obj.asInstanceOf[UpdatePackageRequest]
   }
   
-  extension [Self <: UpdatePackageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePackageRequest] (val x: Self) extends AnyVal {
     
     inline def setCommitMessage(value: CommitMessage): Self = StObject.set(x, "CommitMessage", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object LanguageAriaLegacy {
     __obj.asInstanceOf[LanguageAriaLegacy]
   }
   
-  extension [Self <: LanguageAriaLegacy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageAriaLegacy] (val x: Self) extends AnyVal {
     
     inline def setSSortAscending(value: String): Self = StObject.set(x, "sSortAscending", value.asInstanceOf[js.Any])
     

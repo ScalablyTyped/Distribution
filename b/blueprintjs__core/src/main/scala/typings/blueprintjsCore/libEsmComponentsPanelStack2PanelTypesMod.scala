@@ -39,7 +39,8 @@ object libEsmComponentsPanelStack2PanelTypesMod {
       __obj.asInstanceOf[Panel[P]]
     }
     
-    extension [Self <: Panel[?], P](x: Self & Panel[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Panel[?], P] (val x: Self & Panel[P]) extends AnyVal {
       
       inline def setHtmlTitle(value: String): Self = StObject.set(x, "htmlTitle", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object libEsmComponentsPanelStack2PanelTypesMod {
       __obj.asInstanceOf[PanelActions]
     }
     
-    extension [Self <: PanelActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelActions] (val x: Self) extends AnyVal {
       
       inline def setClosePanel(value: () => Unit): Self = StObject.set(x, "closePanel", js.Any.fromFunction0(value))
       

@@ -19,7 +19,8 @@ object PageSize {
     __obj.asInstanceOf[PageSize]
   }
   
-  extension [Self <: PageSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageSize] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     

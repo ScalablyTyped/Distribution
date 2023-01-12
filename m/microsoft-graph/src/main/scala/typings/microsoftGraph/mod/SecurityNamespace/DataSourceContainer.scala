@@ -35,7 +35,8 @@ object DataSourceContainer {
     __obj.asInstanceOf[DataSourceContainer]
   }
   
-  extension [Self <: DataSourceContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceContainer] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

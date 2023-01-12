@@ -30,7 +30,8 @@ object Areas {
     __obj.asInstanceOf[Areas]
   }
   
-  extension [Self <: Areas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Areas] (val x: Self) extends AnyVal {
     
     inline def setActions(value: BoxProps): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

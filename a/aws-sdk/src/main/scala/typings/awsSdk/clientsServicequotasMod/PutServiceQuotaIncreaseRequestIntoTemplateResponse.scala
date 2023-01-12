@@ -18,7 +18,8 @@ object PutServiceQuotaIncreaseRequestIntoTemplateResponse {
     __obj.asInstanceOf[PutServiceQuotaIncreaseRequestIntoTemplateResponse]
   }
   
-  extension [Self <: PutServiceQuotaIncreaseRequestIntoTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutServiceQuotaIncreaseRequestIntoTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setServiceQuotaIncreaseRequestInTemplate(value: ServiceQuotaIncreaseRequestInTemplate): Self = StObject.set(x, "ServiceQuotaIncreaseRequestInTemplate", value.asInstanceOf[js.Any])
     

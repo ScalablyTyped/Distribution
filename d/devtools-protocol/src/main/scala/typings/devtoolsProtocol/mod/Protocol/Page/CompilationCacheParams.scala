@@ -24,7 +24,8 @@ object CompilationCacheParams {
     __obj.asInstanceOf[CompilationCacheParams]
   }
   
-  extension [Self <: CompilationCacheParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompilationCacheParams] (val x: Self) extends AnyVal {
     
     inline def setEager(value: Boolean): Self = StObject.set(x, "eager", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CountAction {
     __obj.asInstanceOf[CountAction]
   }
   
-  extension [Self <: CountAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountAction] (val x: Self) extends AnyVal {
     
     inline def setCustomRequestHandling(value: CustomRequestHandling): Self = StObject.set(x, "CustomRequestHandling", value.asInstanceOf[js.Any])
     

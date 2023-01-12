@@ -34,7 +34,8 @@ object LeaderboardScores {
     __obj.asInstanceOf[LeaderboardScores]
   }
   
-  extension [Self <: LeaderboardScores](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeaderboardScores] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[LeaderboardEntry]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

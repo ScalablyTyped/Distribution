@@ -137,7 +137,8 @@ object BarCommonProps {
     __obj.asInstanceOf[BarCommonProps[RawDatum]]
   }
   
-  extension [Self <: BarCommonProps[?], RawDatum](x: Self & BarCommonProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarCommonProps[?], RawDatum] (val x: Self & BarCommonProps[RawDatum]) extends AnyVal {
     
     inline def setAnnotations(value: js.Array[AnnotationMatcher[ComputedBarDatum[RawDatum]]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

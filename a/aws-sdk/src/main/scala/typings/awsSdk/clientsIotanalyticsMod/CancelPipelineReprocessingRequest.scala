@@ -23,7 +23,8 @@ object CancelPipelineReprocessingRequest {
     __obj.asInstanceOf[CancelPipelineReprocessingRequest]
   }
   
-  extension [Self <: CancelPipelineReprocessingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelPipelineReprocessingRequest] (val x: Self) extends AnyVal {
     
     inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     

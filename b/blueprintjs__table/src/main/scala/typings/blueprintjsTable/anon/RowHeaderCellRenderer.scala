@@ -16,7 +16,8 @@ object RowHeaderCellRenderer {
     __obj.asInstanceOf[RowHeaderCellRenderer]
   }
   
-  extension [Self <: RowHeaderCellRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowHeaderCellRenderer] (val x: Self) extends AnyVal {
     
     inline def setRowHeaderCellRenderer(value: /* rowIndex */ Double => Element): Self = StObject.set(x, "rowHeaderCellRenderer", js.Any.fromFunction1(value))
   }

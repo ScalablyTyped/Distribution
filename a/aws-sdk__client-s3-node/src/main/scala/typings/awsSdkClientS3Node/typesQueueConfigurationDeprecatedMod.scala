@@ -52,7 +52,8 @@ object typesQueueConfigurationDeprecatedMod {
       __obj.asInstanceOf[QueueConfigurationDeprecated]
     }
     
-    extension [Self <: QueueConfigurationDeprecated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueConfigurationDeprecated] (val x: Self) extends AnyVal {
       
       inline def setEvent(
         value: s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
@@ -105,7 +106,8 @@ object typesQueueConfigurationDeprecatedMod {
       __obj.asInstanceOf[UnmarshalledQueueConfigurationDeprecated]
     }
     
-    extension [Self <: UnmarshalledQueueConfigurationDeprecated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledQueueConfigurationDeprecated] (val x: Self) extends AnyVal {
       
       inline def setEvents(
         value: js.Array[

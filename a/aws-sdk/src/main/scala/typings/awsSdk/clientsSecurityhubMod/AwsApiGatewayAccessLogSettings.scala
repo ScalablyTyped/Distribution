@@ -23,7 +23,8 @@ object AwsApiGatewayAccessLogSettings {
     __obj.asInstanceOf[AwsApiGatewayAccessLogSettings]
   }
   
-  extension [Self <: AwsApiGatewayAccessLogSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsApiGatewayAccessLogSettings] (val x: Self) extends AnyVal {
     
     inline def setDestinationArn(value: NonEmptyString): Self = StObject.set(x, "DestinationArn", value.asInstanceOf[js.Any])
     

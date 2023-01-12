@@ -23,7 +23,8 @@ object Classifiable {
     __obj.asInstanceOf[Classifiable]
   }
   
-  extension [Self <: Classifiable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Classifiable] (val x: Self) extends AnyVal {
     
     inline def setClassifiable(value: Any): Self = StObject.set(x, "classifiable", value.asInstanceOf[js.Any])
     

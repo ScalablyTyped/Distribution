@@ -23,7 +23,8 @@ object ModelLatencyThreshold {
     __obj.asInstanceOf[ModelLatencyThreshold]
   }
   
-  extension [Self <: ModelLatencyThreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelLatencyThreshold] (val x: Self) extends AnyVal {
     
     inline def setPercentile(value: String64): Self = StObject.set(x, "Percentile", value.asInstanceOf[js.Any])
     

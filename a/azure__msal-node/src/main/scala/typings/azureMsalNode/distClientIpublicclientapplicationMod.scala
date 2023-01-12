@@ -70,7 +70,8 @@ object distClientIpublicclientapplicationMod {
       __obj.asInstanceOf[IPublicClientApplication]
     }
     
-    extension [Self <: IPublicClientApplication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPublicClientApplication] (val x: Self) extends AnyVal {
       
       inline def setAcquireTokenByCode(value: AuthorizationCodeRequest => js.Promise[AuthenticationResult]): Self = StObject.set(x, "acquireTokenByCode", js.Any.fromFunction1(value))
       

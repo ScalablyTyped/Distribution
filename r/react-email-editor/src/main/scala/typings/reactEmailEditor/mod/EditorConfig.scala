@@ -17,7 +17,8 @@ object EditorConfig {
     __obj.asInstanceOf[EditorConfig]
   }
   
-  extension [Self <: EditorConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorConfig] (val x: Self) extends AnyVal {
     
     inline def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object OperationalTypeDescriptor {
     __obj.asInstanceOf[OperationalTypeDescriptor]
   }
   
-  extension [Self <: OperationalTypeDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationalTypeDescriptor] (val x: Self) extends AnyVal {
     
     inline def setSearchEnabled(value: Boolean): Self = StObject.set(x, "searchEnabled", value.asInstanceOf[js.Any])
     

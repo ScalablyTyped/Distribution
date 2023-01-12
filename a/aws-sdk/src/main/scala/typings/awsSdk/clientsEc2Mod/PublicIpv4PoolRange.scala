@@ -33,7 +33,8 @@ object PublicIpv4PoolRange {
     __obj.asInstanceOf[PublicIpv4PoolRange]
   }
   
-  extension [Self <: PublicIpv4PoolRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicIpv4PoolRange] (val x: Self) extends AnyVal {
     
     inline def setAddressCount(value: Integer): Self = StObject.set(x, "AddressCount", value.asInstanceOf[js.Any])
     

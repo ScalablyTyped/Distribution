@@ -35,7 +35,8 @@ object TrustedWebActivityIssueDetails {
     __obj.asInstanceOf[TrustedWebActivityIssueDetails]
   }
   
-  extension [Self <: TrustedWebActivityIssueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustedWebActivityIssueDetails] (val x: Self) extends AnyVal {
     
     inline def setHttpStatusCode(value: integer): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
     

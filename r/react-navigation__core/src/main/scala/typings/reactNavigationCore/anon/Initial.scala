@@ -26,7 +26,8 @@ object Initial {
     __obj.asInstanceOf[Initial[State]]
   }
   
-  extension [Self <: Initial[?], State /* <: NavigationState[ParamListBase] */](x: Self & Initial[State]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Initial[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & Initial[State]) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

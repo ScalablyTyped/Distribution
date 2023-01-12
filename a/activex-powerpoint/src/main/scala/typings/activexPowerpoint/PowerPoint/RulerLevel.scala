@@ -31,7 +31,8 @@ object RulerLevel {
     __obj.asInstanceOf[RulerLevel]
   }
   
-  extension [Self <: RulerLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RulerLevel] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

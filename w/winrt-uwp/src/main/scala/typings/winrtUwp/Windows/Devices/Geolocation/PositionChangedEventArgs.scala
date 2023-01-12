@@ -17,7 +17,8 @@ object PositionChangedEventArgs {
     __obj.asInstanceOf[PositionChangedEventArgs]
   }
   
-  extension [Self <: PositionChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Geoposition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }

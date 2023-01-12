@@ -28,7 +28,8 @@ object SchemaObject {
     __obj.asInstanceOf[SchemaObject]
   }
   
-  extension [Self <: SchemaObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaObject] (val x: Self) extends AnyVal {
     
     inline def setDiscriminator(value: String): Self = StObject.set(x, "discriminator", value.asInstanceOf[js.Any])
     

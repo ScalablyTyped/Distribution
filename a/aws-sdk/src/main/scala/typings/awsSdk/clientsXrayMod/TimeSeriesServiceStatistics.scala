@@ -32,7 +32,8 @@ object TimeSeriesServiceStatistics {
     __obj.asInstanceOf[TimeSeriesServiceStatistics]
   }
   
-  extension [Self <: TimeSeriesServiceStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSeriesServiceStatistics] (val x: Self) extends AnyVal {
     
     inline def setEdgeSummaryStatistics(value: EdgeStatistics): Self = StObject.set(x, "EdgeSummaryStatistics", value.asInstanceOf[js.Any])
     

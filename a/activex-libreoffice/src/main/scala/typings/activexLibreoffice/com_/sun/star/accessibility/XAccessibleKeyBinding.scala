@@ -59,7 +59,8 @@ object XAccessibleKeyBinding {
     __obj.asInstanceOf[XAccessibleKeyBinding]
   }
   
-  extension [Self <: XAccessibleKeyBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleKeyBinding] (val x: Self) extends AnyVal {
     
     inline def setAccessibleKeyBindingCount(value: Double): Self = StObject.set(x, "AccessibleKeyBindingCount", value.asInstanceOf[js.Any])
     

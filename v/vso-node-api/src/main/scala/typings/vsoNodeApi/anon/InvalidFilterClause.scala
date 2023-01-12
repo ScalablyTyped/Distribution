@@ -19,7 +19,8 @@ object InvalidFilterClause {
     __obj.asInstanceOf[InvalidFilterClause]
   }
   
-  extension [Self <: InvalidFilterClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidFilterClause] (val x: Self) extends AnyVal {
     
     inline def setInvalidFilterClause(value: scala.Double): Self = StObject.set(x, "invalidFilterClause", value.asInstanceOf[js.Any])
     

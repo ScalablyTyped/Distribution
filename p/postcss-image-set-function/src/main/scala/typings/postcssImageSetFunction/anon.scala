@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Decl]
     }
     
-    extension [Self <: Decl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decl] (val x: Self) extends AnyVal {
       
       inline def setDecl(value: Declaration): Self = StObject.set(x, "decl", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Oninvalid]
     }
     
-    extension [Self <: Oninvalid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Oninvalid] (val x: Self) extends AnyVal {
       
       inline def setOninvalid(value: String): Self = StObject.set(x, "oninvalid", value.asInstanceOf[js.Any])
       

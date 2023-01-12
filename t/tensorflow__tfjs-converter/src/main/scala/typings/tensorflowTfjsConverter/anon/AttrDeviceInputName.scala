@@ -23,7 +23,8 @@ object AttrDeviceInputName {
     __obj.asInstanceOf[AttrDeviceInputName]
   }
   
-  extension [Self <: AttrDeviceInputName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrDeviceInputName] (val x: Self) extends AnyVal {
     
     inline def setAttr(value: NShape): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     

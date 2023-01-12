@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[TypeofHandlebars]
     }
     
-    extension [Self <: TypeofHandlebars](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofHandlebars] (val x: Self) extends AnyVal {
       
       inline def setAST(value: Any): Self = StObject.set(x, "AST", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ChatChannel {
     __obj.asInstanceOf[ChatChannel]
   }
   
-  extension [Self <: ChatChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatChannel] (val x: Self) extends AnyVal {
     
     inline def setChatbotSns(value: ChatbotSnsConfigurationSet): Self = StObject.set(x, "chatbotSns", value.asInstanceOf[js.Any])
     

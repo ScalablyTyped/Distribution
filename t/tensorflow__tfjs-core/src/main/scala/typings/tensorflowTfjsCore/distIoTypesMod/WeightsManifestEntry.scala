@@ -49,7 +49,8 @@ object WeightsManifestEntry {
     __obj.asInstanceOf[WeightsManifestEntry]
   }
   
-  extension [Self <: WeightsManifestEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeightsManifestEntry] (val x: Self) extends AnyVal {
     
     inline def setDtype(value: float32 | int32 | bool | string | complex64): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     

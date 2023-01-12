@@ -130,7 +130,8 @@ object MeasureShape {
     __obj.asInstanceOf[MeasureShape]
   }
   
-  extension [Self <: MeasureShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasureShape] (val x: Self) extends AnyVal {
     
     inline def setEndPosition(value: Point): Self = StObject.set(x, "EndPosition", value.asInstanceOf[js.Any])
     

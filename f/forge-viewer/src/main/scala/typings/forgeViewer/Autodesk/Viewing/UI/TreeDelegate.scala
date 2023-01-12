@@ -49,7 +49,8 @@ object TreeDelegate {
     __obj.asInstanceOf[TreeDelegate]
   }
   
-  extension [Self <: TreeDelegate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeDelegate] (val x: Self) extends AnyVal {
     
     inline def setCreateTreeNode(value: (js.Object, HTMLElement, js.Object) => Unit): Self = StObject.set(x, "createTreeNode", js.Any.fromFunction3(value))
     

@@ -32,7 +32,8 @@ object FactorGradient {
     __obj.asInstanceOf[FactorGradient]
   }
   
-  extension [Self <: FactorGradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FactorGradient] (val x: Self) extends AnyVal {
     
     inline def setFactor1(value: Double): Self = StObject.set(x, "factor1", value.asInstanceOf[js.Any])
     

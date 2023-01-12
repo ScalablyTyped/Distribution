@@ -18,7 +18,8 @@ object GetRateBasedRuleRequest {
     __obj.asInstanceOf[GetRateBasedRuleRequest]
   }
   
-  extension [Self <: GetRateBasedRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRateBasedRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
   }

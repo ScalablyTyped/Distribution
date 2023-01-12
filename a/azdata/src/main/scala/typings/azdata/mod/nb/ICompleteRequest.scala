@@ -17,7 +17,8 @@ object ICompleteRequest {
     __obj.asInstanceOf[ICompleteRequest]
   }
   
-  extension [Self <: ICompleteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICompleteRequest] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

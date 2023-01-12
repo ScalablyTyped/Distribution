@@ -23,7 +23,8 @@ object PieHandlers {
     __obj.asInstanceOf[PieHandlers[RawDatum, ElementType]]
   }
   
-  extension [Self <: PieHandlers[?, ?], RawDatum, ElementType](x: Self & (PieHandlers[RawDatum, ElementType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieHandlers[?, ?], RawDatum, ElementType] (val x: Self & (PieHandlers[RawDatum, ElementType])) extends AnyVal {
     
     inline def setOnClick(
       value: (/* datum */ ComputedDatum[RawDatum], /* event */ MouseEvent[ElementType, NativeMouseEvent]) => Unit

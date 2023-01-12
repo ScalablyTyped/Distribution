@@ -42,7 +42,8 @@ object LiveSearchResultBase {
     __obj.asInstanceOf[LiveSearchResultBase]
   }
   
-  extension [Self <: LiveSearchResultBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveSearchResultBase] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: Author): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

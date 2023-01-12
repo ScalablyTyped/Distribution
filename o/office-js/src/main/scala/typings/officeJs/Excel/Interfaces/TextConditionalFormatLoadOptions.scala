@@ -41,7 +41,8 @@ object TextConditionalFormatLoadOptions {
     __obj.asInstanceOf[TextConditionalFormatLoadOptions]
   }
   
-  extension [Self <: TextConditionalFormatLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextConditionalFormatLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

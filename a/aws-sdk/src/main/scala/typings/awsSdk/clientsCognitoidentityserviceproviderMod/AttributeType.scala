@@ -23,7 +23,8 @@ object AttributeType {
     __obj.asInstanceOf[AttributeType]
   }
   
-  extension [Self <: AttributeType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeType] (val x: Self) extends AnyVal {
     
     inline def setName(value: AttributeNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

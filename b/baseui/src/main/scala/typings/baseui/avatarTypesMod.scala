@@ -22,7 +22,8 @@ object avatarTypesMod {
       __obj.asInstanceOf[AvatarOverrides]
     }
     
-    extension [Self <: AvatarOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarOverrides] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: Override[Any]): Self = StObject.set(x, "Avatar", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object avatarTypesMod {
       __obj.asInstanceOf[AvatarProps]
     }
     
-    extension [Self <: AvatarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarProps] (val x: Self) extends AnyVal {
       
       inline def setInitials(value: String): Self = StObject.set(x, "initials", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object avatarTypesMod {
       __obj.asInstanceOf[AvatarStyleProps]
     }
     
-    extension [Self <: AvatarStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarStyleProps] (val x: Self) extends AnyVal {
       
       inline def set$didImageFailToLoad(value: Boolean): Self = StObject.set(x, "$didImageFailToLoad", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object avatarTypesMod {
       __obj.asInstanceOf[RootStyleProps]
     }
     
-    extension [Self <: RootStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootStyleProps] (val x: Self) extends AnyVal {
       
       inline def set$didImageFailToLoad(value: Boolean): Self = StObject.set(x, "$didImageFailToLoad", value.asInstanceOf[js.Any])
       

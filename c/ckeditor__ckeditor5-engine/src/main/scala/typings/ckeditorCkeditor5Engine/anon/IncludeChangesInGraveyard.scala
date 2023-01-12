@@ -15,7 +15,8 @@ object IncludeChangesInGraveyard {
     __obj.asInstanceOf[IncludeChangesInGraveyard]
   }
   
-  extension [Self <: IncludeChangesInGraveyard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeChangesInGraveyard] (val x: Self) extends AnyVal {
     
     inline def setIncludeChangesInGraveyard(value: Boolean): Self = StObject.set(x, "includeChangesInGraveyard", value.asInstanceOf[js.Any])
     

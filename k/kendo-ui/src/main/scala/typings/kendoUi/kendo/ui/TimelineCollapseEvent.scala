@@ -18,7 +18,8 @@ object TimelineCollapseEvent {
     __obj.asInstanceOf[TimelineCollapseEvent]
   }
   
-  extension [Self <: TimelineCollapseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineCollapseEvent] (val x: Self) extends AnyVal {
     
     inline def setDataItem(value: Model): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
     

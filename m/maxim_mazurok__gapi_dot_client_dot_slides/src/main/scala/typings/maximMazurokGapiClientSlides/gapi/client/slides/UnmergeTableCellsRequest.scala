@@ -23,7 +23,8 @@ object UnmergeTableCellsRequest {
     __obj.asInstanceOf[UnmergeTableCellsRequest]
   }
   
-  extension [Self <: UnmergeTableCellsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnmergeTableCellsRequest] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

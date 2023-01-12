@@ -21,7 +21,8 @@ object WindowsUpdateActiveHoursInstall {
     __obj.asInstanceOf[WindowsUpdateActiveHoursInstall]
   }
   
-  extension [Self <: WindowsUpdateActiveHoursInstall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsUpdateActiveHoursInstall] (val x: Self) extends AnyVal {
     
     inline def setActiveHoursEnd(value: String): Self = StObject.set(x, "activeHoursEnd", value.asInstanceOf[js.Any])
     

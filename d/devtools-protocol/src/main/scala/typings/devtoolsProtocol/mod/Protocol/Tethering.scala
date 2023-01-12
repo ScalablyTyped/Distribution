@@ -25,7 +25,8 @@ object Tethering {
       __obj.asInstanceOf[AcceptedEvent]
     }
     
-    extension [Self <: AcceptedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AcceptedEvent] (val x: Self) extends AnyVal {
       
       inline def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object Tethering {
       __obj.asInstanceOf[BindRequest]
     }
     
-    extension [Self <: BindRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindRequest] (val x: Self) extends AnyVal {
       
       inline def setPort(value: integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
@@ -67,7 +69,8 @@ object Tethering {
       __obj.asInstanceOf[UnbindRequest]
     }
     
-    extension [Self <: UnbindRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnbindRequest] (val x: Self) extends AnyVal {
       
       inline def setPort(value: integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }

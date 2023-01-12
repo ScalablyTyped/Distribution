@@ -19,7 +19,8 @@ object TrackColour {
     __obj.asInstanceOf[TrackColour]
   }
   
-  extension [Self <: TrackColour](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackColour] (val x: Self) extends AnyVal {
     
     inline def setAdditional(value: Double): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
     

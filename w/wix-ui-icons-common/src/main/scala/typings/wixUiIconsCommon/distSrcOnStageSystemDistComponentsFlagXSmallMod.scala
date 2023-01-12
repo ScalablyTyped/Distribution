@@ -27,7 +27,8 @@ object distSrcOnStageSystemDistComponentsFlagXSmallMod extends Shortcut {
       __obj.asInstanceOf[FlagXSmallProps]
     }
     
-    extension [Self <: FlagXSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlagXSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

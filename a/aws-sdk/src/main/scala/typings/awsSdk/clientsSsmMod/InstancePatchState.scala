@@ -130,7 +130,8 @@ object InstancePatchState {
     __obj.asInstanceOf[InstancePatchState]
   }
   
-  extension [Self <: InstancePatchState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancePatchState] (val x: Self) extends AnyVal {
     
     inline def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
     

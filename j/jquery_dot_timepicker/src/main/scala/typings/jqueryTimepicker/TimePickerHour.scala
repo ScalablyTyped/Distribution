@@ -19,7 +19,8 @@ object TimePickerHour {
     __obj.asInstanceOf[TimePickerHour]
   }
   
-  extension [Self <: TimePickerHour](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimePickerHour] (val x: Self) extends AnyVal {
     
     inline def setEnds(value: Double): Self = StObject.set(x, "ends", value.asInstanceOf[js.Any])
     

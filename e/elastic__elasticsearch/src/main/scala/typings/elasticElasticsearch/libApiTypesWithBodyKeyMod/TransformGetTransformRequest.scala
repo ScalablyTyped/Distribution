@@ -25,7 +25,8 @@ object TransformGetTransformRequest {
     __obj.asInstanceOf[TransformGetTransformRequest]
   }
   
-  extension [Self <: TransformGetTransformRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformGetTransformRequest] (val x: Self) extends AnyVal {
     
     inline def setAllow_no_match(value: Boolean): Self = StObject.set(x, "allow_no_match", value.asInstanceOf[js.Any])
     

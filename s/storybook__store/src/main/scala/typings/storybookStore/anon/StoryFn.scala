@@ -17,7 +17,8 @@ object StoryFn {
     __obj.asInstanceOf[StoryFn]
   }
   
-  extension [Self <: StoryFn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoryFn] (val x: Self) extends AnyVal {
     
     inline def setStoryFn(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PartialStoryFn<TFramework> */ Any

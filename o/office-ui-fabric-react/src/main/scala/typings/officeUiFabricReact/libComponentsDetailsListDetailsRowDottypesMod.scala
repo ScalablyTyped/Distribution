@@ -45,7 +45,8 @@ object libComponentsDetailsListDetailsRowDottypesMod {
       __obj.asInstanceOf[ICellStyleProps]
     }
     
-    extension [Self <: ICellStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICellStyleProps] (val x: Self) extends AnyVal {
       
       inline def setCellExtraRightPadding(value: Double): Self = StObject.set(x, "cellExtraRightPadding", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object libComponentsDetailsListDetailsRowDottypesMod {
       __obj.asInstanceOf[IDetailsItemProps]
     }
     
-    extension [Self <: IDetailsItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsItemProps] (val x: Self) extends AnyVal {
       
       inline def setCellStyleProps(value: ICellStyleProps): Self = StObject.set(x, "cellStyleProps", value.asInstanceOf[js.Any])
       
@@ -379,7 +381,8 @@ object libComponentsDetailsListDetailsRowDottypesMod {
       __obj.asInstanceOf[IDetailsRowBaseProps]
     }
     
-    extension [Self <: IDetailsRowBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsRowBaseProps] (val x: Self) extends AnyVal {
       
       inline def setCellStyleProps(value: ICellStyleProps): Self = StObject.set(x, "cellStyleProps", value.asInstanceOf[js.Any])
       
@@ -588,7 +591,8 @@ object libComponentsDetailsListDetailsRowDottypesMod {
       __obj.asInstanceOf[IDetailsRowProps]
     }
     
-    extension [Self <: IDetailsRowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsRowProps] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[IColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -646,7 +650,8 @@ object libComponentsDetailsListDetailsRowDottypesMod {
       __obj.asInstanceOf[IDetailsRowStyleProps]
     }
     
-    extension [Self <: IDetailsRowStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsRowStyleProps] (val x: Self) extends AnyVal {
       
       inline def setAnySelected(value: Boolean): Self = StObject.set(x, "anySelected", value.asInstanceOf[js.Any])
       
@@ -733,7 +738,8 @@ object libComponentsDetailsListDetailsRowDottypesMod {
       __obj.asInstanceOf[IDetailsRowStyles]
     }
     
-    extension [Self <: IDetailsRowStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsRowStyles] (val x: Self) extends AnyVal {
       
       inline def setCell(value: IStyle): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       

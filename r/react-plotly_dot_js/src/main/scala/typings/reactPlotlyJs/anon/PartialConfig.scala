@@ -105,7 +105,8 @@ object PartialConfig {
     __obj.asInstanceOf[PartialConfig]
   }
   
-  extension [Self <: PartialConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialConfig] (val x: Self) extends AnyVal {
     
     inline def setAutosizable(value: Boolean): Self = StObject.set(x, "autosizable", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object event {
       __obj.asInstanceOf[IDispatcher]
     }
     
-    extension [Self <: IDispatcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDispatcher] (val x: Self) extends AnyVal {
       
       inline def setGetPublishers(value: () => Any): Self = StObject.set(x, "getPublishers", js.Any.fromFunction0(value))
       
@@ -102,7 +103,8 @@ object event {
       __obj.asInstanceOf[IDom]
     }
     
-    extension [Self <: IDom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDom] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -185,7 +187,8 @@ object event {
       __obj.asInstanceOf[IEvent]
     }
     
-    extension [Self <: IEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEvent] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -268,7 +271,8 @@ object event {
         __obj.asInstanceOf[ITouchGesture]
       }
       
-      extension [Self <: ITouchGesture](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITouchGesture] (val x: Self) extends AnyVal {
         
         inline def setGetMoveThrottle(value: () => Double): Self = StObject.set(x, "getMoveThrottle", js.Any.fromFunction0(value))
         
@@ -312,7 +316,8 @@ object event {
         __obj.asInstanceOf[IDoubleTap]
       }
       
-      extension [Self <: IDoubleTap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDoubleTap] (val x: Self) extends AnyVal {
         
         inline def setGetMaxDuration(value: () => Double): Self = StObject.set(x, "getMaxDuration", js.Any.fromFunction0(value))
         
@@ -348,7 +353,8 @@ object event {
         __obj.asInstanceOf[IDrag]
       }
       
-      extension [Self <: IDrag](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDrag] (val x: Self) extends AnyVal {
         
         inline def setGetMinDistance(value: () => Double): Self = StObject.set(x, "getMinDistance", js.Any.fromFunction0(value))
         
@@ -398,7 +404,8 @@ object event {
         __obj.asInstanceOf[ILongPress]
       }
       
-      extension [Self <: ILongPress](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ILongPress] (val x: Self) extends AnyVal {
         
         inline def setGetMinDuration(value: () => Double): Self = StObject.set(x, "getMinDuration", js.Any.fromFunction0(value))
         
@@ -461,7 +468,8 @@ object event {
         __obj.asInstanceOf[IRecognizer]
       }
       
-      extension [Self <: IRecognizer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRecognizer] (val x: Self) extends AnyVal {
         
         inline def setGetCallbackScope(value: () => Any): Self = StObject.set(x, "getCallbackScope", js.Any.fromFunction0(value))
         
@@ -538,7 +546,8 @@ object event {
         __obj.asInstanceOf[ISwipe]
       }
       
-      extension [Self <: ISwipe](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISwipe] (val x: Self) extends AnyVal {
         
         inline def setGetMaxDuration(value: () => Double): Self = StObject.set(x, "getMaxDuration", js.Any.fromFunction0(value))
         
@@ -590,7 +599,8 @@ object event {
         __obj.asInstanceOf[ITap]
       }
       
-      extension [Self <: ITap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITap] (val x: Self) extends AnyVal {
         
         inline def setGetMoveDistance(value: () => Double): Self = StObject.set(x, "getMoveDistance", js.Any.fromFunction0(value))
         

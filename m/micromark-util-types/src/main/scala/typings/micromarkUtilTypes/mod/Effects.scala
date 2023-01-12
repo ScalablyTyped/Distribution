@@ -97,7 +97,8 @@ object Effects {
     __obj.asInstanceOf[Effects]
   }
   
-  extension [Self <: Effects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Effects] (val x: Self) extends AnyVal {
     
     inline def setAttempt(
       value: (/* construct */ Construct | js.Array[Construct] | ConstructRecord, /* returnState */ State, /* bogusState */ js.UndefOr[State]) => js.Function1[/* code */ Code, Unit]

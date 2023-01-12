@@ -19,7 +19,8 @@ object INamedValueNamespace {
     __obj.asInstanceOf[INamedValueNamespace]
   }
   
-  extension [Self <: INamedValueNamespace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INamedValueNamespace] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => INamedValueNamespace): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

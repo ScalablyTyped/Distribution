@@ -15,7 +15,8 @@ object JobPayloadOutput {
     __obj.asInstanceOf[JobPayloadOutput]
   }
   
-  extension [Self <: JobPayloadOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobPayloadOutput] (val x: Self) extends AnyVal {
     
     inline def setFormats(value: js.Array[JobPayloadItem]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     

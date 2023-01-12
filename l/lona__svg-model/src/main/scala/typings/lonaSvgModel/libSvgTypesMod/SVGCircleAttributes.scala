@@ -21,7 +21,8 @@ object SVGCircleAttributes {
     __obj.asInstanceOf[SVGCircleAttributes]
   }
   
-  extension [Self <: SVGCircleAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGCircleAttributes] (val x: Self) extends AnyVal {
     
     inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     

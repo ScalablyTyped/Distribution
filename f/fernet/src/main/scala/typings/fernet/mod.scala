@@ -146,7 +146,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setIv(value: js.Array[String | Double]): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
       
@@ -181,7 +182,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Secret]
     }
     
-    extension [Self <: Secret](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Secret] (val x: Self) extends AnyVal {
       
       inline def setEncryptionKey(value: WordArray): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
       
@@ -270,7 +272,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TokenOptions]
     }
     
-    extension [Self <: TokenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenOptions] (val x: Self) extends AnyVal {
       
       inline def setCipherText(value: WordArray): Self = StObject.set(x, "cipherText", value.asInstanceOf[js.Any])
       

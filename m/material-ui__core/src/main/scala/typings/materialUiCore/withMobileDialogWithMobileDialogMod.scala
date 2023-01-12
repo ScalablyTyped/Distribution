@@ -32,7 +32,8 @@ object withMobileDialogWithMobileDialogMod {
       __obj.asInstanceOf[WithMobileDialog]
     }
     
-    extension [Self <: WithMobileDialog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithMobileDialog] (val x: Self) extends AnyVal {
       
       inline def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     }
@@ -49,7 +50,8 @@ object withMobileDialogWithMobileDialogMod {
       __obj.asInstanceOf[WithMobileDialogOptions]
     }
     
-    extension [Self <: WithMobileDialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithMobileDialogOptions] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: Breakpoint): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
     }

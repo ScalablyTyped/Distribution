@@ -52,7 +52,8 @@ object UserComment {
     __obj.asInstanceOf[UserComment]
   }
   
-  extension [Self <: UserComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserComment] (val x: Self) extends AnyVal {
     
     inline def setAndroidOsVersion(value: Double): Self = StObject.set(x, "androidOsVersion", value.asInstanceOf[js.Any])
     

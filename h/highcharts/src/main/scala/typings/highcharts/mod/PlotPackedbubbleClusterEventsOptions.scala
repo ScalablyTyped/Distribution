@@ -21,7 +21,8 @@ object PlotPackedbubbleClusterEventsOptions {
     __obj.asInstanceOf[PlotPackedbubbleClusterEventsOptions]
   }
   
-  extension [Self <: PlotPackedbubbleClusterEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPackedbubbleClusterEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setDrillToCluster(value: MarkerClusterDrillCallbackFunction): Self = StObject.set(x, "drillToCluster", value.asInstanceOf[js.Any])
     

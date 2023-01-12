@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Bucket]
     }
     
-    extension [Self <: Bucket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bucket] (val x: Self) extends AnyVal {
       
       inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Bucketinhost]
     }
     
-    extension [Self <: Bucketinhost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bucketinhost] (val x: Self) extends AnyVal {
       
       inline def `setBucket-in-host`(value: String): Self = StObject.set(x, "bucket-in-host", value.asInstanceOf[js.Any])
       

@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[PercentageCircleProps]
     }
     
-    extension [Self <: PercentageCircleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PercentageCircleProps] (val x: Self) extends AnyVal {
       
       inline def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
       

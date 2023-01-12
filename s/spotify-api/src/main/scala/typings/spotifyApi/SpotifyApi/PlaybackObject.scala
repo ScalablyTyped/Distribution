@@ -20,7 +20,8 @@ object PlaybackObject {
     __obj.asInstanceOf[PlaybackObject]
   }
   
-  extension [Self <: PlaybackObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackObject] (val x: Self) extends AnyVal {
     
     inline def setRepeat_state(value: off | track | context): Self = StObject.set(x, "repeat_state", value.asInstanceOf[js.Any])
     

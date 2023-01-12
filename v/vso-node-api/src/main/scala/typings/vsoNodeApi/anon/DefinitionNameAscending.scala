@@ -29,7 +29,8 @@ object DefinitionNameAscending {
     __obj.asInstanceOf[DefinitionNameAscending]
   }
   
-  extension [Self <: DefinitionNameAscending](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefinitionNameAscending] (val x: Self) extends AnyVal {
     
     inline def setDefinitionNameAscending(value: scala.Double): Self = StObject.set(x, "definitionNameAscending", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Filetype {
     __obj.asInstanceOf[Filetype]
   }
   
-  extension [Self <: Filetype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Filetype] (val x: Self) extends AnyVal {
     
     inline def setFile_type(value: pdf): Self = StObject.set(x, "file_type", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object Input {
     __obj.asInstanceOf[Input]
   }
   
-  extension [Self <: Input](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
     
     inline def setInputParallelism(value: InputParallelism): Self = StObject.set(x, "InputParallelism", value.asInstanceOf[js.Any])
     

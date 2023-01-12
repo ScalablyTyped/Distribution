@@ -23,7 +23,8 @@ object RecommendationRelatedCloudWatchMetricsSourceDetail {
     __obj.asInstanceOf[RecommendationRelatedCloudWatchMetricsSourceDetail]
   }
   
-  extension [Self <: RecommendationRelatedCloudWatchMetricsSourceDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationRelatedCloudWatchMetricsSourceDetail] (val x: Self) extends AnyVal {
     
     inline def setMetricName(value: RecommendationRelatedCloudWatchMetricsSourceMetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     

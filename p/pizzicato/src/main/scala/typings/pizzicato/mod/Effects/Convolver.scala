@@ -45,7 +45,8 @@ object Convolver {
   def mix: Double = js.native
   inline def mix_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mix")(x.asInstanceOf[js.Any])
   
-  extension [Self <: Convolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Convolver] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: AudioNode => Convolver): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     

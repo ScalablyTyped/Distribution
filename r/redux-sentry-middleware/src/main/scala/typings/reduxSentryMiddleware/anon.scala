@@ -92,7 +92,8 @@ object anon {
       __obj.asInstanceOf[Typeof]
     }
     
-    extension [Self <: Typeof](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeof] (val x: Self) extends AnyVal {
       
       inline def setBreadcrumbs(value: typings.sentryBrowser.anon.TypeofBreadcrumbs): Self = StObject.set(x, "Breadcrumbs", value.asInstanceOf[js.Any])
       

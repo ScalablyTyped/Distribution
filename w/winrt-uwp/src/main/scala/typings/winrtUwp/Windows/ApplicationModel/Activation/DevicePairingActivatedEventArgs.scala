@@ -24,7 +24,8 @@ object DevicePairingActivatedEventArgs {
     __obj.asInstanceOf[DevicePairingActivatedEventArgs]
   }
   
-  extension [Self <: DevicePairingActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevicePairingActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDeviceInformation(value: Any): Self = StObject.set(x, "deviceInformation", value.asInstanceOf[js.Any])
     

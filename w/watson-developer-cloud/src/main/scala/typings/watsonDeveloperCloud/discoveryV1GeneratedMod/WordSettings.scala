@@ -16,7 +16,8 @@ object WordSettings {
     __obj.asInstanceOf[WordSettings]
   }
   
-  extension [Self <: WordSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WordSettings] (val x: Self) extends AnyVal {
     
     inline def setHeading(value: WordHeadingDetection): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     

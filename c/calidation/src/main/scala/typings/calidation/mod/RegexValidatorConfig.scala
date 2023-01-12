@@ -17,7 +17,8 @@ object RegexValidatorConfig {
     __obj.asInstanceOf[RegexValidatorConfig[T]]
   }
   
-  extension [Self <: RegexValidatorConfig[?], T /* <: js.Object */](x: Self & RegexValidatorConfig[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegexValidatorConfig[?], T /* <: js.Object */] (val x: Self & RegexValidatorConfig[T]) extends AnyVal {
     
     inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
   }

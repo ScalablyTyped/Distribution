@@ -953,7 +953,8 @@ object sapMPdfviewerMod {
       __obj.asInstanceOf[PDFViewerSettings]
     }
     
-    extension [Self <: PDFViewerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PDFViewerSettings] (val x: Self) extends AnyVal {
       
       inline def setDisplayType(
         value: PDFViewerDisplayType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PDFViewerDisplayType * / any */ String) | PropertyBindingInfo

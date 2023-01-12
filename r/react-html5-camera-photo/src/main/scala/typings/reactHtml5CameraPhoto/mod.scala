@@ -131,7 +131,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CameraProps]
     }
     
-    extension [Self <: CameraProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CameraProps] (val x: Self) extends AnyVal {
       
       inline def setIdealFacingMode(value: environment | user): Self = StObject.set(x, "idealFacingMode", value.asInstanceOf[js.Any])
       
@@ -208,7 +209,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FacingMode]
     }
     
-    extension [Self <: FacingMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FacingMode] (val x: Self) extends AnyVal {
       
       inline def setENVIRONMENT(value: environment): Self = StObject.set(x, "ENVIRONMENT", value.asInstanceOf[js.Any])
       
@@ -229,7 +231,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ImageTypes]
     }
     
-    extension [Self <: ImageTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageTypes] (val x: Self) extends AnyVal {
       
       inline def setJPG(value: jpg): Self = StObject.set(x, "JPG", value.asInstanceOf[js.Any])
       

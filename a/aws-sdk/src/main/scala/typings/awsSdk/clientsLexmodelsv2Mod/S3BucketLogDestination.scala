@@ -28,7 +28,8 @@ object S3BucketLogDestination {
     __obj.asInstanceOf[S3BucketLogDestination]
   }
   
-  extension [Self <: S3BucketLogDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3BucketLogDestination] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyArn(value: KmsKeyArn): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
     

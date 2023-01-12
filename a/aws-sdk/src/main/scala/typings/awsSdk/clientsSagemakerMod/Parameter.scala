@@ -23,7 +23,8 @@ object Parameter {
     __obj.asInstanceOf[Parameter]
   }
   
-  extension [Self <: Parameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
     
     inline def setName(value: PipelineParameterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

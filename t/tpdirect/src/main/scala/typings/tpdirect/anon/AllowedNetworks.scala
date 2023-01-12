@@ -19,7 +19,8 @@ object AllowedNetworks {
     __obj.asInstanceOf[AllowedNetworks]
   }
   
-  extension [Self <: AllowedNetworks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowedNetworks] (val x: Self) extends AnyVal {
     
     inline def setAllowedNetworks(value: js.Array[typings.tpdirect.AllowedNetworks]): Self = StObject.set(x, "allowedNetworks", value.asInstanceOf[js.Any])
     

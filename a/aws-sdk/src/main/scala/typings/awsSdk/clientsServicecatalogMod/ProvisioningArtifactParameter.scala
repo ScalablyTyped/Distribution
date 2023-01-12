@@ -43,7 +43,8 @@ object ProvisioningArtifactParameter {
     __obj.asInstanceOf[ProvisioningArtifactParameter]
   }
   
-  extension [Self <: ProvisioningArtifactParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisioningArtifactParameter] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: DefaultValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     

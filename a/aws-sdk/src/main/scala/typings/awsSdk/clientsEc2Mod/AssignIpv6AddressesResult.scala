@@ -28,7 +28,8 @@ object AssignIpv6AddressesResult {
     __obj.asInstanceOf[AssignIpv6AddressesResult]
   }
   
-  extension [Self <: AssignIpv6AddressesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignIpv6AddressesResult] (val x: Self) extends AnyVal {
     
     inline def setAssignedIpv6Addresses(value: Ipv6AddressList): Self = StObject.set(x, "AssignedIpv6Addresses", value.asInstanceOf[js.Any])
     

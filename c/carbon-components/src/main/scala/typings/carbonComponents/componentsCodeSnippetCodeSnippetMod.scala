@@ -50,7 +50,8 @@ object componentsCodeSnippetCodeSnippetMod {
       __obj.asInstanceOf[CodeSnippet]
     }
     
-    extension [Self <: CodeSnippet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeSnippet] (val x: Self) extends AnyVal {
       
       inline def set_handleClick(value: () => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction0(value))
       
@@ -92,7 +93,8 @@ object componentsCodeSnippetCodeSnippetMod {
       __obj.asInstanceOf[CodeSnippetOptions]
     }
     
-    extension [Self <: CodeSnippetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeSnippetOptions] (val x: Self) extends AnyVal {
       
       inline def setAttribShowLessText(value: String): Self = StObject.set(x, "attribShowLessText", value.asInstanceOf[js.Any])
       

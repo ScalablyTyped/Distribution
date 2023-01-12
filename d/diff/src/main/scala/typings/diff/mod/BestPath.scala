@@ -17,7 +17,8 @@ object BestPath {
     __obj.asInstanceOf[BestPath]
   }
   
-  extension [Self <: BestPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BestPath] (val x: Self) extends AnyVal {
     
     inline def setComponenets(value: js.Array[Change]): Self = StObject.set(x, "componenets", value.asInstanceOf[js.Any])
     

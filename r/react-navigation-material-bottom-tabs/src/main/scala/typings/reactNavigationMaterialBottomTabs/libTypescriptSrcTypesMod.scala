@@ -71,7 +71,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[NavigationMaterialBottomTabOptions]
     }
     
-    extension [Self <: NavigationMaterialBottomTabOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationMaterialBottomTabOptions] (val x: Self) extends AnyVal {
       
       inline def setTabBarAccessibilityLabel(value: String): Self = StObject.set(x, "tabBarAccessibilityLabel", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[NavigationTabScreenProps[Params, ScreenProps]]
     }
     
-    extension [Self <: NavigationTabScreenProps[?, ?], Params, ScreenProps](x: Self & (NavigationTabScreenProps[Params, ScreenProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationTabScreenProps[?, ?], Params, ScreenProps] (val x: Self & (NavigationTabScreenProps[Params, ScreenProps])) extends AnyVal {
       
       inline def setNavigation(value: NavigationTabProp[NavigationRoute[NavigationParams], Params]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object diffbooleanundefinedStyle {
     __obj.asInstanceOf[diffbooleanundefinedStyle]
   }
   
-  extension [Self <: diffbooleanundefinedStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: diffbooleanundefinedStyle] (val x: Self) extends AnyVal {
     
     inline def setDiff(value: Boolean): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
     

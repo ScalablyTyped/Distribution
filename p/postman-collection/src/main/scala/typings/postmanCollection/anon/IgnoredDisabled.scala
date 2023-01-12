@@ -17,7 +17,8 @@ object IgnoredDisabled {
     __obj.asInstanceOf[IgnoredDisabled]
   }
   
-  extension [Self <: IgnoredDisabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoredDisabled] (val x: Self) extends AnyVal {
     
     inline def setEncode(value: Boolean): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object ContinuousAxisChannelDef {
     __obj.asInstanceOf[ContinuousAxisChannelDef[MD, M]]
   }
   
-  extension [Self <: ContinuousAxisChannelDef[?, ?], MD /* <: (ErrorBarDef & GenericCompositeMarkDef[M]) | (ErrorBandDef & GenericCompositeMarkDef[M]) */, M /* <: ErrorBar | ErrorBand */](x: Self & (ContinuousAxisChannelDef[MD, M])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuousAxisChannelDef[?, ?], MD /* <: (ErrorBarDef & GenericCompositeMarkDef[M]) | (ErrorBandDef & GenericCompositeMarkDef[M]) */, M /* <: ErrorBar | ErrorBand */] (val x: Self & (ContinuousAxisChannelDef[MD, M])) extends AnyVal {
     
     inline def setContinuousAxis(value: typings.vegaLite.vegaLiteStrings.x | y): Self = StObject.set(x, "continuousAxis", value.asInstanceOf[js.Any])
     

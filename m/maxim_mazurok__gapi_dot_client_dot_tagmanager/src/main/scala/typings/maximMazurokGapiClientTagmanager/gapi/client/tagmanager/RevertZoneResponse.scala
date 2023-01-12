@@ -19,7 +19,8 @@ object RevertZoneResponse {
     __obj.asInstanceOf[RevertZoneResponse]
   }
   
-  extension [Self <: RevertZoneResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevertZoneResponse] (val x: Self) extends AnyVal {
     
     inline def setZone(value: Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     

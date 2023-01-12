@@ -28,7 +28,8 @@ object SetUserMFAPreferenceRequest {
     __obj.asInstanceOf[SetUserMFAPreferenceRequest]
   }
   
-  extension [Self <: SetUserMFAPreferenceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetUserMFAPreferenceRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     

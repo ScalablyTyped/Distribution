@@ -23,7 +23,8 @@ object GPUSampler {
     __obj.asInstanceOf[GPUSampler]
   }
   
-  extension [Self <: GPUSampler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUSampler] (val x: Self) extends AnyVal {
     
     inline def set__brand(value: typings.webgpuTypes.webgpuTypesStrings.GPUSampler): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
   }

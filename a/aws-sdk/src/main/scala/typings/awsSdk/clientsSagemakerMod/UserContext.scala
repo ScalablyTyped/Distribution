@@ -28,7 +28,8 @@ object UserContext {
     __obj.asInstanceOf[UserContext]
   }
   
-  extension [Self <: UserContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserContext] (val x: Self) extends AnyVal {
     
     inline def setDomainId(value: String): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     

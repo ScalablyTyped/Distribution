@@ -162,7 +162,8 @@ object SymbolOffset {
     __obj.asInstanceOf[SymbolOffset]
   }
   
-  extension [Self <: SymbolOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolOffset] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: Position): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

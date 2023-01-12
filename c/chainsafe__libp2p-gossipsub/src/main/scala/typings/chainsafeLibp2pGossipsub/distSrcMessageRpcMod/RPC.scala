@@ -715,7 +715,8 @@ object RPC {
       __obj.asInstanceOf[IControlGraft]
     }
     
-    extension [Self <: IControlGraft](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IControlGraft] (val x: Self) extends AnyVal {
       
       inline def setTopicID(value: String): Self = StObject.set(x, "topicID", value.asInstanceOf[js.Any])
       
@@ -741,7 +742,8 @@ object RPC {
       __obj.asInstanceOf[IControlIHave]
     }
     
-    extension [Self <: IControlIHave](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IControlIHave] (val x: Self) extends AnyVal {
       
       inline def setMessageIDs(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "messageIDs", value.asInstanceOf[js.Any])
       
@@ -772,7 +774,8 @@ object RPC {
       __obj.asInstanceOf[IControlIWant]
     }
     
-    extension [Self <: IControlIWant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IControlIWant] (val x: Self) extends AnyVal {
       
       inline def setMessageIDs(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "messageIDs", value.asInstanceOf[js.Any])
       
@@ -806,7 +809,8 @@ object RPC {
       __obj.asInstanceOf[IControlMessage]
     }
     
-    extension [Self <: IControlMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IControlMessage] (val x: Self) extends AnyVal {
       
       inline def setGraft(value: js.Array[IControlGraft]): Self = StObject.set(x, "graft", value.asInstanceOf[js.Any])
       
@@ -861,7 +865,8 @@ object RPC {
       __obj.asInstanceOf[IControlPrune]
     }
     
-    extension [Self <: IControlPrune](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IControlPrune] (val x: Self) extends AnyVal {
       
       inline def setBackoff(value: Double): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
       
@@ -913,7 +918,8 @@ object RPC {
       __obj.asInstanceOf[IMessage]
     }
     
-    extension [Self <: IMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMessage] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -965,7 +971,8 @@ object RPC {
       __obj.asInstanceOf[IPeerInfo]
     }
     
-    extension [Self <: IPeerInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPeerInfo] (val x: Self) extends AnyVal {
       
       inline def setPeerID(value: js.typedarray.Uint8Array): Self = StObject.set(x, "peerID", value.asInstanceOf[js.Any])
       
@@ -997,7 +1004,8 @@ object RPC {
       __obj.asInstanceOf[ISubOpts]
     }
     
-    extension [Self <: ISubOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISubOpts] (val x: Self) extends AnyVal {
       
       inline def setSubscribe(value: Boolean): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
       

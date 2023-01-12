@@ -28,7 +28,8 @@ object ExcelFormatOptions {
     __obj.asInstanceOf[ExcelFormatOptions]
   }
   
-  extension [Self <: ExcelFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcelFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setCsvValueSeparator(value: String): Self = StObject.set(x, "CsvValueSeparator", value.asInstanceOf[js.Any])
     

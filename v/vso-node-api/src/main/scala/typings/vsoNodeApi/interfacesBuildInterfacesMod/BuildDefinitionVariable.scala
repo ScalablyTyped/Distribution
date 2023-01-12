@@ -28,7 +28,8 @@ object BuildDefinitionVariable {
     __obj.asInstanceOf[BuildDefinitionVariable]
   }
   
-  extension [Self <: BuildDefinitionVariable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildDefinitionVariable] (val x: Self) extends AnyVal {
     
     inline def setAllowOverride(value: Boolean): Self = StObject.set(x, "allowOverride", value.asInstanceOf[js.Any])
     

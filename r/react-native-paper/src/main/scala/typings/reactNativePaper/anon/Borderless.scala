@@ -35,7 +35,8 @@ object Borderless {
     __obj.asInstanceOf[Borderless]
   }
   
-  extension [Self <: Borderless](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Borderless] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: BackgroundPropType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

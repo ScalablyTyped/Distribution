@@ -37,7 +37,8 @@ object PropertyQuota {
     __obj.asInstanceOf[PropertyQuota]
   }
   
-  extension [Self <: PropertyQuota](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyQuota] (val x: Self) extends AnyVal {
     
     inline def setConcurrentRequests(value: QuotaStatus): Self = StObject.set(x, "concurrentRequests", value.asInstanceOf[js.Any])
     

@@ -219,7 +219,8 @@ object mod {
           __obj.asInstanceOf[GregorianResult]
         }
         
-        extension [Self <: GregorianResult](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GregorianResult] (val x: Self) extends AnyVal {
           
           inline def setGd(value: Double): Self = StObject.set(x, "gd", value.asInstanceOf[js.Any])
           
@@ -244,7 +245,8 @@ object mod {
           __obj.asInstanceOf[HijriResult]
         }
         
-        extension [Self <: HijriResult](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: HijriResult] (val x: Self) extends AnyVal {
           
           inline def setHd(value: Double): Self = StObject.set(x, "hd", value.asInstanceOf[js.Any])
           

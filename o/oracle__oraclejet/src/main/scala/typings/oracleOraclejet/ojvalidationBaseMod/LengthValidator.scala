@@ -59,7 +59,8 @@ object LengthValidator {
       __obj.asInstanceOf[ValidatorOptions]
     }
     
-    extension [Self <: ValidatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatorOptions] (val x: Self) extends AnyVal {
       
       inline def setCountBy(value: codeUnit | codePoint): Self = StObject.set(x, "countBy", value.asInstanceOf[js.Any])
       

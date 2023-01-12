@@ -21,7 +21,8 @@ object CatRepositoriesRepositoriesRecord {
     __obj.asInstanceOf[CatRepositoriesRepositoriesRecord]
   }
   
-  extension [Self <: CatRepositoriesRepositoriesRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatRepositoriesRepositoriesRecord] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

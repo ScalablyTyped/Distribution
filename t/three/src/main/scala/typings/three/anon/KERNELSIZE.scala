@@ -17,7 +17,8 @@ object KERNELSIZE {
     __obj.asInstanceOf[KERNELSIZE]
   }
   
-  extension [Self <: KERNELSIZE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KERNELSIZE] (val x: Self) extends AnyVal {
     
     inline def setKERNEL_SIZE(value: Double): Self = StObject.set(x, "KERNEL_SIZE", value.asInstanceOf[js.Any])
     

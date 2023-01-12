@@ -19,7 +19,8 @@ object SelectOptionActionMeta {
     __obj.asInstanceOf[SelectOptionActionMeta[Option]]
   }
   
-  extension [Self <: SelectOptionActionMeta[?], Option](x: Self & SelectOptionActionMeta[Option]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectOptionActionMeta[?], Option] (val x: Self & SelectOptionActionMeta[Option]) extends AnyVal {
     
     inline def setAction(value: `select-option`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }

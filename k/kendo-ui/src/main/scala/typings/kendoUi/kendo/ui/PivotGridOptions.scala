@@ -58,7 +58,8 @@ object PivotGridOptions {
     __obj.asInstanceOf[PivotGridOptions]
   }
   
-  extension [Self <: PivotGridOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGridOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     

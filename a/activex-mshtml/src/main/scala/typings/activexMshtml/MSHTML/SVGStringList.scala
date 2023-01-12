@@ -43,7 +43,8 @@ object SVGStringList {
     __obj.asInstanceOf[SVGStringList]
   }
   
-  extension [Self <: SVGStringList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGStringList] (val x: Self) extends AnyVal {
     
     inline def setAppendItem(value: String => String): Self = StObject.set(x, "appendItem", js.Any.fromFunction1(value))
     

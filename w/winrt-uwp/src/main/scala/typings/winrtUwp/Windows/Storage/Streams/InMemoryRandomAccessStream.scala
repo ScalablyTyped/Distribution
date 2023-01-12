@@ -92,7 +92,8 @@ object InMemoryRandomAccessStream {
     __obj.asInstanceOf[InMemoryRandomAccessStream]
   }
   
-  extension [Self <: InMemoryRandomAccessStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InMemoryRandomAccessStream] (val x: Self) extends AnyVal {
     
     inline def setCanRead(value: Boolean): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
     

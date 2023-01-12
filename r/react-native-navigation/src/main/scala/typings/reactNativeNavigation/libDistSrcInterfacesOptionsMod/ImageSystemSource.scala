@@ -18,7 +18,8 @@ object ImageSystemSource {
     __obj.asInstanceOf[ImageSystemSource]
   }
   
-  extension [Self <: ImageSystemSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageSystemSource] (val x: Self) extends AnyVal {
     
     inline def setFallback(value: ImageRequireSource | String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     

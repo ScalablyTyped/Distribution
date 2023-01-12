@@ -65,7 +65,8 @@ object ManyToManyRelationshipMetadata {
     __obj.asInstanceOf[ManyToManyRelationshipMetadata]
   }
   
-  extension [Self <: ManyToManyRelationshipMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManyToManyRelationshipMetadata] (val x: Self) extends AnyVal {
     
     inline def setEntity1AssociatedMenuConfiguration(value: AssociatedMenuConfiguration): Self = StObject.set(x, "Entity1AssociatedMenuConfiguration", value.asInstanceOf[js.Any])
     

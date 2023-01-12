@@ -86,7 +86,8 @@ object contextMenus {
       __obj.asInstanceOf[CreateCreateProperties]
     }
     
-    extension [Self <: CreateCreateProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateCreateProperties] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -268,7 +269,8 @@ object contextMenus {
       __obj.asInstanceOf[OnClickData]
     }
     
-    extension [Self <: OnClickData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnClickData] (val x: Self) extends AnyVal {
       
       inline def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
       
@@ -397,7 +399,8 @@ object contextMenus {
       __obj.asInstanceOf[OnShownInfo]
     }
     
-    extension [Self <: OnShownInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnShownInfo] (val x: Self) extends AnyVal {
       
       inline def setContexts(value: js.Array[ContextType]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
       
@@ -470,7 +473,8 @@ object contextMenus {
       __obj.asInstanceOf[OverrideContextContextOptions]
     }
     
-    extension [Self <: OverrideContextContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverrideContextContextOptions] (val x: Self) extends AnyVal {
       
       inline def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
       
@@ -544,7 +548,8 @@ object contextMenus {
       __obj.asInstanceOf[UpdateUpdateProperties]
     }
     
-    extension [Self <: UpdateUpdateProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateUpdateProperties] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object IMetadataCardCommentHistoryItem {
     __obj.asInstanceOf[IMetadataCardCommentHistoryItem]
   }
   
-  extension [Self <: IMetadataCardCommentHistoryItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMetadataCardCommentHistoryItem] (val x: Self) extends AnyVal {
     
     inline def setGetCommentAuthor(value: () => String): Self = StObject.set(x, "GetCommentAuthor", js.Any.fromFunction0(value))
     

@@ -218,7 +218,8 @@ object libVictoryAnimationVictoryAnimationMod {
       __obj.asInstanceOf[AnimationInfo]
     }
     
-    extension [Self <: AnimationInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationInfo] (val x: Self) extends AnyVal {
       
       inline def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
       
@@ -253,7 +254,8 @@ object libVictoryAnimationVictoryAnimationMod {
       __obj.asInstanceOf[VictoryAnimationProps]
     }
     
-    extension [Self <: VictoryAnimationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryAnimationProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: (AnimationStyle, AnimationInfo) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
@@ -292,7 +294,8 @@ object libVictoryAnimationVictoryAnimationMod {
       __obj.asInstanceOf[VictoryAnimationState]
     }
     
-    extension [Self <: VictoryAnimationState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryAnimationState] (val x: Self) extends AnyVal {
       
       inline def setAnimationInfo(value: AnimationInfo): Self = StObject.set(x, "animationInfo", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object PollInterval {
     __obj.asInstanceOf[PollInterval]
   }
   
-  extension [Self <: PollInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PollInterval] (val x: Self) extends AnyVal {
     
     inline def setPollInterval(value: Double): Self = StObject.set(x, "pollInterval", value.asInstanceOf[js.Any])
     

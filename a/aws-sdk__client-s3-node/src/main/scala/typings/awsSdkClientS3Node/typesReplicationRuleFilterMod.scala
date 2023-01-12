@@ -34,7 +34,8 @@ object typesReplicationRuleFilterMod {
       __obj.asInstanceOf[ReplicationRuleFilter]
     }
     
-    extension [Self <: ReplicationRuleFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicationRuleFilter] (val x: Self) extends AnyVal {
       
       inline def setAnd(value: ReplicationRuleAndOperator): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object typesReplicationRuleFilterMod {
       __obj.asInstanceOf[UnmarshalledReplicationRuleFilter]
     }
     
-    extension [Self <: UnmarshalledReplicationRuleFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledReplicationRuleFilter] (val x: Self) extends AnyVal {
       
       inline def setAnd(value: UnmarshalledReplicationRuleAndOperator): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
       

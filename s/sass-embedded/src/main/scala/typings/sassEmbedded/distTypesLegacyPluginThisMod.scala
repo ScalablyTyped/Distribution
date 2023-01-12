@@ -22,7 +22,8 @@ object distTypesLegacyPluginThisMod {
       __obj.asInstanceOf[LegacyPluginThis]
     }
     
-    extension [Self <: LegacyPluginThis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyPluginThis] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Context): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }

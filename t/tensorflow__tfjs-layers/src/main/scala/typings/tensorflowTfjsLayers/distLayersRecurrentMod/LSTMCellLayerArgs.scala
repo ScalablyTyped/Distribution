@@ -49,7 +49,8 @@ object LSTMCellLayerArgs {
     __obj.asInstanceOf[LSTMCellLayerArgs]
   }
   
-  extension [Self <: LSTMCellLayerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LSTMCellLayerArgs] (val x: Self) extends AnyVal {
     
     inline def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     

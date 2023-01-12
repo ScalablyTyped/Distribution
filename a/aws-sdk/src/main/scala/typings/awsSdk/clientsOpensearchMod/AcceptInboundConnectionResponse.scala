@@ -18,7 +18,8 @@ object AcceptInboundConnectionResponse {
     __obj.asInstanceOf[AcceptInboundConnectionResponse]
   }
   
-  extension [Self <: AcceptInboundConnectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptInboundConnectionResponse] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: InboundConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     

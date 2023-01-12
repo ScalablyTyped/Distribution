@@ -19,7 +19,8 @@ object NodesHttp {
     __obj.asInstanceOf[NodesHttp]
   }
   
-  extension [Self <: NodesHttp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesHttp] (val x: Self) extends AnyVal {
     
     inline def setClients(value: js.Array[NodesClient]): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object Captions {
     __obj.asInstanceOf[Captions]
   }
   
-  extension [Self <: Captions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Captions] (val x: Self) extends AnyVal {
     
     inline def setCaptions(value: `15`): Self = StObject.set(x, "captions", value.asInstanceOf[js.Any])
     

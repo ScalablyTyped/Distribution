@@ -23,7 +23,8 @@ object EntityRecognizerAnnotations {
     __obj.asInstanceOf[EntityRecognizerAnnotations]
   }
   
-  extension [Self <: EntityRecognizerAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityRecognizerAnnotations] (val x: Self) extends AnyVal {
     
     inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
     

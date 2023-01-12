@@ -17,7 +17,8 @@ object PaginatorViewOptions {
     __obj.asInstanceOf[PaginatorViewOptions]
   }
   
-  extension [Self <: PaginatorViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginatorViewOptions] (val x: Self) extends AnyVal {
     
     inline def setEndPage(value: Double): Self = StObject.set(x, "endPage", value.asInstanceOf[js.Any])
     

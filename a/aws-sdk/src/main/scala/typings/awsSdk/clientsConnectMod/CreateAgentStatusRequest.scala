@@ -43,7 +43,8 @@ object CreateAgentStatusRequest {
     __obj.asInstanceOf[CreateAgentStatusRequest]
   }
   
-  extension [Self <: CreateAgentStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAgentStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: AgentStatusDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

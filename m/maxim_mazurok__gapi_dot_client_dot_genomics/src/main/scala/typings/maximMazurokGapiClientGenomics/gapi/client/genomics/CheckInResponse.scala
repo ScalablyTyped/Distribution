@@ -29,7 +29,8 @@ object CheckInResponse {
     __obj.asInstanceOf[CheckInResponse]
   }
   
-  extension [Self <: CheckInResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckInResponse] (val x: Self) extends AnyVal {
     
     inline def setDeadline(value: String): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object SpeakerSummary {
     __obj.asInstanceOf[SpeakerSummary]
   }
   
-  extension [Self <: SpeakerSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeakerSummary] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

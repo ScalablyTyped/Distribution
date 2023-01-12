@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[CheckResponse]
     }
     
-    extension [Self <: CheckResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckResponse] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object Space {
     __obj.asInstanceOf[Space]
   }
   
-  extension [Self <: Space](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Space] (val x: Self) extends AnyVal {
     
     inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object Field {
     __obj.asInstanceOf[Field[K, D]]
   }
   
-  extension [Self <: Field[?, ?], K, D](x: Self & (Field[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Field[?, ?], K, D] (val x: Self & (Field[K, D])) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

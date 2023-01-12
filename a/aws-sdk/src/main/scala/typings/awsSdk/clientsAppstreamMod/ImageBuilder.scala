@@ -100,7 +100,8 @@ object ImageBuilder {
     __obj.asInstanceOf[ImageBuilder]
   }
   
-  extension [Self <: ImageBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageBuilder] (val x: Self) extends AnyVal {
     
     inline def setAccessEndpoints(value: AccessEndpointList): Self = StObject.set(x, "AccessEndpoints", value.asInstanceOf[js.Any])
     

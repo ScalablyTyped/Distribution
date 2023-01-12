@@ -16,7 +16,8 @@ object ValueTextBaseline {
     __obj.asInstanceOf[ValueTextBaseline]
   }
   
-  extension [Self <: ValueTextBaseline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueTextBaseline] (val x: Self) extends AnyVal {
     
     inline def setValue(value: TextBaseline): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

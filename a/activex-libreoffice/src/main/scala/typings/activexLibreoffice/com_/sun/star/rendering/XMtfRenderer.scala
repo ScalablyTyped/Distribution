@@ -28,7 +28,8 @@ object XMtfRenderer {
     __obj.asInstanceOf[XMtfRenderer]
   }
   
-  extension [Self <: XMtfRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMtfRenderer] (val x: Self) extends AnyVal {
     
     inline def setDraw(value: (Double, Double) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
     

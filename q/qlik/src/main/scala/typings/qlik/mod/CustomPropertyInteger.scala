@@ -29,7 +29,8 @@ object CustomPropertyInteger {
     __obj.asInstanceOf[CustomPropertyInteger]
   }
   
-  extension [Self <: CustomPropertyInteger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPropertyInteger] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

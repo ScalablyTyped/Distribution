@@ -24,7 +24,8 @@ object ClearDataOptions {
     __obj.asInstanceOf[ClearDataOptions]
   }
   
-  extension [Self <: ClearDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearDataOptions] (val x: Self) extends AnyVal {
     
     inline def setSince(value: integer): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     

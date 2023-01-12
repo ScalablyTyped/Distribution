@@ -23,7 +23,8 @@ object UpsertRowsResult {
     __obj.asInstanceOf[UpsertRowsResult]
   }
   
-  extension [Self <: UpsertRowsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpsertRowsResult] (val x: Self) extends AnyVal {
     
     inline def setRowIds(value: RowIdList): Self = StObject.set(x, "rowIds", value.asInstanceOf[js.Any])
     

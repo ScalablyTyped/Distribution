@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setStringify(value: Any => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
     }

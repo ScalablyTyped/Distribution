@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[AllowedInMetered]
     }
     
-    extension [Self <: AllowedInMetered](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowedInMetered] (val x: Self) extends AnyVal {
       
       inline def setAllowedInMetered(value: Boolean): Self = StObject.set(x, "allowedInMetered", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setTrackViewUrl(value: String): Self = StObject.set(x, "trackViewUrl", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object anon {
       __obj.asInstanceOf[HasNewVersion]
     }
     
-    extension [Self <: HasNewVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasNewVersion] (val x: Self) extends AnyVal {
       
       inline def setHasNewVersion(value: Boolean): Self = StObject.set(x, "hasNewVersion", value.asInstanceOf[js.Any])
       
@@ -162,7 +165,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setDownloadApkEnd(value: /* path */ String => Any): Self = StObject.set(x, "downloadApkEnd", js.Any.fromFunction1(value))
       
@@ -215,7 +219,8 @@ object anon {
       __obj.asInstanceOf[VERSIONCODE]
     }
     
-    extension [Self <: VERSIONCODE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VERSIONCODE] (val x: Self) extends AnyVal {
       
       inline def setVERSION_CODE(value: String): Self = StObject.set(x, "VERSION_CODE", value.asInstanceOf[js.Any])
       

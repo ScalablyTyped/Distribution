@@ -74,7 +74,8 @@ object mod {
       __obj.asInstanceOf[CassandraStoreOptions]
     }
     
-    extension [Self <: CassandraStoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CassandraStoreOptions] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[ParentPackage]
     }
     
-    extension [Self <: ParentPackage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParentPackage] (val x: Self) extends AnyVal {
       
       inline def setParse(value: () => StringDictionary[Any]): Self = StObject.set(x, "parse", js.Any.fromFunction0(value))
       

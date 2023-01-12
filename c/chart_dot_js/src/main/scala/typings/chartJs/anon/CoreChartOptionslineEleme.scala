@@ -241,7 +241,8 @@ object CoreChartOptionslineEleme {
     __obj.asInstanceOf[CoreChartOptionslineEleme]
   }
   
-  extension [Self <: CoreChartOptionslineEleme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreChartOptionslineEleme] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: `false` | AnimationSpeclineonProgre): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object DefaultComponent {
     __obj.asInstanceOf[DefaultComponent]
   }
   
-  extension [Self <: DefaultComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponent] (val x: Self) extends AnyVal {
     
     inline def setClassKey(value: ToggleButtonClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
     

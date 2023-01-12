@@ -28,7 +28,8 @@ object SocksClientChainOptions {
     __obj.asInstanceOf[SocksClientChainOptions]
   }
   
-  extension [Self <: SocksClientChainOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocksClientChainOptions] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: connect): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

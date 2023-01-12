@@ -33,7 +33,8 @@ object RecommendationMetrics {
     __obj.asInstanceOf[RecommendationMetrics]
   }
   
-  extension [Self <: RecommendationMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationMetrics] (val x: Self) extends AnyVal {
     
     inline def setCostPerHour(value: Float): Self = StObject.set(x, "CostPerHour", value.asInstanceOf[js.Any])
     

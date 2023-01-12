@@ -49,7 +49,8 @@ object CoinsFetchParams {
     __obj.asInstanceOf[CoinsFetchParams]
   }
   
-  extension [Self <: CoinsFetchParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoinsFetchParams] (val x: Self) extends AnyVal {
     
     inline def setCommunity_data(value: Boolean): Self = StObject.set(x, "community_data", value.asInstanceOf[js.Any])
     

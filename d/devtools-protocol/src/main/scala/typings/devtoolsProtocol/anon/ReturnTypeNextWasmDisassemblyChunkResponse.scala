@@ -22,7 +22,8 @@ object ReturnTypeNextWasmDisassemblyChunkResponse {
     __obj.asInstanceOf[ReturnTypeNextWasmDisassemblyChunkResponse]
   }
   
-  extension [Self <: ReturnTypeNextWasmDisassemblyChunkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeNextWasmDisassemblyChunkResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[NextWasmDisassemblyChunkRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

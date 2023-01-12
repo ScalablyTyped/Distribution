@@ -18,7 +18,8 @@ object GetPlayerConnectionStatusResult {
     __obj.asInstanceOf[GetPlayerConnectionStatusResult]
   }
   
-  extension [Self <: GetPlayerConnectionStatusResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPlayerConnectionStatusResult] (val x: Self) extends AnyVal {
     
     inline def setConnections(value: ConnectionList): Self = StObject.set(x, "Connections", value.asInstanceOf[js.Any])
     

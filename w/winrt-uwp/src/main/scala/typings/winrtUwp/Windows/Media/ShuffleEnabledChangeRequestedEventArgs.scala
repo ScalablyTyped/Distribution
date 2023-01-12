@@ -17,7 +17,8 @@ object ShuffleEnabledChangeRequestedEventArgs {
     __obj.asInstanceOf[ShuffleEnabledChangeRequestedEventArgs]
   }
   
-  extension [Self <: ShuffleEnabledChangeRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShuffleEnabledChangeRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRequestedShuffleEnabled(value: Boolean): Self = StObject.set(x, "requestedShuffleEnabled", value.asInstanceOf[js.Any])
   }

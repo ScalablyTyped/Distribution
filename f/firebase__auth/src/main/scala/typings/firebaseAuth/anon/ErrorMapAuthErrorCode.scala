@@ -398,7 +398,8 @@ object ErrorMapAuthErrorCode {
     __obj.asInstanceOf[ErrorMapAuthErrorCode]
   }
   
-  extension [Self <: ErrorMapAuthErrorCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorMapAuthErrorCode] (val x: Self) extends AnyVal {
     
     inline def `setAccount-exists-with-different-credential`(value: String): Self = StObject.set(x, "account-exists-with-different-credential", value.asInstanceOf[js.Any])
     

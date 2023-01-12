@@ -22,7 +22,8 @@ object MosaicId {
     __obj.asInstanceOf[MosaicId]
   }
   
-  extension [Self <: MosaicId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MosaicId] (val x: Self) extends AnyVal {
     
     inline def setFee(value: Double): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
     

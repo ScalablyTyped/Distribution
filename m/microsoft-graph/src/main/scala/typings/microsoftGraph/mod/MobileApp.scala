@@ -63,7 +63,8 @@ object MobileApp {
     __obj.asInstanceOf[MobileApp]
   }
   
-  extension [Self <: MobileApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileApp] (val x: Self) extends AnyVal {
     
     inline def setAssignments(value: NullableOption[js.Array[MobileAppAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     

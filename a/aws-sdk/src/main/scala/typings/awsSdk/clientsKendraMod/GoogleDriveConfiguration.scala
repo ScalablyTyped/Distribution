@@ -48,7 +48,8 @@ object GoogleDriveConfiguration {
     __obj.asInstanceOf[GoogleDriveConfiguration]
   }
   
-  extension [Self <: GoogleDriveConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDriveConfiguration] (val x: Self) extends AnyVal {
     
     inline def setExcludeMimeTypes(value: ExcludeMimeTypesList): Self = StObject.set(x, "ExcludeMimeTypes", value.asInstanceOf[js.Any])
     

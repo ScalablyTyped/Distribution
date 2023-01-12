@@ -21,7 +21,8 @@ object dxSliderOptions {
     __obj.asInstanceOf[dxSliderOptions]
   }
   
-  extension [Self <: dxSliderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxSliderOptions] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

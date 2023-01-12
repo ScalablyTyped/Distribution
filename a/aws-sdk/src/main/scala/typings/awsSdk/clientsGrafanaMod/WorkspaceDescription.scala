@@ -132,7 +132,8 @@ object WorkspaceDescription {
     __obj.asInstanceOf[WorkspaceDescription]
   }
   
-  extension [Self <: WorkspaceDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceDescription] (val x: Self) extends AnyVal {
     
     inline def setAccountAccessType(value: AccountAccessType): Self = StObject.set(x, "accountAccessType", value.asInstanceOf[js.Any])
     

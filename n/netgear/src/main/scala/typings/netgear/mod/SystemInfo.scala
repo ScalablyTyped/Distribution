@@ -29,7 +29,8 @@ object SystemInfo {
     __obj.asInstanceOf[SystemInfo]
   }
   
-  extension [Self <: SystemInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfo] (val x: Self) extends AnyVal {
     
     inline def setNewAvailableFlash(value: Double): Self = StObject.set(x, "NewAvailableFlash", value.asInstanceOf[js.Any])
     

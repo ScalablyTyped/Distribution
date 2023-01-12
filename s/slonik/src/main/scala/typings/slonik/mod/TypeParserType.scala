@@ -20,7 +20,8 @@ object TypeParserType {
     __obj.asInstanceOf[TypeParserType[T]]
   }
   
-  extension [Self <: TypeParserType[?], T](x: Self & TypeParserType[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeParserType[?], T] (val x: Self & TypeParserType[T]) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

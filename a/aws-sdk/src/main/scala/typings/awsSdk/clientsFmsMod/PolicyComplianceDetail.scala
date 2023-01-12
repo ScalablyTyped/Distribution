@@ -48,7 +48,8 @@ object PolicyComplianceDetail {
     __obj.asInstanceOf[PolicyComplianceDetail]
   }
   
-  extension [Self <: PolicyComplianceDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyComplianceDetail] (val x: Self) extends AnyVal {
     
     inline def setEvaluationLimitExceeded(value: Boolean): Self = StObject.set(x, "EvaluationLimitExceeded", value.asInstanceOf[js.Any])
     

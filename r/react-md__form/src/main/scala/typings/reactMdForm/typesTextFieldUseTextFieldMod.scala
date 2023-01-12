@@ -71,7 +71,8 @@ object typesTextFieldUseTextFieldMod {
       __obj.asInstanceOf[ProvidedFormMessageProps]
     }
     
-    extension [Self <: ProvidedFormMessageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidedFormMessageProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object typesTextFieldUseTextFieldMod {
       __obj.asInstanceOf[ProvidedTextFieldMessageProps]
     }
     
-    extension [Self <: ProvidedTextFieldMessageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidedTextFieldMessageProps] (val x: Self) extends AnyVal {
       
       inline def setMessageProps(value: ProvidedFormMessageProps): Self = StObject.set(x, "messageProps", value.asInstanceOf[js.Any])
     }
@@ -168,7 +170,8 @@ object typesTextFieldUseTextFieldMod {
       __obj.asInstanceOf[ProvidedTextFieldProps]
     }
     
-    extension [Self <: ProvidedTextFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidedTextFieldProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       
@@ -224,7 +227,8 @@ object typesTextFieldUseTextFieldMod {
       __obj.asInstanceOf[TextFieldChangeHandlers]
     }
     
-    extension [Self <: TextFieldChangeHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextFieldChangeHandlers] (val x: Self) extends AnyVal {
       
       inline def setOnBlur(value: FocusEvent[HTMLInputElement | HTMLTextAreaElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
@@ -259,7 +263,8 @@ object typesTextFieldUseTextFieldMod {
       __obj.asInstanceOf[TextFieldHookControls]
     }
     
-    extension [Self <: TextFieldHookControls](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextFieldHookControls] (val x: Self) extends AnyVal {
       
       inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
@@ -378,7 +383,8 @@ object typesTextFieldUseTextFieldMod {
       __obj.asInstanceOf[TextFieldHookOptions]
     }
     
-    extension [Self <: TextFieldHookOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextFieldHookOptions] (val x: Self) extends AnyVal {
       
       inline def setCounter(value: Boolean): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       
@@ -498,7 +504,8 @@ object typesTextFieldUseTextFieldMod {
       __obj.asInstanceOf[TextFieldHookState]
     }
     
-    extension [Self <: TextFieldHookState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextFieldHookState] (val x: Self) extends AnyVal {
       
       inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

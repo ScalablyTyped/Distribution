@@ -24,7 +24,8 @@ object WebCLUserEvent {
     __obj.asInstanceOf[WebCLUserEvent]
   }
   
-  extension [Self <: WebCLUserEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebCLUserEvent] (val x: Self) extends AnyVal {
     
     inline def setSetStatus(value: CommandExecutionStatus => Unit): Self = StObject.set(x, "setStatus", js.Any.fromFunction1(value))
   }

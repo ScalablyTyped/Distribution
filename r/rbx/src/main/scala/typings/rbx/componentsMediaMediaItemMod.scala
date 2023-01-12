@@ -79,7 +79,8 @@ object componentsMediaMediaItemMod {
       __obj.asInstanceOf[MediaItemModifierProps]
     }
     
-    extension [Self <: MediaItemModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaItemModifierProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: content | left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object componentsMediaMediaItemMod {
       __obj.asInstanceOf[MediaItemProps]
     }
     
-    extension [Self <: MediaItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaItemProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: content | left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -329,7 +331,8 @@ object componentsMediaMediaItemMod {
       __obj.asInstanceOf[MediaItemVariables]
     }
     
-    extension [Self <: MediaItemVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaItemVariables] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: content | left | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
     }
@@ -346,7 +349,8 @@ object componentsMediaMediaItemMod {
       __obj.asInstanceOf[MediaItemVariablesDefaults]
     }
     
-    extension [Self <: MediaItemVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaItemVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: content | left | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
     }

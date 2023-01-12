@@ -18,7 +18,8 @@ object DefaultSegmentDeliveryConfiguration {
     __obj.asInstanceOf[DefaultSegmentDeliveryConfiguration]
   }
   
-  extension [Self <: DefaultSegmentDeliveryConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultSegmentDeliveryConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBaseUrl(value: _String): Self = StObject.set(x, "BaseUrl", value.asInstanceOf[js.Any])
     

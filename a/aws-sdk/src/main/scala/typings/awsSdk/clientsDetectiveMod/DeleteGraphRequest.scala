@@ -18,7 +18,8 @@ object DeleteGraphRequest {
     __obj.asInstanceOf[DeleteGraphRequest]
   }
   
-  extension [Self <: DeleteGraphRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGraphRequest] (val x: Self) extends AnyVal {
     
     inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
   }

@@ -34,7 +34,8 @@ object PartialTooltipOptions {
     __obj.asInstanceOf[PartialTooltipOptions]
   }
   
-  extension [Self <: PartialTooltipOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTooltipOptions] (val x: Self) extends AnyVal {
     
     inline def setEnterDelay(value: Double): Self = StObject.set(x, "enterDelay", value.asInstanceOf[js.Any])
     

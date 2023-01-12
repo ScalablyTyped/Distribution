@@ -35,7 +35,8 @@ object FormulaChangedEventDetail {
     __obj.asInstanceOf[FormulaChangedEventDetail]
   }
   
-  extension [Self <: FormulaChangedEventDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormulaChangedEventDetail] (val x: Self) extends AnyVal {
     
     inline def setCellAddress(value: String): Self = StObject.set(x, "cellAddress", value.asInstanceOf[js.Any])
     

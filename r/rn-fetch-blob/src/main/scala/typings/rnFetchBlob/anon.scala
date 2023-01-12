@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Decode]
     }
     
-    extension [Self <: Decode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decode] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       

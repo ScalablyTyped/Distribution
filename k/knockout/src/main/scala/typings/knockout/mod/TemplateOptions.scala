@@ -18,7 +18,8 @@ object TemplateOptions {
     __obj.asInstanceOf[TemplateOptions[T]]
   }
   
-  extension [Self <: TemplateOptions[?], T](x: Self & TemplateOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateOptions[?], T] (val x: Self & TemplateOptions[T]) extends AnyVal {
     
     inline def setAfterRender(value: (/* elements */ js.Array[Node], /* dataItem */ T) => Unit): Self = StObject.set(x, "afterRender", js.Any.fromFunction2(value))
     

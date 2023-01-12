@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: String | Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object mod {
       __obj.asInstanceOf[Stream]
     }
     
-    extension [Self <: Stream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
       
       inline def setCloseOnExit(value: Boolean): Self = StObject.set(x, "closeOnExit", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,8 @@ object mod {
       __obj.asInstanceOf[StreamConfiguration]
     }
     
-    extension [Self <: StreamConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamConfiguration] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object AriaIndeterminateProgressText {
     __obj.asInstanceOf[AriaIndeterminateProgressText]
   }
   
-  extension [Self <: AriaIndeterminateProgressText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AriaIndeterminateProgressText] (val x: Self) extends AnyVal {
     
     inline def setAriaIndeterminateProgressText(value: String): Self = StObject.set(x, "ariaIndeterminateProgressText", value.asInstanceOf[js.Any])
     

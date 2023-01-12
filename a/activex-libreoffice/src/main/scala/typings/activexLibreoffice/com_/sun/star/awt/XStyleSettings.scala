@@ -192,7 +192,8 @@ object XStyleSettings {
     __obj.asInstanceOf[XStyleSettings]
   }
   
-  extension [Self <: XStyleSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStyleSettings] (val x: Self) extends AnyVal {
     
     inline def setActiveBorderColor(value: Color): Self = StObject.set(x, "ActiveBorderColor", value.asInstanceOf[js.Any])
     

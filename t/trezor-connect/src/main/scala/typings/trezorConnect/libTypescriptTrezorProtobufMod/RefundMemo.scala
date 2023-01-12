@@ -17,7 +17,8 @@ object RefundMemo {
     __obj.asInstanceOf[RefundMemo]
   }
   
-  extension [Self <: RefundMemo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefundMemo] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

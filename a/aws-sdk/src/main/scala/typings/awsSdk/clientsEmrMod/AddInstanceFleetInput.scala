@@ -23,7 +23,8 @@ object AddInstanceFleetInput {
     __obj.asInstanceOf[AddInstanceFleetInput]
   }
   
-  extension [Self <: AddInstanceFleetInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddInstanceFleetInput] (val x: Self) extends AnyVal {
     
     inline def setClusterId(value: XmlStringMaxLen256): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object LineHeightParams {
     __obj.asInstanceOf[LineHeightParams]
   }
   
-  extension [Self <: LineHeightParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineHeightParams] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

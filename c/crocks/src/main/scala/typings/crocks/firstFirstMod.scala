@@ -46,7 +46,8 @@ object firstFirstMod {
       __obj.asInstanceOf[First]
     }
     
-    extension [Self <: First](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: First] (val x: Self) extends AnyVal {
       
       inline def setConcat(value: First => First): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
       

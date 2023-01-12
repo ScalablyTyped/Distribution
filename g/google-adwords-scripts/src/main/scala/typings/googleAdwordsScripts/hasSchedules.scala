@@ -17,7 +17,8 @@ object hasSchedules {
     __obj.asInstanceOf[hasSchedules]
   }
   
-  extension [Self <: hasSchedules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: hasSchedules] (val x: Self) extends AnyVal {
     
     inline def setGetSchedules(value: () => ExtensionSchedule): Self = StObject.set(x, "getSchedules", js.Any.fromFunction0(value))
     

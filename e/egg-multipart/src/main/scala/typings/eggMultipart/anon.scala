@@ -45,7 +45,8 @@ object anon {
       __obj.asInstanceOf[AutoFields]
     }
     
-    extension [Self <: AutoFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoFields] (val x: Self) extends AnyVal {
       
       inline def setAutoFields(value: Boolean): Self = StObject.set(x, "autoFields", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object anon {
       __obj.asInstanceOf[CurrentDate]
     }
     
-    extension [Self <: CurrentDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentDate] (val x: Self) extends AnyVal {
       
       inline def setCurrentDate(value: String | Double | js.Date): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
       
@@ -181,7 +183,8 @@ object anon {
       __obj.asInstanceOf[FieldNameSize]
     }
     
-    extension [Self <: FieldNameSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldNameSize] (val x: Self) extends AnyVal {
       
       inline def setFieldNameSize(value: Double): Self = StObject.set(x, "fieldNameSize", value.asInstanceOf[js.Any])
       

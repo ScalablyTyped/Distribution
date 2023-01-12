@@ -23,7 +23,8 @@ object GridsterCollision {
     __obj.asInstanceOf[GridsterCollision]
   }
   
-  extension [Self <: GridsterCollision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridsterCollision] (val x: Self) extends AnyVal {
     
     inline def setOn_overlap(value: GridsterCollisionData => Unit): Self = StObject.set(x, "on_overlap", js.Any.fromFunction1(value))
     

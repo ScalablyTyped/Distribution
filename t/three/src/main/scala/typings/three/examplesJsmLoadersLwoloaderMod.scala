@@ -56,7 +56,8 @@ object examplesJsmLoadersLwoloaderMod {
       __obj.asInstanceOf[LWO]
     }
     
-    extension [Self <: LWO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LWO] (val x: Self) extends AnyVal {
       
       inline def setMaterials(value: js.Array[Material]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object examplesJsmLoadersLwoloaderMod {
       __obj.asInstanceOf[LWOLoaderParameters]
     }
     
-    extension [Self <: LWOLoaderParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LWOLoaderParameters] (val x: Self) extends AnyVal {
       
       inline def setResourcePath(value: String): Self = StObject.set(x, "resourcePath", value.asInstanceOf[js.Any])
       

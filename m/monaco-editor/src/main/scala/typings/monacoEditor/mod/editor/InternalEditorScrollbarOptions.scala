@@ -53,7 +53,8 @@ object InternalEditorScrollbarOptions {
     __obj.asInstanceOf[InternalEditorScrollbarOptions]
   }
   
-  extension [Self <: InternalEditorScrollbarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalEditorScrollbarOptions] (val x: Self) extends AnyVal {
     
     inline def setAlwaysConsumeMouseWheel(value: Boolean): Self = StObject.set(x, "alwaysConsumeMouseWheel", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Bundle {
     __obj.asInstanceOf[Bundle[T]]
   }
   
-  extension [Self <: Bundle[?], T /* <: String */](x: Self & Bundle[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bundle[?], T /* <: String */] (val x: Self & Bundle[T]) extends AnyVal {
     
     inline def setBundle(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify fhir.Bundle */ Any) & TypeT[T]

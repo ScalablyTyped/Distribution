@@ -67,7 +67,8 @@ object AssociatedAssetsSummary {
     __obj.asInstanceOf[AssociatedAssetsSummary]
   }
   
-  extension [Self <: AssociatedAssetsSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociatedAssetsSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

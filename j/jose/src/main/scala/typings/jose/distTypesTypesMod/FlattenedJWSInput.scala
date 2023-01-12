@@ -37,7 +37,8 @@ object FlattenedJWSInput {
     __obj.asInstanceOf[FlattenedJWSInput]
   }
   
-  extension [Self <: FlattenedJWSInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlattenedJWSInput] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: JWSHeaderParameters): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

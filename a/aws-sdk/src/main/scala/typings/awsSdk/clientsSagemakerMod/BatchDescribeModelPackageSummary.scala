@@ -56,7 +56,8 @@ object BatchDescribeModelPackageSummary {
     __obj.asInstanceOf[BatchDescribeModelPackageSummary]
   }
   
-  extension [Self <: BatchDescribeModelPackageSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDescribeModelPackageSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Removebookmarkshortcut {
     __obj.asInstanceOf[Removebookmarkshortcut]
   }
   
-  extension [Self <: Removebookmarkshortcut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Removebookmarkshortcut] (val x: Self) extends AnyVal {
     
     inline def setRemove_bookmark_shortcut(value: Boolean): Self = StObject.set(x, "remove_bookmark_shortcut", value.asInstanceOf[js.Any])
     

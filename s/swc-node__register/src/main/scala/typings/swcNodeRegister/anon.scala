@@ -222,7 +222,8 @@ object anon {
       __obj.asInstanceOf[CompilerOptionsfallbackTo]
     }
     
-    extension [Self <: CompilerOptionsfallbackTo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompilerOptionsfallbackTo] (val x: Self) extends AnyVal {
       
       inline def setAllowJs(value: Boolean): Self = StObject.set(x, "allowJs", value.asInstanceOf[js.Any])
       
@@ -822,7 +823,8 @@ object anon {
       __obj.asInstanceOf[PartialCompilerOptionsfal]
     }
     
-    extension [Self <: PartialCompilerOptionsfal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCompilerOptionsfal] (val x: Self) extends AnyVal {
       
       inline def setAllowJs(value: Boolean): Self = StObject.set(x, "allowJs", value.asInstanceOf[js.Any])
       

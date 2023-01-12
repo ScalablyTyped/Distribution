@@ -75,7 +75,8 @@ object mod {
         __obj.asInstanceOf[Details]
       }
       
-      extension [Self <: Details](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
         
         inline def setDim1(value: String): Self = StObject.set(x, "dim1", value.asInstanceOf[js.Any])
         
@@ -127,7 +128,8 @@ object mod {
         __obj.asInstanceOf[Logobject]
       }
       
-      extension [Self <: Logobject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Logobject] (val x: Self) extends AnyVal {
         
         inline def setLogType(value: Level): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
         
@@ -411,7 +413,8 @@ object mod {
       __obj.asInstanceOf[AccedoConfig]
     }
     
-    extension [Self <: AccedoConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccedoConfig] (val x: Self) extends AnyVal {
       
       inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
       
@@ -491,7 +494,8 @@ object mod {
       __obj.asInstanceOf[AccedoEntryParams]
     }
     
-    extension [Self <: AccedoEntryParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccedoEntryParams] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -552,7 +556,8 @@ object mod {
       __obj.asInstanceOf[AccedoLocale]
     }
     
-    extension [Self <: AccedoLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccedoLocale] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -579,7 +584,8 @@ object mod {
       __obj.asInstanceOf[AccedoProfile]
     }
     
-    extension [Self <: AccedoProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccedoProfile] (val x: Self) extends AnyVal {
       
       inline def setProfileDescription(value: String): Self = StObject.set(x, "profileDescription", value.asInstanceOf[js.Any])
       

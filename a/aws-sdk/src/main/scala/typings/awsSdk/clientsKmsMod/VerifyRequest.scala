@@ -48,7 +48,8 @@ object VerifyRequest {
     __obj.asInstanceOf[VerifyRequest]
   }
   
-  extension [Self <: VerifyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyRequest] (val x: Self) extends AnyVal {
     
     inline def setGrantTokens(value: GrantTokenList): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
     

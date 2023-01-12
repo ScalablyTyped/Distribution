@@ -26,7 +26,8 @@ object CreateRequest {
     __obj.asInstanceOf[CreateRequest]
   }
   
-  extension [Self <: CreateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRequest] (val x: Self) extends AnyVal {
     
     inline def setMultiFactor(value: MultiFactorCreateSettings): Self = StObject.set(x, "multiFactor", value.asInstanceOf[js.Any])
     

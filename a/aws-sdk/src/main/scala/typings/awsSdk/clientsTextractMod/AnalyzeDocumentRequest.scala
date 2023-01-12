@@ -33,7 +33,8 @@ object AnalyzeDocumentRequest {
     __obj.asInstanceOf[AnalyzeDocumentRequest]
   }
   
-  extension [Self <: AnalyzeDocumentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzeDocumentRequest] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: Document): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     

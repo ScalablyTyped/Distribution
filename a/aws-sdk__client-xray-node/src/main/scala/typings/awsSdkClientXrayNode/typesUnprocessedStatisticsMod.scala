@@ -32,7 +32,8 @@ object typesUnprocessedStatisticsMod {
       __obj.asInstanceOf[UnprocessedStatistics]
     }
     
-    extension [Self <: UnprocessedStatistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnprocessedStatistics] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
       

@@ -479,7 +479,8 @@ object buildFormatterMod {
       __obj.asInstanceOf[ConfigurationOperation]
     }
     
-    extension [Self <: ConfigurationOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurationOperation] (val x: Self) extends AnyVal {
       
       inline def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
@@ -515,7 +516,8 @@ object buildFormatterMod {
       __obj.asInstanceOf[CopyFileProps]
     }
     
-    extension [Self <: CopyFileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyFileProps] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -561,7 +563,8 @@ object buildFormatterMod {
       __obj.asInstanceOf[FileOperation]
     }
     
-    extension [Self <: FileOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOperation] (val x: Self) extends AnyVal {
       
       inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object SimpleSpecialLink {
     __obj.asInstanceOf[SimpleSpecialLink]
   }
   
-  extension [Self <: SimpleSpecialLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleSpecialLink] (val x: Self) extends AnyVal {
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

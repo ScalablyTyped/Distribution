@@ -21,7 +21,8 @@ object MlGetFiltersRequest {
     __obj.asInstanceOf[MlGetFiltersRequest]
   }
   
-  extension [Self <: MlGetFiltersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetFiltersRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter_id(value: Ids): Self = StObject.set(x, "filter_id", value.asInstanceOf[js.Any])
     

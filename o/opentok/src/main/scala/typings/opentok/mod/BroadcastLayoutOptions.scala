@@ -17,7 +17,8 @@ object BroadcastLayoutOptions {
     __obj.asInstanceOf[BroadcastLayoutOptions]
   }
   
-  extension [Self <: BroadcastLayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BroadcastLayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setType(value: BroadcastLayoutType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -108,7 +108,8 @@ object JobDescriptor {
     __obj.asInstanceOf[JobDescriptor]
   }
   
-  extension [Self <: JobDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobDescriptor] (val x: Self) extends AnyVal {
     
     inline def setConfirmationRequired(value: ConfirmationRequired): Self = StObject.set(x, "ConfirmationRequired", value.asInstanceOf[js.Any])
     

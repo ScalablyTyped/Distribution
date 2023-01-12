@@ -61,7 +61,8 @@ object libEventSurrogateListenerMod {
       __obj.asInstanceOf[SurrogateListener]
     }
     
-    extension [Self <: SurrogateListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SurrogateListener] (val x: Self) extends AnyVal {
       
       inline def setFilterSurrogatedListeners(value: js.Function1[/* arg0 */ typings.nginstackEngine.libEventListenerMod.^, Any] => Unit): Self = StObject.set(x, "filterSurrogatedListeners", js.Any.fromFunction1(value))
       

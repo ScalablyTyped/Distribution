@@ -26,7 +26,8 @@ object ApiSuite {
     __obj.asInstanceOf[ApiSuite]
   }
   
-  extension [Self <: ApiSuite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiSuite] (val x: Self) extends AnyVal {
     
     inline def setAppVersionId(value: Id): Self = StObject.set(x, "appVersionId", value.asInstanceOf[js.Any])
     

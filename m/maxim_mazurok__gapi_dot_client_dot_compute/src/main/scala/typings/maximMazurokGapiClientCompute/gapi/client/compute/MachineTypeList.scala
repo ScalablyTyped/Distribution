@@ -35,7 +35,8 @@ object MachineTypeList {
     __obj.asInstanceOf[MachineTypeList]
   }
   
-  extension [Self <: MachineTypeList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MachineTypeList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

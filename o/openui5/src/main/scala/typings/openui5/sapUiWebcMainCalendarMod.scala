@@ -627,7 +627,8 @@ object sapUiWebcMainCalendarMod {
       __obj.asInstanceOf[CalendarSettings]
     }
     
-    extension [Self <: CalendarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarSettings] (val x: Self) extends AnyVal {
       
       inline def setDates(
         value: js.Array[ICalendarDate] | ICalendarDate | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

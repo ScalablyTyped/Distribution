@@ -45,7 +45,8 @@ object ListViewOptions {
     __obj.asInstanceOf[ListViewOptions]
   }
   
-  extension [Self <: ListViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListViewOptions] (val x: Self) extends AnyVal {
     
     inline def setAutodividers(value: Boolean): Self = StObject.set(x, "autodividers", value.asInstanceOf[js.Any])
     

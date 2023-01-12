@@ -26,7 +26,8 @@ object MappingGeoPointProperty {
     __obj.asInstanceOf[MappingGeoPointProperty]
   }
   
-  extension [Self <: MappingGeoPointProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingGeoPointProperty] (val x: Self) extends AnyVal {
     
     inline def setIgnore_malformed(value: Boolean): Self = StObject.set(x, "ignore_malformed", value.asInstanceOf[js.Any])
     

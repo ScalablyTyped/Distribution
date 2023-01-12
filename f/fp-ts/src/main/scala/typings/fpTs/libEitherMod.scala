@@ -489,7 +489,8 @@ object libEitherMod {
       __obj.asInstanceOf[Left_[E]]
     }
     
-    extension [Self <: Left_[?], E](x: Self & Left_[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left_[?], E] (val x: Self & Left_[E]) extends AnyVal {
       
       inline def setLeft(value: E): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -512,7 +513,8 @@ object libEitherMod {
       __obj.asInstanceOf[Right_[A]]
     }
     
-    extension [Self <: Right_[?], A](x: Self & Right_[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Right_[?], A] (val x: Self & Right_[A]) extends AnyVal {
       
       inline def setRight(value: A): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       

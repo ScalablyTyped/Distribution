@@ -52,7 +52,8 @@ object TextDocumentItem {
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentItem */ Boolean]
   
-  extension [Self <: TextDocumentItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDocumentItem] (val x: Self) extends AnyVal {
     
     inline def setLanguageId(value: String): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
     

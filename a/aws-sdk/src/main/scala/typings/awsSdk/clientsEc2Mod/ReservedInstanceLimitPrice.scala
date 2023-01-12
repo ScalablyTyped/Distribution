@@ -23,7 +23,8 @@ object ReservedInstanceLimitPrice {
     __obj.asInstanceOf[ReservedInstanceLimitPrice]
   }
   
-  extension [Self <: ReservedInstanceLimitPrice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservedInstanceLimitPrice] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     

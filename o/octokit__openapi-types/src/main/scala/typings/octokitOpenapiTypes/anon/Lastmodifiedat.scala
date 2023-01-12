@@ -60,7 +60,8 @@ object Lastmodifiedat {
     __obj.asInstanceOf[Lastmodifiedat]
   }
   
-  extension [Self <: Lastmodifiedat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lastmodifiedat] (val x: Self) extends AnyVal {
     
     inline def setFile_size(value: Double): Self = StObject.set(x, "file_size", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object ProcessOptionspluginsArra {
     __obj.asInstanceOf[ProcessOptionspluginsArra]
   }
   
-  extension [Self <: ProcessOptionspluginsArra](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessOptionspluginsArra] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

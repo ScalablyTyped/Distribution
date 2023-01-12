@@ -21,7 +21,8 @@ object ReplaceRoutesAction {
     __obj.asInstanceOf[ReplaceRoutesAction]
   }
   
-  extension [Self <: ReplaceRoutesAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceRoutesAction] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Options): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

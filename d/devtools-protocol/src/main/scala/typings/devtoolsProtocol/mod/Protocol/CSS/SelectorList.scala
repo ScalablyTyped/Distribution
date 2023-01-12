@@ -23,7 +23,8 @@ object SelectorList {
     __obj.asInstanceOf[SelectorList]
   }
   
-  extension [Self <: SelectorList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectorList] (val x: Self) extends AnyVal {
     
     inline def setSelectors(value: js.Array[Value]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     

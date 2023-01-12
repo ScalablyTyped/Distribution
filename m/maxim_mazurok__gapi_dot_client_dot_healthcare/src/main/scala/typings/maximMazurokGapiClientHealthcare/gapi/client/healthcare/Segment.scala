@@ -29,7 +29,8 @@ object Segment {
     __obj.asInstanceOf[Segment]
   }
   
-  extension [Self <: Segment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
     
     inline def setFields(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

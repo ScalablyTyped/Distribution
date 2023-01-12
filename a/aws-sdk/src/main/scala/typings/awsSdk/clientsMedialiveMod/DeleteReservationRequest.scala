@@ -18,7 +18,8 @@ object DeleteReservationRequest {
     __obj.asInstanceOf[DeleteReservationRequest]
   }
   
-  extension [Self <: DeleteReservationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteReservationRequest] (val x: Self) extends AnyVal {
     
     inline def setReservationId(value: string): Self = StObject.set(x, "ReservationId", value.asInstanceOf[js.Any])
   }

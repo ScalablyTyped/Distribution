@@ -84,7 +84,8 @@ object HtmlProps {
     __obj.asInstanceOf[HtmlProps[RawDatum]]
   }
   
-  extension [Self <: HtmlProps[?], RawDatum /* <: Datum */](x: Self & HtmlProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlProps[?], RawDatum /* <: Datum */] (val x: Self & HtmlProps[RawDatum]) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

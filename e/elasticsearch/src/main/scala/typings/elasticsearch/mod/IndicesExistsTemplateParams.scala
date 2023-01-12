@@ -21,7 +21,8 @@ object IndicesExistsTemplateParams {
     __obj.asInstanceOf[IndicesExistsTemplateParams]
   }
   
-  extension [Self <: IndicesExistsTemplateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesExistsTemplateParams] (val x: Self) extends AnyVal {
     
     inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     

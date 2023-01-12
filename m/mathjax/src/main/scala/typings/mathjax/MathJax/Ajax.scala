@@ -104,7 +104,8 @@ object Ajax {
     __obj.asInstanceOf[Ajax]
   }
   
-  extension [Self <: Ajax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ajax] (val x: Self) extends AnyVal {
     
     inline def setFileURL(value: String => String): Self = StObject.set(x, "fileURL", js.Any.fromFunction1(value))
     

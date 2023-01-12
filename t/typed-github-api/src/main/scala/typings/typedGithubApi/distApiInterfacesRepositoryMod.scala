@@ -234,7 +234,8 @@ object distApiInterfacesRepositoryMod {
       __obj.asInstanceOf[Repository]
     }
     
-    extension [Self <: Repository](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Repository] (val x: Self) extends AnyVal {
       
       inline def setAllow_merge_commit(value: Boolean): Self = StObject.set(x, "allow_merge_commit", value.asInstanceOf[js.Any])
       

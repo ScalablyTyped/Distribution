@@ -148,7 +148,8 @@ object libParserMod {
       __obj.asInstanceOf[Component]
     }
     
-    extension [Self <: Component](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -183,7 +184,8 @@ object libParserMod {
       __obj.asInstanceOf[ComponentDoc]
     }
     
-    extension [Self <: ComponentDoc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentDoc] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -236,7 +238,8 @@ object libParserMod {
       __obj.asInstanceOf[JSDoc]
     }
     
-    extension [Self <: JSDoc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSDoc] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -273,7 +276,8 @@ object libParserMod {
       __obj.asInstanceOf[Method]
     }
     
-    extension [Self <: Method](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -313,7 +317,8 @@ object libParserMod {
       __obj.asInstanceOf[MethodParameter]
     }
     
-    extension [Self <: MethodParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodParameter] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -338,7 +343,8 @@ object libParserMod {
       __obj.asInstanceOf[MethodParameterType]
     }
     
-    extension [Self <: MethodParameterType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodParameterType] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -357,7 +363,8 @@ object libParserMod {
       __obj.asInstanceOf[ParentType]
     }
     
-    extension [Self <: ParentType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParentType] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -394,7 +401,8 @@ object libParserMod {
       __obj.asInstanceOf[ParserOptions]
     }
     
-    extension [Self <: ParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
       
       inline def setComponentNameResolver(value: (/* exp */ Symbol, /* source */ SourceFile) => js.UndefOr[String | Null | `false`]): Self = StObject.set(x, "componentNameResolver", js.Any.fromFunction2(value))
       
@@ -470,7 +478,8 @@ object libParserMod {
       __obj.asInstanceOf[PropItem]
     }
     
-    extension [Self <: PropItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropItem] (val x: Self) extends AnyVal {
       
       inline def setDeclarations(value: js.Array[ParentType]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
       
@@ -513,7 +522,8 @@ object libParserMod {
       __obj.asInstanceOf[PropItemType]
     }
     
-    extension [Self <: PropItemType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropItemType] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -542,7 +552,8 @@ object libParserMod {
       __obj.asInstanceOf[StaticPropFilter]
     }
     
-    extension [Self <: StaticPropFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticPropFilter] (val x: Self) extends AnyVal {
       
       inline def setSkipPropsWithName(value: js.Array[String] | String): Self = StObject.set(x, "skipPropsWithName", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Keys]
     }
     
-    extension [Self <: Keys](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Keys] (val x: Self) extends AnyVal {
       
       inline def setKeys(value: js.Array[RSA_JWK]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[PickOptionsaccesstokencli]
     }
     
-    extension [Self <: PickOptionsaccesstokencli](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickOptionsaccesstokencli] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object anon {
       __obj.asInstanceOf[PickOptionsjwksjwksurijwk]
     }
     
-    extension [Self <: PickOptionsjwksjwksurijwk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickOptionsjwksjwksurijwk] (val x: Self) extends AnyVal {
       
       inline def setAllowed_algs(value: js.Array[String]): Self = StObject.set(x, "allowed_algs", value.asInstanceOf[js.Any])
       

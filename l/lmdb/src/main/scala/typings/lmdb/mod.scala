@@ -475,7 +475,8 @@ object mod {
       __obj.asInstanceOf[CompressionOptions]
     }
     
-    extension [Self <: CompressionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressionOptions] (val x: Self) extends AnyVal {
       
       inline def setDictionary(value: Buffer): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
       
@@ -514,7 +515,8 @@ object mod {
       __obj.asInstanceOf[DatabaseOptions]
     }
     
-    extension [Self <: DatabaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatabaseOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean | js.Object): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -592,7 +594,8 @@ object mod {
       __obj.asInstanceOf[PutOptions]
     }
     
-    extension [Self <: PutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutOptions] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
@@ -649,7 +652,8 @@ object mod {
       __obj.asInstanceOf[RangeOptions]
     }
     
-    extension [Self <: RangeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeOptions] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Key): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -732,7 +736,8 @@ object mod {
       __obj.asInstanceOf[RootDatabaseOptions]
     }
     
-    extension [Self <: RootDatabaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootDatabaseOptions] (val x: Self) extends AnyVal {
       
       inline def setCommitDelay(value: Double): Self = StObject.set(x, "commitDelay", value.asInstanceOf[js.Any])
       
@@ -805,7 +810,8 @@ object mod {
       __obj.asInstanceOf[RootDatabaseOptionsWithPath]
     }
     
-    extension [Self <: RootDatabaseOptionsWithPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootDatabaseOptionsWithPath] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }

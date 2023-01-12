@@ -37,7 +37,8 @@ object IgSchedulerWeekViewSettings {
     __obj.asInstanceOf[IgSchedulerWeekViewSettings]
   }
   
-  extension [Self <: IgSchedulerWeekViewSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgSchedulerWeekViewSettings] (val x: Self) extends AnyVal {
     
     inline def setTimeSlotInterval(value: String): Self = StObject.set(x, "timeSlotInterval", value.asInstanceOf[js.Any])
     

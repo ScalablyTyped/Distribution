@@ -17,7 +17,8 @@ object GlyphPosition {
     __obj.asInstanceOf[GlyphPosition]
   }
   
-  extension [Self <: GlyphPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlyphPosition] (val x: Self) extends AnyVal {
     
     inline def setMetrics(value: GlyphMetrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     

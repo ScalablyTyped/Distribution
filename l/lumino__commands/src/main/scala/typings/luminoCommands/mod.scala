@@ -501,7 +501,8 @@ object mod {
         __obj.asInstanceOf[ICommandChangedArgs]
       }
       
-      extension [Self <: ICommandChangedArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICommandChangedArgs] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -538,7 +539,8 @@ object mod {
         __obj.asInstanceOf[ICommandExecutedArgs]
       }
       
-      extension [Self <: ICommandExecutedArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICommandExecutedArgs] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
@@ -776,7 +778,8 @@ object mod {
         __obj.asInstanceOf[ICommandOptions]
       }
       
-      extension [Self <: ICommandOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICommandOptions] (val x: Self) extends AnyVal {
         
         inline def setCaption(value: String | CommandFunc[String]): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
         
@@ -887,7 +890,8 @@ object mod {
         __obj.asInstanceOf[IKeyBinding]
       }
       
-      extension [Self <: IKeyBinding](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IKeyBinding] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
@@ -924,7 +928,8 @@ object mod {
         __obj.asInstanceOf[IKeyBindingChangedArgs]
       }
       
-      extension [Self <: IKeyBindingChangedArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IKeyBindingChangedArgs] (val x: Self) extends AnyVal {
         
         inline def setBinding(value: IKeyBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
         
@@ -1012,7 +1017,8 @@ object mod {
         __obj.asInstanceOf[IKeyBindingOptions]
       }
       
-      extension [Self <: IKeyBindingOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IKeyBindingOptions] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
@@ -1083,7 +1089,8 @@ object mod {
         __obj.asInstanceOf[IKeystrokeParts]
       }
       
-      extension [Self <: IKeystrokeParts](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IKeystrokeParts] (val x: Self) extends AnyVal {
         
         inline def setAlt(value: Boolean): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
         

@@ -40,7 +40,8 @@ object XCommandPreparation {
     __obj.asInstanceOf[XCommandPreparation]
   }
   
-  extension [Self <: XCommandPreparation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCommandPreparation] (val x: Self) extends AnyVal {
     
     inline def setPrepareCommand(value: (String, Double) => XPreparedStatement): Self = StObject.set(x, "prepareCommand", js.Any.fromFunction2(value))
   }

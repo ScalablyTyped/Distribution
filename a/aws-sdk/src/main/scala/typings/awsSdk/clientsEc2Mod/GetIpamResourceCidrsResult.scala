@@ -23,7 +23,8 @@ object GetIpamResourceCidrsResult {
     __obj.asInstanceOf[GetIpamResourceCidrsResult]
   }
   
-  extension [Self <: GetIpamResourceCidrsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIpamResourceCidrsResult] (val x: Self) extends AnyVal {
     
     inline def setIpamResourceCidrs(value: IpamResourceCidrSet): Self = StObject.set(x, "IpamResourceCidrs", value.asInstanceOf[js.Any])
     

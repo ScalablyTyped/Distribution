@@ -23,7 +23,8 @@ object DescribeAccountAssignmentCreationStatusRequest {
     __obj.asInstanceOf[DescribeAccountAssignmentCreationStatusRequest]
   }
   
-  extension [Self <: DescribeAccountAssignmentCreationStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAccountAssignmentCreationStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountAssignmentCreationRequestId(value: UUId): Self = StObject.set(x, "AccountAssignmentCreationRequestId", value.asInstanceOf[js.Any])
     

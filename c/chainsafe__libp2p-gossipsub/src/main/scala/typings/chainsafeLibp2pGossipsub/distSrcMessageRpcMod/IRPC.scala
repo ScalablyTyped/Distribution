@@ -25,7 +25,8 @@ object IRPC {
     __obj.asInstanceOf[IRPC]
   }
   
-  extension [Self <: IRPC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRPC] (val x: Self) extends AnyVal {
     
     inline def setControl(value: IControlMessage): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     

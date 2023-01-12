@@ -18,7 +18,8 @@ object DeleteVpcPeeringConnectionResult {
     __obj.asInstanceOf[DeleteVpcPeeringConnectionResult]
   }
   
-  extension [Self <: DeleteVpcPeeringConnectionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVpcPeeringConnectionResult] (val x: Self) extends AnyVal {
     
     inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     

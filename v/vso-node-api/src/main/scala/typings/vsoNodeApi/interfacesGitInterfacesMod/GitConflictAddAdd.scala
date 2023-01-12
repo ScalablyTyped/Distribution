@@ -39,7 +39,8 @@ object GitConflictAddAdd {
     __obj.asInstanceOf[GitConflictAddAdd]
   }
   
-  extension [Self <: GitConflictAddAdd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitConflictAddAdd] (val x: Self) extends AnyVal {
     
     inline def setResolution(value: GitResolutionMergeContent): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     

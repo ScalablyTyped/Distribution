@@ -45,7 +45,8 @@ object IWebXRRenderTargetTextureProvider {
     __obj.asInstanceOf[IWebXRRenderTargetTextureProvider]
   }
   
-  extension [Self <: IWebXRRenderTargetTextureProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRRenderTargetTextureProvider] (val x: Self) extends AnyVal {
     
     inline def setGetRenderTargetTextureForEye(value: XREye => Nullable[RenderTargetTexture]): Self = StObject.set(x, "getRenderTargetTextureForEye", js.Any.fromFunction1(value))
     

@@ -41,7 +41,8 @@ object PartialIPLDOptions {
     __obj.asInstanceOf[PartialIPLDOptions]
   }
   
-  extension [Self <: PartialIPLDOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIPLDOptions] (val x: Self) extends AnyVal {
     
     inline def setBases(
       value: js.Array[

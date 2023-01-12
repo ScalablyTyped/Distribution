@@ -29,7 +29,8 @@ object BeforeEndSet {
     __obj.asInstanceOf[BeforeEndSet[State, Result]]
   }
   
-  extension [Self <: BeforeEndSet[?, ?], State /* <: ModifierState[Any, Any, Any] */, Result](x: Self & (BeforeEndSet[State, Result])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeforeEndSet[?, ?], State /* <: ModifierState[Any, Any, Any] */, Result] (val x: Self & (BeforeEndSet[State, Result])) extends AnyVal {
     
     inline def setBeforeEnd(value: ModifierArg[State] => Unit | Point): Self = StObject.set(x, "beforeEnd", js.Any.fromFunction1(value))
     

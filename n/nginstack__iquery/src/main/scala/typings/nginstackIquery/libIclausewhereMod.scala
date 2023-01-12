@@ -198,7 +198,8 @@ object libIclausewhereMod {
       __obj.asInstanceOf[IClauseWhere]
     }
     
-    extension [Self <: IClauseWhere](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IClauseWhere] (val x: Self) extends AnyVal {
       
       inline def setCanSplit_(value: Any): Self = StObject.set(x, "canSplit_", value.asInstanceOf[js.Any])
       

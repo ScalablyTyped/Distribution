@@ -19,7 +19,8 @@ object ResourcePolicySnapshotSchedulePolicySchedule {
     __obj.asInstanceOf[ResourcePolicySnapshotSchedulePolicySchedule]
   }
   
-  extension [Self <: ResourcePolicySnapshotSchedulePolicySchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePolicySnapshotSchedulePolicySchedule] (val x: Self) extends AnyVal {
     
     inline def setDailySchedule(value: ResourcePolicyDailyCycle): Self = StObject.set(x, "dailySchedule", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsAlignCenterVerticallyMod extends Shortcut {
       __obj.asInstanceOf[AlignCenterVerticallyProps]
     }
     
-    extension [Self <: AlignCenterVerticallyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignCenterVerticallyProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

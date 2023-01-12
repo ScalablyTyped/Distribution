@@ -59,7 +59,8 @@ object PipelineResponse {
     __obj.asInstanceOf[PipelineResponse]
   }
   
-  extension [Self <: PipelineResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineResponse] (val x: Self) extends AnyVal {
     
     inline def setBlobBody(value: js.Promise[Blob]): Self = StObject.set(x, "blobBody", value.asInstanceOf[js.Any])
     

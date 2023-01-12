@@ -27,7 +27,8 @@ object MotionPullUpProps {
     __obj.asInstanceOf[MotionPullUpProps]
   }
   
-  extension [Self <: MotionPullUpProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotionPullUpProps] (val x: Self) extends AnyVal {
     
     inline def setDropHeight(value: Double): Self = StObject.set(x, "dropHeight", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object ImapFlowOptions {
     __obj.asInstanceOf[ImapFlowOptions]
   }
   
-  extension [Self <: ImapFlowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImapFlowOptions] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: AccessToken): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

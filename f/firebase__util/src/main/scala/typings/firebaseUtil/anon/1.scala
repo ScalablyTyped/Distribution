@@ -20,7 +20,8 @@ object `1` {
     __obj.asInstanceOf[`1`]
   }
   
-  extension [Self <: `1`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
     
     inline def setIdentities(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ provider in @firebase/util.@firebase/util/dist/util.FirebaseSignInProvider ]:? std.Array<string>} */ js.Any

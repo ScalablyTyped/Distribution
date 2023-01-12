@@ -20,7 +20,8 @@ object srcCoreDataInterceptorMod {
       __obj.asInstanceOf[IInterceptor[T]]
     }
     
-    extension [Self <: IInterceptor[?], T](x: Self & IInterceptor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInterceptor[?], T] (val x: Self & IInterceptor[T]) extends AnyVal {
       
       inline def setResponse(value: (/* data */ Any, /* params */ NgTableParams[T]) => Any): Self = StObject.set(x, "response", js.Any.fromFunction2(value))
       

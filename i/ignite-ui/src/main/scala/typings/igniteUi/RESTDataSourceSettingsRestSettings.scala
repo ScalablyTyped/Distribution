@@ -49,7 +49,8 @@ object RESTDataSourceSettingsRestSettings {
     __obj.asInstanceOf[RESTDataSourceSettingsRestSettings]
   }
   
-  extension [Self <: RESTDataSourceSettingsRestSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RESTDataSourceSettingsRestSettings] (val x: Self) extends AnyVal {
     
     inline def setContentSerializer(value: js.Function): Self = StObject.set(x, "contentSerializer", value.asInstanceOf[js.Any])
     

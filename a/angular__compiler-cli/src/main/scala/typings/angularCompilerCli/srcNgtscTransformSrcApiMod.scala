@@ -141,7 +141,8 @@ object srcNgtscTransformSrcApiMod {
       __obj.asInstanceOf[AnalysisOutput[A]]
     }
     
-    extension [Self <: AnalysisOutput[?], A](x: Self & AnalysisOutput[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalysisOutput[?], A] (val x: Self & AnalysisOutput[A]) extends AnyVal {
       
       inline def setAnalysis(value: A): Self = StObject.set(x, "analysis", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object srcNgtscTransformSrcApiMod {
       __obj.asInstanceOf[CompileResult]
     }
     
-    extension [Self <: CompileResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompileResult] (val x: Self) extends AnyVal {
       
       inline def setInitializer(value: Expression): Self = StObject.set(x, "initializer", value.asInstanceOf[js.Any])
       
@@ -389,7 +391,8 @@ object srcNgtscTransformSrcApiMod {
       __obj.asInstanceOf[DetectResult[M]]
     }
     
-    extension [Self <: DetectResult[?], M](x: Self & DetectResult[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetectResult[?], M] (val x: Self & DetectResult[M]) extends AnyVal {
       
       inline def setDecorator(value: Decorator): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
       
@@ -429,7 +432,8 @@ object srcNgtscTransformSrcApiMod {
       __obj.asInstanceOf[DtsTransform]
     }
     
-    extension [Self <: DtsTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DtsTransform] (val x: Self) extends AnyVal {
       
       inline def setTransformClass(
         value: (/* clazz */ typings.typescript.mod.ClassDeclaration, /* elements */ js.Array[ClassElement], /* imports */ ImportManager) => typings.typescript.mod.ClassDeclaration
@@ -462,7 +466,8 @@ object srcNgtscTransformSrcApiMod {
       __obj.asInstanceOf[ResolveResult[R]]
     }
     
-    extension [Self <: ResolveResult[?], R](x: Self & ResolveResult[R]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveResult[?], R] (val x: Self & ResolveResult[R]) extends AnyVal {
       
       inline def setData(value: R): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

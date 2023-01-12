@@ -78,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Cancel]
     }
     
-    extension [Self <: Cancel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Svg]
     }
     
-    extension [Self <: Svg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Svg] (val x: Self) extends AnyVal {
       
       inline def setSvg(value: js.Promise[Any]): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     }

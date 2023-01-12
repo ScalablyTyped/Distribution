@@ -20,7 +20,8 @@ object HandleOwnerProperties {
     __obj.asInstanceOf[HandleOwnerProperties]
   }
   
-  extension [Self <: HandleOwnerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandleOwnerProperties] (val x: Self) extends AnyVal {
     
     inline def setHandles(value: Handles): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
     

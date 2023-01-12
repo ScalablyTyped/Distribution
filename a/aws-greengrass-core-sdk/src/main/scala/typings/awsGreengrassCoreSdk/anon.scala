@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Definition]
     }
     
-    extension [Self <: Definition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
       
       inline def setDefinition(value: MessageStreamDefinitionMap): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[TypeofMessageStreamInfoEx]
     }
     
-    extension [Self <: TypeofMessageStreamInfoEx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofMessageStreamInfoEx] (val x: Self) extends AnyVal {
       
       inline def setFormatsMap(value: Record[String, scala.Nothing]): Self = StObject.set(x, "formatsMap", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object anon {
       __obj.asInstanceOf[TypeofMessageStreamInfoSt]
     }
     
-    extension [Self <: TypeofMessageStreamInfoSt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofMessageStreamInfoSt] (val x: Self) extends AnyVal {
       
       inline def setFormatsMap(value: Record[String, scala.Nothing]): Self = StObject.set(x, "formatsMap", value.asInstanceOf[js.Any])
       

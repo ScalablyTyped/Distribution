@@ -48,7 +48,8 @@ object OAuth2CustomParameter {
     __obj.asInstanceOf[OAuth2CustomParameter]
   }
   
-  extension [Self <: OAuth2CustomParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuth2CustomParameter] (val x: Self) extends AnyVal {
     
     inline def setConnectorSuppliedValues(value: ConnectorSuppliedValueList): Self = StObject.set(x, "connectorSuppliedValues", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[ErrorLike]
     }
     
-    extension [Self <: ErrorLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorLike] (val x: Self) extends AnyVal {
       
       inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
       

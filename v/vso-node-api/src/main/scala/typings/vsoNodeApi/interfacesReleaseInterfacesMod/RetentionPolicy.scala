@@ -15,7 +15,8 @@ object RetentionPolicy {
     __obj.asInstanceOf[RetentionPolicy]
   }
   
-  extension [Self <: RetentionPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetentionPolicy] (val x: Self) extends AnyVal {
     
     inline def setDaysToKeep(value: Double): Self = StObject.set(x, "daysToKeep", value.asInstanceOf[js.Any])
   }

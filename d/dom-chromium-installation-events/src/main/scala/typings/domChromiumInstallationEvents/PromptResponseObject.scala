@@ -17,7 +17,8 @@ object PromptResponseObject {
     __obj.asInstanceOf[PromptResponseObject]
   }
   
-  extension [Self <: PromptResponseObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromptResponseObject] (val x: Self) extends AnyVal {
     
     inline def setOutcome(value: AppBannerPromptOutcome): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     

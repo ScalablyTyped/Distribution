@@ -626,7 +626,8 @@ object ActiveIndexChange {
     __obj.asInstanceOf[ActiveIndexChange]
   }
   
-  extension [Self <: ActiveIndexChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveIndexChange] (val x: Self) extends AnyVal {
     
     inline def setActiveIndexChange(value: CustomEvent[js.Array[/* swiper */ Swiper]]): Self = StObject.set(x, "activeIndexChange", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AddAssociationRequest {
     __obj.asInstanceOf[AddAssociationRequest]
   }
   
-  extension [Self <: AddAssociationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddAssociationRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationType(value: AssociationEdgeType): Self = StObject.set(x, "AssociationType", value.asInstanceOf[js.Any])
     

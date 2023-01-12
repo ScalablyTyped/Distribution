@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[AcceptAllDevices]
     }
     
-    extension [Self <: AcceptAllDevices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AcceptAllDevices] (val x: Self) extends AnyVal {
       
       inline def setAcceptAllDevices(value: Boolean): Self = StObject.set(x, "acceptAllDevices", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[Filters]
     }
     
-    extension [Self <: Filters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
       
       inline def setFilters(value: js.Array[BluetoothLEScanFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       

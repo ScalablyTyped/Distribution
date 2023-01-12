@@ -44,7 +44,8 @@ object XSingleServiceFactory {
     __obj.asInstanceOf[XSingleServiceFactory]
   }
   
-  extension [Self <: XSingleServiceFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSingleServiceFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateInstance(value: () => XInterface): Self = StObject.set(x, "createInstance", js.Any.fromFunction0(value))
     

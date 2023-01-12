@@ -31,7 +31,8 @@ object SearchAggregationProfile {
     __obj.asInstanceOf[SearchAggregationProfile]
   }
   
-  extension [Self <: SearchAggregationProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAggregationProfile] (val x: Self) extends AnyVal {
     
     inline def setBreakdown(value: SearchAggregationBreakdown): Self = StObject.set(x, "breakdown", value.asInstanceOf[js.Any])
     

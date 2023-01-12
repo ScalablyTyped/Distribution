@@ -27,7 +27,8 @@ object ScaleMixins {
     __obj.asInstanceOf[ScaleMixins]
   }
   
-  extension [Self <: ScaleMixins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleMixins] (val x: Self) extends AnyVal {
     
     inline def setScale(value: Scale[ExprRef | SignalRef]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     

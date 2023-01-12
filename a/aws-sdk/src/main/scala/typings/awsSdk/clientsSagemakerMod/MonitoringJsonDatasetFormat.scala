@@ -18,7 +18,8 @@ object MonitoringJsonDatasetFormat {
     __obj.asInstanceOf[MonitoringJsonDatasetFormat]
   }
   
-  extension [Self <: MonitoringJsonDatasetFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringJsonDatasetFormat] (val x: Self) extends AnyVal {
     
     inline def setLine(value: Boolean): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
     

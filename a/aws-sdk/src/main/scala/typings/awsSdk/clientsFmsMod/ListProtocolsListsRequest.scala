@@ -28,7 +28,8 @@ object ListProtocolsListsRequest {
     __obj.asInstanceOf[ListProtocolsListsRequest]
   }
   
-  extension [Self <: ListProtocolsListsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProtocolsListsRequest] (val x: Self) extends AnyVal {
     
     inline def setDefaultLists(value: Boolean): Self = StObject.set(x, "DefaultLists", value.asInstanceOf[js.Any])
     

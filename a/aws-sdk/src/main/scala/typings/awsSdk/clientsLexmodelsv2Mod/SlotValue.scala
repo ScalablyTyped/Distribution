@@ -18,7 +18,8 @@ object SlotValue {
     __obj.asInstanceOf[SlotValue]
   }
   
-  extension [Self <: SlotValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotValue] (val x: Self) extends AnyVal {
     
     inline def setInterpretedValue(value: NonEmptyString): Self = StObject.set(x, "interpretedValue", value.asInstanceOf[js.Any])
     

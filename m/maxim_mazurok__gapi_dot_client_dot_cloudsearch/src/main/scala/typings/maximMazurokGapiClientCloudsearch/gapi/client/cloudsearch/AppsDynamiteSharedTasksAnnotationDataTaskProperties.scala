@@ -34,7 +34,8 @@ object AppsDynamiteSharedTasksAnnotationDataTaskProperties {
     __obj.asInstanceOf[AppsDynamiteSharedTasksAnnotationDataTaskProperties]
   }
   
-  extension [Self <: AppsDynamiteSharedTasksAnnotationDataTaskProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedTasksAnnotationDataTaskProperties] (val x: Self) extends AnyVal {
     
     inline def setAssignee(value: AppsDynamiteUserId): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
     

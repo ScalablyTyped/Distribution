@@ -19,7 +19,8 @@ object HS256 {
     __obj.asInstanceOf[HS256]
   }
   
-  extension [Self <: HS256](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HS256] (val x: Self) extends AnyVal {
     
     inline def setHS256(value: scala.Double): Self = StObject.set(x, "hS256", value.asInstanceOf[js.Any])
     

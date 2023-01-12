@@ -25,7 +25,8 @@ object EventRecordRequest {
     __obj.asInstanceOf[EventRecordRequest]
   }
   
-  extension [Self <: EventRecordRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventRecordRequest] (val x: Self) extends AnyVal {
     
     inline def setCurrentTimeMillis(value: String): Self = StObject.set(x, "currentTimeMillis", value.asInstanceOf[js.Any])
     

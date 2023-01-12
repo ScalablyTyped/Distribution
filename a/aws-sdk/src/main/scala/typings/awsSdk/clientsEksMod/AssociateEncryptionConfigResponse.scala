@@ -15,7 +15,8 @@ object AssociateEncryptionConfigResponse {
     __obj.asInstanceOf[AssociateEncryptionConfigResponse]
   }
   
-  extension [Self <: AssociateEncryptionConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateEncryptionConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setUpdate(value: Update): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     

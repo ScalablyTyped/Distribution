@@ -17,7 +17,8 @@ object FoundWarnings {
     __obj.asInstanceOf[FoundWarnings]
   }
   
-  extension [Self <: FoundWarnings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoundWarnings] (val x: Self) extends AnyVal {
     
     inline def setFoundWarnings(value: Double): Self = StObject.set(x, "foundWarnings", value.asInstanceOf[js.Any])
     

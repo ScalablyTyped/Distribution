@@ -26,7 +26,8 @@ object AudioOutputInfo {
     __obj.asInstanceOf[AudioOutputInfo]
   }
   
-  extension [Self <: AudioOutputInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioOutputInfo] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

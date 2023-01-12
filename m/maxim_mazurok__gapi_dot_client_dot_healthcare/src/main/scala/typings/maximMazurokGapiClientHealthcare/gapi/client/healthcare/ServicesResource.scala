@@ -15,7 +15,8 @@ object ServicesResource {
     __obj.asInstanceOf[ServicesResource]
   }
   
-  extension [Self <: ServicesResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServicesResource] (val x: Self) extends AnyVal {
     
     inline def setNlp(value: NlpResource): Self = StObject.set(x, "nlp", value.asInstanceOf[js.Any])
   }

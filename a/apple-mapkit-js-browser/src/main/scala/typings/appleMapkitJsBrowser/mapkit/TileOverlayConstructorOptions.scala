@@ -37,7 +37,8 @@ object TileOverlayConstructorOptions {
     __obj.asInstanceOf[TileOverlayConstructorOptions]
   }
   
-  extension [Self <: TileOverlayConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileOverlayConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

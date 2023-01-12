@@ -40,7 +40,8 @@ object XpackUsageAnalyticsStatistics {
     __obj.asInstanceOf[XpackUsageAnalyticsStatistics]
   }
   
-  extension [Self <: XpackUsageAnalyticsStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageAnalyticsStatistics] (val x: Self) extends AnyVal {
     
     inline def setBoxplot_usage(value: long): Self = StObject.set(x, "boxplot_usage", value.asInstanceOf[js.Any])
     

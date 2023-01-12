@@ -33,7 +33,8 @@ object ListPricingRulesInput {
     __obj.asInstanceOf[ListPricingRulesInput]
   }
   
-  extension [Self <: ListPricingRulesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPricingRulesInput] (val x: Self) extends AnyVal {
     
     inline def setBillingPeriod(value: BillingPeriod): Self = StObject.set(x, "BillingPeriod", value.asInstanceOf[js.Any])
     

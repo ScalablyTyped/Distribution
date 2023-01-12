@@ -19,7 +19,8 @@ object SourceSplitOptions {
     __obj.asInstanceOf[SourceSplitOptions]
   }
   
-  extension [Self <: SourceSplitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceSplitOptions] (val x: Self) extends AnyVal {
     
     inline def setDesiredBundleSizeBytes(value: String): Self = StObject.set(x, "desiredBundleSizeBytes", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object dtsInterfacesMod {
         __obj.asInstanceOf[ControllerMetadata]
       }
       
-      extension [Self <: ControllerMetadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ControllerMetadata] (val x: Self) extends AnyVal {
         
         inline def setMiddleware(value: js.Array[Middleware]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
         
@@ -62,7 +63,8 @@ object dtsInterfacesMod {
         __obj.asInstanceOf[ControllerMethodMetadata]
       }
       
-      extension [Self <: ControllerMethodMetadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ControllerMethodMetadata] (val x: Self) extends AnyVal {
         
         inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
@@ -102,7 +104,8 @@ object dtsInterfacesMod {
         __obj.asInstanceOf[ServerOptions]
       }
       
-      extension [Self <: ServerOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
         
         inline def setDefaultRoot(value: String): Self = StObject.set(x, "defaultRoot", value.asInstanceOf[js.Any])
         

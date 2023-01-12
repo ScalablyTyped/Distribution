@@ -35,7 +35,8 @@ object ManualInterventions {
     __obj.asInstanceOf[ManualInterventions]
   }
   
-  extension [Self <: ManualInterventions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManualInterventions] (val x: Self) extends AnyVal {
     
     inline def setApprovals(value: scala.Double): Self = StObject.set(x, "approvals", value.asInstanceOf[js.Any])
     

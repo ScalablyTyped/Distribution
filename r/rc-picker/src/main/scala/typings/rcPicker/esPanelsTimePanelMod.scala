@@ -57,7 +57,8 @@ object esPanelsTimePanelMod {
       __obj.asInstanceOf[SharedTimeProps[DateType]]
     }
     
-    extension [Self <: SharedTimeProps[?], DateType](x: Self & SharedTimeProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedTimeProps[?], DateType] (val x: Self & SharedTimeProps[DateType]) extends AnyVal {
       
       inline def setDefaultValue(value: DateType): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       

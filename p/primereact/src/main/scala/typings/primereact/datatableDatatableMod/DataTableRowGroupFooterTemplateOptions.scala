@@ -17,7 +17,8 @@ object DataTableRowGroupFooterTemplateOptions {
     __obj.asInstanceOf[DataTableRowGroupFooterTemplateOptions]
   }
   
-  extension [Self <: DataTableRowGroupFooterTemplateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableRowGroupFooterTemplateOptions] (val x: Self) extends AnyVal {
     
     inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
   }

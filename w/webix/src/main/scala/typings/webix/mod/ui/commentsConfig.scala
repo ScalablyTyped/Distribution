@@ -90,7 +90,8 @@ object commentsConfig {
     __obj.asInstanceOf[commentsConfig]
   }
   
-  extension [Self <: commentsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: commentsConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

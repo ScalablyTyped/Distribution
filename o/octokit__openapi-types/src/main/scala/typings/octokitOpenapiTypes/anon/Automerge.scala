@@ -55,7 +55,8 @@ object Automerge {
     __obj.asInstanceOf[Automerge]
   }
   
-  extension [Self <: Automerge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Automerge] (val x: Self) extends AnyVal {
     
     inline def setAuto_merge(value: Boolean): Self = StObject.set(x, "auto_merge", value.asInstanceOf[js.Any])
     

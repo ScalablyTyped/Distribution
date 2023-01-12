@@ -43,7 +43,8 @@ object UpdateQuerySuggestionsBlockListRequest {
     __obj.asInstanceOf[UpdateQuerySuggestionsBlockListRequest]
   }
   
-  extension [Self <: UpdateQuerySuggestionsBlockListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateQuerySuggestionsBlockListRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

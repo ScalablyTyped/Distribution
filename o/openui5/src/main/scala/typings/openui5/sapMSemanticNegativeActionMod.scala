@@ -165,7 +165,8 @@ object sapMSemanticNegativeActionMod {
       __obj.asInstanceOf[NegativeActionSettings]
     }
     
-    extension [Self <: NegativeActionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NegativeActionSettings] (val x: Self) extends AnyVal {
       
       inline def setText(value: String | PropertyBindingInfo): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

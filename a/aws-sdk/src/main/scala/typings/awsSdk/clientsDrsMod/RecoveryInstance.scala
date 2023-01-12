@@ -73,7 +73,8 @@ object RecoveryInstance {
     __obj.asInstanceOf[RecoveryInstance]
   }
   
-  extension [Self <: RecoveryInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecoveryInstance] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

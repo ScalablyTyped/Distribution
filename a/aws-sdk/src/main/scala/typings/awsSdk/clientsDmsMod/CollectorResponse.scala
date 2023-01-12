@@ -72,7 +72,8 @@ object CollectorResponse {
     __obj.asInstanceOf[CollectorResponse]
   }
   
-  extension [Self <: CollectorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectorResponse] (val x: Self) extends AnyVal {
     
     inline def setCollectorHealthCheck(value: CollectorHealthCheck): Self = StObject.set(x, "CollectorHealthCheck", value.asInstanceOf[js.Any])
     

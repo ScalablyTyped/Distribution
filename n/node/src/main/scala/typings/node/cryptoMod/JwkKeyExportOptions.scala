@@ -16,7 +16,8 @@ object JwkKeyExportOptions {
     __obj.asInstanceOf[JwkKeyExportOptions]
   }
   
-  extension [Self <: JwkKeyExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JwkKeyExportOptions] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: jwk): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }

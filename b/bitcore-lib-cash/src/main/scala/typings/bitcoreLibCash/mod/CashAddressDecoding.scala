@@ -22,7 +22,8 @@ object CashAddressDecoding {
     __obj.asInstanceOf[CashAddressDecoding]
   }
   
-  extension [Self <: CashAddressDecoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CashAddressDecoding] (val x: Self) extends AnyVal {
     
     inline def setHashBuffer(value: Buffer): Self = StObject.set(x, "hashBuffer", value.asInstanceOf[js.Any])
     

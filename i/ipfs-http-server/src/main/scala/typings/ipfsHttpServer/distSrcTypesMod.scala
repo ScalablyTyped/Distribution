@@ -42,7 +42,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[MultipartDirectory]
     }
     
-    extension [Self <: MultipartDirectory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipartDirectory] (val x: Self) extends AnyVal {
       
       inline def setType(value: directory): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -92,7 +93,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[MultipartFile]
     }
     
-    extension [Self <: MultipartFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipartFile] (val x: Self) extends AnyVal {
       
       inline def setContent(value: AsyncIterable[js.typedarray.Uint8Array]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[MultipartSymlink]
     }
     
-    extension [Self <: MultipartSymlink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipartSymlink] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
@@ -140,7 +143,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[MultipartUpload]
     }
     
-    extension [Self <: MultipartUpload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipartUpload] (val x: Self) extends AnyVal {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -168,7 +172,8 @@ object distSrcTypesMod {
         __obj.asInstanceOf[RequestApplicationState]
       }
       
-      extension [Self <: RequestApplicationState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RequestApplicationState] (val x: Self) extends AnyVal {
         
         inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       }
@@ -185,7 +190,8 @@ object distSrcTypesMod {
         __obj.asInstanceOf[ServerApplicationState]
       }
       
-      extension [Self <: ServerApplicationState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ServerApplicationState] (val x: Self) extends AnyVal {
         
         inline def setIpfs(value: IPFS[js.Object]): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
       }
@@ -202,7 +208,8 @@ object distSrcTypesMod {
         __obj.asInstanceOf[ServerInfo]
       }
       
-      extension [Self <: ServerInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ServerInfo] (val x: Self) extends AnyVal {
         
         inline def setMa(value: Multiaddr_): Self = StObject.set(x, "ma", value.asInstanceOf[js.Any])
       }

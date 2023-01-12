@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[PartialIModel]
     }
     
-    extension [Self <: PartialIModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIModel] (val x: Self) extends AnyVal {
       
       inline def setConnections(value: Double): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       

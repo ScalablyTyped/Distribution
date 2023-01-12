@@ -34,7 +34,8 @@ object ForceCircle {
     __obj.asInstanceOf[ForceCircle]
   }
   
-  extension [Self <: ForceCircle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceCircle] (val x: Self) extends AnyVal {
     
     inline def set$background(value: String): Self = StObject.set(x, "$background", value.asInstanceOf[js.Any])
     

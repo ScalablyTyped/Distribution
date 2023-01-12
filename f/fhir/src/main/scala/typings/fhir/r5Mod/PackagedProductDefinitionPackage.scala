@@ -66,7 +66,8 @@ object PackagedProductDefinitionPackage {
     __obj.asInstanceOf[PackagedProductDefinitionPackage]
   }
   
-  extension [Self <: PackagedProductDefinitionPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackagedProductDefinitionPackage] (val x: Self) extends AnyVal {
     
     inline def setAlternateMaterial(value: js.Array[CodeableConcept]): Self = StObject.set(x, "alternateMaterial", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IndicesForcemergeForceMergeResponseBody {
     __obj.asInstanceOf[IndicesForcemergeForceMergeResponseBody]
   }
   
-  extension [Self <: IndicesForcemergeForceMergeResponseBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesForcemergeForceMergeResponseBody] (val x: Self) extends AnyVal {
     
     inline def setTask(value: String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     

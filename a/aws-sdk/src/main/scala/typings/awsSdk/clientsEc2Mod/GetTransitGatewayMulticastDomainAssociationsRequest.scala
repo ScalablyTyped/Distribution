@@ -38,7 +38,8 @@ object GetTransitGatewayMulticastDomainAssociationsRequest {
     __obj.asInstanceOf[GetTransitGatewayMulticastDomainAssociationsRequest]
   }
   
-  extension [Self <: GetTransitGatewayMulticastDomainAssociationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTransitGatewayMulticastDomainAssociationsRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

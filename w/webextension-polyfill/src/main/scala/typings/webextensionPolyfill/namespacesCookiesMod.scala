@@ -100,7 +100,8 @@ object namespacesCookiesMod {
         __obj.asInstanceOf[Cookie]
       }
       
-      extension [Self <: Cookie](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
         
         inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
@@ -162,7 +163,8 @@ object namespacesCookiesMod {
         __obj.asInstanceOf[CookieStore]
       }
       
-      extension [Self <: CookieStore](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CookieStore] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -245,7 +247,8 @@ object namespacesCookiesMod {
         __obj.asInstanceOf[GetAllDetailsType]
       }
       
-      extension [Self <: GetAllDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetAllDetailsType] (val x: Self) extends AnyVal {
         
         inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
@@ -332,7 +335,8 @@ object namespacesCookiesMod {
         __obj.asInstanceOf[GetDetailsType]
       }
       
-      extension [Self <: GetDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetDetailsType] (val x: Self) extends AnyVal {
         
         inline def setFirstPartyDomain(value: String): Self = StObject.set(x, "firstPartyDomain", value.asInstanceOf[js.Any])
         
@@ -405,7 +409,8 @@ object namespacesCookiesMod {
         __obj.asInstanceOf[OnChangedChangeInfoType]
       }
       
-      extension [Self <: OnChangedChangeInfoType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnChangedChangeInfoType] (val x: Self) extends AnyVal {
         
         inline def setCause(value: OnChangedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
         
@@ -433,7 +438,8 @@ object namespacesCookiesMod {
         __obj.asInstanceOf[PartitionKey]
       }
       
-      extension [Self <: PartitionKey](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PartitionKey] (val x: Self) extends AnyVal {
         
         inline def setTopLevelSite(value: String): Self = StObject.set(x, "topLevelSite", value.asInstanceOf[js.Any])
         
@@ -480,7 +486,8 @@ object namespacesCookiesMod {
         __obj.asInstanceOf[RemoveCallbackDetailsType]
       }
       
-      extension [Self <: RemoveCallbackDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RemoveCallbackDetailsType] (val x: Self) extends AnyVal {
         
         inline def setFirstPartyDomain(value: String): Self = StObject.set(x, "firstPartyDomain", value.asInstanceOf[js.Any])
         
@@ -538,7 +545,8 @@ object namespacesCookiesMod {
         __obj.asInstanceOf[RemoveDetailsType]
       }
       
-      extension [Self <: RemoveDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RemoveDetailsType] (val x: Self) extends AnyVal {
         
         inline def setFirstPartyDomain(value: String): Self = StObject.set(x, "firstPartyDomain", value.asInstanceOf[js.Any])
         
@@ -664,7 +672,8 @@ object namespacesCookiesMod {
         __obj.asInstanceOf[SetDetailsType]
       }
       
-      extension [Self <: SetDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetDetailsType] (val x: Self) extends AnyVal {
         
         inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
@@ -777,7 +786,8 @@ object namespacesCookiesMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setGet(value: GetDetailsType => js.Promise[Cookie]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
         

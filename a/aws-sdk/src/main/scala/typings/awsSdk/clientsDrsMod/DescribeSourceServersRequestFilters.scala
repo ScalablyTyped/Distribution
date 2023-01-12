@@ -28,7 +28,8 @@ object DescribeSourceServersRequestFilters {
     __obj.asInstanceOf[DescribeSourceServersRequestFilters]
   }
   
-  extension [Self <: DescribeSourceServersRequestFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSourceServersRequestFilters] (val x: Self) extends AnyVal {
     
     inline def setHardwareId(value: BoundedString): Self = StObject.set(x, "hardwareId", value.asInstanceOf[js.Any])
     

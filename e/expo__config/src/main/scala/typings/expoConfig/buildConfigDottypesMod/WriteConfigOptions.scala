@@ -15,7 +15,8 @@ object WriteConfigOptions {
     __obj.asInstanceOf[WriteConfigOptions]
   }
   
-  extension [Self <: WriteConfigOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteConfigOptions] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     

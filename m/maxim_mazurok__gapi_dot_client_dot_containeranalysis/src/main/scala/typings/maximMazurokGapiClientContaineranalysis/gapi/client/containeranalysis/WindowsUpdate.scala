@@ -34,7 +34,8 @@ object WindowsUpdate {
     __obj.asInstanceOf[WindowsUpdate]
   }
   
-  extension [Self <: WindowsUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsUpdate] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Array[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

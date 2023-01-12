@@ -24,7 +24,8 @@ object StopAction {
     __obj.asInstanceOf[StopAction[TContext, TEvent]]
   }
   
-  extension [Self <: StopAction[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (StopAction[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopAction[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (StopAction[TContext, TEvent])) extends AnyVal {
     
     inline def setActivity(value: String | Id | (Expr[TContext, TEvent, String | Id])): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     

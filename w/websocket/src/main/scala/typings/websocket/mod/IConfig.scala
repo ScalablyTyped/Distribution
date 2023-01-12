@@ -64,7 +64,8 @@ object IConfig {
     __obj.asInstanceOf[IConfig]
   }
   
-  extension [Self <: IConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
     
     inline def setAssembleFragments(value: Boolean): Self = StObject.set(x, "assembleFragments", value.asInstanceOf[js.Any])
     

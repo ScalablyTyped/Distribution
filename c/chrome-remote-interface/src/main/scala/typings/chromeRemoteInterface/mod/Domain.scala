@@ -29,7 +29,8 @@ object Domain {
     __obj.asInstanceOf[Domain]
   }
   
-  extension [Self <: Domain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
     
     inline def setCommands(value: js.Array[Command]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     

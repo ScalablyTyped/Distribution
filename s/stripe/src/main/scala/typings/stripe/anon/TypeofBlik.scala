@@ -15,7 +15,8 @@ object TypeofBlik {
     __obj.asInstanceOf[TypeofBlik]
   }
   
-  extension [Self <: TypeofBlik](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofBlik] (val x: Self) extends AnyVal {
     
     inline def setOffSession(value: Any): Self = StObject.set(x, "OffSession", value.asInstanceOf[js.Any])
   }

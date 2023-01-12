@@ -29,7 +29,8 @@ object ConnectorSearchResults {
     __obj.asInstanceOf[ConnectorSearchResults[TDoc]]
   }
   
-  extension [Self <: ConnectorSearchResults[?], TDoc](x: Self & ConnectorSearchResults[TDoc]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorSearchResults[?], TDoc] (val x: Self & ConnectorSearchResults[TDoc]) extends AnyVal {
     
     inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

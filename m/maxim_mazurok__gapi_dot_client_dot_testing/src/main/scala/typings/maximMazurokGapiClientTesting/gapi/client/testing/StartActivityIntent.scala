@@ -22,7 +22,8 @@ object StartActivityIntent {
     __obj.asInstanceOf[StartActivityIntent]
   }
   
-  extension [Self <: StartActivityIntent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartActivityIntent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

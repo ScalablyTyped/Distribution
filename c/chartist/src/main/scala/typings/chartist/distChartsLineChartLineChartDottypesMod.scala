@@ -72,7 +72,8 @@ object distChartsLineChartLineChartDottypesMod {
       __obj.asInstanceOf[AreaDrawEvent]
     }
     
-    extension [Self <: AreaDrawEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AreaDrawEvent] (val x: Self) extends AnyVal {
       
       inline def setPath(value: SvgPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -163,7 +164,8 @@ object distChartsLineChartLineChartDottypesMod {
       __obj.asInstanceOf[LineChartOptions[TXAxisOptions, TYAxisOptions]]
     }
     
-    extension [Self <: LineChartOptions[?, ?], TXAxisOptions, TYAxisOptions](x: Self & (LineChartOptions[TXAxisOptions, TYAxisOptions])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineChartOptions[?, ?], TXAxisOptions, TYAxisOptions] (val x: Self & (LineChartOptions[TXAxisOptions, TYAxisOptions])) extends AnyVal {
       
       inline def setAreaBase(value: Double): Self = StObject.set(x, "areaBase", value.asInstanceOf[js.Any])
       
@@ -323,7 +325,8 @@ object distChartsLineChartLineChartDottypesMod {
       __obj.asInstanceOf[LineChartOptionsWithDefaults]
     }
     
-    extension [Self <: LineChartOptionsWithDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineChartOptionsWithDefaults] (val x: Self) extends AnyVal {
       
       inline def setAreaBase(value: Double): Self = StObject.set(x, "areaBase", value.asInstanceOf[js.Any])
       
@@ -449,7 +452,8 @@ object distChartsLineChartLineChartDottypesMod {
       __obj.asInstanceOf[LineDrawEvent]
     }
     
-    extension [Self <: LineDrawEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineDrawEvent] (val x: Self) extends AnyVal {
       
       inline def setPath(value: SvgPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -499,7 +503,8 @@ object distChartsLineChartLineChartDottypesMod {
       __obj.asInstanceOf[PointDrawEvent]
     }
     
-    extension [Self <: PointDrawEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointDrawEvent] (val x: Self) extends AnyVal {
       
       inline def setType(value: point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object typesParentCommitIdRequiredExceptionMod {
       __obj.asInstanceOf[ParentCommitIdRequiredException]
     }
     
-    extension [Self <: ParentCommitIdRequiredException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParentCommitIdRequiredException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ParentCommitIdRequiredException

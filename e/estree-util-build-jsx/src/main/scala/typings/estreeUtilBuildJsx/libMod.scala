@@ -32,7 +32,8 @@ object libMod {
       __obj.asInstanceOf[Annotations]
     }
     
-    extension [Self <: Annotations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Annotations] (val x: Self) extends AnyVal {
       
       inline def setJsx(value: String): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object libMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDevelopment(value: Boolean): Self = StObject.set(x, "development", value.asInstanceOf[js.Any])
       

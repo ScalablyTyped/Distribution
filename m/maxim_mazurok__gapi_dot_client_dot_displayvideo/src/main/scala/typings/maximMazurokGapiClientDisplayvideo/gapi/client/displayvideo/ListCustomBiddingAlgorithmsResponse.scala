@@ -22,7 +22,8 @@ object ListCustomBiddingAlgorithmsResponse {
     __obj.asInstanceOf[ListCustomBiddingAlgorithmsResponse]
   }
   
-  extension [Self <: ListCustomBiddingAlgorithmsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCustomBiddingAlgorithmsResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomBiddingAlgorithms(value: js.Array[CustomBiddingAlgorithm]): Self = StObject.set(x, "customBiddingAlgorithms", value.asInstanceOf[js.Any])
     

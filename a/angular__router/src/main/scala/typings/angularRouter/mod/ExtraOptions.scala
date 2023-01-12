@@ -117,7 +117,8 @@ object ExtraOptions {
     __obj.asInstanceOf[ExtraOptions]
   }
   
-  extension [Self <: ExtraOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtraOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableTracing(value: Boolean): Self = StObject.set(x, "enableTracing", value.asInstanceOf[js.Any])
     

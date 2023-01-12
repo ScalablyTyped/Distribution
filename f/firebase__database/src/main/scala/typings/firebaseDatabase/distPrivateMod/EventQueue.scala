@@ -33,7 +33,8 @@ object EventQueue {
     __obj.asInstanceOf[EventQueue]
   }
   
-  extension [Self <: EventQueue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventQueue] (val x: Self) extends AnyVal {
     
     inline def setEventLists_(value: js.Array[EventList]): Self = StObject.set(x, "eventLists_", value.asInstanceOf[js.Any])
     

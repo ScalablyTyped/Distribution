@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[DecryptOptions]
     }
     
-    extension [Self <: DecryptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecryptOptions] (val x: Self) extends AnyVal {
       
       inline def setDisallowDecryptionWithInsecureAlgorithm(value: Boolean): Self = StObject.set(x, "disallowDecryptionWithInsecureAlgorithm", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object mod {
       __obj.asInstanceOf[EncryptKeyOptions]
     }
     
-    extension [Self <: EncryptKeyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptKeyOptions] (val x: Self) extends AnyVal {
       
       inline def setDisallowEncryptionWithInsecureAlgorithm(value: Boolean): Self = StObject.set(x, "disallowEncryptionWithInsecureAlgorithm", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object mod {
       __obj.asInstanceOf[EncryptOptions]
     }
     
-    extension [Self <: EncryptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptOptions] (val x: Self) extends AnyVal {
       
       inline def setEncryptionAlgorithm(value: EncryptionAlgorithm): Self = StObject.set(x, "encryptionAlgorithm", value.asInstanceOf[js.Any])
       

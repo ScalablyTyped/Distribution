@@ -52,7 +52,8 @@ object InstancingAttributeInfo {
     __obj.asInstanceOf[InstancingAttributeInfo]
   }
   
-  extension [Self <: InstancingAttributeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancingAttributeInfo] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     

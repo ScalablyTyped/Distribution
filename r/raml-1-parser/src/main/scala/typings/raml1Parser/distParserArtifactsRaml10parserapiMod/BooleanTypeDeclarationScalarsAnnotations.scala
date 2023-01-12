@@ -34,7 +34,8 @@ object BooleanTypeDeclarationScalarsAnnotations {
     __obj.asInstanceOf[BooleanTypeDeclarationScalarsAnnotations]
   }
   
-  extension [Self <: BooleanTypeDeclarationScalarsAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BooleanTypeDeclarationScalarsAnnotations] (val x: Self) extends AnyVal {
     
     inline def setEnum(value: () => js.Array[js.Array[AnnotationRef]]): Self = StObject.set(x, "enum", js.Any.fromFunction0(value))
   }

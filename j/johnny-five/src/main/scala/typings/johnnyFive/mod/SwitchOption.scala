@@ -19,7 +19,8 @@ object SwitchOption {
     __obj.asInstanceOf[SwitchOption]
   }
   
-  extension [Self <: SwitchOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchOption] (val x: Self) extends AnyVal {
     
     inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object HashOfKeyAndUnusedIV {
     __obj.asInstanceOf[HashOfKeyAndUnusedIV]
   }
   
-  extension [Self <: HashOfKeyAndUnusedIV](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashOfKeyAndUnusedIV] (val x: Self) extends AnyVal {
     
     inline def setIvhex(value: String): Self = StObject.set(x, "ivhex", value.asInstanceOf[js.Any])
     

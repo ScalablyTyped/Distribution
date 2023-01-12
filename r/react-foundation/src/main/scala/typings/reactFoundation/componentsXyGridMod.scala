@@ -175,7 +175,8 @@ object componentsXyGridMod {
       __obj.asInstanceOf[CellProps]
     }
     
-    extension [Self <: CellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -511,7 +512,8 @@ object componentsXyGridMod {
       __obj.asInstanceOf[GridContainerProps]
     }
     
-    extension [Self <: GridContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridContainerProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -837,7 +839,8 @@ object componentsXyGridMod {
       __obj.asInstanceOf[GridProps]
     }
     
-    extension [Self <: GridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

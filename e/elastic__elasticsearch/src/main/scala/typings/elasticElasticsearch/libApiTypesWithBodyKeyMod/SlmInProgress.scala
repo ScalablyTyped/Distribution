@@ -21,7 +21,8 @@ object SlmInProgress {
     __obj.asInstanceOf[SlmInProgress]
   }
   
-  extension [Self <: SlmInProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlmInProgress] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

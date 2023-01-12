@@ -26,7 +26,8 @@ object ActiveFriendMessageSession {
     __obj.asInstanceOf[ActiveFriendMessageSession]
   }
   
-  extension [Self <: ActiveFriendMessageSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveFriendMessageSession] (val x: Self) extends AnyVal {
     
     inline def setSteamid_friend(value: SteamID): Self = StObject.set(x, "steamid_friend", value.asInstanceOf[js.Any])
     

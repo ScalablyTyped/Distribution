@@ -89,7 +89,8 @@ object ServerInfo {
     __obj.asInstanceOf[ServerInfo]
   }
   
-  extension [Self <: ServerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerInfo] (val x: Self) extends AnyVal {
     
     inline def setAzureVersion(value: Double): Self = StObject.set(x, "azureVersion", value.asInstanceOf[js.Any])
     

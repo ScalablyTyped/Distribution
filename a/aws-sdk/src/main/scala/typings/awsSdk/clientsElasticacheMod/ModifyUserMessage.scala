@@ -38,7 +38,8 @@ object ModifyUserMessage {
     __obj.asInstanceOf[ModifyUserMessage]
   }
   
-  extension [Self <: ModifyUserMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyUserMessage] (val x: Self) extends AnyVal {
     
     inline def setAccessString(value: AccessString): Self = StObject.set(x, "AccessString", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object CatCommonParams {
     __obj.asInstanceOf[CatCommonParams]
   }
   
-  extension [Self <: CatCommonParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatCommonParams] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

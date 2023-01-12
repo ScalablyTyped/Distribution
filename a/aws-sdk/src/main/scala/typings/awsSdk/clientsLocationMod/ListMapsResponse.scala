@@ -23,7 +23,8 @@ object ListMapsResponse {
     __obj.asInstanceOf[ListMapsResponse]
   }
   
-  extension [Self <: ListMapsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMapsResponse] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: ListMapsResponseEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object MlPutTrainedModelEnsemble {
     __obj.asInstanceOf[MlPutTrainedModelEnsemble]
   }
   
-  extension [Self <: MlPutTrainedModelEnsemble](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPutTrainedModelEnsemble] (val x: Self) extends AnyVal {
     
     inline def setAggregate_output(value: MlPutTrainedModelAggregateOutput): Self = StObject.set(x, "aggregate_output", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object HostOffering {
     __obj.asInstanceOf[HostOffering]
   }
   
-  extension [Self <: HostOffering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostOffering] (val x: Self) extends AnyVal {
     
     inline def setCurrencyCode(value: CurrencyCodeValues): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     

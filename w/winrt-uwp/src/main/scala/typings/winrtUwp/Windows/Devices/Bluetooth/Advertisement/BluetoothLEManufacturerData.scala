@@ -21,7 +21,8 @@ object BluetoothLEManufacturerData {
     __obj.asInstanceOf[BluetoothLEManufacturerData]
   }
   
-  extension [Self <: BluetoothLEManufacturerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BluetoothLEManufacturerData] (val x: Self) extends AnyVal {
     
     inline def setCompanyId(value: Double): Self = StObject.set(x, "companyId", value.asInstanceOf[js.Any])
     

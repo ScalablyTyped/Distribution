@@ -22,7 +22,8 @@ object decimalPlacesnumberundefi {
     __obj.asInstanceOf[decimalPlacesnumberundefi]
   }
   
-  extension [Self <: decimalPlacesnumberundefi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: decimalPlacesnumberundefi] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object EnttecUSBDMXPRODriverOptions {
     __obj.asInstanceOf[EnttecUSBDMXPRODriverOptions]
   }
   
-  extension [Self <: EnttecUSBDMXPRODriverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnttecUSBDMXPRODriverOptions] (val x: Self) extends AnyVal {
     
     inline def setDmx_speed(value: Double): Self = StObject.set(x, "dmx_speed", value.asInstanceOf[js.Any])
     

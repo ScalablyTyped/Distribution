@@ -23,7 +23,8 @@ object CreateTrafficPolicyVersionResponse {
     __obj.asInstanceOf[CreateTrafficPolicyVersionResponse]
   }
   
-  extension [Self <: CreateTrafficPolicyVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTrafficPolicyVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: ResourceURI): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     

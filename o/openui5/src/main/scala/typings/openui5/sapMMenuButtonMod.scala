@@ -946,7 +946,8 @@ object sapMMenuButtonMod {
       __obj.asInstanceOf[MenuButtonSettings]
     }
     
-    extension [Self <: MenuButtonSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuButtonSettings] (val x: Self) extends AnyVal {
       
       inline def setActiveIcon(value: URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "activeIcon", value.asInstanceOf[js.Any])
       

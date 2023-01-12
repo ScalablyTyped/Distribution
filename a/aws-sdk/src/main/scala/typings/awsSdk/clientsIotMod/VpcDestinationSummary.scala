@@ -33,7 +33,8 @@ object VpcDestinationSummary {
     __obj.asInstanceOf[VpcDestinationSummary]
   }
   
-  extension [Self <: VpcDestinationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcDestinationSummary] (val x: Self) extends AnyVal {
     
     inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     

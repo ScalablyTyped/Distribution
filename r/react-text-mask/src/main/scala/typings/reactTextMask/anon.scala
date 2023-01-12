@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[DefaultValue]
     }
     
-    extension [Self <: DefaultValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultValue] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[IndexesOfPipedChars]
     }
     
-    extension [Self <: IndexesOfPipedChars](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexesOfPipedChars] (val x: Self) extends AnyVal {
       
       inline def setIndexesOfPipedChars(value: js.Array[Double]): Self = StObject.set(x, "indexesOfPipedChars", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[SomeCharsRejected]
     }
     
-    extension [Self <: SomeCharsRejected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SomeCharsRejected] (val x: Self) extends AnyVal {
       
       inline def setSomeCharsRejected(value: Boolean): Self = StObject.set(x, "someCharsRejected", value.asInstanceOf[js.Any])
     }

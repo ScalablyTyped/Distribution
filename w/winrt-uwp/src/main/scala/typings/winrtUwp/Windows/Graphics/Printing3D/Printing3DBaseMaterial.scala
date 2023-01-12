@@ -20,7 +20,8 @@ object Printing3DBaseMaterial {
     __obj.asInstanceOf[Printing3DBaseMaterial]
   }
   
-  extension [Self <: Printing3DBaseMaterial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printing3DBaseMaterial] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Printing3DColorMaterial): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

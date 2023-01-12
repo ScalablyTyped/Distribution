@@ -56,7 +56,8 @@ object karmaMod {
       __obj.asInstanceOf[BriefReporterOptions]
     }
     
-    extension [Self <: BriefReporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BriefReporterOptions] (val x: Self) extends AnyVal {
       
       inline def setEarlyErrorReport(value: Boolean): Self = StObject.set(x, "earlyErrorReport", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setBriefReporter(value: BriefReporterOptions): Self = StObject.set(x, "briefReporter", value.asInstanceOf[js.Any])
       

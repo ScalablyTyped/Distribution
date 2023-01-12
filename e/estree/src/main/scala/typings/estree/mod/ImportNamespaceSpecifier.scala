@@ -20,7 +20,8 @@ object ImportNamespaceSpecifier {
     __obj.asInstanceOf[ImportNamespaceSpecifier]
   }
   
-  extension [Self <: ImportNamespaceSpecifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportNamespaceSpecifier] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.estree.estreeStrings.ImportNamespaceSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

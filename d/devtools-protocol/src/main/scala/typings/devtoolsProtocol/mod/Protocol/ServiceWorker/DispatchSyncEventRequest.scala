@@ -21,7 +21,8 @@ object DispatchSyncEventRequest {
     __obj.asInstanceOf[DispatchSyncEventRequest]
   }
   
-  extension [Self <: DispatchSyncEventRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DispatchSyncEventRequest] (val x: Self) extends AnyVal {
     
     inline def setLastChance(value: Boolean): Self = StObject.set(x, "lastChance", value.asInstanceOf[js.Any])
     

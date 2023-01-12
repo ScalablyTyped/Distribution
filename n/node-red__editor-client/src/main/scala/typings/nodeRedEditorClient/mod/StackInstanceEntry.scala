@@ -45,7 +45,8 @@ object StackInstanceEntry {
     __obj.asInstanceOf[StackInstanceEntry]
   }
   
-  extension [Self <: StackInstanceEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackInstanceEntry] (val x: Self) extends AnyVal {
     
     inline def setCollapse(value: () => js.UndefOr[Boolean]): Self = StObject.set(x, "collapse", js.Any.fromFunction0(value))
     

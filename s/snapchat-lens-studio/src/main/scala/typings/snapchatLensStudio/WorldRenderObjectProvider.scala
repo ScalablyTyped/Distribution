@@ -42,7 +42,8 @@ object WorldRenderObjectProvider {
     __obj.asInstanceOf[WorldRenderObjectProvider]
   }
   
-  extension [Self <: WorldRenderObjectProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorldRenderObjectProvider] (val x: Self) extends AnyVal {
     
     inline def setEnableWorldMeshesTracking(value: Boolean): Self = StObject.set(x, "enableWorldMeshesTracking", value.asInstanceOf[js.Any])
     

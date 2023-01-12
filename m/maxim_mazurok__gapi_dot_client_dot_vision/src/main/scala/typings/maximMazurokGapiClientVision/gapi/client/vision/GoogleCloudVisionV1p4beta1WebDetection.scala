@@ -34,7 +34,8 @@ object GoogleCloudVisionV1p4beta1WebDetection {
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1WebDetection]
   }
   
-  extension [Self <: GoogleCloudVisionV1p4beta1WebDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p4beta1WebDetection] (val x: Self) extends AnyVal {
     
     inline def setBestGuessLabels(value: js.Array[GoogleCloudVisionV1p4beta1WebDetectionWebLabel]): Self = StObject.set(x, "bestGuessLabels", value.asInstanceOf[js.Any])
     

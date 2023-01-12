@@ -53,7 +53,8 @@ object Giturl {
     __obj.asInstanceOf[Giturl]
   }
   
-  extension [Self <: Giturl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Giturl] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

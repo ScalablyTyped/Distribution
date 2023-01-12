@@ -35,7 +35,8 @@ object distHigherOrderComponentsWithIsAuthenticatedMod {
       __obj.asInstanceOf[withAuthHeaderProps]
     }
     
-    extension [Self <: withAuthHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: withAuthHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setIsAuth(value: String): Self = StObject.set(x, "isAuth", value.asInstanceOf[js.Any])
     }

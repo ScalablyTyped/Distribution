@@ -79,7 +79,8 @@ object VBProject {
     __obj.asInstanceOf[VBProject]
   }
   
-  extension [Self <: VBProject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VBProject] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

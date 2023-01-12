@@ -35,7 +35,8 @@ object XTypeDescriptionEnumeration {
     __obj.asInstanceOf[XTypeDescriptionEnumeration]
   }
   
-  extension [Self <: XTypeDescriptionEnumeration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTypeDescriptionEnumeration] (val x: Self) extends AnyVal {
     
     inline def setNextTypeDescription(value: () => XTypeDescription): Self = StObject.set(x, "nextTypeDescription", js.Any.fromFunction0(value))
   }

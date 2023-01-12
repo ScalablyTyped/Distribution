@@ -17,7 +17,8 @@ object CursorResult {
     __obj.asInstanceOf[CursorResult]
   }
   
-  extension [Self <: CursorResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CursorResult] (val x: Self) extends AnyVal {
     
     inline def setCursorOffset(value: Double): Self = StObject.set(x, "cursorOffset", value.asInstanceOf[js.Any])
     

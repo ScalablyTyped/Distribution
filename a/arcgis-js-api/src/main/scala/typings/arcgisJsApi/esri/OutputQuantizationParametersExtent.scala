@@ -41,7 +41,8 @@ object OutputQuantizationParametersExtent {
     __obj.asInstanceOf[OutputQuantizationParametersExtent]
   }
   
-  extension [Self <: OutputQuantizationParametersExtent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputQuantizationParametersExtent] (val x: Self) extends AnyVal {
     
     inline def setXmax(value: Double): Self = StObject.set(x, "xmax", value.asInstanceOf[js.Any])
     

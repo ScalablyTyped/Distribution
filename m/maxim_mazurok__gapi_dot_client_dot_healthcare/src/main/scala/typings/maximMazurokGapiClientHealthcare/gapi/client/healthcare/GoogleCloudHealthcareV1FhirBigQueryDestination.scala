@@ -32,7 +32,8 @@ object GoogleCloudHealthcareV1FhirBigQueryDestination {
     __obj.asInstanceOf[GoogleCloudHealthcareV1FhirBigQueryDestination]
   }
   
-  extension [Self <: GoogleCloudHealthcareV1FhirBigQueryDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudHealthcareV1FhirBigQueryDestination] (val x: Self) extends AnyVal {
     
     inline def setDatasetUri(value: String): Self = StObject.set(x, "datasetUri", value.asInstanceOf[js.Any])
     

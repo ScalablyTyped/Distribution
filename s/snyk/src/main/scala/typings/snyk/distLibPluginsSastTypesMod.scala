@@ -21,7 +21,8 @@ object distLibPluginsSastTypesMod {
       __obj.asInstanceOf[LocalCodeEngine]
     }
     
-    extension [Self <: LocalCodeEngine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalCodeEngine] (val x: Self) extends AnyVal {
       
       inline def setAllowCloudUpload(value: Boolean): Self = StObject.set(x, "allowCloudUpload", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object distLibPluginsSastTypesMod {
       __obj.asInstanceOf[SastSettings]
     }
     
-    extension [Self <: SastSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SastSettings] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object distLibPluginsSastTypesMod {
       __obj.asInstanceOf[TrackUsageResponse]
     }
     
-    extension [Self <: TrackUsageResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackUsageResponse] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

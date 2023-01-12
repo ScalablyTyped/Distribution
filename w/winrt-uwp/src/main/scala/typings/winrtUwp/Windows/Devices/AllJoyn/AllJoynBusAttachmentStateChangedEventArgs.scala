@@ -20,7 +20,8 @@ object AllJoynBusAttachmentStateChangedEventArgs {
     __obj.asInstanceOf[AllJoynBusAttachmentStateChangedEventArgs]
   }
   
-  extension [Self <: AllJoynBusAttachmentStateChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllJoynBusAttachmentStateChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setState(value: AllJoynBusAttachmentState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

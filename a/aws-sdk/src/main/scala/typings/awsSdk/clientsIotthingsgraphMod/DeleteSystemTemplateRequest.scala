@@ -18,7 +18,8 @@ object DeleteSystemTemplateRequest {
     __obj.asInstanceOf[DeleteSystemTemplateRequest]
   }
   
-  extension [Self <: DeleteSystemTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSystemTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

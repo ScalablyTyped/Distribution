@@ -25,7 +25,8 @@ object ConsoleViewRequest {
     __obj.asInstanceOf[ConsoleViewRequest]
   }
   
-  extension [Self <: ConsoleViewRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsoleViewRequest] (val x: Self) extends AnyVal {
     
     inline def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     

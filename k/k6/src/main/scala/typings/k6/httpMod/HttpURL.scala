@@ -24,7 +24,8 @@ object HttpURL {
     __obj.asInstanceOf[HttpURL]
   }
   
-  extension [Self <: HttpURL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpURL] (val x: Self) extends AnyVal {
     
     inline def set__brand(value: `http-url`): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
   }

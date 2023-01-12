@@ -34,7 +34,8 @@ object srcViewObserverMutationobserverMod {
       __obj.asInstanceOf[MutatedChildren]
     }
     
-    extension [Self <: MutatedChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutatedChildren] (val x: Self) extends AnyVal {
       
       inline def setNewChildren(value: js.Array[typings.ckeditorCkeditor5Engine.srcViewNodeMod.default]): Self = StObject.set(x, "newChildren", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object srcViewObserverMutationobserverMod {
       __obj.asInstanceOf[MutatedText]
     }
     
-    extension [Self <: MutatedText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutatedText] (val x: Self) extends AnyVal {
       
       inline def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object srcViewObserverMutationobserverMod {
         __obj.asInstanceOf[Observers]
       }
       
-      extension [Self <: Observers](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Observers] (val x: Self) extends AnyVal {
         
         inline def setMutationObserver(value: typings.std.MutationObserver): Self = StObject.set(x, "MutationObserver", value.asInstanceOf[js.Any])
       }

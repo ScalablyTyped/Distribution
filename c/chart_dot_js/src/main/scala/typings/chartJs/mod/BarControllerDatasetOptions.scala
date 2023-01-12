@@ -183,7 +183,8 @@ object BarControllerDatasetOptions {
     __obj.asInstanceOf[BarControllerDatasetOptions]
   }
   
-  extension [Self <: BarControllerDatasetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarControllerDatasetOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: `false` | AnimationSpecbaronProgres): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

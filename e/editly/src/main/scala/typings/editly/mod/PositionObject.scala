@@ -38,7 +38,8 @@ object PositionObject {
     __obj.asInstanceOf[PositionObject]
   }
   
-  extension [Self <: PositionObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionObject] (val x: Self) extends AnyVal {
     
     inline def setOriginX(value: OriginX): Self = StObject.set(x, "originX", value.asInstanceOf[js.Any])
     

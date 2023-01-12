@@ -26,7 +26,8 @@ object KeyidOwner {
     __obj.asInstanceOf[KeyidOwner]
   }
   
-  extension [Self <: KeyidOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyidOwner] (val x: Self) extends AnyVal {
     
     inline def setKey_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['key-id'] */ js.Any

@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[GUI]
     }
     
-    extension [Self <: GUI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GUI] (val x: Self) extends AnyVal {
       
       inline def setGUI(value: Any): Self = StObject.set(x, "GUI", value.asInstanceOf[js.Any])
     }
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Inner]
     }
     
-    extension [Self <: Inner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inner] (val x: Self) extends AnyVal {
       
       inline def setInner(value: Boolean): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Recursive]
     }
     
-    extension [Self <: Recursive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Recursive] (val x: Self) extends AnyVal {
       
       inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
       
@@ -96,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Step]
     }
     
-    extension [Self <: Step](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
       
       inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       

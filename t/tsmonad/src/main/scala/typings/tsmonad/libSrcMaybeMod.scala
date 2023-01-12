@@ -124,7 +124,8 @@ object libSrcMaybeMod {
       __obj.asInstanceOf[MaybePatterns[T, U]]
     }
     
-    extension [Self <: MaybePatterns[?, ?], T, U](x: Self & (MaybePatterns[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaybePatterns[?, ?], T, U] (val x: Self & (MaybePatterns[T, U])) extends AnyVal {
       
       inline def setJust(value: T => U): Self = StObject.set(x, "just", js.Any.fromFunction1(value))
       
@@ -146,7 +147,8 @@ object libSrcMaybeMod {
       __obj.asInstanceOf[OptionalMaybePatterns[T, U]]
     }
     
-    extension [Self <: OptionalMaybePatterns[?, ?], T, U](x: Self & (OptionalMaybePatterns[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalMaybePatterns[?, ?], T, U] (val x: Self & (OptionalMaybePatterns[T, U])) extends AnyVal {
       
       inline def setJust(value: /* t */ T => U): Self = StObject.set(x, "just", js.Any.fromFunction1(value))
       

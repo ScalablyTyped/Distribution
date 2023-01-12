@@ -32,7 +32,8 @@ object CommonClientOptions {
     __obj.asInstanceOf[CommonClientOptions]
   }
   
-  extension [Self <: CommonClientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonClientOptions] (val x: Self) extends AnyVal {
     
     inline def setAdditionalPolicies(value: js.Array[AdditionalPolicyConfig]): Self = StObject.set(x, "additionalPolicies", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DisableDebounce {
     __obj.asInstanceOf[DisableDebounce[T]]
   }
   
-  extension [Self <: DisableDebounce[?], T /* <: KnobType */](x: Self & DisableDebounce[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableDebounce[?], T /* <: KnobType */] (val x: Self & DisableDebounce[T]) extends AnyVal {
     
     inline def setDisableDebounce(value: Boolean): Self = StObject.set(x, "disableDebounce", value.asInstanceOf[js.Any])
     

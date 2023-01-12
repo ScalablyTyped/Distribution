@@ -41,7 +41,8 @@ object ASPxClientRecurrenceType {
     __obj.asInstanceOf[ASPxClientRecurrenceType]
   }
   
-  extension [Self <: ASPxClientRecurrenceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRecurrenceType] (val x: Self) extends AnyVal {
     
     inline def setDaily(value: String): Self = StObject.set(x, "Daily", value.asInstanceOf[js.Any])
     

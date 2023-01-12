@@ -15,7 +15,8 @@ object GroundTruthManifest {
     __obj.asInstanceOf[GroundTruthManifest]
   }
   
-  extension [Self <: GroundTruthManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroundTruthManifest] (val x: Self) extends AnyVal {
     
     inline def setS3Object(value: S3Object): Self = StObject.set(x, "S3Object", value.asInstanceOf[js.Any])
     

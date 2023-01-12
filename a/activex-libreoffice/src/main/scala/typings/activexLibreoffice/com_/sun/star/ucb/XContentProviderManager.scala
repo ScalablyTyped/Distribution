@@ -62,7 +62,8 @@ object XContentProviderManager {
     __obj.asInstanceOf[XContentProviderManager]
   }
   
-  extension [Self <: XContentProviderManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContentProviderManager] (val x: Self) extends AnyVal {
     
     inline def setDeregisterContentProvider(value: (XContentProvider, String) => Unit): Self = StObject.set(x, "deregisterContentProvider", js.Any.fromFunction2(value))
     

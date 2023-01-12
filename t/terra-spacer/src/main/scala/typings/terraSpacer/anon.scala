@@ -508,7 +508,8 @@ object anon {
       __obj.asInstanceOf[PartialSpacerProps]
     }
     
-    extension [Self <: PartialSpacerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSpacerProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1291,7 +1292,8 @@ object anon {
       __obj.asInstanceOf[Sizes]
     }
     
-    extension [Self <: Sizes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sizes] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: SpacerSizes): Self = StObject.set(x, "Sizes", value.asInstanceOf[js.Any])
     }
@@ -2051,7 +2053,8 @@ object anon {
       __obj.asInstanceOf[WeakValidationMapSpacerPr]
     }
     
-    extension [Self <: WeakValidationMapSpacerPr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeakValidationMapSpacerPr] (val x: Self) extends AnyVal {
       
       inline def setAbout(
         value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any

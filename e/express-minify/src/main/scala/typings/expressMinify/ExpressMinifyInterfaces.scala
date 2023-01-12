@@ -71,7 +71,8 @@ object ExpressMinifyInterfaces {
       __obj.asInstanceOf[ExpressMinifyOptions]
     }
     
-    extension [Self <: ExpressMinifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpressMinifyOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: String | Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object ExpressMinifyInterfaces {
       __obj.asInstanceOf[ExpressMinifyResponse]
     }
     
-    extension [Self <: ExpressMinifyResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpressMinifyResponse] (val x: Self) extends AnyVal {
       
       inline def set_no_cache(value: Boolean): Self = StObject.set(x, "_no_cache", value.asInstanceOf[js.Any])
       

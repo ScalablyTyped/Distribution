@@ -27,7 +27,8 @@ object Util {
       __obj.asInstanceOf[EventSource]
     }
     
-    extension [Self <: EventSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventSource] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: js.Function1[/* event */ Any, Unit] => EventSource): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
       
@@ -48,7 +49,8 @@ object Util {
       __obj.asInstanceOf[Oauth]
     }
     
-    extension [Self <: Oauth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Oauth] (val x: Self) extends AnyVal {
       
       inline def setCheckAuthStateParam(value: String => Boolean): Self = StObject.set(x, "checkAuthStateParam", js.Any.fromFunction1(value))
     }

@@ -34,7 +34,8 @@ object XColorScheme {
     __obj.asInstanceOf[XColorScheme]
   }
   
-  extension [Self <: XColorScheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XColorScheme] (val x: Self) extends AnyVal {
     
     inline def setGetColorByIndex(value: Double => Color): Self = StObject.set(x, "getColorByIndex", js.Any.fromFunction1(value))
   }

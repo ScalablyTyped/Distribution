@@ -23,7 +23,8 @@ object SecurityGroupMembership {
     __obj.asInstanceOf[SecurityGroupMembership]
   }
   
-  extension [Self <: SecurityGroupMembership](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGroupMembership] (val x: Self) extends AnyVal {
     
     inline def setSecurityGroupId(value: String): Self = StObject.set(x, "SecurityGroupId", value.asInstanceOf[js.Any])
     

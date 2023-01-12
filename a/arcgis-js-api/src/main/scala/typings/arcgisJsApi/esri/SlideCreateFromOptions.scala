@@ -20,7 +20,8 @@ object SlideCreateFromOptions {
     __obj.asInstanceOf[SlideCreateFromOptions]
   }
   
-  extension [Self <: SlideCreateFromOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideCreateFromOptions] (val x: Self) extends AnyVal {
     
     inline def setScreenshot(value: SlideCreateFromOptionsScreenshot): Self = StObject.set(x, "screenshot", value.asInstanceOf[js.Any])
     

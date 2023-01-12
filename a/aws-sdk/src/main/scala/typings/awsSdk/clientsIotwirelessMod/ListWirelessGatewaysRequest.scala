@@ -23,7 +23,8 @@ object ListWirelessGatewaysRequest {
     __obj.asInstanceOf[ListWirelessGatewaysRequest]
   }
   
-  extension [Self <: ListWirelessGatewaysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListWirelessGatewaysRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

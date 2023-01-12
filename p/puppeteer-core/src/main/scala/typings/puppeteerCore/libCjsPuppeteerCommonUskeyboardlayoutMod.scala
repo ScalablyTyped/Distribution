@@ -1088,7 +1088,8 @@ object libCjsPuppeteerCommonUskeyboardlayoutMod {
       __obj.asInstanceOf[KeyDefinition]
     }
     
-    extension [Self <: KeyDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyDefinition] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

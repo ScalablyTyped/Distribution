@@ -19,7 +19,8 @@ object GrafeasV1SlsaProvenanceZeroTwoSlsaCompleteness {
     __obj.asInstanceOf[GrafeasV1SlsaProvenanceZeroTwoSlsaCompleteness]
   }
   
-  extension [Self <: GrafeasV1SlsaProvenanceZeroTwoSlsaCompleteness](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrafeasV1SlsaProvenanceZeroTwoSlsaCompleteness] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: Boolean): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     

@@ -108,7 +108,8 @@ object RenderPass {
     __obj.asInstanceOf[RenderPass]
   }
   
-  extension [Self <: RenderPass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderPass] (val x: Self) extends AnyVal {
     
     inline def setColorOps(value: ColorAttachmentOps): Self = StObject.set(x, "colorOps", value.asInstanceOf[js.Any])
     

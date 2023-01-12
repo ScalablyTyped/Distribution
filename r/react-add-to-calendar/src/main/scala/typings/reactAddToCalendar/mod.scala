@@ -40,7 +40,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AddToCalendarEvent]
     }
     
-    extension [Self <: AddToCalendarEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddToCalendarEvent] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AddToCalendarProps]
     }
     
-    extension [Self <: AddToCalendarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddToCalendarProps] (val x: Self) extends AnyVal {
       
       inline def setButtonClassClosed(value: String): Self = StObject.set(x, "buttonClassClosed", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object SourceControlResourceThemableDecorations {
     __obj.asInstanceOf[SourceControlResourceThemableDecorations]
   }
   
-  extension [Self <: SourceControlResourceThemableDecorations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceControlResourceThemableDecorations] (val x: Self) extends AnyVal {
     
     inline def setIconPath(value: String | Uri | ThemeIcon): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     

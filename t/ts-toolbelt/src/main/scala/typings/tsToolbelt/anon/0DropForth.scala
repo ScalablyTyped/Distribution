@@ -23,7 +23,8 @@ object `0DropForth` {
     __obj.asInstanceOf[`0DropForth`[L, N]]
   }
   
-  extension [Self <: `0DropForth`[?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Iteration */](x: Self & (`0DropForth`[L, N])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0DropForth`[?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Iteration */] (val x: Self & (`0DropForth`[L, N])) extends AnyVal {
     
     inline def set0(value: DropForth[Tail[L], Prev[N]]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

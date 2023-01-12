@@ -20,7 +20,8 @@ object IMouseTargetOverviewRuler {
     __obj.asInstanceOf[IMouseTargetOverviewRuler]
   }
   
-  extension [Self <: IMouseTargetOverviewRuler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseTargetOverviewRuler] (val x: Self) extends AnyVal {
     
     inline def setType(value: OVERVIEW_RULER): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

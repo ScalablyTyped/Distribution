@@ -39,7 +39,8 @@ object distSrcCiphersInterfaceMod {
       __obj.asInstanceOf[CreateOptions]
     }
     
-    extension [Self <: CreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

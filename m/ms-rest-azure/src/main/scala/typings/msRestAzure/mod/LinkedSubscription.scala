@@ -57,7 +57,8 @@ object LinkedSubscription {
     __obj.asInstanceOf[LinkedSubscription]
   }
   
-  extension [Self <: LinkedSubscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedSubscription] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationSource(value: String): Self = StObject.set(x, "authorizationSource", value.asInstanceOf[js.Any])
     

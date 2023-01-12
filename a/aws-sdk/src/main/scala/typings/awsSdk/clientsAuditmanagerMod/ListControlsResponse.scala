@@ -23,7 +23,8 @@ object ListControlsResponse {
     __obj.asInstanceOf[ListControlsResponse]
   }
   
-  extension [Self <: ListControlsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListControlsResponse] (val x: Self) extends AnyVal {
     
     inline def setControlMetadataList(value: ControlMetadataList): Self = StObject.set(x, "controlMetadataList", value.asInstanceOf[js.Any])
     

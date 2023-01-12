@@ -158,7 +158,8 @@ object mod {
       __obj.asInstanceOf[IClientOptions]
     }
     
-    extension [Self <: IClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IClientOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -235,7 +236,8 @@ object mod {
       __obj.asInstanceOf[IPerMessageDeflateOptions]
     }
     
-    extension [Self <: IPerMessageDeflateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPerMessageDeflateOptions] (val x: Self) extends AnyVal {
       
       inline def setClientMaxWindowBits(value: Double): Self = StObject.set(x, "clientMaxWindowBits", value.asInstanceOf[js.Any])
       
@@ -305,7 +307,8 @@ object mod {
       __obj.asInstanceOf[IServerOptions]
     }
     
-    extension [Self <: IServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IServerOptions] (val x: Self) extends AnyVal {
       
       inline def setClientTracking(value: Boolean): Self = StObject.set(x, "clientTracking", value.asInstanceOf[js.Any])
       

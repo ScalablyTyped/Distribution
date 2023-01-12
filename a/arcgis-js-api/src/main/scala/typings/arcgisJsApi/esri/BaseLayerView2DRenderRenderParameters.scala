@@ -35,7 +35,8 @@ object BaseLayerView2DRenderRenderParameters {
     __obj.asInstanceOf[BaseLayerView2DRenderRenderParameters]
   }
   
-  extension [Self <: BaseLayerView2DRenderRenderParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseLayerView2DRenderRenderParameters] (val x: Self) extends AnyVal {
     
     inline def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

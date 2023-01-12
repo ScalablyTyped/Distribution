@@ -27,7 +27,8 @@ object IndexItemRequest {
     __obj.asInstanceOf[IndexItemRequest]
   }
   
-  extension [Self <: IndexItemRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexItemRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteUserPermissionsBoundaryRequest {
     __obj.asInstanceOf[DeleteUserPermissionsBoundaryRequest]
   }
   
-  extension [Self <: DeleteUserPermissionsBoundaryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteUserPermissionsBoundaryRequest] (val x: Self) extends AnyVal {
     
     inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }

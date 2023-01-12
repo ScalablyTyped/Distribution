@@ -21,7 +21,8 @@ object ValidNonKioskManifest {
     __obj.asInstanceOf[ValidNonKioskManifest]
   }
   
-  extension [Self <: ValidNonKioskManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidNonKioskManifest] (val x: Self) extends AnyVal {
     
     inline def setKiosk_enabled(value: `false`): Self = StObject.set(x, "kiosk_enabled", value.asInstanceOf[js.Any])
     

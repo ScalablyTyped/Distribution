@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[Paths]
     }
     
-    extension [Self <: Paths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Paths] (val x: Self) extends AnyVal {
       
       inline def setCache(value: String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

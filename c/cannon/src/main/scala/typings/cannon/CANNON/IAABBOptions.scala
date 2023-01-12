@@ -17,7 +17,8 @@ object IAABBOptions {
     __obj.asInstanceOf[IAABBOptions]
   }
   
-  extension [Self <: IAABBOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAABBOptions] (val x: Self) extends AnyVal {
     
     inline def setLowerBound(value: Vec3): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
     

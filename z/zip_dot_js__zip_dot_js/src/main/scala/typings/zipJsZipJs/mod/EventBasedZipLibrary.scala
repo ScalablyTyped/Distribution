@@ -27,7 +27,8 @@ object EventBasedZipLibrary {
     __obj.asInstanceOf[EventBasedZipLibrary]
   }
   
-  extension [Self <: EventBasedZipLibrary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventBasedZipLibrary] (val x: Self) extends AnyVal {
     
     inline def setDeflate(value: Instantiable0[EventBasedCodec]): Self = StObject.set(x, "Deflate", value.asInstanceOf[js.Any])
     

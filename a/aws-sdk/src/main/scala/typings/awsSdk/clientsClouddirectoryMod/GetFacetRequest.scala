@@ -23,7 +23,8 @@ object GetFacetRequest {
     __obj.asInstanceOf[GetFacetRequest]
   }
   
-  extension [Self <: GetFacetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFacetRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: FacetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

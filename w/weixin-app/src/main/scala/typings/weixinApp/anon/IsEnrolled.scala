@@ -18,7 +18,8 @@ object IsEnrolled {
     __obj.asInstanceOf[IsEnrolled]
   }
   
-  extension [Self <: IsEnrolled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsEnrolled] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

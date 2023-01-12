@@ -33,7 +33,8 @@ object KeyGroupList {
     __obj.asInstanceOf[KeyGroupList]
   }
   
-  extension [Self <: KeyGroupList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyGroupList] (val x: Self) extends AnyVal {
     
     inline def setItems(value: KeyGroupSummaryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

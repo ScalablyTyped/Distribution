@@ -53,7 +53,8 @@ object StartEntitiesDetectionV2JobRequest {
     __obj.asInstanceOf[StartEntitiesDetectionV2JobRequest]
   }
   
-  extension [Self <: StartEntitiesDetectionV2JobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartEntitiesDetectionV2JobRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

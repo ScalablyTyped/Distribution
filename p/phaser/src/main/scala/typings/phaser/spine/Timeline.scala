@@ -29,7 +29,8 @@ object Timeline {
     __obj.asInstanceOf[Timeline]
   }
   
-  extension [Self <: Timeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timeline] (val x: Self) extends AnyVal {
     
     inline def setApply(value: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction7(value))
     

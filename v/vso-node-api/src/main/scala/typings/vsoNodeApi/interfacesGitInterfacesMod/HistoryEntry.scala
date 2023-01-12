@@ -28,7 +28,8 @@ object HistoryEntry {
     __obj.asInstanceOf[HistoryEntry[T]]
   }
   
-  extension [Self <: HistoryEntry[?], T](x: Self & HistoryEntry[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryEntry[?], T] (val x: Self & HistoryEntry[T]) extends AnyVal {
     
     inline def setChangeList(value: ChangeList[T]): Self = StObject.set(x, "changeList", value.asInstanceOf[js.Any])
     

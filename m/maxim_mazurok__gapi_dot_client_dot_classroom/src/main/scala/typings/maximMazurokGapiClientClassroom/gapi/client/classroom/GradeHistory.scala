@@ -28,7 +28,8 @@ object GradeHistory {
     __obj.asInstanceOf[GradeHistory]
   }
   
-  extension [Self <: GradeHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GradeHistory] (val x: Self) extends AnyVal {
     
     inline def setActorUserId(value: String): Self = StObject.set(x, "actorUserId", value.asInstanceOf[js.Any])
     

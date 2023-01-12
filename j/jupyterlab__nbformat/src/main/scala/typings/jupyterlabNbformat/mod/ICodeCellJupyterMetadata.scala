@@ -20,7 +20,8 @@ object ICodeCellJupyterMetadata {
     __obj.asInstanceOf[ICodeCellJupyterMetadata]
   }
   
-  extension [Self <: ICodeCellJupyterMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICodeCellJupyterMetadata] (val x: Self) extends AnyVal {
     
     inline def setOutputs_hidden(value: Boolean): Self = StObject.set(x, "outputs_hidden", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,8 @@ object StatisticDefinitionStatisticParameters {
     __obj.asInstanceOf[StatisticDefinitionStatisticParameters]
   }
   
-  extension [Self <: StatisticDefinitionStatisticParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatisticDefinitionStatisticParameters] (val x: Self) extends AnyVal {
     
     inline def setOrderBy(value: ASC | DESC): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     

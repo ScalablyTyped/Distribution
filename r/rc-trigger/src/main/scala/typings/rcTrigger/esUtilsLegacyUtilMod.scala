@@ -37,7 +37,8 @@ object esUtilsLegacyUtilMod {
       __obj.asInstanceOf[GetMotionProps]
     }
     
-    extension [Self <: GetMotionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetMotionProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: AnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object TypeofSUGDEL {
     __obj.asInstanceOf[TypeofSUGDEL]
   }
   
-  extension [Self <: TypeofSUGDEL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSUGDEL] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: (String, String) => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction2(value))
     

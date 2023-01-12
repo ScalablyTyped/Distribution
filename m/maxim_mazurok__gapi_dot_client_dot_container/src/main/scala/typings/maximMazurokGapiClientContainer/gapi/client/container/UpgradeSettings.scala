@@ -25,7 +25,8 @@ object UpgradeSettings {
     __obj.asInstanceOf[UpgradeSettings]
   }
   
-  extension [Self <: UpgradeSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeSettings] (val x: Self) extends AnyVal {
     
     inline def setBlueGreenSettings(value: BlueGreenSettings): Self = StObject.set(x, "blueGreenSettings", value.asInstanceOf[js.Any])
     

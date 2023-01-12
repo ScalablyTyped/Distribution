@@ -52,7 +52,8 @@ object libTokenMod {
       __obj.asInstanceOf[TokenPayload]
     }
     
-    extension [Self <: TokenPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenPayload] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

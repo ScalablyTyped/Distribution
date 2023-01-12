@@ -15,7 +15,8 @@ object STUNServer {
     __obj.asInstanceOf[STUNServer]
   }
   
-  extension [Self <: STUNServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: STUNServer] (val x: Self) extends AnyVal {
     
     inline def setUrls(value: String): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
   }

@@ -24,7 +24,8 @@ object BrokenPackageRequest {
     __obj.asInstanceOf[BrokenPackageRequest]
   }
   
-  extension [Self <: BrokenPackageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrokenPackageRequest] (val x: Self) extends AnyVal {
     
     inline def setAName(value: String): Self = StObject.set(x, "aName", value.asInstanceOf[js.Any])
   }

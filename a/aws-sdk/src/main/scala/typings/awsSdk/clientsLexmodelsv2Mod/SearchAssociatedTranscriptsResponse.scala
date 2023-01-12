@@ -48,7 +48,8 @@ object SearchAssociatedTranscriptsResponse {
     __obj.asInstanceOf[SearchAssociatedTranscriptsResponse]
   }
   
-  extension [Self <: SearchAssociatedTranscriptsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAssociatedTranscriptsResponse] (val x: Self) extends AnyVal {
     
     inline def setAssociatedTranscripts(value: AssociatedTranscriptList): Self = StObject.set(x, "associatedTranscripts", value.asInstanceOf[js.Any])
     

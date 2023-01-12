@@ -17,7 +17,8 @@ object ListJobsOutput {
     __obj.asInstanceOf[ListJobsOutput]
   }
   
-  extension [Self <: ListJobsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListJobsOutput] (val x: Self) extends AnyVal {
     
     inline def setIsTruncated(value: IsTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

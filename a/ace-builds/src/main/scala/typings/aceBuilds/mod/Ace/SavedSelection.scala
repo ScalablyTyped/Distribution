@@ -19,7 +19,8 @@ object SavedSelection {
     __obj.asInstanceOf[SavedSelection]
   }
   
-  extension [Self <: SavedSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavedSelection] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

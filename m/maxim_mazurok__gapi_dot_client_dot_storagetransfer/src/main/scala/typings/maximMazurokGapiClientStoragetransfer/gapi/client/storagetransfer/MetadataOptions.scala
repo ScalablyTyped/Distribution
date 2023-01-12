@@ -67,7 +67,8 @@ object MetadataOptions {
     __obj.asInstanceOf[MetadataOptions]
   }
   
-  extension [Self <: MetadataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataOptions] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: String): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     

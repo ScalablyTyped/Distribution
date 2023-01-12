@@ -83,7 +83,8 @@ object esStyleContextMod {
       __obj.asInstanceOf[StyleContextProps]
     }
     
-    extension [Self <: StyleContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleContextProps] (val x: Self) extends AnyVal {
       
       inline def setAutoClear(value: Boolean): Self = StObject.set(x, "autoClear", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object esStyleContextMod {
       __obj.asInstanceOf[StyleProviderProps]
     }
     
-    extension [Self <: StyleProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleProviderProps] (val x: Self) extends AnyVal {
       
       inline def setAutoClear(value: Boolean): Self = StObject.set(x, "autoClear", value.asInstanceOf[js.Any])
       

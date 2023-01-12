@@ -15,7 +15,8 @@ object Upgrade {
     __obj.asInstanceOf[Upgrade]
   }
   
-  extension [Self <: Upgrade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Upgrade] (val x: Self) extends AnyVal {
     
     inline def setUpgradeTo(value: String): Self = StObject.set(x, "upgradeTo", value.asInstanceOf[js.Any])
   }

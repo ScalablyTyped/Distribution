@@ -33,7 +33,8 @@ object gapi {
           __obj.asInstanceOf[SiteVerificationWebResourceGettokenRequest]
         }
         
-        extension [Self <: SiteVerificationWebResourceGettokenRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SiteVerificationWebResourceGettokenRequest] (val x: Self) extends AnyVal {
           
           inline def setSite(value: Identifier): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
           
@@ -63,7 +64,8 @@ object gapi {
           __obj.asInstanceOf[SiteVerificationWebResourceGettokenResponse]
         }
         
-        extension [Self <: SiteVerificationWebResourceGettokenResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SiteVerificationWebResourceGettokenResponse] (val x: Self) extends AnyVal {
           
           inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
           
@@ -87,7 +89,8 @@ object gapi {
           __obj.asInstanceOf[SiteVerificationWebResourceListResponse]
         }
         
-        extension [Self <: SiteVerificationWebResourceListResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SiteVerificationWebResourceListResponse] (val x: Self) extends AnyVal {
           
           inline def setItems(value: js.Array[SiteVerificationWebResourceResource]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
           
@@ -115,7 +118,8 @@ object gapi {
           __obj.asInstanceOf[SiteVerificationWebResourceResource]
         }
         
-        extension [Self <: SiteVerificationWebResourceResource](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SiteVerificationWebResourceResource] (val x: Self) extends AnyVal {
           
           inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           

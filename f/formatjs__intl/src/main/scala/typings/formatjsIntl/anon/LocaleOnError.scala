@@ -34,7 +34,8 @@ object LocaleOnError {
     __obj.asInstanceOf[LocaleOnError]
   }
   
-  extension [Self <: LocaleOnError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocaleOnError] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

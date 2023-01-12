@@ -22,7 +22,8 @@ object ForbiddenCharacters {
     __obj.asInstanceOf[ForbiddenCharacters]
   }
   
-  extension [Self <: ForbiddenCharacters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForbiddenCharacters] (val x: Self) extends AnyVal {
     
     inline def setBeginLine(value: String): Self = StObject.set(x, "beginLine", value.asInstanceOf[js.Any])
     

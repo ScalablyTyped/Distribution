@@ -16,7 +16,8 @@ object AttestationNote {
     __obj.asInstanceOf[AttestationNote]
   }
   
-  extension [Self <: AttestationNote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttestationNote] (val x: Self) extends AnyVal {
     
     inline def setHint(value: Hint): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     

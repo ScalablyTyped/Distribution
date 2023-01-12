@@ -23,7 +23,8 @@ object ColumnFixing {
     __obj.asInstanceOf[ColumnFixing]
   }
   
-  extension [Self <: ColumnFixing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnFixing] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

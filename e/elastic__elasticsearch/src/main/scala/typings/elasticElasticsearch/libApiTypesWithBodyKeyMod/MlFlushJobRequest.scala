@@ -21,7 +21,8 @@ object MlFlushJobRequest {
     __obj.asInstanceOf[MlFlushJobRequest]
   }
   
-  extension [Self <: MlFlushJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlFlushJobRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Advancetime): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

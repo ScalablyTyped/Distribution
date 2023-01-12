@@ -18,7 +18,8 @@ object InputDataConfig {
     __obj.asInstanceOf[InputDataConfig]
   }
   
-  extension [Self <: InputDataConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputDataConfig] (val x: Self) extends AnyVal {
     
     inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }

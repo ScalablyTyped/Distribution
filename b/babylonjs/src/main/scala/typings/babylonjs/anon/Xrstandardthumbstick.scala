@@ -19,7 +19,8 @@ object Xrstandardthumbstick {
     __obj.asInstanceOf[Xrstandardthumbstick]
   }
   
-  extension [Self <: Xrstandardthumbstick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Xrstandardthumbstick] (val x: Self) extends AnyVal {
     
     inline def `setXr-standard-thumbstick`(value: Xaxis): Self = StObject.set(x, "xr-standard-thumbstick", value.asInstanceOf[js.Any])
     

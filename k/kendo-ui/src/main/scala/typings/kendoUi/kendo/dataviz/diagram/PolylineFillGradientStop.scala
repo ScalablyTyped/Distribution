@@ -19,7 +19,8 @@ object PolylineFillGradientStop {
     __obj.asInstanceOf[PolylineFillGradientStop]
   }
   
-  extension [Self <: PolylineFillGradientStop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolylineFillGradientStop] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

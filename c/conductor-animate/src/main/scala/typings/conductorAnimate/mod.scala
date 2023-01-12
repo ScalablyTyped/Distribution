@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[AnimatedProps]
     }
     
-    extension [Self <: AnimatedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedProps] (val x: Self) extends AnyVal {
       
       inline def setAdditional(value: js.Object): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object mod {
       __obj.asInstanceOf[ConductorProps]
     }
     
-    extension [Self <: ConductorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConductorProps] (val x: Self) extends AnyVal {
       
       inline def setAnimations(value: Animations): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     }

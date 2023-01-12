@@ -46,7 +46,8 @@ object distTypesStoriesComponentsCategoryListCategoryListMod {
       __obj.asInstanceOf[CategoryListProps]
     }
     
-    extension [Self <: CategoryListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CategoryListProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -55,7 +55,8 @@ object reflectiveErrorsMod {
       __obj.asInstanceOf[InjectionError]
     }
     
-    extension [Self <: InjectionError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectionError] (val x: Self) extends AnyVal {
       
       inline def setAddKey(value: (ReflectiveInjector, ReflectiveKey) => Unit): Self = StObject.set(x, "addKey", js.Any.fromFunction2(value))
       

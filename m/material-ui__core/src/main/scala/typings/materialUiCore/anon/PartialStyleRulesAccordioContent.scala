@@ -45,7 +45,8 @@ object PartialStyleRulesAccordioContent {
     __obj.asInstanceOf[PartialStyleRulesAccordioContent]
   }
   
-  extension [Self <: PartialStyleRulesAccordioContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesAccordioContent] (val x: Self) extends AnyVal {
     
     inline def setContent(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

@@ -21,7 +21,8 @@ object LexV2ListSlotValue {
     __obj.asInstanceOf[LexV2ListSlotValue]
   }
   
-  extension [Self <: LexV2ListSlotValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexV2ListSlotValue] (val x: Self) extends AnyVal {
     
     inline def setShape(value: typings.awsLambda.awsLambdaStrings.List): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     

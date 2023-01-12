@@ -27,7 +27,8 @@ object distTypesMod {
       __obj.asInstanceOf[ErrorWithRange]
     }
     
-    extension [Self <: ErrorWithRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorWithRange] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object distTypesMod {
       __obj.asInstanceOf[RawSourceMap]
     }
     
-    extension [Self <: RawSourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawSourceMap] (val x: Self) extends AnyVal {
       
       inline def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object distTypesMod {
       __obj.asInstanceOf[StartOfSourceMap]
     }
     
-    extension [Self <: StartOfSourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartOfSourceMap] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -133,7 +136,8 @@ object distTypesMod {
       __obj.asInstanceOf[VueTemplateCompilerOptions]
     }
     
-    extension [Self <: VueTemplateCompilerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTemplateCompilerOptions] (val x: Self) extends AnyVal {
       
       inline def setDirectives(value: StringDictionary[js.Function]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
       
@@ -166,7 +170,8 @@ object distTypesMod {
       __obj.asInstanceOf[VueTemplateCompilerParseOptions]
     }
     
-    extension [Self <: VueTemplateCompilerParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTemplateCompilerParseOptions] (val x: Self) extends AnyVal {
       
       inline def setPad(value: line | space): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
       
@@ -198,7 +203,8 @@ object distTypesMod {
       __obj.asInstanceOf[VueTemplateCompilerResults]
     }
     
-    extension [Self <: VueTemplateCompilerResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTemplateCompilerResults] (val x: Self) extends AnyVal {
       
       inline def setAst(value: js.Object): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       

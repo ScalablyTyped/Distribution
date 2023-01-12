@@ -62,7 +62,8 @@ object IDirective {
     __obj.asInstanceOf[IDirective[TScope, TElement, TAttributes, TController]]
   }
   
-  extension [Self <: IDirective[?, ?, ?, ?], TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */](x: Self & (IDirective[TScope, TElement, TAttributes, TController])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDirective[?, ?, ?, ?], TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] (val x: Self & (IDirective[TScope, TElement, TAttributes, TController])) extends AnyVal {
     
     inline def setBindToController(value: Boolean | StringDictionary[String]): Self = StObject.set(x, "bindToController", value.asInstanceOf[js.Any])
     

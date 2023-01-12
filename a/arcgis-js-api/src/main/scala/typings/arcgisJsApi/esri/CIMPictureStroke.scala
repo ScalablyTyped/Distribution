@@ -100,7 +100,8 @@ object CIMPictureStroke {
     __obj.asInstanceOf[CIMPictureStroke]
   }
   
-  extension [Self <: CIMPictureStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMPictureStroke] (val x: Self) extends AnyVal {
     
     inline def setCapStyle(value: Butt | Round | Square): Self = StObject.set(x, "capStyle", value.asInstanceOf[js.Any])
     

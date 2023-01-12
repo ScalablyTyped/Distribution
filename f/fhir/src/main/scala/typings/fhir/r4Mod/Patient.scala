@@ -131,7 +131,8 @@ object Patient {
     __obj.asInstanceOf[Patient]
   }
   
-  extension [Self <: Patient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Patient] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

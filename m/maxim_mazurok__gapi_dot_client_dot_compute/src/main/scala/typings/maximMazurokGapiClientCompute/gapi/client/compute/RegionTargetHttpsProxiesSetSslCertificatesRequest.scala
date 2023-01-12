@@ -16,7 +16,8 @@ object RegionTargetHttpsProxiesSetSslCertificatesRequest {
     __obj.asInstanceOf[RegionTargetHttpsProxiesSetSslCertificatesRequest]
   }
   
-  extension [Self <: RegionTargetHttpsProxiesSetSslCertificatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionTargetHttpsProxiesSetSslCertificatesRequest] (val x: Self) extends AnyVal {
     
     inline def setSslCertificates(value: js.Array[String]): Self = StObject.set(x, "sslCertificates", value.asInstanceOf[js.Any])
     

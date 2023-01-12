@@ -23,7 +23,8 @@ object InitiateDocumentVersionUploadResponse {
     __obj.asInstanceOf[InitiateDocumentVersionUploadResponse]
   }
   
-  extension [Self <: InitiateDocumentVersionUploadResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitiateDocumentVersionUploadResponse] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: DocumentMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     

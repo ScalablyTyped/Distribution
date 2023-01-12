@@ -63,7 +63,8 @@ object libComponentsAutofillAutofillDottypesMod {
       __obj.asInstanceOf[IAutofill]
     }
     
-    extension [Self <: IAutofill](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAutofill] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -172,7 +173,8 @@ object libComponentsAutofillAutofillDottypesMod {
       __obj.asInstanceOf[IAutofillProps]
     }
     
-    extension [Self <: IAutofillProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAutofillProps] (val x: Self) extends AnyVal {
       
       inline def setComponentRef(value: IRefObject[IAutofill]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       

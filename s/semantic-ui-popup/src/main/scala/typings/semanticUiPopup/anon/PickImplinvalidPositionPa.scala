@@ -27,7 +27,8 @@ object PickImplinvalidPositionPa {
     __obj.asInstanceOf[PickImplinvalidPositionPa]
   }
   
-  extension [Self <: PickImplinvalidPositionPa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplinvalidPositionPa] (val x: Self) extends AnyVal {
     
     inline def setCannotPlace(value: String): Self = StObject.set(x, "cannotPlace", value.asInstanceOf[js.Any])
     

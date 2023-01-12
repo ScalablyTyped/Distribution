@@ -26,7 +26,8 @@ object WriteResult {
     __obj.asInstanceOf[WriteResult]
   }
   
-  extension [Self <: WriteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteResult] (val x: Self) extends AnyVal {
     
     inline def setIsEqual(value: WriteResult => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     

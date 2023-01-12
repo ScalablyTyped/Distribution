@@ -100,7 +100,8 @@ object CalendarTheme {
     __obj.asInstanceOf[CalendarTheme]
   }
   
-  extension [Self <: CalendarTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarTheme] (val x: Self) extends AnyVal {
     
     inline def setArrowColor(value: String): Self = StObject.set(x, "arrowColor", value.asInstanceOf[js.Any])
     

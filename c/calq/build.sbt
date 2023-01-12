@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "calq"
-version := "0.0-unknown-dt-20221103Z-9e4499"
+version := "0.0-unknown-dt-20221103Z-c70881"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

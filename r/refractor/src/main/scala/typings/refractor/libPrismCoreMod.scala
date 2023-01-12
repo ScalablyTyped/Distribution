@@ -124,7 +124,8 @@ object libPrismCoreMod {
       __obj.asInstanceOf[GrammarToken]
     }
     
-    extension [Self <: GrammarToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrammarToken] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object libPrismCoreMod {
       __obj.asInstanceOf[LinkedListNode[T]]
     }
     
-    extension [Self <: LinkedListNode[?], T](x: Self & LinkedListNode[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkedListNode[?], T] (val x: Self & LinkedListNode[T]) extends AnyVal {
       
       inline def setNext(value: LinkedListNode[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object libPrismCoreMod {
       __obj.asInstanceOf[RematchOptions]
     }
     
-    extension [Self <: RematchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RematchOptions] (val x: Self) extends AnyVal {
       
       inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
@@ -250,7 +253,8 @@ object libPrismCoreMod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object ActiveDirectoryBackupAttributes {
     __obj.asInstanceOf[ActiveDirectoryBackupAttributes]
   }
   
-  extension [Self <: ActiveDirectoryBackupAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveDirectoryBackupAttributes] (val x: Self) extends AnyVal {
     
     inline def setActiveDirectoryId(value: DirectoryId): Self = StObject.set(x, "ActiveDirectoryId", value.asInstanceOf[js.Any])
     

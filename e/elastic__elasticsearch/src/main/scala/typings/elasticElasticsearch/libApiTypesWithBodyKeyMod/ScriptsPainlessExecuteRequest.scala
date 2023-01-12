@@ -19,7 +19,8 @@ object ScriptsPainlessExecuteRequest {
     __obj.asInstanceOf[ScriptsPainlessExecuteRequest]
   }
   
-  extension [Self <: ScriptsPainlessExecuteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptsPainlessExecuteRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Context): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

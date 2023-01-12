@@ -104,7 +104,8 @@ object ngccSrcHostUmdHostMod {
       __obj.asInstanceOf[UmdModule]
     }
     
-    extension [Self <: UmdModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UmdModule] (val x: Self) extends AnyVal {
       
       inline def setFactoryCalls(value: RecordamdDefinecommonJsco): Self = StObject.set(x, "factoryCalls", value.asInstanceOf[js.Any])
       

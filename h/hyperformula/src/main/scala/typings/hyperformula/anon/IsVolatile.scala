@@ -27,7 +27,8 @@ object IsVolatile {
     __obj.asInstanceOf[IsVolatile]
   }
   
-  extension [Self <: IsVolatile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsVolatile] (val x: Self) extends AnyVal {
     
     inline def setIsVolatile(value: Boolean): Self = StObject.set(x, "isVolatile", value.asInstanceOf[js.Any])
     

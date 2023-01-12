@@ -33,7 +33,8 @@ object NativeInvocationListenerCallbacks {
     __obj.asInstanceOf[NativeInvocationListenerCallbacks]
   }
   
-  extension [Self <: NativeInvocationListenerCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeInvocationListenerCallbacks] (val x: Self) extends AnyVal {
     
     inline def setOnEnter(value: NativePointer): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
     

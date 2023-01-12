@@ -16,7 +16,8 @@ object NullEvent {
     __obj.asInstanceOf[NullEvent]
   }
   
-  extension [Self <: NullEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.xstate.libTypesMod.ActionTypes.NullEvent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

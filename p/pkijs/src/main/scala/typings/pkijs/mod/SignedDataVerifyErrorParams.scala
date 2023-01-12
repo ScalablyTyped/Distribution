@@ -29,7 +29,8 @@ object SignedDataVerifyErrorParams {
     __obj.asInstanceOf[SignedDataVerifyErrorParams]
   }
   
-  extension [Self <: SignedDataVerifyErrorParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedDataVerifyErrorParams] (val x: Self) extends AnyVal {
     
     inline def setCertificatePath(value: js.Array[Certificate]): Self = StObject.set(x, "certificatePath", value.asInstanceOf[js.Any])
     

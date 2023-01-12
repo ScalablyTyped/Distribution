@@ -19,7 +19,8 @@ object JSONBaseAttributes {
     __obj.asInstanceOf[JSONBaseAttributes]
   }
   
-  extension [Self <: JSONBaseAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONBaseAttributes] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

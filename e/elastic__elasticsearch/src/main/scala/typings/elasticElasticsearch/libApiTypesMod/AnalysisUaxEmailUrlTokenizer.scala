@@ -22,7 +22,8 @@ object AnalysisUaxEmailUrlTokenizer {
     __obj.asInstanceOf[AnalysisUaxEmailUrlTokenizer]
   }
   
-  extension [Self <: AnalysisUaxEmailUrlTokenizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisUaxEmailUrlTokenizer] (val x: Self) extends AnyVal {
     
     inline def setMax_token_length(value: integer): Self = StObject.set(x, "max_token_length", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object EvaluationContext {
     __obj.asInstanceOf[EvaluationContext]
   }
   
-  extension [Self <: EvaluationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluationContext] (val x: Self) extends AnyVal {
     
     inline def setAvailableImages(value: js.Array[String]): Self = StObject.set(x, "availableImages", value.asInstanceOf[js.Any])
     

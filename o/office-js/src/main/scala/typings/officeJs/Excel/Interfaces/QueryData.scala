@@ -78,7 +78,8 @@ object QueryData {
     __obj.asInstanceOf[QueryData]
   }
   
-  extension [Self <: QueryData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryData] (val x: Self) extends AnyVal {
     
     inline def setError(
       value: QueryError | Unknown_ | None | FailedLoadToWorksheet | FailedLoadToDataModel | FailedDownload | FailedToCompleteDownload

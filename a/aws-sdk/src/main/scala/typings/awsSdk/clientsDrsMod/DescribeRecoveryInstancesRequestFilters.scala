@@ -23,7 +23,8 @@ object DescribeRecoveryInstancesRequestFilters {
     __obj.asInstanceOf[DescribeRecoveryInstancesRequestFilters]
   }
   
-  extension [Self <: DescribeRecoveryInstancesRequestFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRecoveryInstancesRequestFilters] (val x: Self) extends AnyVal {
     
     inline def setRecoveryInstanceIDs(value: RecoveryInstanceIDs): Self = StObject.set(x, "recoveryInstanceIDs", value.asInstanceOf[js.Any])
     

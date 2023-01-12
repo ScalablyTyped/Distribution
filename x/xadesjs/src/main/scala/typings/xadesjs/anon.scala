@@ -322,7 +322,8 @@ object anon {
       __obj.asInstanceOf[AllDataObjectsTimeStamp]
     }
     
-    extension [Self <: AllDataObjectsTimeStamp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllDataObjectsTimeStamp] (val x: Self) extends AnyVal {
       
       inline def setAllDataObjectsTimeStamp(value: String): Self = StObject.set(x, "AllDataObjectsTimeStamp", value.asInstanceOf[js.Any])
       
@@ -564,7 +565,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
       

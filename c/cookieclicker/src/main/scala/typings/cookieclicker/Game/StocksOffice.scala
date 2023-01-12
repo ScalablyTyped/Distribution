@@ -28,7 +28,8 @@ object StocksOffice {
     __obj.asInstanceOf[StocksOffice]
   }
   
-  extension [Self <: StocksOffice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StocksOffice] (val x: Self) extends AnyVal {
     
     inline def setCost(value: (js.Tuple2[Double, Double]) | PseudoNull): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     

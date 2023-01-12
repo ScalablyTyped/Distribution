@@ -25,7 +25,8 @@ object AuthenticatorSelectionCriteria {
     __obj.asInstanceOf[AuthenticatorSelectionCriteria]
   }
   
-  extension [Self <: AuthenticatorSelectionCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticatorSelectionCriteria] (val x: Self) extends AnyVal {
     
     inline def setAuthenticatorAttachment(value: AuthenticatorAttachment): Self = StObject.set(x, "authenticatorAttachment", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object XStorageBasedDocument {
     __obj.asInstanceOf[XStorageBasedDocument]
   }
   
-  extension [Self <: XStorageBasedDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStorageBasedDocument] (val x: Self) extends AnyVal {
     
     inline def setAddStorageChangeListener(value: XStorageChangeListener => Unit): Self = StObject.set(x, "addStorageChangeListener", js.Any.fromFunction1(value))
     

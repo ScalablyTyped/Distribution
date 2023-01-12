@@ -115,7 +115,8 @@ object mod {
       __obj.asInstanceOf[ED25519Algorithm]
     }
     
-    extension [Self <: ED25519Algorithm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ED25519Algorithm] (val x: Self) extends AnyVal {
       
       inline def setId(value: ed25519): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -155,7 +156,8 @@ object mod {
       __obj.asInstanceOf[FullKeyPair]
     }
     
-    extension [Self <: FullKeyPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullKeyPair] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -210,7 +212,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setEncryptionAlgorithm(value: js.Object): Self = StObject.set(x, "encryptionAlgorithm", value.asInstanceOf[js.Any])
       
@@ -256,7 +259,8 @@ object mod {
       __obj.asInstanceOf[RSAAlgorithm]
     }
     
-    extension [Self <: RSAAlgorithm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RSAAlgorithm] (val x: Self) extends AnyVal {
       
       inline def setId(value: rsa): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -288,7 +292,8 @@ object mod {
       __obj.asInstanceOf[SimpleKeyPair]
     }
     
-    extension [Self <: SimpleKeyPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleKeyPair] (val x: Self) extends AnyVal {
       
       inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       

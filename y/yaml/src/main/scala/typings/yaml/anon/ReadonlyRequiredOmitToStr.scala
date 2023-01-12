@@ -65,7 +65,8 @@ object ReadonlyRequiredOmitToStr {
     __obj.asInstanceOf[ReadonlyRequiredOmitToStr]
   }
   
-  extension [Self <: ReadonlyRequiredOmitToStr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyRequiredOmitToStr] (val x: Self) extends AnyVal {
     
     inline def setBlockQuote(value: Boolean | folded | literal): Self = StObject.set(x, "blockQuote", value.asInstanceOf[js.Any])
     

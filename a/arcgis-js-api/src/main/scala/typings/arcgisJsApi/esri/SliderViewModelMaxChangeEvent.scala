@@ -21,7 +21,8 @@ object SliderViewModelMaxChangeEvent {
     __obj.asInstanceOf[SliderViewModelMaxChangeEvent]
   }
   
-  extension [Self <: SliderViewModelMaxChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderViewModelMaxChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     

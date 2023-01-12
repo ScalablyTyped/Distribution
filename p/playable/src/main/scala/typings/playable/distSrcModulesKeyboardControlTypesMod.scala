@@ -20,7 +20,8 @@ object distSrcModulesKeyboardControlTypesMod {
       __obj.asInstanceOf[IKeyboardControl]
     }
     
-    extension [Self <: IKeyboardControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeyboardControl] (val x: Self) extends AnyVal {
       
       inline def setAddKeyControl(value: (Double, EventListener) => Unit): Self = StObject.set(x, "addKeyControl", js.Any.fromFunction2(value))
       

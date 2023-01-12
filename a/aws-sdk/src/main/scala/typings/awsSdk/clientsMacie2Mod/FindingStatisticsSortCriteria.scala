@@ -23,7 +23,8 @@ object FindingStatisticsSortCriteria {
     __obj.asInstanceOf[FindingStatisticsSortCriteria]
   }
   
-  extension [Self <: FindingStatisticsSortCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindingStatisticsSortCriteria] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: FindingStatisticsSortAttributeName): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     

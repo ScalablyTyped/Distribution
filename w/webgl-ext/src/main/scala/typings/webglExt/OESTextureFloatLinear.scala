@@ -15,7 +15,8 @@ object OESTextureFloatLinear {
     __obj.asInstanceOf[OESTextureFloatLinear]
   }
   
-  extension [Self <: OESTextureFloatLinear](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OESTextureFloatLinear] (val x: Self) extends AnyVal {
     
     inline def set__OES_texture_float_linear(value: Unit): Self = StObject.set(x, "__OES_texture_float_linear", value.asInstanceOf[js.Any])
   }

@@ -31,7 +31,8 @@ object ArrayBounds {
     __obj.asInstanceOf[ArrayBounds]
   }
   
-  extension [Self <: ArrayBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayBounds] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: js.Array[LngLat]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

@@ -1324,7 +1324,8 @@ object mod {
       __obj.asInstanceOf[AppiumCommandsAsync]
     }
     
-    extension [Self <: AppiumCommandsAsync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppiumCommandsAsync] (val x: Self) extends AnyVal {
       
       inline def setActivateApp(
         value: /* args */ Parameters[js.Function1[/* appId */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* appId */ String, Unit]]]
@@ -2082,7 +2083,8 @@ object mod {
       __obj.asInstanceOf[ChromiumCommandsAsync]
     }
     
-    extension [Self <: ChromiumCommandsAsync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChromiumCommandsAsync] (val x: Self) extends AnyVal {
       
       inline def setDeleteNetworkConditions(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "deleteNetworkConditions", js.Any.fromFunction1(value))
       
@@ -2257,7 +2259,8 @@ object mod {
       __obj.asInstanceOf[GeckoCommandsAsync]
     }
     
-    extension [Self <: GeckoCommandsAsync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeckoCommandsAsync] (val x: Self) extends AnyVal {
       
       inline def setFullPageScreenshot(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "fullPageScreenshot", js.Any.fromFunction1(value))
       
@@ -3611,7 +3614,8 @@ object mod {
       __obj.asInstanceOf[JSONWPCommandsAsync]
     }
     
-    extension [Self <: JSONWPCommandsAsync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONWPCommandsAsync] (val x: Self) extends AnyVal {
       
       inline def setAcceptAlert(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "acceptAlert", js.Any.fromFunction1(value))
       
@@ -4186,7 +4190,8 @@ object mod {
       __obj.asInstanceOf[MJSONWPCommandsAsync]
     }
     
-    extension [Self <: MJSONWPCommandsAsync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MJSONWPCommandsAsync] (val x: Self) extends AnyVal {
       
       inline def setGetContext(
         value: /* args */ Parameters[js.Function0[Context]] => js.Promise[ReturnType[js.Function0[Context]]]
@@ -9717,7 +9722,8 @@ object mod {
   }
   object ProtocolCommandsAsync {
     
-    extension [Self <: ProtocolCommandsAsync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtocolCommandsAsync] (val x: Self) extends AnyVal {
       
       inline def setAcceptAlert(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "acceptAlert", js.Any.fromFunction1(value))
       
@@ -11266,7 +11272,8 @@ object mod {
       __obj.asInstanceOf[SauceLabsCommandsAsync]
     }
     
-    extension [Self <: SauceLabsCommandsAsync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SauceLabsCommandsAsync] (val x: Self) extends AnyVal {
       
       inline def setAssertPerformance(
         value: /* args */ Parameters[
@@ -11403,7 +11410,8 @@ object mod {
       __obj.asInstanceOf[SeleniumCommandsAsync]
     }
     
-    extension [Self <: SeleniumCommandsAsync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeleniumCommandsAsync] (val x: Self) extends AnyVal {
       
       inline def setFile(
         value: /* args */ Parameters[js.Function1[/* file */ String, String]] => js.Promise[ReturnType[js.Function1[/* file */ String, String]]]
@@ -12924,7 +12932,8 @@ object mod {
       __obj.asInstanceOf[WebDriverCommandsAsync]
     }
     
-    extension [Self <: WebDriverCommandsAsync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebDriverCommandsAsync] (val x: Self) extends AnyVal {
       
       inline def setAcceptAlert(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "acceptAlert", js.Any.fromFunction1(value))
       

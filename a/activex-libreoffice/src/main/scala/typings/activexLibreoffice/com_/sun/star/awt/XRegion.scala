@@ -79,7 +79,8 @@ object XRegion {
     __obj.asInstanceOf[XRegion]
   }
   
-  extension [Self <: XRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRegion] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: Rectangle): Self = StObject.set(x, "Bounds", value.asInstanceOf[js.Any])
     

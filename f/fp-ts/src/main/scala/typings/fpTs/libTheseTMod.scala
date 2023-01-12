@@ -1253,7 +1253,8 @@ object libTheseTMod {
       __obj.asInstanceOf[TheseM[M]]
     }
     
-    extension [Self <: TheseM[?], M](x: Self & TheseM[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TheseM[?], M] (val x: Self & TheseM[M]) extends AnyVal {
       
       inline def setBimap(
         value: (TheseT[M, Any, Any], js.Function1[Any, Any], js.Function1[Any, Any]) => TheseT[M, Any, Any]
@@ -1374,7 +1375,8 @@ object libTheseTMod {
       __obj.asInstanceOf[TheseM1[M]]
     }
     
-    extension [Self <: TheseM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & TheseM1[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TheseM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & TheseM1[M]) extends AnyVal {
       
       inline def setBimap(
         value: (TheseT1[M, Any, Any], js.Function1[Any, Any], js.Function1[Any, Any]) => TheseT1[M, Any, Any]
@@ -1495,7 +1497,8 @@ object libTheseTMod {
       __obj.asInstanceOf[TheseM2[M]]
     }
     
-    extension [Self <: TheseM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & TheseM2[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TheseM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & TheseM2[M]) extends AnyVal {
       
       inline def setBimap(
         value: (TheseT2[M, Any, Any, Any], js.Function1[Any, Any], js.Function1[Any, Any]) => TheseT2[M, Any, Any, Any]

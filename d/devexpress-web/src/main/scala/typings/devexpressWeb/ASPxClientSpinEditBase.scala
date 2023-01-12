@@ -74,7 +74,8 @@ object ASPxClientSpinEditBase {
     __obj.asInstanceOf[ASPxClientSpinEditBase]
   }
   
-  extension [Self <: ASPxClientSpinEditBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSpinEditBase] (val x: Self) extends AnyVal {
     
     inline def setTextChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientSpinEditBase]]): Self = StObject.set(x, "TextChanged", value.asInstanceOf[js.Any])
   }

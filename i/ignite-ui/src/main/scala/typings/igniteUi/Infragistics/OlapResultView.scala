@@ -43,7 +43,8 @@ object OlapResultView {
     __obj.asInstanceOf[OlapResultView]
   }
   
-  extension [Self <: OlapResultView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlapResultView] (val x: Self) extends AnyVal {
     
     inline def setCollapseTupleMember(value: (js.Object, js.Object, js.Object) => js.Object): Self = StObject.set(x, "collapseTupleMember", js.Any.fromFunction3(value))
     

@@ -32,7 +32,8 @@ object VoiceCommandActivatedEventArgs {
     __obj.asInstanceOf[VoiceCommandActivatedEventArgs]
   }
   
-  extension [Self <: VoiceCommandActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceCommandActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

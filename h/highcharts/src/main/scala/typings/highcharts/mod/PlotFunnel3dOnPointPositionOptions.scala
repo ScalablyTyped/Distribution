@@ -39,7 +39,8 @@ object PlotFunnel3dOnPointPositionOptions {
     __obj.asInstanceOf[PlotFunnel3dOnPointPositionOptions]
   }
   
-  extension [Self <: PlotFunnel3dOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotFunnel3dOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

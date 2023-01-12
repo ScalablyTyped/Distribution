@@ -49,7 +49,8 @@ object gapi {
           __obj.asInstanceOf[Tokeninfo]
         }
         
-        extension [Self <: Tokeninfo](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Tokeninfo] (val x: Self) extends AnyVal {
           
           inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
           
@@ -123,7 +124,8 @@ object gapi {
           __obj.asInstanceOf[Userinfo]
         }
         
-        extension [Self <: Userinfo](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Userinfo] (val x: Self) extends AnyVal {
           
           inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
           
@@ -191,7 +193,8 @@ object gapi {
           __obj.asInstanceOf[V2Resource]
         }
         
-        extension [Self <: V2Resource](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: V2Resource] (val x: Self) extends AnyVal {
           
           inline def setMe(value: MeResource): Self = StObject.set(x, "me", value.asInstanceOf[js.Any])
         }

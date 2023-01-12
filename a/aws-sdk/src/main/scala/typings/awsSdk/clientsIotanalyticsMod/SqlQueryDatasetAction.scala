@@ -23,7 +23,8 @@ object SqlQueryDatasetAction {
     __obj.asInstanceOf[SqlQueryDatasetAction]
   }
   
-  extension [Self <: SqlQueryDatasetAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlQueryDatasetAction] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: QueryFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

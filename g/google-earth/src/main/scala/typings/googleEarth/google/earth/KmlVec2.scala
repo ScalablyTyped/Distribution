@@ -92,7 +92,8 @@ object KmlVec2 {
     __obj.asInstanceOf[KmlVec2]
   }
   
-  extension [Self <: KmlVec2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlVec2] (val x: Self) extends AnyVal {
     
     inline def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
     

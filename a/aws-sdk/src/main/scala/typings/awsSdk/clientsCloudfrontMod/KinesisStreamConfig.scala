@@ -23,7 +23,8 @@ object KinesisStreamConfig {
     __obj.asInstanceOf[KinesisStreamConfig]
   }
   
-  extension [Self <: KinesisStreamConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisStreamConfig] (val x: Self) extends AnyVal {
     
     inline def setRoleARN(value: String): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     

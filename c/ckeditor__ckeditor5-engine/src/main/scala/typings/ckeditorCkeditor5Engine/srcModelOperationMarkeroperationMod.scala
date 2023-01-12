@@ -189,7 +189,8 @@ object srcModelOperationMarkeroperationMod {
       __obj.asInstanceOf[MarkerOperation]
     }
     
-    extension [Self <: MarkerOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerOperation] (val x: Self) extends AnyVal {
       
       inline def setAffectsData(value: Boolean): Self = StObject.set(x, "affectsData", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object RegisterStreamConsumerOutput {
     __obj.asInstanceOf[RegisterStreamConsumerOutput]
   }
   
-  extension [Self <: RegisterStreamConsumerOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterStreamConsumerOutput] (val x: Self) extends AnyVal {
     
     inline def setConsumer(value: Consumer): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
   }

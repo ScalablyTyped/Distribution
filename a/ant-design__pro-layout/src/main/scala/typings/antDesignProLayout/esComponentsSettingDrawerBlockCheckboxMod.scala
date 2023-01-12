@@ -33,7 +33,8 @@ object esComponentsSettingDrawerBlockCheckboxMod {
       __obj.asInstanceOf[BlockCheckboxProps]
     }
     
-    extension [Self <: BlockCheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockCheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setConfigType(value: String): Self = StObject.set(x, "configType", value.asInstanceOf[js.Any])
       

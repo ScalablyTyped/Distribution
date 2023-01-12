@@ -22,7 +22,8 @@ object distTs3Dot9ModulesSettingsMod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setLastTrackedStoryId(value: String): Self = StObject.set(x, "lastTrackedStoryId", value.asInstanceOf[js.Any])
     }
@@ -50,7 +51,8 @@ object distTs3Dot9ModulesSettingsMod {
       __obj.asInstanceOf[SubAPI]
     }
     
-    extension [Self <: SubAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubAPI] (val x: Self) extends AnyVal {
       
       inline def setChangeSettingsTab(value: String => Unit): Self = StObject.set(x, "changeSettingsTab", js.Any.fromFunction1(value))
       
@@ -73,7 +75,8 @@ object distTs3Dot9ModulesSettingsMod {
       __obj.asInstanceOf[SubState]
     }
     
-    extension [Self <: SubState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
       
       inline def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }

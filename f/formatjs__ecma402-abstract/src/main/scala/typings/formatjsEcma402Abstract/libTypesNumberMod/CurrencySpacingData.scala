@@ -17,7 +17,8 @@ object CurrencySpacingData {
     __obj.asInstanceOf[CurrencySpacingData]
   }
   
-  extension [Self <: CurrencySpacingData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrencySpacingData] (val x: Self) extends AnyVal {
     
     inline def setAfterInsertBetween(value: String): Self = StObject.set(x, "afterInsertBetween", value.asInstanceOf[js.Any])
     

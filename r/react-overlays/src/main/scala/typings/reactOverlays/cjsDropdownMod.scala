@@ -314,7 +314,8 @@ object cjsDropdownMod {
       __obj.asInstanceOf[DropdownInjectedProps]
     }
     
-    extension [Self <: DropdownInjectedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownInjectedProps] (val x: Self) extends AnyVal {
       
       inline def setOnKeyDown(value: KeyboardEvent[typings.std.Element] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     }

@@ -201,7 +201,8 @@ object anon {
       __obj.asInstanceOf[SecureContextOptionsrejec]
     }
     
-    extension [Self <: SecureContextOptionsrejec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SecureContextOptionsrejec] (val x: Self) extends AnyVal {
       
       inline def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
@@ -314,7 +315,8 @@ object anon {
       __obj.asInstanceOf[ToSqlString]
     }
     
-    extension [Self <: ToSqlString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToSqlString] (val x: Self) extends AnyVal {
       
       inline def setToSqlString(value: () => String): Self = StObject.set(x, "toSqlString", js.Any.fromFunction0(value))
     }
@@ -382,7 +384,8 @@ object anon {
       __obj.asInstanceOf[UntypedFieldInfotypestrin]
     }
     
-    extension [Self <: UntypedFieldInfotypestrin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UntypedFieldInfotypestrin] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: () => Null | Buffer): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
       
@@ -435,7 +438,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

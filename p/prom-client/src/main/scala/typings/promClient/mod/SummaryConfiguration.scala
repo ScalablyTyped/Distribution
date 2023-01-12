@@ -26,7 +26,8 @@ object SummaryConfiguration {
     __obj.asInstanceOf[SummaryConfiguration[T]]
   }
   
-  extension [Self <: SummaryConfiguration[?], T /* <: String */](x: Self & SummaryConfiguration[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SummaryConfiguration[?], T /* <: String */] (val x: Self & SummaryConfiguration[T]) extends AnyVal {
     
     inline def setAgeBuckets(value: Double): Self = StObject.set(x, "ageBuckets", value.asInstanceOf[js.Any])
     

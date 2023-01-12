@@ -82,7 +82,8 @@ object schedulerConfig {
     __obj.asInstanceOf[schedulerConfig]
   }
   
-  extension [Self <: schedulerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: schedulerConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

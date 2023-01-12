@@ -48,7 +48,8 @@ object TextArea {
     __obj.asInstanceOf[TextArea]
   }
   
-  extension [Self <: TextArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextArea] (val x: Self) extends AnyVal {
     
     inline def setSetAllowOverride(value: Boolean => TextArea): Self = StObject.set(x, "setAllowOverride", js.Any.fromFunction1(value))
     

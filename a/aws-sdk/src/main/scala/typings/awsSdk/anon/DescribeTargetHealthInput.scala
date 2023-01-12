@@ -31,7 +31,8 @@ object DescribeTargetHealthInput {
     __obj.asInstanceOf[DescribeTargetHealthInput]
   }
   
-  extension [Self <: DescribeTargetHealthInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTargetHealthInput] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

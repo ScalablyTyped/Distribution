@@ -21,7 +21,8 @@ object IDBOpenDBRequestEventMap {
     __obj.asInstanceOf[IDBOpenDBRequestEventMap]
   }
   
-  extension [Self <: IDBOpenDBRequestEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDBOpenDBRequestEventMap] (val x: Self) extends AnyVal {
     
     inline def setBlocked(value: IDBVersionChangeEvent): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     

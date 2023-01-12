@@ -15,7 +15,8 @@ object ToState {
     __obj.asInstanceOf[ToState[State]]
   }
   
-  extension [Self <: ToState[?], State /* <: js.Object */](x: Self & ToState[State]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToState[?], State /* <: js.Object */] (val x: Self & ToState[State]) extends AnyVal {
     
     inline def setTo(value: State): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }

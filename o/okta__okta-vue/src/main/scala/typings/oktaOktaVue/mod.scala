@@ -58,7 +58,8 @@ object mod {
         __obj.asInstanceOf[ComponentCustomProperties]
       }
       
-      extension [Self <: ComponentCustomProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ComponentCustomProperties] (val x: Self) extends AnyVal {
         
         inline def set$_oktaVue_handleAuthStateUpdate(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AuthState */ Any => Unit

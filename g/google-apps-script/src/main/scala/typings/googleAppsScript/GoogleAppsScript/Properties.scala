@@ -66,7 +66,8 @@ object Properties {
       __obj.asInstanceOf[PropertiesService]
     }
     
-    extension [Self <: PropertiesService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertiesService] (val x: Self) extends AnyVal {
       
       inline def setGetDocumentProperties(value: () => typings.googleAppsScript.GoogleAppsScript.Properties.Properties): Self = StObject.set(x, "getDocumentProperties", js.Any.fromFunction0(value))
       

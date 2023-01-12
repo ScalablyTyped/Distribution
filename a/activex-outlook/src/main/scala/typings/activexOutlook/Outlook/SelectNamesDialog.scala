@@ -67,7 +67,8 @@ object SelectNamesDialog {
     __obj.asInstanceOf[SelectNamesDialog]
   }
   
-  extension [Self <: SelectNamesDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectNamesDialog] (val x: Self) extends AnyVal {
     
     inline def setAllowMultipleSelection(value: Boolean): Self = StObject.set(x, "AllowMultipleSelection", value.asInstanceOf[js.Any])
     

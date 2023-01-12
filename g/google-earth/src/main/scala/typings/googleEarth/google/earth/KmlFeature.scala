@@ -232,7 +232,8 @@ object KmlFeature {
     __obj.asInstanceOf[KmlFeature]
   }
   
-  extension [Self <: KmlFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlFeature] (val x: Self) extends AnyVal {
     
     inline def setGetAbstractView(value: () => KmlAbstractView): Self = StObject.set(x, "getAbstractView", js.Any.fromFunction0(value))
     

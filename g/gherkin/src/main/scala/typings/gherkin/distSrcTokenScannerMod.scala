@@ -38,7 +38,8 @@ object distSrcTokenScannerMod {
       __obj.asInstanceOf[TokenScanner]
     }
     
-    extension [Self <: TokenScanner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenScanner] (val x: Self) extends AnyVal {
       
       inline def setLineNumber(value: Any): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       

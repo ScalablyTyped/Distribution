@@ -18,7 +18,8 @@ object StartMetricStreamsInput {
     __obj.asInstanceOf[StartMetricStreamsInput]
   }
   
-  extension [Self <: StartMetricStreamsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartMetricStreamsInput] (val x: Self) extends AnyVal {
     
     inline def setNames(value: MetricStreamNames): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     

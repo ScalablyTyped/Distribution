@@ -21,7 +21,8 @@ object HereNowResponse {
     __obj.asInstanceOf[HereNowResponse]
   }
   
-  extension [Self <: HereNowResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HereNowResponse] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: StringDictionary[Name]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

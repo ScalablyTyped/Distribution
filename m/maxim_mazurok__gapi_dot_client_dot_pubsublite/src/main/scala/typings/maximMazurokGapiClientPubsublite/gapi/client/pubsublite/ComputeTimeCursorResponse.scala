@@ -19,7 +19,8 @@ object ComputeTimeCursorResponse {
     __obj.asInstanceOf[ComputeTimeCursorResponse]
   }
   
-  extension [Self <: ComputeTimeCursorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputeTimeCursorResponse] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

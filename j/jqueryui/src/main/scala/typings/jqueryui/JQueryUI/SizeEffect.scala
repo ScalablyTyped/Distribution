@@ -19,7 +19,8 @@ object SizeEffect {
     __obj.asInstanceOf[SizeEffect]
   }
   
-  extension [Self <: SizeEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeEffect] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: js.Array[String]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

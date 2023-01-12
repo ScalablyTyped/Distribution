@@ -29,7 +29,8 @@ object KeepSourceDeleteTarget {
     __obj.asInstanceOf[KeepSourceDeleteTarget]
   }
   
-  extension [Self <: KeepSourceDeleteTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeepSourceDeleteTarget] (val x: Self) extends AnyVal {
     
     inline def setKeepSourceDeleteTarget(value: scala.Double): Self = StObject.set(x, "keepSourceDeleteTarget", value.asInstanceOf[js.Any])
     

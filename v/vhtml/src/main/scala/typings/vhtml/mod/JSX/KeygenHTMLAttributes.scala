@@ -29,7 +29,8 @@ object KeygenHTMLAttributes {
     __obj.asInstanceOf[KeygenHTMLAttributes]
   }
   
-  extension [Self <: KeygenHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeygenHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
     

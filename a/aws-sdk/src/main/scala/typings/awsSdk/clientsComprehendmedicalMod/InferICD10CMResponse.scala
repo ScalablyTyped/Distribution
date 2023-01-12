@@ -28,7 +28,8 @@ object InferICD10CMResponse {
     __obj.asInstanceOf[InferICD10CMResponse]
   }
   
-  extension [Self <: InferICD10CMResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferICD10CMResponse] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: ICD10CMEntityList): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     

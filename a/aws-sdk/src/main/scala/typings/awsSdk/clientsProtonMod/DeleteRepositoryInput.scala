@@ -23,7 +23,8 @@ object DeleteRepositoryInput {
     __obj.asInstanceOf[DeleteRepositoryInput]
   }
   
-  extension [Self <: DeleteRepositoryInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRepositoryInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: RepositoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

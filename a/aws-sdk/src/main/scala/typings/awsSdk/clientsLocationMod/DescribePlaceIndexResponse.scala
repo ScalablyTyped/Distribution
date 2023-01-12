@@ -66,7 +66,8 @@ object DescribePlaceIndexResponse {
     __obj.asInstanceOf[DescribePlaceIndexResponse]
   }
   
-  extension [Self <: DescribePlaceIndexResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePlaceIndexResponse] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     

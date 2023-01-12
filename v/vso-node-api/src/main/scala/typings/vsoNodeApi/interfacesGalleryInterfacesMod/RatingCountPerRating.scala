@@ -23,7 +23,8 @@ object RatingCountPerRating {
     __obj.asInstanceOf[RatingCountPerRating]
   }
   
-  extension [Self <: RatingCountPerRating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RatingCountPerRating] (val x: Self) extends AnyVal {
     
     inline def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     

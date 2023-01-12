@@ -44,7 +44,8 @@ object distSrcMod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def setMessaging(value: Messaging): Self = StObject.set(x, "messaging", value.asInstanceOf[js.Any])
       }

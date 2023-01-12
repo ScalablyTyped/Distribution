@@ -18,7 +18,8 @@ object DeleteRealtimeEndpointInput {
     __obj.asInstanceOf[DeleteRealtimeEndpointInput]
   }
   
-  extension [Self <: DeleteRealtimeEndpointInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRealtimeEndpointInput] (val x: Self) extends AnyVal {
     
     inline def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
   }

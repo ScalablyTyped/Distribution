@@ -17,7 +17,8 @@ object ReturnTypeFramework {
     __obj.asInstanceOf[ReturnTypeFramework[ReturnType]]
   }
   
-  extension [Self <: ReturnTypeFramework[?], ReturnType](x: Self & ReturnTypeFramework[ReturnType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeFramework[?], ReturnType] (val x: Self & ReturnTypeFramework[ReturnType]) extends AnyVal {
     
     inline def setComponent(value: Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

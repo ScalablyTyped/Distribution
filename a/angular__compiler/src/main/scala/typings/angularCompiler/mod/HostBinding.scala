@@ -15,7 +15,8 @@ object HostBinding {
     __obj.asInstanceOf[HostBinding]
   }
   
-  extension [Self <: HostBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostBinding] (val x: Self) extends AnyVal {
     
     inline def setHostPropertyName(value: String): Self = StObject.set(x, "hostPropertyName", value.asInstanceOf[js.Any])
     

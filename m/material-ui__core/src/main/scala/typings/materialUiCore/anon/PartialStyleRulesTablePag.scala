@@ -57,7 +57,8 @@ object PartialStyleRulesTablePag {
     __obj.asInstanceOf[PartialStyleRulesTablePag]
   }
   
-  extension [Self <: PartialStyleRulesTablePag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesTablePag] (val x: Self) extends AnyVal {
     
     inline def setActions(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

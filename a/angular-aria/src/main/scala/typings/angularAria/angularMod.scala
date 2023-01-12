@@ -59,7 +59,8 @@ object angularMod {
         __obj.asInstanceOf[IAriaProvider]
       }
       
-      extension [Self <: IAriaProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IAriaProvider] (val x: Self) extends AnyVal {
         
         inline def setConfig(value: IAriaProviderOptions => Unit): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
       }
@@ -95,7 +96,8 @@ object angularMod {
         __obj.asInstanceOf[IAriaProviderOptions]
       }
       
-      extension [Self <: IAriaProviderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IAriaProviderOptions] (val x: Self) extends AnyVal {
         
         inline def setAriaChecked(value: Boolean): Self = StObject.set(x, "ariaChecked", value.asInstanceOf[js.Any])
         
@@ -153,7 +155,8 @@ object angularMod {
         __obj.asInstanceOf[IAriaService]
       }
       
-      extension [Self <: IAriaService](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IAriaService] (val x: Self) extends AnyVal {
         
         inline def setConfig(value: IAriaAttribute => Boolean): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
       }

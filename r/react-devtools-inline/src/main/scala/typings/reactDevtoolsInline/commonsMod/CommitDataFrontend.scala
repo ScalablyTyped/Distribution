@@ -58,7 +58,8 @@ object CommitDataFrontend {
     __obj.asInstanceOf[CommitDataFrontend]
   }
   
-  extension [Self <: CommitDataFrontend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitDataFrontend] (val x: Self) extends AnyVal {
     
     inline def setChangeDescriptions(value: Map[Double, ChangeDescription]): Self = StObject.set(x, "changeDescriptions", value.asInstanceOf[js.Any])
     

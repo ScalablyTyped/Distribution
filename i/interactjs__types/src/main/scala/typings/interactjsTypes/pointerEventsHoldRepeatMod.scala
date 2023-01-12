@@ -31,7 +31,8 @@ object pointerEventsHoldRepeatMod extends Shortcut {
         __obj.asInstanceOf[Interaction]
       }
       
-      extension [Self <: Interaction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Interaction] (val x: Self) extends AnyVal {
         
         inline def setHoldIntervalHandle(value: Any): Self = StObject.set(x, "holdIntervalHandle", value.asInstanceOf[js.Any])
         
@@ -54,7 +55,8 @@ object pointerEventsHoldRepeatMod extends Shortcut {
         __obj.asInstanceOf[PointerEventOptions]
       }
       
-      extension [Self <: PointerEventOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PointerEventOptions] (val x: Self) extends AnyVal {
         
         inline def setHoldRepeatInterval(value: Double): Self = StObject.set(x, "holdRepeatInterval", value.asInstanceOf[js.Any])
         
@@ -77,7 +79,8 @@ object pointerEventsHoldRepeatMod extends Shortcut {
         __obj.asInstanceOf[PointerEvent[T]]
       }
       
-      extension [Self <: PointerEvent[?], T /* <: String */](x: Self & PointerEvent[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PointerEvent[?], T /* <: String */] (val x: Self & PointerEvent[T]) extends AnyVal {
         
         inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         

@@ -85,7 +85,8 @@ object FilePreviewParameters {
     __obj.asInstanceOf[FilePreviewParameters]
   }
   
-  extension [Self <: FilePreviewParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePreviewParameters] (val x: Self) extends AnyVal {
     
     inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     

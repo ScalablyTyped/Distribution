@@ -30,7 +30,8 @@ object XToolPanel {
     __obj.asInstanceOf[XToolPanel]
   }
   
-  extension [Self <: XToolPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XToolPanel] (val x: Self) extends AnyVal {
     
     inline def setCreateAccessible(value: XAccessible => XAccessible): Self = StObject.set(x, "createAccessible", js.Any.fromFunction1(value))
     

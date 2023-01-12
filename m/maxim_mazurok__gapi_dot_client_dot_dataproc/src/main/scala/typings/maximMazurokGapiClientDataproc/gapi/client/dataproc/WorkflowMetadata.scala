@@ -61,7 +61,8 @@ object WorkflowMetadata {
     __obj.asInstanceOf[WorkflowMetadata]
   }
   
-  extension [Self <: WorkflowMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowMetadata] (val x: Self) extends AnyVal {
     
     inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     

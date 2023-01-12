@@ -20,7 +20,8 @@ object EventSourceError {
     __obj.asInstanceOf[EventSourceError]
   }
   
-  extension [Self <: EventSourceError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventSourceError] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

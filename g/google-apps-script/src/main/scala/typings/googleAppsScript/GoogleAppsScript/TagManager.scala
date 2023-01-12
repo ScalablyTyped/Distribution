@@ -565,7 +565,8 @@ object TagManager {
     }
   }
   
-  extension [Self <: TagManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagManager] (val x: Self) extends AnyVal {
     
     inline def setAccounts(value: AccountsCollection): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     
@@ -647,7 +648,8 @@ object TagManager {
         __obj.asInstanceOf[Account]
       }
       
-      extension [Self <: Account](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -686,7 +688,8 @@ object TagManager {
         __obj.asInstanceOf[AccountAccess]
       }
       
-      extension [Self <: AccountAccess](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountAccess] (val x: Self) extends AnyVal {
         
         inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
         
@@ -715,7 +718,8 @@ object TagManager {
         __obj.asInstanceOf[BuiltInVariable]
       }
       
-      extension [Self <: BuiltInVariable](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BuiltInVariable] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -756,7 +760,8 @@ object TagManager {
         __obj.asInstanceOf[Condition]
       }
       
-      extension [Self <: Condition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
         
         inline def setParameter(value: js.Array[Parameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
         
@@ -799,7 +804,8 @@ object TagManager {
         __obj.asInstanceOf[Container]
       }
       
-      extension [Self <: Container](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -860,7 +866,8 @@ object TagManager {
         __obj.asInstanceOf[ContainerAccess]
       }
       
-      extension [Self <: ContainerAccess](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContainerAccess] (val x: Self) extends AnyVal {
         
         inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
         
@@ -915,7 +922,8 @@ object TagManager {
         __obj.asInstanceOf[ContainerVersion]
       }
       
-      extension [Self <: ContainerVersion](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContainerVersion] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -1036,7 +1044,8 @@ object TagManager {
         __obj.asInstanceOf[ContainerVersionHeader]
       }
       
-      extension [Self <: ContainerVersionHeader](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContainerVersionHeader] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -1103,7 +1112,8 @@ object TagManager {
         __obj.asInstanceOf[CreateBuiltInVariableResponse]
       }
       
-      extension [Self <: CreateBuiltInVariableResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateBuiltInVariableResponse] (val x: Self) extends AnyVal {
         
         inline def setBuiltInVariable(value: js.Array[BuiltInVariable]): Self = StObject.set(x, "builtInVariable", value.asInstanceOf[js.Any])
         
@@ -1126,7 +1136,8 @@ object TagManager {
         __obj.asInstanceOf[CreateContainerVersionRequestVersionOptions]
       }
       
-      extension [Self <: CreateContainerVersionRequestVersionOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateContainerVersionRequestVersionOptions] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -1155,7 +1166,8 @@ object TagManager {
         __obj.asInstanceOf[CreateContainerVersionResponse]
       }
       
-      extension [Self <: CreateContainerVersionResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateContainerVersionResponse] (val x: Self) extends AnyVal {
         
         inline def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
         
@@ -1202,7 +1214,8 @@ object TagManager {
         __obj.asInstanceOf[CustomTemplate]
       }
       
-      extension [Self <: CustomTemplate](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomTemplate] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -1261,7 +1274,8 @@ object TagManager {
         __obj.asInstanceOf[Entity]
       }
       
-      extension [Self <: Entity](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
         
         inline def setChangeStatus(value: String): Self = StObject.set(x, "changeStatus", value.asInstanceOf[js.Any])
         
@@ -1324,7 +1338,8 @@ object TagManager {
         __obj.asInstanceOf[Environment]
       }
       
-      extension [Self <: Environment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -1415,7 +1430,8 @@ object TagManager {
         __obj.asInstanceOf[Folder]
       }
       
-      extension [Self <: Folder](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -1472,7 +1488,8 @@ object TagManager {
         __obj.asInstanceOf[FolderEntities]
       }
       
-      extension [Self <: FolderEntities](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FolderEntities] (val x: Self) extends AnyVal {
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -1511,7 +1528,8 @@ object TagManager {
         __obj.asInstanceOf[GetWorkspaceStatusResponse]
       }
       
-      extension [Self <: GetWorkspaceStatusResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetWorkspaceStatusResponse] (val x: Self) extends AnyVal {
         
         inline def setMergeConflict(value: js.Array[MergeConflict]): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
         
@@ -1540,7 +1558,8 @@ object TagManager {
         __obj.asInstanceOf[ListAccountsResponse]
       }
       
-      extension [Self <: ListAccountsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListAccountsResponse] (val x: Self) extends AnyVal {
         
         inline def setAccount(value: js.Array[Account]): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
         
@@ -1567,7 +1586,8 @@ object TagManager {
         __obj.asInstanceOf[ListContainerVersionsResponse]
       }
       
-      extension [Self <: ListContainerVersionsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListContainerVersionsResponse] (val x: Self) extends AnyVal {
         
         inline def setContainerVersionHeader(value: js.Array[ContainerVersionHeader]): Self = StObject.set(x, "containerVersionHeader", value.asInstanceOf[js.Any])
         
@@ -1594,7 +1614,8 @@ object TagManager {
         __obj.asInstanceOf[ListContainersResponse]
       }
       
-      extension [Self <: ListContainersResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListContainersResponse] (val x: Self) extends AnyVal {
         
         inline def setContainer(value: js.Array[Container]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
         
@@ -1621,7 +1642,8 @@ object TagManager {
         __obj.asInstanceOf[ListEnabledBuiltInVariablesResponse]
       }
       
-      extension [Self <: ListEnabledBuiltInVariablesResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListEnabledBuiltInVariablesResponse] (val x: Self) extends AnyVal {
         
         inline def setBuiltInVariable(value: js.Array[BuiltInVariable]): Self = StObject.set(x, "builtInVariable", value.asInstanceOf[js.Any])
         
@@ -1648,7 +1670,8 @@ object TagManager {
         __obj.asInstanceOf[ListEnvironmentsResponse]
       }
       
-      extension [Self <: ListEnvironmentsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListEnvironmentsResponse] (val x: Self) extends AnyVal {
         
         inline def setEnvironment(value: js.Array[Environment]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
         
@@ -1675,7 +1698,8 @@ object TagManager {
         __obj.asInstanceOf[ListFoldersResponse]
       }
       
-      extension [Self <: ListFoldersResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListFoldersResponse] (val x: Self) extends AnyVal {
         
         inline def setFolder(value: js.Array[Folder]): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
         
@@ -1702,7 +1726,8 @@ object TagManager {
         __obj.asInstanceOf[ListTagsResponse]
       }
       
-      extension [Self <: ListTagsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListTagsResponse] (val x: Self) extends AnyVal {
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -1729,7 +1754,8 @@ object TagManager {
         __obj.asInstanceOf[ListTriggersResponse]
       }
       
-      extension [Self <: ListTriggersResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListTriggersResponse] (val x: Self) extends AnyVal {
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -1756,7 +1782,8 @@ object TagManager {
         __obj.asInstanceOf[ListUserPermissionsResponse]
       }
       
-      extension [Self <: ListUserPermissionsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListUserPermissionsResponse] (val x: Self) extends AnyVal {
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -1783,7 +1810,8 @@ object TagManager {
         __obj.asInstanceOf[ListVariablesResponse]
       }
       
-      extension [Self <: ListVariablesResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListVariablesResponse] (val x: Self) extends AnyVal {
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -1810,7 +1838,8 @@ object TagManager {
         __obj.asInstanceOf[ListWorkspacesResponse]
       }
       
-      extension [Self <: ListWorkspacesResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListWorkspacesResponse] (val x: Self) extends AnyVal {
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -1837,7 +1866,8 @@ object TagManager {
         __obj.asInstanceOf[ListZonesResponse]
       }
       
-      extension [Self <: ListZonesResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListZonesResponse] (val x: Self) extends AnyVal {
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -1864,7 +1894,8 @@ object TagManager {
         __obj.asInstanceOf[MergeConflict]
       }
       
-      extension [Self <: MergeConflict](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MergeConflict] (val x: Self) extends AnyVal {
         
         inline def setEntityInBaseVersion(value: Entity): Self = StObject.set(x, "entityInBaseVersion", value.asInstanceOf[js.Any])
         
@@ -1895,7 +1926,8 @@ object TagManager {
         __obj.asInstanceOf[Parameter]
       }
       
-      extension [Self <: Parameter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
         
         inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
@@ -1936,7 +1968,8 @@ object TagManager {
         __obj.asInstanceOf[PublishContainerVersionResponse]
       }
       
-      extension [Self <: PublishContainerVersionResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PublishContainerVersionResponse] (val x: Self) extends AnyVal {
         
         inline def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
         
@@ -1963,7 +1996,8 @@ object TagManager {
         __obj.asInstanceOf[QuickPreviewResponse]
       }
       
-      extension [Self <: QuickPreviewResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: QuickPreviewResponse] (val x: Self) extends AnyVal {
         
         inline def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
         
@@ -1990,7 +2024,8 @@ object TagManager {
         __obj.asInstanceOf[RevertBuiltInVariableResponse]
       }
       
-      extension [Self <: RevertBuiltInVariableResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RevertBuiltInVariableResponse] (val x: Self) extends AnyVal {
         
         inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
         
@@ -2009,7 +2044,8 @@ object TagManager {
         __obj.asInstanceOf[RevertFolderResponse]
       }
       
-      extension [Self <: RevertFolderResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RevertFolderResponse] (val x: Self) extends AnyVal {
         
         inline def setFolder(value: Folder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
         
@@ -2028,7 +2064,8 @@ object TagManager {
         __obj.asInstanceOf[RevertTagResponse]
       }
       
-      extension [Self <: RevertTagResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RevertTagResponse] (val x: Self) extends AnyVal {
         
         inline def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
         
@@ -2047,7 +2084,8 @@ object TagManager {
         __obj.asInstanceOf[RevertTriggerResponse]
       }
       
-      extension [Self <: RevertTriggerResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RevertTriggerResponse] (val x: Self) extends AnyVal {
         
         inline def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
         
@@ -2066,7 +2104,8 @@ object TagManager {
         __obj.asInstanceOf[RevertVariableResponse]
       }
       
-      extension [Self <: RevertVariableResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RevertVariableResponse] (val x: Self) extends AnyVal {
         
         inline def setVariable(value: Variable): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
         
@@ -2085,7 +2124,8 @@ object TagManager {
         __obj.asInstanceOf[RevertZoneResponse]
       }
       
-      extension [Self <: RevertZoneResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RevertZoneResponse] (val x: Self) extends AnyVal {
         
         inline def setZone(value: Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
         
@@ -2106,7 +2146,8 @@ object TagManager {
         __obj.asInstanceOf[SetupTag]
       }
       
-      extension [Self <: SetupTag](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetupTag] (val x: Self) extends AnyVal {
         
         inline def setStopOnSetupFailure(value: Boolean): Self = StObject.set(x, "stopOnSetupFailure", value.asInstanceOf[js.Any])
         
@@ -2131,7 +2172,8 @@ object TagManager {
         __obj.asInstanceOf[SyncStatus]
       }
       
-      extension [Self <: SyncStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SyncStatus] (val x: Self) extends AnyVal {
         
         inline def setMergeConflict(value: Boolean): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
         
@@ -2156,7 +2198,8 @@ object TagManager {
         __obj.asInstanceOf[SyncWorkspaceResponse]
       }
       
-      extension [Self <: SyncWorkspaceResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SyncWorkspaceResponse] (val x: Self) extends AnyVal {
         
         inline def setMergeConflict(value: js.Array[MergeConflict]): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
         
@@ -2227,7 +2270,8 @@ object TagManager {
         __obj.asInstanceOf[Tag]
       }
       
-      extension [Self <: Tag](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -2354,7 +2398,8 @@ object TagManager {
         __obj.asInstanceOf[TeardownTag]
       }
       
-      extension [Self <: TeardownTag](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TeardownTag] (val x: Self) extends AnyVal {
         
         inline def setStopTeardownOnFailure(value: Boolean): Self = StObject.set(x, "stopTeardownOnFailure", value.asInstanceOf[js.Any])
         
@@ -2379,7 +2424,8 @@ object TagManager {
         __obj.asInstanceOf[Timestamp]
       }
       
-      extension [Self <: Timestamp](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Timestamp] (val x: Self) extends AnyVal {
         
         inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
         
@@ -2464,7 +2510,8 @@ object TagManager {
         __obj.asInstanceOf[Trigger]
       }
       
-      extension [Self <: Trigger](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Trigger] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -2623,7 +2670,8 @@ object TagManager {
         __obj.asInstanceOf[UserPermission]
       }
       
-      extension [Self <: UserPermission](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserPermission] (val x: Self) extends AnyVal {
         
         inline def setAccountAccess(value: AccountAccess): Self = StObject.set(x, "accountAccess", value.asInstanceOf[js.Any])
         
@@ -2692,7 +2740,8 @@ object TagManager {
         __obj.asInstanceOf[Variable]
       }
       
-      extension [Self <: Variable](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Variable] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -2789,7 +2838,8 @@ object TagManager {
         __obj.asInstanceOf[VariableFormatValue]
       }
       
-      extension [Self <: VariableFormatValue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VariableFormatValue] (val x: Self) extends AnyVal {
         
         inline def setCaseConversionType(value: String): Self = StObject.set(x, "caseConversionType", value.asInstanceOf[js.Any])
         
@@ -2838,7 +2888,8 @@ object TagManager {
         __obj.asInstanceOf[Workspace]
       }
       
-      extension [Self <: Workspace](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Workspace] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -2907,7 +2958,8 @@ object TagManager {
         __obj.asInstanceOf[Zone]
       }
       
-      extension [Self <: Zone](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Zone] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -2974,7 +3026,8 @@ object TagManager {
         __obj.asInstanceOf[ZoneBoundary]
       }
       
-      extension [Self <: ZoneBoundary](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ZoneBoundary] (val x: Self) extends AnyVal {
         
         inline def setCondition(value: js.Array[Condition]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
         
@@ -3003,7 +3056,8 @@ object TagManager {
         __obj.asInstanceOf[ZoneChildContainer]
       }
       
-      extension [Self <: ZoneChildContainer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ZoneChildContainer] (val x: Self) extends AnyVal {
         
         inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
         
@@ -3028,7 +3082,8 @@ object TagManager {
         __obj.asInstanceOf[ZoneTypeRestriction]
       }
       
-      extension [Self <: ZoneTypeRestriction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ZoneTypeRestriction] (val x: Self) extends AnyVal {
         
         inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
         

@@ -49,7 +49,8 @@ object esPickerPanelMod {
       __obj.asInstanceOf[PickerPanelBaseProps[DateType]]
     }
     
-    extension [Self <: PickerPanelBaseProps[?], DateType](x: Self & PickerPanelBaseProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerPanelBaseProps[?], DateType] (val x: Self & PickerPanelBaseProps[DateType]) extends AnyVal {
       
       inline def setPicker(value: Exclude[PickerMode, date | time]): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     }
@@ -77,7 +78,8 @@ object esPickerPanelMod {
       __obj.asInstanceOf[PickerPanelDateProps[DateType]]
     }
     
-    extension [Self <: PickerPanelDateProps[?], DateType](x: Self & PickerPanelDateProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerPanelDateProps[?], DateType] (val x: Self & PickerPanelDateProps[DateType]) extends AnyVal {
       
       inline def setDisabledTime(value: /* date */ DateType | Null => DisabledTimes): Self = StObject.set(x, "disabledTime", js.Any.fromFunction1(value))
       
@@ -188,7 +190,8 @@ object esPickerPanelMod {
       __obj.asInstanceOf[PickerPanelSharedProps[DateType]]
     }
     
-    extension [Self <: PickerPanelSharedProps[?], DateType](x: Self & PickerPanelSharedProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerPanelSharedProps[?], DateType] (val x: Self & PickerPanelSharedProps[DateType]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -332,7 +335,8 @@ object esPickerPanelMod {
       __obj.asInstanceOf[PickerPanelTimeProps[DateType]]
     }
     
-    extension [Self <: PickerPanelTimeProps[?], DateType](x: Self & PickerPanelTimeProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerPanelTimeProps[?], DateType] (val x: Self & PickerPanelTimeProps[DateType]) extends AnyVal {
       
       inline def setDisabledHours(value: () => js.Array[Double]): Self = StObject.set(x, "disabledHours", js.Any.fromFunction0(value))
       

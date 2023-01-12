@@ -38,7 +38,8 @@ object FancyBoxRefs {
     __obj.asInstanceOf[FancyBoxRefs]
   }
   
-  extension [Self <: FancyBoxRefs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxRefs] (val x: Self) extends AnyVal {
     
     inline def setBg(value: JQuery): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     

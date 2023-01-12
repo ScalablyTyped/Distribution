@@ -51,7 +51,8 @@ object distSrcCoreViewChangeMod {
       __obj.asInstanceOf[Change]
     }
     
-    extension [Self <: Change](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
       
       inline def setChildName(value: String): Self = StObject.set(x, "childName", value.asInstanceOf[js.Any])
       

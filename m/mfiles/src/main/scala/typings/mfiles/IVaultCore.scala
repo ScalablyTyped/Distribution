@@ -17,7 +17,8 @@ object IVaultCore {
     __obj.asInstanceOf[IVaultCore]
   }
   
-  extension [Self <: IVaultCore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultCore] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: IVaultCoreEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

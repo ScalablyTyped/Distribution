@@ -28,7 +28,8 @@ object MutualTlsAuthentication {
     __obj.asInstanceOf[MutualTlsAuthentication]
   }
   
-  extension [Self <: MutualTlsAuthentication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutualTlsAuthentication] (val x: Self) extends AnyVal {
     
     inline def setTruststoreUri(value: UriWithLengthBetween1And2048): Self = StObject.set(x, "TruststoreUri", value.asInstanceOf[js.Any])
     

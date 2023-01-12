@@ -180,7 +180,8 @@ object Shape {
     __obj.asInstanceOf[Shape]
   }
   
-  extension [Self <: Shape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
     
     inline def setHyperlink(value: String): Self = StObject.set(x, "Hyperlink", value.asInstanceOf[js.Any])
     

@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[FontAwesomeProps]
     }
     
-    extension [Self <: FontAwesomeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontAwesomeProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object mod {
       __obj.asInstanceOf[Intermediate]
     }
     
-    extension [Self <: Intermediate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Intermediate] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

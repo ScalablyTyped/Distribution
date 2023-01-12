@@ -35,7 +35,8 @@ object SamplingHeapProfileNode {
     __obj.asInstanceOf[SamplingHeapProfileNode]
   }
   
-  extension [Self <: SamplingHeapProfileNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SamplingHeapProfileNode] (val x: Self) extends AnyVal {
     
     inline def setCallFrame(value: CallFrame): Self = StObject.set(x, "callFrame", value.asInstanceOf[js.Any])
     

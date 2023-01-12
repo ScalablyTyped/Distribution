@@ -84,7 +84,8 @@ object IGenericDimension {
     __obj.asInstanceOf[IGenericDimension]
   }
   
-  extension [Self <: IGenericDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericDimension] (val x: Self) extends AnyVal {
     
     inline def setApplyPatches(value: js.Array[INxPatch] => js.Promise[Unit]): Self = StObject.set(x, "applyPatches", js.Any.fromFunction1(value))
     

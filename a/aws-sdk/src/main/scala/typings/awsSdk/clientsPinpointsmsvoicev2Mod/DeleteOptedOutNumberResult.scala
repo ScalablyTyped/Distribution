@@ -38,7 +38,8 @@ object DeleteOptedOutNumberResult {
     __obj.asInstanceOf[DeleteOptedOutNumberResult]
   }
   
-  extension [Self <: DeleteOptedOutNumberResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteOptedOutNumberResult] (val x: Self) extends AnyVal {
     
     inline def setEndUserOptedOut(value: PrimitiveBoolean): Self = StObject.set(x, "EndUserOptedOut", value.asInstanceOf[js.Any])
     

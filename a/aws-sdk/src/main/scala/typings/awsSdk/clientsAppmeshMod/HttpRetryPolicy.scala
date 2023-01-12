@@ -33,7 +33,8 @@ object HttpRetryPolicy {
     __obj.asInstanceOf[HttpRetryPolicy]
   }
   
-  extension [Self <: HttpRetryPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpRetryPolicy] (val x: Self) extends AnyVal {
     
     inline def setHttpRetryEvents(value: HttpRetryPolicyEvents): Self = StObject.set(x, "httpRetryEvents", value.asInstanceOf[js.Any])
     

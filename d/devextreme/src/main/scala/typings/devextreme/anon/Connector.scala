@@ -80,7 +80,8 @@ object Connector {
     __obj.asInstanceOf[Connector]
   }
   
-  extension [Self <: Connector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Connector] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

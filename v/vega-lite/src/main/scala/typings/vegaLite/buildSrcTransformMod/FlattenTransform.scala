@@ -31,7 +31,8 @@ object FlattenTransform {
     __obj.asInstanceOf[FlattenTransform]
   }
   
-  extension [Self <: FlattenTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlattenTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: js.Array[FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object TargetOnDeviceService {
     __obj.asInstanceOf[TargetOnDeviceService]
   }
   
-  extension [Self <: TargetOnDeviceService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetOnDeviceService] (val x: Self) extends AnyVal {
     
     inline def setServiceName(value: DeviceServiceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     

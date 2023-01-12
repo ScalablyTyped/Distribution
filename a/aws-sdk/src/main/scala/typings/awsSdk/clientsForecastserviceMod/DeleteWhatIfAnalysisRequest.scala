@@ -18,7 +18,8 @@ object DeleteWhatIfAnalysisRequest {
     __obj.asInstanceOf[DeleteWhatIfAnalysisRequest]
   }
   
-  extension [Self <: DeleteWhatIfAnalysisRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteWhatIfAnalysisRequest] (val x: Self) extends AnyVal {
     
     inline def setWhatIfAnalysisArn(value: Arn): Self = StObject.set(x, "WhatIfAnalysisArn", value.asInstanceOf[js.Any])
   }

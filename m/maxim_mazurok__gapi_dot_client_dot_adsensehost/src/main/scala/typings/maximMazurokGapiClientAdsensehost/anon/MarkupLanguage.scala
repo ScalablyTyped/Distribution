@@ -25,7 +25,8 @@ object MarkupLanguage {
     __obj.asInstanceOf[MarkupLanguage]
   }
   
-  extension [Self <: MarkupLanguage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkupLanguage] (val x: Self) extends AnyVal {
     
     inline def setMarkupLanguage(value: String): Self = StObject.set(x, "markupLanguage", value.asInstanceOf[js.Any])
     

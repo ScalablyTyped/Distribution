@@ -28,7 +28,8 @@ object ModifyClusterSnapshotMessage {
     __obj.asInstanceOf[ModifyClusterSnapshotMessage]
   }
   
-  extension [Self <: ModifyClusterSnapshotMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyClusterSnapshotMessage] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
     

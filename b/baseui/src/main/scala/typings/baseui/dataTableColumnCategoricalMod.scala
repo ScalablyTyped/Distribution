@@ -37,7 +37,8 @@ object dataTableColumnCategoricalMod {
       __obj.asInstanceOf[CategoricalFilterProps]
     }
     
-    extension [Self <: CategoricalFilterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CategoricalFilterProps] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -68,7 +69,8 @@ object dataTableColumnCategoricalMod {
       __obj.asInstanceOf[FilterParameters]
     }
     
-    extension [Self <: FilterParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterParameters] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

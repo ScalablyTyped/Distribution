@@ -27,7 +27,8 @@ object LocationRecord {
     __obj.asInstanceOf[LocationRecord]
   }
   
-  extension [Self <: LocationRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationRecord] (val x: Self) extends AnyVal {
     
     inline def setAccuracy_radius(value: Double): Self = StObject.set(x, "accuracy_radius", value.asInstanceOf[js.Any])
     

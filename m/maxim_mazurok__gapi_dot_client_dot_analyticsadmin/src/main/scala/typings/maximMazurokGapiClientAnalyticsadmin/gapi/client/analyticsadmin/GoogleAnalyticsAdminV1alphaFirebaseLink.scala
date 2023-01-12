@@ -25,7 +25,8 @@ object GoogleAnalyticsAdminV1alphaFirebaseLink {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaFirebaseLink]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaFirebaseLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaFirebaseLink] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object ASPxClientReportDesignerTabClosingEventArgs {
     __obj.asInstanceOf[ASPxClientReportDesignerTabClosingEventArgs]
   }
   
-  extension [Self <: ASPxClientReportDesignerTabClosingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientReportDesignerTabClosingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "Handled", value.asInstanceOf[js.Any])
     

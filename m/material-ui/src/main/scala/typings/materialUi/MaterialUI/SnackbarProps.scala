@@ -38,7 +38,8 @@ object SnackbarProps {
     __obj.asInstanceOf[SnackbarProps]
   }
   
-  extension [Self <: SnackbarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnackbarProps] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ReactNode): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

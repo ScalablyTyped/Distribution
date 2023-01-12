@@ -29,7 +29,8 @@ object XTextCopy {
     __obj.asInstanceOf[XTextCopy]
   }
   
-  extension [Self <: XTextCopy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextCopy] (val x: Self) extends AnyVal {
     
     inline def setCopyText(value: XTextCopy => Unit): Self = StObject.set(x, "copyText", js.Any.fromFunction1(value))
   }

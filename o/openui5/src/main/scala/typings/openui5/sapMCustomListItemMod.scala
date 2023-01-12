@@ -290,7 +290,8 @@ object sapMCustomListItemMod {
       __obj.asInstanceOf[CustomListItemSettings]
     }
     
-    extension [Self <: CustomListItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomListItemSettings] (val x: Self) extends AnyVal {
       
       inline def setAccDescription(value: String | PropertyBindingInfo): Self = StObject.set(x, "accDescription", value.asInstanceOf[js.Any])
       

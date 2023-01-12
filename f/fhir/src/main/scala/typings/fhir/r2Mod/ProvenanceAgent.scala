@@ -35,7 +35,8 @@ object ProvenanceAgent {
     __obj.asInstanceOf[ProvenanceAgent]
   }
   
-  extension [Self <: ProvenanceAgent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvenanceAgent] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

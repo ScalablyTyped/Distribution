@@ -17,7 +17,8 @@ object StaticResource {
     __obj.asInstanceOf[StaticResource]
   }
   
-  extension [Self <: StaticResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticResource] (val x: Self) extends AnyVal {
     
     inline def setCreativeType(value: String): Self = StObject.set(x, "creativeType", value.asInstanceOf[js.Any])
     

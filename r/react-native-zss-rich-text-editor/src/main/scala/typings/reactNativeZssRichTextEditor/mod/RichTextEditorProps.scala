@@ -51,7 +51,8 @@ object RichTextEditorProps {
     __obj.asInstanceOf[RichTextEditorProps]
   }
   
-  extension [Self <: RichTextEditorProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RichTextEditorProps] (val x: Self) extends AnyVal {
     
     inline def setContentInset(value: ContentInset): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
     

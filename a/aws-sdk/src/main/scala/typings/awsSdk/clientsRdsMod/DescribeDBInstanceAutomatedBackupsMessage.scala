@@ -43,7 +43,8 @@ object DescribeDBInstanceAutomatedBackupsMessage {
     __obj.asInstanceOf[DescribeDBInstanceAutomatedBackupsMessage]
   }
   
-  extension [Self <: DescribeDBInstanceAutomatedBackupsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDBInstanceAutomatedBackupsMessage] (val x: Self) extends AnyVal {
     
     inline def setDBInstanceAutomatedBackupsArn(value: String): Self = StObject.set(x, "DBInstanceAutomatedBackupsArn", value.asInstanceOf[js.Any])
     

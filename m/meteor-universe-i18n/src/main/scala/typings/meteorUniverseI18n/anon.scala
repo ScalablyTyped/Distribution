@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Partiali18nOptions]
     }
     
-    extension [Self <: Partiali18nOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Partiali18nOptions] (val x: Self) extends AnyVal {
       
       inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       

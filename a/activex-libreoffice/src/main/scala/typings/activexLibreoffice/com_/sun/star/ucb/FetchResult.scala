@@ -48,7 +48,8 @@ object FetchResult {
     __obj.asInstanceOf[FetchResult]
   }
   
-  extension [Self <: FetchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchResult] (val x: Self) extends AnyVal {
     
     inline def setFetchError(value: Double): Self = StObject.set(x, "FetchError", value.asInstanceOf[js.Any])
     

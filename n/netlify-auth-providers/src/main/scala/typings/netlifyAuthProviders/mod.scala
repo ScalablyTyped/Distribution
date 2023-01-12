@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[Authenticator]
     }
     
-    extension [Self <: Authenticator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Authenticator] (val x: Self) extends AnyVal {
       
       inline def setAuthenticate(value: (AuthenticatorConfig, js.Function2[/* err */ js.Error, /* data */ Any, Unit]) => Unit): Self = StObject.set(x, "authenticate", js.Any.fromFunction2(value))
     }
@@ -49,7 +50,8 @@ object mod {
       __obj.asInstanceOf[AuthenticatorConfig]
     }
     
-    extension [Self <: AuthenticatorConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticatorConfig] (val x: Self) extends AnyVal {
       
       inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setBase_url(value: String): Self = StObject.set(x, "base_url", value.asInstanceOf[js.Any])
       

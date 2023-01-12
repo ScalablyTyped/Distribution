@@ -87,7 +87,8 @@ object StorybookConfig {
     __obj.asInstanceOf[StorybookConfig]
   }
   
-  extension [Self <: StorybookConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorybookConfig] (val x: Self) extends AnyVal {
     
     inline def setAddons(value: js.Array[Preset]): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
     

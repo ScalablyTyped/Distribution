@@ -17,7 +17,8 @@ object `423` {
     __obj.asInstanceOf[`423`]
   }
   
-  extension [Self <: `423`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `423`] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: js.Array[CommittedatUrl]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     

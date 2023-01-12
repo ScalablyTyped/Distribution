@@ -21,7 +21,8 @@ object AccountLimitations {
     __obj.asInstanceOf[AccountLimitations]
   }
   
-  extension [Self <: AccountLimitations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountLimitations] (val x: Self) extends AnyVal {
     
     inline def setCanInviteFriends(value: Boolean): Self = StObject.set(x, "canInviteFriends", value.asInstanceOf[js.Any])
     

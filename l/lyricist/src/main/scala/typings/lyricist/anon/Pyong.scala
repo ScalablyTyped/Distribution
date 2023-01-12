@@ -15,7 +15,8 @@ object Pyong {
     __obj.asInstanceOf[Pyong]
   }
   
-  extension [Self <: Pyong](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pyong] (val x: Self) extends AnyVal {
     
     inline def setPyong(value: Boolean): Self = StObject.set(x, "pyong", value.asInstanceOf[js.Any])
   }

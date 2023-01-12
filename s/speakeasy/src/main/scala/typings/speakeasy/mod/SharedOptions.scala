@@ -23,7 +23,8 @@ object SharedOptions {
     __obj.asInstanceOf[SharedOptions]
   }
   
-  extension [Self <: SharedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedOptions] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

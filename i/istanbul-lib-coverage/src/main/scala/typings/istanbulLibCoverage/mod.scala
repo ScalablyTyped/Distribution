@@ -154,7 +154,8 @@ object mod {
       __obj.asInstanceOf[BranchMapping]
     }
     
-    extension [Self <: BranchMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BranchMapping] (val x: Self) extends AnyVal {
       
       inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
@@ -183,7 +184,8 @@ object mod {
       __obj.asInstanceOf[Coverage]
     }
     
-    extension [Self <: Coverage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coverage] (val x: Self) extends AnyVal {
       
       inline def setCoverage(value: Double): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
       
@@ -212,7 +214,8 @@ object mod {
       __obj.asInstanceOf[CoverageSummaryData]
     }
     
-    extension [Self <: CoverageSummaryData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoverageSummaryData] (val x: Self) extends AnyVal {
       
       inline def setBranches(value: Totals): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
@@ -255,7 +258,8 @@ object mod {
       __obj.asInstanceOf[FileCoverageData]
     }
     
-    extension [Self <: FileCoverageData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileCoverageData] (val x: Self) extends AnyVal {
       
       inline def setB(value: StringDictionary[js.Array[Double]]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -290,7 +294,8 @@ object mod {
       __obj.asInstanceOf[FunctionMapping]
     }
     
-    extension [Self <: FunctionMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionMapping] (val x: Self) extends AnyVal {
       
       inline def setDecl(value: Range): Self = StObject.set(x, "decl", value.asInstanceOf[js.Any])
       
@@ -315,7 +320,8 @@ object mod {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -336,7 +342,8 @@ object mod {
       __obj.asInstanceOf[Range]
     }
     
-    extension [Self <: Range](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Location): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -361,7 +368,8 @@ object mod {
       __obj.asInstanceOf[Totals]
     }
     
-    extension [Self <: Totals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Totals] (val x: Self) extends AnyVal {
       
       inline def setCovered(value: Double): Self = StObject.set(x, "covered", value.asInstanceOf[js.Any])
       

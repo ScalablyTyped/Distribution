@@ -30,7 +30,8 @@ object TokenCredentialsUri {
     __obj.asInstanceOf[TokenCredentialsUri]
   }
   
-  extension [Self <: TokenCredentialsUri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenCredentialsUri] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationUri(value: java.lang.String): Self = StObject.set(x, "authorizationUri", value.asInstanceOf[js.Any])
     

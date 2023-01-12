@@ -71,7 +71,8 @@ object docinfo {
       __obj.asInstanceOf[ChangeAuthor]
     }
     
-    extension [Self <: ChangeAuthor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeAuthor] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
       
@@ -158,7 +159,8 @@ object docinfo {
       __obj.asInstanceOf[ChangeDateTime]
     }
     
-    extension [Self <: ChangeDateTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeDateTime] (val x: Self) extends AnyVal {
       
       inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
@@ -229,7 +231,8 @@ object docinfo {
       __obj.asInstanceOf[CreateAuthor]
     }
     
-    extension [Self <: CreateAuthor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateAuthor] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
       
@@ -316,7 +319,8 @@ object docinfo {
       __obj.asInstanceOf[CreateDateTime]
     }
     
-    extension [Self <: CreateDateTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateDateTime] (val x: Self) extends AnyVal {
       
       inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
@@ -388,7 +392,8 @@ object docinfo {
       __obj.asInstanceOf[Custom]
     }
     
-    extension [Self <: Custom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
       
       inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
@@ -453,7 +458,8 @@ object docinfo {
       __obj.asInstanceOf[Description]
     }
     
-    extension [Self <: Description](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
@@ -536,7 +542,8 @@ object docinfo {
       __obj.asInstanceOf[EditTime]
     }
     
-    extension [Self <: EditTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditTime] (val x: Self) extends AnyVal {
       
       inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
@@ -605,7 +612,8 @@ object docinfo {
       __obj.asInstanceOf[Keywords]
     }
     
-    extension [Self <: Keywords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Keywords] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
@@ -670,7 +678,8 @@ object docinfo {
       __obj.asInstanceOf[PrintAuthor]
     }
     
-    extension [Self <: PrintAuthor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintAuthor] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
       
@@ -757,7 +766,8 @@ object docinfo {
       __obj.asInstanceOf[PrintDateTime]
     }
     
-    extension [Self <: PrintDateTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintDateTime] (val x: Self) extends AnyVal {
       
       inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
@@ -828,7 +838,8 @@ object docinfo {
       __obj.asInstanceOf[Revision]
     }
     
-    extension [Self <: Revision](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Revision] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
@@ -893,7 +904,8 @@ object docinfo {
       __obj.asInstanceOf[Subject]
     }
     
-    extension [Self <: Subject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subject] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
@@ -958,7 +970,8 @@ object docinfo {
       __obj.asInstanceOf[Title]
     }
     
-    extension [Self <: Title](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       

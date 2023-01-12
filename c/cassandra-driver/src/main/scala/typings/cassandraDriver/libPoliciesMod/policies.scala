@@ -50,7 +50,8 @@ object policies {
         __obj.asInstanceOf[AddressTranslator]
       }
       
-      extension [Self <: AddressTranslator](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddressTranslator] (val x: Self) extends AnyVal {
         
         inline def setTranslate(value: (String, Double, js.Function) => Unit): Self = StObject.set(x, "translate", js.Any.fromFunction3(value))
       }
@@ -168,7 +169,8 @@ object policies {
         __obj.asInstanceOf[ReconnectionPolicy]
       }
       
-      extension [Self <: ReconnectionPolicy](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReconnectionPolicy] (val x: Self) extends AnyVal {
         
         inline def setGetOptions(value: () => Map[String, js.Object]): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
         
@@ -327,7 +329,8 @@ object policies {
         __obj.asInstanceOf[TimestampGenerator]
       }
       
-      extension [Self <: TimestampGenerator](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TimestampGenerator] (val x: Self) extends AnyVal {
         
         inline def setNext(value: Client => Long | Double): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
       }

@@ -67,7 +67,8 @@ object libAuthorizedMod {
       __obj.asInstanceOf[IAuthorizedProps]
     }
     
-    extension [Self <: IAuthorizedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAuthorizedProps] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: authority): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       

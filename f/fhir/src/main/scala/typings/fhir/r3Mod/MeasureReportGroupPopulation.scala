@@ -35,7 +35,8 @@ object MeasureReportGroupPopulation {
     __obj.asInstanceOf[MeasureReportGroupPopulation]
   }
   
-  extension [Self <: MeasureReportGroupPopulation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasureReportGroupPopulation] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

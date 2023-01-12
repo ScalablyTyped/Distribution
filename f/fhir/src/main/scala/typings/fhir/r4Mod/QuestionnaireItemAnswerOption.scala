@@ -58,7 +58,8 @@ object QuestionnaireItemAnswerOption {
     __obj.asInstanceOf[QuestionnaireItemAnswerOption]
   }
   
-  extension [Self <: QuestionnaireItemAnswerOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuestionnaireItemAnswerOption] (val x: Self) extends AnyVal {
     
     inline def setInitialSelected(value: Boolean): Self = StObject.set(x, "initialSelected", value.asInstanceOf[js.Any])
     

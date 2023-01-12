@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setTraversalKind(value: `false`): Self = StObject.set(x, "TraversalKind", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String | Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object anon {
       __obj.asInstanceOf[PartialAlternative]
     }
     
-    extension [Self <: PartialAlternative](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialAlternative] (val x: Self) extends AnyVal {
       
       inline def setExpressions(value: js.Array[Expression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
       
@@ -152,7 +155,8 @@ object anon {
       __obj.asInstanceOf[PartialAstRegExp]
     }
     
-    extension [Self <: PartialAstRegExp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialAstRegExp] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Expression): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -192,7 +196,8 @@ object anon {
       __obj.asInstanceOf[PartialCharacterClass]
     }
     
-    extension [Self <: PartialCharacterClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCharacterClass] (val x: Self) extends AnyVal {
       
       inline def setExpressions(value: js.Array[Char | ClassRange]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
       
@@ -232,7 +237,8 @@ object anon {
       __obj.asInstanceOf[PartialClassRange]
     }
     
-    extension [Self <: PartialClassRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialClassRange] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Char): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -270,7 +276,8 @@ object anon {
       __obj.asInstanceOf[PartialDisjunction]
     }
     
-    extension [Self <: PartialDisjunction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDisjunction] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -312,7 +319,8 @@ object anon {
       __obj.asInstanceOf[PartialRepetition]
     }
     
-    extension [Self <: PartialRepetition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRepetition] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
@@ -343,7 +351,8 @@ object anon {
       __obj.asInstanceOf[TraversalKind]
     }
     
-    extension [Self <: TraversalKind](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraversalKind] (val x: Self) extends AnyVal {
       
       inline def setTraversalKind(value: `true`): Self = StObject.set(x, "TraversalKind", value.asInstanceOf[js.Any])
     }

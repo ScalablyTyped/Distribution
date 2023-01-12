@@ -109,7 +109,8 @@ object CommonElementStyleinvalid {
     __obj.asInstanceOf[CommonElementStyleinvalid]
   }
   
-  extension [Self <: CommonElementStyleinvalid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonElementStyleinvalid] (val x: Self) extends AnyVal {
     
     inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ToolBarProps {
     __obj.asInstanceOf[ToolBarProps]
   }
   
-  extension [Self <: ToolBarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolBarProps] (val x: Self) extends AnyVal {
     
     inline def setComponents(value: ButtonGroupPropssearchPan): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     

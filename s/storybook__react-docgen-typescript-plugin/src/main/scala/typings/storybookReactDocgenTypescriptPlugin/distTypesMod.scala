@@ -49,7 +49,8 @@ object distTypesMod {
       __obj.asInstanceOf[LoaderOptions]
     }
     
-    extension [Self <: LoaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
       
       inline def setDocgenCollectionName(value: String): Self = StObject.set(x, "docgenCollectionName", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object distTypesMod {
       __obj.asInstanceOf[Module]
     }
     
-    extension [Self <: Module](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
       
       inline def setBuilt(value: Boolean): Self = StObject.set(x, "built", value.asInstanceOf[js.Any])
       

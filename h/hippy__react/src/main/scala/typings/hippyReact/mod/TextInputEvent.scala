@@ -21,7 +21,8 @@ object TextInputEvent {
     __obj.asInstanceOf[TextInputEvent]
   }
   
-  extension [Self <: TextInputEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInputEvent] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

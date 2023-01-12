@@ -25,7 +25,8 @@ object UpdateDatabaseDdlRequest {
     __obj.asInstanceOf[UpdateDatabaseDdlRequest]
   }
   
-  extension [Self <: UpdateDatabaseDdlRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDatabaseDdlRequest] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     

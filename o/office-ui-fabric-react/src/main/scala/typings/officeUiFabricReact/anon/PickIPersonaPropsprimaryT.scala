@@ -21,7 +21,8 @@ object PickIPersonaPropsprimaryT {
     __obj.asInstanceOf[PickIPersonaPropsprimaryT]
   }
   
-  extension [Self <: PickIPersonaPropsprimaryT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickIPersonaPropsprimaryT] (val x: Self) extends AnyVal {
     
     inline def setInitialsColor(value: PersonaInitialsColor | String): Self = StObject.set(x, "initialsColor", value.asInstanceOf[js.Any])
     

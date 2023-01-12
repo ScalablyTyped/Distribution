@@ -18,7 +18,8 @@ object StartStreamProcessorResponse {
     __obj.asInstanceOf[StartStreamProcessorResponse]
   }
   
-  extension [Self <: StartStreamProcessorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartStreamProcessorResponse] (val x: Self) extends AnyVal {
     
     inline def setSessionId(value: StartStreamProcessorSessionId): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
     

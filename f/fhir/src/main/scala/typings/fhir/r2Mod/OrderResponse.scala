@@ -73,7 +73,8 @@ object OrderResponse {
     __obj.asInstanceOf[OrderResponse]
   }
   
-  extension [Self <: OrderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderResponse] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

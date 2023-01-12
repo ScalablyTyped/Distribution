@@ -18,7 +18,8 @@ object ListTagsForVaultOutput {
     __obj.asInstanceOf[ListTagsForVaultOutput]
   }
   
-  extension [Self <: ListTagsForVaultOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagsForVaultOutput] (val x: Self) extends AnyVal {
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

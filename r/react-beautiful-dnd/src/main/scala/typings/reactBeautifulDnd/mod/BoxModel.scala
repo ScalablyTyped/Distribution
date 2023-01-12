@@ -40,7 +40,8 @@ object BoxModel {
     __obj.asInstanceOf[BoxModel]
   }
   
-  extension [Self <: BoxModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoxModel] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: Spacing): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

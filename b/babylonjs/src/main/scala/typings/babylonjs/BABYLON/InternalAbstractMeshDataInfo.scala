@@ -92,7 +92,8 @@ object InternalAbstractMeshDataInfo {
     __obj.asInstanceOf[InternalAbstractMeshDataInfo]
   }
   
-  extension [Self <: InternalAbstractMeshDataInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalAbstractMeshDataInfo] (val x: Self) extends AnyVal {
     
     inline def set_actAsRegularMesh(value: Boolean): Self = StObject.set(x, "_actAsRegularMesh", value.asInstanceOf[js.Any])
     

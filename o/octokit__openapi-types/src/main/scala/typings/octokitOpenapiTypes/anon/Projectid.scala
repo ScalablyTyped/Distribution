@@ -28,7 +28,8 @@ object Projectid {
     __obj.asInstanceOf[Projectid]
   }
   
-  extension [Self <: Projectid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Projectid] (val x: Self) extends AnyVal {
     
     inline def setOrg_(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any

@@ -33,7 +33,8 @@ object Deployment {
     __obj.asInstanceOf[Deployment]
   }
   
-  extension [Self <: Deployment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
     
     inline def setApiSummary(value: PathToMapOfMethodSnapshot): Self = StObject.set(x, "apiSummary", value.asInstanceOf[js.Any])
     

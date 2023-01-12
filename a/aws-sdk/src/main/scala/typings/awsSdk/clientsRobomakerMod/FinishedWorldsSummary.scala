@@ -28,7 +28,8 @@ object FinishedWorldsSummary {
     __obj.asInstanceOf[FinishedWorldsSummary]
   }
   
-  extension [Self <: FinishedWorldsSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinishedWorldsSummary] (val x: Self) extends AnyVal {
     
     inline def setFailureSummary(value: FailureSummary): Self = StObject.set(x, "failureSummary", value.asInstanceOf[js.Any])
     

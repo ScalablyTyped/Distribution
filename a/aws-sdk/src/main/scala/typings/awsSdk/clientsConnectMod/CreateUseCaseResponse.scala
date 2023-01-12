@@ -23,7 +23,8 @@ object CreateUseCaseResponse {
     __obj.asInstanceOf[CreateUseCaseResponse]
   }
   
-  extension [Self <: CreateUseCaseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUseCaseResponse] (val x: Self) extends AnyVal {
     
     inline def setUseCaseArn(value: ARN): Self = StObject.set(x, "UseCaseArn", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object PhoneNumberAssociation {
     __obj.asInstanceOf[PhoneNumberAssociation]
   }
   
-  extension [Self <: PhoneNumberAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneNumberAssociation] (val x: Self) extends AnyVal {
     
     inline def setAssociatedTimestamp(value: js.Date): Self = StObject.set(x, "AssociatedTimestamp", value.asInstanceOf[js.Any])
     

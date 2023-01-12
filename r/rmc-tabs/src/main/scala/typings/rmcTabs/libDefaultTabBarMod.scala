@@ -88,7 +88,8 @@ object libDefaultTabBarMod {
       __obj.asInstanceOf[PropsType]
     }
     
-    extension [Self <: PropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsType] (val x: Self) extends AnyVal {
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       

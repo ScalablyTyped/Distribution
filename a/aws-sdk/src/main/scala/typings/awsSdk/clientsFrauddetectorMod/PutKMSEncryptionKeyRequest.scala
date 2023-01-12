@@ -18,7 +18,8 @@ object PutKMSEncryptionKeyRequest {
     __obj.asInstanceOf[PutKMSEncryptionKeyRequest]
   }
   
-  extension [Self <: PutKMSEncryptionKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutKMSEncryptionKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setKmsEncryptionKeyArn(value: KmsEncryptionKeyArn): Self = StObject.set(x, "kmsEncryptionKeyArn", value.asInstanceOf[js.Any])
   }

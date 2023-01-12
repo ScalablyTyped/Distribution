@@ -18,7 +18,8 @@ object GroupAssignmentTarget {
     __obj.asInstanceOf[GroupAssignmentTarget]
   }
   
-  extension [Self <: GroupAssignmentTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupAssignmentTarget] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: NullableOption[String]): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object ASPxClientMovingAverage {
     __obj.asInstanceOf[ASPxClientMovingAverage]
   }
   
-  extension [Self <: ASPxClientMovingAverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientMovingAverage] (val x: Self) extends AnyVal {
     
     inline def setEnvelopePercent(value: Double): Self = StObject.set(x, "envelopePercent", value.asInstanceOf[js.Any])
     

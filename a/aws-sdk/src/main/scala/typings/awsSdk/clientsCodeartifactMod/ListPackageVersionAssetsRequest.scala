@@ -66,7 +66,8 @@ object ListPackageVersionAssetsRequest {
     __obj.asInstanceOf[ListPackageVersionAssetsRequest]
   }
   
-  extension [Self <: ListPackageVersionAssetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPackageVersionAssetsRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

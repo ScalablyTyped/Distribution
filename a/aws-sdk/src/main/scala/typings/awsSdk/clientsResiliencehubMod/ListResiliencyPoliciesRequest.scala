@@ -28,7 +28,8 @@ object ListResiliencyPoliciesRequest {
     __obj.asInstanceOf[ListResiliencyPoliciesRequest]
   }
   
-  extension [Self <: ListResiliencyPoliciesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResiliencyPoliciesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object ResourceRecordSetsListResponse {
     __obj.asInstanceOf[ResourceRecordSetsListResponse]
   }
   
-  extension [Self <: ResourceRecordSetsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceRecordSetsListResponse] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: ResponseHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

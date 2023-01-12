@@ -99,7 +99,8 @@ object mod {
       __obj.asInstanceOf[TurnOptions]
     }
     
-    extension [Self <: TurnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TurnOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthMech(value: TurnAuthMech): Self = StObject.set(x, "authMech", value.asInstanceOf[js.Any])
       
@@ -213,7 +214,8 @@ object mod {
       __obj.asInstanceOf[TurnProps]
     }
     
-    extension [Self <: TurnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TurnProps] (val x: Self) extends AnyVal {
       
       inline def setAuthMech(value: TurnAuthMech): Self = StObject.set(x, "authMech", value.asInstanceOf[js.Any])
       

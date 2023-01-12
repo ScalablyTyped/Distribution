@@ -70,7 +70,8 @@ object RecursivePartialPartialSlAllowTouchTrack {
     __obj.asInstanceOf[RecursivePartialPartialSlAllowTouchTrack]
   }
   
-  extension [Self <: RecursivePartialPartialSlAllowTouchTrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialPartialSlAllowTouchTrack] (val x: Self) extends AnyVal {
     
     inline def setAllowTouchTrack(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "allowTouchTrack", value.asInstanceOf[js.Any])
     

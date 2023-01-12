@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[ConnectBusboyOptions]
     }
     
-    extension [Self <: ConnectBusboyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectBusboyOptions] (val x: Self) extends AnyVal {
       
       inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object mod {
           __obj.asInstanceOf[Request]
         }
         
-        extension [Self <: Request](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
           
           inline def setBusboy(value: Busboy): Self = StObject.set(x, "busboy", value.asInstanceOf[js.Any])
         }

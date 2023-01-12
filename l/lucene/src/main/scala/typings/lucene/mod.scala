@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[ASTField]
     }
     
-    extension [Self <: ASTField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ASTField] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object mod {
       __obj.asInstanceOf[BinaryAST]
     }
     
-    extension [Self <: BinaryAST](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinaryAST] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: AST | Node): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object mod {
       __obj.asInstanceOf[LeftOnlyAST]
     }
     
-    extension [Self <: LeftOnlyAST](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeftOnlyAST] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: AST | Node): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -176,7 +179,8 @@ object mod {
       __obj.asInstanceOf[NodeField]
     }
     
-    extension [Self <: NodeField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeField] (val x: Self) extends AnyVal {
       
       inline def setField(value: String | LessthansignimplicitGreaterthansign): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -209,7 +213,8 @@ object mod {
       __obj.asInstanceOf[NodeRangedTerm]
     }
     
-    extension [Self <: NodeRangedTerm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeRangedTerm] (val x: Self) extends AnyVal {
       
       inline def setInclusive(value: both | none | left | right): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
       
@@ -251,7 +256,8 @@ object mod {
       __obj.asInstanceOf[NodeTerm]
     }
     
-    extension [Self <: NodeTerm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeTerm] (val x: Self) extends AnyVal {
       
       inline def setBoost(value: Double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
       
@@ -312,7 +318,8 @@ object mod {
       __obj.asInstanceOf[Parser]
     }
     
-    extension [Self <: Parser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parser] (val x: Self) extends AnyVal {
       
       inline def setEscape(value: String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
@@ -335,7 +342,8 @@ object mod {
       __obj.asInstanceOf[TermLocation]
     }
     
-    extension [Self <: TermLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TermLocation] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

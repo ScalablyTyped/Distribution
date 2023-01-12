@@ -43,7 +43,8 @@ object ScheduledQueryRunSummary {
     __obj.asInstanceOf[ScheduledQueryRunSummary]
   }
   
-  extension [Self <: ScheduledQueryRunSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledQueryRunSummary] (val x: Self) extends AnyVal {
     
     inline def setErrorReportLocation(value: ErrorReportLocation): Self = StObject.set(x, "ErrorReportLocation", value.asInstanceOf[js.Any])
     

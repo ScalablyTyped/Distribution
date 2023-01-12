@@ -38,7 +38,8 @@ object RequestParameters {
     __obj.asInstanceOf[RequestParameters]
   }
   
-  extension [Self <: RequestParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestParameters] (val x: Self) extends AnyVal {
     
     inline def setCollectResourceTiming(value: Boolean): Self = StObject.set(x, "collectResourceTiming", value.asInstanceOf[js.Any])
     

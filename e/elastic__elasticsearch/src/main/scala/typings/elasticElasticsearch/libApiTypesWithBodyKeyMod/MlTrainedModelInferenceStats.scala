@@ -29,7 +29,8 @@ object MlTrainedModelInferenceStats {
     __obj.asInstanceOf[MlTrainedModelInferenceStats]
   }
   
-  extension [Self <: MlTrainedModelInferenceStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTrainedModelInferenceStats] (val x: Self) extends AnyVal {
     
     inline def setCache_miss_count(value: integer): Self = StObject.set(x, "cache_miss_count", value.asInstanceOf[js.Any])
     

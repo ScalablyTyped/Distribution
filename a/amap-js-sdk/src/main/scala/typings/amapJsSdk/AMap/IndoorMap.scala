@@ -56,7 +56,8 @@ object IndoorMap {
     __obj.asInstanceOf[IndoorMap]
   }
   
-  extension [Self <: IndoorMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndoorMap] (val x: Self) extends AnyVal {
     
     inline def setGetOpacity(value: () => Double): Self = StObject.set(x, "getOpacity", js.Any.fromFunction0(value))
     

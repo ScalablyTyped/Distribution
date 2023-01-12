@@ -474,7 +474,8 @@ object replMod {
       __obj.asInstanceOf[REPLCommand]
     }
     
-    extension [Self <: REPLCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: REPLCommand] (val x: Self) extends AnyVal {
       
       inline def setAction(value: REPLCommandAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -604,7 +605,8 @@ object replMod {
       __obj.asInstanceOf[ReplOptions]
     }
     
-    extension [Self <: ReplOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplOptions] (val x: Self) extends AnyVal {
       
       inline def setBreakEvalOnSigint(value: Boolean): Self = StObject.set(x, "breakEvalOnSigint", value.asInstanceOf[js.Any])
       

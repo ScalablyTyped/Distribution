@@ -18,7 +18,8 @@ object CreatePlayerSessionOutput {
     __obj.asInstanceOf[CreatePlayerSessionOutput]
   }
   
-  extension [Self <: CreatePlayerSessionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePlayerSessionOutput] (val x: Self) extends AnyVal {
     
     inline def setPlayerSession(value: PlayerSession): Self = StObject.set(x, "PlayerSession", value.asInstanceOf[js.Any])
     

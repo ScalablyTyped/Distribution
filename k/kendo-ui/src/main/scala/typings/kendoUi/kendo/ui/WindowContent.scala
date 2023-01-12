@@ -21,7 +21,8 @@ object WindowContent {
     __obj.asInstanceOf[WindowContent]
   }
   
-  extension [Self <: WindowContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowContent] (val x: Self) extends AnyVal {
     
     inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

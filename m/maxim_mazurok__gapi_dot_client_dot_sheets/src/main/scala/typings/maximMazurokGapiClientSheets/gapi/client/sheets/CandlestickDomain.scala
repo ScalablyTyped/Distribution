@@ -19,7 +19,8 @@ object CandlestickDomain {
     __obj.asInstanceOf[CandlestickDomain]
   }
   
-  extension [Self <: CandlestickDomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CandlestickDomain] (val x: Self) extends AnyVal {
     
     inline def setData(value: ChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

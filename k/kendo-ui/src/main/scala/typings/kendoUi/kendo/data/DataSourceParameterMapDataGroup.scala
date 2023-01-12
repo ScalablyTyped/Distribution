@@ -19,7 +19,8 @@ object DataSourceParameterMapDataGroup {
     __obj.asInstanceOf[DataSourceParameterMapDataGroup]
   }
   
-  extension [Self <: DataSourceParameterMapDataGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceParameterMapDataGroup] (val x: Self) extends AnyVal {
     
     inline def setAggregate(value: js.Array[DataSourceParameterMapDataAggregate]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object SearchInResourceRequest {
     __obj.asInstanceOf[SearchInResourceRequest]
   }
   
-  extension [Self <: SearchInResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchInResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     

@@ -88,7 +88,8 @@ object CellFormat {
     __obj.asInstanceOf[CellFormat]
   }
   
-  extension [Self <: CellFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellFormat] (val x: Self) extends AnyVal {
     
     inline def setAddIndent(value: Boolean): Self = StObject.set(x, "AddIndent", value.asInstanceOf[js.Any])
     

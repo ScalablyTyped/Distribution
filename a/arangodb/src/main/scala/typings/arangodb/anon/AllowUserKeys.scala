@@ -22,7 +22,8 @@ object AllowUserKeys {
     __obj.asInstanceOf[AllowUserKeys]
   }
   
-  extension [Self <: AllowUserKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowUserKeys] (val x: Self) extends AnyVal {
     
     inline def setAllowUserKeys(value: Boolean): Self = StObject.set(x, "allowUserKeys", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object PropertyDifference {
     __obj.asInstanceOf[PropertyDifference]
   }
   
-  extension [Self <: PropertyDifference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyDifference] (val x: Self) extends AnyVal {
     
     inline def setActualValue(value: PropertyValue): Self = StObject.set(x, "ActualValue", value.asInstanceOf[js.Any])
     

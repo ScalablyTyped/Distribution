@@ -19,7 +19,8 @@ object AppRestrictionsSchema {
     __obj.asInstanceOf[AppRestrictionsSchema]
   }
   
-  extension [Self <: AppRestrictionsSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppRestrictionsSchema] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

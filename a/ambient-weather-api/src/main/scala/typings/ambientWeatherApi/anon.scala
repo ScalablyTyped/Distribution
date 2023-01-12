@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Coordinates]
     }
     
-    extension [Self <: Coordinates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coordinates] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -342,7 +343,8 @@ object anon {
       __obj.asInstanceOf[DeviceDatadeviceDevice]
     }
     
-    extension [Self <: DeviceDatadeviceDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceDatadeviceDevice] (val x: Self) extends AnyVal {
       
       inline def set24hourrainin(value: Double): Self = StObject.set(x, "24hourrainin", value.asInstanceOf[js.Any])
       
@@ -761,7 +763,8 @@ object anon {
       __obj.asInstanceOf[Devices]
     }
     
-    extension [Self <: Devices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Devices] (val x: Self) extends AnyVal {
       
       inline def setDevices(value: js.Array[Device]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
       
@@ -782,7 +785,8 @@ object anon {
       __obj.asInstanceOf[EndDate]
     }
     
-    extension [Self <: EndDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndDate] (val x: Self) extends AnyVal {
       
       inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       

@@ -42,7 +42,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setCentralDifference(value: Boolean): Self = StObject.set(x, "centralDifference", value.asInstanceOf[js.Any])
       

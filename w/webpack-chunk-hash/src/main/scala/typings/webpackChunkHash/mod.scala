@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[WebpackChunkHashPluginOptions]
     }
     
-    extension [Self <: WebpackChunkHashPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebpackChunkHashPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalHashContent(value: /* chunk */ Any => String): Self = StObject.set(x, "additionalHashContent", js.Any.fromFunction1(value))
       

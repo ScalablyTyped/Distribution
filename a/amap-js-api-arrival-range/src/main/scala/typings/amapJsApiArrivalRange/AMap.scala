@@ -56,7 +56,8 @@ object AMap {
         __obj.asInstanceOf[EventMap]
       }
       
-      extension [Self <: EventMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
         
         inline def setError(value: Event_[error, Info]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       }
@@ -88,7 +89,8 @@ object AMap {
         __obj.asInstanceOf[SearchOptions]
       }
       
-      extension [Self <: SearchOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
         
         inline def setDestination(value: LocationValue | js.Array[LocationValue]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
         
@@ -133,7 +135,8 @@ object AMap {
         __obj.asInstanceOf[SearchResult]
       }
       
-      extension [Self <: SearchResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
         
         inline def setBounds(value: js.Array[js.Array[js.Array[js.Array[String]]]]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         

@@ -31,7 +31,8 @@ object typesDescribeTableOutputMod {
       __obj.asInstanceOf[DescribeTableOutput]
     }
     
-    extension [Self <: DescribeTableOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeTableOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

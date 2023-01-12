@@ -17,7 +17,8 @@ object MacOptions {
     __obj.asInstanceOf[MacOptions]
   }
   
-  extension [Self <: MacOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MacOptions] (val x: Self) extends AnyVal {
     
     inline def setNetworkVersion(value: Boolean): Self = StObject.set(x, "networkVersion", value.asInstanceOf[js.Any])
     

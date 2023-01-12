@@ -43,7 +43,8 @@ object JoinInstruction {
     __obj.asInstanceOf[JoinInstruction]
   }
   
-  extension [Self <: JoinInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinInstruction] (val x: Self) extends AnyVal {
     
     inline def setLeftJoinKeyProperties(value: JoinKeyProperties): Self = StObject.set(x, "LeftJoinKeyProperties", value.asInstanceOf[js.Any])
     

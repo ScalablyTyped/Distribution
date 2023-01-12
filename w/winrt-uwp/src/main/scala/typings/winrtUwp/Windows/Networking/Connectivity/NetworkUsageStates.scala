@@ -20,7 +20,8 @@ object NetworkUsageStates {
     __obj.asInstanceOf[NetworkUsageStates]
   }
   
-  extension [Self <: NetworkUsageStates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkUsageStates] (val x: Self) extends AnyVal {
     
     inline def setRoaming(value: TriStates): Self = StObject.set(x, "roaming", value.asInstanceOf[js.Any])
     

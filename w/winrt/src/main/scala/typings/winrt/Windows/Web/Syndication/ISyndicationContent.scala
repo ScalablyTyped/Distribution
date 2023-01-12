@@ -34,7 +34,8 @@ object ISyndicationContent {
     __obj.asInstanceOf[ISyndicationContent]
   }
   
-  extension [Self <: ISyndicationContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyndicationContent] (val x: Self) extends AnyVal {
     
     inline def setSourceUri(value: Uri): Self = StObject.set(x, "sourceUri", value.asInstanceOf[js.Any])
   }

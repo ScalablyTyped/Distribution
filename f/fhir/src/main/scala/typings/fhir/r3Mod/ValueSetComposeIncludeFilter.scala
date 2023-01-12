@@ -49,7 +49,8 @@ object ValueSetComposeIncludeFilter {
     __obj.asInstanceOf[ValueSetComposeIncludeFilter]
   }
   
-  extension [Self <: ValueSetComposeIncludeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueSetComposeIncludeFilter] (val x: Self) extends AnyVal {
     
     inline def setOp(
       value: Equalssign | `is-a` | `descendent-of` | `is-not-a` | regex | in | `not-in` | generalizes | exists

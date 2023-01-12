@@ -19,7 +19,8 @@ object FacilitatedDetails {
     __obj.asInstanceOf[FacilitatedDetails]
   }
   
-  extension [Self <: FacilitatedDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacilitatedDetails] (val x: Self) extends AnyVal {
     
     inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object ILanguageServiceHost {
     __obj.asInstanceOf[ILanguageServiceHost]
   }
   
-  extension [Self <: ILanguageServiceHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILanguageServiceHost] (val x: Self) extends AnyVal {
     
     inline def setGetCompilationSettings(value: () => CompilationSettings): Self = StObject.set(x, "getCompilationSettings", js.Any.fromFunction0(value))
     

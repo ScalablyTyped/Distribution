@@ -34,7 +34,8 @@ object SuggestionResult {
     __obj.asInstanceOf[SuggestionResult]
   }
   
-  extension [Self <: SuggestionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestionResult] (val x: Self) extends AnyVal {
     
     inline def setIsCollection(value: Boolean): Self = StObject.set(x, "isCollection", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object FreeBusyRequestItem {
     __obj.asInstanceOf[FreeBusyRequestItem]
   }
   
-  extension [Self <: FreeBusyRequestItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreeBusyRequestItem] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

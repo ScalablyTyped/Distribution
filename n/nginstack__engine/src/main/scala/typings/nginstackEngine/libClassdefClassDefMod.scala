@@ -74,7 +74,8 @@ object libClassdefClassDefMod {
       __obj.asInstanceOf[ClassDef]
     }
     
-    extension [Self <: ClassDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassDef] (val x: Self) extends AnyVal {
       
       inline def setClassKey(value: Double): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

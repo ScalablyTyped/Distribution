@@ -17,7 +17,8 @@ object IPickerClosingOperation {
     __obj.asInstanceOf[IPickerClosingOperation]
   }
   
-  extension [Self <: IPickerClosingOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPickerClosingOperation] (val x: Self) extends AnyVal {
     
     inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     

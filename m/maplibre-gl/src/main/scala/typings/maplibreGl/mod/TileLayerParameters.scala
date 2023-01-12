@@ -49,7 +49,8 @@ object TileLayerParameters {
     __obj.asInstanceOf[TileLayerParameters]
   }
   
-  extension [Self <: TileLayerParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayerParameters] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: SymbolBucket): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

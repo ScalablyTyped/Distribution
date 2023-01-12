@@ -25,7 +25,8 @@ object htmlDataProcessorOptions {
     __obj.asInstanceOf[htmlDataProcessorOptions]
   }
   
-  extension [Self <: htmlDataProcessorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: htmlDataProcessorOptions] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object ShortcutItem {
     __obj.asInstanceOf[ShortcutItem]
   }
   
-  extension [Self <: ShortcutItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShortcutItem] (val x: Self) extends AnyVal {
     
     inline def setCtrl(value: Boolean): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
     

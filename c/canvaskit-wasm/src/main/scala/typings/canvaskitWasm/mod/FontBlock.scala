@@ -24,7 +24,8 @@ object FontBlock {
     __obj.asInstanceOf[FontBlock]
   }
   
-  extension [Self <: FontBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontBlock] (val x: Self) extends AnyVal {
     
     inline def setFakeBold(value: Boolean): Self = StObject.set(x, "fakeBold", value.asInstanceOf[js.Any])
     

@@ -962,7 +962,8 @@ object Dfareporting {
         __obj.asInstanceOf[AccountActiveAdSummariesCollection]
       }
       
-      extension [Self <: AccountActiveAdSummariesCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountActiveAdSummariesCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, String) => AccountActiveAdSummary): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       }
@@ -986,7 +987,8 @@ object Dfareporting {
         __obj.asInstanceOf[AccountPermissionGroupsCollection]
       }
       
-      extension [Self <: AccountPermissionGroupsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountPermissionGroupsCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, String) => AccountPermissionGroup): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
@@ -1009,7 +1011,8 @@ object Dfareporting {
         __obj.asInstanceOf[AccountPermissionsCollection]
       }
       
-      extension [Self <: AccountPermissionsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountPermissionsCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, String) => AccountPermission): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
@@ -1155,7 +1158,8 @@ object Dfareporting {
         __obj.asInstanceOf[BrowsersCollection]
       }
       
-      extension [Self <: BrowsersCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BrowsersCollection] (val x: Self) extends AnyVal {
         
         inline def setList(value: String => BrowsersListResponse): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
       }
@@ -1230,7 +1234,8 @@ object Dfareporting {
         __obj.asInstanceOf[ConnectionTypesCollection]
       }
       
-      extension [Self <: ConnectionTypesCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConnectionTypesCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, String) => ConnectionType): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
@@ -1280,7 +1285,8 @@ object Dfareporting {
         __obj.asInstanceOf[ConversionsCollection]
       }
       
-      extension [Self <: ConversionsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConversionsCollection] (val x: Self) extends AnyVal {
         
         inline def setBatchinsert(value: (ConversionsBatchInsertRequest, String) => ConversionsBatchInsertResponse): Self = StObject.set(x, "batchinsert", js.Any.fromFunction2(value))
         
@@ -1303,7 +1309,8 @@ object Dfareporting {
         __obj.asInstanceOf[CountriesCollection]
       }
       
-      extension [Self <: CountriesCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CountriesCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, String) => Country): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
@@ -1577,7 +1584,8 @@ object Dfareporting {
         __obj.asInstanceOf[LanguagesCollection]
       }
       
-      extension [Self <: LanguagesCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LanguagesCollection] (val x: Self) extends AnyVal {
         
         inline def setList(value: String => LanguagesListResponse): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
       }
@@ -1595,7 +1603,8 @@ object Dfareporting {
         __obj.asInstanceOf[MetrosCollection]
       }
       
-      extension [Self <: MetrosCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MetrosCollection] (val x: Self) extends AnyVal {
         
         inline def setList(value: String => MetrosListResponse): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
       }
@@ -1628,7 +1637,8 @@ object Dfareporting {
         __obj.asInstanceOf[MobileCarriersCollection]
       }
       
-      extension [Self <: MobileCarriersCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MobileCarriersCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, String) => MobileCarrier): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
@@ -1654,7 +1664,8 @@ object Dfareporting {
         __obj.asInstanceOf[OperatingSystemVersionsCollection]
       }
       
-      extension [Self <: OperatingSystemVersionsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OperatingSystemVersionsCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, String) => OperatingSystemVersion): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
@@ -1677,7 +1688,8 @@ object Dfareporting {
         __obj.asInstanceOf[OperatingSystemsCollection]
       }
       
-      extension [Self <: OperatingSystemsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OperatingSystemsCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, String) => OperatingSystem): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
@@ -1795,7 +1807,8 @@ object Dfareporting {
         __obj.asInstanceOf[PlatformTypesCollection]
       }
       
-      extension [Self <: PlatformTypesCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlatformTypesCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, String) => PlatformType): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
@@ -1818,7 +1831,8 @@ object Dfareporting {
         __obj.asInstanceOf[PostalCodesCollection]
       }
       
-      extension [Self <: PostalCodesCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PostalCodesCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, String) => PostalCode): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
@@ -1850,7 +1864,8 @@ object Dfareporting {
         __obj.asInstanceOf[RegionsCollection]
       }
       
-      extension [Self <: RegionsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RegionsCollection] (val x: Self) extends AnyVal {
         
         inline def setList(value: String => RegionsListResponse): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
       }
@@ -1878,7 +1893,8 @@ object Dfareporting {
         __obj.asInstanceOf[RemarketingListSharesCollection]
       }
       
-      extension [Self <: RemarketingListSharesCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RemarketingListSharesCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, String) => RemarketingListShare): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
@@ -1923,7 +1939,8 @@ object Dfareporting {
           __obj.asInstanceOf[CompatibleFieldsCollection]
         }
         
-        extension [Self <: CompatibleFieldsCollection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: CompatibleFieldsCollection] (val x: Self) extends AnyVal {
           
           inline def setQuery(value: (Report, String) => CompatibleFields): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
         }
@@ -2082,7 +2099,8 @@ object Dfareporting {
         __obj.asInstanceOf[UserProfilesCollection]
       }
       
-      extension [Self <: UserProfilesCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserProfilesCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: String => UserProfile): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
         
@@ -2108,7 +2126,8 @@ object Dfareporting {
         __obj.asInstanceOf[UserRolePermissionGroupsCollection]
       }
       
-      extension [Self <: UserRolePermissionGroupsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserRolePermissionGroupsCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, String) => UserRolePermissionGroup): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
@@ -2167,7 +2186,8 @@ object Dfareporting {
         __obj.asInstanceOf[VideoFormatsCollection]
       }
       
-      extension [Self <: VideoFormatsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoFormatsCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, Double) => VideoFormat): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
@@ -2176,7 +2196,8 @@ object Dfareporting {
     }
   }
   
-  extension [Self <: Dfareporting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dfareporting] (val x: Self) extends AnyVal {
     
     inline def setAccountActiveAdSummaries(value: AccountActiveAdSummariesCollection): Self = StObject.set(x, "AccountActiveAdSummaries", value.asInstanceOf[js.Any])
     
@@ -2740,7 +2761,8 @@ object Dfareporting {
         __obj.asInstanceOf[Account]
       }
       
-      extension [Self <: Account](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
         
         inline def setAccountPermissionIds(value: js.Array[String]): Self = StObject.set(x, "accountPermissionIds", value.asInstanceOf[js.Any])
         
@@ -2843,7 +2865,8 @@ object Dfareporting {
         __obj.asInstanceOf[AccountActiveAdSummary]
       }
       
-      extension [Self <: AccountActiveAdSummary](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountActiveAdSummary] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -2888,7 +2911,8 @@ object Dfareporting {
         __obj.asInstanceOf[AccountPermission]
       }
       
-      extension [Self <: AccountPermission](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountPermission] (val x: Self) extends AnyVal {
         
         inline def setAccountProfiles(value: js.Array[String]): Self = StObject.set(x, "accountProfiles", value.asInstanceOf[js.Any])
         
@@ -2933,7 +2957,8 @@ object Dfareporting {
         __obj.asInstanceOf[AccountPermissionGroup]
       }
       
-      extension [Self <: AccountPermissionGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountPermissionGroup] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -2962,7 +2987,8 @@ object Dfareporting {
         __obj.asInstanceOf[AccountPermissionGroupsListResponse]
       }
       
-      extension [Self <: AccountPermissionGroupsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountPermissionGroupsListResponse] (val x: Self) extends AnyVal {
         
         inline def setAccountPermissionGroups(value: js.Array[AccountPermissionGroup]): Self = StObject.set(x, "accountPermissionGroups", value.asInstanceOf[js.Any])
         
@@ -2989,7 +3015,8 @@ object Dfareporting {
         __obj.asInstanceOf[AccountPermissionsListResponse]
       }
       
-      extension [Self <: AccountPermissionsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountPermissionsListResponse] (val x: Self) extends AnyVal {
         
         inline def setAccountPermissions(value: js.Array[AccountPermission]): Self = StObject.set(x, "accountPermissions", value.asInstanceOf[js.Any])
         
@@ -3044,7 +3071,8 @@ object Dfareporting {
         __obj.asInstanceOf[AccountUserProfile]
       }
       
-      extension [Self <: AccountUserProfile](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountUserProfile] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -3127,7 +3155,8 @@ object Dfareporting {
         __obj.asInstanceOf[AccountUserProfilesListResponse]
       }
       
-      extension [Self <: AccountUserProfilesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountUserProfilesListResponse] (val x: Self) extends AnyVal {
         
         inline def setAccountUserProfiles(value: js.Array[AccountUserProfile]): Self = StObject.set(x, "accountUserProfiles", value.asInstanceOf[js.Any])
         
@@ -3160,7 +3189,8 @@ object Dfareporting {
         __obj.asInstanceOf[AccountsListResponse]
       }
       
-      extension [Self <: AccountsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountsListResponse] (val x: Self) extends AnyVal {
         
         inline def setAccounts(value: js.Array[Account]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
         
@@ -3193,7 +3223,8 @@ object Dfareporting {
         __obj.asInstanceOf[Activities]
       }
       
-      extension [Self <: Activities](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Activities] (val x: Self) extends AnyVal {
         
         inline def setFilters(value: js.Array[DimensionValue]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
         
@@ -3300,7 +3331,8 @@ object Dfareporting {
         __obj.asInstanceOf[Ad]
       }
       
-      extension [Self <: Ad](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Ad] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -3483,7 +3515,8 @@ object Dfareporting {
         __obj.asInstanceOf[AdBlockingConfiguration]
       }
       
-      extension [Self <: AdBlockingConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdBlockingConfiguration] (val x: Self) extends AnyVal {
         
         inline def setClickThroughUrl(value: String): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
         
@@ -3528,7 +3561,8 @@ object Dfareporting {
         __obj.asInstanceOf[AdSlot]
       }
       
-      extension [Self <: AdSlot](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdSlot] (val x: Self) extends AnyVal {
         
         inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
         
@@ -3579,7 +3613,8 @@ object Dfareporting {
         __obj.asInstanceOf[AdsListResponse]
       }
       
-      extension [Self <: AdsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdsListResponse] (val x: Self) extends AnyVal {
         
         inline def setAds(value: js.Array[Ad]): Self = StObject.set(x, "ads", value.asInstanceOf[js.Any])
         
@@ -3636,7 +3671,8 @@ object Dfareporting {
         __obj.asInstanceOf[Advertiser]
       }
       
-      extension [Self <: Advertiser](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Advertiser] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -3717,7 +3753,8 @@ object Dfareporting {
         __obj.asInstanceOf[AdvertiserGroup]
       }
       
-      extension [Self <: AdvertiserGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdvertiserGroup] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -3752,7 +3789,8 @@ object Dfareporting {
         __obj.asInstanceOf[AdvertiserGroupsListResponse]
       }
       
-      extension [Self <: AdvertiserGroupsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdvertiserGroupsListResponse] (val x: Self) extends AnyVal {
         
         inline def setAdvertiserGroups(value: js.Array[AdvertiserGroup]): Self = StObject.set(x, "advertiserGroups", value.asInstanceOf[js.Any])
         
@@ -3785,7 +3823,8 @@ object Dfareporting {
         __obj.asInstanceOf[AdvertiserLandingPagesListResponse]
       }
       
-      extension [Self <: AdvertiserLandingPagesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdvertiserLandingPagesListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3818,7 +3857,8 @@ object Dfareporting {
         __obj.asInstanceOf[AdvertisersListResponse]
       }
       
-      extension [Self <: AdvertisersListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdvertisersListResponse] (val x: Self) extends AnyVal {
         
         inline def setAdvertisers(value: js.Array[Advertiser]): Self = StObject.set(x, "advertisers", value.asInstanceOf[js.Any])
         
@@ -3851,7 +3891,8 @@ object Dfareporting {
         __obj.asInstanceOf[AudienceSegment]
       }
       
-      extension [Self <: AudienceSegment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AudienceSegment] (val x: Self) extends AnyVal {
         
         inline def setAllocation(value: Double): Self = StObject.set(x, "allocation", value.asInstanceOf[js.Any])
         
@@ -3882,7 +3923,8 @@ object Dfareporting {
         __obj.asInstanceOf[AudienceSegmentGroup]
       }
       
-      extension [Self <: AudienceSegmentGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AudienceSegmentGroup] (val x: Self) extends AnyVal {
         
         inline def setAudienceSegments(value: js.Array[AudienceSegment]): Self = StObject.set(x, "audienceSegments", value.asInstanceOf[js.Any])
         
@@ -3921,7 +3963,8 @@ object Dfareporting {
         __obj.asInstanceOf[Browser]
       }
       
-      extension [Self <: Browser](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
         
         inline def setBrowserVersionId(value: String): Self = StObject.set(x, "browserVersionId", value.asInstanceOf[js.Any])
         
@@ -3962,7 +4005,8 @@ object Dfareporting {
         __obj.asInstanceOf[BrowsersListResponse]
       }
       
-      extension [Self <: BrowsersListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BrowsersListResponse] (val x: Self) extends AnyVal {
         
         inline def setBrowsers(value: js.Array[Browser]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
         
@@ -4041,7 +4085,8 @@ object Dfareporting {
         __obj.asInstanceOf[Campaign]
       }
       
-      extension [Self <: Campaign](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Campaign] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -4180,7 +4225,8 @@ object Dfareporting {
         __obj.asInstanceOf[CampaignCreativeAssociation]
       }
       
-      extension [Self <: CampaignCreativeAssociation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CampaignCreativeAssociation] (val x: Self) extends AnyVal {
         
         inline def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
         
@@ -4207,7 +4253,8 @@ object Dfareporting {
         __obj.asInstanceOf[CampaignCreativeAssociationsListResponse]
       }
       
-      extension [Self <: CampaignCreativeAssociationsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CampaignCreativeAssociationsListResponse] (val x: Self) extends AnyVal {
         
         inline def setCampaignCreativeAssociations(value: js.Array[CampaignCreativeAssociation]): Self = StObject.set(x, "campaignCreativeAssociations", value.asInstanceOf[js.Any])
         
@@ -4240,7 +4287,8 @@ object Dfareporting {
         __obj.asInstanceOf[CampaignsListResponse]
       }
       
-      extension [Self <: CampaignsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CampaignsListResponse] (val x: Self) extends AnyVal {
         
         inline def setCampaigns(value: js.Array[Campaign]): Self = StObject.set(x, "campaigns", value.asInstanceOf[js.Any])
         
@@ -4295,7 +4343,8 @@ object Dfareporting {
         __obj.asInstanceOf[ChangeLog]
       }
       
-      extension [Self <: ChangeLog](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChangeLog] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -4370,7 +4419,8 @@ object Dfareporting {
         __obj.asInstanceOf[ChangeLogsListResponse]
       }
       
-      extension [Self <: ChangeLogsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChangeLogsListResponse] (val x: Self) extends AnyVal {
         
         inline def setChangeLogs(value: js.Array[ChangeLog]): Self = StObject.set(x, "changeLogs", value.asInstanceOf[js.Any])
         
@@ -4401,7 +4451,8 @@ object Dfareporting {
         __obj.asInstanceOf[CitiesListResponse]
       }
       
-      extension [Self <: CitiesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CitiesListResponse] (val x: Self) extends AnyVal {
         
         inline def setCities(value: js.Array[City]): Self = StObject.set(x, "cities", value.asInstanceOf[js.Any])
         
@@ -4442,7 +4493,8 @@ object Dfareporting {
         __obj.asInstanceOf[City]
       }
       
-      extension [Self <: City](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: City] (val x: Self) extends AnyVal {
         
         inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
         
@@ -4497,7 +4549,8 @@ object Dfareporting {
         __obj.asInstanceOf[ClickTag]
       }
       
-      extension [Self <: ClickTag](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClickTag] (val x: Self) extends AnyVal {
         
         inline def setClickThroughUrl(value: CreativeClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
         
@@ -4530,7 +4583,8 @@ object Dfareporting {
         __obj.asInstanceOf[ClickThroughUrl]
       }
       
-      extension [Self <: ClickThroughUrl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClickThroughUrl] (val x: Self) extends AnyVal {
         
         inline def setComputedClickThroughUrl(value: String): Self = StObject.set(x, "computedClickThroughUrl", value.asInstanceOf[js.Any])
         
@@ -4563,7 +4617,8 @@ object Dfareporting {
         __obj.asInstanceOf[ClickThroughUrlSuffixProperties]
       }
       
-      extension [Self <: ClickThroughUrlSuffixProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClickThroughUrlSuffixProperties] (val x: Self) extends AnyVal {
         
         inline def setClickThroughUrlSuffix(value: String): Self = StObject.set(x, "clickThroughUrlSuffix", value.asInstanceOf[js.Any])
         
@@ -4588,7 +4643,8 @@ object Dfareporting {
         __obj.asInstanceOf[CompanionClickThroughOverride]
       }
       
-      extension [Self <: CompanionClickThroughOverride](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CompanionClickThroughOverride] (val x: Self) extends AnyVal {
         
         inline def setClickThroughUrl(value: ClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
         
@@ -4617,7 +4673,8 @@ object Dfareporting {
         __obj.asInstanceOf[CompanionSetting]
       }
       
-      extension [Self <: CompanionSetting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CompanionSetting] (val x: Self) extends AnyVal {
         
         inline def setCompanionsDisabled(value: Boolean): Self = StObject.set(x, "companionsDisabled", value.asInstanceOf[js.Any])
         
@@ -4660,7 +4717,8 @@ object Dfareporting {
         __obj.asInstanceOf[CompatibleFields]
       }
       
-      extension [Self <: CompatibleFields](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CompatibleFields] (val x: Self) extends AnyVal {
         
         inline def setCrossDimensionReachReportCompatibleFields(value: CrossDimensionReachReportCompatibleFields): Self = StObject.set(x, "crossDimensionReachReportCompatibleFields", value.asInstanceOf[js.Any])
         
@@ -4703,7 +4761,8 @@ object Dfareporting {
         __obj.asInstanceOf[ConnectionType]
       }
       
-      extension [Self <: ConnectionType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConnectionType] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -4732,7 +4791,8 @@ object Dfareporting {
         __obj.asInstanceOf[ConnectionTypesListResponse]
       }
       
-      extension [Self <: ConnectionTypesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConnectionTypesListResponse] (val x: Self) extends AnyVal {
         
         inline def setConnectionTypes(value: js.Array[ConnectionType]): Self = StObject.set(x, "connectionTypes", value.asInstanceOf[js.Any])
         
@@ -4761,7 +4821,8 @@ object Dfareporting {
         __obj.asInstanceOf[ContentCategoriesListResponse]
       }
       
-      extension [Self <: ContentCategoriesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContentCategoriesListResponse] (val x: Self) extends AnyVal {
         
         inline def setContentCategories(value: js.Array[ContentCategory]): Self = StObject.set(x, "contentCategories", value.asInstanceOf[js.Any])
         
@@ -4796,7 +4857,8 @@ object Dfareporting {
         __obj.asInstanceOf[ContentCategory]
       }
       
-      extension [Self <: ContentCategory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContentCategory] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -4857,7 +4919,8 @@ object Dfareporting {
         __obj.asInstanceOf[Conversion]
       }
       
-      extension [Self <: Conversion](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Conversion] (val x: Self) extends AnyVal {
         
         inline def setChildDirectedTreatment(value: Boolean): Self = StObject.set(x, "childDirectedTreatment", value.asInstanceOf[js.Any])
         
@@ -4944,7 +5007,8 @@ object Dfareporting {
         __obj.asInstanceOf[ConversionError]
       }
       
-      extension [Self <: ConversionError](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConversionError] (val x: Self) extends AnyVal {
         
         inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -4975,7 +5039,8 @@ object Dfareporting {
         __obj.asInstanceOf[ConversionStatus]
       }
       
-      extension [Self <: ConversionStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConversionStatus] (val x: Self) extends AnyVal {
         
         inline def setConversion(value: Conversion): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
         
@@ -5008,7 +5073,8 @@ object Dfareporting {
         __obj.asInstanceOf[ConversionsBatchInsertRequest]
       }
       
-      extension [Self <: ConversionsBatchInsertRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConversionsBatchInsertRequest] (val x: Self) extends AnyVal {
         
         inline def setConversions(value: js.Array[Conversion]): Self = StObject.set(x, "conversions", value.asInstanceOf[js.Any])
         
@@ -5041,7 +5107,8 @@ object Dfareporting {
         __obj.asInstanceOf[ConversionsBatchInsertResponse]
       }
       
-      extension [Self <: ConversionsBatchInsertResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConversionsBatchInsertResponse] (val x: Self) extends AnyVal {
         
         inline def setHasFailures(value: Boolean): Self = StObject.set(x, "hasFailures", value.asInstanceOf[js.Any])
         
@@ -5074,7 +5141,8 @@ object Dfareporting {
         __obj.asInstanceOf[ConversionsBatchUpdateRequest]
       }
       
-      extension [Self <: ConversionsBatchUpdateRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConversionsBatchUpdateRequest] (val x: Self) extends AnyVal {
         
         inline def setConversions(value: js.Array[Conversion]): Self = StObject.set(x, "conversions", value.asInstanceOf[js.Any])
         
@@ -5107,7 +5175,8 @@ object Dfareporting {
         __obj.asInstanceOf[ConversionsBatchUpdateResponse]
       }
       
-      extension [Self <: ConversionsBatchUpdateResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConversionsBatchUpdateResponse] (val x: Self) extends AnyVal {
         
         inline def setHasFailures(value: Boolean): Self = StObject.set(x, "hasFailures", value.asInstanceOf[js.Any])
         
@@ -5138,7 +5207,8 @@ object Dfareporting {
         __obj.asInstanceOf[CountriesListResponse]
       }
       
-      extension [Self <: CountriesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CountriesListResponse] (val x: Self) extends AnyVal {
         
         inline def setCountries(value: js.Array[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
         
@@ -5171,7 +5241,8 @@ object Dfareporting {
         __obj.asInstanceOf[Country]
       }
       
-      extension [Self <: Country](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
         
         inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
         
@@ -5332,7 +5403,8 @@ object Dfareporting {
         __obj.asInstanceOf[Creative]
       }
       
-      extension [Self <: Creative](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Creative] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -5727,7 +5799,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeAsset]
       }
       
-      extension [Self <: CreativeAsset](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeAsset] (val x: Self) extends AnyVal {
         
         inline def setActionScript3(value: Boolean): Self = StObject.set(x, "actionScript3", value.asInstanceOf[js.Any])
         
@@ -5950,7 +6023,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeAssetId]
       }
       
-      extension [Self <: CreativeAssetId](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeAssetId] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -5985,7 +6059,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeAssetMetadata]
       }
       
-      extension [Self <: CreativeAssetMetadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeAssetMetadata] (val x: Self) extends AnyVal {
         
         inline def setAssetIdentifier(value: CreativeAssetId): Self = StObject.set(x, "assetIdentifier", value.asInstanceOf[js.Any])
         
@@ -6036,7 +6111,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeAssetSelection]
       }
       
-      extension [Self <: CreativeAssetSelection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeAssetSelection] (val x: Self) extends AnyVal {
         
         inline def setDefaultAssetId(value: String): Self = StObject.set(x, "defaultAssetId", value.asInstanceOf[js.Any])
         
@@ -6085,7 +6161,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeAssignment]
       }
       
-      extension [Self <: CreativeAssignment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeAssignment] (val x: Self) extends AnyVal {
         
         inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
@@ -6162,7 +6239,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeClickThroughUrl]
       }
       
-      extension [Self <: CreativeClickThroughUrl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeClickThroughUrl] (val x: Self) extends AnyVal {
         
         inline def setComputedClickThroughUrl(value: String): Self = StObject.set(x, "computedClickThroughUrl", value.asInstanceOf[js.Any])
         
@@ -6207,7 +6285,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeCustomEvent]
       }
       
-      extension [Self <: CreativeCustomEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeCustomEvent] (val x: Self) extends AnyVal {
         
         inline def setAdvertiserCustomEventId(value: String): Self = StObject.set(x, "advertiserCustomEventId", value.asInstanceOf[js.Any])
         
@@ -6274,7 +6353,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeField]
       }
       
-      extension [Self <: CreativeField](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeField] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -6319,7 +6399,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeFieldAssignment]
       }
       
-      extension [Self <: CreativeFieldAssignment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeFieldAssignment] (val x: Self) extends AnyVal {
         
         inline def setCreativeFieldId(value: String): Self = StObject.set(x, "creativeFieldId", value.asInstanceOf[js.Any])
         
@@ -6346,7 +6427,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeFieldValue]
       }
       
-      extension [Self <: CreativeFieldValue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeFieldValue] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -6377,7 +6459,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeFieldValuesListResponse]
       }
       
-      extension [Self <: CreativeFieldValuesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeFieldValuesListResponse] (val x: Self) extends AnyVal {
         
         inline def setCreativeFieldValues(value: js.Array[CreativeFieldValue]): Self = StObject.set(x, "creativeFieldValues", value.asInstanceOf[js.Any])
         
@@ -6410,7 +6493,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeFieldsListResponse]
       }
       
-      extension [Self <: CreativeFieldsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeFieldsListResponse] (val x: Self) extends AnyVal {
         
         inline def setCreativeFields(value: js.Array[CreativeField]): Self = StObject.set(x, "creativeFields", value.asInstanceOf[js.Any])
         
@@ -6453,7 +6537,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeGroup]
       }
       
-      extension [Self <: CreativeGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeGroup] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -6502,7 +6587,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeGroupAssignment]
       }
       
-      extension [Self <: CreativeGroupAssignment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeGroupAssignment] (val x: Self) extends AnyVal {
         
         inline def setCreativeGroupId(value: String): Self = StObject.set(x, "creativeGroupId", value.asInstanceOf[js.Any])
         
@@ -6529,7 +6615,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeGroupsListResponse]
       }
       
-      extension [Self <: CreativeGroupsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeGroupsListResponse] (val x: Self) extends AnyVal {
         
         inline def setCreativeGroups(value: js.Array[CreativeGroup]): Self = StObject.set(x, "creativeGroups", value.asInstanceOf[js.Any])
         
@@ -6564,7 +6651,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeOptimizationConfiguration]
       }
       
-      extension [Self <: CreativeOptimizationConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeOptimizationConfiguration] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -6603,7 +6691,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativeRotation]
       }
       
-      extension [Self <: CreativeRotation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeRotation] (val x: Self) extends AnyVal {
         
         inline def setCreativeAssignments(value: js.Array[CreativeAssignment]): Self = StObject.set(x, "creativeAssignments", value.asInstanceOf[js.Any])
         
@@ -6640,7 +6729,8 @@ object Dfareporting {
         __obj.asInstanceOf[CreativesListResponse]
       }
       
-      extension [Self <: CreativesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativesListResponse] (val x: Self) extends AnyVal {
         
         inline def setCreatives(value: js.Array[Creative]): Self = StObject.set(x, "creatives", value.asInstanceOf[js.Any])
         
@@ -6677,7 +6767,8 @@ object Dfareporting {
         __obj.asInstanceOf[CrossDimensionReachReportCompatibleFields]
       }
       
-      extension [Self <: CrossDimensionReachReportCompatibleFields](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CrossDimensionReachReportCompatibleFields] (val x: Self) extends AnyVal {
         
         inline def setBreakdown(value: js.Array[Dimension]): Self = StObject.set(x, "breakdown", value.asInstanceOf[js.Any])
         
@@ -6724,7 +6815,8 @@ object Dfareporting {
         __obj.asInstanceOf[CustomFloodlightVariable]
       }
       
-      extension [Self <: CustomFloodlightVariable](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomFloodlightVariable] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -6753,7 +6845,8 @@ object Dfareporting {
         __obj.asInstanceOf[CustomRichMediaEvents]
       }
       
-      extension [Self <: CustomRichMediaEvents](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomRichMediaEvents] (val x: Self) extends AnyVal {
         
         inline def setFilteredEventIds(value: js.Array[DimensionValue]): Self = StObject.set(x, "filteredEventIds", value.asInstanceOf[js.Any])
         
@@ -6782,7 +6875,8 @@ object Dfareporting {
         __obj.asInstanceOf[CustomViewabilityMetric]
       }
       
-      extension [Self <: CustomViewabilityMetric](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomViewabilityMetric] (val x: Self) extends AnyVal {
         
         inline def setConfiguration(value: CustomViewabilityMetricConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
         
@@ -6815,7 +6909,8 @@ object Dfareporting {
         __obj.asInstanceOf[CustomViewabilityMetricConfiguration]
       }
       
-      extension [Self <: CustomViewabilityMetricConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomViewabilityMetricConfiguration] (val x: Self) extends AnyVal {
         
         inline def setAudible(value: Boolean): Self = StObject.set(x, "audible", value.asInstanceOf[js.Any])
         
@@ -6852,7 +6947,8 @@ object Dfareporting {
         __obj.asInstanceOf[DateRange]
       }
       
-      extension [Self <: DateRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DateRange] (val x: Self) extends AnyVal {
         
         inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
         
@@ -6887,7 +6983,8 @@ object Dfareporting {
         __obj.asInstanceOf[DayPartTargeting]
       }
       
-      extension [Self <: DayPartTargeting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DayPartTargeting] (val x: Self) extends AnyVal {
         
         inline def setDaysOfWeek(value: js.Array[String]): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
         
@@ -6926,7 +7023,8 @@ object Dfareporting {
         __obj.asInstanceOf[DeepLink]
       }
       
-      extension [Self <: DeepLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeepLink] (val x: Self) extends AnyVal {
         
         inline def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
         
@@ -6965,7 +7063,8 @@ object Dfareporting {
         __obj.asInstanceOf[DefaultClickThroughEventTagProperties]
       }
       
-      extension [Self <: DefaultClickThroughEventTagProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DefaultClickThroughEventTagProperties] (val x: Self) extends AnyVal {
         
         inline def setDefaultClickThroughEventTagId(value: String): Self = StObject.set(x, "defaultClickThroughEventTagId", value.asInstanceOf[js.Any])
         
@@ -6994,7 +7093,8 @@ object Dfareporting {
         __obj.asInstanceOf[DeliverySchedule]
       }
       
-      extension [Self <: DeliverySchedule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeliverySchedule] (val x: Self) extends AnyVal {
         
         inline def setFrequencyCap(value: FrequencyCap): Self = StObject.set(x, "frequencyCap", value.asInstanceOf[js.Any])
         
@@ -7033,7 +7133,8 @@ object Dfareporting {
         __obj.asInstanceOf[DfpSettings]
       }
       
-      extension [Self <: DfpSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DfpSettings] (val x: Self) extends AnyVal {
         
         inline def setDfpNetworkCode(value: String): Self = StObject.set(x, "dfpNetworkCode", value.asInstanceOf[js.Any])
         
@@ -7070,7 +7171,8 @@ object Dfareporting {
         __obj.asInstanceOf[Dimension]
       }
       
-      extension [Self <: Dimension](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7097,7 +7199,8 @@ object Dfareporting {
         __obj.asInstanceOf[DimensionFilter]
       }
       
-      extension [Self <: DimensionFilter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DimensionFilter] (val x: Self) extends AnyVal {
         
         inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
         
@@ -7134,7 +7237,8 @@ object Dfareporting {
         __obj.asInstanceOf[DimensionValue]
       }
       
-      extension [Self <: DimensionValue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DimensionValue] (val x: Self) extends AnyVal {
         
         inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
         
@@ -7179,7 +7283,8 @@ object Dfareporting {
         __obj.asInstanceOf[DimensionValueList]
       }
       
-      extension [Self <: DimensionValueList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DimensionValueList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -7220,7 +7325,8 @@ object Dfareporting {
         __obj.asInstanceOf[DimensionValueRequest]
       }
       
-      extension [Self <: DimensionValueRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DimensionValueRequest] (val x: Self) extends AnyVal {
         
         inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
         
@@ -7273,7 +7379,8 @@ object Dfareporting {
         __obj.asInstanceOf[DirectorySite]
       }
       
-      extension [Self <: DirectorySite](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DirectorySite] (val x: Self) extends AnyVal {
         
         inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
@@ -7334,7 +7441,8 @@ object Dfareporting {
         __obj.asInstanceOf[DirectorySiteSettings]
       }
       
-      extension [Self <: DirectorySiteSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DirectorySiteSettings] (val x: Self) extends AnyVal {
         
         inline def setActiveViewOptOut(value: Boolean): Self = StObject.set(x, "activeViewOptOut", value.asInstanceOf[js.Any])
         
@@ -7369,7 +7477,8 @@ object Dfareporting {
         __obj.asInstanceOf[DirectorySitesListResponse]
       }
       
-      extension [Self <: DirectorySitesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DirectorySitesListResponse] (val x: Self) extends AnyVal {
         
         inline def setDirectorySites(value: js.Array[DirectorySite]): Self = StObject.set(x, "directorySites", value.asInstanceOf[js.Any])
         
@@ -7404,7 +7513,8 @@ object Dfareporting {
         __obj.asInstanceOf[DynamicTargetingKey]
       }
       
-      extension [Self <: DynamicTargetingKey](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DynamicTargetingKey] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7437,7 +7547,8 @@ object Dfareporting {
         __obj.asInstanceOf[DynamicTargetingKeysListResponse]
       }
       
-      extension [Self <: DynamicTargetingKeysListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DynamicTargetingKeysListResponse] (val x: Self) extends AnyVal {
         
         inline def setDynamicTargetingKeys(value: js.Array[DynamicTargetingKey]): Self = StObject.set(x, "dynamicTargetingKeys", value.asInstanceOf[js.Any])
         
@@ -7468,7 +7579,8 @@ object Dfareporting {
         __obj.asInstanceOf[EncryptionInfo]
       }
       
-      extension [Self <: EncryptionInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EncryptionInfo] (val x: Self) extends AnyVal {
         
         inline def setEncryptionEntityId(value: String): Self = StObject.set(x, "encryptionEntityId", value.asInstanceOf[js.Any])
         
@@ -7533,7 +7645,8 @@ object Dfareporting {
         __obj.asInstanceOf[EventTag]
       }
       
-      extension [Self <: EventTag](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventTag] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -7624,7 +7737,8 @@ object Dfareporting {
         __obj.asInstanceOf[EventTagOverride]
       }
       
-      extension [Self <: EventTagOverride](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventTagOverride] (val x: Self) extends AnyVal {
         
         inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
         
@@ -7649,7 +7763,8 @@ object Dfareporting {
         __obj.asInstanceOf[EventTagsListResponse]
       }
       
-      extension [Self <: EventTagsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventTagsListResponse] (val x: Self) extends AnyVal {
         
         inline def setEventTags(value: js.Array[EventTag]): Self = StObject.set(x, "eventTags", value.asInstanceOf[js.Any])
         
@@ -7692,7 +7807,8 @@ object Dfareporting {
         __obj.asInstanceOf[File]
       }
       
-      extension [Self <: File](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
         
         inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
         
@@ -7753,7 +7869,8 @@ object Dfareporting {
         __obj.asInstanceOf[FileList]
       }
       
-      extension [Self <: FileList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FileList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -7788,7 +7905,8 @@ object Dfareporting {
         __obj.asInstanceOf[FileUrls]
       }
       
-      extension [Self <: FileUrls](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FileUrls] (val x: Self) extends AnyVal {
         
         inline def setApiUrl(value: String): Self = StObject.set(x, "apiUrl", value.asInstanceOf[js.Any])
         
@@ -7817,7 +7935,8 @@ object Dfareporting {
         __obj.asInstanceOf[Flight]
       }
       
-      extension [Self <: Flight](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Flight] (val x: Self) extends AnyVal {
         
         inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
         
@@ -7852,7 +7971,8 @@ object Dfareporting {
         __obj.asInstanceOf[FloodlightActivitiesGenerateTagResponse]
       }
       
-      extension [Self <: FloodlightActivitiesGenerateTagResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FloodlightActivitiesGenerateTagResponse] (val x: Self) extends AnyVal {
         
         inline def setFloodlightActivityTag(value: String): Self = StObject.set(x, "floodlightActivityTag", value.asInstanceOf[js.Any])
         
@@ -7883,7 +8003,8 @@ object Dfareporting {
         __obj.asInstanceOf[FloodlightActivitiesListResponse]
       }
       
-      extension [Self <: FloodlightActivitiesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FloodlightActivitiesListResponse] (val x: Self) extends AnyVal {
         
         inline def setFloodlightActivities(value: js.Array[FloodlightActivity]): Self = StObject.set(x, "floodlightActivities", value.asInstanceOf[js.Any])
         
@@ -7966,7 +8087,8 @@ object Dfareporting {
         __obj.asInstanceOf[FloodlightActivity]
       }
       
-      extension [Self <: FloodlightActivity](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FloodlightActivity] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -8103,7 +8225,8 @@ object Dfareporting {
         __obj.asInstanceOf[FloodlightActivityDynamicTag]
       }
       
-      extension [Self <: FloodlightActivityDynamicTag](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FloodlightActivityDynamicTag] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -8152,7 +8275,8 @@ object Dfareporting {
         __obj.asInstanceOf[FloodlightActivityGroup]
       }
       
-      extension [Self <: FloodlightActivityGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FloodlightActivityGroup] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -8219,7 +8343,8 @@ object Dfareporting {
         __obj.asInstanceOf[FloodlightActivityGroupsListResponse]
       }
       
-      extension [Self <: FloodlightActivityGroupsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FloodlightActivityGroupsListResponse] (val x: Self) extends AnyVal {
         
         inline def setFloodlightActivityGroups(value: js.Array[FloodlightActivityGroup]): Self = StObject.set(x, "floodlightActivityGroups", value.asInstanceOf[js.Any])
         
@@ -8258,7 +8383,8 @@ object Dfareporting {
         __obj.asInstanceOf[FloodlightActivityPublisherDynamicTag]
       }
       
-      extension [Self <: FloodlightActivityPublisherDynamicTag](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FloodlightActivityPublisherDynamicTag] (val x: Self) extends AnyVal {
         
         inline def setClickThrough(value: Boolean): Self = StObject.set(x, "clickThrough", value.asInstanceOf[js.Any])
         
@@ -8331,7 +8457,8 @@ object Dfareporting {
         __obj.asInstanceOf[FloodlightConfiguration]
       }
       
-      extension [Self <: FloodlightConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FloodlightConfiguration] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -8424,7 +8551,8 @@ object Dfareporting {
         __obj.asInstanceOf[FloodlightConfigurationsListResponse]
       }
       
-      extension [Self <: FloodlightConfigurationsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FloodlightConfigurationsListResponse] (val x: Self) extends AnyVal {
         
         inline def setFloodlightConfigurations(value: js.Array[FloodlightConfiguration]): Self = StObject.set(x, "floodlightConfigurations", value.asInstanceOf[js.Any])
         
@@ -8455,7 +8583,8 @@ object Dfareporting {
         __obj.asInstanceOf[FloodlightReportCompatibleFields]
       }
       
-      extension [Self <: FloodlightReportCompatibleFields](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FloodlightReportCompatibleFields] (val x: Self) extends AnyVal {
         
         inline def setDimensionFilters(value: js.Array[Dimension]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
         
@@ -8494,7 +8623,8 @@ object Dfareporting {
         __obj.asInstanceOf[FrequencyCap]
       }
       
-      extension [Self <: FrequencyCap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FrequencyCap] (val x: Self) extends AnyVal {
         
         inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
         
@@ -8525,7 +8655,8 @@ object Dfareporting {
         __obj.asInstanceOf[FsCommand]
       }
       
-      extension [Self <: FsCommand](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FsCommand] (val x: Self) extends AnyVal {
         
         inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
         
@@ -8570,7 +8701,8 @@ object Dfareporting {
         __obj.asInstanceOf[GeoTargeting]
       }
       
-      extension [Self <: GeoTargeting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GeoTargeting] (val x: Self) extends AnyVal {
         
         inline def setCities(value: js.Array[City]): Self = StObject.set(x, "cities", value.asInstanceOf[js.Any])
         
@@ -8657,7 +8789,8 @@ object Dfareporting {
         __obj.asInstanceOf[InventoryItem]
       }
       
-      extension [Self <: InventoryItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InventoryItem] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -8758,7 +8891,8 @@ object Dfareporting {
         __obj.asInstanceOf[InventoryItemsListResponse]
       }
       
-      extension [Self <: InventoryItemsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InventoryItemsListResponse] (val x: Self) extends AnyVal {
         
         inline def setInventoryItems(value: js.Array[InventoryItem]): Self = StObject.set(x, "inventoryItems", value.asInstanceOf[js.Any])
         
@@ -8787,7 +8921,8 @@ object Dfareporting {
         __obj.asInstanceOf[KeyValueTargetingExpression]
       }
       
-      extension [Self <: KeyValueTargetingExpression](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: KeyValueTargetingExpression] (val x: Self) extends AnyVal {
         
         inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
         
@@ -8818,7 +8953,8 @@ object Dfareporting {
         __obj.asInstanceOf[LandingPage]
       }
       
-      extension [Self <: LandingPage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LandingPage] (val x: Self) extends AnyVal {
         
         inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
         
@@ -8869,7 +9005,8 @@ object Dfareporting {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Dfareporting.Schema.Language]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Dfareporting.Schema.Language](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Dfareporting.Schema.Language] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -8900,7 +9037,8 @@ object Dfareporting {
         __obj.asInstanceOf[LanguageTargeting]
       }
       
-      extension [Self <: LanguageTargeting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LanguageTargeting] (val x: Self) extends AnyVal {
         
         inline def setLanguages(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Dfareporting.Schema.Language]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
         
@@ -8923,7 +9061,8 @@ object Dfareporting {
         __obj.asInstanceOf[LanguagesListResponse]
       }
       
-      extension [Self <: LanguagesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LanguagesListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -8948,7 +9087,8 @@ object Dfareporting {
         __obj.asInstanceOf[LastModifiedInfo]
       }
       
-      extension [Self <: LastModifiedInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LastModifiedInfo] (val x: Self) extends AnyVal {
         
         inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
         
@@ -8967,7 +9107,8 @@ object Dfareporting {
         __obj.asInstanceOf[ListPopulationClause]
       }
       
-      extension [Self <: ListPopulationClause](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListPopulationClause] (val x: Self) extends AnyVal {
         
         inline def setTerms(value: js.Array[ListPopulationTerm]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
         
@@ -8992,7 +9133,8 @@ object Dfareporting {
         __obj.asInstanceOf[ListPopulationRule]
       }
       
-      extension [Self <: ListPopulationRule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListPopulationRule] (val x: Self) extends AnyVal {
         
         inline def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
         
@@ -9035,7 +9177,8 @@ object Dfareporting {
         __obj.asInstanceOf[ListPopulationTerm]
       }
       
-      extension [Self <: ListPopulationTerm](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListPopulationTerm] (val x: Self) extends AnyVal {
         
         inline def setContains(value: Boolean): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
         
@@ -9082,7 +9225,8 @@ object Dfareporting {
         __obj.asInstanceOf[ListTargetingExpression]
       }
       
-      extension [Self <: ListTargetingExpression](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListTargetingExpression] (val x: Self) extends AnyVal {
         
         inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
         
@@ -9103,7 +9247,8 @@ object Dfareporting {
         __obj.asInstanceOf[LookbackConfiguration]
       }
       
-      extension [Self <: LookbackConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LookbackConfiguration] (val x: Self) extends AnyVal {
         
         inline def setClickDuration(value: Double): Self = StObject.set(x, "clickDuration", value.asInstanceOf[js.Any])
         
@@ -9128,7 +9273,8 @@ object Dfareporting {
         __obj.asInstanceOf[Metric]
       }
       
-      extension [Self <: Metric](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -9163,7 +9309,8 @@ object Dfareporting {
         __obj.asInstanceOf[Metro]
       }
       
-      extension [Self <: Metro](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Metro] (val x: Self) extends AnyVal {
         
         inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
         
@@ -9208,7 +9355,8 @@ object Dfareporting {
         __obj.asInstanceOf[MetrosListResponse]
       }
       
-      extension [Self <: MetrosListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MetrosListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -9241,7 +9389,8 @@ object Dfareporting {
         __obj.asInstanceOf[MobileApp]
       }
       
-      extension [Self <: MobileApp](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MobileApp] (val x: Self) extends AnyVal {
         
         inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
         
@@ -9280,7 +9429,8 @@ object Dfareporting {
         __obj.asInstanceOf[MobileAppsListResponse]
       }
       
-      extension [Self <: MobileAppsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MobileAppsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -9317,7 +9467,8 @@ object Dfareporting {
         __obj.asInstanceOf[MobileCarrier]
       }
       
-      extension [Self <: MobileCarrier](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MobileCarrier] (val x: Self) extends AnyVal {
         
         inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
         
@@ -9354,7 +9505,8 @@ object Dfareporting {
         __obj.asInstanceOf[MobileCarriersListResponse]
       }
       
-      extension [Self <: MobileCarriersListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MobileCarriersListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -9383,7 +9535,8 @@ object Dfareporting {
         __obj.asInstanceOf[ObjectFilter]
       }
       
-      extension [Self <: ObjectFilter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ObjectFilter] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -9414,7 +9567,8 @@ object Dfareporting {
         __obj.asInstanceOf[OffsetPosition]
       }
       
-      extension [Self <: OffsetPosition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OffsetPosition] (val x: Self) extends AnyVal {
         
         inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
         
@@ -9439,7 +9593,8 @@ object Dfareporting {
         __obj.asInstanceOf[OmnitureSettings]
       }
       
-      extension [Self <: OmnitureSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OmnitureSettings] (val x: Self) extends AnyVal {
         
         inline def setOmnitureCostDataEnabled(value: Boolean): Self = StObject.set(x, "omnitureCostDataEnabled", value.asInstanceOf[js.Any])
         
@@ -9470,7 +9625,8 @@ object Dfareporting {
         __obj.asInstanceOf[OperatingSystem]
       }
       
-      extension [Self <: OperatingSystem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OperatingSystem] (val x: Self) extends AnyVal {
         
         inline def setDartId(value: String): Self = StObject.set(x, "dartId", value.asInstanceOf[js.Any])
         
@@ -9515,7 +9671,8 @@ object Dfareporting {
         __obj.asInstanceOf[OperatingSystemVersion]
       }
       
-      extension [Self <: OperatingSystemVersion](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OperatingSystemVersion] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -9556,7 +9713,8 @@ object Dfareporting {
         __obj.asInstanceOf[OperatingSystemVersionsListResponse]
       }
       
-      extension [Self <: OperatingSystemVersionsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OperatingSystemVersionsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -9583,7 +9741,8 @@ object Dfareporting {
         __obj.asInstanceOf[OperatingSystemsListResponse]
       }
       
-      extension [Self <: OperatingSystemsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OperatingSystemsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -9612,7 +9771,8 @@ object Dfareporting {
         __obj.asInstanceOf[OptimizationActivity]
       }
       
-      extension [Self <: OptimizationActivity](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OptimizationActivity] (val x: Self) extends AnyVal {
         
         inline def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
         
@@ -9677,7 +9837,8 @@ object Dfareporting {
         __obj.asInstanceOf[Order]
       }
       
-      extension [Self <: Order](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -9788,7 +9949,8 @@ object Dfareporting {
         __obj.asInstanceOf[OrderContact]
       }
       
-      extension [Self <: OrderContact](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderContact] (val x: Self) extends AnyVal {
         
         inline def setContactInfo(value: String): Self = StObject.set(x, "contactInfo", value.asInstanceOf[js.Any])
         
@@ -9855,7 +10017,8 @@ object Dfareporting {
         __obj.asInstanceOf[OrderDocument]
       }
       
-      extension [Self <: OrderDocument](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderDocument] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -9946,7 +10109,8 @@ object Dfareporting {
         __obj.asInstanceOf[OrderDocumentsListResponse]
       }
       
-      extension [Self <: OrderDocumentsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderDocumentsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -9979,7 +10143,8 @@ object Dfareporting {
         __obj.asInstanceOf[OrdersListResponse]
       }
       
-      extension [Self <: OrdersListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -10016,7 +10181,8 @@ object Dfareporting {
         __obj.asInstanceOf[PathToConversionReportCompatibleFields]
       }
       
-      extension [Self <: PathToConversionReportCompatibleFields](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PathToConversionReportCompatibleFields] (val x: Self) extends AnyVal {
         
         inline def setConversionDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "conversionDimensions", value.asInstanceOf[js.Any])
         
@@ -10139,7 +10305,8 @@ object Dfareporting {
         __obj.asInstanceOf[Placement]
       }
       
-      extension [Self <: Placement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Placement] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -10328,7 +10495,8 @@ object Dfareporting {
         __obj.asInstanceOf[PlacementAssignment]
       }
       
-      extension [Self <: PlacementAssignment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlacementAssignment] (val x: Self) extends AnyVal {
         
         inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
@@ -10409,7 +10577,8 @@ object Dfareporting {
         __obj.asInstanceOf[PlacementGroup]
       }
       
-      extension [Self <: PlacementGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlacementGroup] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -10534,7 +10703,8 @@ object Dfareporting {
         __obj.asInstanceOf[PlacementGroupsListResponse]
       }
       
-      extension [Self <: PlacementGroupsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlacementGroupsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -10567,7 +10737,8 @@ object Dfareporting {
         __obj.asInstanceOf[PlacementStrategiesListResponse]
       }
       
-      extension [Self <: PlacementStrategiesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlacementStrategiesListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -10602,7 +10773,8 @@ object Dfareporting {
         __obj.asInstanceOf[PlacementStrategy]
       }
       
-      extension [Self <: PlacementStrategy](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlacementStrategy] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -10635,7 +10807,8 @@ object Dfareporting {
         __obj.asInstanceOf[PlacementTag]
       }
       
-      extension [Self <: PlacementTag](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlacementTag] (val x: Self) extends AnyVal {
         
         inline def setPlacementId(value: String): Self = StObject.set(x, "placementId", value.asInstanceOf[js.Any])
         
@@ -10662,7 +10835,8 @@ object Dfareporting {
         __obj.asInstanceOf[PlacementsGenerateTagsResponse]
       }
       
-      extension [Self <: PlacementsGenerateTagsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlacementsGenerateTagsResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -10691,7 +10865,8 @@ object Dfareporting {
         __obj.asInstanceOf[PlacementsListResponse]
       }
       
-      extension [Self <: PlacementsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlacementsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -10724,7 +10899,8 @@ object Dfareporting {
         __obj.asInstanceOf[PlatformType]
       }
       
-      extension [Self <: PlatformType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlatformType] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -10753,7 +10929,8 @@ object Dfareporting {
         __obj.asInstanceOf[PlatformTypesListResponse]
       }
       
-      extension [Self <: PlatformTypesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlatformTypesListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -10794,7 +10971,8 @@ object Dfareporting {
         __obj.asInstanceOf[PopupWindowProperties]
       }
       
-      extension [Self <: PopupWindowProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PopupWindowProperties] (val x: Self) extends AnyVal {
         
         inline def setDimension(value: Size): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
         
@@ -10853,7 +11031,8 @@ object Dfareporting {
         __obj.asInstanceOf[PostalCode]
       }
       
-      extension [Self <: PostalCode](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PostalCode] (val x: Self) extends AnyVal {
         
         inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -10890,7 +11069,8 @@ object Dfareporting {
         __obj.asInstanceOf[PostalCodesListResponse]
       }
       
-      extension [Self <: PostalCodesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PostalCodesListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -10925,7 +11105,8 @@ object Dfareporting {
         __obj.asInstanceOf[Pricing]
       }
       
-      extension [Self <: Pricing](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Pricing] (val x: Self) extends AnyVal {
         
         inline def setCapCostType(value: String): Self = StObject.set(x, "capCostType", value.asInstanceOf[js.Any])
         
@@ -10982,7 +11163,8 @@ object Dfareporting {
         __obj.asInstanceOf[PricingSchedule]
       }
       
-      extension [Self <: PricingSchedule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PricingSchedule] (val x: Self) extends AnyVal {
         
         inline def setCapCostOption(value: String): Self = StObject.set(x, "capCostOption", value.asInstanceOf[js.Any])
         
@@ -11043,7 +11225,8 @@ object Dfareporting {
         __obj.asInstanceOf[PricingSchedulePricingPeriod]
       }
       
-      extension [Self <: PricingSchedulePricingPeriod](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PricingSchedulePricingPeriod] (val x: Self) extends AnyVal {
         
         inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
         
@@ -11120,7 +11303,8 @@ object Dfareporting {
         __obj.asInstanceOf[Project]
       }
       
-      extension [Self <: Project](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Project] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -11227,7 +11411,8 @@ object Dfareporting {
         __obj.asInstanceOf[ProjectsListResponse]
       }
       
-      extension [Self <: ProjectsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProjectsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -11266,7 +11451,8 @@ object Dfareporting {
         __obj.asInstanceOf[ReachReportCompatibleFields]
       }
       
-      extension [Self <: ReachReportCompatibleFields](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReachReportCompatibleFields] (val x: Self) extends AnyVal {
         
         inline def setDimensionFilters(value: js.Array[Dimension]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
         
@@ -11319,7 +11505,8 @@ object Dfareporting {
         __obj.asInstanceOf[Recipient]
       }
       
-      extension [Self <: Recipient](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Recipient] (val x: Self) extends AnyVal {
         
         inline def setDeliveryType(value: String): Self = StObject.set(x, "deliveryType", value.asInstanceOf[js.Any])
         
@@ -11356,7 +11543,8 @@ object Dfareporting {
         __obj.asInstanceOf[Region]
       }
       
-      extension [Self <: Region](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
         
         inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
         
@@ -11397,7 +11585,8 @@ object Dfareporting {
         __obj.asInstanceOf[RegionsListResponse]
       }
       
-      extension [Self <: RegionsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RegionsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -11446,7 +11635,8 @@ object Dfareporting {
         __obj.asInstanceOf[RemarketingList]
       }
       
-      extension [Self <: RemarketingList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RemarketingList] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -11519,7 +11709,8 @@ object Dfareporting {
         __obj.asInstanceOf[RemarketingListShare]
       }
       
-      extension [Self <: RemarketingListShare](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RemarketingListShare] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -11558,7 +11749,8 @@ object Dfareporting {
         __obj.asInstanceOf[RemarketingListsListResponse]
       }
       
-      extension [Self <: RemarketingListsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RemarketingListsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -11621,7 +11813,8 @@ object Dfareporting {
         __obj.asInstanceOf[Report]
       }
       
-      extension [Self <: Report](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -11716,7 +11909,8 @@ object Dfareporting {
         __obj.asInstanceOf[ReportCompatibleFields]
       }
       
-      extension [Self <: ReportCompatibleFields](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportCompatibleFields] (val x: Self) extends AnyVal {
         
         inline def setDimensionFilters(value: js.Array[Dimension]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
         
@@ -11769,7 +11963,8 @@ object Dfareporting {
         __obj.asInstanceOf[ReportCriteria]
       }
       
-      extension [Self <: ReportCriteria](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportCriteria] (val x: Self) extends AnyVal {
         
         inline def setActivities(value: Activities): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
         
@@ -11826,7 +12021,8 @@ object Dfareporting {
         __obj.asInstanceOf[ReportCrossDimensionReachCriteria]
       }
       
-      extension [Self <: ReportCrossDimensionReachCriteria](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportCrossDimensionReachCriteria] (val x: Self) extends AnyVal {
         
         inline def setBreakdown(value: js.Array[SortedDimension]): Self = StObject.set(x, "breakdown", value.asInstanceOf[js.Any])
         
@@ -11883,7 +12079,8 @@ object Dfareporting {
         __obj.asInstanceOf[ReportDelivery]
       }
       
-      extension [Self <: ReportDelivery](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportDelivery] (val x: Self) extends AnyVal {
         
         inline def setEmailOwner(value: Boolean): Self = StObject.set(x, "emailOwner", value.asInstanceOf[js.Any])
         
@@ -11928,7 +12125,8 @@ object Dfareporting {
         __obj.asInstanceOf[ReportFloodlightCriteria]
       }
       
-      extension [Self <: ReportFloodlightCriteria](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportFloodlightCriteria] (val x: Self) extends AnyVal {
         
         inline def setCustomRichMediaEvents(value: js.Array[DimensionValue]): Self = StObject.set(x, "customRichMediaEvents", value.asInstanceOf[js.Any])
         
@@ -11983,7 +12181,8 @@ object Dfareporting {
         __obj.asInstanceOf[ReportFloodlightCriteriaReportProperties]
       }
       
-      extension [Self <: ReportFloodlightCriteriaReportProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportFloodlightCriteriaReportProperties] (val x: Self) extends AnyVal {
         
         inline def setIncludeAttributedIPConversions(value: Boolean): Self = StObject.set(x, "includeAttributedIPConversions", value.asInstanceOf[js.Any])
         
@@ -12016,7 +12215,8 @@ object Dfareporting {
         __obj.asInstanceOf[ReportList]
       }
       
-      extension [Self <: ReportList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -12065,7 +12265,8 @@ object Dfareporting {
         __obj.asInstanceOf[ReportPathToConversionCriteria]
       }
       
-      extension [Self <: ReportPathToConversionCriteria](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportPathToConversionCriteria] (val x: Self) extends AnyVal {
         
         inline def setActivityFilters(value: js.Array[DimensionValue]): Self = StObject.set(x, "activityFilters", value.asInstanceOf[js.Any])
         
@@ -12144,7 +12345,8 @@ object Dfareporting {
         __obj.asInstanceOf[ReportPathToConversionCriteriaReportProperties]
       }
       
-      extension [Self <: ReportPathToConversionCriteriaReportProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportPathToConversionCriteriaReportProperties] (val x: Self) extends AnyVal {
         
         inline def setClicksLookbackWindow(value: Double): Self = StObject.set(x, "clicksLookbackWindow", value.asInstanceOf[js.Any])
         
@@ -12209,7 +12411,8 @@ object Dfareporting {
         __obj.asInstanceOf[ReportReachCriteria]
       }
       
-      extension [Self <: ReportReachCriteria](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportReachCriteria] (val x: Self) extends AnyVal {
         
         inline def setActivities(value: Activities): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
         
@@ -12276,7 +12479,8 @@ object Dfareporting {
         __obj.asInstanceOf[ReportSchedule]
       }
       
-      extension [Self <: ReportSchedule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportSchedule] (val x: Self) extends AnyVal {
         
         inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
@@ -12325,7 +12529,8 @@ object Dfareporting {
         __obj.asInstanceOf[ReportsConfiguration]
       }
       
-      extension [Self <: ReportsConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportsConfiguration] (val x: Self) extends AnyVal {
         
         inline def setExposureToConversionEnabled(value: Boolean): Self = StObject.set(x, "exposureToConversionEnabled", value.asInstanceOf[js.Any])
         
@@ -12356,7 +12561,8 @@ object Dfareporting {
         __obj.asInstanceOf[RichMediaExitOverride]
       }
       
-      extension [Self <: RichMediaExitOverride](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RichMediaExitOverride] (val x: Self) extends AnyVal {
         
         inline def setClickThroughUrl(value: ClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
         
@@ -12387,7 +12593,8 @@ object Dfareporting {
         __obj.asInstanceOf[Rule]
       }
       
-      extension [Self <: Rule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
         
         inline def setAssetId(value: String): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
         
@@ -12438,7 +12645,8 @@ object Dfareporting {
         __obj.asInstanceOf[Site]
       }
       
-      extension [Self <: Site](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Site] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -12513,7 +12721,8 @@ object Dfareporting {
         __obj.asInstanceOf[SiteCompanionSetting]
       }
       
-      extension [Self <: SiteCompanionSetting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SiteCompanionSetting] (val x: Self) extends AnyVal {
         
         inline def setCompanionsDisabled(value: Boolean): Self = StObject.set(x, "companionsDisabled", value.asInstanceOf[js.Any])
         
@@ -12560,7 +12769,8 @@ object Dfareporting {
         __obj.asInstanceOf[SiteContact]
       }
       
-      extension [Self <: SiteContact](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SiteContact] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
@@ -12617,7 +12827,8 @@ object Dfareporting {
         __obj.asInstanceOf[SiteSettings]
       }
       
-      extension [Self <: SiteSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SiteSettings] (val x: Self) extends AnyVal {
         
         inline def setActiveViewOptOut(value: Boolean): Self = StObject.set(x, "activeViewOptOut", value.asInstanceOf[js.Any])
         
@@ -12662,7 +12873,8 @@ object Dfareporting {
         __obj.asInstanceOf[SiteSkippableSetting]
       }
       
-      extension [Self <: SiteSkippableSetting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SiteSkippableSetting] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -12695,7 +12907,8 @@ object Dfareporting {
         __obj.asInstanceOf[SiteTranscodeSetting]
       }
       
-      extension [Self <: SiteTranscodeSetting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SiteTranscodeSetting] (val x: Self) extends AnyVal {
         
         inline def setEnabledVideoFormats(value: js.Array[Double]): Self = StObject.set(x, "enabledVideoFormats", value.asInstanceOf[js.Any])
         
@@ -12728,7 +12941,8 @@ object Dfareporting {
         __obj.asInstanceOf[SiteVideoSettings]
       }
       
-      extension [Self <: SiteVideoSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SiteVideoSettings] (val x: Self) extends AnyVal {
         
         inline def setCompanionSettings(value: SiteCompanionSetting): Self = StObject.set(x, "companionSettings", value.asInstanceOf[js.Any])
         
@@ -12767,7 +12981,8 @@ object Dfareporting {
         __obj.asInstanceOf[SitesListResponse]
       }
       
-      extension [Self <: SitesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SitesListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -12804,7 +13019,8 @@ object Dfareporting {
         __obj.asInstanceOf[Size]
       }
       
-      extension [Self <: Size](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
@@ -12841,7 +13057,8 @@ object Dfareporting {
         __obj.asInstanceOf[SizesListResponse]
       }
       
-      extension [Self <: SizesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SizesListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -12872,7 +13089,8 @@ object Dfareporting {
         __obj.asInstanceOf[SkippableSetting]
       }
       
-      extension [Self <: SkippableSetting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SkippableSetting] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -12907,7 +13125,8 @@ object Dfareporting {
         __obj.asInstanceOf[SortedDimension]
       }
       
-      extension [Self <: SortedDimension](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SortedDimension] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -12942,7 +13161,8 @@ object Dfareporting {
         __obj.asInstanceOf[Subaccount]
       }
       
-      extension [Self <: Subaccount](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Subaccount] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -12983,7 +13203,8 @@ object Dfareporting {
         __obj.asInstanceOf[SubaccountsListResponse]
       }
       
-      extension [Self <: SubaccountsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubaccountsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -13020,7 +13241,8 @@ object Dfareporting {
         __obj.asInstanceOf[TagData]
       }
       
-      extension [Self <: TagData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TagData] (val x: Self) extends AnyVal {
         
         inline def setAdId(value: String): Self = StObject.set(x, "adId", value.asInstanceOf[js.Any])
         
@@ -13061,7 +13283,8 @@ object Dfareporting {
         __obj.asInstanceOf[TagSetting]
       }
       
-      extension [Self <: TagSetting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TagSetting] (val x: Self) extends AnyVal {
         
         inline def setAdditionalKeyValues(value: String): Self = StObject.set(x, "additionalKeyValues", value.asInstanceOf[js.Any])
         
@@ -13094,7 +13317,8 @@ object Dfareporting {
         __obj.asInstanceOf[TagSettings]
       }
       
-      extension [Self <: TagSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TagSettings] (val x: Self) extends AnyVal {
         
         inline def setDynamicTagEnabled(value: Boolean): Self = StObject.set(x, "dynamicTagEnabled", value.asInstanceOf[js.Any])
         
@@ -13119,7 +13343,8 @@ object Dfareporting {
         __obj.asInstanceOf[TargetWindow]
       }
       
-      extension [Self <: TargetWindow](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TargetWindow] (val x: Self) extends AnyVal {
         
         inline def setCustomHtml(value: String): Self = StObject.set(x, "customHtml", value.asInstanceOf[js.Any])
         
@@ -13164,7 +13389,8 @@ object Dfareporting {
         __obj.asInstanceOf[TargetableRemarketingList]
       }
       
-      extension [Self <: TargetableRemarketingList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TargetableRemarketingList] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -13231,7 +13457,8 @@ object Dfareporting {
         __obj.asInstanceOf[TargetableRemarketingListsListResponse]
       }
       
-      extension [Self <: TargetableRemarketingListsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TargetableRemarketingListsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -13284,7 +13511,8 @@ object Dfareporting {
         __obj.asInstanceOf[TargetingTemplate]
       }
       
-      extension [Self <: TargetingTemplate](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TargetingTemplate] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -13355,7 +13583,8 @@ object Dfareporting {
         __obj.asInstanceOf[TargetingTemplatesListResponse]
       }
       
-      extension [Self <: TargetingTemplatesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TargetingTemplatesListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -13394,7 +13623,8 @@ object Dfareporting {
         __obj.asInstanceOf[TechnologyTargeting]
       }
       
-      extension [Self <: TechnologyTargeting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TechnologyTargeting] (val x: Self) extends AnyVal {
         
         inline def setBrowsers(value: js.Array[Browser]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
         
@@ -13447,7 +13677,8 @@ object Dfareporting {
         __obj.asInstanceOf[ThirdPartyAuthenticationToken]
       }
       
-      extension [Self <: ThirdPartyAuthenticationToken](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ThirdPartyAuthenticationToken] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -13472,7 +13703,8 @@ object Dfareporting {
         __obj.asInstanceOf[ThirdPartyTrackingUrl]
       }
       
-      extension [Self <: ThirdPartyTrackingUrl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ThirdPartyTrackingUrl] (val x: Self) extends AnyVal {
         
         inline def setThirdPartyUrlType(value: String): Self = StObject.set(x, "thirdPartyUrlType", value.asInstanceOf[js.Any])
         
@@ -13497,7 +13729,8 @@ object Dfareporting {
         __obj.asInstanceOf[TranscodeSetting]
       }
       
-      extension [Self <: TranscodeSetting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TranscodeSetting] (val x: Self) extends AnyVal {
         
         inline def setEnabledVideoFormats(value: js.Array[Double]): Self = StObject.set(x, "enabledVideoFormats", value.asInstanceOf[js.Any])
         
@@ -13524,7 +13757,8 @@ object Dfareporting {
         __obj.asInstanceOf[UniversalAdId]
       }
       
-      extension [Self <: UniversalAdId](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UniversalAdId] (val x: Self) extends AnyVal {
         
         inline def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
         
@@ -13551,7 +13785,8 @@ object Dfareporting {
         __obj.asInstanceOf[UserDefinedVariableConfiguration]
       }
       
-      extension [Self <: UserDefinedVariableConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserDefinedVariableConfiguration] (val x: Self) extends AnyVal {
         
         inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
         
@@ -13592,7 +13827,8 @@ object Dfareporting {
         __obj.asInstanceOf[UserProfile]
       }
       
-      extension [Self <: UserProfile](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserProfile] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -13643,7 +13879,8 @@ object Dfareporting {
         __obj.asInstanceOf[UserProfileList]
       }
       
-      extension [Self <: UserProfileList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserProfileList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -13686,7 +13923,8 @@ object Dfareporting {
         __obj.asInstanceOf[UserRole]
       }
       
-      extension [Self <: UserRole](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserRole] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -13743,7 +13981,8 @@ object Dfareporting {
         __obj.asInstanceOf[UserRolePermission]
       }
       
-      extension [Self <: UserRolePermission](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserRolePermission] (val x: Self) extends AnyVal {
         
         inline def setAvailability(value: String): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
         
@@ -13782,7 +14021,8 @@ object Dfareporting {
         __obj.asInstanceOf[UserRolePermissionGroup]
       }
       
-      extension [Self <: UserRolePermissionGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserRolePermissionGroup] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -13811,7 +14051,8 @@ object Dfareporting {
         __obj.asInstanceOf[UserRolePermissionGroupsListResponse]
       }
       
-      extension [Self <: UserRolePermissionGroupsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserRolePermissionGroupsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -13838,7 +14079,8 @@ object Dfareporting {
         __obj.asInstanceOf[UserRolePermissionsListResponse]
       }
       
-      extension [Self <: UserRolePermissionsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserRolePermissionsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -13867,7 +14109,8 @@ object Dfareporting {
         __obj.asInstanceOf[UserRolesListResponse]
       }
       
-      extension [Self <: UserRolesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserRolesListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -13904,7 +14147,8 @@ object Dfareporting {
         __obj.asInstanceOf[VideoFormat]
       }
       
-      extension [Self <: VideoFormat](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoFormat] (val x: Self) extends AnyVal {
         
         inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
         
@@ -13941,7 +14185,8 @@ object Dfareporting {
         __obj.asInstanceOf[VideoFormatsListResponse]
       }
       
-      extension [Self <: VideoFormatsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoFormatsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -13968,7 +14213,8 @@ object Dfareporting {
         __obj.asInstanceOf[VideoOffset]
       }
       
-      extension [Self <: VideoOffset](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoOffset] (val x: Self) extends AnyVal {
         
         inline def setOffsetPercentage(value: Double): Self = StObject.set(x, "offsetPercentage", value.asInstanceOf[js.Any])
         
@@ -13999,7 +14245,8 @@ object Dfareporting {
         __obj.asInstanceOf[VideoSettings]
       }
       
-      extension [Self <: VideoSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoSettings] (val x: Self) extends AnyVal {
         
         inline def setCompanionSettings(value: CompanionSetting): Self = StObject.set(x, "companionSettings", value.asInstanceOf[js.Any])
         

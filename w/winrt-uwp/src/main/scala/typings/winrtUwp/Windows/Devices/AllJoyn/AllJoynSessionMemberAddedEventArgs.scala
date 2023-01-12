@@ -17,7 +17,8 @@ object AllJoynSessionMemberAddedEventArgs {
     __obj.asInstanceOf[AllJoynSessionMemberAddedEventArgs]
   }
   
-  extension [Self <: AllJoynSessionMemberAddedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllJoynSessionMemberAddedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
   }

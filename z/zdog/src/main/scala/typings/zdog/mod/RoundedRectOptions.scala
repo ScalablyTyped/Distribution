@@ -24,7 +24,8 @@ object RoundedRectOptions {
     __obj.asInstanceOf[RoundedRectOptions]
   }
   
-  extension [Self <: RoundedRectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoundedRectOptions] (val x: Self) extends AnyVal {
     
     inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     

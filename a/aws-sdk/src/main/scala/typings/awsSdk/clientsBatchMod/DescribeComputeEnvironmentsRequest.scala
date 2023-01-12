@@ -28,7 +28,8 @@ object DescribeComputeEnvironmentsRequest {
     __obj.asInstanceOf[DescribeComputeEnvironmentsRequest]
   }
   
-  extension [Self <: DescribeComputeEnvironmentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeComputeEnvironmentsRequest] (val x: Self) extends AnyVal {
     
     inline def setComputeEnvironments(value: StringList): Self = StObject.set(x, "computeEnvironments", value.asInstanceOf[js.Any])
     

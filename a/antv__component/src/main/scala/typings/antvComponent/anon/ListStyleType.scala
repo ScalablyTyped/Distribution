@@ -77,7 +77,8 @@ object ListStyleType {
     __obj.asInstanceOf[ListStyleType]
   }
   
-  extension [Self <: ListStyleType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStyleType] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Unit): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

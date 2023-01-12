@@ -20,7 +20,8 @@ object ReadonlySliderEndEvent {
     __obj.asInstanceOf[ReadonlySliderEndEvent]
   }
   
-  extension [Self <: ReadonlySliderEndEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlySliderEndEvent] (val x: Self) extends AnyVal {
     
     inline def setSlider(value: Slider): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
     

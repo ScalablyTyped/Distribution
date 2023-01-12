@@ -15,7 +15,8 @@ object StateSortColumn {
     __obj.asInstanceOf[StateSortColumn[T]]
   }
   
-  extension [Self <: StateSortColumn[?], T /* <: js.Object */](x: Self & StateSortColumn[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateSortColumn[?], T /* <: js.Object */] (val x: Self & StateSortColumn[T]) extends AnyVal {
     
     inline def setState(value: SortColumn[T]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

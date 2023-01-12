@@ -202,7 +202,8 @@ object Company {
     __obj.asInstanceOf[Company]
   }
   
-  extension [Self <: Company](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Company] (val x: Self) extends AnyVal {
     
     inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
     

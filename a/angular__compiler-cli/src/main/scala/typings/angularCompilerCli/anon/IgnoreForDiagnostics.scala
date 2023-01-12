@@ -19,7 +19,8 @@ object IgnoreForDiagnostics {
     __obj.asInstanceOf[IgnoreForDiagnostics]
   }
   
-  extension [Self <: IgnoreForDiagnostics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreForDiagnostics] (val x: Self) extends AnyVal {
     
     inline def setIgnoreForDiagnostics(value: Set[SourceFile]): Self = StObject.set(x, "ignoreForDiagnostics", value.asInstanceOf[js.Any])
     

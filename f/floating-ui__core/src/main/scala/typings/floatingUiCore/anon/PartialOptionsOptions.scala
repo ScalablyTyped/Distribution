@@ -34,7 +34,8 @@ object PartialOptionsOptions {
     __obj.asInstanceOf[PartialOptionsOptions]
   }
   
-  extension [Self <: PartialOptionsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOptionsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: Alignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object TwitterParameters {
     __obj.asInstanceOf[TwitterParameters]
   }
   
-  extension [Self <: TwitterParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TwitterParameters] (val x: Self) extends AnyVal {
     
     inline def setMaxRows(value: PositiveInteger): Self = StObject.set(x, "MaxRows", value.asInstanceOf[js.Any])
     

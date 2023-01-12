@@ -18,7 +18,8 @@ object ResetAddressAttributeResult {
     __obj.asInstanceOf[ResetAddressAttributeResult]
   }
   
-  extension [Self <: ResetAddressAttributeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetAddressAttributeResult] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: AddressAttribute): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

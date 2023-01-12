@@ -42,7 +42,8 @@ object IndexField {
     __obj.asInstanceOf[IndexField]
   }
   
-  extension [Self <: IndexField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexField] (val x: Self) extends AnyVal {
     
     inline def setDateArrayOptions(value: DateArrayOptions): Self = StObject.set(x, "DateArrayOptions", value.asInstanceOf[js.Any])
     

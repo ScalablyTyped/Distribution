@@ -15,7 +15,8 @@ object Provider {
     __obj.asInstanceOf[Provider]
   }
   
-  extension [Self <: Provider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
     
     inline def setSpellCheck(value: (js.Array[String], js.Function1[/* misspeltWords */ js.Array[String], Unit]) => Unit): Self = StObject.set(x, "spellCheck", js.Any.fromFunction2(value))
   }

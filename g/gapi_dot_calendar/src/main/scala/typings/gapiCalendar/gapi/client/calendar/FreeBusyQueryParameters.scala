@@ -26,7 +26,8 @@ object FreeBusyQueryParameters {
     __obj.asInstanceOf[FreeBusyQueryParameters]
   }
   
-  extension [Self <: FreeBusyQueryParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreeBusyQueryParameters] (val x: Self) extends AnyVal {
     
     inline def setCalendarExpansionMax(value: integer): Self = StObject.set(x, "calendarExpansionMax", value.asInstanceOf[js.Any])
     

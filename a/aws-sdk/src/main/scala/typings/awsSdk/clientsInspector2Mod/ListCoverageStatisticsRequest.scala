@@ -28,7 +28,8 @@ object ListCoverageStatisticsRequest {
     __obj.asInstanceOf[ListCoverageStatisticsRequest]
   }
   
-  extension [Self <: ListCoverageStatisticsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCoverageStatisticsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilterCriteria(value: CoverageFilterCriteria): Self = StObject.set(x, "filterCriteria", value.asInstanceOf[js.Any])
     

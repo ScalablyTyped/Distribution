@@ -23,7 +23,8 @@ object JobCheckpointConfig {
     __obj.asInstanceOf[JobCheckpointConfig]
   }
   
-  extension [Self <: JobCheckpointConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobCheckpointConfig] (val x: Self) extends AnyVal {
     
     inline def setLocalPath(value: String4096): Self = StObject.set(x, "localPath", value.asInstanceOf[js.Any])
     

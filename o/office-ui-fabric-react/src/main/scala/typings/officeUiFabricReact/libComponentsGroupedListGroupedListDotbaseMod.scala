@@ -100,7 +100,8 @@ object libComponentsGroupedListGroupedListDotbaseMod {
       __obj.asInstanceOf[IGroupedListState]
     }
     
-    extension [Self <: IGroupedListState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupedListState] (val x: Self) extends AnyVal {
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       

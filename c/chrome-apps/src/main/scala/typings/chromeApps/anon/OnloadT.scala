@@ -22,7 +22,8 @@ object OnloadT {
     __obj.asInstanceOf[OnloadT]
   }
   
-  extension [Self <: OnloadT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnloadT] (val x: Self) extends AnyVal {
     
     inline def setOnloadT(value: integer): Self = StObject.set(x, "onloadT", value.asInstanceOf[js.Any])
     

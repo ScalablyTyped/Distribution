@@ -25,7 +25,8 @@ object ModelBiasJobInput {
     __obj.asInstanceOf[ModelBiasJobInput]
   }
   
-  extension [Self <: ModelBiasJobInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelBiasJobInput] (val x: Self) extends AnyVal {
     
     inline def setBatchTransformInput(value: BatchTransformInput): Self = StObject.set(x, "BatchTransformInput", value.asInstanceOf[js.Any])
     

@@ -139,7 +139,8 @@ object distAppMod {
       __obj.asInstanceOf[FirebaseApp]
     }
     
-    extension [Self <: FirebaseApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseApp] (val x: Self) extends AnyVal {
       
       inline def setAutomaticDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "automaticDataCollectionEnabled", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object distAppMod {
       __obj.asInstanceOf[FirebaseAppInternal]
     }
     
-    extension [Self <: FirebaseAppInternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseAppInternal] (val x: Self) extends AnyVal {
       
       inline def setCheckDestroyed(value: () => Unit): Self = StObject.set(x, "checkDestroyed", js.Any.fromFunction0(value))
       
@@ -205,7 +207,8 @@ object distAppMod {
       __obj.asInstanceOf[FirebaseAppSettings]
     }
     
-    extension [Self <: FirebaseAppSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseAppSettings] (val x: Self) extends AnyVal {
       
       inline def setAutomaticDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "automaticDataCollectionEnabled", value.asInstanceOf[js.Any])
       
@@ -272,7 +275,8 @@ object distAppMod {
       __obj.asInstanceOf[FirebaseOptions]
     }
     
-    extension [Self <: FirebaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -325,7 +329,8 @@ object distAppMod {
       __obj.asInstanceOf[FirebaseService]
     }
     
-    extension [Self <: FirebaseService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseService] (val x: Self) extends AnyVal {
       
       inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       

@@ -60,7 +60,8 @@ object UserSearchSummary {
     __obj.asInstanceOf[UserSearchSummary]
   }
   
-  extension [Self <: UserSearchSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserSearchSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

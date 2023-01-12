@@ -33,7 +33,8 @@ object SendSocketMessageOptions {
     __obj.asInstanceOf[SendSocketMessageOptions]
   }
   
-  extension [Self <: SendSocketMessageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendSocketMessageOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* result */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

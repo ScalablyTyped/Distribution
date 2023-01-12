@@ -24,7 +24,8 @@ object DrawerHeaderProps {
     __obj.asInstanceOf[DrawerHeaderProps]
   }
   
-  extension [Self <: DrawerHeaderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawerHeaderProps] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

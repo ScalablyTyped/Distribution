@@ -18,7 +18,8 @@ object ListQueuesOptions {
     __obj.asInstanceOf[ListQueuesOptions]
   }
   
-  extension [Self <: ListQueuesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListQueuesOptions] (val x: Self) extends AnyVal {
     
     inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     

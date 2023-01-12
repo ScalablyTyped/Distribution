@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[FuzzySearchOptions]
     }
     
-    extension [Self <: FuzzySearchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FuzzySearchOptions] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -191,7 +192,8 @@ object mod {
       __obj.asInstanceOf[ListOptions]
     }
     
-    extension [Self <: ListOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListOptions] (val x: Self) extends AnyVal {
       
       inline def setFuzzySearch(value: FuzzySearchOptions): Self = StObject.set(x, "fuzzySearch", value.asInstanceOf[js.Any])
       
@@ -254,7 +256,8 @@ object mod {
       __obj.asInstanceOf[SortOptions]
     }
     
-    extension [Self <: SortOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortOptions] (val x: Self) extends AnyVal {
       
       inline def setAlphabet(value: String): Self = StObject.set(x, "alphabet", value.asInstanceOf[js.Any])
       

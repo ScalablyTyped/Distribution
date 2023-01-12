@@ -16,7 +16,8 @@ object ContextCallbackResult {
     __obj.asInstanceOf[ContextCallbackResult]
   }
   
-  extension [Self <: ContextCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setContext(value: IAnyObject): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }

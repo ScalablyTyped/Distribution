@@ -117,7 +117,8 @@ object mod {
       __obj.asInstanceOf[BusboyConfig]
     }
     
-    extension [Self <: BusboyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BusboyConfig] (val x: Self) extends AnyVal {
       
       inline def setDefCharset(value: String): Self = StObject.set(x, "defCharset", value.asInstanceOf[js.Any])
       
@@ -218,7 +219,8 @@ object mod {
       __obj.asInstanceOf[BusboyEvents]
     }
     
-    extension [Self <: BusboyEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BusboyEvents] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -253,7 +255,8 @@ object mod {
       __obj.asInstanceOf[FieldInfo]
     }
     
-    extension [Self <: FieldInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldInfo] (val x: Self) extends AnyVal {
       
       inline def setNameTruncated(value: Boolean): Self = StObject.set(x, "nameTruncated", value.asInstanceOf[js.Any])
       
@@ -274,7 +277,8 @@ object mod {
       __obj.asInstanceOf[FileInfo]
     }
     
-    extension [Self <: FileInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileInfo] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     }
@@ -293,7 +297,8 @@ object mod {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -359,7 +364,8 @@ object mod {
       __obj.asInstanceOf[Limits]
     }
     
-    extension [Self <: Limits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Limits] (val x: Self) extends AnyVal {
       
       inline def setFieldNameSize(value: Double): Self = StObject.set(x, "fieldNameSize", value.asInstanceOf[js.Any])
       

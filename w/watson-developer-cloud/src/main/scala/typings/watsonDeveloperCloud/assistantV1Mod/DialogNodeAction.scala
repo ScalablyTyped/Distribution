@@ -29,7 +29,8 @@ object DialogNodeAction {
     __obj.asInstanceOf[DialogNodeAction]
   }
   
-  extension [Self <: DialogNodeAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogNodeAction] (val x: Self) extends AnyVal {
     
     inline def setAction_type(value: String): Self = StObject.set(x, "action_type", value.asInstanceOf[js.Any])
     

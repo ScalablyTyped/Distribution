@@ -17,7 +17,8 @@ object PivotContainerOptions {
     __obj.asInstanceOf[PivotContainerOptions]
   }
   
-  extension [Self <: PivotContainerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotContainerOptions] (val x: Self) extends AnyVal {
     
     inline def setConfiguratorPosition(value: String): Self = StObject.set(x, "configuratorPosition", value.asInstanceOf[js.Any])
     

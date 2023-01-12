@@ -18,7 +18,8 @@ object DescribeEventCategoriesMessage {
     __obj.asInstanceOf[DescribeEventCategoriesMessage]
   }
   
-  extension [Self <: DescribeEventCategoriesMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEventCategoriesMessage] (val x: Self) extends AnyVal {
     
     inline def setSourceType(value: String): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     

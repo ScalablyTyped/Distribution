@@ -30,7 +30,8 @@ object EscPressedPreviousValue {
     __obj.asInstanceOf[EscPressedPreviousValue]
   }
   
-  extension [Self <: EscPressedPreviousValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EscPressedPreviousValue] (val x: Self) extends AnyVal {
     
     inline def setEscPressed(value: Boolean): Self = StObject.set(x, "escPressed", value.asInstanceOf[js.Any])
     

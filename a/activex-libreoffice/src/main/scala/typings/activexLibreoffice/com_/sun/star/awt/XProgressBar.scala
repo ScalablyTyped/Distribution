@@ -51,7 +51,8 @@ object XProgressBar {
     __obj.asInstanceOf[XProgressBar]
   }
   
-  extension [Self <: XProgressBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XProgressBar] (val x: Self) extends AnyVal {
     
     inline def setGetValue(value: () => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     

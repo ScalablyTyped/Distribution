@@ -18,7 +18,8 @@ object AvgPool3DGradInputs {
     __obj.asInstanceOf[AvgPool3DGradInputs]
   }
   
-  extension [Self <: AvgPool3DGradInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvgPool3DGradInputs] (val x: Self) extends AnyVal {
     
     inline def setDy(value: scala.Any): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     

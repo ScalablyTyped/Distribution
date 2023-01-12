@@ -20,7 +20,8 @@ object TColor {
     __obj.asInstanceOf[TColor]
   }
   
-  extension [Self <: TColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TColor] (val x: Self) extends AnyVal {
     
     inline def setResolution(value: IUniform[Any]): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     

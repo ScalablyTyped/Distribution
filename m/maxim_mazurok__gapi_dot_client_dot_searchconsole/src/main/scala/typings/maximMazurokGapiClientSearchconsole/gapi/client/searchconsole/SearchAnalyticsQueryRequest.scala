@@ -55,7 +55,8 @@ object SearchAnalyticsQueryRequest {
     __obj.asInstanceOf[SearchAnalyticsQueryRequest]
   }
   
-  extension [Self <: SearchAnalyticsQueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAnalyticsQueryRequest] (val x: Self) extends AnyVal {
     
     inline def setAggregationType(value: String): Self = StObject.set(x, "aggregationType", value.asInstanceOf[js.Any])
     

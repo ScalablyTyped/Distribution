@@ -25,7 +25,8 @@ object DeviceDefinitionLink {
     __obj.asInstanceOf[DeviceDefinitionLink]
   }
   
-  extension [Self <: DeviceDefinitionLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDefinitionLink] (val x: Self) extends AnyVal {
     
     inline def setRelatedDevice(value: CodeableReference): Self = StObject.set(x, "relatedDevice", value.asInstanceOf[js.Any])
     

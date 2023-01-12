@@ -37,7 +37,8 @@ object InlineValueText {
   inline def is(): /* is vscode-languageserver-types.vscode-languageserver-types.InlineValueText */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")().asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.InlineValueText */ Boolean]
   inline def is(value: InlineValue): /* is vscode-languageserver-types.vscode-languageserver-types.InlineValueText */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.InlineValueText */ Boolean]
   
-  extension [Self <: InlineValueText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineValueText] (val x: Self) extends AnyVal {
     
     inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

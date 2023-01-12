@@ -638,7 +638,8 @@ object PickBarLinkPropstypekeyid {
     __obj.asInstanceOf[PickBarLinkPropstypekeyid]
   }
   
-  extension [Self <: PickBarLinkPropstypekeyid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickBarLinkPropstypekeyid] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

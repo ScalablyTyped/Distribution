@@ -21,7 +21,8 @@ object MenuEvent {
     __obj.asInstanceOf[MenuEvent]
   }
   
-  extension [Self <: MenuEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuEvent] (val x: Self) extends AnyVal {
     
     inline def setMenuId(value: Double): Self = StObject.set(x, "MenuId", value.asInstanceOf[js.Any])
   }

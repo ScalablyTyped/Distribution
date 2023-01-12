@@ -73,7 +73,8 @@ object camerasInputsArcRotateCameraVRDeviceOrientationInputMod {
         __obj.asInstanceOf[ArcRotateCameraInputsManager]
       }
       
-      extension [Self <: ArcRotateCameraInputsManager](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ArcRotateCameraInputsManager] (val x: Self) extends AnyVal {
         
         inline def setAddVRDeviceOrientation(value: () => ArcRotateCameraInputsManager): Self = StObject.set(x, "addVRDeviceOrientation", js.Any.fromFunction0(value))
       }

@@ -168,7 +168,8 @@ object StartBuildBatchInput {
     __obj.asInstanceOf[StartBuildBatchInput]
   }
   
-  extension [Self <: StartBuildBatchInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartBuildBatchInput] (val x: Self) extends AnyVal {
     
     inline def setArtifactsOverride(value: ProjectArtifacts): Self = StObject.set(x, "artifactsOverride", value.asInstanceOf[js.Any])
     

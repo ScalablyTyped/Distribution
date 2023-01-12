@@ -271,7 +271,8 @@ object examplesJsmLoadersMmdloaderMod {
       __obj.asInstanceOf[MMDLoaderAnimationObject]
     }
     
-    extension [Self <: MMDLoaderAnimationObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MMDLoaderAnimationObject] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: AnimationClip): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

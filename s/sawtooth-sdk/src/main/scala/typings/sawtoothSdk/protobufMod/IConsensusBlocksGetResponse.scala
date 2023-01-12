@@ -20,7 +20,8 @@ object IConsensusBlocksGetResponse {
     __obj.asInstanceOf[IConsensusBlocksGetResponse]
   }
   
-  extension [Self <: IConsensusBlocksGetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusBlocksGetResponse] (val x: Self) extends AnyVal {
     
     inline def setBlocks(value: js.Array[IConsensusBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     

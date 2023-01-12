@@ -39,7 +39,8 @@ object StartSoterAuthenticationOption {
     __obj.asInstanceOf[StartSoterAuthenticationOption]
   }
   
-  extension [Self <: StartSoterAuthenticationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSoterAuthenticationOption] (val x: Self) extends AnyVal {
     
     inline def setAuthContent(value: String): Self = StObject.set(x, "authContent", value.asInstanceOf[js.Any])
     

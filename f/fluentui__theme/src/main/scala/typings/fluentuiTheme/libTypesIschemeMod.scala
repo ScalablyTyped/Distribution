@@ -58,7 +58,8 @@ object libTypesIschemeMod {
       __obj.asInstanceOf[IScheme]
     }
     
-    extension [Self <: IScheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScheme] (val x: Self) extends AnyVal {
       
       inline def setDisableGlobalClassNames(value: Boolean): Self = StObject.set(x, "disableGlobalClassNames", value.asInstanceOf[js.Any])
       

@@ -49,7 +49,8 @@ object libComponentsAnnouncedAnnouncedDottypesMod {
       __obj.asInstanceOf[IAnnouncedProps]
     }
     
-    extension [Self <: IAnnouncedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnnouncedProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-live`(value: off | polite | assertive): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object libComponentsAnnouncedAnnouncedDottypesMod {
       __obj.asInstanceOf[IAnnouncedStyleProps]
     }
     
-    extension [Self <: IAnnouncedStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnnouncedStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object libComponentsAnnouncedAnnouncedDottypesMod {
       __obj.asInstanceOf[IAnnouncedStyles]
     }
     
-    extension [Self <: IAnnouncedStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnnouncedStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

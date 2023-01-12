@@ -128,7 +128,8 @@ object typingsNamedExpressionsMod {
       __obj.asInstanceOf[NamedExpression]
     }
     
-    extension [Self <: NamedExpression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedExpression] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       

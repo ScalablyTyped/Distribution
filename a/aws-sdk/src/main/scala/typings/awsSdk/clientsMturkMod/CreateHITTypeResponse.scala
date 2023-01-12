@@ -18,7 +18,8 @@ object CreateHITTypeResponse {
     __obj.asInstanceOf[CreateHITTypeResponse]
   }
   
-  extension [Self <: CreateHITTypeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateHITTypeResponse] (val x: Self) extends AnyVal {
     
     inline def setHITTypeId(value: EntityId): Self = StObject.set(x, "HITTypeId", value.asInstanceOf[js.Any])
     

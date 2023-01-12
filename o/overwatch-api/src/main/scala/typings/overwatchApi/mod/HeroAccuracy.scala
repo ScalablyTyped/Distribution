@@ -17,7 +17,8 @@ object HeroAccuracy {
     __obj.asInstanceOf[HeroAccuracy]
   }
   
-  extension [Self <: HeroAccuracy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeroAccuracy] (val x: Self) extends AnyVal {
     
     inline def setWeapon_accuracy(value: String): Self = StObject.set(x, "weapon_accuracy", value.asInstanceOf[js.Any])
   }

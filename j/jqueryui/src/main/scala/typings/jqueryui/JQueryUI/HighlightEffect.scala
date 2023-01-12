@@ -15,7 +15,8 @@ object HighlightEffect {
     __obj.asInstanceOf[HighlightEffect]
   }
   
-  extension [Self <: HighlightEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightEffect] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object UpdateStatus {
     __obj.asInstanceOf[UpdateStatus]
   }
   
-  extension [Self <: UpdateStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateStatus] (val x: Self) extends AnyVal {
     
     inline def setCompletedAt(value: String): Self = StObject.set(x, "CompletedAt", value.asInstanceOf[js.Any])
     

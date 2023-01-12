@@ -17,7 +17,8 @@ object INetworkOperatorNotificationTrigger {
     __obj.asInstanceOf[INetworkOperatorNotificationTrigger]
   }
   
-  extension [Self <: INetworkOperatorNotificationTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INetworkOperatorNotificationTrigger] (val x: Self) extends AnyVal {
     
     inline def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
   }

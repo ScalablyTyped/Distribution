@@ -36,7 +36,8 @@ object DescribeBlock {
     __obj.asInstanceOf[DescribeBlock]
   }
   
-  extension [Self <: DescribeBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBlock] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[DescribeBlock | TestEntry]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

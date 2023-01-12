@@ -23,7 +23,8 @@ object DanglingIndicesDeleteDanglingIndexRequest {
     __obj.asInstanceOf[DanglingIndicesDeleteDanglingIndexRequest]
   }
   
-  extension [Self <: DanglingIndicesDeleteDanglingIndexRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DanglingIndicesDeleteDanglingIndexRequest] (val x: Self) extends AnyVal {
     
     inline def setAccept_data_loss(value: Boolean): Self = StObject.set(x, "accept_data_loss", value.asInstanceOf[js.Any])
     

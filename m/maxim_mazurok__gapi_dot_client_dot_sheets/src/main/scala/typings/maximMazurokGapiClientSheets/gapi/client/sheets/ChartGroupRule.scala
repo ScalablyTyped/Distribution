@@ -19,7 +19,8 @@ object ChartGroupRule {
     __obj.asInstanceOf[ChartGroupRule]
   }
   
-  extension [Self <: ChartGroupRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartGroupRule] (val x: Self) extends AnyVal {
     
     inline def setDateTimeRule(value: ChartDateTimeRule): Self = StObject.set(x, "dateTimeRule", value.asInstanceOf[js.Any])
     

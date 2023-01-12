@@ -71,7 +71,8 @@ object DocumentScriptLibraryContainer {
     __obj.asInstanceOf[DocumentScriptLibraryContainer]
   }
   
-  extension [Self <: DocumentScriptLibraryContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentScriptLibraryContainer] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: XStorageBasedDocument => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

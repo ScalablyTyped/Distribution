@@ -22,7 +22,8 @@ object ISharedTreeConstants {
     __obj.asInstanceOf[ISharedTreeConstants]
   }
   
-  extension [Self <: ISharedTreeConstants](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISharedTreeConstants] (val x: Self) extends AnyVal {
     
     inline def setAggregation(value: AVG_): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
     

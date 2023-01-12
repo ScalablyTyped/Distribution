@@ -25,7 +25,8 @@ object DictcollName {
     __obj.asInstanceOf[DictcollName]
   }
   
-  extension [Self <: DictcollName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictcollName] (val x: Self) extends AnyVal {
     
     inline def setRetainDirtyFlags(value: Boolean): Self = StObject.set(x, "retainDirtyFlags", value.asInstanceOf[js.Any])
     

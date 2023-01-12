@@ -75,7 +75,8 @@ object XLibraryAccess {
     __obj.asInstanceOf[XLibraryAccess]
   }
   
-  extension [Self <: XLibraryAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLibraryAccess] (val x: Self) extends AnyVal {
     
     inline def setGetFunctionCode(value: String => SafeArray[Double]): Self = StObject.set(x, "getFunctionCode", js.Any.fromFunction1(value))
     

@@ -27,7 +27,8 @@ object libModalUseModalHookModalMod extends Shortcut {
       __obj.asInstanceOf[HookModalProps]
     }
     
-    extension [Self <: HookModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookModalProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       
@@ -48,7 +49,8 @@ object libModalUseModalHookModalMod extends Shortcut {
       __obj.asInstanceOf[HookModalRef]
     }
     
-    extension [Self <: HookModalRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookModalRef] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

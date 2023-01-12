@@ -42,7 +42,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[DefaultRouterOptions[RouteName]]
     }
     
-    extension [Self <: DefaultRouterOptions[?], RouteName /* <: String */](x: Self & DefaultRouterOptions[RouteName]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultRouterOptions[?], RouteName /* <: String */] (val x: Self & DefaultRouterOptions[RouteName]) extends AnyVal {
       
       inline def setInitialRouteName(value: RouteName): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[InitialState]
     }
     
-    extension [Self <: InitialState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitialState] (val x: Self) extends AnyVal {
       
       inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[NavigationAction]
     }
     
-    extension [Self <: NavigationAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationAction] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -201,7 +204,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[NavigationState[ParamList]]
     }
     
-    extension [Self <: NavigationState[?], ParamList /* <: ParamListBase */](x: Self & NavigationState[ParamList]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationState[?], ParamList /* <: ParamListBase */] (val x: Self & NavigationState[ParamList]) extends AnyVal {
       
       inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
@@ -321,7 +325,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[RouterConfigOptions]
     }
     
-    extension [Self <: RouterConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setRouteGetIdList(value: Record[String, js.UndefOr[js.Function1[/* options */ `1`, js.UndefOr[String]]]]): Self = StObject.set(x, "routeGetIdList", value.asInstanceOf[js.Any])
       

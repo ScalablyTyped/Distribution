@@ -19,7 +19,8 @@ object NetAmountBreakdown {
     __obj.asInstanceOf[NetAmountBreakdown]
   }
   
-  extension [Self <: NetAmountBreakdown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetAmountBreakdown] (val x: Self) extends AnyVal {
     
     inline def setConverted_amount(value: Money): Self = StObject.set(x, "converted_amount", value.asInstanceOf[js.Any])
     

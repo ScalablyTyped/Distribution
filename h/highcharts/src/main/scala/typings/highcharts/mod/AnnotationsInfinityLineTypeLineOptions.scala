@@ -15,7 +15,8 @@ object AnnotationsInfinityLineTypeLineOptions {
     __obj.asInstanceOf[AnnotationsInfinityLineTypeLineOptions]
   }
   
-  extension [Self <: AnnotationsInfinityLineTypeLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsInfinityLineTypeLineOptions] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

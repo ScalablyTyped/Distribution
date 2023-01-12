@@ -16,7 +16,8 @@ object Profileid {
     __obj.asInstanceOf[Profileid]
   }
   
-  extension [Self <: Profileid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Profileid] (val x: Self) extends AnyVal {
     
     inline def setProfile_id(value: ProfileId): Self = StObject.set(x, "profile_id", value.asInstanceOf[js.Any])
   }

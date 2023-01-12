@@ -43,7 +43,8 @@ object RaphaelCubicBezierCurvePointInfo {
     __obj.asInstanceOf[RaphaelCubicBezierCurvePointInfo]
   }
   
-  extension [Self <: RaphaelCubicBezierCurvePointInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaphaelCubicBezierCurvePointInfo] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: RaphaelCartesianPoint): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

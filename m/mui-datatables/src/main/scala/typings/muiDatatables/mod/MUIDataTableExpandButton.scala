@@ -38,7 +38,8 @@ object MUIDataTableExpandButton {
     __obj.asInstanceOf[MUIDataTableExpandButton]
   }
   
-  extension [Self <: MUIDataTableExpandButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableExpandButton] (val x: Self) extends AnyVal {
     
     inline def setAreAllRowsExpanded(value: () => Boolean): Self = StObject.set(x, "areAllRowsExpanded", js.Any.fromFunction0(value))
     

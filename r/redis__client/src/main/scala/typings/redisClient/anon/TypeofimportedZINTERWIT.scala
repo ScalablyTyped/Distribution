@@ -36,7 +36,8 @@ object TypeofimportedZINTERWIT {
     __obj.asInstanceOf[TypeofimportedZINTERWIT]
   }
   
-  extension [Self <: TypeofimportedZINTERWIT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofimportedZINTERWIT] (val x: Self) extends AnyVal {
     
     inline def setFIRST_KEY_INDEX(value: /* 2 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
     

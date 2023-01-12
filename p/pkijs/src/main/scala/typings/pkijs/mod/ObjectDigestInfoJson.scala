@@ -28,7 +28,8 @@ object ObjectDigestInfoJson {
     __obj.asInstanceOf[ObjectDigestInfoJson]
   }
   
-  extension [Self <: ObjectDigestInfoJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectDigestInfoJson] (val x: Self) extends AnyVal {
     
     inline def setDigestAlgorithm(value: AlgorithmIdentifierJson): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
     

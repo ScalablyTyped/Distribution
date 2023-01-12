@@ -19,7 +19,8 @@ object Percentage {
     __obj.asInstanceOf[Percentage]
   }
   
-  extension [Self <: Percentage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Percentage] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

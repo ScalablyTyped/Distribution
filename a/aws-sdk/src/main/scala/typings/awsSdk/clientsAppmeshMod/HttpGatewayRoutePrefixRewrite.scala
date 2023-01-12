@@ -23,7 +23,8 @@ object HttpGatewayRoutePrefixRewrite {
     __obj.asInstanceOf[HttpGatewayRoutePrefixRewrite]
   }
   
-  extension [Self <: HttpGatewayRoutePrefixRewrite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpGatewayRoutePrefixRewrite] (val x: Self) extends AnyVal {
     
     inline def setDefaultPrefix(value: DefaultGatewayRouteRewrite): Self = StObject.set(x, "defaultPrefix", value.asInstanceOf[js.Any])
     

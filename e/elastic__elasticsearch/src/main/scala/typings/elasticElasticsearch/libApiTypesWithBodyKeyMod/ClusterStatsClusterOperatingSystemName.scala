@@ -17,7 +17,8 @@ object ClusterStatsClusterOperatingSystemName {
     __obj.asInstanceOf[ClusterStatsClusterOperatingSystemName]
   }
   
-  extension [Self <: ClusterStatsClusterOperatingSystemName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsClusterOperatingSystemName] (val x: Self) extends AnyVal {
     
     inline def setCount(value: integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

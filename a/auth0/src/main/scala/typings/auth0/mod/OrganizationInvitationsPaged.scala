@@ -22,7 +22,8 @@ object OrganizationInvitationsPaged {
     __obj.asInstanceOf[OrganizationInvitationsPaged]
   }
   
-  extension [Self <: OrganizationInvitationsPaged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationInvitationsPaged] (val x: Self) extends AnyVal {
     
     inline def setInvitations(value: js.Array[OrganizationInvitation]): Self = StObject.set(x, "invitations", value.asInstanceOf[js.Any])
     

@@ -91,7 +91,8 @@ object libPropsTypeMod {
       __obj.asInstanceOf[PropsType]
     }
     
-    extension [Self <: PropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsType] (val x: Self) extends AnyVal {
       
       inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
@@ -244,7 +245,8 @@ object libPropsTypeMod {
       __obj.asInstanceOf[TabBarPropsType]
     }
     
-    extension [Self <: TabBarPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBarPropsType] (val x: Self) extends AnyVal {
       
       inline def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
       

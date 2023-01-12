@@ -54,7 +54,8 @@ object ManagedEBook {
     __obj.asInstanceOf[ManagedEBook]
   }
   
-  extension [Self <: ManagedEBook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedEBook] (val x: Self) extends AnyVal {
     
     inline def setAssignments(value: NullableOption[js.Array[ManagedEBookAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     

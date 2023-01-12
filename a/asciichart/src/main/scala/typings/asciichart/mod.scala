@@ -116,7 +116,8 @@ object mod {
       __obj.asInstanceOf[PlotConfig]
     }
     
-    extension [Self <: PlotConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlotConfig] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Array[Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       

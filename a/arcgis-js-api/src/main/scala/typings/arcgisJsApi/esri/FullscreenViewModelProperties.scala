@@ -30,7 +30,8 @@ object FullscreenViewModelProperties {
     __obj.asInstanceOf[FullscreenViewModelProperties]
   }
   
-  extension [Self <: FullscreenViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullscreenViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

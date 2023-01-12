@@ -23,7 +23,8 @@ object Responses200ContentApplicationjsonGitstatus {
     __obj.asInstanceOf[Responses200ContentApplicationjsonGitstatus]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonGitstatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonGitstatus] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathCodespacenameString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

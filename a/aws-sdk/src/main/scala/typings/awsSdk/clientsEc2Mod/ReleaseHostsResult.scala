@@ -23,7 +23,8 @@ object ReleaseHostsResult {
     __obj.asInstanceOf[ReleaseHostsResult]
   }
   
-  extension [Self <: ReleaseHostsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseHostsResult] (val x: Self) extends AnyVal {
     
     inline def setSuccessful(value: ResponseHostIdList): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
     

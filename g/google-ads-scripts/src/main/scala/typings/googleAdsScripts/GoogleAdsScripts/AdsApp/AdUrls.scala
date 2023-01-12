@@ -33,7 +33,8 @@ object AdUrls {
     __obj.asInstanceOf[AdUrls]
   }
   
-  extension [Self <: AdUrls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdUrls] (val x: Self) extends AnyVal {
     
     inline def setGetCustomParameters(value: () => Record[String, String]): Self = StObject.set(x, "getCustomParameters", js.Any.fromFunction0(value))
     

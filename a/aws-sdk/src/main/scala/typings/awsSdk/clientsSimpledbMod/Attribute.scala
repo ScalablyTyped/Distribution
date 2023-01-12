@@ -33,7 +33,8 @@ object Attribute {
     __obj.asInstanceOf[Attribute]
   }
   
-  extension [Self <: Attribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
     
     inline def setAlternateNameEncoding(value: String): Self = StObject.set(x, "AlternateNameEncoding", value.asInstanceOf[js.Any])
     

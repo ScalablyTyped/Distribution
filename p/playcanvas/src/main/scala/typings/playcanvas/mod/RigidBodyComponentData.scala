@@ -15,7 +15,8 @@ object RigidBodyComponentData {
     __obj.asInstanceOf[RigidBodyComponentData]
   }
   
-  extension [Self <: RigidBodyComponentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RigidBodyComponentData] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

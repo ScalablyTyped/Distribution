@@ -18,7 +18,8 @@ object DeleteSynonymOptions {
     __obj.asInstanceOf[DeleteSynonymOptions]
   }
   
-  extension [Self <: DeleteSynonymOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSynonymOptions] (val x: Self) extends AnyVal {
     
     inline def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
     

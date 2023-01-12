@@ -49,7 +49,8 @@ object CallbackUrl {
     __obj.asInstanceOf[CallbackUrl]
   }
   
-  extension [Self <: CallbackUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackUrl] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

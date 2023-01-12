@@ -17,7 +17,8 @@ object JsxDataElementProps {
     __obj.asInstanceOf[JsxDataElementProps]
   }
   
-  extension [Self <: JsxDataElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxDataElementProps] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

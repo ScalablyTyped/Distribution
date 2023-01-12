@@ -21,7 +21,8 @@ object ZoomChangeInfo {
     __obj.asInstanceOf[ZoomChangeInfo]
   }
   
-  extension [Self <: ZoomChangeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomChangeInfo] (val x: Self) extends AnyVal {
     
     inline def setNewZoomFactor(value: Double): Self = StObject.set(x, "newZoomFactor", value.asInstanceOf[js.Any])
     

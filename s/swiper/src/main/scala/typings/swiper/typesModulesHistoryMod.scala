@@ -57,7 +57,8 @@ object typesModulesHistoryMod {
       __obj.asInstanceOf[HistoryOptions]
     }
     
-    extension [Self <: HistoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

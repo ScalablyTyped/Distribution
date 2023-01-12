@@ -25,7 +25,8 @@ object Space {
       __obj.asInstanceOf[GetActivitiesParams]
     }
     
-    extension [Self <: GetActivitiesParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetActivitiesParams] (val x: Self) extends AnyVal {
       
       inline def setActivityTypeId(value: js.Array[ActivityType]): Self = StObject.set(x, "activityTypeId", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object Space {
       __obj.asInstanceOf[PutSpaceNotificationParams]
     }
     
-    extension [Self <: PutSpaceNotificationParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutSpaceNotificationParams] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }

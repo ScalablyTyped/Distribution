@@ -38,7 +38,8 @@ object GetReservedNodeExchangeConfigurationOptionsInputMessage {
     __obj.asInstanceOf[GetReservedNodeExchangeConfigurationOptionsInputMessage]
   }
   
-  extension [Self <: GetReservedNodeExchangeConfigurationOptionsInputMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReservedNodeExchangeConfigurationOptionsInputMessage] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: ReservedNodeExchangeActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     

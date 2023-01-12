@@ -29,7 +29,8 @@ object XAccounting {
     __obj.asInstanceOf[XAccounting]
   }
   
-  extension [Self <: XAccounting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccounting] (val x: Self) extends AnyVal {
     
     inline def setEstimateUsage(value: () => Double): Self = StObject.set(x, "estimateUsage", js.Any.fromFunction0(value))
   }

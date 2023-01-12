@@ -39,7 +39,8 @@ object distTs3Dot9ArgTypesConvertTypescriptTypesMod {
       __obj.asInstanceOf[TSArrayType]
     }
     
-    extension [Self <: TSArrayType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TSArrayType] (val x: Self) extends AnyVal {
       
       inline def setElements(value: js.Array[TSType]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object distTs3Dot9ArgTypesConvertTypescriptTypesMod {
       __obj.asInstanceOf[TSBaseType]
     }
     
-    extension [Self <: TSBaseType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TSBaseType] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object distTs3Dot9ArgTypesConvertTypescriptTypesMod {
       __obj.asInstanceOf[TSCombinationType]
     }
     
-    extension [Self <: TSCombinationType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TSCombinationType] (val x: Self) extends AnyVal {
       
       inline def setElements(value: js.Array[TSType]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
@@ -132,7 +135,8 @@ object distTs3Dot9ArgTypesConvertTypescriptTypesMod {
       __obj.asInstanceOf[TSFuncSigType]
     }
     
-    extension [Self <: TSFuncSigType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TSFuncSigType] (val x: Self) extends AnyVal {
       
       inline def setName(value: signature): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -163,7 +167,8 @@ object distTs3Dot9ArgTypesConvertTypescriptTypesMod {
       __obj.asInstanceOf[TSObjectSigType]
     }
     
-    extension [Self <: TSObjectSigType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TSObjectSigType] (val x: Self) extends AnyVal {
       
       inline def setName(value: signature): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -188,7 +193,8 @@ object distTs3Dot9ArgTypesConvertTypescriptTypesMod {
       __obj.asInstanceOf[TSScalarType]
     }
     
-    extension [Self <: TSScalarType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TSScalarType] (val x: Self) extends AnyVal {
       
       inline def setName(value: any | boolean | number | void | string | symbol): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

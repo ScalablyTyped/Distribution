@@ -23,7 +23,8 @@ object ColumnSelector {
     __obj.asInstanceOf[ColumnSelector]
   }
   
-  extension [Self <: ColumnSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnSelector] (val x: Self) extends AnyVal {
     
     inline def setName(value: ColumnName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ServiceEndpoint {
     __obj.asInstanceOf[ServiceEndpoint]
   }
   
-  extension [Self <: ServiceEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceEndpoint] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: ServiceUrl): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     

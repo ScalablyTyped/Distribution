@@ -44,7 +44,8 @@ object XSignatureVerifyResultBroadcaster {
     __obj.asInstanceOf[XSignatureVerifyResultBroadcaster]
   }
   
-  extension [Self <: XSignatureVerifyResultBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSignatureVerifyResultBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setAddSignatureVerifyResultListener(value: XSignatureVerifyResultListener => Unit): Self = StObject.set(x, "addSignatureVerifyResultListener", js.Any.fromFunction1(value))
     

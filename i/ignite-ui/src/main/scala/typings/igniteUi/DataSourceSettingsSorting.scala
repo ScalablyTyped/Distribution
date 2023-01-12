@@ -106,7 +106,8 @@ object DataSourceSettingsSorting {
     __obj.asInstanceOf[DataSourceSettingsSorting]
   }
   
-  extension [Self <: DataSourceSettingsSorting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSettingsSorting] (val x: Self) extends AnyVal {
     
     inline def setApplyToAllData(value: Boolean): Self = StObject.set(x, "applyToAllData", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object PickImplinitialRatingPart {
     __obj.asInstanceOf[PickImplinitialRatingPart]
   }
   
-  extension [Self <: PickImplinitialRatingPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplinitialRatingPart] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

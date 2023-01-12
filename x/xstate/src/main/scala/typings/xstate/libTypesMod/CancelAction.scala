@@ -19,7 +19,8 @@ object CancelAction {
     __obj.asInstanceOf[CancelAction]
   }
   
-  extension [Self <: CancelAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelAction] (val x: Self) extends AnyVal {
     
     inline def setSendId(value: String | Double): Self = StObject.set(x, "sendId", value.asInstanceOf[js.Any])
   }

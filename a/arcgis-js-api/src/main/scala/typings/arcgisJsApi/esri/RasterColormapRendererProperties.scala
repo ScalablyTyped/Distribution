@@ -20,7 +20,8 @@ object RasterColormapRendererProperties {
     __obj.asInstanceOf[RasterColormapRendererProperties]
   }
   
-  extension [Self <: RasterColormapRendererProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterColormapRendererProperties] (val x: Self) extends AnyVal {
     
     inline def setColormapInfos(value: js.Array[ColormapInfoProperties]): Self = StObject.set(x, "colormapInfos", value.asInstanceOf[js.Any])
     

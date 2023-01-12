@@ -38,7 +38,8 @@ object GetResourceMetricsResponse {
     __obj.asInstanceOf[GetResourceMetricsResponse]
   }
   
-  extension [Self <: GetResourceMetricsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourceMetricsResponse] (val x: Self) extends AnyVal {
     
     inline def setAlignedEndTime(value: js.Date): Self = StObject.set(x, "AlignedEndTime", value.asInstanceOf[js.Any])
     

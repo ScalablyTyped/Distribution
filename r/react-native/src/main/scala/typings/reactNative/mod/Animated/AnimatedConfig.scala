@@ -15,7 +15,8 @@ object AnimatedConfig {
     __obj.asInstanceOf[AnimatedConfig]
   }
   
-  extension [Self <: AnimatedConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimatedConfig] (val x: Self) extends AnyVal {
     
     inline def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
   }

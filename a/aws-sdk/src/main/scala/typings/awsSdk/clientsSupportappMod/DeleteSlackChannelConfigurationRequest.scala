@@ -23,7 +23,8 @@ object DeleteSlackChannelConfigurationRequest {
     __obj.asInstanceOf[DeleteSlackChannelConfigurationRequest]
   }
   
-  extension [Self <: DeleteSlackChannelConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSlackChannelConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: channelId): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     

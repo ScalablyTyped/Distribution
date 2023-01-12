@@ -19,7 +19,8 @@ object GetServiceAccountResponse {
     __obj.asInstanceOf[GetServiceAccountResponse]
   }
   
-  extension [Self <: GetServiceAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

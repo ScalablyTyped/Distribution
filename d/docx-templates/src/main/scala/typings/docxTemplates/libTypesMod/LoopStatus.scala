@@ -25,7 +25,8 @@ object LoopStatus {
     __obj.asInstanceOf[LoopStatus]
   }
   
-  extension [Self <: LoopStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoopStatus] (val x: Self) extends AnyVal {
     
     inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
     

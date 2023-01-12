@@ -18,7 +18,8 @@ object MoveToResponse {
     __obj.asInstanceOf[MoveToResponse]
   }
   
-  extension [Self <: MoveToResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveToResponse] (val x: Self) extends AnyVal {
     
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }

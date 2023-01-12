@@ -27,7 +27,8 @@ object distPostalCodeMod {
       __obj.asInstanceOf[PostalCodeOptions]
     }
     
-    extension [Self <: PostalCodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostalCodeOptions] (val x: Self) extends AnyVal {
       
       inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       

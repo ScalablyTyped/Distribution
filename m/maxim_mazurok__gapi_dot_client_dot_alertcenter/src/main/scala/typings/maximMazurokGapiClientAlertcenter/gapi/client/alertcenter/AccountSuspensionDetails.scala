@@ -19,7 +19,8 @@ object AccountSuspensionDetails {
     __obj.asInstanceOf[AccountSuspensionDetails]
   }
   
-  extension [Self <: AccountSuspensionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountSuspensionDetails] (val x: Self) extends AnyVal {
     
     inline def setAbuseReason(value: String): Self = StObject.set(x, "abuseReason", value.asInstanceOf[js.Any])
     

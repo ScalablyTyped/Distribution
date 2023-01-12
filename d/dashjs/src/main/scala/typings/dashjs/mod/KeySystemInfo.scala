@@ -27,7 +27,8 @@ object KeySystemInfo {
     __obj.asInstanceOf[KeySystemInfo]
   }
   
-  extension [Self <: KeySystemInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeySystemInfo] (val x: Self) extends AnyVal {
     
     inline def setCdmData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "cdmData", value.asInstanceOf[js.Any])
     

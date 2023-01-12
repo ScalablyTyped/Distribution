@@ -23,7 +23,8 @@ object AccessRules {
     __obj.asInstanceOf[AccessRules]
   }
   
-  extension [Self <: AccessRules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessRules] (val x: Self) extends AnyVal {
     
     inline def setAllowPublicOverrides(value: Boolean): Self = StObject.set(x, "allowPublicOverrides", value.asInstanceOf[js.Any])
     

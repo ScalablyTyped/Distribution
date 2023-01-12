@@ -15,7 +15,8 @@ object ContentApplicationjsonWorkflowruns {
     __obj.asInstanceOf[ContentApplicationjsonWorkflowruns]
   }
   
-  extension [Self <: ContentApplicationjsonWorkflowruns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonWorkflowruns] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonWorkflowruns): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

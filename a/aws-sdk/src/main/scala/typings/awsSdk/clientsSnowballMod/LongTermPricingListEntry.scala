@@ -63,7 +63,8 @@ object LongTermPricingListEntry {
     __obj.asInstanceOf[LongTermPricingListEntry]
   }
   
-  extension [Self <: LongTermPricingListEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LongTermPricingListEntry] (val x: Self) extends AnyVal {
     
     inline def setCurrentActiveJob(value: JobId): Self = StObject.set(x, "CurrentActiveJob", value.asInstanceOf[js.Any])
     

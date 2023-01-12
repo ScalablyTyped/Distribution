@@ -66,7 +66,8 @@ object PartialWebDriver {
     __obj.asInstanceOf[PartialWebDriver]
   }
   
-  extension [Self <: PartialWebDriver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialWebDriver] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: Http): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

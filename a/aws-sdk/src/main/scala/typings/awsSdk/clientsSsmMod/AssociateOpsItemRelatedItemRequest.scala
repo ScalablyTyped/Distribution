@@ -38,7 +38,8 @@ object AssociateOpsItemRelatedItemRequest {
     __obj.asInstanceOf[AssociateOpsItemRelatedItemRequest]
   }
   
-  extension [Self <: AssociateOpsItemRelatedItemRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateOpsItemRelatedItemRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationType(value: OpsItemRelatedItemAssociationType): Self = StObject.set(x, "AssociationType", value.asInstanceOf[js.Any])
     

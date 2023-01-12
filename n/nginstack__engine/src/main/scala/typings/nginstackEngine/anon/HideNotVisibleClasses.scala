@@ -19,7 +19,8 @@ object HideNotVisibleClasses {
     __obj.asInstanceOf[HideNotVisibleClasses]
   }
   
-  extension [Self <: HideNotVisibleClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HideNotVisibleClasses] (val x: Self) extends AnyVal {
     
     inline def setHideNotVisibleClasses(value: Boolean): Self = StObject.set(x, "hideNotVisibleClasses", value.asInstanceOf[js.Any])
     

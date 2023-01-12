@@ -59,7 +59,8 @@ object SequenceReferenceSeq {
     __obj.asInstanceOf[SequenceReferenceSeq]
   }
   
-  extension [Self <: SequenceReferenceSeq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequenceReferenceSeq] (val x: Self) extends AnyVal {
     
     inline def setChromosome(value: CodeableConcept): Self = StObject.set(x, "chromosome", value.asInstanceOf[js.Any])
     

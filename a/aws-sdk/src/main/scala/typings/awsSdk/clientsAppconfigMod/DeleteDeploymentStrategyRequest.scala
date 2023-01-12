@@ -18,7 +18,8 @@ object DeleteDeploymentStrategyRequest {
     __obj.asInstanceOf[DeleteDeploymentStrategyRequest]
   }
   
-  extension [Self <: DeleteDeploymentStrategyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDeploymentStrategyRequest] (val x: Self) extends AnyVal {
     
     inline def setDeploymentStrategyId(value: DeploymentStrategyId): Self = StObject.set(x, "DeploymentStrategyId", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object ConnectionSummary {
     __obj.asInstanceOf[ConnectionSummary]
   }
   
-  extension [Self <: ConnectionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionSummary] (val x: Self) extends AnyVal {
     
     inline def setConnectionArn(value: AppRunnerResourceArn): Self = StObject.set(x, "ConnectionArn", value.asInstanceOf[js.Any])
     

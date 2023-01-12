@@ -93,7 +93,8 @@ object DescribeIndexResponse {
     __obj.asInstanceOf[DescribeIndexResponse]
   }
   
-  extension [Self <: DescribeIndexResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeIndexResponse] (val x: Self) extends AnyVal {
     
     inline def setCapacityUnits(value: CapacityUnitsConfiguration): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
     

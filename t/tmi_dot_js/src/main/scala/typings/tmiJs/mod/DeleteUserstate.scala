@@ -19,7 +19,8 @@ object DeleteUserstate {
     __obj.asInstanceOf[DeleteUserstate]
   }
   
-  extension [Self <: DeleteUserstate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteUserstate] (val x: Self) extends AnyVal {
     
     inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     

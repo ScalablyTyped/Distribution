@@ -38,7 +38,8 @@ object UnsubscribeFromDatasetRequest {
     __obj.asInstanceOf[UnsubscribeFromDatasetRequest]
   }
   
-  extension [Self <: UnsubscribeFromDatasetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsubscribeFromDatasetRequest] (val x: Self) extends AnyVal {
     
     inline def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     

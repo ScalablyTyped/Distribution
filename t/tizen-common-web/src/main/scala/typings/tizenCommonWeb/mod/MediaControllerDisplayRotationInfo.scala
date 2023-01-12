@@ -66,7 +66,8 @@ object MediaControllerDisplayRotationInfo {
     __obj.asInstanceOf[MediaControllerDisplayRotationInfo]
   }
   
-  extension [Self <: MediaControllerDisplayRotationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaControllerDisplayRotationInfo] (val x: Self) extends AnyVal {
     
     inline def setAddDisplayRotationChangeListener(value: MediaControllerDisplayRotationChangeCallback => Double): Self = StObject.set(x, "addDisplayRotationChangeListener", js.Any.fromFunction1(value))
     

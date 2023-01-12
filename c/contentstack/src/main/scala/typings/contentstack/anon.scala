@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setEntry(value: EntryEmbedable | js.Array[EntryEmbedable]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Paths]
     }
     
-    extension [Self <: Paths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Paths] (val x: Self) extends AnyVal {
       
       inline def setEntry(value: EntryEmbedable | js.Array[EntryEmbedable]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       

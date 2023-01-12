@@ -28,7 +28,8 @@ object SelectionFilter {
     __obj.asInstanceOf[SelectionFilter]
   }
   
-  extension [Self <: SelectionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionFilter] (val x: Self) extends AnyVal {
     
     inline def setObjectIds(value: js.Array[Double]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     

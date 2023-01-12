@@ -33,7 +33,8 @@ object GetOrganizationConformancePackDetailedStatusRequest {
     __obj.asInstanceOf[GetOrganizationConformancePackDetailedStatusRequest]
   }
   
-  extension [Self <: GetOrganizationConformancePackDetailedStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOrganizationConformancePackDetailedStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: OrganizationResourceDetailedStatusFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

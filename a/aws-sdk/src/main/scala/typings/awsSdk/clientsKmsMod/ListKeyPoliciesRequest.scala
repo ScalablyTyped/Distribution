@@ -28,7 +28,8 @@ object ListKeyPoliciesRequest {
     __obj.asInstanceOf[ListKeyPoliciesRequest]
   }
   
-  extension [Self <: ListKeyPoliciesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListKeyPoliciesRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     

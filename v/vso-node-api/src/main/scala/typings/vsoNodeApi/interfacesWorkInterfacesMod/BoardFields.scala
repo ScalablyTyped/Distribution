@@ -19,7 +19,8 @@ object BoardFields {
     __obj.asInstanceOf[BoardFields]
   }
   
-  extension [Self <: BoardFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoardFields] (val x: Self) extends AnyVal {
     
     inline def setColumnField(value: FieldReference): Self = StObject.set(x, "columnField", value.asInstanceOf[js.Any])
     

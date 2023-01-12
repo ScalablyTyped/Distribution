@@ -49,7 +49,8 @@ object LinearRadialCommon {
     __obj.asInstanceOf[LinearRadialCommon]
   }
   
-  extension [Self <: LinearRadialCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearRadialCommon] (val x: Self) extends AnyVal {
     
     inline def setAlarmSound(value: String): Self = StObject.set(x, "alarmSound", value.asInstanceOf[js.Any])
     

@@ -101,7 +101,8 @@ object srcModelOperationNooperationMod {
       __obj.asInstanceOf[NoOperation]
     }
     
-    extension [Self <: NoOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoOperation] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: () => NoOperation): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
       

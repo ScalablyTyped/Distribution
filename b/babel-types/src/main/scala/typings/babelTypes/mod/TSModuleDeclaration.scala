@@ -36,7 +36,8 @@ object TSModuleDeclaration {
   @js.native
   def apply(id: StringLiteral_, body: TSModuleDeclaration): TSModuleDeclaration = js.native
   
-  extension [Self <: TSModuleDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSModuleDeclaration] (val x: Self) extends AnyVal {
     
     inline def setBody(value: TSModuleBlock | TSModuleDeclaration): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

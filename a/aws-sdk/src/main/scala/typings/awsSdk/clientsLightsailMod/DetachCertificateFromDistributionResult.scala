@@ -18,7 +18,8 @@ object DetachCertificateFromDistributionResult {
     __obj.asInstanceOf[DetachCertificateFromDistributionResult]
   }
   
-  extension [Self <: DetachCertificateFromDistributionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachCertificateFromDistributionResult] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

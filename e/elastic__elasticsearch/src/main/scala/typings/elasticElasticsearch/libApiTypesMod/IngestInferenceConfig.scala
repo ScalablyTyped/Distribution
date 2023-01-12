@@ -17,7 +17,8 @@ object IngestInferenceConfig {
     __obj.asInstanceOf[IngestInferenceConfig]
   }
   
-  extension [Self <: IngestInferenceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestInferenceConfig] (val x: Self) extends AnyVal {
     
     inline def setClassification(value: IngestInferenceConfigClassification): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     

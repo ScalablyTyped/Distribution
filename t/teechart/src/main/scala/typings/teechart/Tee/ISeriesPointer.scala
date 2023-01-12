@@ -35,7 +35,8 @@ object ISeriesPointer {
     __obj.asInstanceOf[ISeriesPointer]
   }
   
-  extension [Self <: ISeriesPointer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISeriesPointer] (val x: Self) extends AnyVal {
     
     inline def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

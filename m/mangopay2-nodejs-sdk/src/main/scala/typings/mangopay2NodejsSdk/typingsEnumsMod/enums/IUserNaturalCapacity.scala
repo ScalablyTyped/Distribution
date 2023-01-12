@@ -25,7 +25,8 @@ object IUserNaturalCapacity {
     __obj.asInstanceOf[IUserNaturalCapacity]
   }
   
-  extension [Self <: IUserNaturalCapacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUserNaturalCapacity] (val x: Self) extends AnyVal {
     
     inline def setDeclarative(value: DECLARATIVE): Self = StObject.set(x, "Declarative", value.asInstanceOf[js.Any])
     

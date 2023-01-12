@@ -101,7 +101,8 @@ object Activeanon {
     __obj.asInstanceOf[Activeanon]
   }
   
-  extension [Self <: Activeanon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Activeanon] (val x: Self) extends AnyVal {
     
     inline def setActive_anon(value: Double): Self = StObject.set(x, "active_anon", value.asInstanceOf[js.Any])
     

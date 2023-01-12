@@ -22,7 +22,8 @@ object FirstDerivativeElevationGrid {
     __obj.asInstanceOf[FirstDerivativeElevationGrid]
   }
   
-  extension [Self <: FirstDerivativeElevationGrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstDerivativeElevationGrid] (val x: Self) extends AnyVal {
     
     inline def setAltitudeMultiplier(value: Double): Self = StObject.set(x, "altitudeMultiplier", value.asInstanceOf[js.Any])
     

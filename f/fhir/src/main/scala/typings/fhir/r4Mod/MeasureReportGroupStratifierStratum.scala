@@ -35,7 +35,8 @@ object MeasureReportGroupStratifierStratum {
     __obj.asInstanceOf[MeasureReportGroupStratifierStratum]
   }
   
-  extension [Self <: MeasureReportGroupStratifierStratum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasureReportGroupStratifierStratum] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: js.Array[MeasureReportGroupStratifierStratumComponent]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

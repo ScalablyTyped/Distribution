@@ -27,7 +27,8 @@ object Erc20Contract {
     __obj.asInstanceOf[Erc20Contract]
   }
   
-  extension [Self <: Erc20Contract](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Erc20Contract] (val x: Self) extends AnyVal {
     
     inline def setErc20Contract(value: TokenInfo): Self = StObject.set(x, "erc20Contract", value.asInstanceOf[js.Any])
     

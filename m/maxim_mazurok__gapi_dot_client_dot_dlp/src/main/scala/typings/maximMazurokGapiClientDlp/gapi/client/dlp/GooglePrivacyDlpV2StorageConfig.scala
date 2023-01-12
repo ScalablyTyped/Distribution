@@ -27,7 +27,8 @@ object GooglePrivacyDlpV2StorageConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2StorageConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2StorageConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2StorageConfig] (val x: Self) extends AnyVal {
     
     inline def setBigQueryOptions(value: GooglePrivacyDlpV2BigQueryOptions): Self = StObject.set(x, "bigQueryOptions", value.asInstanceOf[js.Any])
     

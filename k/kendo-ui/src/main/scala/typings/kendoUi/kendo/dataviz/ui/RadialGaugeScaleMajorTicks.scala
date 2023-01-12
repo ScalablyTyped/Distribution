@@ -21,7 +21,8 @@ object RadialGaugeScaleMajorTicks {
     __obj.asInstanceOf[RadialGaugeScaleMajorTicks]
   }
   
-  extension [Self <: RadialGaugeScaleMajorTicks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialGaugeScaleMajorTicks] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetTopicAttributesInput {
     __obj.asInstanceOf[GetTopicAttributesInput]
   }
   
-  extension [Self <: GetTopicAttributesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTopicAttributesInput] (val x: Self) extends AnyVal {
     
     inline def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }

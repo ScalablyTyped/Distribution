@@ -15,7 +15,8 @@ object INxFieldProperties {
     __obj.asInstanceOf[INxFieldProperties]
   }
   
-  extension [Self <: INxFieldProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxFieldProperties] (val x: Self) extends AnyVal {
     
     inline def setQOneAndOnlyOne(value: Boolean): Self = StObject.set(x, "qOneAndOnlyOne", value.asInstanceOf[js.Any])
   }

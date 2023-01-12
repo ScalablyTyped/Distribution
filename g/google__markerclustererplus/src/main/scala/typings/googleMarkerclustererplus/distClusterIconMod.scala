@@ -129,7 +129,8 @@ object distClusterIconMod {
       __obj.asInstanceOf[ClusterIconInfo]
     }
     
-    extension [Self <: ClusterIconInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClusterIconInfo] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -235,7 +236,8 @@ object distClusterIconMod {
       __obj.asInstanceOf[ClusterIconStyle]
     }
     
-    extension [Self <: ClusterIconStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClusterIconStyle] (val x: Self) extends AnyVal {
       
       inline def setAnchorIcon(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "anchorIcon", value.asInstanceOf[js.Any])
       

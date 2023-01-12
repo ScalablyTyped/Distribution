@@ -73,7 +73,8 @@ object IComponentOptions {
     __obj.asInstanceOf[IComponentOptions]
   }
   
-  extension [Self <: IComponentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IComponentOptions] (val x: Self) extends AnyVal {
     
     inline def setBindings(value: StringDictionary[String]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     

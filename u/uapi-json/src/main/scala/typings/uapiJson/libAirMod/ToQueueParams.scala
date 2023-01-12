@@ -19,7 +19,8 @@ object ToQueueParams {
     __obj.asInstanceOf[ToQueueParams]
   }
   
-  extension [Self <: ToQueueParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToQueueParams] (val x: Self) extends AnyVal {
     
     inline def setPnr(value: String): Self = StObject.set(x, "pnr", value.asInstanceOf[js.Any])
     

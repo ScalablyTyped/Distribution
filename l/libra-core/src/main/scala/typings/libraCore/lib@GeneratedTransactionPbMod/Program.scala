@@ -94,7 +94,8 @@ object Program {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setArgumentsList(value: js.Array[typings.libraCore.`lib@GeneratedTransactionPbMod`.TransactionArgument.AsObject]): Self = StObject.set(x, "argumentsList", value.asInstanceOf[js.Any])
       

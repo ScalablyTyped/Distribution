@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def set0(value: Any): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setStack(value: dbcore): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     }
@@ -62,7 +64,8 @@ object anon {
       __obj.asInstanceOf[AllKeys[B]]
     }
     
-    extension [Self <: AllKeys[?], B /* <: Boolean */](x: Self & AllKeys[B]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllKeys[?], B /* <: Boolean */] (val x: Self & AllKeys[B]) extends AnyVal {
       
       inline def setAllKeys(value: B): Self = StObject.set(x, "allKeys", value.asInstanceOf[js.Any])
     }
@@ -79,7 +82,8 @@ object anon {
       __obj.asInstanceOf[AllKeysBoolean]
     }
     
-    extension [Self <: AllKeysBoolean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllKeysBoolean] (val x: Self) extends AnyVal {
       
       inline def setAllKeys(value: Boolean): Self = StObject.set(x, "allKeys", value.asInstanceOf[js.Any])
     }
@@ -100,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Bound]
     }
     
-    extension [Self <: Bound](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bound] (val x: Self) extends AnyVal {
       
       inline def setBound(value: js.Function): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
       
@@ -123,7 +128,8 @@ object anon {
       __obj.asInstanceOf[IncludeLowers]
     }
     
-    extension [Self <: IncludeLowers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncludeLowers] (val x: Self) extends AnyVal {
       
       inline def setIncludeLowers(value: Boolean): Self = StObject.set(x, "includeLowers", value.asInstanceOf[js.Any])
       
@@ -148,7 +154,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -171,7 +178,8 @@ object anon {
       __obj.asInstanceOf[Key[TKey]]
     }
     
-    extension [Self <: Key[?], TKey](x: Self & Key[TKey]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key[?], TKey] (val x: Self & Key[TKey]) extends AnyVal {
       
       inline def setKey(value: IndexableType): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -194,7 +202,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -213,7 +222,8 @@ object anon {
       __obj.asInstanceOf[Open]
     }
     
-    extension [Self <: Open](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Open] (val x: Self) extends AnyVal {
       
       inline def setOpen(value: js.Function): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     }
@@ -232,7 +242,8 @@ object anon {
       __obj.asInstanceOf[PrimaryKey[TKey]]
     }
     
-    extension [Self <: PrimaryKey[?], TKey](x: Self & PrimaryKey[TKey]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryKey[?], TKey] (val x: Self & PrimaryKey[TKey]) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -251,7 +262,8 @@ object anon {
       __obj.asInstanceOf[Stack]
     }
     
-    extension [Self <: Stack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stack] (val x: Self) extends AnyVal {
       
       inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     }
@@ -293,7 +305,8 @@ object anon {
       __obj.asInstanceOf[Value[T]]
     }
     
-    extension [Self <: Value[?], T](x: Self & Value[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value[?], T] (val x: Self & Value[T]) extends AnyVal {
       
       inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

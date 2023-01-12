@@ -38,7 +38,8 @@ object GravityWellConfig {
     __obj.asInstanceOf[GravityWellConfig]
   }
   
-  extension [Self <: GravityWellConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GravityWellConfig] (val x: Self) extends AnyVal {
     
     inline def setEpsilon(value: Double): Self = StObject.set(x, "epsilon", value.asInstanceOf[js.Any])
     

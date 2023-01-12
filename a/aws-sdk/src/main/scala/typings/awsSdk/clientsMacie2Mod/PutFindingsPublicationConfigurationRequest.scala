@@ -23,7 +23,8 @@ object PutFindingsPublicationConfigurationRequest {
     __obj.asInstanceOf[PutFindingsPublicationConfigurationRequest]
   }
   
-  extension [Self <: PutFindingsPublicationConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutFindingsPublicationConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: string): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

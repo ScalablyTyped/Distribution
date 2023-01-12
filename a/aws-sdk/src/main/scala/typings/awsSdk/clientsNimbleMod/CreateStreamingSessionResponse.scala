@@ -18,7 +18,8 @@ object CreateStreamingSessionResponse {
     __obj.asInstanceOf[CreateStreamingSessionResponse]
   }
   
-  extension [Self <: CreateStreamingSessionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStreamingSessionResponse] (val x: Self) extends AnyVal {
     
     inline def setSession(value: StreamingSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     

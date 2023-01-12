@@ -15,7 +15,8 @@ object OnTransitionEnd {
     __obj.asInstanceOf[OnTransitionEnd]
   }
   
-  extension [Self <: OnTransitionEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnTransitionEnd] (val x: Self) extends AnyVal {
     
     inline def setOnTransitionEnd(value: () => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction0(value))
     

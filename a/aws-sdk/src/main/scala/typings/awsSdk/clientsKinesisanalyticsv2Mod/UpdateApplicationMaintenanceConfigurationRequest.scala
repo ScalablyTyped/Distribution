@@ -26,7 +26,8 @@ object UpdateApplicationMaintenanceConfigurationRequest {
     __obj.asInstanceOf[UpdateApplicationMaintenanceConfigurationRequest]
   }
   
-  extension [Self <: UpdateApplicationMaintenanceConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateApplicationMaintenanceConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationMaintenanceConfigurationUpdate(value: ApplicationMaintenanceConfigurationUpdate): Self = StObject.set(x, "ApplicationMaintenanceConfigurationUpdate", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object DownlinkQueueMessage {
     __obj.asInstanceOf[DownlinkQueueMessage]
   }
   
-  extension [Self <: DownlinkQueueMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownlinkQueueMessage] (val x: Self) extends AnyVal {
     
     inline def setLoRaWAN(value: LoRaWANSendDataToDevice): Self = StObject.set(x, "LoRaWAN", value.asInstanceOf[js.Any])
     

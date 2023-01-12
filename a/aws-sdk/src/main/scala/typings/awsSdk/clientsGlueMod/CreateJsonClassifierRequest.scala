@@ -23,7 +23,8 @@ object CreateJsonClassifierRequest {
     __obj.asInstanceOf[CreateJsonClassifierRequest]
   }
   
-  extension [Self <: CreateJsonClassifierRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateJsonClassifierRequest] (val x: Self) extends AnyVal {
     
     inline def setJsonPath(value: JsonPath): Self = StObject.set(x, "JsonPath", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object altContainerMod extends Shortcut {
       __obj.asInstanceOf[ContainerProps]
     }
     
-    extension [Self <: ContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: StringDictionary[js.Object]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

@@ -151,7 +151,8 @@ object UICustomizationOptions {
     __obj.asInstanceOf[UICustomizationOptions]
   }
   
-  extension [Self <: UICustomizationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UICustomizationOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthAccentColor(value: String): Self = StObject.set(x, "authAccentColor", value.asInstanceOf[js.Any])
     

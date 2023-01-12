@@ -32,7 +32,8 @@ object distTypesCommandMod {
       __obj.asInstanceOf[Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedConfiguration]]
     }
     
-    extension [Self <: Command[?, ?, ?, ?, ?], ClientInput /* <: js.Object */, InputType /* <: ClientInput */, ClientOutput /* <: MetadataBearer */, OutputType /* <: ClientOutput */, ResolvedConfiguration](x: Self & (Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedConfiguration])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Command[?, ?, ?, ?, ?], ClientInput /* <: js.Object */, InputType /* <: ClientInput */, ClientOutput /* <: MetadataBearer */, OutputType /* <: ClientOutput */, ResolvedConfiguration] (val x: Self & (Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedConfiguration])) extends AnyVal {
       
       inline def setInput(value: InputType): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       

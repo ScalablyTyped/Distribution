@@ -21,7 +21,8 @@ object CreativeRestrictions {
     __obj.asInstanceOf[CreativeRestrictions]
   }
   
-  extension [Self <: CreativeRestrictions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreativeRestrictions] (val x: Self) extends AnyVal {
     
     inline def setCreativeFormat(value: String): Self = StObject.set(x, "creativeFormat", value.asInstanceOf[js.Any])
     

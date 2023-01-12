@@ -20,7 +20,8 @@ object TypeofDateTimePicker {
     __obj.asInstanceOf[TypeofDateTimePicker]
   }
   
-  extension [Self <: TypeofDateTimePicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDateTimePicker] (val x: Self) extends AnyVal {
     
     inline def setFn(value: DateTimePicker): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

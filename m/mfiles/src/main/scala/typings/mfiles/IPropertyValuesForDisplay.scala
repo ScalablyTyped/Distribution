@@ -17,7 +17,8 @@ object IPropertyValuesForDisplay {
     __obj.asInstanceOf[IPropertyValuesForDisplay]
   }
   
-  extension [Self <: IPropertyValuesForDisplay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPropertyValuesForDisplay] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

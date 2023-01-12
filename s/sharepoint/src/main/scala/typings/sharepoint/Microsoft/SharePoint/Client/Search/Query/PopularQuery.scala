@@ -48,7 +48,8 @@ object PopularQuery {
     __obj.asInstanceOf[PopularQuery]
   }
   
-  extension [Self <: PopularQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopularQuery] (val x: Self) extends AnyVal {
     
     inline def setGet_LCID(value: () => Double): Self = StObject.set(x, "get_LCID", js.Any.fromFunction0(value))
     

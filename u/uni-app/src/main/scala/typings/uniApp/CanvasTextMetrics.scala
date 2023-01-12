@@ -18,7 +18,8 @@ object CanvasTextMetrics {
     __obj.asInstanceOf[CanvasTextMetrics]
   }
   
-  extension [Self <: CanvasTextMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasTextMetrics] (val x: Self) extends AnyVal {
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

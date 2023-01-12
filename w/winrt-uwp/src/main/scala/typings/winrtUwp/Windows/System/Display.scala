@@ -23,7 +23,8 @@ object Display {
       __obj.asInstanceOf[DisplayRequest]
     }
     
-    extension [Self <: DisplayRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayRequest] (val x: Self) extends AnyVal {
       
       inline def setRequestActive(value: () => Unit): Self = StObject.set(x, "requestActive", js.Any.fromFunction0(value))
       

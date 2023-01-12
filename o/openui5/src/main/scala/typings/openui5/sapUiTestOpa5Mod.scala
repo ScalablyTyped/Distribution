@@ -517,7 +517,8 @@ object sapUiTestOpa5Mod {
       __obj.asInstanceOf[PageObjectDefinition]
     }
     
-    extension [Self <: PageObjectDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageObjectDefinition] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Record[String, js.Function]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

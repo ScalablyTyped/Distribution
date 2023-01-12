@@ -20,7 +20,8 @@ object StructureDefinitionDifferential {
     __obj.asInstanceOf[StructureDefinitionDifferential]
   }
   
-  extension [Self <: StructureDefinitionDifferential](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureDefinitionDifferential] (val x: Self) extends AnyVal {
     
     inline def setElement(value: js.Array[ElementDefinition]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

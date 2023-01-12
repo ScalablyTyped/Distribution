@@ -43,7 +43,8 @@ object DescribeScheduledActionsRequest {
     __obj.asInstanceOf[DescribeScheduledActionsRequest]
   }
   
-  extension [Self <: DescribeScheduledActionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeScheduledActionsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[BBox]
     }
     
-    extension [Self <: BBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BBox] (val x: Self) extends AnyVal {
       
       inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
       

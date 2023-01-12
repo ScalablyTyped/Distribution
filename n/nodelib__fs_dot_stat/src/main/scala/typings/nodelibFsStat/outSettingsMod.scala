@@ -51,7 +51,8 @@ object outSettingsMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFollowSymbolicLink(value: Boolean): Self = StObject.set(x, "followSymbolicLink", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object outSettingsMod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setFollowSymbolicLink(value: Boolean): Self = StObject.set(x, "followSymbolicLink", value.asInstanceOf[js.Any])
       

@@ -46,7 +46,8 @@ object esPanelsQuarterPanelQuarterHeaderMod {
       __obj.asInstanceOf[QuarterHeaderProps[DateType]]
     }
     
-    extension [Self <: QuarterHeaderProps[?], DateType](x: Self & QuarterHeaderProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuarterHeaderProps[?], DateType] (val x: Self & QuarterHeaderProps[DateType]) extends AnyVal {
       
       inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       

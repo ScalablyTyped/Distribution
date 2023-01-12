@@ -104,7 +104,8 @@ object Loader {
     __obj.asInstanceOf[Loader]
   }
   
-  extension [Self <: Loader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Loader] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: js.Array[Unit] & (Record[String, HTMLImageElement])): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     

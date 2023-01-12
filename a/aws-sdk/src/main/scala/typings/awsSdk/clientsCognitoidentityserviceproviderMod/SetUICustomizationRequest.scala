@@ -33,7 +33,8 @@ object SetUICustomizationRequest {
     __obj.asInstanceOf[SetUICustomizationRequest]
   }
   
-  extension [Self <: SetUICustomizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetUICustomizationRequest] (val x: Self) extends AnyVal {
     
     inline def setCSS(value: CSSType): Self = StObject.set(x, "CSS", value.asInstanceOf[js.Any])
     

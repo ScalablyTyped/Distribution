@@ -15,7 +15,8 @@ object AutomationProtocol {
     __obj.asInstanceOf[AutomationProtocol]
   }
   
-  extension [Self <: AutomationProtocol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomationProtocol] (val x: Self) extends AnyVal {
     
     inline def setAutomationProtocol(value: String): Self = StObject.set(x, "automationProtocol", value.asInstanceOf[js.Any])
     

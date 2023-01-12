@@ -33,7 +33,8 @@ object ActiveViewChangingEventArgs {
     __obj.asInstanceOf[ActiveViewChangingEventArgs]
   }
   
-  extension [Self <: ActiveViewChangingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveViewChangingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

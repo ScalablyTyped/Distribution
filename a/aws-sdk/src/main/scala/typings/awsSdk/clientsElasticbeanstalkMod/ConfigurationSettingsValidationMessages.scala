@@ -18,7 +18,8 @@ object ConfigurationSettingsValidationMessages {
     __obj.asInstanceOf[ConfigurationSettingsValidationMessages]
   }
   
-  extension [Self <: ConfigurationSettingsValidationMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationSettingsValidationMessages] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: ValidationMessagesList): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     

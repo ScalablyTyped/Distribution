@@ -44,7 +44,8 @@ object JQuerySortable {
       __obj.asInstanceOf[Container]
     }
     
-    extension [Self <: Container](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
       
       inline def setEl(value: JQuery): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object JQuerySortable {
       __obj.asInstanceOf[ContainerGroup]
     }
     
-    extension [Self <: ContainerGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerGroup] (val x: Self) extends AnyVal {
       
       inline def set$document(value: JQuery): Self = StObject.set(x, "$document", value.asInstanceOf[js.Any])
       
@@ -206,7 +208,8 @@ object JQuerySortable {
       __obj.asInstanceOf[ContainerOptions]
     }
     
-    extension [Self <: ContainerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerOptions] (val x: Self) extends AnyVal {
       
       inline def setDrag(value: Boolean): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
@@ -313,7 +316,8 @@ object JQuerySortable {
       __obj.asInstanceOf[GroupOptions]
     }
     
-    extension [Self <: GroupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupOptions] (val x: Self) extends AnyVal {
       
       inline def setAfterMove(
         value: (/* $placeholder */ JQuery, /* container */ Container, /* $closestItemOrContainer */ JQuery) => Unit
@@ -486,7 +490,8 @@ object JQuerySortable {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
@@ -507,7 +512,8 @@ object JQuerySortable {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       

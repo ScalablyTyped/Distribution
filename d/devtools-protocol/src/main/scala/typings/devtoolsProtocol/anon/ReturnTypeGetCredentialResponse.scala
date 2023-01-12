@@ -19,7 +19,8 @@ object ReturnTypeGetCredentialResponse {
     __obj.asInstanceOf[ReturnTypeGetCredentialResponse]
   }
   
-  extension [Self <: ReturnTypeGetCredentialResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetCredentialResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetCredentialRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

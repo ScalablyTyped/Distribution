@@ -22,7 +22,8 @@ object CloseConnectionOptions {
     __obj.asInstanceOf[CloseConnectionOptions]
   }
   
-  extension [Self <: CloseConnectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseConnectionOptions] (val x: Self) extends AnyVal {
     
     inline def setDrop(value: Boolean): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
   }

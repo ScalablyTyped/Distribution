@@ -17,7 +17,8 @@ object RemoteSystemWatcherErrorOccurredEventArgs {
     __obj.asInstanceOf[RemoteSystemWatcherErrorOccurredEventArgs]
   }
   
-  extension [Self <: RemoteSystemWatcherErrorOccurredEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteSystemWatcherErrorOccurredEventArgs] (val x: Self) extends AnyVal {
     
     inline def setError(value: RemoteSystemWatcherError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

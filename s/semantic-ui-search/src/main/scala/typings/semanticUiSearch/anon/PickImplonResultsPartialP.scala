@@ -100,7 +100,8 @@ object PickImplonResultsPartialP {
     __obj.asInstanceOf[PickImplonResultsPartialP]
   }
   
-  extension [Self <: PickImplonResultsPartialP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplonResultsPartialP] (val x: Self) extends AnyVal {
     
     inline def setApiSettings(value: ApiSettings): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
     

@@ -95,7 +95,8 @@ object ArmRelocator {
     __obj.asInstanceOf[ArmRelocator]
   }
   
-  extension [Self <: ArmRelocator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArmRelocator] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

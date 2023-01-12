@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[SetVersionByQueryParamOptions]
     }
     
-    extension [Self <: SetVersionByQueryParamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetVersionByQueryParamOptions] (val x: Self) extends AnyVal {
       
       inline def setRemoveQueryParam(value: Boolean): Self = StObject.set(x, "removeQueryParam", value.asInstanceOf[js.Any])
     }

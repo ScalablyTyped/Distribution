@@ -369,7 +369,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setCreateElement(
           value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<markdown-to-jsx.markdown-to-jsx.MarkdownToJSX.CreateElement>[0] */ /* tag */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.Props<any> */ /* props */ Any, /* repeated */ ReactChild) => Element
@@ -777,7 +778,8 @@ object mod {
         __obj.asInstanceOf[Overrides]
       }
       
-      extension [Self <: Overrides](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Overrides] (val x: Self) extends AnyVal {
         
         inline def setA(value: Override): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
         
@@ -1501,7 +1503,8 @@ object mod {
         __obj.asInstanceOf[ParserResult]
       }
       
-      extension [Self <: ParserResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParserResult] (val x: Self) extends AnyVal {
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -1559,7 +1562,8 @@ object mod {
         __obj.asInstanceOf[State]
       }
       
-      extension [Self <: State](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
         
         inline def set_inAnchor(value: Boolean): Self = StObject.set(x, "_inAnchor", value.asInstanceOf[js.Any])
         

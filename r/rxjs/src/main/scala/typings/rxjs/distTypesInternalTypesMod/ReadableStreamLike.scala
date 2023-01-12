@@ -17,7 +17,8 @@ object ReadableStreamLike {
     __obj.asInstanceOf[ReadableStreamLike[T]]
   }
   
-  extension [Self <: ReadableStreamLike[?], T](x: Self & ReadableStreamLike[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadableStreamLike[?], T] (val x: Self & ReadableStreamLike[T]) extends AnyVal {
     
     inline def setGetReader(value: () => ReadableStreamDefaultReaderLike[T]): Self = StObject.set(x, "getReader", js.Any.fromFunction0(value))
   }

@@ -48,7 +48,8 @@ object DataCollectionDetails {
     __obj.asInstanceOf[DataCollectionDetails]
   }
   
-  extension [Self <: DataCollectionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataCollectionDetails] (val x: Self) extends AnyVal {
     
     inline def setCompletionTime(value: js.Date): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
     

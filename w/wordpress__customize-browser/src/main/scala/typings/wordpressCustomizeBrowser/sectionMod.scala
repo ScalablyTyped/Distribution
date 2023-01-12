@@ -49,7 +49,8 @@ object sectionMod {
       __obj.asInstanceOf[SectionParams]
     }
     
-    extension [Self <: SectionParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SectionParams] (val x: Self) extends AnyVal {
       
       inline def setCustomizeAction(value: String): Self = StObject.set(x, "customizeAction", value.asInstanceOf[js.Any])
       

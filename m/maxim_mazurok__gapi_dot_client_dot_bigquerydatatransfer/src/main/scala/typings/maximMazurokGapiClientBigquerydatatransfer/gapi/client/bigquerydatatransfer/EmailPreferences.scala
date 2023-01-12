@@ -16,7 +16,8 @@ object EmailPreferences {
     __obj.asInstanceOf[EmailPreferences]
   }
   
-  extension [Self <: EmailPreferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailPreferences] (val x: Self) extends AnyVal {
     
     inline def setEnableFailureEmail(value: Boolean): Self = StObject.set(x, "enableFailureEmail", value.asInstanceOf[js.Any])
     

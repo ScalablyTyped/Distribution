@@ -49,7 +49,8 @@ object IDisplayField {
     __obj.asInstanceOf[IDisplayField]
   }
   
-  extension [Self <: IDisplayField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDisplayField] (val x: Self) extends AnyVal {
     
     inline def setGetRawValue(value: () => String): Self = StObject.set(x, "getRawValue", js.Any.fromFunction0(value))
     

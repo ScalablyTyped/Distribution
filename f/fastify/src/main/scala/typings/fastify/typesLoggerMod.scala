@@ -94,7 +94,8 @@ object typesLoggerMod {
       __obj.asInstanceOf[FastifyLoggerOptions[RawServer, RawRequest, RawReply]]
     }
     
-    extension [Self <: FastifyLoggerOptions[?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: FastifyRequest[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastifyLoggerOptions[?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: FastifyRequest[
         RouteGenericInterface, 
         RawServer, 
         RawRequestDefaultExpression[RawServer], 
@@ -112,7 +113,7 @@ object typesLoggerMod {
         FastifySchema, 
         FastifyTypeProvider, 
         ResolveFastifyReplyType[FastifyTypeProvider, FastifySchema, RouteGenericInterface]
-      ] */](x: Self & (FastifyLoggerOptions[RawServer, RawRequest, RawReply])) {
+      ] */] (val x: Self & (FastifyLoggerOptions[RawServer, RawRequest, RawReply])) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object typesLoggerMod {
       __obj.asInstanceOf[FastifyLoggerStreamDestination]
     }
     
-    extension [Self <: FastifyLoggerStreamDestination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastifyLoggerStreamDestination] (val x: Self) extends AnyVal {
       
       inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }

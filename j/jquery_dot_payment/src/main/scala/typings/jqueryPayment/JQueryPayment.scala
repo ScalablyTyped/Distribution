@@ -51,7 +51,8 @@ object JQueryPayment {
       __obj.asInstanceOf[CardInfo]
     }
     
-    extension [Self <: CardInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardInfo] (val x: Self) extends AnyVal {
       
       inline def setCvcLength(value: js.Array[Double]): Self = StObject.set(x, "cvcLength", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object JQueryPayment {
       __obj.asInstanceOf[ExpiryInfo]
     }
     
-    extension [Self <: ExpiryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpiryInfo] (val x: Self) extends AnyVal {
       
       inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       

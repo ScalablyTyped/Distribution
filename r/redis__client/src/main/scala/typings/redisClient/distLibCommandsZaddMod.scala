@@ -36,7 +36,8 @@ object distLibCommandsZaddMod {
       __obj.asInstanceOf[CH]
     }
     
-    extension [Self <: CH](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CH] (val x: Self) extends AnyVal {
       
       inline def setCH(value: `true`): Self = StObject.set(x, "CH", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object distLibCommandsZaddMod {
       __obj.asInstanceOf[GT]
     }
     
-    extension [Self <: GT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GT] (val x: Self) extends AnyVal {
       
       inline def setGT(value: `true`): Self = StObject.set(x, "GT", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object distLibCommandsZaddMod {
       __obj.asInstanceOf[INCR]
     }
     
-    extension [Self <: INCR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INCR] (val x: Self) extends AnyVal {
       
       inline def setINCR(value: `true`): Self = StObject.set(x, "INCR", value.asInstanceOf[js.Any])
       
@@ -93,7 +96,8 @@ object distLibCommandsZaddMod {
       __obj.asInstanceOf[LT]
     }
     
-    extension [Self <: LT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LT] (val x: Self) extends AnyVal {
       
       inline def setLT(value: `true`): Self = StObject.set(x, "LT", value.asInstanceOf[js.Any])
       
@@ -112,7 +116,8 @@ object distLibCommandsZaddMod {
       __obj.asInstanceOf[NX]
     }
     
-    extension [Self <: NX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NX] (val x: Self) extends AnyVal {
       
       inline def setNX(value: `true`): Self = StObject.set(x, "NX", value.asInstanceOf[js.Any])
       
@@ -131,7 +136,8 @@ object distLibCommandsZaddMod {
       __obj.asInstanceOf[XX]
     }
     
-    extension [Self <: XX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XX] (val x: Self) extends AnyVal {
       
       inline def setXX(value: `true`): Self = StObject.set(x, "XX", value.asInstanceOf[js.Any])
       

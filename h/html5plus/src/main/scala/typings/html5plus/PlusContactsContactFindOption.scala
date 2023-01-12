@@ -33,7 +33,8 @@ object PlusContactsContactFindOption {
     __obj.asInstanceOf[PlusContactsContactFindOption]
   }
   
-  extension [Self <: PlusContactsContactFindOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusContactsContactFindOption] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: PlusContactsContactFindFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ApksAddExternallyHostedResponse {
     __obj.asInstanceOf[ApksAddExternallyHostedResponse]
   }
   
-  extension [Self <: ApksAddExternallyHostedResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApksAddExternallyHostedResponse] (val x: Self) extends AnyVal {
     
     inline def setExternallyHostedApk(value: ExternallyHostedApk): Self = StObject.set(x, "externallyHostedApk", value.asInstanceOf[js.Any])
     

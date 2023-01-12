@@ -22,7 +22,8 @@ object GraphicsContextSettings {
     __obj.asInstanceOf[GraphicsContextSettings]
   }
   
-  extension [Self <: GraphicsContextSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicsContextSettings] (val x: Self) extends AnyVal {
     
     inline def setBlendMode(value: BlendMode): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     

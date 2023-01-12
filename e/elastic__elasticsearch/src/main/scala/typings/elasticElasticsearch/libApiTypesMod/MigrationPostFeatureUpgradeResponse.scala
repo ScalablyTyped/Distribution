@@ -17,7 +17,8 @@ object MigrationPostFeatureUpgradeResponse {
     __obj.asInstanceOf[MigrationPostFeatureUpgradeResponse]
   }
   
-  extension [Self <: MigrationPostFeatureUpgradeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MigrationPostFeatureUpgradeResponse] (val x: Self) extends AnyVal {
     
     inline def setAccepted(value: Boolean): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
     

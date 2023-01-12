@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsTextJustifyMod extends Shortcut {
       __obj.asInstanceOf[TextJustifyProps]
     }
     
-    extension [Self <: TextJustifyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextJustifyProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

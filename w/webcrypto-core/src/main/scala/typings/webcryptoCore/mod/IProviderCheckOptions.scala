@@ -15,7 +15,8 @@ object IProviderCheckOptions {
     __obj.asInstanceOf[IProviderCheckOptions]
   }
   
-  extension [Self <: IProviderCheckOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProviderCheckOptions] (val x: Self) extends AnyVal {
     
     inline def setKeyUsage(value: Boolean): Self = StObject.set(x, "keyUsage", value.asInstanceOf[js.Any])
     

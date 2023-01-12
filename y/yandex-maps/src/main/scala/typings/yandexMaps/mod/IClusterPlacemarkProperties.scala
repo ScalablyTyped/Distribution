@@ -21,7 +21,8 @@ object IClusterPlacemarkProperties {
     __obj.asInstanceOf[IClusterPlacemarkProperties]
   }
   
-  extension [Self <: IClusterPlacemarkProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClusterPlacemarkProperties] (val x: Self) extends AnyVal {
     
     inline def setGeoObjects(value: js.Array[IGeoObject[IGeometry]]): Self = StObject.set(x, "geoObjects", value.asInstanceOf[js.Any])
     

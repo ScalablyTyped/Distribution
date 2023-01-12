@@ -28,7 +28,8 @@ object ListSipRulesRequest {
     __obj.asInstanceOf[ListSipRulesRequest]
   }
   
-  extension [Self <: ListSipRulesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSipRulesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ResultMax): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

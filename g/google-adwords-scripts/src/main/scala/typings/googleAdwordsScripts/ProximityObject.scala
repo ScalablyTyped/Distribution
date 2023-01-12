@@ -25,7 +25,8 @@ object ProximityObject {
     __obj.asInstanceOf[ProximityObject]
   }
   
-  extension [Self <: ProximityObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProximityObject] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: AddressObject): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

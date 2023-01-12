@@ -162,7 +162,8 @@ object RecursivePartialPartialTe {
     __obj.asInstanceOf[RecursivePartialPartialTe]
   }
   
-  extension [Self <: RecursivePartialPartialTe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialPartialTe] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

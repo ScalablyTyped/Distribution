@@ -33,7 +33,8 @@ object EdgePresetDeploymentOutput {
     __obj.asInstanceOf[EdgePresetDeploymentOutput]
   }
   
-  extension [Self <: EdgePresetDeploymentOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgePresetDeploymentOutput] (val x: Self) extends AnyVal {
     
     inline def setArtifact(value: EdgePresetDeploymentArtifact): Self = StObject.set(x, "Artifact", value.asInstanceOf[js.Any])
     

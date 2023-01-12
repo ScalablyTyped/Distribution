@@ -20,7 +20,8 @@ object EnvironmentDocuments {
     __obj.asInstanceOf[EnvironmentDocuments]
   }
   
-  extension [Self <: EnvironmentDocuments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentDocuments] (val x: Self) extends AnyVal {
     
     inline def setIndexed(value: Double): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
     

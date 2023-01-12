@@ -44,7 +44,8 @@ object AsyncOperationNotFound {
     __obj.asInstanceOf[AsyncOperationNotFound]
   }
   
-  extension [Self <: AsyncOperationNotFound](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncOperationNotFound] (val x: Self) extends AnyVal {
     
     inline def setAsyncOperationNotFound(value: scala.Double): Self = StObject.set(x, "asyncOperationNotFound", value.asInstanceOf[js.Any])
     

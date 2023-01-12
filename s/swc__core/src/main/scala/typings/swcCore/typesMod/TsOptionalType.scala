@@ -23,7 +23,8 @@ object TsOptionalType {
     __obj.asInstanceOf[TsOptionalType]
   }
   
-  extension [Self <: TsOptionalType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsOptionalType] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.swcCore.swcCoreStrings.TsOptionalType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

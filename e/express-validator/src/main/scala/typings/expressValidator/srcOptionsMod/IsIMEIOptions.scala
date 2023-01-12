@@ -15,7 +15,8 @@ object IsIMEIOptions {
     __obj.asInstanceOf[IsIMEIOptions]
   }
   
-  extension [Self <: IsIMEIOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsIMEIOptions] (val x: Self) extends AnyVal {
     
     inline def setAllow_hyphens(value: Boolean): Self = StObject.set(x, "allow_hyphens", value.asInstanceOf[js.Any])
     

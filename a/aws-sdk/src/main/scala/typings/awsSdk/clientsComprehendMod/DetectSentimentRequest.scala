@@ -23,7 +23,8 @@ object DetectSentimentRequest {
     __obj.asInstanceOf[DetectSentimentRequest]
   }
   
-  extension [Self <: DetectSentimentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectSentimentRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     

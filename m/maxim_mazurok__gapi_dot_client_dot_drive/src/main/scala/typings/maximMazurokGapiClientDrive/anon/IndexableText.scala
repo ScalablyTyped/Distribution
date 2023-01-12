@@ -19,7 +19,8 @@ object IndexableText {
     __obj.asInstanceOf[IndexableText]
   }
   
-  extension [Self <: IndexableText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexableText] (val x: Self) extends AnyVal {
     
     inline def setIndexableText(value: String): Self = StObject.set(x, "indexableText", value.asInstanceOf[js.Any])
     

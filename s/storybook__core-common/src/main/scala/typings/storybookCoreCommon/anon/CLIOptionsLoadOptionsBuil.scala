@@ -133,7 +133,8 @@ object CLIOptionsLoadOptionsBuil {
     __obj.asInstanceOf[CLIOptionsLoadOptionsBuil]
   }
   
-  extension [Self <: CLIOptionsLoadOptionsBuil](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CLIOptionsLoadOptionsBuil] (val x: Self) extends AnyVal {
     
     inline def setCache(value: FileSystemCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

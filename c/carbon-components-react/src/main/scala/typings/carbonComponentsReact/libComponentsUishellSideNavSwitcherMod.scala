@@ -34,7 +34,8 @@ object libComponentsUishellSideNavSwitcherMod extends Shortcut {
       __obj.asInstanceOf[SideNavSwitcherProps]
     }
     
-    extension [Self <: SideNavSwitcherProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavSwitcherProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

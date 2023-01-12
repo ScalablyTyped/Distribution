@@ -21,7 +21,8 @@ object libTracesScatterMod {
       __obj.asInstanceOf[ScatterSelectedMarker]
     }
     
-    extension [Self <: ScatterSelectedMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterSelectedMarker] (val x: Self) extends AnyVal {
       
       inline def setMarker(value: Partialopacitynumbercolor): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       

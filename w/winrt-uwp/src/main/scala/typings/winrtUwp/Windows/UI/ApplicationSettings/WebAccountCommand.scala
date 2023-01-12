@@ -31,7 +31,8 @@ object WebAccountCommand {
     __obj.asInstanceOf[WebAccountCommand]
   }
   
-  extension [Self <: WebAccountCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAccountCommand] (val x: Self) extends AnyVal {
     
     inline def setActions(value: SupportedWebAccountActions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

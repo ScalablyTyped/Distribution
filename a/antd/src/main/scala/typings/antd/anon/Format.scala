@@ -20,7 +20,8 @@ object Format {
     __obj.asInstanceOf[Format[DisabledTime]]
   }
   
-  extension [Self <: Format[?], DisabledTime](x: Self & Format[DisabledTime]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Format[?], DisabledTime] (val x: Self & Format[DisabledTime]) extends AnyVal {
     
     inline def setDisabledTime(value: DisabledTime): Self = StObject.set(x, "disabledTime", value.asInstanceOf[js.Any])
     

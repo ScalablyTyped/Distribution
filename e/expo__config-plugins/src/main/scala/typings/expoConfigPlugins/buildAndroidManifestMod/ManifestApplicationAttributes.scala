@@ -42,7 +42,8 @@ object ManifestApplicationAttributes {
     __obj.asInstanceOf[ManifestApplicationAttributes]
   }
   
-  extension [Self <: ManifestApplicationAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestApplicationAttributes] (val x: Self) extends AnyVal {
     
     inline def setAndroidColonallowBackup(value: StringBoolean): Self = StObject.set(x, "android:allowBackup", value.asInstanceOf[js.Any])
     

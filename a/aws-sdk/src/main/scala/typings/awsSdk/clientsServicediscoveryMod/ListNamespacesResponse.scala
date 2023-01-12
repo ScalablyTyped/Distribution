@@ -23,7 +23,8 @@ object ListNamespacesResponse {
     __obj.asInstanceOf[ListNamespacesResponse]
   }
   
-  extension [Self <: ListNamespacesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNamespacesResponse] (val x: Self) extends AnyVal {
     
     inline def setNamespaces(value: NamespaceSummariesList): Self = StObject.set(x, "Namespaces", value.asInstanceOf[js.Any])
     

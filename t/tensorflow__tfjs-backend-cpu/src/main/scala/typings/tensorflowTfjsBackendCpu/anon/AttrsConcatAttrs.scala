@@ -23,7 +23,8 @@ object AttrsConcatAttrs {
     __obj.asInstanceOf[AttrsConcatAttrs]
   }
   
-  extension [Self <: AttrsConcatAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsConcatAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: ConcatAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

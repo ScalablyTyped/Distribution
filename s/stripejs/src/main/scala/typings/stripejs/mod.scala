@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[StripeConfigOptions]
     }
     
-    extension [Self <: StripeConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StripeConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setStripeAccount(value: String): Self = StObject.set(x, "stripeAccount", value.asInstanceOf[js.Any])
     }
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[StripeError]
     }
     
-    extension [Self <: StripeError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StripeError] (val x: Self) extends AnyVal {
       
       inline def setCharge(value: String): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
       

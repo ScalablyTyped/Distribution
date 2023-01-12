@@ -38,7 +38,8 @@ object MergeEventObject {
     __obj.asInstanceOf[MergeEventObject]
   }
   
-  extension [Self <: MergeEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeEventObject] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

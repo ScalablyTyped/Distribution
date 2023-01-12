@@ -15,7 +15,8 @@ object JsxSvgConditionalProcessingProps {
     __obj.asInstanceOf[JsxSvgConditionalProcessingProps]
   }
   
-  extension [Self <: JsxSvgConditionalProcessingProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxSvgConditionalProcessingProps] (val x: Self) extends AnyVal {
     
     inline def setSystemLanguage(value: String): Self = StObject.set(x, "systemLanguage", value.asInstanceOf[js.Any])
     

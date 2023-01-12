@@ -19,7 +19,8 @@ object SodaReplaceOneResult {
     __obj.asInstanceOf[SodaReplaceOneResult]
   }
   
-  extension [Self <: SodaReplaceOneResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SodaReplaceOneResult] (val x: Self) extends AnyVal {
     
     inline def setReplaced(value: Boolean): Self = StObject.set(x, "replaced", value.asInstanceOf[js.Any])
   }

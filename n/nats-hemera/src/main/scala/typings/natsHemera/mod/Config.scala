@@ -41,7 +41,8 @@ object Config {
     __obj.asInstanceOf[Config]
   }
   
-  extension [Self <: Config](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     inline def setBloomrun(value: BloomrunConfig): Self = StObject.set(x, "bloomrun", value.asInstanceOf[js.Any])
     

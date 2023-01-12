@@ -18,7 +18,8 @@ object ScheduledInstancesMonitoring {
     __obj.asInstanceOf[ScheduledInstancesMonitoring]
   }
   
-  extension [Self <: ScheduledInstancesMonitoring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledInstancesMonitoring] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

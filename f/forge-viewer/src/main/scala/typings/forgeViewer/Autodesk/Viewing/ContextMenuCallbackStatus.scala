@@ -21,7 +21,8 @@ object ContextMenuCallbackStatus {
     __obj.asInstanceOf[ContextMenuCallbackStatus]
   }
   
-  extension [Self <: ContextMenuCallbackStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextMenuCallbackStatus] (val x: Self) extends AnyVal {
     
     inline def setHasHidden(value: Boolean): Self = StObject.set(x, "hasHidden", value.asInstanceOf[js.Any])
     

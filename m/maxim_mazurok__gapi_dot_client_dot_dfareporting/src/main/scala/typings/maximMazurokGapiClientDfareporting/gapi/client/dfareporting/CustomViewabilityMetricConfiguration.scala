@@ -28,7 +28,8 @@ object CustomViewabilityMetricConfiguration {
     __obj.asInstanceOf[CustomViewabilityMetricConfiguration]
   }
   
-  extension [Self <: CustomViewabilityMetricConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomViewabilityMetricConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAudible(value: Boolean): Self = StObject.set(x, "audible", value.asInstanceOf[js.Any])
     

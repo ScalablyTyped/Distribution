@@ -23,7 +23,8 @@ object DescribeRemediationExceptionsResponse {
     __obj.asInstanceOf[DescribeRemediationExceptionsResponse]
   }
   
-  extension [Self <: DescribeRemediationExceptionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRemediationExceptionsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

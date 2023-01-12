@@ -33,7 +33,8 @@ object OutputData {
     __obj.asInstanceOf[OutputData]
   }
   
-  extension [Self <: OutputData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputData] (val x: Self) extends AnyVal {
     
     inline def setGeneric(value: js.Array[DialogRuntimeResponseGeneric]): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     

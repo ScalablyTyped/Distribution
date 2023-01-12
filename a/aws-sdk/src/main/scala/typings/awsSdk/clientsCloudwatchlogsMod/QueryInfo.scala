@@ -38,7 +38,8 @@ object QueryInfo {
     __obj.asInstanceOf[QueryInfo]
   }
   
-  extension [Self <: QueryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryInfo] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: Timestamp): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

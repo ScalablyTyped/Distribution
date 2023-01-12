@@ -77,7 +77,8 @@ object RDSDataSpec {
     __obj.asInstanceOf[RDSDataSpec]
   }
   
-  extension [Self <: RDSDataSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RDSDataSpec] (val x: Self) extends AnyVal {
     
     inline def setDataRearrangement(value: DataRearrangement): Self = StObject.set(x, "DataRearrangement", value.asInstanceOf[js.Any])
     

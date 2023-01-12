@@ -21,7 +21,8 @@ object NxPage {
     __obj.asInstanceOf[NxPage]
   }
   
-  extension [Self <: NxPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NxPage] (val x: Self) extends AnyVal {
     
     inline def setQHeight(value: Double): Self = StObject.set(x, "qHeight", value.asInstanceOf[js.Any])
     

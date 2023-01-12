@@ -18,7 +18,8 @@ object RebootRequest {
     __obj.asInstanceOf[RebootRequest]
   }
   
-  extension [Self <: RebootRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RebootRequest] (val x: Self) extends AnyVal {
     
     inline def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "WorkspaceId", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object ListCustomVerificationEmailTemplatesResponse {
     __obj.asInstanceOf[ListCustomVerificationEmailTemplatesResponse]
   }
   
-  extension [Self <: ListCustomVerificationEmailTemplatesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCustomVerificationEmailTemplatesResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomVerificationEmailTemplates(value: CustomVerificationEmailTemplates): Self = StObject.set(x, "CustomVerificationEmailTemplates", value.asInstanceOf[js.Any])
     

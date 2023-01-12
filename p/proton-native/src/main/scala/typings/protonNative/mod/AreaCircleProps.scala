@@ -30,7 +30,8 @@ object AreaCircleProps {
     __obj.asInstanceOf[AreaCircleProps]
   }
   
-  extension [Self <: AreaCircleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaCircleProps] (val x: Self) extends AnyVal {
     
     inline def setR(value: Double | String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     

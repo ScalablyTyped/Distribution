@@ -15,7 +15,8 @@ object NamespaceLocateOptions {
     __obj.asInstanceOf[NamespaceLocateOptions]
   }
   
-  extension [Self <: NamespaceLocateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamespaceLocateOptions] (val x: Self) extends AnyVal {
     
     inline def setUseAliases(value: Boolean): Self = StObject.set(x, "useAliases", value.asInstanceOf[js.Any])
     

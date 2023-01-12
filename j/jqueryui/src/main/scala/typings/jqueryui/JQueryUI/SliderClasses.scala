@@ -27,7 +27,8 @@ object SliderClasses {
     __obj.asInstanceOf[SliderClasses]
   }
   
-  extension [Self <: SliderClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderClasses] (val x: Self) extends AnyVal {
     
     inline def `setUi-slider`(value: String): Self = StObject.set(x, "ui-slider", value.asInstanceOf[js.Any])
     

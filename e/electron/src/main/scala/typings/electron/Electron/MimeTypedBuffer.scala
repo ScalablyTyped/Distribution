@@ -30,7 +30,8 @@ object MimeTypedBuffer {
     __obj.asInstanceOf[MimeTypedBuffer]
   }
   
-  extension [Self <: MimeTypedBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MimeTypedBuffer] (val x: Self) extends AnyVal {
     
     inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     

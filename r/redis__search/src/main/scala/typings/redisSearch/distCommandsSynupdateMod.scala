@@ -31,7 +31,8 @@ object distCommandsSynupdateMod {
       __obj.asInstanceOf[SynUpdateOptions]
     }
     
-    extension [Self <: SynUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SynUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setSKIPINITIALSCAN(value: `true`): Self = StObject.set(x, "SKIPINITIALSCAN", value.asInstanceOf[js.Any])
       

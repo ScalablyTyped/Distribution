@@ -24,7 +24,8 @@ object GetFileInfoOptions {
     __obj.asInstanceOf[GetFileInfoOptions]
   }
   
-  extension [Self <: GetFileInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFileInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setDigestAlgorithm(value: String): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
     

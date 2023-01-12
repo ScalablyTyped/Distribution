@@ -27,7 +27,8 @@ object GoogleActionsV2Entitlement {
     __obj.asInstanceOf[GoogleActionsV2Entitlement]
   }
   
-  extension [Self <: GoogleActionsV2Entitlement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2Entitlement] (val x: Self) extends AnyVal {
     
     inline def setInAppDetails(value: GoogleActionsV2SignedData): Self = StObject.set(x, "inAppDetails", value.asInstanceOf[js.Any])
     

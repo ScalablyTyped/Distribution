@@ -165,7 +165,8 @@ object servicesElasticsearchServiceMod {
       __obj.asInstanceOf[ElasticsearchServiceParams]
     }
     
-    extension [Self <: ElasticsearchServiceParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElasticsearchServiceParams] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: ConnectionType): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -192,7 +193,8 @@ object servicesElasticsearchServiceMod {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Id): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }

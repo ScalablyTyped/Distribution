@@ -19,7 +19,8 @@ object PostalCodesListResponse {
     __obj.asInstanceOf[PostalCodesListResponse]
   }
   
-  extension [Self <: PostalCodesListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostalCodesListResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

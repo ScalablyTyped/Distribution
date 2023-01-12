@@ -18,7 +18,8 @@ object ToolbarStateEvent {
     __obj.asInstanceOf[ToolbarStateEvent]
   }
   
-  extension [Self <: ToolbarStateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolbarStateEvent] (val x: Self) extends AnyVal {
     
     inline def setGetToolbarState(value: () => ToolbarState): Self = StObject.set(x, "getToolbarState", js.Any.fromFunction0(value))
   }

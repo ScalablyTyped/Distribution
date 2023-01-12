@@ -421,7 +421,8 @@ object sapUiCommonsMenuButtonMod {
       __obj.asInstanceOf[MenuButtonSettings]
     }
     
-    extension [Self <: MenuButtonSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuButtonSettings] (val x: Self) extends AnyVal {
       
       inline def setDockButton(value: String | PropertyBindingInfo): Self = StObject.set(x, "dockButton", value.asInstanceOf[js.Any])
       

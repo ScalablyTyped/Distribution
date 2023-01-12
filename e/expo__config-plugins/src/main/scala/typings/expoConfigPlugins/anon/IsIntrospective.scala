@@ -27,7 +27,8 @@ object IsIntrospective {
     __obj.asInstanceOf[IsIntrospective]
   }
   
-  extension [Self <: IsIntrospective](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsIntrospective] (val x: Self) extends AnyVal {
     
     inline def setIsIntrospective(value: Boolean): Self = StObject.set(x, "isIntrospective", value.asInstanceOf[js.Any])
     

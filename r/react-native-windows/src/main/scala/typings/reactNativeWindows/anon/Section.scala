@@ -16,7 +16,8 @@ object Section {
     __obj.asInstanceOf[Section[ItemT, SectionT]]
   }
   
-  extension [Self <: Section[?, ?], ItemT, SectionT](x: Self & (Section[ItemT, SectionT])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Section[?, ?], ItemT, SectionT] (val x: Self & (Section[ItemT, SectionT])) extends AnyVal {
     
     inline def setSection(value: SectionListData[ItemT, SectionT]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
   }

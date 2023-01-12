@@ -38,7 +38,8 @@ object GetPropertyValueRequest {
     __obj.asInstanceOf[GetPropertyValueRequest]
   }
   
-  extension [Self <: GetPropertyValueRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPropertyValueRequest] (val x: Self) extends AnyVal {
     
     inline def setComponentName(value: Name): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
     

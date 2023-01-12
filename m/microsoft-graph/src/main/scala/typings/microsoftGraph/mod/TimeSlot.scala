@@ -19,7 +19,8 @@ object TimeSlot {
     __obj.asInstanceOf[TimeSlot]
   }
   
-  extension [Self <: TimeSlot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSlot] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: DateTimeTimeZone): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

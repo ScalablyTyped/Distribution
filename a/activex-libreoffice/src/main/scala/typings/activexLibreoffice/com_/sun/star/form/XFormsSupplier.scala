@@ -41,7 +41,8 @@ object XFormsSupplier {
     __obj.asInstanceOf[XFormsSupplier]
   }
   
-  extension [Self <: XFormsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFormsSupplier] (val x: Self) extends AnyVal {
     
     inline def setForms(value: XNameContainer): Self = StObject.set(x, "Forms", value.asInstanceOf[js.Any])
     

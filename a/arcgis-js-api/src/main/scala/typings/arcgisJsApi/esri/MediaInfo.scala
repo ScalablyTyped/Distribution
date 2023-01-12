@@ -34,7 +34,8 @@ object MediaInfo {
     __obj.asInstanceOf[MediaInfo]
   }
   
-  extension [Self <: MediaInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaInfo] (val x: Self) extends AnyVal {
     
     inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
     

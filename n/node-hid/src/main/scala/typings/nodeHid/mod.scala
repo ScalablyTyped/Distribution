@@ -77,7 +77,8 @@ object mod {
       __obj.asInstanceOf[Device]
     }
     
-    extension [Self <: Device](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
       
       inline def setInterface(value: Double): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
       

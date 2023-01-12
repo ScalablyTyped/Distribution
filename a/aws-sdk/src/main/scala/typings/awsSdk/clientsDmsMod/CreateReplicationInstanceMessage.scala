@@ -88,7 +88,8 @@ object CreateReplicationInstanceMessage {
     __obj.asInstanceOf[CreateReplicationInstanceMessage]
   }
   
-  extension [Self <: CreateReplicationInstanceMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReplicationInstanceMessage] (val x: Self) extends AnyVal {
     
     inline def setAllocatedStorage(value: IntegerOptional): Self = StObject.set(x, "AllocatedStorage", value.asInstanceOf[js.Any])
     

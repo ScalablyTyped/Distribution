@@ -26,7 +26,8 @@ object IBufferCellPosition {
     __obj.asInstanceOf[IBufferCellPosition]
   }
   
-  extension [Self <: IBufferCellPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBufferCellPosition] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

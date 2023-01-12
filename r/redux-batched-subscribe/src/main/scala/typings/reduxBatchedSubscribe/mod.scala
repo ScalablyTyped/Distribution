@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[StoreExtension]
     }
     
-    extension [Self <: StoreExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreExtension] (val x: Self) extends AnyVal {
       
       inline def setSubscribeImmediate(value: /* listener */ js.Function0[Unit] => Unsubscribe): Self = StObject.set(x, "subscribeImmediate", js.Any.fromFunction1(value))
     }

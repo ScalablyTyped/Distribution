@@ -26,7 +26,8 @@ object BasePlaylistConstructorPr {
     __obj.asInstanceOf[BasePlaylistConstructorPr]
   }
   
-  extension [Self <: BasePlaylistConstructorPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePlaylistConstructorPr] (val x: Self) extends AnyVal {
     
     inline def setIndependentSegments(value: Boolean): Self = StObject.set(x, "independentSegments", value.asInstanceOf[js.Any])
     

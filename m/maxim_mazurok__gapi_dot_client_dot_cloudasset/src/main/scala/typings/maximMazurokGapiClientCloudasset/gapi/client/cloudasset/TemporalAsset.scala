@@ -28,7 +28,8 @@ object TemporalAsset {
     __obj.asInstanceOf[TemporalAsset]
   }
   
-  extension [Self <: TemporalAsset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemporalAsset] (val x: Self) extends AnyVal {
     
     inline def setAsset(value: Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     

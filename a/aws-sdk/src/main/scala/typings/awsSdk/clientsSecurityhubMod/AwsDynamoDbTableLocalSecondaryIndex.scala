@@ -33,7 +33,8 @@ object AwsDynamoDbTableLocalSecondaryIndex {
     __obj.asInstanceOf[AwsDynamoDbTableLocalSecondaryIndex]
   }
   
-  extension [Self <: AwsDynamoDbTableLocalSecondaryIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsDynamoDbTableLocalSecondaryIndex] (val x: Self) extends AnyVal {
     
     inline def setIndexArn(value: NonEmptyString): Self = StObject.set(x, "IndexArn", value.asInstanceOf[js.Any])
     

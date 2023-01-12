@@ -156,7 +156,8 @@ object libNetworkRelayObservableMod {
       __obj.asInstanceOf[Observer[T]]
     }
     
-    extension [Self <: Observer[?], T](x: Self & Observer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
@@ -215,7 +216,8 @@ object libNetworkRelayObservableMod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
       

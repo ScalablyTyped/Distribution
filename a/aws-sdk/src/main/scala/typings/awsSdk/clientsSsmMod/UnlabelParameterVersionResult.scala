@@ -23,7 +23,8 @@ object UnlabelParameterVersionResult {
     __obj.asInstanceOf[UnlabelParameterVersionResult]
   }
   
-  extension [Self <: UnlabelParameterVersionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnlabelParameterVersionResult] (val x: Self) extends AnyVal {
     
     inline def setInvalidLabels(value: ParameterLabelList): Self = StObject.set(x, "InvalidLabels", value.asInstanceOf[js.Any])
     

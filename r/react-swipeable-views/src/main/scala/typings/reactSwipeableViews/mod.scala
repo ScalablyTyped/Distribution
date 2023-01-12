@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[SpringConfig]
     }
     
-    extension [Self <: SpringConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpringConfig] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object mod {
       __obj.asInstanceOf[SwipeableViewsProps]
     }
     
-    extension [Self <: SwipeableViewsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeableViewsProps] (val x: Self) extends AnyVal {
       
       inline def setAnimateHeight(value: Boolean): Self = StObject.set(x, "animateHeight", value.asInstanceOf[js.Any])
       
@@ -219,7 +221,8 @@ object mod {
       __obj.asInstanceOf[SwipeableViewsState]
     }
     
-    extension [Self <: SwipeableViewsState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeableViewsState] (val x: Self) extends AnyVal {
       
       inline def setDisplaySameSlide(value: Boolean): Self = StObject.set(x, "displaySameSlide", value.asInstanceOf[js.Any])
       

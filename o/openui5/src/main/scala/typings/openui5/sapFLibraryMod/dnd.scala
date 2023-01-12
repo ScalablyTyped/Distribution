@@ -25,7 +25,8 @@ object dnd {
       __obj.asInstanceOf[IGridDroppable]
     }
     
-    extension [Self <: IGridDroppable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridDroppable] (val x: Self) extends AnyVal {
       
       inline def set__implements__sap_f_dnd_IGridDroppable(value: Boolean): Self = StObject.set(x, "__implements__sap_f_dnd_IGridDroppable", value.asInstanceOf[js.Any])
     }

@@ -27,7 +27,8 @@ object distGitLogStreamMod {
       __obj.asInstanceOf[GitLogStreamOptions]
     }
     
-    extension [Self <: GitLogStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitLogStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setSinceCommit(value: String): Self = StObject.set(x, "sinceCommit", value.asInstanceOf[js.Any])
       

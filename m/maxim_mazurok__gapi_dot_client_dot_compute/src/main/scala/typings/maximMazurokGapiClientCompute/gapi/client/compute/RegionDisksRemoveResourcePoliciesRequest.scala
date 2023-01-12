@@ -16,7 +16,8 @@ object RegionDisksRemoveResourcePoliciesRequest {
     __obj.asInstanceOf[RegionDisksRemoveResourcePoliciesRequest]
   }
   
-  extension [Self <: RegionDisksRemoveResourcePoliciesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionDisksRemoveResourcePoliciesRequest] (val x: Self) extends AnyVal {
     
     inline def setResourcePolicies(value: js.Array[String]): Self = StObject.set(x, "resourcePolicies", value.asInstanceOf[js.Any])
     

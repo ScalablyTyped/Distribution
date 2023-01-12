@@ -44,7 +44,8 @@ object ngSignalr {
       __obj.asInstanceOf[Hub]
     }
     
-    extension [Self <: Hub](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hub] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: () => JQueryPromise[Any]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       
@@ -124,7 +125,8 @@ object ngSignalr {
       __obj.asInstanceOf[HubOptions]
     }
     
-    extension [Self <: HubOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HubOptions] (val x: Self) extends AnyVal {
       
       inline def setErrorHandler(value: /* error */ String => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
       

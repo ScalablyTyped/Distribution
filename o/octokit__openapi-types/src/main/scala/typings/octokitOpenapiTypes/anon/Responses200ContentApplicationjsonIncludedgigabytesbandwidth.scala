@@ -17,7 +17,8 @@ object Responses200ContentApplicationjsonIncludedgigabytesbandwidth {
     __obj.asInstanceOf[Responses200ContentApplicationjsonIncludedgigabytesbandwidth]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonIncludedgigabytesbandwidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonIncludedgigabytesbandwidth] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: `433`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

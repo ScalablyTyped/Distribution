@@ -80,7 +80,8 @@ object libCommonCallHierarchyMod {
       __obj.asInstanceOf[CallHierarchyMiddleware]
     }
     
-    extension [Self <: CallHierarchyMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallHierarchyMiddleware] (val x: Self) extends AnyVal {
       
       inline def setPrepareCallHierarchy(
         value: js.ThisFunction4[
@@ -149,7 +150,8 @@ object libCommonCallHierarchyMod {
       __obj.asInstanceOf[CallHierarchyProvider]
     }
     
-    extension [Self <: CallHierarchyProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallHierarchyProvider] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

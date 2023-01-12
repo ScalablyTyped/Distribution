@@ -18,7 +18,8 @@ object DeleteBuildBatchInput {
     __obj.asInstanceOf[DeleteBuildBatchInput]
   }
   
-  extension [Self <: DeleteBuildBatchInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBuildBatchInput] (val x: Self) extends AnyVal {
     
     inline def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

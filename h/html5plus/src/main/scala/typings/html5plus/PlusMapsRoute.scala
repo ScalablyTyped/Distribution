@@ -64,7 +64,8 @@ object PlusMapsRoute {
     __obj.asInstanceOf[PlusMapsRoute]
   }
   
-  extension [Self <: PlusMapsRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusMapsRoute] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

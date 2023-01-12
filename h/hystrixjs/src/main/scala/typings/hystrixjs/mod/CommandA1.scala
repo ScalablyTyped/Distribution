@@ -16,7 +16,8 @@ object CommandA1 {
     __obj.asInstanceOf[CommandA1[R, T]]
   }
   
-  extension [Self <: CommandA1[?, ?], R, T](x: Self & (CommandA1[R, T])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandA1[?, ?], R, T] (val x: Self & (CommandA1[R, T])) extends AnyVal {
     
     inline def setExecute(value: T => PromiseLike[R]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }

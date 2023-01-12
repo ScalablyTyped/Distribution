@@ -15,7 +15,8 @@ object BusListItem {
     __obj.asInstanceOf[BusListItem]
   }
   
-  extension [Self <: BusListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusListItem] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

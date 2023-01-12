@@ -17,7 +17,8 @@ object RideCreateGameActionResult {
     __obj.asInstanceOf[RideCreateGameActionResult]
   }
   
-  extension [Self <: RideCreateGameActionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RideCreateGameActionResult] (val x: Self) extends AnyVal {
     
     inline def setRide(value: Double): Self = StObject.set(x, "ride", value.asInstanceOf[js.Any])
   }

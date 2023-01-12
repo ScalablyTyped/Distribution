@@ -464,7 +464,8 @@ object sapMMessageItemMod {
       __obj.asInstanceOf[MessageItemSettings]
     }
     
-    extension [Self <: MessageItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageItemSettings] (val x: Self) extends AnyVal {
       
       inline def setActiveTitle(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "activeTitle", value.asInstanceOf[js.Any])
       

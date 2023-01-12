@@ -15,7 +15,8 @@ object FunctionConstructor {
     __obj.asInstanceOf[FunctionConstructor]
   }
   
-  extension [Self <: FunctionConstructor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionConstructor] (val x: Self) extends AnyVal {
     
     inline def setReference(value: js.Function => FunctionConstructor): Self = StObject.set(x, "reference", js.Any.fromFunction1(value))
   }

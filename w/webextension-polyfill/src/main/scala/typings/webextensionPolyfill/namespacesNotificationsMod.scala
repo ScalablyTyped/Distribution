@@ -89,7 +89,8 @@ object namespacesNotificationsMod {
         __obj.asInstanceOf[CreateNotificationOptions]
       }
       
-      extension [Self <: CreateNotificationOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateNotificationOptions] (val x: Self) extends AnyVal {
         
         inline def setAppIconMaskUrl(value: String): Self = StObject.set(x, "appIconMaskUrl", value.asInstanceOf[js.Any])
         
@@ -156,7 +157,8 @@ object namespacesNotificationsMod {
         __obj.asInstanceOf[NotificationItem]
       }
       
-      extension [Self <: NotificationItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NotificationItem] (val x: Self) extends AnyVal {
         
         inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
@@ -338,7 +340,8 @@ object namespacesNotificationsMod {
         __obj.asInstanceOf[UpdateNotificationOptions]
       }
       
-      extension [Self <: UpdateNotificationOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateNotificationOptions] (val x: Self) extends AnyVal {
         
         inline def setAppIconMaskUrl(value: String): Self = StObject.set(x, "appIconMaskUrl", value.asInstanceOf[js.Any])
         

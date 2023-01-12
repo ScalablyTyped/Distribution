@@ -38,7 +38,8 @@ object geom {
       __obj.asInstanceOf[Rect]
     }
     
-    extension [Self <: Rect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
       
       inline def setClamp(value: (Rect, Rect, Boolean) => Rect): Self = StObject.set(x, "clamp", js.Any.fromFunction3(value))
       
